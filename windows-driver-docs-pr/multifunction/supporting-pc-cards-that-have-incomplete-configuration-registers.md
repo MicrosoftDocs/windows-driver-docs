@@ -48,11 +48,11 @@ The vendor-supplied custom INF for such a device must specify:
 
 -   The resource requirements of the multifunction device.
 
-    Specify the resource requirements in [**INF DDInstall.LogConfigOverride sections**](https://msdn.microsoft.com/library/windows/hardware/ff547339).
+    Specify the resource requirements in [**INF DDInstall.LogConfigOverride sections**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-logconfigoverride-section).
 
 -   The hardware ID for each function of the device.
 
-    Specify the hardware IDs in an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).
+    Specify the hardware IDs in an [**INF DDInstall.HW section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section).
 
 -   A resource map for each function of the device, identifying the parent resources required by each child function.
 
@@ -60,7 +60,7 @@ The vendor-supplied custom INF for such a device must specify:
 
 The INF must restate all the resource requirements specified by the device because if override configurations are present in the INF, the PnP manager does not use any device resource requirements from the device.
 
-For such a device, the configuration option register can be programmed using a **PcCardConfig** entry, similar to programming a single-function device. The **PcCardConfig** entry contains information that applies to the entire device. The **PcCardConfig** entry is documented in [**INF LogConfig Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547448).
+For such a device, the configuration option register can be programmed using a **PcCardConfig** entry, similar to programming a single-function device. The **PcCardConfig** entry contains information that applies to the entire device. The **PcCardConfig** entry is documented in [**INF LogConfig Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive).
 
 When specifying a **PcCardConfig** entry for a multifunction device, the format of the *ConfigIndex* is the same as that defined for a single-function device. The configuration register for single-function PC Cards contains an index to a set of resources defined in that device's attributes. This directive can also be used with certain multifunction devices that use the index-based format of the configuration option register.
 

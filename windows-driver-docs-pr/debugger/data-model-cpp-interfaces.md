@@ -8,35 +8,6 @@ ms.date: 10/08/2018
 
 This topic provides and overview of how to use Debugger Data Model C++ Interfaces to extend and customize the capabilities of the debugger.
 
-This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
-debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
-
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
-
-[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
----
-
-## Topic Sections
-
-This topic includes the following sections.
-
-[Debugger Data Model C++ Host Interfaces](#hostinterface)
-
-[Accessing the Data Model](#accessdatamodel)
-
-[Debugger Data Model System Interfaces](#systeminterfaces)
-
----
-
 ## <span id="hostinterface"></span> Debugger Data Model C++ Host Interfaces
 
 **The Debugger Data Model Host**
@@ -906,15 +877,11 @@ LessSpecific | One signature or type is less specific than the other. Often, thi
 MoreSpecific | One signature or type is more specific than the other. Often, this means that the more specific signature has a concrete type where the less specific one has a wildcard. As an example, the first signature below is more specific than the second. Signature 1:  `std::pair<int, int>` Signature 2: `std::pair<*, int>` because it has a concrete type (int) where the second has a wildcard (the `*`).
 Identical | The two signatures or types are identical.
 
-
-
-
-
-
-
 ---
 
 ## <span id="related_topics"></span>Related topics
+
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 

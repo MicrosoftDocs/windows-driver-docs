@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the code used for all USB 3 bug checks. Parameter 1 specifies the type of the USB 3 bug check, and the meanings of the other parameters are dependent on Parameter 1.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BUGCODE\_USB3\_DRIVER Parameters
@@ -95,13 +95,13 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 <tr class="even">
 <td align="left"><p>0x804</p></td>
 <td align="left"><p>The leaked handle context. Run <strong>!usbanalyze -v</strong> to get information about the leaked handle and URBs. You must enable Driver Verifier for the client driver.</p></td>
-<td align="left"><p>Device object passed to <strong><a href="https://msdn.microsoft.com/library/windows/hardware/hh406241" data-raw-source="[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)">USBD_CreateHandle</a></strong>.</p></td>
+<td align="left"><p>Device object passed to <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_createhandle" data-raw-source="[USBD_CreateHandle](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_createhandle)">USBD_CreateHandle</a></strong>.</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>A client driver forgot to close a handle it created earlier using <strong><a href="https://msdn.microsoft.com/library/windows/hardware/hh406241" data-raw-source="[USBD_CreateHandle](https://msdn.microsoft.com/library/windows/hardware/hh406241)">USBD_CreateHandle</a></strong> or forgot to free an URB it allocated.</p></td>
+<td align="left"><p>A client driver forgot to close a handle it created earlier using <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_createhandle" data-raw-source="[USBD_CreateHandle](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbdlib/nf-usbdlib-usbd_createhandle)">USBD_CreateHandle</a></strong> or forgot to free an URB it allocated.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x805</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff542962" data-raw-source="[WDFREQUEST](https://msdn.microsoft.com/library/windows/hardware/ff542962)">WDFREQUEST</a> handle for the Close Static Streams URB</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-request-objects" data-raw-source="[WDFREQUEST](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-request-objects)">WDFREQUEST</a> handle for the Close Static Streams URB</p></td>
 <td align="left"><p>Pointer to the Close Static Streams URB</p></td>
 <td align="left"><p>Pointer to the client driver's device object</p></td>
 <td align="left"><p>A client driver sent a Close Static Streams URB in an invalid state (for example, after processing D0 Exit).</p></td>
@@ -111,14 +111,14 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 <td align="left"><p>Pointer to the IRP</p></td>
 <td align="left"><p>Pointer to the URB</p></td>
 <td align="left"><p>Pointer to the client driver's device object</p></td>
-<td align="left"><p>A client driver attempted to send a chained <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554414" data-raw-source="[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)">MDL</a></strong> before querying for chained <strong>MDL</strong> capability. A client driver cannot send a chained <strong>MDL</strong> until after it successfully queries for the chained <strong>MDL</strong> capability. For more information, see Remarks.</p></td>
+<td align="left"><p>A client driver attempted to send a chained <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_mdl" data-raw-source="[MDL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_mdl)">MDL</a></strong> before querying for chained <strong>MDL</strong> capability. A client driver cannot send a chained <strong>MDL</strong> until after it successfully queries for the chained <strong>MDL</strong> capability. For more information, see Remarks.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x807</p></td>
-<td align="left"><p>Pointer to the chained <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554414" data-raw-source="[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)">MDL</a></strong></p></td>
+<td align="left"><p>Pointer to the chained <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_mdl" data-raw-source="[MDL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_mdl)">MDL</a></strong></p></td>
 <td align="left"><p>Pointer to the URB</p></td>
 <td align="left"><p>Pointer to the client driver's device object if available</p></td>
-<td align="left"><p>A client driver sent an URB to the core stack with a transfer buffer length longer than the byte count (returned by <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554530" data-raw-source="[MmGetMdlByteCount](https://msdn.microsoft.com/library/windows/hardware/ff554530)">MmGetMdlByteCount</a></strong>) of the <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554414" data-raw-source="[MDL](https://msdn.microsoft.com/library/windows/hardware/ff554414)">MDL</a></strong> passed in. For more information, see Remarks.</p></td>
+<td align="left"><p>A client driver sent an URB to the core stack with a transfer buffer length longer than the byte count (returned by <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmgetmdlbytecount" data-raw-source="[MmGetMdlByteCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmgetmdlbytecount)">MmGetMdlByteCount</a></strong>) of the <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_mdl" data-raw-source="[MDL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_mdl)">MDL</a></strong> passed in. For more information, see Remarks.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x1001</p></td>
@@ -394,14 +394,14 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 Remarks
 -------
 
-To query for a USB capability, the client driver must call [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) or [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230)
+To query for a USB capability, the client driver must call [**WdfUsbTargetDeviceQueryUsbCapability**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability) or [**USBD\_QueryUsbCapability**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))
 
-To send a chained [**MDL**](https://msdn.microsoft.com/library/windows/hardware/ff554414), the client driver must call [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) and use **URB\_FUNCTION\_BULK\_OR\_INTERRUPT\_TRANSFER\_USING\_CHAINED\_MDL** or **URB\_FUNCTION\_ISOCH\_TRANSFER\_USING\_CHAINED\_MDL**.
+To send a chained [**MDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_mdl), the client driver must call [**USBD\_QueryUsbCapability**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)) and use **URB\_FUNCTION\_BULK\_OR\_INTERRUPT\_TRANSFER\_USING\_CHAINED\_MDL** or **URB\_FUNCTION\_ISOCH\_TRANSFER\_USING\_CHAINED\_MDL**.
 
 ## <span id="see_also"></span>See also
 
 
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)
 
  
 

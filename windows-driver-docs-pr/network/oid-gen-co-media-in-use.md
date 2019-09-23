@@ -42,7 +42,7 @@ Various types of NdisWirelessXxx media.
 **NdisMediumAtm**  
 ATM.
 
-If the underlying miniport driver returns **NULL** for this query or if an experimental media type is used, the driver must indicate receives with [NdisMCoIndicateReceivePacket](https://msdn.microsoft.com/library/windows/hardware/ff553455).
+If the underlying miniport driver returns **NULL** for this query or if an experimental media type is used, the driver must indicate receives with [NdisMCoIndicateReceivePacket](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553455(v=vs.85)).
 
 
 ## Requirements

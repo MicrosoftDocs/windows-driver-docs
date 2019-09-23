@@ -1,12 +1,12 @@
 ---
-title: Supplemental MB Documentation
+title: Supplemental MB Documentation Topics
 description: The following sections provide supplemental information for developers of MB devices.
 ms.assetid: 0C812829-D91A-44FC-8BE6-F8264B13F6C7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Supplemental MB Documentation
+# Supplemental MB Documentation Topics
 
 
 The following sections provide supplemental information for developers of MB devices.

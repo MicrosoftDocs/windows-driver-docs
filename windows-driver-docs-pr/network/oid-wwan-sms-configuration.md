@@ -17,12 +17,12 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Query requests return the MB device's current SMS text message configuration stored in the device or Subscriber Identity Module (SIM) card.
 
-Set requests use the [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff567929) structure to change the SMS text message configuration of the MB device.
+Set requests use the [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration) structure to change the SMS text message configuration of the MB device.
 
 Remarks
 -------
 
-For more information about using this OID, see [WWAN SMS Operations](https://msdn.microsoft.com/library/windows/hardware/ff559131).
+For more information about using this OID, see [WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations).
 
 When processing this OID, miniport drivers can access the SIM card, but should not access the provider network.
 
@@ -57,11 +57,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff567929)
+[**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration)
 
 [**NDIS\_STATUS\_WWAN\_SMS\_CONFIGURATION**](ndis-status-wwan-sms-configuration.md)
 
-[WWAN SMS Operations](https://msdn.microsoft.com/library/windows/hardware/ff559131)
+[WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations)
 
  
 

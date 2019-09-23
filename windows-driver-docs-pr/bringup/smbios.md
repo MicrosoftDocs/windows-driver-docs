@@ -82,7 +82,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>Varies</td>
             <td>08h</td>
             <td>16</td>
-            <td>Universal unique ID number<br>See section 7.2.1. in <a href="http://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
+            <td>Universal unique ID number<br>See section 7.2.1. in <a href="https://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
         </tr>
         <tr>
             <td>Enclosure Type</td>
@@ -284,7 +284,7 @@ The following table describes settings for the **Enclosure Type** field.
 
 [Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
 
-[SMBIOS DMTF Specifications](http://www.dmtf.org/standards/smbios)                                                 
+[SMBIOS DMTF Specifications](https://www.dmtf.org/standards/smbios)                                                 
 
 
 

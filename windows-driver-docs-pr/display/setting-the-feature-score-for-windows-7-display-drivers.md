@@ -74,7 +74,7 @@ score</th>
 
  
 
-For drivers written to WDDM, graphics hardware vendors must place the **FeatureScore** directive under the [**DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of their INF file and use **FeatureScore** to apply the feature score to the drivers.
+For drivers written to WDDM, graphics hardware vendors must place the **FeatureScore** directive under the [**DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of their INF file and use **FeatureScore** to apply the feature score to the drivers.
 
 For [Windows 2000 Display Driver Model](windows-2000-display-driver-model-design-guide.md) drivers, Microsoft applies the appropriate feature score through the class installer at the time of driver installation, or in the INF for in-box Windows 2000 Display Driver Model drivers. Vendors must not use the **FeatureScore** directive to insert a feature score for drivers written to the Windows 2000 Display Driver Model.
 

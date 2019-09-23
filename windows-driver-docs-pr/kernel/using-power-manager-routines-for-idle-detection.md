@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The power manager provides support for idle detection through the [**PoRegisterDeviceForIdleDetection**](https://msdn.microsoft.com/library/windows/hardware/ff559721) and [**PoSetDeviceBusy**](https://msdn.microsoft.com/library/windows/hardware/ff559755) routines.
+The power manager provides support for idle detection through the [**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-poregisterdeviceforidledetection) and [**PoSetDeviceBusy**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) routines.
 
 To enable idle detection for its device, a device power policy owner calls **PoRegisterDeviceForIdleDetection** and specifies:
 
@@ -29,7 +29,7 @@ A driver can register its device for idle detection any time after the device ha
 
 The time-out values for any given device should be proportional to the device's power-up latency and based on observed device behavior. For devices of certain types, a driver can specify conservation and performance time-out values of -1 to use the standard power policy time-outs for the device class. See the device-specific documentation for details.
 
-When the device is in use, the driver must call [**PoSetDeviceBusy**](https://msdn.microsoft.com/library/windows/hardware/ff559755), passing the pointer returned by **PoRegisterDeviceForIdleDetection**. **PoSetDeviceBusy** resets the idle counter, thus restarting the idle countdown for the device. The driver should call **PoSetDeviceBusy** on every I/O operation.
+When the device is in use, the driver must call [**PoSetDeviceBusy**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer), passing the pointer returned by **PoRegisterDeviceForIdleDetection**. **PoSetDeviceBusy** resets the idle counter, thus restarting the idle countdown for the device. The driver should call **PoSetDeviceBusy** on every I/O operation.
 
 To determine whether the device is idle, the power manager compares the value of the idle counter with the driver-specified idle time-out value for the current system power policy (either conservation or performance). See the Microsoft Windows SDK for functions pertaining to the system power policy.
 

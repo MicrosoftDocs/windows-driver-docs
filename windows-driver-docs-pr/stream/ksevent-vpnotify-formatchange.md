@@ -45,8 +45,8 @@ The KSEVENT\_VPNOTIFY\_FORMATCHANGE event is used to propagate an event, such as
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561937" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561937)"><strong>KSE_NODE</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -61,7 +61,7 @@ The minidriver later sets this event handle to notify the KsProxy VPE filter, wh
 
 The KsProxy VPE filter disables the event notification by sending the IOCTL\_KS\_DISABLE\_EVENT I/O control code with the same event handle. The event handle is then closed by the VPE filter. The minidriver must not close the event handle.
 
-For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](https://msdn.microsoft.com/library/windows/hardware/ff560877). For more information about handling stream changes, such as a video resolution change, see [Stream Changes](https://msdn.microsoft.com/library/windows/hardware/ff568284).
+For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index). For more information about handling stream changes, such as a video resolution change, see [Stream Changes](https://docs.microsoft.com/windows-hardware/drivers/stream/stream-changes).
 
  
 

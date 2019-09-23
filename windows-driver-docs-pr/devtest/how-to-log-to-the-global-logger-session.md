@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Use the following procedure to configure a driver to log to the Global Logger trace session:
 
-1. Add the following definition to the driver code. Insert the definition between the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro definition and the include statement for the [trace message header file](trace-message-header-file.md).
+1. Add the following definition to the driver code. Insert the definition between the [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro definition and the include statement for the [trace message header file](trace-message-header-file.md).
    ```
    #define WPP_GLOBALLOGGER
    ```

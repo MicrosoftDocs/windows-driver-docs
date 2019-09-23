@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_the_fobx_structure_if"></span><span id="DDK_THE_FOBX_STRUCTURE_IF"></span>
 
 
-A file object extension (FOBX) structure is an RDBSS extension to the [**FILE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff545834) structure. The FOBX structure is pointed to by the **FileObjectExtension** field in the file object. An FOBX structure contains the following:
+A file object extension (FOBX) structure is an RDBSS extension to the [**FILE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_object) structure. The FOBX structure is pointed to by the **FileObjectExtension** field in the file object. An FOBX structure contains the following:
 
 -   A signature and reference count
 

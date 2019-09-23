@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_srb_function_wmi_kg"></span><span id="DDK_HANDLING_SRB_FUNCTION_WMI_KG"></span>
 
 
-If the HBA supports [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139) (WMI), the port driver will send WMI requests to the miniport driver. The HBA indicates that it supports WMI by setting the WmiDataProvider field of the [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff563900) structure to **TRUE** in its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff552654) routine.
+If the HBA supports [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi) (WMI), the port driver will send WMI requests to the miniport driver. The HBA indicates that it supports WMI by setting the WmiDataProvider field of the [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information) structure to **TRUE** in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) routine.
 
 The writer of a miniport driver prepares the miniport to handle WMI requests as follows:
 
--   If the miniport exposes custom data blocks or event blocks, it should define such blocks in a MOF file and compile it as a binary resource in the miniport's binary image. For more information, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139).
+-   If the miniport exposes custom data blocks or event blocks, it should define such blocks in a MOF file and compile it as a binary resource in the miniport's binary image. For more information, see [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi).
 
--   Implement required and optional *HwScsiWmiXxx* callback routines, as described in [SCSI Miniport Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff565312).
+-   Implement required and optional *HwScsiWmiXxx* callback routines, as described in [SCSI Miniport Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 -   Handle SRB\_FUNCTION\_WMI.
 
@@ -35,17 +35,17 @@ Before the miniport driver handles its first WMI request, it must allocate a SCS
 
 -   A pointer to an array of SCSIWMIGUIDREGINFO structures, one for each block supported.
 
--   Entry points to the miniport driver's *HwScsiWmiXxx* callback routines. At a minimum, a miniport driver must provide entry points to an [**HwScsiWmiQueryReginfo**](https://msdn.microsoft.com/library/windows/hardware/ff557344) routine and an [**HwScsiWmiQueryDataBlock**](https://msdn.microsoft.com/library/windows/hardware/ff557340) routine.
+-   Entry points to the miniport driver's *HwScsiWmiXxx* callback routines. At a minimum, a miniport driver must provide entry points to an [**HwScsiWmiQueryReginfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nc-scsiwmi-pscsiwmi_query_reginfo) routine and an [**HwScsiWmiQueryDataBlock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nc-scsiwmi-pscsiwmi_query_datablock) routine.
 
 A miniport driver is not required to take any action to register its data and event blocks other than setting the WmiDataProvider field of the PORT\_CONFIGURATION\_INFO structure to **TRUE** and implement the required *HwScsiWmiQueryReginfo* routine. The port driver is responsible for registering the miniport driver's blocks with the WMI kernel component.
 
-On receipt of an SRB in which the **Function** member is set to SRB\_FUNCTION\_WMI, a miniport driver's [**HwScsiStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557323) routine does the following:
+On receipt of an SRB in which the **Function** member is set to SRB\_FUNCTION\_WMI, a miniport driver's [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine does the following:
 
 -   Allocates a SCSIWMI\_REQUEST\_CONTEXT structure from the SRB extension if the request might pend, or from the stack if the request could never pend.
 
 -   Checks **Srb**-**&gt;WMIFlags** to determine whether the request is for the adapter or a logical unit.
 
--   Calls [**ScsiPortWmiDispatchFunction**](https://msdn.microsoft.com/library/windows/hardware/ff564766) with pointers to the miniport driver's SCSI\_WMILIB\_CONTEXT, its device extension, and the request context, and the following parameters from the SRB:
+-   Calls [**ScsiPortWmiDispatchFunction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction) with pointers to the miniport driver's SCSI\_WMILIB\_CONTEXT, its device extension, and the request context, and the following parameters from the SRB:
 
     **Srb**-**&gt;WMISubFunction**
 
@@ -55,13 +55,13 @@ On receipt of an SRB in which the **Function** member is set to SRB\_FUNCTION\_W
 
     **Srb**-**&gt;DataBuffer**
 
--   Calls [**ScsiPortWmiPostProcess**](https://msdn.microsoft.com/library/windows/hardware/ff564796) when the driver has finished processing the request. If the driver does not pend the request, then **ScsiPortWmiPostProcess** would most likely be called in the callback. If the driver pends the request then **ScsiPortWmiPostProcess** should be called when the request is completed.
+-   Calls [**ScsiPortWmiPostProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nf-scsiwmi-scsiportwmipostprocess) when the driver has finished processing the request. If the driver does not pend the request, then **ScsiPortWmiPostProcess** would most likely be called in the callback. If the driver pends the request then **ScsiPortWmiPostProcess** should be called when the request is completed.
 
--   Sets **Srb**-**&gt;DataTransferLength** and **Srb**-**&gt;SrbStatus** to the values returned by [**ScsiPortWmiGetReturnSize**](https://msdn.microsoft.com/library/windows/hardware/ff564789) and [**ScsiPortWmiGetReturnStatus**](https://msdn.microsoft.com/library/windows/hardware/ff564791), respectively,
+-   Sets **Srb**-**&gt;DataTransferLength** and **Srb**-**&gt;SrbStatus** to the values returned by [**ScsiPortWmiGetReturnSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nf-scsiwmi-scsiportwmigetreturnsize) and [**ScsiPortWmiGetReturnStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nf-scsiwmi-scsiportwmigetreturnstatus), respectively,
 
--   Calls [**ScsiPortNotification**](https://msdn.microsoft.com/library/windows/hardware/ff564657) with **RequestComplete** and again with **NextRequest** or (**NextLuRequest**).
+-   Calls [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification) with **RequestComplete** and again with **NextRequest** or (**NextLuRequest**).
 
-For more information about WMI, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139).
+For more information about WMI, see [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi).
 
  
 

@@ -16,7 +16,7 @@ This topic describes several compatibility issues that are related to feeder sca
 
 ### Changes from Windows XP to Windows Vista
 
-There have been a number of changes to how scans are handled between Windows XP and Windows Vista. For example, in Windows Vista, each functional unit belongs to a separate category. These categories are represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581) property as WIA\_CATEGORY\_FEEDER for the feeder and WIA\_CATEGORY\_FLATBED for the flatbed. If both of these items are present on a scanner in Windows Vista, both must be represented in the item tree. In Windows XP, there was a single scan item in the item tree that represented all of the scanners functional units.
+There have been a number of changes to how scans are handled between Windows XP and Windows Vista. For example, in Windows Vista, each functional unit belongs to a separate category. These categories are represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category) property as WIA\_CATEGORY\_FEEDER for the feeder and WIA\_CATEGORY\_FLATBED for the flatbed. If both of these items are present on a scanner in Windows Vista, both must be represented in the item tree. In Windows XP, there was a single scan item in the item tree that represented all of the scanners functional units.
 
 The following figure displays the scanner item tree in Windows XP.
 

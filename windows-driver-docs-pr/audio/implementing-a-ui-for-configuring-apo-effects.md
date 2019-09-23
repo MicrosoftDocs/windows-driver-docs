@@ -58,7 +58,7 @@ To design and implement the custom property page provider, perform the following
 
 2.  Package your property page as a DLL. See [Creating and using a DLL](https://go.microsoft.com/fwlink/p/?linkid=106014) topic for more information on packaging your custom page as a DLL.
 
-3.  Modify your [INF file](https://msdn.microsoft.com/library/windows/hardware/ff549520) to install and register the DLL for the property page.
+3.  Modify your [INF file](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) to install and register the DLL for the property page.
 
     The following INF file fragment shows how to modify the INF file to register your custom property page.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # HIDI2C Device-Specific Method (\_DSM)
 
 
-The \_DSM method is defined in section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications). This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods.
+The \_DSM method is defined in section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications). This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods.
 
 The \_DSM for a particular device or class defines a UUID (GUID) that is guaranteed not to clash with other UUIDs. For each UUID, there is a set of defined functions that the \_DSM method can implement to provide data or perform control functions for the driver.
 
@@ -25,7 +25,7 @@ For the HIDI2C class of devices, Function 1 is defined as follows:
 ### Return
 
 An integer containing the HidDescriptorAddress. This address is the register offset in the I2C device at which the HID descriptor(s) can be read.
-**Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
+**Note**  Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
  
 

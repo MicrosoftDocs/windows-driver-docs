@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # finishText XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
 The **finishText** XML element customizes the main text that DPInst displays on a DPInst finish page.
 

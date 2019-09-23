@@ -15,7 +15,7 @@ To setup a modern system for installation of a downlevel operating system (such 
 
 - Secure Boot components for Windows 10 should be installed (certificates, etc.) See [Secure Boot](secure-boot.md) for more information.
 
-- TPM 2.0 used for TPM support in Windows 7. See [KB2920188](https://support.microsoft.com/kb/2920188) for more information.
+- TPM 2.0 used for TPM support in Windows 7. See [KB2920188](https://support.microsoft.com/help/2920188/update-to-add-support-for-tpm-2-0-in-windows-7-and-windows-server-2008) for more information.
 
 - EFI System Resource Table(ESRT) should be populated with a model specific Unique ID for System and Devices that can update firmware.
 

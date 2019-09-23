@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_FILESYSTEM
 
 
-The KSCATEGORY_FILESYSTEM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that moves a data stream into or out of the file system.
+The KSCATEGORY_FILESYSTEM [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that moves a data stream into or out of the file system.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_FILESYSTEM to indicate to the operating system that the devices support the KSCATEGORY_FILESYSTEM functional category.
 
-The KSCATEGORY_FILESYSTEM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799) functional categories.
+The KSCATEGORY_FILESYSTEM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories) functional categories.
 
 Requirements
 ------------
@@ -71,7 +71,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)
 
  
 

@@ -1,6 +1,8 @@
 - name: "NFC design guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "NFC design guide"
+    href: index.md
   - name: "What's new in NFC device drivers"
     href: what-s-new-in-nfc-device-drivers.md
   - name: "NFC architecture"
@@ -8,18 +10,24 @@
   - name: "Wi-Fi direct pairing implementation"
     href: wi-fi-direct-paring-implementation.md
   - name: "Near Field Proximity design guide"
-    href: nfp-design-guide.md
+# Auto-expanded node
     items: 
+    - name: "Near Field Proximity design guide"
+      href: nfp-design-guide.md
     - name: "Tap and Do"
-      href: tap-and-do.md
+# Auto-expanded node
       items: 
+      - name: "Tap and Do"
+        href: tap-and-do.md
       - name: "Tap and Do scenarios"
         href: tap-and-do-scenarios.md
       - name: "Tap and Do use cases"
         href: tap-and-do-use-cases.md
     - name: "NFP provider model"
-      href: nfp-provider-model.md
+# Auto-expanded node
       items: 
+      - name: "NFP provider model"
+        href: nfp-provider-model.md
       - name: "Physical sensor model"
         href: physical-sensor-model.md
       - name: "Message type"
@@ -35,8 +43,10 @@
       - name: "NFP-facilitated peripheral wireless device pairing"
         href: nfp-facilitated-peripheral-wireless-device-pairing.md
     - name: "NFP device driver requirements"
-      href: nfp-device-driver-requirements.md
+# Auto-expanded node
       items: 
+      - name: "NFP device driver requirements"
+        href: nfp-device-driver-requirements.md
       - name: "Device identifiers"
         href: device-identifiers.md
       - name: "Device interface"
@@ -62,8 +72,10 @@
       - name: "Power management"
         href: power-management.md
       - name: "Protocol support"
-        href: protocol-support.md
+# Auto-expanded node
         items: 
+        - name: "Protocol support"
+          href: protocol-support.md
         - name: "NDEF protocol"
           href: ndef-protocol.md
         - name: "Pairing:Bluetooth protocol"
@@ -79,8 +91,10 @@
         - name: "Peer-to-peer"
           href: peer-to-peer.md
   - name: "Smart card design guide"
-    href: design-guide-smart-card.md
+# Auto-expanded node
     items: 
+    - name: "Smart card design guide"
+      href: design-guide-smart-card.md
     - name: "Functional flow"
       href: functional-flow.md
     - name: "Example sequence"
@@ -92,13 +106,17 @@
     - name: "PC/SC interface"
       href: pc-sc-interface.md
   - name: "Power management"
-    href: nfc-power-management.md
+# Auto-expanded node
     items: 
+    - name: "Power management"
+      href: nfc-power-management.md
     - name: "Polling"
       href: polling.md
   - name: "NFC class extension (CX) design guide"
-    href: nfc-class-extension-.md
+# Auto-expanded node
     items: 
+    - name: "NFC class extension (CX) design guide"
+      href: nfc-class-extension-.md
     - name: "Glossary"
       href: glossary.md
     - name: "NFC CX quick start guide"
@@ -114,11 +132,15 @@
     - name: "Class extension state machine"
       href: nfc-class-extension-state-machine.md
     - name: "Extensibility model"
-      href: extensibility-model.md
+# Auto-expanded node
       items: 
+      - name: "Extensibility model"
+        href: extensibility-model.md
       - name: "Sequence handling"
-        href: sequence-handling.md
+# Auto-expanded node
         items: 
+        - name: "Sequence handling"
+          href: sequence-handling.md
         - name: "Sequences"
           href: sequences.md
         - name: "Sequence flags"

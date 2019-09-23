@@ -27,7 +27,7 @@ Some restricted profiles are defined as subsets of the capabilities of other res
 
 ### <span id="Nonrestricted_Operation"></span><span id="nonrestricted_operation"></span><span id="NONRESTRICTED_OPERATION"></span>Nonrestricted Operation
 
-If in DirectX VA an accelerator is used without strict conformance to a restricted profile, the **wRestrictedMode** member of the [**DXVA\_ConnectMode**](https://msdn.microsoft.com/library/windows/hardware/ff563138) structure must be set to 0xFFFF to indicate this lack of restriction.
+If in DirectX VA an accelerator is used without strict conformance to a restricted profile, the **wRestrictedMode** member of the [**DXVA\_ConnectMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_connectmode) structure must be set to 0xFFFF to indicate this lack of restriction.
 
 All defined values of the **bDXVA\_Func** variable are allowed.
 

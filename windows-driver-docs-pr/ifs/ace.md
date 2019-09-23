@@ -59,23 +59,23 @@ Requirements: ntifs.h (include ntifs.h)
 ## Related topics
 
 
-[**ACCESS\_ALLOWED\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff538796)
+[**ACCESS\_ALLOWED\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_access_allowed_ace)
 
-[**ACCESS\_DENIED\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff538831)
+[**ACCESS\_DENIED\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_access_denied_ace)
 
-[**ACE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff538847)
+[**ACE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_ace_header)
 
-[**ACL**](https://msdn.microsoft.com/library/windows/hardware/ff538866)
+[**ACL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_acl)
 
-[**RtlAddAccessAllowedAce**](https://msdn.microsoft.com/library/windows/hardware/ff552092)
+[**RtlAddAccessAllowedAce**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtladdaccessallowedace)
 
-[**RtlGetAce**](https://msdn.microsoft.com/library/windows/hardware/ff552288)
+[**RtlGetAce**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtlgetace)
 
-[**SID**](https://msdn.microsoft.com/library/windows/hardware/ff556740)
+[**SID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_sid)
 
-[**SYSTEM\_ALARM\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff556769)
+[**SYSTEM\_ALARM\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_system_alarm_ace)
 
-[**SYSTEM\_AUDIT\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff556771)
+[**SYSTEM\_AUDIT\_ACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_system_audit_ace)
 
  
 

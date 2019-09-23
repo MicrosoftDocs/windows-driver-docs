@@ -52,9 +52,9 @@ Remarks
 The !powertriage extension displays the following information.
 
 1. Power state of the device node along with !podev for all the device objects.
-2. Links to [**!rcdrkd.rcdrlogdump**](-rcdrkd-rcdrlogdump.md) if the driver has enabled the IFR. For more information about IFR, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](https://msdn.microsoft.com/library/windows/hardware/dn940485).
+2. Links to [**!rcdrkd.rcdrlogdump**](-rcdrkd-rcdrlogdump.md) if the driver has enabled the IFR. For more information about IFR, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers).
 3. Links to [**!wdfkd.wdfdriverinfo**](-wdfkd-wdfdriverinfo.md) and [**!wdfkd.wdflogdump**](-wdfkd-wdflogdump.md) for WDF drivers.
-4. Links to !fxdevice for PoFx devices. For more information about PoFX, see [Overview of the Power Management Framework](https://msdn.microsoft.com/library/windows/hardware/hh406637).
+4. Links to !fxdevice for PoFx devices. For more information about PoFX, see [Overview of the Power Management Framework](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-the-power-management-framework).
 Here is example output from the !powertriage command.
 
 ```dbgcmd

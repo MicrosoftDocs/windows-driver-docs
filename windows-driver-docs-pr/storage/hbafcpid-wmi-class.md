@@ -14,7 +14,7 @@ ms.date: 10/17/2018
 
 An HBA miniport driver that supports the T11 committee's *Fibre Channel HBA API* specification uses the HBAFCPID class to define a Fibre Channel protocol (FCP) identifier for a logical unit. The FCP identifier specifies the name of the machine the logical unit is located on and the HBA port through which it can be accessed.
 
-The miniport driver uses this identifier to construct a binding between the information that the operating system uses to identify a logical unit and the FCP identifier for the logical unit. For information about this kind of binding, see [**HBAFCPBindingEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556034). For an explanation of the Fibre Channel protocol, see the T11 committee's *dpANS Fibre Channel Protocol for SCSI* specification.
+The miniport driver uses this identifier to construct a binding between the information that the operating system uses to identify a logical unit and the FCP identifier for the logical unit. For information about this kind of binding, see [**HBAFCPBindingEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry). For an explanation of the Fibre Channel protocol, see the T11 committee's *dpANS Fibre Channel Protocol for SCSI* specification.
 
 The HBAFCPID class is defined as follows in *Hbaapi.mof*:
 
@@ -29,7 +29,7 @@ class HBAFCPID {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**HBAFCPID**](https://msdn.microsoft.com/library/windows/hardware/ff556038)
+[**HBAFCPID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_hbafcpid)
 
 There are no methods associated with this WMI class.
 

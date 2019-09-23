@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The following example shows how to modify a 32-bit driver for 64-bit by adding a call to [**IoIs32bitProcess**](https://msdn.microsoft.com/library/windows/hardware/ff549372). Note that this example shows only the portions of the driver code that need to be modified.
+The following example shows how to modify a 32-bit driver for 64-bit by adding a call to [**IoIs32bitProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iois32bitprocess). Note that this example shows only the portions of the driver code that need to be modified.
 
 ### Original Driver Code
 

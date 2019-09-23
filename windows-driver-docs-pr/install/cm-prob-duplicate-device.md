@@ -32,4 +32,4 @@ This error is reported when one of the following occurs:
 
 - A bus driver incorrectly creates two identically named children on the bus. This is caused by multiple devices on the bus that report the same serial number. This can also be caused by a bus driver that incorrectly reports the same hardware identifiers for two or more devices.
 
-    In this case, you should contact [Microsoft support](http://support.microsoft.com/) for more assistance with this problem.
+    In this case, you should contact [Microsoft support](https://support.microsoft.com/en-us) for more assistance with this problem.

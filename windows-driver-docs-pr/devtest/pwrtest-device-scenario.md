@@ -123,11 +123,11 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;BusyCount&gt;</strong></td>
-<td align="left"><p>The number of times the device driver called <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559755)"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
+<td align="left"><p>The number of times the device driver called <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;AccruedBusyCount&gt;</strong></td>
-<td align="left"><p>The total number of times the device driver called <a href="https://msdn.microsoft.com/library/windows/hardware/ff559755" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff559755)"><strong>PoSetDeviceBusy</strong></a>.</p></td>
+<td align="left"><p>The total number of times the device driver called <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>PoSetDeviceBusy</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;IdlePowerState&gt;</strong></td>

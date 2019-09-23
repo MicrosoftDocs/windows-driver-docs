@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CIPHER\_KEY\_BIP\_KEY
 
 
-WDI\_TLV\_CIPHER\_KEY\_BIP\_KEY is a TLV that contains BIP cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://msdn.microsoft.com/library/windows/hardware/dn925855).
+WDI\_TLV\_CIPHER\_KEY\_BIP\_KEY is a TLV that contains BIP cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-add-cipher-keys).
 
 ## TLV Type
 

@@ -9,4 +9,4 @@ ms.localizationpriority: medium
 
 This section contains reference documentation for installation of Windows drivers.
 
-For additional guidance, please see [Device and Driver Installation Reference](https://msdn.microsoft.com/library/windows/hardware/ff541175).
+For additional guidance, please see [Device and Driver Installation Reference](https://docs.microsoft.com/windows/desktop/devinst/device-and-driver-installation-reference).

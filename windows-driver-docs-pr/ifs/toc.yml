@@ -1,17 +1,25 @@
-- name: "Installable file system driver design guide"
-  href: index.md
+- name: "File system driver design guide"
+# Auto-expanded node
   items: 
+  - name: "File system driver design guide"
+    href: index.md
   - name: "File System Drivers"
-    href: file-system-drivers.md
+# Auto-expanded node
     items: 
+    - name: "File System Drivers"
+      href: file-system-drivers.md
     - name: "Installing a File System Driver"
-      href: installing-a-file-system-driver.md
+# Auto-expanded node
       items: 
+      - name: "Installing a File System Driver"
+        href: installing-a-file-system-driver.md
       - name: "Creating an INF File for a File System Driver"
         href: creating-an-inf-file-for-a-file-system-driver.md
     - name: "Using Extra Create Parameters with an IRP_MJ_CREATE Operation"
-      href: using-extra-create-parameters-with-an-irp-mj-create-operation.md
+# Auto-expanded node
       items: 
+      - name: "Using Extra Create Parameters with an IRP_MJ_CREATE Operation"
+        href: using-extra-create-parameters-with-an-irp-mj-create-operation.md
       - name: "Attaching ECPs to IRP_MJ_CREATE Operations that a Kernel-Mode Driver Originated"
         href: attaching-ecps-to-irp-mj-create-operations-that-a-kernel-mode-driver-o.md
       - name: "Using ECPs to Process IRP_MJ_CREATE Operations in a File System Filter Driver"
@@ -21,18 +29,24 @@
       - name: "System-Defined ECPs"
         href: system-defined-ecps.md
   - name: "File System Filter Drivers"
-    href: file-system-filter-drivers.md
+# Auto-expanded node
     items: 
+    - name: "File System Filter Drivers"
+      href: file-system-filter-drivers.md
     - name: "File System Fundamentals"
-      href: file-system-fundamentals.md
+# Auto-expanded node
       items: 
+      - name: "File System Fundamentals"
+        href: file-system-fundamentals.md
       - name: "What Determines When a Driver Is Loaded"
         href: what-determines-when-a-driver-is-loaded.md
       - name: "What Happens to File Systems During System Boot"
         href: what-happens-to-file-systems-during-system-boot.md
       - name: "Storage Device Stacks, Storage Volumes, and File System Stacks"
-        href: storage-device-stacks--storage-volumes--and-file-system-stacks.md
+# Auto-expanded node
         items: 
+        - name: "Storage Device Stacks, Storage Volumes, and File System Stacks"
+          href: storage-device-stacks--storage-volumes--and-file-system-stacks.md
         - name: "Storage Device Stacks"
           href: storage-device-stacks.md
         - name: "Storage Volumes"
@@ -40,27 +54,35 @@
         - name: "File System Stacks"
           href: file-system-stacks.md
       - name: "Mounting a Volume"
-        href: mounting-a-volume.md
+# Auto-expanded node
         items: 
+        - name: "Mounting a Volume"
+          href: mounting-a-volume.md
         - name: "How the Volume Is Mounted"
           href: how-the-volume-is-mounted.md
         - name: "Volume Mount Example"
           href: volume-mount-example.md
     - name: "Introduction to File System Filter Drivers"
-      href: introduction-to-file-system-filter-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Introduction to File System Filter Drivers"
+        href: introduction-to-file-system-filter-drivers.md
       - name: "What Is a File System Filter Driver?"
         href: what-is-a-file-system-filter-driver-.md
       - name: "File System Filter Drivers Are Not Device Drivers"
-        href: file-system-filter-drivers-are-not-device-drivers.md
+# Auto-expanded node
         items: 
+        - name: "File System Filter Drivers Are Not Device Drivers"
+          href: file-system-filter-drivers-are-not-device-drivers.md
         - name: "How File System Filter Drivers Are Similar to Device Drivers"
           href: how-file-system-filter-drivers-are-similar-to-device-drivers.md
         - name: "How File System Filter Drivers Are Different from Device Drivers"
           href: how-file-system-filter-drivers-are-different-from-device-drivers.md
       - name: "Installing a File System Filter Driver"
-        href: installing-a-file-system-filter-driver.md
+# Auto-expanded node
         items: 
+        - name: "Installing a File System Filter Driver"
+          href: installing-a-file-system-filter-driver.md
         - name: "Creating an INF File for a File System Filter Driver"
           href: creating-an-inf-file-for-a-file-system-filter-driver.md
         - name: "Load Order Groups for File System Filter Drivers "
@@ -72,8 +94,10 @@
         - name: "Using an INF File to Uninstall a File System Filter Driver"
           href: using-an-inf-file-to-uninstall-a-file-system-filter-driver.md
       - name: "Initializing a File System Filter Driver"
-        href: initializing-a-file-system-filter-driver.md
+# Auto-expanded node
         items: 
+        - name: "Initializing a File System Filter Driver"
+          href: initializing-a-file-system-filter-driver.md
         - name: "Creating the Control Device Object"
           href: creating-the-control-device-object.md
         - name: "Registering IRP Dispatch Routines"
@@ -91,8 +115,10 @@
         - name: "Returning Status"
           href: returning-status.md
       - name: "Attaching a Filter to a File System or Volume"
-        href: attaching-a-filter-to-a-file-system-or-volume.md
+# Auto-expanded node
         items: 
+        - name: "Attaching a Filter to a File System or Volume"
+          href: attaching-a-filter-to-a-file-system-or-volume.md
         - name: "Creating the Filter Device Object"
           href: creating-the-filter-device-object.md
         - name: "Attaching the Filter Device Object to the Target Device Object"
@@ -104,13 +130,17 @@
         - name: "Clearing the DO_DEVICE_INITIALIZING Flag"
           href: clearing-the-do-device-initializing-flag.md
     - name: "Filtering IRPs and Fast I/O"
-      href: filtering-irps-and-fast-i-o.md
+# Auto-expanded node
       items: 
+      - name: "Filtering IRPs and Fast I/O"
+        href: filtering-irps-and-fast-i-o.md
       - name: "IRPs Are Different From Fast I/O"
         href: irps-are-different-from-fast-i-o.md
       - name: "Types of Device Objects Used by File System Filter Drivers"
-        href: types-of-device-objects-used-by-file-system-filter-drivers.md
+# Auto-expanded node
         items: 
+        - name: "Types of Device Objects Used by File System Filter Drivers"
+          href: types-of-device-objects-used-by-file-system-filter-drivers.md
         - name: "The Filter Driver's Control Device Object"
           href: the-filter-driver-s-control-device-object.md
         - name: "Filter Device Object Attached to a File System"
@@ -118,8 +148,10 @@
         - name: "Filter Device Object Attached to a Volume"
           href: filter-device-object-attached-to-a-volume.md
     - name: "Writing IRP Dispatch Routines"
-      href: writing-irp-dispatch-routines.md
+# Auto-expanded node
       items: 
+      - name: "Writing IRP Dispatch Routines"
+        href: writing-irp-dispatch-routines.md
       - name: "Completing the IRP"
         href: completing-the-irp.md
       - name: "Passing the IRP Down to Lower-Level Drivers"
@@ -133,8 +165,10 @@
       - name: "Dispatch Routine IRQL and Thread Context"
         href: dispatch-routine-irql-and-thread-context.md
     - name: "Using IRP Completion Routines"
-      href: using-irp-completion-routines.md
+# Auto-expanded node
       items: 
+      - name: "Using IRP Completion Routines"
+        href: using-irp-completion-routines.md
       - name: "How Completion Processing Is Performed"
         href: how-completion-processing-is-performed.md
       - name: "Checking the PendingReturned Flag"
@@ -146,13 +180,17 @@
       - name: "Constraints on Completion Routines"
         href: constraints-on-completion-routines.md
     - name: "Tracking Per-Stream Context in a Legacy File System Filter Driver"
-      href: tracking-per-stream-context-in-a-legacy-file-system-filter-driver.md
+# Auto-expanded node
       items: 
+      - name: "Tracking Per-Stream Context in a Legacy File System Filter Driver"
+        href: tracking-per-stream-context-in-a-legacy-file-system-filter-driver.md
       - name: "File Streams, Stream Contexts, and Per-Stream Contexts"
         href: file-streams--stream-contexts--and-per-stream-contexts.md
       - name: "Creating and Using Per-Stream Context Structures"
-        href: creating-and-using-per-stream-context-structures.md
+# Auto-expanded node
         items: 
+        - name: "Creating and Using Per-Stream Context Structures"
+          href: creating-and-using-per-stream-context-structures.md
         - name: "Creating a Per-Stream Context"
           href: creating-a-per-stream-context.md
         - name: "Associating a Per-Stream Context With a File Stream"
@@ -164,18 +202,24 @@
     - name: "Blocking legacy file system filter drivers"
       href: blocking-file-system-filter-drivers.md
   - name: "File System Minifilter Drivers"
-    href: file-system-minifilter-drivers.md
+# Auto-expanded node
     items: 
+    - name: "File System Minifilter Drivers"
+      href: file-system-minifilter-drivers.md
     - name: "Filter Manager and Minifilter Driver Architecture"
-      href: filter-manager-and-minifilter-driver-architecture.md
+# Auto-expanded node
       items: 
+      - name: "Filter Manager and Minifilter Driver Architecture"
+        href: filter-manager-and-minifilter-driver-architecture.md
       - name: "Filter Manager Concepts"
         href: filter-manager-concepts.md
       - name: "Advantages of the Filter Manager Model"
         href: advantages-of-the-filter-manager-model.md
       - name: "Filter Manager Support for Minifilter Drivers"
-        href: filter-manager-support-for-minifilter-drivers.md
+# Auto-expanded node
         items: 
+        - name: "Filter Manager Support for Minifilter Drivers"
+          href: filter-manager-support-for-minifilter-drivers.md
         - name: "Loading and Unloading"
           href: loading-and-unloading.md
         - name: "Processing I/O Operations"
@@ -201,8 +245,10 @@
       - name: "Guidelines for Porting Legacy Filter Drivers"
         href: guidelines-for-porting-legacy-filter-drivers.md
     - name: "Installing a Minifilter Driver"
-      href: installing-a-minifilter-driver.md
+# Auto-expanded node
       items: 
+      - name: "Installing a Minifilter Driver"
+        href: installing-a-minifilter-driver.md
       - name: "Creating an INF File for a Minifilter Driver"
         href: creating-an-inf-file-for-a-minifilter-driver.md
       - name: "Load Order Groups and Altitudes for Minifilter Drivers"
@@ -214,8 +260,10 @@
       - name: "Reparse Point Tag Request"
         href: reparse-point-tag-request.md
     - name: "Writing a DriverEntry Routine for a Minifilter Driver"
-      href: writing-a-driverentry-routine-for-a-minifilter-driver.md
+# Auto-expanded node
       items: 
+      - name: "Writing a DriverEntry Routine for a Minifilter Driver"
+        href: writing-a-driverentry-routine-for-a-minifilter-driver.md
       - name: "Registering the Minifilter Driver"
         href: registering-the-minifilter-driver.md
       - name: "Initiating Filtering"
@@ -223,13 +271,17 @@
       - name: "Returning Status from a Minifilter DriverEntry Routine"
         href: returning-status-from-a-minifilter-driverentry-routine.md
     - name: "Writing a FilterUnloadCallback Routine for a Minifilter Driver"
-      href: writing-a-filterunloadcallback-routine-for-a-minifilter-driver.md
+# Auto-expanded node
       items: 
+      - name: "Writing a FilterUnloadCallback Routine for a Minifilter Driver"
+        href: writing-a-filterunloadcallback-routine-for-a-minifilter-driver.md
       - name: "When the FilterUnloadCallback Routine Is Called"
         href: when-the-filterunloadcallback-routine-is-called.md
       - name: "Writing a FilterUnloadCallback Routine"
-        href: writing-a-filterunloadcallback-routine.md
+# Auto-expanded node
         items: 
+        - name: "Writing a FilterUnloadCallback Routine"
+          href: writing-a-filterunloadcallback-routine.md
         - name: "Closing the Communication Server Port"
           href: closing-the-communication-server-port.md
         - name: "Unregistering the Minifilter"
@@ -239,18 +291,24 @@
         - name: "Returning Status from a FilterUnloadCallback Routine"
           href: returning-status-from-a-filterunloadcallback-routine.md
     - name: "Writing Preoperation and Postoperation Callback Routines"
-      href: writing-preoperation-and-postoperation-callback-routines.md
+# Auto-expanded node
       items: 
+      - name: "Writing Preoperation and Postoperation Callback Routines"
+        href: writing-preoperation-and-postoperation-callback-routines.md
       - name: "Registering Preoperation and Postoperation Callback Routines"
         href: registering-preoperation-and-postoperation-callback-routines.md
       - name: "Filtering I/O Operations in a Minifilter Driver"
         href: filtering-i-o-operations-in-a-minifilter-driver.md
       - name: "Writing Preoperation Callback Routines"
-        href: writing-preoperation-callback-routines.md
+# Auto-expanded node
         items: 
+        - name: "Writing Preoperation Callback Routines"
+          href: writing-preoperation-callback-routines.md
         - name: "Passing an I/O Operation Down the Minifilter Driver Instance Stack"
-          href: passing-an-i-o-operation-down-the-minifilter-driver-instance-stack.md
+# Auto-expanded node
           items: 
+          - name: "Passing an I/O Operation Down the Minifilter Driver Instance Stack"
+            href: passing-an-i-o-operation-down-the-minifilter-driver-instance-stack.md
           - name: "Returning FLT_PREOP_SUCCESS_WITH_CALLBACK"
             href: returning-flt-preop-success-with-callback.md
           - name: "Returning FLT_PREOP_SUCCESS_NO_CALLBACK"
@@ -264,11 +322,15 @@
         - name: "Pending an I/O Operation in a Preoperation Callback Routine"
           href: pending-an-i-o-operation-in-a-preoperation-callback-routine.md
       - name: "Writing Postoperation Callback Routines"
-        href: writing-postoperation-callback-routines.md
+# Auto-expanded node
         items: 
+        - name: "Writing Postoperation Callback Routines"
+          href: writing-postoperation-callback-routines.md
         - name: "Performing Completion Processing for an I/O Operation"
-          href: performing-completion-processing-for-an-i-o-operation.md
+# Auto-expanded node
           items: 
+          - name: "Performing Completion Processing for an I/O Operation"
+            href: performing-completion-processing-for-an-i-o-operation.md
           - name: "Ensuring that Completion Processing is Performed at Safe IRQL"
             href: ensuring-that-completion-processing-is-performed-at-safe-irql.md
         - name: "Pending an I/O Operation in a Postoperation Callback Routine"
@@ -278,8 +340,10 @@
       - name: "Modifying the Parameters for an I/O Operation"
         href: modifying-the-parameters-for-an-i-o-operation.md
       - name: "Determining the Buffering Method for an I/O Operation"
-        href: determining-the-buffering-method-for-an-i-o-operation.md
+# Auto-expanded node
         items: 
+        - name: "Determining the Buffering Method for an I/O Operation"
+          href: determining-the-buffering-method-for-an-i-o-operation.md
         - name: "Operations That Can Be IRP-Based or Fast I/O"
           href: operations-that-can-be-irp-based-or-fast-i-o.md
         - name: "IRP-Based I/O Operations That Obey Device Object Flags"
@@ -293,15 +357,19 @@
         - name: "IRP-Based I/O Operations That Have No Buffers"
           href: irp-based-i-o-operations-that-have-no-buffers.md
       - name: "Accessing the User Buffers for an I/O Operation"
-        href: accessing-the-user-buffers-for-an-i-o-operation.md
+# Auto-expanded node
         items: 
+        - name: "Accessing the User Buffers for an I/O Operation"
+          href: accessing-the-user-buffers-for-an-i-o-operation.md
         - name: "Accessing User Buffers in a Preoperation Callback Routine"
           href: accessing-user-buffers-in-a-preoperation-callback-routine.md
         - name: "Accessing User Buffers in a Postoperation Callback Routine"
           href: accessing-user-buffers-in-a-postoperation-callback-routine.md
     - name: "Managing Contexts in a Minifilter Driver"
-      href: managing-contexts-in-a-minifilter-driver.md
+# Auto-expanded node
       items: 
+      - name: "Managing Contexts in a Minifilter Driver"
+        href: managing-contexts-in-a-minifilter-driver.md
       - name: "Registering Context Types"
         href: registering-context-types.md
       - name: "Creating Contexts"
@@ -323,24 +391,34 @@
       - name: "Best Practices"
         href: best-practices.md
   - name: "Network Redirector Drivers"
-    href: network-redirector-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Network Redirector Drivers"
+      href: network-redirector-drivers.md
     - name: "Introduction to Remote File Systems"
-      href: introduction-to-remote-file-systems.md
+# Auto-expanded node
       items: 
+      - name: "Introduction to Remote File Systems"
+        href: introduction-to-remote-file-systems.md
       - name: "Components of a Remote File System"
         href: components-of-a-remote-file-system.md
     - name: "Introduction to Network Redirectors"
-      href: introduction-to-network-redirectors.md
+# Auto-expanded node
       items: 
+      - name: "Introduction to Network Redirectors"
+        href: introduction-to-network-redirectors.md
       - name: "What is a Network Redirector?"
-        href: what-is-a-network-redirector-.md
+# Auto-expanded node
         items: 
+        - name: "What is a Network Redirector?"
+          href: what-is-a-network-redirector-.md
         - name: "Basic Architecture of a Network Redirector"
           href: basic-architecture-of-a-network-redirector.md
       - name: "The Kernel-Mode Network Redirector Driver"
-        href: the-kernel-mode-network-redirector-driver.md
+# Auto-expanded node
         items: 
+        - name: "The Kernel-Mode Network Redirector Driver"
+          href: the-kernel-mode-network-redirector-driver.md
         - name: "Network Redirector Design and Performance"
           href: network-redirector-design-and-performance.md
         - name: "Network Redirector Design in Windows NT"
@@ -350,15 +428,19 @@
         - name: "The Redirected Drive Buffering SubSystem"
           href: the-redirected-drive-buffering-subsystem.md
         - name: "Oplock Semantics"
-          href: oplock-semantics.md
+# Auto-expanded node
           items: 
+          - name: "Oplock Semantics"
+            href: oplock-semantics.md
           - name: "Overview"
             href: overview.md
           - name: "Granting Oplocks"
             href: granting-oplocks.md
           - name: "Breaking Oplocks"
-            href: breaking-oplocks.md
+# Auto-expanded node
             items: 
+            - name: "Breaking Oplocks"
+              href: breaking-oplocks.md
             - name: "IRP_MJ_CREATE"
               href: irp-mj-create2.md
             - name: "IRP_MJ_READ"
@@ -376,11 +458,15 @@
           - name: "Acknowledging Oplock Breaks"
             href: acknowledging-oplock-breaks.md
     - name: "Kernel Network Redirector Driver Components"
-      href: kernel-network-redirector-driver-components.md
+# Auto-expanded node
       items: 
+      - name: "Kernel Network Redirector Driver Components"
+        href: kernel-network-redirector-driver-components.md
       - name: "The RDBSS Driver and Library"
-        href: the-rdbss-driver-and-library.md
+# Auto-expanded node
         items: 
+        - name: "The RDBSS Driver and Library"
+          href: the-rdbss-driver-and-library.md
         - name: "Routines Provided by RDBSS"
           href: routines-provided-by-rdbss.md
         - name: "Macros Defined by RDBSS"
@@ -402,8 +488,10 @@
         - name: "RX_CONTEXT and IRP Management"
           href: rx-context-and-irp-management.md
         - name: "Connection and File Structure Management"
-          href: connection-and-file-structure-management.md
+# Auto-expanded node
           items: 
+          - name: "Connection and File Structure Management"
+            href: connection-and-file-structure-management.md
           - name: "The SRV_CALL Structure"
             href: the-srv-call-structure.md
           - name: "The NET_ROOT Structure"
@@ -437,8 +525,10 @@
         - name: "Connection Engine Management"
           href: connection-engine-management.md
       - name: "The Kernel Network Mini-Redirector Driver"
-        href: the-kernel-network-mini-redirector-driver.md
+# Auto-expanded node
         items: 
+        - name: "The Kernel Network Mini-Redirector Driver"
+          href: the-kernel-network-mini-redirector-driver.md
         - name: "Routines Implemented by the Kernel Network Mini-Redirector"
           href: routines-implemented-by-the-kernel-network-mini-redirector.md
         - name: "Routines Not Used by RDBSS"
@@ -456,8 +546,10 @@
         - name: "Miscellaneous Network Mini-Redirector Routines"
           href: miscellaneous-network-mini-redirector-routines.md
     - name: "Writing a Kernel Network Redirector"
-      href: writing-a-kernel-network-redirector.md
+# Auto-expanded node
       items: 
+      - name: "Writing a Kernel Network Redirector"
+        href: writing-a-kernel-network-redirector.md
       - name: "Support for UNC Naming and MUP"
         href: support-for-unc-naming-and-mup.md
       - name: "MUP and DFS Interactions"
@@ -469,18 +561,24 @@
       - name: "Network Redirectors and the File System Process"
         href: network-redirectors-and-the-file-system-process.md
   - name: "Security Considerations for File Systems"
-    href: security-considerations-for-file-systems.md
+# Auto-expanded node
     items: 
+    - name: "Security Considerations for File Systems"
+      href: security-considerations-for-file-systems.md
     - name: "Introduction to File Systems Security"
       href: introduction-to-file-systems-security.md
     - name: "General Driver Security Issues"
-      href: general-driver-security-issues.md
+# Auto-expanded node
       items: 
+      - name: "General Driver Security Issues"
+        href: general-driver-security-issues.md
       - name: "What is Driver Security"
         href: what-is-driver-security.md
       - name: "Designing with Security Threat Models"
-        href: designing-with-security-threat-models.md
+# Auto-expanded node
         items: 
+        - name: "Designing with Security Threat Models"
+          href: designing-with-security-threat-models.md
         - name: "Spoofing Identity"
           href: spoofing-identity.md
         - name: "Tampering with Data"
@@ -494,8 +592,10 @@
         - name: "Elevation of Privilege"
           href: elevation-of-privilege.md
       - name: "Implementing File Systems to Minimize Security Threats"
-        href: implementing-file-systems-to-minimize-security-threats.md
+# Auto-expanded node
         items: 
+        - name: "Implementing File Systems to Minimize Security Threats"
+          href: implementing-file-systems-to-minimize-security-threats.md
         - name: "Buffer Handling"
           href: buffer-handling.md
         - name: "Authentication and Identification"
@@ -507,11 +607,15 @@
       - name: "Testing for Security"
         href: testing-for-security.md
     - name: "Security Features for File Systems"
-      href: security-features-for-file-systems.md
+# Auto-expanded node
       items: 
+      - name: "Security Features for File Systems"
+        href: security-features-for-file-systems.md
       - name: "Security Descriptors"
-        href: security-descriptors.md
+# Auto-expanded node
         items: 
+        - name: "Security Descriptors"
+          href: security-descriptors.md
         - name: "Security Identifier"
           href: security-identifier.md
         - name: "Access Mask"
@@ -527,11 +631,15 @@
       - name: "Kernel Extended Attributes"
         href: kernel-extended-attributes.md
     - name: "File System Security Issues"
-      href: file-system-security-issues.md
+# Auto-expanded node
       items: 
+      - name: "File System Security Issues"
+        href: file-system-security-issues.md
       - name: "Semantic Model Checks"
-        href: semantic-model-checks.md
+# Auto-expanded node
         items: 
+        - name: "Semantic Model Checks"
+          href: semantic-model-checks.md
         - name: "Create Processing"
           href: create-processing.md
         - name: "Delete on Close"
@@ -549,13 +657,17 @@
         - name: "Media Validation"
           href: media-validation.md
       - name: "Security Checks"
-        href: security-checks.md
+# Auto-expanded node
         items: 
+        - name: "Security Checks"
+          href: security-checks.md
         - name: "Applying Security Descriptors on the Device Object"
           href: applying-security-descriptors-on-the-device-object.md
         - name: "IRP_MJ_CREATE Dispatch Routine"
-          href: irp-mj-create-dispatch-routine.md
+# Auto-expanded node
           items: 
+          - name: "IRP_MJ_CREATE Dispatch Routine"
+            href: irp-mj-create-dispatch-routine.md
           - name: "Checking for Traverse Privilege on IRP_MJ_CREATE"
             href: checking-for-traverse-privilege-on-irp-mj-create.md
           - name: "Checking for Other Special Cases  on IRP_MJ_CREATE"
@@ -581,8 +693,10 @@
         - name: "Process and Thread Termination Issues"
           href: process-and-thread-termination-issues.md
     - name: "Security Considerations for File System Filter Drivers"
-      href: security-considerations-for-file-system-filter-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Security Considerations for File System Filter Drivers"
+        href: security-considerations-for-file-system-filter-drivers.md
       - name: "Proxy Operations in File System Filter Drivers"
         href: proxy-operations-in-file-system-filter-drivers.md
       - name: "Impersonation in a File System Filter Driver"
@@ -594,8 +708,10 @@
       - name: "Reparse Points in a File System Filter Driver"
         href: reparse-points-in-a-file-system-filter-driver.md
   - name: "Miscellaneous Information"
-    href: miscellaneous-information.md
+# Auto-expanded node
     items: 
+    - name: "Miscellaneous Information"
+      href: miscellaneous-information.md
     - name: "Anti-virus optimization for Windows Containers"
       href: anti-virus-optimization-for-windows-containers.md
     - name: "Offloaded Data Transfers"
@@ -605,8 +721,10 @@
     - name: "Understanding Volume Enumerations with Duplicate Volume Names"
       href: understanding-volume-enumerations-with-duplicate-volume-names.md
   - name: "Reference"
-    href: ifs-reference.md
+# Auto-expanded node
     items: 
+    - name: "Additional Reference"
+      href: ifs-reference.md
     - name: "CcIsThereDirtyLoggedPages"
       href: ccistheredirtyloggedpages.md
     - name: "CcSetLogHandleForFileEx"
@@ -614,8 +732,10 @@
     - name: "CcSetLoggedDataThreshold"
       href: ccsetloggeddatathreshold.md
     - name: "CcSetReadAheadGranularityEx"
-      href: ccsetreadaheadgranularityex.md
+# Auto-expanded node
       items: 
+      - name: "CcSetReadAheadGranularityEx"
+        href: ccsetreadaheadgranularityex.md
       - name: "READ_AHEAD_PARAMETERS"
         href: read-ahead-parameters.md
     - name: "CcUnmapFileOffsetFromSystemCache"

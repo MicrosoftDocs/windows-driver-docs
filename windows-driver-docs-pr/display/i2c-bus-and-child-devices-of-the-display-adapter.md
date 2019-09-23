@@ -41,10 +41,10 @@ The *HwVidGetChildDescriptor* function, implemented by the video miniport driver
 
 The I²C specification defines a protocol for initiating I²C communication, reading and writing bytes over the I²C data line and terminating I²C communication. The system-supplied video port driver provides the following functions that implement that protocol.
 
-* [**I2CStart**](https://msdn.microsoft.com/library/windows/hardware/ff567375)
-* [**I2CRead**](https://msdn.microsoft.com/library/windows/hardware/ff567372)
-* [**I2CWrite**](https://msdn.microsoft.com/library/windows/hardware/ff567378)
-* [**I2CStop**](https://msdn.microsoft.com/library/windows/hardware/ff567376)
+* [**I2CStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pi2c_start)
+* [**I2CRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pi2c_read)
+* [**I2CWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pi2c_write)
+* [**I2CStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pi2c_stop)
 
 Each of the functions (implemented, but not exported by the video port driver) in the preceding list requires assistance from the video miniport driver. Before the video miniport driver can call the I²C functions, it must obtain function pointers by passing VideoPortServicesI2C to the [VideoPortQueryServices](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportqueryservices) function.
 
@@ -52,7 +52,7 @@ For example, the **I2CRead** function reads a sequence of bytes over the I²C da
 
 
 For an overview of all video miniport driver functions and how those functions are registered,
- see [Video Miniport Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff570512).
+ see [Video Miniport Driver Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/).
 
 For details on the I²C bus, see the I²C Bus Specification published by Philips Semiconductors.
 

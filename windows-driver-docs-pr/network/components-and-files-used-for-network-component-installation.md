@@ -41,13 +41,13 @@ In addition to one or more of the above components, a vendor also optionally sup
 
 ## INF files
 
-Each network component must have an information (INF) file that the network class installer uses to install the component. Network INF files are based on the common INF file format. For more information about the INF file format, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
+Each network component must have an information (INF) file that the network class installer uses to install the component. Network INF files are based on the common INF file format. For more information about the INF file format, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
 
 For detailed information about creating INF files for network components, see [Creating Network INF Files](creating-network-inf-files.md).
 
 ## INetCfg
 
-Currently, NDIS protocol and filter drivers are installed by calling into the `INetCfg` family of [Network Configuration Interfaces](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559080(v%3dvs.85)). For example, to install or remove network components, a driver writer calls into the [INetCfgClassSetup](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547709%28v%3dvs.85%29) interface. 
+Currently, NDIS protocol and filter drivers are installed by calling into the `INetCfg` family of [Network Configuration Interfaces](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559080(v=vs.85)). For example, to install or remove network components, a driver writer calls into the [INetCfgClassSetup](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547709(v=vs.85)) interface. 
 
 Driver writers can either call into this interface programmatically or they can use [netcfg.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/netcfg), which calls `INetCfg` on their behalf.
 
@@ -59,7 +59,7 @@ For more information about filter driver installation, see [NDIS Filter Driver I
 
 A software component, such as a network protocol, client, or service, can have a *notify object*. A notify object can display a user interface, notify the component of binding events so that the component can exercise some control over the binding process, and conditionally install or remove software components. For more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
-A network adapter cannot have a notify object. It can have co-installers. For more information about co-installers, see [Writing a Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff554011).
+A network adapter cannot have a notify object. It can have co-installers. For more information about co-installers, see [Writing a Co-installer](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-co-installer).
 
 ## Vendor-supplied files
 

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ---
 
 # IDE Port Driver
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 In Microsoft Windows NT 4.0, the port/miniport driver pair associated with the IDE bus is a SCSI miniport driver, *atapi.sys*, that linked to the SCSI port driver, *scsiport.sys*.
 

@@ -31,7 +31,7 @@ However, when upgrading from Windows 98 to Windows Me, or from one NT-based oper
 
 Some proprietary drivers, however, blindly overwrite these registry settings with defaults each time they are installed. A better approach is for a driver to determine at installation time whether certain driver-specific registry entries already exist. If they do exist, the driver should preserve the settings that are contained in these entries instead of overwriting them.
 
-The directives in the add-registry section of the driver's INF file specify whether existing registry entries should be overwritten. For more information, see the description of the FLG\_ADDREG\_NOCLOBBER flag in [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+The directives in the add-registry section of the driver's INF file specify whether existing registry entries should be overwritten. For more information, see the description of the FLG\_ADDREG\_NOCLOBBER flag in [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
 ### <span id="Migration_DLL"></span><span id="migration_dll"></span><span id="MIGRATION_DLL"></span>Migration DLL
 

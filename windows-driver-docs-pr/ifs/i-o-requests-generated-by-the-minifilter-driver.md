@@ -21,57 +21,57 @@ The filter manager doesn't unload a minifilter driver until all of its outstandi
 
 The filter manager provides the following support routines for creating, opening, reading, and writing files:
 
-[**FltClose**](https://msdn.microsoft.com/library/windows/hardware/ff541863)
+[**FltClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltclose)
 
-[**FltCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff541935)
+[**FltCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefile)
 
-[**FltCreateFileEx**](https://msdn.microsoft.com/library/windows/hardware/ff541937)
+[**FltCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex)
 
-[**FltReadFile**](https://msdn.microsoft.com/library/windows/hardware/ff544286)
+[**FltReadFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreadfile)
 
-[**FltWriteFile**](https://msdn.microsoft.com/library/windows/hardware/ff544610)
+[**FltWriteFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltwritefile)
 
 The following support routines are provided for setting and removing reparse points:
 
-[**FltTagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544589)
+[**FltTagFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-flttagfile)
 
-[**FltUntagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544608)
+[**FltUntagFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltuntagfile)
 
 The following support routines are provided for generating I/O requests:
 
-[*FltAllocateCallbackData*](https://msdn.microsoft.com/library/windows/hardware/ff541703)
+[*FltAllocateCallbackData*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocatecallbackdata)
 
-[**FltFreeCallbackData**](https://msdn.microsoft.com/library/windows/hardware/ff542949)
+[**FltFreeCallbackData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfreecallbackdata)
 
-[**FltPerformAsynchronousIo**](https://msdn.microsoft.com/library/windows/hardware/ff543420)
+[**FltPerformAsynchronousIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltperformasynchronousio)
 
-[*FltPerformSynchronousIo*](https://msdn.microsoft.com/library/windows/hardware/ff543421)
+[*FltPerformSynchronousIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltperformsynchronousio)
 
-[**FltReuseCallbackData**](https://msdn.microsoft.com/library/windows/hardware/ff544358)
+[**FltReuseCallbackData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreusecallbackdata)
 
 The following support routines are provided for canceling a file open request and for reissuing an I/O request:
 
-[**FltCancelFileOpen**](https://msdn.microsoft.com/library/windows/hardware/ff541784)
+[**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcancelfileopen)
 
-[**FltReissueSynchronousIo**](https://msdn.microsoft.com/library/windows/hardware/ff544311)
+[**FltReissueSynchronousIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreissuesynchronousio)
 
 The filter manager also provides the following general-purpose routines:
 
-[**FltDeviceIoControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542046)
+[**FltDeviceIoControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltdeviceiocontrolfile)
 
-[**FltFlushBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff542099)
+[**FltFlushBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltflushbuffers)
 
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988)
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**FltQueryInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff543439)
+[**FltQueryInformationFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltqueryinformationfile)
 
-[**FltQuerySecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff543441)
+[**FltQuerySecurityObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltquerysecurityobject)
 
-[**FltQueryVolumeInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff543446)
+[**FltQueryVolumeInformationFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltqueryvolumeinformationfile)
 
-[**FltSetInformationFile**](https://msdn.microsoft.com/library/windows/hardware/ff544516)
+[**FltSetInformationFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltsetinformationfile)
 
-[**FltSetSecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff544538)
+[**FltSetSecurityObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltsetsecurityobject)
 
  
 

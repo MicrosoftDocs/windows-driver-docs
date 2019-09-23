@@ -165,7 +165,7 @@ If Tracefmt cannot format a trace message parameter, it raises an exception and 
 *****FormatMessage Header(Header) of EventTrace, parameter 23 raised an exception*****
 ```
 
-If you see a similar exception, review the message definition in the source code, with special attention to any user-specified variable types. For more information, see [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918).
+If you see a similar exception, review the message definition in the source code, with special attention to any user-specified variable types. For more information, see [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
 
 **TMF files with non-GUID file names**
 

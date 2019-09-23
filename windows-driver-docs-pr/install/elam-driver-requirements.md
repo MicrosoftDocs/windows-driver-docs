@@ -61,21 +61,27 @@ PnP uses policy and the classification provided by the AM driver to decide wheth
 
 ### Registry Callbacks
 
-The Early Launch drivers can use registry or boot driver callbacks to monitor and validate the configuration data used as input for each boot-start driver. The configuration data is stored in the System registry hive, which is loaded by Winload and is available at the time of boot driver initialization. These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. For more info, see:
+The Early Launch drivers can use registry or boot driver callbacks to monitor and validate the configuration data used as input for each boot-start driver. The configuration data is stored in the System registry hive, which is loaded by Winload and is available at the time of boot driver initialization.
 
-* [**CmRegisterCallbackEx**](https://msdn.microsoft.com/library/windows/hardware/ff541921)
-* [**CmRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541918)
-* [**CmUnRegisterCallback**](https://msdn.microsoft.com/library/windows/hardware/ff541928)
+> [!NOTE]
+> Any changes to the ELAM registry hive are discarded before the system boots.
+> As a result, an ELAM driver should use standard Event Tracing for Windows (ETW) logging rather than writing to the registry.
+
+These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. For more info, see:
+
+* [**CmRegisterCallbackEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmregistercallbackex)
+* [**CmRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmregistercallback)
+* [**CmUnRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmunregistercallback)
 
 ### Boot Driver Callbacks
 
-Use [**IoRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439379) and [**IoUnRegisterBootDriverCallback**](https://msdn.microsoft.com/library/windows/hardware/hh439394) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-boot_driver_callback_function).
+Use [**IoRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioregisterbootdrivercallback) and [**IoUnRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iounregisterbootdrivercallback) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-boot_driver_callback_function).
 
 This callback provides status updates from Windows to an ELAM driver, including when all boot-start drivers have been initialized and the callback facility is no longer functional.
 
 ### Callback Type
 
-The [**BDCB_CALLBACK_TYPE enumeration**](https://msdn.microsoft.com/library/windows/hardware/hh406352) describes two types of callbacks:
+The [**BDCB_CALLBACK_TYPE enumeration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ne-ntddk-_bdcb_callback_type) describes two types of callbacks:
 
 -   Callbacks that provide status updates to an ELAM driver (BdCbStatusUpdate)
 -   Callbacks used by the AM driver to classify boot-start drivers and dependent DLLs before initializing their images (BdCbInitializeImage)
@@ -110,7 +116,7 @@ The storage and retrieval format of these data BLOBs is left up to the ISV, but 
 
 **Verifying Malware Signatures**
 
-The method for verifying the integrity of the malware signature data is left up to each AM ISV. The [CNG Cryptographic Primitive Functions](https://msdn.microsoft.com/library/windows/desktop/aa833130) are available to assist in verifying digital signatures and certificates on the malware signature data.
+The method for verifying the integrity of the malware signature data is left up to each AM ISV. The [CNG Cryptographic Primitive Functions](https://docs.microsoft.com/windows/desktop/SecCNG/cng-cryptographic-primitive-functions) are available to assist in verifying digital signatures and certificates on the malware signature data.
 
 **Malware Signature Failure**
 

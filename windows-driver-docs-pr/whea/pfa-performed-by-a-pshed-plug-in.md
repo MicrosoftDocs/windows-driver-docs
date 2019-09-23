@@ -26,7 +26,7 @@ When an ECC memory error occurs, WHEA and the plug-in perform the following step
 
 1.  The *low-level hardware error handler* (*LLHEH*) is notified about the presence of the memory error condition.
 
-2.  The LLHEH retrieves information about the memory error from the error source and uses the error data to complete a hardware error packet. This packet is formatted as a [WHEA\_ERROR\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff560465) structure.
+2.  The LLHEH retrieves information about the memory error from the error source and uses the error data to complete a hardware error packet. This packet is formatted as a [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
 
 3.  The LLHEH calls into the PSHED to retrieve any platform-specific hardware error information. If a PSHED plug-in in installed and is registered to retrieve information about errors, the PSHED will call into the PSHED plug-in so that the plug-in can modify the information about the error that is returned to the LLHEH.
 
@@ -40,10 +40,10 @@ When an ECC memory error occurs, WHEA and the plug-in perform the following step
 
 8.  If the PSHED plug-in is performing PFA on the ECC memory page, it must do the following:
 
-    -   Set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff560472) member of the [WHEA\_ERROR\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff560465) structure. If this bit is set, WHEA is no longer responsible for PFA on that memory page.
-    -   If the plug-in determines that the ECC memory page that encountered the error should be taken offline, set the **PlatformDirectedOffline** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff560472) member. If this bit is set, WHEA attempts to take the memory page offline.
+    -   Set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure. If this bit is set, WHEA is no longer responsible for PFA on that memory page.
+    -   If the plug-in determines that the ECC memory page that encountered the error should be taken offline, set the **PlatformDirectedOffline** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_packet_flags) member. If this bit is set, WHEA attempts to take the memory page offline.
 
-    Otherwise, the PSHED plug-in must clear the **PlatformPfaControl** and **PlatformDirectedOffline** bits in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff560472) member of the [WHEA\_ERROR\_PACKET](https://msdn.microsoft.com/library/windows/hardware/ff560465) structure.
+    Otherwise, the PSHED plug-in must clear the **PlatformPfaControl** and **PlatformDirectedOffline** bits in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
 
     **Note**  If the **PlatformPfaControl** bit is cleared, WHEA performs PFA if configured to do so and will determine whether the ECC memory page that encountered the error should be taken offline. For more information about this process, see [PFA Performed by WHEA](pfa-performed-by-whea.md).
 

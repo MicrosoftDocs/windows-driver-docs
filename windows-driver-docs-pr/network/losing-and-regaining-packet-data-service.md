@@ -17,19 +17,19 @@ To regain packet data service after it has been lost, use the following procedur
 
 1.  The miniport driver sends NDIS\_WWAN\_LINK\_STATE to the MB Service.
 
-2.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
+2.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
-3.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
+3.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
-4.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
+4.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
 5.  The miniport driver sends NDIS\_WWAN\_REGISTER\_STATE to the MB Service.
 
-6.  The miniport driver sends [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567850) to the MB Service.
+6.  The miniport driver sends [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-packet-service) to the MB Service.
 
-7.  The miniport driver sends [**NDIS\_STATUS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567391) to the MB Service.
+7.  The miniport driver sends [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) to the MB Service.
 
-8.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567931) to the MB Service.
+8.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
  
 

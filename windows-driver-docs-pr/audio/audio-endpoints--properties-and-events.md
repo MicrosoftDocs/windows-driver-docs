@@ -28,7 +28,7 @@ ms.localizationpriority: medium
 ## <span id="audio_properties_and_events"></span><span id="AUDIO_PROPERTIES_AND_EVENTS"></span>
 
 
-The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](https://msdn.microsoft.com/library/windows/hardware/ff567673).
+The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties--events--and-methods).
 
 The port drivers in Portcls.sys support properties and events by providing handlers for some property and event requests and by forwarding other requests to the miniport drivers' handlers.
 
@@ -52,37 +52,37 @@ None of the port drivers provide support for methods on either the filter or its
 
 Audio adapter drivers support some or all of the following standard property sets:
 
-[KSPROPSETID\_AC3](https://msdn.microsoft.com/library/windows/hardware/ff537436)
+[KSPROPSETID\_AC3](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-ac3)
 
-[KSPROPSETID\_Acoustic\_Echo\_Cancel](https://msdn.microsoft.com/library/windows/hardware/ff537438)
+[KSPROPSETID\_Acoustic\_Echo\_Cancel](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-acoustic-echo-cancel)
 
-[KSPROPSETID\_Audio](https://msdn.microsoft.com/library/windows/hardware/ff537440)
+[KSPROPSETID\_Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audio)
 
-[KSPROPSETID\_DirectSound3DBuffer](https://msdn.microsoft.com/library/windows/hardware/ff537447)
+[KSPROPSETID\_DirectSound3DBuffer](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-directsound3dbuffer)
 
-[KSPROPSETID\_DirectSound3DListener](https://msdn.microsoft.com/library/windows/hardware/ff537449)
+[KSPROPSETID\_DirectSound3DListener](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-directsound3dlistener)
 
-[KSPROPSETID\_DrmAudioStream](https://msdn.microsoft.com/library/windows/hardware/ff537481)
+[KSPROPSETID\_DrmAudioStream](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-drmaudiostream)
 
-[KSPROPSETID\_General](https://msdn.microsoft.com/library/windows/hardware/ff566576)
+[KSPROPSETID\_General](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-general)
 
-[KSPROPSETID\_Hrtf3d](https://msdn.microsoft.com/library/windows/hardware/ff537482)
+[KSPROPSETID\_Hrtf3d](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-hrtf3d)
 
-[KSPROPSETID\_Jack](https://msdn.microsoft.com/library/windows/hardware/ff537484)
+[KSPROPSETID\_Jack](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-jack)
 
-[KSPROPSETID\_Pin](https://msdn.microsoft.com/library/windows/hardware/ff566584)
+[KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin)
 
-[KSPROPSETID\_Synth](https://msdn.microsoft.com/library/windows/hardware/ff537486)
+[KSPROPSETID\_Synth](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synth)
 
-[KSPROPSETID\_Synth\_Dls](https://msdn.microsoft.com/library/windows/hardware/ff537488)
+[KSPROPSETID\_Synth\_Dls](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-synth-dls)
 
-[KSPROPSETID\_TopologyNode](https://msdn.microsoft.com/library/windows/hardware/ff537491)
+[KSPROPSETID\_TopologyNode](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-topologynode)
 
 All audio drivers support the **KSPROPSETID\_Audio** property set.
 
 Some audio adapter drivers support the following event set:
 
-[KSEVENTSETID\_AudioControlChange](https://msdn.microsoft.com/library/windows/hardware/ff537122)
+[KSEVENTSETID\_AudioControlChange](https://docs.microsoft.com/windows-hardware/drivers/audio/kseventsetid-audiocontrolchange)
 
 In addition, audio adapter drivers are free to provide property handlers for other property sets that are defined in header file Ksmedia.h. Drivers can also define and support their own custom property and event sets, but only an application that knows about a custom property or event will be able to use it.
 

@@ -57,7 +57,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
 - **USB-IF certification**
 
-  Obtain USB-IF certification from a [USB-IF authorized independent testing lab](http://www.usb.org/developers/compliance/labs/) and then submit the device for Windows Certification qualification. You can select one of the following options to obtain USB-IF certification for device or host controllers:
+  Obtain USB-IF certification from a [USB-IF authorized independent testing lab](https://www.usb.org/developers/compliance/labs/) and then submit the device for Windows Certification qualification. You can select one of the following options to obtain USB-IF certification for device or host controllers:
 
   -   Submit the device to a USB-IF authorized independent test lab for testing. For information about how to find a lab, see USB-IF authorized independent testing lab.
       **Note**  It usually takes an authorized independent test lab one to two weeks to test a single USB device for compliance to the USB specification.
@@ -70,7 +70,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
   -   You can use the USB logo for brochures, packaging, and product information for your device.
   -   You can be listed on the USB-IF Integrators List.
-  -   Bring the device to a [USB-IF-sponsored Compliance Workshop](http://www.usb.org/developers/events/compshop/). Each year, four workshops are held in the USA, and one workshop is held in Asia.
+  -   Bring the device to a [USB-IF-sponsored Compliance Workshop](https://www.usb.org/developers/events/compshop/). Each year, four workshops are held in the USA, and one workshop is held in Asia.
 
   After a device passes the USB-IF certification tests, you receive a Test ID number (TID) from the test lab or workshop. You provide this TID number to the Windows HLK when you run the remainder of the Windows HLK tests for the device.
 
@@ -78,7 +78,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
 - **USB-IF self-test**
 
-  Download the USB Command Verifier test tools and the USB interoperability test documents and run the required tests from the [USB-IF](http://www.usb.org/home). Then submit the device for Windows Certification qualification.
+  Download the USB Command Verifier test tools and the USB interoperability test documents and run the required tests from the [USB-IF](https://www.usb.org/). Then submit the device for Windows Certification qualification.
 
   **Note**  USB host controllers and hubs are not eligible for the USB-IF self-testing option and must obtain full USB-IF certification.
 

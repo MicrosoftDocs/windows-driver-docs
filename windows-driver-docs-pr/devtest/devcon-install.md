@@ -35,7 +35,7 @@ Specifies the full path and file name of the INF file for the device. If you omi
 <span id="_______HardwareID______"></span><span id="_______hardwareid______"></span><span id="_______HARDWAREID______"></span> *HardwareID*   
 Specifies a hardware ID for the device.
 
-The specified hardware ID must exactly match the hardware ID of the device. Patterns are not valid. Do not type a single quote character (**'**) to indicate a literal value. For more information, see [Hardware IDs](https://msdn.microsoft.com/library/windows/hardware/ff546152) and [Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224).
+The specified hardware ID must exactly match the hardware ID of the device. Patterns are not valid. Do not type a single quote character (**'**) to indicate a literal value. For more information, see [Hardware IDs](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids) and [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
@@ -65,9 +65,9 @@ devcon /r install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 ## <span id="see_also"></span>See also
 
 
-[Hardware IDs](https://msdn.microsoft.com/library/windows/hardware/ff546152)
+[Hardware IDs](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids)
 
-[Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224)
+[Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings)
 
 
 

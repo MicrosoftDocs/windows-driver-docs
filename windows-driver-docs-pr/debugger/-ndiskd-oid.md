@@ -46,7 +46,7 @@ Ndiskd.dll
 Remarks
 -------
 
-**!ndiskd.oid** shows you a list of all the pending OIDs on the system at a time, so it can be helpful in debugging system hangs or [0x9F bug check](https://msdn.microsoft.com/library/windows/hardware/ff559329) situations (DRIVER\_POWER\_STATE\_FAILURE). For example, suppose analyzing a fictitious 0x9F bug check revealed that the system was hung on an IRP and was waiting for NDIS. In NDIS, IRPs from the OS are translated into OIDs, including power transitions, so by running **!ndiskd.oid** you could see that, in this example, a device at the bottom of the stack might have been clinging to an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) and hung the rest of the stack. NDIS drivers should not pend an OID for more than one second, so you could then investigate why that device kept the OID pending for too long to try to solve the issue.
+**!ndiskd.oid** shows you a list of all the pending OIDs on the system at a time, so it can be helpful in debugging system hangs or [0x9F bug check](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure) situations (DRIVER\_POWER\_STATE\_FAILURE). For example, suppose analyzing a fictitious 0x9F bug check revealed that the system was hung on an IRP and was waiting for NDIS. In NDIS, IRPs from the OS are translated into OIDs, including power transitions, so by running **!ndiskd.oid** you could see that, in this example, a device at the bottom of the stack might have been clinging to an [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) and hung the rest of the stack. NDIS drivers should not pend an OID for more than one second, so you could then investigate why that device kept the OID pending for too long to try to solve the issue.
 
 Examples
 --------
@@ -115,14 +115,14 @@ ALL PENDING OIDs
         Current OID        OID_GEN_STATISTICS
 ```
 
-In this example, the OID pending is [OID\_GEN\_STATISTICS](https://msdn.microsoft.com/library/windows/hardware/ff569640). When you look at the results of !ndiskd.oid, recall that filters clone OID requests and pass them down the stack, and OIDs typically get passed from filter to filter to miniport. Therefore, although it may look like there are three separate OID requests with the same name in this example, there is actually one logical operation taking place which was physically spread across 3 OIDs and on 3 drivers.
+In this example, the OID pending is [OID\_GEN\_STATISTICS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-statistics). When you look at the results of !ndiskd.oid, recall that filters clone OID requests and pass them down the stack, and OIDs typically get passed from filter to filter to miniport. Therefore, although it may look like there are three separate OID requests with the same name in this example, there is actually one logical operation taking place which was physically spread across 3 OIDs and on 3 drivers.
 
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
+[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
 [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
 
@@ -130,17 +130,17 @@ In this example, the OID pending is [OID\_GEN\_STATISTICS](https://msdn.microsof
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[0x9F bug check](https://msdn.microsoft.com/library/windows/hardware/ff559329)
+[0x9F bug check](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure)
 
-[OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780)
+[OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power)
 
 [**bp, bu, bm (Set Breakpoint)**](bp--bu--bm--set-breakpoint-.md)
 
-[OID\_GEN\_STATISTICS](https://msdn.microsoft.com/library/windows/hardware/ff569640)
+[OID\_GEN\_STATISTICS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-statistics)
 
-[NDIS OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566707)
+[NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
-[NDIS OID Request Interface](https://msdn.microsoft.com/library/windows/hardware/ff566713)
+[NDIS OID Request Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
  
 

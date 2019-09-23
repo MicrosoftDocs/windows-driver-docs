@@ -48,7 +48,7 @@ The KSPROPERTY\_STREAM\_QUALITY property is an optional property that should be 
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566730" data-raw-source="[&lt;strong&gt;KSQUALITY_MANAGER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566730)"><strong>KSQUALITY_MANAGER</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksquality_manager" data-raw-source="[&lt;strong&gt;KSQUALITY_MANAGER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksquality_manager)"><strong>KSQUALITY_MANAGER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,11 +58,11 @@ The KSPROPERTY\_STREAM\_QUALITY property is an optional property that should be 
 Remarks
 -------
 
-When this request is made, the pin connection in turn notifies the quality manager by providing [**KSQUALITY**](https://msdn.microsoft.com/library/windows/hardware/ff566728) structures with the given context parameter.
+When this request is made, the pin connection in turn notifies the quality manager by providing [**KSQUALITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksquality) structures with the given context parameter.
 
 If a pin does not report quality problems, it does not need to support KSPROPERTY\_STREAM\_QUALITY.
 
-Also see [Quality Management](https://msdn.microsoft.com/library/windows/hardware/ff568124).
+Also see [Quality Management](https://docs.microsoft.com/windows-hardware/drivers/stream/quality-management).
 
 Requirements
 ------------
@@ -85,9 +85,9 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
-[**KSQUALITY\_MANAGER**](https://msdn.microsoft.com/library/windows/hardware/ff566730)
+[**KSQUALITY\_MANAGER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksquality_manager)
 
-[**KSQUALITY**](https://msdn.microsoft.com/library/windows/hardware/ff566728)
+[**KSQUALITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksquality)
 
  
 

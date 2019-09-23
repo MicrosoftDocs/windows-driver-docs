@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 
 
-If a miniport driver supports wake-up events, NDIS sends the driver an [OID\_PNP\_ENABLE\_WAKE\_UP](https://msdn.microsoft.com/library/windows/hardware/ff569775) request before sending an [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) request. For more information, see [Enabling Wake-Up Events](enabling-wake-up-events.md). A miniport driver must not fail an OID\_PNP\_SET\_POWER request.
+If a miniport driver supports wake-up events, NDIS sends the driver an [OID\_PNP\_ENABLE\_WAKE\_UP](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-enable-wake-up) request before sending an [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) request. For more information, see [Enabling Wake-Up Events](enabling-wake-up-events.md). A miniport driver must not fail an OID\_PNP\_SET\_POWER request.
 
 Before returning NDIS\_STATUS\_SUCCESS in response to an OID\_PNP\_SET\_POWER request, the miniport driver must:
 

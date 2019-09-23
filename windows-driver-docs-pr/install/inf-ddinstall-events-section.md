@@ -33,7 +33,7 @@ AddEventProvider={ProviderGUID},event-provider-install-section
 [Needs=inf-section-name[,inf-section-name]...] 
 ```
 
-You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/aa363668) (ETW) providers.
+You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](https://docs.microsoft.com/windows/desktop/ETW/about-event-tracing) (ETW) providers.
 
 ## Entries
 

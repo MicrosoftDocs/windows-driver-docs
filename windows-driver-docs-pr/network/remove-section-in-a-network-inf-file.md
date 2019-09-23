@@ -23,7 +23,7 @@ ms.localizationpriority: medium
  
 
 The network class installer does not keep track of adapter instances. A **Remove** section that removes files that are shared by other adapters or by multiple instances of an adapter could render those adapters or adapter instances inoperative.
-If it is necessary to remove a driver file that is used by a **Net** component, use a co-installer that keeps track of all drivers that are using the file. Such a co-installer should also track multiple instances of the same device, as well as drivers for multiple devices. For more information about co-installers, see [Creating an INF File](https://msdn.microsoft.com/library/windows/hardware/ff549520).
+If it is necessary to remove a driver file that is used by a **Net** component, use a co-installer that keeps track of all drivers that are using the file. Such a co-installer should also track multiple instances of the same device, as well as drivers for multiple devices. For more information about co-installers, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files).
 
  
 

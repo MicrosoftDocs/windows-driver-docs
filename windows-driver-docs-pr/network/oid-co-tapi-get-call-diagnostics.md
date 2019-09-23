@@ -83,7 +83,7 @@ The reason for the call is currently unknown but may become known later.
 The reason for the call is unavailable and cannot become known later.
 
 **DiagInfo**  
-Specifies an [NDIS_VAR_DATA_DESC](https://msdn.microsoft.com/library/windows/hardware/ff559020) structure that contains an offset to, as well as the length of, optional diagnostic information supplied by the call manager or MCM driver. The content and format of the diagnostic information is driver-determined.
+Specifies an [NDIS_VAR_DATA_DESC](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structure that contains an offset to, as well as the length of, optional diagnostic information supplied by the call manager or MCM driver. The content and format of the diagnostic information is driver-determined.
 
 ## Requirements
 

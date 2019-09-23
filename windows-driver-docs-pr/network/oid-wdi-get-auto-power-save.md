@@ -30,7 +30,7 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                          | Multiple TLV instances allowed | Optional | Description                  |
 |------------------------------------------------------------------------------|--------------------------------|----------|------------------------------|
-| [**WDI\_TLV\_GET\_AUTO\_POWER\_SAVE**](https://msdn.microsoft.com/library/windows/hardware/dn926307) |                                |          | Auto power save information. |
+| [**WDI\_TLV\_GET\_AUTO\_POWER\_SAVE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-get-auto-power-save) |                                |          | Auto power save information. |
 
  
 

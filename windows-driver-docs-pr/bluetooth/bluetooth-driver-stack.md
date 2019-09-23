@@ -22,7 +22,7 @@ The following image shows the modules within the Bluetooth driver stack, along w
 -   **User-mode**
     -   **User-mode application**- A user-mode application that accesses the Bluetooth driver stack through published APIs. For more information, see [About Bluetooth](https://go.microsoft.com/fwlink/p/?linkid=50712) in the Windows SDK documentation.
 
-        **Note**  User-mode applications should link against *BthProps.lib*, instead of *IrProps.lib*, in order to use APIs, such as [**BluetoothSetLocalServiceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff536580).
+        **Note**  User-mode applications should link against *BthProps.lib*, instead of *IrProps.lib*, in order to use APIs, such as [**BluetoothSetLocalServiceInfo**](https://docs.microsoft.com/windows/desktop/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo).
 
          
 

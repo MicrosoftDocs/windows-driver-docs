@@ -22,7 +22,7 @@ The FSCTL\_SET\_REPARSE\_POINT control code sets a reparse point on a file or di
 
 To perform this operation, call [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
 
-Minifilters should use [**FltTagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544589) instead of FSCTL\_SET\_REPARSE\_POINT to set a reparse point.
+Minifilters should use [**FltTagFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-flttagfile) instead of FSCTL\_SET\_REPARSE\_POINT to set a reparse point.
 
 For more information about reparse points and the FSCTL\_SET\_REPARSE\_POINT control code, see the Microsoft Windows SDK documentation.
 
@@ -35,10 +35,10 @@ File handle for the file or directory on which to set a reparse point. This para
 Control code for the operation. Use FSCTL\_SET\_REPARSE\_POINT for this operation.
 
 <a href="" id="inputbuffer"></a>*InputBuffer*  
-Pointer to a caller-allocated [**REPARSE\_GUID\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552014) or [**REPARSE\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552012) structure that contains the reparse point data. If an existing reparse point is being modified, the tag specified in the **ReparseTag** member of this structure must match the tag of the reparse point to be modified. In addition, if the reparse point is a third-party (non-Microsoft) reparse point, the GUID specified in the **ReparseGuid** member of the structure is a REPARSE\_GUID\_DATA\_BUFFER structure must match the GUID of the reparse point to be modified.
+Pointer to a caller-allocated [**REPARSE\_GUID\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_reparse_data_buffer) structure that contains the reparse point data. If an existing reparse point is being modified, the tag specified in the **ReparseTag** member of this structure must match the tag of the reparse point to be modified. In addition, if the reparse point is a third-party (non-Microsoft) reparse point, the GUID specified in the **ReparseGuid** member of the structure is a REPARSE\_GUID\_DATA\_BUFFER structure must match the GUID of the reparse point to be modified.
 
 <a href="" id="inputbufferlength"></a>*InputBufferLength*  
-Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be at least **sizeof**(REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE), plus the size of the user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE. For a REPARSE\_DATA\_BUFFER structure, this value must be at least **sizeof**(REPARSE\_DATA\_BUFFER\_HEADER\_SIZE), plus the size of the user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE.
+Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be at least REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE. For a REPARSE\_DATA\_BUFFER structure, this value must be at least REPARSE\_DATA\_BUFFER\_HEADER\_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM\_REPARSE\_DATA\_BUFFER\_SIZE.
 
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 Not used with this operation; set to **NULL**.
@@ -69,7 +69,7 @@ Status block
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_EAS_NOT_SUPPORTED</strong></p></td>
-<td align="left"><p>A reparse point cannot be set on a file that contains extended attributes. This is an error code.</p></td>
+<td align="left"><p>A reparse point cannot be set on a file if this request is in a transaction. This is an error code.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_IO_REPARSE_DATA_INVALID</strong></p></td>
@@ -113,9 +113,9 @@ Requirements
 
 [**FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
 
-[**FltTagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544589)
+[**FltTagFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-flttagfile)
 
-[**FltUntagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544608)
+[**FltUntagFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltuntagfile)
 
 [**FSCTL\_DELETE\_REPARSE\_POINT**](fsctl-delete-reparse-point.md)
 
@@ -123,13 +123,13 @@ Requirements
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
-[**IsReparseTagMicrosoft**](https://msdn.microsoft.com/library/windows/hardware/ff549452)
+[**IsReparseTagMicrosoft**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-isreparsetagmicrosoft)
 
-[**IsReparseTagNameSurrogate**](https://msdn.microsoft.com/library/windows/hardware/ff549462)
+[**IsReparseTagNameSurrogate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-isreparsetagnamesurrogate)
 
-[**REPARSE\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552012)
+[**REPARSE\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_reparse_data_buffer)
 
-[**REPARSE\_GUID\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552014)
+[**REPARSE\_GUID\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_reparse_guid_data_buffer)
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 

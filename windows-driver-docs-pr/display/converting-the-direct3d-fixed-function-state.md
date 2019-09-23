@@ -61,19 +61,19 @@ How the fixed-function vertex and pixel shader converters work depend on the ver
 
 ### <span id="unused_user_mode_display_driver_functions"></span><span id="UNUSED_USER_MODE_DISPLAY_DRIVER_FUNCTIONS"></span>Unused User-Mode Display Driver Functions
 
-The following [user-mode display driver functions](https://msdn.microsoft.com/library/windows/hardware/ff570118) are not called by the Direct3D runtime when the fixed-function vertex shader converter is enabled:
+The following [user-mode display driver functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) are not called by the Direct3D runtime when the fixed-function vertex shader converter is enabled:
 
--   [**MultiplyTransform**](https://msdn.microsoft.com/library/windows/hardware/ff568516)
+-   [**MultiplyTransform**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_multiplytransform)
 
--   [**SetTransform**](https://msdn.microsoft.com/library/windows/hardware/ff569687)
+-   [**SetTransform**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_settransform)
 
--   [**SetMaterial**](https://msdn.microsoft.com/library/windows/hardware/ff569540)
+-   [**SetMaterial**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_setmaterial)
 
--   [**SetLight**](https://msdn.microsoft.com/library/windows/hardware/ff569539)
+-   [**SetLight**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_setlight)
 
--   [**CreateLight**](https://msdn.microsoft.com/library/windows/hardware/ff540658)
+-   [**CreateLight**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createlight)
 
--   [**DestroyLight**](https://msdn.microsoft.com/library/windows/hardware/ff552778)
+-   [**DestroyLight**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_destroylight)
 
 ### <span id="unused_render_states"></span><span id="UNUSED_RENDER_STATES"></span>Unused Render States
 

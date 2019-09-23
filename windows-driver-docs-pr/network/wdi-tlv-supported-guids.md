@@ -25,7 +25,7 @@ WDI\_TLV\_SUPPORTED\_GUIDS is a TLV that contains a supported NDIS GUID.
 ## Length
 
 
-The size (in bytes) of a [NDIS\_GUID](https://msdn.microsoft.com/library/windows/hardware/ff549898) structure.
+The size (in bytes) of a [NDIS\_GUID](https://docs.microsoft.com/windows-hardware/drivers/network/filling-in-an-ndis-guid-structure) structure.
 
 ## Values
 
@@ -63,7 +63,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_GET\_ADAPTER\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/dn925838)
+[OID\_WDI\_GET\_ADAPTER\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-get-adapter-capabilities)
 
  
 

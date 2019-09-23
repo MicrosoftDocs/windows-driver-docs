@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 A video miniport driver developed on one NT-based operating system version can be loaded and run on an earlier operating system version, as long as the miniport driver does not attempt to use functionality that is specific to the newer operating system version.
 
-When the video miniport driver is loaded, the **VideoPortGetProcAddress** member of the [**VIDEO\_PORT\_CONFIG\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff570531) structure contains the address of a callback routine that the video port driver exports, [**VideoPortGetProcAddress**](https://msdn.microsoft.com/library/windows/hardware/ff570315). A miniport driver can use this callback routine to find the address of a video port function exported from *videoprt.sys*. After the miniport driver has the function's address, it can use this address to call the function. This is shown in the following example code.
+When the video miniport driver is loaded, the **VideoPortGetProcAddress** member of the [**VIDEO\_PORT\_CONFIG\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/ns-video-_video_port_config_info) structure contains the address of a callback routine that the video port driver exports, [**VideoPortGetProcAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_port_get_proc_address). A miniport driver can use this callback routine to find the address of a video port function exported from *videoprt.sys*. After the miniport driver has the function's address, it can use this address to call the function. This is shown in the following example code.
 
 ```cpp
   // Useful typedef for a function pointer type

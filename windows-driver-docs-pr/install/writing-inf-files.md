@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Writing INF Files
 
 
-When you write an [INF file](inf-files.md) for your [driver package](driver-packages.md), you should follow these guidelines:
+When you write an [INF file](overview-of-inf-files.md) for your [driver package](driver-packages.md), you should follow these guidelines:
 
 -   An INF file must use valid structure and syntax to pass driver package validation checks at the beginning of the installation process.
 

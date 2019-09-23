@@ -25,14 +25,14 @@ WDI\_TLV\_P2P\_INSTANCE\_NAME\_HASH is a TLV that contains the hash of "Instance
 ## Length
 
 
-The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn926103) structure.
+The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_p2p_service_name_hash) structure.
 
 ## Values
 
 
 | Type                                                                    | Description                                |
 |-------------------------------------------------------------------------|--------------------------------------------|
-| [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://msdn.microsoft.com/library/windows/hardware/dn926103) | The hash of "Instance Name, Service Type". |
+| [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_p2p_service_name_hash) | The hash of "Instance Name, Service Type". |
 
  
 

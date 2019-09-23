@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS sends an OID request of [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) to notify a miniport driver that a network adapter will be making a transition from the working state to a sleeping state or from a sleeping state to the working state. An OID\_PNP\_SET\_POWER request can be preceded by an [OID\_PNP\_QUERY\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569778) request.
+NDIS sends an OID request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) to notify a miniport driver that a network adapter will be making a transition from the working state to a sleeping state or from a sleeping state to the working state. An OID\_PNP\_SET\_POWER request can be preceded by an [OID\_PNP\_QUERY\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-query-power) request.
 
 This section includes:
 

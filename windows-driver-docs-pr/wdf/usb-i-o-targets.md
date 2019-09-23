@@ -22,9 +22,9 @@ This section describes how Kernel-Mode Driver Framework (KMDF) and User-Mode Dri
 
 Each USB device, and each pipe that a USB device interface supports, has a separate I/O target. Control transfers that the USB device handles are sent to the device's I/O target. I/O transfers that a specific pipe handles are sent to that pipe's I/O target.
 
-The framework communicates with a USB device's I/O target by sending USB request blocks ([**URBs**](https://msdn.microsoft.com/library/windows/hardware/ff538923)). The framework provides object methods that hide the URBs from your driver so that the driver does not have to build and send them itself. If you would prefer that your driver build URBs, a KMDF driver can use an additional set of object methods that build and send URBs.
+The framework communicates with a USB device's I/O target by sending USB request blocks ([**URBs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb)). The framework provides object methods that hide the URBs from your driver so that the driver does not have to build and send them itself. If you would prefer that your driver build URBs, a KMDF driver can use an additional set of object methods that build and send URBs.
 
-For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](https://msdn.microsoft.com/library/windows/hardware/ff540215).
+For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 This section includes:
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The SYSTEM\_SCAN\_AT\_RAISED\_IRQL\_CAUGHT\_IMPROPER\_DRIVER\_UNLOAD bug check has a value of 0x000000D4. This indicates that a driver did not cancel pending operations before unloading.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SYSTEM\_SCAN\_AT\_RAISED\_IRQL\_CAUGHT\_IMPROPER\_DRIVER\_UNLOAD Parameters
@@ -69,9 +69,9 @@ This driver failed to cancel lookaside lists, DPCs, worker threads, or other suc
 Resolution
 ----------
 
-To begin debugging, use a kernel debugger to get a stack trace. If the driver that caused the error has been identified, activate Driver Verifier and attempt to replicate this bug.
+To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) command to get a stack trace. If the driver that caused the error has been identified, activate Driver Verifier and attempt to replicate this bug.
 
-For full details on Driver Verifier, see the Windows Driver Kit.
+For full details on [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier), see the Windows Driver Kit.
 
  
 

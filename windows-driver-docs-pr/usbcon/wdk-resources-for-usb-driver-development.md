@@ -96,7 +96,7 @@ This list contains links to the how-to topics for USB client drivers.
  
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
 
 
 

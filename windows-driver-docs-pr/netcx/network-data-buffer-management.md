@@ -6,6 +6,7 @@ keywords:
 - WDF Network Adapter Class Extension Buffer Manager, Network data buffer management
 ms.date: 02/20/2018
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Network data buffer management
@@ -34,7 +35,7 @@ For non-DMA capabile NICs like a USB-based network dongle, or for other advanced
 To opt in to buffer management, follow these steps:
 
 1. When starting your net adapter, but before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart), tell the system about your hardware's data buffer capabilities and constraints using the [**NET_ADAPTER_RX_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_rx_capabilities) and [**NET_ADAPTER_TX_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_tx_capabilities) data structure for the Rx and Tx path respectively. 
-2. Initialize the two capabilities structures by calling one of the initialization functions. For example, a DMA-capable NIC client driver would use [**NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma) and [**NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed) to declare its hardware DMA capablities and to instruct the system to fully manage the data buffers on its behalf.
+2. Initialize the two capabilities structures by calling one of the initialization functions. For example, a DMA-capable NIC client driver would use [**NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_tx_capabilities_init_for_dma) and [**NET_ADAPTER_RX_CAPABILITIES_INIT_SYSTEM_MANAGED_DMA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_rx_capabilities_init_system_managed_dma) to declare its hardware DMA capablities and to instruct the system to fully manage the data buffers on its behalf.
 3. Pass the initialized Tx and Rx capabilities structures to the [**NetAdapterSetDatapathCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) method.
 
 

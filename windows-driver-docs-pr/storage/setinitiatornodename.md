@@ -11,7 +11,7 @@ ms.date: 10/17/2018
 
 The **SetInitiatorNodeName** method informs the initiator that the initiator name has changed.
 
-This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md). For a description of the parameters of the **SetInitiatorNodeName** method, see the member descriptions for the [**SetInitiatorNodeName\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565729) and [**SetInitiatorNodeName\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565749) structures.
+This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md). For a description of the parameters of the **SetInitiatorNodeName** method, see the member descriptions for the [**SetInitiatorNodeName\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_setinitiatornodename_in) and [**SetInitiatorNodeName\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_setinitiatornodename_out) structures.
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class are not required to support **SetInitiatorNodeName**.
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_srb_function_flush_and_srb_function_shutdown_kg"></span><span id="DDK_HANDLING_SRB_FUNCTION_FLUSH_AND_SRB_FUNCTION_SHUTDOWN_KG"></span>
 
 
-If the HBA caches data internally, as indicated when [*HwScsiFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff557300) sets up the [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff563900), the [**HwScsiStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557323) routine must support the SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN requests as follows:
+If the HBA caches data internally, as indicated when [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) sets up the [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information), the [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine must support the SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN requests as follows:
 
 -   An SRB with its **Function** member set to SRB\_FUNCTION\_FLUSH tells the miniport driver to transfer data cached in the HBA, usually to a disk. The miniport driver must hold on to the flush request until all cached data has been transferred and, then, complete the flush request.
 

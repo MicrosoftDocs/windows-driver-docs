@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate
 
 
-To verify that a [catalog file](catalog-files.md) is signed by a valid [commercial release certificate](commercial-release-certificate.md), use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
+To verify that a [catalog file](catalog-files.md) is signed by a valid [commercial release certificate](commercial-release-certificate.md), use the following [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) command:
 
 ```cpp
 SignTool verify /v /pa CatalogFileName.cat

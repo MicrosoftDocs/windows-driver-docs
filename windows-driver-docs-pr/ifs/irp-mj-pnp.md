@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 The Plug and Play Manager sends the IRP\_MJ\_PNP request whenever Plug and Play activity occurs on the system. Other operating system components, as well as other kernel-mode drivers, can also send certain IRP\_MJ\_PNP requests, depending on the minor function code.
 
-For more information about Plug and Play IRP processing requirements for drivers, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
+For more information about Plug and Play IRP processing requirements for drivers, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
 
-For reference information about IRP\_MJ\_PNP minor function codes, see [Plug and Play Minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807).
+For reference information about IRP\_MJ\_PNP minor function codes, see [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps).
 
 ## Operation: File System Drivers
 
@@ -94,13 +94,13 @@ File system filter drivers should handle PnP IRPs according to the following gui
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) with the given IRP to get a pointer to its own [**stack location**](https://msdn.microsoft.com/library/windows/hardware/ff550659) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a Plug and Play request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a Plug and Play request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 Pointer to the target device object.
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure that receives the final completion status and information about the requested operation.
+Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 This pointer should be **NULL** for PnP IRPs.
@@ -120,25 +120,25 @@ One of the following:
 ## See also
 
 
-[**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)
+[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671)
+[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block)
 
-[**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174)
+[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694)
+[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_PNP (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550772)
+[**IRP\_MJ\_PNP (WDK Kernel Reference)**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp)
 
-[**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff550823)
+[**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-remove-device)
 
-[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551705)
+[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device)
 
-[**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738)
+[**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device)
 
-[**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)
+[**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device)
 
-[**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft.com/library/windows/hardware/ff551760)
+[**IRP\_MN\_SURPRISE\_REMOVAL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal)
 
  
 

@@ -18,7 +18,7 @@ Before calling PcRegisterSubdevice for the “topology” sub-device, the driver
 ## <span id="DEVPKEY_DeviceInterface_FriendlyName"></span><span id="devpkey_deviceinterface_friendlyname"></span><span id="DEVPKEY_DEVICEINTERFACE_FRIENDLYNAME"></span>DEVPKEY\_DeviceInterface\_FriendlyName
 
 
-The audio driver sends an [**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/dn265108) request to the Hands-free profile (HFP) audio driver. The requested information is returned in the form of a [**BTHHFP\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/dn302030) structure, plus an other data referenced by the structure. The audio driver then calls IoSetDeviceInterfacePropertyData to set DEVPKEY\_DeviceInterface\_FriendlyName to the value in the *FriendlyName* field of the **BTHHFP\_DESCRIPTOR** structure.
+The audio driver sends an [**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor) request to the Hands-free profile (HFP) audio driver. The requested information is returned in the form of a [**BTHHFP\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ns-bthhfpddi-_bthhfp_descriptor) structure, plus an other data referenced by the structure. The audio driver then calls IoSetDeviceInterfacePropertyData to set DEVPKEY\_DeviceInterface\_FriendlyName to the value in the *FriendlyName* field of the **BTHHFP\_DESCRIPTOR** structure.
 
 The audio driver sets the parameters to IoSetDeviceInterfacePropertyData as follows:
 

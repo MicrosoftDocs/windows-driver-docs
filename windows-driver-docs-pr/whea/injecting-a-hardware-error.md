@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Injecting a Hardware Error
 
 
-A user-mode application can inject a hardware error into the hardware platform by calling the [**WHEAErrorInjectionMethods::InjectError**](https://msdn.microsoft.com/library/windows/hardware/ff559518) method. An application injects hardware errors into the hardware platform to test and validate the system's hardware error handling functionality.
+A user-mode application can inject a hardware error into the hardware platform by calling the [**WHEAErrorInjectionMethods::InjectError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) method. An application injects hardware errors into the hardware platform to test and validate the system's hardware error handling functionality.
 
 The following code example shows how to inject a hardware error.
 

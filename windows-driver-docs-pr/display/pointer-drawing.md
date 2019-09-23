@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 GDI supports both color pointers and monochrome pointers. The shape of a monochrome pointer is defined by a single bitmap. The width of the bitmap is the same as the width of the pointer on the display, but the bitmap has twice the vertical extent as appears on the display, allowing it to contain two masks.
 
-Calls to the pointer functions are serialized by GDI. This means two different threads in the driver cannot execute the pointer functions simultaneously. There are two possible pointer functions: [**DrvSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff556289) and [**DrvMovePointer**](https://msdn.microsoft.com/library/windows/hardware/ff556248).
+Calls to the pointer functions are serialized by GDI. This means two different threads in the driver cannot execute the pointer functions simultaneously. There are two possible pointer functions: [**DrvSetPointerShape**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsetpointershape) and [**DrvMovePointer**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvmovepointer).
 
  
 

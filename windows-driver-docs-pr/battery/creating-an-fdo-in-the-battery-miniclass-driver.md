@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The miniclass driver should create an FDO and attach it to the device stack for the device, as follows:
 
-1.  Call [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) to create an FDO for the current device, as follows:
+1.  Call [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) to create an FDO for the current device, as follows:
 
     ```cpp
     Status = IoCreateDevice(
@@ -32,7 +32,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
              );
     ```
 
-    The input parameters to [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) are a pointer to the driver object that was passed to the *AddDevice* routine, the size of the device extension, NULL in place of a device name, and the system-defined device type (FILE\_DEVICE\_BATTERY). Battery miniclass drivers can specify zero for the *DeviceCharacteristics* parameter, which is irrelevant to these drivers. More than one thread can send I/O requests to the battery, so the miniclass driver passes FALSE as the *Exclusive* parameter. **IoCreateDevice** returns a pointer to the created FDO.
+    The input parameters to [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) are a pointer to the driver object that was passed to the *AddDevice* routine, the size of the device extension, NULL in place of a device name, and the system-defined device type (FILE\_DEVICE\_BATTERY). Battery miniclass drivers can specify zero for the *DeviceCharacteristics* parameter, which is irrelevant to these drivers. More than one thread can send I/O requests to the battery, so the miniclass driver passes FALSE as the *Exclusive* parameter. **IoCreateDevice** returns a pointer to the created FDO.
 
 2.  In the returned FDO, set flags and the stack size. For example:
 
@@ -58,7 +58,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 
     You determine the information stored in the device extension. For example, a smart battery driver might retain the number of batteries, a Boolean value indicating whether a battery selector is present, and, optionally, information about that battery selector.
 
-4.  Call [**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300) to attach the FDO to the device stack, then store the returned pointer, as follows:
+4.  Call [**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioattachdevicetodevicestack) to attach the FDO to the device stack, then store the returned pointer, as follows:
 
     ```cpp
     NewBatt->LowerDO = IoAttachDeviceToDeviceStack(Fdo,Pdo);

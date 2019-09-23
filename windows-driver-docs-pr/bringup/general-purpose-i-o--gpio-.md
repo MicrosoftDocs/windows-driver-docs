@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 System on a Chip (SoC) integrated circuits make extensive use of general-purpose I/O (GPIO) pins. For SoC-based platforms, Windows defines a general abstraction for GPIO hardware, and this abstraction requires support from the Advanced Configuration and Power Interface (ACPI) namespace.
 
-The GPIO abstraction is supported by the [ACPI 5.0 Specification](https://www.uefi.org/specifications) definitions that are listed in this article.
+The GPIO abstraction is supported by the [ACPI 5.0 Specification](https://uefi.org/specifications) definitions that are listed in this article.
 
 To verify that your GPIO controller meets all Windows platform requirements, see [GPIO Controller Requirements Checklist](gpio-controller-requirements-checklist.md).
 

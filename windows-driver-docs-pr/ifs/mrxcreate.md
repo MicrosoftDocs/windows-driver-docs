@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxCreate routine
 
 
-The*MRxCreate* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to request that the network mini-redirector create a file system object.
+The*MRxCreate* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that the network mini-redirector create a file system object.
 
 Syntax
 ------
@@ -138,29 +138,29 @@ Requirements
 ## See also
 
 
-[**MRxAreFilesAliased**](https://msdn.microsoft.com/library/windows/hardware/ff549838)
+[**MRxAreFilesAliased**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_chkfcb_calldown)
 
-[**MRxCleanupFobx**](https://msdn.microsoft.com/library/windows/hardware/ff549841)
+[**MRxCleanupFobx**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549841(v=vs.85))
 
-[**MRxCloseSrvOpen**](https://msdn.microsoft.com/library/windows/hardware/ff549845)
+[**MRxCloseSrvOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_calldown)
 
 [**MRxCollapseOpen**](mrxcollapseopen.md)
 
 [**MRxCreate**](mrxcreate.md)
 
-[**MRxDeallocateForFcb**](https://msdn.microsoft.com/library/windows/hardware/ff549871)
+[**MRxDeallocateForFcb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_deallocate_for_fcb)
 
-[**MRxDeallocateForFobx**](https://msdn.microsoft.com/library/windows/hardware/ff549872)
+[**MRxDeallocateForFobx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_deallocate_for_fobx)
 
-[**MRxExtendForCache**](https://msdn.microsoft.com/library/windows/hardware/ff549878)
+[**MRxExtendForCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_extendfile_calldown)
 
 [**MRxExtendForNonCache**](mrxextendfornoncache.md)
 
 [**MRxFlush**](mrxflush.md)
 
-[**MRxForceClosed**](https://msdn.microsoft.com/library/windows/hardware/ff550677)
+[**MRxForceClosed**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_forceclosed_calldown)
 
-[**MRxIsLockRealizable**](https://msdn.microsoft.com/library/windows/hardware/ff550691)
+[**MRxIsLockRealizable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_is_lock_realizable)
 
 [**MRxShouldTryToCollapseThisOpen**](mrxshouldtrytocollapsethisopen.md)
 

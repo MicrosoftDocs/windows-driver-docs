@@ -26,7 +26,7 @@ A driver performs the following sequence of operations:
 
 -   Creates and initializes a new IRP\_MJ\_PNP request.
 
-    The driver specifies either an [**IRP\_MN\_READ\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551727) or an [**IRP\_MN\_WRITE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551769) minor function.
+    The driver specifies either an [**IRP\_MN\_READ\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config) or an [**IRP\_MN\_WRITE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-write-config) minor function.
 
 -   Gets the next stack location.
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_the_checked_build_and_the_debugger_tools"></span><span id="DDK_THE_CHECKED_BUILD_AND_THE_DEBUGGER_TOOLS"></span>
 
 
-The typical setup for debugging kernel-mode drivers on Windows operating systems consists of two computers that are connected by means of a network, USB, serial, or 1394 connection. For information about setting up kernel-mode debugging, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
+The typical setup for debugging kernel-mode drivers on Windows operating systems consists of two computers that are connected by means of a network, USB, serial, or 1394 connection. For information about setting up kernel-mode debugging, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
 
 The *host computer* is the system on which the debugger runs. It should be a stable system and should always run the free build of the operating system.
 

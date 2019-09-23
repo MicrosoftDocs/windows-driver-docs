@@ -65,7 +65,7 @@ Support for the KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID is required to
 
 For an example of using this KSPROPERTY see the SYSVAD audio driver sample.
 
-For more information about audio modules, see [Implementing Audio Module Discovery](https://msdn.microsoft.com/windows/hardware/drivers/audio/implementing-audio-module-communication).
+For more information about audio modules, see [Implementing Audio Module Discovery](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication).
 
 Requirements
 ------------
@@ -96,7 +96,7 @@ Requirements
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
-[**KSAUDIOMODULE\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/mt808138)
+[**KSAUDIOMODULE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_notification)
 
  
 

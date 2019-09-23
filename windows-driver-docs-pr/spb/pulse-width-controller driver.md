@@ -40,7 +40,7 @@ This topic describes,
 
 **Important APIs**
 
--   [PWM IOCTLs](https://msdn.microsoft.com/library/windows/desktop/mt826481)
+-   [PWM IOCTLs](https://docs.microsoft.com/windows/desktop/DevIO/pwm-api)
 
 ## About PWM
 PWM describes the basic technique for generating a rectangular pulse wave with modulated pulse width resulting in the variation of the average value of the waveform.  
@@ -98,9 +98,9 @@ The driver should use the provided PWM support routine PwmParsePinPath to parse 
 
 ## Setting device interface properties
 
-To use PWM WinRT APIs from UWP apps, these [device interface properties](https://msdn.microsoft.com/library/windows/hardware/ff541409(v=vs.85).aspx) must be set.
+To use PWM WinRT APIs from UWP apps, these [device interface properties](https://docs.microsoft.com/previous-versions/ff541409(v=vs.85)) must be set.
 
--   [DEVPKEY_DeviceInterface_Restricted](https://msdn.microsoft.com/library/windows/hardware/hh406291(v=vs.85).aspx) 
+-   [DEVPKEY_DeviceInterface_Restricted](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-deviceinterface-restricted) 
 
     As per the current UWP device access model, setting Restricted device interface property to FALSE is required to give UWP apps access to the PWM device interface.   
 
@@ -484,20 +484,20 @@ PWM IOCTL requests are sent by an application or another driver and are targeted
 
 **Controller IOCTLs**
 
--    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://msdn.microsoft.com/library/windows/desktop/mt826475) 
--    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://msdn.microsoft.com/library/windows/desktop/mt826476) 
--    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://msdn.microsoft.com/library/windows/desktop/mt826478)
+-    [**IOCTL_PWM_CONTROLLER_GET_ACTUAL_PERIOD**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_get_actual_period) 
+-    [**IOCTL_PWM_CONTROLLER_GET_INFO**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_get_info) 
+-    [**IOCTL_PWM_CONTROLLER_SET_DESIRED_PERIOD**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_controller_set_desired_period)
 
 
 **Pin IOCTLs**
 
--    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/library/windows/desktop/mt843915)
--    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://msdn.microsoft.com/library/windows/desktop/mt843918)
--    [**IOCTL_PWM_PIN_GET_POLARITY**](https://msdn.microsoft.com/library/windows/desktop/mt843916)
--    [**IOCTL_PWM_PIN_SET_POLARITY**](https://msdn.microsoft.com/library/windows/desktop/mt843919)
--    [**IOCTL_PWM_PIN_START**](https://msdn.microsoft.com/library/windows/desktop/mt843920)
--    [**IOCTL_PWM_PIN_STOP**](https://msdn.microsoft.com/library/windows/desktop/mt843921)
--    [**IOCTL_PWM_PIN_IS_STARTED**](https://msdn.microsoft.com/library/windows/desktop/mt843917)    
+-    [**IOCTL_PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_get_active_duty_cycle_percentage)
+-    [**IOCTL_PWM_PIN_SET_ACTIVE_DUTY_CYCLE_PERCENTAGE**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_set_active_duty_cycle_percentage)
+-    [**IOCTL_PWM_PIN_GET_POLARITY**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_get_polarity)
+-    [**IOCTL_PWM_PIN_SET_POLARITY**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_set_polarity)
+-    [**IOCTL_PWM_PIN_START**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_start)
+-    [**IOCTL_PWM_PIN_STOP**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_stop)
+-    [**IOCTL_PWM_PIN_IS_STARTED**](https://docs.microsoft.com/windows/desktop/api/pwm/ni-pwm-ioctl_pwm_pin_is_started)    
 
 For each IOCTL request, the PWM drivr must verify the following: 
 

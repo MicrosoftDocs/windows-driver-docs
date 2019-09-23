@@ -24,13 +24,13 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-NDIS uses this OID to query the duplex state of an [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) provider. Only NDIS interface providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+NDIS uses this OID to query the duplex state of an [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) provider. Only NDIS interface providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_MEDIA\_DUPLEX\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff568745) enumeration.
+If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_MEDIA\_DUPLEX\_STATE**](https://docs.microsoft.com/windows/desktop/api/ifdef/ne-ifdef-_net_if_media_duplex_state) enumeration.
 
 Miniport drivers supply the media duplex state during initialization and provide updates with status indications.
 
-To specify the duplex state in a miniport driver, set the **MediaDuplexState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function.
+To specify the duplex state in a miniport driver, set the **MediaDuplexState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 Requirements
 ------------
@@ -51,13 +51,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
 
-[**NET\_IF\_MEDIA\_DUPLEX\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff568745)
+[**NET\_IF\_MEDIA\_DUPLEX\_STATE**](https://docs.microsoft.com/windows/desktop/api/ifdef/ne-ifdef-_net_if_media_duplex_state)
 
-[**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672)
+[**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes)
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
+[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
 
  
 

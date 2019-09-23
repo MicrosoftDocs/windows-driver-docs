@@ -82,9 +82,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetBindingCapability\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566224)
+[**SM\_GetBindingCapability\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_in)
 
-[**SM\_GetBindingCapability\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566227)
+[**SM\_GetBindingCapability\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_getbindingcapability_out)
 
  
 

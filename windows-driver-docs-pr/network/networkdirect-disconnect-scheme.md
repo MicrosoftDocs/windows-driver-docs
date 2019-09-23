@@ -9,10 +9,10 @@ ms.localizationpriority: medium
 # NetworkDirect Disconnect Scheme
 
 
-The scheme described here applies to both [NDSPI](https://msdn.microsoft.com/library/cc904391) version 2 and [NDKPI](network-direct-kernel-programming-interface--ndkpi-.md). The following terms are used:
+The scheme described here applies to both [NDSPI](https://docs.microsoft.com/previous-versions/windows/desktop/cc904391(v=vs.85)) version 2 and [NDKPI](network-direct-kernel-programming-interface--ndkpi-.md). The following terms are used:
 
 -   ND is used to refer to NDSPI or NDK.
--   *NdDisconnect* is used to refer to the function call that an ND consumer makes in order to initiate a graceful disconnect. For NDSPI, this is [**INDConnector::Disconnect**](https://msdn.microsoft.com/library/cc904364). For NDKPI, it is *NdkDisconnect* ([*NDK\_FN\_DISCONNECT*](https://msdn.microsoft.com/library/windows/hardware/hh439885)).
+-   *NdDisconnect* is used to refer to the function call that an ND consumer makes in order to initiate a graceful disconnect. For NDSPI, this is [**INDConnector::Disconnect**](https://docs.microsoft.com/previous-versions/windows/desktop/cc904364(v=vs.85)). For NDKPI, it is *NdkDisconnect* ([*NDK\_FN\_DISCONNECT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndkpi/nc-ndkpi-ndk_fn_disconnect)).
 -   *NdDisconnectIndication* is used to refer to the indication delivered by an ND provider to an ND consumer when the ND provider receives a graceful disconnect from the peer or detects that the connection was aborted due to any reason (other than the local NDK consumer's own initiation such as issuing *NdDisconnect* or *NdCloseConnector*).
 
 Below, A and B refer to the two sides of an ND connection. Consumer A refers to the ND consumer on side A, provider A refers to the ND provider on side A, and similarly Consumer B/Provider B refers to those same entities on side B.

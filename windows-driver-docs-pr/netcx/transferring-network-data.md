@@ -1,14 +1,15 @@
 ---
-title: Transferring network data
-description: Transferring network data
+title: Introduction to the NetAdapterCx data path
+description: Introduction to the NetAdapterCx data path
 ms.assetid: D2AC8269-F2D5-4FDC-A59E-6A35DBB18FF0
 keywords:
 - NetAdapterCx transferring network data, NetCx transferring network data
-ms.date: 06/05/2017
+ms.date: 07/01/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
-# Transferring network data
+# Introduction to the NetAdapterCx data path
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
@@ -20,5 +21,5 @@ The following topics explain in detail how to transfer network data in your NetA
 
 - [Packet descriptors and extensions](packet-descriptors-and-extensions.md)
 - [Transmit and receive queues](transmit-and-receive-queues.md)
-- [Using the ring buffer](using-the-ring-buffer.md)
+- [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md)
 - [Network data buffer management](network-data-buffer-management.md)

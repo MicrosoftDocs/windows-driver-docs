@@ -22,7 +22,7 @@ USB Dual Role controllers are now supported in Windows, starting with Windows 10
 ## Introduction
 
 
-The USB Dual Role feature makes it possible for a system to be either a USB *device* or USB *host*. The detailed specification for USB Dual Role can be found on the [usb.org](http://www.usb.org/developers/wusb/docs/presentations/2006/Taipei06_SA_SBD_DRD_Design_Considerations.pdf) website.
+The USB Dual Role feature makes it possible for a system to be either a USB *device* or USB *host*. The detailed specification for USB Dual Role can be found on the [usb.org](https://www.usb.org/developers/wusb/docs/presentations/2006/Taipei06_SA_SBD_DRD_Design_Considerations.pdf) website.
 
 The significant point here is that the dual role feature allows a mobile device, such as a phone, a phablet or a tablet, to designate itself as being a device or a host.
 

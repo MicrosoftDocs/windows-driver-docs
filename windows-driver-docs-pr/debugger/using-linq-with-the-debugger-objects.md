@@ -2,69 +2,176 @@
 title: Using LINQ With the debugger objects
 description: Using LINQ With the debugger objects. LINQ syntax can be used with the debugger objects to search and manipulate data.
 keywords: ["Using LINQ With the debugger objects"]
-ms.date: 08/10/2017
+ms.date: 04/12/2019
 ms.localizationpriority: medium
 ---
 
 # Using LINQ With the debugger objects
 
-LINQ syntax can be used with the debugger objects to search and manipulate data. LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see the following topics:
+LINQ syntax can be used with the debugger objects to search and manipulate data. Using the LINQ syntax with dx command allows for a more consistent experience compared to using debugger commands. The output and options are consistent no matter which debugger object that you are looking at. LINQ queries allow you to ask questions such as "What are the top 5 processes that are running the most threads?".
 
-[LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/bb397926.aspx)
+Debugger objects are projected into a namespace rooted at "Debugger". Processes, modules, threads, stacks, stack frames, and local variables are all available to be used in a LINQ query.
 
-[Getting Started with LINQ in C#](https://msdn.microsoft.com/library/bb397933.aspx)
+LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see [Getting Started with LINQ in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)
+
+LINQ that is used in the debugger support uses the “method syntax” of LINQ and not the “query syntax”. You can find more details about the differences in [LINQ (Language-Integrated Query)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
+
+LINQ commands such as the following can be used with the debugger objects. All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form.
 
 ## Native debugger objects
 
 Native debugger objects represent various constructs and behaviors of the debugger environment. Example debugger objects include the following.
 
--   Session
--   Threads / Thread
--   Processes / Process
--   Stack Frames / Stack Frame
--   Local Variables
--   Modules / Module
--   Utility
--   State
--   Settings
+- Session
+- Threads / Thread
+- Processes / Process
+- Stack Frames / Stack Frame
+- Local Variables
+- Modules / Module
+- Utility
+- State
+- Settings
 
-You can work with the debugger objects with NatVis. For more information see [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md). For information about using debugger objects with JavaScript, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
+You can also work with the debugger objects with NatVis. For more information see [Native Debugger Objects in NatVis](native-debugger-objects-in-natvis.md). For information about using debugger objects with JavaScript, see [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md). For information on working with C++ and the driver objects, see [Debugger Data Model C++ Overview](data-model-cpp-overview.md).
 
 ## Dx command
 
 The examples shown here use the dx command, for more information about working with the dx command, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
 
+## Developing a LINQ Query
 
-## Function Objects (Lambda Expressions)
+One way to develop a LINQ debugger object query is to use the DML links that are displayed to explore the data model to first locate the debugger object that will be used in the query.
 
-Many of the methods that are used to query data are based on the concept of repeatedly running a user provided function across objects in a collection. To support the ability to query and manipulate data in the debugger, the dx command supports lambda expressions using the equivalent C# syntax. A lambda expression is defined by usage of the =&gt; operator as follows:
+For this example, we would like to display a list of processes in a kernel debug session and the number of threads for each of those processes.
 
-(arguments) =&gt; (result)
-
-To see how LINQ is used with dx, try this simple example to add together 5 and 7.
+To start our exploration we can use the dx command to display the top level debugger object.
 
 ```dbgcmd
-kd> dx ((x, y) => (x + y))(5, 7) 
+0: kd> dx Debugger
+Debugger
+    Sessions
+    Settings
+    State
+    Utility
 ```
 
-The dx command echos back the lambda expression and displays the result of 12.
+After clicking on the top level topics, we determine that Sessions looks most interesting, so we click on the DML link to reveal that it contains *Processes*. 
 
 ```dbgcmd
-((x, y) => (x + y))(5, 7)  : 12
+0: kd> dx -r1 Debugger.Sessions[0]
+Debugger.Sessions[0]                 : Remote KD: KdSrv:Server=@{<Local>},Trans=@{NET:Port=50005,Key=MyKey}
+    Processes
+    Id               : 0
+    Attributes
 ```
 
-This example lambda expression combines the strings "Hello" and "World".
+Then we click further down to look at specific process and we see that the *Threads* associated with that process are available. When we click on *Threads* for one of the processes, we see the all of the threads associated with that process are available.
+
 
 ```dbgcmd
-kd> dx ((x, y) => (x + y))("Hello", "World")
-((x, y) => (x + y))("Hello", "World") : HelloWorld
+0: kd> dx -r1 Debugger.Sessions[0].Processes[1428].Threads
+Debugger.Sessions[0].Processes[1428].Threads
+    [0x598]          : <Unable to get stack trace> [Switch To]
+    [0x1220]         : <Unable to get stack trace> [Switch To]
+    [0x6f8]          : nt!KiSwapContext+0x76 (fffff806`4466a186)  [Switch To]
+    [0x128c]         : <Unable to get stack trace> [Switch To]
+    [0x27e4]         : nt!KiSwapContext+0x76 (fffff806`4466a186)  [Switch To] 
+```
+
+We now know that the data that we need to display the number of threads associated with a process is available in the debugger object model.
+
+To make the LINQ query a little shorter we can use the [System Defined Variables](#system-defined-variables) described later in this topic to display the processes associated with the current session.
+
+```dbgcmd
+0: kd> dx @$cursession.Processes
+@$cursession.Processes                
+    [0x0]            : Idle [Switch To]
+    [0x4]            : System [Switch To]
+    [0x90]           : Registry [Switch To]
+...
+```
+
+Next add a select statement. To start with, we can specify the Name field.
+
+```dbgcmd
+0: kd> dx @$cursession.Processes.Select(p => p.Name)
+@$cursession.Processes.Select(p => p.Name)                
+    [0x0]            : Idle
+    [0x4]            : System
+    [0x90]           : Registry
+...
+```
+
+For our scenario, we also need the number of threads. Because there are two fields, create an anonymous type using *new*, similar to C#'s anonymous type syntax described below in [User Defined Variables](#user-defined-variables).
+
+```dbgcmd
+dx @$cursession.Processes.Select(p => new {Name = p.Name, Threads = p.Threads})
+```
+
+With that command,  'dx' doesn't actually print out the name anymore, so add -r2 (recurse two levels) to display Name and Threads.
+
+```dbgcmd
+dx -r2 @$cursession.Processes.Select(p => new {Name = p.Name, Threads = p.Threads})
+@$cursession.Processes.Select(p => new {Name = p.Name, Threads = p.Threads})                
+    [0x0]           
+        Name             : Idle
+        Threads         
+    [0x4]           
+        Name             : System
+        Threads         
+    [0x90]          
+        Name             : Registry
+        Threads       
+```
+
+At this point we are displaying the name of the process and a list of threads. To display the ThreadCount, use the *.Count()* method.
+
+
+```dbgcmd
+0: kd> dx -r2 @$cursession.Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count()})
+@$cursession.Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count()})                
+    [0x0]           
+        Name             : Idle
+        ThreadCount      : 0x4
+    [0x4]           
+        Name             : System
+        ThreadCount      : 0xe7
+    [0x90]          
+        Name             : Registry
+        ThreadCount      : 0x4
+...
+```
+
+To see which processes have a large number of threads, order the list by thread count using *OrderByDescending*.
+
+```dbgcmd
+0: kd> dx -r2 @$cursession.Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count()}).OrderByDescending(p => p.ThreadCount)
+@$cursession.Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count()}).OrderByDescending(p => p.ThreadCount)                
+    [0x4]           
+        Name             : System
+        ThreadCount      : 0xe7
+    [0xa38]         
+        Name             : svchost.exe
+        ThreadCount      : 0x45
+    [0x884]         
+        Name             : MemCompression
+        ThreadCount      : 0x3e
+```
+
+ To render in a formatted grid change the '-r2' to be '-g'. The level of recursion does not need to be specified, because the grid option displays the columns appropriately. Lastly, add the ',d' format specifier to output decimal values.
+
+```dbgcmd
+0: kd> dx -g @$cursession.Processes.Select(p => new {Name = p.Name, ThreadCount = p.Threads.Count()}).OrderByDescending(p => p.ThreadCount),d
+===========================================================================================
+=            = Name                                                         = ThreadCount =
+===========================================================================================
+= [4]        - System                                                       - 231         =
+= [2616]     - svchost.exe                                                  - 69          =
+= [2180]     - MemCompression                                               - 62          =
+= [968]      - explorer.exe                                                 - 61          =
 ```
 
 ## Debugger Objects Examples
-
-Debugger objects are projected into a namespace rooted at "Debugger". Processes, modules, threads, stacks, stack frames, and local variables are all available to be used in a LINQ query.
-
-LINQ commands such as the following can be used .All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form.
 
 This example shows the top 5 processes running the most threads:
 
@@ -195,18 +302,6 @@ kd> dx -r2 @$mySessionVar
         Processes        : 
         Devices     
 ```
-
-**User Defined Variables - Anonymous Types**
-
-This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://msdn.microsoft.com/library/bb397696.aspx). This example create an anonymous type with an integer and string value.
-
-```dbgcmd
-kd> dx -r1 new { MyInt = 42, MyString = "Hello World" }
-new { MyInt = 42, MyString = "Hello World" } : 
-    MyInt            : 42
-    MyString         : Hello World
-```
-
 ## System Defined Variables
 
 The following system defined variables can be used in any LINQ dx query.
@@ -233,6 +328,44 @@ kd> dx -r1 @$curprocess.Threads
     [0x62d8]         : 
      ...
 ```
+
+## User Defined Variables - Anonymous Types
+
+This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://docs.microsoft.com/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types). This example create an anonymous type with an integer and string value.
+
+```dbgcmd
+kd> dx -r1 new { MyInt = 42, MyString = "Hello World" }
+new { MyInt = 42, MyString = "Hello World" } : 
+    MyInt            : 42
+    MyString         : Hello World
+```
+
+
+## Function Objects (Lambda Expressions)
+
+Many of the methods that are used to query data are based on the concept of repeatedly running a user provided function across objects in a collection. To support the ability to query and manipulate data in the debugger, the dx command supports lambda expressions using the equivalent C# syntax. A lambda expression is defined by usage of the =&gt; operator as follows:
+
+(arguments) =&gt; (result)
+
+To see how LINQ is used with dx, try this simple example to add together 5 and 7.
+
+```dbgcmd
+kd> dx ((x, y) => (x + y))(5, 7) 
+```
+
+The dx command echos back the lambda expression and displays the result of 12.
+
+```dbgcmd
+((x, y) => (x + y))(5, 7)  : 12
+```
+
+This example lambda expression combines the strings "Hello" and "World".
+
+```dbgcmd
+kd> dx ((x, y) => (x + y))("Hello", "World")
+((x, y) => (x + y))("Hello", "World") : HelloWorld
+```
+
 
 ## Supported LINQ Syntax - Query Methods
 
@@ -635,12 +768,12 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left"><div class="code">
 
 <code>dbgcmd
-0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x10) != 0)                
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x10) != 0)                
     [0x0]            : SWD\PRINTENUM\{2F8DBBB6-F246-4D84-BB1D-AA8761353885}
     [0x1]            : SWD\PRINTENUM\{F210BC77-55A1-4FCA-AA80-013E2B408378}
     [0x2]            : SWD\PRINTENUM\{07940A8E-11F4-46C3-B714-7FF9B87738F8}
-    [0x3]            : DISPLAY\Default_Monitor\6&amp;1a097cd8&amp;0&amp;UID5527112 (monitor)</code>
+    [0x3]            : DISPLAY\Default_Monitor\6&1a097cd8&0&UID5527112 (monitor)</code>
 
 </div></td>
 </tr>
@@ -649,8 +782,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left"><div class="code">
 
 <code>dbgcmd
-0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x40) != 0)                
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x40) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
@@ -663,8 +796,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left"><div class="code">
 
 <code>dbgcmd
-0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x80) != 0)                
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x80) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : ROOT\volmgr\0000 (volmgr)
     [0x2]            : ROOT\spaceport\0000 (spaceport)
@@ -677,8 +810,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left"><div class="code">
 
 <code>dbgcmd
-0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x100) != 0)                
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x100) != 0)                
     [0x0]            : HTREE\ROOT\0
     [0x1]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x2]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
@@ -691,8 +824,8 @@ This table summarizes the use of the dx command with common device capability fl
 <td align="left"><div class="code">
 
 <code>dbgcmd
-0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)
-@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags &amp; 0x200) != 0)                
+0: kd&gt; dx -r1 @$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)
+@$cursession.Devices.DeviceTree.Flatten(n =&gt; n.Children).Where(n =&gt; (n.DeviceNodeObject.CapabilityFlags & 0x200) != 0)                
     [0x0]            : SWD\MMDEVAPI\MicrosoftGSWavetableSynth
     [0x1]            : SWD\IP_TUNNEL_VBUS\IP_TUNNEL_DEVICE_ROOT
     [0x2]            : SWD\PRINTENUM\PrintQueues
@@ -704,7 +837,7 @@ This table summarizes the use of the dx command with common device capability fl
 </table>
 
 
-For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095).
+For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities).
 
 
 ## <span id="see_also"></span>See also

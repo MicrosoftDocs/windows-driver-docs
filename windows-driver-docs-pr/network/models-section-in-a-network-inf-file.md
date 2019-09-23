@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 
 
 
-The **Models** section in a network INF file is based on the generic [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456).
+The **Models** section in a network INF file is based on the generic [**INF Models section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section).
 
 The **Models** section in an INF file contains an entry of the following format for each type of component installed by the INF file:
 
 \[*device-description*= *install-section.name*, *hw-id*\[, *compatible-id*...\]
 
-For a detailed description of this entry, see [Creating an INF File](https://msdn.microsoft.com/library/windows/hardware/ff549520).
+For a detailed description of this entry, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files).
 
 The *hw-id* (also known as the device, hardware, or component ID) for a network adapter must match the hardware ID supplied by the adapter to the PnP manager.
 

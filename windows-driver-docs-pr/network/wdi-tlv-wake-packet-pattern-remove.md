@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE
 
 
-WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE is a TLV that contains the wake packet pattern ID to be removed with [OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925944).
+WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE is a TLV that contains the wake packet pattern ID to be removed with [OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-remove-wol-pattern).
 
 ## TLV Type
 

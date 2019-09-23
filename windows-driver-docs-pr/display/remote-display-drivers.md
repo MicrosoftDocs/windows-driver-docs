@@ -13,20 +13,20 @@ A *remote display driver* is based on the Windows 2000 [Mirror Driver](mirror-dr
 
 To successfully install and run starting with Windows 8, a remote display driver must implement only the following device driver interfaces (DDIs) and no more.
 
--   [**DrvAssertMode**](https://msdn.microsoft.com/library/windows/hardware/ff556178)
--   [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180)
--   [**DrvCompletePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556181)
--   [**DrvCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff556182)
--   [**DrvDisableDriver**](https://msdn.microsoft.com/library/windows/hardware/ff556196)
--   [**DrvDisablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556198)
--   [**DrvDisableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556200)
--   [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211)
--   [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214)
--   [**DrvEscape**](https://msdn.microsoft.com/library/windows/hardware/ff556217)
--   [**DrvGetModes**](https://msdn.microsoft.com/library/windows/hardware/ff556233)
--   [**DrvMovePointer**](https://msdn.microsoft.com/library/windows/hardware/ff556248)
--   [**DrvResetPDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556276)
--   [**DrvSetPointerShape**](https://msdn.microsoft.com/library/windows/hardware/ff556289)
+-   [**DrvAssertMode**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvassertmode)
+-   [**DrvBitBlt**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvbitblt)
+-   [**DrvCompletePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvcompletepdev)
+-   [**DrvCopyBits**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvcopybits)
+-   [**DrvDisableDriver**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdisabledriver)
+-   [**DrvDisablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdisablepdev)
+-   [**DrvDisableSurface**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdisablesurface)
+-   [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev)
+-   [**DrvEnableSurface**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablesurface)
+-   [**DrvEscape**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvescape)
+-   [**DrvGetModes**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetmodes)
+-   [**DrvMovePointer**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvmovepointer)
+-   [**DrvResetPDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvresetpdev)
+-   [**DrvSetPointerShape**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsetpointershape)
 
  
 

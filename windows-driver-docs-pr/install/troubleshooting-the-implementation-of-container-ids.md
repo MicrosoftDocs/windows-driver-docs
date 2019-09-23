@@ -36,7 +36,7 @@ In such a case, you should examine the following:
 
     Make sure that the format of the container ID or unique identifier in the hardware complies with the format requirements for the given bus. For more information, see [Container IDs Generated from a Bus-Specific Unique ID](container-ids-generated-from-a-bus-specific-unique-id.md).
 
-    If devnodes for the device are enumerated by a custom bus driver, check that the bus driver correctly responds to the [**IRP_MN_QUERY_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) request for **BusQueryContainerID**.
+    If devnodes for the device are enumerated by a custom bus driver, check that the bus driver correctly responds to the [**IRP_MN_QUERY_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id) request for **BusQueryContainerID**.
 
 -   Is the device concurrently connected to the computer by more than one bus?
 

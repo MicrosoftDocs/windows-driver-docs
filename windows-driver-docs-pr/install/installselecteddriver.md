@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # InstallSelectedDriver function
 
 
-The **InstallSelectedDriver** function is deprecated. For Windows Vista and later, use [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710) instead.
+The **InstallSelectedDriver** function is deprecated. For Windows Vista and later, use [**DiInstallDevice**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldevice) instead.
 
 Syntax
 ------
@@ -40,7 +40,7 @@ Parameters
 A handle to the top-level window that the **InstallSelectedDriver** function uses to display user interface components that are associated with installing the driver.
 
 *DeviceInfoSet* \[in\]  
-A handle to a [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains a device information element that represents a selected device and a selected driver for the device. For more information about how to select a device and a driver for a device, see the following **Remarks** section.
+A handle to a [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains a device information element that represents a selected device and a selected driver for the device. For more information about how to select a device and a driver for a device, see the following **Remarks** section.
 
 *Reserved* \[in\]  
 This parameter must be set to **NULL**.
@@ -76,7 +76,7 @@ Some of the more common error values that **GetLastError** might return are as f
 </tr>
 <tr class="even">
 <td align="left"><strong>ERROR_IN_WOW64</strong></td>
-<td align="left"><p>The calling application is a 32-bit application that is attempting to execute in a 64-bit environment, which is not allowed. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541255" data-raw-source="[Installing Devices on 64-Bit Systems](https://msdn.microsoft.com/library/windows/hardware/ff541255)">Installing Devices on 64-Bit Systems</a>.</p></td>
+<td align="left"><p>The calling application is a 32-bit application that is attempting to execute in a 64-bit environment, which is not allowed. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/install/device-installations-on-64-bit-systems" data-raw-source="[Installing Devices on 64-Bit Systems](https://docs.microsoft.com/windows-hardware/drivers/install/device-installations-on-64-bit-systems)">Installing Devices on 64-Bit Systems</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -90,27 +90,27 @@ To access **InstallSelectedDriver**, call **LoadLibrary** to load *Newdev.dll* a
 
 You should only call **InstallSelectedDriver** if it is necessary to install a specific driver on a specific device.
 
-**Important**   For Windows Vista and later versions of Windows, call [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710) instead of **InstallSelectedDriver** to perform this type of operation.
+**Important**   For Windows Vista and later versions of Windows, call [**DiInstallDevice**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldevice) instead of **InstallSelectedDriver** to perform this type of operation.
 
  
 
-Other than the special applications that require the installation of a specific driver on a specific device, an installation application should install the driver that is the best match for a device. To install the driver that is the best match for a device, call [**DiInstallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff544717) or [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534). For more information about which of these functions to call to install a driver on a device, see [SetupAPI Functions that Simplify Driver Installation](https://msdn.microsoft.com/library/windows/hardware/ff550867).
+Other than the special applications that require the installation of a specific driver on a specific device, an installation application should install the driver that is the best match for a device. To install the driver that is the best match for a device, call [**DiInstallDriver**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldrivera) or [**UpdateDriverForPlugAndPlayDevices**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa). For more information about which of these functions to call to install a driver on a device, see [SetupAPI Functions that Simplify Driver Installation](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-functions-that-simplify-driver-installation).
 
 Before calling **InstallSelectedDriver**, the caller must obtain a device information set that contains the device, select the device in the set, and select a driver for the device.
 
 To create a device information set that contains the device, do one of the following:
 
--   Call [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069) to retrieve a device information set that contains the device and then call [**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010) to enumerate the devices in the device information set. On each call, **SetupDiEnumDeviceInfo** returns an SP\_DEVINFO\_DATA structure that represents the enumerated device in the device information set. To obtain specific information about the enumerated device, call [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967) and supply the SP\_DEVINFO\_DATA structure that was returned by **SetupDiEnumDeviceInfo**.
+-   Call [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) to retrieve a device information set that contains the device and then call [**SetupDiEnumDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo) to enumerate the devices in the device information set. On each call, **SetupDiEnumDeviceInfo** returns an SP\_DEVINFO\_DATA structure that represents the enumerated device in the device information set. To obtain specific information about the enumerated device, call [**SetupDiGetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) and supply the SP\_DEVINFO\_DATA structure that was returned by **SetupDiEnumDeviceInfo**.
 
     - OR -
 
--   Call [**SetupDiOpenDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff552071) to add a device with a known device instance ID to the device information set. **SetupDiOpenDeviceInfo** returns an [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that represents the device in the device information set.
+-   Call [**SetupDiOpenDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to add a device with a known device instance ID to the device information set. **SetupDiOpenDeviceInfo** returns an [**SP\_DEVINFO\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device in the device information set.
 
-After obtaining the SP\_DEVINFO\_DATA structure for a device, call [**SetupDiSetSelectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552176) to select the device in the device information set.
+After obtaining the SP\_DEVINFO\_DATA structure for a device, call [**SetupDiSetSelectedDevice**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddevice) to select the device in the device information set.
 
-To retrieve a driver for a device, call [**SetupDiBuildDriverInfoList**](https://msdn.microsoft.com/library/windows/hardware/ff550917) to build a list of compatible drivers for the device and then call [**SetupDiEnumDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551018) to enumerate the elements of the driver list for the device. For each enumerated driver, **SetupDiEnumDriverInfo** retrieves an SP\_DRVINFO\_DATA structure that represents the driver. [**SetupDiGetDriverInfoDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551973) can be called to retrieve additional details about an enumerated driver.
+To retrieve a driver for a device, call [**SetupDiBuildDriverInfoList**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdibuilddriverinfolist) to build a list of compatible drivers for the device and then call [**SetupDiEnumDriverInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdriverinfoa) to enumerate the elements of the driver list for the device. For each enumerated driver, **SetupDiEnumDriverInfo** retrieves an SP\_DRVINFO\_DATA structure that represents the driver. [**SetupDiGetDriverInfoDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinfodetaila) can be called to retrieve additional details about an enumerated driver.
 
-After obtaining an SP\_DRVINFO\_DATA structure for the driver, call [**SetupDiSetSelectedDriver**](https://msdn.microsoft.com/library/windows/hardware/ff552183) to select the driver for the device.
+After obtaining an SP\_DRVINFO\_DATA structure for the driver, call [**SetupDiSetSelectedDriver**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddrivera) to select the driver for the device.
 
 Requirements
 ------------
@@ -147,29 +147,29 @@ Requirements
 ## See also
 
 
-[**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710)
+[**DiInstallDevice**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldevice)
 
-[**DiInstallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff544717)
+[**DiInstallDriver**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldrivera)
 
-[**SetupDiBuildDriverInfoList**](https://msdn.microsoft.com/library/windows/hardware/ff550917)
+[**SetupDiBuildDriverInfoList**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdibuilddriverinfolist)
 
-[**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010)
+[**SetupDiEnumDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo)
 
-[**SetupDiEnumDriverInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551018)
+[**SetupDiEnumDriverInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdriverinfoa)
 
-[**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069)
+[**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw)
 
-[**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967)
+[**SetupDiGetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
 
-[**SetupDiGetDriverInfoDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551973)
+[**SetupDiGetDriverInfoDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinfodetaila)
 
-[**SetupDiOpenDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff552071)
+[**SetupDiOpenDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa)
 
-[**SetupDiSetSelectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552176)
+[**SetupDiSetSelectedDevice**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddevice)
 
-[**SetupDiSetSelectedDriver**](https://msdn.microsoft.com/library/windows/hardware/ff552183)
+[**SetupDiSetSelectedDriver**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddrivera)
 
-[**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534)
+[**UpdateDriverForPlugAndPlayDevices**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa)
 
  
 

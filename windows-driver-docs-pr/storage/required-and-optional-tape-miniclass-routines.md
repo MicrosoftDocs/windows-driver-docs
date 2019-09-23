@@ -39,7 +39,7 @@ A tape miniclass driver can have the following optional routines:
 
 The tape miniclass driver's **DriverEntry** routine must use that name exactly in order to be loaded automatically by the operating system. TapeMini*Xxx* routines can be named as the driver writer chooses, as long as the entry points of the routines are set in the TAPE\_INIT\_DATA\_EX structure. To aid in debugging, a miniclass driver should prefix the TapeMini*Xxx* routines with some characters to identify itself and should ensure the rest of the characters in the name reflect what the routine does.
 
-See also the description of tape miniclass routines in [Tape Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567970).
+See also the description of tape miniclass routines in [Tape Miniclass Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
  
 

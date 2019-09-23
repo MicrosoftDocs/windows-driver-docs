@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_thread_model_of_user_mode_display_driver_gg"></span><span id="DDK_THREAD_MODEL_OF_USER_MODE_DISPLAY_DRIVER_GG"></span>
 
 
-The user-mode display driver is not loaded into multiple processes simultaneously--the user-mode display driver DLL is loaded into the address space of each process separately. Still, multiple threads can run in the user-mode display driver at the same time. However, each thread that is running in the user-mode display driver must access a different display device, which is created by a call to the user-mode display driver's [**CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540634) function. For example:
+The user-mode display driver is not loaded into multiple processes simultaneously--the user-mode display driver DLL is loaded into the address space of each process separately. Still, multiple threads can run in the user-mode display driver at the same time. However, each thread that is running in the user-mode display driver must access a different display device, which is created by a call to the user-mode display driver's [**CreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createdevice) function. For example:
 
 -   An application that creates two Microsoft Direct3D devices can have two threads that access these devices independently.
 

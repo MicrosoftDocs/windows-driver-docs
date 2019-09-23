@@ -25,23 +25,23 @@ Any time after the successful completion of a create request.
 
 The I/O control code is contained at **Parameters.DeviceIoControl.IoControlCode** in the I/O stack location of the IRP.
 
-Other input parameters depend on the I/O control code's value. For more information, see [Buffer Descriptions for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff540663).
+Other input parameters depend on the I/O control code's value. For more information, see [Buffer Descriptions for I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/buffer-descriptions-for-i-o-control-codes).
 
 ## Output Parameters
 
 
-Output parameters depend on the I/O control code's value. For more information, see [Buffer Descriptions for I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff540663).
+Output parameters depend on the I/O control code's value. For more information, see [Buffer Descriptions for I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/buffer-descriptions-for-i-o-control-codes).
 
 Operation
 ---------
 
-Drivers receive **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests when another driver calls either [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318) or [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) to create a request.
+Drivers receive **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests when another driver calls either [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) or [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) to create a request.
 
 This I/O control code has been defined for communication between paired and layered kernel-mode drivers, such as one or more class drivers layered over a port driver. The higher-level driver sets up IRPs with device- or driver-specific I/O control codes, requesting support from the next-lower driver.
 
 The requested operation is device- or driver-specific.
 
-For general information about I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, see [Using I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff565406). See also [Device Type-Specific I/O Requests](https://msdn.microsoft.com/library/windows/hardware/ff543205).
+For general information about I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes). See also [Device Type-Specific I/O Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-type-specific-i-o-requests).
 
 Requirements
 ------------
@@ -64,9 +64,9 @@ Requirements
 
 [*DispatchInternalDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257)
+[**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp)
 
-[**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318)
+[**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
 
  
 

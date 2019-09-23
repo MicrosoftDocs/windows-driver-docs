@@ -46,13 +46,13 @@ The coordinate system shown in the following diagram is the convention used by t
 
 The following structures and enumerations are used by the fusion data part of the logical sensor driver:
 
--   [**VEC3D**](https://msdn.microsoft.com/library/windows/hardware/dn946712)
+-   [**VEC3D**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
 
--   [**COORDINATE\_AXIS**](https://msdn.microsoft.com/library/windows/hardware/dn957021)
+-   [**COORDINATE\_AXIS**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
 
--   [**QUATERNION**](https://msdn.microsoft.com/library/windows/hardware/dn957081)
+-   [**QUATERNION**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
 
--   [**MATRIX3X3**](https://msdn.microsoft.com/library/windows/hardware/dn957074)
+-   [**MATRIX3X3**](https://docs.microsoft.com/windows-hardware/drivers/sensors/)
 
 -   [Fusion sensor enumerations](https://go.microsoft.com/fwlink/p/?linkid=839352) and [Fusion sensor structures](https://go.microsoft.com/fwlink/p/?linkid=839355) provide information about the entire sensor fusion data structure, which include the attitude (in multiple formats) and the linear acceleration, and the compass data.
 -->

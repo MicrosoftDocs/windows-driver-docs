@@ -20,23 +20,23 @@ The DirectX runtime saves and restores floating-point state when it calls many o
 
 The DirectX runtime saves and restores floating-point state as required for the following Direct3D callback functions:
 
--   [**D3dContextCreate**](https://msdn.microsoft.com/library/windows/hardware/ff542178)
+-   [**D3dContextCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_contextcreatecb)
 
--   [**D3dContextDestroy**](https://msdn.microsoft.com/library/windows/hardware/ff542180)
+-   [**D3dContextDestroy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_contextdestroycb)
 
--   [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704)
+-   [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb)
 
--   [**D3dGetDriverState**](https://msdn.microsoft.com/library/windows/hardware/ff544708)
+-   [**D3dGetDriverState**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverstate)
 
--   [**D3dValidateTextureStageState**](https://msdn.microsoft.com/library/windows/hardware/ff549064)
+-   [**D3dValidateTextureStageState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_validatetexturestagestatecb)
 
 For the following callback functions, a Direct3D-supported display driver must save floating-point state before performing floating-point operations, and restore it when the operations are complete:
 
--   [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840)
+-   [**D3dCreateSurfaceEx**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)
 
--   [**D3dDestroyDDLocal**](https://msdn.microsoft.com/library/windows/hardware/ff544685)
+-   [**D3dDestroyDDLocal**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_destroyddlocal)
 
--   [D3DBuffer Callbacks](https://msdn.microsoft.com/library/windows/hardware/ff542176)
+-   [D3DBuffer Callbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
 For more information about floating-point operations, see [Floating-Point Operations in Graphics Driver Functions](floating-point-operations-in-graphics-driver-functions.md).
 

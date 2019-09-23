@@ -104,7 +104,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_PRECONNECT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554190), [**AVCPRECONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554103), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
+[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PRECONNECT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_preconnect_info), [**AVCPRECONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avcpreconnectinfo), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function)
 
  
 

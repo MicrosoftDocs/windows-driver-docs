@@ -13,17 +13,17 @@ ms.localizationpriority: medium
 
 
 
-After its initial registration with WMI, a driver changes its registration information by calling [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480) with one of the following actions:
+After its initial registration with WMI, a driver changes its registration information by calling [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiregistrationcontrol) with one of the following actions:
 
 -   WMIREG\_ACTION\_REREGISTER to replace all registration information previously supplied by the driver with new information.
 
-    In response, WMI sends either an [**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) request or an [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) request to the driver, with **Parameters.WMI.DataPath** set to WMIREGISTER. (On Windows 98 and Windows 2000, the system sends the **IRP\_MN\_REGINFO** request. On Windows XP and later, the system sends the **IRP\_MN\_REGINFO\_EX** request.)
+    In response, WMI sends either an [**IRP\_MN\_REGINFO**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo) request or an [**IRP\_MN\_REGINFO\_EX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo-ex) request to the driver, with **Parameters.WMI.DataPath** set to WMIREGISTER. (On Windows 98 and Windows 2000, the system sends the **IRP\_MN\_REGINFO** request. On Windows XP and later, the system sends the **IRP\_MN\_REGINFO\_EX** request.)
 
     The driver supplies WMI with new registration information for all blocks it supports, as described in [Using the WMI Library to Register Blocks](using-the-wmi-library-to-register-blocks.md) and [Handling IRP\_MN\_REGINFO and IRP\_MN\_REGINFO\_EX to Register Blocks](handling-irp-mn-reginfo-and-irp-mn-reginfo-ex-to-register-blocks.md).
 
 -   WMIREG\_ACTION\_UPDATE\_GUIDS to add or remove support for blocks or to change the static instance names of registered blocks.
 
-    In response, WMI sends an [**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) or [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) request to the driver, with **Parameters.Wmi.DataPath** set to WMIUPDATE.
+    In response, WMI sends an [**IRP\_MN\_REGINFO**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo) or [**IRP\_MN\_REGINFO\_EX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo-ex) request to the driver, with **Parameters.Wmi.DataPath** set to WMIUPDATE.
 
     The driver supplies WMI with an updated registration information in which:
 
@@ -35,7 +35,7 @@ After its initial registration with WMI, a driver changes its registration infor
 
 -   WMIREG\_ACTION\_DEREGISTER to instruct WMI that the driver will no longer provide WMI information.
 
-    WMI does not send an **IRP\_MN\_REGINFO** or **IRP\_MN\_REGINFO\_EX** request in response to this call, because it requires no further information from the driver. A driver typically deregisters its blocks in response to an [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738) request. Note that the deregister call will block until all WMI IRPs to the device have been completed. If a driver queues WMI IRPs, it must cancel them before calling [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480) to deregister.
+    WMI does not send an **IRP\_MN\_REGINFO** or **IRP\_MN\_REGINFO\_EX** request in response to this call, because it requires no further information from the driver. A driver typically deregisters its blocks in response to an [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request. Note that the deregister call will block until all WMI IRPs to the device have been completed. If a driver queues WMI IRPs, it must cancel them before calling [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiregistrationcontrol) to deregister.
 
  
 

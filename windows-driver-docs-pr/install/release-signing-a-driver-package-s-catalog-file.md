@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Release-Signing a Driver Package's Catalog File
 
 
-Once the [catalog file](catalog-files.md) for a [driver package](driver-packages.md) is created or updated, the catalog file can be signed through [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778). Once signed, the digital signature stored within the catalog file is invalidated if any components of the driver package are modified.
+Once the [catalog file](catalog-files.md) for a [driver package](driver-packages.md) is created or updated, the catalog file can be signed through [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool). Once signed, the digital signature stored within the catalog file is invalidated if any components of the driver package are modified.
 
 When digitally signing a catalog file, SignTool saves the digital signature within the catalog file. The components of the driver package are not changed by SignTool. However, since the catalog file contains hashed values of the components of the driver package, the digital signature within the catalog file is maintained as long as the components hash to the same value.
 
@@ -28,7 +28,7 @@ The following command line shows how to run SignTool to do the following:
 To release-sign the *tstamd64.cat* catalog file, run the following command line:
 
 ```cpp
-Signtool sign /v /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
+Signtool sign /v /fd sha256 /ac MSCV-VSClass3.cer /s MyPersonalStore /n contoso.com /t http://timestamp.digicert.com tstamd64.cat
 ```
 
 Where:
@@ -37,20 +37,22 @@ Where:
 
 -   The **/v** option enables verbose operations, in which SignTool displays successful execution and warning messages.
 
+-   The **/fd** option specifies the file digest algorithm to use for creating file signatures. The default is SHA1.
+
 -   The **/ac** option specifies the name of the file which contains the cross-certificate (*MSCV-VSClass3.cer*) obtained from the CA. Use the full path name if the cross-certificate is not in the current directory.
 
 -   The **/s** option specifies the name of the Personal certificate store (*MyPersonalStore)* that contains the SPC.
 
 -   The **/n** option specifies the name of the SPC (*Contoso.com)* that is installed in the specified certificate store.
 
--   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timstamp.dll*) which will timestamp the digital signature.
+-   The **/t** option specifies URL of the TSA (*http://timestamp.digicert.com*) which will timestamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
      
 
 -   *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
 
-For more information about SignTool and its command-line arguments, see [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778).
+For more information about SignTool and its command-line arguments, see [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool).
 
 For more information about release-signing driver packages, see [Release-Signing Driver Packages](release-signing-driver-packages.md).
 

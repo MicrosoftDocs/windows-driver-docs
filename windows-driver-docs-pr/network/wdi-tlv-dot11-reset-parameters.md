@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_DOT11\_RESET\_PARAMETERS
 
 
-WDI\_TLV\_DOT11\_RESET\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DOT11\_RESET](https://msdn.microsoft.com/library/windows/hardware/dn925952).
+WDI\_TLV\_DOT11\_RESET\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DOT11\_RESET](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-dot11-reset).
 
 ## TLV Type
 

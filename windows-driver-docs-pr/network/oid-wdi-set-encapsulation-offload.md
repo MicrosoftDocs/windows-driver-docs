@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ENCAPSULATION_OFFLOAD Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD
@@ -26,8 +27,8 @@ When this message is received, the LE should indicate its current encapsulation 
 
 | TLV                                                                                                                   | Multiple TLV instances allowed | Optional | Description                                     |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------|
-| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898058) |                                |          | Specifies if IPv4 offloading should be started. |
-| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V6\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898059) |                                |          | Specifies if IPv6 offloading should be started. |
+| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-encapsulation-offload-v4-parameters) |                                |          | Specifies if IPv4 offloading should be started. |
+| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V6\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-encapsulation-offload-v6-parameters) |                                |          | Specifies if IPv6 offloading should be started. |
 
  
 
@@ -35,6 +36,7 @@ When this message is received, the LE should indicate its current encapsulation 
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

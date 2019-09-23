@@ -41,7 +41,7 @@ The PacketDirect platform implemented by Windows maps the client interface to th
 
 **PacketDirect Provider Interface (PDPI)**
 
-The PDPI allows NIC drivers to expose their high-performance send and receive functionality to the Windows OS. The functions implemented are a subset of the complete MiniPort functionality and are generic to all NICs that implement PD. For reference documentation for PDPI, see [PacketDirect Provider Interface (PDPI) Reference](https://msdn.microsoft.com/library/windows/hardware/dn931858).
+The PDPI allows NIC drivers to expose their high-performance send and receive functionality to the Windows OS. The functions implemented are a subset of the complete MiniPort functionality and are generic to all NICs that implement PD. For reference documentation for PDPI, see [PacketDirect Provider Interface (PDPI) Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
 
 **PacketDirect Client Interface (PDCI)**
 
@@ -50,7 +50,7 @@ The PDCI allows first-party Windows services/applications (e.g., Load-balancer, 
 ## Related topics
 
 
-[PacketDirect Provider Interface (PDPI) Reference](https://msdn.microsoft.com/library/windows/hardware/dn931858)
+[PacketDirect Provider Interface (PDPI) Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
  
 

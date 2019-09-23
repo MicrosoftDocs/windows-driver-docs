@@ -32,26 +32,26 @@ Drivers are updated whenever one of the following occurs:
 
 -   Installation software for a device is run.
 
--   Starting with Windows Vista, you can run the [PnPUtil](https://msdn.microsoft.com/library/windows/hardware/ff550419) tool from an elevated command prompt to install or update the [driver package](driver-packages.md) for the device.
+-   Starting with Windows Vista, you can run the [PnPUtil](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil) tool from an elevated command prompt to install or update the [driver package](driver-packages.md) for the device.
 
 Use the following guidelines when you write installation software and INF files that update existing drivers.
 
--   Installation software can call [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534), supplying an INF file and a hardware ID, to update drivers for devices that match the hardware ID.
+-   Installation software can call [**UpdateDriverForPlugAndPlayDevices**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa), supplying an INF file and a hardware ID, to update drivers for devices that match the hardware ID.
 
     Starting with Windows Vista, installation software can also call one of the following to update drivers:
 
-    -   [**DiInstallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff544717), which pre-installs a driver and then installs the driver on devices present in the system that the driver supports.
-    -   [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710), which installs a specified driver from the driver store on a specified device that is present in the system.
+    -   [**DiInstallDriver**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldrivera), which pre-installs a driver and then installs the driver on devices present in the system that the driver supports.
+    -   [**DiInstallDevice**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldevice), which installs a specified driver from the driver store on a specified device that is present in the system.
 
     For more information, see [Writing a Device Installation Application](writing-a-device-installation-application.md).
 
--   When upgrading a driver, class installers and co-installers should not supply finish-install pages in response to [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://msdn.microsoft.com/library/windows/hardware/ff543702) unless absolutely necessary. If possible, obtain finish-install information from the settings of the previous installation.
+-   When upgrading a driver, class installers and co-installers should not supply finish-install pages in response to [**DIF_NEWDEVICEWIZARD_FINISHINSTALL**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-newdevicewizard-finishinstall) unless absolutely necessary. If possible, obtain finish-install information from the settings of the previous installation.
 
 -   To the extent possible, class installers and co-installers should avoid basing behavior on whether they are providing an initial installation or are updating drivers for an already-installed device.
 
--   Starting with Windows XP, the registry values **CoInstallers32** and **EnumPropPages32** are deleted before the delivery of [**DIF_REGISTER_COINSTALLERS**](https://msdn.microsoft.com/library/windows/hardware/ff543715). INF files for earlier operating system versions must explicitly either delete these values or perform a nonappending modify operation on them.
+-   Starting with Windows XP, the registry values **CoInstallers32** and **EnumPropPages32** are deleted before the delivery of [**DIF_REGISTER_COINSTALLERS**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-register-coinstallers). INF files for earlier operating system versions must explicitly either delete these values or perform a nonappending modify operation on them.
 
--   Starting with Windows XP, the registry values **UpperFilters** and **LowerFilters** are deleted before the delivery of [**DIF_INSTALLDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543692). INF files for earlier operating system versions must explicitly either delete these values or perform a nonappending modify operation on them.
+-   Starting with Windows XP, the registry values **UpperFilters** and **LowerFilters** are deleted before the delivery of [**DIF_INSTALLDEVICE**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-installdevice). INF files for earlier operating system versions must explicitly either delete these values or perform a nonappending modify operation on them.
 
 -   Do *not* use [**INF DelFiles directives**](inf-delfiles-directive.md) or [**INF RenFiles directives**](inf-renfiles-directive.md) when updating drivers. Windows cannot guarantee that a particular file is not being used by another device. (Class installers and co-installers can delete or rename files, *if* they can reliably determine that no devices are using the files.)
 

@@ -18,13 +18,13 @@ To discover the [device setup classes](device-setup-classes.md) that are install
 
 To safely discover the installed device setup classes, and to query and modify the properties of a setup class, follow these steps:
 
-1.  Use [**SetupDiBuildClassInfoList**](https://msdn.microsoft.com/library/windows/hardware/ff550909) or [**SetupDiBuildClassInfoListEx**](https://msdn.microsoft.com/library/windows/hardware/ff550911) to retrieve the set of device setup classes that are currently installed on the system.
+1.  Use [**SetupDiBuildClassInfoList**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdibuildclassinfolist) or [**SetupDiBuildClassInfoListEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdibuildclassinfolistexa) to retrieve the set of device setup classes that are currently installed on the system.
 
-2.  Use [**SetupDiGetClassDescription**](https://msdn.microsoft.com/library/windows/hardware/ff551053) or [**SetupDiGetClassDescriptionEx**](https://msdn.microsoft.com/library/windows/hardware/ff551058) to retrieve the description of an installed setup class.
+2.  Use [**SetupDiGetClassDescription**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdescriptiona) or [**SetupDiGetClassDescriptionEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdescriptionexa) to retrieve the description of an installed setup class.
 
-3.  Use [**SetupDiGetClassRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551097) to query the setup class properties and [**SetupDiSetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552169) to set the setup class properties.
+3.  Use [**SetupDiGetClassRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassregistrypropertya) to query the setup class properties and [**SetupDiSetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) to set the setup class properties.
 
-4.  Use [**SetupDiOpenClassRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552065) or [**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067) to access the persistent registry storage for custom device setup class settings.
+4.  Use [**SetupDiOpenClassRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkey) or [**SetupDiOpenClassRegKeyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) to access the persistent registry storage for custom device setup class settings.
 
  
 

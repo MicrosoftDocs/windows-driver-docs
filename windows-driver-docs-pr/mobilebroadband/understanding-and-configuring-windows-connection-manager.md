@@ -2,7 +2,7 @@
 title: Understanding and configuring Windows Connection Manager
 description: Understanding and configuring Windows Connection Manager
 ms.assetid: 5ef0034f-5b30-4484-a11c-ed19931484a2
-ms.date: 01/07/2019
+ms.date: 05/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -13,10 +13,8 @@ ms.localizationpriority: medium
 
 Automatic connection management, introduced in Windows 8, makes connection decisions by looking at Ethernet, Wi-Fi, and mobile broadband interfaces. These decisions lead to automatic connect and disconnect actions on Wi-Fi and mobile broadband interfaces.
 
-**Note**  
-Windows responds to Ethernet connections but does not automatically manage Ethernet connections.
-
- 
+> [!NOTE]
+> Windows responds to Ethernet connections but does not automatically manage Ethernet connections.
 
 This topic describes how Windows automatically manages physical wireless connectivity, and does not consider these connections:
 
@@ -26,12 +24,17 @@ This topic describes how Windows automatically manages physical wireless connect
 
 ## <span id="Connection_management_policies"></span><span id="connection_management_policies"></span><span id="CONNECTION_MANAGEMENT_POLICIES"></span>Connection management policies
 
-
-Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](https://msdn.microsoft.com/library/windows/desktop/hh437602.aspx) API or Group Policy.
+Windows 8, Windows 8.1, and Windows 10 include a number of policies to control connection management. These policies are not exposed in the Windows user interface but can be configured by using the [WcmSetProperty](https://docs.microsoft.com/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) API or Group Policy.
 
 ### <span id="Minimize_simultaneous_connections"></span><span id="minimize_simultaneous_connections"></span><span id="MINIMIZE_SIMULTANEOUS_CONNECTIONS"></span>Minimize simultaneous connections
 
-This policy is configured using the **fMinimizeConnections** Group Policy. It is on by default for Windows 8, Windows 8.1, and Windows 10. If this policy is disabled, the behavior is similar to that for Windows 7 in which each interface connects to the most preferred network in range, regardless of the connectivity state of other interfaces.
+This policy is configured using the **fMinimizeConnections** Group Policy. It is on by default for Windows 8, Windows 8.1, and Windows 10.
+
+#### Versions of Windows before Windows 10, version 1809, build 17763.404
+
+In Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1809, build 17763.404, this policy is a boolean value that can be modified using either Group Policy or the [WcmSetProperty](https://docs.microsoft.com/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetproperty) API.
+
+If this policy is disabled, the behavior is similar to that for Windows 7 in which each interface connects to the most preferred network in range, regardless of the connectivity state of other interfaces.
 
 If this policy is enabled, Windows attempts to maintain the smallest number of concurrent connections that offer the best available level of connectivity. Windows maintains connectivity to the following networks:
 
@@ -44,6 +47,26 @@ If this policy is enabled, Windows attempts to maintain the smallest number of c
 -   The most preferred connection to the Active Directory domain, if the PC is joined to a domain
 
 All remaining networks are soft-disconnected, as described in the next section. This is also used to evaluate available networks that are not connected. Windows will not connect to a new network from which it would immediately soft-disconnect.
+
+#### Windows 10, version 1809, build 17763.404 and later
+
+In Windows 10, version 1809, build 17763.404 and later, this value is an enumeration that is only available through Group Policy.
+
+This policy setting determines if a computer can have multiple connections to the Internet, to a Windows domain, or to both. If multiple connections are allowed, the policy then determines how network traffic is routed.
+
+If this policy is set to **0**, a computer can have simultaneous connections to the Internet, to a Windows domain, or to both. Internet traffic can be routed over any connection, including a cellular connection or any metered network. This was previously the *Disabled* state for this policy setting in builds of Windows before Windows 10, version 1809, build 17663.404. This option was first available in Windows 8.
+
+If this policy is set to **1**, any new automatic Internet connection is blocked when the computer has at least one active Internet connection to a preferred type of network. The order of preference is as follows:
+
+1. Ethernet
+2. WLAN
+3. Cellular
+
+Ethernet is always preferred when connected. Users can still manually connect to any network. This was previously the *Enabled* state for this policy setting in builds of Windows before Windows 10, version 1809, build 17763.404. This option was first available in Windows 8.
+
+If this policy setting is set to **2**, the behavior is similar to when it it set to **1**. However, if a cellular data connection is available, that connection will always stay connected for services that require a cellular connection. When the user is connected to a WLAN or Ethernet connection, no Internet traffic is routed over the cellular connection. This option was first available in Windows 10, version 1703.
+
+If this policy setting is set to **3**, the behavior is similar to when it is set to **2**. However, if there is an Ethernet connection, Windows does not permit users to connect to a WLAN manually. A WLAN can only be connected (automatically or manually) when there is no Ethernet connection.
 
 ### <span id="Soft_disconnect"></span><span id="soft_disconnect"></span><span id="SOFT_DISCONNECT"></span>Soft disconnect
 
@@ -144,7 +167,7 @@ Wi-Fi profiles created by Group Policy are at the top of the network list. The u
 
 ### <span id="Carrier-provisioning_metadata"></span><span id="carrier-provisioning_metadata"></span><span id="CARRIER-PROVISIONING_METADATA"></span>Carrier-provisioning metadata
 
-Mobile broadband and Wi-Fi hotspot operators provide Windows with a series of mobile broadband and Wi-Fi profiles by using the [**ProvisioningAgent**](https://msdn.microsoft.com/library/windows/apps/br207397) or [**msProvisionNetworks**](https://msdn.microsoft.com/library/hh848316) APIs.
+Mobile broadband and Wi-Fi hotspot operators provide Windows with a series of mobile broadband and Wi-Fi profiles by using the [**ProvisioningAgent**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent) or [**msProvisionNetworks**](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) APIs.
 
 When initially provisioned, the operator-created profiles are added to the top (Wi-Fi only) or bottom (if mobile broadband is included) of the existing network list. You cannot influence the position of the networks they provision in the network list. However, you can define the relative order of their networks in the network list.
 
@@ -172,17 +195,17 @@ To remove a profile from the preferred network list while it is in range, right-
 
 An application may create new profiles in the network list using the appropriate media-specific API:
 
--   For Wi-Fi networks, use the [**WlanSetProfile**](https://msdn.microsoft.com/library/windows/desktop/ms706795) function.
+-   For Wi-Fi networks, use the [**WlanSetProfile**](https://docs.microsoft.com/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofile) function.
 
--   For mobile broadband networks, use the [**IMbnConnectionProfileManager::CreateConnectionProfile**](https://msdn.microsoft.com/library/windows/desktop/dd430393) method.
+-   For mobile broadband networks, use the [**IMbnConnectionProfileManager::CreateConnectionProfile**](https://docs.microsoft.com/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) method.
 
-To modify the order of the network list, use the [**WcmSetProfileList**](https://msdn.microsoft.com/library/windows/desktop/hh437598) function. We do not recommend using the [**WlanSetProfileList**](https://msdn.microsoft.com/library/windows/desktop/ms706805) function, as it may disturb the position of mobile broadband profiles in the network list in unintended ways.
+To modify the order of the network list, use the [**WcmSetProfileList**](https://docs.microsoft.com/windows/desktop/api/wcmapi/nf-wcmapi-wcmsetprofilelist) function. We do not recommend using the [**WlanSetProfileList**](https://docs.microsoft.com/windows/desktop/api/wlanapi/nf-wlanapi-wlansetprofilelist) function, as it may disturb the position of mobile broadband profiles in the network list in unintended ways.
 
 To delete profiles from the network list, use the appropriate media-specific API:
 
--   For Wi-Fi networks, use the [**WlanDeleteProfile**](https://msdn.microsoft.com/library/windows/desktop/ms706617) function.
+-   For Wi-Fi networks, use the [**WlanDeleteProfile**](https://docs.microsoft.com/windows/desktop/api/wlanapi/nf-wlanapi-wlandeleteprofile) function.
 
--   For mobile broadband networks, use the [**IMbnConnectionProfile::Delete**](https://msdn.microsoft.com/library/windows/desktop/dd430396) method.
+-   For mobile broadband networks, use the [**IMbnConnectionProfile::Delete**](https://docs.microsoft.com/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofile-delete) method.
 
 ### <span id="Command-line"></span><span id="command-line"></span><span id="COMMAND-LINE"></span>Command-line
 

@@ -14,8 +14,8 @@ The Windows Server [Hardware Certification Program](https://docs.microsoft.com/
 
 1.  Before running the Code Analysis tools, be sure that you can build and link your driver using the latest Windows Driver Kit (WDK).
 2.  For the Driver Solution, make sure that you have selected a Release configuration as the Solution Configuration and x64 as the Solution Platform.
-3.  Run [Static Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552808). For information about creating the log file, see [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md) and [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454281).
-4.  Run the Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for Drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454219). For more information about code analysis, see [Analyzing C/C++ Code Quality by Using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836).
+3.  Run [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier). For information about creating the log file, see [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md) and [Using Static Driver Verifier to find defects in drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers).
+4.  Run the Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/how-to-run-code-analysis-for-drivers). For more information about code analysis, see [Analyzing C/C++ Code Quality by Using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836).
 5.  Create the Driver Verification Log. From the **Driver** menu, click **Create Driver Verification Log...**.
 6.  Verify that both the Code Analysis Log and the Static Driver Verifier Log files are detected. Click **Create**.
 
@@ -49,8 +49,8 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=
 * [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md)
 * [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Analyzing Driver Quality by Using Code Analysis Tools](analyzing-driver-quality-by-using-code-analysis-tools.md)
-* [How to run Code Analysis for drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454219)
-* [Using Static Driver Verifier to find defects in drivers](https://msdn.microsoft.com/Library/Windows/Hardware/Hh454281)
+* [How to run Code Analysis for drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/how-to-run-code-analysis-for-drivers)
+* [Using Static Driver Verifier to find defects in drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers)
  
 
  

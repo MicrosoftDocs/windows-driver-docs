@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 AVStream is a Microsoft-provided multimedia class driver that supports video-only streaming and integrated audio/video streaming. Microsoft provides AVStream as part of the operating system, in the export driver *Ks.sys*. Hardware vendors write minidrivers that run under *Ks.sys*.
 
-The preferred class driver for audio drivers is the Microsoft-provided audio [port class](https://msdn.microsoft.com/library/windows/hardware/ff536829) driver. Audio vendors should write minidrivers that run under *Portcls.sys*.
+The preferred class driver for audio drivers is the Microsoft-provided audio [port class](https://docs.microsoft.com/windows-hardware/drivers/audio/introduction-to-port-class) driver. Audio vendors should write minidrivers that run under *Portcls.sys*.
 
-Microsoft supports the [stream class](https://msdn.microsoft.com/library/windows/hardware/ff568275) driver only for existing minidrivers.
+Microsoft supports the [stream class](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index) driver only for existing minidrivers.
 
 AVStream drivers build on Microsoft Windows XP, Microsoft Windows Server 2003, or any platform Windows 98 Gold or later version that has DirectX 8.0 or later version installed.
 

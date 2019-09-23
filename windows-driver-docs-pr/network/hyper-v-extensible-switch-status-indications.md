@@ -14,7 +14,7 @@ This section describes the following NDIS status indications that can be issued 
 -   [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](ndis-status-switch-nic-status.md)
 -   [**NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF**](ndis-status-switch-port-remove-vf.md)
 
-For more information on how extensions issue or handle extensible switch extension status indications, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](https://msdn.microsoft.com/library/windows/hardware/hh598165).
+For more information on how extensions issue or handle extensible switch extension status indications, see [Hyper-V Extensible Switch Control Path for NDIS Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-control-path-for-ndis-status-indications).
 
  
 

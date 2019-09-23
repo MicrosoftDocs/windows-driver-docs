@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following table lists the required and optional MOF property qualifiers that can be used to define items in a WMI data or event block.
 
-The following are standard MOF qualifiers: **key**, **read**, **write**, **ValueMap**, and **Values**. For more information about these and other standard MOF qualifiers, see [MOF Data Types](https://msdn.microsoft.com/library/aa392392).
+The following are standard MOF qualifiers: **key**, **read**, **write**, **ValueMap**, and **Values**. For more information about these and other standard MOF qualifiers, see [MOF Data Types](https://docs.microsoft.com/windows/desktop/WmiSdk/mof-data-types).
 
 <table>
 <colgroup>

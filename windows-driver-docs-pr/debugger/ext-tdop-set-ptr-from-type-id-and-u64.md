@@ -24,10 +24,10 @@ The EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 sub-operation of the [**DEBUG\
 Set to EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 for this sub-operation.
 
 <span id="Flags"></span><span id="flags"></span><span id="FLAGS"></span>**Flags**  
-Specifies the bit flags that describe the target's memory in which the value of the typed data resides. See [**EXT\_TYPED\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff545306) for details of these flags.
+Specifies the bit flags that describe the target's memory in which the value of the typed data resides. See [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data) for details of these flags.
 
 <span id="InData"></span><span id="indata"></span><span id="INDATA"></span>**InData**  
-Specifies the type and memory location. This instance of the [**DEBUG\_TYPED\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff541706) structure can be manually created and populated with the required members. The following members are used:
+Specifies the type and memory location. This instance of the [**DEBUG\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_debug_typed_data) structure can be manually created and populated with the required members. The following members are used:
 
 <span id="ModBase"></span><span id="modbase"></span><span id="MODBASE"></span>**ModBase**  
 Specifies the location in the target's virtual memory of the base address of the module that contains the type.
@@ -47,18 +47,18 @@ Receives the status code returned by this sub-operation. This is the same as the
 Remarks
 -------
 
-EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 is a value in the [**EXT\_TDOP**](https://msdn.microsoft.com/library/windows/hardware/ff544529) enumeration.
+EXT\_TDOP\_SET\_PTR\_FROM\_TYPE\_ID\_AND\_U64 is a value in the [**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 
-The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff545306) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
+The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
 
 ## <span id="see_also"></span>See also
 
 
 [**DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI**](debug-request-ext-typed-data-ansi.md)
 
-[**EXT\_TDOP**](https://msdn.microsoft.com/library/windows/hardware/ff544529)
+[**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ne-wdbgexts-_ext_tdop)
 
-[**EXT\_TYPED\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff545306)
+[**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/ns-wdbgexts-_ext_typed_data)
 
 [**Request**](request.md)
 

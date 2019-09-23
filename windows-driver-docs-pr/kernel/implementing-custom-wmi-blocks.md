@@ -41,13 +41,13 @@ To improve performance and ease of use of custom WMI data blocks, consider the f
 
 -   Limit event blocks to a maximum size of 1K bytes.
 
-    Event items should be defined as small data types, because there is a registry-defined size limit (initially, 1K) for the entire [**WNODE\_EVENT\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff566373) structure that contains the generated event. For large notifications, a driver can send a [**WNODE\_EVENT\_REFERENCE**](https://msdn.microsoft.com/library/windows/hardware/ff566374) structure that specifies a single instance of a data block, which WMI then queries to obtain the actual event. However, this increases the time lag between the occurrence of the event and the notification.
+    Event items should be defined as small data types, because there is a registry-defined size limit (initially, 1K) for the entire [**WNODE\_EVENT\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_event_item) structure that contains the generated event. For large notifications, a driver can send a [**WNODE\_EVENT\_REFERENCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_event_reference) structure that specifies a single instance of a data block, which WMI then queries to obtain the actual event. However, this increases the time lag between the occurrence of the event and the notification.
 
 -   Place fixed-size data items at the beginning of a data block, followed by any variable-size data items.
 
     For example, a data block that has three DWORD data items and one variable-length string should put the three DWORDs first, followed by the string. Placing fixed-size data items at the beginning of a block permits WMI clients to extract them more easily.
 
--   Consider which types of system users you'd like to access your driver's data blocks. The system provides a default security descriptor for all WMI class GUIDs. If necessary, you can provide alternate security descriptors within the device's INF file. For more information, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212).
+-   Consider which types of system users you'd like to access your driver's data blocks. The system provides a default security descriptor for all WMI class GUIDs. If necessary, you can provide alternate security descriptors within the device's INF file. For more information, see [Creating Secure Device Installations](https://docs.microsoft.com/windows-hardware/drivers/install/creating-secure-device-installations).
 
 WMI does not support versioning, so a driver writer must define a new MOF class and generate a new GUID to revise an existing custom block.
 

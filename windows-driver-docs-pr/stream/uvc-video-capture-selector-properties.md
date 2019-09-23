@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # UVC Video Capture Selector Properties
 
 
-The following table describes the properties that are part of the [PROPSETID\_VIDCAP\_SELECTOR](https://msdn.microsoft.com/library/windows/hardware/ff567810) property set.
+The following table describes the properties that are part of the [PROPSETID\_VIDCAP\_SELECTOR](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-selector) property set.
 
 <table>
 <colgroup>
@@ -28,11 +28,11 @@ The following table describes the properties that are part of the [PROPSETID\_VI
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565221" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_SOURCE_NODE_ID&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565221)"><strong>KSPROPERTY_SELECTOR_SOURCE_NODE_ID</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-selector-source-node-id" data-raw-source="[&lt;strong&gt;KSPROPERTY_SELECTOR_SOURCE_NODE_ID&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-selector-source-node-id)"><strong>KSPROPERTY_SELECTOR_SOURCE_NODE_ID</strong></a></p></td>
 <td><p>Specifies the source pin identifier for a particular node.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565191" data-raw-source="[&lt;strong&gt;KSPROPERTY_NUM_SOURCES&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565191)"><strong>KSPROPERTY_NUM_SOURCES</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-num-sources" data-raw-source="[&lt;strong&gt;KSPROPERTY_NUM_SOURCES&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-num-sources)"><strong>KSPROPERTY_NUM_SOURCES</strong></a></p></td>
 <td><p>Specifies the number of source pins present on the selector unit.</p></td>
 </tr>
 </tbody>

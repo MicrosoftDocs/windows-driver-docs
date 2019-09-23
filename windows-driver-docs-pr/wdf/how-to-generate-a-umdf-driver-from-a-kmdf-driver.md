@@ -41,14 +41,14 @@ This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver
 
 4.  Update the source code to either remove or conditionally compile (using the **\_KERNEL\_MODE** macro) any functionality that is not supported in the target driver model. For example:
 
-    -   If your driver uses WPP tracing, update the [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) macro. This macro takes different parameters in user mode and kernel mode.
+    -   If your driver uses WPP tracing, update the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro. This macro takes different parameters in user mode and kernel mode.
         ```cpp
         WPP_INIT_TRACING ( DriverObject, RegistryPath ); // KMDF
         WPP_INIT_TRACING ( “<MyDriverNameString>” ); // UMDF
         ```
 
-    -   If you are converting a KMDF driver that calls WDM routines such as [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520), replace these with the corresponding WDF methods, such as [**WdfMemoryCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548706). Similarly, if you are converting a UMDF driver that calls user-mode functions, replace these with equivalent kernel-mode routines.
-    -   Some methods are supported only in KMDF, while others are supported only in UMDF. For a list of all Windows Driver Frameworks (WDF) methods and their framework applicability, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
+    -   If you are converting a KMDF driver that calls WDM routines such as [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag), replace these with the corresponding WDF methods, such as [**WdfMemoryCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycreate). Similarly, if you are converting a UMDF driver that calls user-mode functions, replace these with equivalent kernel-mode routines.
+    -   Some methods are supported only in KMDF, while others are supported only in UMDF. For a list of all Windows Driver Frameworks (WDF) methods and their framework applicability, see [Summary of WDF Callbacks and Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf/).
 
  
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_IMAGE
 
 
-The GUID_DEVINTERFACE_IMAGE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [WIA devices and Still Image (STI) devices](https://msdn.microsoft.com/library/windows/hardware/ff542729), including digital cameras and scanners.
+The GUID_DEVINTERFACE_IMAGE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [WIA devices and Still Image (STI) devices](https://docs.microsoft.com/windows-hardware/drivers/image/index), including digital cameras and scanners.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 The system-supplied kernel-mode drivers for WIA devices register an instance of this device interface class to notify the operating system and applications of the presence of WIA devices.
 
-For information about WIA drivers and STI drivers, see [Windows Image Acquisition Drivers](https://msdn.microsoft.com/library/windows/hardware/ff553346).
+For information about WIA drivers and STI drivers, see [Windows Image Acquisition Drivers](https://docs.microsoft.com/windows-hardware/drivers/image/windows-image-acquisition-drivers).
 
 Requirements
 ------------

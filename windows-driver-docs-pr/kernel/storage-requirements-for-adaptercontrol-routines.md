@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 
 
 
-If it has an [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine, a driver must provide resident storage for the following:
+If it has an [*AdapterControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_control) routine, a driver must provide resident storage for the following:
 
 -   Context information to be used in its DMA operations
 
--   An adapter object pointer returned by [**IoGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff549220)
+-   An adapter object pointer returned by [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdmaadapter)
 
 -   A ULONG-type variable to hold the system-determined maximum *NumberOfMapRegisters* available for any given DMA transfer request
 

@@ -32,7 +32,7 @@ DEBUG_ALL
 
 The combined set of enabled debugging features is represented by a value called the *debugging level*. You can calculate this value by taking the bitwise OR of the constants that correspond to the features you want to enable.
 
-There are two ways to set the debugging level. First, you can use the smart card driver test program, *Scdrvtst*, that comes with the Windows Driver Kit (WDK). The second is to use the [**SmartcardSetDebugLevel**](https://msdn.microsoft.com/library/windows/hardware/ff548960) smart card driver library routine.
+There are two ways to set the debugging level. First, you can use the smart card driver test program, *Scdrvtst*, that comes with the Windows Driver Kit (WDK). The second is to use the [**SmartcardSetDebugLevel**](https://docs.microsoft.com/previous-versions/ff548960(v=vs.85)) smart card driver library routine.
 
 In both cases, you must pass the value for the debugging level you want to the program or routine that sets the debugging level. For instance, to set the debugging level from the driver by using a smart card library routine, make the following call:
 
@@ -63,7 +63,7 @@ This routine can also be used to write messages to a remote debugger in the foll
 
 While developing a driver, use the checked version of the smart card driver library and set the debugging level to the maximum by using **SmartcardSetDebugLevel**(DEBUG\_ALL) in your *DriverEntry* routine.
 
-For information about setting up a remote debugging session, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
+For information about setting up a remote debugging session, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
 
  
 

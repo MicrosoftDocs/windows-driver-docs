@@ -9,11 +9,10 @@ ms.localizationpriority: medium
 
 # Introduction to WDM
 
+> [!NOTE]
+> This section contains guidance on WDM drivers, which is no longer the recommended driver model. For guidance on choosing a driver model, see [Choosing a driver model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
 To allow driver developers to write device drivers that are source-code compatible across all Microsoft Windows operating systems, the *Windows Driver Model* (WDM) was introduced. Kernel-mode drivers that follow WDM rules are called *WDM drivers*.
-
-
-
 
 All WDM drivers must do the following:
 
@@ -29,26 +28,11 @@ All WDM drivers must do the following:
 
 -   Support [Windows Management Instrumentation](implementing-wmi.md) (WMI).
 
-### Does the WDK Cover Non-WDM Drivers?
+### Should You Write a WDM Driver?
 
-The Windows Driver Kit (WDK) emphasizes the development of WDM drivers for kernel mode, but the WDK also includes information that is pertinent to kernel-mode drivers that do not follow WDM rules. This information allows you to maintain existing non-WDM drivers and to write new drivers that interface with these existing drivers.
+If you are writing a new driver, consider using the [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/design-guide) (KMDF). KMDF provides interfaces that are simpler to use than WDM interfaces.
 
-### Should You Always Write a WDM Driver?
-
-If you are writing new kernel-mode drivers, they should be WDM drivers, *unless* you are writing a driver that will be inserted into a stack of non-WDM drivers. Please read the documentation for device type-specific Microsoft-supplied drivers to determine how new drivers must interface with Microsoft-supplied drivers. For more device type-specific information, see [Device and Driver Technologies](https://msdn.microsoft.com/library/windows/hardware/ff557557).)
-
-**Note**  All new driver stacks should consist of WDM drivers.
-
- 
-
-There are cross-platform issues to consider, whether you are developing WDM or non-WDM drivers. For more information, see [Writing Drivers for Different Versions of Windows](https://msdn.microsoft.com/library/windows/hardware/ff554887).
-
-If you are writing a new WDM driver, you should also consider using the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/dn265580) (KMDF). KMDF provides interfaces that are simpler to use than WDM interfaces.
-
- 
-
- 
-
+Do not write a WDM driver if the driver will be inserted into a stack of non-WDM drivers. Please read the documentation for device type-specific Microsoft-supplied drivers to determine how new drivers must interface with Microsoft-supplied drivers. For more device type-specific information, see [Device and Driver Technologies](https://docs.microsoft.com/windows-hardware/drivers/).)
 
 
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_MAC\_STATISTICS
 
 
-WDI\_TLV\_MAC\_STATISTICS is a TLV that contains per-peer MAC statistics for [OID\_WDI\_GET\_STATISTICS](https://msdn.microsoft.com/library/windows/hardware/dn925850).
+WDI\_TLV\_MAC\_STATISTICS is a TLV that contains per-peer MAC statistics for [OID\_WDI\_GET\_STATISTICS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-get-statistics).
 
 ## TLV Type
 
@@ -39,7 +39,7 @@ The sum (in bytes) of the sizes of all contained elements.
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/dn926071" data-raw-source="[&lt;strong&gt;WDI_MAC_ADDRESS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/dn926071)"><strong>WDI_MAC_ADDRESS</strong></a></td>
+<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address" data-raw-source="[&lt;strong&gt;WDI_MAC_ADDRESS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address)"><strong>WDI_MAC_ADDRESS</strong></a></td>
 <td>The MAC address of the peer that these counts are set for. For multicast and broadcast packets, this value is set to FF-FF-FF-FF-FF-FF-FF.</td>
 </tr>
 <tr class="even">
@@ -53,7 +53,7 @@ The sum (in bytes) of the sizes of all contained elements.
 <tr class="even">
 <td>UINT64</td>
 <td>The number of unencrypted received MPDU frames that the MAC layer discarded when the IEEE 802.11 dot11ExcludeUnencrypted management information base (MIB) object is enabled.
-<p>For more information about this MIB object, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff569365" data-raw-source="[OID_DOT11_EXCLUDE_UNENCRYPTED](https://msdn.microsoft.com/library/windows/hardware/ff569365)">OID_DOT11_EXCLUDE_UNENCRYPTED</a>. MPDU frames are considered unencrypted when the Protected Frame subfield of the Frame Control field in the IEEE 802.11 MAC header is set to zero.</p></td>
+<p>For more information about this MIB object, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-dot11-exclude-unencrypted" data-raw-source="[OID_DOT11_EXCLUDE_UNENCRYPTED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-dot11-exclude-unencrypted)">OID_DOT11_EXCLUDE_UNENCRYPTED</a>. MPDU frames are considered unencrypted when the Protected Frame subfield of the Frame Control field in the IEEE 802.11 MAC header is set to zero.</p></td>
 </tr>
 <tr class="odd">
 <td>UINT64</td>

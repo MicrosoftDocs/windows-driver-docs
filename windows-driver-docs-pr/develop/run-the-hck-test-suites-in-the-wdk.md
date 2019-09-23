@@ -18,7 +18,7 @@ You can run the HCK test from a Command Prompt window or from Visual Studio. In 
 ## <span id="run_hck_from_vs"></span><span id="RUN_HCK_FROM_VS"></span>Running the HCK Test Suites on a test computer using Visual Studio
 
 
-If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/Library/Windows/Hardware/Dn745909). After you have configured a test computer, the name of the test computer appears in the toolbar. Be sure you have select the test computer that you have configured for device you are testing with the HCK Test Suite.
+If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1). After you have configured a test computer, the name of the test computer appears in the toolbar. Be sure you have select the test computer that you have configured for device you are testing with the HCK Test Suite.
 
 Prepare the test computer as needed, by installing the device and driver and any additional requirements for test topology (see the HCK test prerequisites for the device you are testing). In place of the HCK Studio and HCK controller, you run the tests using Visual Studio and WDK 8.1.
 
@@ -297,24 +297,12 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 </tbody>
 </table>
 
- 
-
 ## <span id="related_topics"></span>Related topics
-
 
 * [How to test a driver a runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376)
+* [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
 * [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)
- 
-
- 
-
-
-
-
-
-

@@ -15,7 +15,11 @@ ms.localizationpriority: medium
 
 # !drivers
 
-In Windows XP and later versions of Windows, the **!drivers** extension is obsolete. To display information about loaded drivers and other modules, use the [**lm**](lm--list-loaded-modules-.md) command. The command lm t n displays information in a format very similar to the old **!drivers** extension. However, this command will not display the memory usage of the drivers as the **!drivers** extension did. It will only display the drivers' start and end addresses, image names, and timestamps. The [**!vm**](-vm.md) and [**!memusage**](-memusage.md) extensions can be used to display memory usage statistics.
+>[!NOTE] 
+> In Windows XP and later versions of Windows, the **!drivers** extension is obsolete. To display information about loaded drivers and other modules, use the [**lm**](lm--list-loaded-modules-.md) command. 
+>
+
+The command lm t n displays information in a format very similar to the old **!drivers** extension. However, this command will not display the memory usage of the drivers as the **!drivers** extension did. It will only display the drivers' start and end addresses, image names, and timestamps. The [**!vm**](-vm.md) and [**!memusage**](-memusage.md) extensions can be used to display memory usage statistics.
 
 ```dbgcmd
 !drivers [Flags]
@@ -59,7 +63,7 @@ Causes the display to be a much longer and more detailed list of the driver imag
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about drivers and their memory use, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
+See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about drivers and their memory use, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 Remarks
 -------

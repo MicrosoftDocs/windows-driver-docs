@@ -11,15 +11,15 @@ This topic provides guidance for handling driver dispatch routines.
 
 ## AddDevice routine for AVStream minidrivers
 
-Most AVStream minidrivers do not supply their own *AddDevice* routines. Instead, they use [**KsAddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksadddevice), the default *AddDevice* handler installed by [**KsInitializeDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562683). Minidrivers that nonetheless wish to provide their own *AddDevice* handler should follow the following guidelines.
+Most AVStream minidrivers do not supply their own *AddDevice* routines. Instead, they use [**KsAddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksadddevice), the default *AddDevice* handler installed by [**KsInitializeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedriver). Minidrivers that nonetheless wish to provide their own *AddDevice* handler should follow the following guidelines.
 
-If the driver calls [**KsInitializeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedriver) during *DriverEntry* and later replaces the *AddDevice* handler, the minidriver can call [**KsAddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560927) from within this routine, to perform the default add handling.
+If the driver calls [**KsInitializeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedriver) during *DriverEntry* and later replaces the *AddDevice* handler, the minidriver can call [**KsAddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksadddevice) from within this routine, to perform the default add handling.
 
-The minidriver may call [**KsCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatedevice) from this routine, passing in a nominally optional [**KSDEVICE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff561691). If [**KsInitializeDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562683) is not called, this is the highest level call that will create an AVStream device described by a descriptor.
+The minidriver may call [**KsCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatedevice) from this routine, passing in a nominally optional [**KSDEVICE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_descriptor). If [**KsInitializeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedriver) is not called, this is the highest level call that will create an AVStream device described by a descriptor.
 
 If the minidriver creates its own FDO and manually attaches itself to the device stack, it should call [**KsInitializeDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedevice) to create the AVStream device.
 
-If the driver does not provide a [**KSDEVICE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_descriptor) and yet still creates a device, AVStream creates a default AVStream device. This device contains no filter factories and never dispatches to the minidriver. The minidriver can still instantiate [**KSFILTERFACTORY**](https://msdn.microsoft.com/library/windows/hardware/ff562530) structures on the device by calling [**KsCreateFilterFactory**](https://msdn.microsoft.com/library/windows/hardware/ff561650).
+If the driver does not provide a [**KSDEVICE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_descriptor) and yet still creates a device, AVStream creates a default AVStream device. This device contains no filter factories and never dispatches to the minidriver. The minidriver can still instantiate [**KSFILTERFACTORY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksfilterfactory) structures on the device by calling [**KsCreateFilterFactory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatefilterfactory).
 
 To install your own *AddDevice* handler:
 
@@ -34,7 +34,7 @@ For more information, see the [DRIVER_INITIALIZE](https://docs.microsoft.com/win
 
 **DriverEntry** is the initial entry point for a stream class minidriver. This routine is required.
 
-Since [**StreamClassRegisterMinidriver**](https://msdn.microsoft.com/library/windows/hardware/ff568263) performs most of the required driver initialization, the primary task of a stream class minidriver's **DriverEntry** routine is to allocate and fill in a [**HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff559682) structure with driver-specific constants and entry points. The **DriverEntry** should then call **StreamClassRegisterMinidriver**.
+Since [**StreamClassRegisterMinidriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassregisteradapter) performs most of the required driver initialization, the primary task of a stream class minidriver's **DriverEntry** routine is to allocate and fill in a [**HW\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_initialization_data) structure with driver-specific constants and entry points. The **DriverEntry** should then call **StreamClassRegisterMinidriver**.
 
 For more information, see the [DRIVER_INITIALIZE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) callback function.
 
@@ -42,7 +42,7 @@ For more information, see the [DRIVER_INITIALIZE](https://docs.microsoft.com/win
 
 The *DriverEntry* function is the initial entry point into an AVStream minidriver.
 
-Each AVStream minidriver must have a function explicitly named *DriverEntry* in order to be loaded. *DriverEntry* is called directly by the I/O system. Usually, *DriverEntry* calls [**KsInitializeDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562683) and then returns the value returned by **KsInitializeDriver**.
+Each AVStream minidriver must have a function explicitly named *DriverEntry* in order to be loaded. *DriverEntry* is called directly by the I/O system. Usually, *DriverEntry* calls [**KsInitializeDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksinitializedriver) and then returns the value returned by **KsInitializeDriver**.
 
 For more information, see the [DRIVER_INITIALIZE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) callback function.
 
@@ -56,7 +56,7 @@ Note that this routine expects the KSQUEUE\_SPINLOCK\_IRP\_STORAGE(Irp) to point
 
 **KsCancelRoutine** can be used to do the preliminary list removal processing, without actually completing the IRP. If the Irp-&gt;IoStatus.Status is set to STATUS\_CANCELLED on entering this function, then the IRP will not be completed. Otherwise, the status will be set to STATUS\_CANCELLED and the IRP will be completed. This **KsCancelRoutine** can be used within a cancel routine to do the initial list and spin lock manipulation and return to the driver's completion routine to do specific processing and final IRP completion.
 
-For more information, see the [DRIVER_CANCEL](https://msdn.microsoft.com/library/windows/hardware/ff540742) routine.
+For more information, see the [DRIVER_CANCEL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_cancel) routine.
 
 ## KsDefaultDispatchPnp function
 
@@ -123,11 +123,11 @@ See also
 
 [DRIVER\_OBJECT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_driver_object)
 
-[DEVICE\_OBJECT](https://msdn.microsoft.com/library/windows/hardware/ff543147)
+[DEVICE\_OBJECT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object)
 
-[StreamClassRegisterMinidriver](https://msdn.microsoft.com/library/windows/hardware/ff568263)
+[StreamClassRegisterMinidriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclassregisteradapter)
 
-[HW\_INITIALIZATION\_DATA](https://msdn.microsoft.com/library/windows/hardware/ff559682)
+[HW\_INITIALIZATION\_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_initialization_data)
 
 [Writing a DriverEntry Routine](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-a-driverentry-routine)
 

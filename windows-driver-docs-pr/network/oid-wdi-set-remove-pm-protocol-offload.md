@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD
@@ -24,7 +25,7 @@ OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD removes the protocol offload specif
 
 | TLV                                                                                        | Multiple TLV instances allowed | Optional | Description          |
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------|
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/dn898037) |                                |          | Protocol offload ID. |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-pm-protocol-offload-remove) |                                |          | Protocol offload ID. |
 
  
 
@@ -32,6 +33,7 @@ OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD removes the protocol offload specif
 
 
 No additional parameters. The data in the header is sufficient.
+
 Requirements
 ------------
 

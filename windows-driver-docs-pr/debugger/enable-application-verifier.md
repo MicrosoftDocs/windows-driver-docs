@@ -44,13 +44,4 @@ The **Enable application verifier** flag enables system features that are used f
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-This flag enables only the most basic detection features. To test user-mode applications reliably, use Application Verifier (appverif.exe). For more information, see [Application Verifier](application-verifier.md).
-
- 
-
- 
-
-
-
-
-
+This flag enables only the most basic detection features. To test user-mode applications reliably, use Application Verifier (appverif.exe). For more information, see [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier).

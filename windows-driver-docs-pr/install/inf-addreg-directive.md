@@ -176,7 +176,7 @@ If an <em>add-registry-section</em>**.security** section is specified, the follo
 
 Do *not* specify ACE strings that grant write access to nonprivileged users.
 
-For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://msdn.microsoft.com/library/windows/desktop/aa379567). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
+For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 
@@ -235,16 +235,16 @@ Only the following values can be specified in an INF:
 #define FILE_DEVICE_SECURE_OPEN         0x00000100
 ```
 
-For a description of these values, see [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397).
+For a description of these values, see [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice).
 
 The characteristics values, which are specified by using a **DeviceCharacteristics** entry, are ORed with those specified in each call to **IoCreateDevice** that creates a device object on the device stack. The OR operation occurs after all device objects are added, but before the device is started.
 
 The *characteristics* value (including a value of zero) overrides any class-wide device characteristics that were specified in the associated class installer INF.
 
-For more information about device characteristics, see [Specifying Device Characteristics](https://msdn.microsoft.com/library/windows/hardware/ff563818).
+For more information about device characteristics, see [Specifying Device Characteristics](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-characteristics).
 
 <a href="" id="devicetype"></a>**DeviceType**  
-A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more information, see [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
+A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more information, see [Specifying Device Types](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-types).
 
 A class-installer INF should specify the device type that applies to all, or almost all, of the devices in the class. For example, if the devices in the class are of type FILE_DEVICE_CD_ROM, specify a *device-type* of 0x02. If a device INF specifies a value for **DeviceType**, it overrides the value set by the class installer, if any. If the class or device INF specifies a **DeviceType** value, the PnP manager applies that type to the *physical device object (PDO)* created by the device's bus driver.
 
@@ -264,7 +264,7 @@ An **UpperFilters** HKR **AddReg** entry specifies a PnP upper-filter driver. Th
 A **LowerFilters** HKR **AddReg** entry specifies a PnP lower-filter driver. This entry in a <em>DDInstall</em>**.HW section** defines one or more device-specific lower-filter drivers. In a **ClassInstall32** section, this entry defines one or more class-wide lower-filter drivers.
 
 <a href="" id="exclusive"></a>**Exclusive**  
-An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an *exclusive device*. Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563827).
+An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an *exclusive device*. Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-exclusive-access-to-device-objects).
 
 <a href="" id="enumproppages32"></a>**EnumPropPages32**  
 An **EnumPropPages32** HKR **AddReg** entry specifies the name of a dynamic-link library (*DLL*) file that is a device-specific property page provider. It also specifies the name of the **ExtensionPropSheetPageProc** callback function as implemented by the DLL. For more information about property pages and functions, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0.
@@ -274,7 +274,7 @@ An **EnumPropPages32** HKR **AddReg** entry specifies the name of a dynamic-link
  
 
 <a href="" id="locationinformationoverride"></a>**LocationInformationOverride**  
-(Windows XP and later versions of Windows) A **LocationInformationOverride** HKR **AddReg** entry can be used to specify a text string that describes a device's physical location. It overrides the **LocationInformation** string that the device's bus driver supplies in response to an [**IRP_MN_QUERY_DEVICE_TEXT**](https://msdn.microsoft.com/library/windows/hardware/ff551674) request.
+(Windows XP and later versions of Windows) A **LocationInformationOverride** HKR **AddReg** entry can be used to specify a text string that describes a device's physical location. It overrides the **LocationInformation** string that the device's bus driver supplies in response to an [**IRP_MN_QUERY_DEVICE_TEXT**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-text) request.
 
 <a href="" id="resourcepickertags"></a>**ResourcePickerTags**  
 A **ResourcePickerTags** HKR **AddReg** entry specifies resource picker tags for a device.

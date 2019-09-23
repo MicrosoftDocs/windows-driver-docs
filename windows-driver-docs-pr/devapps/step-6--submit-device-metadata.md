@@ -55,7 +55,7 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
 
 6.  On the **Prepare bulk package for submission** page, click **Launch Signature Wizard** to start the **Digital Signature Wizard**, which is used to digitally sign your bulk submission package.
 
-For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx).
+For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
  
 

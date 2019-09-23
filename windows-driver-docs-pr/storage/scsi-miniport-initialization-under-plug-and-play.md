@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_scsi_miniport_initialization_under_plug_and_play_kg"></span><span id="DDK_SCSI_MINIPORT_INITIALIZATION_UNDER_PLUG_AND_PLAY_KG"></span>
 
 
-For Windows 2000 and later, a legacy miniport driver is initialized in exactly the same way as for Microsoft Windows NT 4.0. When a legacy miniport driver calls [**ScsiPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff564645), the port driver calls the miniport driver to locate and initialize its HBA. This is done either once for each HBA it finds (if the HBA is on an enumerable bus) or repeatedly until the miniport driver reports that it cannot find any more devices. Control then returns to the miniport driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff552654) routine, where the miniport driver can call **ScsiPortInitialize** again for a different type of HBA (for example, a different interface or a different vendor and product ID). All of the initialization calls are made within the context of the miniport driver's **DriverEntry** routine and are made in the order that **ScsiPortInitialize** was called. Initialization of legacy drivers occurs at system startup and at no other time.
+For Windows 2000 and later, a legacy miniport driver is initialized in exactly the same way as for Microsoft Windows NT 4.0. When a legacy miniport driver calls [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportinitialize), the port driver calls the miniport driver to locate and initialize its HBA. This is done either once for each HBA it finds (if the HBA is on an enumerable bus) or repeatedly until the miniport driver reports that it cannot find any more devices. Control then returns to the miniport driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) routine, where the miniport driver can call **ScsiPortInitialize** again for a different type of HBA (for example, a different interface or a different vendor and product ID). All of the initialization calls are made within the context of the miniport driver's **DriverEntry** routine and are made in the order that **ScsiPortInitialize** was called. Initialization of legacy drivers occurs at system startup and at no other time.
 
 In Plug and Play, the order of initialization cannot be preserved. When a miniport driver that is enabled for Plug and Play calls **ScsiPortInitialize**, the port driver stores the initialization data for future reference, then returns STATUS\_SUCCESS. This is done for each interface type that is listed in the miniport driver's **PnPInterface** registry key -- any interfaces *not* listed in that key are still initialized immediately.
 
@@ -28,7 +28,7 @@ By the time the Plug and Play manager reports a device, it has already allocated
 
 A miniport driver that has been started as a Plug and Play driver might be asked to detect devices that are on nonenumerable buses. This includes buses such as ISA, which require that the miniport driver issue commands on the bus to find its HBA. Devices located during such detection are recorded in the registry and initialized as Plug and Play devices the next time the system is started.
 
-For more information about Plug and Play, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
+For more information about Plug and Play, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
 
  
 

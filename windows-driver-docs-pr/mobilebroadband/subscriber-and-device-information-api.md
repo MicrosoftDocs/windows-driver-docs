@@ -27,7 +27,7 @@ The Subscriber and Device Information API provides the following subscriber and 
 
 -   **Firmware and hardware version** Firmware and hardware version.
 
-For more info about the Subscriber and Device Information API, see [**Windows.Networking.NetworkOperators namespace**](https://msdn.microsoft.com/library/windows/apps/br241148).
+For more info about the Subscriber and Device Information API, see [**Windows.Networking.NetworkOperators namespace**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators).
 
 ## <span id="related_topics"></span>Related topics
 

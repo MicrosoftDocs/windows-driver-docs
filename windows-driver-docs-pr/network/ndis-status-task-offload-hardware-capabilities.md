@@ -18,9 +18,9 @@ Remarks
 
 If an underlying NIC is added or deleted, the overall set of hardware capabilities that is associated with a miniport driver or MUX intermediate driver can change. For example, if a miniport driver issues the **NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES** status indication, specifying that it cannot support Large Send Offload (LSO), the NIC can no longer be configured to support LSO.
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure contains an [**NDIS\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566599) structure. This structure specifies the task offload hardware capabilities.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload) structure. This structure specifies the task offload hardware capabilities.
 
-For more information about task offload hardware capabilities, see [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569806).
+For more information about task offload hardware capabilities, see [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-hardware-capabilities).
 
 Requirements
 ------------
@@ -45,13 +45,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566599)
+[**NDIS\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload)
 
-[**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
 
 [**NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG**](ndis-status-task-offload-current-config.md)
 
-[OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569806)
+[OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-hardware-capabilities)
 
  
 

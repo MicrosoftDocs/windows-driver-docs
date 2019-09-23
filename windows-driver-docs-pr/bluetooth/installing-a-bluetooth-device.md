@@ -78,7 +78,7 @@ AdjustTokenPrivileges(procToken, FALSE, &tp, sizeof(TOKEN_PRIVILEGES), (PTOKEN_P
 
 A profile driver's INF file contains information about a Bluetooth device for client-side installation. For a server-side installation, the INF file specifies a device ID that corresponds to the service GUID created by the installation application. All Bluetooth devices are members of the **Bluetooth** class. The Bluetooth class installer ( *Bthci.dll*) assists in installing profile drivers.
 
-For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](https://msdn.microsoft.com/library/windows/hardware/ff549520) and [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
+For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
 
 ### <span id="plug_and_play_ids"></span><span id="PLUG_AND_PLAY_IDS"></span>**Plug and Play IDs**
 

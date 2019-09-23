@@ -28,7 +28,7 @@ Needs=PciSriovSupported.HW
 
 For more information about the *DDInstall* section, see [DDInstall Section in a Network INF File](ddinstall-section-in-a-network-inf-file.md).
 
-For more information about the *DDInstall*.HW section, see [**INF DDInstall.HW Section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).
+For more information about the *DDInstall*.HW section, see [**INF DDInstall.HW Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section).
 
  
 

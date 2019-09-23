@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 
     Asynchronous notification calls fail in operating system releases prior to Windows Vista.
 
--   Display simple dialog boxes by using the [**SplPromptUIInUsersSession**](https://msdn.microsoft.com/library/windows/hardware/ff562679) function.
+-   Display simple dialog boxes by using the [**SplPromptUIInUsersSession**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-splpromptuiinuserssession) function.
 
 -   Display complex user interface elements by writing a status monitor.
 

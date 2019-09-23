@@ -48,7 +48,7 @@ The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial configuratio
 <td><p>No</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567261" data-raw-source="[&lt;strong&gt;KS_AMVPDATAINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567261)"><strong>KS_AMVPDATAINFO</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_amvpdatainfo" data-raw-source="[&lt;strong&gt;KS_AMVPDATAINFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_amvpdatainfo)"><strong>KS_AMVPDATAINFO</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -78,7 +78,7 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
-[**KS\_AMVPDATAINFO**](https://msdn.microsoft.com/library/windows/hardware/ff567261)
+[**KS\_AMVPDATAINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_amvpdatainfo)
 
  
 

@@ -553,11 +553,11 @@ Options for rules that can be disabled (advanced).
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>default</strong> <em>ID</em></p></td>
-<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560187" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560187)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>disable</strong> <em>ID</em></p></td>
-<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560187" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff560187)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 </tbody>
 </table>

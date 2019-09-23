@@ -2,17 +2,18 @@
 title: What's new in driver development
 description: This section describes new features for driver development in Windows 10.
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
-ms.date: 10/02/2018
+ms.date: 06/04/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
-# <a name="top"></a>What's new in driver development 
-
+# <a name="top"></a>What's new in driver development
 
 This section provides information about the new features and updates to Windows driver development in Windows 10.
 
 The following is a list of new feature highlights for driver development in Windows 10.
 
+* [Windows 10, version 1903 WDK supports Visual Studio 2019](#wdk-supports-visual-studio-2019)
 * [Windows Hardware Dev Center dashboard](#windows-hardware-dev-center-dashboard)
 * [Open publishing](#open-publishing)
 * [Debugging Tools for Windows](#debugging-tools-for-windows)
@@ -25,39 +26,37 @@ The following is a list of new feature highlights for driver development in Wind
 * [System-Supplied Driver Interfaces](#system-supplied-driver-interfaces)
 * [WPP Software Tracing](#wpp-software-tracing)
 
-
 The following table shows the feature updates in Windows 10, by driver technology and version.
 
-
-|              Driver               | [1809](#whats-new-in-windows-10-version-1809-latest) |   [1803](#whats-new-in-windows-10-version-1803)    |       [1709](#whats-new-in-windows-10-version-1709)       |   [1703](#whats-new-in-windows-10-version-1703)    | [1607](#whats-new-in-windows-10-version-1607) |          [1507](#whats-new-in-windows-10-version-1507)          |
-|-----------------------------------|:----------------------------------------------------:|:--------------------------------------------------:|:---------------------------------------------------------:|:--------------------------------------------------:|:---------------------------------------------:|:---------------------------------------------------------------:|
-|               Audio               |       [![details](checkmark.png)](#audio-1809)       |      [![details](checkmark.png)](#audio-1803)      |         [![details](checkmark.png)](#audio-1709)          |      [![details](checkmark.png)](#audio-1703)      |      [![details](checkmark.png)](#audio)      |                   ![not available](minus.png)                   |
-|               ACPI                |             ![not available](minus.png)              |      [![details](checkmark.png)](#acpi-1803)       |          [![details](checkmark.png)](#acpi-1709)          |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|             Biometric             |             ![not available](minus.png)              |            ![not available](minus.png)             |       [![details](checkmark.png)](#biometric-1709)        |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|             Bluetooth             |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth)             |
-|          Buses and Ports          |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |          [![details](checkmark.png)](#buses-and-ports)          |
-|              Camera               |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
-|             Cellular              |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |             [![details](checkmark.png)](#cellular)              |
-|              Display              |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
-|          Driver security          |             ![not available](minus.png)              |    [![details](checkmark.png)](#security-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display)              |
-|      Hardware notifications       |             ![not available](minus.png)              |            ![not available](minus.png)             | [![details](checkmark.png)](#hardware-notifications-1709) |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|   Human Interface Device (HID)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |      [![details](checkmark.png)](#human-interface-device)       |
-|              Kernel               |      [![details](checkmark.png)](#kernel-1809)       |     [![details](checkmark.png)](#kernel-1803)      |         [![details](checkmark.png)](#kernel-1709)         |     [![details](checkmark.png)](#kernel-1703)      |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|             Location              |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |  [![details](checkmark.png)](#location-1607)  |           [![details](checkmark.png)](#location-1507)           |
-|         Mobile broadband          |  [![details](checkmark.png)](#mobilebroadband-1809)  | [![details](checkmark.png)](#mobilebroadband-1803) |    [![details](checkmark.png)](#mobilebroadband-1709)     | [![details](checkmark.png)](#mobilebroadband-1703) |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|     Near Field Communication      |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |     [![details](checkmark.png)](#near-field-communication)      |
-|            Networking             |    [![details](checkmark.png)](#networking-1809)     |   [![details](checkmark.png)](#networking-1803)    |       [![details](checkmark.png)](#networking-1709)       |   [![details](checkmark.png)](#networking-1703)    |          ![not available](minus.png)          |          [![details](checkmark.png)](#networking-1507)          |
-|                POS                |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |       [![details](checkmark.png)](#pos-1703)       |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|                PCI                |             ![not available](minus.png)              |       [![details](checkmark.png)](#pci-1803)       |          [![details](checkmark.png)](#pci-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|               Print               |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |   [![details](checkmark.png)](#print-1607)    |            [![details](checkmark.png)](#print-1507)             |
-|      Pulse Width Modulation       |             ![not available](minus.png)              |            ![not available](minus.png)             |          [![details](checkmark.png)](#pwm-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|              Sensors              |      [![details](checkmark.png)](#sensors-1809)      |     [![details](checkmark.png)](#sensors-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|            Smart Card             |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |            [![details](checkmark.png)](#smart-card)             |
-|              Storage              |             ![not available](minus.png)              |            ![not available](minus.png)             |        [![details](checkmark.png)](#storage-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#storage)              |
-| System-Supplied Driver Interfaces |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          | [![details](checkmark.png)](#system-supplied-driver-interfaces) |
-|                USB                |        [![details](checkmark.png)](#usb-1809)        |       [![details](checkmark.png)](#usb-1803)       |          [![details](checkmark.png)](#usb-1709)           |       [![details](checkmark.png)](#usb-1703)       |          ![not available](minus.png)          |                [![details](checkmark.png)](#usb)                |
-|               WI-FI               |       [![details](checkmark.png)](#wifi-1809)        |      [![details](checkmark.png)](#wifi-1803)       |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
-|               WLAN                |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |    [![details](checkmark.png)](#wlan-1607)    |             [![details](checkmark.png)](#wlan-1507)             |
+| Driver  |[1903](#whats-new-in-windows-10-version-1903-latest)| [1809](#whats-new-in-windows-10-version-1809) |   [1803](#whats-new-in-windows-10-version-1803)    | [1709](#whats-new-in-windows-10-version-1709) |  [1703](#whats-new-in-windows-10-version-1703)  | [1607](#whats-new-in-windows-10-version-1607) |  [1507](#whats-new-in-windows-10-version-1507)  |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Audio  |  [![details](checkmark.png)](#audio-1903) |      [![details](checkmark.png)](#audio-1809)       |      [![details](checkmark.png)](#audio-1803)      |         [![details](checkmark.png)](#audio-1709)          |      [![details](checkmark.png)](#audio-1703)      |      [![details](checkmark.png)](#audio-1607)      |                   ![not available](minus.png)                   |
+|               ACPI         |   ![not available](minus.png)    |             ![not available](minus.png)              |      [![details](checkmark.png)](#acpi-1803)       |          [![details](checkmark.png)](#acpi-1709)          |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Biometric    |     ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |       [![details](checkmark.png)](#biometric-1709)        |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Bluetooth     |   ![not available](minus.png)     |     [![details](checkmark.png)](#bluetooth-1809)     |    [![details](checkmark.png)](#bluetooth-1803)    |                ![not available](minus.png)                |    [![details](checkmark.png)](#bluetooth-1703)    |          ![not available](minus.png)          |             [![details](checkmark.png)](#bluetooth-1507)             |
+|          Buses and Ports          |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |          [![details](checkmark.png)](#buses-and-ports)          |
+|              Camera       |    [![details](checkmark.png)](#camera-1903)    |             ![not available](minus.png)              |     [![details](checkmark.png)](#camera-1803)      |                ![not available](minus.png)                |     [![details](checkmark.png)](#camera-1703)      |   [![details](checkmark.png)](#camera-1607)   |            [![details](checkmark.png)](#camera-1507)            |
+|             Cellular              |   ![not available](minus.png)   |       ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |             [![details](checkmark.png)](#cellular)              |
+|              Display          |  [![details](checkmark.png)](#display-1903) |      [![details](checkmark.png)](#display-1809)      |     [![details](checkmark.png)](#display-1803)     |        [![details](checkmark.png)](#display-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#display-1507)              |
+|          Driver security      |  ![not available](minus.png)  |             ![not available](minus.png)              |    [![details](checkmark.png)](#security-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |              ![not available](minus.png)              |
+|      Hardware notifications    | ![not available](minus.png)  |             ![not available](minus.png)              |            ![not available](minus.png)             | [![details](checkmark.png)](#hardware-notifications-1709) |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|   Human Interface Device (HID)    |    ![not available](minus.png)    |     ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |      [![details](checkmark.png)](#human-interface-device)       |
+|              Kernel          |   ![not available](minus.png)  |      [![details](checkmark.png)](#kernel-1809)       |     [![details](checkmark.png)](#kernel-1803)      |         [![details](checkmark.png)](#kernel-1709)         |     [![details](checkmark.png)](#kernel-1703)      |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|             Location       |   ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |  [![details](checkmark.png)](#location-1607)  |           [![details](checkmark.png)](#location-1507)           |
+|         Mobile broadband    |    [![details](checkmark.png)](#mobilebroadband-1903)  |  [![details](checkmark.png)](#mobilebroadband-1809)  | [![details](checkmark.png)](#mobilebroadband-1803) |    [![details](checkmark.png)](#mobilebroadband-1709)     | [![details](checkmark.png)](#mobilebroadband-1703) |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|     Near Field Communication      |    ![not available](minus.png)     |    ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |     [![details](checkmark.png)](#near-field-communication)      |
+|            Networking     |    [![details](checkmark.png)](#networking-1903)    |    [![details](checkmark.png)](#networking-1809)     |   [![details](checkmark.png)](#networking-1803)    |       [![details](checkmark.png)](#networking-1709)       |   [![details](checkmark.png)](#networking-1703)    |          ![not available](minus.png)          |          [![details](checkmark.png)](#networking-1507)          |
+|                POS          |   ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |       [![details](checkmark.png)](#pos-1703)       |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|                PCI        |    ![not available](minus.png)    |             ![not available](minus.png)              |       [![details](checkmark.png)](#pci-1803)       |          [![details](checkmark.png)](#pci-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|               Print     |      [![details](checkmark.png)](#print-1903)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |   [![details](checkmark.png)](#print-1607)    |            [![details](checkmark.png)](#print-1507)             |
+|      Pulse Width Modulation       |   ![not available](minus.png)  |        ![not available](minus.png)              |            ![not available](minus.png)             |          [![details](checkmark.png)](#pwm-1709)           |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|              Sensors        |  [![details](checkmark.png)](#sensors-1903)    |      [![details](checkmark.png)](#sensors-1809)      |     [![details](checkmark.png)](#sensors-1803)     |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|            Smart Card     |    ![not available](minus.png)    |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |            [![details](checkmark.png)](#smart-card)             |
+|              Storage         |    [![details](checkmark.png)](#storage-1903)  |             ![not available](minus.png)              |            ![not available](minus.png)             |        [![details](checkmark.png)](#storage-1709)         |            ![not available](minus.png)             |          ![not available](minus.png)          |              [![details](checkmark.png)](#storage-1507)              |
+| System-Supplied Driver Interfaces |   ![not available](minus.png)   |      ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          | [![details](checkmark.png)](#system-supplied-driver-interfaces) |
+|                USB                |  ![not available](minus.png) |     [![details](checkmark.png)](#usb-1809)        |       [![details](checkmark.png)](#usb-1803)       |          [![details](checkmark.png)](#usb-1709)           |       [![details](checkmark.png)](#usb-1703)       |          ![not available](minus.png)          |                [![details](checkmark.png)](#usb-1507)                |
+|               WI-FI           |  [![details](checkmark.png)](#wifi-1903)  |       [![details](checkmark.png)](#wifi-1809)        |      [![details](checkmark.png)](#wifi-1803)       |                ![not available](minus.png)                |            ![not available](minus.png)             |          ![not available](minus.png)          |                   ![not available](minus.png)                   |
+|               WLAN         |    ![not available](minus.png)   |             ![not available](minus.png)              |            ![not available](minus.png)             |                ![not available](minus.png)                |            ![not available](minus.png)             |    [![details](checkmark.png)](#wlan-1607)    |             [![details](checkmark.png)](#wlan-1507)             |
 
 ## What's new in driver development for Windows 10
 
@@ -65,9 +64,35 @@ The following table shows the feature updates in Windows 10, by driver technolog
 
 This section provides highlights of new features for driver development in Windows 10.
 
+### WDK supports Visual Studio 2019
+
+The Windows Driver Kit (WDK) for Windows 10, version 1903, has been updated to support Visual Studio 2019 as previously [announced](https://social.msdn.microsoft.com/Forums/en-US/b116571d-d5b2-4c1c-a43e-4b57171c8c41/windows-driver-kit-wdk-to-support-visual-studio-2019?forum=wdk). This release of the WDK is not compatible with Visual Studio 2017 however, developers can continue working with Visual Studio 2017 using the previous releases of the WDK, (releases 1709 thru 1809 found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/other-wdk-downloads)). To learn about what is new with Visual Studio 2019 please review the information [here](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019).
+
+The following are a few items of notable changes in Visual Studio 2019 that Windows driver developers will see.
+
+#### WDK GUI Driver Menu moved
+
+In Visual Studio 2019 the WDK Driver menu has been moved to live under the Extension menu as seen below.
+
+![screenshot of Visual Studio 2019 menu](images/vs-2019-driver-menu.png)
+
+The WDK Driver menu in Visual Studio 2017 is located in the top menu options as seen below.
+
+![screenshot of Visual Studio 2017 menu](images/vs-2017-menu.png)
+
+#### Driver Templates discoverability
+
+In Visual Studio 2019 the WDK Driver templates will be discoverable under Project Type, Drivers. The Driver Project Type will appear in the first official update release of Visual Studio 2019. Until then the Driver templates can be discovered by searching for them in the search menu.
+
+![screenshot of Visual Studio 2019 driver templates](images/vs-2019-driver-template.png)
+
+The WDK Driver templates were previously found in Visual Studio 2017 under New Projects> Visual C++> Windows Driver as seen below.
+
+![screenshot of Visual Studio 2017 driver templates](images/vs-2017-driver-template.png)
+
 ### Windows Hardware Dev Center dashboard
 
-In Windows 10, version 1809, we added new and improved functionality in the way of [Hardware APIs](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api) for developers, IHVs, and OEMs to track and submit driver packages to the Windows hardware dashboard. 
+In Windows 10, version 1809, we added new and improved functionality in the way of [Hardware APIs](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api) for developers, IHVs, and OEMs to track and submit driver packages to the Windows hardware dashboard.
 
 Use the shipping label REST APIs to create and manage shipping labels, the method by which you distribute your drivers.
 
@@ -77,7 +102,6 @@ Use the shipping label REST APIs to create and manage shipping labels, the metho
 Use the asynchronous custom report methods to access reporting data for driver errors and OEM hardware errors. You can define reporting templates based on your needs, set a schedule and you will have data delivered to you at regular intervals.
 
 * [Schedule custom reports for your driver failure details](https://docs.microsoft.com/windows-hardware/drivers/dashboard/schedule-custom-reports-for-driver-failure-details)
-
 
 ### Open publishing
 
@@ -93,24 +117,34 @@ For more details, see [CONTRIBUTING.md](https://github.com/MicrosoftDocs/windows
 
 This section describes the changes in the debugging tools for Windows.
 
-**Debugging in Windows 10, version 1809**
+#### Debugging in Windows 10, version 1903
+
+* New stop codes were added to allow better tracking on unique failure types in the Windows operating system. In addition a number of existing bug check topics were expanded and updated. For more information, see [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
+
+* Updates to KDNET topics to improve ease of use, for example in new [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically)
+
+* Updates to IP V6 KDNET support.
+
+* New [JavaScript Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) topic
+
+#### Debugging in Windows 10, version 1809
 
 * **New Debugger Data Model API** – A new object oriented debugger data model interface to support debugger automation is now available using the dbgmodel.h header. The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's dx expression evaluator as well as from JavaScript extensions or C++ extensions. Documentation will be available at: [Overview of the Debugger Data Model C++ Interface](debugger/data-model-cpp-overview.md)  and the [dbgmodel.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/) header reference topics.
 
-* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at https://aka.ms/windbgpreview that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details. 
+* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at [https://aka.ms/windbgpreview](https://aka.ms/windbgpreview) that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details.
 
-**Debugging in Windows 10, version 1803**
+#### Debugging in Windows 10, version 1803
 
 [WinDbg Preview Time Travel Debugging (TTD) hands on lab](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough) - This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue.
 
-**Debugging in Windows 10, version 1709**
+#### Debugging in Windows 10, version 1709
 
 The following is a list of new content sets for the Debugger in Windows 10, version 1709:
 
 * [Debugging Using WinDbg Preview](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-using-windbg-preview) - A preview into the next generation debugger.
 * [Time Travel Debugging - Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-overview) - Record and replay an execution of your process.
 
-**Debugging in Windows 10, version 1703**
+#### Debugging in Windows 10, version 1703
 
 The following table shows changes for the Debugger in Windows 10, version 1703:
 
@@ -120,11 +154,11 @@ The following table shows changes for the Debugger in Windows 10, version 1703:
 | 40 undocumented stop codes in the [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2) | Updates to the [Configuring tools.ini](https://docs.microsoft.com/windows-hardware/drivers/debugger/configuring-tools-ini) topic with additional options in the tools.ini file for the command line debuggers |
 | [!ioctldecode command](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ioctldecode) | New command capabilities in the [dx (Display Debugger Object Model Extension)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command |
 
-**Debugging in Windows 10, version 1607**
+#### Debugging in Windows 10, version 1607
 
 In Windows 10, version 1607, changes to the Debugger include a new topic about [Debugging a UWP app using WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-uwp-app-using-windbg), and updates to the 30 most-viewed developer bug check topics in [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
 
-**Debugging in Windows 10, version 1507**
+#### Debugging in Windows 10, version 1507
 
 The following is a list of new commands for the Windows Debugger in Windows 10, version 1507:
 
@@ -135,8 +169,8 @@ The following is a list of new commands for the Windows Debugger in Windows 10, 
 
 In Windows 10, version 1809, the following content was added:
 
-• [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
-• [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
+* [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
+* [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
 
 The following was updated:
 
@@ -147,39 +181,28 @@ The following was updated:
 
 Driver verifier includes new driver validation rules for the following technologies:
 
--   New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-audio-drivers)
--   New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
--   Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
--   Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
--   New [Nullcheck rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/nullcheck) *Added in version 1703*
+* New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-audio-drivers)
+* New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
+* Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
+* Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
+* New [Nullcheck rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/nullcheck) *Added in version 1703*
 
 ### Windows Driver Frameworks (WDF)
 
-**WDF in Windows 10, version 1809**
+#### WDF in Windows 10, version 1903
 
-In Windows 10, version 1809, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.27 and User-Mode Driver Framework version 2.27. For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
+In Windows 10, version 1903, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
+
+For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
 To see what was added in previous versions of WDF, see [KMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/kmdf-version-history) and [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history).
-The following topic is new for WDF:
-
-* [WdfDriverRetrieveDriverDataDirectoryString](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
-
-
-**WDF in Windows 10, version 1803**
-
-In Windows 10, version 1803, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.25 and User-Mode Driver Framework version 2.25. For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](wdf/index.md).
-
-To see what was added in previous versions of WDF, see [KMDF Version History](wdf/kmdf-version-history.md) and [UMDF Version History](wdf/umdf-version-history.md).
-
-The following topics are new for WDF:
-
-* [Building a WDF driver for multiple versions of Windows](wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md)
-* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ### Universal Windows drivers
 
 This section describes new and updated features for Universal Windows drivers in Windows 10.
 
-**Universal Drivers in Windows 10, version 1809**
+[Back to Top](#top)
+
+#### Universal Drivers in Windows 10, version 1809
 
 Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
 To enable flexible linking, use the following new SDK API:
@@ -190,12 +213,11 @@ This existing topic has been enhanced to describe how to use flexible linking to
 
 * [Building for OneCore](https://docs.microsoft.com/windows-hardware/drivers/develop/building-for-onecore)
 
-
-**Universal Drivers in Windows 10, version 1803**
+#### Universal Drivers in Windows 10, version 1803
 
 See the latest recommendations for universal drivers in [Getting started with universal drivers](develop/getting-started-with-universal-drivers.md).
 
-**Universal Drivers in Windows 10, version 1709**
+#### Universal Drivers in Windows 10, version 1709
 
 The following is a list of new features to Universal Drivers in Windows 10, version 1709:
 
@@ -209,7 +231,7 @@ The following is a list of updates to Universal Drivers in Windows 10, version 1
 * [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
 * [Using a Component INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file)
 
-**Universal Drivers in Windows 10**
+#### Universal Drivers in Windows 10
 
 Starting in Windows 10, you can write a single driver that works on OneCoreUAP-based editions of Windows, such as Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, and Windows 10 IoT Core (IoT Core). Such a driver is called a Universal Windows driver. A Universal Windows driver calls a subset of the interfaces that are available to a Windows driver. For information about how to build, install, deploy, and debug a Universal Windows driver for Windows 10, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
 
@@ -231,20 +253,185 @@ For more info, see [Target platform on driver reference pages](https://docs.micr
 
 Windows is now supported on more affordable boards such as the Raspberry Pi 2. Become a part of our early adopter community and load Windows on that board. For more information, see [Windows compatible hardware development boards](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/windows-compatible-hardware-development-boards).
 
-### <a name="power-management-framework"></a>Power Management Framework (PoFx)
+### Power Management Framework
 
 The power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device. The driver can use performance states to throttle a component's workload to provide just enough performance for its current needs. For more information, see [Component-Level Performance State Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/component-level-performance-management).
+
+Windows 10, version 1903 includes support for the [Directed Power Management Framework (DFx)](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework).  Related reference documentation includes the following:
+
+* [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-po_fx_device_v3)
+* [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_down_callback)
+* [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_directed_power_up_callback)
+* [PoFxCompleteDirectedPowerDown](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxcompletedirectedpowerdown) function
+
+For information about testing for DFx, please see the following pages:
+
+* [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
+* [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
+* [PwrTest DirectedFx Scenario](devtest/pwrtest-directedfx-scenario.md)
 
 ### WPP Software Tracing
 
 [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) introduces a new feature: *Inflight Trace Recorder*. If the driver enables WPP tracing and WPP Recorder, trace logging is turned on automatically and you can easily view messages without starting or stopping trace sessions. For more fine tuned control over the log, WPP Recorder allows a KMDF driver to create and manage custom buffers.
 
--   [WPP Recorder for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder)
--   [WppRecorderLogGetDefault](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-imp_wpprecorderloggetdefault)
--   [WppRecorderLogCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) (KMDF only)
--   [WppRecorderDumpLiveDriverData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
+* [WPP Recorder for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder)
+* [WppRecorderLogGetDefault](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-imp_wpprecorderloggetdefault)
+* [WppRecorderLogCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) (KMDF only)
+* [WppRecorderDumpLiveDriverData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
 
-## What's new in Windows 10, version 1809 (latest)
+## What's new in Windows 10, version 1903 (latest)
+
+This section describes new features and updates for driver development in Windows 10, version 1903 (Windows 10 April 2019 Update).
+
+[Back to Top](#top)
+
+### <a name="audio-1903"></a>Audio
+
+The following is a list of new and updated Audio features in Windows 10, version 1903:
+
+* New reference topics on the Audio OEM Adapter used for Voice Activation in the new [eventdetectoroemadapter.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/eventdetectoroemadapter/) header.
+* New Far Field Audio information: 
+    * [PKEY_Devices_AudioDevice_Microphone_IsFarField](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-devices-audiodevice-microphone-isfarfield)
+    * [KSPROPSETID_InterleavedAudio](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-interleavedaudio)
+    * [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](https://review.docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation)
+    
+* New jack description information in [USB Audio 2.0 Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/usb-2-0-audio-drivers).
+
+### <a name="camera-1903"></a>Camera
+
+New Camera driver documentation and features added in Windows 10, version 1903 include:
+
+* New [IR Torch](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-irtorchmode) extended property control to set an IR camera's infrared torch power level and duty cycle.
+* New [KSCATEGORY_NETWORK_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-network-camera) device.
+* New and updated [USB Video Class (UVC) 1.5 extension](https://docs.microsoft.com/windows-hardware/drivers/stream/uvc-extensions-1-5) documentation for the following control selectors:
+  * MSXU_CONTROL_FACE_AUTHENTICATION
+  * MSXU_CONTROL_METADATA
+  * MSUX_CONTROL_IR_TORCH
+
+### <a name="display-1903"></a>Display
+
+Updates to Display driver development in Windows 10, version 1903 include the following:
+
+* **Super Wet Ink** New DDIs were added to enable front buffer rendering. See [D3DWDDM2_6DDI_SCANOUT_FLAGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ne-d3d10umddi-d3dwddm2_6ddi_scanout_flags) and [PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_6ddi_prepare_scanout_transformation).
+
+* **Variable Rate Shading** Enables allocation of rendering performance/power at varying rates across rendered images. See [PFND3D12DDI_RS_SET_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_rs_set_shading_rate_0062) and [D3D12DDI_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ne-d3d12umddi-d3d12ddi_shading_rate_0062).
+
+* **Collect Diagnostic Info** Allows the OS to collect a private data from drivers for graphics adapters which consist of both rendering and display functions. See [DXGKDDI_COLLECTDIAGNOSTICINFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_collectdiagnosticinfo).
+
+* **Background Processing** Allows user mode drivers to express desired threading behavior, and the runtime to control/monitor it. User mode drivers would spin up background threads and assign the threads as low a priority as possible, and rely on the NT scheduler to ensure these threads don’t disrupt the critical-path threads, generally with success. See [PFND3D12DDI_QUEUEPROCESSINGWORK_CB_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_queueprocessingwork_cb_0062).
+
+* **Driver Hot Update** Reduce server downtime as much as possible when an OS component needs to be updated. See [DXGKDDI_SAVEMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_savememoryforhotupdate) and [DXGKDDI_RESTOREMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_restorememoryforhotupdate).
+
+### <a name="networking-1903"></a>Networking
+
+#### NetAdapterCx
+
+In the NetAdapter WDF class extension (NetAdapterCx), Net ring buffers have been replaced by Net rings, which have a new interface for sending and receiving network data using net ring iterators. The following is a list of new topics:
+
+* [Net rings and net ring iterators](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators)
+* [Sending network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/sending-network-data-with-net-rings) with a new animation that illustrates how to send data
+* [Receiving network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/receiving-network-data-with-net-rings) with a new animation that illustrates how to receive data
+* [Canceling network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/canceling-network-data-with-net-rings)
+
+New headers that support this feature include the following:
+
+* [Ring.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ring/index)
+* [Ringcollection.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ringcollection/index)
+* [Netringiterator.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/index)
+
+The following is a list of NetAdapterCx content updates:
+
+* Default adapter objects have been removed in favor of a single adapter object type. The following topics have been updated accordingly:
+
+  * [Summary of NetAdapterCx objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects)
+  * [Device and adapter initialization](https://docs.microsoft.com/windows-hardware/drivers/netcx/device-and-adapter-initialization)
+
+* Hardware offload and packet extension DDIs have been reorganized into new headers:
+
+  * [Checksum.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/checksum/index)
+  * [Checksumtypes.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/checksumtypes/index)
+  * [Extension.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extension/index)
+  * [Lso.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/lso/index)
+  * [Lsotypes.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/lsotypes/index)
+  * [Rsc.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rsc/index)
+  * [Rsctypes.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rsctypes/index)
+
+* Fundamental networking data structures, packets and fragments, have been updated and put into new headers:
+
+  * [Packet.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/packet/index)
+  * [Fragment.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fragment/index)
+
+* Overhauled [Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues) topic to include callback samples and major operations for packet queues.
+
+#### Mobile operator scenarios
+
+New Mobile Plans content for mobile operators to sell plans to customers directly on Windows 10 devices, through the Mobile Plans app:
+
+* [Mobile Plans](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans)
+
+### <a name="mobilebroadband-1903"></a>Mobile broadband
+
+The following features were added to Mobile broadband in Windows 10, version 1903:
+
+* New [SIM card (UICC) file/application system access](https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-application-and-file-system-access) feature
+* New [Cellular Time Information (NITZ)](https://docs.microsoft.com/windows-hardware/drivers/network/mb-nitz-support) feature.
+* New [modem logging with DSS](https://docs.microsoft.com/windows-hardware/drivers/network/mb-modem-logging-with-dss) feature.
+* New [5G data class support](https://docs.microsoft.com/windows-hardware/drivers/network/mb-5g-data-class-support) feature.
+
+### <a name="print-1903"></a>Print
+
+New Print driver documentation and features added in Windows 10, version 1903 include:
+
+* New USB print IOCTLs:
+
+  * [IOCTL_USBPRINT_GET_INTERFACE_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbprint/ni-usbprint-ioctl_usbprint_get_interface_type)
+  * [IOCTL_USBPRINT_GET_PROTOCOL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbprint/ni-usbprint-ioctl_usbprint_get_protocol)
+  * [IOCTL_USBPRINT_SET_PROTOCOL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbprint/ni-usbprint-ioctl_usbprint_set_protocol)
+
+* New **fpRegeneratePrintDeviceCapabilities** [PRINTPROVIDER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-_printprovidor) structure member and updated documentation.
+
+### <a name="sensors-1903"></a>Sensors
+
+New features in sensor driver development in Windows 10, version 1903 include a [MALT (Microsoft Ambient Light Tool) tool](https://docs.microsoft.com/windows-hardware/drivers/sensors/testing-malt-building-a-light-testing-tool) for testing and calibrating screen brightness.
+
+There were also updates to the Ambient Color OEM whitepaper.
+
+### <a name="storage-1903"></a>Storage
+
+The following Storage features were added in Windows 10, version 1903:
+
+* New Storport APIs for logging device failure and hardware protocol errors in ETW events and to query for platform D3 desired behavior
+* New API to set the properties of a storage device or adapter
+* For file systems, new DDIs were added to support retrieving extended attributes (EA) information upon create completion, allowing mini-filters to alter the ECP payload to change what higher filters see
+
+### Windows Hardware Error Architecture (WHEA)
+
+Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
+
+* [**WheaAddErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
+* [**WheaReportHwErrorDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
+* [**WheaRemoveErrorSourceDeviceDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)
+* [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-whea_error_source_configuration_device_driver)
+* [*WHEA_ERROR_SOURCE_READY_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_ready_device_driver)
+* [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver)
+* [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver)
+
+### <a name="wifi-1903"></a>Wi-fi
+
+New Wi-fi driver development documentation and features include:
+
+* New Fine Timing Measurement (FTM) feature
+* New [WPA3-SAE Authentication](https://docs.microsoft.com/windows-hardware/drivers/network/wpa3-sae-authentication) feature
+* New Multiband Operation (MBO) support to improve roaming performance in enterprise scenarios
+* New beacon report offloading support
+* For OID commands, NDIS status indications, and TLVs for these new features, see [WDI doc change history](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-doc-change-history)
+
+The following topics were updated for Windows 10, version 1903:
+
+* [WDI_AUTH_ALGORITHM](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_auth_algorithm) - added support for WPA3-SAE authentication
+* [OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-request-action-frame) and [OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-p2p-send-response-action-frame) - added additional validation of outgoing Point to Point (P2P) action frames
+
+## What's new in Windows 10, version 1809
 
 This section describes new features and updates for driver development in Windows 10, version 1809 (Windows 10 October 2018 Update).
 
@@ -264,22 +451,23 @@ Documentation on the new [sidebandaudio](https://docs.microsoft.com/windows-hard
 
 Updates to Display driver development in Windows 10, version 1809 include the following:
 
-* **Raytracing** New Direct3D DDI's were created in parallel of Direct3D API's, in order to support hardware-accelerated raytracing. Example DDIs include: [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054), [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054). For more info about raytracing, see [Announcing Microsoft DirectX Raytracing](https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/).
+* **Raytracing** New Direct3D DDI's were created in parallel of Direct3D API's, in order to support hardware-accelerated raytracing. Example DDIs include: [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054), [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054). For more info about raytracing, see [Announcing Microsoft DirectX Raytracing](https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/).
 
 * **Universal Driver Requirements** WDDM 2.5 drivers will need to ensure their DirectX11 UMD, DirectX12 UMD, KMDs, and any other DLL loaded by these components, adhere to the Universal API.
 
 * **SRV-Only Tiled Resource Tier 3** In Windows 10, version 1809, Tiled Resource Tier 3 capabilities can be supported less-orthogonally by GPUs. Direct3D12 now supports sparse volume textures without requiring unordered-access and render-target operations. SRV-Only Tiled Resource Tier 3 is a conceptual tier that fits between Tier 2 and Tier 3. Hardware support is optional, just like orthogonal Tiled Resource Tier 3 support currently is. But, supporting SRV-Only Tiled Resource Tier 3 is a super-set tier that requires support for Tiled Resource Tier 2.
-  <br/>Drivers that already advertise support for orthogonal Tiled Resource Tier 3 merely have to update their drivers to support the latest “options caps” DDI structure version. The runtime will advertise SRV-Only Tiled Resource Tier 3 support to applications for any hardware that already supports orthogonal Tiled Resource Tier 3.
+
+   Drivers that already advertise support for orthogonal Tiled Resource Tier 3 merely have to update their drivers to support the latest “options caps” DDI structure version. The runtime will advertise SRV-Only Tiled Resource Tier 3 support to applications for any hardware that already supports orthogonal Tiled Resource Tier 3.
 
 * **Render Pass** The Render Pass feature was added to:
 
-    * Allow new APIs to be run on existing drivers.
-    * Allow user mode drivers to choose optimal rendering path without heavy CPU penalty.
+  * Allow new APIs to be run on existing drivers.
+  * Allow user mode drivers to choose optimal rendering path without heavy CPU penalty.
 
 * **Meta-commands** A Meta-command is Direct3D12 object that represents an IHV-accelerated algorithm. It’s an opaque reference to a command generator implemented by the driver. Meta-command updates include Descriptor Table Binding and Texture binding. See [D3D12DDI_META_COMMAND_PARAMETER_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ne-d3d12umddi-d3d12ddi_meta_command_parameter_type) and [D3D12DDIARG_META_COMMAND_PARAMETER_DESC](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ns-d3d12umddi-d3d12ddiarg_meta_command_parameter_desc).
 
-    * Enable Compute Algorithms to use Texture Resources (swizzled memory)
-    * Enable Graphics Pipeline Algorithms
+  Enable Compute Algorithms to use Texture Resources (swizzled memory)
+  * Enable Graphics Pipeline Algorithms
 
 * **HDR Brightness Compensation** A new SDR brightness boost was introduced to raise the reference white of SDR content to the user-desired value, allowing SDR content to be reproduced to a typical 200-240 nits, which is equivalent to what users have expected for SDR displays. SDR brightness boost affects overall Brightness3 behavior in two ways:
 
@@ -288,14 +476,16 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 
      The driver must then apply a compensation to the desired nits value coming from Brightness3 DDIs for HDR. Since Graphics drivers (and downstream TCON etc.) will be modifying the pixel values of the content to get desired nits value, there should also be a compensation applied to the HDR content metadata as provided by the applications via [D3DDDI_HDR_METADATA_HDR10](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddi_hdr_metadata_hdr10) or OS defaults via [DxgkDdiSetTargetAdjustedColorimetry](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_settargetadjustedcolorimetry). Since Graphics driver (TCONs) are responsible for modifying the pixel data, it is the driver’s responsibility to compensate the HDR content metadata.
 
+* **HDR Pixel Format Support** This kernel mode device driver interface (DDI) change is part of WDDM 2.5 to expose new capabilities to be reported by driver/device, providing information regarding the HDR functionality supported by the driver/device.
 
-* **HDR Pixel Format Support** This kernel mode device driver interface (DDI) change is part of WDDM 2.5 to expose new capabilities to be reported by driver/device, providing information regarding the HDR functionality supported by the driver/device. <br/>Currently, OS determines if the driver/device supports HDR based on the *HighColorSpace* bit of the [DXGK_MONITORLINKINFO_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities) structure as read from [DdiUpdateMonitorLinkInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo). The *HighColorSpace* bit gives a combination of driver/link/monitor capability to run in HDR mode. <br/>The HDR capabilities reporting by the driver now includes a Driver/Device level capabilities, which will let OS know if the Driver/Device supports true HDR (i.e. FP16HDR), or only supports a limited form of HDR (i.e. ARGB10HDR), as defined below:
+   Currently, OS determines if the driver/device supports HDR based on the *HighColorSpace* bit of the [DXGK_MONITORLINKINFO_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities) structure as read from [DdiUpdateMonitorLinkInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo). The *HighColorSpace* bit gives a combination of driver/link/monitor capability to run in HDR mode.
+
+    The HDR capabilities reporting by the driver now includes a Driver/Device level capabilities, which will let OS know if the Driver/Device supports true HDR (i.e. FP16HDR), or only supports a limited form of HDR (i.e. ARGB10HDR), as defined below:
 
   * FP16HDR: Driver/device can take FP16 pixel format surfaces with scRGB/CCCS colorspace and apply PQ/2084 encoding and BT.2020 primaries during scanout pipeline to convert output signal to HDR10.
   * ARGB10HDR: Driver/device can take ARGB10 pixel format surfaces which are already PQ/2084 encoded and scan out HDR10 signal. Driver/device can’t handle FP16HDR as defined above or cannot handle the extended numeric range of scRGB FP16.
 
     Graphics drivers can only report support for either FP16HDR or ARGB10HDR as they are not really superset/subset configurations and OS will fail the Start Adapter if both are reported as supported at the same time. See [DXGK_MONITORLINKINFO_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_dxgk_monitorlinkinfo_capabilities) and [_DXGK_DISPLAY_DRIVERCAPS_EXTENSION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_display_drivercaps_extension).
-
 
 * **SDR White Level** A kernel mode device driver interface change includes adding new parameters to existing DDIs to let the Graphics drivers know the “SDR white level” value that is being applied by the OS compositor for all the SDR content, for a display which is running in HDR mode. See _DXGK_COLORIMETRY.
 
@@ -303,41 +493,43 @@ Updates to Display driver development in Windows 10, version 1809 include the fo
 
 Several new APIs have been added in the core kernel:
 
-* [RtlQueryRegistryValueWithFallback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlqueryregistryvaluewithfallback): Querying the registry value entry by using a fallback handle in absence of a primary handle. 
+* [RtlQueryRegistryValueWithFallback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlqueryregistryvaluewithfallback): Querying the registry value entry by using a fallback handle in absence of a primary handle.
 * [PsGetSiloContainerId function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetsilocontainerid) and [PsGetThreadServerSilo function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetthreadserversilo)
 * New information classes added to: [_FILE_INFORMATION_CLASS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_file_information_class)
-    * FileLinkInformationExBypassAccessCheck
-    * FileCaseSensitiveInformationForceAccessCheck
-    * FileStorageReserveIdInformation
-        ○ FileLinkInformationEx
-* Extended version of NtCreateSection added [NtCreateSectionEx function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatesectionex) to indicate that this is actually an AWE section. 
-* New Ex macros grant direct access to actual push lock APIs exported by Ntoskernel. 
-    * [ExAcquirePushLockExclusive macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirepushlockexclusive)
-    * [ExAcquirePushLockShared macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirepushlockshared)
-    * [ExInitializePushLock function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializepushlock)
-    * [ExReleasePushLockExclusive macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleasepushlockexclusive)
-    * [ExReleasePushLockShared macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleasepushlockshared)
+  * FileLinkInformationExBypassAccessCheck
+  * FileCaseSensitiveInformationForceAccessCheck
+  * FileStorageReserveIdInformation
+    * FileLinkInformationEx
+* Extended version of NtCreateSection added [NtCreateSectionEx function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatesectionex) to indicate that this is actually an AWE section.
+* New Ex macros grant direct access to actual push lock APIs exported by Ntoskernel.
+  * [ExAcquirePushLockExclusive macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirepushlockexclusive)
+  * [ExAcquirePushLockShared macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exacquirepushlockshared)
+  * [ExInitializePushLock function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializepushlock)
+  * [ExReleasePushLockExclusive macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleasepushlockexclusive)
+  * [ExReleasePushLockShared macro](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleasepushlockshared)
 * [KzLowerIrql](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kzlowerirql) and [KzRaiseIrql](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kzraiseirql) were moved to a supported extern forceinline for kernel components targeting Windows 8 and later versions, instead of relying on the forwarders to instantiate a special case of the inline functions.
 * Flattening Portal Bridge (FPB) for PCI is now supported. For more information, see the [Official Specification](https://pcisig.com/sites/default/files/specification_documents/ECN_FPB_9_Feb_2017.pdf). The new APIs (_PCI_FPB_*) are declared in [Ntddk.h](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/).
 
 ### <a name="networking-1809"></a>Networking
 
-**NetAdapterCx**
+#### NetAdapterCx
 
 * New [INF files for NetAdapterCx client drivers](https://docs.microsoft.com/windows-hardware/drivers/netcx/inf-files-for-netadaptercx-client-drivers) topic.
 * Transmit and receive queues have been consolidated into one object type called a packet queue, to simplify the API surface. A new section called [Polling model](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues#polling-model) has been added to the [Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues) topic.
 * [Hardware offloads](https://docs.microsoft.com/windows-hardware/drivers/netcx/netadaptercx-hardware-offloads) have been added to NetAdapterCx, which also automates the registration of associated packet extensions for client drivers.
-* Network interfaces are now decoupled from the driver's WDF device object. The *EvtNetAdapterSetCapabilities* callback function was removed to support this. NetAdapterCx client drivers can now have multiple network interfaces, including a default one. <br/><br/>Topics updated to support network interface/device object decoupling include the following:
+* Network interfaces are now decoupled from the driver's WDF device object. The *EvtNetAdapterSetCapabilities* callback function was removed to support this. NetAdapterCx client drivers can now have multiple network interfaces, including a default one.
 
-    * [Summary of NetAdapterCx objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects)
-    * [Device and adapter initialization](https://docs.microsoft.com/windows-hardware/drivers/netcx/device-and-adapter-initialization)
-    * [Power-up sequence for a NetAdapterCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/power-up-sequence-for-a-netadaptercx-client-driver)
-    * [Power-down sequence for a NetAdapterCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/power-down-sequence-for-a-netadaptercx-client-driver)
+   Topics updated to support network interface/device object decoupling include the following:
+
+  * [Summary of NetAdapterCx objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects)
+  * [Device and adapter initialization](https://docs.microsoft.com/windows-hardware/drivers/netcx/device-and-adapter-initialization)
+  * [Power-up sequence for a NetAdapterCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/power-up-sequence-for-a-netadaptercx-client-driver)
+  * [Power-down sequence for a NetAdapterCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/power-down-sequence-for-a-netadaptercx-client-driver)
 
 * DDIs supporting [NetAdapterCx Receive side scaling (RSS)](https://docs.microsoft.com/windows-hardware/drivers/netcx/netadaptercx-receive-side-scaling-rss-) have been simplified.
 * Packet context token helper macros have been removed.
 
-**NDIS**
+#### NDIS
 
 [Receive side scaling version 2 (RSSv2)](https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-) has been updated to version 1.01.
 
@@ -346,16 +538,15 @@ Several new APIs have been added in the core kernel:
 * New [OID](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-mpdp) and DDIs to support multiple packet data protocol (MPDP) interfaces for MBB devices.
 * New [Device-based Reset and Recovery](https://docs.microsoft.com/windows-hardware/drivers/network/mb-device-based-reset-and-recovery) feature for more robust reset recovery for MBB devices and drivers.
 
-**Mobile Broadband WDF class extension (MBBCx)**
+#### Mobile Broadband WDF class extension (MBBCx)
 
 MBBCx power management methods have been simplified.
 
 Though preview content for MBBCx was available in Windows 10, version 1803, MBBCx now ships in the Windows 10, version 1809 version of the WDK.
 
-**Mobile operators**
+#### Mobile operators
 
 The [AutoConnectOrder setting](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#apn-database-and-desktop-cosa-settings) is now supported in desktop COSA.
-
 
 ### <a name="sensors-1809"></a>Sensors
 
@@ -375,12 +566,12 @@ If  your hardware is UCSI compliant and requires communication over a non-ACPI t
 * [UcmUcsiCx class extensions reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
 * [UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmUcsiAcpiSample)
 
-**New feature for USB Type-C driver developers that allows you to monitor the activities of USB Type-C connectors and/or get involved in policy decisions on USB Type-C connectors.** 
+**New feature for USB Type-C driver developers that allows you to monitor the activities of USB Type-C connectors and/or get involved in policy decisions on USB Type-C connectors.**
 
-For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated. 
+For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated.
 
-* [Write a USB Type-C Policy Manager client driver](https://microsoft.com/windows-hardware/drivers/usbcon/policy-manager-client)
-*  New APIs are available in [Usbpmapi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbpmapi/)
+* [Write a USB Type-C Policy Manager client driver](https://www.microsoft.com/windows-hardware/drivers/usbcon/policy-manager-client)
+* New APIs are available in [Usbpmapi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbpmapi/)
 
 **New versions of the class extensions available for emulated USB devices (UDE) -- 1.1 and USB host controller (Ucx) 1.5:**
 
@@ -388,12 +579,9 @@ Emulated devices now support better reset recovery through function (FLDR) and p
 
 * [UdecxWdfDeviceNeedsReset function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceneedsreset)
 
-The host controller can also opt for FLDR and PLDR resets through: 
+The host controller can also opt for FLDR and PLDR resets through:
 
 * [EVT_UCX_USBDEVICE_DISABLE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_disable)
-
-
-
 
 ### <a name="wifi-1809"></a>Wi-fi
 
@@ -405,6 +593,8 @@ The WLAN device driver interface (WDI) spec has been updated to version 1.1.7.
 ## What's new in Windows 10, version 1803
 
 This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
+
+[Back to Top](#top)
 
 ### <a name="acpi-1803"></a>ACPI
 
@@ -455,9 +645,9 @@ The following are updates to Display driver development in Windows 10, version 1
 * **Post-processing color enhancement override** - Adds the ability for the OS to request that the driver temporarily disable any post-processing that enhances or alters display colors. This is to support scenarios where specific applications want to enforce colorimetrically accurate color behavior on the display, and safely coexist with OEM or IHV-proprietary display color enhancements.
 
 * **Direct3D12 and Video** - New API and DDI to provide access to the following capabilities:
-    * Hardware accelerated video decoding
-    * Content Protection
-    * Video processing
+  * Hardware accelerated video decoding
+  * Content Protection
+  * Video processing
 
 * **DisplayID** - A new DDI, designed to allow the VESA’s DisplayID descriptor to be queried from a display controlled by a graphics adapter and shall support DisplayID v1.3 and DisplayID v2.0. The DDI is an extension of existing DxgkDdiQueryAdapterInfo DDI and shall be supported by all drivers with DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_3, including kernel mode display only drivers and indirect display drivers.
 
@@ -506,7 +696,7 @@ You can now register for active session change notification and get a callback w
 
 This section outlines new features and improvements for Windows Networking driver development in Windows 10, version 1803.
 
-**NDIS and NetAdapterCx**
+#### NDIS and NetAdapterCx
 
 Updates to NDIS include:
 
@@ -523,14 +713,14 @@ The following topics are new for the Network Adapter WDF class extension (NetAda
 Additionally, new topics are available for a preview-only feature, the Mobile Broadband class extension (MBBCx), which uses the NetAdapterCx model for mobile broadband connectivity.
 
 * [Mobile Broadband Class Extension (MBBCx)](https://docs.microsoft.com/windows-hardware/drivers/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx-)
-    * [Writing an MBBCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/writing-an-mbbcx-client-driver)
-    * [MBBCx API reference](https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference)
+  * [Writing an MBBCx client driver](https://docs.microsoft.com/windows-hardware/drivers/netcx/writing-an-mbbcx-client-driver)
+  * [MBBCx API reference](https://docs.microsoft.com/windows-hardware/drivers/netcx/mbbcx-api-reference)
 
 ### <a name="mobilebroadband-1803"></a>Mobile broadband
 
 In mobile broadband, a new topic detailing [MB low level UICC access](https://docs.microsoft.com/windows-hardware/drivers/network/mb-low-level-uicc-access) is available.
 
-**Mobile operators**
+#### Mobile operators
 
 New Hotspot and AppID settings are now a part of [desktop COSA](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings#desktop-cosa-only-settings). Mobile operators are strongly encouraged to transition from broadband app experience apps with [Sysdev metadata packages](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata) to [MO UWP Apps](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps) and the [COSA database](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/desktop-cosa-apn-database-settings).
 
@@ -556,7 +746,6 @@ New APIs were added to simulate detach for shared connectors. If a USB device is
 
 Updates to Wi-fi driver development include a new [TLV for the Nic Auto Power Saver (NAPS) advanced power management feature](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-os-power-management-features) and updates to the platform level device recovery service (PLDR).
 
-
 ## What's new in Windows 10, version 1709
 
 This section describes new features and updates for driver development in Windows 10, version 1709.
@@ -569,11 +758,11 @@ The following is a list of updates to Windows Audio driver development in Window
 
 * New [Configure and query audio device modules](https://docs.microsoft.com/windows-hardware/drivers/audio/configure-and-query-audiodevicemodules)
 * Extensive updates to [voice activation](https://docs.microsoft.com/windows-hardware/drivers/audio/voice-activation)
-    * More details on chained and keyword only activation
-    * A new glossary of terms
-    * Additional information on training and recognition, such as pin and audio format information
-    * An updated keyword system overview
-    * Updated information on wake on voice
+  * More details on chained and keyword only activation
+  * A new glossary of terms
+  * Additional information on training and recognition, such as pin and audio format information
+  * An updated keyword system overview
+  * Updated information on wake on voice
 
 ### <a name="acpi-1709"></a>ACPI
 
@@ -600,7 +789,6 @@ The following is a list of new Advanced Configuration and Power Interface (ACPI)
 * [ACPI_METHOD_ARGUMENT_V2 ](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ns-acpiioct-_acpi_method_argument_v2)
 * [GIC_ITS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpitabl/ns-acpitabl-_gic_its)
 
-
 ### <a name="biometric-1709"></a>Biometric
 
 There are new signing requirements for Windows Biometric Drivers. For more information, see [Signing WBDI Drivers](https://docs.microsoft.com/windows-hardware/drivers/biometric/signing-wbdi-drivers).
@@ -623,7 +811,6 @@ In Windows 10, version 1709, there is support for hardware-agnostic support of n
 * [Hardware notifications support](https://docs.microsoft.com/windows-hardware/drivers/gpiobtn/hardware-notifications-support)
 * [Hardware notifications reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_gpiobtn/)
 
-
 ### <a name="kernel-1709"></a>Windows kernel
 
 In Windows 10, version 1709, several new routines to the Windows Kernel for drivers have been added.
@@ -631,20 +818,20 @@ In Windows 10, version 1709, several new routines to the Windows Kernel for driv
 * ExGetFirmwareType and ExIsSoftBoot &ndash; Executive library support routines.
 * [PsSetLoadImageNotifyRoutineEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-pssetloadimagenotifyroutineex) &ndash; An extended image notify routine for all executable images, including images that have a different architecture from the native architecture of the operating system.
 * [MmMapMdl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmapmdl) &ndash; A [memory manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager) routine for mapping physical pages described by a memory descriptor list (MDL) into the system virtual address space.
-* [PoFxSetTargetDripsDevicePowerState ](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxsettargetdripsdevicepowerstate) &ndash; A PoFx routine to notify the power manager of the device's target device power state for DRIPS.
+* [PoFxSetTargetDripsDevicePowerState](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pofxsettargetdripsdevicepowerstate) &ndash; A PoFx routine to notify the power manager of the device's target device power state for DRIPS.
 * The following is a list of new options for the [ZwSetInformationThread](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-zwsetinformationthread) routine, that are related to process policies:
 
-    * [PROCESS_MITIGATION_CHILD_PROCESS_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_child_process_policy)
-    * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_payload_restriction_policy)
-    * PROCESS_READWRITEVM_LOGGING_INFORMATION
+  * [PROCESS_MITIGATION_CHILD_PROCESS_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_child_process_policy)
+  * [PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_process_mitigation_payload_restriction_policy)
+  * PROCESS_READWRITEVM_LOGGING_INFORMATION
 
 * [PsGetServerSiloActiveConsoleId](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetserversiloactiveconsoleid) and [PsGetParentSilo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetparentsilo) &ndash; New Silo APIs to get information about server silos that are created and destroyed on a machine.
 * The following is a list of new RTL functions for using correlation vector to reference events and the generated logs for diagnostic purposes.
-    * [CORRELATION_VECTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-correlation_vector)
-    * [RtlExtendCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlextendcorrelationvector)
-    * [RtlIncrementCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlincrementcorrelationvector)
-    * [RtlInitializeCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlinitializecorrelationvector)
-    * [RtlValidateCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlvalidatecorrelationvector)
+  * [CORRELATION_VECTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-correlation_vector)
+  * [RtlExtendCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlextendcorrelationvector)
+  * [RtlIncrementCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlincrementcorrelationvector)
+  * [RtlInitializeCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlinitializecorrelationvector)
+  * [RtlValidateCorrelationVector](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlvalidatecorrelationvector)
 
 ### <a name="mobilebroadband-1709"></a>Mobile broadband
 
@@ -654,7 +841,6 @@ The following is a list of new features for Windows Mobile Broadband and Mobile 
 * [Protocol Configuration Operations (PCO)](https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-)
 * [Base stations information query](https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support)
 * [eSIM and MBIM ReadyState guidance](https://docs.microsoft.com/windows-hardware/drivers/network/mb-esim-mbim-ready-state-guidance)
-
 
 In Windows 10, version 1709, the [desktop COSA documentation](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission) was updated to include new branding-related fields.
 See the list of [deprecated features](#deprecated-features) for other changes to Mobile Operator Scenarios.
@@ -666,15 +852,14 @@ This section outlines new features and improvements for Windows Networking drive
 The following is a list of new and updated features for NDIS:
 
 * Introduction to NetAdapterCx 1.1, which includes new NewAdapterCx features:
-    * More packet context options
-    * Finer link state control
-    * Improved receive buffer management and performance
-    * General performance improvements
+  * More packet context options
+  * Finer link state control
+  * Improved receive buffer management and performance
+  * General performance improvements
 * New [Synchronous OID request interface](https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80) in NDIS 6.80
 * New [Receive Side Scaling Version 2 (RSSv2)](https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-in-ndis-6-80) in NDIS 6.80
 * [Introduction to NDIS 6.80](https://docs.microsoft.com/windows-hardware/drivers/network/introduction-to-ndis-6-80)
 * [Porting NDIS 6.x drivers to NDIS 6.80](https://docs.microsoft.com/windows-hardware/drivers/network/porting-ndis-6-x-drivers-to-ndis-6-80)
-
 
 ### <a name="pci-1709"></a>Virtualized PCI
 
@@ -687,7 +872,6 @@ In Windows 10, version 1709, to provide access to a Pulse width modulation (PWM)
 To parse and validate pin paths and extract the pin number, kernel mode drivers should use [PwmParsePinPath](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pwmutil/nf-pwmutil-pwmparsepinpath).
 
 An app can send requests to the controller driver by sending [PWM IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/spb/pulse-width-controller%20driver#pwm-ioctl-requests) requests.
-
 
 ### <a name="storage-1709"></a>Storage and File Systems
 
@@ -758,7 +942,7 @@ Here are the supporting structures for synchronized system OPC with USB frame an
 * [USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_stop_tracking_for_time_sync_information)
 * [USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_frame_number_and_qpc_for_time_sync_information)
 
-**IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED**
+#### IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED
 
 The [IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmtcpciportcontrollerrequests/ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_displayport_display_out_status_changed) request is a new request in USB Type-C Port Controller Interface framework extension. This request notifies the client driver that the display out status of the DisplayPort connection has changed.
 
@@ -767,13 +951,11 @@ Here are the structures that support the IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYP
 * [UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS_CHANGED_IN_PARAMS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmtcpciportcontrollerrequests/ns-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_display_out_status_changed_in_params)
 * [UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_DISPLAY_OUT_STATUS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmtcpciportcontrollerrequests/ne-ucmtcpciportcontrollerrequests-_ucmtcpci_port_controller_displayport_display_out_status)
 
-
 ## What's new in Windows 10, version 1703
 
 This section describes new and improved features for driver development in Windows 10, version 1703.
 
 [Back to Top](#top)
-
 
 ### <a name="audio-1703"></a>Audio
 
@@ -781,9 +963,9 @@ The following is a list of new topics for Audio driver development in Windows 10
 
 * [Implementing Audio Module Communication](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication) - Describes the support for communication from Universal Windows Platform (UWP) apps to kernel mode audio device drivers.
 * New DDIs and properties reference topics to support APO Module Communications discovery:
-    - [KSPROPSETID_AudioModule](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audiomodule) - A new KS Property Set that defines three properties specific to audio modules.
-    - [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property - Allows Audio Module clients to send custom commands to query and set parameters on Audio Modules.
-    - [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsnotifications) - New Port Class Notifications that provide notification helpers to miniports, to support audio module communication.
+  * [KSPROPSETID_AudioModule](https://docs.microsoft.com/windows-hardware/drivers/audio/kspropsetid-audiomodule) - A new KS Property Set that defines three properties specific to audio modules.
+  * [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property - Allows Audio Module clients to send custom commands to query and set parameters on Audio Modules.
+  * [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsnotifications) - New Port Class Notifications that provide notification helpers to miniports, to support audio module communication.
 
 ### <a name="bluetooth-1703"></a>Bluetooth
 
@@ -804,11 +986,10 @@ The following is a list of updates to Camera driver development in Windows 10, v
 * [Device transform manager (DTM) events](https://docs.microsoft.com/windows-hardware/drivers/stream/device-mft-events)
 * [IMFDeviceTransform interface](https://docs.microsoft.com/windows/desktop/api/mftransform/nn-mftransform-imfdevicetransform)
 * KSCategory_Xxx Device Interface Classes
-    - [KSCATEGORY_SENSOR_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-sensor-camera)
-    - [KSCATEGORY_VIDEO_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-video-camera)
+  * [KSCATEGORY_SENSOR_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-sensor-camera)
+  * [KSCATEGORY_VIDEO_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-video-camera)
 
 ### <a name="kernel-1703"></a>Windows kernel
-
 
 [Windows Kernel-Mode Process and Thread Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager) - Starting in Windows 10 version 1703, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For more information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](https://blogs.msdn.microsoft.com/wsl/) blog.
 
@@ -826,8 +1007,6 @@ Updates to [**Mobile Operator Scenarios (MOs)**](https://docs.microsoft.com/wind
 
 Updates to Networking driver development in Windows 10, version 1703 includes a new type of socket called Stream Sockets, which support Linux networking applications on Windows. See [**Winsock Kernel**](https://docs.microsoft.com/windows-hardware/drivers/network/winsock-kernel-socket-categories) for more info. New functions and structures include [WskConnectEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_connect_ex), [WskListen](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_listen), [WSK_CLIENT_STREAM_DISPATCH](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_client_stream_dispatch), and [WSK_PROVIDER_STREAM_DISPATCH](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_provider_stream_dispatch)
 
-
-
 ### <a name="pos-1703"></a>POS
 
 The following is a list of new topics for POS in Windows 10, version 1703:
@@ -840,7 +1019,7 @@ There is a new Gs1DWCode symbology to the [BarcodeSymbology enumeration](https:/
 
 ### <a name="usb-1703"></a>USB
 
-Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826).
+Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt805826(v=vs.85)).
 
 ## What's new in Windows 10, version 1607
 
@@ -848,15 +1027,15 @@ Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that sup
 
 This section describes new features and improvements for driver development in Windows 10, version 1607.
 
-### Audio
+### <a name="audio-1607"></a>Audio
 
 The following is a list of new topics for Audio driver development in Windows 10, version 1607.
 
 * [Windows Audio Architecture](https://docs.microsoft.com/windows-hardware/drivers/audio/windows-audio-architecture)
 * Structures and properties to better support the Cortana experience:
-    * [**KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mic-sensitivity)
-    * [**KSPROPERTY\_AUDIO\_MIC\_SNR**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mic-snr)
-    * [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2)
+  * [**KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mic-sensitivity)
+  * [**KSPROPERTY\_AUDIO\_MIC\_SNR**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mic-snr)
+  * [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2)
 * [PKEY\_AudioEndpoint\_Default\_VolumeInDb](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-audioendpoint-default-volumeindb) &ndash; An INF key that provides the user a better experience when appropriate gain or attenuation is applied to the audio signal.
 
 ### <a name="camera-1607"></a>Camera
@@ -866,7 +1045,6 @@ Camera driver development in Windows 10, version 1607 includes new and updated t
 * [Windows Hello camera driver bring up guide](https://docs.microsoft.com/windows-hardware/drivers/stream/windows-hello-camera-driver-bring-up-guide)
 * [Extended camera controls](https://docs.microsoft.com/windows-hardware/drivers/stream/standardized-extended-controls-)
 * [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-faceauth-mode)
-
 
 ### <a name="location-1607"></a>Location
 
@@ -885,7 +1063,6 @@ Location driver development in Windows 10, version 1607 includes the following n
 
 Printer driver development in Windows 10, version 1607 includes [JSConstraintsDebug](https://docs.microsoft.com/windows-hardware/drivers/devtest/jsconstraintsdebug), a command-line tool that provides debugging support for JavaScript Constraints while developing a V4 printer driver.
 
-
 ### <a name="wlan-1607"></a>WLAN
 
 In Windows 10, version 1607, there are new and updated topics for WLAN Device Driver Interface (WDI) version 1.0.21. For details, see [WDI doc change history](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-doc-change-history).
@@ -896,7 +1073,7 @@ In Windows 10, version 1607, there are new and updated topics for WLAN Device Dr
 
 This section describes new and updated features for driver development in Windows 10.
 
-### Bluetooth
+### <a name="bluetooth-1507"></a>Bluetooth
 
 In Windows 10, new [Microsoft-defined Bluetooth HCI extensions](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/microsoft-defined-bluetooth-hci-commands-and-events) have been added.
 
@@ -923,7 +1100,7 @@ The camera driver DDIs have converged into a Universal Windows driver model, inc
 
 [Cellular architecture and implementation](https://docs.microsoft.com/windows-hardware/drivers/network/cellular-architecture-and-driver-model) for Windows 10 has been updated.
 
-### Display
+### <a name="display-1507"></a>Display
 
 The [display driver model](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_display/) from Windows 8.1 and Windows Phone have converged into a unified model for Windows 10.
 
@@ -965,12 +1142,12 @@ The print driver is updated with v4 Print driver improvements and changes to sup
 
 In Windows 10, there is a new class extension module, Wudfsmcclassext.dll, which handles complex driver operations. Smart card hardware-specific tasks are handled by your client driver. There are new programming interfaces that your client driver can use to send information about the card to the class extension so that it can process requests. Those driver programming interfaces are part of OneCoreUAP-based editions of Windows.
 
-* [Smart card client driver event callback functions](https://msdn.microsoft.com/library/windows/hardware/dn946583)
-* [Smart card client driver support methods](https://msdn.microsoft.com/library/windows/hardware/dn946584)
+* [Smart card client driver event callback functions](https://docs.microsoft.com/previous-versions/dn946583(v=vs.85))
+* [Smart card client driver support methods](https://docs.microsoft.com/previous-versions/dn946584(v=vs.85))
 
-### Storage
+### <a name="storage-1507"></a>Storage
 
-In Windows 10, new storage firmware updates (IOCTL interface) allow partners to update their storage device firmware. These updates include:
+In Windows 10, new protocol-specific interfaces have been added to allow apps to talk with storage devices using their native device protocol. These updates include:
 
 * Storage protocol pass through &ndash; The updated storage pass through IOCTL interface supports newer protocols including non-volatile memory express (NVMe).
 * Expanded storage query interfaces &ndash; The expanded storage query interface allows applications to query protocol-dependent information.
@@ -979,7 +1156,7 @@ In Windows 10, new storage firmware updates (IOCTL interface) allow partners to 
 
 The [GUID\_DEVICE\_RESET\_INTERFACE\_STANDARD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_reset_interface_standard) interface defines a standard way for function drivers to attempt to reset and recover a malfunctioning device.
 
-### USB
+### <a name="usb-1507"></a>USB
 
 Here are the new features for USB in Windows 10. For more information, see [Windows 10: What's new for USB](https://docs.microsoft.com/windows-hardware/drivers/usbcon/windows-10--what-s-new-for-usb).
 
@@ -993,7 +1170,7 @@ Here are the new features for USB in Windows 10. For more information, see [Wind
 
 WDI (WLAN Device Driver Interface) is a new [WLAN Universal Windows driver model](https://docs.microsoft.com/windows-hardware/drivers/network/wifi-universal-driver-model) that converges the WLAN drivers on Windows 10 for desktop editions and Windows 10 Mobile.
 
-[Back to Top](#top) 
+[Back to Top](#top)
 
 ## Deprecated features
 

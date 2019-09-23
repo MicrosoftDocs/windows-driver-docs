@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 ## <span id="startup_sequence"></span><span id="STARTUP_SEQUENCE"></span>
 
 
-Because the adapter driver is installed as a kernel-mode driver service, the operating system loads the adapter driver at system-startup time and calls the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine. The **DriverEntry** routine receives two parameters: a driver object and a registry path name. **DriverEntry** should call the PortCls function [**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703) with the driver-object and registry-path name parameters plus a third parameter, which is a pointer to the adapter driver's [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) function.
+Because the adapter driver is installed as a kernel-mode driver service, the operating system loads the adapter driver at system-startup time and calls the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine. The **DriverEntry** routine receives two parameters: a driver object and a registry path name. **DriverEntry** should call the PortCls function [**PcInitializeAdapterDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcinitializeadapterdriver) with the driver-object and registry-path name parameters plus a third parameter, which is a pointer to the adapter driver's [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) function.
 
-In the following example, the driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function passes the function pointer `MyAddDevice`, which points to the driver's [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) function, as the third parameter to the [**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703) routine.
+In the following example, the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function passes the function pointer `MyAddDevice`, which points to the driver's [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) function, as the third parameter to the [**PcInitializeAdapterDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcinitializeadapterdriver) routine.
 
 ```cpp
 NTSTATUS 
@@ -31,7 +31,7 @@ NTSTATUS
   }
 ```
 
-The [**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703) routine installs the supplied [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine in the driver object's driver extension and installs the PortCls driver's IRP handlers in the driver object itself.
+The [**PcInitializeAdapterDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcinitializeadapterdriver) routine installs the supplied [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine in the driver object's driver extension and installs the PortCls driver's IRP handlers in the driver object itself.
 
 The following code is an example implementation of the driver's `MyAddDevice` function.
 
@@ -50,7 +50,7 @@ NTSTATUS
 
 This function calls the PortCls function **PcAddAdapterDevice** and associates it with the *physical device object (PDO)* that is supplied by the system. The new FDO is created with an extension that PortCls uses to store context information about the device. This context includes the `MyStartDevice` function pointer that is supplied by `MyAddDevice`.
 
-After the operating system determines what resources (interrupts, DMA channels, I/O port addresses, and so on) to assign to the device, it sends the device a request to start ([**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)). In response to this request, the request handler in the PortCls driver calls the adapter driver's `MyStartDevice` function, which is shown in the following example code:
+After the operating system determines what resources (interrupts, DMA channels, I/O port addresses, and so on) to assign to the device, it sends the device a request to start ([**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device)). In response to this request, the request handler in the PortCls driver calls the adapter driver's `MyStartDevice` function, which is shown in the following example code:
 
 ```cpp
 NTSTATUS
@@ -64,7 +64,7 @@ NTSTATUS
   }
 ```
 
-The request handler supplies `MyStartDevice` with pointers to the device object, IRP\_MN\_START\_DEVICE request, and resource list (see [IResourceList](https://msdn.microsoft.com/library/windows/hardware/ff536976)). The `MyStartDevice` function partitions the resource list into the resources that are required for each miniport driver that needs to be started. The function then starts each miniport driver and returns control to PortCls, which completes the IRP and returns control to the operating system.
+The request handler supplies `MyStartDevice` with pointers to the device object, IRP\_MN\_START\_DEVICE request, and resource list (see [IResourceList](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iresourcelist)). The `MyStartDevice` function partitions the resource list into the resources that are required for each miniport driver that needs to be started. The function then starts each miniport driver and returns control to PortCls, which completes the IRP and returns control to the operating system.
 
 For more examples of driver startup code, see the sample audio adapter drivers in the Microsoft Windows Driver Kit (WDK).
 

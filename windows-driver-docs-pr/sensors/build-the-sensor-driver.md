@@ -14,7 +14,7 @@ This topic shows you how to build the sample sensor driver for the ADXL345 accel
 ## Download the driver files
 
 
-Navigate to the [Microsoft / Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) site on GitHub, then perform the following tasks to download and build the sample sensor driver. The exercises in this topic assume that you have Microsoft Visual Studio 2015 installed on your development computer. If not, visit [this download site](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx) for information about how to download a copy of Microsoft Visual Studio.
+Navigate to the [Microsoft / Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) site on GitHub, then perform the following tasks to download and build the sample sensor driver. The exercises in this topic assume that you have Microsoft Visual Studio 2015 installed on your development computer. If not, visit [this download site](https://visualstudio.microsoft.com/downloads/) for information about how to download a copy of Microsoft Visual Studio.
 
 1. Create a folder on your development computer for the sample sensor driver files that you will download.
 

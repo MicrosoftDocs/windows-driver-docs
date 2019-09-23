@@ -11,15 +11,15 @@ ms.localizationpriority: medium
 
 The crash dump driver supports the following callback routines in a crash dump filter driver. These callback routines are not mandatory, so a crash dump filter driver is free to implement only a callback routine that is required to add the desired functionality.
 
-[**Dump\_Start**](https://msdn.microsoft.com/library/windows/hardware/ff552767)
+[**Dump\_Start**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdddump/nc-ntdddump-dump_start)
 
-[**Dump\_Write**](https://msdn.microsoft.com/library/windows/hardware/ff553709)
+[**Dump\_Write**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdddump/nc-ntdddump-dump_write)
 
-[**Dump\_Read**](https://msdn.microsoft.com/library/windows/hardware/hh439713)
+[**Dump\_Read**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdddump/nc-ntdddump-dump_read)
 
-[**Dump\_Finish**](https://msdn.microsoft.com/library/windows/hardware/ff552764)
+[**Dump\_Finish**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdddump/nc-ntdddump-dump_finish)
 
-[**Dump\_Unload**](https://msdn.microsoft.com/library/windows/hardware/ff552773)
+[**Dump\_Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntdddump/nc-ntdddump-dump_unload)
 
  
 

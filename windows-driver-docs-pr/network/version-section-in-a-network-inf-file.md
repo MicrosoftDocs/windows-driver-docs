@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-The **Version** section in a network INF file is based on the generic [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
+The **Version** section in a network INF file is based on the generic [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section).
 
 The **Version** section in a network INF file has the following network-specific entries:
 
@@ -106,7 +106,7 @@ The **Signature** entry must be **$Windows NT$**.
 
 ### PnpLockDown
 
-The **PnpLockDown** entry should be set to 1 to prevents applications from directly modifying the files that your driver package's INF file specifies. For more information about this entry, see [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
+The **PnpLockDown** entry should be set to 1 to prevents applications from directly modifying the files that your driver package's INF file specifies. For more information about this entry, see [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section).
 
 ### CatalogFile
 

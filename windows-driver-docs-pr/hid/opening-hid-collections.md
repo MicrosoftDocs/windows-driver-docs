@@ -22,7 +22,7 @@ This section describes how user-mode applications and kernel-mode drivers operat
 
 In general, a user-mode application does the following:
 
-- Calls [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) (**SetupDi***Xxx* functions) to find and identify a HID collection.
+- Calls [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) (**SetupDi***Xxx* functions) to find and identify a HID collection.
 
 - Calls CreateFile to open a file on a HID collection.
 
@@ -36,13 +36,13 @@ In general, a kernel-mode driver does the following:
 
 - Finds and identifies a HID collection
 
-  If the driver is a function or filter driver, it is already attached to the collection's device stack. However, if the driver is not attached to the collection's device stack, the driver can [use Plug and Play notification](https://msdn.microsoft.com/library/windows/hardware/ff565480).
+  If the driver is a function or filter driver, it is already attached to the collection's device stack. However, if the driver is not attached to the collection's device stack, the driver can [use Plug and Play notification](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-pnp-notification).
 
-- Uses an [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff550729) request to open the HID collection
+- Uses an [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) request to open the HID collection
 
 - Uses IOCTL\_HID\_*Xxx* requests to obtain the HID collection's preparsed data and information about the HID collection
 
-- Uses [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) requests to read input reports and [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819) requests to send output reports
+- Uses [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) requests to read input reports and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) requests to send output reports
 
 - Calls **HidP\_**<em>Xxx</em> HID support routines to interpret HID reports
 

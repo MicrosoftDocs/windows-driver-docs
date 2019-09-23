@@ -28,11 +28,11 @@ Listed are the most common installation issues for an audio adapter:
 
 -   An audio driver is easily designed to allow multiple identical instances of an audio adapter card to be plugged into the same system. For more information, see [System-Wide Unique Device IDs](system-wide-unique-device-ids.md).
 
--   For a list of INF file keywords that are common to all device classes, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433). However, this list does not contain several media-specific keywords. For more information, see [Media-Specific INF File Keywords](media-specific-inf-file-keywords.md).
+-   For a list of INF file keywords that are common to all device classes, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives). However, this list does not contain several media-specific keywords. For more information, see [Media-Specific INF File Keywords](media-specific-inf-file-keywords.md).
 
 -   For information about how an adapter driver or miniport driver can obtain setup information from the registry, see [Retrieving Device Setup Information](retrieving-device-setup-information.md).
 
--   For information about Windows Vista support for an audio adapter which does not have a physical volume control knob, see the [Windows Vista Software Volume Control Support](https://msdn.microsoft.com/library/windows/hardware/ff539263) topic.
+-   For information about Windows Vista support for an audio adapter which does not have a physical volume control knob, see the [Windows Vista Software Volume Control Support](https://docs.microsoft.com/windows-hardware/drivers/audio/software-volume-control-support) topic.
 
  
 

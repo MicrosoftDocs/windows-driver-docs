@@ -16,7 +16,7 @@ The NDIS\_STATUS\_WW\_INDICATION status is the same as the [**NDIS\_STATUS\_MEDI
 Remarks
 -------
 
-For more information about NDIS\_STATUS\_WW\_INDICATION, see [OID\_WW\_GEN\_INDICATION\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff561411).
+For more information about NDIS\_STATUS\_WW\_INDICATION, see [OID\_WW\_GEN\_INDICATION\_REQUEST](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561411(v=vs.85)).
 
 Requirements
 ------------
@@ -43,7 +43,7 @@ Requirements
 
 [**NDIS\_STATUS\_MEDIA\_SPECIFIC\_INDICATION**](ndis-status-media-specific-indication.md)
 
-[OID\_WW\_GEN\_INDICATION\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff561411)
+[OID\_WW\_GEN\_INDICATION\_REQUEST](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561411(v=vs.85))
 
  
 

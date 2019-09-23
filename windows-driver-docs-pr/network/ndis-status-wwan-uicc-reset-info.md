@@ -15,7 +15,7 @@ The NDIS_STATUS_WWAN_UICC_RESET_INFO status notification is sent by a modem mini
 1. After an [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md) query request.
 2. After UICC reset is complete following an OID_WWAN_UICC_RESET set request, to inform the MB host of the passthrough status of the UICC card post-reset.
 
-This notification uses the [NDIS_WWAN_UICC_RESET_INFO](https://msdn.microsoft.com/library/windows/hardware/9CBAFC44-187A-41ED-9405-1208167AC75D) structure.
+This notification uses the [NDIS_WWAN_UICC_RESET_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_reset_info) structure.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ This notification uses the [NDIS_WWAN_UICC_RESET_INFO](https://msdn.microsoft.co
 
 [OID_WWAN_UICC_RESET](oid-wwan-uicc-reset.md)
 
-[NDIS_WWAN_UICC_RESET_INFO](https://msdn.microsoft.com/library/windows/hardware/9CBAFC44-187A-41ED-9405-1208167AC75D)
+[NDIS_WWAN_UICC_RESET_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_reset_info)
 
 [MB low level UICC access](mb-low-level-uicc-access.md)
 

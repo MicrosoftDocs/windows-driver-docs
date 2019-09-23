@@ -48,7 +48,7 @@ The KSPROPERTY\_DVDCOPY\_CHLG\_KEY property transfers the bus challenge keys tha
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567636" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_CHLGKEY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567636)"><strong>KS_DVDCOPY_CHLGKEY</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_chlgkey" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_CHLGKEY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_chlgkey)"><strong>KS_DVDCOPY_CHLGKEY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -62,7 +62,7 @@ Remarks
 
 For **Get** requests, the DVD decoder provides its bus challenge key. For **Set** requests, the DVD decoder is provided the bus challenge key from the DVD drive.
 
-For more information about the bus challenge key, see [DVD Copyright Protection](https://msdn.microsoft.com/library/windows/hardware/ff558736).
+For more information about the bus challenge key, see [DVD Copyright Protection](https://docs.microsoft.com/windows-hardware/drivers/stream/dvd-copyright-protection).
 
 Requirements
 ------------
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**KS\_DVDCOPY\_CHLGKEY**](https://msdn.microsoft.com/library/windows/hardware/ff567636)
+[**KS\_DVDCOPY\_CHLGKEY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_chlgkey)
 
  
 

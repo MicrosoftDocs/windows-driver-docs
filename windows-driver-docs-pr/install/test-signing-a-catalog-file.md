@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Test-Signing a Catalog File
 
 
-After you create and verify a [driver package's](driver-packages.md) [catalog file](catalog-files.md), use [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) to test-sign the catalog file as described in the following topics:
+After you create and verify a [driver package's](driver-packages.md) [catalog file](catalog-files.md), use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) to test-sign the catalog file as described in the following topics:
 
 [Using a MakeCert Test Certificate or Commercial Test Certificate to Test-Sign a Driver package's Catalog File](#using-a-makecert-test-certificate-or-commercial-test-certificate-to-te)
 
@@ -24,7 +24,7 @@ After you create and verify a [driver package's](driver-packages.md) [catalog f
 Use the following SignTool command to sign a [catalog file](catalog-files.md) by using a [MakeCert test certificate](makecert-test-certificate.md) or a [commercial test certificate](commercial-test-certificate.md):
 
 ```cpp
-SignTool sign /v /s TestCertStoreName /n TestCertName /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
+SignTool sign /v /s TestCertStoreName /n TestCertName /t http://timestamp.digicert.com CatalogFileName.cat
 ```
 
 Where:
@@ -37,14 +37,14 @@ Where:
 
 -   The **/n** *TestCertName* option supplies the name of the test certificate that is installed in the certificate store named *TestCertStoreName*. The test certificate can be either a MakeCert test certificate or a commercial test certificate.
 
--   The **/t** *http://timestamp.verisign.com/scripts/timstamp.dll* option supplies the URL to the publicly-available time-stamp server that VeriSign provides.
+-   The **/t** *http://timestamp.digicert.com* option supplies the URL to the publicly-available time-stamp server that DigiCert provides.
 
 -   *CatalogFileName.cat* is the name of the [catalog file](catalog-files.md).
 
 The following command shows how to use SignTool to test-sign a [driver package's](driver-packages.md) catalog file. This example signs the catalog file *Tstamd64.cat*, which is in the same directory in which the command is run. The test certificate is named "contoso.com(test)," which is installed in the certificate store named "PrivateCertStore."
 
 ```cpp
-SignTool sign /v /s PrivateCertStore /n contoso.com(test) /t http://timestamp.verisign.com/scripts/timstamp.dll tstamd64.cat
+SignTool sign /v /s PrivateCertStore /n contoso.com(test) /t http://timestamp.digicert.com tstamd64.cat
 ```
 
 ### <a href="" id="using-an-enterprise-ca-test-certificate-to-test-sign-a-driver-package-"></a> Using an Enterprise CA Test Certificate to Test-Sign a Driver Package's Catalog File
@@ -54,7 +54,7 @@ The following SignTool command assumes that an Enterprise CA issues the test cer
 If you have created or obtained other test certificates in addition to an Enterprise CA test certificate, you must use the SignTool options **/s** and **/n** to specify the name of the test certificate store and the name of the test certificate that is installed in the test certificate store.
 
 ```cpp
-SignTool sign /v /a /t http://timestamp.verisign.com/scripts/timstamp.dll CatalogFileName.cat
+SignTool sign /v /a /t http://timestamp.digicert.com CatalogFileName.cat
 ```
 
  

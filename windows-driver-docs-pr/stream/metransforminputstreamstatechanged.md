@@ -28,7 +28,7 @@ When the Device MFT output is changed, the related input stream state may also n
 ## Remarks
 
 
-In response to this event, the device transform manager (DTM) will call [**GetInputStreamPreferredState**](https://msdn.microsoft.com/library/windows/hardware/mt797670) on the Device MFT with the specified input stream index. Device MFT will return the preferred state and mediatype.
+In response to this event, the device transform manager (DTM) will call [**GetInputStreamPreferredState**](https://docs.microsoft.com/windows/desktop/api/mftransform/nf-mftransform-imfdevicetransform-getinputstreampreferredstate) on the Device MFT with the specified input stream index. Device MFT will return the preferred state and mediatype.
 
 DTM would set the requested mediatype on the devproxy output stream and then transition it to the requested streaming state. If this succeeds, then DTM will set the same mediatype on the Device MFT input stream and transition it to the requested state.
 

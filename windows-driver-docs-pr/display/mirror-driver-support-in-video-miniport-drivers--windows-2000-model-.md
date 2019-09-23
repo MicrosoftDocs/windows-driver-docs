@@ -14,13 +14,13 @@ ms.custom: seodec18
 
 *Mirror driver* support for video miniport drivers is provided by Windows 2000 and later, so a miniport driver must not have any special code to attempt such support. See [Mirror Drivers](mirror-drivers.md) for more information about display drivers in mirroring systems.
 
-The requirements for a mirror driver miniport driver are minimal. The only functions which must be implemented are [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556159), which is exported by the miniport driver, and the following:
+The requirements for a mirror driver miniport driver are minimal. The only functions which must be implemented are [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/display/driverentry-of-video-miniport-driver), which is exported by the miniport driver, and the following:
 
-[*HwVidFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff567332)
+[*HwVidFindAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_find_adapter)
 
-[*HwVidInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff567345)
+[*HwVidInitialize*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_initialize)
 
-[*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367)
+[*HwVidStartIO*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_start_io)
 
 Since there is no physical display device associated with a mirrored surface, all three of the functions shown in the preceding list can be empty implementations that always return success.
 

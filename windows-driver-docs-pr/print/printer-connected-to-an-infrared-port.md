@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 Printers connected over an infrared (IR) port do not support Plug and Play using the 1284 device string. For a computer with an IR port, a service constantly polls for devices. When an IR Plug and Play printer is brought within range, a PDO is created under Enum\\Root\\ with a *device ID* of the form HWP*nnnn*. The *hardware ID* of the *devnode* has a single entry of the form HWP*nnnn*.
 
-The [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/hardware/ff547454) entries for a printer that supports Plug and Play over LPT and IR ports should appear similar to the following:
+The [**INF Manufacturer section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) entries for a printer that supports Plug and Play over LPT and IR ports should appear similar to the following:
 
 ```cpp
  

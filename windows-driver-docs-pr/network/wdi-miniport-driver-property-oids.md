@@ -4,6 +4,7 @@ description: This section contains WDI property OIDs.
 ms.assetid: 1B1B54B8-6CE4-4C17-AAF8-7394210B09E8
 ms.date: 07/18/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # WDI Property OIDs
@@ -16,10 +17,10 @@ The Wi-Fi Driver Interface (WDI) object identifiers (OIDs) apply only to minipor
 The following table specifies whether WDI OID query (Q), set (S), and NDIS 6.0 method (M) requests are required or optional to implement:
 
 <a href="" id="r"></a>**R**  
-Indicates that support for the object is required. The miniport driver must not fail set or query requests for the object by returning the status code NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
+Indicates that support for the object is required. The miniport driver must not fail set or query requests for the object by returning the status code NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function.
 
 <a href="" id="o"></a>**O**  
-Indicates that support for the object is optional. The miniport driver can either support query or set requests for the object, or the driver can fail the request by returning NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
+Indicates that support for the object is optional. The miniport driver can either support query or set requests for the object, or the driver can fail the request by returning NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function.
 
 | Name                                                                                                | Q   | S   | M   |
 |-----------------------------------------------------------------------------------------------------|-----|-----|-----|
@@ -56,6 +57,7 @@ Indicates that support for the object is optional. The miniport driver can eithe
 | [OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER](oid-wdi-set-receive-packet-filter.md)                     |     |     | R   |
 | [OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD](oid-wdi-set-remove-pm-protocol-offload.md)          |     |     | O   |
 | [OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN](oid-wdi-set-remove-wol-pattern.md)                           |     |     | O   |
+| [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md)                                      |     |     | O   |
 | [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](oid-wdi-set-tcp-offload-parameters.md)                   |     |     | O   |
 | [OID\_WDI\_TCP\_RSC\_STATISTICS](oid-wdi-tcp-rsc-statistics.md)                                    |     |     | O   |
 

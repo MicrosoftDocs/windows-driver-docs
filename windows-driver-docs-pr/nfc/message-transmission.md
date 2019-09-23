@@ -33,6 +33,6 @@ There is no mechanism defined in the NFP device driver interface to inform clien
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
-[Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
+[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
 

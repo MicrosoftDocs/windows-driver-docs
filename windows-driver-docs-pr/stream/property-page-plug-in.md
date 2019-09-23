@@ -58,7 +58,7 @@ private:
 
 To initialize the property page, the hosting property sheet calls [IPropertyPage::SetPageSite](https://go.microsoft.com/fwlink/p/?linkid=106442). This call results in a call of the plug-in's **OnConnect** method. At the time of this call, the property page has been connected to the filter, but the property page has not yet been displayed.
 
-The parameter provided in the call to **OnConnect** is the interface to KS proxy, which can then be queried for a pointer to **IKsPropertySet**. You can then call [**IKsPropertySet::Get**](https://msdn.microsoft.com/library/windows/hardware/ff560719) and [**IKsPropertySet::Set**](https://msdn.microsoft.com/library/windows/hardware/ff560721) to manipulate the exposed properties of the driver.
+The parameter provided in the call to **OnConnect** is the interface to KS proxy, which can then be queried for a pointer to **IKsPropertySet**. You can then call [**IKsPropertySet::Get**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-ikspropertyset-get) and [**IKsPropertySet::Set**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dsound/nf-dsound-ikspropertyset-set) to manipulate the exposed properties of the driver.
 
 You must also provide a **CreateInstance** method. The system invokes a property page's method to create an instance of the property page. This method should call the constructor of your class to instantiate it.
 

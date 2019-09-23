@@ -10,36 +10,25 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # IEEE 1394 bus driver design guide
 
-
-
-
-
 This section includes:
 
-[The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)
+[The IEEE 1394 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/the-ieee-1394-driver-stack)
 
-[Installing IEEE 1394 Device Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537224)
+[Installing IEEE 1394 Device Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/installing-ieee-1394-device-drivers)
 
-[Asynchronous I/O for IEEE 1394 Devices](https://msdn.microsoft.com/library/windows/hardware/ff536915)
+[Asynchronous I/O for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/asynchronous-i-o-for-ieee-1394-devices)
 
-[Isochronous I/O for IEEE 1394 Devices](https://msdn.microsoft.com/library/windows/hardware/ff537375)
+[Isochronous I/O for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/isochronous-i-o-for-ieee-1394-devices)
 
-[Modifying the 1394 Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/ff537433)
+[Modifying the 1394 Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/modifying-the-1394-configuration-rom)
 
-[IEEE 1394 Hardware Emulation Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537214)
+[IEEE 1394 Hardware Emulation Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/ieee-1394-hardware-emulation-drivers)
 
-[1394 Samples and Diagnostic Tools](https://msdn.microsoft.com/library/windows/hardware/ff536887)
+[1394 Samples and Diagnostic Tools](https://docs.microsoft.com/windows-hardware/drivers/ieee/1394-samples-and-diagnostic-tools)
 
-[IEC-61883 Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537188)
-
- 
-
- 
-
-
-
-
+[IEC-61883 Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-client-drivers)

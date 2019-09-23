@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # OID_GEN_VENDOR_DESCRIPTION
 
-As a query, the OID_GEN_VENDOR_DESCRIPTION OID points to a null-terminated string describing the Network Interface Controller (NIC). 
+As a query, the OID_GEN_VENDOR_DESCRIPTION OID points to a null-terminated Unicode string describing the Network Interface Controller (NIC). 
 
 Set requests are not supported.
 

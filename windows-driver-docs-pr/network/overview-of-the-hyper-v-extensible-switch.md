@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 Windows Server 2012 introduces the Hyper-V Extensible Switch (also called the Hyper-V Virtual Switch), which is a virtual Ethernet switch that runs in the management operating system of the Hyper-V parent partition. This page covers the following subjects:
 
 -   [Background Reading](#background-reading)
--   [Types of Hyper-V extensible switches and network adapters](#types-of-hyper-v--extensible-switches-and-network-adapters)
+-   [Types of Hyper-V extensible switches and network adapters](#types-of-hyper-v-extensible-switches-and-network-adapters)
 -   [Types of extensible switch extensions](#types-of-extensible-switch-extensions)
 -   [Hyper-V extensible switch architectural diagrams](#hyper-v-extensible-switch-architectural-diagrams)
 
@@ -21,9 +21,9 @@ Windows Server 2012 introduces the Hyper-V Extensible Switch (also called the H
 
 For high-level technical overviews of this technology and its underpinnings, see the following TechNet documentation:
 
--   [Hyper-V Virtual Switch Overview](https://technet.microsoft.com/library/hh831823.aspx)
--   [Hyper-V Network Virtualization Overview](https://technet.microsoft.com/library/jj134230.aspx)
--   [Hyper-V Overview](https://technet.microsoft.com/library/hh831531.aspx)
+-   [Hyper-V Virtual Switch Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831823(v=ws.11))
+-   [Hyper-V Network Virtualization Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134230(v=ws.11))
+-   [Hyper-V Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831531(v=ws.11))
 
 ## Types of Hyper-V extensible switches and network adapters
 

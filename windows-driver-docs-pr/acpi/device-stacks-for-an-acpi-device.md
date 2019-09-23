@@ -33,7 +33,7 @@ If the device is not a hardware device integrated into the system board, the ACP
 
 ### System-Supplied Root Bus Driver and ACPI Driver
 
-Microsoft supplies the root bus driver and the [ACPI driver](https://msdn.microsoft.com/library/windows/hardware/ff540493). On systems that have an ACPI BIOS, the HAL causes the ACPI driver to be loaded during system startup at the base of the device tree, where it acts as the interface between the operating system and the BIOS. The ACPI driver is transparent to other drivers.
+Microsoft supplies the root bus driver and the [ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver). On systems that have an ACPI BIOS, the HAL causes the ACPI driver to be loaded during system startup at the base of the device tree, where it acts as the interface between the operating system and the BIOS. The ACPI driver is transparent to other drivers.
 
 ### Vendor-Supplied Function Driver
 

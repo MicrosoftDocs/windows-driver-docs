@@ -27,7 +27,7 @@ The **!wmitrace.setprefix** extension specifies the trace message prefix that is
 
 
 <span id="______________"></span> **+**   
-Causes *PrefixVariables* to be apended to the trace message prefix. If the **+** token is not used, *PrefixVariables* replaces the existing trace message prefix.
+Causes *PrefixVariables* to be appended to the trace message prefix. If the **+** token is not used, *PrefixVariables* replaces the existing trace message prefix.
 
 <span id="_______PrefixVariables______"></span><span id="_______prefixvariables______"></span><span id="_______PREFIXVARIABLES______"></span> *PrefixVariables*   
 A set of variables that specifies the format and data in the trace message prefix.

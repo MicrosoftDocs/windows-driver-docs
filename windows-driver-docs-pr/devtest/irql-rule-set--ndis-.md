@@ -31,7 +31,7 @@ A driver that does not follow the IRQL rules can cause serious problems during o
 <tr class="odd">
 <td align="left"><p><a href="ndis-flags-irql.md" data-raw-source="[&lt;strong&gt;Flags_Irql&lt;/strong&gt;](ndis-flags-irql.md)"><strong>Flags_Irql</strong></a></p></td>
 <td align="left"><p>The <a href="ndis-flags-irql.md" data-raw-source="[&lt;strong&gt;Flags_Irql&lt;/strong&gt;](ndis-flags-irql.md)"><strong>Flags_Irql</strong></a> rule specifies that <strong>KeGetCurrentIrql</strong> must not be called within callback functions that have a dispatch level flag parameter that indicates the current IRQL.</p>
-<p>The correct use of the dispatch level flag can help you avoid unnecessary attempts to set the IRQL. For more information about how to use this flag, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546448" data-raw-source="[Dispatch IRQL Tracking](https://msdn.microsoft.com/library/windows/hardware/ff546448)">Dispatch IRQL Tracking</a>.</p></td>
+<p>The correct use of the dispatch level flag can help you avoid unnecessary attempts to set the IRQL. For more information about how to use this flag, see <a href="https://docs.microsoft.com/windows-hardware/drivers/network/dispatch-irql-tracking" data-raw-source="[Dispatch IRQL Tracking](https://docs.microsoft.com/windows-hardware/drivers/network/dispatch-irql-tracking)">Dispatch IRQL Tracking</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ndis-irql-callmanager-function.md" data-raw-source="[&lt;strong&gt;Irql_CallManager_Function&lt;/strong&gt;](ndis-irql-callmanager-function.md)"><strong>Irql_CallManager_Function</strong></a></p></td>
@@ -126,7 +126,7 @@ A driver that does not follow the IRQL rules can cause serious problems during o
     msbuild /t:sdv /p:Inputs="/check:Irql.sdv" mydriver.VcxProj /p:Configuration="Win8 Release" /p:Platform=Win32
     ```
 
-    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281) and [Static Driver Verifier commands (MSBuild)](https://msdn.microsoft.com/library/windows/hardware/hh466459).
+    For more information, see [Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers) and [Static Driver Verifier commands (MSBuild)](https://docs.microsoft.com/windows-hardware/drivers/devtest/-static-driver-verifier-commands--msbuild-).
 
  
 

@@ -47,7 +47,7 @@ The KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH property retrieves focal length inf
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter or node</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564408" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564408)"><strong>KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564418" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564418)"><strong>KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_focal_length_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_focal_length_s)"><strong>KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_focal_length_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_focal_length_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_FOCAL_LENGTH_S</strong></a></p></td>
 <td><p>LONG</p></td>
 </tr>
 </tbody>
@@ -60,7 +60,7 @@ The property value (operation data) is a LONG that specifies a camera's focal le
 Remarks
 -------
 
-You can use this property request to interpret zoom values. The range of zoom should be between **lObjectiveFocalLengthMin**/**lOcularFocalLength** and **lObjectiveFocalLengthMax**/**lOcularFocalLength**. (**lOcularFocalLength**, **lObjectiveFocalLengthMin**, and **lObjectiveFocalLengthMax** are members of the [**KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564408) and [**KSPROPERTY\_CAMERACONTROL\_NODE\_FOCAL\_LENGTH\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564418) structures.)
+You can use this property request to interpret zoom values. The range of zoom should be between **lObjectiveFocalLengthMin**/**lOcularFocalLength** and **lObjectiveFocalLengthMax**/**lOcularFocalLength**. (**lOcularFocalLength**, **lObjectiveFocalLengthMin**, and **lObjectiveFocalLengthMax** are members of the [**KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_focal_length_s) and [**KSPROPERTY\_CAMERACONTROL\_NODE\_FOCAL\_LENGTH\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_focal_length_s) structures.)
 
 For example, if **lObjectiveFocalLengthMax** = 105 and **lOcularFocalLength** = 35, then this camera is capable of a maximum optical zoom ratio of 105/35, or 3.
 
@@ -89,9 +89,9 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564408)
+[**KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_focal_length_s)
 
-[**KSPROPERTY\_CAMERACONTROL\_NODE\_FOCAL\_LENGTH\_S**](https://msdn.microsoft.com/library/windows/hardware/ff564418)
+[**KSPROPERTY\_CAMERACONTROL\_NODE\_FOCAL\_LENGTH\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_focal_length_s)
 
 [**KSPROPERTY\_CAMERACONTROL\_ZOOM**](ksproperty-cameracontrol-zoom.md)
 

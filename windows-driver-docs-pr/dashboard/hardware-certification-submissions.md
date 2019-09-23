@@ -18,7 +18,7 @@ To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https
 After you develop and test your product, you can submit the results with a hardware submission.
 
 > [!NOTE]
-> We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
+> We strongly encourage you to include public driver symbols as part your HLK package. See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
 
 - To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
@@ -130,7 +130,10 @@ This section displays certification information. Select **See more info** to exp
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr class="even">
+<td><p>Retpoline Compiled</p></td>
+<td><p>Indicates whether or not your driver was compiled with the Retpoline flag.  A Check mark = True and an X = False.  For more information about this change see our <a href="https://techcommunity.microsoft.com/t5/Hardware-Dev-Center/Upcoming-Hardware-Dev-Center-changes-that-enable-support-for/ba-p/504574">blog post</a>. </p></td>
+</tr><tr class="even">
 <td><p>Is this a Universal Windows driver?</p></td>
 <td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers" data-raw-source="[Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)">Getting Started with Universal Windows drivers</a>.</p></td>
 </tr>
@@ -159,7 +162,7 @@ This section displays certification information. Select **See more info** to exp
 </tbody>
 </table>
 
-Submissions are automatically assigned Declarative and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declarative=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declarative and another set is not, the entire submission would be marked as `Declarative=False`. Each set should be separated into two submissions to ensure they are marked appropriately. 
+Submissions are automatically assigned Declarative and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declarative=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declarative and another set is not, the entire submission would be marked as `Declarative=False`. INF only packages will have Universal greyed out as there are no binaries to validate.  Each set should be separated into two submissions to ensure they are marked appropriately. 
 
 If you want to add or update your announcement date, use the **Announcement date (UTC)** field and select **Submit**.
 

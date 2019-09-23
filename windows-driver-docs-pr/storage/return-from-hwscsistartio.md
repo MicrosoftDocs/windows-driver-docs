@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_return_from_hwscsistartio_kg"></span><span id="DDK_RETURN_FROM_HWSCSISTARTIO_KG"></span>
 
 
-Every [**HwScsiStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557323) routine must return **TRUE**, indicating that the input request was processed.
+Every [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine must return **TRUE**, indicating that the input request was processed.
 
 If the *HwScsiStartIo* routine cannot carry out a requested operation when it is called, *HwScsiStartIo* should do the following:
 
 1.  Set the input SRB's **SrbStatus** to SRB\_STATUS\_BUSY.
 
-2.  Call [**ScsiPortNotification**](https://msdn.microsoft.com/library/windows/hardware/ff564657) with the *NotificationType***RequestComplete** and with the input SRB.
+2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestComplete** and with the input SRB.
 
 3.  Call **ScsiPortNotification** with the *NotificationType***NextRequest** if the driver can accept a request to a different target logical unit than the one in the just completed SRB.
 

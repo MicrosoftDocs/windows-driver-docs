@@ -165,7 +165,7 @@ Applications have no visibility into how many modes are present, with the except
 
 Applications should request the optimal audio effect processing, regardless of the audio hardware configuration. For example, tagging a stream as Communications will let Windows know to pause background music.
 
-For more information about the static audio stream categories, see [AudioCategory enumeration](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.audiocategory.aspx) and [MediaElement.AudioCategory property](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.mediaelement.audiocategory.aspx).
+For more information about the static audio stream categories, see [AudioCategory enumeration](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.AudioCategory) and [MediaElement.AudioCategory property](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaElement#Windows_UI_Xaml_Controls_MediaElement_AudioCategory).
 
 ## <span id="CLSIDs_for_System_Effects"></span><span id="clsids_for_system_effects"></span><span id="CLSIDS_FOR_SYSTEM_EFFECTS"></span>CLSIDs for System Effects
 
@@ -190,7 +190,7 @@ DEFINE_GUIDSTRUCT("E1F89EB5-5F46-419B-967B-FF6770B98401", KSATTRIBUTEID_AUDIOSIG
 #define KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE DEFINE_GUIDNAMED(KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE)
 ```
 
-KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is used to by mode aware drivers with a [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structure which contain a [**KSATTRIBUTE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/mt727894). This list has a single element in it which is a [**KSATTRIBUTE**](https://msdn.microsoft.com/library/windows/hardware/ff560987). The Attribute member of the **KSATTRIBUTE** structure is set to KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE.
+KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE is used to by mode aware drivers with a [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structure which contain a [**KSATTRIBUTE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksattribute_list). This list has a single element in it which is a [**KSATTRIBUTE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksattribute). The Attribute member of the **KSATTRIBUTE** structure is set to KSATTRIBUTEID\_AUDIOSIGNALPROCESSING\_MODE.
 
 ## <span id="Audio_Effects"></span><span id="audio_effects"></span><span id="AUDIO_EFFECTS"></span>Audio Effects
 

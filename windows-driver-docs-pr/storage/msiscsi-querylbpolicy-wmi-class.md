@@ -47,7 +47,7 @@ class MSiSCSI_QueryLBPolicy
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_QueryLBPolicy**](https://msdn.microsoft.com/library/windows/hardware/ff563107) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_QueryLBPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_msiscsi_querylbpolicy) data structure.
 
  
 

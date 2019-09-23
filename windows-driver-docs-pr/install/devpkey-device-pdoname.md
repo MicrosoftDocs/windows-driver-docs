@@ -54,11 +54,11 @@ The DEVPKEY_Device_PDOName device property represents the name of the physical d
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) routine.
+Windows sets the value of DEVPKEY_Device_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) routine.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_PDOName.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PDOName.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PDOName property key. Instead, you can use the corresponding SPDRP_PHYSICAL_DEVICE_OBJECT_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PDOName property key. Instead, you can use the corresponding SPDRP_PHYSICAL_DEVICE_OBJECT_NAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
 
 Requirements
 ------------
@@ -83,9 +83,9 @@ Requirements
 ## See also
 
 
-[**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397)
+[**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

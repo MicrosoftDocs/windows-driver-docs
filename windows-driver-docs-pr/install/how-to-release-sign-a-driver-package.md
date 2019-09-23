@@ -38,7 +38,7 @@ Each topic in this section describes a separate procedure in the release-signing
 Throughout this section, separate computers are used for the various processes involved in release-signing a driver. These computers are referred to as follows:
 
 <a href="" id="--------signing-computer"></a> **Signing computer**  
-This is the computer that is used to release-sign a driver package for Windows Vista and later versions of Windows. This computer must be running Windows XP SP2 or later versions of Windows. To use the [driver signing tools](https://msdn.microsoft.com/library/windows/hardware/ff552958), this computer must have the Windows Vista and later versions of the Windows Driver Kit (WDK) installed.
+This is the computer that is used to release-sign a driver package for Windows Vista and later versions of Windows. This computer must be running Windows XP SP2 or later versions of Windows. To use the [driver signing tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-signing-drivers), this computer must have the Windows Vista and later versions of the Windows Driver Kit (WDK) installed.
 
 <a href="" id="test-computer"></a>**Test computer**  
 This is the computer that is used to install and test the release-signed driver package. This computer must be running Windows Vista or later versions of Windows.

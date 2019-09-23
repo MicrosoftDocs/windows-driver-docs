@@ -67,11 +67,12 @@ The following special characters modify the ID parameter.
 <td align="left"><p>Matches the string literally (exactly as it appears). Precede a string with a single quote to indicate that an asterisk is part of the ID name and is not a wildcard character, for example, <strong>'*PNP0600</strong>, where *PNP0600 (including the asterisk) is the hardware ID.</p></td>
 </tr>
 </tbody>
-</table>
+</table>  
 
 
 
-<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>   
+<span id="________class______"></span><span id="________CLASS______"></span>  
+**=**_class_   
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.

@@ -37,7 +37,7 @@ The corresponding format-subtype GUID can be specified in terms of the wave-form
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_DOLBY_AC3_SPDIF)
 ```
 
-The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the AC-3-over-S/PDIF format:
+The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) table entries for a pin that supports the AC-3-over-S/PDIF format:
 
 ```cpp
 static KSDATARANGE_AUDIO PinDataRangesAC3Stream[] =

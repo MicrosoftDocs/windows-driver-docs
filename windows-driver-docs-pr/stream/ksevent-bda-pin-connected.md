@@ -50,9 +50,9 @@ Requirements
 ## See also
 
 
-[**KSEVENT**](https://msdn.microsoft.com/library/windows/hardware/ff561744)
+[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
 
-[**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750)
+[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)
 
  
 

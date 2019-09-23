@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_WRITEONCEDISK
 
 
-The GUID_DEVINTERFACE_WRITEONCEDISK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for write-once disk devices.
+The GUID_DEVINTERFACE_WRITEONCEDISK [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for write-once disk devices.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The GUID_DEVINTERFACE_WRITEONCEDISK [device interface class](https://msdn.micros
 Remarks
 -------
 
-The system-supplied [storage drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976) register instances of GUID_DEVINTERFACE_WRITEONCEDISK to notify the operating system and application of the presence of write-once disks, such as a CD-R.
+The system-supplied [storage drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers) register instances of GUID_DEVINTERFACE_WRITEONCEDISK to notify the operating system and application of the presence of write-once disks, such as a CD-R.
 
 [**WriteOnceDiskClassGuid**](writeoncediskclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_WRITEONCEDISK device interface class. For new instances of this class, use GUID_DEVINTERFACE_WRITEONCEDISK instead.
 

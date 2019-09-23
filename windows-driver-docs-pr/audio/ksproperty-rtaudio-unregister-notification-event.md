@@ -46,7 +46,7 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537499" data-raw-source="[&lt;strong&gt;KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537499)"><strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property" data-raw-source="[&lt;strong&gt;KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)"><strong>KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</strong></a></p></td>
 <td align="left"><p><strong>NULL</strong></p></td>
 </tr>
 </tbody>
@@ -54,7 +54,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure along with a user-mode event handle.
+The property descriptor (instance data) consists of a KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY structure that contains a [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) structure along with a user-mode event handle.
 
 The property value (operation data) for this property is **NULL** because no operation data is returned.
 
@@ -96,7 +96,7 @@ Remarks
 
 This property is used to unregister user-mode events from DMA-driven event notification.
 
-When the pin is placed into the run state (KSSTATE\_RUN) the registered events are signaled once or twice per cycle of the cyclic audio buffer, depending on the notification count requested when [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md) was called. For more information about KSSTATE\_RUN, see the [State Transitions](https://msdn.microsoft.com/library/windows/hardware/ff568227) topic.
+When the pin is placed into the run state (KSSTATE\_RUN) the registered events are signaled once or twice per cycle of the cyclic audio buffer, depending on the notification count requested when [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md) was called. For more information about KSSTATE\_RUN, see the [State Transitions](https://docs.microsoft.com/windows-hardware/drivers/stream/state-transitions) topic.
 
 After you stop the pin and prior to the step where you close it, each registered event must be unregistered via a call to KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT.
 
@@ -123,9 +123,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)
+[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
 
-[**KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff537499)
+[**KSRTAUDIO\_NOTIFICATION\_EVENT\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property)
 
 [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md)
 

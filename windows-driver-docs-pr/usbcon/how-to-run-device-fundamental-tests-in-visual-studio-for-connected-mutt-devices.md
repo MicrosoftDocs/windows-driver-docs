@@ -59,7 +59,7 @@ Before you start running devfund tests, make sure that you meet the following re
 For more information about the tests in the preceding list, see **About the Device Fundamental Tests** in [How to select and configure the Device Fundamental tests](https://go.microsoft.com/fwlink/p/?linkid=316387).
 
 ## Related topics
-[USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
 [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
 
 

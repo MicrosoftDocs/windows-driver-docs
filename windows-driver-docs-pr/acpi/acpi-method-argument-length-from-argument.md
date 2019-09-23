@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro
 
 
-The ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an [**ACPI\_METHOD\_ARGUMENT**](https://msdn.microsoft.com/library/windows/hardware/ff536125) structure.
+The ACPI\_METHOD\_ARGUMENT\_LENGTH\_FROM\_ARGUMENT macro calculates the size, in bytes, of the data that is contained in the Data array of an [**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure.
 
 Syntax
 ------
@@ -61,7 +61,7 @@ Requirements
 ## See also
 
 
-[**ACPI\_METHOD\_ARGUMENT**](https://msdn.microsoft.com/library/windows/hardware/ff536125)
+[**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
 
  
 

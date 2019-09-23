@@ -42,12 +42,12 @@ Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. 
 Remarks
 -------
 
-The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure, which points to the driver-supplied [*DdMoCompDestroy*](https://msdn.microsoft.com/library/windows/hardware/ff549664) callback.
+The **ProcAmpControlCloseStream** function maps directly to a **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure, which points to the driver-supplied [*DdMoCompDestroy*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_destroy) callback.
 
 ## <span id="see_also"></span>See also
 
 
-[**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660)
+[**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
 [**ProcAmpControlOpenStream**](dxva-procampcontroldeviceclass-procampcontrolopenstream.md)
 

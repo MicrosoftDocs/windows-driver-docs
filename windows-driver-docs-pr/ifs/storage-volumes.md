@@ -38,9 +38,9 @@ When a file system is mounted on a storage volume, it creates a file system volu
 
 The *Mount Manager* is the part of the I/O system that is responsible for managing storage volume information such as volume names, drive letters, and volume mount points. When a new storage volume is added to the system, the Mount Manager is notified of its arrival in either of the following ways:
 
--   The class driver that created the storage volume calls [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) to register a new interface in the MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class. When this happens, the Plug and Play device interface notification mechanism alerts the Mount Manager of the volume's arrival in the system.
+-   The class driver that created the storage volume calls [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) to register a new interface in the MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class. When this happens, the Plug and Play device interface notification mechanism alerts the Mount Manager of the volume's arrival in the system.
 
--   The driver for the storage volume sends the Mount Manager an IRP\_MJ\_DEVICE\_CONTROL request, specifying [**IOCTL\_MOUNTMGR\_VOLUME\_ARRIVAL\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff560477) for the I/O control code. This request can be created by calling [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318).
+-   The driver for the storage volume sends the Mount Manager an IRP\_MJ\_DEVICE\_CONTROL request, specifying [**IOCTL\_MOUNTMGR\_VOLUME\_ARRIVAL\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountmgr_volume_arrival_notification) for the I/O control code. This request can be created by calling [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
 
 ### <span id="ddk_unique_volume_name_if"></span><span id="DDK_UNIQUE_VOLUME_NAME_IF"></span>Unique Volume Name
 
@@ -52,7 +52,7 @@ The Mount Manager responds to the arrival of a new storage volume by querying th
 
 -   A suggested persistent symbolic link name for the volume, such as a drive letter (for example, "\\DosDevices\\D:")
 
-For more information about the interaction between storage drivers and the Mount Manager, see [Supporting Mount Manager Requests in a Storage Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff567603).
+For more information about the interaction between storage drivers and the Mount Manager, see [Supporting Mount Manager Requests in a Storage Class Driver](https://docs.microsoft.com/windows-hardware/drivers/storage/supporting-mount-manager-requests-in-a-storage-class-driver).
 
  
 

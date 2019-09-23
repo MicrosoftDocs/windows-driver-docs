@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_WAKE\_PACKET\_MAGIC\_PACKET
 
 
-WDI\_TLV\_WAKE\_PACKET\_MAGIC\_PACKET is a TLV that contains a pattern ID of a magic packet for [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925858).
+WDI\_TLV\_WAKE\_PACKET\_MAGIC\_PACKET is a TLV that contains a pattern ID of a magic packet for [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-add-wol-pattern).
 
 ## TLV Type
 

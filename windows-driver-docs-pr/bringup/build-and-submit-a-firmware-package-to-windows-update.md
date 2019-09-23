@@ -11,13 +11,13 @@ Because a firmware update is delivered as a driver package, it follows the same 
 
 1. When the contents of the driver package are installed on the System Under Test (SUT), the device must pass the required Windows Hardware Lab Kit (HLK) tests. If there is not a test specifically for the firmware being tested, locate the most reasonable alternative and submit results with the HLK package as needed.
 
-2. The driver package can then be submitted to the [Partner Center](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) for signing.
+2. The driver package can then be submitted to the [Partner Center](https://partner.microsoft.com/dashboard) for signing.
 
 3. Once signed, the driver package is provided to the submitter where the submitter has the option to publish on Windows Update (WU) via the Hardware Dashboard (using the Driver Distribution feature).
 
-Publishing to Windows Update is done via the [Hardware Dashboard](https://developer.microsoft.com/windows/hardware/dashboard-sign-in) using the Driver Distribution feature.
+Publishing to Windows Update is done via the [Hardware Dashboard](https://partner.microsoft.com/dashboard) using the Driver Distribution feature.
 
-Signing of the driver package is different from signing the UEFI firmware, though both need to be signed. Signing is via Hardware Dashboard using the file signing services feature. The signature on the driver package, delivered via security catalog, is used by Windows to verify the integrity of firmware.bin before handing it to UEFI. Windows does not provide the security catalog to the firmware. The signature on the UEFI firmware or device firmware update is validated by the platform firmware and is not checked by Windows. The IHV or OEM is responsible for ensuring the integrity and security of the firmware through signature verification, encryption, or other means. Review the [Microsoft UEFI CA Signing policy updates](https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/microsoft-uefi-ca-signing-policy-updates/) link below for additional details.
+Signing of the driver package is different from signing the UEFI firmware, though both need to be signed. Signing is via Hardware Dashboard using the file signing services feature. The signature on the driver package, delivered via security catalog, is used by Windows to verify the integrity of firmware.bin before handing it to UEFI. Windows does not provide the security catalog to the firmware. The signature on the UEFI firmware or device firmware update is validated by the platform firmware and is not checked by Windows. The IHV or OEM is responsible for ensuring the integrity and security of the firmware through signature verification, encryption, or other means. Review the [Microsoft UEFI CA Signing policy updates](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification) link below for additional details.
 
 Next, sign the contents of the capsule. The capsule content itself is determined by the OEM. The capsule may just contain a catalog of firmware images to update in whatever format the OEM chooses, or it may be delivered in the form of an EFI Application image (PE/COFF file format). If the capsule is a PE/COFF file, then it must be signed by the OEM before submitting to Microsoft for Windows Firmware Update Package signing.
 
@@ -68,7 +68,7 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/dashboard)
 
-[Microsoft UEFI CA Signing Policy updates](https://blogs.msdn.microsoft.com/windows_hardware_certification/2013/12/03/microsoft-uefi-ca-signing-policy-updates/)
+[Microsoft UEFI CA Signing Policy updates](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
 [View test results and log files](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-7-view-test-results-and-log-files)
 
@@ -78,10 +78,10 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 [Troubleshooting Device Fundamentals Reliability Testing by using the Windows HLK](https://docs.microsoft.com/windows-hardware/test/hlk/testref/troubleshooting-device-fundamentals-reliability-testing-by-using-the-windows-hck)
 
-[Windows Hardware Certification blog](https://blogs.msdn.microsoft.com/windows_hardware_certification)
+[Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
 [Windows UEFI firmware update platform](https://docs.microsoft.com/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform)
 
-[Partner Center](https://developer.microsoft.com/windows/hardware/dashboard-sign-in)
+[Partner Center](https://partner.microsoft.com/dashboard)
 
 [ESRT table definition ](https://docs.microsoft.com/windows-hardware/drivers/bringup/esrt-table-definition)

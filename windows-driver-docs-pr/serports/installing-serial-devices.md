@@ -10,10 +10,6 @@ ms.localizationpriority: medium
 
 # Installing Serial Devices
 
-
-
-
-
 This section includes the following topics about installing serial devices:
 
 [Installing Serial Ports and COM Ports](installing-serial-ports-and-com-ports.md)
@@ -26,14 +22,6 @@ This section includes the following topics about installing serial devices:
 
 There are no other serial-specific requirements for installing serial devices.
 
-For general information about installing devices, see the [Device Installation Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff541156) section.
+For general information about installing devices, see the [Device Installation Design Guide](https://docs.microsoft.com/windows-hardware/drivers/install/index) section.
 
-For more information about serial devices, see [Serial Devices and Drivers](https://msdn.microsoft.com/library/windows/hardware/ff547451).
-
- 
-
- 
-
-
-
-
+For more information about serial devices, see [Serial Devices and Drivers](https://docs.microsoft.com/previous-versions/ff547451(v=vs.85)).

@@ -27,7 +27,7 @@ The interface plug-in provides programmatic control to get and set property valu
 
 [Property Page Plug-in](property-page-plug-in.md)
 
-For more information about the KS proxy COM interfaces, exported helper functions, and structures that are used by applications and plug-ins, see [Kernel Streaming Proxy](https://msdn.microsoft.com/library/windows/hardware/ff560877).
+For more information about the KS proxy COM interfaces, exported helper functions, and structures that are used by applications and plug-ins, see [Kernel Streaming Proxy](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index).
 
  
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
  
 
-This section provides a high-level overview of the device installation process. This process is performed by Windows and its [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) when a new device is connected to the computer, and consists of the following steps:
+This section provides a high-level overview of the device installation process. This process is performed by Windows and its [device installation components](https://docs.microsoft.com/previous-versions/ff541277(v=vs.85)) when a new device is connected to the computer, and consists of the following steps:
 
 [Step 1: The New Device is Identified](step-1--the-new-device-is-identified.md)
 

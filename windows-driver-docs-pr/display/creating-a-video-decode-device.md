@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Creating a Video Decode Device
 
 
-The Microsoft Direct3D runtime calls the user-mode display driver's [**CreateDecodeDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540618) function to create a decode device for video acceleration (VA). When the Direct3D runtime is finished with the decode device, it calls the user-mode display driver's [**DestroyDecodeDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552757) function.
+The Microsoft Direct3D runtime calls the user-mode display driver's [**CreateDecodeDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_createdecodedevice) function to create a decode device for video acceleration (VA). When the Direct3D runtime is finished with the decode device, it calls the user-mode display driver's [**DestroyDecodeDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_destroydecodedevice) function.
 
  
 

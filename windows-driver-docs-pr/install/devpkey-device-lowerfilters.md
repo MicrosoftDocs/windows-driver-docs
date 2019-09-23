@@ -54,11 +54,11 @@ The DEVPKEY_Device_LowerFilters device property represents a list of the service
 Remarks
 -------
 
-The value of the DEVPKEY_Device_LowerFilters property is set when a lower-level device filter driver is installed for a device. For more information about how to install a device filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595).
+The value of the DEVPKEY_Device_LowerFilters property is set when a lower-level device filter driver is installed for a device. For more information about how to install a device filter driver, see [Installing a Filter Driver](https://docs.microsoft.com/windows-hardware/drivers/install/installing-a-filter-driver).
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to retrieve and set the value of DEVPKEY_Device_LowerFilters.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve and set the value of DEVPKEY_Device_LowerFilters.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LowerFilters property key. Instead, you can use the corresponding SPDRP_LOWERFILTERS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LowerFilters property key. Instead, you can use the corresponding SPDRP_LOWERFILTERS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
 
 Requirements
 ------------
@@ -83,9 +83,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163)
+[**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

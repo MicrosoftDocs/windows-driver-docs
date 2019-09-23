@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # dpinstTitle XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
 The **dpinstTitle** XML element customizes the text that appears on the title bar of all of the DPInst wizard pages.
 

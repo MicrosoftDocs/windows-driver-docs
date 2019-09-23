@@ -30,21 +30,21 @@ Be aware that a single filter control mutex is used for the object hierarchy und
 
 AVStream holds the filter control mutex on behalf of the minidriver when it calls the following minidriver-supplied routines:
 
--   [*AVStrMiniFilterCreate*](https://msdn.microsoft.com/library/windows/hardware/ff556310)
+-   [*AVStrMiniFilterCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnksfilterirp)
 
--   [*AVStrMiniFilterClose*](https://msdn.microsoft.com/library/windows/hardware/ff556307)
+-   [*AVStrMiniFilterClose*](https://docs.microsoft.com/previous-versions/ff556307(v=vs.85))
 
--   [*AVStrMiniPinCreate*](https://msdn.microsoft.com/library/windows/hardware/ff556334)
+-   [*AVStrMiniPinCreate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinirp)
 
--   [*AVStrMiniPinClose*](https://msdn.microsoft.com/library/windows/hardware/ff556329)
+-   [*AVStrMiniPinClose*](https://docs.microsoft.com/previous-versions/ff556329(v=vs.85))
 
--   [*AVStrMiniPinConnect*](https://msdn.microsoft.com/library/windows/hardware/ff556332)
+-   [*AVStrMiniPinConnect*](https://docs.microsoft.com/previous-versions/ff556332(v=vs.85))
 
--   [*AVStrMiniPinDisconnect*](https://msdn.microsoft.com/library/windows/hardware/ff556337)
+-   [*AVStrMiniPinDisconnect*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinvoid)
 
--   [*AVStrMiniPinSetDataFormat*](https://msdn.microsoft.com/library/windows/hardware/ff556355)
+-   [*AVStrMiniPinSetDataFormat*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinsetdataformat)
 
--   [*AVStrMiniPinSetDeviceState*](https://msdn.microsoft.com/library/windows/hardware/ff556359)
+-   [*AVStrMiniPinSetDeviceState*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinsetdevicestate)
 
 Similar to the device mutex, the filter control mutex must not be obtained recursively. If, for example, AVStream makes a callback to a minidriver for a *Create* dispatch in the context of thread A, and the minidriver later attempts to obtain the mutex from within thread A, thread A deadlocks with itself.
 
@@ -56,7 +56,7 @@ A deadlock can occur if you do either of the following actions:
 
 To manipulate the filter control mutex, use the following functions:
 
-[**KsAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff560908), [**KsFilterAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff562523), [**KsPinAcquireControl**](https://msdn.microsoft.com/library/windows/hardware/ff563485), [**KsReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff566780), [**KsFilterReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff562551), [**KsPinReleaseControl**](https://msdn.microsoft.com/library/windows/hardware/ff563526)
+[**KsAcquireControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksacquirecontrol), [**KsFilterAcquireControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfilteracquirecontrol), [**KsPinAcquireControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinacquirecontrol), [**KsReleaseControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksreleasecontrol), [**KsFilterReleaseControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfilterreleasecontrol), [**KsPinReleaseControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinreleasecontrol)
 
  
 

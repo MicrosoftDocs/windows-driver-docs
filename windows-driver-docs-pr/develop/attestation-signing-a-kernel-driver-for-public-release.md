@@ -37,14 +37,14 @@ To attestation sign a kernel mode driver complete the following steps:
 
 Before you can submit binaries files using the dashboard to be signed, you need to acquire an extended validation (EV) code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company's ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
 
-Follow the process described in [Get a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx) to acquire the needed EV code signing certificate.
+Follow the process described in [Get a code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/) to acquire the needed EV code signing certificate.
 
 ## <span id="Register_your_company_for_Windows_Hardware_Dashboard_Services"></span><span id="register_your_company_for_windows_hardware_dashboard_services"></span><span id="REGISTER_YOUR_COMPANY_FOR_WINDOWS_HARDWARE_DASHBOARD_SERVICES"></span>Register your company for Windows Hardware Dashboard Services
 
 
 You can certify your devices and apps for hardware certification using the Hardware Dev Center Dashboard. To access the Hardware Dev Center Dashboard, you'll need to register your company and get a code signing certificate.
 
-Follow the process described in [Before You Sign In](https://msdn.microsoft.com/library/windows/hardware/br230782) to set up the account you will need on the dashboard.
+Follow the process described in [Before You Sign In](https://docs.microsoft.com/windows-hardware/drivers/dashboard/) to set up the account you will need on the dashboard.
 
 ## <span id="_Download_and_install_the_Windows_Driver_Kit"></span><span id="_download_and_install_the_windows_driver_kit"></span><span id="_DOWNLOAD_AND_INSTALL_THE_WINDOWS_DRIVER_KIT"></span> Download and install the Windows Driver Kit
 
@@ -187,7 +187,7 @@ To create a CAB file submission for the dashboard complete the following steps.
    </colgroup>
    <tbody>
    <tr class="odd">
-   <td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /s MY /n "Subject Name of the Signing Certificate" /t http://timestamp.verisign.com/scripts/timstamp.dll "C:\Echo\Disk1\Echo.cab"</code></pre></td>
+   <td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /s MY /n "Subject Name of the Signing Certificate" /t http://timestamp.digicert.com "C:\Echo\Disk1\Echo.cab"</code></pre></td>
    </tr>
    </tbody>
    </table>
@@ -199,7 +199,7 @@ To create a CAB file submission for the dashboard complete the following steps.
 ## <span id="Submit_the_EV_signed_Cab_file_using_the__Windows_Hardware_Developer_Center_Dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__windows_hardware_developer_center_dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__WINDOWS_HARDWARE_DEVELOPER_CENTER_DASHBOARD"></span>Submit the EV signed Cab file using the Hardware Dev Center Dashboard
 
 
-1. Submit the EV signed Cab file using the Hardware Dev Center Dashboard. For more information see [Driver Signing Properties](driver-signing-properties.md) and [File Signing Services](https://msdn.microsoft.com/Library/Windows/Hardware/Dn771767.aspx).
+1. Submit the EV signed Cab file using the Hardware Dev Center Dashboard. For more information see [Driver Signing Properties](driver-signing-properties.md) and [File Signing Services](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
 As part of the submission process you will indicate what architectures all of the drivers in the submission support. Three options are available using the check boxes.
 

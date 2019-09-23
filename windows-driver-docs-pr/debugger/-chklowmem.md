@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !chklowmem
 
 
-The **!chklowmem** extension determines whether physical memory pages below 4 GB are filled with the required fill pattern on a computer that was booted with the [**/pae**](https://msdn.microsoft.com/library/windows/hardware/ff557168) and [**/nolowmem**](https://msdn.microsoft.com/library/windows/hardware/ff557144) options.
+The **!chklowmem** extension determines whether physical memory pages below 4 GB are filled with the required fill pattern on a computer that was booted with the [**/pae**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-pae) and [**/nolowmem**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-nolowmem) options.
 
 ```dbgsyntax
 !chklowmem

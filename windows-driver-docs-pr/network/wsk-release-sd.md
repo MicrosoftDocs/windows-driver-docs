@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 A WSK application uses the WSK\_RELEASE\_SD client control operation to release a cached copy of a security descriptor that either was previously obtained by using the [**WSK\_CACHE\_SD**](wsk-cache-sd.md) client control operation or was retrieved by using the [**SO\_WSK\_SECURITY**](so-wsk-security.md) socket option.
 
-To release a cached copy of a security descriptor, a WSK application calls the [**WskControlClient**](https://msdn.microsoft.com/library/windows/hardware/ff571126) function with the following parameters.
+To release a cached copy of a security descriptor, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>

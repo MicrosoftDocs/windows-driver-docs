@@ -22,7 +22,7 @@ The following types of operations can be IRP-based or fast I/O operations:
 
 -   IRP\_MJ\_QUERY\_INFORMATION. This operation can be fast I/O if the **FileInformationClass** parameter is **FileBasicInformation**, **FileStandardInformation**, or **FileNetworkOpenInformation**.
 
--   IRP\_MJ\_READ. Minifilter drivers can set the FLTFL\_OPERATION\_REGISTRATION\_SKIP\_CACHED\_IO flag in the [**FLT\_OPERATION\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff544668) structure to avoid receiving fast I/O IRP\_MJ\_READ operations and cached IRP-based reads.
+-   IRP\_MJ\_READ. Minifilter drivers can set the FLTFL\_OPERATION\_REGISTRATION\_SKIP\_CACHED\_IO flag in the [**FLT\_OPERATION\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/ns-fltkernel-_flt_operation_registration) structure to avoid receiving fast I/O IRP\_MJ\_READ operations and cached IRP-based reads.
 
 -   IRP\_MJ\_WRITE. Minifilter drivers can set the FLTFL\_OPERATION\_REGISTRATION\_SKIP\_CACHED\_IO flag in the FLT\_OPERATION\_REGISTRATION structure to avoid receiving fast I/O IRP\_MJ\_WRITE operations and cached IRP-based writes.
 

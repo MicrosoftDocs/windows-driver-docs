@@ -13,7 +13,7 @@ To create an unsigned catalog file for a driver package, follow these steps:
 
 1. Add the required INF **CatalogFile**=<em>FileName</em>**.Cat** entry or INF **CatalogFile.**<em>PlatformExtension</em>=<em>unique-filename</em>**.Cat** entries to the [**INF Version section**](inf-version-section.md) of a [driver package's](driver-packages.md) INF file. For information about how to use platform extensions, see [Cross-Platform INF Files](cross-platform-inf-files.md).
 
-2. Use the [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089) tool to verify that the driver package can be signed for the target platforms and to generate the unsigned [catalog files](catalog-files.md) (*.cat* files) that apply to the target platforms.
+2. Use the [**Inf2Cat**](https://docs.microsoft.com/windows-hardware/drivers/devtest/inf2cat) tool to verify that the driver package can be signed for the target platforms and to generate the unsigned [catalog files](catalog-files.md) (*.cat* files) that apply to the target platforms.
 
 Use the following Inf2Cat command to create unsigned catalog files:
 

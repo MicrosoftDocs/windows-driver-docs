@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT
 
 
-WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT is a TLV that contains IHV-provided device context for [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/dn925637).
+WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT is a TLV that contains IHV-provided device context for [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-ihv-task-request).
 
 ## TLV Type
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_HID
 
 
-The GUID_DEVINTERFACE_HID [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [HID collections](https://msdn.microsoft.com/library/windows/hardware/ff539861).
+The GUID_DEVINTERFACE_HID [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [HID collections](https://docs.microsoft.com/windows-hardware/drivers/hid/hid-collections).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for HID collections register instances of this device interface class to notify the operating system and applications of the presence of HID collections.
 
-The system-supplied [HID class driver](https://msdn.microsoft.com/library/windows/hardware/jj126193) registers an instance of this device interface class for a HID collection. For example, the HID class driver registers an interface for a USB keyboard or mouse device. Access a HID collection by using the I/O interface supported by the HID class driver.
+The system-supplied [HID class driver](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)) registers an instance of this device interface class for a HID collection. For example, the HID class driver registers an interface for a USB keyboard or mouse device. Access a HID collection by using the I/O interface supported by the HID class driver.
 
 For information about HID devices and drivers, see [HIDClass Devices](../hid/binding-minidrivers-to-the-hid-class.md).
 

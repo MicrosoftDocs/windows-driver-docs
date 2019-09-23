@@ -16,7 +16,7 @@ The URI scheme, `"ms-settings-uicctoolkit"`, has been defined for the SIM toolki
 ## Launching a URI
 
 
-A UWP app can load the SIM applications CPL by using a call to the [Launcher.LaunchUriAsync(Uri)](https://msdn.microsoft.com/library/windows/apps/hh701480.aspx) method from the **Launcher** object of the **Windows.System** namespace.
+A UWP app can load the SIM applications CPL by using a call to the [Launcher.LaunchUriAsync(Uri)](https://docs.microsoft.com/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriAsync_Windows_Foundation_Uri_) method from the **Launcher** object of the **Windows.System** namespace.
 
 The following example shows how partners can launch the SIM applications CPL from the app.
 

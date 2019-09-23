@@ -236,7 +236,7 @@ This information applies when the following operations are being performed on a 
   <p><b>AND</b></p>
   </li>
   <li>
-  <p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545765"><b>FILE_DISPOSITION_INFORMATION</b></a>.DeleteFile is <b>TRUE</b>.</p>
+  <p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_file_disposition_information"><b>FILE_DISPOSITION_INFORMATION</b></a>.DeleteFile is <b>TRUE</b>.</p>
   </li>
   </ul>
   </td>
@@ -266,7 +266,7 @@ This information applies when the following operations are being performed on a 
   <p><b>AND</b></p>
   </li>
   <li>
-  <p><a href="https://msdn.microsoft.com/library/windows/hardware/ff545765"><b>FILE_DISPOSITION_INFORMATION</b></a>.DeleteFile is <b>TRUE</b>.</p>
+  <p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_file_disposition_information"><b>FILE_DISPOSITION_INFORMATION</b></a>.DeleteFile is <b>TRUE</b>.</p>
   </li>
   </ul>
   </td>

@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_IHV Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_IHV
@@ -26,7 +27,7 @@ The task is initiated by the sending [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_
 
 | TLV                                                                                  | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/dn926313) |                                | X        | The context data provided by the IHV component. This is forwarded from [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_ TASK\_REQUEST](ndis-status-wdi-indication-ihv-task-request.md). |
+| [**WDI\_TLV\_IHV\_TASK\_DEVICE\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-task-device-context) |                                | X        | The context data provided by the IHV component. This is forwarded from [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_ TASK\_REQUEST](ndis-status-wdi-indication-ihv-task-request.md). |
 
  
 
@@ -34,6 +35,7 @@ The task is initiated by the sending [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_COMPLETE](ndis-status-wdi-indication-ihv-task-complete.md)
+
 Requirements
 ------------
 

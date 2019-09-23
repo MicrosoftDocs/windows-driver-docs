@@ -28,7 +28,7 @@ The Microsoft Windows print processor supports Asian languages that read from ri
 
 -   **Booklet Edge**: When printing a booklet, in which sheets are folded and pages are laid out side-by-side, users can order the booklet pages from right to left. The following diagram shows the page layout for a booklet by using the BOOKLET\_EDGE\_RIGHT flag.![diagram illustrating the page layout for a booklet by using the booklet\-edge\-right flag](images/asian-booklet.png)
 
-The flags that enable you to change the N-up direction and booklet edge in a driver to support an Asian layout are available in Windows Vista. For details about how to set these values, see [**DrvQueryJobAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff548581) and [**ATTRIBUTE\_INFO\_4**](https://msdn.microsoft.com/library/windows/hardware/ff545096).
+The flags that enable you to change the N-up direction and booklet edge in a driver to support an Asian layout are available in Windows Vista. For details about how to set these values, see [**DrvQueryJobAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvqueryjobattributes) and [**ATTRIBUTE\_INFO\_4**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/ns-winddiui-_attribute_info_4).
 
  
 

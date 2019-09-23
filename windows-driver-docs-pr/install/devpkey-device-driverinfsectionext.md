@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_DriverInfSectionExt
 
 
-The DEVPKEY_Device_DriverInfSectionExt device driver property represents the platform extension of the [**INF DDInstall section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) that installs the driver for a device instance.
+The DEVPKEY_Device_DriverInfSectionExt device driver property represents the platform extension of the [**INF DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) that installs the driver for a device instance.
 
 <table>
 <colgroup>
@@ -57,9 +57,9 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_DriverInfSectionExt.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverInfSectionExt.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverInfSectionExt.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverInfSectionExt property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSectionExt** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverInfSectionExt property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSectionExt** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-driver-properties).
 
 Requirements
 ------------
@@ -84,9 +84,9 @@ Requirements
 ## See also
 
 
-[**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344)
+[**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

@@ -21,13 +21,13 @@ ms.localizationpriority: medium
 
 
 
-In the vendor-supplied [*AVStrMiniDeviceStart*](https://msdn.microsoft.com/library/windows/hardware/ff556297), AVStream minidrivers that support hardware should first parse the resource list and then call [**IoConnectInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff548371) to register an interrupt service routine (ISR).
+In the vendor-supplied [*AVStrMiniDeviceStart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnksdevicepnpstart), AVStream minidrivers that support hardware should first parse the resource list and then call [**IoConnectInterrupt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterrupt) to register an interrupt service routine (ISR).
 
 Additional steps are required if your driver supports direct memory access (DMA). If your driver implements DMA, see [AVStream DMA Services](avstream-dma-services.md).
 
 If more than one application might build a filter graph simultaneously using your device, you must take care to prevent interference between graphs. Specifically, if you construct a graph in an application using the device, you must not interfere with an application which is using the device in a non-stop state.
 
-You can avoid interference by loading microcode after the graph transitions into KSSTATE\_ACQUIRE. This will protect a currently running graph because a new graph will not transition into **KSSTATE\_ACQUIRE** while another graph is currently running. To receive notification of pin state changes, supply an [*AVStrMiniPinSetDeviceState*](https://msdn.microsoft.com/library/windows/hardware/ff556359) callback routine in the [**KSPIN\_DISPATCH**](https://msdn.microsoft.com/library/windows/hardware/ff563535) structure.
+You can avoid interference by loading microcode after the graph transitions into KSSTATE\_ACQUIRE. This will protect a currently running graph because a new graph will not transition into **KSSTATE\_ACQUIRE** while another graph is currently running. To receive notification of pin state changes, supply an [*AVStrMiniPinSetDeviceState*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinsetdevicestate) callback routine in the [**KSPIN\_DISPATCH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin_dispatch) structure.
 
 To minimize graph start-up time, however, you may want to load microcode before the graph reaches KSSTATE\_ACQUIRE. In this case, consider loading microcode in a low priority background thread during boot. This solution does not interfere with other applications, reduces graph start time, and should not lengthen boot time if done asynchronously.
 

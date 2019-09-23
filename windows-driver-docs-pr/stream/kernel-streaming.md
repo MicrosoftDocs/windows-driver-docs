@@ -39,13 +39,13 @@ This section contains legacy documentation on the following topics relevant to t
 
 [KS Allocators](ks-allocators.md)
 
-For more information about *portcls.sys*, see [Audio Drivers](https://msdn.microsoft.com/library/windows/hardware/ff536191).
+For more information about *portcls.sys*, see [Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/index).
 
-To learn about the *stream.sys* driver, refer to [Streaming Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff568275).
+To learn about the *stream.sys* driver, refer to [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index).
 
 To read about AVStream, see the [AVStream Overview](avstream-overview.md).
 
-[DVD Decoder Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff558742) are clients of *stream.sys*.
+[DVD Decoder Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index) are clients of *stream.sys*.
 
 [Video capture minidrivers](video-capture-devices.md) can be clients of either *stream.sys* or *ks.sys*.
 

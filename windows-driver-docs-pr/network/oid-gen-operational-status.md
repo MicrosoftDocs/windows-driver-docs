@@ -24,9 +24,9 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-NDIS handles this OID for miniport adapters and filter modules, and only [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) providers receive this OID query.
+NDIS handles this OID for miniport adapters and filter modules, and only [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) providers receive this OID query.
 
-If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_OPER\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff568746) enumeration.
+If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_OPER\_STATUS**](https://docs.microsoft.com/windows/desktop/api/ifdef/ne-ifdef-_net_if_oper_status) enumeration.
 
 Requirements
 ------------
@@ -47,9 +47,9 @@ Requirements
 ## See also
 
 
-[**NET\_IF\_OPER\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff568746)
+[**NET\_IF\_OPER\_STATUS**](https://docs.microsoft.com/windows/desktop/api/ifdef/ne-ifdef-_net_if_oper_status)
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
+[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
 
  
 

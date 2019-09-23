@@ -25,7 +25,7 @@ IKsTopologyInfo, ISelector and IKsNodeControl are defined in Vidcap.h.
 
 In Windows Vista and later releases, Vidcap.h is included as part of the Microsoft Windows SDK.
 
-The Microsoft DirectShow documentation contains the corresponding reference pages. Globally unique identifier (GUID) types and some other USB-video-related constants are defined in Ksmedia.h. For more information, see [USB Video Class Properties](usb-video-class-properties.md) and [Kernel Streaming Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff560886).
+The Microsoft DirectShow documentation contains the corresponding reference pages. Globally unique identifier (GUID) types and some other USB-video-related constants are defined in Ksmedia.h. For more information, see [USB Video Class Properties](usb-video-class-properties.md) and [Kernel Streaming Topology Nodes](https://docs.microsoft.com/windows-hardware/drivers/stream/kernel-streaming-topology-nodes).
 
  
 

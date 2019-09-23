@@ -17,7 +17,7 @@ This section includes:
 
 [Debugger Engine API Overview](debugger-engine-api-overview.md)
 
-[Debugger Engine Reference](https://msdn.microsoft.com/library/windows/hardware/ff540540)
+[Debugger Engine Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-engine-reference)
 
  
 

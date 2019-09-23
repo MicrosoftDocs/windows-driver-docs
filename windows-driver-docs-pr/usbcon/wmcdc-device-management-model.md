@@ -48,15 +48,15 @@ USB WMCDC Device Management Model (DMM) interface collections have the following
 </tr>
 <tr class="odd">
 <td><p>Hardware IDs</p></td>
-<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_09&amp;MI_%02x
-USB\Vid_%04x&amp;Pid_%04x&amp;Rev_%04x&amp;Cdc_09
-USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_09&amp;MI_%02x
-USB\Vid_%04x&amp;Pid_%04x&amp;Cdc_09</code></pre></td>
+<td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_09&MI_%02x
+USB\Vid_%04x&Pid_%04x&Rev_%04x&Cdc_09
+USB\Vid_%04x&Pid_%04x&Cdc_09&MI_%02x
+USB\Vid_%04x&Pid_%04x&Cdc_09</code></pre></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
-<td><pre space="preserve"><code class="language-syntax">USB\Class_02&amp;SubClass_09&amp;Prot_%02X
-USB\Class_02&amp;SubClass_09
+<td><pre space="preserve"><code class="language-syntax">USB\Class_02&SubClass_09&Prot_%02X
+USB\Class_02&SubClass_09
 USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">

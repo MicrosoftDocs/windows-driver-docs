@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 This section provides installation information, specific to IEEE 1394 device drivers in Microsoft Windows 2000 and later operating systems.
 
-Vendors supplying their own IEEE 1394 device driver should make that driver a member of the Base setup class in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the driver's INF file. For example:
+Vendors supplying their own IEEE 1394 device driver should make that driver a member of the Base setup class in the [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) of the driver's INF file. For example:
 
 ```cpp
 [Version]
@@ -27,7 +27,7 @@ Class = Base
 
 There are no other special requirements associated with installing IEEE 1394 device drivers.
 
-For general information about device installation in Windows 2000 and later operating systems, see [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455).
+For general information about device installation in Windows 2000 and later operating systems, see [Device Installation Overview](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation).
 
  
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-A miniport driver specifies a NIC's Internet protocol security (IPsec) capabilities in an [**NDIS\_IPSEC\_OFFLOAD\_V1**](https://msdn.microsoft.com/library/windows/hardware/ff565796) structure. For more information, see [Reporting a NIC's IPsec Capabilities](reporting-a-nic-s-ipsec-capabilities.md).
+A miniport driver specifies a NIC's Internet protocol security (IPsec) capabilities in an [**NDIS\_IPSEC\_OFFLOAD\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_ipsec_offload_v1) structure. For more information, see [Reporting a NIC's IPsec Capabilities](reporting-a-nic-s-ipsec-capabilities.md).
 
 The miniport reports the NIC's ability to parse incoming UDP-encapsulated ESP packets by setting one or more flags in the **Supported** . **Reserved** member of the NDIS\_IPSEC\_OFFLOAD\_V1 structure. The miniport driver can specify any or all of the four UDP-ESP encapsulation subtypes that are described in [UDP-ESP Encapsulation Types](udp-esp-encapsulation-types.md).
 

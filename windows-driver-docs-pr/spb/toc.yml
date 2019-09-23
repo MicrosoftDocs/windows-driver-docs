@@ -1,9 +1,13 @@
 - name: "Simple Peripheral Bus (SPB) Driver Design Guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Simple Peripheral Bus (SPB) Driver Design Guide"
+    href: index.md
   - name: "SPB controller drivers"
-    href: spb-controller-drivers.md
+# Auto-expanded node
     items: 
+    - name: "SPB controller drivers"
+      href: spb-controller-drivers.md
     - name: "SPB Framework Extension (SpbCx)"
       href: spb-framework-extension.md
     - name: "SpbCx Interfaces"
@@ -23,8 +27,10 @@
     - name: "SpbCx Object Handles"
       href: spbcx-object-handles.md
   - name: "SPB peripheral device drivers"
-    href: spb-peripheral-device-drivers.md
+# Auto-expanded node
     items: 
+    - name: "SPB peripheral device drivers"
+      href: spb-peripheral-device-drivers.md
     - name: "Using the SPB I/O Request Interface"
       href: using-the-spb-i-o-request-interface.md
     - name: "Connection IDs for SPB-Connected Peripheral Devices"
@@ -44,8 +50,10 @@
     - name: "SPB Connection Locks"
       href: spb-connection-locks.md
   - name: "Test with Multi Interface Test Tool (MITT)"
-    href: testing-with-multi-interface-test-tool--mitt-.md
+# Auto-expanded node
     items: 
+    - name: "Test with Multi Interface Test Tool (MITT)"
+      href: testing-with-multi-interface-test-tool--mitt-.md
     - name: "Buy hardware for using MITT"
       href: multi-interface-test-tool--mitt--.md
     - name: "Get started with MITT"

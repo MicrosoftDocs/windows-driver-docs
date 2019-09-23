@@ -2,7 +2,7 @@
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
 ms.assetid: 3442E2C4-4054-4698-B7FB-8FE19D26C171
-ms.date: 11/27/2018
+ms.date: 04/09/2019
 ms.localizationpriority: medium
 ---
 
@@ -20,32 +20,19 @@ When a JavaScript is loaded via the .scriptload command, the root code of the sc
 
 This topic describes some of what you can do with JavaScript debugger scripting.
 
-[Load The Debugger JavaScript Provider](#provider)
-
-[Use the JavaScript Scripting Meta Commands](#commands)
-
-[Get Started with JavaScript Debugger Scripting](#started)
-
-[Automate Debugger Commands](#automate)
-
-[Set Conditional Breakpoints with JavaScript](#breakpoints)
-
-[Create a Debugger Visualizer in JavaScript](#visualizer)
-
-[Work With 64-Bit Values in JavaScript Extensions](#bitvalues)
-
-[JavaScript Debugging](#debugging)
-
-[JavaScript Resources](#resources)
-
 These two topics provide additional information about working with JavaScript in the debugger.
 
 [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
 
 [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 
-## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
+## JavaScript Scripting Video
+
+[Defrag Tools #170](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-170-Debugger-JavaScript-Scripting) - Andy and Bill demonstrate JavaScript extensibility and scripting abilities in the debugger.
+
+
+## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
 The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/).
 
@@ -1192,6 +1179,21 @@ Caught and returned!
 Test
 ```
 
+## <span id="Vscode"></span><span id="vscode"></span><span id="VSCODE"></span>JavaScript in VSCode - Adding IntelliSense
+
+If you would like to work with the debugger data model objects in VSCode, you can use a definition file that is available in the Windows development kits. The IntelliSense definition file provides support for all of the host.* debugger object APIs. If you installed the kit in the default directory on a 64 bit PC, it is located here:
+
+`C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext\JsProvider.d.ts`
+
+To use the IntelliSense definition file in VSCode:
+
+1. Locate the definition file - JSProvider.d.ts
+
+2. Copy the definition file to same folder as your script.
+
+3. Add `/// <reference path="JSProvider.d.ts" />` to the top of your JavaScript script file.
+
+With that reference in your JavaScript file, VS Code will automatically give you IntelliSense on the host APIs provided by JSProvider in addition to the structures in your script. For example, type “host.” and you’ll see IntelliSense for all the available debugger model APIs.
 
 
 ## <span id="Resources"></span><span id="resources"></span><span id="RESOURCES"></span>JavaScript Resources
@@ -1199,13 +1201,13 @@ Test
 
 The following are JavaScript resources that may be useful as you develop JavaScript debugging extensions.
 
--   [Writing JavaScript Code](https://msdn.microsoft.com/library/cte3c772.aspx)
+-   [Writing JavaScript Code](https://docs.microsoft.com/scripting/javascript/writing-javascript-code)
 
--   [JScript Language Tour](https://msdn.microsoft.com/library/t895bwkh.aspx)
+-   [JScript Language Tour](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/t895bwkh(v=vs.100))
 
 -   [Mozilla JavaScript Reference](https://developer.mozilla.org/docs/Web/JavaScript)
 
--   [WinJS: The Windows library for JavaScript](https://developer.microsoft.com/windows/develop/winjs)
+-   [WinJS: The Windows library for JavaScript](https://github.com/winjs/winjs)
 
 -   [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/)
 

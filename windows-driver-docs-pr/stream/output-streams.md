@@ -49,7 +49,7 @@ No format block.</td>
 
  
 
-Kernel-mode interface provides control of video port extensions (VPE) settings. For more information, see [VideoPort Extensions Background](https://msdn.microsoft.com/library/windows/hardware/ff570536).
+Kernel-mode interface provides control of video port extensions (VPE) settings. For more information, see [VideoPort Extensions Background](https://docs.microsoft.com/windows-hardware/drivers/display/video-port-extensions-background).
 
 The following table describes the closed caption (CC) output stream media type used by DVDs:
 
@@ -86,7 +86,7 @@ No format block.</td>
 
  
 
-A frame size of 200 (decimal) in the **SampleSize** member of the [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure must be specified. For more information, see [Closed Captioning Streams](closed-captioning-streams.md).
+A frame size of 200 (decimal) in the **SampleSize** member of the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure must be specified. For more information, see [Closed Captioning Streams](closed-captioning-streams.md).
 
  
 

@@ -21,7 +21,7 @@ This section provides design guidelines and requirements for a peripheral device
 
  
 
-**Note**  Windows 10 also supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance’s Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](http://www.wi-fi.org).
+**Note**  Windows 10 also supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance’s Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](https://www.wi-fi.org/).
 
  
 
@@ -852,5 +852,5 @@ Any attempt to tap the device on a system running an operating system that doesn
 
  
 ## Related topics
- [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
+ [NFC device driver interface (DDI) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
  

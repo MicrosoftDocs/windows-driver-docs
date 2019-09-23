@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This indicates that a driver has caused a violation.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BC\_BLUETOOTH\_VERIFIER\_FAULT Parameters

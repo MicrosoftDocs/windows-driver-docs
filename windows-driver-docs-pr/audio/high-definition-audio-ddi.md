@@ -27,11 +27,11 @@ The HD Audio bus driver implements the HD Audio device driver interface (DDI), w
 
 The version of the HD Audio bus driver that runs on Windows Server 2003 and Windows XP supports three variants of the HD Audio DDI:
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536413) structure. This DDI is identical to the HD Audio DDI in Windows Vista.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface) structure. This DDI is identical to the HD Audio DDI in Windows Vista.
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff536418) structure. This DDI is available in Windows Vista and later versions of Windows.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) structure. This DDI is available in Windows Vista and later versions of Windows.
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://msdn.microsoft.com/library/windows/hardware/ff536416) structure. This DDI is available in Windows XP and later versions of Windows.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structure. This DDI is available in Windows XP and later versions of Windows.
 
 The differences between the three DDIs are minor and are discussed in [Differences Between the HD Audio DDI Versions](differences-between-the-hd-audio-ddi-versions.md).
 

@@ -21,11 +21,11 @@ Usage by sensor DDSI
 
 -   Sets the value of the PKEY\_Sensor\_MaximumDataFieldSize\_Bytes property.
 
--   Returns the *pSize* value from [EvtSensorGetProperties](https://msdn.microsoft.com/library/windows/hardware/dn957032).
+-   Returns the *pSize* value from [EvtSensorGetProperties](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
 
--   Returns the *pSize* value from [*EvtSensorGetDataFieldProperties*](https://msdn.microsoft.com/library/windows/hardware/dn957029).
+-   Returns the *pSize* value from [*EvtSensorGetDataFieldProperties*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
 
--   Returns the *pSize* value from [*EvtSensorGetDataThresholds*](https://msdn.microsoft.com/library/windows/hardware/dn957031).
+-   Returns the *pSize* value from [*EvtSensorGetDataThresholds*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
 
 Comments
 
@@ -37,11 +37,11 @@ Comments
 
 Usage by sensor DDSI
 
--   Populates the collection list in [*EvtSensorGetProperties*](https://msdn.microsoft.com/library/windows/hardware/dn957032)
+-   Populates the collection list in [*EvtSensorGetProperties*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
 
--   Populates the collection list in [*EvtSensorGetDataFieldProperties*](https://msdn.microsoft.com/library/windows/hardware/dn957029)
+-   Populates the collection list in [*EvtSensorGetDataFieldProperties*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
 
--   Populates the collection list in [*EvtSensorGetDataThresholds*](https://msdn.microsoft.com/library/windows/hardware/dn957031)
+-   Populates the collection list in [*EvtSensorGetDataThresholds*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)
 
 Comments
 
@@ -73,9 +73,9 @@ Comments
 
 Usage by sensor DDSI
 
--   Passes a buffer to the sensor driver using [*EvtSensorSetDataThresholds*](https://msdn.microsoft.com/library/windows/hardware/dn957039).
+-   Passes a buffer to the sensor driver using [*EvtSensorSetDataThresholds*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
 
--   Passes a buffer to the driver using [*EvtSensorDeviceIoControl*](https://msdn.microsoft.com/library/windows/hardware/dn957028).
+-   Passes a buffer to the driver using [*EvtSensorDeviceIoControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
 
 Comments
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # WSK data types
 
-In addition to the structures listed on [WSK Structures](https://msdn.microsoft.com/library/windows/hardware/ff571187), WSK applications can also use the following data types:
+In addition to the structures listed on [WSK Structures](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff571187(v=vs.85)), WSK applications can also use the following data types:
 
 [WSK_CLIENT](wsk-client.md)
 

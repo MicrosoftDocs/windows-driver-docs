@@ -43,7 +43,7 @@ These headings have the following meanings:
 
     A property has a value and the type of this value depends on the property. For example, a property that can be in one of only two states--on or off--typically has a BOOL value. A property that can assume integer values from 0x0 to 0xFFFFFFFF might have a ULONG value. More complex properties might have values that are arrays or structures.
 
-The property descriptor and property value above are the property-specific versions of the instance-specification and operation-data buffers that are discussed in [KS Properties, Events, and Methods](https://msdn.microsoft.com/library/windows/hardware/ff567673).
+The property descriptor and property value above are the property-specific versions of the instance-specification and operation-data buffers that are discussed in [KS Properties, Events, and Methods](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties--events--and-methods).
 
 A property request uses one of the following flags to specify the operation that is to be performed on the property:
 
@@ -53,11 +53,11 @@ A property request uses one of the following flags to specify the operation that
 
 -   KSPROPERTY\_TYPE\_SET
 
-All filter and pin objects support the basic-support operation on their properties. Whether they support the *get* and *Set* operations depends on the property. A property that represents an inherent capability of the filter or pin object is likely to require only a *get* operation. A property that represents a configurable setting might require only a *Set* operation, although a *get* operation might also be useful for reading the current setting. For more information about using the get, set, and basic-support operations with video encoder properties, see [KS Properties](https://msdn.microsoft.com/library/windows/hardware/ff567671).
+All filter and pin objects support the basic-support operation on their properties. Whether they support the *get* and *Set* operations depends on the property. A property that represents an inherent capability of the filter or pin object is likely to require only a *get* operation. A property that represents a configurable setting might require only a *Set* operation, although a *get* operation might also be useful for reading the current setting. For more information about using the get, set, and basic-support operations with video encoder properties, see [KS Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties).
 
 A table in the description of every property indicates whether video encoder minidrivers are required to support reading or writing the property. Video encoder minidrivers should return STATUS\_NOT\_SUPPORTED in response to get or set requests for properties that are not supported by the minidriver.
 
-The following property sets each contain a single property that must be implemented by video encoder minidrivers. That is, effectively each property gets its own set, so specify 0 in the **PropertyId** member of the [**KSPROPERTY\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff565176) member in the [**KSPROPERTY\_SET**](https://msdn.microsoft.com/library/windows/hardware/ff565617) structure as required.
+The following property sets each contain a single property that must be implemented by video encoder minidrivers. That is, effectively each property gets its own set, so specify 0 in the **PropertyId** member of the [**KSPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_item) member in the [**KSPROPERTY\_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_set) structure as required.
 
 The following property sets belong to the codec API:
 

@@ -237,7 +237,7 @@ You can rebrand the following items in the app:
 
 -   The app content itself (that is, everything inside the app can be changed for a particular operator). This is code over which the app has complete control. You might want to change help content, navigation options, page layouts, colors, and branding inside the app, based on the MNO/MVNO.
 
--   The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](https://msdn.microsoft.com/library/windows/apps/hh465439).
+-   The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](https://docs.microsoft.com/previous-versions/windows/apps/hh465439(v=win.10)).
 
 You cannot rebrand the following items in the app:
 

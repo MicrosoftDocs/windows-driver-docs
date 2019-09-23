@@ -280,7 +280,7 @@ This section describes structures and enumerations that the user-mode display dr
 
 ## Direct3D Version 11 State Functions
 
-This section describes user-mode display driver state functions that are added for the Microsoft Direct3D Version 11.0 runtime. Otherwise, for the remainder of the user-mode display driver state functions, see [Direct3D Version 10 State Functions](#direct3d-version-10-state-functions) and [Direct3D Version 10.1 State Functions](#direct3d-version-10-1-state-functions).
+This section describes user-mode display driver state functions that are added for the Microsoft Direct3D Version 11.0 runtime. Otherwise, for the remainder of the user-mode display driver state functions, see [Direct3D Version 10 State Functions](#direct3d-version-10-state-functions) and [Direct3D Version 10.1 State Functions](#direct3d-version-101-state-functions).
 
 The user-mode display driver DLL exports the [OpenAdapter10_2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_openadapter) function and supplies pointers to adapter-specific functions through members of the [D3D10_2DDI_ADAPTERFUNCS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d10_2ddi_adapterfuncs) structure when the runtime calls OpenAdapter10_2.
 

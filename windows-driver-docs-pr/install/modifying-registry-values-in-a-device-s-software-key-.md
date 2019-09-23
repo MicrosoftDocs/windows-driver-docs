@@ -34,7 +34,7 @@ You must not modify the values of the following registry entries (*device proper
 
 -   EnumPropPages32
 
-These device properties represent a device's installation state. Direct modification of these properties might invalidate the device's installation state. For example, changing information related to the [INF file](inf-files.md) invalidates information about driver files that are associated with such properties as device and driver signing information. Changing driver version or driver date might break Windows Update functionality.
+These device properties represent a device's installation state. Direct modification of these properties might invalidate the device's installation state. For example, changing information related to the [INF file](overview-of-inf-files.md) invalidates information about driver files that are associated with such properties as device and driver signing information. Changing driver version or driver date might break Windows Update functionality.
 
 **Note**  Starting with Windows Vista, the operating system imposes "installation-time only" access restrictions for these properties. Values can be replicated for compatibility, and direct modification of values during device installation does not affect internal state.
 
@@ -42,13 +42,13 @@ These device properties represent a device's installation state. Direct modifica
 
 To safely modify the values of other registry entries in a device's software key, follow these guidelines:
 
--   Use [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) and [**SetupDiSetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552163) to retrieve and set standard or custom properties.
+-   Use [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve and set standard or custom properties.
 
     For more information, see [Accessing Device Driver Properties](accessing-device-driver-properties.md).
 
 -   Set only those device properties that are not reserved by the operating system.
 
-    For example, to change the name of the device as displayed to the user, change its [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) device property.
+    For example, to change the name of the device as displayed to the user, change its [**DEVPKEY_Device_FriendlyName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-friendlyname) device property.
 
  
 

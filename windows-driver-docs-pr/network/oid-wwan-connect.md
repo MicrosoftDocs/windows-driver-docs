@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_CONNECT activates or deactivates a particular packet context and reads the activation state of a context.
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](ndis-status-wwan-context-state.md) status notification containing an [**NDIS\_WWAN\_CONTEXT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567906) structure that indicates the Packet Data Protocol (PDP) context state of the MB device regardless of completing set or query requests.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_CONTEXT\_STATE**](ndis-status-wwan-context-state.md) status notification containing an [**NDIS\_WWAN\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state) structure that indicates the Packet Data Protocol (PDP) context state of the MB device regardless of completing set or query requests.
 
-Callers requesting to set the Packet Data Protocol (PDP) context state of the MB device provide an [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567920) structure to the miniport driver with the appropriate information.
+Callers requesting to set the Packet Data Protocol (PDP) context state of the MB device provide an [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_context_state) structure to the miniport driver with the appropriate information.
 
 Remarks
 -------
 
-For more information about using this OID, see [WWAN Packet Context Management](https://msdn.microsoft.com/library/windows/hardware/ff559086).
+For more information about using this OID, see [WWAN Packet Context Management](https://docs.microsoft.com/windows-hardware/drivers/network/mb-packet-context-management).
 
 This object activates or deactivates a particular packet context and reads the activation state of a context. The miniport driver must send appropriate event notifications whenever the activation state changes.
 
@@ -87,7 +87,7 @@ Requirements
 ## See also
 
 
-[WWAN Packet Context Management](https://msdn.microsoft.com/library/windows/hardware/ff559086)
+[WWAN Packet Context Management](https://docs.microsoft.com/windows-hardware/drivers/network/mb-packet-context-management)
 
  
 

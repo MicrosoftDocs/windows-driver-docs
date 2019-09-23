@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 If you are writing an AVStream minidriver, refer to [AVStream Clocks](avstream-clocks.md).
 
-Kernel streaming minidrivers support clock operations by providing callbacks for the properties in the set [KSPROPSETID\_Clock](https://msdn.microsoft.com/library/windows/hardware/ff566564). To learn how to do this, see [KS Properties](ks-properties.md).
+Kernel streaming minidrivers support clock operations by providing callbacks for the properties in the set [KSPROPSETID\_Clock](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-clock). To learn how to do this, see [KS Properties](ks-properties.md).
 
-A user-mode client can request to be notified when a clock reaches a certain time stamp, or to receive periodic notification that a fixed amount of time on the clock has elapsed. To do so, clients register [**KSEVENT\_CLOCK\_POSITION\_MARK**](https://msdn.microsoft.com/library/windows/hardware/ff561811) and [**KSEVENT\_CLOCK\_INTERVAL\_MARK**](https://msdn.microsoft.com/library/windows/hardware/ff561805).
+A user-mode client can request to be notified when a clock reaches a certain time stamp, or to receive periodic notification that a fixed amount of time on the clock has elapsed. To do so, clients register [**KSEVENT\_CLOCK\_POSITION\_MARK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-clock-position-mark) and [**KSEVENT\_CLOCK\_INTERVAL\_MARK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-clock-interval-mark).
 
 This section contains information about the following topics:
 

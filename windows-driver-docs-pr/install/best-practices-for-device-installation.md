@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This section provides guidelines that the components of [driver packages](driver-packages.md) must follow for successful device and driver installation. These components include the following:
 
--   [INF files](inf-files.md)
+-   [INF files](overview-of-inf-files.md)
 
 The guidelines are discussed in the following topics:
 

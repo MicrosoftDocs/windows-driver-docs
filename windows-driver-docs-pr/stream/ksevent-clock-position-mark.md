@@ -20,12 +20,12 @@ A KSEVENT\_CLOCK\_POSITION\_MARK event occurs when a certain time on a clock is 
 
 ### <span id="event_data"></span><span id="EVENT_DATA"></span>Event Data
 
-Use a structure of type [**KSEVENT\_TIME\_MARK**](https://msdn.microsoft.com/library/windows/hardware/ff561891) as the *OutBuffer* parameter when calling [**KsSynchronousDeviceControl**](https://msdn.microsoft.com/library/windows/hardware/ff567142) to register for this event.
+Use a structure of type [**KSEVENT\_TIME\_MARK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksevent_time_mark) as the *OutBuffer* parameter when calling [**KsSynchronousDeviceControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-kssynchronousdevicecontrol) to register for this event.
 
 Remarks
 -------
 
-For information about how to register for events, see [KS Events](https://msdn.microsoft.com/library/windows/hardware/ff567643).
+For information about how to register for events, see [KS Events](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-events).
 
  
 

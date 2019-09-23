@@ -18,7 +18,7 @@ You must consider the following key questions before you write a sensor driver. 
 -   Determine the category, sensor type, and data types for your driver. You can decide to use one of the platform-defined arrangements, or define your own. For an overview of how the platform organizes sensor information, see [About Sensor Constants](about-sensor-constants.md)
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://msdn.microsoft.com/library/windows/hardware/hh768273)  
+[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)  
 
 
 

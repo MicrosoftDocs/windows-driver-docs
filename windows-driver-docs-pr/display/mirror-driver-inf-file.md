@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 Use the *Mirror.inf* sample mirror driver INF file as a template for constructing your own mirror driver INF file.
 
-For more information, see [Installing a Boot Driver](https://msdn.microsoft.com/library/windows/hardware/ff547570) and [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
+For more information, see [Installing a Boot Driver](https://docs.microsoft.com/windows-hardware/drivers/install/installing-a-boot-start-driver) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
 
 **Note**  Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 

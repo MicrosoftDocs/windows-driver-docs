@@ -35,7 +35,7 @@ For more information about notify objects, see [Notify Objects for Network Compo
 
  
 
-For more information about co-installers, see [Writing a Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff554011).
+For more information about co-installers, see [Writing a Co-installer](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-co-installer).
 
 If a component has a notify object, the INF file for that component must add (through an *add-registry-section*) the following values to the component's **Ndi** key:
 
@@ -53,7 +53,7 @@ HKR, Ndi, ClsID, 0, "GUID"
 HKR, Ndi, ComponentDll, 0, "notifyobject.dll"
 ```
 
-The *DDInstall* section for a component that has a notify object must also contain a **CopyFiles** directive which references a *file-list-section* that copies the notify object DLL to the destination directory specified by the **DestinationDirs** section. For more information about the **CopyFiles** directive and **DestinationDirs** sections, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
+The *DDInstall* section for a component that has a notify object must also contain a **CopyFiles** directive which references a *file-list-section* that copies the notify object DLL to the destination directory specified by the **DestinationDirs** section. For more information about the **CopyFiles** directive and **DestinationDirs** sections, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
 
  
 

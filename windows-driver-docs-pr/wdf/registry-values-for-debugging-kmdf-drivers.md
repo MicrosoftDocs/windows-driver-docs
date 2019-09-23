@@ -38,10 +38,10 @@ HKR, Parameters\Wdf,DbgBreakOnError,0x00010001,1
 ```
 
 <a href="" id="verifyon-----------------reg-dword-"></a>**VerifyOn** (**REG\_DWORD**)  
-Set to a nonzero value to enable the [**WDFVERIFY**](https://msdn.microsoft.com/library/windows/hardware/ff551167) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifierOn value is set, VerifyOn is implicitly set to nonzero.
+Set to a nonzero value to enable the [**WDFVERIFY**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfverify) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifierOn value is set, VerifyOn is implicitly set to nonzero.
 
 <a href="" id="dbgbreakonerror--reg-dword-"></a>**DbgBreakOnError** (**REG\_DWORD**)  
-If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://msdn.microsoft.com/library/windows/hardware/ff551164). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example above.
+If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example above.
 
 <a href="" id="dbgwaitforsignaltimeoutinsec--reg-dword-"></a>**DbgWaitForSignalTimeoutInSec** (**REG\_DWORD**)  
 Starting in Windows 8, when **VerifierOn** and **DbgBreakOnError** are set to nonzero values, the driver can change the default timeout period for breaking into the debugger by setting **DbgWaitForSignalTimeoutInSec**.
@@ -82,7 +82,7 @@ HKR, Parameters\Wdf, LogPages,   0x00010001, 3 ; KMDF IFR size
 Set to a nonzero value to cause the framework to include information from its event logger in crash dump files.
 
 <a href="" id="tracedelaytime--reg-dword-"></a>**TraceDelayTime** (**REG\_DWORD**)  
-For Microsoft Windows 2000 only, set to a nonzero value to introduce a delay during initialization of [WPP software tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204). The value is specified in milliseconds and a useful value is 1000 (1 second). Without this delay, the first part of the WPP trace might be missed.
+For Microsoft Windows 2000 only, set to a nonzero value to introduce a delay during initialization of [WPP software tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing). The value is specified in milliseconds and a useful value is 1000 (1 second). Without this delay, the first part of the WPP trace might be missed.
 
 <a href="" id="enhancedverifieroptions-----------------reg-dword-"></a>**EnhancedVerifierOptions** (**REG\_DWORD**)  
 This value contains a bitmap. Each bit represents an additional verifier option that users can enable by setting the bit.
@@ -91,9 +91,9 @@ This value contains a bitmap. Each bit represents an additional verifier option 
 
 **0x1**: If set, the verifier checks whether each of the driver's event callback functions does the following:
 
--   Returns at the same IRQL at which it was called. If the values are different, a [**WDF\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff557235) bug check occurs with an error code of 0xE.
+-   Returns at the same IRQL at which it was called. If the values are different, a [**WDF\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x10d---wdf-violation) bug check occurs with an error code of 0xE.
 
--   Before returning, exits all [critical regions](https://msdn.microsoft.com/library/windows/hardware/ff542925) that it enters. If the callback function returns within a critical region that it entered, a [**WDF\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff557235) bug check occurs with an error code of 0xF.
+-   Before returning, exits all [critical regions](https://docs.microsoft.com/windows-hardware/drivers/kernel/critical-regions-and-guarded-regions) that it enters. If the callback function returns within a critical region that it entered, a [**WDF\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x10d---wdf-violation) bug check occurs with an error code of 0xF.
 
 **0x10000**: If set, and if the driver has enabled [guaranteed forward progress](guaranteeing-forward-progress-of-i-o-operations.md) for an I/O queue, the framework simulates a low-memory situation for each of the queue's I/O requests.
 
@@ -138,7 +138,7 @@ Contains a delay value in seconds. Causes WUDFHost to delay the specified number
 
 Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.
 
-You can also set these registry values by using the WDF Verifier tool (WdfVerifier.exe) that is included in the WDK. For information on using this tool with UMDF drivers, see [Managing UMDF Verifier Settings with WDF Verifier](https://msdn.microsoft.com/library/windows/hardware/ff548422).
+You can also set these registry values by using the WDF Verifier tool (WdfVerifier.exe) that is included in the WDK. For information on using this tool with UMDF drivers, see [Managing UMDF Verifier Settings with WDF Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab).
 
 These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\DebugMode**:
 

@@ -52,11 +52,11 @@ Remarks
 
 The format of {*device-interface-class*} key value is "{*nnnnnnnn*-*nnnn*-*nnnn*-*nnnn*-*nnnnnnnnnnnn*}", where each *n* is a hexadecimal digit.
 
-You can call [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122) to retrieve the value of DEVPKEY_DeviceInterface_ClassGuid.
+You can call [**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve the value of DEVPKEY_DeviceInterface_ClassGuid.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterface_ClassGuid property key. For information about how to retrieve the class GUID of a device interface on these earlier versions of Windows, see the information about how to use [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) that is provided in [Accessing Device Interface Properties](https://msdn.microsoft.com/library/windows/hardware/ff537740).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterface_ClassGuid property key. For information about how to retrieve the class GUID of a device interface on these earlier versions of Windows, see the information about how to use [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) that is provided in [Accessing Device Interface Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-interface-properties).
 
-For information about how to install and accessing device interfaces, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339) and the [**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310).
+For information about how to install and accessing device interfaces, see [Device Interface Classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) and the [**INF AddInterface Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive).
 
 Requirements
 ------------
@@ -81,11 +81,11 @@ Requirements
 ## See also
 
 
-[**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310)
+[**INF AddInterface Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive)
 
-[**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015)
+[**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces)
 
-[**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122)
+[**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
 
  
 

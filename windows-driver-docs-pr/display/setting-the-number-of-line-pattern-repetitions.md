@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Applications can direct a Direct3D device to render primitives using solid or patterned lines. Applications can also stretch a particular line pattern if the device supports repeating the pattern. The device's driver must set the D3DPMISCCAPS\_LINEPATTERNREP flag to indicate that the device supports repeating a particular line pattern. How this flag is set depends on the DirectX version:
 
--   For DirectX 7.0 and earlier, set this flag in the **dwMiscCaps** member of the [**D3DPRIMCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff549034) structure.
+-   For DirectX 7.0 and earlier, set this flag in the **dwMiscCaps** member of the [**D3DPRIMCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dcaps/ns-d3dcaps-_d3dprimcaps) structure.
 
 -   For DirectX 8.0 and later, set this flag in the **PrimitiveMiscCaps** member of the D3DCAPS*Xx* structure, where *Xx* indicates the DirectX version (for example, D3DCAPS8 for version 8 and D3DCAPS9 for version 9). D3DCAPS8 and D3DCAPS9 are described in their respective versions of the DirectX SDK documentation.
 

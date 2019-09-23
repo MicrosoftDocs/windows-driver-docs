@@ -35,7 +35,7 @@ class MSiSCSI_InitiatorNodeFailureEvent : WMIEvent {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorNodeFailureEvent**](https://msdn.microsoft.com/library/windows/hardware/ff563046) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorNodeFailureEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_msiscsi_initiatornodefailureevent) data structure.
 
  
 

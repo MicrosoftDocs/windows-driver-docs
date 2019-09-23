@@ -1,11 +1,11 @@
 ---
-Description: Developing Windows drivers for USB function controllers
-title: Developing Windows drivers for USB function controllers
+Description: Overview of developing Windows drivers for USB function controllers
+title: Overview of developing Windows drivers for USB function controllers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Developing Windows drivers for USB function controllers
+# Overview of developing Windows drivers for USB function controllers
 
 
 <table>
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 <tbody>
 <tr class="odd">
 <td><p><strong>Purpose</strong></p>
-<p>This section describes support in the Windows operating system, for developing a Universal Serial Bus (USB) 3.0 function controller driver that communicates with the Microsoft-provided USB function controller extension (UFX).</p>
+<p>This section describes support in the Windows operating system, for developing a Universal Serial Bus (USB) function controller driver that communicates with the Microsoft-provided USB function controller extension (UFX).</p>
 <p><strong>Development tools and Microsoft-provided binaries</strong></p>
 <p>The Windows Driver Kit (WDK) contains resources that are required for driver development, such as headers, libraries, tools, and samples.</p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p>
@@ -45,7 +45,7 @@ To write a filter driver that handles charging through proprietary chargers, you
 <p>Familiarize yourself with the Microsoft-provided USB driver stack:</p>
 <a href="usb-device-side-drivers-in-windows.md" data-raw-source="[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)">USB device-side drivers in Windows</a>
 <p><strong>Familiarize yourself with UFX objects and handles</strong></p>
-<p>UFX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544249" data-raw-source="[Introduction to Framework Objects](https://msdn.microsoft.com/library/windows/hardware/ff544249)">Introduction to Framework Objects</a>.</p>
+<p>UFX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects" data-raw-source="[Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects)">Introduction to Framework Objects</a>.</p>
 <p>For queuing requests, UFX uses USB-specific objects. For more information, <a href="ufx-objects-and-handles-used-by-a-usb-function-controller.md" data-raw-source="[UFX objects and handles used by a USB function client driver](ufx-objects-and-handles-used-by-a-usb-function-controller.md)">UFX objects and handles used by a USB function client driver</a>.</p>
 <p><strong>Writing a function controller client driver</strong></p>
 <p>Understand the behavior of UFX, how it interacts with the client driver, and the features that the client driver is expected to implement.</p>
@@ -61,7 +61,7 @@ To write a filter driver that handles charging through proprietary chargers, you
  
 
 ## Related topics
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
 
 
 

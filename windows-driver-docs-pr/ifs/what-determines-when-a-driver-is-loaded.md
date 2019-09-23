@@ -52,7 +52,7 @@ Indicates a driver that is not started by the OS loader, Service Control Manager
 
 A driver writer can specify the start type for a driver at installation time in either of the following ways:
 
--   By specifying the desired start type for the **StartType** entry in the *service-install-section* referred to by an [**AddService**](https://msdn.microsoft.com/library/windows/hardware/ff546326) directive in the driver's INF file. This method is described in ServiceInstall Section.
+-   By specifying the desired start type for the **StartType** entry in the *service-install-section* referred to by an [**AddService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) directive in the driver's INF file. This method is described in ServiceInstall Section.
 
 -   By passing the desired start type for the *dwStartType* parameter when calling **CreateService** or **ChangeServiceConfig** from a user-mode installation program. This method is described in the reference entries for **CreateService** and **ChangeServiceConfig** in the Microsoft Windows SDK documentation.
 
@@ -82,7 +82,7 @@ A driver writer can specify the load order group for a driver at installation ti
 
 -   By passing the desired start type for the *lpLoadOrderGroup* parameter when calling **CreateService** or **ChangeServiceConfig** from a user-mode installation program. This method is described in the reference entries for **CreateService** and **ChangeServiceConfig** in the Microsoft Windows SDK documentation.
 
-For more general information about driver load order and load order groups, see [Specifying Driver Load Order](https://msdn.microsoft.com/library/windows/hardware/ff552319).
+For more general information about driver load order and load order groups, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
 
  
 

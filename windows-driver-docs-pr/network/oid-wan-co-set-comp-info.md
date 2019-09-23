@@ -36,7 +36,7 @@ Specifies a structure containing information about compression capabilities for 
 Remarks
 -------
 
-For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff561202).
+For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561202(v=vs.85)).
 
 Requirements
 ------------

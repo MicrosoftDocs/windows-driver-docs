@@ -39,7 +39,7 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
     For more information about supporting more than 64 processors, see [Support for More than 64 Processors in NDIS 6.20](support-for-more-than-64-processors-in-ndis-6-20.md).
 
 <a href="" id="driver-initialization"></a>**Driver Initialization**  
--   Set the NDIS version to 6.20 in the **MajorNdisVersion** and **MinorNdisVersion** members of the [**NDIS\_FILTER\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565515) structure that is passed to the [**NdisFRegisterFilterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff562608) function.
+-   Set the NDIS version to 6.20 in the **MajorNdisVersion** and **MinorNdisVersion** members of the [**NDIS\_FILTER\_DRIVER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_filter_driver_characteristics) structure that is passed to the [**NdisFRegisterFilterDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfregisterfilterdriver) function.
 
 -   Set the filter driver version in the **MajorDriverVersion** and **MinorDriverVersion** members of the NDIS\_FILTER\_DRIVER\_CHARACTERISTICS structure to an appropriate driver-specific value.
 
@@ -50,13 +50,13 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
     -   Hardware assist (VMQ)
 -   Use the updated versions of these structures:
 
-    -   [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff565481)
-    -   [**NDIS\_OFFLOAD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566706)
+    -   [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_filter_attach_parameters)
+    -   [**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload_parameters)
 
     For information about NDIS structure version information, see [Specifying NDIS Version Information](specifying-ndis-version-information.md).
 
 <a href="" id="send-and-receive-data-paths"></a>**Send and Receive Data Paths**  
--   Use the updated version of the [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure.
+-   Use the updated version of the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure.
 
 -   Optionally support the virtual machine queue (VMQ) interface. For more information about VMQ, see [Virtual Machine Queue (VMQ) in NDIS 6.20](virtual-machine-queue--vmq--in-ndis-6-20.md).
 

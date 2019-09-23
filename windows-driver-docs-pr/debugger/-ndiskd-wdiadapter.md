@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 The **!ndiskd.wdiadapter** extension displays information about a WDIWiFi!CAdapter structure. If you run this extension with no parameters, !ndiskd will display a list of all WDIWiFi!CAdapter structures.
 
-For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/wdi-miniport-driver-design-guide).
+For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide).
 
-For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075).
+For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
 
 ```console
 !ndiskd.wdiadapter [-handle <x>] [-pm] [-rcvfilter] 
@@ -131,9 +131,9 @@ RECEIVE FILTER
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
+[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
 [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
 
@@ -141,9 +141,9 @@ RECEIVE FILTER
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[WDI Miniport Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/wdi-miniport-driver-design-guide)
+[WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide)
 
-[WDI Miniport Driver Reference](https://msdn.microsoft.com/library/windows/hardware/dn926075)
+[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 
  
 

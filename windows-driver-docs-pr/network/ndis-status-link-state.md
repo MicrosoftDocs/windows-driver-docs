@@ -16,9 +16,9 @@ Miniport drivers use the NDIS\_STATUS\_LINK\_STATE status indication to notify N
 Remarks
 -------
 
-Overlying drivers should not use the [OID\_GEN\_LINK\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569595) OID to determine the link state. Instead, use the NDIS\_STATUS\_LINK\_STATE status indication for link state updates.
+Overlying drivers should not use the [OID\_GEN\_LINK\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-link-state) OID to determine the link state. Instead, use the NDIS\_STATUS\_LINK\_STATE status indication for link state updates.
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure contains the [**NDIS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh205390) structure. This structure specifies the physical state of the medium.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure contains the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure. This structure specifies the physical state of the medium.
 
 Miniport drivers should avoid sending the NDIS\_STATUS\_LINK\_STATE status indication if there have been no changes in the physical state of the medium. However, avoiding this status indication is not a requirement.
 
@@ -30,13 +30,13 @@ If an overlying driver is an NDIS 5.*x* or earlier protocol driver, NDIS transla
 
 NDIS also translates the NDIS 5.*x* miniport driver status for overlying NDIS 6.0 and later drivers. NDIS uses status indications or media state changes that NDIS identified in an NDIS 5.*x* OID query to create NDIS\_STATUS\_LINK\_STATE status indications. NDIS performs the following translations:
 
--   The [**NDIS\_STATUS\_MEDIA\_CONNECT**](ndis-status-media-connect.md) status indication is translated to **MediaConnectStateConnected** in the [**NDIS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh205390) structure.
+-   The [**NDIS\_STATUS\_MEDIA\_CONNECT**](ndis-status-media-connect.md) status indication is translated to **MediaConnectStateConnected** in the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure.
 
--   The [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md) status indication is translated to **MediaConnectStateDisconnected** in the [**NDIS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh205390) structure.
+-   The [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md) status indication is translated to **MediaConnectStateDisconnected** in the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure.
 
--   The [**NDIS\_STATUS\_LINK\_SPEED\_CHANGE**](ndis-status-link-speed-change.md) status indication and the [OID\_GEN\_LINK\_SPEED](https://msdn.microsoft.com/library/windows/hardware/ff569593) OID are used to generate the link speed status.
+-   The [**NDIS\_STATUS\_LINK\_SPEED\_CHANGE**](ndis-status-link-speed-change.md) status indication and the [OID\_GEN\_LINK\_SPEED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-link-speed) OID are used to generate the link speed status.
 
-For more information about link status, see [OID\_GEN\_LINK\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569595).
+For more information about link status, see [OID\_GEN\_LINK\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-link-state).
 
 Requirements
 ------------
@@ -61,9 +61,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_LINK\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh205390)
+[**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state)
 
-[**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
 
 [**NDIS\_STATUS\_LINK\_SPEED\_CHANGE**](ndis-status-link-speed-change.md)
 
@@ -71,9 +71,9 @@ Requirements
 
 [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md)
 
-[OID\_GEN\_LINK\_SPEED](https://msdn.microsoft.com/library/windows/hardware/ff569593)
+[OID\_GEN\_LINK\_SPEED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-link-speed)
 
-[OID\_GEN\_LINK\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569595)
+[OID\_GEN\_LINK\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-link-state)
 
  
 

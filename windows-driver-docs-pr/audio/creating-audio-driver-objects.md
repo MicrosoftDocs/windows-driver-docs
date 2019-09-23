@@ -43,7 +43,7 @@ Specifies the class GUID, which is passed by reference. This parameter is used o
 Specifies the **IUnknown** interface for aggregating the new object. This parameter can be set to **NULL** to indicate that no aggregation is required.
 
 <span id="PoolType"></span><span id="pooltype"></span><span id="POOLTYPE"></span>*PoolType*  
-Specifies the type of memory pool from which the object is to be allocated (see [**POOL\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559707)).
+Specifies the type of memory pool from which the object is to be allocated (see [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_pool_type)).
 
 The first three parameters are identical to the parameters of the COM **CoCreateInstance** function. For an example of a creation function of this type, see the **CreateMiniportMidiFM** function in the Fmsynth sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
@@ -60,7 +60,7 @@ NTSTATUS NewMyObject(
 
 The NewMyObject function creates and initializes an object, and then passes a pointer back to the interface. Because the initialization parameters are class-specific, so is the prototype of a New*Xxx* function. The New*Xxx* function provides convenient access to the constructor for the object.
 
-For an example of a New*Xxx* function of this type, see [**PcNewDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff537712).
+For an example of a New*Xxx* function of this type, see [**PcNewDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewdmachannel).
 
  
 

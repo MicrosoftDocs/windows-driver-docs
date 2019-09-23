@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using IoConnectInterruptEx Prior to Windows Vista
 
 
-A driver for Windows 2000, Windows XP, or Windows Server 2003 can link to the Iointex.lib library to use [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) on those versions of the operating system.
+A driver for Windows 2000, Windows XP, or Windows Server 2003 can link to the Iointex.lib library to use [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterruptex) on those versions of the operating system.
 
 To use **IoConnectInterruptEx** in such a driver, include Iointex.h in the source code for your driver, immediately following Wdm.h or Ntddk.h. The Iointex.h header declares a prototype for the routine. When you build your driver, make sure that it is statically linked to Iointex.lib.
 

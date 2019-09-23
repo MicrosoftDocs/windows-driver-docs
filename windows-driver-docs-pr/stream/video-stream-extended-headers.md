@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 A video capture minidriver uses an extended header in its output streams to provide auxiliary information about the stream and current frame contents. For example, image stream headers provide information about the current frame number, number of dropped frames, and field polarity flags. As each frame is completed, the minidriver fills in the extended header with the auxiliary information about the frame captured.
 
-Stream class video capture minidrivers indicate their ability to provide this additional information for a pin by setting the **StreamHeaderMediaSpecific** member of the [**HW\_STREAM\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff559697) structure to the **sizeof** one of the two following structures.
+Stream class video capture minidrivers indicate their ability to provide this additional information for a pin by setting the **StreamHeaderMediaSpecific** member of the [**HW\_STREAM\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_object) structure to the **sizeof** one of the two following structures.
 
 <table>
 <colgroup>
@@ -31,11 +31,11 @@ Stream class video capture minidrivers indicate their ability to provide this ad
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567645" data-raw-source="[&lt;strong&gt;KS_FRAME_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567645)"><strong>KS_FRAME_INFO</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info" data-raw-source="[&lt;strong&gt;KS_FRAME_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info)"><strong>KS_FRAME_INFO</strong></a></p></td>
 <td><p>Frame count, drop frame count, field polarity flags, and DirectDraw surface handles.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567694" data-raw-source="[&lt;strong&gt;KS_VBI_FRAME_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567694)"><strong>KS_VBI_FRAME_INFO</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_vbi_frame_info" data-raw-source="[&lt;strong&gt;KS_VBI_FRAME_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_vbi_frame_info)"><strong>KS_VBI_FRAME_INFO</strong></a></p></td>
 <td><p>VBI format, channel change information, video standard.</p></td>
 </tr>
 </tbody>

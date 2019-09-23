@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Verifying the Release-Signature
 
 
-After a [driver package](driver-packages.md) is release-signed, the [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) tool can be used to verify the signatures of:
+After a [driver package](driver-packages.md) is release-signed, the [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) tool can be used to verify the signatures of:
 
 -   Individual files within the driver package.
 

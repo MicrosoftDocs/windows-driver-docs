@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
 
-For more information about the framework verifier, see [Using the Framework's Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545540) and [WDF Verifier Control Application](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556129).
+For more information about the framework verifier, see [Using the Framework's Verifier](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-kmdf-verifier) and [WDF Verifier Control Application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application).
 
 ## <span id="Setting_KMDF_Verifier_properties_for_driver_package_projects"></span><span id="setting_kmdf_verifier_properties_for_driver_package_projects"></span><span id="SETTING_KMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting KMDF Verifier properties for driver package projects
 
@@ -33,7 +33,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Enable_KMDF_Verifier"></span><span id="enable_kmdf_verifier"></span><span id="ENABLE_KMDF_VERIFIER"></span><strong>Enable KMDF Verifier</strong></p></td>
-<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifer is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of <a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)">Driver Verifier</a> if KMDF version is 1.9 or higher.</p></td>
+<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifer is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)">Driver Verifier</a> if KMDF version is 1.9 or higher.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="KMDF_Service_Names"></span><span id="kmdf_service_names"></span><span id="KMDF_SERVICE_NAMES"></span><strong>KMDF Service Names</strong></p></td>
@@ -84,7 +84,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 
 
 * [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
-* [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)
+* [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
  
 

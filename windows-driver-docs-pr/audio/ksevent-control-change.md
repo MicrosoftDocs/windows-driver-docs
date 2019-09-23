@@ -38,8 +38,8 @@ The KSEVENT\_CONTROL\_CHANGE event indicates that a change in control value has 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561937" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561937)"><strong>KSE_NODE</strong></a></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kse_node" data-raw-source="[&lt;strong&gt;KSE_NODE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kse_node)"><strong>KSE_NODE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -67,15 +67,15 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSE\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff561937)
+[**KSE\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kse_node)
 
-[**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750)
+[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)
 
-[**PCEVENT\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff537692)
+[**PCEVENT\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcevent_item)
 
-[**PCEVENT\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537693)
+[**PCEVENT\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-_pcevent_request)
 
-[IPortEvents](https://msdn.microsoft.com/library/windows/hardware/ff536884)
+[IPortEvents](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportevents)
 
  
 

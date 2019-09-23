@@ -144,4 +144,4 @@ UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
 
 [USB Generic Parent Driver (Usbccgp.sys)](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-common-class-generic-parent-driver)
 
-[USB Specification](http://www.usb.org/developers/docs)
+[USB Specification](https://www.usb.org/documents)

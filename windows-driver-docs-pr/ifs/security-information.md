@@ -156,15 +156,15 @@ Wdm.h (include Wdm.h)
 ## Related topics
 
 
-[**ACL**](https://msdn.microsoft.com/library/windows/hardware/ff538866)
+[**ACL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_acl)
 
-[**SECURITY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff556610)
+[**SECURITY\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
 
-[**SeQuerySecurityDescriptorInfo**](https://msdn.microsoft.com/library/windows/hardware/ff556692)
+[**SeQuerySecurityDescriptorInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-sequerysecuritydescriptorinfo)
 
-[**SeSetSecurityDescriptorInfo**](https://msdn.microsoft.com/library/windows/hardware/ff556709)
+[**SeSetSecurityDescriptorInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-sesetsecuritydescriptorinfo)
 
-[**SeSetSecurityDescriptorInfoEx**](https://msdn.microsoft.com/library/windows/hardware/ff556712)
+[**SeSetSecurityDescriptorInfoEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-sesetsecuritydescriptorinfoex)
 
 [**ZwQuerySecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff567066)
 

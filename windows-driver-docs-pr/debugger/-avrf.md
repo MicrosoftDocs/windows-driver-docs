@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !avrf
 
 
-The **!avrf** extension controls the settings of [Application Verifier](application-verifier.md) and displays a variety of output produced by Application Verifier.
+The **!avrf** extension controls the settings of [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier) and displays a variety of output produced by Application Verifier.
 
 ```dbgcmd
     !avrf
@@ -120,7 +120,7 @@ exts.dll
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about how to download and install Application Verifier and its documentation, see [Application Verifier](application-verifier.md).
+For information about how to download and install Application Verifier and its documentation, see [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier).
 
 Remarks
 -------
@@ -130,12 +130,3 @@ When the **!avrf** extension is used with no parameters, it displays the current
 If an Application Verifier Stop has occurred, the **!avrf** extension with no parameters will reveal the nature of the stop and its cause. For some examples, see "Debugging Application Verifier Stops" in the Application Verifier documentation.
 
 If symbols for ntdll.dll and verifier.dll are missing, the **!avrf** extension generates an error message. For information about how to address this problem, see "Setting Up a Debugger for Application Verifier" in the Application Verifier documentation.
-
- 
-
- 
-
-
-
-
-

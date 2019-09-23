@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 For rendering operations, the driver must first enable a *surface* for each *PDEV* structure that is enabled. A PDEV is a logical representation of a physical device. If the hardware can be set up as a GDI standard-format bitmap, GDI can be used to do some or all of the drawing to the bitmap surface. GDI can also handle advanced [halftoning](gdi-halftoning-capabilities.md).
 
-For information about enabling *PDEVs* and surfaces, refer to the [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) and [**DrvEnableSurface**](https://msdn.microsoft.com/library/windows/hardware/ff556214) functions.
+For information about enabling *PDEVs* and surfaces, refer to the [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev) and [**DrvEnableSurface**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablesurface) functions.
 
  
 

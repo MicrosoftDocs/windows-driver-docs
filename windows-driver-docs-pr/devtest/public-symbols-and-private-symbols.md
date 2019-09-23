@@ -50,7 +50,7 @@ When BinPlace strips a symbol file, the stripped and full versions of the file a
 
  
 
-If you need to determine whether a symbol file contains private symbols, you can use the [SymChk](https://msdn.microsoft.com/library/windows/hardware/ff558844) tool. SymChk is part of the Debugging Tools for Windows package. See SymChk and [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) for details.
+If you need to determine whether a symbol file contains private symbols, you can use the [SymChk](https://docs.microsoft.com/windows-hardware/drivers/debugger/symchk) tool. SymChk is part of the Debugging Tools for Windows package. See SymChk and [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.
 
 If you are submitting your driver to the [Windows Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016), you can submit stripped symbol files if you prefer not to share your private symbols with Microsoft. Symbol files that have been stripped by BinPlace do not expose any parts of your driver's architecture that normally would be considered confidential. For more information, see the [Windows Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016).
 

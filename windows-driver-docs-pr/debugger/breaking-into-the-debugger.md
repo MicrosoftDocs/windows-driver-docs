@@ -18,7 +18,7 @@ User-mode and kernel-mode code use different routines to break into the debugger
 
 A break routine causes an exception to occur in the current process, so that the calling thread can signal the debugger associated with the calling process.
 
-To break into a debugger from a user-mode program, use the [DebugBreak function](https://msdn.microsoft.com/library/windows/desktop/ms679297(v=vs.85).aspx). 
+To break into a debugger from a user-mode program, use the [DebugBreak function](https://docs.microsoft.com/windows/desktop/api/debugapi/nf-debugapi-debugbreak). 
 
 When a user-mode program calls **DebugBreak**, the following possible actions will occur:
 

@@ -16,9 +16,9 @@ The NDIS\_STATUS\_RING\_STATUS status indicates the ring status of a line. A WAN
 Remarks
 -------
 
-NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff546752).
+NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff546752(v=vs.85)).
 
-The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538) function contains a ULONG value with one of the following status values:
+The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553538(v=vs.85)) function contains a ULONG value with one of the following status values:
 
 NDIS\_RING\_LOBE\_WIRE\_FAULT
 
@@ -26,7 +26,7 @@ NDIS\_RING\_HARD\_ERROR
 
 NDIS\_RING\_SIGNAL\_LOSS
 
-These values specify ring conditions that are the reason for the status indication. For more information about NDIS\_STATUS\_RING\_STATUS, see [Reporting Hardware Status (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff564044).
+These values specify ring conditions that are the reason for the status indication. For more information about NDIS\_STATUS\_RING\_STATUS, see [Reporting Hardware Status (NDIS 5.1)](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff564044(v=vs.85)).
 
 Requirements
 ------------
@@ -51,7 +51,7 @@ Requirements
 ## See also
 
 
-[**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538)
+[**NdisMIndicateStatus**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553538(v=vs.85))
 
  
 

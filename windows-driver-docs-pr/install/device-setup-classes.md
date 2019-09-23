@@ -21,7 +21,7 @@ This section provides the following topics:
 
 [Creating a New Device Setup Class](creating-a-new-device-setup-class.md)
 
-For information about the system-defined device setup classes, see [System-Defined Device Setup Classes](https://msdn.microsoft.com/library/windows/hardware/ff553419).
+For information about the system-defined device setup classes, see [System-Defined Device Setup Classes](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85)).
 
  
 

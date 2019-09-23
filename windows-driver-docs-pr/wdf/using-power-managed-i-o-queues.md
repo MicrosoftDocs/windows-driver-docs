@@ -22,19 +22,19 @@ For more information about power-managed I/O queues, see [Power Management for I
 
 If your driver uses power-managed I/O queues, it can provide two additional callback functions:
 
-<a href="" id="---------evtiostop"></a>[*EvtIoStop*](https://msdn.microsoft.com/library/windows/hardware/ff541788)  
-The [*EvtIoStop*](https://msdn.microsoft.com/library/windows/hardware/ff541788) callback function stops processing a specified I/O request. When the device leaves its working (D0) state or is removed, the framework calls an I/O queue's *EvtIoStop* callback function once for every I/O request that the driver has not [completed](completing-i-o-requests.md), including requests that the driver [owns](request-ownership.md) and those that it has [forwarded](forwarding-i-o-requests.md) to an I/O target.
+<a href="" id="---------evtiostop"></a>[*EvtIoStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop)  
+The [*EvtIoStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop) callback function stops processing a specified I/O request. When the device leaves its working (D0) state or is removed, the framework calls an I/O queue's *EvtIoStop* callback function once for every I/O request that the driver has not [completed](completing-i-o-requests.md), including requests that the driver [owns](request-ownership.md) and those that it has [forwarded](forwarding-i-o-requests.md) to an I/O target.
 
-<a href="" id="---------evtioresume"></a>[*EvtIoResume*](https://msdn.microsoft.com/library/windows/hardware/ff541779)  
-The [*EvtIoResume*](https://msdn.microsoft.com/library/windows/hardware/ff541779) callback function resumes processing a previously stopped I/O request. The framework calls an I/O queue's *EvtIoResume* callback function when it resumes delivering I/O requests to the driver from the queue, after the device has returned to its working state.
+<a href="" id="---------evtioresume"></a>[*EvtIoResume*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_resume)  
+The [*EvtIoResume*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_resume) callback function resumes processing a previously stopped I/O request. The framework calls an I/O queue's *EvtIoResume* callback function when it resumes delivering I/O requests to the driver from the queue, after the device has returned to its working state.
 
-Each time the framework calls a driver's [*EvtIoStop*](https://msdn.microsoft.com/library/windows/hardware/ff541788) callback function, the function typically [completes](completing-i-o-requests.md) or [cancels](canceling-i-o-requests.md) the I/O request, or calls [**WdfRequestStopAcknowledge**](https://msdn.microsoft.com/library/windows/hardware/ff550033) to return ownership of the request to the framework.
+Each time the framework calls a driver's [*EvtIoStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop) callback function, the function typically [completes](completing-i-o-requests.md) or [cancels](canceling-i-o-requests.md) the I/O request, or calls [**WdfRequestStopAcknowledge**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequeststopacknowledge) to return ownership of the request to the framework.
 
-While doing so is optional, you should in general provide an [*EvtIoStop*](https://msdn.microsoft.com/library/windows/hardware/ff541788) callback function for a power-managed queue. By providing *EvtIoStop*, your driver can help to shorten the time that elapses before your device, and possibly the system, enters a low-power state.
+While doing so is optional, you should in general provide an [*EvtIoStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop) callback function for a power-managed queue. By providing *EvtIoStop*, your driver can help to shorten the time that elapses before your device, and possibly the system, enters a low-power state.
 
-If you do not provide [*EvtIoStop*](https://msdn.microsoft.com/library/windows/hardware/ff541788) for a power-managed queue, the framework waits until all requests delivered from the power-managed queue to the driver are complete before moving the device (or system) to a lower power state or removing the device. Potentially, this inaction can prevent a system from entering its hibernation state or another low system power state. In extreme cases, it can cause the system to crash with bugcheck code 9F.
+If you do not provide [*EvtIoStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop) for a power-managed queue, the framework waits until all requests delivered from the power-managed queue to the driver are complete before moving the device (or system) to a lower power state or removing the device. Potentially, this inaction can prevent a system from entering its hibernation state or another low system power state. In extreme cases, it can cause the system to crash with bugcheck code 9F.
 
-If your driver does not forward requests to an I/O target and does not hold requests for an indeterminate time, you could safely omit [*EvtIoStop*](https://msdn.microsoft.com/library/windows/hardware/ff541788) for a power-managed queue.
+If your driver does not forward requests to an I/O target and does not hold requests for an indeterminate time, you could safely omit [*EvtIoStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop) for a power-managed queue.
 
 ## Waiting for Dispatcher Objects
 
@@ -43,7 +43,7 @@ In general, drivers should only use dispatcher objects as synchronization mechan
 
 Because [request handlers](request-handlers.md) run in an arbitrary thread context, a request handler for a power-managed queue must not wait for kernel dispatcher objects to be set. Doing so may result in deadlock.
 
-For more information about when a driver can wait for dispatcher objects, and what to do when it can't, see [Introduction to Kernel Dispatcher Objects](https://msdn.microsoft.com/library/windows/hardware/ff548068).
+For more information about when a driver can wait for dispatcher objects, and what to do when it can't, see [Introduction to Kernel Dispatcher Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects).
 
  
 

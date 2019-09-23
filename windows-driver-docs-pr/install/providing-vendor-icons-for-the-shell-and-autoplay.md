@@ -32,7 +32,7 @@ This topic describes how you can provide custom icons for a device. The Shell an
 
 In addition to specifying icons for individual devices, you can also specify icons for all devices in a user-defined device group or a [device setup class](device-setup-classes.md). For more information, see the [Preparing Hardware and Software for Use with AutoPlay](https://go.microsoft.com/fwlink/p/?linkid=12032) website.
 
-If an updated [driver package](driver-packages.md) that contains a custom icon is posted on [Windows Update](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8), the user is prompted that a new download is available.
+If an updated [driver package](driver-packages.md) that contains a custom icon is posted on [Windows Update](https://docs.microsoft.com/windows-hardware/drivers), the user is prompted that a new download is available.
 
 There are two steps to including icon files in a driver package:
 
@@ -79,9 +79,9 @@ Windows saves the **Icons** and **NoMediaIcons** value entries under the **Devic
 
 Drivers or other code should never access or modify the **Device Parameters** key directly. Instead, you should use the following system functions:
 
--   From user mode, use [**SetupDiCreateDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550973) and [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079).
+-   From user mode, use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) and [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
 
--   From kernel mode, use [**IoOpenDeviceRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff549443).
+-   From kernel mode, use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey).
 
  
 

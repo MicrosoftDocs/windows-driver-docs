@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 
 
 
-This topic provides an overview of the requirements for setting information in a CoNDIS WAN miniport driver. An upper-layer driver calls [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) with a set request to change information that a CoNDIS WAN miniport driver and the miniport driver's NIC maintain.
+This topic provides an overview of the requirements for setting information in a CoNDIS WAN miniport driver. An upper-layer driver calls [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscooidrequest) with a set request to change information that a CoNDIS WAN miniport driver and the miniport driver's NIC maintain.
 
-After the NDISWAN intermediate driver forwards the set request, NDIS calls the WAN miniport driver's [**MiniportCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff559362) function. In a CoNDIS WAN miniport driver, this function is the same as in any CoNDIS miniport driver, except that the CoNDIS WAN miniport driver supports [CoNDIS WAN Objects](https://msdn.microsoft.com/library/windows/hardware/ff545146).
+After the NDISWAN intermediate driver forwards the set request, NDIS calls the WAN miniport driver's [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_oid_request) function. In a CoNDIS WAN miniport driver, this function is the same as in any CoNDIS miniport driver, except that the CoNDIS WAN miniport driver supports [CoNDIS WAN Objects](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/index).
 
-No other requests will be submitted to the CoNDIS WAN miniport driver until the current set request is complete. If the miniport driver does not immediately complete the set request, it returns NDIS\_STATUS\_PENDING from *MiniportCoOidRequest* and must later call [**NdisCoOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561716) to complete the request.
+No other requests will be submitted to the CoNDIS WAN miniport driver until the current set request is complete. If the miniport driver does not immediately complete the set request, it returns NDIS\_STATUS\_PENDING from *MiniportCoOidRequest* and must later call [**NdisCoOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscooidrequestcomplete) to complete the request.
 
 A CoNDIS WAN miniport driver must recognize and respond properly to the following CoNDIS WAN OIDs.
 
@@ -37,7 +37,7 @@ A CoNDIS WAN miniport driver must recognize and respond properly to the followin
 <tbody>
 <tr class="odd">
 <td align="left"><p></p>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569822" data-raw-source="[OID_WAN_CO_SET_LINK_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569822)">OID_WAN_CO_SET_LINK_INFO</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wan-co-set-link-info" data-raw-source="[OID_WAN_CO_SET_LINK_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wan-co-set-link-info)">OID_WAN_CO_SET_LINK_INFO</a>
 Set information for a VC.</td>
 <td align="left"><p>Required</p></td>
 </tr>
@@ -46,7 +46,7 @@ Set information for a VC.</td>
 
  
 
-A CoNDIS WAN miniport driver also supports the NDIS [General Objects](https://msdn.microsoft.com/library/windows/hardware/ff546510). To learn more about setting information in a CoNDIS miniport driver, see [Querying or Setting Information](querying-or-setting-information.md).
+A CoNDIS WAN miniport driver also supports the NDIS [General Objects](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff546510(v=vs.85)). To learn more about setting information in a CoNDIS miniport driver, see [Querying or Setting Information](querying-or-setting-information.md).
 
  
 

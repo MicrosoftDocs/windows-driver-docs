@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## When Sent
 
 
-Receipt of the IRP\_MJ\_CLEANUP request indicates that the handle reference count on a file object has reached zero. (In other words, all handles to the file object have been closed.) Often it is sent when a user-mode application has called the Microsoft Win32 **CloseHandle** function (or when a kernel-mode driver has called [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417)) on the last outstanding handle to a file object.
+Receipt of the IRP\_MJ\_CLEANUP request indicates that the handle reference count on a file object has reached zero. (In other words, all handles to the file object have been closed.) Often it is sent when a user-mode application has called the Microsoft Win32 **CloseHandle** function (or when a kernel-mode driver has called [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntclose)) on the last outstanding handle to a file object.
 
 It is important to note that when all handles to a file object have been closed, this does not necessarily mean that the file object is no longer being used. System components, such as the Cache Manager and the Memory Manager, might hold outstanding references to the file object. These components can still read to or write from a file, even after an IRP\_MJ\_CLEANUP request is received.
 
@@ -37,14 +37,14 @@ If the target device object is the filter driver's control device object, the fi
 
 Otherwise, the filter driver should pass the IRP down to the next-lower driver on the stack after performing any needed processing.
 
-File system filter driver writers should note that [**IoCreateStreamFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff548296) causes an IRP\_MJ\_CLEANUP request to be sent to the file system driver stack for the volume. Because file systems often create stream file objects as a side effect of operations other than IRP\_MJ\_CREATE, it is difficult for filter drivers to reliably detect stream file object creation. Thus a filter driver should expect to receive IRP\_MJ\_CLEANUP and IRP\_MJ\_CLOSE requests for previously unseen file objects.
+File system filter driver writers should note that [**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobject) causes an IRP\_MJ\_CLEANUP request to be sent to the file system driver stack for the volume. Because file systems often create stream file objects as a side effect of operations other than IRP\_MJ\_CREATE, it is difficult for filter drivers to reliably detect stream file object creation. Thus a filter driver should expect to receive IRP\_MJ\_CLEANUP and IRP\_MJ\_CLOSE requests for previously unseen file objects.
 
-Filter driver writers should also note that, unlike [**IoCreateStreamFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff548296), [**IoCreateStreamFileObjectLite**](https://msdn.microsoft.com/library/windows/hardware/ff548306) does not cause an IRP\_MJ\_CLEANUP request to be sent to the file system driver stack. For this reason, and because file systems often create stream file objects as a side effect of operations other than IRP\_MJ\_CREATE, it is difficult for filter drivers to reliably detect stream file object creation. Thus filter drivers should expect to receive IRP\_MJ\_CLOSE requests for previously unseen file objects.
+Filter driver writers should also note that, unlike [**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobject), [**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobjectlite) does not cause an IRP\_MJ\_CLEANUP request to be sent to the file system driver stack. For this reason, and because file systems often create stream file objects as a side effect of operations other than IRP\_MJ\_CREATE, it is difficult for filter drivers to reliably detect stream file object creation. Thus filter drivers should expect to receive IRP\_MJ\_CLOSE requests for previously unseen file objects.
 
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) with the given IRP to get a pointer to its own [**stack location**](https://msdn.microsoft.com/library/windows/hardware/ff550659) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a cleanup request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a cleanup request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 Pointer to the target device object.
@@ -57,7 +57,7 @@ IRP\_CLOSE\_OPERATION
 IRP\_SYNCHRONOUS\_API
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*
-Pointer to an [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure that receives the final completion status and information about the requested operation.
+Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*
 Pointer to the file object that is associated with *DeviceObject*.
@@ -70,25 +70,25 @@ Specifies IRP\_MJ\_CLEANUP.
 ## See also
 
 
-[**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)
+[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671)
+[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block)
 
-[**IoCreateStreamFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff548296)
+[**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobject)
 
-[**IoCreateStreamFileObjectLite**](https://msdn.microsoft.com/library/windows/hardware/ff548306)
+[**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobjectlite)
 
-[**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174)
+[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694)
+[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_CLEANUP (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550718)
+[**IRP\_MJ\_CLEANUP (WDK Kernel Reference)**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-cleanup)
 
 [**IRP\_MJ\_CLOSE**](irp-mj-close.md)
 
 [**IRP\_MJ\_CREATE**](irp-mj-create.md)
 
-[**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417)
+[**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntclose)
 
  
 

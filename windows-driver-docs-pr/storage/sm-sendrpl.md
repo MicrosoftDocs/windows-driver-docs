@@ -102,9 +102,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRPL\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566314)
+[**SM\_SendRPL\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_sendrpl_in)
 
-[**SM\_SendRPL\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566315)
+[**SM\_SendRPL\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_sendrpl_out)
 
  
 

@@ -26,7 +26,7 @@ A thread that has acquired a processing mutex should not subsequently attempt to
 
 To manipulate the processing mutex, use the following functions:
 
-[**KsFilterAcquireProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff562524), [**KsPinAcquireProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff563488), [**KsFilterReleaseProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff562552), [**KsPinReleaseProcessingMutex**](https://msdn.microsoft.com/library/windows/hardware/ff563527)
+[**KsFilterAcquireProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfilteracquireprocessingmutex), [**KsPinAcquireProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinacquireprocessingmutex), [**KsFilterReleaseProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfilterreleaseprocessingmutex), [**KsPinReleaseProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspinreleaseprocessingmutex)
 
  
 

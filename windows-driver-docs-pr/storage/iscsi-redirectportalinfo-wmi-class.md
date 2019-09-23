@@ -52,7 +52,7 @@ class ISCSI_RedirectPortalInfo
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectPortalInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561561) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectPortalInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsimgt/ns-iscsimgt-_iscsi_redirectportalinfo) data structure.
 
  
 

@@ -30,11 +30,11 @@ This Design Guide describes how to design AVStream minidrivers that control stre
 
 [Writing an AVStream Minidriver](writing-an-avstream-minidriver.md)
 
-[Broadcast Driver Architecture Drivers](https://msdn.microsoft.com/library/windows/hardware/ff556573)
+[Broadcast Driver Architecture Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index)
 
 [Encoder Devices](encoder-devices.md)
 
-[AV/C Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff556364)
+[AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index)
 
 [USB Video Class Driver](usb-video-class-driver.md)
 

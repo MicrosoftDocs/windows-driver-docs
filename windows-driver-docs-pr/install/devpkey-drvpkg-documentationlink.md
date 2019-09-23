@@ -58,7 +58,7 @@ The URL can contain parameters. For example, the following URL contains a **prod
 http://www.microsoft.com/redirect?prod=DSC530&rev=34&type=docs
 ```
 
-Microsoft does not provide Web hosting or redirection for a webpage that is specified by a DEVPKEY_DrvPkg_DocumentationLink property value. The URL must link to a webpage that is maintained by the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) provider.
+Microsoft does not provide Web hosting or redirection for a webpage that is specified by a DEVPKEY_DrvPkg_DocumentationLink property value. The URL must link to a webpage that is maintained by the [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) provider.
 
 When a user clicks the website link that is displayed in Setup-generated end-user dialog box, Windows adds the following information to the HTTP request that includes the URL supplied by DEVPKEY_DrvPkg_DocumentationLink:
 
@@ -76,7 +76,7 @@ For privacy reasons, user information and the serial number of device is not inc
 The following example shows the type of HTTP request that would be sent to a web server: http://www.microsoft.com/redirect?prod=DSC530&rev34&type=docs&pver=6.0&spb=pro&olcid=0x409&pnpid=PCI%5CVEN_8086%26DEV_2533%26SUBSYS_00000000%26REV_04
 ```
 
-You can set the value of DEVPKEY_DrvPkg_DocumentationLink by an [**INF AddProperty directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318) that is included in the [**INF *DDInstall* section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DocumentationLinkproperty by calling [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+You can set the value of DEVPKEY_DrvPkg_DocumentationLink by an [**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive) that is included in the [**INF *DDInstall* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_DocumentationLinkproperty by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_DocumentationLink for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -114,11 +114,11 @@ Requirements
 ## See also
 
 
-[**INF AddProperty Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546318)
+[**INF AddProperty Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive)
 
-[**INF *DDInstall* Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344)
+[**INF *DDInstall* Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

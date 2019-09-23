@@ -37,7 +37,7 @@ At the bottom of the preceding figure, the source pin that drives the speaker an
 
 In the preceding figure, the data path shown between each wave filter and its corresponding topology filter typically represents a physical connection: a fixed, hardware connection on the audio adapter that cannot be configured by software.
 
-Because a bridge pin or a pin with a physical connection is permanently connected, the pin exists implicitly and cannot be instantiated or deleted. Thus, there are no bridge pin objects (instances of bridge pins) to send IRPs to, although you can query a filter object for the [KSPROPSETID\_Pin](https://msdn.microsoft.com/library/windows/hardware/ff566584) properties of its bridge pins. The same rule applies to pins with physical connections.
+Because a bridge pin or a pin with a physical connection is permanently connected, the pin exists implicitly and cannot be instantiated or deleted. Thus, there are no bridge pin objects (instances of bridge pins) to send IRPs to, although you can query a filter object for the [KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin) properties of its bridge pins. The same rule applies to pins with physical connections.
 
 The signal that passes through a bridge pin or physical connection can be either analog or digital.
 

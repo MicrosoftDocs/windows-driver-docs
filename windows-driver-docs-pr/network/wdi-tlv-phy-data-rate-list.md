@@ -40,7 +40,7 @@ WDI\_DATA\_RATE\_LIST consists of the following elements.
 
 | Type   | Description                                                                                   |
 |--------|-----------------------------------------------------------------------------------------------|
-| UINT8  | The data rate flags as defined in [**WDI\_DATA\_RATE\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/dn897811). |
+| UINT8  | The data rate flags as defined in [**WDI\_DATA\_RATE\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_data_rate_flags). |
 | UINT16 | The data rate value.                                                                          |
 
  

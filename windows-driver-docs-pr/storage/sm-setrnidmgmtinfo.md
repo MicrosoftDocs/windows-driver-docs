@@ -74,9 +74,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SetRNIDMgmtInfo\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566337)
+[**SM\_SetRNIDMgmtInfo\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_setrnidmgmtinfo_in)
 
-[**SM\_SetRNIDMgmtInfo\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566338)
+[**SM\_SetRNIDMgmtInfo\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_setrnidmgmtinfo_out)
 
  
 

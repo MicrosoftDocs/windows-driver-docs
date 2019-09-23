@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 This section describes the enumerations that are used by various HD audio properties and structures.
 
-[**HDAUDIO\_CODEC\_POWER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/mt845422)
+[**HDAUDIO\_CODEC\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ne-hdaudio-_hdaudio_codec_power_state)
 
-[**HDAUDIO\_STREAM\_STATE**](https://msdn.microsoft.com/library/windows/hardware/mt845423)
+[**HDAUDIO\_STREAM\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ne-hdaudio-_hdaudio_stream_state)
 
  
 

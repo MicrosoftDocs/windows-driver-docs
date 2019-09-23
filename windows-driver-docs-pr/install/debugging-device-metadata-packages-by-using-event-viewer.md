@@ -102,7 +102,7 @@ This event log message contains the following information:
 
 -   A description of the event.
 
--   A device lookup key, such as the device's hardware ID or model ID. For more information, see [**HardwareID**](https://msdn.microsoft.com/library/windows/hardware/ff546114) and [**ModelID**](https://msdn.microsoft.com/library/windows/hardware/ff549295).
+-   A device lookup key, such as the device's hardware ID or model ID. For more information, see [**HardwareID**](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff546114(v=vs.85)) and [**ModelID**](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)).
 
     **Note**   Only the most specific hardware ID is logged when a list of hardware IDs are passed as a parameter.
 

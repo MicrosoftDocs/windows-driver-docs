@@ -47,7 +47,7 @@ Here is one way to find the address of a **usbport!\_TRANSACTION\_TRANSLATOR** s
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe00001ca11a0**.
 
-Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) to get the address of `GlobalTtListHead`. Pass that address to [**!usbkd.usblist**](-usbkd-usblist.md), which will display addresses of **\_TRANSACTION\_TRANSLATOR** structures.
+Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdext) to get the address of `GlobalTtListHead`. Pass that address to [**!usbkd.usblist**](-usbkd-usblist.md), which will display addresses of **\_TRANSACTION\_TRANSLATOR** structures.
 
 ## <span id="see_also"></span>See also
 

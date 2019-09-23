@@ -28,9 +28,9 @@ It is expected that the listen channel reported by the driver is honored if list
 
 | Type                                                                                       | Multiple TLV instances allowed | Optional | Description                                              |
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://msdn.microsoft.com/library/windows/hardware/dn897869)                  |                                |          | The Wi-Fi Direct Operating channel attribute.            |
-| [**WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE**](https://msdn.microsoft.com/library/windows/hardware/dn897868) |                                |          | The full set of channels supported by the local adapter. |
-| [**WDI\_TLV\_P2P\_LISTEN\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/mt269138)                  |                                |          | The Wi-Fi Direct Listen channel attribute.               |
+| [**WDI\_TLV\_P2P\_CHANNEL\_NUMBER**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-number)                  |                                |          | The Wi-Fi Direct Operating channel attribute.            |
+| [**WDI\_TLV\_P2P\_CHANNEL\_LIST\_ATTRIBUTE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-channel-list-attribute) |                                |          | The full set of channels supported by the local adapter. |
+| [**WDI\_TLV\_P2P\_LISTEN\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-listen-channel)                  |                                |          | The Wi-Fi Direct Listen channel attribute.               |
 
  
 

@@ -9,6 +9,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # Getting started with Windows drivers
@@ -33,7 +34,7 @@ You should already be familiar with the [C programming language](https://docs.mi
 ## <span id="related_topics"></span>Related topics
 
 
-[Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573)
+[Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/)
 
 [Driver Security Guidance](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/)
 

@@ -48,7 +48,7 @@ The KSPROPERTY\_DVDCOPY\_SET\_COPY\_STATE property sets the copy state of the DV
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567639" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_SET_COPY_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567639)"><strong>KS_DVDCOPY_SET_COPY_STATE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_SET_COPY_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state)"><strong>KS_DVDCOPY_SET_COPY_STATE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -60,7 +60,7 @@ The property value (operation data) is a KS\_DVDCOPY\_SET\_COPY\_STATE structure
 Remarks
 -------
 
-This property indicates whether this pin requires CSS authentication. If the property is not implemented, the default is assumed to be the **KS\_DVDCOPYSTATE\_AUTHENTICATION\_REQUIRED** value from the [**KS\_DVDCOPYSTATE**](https://msdn.microsoft.com/library/windows/hardware/ff567634) enumeration.
+This property indicates whether this pin requires CSS authentication. If the property is not implemented, the default is assumed to be the **KS\_DVDCOPYSTATE\_AUTHENTICATION\_REQUIRED** value from the [**KS\_DVDCOPYSTATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ks_dvdcopystate) enumeration.
 
 The main use for this property is for a decoder that supports multiple pins with the same decrypter. For example, if one filter provides both subpicture and video decoding, the keys only need to be exchanged for one of the two pins. If a filter is going to return **KS\_DVDCOPYSTATE\_AUTHENTICATION\_NOT\_REQUIRED** on one of the pins, then it must always return **KS\_DVDCOPYSTATE\_AUTHENTICATION\_REQUIRED** on the first pin that the property is issued on.
 
@@ -96,15 +96,15 @@ Requirements
 ## See also
 
 
-[**KS\_DVDCOPY\_SET\_COPY\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567639)
+[**KS\_DVDCOPY\_SET\_COPY\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state)
 
-[**KS\_DVDCOPYSTATE**](https://msdn.microsoft.com/library/windows/hardware/ff567634)
+[**KS\_DVDCOPYSTATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ks_dvdcopystate)
 
-[DVD Copyright Protection](https://msdn.microsoft.com/library/windows/hardware/ff558736)
+[DVD Copyright Protection](https://docs.microsoft.com/windows-hardware/drivers/stream/dvd-copyright-protection)
 
-[Multiple Data Streams on the same Hardware](https://msdn.microsoft.com/library/windows/hardware/ff567744)
+[Multiple Data Streams on the same Hardware](https://docs.microsoft.com/windows-hardware/drivers/stream/multiple-data-streams-on-the-same-hardware)
 
-[Synchronizing Key Exchange with Data Flow](https://msdn.microsoft.com/library/windows/hardware/ff568511)
+[Synchronizing Key Exchange with Data Flow](https://docs.microsoft.com/windows-hardware/drivers/stream/synchronizing-key-exchange-with-data-flow)
 
  
 

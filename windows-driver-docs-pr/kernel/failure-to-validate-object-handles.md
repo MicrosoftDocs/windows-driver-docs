@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Some drivers must manipulate objects passed to them by callers or must handle two file objects at the same time. For example, a modem driver might receive a handle to an event object, or a network driver might receive handles to two different file objects. The driver must validate these handles. Because they are passed by a caller, and not through the I/O manager, the I/O manager cannot perform any validation checks.
 
-For example, in the following code snippet, the driver has been passed the handle **AscInfo-&gt;AddressHandle**, but has not validated it before calling [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679):
+For example, in the following code snippet, the driver has been passed the handle **AscInfo-&gt;AddressHandle**, but has not validated it before calling [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbyhandle):
 
 ```cpp
    //

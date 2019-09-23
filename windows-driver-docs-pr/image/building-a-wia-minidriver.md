@@ -36,11 +36,11 @@ All WIA minidrivers must include the header files that are shown in the followin
 </tr>
 <tr class="even">
 <td><p><em>stiusd.h</em></p></td>
-<td><p>Defines the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543827" data-raw-source="[IStiUSD](https://msdn.microsoft.com/library/windows/hardware/ff543827)">IStiUSD</a> interface that all WIA minidrivers must implement.</p></td>
+<td><p>Defines the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index" data-raw-source="[IStiUSD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index)">IStiUSD</a> interface that all WIA minidrivers must implement.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>wiamindr.h</em></p></td>
-<td><p>Defines the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027" data-raw-source="[IWiaMiniDrv](https://msdn.microsoft.com/library/windows/hardware/ff545027)">IWiaMiniDrv</a> interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well.</p></td>
+<td><p>Defines the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv" data-raw-source="[IWiaMiniDrv](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv)">IWiaMiniDrv</a> interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well.</p></td>
 </tr>
 </tbody>
 </table>

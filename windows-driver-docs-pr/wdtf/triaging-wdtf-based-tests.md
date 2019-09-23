@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 # Triaging WDTF-based tests
 
 
-To help you better understand what is going on in your WDTF-based tests, you can use the built-in support for [WDTF Object Logging](logging-and-tracing.md) and [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204).
+To help you better understand what is going on in your WDTF-based tests, you can use the built-in support for [WDTF Object Logging](logging-and-tracing.md) and [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
 
-WDTF object logging causes WDTF objects to automatcially write log messages to a common log file, which can simplify test authoring and can help you diagnose test problems. The Device Fundamental tests and other tests that ship in the WDK are examples of WDTF-based tests. For information about those tests, see [How to select and configure the Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests).
+WDTF object logging causes WDTF objects to automatcially write log messages to a common log file, which can simplify test authoring and can help you diagnose test problems. The Device Fundamental tests and other tests that ship in the WDK are examples of WDTF-based tests. For information about those tests, see [How to select and configure the Device Fundamental tests](https://docs.microsoft.com/windows-hardware/drivers).
 
-WDTF provides support for [WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204). All WDTF objects produce tracing information as they run. You can read the trace information by using WDK tools, including [TraceView](https://msdn.microsoft.com/library/windows/hardware/ff556063).
+WDTF provides support for [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing). All WDTF objects produce tracing information as they run. You can read the trace information by using WDK tools, including [TraceView](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-traceview).
 
 ## In this section
 

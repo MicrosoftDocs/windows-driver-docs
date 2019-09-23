@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 
 
-WIA applications and WIA minidrivers can cancel a data transfer at any time. A WIA minidriver can determine whether an application canceled the data transfer by checking the value returned by the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://msdn.microsoft.com/library/windows/hardware/ff543946) method. If the method returns S\_FALSE, the data transfer has been canceled. The WIA minidriver must stop all acquisition activity and return to an idle state. It is then ready for the next data transfer.
+WIA applications and WIA minidrivers can cancel a data transfer at any time. A WIA minidriver can determine whether an application canceled the data transfer by checking the value returned by the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) method. If the method returns S\_FALSE, the data transfer has been canceled. The WIA minidriver must stop all acquisition activity and return to an idle state. It is then ready for the next data transfer.
 
-A WIA minidriver can signal that the data transfer was canceled by returning S\_FALSE from the [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) method. Some devices have a cancel button on the hardware that can abort the data transfer. In such cases, the WIA minidriver should return S\_FALSE.
+A WIA minidriver can signal that the data transfer was canceled by returning S\_FALSE from the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method. Some devices have a cancel button on the hardware that can abort the data transfer. In such cases, the WIA minidriver should return S\_FALSE.
 
 **Note**   It is possible to cancel a WIA scan without declaring an error and returning S\_FALSE. However, this is only possible in Windows XP and later operating systems; it is not possible in Windows Millennium Edition.
 

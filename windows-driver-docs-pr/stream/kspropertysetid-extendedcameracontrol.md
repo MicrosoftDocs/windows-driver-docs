@@ -2,8 +2,9 @@
 title: KSPROPERTYSETID\_ExtendedCameraControl
 description: The KSPROPERTYSETID\_ExtendedCameraControl property set controls the extended camera device settings. The additional controls it provides allow for camera photo sequencing.
 ms.assetid: 37475847-D678-4977-8524-82FA80D6A7EF
-ms.date: 11/28/2017
+ms.date: 04/03/2019
 ms.localizationpriority: medium
+ms.custom: rs5, 19H1
 ---
 
 # KSPROPERTYSETID\_ExtendedCameraControl
@@ -101,3 +102,11 @@ The following camera driver controls are new for Windows 10.
 The following camera driver controls are new for Windows 10, version 1607.
 
 [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](ksproperty-cameracontrol-extended-faceauth-mode.md)
+
+The following camera driver controls are new for Windows 10, version 1709.
+
+[**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOTEMPORALDENOISING**](ksproperty-cameracontrol-extended-videotemporaldenoising.md)
+
+The following camera driver controls are new for Windows 10, version 1903.
+
+[**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_IRTORCH\_MODE**](ksproperty-cameracontrol-extended-irtorchmode.md)

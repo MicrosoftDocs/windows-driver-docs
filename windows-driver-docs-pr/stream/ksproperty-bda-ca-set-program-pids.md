@@ -79,11 +79,11 @@ Requirements
 ## See also
 
 
-[**BDA\_PROGRAM\_PID\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff556549)
+[**BDA\_PROGRAM\_PID\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdatypes/ns-bdatypes-_bda_program_pid_list)
 
 [**KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED**](ksevent-bda-program-flow-status-changed.md)
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
+[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
 
  
 

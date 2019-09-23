@@ -37,7 +37,7 @@ The hardware resources for the NIC switch are managed by the PF miniport driver 
 
 -   Static creation based on standardized SR-IOV and NIC switch INF keywords. For more information on these keywords, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md).
 
--   Dynamic creation based on object identifier (OID) method requests of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://msdn.microsoft.com/library/windows/hardware/hh451815). NDIS or the Hyper-V extensible switch module issues these OID requests to create NIC switches on the SR-IOV network adapter.
+-   Dynamic creation based on object identifier (OID) method requests of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-switch). NDIS or the Hyper-V extensible switch module issues these OID requests to create NIC switches on the SR-IOV network adapter.
 
 For more information on how NIC switches are created, configured, and managed, see [Managing NIC Switches](managing-nic-switches.md).
 

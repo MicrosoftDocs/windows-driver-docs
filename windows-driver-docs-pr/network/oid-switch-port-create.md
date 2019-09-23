@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_CREATE to notify extensible switch extensions about the creation of an extensible switch port.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure.
 
 Remarks
 -------
 
-The **PortId** member of the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229) structure specifies the port for which the creation notification is being made.
+The **PortId** member of the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure specifies the port for which the creation notification is being made.
 
 The extensible switch extension must follow these guidelines for handling OID set requests of OID\_SWITCH\_PORT\_CREATE:
 
--   The extension must not modify the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229) structure that is associated with the OID request.
+-   The extension must not modify the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure that is associated with the OID request.
 
 -   The extension can veto the creation notification by returning NDIS\_STATUS\_DATA\_NOT\_ACCEPTED for the OID request. For example, if an extension cannot allocate resources to enforce its configured policies on the port, the driver should veto the creation notification.
 
@@ -30,19 +30,19 @@ The extensible switch extension must follow these guidelines for handling OID se
 
     If the extension does not veto the OID request, it should monitor the status when the request is completed. The extension should do this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
-    For more information on port policies, see [Managing Hyper-V Extensible Switch Policies](https://msdn.microsoft.com/library/windows/hardware/hh598195).
+    For more information on port policies, see [Managing Hyper-V Extensible Switch Policies](https://docs.microsoft.com/windows-hardware/drivers/network/managing-hyper-v-extensible-switch-extensibility-policies).
 
--   If the extension calls [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward this OID set request, the extension should monitor the completion status of this OID request. The extension does this to detect whether underlying extensions in the extensible switch driver stack have vetoed the port creation notification.
+-   If the extension calls [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest) to forward this OID set request, the extension should monitor the completion status of this OID request. The extension does this to detect whether underlying extensions in the extensible switch driver stack have vetoed the port creation notification.
 
 -   After the OID request is forwarded and completes successfully, the extension can issue OIDs requests for the port, such as [OID\_SWITCH\_PORT\_PROPERTY\_ENUM](oid-switch-port-property-enum.md), until an OID request of [OID\_SWITCH\_PORT\_TEARDOWN](oid-switch-port-teardown.md) is issued. This OID request notifies the extension that the port will begin the deletion process from the extensible switch.
 
--   Extensions cannot forward packets to the specified port in the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229) structure until an OID set request of [OID\_SWITCH\_NIC\_CONNECT](oid-switch-nic-connect.md) is issued and is completed successfully.
+-   Extensions cannot forward packets to the specified port in the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure until an OID set request of [OID\_SWITCH\_NIC\_CONNECT](oid-switch-nic-connect.md) is issued and is completed successfully.
 
 **Note**  Extensions must not issue OID set requests of OID\_SWITCH\_PORT\_CREATE.
 
  
 
-For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://msdn.microsoft.com/library/windows/hardware/hh598182).
+For more information about the states of extensible switch ports and network adapter connections, see [Hyper-V Extensible Switch Port and Network Adapter States](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-port-and-network-adapter-states).
 
 ### Return Status Codes
 
@@ -128,11 +128,11 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598229)
+[**NDIS\_SWITCH\_PORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_parameters)
 
-[**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
+[**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest)
 
 [OID\_SWITCH\_NIC\_CONNECT](oid-switch-nic-connect.md)
 

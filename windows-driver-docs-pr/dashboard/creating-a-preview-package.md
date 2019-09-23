@@ -45,8 +45,8 @@ Any preview package submitted by the partner of a company will require the compa
 
 ## Related topics
 
-[Create a Device Metadata Experience](https://msdn.microsoft.com/library/windows/hardware/br230794.aspx)
+[Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-[Submit a Device Metadata Package (Dashboard help)](https://msdn.microsoft.com/library/windows/hardware/br230807.aspx)
+[Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-[Device Metadata Business Rules](https://msdn.microsoft.com/library/windows/hardware/br230767.aspx)
+[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)

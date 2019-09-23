@@ -27,7 +27,7 @@ A connection-oriented client:
 
 -   **Adds and deletes PVCs.**
 
-    A connection-oriented client can monitor when an operator manually configures or deconfigures a permanent VC (PVC). In response to such an action, the client can request a call manager or MCM driver to add a PVC to its list of configured PVCs or to delete a PVC from such a list (see [OID\_CO\_ADD\_PVC](https://msdn.microsoft.com/library/windows/hardware/ff569087) and [OID\_CO\_DELETE\_PVC](https://msdn.microsoft.com/library/windows/hardware/ff569090)).
+    A connection-oriented client can monitor when an operator manually configures or deconfigures a permanent VC (PVC). In response to such an action, the client can request a call manager or MCM driver to add a PVC to its list of configured PVCs or to delete a PVC from such a list (see [OID\_CO\_ADD\_PVC](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-add-pvc) and [OID\_CO\_DELETE\_PVC](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-delete-pvc)).
 
 -   **Makes outgoing calls.**
 

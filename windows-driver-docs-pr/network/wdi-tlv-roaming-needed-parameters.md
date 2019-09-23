@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS
 
 
-WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](https://msdn.microsoft.com/library/windows/hardware/dn925648) payload.
+WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS is a TLV that contains the reason for a roam trigger. This is used in the [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-roaming-needed) payload.
 
 ## TLV Type
 
@@ -28,7 +28,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                | Description                                                                                                                                      |
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_ASSOC\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/dn897725) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](https://msdn.microsoft.com/library/windows/hardware/dn925958) is triggered, this reason is forwarded to it. |
+| [**WDI\_ASSOC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_assoc_status) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-roam) is triggered, this reason is forwarded to it. |
 
  
 

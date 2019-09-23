@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-When specifying target directories within INF files, directory identifiers (`dirids`) should be used. For more information, see [Using Dirids](https://msdn.microsoft.com/library/windows/hardware/ff553598).
+When specifying target directories within INF files, directory identifiers (`dirids`) should be used. For more information, see [Using Dirids](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids).
 
 The following table lists printer-specific `dirids` and the purpose of each.
 
@@ -44,12 +44,12 @@ The following table lists printer-specific `dirids` and the purpose of each.
 <tr class="even">
 <td><p>66001</p></td>
 <td><p>Represents the directory path returned by the <a href="https://go.microsoft.com/fwlink/p/?linkid=124455" data-raw-source="[GetPrintProcessorDirectory](https://go.microsoft.com/fwlink/p/?linkid=124455)">GetPrintProcessorDirectory</a> function.</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-processor" data-raw-source="&lt;em&gt;Print processor&lt;/em&gt;"><em>Print processor</em></a> files.</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-print-processor" data-raw-source="&lt;em&gt;Print processor&lt;/em&gt;"><em>Print processor</em></a> files.</p></td>
 </tr>
 <tr class="odd">
 <td><p>66002</p></td>
 <td><p>Represents the directory path to additional files to be copied to \System32 of the local system. See the paragraph following this table.</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-print-monitor" data-raw-source="&lt;em&gt;Print monitor&lt;/em&gt;"><em>Print monitor</em></a> files.</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-print-monitor" data-raw-source="&lt;em&gt;Print monitor&lt;/em&gt;"><em>Print monitor</em></a> files.</p></td>
 </tr>
 <tr class="even">
 <td><p>66003</p></td>

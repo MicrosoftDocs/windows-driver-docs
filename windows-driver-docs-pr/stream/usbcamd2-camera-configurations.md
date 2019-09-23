@@ -26,7 +26,7 @@ Although USBCAMD2 interfaces with the *stream.sys* class driver, which is now ob
 
 The primary purpose of USBCAMD2 is to support streaming video cameras, such as webcams. However, USBCAMD2 also provides support to use USB bulk and interrupt transfer pipes to capture still images sent from the camera. This feature supports USB cameras with snapshot capability to capture still frames.
 
-If your camera primarily streams video, and optionally provides snapshot capability, then you need only to write a USBCAMD2 minidriver. Vendors of hybrid cameras (cameras that primarily take still photos, but that can also stream video) write a USBCAMD2 minidriver to support the streaming capability, and a separate Windows Image Acquisition (WIA) still camera driver to support still image storage and management. For more information about WIA and supporting digital cameras that capture still images, see [Windows Image Acquisition Drivers](https://msdn.microsoft.com/library/windows/hardware/ff553346).
+If your camera primarily streams video, and optionally provides snapshot capability, then you need only to write a USBCAMD2 minidriver. Vendors of hybrid cameras (cameras that primarily take still photos, but that can also stream video) write a USBCAMD2 minidriver to support the streaming capability, and a separate Windows Image Acquisition (WIA) still camera driver to support still image storage and management. For more information about WIA and supporting digital cameras that capture still images, see [Windows Image Acquisition Drivers](https://docs.microsoft.com/windows-hardware/drivers/image/windows-image-acquisition-drivers).
 
 The USBCAMD2 library supports cameras that use a combination of isochronous pipe(s), bulk I/O pipe(s) and/or an interrupt pipe to transfer data streams and control settings. USBCAMD2 supports cameras that implement the following USB pipe configurations:
 
@@ -40,7 +40,7 @@ The USBCAMD2 library supports cameras that use a combination of isochronous pipe
 
 -   Two bulk I/O pipes and an optional interrupt pipe. One bulk pipe streams video and the other bulk pipe transfers still images. The optional interrupt pipe signals notification of external trigger events to registered applications.
 
-**Note**   USBCAMD2 supports cameras with a single USB interface that has multiple alternate settings. All alternate settings must have the same type and number of pipes. You specify this information in an array of type [**USBCAMD\_Pipe\_Config\_Descriptor**](https://msdn.microsoft.com/library/windows/hardware/ff568623) that you pass to [*CamConfigureEx*](https://msdn.microsoft.com/library/windows/hardware/ff557605) when you initialize and configure the camera.
+**Note**   USBCAMD2 supports cameras with a single USB interface that has multiple alternate settings. All alternate settings must have the same type and number of pipes. You specify this information in an array of type [**USBCAMD\_Pipe\_Config\_Descriptor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/ns-usbcamdi-_pipe_config_descriptor) that you pass to [*CamConfigureEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_configure_routine_ex) when you initialize and configure the camera.
 
  
 

@@ -15,19 +15,19 @@ ms.localizationpriority: medium
 
 
 
-The framework initializes a driver's local I/O target for a device when the driver calls [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). To retrieve a handle to a device's local I/O target, the driver calls [**WdfDeviceGetIoTarget**](https://msdn.microsoft.com/library/windows/hardware/ff546017).
+The framework initializes a driver's local I/O target for a device when the driver calls [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate). To retrieve a handle to a device's local I/O target, the driver calls [**WdfDeviceGetIoTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicegetiotarget).
 
 Most drivers send requests only to their local I/O target.
 
 To initialize a remote I/O target for a device, the driver must:
 
-1.  Call [**WdfIoTargetCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548591) to create an I/O target object.
+1.  Call [**WdfIoTargetCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate) to create an I/O target object.
 
-2.  Call [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634) to open an I/O target so that the driver can send requests to it.
+2.  Call [**WdfIoTargetOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfiotarget/nf-wdfiotarget-wdfiotargetopen) to open an I/O target so that the driver can send requests to it.
 
-When the driver calls [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634), it typically identifies the remote I/O target by supplying a Unicode string that represents an [object name](https://msdn.microsoft.com/library/windows/hardware/ff557762). This name can identify a device, file, or device interface. The framework sends I/O requests to the top of the driver stack that supports the object name.
+When the driver calls [**WdfIoTargetOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfiotarget/nf-wdfiotarget-wdfiotargetopen), it typically identifies the remote I/O target by supplying a Unicode string that represents an [object name](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-names). This name can identify a device, file, or device interface. The framework sends I/O requests to the top of the driver stack that supports the object name.
 
-Rarely, a driver might identify a remote I/O target by supplying a pointer to a Windows Driver Model (WDM) [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure. This pointer identifies a different driver within the calling driver's stack. Framework-based drivers rarely use this technique because they rarely have access to other drivers' **DEVICE\_OBJECT** structures.
+Rarely, a driver might identify a remote I/O target by supplying a pointer to a Windows Driver Model (WDM) [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure. This pointer identifies a different driver within the calling driver's stack. Framework-based drivers rarely use this technique because they rarely have access to other drivers' **DEVICE\_OBJECT** structures.
 
 The following example shows how the Ndisedge sample driver uses the above technique to create and open a remote I/O target:
 

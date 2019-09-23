@@ -27,13 +27,13 @@ When an application requests the creation of a bitmap, a driver can create and m
 > [!NOTE]
 > The Microsoft Windows Driver Kit (WDK) does not contain the 3Dlabs Permedia2 (*3dlabs.htm*) and 3Dlabs Permedia3 (*Perm3.htm*) sample display drivers. You can get these sample drivers from the Windows Server 2003 SP1 Driver Development Kit (DDK), which you can download from the DDK - Windows Driver Development Kit page of the WDHC website.
 
-Within **DrvCreateDeviceBitmap**, the driver calls the GDI service [**EngCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff564204) to have GDI create a handle for the device bitmap.
+Within **DrvCreateDeviceBitmap**, the driver calls the GDI service [**EngCreateDeviceBitmap**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engcreatedevicebitmap) to have GDI create a handle for the device bitmap.
 
 If the driver supports **DrvCreateDeviceBitmap**, it creates a DDB, defines its format, and returns a handle to it. The driver controls where the bitmap is stored, and in what format. The driver should support the color format that matches its device surface most closely.
 
 The contents of the bitmap are undefined after creation. If the driver returns **NULL**, it does not create and manage the bitmap; instead, GDI performs these tasks.
 
-If the driver creates bitmaps, it must also be able to delete them by implementing the [**DrvDeleteDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556187) function.
+If the driver creates bitmaps, it must also be able to delete them by implementing the [**DrvDeleteDeviceBitmap**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdeletedevicebitmap) function.
 
  
 

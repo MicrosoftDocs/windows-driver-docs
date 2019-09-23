@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-An intermediate driver registers its *ProtocolXxx* functions with NDIS in the context of its [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) function by calling [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520).
+An intermediate driver registers its *ProtocolXxx* functions with NDIS in the context of its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function by calling [**NdisRegisterProtocolDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisregisterprotocoldriver).
 
 Registering an intermediate driver as a protocol is nearly identical to registering as a protocol driver. For more information, see [Initializing a Protocol Driver](initializing-a-protocol-driver.md).
 

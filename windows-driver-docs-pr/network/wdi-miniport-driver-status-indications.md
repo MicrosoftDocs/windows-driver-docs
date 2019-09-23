@@ -4,6 +4,7 @@ description: This section contains WDI status notifications.
 ms.assetid: CD873C33-72ED-4F99-A584-5C307F4FB65E
 ms.date: 07/18/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # WDI Miniport Driver Status Indications
@@ -45,8 +46,10 @@ This section contains WDI status notifications.
 -   [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_REQUEST\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-p2p-send-request-action-frame-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-p2p-send-response-action-frame-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS](ndis-status-wdi-indication-radio-status.md)
+-   [NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE](ndis-status-wdi-indication-request-ftm-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_ROAM\_COMPLETE](ndis-status-wdi-indication-roam-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_ROAMING\_NEEDED](ndis-status-wdi-indication-roaming-needed.md)
+-   [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_SCAN\_COMPLETE](ndis-status-wdi-indication-scan-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPONSE\_COMPLETE](ndis-status-wdi-indication-send-ap-association-response-complete.md)
 -   [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_REQUEST\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-send-request-action-frame-complete.md)

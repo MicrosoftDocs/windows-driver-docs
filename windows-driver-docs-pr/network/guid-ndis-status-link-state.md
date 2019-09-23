@@ -16,7 +16,7 @@ Miniport drivers use the [NDIS_STATUS_LINK_STATE](ndis-status-link-state.md) sta
 
 When a miniport driver indicates a link state change, NDIS translates the status indication to a WMI GUID_NDIS_STATUS_LINK_STATE event for WMI clients.
 
-The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](https://msdn.microsoft.com/library/windows/hardware/ff567900) structure that is followed by an [NDIS_LINK_STATE](https://msdn.microsoft.com/library/windows/hardware/hh205390) structure. The **NDIS_LINK_STATE** structure specifies the physical state of the medium.
+The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_wmi_event_header) structure that is followed by an [NDIS_LINK_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure. The **NDIS_LINK_STATE** structure specifies the physical state of the medium.
 
 For more information about link status, see [OID_GEN_LINK_STATE](oid-gen-link-state.md) and [NDIS_STATUS_LINK_STATE](ndis-status-link-state.md).
 

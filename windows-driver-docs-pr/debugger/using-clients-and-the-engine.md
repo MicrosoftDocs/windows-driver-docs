@@ -17,7 +17,7 @@ A DbgEng extension interacts with the [debugger engine](introduction.md#debugger
 
 When an extension function is called, it is passed a client. The extension function should use this client for all its interaction with the debugger engine, unless it has a specific reason to use another client.
 
-An extension library may create its own client object upon initialization by using [**DebugCreate**](https://msdn.microsoft.com/library/windows/hardware/ff540469). This client can be used to register callback objects from the DLL.
+An extension library may create its own client object upon initialization by using [**DebugCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-debugcreate). This client can be used to register callback objects from the DLL.
 
 **Note**   Care should be taken when modifying the client passed to an extension function. In particular, registering callbacks with this client could disrupt the input, output, or event handling of the debugger. It is recommended that a new client be created to register callbacks.
 

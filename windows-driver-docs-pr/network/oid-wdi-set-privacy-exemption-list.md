@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_PRIVACY_EXEMPTION_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST
@@ -24,7 +25,7 @@ OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list 
 
 | TLV                                                                                 | Multiple TLV instances allowed | Optional | Description                        |
 |-------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------|
-| [**WDI\_TLV\_PRIVACY\_EXEMPTION\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn898041) | X                              | X        | List of privacy exemption entries. |
+| [**WDI\_TLV\_PRIVACY\_EXEMPTION\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-privacy-exemption-entry) | X                              | X        | List of privacy exemption entries. |
 
  
 
@@ -32,6 +33,7 @@ OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list 
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

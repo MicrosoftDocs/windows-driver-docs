@@ -24,7 +24,7 @@ Like all higher-level kernel-mode drivers, a storage class driver must set up th
 
 -   **Parameters.Scsi.Srb** contains a pointer to the SRB
 
-Each class driver is responsible for allocating memory for SRBs as well as for setting them up with CDBs for the underlying storage port driver. The class driver can either set up a lookaside list for its SRBs with **ExInitializeNPageLookasideList** or call **ExAllocatePool** for nonpaged memory. See [Using Lookaside Lists](https://msdn.microsoft.com/library/windows/hardware/ff565416) for more information about using lookaside lists and nonpaged pool.
+Each class driver is responsible for allocating memory for SRBs as well as for setting them up with CDBs for the underlying storage port driver. The class driver can either set up a lookaside list for its SRBs with **ExInitializeNPageLookasideList** or call **ExAllocatePool** for nonpaged memory. See [Using Lookaside Lists](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-lookaside-lists) for more information about using lookaside lists and nonpaged pool.
 
 Whether it allocates memory from pool or from a driver-created lookaside list, every storage class driver is responsible for freeing the memory it allocates for SRBs. Storage class drivers' *IoCompletion* routines, described in [Storage Class Driver's IoCompletion Routines](storage-class-driver-s-iocompletion-routines.md), usually release the memory allocated for SRBs back to a lookaside list.
 
@@ -34,7 +34,7 @@ A *BuildRequest* routine might share the responsibility for setting up an SRB wi
 
 After the class driver has loaded, it sets up most SRBs with the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI, indicating a device I/O request to be sent over the bus.
 
-For more information about the system-defined SRB members and their values, see [**SCSI\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565393).
+For more information about the system-defined SRB members and their values, see [**SCSI\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block).
 
 ### <span id="Setting_Up_SRBs_for_Request_Sense"></span><span id="setting_up_srbs_for_request_sense"></span><span id="SETTING_UP_SRBS_FOR_REQUEST_SENSE"></span>Setting Up SRBs for Request Sense
 

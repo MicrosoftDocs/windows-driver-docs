@@ -1,6 +1,8 @@
 - name: "Power Metering and Budgeting Design Guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Power Metering and Budgeting Design Guide"
+    href: index.md
   - name: "Overview of the Power Metering and Budgeting Infrastructure"
     href: overview-of-the-power-metering-and-budgeting-infrastructure.md
   - name: "User-Mode Power Service"
@@ -12,8 +14,10 @@
   - name: "Software Defined Batteries"
     href: software-defined-batteries.md
   - name: "ACPI Power Meter Interface"
-    href: acpi-power-meter-interface.md
+# Auto-expanded node
     items: 
+    - name: "ACPI Power Meter Interface"
+      href: acpi-power-meter-interface.md
     - name: "Overview of the ACPI 4.0 Power Metering Objects"
       href: overview-of-the-acpi-4-0-power-metering-objects.md
     - name: "ACPI IPMI Operation Region"

@@ -1,9 +1,13 @@
 - name: "PCMCIA Bus Driver Design Guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "PCMCIA Bus Driver Design Guide"
+    href: index.md
   - name: "Access Attribute Memory of a PCMCIA Device"
-    href: access-attribute-memory-of-a-pcmcia-device.md
+# Auto-expanded node
     items: 
+    - name: "Access Attribute Memory of a PCMCIA Device"
+      href: access-attribute-memory-of-a-pcmcia-device.md
     - name: "Requirements for Accessing Attribute Memory of a PCMCIA Device"
       href: requirements-for-accessing-attribute-memory-of-a-pcmcia-device.md
     - name: "Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request"
@@ -15,8 +19,10 @@
     - name: "Access PCMCIA Attribute Memory by Using a PCMCIA_INTERFACE_STANDARD"
       href: access-pcmcia-attribute-memory-by-using-a-pcmcia-interface-standard-in.md
   - name: "PCMCIA_INTERFACE_STANDARD Interface for Memory Cards"
-    href: pcmcia-interface-standard-interface-for-memory-cards.md
+# Auto-expanded node
     items: 
+    - name: "PCMCIA_INTERFACE_STANDARD Interface for Memory Cards"
+      href: pcmcia-interface-standard-interface-for-memory-cards.md
     - name: "Functionality of the PCMCIA_INTERFACE_STANDARD Interface"
       href: functionality-of-the-pcmcia-interface-standard-interface.md
     - name: "Obtaining a PCMCIA_INTERFACE_STANDARD Interface"
@@ -24,15 +30,19 @@
     - name: "Calling a PCMCIA_INTERFACE_STANDARD Interface Routine"
       href: calling-a-pcmcia-interface-standard-interface-routine.md
     - name: "Special Considerations for PCMCIA Memory Card Drivers"
-      href: special-considerations-for-pcmcia-memory-card-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Special Considerations for PCMCIA Memory Card Drivers"
+        href: special-considerations-for-pcmcia-memory-card-drivers.md
       - name: "Restrictions on Memory Windows"
         href: restrictions-on-memory-windows.md
       - name: "Read and Write Attribute Memory"
         href: read-and-write-attribute-memory.md
   - name: "PCMCIA IRQ Routing on Windows XP"
-    href: pcmcia-irq-routing-on-windows-xp.md
+# Auto-expanded node
     items: 
+    - name: "PCMCIA IRQ Routing on Windows XP"
+      href: pcmcia-irq-routing-on-windows-xp.md
     - name: "Requirements for Routing PC Card Interrupts"
       href: requirements-for-routing-pc-card-interrupts.md
     - name: "INF Override for Configuring PC Card Interrupts"

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 CertMgr (Certmgr.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
 
-CertMgr supports a large number of switches, but this section describes only those that are relevant to managing [test certificates](https://msdn.microsoft.com/library/windows/hardware/ff553457) within a certificate store.
+CertMgr supports a large number of switches, but this section describes only those that are relevant to managing [test certificates](https://docs.microsoft.com/windows-hardware/drivers/install/test-certificates) within a certificate store.
 
 ```
     CertMgr [/add|/del|/put] [Switches] [/s [/r RegistryLocation ] ] SourceName [/s [/r RegistryLocation] ] [DestinationName]
@@ -66,7 +66,7 @@ Specifies the registry location HKEY\_LOCAL\_MACHINE.
 
 If the **/r** switch is not specified along with the **/s** switch, *currentUser* is the default.
 
-For more information about these certificate stores, see [Certificate Stores](https://msdn.microsoft.com/library/windows/hardware/ff537890).
+For more information about these certificate stores, see [Certificate Stores](https://docs.microsoft.com/windows-hardware/drivers/install/certificate-stores).
 
 <span id="_v"></span><span id="_V"></span>**/v**  
 Configures CertMgr to display detailed information about certificates, CTLs, and CRLs. If this switch is not specified, CertMgr only displays brief information.

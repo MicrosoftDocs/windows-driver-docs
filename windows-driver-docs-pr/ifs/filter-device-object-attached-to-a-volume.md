@@ -24,51 +24,51 @@ To filter a volume, a filter driver creates a filter device object and attaches 
 
 A filter device object that is attached above a volume can generally expect to receive the following types of I/O requests:
 
-[**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff548608)
+[**IRP\_MJ\_CLEANUP**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-cleanup)
 
-[**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff548621)
+[**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-close)
 
-[**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff548630)
+[**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create)
 
-[**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548649)
+[**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-device-control)
 
-[**IRP\_MJ\_DIRECTORY\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548658)
+[**IRP\_MJ\_DIRECTORY\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-directory-control)
 
-[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548670)
+[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-file-system-control)
 
-[**IRP\_MJ\_FLUSH\_BUFFERS**](https://msdn.microsoft.com/library/windows/hardware/ff549235)
+[**IRP\_MJ\_FLUSH\_BUFFERS**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-flush-buffers)
 
-[**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff549241)
+[**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-internal-device-control)
 
-[**IRP\_MJ\_LOCK\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff549251)
+[**IRP\_MJ\_LOCK\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-lock-control)
 
-[**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff549268)
+[**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-pnp)
 
-[**IRP\_MJ\_QUERY\_EA**](https://msdn.microsoft.com/library/windows/hardware/ff549279)
+[**IRP\_MJ\_QUERY\_EA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-ea)
 
-[**IRP\_MJ\_QUERY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549283)
+[**IRP\_MJ\_QUERY\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-information)
 
-[**IRP\_MJ\_QUERY\_QUOTA**](https://msdn.microsoft.com/library/windows/hardware/ff549293)
+[**IRP\_MJ\_QUERY\_QUOTA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-quota)
 
-[**IRP\_MJ\_QUERY\_SECURITY**](https://msdn.microsoft.com/library/windows/hardware/ff549298)
+[**IRP\_MJ\_QUERY\_SECURITY**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-security)
 
-[**IRP\_MJ\_QUERY\_VOLUME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549318)
+[**IRP\_MJ\_QUERY\_VOLUME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-volume-information)
 
-[**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff549327)
+[**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-read)
 
-[**IRP\_MJ\_SET\_EA**](https://msdn.microsoft.com/library/windows/hardware/ff549346)
+[**IRP\_MJ\_SET\_EA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-ea)
 
-[**IRP\_MJ\_SET\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549366)
+[**IRP\_MJ\_SET\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-information)
 
-[**IRP\_MJ\_SET\_QUOTA**](https://msdn.microsoft.com/library/windows/hardware/ff549401)
+[**IRP\_MJ\_SET\_QUOTA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-quota)
 
-[**IRP\_MJ\_SET\_SECURITY**](https://msdn.microsoft.com/library/windows/hardware/ff549407)
+[**IRP\_MJ\_SET\_SECURITY**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-security)
 
-[**IRP\_MJ\_SET\_VOLUME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549415)
+[**IRP\_MJ\_SET\_VOLUME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-volume-information)
 
-[**IRP\_MJ\_SHUTDOWN**](https://msdn.microsoft.com/library/windows/hardware/ff549423)
+[**IRP\_MJ\_SHUTDOWN**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-shutdown)
 
-[**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff549427)
+[**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-write)
 
 **FastIoCheckIfPossible**
 
@@ -127,7 +127,7 @@ File system filter device objects, attached to volumes, are required to pass all
 
 **ReleaseForModWrite**
 
-For more information, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172).
+For more information, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
  
 

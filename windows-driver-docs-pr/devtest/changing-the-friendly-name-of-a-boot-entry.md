@@ -35,7 +35,7 @@ However, more precise strings, such as the ones that follow, make the boot choic
 "Windows 10 NullModem"
 ```
 
-**Note**   When a boot entry is configured for debugging ([/debug /debugport](https://msdn.microsoft.com/library/windows/hardware/ff556253)) or for Emergency Management Services (EMS) ([/redirect](https://msdn.microsoft.com/library/windows/hardware/ff557180)) on an x86- or an x64-based system, the boot loader appends a bracketed phrase (\[debugger enabled\] or \[ems enabled\]) to the friendly name that appears in the boot menu.
+**Note**   When a boot entry is configured for debugging ([/debug /debugport](https://docs.microsoft.com/windows-hardware/drivers/devtest/-debug)) or for Emergency Management Services (EMS) ([/redirect](https://docs.microsoft.com/windows-hardware/drivers/devtest/-redirect)) on an x86- or an x64-based system, the boot loader appends a bracketed phrase (\[debugger enabled\] or \[ems enabled\]) to the friendly name that appears in the boot menu.
 However, the boot loader omits the bracketed phrase from the boot menu when the friendly name and the bracketed phrase together exceed 70 characters. To restore the bracketed phrase, shorten the friendly name.
 
 To change the friendly name of a boot entry in a Boot.ini file, you can use Bootcfg or edit the Boot.ini file in Notepad. On systems that store boot options in EFI NVRAM, use Bootcfg.

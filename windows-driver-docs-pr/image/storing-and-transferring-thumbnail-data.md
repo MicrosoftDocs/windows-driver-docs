@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-WIA thumbnail information is controlled by three WIA properties: [**WIA\_IPC\_THUMBNAIL**](https://msdn.microsoft.com/library/windows/hardware/ff552550), [**WIA\_IPC\_THUMBNAIL\_WIDTH**](https://msdn.microsoft.com/library/windows/hardware/ff552558), and [**WIA\_IPC\_THUMBNAIL\_HEIGHT**](https://msdn.microsoft.com/library/windows/hardware/ff552552). In Windows Me, and in Windows XP and later, the thumbnail data is 24-bits per pixel only.
+WIA thumbnail information is controlled by three WIA properties: [**WIA\_IPC\_THUMBNAIL**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-thumbnail), [**WIA\_IPC\_THUMBNAIL\_WIDTH**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-thumbnail-width), and [**WIA\_IPC\_THUMBNAIL\_HEIGHT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipc-thumbnail-height). In Windows Me, and in Windows XP and later, the thumbnail data is 24-bits per pixel only.
 
 <a href="" id="wia-ipc-thumbnail"></a>WIA\_IPC\_THUMBNAIL  
 The property contains the thumbnail data in RGB format, with 24 bits per pixel, and aligned on 32-bit boundaries.

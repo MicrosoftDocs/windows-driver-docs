@@ -35,7 +35,7 @@ Remarks
 
 For queries, the number returned is always the total number of packets currently queued. This number can include unsubmitted send requests queued in the NDIS library.
 
-For general information about statistics OIDs, see [General Statistics](https://msdn.microsoft.com/library/windows/hardware/ff552485).
+For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
 
 Requirements
 ------------

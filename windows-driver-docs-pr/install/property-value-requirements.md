@@ -26,7 +26,7 @@ Windows enforces the device property value size requirements that are listed in 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>A fixed-length <a href="https://msdn.microsoft.com/library/windows/hardware/ff537793" data-raw-source="[&lt;strong&gt;base-data-type&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537793)"><strong>base-data-type</strong></a> value</p></td>
+<td align="left"><p>A fixed-length <a href="https://docs.microsoft.com/previous-versions/ff537793(v=vs.85)" data-raw-source="[&lt;strong&gt;base-data-type&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff537793(v=vs.85))"><strong>base-data-type</strong></a> value</p></td>
 <td align="left"><p>The specified size of the supplied data must be the number of bytes in the base data type.</p></td>
 </tr>
 <tr class="even">
@@ -34,11 +34,11 @@ Windows enforces the device property value size requirements that are listed in 
 <td align="left"><p>The specified size of the supplied data must be the number of bytes of an array of zero or more base-data-type values.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff543608" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543608)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR</strong></a> data type value</p></td>
+<td align="left"><p>A <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-security-descriptor" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-security-descriptor)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR</strong></a> data type value</p></td>
 <td align="left"><p>The specified size of the supplied data must be the number of bytes of a variable-length, self-relative SECURITY_DESCRIPTOR structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff543612" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543612)"><strong>DEVPROP_TYPE_STRING</strong></a> data type value, a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543609" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543609)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING</strong></a> data type value, or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543613" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_INDIRECT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543613)"><strong>DEVPROP_TYPE_STRING_INDIRECT</strong></a> data type value</p></td>
+<td align="left"><p>A <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string)"><strong>DEVPROP_TYPE_STRING</strong></a> data type value, a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-security-descriptor-string" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-security-descriptor-string)"><strong>DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING</strong></a> data type value, or a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string-indirect" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_INDIRECT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string-indirect)"><strong>DEVPROP_TYPE_STRING_INDIRECT</strong></a> data type value</p></td>
 <td align="left"><p>The specified size of the supplied data must be the number of bytes of a Unicode <a href="https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types" data-raw-source="[REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)">REG_SZ</a> string, including the NULL-terminator.</p></td>
 </tr>
 <tr class="odd">

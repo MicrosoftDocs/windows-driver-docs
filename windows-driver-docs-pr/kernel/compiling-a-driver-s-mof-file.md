@@ -38,11 +38,11 @@ To include the compiled MOF file as a resource in the driver's binary image, add
 
 **MofResource MOFDATA** *filename.bmf*
 
-A driver specifies its MOF resource name in response to a registration request (an [**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) or [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) request with **Parameters.WMI.DataPath** set to WMIREGISTER):
+A driver specifies its MOF resource name in response to a registration request (an [**IRP\_MN\_REGINFO**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo) or [**IRP\_MN\_REGINFO\_EX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-reginfo-ex) request with **Parameters.WMI.DataPath** set to WMIREGISTER):
 
--   If the driver is using the WMI library routines to handle WMI IRPs, it specifies the MOF resource name in its [*DpWmiQueryReginfo*](https://msdn.microsoft.com/library/windows/hardware/ff544097) routine.
+-   If the driver is using the WMI library routines to handle WMI IRPs, it specifies the MOF resource name in its [*DpWmiQueryReginfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_query_reginfo_callback) routine.
 
--   If the driver is handling WMI IRPs directly, it specifies the MOF resource name in the [**WMIREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff565832) structure that the driver passes to WMI.
+-   If the driver is handling WMI IRPs directly, it specifies the MOF resource name in the [**WMIREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-wmireginfow) structure that the driver passes to WMI.
 
 For more information about handling **IRP\_MN\_REGINFO** and **IRP\_MN\_REGINFO\_EX** requests, see [Registering as a WMI Data Provider](registering-as-a-wmi-data-provider.md).
 

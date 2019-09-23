@@ -35,7 +35,7 @@ Remarks
 
 OID\_GEN\_RCV\_OK specifies the number of frames that are received without errors. However, the [OID\_GEN\_STATISTICS](oid-gen-statistics.md) does not include this information.
 
-NOTE: Statistics OIDs are mandatory for NDIS 6.0 and later miniport drivers unless NDIS handles them. For general information about statistics OIDs, see [General Statistics](https://msdn.microsoft.com/library/windows/hardware/ff552485).
+NOTE: Statistics OIDs are mandatory for NDIS 6.0 and later miniport drivers unless NDIS handles them. For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
 
 Requirements
 ------------

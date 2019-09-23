@@ -43,7 +43,7 @@ Following are two tables. The first table lists required standard routines. The 
 <td><p><a href="writing-a-driverentry-routine.md" data-raw-source="[Writing a DriverEntry Routine](writing-a-driverentry-routine.md)">Writing a DriverEntry Routine</a></p></td>
 </tr>
 <tr class="even">
-<td><p><em><a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a></em></p></td>
+<td><p><em><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device">AddDevice</a></em></p></td>
 <td><p>Initializes devices and creates device objects.</p></td>
 <td><p><a href="writing-an-adddevice-routine.md" data-raw-source="[Writing an AddDevice Routine](writing-an-adddevice-routine.md)">Writing an AddDevice Routine</a></p></td>
 </tr>

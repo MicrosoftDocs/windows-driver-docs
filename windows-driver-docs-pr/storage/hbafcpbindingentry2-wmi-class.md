@@ -27,7 +27,7 @@ class HBAFCPBindingEntry2 {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**HBAFCPBindingEntry2**](https://msdn.microsoft.com/library/windows/hardware/ff556035)
+[**HBAFCPBindingEntry2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry2)
 
 There are no methods associated with this WMI class.
 

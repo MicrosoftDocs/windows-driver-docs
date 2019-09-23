@@ -84,7 +84,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                             <a href="https://go.microsoft.com/fwlink/p/?LinkId=698539">Visual Studio 2017</a>
                         </p>
                         <p>
-                            <a href="https://developer.microsoft.com/windows/hardware/windows-driver-kit">Windows Driver Kit (WDK)</a>
+                            <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk">Windows Driver Kit (WDK)</a>
                         </p>                        
                     </div>
                 </div>
@@ -103,7 +103,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
                     <div class="cardText">
                         <h3>Code samples</h3>
                         <p>
-                            <a href="https://github.com/Microsoft/Windows-driver-samples">Universal Windows driver samples</a>
+                            <a href="https://docs.microsoft.com/samples/browse/?products=windows-wdk">Universal Windows driver samples</a>
                         </p>
                     </div>
                 </div>
@@ -244,7 +244,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2017 and 
 
 <p><b>Run-time requirements for WDK 10</b></p>
 
-WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs).
+WDK requires Visual Studio. For more information, see [Visual Studio 2017 System Requirements](https://docs.microsoft.com/visualstudio/productinfo/vs2017-system-requirements-vs).
 
 EWDK additionally requires .NET 4.6.1. For information about .NET requirements, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). 
 

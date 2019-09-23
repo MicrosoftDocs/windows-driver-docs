@@ -50,7 +50,7 @@ The following diagram illustrates the modem’s reset flow when one of these sce
 
 ## NDIS interface to the modem
 
-For querying the status and payload of a PCO value the modem received from the operator network, see [OID_WWAN_PCO](oid-wwan-pco.md). **OID_WWAN_PCO** uses the [**NDIS_WWAN_PCO_STATUS**](https://msdn.microsoft.com/library/windows/hardware/C71187C5-74B6-450A-8461-BB9FDF60DB8D) structure, which in turn contains a [**WWAN_PCO_VALUE**](https://msdn.microsoft.com/library/windows/hardware/45A499CE-2C9A-4070-BEF8-880E7673FA8E)  structure representing the PCO information payload from the network.
+For querying the status and payload of a PCO value the modem received from the operator network, see [OID_WWAN_PCO](oid-wwan-pco.md). **OID_WWAN_PCO** uses the [**NDIS_WWAN_PCO_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pco_status) structure, which in turn contains a [**WWAN_PCO_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_pco_value)  structure representing the PCO information payload from the network.
 
 For the status notification sent by a modem miniport driver to inform the OS of the current PCO state in the modem, see [NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md).
 
@@ -98,13 +98,13 @@ Unsolicited events contain an MBIM_PCO_VALUE and are sent when a new PCO value h
 | MBIMPcoTypeComplete | 0 | Specifies that the complete PCO structure will be passed up as received from the network and the header realistically reflects the protocol in octet 3 of the PCO structure, defined in the 3GPP TS24.008 spec. |
 | MBIMPcoTypePartial | 1 | Specifies that the modem will only be passing up a subset of PCO structures that it received from the network. The header matches the PCO structure defined in the 3GPP TS24.008 spec, but the “Configuration protocol” of octet 3 may not be valid. |
 
-##### MBIM_PCO_VALUE
+##### <a name="MBIM_PCO_TYPE"></a>MBIM-PCO-TYPE
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | SessionId | UINT32 | The SessionId in a query indicates which IP data stream’s PCO value is to be returned by the function. |
 | 4 | 4 | PcoDataSize | UINT32 | The length of PcoData, from 0 to 256. This value will be 0 in a query. |
-| 8 | 4 | PcoDataType | UINT32 | The PCO data type. For more info, see [MBIM_PCO_TYPE](#mbimpcotype). |
+| 8 | 4 | PcoDataType | UINT32 | The PCO data type. For more info, see [MBIM_PCO_TYPE](#mbim_pco_type). |
 | 12 | | PcoDataBuffer | DATABUFFER | The PCO structure from the 3GPP TS24.008 spec. |
 
 #### Status Codes

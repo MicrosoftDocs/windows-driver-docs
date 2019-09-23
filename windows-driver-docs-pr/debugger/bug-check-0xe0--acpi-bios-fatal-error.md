@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The ACPI\_BIOS\_FATAL\_ERROR bug check has a value of 0x000000E0. This indicates that one of your computer components is faulty.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ACPI\_BIOS\_FATAL\_ERROR Parameters

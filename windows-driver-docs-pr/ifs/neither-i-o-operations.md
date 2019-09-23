@@ -19,25 +19,25 @@ ms.localizationpriority: medium
 
 A file system must handle operations that typically involve directly manipulating user buffers. Such operations are inherently risky because the user address might not be valid. File systems must be particularly conscious of such operations and ensure that they protect them appropriately. The following operations rely upon the **Flags** member of the file system's device object to specify how the I/O manager is to transfer data between user and kernel address space:
 
--   [**IRP\_MJ\_DIRECTORY\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548658)
+-   [**IRP\_MJ\_DIRECTORY\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-directory-control)
 
--   [**IRP\_MJ\_QUERY\_EA**](https://msdn.microsoft.com/library/windows/hardware/ff549279)
+-   [**IRP\_MJ\_QUERY\_EA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-ea)
 
--   [**IRP\_MJ\_QUERY\_QUOTA**](https://msdn.microsoft.com/library/windows/hardware/ff549293)
+-   [**IRP\_MJ\_QUERY\_QUOTA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-quota)
 
--   [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff549327)
+-   [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-read)
 
--   [**IRP\_MJ\_SET\_EA**](https://msdn.microsoft.com/library/windows/hardware/ff549346)
+-   [**IRP\_MJ\_SET\_EA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-ea)
 
--   [**IRP\_MJ\_SET\_QUOTA**](https://msdn.microsoft.com/library/windows/hardware/ff549401)
+-   [**IRP\_MJ\_SET\_QUOTA**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-quota)
 
--   [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff549427)
+-   [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-write)
 
 Typically, a file system chooses neither I/O implicitly by setting neither DO\_DIRECT\_IO nor DO\_BUFFERED\_IO in the **Flags** member of the volume device object that it creates.
 
 The following operation ignores the **Flags** member of the file system's device object and uses neither I/O to transfer data between user and kernel address space:
 
--   [**IRP\_MJ\_QUERY\_SECURITY**](https://msdn.microsoft.com/library/windows/hardware/ff549298)
+-   [**IRP\_MJ\_QUERY\_SECURITY**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-query-security)
 
 Using neither I/O, the file system is responsible for handling its own data transfer operations. This allows a file system to satisfy an operation by directly placing the data into the user-space buffer of an application. The file system must thus ensure that the user's buffer is valid when the operation begins and gracefully handle the buffer becoming invalid while the operation is ongoing. Fast I/O also passes raw pointers. Developers should be aware that checking the validity of the buffer at the beginning of the operation is not sufficient to ensure that it remains valid throughout the operation. For example, a malicious application could map a block of memory (through a section, for example), issue an I/O operation, and unmap the block of memory while the I/O operation is ongoing.
 

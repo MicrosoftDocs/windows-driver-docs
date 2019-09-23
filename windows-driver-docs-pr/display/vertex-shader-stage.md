@@ -13,19 +13,19 @@ The vertex shader stage processes vertices by performing operations such as tran
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the vertex shader:
 
-[**CalcPrivateShaderSize**](https://msdn.microsoft.com/library/windows/hardware/ff538315)
+[**CalcPrivateShaderSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateshadersize)
 
-[**CreateVertexShader(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540720)
+[**CreateVertexShader(D3D10)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createvertexshader)
 
-[**DestroyShader**](https://msdn.microsoft.com/library/windows/hardware/ff552805)
+[**DestroyShader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyshader)
 
-[**VsSetConstantBuffers**](https://msdn.microsoft.com/library/windows/hardware/ff570573)
+[**VsSetConstantBuffers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers)
 
-[**VsSetSamplers**](https://msdn.microsoft.com/library/windows/hardware/ff570574)
+[**VsSetSamplers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setsamplers)
 
-[**VsSetShader**](https://msdn.microsoft.com/library/windows/hardware/ff570575)
+[**VsSetShader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshader)
 
-[**VsSetShaderResources**](https://msdn.microsoft.com/library/windows/hardware/ff570576)
+[**VsSetShaderResources**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setshaderresources)
 
  
 

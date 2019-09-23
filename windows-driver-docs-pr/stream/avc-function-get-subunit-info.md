@@ -59,7 +59,7 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_SUBUNIT\_INFO\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554199), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
+[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SUBUNIT\_INFO\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_subunit_info_block), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function)
 
  
 

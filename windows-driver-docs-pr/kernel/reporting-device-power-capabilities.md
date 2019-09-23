@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 
 
-During enumeration, drivers report device-specific information in response to a PnP [**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) request. Along with other such information, drivers report a device's power management capabilities in the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure. Typically, the bus driver fills in this structure.
+During enumeration, drivers report device-specific information in response to a PnP [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request. Along with other such information, drivers report a device's power management capabilities in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure. Typically, the bus driver fills in this structure.
 
-Higher-level drivers should set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine for the query-capabilities IRP so that they can make a local copy of the structure and ensure that it contains appropriate values. As a general rule, higher-level drivers should not change these values. However, if a change is necessary, a driver can further restrict device capabilities but cannot add to them. In other words, a driver can make the rules more restrictive but cannot loosen them.
+Higher-level drivers should set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine for the query-capabilities IRP so that they can make a local copy of the structure and ensure that it contains appropriate values. As a general rule, higher-level drivers should not change these values. However, if a change is necessary, a driver can further restrict device capabilities but cannot add to them. In other words, a driver can make the rules more restrictive but cannot loosen them.
 
 After the IRP is complete and all drivers' completion routines have been run, the structure is cached and a driver cannot change its contents.
 

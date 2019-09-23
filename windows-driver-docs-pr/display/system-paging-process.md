@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # System paging process
 
 
-Most paging operations occur in a context of the system paging process. The only exception is the page table update from the [*UpdateGpuVirtualAddress callback*](https://msdn.microsoft.com/library/windows/hardware/dn906365), which occurs in a special companion context and occurs synchronous of rendering.
+Most paging operations occur in a context of the system paging process. The only exception is the page table update from the [*UpdateGpuVirtualAddress callback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb), which occurs in a special companion context and occurs synchronous of rendering.
 
 The Microsoft DirectX graphics kernel uses the system paging process to perform paging operations, such as:
 
@@ -33,7 +33,7 @@ The page tables of the system process are divided into two parts:
 
 A *system page table* is created that reflects the *scratch area page table* into the address space of the system process. This allow the system process to modify the scratch area page tables and map/unmap memory from the scratch area as necessary. The content of the page tables is set during adapter initialization and never changes.
 The *scratch area page table* page table entries are used to map allocations to the virtual address space of the paging process. They are initialized as *invalid* during initialization and used later for paging operations.
-The page tables of the paging process are initialized through [*UpdatePageTable*](https://msdn.microsoft.com/library/windows/hardware/ff560815) paging operations during adapter initialization and power on event. For these operations, the **PageTableUpdateMode** is forced to **CPU\_VIRTUAL** and must be completed immediately using the CPU (the paging buffer should not be used).
+The page tables of the paging process are initialized through [*UpdatePageTable*](https://docs.microsoft.com/windows-hardware/drivers/display/dxgkddiupdatepagetable) paging operations during adapter initialization and power on event. For these operations, the **PageTableUpdateMode** is forced to **CPU\_VIRTUAL** and must be completed immediately using the CPU (the paging buffer should not be used).
 
 Updates of the page table entries for all other processes are done using the **PageTableUpdateMode** specified by the driver. These updates are done in the context of the paging process.
 
@@ -41,7 +41,7 @@ Here is how the setup is done:
 
 1.  A root page table allocation and lower level page table allocations are created to cover 1 GB of address space.
 2.  The allocations are committed to a memory segment.
-3.  Multiple [*UpdatePageTable*](https://msdn.microsoft.com/library/windows/hardware/ff560815) paging operations are issued to the driver to initialize the page table entries.
+3.  Multiple [*UpdatePageTable*](https://docs.microsoft.com/windows-hardware/drivers/display/dxgkddiupdatepagetable) paging operations are issued to the driver to initialize the page table entries.
 
 As an example of the paging process virtual address space initialization, let's consider the case with the following parameters:
 

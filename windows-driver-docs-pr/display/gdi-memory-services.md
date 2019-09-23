@@ -32,44 +32,44 @@ GDI provides several memory-related services to driver writers, including the ab
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564176" data-raw-source="[&lt;strong&gt;EngAllocMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564176)"><strong>EngAllocMem</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem" data-raw-source="[&lt;strong&gt;EngAllocMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem)"><strong>EngAllocMem</strong></a></p></td>
 <td align="left"><p>Allocates a block of memory, and inserts a caller-supplied tag before the allocation.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564177" data-raw-source="[&lt;strong&gt;EngAllocPrivateUserMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564177)"><strong>EngAllocPrivateUserMem</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocprivateusermem" data-raw-source="[&lt;strong&gt;EngAllocPrivateUserMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocprivateusermem)"><strong>EngAllocPrivateUserMem</strong></a></p></td>
 <td align="left"><p>Allocates a block of private user memory from the address space of a specified process, and inserts a caller-supplied tag before the allocation.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564178" data-raw-source="[&lt;strong&gt;EngAllocUserMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564178)"><strong>EngAllocUserMem</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocusermem" data-raw-source="[&lt;strong&gt;EngAllocUserMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocusermem)"><strong>EngAllocUserMem</strong></a></p></td>
 <td align="left"><p>Allocates a block of memory from the address space of the current process, and inserts a caller-supplied tag before the allocation.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564895" data-raw-source="[&lt;strong&gt;EngFreeMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564895)"><strong>EngFreeMem</strong></a></p></td>
-<td align="left"><p>Deallocates a block of system memory allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff564176" data-raw-source="[&lt;strong&gt;EngAllocMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564176)"><strong>EngAllocMem</strong></a>.</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engfreemem" data-raw-source="[&lt;strong&gt;EngFreeMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engfreemem)"><strong>EngFreeMem</strong></a></p></td>
+<td align="left"><p>Deallocates a block of system memory allocated by <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem" data-raw-source="[&lt;strong&gt;EngAllocMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem)"><strong>EngAllocMem</strong></a>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564907" data-raw-source="[&lt;strong&gt;EngFreePrivateUserMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564907)"><strong>EngFreePrivateUserMem</strong></a></p></td>
-<td align="left"><p>Deallocates a block of private user memory allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff564177" data-raw-source="[&lt;strong&gt;EngAllocPrivateUserMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564177)"><strong>EngAllocPrivateUserMem</strong></a>.</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engfreeprivateusermem" data-raw-source="[&lt;strong&gt;EngFreePrivateUserMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engfreeprivateusermem)"><strong>EngFreePrivateUserMem</strong></a></p></td>
+<td align="left"><p>Deallocates a block of private user memory allocated by <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocprivateusermem" data-raw-source="[&lt;strong&gt;EngAllocPrivateUserMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocprivateusermem)"><strong>EngAllocPrivateUserMem</strong></a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564912" data-raw-source="[&lt;strong&gt;EngFreeUserMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564912)"><strong>EngFreeUserMem</strong></a></p></td>
-<td align="left"><p>Deallocates a block of user memory allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff564178" data-raw-source="[&lt;strong&gt;EngAllocUserMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564178)"><strong>EngAllocUserMem</strong></a>.</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engfreeusermem" data-raw-source="[&lt;strong&gt;EngFreeUserMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engfreeusermem)"><strong>EngFreeUserMem</strong></a></p></td>
+<td align="left"><p>Deallocates a block of user memory allocated by <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocusermem" data-raw-source="[&lt;strong&gt;EngAllocUserMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocusermem)"><strong>EngAllocUserMem</strong></a>.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565011" data-raw-source="[&lt;strong&gt;EngSecureMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565011)"><strong>EngSecureMem</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engsecuremem" data-raw-source="[&lt;strong&gt;EngSecureMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engsecuremem)"><strong>EngSecureMem</strong></a></p></td>
 <td align="left"><p>Locks down the specified address range in memory.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565454" data-raw-source="[&lt;strong&gt;EngUnsecureMem&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565454)"><strong>EngUnsecureMem</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engunsecuremem" data-raw-source="[&lt;strong&gt;EngUnsecureMem&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engunsecuremem)"><strong>EngUnsecureMem</strong></a></p></td>
 <td align="left"><p>Unlocks a memory address range that is locked down.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567267" data-raw-source="[&lt;strong&gt;HeapVidMemAllocAligned&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567267)"><strong>HeapVidMemAllocAligned</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned" data-raw-source="[&lt;strong&gt;HeapVidMemAllocAligned&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned)"><strong>HeapVidMemAllocAligned</strong></a></p></td>
 <td align="left"><p>Allocates <em>off-screen memory</em> for a display driver by using the DirectDraw video memory heap manager.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff570554" data-raw-source="[&lt;strong&gt;VidMemFree&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff570554)"><strong>VidMemFree</strong></a></p></td>
-<td align="left"><p>Frees off-screen memory allocated for a display driver by <a href="https://msdn.microsoft.com/library/windows/hardware/ff567267" data-raw-source="[&lt;strong&gt;HeapVidMemAllocAligned&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567267)"><strong>HeapVidMemAllocAligned</strong></a>.</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/dmemmgr/nf-dmemmgr-vidmemfree" data-raw-source="[&lt;strong&gt;VidMemFree&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/dmemmgr/nf-dmemmgr-vidmemfree)"><strong>VidMemFree</strong></a></p></td>
+<td align="left"><p>Frees off-screen memory allocated for a display driver by <a href="https://docs.microsoft.com/windows/desktop/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned" data-raw-source="[&lt;strong&gt;HeapVidMemAllocAligned&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/dmemmgr/nf-dmemmgr-heapvidmemallocaligned)"><strong>HeapVidMemAllocAligned</strong></a>.</p></td>
 </tr>
 </tbody>
 </table>

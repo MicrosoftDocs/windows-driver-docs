@@ -54,7 +54,7 @@ For remarks about synchronizing access to per file context objects or to per str
 
  
 
-To define a *FreeCallback* callback function that is named *MyFreeFunction*, you must first provide a function declaration that the [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808) (SDV) and other verification tools require, as follows:
+To define a *FreeCallback* callback function that is named *MyFreeFunction*, you must first provide a function declaration that the [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier) (SDV) and other verification tools require, as follows:
 
 ```cpp
 FREE_FUNCTION MyFreeFunction;
@@ -109,9 +109,9 @@ Requirements
 
 [**FSRTL\_PER\_STREAM\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff547357)
 
-[Tracking Per-File Context in a Legacy File System Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff556856)
+[Tracking Per-File Context in a Legacy File System Filter Driver](https://docs.microsoft.com/windows-hardware/drivers/ifs/tracking-per-file-context-in-a-legacy-file-system-filter-driver)
 
-[Tracking Per-Stream Context in a Legacy File System Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff556859)
+[Tracking Per-Stream Context in a Legacy File System Filter Driver](https://docs.microsoft.com/windows-hardware/drivers/ifs/tracking-per-stream-context-in-a-legacy-file-system-filter-driver)
 
  
 

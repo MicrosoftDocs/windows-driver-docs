@@ -29,7 +29,7 @@ Windows Driver Frameworks (WDF) is a wrapper around Microsoft Windows Driver Mod
 
 ### Driver types
 
-Windows-based drivers are divided into three types: [bus drivers](https://msdn.microsoft.com/library/windows/hardware/ff540704), [function drivers](https://msdn.microsoft.com/library/windows/hardware/ff546516), and [filter drivers](https://msdn.microsoft.com/library/windows/hardware/ff545890). Bus drivers support I/O buses by detecting child devices that are plugged into a parent bus and reporting their characteristics. (This activity is called *bus enumeration*.) Function drivers control I/O operations for devices and buses. Filter drivers receive, review, and possibly modify data that flows between user applications and drivers, or between individual drivers.
+Windows-based drivers are divided into three types: [bus drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/bus-drivers), [function drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers), and [filter drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/filter-drivers). Bus drivers support I/O buses by detecting child devices that are plugged into a parent bus and reporting their characteristics. (This activity is called *bus enumeration*.) Function drivers control I/O operations for devices and buses. Filter drivers receive, review, and possibly modify data that flows between user applications and drivers, or between individual drivers.
 
 Drivers for buses are essentially function drivers that also enumerate children. A driver acts as a "bus driver" when it enumerates the child devices on a bus. Otherwise, the same driver acts as the "function driver" for the bus when it handles I/O operations that access the bus adapter's hardware.
 
@@ -43,7 +43,7 @@ A simple driver stack includes a bus driver at the bottom of the stack, which ha
 
 ### Device stacks
 
-Each driver stack supports one or more *device stacks*. A device stack is a set of *device objects* that are created from WDM-defined [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structures. Each device stack represents one device. Each driver creates a device object for each of its devices and attaches each device object to a device stack. Device stacks are created and removed as devices are plugged in and unplugged, and each time the system is rebooted.
+Each driver stack supports one or more *device stacks*. A device stack is a set of *device objects* that are created from WDM-defined [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structures. Each device stack represents one device. Each driver creates a device object for each of its devices and attaches each device object to a device stack. Device stacks are created and removed as devices are plugged in and unplugged, and each time the system is rebooted.
 
 When a bus driver detects that child devices have been plugged in or unplugged, it informs the Plug and Play (PnP) manager. In response, the PnP manager asks the bus driver to create a physical device object (PDO) for each child device that is connected to the parent device (that is, the bus). The PDO becomes the bottom of a device stack.
 

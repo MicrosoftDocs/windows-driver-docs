@@ -1,6 +1,8 @@
 - name: "Driver Security Guidance"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Driver Security Guidance"
+    href: index.md
   - name: "Driver security checklist"
     href: driver-security-checklist.md
   - name: "Threat modeling for drivers"

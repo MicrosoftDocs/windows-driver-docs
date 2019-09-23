@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The KSNODETYPE\_VOLUME node represents a volume (gain or attenuation) control. The volume control has one input stream and one output stream; each of the two streams has the same data format. It can apply attenuation (reduction in volume) or gain (increase in volume) to the stream. In addition, it can optionally support inverting the signal.
 
-For information about multichannel volume nodes, see [Exposing Multichannel Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536380).
+For information about multichannel volume nodes, see [Exposing Multichannel Nodes](https://docs.microsoft.com/windows-hardware/drivers/audio/exposing-multichannel-nodes).
 
 A KSNODETYPE\_VOLUME node should support the following required property:
 

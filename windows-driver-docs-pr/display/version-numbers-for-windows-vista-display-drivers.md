@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 To ensure that a display driver that conforms to the Windows Display Driver Model (WDDM) or the [Windows 2000 display driver model (XDDM)](windows-2000-display-driver-model-design-guide.md) runs on Microsoft Windows with a specific version of Microsoft DirectX, you must apply an appropriate version number to that driver. If a vendor distributes a display driver with the wrong version number or a version number that uses the wrong format, end users will encounter difficulties when they install any DirectX application.
 
-**Note**   The **DriverVer** directive provides a way to add version information for the driver package, including the driver file and the INF file itself, to the INF file. By using the **DriverVer** directive, you can safely and definitively replace driver packages by future versions of the same package. For more information about this directive, see [**INF DriverVer Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394).
+**Note**   The **DriverVer** directive provides a way to add version information for the driver package, including the driver file and the INF file itself, to the INF file. By using the **DriverVer** directive, you can safely and definitively replace driver packages by future versions of the same package. For more information about this directive, see [**INF DriverVer Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive).
 
  
 

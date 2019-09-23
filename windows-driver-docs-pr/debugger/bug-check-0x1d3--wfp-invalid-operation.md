@@ -15,12 +15,10 @@ ms.localizationpriority: medium
 # Bug Check Bug Check 0x1D3: WFP_INVALID_OPERATION 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
-The WFP_INVALID_OPERATION bug check has a value of 0x000001D3. 
-
-A Windows Filtering Platform callout performed an invalid operation.
+The WFP_INVALID_OPERATION bug check has a value of 0x000001D3. This indicates that a Windows Filtering Platform callout performed an invalid operation.
 
 ## WFP\_INVALID\_OPERATION Parameters
 
@@ -31,18 +29,19 @@ Parameter | Description
 3 | Reserved
 4 | Reserved
 
-
 **Parameter 1 Values**
 
  0x1 : Callout injected an NBL with multiple NET_BUFFERS inbound.
 
-  2 - Reserved.
+ 2 - Reserved.
 
-  3 - Pointer to NBL.
+ 3 - Pointer to NBL.
 
-  4 - Reserved.
+ 4 - Reserved.
 
- 
+
+## Resolution
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
 
  
 

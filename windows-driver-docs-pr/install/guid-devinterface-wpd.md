@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_WPD
 
 
-The GUID_DEVINTERFACE_WPD [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527) (WPD).
+The GUID_DEVINTERFACE_WPD [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527) (WPD).
 
 <table>
 <colgroup>

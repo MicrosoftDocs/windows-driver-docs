@@ -4,6 +4,7 @@ description: This section contains WDI TLVs (Type-Length-Value).
 ms.assetid: BAE1E159-F0CB-4A74-9E35-4361C94518E6
 ms.date: 07/18/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # WDI Miniport Driver TLVs
@@ -127,6 +128,11 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_FT\_REASSOC\_PARAMETERS**](wdi-tlv-ft-reassoc-parameters.md)
 -   [**WDI\_TLV\_FT\_RSNIE**](wdi-tlv-ft-rsnie.md)
 -   [**WDI\_TLV\_FT\_SNONCE**](wdi-tlv-ft-snonce.md)
+-   [**WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS**](wdi-tlv-ftm-number-of-measurements.md)
+-   [**WDI_TLV_FTM_REQUEST_TIMEOUT**](wdi-tlv-ftm-request-timeout.md)
+-   [**WDI_TLV_FTM_RESPONSE**](wdi-tlv-ftm-response.md)
+-   [**WDI_TLV_FTM_RESPONSE_STATUS**](wdi-tlv-ftm-response-status.md)
+-   [**WDI_TLV_FTM_TARGET_BSS_ENTRY**](wdi-tlv-ftm-target-bss-entry.md)
 -   [**WDI\_TLV\_GET\_AUTO\_POWER\_SAVE**](wdi-tlv-get-auto-power-save.md)
 -   [**WDI\_TLV\_HESSID**](wdi-tlv-hessid.md)
 -   [**WDI\_TLV\_HESSID\_INFO**](wdi-tlv-hessid-info.md)
@@ -149,6 +155,8 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_IPV4\_LSO\_V2**](wdi-tlv-ipv4-lso-v2.md)
 -   [**WDI\_TLV\_IPV6\_CHECKSUM\_OFFLOAD**](wdi-tlv-ipv6-checksum-offload.md)
 -   [**WDI\_TLV\_IPV6\_LSO\_V2**](wdi-tlv-ipv6-lso-v2.md)
+-   [**WDI_TLV_LCI_REPORT_BODY**](wdi-tlv-lci-report-body.md)
+-   [**WDI_TLV_LCI_REPORT_STATUS**](wdi-tlv-lci-report-status.md)
 -   [**WDI\_TLV\_LINK\_QUALITY\_BAR\_MAP**](wdi-tlv-link-quality-bar-map.md)
 -   [**WDI\_TLV\_LINK\_STATE\_CHANGE\_PARAMETERS**](wdi-tlv-link-state-change-parameters.md)
 -   [**WDI\_TLV\_LOW\_LATENCY\_CONNECTION\_QUALITY\_PARAMETERS**](wdi-tlv-low-latency-connection-quality-parameters.md)
@@ -275,8 +283,26 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_RECEIVE\_COALESCING\_CAPABILITIES**](wdi-tlv-receive-coalescing-capabilities.md)
 -   [**WDI\_TLV\_RECEIVE\_COALESCING\_CONFIG**](wdi-tlv-receive-coalescing-config.md)
 -   [**WDI\_TLV\_RECEIVE\_FILTER\_FIELD**](wdi-tlv-receive-filter-field.md)
+-   [**WDI_TLV_REQUEST_LCI_REPORT**](wdi-tlv-request-lci-report.md)
+-   [**WDI_TLV_RETRY_AFTER**](wdi-tlv-retry-after.md)
 -   [**WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS**](wdi-tlv-roaming-needed-parameters.md)
 -   [**WDI_TLV_RSN_KEY_INFO**](wdi-tlv-rsn-key-info.md)
+-   [**WDI_TLV_RTT**](wdi-tlv-rtt.md)
+-   [**WDI_TLV_RTT_ACCURACY**](wdi-tlv-rtt-accuracy.md)
+-   [**WDI_TLV_RTT_VARIANCE**](wdi-tlv-rtt-variance.md)
+-   [**WDI_TLV_SAE_ANTI_CLOGGING_TOKEN**](wdi-tlv-sae-anti-clogging-token.md)
+-   [**WDI_TLV_SAE_COMMIT_REQUEST**](wdi-tlv-sae-commit-request.md)
+-   [**WDI_TLV_SAE_COMMIT_RESPONSE**](wdi-tlv-sae-commit-response.md)
+-   [**WDI_TLV_SAE_CONFIRM**](wdi-tlv-sae-confirm.md)
+-   [**WDI_TLV_SAE_CONFIRM_REQUEST**](wdi-tlv-sae-confirm-request.md)
+-   [**WDI_TLV_SAE_CONFIRM_RESPONSE**](wdi-tlv-sae-confirm-response.md)
+-   [**WDI_TLV_SAE_ELEMENT**](wdi-tlv-sae-element.md)
+-   [**WDI_TLV_SAE_FINITE_CYCLIC_GROUP**](wdi-tlv-sae-finite-cyclic-group.md)
+-   [**WDI_TLV_SAE_INDICATION_TYPE**](wdi-tlv-sae-indication-type.md)
+-   [**WDI_TLV_SAE_REQUEST_TYPE**](wdi-tlv-sae-request-type.md)
+-   [**WDI_TLV_SAE_SCALAR**](wdi-tlv-sae-scalar.md)
+-   [**WDI_TLV_SAE_SEND_CONFIRM**](wdi-tlv-sae-send-confirm.md)
+-   [**WDI_TLV_SAE_STATUS**](wdi-tlv-sae-status.md)
 -   [**WDI\_TLV\_SAFE\_MODE\_PARAMETERS**](wdi-tlv-safe-mode-parameters.md)
 -   [**WDI\_TLV\_SCAN\_DWELL\_TIME**](wdi-tlv-scan-dwell-time.md)
 -   [**WDI\_TLV\_SCAN\_MODE**](wdi-tlv-scan-mode.md)
@@ -317,7 +343,7 @@ This section contains WDI TLVs (Type-Length-Value).
 -   [**WDI\_TLV\_WFD\_ASSOCIATION\_STATUS**](wdi-tlv-wfd-association-status.md)
 
 ## Related topics
-[WDI message structure](https://msdn.microsoft.com/library/windows/hardware/mt269163)  
+[WDI message structure](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-wi-fi-messages)  
 
 
 

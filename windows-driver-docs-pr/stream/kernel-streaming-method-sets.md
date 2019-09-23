@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This section discusses the [KSMETHODSETID\_StreamAllocator](ksmethodsetid-streamallocator.md) method set.
 
-Also see [KS Methods](https://msdn.microsoft.com/library/windows/hardware/ff567655).
+Also see [KS Methods](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-methods).
 
  
 

@@ -31,7 +31,7 @@ The failure of a single print driver component could cause the print subsystem t
 
 With Windows 7 and Windows Server 2008 R2, an administrator can, as an option, configure a printer driver to run in an isolated process--a process that is separate from the spooler process. By isolating the driver, the administrator can prevent a fault in a driver component from halting the print service.
 
-For more information about the spooler functions, see [Spooler Component Functions and Structures](https://msdn.microsoft.com/library/windows/hardware/ff562686).
+For more information about the spooler functions, see [Spooler Component Functions and Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index).
 
 ### <a href="" id="driver-isolation-support-in-inf-files"></a> Driver Isolation Support in INF Files
 

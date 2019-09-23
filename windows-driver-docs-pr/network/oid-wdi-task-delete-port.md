@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DELETE_PORT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_DELETE\_PORT
@@ -24,7 +25,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                 |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
-| [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926288) |                                |          | The delete port parameters. |
+| [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-delete-port-parameters) |                                |          | The delete port parameters. |
 
  
 
@@ -32,6 +33,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_DELETE\_PORT\_COMPLETE](ndis-status-wdi-indication-delete-port-complete.md)
+
 Requirements
 ------------
 

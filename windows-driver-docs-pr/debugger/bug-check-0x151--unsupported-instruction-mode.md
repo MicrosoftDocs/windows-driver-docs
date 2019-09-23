@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The UNSUPPORTED\_INSTRUCTION\_MODE bug check has a value of 0x00000151. This indicates that an attempt was made to execute code using an unsupported processor instruction mode (for example, executing classic ARM instructions instead of ThumbV2 instructions). This is not permitted.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## UNSUPPORTED\_INSTRUCTION\_MODE Parameters

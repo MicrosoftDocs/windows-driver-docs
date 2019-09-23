@@ -22,7 +22,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 Remarks
 -------
 
-For more information about using this OID, see [WWAN SMS Operations](https://msdn.microsoft.com/library/windows/hardware/ff559131).
+For more information about using this OID, see [WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations).
 
 When processing this OID, miniport drivers can access the Subscriber Identity Module (SIM card), but should not access the provider network.
 
@@ -51,7 +51,7 @@ Requirements
 ## See also
 
 
-[WWAN SMS Operations](https://msdn.microsoft.com/library/windows/hardware/ff559131)
+[WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations)
 
 [**NDIS\_STATUS\_WWAN\_SMS\_STATUS**](ndis-status-wwan-sms-status.md)
 

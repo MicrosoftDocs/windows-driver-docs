@@ -18,15 +18,15 @@ ms.localizationpriority: medium
 
 
 
-Your UI plug-in can add its own private members to the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure, as illustrated in the following figure.
+Your UI plug-in can add its own private members to the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure, as illustrated in the following figure.
 
 ![diagram illustrating public and private devmode sections](images/dvmdstru.png)
 
 A UI plug-in can use these private DEVMODE members to store values associated with customized printer options. The plug-in makes these options available to the user by [modifying a driver-supplied property sheet page](modifying-a-driver-supplied-property-sheet-page.md) or by [adding new property sheet pages](adding-new-property-sheet-pages.md).
 
-If your UI plug-in adds private DEVMODE members, the [**OEM\_DMEXTRAHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff559588) structure must prefix the added members.
+If your UI plug-in adds private DEVMODE members, the [**OEM\_DMEXTRAHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ns-printoem-_oem_dmextraheader) structure must prefix the added members.
 
-You are not required to add members to the DEVMODE structure, but if you do, your UI plug-in must implement the [**IPrintOemUI::DevMode**](https://msdn.microsoft.com/library/windows/hardware/ff554167) method. This method's purpose, depending on input arguments, is to return the size of, initialize, convert, or validate the additional DEVMODE members.
+You are not required to add members to the DEVMODE structure, but if you do, your UI plug-in must implement the [**IPrintOemUI::DevMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemui-devmode) method. This method's purpose, depending on input arguments, is to return the size of, initialize, convert, or validate the additional DEVMODE members.
 
  
 

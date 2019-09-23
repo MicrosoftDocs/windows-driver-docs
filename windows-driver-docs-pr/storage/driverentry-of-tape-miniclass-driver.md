@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *Argument1* \[in\]  
-Pointer to a driver context that a tape miniclass driver passes to [**TapeClassInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff567619). The format of the context information is OS-specific and must not be interpreted by portable tape miniclass drivers.
+Pointer to a driver context that a tape miniclass driver passes to [**TapeClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/nf-minitape-tapeclassinitialize). The format of the context information is OS-specific and must not be interpreted by portable tape miniclass drivers.
 
 *Argument2* \[in\]  
 Pointer to a second context structure that a tape miniclass driver passes to **TapeClassInitialize**. The format of the context information is OS-specific and must not be interpreted by portable tape miniclass drivers.
@@ -51,7 +51,7 @@ Remarks
 
 Since **TapeClassInitialize** performs most of the required driver initialization, the primary task of a tape miniclass driver's **DriverEntry** routine is to allocate and fill in a TAPE\_INIT\_DATA\_EX structure with driver-specific constants and entry points.
 
-**DriverEntry** first must call [**TapeClassZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff567927) to clear the TAPE\_INIT\_DATA\_EX structure. **DriverEntry** then sets the values and pointers in the structure.
+**DriverEntry** first must call [**TapeClassZeroMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/nf-minitape-tapeclasszeromemory) to clear the TAPE\_INIT\_DATA\_EX structure. **DriverEntry** then sets the values and pointers in the structure.
 
 **DriverEntry** calls **TapeClassInitialize** and passes the address of TAPE\_INIT\_DATA\_EX and the two pointers that were passed to **DriverEntry** (*Argument1* and *Argument2*). **TapeClassInitialize** completes driver initialization and returns status to the tape miniclass driver's **DriverEntry** routine. **DriverEntry** returns the status that it received from **TapeClassInitialize**.
 
@@ -86,13 +86,13 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**TAPE\_INIT\_DATA\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff567968)
+[**TAPE\_INIT\_DATA\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/ns-minitape-_tape_init_data_ex)
 
-[**TapeClassInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff567619)
+[**TapeClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/nf-minitape-tapeclassinitialize)
 
-[**TapeClassZeroMemory**](https://msdn.microsoft.com/library/windows/hardware/ff567927)
+[**TapeClassZeroMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/nf-minitape-tapeclasszeromemory)
 
-[**TAPE\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567975)
+[**TAPE\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/ne-minitape-_tape_status)
 
  
 

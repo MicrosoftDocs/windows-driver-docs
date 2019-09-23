@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-The following are guidelines for using the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) (**Setup***Xxx*) and [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) (**SetupDi***Xxx*) that are provided by SetupAPI:
+The following are guidelines for using the [general Setup functions](https://docs.microsoft.com/previous-versions/ff544985(v=vs.85)) (**Setup***Xxx*) and [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) (**SetupDi***Xxx*) that are provided by SetupAPI:
 
 -   Never assume that installation file contents are error-free, or that an installation file that you provided hasn't been maliciously modified. Therefore, always validate all information received from SetupAPI functions. Verify that strings are of valid length, that buffers are of valid size, and that index values are within a valid range.
 

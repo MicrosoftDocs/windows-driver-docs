@@ -4,6 +4,7 @@ description: This section contains WDI task OIDs.
 ms.assetid: CAA92CA5-5CD6-4705-AA4C-54C1AA83ACA3
 ms.date: 07/18/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # WDI Task OIDs
@@ -16,10 +17,10 @@ The Wi-Fi Driver Interface (WDI) object identifiers (OIDs) apply only to minipor
 The following table specifies whether WDI OID query (Q), set (S), and NDIS 6.0 method (M) requests are required or optional to implement:
 
 <a href="" id="r"></a>**R**  
-Indicates that support for the object is required. The miniport driver must not fail set or query requests for the object by returning the status code NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
+Indicates that support for the object is required. The miniport driver must not fail set or query requests for the object by returning the status code NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function.
 
 <a href="" id="o"></a>**O**  
-Indicates that support for the object is optional. The miniport driver can either support query or set requests for the object, or the driver can fail the request by returning NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function.
+Indicates that support for the object is optional. The miniport driver can either support query or set requests for the object, or the driver can fail the request by returning NDIS\_STATUS\_NOT\_SUPPORTED from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function.
 
 <table>
 <colgroup>
@@ -110,48 +111,54 @@ Indicates that support for the object is optional. The miniport driver can eithe
 <td><p>O</p></td>
 </tr>
 <tr class="odd">
+<td><p><a href="oid-wdi-task-request-ftm.md" data-raw-source="[OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md)">OID_WDI_TASK_REQUEST_FTM</a></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>O</p></td>
+</tr>
+<tr class="even">
 <td><p><a href="oid-wdi-task-roam.md" data-raw-source="[OID_WDI_TASK_ROAM](oid-wdi-task-roam.md)">OID_WDI_TASK_ROAM</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><a href="oid-wdi-task-scan.md" data-raw-source="[OID_WDI_TASK_SCAN](oid-wdi-task-scan.md)">OID_WDI_TASK_SCAN</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p><a href="oid-wdi-task-send-ap-association-response.md" data-raw-source="[OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE](oid-wdi-task-send-ap-association-response.md)">OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><a href="oid-wdi-task-send-request-action-frame.md" data-raw-source="[OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME](oid-wdi-task-send-request-action-frame.md)">OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p><a href="oid-wdi-task-send-response-action-frame.md" data-raw-source="[OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME](oid-wdi-task-send-response-action-frame.md)">OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><a href="oid-wdi-task-set-radio-state.md" data-raw-source="[OID_WDI_TASK_SET_RADIO_STATE](oid-wdi-task-set-radio-state.md)">OID_WDI_TASK_SET_RADIO_STATE</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>R</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><p><a href="oid-wdi-task-start-ap.md" data-raw-source="[OID_WDI_TASK_START_AP](oid-wdi-task-start-ap.md)">OID_WDI_TASK_START_AP</a></p></td>
 <td><p></p></td>
 <td><p></p></td>
 <td><p>O</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p><a href="oid-wdi-task-stop-ap.md" data-raw-source="[OID_WDI_TASK_STOP_AP](oid-wdi-task-stop-ap.md)">OID_WDI_TASK_STOP_AP</a></p></td>
 <td><p></p></td>
 <td><p></p></td>

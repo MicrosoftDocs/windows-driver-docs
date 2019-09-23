@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxStop routine
 
 
-The*MRxStop* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to stop the network mini-redirector.
+The*MRxStop* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to stop the network mini-redirector.
 
 Syntax
 ------
@@ -87,7 +87,7 @@ The **StartStopContext.State** member of the RDBSS\_DEVICE\_OBJECT structure poi
 
 The **StartStopContext.pStopContext** member of the RDBSS\_DEVICE\_OBJECT structure pointed to by *RxDeviceObject* is set to the *RxContext* parameter.
 
-*MRxStop* is called by RDBSS from the [**RxStopMinirdr**](https://msdn.microsoft.com/library/windows/hardware/ff554743) routine.
+*MRxStop* is called by RDBSS from the [**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nf-mrx-rxstopminirdr) routine.
 
 If *MRxStop* returns STATUS\_SUCCESS, then the routine was successful. Any other return value indicates that an error occurred in stopping the network mini-redirector.
 
@@ -120,9 +120,9 @@ Requirements
 
 [**MRxDevFcbXXXControlFile**](mrxdevfcbxxxcontrolfile.md)
 
-[**MrxStart**](https://msdn.microsoft.com/library/windows/hardware/ff550829)
+[**MrxStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_calldown_ctx)
 
-[**RxStopMinirdr**](https://msdn.microsoft.com/library/windows/hardware/ff554743)
+[**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nf-mrx-rxstopminirdr)
 
  
 

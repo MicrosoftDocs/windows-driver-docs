@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-When a printer INF file contains a file list section that is referenced by an [**INF CopyFiles directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346), each file in the file list must be specified using the following format:
+When a printer INF file contains a file list section that is referenced by an [**INF CopyFiles directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive), each file in the file list must be specified using the following format:
 
 **\[**<em>file-list-section</em>**\]**
 *destination-file-name\[,,flag\]*

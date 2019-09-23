@@ -55,7 +55,7 @@ Each color format that a printer supports is specified as an option to the Color
 </tr>
 <tr class="even">
 <td><p>4</p></td>
-<td><p>1 (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-cmyk" data-raw-source="&lt;em&gt;CMYK&lt;/em&gt;"><em>CMYK</em></a>)</p></td>
+<td><p>1 (<a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-cmyk" data-raw-source="&lt;em&gt;CMYK&lt;/em&gt;"><em>CMYK</em></a>)</p></td>
 </tr>
 </tbody>
 </table>
@@ -68,9 +68,9 @@ If your printer supports color formats that are not listed in the preceding tabl
 
 -   Set the \*DevNumOfPlanes and \*DevBPP attributes to zero. Doing this prevents Unidrv from sending DIB data to the printer.
 
--   Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff554261) method.
+-   Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method.
 
-The [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff554261) method must perform the following operations:
+The [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method must perform the following operations:
 
 -   Convert DIB data into the printer's color format.
 
@@ -78,7 +78,7 @@ The [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/library/windo
 
 -   Send the data to the print spooler.
 
-For more information about providing an [**IPrintOemUni::ImageProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff554261) function, see [Customized Color Formats](customized-color-formats.md).
+For more information about providing an [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) function, see [Customized Color Formats](customized-color-formats.md).
 
 ### Rendering High Quality Images
 

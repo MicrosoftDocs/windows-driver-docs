@@ -19,9 +19,9 @@ Data ranges are used not only for data intersection, but can be accessed as devi
 
 A pin's data ranges can be accessed through the following properties:
 
-[**KSPROPERTY\_PIN\_DATARANGES**](https://msdn.microsoft.com/library/windows/hardware/ff565199)
+[**KSPROPERTY\_PIN\_DATARANGES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-dataranges)
 
-[**KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES**](https://msdn.microsoft.com/library/windows/hardware/ff565195)
+[**KSPROPERTY\_PIN\_CONSTRAINEDDATARANGES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-constraineddataranges)
 
 These two properties designate the pin's static data ranges and constrained data ranges, respectively.
 

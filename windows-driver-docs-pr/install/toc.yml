@@ -1,13 +1,12 @@
 - name: "Device and Driver Installation"
   href: index.md
-  items: 
-  - name: "Roadmap for Device and Driver Installation"
-    href: roadmap-for-device-and-driver-installation--windows-vista-and-later-.md
-  - name: "Overview of Device and Driver Installation"
-    href: overview-of-device-and-driver-installation.md
-    items: 
+- name: "Roadmap for Device and Driver Installation"
+  href: roadmap-for-device-and-driver-installation--windows-vista-and-later-.md
+- name: "Overview"
+  items:
+    - name: "Overview of Device and Driver Installation"
+      href: overview-of-device-and-driver-installation.md
     - name: "How Windows Installs Devices"
-      href: how-windows-installs-devices.md
       items: 
       - name: "Step 1: The New Device is Identified"
         href: step-1--the-new-device-is-identified.md
@@ -15,2104 +14,1943 @@
         href: step-2--a-driver-for-the-device-is-selected.md
       - name: "Step 3: The Driver for the Device is Installed"
         href: step-3--the-driver-for-the-device-is-installed.md
-    - name: "System-provided Device Installation Components"
-      href: system-provided-device-installation-components.md
+    - name: "Components"
       items: 
+      - name: "System-provided Device Installation Components"
+        href: system-provided-device-installation-components.md
       - name: "Plug and Play Manager"
         href: pnp-manager.md
       - name: "Driver Store"
         href: driver-store.md
-    - name: "Vendor-provided Device Installation Components"
-      href: vendor-provided-device-installation-components.md
-    - name: "Device Installation Files"
-      href: device-installation-files.md
+      - name: "Vendor-provided Device Installation Components"
+        href: vendor-provided-device-installation-components.md
+    - name: "Installation Files"
       items: 
+      - name: "Device Installation Files"
+        href: device-installation-files.md
       - name: "Sample Device Installation Files"
         href: sample-device-installation-files.md
     - name: "Device Installation Types"
       href: device-installation-types.md
     - name: "How Windows Selects Drivers"
-      href: how-setup-selects-drivers.md
       items: 
       - name: "Overview of the Driver Selection Process"
         href: overview-of-the-driver-selection-process.md
       - name: "Where Windows Searches for Drivers"
         href: where-setup-searches-for-drivers.md
-      - name: "How Windows Ranks Drivers"
-        href: how-setup-ranks-drivers.md
-        items: 
+    - name: "How Windows Ranks Drivers"
+      items: 
         - name: "How Windows Ranks Drivers"
           href: how-setup-ranks-drivers--windows-vista-and-later-.md
-          items: 
-          - name: "Signature Categories and Driver Installation"
-            href: signature-categories-and-driver-installation.md
-          - name: "Signature Score"
-            href: signature-score--windows-vista-and-later-.md
-            items: 
-            - name: "LowerLogoVersion"
-              href: lowerlogoversion.md
-          - name: "Feature Score"
-            href: feature-score--windows-vista-and-later-.md
-          - name: "Identifier Score"
-            href: identifier-score--windows-vista-and-later-.md
-          - name: "Driver Rank Ranges"
-            href: driver-rank-ranges--windows-vista-and-later-.md
-          - name: "Driver Rank Example"
-            href: driver-rank-example--windows-vista-and-later-.md
-          - name: "Driver Rank Information in the SetupAPI Log"
-            href: driver-rank-information-in-the-setupapi-log.md
-      - name: "AllSignersEqual Group Policy"
-        href: allsignersequal-group-policy--windows-vista-and-later-.md
-  - name: "Device and Driver Installation Fundamental Topics"
-    href: device-and-driver-installation-fundamental-topics.md
+        - name: "Signature Categories and Driver Installation"
+          href: signature-categories-and-driver-installation.md
+        - name: "Signature Score"
+          href: signature-score--windows-vista-and-later-.md
+        - name: "LowerLogoVersion"
+          href: lowerlogoversion.md
+        - name: "Feature Score"
+          href: feature-score--windows-vista-and-later-.md
+        - name: "Identifier Score"
+          href: identifier-score--windows-vista-and-later-.md
+        - name: "Driver Rank Ranges"
+          href: driver-rank-ranges--windows-vista-and-later-.md
+        - name: "Driver Rank Example"
+          href: driver-rank-example--windows-vista-and-later-.md
+        - name: "Driver Rank Information in the SetupAPI Log"
+          href: driver-rank-information-in-the-setupapi-log.md
+        - name: "AllSignersEqual Group Policy"
+          href: allsignersequal-group-policy--windows-vista-and-later-.md
+- name: "Concepts"
+  items: 
+  - name: "Driver Packages"
     items: 
-    - name: "Driver Packages"
+    - name: "Overview of Driver Packages"
       href: driver-packages.md
-      items: 
-      - name: "Components of a Driver Package"
-        href: components-of-a-driver-package.md
-      - name: "Installation Component Overview"
-        href: installation-component-overview.md
-      - name: "Supplying an INF File"
-        href: supplying-an-inf-file.md
-    - name: "INF Files"
-      href: inf-files.md
-      items: 
-      - name: "Overview of INF Files"
-        href: overview-of-inf-files.md
-        items: 
-        - name: "Looking at an INF File"
-          href: looking-at-an-inf-file.md
-        - name: "Using a Universal INF File"
-          href: using-a-universal-inf-file.md
-        - name: "Using an Extension INF File"
-          href: using-an-extension-inf-file.md
-        - name: "Updating Device Firmware using Windows Update"
-          href: updating-device-firmware-using-windows-update.md
-        - name: "Summary of INF Sections"
-          href: summary-of-inf-sections.md
-        - name: "Summary of INF Directives"
-          href: summary-of-inf-directives.md
-        - name: "General Guidelines for INF Files"
-          href: general-guidelines-for-inf-files.md
-        - name: "General Syntax Rules for INF Files"
-          href: general-syntax-rules-for-inf-files.md
-        - name: "Specifying the Source and Target Locations for Device Files"
-          href: specifying-the-source-and-target-locations-for-device-files.md
-          items: 
-          - name: "Source Media for INF Files"
-            href: source-media-for-inf-files.md
-          - name: "Target Media for INF Files"
-            href: target-media-for-inf-files.md
-          - name: "Copying INF Files"
-            href: copying-inf-files.md
-        - name: "Creating INF Files for Multiple Platforms and Operating Systems"
-          href: creating-inf-files-for-multiple-platforms-and-operating-systems.md
-          items: 
-          - name: "INF File Platform Extensions and x64-Based Systems"
-            href: inf-file-platform-extensions-and-x64-based-systems.md
-          - name: "INF File Platform Extensions and x86-Based Systems"
-            href: inf-file-platform-extensions-and-x86-based-systems.md
-          - name: "Cross-Platform INF Files"
-            href: cross-platform-inf-files.md
-          - name: "Combining Platform Extensions with Other Section Name Extensions"
-            href: combining-platform-extensions-with-other-section-name-extensions.md
-        - name: "Combining Platform Extensions with Operating System Versions"
-          href: combining-platform-extensions-with-operating-system-versions.md
-          items: 
-          - name: "Sample INF Models Sections for One or More Target Operating Systems"
-            href: sample-inf-models-sections-for-one-or-more-target-operating-system.md
-          - name: "Sample INF Models Sections for Only One Target Operating System"
-            href: sample-inf-models-sections-for-only-one-target-operating-system.md
-          - name: "Sample INF File for Device Installation on Multiple Versions of Windows"
-            href: sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md
-        - name: "Creating International INF Files"
-          href: creating-international-inf-files.md
-        - name: "Specifying Driver Load Order"
-          href: specifying-driver-load-order.md
-        - name: "Using Dirids"
-          href: using-dirids.md
-      - name: "Accessing INF Files from a Device Installation Application"
-        href: accessing-inf-files-from-a-setup-application.md
-        items: 
-        - name: "Opening and Closing an INF File"
-          href: opening-and-closing-an-inf-file.md
-        - name: "Retrieving Information from an INF File"
-          href: retrieving-information-from-an-inf-file.md
-      - name: "Providing Vendor Icons for the Shell and AutoPlay"
-        href: providing-vendor-icons-for-the-shell-and-autoplay.md
+    - name: "Components of a Driver Package"
+      href: components-of-a-driver-package.md
+    - name: "Installation Component Overview"
+      href: installation-component-overview.md
+    - name: "Supplying an INF File"
+      href: supplying-an-inf-file.md
+  - name: "INF Files"
+    items: 
+    - name: "Overview of INF Files"
+      href: overview-of-inf-files.md
+    - name: "Looking at an INF File"
+      href: looking-at-an-inf-file.md
+    - name: "Using a Universal INF File"
+      href: using-a-universal-inf-file.md
+    - name: "Using an Extension INF File"
+      href: using-an-extension-inf-file.md
+    - name: "Updating Device Firmware using Windows Update"
+      href: updating-device-firmware-using-windows-update.md
+    - name: "Summary of INF Sections"
+      href: summary-of-inf-sections.md
+    - name: "Summary of INF Directives"
+      href: summary-of-inf-directives.md
+    - name: "General Guidelines for INF Files"
+      href: general-guidelines-for-inf-files.md
+    - name: "General Syntax Rules for INF Files"
+      href: general-syntax-rules-for-inf-files.md
+    - name: "Specifying the Source and Target Locations for Device Files"
+      href: specifying-the-source-and-target-locations-for-device-files.md
+    - name: "Source Media for INF Files"
+      href: source-media-for-inf-files.md
+    - name: "Target Media for INF Files"
+      href: target-media-for-inf-files.md
+    - name: "Copying INF Files"
+      href: copying-inf-files.md
+    - name: "Creating INF Files for Multiple Platforms and Operating Systems"
+      href: creating-inf-files-for-multiple-platforms-and-operating-systems.md
+    - name: "INF File Platform Extensions and x64-Based Systems"
+      href: inf-file-platform-extensions-and-x64-based-systems.md
+    - name: "INF File Platform Extensions and x86-Based Systems"
+      href: inf-file-platform-extensions-and-x86-based-systems.md
+    - name: "Cross-Platform INF Files"
+      href: cross-platform-inf-files.md
+    - name: "Combining Platform Extensions with Other Section Name Extensions"
+      href: combining-platform-extensions-with-other-section-name-extensions.md
+    - name: "Combining Platform Extensions with Operating System Versions"
+      href: combining-platform-extensions-with-operating-system-versions.md
+    - name: "Sample INF Models Sections for One or More Target Operating Systems"
+      href: sample-inf-models-sections-for-one-or-more-target-operating-system.md
+    - name: "Sample INF Models Sections for Only One Target Operating System"
+      href: sample-inf-models-sections-for-only-one-target-operating-system.md
+    - name: "Sample INF File for Device Installation on Multiple Versions of Windows"
+      href: sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md
+    - name: "Creating International INF Files"
+      href: creating-international-inf-files.md
+    - name: "Specifying Driver Load Order"
+      href: specifying-driver-load-order.md
+    - name: "Using Dirids"
+      href: using-dirids.md
+    - name: "Accessing INF Files from a Device Installation Application"
+      href: accessing-inf-files-from-a-setup-application.md
+    - name: "Opening and Closing an INF File"
+      href: opening-and-closing-an-inf-file.md
+    - name: "Retrieving Information from an INF File"
+      href: retrieving-information-from-an-inf-file.md
+    - name: "Providing Vendor Icons for the Shell and AutoPlay"
+      href: providing-vendor-icons-for-the-shell-and-autoplay.md
+  - name: "Driver Signing"
+    items: 
     - name: "Driver Signing"
       href: driver-signing.md
-      items: 
-      - name: "Overview of Digital Signatures for Driver Installation"
-        href: overview-of-digital-signatures-for-driver-installation.md
-        items: 
-        - name: "Digital Signatures"
-          href: digital-signatures.md
-          items: 
-          - name: "Authenticode Digital Signatures"
-            href: authenticode.md
-          - name: "Catalog Files and Digital Signatures"
-            href: catalog-files.md
-          - name: "Embedded Signatures in a Driver File"
-            href: embedded-signatures-in-a-driver-file.md
-          - name: "Digital Signatures and PnP Device Installation"
-            href: digital-signatures-and-pnp-device-installation.md
-            items: 
-            - name: "Digital Signatures and PnP Device Installation"
-              href: digital-signatures-and-pnp-device-installation--windows-vista-and-late.md
-        - name: "Digital Certificates"
-          href: digital-certificates.md
-          items: 
-          - name: "Certificate Stores"
-            href: certificate-stores.md
-            items: 
-            - name: "Local Machine and Current User Certificate Stores"
-              href: local-machine-and-current-user-certificate-stores.md
-            - name: "Trusted Root Certification Authorities Certificate Store"
-              href: trusted-root-certification-authorities-certificate-store.md
-            - name: "Trusted Publishers Certificate Store"
-              href: trusted-publishers-certificate-store.md
-        - name: "Kernel-Mode Code Signing Policy"
-          href: kernel-mode-code-signing-policy--windows-vista-and-later-.md
-      - name: "Windows 10 in S mode Driver Requirements"
-        href: Windows10SDriverRequirements.md
-      - name: "Managing the Signing Process"
-        href: managing-the-signing-process.md
-        items: 
-        - name: "Selecting the Appropriate Signature Type"
-          href: selecting-the-appropriate-signature-type.md
-          items: 
-          - name: "Kernel-Mode Code Signing Requirements"
-            href: kernel-mode-code-signing-requirements--windows-vista-and-later-.md
-          - name: "PnP Device Installation Signing Requirements"
-            href: pnp-device-installation-signing-requirements--windows-vista-and-later-.md
-          - name: "Authenticode Signing of Third-party CSPs"
-            href: authenticode-signing-of-csps.md
-        - name: "Managing the Digital Signature or Code Signing Keys"
-          href: managing-the-digital-signature-or-code-signing-keys.md
-        - name: "Cross-Certificates for Kernel Mode Code Signing"
-          href: cross-certificates-for-kernel-mode-code-signing.md
-      - name: "Signing Drivers during Development and Test"
-        href: signing-drivers-during-development-and-test.md
-        items: 
-        - name: "Introduction to Test-Signing"
-          href: introduction-to-test-signing.md
-        - name: "How to Test-Sign a Driver Package"
-          href: how-to-test-sign-a-driver-package.md
-          items: 
-          - name: "Creating Test Certificates"
-            href: creating-test-certificates.md
-          - name: "Viewing Test Certificates"
-            href: viewing-test-certificates.md
-          - name: "Creating a Catalog File for Test-Signing a Driver Package"
-            href: creating-a-catalog-file-for-test-signing-a-driver-package.md
-            items: 
-            - name: "Using Inf2Cat to Create a Catalog File"
-              href: using-inf2cat-to-create-a-catalog-file.md
-            - name: "Using MakeCat to Create a Catalog File"
-              href: using-makecat-to-create-a-catalog-file.md
-          - name: "Test-Signing a Driver Package's Catalog File"
-            href: test-signing-a-driver-package-s-catalog-file.md
-          - name: "Test-Signing a Driver through an Embedded Signature"
-            href: test-signing-a-driver-through-an-embedded-signature.md
-          - name: "Configuring the Test Computer to Support Test-Signing"
-            href: configuring-the-test-computer-to-support-test-signing.md
-            items: 
-            - name: "The TESTSIGNING Boot Configuration Option"
-              href: the-testsigning-boot-configuration-option.md
-            - name: "Enabling Code Integrity Event Logging and System Auditing"
-              href: enabling-code-integrity-event-logging-and-system-auditing.md
-          - name: "Installing Test Certificates"
-            href: installing-test-certificates.md
-          - name: "Verifying the Test Signature"
-            href: verifying-the-test-signature.md
-          - name: "Installing a Test-Signed Driver Package on the Test Computer"
-            href: installing-a-test-signed-driver-package-on-the-test-computer.md
-            items: 
-            - name: "Using the DevCon Tool to Install a Driver Package"
-              href: using-the-devcon-tool-to-install-a-driver-package.md
-        - name: "WHQL Test Signature Program"
-          href: whql-test-signature-program.md
-        - name: "Test Certificates"
-          href: test-certificates.md
-          items: 
-          - name: "MakeCert Test Certificate"
-            href: makecert-test-certificate.md
-          - name: "Commercial Test Certificate"
-            href: commercial-test-certificate.md
-          - name: "Enterprise CA Test Certificate"
-            href: enterprise-ca-test-certificate.md
-        - name: "Test-Signing Driver Packages"
-          href: test-signing-driver-packages.md
-          items: 
-          - name: "Test-Signing a Driver File"
-            href: test-signing-a-driver-file.md
-          - name: "Verifying the Signature of a Test-Signed Driver File"
-            href: verifying-the-signature-of-a-test-signed-driver-file.md
-          - name: "Creating a Catalog File for a Test-Signed Driver Package"
-            href: creating-a-catalog-file-for-a-test-signed-driver-package.md
-          - name: "Test-Signing a Catalog File"
-            href: test-signing-a-catalog-file.md
-          - name: "Verifying the Signature of a Test-Signed Catalog File"
-            href: verifying-the-signature-of-a-test-signed-catalog-file.md
-        - name: "Installing Test-Signed Driver Packages"
-          href: installing-test-signed-driver-packages.md
-          items: 
-          - name: "Installing a Test Certificate on a Test Computer"
-            href: installing-a-test-certificate-on-a-test-computer.md
-            items: 
-            - name: "Using CertMgr to Install Test Certificates on a Test Computer"
-              href: using-certmgr-to-install-test-certificates-on-a-test-computer.md
-            - name: "Deploying a Test Certificate by Using the Default Domain Policy"
-              href: deploying-a-test-certificate-by-using-the-default-domain-policy.md
-          - name: "Installing a Test-Signed Catalog File for a Non-PnP Driver"
-            href: installing-a-test-signed-catalog-file-for-a-non-pnp-driver.md
-            items: 
-            - name: "Installing a Catalog File by using CryptCATAdminAddCatalog"
-              href: installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md
-            - name: "Installing a Catalog File by using SignTool"
-              href: installing-a-catalog-file-by-using-signtool.md
-        - name: "Installing an Unsigned Driver during Development and Test"
-          href: installing-an-unsigned-driver-during-development-and-test.md
-      - name: "Signing Drivers for Public Release"
-        href: signing-drivers-for-public-release.md
-        items: 
-        - name: "Signing Drivers for Public Release"
-          href: signing-drivers-for-public-release--windows-vista-and-later-.md
-          items: 
-          - name: "Introduction to Release-Signing"
-            href: introduction-to-release-signing.md
-          - name: "How to Release-Sign a Driver Package"
-            href: how-to-release-sign-a-driver-package.md
-            items: 
-            - name: "Obtaining a Software Publisher Certificate (SPC)"
-              href: obtaining-a-software-publisher-certificate--spc-.md
-              items: 
-              - name: "Personal Information Exchange (.pfx) Files"
-                href: personal-information-exchange---pfx--files.md
-              - name: "Importing an SPC into a Certificate Store"
-                href: importing-an-spc-into-a-certificate-store.md
-              - name: "Determining an SPC's Cross-Certificate"
-                href: determining-an-spc-s-cross-certificate.md
-            - name: "Creating a Catalog File for Release-Signing a Driver Package"
-              href: creating-a-catalog-file-for-release-signing-a-driver-package.md
-            - name: "Release-Signing a Driver Package's Catalog File"
-              href: release-signing-a-driver-package-s-catalog-file.md
-            - name: "Release-Signing a Driver through an Embedded Signature"
-              href: release-signing-a-driver-through-an-embedded-signature.md
-            - name: "Verifying the Release-Signature"
-              href: verifying-the-release-signature.md
-            - name: "Configuring a Computer to Support Release-Signing"
-              href: configuring-a-computer-to-support-release-signing.md
-            - name: "Installing a Release-Signed Driver Package"
-              href: installing-a-release-signed-driver-package.md
-          - name: "WHQL Release Signature"
-            href: whql-release-signature.md
-          - name: "Release Certificates"
-            href: release-certificates.md
-            items: 
-            - name: "Software Publisher Certificate"
-              href: software-publisher-certificate.md
-            - name: "Commercial Release Certificate"
-              href: commercial-release-certificate.md
-          - name: "Release-Signing Driver Packages"
-            href: release-signing-driver-packages.md
-            items: 
-            - name: "Release-Signing a Driver File"
-              href: release-signing-a-driver-file.md
-            - name: "Verifying the Signature of a Release-Signed Driver File"
-              href: verifying-the-signature-of-a-release-signed-driver-file.md
-            - name: "Creating a Catalog File for a PnP Driver Package "
-              href: creating-a-catalog-file-for-a-pnp-driver-package.md
-            - name: "Signing a Catalog File with an SPC"
-              href: signing-a-catalog-file-with-an-spc.md
-            - name: "Verifying the SPC Signature of a Catalog File"
-              href: verifying-the-spc-signature-of-a-catalog-file.md
-            - name: "Signing a Catalog File with a Commercial Release Certificate"
-              href: signing-a-catalog-file-with-a-commercial-release-certificate.md
-            - name: "Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate"
-              href: verifying-the-signature-of-a-catalog-file-signed-by-a-commercial-relea.md
-            - name: "Creating a Catalog File for a Non-PnP Driver Package"
-              href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
-            - name: "Installing a Release-Signed Catalog File for a Non-PnP Driver"
-              href: installing-a-release-signed-catalog-file-for-a-non-pnp-driver.md
-      - name: "Troubleshooting Install and Load Problems with Signed Driver Packages"
-        href: troubleshooting-install-and-load-problems-with-signed-driver-packages.md
-        items: 
-        - name: "Detecting Driver Load Errors"
-          href: detecting-driver-load-errors.md
-        - name: "Code Integrity Diagnostic System Log Events"
-          href: code-integrity-diagnostic-system-log-events.md
-          items: 
-          - name: "Viewing Code Integrity Events"
-            href: viewing-code-integrity-events.md
-          - name: "Enabling the System Event Audit Log"
-            href: enabling-the-system-event-audit-log.md
-          - name: "Code Integrity Event Log Messages"
-            href: code-integrity-event-log-messages.md
-        - name: "SetupAPI Device Installation Log Entries"
-          href: setupapi-device-installation-log-entries.md
+    - name: "Digital Signatures"
+      href: digital-signatures.md
+    - name: "Authenticode Digital Signatures"
+      href: authenticode.md
+    - name: "Catalog Files and Digital Signatures"
+      href: catalog-files.md
+    - name: "Embedded Signatures in a Driver File"
+      href: embedded-signatures-in-a-driver-file.md
+    - name: "Digital Signatures and PnP Device Installation"
+      href: digital-signatures-and-pnp-device-installation--windows-vista-and-late.md
+    - name: "Digital Certificates"
+      href: digital-certificates.md
+    - name: "Certificate Stores"
+      href: certificate-stores.md
+    - name: "Local Machine and Current User Certificate Stores"
+      href: local-machine-and-current-user-certificate-stores.md
+    - name: "Trusted Root Certification Authorities Certificate Store"
+      href: trusted-root-certification-authorities-certificate-store.md
+    - name: "Trusted Publishers Certificate Store"
+      href: trusted-publishers-certificate-store.md
+    - name: "Kernel-Mode Code Signing Policy"
+      href: kernel-mode-code-signing-policy--windows-vista-and-later-.md
+    - name: "Windows 10 in S mode Driver Requirements"
+      href: Windows10SDriverRequirements.md
+    - name: "Managing the Signing Process"
+      href: managing-the-signing-process.md
+    - name: "Kernel-Mode Code Signing Requirements"
+      href: kernel-mode-code-signing-requirements--windows-vista-and-later-.md
+    - name: "PnP Device Installation Signing Requirements"
+      href: pnp-device-installation-signing-requirements--windows-vista-and-later-.md
+    - name: "Authenticode Signing of Third-party CSPs"
+      href: authenticode-signing-of-csps.md
+    - name: "Managing the Digital Signature or Code Signing Keys"
+      href: managing-the-digital-signature-or-code-signing-keys.md
+    - name: "Cross-Certificates for Kernel Mode Code Signing"
+      href: cross-certificates-for-kernel-mode-code-signing.md
+    - name: "Introduction to Test-Signing"
+      href: introduction-to-test-signing.md
+    - name: "How to Test-Sign a Driver Package"
+      href: how-to-test-sign-a-driver-package.md
+    - name: "Creating Test Certificates"
+      href: creating-test-certificates.md
+    - name: "Viewing Test Certificates"
+      href: viewing-test-certificates.md
+    - name: "Creating a Catalog File for Test-Signing a Driver Package"
+      href: creating-a-catalog-file-for-test-signing-a-driver-package.md
+    - name: "Using Inf2Cat to Create a Catalog File"
+      href: using-inf2cat-to-create-a-catalog-file.md
+    - name: "Using MakeCat to Create a Catalog File"
+      href: using-makecat-to-create-a-catalog-file.md
+    - name: "Test-Signing a Driver Package's Catalog File"
+      href: test-signing-a-driver-package-s-catalog-file.md
+    - name: "Test-Signing a Driver through an Embedded Signature"
+      href: test-signing-a-driver-through-an-embedded-signature.md
+    - name: "Configuring the Test Computer to Support Test-Signing"
+      href: configuring-the-test-computer-to-support-test-signing.md
+    - name: "Enable Loading of Test Signed Drivers"
+      href: the-testsigning-boot-configuration-option.md
+    - name: "Enabling Code Integrity Event Logging and System Auditing"
+      href: enabling-code-integrity-event-logging-and-system-auditing.md
+    - name: "Installing Test Certificates"
+      href: installing-test-certificates.md
+    - name: "Verifying the Test Signature"
+      href: verifying-the-test-signature.md
+    - name: "Installing a Test-Signed Driver Package on the Test Computer"
+      href: installing-a-test-signed-driver-package-on-the-test-computer.md
+    - name: "Using the DevCon Tool to Install a Driver Package"
+      href: using-the-devcon-tool-to-install-a-driver-package.md
+    - name: "WHQL Test Signature Program"
+      href: whql-test-signature-program.md
+    - name: "MakeCert Test Certificate"
+      href: makecert-test-certificate.md
+    - name: "Commercial Test Certificate"
+      href: commercial-test-certificate.md
+    - name: "Enterprise CA Test Certificate"
+      href: enterprise-ca-test-certificate.md
+    - name: "Test-Signing Driver Packages"
+      href: test-signing-driver-packages.md
+    - name: "Test-Signing a Driver File"
+      href: test-signing-a-driver-file.md
+    - name: "Verifying the Signature of a Test-Signed Driver File"
+      href: verifying-the-signature-of-a-test-signed-driver-file.md
+    - name: "Creating a Catalog File for a Test-Signed Driver Package"
+      href: creating-a-catalog-file-for-a-test-signed-driver-package.md
+    - name: "Test-Signing a Catalog File"
+      href: test-signing-a-catalog-file.md
+    - name: "Verifying the Signature of a Test-Signed Catalog File"
+      href: verifying-the-signature-of-a-test-signed-catalog-file.md
+    - name: "Installing Test-Signed Driver Packages"
+      href: installing-test-signed-driver-packages.md
+    - name: "Installing a Test Certificate on a Test Computer"
+      href: installing-a-test-certificate-on-a-test-computer.md
+    - name: "Using CertMgr to Install Test Certificates on a Test Computer"
+      href: using-certmgr-to-install-test-certificates-on-a-test-computer.md
+    - name: "Deploying a Test Certificate by Using the Default Domain Policy"
+      href: deploying-a-test-certificate-by-using-the-default-domain-policy.md
+    - name: "Installing a Test-Signed Catalog File for a Non-PnP Driver"
+      href: installing-a-test-signed-catalog-file-for-a-non-pnp-driver.md
+    - name: "Installing a Catalog File by using CryptCATAdminAddCatalog"
+      href: installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md
+    - name: "Installing a Catalog File by using SignTool"
+      href: installing-a-catalog-file-by-using-signtool.md
+    - name: "Installing an Unsigned Driver during Development and Test"
+      href: installing-an-unsigned-driver-during-development-and-test.md
+    - name: "Signing Drivers for Public Release"
+      href: signing-drivers-for-public-release--windows-vista-and-later-.md
+    - name: "Introduction to Release-Signing"
+      href: introduction-to-release-signing.md
+    - name: "How to Release-Sign a Driver Package"
+      href: how-to-release-sign-a-driver-package.md
+    - name: "Obtaining a Software Publisher Certificate (SPC)"
+      href: obtaining-a-software-publisher-certificate--spc-.md
+    - name: "Personal Information Exchange (.pfx) Files"
+      href: personal-information-exchange---pfx--files.md
+    - name: "Importing an SPC into a Certificate Store"
+      href: importing-an-spc-into-a-certificate-store.md
+    - name: "Determining an SPC's Cross-Certificate"
+      href: determining-an-spc-s-cross-certificate.md
+    - name: "Creating a Catalog File for Release-Signing a Driver Package"
+      href: creating-a-catalog-file-for-release-signing-a-driver-package.md
+    - name: "Release-Signing a Driver Package's Catalog File"
+      href: release-signing-a-driver-package-s-catalog-file.md
+    - name: "Release-Signing a Driver through an Embedded Signature"
+      href: release-signing-a-driver-through-an-embedded-signature.md
+    - name: "Verifying the Release-Signature"
+      href: verifying-the-release-signature.md
+    - name: "Configuring a Computer to Support Release-Signing"
+      href: configuring-a-computer-to-support-release-signing.md
+    - name: "Installing a Release-Signed Driver Package"
+      href: installing-a-release-signed-driver-package.md
+    - name: "WHQL Release Signature"
+      href: whql-release-signature.md
+    - name: "Release Certificates"
+      href: release-certificates.md
+    - name: "Software Publisher Certificate"
+      href: software-publisher-certificate.md
+    - name: "Commercial Release Certificate"
+      href: commercial-release-certificate.md
+    - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
+      href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md  
+    - name: "Release-Signing Driver Packages"
+      href: release-signing-driver-packages.md
+    - name: "Release-Signing a Driver File"
+      href: release-signing-a-driver-file.md
+    - name: "Verifying the Signature of a Release-Signed Driver File"
+      href: verifying-the-signature-of-a-release-signed-driver-file.md
+    - name: "Creating a Catalog File for a PnP Driver Package "
+      href: creating-a-catalog-file-for-a-pnp-driver-package.md
+    - name: "Signing a Catalog File with an SPC"
+      href: signing-a-catalog-file-with-an-spc.md
+    - name: "Verifying the SPC Signature of a Catalog File"
+      href: verifying-the-spc-signature-of-a-catalog-file.md
+    - name: "Signing a Catalog File with a Commercial Release Certificate"
+      href: signing-a-catalog-file-with-a-commercial-release-certificate.md
+    - name: "Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate"
+      href: verifying-the-signature-of-a-catalog-file-signed-by-a-commercial-relea.md
+    - name: "Creating a Catalog File for a Non-PnP Driver Package"
+      href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
+    - name: "Installing a Release-Signed Catalog File for a Non-PnP Driver"
+      href: installing-a-release-signed-catalog-file-for-a-non-pnp-driver.md
+    - name: "Detecting Driver Load Errors"
+      href: detecting-driver-load-errors.md
+    - name: "Code Integrity Diagnostic System Log Events"
+      href: code-integrity-diagnostic-system-log-events.md
+    - name: "Viewing Code Integrity Events"
+      href: viewing-code-integrity-events.md
+    - name: "Enabling the System Event Audit Log"
+      href: enabling-the-system-event-audit-log.md
+    - name: "Code Integrity Event Log Messages"
+      href: code-integrity-event-log-messages.md
+    - name: "SetupAPI Device Installation Log Entries"
+      href: setupapi-device-installation-log-entries.md
     - name: "Windows Driver Signing Tutorial"
       href: windows-driver-signing-tutorial.md
-      items: 
-      - name: "Test Signing"
-        href: test-signing.md
-      - name: "Release Signing"
-        href: release-signing.md
-      - name: "Troubleshooting Driver Signing Installation"
-        href: troubleshooting-driver-signing-installation.md
-      - name: "Related Topics and Appendices"
-        href: related-topics-and-appendices.md
-        items: 
-        - name: "Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode"
-          href: appendix-1--enforcing-kernel-mode-signature-verification-in-kernel-debugging-mode.md
-        - name: "Appendix 2: Signing Drivers with Visual Studio"
-          href: appendix-2--signing-drivers-with-visual-studio.md
-        - name: "Appendix 3: Enable Code Integrity Event Logging and System Auditing"
-          href: appendix-3--enable-code-integrity-event-logging-and-system-auditing.md
-        - name: "Appendix 4: Driver Signing Issues"
-          href: appendix-4--driver-signing-issues.md
-    - name: "Device Metadata Packages"
-      href: device-metadata-packages.md
-      items: 
-      - name: "Overview of Device Metadata Packages"
-        href: overview-of-device-metadata-packages.md
-      - name: "Overview of the Device Metadata System"
-        href: overview-of-the-device-metadata-system.md
-        items: 
-        - name: "Windows Metadata and Internet Services"
-          href: windows-metadata-and-internet-services.md
-        - name: "Device Metadata Retrieval Client"
-          href: device-metadata-retrieval-client.md
-        - name: "Device Metadata Store"
-          href: device-metadata-store.md
-        - name: "Device Metadata Cache "
-          href: device-metadata-cache.md
-      - name: "Device Metadata Package Structure"
-        href: device-metadata-package-components.md
-        items: 
-        - name: "PackageInfo XML Document"
-          href: packageinfo-xml-document.md
-        - name: "DeviceInfo XML Document"
-          href: deviceinfo-xml-document.md
-          items: 
-          - name: "Device Icon File"
-            href: device-icon-file.md
-        - name: "WindowsInfo XML Document"
-          href: windowsinfo-xml-document.md
-        - name: "SoftwareInfo XML Document"
-          href: softwareinfo-xml-document.md
-      - name: "Building Device Metadata Packages"
-        href: building-device-metadata-packages.md
-      - name: "Installing Device Metadata Packages"
-        href: installing-device-metadata-packages.md
-        items: 
-        - name: "Installing Device Metadata Packages to an Offline Windows Image"
-          href: installing-device-metadata-packages-to-an-offline-windows-image.md
-        - name: "Installing Device Metadata Packages from WMIS"
-          href: installing-device-metadata-packages-from-wmis.md
-        - name: "Installing Device Metadata Packages through an Application"
-          href: installing-device-metadata-packages-through-an-application.md
-        - name: "Installing Device Metadata Packages through a Driver Package"
-          href: installing-device-metadata-packages-through-a-driver-package.md
-        - name: "Manually Adding Device Metadata Packages"
-          href: manually-adding-device-metadata-packages.md
-      - name: "How the DMRC Selects a Device Metadata Package"
-        href: how-the-dmrc-selects-a-device-metadata-package.md
-        items: 
-        - name: "How the DMRC Determines When to Search the WMIS Server"
-          href: how-the-dmrc-determines-when-to-search-the-wmis-server.md
-      - name: "Debugging Device Metadata Packages"
-        href: debugging-device-metadata-packages.md
-        items: 
-        - name: "Debugging Device Metadata Packages By Using Event Viewer"
-          href: debugging-device-metadata-packages-by-using-event-viewer.md
-        - name: "Debugging Device Metadata Packages by Using Problem Reports"
-          href: debugging-device-metadata-packages-by-using-problem-reports.md
-        - name: "Device Metadata Error Codes"
-          href: device-metadata-error-codes.md
-      - name: "Best Practices for Developing Device Metadata Packages"
-        href: best-practices-for-developing-device-metadata-packages.md
-        items: 
-        - name: "Best Practices for Specifying Hardware IDs"
-          href: best-practices-for-specifying-hardware-ids.md
-          items: 
-          - name: "Specifying Hardware IDs for a Bluetooth Device"
-            href: specifying-hardware-ids-for-a-bluetooth-device.md
-          - name: "Specifying Hardware IDs for a Computer"
-            href: specifying-hardware-ids-for-a-computer.md
-          - name: "Specifying Hardware IDs for a Multifunction Device"
-            href: specifying-hardware-ids-for-a-multifunction-device.md
-        - name: "Best Practices for Specifying Model IDs"
-          href: best-practices-for-specifying-model-ids.md
-        - name: "Best Practices for Testing the Download of Device Metadata Packages"
-          href: best-practices-for-testing-the-download-of-device-metadata-packages.md
-    - name: "Device and Driver Installation Software"
-      href: device-and-driver-installation-software.md
-      items: 
-      - name: "Device and Driver Installation Software Tools"
-        href: device-and-driver-installation-software-tools.md
-        items: 
-        - name: "SetupAPI"
-          href: setupapi.md
-          items: 
-          - name: "Using General Setup Functions"
-            href: using-general-setup-functions.md
-            items: 
-            - name: "INF File Processing Functions"
-              href: inf-file-processing-functions.md
-            - name: "Disk Prompting and Error Handling Functions"
-              href: disk-prompting-and-error-handling-functions.md
-            - name: "File Queuing Functions"
-              href: file-queuing-functions.md
-            - name: "Default Queue Callback Routine Functions"
-              href: default-queue-callback-routine-functions.md
-            - name: "Cabinet File Function"
-              href: cabinet-file-function.md
-            - name: "Disk-Space List Functions"
-              href: disk-space-list-functions.md
-            - name: "MRU Source List Functions"
-              href: mru-source-list-functions.md
-            - name: "File Log Functions"
-              href: file-log-functions.md
-            - name: "User Interface Functions"
-              href: user-interface-functions.md
-            - name: "SetupAPI Logging Functions"
-              href: setupapi-logging-functions.md
-          - name: "Using Device Installation Functions"
-            href: using-device-installation-functions.md
-          - name: "Typical SetupAPI Usage"
-            href: typical-setupapi-usage.md
-            items: 
-            - name: "Basic Installation Operations"
-              href: basic-installation-operations.md
-            - name: "SetupAPI Functions that Simplify Driver Installation"
-              href: setupapi-functions-that-simplify-driver-installation.md
-            - name: "Using SetupAPI To Verify Driver Authenticode Signatures"
-              href: using-setupapi-to-verify-driver-authenticode-signatures.md
-            - name: "Determining the Parent of a Device"
-              href: determining-the-parent-of-a-device.md
-              items: 
-              - name: "Obtaining the Parent of a Device in the Device Tree"
-                href: obtaining-the-parent-of-a-device-in-the-device-tree.md
-              - name: "Determining the Parent of a Nonpresent Device"
-                href: determining-the-parent-of-a-nonpresent-device.md
-            - name: "Obtaining the Original Source Path of an Installed INF File"
-              href: obtaining-the-original-source-path-of-an-installed-inf-file.md
-          - name: "Guidelines for Using SetupAPI"
-            href: guidelines-for-using-setupapi.md
-        - name: "DIFx Guidelines"
-          href: difx-guidelines.md
-      - name: "Device and Driver Installation Software Components"
-        href: device-and-driver-installation-software-components.md
-        items: 
-        - name: "Writing a Co-installer"
-          href: writing-a-co-installer.md
-          items: 
-          - name: "Co-installer Operation"
-            href: co-installer-operation.md
-          - name: "Co-installer Interface"
-            href: co-installer-interface.md
-          - name: "Co-installer Functionality"
-            href: co-installer-functionality.md
-          - name: "Handling DIF Codes"
-            href: handling-dif-codes.md
-          - name: "Registering a Co-installer"
-            href: registering-a-co-installer.md
-            items: 
-            - name: "Registering a Device-Specific Co-installer"
-              href: registering-a-device-specific-co-installer.md
-            - name: "Registering a Class Co-installer"
-              href: registering-a-class-co-installer.md
-        - name: "Calling the Default DIF Code Handlers"
-          href: calling-the-default-dif-code-handlers.md
-        - name: "Finish-Install Actions"
-          href: finish-install-actions--windows-vista-and-later-.md
-          items: 
-          - name: "Overview of Finish-Install Actions"
-            href: overview-of-finish-install-actions.md
-          - name: "How Finish-Install Actions are Processed"
-            href: how-finish-install-actions-are-processed.md
-            items: 
-            - name: "Marking a Device as having a Finish Install Action to Perform"
-              href: setting-the-configflag-finishinstall-action-device-configuration-flag.md
-            - name: "Running Finish-Install Actions"
-              href: running-finish-install-actions.md
-            - name: "Running the Default Finish-Install Action"
-              href: running-the-default-finish-install-action.md
-          - name: "Implementing Finish-Install Actions"
-            href: implementing-finish-install-actions.md
-            items: 
-            - name: "Guidelines for Implementing Finish-Install Actions"
-              href: guidelines-for-implementing-finish-install-actions.md
-            - name: "Code Example: Finish-Install Actions in a Class Installer"
-              href: code-example--finish-install-actions-in-a-class-installer.md
-            - name: "Code Example: Finish-Install Actions in a Co-installer"
-              href: code-example--finish-install-actions-in-a-co-installer.md
-        - name: "Providing Device Property Pages"
-          href: providing-device-property-pages.md
-          items: 
-          - name: "Overview of Device Property Pages"
-            href: overview-of-device-property-pages.md
-            items: 
-            - name: "How Device Property Pages are Displayed"
-              href: how-device-property-pages-are-displayed.md
-            - name: "Types of Device Property Page Providers"
-              href: types-of-device-property-page-providers.md
-          - name: "General Requirements for Device Property Page Providers"
-            href: general-requirements-for-device-property-page-providers.md
-            items: 
-            - name: "Creating Custom Property Pages"
-              href: creating-custom-property-pages.md
-            - name: "Property Page Callback Function"
-              href: property-page-callback-function.md
-            - name: "Handling Windows Messages for Property Pages"
-              href: handling-windows-messages-for-property-pages.md
-            - name: "Sample Custom Property Page"
-              href: sample-custom-property-page.md
-          - name: "Specific Requirements for Device Property Page Providers (Co-Installers)"
-            href: specific-requirements-for-device-property-page-providers--class-instal.md
-          - name: "Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)"
-            href: specific-requirements-for-device-property-page-providers--property-pag.md
-          - name: "Invoking a Device Properties Dialog Box"
-            href: invoking-a-device-properties-dialog-box.md
-            items: 
-            - name: "Invoking a Device Properties Dialog Box Programmatically in an Installation Application"
-              href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
-            - name: "Invoking a Device Properties Dialog Box from a Command-line Prompt"
-              href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
-            - name: "DeviceProperties_RunDLL Function Prototype"
-              href: deviceproperties-rundll-function-prototype.md
-        - name: "Writing a Device Installation Application"
-          href: writing-a-device-installation-application.md
-          items: 
-          - name: "Guidelines for Writing Device Installation Applications"
-            href: guidelines-for-writing-device-installation-applications.md
-            items: 
-            - name: "Installing Device-Specific Applications"
-              href: installing-device-specific-applications.md
-              items: 
-              - name: "Hardware-First Installation of Device-Specific Applications"
-                href: hardware-first-installation-of-device-specific-applications.md
-                items: 
-                - name: "Device Installation Application Not Included in the Driver Package"
-                  href: device-installation-application-not-included-in-the-driver-package.md
-                - name: "Device Installation Application that is Included in the Driver Package"
-                  href: device-installation-application-that-is-included-in-the-driver-package.md
-                - name: "Device Installation Application Started through AutoRun"
-                  href: device-installation-application-started-through-autorun.md
-                - name: "Guidelines for Starting Device Installation Applications through Co-installers"
-                  href: guidelines-for-starting-device-installation-applications-through-co-in.md
-            - name: "Preloading Driver Packages"
-              href: preloading-driver-packages.md
-            - name: "Preinstalling Driver Packages"
-              href: preinstalling-driver-packages.md
-          - name: "Hardware-First Installation"
-            href: hardware-first-installation.md
-            items: 
-            - name: "Installing an In-box Driver or a Preinstalled Driver"
-              href: installing-an-in-box-driver-or-a-preinstalled-driver.md
-          - name: "Software-First Installation"
-            href: software-first-installation.md
-            items: 
-            - name: "Checking for In-Progress Installations"
-              href: checking-for-in-progress-installations.md
-            - name: "Determining Whether a Device Is Plugged In"
-              href: determining-whether-a-device-is-plugged-in.md
+    - name: "Test Signing"
+      href: test-signing.md
+    - name: "Release Signing"
+      href: release-signing.md
+    - name: "Troubleshooting Driver Signing Installation"
+      href: troubleshooting-driver-signing-installation.md
+    - name: "Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode"
+      href: appendix-1--enforcing-kernel-mode-signature-verification-in-kernel-debugging-mode.md
+    - name: "Appendix 2: Signing Drivers with Visual Studio"
+      href: appendix-2--signing-drivers-with-visual-studio.md
+    - name: "Appendix 3: Enable Code Integrity Event Logging and System Auditing"
+      href: appendix-3--enable-code-integrity-event-logging-and-system-auditing.md
+    - name: "Appendix 4: Driver Signing Issues"
+      href: appendix-4--driver-signing-issues.md
+  - name: "Device Metadata Packages"
+    items: 
+    - name: "Overview of Device Metadata Packages"
+      href: overview-of-device-metadata-packages.md
+    - name: "Windows Metadata and Internet Services"
+      href: windows-metadata-and-internet-services.md
+    - name: "Device Metadata Retrieval Client"
+      href: device-metadata-retrieval-client.md
+    - name: "Device Metadata Store"
+      href: device-metadata-store.md
+    - name: "Device Metadata Cache "
+      href: device-metadata-cache.md
+    - name: "Device Metadata Package Structure"
+      href: device-metadata-package-components.md
+    - name: "PackageInfo XML Document"
+      href: packageinfo-xml-document.md
+    - name: "DeviceInfo XML Document"
+      href: deviceinfo-xml-document.md
+    - name: "Device Icon File"
+      href: device-icon-file.md
+    - name: "WindowsInfo XML Document"
+      href: windowsinfo-xml-document.md
+    - name: "SoftwareInfo XML Document"
+      href: softwareinfo-xml-document.md
+    - name: "Building Device Metadata Packages"
+      href: building-device-metadata-packages.md
+    - name: "Installing Device Metadata Packages to an Offline Windows Image"
+      href: installing-device-metadata-packages-to-an-offline-windows-image.md
+    - name: "Installing Device Metadata Packages from WMIS"
+      href: installing-device-metadata-packages-from-wmis.md
+    - name: "Installing Device Metadata Packages through an Application"
+      href: installing-device-metadata-packages-through-an-application.md
+    - name: "Installing Device Metadata Packages through a Driver Package"
+      href: installing-device-metadata-packages-through-a-driver-package.md
+    - name: "Manually Adding Device Metadata Packages"
+      href: manually-adding-device-metadata-packages.md
+    - name: "How the DMRC Selects a Device Metadata Package"
+      href: how-the-dmrc-selects-a-device-metadata-package.md
+    - name: "How the DMRC Determines When to Search the WMIS Server"
+      href: how-the-dmrc-determines-when-to-search-the-wmis-server.md
+    - name: "Debugging Device Metadata Packages By Using Event Viewer"
+      href: debugging-device-metadata-packages-by-using-event-viewer.md
+    - name: "Debugging Device Metadata Packages by Using Problem Reports"
+      href: debugging-device-metadata-packages-by-using-problem-reports.md
+    - name: "Device Metadata Error Codes"
+      href: device-metadata-error-codes.md
+    - name: "Best Practices for Specifying Hardware IDs"
+      href: best-practices-for-specifying-hardware-ids.md
+    - name: "Specifying Hardware IDs for a Bluetooth Device"
+      href: specifying-hardware-ids-for-a-bluetooth-device.md
+    - name: "Specifying Hardware IDs for a Computer"
+      href: specifying-hardware-ids-for-a-computer.md
+    - name: "Specifying Hardware IDs for a Multifunction Device"
+      href: specifying-hardware-ids-for-a-multifunction-device.md
+    - name: "Best Practices for Specifying Model IDs"
+      href: best-practices-for-specifying-model-ids.md
+    - name: "Best Practices for Testing the Download of Device Metadata Packages"
+      href: best-practices-for-testing-the-download-of-device-metadata-packages.md
+  - name: "Device and Driver Installation Software"
+    items:
+    - name: "SetupAPI"
+      href: setupapi.md
+    - name: "Using General Setup Functions"
+      href: using-general-setup-functions.md
+    - name: "INF File Processing Functions"
+      href: inf-file-processing-functions.md
+    - name: "Disk Prompting and Error Handling Functions"
+      href: disk-prompting-and-error-handling-functions.md
+    - name: "File Queuing Functions"
+      href: file-queuing-functions.md
+    - name: "Default Queue Callback Routine Functions"
+      href: default-queue-callback-routine-functions.md
+    - name: "Cabinet File Function"
+      href: cabinet-file-function.md
+    - name: "Disk-Space List Functions"
+      href: disk-space-list-functions.md
+    - name: "MRU Source List Functions"
+      href: mru-source-list-functions.md
+    - name: "File Log Functions"
+      href: file-log-functions.md
+    - name: "User Interface Functions"
+      href: user-interface-functions.md
+    - name: "SetupAPI Logging Functions"
+      href: setupapi-logging-functions.md
+    - name: "Using Device Installation Functions"
+      href: using-device-installation-functions.md
+    - name: "Basic Installation Operations"
+      href: basic-installation-operations.md
+    - name: "SetupAPI Functions that Simplify Driver Installation"
+      href: setupapi-functions-that-simplify-driver-installation.md
+    - name: "Using SetupAPI To Verify Driver Authenticode Signatures"
+      href: using-setupapi-to-verify-driver-authenticode-signatures.md
+    - name: "Determining the Parent of a Device"
+      href: determining-the-parent-of-a-device.md
+    - name: "Obtaining the Parent of a Device in the Device Tree"
+      href: obtaining-the-parent-of-a-device-in-the-device-tree.md
+    - name: "Determining the Parent of a Nonpresent Device"
+      href: determining-the-parent-of-a-nonpresent-device.md
+    - name: "Obtaining the Original Source Path of an Installed INF File"
+      href: obtaining-the-original-source-path-of-an-installed-inf-file.md
+    - name: "Guidelines for Using SetupAPI"
+      href: guidelines-for-using-setupapi.md
+    - name: "DIFx Guidelines"
+      href: difx-guidelines.md
+    - name: "Device and Driver Installation Software Components"
+      href: device-and-driver-installation-software-components.md
+    - name: "Writing a Co-installer"
+      href: writing-a-co-installer.md
+    - name: "Co-installer Operation"
+      href: co-installer-operation.md
+    - name: "Co-installer Interface"
+      href: co-installer-interface.md
+    - name: "Co-installer Functionality"
+      href: co-installer-functionality.md
+    - name: "Handling DIF Codes"
+      href: handling-dif-codes.md
+    - name: "Registering a Co-installer"
+      href: registering-a-co-installer.md
+    - name: "Registering a Device-Specific Co-installer"
+      href: registering-a-device-specific-co-installer.md
+    - name: "Registering a Class Co-installer"
+      href: registering-a-class-co-installer.md
+    - name: "Calling the Default DIF Code Handlers"
+      href: calling-the-default-dif-code-handlers.md
+    - name: "Finish-Install Actions"
+      href: finish-install-actions--windows-vista-and-later-.md
+    - name: "Overview of Finish-Install Actions"
+      href: overview-of-finish-install-actions.md
+    - name: "How Finish-Install Actions are Processed"
+      href: how-finish-install-actions-are-processed.md
+    - name: "Marking a Device as having a Finish Install Action to Perform"
+      href: setting-the-configflag-finishinstall-action-device-configuration-flag.md
+    - name: "Running Finish-Install Actions"
+      href: running-finish-install-actions.md
+    - name: "Running the Default Finish-Install Action"
+      href: running-the-default-finish-install-action.md
+    - name: "Implementing Finish-Install Actions"
+      href: implementing-finish-install-actions.md
+    - name: "Guidelines for Implementing Finish-Install Actions"
+      href: guidelines-for-implementing-finish-install-actions.md
+    - name: "Code Example: Finish-Install Actions in a Class Installer"
+      href: code-example--finish-install-actions-in-a-class-installer.md
+    - name: "Code Example: Finish-Install Actions in a Co-installer"
+      href: code-example--finish-install-actions-in-a-co-installer.md
+    - name: "Overview of Device Property Pages"
+      href: overview-of-device-property-pages.md
+    - name: "How Device Property Pages are Displayed"
+      href: how-device-property-pages-are-displayed.md
+    - name: "Types of Device Property Page Providers"
+      href: types-of-device-property-page-providers.md
+    - name: "General Requirements for Device Property Page Providers"
+      href: general-requirements-for-device-property-page-providers.md
+    - name: "Creating Custom Property Pages"
+      href: creating-custom-property-pages.md
+    - name: "Property Page Callback Function"
+      href: property-page-callback-function.md
+    - name: "Handling Windows Messages for Property Pages"
+      href: handling-windows-messages-for-property-pages.md
+    - name: "Sample Custom Property Page"
+      href: sample-custom-property-page.md
+    - name: "Specific Requirements for Device Property Page Providers (Co-Installers)"
+      href: specific-requirements-for-device-property-page-providers--class-instal.md
+    - name: "Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)"
+      href: specific-requirements-for-device-property-page-providers--property-pag.md
+    - name: "Invoking a Device Properties Dialog Box"
+      href: invoking-a-device-properties-dialog-box.md
+    - name: "Invoking a Device Properties Dialog Box Programmatically in an Installation Application"
+      href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
+    - name: "Invoking a Device Properties Dialog Box from a Command-line Prompt"
+      href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
+    - name: "DeviceProperties_RunDLL Function Prototype"
+      href: deviceproperties-rundll-function-prototype.md
+    - name: "Writing a Device Installation Application"
+      href: writing-a-device-installation-application.md
+    - name: "Guidelines for Writing Device Installation Applications"
+      href: guidelines-for-writing-device-installation-applications.md
+    - name: "Installing Device-Specific Applications"
+      href: installing-device-specific-applications.md
+    - name: "Device Installation Application Not Included in the Driver Package"
+      href: device-installation-application-not-included-in-the-driver-package.md
+    - name: "Device Installation Application that is Included in the Driver Package"
+      href: device-installation-application-that-is-included-in-the-driver-package.md
+    - name: "Device Installation Application Started through AutoRun"
+      href: device-installation-application-started-through-autorun.md
+    - name: "Guidelines for Starting Device Installation Applications through Co-installers"
+      href: guidelines-for-starting-device-installation-applications-through-co-in.md
+    - name: "Preloading Driver Packages"
+      href: preloading-driver-packages.md
+    - name: "Preinstalling Driver Packages"
+      href: preinstalling-driver-packages.md
+    - name: "Hardware-First Installation"
+      href: hardware-first-installation.md
+    - name: "Installing an In-box Driver or a Preinstalled Driver"
+      href: installing-an-in-box-driver-or-a-preinstalled-driver.md
+    - name: "Software-First Installation"
+      href: software-first-installation.md
+    - name: "Checking for In-Progress Installations"
+      href: checking-for-in-progress-installations.md
+    - name: "Determining Whether a Device Is Plugged In"
+      href: determining-whether-a-device-is-plugged-in.md
     - name: "Uninstalling Devices and Driver Packages"
       href: uninstalling-devices-and-driver-packages.md
-      items: 
-      - name: "How Devices and Driver Packages are Uninstalled"
-        href: how-devices-and-driver-packages-are-uninstalled.md
-      - name: "Using Device Manager to Uninstall Devices and Driver Packages"
-        href: using-device-manager-to-uninstall-devices-and-driver-packages.md
-      - name: "Using SetupAPI to Uninstall Devices and Driver Packages"
-        href: using-setupapi-to-uninstall-devices-and-driver-packages.md
-    - name: "Updating Driver Files"
-      href: updating-driver-files.md
-  - name: "Device and Driver Installation Advanced Topics"
-    href: device-and-driver-installation-advanced-topics.md
+    - name: "How Devices and Driver Packages are Uninstalled"
+      href: how-devices-and-driver-packages-are-uninstalled.md
+    - name: "Using Device Manager to Uninstall Devices and Driver Packages"
+      href: using-device-manager-to-uninstall-devices-and-driver-packages.md
+    - name: "Using SetupAPI to Uninstall Devices and Driver Packages"
+      href: using-setupapi-to-uninstall-devices-and-driver-packages.md
+  - name: "Updating Driver Files"
+    href: updating-driver-files.md
+  - name: "Creating Secure Device Installations"
+    href: creating-secure-device-installations.md
+  - name: "Using a Component INF File"
+    href: using-a-component-inf-file.md
+  - name: "Pairing a driver with a Universal Windows Platform (UWP) app"
+    href: pairing-app-and-driver-versions.md
+  - name: "Device Identification"
     items: 
-    - name: "Creating Secure Device Installations"
-      href: creating-secure-device-installations.md
-    - name: "Using a Component INF File"
-      href: using-a-component-inf-file.md
-    - name: "Pairing a driver with a Universal Windows Platform (UWP) app"
-      href: pairing-app-and-driver-versions.md
-    - name: "Device Identification and Properties"
-      href: device-identification-and-properties.md
+      - name: "Device Identification Strings"
+        href: device-identification-strings.md
+      - name: "Plug and Play ID - PNPID Request"
+        href: plug-and-play-id---pnpid-request.md
+      - name: "Device ID"
+        href: device-ids.md
+      - name: "Hardware ID"
+        href: hardware-ids.md
+      - name: "Compatible ID"
+        href: compatible-ids.md
+      - name: "Instance ID"
+        href: instance-ids.md
+      - name: "Device Instance ID"
+        href: device-instance-ids.md
+      - name: "Container ID"
+        href: container-ids.md
+      - name: "Overview of Container IDs"
+        href: overview-of-container-ids.md
+      - name: "How Container IDs are Generated"
+        href: how-container-ids-are-generated.md
+      - name: "Container IDs Generated from a Bus-Specific Unique ID"
+        href: container-ids-generated-from-a-bus-specific-unique-id.md
+      - name: "How USB Devices are Assigned Container IDs"
+        href: how-usb-devices-are-assigned-container-ids.md
+      - name: "Using ACPI to Configure USB Ports on a Computer"
+        href: using-acpi-to-configure-usb-ports-on-a-computer.md
+      - name: "Best Practices for Supporting Container IDs on USB Devices"
+        href: best-practices-for-supporting-container-ids-on-usb-devices.md
+      - name: "Using Microsoft OS ContainerID Descriptors"
+        href: using-microsoft-os-containerid-descriptors.md
+      - name: "Using the USB Removable Capability for Device Container Grouping"
+        href: using-the-usb-removable-capability-for-device-container-grouping.md
+      - name: "Avoiding Device Container Conflicts"
+        href: avoiding-device-container-conflicts.md
+      - name: "Container IDs for Bluetooth Devices"
+        href: container-ids-for-bluetooth-devices.md
+      - name: "Container IDs for PnP-X Devices"
+        href: container-ids-for-pnp-x-devices.md
+      - name: "Container IDs for DPWS Devices"
+        href: container-ids-for-dpws-devices.md
+      - name: "Container IDs for UPnP Devices"
+        href: container-ids-for-upnp-devices.md
+      - name: "Container IDs for 1394 Devices"
+        href: container-ids-for-1394-devices.md
+      - name: "Container IDs for eSATA Devices"
+        href: container-ids-for-esata-devices.md
+      - name: "Container IDs for PCI Express Devices"
+        href: container-ids-for-pci-express-devices.md
+      - name: "Container IDs Generated from the Removable Device Capability"
+        href: container-ids-generated-from-the-removable-device-capability.md
+      - name: "Overview of the Removable Device Capability"
+        href: overview-of-the-removable-device-capability.md
+      - name: "How Container IDs are Generated from the Removable Device Capability"
+        href: how-container-ids-are-generated-from-the-removable-device-capability.md
+      - name: "Container IDs Generated from a Removable Device Capability Override"
+        href: container-ids-generated-from-a-removable-device-capability-override.md
+      - name: "Using ACPI for Device Container Grouping"
+        href: using-acpi-for-device-container-grouping.md
+      - name: "Verifying the Implementation of Container IDs"
+        href: verifying-the-implementation-of-container-ids.md
+      - name: "Troubleshooting the Implementation of Container IDs"
+        href: troubleshooting-the-implementation-of-container-ids.md
+      - name: "Generic Identifiers"
+        href: generic-identifiers.md
+      - name: "Identifiers for PCI Devices"
+        href: identifiers-for-pci-devices.md
+      - name: "Identifiers for SCSI Devices"
+        href: identifiers-for-scsi-devices.md
+      - name: "Identifiers for IDE Devices"
+        href: identifiers-for-ide-devices.md
+      - name: "Identifiers for PCMCIA Devices"
+        href: identifiers-for-pcmcia-devices.md
+      - name: "Identifiers for ISAPNP Devices"
+        href: identifiers-for-isapnp-devices.md
+      - name: "Identifiers for 1394 Devices"
+        href: identifiers-for-1394-devices.md
+      - name: "Identifiers for Secure Digital (SD) Devices"
+        href: identifiers-for-secure-digital--sd--devices.md
+      - name: "Identifiers for USB Devices"
+        href: identifiers-for-usb-devices.md
+      - name: "Standard USB Identifiers"
+        href: standard-usb-identifiers.md
+      - name: "Identifiers Generated by USBSTOR.SYS"
+        href: identifiers-generated-by-usbstor-sys.md
+      - name: "Identifiers Generated by USBPRINT.SYS"
+        href: identifiers-generated-by-usbprint-sys.md
+  - name: "Device Classes"
+    items: 
+      - name: "Overview of Device Setup Classes"
+        href: overview-of-device-setup-classes.md
+      - name: "Creating a New Device Setup Class"
+        href: creating-a-new-device-setup-class.md
+      - name: "Overview of Device Interface Classes"
+        href: overview-of-device-interface-classes.md
+      - name: "Registering a Device Interface Class"
+        href: registering-a-device-interface-class.md
+      - name: "Enabling and Disabling a Device Interface Instance"
+        href: enabling-and-disabling-a-device-interface-instance.md
+      - name: "Using a Device Interface"
+        href: using-a-device-interface.md
+      - name: "Registering for Notification of Device Interface Arrival and Device Removal"
+        href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
+      - name: "Setup Classes Versus Interface Classes"
+        href: setup-classes-versus-interface-classes.md
+      - name: "Device Information Sets"
+        href: device-information-sets.md
+  - name: "Device Properties"
+    items: 
+    - name: "Overview of Device Properties"
+      href: device-properties.md
+    - name: "Unified Model (Windows Vista and later)"
       items: 
-      - name: "Device Identification"
-        href: device-identification.md
+      - name: "Unified Device Property Model"
+        href: unified-device-property-model--windows-vista-and-later-.md
+      - name: "System-Defined Device Properties"
+        href: system-defined-device-properties2.md
+      - name: "Creating Custom Device Properties"
+        href: creating-custom-device-properties.md
+      - name: "Property Keys"
+        href: property-keys.md
+      - name: "Property-Data-Type Identifiers"
+        href: property-data-type-identifiers.md
+      - name: "Property Value Requirements"
+        href: property-value-requirements.md
+      - name: "Properties and Related System-Defined Items"
+        href: properties-and-related-system-defined-items.md
+      - name: "INF File Entry Values That Modify Device Properties"
+        href: inf-file-entry-values-that-modify-device-properties--windows-vista-and.md
+      - name: "SetupAPI"
         items: 
-        - name: "Device Identification Strings"
-          href: device-identification-strings.md
-          items: 
-          - name: "Plug and Play ID - PNPID Request"
-            href: plug-and-play-id---pnpid-request.md
-          - name: "Device ID"
-            href: device-ids.md
-          - name: "Hardware ID"
-            href: hardware-ids.md
-          - name: "Compatible ID"
-            href: compatible-ids.md
-          - name: "Instance ID"
-            href: instance-ids.md
-          - name: "Device Instance ID"
-            href: device-instance-ids.md
-          - name: "Container ID"
-            href: container-ids.md
-            items: 
-            - name: "Overview of Container IDs"
-              href: overview-of-container-ids.md
-            - name: "How Container IDs are Generated"
-              href: how-container-ids-are-generated.md
-              items: 
-              - name: "Container IDs Generated from a Bus-Specific Unique ID"
-                href: container-ids-generated-from-a-bus-specific-unique-id.md
-                items: 
-                - name: "Container IDs for USB Devices"
-                  href: container-ids-for-usb-devices.md
-                  items: 
-                  - name: "How USB Devices are Assigned Container IDs"
-                    href: how-usb-devices-are-assigned-container-ids.md
-                  - name: "Using ACPI to Configure USB Ports on a Computer"
-                    href: using-acpi-to-configure-usb-ports-on-a-computer.md
-                  - name: "Best Practices for Supporting Container IDs on USB Devices"
-                    href: best-practices-for-supporting-container-ids-on-usb-devices.md
-                    items: 
-                    - name: "Using Microsoft OS ContainerID Descriptors"
-                      href: using-microsoft-os-containerid-descriptors.md
-                    - name: "Using the USB Removable Capability for Device Container Grouping"
-                      href: using-the-usb-removable-capability-for-device-container-grouping.md
-                    - name: "Avoiding Device Container Conflicts"
-                      href: avoiding-device-container-conflicts.md
-                - name: "Container IDs for Bluetooth Devices"
-                  href: container-ids-for-bluetooth-devices.md
-                - name: "Container IDs for PnP-X Devices"
-                  href: container-ids-for-pnp-x-devices.md
-                  items: 
-                  - name: "Container IDs for DPWS Devices"
-                    href: container-ids-for-dpws-devices.md
-                  - name: "Container IDs for UPnP Devices"
-                    href: container-ids-for-upnp-devices.md
-                - name: "Container IDs for 1394 Devices"
-                  href: container-ids-for-1394-devices.md
-                - name: "Container IDs for eSATA Devices"
-                  href: container-ids-for-esata-devices.md
-                - name: "Container IDs for PCI Express Devices"
-                  href: container-ids-for-pci-express-devices.md
-              - name: "Container IDs Generated from the Removable Device Capability"
-                href: container-ids-generated-from-the-removable-device-capability.md
-                items: 
-                - name: "Overview of the Removable Device Capability"
-                  href: overview-of-the-removable-device-capability.md
-                - name: "How Container IDs are Generated from the Removable Device Capability"
-                  href: how-container-ids-are-generated-from-the-removable-device-capability.md
-              - name: "Container IDs Generated from a Removable Device Capability Override"
-                href: container-ids-generated-from-a-removable-device-capability-override.md
-              - name: "Using ACPI for Device Container Grouping"
-                href: using-acpi-for-device-container-grouping.md
-            - name: "Verifying the Implementation of Container IDs"
-              href: verifying-the-implementation-of-container-ids.md
-            - name: "Troubleshooting the Implementation of Container IDs"
-              href: troubleshooting-the-implementation-of-container-ids.md
-          - name: "Device Identifier Formats"
-            href: device-identifier-formats.md
-            items: 
-            - name: "Generic Identifiers"
-              href: generic-identifiers.md
-            - name: "Identifiers for PCI Devices"
-              href: identifiers-for-pci-devices.md
-            - name: "Identifiers for SCSI Devices"
-              href: identifiers-for-scsi-devices.md
-            - name: "Identifiers for IDE Devices"
-              href: identifiers-for-ide-devices.md
-            - name: "Identifiers for PCMCIA Devices"
-              href: identifiers-for-pcmcia-devices.md
-            - name: "Identifiers for ISAPNP Devices"
-              href: identifiers-for-isapnp-devices.md
-            - name: "Identifiers for 1394 Devices"
-              href: identifiers-for-1394-devices.md
-            - name: "Identifiers for Secure Digital (SD) Devices"
-              href: identifiers-for-secure-digital--sd--devices.md
-            - name: "Identifiers for USB Devices"
-              href: identifiers-for-usb-devices.md
-              items: 
-              - name: "Standard USB Identifiers"
-                href: standard-usb-identifiers.md
-              - name: "Special USB Identifiers"
-                href: special-usb-identifiers.md
-                items: 
-                - name: "Identifiers Generated by USBSTOR.SYS"
-                  href: identifiers-generated-by-usbstor-sys.md
-                - name: "Identifiers Generated by USBPRINT.SYS"
-                  href: identifiers-generated-by-usbprint-sys.md
-        - name: "Device Classes"
-          href: device-classes.md
-          items: 
-          - name: "Device Setup Classes"
-            href: device-setup-classes.md
-            items: 
-            - name: "Overview of Device Setup Classes"
-              href: overview-of-device-setup-classes.md
-            - name: "Creating a New Device Setup Class"
-              href: creating-a-new-device-setup-class.md
-          - name: "Device Interface Classes"
-            href: device-interface-classes.md
-            items: 
-            - name: "Overview of Device Interface Classes"
-              href: overview-of-device-interface-classes.md
-            - name: "Registering a Device Interface Class"
-              href: registering-a-device-interface-class.md
-            - name: "Enabling and Disabling a Device Interface Instance"
-              href: enabling-and-disabling-a-device-interface-instance.md
-            - name: "Using a Device Interface"
-              href: using-a-device-interface.md
-            - name: "Registering for Notification of Device Interface Arrival and Device Removal"
-              href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
-          - name: "Setup Classes Versus Interface Classes"
-            href: setup-classes-versus-interface-classes.md
-          - name: "Device Information Sets"
-            href: device-information-sets.md
-      - name: "Device Properties"
-        href: device-properties.md
-        items: 
-        - name: "Unified Device Property Model"
-          href: unified-device-property-model--windows-vista-and-later-.md
-          items: 
-          - name: "System-Defined Device Properties"
-            href: system-defined-device-properties2.md
-          - name: "Creating Custom Device Properties"
-            href: creating-custom-device-properties.md
-          - name: "Property Keys"
-            href: property-keys.md
-          - name: "Property-Data-Type Identifiers"
-            href: property-data-type-identifiers.md
-          - name: "Property Value Requirements"
-            href: property-value-requirements.md
-          - name: "Properties and Related System-Defined Items"
-            href: properties-and-related-system-defined-items.md
-          - name: "INF File Entry Values That Modify Device Properties"
-            href: inf-file-entry-values-that-modify-device-properties--windows-vista-and.md
-          - name: "Using SetupAPI to Access Device Properties"
-            href: using-setupapi-to-access-device-properties--windows-vista-and-later-.md
-            items: 
-            - name: "Accessing Device Instance Properties"
-              href: accessing-device-instance-properties--windows-vista-and-later-.md
-              items: 
-              - name: "Determining Which Properties Are Set for a Device Instance"
-                href: determining-which-properties-are-set-for-a-device-instance.md
-              - name: "Retrieving A Device Instance Property Value"
-                href: retrieving-a-device-instance-property-value.md
-              - name: "Setting a Device Instance Property Value"
-                href: setting-a-device-instance-property-value.md
-            - name: "Accessing Device Class Properties"
-              href: accessing-device-class-properties--windows-vista-and-later-.md
-              items: 
-              - name: "Determining Which Properties Are Set for a Device Class"
-                href: determining-which-properties-are-set-for-a-device-class.md
-              - name: "Retrieving a Device Class Property Value"
-                href: retrieving-a-device-class-property-value.md
-              - name: "Setting a Device Class Property Value"
-                href: setting-a-device-class-property-value.md
-            - name: "Accessing Device Interface Properties"
-              href: accessing-device-interface-properties--windows-vista-and-later-.md
-              items: 
-              - name: "Determining Which Properties are Set for a Device Interface"
-                href: determining-which-properties-are-set-for-a-device-interface.md
-              - name: "Retrieving a Device Interface Property Value"
-                href: retrieving-a-device-interface-property-value.md
-              - name: "Setting a Device Interface Property Value"
-                href: setting-a-device-interface-property-value.md
-          - name: "Using the INF AddProperty Directive and the INF DelProperty Directive"
-            href: using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md
-        - name: "Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)"
-          href: device-property-representations--windows-server-2003--windows-xp--and-.md
-          items: 
-          - name: "INF File Entry Values That Modify Device Properties"
-            href: inf-file-entry-values-that-modify-device-properties.md
-          - name: "Using SetupAPI and Configuration Manager to Access Device Properties"
-            href: using-setupapi-and-configuration-manager-to-access-device-properties.md
-            items: 
-            - name: "Accessing Device Instance SPDRP_Xxx Properties"
-              href: accessing-device-instance-spdrp-xxx-properties.md
-            - name: "Retrieving a Device Instance Identifier"
-              href: retrieving-a-device-instance-identifier.md
-            - name: "Accessing Device Driver Properties"
-              href: accessing-device-driver-properties.md
-            - name: "Retrieving the Status and Problem Code for a Device Instance"
-              href: retrieving-the-status-and-problem-code-for-a-device-instance.md
-            - name: "Retrieving Device Relations"
-              href: retrieving-device-relations.md
-            - name: "Accessing Device Setup Class Properties"
-              href: accessing-device-setup-class-properties.md
-              items: 
-              - name: "Retrieving SPCRP_Xxx Properties"
-                href: retrieving-spcrp-xxx-properties.md
-              - name: "Setting SPCRP_Xxx Properties"
-                href: setting-spcrp-xxx-properties.md
-              - name: "Accessing the Friendly Name and Class Name of a Device Setup Class"
-                href: accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md
-              - name: "Accessing Icon Properties of a Device Setup Class"
-                href: accessing-icon-properties-of-a-device-setup-class.md
-              - name: "Accessing Registry Entry Values Under the Class Registry Key"
-                href: accessing-registry-entry-values-under-the-class-registry-key.md
-              - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
-                href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
-            - name: "Accessing Device Interface Class Properties"
-              href: accessing-device-interface-class-properties.md
-            - name: "Accessing Device Interface Properties"
-              href: accessing-device-interface-properties.md
-            - name: "Accessing Custom Device Properties"
-              href: accessing-custom-device-properties.md
+        - name: "Using SetupAPI to Access Device Properties"
+          href: using-setupapi-to-access-device-properties--windows-vista-and-later-.md
+        - name: "Accessing Device Instance Properties"
+          href: accessing-device-instance-properties--windows-vista-and-later-.md
+        - name: "Determining Which Properties Are Set for a Device Instance"
+          href: determining-which-properties-are-set-for-a-device-instance.md
+        - name: "Retrieving A Device Instance Property Value"
+          href: retrieving-a-device-instance-property-value.md
+        - name: "Setting a Device Instance Property Value"
+          href: setting-a-device-instance-property-value.md
+        - name: "Accessing Device Class Properties"
+          href: accessing-device-class-properties--windows-vista-and-later-.md
+        - name: "Determining Which Properties Are Set for a Device Class"
+          href: determining-which-properties-are-set-for-a-device-class.md
+        - name: "Retrieving a Device Class Property Value"
+          href: retrieving-a-device-class-property-value.md
+        - name: "Setting a Device Class Property Value"
+          href: setting-a-device-class-property-value.md
+        - name: "Accessing Device Interface Properties"
+          href: accessing-device-interface-properties--windows-vista-and-later-.md
+        - name: "Determining Which Properties are Set for a Device Interface"
+          href: determining-which-properties-are-set-for-a-device-interface.md
+        - name: "Retrieving a Device Interface Property Value"
+          href: retrieving-a-device-interface-property-value.md
+        - name: "Setting a Device Interface Property Value"
+          href: setting-a-device-interface-property-value.md
+        - name: "Using the INF AddProperty Directive and the INF DelProperty Directive"
+          href: using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md
+    - name: "Device Property Model (Windows Server 2003, Windows XP, and Windows 2000)"
+      items: 
+      - name: "Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)"
+        href: device-property-representations--windows-server-2003--windows-xp--and-.md
+      - name: "INF File Entry Values That Modify Device Properties"
+        href: inf-file-entry-values-that-modify-device-properties.md
+      - name: "Using SetupAPI and Configuration Manager to Access Device Properties"
+        href: using-setupapi-and-configuration-manager-to-access-device-properties.md
+      - name: "Accessing Device Instance SPDRP_Xxx Properties"
+        href: accessing-device-instance-spdrp-xxx-properties.md
+      - name: "Retrieving a Device Instance Identifier"
+        href: retrieving-a-device-instance-identifier.md
+      - name: "Accessing Device Driver Properties"
+        href: accessing-device-driver-properties.md
+      - name: "Retrieving the Status and Problem Code for a Device Instance"
+        href: retrieving-the-status-and-problem-code-for-a-device-instance.md
+      - name: "Retrieving Device Relations"
+        href: retrieving-device-relations.md
+      - name: "Accessing Device Setup Class Properties"
+        href: accessing-device-setup-class-properties.md
+      - name: "Retrieving SPCRP_Xxx Properties"
+        href: retrieving-spcrp-xxx-properties.md
+      - name: "Setting SPCRP_Xxx Properties"
+        href: setting-spcrp-xxx-properties.md
+      - name: "Accessing the Friendly Name and Class Name of a Device Setup Class"
+        href: accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md
+      - name: "Accessing Icon Properties of a Device Setup Class"
+        href: accessing-icon-properties-of-a-device-setup-class.md
+      - name: "Accessing Registry Entry Values Under the Class Registry Key"
+        href: accessing-registry-entry-values-under-the-class-registry-key.md
+      - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
+        href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
+      - name: "Accessing Device Interface Class Properties"
+        href: accessing-device-interface-class-properties.md
+      - name: "Accessing Device Interface Properties"
+        href: accessing-device-interface-properties.md
+      - name: "Accessing Custom Device Properties"
+        href: accessing-custom-device-properties.md
+  - name: "System Restarts"
+    items: 
     - name: "Device Installations and System Restarts"
       href: device-installations-and-system-restarts.md
-      items: 
-      - name: "Avoiding System Restarts during Device Installations"
-        href: avoiding-system-restarts-during-device-installations.md
-      - name: "Initiating System Restarts During Device Installations"
-        href: initiating-system-restarts-during-device-installations.md
+    - name: "Avoiding System Restarts during Device Installations"
+      href: avoiding-system-restarts-during-device-installations.md
+    - name: "Initiating System Restarts During Device Installations"
+      href: initiating-system-restarts-during-device-installations.md
     - name: "Device Installations on 64-Bit Systems"
       href: device-installations-on-64-bit-systems.md
-    - name: "Drivers with Special Installation Requirements"
-      href: drivers-with-special-installation-requirements.md
-      items: 
-      - name: "Installing a Boot-Start Driver"
-        href: installing-a-boot-start-driver.md
-      - name: "Installing a Filter Driver"
-        href: installing-a-filter-driver.md
-      - name: "Installing a Null Driver"
-        href: installing-a-null-driver.md
-      - name: "Installing a New Bus Driver"
-        href: installing-a-new-bus-driver.md
-        items: 
-        - name: "Using Custom Hardware IDs and Compatible IDs"
-          href: using-custom-hardware-ids-and-compatible-ids.md
-        - name: "Installing a New Device Setup Class for a Bus"
-          href: installing-a-new-device-setup-class-for-a-bus.md
-      - name: "Installing Private Builds of In-box Drivers"
-        href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
-        items: 
-        - name: "Overview of Installing Private Builds of In-box Drivers"
-          href: overview-of-installing-private-builds-of-in-box-drivers.md
-        - name: "Creating a Private Build of an In-box Driver"
-          href: creating-a-private-build-of-an-in-box-driver.md
-        - name: "Configuring Windows to Rank Driver Signatures Equally"
-          href: configuring-windows-to-rank-driver-signatures-equally.md
-        - name: "Installing the Updated Version of the Driver Package"
-          href: installing-the-updated-version-of-the-driver-package.md
-    - name: "Registry Trees and Keys for Devices and Drivers"
+  - name: "Registry"
+    items:
+    - name: "Registry Trees and Keys"
       href: registry-trees-and-keys.md
-      items: 
-      - name: "Registry Trees for Devices and Drivers"
-        href: overview-of-registry-trees-and-keys.md
-        items: 
-        - name: "HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree "
-          href: hklm-system-currentcontrolset-services-registry-tree.md
-        - name: "HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree"
-          href: hklm-system-currentcontrolset-control-registry-tree.md
-        - name: "HKLM\\SYSTEM\\CurrentControlSet\\Enum Registry Tree"
-          href: hklm-system-currentcontrolset-enum-registry-tree.md
-        - name: "HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles Registry Tree"
-          href: hklm-system-currentcontrolset-hardwareprofiles-registry-tree.md
-      - name: "RunOnce Registry Key"
-        href: runonce-registry-key.md
-      - name: "DeviceOverrides Registry Key"
-        href: deviceoverrides-registry-key.md
-        items: 
-        - name: "HardwareID Registry Subkey"
-          href: hardwareid-registry-subkey.md
-        - name: "CompatibleID Registry Subkey"
-          href: compatibleid-registry-subkey.md
-        - name: "LocationPaths Registry Subkey"
-          href: locationpaths-registry-subkey.md
-        - name: "ChildLocationPaths Registry Subkey"
-          href: childlocationpaths-registry-subkey.md
-        - name: "LocationPath Registry Subkey"
-          href: locationpath-registry-subkey.md
-        - name: "* Registry Subkey"
-          href: --registry-subkey.md
-    - name: "Troubleshooting Device and Driver Installations"
-      href: troubleshooting-device-and-driver-installations.md
-      items: 
-      - name: "Device Manager for makers of devices and drivers"
-        href: using-device-manager.md
-        items: 
-        - name: "Device Manager Error Messages"
-          href: device-manager-error-messages.md
-          items: 
-          - name: "CM_PROB_NOT_CONFIGURED"
-            href: cm-prob-not-configured.md
-          - name: "CM_PROB_OUT_OF_MEMORY"
-            href: cm-prob-out-of-memory.md
-          - name: "CM_PROB_INVALID_DATA"
-            href: cm-prob-invalid-data.md
-          - name: "CM_PROB_FAILED_START"
-            href: cm-prob-failed-start.md
-          - name: "CM_PROB_NORMAL_CONFLICT"
-            href: cm-prob-normal-conflict.md
-          - name: "CM_PROB_NEED_RESTART"
-            href: cm-prob-need-restart.md
-          - name: "CM_PROB_PARTIAL_LOG_CONF"
-            href: cm-prob-partial-log-conf.md
-          - name: "CM_PROB_REINSTALL"
-            href: cm-prob-reinstall.md
-          - name: "CM_PROB_REGISTRY"
-            href: cm-prob-registry.md
-          - name: "CM_PROB_WILL_BE_REMOVED"
-            href: cm-prob-will-be-removed.md
-          - name: "CM_PROB_DISABLED"
-            href: cm-prob-disabled.md
-          - name: "CM_PROB_DEVICE_NOT_THERE"
-            href: cm-prob-device-not-there.md
-          - name: "CM_PROB_FAILED_INSTALL"
-            href: cm-prob-failed-install.md
-          - name: "CM_PROB_HARDWARE_DISABLED"
-            href: cm-prob-hardware-disabled.md
-          - name: "CM_PROB_FAILED_ADD"
-            href: cm-prob-failed-add.md
-          - name: "CM_PROB_DISABLED_SERVICE"
-            href: cm-prob-disabled-service.md
-          - name: "CM_PROB_TRANSLATION_FAILED"
-            href: cm-prob-translation-failed.md
-          - name: "CM_PROB_NO_SOFTCONFIG"
-            href: cm-prob-no-softconfig.md
-          - name: "CM_PROB_BIOS_TABLE"
-            href: cm-prob-bios-table.md
-          - name: "CM_PROB_IRQ_TRANSLATION_FAILED"
-            href: cm-prob-irq-translation-failed.md
-          - name: "CM_PROB_FAILED_DRIVER_ENTRY"
-            href: cm-prob-failed-driver-entry.md
-          - name: "CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD"
-            href: cm-prob-driver-failed-prior-unload.md
-          - name: "CM_PROB_DRIVER_FAILED_LOAD"
-            href: cm-prob-driver-failed-load.md
-          - name: "CM_PROB_DRIVER_SERVICE_KEY_INVALID"
-            href: cm-prob-driver-service-key-invalid.md
-          - name: "CM_PROB_LEGACY_SERVICE_NO_DEVICES"
-            href: cm-prob-legacy-service-no-devices.md
-          - name: "CM_PROB_DUPLICATE_DEVICE"
-            href: cm-prob-duplicate-device.md
-          - name: "CM_PROB_FAILED_POST_START"
-            href: cm-prob-failed-post-start.md
-          - name: "CM_PROB_HALTED"
-            href: cm-prob-halted.md
-          - name: "CM_PROB_PHANTOM"
-            href: cm-prob-phantom.md
-          - name: "CM_PROB_SYSTEM_SHUTDOWN"
-            href: cm-prob-system-shutdown.md
-          - name: "CM_PROB_HELD_FOR_EJECT"
-            href: cm-prob-held-for-eject.md
-          - name: "CM_PROB_DRIVER_BLOCKED"
-            href: cm-prob-driver-blocked.md
-          - name: "CM_PROB_REGISTRY_TOO_LARGE"
-            href: cm-prob-registry-too-large.md
-          - name: "CM_PROB_SETPROPERTIES_FAILED"
-            href: cm-prob-setproperties-failed.md
-          - name: "CM_PROB_WAITING_ON_DEPENDENCY"
-            href: cm-prob-waiting-on-dependency.md
-          - name: "CM_PROB_UNSIGNED_DRIVER"
-            href: cm-prob-unsigned-driver.md
-          - name: "CM_PROB_USED_BY_DEBUGGER"
-            href: cm-prob-used-by-debugger.md
-          - name: "CM_PROB_DEVICE_RESET"
-            href: cm-prob-device-reset.md
-        - name: "Device Manager Details Tab"
-          href: device-manager-details-tab.md
-        - name: "Viewing Hidden Devices"
-          href: viewing-hidden-devices.md
-      - name: "SetupAPI Logging"
-        href: setupapi-logging--windows-vista-and-later-.md
-        items: 
-        - name: "SetupAPI Text Logs"
-          href: setupapi-text-logs.md
-          items: 
-          - name: "Format of a Text Log Header"
-            href: format-of-a-text-log-header.md
-          - name: "Format of a Text Log Section"
-            href: format-of-a-text-log-section.md
-            items: 
-            - name: "Format of a Text Log Section Header"
-              href: format-of-a-text-log-section-header.md
-            - name: "Format of a Text Log Section Body"
-              href: format-of-a-text-log-section-body.md
-            - name: "Format of a Text Log Section Footer"
-              href: format-of-a-text-log-section-footer.md
-          - name: "Format of Log Entries That Are Not Part of a Text Log Section"
-            href: format-of-log-entries-that-are-not-part-of-a-text-log-section.md
-        - name: "SetupAPI Logging Registry Settings"
-          href: setupapi-logging-registry-settings.md
-          items: 
-          - name: "Setting the Event Level for a Text Log"
-            href: setting-the-event-level-for-a-text-log.md
-          - name: "Enabling Event Categories for a Text Log"
-            href: enabling-event-categories-for-a-text-log.md
-          - name: "Setting the Directory Path of the Text Logs"
-            href: setting-the-directory-path-of-the-text-logs.md
-        - name: "Using the SetupAPI Logging Functions"
-          href: using-the-setupapi-logging-functions.md
-          items: 
-          - name: "Writing Log Entries in a Text Log"
-            href: writing-log-entries-in-a-text-log.md
-            items: 
-            - name: "Calling SetupWriteTextLog"
-              href: calling-setupwritetextlog.md
-              items: 
-              - name: "Writing an Information Log Entry"
-                href: writing-an-information-log-entry.md
-              - name: "Writing an Error or Warning Log Entry"
-                href: writing-an-error-or-warning-log-entry.md
-            - name: "Calling SetupWriteTextLogError"
-              href: calling-setupwritetextlogerror.md
-            - name: "Calling SetupWriteTextLogInfLine"
-              href: calling-setupwritetextloginfline.md
-          - name: "Writing Indented Log Entries"
-            href: writing-indented-log-entries.md
-          - name: "Log Tokens"
-            href: log-tokens.md
-          - name: "Setting and Getting a Log Token for a Thread"
-            href: setting-and-getting-a-log-token-for-a-thread.md
-      - name: "SetupAPI Logging (Windows Server 2003, Windows XP, and Windows 2000)"
-        href: setupapi-logging--windows-server-2003--windows-xp--and-windows-2000-.md
-        items: 
-        - name: "Setting SetupAPI Logging Levels"
-          href: setting-setupapi-logging-levels.md
-        - name: "Interpreting a Sample SetupAPI Log File"
-          href: interpreting-a-sample-setupapi-log-file.md
-      - name: "Debugging Device Installations"
-        href: debugging-device-installations--windows-vista-and-later-.md
-        items: 
-        - name: "Enabling Support for Debugging Device Installations"
-          href: enabling-support-for-debugging-device-installations.md
-        - name: "Debugging Device Installations with a User-mode Debugger"
-          href: debugging-device-installations-with-a-user-mode-debugger.md
-        - name: "Debugging Device Installations with the Kernel Debugger (KD)"
-          href: debugging-device-installations-with-the-kernel-debugger--kd-.md
-  - name: "Best Practices for Device and Driver Installation"
-    href: best-practices-for-device-installation.md
+    - name: "Registry Trees for Devices and Drivers"
+      href: overview-of-registry-trees-and-keys.md
+    - name: "HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree "
+      href: hklm-system-currentcontrolset-services-registry-tree.md
+    - name: "HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree"
+      href: hklm-system-currentcontrolset-control-registry-tree.md
+    - name: "HKLM\\SYSTEM\\CurrentControlSet\\Enum Registry Tree"
+      href: hklm-system-currentcontrolset-enum-registry-tree.md
+    - name: "HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles Registry Tree"
+      href: hklm-system-currentcontrolset-hardwareprofiles-registry-tree.md
+    - name: "RunOnce Registry Key"
+      href: runonce-registry-key.md
+    - name: "DeviceOverrides Registry Key"
+      href: deviceoverrides-registry-key.md
+    - name: "HardwareID Registry Subkey"
+      href: hardwareid-registry-subkey.md
+    - name: "CompatibleID Registry Subkey"
+      href: compatibleid-registry-subkey.md
+    - name: "LocationPaths Registry Subkey"
+      href: locationpaths-registry-subkey.md
+    - name: "ChildLocationPaths Registry Subkey"
+      href: childlocationpaths-registry-subkey.md
+    - name: "LocationPath Registry Subkey"
+      href: locationpath-registry-subkey.md
+    - name: "* Registry Subkey"
+      href: --registry-subkey.md
+- name: "INF Sections"
+  items: 
+  - name: "INF ClassInstall32 Section"
+    href: inf-classinstall32-section.md
+  - name: "INF ClassInstall32.Services Section"
+    href: inf-classinstall32-services-section.md
+  - name: "INF ControlFlags Section"
+    href: inf-controlflags-section.md
+  - name: "INF DDInstall Section"
+    href: inf-ddinstall-section.md
+  - name: "INF DDInstall.CoInstallers Section"
+    href: inf-ddinstall-coinstallers-section.md
+  - name: "INF DDInstall.Components Section"
+    href: inf-ddinstall-components-section.md
+  - name: "INF DDInstall.Events Section"
+    href: inf-ddinstall-events-section.md
+  - name: "INF DDInstall.FactDef Section"
+    href: inf-ddinstall-factdef-section.md
+  - name: "INF DDInstall.HW Section"
+    href: inf-ddinstall-hw-section.md
+  - name: "INF DDInstall.Interfaces Section"
+    href: inf-ddinstall-interfaces-section.md
+  - name: "INF DDInstall.LogConfigOverride Section"
+    href: inf-ddinstall-logconfigoverride-section.md
+  - name: "INF DDInstall.Services Section"
+    href: inf-ddinstall-services-section.md
+  - name: "INF DDInstall.Software Section"
+    href: inf-ddinstall-software-section.md
+  - name: "INF DDInstall.WMI Section"
+    href: inf-ddinstall-wmi-section.md
+  - name: "INF DefaultInstall Section"
+    href: inf-defaultinstall-section.md
+  - name: "INF DefaultInstall.Services Section"
+    href: inf-defaultinstall-services-section.md
+  - name: "INF DestinationDirs Section"
+    href: inf-destinationdirs-section.md
+  - name: "INF InterfaceInstall32 Section"
+    href: inf-interfaceinstall32-section.md
+  - name: "INF Manufacturer Section"
+    href: inf-manufacturer-section.md
+  - name: "INF Models Section"
+    href: inf-models-section.md
+  - name: "INF SignatureAttributes Section"
+    href: inf-signatureattributes-section.md
+  - name: "INF SourceDisksFiles Section"
+    href: inf-sourcedisksfiles-section.md
+  - name: "INF SourceDisksNames Section"
+    href: inf-sourcedisksnames-section.md
+  - name: "INF Strings Section"
+    href: inf-strings-section.md
+  - name: "INF Version Section"
+    href: inf-version-section.md
+- name: "INF Directives"
+  items: 
+  - name: "INF AddComponent Directive"
+    href: inf-addcomponent-directive.md
+  - name: "INF AddEventProvider Directive"
+    href: inf-addeventprovider-directive.md
+  - name: "INF AddInterface Directive"
+    href: inf-addinterface-directive.md
+  - name: "INF AddPowerSetting Directive"
+    href: inf-addpowersetting-directive.md
+  - name: "INF AddProperty Directive"
+    href: inf-addproperty-directive.md
+  - name: "INF AddReg Directive"
+    href: inf-addreg-directive.md
+  - name: "INF AddService Directive"
+    href: inf-addservice-directive.md
+  - name: "INF AddSoftware Directive"
+    href: inf-addsoftware-directive.md
+  - name: "INF BitReg Directive"
+    href: inf-bitreg-directive.md
+  - name: "INF CopyFiles Directive"
+    href: inf-copyfiles-directive.md
+  - name: "INF CopyINF Directive"
+    href: inf-copyinf-directive.md
+  - name: "INF DelFiles Directive"
+    href: inf-delfiles-directive.md
+  - name: "INF DelProperty Directive"
+    href: inf-delproperty-directive.md
+  - name: "INF DelReg Directive"
+    href: inf-delreg-directive.md
+  - name: "INF DelService Directive"
+    href: inf-delservice-directive.md
+  - name: "INF DriverVer Directive"
+    href: inf-driverver-directive.md
+  - name: "INF FeatureScore Directive"
+    href: inf-featurescore-directive.md
+  - name: "INF HardwareId Directive"
+    href: inf-hardwareid-directive.md
+  - name: "INF Ini2Reg Directive"
+    href: inf-ini2reg-directive.md
+  - name: "INF LogConfig Directive"
+    href: inf-logconfig-directive.md
+  - name: "INF ProfileItems Directive"
+    href: inf-profileitems-directive.md
+  - name: "INF Reboot Directive"
+    href: inf-reboot-directive.md
+  - name: "INF RegisterDlls Directive"
+    href: inf-registerdlls-directive.md
+  - name: "INF RenFiles Directive"
+    href: inf-renfiles-directive.md
+  - name: "INF UnregisterDlls Directive"
+    href: inf-unregisterdlls-directive.md
+  - name: "INF UpdateIniFields Directive"
+    href: inf-updateinifields-directive.md
+  - name: "INF UpdateInis Directive"
+    href: inf-updateinis-directive.md
+- name: "Best Practices"
+  items: 
+  - name: "Accessing Device Properties"
+    href: accessing-device-properties.md
+  - name: "Rules for Modifying Device Properties"
+    href: modifying-device-properties.md
+  - name: "Accessing and Modifying Files"
+    href: accessing-and-modifying-files.md
+  - name: "Accessing Registry Keys Safely"
+    href: accessing-registry-keys-safely.md
+  - name: "Opening a Device's Hardware Key"
+    href: opening-a-device-s-hardware-key.md
+  - name: "Opening a Device's Software Key"
+    href: opening-a-device-s-software-key.md
+  - name: "Modifying Registry Values in a Device's Software Key"
+    href: modifying-registry-values-in-a-device-s-software-key-.md
+  - name: "Enumerating Installed Device Setup Classes"
+    href: enumerating-installed-device-setup-classes.md
+  - name: "Opening Registry Keys for a Device Setup Class"
+    href: opening-registry-keys-for-a-device-setup-class.md
+  - name: "Opening Software Keys for All Devices in a Setup Class"
+    href: opening-software-keys-for-all-devices-in-a-setup-class.md
+  - name: "Enumerating Installed Device Interfaces"
+    href: enumerating-installed-device-interface-classes.md
+  - name: "Accessing the Properties of Installed Device Interfaces"
+    href: accessing-the-properties-of-installed-device-interface-classes.md
+  - name: "Modifying Registry Keys by Class Installers and Co-installers"
+    href: modifying-registry-keys-by-class-installers-and-co-installers.md
+  - name: "Modifying Registry Values by Class Installers and Co-installers"
+    href: modifying-registry-values-by-class-installers-and-co-installers.md
+  - name: "Deleting the Registry Keys of a Device"
+    href: deleting-the-registry-keys-of-a-device.md
+  - name: "Calling SetupAPI Functions"
+    href: calling-setupapi-functions.md
+  - name: "Enumerating Installed Devices"
+    href: enumerating-installed-devices.md
+  - name: "General Guidelines for Device and Driver Installation"
+    href: general-guidelines-for-device-and-driver-installation.md
+  - name: "Porting code from SetupApi to CfgMgr32"
+    href: porting-from-setupapi-to-cfgmgr32.md
+  - name: "Writing Class Installers and Co-Installers"
+    href: writing-class-installers-and-co-installers.md
+  - name: "Writing INF Files"
+    href: writing-inf-files.md
+  - name: "Installing a Boot-Start Driver"
+    href: installing-a-boot-start-driver.md
+  - name: "Installing a Filter Driver"
+    href: installing-a-filter-driver.md
+  - name: "Installing a Null Driver"
+    href: installing-a-null-driver.md
+  - name: "Installing a New Bus Driver"
+    href: installing-a-new-bus-driver.md
+  - name: "Using Custom Hardware IDs and Compatible IDs"
+    href: using-custom-hardware-ids-and-compatible-ids.md
+  - name: "Installing a New Device Setup Class for a Bus"
+    href: installing-a-new-device-setup-class-for-a-bus.md
+  - name: "Installing Private Builds of In-box Drivers"
+    href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
+  - name: "Overview of Installing Private Builds of In-box Drivers"
+    href: overview-of-installing-private-builds-of-in-box-drivers.md
+  - name: "Creating a Private Build of an In-box Driver"
+    href: creating-a-private-build-of-an-in-box-driver.md
+  - name: "Configuring Windows to Rank Driver Signatures Equally"
+    href: configuring-windows-to-rank-driver-signatures-equally.md
+  - name: "Installing the Updated Version of the Driver Package"
+    href: installing-the-updated-version-of-the-driver-package.md
+- name: "Troubleshooting"
+  items: 
+  - name: "Troubleshooting Device and Driver Installations"
+    href: troubleshooting-device-and-driver-installations.md
+  - name: "Device Manager for makers of devices and drivers"
+    href: using-device-manager.md
+  - name: "Device Manager Error Messages"
+    href: device-manager-error-messages.md
+  - name: "CM_PROB_NOT_CONFIGURED"
+    href: cm-prob-not-configured.md
+  - name: "CM_PROB_OUT_OF_MEMORY"
+    href: cm-prob-out-of-memory.md
+  - name: "CM_PROB_INVALID_DATA"
+    href: cm-prob-invalid-data.md
+  - name: "CM_PROB_FAILED_START"
+    href: cm-prob-failed-start.md
+  - name: "CM_PROB_NORMAL_CONFLICT"
+    href: cm-prob-normal-conflict.md
+  - name: "CM_PROB_NEED_RESTART"
+    href: cm-prob-need-restart.md
+  - name: "CM_PROB_PARTIAL_LOG_CONF"
+    href: cm-prob-partial-log-conf.md
+  - name: "CM_PROB_REINSTALL"
+    href: cm-prob-reinstall.md
+  - name: "CM_PROB_REGISTRY"
+    href: cm-prob-registry.md
+  - name: "CM_PROB_WILL_BE_REMOVED"
+    href: cm-prob-will-be-removed.md
+  - name: "CM_PROB_DISABLED"
+    href: cm-prob-disabled.md
+  - name: "CM_PROB_DEVICE_NOT_THERE"
+    href: cm-prob-device-not-there.md
+  - name: "CM_PROB_FAILED_INSTALL"
+    href: cm-prob-failed-install.md
+  - name: "CM_PROB_HARDWARE_DISABLED"
+    href: cm-prob-hardware-disabled.md
+  - name: "CM_PROB_FAILED_ADD"
+    href: cm-prob-failed-add.md
+  - name: "CM_PROB_DISABLED_SERVICE"
+    href: cm-prob-disabled-service.md
+  - name: "CM_PROB_TRANSLATION_FAILED"
+    href: cm-prob-translation-failed.md
+  - name: "CM_PROB_NO_SOFTCONFIG"
+    href: cm-prob-no-softconfig.md
+  - name: "CM_PROB_BIOS_TABLE"
+    href: cm-prob-bios-table.md
+  - name: "CM_PROB_IRQ_TRANSLATION_FAILED"
+    href: cm-prob-irq-translation-failed.md
+  - name: "CM_PROB_FAILED_DRIVER_ENTRY"
+    href: cm-prob-failed-driver-entry.md
+  - name: "CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD"
+    href: cm-prob-driver-failed-prior-unload.md
+  - name: "CM_PROB_DRIVER_FAILED_LOAD"
+    href: cm-prob-driver-failed-load.md
+  - name: "CM_PROB_DRIVER_SERVICE_KEY_INVALID"
+    href: cm-prob-driver-service-key-invalid.md
+  - name: "CM_PROB_LEGACY_SERVICE_NO_DEVICES"
+    href: cm-prob-legacy-service-no-devices.md
+  - name: "CM_PROB_DUPLICATE_DEVICE"
+    href: cm-prob-duplicate-device.md
+  - name: "CM_PROB_FAILED_POST_START"
+    href: cm-prob-failed-post-start.md
+  - name: "CM_PROB_HALTED"
+    href: cm-prob-halted.md
+  - name: "CM_PROB_PHANTOM"
+    href: cm-prob-phantom.md
+  - name: "CM_PROB_SYSTEM_SHUTDOWN"
+    href: cm-prob-system-shutdown.md
+  - name: "CM_PROB_HELD_FOR_EJECT"
+    href: cm-prob-held-for-eject.md
+  - name: "CM_PROB_DRIVER_BLOCKED"
+    href: cm-prob-driver-blocked.md
+  - name: "CM_PROB_REGISTRY_TOO_LARGE"
+    href: cm-prob-registry-too-large.md
+  - name: "CM_PROB_SETPROPERTIES_FAILED"
+    href: cm-prob-setproperties-failed.md
+  - name: "CM_PROB_WAITING_ON_DEPENDENCY"
+    href: cm-prob-waiting-on-dependency.md
+  - name: "CM_PROB_UNSIGNED_DRIVER"
+    href: cm-prob-unsigned-driver.md
+  - name: "CM_PROB_USED_BY_DEBUGGER"
+    href: cm-prob-used-by-debugger.md
+  - name: "CM_PROB_DEVICE_RESET"
+    href: cm-prob-device-reset.md
+  - name: "Device Manager Details Tab"
+    href: device-manager-details-tab.md
+  - name: "Viewing Hidden Devices"
+    href: viewing-hidden-devices.md
+  - name: "SetupAPI Logging"
+    href: setupapi-logging--windows-vista-and-later-.md
+  - name: "SetupAPI Text Logs"
+    href: setupapi-text-logs.md
+  - name: "Format of a Text Log Header"
+    href: format-of-a-text-log-header.md
+  - name: "Format of a Text Log Section"
+    href: format-of-a-text-log-section.md
+  - name: "Format of a Text Log Section Header"
+    href: format-of-a-text-log-section-header.md
+  - name: "Format of a Text Log Section Body"
+    href: format-of-a-text-log-section-body.md
+  - name: "Format of a Text Log Section Footer"
+    href: format-of-a-text-log-section-footer.md
+  - name: "Format of Log Entries That Are Not Part of a Text Log Section"
+    href: format-of-log-entries-that-are-not-part-of-a-text-log-section.md
+  - name: "SetupAPI Logging Registry Settings"
+    href: setupapi-logging-registry-settings.md
+  - name: "Setting the Event Level for a Text Log"
+    href: setting-the-event-level-for-a-text-log.md
+  - name: "Enabling Event Categories for a Text Log"
+    href: enabling-event-categories-for-a-text-log.md
+  - name: "Setting the Directory Path of the Text Logs"
+    href: setting-the-directory-path-of-the-text-logs.md
+  - name: "Using the SetupAPI Logging Functions"
+    href: using-the-setupapi-logging-functions.md
+  - name: "Writing Log Entries in a Text Log"
+    href: writing-log-entries-in-a-text-log.md
+  - name: "Calling SetupWriteTextLog"
+    href: calling-setupwritetextlog.md
+  - name: "Writing an Information Log Entry"
+    href: writing-an-information-log-entry.md
+  - name: "Writing an Error or Warning Log Entry"
+    href: writing-an-error-or-warning-log-entry.md
+  - name: "Calling SetupWriteTextLogError"
+    href: calling-setupwritetextlogerror.md
+  - name: "Calling SetupWriteTextLogInfLine"
+    href: calling-setupwritetextloginfline.md
+  - name: "Writing Indented Log Entries"
+    href: writing-indented-log-entries.md
+  - name: "Log Tokens"
+    href: log-tokens.md
+  - name: "Setting and Getting a Log Token for a Thread"
+    href: setting-and-getting-a-log-token-for-a-thread.md
+  - name: "SetupAPI Logging"
     items: 
-    - name: "Accessing and Modifying Device Properties"
-      href: accessing-and-modifying-device-properties.md
-      items: 
-      - name: "Accessing Device Properties"
-        href: accessing-device-properties.md
-      - name: "Rules for Modifying Device Properties"
-        href: modifying-device-properties.md
-    - name: "Accessing and Modifying Files"
-      href: accessing-and-modifying-files.md
-    - name: "Accessing and Modifying Registry Values"
-      href: accessing-and-modifying-registry-values.md
-      items: 
-      - name: "Accessing Registry Keys Safely"
-        href: accessing-registry-keys-safely.md
-      - name: "Accessing Software and Hardware Keys"
-        href: accessing-software-and-hardware-keys.md
-        items: 
-        - name: "Opening a Device's Hardware Key"
-          href: opening-a-device-s-hardware-key.md
-        - name: "Opening a Device's Software Key"
-          href: opening-a-device-s-software-key.md
-        - name: "Modifying Registry Values in a Device's Software Key"
-          href: modifying-registry-values-in-a-device-s-software-key-.md
-      - name: "Accessing Device Setup Classes in the Registry"
-        href: accessing-device-setup-classes-in-the-registry.md
-        items: 
-        - name: "Enumerating Installed Device Setup Classes"
-          href: enumerating-installed-device-setup-classes.md
-        - name: "Opening Registry Keys for a Device Setup Class"
-          href: opening-registry-keys-for-a-device-setup-class.md
-        - name: "Opening Software Keys for All Devices in a Setup Class"
-          href: opening-software-keys-for-all-devices-in-a-setup-class.md
-      - name: "Accessing Device Interfaces in the Registry"
-        href: accessing-device-interface-classes-in-the-registry.md
-        items: 
-        - name: "Enumerating Installed Device Interfaces"
-          href: enumerating-installed-device-interface-classes.md
-        - name: "Accessing the Properties of Installed Device Interfaces"
-          href: accessing-the-properties-of-installed-device-interface-classes.md
-      - name: "Accessing the Registry by Class Installers and Co-installers"
-        href: accessing-the-registry-by-class-installers-and-co-installers.md
-        items: 
-        - name: "Modifying Registry Keys by Class Installers and Co-installers"
-          href: modifying-registry-keys-by-class-installers-and-co-installers.md
-        - name: "Modifying Registry Values by Class Installers and Co-installers"
-          href: modifying-registry-values-by-class-installers-and-co-installers.md
-      - name: "Deleting the Registry Keys of a Device"
-        href: deleting-the-registry-keys-of-a-device.md
-    - name: "Calling SetupAPI Functions"
-      href: calling-setupapi-functions.md
-    - name: "Enumerating Installed Devices"
-      href: enumerating-installed-devices.md
-    - name: "General Guidelines for Device and Driver Installation"
-      href: general-guidelines-for-device-and-driver-installation.md
-    - name: "Porting code from SetupApi to CfgMgr32"
-      href: porting-from-setupapi-to-cfgmgr32.md
-    - name: "Writing Class Installers and Co-Installers"
-      href: writing-class-installers-and-co-installers.md
-    - name: "Writing INF Files"
-      href: writing-inf-files.md
-  - name: "Early Launch AntiMalware"
+    - name: "SetupAPI Logging (Windows Server 2003, Windows XP, and Windows 2000)"
+      href: setupapi-logging--windows-server-2003--windows-xp--and-windows-2000-.md
+    - name: "Setting SetupAPI Logging Levels"
+      href: setting-setupapi-logging-levels.md
+    - name: "Interpreting a Sample SetupAPI Log File"
+      href: interpreting-a-sample-setupapi-log-file.md
+  - name: "Debugging"
+    items: 
+    - name: "Debugging Device Installations"
+      href: debugging-device-installations--windows-vista-and-later-.md
+    - name: "Enabling Support for Debugging Device Installations"
+      href: enabling-support-for-debugging-device-installations.md
+    - name: "Debugging Device Installations with a User-mode Debugger"
+      href: debugging-device-installations-with-a-user-mode-debugger.md
+    - name: "Debugging Device Installations with the Kernel Debugger (KD)"
+      href: debugging-device-installations-with-the-kernel-debugger--kd-.md
+- name: "Early Launch AntiMalware"
+  items: 
+  - name: "Overview of Early Launch AntiMalware"
     href: early-launch-antimalware.md
-    items: 
-    - name: "ELAM Prerequisites"
-      href: elam-prerequisites.md
-    - name: "ELAM Driver Requirements"
-      href: elam-driver-requirements.md
-    - name: "ELAM Driver Submission"
-      href: elam-driver-submission.md
-  - name: "INF File Sections and Directives"
-    href: inf-file-sections-and-directives.md
-    items: 
-    - name: "INF Sections"
-      href: inf-sections.md
-      items: 
-      - name: "INF ClassInstall32 Section"
-        href: inf-classinstall32-section.md
-      - name: "INF ClassInstall32.Services Section"
-        href: inf-classinstall32-services-section.md
-      - name: "INF ControlFlags Section"
-        href: inf-controlflags-section.md
-      - name: "INF DDInstall Section"
-        href: inf-ddinstall-section.md
-      - name: "INF DDInstall.CoInstallers Section"
-        href: inf-ddinstall-coinstallers-section.md
-      - name: "INF DDInstall.Components Section"
-        href: inf-ddinstall-components-section.md
-      - name: "INF DDInstall.Events Section"
-        href: inf-ddinstall-events-section.md
-      - name: "INF DDInstall.FactDef Section"
-        href: inf-ddinstall-factdef-section.md
-      - name: "INF DDInstall.HW Section"
-        href: inf-ddinstall-hw-section.md
-      - name: "INF DDInstall.Interfaces Section"
-        href: inf-ddinstall-interfaces-section.md
-      - name: "INF DDInstall.LogConfigOverride Section"
-        href: inf-ddinstall-logconfigoverride-section.md
-      - name: "INF DDInstall.Services Section"
-        href: inf-ddinstall-services-section.md
-      - name: "INF DDInstall.Software Section"
-        href: inf-ddinstall-software-section.md
-      - name: "INF DDInstall.WMI Section"
-        href: inf-ddinstall-wmi-section.md
-      - name: "INF DefaultInstall Section"
-        href: inf-defaultinstall-section.md
-      - name: "INF DefaultInstall.Services Section"
-        href: inf-defaultinstall-services-section.md
-      - name: "INF DestinationDirs Section"
-        href: inf-destinationdirs-section.md
-      - name: "INF InterfaceInstall32 Section"
-        href: inf-interfaceinstall32-section.md
-      - name: "INF Manufacturer Section"
-        href: inf-manufacturer-section.md
-      - name: "INF Models Section"
-        href: inf-models-section.md
-      - name: "INF SignatureAttributes Section"
-        href: inf-signatureattributes-section.md
-      - name: "INF SourceDisksFiles Section"
-        href: inf-sourcedisksfiles-section.md
-      - name: "INF SourceDisksNames Section"
-        href: inf-sourcedisksnames-section.md
-      - name: "INF Strings Section"
-        href: inf-strings-section.md
-      - name: "INF Version Section"
-        href: inf-version-section.md
-    - name: "INF Directives"
-      href: inf-directives.md
-      items: 
-      - name: "INF AddComponent Directive"
-        href: inf-addcomponent-directive.md
-      - name: "INF AddEventProvider Directive"
-        href: inf-addeventprovider-directive.md
-      - name: "INF AddInterface Directive"
-        href: inf-addinterface-directive.md
-      - name: "INF AddPowerSetting Directive"
-        href: inf-addpowersetting-directive.md
-      - name: "INF AddProperty Directive"
-        href: inf-addproperty-directive.md
-      - name: "INF AddReg Directive"
-        href: inf-addreg-directive.md
-      - name: "INF AddService Directive"
-        href: inf-addservice-directive.md
-      - name: "INF AddSoftware Directive"
-        href: inf-addsoftware-directive.md
-      - name: "INF BitReg Directive"
-        href: inf-bitreg-directive.md
-      - name: "INF CopyFiles Directive"
-        href: inf-copyfiles-directive.md
-      - name: "INF CopyINF Directive"
-        href: inf-copyinf-directive.md
-      - name: "INF DelFiles Directive"
-        href: inf-delfiles-directive.md
-      - name: "INF DelProperty Directive"
-        href: inf-delproperty-directive.md
-      - name: "INF DelReg Directive"
-        href: inf-delreg-directive.md
-      - name: "INF DelService Directive"
-        href: inf-delservice-directive.md
-      - name: "INF DriverVer Directive"
-        href: inf-driverver-directive.md
-      - name: "INF FeatureScore Directive"
-        href: inf-featurescore-directive.md
-      - name: "INF HardwareId Directive"
-        href: inf-hardwareid-directive.md
-      - name: "INF Ini2Reg Directive"
-        href: inf-ini2reg-directive.md
-      - name: "INF LogConfig Directive"
-        href: inf-logconfig-directive.md
-      - name: "INF ProfileItems Directive"
-        href: inf-profileitems-directive.md
-      - name: "INF Reboot Directive"
-        href: inf-reboot-directive.md
-      - name: "INF RegisterDlls Directive"
-        href: inf-registerdlls-directive.md
-      - name: "INF RenFiles Directive"
-        href: inf-renfiles-directive.md
-      - name: "INF UnregisterDlls Directive"
-        href: inf-unregisterdlls-directive.md
-      - name: "INF UpdateIniFields Directive"
-        href: inf-updateinifields-directive.md
-      - name: "INF UpdateInis Directive"
-        href: inf-updateinis-directive.md
-  - name: "Device and Driver Installation Reference"
-    href: install-reference.md
-    items: 
-    - name: "BUS1394_CLASS_GUID"
-      href: bus1394-class-guid.md
-    - name: "CdChangerClassGuid "
-      href: cdchangerclassguid.md
-    - name: "CdRomClassGuid"
-      href: cdromclassguid.md
-    - name: "CM_Add_Range"
-      href: cm-add-range.md
-    - name: "CM_Create_DevNode"
-      href: cm-create-devnode.md
-    - name: "CM_Create_DevNode_Ex"
-      href: cm-create-devnode-ex.md
-    - name: "CM_Create_Range_List"
-      href: cm-create-range-list.md
-    - name: "CM_Delete_Class_Key_Ex"
-      href: cm-delete-class-key-ex.md
-    - name: "CM_Delete_DevNode_Key_Ex"
-      href: cm-delete-devnode-key-ex.md
-    - name: "CM_Delete_Range"
-      href: cm-delete-range.md
-    - name: "CM_Detect_Resource_Conflict"
-      href: cm-detect-resource-conflict.md
-    - name: "CM_Detect_Resource_Conflict_Ex"
-      href: cm-detect-resource-conflict-ex.md
-    - name: "CM_Disable_DevNode_Ex"
-      href: cm-disable-devnode-ex.md
-    - name: "CM_Dup_Range_List"
-      href: cm-dup-range-list.md
-    - name: "CM_Enable_DevNode_Ex"
-      href: cm-enable-devnode-ex.md
-    - name: "CM_Find_Range"
-      href: cm-find-range.md
-    - name: "CM_First_Range"
-      href: cm-first-range.md
-    - name: "CM_Free_Range_List"
-      href: cm-free-range-list.md
-    - name: "CM_Get_Class_Key_Name"
-      href: cm-get-class-key-name.md
-    - name: "CM_Get_Class_Key_Name_Ex"
-      href: cm-get-class-key-name-ex.md
-    - name: "CM_Get_Class_Name"
-      href: cm-get-class-name.md
-    - name: "CM_Get_Class_Name_Ex"
-      href: cm-get-class-name-ex.md
-    - name: "CM_Get_Device_Interface_Alias_Ex"
-      href: cm-get-device-interface-alias-ex.md
-    - name: "CM_Get_Device_Interface_List_Ex"
-      href: cm-get-device-interface-list-ex.md
-    - name: "CM_Get_Device_Interface_List_Size_Ex"
-      href: cm-get-device-interface-list-size-ex.md
-    - name: "CM_Get_DevNode_Custom_Property"
-      href: cm-get-devnode-custom-property.md
-    - name: "CM_Get_DevNode_Custom_Property_Ex"
-      href: cm-get-devnode-custom-property-ex.md
-    - name: "CM_Get_DevNode_Registry_Property_Ex"
-      href: cm-get-devnode-registry-property-ex.md
-    - name: "CM_Get_Global_State"
-      href: cm-get-global-state.md
-    - name: "CM_Get_Global_State_Ex"
-      href: cm-get-global-state-ex.md
-    - name: "CM_Get_Hardware_Profile_Info"
-      href: cm-get-hardware-profile-info.md
-    - name: "CM_Get_Hardware_Profile_Info_Ex"
-      href: cm-get-hardware-profile-info-ex.md
-    - name: "CM_Intersect_Range_List"
-      href: cm-intersect-range-list.md
-    - name: "CM_Invert_Range_List"
-      href: cm-invert-range-list.md
-    - name: "CM_Merge_Range_List"
-      href: cm-merge-range-list.md
-    - name: "CM_Move_DevNode"
-      href: cm-move-devnode.md
-    - name: "CM_Move_DevNode_Ex"
-      href: cm-move-devnode-ex.md
-    - name: "CM_Next_Range"
-      href: cm-next-range.md
-    - name: "CM_Open_Class_Key_Ex"
-      href: cm-open-class-key-ex.md
-    - name: "CM_Open_DevNode_Key_Ex"
-      href: cm-open-devnode-key-ex.md
-    - name: "CM_Query_Arbitrator_Free_Data"
-      href: cm-query-arbitrator-free-data.md
-    - name: "CM_Query_Arbitrator_Free_Data_Ex"
-      href: cm-query-arbitrator-free-data-ex.md
-    - name: "CM_Query_Arbitrator_Free_Size"
-      href: cm-query-arbitrator-free-size.md
-    - name: "CM_Query_Arbitrator_Free_Size_Ex"
-      href: cm-query-arbitrator-free-size-ex.md
-    - name: "CM_Query_Remove_SubTree"
-      href: cm-query-remove-subtree.md
-    - name: "CM_Query_Remove_SubTree_Ex"
-      href: cm-query-remove-subtree-ex.md
-    - name: "CM_Register_Device_Driver"
-      href: cm-register-device-driver.md
-    - name: "CM_Register_Device_Driver_Ex"
-      href: cm-register-device-driver-ex.md
-    - name: "CM_Register_Device_Interface"
-      href: cm-register-device-interface.md
-    - name: "CM_Register_Device_Interface_Ex"
-      href: cm-register-device-interface-ex.md
-    - name: "CM_Remove_SubTree"
-      href: cm-remove-subtree.md
-    - name: "CM_Remove_SubTree_Ex"
-      href: cm-remove-subtree-ex.md
-    - name: "CM_Run_Detection"
-      href: cm-run-detection.md
-    - name: "CM_Run_Detection_Ex"
-      href: cm-run-detection-ex.md
-    - name: "CM_Set_DevNode_Registry_Property_Ex"
-      href: cm-set-devnode-registry-property-ex.md
-    - name: "CM_Set_HW_Prof"
-      href: cm-set-hw-prof.md
-    - name: "CM_Set_HW_Prof_Ex"
-      href: cm-set-hw-prof-ex.md
-    - name: "CM_Set_HW_Prof_Flags"
-      href: cm-set-hw-prof-flags.md
-    - name: "CM_Set_HW_Prof_Flags_Ex"
-      href: cm-set-hw-prof-flags-ex.md
-    - name: "CM_Setup_DevNode_Ex"
-      href: cm-setup-devnode-ex.md
-    - name: "CM_Test_Range_Available"
-      href: cm-test-range-available.md
-    - name: "CM_Uninstall_DevNode_Ex"
-      href: cm-uninstall-devnode-ex.md
-    - name: "CM_Unregister_Device_Interface"
-      href: cm-unregister-device-interface.md
-    - name: "CM_Unregister_Device_Interface_Ex"
-      href: cm-unregister-device-interface-ex.md
-    - name: "CM_WaitNoPendingInstallEvents"
-      href: cm-waitnopendinginstallevents.md
-    - name: "Config.DriverKey Section of a TxtSetup.oem File"
-      href: config-driverkey-section-of-a-txtsetup-oem-file.md
-    - name: "Defaults Section of a TxtSetup.oem File"
-      href: defaults-section-of-a-txtsetup-oem-file.md
-    - name: "DEFINE_DEVPROPKEY"
-      href: define-devpropkey.md
-    - name: "deleteBinaries XML Element"
-      href: deletebinaries-xml-element.md
-    - name: "DEVPKEY_Device_Address"
-      href: devpkey-device-address.md
-    - name: "DEVPKEY_Device_BaseContainerId"
-      href: devpkey-device-basecontainerid.md
-    - name: "DEVPKEY_Device_BusNumber"
-      href: devpkey-device-busnumber.md
-    - name: "DEVPKEY_Device_BusRelations"
-      href: devpkey-device-busrelations.md
-    - name: "DEVPKEY_Device_BusReportedDeviceDesc"
-      href: devpkey-device-busreporteddevicedesc.md
-    - name: "DEVPKEY_Device_BusTypeGuid"
-      href: devpkey-device-bustypeguid.md
-    - name: "DEVPKEY_Device_Capabilities"
-      href: devpkey-device-capabilities.md
-    - name: "DEVPKEY_Device_Characteristics"
-      href: devpkey-device-characteristics.md
-    - name: "DEVPKEY_Device_Children"
-      href: devpkey-device-children.md
-    - name: "DEVPKEY_Device_Class"
-      href: devpkey-device-class.md
-    - name: "DEVPKEY_Device_ClassGuid"
-      href: devpkey-device-classguid.md
-    - name: "DEVPKEY_Device_CompatibleIds"
-      href: devpkey-device-compatibleids.md
-    - name: "DEVPKEY_Device_ConfigFlags"
-      href: devpkey-device-configflags.md
-    - name: "DEVPKEY_Device_ContainerId"
-      href: devpkey-device-containerid.md
-    - name: "DEVPKEY_Device_DeviceDesc"
-      href: devpkey-device-devicedesc.md
-    - name: "DEVPKEY_Device_DevNodeStatus"
-      href: devpkey-device-devnodestatus.md
-    - name: "DEVPKEY_Device_DevType"
-      href: devpkey-device-devtype.md
-    - name: "DEVPKEY_Device_DHP_Rebalance_Policy"
-      href: devpkey-device-dhp-rebalance-policy.md
-    - name: "DEVPKEY_Device_Driver"
-      href: devpkey-device-driver.md
-    - name: "DEVPKEY_Device_DriverCoInstallers"
-      href: devpkey-device-drivercoinstallers.md
-    - name: "DEVPKEY_Device_DriverDate"
-      href: devpkey-device-driverdate.md
-    - name: "DEVPKEY_Device_DriverDesc"
-      href: devpkey-device-driverdesc.md
-    - name: "DEVPKEY_Device_DriverInfPath"
-      href: devpkey-device-driverinfpath.md
-    - name: "DEVPKEY_Device_DriverInfSection"
-      href: devpkey-device-driverinfsection.md
-    - name: "DEVPKEY_Device_DriverInfSectionExt"
-      href: devpkey-device-driverinfsectionext.md
-    - name: "DEVPKEY_Device_DriverLogoLevel"
-      href: devpkey-device-driverlogolevel.md
-    - name: "DEVPKEY_Device_DriverPropPageProvider"
-      href: devpkey-device-driverproppageprovider.md
-    - name: "DEVPKEY_Device_DriverProvider"
-      href: devpkey-device-driverprovider.md
-    - name: "DEVPKEY_Device_DriverRank"
-      href: devpkey-device-driverrank.md
-    - name: "DEVPKEY_Device_DriverVersion"
-      href: devpkey-device-driverversion.md
-    - name: "DEVPKEY_Device_EjectionRelations"
-      href: devpkey-device-ejectionrelations.md
-    - name: "DEVPKEY_Device_EnumeratorName"
-      href: devpkey-device-enumeratorname.md
-    - name: "DEVPKEY_Device_Exclusive"
-      href: devpkey-device-exclusive.md
-    - name: "DEVPKEY_Device_FirstInstallDate"
-      href: devpkey-device-firstinstalldate.md
-    - name: "DEVPKEY_Device_FriendlyName"
-      href: devpkey-device-friendlyname.md
-    - name: "DEVPKEY_Device_GenericDriverInstalled"
-      href: devpkey-device-genericdriverinstalled.md
-    - name: "DEVPKEY_Device_HardwareIds"
-      href: devpkey-device-hardwareids.md
-    - name: "DEVPKEY_Device_InstallDate"
-      href: devpkey-device-installdate.md
-    - name: "DEVPKEY_Device_InstallState"
-      href: devpkey-device-installstate.md
-    - name: "DEVPKEY_Device_InstanceId"
-      href: devpkey-device-instanceid.md
-    - name: "DEVPKEY_Device_Legacy"
-      href: devpkey-device-legacy.md
-    - name: "DEVPKEY_Device_LegacyBusType"
-      href: devpkey-device-legacybustype.md
-    - name: "DEVPKEY_Device_LocationInfo"
-      href: devpkey-device-locationinfo.md
-    - name: "DEVPKEY_Device_LocationPaths"
-      href: devpkey-device-locationpaths.md
-    - name: "DEVPKEY_Device_LowerFilters"
-      href: devpkey-device-lowerfilters.md
-    - name: "DEVPKEY_Device_Manufacturer"
-      href: devpkey-device-manufacturer.md
-    - name: "DEVPKEY_Device_MatchingDeviceId"
-      href: devpkey-device-matchingdeviceid.md
-    - name: "DEVPKEY_Device_ModelId"
-      href: devpkey-device-modelid.md
-    - name: "DEVPKEY_Device_NoConnectSound"
-      href: devpkey-device-noconnectsound.md
-    - name: "DEVPKEY_Device_Parent"
-      href: devpkey-device-parent.md
-    - name: "DEVPKEY_Device_PDOName"
-      href: devpkey-device-pdoname.md
-    - name: "DEVPKEY_Device_PhysicalDeviceLocation"
-      href: devpkey-device-physicaldevicelocation.md
-    - name: "DEVPKEY_Device_PowerData"
-      href: devpkey-device-powerdata.md
-    - name: "DEVPKEY_Device_PowerRelations "
-      href: devpkey-device-powerrelations.md
-    - name: "DEVPKEY_Device_ProblemCode"
-      href: devpkey-device-problemcode.md
-    - name: "DEVPKEY_Device_RemovalPolicy"
-      href: devpkey-device-removalpolicy.md
-    - name: "DEVPKEY_Device_RemovalPolicyDefault"
-      href: devpkey-device-removalpolicydefault.md
-    - name: "DEVPKEY_Device_RemovalPolicyOverride"
-      href: devpkey-device-removalpolicyoverride.md
-    - name: "DEVPKEY_Device_RemovalRelations"
-      href: devpkey-device-removalrelations.md
-    - name: "DEVPKEY_Device_Reported"
-      href: devpkey-device-reported.md
-    - name: "DEVPKEY_Device_ResourcePickerExceptions"
-      href: devpkey-device-resourcepickerexceptions.md
-    - name: "DEVPKEY_Device_ResourcePickerTags"
-      href: devpkey-device-resourcepickertags.md
-    - name: "DEVPKEY_Device_SafeRemovalRequired"
-      href: devpkey-device-saferemovalrequired.md
-    - name: "DEVPKEY_Device_SafeRemovalRequiredOverride"
-      href: devpkey-device-saferemovalrequiredoverride.md
-    - name: "DEVPKEY_Device_Security"
-      href: devpkey-device-security.md
-    - name: "DEVPKEY_Device_SecuritySDS"
-      href: devpkey-device-securitysds.md
-    - name: "DEVPKEY_Device_Service"
-      href: devpkey-device-service.md
-    - name: "DEVPKEY_Device_SessionId"
-      href: devpkey-device-sessionid.md
-    - name: "DEVPKEY_Device_Siblings"
-      href: devpkey-device-siblings.md
-    - name: "DEVPKEY_Device_UINumber"
-      href: devpkey-device-uinumber.md
-    - name: "DEVPKEY_Device_UINumberDescFormat"
-      href: devpkey-device-uinumberdescformat.md
-    - name: "DEVPKEY_Device_UpperFilters"
-      href: devpkey-device-upperfilters.md
-    - name: "DEVPKEY_DeviceClass_Characteristics"
-      href: devpkey-deviceclass-characteristics.md
-    - name: "DEVPKEY_DeviceClass_ClassCoInstallers"
-      href: devpkey-deviceclass-classcoinstallers.md
-    - name: "DEVPKEY_DeviceClass_ClassInstaller"
-      href: devpkey-deviceclass-classinstaller.md
-    - name: "DEVPKEY_DeviceClass_ClassName"
-      href: devpkey-deviceclass-classname.md
-    - name: "DEVPKEY_DeviceClass_DefaultService"
-      href: devpkey-deviceclass-defaultservice.md
-    - name: "DEVPKEY_DeviceClass_DevType"
-      href: devpkey-deviceclass-devtype.md
-    - name: "DEVPKEY_DeviceClass_DHPRebalanceOptOut"
-      href: devpkey-deviceclass-dhprebalanceoptout.md
-    - name: "DEVPKEY_DeviceClass_Exclusive"
-      href: devpkey-deviceclass-exclusive.md
-    - name: "DEVPKEY_DeviceClass_Icon"
-      href: devpkey-deviceclass-icon.md
-    - name: "DEVPKEY_DeviceClass_IconPath"
-      href: devpkey-deviceclass-iconpath.md
-    - name: "DEVPKEY_DeviceClass_LowerFilters"
-      href: devpkey-deviceclass-lowerfilters.md
-    - name: "DEVPKEY_DeviceClass_Name"
-      href: devpkey-deviceclass-name.md
-    - name: "DEVPKEY_DeviceClass_NoDisplayClass"
-      href: devpkey-deviceclass-nodisplayclass.md
-    - name: "DEVPKEY_DeviceClass_NoInstallClass"
-      href: devpkey-deviceclass-noinstallclass.md
-    - name: "DEVPKEY_DeviceClass_NoUseClass"
-      href: devpkey-deviceclass-nouseclass.md
-    - name: "DEVPKEY_DeviceClass_PropPageProvider"
-      href: devpkey-deviceclass-proppageprovider.md
-    - name: "DEVPKEY_DeviceClass_Security"
-      href: devpkey-deviceclass-security.md
-    - name: "DEVPKEY_DeviceClass_SecuritySDS"
-      href: devpkey-deviceclass-securitysds.md
-    - name: "DEVPKEY_DeviceClass_SilentInstall"
-      href: devpkey-deviceclass-silentinstall.md
-    - name: "DEVPKEY_DeviceClass_UpperFilters"
-      href: devpkey-deviceclass-upperfilters.md
-    - name: "DEVPKEY_DeviceDisplay_Category"
-      href: devpkey-devicedisplay-category.md
-    - name: "DEVPKEY_DeviceInterface_ClassGuid"
-      href: devpkey-deviceinterface-classguid.md
-    - name: "DEVPKEY_DeviceInterface_DefaultInterface"
-      href: devpkey-deviceinterface-defaultinterface.md
-    - name: "DEVPKEY_DeviceInterface_Enabled"
-      href: devpkey-deviceinterface-enabled.md
-    - name: "DEVPKEY_DeviceInterface_FriendlyName"
-      href: devpkey-deviceinterface-friendlyname.md
-    - name: "DEVPKEY_DeviceInterface_Restricted"
-      href: devpkey-deviceinterface-restricted.md
-    - name: "DEVPKEY_DrvPkg_BrandingIcon"
-      href: devpkey-drvpkg-brandingicon.md
-    - name: "DEVPKEY_DrvPkg_DetailedDescription"
-      href: devpkey-drvpkg-detaileddescription.md
-    - name: "DEVPKEY_DrvPkg_DocumentationLink"
-      href: devpkey-drvpkg-documentationlink.md
-    - name: "DEVPKEY_DrvPkg_Icon"
-      href: devpkey-drvpkg-icon.md
-    - name: "DEVPKEY_DrvPkg_Model"
-      href: devpkey-drvpkg-model.md
-    - name: "DEVPKEY_DrvPkg_VendorWebSite"
-      href: devpkey-drvpkg-vendorwebsite.md
-    - name: "DEVPKEY_NAME (Device Instance)"
-      href: devpkey-name--device-instance-.md
-    - name: "DEVPKEY_NAME (Device Interface)"
-      href: devpkey-name--device-interface-.md
-    - name: "DEVPKEY_NAME (Device Setup Class)"
-      href: devpkey-name--device-setup-class-.md
-    - name: "DEVPKEY_Numa_Proximity_Domain"
-      href: devpkey-numa-proximity-domain.md
-    - name: "DEVPRIVATE_DES"
-      href: devprivate-des.md
-    - name: "DEVPRIVATE_RANGE"
-      href: devprivate-range.md
-    - name: "DEVPRIVATE_RESOURCE"
-      href: devprivate-resource.md
-    - name: "DEVPROP_MASK_TYPE"
-      href: devprop-mask-type.md
-    - name: "DEVPROP_MASK_TYPEMOD"
-      href: devprop-mask-typemod.md
-    - name: "DEVPROP_TYPE_BINARY"
-      href: devprop-type-binary.md
-    - name: "DEVPROP_TYPE_BOOLEAN"
-      href: devprop-type-boolean.md
-    - name: "DEVPROP_TYPE_BYTE"
-      href: devprop-type-byte.md
-    - name: "DEVPROP_TYPE_CURRENCY"
-      href: devprop-type-currency.md
-    - name: "DEVPROP_TYPE_DATE"
-      href: devprop-type-date.md
-    - name: "DEVPROP_TYPE_DECIMAL"
-      href: devprop-type-decimal.md
-    - name: "DEVPROP_TYPE_DEVPROPKEY"
-      href: devprop-type-devpropkey.md
-    - name: "DEVPROP_TYPE_DEVPROPTYPE"
-      href: devprop-type-devproptype.md
-    - name: "DEVPROP_TYPE_DOUBLE"
-      href: devprop-type-double.md
-    - name: "DEVPROP_TYPE_EMPTY"
-      href: devprop-type-empty.md
-    - name: "DEVPROP_TYPE_ERROR"
-      href: devprop-type-error.md
-    - name: "DEVPROP_TYPE_FILETIME"
-      href: devprop-type-filetime.md
-    - name: "DEVPROP_TYPE_FLOAT"
-      href: devprop-type-float.md
-    - name: "DEVPROP_TYPE_GUID"
-      href: devprop-type-guid.md
-    - name: "DEVPROP_TYPE_INT16"
-      href: devprop-type-int16.md
-    - name: "DEVPROP_TYPE_INT32"
-      href: devprop-type-int32.md
-    - name: "DEVPROP_TYPE_INT64"
-      href: devprop-type-int64.md
-    - name: "DEVPROP_TYPE_NTSTATUS"
-      href: devprop-type-ntstatus.md
-    - name: "DEVPROP_TYPE_NULL"
-      href: devprop-type-null.md
-    - name: "DEVPROP_TYPE_SBYTE"
-      href: devprop-type-sbyte.md
-    - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR"
-      href: devprop-type-security-descriptor.md
-    - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING"
-      href: devprop-type-security-descriptor-string.md
-    - name: "DEVPROP_TYPE_STRING"
-      href: devprop-type-string.md
-    - name: "DEVPROP_TYPE_STRING_INDIRECT"
-      href: devprop-type-string-indirect.md
-    - name: "DEVPROP_TYPE_STRING_LIST"
-      href: devprop-type-string-list.md
-    - name: "DEVPROP_TYPE_UINT16"
-      href: devprop-type-uint16.md
-    - name: "DEVPROP_TYPE_UINT32"
-      href: devprop-type-uint32.md
-    - name: "DEVPROP_TYPE_UINT64"
-      href: devprop-type-uint64.md
-    - name: "DEVPROP_TYPEMOD_ARRAY"
-      href: devprop-typemod-array.md
-    - name: "DEVPROP_TYPEMOD_LIST"
-      href: devprop-typemod-list.md
-    - name: "DEVPROPKEY"
-      href: devpropkey.md
-    - name: "DIF_ADDPROPERTYPAGE_ADVANCED"
-      href: dif-addpropertypage-advanced.md
-    - name: "DIF_ADDPROPERTYPAGE_BASIC"
-      href: dif-addpropertypage-basic.md
-    - name: "DIF_ALLOW_INSTALL"
-      href: dif-allow-install.md
-    - name: "DIF_ASSIGNRESOURCES"
-      href: dif-assignresources.md
-    - name: "DIF_CALCDISKSPACE"
-      href: dif-calcdiskspace.md
-    - name: "DIF_DESTROYPRIVATEDATA"
-      href: dif-destroyprivatedata.md
-    - name: "DIF_DESTROYWIZARDDATA"
-      href: dif-destroywizarddata.md
-    - name: "DIF_DETECT"
-      href: dif-detect.md
-    - name: "DIF_DETECTCANCEL"
-      href: dif-detectcancel.md
-    - name: "DIF_DETECTVERIFY"
-      href: dif-detectverify.md
-    - name: "DIF_ENABLECLASS"
-      href: dif-enableclass.md
-    - name: "DIF_FINISHINSTALL_ACTION"
-      href: dif-finishinstall-action.md
-    - name: "DIF_FIRSTTIMESETUP"
-      href: dif-firsttimesetup.md
-    - name: "DIF_FOUNDDEVICE"
-      href: dif-founddevice.md
-    - name: "DIF_INSTALLCLASSDRIVERS"
-      href: dif-installclassdrivers.md
-    - name: "DIF_INSTALLDEVICE"
-      href: dif-installdevice.md
-    - name: "DIF_INSTALLDEVICEFILES"
-      href: dif-installdevicefiles.md
-    - name: "DIF_INSTALLINTERFACES"
-      href: dif-installinterfaces.md
-    - name: "DIF_INSTALLWIZARD"
-      href: dif-installwizard.md
-    - name: "DIF_MOVEDEVICE"
-      href: dif-movedevice.md
-    - name: "DIF_NEWDEVICEWIZARD_FINISHINSTALL"
-      href: dif-newdevicewizard-finishinstall.md
-    - name: "DIF_NEWDEVICEWIZARD_POSTANALYZE"
-      href: dif-newdevicewizard-postanalyze.md
-    - name: "DIF_NEWDEVICEWIZARD_PREANALYZE"
-      href: dif-newdevicewizard-preanalyze.md
-    - name: "DIF_NEWDEVICEWIZARD_PRESELECT"
-      href: dif-newdevicewizard-preselect.md
-    - name: "DIF_NEWDEVICEWIZARD_SELECT"
-      href: dif-newdevicewizard-select.md
-    - name: "DIF_POWERMESSAGEWAKE"
-      href: dif-powermessagewake.md
-    - name: "DIF_PROPERTIES"
-      href: dif-properties.md
-    - name: "DIF_PROPERTYCHANGE"
-      href: dif-propertychange.md
-    - name: "DIF_REGISTER_COINSTALLERS"
-      href: dif-register-coinstallers.md
-    - name: "DIF_REGISTERDEVICE"
-      href: dif-registerdevice.md
-    - name: "DIF_REMOVE"
-      href: dif-remove.md
-    - name: "DIF_SELECTBESTCOMPATDRV"
-      href: dif-selectbestcompatdrv.md
-    - name: "DIF_SELECTCLASSDRIVERS"
-      href: dif-selectclassdrivers.md
-    - name: "DIF_SELECTDEVICE"
-      href: dif-selectdevice.md
-    - name: "DIF_TROUBLESHOOTER"
-      href: dif-troubleshooter.md
-    - name: "DIF_UNREMOVE"
-      href: dif-unremove.md
-    - name: "DIF_UPDATEDRIVER_UI"
-      href: dif-updatedriver-ui.md
-    - name: "DIF_VALIDATECLASSDRIVERS"
-      href: dif-validateclassdrivers.md
-    - name: "DIF_VALIDATEDRIVER"
-      href: dif-validatedriver.md
-    - name: "DiskClassGuid"
-      href: diskclassguid.md
-    - name: "Disks Section of a TxtSetup.oem File"
-      href: disks-section-of-a-txtsetup-oem-file.md
-    - name: "dpinst XML Element"
-      href: dpinst-xml-element.md
-    - name: "dpinstTitle XML Element"
-      href: dpinsttitle-xml-element.md
-    - name: "enableNotListedLanguages XML Element"
-      href: enablenotlistedlanguages-xml-element.md
-    - name: "eula XML Element"
-      href: eula-xml-element.md
-    - name: "eulaHeaderTitle XML Element"
-      href: eulaheadertitle-xml-element.md
-    - name: "eulaNoButton XML Element"
-      href: eulanobutton-xml-element.md
-    - name: "eulaYesButton XML Element"
-      href: eulayesbutton-xml-element.md
-    - name: "Files.HwComponent.ID Section of a TxtSetup.oem File"
-      href: files-hwcomponent-id-section-of-a-txtsetup-oem-file.md
-    - name: "finishText XML Element"
-      href: finishtext-xml-element.md
-    - name: "finishTitle XML Element"
-      href: finishtitle-xml-element.md
-    - name: "FloppyClassGuid"
-      href: floppyclassguid.md
-    - name: "forceIfDriverIsNotBetter XML Element"
-      href: forceifdriverisnotbetter-xml-element.md
-    - name: "group XML Element"
-      href: group-xml-element.md
-    - name: "GUID_61883_CLASS"
-      href: guid-61883-class.md
-    - name: "GUID_AVC_CLASS"
-      href: guid-avc-class.md
-    - name: "GUID_BTHPORT_DEVICE_INTERFACE"
-      href: guid-bthport-device-interface.md
-    - name: "GUID_CLASS_COMPORT"
-      href: guid-class-comport.md
-    - name: "GUID_CLASS_INPUT"
-      href: guid-class-input.md
-    - name: "GUID_CLASS_KEYBOARD"
-      href: guid-class-keyboard.md
-    - name: "GUID_CLASS_MODEM"
-      href: guid-class-modem.md
-    - name: "GUID_CLASS_MOUSE"
-      href: guid-class-mouse.md
-    - name: "GUID_CLASS_USB_DEVICE"
-      href: guid-class-usb-device.md
-    - name: "GUID_CLASS_USB_HOST_CONTROLLER"
-      href: guid-class-usb-host-controller.md
-    - name: "GUID_CLASS_USBHUB"
-      href: guid-class-usbhub.md
-    - name: "GUID_DEVICE_APPLICATIONLAUNCH_BUTTON"
-      href: guid-device-applicationlaunch-button.md
-    - name: "GUID_DEVICE_BATTERY"
-      href: guid-device-battery.md
-    - name: "GUID_DEVICE_LID"
-      href: guid-device-lid.md
-    - name: "GUID_DEVICE_MEMORY"
-      href: guid-device-memory.md
-    - name: "GUID_DEVICE_MESSAGE_INDICATOR"
-      href: guid-device-message-indicator.md
-    - name: "GUID_DEVICE_PROCESSOR"
-      href: guid-device-processor.md
-    - name: "GUID_DEVICE_SYS_BUTTON"
-      href: guid-device-sys-button.md
-    - name: "GUID_DEVICE_THERMAL_ZONE"
-      href: guid-device-thermal-zone.md
-    - name: "GUID_DEVINTERFACE_BRIGHTNESS"
-      href: guid-devinterface-brightness.md
-    - name: "GUID_DEVINTERFACE_CDCHANGER "
-      href: guid-devinterface-cdchanger.md
-    - name: "GUID_DEVINTERFACE_CDROM"
-      href: guid-devinterface-cdrom.md
-    - name: "GUID_DEVINTERFACE_COMPORT"
-      href: guid-devinterface-comport.md
-    - name: "GUID_DEVINTERFACE_DISK"
-      href: guid-devinterface-disk.md
-    - name: "GUID_DEVINTERFACE_DISPLAY_ADAPTER"
-      href: guid-devinterface-display-adapter.md
-    - name: "GUID_DEVINTERFACE_FLOPPY"
-      href: guid-devinterface-floppy.md
-    - name: "GUID_DEVINTERFACE_HID"
-      href: guid-devinterface-hid.md
-    - name: "GUID_DEVINTERFACE_I2C"
-      href: guid-devinterface-i2c.md
-    - name: "GUID_DEVINTERFACE_IMAGE"
-      href: guid-devinterface-image.md
-    - name: "GUID_DEVINTERFACE_KEYBOARD"
-      href: guid-devinterface-keyboard.md
-    - name: "GUID_DEVINTERFACE_MEDIUMCHANGER"
-      href: guid-devinterface-mediumchanger.md
-    - name: "GUID_DEVINTERFACE_MODEM"
-      href: guid-devinterface-modem.md
-    - name: "GUID_DEVINTERFACE_MONITOR"
-      href: guid-devinterface-monitor.md
-    - name: "GUID_DEVINTERFACE_MOUSE"
-      href: guid-devinterface-mouse.md
-    - name: "GUID_DEVINTERFACE_NET"
-      href: guid-devinterface-net.md
-    - name: "GUID_DEVINTERFACE_OPM"
-      href: guid-devinterface-opm.md
-    - name: "GUID_DEVINTERFACE_PARALLEL"
-      href: guid-devinterface-parallel.md
-    - name: "GUID_DEVINTERFACE_PARCLASS"
-      href: guid-devinterface-parclass.md
-    - name: "GUID_DEVINTERFACE_PARTITION"
-      href: guid-devinterface-partition.md
-    - name: "GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR"
-      href: guid-devinterface-serenum-bus-enumerator.md
-    - name: "GUID_DEVINTERFACE_SIDESHOW"
-      href: guid-devinterface-sideshow.md
-    - name: "GUID_DEVINTERFACE_STORAGEPORT"
-      href: guid-devinterface-storageport.md
-    - name: "GUID_DEVINTERFACE_TAPE "
-      href: guid-devinterface-tape.md
-    - name: "GUID_DEVINTERFACE_USB_DEVICE"
-      href: guid-devinterface-usb-device.md
-    - name: "GUID_DEVINTERFACE_USB_HOST_CONTROLLER"
-      href: guid-devinterface-usb-host-controller.md
-    - name: "GUID_DEVINTERFACE_USB_HUB"
-      href: guid-devinterface-usb-hub.md
-    - name: "GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL"
-      href: guid-devinterface-video-output-arrival.md
-    - name: "GUID_DEVINTERFACE_VOLUME"
-      href: guid-devinterface-volume.md
-    - name: "GUID_DEVINTERFACE_WPD"
-      href: guid-devinterface-wpd.md
-    - name: "GUID_DEVINTERFACE_WPD_PRIVATE"
-      href: guid-devinterface-wpd-private.md
-    - name: "GUID_DEVINTERFACE_WRITEONCEDISK"
-      href: guid-devinterface-writeoncedisk.md
-    - name: "GUID_DISPLAY_ADAPTER_INTERFACE"
-      href: guid-display-adapter-interface.md
-    - name: "GUID_DISPLAY_DEVICE_ARRIVAL"
-      href: guid-display-device-arrival.md
-    - name: "GUID_IO_VOLUME_DEVICE_INTERFACE"
-      href: guid-io-volume-device-interface.md
-    - name: "GUID_PARALLEL_DEVICE"
-      href: guid-parallel-device.md
-    - name: "GUID_PARCLASS_DEVICE"
-      href: guid-parclass-device.md
-    - name: "GUID_SERENUM_BUS_ENUMERATOR"
-      href: guid-serenum-bus-enumerator.md
-    - name: "GUID_VIRTUAL_AVC_CLASS"
-      href: guid-virtual-avc-class.md
-    - name: "HardwareIds.scsi.ID Section of a TxtSetup.oem File"
-      href: hardwareids-scsi-id-section-of-a-txtsetup-oem-file.md
-    - name: "headerPath XML Element"
-      href: headerpath-xml-element.md
-    - name: "HwComponent Section of a TxtSetup.oem File"
-      href: hwcomponent-section-of-a-txtsetup-oem-file.md
-    - name: "icon XML Element"
-      href: icon-xml-element.md
-    - name: "installAllOrNone XML Element"
-      href: installallornone-xml-element.md
-    - name: "installHeaderTitle XML Element"
-      href: installheadertitle-xml-element.md
-    - name: "InstallSelectedDriver"
-      href: installselecteddriver.md
-    - name: "KSCATEGORY_ACOUSTIC_ECHO_CANCEL "
-      href: kscategory-acoustic-echo-cancel.md
-    - name: "KSCATEGORY_AUDIO"
-      href: kscategory-audio.md
-    - name: "KSCATEGORY_AUDIO_DEVICE"
-      href: kscategory-audio-device.md
-    - name: "KSCATEGORY_AUDIO_GFX"
-      href: kscategory-audio-gfx.md
-    - name: "KSCATEGORY_AUDIO_SPLITTER"
-      href: kscategory-audio-splitter.md
-    - name: "KSCATEGORY_BDA_IP_SINK"
-      href: kscategory-bda-ip-sink.md
-    - name: "KSCATEGORY_BDA_NETWORK_EPG"
-      href: kscategory-bda-network-epg.md
-    - name: "KSCATEGORY_BDA_NETWORK_PROVIDER"
-      href: kscategory-bda-network-provider.md
-    - name: "KSCATEGORY_BDA_NETWORK_TUNER"
-      href: kscategory-bda-network-tuner.md
-    - name: "KSCATEGORY_BDA_RECEIVER_COMPONENT"
-      href: kscategory-bda-receiver-component.md
-    - name: "KSCATEGORY_BDA_TRANSPORT_INFORMATION"
-      href: kscategory-bda-transport-information.md
-    - name: "KSCATEGORY_BRIDGE "
-      href: kscategory-bridge.md
-    - name: "KSCATEGORY_CAPTURE"
-      href: kscategory-capture.md
-    - name: "KSCATEGORY_CLOCK"
-      href: kscategory-clock.md
-    - name: "KSCATEGORY_COMMUNICATIONSTRANSFORM "
-      href: kscategory-communicationstransform.md
-    - name: "KSCATEGORY_CROSSBAR"
-      href: kscategory-crossbar.md
-    - name: "KSCATEGORY_DATACOMPRESSOR"
-      href: kscategory-datacompressor.md
-    - name: "KSCATEGORY_DATADECOMPRESSOR"
-      href: kscategory-datadecompressor.md
-    - name: "KSCATEGORY_DATATRANSFORM"
-      href: kscategory-datatransform.md
-    - name: "KSCATEGORY_DRM_DESCRAMBLE "
-      href: kscategory-drm-descramble.md
-    - name: "KSCATEGORY_ENCODER "
-      href: kscategory-encoder.md
-    - name: "KSCATEGORY_ESCALANTE_PLATFORM_DRIVER"
-      href: kscategory-escalante-platform-driver.md
-    - name: "KSCATEGORY_FILESYSTEM "
-      href: kscategory-filesystem.md
-    - name: "KSCATEGORY_INTERFACETRANSFORM"
-      href: kscategory-interfacetransform.md
-    - name: "KSCATEGORY_MEDIUMTRANSFORM "
-      href: kscategory-mediumtransform.md
-    - name: "KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR"
-      href: kscategory-microphone-array-processor.md
-    - name: "KSCATEGORY_MIXER"
-      href: kscategory-mixer.md
-    - name: "KSCATEGORY_MULTIPLEXER "
-      href: kscategory-multiplexer.md
-    - name: "KSCATEGORY_NETWORK"
-      href: kscategory-network.md
-    - name: "KSCATEGORY_PREFERRED_MIDIOUT_DEVICE"
-      href: kscategory-preferred-midiout-device.md
-    - name: "KSCATEGORY_PREFERRED_WAVEIN_DEVICE"
-      href: kscategory-preferred-wavein-device.md
-    - name: "KSCATEGORY_PREFERRED_WAVEOUT_DEVICE"
-      href: kscategory-preferred-waveout-device.md
-    - name: "KSCATEGORY_PROXY"
-      href: kscategory-proxy.md
-    - name: "KSCATEGORY_QUALITY"
-      href: kscategory-quality.md
-    - name: "KSCATEGORY_REALTIME "
-      href: kscategory-realtime.md
-    - name: "KSCATEGORY_RENDER"
-      href: kscategory-render.md
-    - name: "KSCATEGORY_SENSOR_CAMERA"
-      href: kscategory-sensor-camera.md
-    - name: "KSCATEGORY_SPLITTER"
-      href: kscategory-splitter.md
-    - name: "KSCATEGORY_SYNTHESIZER "
-      href: kscategory-synthesizer.md
-    - name: "KSCATEGORY_SYSAUDIO"
-      href: kscategory-sysaudio.md
-    - name: "KSCATEGORY_TEXT"
-      href: kscategory-text.md
-    - name: "KSCATEGORY_TOPOLOGY"
-      href: kscategory-topology.md
-    - name: "KSCATEGORY_TVAUDIO"
-      href: kscategory-tvaudio.md
-    - name: "KSCATEGORY_TVTUNER"
-      href: kscategory-tvtuner.md
-    - name: "KSCATEGORY_VBICODEC"
-      href: kscategory-vbicodec.md
-    - name: "KSCATEGORY_VIDEO"
-      href: kscategory-video.md
-    - name: "KSCATEGORY_VIDEO_CAMERA"
-      href: kscategory-video-camera.md
-    - name: "KSCATEGORY_VIRTUAL"
-      href: kscategory-virtual.md
-    - name: "KSCATEGORY_VPMUX"
-      href: kscategory-vpmux.md
-    - name: "KSCATEGORY_WDMAUD"
-      href: kscategory-wdmaud.md
-    - name: "KSMFT_CATEGORY_AUDIO_DECODER"
-      href: ksmft-category-audio-decoder.md
-    - name: "KSMFT_CATEGORY_AUDIO_EFFECT"
-      href: ksmft-category-audio-effect.md
-    - name: "KSMFT_CATEGORY_AUDIO_ENCODER"
-      href: ksmft-category-audio-encoder.md
-    - name: "KSMFT_CATEGORY_DEMULTIPLEXER"
-      href: ksmft-category-demultiplexer.md
-    - name: "KSMFT_CATEGORY_MULTIPLEXER"
-      href: ksmft-category-multiplexer.md
-    - name: "KSMFT_CATEGORY_OTHER"
-      href: ksmft-category-other.md
-    - name: "KSMFT_CATEGORY_VIDEO_DECODER"
-      href: ksmft-category-video-decoder.md
-    - name: "KSMFT_CATEGORY_VIDEO_EFFECT"
-      href: ksmft-category-video-effect.md
-    - name: "KSMFT_CATEGORY_VIDEO_ENCODER"
-      href: ksmft-category-video-encoder.md
-    - name: "KSMFT_CATEGORY_VIDEO_PROCESSOR"
-      href: ksmft-category-video-processor.md
-    - name: "language XML Element"
-      href: language-xml-element.md
-    - name: "legacyMode XML Element"
-      href: legacymode-xml-element.md
-    - name: "MediumChangerClassGuid "
-      href: mediumchangerclassguid.md
-    - name: "MOUNTDEV_MOUNTED_DEVICE_GUID"
-      href: mountdev-mounted-device-guid.md
-    - name: "package XML Element"
-      href: package-xml-element.md
-    - name: "PartitionClassGuid "
-      href: partitionclassguid.md
-    - name: "promptIfDriverIsNotBetter XML Element"
-      href: promptifdriverisnotbetter-xml-element.md
-    - name: "quietInstall XML Element"
-      href: quietinstall-xml-element.md
-    - name: "scanHardware XML Element"
-      href: scanhardware-xml-element.md
-    - name: "search XML Element"
-      href: search-xml-element.md
-    - name: "SetupDiGetWizardPage"
-      href: setupdigetwizardpage.md
-    - name: "SetupDiMoveDuplicateDevice"
-      href: setupdimoveduplicatedevice.md
-    - name: "SP_ENABLECLASS_PARAMS"
-      href: sp-enableclass-params.md
-    - name: "SP_INSTALLWIZARD_DATA"
-      href: sp-installwizard-data.md
-    - name: "SP_MOVEDEV_PARAMS"
-      href: sp-movedev-params.md
-    - name: "StoragePortClassGuid "
-      href: storageportclassguid.md
-    - name: "subDirectory XML Element"
-      href: subdirectory-xml-element.md
-    - name: "suppressAddRemovePrograms XML Element"
-      href: suppressaddremoveprograms-xml-element.md
-    - name: "suppressWizard XML Element"
-      href: suppresswizard-xml-element.md
-    - name: "System-Defined Device Setup Classes Available to Vendors"
-      href: system-defined-device-setup-classes-available-to-vendors.md
-    - name: "System-Defined Device Setup Classes Reserved for System Use"
-      href: system-defined-device-setup-classes-reserved-for-system-use.md
-    - name: "TapeClassGuid "
-      href: tapeclassguid.md
-    - name: "VolumeClassGuid "
-      href: volumeclassguid.md
-    - name: "watermarkPath XML Element"
-      href: watermarkpath-xml-element.md
-    - name: "welcomeIntro XML Element"
-      href: welcomeintro-xml-element.md
-    - name: "welcomeTitle XML Element"
-      href: welcometitle-xml-element.md
-    - name: "WriteOnceDiskClassGuid "
-      href: writeoncediskclassguid.md
+  - name: "ELAM Prerequisites"
+    href: elam-prerequisites.md
+  - name: "ELAM Driver Requirements"
+    href: elam-driver-requirements.md
+  - name: "ELAM Driver Submission"
+    href: elam-driver-submission.md
+- name: "Reference"
+  items: 
+  - name: "BUS1394_CLASS_GUID"
+    href: bus1394-class-guid.md
+  - name: "CdChangerClassGuid "
+    href: cdchangerclassguid.md
+  - name: "CdRomClassGuid"
+    href: cdromclassguid.md
+  - name: "CM_Add_Range"
+    href: cm-add-range.md
+  - name: "CM_Create_DevNode"
+    href: cm-create-devnode.md
+  - name: "CM_Create_DevNode_Ex"
+    href: cm-create-devnode-ex.md
+  - name: "CM_Create_Range_List"
+    href: cm-create-range-list.md
+  - name: "CM_Delete_Class_Key_Ex"
+    href: cm-delete-class-key-ex.md
+  - name: "CM_Delete_DevNode_Key_Ex"
+    href: cm-delete-devnode-key-ex.md
+  - name: "CM_Delete_Range"
+    href: cm-delete-range.md
+  - name: "CM_Detect_Resource_Conflict"
+    href: cm-detect-resource-conflict.md
+  - name: "CM_Detect_Resource_Conflict_Ex"
+    href: cm-detect-resource-conflict-ex.md
+  - name: "CM_Disable_DevNode_Ex"
+    href: cm-disable-devnode-ex.md
+  - name: "CM_Dup_Range_List"
+    href: cm-dup-range-list.md
+  - name: "CM_Enable_DevNode_Ex"
+    href: cm-enable-devnode-ex.md
+  - name: "CM_Find_Range"
+    href: cm-find-range.md
+  - name: "CM_First_Range"
+    href: cm-first-range.md
+  - name: "CM_Free_Range_List"
+    href: cm-free-range-list.md
+  - name: "CM_Get_Class_Key_Name"
+    href: cm-get-class-key-name.md
+  - name: "CM_Get_Class_Key_Name_Ex"
+    href: cm-get-class-key-name-ex.md
+  - name: "CM_Get_Class_Name"
+    href: cm-get-class-name.md
+  - name: "CM_Get_Class_Name_Ex"
+    href: cm-get-class-name-ex.md
+  - name: "CM_Get_Device_Interface_Alias_Ex"
+    href: cm-get-device-interface-alias-ex.md
+  - name: "CM_Get_Device_Interface_List_Ex"
+    href: cm-get-device-interface-list-ex.md
+  - name: "CM_Get_Device_Interface_List_Size_Ex"
+    href: cm-get-device-interface-list-size-ex.md
+  - name: "CM_Get_DevNode_Custom_Property"
+    href: cm-get-devnode-custom-property.md
+  - name: "CM_Get_DevNode_Custom_Property_Ex"
+    href: cm-get-devnode-custom-property-ex.md
+  - name: "CM_Get_DevNode_Registry_Property_Ex"
+    href: cm-get-devnode-registry-property-ex.md
+  - name: "CM_Get_Global_State"
+    href: cm-get-global-state.md
+  - name: "CM_Get_Global_State_Ex"
+    href: cm-get-global-state-ex.md
+  - name: "CM_Get_Hardware_Profile_Info"
+    href: cm-get-hardware-profile-info.md
+  - name: "CM_Get_Hardware_Profile_Info_Ex"
+    href: cm-get-hardware-profile-info-ex.md
+  - name: "CM_Intersect_Range_List"
+    href: cm-intersect-range-list.md
+  - name: "CM_Invert_Range_List"
+    href: cm-invert-range-list.md
+  - name: "CM_Merge_Range_List"
+    href: cm-merge-range-list.md
+  - name: "CM_Move_DevNode"
+    href: cm-move-devnode.md
+  - name: "CM_Move_DevNode_Ex"
+    href: cm-move-devnode-ex.md
+  - name: "CM_Next_Range"
+    href: cm-next-range.md
+  - name: "CM_Open_Class_Key_Ex"
+    href: cm-open-class-key-ex.md
+  - name: "CM_Open_DevNode_Key_Ex"
+    href: cm-open-devnode-key-ex.md
+  - name: "CM_Query_Arbitrator_Free_Data"
+    href: cm-query-arbitrator-free-data.md
+  - name: "CM_Query_Arbitrator_Free_Data_Ex"
+    href: cm-query-arbitrator-free-data-ex.md
+  - name: "CM_Query_Arbitrator_Free_Size"
+    href: cm-query-arbitrator-free-size.md
+  - name: "CM_Query_Arbitrator_Free_Size_Ex"
+    href: cm-query-arbitrator-free-size-ex.md
+  - name: "CM_Query_Remove_SubTree"
+    href: cm-query-remove-subtree.md
+  - name: "CM_Query_Remove_SubTree_Ex"
+    href: cm-query-remove-subtree-ex.md
+  - name: "CM_Register_Device_Driver"
+    href: cm-register-device-driver.md
+  - name: "CM_Register_Device_Driver_Ex"
+    href: cm-register-device-driver-ex.md
+  - name: "CM_Register_Device_Interface"
+    href: cm-register-device-interface.md
+  - name: "CM_Register_Device_Interface_Ex"
+    href: cm-register-device-interface-ex.md
+  - name: "CM_Remove_SubTree"
+    href: cm-remove-subtree.md
+  - name: "CM_Remove_SubTree_Ex"
+    href: cm-remove-subtree-ex.md
+  - name: "CM_Run_Detection"
+    href: cm-run-detection.md
+  - name: "CM_Run_Detection_Ex"
+    href: cm-run-detection-ex.md
+  - name: "CM_Set_DevNode_Registry_Property_Ex"
+    href: cm-set-devnode-registry-property-ex.md
+  - name: "CM_Set_HW_Prof"
+    href: cm-set-hw-prof.md
+  - name: "CM_Set_HW_Prof_Ex"
+    href: cm-set-hw-prof-ex.md
+  - name: "CM_Set_HW_Prof_Flags"
+    href: cm-set-hw-prof-flags.md
+  - name: "CM_Set_HW_Prof_Flags_Ex"
+    href: cm-set-hw-prof-flags-ex.md
+  - name: "CM_Setup_DevNode_Ex"
+    href: cm-setup-devnode-ex.md
+  - name: "CM_Test_Range_Available"
+    href: cm-test-range-available.md
+  - name: "CM_Uninstall_DevNode_Ex"
+    href: cm-uninstall-devnode-ex.md
+  - name: "CM_Unregister_Device_Interface"
+    href: cm-unregister-device-interface.md
+  - name: "CM_Unregister_Device_Interface_Ex"
+    href: cm-unregister-device-interface-ex.md
+  - name: "CM_WaitNoPendingInstallEvents"
+    href: cm-waitnopendinginstallevents.md
+  - name: "Config.DriverKey Section of a TxtSetup.oem File"
+    href: config-driverkey-section-of-a-txtsetup-oem-file.md
+  - name: "Defaults Section of a TxtSetup.oem File"
+    href: defaults-section-of-a-txtsetup-oem-file.md
+  - name: "DEFINE_DEVPROPKEY"
+    href: define-devpropkey.md
+  - name: "deleteBinaries XML Element"
+    href: deletebinaries-xml-element.md
+  - name: "DEVPKEY_Device_Address"
+    href: devpkey-device-address.md
+  - name: "DEVPKEY_Device_BaseContainerId"
+    href: devpkey-device-basecontainerid.md
+  - name: "DEVPKEY_Device_BusNumber"
+    href: devpkey-device-busnumber.md
+  - name: "DEVPKEY_Device_BusRelations"
+    href: devpkey-device-busrelations.md
+  - name: "DEVPKEY_Device_BusReportedDeviceDesc"
+    href: devpkey-device-busreporteddevicedesc.md
+  - name: "DEVPKEY_Device_BusTypeGuid"
+    href: devpkey-device-bustypeguid.md
+  - name: "DEVPKEY_Device_Capabilities"
+    href: devpkey-device-capabilities.md
+  - name: "DEVPKEY_Device_Characteristics"
+    href: devpkey-device-characteristics.md
+  - name: "DEVPKEY_Device_Children"
+    href: devpkey-device-children.md
+  - name: "DEVPKEY_Device_Class"
+    href: devpkey-device-class.md
+  - name: "DEVPKEY_Device_ClassGuid"
+    href: devpkey-device-classguid.md
+  - name: "DEVPKEY_Device_CompatibleIds"
+    href: devpkey-device-compatibleids.md
+  - name: "DEVPKEY_Device_ConfigFlags"
+    href: devpkey-device-configflags.md
+  - name: "DEVPKEY_Device_ContainerId"
+    href: devpkey-device-containerid.md
+  - name: "DEVPKEY_Device_DeviceDesc"
+    href: devpkey-device-devicedesc.md
+  - name: "DEVPKEY_Device_DevNodeStatus"
+    href: devpkey-device-devnodestatus.md
+  - name: "DEVPKEY_Device_DevType"
+    href: devpkey-device-devtype.md
+  - name: "DEVPKEY_Device_DHP_Rebalance_Policy"
+    href: devpkey-device-dhp-rebalance-policy.md
+  - name: "DEVPKEY_Device_Driver"
+    href: devpkey-device-driver.md
+  - name: "DEVPKEY_Device_DriverCoInstallers"
+    href: devpkey-device-drivercoinstallers.md
+  - name: "DEVPKEY_Device_DriverDate"
+    href: devpkey-device-driverdate.md
+  - name: "DEVPKEY_Device_DriverDesc"
+    href: devpkey-device-driverdesc.md
+  - name: "DEVPKEY_Device_DriverInfPath"
+    href: devpkey-device-driverinfpath.md
+  - name: "DEVPKEY_Device_DriverInfSection"
+    href: devpkey-device-driverinfsection.md
+  - name: "DEVPKEY_Device_DriverInfSectionExt"
+    href: devpkey-device-driverinfsectionext.md
+  - name: "DEVPKEY_Device_DriverLogoLevel"
+    href: devpkey-device-driverlogolevel.md
+  - name: "DEVPKEY_Device_DriverPropPageProvider"
+    href: devpkey-device-driverproppageprovider.md
+  - name: "DEVPKEY_Device_DriverProvider"
+    href: devpkey-device-driverprovider.md
+  - name: "DEVPKEY_Device_DriverRank"
+    href: devpkey-device-driverrank.md
+  - name: "DEVPKEY_Device_DriverVersion"
+    href: devpkey-device-driverversion.md
+  - name: "DEVPKEY_Device_EjectionRelations"
+    href: devpkey-device-ejectionrelations.md
+  - name: "DEVPKEY_Device_EnumeratorName"
+    href: devpkey-device-enumeratorname.md
+  - name: "DEVPKEY_Device_Exclusive"
+    href: devpkey-device-exclusive.md
+  - name: "DEVPKEY_Device_FirstInstallDate"
+    href: devpkey-device-firstinstalldate.md
+  - name: "DEVPKEY_Device_FriendlyName"
+    href: devpkey-device-friendlyname.md
+  - name: "DEVPKEY_Device_GenericDriverInstalled"
+    href: devpkey-device-genericdriverinstalled.md
+  - name: "DEVPKEY_Device_HardwareIds"
+    href: devpkey-device-hardwareids.md
+  - name: "DEVPKEY_Device_InstallDate"
+    href: devpkey-device-installdate.md
+  - name: "DEVPKEY_Device_InstallState"
+    href: devpkey-device-installstate.md
+  - name: "DEVPKEY_Device_InstanceId"
+    href: devpkey-device-instanceid.md
+  - name: "DEVPKEY_Device_Legacy"
+    href: devpkey-device-legacy.md
+  - name: "DEVPKEY_Device_LegacyBusType"
+    href: devpkey-device-legacybustype.md
+  - name: "DEVPKEY_Device_LocationInfo"
+    href: devpkey-device-locationinfo.md
+  - name: "DEVPKEY_Device_LocationPaths"
+    href: devpkey-device-locationpaths.md
+  - name: "DEVPKEY_Device_LowerFilters"
+    href: devpkey-device-lowerfilters.md
+  - name: "DEVPKEY_Device_Manufacturer"
+    href: devpkey-device-manufacturer.md
+  - name: "DEVPKEY_Device_MatchingDeviceId"
+    href: devpkey-device-matchingdeviceid.md
+  - name: "DEVPKEY_Device_ModelId"
+    href: devpkey-device-modelid.md
+  - name: "DEVPKEY_Device_NoConnectSound"
+    href: devpkey-device-noconnectsound.md
+  - name: "DEVPKEY_Device_Parent"
+    href: devpkey-device-parent.md
+  - name: "DEVPKEY_Device_PDOName"
+    href: devpkey-device-pdoname.md
+  - name: "DEVPKEY_Device_PhysicalDeviceLocation"
+    href: devpkey-device-physicaldevicelocation.md
+  - name: "DEVPKEY_Device_PowerData"
+    href: devpkey-device-powerdata.md
+  - name: "DEVPKEY_Device_PowerRelations "
+    href: devpkey-device-powerrelations.md
+  - name: "DEVPKEY_Device_ProblemCode"
+    href: devpkey-device-problemcode.md
+  - name: "DEVPKEY_Device_RemovalPolicy"
+    href: devpkey-device-removalpolicy.md
+  - name: "DEVPKEY_Device_RemovalPolicyDefault"
+    href: devpkey-device-removalpolicydefault.md
+  - name: "DEVPKEY_Device_RemovalPolicyOverride"
+    href: devpkey-device-removalpolicyoverride.md
+  - name: "DEVPKEY_Device_RemovalRelations"
+    href: devpkey-device-removalrelations.md
+  - name: "DEVPKEY_Device_Reported"
+    href: devpkey-device-reported.md
+  - name: "DEVPKEY_Device_ResourcePickerExceptions"
+    href: devpkey-device-resourcepickerexceptions.md
+  - name: "DEVPKEY_Device_ResourcePickerTags"
+    href: devpkey-device-resourcepickertags.md
+  - name: "DEVPKEY_Device_SafeRemovalRequired"
+    href: devpkey-device-saferemovalrequired.md
+  - name: "DEVPKEY_Device_SafeRemovalRequiredOverride"
+    href: devpkey-device-saferemovalrequiredoverride.md
+  - name: "DEVPKEY_Device_Security"
+    href: devpkey-device-security.md
+  - name: "DEVPKEY_Device_SecuritySDS"
+    href: devpkey-device-securitysds.md
+  - name: "DEVPKEY_Device_Service"
+    href: devpkey-device-service.md
+  - name: "DEVPKEY_Device_SessionId"
+    href: devpkey-device-sessionid.md
+  - name: "DEVPKEY_Device_Siblings"
+    href: devpkey-device-siblings.md
+  - name: "DEVPKEY_Device_UINumber"
+    href: devpkey-device-uinumber.md
+  - name: "DEVPKEY_Device_UINumberDescFormat"
+    href: devpkey-device-uinumberdescformat.md
+  - name: "DEVPKEY_Device_UpperFilters"
+    href: devpkey-device-upperfilters.md
+  - name: "DEVPKEY_DeviceClass_Characteristics"
+    href: devpkey-deviceclass-characteristics.md
+  - name: "DEVPKEY_DeviceClass_ClassCoInstallers"
+    href: devpkey-deviceclass-classcoinstallers.md
+  - name: "DEVPKEY_DeviceClass_ClassInstaller"
+    href: devpkey-deviceclass-classinstaller.md
+  - name: "DEVPKEY_DeviceClass_ClassName"
+    href: devpkey-deviceclass-classname.md
+  - name: "DEVPKEY_DeviceClass_DefaultService"
+    href: devpkey-deviceclass-defaultservice.md
+  - name: "DEVPKEY_DeviceClass_DevType"
+    href: devpkey-deviceclass-devtype.md
+  - name: "DEVPKEY_DeviceClass_DHPRebalanceOptOut"
+    href: devpkey-deviceclass-dhprebalanceoptout.md
+  - name: "DEVPKEY_DeviceClass_Exclusive"
+    href: devpkey-deviceclass-exclusive.md
+  - name: "DEVPKEY_DeviceClass_Icon"
+    href: devpkey-deviceclass-icon.md
+  - name: "DEVPKEY_DeviceClass_IconPath"
+    href: devpkey-deviceclass-iconpath.md
+  - name: "DEVPKEY_DeviceClass_LowerFilters"
+    href: devpkey-deviceclass-lowerfilters.md
+  - name: "DEVPKEY_DeviceClass_Name"
+    href: devpkey-deviceclass-name.md
+  - name: "DEVPKEY_DeviceClass_NoDisplayClass"
+    href: devpkey-deviceclass-nodisplayclass.md
+  - name: "DEVPKEY_DeviceClass_NoInstallClass"
+    href: devpkey-deviceclass-noinstallclass.md
+  - name: "DEVPKEY_DeviceClass_NoUseClass"
+    href: devpkey-deviceclass-nouseclass.md
+  - name: "DEVPKEY_DeviceClass_PropPageProvider"
+    href: devpkey-deviceclass-proppageprovider.md
+  - name: "DEVPKEY_DeviceClass_Security"
+    href: devpkey-deviceclass-security.md
+  - name: "DEVPKEY_DeviceClass_SecuritySDS"
+    href: devpkey-deviceclass-securitysds.md
+  - name: "DEVPKEY_DeviceClass_SilentInstall"
+    href: devpkey-deviceclass-silentinstall.md
+  - name: "DEVPKEY_DeviceClass_UpperFilters"
+    href: devpkey-deviceclass-upperfilters.md
+  - name: "DEVPKEY_DeviceDisplay_Category"
+    href: devpkey-devicedisplay-category.md
+  - name: "DEVPKEY_DeviceInterface_ClassGuid"
+    href: devpkey-deviceinterface-classguid.md
+  - name: "DEVPKEY_DeviceInterface_DefaultInterface"
+    href: devpkey-deviceinterface-defaultinterface.md
+  - name: "DEVPKEY_DeviceInterface_Enabled"
+    href: devpkey-deviceinterface-enabled.md
+  - name: "DEVPKEY_DeviceInterface_FriendlyName"
+    href: devpkey-deviceinterface-friendlyname.md
+  - name: "DEVPKEY_DeviceInterface_Restricted"
+    href: devpkey-deviceinterface-restricted.md
+  - name: "DEVPKEY_DrvPkg_BrandingIcon"
+    href: devpkey-drvpkg-brandingicon.md
+  - name: "DEVPKEY_DrvPkg_DetailedDescription"
+    href: devpkey-drvpkg-detaileddescription.md
+  - name: "DEVPKEY_DrvPkg_DocumentationLink"
+    href: devpkey-drvpkg-documentationlink.md
+  - name: "DEVPKEY_DrvPkg_Icon"
+    href: devpkey-drvpkg-icon.md
+  - name: "DEVPKEY_DrvPkg_Model"
+    href: devpkey-drvpkg-model.md
+  - name: "DEVPKEY_DrvPkg_VendorWebSite"
+    href: devpkey-drvpkg-vendorwebsite.md
+  - name: "DEVPKEY_NAME (Device Instance)"
+    href: devpkey-name--device-instance-.md
+  - name: "DEVPKEY_NAME (Device Interface)"
+    href: devpkey-name--device-interface-.md
+  - name: "DEVPKEY_NAME (Device Setup Class)"
+    href: devpkey-name--device-setup-class-.md
+  - name: "DEVPKEY_Numa_Proximity_Domain"
+    href: devpkey-numa-proximity-domain.md
+  - name: "DEVPRIVATE_DES"
+    href: devprivate-des.md
+  - name: "DEVPRIVATE_RANGE"
+    href: devprivate-range.md
+  - name: "DEVPRIVATE_RESOURCE"
+    href: devprivate-resource.md
+  - name: "DEVPROP_MASK_TYPE"
+    href: devprop-mask-type.md
+  - name: "DEVPROP_MASK_TYPEMOD"
+    href: devprop-mask-typemod.md
+  - name: "DEVPROP_TYPE_BINARY"
+    href: devprop-type-binary.md
+  - name: "DEVPROP_TYPE_BOOLEAN"
+    href: devprop-type-boolean.md
+  - name: "DEVPROP_TYPE_BYTE"
+    href: devprop-type-byte.md
+  - name: "DEVPROP_TYPE_CURRENCY"
+    href: devprop-type-currency.md
+  - name: "DEVPROP_TYPE_DATE"
+    href: devprop-type-date.md
+  - name: "DEVPROP_TYPE_DECIMAL"
+    href: devprop-type-decimal.md
+  - name: "DEVPROP_TYPE_DEVPROPKEY"
+    href: devprop-type-devpropkey.md
+  - name: "DEVPROP_TYPE_DEVPROPTYPE"
+    href: devprop-type-devproptype.md
+  - name: "DEVPROP_TYPE_DOUBLE"
+    href: devprop-type-double.md
+  - name: "DEVPROP_TYPE_EMPTY"
+    href: devprop-type-empty.md
+  - name: "DEVPROP_TYPE_ERROR"
+    href: devprop-type-error.md
+  - name: "DEVPROP_TYPE_FILETIME"
+    href: devprop-type-filetime.md
+  - name: "DEVPROP_TYPE_FLOAT"
+    href: devprop-type-float.md
+  - name: "DEVPROP_TYPE_GUID"
+    href: devprop-type-guid.md
+  - name: "DEVPROP_TYPE_INT16"
+    href: devprop-type-int16.md
+  - name: "DEVPROP_TYPE_INT32"
+    href: devprop-type-int32.md
+  - name: "DEVPROP_TYPE_INT64"
+    href: devprop-type-int64.md
+  - name: "DEVPROP_TYPE_NTSTATUS"
+    href: devprop-type-ntstatus.md
+  - name: "DEVPROP_TYPE_NULL"
+    href: devprop-type-null.md
+  - name: "DEVPROP_TYPE_SBYTE"
+    href: devprop-type-sbyte.md
+  - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR"
+    href: devprop-type-security-descriptor.md
+  - name: "DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING"
+    href: devprop-type-security-descriptor-string.md
+  - name: "DEVPROP_TYPE_STRING"
+    href: devprop-type-string.md
+  - name: "DEVPROP_TYPE_STRING_INDIRECT"
+    href: devprop-type-string-indirect.md
+  - name: "DEVPROP_TYPE_STRING_LIST"
+    href: devprop-type-string-list.md
+  - name: "DEVPROP_TYPE_UINT16"
+    href: devprop-type-uint16.md
+  - name: "DEVPROP_TYPE_UINT32"
+    href: devprop-type-uint32.md
+  - name: "DEVPROP_TYPE_UINT64"
+    href: devprop-type-uint64.md
+  - name: "DEVPROP_TYPEMOD_ARRAY"
+    href: devprop-typemod-array.md
+  - name: "DEVPROP_TYPEMOD_LIST"
+    href: devprop-typemod-list.md
+  - name: "DEVPROPKEY"
+    href: devpropkey.md
+  - name: "DIF_ADDPROPERTYPAGE_ADVANCED"
+    href: dif-addpropertypage-advanced.md
+  - name: "DIF_ADDPROPERTYPAGE_BASIC"
+    href: dif-addpropertypage-basic.md
+  - name: "DIF_ALLOW_INSTALL"
+    href: dif-allow-install.md
+  - name: "DIF_ASSIGNRESOURCES"
+    href: dif-assignresources.md
+  - name: "DIF_CALCDISKSPACE"
+    href: dif-calcdiskspace.md
+  - name: "DIF_DESTROYPRIVATEDATA"
+    href: dif-destroyprivatedata.md
+  - name: "DIF_DESTROYWIZARDDATA"
+    href: dif-destroywizarddata.md
+  - name: "DIF_DETECT"
+    href: dif-detect.md
+  - name: "DIF_DETECTCANCEL"
+    href: dif-detectcancel.md
+  - name: "DIF_DETECTVERIFY"
+    href: dif-detectverify.md
+  - name: "DIF_ENABLECLASS"
+    href: dif-enableclass.md
+  - name: "DIF_FINISHINSTALL_ACTION"
+    href: dif-finishinstall-action.md
+  - name: "DIF_FIRSTTIMESETUP"
+    href: dif-firsttimesetup.md
+  - name: "DIF_FOUNDDEVICE"
+    href: dif-founddevice.md
+  - name: "DIF_INSTALLCLASSDRIVERS"
+    href: dif-installclassdrivers.md
+  - name: "DIF_INSTALLDEVICE"
+    href: dif-installdevice.md
+  - name: "DIF_INSTALLDEVICEFILES"
+    href: dif-installdevicefiles.md
+  - name: "DIF_INSTALLINTERFACES"
+    href: dif-installinterfaces.md
+  - name: "DIF_INSTALLWIZARD"
+    href: dif-installwizard.md
+  - name: "DIF_MOVEDEVICE"
+    href: dif-movedevice.md
+  - name: "DIF_NEWDEVICEWIZARD_FINISHINSTALL"
+    href: dif-newdevicewizard-finishinstall.md
+  - name: "DIF_NEWDEVICEWIZARD_POSTANALYZE"
+    href: dif-newdevicewizard-postanalyze.md
+  - name: "DIF_NEWDEVICEWIZARD_PREANALYZE"
+    href: dif-newdevicewizard-preanalyze.md
+  - name: "DIF_NEWDEVICEWIZARD_PRESELECT"
+    href: dif-newdevicewizard-preselect.md
+  - name: "DIF_NEWDEVICEWIZARD_SELECT"
+    href: dif-newdevicewizard-select.md
+  - name: "DIF_POWERMESSAGEWAKE"
+    href: dif-powermessagewake.md
+  - name: "DIF_PROPERTIES"
+    href: dif-properties.md
+  - name: "DIF_PROPERTYCHANGE"
+    href: dif-propertychange.md
+  - name: "DIF_REGISTER_COINSTALLERS"
+    href: dif-register-coinstallers.md
+  - name: "DIF_REGISTERDEVICE"
+    href: dif-registerdevice.md
+  - name: "DIF_REMOVE"
+    href: dif-remove.md
+  - name: "DIF_SELECTBESTCOMPATDRV"
+    href: dif-selectbestcompatdrv.md
+  - name: "DIF_SELECTCLASSDRIVERS"
+    href: dif-selectclassdrivers.md
+  - name: "DIF_SELECTDEVICE"
+    href: dif-selectdevice.md
+  - name: "DIF_TROUBLESHOOTER"
+    href: dif-troubleshooter.md
+  - name: "DIF_UNREMOVE"
+    href: dif-unremove.md
+  - name: "DIF_UPDATEDRIVER_UI"
+    href: dif-updatedriver-ui.md
+  - name: "DIF_VALIDATECLASSDRIVERS"
+    href: dif-validateclassdrivers.md
+  - name: "DIF_VALIDATEDRIVER"
+    href: dif-validatedriver.md
+  - name: "DiskClassGuid"
+    href: diskclassguid.md
+  - name: "Disks Section of a TxtSetup.oem File"
+    href: disks-section-of-a-txtsetup-oem-file.md
+  - name: "dpinst XML Element"
+    href: dpinst-xml-element.md
+  - name: "dpinstTitle XML Element"
+    href: dpinsttitle-xml-element.md
+  - name: "enableNotListedLanguages XML Element"
+    href: enablenotlistedlanguages-xml-element.md
+  - name: "eula XML Element"
+    href: eula-xml-element.md
+  - name: "eulaHeaderTitle XML Element"
+    href: eulaheadertitle-xml-element.md
+  - name: "eulaNoButton XML Element"
+    href: eulanobutton-xml-element.md
+  - name: "eulaYesButton XML Element"
+    href: eulayesbutton-xml-element.md
+  - name: "Files.HwComponent.ID Section of a TxtSetup.oem File"
+    href: files-hwcomponent-id-section-of-a-txtsetup-oem-file.md
+  - name: "finishText XML Element"
+    href: finishtext-xml-element.md
+  - name: "finishTitle XML Element"
+    href: finishtitle-xml-element.md
+  - name: "FloppyClassGuid"
+    href: floppyclassguid.md
+  - name: "forceIfDriverIsNotBetter XML Element"
+    href: forceifdriverisnotbetter-xml-element.md
+  - name: "group XML Element"
+    href: group-xml-element.md
+  - name: "GUID_61883_CLASS"
+    href: guid-61883-class.md
+  - name: "GUID_AVC_CLASS"
+    href: guid-avc-class.md
+  - name: "GUID_BTHPORT_DEVICE_INTERFACE"
+    href: guid-bthport-device-interface.md
+  - name: "GUID_CLASS_COMPORT"
+    href: guid-class-comport.md
+  - name: "GUID_CLASS_INPUT"
+    href: guid-class-input.md
+  - name: "GUID_CLASS_KEYBOARD"
+    href: guid-class-keyboard.md
+  - name: "GUID_CLASS_MODEM"
+    href: guid-class-modem.md
+  - name: "GUID_CLASS_MOUSE"
+    href: guid-class-mouse.md
+  - name: "GUID_CLASS_USB_DEVICE"
+    href: guid-class-usb-device.md
+  - name: "GUID_CLASS_USB_HOST_CONTROLLER"
+    href: guid-class-usb-host-controller.md
+  - name: "GUID_CLASS_USBHUB"
+    href: guid-class-usbhub.md
+  - name: "GUID_DEVICE_APPLICATIONLAUNCH_BUTTON"
+    href: guid-device-applicationlaunch-button.md
+  - name: "GUID_DEVICE_BATTERY"
+    href: guid-device-battery.md
+  - name: "GUID_DEVICE_LID"
+    href: guid-device-lid.md
+  - name: "GUID_DEVICE_MEMORY"
+    href: guid-device-memory.md
+  - name: "GUID_DEVICE_MESSAGE_INDICATOR"
+    href: guid-device-message-indicator.md
+  - name: "GUID_DEVICE_PROCESSOR"
+    href: guid-device-processor.md
+  - name: "GUID_DEVICE_SYS_BUTTON"
+    href: guid-device-sys-button.md
+  - name: "GUID_DEVICE_THERMAL_ZONE"
+    href: guid-device-thermal-zone.md
+  - name: "GUID_DEVINTERFACE_BRIGHTNESS"
+    href: guid-devinterface-brightness.md
+  - name: "GUID_DEVINTERFACE_CDCHANGER "
+    href: guid-devinterface-cdchanger.md
+  - name: "GUID_DEVINTERFACE_CDROM"
+    href: guid-devinterface-cdrom.md
+  - name: "GUID_DEVINTERFACE_COMPORT"
+    href: guid-devinterface-comport.md
+  - name: "GUID_DEVINTERFACE_DISK"
+    href: guid-devinterface-disk.md
+  - name: "GUID_DEVINTERFACE_DISPLAY_ADAPTER"
+    href: guid-devinterface-display-adapter.md
+  - name: "GUID_DEVINTERFACE_FLOPPY"
+    href: guid-devinterface-floppy.md
+  - name: "GUID_DEVINTERFACE_HID"
+    href: guid-devinterface-hid.md
+  - name: "GUID_DEVINTERFACE_I2C"
+    href: guid-devinterface-i2c.md
+  - name: "GUID_DEVINTERFACE_IMAGE"
+    href: guid-devinterface-image.md
+  - name: "GUID_DEVINTERFACE_KEYBOARD"
+    href: guid-devinterface-keyboard.md
+  - name: "GUID_DEVINTERFACE_MEDIUMCHANGER"
+    href: guid-devinterface-mediumchanger.md
+  - name: "GUID_DEVINTERFACE_MODEM"
+    href: guid-devinterface-modem.md
+  - name: "GUID_DEVINTERFACE_MONITOR"
+    href: guid-devinterface-monitor.md
+  - name: "GUID_DEVINTERFACE_MOUSE"
+    href: guid-devinterface-mouse.md
+  - name: "GUID_DEVINTERFACE_NET"
+    href: guid-devinterface-net.md
+  - name: "GUID_DEVINTERFACE_OPM"
+    href: guid-devinterface-opm.md
+  - name: "GUID_DEVINTERFACE_PARALLEL"
+    href: guid-devinterface-parallel.md
+  - name: "GUID_DEVINTERFACE_PARCLASS"
+    href: guid-devinterface-parclass.md
+  - name: "GUID_DEVINTERFACE_PARTITION"
+    href: guid-devinterface-partition.md
+  - name: "GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR"
+    href: guid-devinterface-serenum-bus-enumerator.md
+  - name: "GUID_DEVINTERFACE_SIDESHOW"
+    href: guid-devinterface-sideshow.md
+  - name: "GUID_DEVINTERFACE_STORAGEPORT"
+    href: guid-devinterface-storageport.md
+  - name: "GUID_DEVINTERFACE_TAPE "
+    href: guid-devinterface-tape.md
+  - name: "GUID_DEVINTERFACE_USB_DEVICE"
+    href: guid-devinterface-usb-device.md
+  - name: "GUID_DEVINTERFACE_USB_HOST_CONTROLLER"
+    href: guid-devinterface-usb-host-controller.md
+  - name: "GUID_DEVINTERFACE_USB_HUB"
+    href: guid-devinterface-usb-hub.md
+  - name: "GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL"
+    href: guid-devinterface-video-output-arrival.md
+  - name: "GUID_DEVINTERFACE_VOLUME"
+    href: guid-devinterface-volume.md
+  - name: "GUID_DEVINTERFACE_WPD"
+    href: guid-devinterface-wpd.md
+  - name: "GUID_DEVINTERFACE_WPD_PRIVATE"
+    href: guid-devinterface-wpd-private.md
+  - name: "GUID_DEVINTERFACE_WRITEONCEDISK"
+    href: guid-devinterface-writeoncedisk.md
+  - name: "GUID_DISPLAY_ADAPTER_INTERFACE"
+    href: guid-display-adapter-interface.md
+  - name: "GUID_DISPLAY_DEVICE_ARRIVAL"
+    href: guid-display-device-arrival.md
+  - name: "GUID_IO_VOLUME_DEVICE_INTERFACE"
+    href: guid-io-volume-device-interface.md
+  - name: "GUID_PARALLEL_DEVICE"
+    href: guid-parallel-device.md
+  - name: "GUID_PARCLASS_DEVICE"
+    href: guid-parclass-device.md
+  - name: "GUID_SERENUM_BUS_ENUMERATOR"
+    href: guid-serenum-bus-enumerator.md
+  - name: "GUID_VIRTUAL_AVC_CLASS"
+    href: guid-virtual-avc-class.md
+  - name: "HardwareIds.scsi.ID Section of a TxtSetup.oem File"
+    href: hardwareids-scsi-id-section-of-a-txtsetup-oem-file.md
+  - name: "headerPath XML Element"
+    href: headerpath-xml-element.md
+  - name: "HwComponent Section of a TxtSetup.oem File"
+    href: hwcomponent-section-of-a-txtsetup-oem-file.md
+  - name: "icon XML Element"
+    href: icon-xml-element.md
+  - name: "installAllOrNone XML Element"
+    href: installallornone-xml-element.md
+  - name: "installHeaderTitle XML Element"
+    href: installheadertitle-xml-element.md
+  - name: "InstallSelectedDriver"
+    href: installselecteddriver.md
+  - name: "KSCATEGORY_ACOUSTIC_ECHO_CANCEL "
+    href: kscategory-acoustic-echo-cancel.md
+  - name: "KSCATEGORY_AUDIO"
+    href: kscategory-audio.md
+  - name: "KSCATEGORY_AUDIO_DEVICE"
+    href: kscategory-audio-device.md
+  - name: "KSCATEGORY_AUDIO_GFX"
+    href: kscategory-audio-gfx.md
+  - name: "KSCATEGORY_AUDIO_SPLITTER"
+    href: kscategory-audio-splitter.md
+  - name: "KSCATEGORY_BDA_IP_SINK"
+    href: kscategory-bda-ip-sink.md
+  - name: "KSCATEGORY_BDA_NETWORK_EPG"
+    href: kscategory-bda-network-epg.md
+  - name: "KSCATEGORY_BDA_NETWORK_PROVIDER"
+    href: kscategory-bda-network-provider.md
+  - name: "KSCATEGORY_BDA_NETWORK_TUNER"
+    href: kscategory-bda-network-tuner.md
+  - name: "KSCATEGORY_BDA_RECEIVER_COMPONENT"
+    href: kscategory-bda-receiver-component.md
+  - name: "KSCATEGORY_BDA_TRANSPORT_INFORMATION"
+    href: kscategory-bda-transport-information.md
+  - name: "KSCATEGORY_BRIDGE "
+    href: kscategory-bridge.md
+  - name: "KSCATEGORY_CAPTURE"
+    href: kscategory-capture.md
+  - name: "KSCATEGORY_CLOCK"
+    href: kscategory-clock.md
+  - name: "KSCATEGORY_COMMUNICATIONSTRANSFORM "
+    href: kscategory-communicationstransform.md
+  - name: "KSCATEGORY_CROSSBAR"
+    href: kscategory-crossbar.md
+  - name: "KSCATEGORY_DATACOMPRESSOR"
+    href: kscategory-datacompressor.md
+  - name: "KSCATEGORY_DATADECOMPRESSOR"
+    href: kscategory-datadecompressor.md
+  - name: "KSCATEGORY_DATATRANSFORM"
+    href: kscategory-datatransform.md
+  - name: "KSCATEGORY_DRM_DESCRAMBLE "
+    href: kscategory-drm-descramble.md
+  - name: "KSCATEGORY_ENCODER "
+    href: kscategory-encoder.md
+  - name: "KSCATEGORY_ESCALANTE_PLATFORM_DRIVER"
+    href: kscategory-escalante-platform-driver.md
+  - name: "KSCATEGORY_FILESYSTEM "
+    href: kscategory-filesystem.md
+  - name: "KSCATEGORY_INTERFACETRANSFORM"
+    href: kscategory-interfacetransform.md
+  - name: "KSCATEGORY_MEDIUMTRANSFORM "
+    href: kscategory-mediumtransform.md
+  - name: "KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR"
+    href: kscategory-microphone-array-processor.md
+  - name: "KSCATEGORY_MIXER"
+    href: kscategory-mixer.md
+  - name: "KSCATEGORY_MULTIPLEXER "
+    href: kscategory-multiplexer.md
+  - name: "KSCATEGORY_NETWORK"
+    href: kscategory-network.md
+  - name: "KSCATEGORY_NETWORK_CAMERA"
+    href: kscategory-network-camera.md
+  - name: "KSCATEGORY_PREFERRED_MIDIOUT_DEVICE"
+    href: kscategory-preferred-midiout-device.md
+  - name: "KSCATEGORY_PREFERRED_WAVEIN_DEVICE"
+    href: kscategory-preferred-wavein-device.md
+  - name: "KSCATEGORY_PREFERRED_WAVEOUT_DEVICE"
+    href: kscategory-preferred-waveout-device.md
+  - name: "KSCATEGORY_PROXY"
+    href: kscategory-proxy.md
+  - name: "KSCATEGORY_QUALITY"
+    href: kscategory-quality.md
+  - name: "KSCATEGORY_REALTIME "
+    href: kscategory-realtime.md
+  - name: "KSCATEGORY_RENDER"
+    href: kscategory-render.md
+  - name: "KSCATEGORY_SENSOR_CAMERA"
+    href: kscategory-sensor-camera.md
+  - name: "KSCATEGORY_SPLITTER"
+    href: kscategory-splitter.md
+  - name: "KSCATEGORY_SYNTHESIZER "
+    href: kscategory-synthesizer.md
+  - name: "KSCATEGORY_SYSAUDIO"
+    href: kscategory-sysaudio.md
+  - name: "KSCATEGORY_TEXT"
+    href: kscategory-text.md
+  - name: "KSCATEGORY_TOPOLOGY"
+    href: kscategory-topology.md
+  - name: "KSCATEGORY_TVAUDIO"
+    href: kscategory-tvaudio.md
+  - name: "KSCATEGORY_TVTUNER"
+    href: kscategory-tvtuner.md
+  - name: "KSCATEGORY_VBICODEC"
+    href: kscategory-vbicodec.md
+  - name: "KSCATEGORY_VIDEO"
+    href: kscategory-video.md
+  - name: "KSCATEGORY_VIDEO_CAMERA"
+    href: kscategory-video-camera.md
+  - name: "KSCATEGORY_VIRTUAL"
+    href: kscategory-virtual.md
+  - name: "KSCATEGORY_VPMUX"
+    href: kscategory-vpmux.md
+  - name: "KSCATEGORY_WDMAUD"
+    href: kscategory-wdmaud.md
+  - name: "KSMFT_CATEGORY_AUDIO_DECODER"
+    href: ksmft-category-audio-decoder.md
+  - name: "KSMFT_CATEGORY_AUDIO_EFFECT"
+    href: ksmft-category-audio-effect.md
+  - name: "KSMFT_CATEGORY_AUDIO_ENCODER"
+    href: ksmft-category-audio-encoder.md
+  - name: "KSMFT_CATEGORY_DEMULTIPLEXER"
+    href: ksmft-category-demultiplexer.md
+  - name: "KSMFT_CATEGORY_MULTIPLEXER"
+    href: ksmft-category-multiplexer.md
+  - name: "KSMFT_CATEGORY_OTHER"
+    href: ksmft-category-other.md
+  - name: "KSMFT_CATEGORY_VIDEO_DECODER"
+    href: ksmft-category-video-decoder.md
+  - name: "KSMFT_CATEGORY_VIDEO_EFFECT"
+    href: ksmft-category-video-effect.md
+  - name: "KSMFT_CATEGORY_VIDEO_ENCODER"
+    href: ksmft-category-video-encoder.md
+  - name: "KSMFT_CATEGORY_VIDEO_PROCESSOR"
+    href: ksmft-category-video-processor.md
+  - name: "language XML Element"
+    href: language-xml-element.md
+  - name: "legacyMode XML Element"
+    href: legacymode-xml-element.md
+  - name: "MediumChangerClassGuid "
+    href: mediumchangerclassguid.md
+  - name: "MOUNTDEV_MOUNTED_DEVICE_GUID"
+    href: mountdev-mounted-device-guid.md
+  - name: "package XML Element"
+    href: package-xml-element.md
+  - name: "PartitionClassGuid "
+    href: partitionclassguid.md
+  - name: "promptIfDriverIsNotBetter XML Element"
+    href: promptifdriverisnotbetter-xml-element.md
+  - name: "quietInstall XML Element"
+    href: quietinstall-xml-element.md
+  - name: "scanHardware XML Element"
+    href: scanhardware-xml-element.md
+  - name: "search XML Element"
+    href: search-xml-element.md
+  - name: "SetupDiGetWizardPage"
+    href: setupdigetwizardpage.md
+  - name: "SetupDiMoveDuplicateDevice"
+    href: setupdimoveduplicatedevice.md
+  - name: "SP_ENABLECLASS_PARAMS"
+    href: sp-enableclass-params.md
+  - name: "SP_INSTALLWIZARD_DATA"
+    href: sp-installwizard-data.md
+  - name: "SP_MOVEDEV_PARAMS"
+    href: sp-movedev-params.md
+  - name: "StoragePortClassGuid "
+    href: storageportclassguid.md
+  - name: "subDirectory XML Element"
+    href: subdirectory-xml-element.md
+  - name: "suppressAddRemovePrograms XML Element"
+    href: suppressaddremoveprograms-xml-element.md
+  - name: "suppressWizard XML Element"
+    href: suppresswizard-xml-element.md
+  - name: "System-Defined Device Setup Classes Available to Vendors"
+    href: system-defined-device-setup-classes-available-to-vendors.md
+  - name: "System-Defined Device Setup Classes Reserved for System Use"
+    href: system-defined-device-setup-classes-reserved-for-system-use.md
+  - name: "TapeClassGuid "
+    href: tapeclassguid.md
+  - name: "VolumeClassGuid "
+    href: volumeclassguid.md
+  - name: "watermarkPath XML Element"
+    href: watermarkpath-xml-element.md
+  - name: "welcomeIntro XML Element"
+    href: welcomeintro-xml-element.md
+  - name: "welcomeTitle XML Element"
+    href: welcometitle-xml-element.md
+  - name: "WriteOnceDiskClassGuid "
+    href: writeoncediskclassguid.md

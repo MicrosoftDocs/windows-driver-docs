@@ -1,1729 +1,1510 @@
 - name: "Kernel-Mode Driver Architecture Design Guide"
   href: index.md
+- name: "Overview"
   items: 
-  - name: "Introduction to Windows Drivers"
-    href: introduction-to-windows-drivers.md
-    items: 
-    - name: "Overview of Windows Components"
-      href: overview-of-windows-components.md
-    - name: "Types of Windows Drivers"
-      href: types-of-windows-drivers.md
-    - name: "Design Goals for Kernel-Mode Drivers"
-      href: design-goals-for-kernel-mode-drivers.md
-      items: 
-      - name: "Portable"
-        href: portable.md
-      - name: "Configurable"
-        href: configurable.md
-      - name: "Always Preemptible and Always Interruptible"
-        href: always-preemptible-and-always-interruptible.md
-      - name: "Multiprocessor-Safe"
-        href: multiprocessor-safe.md
-      - name: "Object-Based"
-        href: object-based.md
-      - name: "Packet-Driven I/O with Reusable IRPs"
-        href: packet-driven-i-o-with-reusable-irps.md
-      - name: "Supporting Asynchronous I/O"
-        href: supporting-asynchronous-i-o.md
-    - name: "Sample Kernel-Mode Drivers"
-      href: sample-kernel-mode-drivers.md
-  - name: "Kernel-Mode Managers and Libraries"
-    href: kernel-mode-managers-and-libraries.md
-    items: 
-    - name: "Windows Kernel-Mode Object Manager"
-      href: windows-kernel-mode-object-manager.md
-    - name: "Windows Kernel-Mode Memory Manager"
-      href: windows-kernel-mode-memory-manager.md
-    - name: "Windows Kernel-Mode Process and Thread Manager"
-      href: windows-kernel-mode-process-and-thread-manager.md
-    - name: "Windows Kernel-Mode I/O Manager"
-      href: windows-kernel-mode-i-o-manager.md
-    - name: "Windows Kernel-Mode Plug and Play Manager"
-      href: windows-kernel-mode-plug-and-play-manager.md
-    - name: "Windows Kernel-Mode Power Manager"
-      href: windows-kernel-mode-power-manager.md
-    - name: "Windows Kernel-Mode Configuration Manager"
-      href: windows-kernel-mode-configuration-manager.md
-    - name: "Windows Kernel-Mode Kernel Transaction Manager"
-      href: windows-kernel-mode-kernel-transaction-manager.md
-    - name: "Windows Kernel-Mode Security Reference Monitor"
-      href: windows-kernel-mode-security-reference-monitor.md
-    - name: "Windows Kernel-Mode Kernel Library"
-      href: windows-kernel-mode-kernel-library.md
-    - name: "Windows Kernel-Mode Executive Support Library"
-      href: windows-kernel-mode-executive-support-library.md
-    - name: "Windows Kernel-Mode Run-Time Library"
-      href: windows-kernel-mode-run-time-library.md
-    - name: "Windows Kernel-Mode Safe String Library"
-      href: windows-kernel-mode-safe-string-library.md
-    - name: "Windows Kernel-Mode DMA Library"
-      href: windows-kernel-mode-dma-library.md
-    - name: "Windows Kernel-Mode HAL Library"
-      href: windows-kernel-mode-hal-library.md
-    - name: "Windows Kernel-Mode CLFS Library"
-      href: windows-kernel-mode-clfs-library.md
-    - name: "Windows Kernel-Mode WMI Library"
-      href: windows-kernel-mode-wmi-library.md
+  - name: "Windows Components"
+    href: overview-of-windows-components.md
+  - name: "Types of Windows Drivers"
+    href: types-of-windows-drivers.md
+  - name: "Design Goals for Kernel-Mode Drivers"
+    href: design-goals-for-kernel-mode-drivers.md
+  - name: "Portable"
+    href: portable.md
+  - name: "Configurable"
+    href: configurable.md
+  - name: "Always Preemptible and Always Interruptible"
+    href: always-preemptible-and-always-interruptible.md
+  - name: "Multiprocessor-Safe"
+    href: multiprocessor-safe.md
+  - name: "Object-Based"
+    href: object-based.md
+  - name: "Packet-Driven I/O with Reusable IRPs"
+    href: packet-driven-i-o-with-reusable-irps.md
+  - name: "Supporting Asynchronous I/O"
+    href: supporting-asynchronous-i-o.md
+  - name: "Sample Kernel-Mode Drivers"
+    href: sample-kernel-mode-drivers.md
+  - name: "Surface Team Driver Development Best Practices"
+    href: surface-team-driver-development-best-practices.md  
+- name: "Components"
+  items: 
+  - name: "Windows Kernel-Mode Object Manager"
+    href: windows-kernel-mode-object-manager.md
+  - name: "Windows Kernel-Mode Memory Manager"
+    href: windows-kernel-mode-memory-manager.md
+  - name: "Windows Kernel-Mode Process and Thread Manager"
+    href: windows-kernel-mode-process-and-thread-manager.md
+  - name: "Windows Kernel-Mode I/O Manager"
+    href: windows-kernel-mode-i-o-manager.md
+  - name: "Windows Kernel-Mode Plug and Play Manager"
+    href: windows-kernel-mode-plug-and-play-manager.md
+  - name: "Windows Kernel-Mode Power Manager"
+    href: windows-kernel-mode-power-manager.md
+  - name: "Windows Kernel-Mode Configuration Manager"
+    href: windows-kernel-mode-configuration-manager.md
+  - name: "Windows Kernel-Mode Kernel Transaction Manager"
+    href: windows-kernel-mode-kernel-transaction-manager.md
+  - name: "Windows Kernel-Mode Security Reference Monitor"
+    href: windows-kernel-mode-security-reference-monitor.md
+  - name: "Windows Kernel-Mode Kernel Library"
+    href: windows-kernel-mode-kernel-library.md
+  - name: "Windows Kernel-Mode Executive Support Library"
+    href: windows-kernel-mode-executive-support-library.md
+  - name: "Windows Kernel-Mode Run-Time Library"
+    href: windows-kernel-mode-run-time-library.md
+  - name: "Windows Kernel-Mode Safe String Library"
+    href: windows-kernel-mode-safe-string-library.md
+  - name: "Windows Kernel-Mode DMA Library"
+    href: windows-kernel-mode-dma-library.md
+  - name: "Windows Kernel-Mode HAL Library"
+    href: windows-kernel-mode-hal-library.md
+  - name: "Windows Kernel-Mode CLFS Library"
+    href: windows-kernel-mode-clfs-library.md
+  - name: "Windows Kernel-Mode WMI Library"
+    href: windows-kernel-mode-wmi-library.md
   - name: "Writing WDM Drivers"
     href: writing-wdm-drivers.md
+- name: "Windows Driver Model (WDM)"
+  items: 
+  - name: "Introduction to WDM"
+    href: introduction-to-wdm.md
+  - name: "Types of WDM Drivers"
+    href: types-of-wdm-drivers.md
+  - name: "Bus Drivers"
+    href: bus-drivers.md
+  - name: "Function Drivers"
+    href: function-drivers.md
+  - name: "Filter Drivers"
+    href: filter-drivers.md
+  - name: "WDM Driver Layers:  An Example"
+    href: wdm-driver-layers---an-example.md
+  - name: "Device Configurations and Layered Drivers"
+    href: device-configurations-and-layered-drivers.md
+  - name: "Sample Device and Driver Configuration"
+    href: sample-device-and-driver-configuration.md
+  - name: "Points to Consider When Adding Drivers"
+    href: points-to-consider-when-adding-drivers.md
+  - name: "Determining the WDM Version"
+    href: determining-the-wdm-version.md
+  - name: "Differences in WDM Versions"
+    href: differences-in-wdm-versions.md
+  - name: "Kernel-Mode Driver Components"
+    href: kernel-mode-driver-components.md
+  - name: "Introduction to Standard Driver Routines"
+    href: introduction-to-standard-driver-routines.md
+  - name: "Standard Driver Routine Requirements"
+    href: standard-driver-routine-requirements.md
+  - name: "Introduction to Driver Objects"
+    href: introduction-to-driver-objects.md
+  - name: "Driver Entry Points in Driver Objects"
+    href: driver-entry-points-in-driver-objects.md
+  - name: "Other Standard Driver Routines"
+    href: other-standard-driver-routines.md
+  - name: "Writing a DriverEntry Routine"
+    href: writing-a-driverentry-routine.md
+  - name: "DriverEntry's Required Responsibilities"
+    href: driverentry-s-required-responsibilities.md
+  - name: "DriverEntry's Optional Responsibilities"
+    href: driverentry-s-optional-responsibilities.md
+  - name: "DriverEntry Return Values"
+    href: driverentry-return-values.md
+  - name: "Writing a Reinitialize Routine"
+    href: writing-a-reinitialize-routine.md
+  - name: "Writing an AddDevice Routine"
+    href: writing-an-adddevice-routine.md
+  - name: "AddDevice Routines in Function or Filter Drivers"
+    href: adddevice-routines-in-function-or-filter-drivers.md
+  - name: "AddDevice Routines in Bus Drivers"
+    href: adddevice-routines-in-bus-drivers.md
+  - name: "Guidelines for Writing AddDevice Routines"
+    href: guidelines-for-writing-adddevice-routines.md
+  - name: "Writing Dispatch Routines"
+    href: writing-dispatch-routines.md
+  - name: "Dispatch Routine Functionality"
+    href: dispatch-routine-functionality.md
+  - name: "Required Dispatch Routines"
+    href: required-dispatch-routines.md
+  - name: "Optional Dispatch Routines"
+    href: optional-dispatch-routines.md
+  - name: "Dispatch Routines and IRQLs"
+    href: dispatch-routines-and-irqls.md
+  - name: "When to Check the Driver's I/O Stack Location"
+    href: when-to-check-the-driver-s-i-o-stack-location.md
+  - name: "DispatchCreate, DispatchClose, and DispatchCreateClose Routines"
+    href: dispatchcreate--dispatchclose--and-dispatchcreateclose-routines.md
+  - name: "Separate DispatchCreate and DispatchClose Routines"
+    href: separate-dispatchcreate-and-dispatchclose-routines.md
+  - name: "A Single DispatchCreateClose Routine"
+    href: a-single-dispatchcreateclose-routine.md
+  - name: "Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines"
+    href: rules-for-implementing-dispatchcreate--dispatchclose--and-dispatchcrea.md
+  - name: "DispatchCleanup Routines"
+    href: dispatchcleanup-routines.md
+  - name: "DispatchRead, DispatchWrite, and DispatchReadWrite Routines"
+    href: dispatchread--dispatchwrite--and-dispatchreadwrite-routines.md
+  - name: "Handling Transfers Asynchronously"
+    href: handling-transfers-asynchronously.md
+  - name: "DispatchReadWrite Using Buffered I/O"
+    href: dispatchreadwrite-using-buffered-i-o.md
+  - name: "DispatchReadWrite Using Direct I/O"
+    href: dispatchreadwrite-using-direct-i-o.md
+  - name: "DispatchReadWrite in Higher-Level Drivers"
+    href: dispatchreadwrite-in-higher-level-drivers.md
+  - name: "Summary of Read/Write Dispatch Routines"
+    href: summary-of-read-write-dispatch-routines.md
+  - name: "DispatchDeviceControl and DispatchInternalDeviceControl Routines"
+    href: dispatchdevicecontrol-and-dispatchinternaldevicecontrol-routines.md
+  - name: "DispatchDeviceControl in Lowest-Level Drivers"
+    href: dispatchdevicecontrol-in-lowest-level-drivers.md
+  - name: "DispatchDeviceControl in Higher-Level Drivers"
+    href: dispatchdevicecontrol-in-higher-level-drivers.md
+  - name: "Dispatch(Internal)DeviceControl in Class/Port Drivers"
+    href: dispatch-internal-devicecontrol-in-class-port-drivers.md
+  - name: "Guidelines for Writing Dispatch(Internal)DeviceControl Routines"
+    href: guidelines-for-writing-dispatch-internal-devicecontrol-routines.md
+  - name: "DispatchPnP Routines"
+    href: dispatchpnp-routines.md
+  - name: "DispatchPower Routines"
+    href: dispatchpower-routines.md
+  - name: "DispatchQueryInformation Routines"
+    href: dispatchqueryinformation-routines.md
+  - name: "DispatchSetInformation Routines"
+    href: dispatchsetinformation-routines.md
+  - name: "DispatchFlushBuffers Routines"
+    href: dispatchflushbuffers-routines.md
+  - name: "DispatchShutdown Routines"
+    href: dispatchshutdown-routines.md
+  - name: "DispatchSystemControl Routines"
+    href: dispatchsystemcontrol-routines.md
+  - name: "Writing an Unload Routine"
+    href: writing-an-unload-routine.md
+  - name: "Unload Routine Environment"
+    href: unload-routine-environment.md
+  - name: "Unload Routine Functionality"
+    href: unload-routine-functionality.md
+  - name: "PnP Driver's Unload Routine"
+    href: pnp-driver-s-unload-routine.md
+  - name: "Non-PnP Driver's Unload Routine"
+    href: non-pnp-driver-s-unload-routine.md
+  - name: "Releasing Driver-Allocated Resources"
+    href: releasing-driver-allocated-resources.md
+  - name: "Releasing Device and Controller Objects"
+    href: releasing-device-and-controller-objects.md
+- name: "Device Objects and Device Stacks"
+  items: 
+  - name: "Introduction to Device Objects"
+    href: introduction-to-device-objects.md
+  - name: "Types of WDM Device Objects"
+    href: types-of-wdm-device-objects.md
+  - name: "Example WDM Device Objects"
+    href: example-wdm-device-objects.md
+  - name: "When Are WDM Device Objects Created?"
+    href: when-are-wdm-device-objects-created-.md
+  - name: "Example WDM Device Stack"
+    href: example-wdm-device-stack.md
+  - name: "Creating a Device Object"
+    href: creating-a-device-object.md
+  - name: "Initializing a Device Object"
+    href: initializing-a-device-object.md
+  - name: "Named Device Objects"
+    href: named-device-objects.md
+  - name: "NT Device Names"
+    href: nt-device-names.md
+  - name: "Introduction to MS-DOS Device Names"
+    href: introduction-to-ms-dos-device-names.md
+  - name: "Local and Global MS-DOS Device Names"
+    href: local-and-global-ms-dos-device-names.md
+  - name: "Device Extensions"
+    href: device-extensions.md
+  - name: "Properties of Device Objects"
+    href: properties-of-device-objects.md
+  - name: "Specifying Device Types"
+    href: specifying-device-types.md
+  - name: "Specifying Device Characteristics"
+    href: specifying-device-characteristics.md
+  - name: "Specifying Exclusive Access to Device Objects"
+    href: specifying-exclusive-access-to-device-objects.md
+  - name: "Setting Device Object Properties in the Registry"
+    href: setting-device-object-properties-in-the-registry.md
+  - name: "Setting Device Object Registry Properties During Installation"
+    href: setting-device-object-registry-properties-during-installation.md
+  - name: "Setting Device Object Registry Properties After Installation"
+    href: setting-device-object-registry-properties-after-installation.md
+  - name: "Points to Consider About Device Objects"
+    href: points-to-consider-about-device-objects.md
+  - name: "Managing Kernel Objects"
+    href: managing-kernel-objects.md
+  - name: "Object Names"
+    href: object-names.md
+  - name: "Object Directories"
+    href: object-directories.md
+  - name: "Life Cycle of an Object"
+    href: life-cycle-of-an-object.md
+  - name: "Object Handles"
+    href: object-handles.md
+- name: "Memory Management"
+  items:
+  - name: "Memory Management for Windows Drivers"
+    href: managing-memory-for-drivers.md
+  - name: "Overview of Windows Memory Space"
+    href: overview-of-windows-memory-space.md
+  - name: "Allocating System-Space Memory"
+    href: allocating-system-space-memory.md
+  - name: "Map Registers"
+    href: map-registers.md
+  - name: "Mapping Bus-Relative Addresses to Virtual Addresses"
+    href: mapping-bus-relative-addresses-to-virtual-addresses.md
+  - name: "Using the Kernel Stack"
+    href: using-the-kernel-stack.md
+  - name: "Using Lookaside Lists"
+    href: using-lookaside-lists.md
+  - name: "Making Drivers Pageable"
+    href: making-drivers-pageable.md
+  - name: "When Should Code and Data Be Pageable?"
+    href: when-should-code-and-data-be-pageable-.md
+  - name: "Detecting Code That Can Be Pageable"
+    href: detecting-code-that-can-be-pageable.md
+  - name: "Isolating Pageable Code"
+    href: isolating-pageable-code.md
+  - name: "Locking Pageable Code or Data"
+    href: locking-pageable-code-or-data.md
+  - name: "Paging an Entire Driver"
+    href: paging-an-entire-driver.md
+  - name: "Accessing Read-Only System Memory"
+    href: accessing-read-only-system-memory.md
+  - name: "Accessing User-Space Memory"
+    href: accessing-user-space-memory.md
+  - name: "No-Execute (NX) Nonpaged Pool"
+    href: no-execute-nonpaged-pool.md
+  - name: "NX and Execute Pool Types"
+    href: nx-and-execute-pool-types.md
+  - name: "NX Pool Compatibility Issues"
+    href: nx-pool-compatibility-issues.md
+  - name: "NX Pool Opt-In Mechanisms"
+    href: nx-pool-opt-in-mechanisms.md
+  - name: "Single Binary Opt-In: POOL_NX_OPTIN"
+    href: single-binary-opt-in-pool-nx-optin.md
+  - name: "Multiple Binary Opt-In: POOL_NX_OPTIN_AUTO"
+    href: multiple-binary-opt-in-pool-nx-optin-auto.md
+  - name: "Selective Opt-Out: POOL_NX_OPTOUT"
+    href: selective-opt-out-pool-nx-optout.md
+  - name: "Section Objects and Views"
+    href: section-objects-and-views.md
+  - name: "File-Backed and Page-File-Backed Sections"
+    href: file-backed-and-page-file-backed-sections.md
+  - name: "Managing Memory Sections"
+    href: managing-memory-sections.md
+  - name: "Security Issues for Section Objects and Views"
+    href: security-issues-for-section-objects-and-views.md
+  - name: "Using MDLs"
+    href: using-mdls.md
+- name: "Security"
+  items: 
+  - name: "Controlling Device Access"
+    href: controlling-device-access.md
+  - name: "Controlling Device Namespace Access"
+    href: controlling-device-namespace-access.md
+  - name: "SDDL for Device Objects"
+    href: sddl-for-device-objects.md
+  - name: "Access Rights"
+    href: access-rights.md
+  - name: "Security Descriptors"
+    href: security-descriptors.md
+  - name: "Privileges"
+    href: privileges.md
+- name: "I/O"
+  items: 
+  - name: "Handling IRPs"
+    href: handling-irps.md
+  - name: "Overview of the Windows I/O Model"
+    href: overview-of-the-windows-i-o-model.md
+  - name: "End-User I/O Requests and File Objects"
+    href: end-user-i-o-requests-and-file-objects.md
+  - name: "Example I/O Request - An Overview"
+    href: example-i-o-request---an-overview.md
+  - name: "Example I/O Request - The Details"
+    href: example-i-o-request---the-details.md
+  - name: "Driver Thread Context"
+    href: driver-thread-context.md
+  - name: "Points to Consider about User I/O Requests"
+    href: points-to-consider-about-user-i-o-requests.md
+  - name: "IRP Major Function Codes"
+    href: irp-major-function-codes.md
+  - name: "IRP_MJ_CLEANUP"
+    href: irp-mj-cleanup.md
+  - name: "IRP_MJ_CLOSE"
+    href: irp-mj-close.md
+  - name: "IRP_MJ_CREATE"
+    href: irp-mj-create.md
+  - name: "IRP_MJ_DEVICE_CONTROL"
+    href: irp-mj-device-control.md
+  - name: "IRP_MJ_FILE_SYSTEM_CONTROL"
+    href: irp-mj-file-system-control.md
+  - name: "IRP_MJ_FLUSH_BUFFERS"
+    href: irp-mj-flush-buffers.md
+  - name: "IRP_MJ_INTERNAL_DEVICE_CONTROL"
+    href: irp-mj-internal-device-control.md
+  - name: "IRP_MJ_PNP"
+    href: irp-mj-pnp.md
+  - name: "IRP_MJ_POWER"
+    href: irp-mj-power.md
+  - name: "IRP_MJ_QUERY_INFORMATION"
+    href: irp-mj-query-information.md
+  - name: "IRP_MJ_READ"
+    href: irp-mj-read.md
+  - name: "IRP_MJ_SET_INFORMATION"
+    href: irp-mj-set-information.md
+  - name: "IRP_MJ_SHUTDOWN"
+    href: irp-mj-shutdown.md
+  - name: "IRP_MJ_SYSTEM_CONTROL"
+    href: irp-mj-system-control.md
+  - name: "IRP_MJ_WRITE"
+    href: irp-mj-write.md
+  - name: "I/O Stack Locations"
+    href: i-o-stack-locations.md
+  - name: "I/O Status Blocks"
+    href: i-o-status-blocks.md
+  - name: "Passing IRPs down the Driver Stack"
+    href: passing-irps-down-the-driver-stack.md
+  - name: "Creating IRPs for Lower-Level Drivers"
+    href: creating-irps-for-lower-level-drivers.md
+  - name: "Queuing and Dequeuing IRPs"
+    href: queuing-and-dequeuing-irps.md
+  - name: "Writing a StartIo Routine"
+    href: writing-a-startio-routine.md
+  - name: "StartIo Routines in Lowest-Level Drivers"
+    href: startio-routines-in-lowest-level-drivers.md
+  - name: "StartIo Routines in Higher-Level Drivers"
+    href: startio-routines-in-higher-level-drivers.md
+  - name: "Points to Consider For StartIo Routines"
+    href: points-to-consider-for-startio-routines.md
+  - name: "Driver-Managed IRP Queues"
+    href: driver-managed-irp-queues.md
+  - name: "Setting Up and Using Device Queues"
+    href: setting-up-and-using-device-queues.md
+  - name: "Managing Device Queues"
+    href: managing-device-queues.md
+  - name: "Setting Up and Using Interlocked Queues"
+    href: setting-up-and-using-interlocked-queues.md
+  - name: "Managing Interlocked Queues with a Driver-Created Thread"
+    href: managing-interlocked-queues-with-a-driver-created-thread.md
+  - name: "Cancel-Safe IRP Queues"
+    href: cancel-safe-irp-queues.md
+  - name: "Completing IRPs"
+    href: completing-irps.md
+  - name: "When to Complete an IRP"
+    href: when-to-complete-an-irp.md
+  - name: "How to Complete an IRP in a Dispatch Routine"
+    href: how-to-complete-an-irp-in-a-dispatch-routine.md
+  - name: "When to Complete an IRP in a Dispatch Routine"
+    href: when-to-complete-an-irp-in-a-dispatch-routine.md
+  - name: "Using IoCompletion Routines"
+    href: using-iocompletion-routines.md
+  - name: "Registering an IoCompletion Routine"
+    href: registering-an-iocompletion-routine.md
+  - name: "Implementing an IoCompletion Routine"
+    href: implementing-an-iocompletion-routine.md
+  - name: "Canceling IRPs"
+    href: canceling-irps.md
+  - name: "Introduction to Cancel Routines"
+    href: introduction-to-cancel-routines.md
+  - name: "Registering a Cancel Routine"
+    href: registering-a-cancel-routine.md
+  - name: "Points to Consider When Canceling IRPs"
+    href: points-to-consider-when-canceling-irps.md
+  - name: "Synchronizing IRP Cancellation"
+    href: synchronizing-irp-cancellation.md
+  - name: "Using the System's Cancel Spin Lock"
+    href: using-the-system-s-cancel-spin-lock.md
+  - name: "Synchronizing Cancellation in Driver Routines that Process IRPs"
+    href: synchronizing-cancellation-in-driver-routines-that-process-irps.md
+  - name: "Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines"
+    href: synchronizing-cancellation-in-higher-level-drivers-without-cancel-rout.md
+  - name: "Using a Driver-Supplied Spin Lock"
+    href: using-a-driver-supplied-spin-lock.md
+  - name: "Implementing a Cancel Routine"
+    href: implementing-a-cancel-routine.md
+  - name: "Cancel Routines in Drivers with StartIo Routines"
+    href: cancel-routines-in-drivers-with-startio-routines.md
+  - name: "Cancel Routines in Drivers without StartIo Routines"
+    href: cancel-routines-in-drivers-without-startio-routines.md
+  - name: "Reusing IRPs"
+    href: reusing-irps.md
+  - name: "Device Type-Specific I/O Requests"
+    href: device-type-specific-i-o-requests.md
+  - name: "Introduction to I/O Control Codes"
+    href: introduction-to-i-o-control-codes.md
+  - name: "Creating IOCTL Requests in Drivers"
+    href: creating-ioctl-requests-in-drivers.md
+  - name: "Defining I/O Control Codes"
+    href: defining-i-o-control-codes.md
+  - name: "Buffer Descriptions for I/O Control Codes"
+    href: buffer-descriptions-for-i-o-control-codes.md
+  - name: "Security Issues for I/O Control Codes"
+    href: security-issues-for-i-o-control-codes.md
+  - name: "Using IRP Priority Hints"
+    href: using-irp-priority-hints.md
+  - name: "Processing IRPs in a Lowest-Level Driver"
+    href: processing-irps-in-a-lowest-level-driver.md
+  - name: "Processing IRPs in an Intermediate-Level Driver"
+    href: processing-irps-in-an-intermediate-level-driver.md
+  - name: "Different ways of handling IRPs - Cheat sheet"
+    href: different-ways-of-handling-irps-cheat-sheet.md
+  - name: "I/O Programming Techniques"
+    href: i-o-programming-techniques.md
+  - name: "General I/O Programming Techniques"
+    href: general-i-o-programming-techniques.md
+  - name: "Synchronous I/O Programming"
+    href: synchronous-i-o-programming.md
+  - name: "Asynchronous I/O Programming"
+    href: asynchronous-i-o-programming.md
+  - name: "Restricting Waits in Vista"
+    href: restricting-waits-in-vista.md
+  - name: "Avoid Polling Devices"
+    href: avoid-polling-devices.md
+  - name: "Maintaining Cache Coherency"
+    href: maintaining-cache-coherency.md
+  - name: "Methods for Accessing Data Buffers"
+    href: methods-for-accessing-data-buffers.md
+  - name: "Using Buffered I/O"
+    href: using-buffered-i-o.md
+  - name: "Using Direct I/O"
+    href: using-direct-i-o.md
+  - name: "Using Direct I/O with DMA"
+    href: using-direct-i-o-with-dma.md
+  - name: "Using Direct I/O with PIO"
+    href: using-direct-i-o-with-pio.md
+  - name: "Using Neither Buffered Nor Direct I/O"
+    href: using-neither-buffered-nor-direct-i-o.md
+  - name: "DMA Programming Techniques"
+    href: dma-programming-techniques.md
+  - name: "Flushing Cached Data during DMA Operations"
+    href: flushing-cached-data-during-dma-operations.md
+  - name: "Splitting DMA Transfer Requests"
+    href: splitting-dma-transfer-requests.md
+- name: "DMA"
+  items: 
+  - name: "Introduction to Adapter Objects"
+    href: introduction-to-adapter-objects.md
+  - name: "Getting an Adapter Object"
+    href: getting-an-adapter-object.md
+  - name: "Using Scatter/Gather DMA"
+    href: using-scatter-gather-dma.md
+  - name: "Writing AdapterControl Routines"
+    href: writing-adaptercontrol-routines.md
+  - name: "Storage Requirements for AdapterControl Routines"
+    href: storage-requirements-for-adaptercontrol-routines.md
+  - name: "Setting Up AdapterControl Routines"
+    href: setting-up-adaptercontrol-routines.md
+  - name: "AdapterControl Routine Requirements"
+    href: adaptercontrol-routine-requirements.md
+  - name: "Using Packet-Based System DMA"
+    href: using-packet-based-system-dma.md
+  - name: "Allocating an Adapter Channel for Packet-Based DMA"
+    href: allocating-an-adapter-channel-for-packet-based-dma.md
+  - name: "Setting Up the System DMA Controller for Packet-Based DMA"
+    href: setting-up-the-system-dma-controller-for-packet-based-dma.md
+  - name: "Using Common-Buffer System DMA"
+    href: using-common-buffer-system-dma.md
+  - name: "Allocating an Adapter Channel for Common-Buffer System DMA"
+    href: allocating-an-adapter-channel-for-common-buffer-system-dma.md
+  - name: "Setting Up the System DMA Controller for Common-Buffer DMA"
+    href: setting-up-the-system-dma-controller-for-common-buffer-dma.md
+  - name: "Using Bus-Master DMA"
+    href: using-bus-master-dma.md
+  - name: "Using Packet-Based Bus-Master DMA"
+    href: using-packet-based-bus-master-dma.md
+  - name: "Allocating the Bus-Master Adapter Object"
+    href: allocating-the-bus-master-adapter-object.md
+  - name: "Setting Up a Transfer Operation"
+    href: setting-up-a-transfer-operation.md
+  - name: "Using Common-Buffer Bus-Master DMA"
+    href: using-common-buffer-bus-master-dma.md
+  - name: "Version 3 of the DMA Operations Interface"
+    href: version-3-of-the-dma-operations-interface.md
+  - name: "Basic Calling Pattern for Version-3 DMA Routines"
+    href: basic-calling-pattern-for-version-3-dma-routines.md
+  - name: "Using the MapTransferEx Routine"
+    href: using-the-maptransferex-routine.md
+  - name: "PIO Techniques"
+    href: pio-techniques.md
+  - name: "Flushing Cached Data during PIO Operations"
+    href: flushing-cached-data-during-pio-operations.md
+  - name: "Accessing Device Configuration Space"
+    href: accessing-device-configuration-space.md
+  - name: "Obtaining Device Configuration Information at IRQL = PASSIVE_LEVEL"
+    href: obtaining-device-configuration-information-at-irql---passive-level.md
+  - name: "Obtaining Device Configuration Information at IRQL = DISPATCH_LEVEL"
+    href: obtaining-device-configuration-information-at-irql---dispatch-level.md
+  - name: "Obtaining Configuration Information from Other Driver Stacks"
+    href: obtaining-configuration-information-from-other-driver-stacks.md
+- name: "Controller Objects"
+  items: 
+  - name: "Introduction to Controller Objects"
+    href: introduction-to-controller-objects.md
+  - name: "Creating Controller Objects and Controller Extensions"
+    href: creating-controller-objects-and-controller-extensions.md
+  - name: "Allocating Controller Objects for I/O Operations"
+    href: allocating-controller-objects-for-i-o-operations.md
+  - name: "Writing ControllerControl Routines"
+    href: writing-controllercontrolroutines.md
+  - name: "Storage Requirements for ControllerControl Routines"
+    href: storage-requirements-for-controllercontrol-routines.md
+  - name: "Setting Up ControllerControl Routines"
+    href: setting-up-controllercontrolroutines.md
+  - name: "ControllerControl Routine Requirements"
+    href: controllercontrol-routine-requirements.md
+- name: "Interrupt Service Routines (ISRs)"
+  items: 
+  - name: "Introduction to Interrupt Service Routines"
+    href: introduction-to-interrupt-service-routines.md
+  - name: "Removing an ISR"
+    href: removing-an-isr.md
+  - name: "Making an ISR Active or Inactive"
+    href: making-an-isr-active-or-inactive.md
+  - name: "Interrupt Affinity"
+    href: interrupt-affinity-and-priority.md
+  - name: "Providing ISR Context Information"
+    href: providing-isr-context-information.md
+  - name: "Writing an ISR"
+    href: writing-an-isr.md
+  - name: "Synchronizing Access to Device Data"
+    href: synchronizing-access-to-device-data.md
+  - name: "Registering an ISR"
+    href: registering-an-isr.md
+  - name: "Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx"
+    href: using-the-connect-line-based-version-of-ioconnectinterruptex.md
+  - name: "Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx"
+    href: using-the-connect-message-based-version-of-ioconnectinterruptex.md
+  - name: "Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx"
+    href: using-the-connect-fully-specified-version-of-ioconnectinterruptex.md
+  - name: "Using Passive-Level Interrupt Service Routines"
+    href: using-passive-level-interrupt-handling-routines.md
+  - name: "Using IoConnectInterruptEx Prior to Windows Vista"
+    href: using-ioconnectinterruptex-prior-to-windows-vista.md
+- name: "Message-Signaled Interrupts (MSIs)"
+  items: 
+  - name: "Introduction to Message-Signaled Interrupts"
+    href: introduction-to-message-signaled-interrupts.md
+  - name: "Enabling Message-Signaled Interrupts in the Registry"
+    href: enabling-message-signaled-interrupts-in-the-registry.md
+  - name: "Using Interrupt Resource Descriptors"
+    href: using-interrupt-resource-descriptors.md
+  - name: "Dynamically Configuring MSI-X"
+    href: dynamically-configuring-msi-x.md
+- name: "Deferred Procedure Calls (DPCs)"
+  items: 
+  - name: "Introduction to DPC Objects"
+    href: introduction-to-dpc-objects.md
+  - name: "Introduction to DPCs"
+    href: introduction-to-dpcs.md
+  - name: "Which Type of DPC Should You Use?"
+    href: which-type-of-dpc-should-you-use-.md
+  - name: "Registering and Queuing a DpcForIsr Routine"
+    href: registering-and-queuing-a-dpcforisr-routine.md
+  - name: "Registering and Queuing a CustomDpc Routine"
+    href: registering-and-queuing-a-customdpc-routine.md
+  - name: "Handling Overlapped I/O Operations"
+    href: handling-overlapped-i-o-operations.md
+  - name: "Writing DPC Routines"
+    href: writing-dpc-routines.md
+  - name: "Guidelines for Writing DPC Routines"
+    href: guidelines-for-writing-dpc-routines.md
+  - name: "Organization of DPC Queues"
+    href: organization-of-dpc-queues.md
+  - name: "Introduction to Threaded DPCs"
+    href: introduction-to-threaded-dpcs.md
+  - name: "Synchronization and Threaded DPCs"
+    href: synchronization-and-threaded-dpcs.md
+  - name: "Converting an Ordinary DPC to a Threaded DPC"
+    href: converting-an-ordinary-dpc-to-a-threaded-dpc.md
+  - name: "Using Critical Sections"
+    href: using-critical-sections.md
+  - name: "Introduction to SynchCritSection Routines"
+    href: introduction-to-synchcritsection-routines.md
+  - name: "Writing SynchCritSection Routines"
+    href: writing-synchcritsection-routines.md
+  - name: "Programming a Device for an I/O Operation"
+    href: programming-a-device-for-an-i-o-operation.md
+  - name: "Accessing Shared State Information"
+    href: accessing-shared-state-information.md
+  - name: "Managing Hardware Priorities"
+    href: managing-hardware-priorities.md
+- name: "Plug and Play (PnP)"
+  items: 
+  - name: "Introduction to Plug and Play"
+    href: introduction-to-plug-and-play.md
+  - name: "PnP Components"
+    href: pnp-components.md
+  - name: "Levels of Support for PnP"
+    href: levels-of-support-for-pnp.md
+  - name: "PnP Driver Design Guidelines"
+    href: pnp-driver-design-guidelines.md
+  - name: "Device Tree"
+    href: device-tree.md
+  - name: "Hardware Resources"
+    href: hardware-resources.md
+  - name: "State Transitions for PnP Devices"
+    href: state-transitions-for-pnp-devices.md
+  - name: "Adding a PnP Device to a Running System"
+    href: adding-a-pnp-device-to-a-running-system.md
+  - name: "Plug and Play Minor IRPs"
+    href: plug-and-play-minor-irps.md
+  - name: "IRP_MN_CANCEL_REMOVE_DEVICE"
+    href: irp-mn-cancel-remove-device.md
+  - name: "IRP_MN_CANCEL_STOP_DEVICE"
+    href: irp-mn-cancel-stop-device.md
+  - name: "IRP_MN_DEVICE_ENUMERATED"
+    href: irp-mn-device-enumerated.md
+  - name: "IRP_MN_DEVICE_USAGE_NOTIFICATION"
+    href: irp-mn-device-usage-notification.md
+  - name: "IRP_MN_EJECT"
+    href: irp-mn-eject.md
+  - name: "IRP_MN_FILTER_RESOURCE_REQUIREMENTS"
+    href: irp-mn-filter-resource-requirements.md
+  - name: "IRP_MN_QUERY_BUS_INFORMATION"
+    href: irp-mn-query-bus-information.md
+  - name: "IRP_MN_QUERY_CAPABILITIES"
+    href: irp-mn-query-capabilities.md
+  - name: "IRP_MN_QUERY_DEVICE_RELATIONS"
+    href: irp-mn-query-device-relations.md
+  - name: "IRP_MN_QUERY_DEVICE_TEXT"
+    href: irp-mn-query-device-text.md
+  - name: "IRP_MN_QUERY_ID"
+    href: irp-mn-query-id.md
+  - name: "IRP_MN_QUERY_INTERFACE"
+    href: irp-mn-query-interface.md
+  - name: "IRP_MN_QUERY_LEGACY_BUS_INFORMATION"
+    href: irp-mn-query-legacy-bus-information.md
+  - name: "IRP_MN_QUERY_PNP_DEVICE_STATE"
+    href: irp-mn-query-pnp-device-state.md
+  - name: "IRP_MN_QUERY_REMOVE_DEVICE"
+    href: irp-mn-query-remove-device.md
+  - name: "IRP_MN_QUERY_RESOURCE_REQUIREMENTS"
+    href: irp-mn-query-resource-requirements.md
+  - name: "IRP_MN_QUERY_RESOURCES"
+    href: irp-mn-query-resources.md
+  - name: "IRP_MN_QUERY_STOP_DEVICE"
+    href: irp-mn-query-stop-device.md
+  - name: "IRP_MN_READ_CONFIG"
+    href: irp-mn-read-config.md
+  - name: "IRP_MN_REMOVE_DEVICE"
+    href: irp-mn-remove-device.md
+  - name: "IRP_MN_SET_LOCK"
+    href: irp-mn-set-lock.md
+  - name: "IRP_MN_START_DEVICE"
+    href: irp-mn-start-device.md
+  - name: "IRP_MN_STOP_DEVICE"
+    href: irp-mn-stop-device.md
+  - name: "IRP_MN_SURPRISE_REMOVAL"
+    href: irp-mn-surprise-removal.md
+  - name: "IRP_MN_WRITE_CONFIG"
+    href: irp-mn-write-config.md
+  - name: "Passing PnP IRPs Down the Device Stack"
+    href: passing-pnp-irps-down-the-device-stack.md
+  - name: "Postponing PnP IRP Processing Until Lower Drivers Finish"
+    href: postponing-pnp-irp-processing-until-lower-drivers-finish.md
+  - name: "Starting a Device"
+    href: starting-a-device.md
+  - name: "Starting a Device in a Function Driver"
+    href: starting-a-device-in-a-function-driver.md
+  - name: "Starting a Device in a Filter Driver"
+    href: starting-a-device-in-a-filter-driver.md
+  - name: "Starting a Device in a Bus Driver"
+    href: starting-a-device-in-a-bus-driver.md
+  - name: "Design Guidelines for Starting Devices"
+    href: design-guidelines-for-starting-devices.md
+  - name: "Stopping a Device"
+    href: stopping-a-device.md
+  - name: "Stopping a Device to Rebalance Resources"
+    href: stopping-a-device-to-rebalance-resources.md
+  - name: "Stopping a Device to Disable It (Windows 98/Me)"
+    href: stopping-a-device-to-disable-it--windows-98-me-.md
+  - name: "Stopping a Device after a Failed Start (Windows 98/Me)"
+    href: stopping-a-device-after-a-failed-start--windows-98-me-.md
+  - name: "Handling Stop IRPs (Windows 2000 and Later)"
+    href: handling-stop-irps--windows-2000-and-later-.md
+  - name: "Handling an IPR_MN_QUERY_STOP_DEVICE Request"
+    href: handling-an-irp-mn-query-stop-device-request--windows-2000-and-later-.md
+  - name: "Handling an IRP_MN_STOP_DEVICE Request"
+    href: handling-an-irp-mn-stop-device-request--windows-2000-and-later-.md
+  - name: "Handling an IRP_MN_CANCEL_STOP_DEVICE Request"
+    href: handling-an-irp-mn-cancel-stop-device-request--windows-2000-and-later-.md
+  - name: "Holding Incoming IRPs When A Device Is Paused"
+    href: holding-incoming-irps-when-a-device-is-paused.md
+  - name: "Resetting and recovering a device"
+    href: resetting-and-recovering-a-device.md
+  - name: "Removing a Device"
     items: 
-    - name: "Windows Driver Model (WDM)"
-      href: windows-driver-model.md
+    - name: "Understanding When Remove IRPs Are Issued"
+      href: understanding-when-remove-irps-are-issued.md
+    - name: "Handling an IRP_MN_QUERY_REMOVE_DEVICE Request"
+      href: handling-an-irp-mn-query-remove-device-request.md
+    - name: "Handling an IRP_MN_REMOVE_DEVICE Request"
+      href: handling-an-irp-mn-remove-device-request.md
+    - name: "Removing a Device in a Function Driver"
+      href: removing-a-device-in-a-function-driver.md
+    - name: "Removing a Device in a Filter Driver"
+      href: removing-a-device-in-a-filter-driver.md
+    - name: "Removing a Device in a Bus Driver"
+      href: removing-a-device-in-a-bus-driver.md
+    - name: "Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request"
+      href: handling-an-irp-mn-cancel-remove-device-request.md
+    - name: "Handling an IRP_MN_SURPRISE_REMOVAL Request"
+      href: handling-an-irp-mn-surprise-removal-request.md
+    - name: "Using Remove Locks"
+      href: using-remove-locks.md
+  - name: "Using PnP Notification"
+    href: using-pnp-notification.md
+  - name: "PnP Notification Overview"
+    href: pnp-notification-overview.md
+  - name: "Guidelines for Writing PnP Notification Callback Routines"
+    href: guidelines-for-writing-pnp-notification-callback-routines.md
+  - name: "Using PnP Device Interface Change Notification"
+    href: using-pnp-device-interface-change-notification.md
+  - name: "Registering for Device Interface Change Notification"
+    href: registering-for-device-interface-change-notification.md
+  - name: "Handling Device Interface Change Events"
+    href: handling-device-interface-change-events.md
+  - name: "Using PnP Target Device Change Notification"
+    href: using-pnp-target-device-change-notification.md
+  - name: "Registering for Target Device Change Notification"
+    href: registering-for-target-device-change-notification.md
+  - name: "Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event"
+    href: handling-a-guid-target-device-query-remove-event.md
+  - name: "Handling a GUID_TARGET_DEVICE_REMOVE_COMPLETE Event"
+    href: handling-a-guid-target-device-remove-complete-event.md
+  - name: "Handling a GUID_TARGET_DEVICE_REMOVE_CANCELLED Event"
+    href: handling-a-guid-target-device-remove-cancelled-event.md
+  - name: "Using PnP Hardware Profile Change Notification"
+    href: using-pnp-hardware-profile-change-notification.md
+  - name: "Registering for Hardware Profile Change Notification"
+    href: registering-for-hardware-profile-change-notification.md
+  - name: "Handling Hardware Profile Change Events"
+    href: handling-hardware-profile-change-events.md
+  - name: "Using PnP Custom Notification"
+    href: using-pnp-custom-notification.md
+- name: "Power Management"
+  items: 
+  - name: "Introduction to Power Management"
+    href: introduction-to-power-management.md
+  - name: "Industry Initiatives for Power Management"
+    href: industry-initiatives-for-power-management.md
+  - name: "Support for Power Management"
+    href: support-for-power-management.md
+  - name: "System-Wide Overview of Power Management"
+    href: system-wide-overview-of-power-management.md
+  - name: "Power States"
+    href: power-states.md
+  - name: "ACPI BIOS"
+    href: acpi-bios.md
+  - name: "Acpi.sys: The Windows ACPI Driver"
+    href: acpi-driver.md
+  - name: "Power Manager"
+    href: power-manager.md
+  - name: "Driver Role in Power Management"
+    href: driver-role-in-power-management.md
+  - name: "ACPI notifications"
+    href: acpi-notifications.md
+  - name: "Device power management (DPM) notifications"
+    href: dpm-notifications.md
+  - name: "Processor power management (PPM) notifications"
+    href: ppm-notifications.md
+  - name: "PPM power control codes"
+    href: ppm-power-control-codes.md
+  - name: "Power Management Responsibilities for Drivers"
+    href: power-management-responsibilities-for-drivers.md
+  - name: "Reporting Device Power Capabilities"
+    href: reporting-device-power-capabilities.md
+  - name: "DeviceD1 and DeviceD2"
+    href: deviced1-and-deviced2.md
+  - name: "WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3"
+    href: wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md
+  - name: "DeviceState"
+    href: devicestate.md
+  - name: "SystemWake"
+    href: systemwake.md
+  - name: "DeviceWake"
+    href: devicewake.md
+  - name: "D1Latency, D2Latency, and D3Latency"
+    href: d1latency--d2latency--and-d3latency.md
+  - name: "Setting Device Object Flags for Power Management"
+    href: setting-device-object-flags-for-power-management.md
+  - name: "Handling Power IRPs"
+    href: handling-power-irps.md
+  - name: "Power IRPs for the System"
+    href: power-irps-for-the-system.md
+  - name: "Power IRPs for Individual Devices"
+    href: power-irps-for-individual-devices.md
+  - name: "Power Management Minor IRPs"
+    href: power-management-minor-irps.md
+  - name: "IRP_MN_POWER_SEQUENCE"
+    href: irp-mn-power-sequence.md
+  - name: "IRP_MN_QUERY_POWER"
+    href: irp-mn-query-power.md
+  - name: "IRP_MN_SET_POWER"
+    href: irp-mn-set-power.md
+  - name: "IRP_MN_WAIT_WAKE"
+    href: irp-mn-wait-wake.md
+  - name: "Powering Up a Device"
+    href: powering-up-a-device.md
+  - name: "Powering Down a Device"
+    href: powering-down-a-device.md
+  - name: "Enabling Device Wake-Up"
+    href: enabling-device-wake-up.md
+  - name: "Managing Device Performance States"
+    href: managing-device-performance-states.md
+  - name: "Distinguishing Fast Startup from Wake-from-Hibernation"
+    href: distinguishing-fast-startup-from-wake-from-hibernation.md
+  - name: "Calling IoCallDriver vs. Calling PoCallDriver"
+    href: calling-iocalldriver-versus-calling-pocalldriver.md
+  - name: "Calling PoStartNextPowerIrp"
+    href: calling-postartnextpowerirp.md
+  - name: "Calling PoStartNextPowerIrp from a Filter Driver"
+    href: calling-postartnextpowerirp-from-a-filter-driver.md
+  - name: "Calling PoStartNextPowerIrp from a Device Power Policy Owner"
+    href: calling-postartnextpowerirp-from-a-device-power-policy-owner.md
+  - name: "Calling PoStartNextPowerIrp from a Bus Driver"
+    href: calling-postartnextpowerirp-from-a-bus-driver.md
+  - name: "Passing Power IRPs"
+    href: passing-power-irps.md
+  - name: "Queuing I/O Requests While a Device Is Sleeping"
+    href: queuing-i-o-requests-while-a-device-is-sleeping.md
+  - name: "Handling Unsupported or Unrecognized Power IRPs"
+    href: handling-unsupported-or-unrecognized-power-irps.md
+  - name: "Calling ExSetTimerResolution While Processing a Power IRP"
+    href: calling-exsettimerresolution-while-processing-a-power-irp.md
+  - name: "Device Power States"
+    href: device-power-states.md
+  - name: "Device Working State D0"
+    href: device-working-state-d0.md
+  - name: "Device Low-Power States"
+    href: device-sleeping-states.md
+  - name: "Required Support for Device Power States"
+    href: required-support-for-device-power-states.md
+  - name: "Managing Device Power Policy"
+    href: managing-device-power-policy.md
+  - name: "Handling IRP_MN_SET_POWER for Device Power States"
+    href: handling-irp-mn-set-power-for-device-power-states.md
+  - name: "Handling Device Power-Down IRPs"
+    href: handling-device-power-down-irps.md
+  - name: "Handling Device Power-Up IRPs"
+    href: handling-device-power-up-irps.md
+  - name: "IoCompletion Routines for Device Power IRPs"
+    href: iocompletion-routines-for-device-power-irps.md
+  - name: "Handling IRP_MN_QUERY_POWER for Device Power States"
+    href: handling-irp-mn-query-power-for-device-power-states.md
+  - name: "Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States"
+    href: sending-irp-mn-query-power-or-irp-mn-set-power-for-device-power-states.md
+  - name: "Detecting an Idle Device"
+    href: detecting-an-idle-device.md
+  - name: "Using Power Manager Routines for Idle Detection"
+    href: using-power-manager-routines-for-idle-detection.md
+  - name: "Performing Device-Specific Idle Detection"
+    href: performing-device-specific-idle-detection.md
+  - name: "Supporting D3cold in a Driver"
+    href: supporting-d3cold-in-a-driver.md
+  - name: "Enabling Transitions to D3cold"
+    href: enabling-transitions-to-d3cold.md
+  - name: "D3cold Capabilities of a Device"
+    href: d3cold-capabilities-of-a-device.md
+  - name: "Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface"
+    href: using-guid-d3cold-support-interface.md
+  - name: "Surprise Wake-Up"
+    href: surprise-wake-up.md
+  - name: "Handling System Power State Requests"
+    href: handling-system-power-state-requests.md
+  - name: "System Power States"
+    href: system-power-states.md
+  - name: "System Working State S0"
+    href: system-working-state-s0.md
+  - name: "System Sleeping States"
+    href: system-sleeping-states.md
+  - name: "System Shutdown State S5"
+    href: system-shutdown-state-s5.md
+  - name: "System Power Actions"
+    href: system-power-actions.md
+  - name: "System Power Policy"
+    href: system-power-policy.md
+  - name: "Preventing System Power State Changes"
+    href: preventing-system-power-state-changes.md
+  - name: "Handling IRP_MN_QUERY_POWER for System Power States"
+    href: handling-irp-mn-query-power-for-system-power-states.md
+  - name: "Handling a System Query-Power IRP in a Device Power Policy Owner"
+    href: handling-a-system-query-power-irp-in-a-device-power-policy-owner.md
+  - name: "Handling a System Query-Power IRP in a Filter or Function Driver"
+    href: handling-a-system-query-power-irp-in-a-filter-or-function-driver.md
+  - name: "Failing a System Query-Power IRP in a Filter or Function Driver"
+    href: failing-a-system-query-power-irp-in-a-filter-or-function-driver.md
+  - name: "Handling a System Query-Power IRP in a Bus Driver"
+    href: handling-a-system-query-power-irp-in-a-bus-driver.md
+  - name: "Handling IRP_MN_SET_POWER for System Power States"
+    href: handling-irp-mn-set-power-for-system-power-states.md
+  - name: "Handling a System Set-Power IRP in a Device Power Policy Owner"
+    href: handling-a-system-set-power-irp-in-a-device-power-policy-owner.md
+  - name: "Determining the Correct Device Power State"
+    href: determining-the-correct-device-power-state.md
+  - name: "Sending a Device Set-Power IRP in Response to a System Set-Power IRP"
+    href: sending-a-device-set-power-irp-in-response-to-a-system-set-power-irp.md
+  - name: "Handling a System Set-Power IRP in a Bus Driver"
+    href: handling-a-system-set-power-irp-in-a-bus-driver.md
+  - name: "Handling a System Set-Power IRP in a Filter Driver"
+    href: handling-a-system-set-power-irp-in-a-filter-driver.md
+  - name: "Overview of the Power Management Framework"
+    href: overview-of-the-power-management-framework.md
+  - name: "Device power management reference"
+    href: device-power-management-reference.md
+  - name: "Component-Level Power Management"
+    href: component-level-power-management.md
+  - name: "Component-Level Performance State Management"
+    href: component-level-performance-management.md
+  - name: "Introduction to the Directed Power Management Framework"
+    href: introduction-to-the-directed-power-management-framework.md
+  - name: "Platform Extension Plug-ins (PEPs)"
+    href: platform-extension-plug-ins--peps-.md
+  - name: "Using PEPs for ACPI services"
+    href: using-peps-for-acpi-services.md
+  - name: "Platform Performance Thresholds"
+    href: platform-performance-thresholds.md
+  - name: "Supporting Devices that Have Wake-Up Capabilities"
+    href: supporting-devices-that-have-wake-up-capabilities.md
+  - name: "Overview of Wait/Wake Operation"
+    href: overview-of-wait-wake-operation.md
+  - name: "Determining Whether a Device Can Wake the System"
+    href: determining-whether-a-device-can-wake-the-system.md
+  - name: "Understanding the Path of Wait/Wake IRPs through a Device Tree"
+    href: understanding-the-path-of-wait-wake-irps-through-a-device-tree.md
+  - name: "Overview of Wait/Wake IRP Completion"
+    href: overview-of-wait-wake-irp-completion.md
+  - name: "Receiving a Wait/Wake IRP"
+    href: receiving-a-wait-wake-irp.md
+  - name: "Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)"
+    href: handling-a-wait-wake-irp-in-a-function--fdo--or-filter-driver--filter-.md
+  - name: "Handling a Wait/Wake IRP in a Bus Driver (PDO)"
+    href: handling-a-wait-wake-irp-in-a-bus-driver--pdo-.md
+  - name: "IoCompletion Routines for Wait/Wake IRPs"
+    href: iocompletion-routines-for-wait-wake-irps.md
+  - name: "Sending a Wait/Wake IRP"
+    href: sending-a-wait-wake-irp.md
+  - name: "Determining When to Send a Wait/Wake IRP"
+    href: determining-when-to-send-a-wait-wake-irp.md
+  - name: "Wait/Wake IRP Requests"
+    href: wait-wake-irp-requests.md
+  - name: "Wait/Wake Callback Routines"
+    href: wait-wake-callback-routines.md
+  - name: "Canceling a Wait/Wake IRP"
+    href: canceling-a-wait-wake-irp.md
+  - name: "Improving System Startup Performance"
+    href: improving-system-startup-performance.md
+  - name: "Sharing Processor Resources During Startup from a Low-Power State"
+    href: sharing-processor-resources-during-startup-from-a-low-power-state.md
+  - name: "Fast Startup from a Low-Power State"
+    href: fast-startup-from-a-low-power-state.md
+  - name: "Device-Level Thermal Management"
+    href: device-level-thermal-management.md
+  - name: "Passive and Active Cooling Modes"
+    href: passive-and-active-cooling-modes.md
+  - name: "Global thermal management"
+    href: global-thermal-mgmt.md
+- name: "Windows Management Instrumentation (WMI)"
+  items:
+  - name: "Implementing WMI"
+    href: implementing-wmi.md
+  - name: "Introduction to WMI"
+    href: introduction-to-wmi.md
+  - name: "WMI Architecture"
+    href: wmi-architecture.md
+  - name: "WMI Requirements for WDM Drivers"
+    href: wmi-requirements-for-wdm-drivers.md
+  - name: "MOF Syntax for WMI Data and Event Blocks"
+    href: mof-syntax-for-wmi-data-and-event-blocks.md
+  - name: "WMI Class Qualifiers"
+    href: wmi-class-qualifiers.md
+  - name: "WMI Class Names and Base Classes"
+    href: wmi-class-names-and-base-classes.md
+  - name: "Required Items in WMI Classes"
+    href: required-items-in-wmi-classes.md
+  - name: "WMI Property Qualifiers"
+    href: wmi-property-qualifiers.md
+  - name: "Driver-Defined WMI Data Items"
+    href: driver-defined-wmi-data-items.md
+  - name: "WMI Class Examples"
+    href: wmi-class-examples.md
+  - name: "Designing WMI Data and Event Blocks"
+    href: designing-wmi-data-and-event-blocks.md
+  - name: "Supporting Standard WMI Blocks"
+    href: supporting-standard-wmi-blocks.md
+  - name: "Implementing Custom WMI Blocks"
+    href: implementing-custom-wmi-blocks.md
+  - name: "Defining WMI Instance Names"
+    href: defining-wmi-instance-names.md
+  - name: "Publishing a WMI Schema"
+    href: publishing-a-wmi-schema.md
+  - name: "Compiling a Driver's MOF File"
+    href: compiling-a-driver-s-mof-file.md
+  - name: "Setting the MofImagePath Registry Value"
+    href: setting-the-mofimagepath-registry-value.md
+  - name: "Implementing Dynamic MOF Data"
+    href: implementing-dynamic-mof-data.md
+  - name: "Localizing MOF Files"
+    href: localizing-mof-files.md
+  - name: "Creating the Localized MOF File"
+    href: creating-the-localized-mof-file.md
+  - name: "Building and Deploying the Localized MOF File"
+    href: building-and-deploying-the-localized-mof-file.md
+  - name: "Registering as a WMI Data Provider"
+    href: registering-as-a-wmi-data-provider.md
+  - name: "Using the WMI Library to Register Blocks"
+    href: using-the-wmi-library-to-register-blocks.md
+  - name: "Handling IRP_MN_REGINFO and IRP_MN_REGINFO_EX to Register Blocks"
+    href: handling-irp-mn-reginfo-and-irp-mn-reginfo-ex-to-register-blocks.md
+  - name: "WMI Registration Flags"
+    href: wmi-registration-flags.md
+  - name: "Updating WMI Registration Information"
+    href: updating-wmi-registration-information.md
+  - name: "Handling WMI Requests"
+    href: handling-wmi-requests.md
+  - name: "WMI Minor IRPs"
+    href: wmi-minor-irps.md
+  - name: "IRP_MN_CHANGE_SINGLE_INSTANCE"
+    href: irp-mn-change-single-instance.md
+  - name: "IRP_MN_CHANGE_SINGLE_ITEM"
+    href: irp-mn-change-single-item.md
+  - name: "IRP_MN_DISABLE_COLLECTION"
+    href: irp-mn-disable-collection.md
+  - name: "IRP_MN_DISABLE_EVENTS"
+    href: irp-mn-disable-events.md
+  - name: "IRP_MN_ENABLE_COLLECTION"
+    href: irp-mn-enable-collection.md
+  - name: "IRP_MN_ENABLE_EVENTS"
+    href: irp-mn-enable-events.md
+  - name: "IRP_MN_EXECUTE_METHOD"
+    href: irp-mn-execute-method.md
+  - name: "IRP_MN_QUERY_ALL_DATA"
+    href: irp-mn-query-all-data.md
+  - name: "IRP_MN_QUERY_SINGLE_INSTANCE"
+    href: irp-mn-query-single-instance.md
+  - name: "IRP_MN_REGINFO"
+    href: irp-mn-reginfo.md
+  - name: "IRP_MN_REGINFO_EX"
+    href: irp-mn-reginfo-ex.md
+  - name: "Calling WmiSystemControl to Handle WMI IRPs"
+    href: calling-wmisystemcontrol-to-handle-wmi-irps.md
+  - name: "Processing WMI IRPs in a DispatchSystemControl Routine"
+    href: processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md
+  - name: "WMI WNODE_XXX Structures"
+    href: wmi-wnode-xxx-structures.md
+  - name: "Sending WMI Events"
+    href: sending-wmi-events.md
+  - name: "Sending an Event with WmiFireEvent"
+    href: sending-an-event-with-wmifireevent.md
+  - name: "Sending an Event with IoWMIWriteEvent"
+    href: sending-an-event-with-iowmiwriteevent.md
+  - name: "Using Custom WMI Events"
+    href: using-custom-wmi-events.md
+  - name: "WMI Property Sheets"
+    href: wmi-property-sheets.md
+  - name: "WMI Generic Property Page Provider"
+    href: wmi-generic-property-page-provider.md
+  - name: "WMI and the Power Management Tab"
+    href: wmi-and-the-power-management-tab.md
+  - name: "Using Wmimofck.exe"
+    href: using-wmimofck-exe.md
+  - name: "WMI Event Tracing"
+    href: wmi-event-tracing.md
+  - name: "General Techniques for Testing WMI Driver Support"
+    href: general-techniques-for-testing-wmi-driver-support.md
+  - name: "Troubleshooting Specific WMI Problems"
+    href: troubleshooting-specific-wmi-problems.md
+- name: "Programming Techniques"
+  items:
+  - name: "Using Nt and Zw Versions of the Native System Services Routines"
+    href: using-nt-and-zw-versions-of-the-native-system-services-routines.md
+  - name: "PreviousMode"
+    href: previousmode.md
+  - name: "Libraries and Headers"
+    href: libraries-and-headers.md
+  - name: "What Does the Zw Prefix Mean?"
+    href: what-does-the-zw-prefix-mean-.md
+  - name: "Specifying Access Rights"
+    href: access-mask.md
+  - name: "NtXxx Routines"
+    href: ntxxx-routines.md
+  - name: "Synchronization"
+    items:
+    - name: "Kernel Dispatcher Objects"
       items: 
-      - name: "Introduction to WDM"
-        href: introduction-to-wdm.md
-      - name: "Types of WDM Drivers"
-        href: types-of-wdm-drivers.md
-        items: 
-        - name: "Bus Drivers"
-          href: bus-drivers.md
-        - name: "Function Drivers"
-          href: function-drivers.md
-        - name: "Filter Drivers"
-          href: filter-drivers.md
-        - name: "WDM Driver Layers:  An Example"
-          href: wdm-driver-layers---an-example.md
-      - name: "Device Configurations and Layered Drivers"
-        href: device-configurations-and-layered-drivers.md
-        items: 
-        - name: "Sample Device and Driver Configuration"
-          href: sample-device-and-driver-configuration.md
-        - name: "Points to Consider When Adding Drivers"
-          href: points-to-consider-when-adding-drivers.md
-      - name: "WDM Versions"
-        href: wdm-versions.md
-        items: 
-        - name: "Determining the WDM Version"
-          href: determining-the-wdm-version.md
-        - name: "Differences in WDM Versions"
-          href: differences-in-wdm-versions.md
-    - name: "Kernel-Mode Driver Components"
-      href: kernel-mode-driver-components.md
+      - name: "Introduction to Kernel Dispatcher Objects"
+        href: introduction-to-kernel-dispatcher-objects.md
+      - name: "Timer Objects"
+        href: timer-objects.md
+      - name: "KeXxxTimer Routines, KTIMER Objects, and DPCs"
+        href: timer-objects-and-dpcs.md
+      - name: "Using Timer Objects"
+        href: using-timer-objects.md
+      - name: "Timer Accuracy"
+        href: timer-accuracy.md
+      - name: "Registering and Queuing a CustomTimerDpc Routine"
+        href: registering-and-queuing-a-customtimerdpc-routine.md
+      - name: "Providing CustomTimerDpc Context Information"
+        href: providing-customtimerdpc-context-information.md
+      - name: "Using a CustomTimerDpc Routine"
+        href: using-a-customtimerdpc-routine.md
+      - name: "ExXxxTimer Routines and EX_TIMER Objects"
+        href: exxxxtimer-routines-and-ex-timer-objects.md
+      - name: "High-Resolution Timers"
+        href: high-resolution-timers.md
+      - name: "No-Wake Timers"
+        href: no-wake-timers.md
+      - name: "Deleting a System-Allocated Timer Object"
+        href: deleting-a-system-allocated-timer-object.md
+      - name: "Event Objects"
+        href: event-objects.md
+      - name: "Defining and Using an Event Object"
+        href: defining-and-using-an-event-object.md
+      - name: "Standard Event Objects"
+        href: standard-event-objects.md
+      - name: "Semaphore Objects"
+        href: semaphore-objects.md
+      - name: "Introduction to Mutex Objects"
+        href: introduction-to-mutex-objects.md
+      - name: "Alternatives to Mutex Objects"
+        href: alternatives-to-mutex-objects.md
+      - name: "Introduction to Thread Objects"
+        href: introduction-to-thread-objects.md
+      - name: "Thread Priorities"
+        href: thread-priorities.md
+      - name: "Device-Dedicated Threads"
+        href: device-dedicated-threads.md
+      - name: "System Worker Threads"
+        href: system-worker-threads.md
+      - name: "Waits and APCs"
+        href: waits-and-apcs.md
+    - name: "Callback Objects"
+      href: callback-objects.md
+    - name: "Defining a Callback Object"
+      href: defining-a-callback-object.md
+    - name: "Using a Driver-Defined Callback Object"
+      href: using-a-driver-defined-callback-object.md
+    - name: "Using a System-Defined Callback Object"
+      href: using-a-system-defined-callback-object.md
+    - name: "Spin Locks"
       items: 
-      - name: "Introduction to Standard Driver Routines"
-        href: introduction-to-standard-driver-routines.md
-      - name: "Standard Driver Routine Requirements"
-        href: standard-driver-routine-requirements.md
-      - name: "Introduction to Driver Objects"
-        href: introduction-to-driver-objects.md
-        items: 
-        - name: "Driver Entry Points in Driver Objects"
-          href: driver-entry-points-in-driver-objects.md
-        - name: "Other Standard Driver Routines"
-          href: other-standard-driver-routines.md
-      - name: "Writing a DriverEntry Routine"
-        href: writing-a-driverentry-routine.md
-        items: 
-        - name: "DriverEntry's Required Responsibilities"
-          href: driverentry-s-required-responsibilities.md
-        - name: "DriverEntry's Optional Responsibilities"
-          href: driverentry-s-optional-responsibilities.md
-        - name: "DriverEntry Return Values"
-          href: driverentry-return-values.md
-      - name: "Writing a Reinitialize Routine"
-        href: writing-a-reinitialize-routine.md
-      - name: "Writing an AddDevice Routine"
-        href: writing-an-adddevice-routine.md
-        items: 
-        - name: "AddDevice Routines in Function or Filter Drivers"
-          href: adddevice-routines-in-function-or-filter-drivers.md
-        - name: "AddDevice Routines in Bus Drivers"
-          href: adddevice-routines-in-bus-drivers.md
-        - name: "Guidelines for Writing AddDevice Routines"
-          href: guidelines-for-writing-adddevice-routines.md
-      - name: "Writing Dispatch Routines"
-        href: writing-dispatch-routines.md
-        items: 
-        - name: "Dispatch Routine Functionality"
-          href: dispatch-routine-functionality.md
-        - name: "Required Dispatch Routines"
-          href: required-dispatch-routines.md
-        - name: "Optional Dispatch Routines"
-          href: optional-dispatch-routines.md
-        - name: "Dispatch Routines and IRQLs"
-          href: dispatch-routines-and-irqls.md
-        - name: "When to Check the Driver's I/O Stack Location"
-          href: when-to-check-the-driver-s-i-o-stack-location.md
-        - name: "DispatchCreate, DispatchClose, and DispatchCreateClose Routines"
-          href: dispatchcreate--dispatchclose--and-dispatchcreateclose-routines.md
-          items: 
-          - name: "Separate DispatchCreate and DispatchClose Routines"
-            href: separate-dispatchcreate-and-dispatchclose-routines.md
-          - name: "A Single DispatchCreateClose Routine"
-            href: a-single-dispatchcreateclose-routine.md
-          - name: "Rules for Implementing DispatchCreate, DispatchClose, and DispatchCreateClose Routines"
-            href: rules-for-implementing-dispatchcreate--dispatchclose--and-dispatchcrea.md
-        - name: "DispatchCleanup Routines"
-          href: dispatchcleanup-routines.md
-        - name: "DispatchRead, DispatchWrite, and DispatchReadWrite Routines"
-          href: dispatchread--dispatchwrite--and-dispatchreadwrite-routines.md
-          items: 
-          - name: "Handling Transfers Asynchronously"
-            href: handling-transfers-asynchronously.md
-          - name: "DispatchReadWrite Using Buffered I/O"
-            href: dispatchreadwrite-using-buffered-i-o.md
-          - name: "DispatchReadWrite Using Direct I/O"
-            href: dispatchreadwrite-using-direct-i-o.md
-          - name: "DispatchReadWrite in Higher-Level Drivers"
-            href: dispatchreadwrite-in-higher-level-drivers.md
-          - name: "Summary of Read/Write Dispatch Routines"
-            href: summary-of-read-write-dispatch-routines.md
-        - name: "DispatchDeviceControl and DispatchInternalDeviceControl Routines"
-          href: dispatchdevicecontrol-and-dispatchinternaldevicecontrol-routines.md
-          items: 
-          - name: "DispatchDeviceControl in Lowest-Level Drivers"
-            href: dispatchdevicecontrol-in-lowest-level-drivers.md
-          - name: "DispatchDeviceControl in Higher-Level Drivers"
-            href: dispatchdevicecontrol-in-higher-level-drivers.md
-          - name: "Dispatch(Internal)DeviceControl in Class/Port Drivers"
-            href: dispatch-internal-devicecontrol-in-class-port-drivers.md
-          - name: "Guidelines for Writing Dispatch(Internal)DeviceControl Routines"
-            href: guidelines-for-writing-dispatch-internal-devicecontrol-routines.md
-        - name: "DispatchPnP Routines"
-          href: dispatchpnp-routines.md
-        - name: "DispatchPower Routines"
-          href: dispatchpower-routines.md
-        - name: "DispatchQueryInformation Routines"
-          href: dispatchqueryinformation-routines.md
-        - name: "DispatchSetInformation Routines"
-          href: dispatchsetinformation-routines.md
-        - name: "DispatchFlushBuffers Routines"
-          href: dispatchflushbuffers-routines.md
-        - name: "DispatchShutdown Routines"
-          href: dispatchshutdown-routines.md
-        - name: "DispatchSystemControl Routines"
-          href: dispatchsystemcontrol-routines.md
-      - name: "Writing an Unload Routine"
-        href: writing-an-unload-routine.md
-        items: 
-        - name: "Unload Routine Environment"
-          href: unload-routine-environment.md
-        - name: "Unload Routine Functionality"
-          href: unload-routine-functionality.md
-          items: 
-          - name: "PnP Driver's Unload Routine"
-            href: pnp-driver-s-unload-routine.md
-          - name: "Non-PnP Driver's Unload Routine"
-            href: non-pnp-driver-s-unload-routine.md
-          - name: "Releasing Driver-Allocated Resources"
-            href: releasing-driver-allocated-resources.md
-          - name: "Releasing Device and Controller Objects"
-            href: releasing-device-and-controller-objects.md
-    - name: "Device Objects and Device Stacks"
-      href: device-objects-and-device-stacks.md
+      - name: "Introduction to Spin Locks"
+        href: introduction-to-spin-locks.md
+      - name: "Providing Storage for Spin Locks and Protected Data"
+        href: providing-storage-for-spin-locks-and-protected-data.md
+      - name: "Initializing Spin Locks"
+        href: initializing-spin-locks.md
+      - name: "Calling Support Routines That Use Spin Locks"
+        href: calling-support-routines-that-use-spin-locks.md
+      - name: "Using Spin Locks: An Example"
+        href: using-spin-locks--an-example.md
+      - name: "Preventing Errors and Deadlocks While Using Spin Locks"
+        href: preventing-errors-and-deadlocks-while-using-spin-locks.md
+      - name: "Queued Spin Locks"
+        href: queued-spin-locks.md
+      - name: "Reader/Writer Spin Locks"
+        href: reader-writer-spin-locks.md
+    - name: "Fast Mutexes and Guarded Mutexes"
+      href: fast-mutexes-and-guarded-mutexes.md
+    - name: "ERESOURCE Structures"
+      href: eresource-structures.md
+    - name: "Introduction to ERESOURCE Routines"
+      href: introduction-to-eresource-routines.md
+    - name: "IoTimer Routines"
+      href: iotimer-routines.md
+    - name: "Registering and Enabling an IoTimer Routine"
+      href: registering-and-enabling-an-iotimer-routine.md
+    - name: "Providing IoTimer Context Information"
+      href: providing-iotimer-context-information.md
+    - name: "Using an IoTimer Routine"
+      href: using-an-iotimer-routine.md
+    - name: "Counters"
+      href: counters.md
+    - name: "Asynchronous Procedure Calls"
       items: 
-      - name: "Introduction to Device Objects"
-        href: introduction-to-device-objects.md
-      - name: "WDM Device Objects and Device Stacks"
-        href: wdm-device-objects-and-device-stacks.md
-        items: 
-        - name: "Types of WDM Device Objects"
-          href: types-of-wdm-device-objects.md
-        - name: "Example WDM Device Objects"
-          href: example-wdm-device-objects.md
-        - name: "When Are WDM Device Objects Created?"
-          href: when-are-wdm-device-objects-created-.md
-        - name: "Example WDM Device Stack"
-          href: example-wdm-device-stack.md
-      - name: "Creating a Device Object"
-        href: creating-a-device-object.md
-      - name: "Initializing a Device Object"
-        href: initializing-a-device-object.md
-      - name: "Named Device Objects"
-        href: named-device-objects.md
-        items: 
-        - name: "NT Device Names"
-          href: nt-device-names.md
-        - name: "MS-DOS Device Names"
-          href: ms-dos-device-names.md
-          items: 
-          - name: "Introduction to MS-DOS Device Names"
-            href: introduction-to-ms-dos-device-names.md
-          - name: "Local and Global MS-DOS Device Names"
-            href: local-and-global-ms-dos-device-names.md
-      - name: "Device Extensions"
-        href: device-extensions.md
-      - name: "Properties of Device Objects"
-        href: properties-of-device-objects.md
-        items: 
-        - name: "Specifying Device Types"
-          href: specifying-device-types.md
-        - name: "Specifying Device Characteristics"
-          href: specifying-device-characteristics.md
-        - name: "Specifying Exclusive Access to Device Objects"
-          href: specifying-exclusive-access-to-device-objects.md
-        - name: "Setting Device Object Properties in the Registry"
-          href: setting-device-object-properties-in-the-registry.md
-          items: 
-          - name: "Setting Device Object Registry Properties During Installation"
-            href: setting-device-object-registry-properties-during-installation.md
-          - name: "Setting Device Object Registry Properties After Installation"
-            href: setting-device-object-registry-properties-after-installation.md
-      - name: "Securing Device Objects"
-        href: securing-device-objects.md
-        items: 
-        - name: "Controlling Device Access"
-          href: controlling-device-access.md
-        - name: "Controlling Device Namespace Access"
-          href: controlling-device-namespace-access.md
-        - name: "SDDL for Device Objects"
-          href: sddl-for-device-objects.md
-      - name: "Points to Consider About Device Objects"
-        href: points-to-consider-about-device-objects.md
-    - name: "Managing Kernel Objects"
-      href: managing-kernel-objects.md
-      items: 
-      - name: "Object Names"
-        href: object-names.md
-      - name: "Object Directories"
-        href: object-directories.md
-      - name: "Life Cycle of an Object"
-        href: life-cycle-of-an-object.md
-      - name: "Object Handles"
-        href: object-handles.md
-      - name: "Object Security"
-        href: object-security.md
-        items: 
-        - name: "Access Rights"
-          href: access-rights.md
-        - name: "Security Descriptors"
-          href: security-descriptors.md
-        - name: "Privileges"
-          href: privileges.md
-    - name: "Memory Management for Windows Drivers"
-      href: managing-memory-for-drivers.md
-      items: 
-      - name: "Overview of Windows Memory Space"
-        href: overview-of-windows-memory-space.md
-      - name: "Allocating System-Space Memory"
-        href: allocating-system-space-memory.md
-      - name: "Map Registers"
-        href: map-registers.md
-      - name: "Mapping Bus-Relative Addresses to Virtual Addresses"
-        href: mapping-bus-relative-addresses-to-virtual-addresses.md
-      - name: "Using the Kernel Stack"
-        href: using-the-kernel-stack.md
-      - name: "Using Lookaside Lists"
-        href: using-lookaside-lists.md
-      - name: "Making Drivers Pageable"
-        href: making-drivers-pageable.md
-        items: 
-        - name: "When Should Code and Data Be Pageable?"
-          href: when-should-code-and-data-be-pageable-.md
-        - name: "Making Driver Code or Data Pageable"
-          href: making-driver-code-or-data-pageable.md
-          items: 
-          - name: "Detecting Code That Can Be Pageable"
-            href: detecting-code-that-can-be-pageable.md
-          - name: "Isolating Pageable Code"
-            href: isolating-pageable-code.md
-          - name: "Locking Pageable Code or Data"
-            href: locking-pageable-code-or-data.md
-          - name: "Paging an Entire Driver"
-            href: paging-an-entire-driver.md
-      - name: "Accessing Read-Only System Memory"
-        href: accessing-read-only-system-memory.md
-      - name: "Accessing User-Space Memory"
-        href: accessing-user-space-memory.md
-      - name: "No-Execute (NX) Nonpaged Pool"
-        href: no-execute-nonpaged-pool.md
-        items: 
-        - name: "NX and Execute Pool Types"
-          href: nx-and-execute-pool-types.md
-        - name: "NX Pool Compatibility Issues"
-          href: nx-pool-compatibility-issues.md
-        - name: "NX Pool Opt-In Mechanisms"
-          href: nx-pool-opt-in-mechanisms.md
-          items: 
-          - name: "Single Binary Opt-In: POOL_NX_OPTIN"
-            href: single-binary-opt-in-pool-nx-optin.md
-          - name: "Multiple Binary Opt-In: POOL_NX_OPTIN_AUTO"
-            href: multiple-binary-opt-in-pool-nx-optin-auto.md
-          - name: "Selective Opt-Out: POOL_NX_OPTOUT"
-            href: selective-opt-out-pool-nx-optout.md
-      - name: "Section Objects and Views"
-        href: section-objects-and-views.md
-        items: 
-        - name: "File-Backed and Page-File-Backed Sections"
-          href: file-backed-and-page-file-backed-sections.md
-        - name: "Managing Memory Sections"
-          href: managing-memory-sections.md
-        - name: "Security Issues for Section Objects and Views"
-          href: security-issues-for-section-objects-and-views.md
-      - name: "Using MDLs"
-        href: using-mdls.md
-    - name: "Managing Input/Output for Drivers"
-      href: managing-input-output-for-drivers.md
-      items: 
-      - name: "Handling IRPs"
-        href: handling-irps.md
-        items: 
-        - name: "Overview of the Windows I/O Model"
-          href: overview-of-the-windows-i-o-model.md
-        - name: "End-User I/O Requests and File Objects"
-          href: end-user-i-o-requests-and-file-objects.md
-        - name: "The Life of an I/O Request"
-          href: the-life-of-an-i-o-request.md
-          items: 
-          - name: "Example I/O Request - An Overview"
-            href: example-i-o-request---an-overview.md
-          - name: "Example I/O Request - The Details"
-            href: example-i-o-request---the-details.md
-          - name: "Driver Thread Context"
-            href: driver-thread-context.md
-          - name: "Points to Consider about User I/O Requests"
-            href: points-to-consider-about-user-i-o-requests.md
-        - name: "IRP Major Function Codes"
-          href: irp-major-function-codes.md
-          items: 
-          - name: "IRP_MJ_CLEANUP"
-            href: irp-mj-cleanup.md
-          - name: "IRP_MJ_CLOSE"
-            href: irp-mj-close.md
-          - name: "IRP_MJ_CREATE"
-            href: irp-mj-create.md
-          - name: "IRP_MJ_DEVICE_CONTROL"
-            href: irp-mj-device-control.md
-          - name: "IRP_MJ_FILE_SYSTEM_CONTROL"
-            href: irp-mj-file-system-control.md
-          - name: "IRP_MJ_FLUSH_BUFFERS"
-            href: irp-mj-flush-buffers.md
-          - name: "IRP_MJ_INTERNAL_DEVICE_CONTROL"
-            href: irp-mj-internal-device-control.md
-          - name: "IRP_MJ_PNP"
-            href: irp-mj-pnp.md
-          - name: "IRP_MJ_POWER"
-            href: irp-mj-power.md
-          - name: "IRP_MJ_QUERY_INFORMATION"
-            href: irp-mj-query-information.md
-          - name: "IRP_MJ_READ"
-            href: irp-mj-read.md
-          - name: "IRP_MJ_SET_INFORMATION"
-            href: irp-mj-set-information.md
-          - name: "IRP_MJ_SHUTDOWN"
-            href: irp-mj-shutdown.md
-          - name: "IRP_MJ_SYSTEM_CONTROL"
-            href: irp-mj-system-control.md
-          - name: "IRP_MJ_WRITE"
-            href: irp-mj-write.md
-        - name: "I/O Stack Locations"
-          href: i-o-stack-locations.md
-        - name: "I/O Status Blocks"
-          href: i-o-status-blocks.md
-        - name: "Passing IRPs down the Driver Stack"
-          href: passing-irps-down-the-driver-stack.md
-        - name: "Creating IRPs for Lower-Level Drivers"
-          href: creating-irps-for-lower-level-drivers.md
-        - name: "Queuing and Dequeuing IRPs"
-          href: queuing-and-dequeuing-irps.md
-        - name: "Writing a StartIo Routine"
-          href: writing-a-startio-routine.md
-          items: 
-          - name: "StartIo Routines in Lowest-Level Drivers"
-            href: startio-routines-in-lowest-level-drivers.md
-          - name: "StartIo Routines in Higher-Level Drivers"
-            href: startio-routines-in-higher-level-drivers.md
-          - name: "Points to Consider For StartIo Routines"
-            href: points-to-consider-for-startio-routines.md
-        - name: "Driver-Managed IRP Queues"
-          href: driver-managed-irp-queues.md
-          items: 
-          - name: "Setting Up and Using Device Queues"
-            href: setting-up-and-using-device-queues.md
-          - name: "Managing Device Queues"
-            href: managing-device-queues.md
-          - name: "Setting Up and Using Interlocked Queues"
-            href: setting-up-and-using-interlocked-queues.md
-          - name: "Managing Interlocked Queues with a Driver-Created Thread"
-            href: managing-interlocked-queues-with-a-driver-created-thread.md
-          - name: "Cancel-Safe IRP Queues"
-            href: cancel-safe-irp-queues.md
-        - name: "Completing IRPs"
-          href: completing-irps.md
-        - name: "When to Complete an IRP"
-          href: when-to-complete-an-irp.md
-        - name: "Completing IRPs in Dispatch Routines"
-          href: completing-irps-in-dispatch-routines.md
-          items: 
-          - name: "How to Complete an IRP in a Dispatch Routine"
-            href: how-to-complete-an-irp-in-a-dispatch-routine.md
-          - name: "When to Complete an IRP in a Dispatch Routine"
-            href: when-to-complete-an-irp-in-a-dispatch-routine.md
-        - name: "Using IoCompletion Routines"
-          href: using-iocompletion-routines.md
-          items: 
-          - name: "Registering an IoCompletion Routine"
-            href: registering-an-iocompletion-routine.md
-          - name: "Implementing an IoCompletion Routine"
-            href: implementing-an-iocompletion-routine.md
-        - name: "Canceling IRPs"
-          href: canceling-irps.md
-          items: 
-          - name: "Introduction to Cancel Routines"
-            href: introduction-to-cancel-routines.md
-          - name: "Registering a Cancel Routine"
-            href: registering-a-cancel-routine.md
-          - name: "Points to Consider When Canceling IRPs"
-            href: points-to-consider-when-canceling-irps.md
-        - name: "Synchronizing IRP Cancellation"
-          href: synchronizing-irp-cancellation.md
-          items: 
-          - name: "Using the System's Cancel Spin Lock"
-            href: using-the-system-s-cancel-spin-lock.md
-          - name: "Synchronizing Cancellation in Driver Routines that Process IRPs"
-            href: synchronizing-cancellation-in-driver-routines-that-process-irps.md
-          - name: "Synchronizing Cancellation in Higher-Level Drivers without Cancel Routines"
-            href: synchronizing-cancellation-in-higher-level-drivers-without-cancel-rout.md
-          - name: "Using a Driver-Supplied Spin Lock"
-            href: using-a-driver-supplied-spin-lock.md
-        - name: "Implementing a Cancel Routine"
-          href: implementing-a-cancel-routine.md
-          items: 
-          - name: "Cancel Routines in Drivers with StartIo Routines"
-            href: cancel-routines-in-drivers-with-startio-routines.md
-          - name: "Cancel Routines in Drivers without StartIo Routines"
-            href: cancel-routines-in-drivers-without-startio-routines.md
-        - name: "Reusing IRPs"
-          href: reusing-irps.md
-        - name: "Device Type-Specific I/O Requests"
-          href: device-type-specific-i-o-requests.md
-        - name: "Using I/O Control Codes"
-          href: using-i-o-control-codes.md
-          items: 
-          - name: "Introduction to I/O Control Codes"
-            href: introduction-to-i-o-control-codes.md
-          - name: "Creating IOCTL Requests in Drivers"
-            href: creating-ioctl-requests-in-drivers.md
-          - name: "Defining I/O Control Codes"
-            href: defining-i-o-control-codes.md
-          - name: "Buffer Descriptions for I/O Control Codes"
-            href: buffer-descriptions-for-i-o-control-codes.md
-          - name: "Security Issues for I/O Control Codes"
-            href: security-issues-for-i-o-control-codes.md
-        - name: "Using IRP Priority Hints"
-          href: using-irp-priority-hints.md
-        - name: "IRP Processing Examples"
-          href: irp-processing-examples.md
-          items: 
-          - name: "Processing IRPs in a Lowest-Level Driver"
-            href: processing-irps-in-a-lowest-level-driver.md
-          - name: "Processing IRPs in an Intermediate-Level Driver"
-            href: processing-irps-in-an-intermediate-level-driver.md
-          - name: "Different ways of handling IRPs - Cheat sheet"
-            href: different-ways-of-handling-irps-cheat-sheet.md
-      - name: "I/O Programming Techniques"
-        href: i-o-programming-techniques.md
-      - name: "General I/O Programming Techniques"
-        href: general-i-o-programming-techniques.md
-        items: 
-        - name: "Synchronous I/O Programming"
-          href: synchronous-i-o-programming.md
-        - name: "Asynchronous I/O Programming"
-          href: asynchronous-i-o-programming.md
-        - name: "Restricting Waits in Vista"
-          href: restricting-waits-in-vista.md
-        - name: "Avoid Polling Devices"
-          href: avoid-polling-devices.md
-        - name: "Maintaining Cache Coherency"
-          href: maintaining-cache-coherency.md
-      - name: "Methods for Accessing Data Buffers"
-        href: methods-for-accessing-data-buffers.md
-        items: 
-        - name: "Using Buffered I/O"
-          href: using-buffered-i-o.md
-        - name: "Using Direct I/O"
-          href: using-direct-i-o.md
-        - name: "Using Direct I/O with DMA"
-          href: using-direct-i-o-with-dma.md
-        - name: "Using Direct I/O with PIO"
-          href: using-direct-i-o-with-pio.md
-        - name: "Using Neither Buffered Nor Direct I/O"
-          href: using-neither-buffered-nor-direct-i-o.md
-      - name: "DMA Programming Techniques"
-        href: dma-programming-techniques.md
-        items: 
-        - name: "Flushing Cached Data during DMA Operations"
-          href: flushing-cached-data-during-dma-operations.md
-        - name: "Splitting DMA Transfer Requests"
-          href: splitting-dma-transfer-requests.md
-      - name: "Adapter Objects and DMA"
-        href: adapter-objects-and-dma.md
-        items: 
-        - name: "Introduction to Adapter Objects"
-          href: introduction-to-adapter-objects.md
-        - name: "Getting an Adapter Object"
-          href: getting-an-adapter-object.md
-        - name: "Using Scatter/Gather DMA"
-          href: using-scatter-gather-dma.md
-        - name: "Writing AdapterControl Routines"
-          href: writing-adaptercontrol-routines.md
-          items: 
-          - name: "Storage Requirements for AdapterControl Routines"
-            href: storage-requirements-for-adaptercontrol-routines.md
-          - name: "Setting Up AdapterControl Routines"
-            href: setting-up-adaptercontrol-routines.md
-          - name: "AdapterControl Routine Requirements"
-            href: adaptercontrol-routine-requirements.md
-      - name: "Using System DMA"
-        href: using-system-dma.md
-        items: 
-        - name: "Using Packet-Based System DMA"
-          href: using-packet-based-system-dma.md
-          items: 
-          - name: "Allocating an Adapter Channel for Packet-Based DMA"
-            href: allocating-an-adapter-channel-for-packet-based-dma.md
-          - name: "Setting Up the System DMA Controller for Packet-Based DMA"
-            href: setting-up-the-system-dma-controller-for-packet-based-dma.md
-        - name: "Using Common-Buffer System DMA"
-          href: using-common-buffer-system-dma.md
-          items: 
-          - name: "Allocating an Adapter Channel for Common-Buffer System DMA"
-            href: allocating-an-adapter-channel-for-common-buffer-system-dma.md
-          - name: "Setting Up the System DMA Controller for Common-Buffer DMA"
-            href: setting-up-the-system-dma-controller-for-common-buffer-dma.md
-      - name: "Using Bus-Master DMA"
-        href: using-bus-master-dma.md
-        items: 
-        - name: "Using Packet-Based Bus-Master DMA"
-          href: using-packet-based-bus-master-dma.md
-          items: 
-          - name: "Allocating the Bus-Master Adapter Object"
-            href: allocating-the-bus-master-adapter-object.md
-          - name: "Setting Up a Transfer Operation"
-            href: setting-up-a-transfer-operation.md
-        - name: "Using Common-Buffer Bus-Master DMA"
-          href: using-common-buffer-bus-master-dma.md
-      - name: "Version 3 of the DMA Operations Interface"
-        href: version-3-of-the-dma-operations-interface.md
-        items: 
-        - name: "Basic Calling Pattern for Version-3 DMA Routines"
-          href: basic-calling-pattern-for-version-3-dma-routines.md
-        - name: "Using the MapTransferEx Routine"
-          href: using-the-maptransferex-routine.md
-      - name: "PIO Techniques"
-        href: pio-techniques.md
-        items: 
-        - name: "Flushing Cached Data during PIO Operations"
-          href: flushing-cached-data-during-pio-operations.md
-      - name: "Legacy I/O Programming"
-        href: legacy-i-o-programming.md
-        items: 
-        - name: "Accessing Device Configuration Space"
-          href: accessing-device-configuration-space.md
-          items: 
-          - name: "Obtaining Device Configuration Information at IRQL = PASSIVE_LEVEL"
-            href: obtaining-device-configuration-information-at-irql---passive-level.md
-          - name: "Obtaining Device Configuration Information at IRQL = DISPATCH_LEVEL"
-            href: obtaining-device-configuration-information-at-irql---dispatch-level.md
-          - name: "Obtaining Configuration Information from Other Driver Stacks"
-            href: obtaining-configuration-information-from-other-driver-stacks.md
-        - name: "Using Controller Objects"
-          href: using-controller-objects.md
-          items: 
-          - name: "Introduction to Controller Objects"
-            href: introduction-to-controller-objects.md
-          - name: "Creating Controller Objects and Controller Extensions"
-            href: creating-controller-objects-and-controller-extensions.md
-          - name: "Allocating Controller Objects for I/O Operations"
-            href: allocating-controller-objects-for-i-o-operations.md
-        - name: "Writing ControllerControl Routines"
-          href: writing-controllercontrolroutines.md
-          items: 
-          - name: "Storage Requirements for ControllerControl Routines"
-            href: storage-requirements-for-controllercontrol-routines.md
-          - name: "Setting Up ControllerControl Routines"
-            href: setting-up-controllercontrolroutines.md
-          - name: "ControllerControl Routine Requirements"
-            href: controllercontrol-routine-requirements.md
-      - name: "Servicing Interrupts"
-        href: servicing-interrupts.md
-        items: 
-        - name: "Interrupt Service Routines"
-          href: interrupt-service-routines.md
-          items: 
-          - name: "Introduction to Interrupt Service Routines"
-            href: introduction-to-interrupt-service-routines.md
-          - name: "Removing an ISR"
-            href: removing-an-isr.md
-          - name: "Making an ISR Active or Inactive"
-            href: making-an-isr-active-or-inactive.md
-          - name: "Interrupt Affinity"
-            href: interrupt-affinity-and-priority.md
-          - name: "Providing ISR Context Information"
-            href: providing-isr-context-information.md
-          - name: "Writing an ISR"
-            href: writing-an-isr.md
-          - name: "Synchronizing Access to Device Data"
-            href: synchronizing-access-to-device-data.md
-        - name: "Using Message-Signaled Interrupts"
-          href: using-message-signaled-interrupts.md
-          items: 
-          - name: "Introduction to Message-Signaled Interrupts"
-            href: introduction-to-message-signaled-interrupts.md
-          - name: "Enabling Message-Signaled Interrupts in the Registry"
-            href: enabling-message-signaled-interrupts-in-the-registry.md
-          - name: "Using Interrupt Resource Descriptors"
-            href: using-interrupt-resource-descriptors.md
-          - name: "Dynamically Configuring MSI-X"
-            href: dynamically-configuring-msi-x.md
-        - name: "Registering an ISR"
-          href: registering-an-isr.md
-          items: 
-          - name: "Using the CONNECT_LINE_BASED Version of IoConnectInterruptEx"
-            href: using-the-connect-line-based-version-of-ioconnectinterruptex.md
-          - name: "Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx"
-            href: using-the-connect-message-based-version-of-ioconnectinterruptex.md
-          - name: "Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx"
-            href: using-the-connect-fully-specified-version-of-ioconnectinterruptex.md
-          - name: "Using Passive-Level Interrupt Service Routines"
-            href: using-passive-level-interrupt-handling-routines.md
-          - name: "Using IoConnectInterruptEx Prior to Windows Vista"
-            href: using-ioconnectinterruptex-prior-to-windows-vista.md
-        - name: "DPC Objects and DPCs"
-          href: dpc-objects-and-dpcs.md
-          items: 
-          - name: "Introduction to DPC Objects"
-            href: introduction-to-dpc-objects.md
-          - name: "Introduction to DPCs"
-            href: introduction-to-dpcs.md
-          - name: "Which Type of DPC Should You Use?"
-            href: which-type-of-dpc-should-you-use-.md
-          - name: "Registering and Queuing a DpcForIsr Routine"
-            href: registering-and-queuing-a-dpcforisr-routine.md
-          - name: "Registering and Queuing a CustomDpc Routine"
-            href: registering-and-queuing-a-customdpc-routine.md
-          - name: "Handling Overlapped I/O Operations"
-            href: handling-overlapped-i-o-operations.md
-          - name: "Writing DPC Routines"
-            href: writing-dpc-routines.md
-          - name: "Guidelines for Writing DPC Routines"
-            href: guidelines-for-writing-dpc-routines.md
-          - name: "Organization of DPC Queues"
-            href: organization-of-dpc-queues.md
-        - name: "Threaded DPCs"
-          href: threaded-dpcs.md
-          items: 
-          - name: "Introduction to Threaded DPCs"
-            href: introduction-to-threaded-dpcs.md
-          - name: "Synchronization and Threaded DPCs"
-            href: synchronization-and-threaded-dpcs.md
-          - name: "Converting an Ordinary DPC to a Threaded DPC"
-            href: converting-an-ordinary-dpc-to-a-threaded-dpc.md
-        - name: "Using Critical Sections"
-          href: using-critical-sections.md
-          items: 
-          - name: "Introduction to SynchCritSection Routines"
-            href: introduction-to-synchcritsection-routines.md
-          - name: "Writing SynchCritSection Routines"
-            href: writing-synchcritsection-routines.md
-          - name: "Programming a Device for an I/O Operation"
-            href: programming-a-device-for-an-i-o-operation.md
-          - name: "Accessing Shared State Information"
-            href: accessing-shared-state-information.md
-        - name: "Managing Hardware Priorities"
-          href: managing-hardware-priorities.md
-    - name: "Implementing Plug and Play"
-      href: implementing-plug-and-play.md
-      items: 
-      - name: "Introduction to Plug and Play"
-        href: introduction-to-plug-and-play.md
-        items: 
-        - name: "PnP Components"
-          href: pnp-components.md
-        - name: "Levels of Support for PnP"
-          href: levels-of-support-for-pnp.md
-        - name: "PnP Driver Design Guidelines"
-          href: pnp-driver-design-guidelines.md
-        - name: "Device Tree"
-          href: device-tree.md
-        - name: "Hardware Resources"
-          href: hardware-resources.md
-        - name: "State Transitions for PnP Devices"
-          href: state-transitions-for-pnp-devices.md
-      - name: "Adding a PnP Device to a Running System"
-        href: adding-a-pnp-device-to-a-running-system.md
-      - name: "Plug and Play Minor IRPs"
-        href: plug-and-play-minor-irps.md
-        items: 
-        - name: "IRP_MN_CANCEL_REMOVE_DEVICE"
-          href: irp-mn-cancel-remove-device.md
-        - name: "IRP_MN_CANCEL_STOP_DEVICE"
-          href: irp-mn-cancel-stop-device.md
-        - name: "IRP_MN_DEVICE_ENUMERATED"
-          href: irp-mn-device-enumerated.md
-        - name: "IRP_MN_DEVICE_USAGE_NOTIFICATION"
-          href: irp-mn-device-usage-notification.md
-        - name: "IRP_MN_EJECT"
-          href: irp-mn-eject.md
-        - name: "IRP_MN_FILTER_RESOURCE_REQUIREMENTS"
-          href: irp-mn-filter-resource-requirements.md
-        - name: "IRP_MN_QUERY_BUS_INFORMATION"
-          href: irp-mn-query-bus-information.md
-        - name: "IRP_MN_QUERY_CAPABILITIES"
-          href: irp-mn-query-capabilities.md
-        - name: "IRP_MN_QUERY_DEVICE_RELATIONS"
-          href: irp-mn-query-device-relations.md
-        - name: "IRP_MN_QUERY_DEVICE_TEXT"
-          href: irp-mn-query-device-text.md
-        - name: "IRP_MN_QUERY_ID"
-          href: irp-mn-query-id.md
-        - name: "IRP_MN_QUERY_INTERFACE"
-          href: irp-mn-query-interface.md
-        - name: "IRP_MN_QUERY_LEGACY_BUS_INFORMATION"
-          href: irp-mn-query-legacy-bus-information.md
-        - name: "IRP_MN_QUERY_PNP_DEVICE_STATE"
-          href: irp-mn-query-pnp-device-state.md
-        - name: "IRP_MN_QUERY_REMOVE_DEVICE"
-          href: irp-mn-query-remove-device.md
-        - name: "IRP_MN_QUERY_RESOURCE_REQUIREMENTS"
-          href: irp-mn-query-resource-requirements.md
-        - name: "IRP_MN_QUERY_RESOURCES"
-          href: irp-mn-query-resources.md
-        - name: "IRP_MN_QUERY_STOP_DEVICE"
-          href: irp-mn-query-stop-device.md
-        - name: "IRP_MN_READ_CONFIG"
-          href: irp-mn-read-config.md
-        - name: "IRP_MN_REMOVE_DEVICE"
-          href: irp-mn-remove-device.md
-        - name: "IRP_MN_SET_LOCK"
-          href: irp-mn-set-lock.md
-        - name: "IRP_MN_START_DEVICE"
-          href: irp-mn-start-device.md
-        - name: "IRP_MN_STOP_DEVICE"
-          href: irp-mn-stop-device.md
-        - name: "IRP_MN_SURPRISE_REMOVAL"
-          href: irp-mn-surprise-removal.md
-        - name: "IRP_MN_WRITE_CONFIG"
-          href: irp-mn-write-config.md
-      - name: "Passing PnP IRPs Down the Device Stack"
-        href: passing-pnp-irps-down-the-device-stack.md
-      - name: "Postponing PnP IRP Processing Until Lower Drivers Finish"
-        href: postponing-pnp-irp-processing-until-lower-drivers-finish.md
-      - name: "Starting a Device"
-        href: starting-a-device.md
-        items: 
-        - name: "Starting a Device in a Function Driver"
-          href: starting-a-device-in-a-function-driver.md
-        - name: "Starting a Device in a Filter Driver"
-          href: starting-a-device-in-a-filter-driver.md
-        - name: "Starting a Device in a Bus Driver"
-          href: starting-a-device-in-a-bus-driver.md
-        - name: "Design Guidelines for Starting Devices"
-          href: design-guidelines-for-starting-devices.md
-      - name: "Stopping a Device"
-        href: stopping-a-device.md
-        items: 
-        - name: "Stopping a Device to Rebalance Resources"
-          href: stopping-a-device-to-rebalance-resources.md
-        - name: "Stopping a Device to Disable It (Windows 98/Me)"
-          href: stopping-a-device-to-disable-it--windows-98-me-.md
-        - name: "Stopping a Device after a Failed Start (Windows 98/Me)"
-          href: stopping-a-device-after-a-failed-start--windows-98-me-.md
-        - name: "Handling Stop IRPs (Windows 2000 and Later)"
-          href: handling-stop-irps--windows-2000-and-later-.md
-          items: 
-          - name: "Handling an IPR_MN_QUERY_STOP_DEVICE Request (Windows 2000 and later)"
-            href: handling-an-irp-mn-query-stop-device-request--windows-2000-and-later-.md
-          - name: "Handling an IRP_MN_STOP_DEVICE Request (Windows 2000 and later)"
-            href: handling-an-irp-mn-stop-device-request--windows-2000-and-later-.md
-          - name: "Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 2000 and later)"
-            href: handling-an-irp-mn-cancel-stop-device-request--windows-2000-and-later-.md
-          - name: "Holding Incoming IRPs When A Device Is Paused"
-            href: holding-incoming-irps-when-a-device-is-paused.md
-        - name: "Handling Stop IRPs (Windows 98/Me)"
-          href: handling-stop-irps--windows-98-me-.md
-          items: 
-          - name: "Handling an IRP_MN_QUERY_STOP_DEVICE Request (Windows 98/Me)"
-            href: handling-an-irp-mn-query-stop-device-request--windows-98-me-.md
-          - name: "Handling an IRP_MN_STOP_DEVICE Request (Windows 98/Me)"
-            href: handling-an-irp-mn-stop-device-request--windows-98-me-.md
-          - name: "Handling an IRP_MN_CANCEL_STOP_DEVICE Request (Windows 98/Me)"
-            href: handling-an-irp-mn-cancel-stop-device-request--windows-98-me-.md
-      - name: "Resetting and recovering a device"
-        href: resetting-and-recovering-a-device.md
-      - name: "Removing a Device"
-        href: removing-a-device.md
-        items: 
-        - name: "Understanding When Remove IRPs Are Issued"
-          href: understanding-when-remove-irps-are-issued.md
-        - name: "Handling an IRP_MN_QUERY_REMOVE_DEVICE Request"
-          href: handling-an-irp-mn-query-remove-device-request.md
-        - name: "Handling an IRP_MN_REMOVE_DEVICE Request"
-          href: handling-an-irp-mn-remove-device-request.md
-          items: 
-          - name: "Removing a Device in a Function Driver"
-            href: removing-a-device-in-a-function-driver.md
-          - name: "Removing a Device in a Filter Driver"
-            href: removing-a-device-in-a-filter-driver.md
-          - name: "Removing a Device in a Bus Driver"
-            href: removing-a-device-in-a-bus-driver.md
-        - name: "Handling an IRP_MN_CANCEL_REMOVE_DEVICE Request"
-          href: handling-an-irp-mn-cancel-remove-device-request.md
-        - name: "Handling an IRP_MN_SURPRISE_REMOVAL Request"
-          href: handling-an-irp-mn-surprise-removal-request.md
-        - name: "Using Remove Locks"
-          href: using-remove-locks.md
-      - name: "Using PnP Notification"
-        href: using-pnp-notification.md
-        items: 
-        - name: "PnP Notification Overview"
-          href: pnp-notification-overview.md
-        - name: "Guidelines for Writing PnP Notification Callback Routines"
-          href: guidelines-for-writing-pnp-notification-callback-routines.md
-        - name: "Using PnP Device Interface Change Notification"
-          href: using-pnp-device-interface-change-notification.md
-          items: 
-          - name: "Registering for Device Interface Change Notification"
-            href: registering-for-device-interface-change-notification.md
-          - name: "Handling Device Interface Change Events"
-            href: handling-device-interface-change-events.md
-        - name: "Using PnP Target Device Change Notification"
-          href: using-pnp-target-device-change-notification.md
-          items: 
-          - name: "Registering for Target Device Change Notification"
-            href: registering-for-target-device-change-notification.md
-          - name: "Handling a GUID_TARGET_DEVICE_QUERY_REMOVE Event"
-            href: handling-a-guid-target-device-query-remove-event.md
-          - name: "Handling a GUID_TARGET_DEVICE_REMOVE_COMPLETE Event"
-            href: handling-a-guid-target-device-remove-complete-event.md
-          - name: "Handling a GUID_TARGET_DEVICE_REMOVE_CANCELLED Event"
-            href: handling-a-guid-target-device-remove-cancelled-event.md
-        - name: "Using PnP Hardware Profile Change Notification"
-          href: using-pnp-hardware-profile-change-notification.md
-          items: 
-          - name: "Registering for Hardware Profile Change Notification"
-            href: registering-for-hardware-profile-change-notification.md
-          - name: "Handling Hardware Profile Change Events"
-            href: handling-hardware-profile-change-events.md
-        - name: "Using PnP Custom Notification"
-          href: using-pnp-custom-notification.md
-    - name: "Power Management for Windows Drivers"
-      href: implementing-power-management.md
-      items: 
-      - name: "Introduction to Power Management"
-        href: introduction-to-power-management.md
-        items: 
-        - name: "Industry Initiatives for Power Management"
-          href: industry-initiatives-for-power-management.md
-        - name: "Support for Power Management"
-          href: support-for-power-management.md
-        - name: "System-Wide Overview of Power Management"
-          href: system-wide-overview-of-power-management.md
-        - name: "Power States"
-          href: power-states.md
-      - name: "Kernel-Mode Power Management Components"
-        href: kernel-mode-power-management-components.md
-        items: 
-        - name: "ACPI BIOS"
-          href: acpi-bios.md
-        - name: "Acpi.sys: The Windows ACPI Driver"
-          href: acpi-driver.md
-        - name: "Power Manager"
-          href: power-manager.md
-        - name: "Driver Role in Power Management"
-          href: driver-role-in-power-management.md
-        - name: "ACPI notifications"
-          href: acpi-notifications.md
-        - name: "Device power management (DPM) notifications"
-          href: dpm-notifications.md
-        - name: "Processor power management (PPM) notifications"
-          href: ppm-notifications.md
-        - name: "PPM power control codes"
-          href: ppm-power-control-codes.md
-      - name: "Power Management Responsibilities for Drivers"
-        href: power-management-responsibilities-for-drivers.md
-        items: 
-        - name: "Reporting Device Power Capabilities"
-          href: reporting-device-power-capabilities.md
-          items: 
-          - name: "DeviceD1 and DeviceD2"
-            href: deviced1-and-deviced2.md
-          - name: "WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3"
-            href: wakefromd0--wakefromd1--wakefromd2--and-wakefromd3.md
-          - name: "DeviceState"
-            href: devicestate.md
-          - name: "SystemWake"
-            href: systemwake.md
-          - name: "DeviceWake"
-            href: devicewake.md
-          - name: "D1Latency, D2Latency, and D3Latency"
-            href: d1latency--d2latency--and-d3latency.md
-        - name: "Setting Device Object Flags for Power Management"
-          href: setting-device-object-flags-for-power-management.md
-        - name: "Handling Power IRPs"
-          href: handling-power-irps.md
-          items: 
-          - name: "Power IRPs for the System"
-            href: power-irps-for-the-system.md
-          - name: "Power IRPs for Individual Devices"
-            href: power-irps-for-individual-devices.md
-        - name: "Power Management Minor IRPs"
-          href: power-management-minor-irps.md
-          items: 
-          - name: "IRP_MN_POWER_SEQUENCE"
-            href: irp-mn-power-sequence.md
-          - name: "IRP_MN_QUERY_POWER"
-            href: irp-mn-query-power.md
-          - name: "IRP_MN_SET_POWER"
-            href: irp-mn-set-power.md
-          - name: "IRP_MN_WAIT_WAKE"
-            href: irp-mn-wait-wake.md
-        - name: "Powering Up a Device"
-          href: powering-up-a-device.md
-        - name: "Powering Down a Device"
-          href: powering-down-a-device.md
-        - name: "Enabling Device Wake-Up"
-          href: enabling-device-wake-up.md
-        - name: "Managing Device Performance States"
-          href: managing-device-performance-states.md
-        - name: "Distinguishing Fast Startup from Wake-from-Hibernation"
-          href: distinguishing-fast-startup-from-wake-from-hibernation.md
-      - name: "Rules for Handling Power IRPs"
-        href: rules-for-handling-power-irps.md
-        items: 
-        - name: "Calling IoCallDriver vs. Calling PoCallDriver"
-          href: calling-iocalldriver-versus-calling-pocalldriver.md
-        - name: "Calling PoStartNextPowerIrp"
-          href: calling-postartnextpowerirp.md
-          items: 
-          - name: "Calling PoStartNextPowerIrp from a Filter Driver"
-            href: calling-postartnextpowerirp-from-a-filter-driver.md
-          - name: "Calling PoStartNextPowerIrp from a Device Power Policy Owner"
-            href: calling-postartnextpowerirp-from-a-device-power-policy-owner.md
-          - name: "Calling PoStartNextPowerIrp from a Bus Driver"
-            href: calling-postartnextpowerirp-from-a-bus-driver.md
-        - name: "Passing Power IRPs"
-          href: passing-power-irps.md
-        - name: "Queuing I/O Requests While a Device Is Sleeping"
-          href: queuing-i-o-requests-while-a-device-is-sleeping.md
-        - name: "Handling Unsupported or Unrecognized Power IRPs"
-          href: handling-unsupported-or-unrecognized-power-irps.md
-        - name: "Calling ExSetTimerResolution While Processing a Power IRP"
-          href: calling-exsettimerresolution-while-processing-a-power-irp.md
-      - name: "Managing Power for Individual Devices"
-        href: managing-power-for-individual-devices.md
-        items: 
-        - name: "Device Power States"
-          href: device-power-states.md
-          items: 
-          - name: "Device Working State D0"
-            href: device-working-state-d0.md
-          - name: "Device Low-Power States"
-            href: device-sleeping-states.md
-          - name: "Required Support for Device Power States"
-            href: required-support-for-device-power-states.md
-        - name: "Managing Device Power Policy"
-          href: managing-device-power-policy.md
-        - name: "Handling IRP_MN_SET_POWER for Device Power States"
-          href: handling-irp-mn-set-power-for-device-power-states.md
-          items: 
-          - name: "Handling Device Power-Down IRPs"
-            href: handling-device-power-down-irps.md
-          - name: "Handling Device Power-Up IRPs"
-            href: handling-device-power-up-irps.md
-          - name: "IoCompletion Routines for Device Power IRPs"
-            href: iocompletion-routines-for-device-power-irps.md
-        - name: "Handling IRP_MN_QUERY_POWER for Device Power States"
-          href: handling-irp-mn-query-power-for-device-power-states.md
-        - name: "Sending IRP_MN_QUERY_POWER or IRP_MN_SET_POWER for Device Power States"
-          href: sending-irp-mn-query-power-or-irp-mn-set-power-for-device-power-states.md
-        - name: "Detecting an Idle Device"
-          href: detecting-an-idle-device.md
-          items: 
-          - name: "Using Power Manager Routines for Idle Detection"
-            href: using-power-manager-routines-for-idle-detection.md
-          - name: "Performing Device-Specific Idle Detection"
-            href: performing-device-specific-idle-detection.md
-        - name: "Supporting D3cold in a Driver"
-          href: supporting-d3cold-in-a-driver.md
-          items: 
-          - name: "Enabling Transitions to D3cold"
-            href: enabling-transitions-to-d3cold.md
-          - name: "D3cold Capabilities of a Device"
-            href: d3cold-capabilities-of-a-device.md
-          - name: "Using the GUID_D3COLD_SUPPORT_INTERFACE Driver Interface"
-            href: using-guid-d3cold-support-interface.md
-          - name: "Surprise Wake-Up"
-            href: surprise-wake-up.md
-      - name: "Handling System Power State Requests"
-        href: handling-system-power-state-requests.md
-        items: 
-        - name: "System Power States"
-          href: system-power-states.md
-          items: 
-          - name: "System Working State S0"
-            href: system-working-state-s0.md
-          - name: "System Sleeping States"
-            href: system-sleeping-states.md
-          - name: "System Shutdown State S5"
-            href: system-shutdown-state-s5.md
-          - name: "System Power Actions"
-            href: system-power-actions.md
-        - name: "System Power Policy"
-          href: system-power-policy.md
-        - name: "Preventing System Power State Changes"
-          href: preventing-system-power-state-changes.md
-        - name: "Handling IRP_MN_QUERY_POWER for System Power States"
-          href: handling-irp-mn-query-power-for-system-power-states.md
-          items: 
-          - name: "Handling a System Query-Power IRP in a Device Power Policy Owner"
-            href: handling-a-system-query-power-irp-in-a-device-power-policy-owner.md
-          - name: "Handling a System Query-Power IRP in a Filter or Function Driver"
-            href: handling-a-system-query-power-irp-in-a-filter-or-function-driver.md
-          - name: "Failing a System Query-Power IRP in a Filter or Function Driver"
-            href: failing-a-system-query-power-irp-in-a-filter-or-function-driver.md
-          - name: "Handling a System Query-Power IRP in a Bus Driver"
-            href: handling-a-system-query-power-irp-in-a-bus-driver.md
-        - name: "Handling IRP_MN_SET_POWER for System Power States"
-          href: handling-irp-mn-set-power-for-system-power-states.md
-          items: 
-          - name: "Handling a System Set-Power IRP in a Device Power Policy Owner"
-            href: handling-a-system-set-power-irp-in-a-device-power-policy-owner.md
-          - name: "Determining the Correct Device Power State"
-            href: determining-the-correct-device-power-state.md
-          - name: "Sending a Device Set-Power IRP in Response to a System Set-Power IRP"
-            href: sending-a-device-set-power-irp-in-response-to-a-system-set-power-irp.md
-          - name: "Handling a System Set-Power IRP in a Bus Driver"
-            href: handling-a-system-set-power-irp-in-a-bus-driver.md
-          - name: "Handling a System Set-Power IRP in a Filter Driver"
-            href: handling-a-system-set-power-irp-in-a-filter-driver.md
-      - name: "Overview of the Power Management Framework"
-        href: overview-of-the-power-management-framework.md
-        items: 
-        - name: "Device power management reference"
-          href: device-power-management-reference.md
-        - name: "Component-Level Power Management"
-          href: component-level-power-management.md
-        - name: "Component-Level Performance State Management"
-          href: component-level-performance-management.md
-      - name: "Platform Extension Plug-ins (PEPs)"
-        href: platform-extension-plug-ins--peps-.md
-        items: 
-        - name: "Using PEPs for ACPI services"
-          href: using-peps-for-acpi-services.md
-        - name: "Platform Performance Thresholds"
-          href: platform-performance-thresholds.md
-      - name: "Supporting Devices that Have Wake-Up Capabilities"
-        href: supporting-devices-that-have-wake-up-capabilities.md
-        items: 
-        - name: "Overview of Wait/Wake Operation"
-          href: overview-of-wait-wake-operation.md
-          items: 
-          - name: "Determining Whether a Device Can Wake the System"
-            href: determining-whether-a-device-can-wake-the-system.md
-          - name: "Understanding the Path of Wait/Wake IRPs through a Device Tree"
-            href: understanding-the-path-of-wait-wake-irps-through-a-device-tree.md
-          - name: "Overview of Wait/Wake IRP Completion"
-            href: overview-of-wait-wake-irp-completion.md
-        - name: "Receiving a Wait/Wake IRP"
-          href: receiving-a-wait-wake-irp.md
-          items: 
-          - name: "Handling a Wait/Wake IRP in a Function (FDO) or Filter Driver (Filter DO)"
-            href: handling-a-wait-wake-irp-in-a-function--fdo--or-filter-driver--filter-.md
-          - name: "Handling a Wait/Wake IRP in a Bus Driver (PDO)"
-            href: handling-a-wait-wake-irp-in-a-bus-driver--pdo-.md
-          - name: "IoCompletion Routines for Wait/Wake IRPs"
-            href: iocompletion-routines-for-wait-wake-irps.md
-        - name: "Sending a Wait/Wake IRP"
-          href: sending-a-wait-wake-irp.md
-          items: 
-          - name: "Determining When to Send a Wait/Wake IRP"
-            href: determining-when-to-send-a-wait-wake-irp.md
-          - name: "Wait/Wake IRP Requests"
-            href: wait-wake-irp-requests.md
-          - name: "Wait/Wake Callback Routines"
-            href: wait-wake-callback-routines.md
-        - name: "Canceling a Wait/Wake IRP"
-          href: canceling-a-wait-wake-irp.md
-      - name: "Improving System Startup Performance"
-        href: improving-system-startup-performance.md
-        items: 
-        - name: "Sharing Processor Resources During Startup from a Low-Power State"
-          href: sharing-processor-resources-during-startup-from-a-low-power-state.md
-        - name: "Fast Startup from a Low-Power State"
-          href: fast-startup-from-a-low-power-state.md
-      - name: "Device-Level Thermal Management"
-        href: device-level-thermal-management.md
-        items: 
-        - name: "Passive and Active Cooling Modes"
-          href: passive-and-active-cooling-modes.md
-        - name: "Global thermal management"
-          href: global-thermal-mgmt.md
-    - name: "Implementing WMI"
-      href: implementing-wmi.md
-      items: 
-      - name: "Introduction to WMI"
-        href: introduction-to-wmi.md
-      - name: "WMI Architecture"
-        href: wmi-architecture.md
-      - name: "WMI Requirements for WDM Drivers"
-        href: wmi-requirements-for-wdm-drivers.md
-      - name: "MOF Syntax for WMI Data and Event Blocks"
-        href: mof-syntax-for-wmi-data-and-event-blocks.md
-        items: 
-        - name: "WMI Class Qualifiers"
-          href: wmi-class-qualifiers.md
-        - name: "WMI Class Names and Base Classes"
-          href: wmi-class-names-and-base-classes.md
-        - name: "Required Items in WMI Classes"
-          href: required-items-in-wmi-classes.md
-        - name: "WMI Property Qualifiers"
-          href: wmi-property-qualifiers.md
-        - name: "Driver-Defined WMI Data Items"
-          href: driver-defined-wmi-data-items.md
-        - name: "WMI Class Examples"
-          href: wmi-class-examples.md
-      - name: "Designing WMI Data and Event Blocks"
-        href: designing-wmi-data-and-event-blocks.md
-        items: 
-        - name: "Supporting Standard WMI Blocks"
-          href: supporting-standard-wmi-blocks.md
-        - name: "Implementing Custom WMI Blocks"
-          href: implementing-custom-wmi-blocks.md
-        - name: "Defining WMI Instance Names"
-          href: defining-wmi-instance-names.md
-      - name: "Publishing a WMI Schema"
-        href: publishing-a-wmi-schema.md
-        items: 
-        - name: "Compiling a Driver's MOF File"
-          href: compiling-a-driver-s-mof-file.md
-        - name: "Setting the MofImagePath Registry Value"
-          href: setting-the-mofimagepath-registry-value.md
-        - name: "Implementing Dynamic MOF Data"
-          href: implementing-dynamic-mof-data.md
-        - name: "Localizing MOF Files"
-          href: localizing-mof-files.md
-          items: 
-          - name: "Creating the Localized MOF File"
-            href: creating-the-localized-mof-file.md
-          - name: "Building and Deploying the Localized MOF File"
-            href: building-and-deploying-the-localized-mof-file.md
-      - name: "Registering as a WMI Data Provider"
-        href: registering-as-a-wmi-data-provider.md
-        items: 
-        - name: "Using the WMI Library to Register Blocks"
-          href: using-the-wmi-library-to-register-blocks.md
-        - name: "Handling IRP_MN_REGINFO and IRP_MN_REGINFO_EX to Register Blocks"
-          href: handling-irp-mn-reginfo-and-irp-mn-reginfo-ex-to-register-blocks.md
-        - name: "WMI Registration Flags"
-          href: wmi-registration-flags.md
-        - name: "Updating WMI Registration Information"
-          href: updating-wmi-registration-information.md
-      - name: "Handling WMI Requests"
-        href: handling-wmi-requests.md
-        items: 
-        - name: "WMI Minor IRPs"
-          href: wmi-minor-irps.md
-          items: 
-          - name: "IRP_MN_CHANGE_SINGLE_INSTANCE"
-            href: irp-mn-change-single-instance.md
-          - name: "IRP_MN_CHANGE_SINGLE_ITEM"
-            href: irp-mn-change-single-item.md
-          - name: "IRP_MN_DISABLE_COLLECTION"
-            href: irp-mn-disable-collection.md
-          - name: "IRP_MN_DISABLE_EVENTS"
-            href: irp-mn-disable-events.md
-          - name: "IRP_MN_ENABLE_COLLECTION"
-            href: irp-mn-enable-collection.md
-          - name: "IRP_MN_ENABLE_EVENTS"
-            href: irp-mn-enable-events.md
-          - name: "IRP_MN_EXECUTE_METHOD"
-            href: irp-mn-execute-method.md
-          - name: "IRP_MN_QUERY_ALL_DATA"
-            href: irp-mn-query-all-data.md
-          - name: "IRP_MN_QUERY_SINGLE_INSTANCE"
-            href: irp-mn-query-single-instance.md
-          - name: "IRP_MN_REGINFO"
-            href: irp-mn-reginfo.md
-          - name: "IRP_MN_REGINFO_EX"
-            href: irp-mn-reginfo-ex.md
-        - name: "Calling WmiSystemControl to Handle WMI IRPs"
-          href: calling-wmisystemcontrol-to-handle-wmi-irps.md
-        - name: "Processing WMI IRPs in a DispatchSystemControl Routine"
-          href: processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md
-        - name: "WMI WNODE_XXX Structures"
-          href: wmi-wnode-xxx-structures.md
-      - name: "Sending WMI Events"
-        href: sending-wmi-events.md
-        items: 
-        - name: "Sending an Event with WmiFireEvent"
-          href: sending-an-event-with-wmifireevent.md
-        - name: "Sending an Event with IoWMIWriteEvent"
-          href: sending-an-event-with-iowmiwriteevent.md
-        - name: "Using Custom WMI Events"
-          href: using-custom-wmi-events.md
-      - name: "WMI Property Sheets"
-        href: wmi-property-sheets.md
-        items: 
-        - name: "WMI Generic Property Page Provider"
-          href: wmi-generic-property-page-provider.md
-        - name: "WMI and the Power Management Tab"
-          href: wmi-and-the-power-management-tab.md
-      - name: "Using Wmimofck.exe"
-        href: using-wmimofck-exe.md
-      - name: "WMI Event Tracing"
-        href: wmi-event-tracing.md
-      - name: "Testing and Troubleshooting WMI Driver Support"
-        href: testing-and-troubleshooting-wmi-driver-support.md
-        items: 
-        - name: "General Techniques for Testing WMI Driver Support"
-          href: general-techniques-for-testing-wmi-driver-support.md
-        - name: "Troubleshooting Specific WMI Problems"
-          href: troubleshooting-specific-wmi-problems.md
-  - name: "Driver Programming Techniques"
-    href: driver-programming-techniques.md
+      - name: "Types of APCs"
+        href: types-of-apcs.md
+      - name: "Disabling APCs"
+        href: disabling-apcs.md
+      - name: "Critical Regions and Guarded Regions"
+        href: critical-regions-and-guarded-regions.md
+    - name: "Acquire and Release Semantics"
+      href: acquire-and-release-semantics.md
+    - name: "Run-Down Protection"
+      href: run-down-protection.md
+  - name: "Using Common Log File System"
     items: 
-    - name: "Using Nt and Zw Versions of the Native System Services Routines"
-      href: using-nt-and-zw-versions-of-the-native-system-services-routines.md
-      items: 
-      - name: "PreviousMode"
-        href: previousmode.md
-      - name: "Libraries and Headers"
-        href: libraries-and-headers.md
-      - name: "What Does the Zw Prefix Mean?"
-        href: what-does-the-zw-prefix-mean-.md
-      - name: "Specifying Access Rights"
-        href: access-mask.md
-      - name: "NtXxx Routines"
-        href: ntxxx-routines.md
-    - name: "Synchronization Techniques"
-      href: synchronization-techniques.md
-      items: 
-      - name: "Kernel Dispatcher Objects"
-        href: kernel-dispatcher-objects.md
-        items: 
-        - name: "Introduction to Kernel Dispatcher Objects"
-          href: introduction-to-kernel-dispatcher-objects.md
-        - name: "Timer Objects"
-          href: timer-objects.md
-        - name: "KeXxxTimer Routines, KTIMER Objects, and DPCs"
-          href: timer-objects-and-dpcs.md
-          items: 
-          - name: "Using Timer Objects"
-            href: using-timer-objects.md
-          - name: "Timer Accuracy"
-            href: timer-accuracy.md
-          - name: "Registering and Queuing a CustomTimerDpc Routine"
-            href: registering-and-queuing-a-customtimerdpc-routine.md
-          - name: "Providing CustomTimerDpc Context Information"
-            href: providing-customtimerdpc-context-information.md
-          - name: "Using a CustomTimerDpc Routine"
-            href: using-a-customtimerdpc-routine.md
-        - name: "ExXxxTimer Routines and EX_TIMER Objects"
-          href: exxxxtimer-routines-and-ex-timer-objects.md
-          items: 
-          - name: "High-Resolution Timers"
-            href: high-resolution-timers.md
-          - name: "No-Wake Timers"
-            href: no-wake-timers.md
-          - name: "Deleting a System-Allocated Timer Object"
-            href: deleting-a-system-allocated-timer-object.md
-        - name: "Event Objects"
-          href: event-objects.md
-          items: 
-          - name: "Defining and Using an Event Object"
-            href: defining-and-using-an-event-object.md
-          - name: "Standard Event Objects"
-            href: standard-event-objects.md
-        - name: "Semaphore Objects"
-          href: semaphore-objects.md
-        - name: "Mutex Objects"
-          href: mutex-objects.md
-          items: 
-          - name: "Introduction to Mutex Objects"
-            href: introduction-to-mutex-objects.md
-          - name: "Alternatives to Mutex Objects"
-            href: alternatives-to-mutex-objects.md
-        - name: "Thread Objects"
-          href: thread-objects.md
-          items: 
-          - name: "Introduction to Thread Objects"
-            href: introduction-to-thread-objects.md
-          - name: "Thread Priorities"
-            href: thread-priorities.md
-          - name: "Device-Dedicated Threads"
-            href: device-dedicated-threads.md
-          - name: "System Worker Threads"
-            href: system-worker-threads.md
-        - name: "Waits and APCs"
-          href: waits-and-apcs.md
-      - name: "Callback Objects"
-        href: callback-objects.md
-        items: 
-        - name: "Defining a Callback Object"
-          href: defining-a-callback-object.md
-        - name: "Using a Driver-Defined Callback Object"
-          href: using-a-driver-defined-callback-object.md
-        - name: "Using a System-Defined Callback Object"
-          href: using-a-system-defined-callback-object.md
-      - name: "Spin Locks"
-        href: spin-locks.md
-        items: 
-        - name: "Introduction to Spin Locks"
-          href: introduction-to-spin-locks.md
-        - name: "Providing Storage for Spin Locks and Protected Data"
-          href: providing-storage-for-spin-locks-and-protected-data.md
-        - name: "Initializing Spin Locks"
-          href: initializing-spin-locks.md
-        - name: "Calling Support Routines That Use Spin Locks"
-          href: calling-support-routines-that-use-spin-locks.md
-        - name: "Using Spin Locks: An Example"
-          href: using-spin-locks--an-example.md
-        - name: "Preventing Errors and Deadlocks While Using Spin Locks"
-          href: preventing-errors-and-deadlocks-while-using-spin-locks.md
-        - name: "Queued Spin Locks"
-          href: queued-spin-locks.md
-        - name: "Reader/Writer Spin Locks"
-          href: reader-writer-spin-locks.md
-      - name: "Fast Mutexes and Guarded Mutexes"
-        href: fast-mutexes-and-guarded-mutexes.md
-      - name: "ERESOURCE Structures"
-        href: eresource-structures.md
-        items: 
-        - name: "Introduction to ERESOURCE Routines"
-          href: introduction-to-eresource-routines.md
-      - name: "Additional Timers and Counters"
-        href: additional-timers-and-counters.md
-        items: 
-        - name: "IoTimer Routines"
-          href: iotimer-routines.md
-          items: 
-          - name: "Registering and Enabling an IoTimer Routine"
-            href: registering-and-enabling-an-iotimer-routine.md
-          - name: "Providing IoTimer Context Information"
-            href: providing-iotimer-context-information.md
-          - name: "Using an IoTimer Routine"
-            href: using-an-iotimer-routine.md
-        - name: "Counters"
-          href: counters.md
-      - name: "Asynchronous Procedure Calls"
-        href: asynchronous-procedure-calls.md
-        items: 
-        - name: "Types of APCs"
-          href: types-of-apcs.md
-        - name: "Disabling APCs"
-          href: disabling-apcs.md
-        - name: "Critical Regions and Guarded Regions"
-          href: critical-regions-and-guarded-regions.md
-      - name: "Acquire and Release Semantics"
-        href: acquire-and-release-semantics.md
-      - name: "Run-Down Protection"
-        href: run-down-protection.md
-    - name: "Using Common Log File System"
-      href: using-common-log-file-system.md
-      items: 
-      - name: "Introduction to the Common Log File System"
-        href: introduction-to-the-common-log-file-system.md
-      - name: "CLFS Terminology"
-        href: clfs-terminology.md
-      - name: "CLFS Log Sequence Numbers"
-        href: clfs-log-sequence-numbers.md
-      - name: "CLFS Marshalling Areas"
-        href: clfs-marshalling-areas.md
-      - name: "Writing Data Records to a CLFS Stream"
-        href: writing-data-records-to-a-clfs-stream.md
-      - name: "Writing Restart Records to a CLFS Stream"
-        href: writing-restart-records-to-a-clfs-stream.md
-      - name: "Reading Data Records from a CLFS Stream"
-        href: reading-data-records-from-a-clfs-stream.md
-      - name: "Reading Restart Records from a CLFS Stream"
-        href: reading-restart-records-from-a-clfs-stream.md
-      - name: "CLFS Stable Storage"
-        href: clfs-stable-storage.md
-      - name: "Dedicated CLFS Logs"
-        href: dedicated-clfs-logs.md
-      - name: "Multiplexed CLFS Logs"
-        href: multiplexed-clfs-logs.md
-      - name: "CLFS Support for Archiving"
-        href: clfs-support-for-archiving.md
-    - name: "Using Kernel Transaction Manager"
-      href: using-kernel-transaction-manager.md
-      items: 
-      - name: "Introduction to KTM"
-        href: introduction-to-ktm.md
-        items: 
-        - name: "When to Use Kernel-Mode KTM"
-          href: when-to-use-kernel-mode-ktm.md
-        - name: "Transaction Processing Terms"
-          href: transaction-processing-terms.md
-        - name: "Understanding TPS Components"
-          href: understanding-tps-components.md
-        - name: "Additional Transactional Interfaces"
-          href: additional-transactional-interfaces.md
-      - name: "KTM Objects"
-        href: ktm-objects.md
-        items: 
-        - name: "Transaction Manager Objects"
-          href: transaction-manager-objects.md
-        - name: "Resource Manager Objects"
-          href: resource-manager-objects.md
-        - name: "Transaction Objects"
-          href: transaction-objects.md
-        - name: "Enlistment Objects"
-          href: enlistment-objects.md
-      - name: "Using KTM"
-        href: using-ktm.md
-        items: 
-        - name: "Creating a Resource Manager"
-          href: creating-a-resource-manager.md
-        - name: "Creating a Transactional Client"
-          href: creating-a-transactional-client.md
-        - name: "Creating a Superior Transaction Manager"
-          href: creating-a-superior-transaction-manager.md
-        - name: "Handling Transaction Operations"
-          href: handling-transaction-operations.md
-          items: 
-          - name: "Handling Commit Operations"
-            href: handling-commit-operations.md
-          - name: "Handling Rollback Operations"
-            href: handling-rollback-operations.md
-          - name: "Handling Recovery Operations"
-            href: handling-recovery-operations.md
-        - name: "Transaction Notifications"
-          href: transaction-notifications.md
-        - name: "Using Log Streams with KTM"
-          href: using-log-streams-with-ktm.md
-        - name: "Using Virtual Clock Values"
-          href: using-virtual-clock-values.md
-        - name: "Using TmXxx Routines"
-          href: using-tmxxx-routines.md
+    - name: "Introduction to the Common Log File System"
+      href: introduction-to-the-common-log-file-system.md
+    - name: "CLFS Terminology"
+      href: clfs-terminology.md
+    - name: "CLFS Log Sequence Numbers"
+      href: clfs-log-sequence-numbers.md
+    - name: "CLFS Marshalling Areas"
+      href: clfs-marshalling-areas.md
+    - name: "Writing Data Records to a CLFS Stream"
+      href: writing-data-records-to-a-clfs-stream.md
+    - name: "Writing Restart Records to a CLFS Stream"
+      href: writing-restart-records-to-a-clfs-stream.md
+    - name: "Reading Data Records from a CLFS Stream"
+      href: reading-data-records-from-a-clfs-stream.md
+    - name: "Reading Restart Records from a CLFS Stream"
+      href: reading-restart-records-from-a-clfs-stream.md
+    - name: "CLFS Stable Storage"
+      href: clfs-stable-storage.md
+    - name: "Dedicated CLFS Logs"
+      href: dedicated-clfs-logs.md
+    - name: "Multiplexed CLFS Logs"
+      href: multiplexed-clfs-logs.md
+    - name: "CLFS Support for Archiving"
+      href: clfs-support-for-archiving.md
+  - name: "Kernel Transaction Manager"
+    items:
+    - name: "Introduction to KTM"
+      href: introduction-to-ktm.md
+    - name: "When to Use Kernel-Mode KTM"
+      href: when-to-use-kernel-mode-ktm.md
+    - name: "Transaction Processing Terms"
+      href: transaction-processing-terms.md
+    - name: "Understanding TPS Components"
+      href: understanding-tps-components.md
+    - name: "Additional Transactional Interfaces"
+      href: additional-transactional-interfaces.md
+    - name: "KTM Objects"
+      href: ktm-objects.md
+    - name: "Transaction Manager Objects"
+      href: transaction-manager-objects.md
+    - name: "Resource Manager Objects"
+      href: resource-manager-objects.md
+    - name: "Transaction Objects"
+      href: transaction-objects.md
+    - name: "Enlistment Objects"
+      href: enlistment-objects.md
+    - name: "Using KTM"
+      href: using-ktm.md
+    - name: "Creating a Resource Manager"
+      href: creating-a-resource-manager.md
+    - name: "Creating a Transactional Client"
+      href: creating-a-transactional-client.md
+    - name: "Creating a Superior Transaction Manager"
+      href: creating-a-superior-transaction-manager.md
+    - name: "Handling Transaction Operations"
+      href: handling-transaction-operations.md
+    - name: "Handling Commit Operations"
+      href: handling-commit-operations.md
+    - name: "Handling Rollback Operations"
+      href: handling-rollback-operations.md
+    - name: "Handling Recovery Operations"
+      href: handling-recovery-operations.md
+    - name: "Transaction Notifications"
+      href: transaction-notifications.md
+    - name: "Using Log Streams with KTM"
+      href: using-log-streams-with-ktm.md
+    - name: "Using Virtual Clock Values"
+      href: using-virtual-clock-values.md
+    - name: "Using TmXxx Routines"
+      href: using-tmxxx-routines.md
     - name: "Dynamic Hardware Partitioning Techniques"
       href: dynamic-hardware-partitioning-techniques.md
-      items: 
-      - name: "Introduction to Dynamic Hardware Partitioning"
-        href: introduction-to-dynamic-hardware-partitioning.md
-      - name: "Dynamic Hardware Partitioning Architecture"
-        href: dynamic-hardware-partitioning-architecture.md
-      - name: "Critical Issues for Device Drivers"
-        href: critical-issues-for-device-drivers.md
-        items: 
-        - name: "Changes to the Number of Processors"
-          href: changes-to-the-number-of-processors.md
-        - name: "Changes to the Amount of Physical Memory"
-          href: changes-to-the-amount-of-physical-memory.md
-        - name: "Hot Replace of Partition Units"
-          href: hot-replace-of-partition-units.md
-      - name: "Driver Notification"
-        href: driver-notification.md
-        items: 
-        - name: "Introduction to Driver Notification"
-          href: introduction-to-driver-notification.md
-        - name: "Synchronous Driver Notification"
-          href: synchronous-driver-notification.md
-          items: 
-          - name: "Registering for Synchronous Driver Notification"
-            href: registering-for-synchronous-driver-notification.md
-          - name: "Processing a Synchronous Driver Notification"
-            href: processing-a-synchronous-driver-notification.md
-        - name: "Asynchronous Driver Notification"
-          href: asynchronous-driver-notification.md
-          items: 
-          - name: "Registering for Asynchronous Driver Notification"
-            href: registering-for-asynchronous-driver-notification.md
-          - name: "Processing an Asynchronous Driver Notification"
-            href: processing-an-asynchronous-driver-notification.md
-      - name: "Application Notification"
-        href: application-notification.md
-        items: 
-        - name: "Introduction to Application Notification"
-          href: introduction-to-application-notification.md
-        - name: "Registering for Application Notification"
-          href: registering-for-application-notification.md
-        - name: "Processing an Application Notification"
-          href: processing-an-application-notification.md
-    - name: "Miscellaneous Driver Programming Techniques"
-      href: miscellaneous-driver-programming-techniques.md
-      items: 
-      - name: "NTSTATUS Values"
-        href: ntstatus-values.md
-        items: 
-        - name: "Using NTSTATUS Values"
-          href: using-ntstatus-values.md
-        - name: "Defining New NTSTATUS Values"
-          href: defining-new-ntstatus-values.md
-      - name: "Singly and Doubly Linked Lists"
-        href: singly-and-doubly-linked-lists.md
-      - name: "Handling Exceptions"
-        href: handling-exceptions.md
-      - name: "Logging Errors"
-        href: logging-errors.md
-        items: 
-        - name: "Writing to the System Event Log"
-          href: writing-to-the-system-event-log.md
-        - name: "Defining Custom Error Types"
-          href: defining-custom-error-types.md
-        - name: "Registering as a Source of Error Messages"
-          href: registering-as-a-source-of-error-messages.md
-      - name: "Writing a Bug Check Callback Routine"
-        href: writing-a-bug-check-callback-routine.md
-      - name: "Using Safe String Functions"
-        href: using-safe-string-functions.md
-        items: 
-        - name: "Summary of Kernel-Mode Safe String Functions"
-          href: summary-of-kernel-mode-safe-string-functions.md
-        - name: "Importing Kernel-Mode Safe String Functions"
-          href: importing-kernel-mode-safe-string-functions.md
-      - name: "Using Safe Integer Functions"
-        href: ntintsafe-design-guide.md
-        items: 
-        - name: "Summary of Kernel-Mode Safe Integer Functions"
-          href: summary-of-safe-integer-functions.md
-        - name: "Importing Kernel-Mode Safe Integer Functions"
-          href: importing-safe-integer-functions.md
-      - name: "Determining Whether the Operating System Is Running in Safe Mode"
-        href: determining-whether-the-operating-system-is-running-in-safe-mode.md
-      - name: "Using GUIDs in Drivers"
-        href: using-guids-in-drivers.md
-        items: 
-        - name: "Defining and Exporting New GUIDs"
-          href: defining-and-exporting-new-guids.md
-        - name: "Including GUIDs in Driver Code"
-          href: including-guids-in-driver-code.md
-      - name: "Using Floating Point in a WDM Driver"
-        href: using-floating-point-or-mmx-in-a-wdm-driver.md
-      - name: "Using Files In A Driver"
-        href: using-files-in-a-driver.md
-        items: 
-        - name: "Opening a Handle to a File"
-          href: opening-a-handle-to-a-file.md
-        - name: "Using a File Handle"
-          href: using-a-file-handle.md
-        - name: "Using the Current File Position"
-          href: using-the-current-file-position.md
-      - name: "Using the Registry in a Driver"
-        href: using-the-registry-in-a-driver.md
-        items: 
-        - name: "Registry Key Object Routines"
-          href: registry-key-object-routines.md
-          items: 
-          - name: "Opening a Handle to a Registry-Key Object"
-            href: opening-a-handle-to-a-registry-key-object.md
-          - name: "Using a Handle to a Registry-Key Object"
-            href: using-a-handle-to-a-registry-key-object.md
-        - name: "Registry Run-Time Library Routines"
-          href: registry-run-time-library-routines.md
-        - name: "Plug and Play Registry Routines"
-          href: plug-and-play-registry-routines.md
-      - name: "Supporting Removable Media"
-        href: supporting-removable-media.md
-        items: 
-        - name: "Responding to Check-Verify Requests from the File System"
-          href: responding-to-check-verify-requests-from-the-file-system.md
-        - name: "Notifying the File System of Possible Media Changes"
-          href: notifying-the-file-system-of-possible-media-changes.md
-        - name: "Checking Flags in the Device Object"
-          href: checking-flags-in-the-device-object.md
-        - name: "Setting up IRPs in Intermediate Drivers"
-          href: setting-up-irps-in-intermediate-drivers.md
-      - name: "Creating Export Drivers"
-        href: creating-export-drivers.md
-      - name: "Creating Reliable Kernel-Mode Drivers"
-        href: creating-reliable-kernel-mode-drivers.md
-        items: 
-        - name: "Failure to Validate Device Objects"
-          href: failure-to-validate-device-objects.md
-        - name: "Failure to Validate Object Handles"
-          href: failure-to-validate-object-handles.md
-        - name: "Errors in a Multiprocessor Environment"
-          href: errors-in-a-multiprocessor-environment.md
-        - name: "Failure to Check a Driver's State"
-          href: failure-to-check-a-driver-s-state.md
-        - name: "Errors in Buffered I/O"
-          href: errors-in-buffered-i-o.md
-          items: 
-          - name: "Failure to Check the Size of Buffers"
-            href: failure-to-check-the-size-of-buffers.md
-          - name: "Failure to Initialize Output Buffers"
-            href: failure-to-initialize-output-buffers.md
-          - name: "Failure to Validate Variable-Length Buffers"
-            href: failure-to-validate-variable-length-buffers.md
-        - name: "Errors in Direct I/O"
-          href: errors-in-direct-i-o.md
-        - name: "Errors in Referencing User-Space Addresses"
-          href: errors-in-referencing-user-space-addresses.md
-        - name: "Errors in Handling Cleanup and Close Operations"
-          href: errors-in-handling-cleanup-and-close-operations.md
-        - name: "Additional Errors in Handling IRPs"
-          href: additional-errors-in-handling-irps.md
-      - name: "Hiding Devices from Device Manager"
-        href: hiding-devices-from-device-manager.md
-      - name: "Filtering Registry Calls"
-        href: filtering-registry-calls.md
-        items: 
-        - name: "Registering for Notifications"
-          href: registering-for-notifications.md
-        - name: "Handling Notifications"
-          href: handling-notifications.md
-        - name: "Supporting Layered Registry Filtering Drivers"
-          href: supporting-layered-registry-filtering-drivers.md
-        - name: "Specifying Context Information"
-          href: specifying-context-information.md
-        - name: "Obtaining Additional Registry Information"
-          href: obtaining-additional-registry-information.md
-        - name: "Invalid Key Object Pointers in Registry Notifications"
-          href: invalid-key-object-pointers-in-registry-notifications.md
-        - name: "Filtering Registry Operations on Application Hives"
-          href: filtering-registry-operations-on-application-hives.md
-      - name: "Object Reference Tracing with Tags"
-        href: object-reference-tracing-with-tags.md
-      - name: "Programming Issues for 64-Bit Drivers"
-        href: programming-issues-for-64-bit-drivers.md
-        items: 
-        - name: "Porting Your Driver to 64-Bit Windows"
-          href: porting-your-driver-to-64-bit-windows.md
-          items: 
-          - name: "What's Changed"
-            href: what-s-changed.md
-          - name: "The New Data Types"
-            href: the-new-data-types.md
-          - name: "64-Bit Compiler"
-            href: 64-bit-compiler.md
-          - name: "Performing DMA in 64-Bit Windows"
-            href: performing-dma-in-64-bit-windows.md
-          - name: "Using extended processor features in Windows drivers"
-            href: floating-point-support-for-64-bit-drivers.md
-          - name: "Porting Issues Checklist"
-            href: porting-issues-checklist.md
-        - name: "Supporting 32-Bit I/O in Your 64-Bit Driver"
-          href: supporting-32-bit-i-o-in-your-64-bit-driver.md
-          items: 
-          - name: "Why Thunking Is Necessary"
-            href: why-thunking-is-necessary.md
-          - name: "Which Data Types Need Thunking"
-            href: which-data-types-need-thunking.md
-          - name: "How Drivers Identify 32-Bit Callers"
-            href: how-drivers-identify-32-bit-callers.md
-          - name: "Technique 1: Defining a 64Bit Field"
-            href: technique-1--defining-a--64bit--field.md
-          - name: "Technique 2: Using IoIs32bitProcess"
-            href: technique-2--using-iois32bitprocess.md
-          - name: "Extended Example: Defining a 64Bit Field"
-            href: extended-example--defining-a--64bit--field.md
-          - name: "Extended Example: Using IoIs32bitProcess"
-            href: extended-example--using-iois32bitprocess.md
-          - name: "Avoiding Misalignment of Fixed-Precision Data Types"
-            href: avoiding-misalignment-of-fixed-precision-data-types.md
-        - name: "Driver x64 Restrictions"
-          href: driver-x64-restrictions.md
-      - name: "Obsolete and Reserved Kernel Programming Interfaces"
-        href: obsolete-and-reserved-kernel-programming-interfaces.md
-        items: 
-        - name: "Windows kernel obsolete macros"
-          href: compute-pages-spanned.md
-        - name: "Windows kernel obsolete routines"
-          href: mmcreatemdl.md
-        - name: "Windows kernel routines reserved for system use"
-          href: ioacquireremovelockex.md
-        - name: "Windows kernel run-time library obsolete routines"
-          href: rtlenlargedintegermultiply.md
-      - name: "Kernel Macros, Global Variables, and Opaque Structures"
-        href: kernel-macros--global-variables--and-opaque-structures.md
-        items: 
-        - name: "Windows kernel global variables"
-          href: mm64bitphysicaladdress.md
-        - name: "Windows kernel macros"
-          href: mm-bad-pointer.md
-        - name: "Windows kernel opaque structures"
-          href: eprocess.md
-      - name: "Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD"
-        href: working-with-guid-device-reset-interface-standard.md
+    - name: "Introduction to Dynamic Hardware Partitioning"
+      href: introduction-to-dynamic-hardware-partitioning.md
+    - name: "Dynamic Hardware Partitioning Architecture"
+      href: dynamic-hardware-partitioning-architecture.md
+  - name: "Critical Issues for Device Drivers"
+    items: 
+    - name: "Changes to the Number of Processors"
+      href: changes-to-the-number-of-processors.md
+    - name: "Changes to the Amount of Physical Memory"
+      href: changes-to-the-amount-of-physical-memory.md
+    - name: "Hot Replace of Partition Units"
+      href: hot-replace-of-partition-units.md
+  - name: "Driver Notification"
+    items: 
+    - name: "Introduction to Driver Notification"
+      href: introduction-to-driver-notification.md
+    - name: "Registering for Synchronous Driver Notification"
+      href: registering-for-synchronous-driver-notification.md
+    - name: "Processing a Synchronous Driver Notification"
+      href: processing-a-synchronous-driver-notification.md
+    - name: "Registering for Asynchronous Driver Notification"
+      href: registering-for-asynchronous-driver-notification.md
+    - name: "Processing an Asynchronous Driver Notification"
+      href: processing-an-asynchronous-driver-notification.md
+  - name: "Application Notification"
+    items: 
+    - name: "Introduction to Application Notification"
+      href: introduction-to-application-notification.md
+    - name: "Registering for Application Notification"
+      href: registering-for-application-notification.md
+    - name: "Processing an Application Notification"
+      href: processing-an-application-notification.md
+  - name: "NTSTATUS Values"
+    items: 
+    - name: "Using NTSTATUS Values"
+      href: using-ntstatus-values.md
+    - name: "Defining New NTSTATUS Values"
+      href: defining-new-ntstatus-values.md
+  - name: "Singly and Doubly Linked Lists"
+    href: singly-and-doubly-linked-lists.md
+  - name: "Handling Exceptions"
+    href: handling-exceptions.md
+  - name: "Logging Errors"
+    href: logging-errors.md
+  - name: "Writing to the System Event Log"
+    href: writing-to-the-system-event-log.md
+  - name: "Defining Custom Error Types"
+    href: defining-custom-error-types.md
+  - name: "Registering as a Source of Error Messages"
+    href: registering-as-a-source-of-error-messages.md
+  - name: "Writing a Bug Check Reason Callback Routine"
+    href: writing-a-bug-check-callback-routine.md
+  - name: "Using Safe String Functions"
+    href: using-safe-string-functions.md
+  - name: "Summary of Kernel-Mode Safe String Functions"
+    href: summary-of-kernel-mode-safe-string-functions.md
+  - name: "Importing Kernel-Mode Safe String Functions"
+    href: importing-kernel-mode-safe-string-functions.md
+  - name: "Using Safe Integer Functions"
+    href: ntintsafe-design-guide.md
+  - name: "Summary of Kernel-Mode Safe Integer Functions"
+    href: summary-of-safe-integer-functions.md
+  - name: "Importing Kernel-Mode Safe Integer Functions"
+    href: importing-safe-integer-functions.md
+  - name: "Determining Whether the Operating System Is Running in Safe Mode"
+    href: determining-whether-the-operating-system-is-running-in-safe-mode.md
+  - name: "Using GUIDs in Drivers"
+    href: using-guids-in-drivers.md
+  - name: "Defining and Exporting New GUIDs"
+    href: defining-and-exporting-new-guids.md
+  - name: "Including GUIDs in Driver Code"
+    href: including-guids-in-driver-code.md
+  - name: "Using Floating Point in a WDM Driver"
+    href: using-floating-point-or-mmx-in-a-wdm-driver.md
+  - name: "Using Files In A Driver"
+    href: using-files-in-a-driver.md
+  - name: "Opening a Handle to a File"
+    href: opening-a-handle-to-a-file.md
+  - name: "Using a File Handle"
+    href: using-a-file-handle.md
+  - name: "Using the Current File Position"
+    href: using-the-current-file-position.md
+  - name: "Registry Key Object Routines"
+    href: registry-key-object-routines.md
+  - name: "Opening a Handle to a Registry-Key Object"
+    href: opening-a-handle-to-a-registry-key-object.md
+  - name: "Using a Handle to a Registry-Key Object"
+    href: using-a-handle-to-a-registry-key-object.md
+  - name: "Registry Run-Time Library Routines"
+    href: registry-run-time-library-routines.md
+  - name: "Plug and Play Registry Routines"
+    href: plug-and-play-registry-routines.md
+  - name: "Supporting Removable Media"
+    href: supporting-removable-media.md
+  - name: "Responding to Check-Verify Requests from the File System"
+    href: responding-to-check-verify-requests-from-the-file-system.md
+  - name: "Notifying the File System of Possible Media Changes"
+    href: notifying-the-file-system-of-possible-media-changes.md
+  - name: "Checking Flags in the Device Object"
+    href: checking-flags-in-the-device-object.md
+  - name: "Setting up IRPs in Intermediate Drivers"
+    href: setting-up-irps-in-intermediate-drivers.md
+  - name: "Creating Export Drivers"
+    href: creating-export-drivers.md
+  - name: "Creating Reliable Kernel-Mode Drivers"
+    href: creating-reliable-kernel-mode-drivers.md
+  - name: "Failure to Validate Device Objects"
+    href: failure-to-validate-device-objects.md
+  - name: "Failure to Validate Object Handles"
+    href: failure-to-validate-object-handles.md
+  - name: "Errors in a Multiprocessor Environment"
+    href: errors-in-a-multiprocessor-environment.md
+  - name: "Failure to Check a Driver's State"
+    href: failure-to-check-a-driver-s-state.md
+  - name: "Errors in Buffered I/O"
+    items: 
+    - name: "Failure to Check the Size of Buffers"
+      href: failure-to-check-the-size-of-buffers.md
+    - name: "Failure to Initialize Output Buffers"
+      href: failure-to-initialize-output-buffers.md
+    - name: "Failure to Validate Variable-Length Buffers"
+      href: failure-to-validate-variable-length-buffers.md
+  - name: "Errors in Direct I/O"
+    href: errors-in-direct-i-o.md
+  - name: "Errors in Referencing User-Space Addresses"
+    href: errors-in-referencing-user-space-addresses.md
+  - name: "Errors in Handling Cleanup and Close Operations"
+    href: errors-in-handling-cleanup-and-close-operations.md
+  - name: "Additional Errors in Handling IRPs"
+    href: additional-errors-in-handling-irps.md
+  - name: "Hiding Devices from Device Manager"
+    href: hiding-devices-from-device-manager.md
+  - name: "Filtering Registry Calls"
+    href: filtering-registry-calls.md
+  - name: "Registering for Notifications"
+    href: registering-for-notifications.md
+  - name: "Handling Notifications"
+    href: handling-notifications.md
+  - name: "Supporting Layered Registry Filtering Drivers"
+    href: supporting-layered-registry-filtering-drivers.md
+  - name: "Specifying Context Information"
+    href: specifying-context-information.md
+  - name: "Obtaining Additional Registry Information"
+    href: obtaining-additional-registry-information.md
+  - name: "Invalid Key Object Pointers in Registry Notifications"
+    href: invalid-key-object-pointers-in-registry-notifications.md
+  - name: "Filtering Registry Operations on Application Hives"
+    href: filtering-registry-operations-on-application-hives.md
+  - name: "Object Reference Tracing with Tags"
+    href: object-reference-tracing-with-tags.md
+  - name: "Porting Your Driver to 64-Bit Windows"
+    href: porting-your-driver-to-64-bit-windows.md
+  - name: "What's Changed"
+    href: what-s-changed.md
+  - name: "The New Data Types"
+    href: the-new-data-types.md
+  - name: "64-Bit Compiler"
+    href: 64-bit-compiler.md
+  - name: "Performing DMA in 64-Bit Windows"
+    href: performing-dma-in-64-bit-windows.md
+  - name: "Using extended processor features in Windows drivers"
+    href: floating-point-support-for-64-bit-drivers.md
+  - name: "Porting Issues Checklist"
+    href: porting-issues-checklist.md
+  - name: "Supporting 32-Bit I/O in Your 64-Bit Driver"
+    href: supporting-32-bit-i-o-in-your-64-bit-driver.md
+  - name: "Why Thunking Is Necessary"
+    href: why-thunking-is-necessary.md
+  - name: "Which Data Types Need Thunking"
+    href: which-data-types-need-thunking.md
+  - name: "How Drivers Identify 32-Bit Callers"
+    href: how-drivers-identify-32-bit-callers.md
+  - name: "Technique 1: Defining a 64Bit Field"
+    href: technique-1--defining-a--64bit--field.md
+  - name: "Technique 2: Using IoIs32bitProcess"
+    href: technique-2--using-iois32bitprocess.md
+  - name: "Extended Example: Defining a 64Bit Field"
+    href: extended-example--defining-a--64bit--field.md
+  - name: "Extended Example: Using IoIs32bitProcess"
+    href: extended-example--using-iois32bitprocess.md
+  - name: "Avoiding Misalignment of Fixed-Precision Data Types"
+    href: avoiding-misalignment-of-fixed-precision-data-types.md
+  - name: "Driver x64 Restrictions"
+    href: driver-x64-restrictions.md
+  - name: "Windows kernel obsolete macros"
+    href: compute-pages-spanned.md
+  - name: "Windows kernel obsolete routines"
+    href: mmcreatemdl.md
+  - name: "Windows kernel routines reserved for system use"
+    href: ioacquireremovelockex.md
+  - name: "Windows kernel run-time library obsolete routines"
+    href: rtlenlargedintegermultiply.md
+  - name: "Windows kernel global variables"
+    href: mm64bitphysicaladdress.md
+  - name: "Windows kernel macros"
+    href: mm-bad-pointer.md
+  - name: "Windows kernel opaque structures"
+    href: eprocess.md
+  - name: "Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD"
+    href: working-with-guid-device-reset-interface-standard.md

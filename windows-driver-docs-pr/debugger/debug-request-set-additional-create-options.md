@@ -21,7 +21,7 @@ The DEBUG\_REQUEST\_SET\_ADDITIONAL\_CREATE\_OPTIONS [**Request**](request.md) o
 **Parameters**
 
 <span id="InBuffer"></span><span id="inbuffer"></span><span id="INBUFFER"></span>*InBuffer*  
-The new default process creation options. The type of the process creation options is [**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://msdn.microsoft.com/library/windows/hardware/ff541464).
+The new default process creation options. The type of the process creation options is [**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/ns-dbgeng-_debug_create_process_options).
 
 <span id="OutBuffer"></span><span id="outbuffer"></span><span id="OUTBUFFER"></span>*OutBuffer*  
 Not used.
@@ -29,9 +29,9 @@ Not used.
 Remarks
 -------
 
-The default process creation options are used by methods [**CreateProcess**](https://msdn.microsoft.com/library/windows/hardware/ff539321) and [**CreateProcessAndAttach**](https://msdn.microsoft.com/library/windows/hardware/ff540048) which, unlike [**CreateProcess2**](https://msdn.microsoft.com/library/windows/hardware/ff539323) and [**CreateProcessAndAttach2**](https://msdn.microsoft.com/library/windows/hardware/ff540055), do not specify the full range of process creation options.
+The default process creation options are used by methods [**CreateProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient5-createprocess) and [**CreateProcessAndAttach**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient5-createprocessandattach) which, unlike [**CreateProcess2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient5-createprocess2) and [**CreateProcessAndAttach2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient5-createprocessandattach2), do not specify the full range of process creation options.
 
-The **CreateFlags** field of the [**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://msdn.microsoft.com/library/windows/hardware/ff541464) structure is not used as a default because all process creation operations provide this information.
+The **CreateFlags** field of the [**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/ns-dbgeng-_debug_create_process_options) structure is not used as a default because all process creation operations provide this information.
 
 ## <span id="see_also"></span>See also
 
@@ -40,11 +40,11 @@ The **CreateFlags** field of the [**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://m
 
 [**DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS**](debug-request-get-additional-create-options.md)
 
-[**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://msdn.microsoft.com/library/windows/hardware/ff541464)
+[**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/ns-dbgeng-_debug_create_process_options)
 
-[**CreateProcess**](https://msdn.microsoft.com/library/windows/hardware/ff539321)
+[**CreateProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient5-createprocess)
 
-[**CreateProcessAndAttach**](https://msdn.microsoft.com/library/windows/hardware/ff540048)
+[**CreateProcessAndAttach**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient5-createprocessandattach)
 
  
 

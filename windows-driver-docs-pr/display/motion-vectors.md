@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 If the picture is not an intra picture (the **bPicIntra** member of the **DXVA\_PictureParameters** or *P picture*). Additionally, if macroblock-based reference-picture selection (as defined in H.263 Annex U) is in use, then a reference-picture selection index for each motion vector is also included in the macroblock control-command structure.
 
-The space reserved for motion vectors in each macroblock control command structure is generally the amount needed for four motion vectors. Each motion vector is specified using a [**DXVA\_MVvalue**](https://msdn.microsoft.com/library/windows/hardware/ff564004) structure. These usual cases include the two preceding nonintra cases. The remaining cases (not explicitly defined in the *dxva.h* header file) are as follows:
+The space reserved for motion vectors in each macroblock control command structure is generally the amount needed for four motion vectors. Each motion vector is specified using a [**DXVA\_MVvalue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_mvvalue) structure. These usual cases include the two preceding nonintra cases. The remaining cases (not explicitly defined in the *dxva.h* header file) are as follows:
 
--   If *OBMC* is in use (the **bPicOBMC** member of the [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) structure is 1) and the picture is not the B part of a PB picture (the **bPicBinPB** member of this structure is zero), space for 10 motion vectors, plus any additional space needed to align to a 16-byte boundary, is included.
+-   If *OBMC* is in use (the **bPicOBMC** member of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_pictureparameters) structure is 1) and the picture is not the B part of a PB picture (the **bPicBinPB** member of this structure is zero), space for 10 motion vectors, plus any additional space needed to align to a 16-byte boundary, is included.
 
 -   If OBMC is in use (the **bPicOBMC** member of the DXVA\_PictureParameters structure is 1) and the picture is the B part of a PB picture (the **bPicBinPB** member of this structure is 1), space for 11 motion vectors, plus any additional space needed to align to a 16-byte boundary, is included.
 

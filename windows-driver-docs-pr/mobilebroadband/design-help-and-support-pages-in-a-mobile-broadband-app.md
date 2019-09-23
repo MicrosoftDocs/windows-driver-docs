@@ -41,7 +41,7 @@ Inappropriate design for help and support page:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   For more information about how to use built-in controls, see [Adding controls and content](https://msdn.microsoft.com/library/windows/apps/hh465393).
+-   For more information about how to use built-in controls, see [Adding controls and content](https://docs.microsoft.com/previous-versions/windows/apps/hh465393(v=win.10)).
 
 -   [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
 

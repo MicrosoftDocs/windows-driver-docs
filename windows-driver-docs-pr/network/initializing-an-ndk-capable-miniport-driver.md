@@ -18,39 +18,39 @@ A miniport driver that supports Network Direct kernel (NDK) is initialized in th
 ## DriverEntry function
 
 
-Every miniport driver's [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) function initializes an [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure and passes it to [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) as described in the following pages:
+Every miniport driver's [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function initializes an [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_driver_characteristics) structure and passes it to [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver) as described in the following pages:
 
 -   [Initializing a Miniport Driver](initializing-a-miniport-driver.md)
--   [**DriverEntry of NDIS Miniport Drivers function**](https://msdn.microsoft.com/library/windows/hardware/ff548818)
+-   [**DriverEntry of NDIS Miniport Drivers function**](https://docs.microsoft.com/windows-hardware/drivers/network/initializing-a-miniport-driver)
 
-The NDK-capable miniport driver must do the following when initializing the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff565958) structure:
+The NDK-capable miniport driver must do the following when initializing the [**NDIS\_MINIPORT\_DRIVER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_driver_characteristics) structure:
 
--   In the **OidRequestHandler** member, the miniport driver must register a [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) function that supports:
+-   In the **OidRequestHandler** member, the miniport driver must register a [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function that supports:
 
-    -   All [NDKPI OIDs](https://msdn.microsoft.com/library/windows/hardware/jj206455).
+    -   All [NDKPI OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/index).
 
     -   Any OIDs that are mandatory for NDIS miniport drivers in general.
 
-        **Note**  For a list of these mandatory OIDs, see [Mandatory OIDs for Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff557139).
+        **Note**  For a list of these mandatory OIDs, see [Mandatory OIDs for Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/mandatory-oids-for-miniport-drivers).
 
          
 
--   In the **SetOptionsHandler** member, the miniport driver must register a [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function as described in [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md) and the following MiniportSetOptions function section.
+-   In the **SetOptionsHandler** member, the miniport driver must register a [*MiniportSetOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options) function as described in [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md) and the following MiniportSetOptions function section.
 
 ## MiniportSetOptions function
 
 
-NDIS calls the [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function immediately after the miniport driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff548818) function returns. The *MiniportSetOptions* function is called in the context of the miniport driver's call to [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654).
+NDIS calls the [*MiniportSetOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options) function immediately after the miniport driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/network/initializing-a-miniport-driver) function returns. The *MiniportSetOptions* function is called in the context of the miniport driver's call to [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver).
 
-In its [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function, the NDK-capable miniport driver registers its NDK capability and registers the following required NDKPI function entry points as described in [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md):
+In its [*MiniportSetOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options) function, the NDK-capable miniport driver registers its NDK capability and registers the following required NDKPI function entry points as described in [Configuring Optional Miniport Driver Services](configuring-optional-miniport-driver-services.md):
 
--   *OpenNDKAdapterHandler* ([*OPEN\_NDK\_ADAPTER\_HANDLER*](https://msdn.microsoft.com/library/windows/hardware/hh440105))
+-   *OpenNDKAdapterHandler* ([*OPEN\_NDK\_ADAPTER\_HANDLER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndisndk/nc-ndisndk-open_ndk_adapter_handler))
 
--   *CloseNDKAdapterHandler* ([*CLOSE\_NDK\_ADAPTER\_HANDLER*](https://msdn.microsoft.com/library/windows/hardware/hh439355))
+-   *CloseNDKAdapterHandler* ([*CLOSE\_NDK\_ADAPTER\_HANDLER*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndisndk/nc-ndisndk-close_ndk_adapter_handler))
 
-To register NDKPI entry points for these functions, the miniport driver's [*MiniportSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff559443) function must do the following:
+To register NDKPI entry points for these functions, the miniport driver's [*MiniportSetOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-set_options) function must do the following:
 
-1.  Initialize an [**NDIS\_NDK\_PROVIDER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/hh451566) structure.
+1.  Initialize an [**NDIS\_NDK\_PROVIDER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndisndk/ns-ndisndk-_ndis_ndk_provider_characteristics) structure.
 
     **Note**  Pay particular attention to the **Header** member description. The miniport driver must set this member correctly to identify itself as an NDK-capable miniport driver.
 
@@ -58,7 +58,7 @@ To register NDKPI entry points for these functions, the miniport driver's [*Mini
 
 2.  Store the function entry points in the **OpenNDKAdapterHandler** and **CloseNDKAdapterHandler** members of the structure.
 
-3.  Call the [**NdisSetOptionalHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff564550) function, passing the structure in the *OptionalHandlers* parameter.
+3.  Call the [**NdisSetOptionalHandlers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissetoptionalhandlers) function, passing the structure in the *OptionalHandlers* parameter.
 
 ## Related topics
 

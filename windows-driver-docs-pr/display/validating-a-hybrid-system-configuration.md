@@ -13,7 +13,7 @@ This procedure is used starting in Windows 8.1 to validate the configuration of
 
 1.  When the system boots, one of the display adapters is marked as the current POST adapter. If this POST adapter supports Windows Display Driver Model (WDDM) 1.3 and has an integrated display panel, it's considered an *integrated hybrid* adapter.
 2.  A discrete adapter in a hybrid system is considered a *hybrid discrete* adapter. It must:
-    -   Set the [**DXGK\_DRIVERCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff561062).**HybridDiscrete** member.
+    -   Set the [**DXGK\_DRIVERCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps).**HybridDiscrete** member.
     -   Support WDDM 1.3.
     -   Support cross-adapter resources.
     -   Have no display outputs.

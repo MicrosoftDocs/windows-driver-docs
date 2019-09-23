@@ -27,11 +27,11 @@ Follow these basic rules to make sure your device is working correctly.
 
 4.  Critical shutdown requests will override any attempts to veto a change in power state.
 
-For more information, see [System Power States](https://msdn.microsoft.com/library/windows/hardware/ff564571) in the WDK documentation and [System Power States](https://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
+For more information, see [System Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-power-states) in the WDK documentation and [System Power States](https://go.microsoft.com/fwlink/p/?linkid=51899) in the Microsoft Windows SDK documentation.
 
 ### Testing Port-Connected Devices Across Various Power States
 
-To begin testing a device before and after various power states, first verify the device's baseline [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) (PnP) functionality. Next, verify that your test environment can enter and wake from all power states.
+To begin testing a device before and after various power states, first verify the device's baseline [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) (PnP) functionality. Next, verify that your test environment can enter and wake from all power states.
 
 With one device connected and installed correctly, test its behavior before and after each power state S0 through S5 as follows:
 

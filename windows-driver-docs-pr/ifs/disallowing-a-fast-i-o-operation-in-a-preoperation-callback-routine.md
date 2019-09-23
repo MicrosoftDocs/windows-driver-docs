@@ -20,11 +20,11 @@ In certain circumstances, a minifilter driver might choose to disallow a fast I/
 
 Like completing an I/O operation, disallowing a fast I/O operation means to halt processing on it and return it to the filter manager. However, disallowing a fast I/O operation is different from completing it. If a minifilter driver disallows a fast I/O operation that was issued by the I/O manager, the I/O manager may reissue the same operation as an equivalent IRP-based operation.
 
-When a minifilter driver's [**preoperation callback routine**](https://msdn.microsoft.com/library/windows/hardware/ff551109) disallows a fast I/O operation, the filter manager does the following:
+When a minifilter driver's [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_pre_operation_callback) disallows a fast I/O operation, the filter manager does the following:
 
 -   Does not send the operation to minifilter drivers below the current minifilter driver, to legacy filters, or to the file system.
 
--   Calls the [**postoperation callback routines**](https://msdn.microsoft.com/library/windows/hardware/ff551107) of the minifilter drivers above the current minifilter driver in the minifilter driver instance stack.
+-   Calls the [**postoperation callback routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_post_operation_callback) of the minifilter drivers above the current minifilter driver in the minifilter driver instance stack.
 
 -   Does not call the current minifilter driver's postoperation callback routine for the operation, if one exists.
 
@@ -32,7 +32,7 @@ A minifilter driver disallows a fast I/O operation by returning FLT\_PREOP\_DISA
 
 The preoperation callback routine should not set the callback data structure's **IoStatus.Status** field, because the filter manager automatically sets this field to STATUS\_FLT\_DISALLOW\_FAST\_IO.
 
-FLT\_PREOP\_DISALLOW\_FASTIO can only be returned for fast I/O operations. To determine whether an operation is a fast I/O operation, see [**FLT\_IS\_FASTIO\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544645).
+FLT\_PREOP\_DISALLOW\_FASTIO can only be returned for fast I/O operations. To determine whether an operation is a fast I/O operation, see [**FLT\_IS\_FASTIO\_OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 Minifilter drivers cannot return FLT\_PREOP\_DISALLOW\_FASTIO for IRP\_MJ\_SHUTDOWN, IRP\_MJ\_VOLUME\_MOUNT, or IRP\_MJ\_VOLUME\_DISMOUNT operations.
 

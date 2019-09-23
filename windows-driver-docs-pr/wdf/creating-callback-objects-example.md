@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 [!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
-The following code example shows how a driver creates a device callback object in the implementation of its [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) method and then passes a pointer to the device callback interface in its call to the [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899) method to create the device.
+The following code example shows how a driver creates a device callback object in the implementation of its [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method and then passes a pointer to the device callback interface in its call to the [**IWDFDriver::CreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdriver-createdevice) method to create the device.
 
 ```cpp
    HRESULT CMyDriver::OnDeviceAdd(

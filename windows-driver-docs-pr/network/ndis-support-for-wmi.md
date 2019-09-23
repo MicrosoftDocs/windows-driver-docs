@@ -24,9 +24,9 @@ Through NDIS, clients of Windows Management Instrumentation (WMI) can obtain and
 
 NDIS automatically registers miniport adapters, named virtual connections (VCs), and a set of globally unique identifiers (GUIDs) for each miniport adapter with WMI. For more information about these GUIDs, see [Standard Miniport Driver OIDs Registered with WMI](standard-miniport-driver-oids-registered-with-wmi.md). Miniport drivers can also provide support for custom object identifiers (OIDs) and custom status indications, as the [Customized OIDs and Status Indications](customized-oids-and-status-indications.md) topic describes.
 
-NDIS does not provide WMI support for protocol drivers. A protocol driver, or an intermediate driver, can create a device object for itself and register directly with WMI. For more information about registering directly with WMI, see [Registering as a WMI Data Provider](https://msdn.microsoft.com/library/windows/hardware/ff560870).
+NDIS does not provide WMI support for protocol drivers. A protocol driver, or an intermediate driver, can create a device object for itself and register directly with WMI. For more information about registering directly with WMI, see [Registering as a WMI Data Provider](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-as-a-wmi-data-provider).
 
-For more information about the WMI architecture, see [Windows Management Instrumentation](https://msdn.microsoft.com/library/windows/hardware/ff547139).
+For more information about the WMI architecture, see [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi).
 
 This section includes:
 

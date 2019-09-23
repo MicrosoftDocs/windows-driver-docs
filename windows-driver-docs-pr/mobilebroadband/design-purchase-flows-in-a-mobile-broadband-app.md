@@ -42,7 +42,7 @@ Do not use an iframe to host these flows in your app.
 
     -   Minimize the number of clicks and fields.
 
-4.  After the user enters their information, allow them to review the order before completing the purchase. If the order is placed and activation is quick, continue with activation and redirect the app to the landing page. If activation is expected to take longer, you can include a placeholder page for activation progress and use a progress control to show that activation is happening. For more info about progress controls, see [Quickstart: adding progress controls](https://msdn.microsoft.com/library/windows/apps/hh465487).
+4.  After the user enters their information, allow them to review the order before completing the purchase. If the order is placed and activation is quick, continue with activation and redirect the app to the landing page. If activation is expected to take longer, you can include a placeholder page for activation progress and use a progress control to show that activation is happening. For more info about progress controls, see [Quickstart: adding progress controls](https://docs.microsoft.com/previous-versions/windows/apps/hh465487(v=win.10)).
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 
@@ -74,17 +74,17 @@ Inappropriate design for the purchase, recharge, refill, and billing pages:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   For more information about views and layouts: see [Choosing a layout](https://msdn.microsoft.com/library/windows/apps/hh465327).
+-   For more information about views and layouts: see [Choosing a layout](https://docs.microsoft.com/previous-versions/windows/apps/hh465327(v=win.10)).
 
--   For more information about Listviews, see [Quickstart: Adding a ListView](https://msdn.microsoft.com/library/windows/apps/hh465496).
+-   For more information about Listviews, see [Quickstart: Adding a ListView](https://docs.microsoft.com/previous-versions/windows/apps/hh465496(v=win.10)).
 
--   For design guidance for error handling, see [Laying out your UI](https://msdn.microsoft.com/library/windows/apps/hh465304).
+-   For design guidance for error handling, see [Laying out your UI](https://docs.microsoft.com/previous-versions/windows/apps/hh465304(v=win.10)).
 
--   For accessibility guidance, see [Accessibility in UWP apps using C++, C#, or Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh452680).
+-   For accessibility guidance, see [Accessibility in UWP apps using C++, C#, or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh452680(v=win.10)).
 
--   For more information about how to use built-in controls, see [Adding controls and content](https://msdn.microsoft.com/library/windows/apps/hh465393).
+-   For more information about how to use built-in controls, see [Adding controls and content](https://docs.microsoft.com/previous-versions/windows/apps/hh465393(v=win.10)).
 
--   For touch input guidelines, see [Quickstart: Touch input](https://msdn.microsoft.com/library/windows/apps/xaml/hh465387).
+-   For touch input guidelines, see [Quickstart: Touch input](https://docs.microsoft.com/previous-versions/windows/apps/hh465387(v=win.10)).
 
 ## <span id="related_topics"></span>Related topics
 

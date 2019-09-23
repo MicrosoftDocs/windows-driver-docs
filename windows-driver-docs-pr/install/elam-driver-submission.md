@@ -11,7 +11,7 @@ The following steps can be used to submit an Early Launch Antimalware (ELAM) dri
 
 1. Ensure your driver adheres to the documented requirements for ELAM drivers.  See [ELAM driver requirements](elam-driver-requirements.md) and [INF SignatureAttributes Section](inf-signatureattributes-section.md) for more information.
 
-2. Validate your driver using the Hardware Logo Kit (HLK) and Hardware Certification Kit (HCK). If your driver will be used in Windows 8 as well as Windows 10, you need to run both versions of the kit. Include the results with your submission. See [HLK tools technical reference](https://msdn.microsoft.com/library/windows/hardware/dn939924) for more information. For information about required HCK tests, see below.
+2. Validate your driver using the Hardware Logo Kit (HLK) and Hardware Certification Kit (HCK). If your driver will be used in Windows 8 as well as Windows 10, you need to run both versions of the kit. Include the results with your submission. See [HLK tools technical reference](https://docs.microsoft.com/windows-hardware/test/hlk/user/hlk-tools-technical-reference) for more information. For information about required HCK tests, see below.
 
 3. Follow the kernel mode driver signing policy as stated in the [Driver signing policy](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-) topic.
 

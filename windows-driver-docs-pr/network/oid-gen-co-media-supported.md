@@ -51,7 +51,7 @@ A LAN-emulation driver for ATM networks declares its medium as **NdisMedium802_3
 
 A wireless-WAN NIC driver must report its medium type as **NdisMediumWirelessWan**. However, such a miniport driver also must provide **NdisWWDIXEthernetFrames** header format to any bound protocol that selects this format, and the miniport driver can provide its NIC's native header format as well. To support existing LAN-based protocols, the driver writer can provide an NDIS intermediate driver to "translate" a wireless NIC's native header formats and medium-specific information into a form understood by existing protocols.
 
-If the underlying miniport driver returns **NULL** for this query or if an experimental media type is used, the driver must indicate receives with [NdisMCoIndicateReceivePacket](https://msdn.microsoft.com/library/windows/hardware/ff553455).
+If the underlying miniport driver returns **NULL** for this query or if an experimental media type is used, the driver must indicate receives with [NdisMCoIndicateReceivePacket](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553455(v=vs.85)).
 
 
 ## Requirements

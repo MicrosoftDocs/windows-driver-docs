@@ -19,13 +19,13 @@ ms.localizationpriority: medium
 
 The use of MPEG-2 on DVD for 704-wide pictures requires a source rectangle that exceeds the boundaries of the decoded picture (if using the method described in [MPEG-2 Pan-Scan Example](mpeg-2-pan-scan-example.md)). In this case, the DVD specifies a *display\_horizontal\_size* of 720 that exceeds the decoded picture's *horizontal\_size* of 704. When the source rectangle exceeds the boundaries of the decoded picture, the host software decoder is responsible for cropping the source rectangle to keep it from reaching outside the allocated source area and for managing the destination rectangle to adjust for the cropping.
 
-The source rectangle is defined by the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://msdn.microsoft.com/library/windows/hardware/ff563120) structure (in one-sixteenth of a luminance sample spacing resolution) with the following values:
+The source rectangle is defined by the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure (in one-sixteenth of a luminance sample spacing resolution) with the following values:
 
 -   **left** = 0
 
 -   **right** = 16 X (**left** + *horizontal\_size*) = 11264
 
-The picture destination rectangle is defined by the **PictureDestinationRect** member of the [**DXVA\_BlendCombination**](https://msdn.microsoft.com/library/windows/hardware/ff563120) structure (in one-sixteenth of a luminance sample spacing resolution) by one of the following two alternatives:
+The picture destination rectangle is defined by the **PictureDestinationRect** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure (in one-sixteenth of a luminance sample spacing resolution) by one of the following two alternatives:
 
 1.  A rectangle with the following values:
     -   **left** = (*display\_horizontal\_size* âˆ’ *horizontal\_size*) / 2 = 8
@@ -35,7 +35,7 @@ The picture destination rectangle is defined by the **PictureDestinationRect** m
     -   **left** = 0
     -   **right** = **left** + *horizontal\_size* = 704
 
-In the second case, the rectangle indicated by the **GraphicDestinationRect** member of the [**DXVA\_BlendCombination**](https://msdn.microsoft.com/library/windows/hardware/ff563120) structure is displaced to the left by eight samples to compensate for the shifted picture destination.
+In the second case, the rectangle indicated by the **GraphicDestinationRect** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure is displaced to the left by eight samples to compensate for the shifted picture destination.
 
 The second of these two alternatives creates only the destination area that is used for the display.
 

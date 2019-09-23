@@ -28,6 +28,15 @@ Finally, we recommend using a Universal Windows driver where possible.  For more
 -   [Getting Started with Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 -   [Validating Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)
 
+## Installation
+
+* If you check the S compliance checkboxes when submitting a driver in the dashboard, the driver is delivered to both Windows 10 in S mode as well as desktop versions of Windows 10 that have the same HW ID. For more info about these dashboard options, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
+* If different driver packages are required for Windows 10 in S mode and desktop versions of Windows 10 that target the same HWID, set a greater **DriverVer** entry in the [INF Version Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) for the package that targets desktop versions of Windows 10.  For example, you might set a **DriverVer** of `05/24/2019,10.0.1.0` for the package targeting Windows 10 in S mode, and `05/24/2019,10.1.1.0` for the package targeting desktop versions of Windows 10.
+
+## Troubleshooting installation
+
+If you are targeting Windows 10 in S mode for both a base INF and an extension INF, but only the extension INF is installing on desktop versions of Windows 10, then either your installed driver is of greater rank, or your base driver was not published with the correct targeting.  (CHID may be different).    Check and compare your Shipping Label of the BASE driver and Extension driver.
+
 ## Blocked inbox components
 
 The following components are blocked from executing on Windows 10 S:

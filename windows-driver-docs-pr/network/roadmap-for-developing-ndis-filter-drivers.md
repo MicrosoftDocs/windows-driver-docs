@@ -13,7 +13,7 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
 
 - Step 1: Learn about Windows architecture and drivers.
 
-  You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and let you streamline your development process. For more information about driver fundamentals, see [Concepts for all driver developers](https://msdn.microsoft.com/library/windows/hardware/ff554731).
+  You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and let you streamline your development process. For more information about driver fundamentals, see [Concepts for all driver developers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers).
 
 - Step 2: Learn about NDIS.
 
@@ -29,11 +29,11 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
 
 - Step 3: Determine additional Windows driver design decisions.
 
-  For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](https://msdn.microsoft.com/library/windows/hardware/ff542904), [Programming Issues for 64-Bit Drivers](https://msdn.microsoft.com/library/windows/hardware/ff559923), and [Creating International INF Files](https://msdn.microsoft.com/library/windows/hardware/ff540208).
+  For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/creating-international-inf-files).
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 
-  Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](https://msdn.microsoft.com/library/windows/hardware/ff545440).
+  Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](https://docs.microsoft.com/windows-hardware/drivers). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/index).
 
 - Step 5: Read the [filter driver introduction topics](introduction-to-ndis-filter-drivers.md).
 
@@ -51,15 +51,15 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
   -   [Porting NDIS 6.x Drivers to NDIS 6.20](porting-ndis-6-x-drivers-to-ndis-6-20.md)
   -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 
-  For more information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment). This process will help ensure that you build a driver that works.
+  For more information about iterative building, testing, and debugging, see [Overview of Build, Debug, and Test Process](https://docs.microsoft.com/windows-hardware/drivers). This process will help ensure that you build a driver that works.
 
 - Step 9: Create a driver package for your driver.
 
-  For more information about how to install drivers, see [Providing a Driver Package](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_package). For more information about how to install an NDIS driver, see [Installing and Upgrading Network Components](installing-and-upgrading-network-components.md).
+  For more information about how to install drivers, see [Providing a Driver Package](https://docs.microsoft.com/windows-hardware/drivers). For more information about how to install an NDIS driver, see [Installing and Upgrading Network Components](installing-and-upgrading-network-components.md).
 
 - Step 10: Sign and distribute your driver.
 
-  The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8).
+  The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](https://docs.microsoft.com/windows-hardware/drivers).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 

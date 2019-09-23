@@ -15,7 +15,7 @@ This section includes:
 
 [64-Bit WIA Driver Components](64-bit-wia-driver-components.md)
 [32-Bit and 64-Bit WIA Interoperability](32-bit-and-64-bit-wia-interoperability.md)
-For more information about developing 64-bit drivers, see [Programming Issues for 64-Bit Drivers](https://msdn.microsoft.com/library/windows/hardware/ff559923)
+For more information about developing 64-bit drivers, see [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers)
 
  
 

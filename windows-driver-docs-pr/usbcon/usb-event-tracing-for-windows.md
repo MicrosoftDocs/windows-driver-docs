@@ -1,16 +1,16 @@
 ---
 Description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
-title: USB Event Tracing for Windows
+title: Overview of USB Event Tracing for Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# USB Event Tracing for Windows
+# Overview of USB Event Tracing for Windows
 
 
 This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB). This information is provided for the benefit of those who develop and debug USB devices. It includes information on how to install the tools, create trace files, and analyze the events in a USB trace file. The topic assumes that you have a comprehensive understanding of the USB ecosystem and hardware that is required to successfully use the USB tracing and logging features.
 
-To interpret the event traces, you must also understand the Windows [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md), the [official USB Specifications, and the USB Device Class Specifications](http://www.usb.org/developers/docs/).
+To interpret the event traces, you must also understand the Windows [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md), the [official USB Specifications, and the USB Device Class Specifications](https://www.usb.org/documents).
 
 -   [About Event Tracing for Windows](#about-event-tracing-for-windows)
 -   [USB Support for ETW Logging](#usb-support-for-etw-logging)
@@ -26,7 +26,7 @@ ETW was introduced in Windows 2000. Since then, various core operating system an
 
 ETW was significantly upgraded for Windows Vista and Windows 7. One of the most significant new features is the unified event provider model and APIs. In short, the new unified APIs combine logging traces and writing to the Event Viewer into one consistent, easy-to-use mechanism for event providers. At the same time, several new features have been added to ETW to improve the developer and end-user experiences.
 
-For more information about ETW and WPP, see Event Tracing and [Event Tracing for Windows (ETW)](https://msdn.microsoft.com/library/windows/hardware/ff545699).
+For more information about ETW and WPP, see Event Tracing and [Event Tracing for Windows (ETW)](https://docs.microsoft.com/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-).
 
 ## USB Support for ETW Logging
 

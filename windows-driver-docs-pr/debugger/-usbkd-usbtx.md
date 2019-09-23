@@ -47,7 +47,7 @@ Here is one way to find the address of a **usbport!\_HCD\_TRANSFER\_CONTEXT** st
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!uhci\_info ffffe00001c8f1a0**.
 
-Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) to get the transfer list.
+Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdext) to get the transfer list.
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001c8f1a0

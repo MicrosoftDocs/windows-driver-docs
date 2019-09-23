@@ -23,7 +23,7 @@ A file system filter driver typically creates a [per-stream context structure](f
 
 ### <span id="Allocating_the_Per-Stream_Context"></span><span id="allocating_the_per-stream_context"></span><span id="ALLOCATING_THE_PER-STREAM_CONTEXT"></span>Allocating the Per-Stream Context
 
-Per-stream context structures can be allocated from paged or nonpaged pool. To allocate a per-stream context, call [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) as shown in the following example:
+Per-stream context structures can be allocated from paged or nonpaged pool. To allocate a per-stream context, call [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) as shown in the following example:
 
 ```cpp
 contextSize = sizeof(SPY_STREAM_CONTEXT) + fileName.Length;
@@ -32,15 +32,15 @@ ctx = ExAllocatePoolWithTag(NonPagedPool,
                             MYLEGACYFILTER_CONTEXT_TAG);
 ```
 
-**Note**  If your filter allocates the per-stream context structure from paged pool, it cannot call [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) from its create completion routine. This is because completion routines can be called at IRQL DISPATCH\_LEVEL.
+**Note**  If your filter allocates the per-stream context structure from paged pool, it cannot call [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) from its create completion routine. This is because completion routines can be called at IRQL DISPATCH\_LEVEL.
 
  
 
 ### <span id="Initializing_the_Per-Stream_Context"></span><span id="initializing_the_per-stream_context"></span><span id="INITIALIZING_THE_PER-STREAM_CONTEXT"></span>Initializing the Per-Stream Context
 
-File system filter drivers call [**FsRtlInitPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546178) to initialize a per-stream context structure. This routine initializes the FSRTL\_PER\_STREAM\_CONTEXT portion of the context structure. (The remainder of the structure is filter-driver-specific.)
+File system filter drivers call [**FsRtlInitPerStreamContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlinitperstreamcontext) to initialize a per-stream context structure. This routine initializes the FSRTL\_PER\_STREAM\_CONTEXT portion of the context structure. (The remainder of the structure is filter-driver-specific.)
 
-**Note**  If your filter driver creates only one per-stream context structure per file stream, it should pass **NULL** for the *InstanceId* parameter to [**FsRtlInitPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546178).
+**Note**  If your filter driver creates only one per-stream context structure per file stream, it should pass **NULL** for the *InstanceId* parameter to [**FsRtlInitPerStreamContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlinitperstreamcontext).
 
  
 

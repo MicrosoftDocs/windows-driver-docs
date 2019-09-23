@@ -14,7 +14,7 @@ Starting in Windows 7, users can take advantage of all the capabilities of the d
 
 All types of devices that connect to a computer through different bus types can support device containers. However, not all bus types use the same mechanism for generating a **ContainerID**. For USB devices, device vendors can use a **ContainerID** descriptor to describe the **ContainerID** for a physical device. A **ContainerID** descriptor is a Microsoft OS feature descriptor that can be stored in the USB device's firmware. USB device manufacturers must correctly implement these **ContainerID** descriptors in their devices to take advantage of the new device capabilities that are available in Windows 7. USB device manufacturers need to implement only a single **ContainerID** for each physical device, regardless of how many device functions are supported by the device.
 
-For more information about consolidating all the functionality of a single device into a device container, see [How Container IDs are Generated](https://msdn.microsoft.com/library/windows/hardware/ff546193).
+For more information about consolidating all the functionality of a single device into a device container, see [How Container IDs are Generated](https://docs.microsoft.com/windows-hardware/drivers/install/how-container-ids-are-generated).
 
 For more information about Microsoft OS descriptors for USB devices, see [Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md).
 
@@ -167,7 +167,7 @@ Recommendations for Implementing a USB **ContainerID** The following are recomme
 
 ## Related topics
 [Building USB devices for Windows](building-usb-devices-for-windows.md)  
-[Container IDs for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff540084)  
+[Container IDs for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids-for-usb-devices)  
 
 
 

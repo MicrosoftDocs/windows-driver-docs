@@ -63,7 +63,7 @@ Windows Server 2003
 Windows XP</td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
-<td align="left"><p>Demonstrates how to implement the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540585" data-raw-source="[CPixel](https://msdn.microsoft.com/library/windows/hardware/ff540585)">CPixel</a> class.</p></td>
+<td align="left"><p>Demonstrates how to implement the <a href="https://docs.microsoft.com/windows-hardware/drivers/display/cpixel-support-methods-for-lightweight-mip-maps" data-raw-source="[CPixel](https://docs.microsoft.com/windows-hardware/drivers/display/cpixel-support-methods-for-lightweight-mip-maps)">CPixel</a> class.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mirror - Mirror driver for mirroring GDI content</p></td>

@@ -15,12 +15,10 @@ ms.localizationpriority: medium
 
 # (Developer Content) Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
 
-
-The DRIVER_POWER_STATE_FAILURE bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
+The DRIVER\_POWER\_STATE\_FAILURE bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
-
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## DRIVER\_POWER\_STATE\_FAILURE Parameters
 
@@ -82,7 +80,6 @@ Parameter 1 indicates the type of violation.
 </tbody>
 </table>
 
-
 ## Cause
 -----
 
@@ -91,10 +88,9 @@ For a description of the possible causes, see the description of each code in th
 ## Resolution
 ----------
 
-
 **Debugging bug check 0x9F when Parameter 1 equals 0x3**
 
--   In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
+- In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_POWER** structure, which is in Arg3.
 
 ```dbgcmd
 kd>!analyze -v
@@ -128,7 +124,7 @@ The nt!TRIAGE\_9F\_POWER structure provides additional bug check information tha
 
 The [**dt (Display Type)**](dt--display-type-.md) command displays the structure. You can use various debugger commands to follow the LIST\_ENTRY fields to examine the list of outstanding IRPs and the power IRP worker threads.
 
--  Use the [**!irp**](-irp.md) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
+- Use the [**!irp**](-irp.md) command to examine the IRP that was blocked. The address of this IRP is in Arg4.
 
 ```dbgcmd
     0: kd> !irp fffffa800ab61bd0
@@ -238,15 +234,15 @@ The [**dt (Display Type)**](dt--display-type-.md) command displays the structure
 
 - To help you determine the cause of the error, consider the following questions:
 
-  -   What are the characteristics of the physical device object (PDO) driver (Arg2)?
-  -   Can you find the blocked thread? When you examine the thread with the [**!thread**](-thread.md) debugger command, what does the thread consist of?
-  -   Is there IO associated with the thread that is blocking it? What symbols are on the stack?
-  -   When you examine the blocked power IRP, what do you notice?
-  -   What is the PnP minor function code of the power IRP?
+  - What are the characteristics of the physical device object (PDO) driver (Arg2)?
+  - Can you find the blocked thread? When you examine the thread with the [**!thread**](-thread.md) debugger command, what does the thread consist of?
+  - Is there IO associated with the thread that is blocking it? What symbols are on the stack?
+  - When you examine the blocked power IRP, what do you notice?
+  - What is the PnP minor function code of the power IRP?
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x4**
 
--   In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_PNP** structure, which is in Parameter 4 (arg4).
+- In a kernel debugger, use the [**!analyze -v**](-analyze.md) command to perform the initial bug check analysis. The verbose analysis displays the address of the **nt!TRIAGE\_9F\_PNP** structure, which is in Parameter 4 (arg4).
 
 ```dbgcmd
     kd> !analyze -v
@@ -269,7 +265,7 @@ The [**dt (Display Type)**](dt--display-type-.md) command displays the structure
 
 The nt!TRIAGE\_9F\_PNP structure provides additional bug check information that might help you determine the cause of the error. The nt!TRIAGE\_9F\_PNP structure provides a pointer to a structure that contains the list of dispatched (but not completed) PnP IRPs and provides a pointer to the delayed system worker queue.
 
--  Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
+- Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the **nt!TRIAGE\_9F\_PNP** structure and the address that you found in Arg4.
 
 ```dbgcmd
     kd> dt nt!TRIAGE_9F_PNP 82931b24
@@ -284,16 +280,11 @@ The [**dt (Display Type)**](dt--display-type-.md) command displays the structure
 
 To help you determine the cause of the error, consider the following questions:
 
--  Is there an IRP associated with the thread?
--  Is there any IO in the CompletionQueue?
--  What symbols are on the stack?
+- Is there an IRP associated with the thread?
+- Is there any IO in the CompletionQueue?
+- What symbols are on the stack?
 
--   Refer to the additional techniques described above under parameter 0x3.
-
-**Time Travel Trace**
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
-
+- Refer to the additional techniques described above under parameter 0x3.
 
 ## Remarks
 ----------
@@ -304,7 +295,7 @@ If you are not equipped to debug this problem using the techniques described abo
 
 - Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
-- Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+- Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 - To try and isolate the cause, temporally disable power save using control panel, power options. Some driver issues are related to the various states of system hibernation and the suspending and resumption of power.
 

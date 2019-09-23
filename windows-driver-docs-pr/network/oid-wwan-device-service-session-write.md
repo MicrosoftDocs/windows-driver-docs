@@ -15,7 +15,7 @@ OID\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE directs the miniport driver to write 
 
 Query requests are not supported.
 
-Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/hh846208) status notification containing a [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/hh831861) structure that describes the completion status of the operation.
+Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE\_COMPLETE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-session-write-complete) status notification containing a [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE\_COMPLETE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_write_complete) structure that describes the completion status of the operation.
 
 Miniport drivers should return NDIS\_STATUS\_ADAPTER\_NOT\_OPEN if the device service session is not open.
 
@@ -42,9 +42,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE\_COMPLETE**](https://msdn.microsoft.com/library/windows/hardware/hh846208)
+[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE\_COMPLETE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-session-write-complete)
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/hh831860)
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_write)
 
  
 

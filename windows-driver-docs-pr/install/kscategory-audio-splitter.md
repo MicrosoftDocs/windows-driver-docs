@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_AUDIO_SPLITTER
 
 
-The KSCATEGORY_AUDIO_SPLITTER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is designed for a [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://msdn.microsoft.com/library/windows/hardware/ff537039).
+The KSCATEGORY_AUDIO_SPLITTER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is designed for a [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components).
 
 <table>
 <colgroup>

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_LowerFilters
 
 
-The DEVPKEY_DeviceClass_LowerFilters device property represents a list of the service names of the lower-level filter drivers that are installed for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_LowerFilters device property represents a list of the service names of the lower-level filter drivers that are installed for a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
 
 <table>
 <colgroup>
@@ -62,11 +62,11 @@ The DEVPKEY_DeviceClass_LowerFilters device property represents a list of the se
 Remarks
 -------
 
-The value of DEVPKEY_DeviceClass_LowerFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](https://msdn.microsoft.com/library/windows/hardware/ff547595) and [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335).
+The value of DEVPKEY_DeviceClass_LowerFilters is set when a class filter driver is installed. For more information about how to install a class filter driver, see [Installing a Filter Driver](https://docs.microsoft.com/windows-hardware/drivers/install/installing-a-filter-driver) and [**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section).
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_LowerFilters.
+You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_LowerFilters.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_LowerFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **LowerFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_LowerFilters property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **LowerFilters** registry value under the class registry key. For information about how to access this property value on these earlier versions of Windows, see [Accessing Registry Entry Values Under the Class Registry Key](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-registry-entry-values-under-the-class-registry-key).
 
 Requirements
 ------------
@@ -91,13 +91,13 @@ Requirements
 ## See also
 
 
-[**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335)
+[**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section)
 
-[**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086)
+[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090)
+[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiOpenClassRegKeyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552067)
+[**SetupDiOpenClassRegKeyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa)
 
  
 

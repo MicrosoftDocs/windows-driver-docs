@@ -24,7 +24,7 @@ The DVD decoder minidriver may indicate that a given stream is capable of provid
 
 The *HwClockFunction* member is set to a pointer to the DVD decoder minidriver routine that processes calls for clock information. The routine is set when the SRB\_OPEN\_STREAM call for the master clock stream is received. This indicates that a stream is capable of being a master clock for the system.
 
-The *ClockSupportFlags* member of the [**HW\_CLOCK\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff559671) structure is set to one of the following values:
+The *ClockSupportFlags* member of the [**HW\_CLOCK\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_clock_object) structure is set to one of the following values:
 
 <a href="" id="clock-support-can-set-onboard-clock"></a>CLOCK\_SUPPORT\_CAN\_SET\_ONBOARD\_CLOCK  
 Indicates the device can change the onboard clock time to any arbitrary value.

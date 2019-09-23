@@ -4,10 +4,93 @@ description: Describes new features in Windows 10 for display drivers
 ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
 ms.date: 12/06/2018
 ms.localizationpriority: medium
-ms.custom: seodec18
+ms.custom: seodec18, 19H1
 ---
 
 # What's new for Windows 10 display drivers (WDDM 2.0 and later)
+
+## WDDM 2.6
+
+### Super Wet Ink
+
+*Super-Wet Ink* is a feature that revolves around *front-buffer rendering*. IHV drivers can support the creation of “displayable” textures of formats or modes that are not supported by the hardware. They can do this by allocating the texture that the app requested, along with a “shadow” texture with a format/layout that can be displayed, and then copying between the two at present-time. This “shadow” may not necessarily be a texture in the normal way we think of it, but may just be compression data. Additionally, it may not be required to exist, but may be an optimization instead.
+
+The runtime will evolve to understand these aspects of displayable surfaces:
+
+* Whether or not a shadow must exist for display on a particular VidPnSource/plane.
+
+* Whether it is more optimal for a shadow to exist.
+
+* When to transfer contents from the application surface to the shadow surface.
+
+    * The runtime will be explicit about this operation, as opposed to it being implicit within Present.
+
+* How to request setting a mode or dynamically flipping between the original and shadow surfaces.
+
+Scanout may begin shortly after a VBlank, scans vertically from top to bottom of the image, and completes shortly before the next VBlank. This is not always the case, depending on the timing of the pixel clock, and the layout of the data in the texture; especially if there is actually compression available. 
+
+New DDIs were added to separate and understand transformations which occur prior to scanout, in order to (when possible) enable front-buffer rendering. See [D3DWDDM2_6DDI_SCANOUT_FLAGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ne-d3d10umddi-d3dwddm2_6ddi_scanout_flags) and [PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_6ddi_prepare_scanout_transformation).
+
+### Variable Rate Shading
+
+Variable rate shading, or coarse pixel shading, is a mechanism to enable allocation of rendering performance/power at varying rates across rendered images.
+
+In the previous model, in order to use MSAA (multi-sample anti-aliasing) to reduce geometric aliasing:
+
+* The amount by which to reduce geometric aliasing needs to be known up-front when the target is allocated.
+* The amount by which to reduce geometric aliasing can’t be changed once the target is allocated.
+
+In WDDM 2.6, the new model extends MSAA into the opposite, *coarse pixel* direction, by adding a new concept of *coarse shading*. This is where shading can be performed at a frequency coarser than a pixel. A group of pixels can be shaded as a single unit and the result is then broadcast to all samples in the group.
+
+A coarse shading API allows apps to specify the number of pixels that belong to a shaded group. The coarse pixel size can be varied after the render target is allocated. So, different portions of the screen or different draw passes can have different course shading rates.
+
+A multiple-tier implementation is available with two user-queryable caps. For Tiers 1 and 2, coarse shading is available for both single-sampled and MSAA resources. For MSAA resources, shading can be performed per-coarse-pixel or per-sample as usual. However, on Tiers 1 and 2, for MSAA resources, coarse sampling cannot be used to shade at a frequency between per-pixel and per-sample.
+
+Tier 1:
+
+* Shading rate can only be specified on a per-draw-basis; nothing more granular than that
+
+* Shading rate applies uniformly to what is drawn independently of where it lies within the render target  
+
+Tier 2:
+
+* Shading rate can be specified on a per-draw-basis, as in Tier 1. It can also be specified by a combination of per-draw-basis, and of:
+
+    * Semantic from the per-provoking-vertex, and
+    * A screenspace image
+
+* Shading rates from the three sources are combined using a set of combiners
+* Screen space image tile size is 16x16 or smaller. Shading rate requested by the app is guaranteed to be delivered exactly  (for precision of temporal and other reconstruction filters) 
+
+* SV_ShadingRate PS input is supported. The per-provoking vertex rate, also referred to here as a per-primitive rate, is only valid when one viewport is used and SV_ViewportIndex is not written to.
+
+* The per-provoking vertex rate, also referred to as a per-primitive rate, can be used with more than one viewport if the SupportsPerVertexShadingRateWithMultipleViewports cap is marked true. Additionally, in that case, it can be used when SV_ViewportIndex is written to.
+
+See [PFND3D12DDI_RS_SET_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_rs_set_shading_rate_0062) and [D3D12DDI_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ne-d3d12umddi-d3d12ddi_shading_rate_0062).
+
+### Collect Diagnostic Info
+
+*Collect diagnostic info* allows the OS to collect a private data from drivers for graphics adapters which consist of both rendering and display functions. This new feature is a requirement in WDDM 2.6. 
+
+The new DDI should allow the OS to collect information at any time a driver is loaded. Currently the OS uses DxgkDdiCollectDebugInfo function implemented by the miniport to query driver private data for TDR (timeout detection and recovery) related cases. The new DDI will be used to collect data for variety of reasons. The OS will call this DDI when diagnostic is needed providing a type of information being requested. The driver should collect all private information important to investigate the issue and submit it to the OS. DxgkDdiCollectDebugInfo will be eventually deprecated and replaced with DxgkDdiCollectDiagnosticInfo.
+
+See [DXGKDDI_COLLECTDIAGNOSTICINFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_collectdiagnosticinfo).
+
+### Background Processing
+
+Background processing allows user mode drivers to express desired threading behavior, and the runtime to control/monitor it. User mode drivers would spin up background threads and assign the threads as low a priority as possible, and rely on the NT scheduler to ensure these threads don’t disrupt the critical-path threads, generally with success.
+
+APIs allow apps to adjust what amount of background processing is appropriate for their workloads and when to perform that work.
+
+See [PFND3D12DDI_QUEUEPROCESSINGWORK_CB_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_queueprocessingwork_cb_0062).
+
+### Driver Hot Update
+
+Driver hot update reduces server downtime as much as possible when an OS component needs to be updated.
+
+Driver hot patch is used to apply a security patch to the kernel mode driver. In this case the driver is asked to save adapter memory, the adapter is stopped, the driver is unloaded, new driver is loaded and the adapter is started again.
+
+See[DXGKDDI_SAVEMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkcb_savememoryforhotupdate) and [DXGKDDI_RESTOREMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_restorememoryforhotupdate).
 
 ## WDDM 2.5
 
@@ -30,8 +113,8 @@ New Direct3D DDI's were created in parallel of Direct3D API's, in order to suppo
 
 For more info about raytracing, see:
 
-* [Announcing Microsoft DirectX Raytracing](https://blogs.msdn.microsoft.com/directx/2018/03/19/announcing-microsoft-directx-raytracing/)
-* [DirectX Raytracing and the Windows 10 October 2018 Update](https://blogs.msdn.microsoft.com/directx/2018/10/02/directx-raytracing-and-the-windows-10-october-2018-update/)
+* [Announcing Microsoft DirectX Raytracing](https://devblogs.microsoft.com/directx/announcing-microsoft-directx-raytracing/)
+* [DirectX Raytracing and the Windows 10 October 2018 Update](https://devblogs.microsoft.com/directx/directx-raytracing-and-the-windows-10-october-2018-update/)
 * [DirectX Forums](https://forums.directxtech.com/index.php?topic=5985.0)
 
 ### Display Synchronization
@@ -79,7 +162,7 @@ For more details, see [GPU virtual memory in WDDM 2.0](gpu-virtual-memory-in-wdd
 
 ### Driver residency
 
--   The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](https://msdn.microsoft.com/library/windows/hardware/dn906357), [*TrimResidency*](https://msdn.microsoft.com/library/windows/hardware/dn906364), [*Evict*](https://msdn.microsoft.com/library/windows/hardware/dn906355)).
+-   The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb), [*TrimResidency*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_trimresidencyset), [*Evict*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)).
 -   The allocation and patch location list is being phased out because it is not necessary in the new model.
 -   User mode drivers are now responsible for handling allocation tracking and several new DDIs have been added to enable this.
 -   Drivers are given memory budgets and expected to adapt under memory pressure. This allows Universal Windows drivers to function across application platforms.

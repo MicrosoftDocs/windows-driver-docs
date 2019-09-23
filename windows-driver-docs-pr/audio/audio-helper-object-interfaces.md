@@ -17,58 +17,58 @@ The Port Class Library (portcls.sys) implements a variety of helper objects that
 The following interfaces are described in this section:
 
 
-[IDrmPort](https://msdn.microsoft.com/library/windows/hardware/ff536571)
+[IDrmPort](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idrmport)
 
 Helps a miniport driver keep track of composite DRM rights.
 
-[IDrmPort2](https://msdn.microsoft.com/library/windows/hardware/ff536573)
+[IDrmPort2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idrmport2)
 
 Helps a miniport driver keep track of composite DRM rights. This is an extended version of **IDrmPort**.
 
-[IInterruptSync](https://msdn.microsoft.com/library/windows/hardware/ff536590)
+[IInterruptSync](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iinterruptsync)
 
 A synchronization mechanism for coordinating shared access to interrupt service requests.
 
-[IMasterClock](https://msdn.microsoft.com/library/windows/hardware/ff536696)
+[IMasterClock](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imasterclock)
 
 Provides DirectMusic streams with access to the current reference time from the master clock.
 
-[**IPortClsEtwHelper**](https://msdn.microsoft.com/library/windows/hardware/dn265123)
+[**IPortClsEtwHelper**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsetwhelper)
 
 Used by a miniport driver to access Event Tracing for Windows (ETW) helper functions.
-[IPortClsVersion](https://msdn.microsoft.com/library/windows/hardware/ff536877)
+[IPortClsVersion](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsversion)
 
 Identifies the version of the Microsoft Windows operating system that the driver is running on.
 
-[IPortEvents](https://msdn.microsoft.com/library/windows/hardware/ff536884)
+[IPortEvents](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportevents)
 
 Used by a miniport driver to notify a port driver of hardware events.
 
-[IPreFetchOffset](https://msdn.microsoft.com/library/windows/hardware/ff536951)
+[IPreFetchOffset](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iprefetchoffset)
 
 Sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a Microsoft DirectSound hardware buffer.
 
-[IRegistryKey](https://msdn.microsoft.com/library/windows/hardware/ff536965)
+[IRegistryKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iregistrykey)
 
 Provides read/write access to a registry key and its subkeys.
 
-[IResourceList](https://msdn.microsoft.com/library/windows/hardware/ff536976)
+[IResourceList](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iresourcelist)
 
 Specifies a list of resources such as I/O ports, DMA channels, and interrupts.
 
-[IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994)
+[IServiceGroup](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iservicegroup)
 
-Used to demultiplex interrupt service requests to a list of objects with [IServiceSink](https://msdn.microsoft.com/library/windows/hardware/ff537006) interfaces.
+Used to demultiplex interrupt service requests to a list of objects with [IServiceSink](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iservicesink) interfaces.
 
-[IServiceSink](https://msdn.microsoft.com/library/windows/hardware/ff537006)
+[IServiceSink](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iservicesink)
 
 Represents the target of an interrupt service request.
 
-[IUnregisterPhysicalConnection](https://msdn.microsoft.com/library/windows/hardware/ff537022)
+[IUnregisterPhysicalConnection](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iunregisterphysicalconnection)
 
 Deletes the registration of a physical connection between two subdevices in the same audio adapter or in two different adapters.
 
-[IUnregisterSubdevice](https://msdn.microsoft.com/library/windows/hardware/ff537030)
+[IUnregisterSubdevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iunregistersubdevice)
 
 Deletes the registration of a dynamic subdevice in an audio adapter.
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Processing any I/O request packet (IRP) begins in a dispatch routine that the driver registers to handle an [IRP major function code](https://msdn.microsoft.com/library/windows/hardware/ff550710) (<strong>IRP\_MJ\_*XXX</strong><em>). The driver's [</em>*DriverEntry*<em>](<https://msdn.microsoft.com/library/windows/hardware/ff544113>) routine exports entry points for dispatch routines in a dispatch table within the driver's [</em>*DRIVER\_OBJECT**](<https://msdn.microsoft.com/library/windows/hardware/ff544174>) structure.
+Processing any I/O request packet (IRP) begins in a dispatch routine that the driver registers to handle an [IRP major function code](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-major-function-codes) (<strong>IRP\_MJ\_*XXX</strong><em>). The driver's [</em>*DriverEntry*<em>](<https://msdn.microsoft.com/library/windows/hardware/ff544113>) routine exports entry points for dispatch routines in a dispatch table within the driver's [</em>*DRIVER\_OBJECT**](<https://msdn.microsoft.com/library/windows/hardware/ff544174>) structure.
 
 A driver can provide a separate dispatch routine for each major I/O function code that it handles. Alternatively, dispatch routines can be written to handle multiple I/O function codes.
 

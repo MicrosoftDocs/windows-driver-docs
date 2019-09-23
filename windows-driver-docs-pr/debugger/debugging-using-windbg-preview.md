@@ -1,7 +1,7 @@
 ---
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
-ms.date: 10/18/2018
+ms.date: 04/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -74,7 +74,7 @@ The source window has been updated to be much more in line with modern editors.
 ![Screen shot of scripting menu in debugger](images/windbgx-source-window.png)
 
 
-### Highlightighting
+### Highlighting
 
 The command window has two new highlighting features. Selecting any text will give a subtle highlight to any other instances of that text. You can then hit "Highlight/Un-highlight" or Ctrl+Alt+H to persist the highlighting. 
 
@@ -151,7 +151,14 @@ Your feedback will help guide WinDbg's development going forward.
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
+## Videos
 
+Watch these episodes of the [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools) show to see Windbg Preview in action.  
+- [Defrag Tools #182](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-182-WinDbg-Preview-Part-1) - Tim, Chad, and Andy go over the basics of WinDbg Preview and some of the features.
+- [Defrag Tools #183](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-183-WinDbg-Preview-Part-2) - Nick, Tim, and Chad use WinDbg Preview and go over a quick demo.
+- [Defrag Tools #184](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-184-JavaScript-in-WinDbg-Preview) - Bill and Andrew walk through the scripting features in WinDbg Preview.
+- [Defrag Tools #185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) - James and Ivette provide and introduction to Time Travel Debugging.
+- [Defrag Tools #186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) - James and JCAB covers advanced Time Travel Debugging.
 
 ## Next Steps
 

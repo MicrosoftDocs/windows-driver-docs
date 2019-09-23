@@ -1,9 +1,13 @@
 - name: "Multifunction device driver design guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Multifunction device driver design guide"
+    href: index.md
   - name: "Supporting Multifunction PC Card Devices"
-    href: supporting-multifunction-pc-card-devices.md
+# Auto-expanded node
     items: 
+    - name: "Supporting Multifunction PC Card Devices"
+      href: supporting-multifunction-pc-card-devices.md
     - name: "Supporting PC Cards That Conform to the Multifunction Standard"
       href: supporting-pc-cards-that-conform-to-the-multifunction-standard.md
     - name: "Supporting PC Cards That Have Incomplete Configuration Register Addresses"
@@ -17,8 +21,10 @@
   - name: "Using the System-Supplied Multifunction Bus Driver"
     href: using-the-system-supplied-multifunction-bus-driver.md
   - name: "Creating Resource Maps for a Multifunction Device"
-    href: creating-resource-maps-for-a-multifunction-device.md
+# Auto-expanded node
     items: 
+    - name: "Creating Resource Maps for a Multifunction Device"
+      href: creating-resource-maps-for-a-multifunction-device.md
     - name: "Creating Standard Resource Maps"
       href: creating-standard-resource-maps.md
     - name: "Creating Varying Resource Maps"

@@ -47,7 +47,7 @@ The Enhanced Storage Certificate Management tool performs these functions by iss
 
 Where:
 
--   *USB\_Hardware\_ID* that is the hardware or compatible identifier (ID) of the USB storage device. For more information about these IDs, see [Identifiers for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff546284).
+-   *USB\_Hardware\_ID* that is the hardware or compatible identifier (ID) of the USB storage device. For more information about these IDs, see [Identifiers for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/install/identifiers-for-usb-devices).
 
 -   A GUID that represents the device instance.
 

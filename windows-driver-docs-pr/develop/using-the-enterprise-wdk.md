@@ -43,4 +43,4 @@ Where `<drive\dir>` is the location that the files were extracted to, for exampl
 
 ## See Also
 
-[ MSBuild Reference](https://msdn.microsoft.com/library/0k6kkbsd.aspx)
+[ MSBuild Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reference?view=vs-2015)

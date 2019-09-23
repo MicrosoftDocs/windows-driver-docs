@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Sending Data over a Connection-Oriented Socket
 
 
-After a Winsock Kernel (WSK) application has connected a connection-oriented socket to a remote transport address it can send data over the socket. A WSK application can also send data over a connection-oriented socket that it accepted on a listening socket. A WSK application sends data over a connection-oriented socket by calling the [**WskSend**](https://msdn.microsoft.com/library/windows/hardware/ff571146) function.
+After a Winsock Kernel (WSK) application has connected a connection-oriented socket to a remote transport address it can send data over the socket. A WSK application can also send data over a connection-oriented socket that it accepted on a listening socket. A WSK application sends data over a connection-oriented socket by calling the [**WskSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_send) function.
 
 The following code example shows how a WSK application can send data over a connection-oriented socket.
 

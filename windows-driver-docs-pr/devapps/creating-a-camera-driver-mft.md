@@ -43,7 +43,7 @@ Your camera’s driver must use the AvStream driver model. For more info about t
 
 A driver MFT is registered with Windows as a COM interface so that the transform it implements can be applied to the media stream coming out of a specific device, such as a camera.
 
-**Note**  A driver MFT shouldn’t be registered using the `MFTRegister` function because it is device specific and not a general purpose MFT. For info on the registry key, see the [Installing and registering the driver MFT](#installing) section later in this topic.
+**Note**  A driver MFT shouldn’t be registered using the `MFTRegister` function because it is device specific and not a general purpose MFT. For info on the registry key, see the [Installing and registering the driver MFT](#installing-and-registering-the-driver-mft) section later in this topic.
 
 When an app initiates a video capture, a Media Foundation Source Reader is instantiated to provide the video stream. This media source reads a registry value from the device registry key. If the CLSID of the driver MFT’s COM class is found in the registry value, the source reader instantiates the driver MFT and inserts it into the media pipeline.
 

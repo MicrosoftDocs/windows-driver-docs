@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS
@@ -26,7 +27,7 @@ This command replaces the previously configured list of BSSID-specific associati
 
 | TLV                                                                     | Multiple TLV instances allowed | Optional | Description                     |
 |-------------------------------------------------------------------------|--------------------------------|----------|---------------------------------|
-| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926264) | X                              |          | The BSS entries and parameters. |
+| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-bss-entry) | X                              |          | The BSS entries and parameters. |
 
  
 
@@ -34,6 +35,7 @@ This command replaces the previously configured list of BSSID-specific associati
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 

@@ -25,7 +25,7 @@ Each printer command can be implemented in either of two ways:
 
 -   You can place a device-specific command string in a GPD file. Unidrv sends the command string to the print spooler at the appropriate time.
 
--   You can implement the [**IPrintOemUni::CommandCallback**](https://msdn.microsoft.com/library/windows/hardware/ff554216) COM method, which dynamically generates a command string. Unidrv calls the method whenever it has to send the command to the spooler. For more information see [Dynamically Generated Printer Commands](dynamically-generated-printer-commands.md) in [Customizing Microsoft's Printer Drivers](customizing-microsoft-s-printer-drivers.md).
+-   You can implement the [**IPrintOemUni::CommandCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-commandcallback) COM method, which dynamically generates a command string. Unidrv calls the method whenever it has to send the command to the spooler. For more information see [Dynamically Generated Printer Commands](dynamically-generated-printer-commands.md) in [Customizing Microsoft's Printer Drivers](customizing-microsoft-s-printer-drivers.md).
 
 The following topics describe how to specify printer commands in GPD files:
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_direct3d_vertex_buffers_gg"></span><span id="DDK_DIRECT3D_VERTEX_BUFFERS_GG"></span>
 
 
-A vertex buffer contains the vertex data associated with a command buffer's primitives in a call to [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704). Vertices are represented using the flexible vertex format ([FVF](fvf--flexible-vertex-format-.md)), where each vertex can have the following data associated with it:
+A vertex buffer contains the vertex data associated with a command buffer's primitives in a call to [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb). Vertices are represented using the flexible vertex format ([FVF](fvf--flexible-vertex-format-.md)), where each vertex can have the following data associated with it:
 
 -   Position (*x,y,z, and optional w*) (required)
 

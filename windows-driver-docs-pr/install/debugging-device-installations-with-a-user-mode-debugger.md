@@ -13,7 +13,7 @@ Starting with Windows Vista, when the Plug and Play (PnP) manager detects a new 
 
 The most efficient way to debug the user-mode device installation host process is with a user-mode debugger, such as WinDbg or Visual Studio. Because the *DrvInst.exe* process would normally complete without any user interaction, Microsoft has added support to Windows Vista and later versions of Windows to allow the developer of a [driver package](driver-packages.md) to attach a debugger before the core stages of device installation are processed.
 
-For more information about user-mode debuggers and other debugging tools, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
+For more information about user-mode debuggers and other debugging tools, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
 
 The **DebugInstall** registry value specifies the type of device installation debugging support that is enabled on the system. For more information about this registry value, see [Enabling Support for Debugging Device Installations](enabling-support-for-debugging-device-installations.md).
 

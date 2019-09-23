@@ -28,9 +28,9 @@ For a connection where Initial Mobility Domain is successfully done, the LE shou
 
 | Type                                                                  | Multiple TLV instances allowed | Optional | Description                            |
 |-----------------------------------------------------------------------|--------------------------------|----------|----------------------------------------|
-| [**WDI\_TLV\_BSSID**](https://msdn.microsoft.com/library/windows/hardware/dn926153)                         |                                |          | The BSSID of the AP.                   |
-| [**WDI\_TLV\_FT\_AUTH\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/mt269116)   |                                |          | The authentication request byte blob.  |
-| [**WDI\_TLV\_FT\_AUTH\_RESPONSE**](https://msdn.microsoft.com/library/windows/hardware/mt269117) |                                |          | The authentication response byte blob. |
+| [**WDI\_TLV\_BSSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bssid)                         |                                |          | The BSSID of the AP.                   |
+| [**WDI\_TLV\_FT\_AUTH\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ft-auth-request)   |                                |          | The authentication request byte blob.  |
+| [**WDI\_TLV\_FT\_AUTH\_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ft-auth-response) |                                |          | The authentication response byte blob. |
 
  
 

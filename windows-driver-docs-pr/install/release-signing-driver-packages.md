@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 In this section, a computer that signs drivers for release on Windows Vista and later versions of Windows is referred to as the *signing computer*. The signing computer must be running Windows XP SP2 or later versions of the Windows operating system. For example, a driver intended for release on Windows 7 can be signed on a computer that is running Windows Vista.
 
-In addition, the signing computer must have the [driver signing tools](https://msdn.microsoft.com/library/windows/hardware/ff552958) installed.
+In addition, the signing computer must have the [driver signing tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-signing-drivers) installed.
 
-**Note**  You must use the version of the [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of this tool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
+**Note**  You must use the version of the [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of this tool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
 
  
 

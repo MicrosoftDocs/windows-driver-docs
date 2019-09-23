@@ -40,7 +40,7 @@ The following topics describe the NDPROXY driver more fully. These topics also d
 
 [Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS](non-wan-specific-extensions-to-support-telephonic-services-over-connec.md)
 
-These descriptions briefly discuss the concepts embodied in TAPI, but the reader should consult the Windows SDK for details about TAPI. For more information about how TAPI models line devices and how all WAN miniport drivers should maintain the state of their connections, see [Line Devices, Addresses, and Calls (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff549181) and [Maintaining State Information (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff549232).
+These descriptions briefly discuss the concepts embodied in TAPI, but the reader should consult the Windows SDK for details about TAPI. For more information about how TAPI models line devices and how all WAN miniport drivers should maintain the state of their connections, see [Line Devices, Addresses, and Calls (NDIS 5.1)](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff549181(v=vs.85)) and [Maintaining State Information (NDIS 5.1)](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff549232(v=vs.85)).
 
  
 

@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST to inform t
 
 | Type                                                   | Multiple TLV instances allowed | Optional | Description                 |
 |--------------------------------------------------------|--------------------------------|----------|-----------------------------|
-| [**WDI\_TLV\_BSS\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn926162) | X                              | X        | The list of updated BSSIDs. |
+| [**WDI\_TLV\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bss-entry) | X                              | X        | The list of updated BSSIDs. |
 
  
 

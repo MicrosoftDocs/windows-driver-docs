@@ -28,11 +28,11 @@ You can use MCATT for these test cases:
 ## Before you begin...
 
 
--   Get a MITT board. See [Buy hardware for using MITT](https://msdn.microsoft.com/library/windows/hardware/dn919811).
+-   Get a MITT board. See [Buy hardware for using MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--).
 -   Get a touch simulator pad and a band cable to connect to the adapter.
 -   Get an MCATT expansion board that has a 40-pin adapter to connect the MITT board to the touch simulator pad.
--   [Download the MITT software package](https://msdn.microsoft.com/library/windows/hardware/dn919810).
--   Install MITT firmware on the MITT board. See [Get started with MITT](https://msdn.microsoft.com/library/windows/hardware/dn919779).
+-   [Download the MITT software package](https://docs.microsoft.com/previous-versions/dn919810(v=vs.85)).
+-   Install MITT firmware on the MITT board. See [Get started with MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/get-started-with-mitt---).
 
 ## Hardware setup
 
@@ -110,10 +110,10 @@ Here is the example pattern:
 ```
 
 In the preceding example, the first line sets the pattern rate to 0x00028480, or 164,992 microseconds per line. The remaining lines are used to indicate the pads that are connected to ground and the pads that are floating. There are 40 pads, so each line is 40 bits long with bit 39 on the left side of the line and bit 0 at the right side of the line. This pattern starts by pressing down on pads 26, 27, 38, and 39, by setting those bits to a "1" and then moving the press from the left of the board to the right of the board
-To create patterns use the example pattern as a starting point. You can create and edit an MCATT pattern file by using the [MCATT Pattern Editor](https://msdn.microsoft.com/library/windows/hardware/dn919809).
+To create patterns use the example pattern as a starting point. You can create and edit an MCATT pattern file by using the [MCATT Pattern Editor](https://docs.microsoft.com/previous-versions/dn919809(v=vs.85)).
 
 ## Related topics
-[Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
+[Testing with Multi Interface Test Tool (MITT)](https://docs.microsoft.com/windows-hardware/drivers/spb/testing-with-multi-interface-test-tool--mitt-)  
 
 
 

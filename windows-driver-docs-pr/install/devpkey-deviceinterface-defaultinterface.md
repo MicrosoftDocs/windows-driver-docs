@@ -50,11 +50,11 @@ The DEVPKEY_DeviceInterfaceClass_DefaultInterface device property represents the
 Remarks
 -------
 
-For information about how to install and using device interfaces, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339) and the [**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310).
+For information about how to install and using device interfaces, see [Device Interface Classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) and the [**INF AddInterface Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive).
 
-You can retrieve the value of DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122). You can set DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**SetupDiSetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552158).
+You can retrieve the value of DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw). You can set DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**SetupDiSetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterfaceClass_DefaultInterface property key. For information about how to access the default interface of a device interface class on these earlier versions of Windows, see [Accessing Device Interface Class Properties](https://msdn.microsoft.com/library/windows/hardware/ff537739).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterfaceClass_DefaultInterface property key. For information about how to access the default interface of a device interface class on these earlier versions of Windows, see [Accessing Device Interface Class Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-interface-class-properties).
 
 Requirements
 ------------
@@ -79,13 +79,13 @@ Requirements
 ## See also
 
 
-[**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310)
+[**INF AddInterface Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive)
 
-[**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069)
+[**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw)
 
-[**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122)
+[**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
 
-[**SetupDiSetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552158)
+[**SetupDiSetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw)
 
  
 

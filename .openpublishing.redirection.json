@@ -1,6 +1,36 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-framework-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-general-object-macros.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/wdf-declare-context-type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/synchronization-techniques-for-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-automatic-synchronization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-support-objects.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/using-memory-buffers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/using-the-registry-in-wdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/security-issues-for-kmdf-drivers.md",
+      "redirect_URL": "/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/dashboard/administration.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-administration",
       "redirect_document_id": true
@@ -2284,8 +2314,8 @@
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetcurrentlinkstate.md",
-      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetcurrentlinkstate",
-      "redirect_document_id": true
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptersetlinkstate",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/netadaptersetdatapathcapabilities.md",
@@ -6043,6 +6073,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows-driver-docs-pr/netcx/using-the-ring-buffer.md",
+      "redirect_URL": "/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/audio/drm-requirements-for-gfx-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/audio/index",
       "redirect_document_id": false
@@ -7514,6 +7549,120 @@
       "source_path": "windows-driver-docs-pr/mobilebroadband/mobile-plans-prepaid-experience.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/mobile-plans-device-experience",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdf-device-object-macros.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/",
+      "redirect_document_id": false
+    },{
+      "source_path": "windows-driver-docs-pr/wdf/wdfdeviceresumeidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidlewithtag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/wdfdevicestopidlewithtag.md",
+      "redirect_URL": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidlewithtag",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/devtest/bypassing-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/manage-report-templates-and-scheduled-reports.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/sample-report-templates.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/schedule-custom-reports-for-driver-failure-details.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/enable-secure-data-sharing.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/create-a-new-report-template.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/schedule-a-new-report.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-report-data.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/legacy-error-reporting-data-process.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/download-failure-cabs.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-error-reporting-data-for-windows-10-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-details-for-a-windows-10-driver-error.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/download-the-cab-file-for-a-windows-10-driver-error.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-details-for-a-windows-7-or-windows-8.x-driver-error.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-oem-hardware-error-reporting-data.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/get-details-for-an-oem-hardware-error.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/dashboard/download-the-cab-file-for-an-oem-hardware-error.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "windows-driver-docs-pr/devtest/introduction-to-boot-options.md",
+      "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
+      "redirect_document_id": true
     }
   ]
 }

@@ -36,7 +36,7 @@ Rcdrkd.dll
 Remarks
 -------
 
-Each message in a recorder log has a prefix that you can control by specifying a trace message prefix string. For more information, see [Trace Message Prefix](https://msdn.microsoft.com/library/windows/hardware/ff553941).
+Each message in a recorder log has a prefix that you can control by specifying a trace message prefix string. For more information, see [Trace Message Prefix](https://docs.microsoft.com/windows-hardware/drivers/devtest/trace-message-prefix).
 
 Examples
 --------

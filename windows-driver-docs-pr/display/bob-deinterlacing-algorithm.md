@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_bob_deinterlacing_algorithm_gg"></span><span id="DDK_BOB_DEINTERLACING_ALGORITHM_GG"></span>
 
 
-If your display driver implements the DXVA [deinterlacing DDI](https://msdn.microsoft.com/library/windows/hardware/ff552701), it must support the bob-style deinterlacing algorithm in addition to any proprietary deinterlacing algorithms. Following is a description of the bob-style deinterlacing algorithm:
+If your display driver implements the DXVA [deinterlacing DDI](https://docs.microsoft.com/windows-hardware/drivers/display/deinterlace-ddi), it must support the bob-style deinterlacing algorithm in addition to any proprietary deinterlacing algorithms. Following is a description of the bob-style deinterlacing algorithm:
 
 Input is a field F<sub>in</sub>(i,j) of size MxN such that 0 &lt;= i &lt;= M-1 and 0 &lt;= j &lt;=N-1, where i and j are row and column indices, respectively.
 

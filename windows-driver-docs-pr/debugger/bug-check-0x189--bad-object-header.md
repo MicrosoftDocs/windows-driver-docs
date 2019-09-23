@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The BAD\_OBJECT\_HEADER bug check has a value of 0x00000189. This indicates that The OBJECT\_HEADER has been corrupted.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BAD\_OBJECT\_HEADER Parameters

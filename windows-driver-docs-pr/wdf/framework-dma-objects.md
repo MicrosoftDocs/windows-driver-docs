@@ -36,9 +36,9 @@ The framework's common buffer object represents an area of computer memory that 
 
 For information about the interfaces that these objects export, see:
 
-[Framework DMA Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265634)
+[Framework DMA Object Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/)
 
-[Framework Common Buffer Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265627)
+[Framework Common Buffer Object Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcommonbuffer/)
 
  
 

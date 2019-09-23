@@ -29,7 +29,7 @@ Step 10 shows the following Windows Security dialog box.
 
 Selecting the check box will not show this dialog box again in the computer if the driver is installed again if the driver is removed for any reason.
 
-**Note**  The system verifies that publisher information is accurate based on the SPC that was used to sign the catalog. If the publisher trust level is unknown—as will be true for Contoso.com—the system displays the dialog box. For the installation to proceed, the user must click Install. For more information on trust and driver installation, see [Code-Signing Best Practices](https://msdn.microsoft.com/library/windows/hardware/dn653556).
+**Note**  The system verifies that publisher information is accurate based on the SPC that was used to sign the catalog. If the publisher trust level is unknown—as will be true for Contoso.com—the system displays the dialog box. For the installation to proceed, the user must click Install. For more information on trust and driver installation, see [Code-Signing Best Practices](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn653556(v=vs.85)).
 
  
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The DIRTY\_NOWRITE\_PAGES\_CONGESTION bug check has a value of 0x000000FD. This indicates that there are no free pages available to continue basic system operations.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DIRTY\_NOWRITE\_PAGES\_CONGESTION Parameters

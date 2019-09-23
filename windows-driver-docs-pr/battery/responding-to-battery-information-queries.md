@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_responding_to_battery_information_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_INFORMATION_QUERIES_DG"></span>
 
 
-The battery class driver calls the [*BatteryMiniQueryInformation*](https://msdn.microsoft.com/library/windows/hardware/ff536273) routine to get a variety of information about the current battery. This routine is declared as follows:
+The battery class driver calls the [*BatteryMiniQueryInformation*](https://docs.microsoft.com/windows/desktop/api/batclass/nc-batclass-bclass_query_information_callback) routine to get a variety of information about the current battery. This routine is declared as follows:
 
 ```cpp
 typedef 
@@ -30,7 +30,7 @@ NTSTATUS
     );
 ```
 
-The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the [**BATTERY\_MINIPORT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff536287) structure at device initialization. The *BatteryTag* parameter is a value previously returned by [*BatteryMiniQueryTag*](https://msdn.microsoft.com/library/windows/hardware/ff536275).
+The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the [**BATTERY\_MINIPORT\_INFO**](https://docs.microsoft.com/windows/desktop/api/batclass/ns-batclass-battery_miniport_info) structure at device initialization. The *BatteryTag* parameter is a value previously returned by [*BatteryMiniQueryTag*](https://docs.microsoft.com/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback).
 
 The *Level* parameter specifies the kind of information requested. The miniclass driver formats the information as a [**BATTERY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff536283) structure and returns it at the address supplied by *Buffer*, with a pointer to its length in *ReturnedLength*.
 

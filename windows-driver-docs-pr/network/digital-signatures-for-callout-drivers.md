@@ -20,7 +20,7 @@ To guarantee the quality and integrity of the driver, all drivers must be digita
 
 For more information, see the following topics:
 
--   [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865)
+-   [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/install/driver-signing)
 -   [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613)
 
  

@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_PROVISIONED\_CONTEXTS reads or updates the provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM).
 
-Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PROVISIONED\_CONTEXTS**](ndis-status-wwan-provisioned-contexts.md) status notification containing an [**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](https://msdn.microsoft.com/library/windows/hardware/ff567914) structure to provide information about provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM) regardless of completing set or query requests.
+Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PROVISIONED\_CONTEXTS**](ndis-status-wwan-provisioned-contexts.md) status notification containing an [**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts) structure to provide information about provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM) regardless of completing set or query requests.
 
 Remarks
 -------
 
-For more information about using this OID, see [WWAN Packet Context Management](https://msdn.microsoft.com/library/windows/hardware/ff559086).
+For more information about using this OID, see [WWAN Packet Context Management](https://docs.microsoft.com/windows-hardware/drivers/network/mb-packet-context-management).
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if the MB device they support does not support retrieval of provisioned contexts.
 
@@ -46,7 +46,7 @@ CDMA devices that are configured for SimpleIP, reporting in WWAN\_CTRL\_CAPS\_CD
 
 Provisioned context list should be pre-provisioned in the device, updated by set OID\_WWAN\_PROVISIONED\_CONTEXT operations, or updated by device/operator using SMS or OTA. It must not be updated dynamically based on the context information provided in the OID\_WWAN\_CONNECT operation by MB Service.
 
-For more information about how to access AccessString, UserName, and Password from the MB device for each provisioned context in the list, see [**WWAN\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff571201).
+For more information about how to access AccessString, UserName, and Password from the MB device for each provisioned context in the list, see [**WWAN\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_context).
 
 Requirements
 ------------
@@ -71,7 +71,7 @@ Requirements
 ## See also
 
 
-[WWAN Packet Context Management](https://msdn.microsoft.com/library/windows/hardware/ff559086)
+[WWAN Packet Context Management](https://docs.microsoft.com/windows-hardware/drivers/network/mb-packet-context-management)
 
  
 

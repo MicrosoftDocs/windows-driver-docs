@@ -55,17 +55,17 @@ The **bDXVA\_Func** variable is an 8-bit value that is associated with DirectX V
 
 The **bDXVA\_Func** variable is used to perform the following tasks:
 
--   Probe and lock a configuration for a specific DirectX VA function. This is done by including **bDXVA\_Func** in a **DXVA\_ConfigQueryOrReplyFlag** variable and in a **DXVA\_ConfigQueryOrReplyFlag** variable when these variables are sent in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure in a call to [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248).
+-   Probe and lock a configuration for a specific DirectX VA function. This is done by including **bDXVA\_Func** in a **DXVA\_ConfigQueryOrReplyFlag** variable and in a **DXVA\_ConfigQueryOrReplyFlag** variable when these variables are sent in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
 
 -   Specify the function associated with a configuration structure passed with a probe or lock command by inclusion with a **DXVA\_ConfigQueryOrReplyFlag** variable in a **DXVA\_ConfigQueryOrReplyFlag** variable sent in the **dwFunction** member of the following structures:
-    [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) for compressed picture decoding
-    [**DXVA\_ConfigAlphaLoad**](https://msdn.microsoft.com/library/windows/hardware/ff563129) for alpha-blending data loading
-    [**DXVA\_ConfigAlphaCombine**](https://msdn.microsoft.com/library/windows/hardware/ff563126) for alpha-blending combination
--   Initialize an encryption protocol for a specific DirectX VA function by inclusion in a **DXVA\_EncryptProtocolFunc** variable sent in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure in a call to [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248).
+    [**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding
+    [**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading
+    [**DXVA\_ConfigAlphaCombine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination
+-   Initialize an encryption protocol for a specific DirectX VA function by inclusion in a **DXVA\_EncryptProtocolFunc** variable sent in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
 
--   Specify the function associated with an encryption protocol by inclusion in the **dwFunction** member of the [**DXVA\_EncryptProtocolHeader**](https://msdn.microsoft.com/library/windows/hardware/ff563965) structure.
+-   Specify the function associated with an encryption protocol by inclusion in the **dwFunction** member of the [**DXVA\_EncryptProtocolHeader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_encryptprotocolheader) structure.
 
--   Signal an operation to be performed by inclusion in a series of **bDXVA\_Func** byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://msdn.microsoft.com/library/windows/hardware/ff551693) structure in a call to [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248). The first **bDXVA\_Func** operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Remaining bytes in **dwFunction** not used to signal an operation are set to zero.
+-   Signal an operation to be performed by inclusion in a series of **bDXVA\_Func** byte values in the **dwFunction** member of a [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render). The first **bDXVA\_Func** operation is specified in the most significant byte, the next operation is specified in the next most significant byte, and so on. Remaining bytes in **dwFunction** not used to signal an operation are set to zero.
 
  
 

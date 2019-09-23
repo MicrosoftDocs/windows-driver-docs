@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-Minidrivers can synchronize streams to clocks created by other minidrivers; multiple streams can be synchronized to one clock. If the pin uses or produces such a *master clock*, the minidriver should support [**KSPROPERTY\_STREAM\_MASTERCLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff565713). Clients also can use this property to set the master clock for the pin. Pins that perform rendering and capturing operations frequently use a master clock. The minidriver is responsible for releasing clock references upon termination.
+Minidrivers can synchronize streams to clocks created by other minidrivers; multiple streams can be synchronized to one clock. If the pin uses or produces such a *master clock*, the minidriver should support [**KSPROPERTY\_STREAM\_MASTERCLOCK**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-stream-masterclock). Clients also can use this property to set the master clock for the pin. Pins that perform rendering and capturing operations frequently use a master clock. The minidriver is responsible for releasing clock references upon termination.
 
 The interface to a master clock is a file object that supports methods, properties and events.
 

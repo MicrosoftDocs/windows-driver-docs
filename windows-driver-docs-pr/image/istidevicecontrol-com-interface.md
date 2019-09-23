@@ -16,19 +16,19 @@ The **IStiDeviceControl** COM interface provides [User-Mode Still Image Minidriv
 
 The methods defined by the **IStiDeviceControl** interface include the following:
 
-<a href="" id="istidevicecontrol--addref"></a>[**IStiDeviceControl::AddRef**](https://msdn.microsoft.com/library/windows/hardware/ff542933)  
+<a href="" id="istidevicecontrol--addref"></a>[**IStiDeviceControl::AddRef**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-addref)  
 Increments the **IStiDeviceControl** interface's reference count.
 
-<a href="" id="istidevicecontrol--getmydeviceopenmode"></a>[**IStiDeviceControl::GetMyDeviceOpenMode**](https://msdn.microsoft.com/library/windows/hardware/ff542942)  
+<a href="" id="istidevicecontrol--getmydeviceopenmode"></a>[**IStiDeviceControl::GetMyDeviceOpenMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-getmydeviceopenmode)  
 Allows a still image minidriver to obtain the transfer mode that an application specified when it created an instance of a still image device.
 
-<a href="" id="istidevicecontrol--getmydeviceportname"></a>[**IStiDeviceControl::GetMyDevicePortName**](https://msdn.microsoft.com/library/windows/hardware/ff542944)  
+<a href="" id="istidevicecontrol--getmydeviceportname"></a>[**IStiDeviceControl::GetMyDevicePortName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname)  
 Allows a still image minidriver to obtain a device's port name.
 
-<a href="" id="istidevicecontrol--release"></a>[**IStiDeviceControl::Release**](https://msdn.microsoft.com/library/windows/hardware/ff543725)  
+<a href="" id="istidevicecontrol--release"></a>[**IStiDeviceControl::Release**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-release)  
 Closes an instance COM object that defines the **IStiDeviceControl** interface, and removes access to the interface.
 
-<a href="" id="istidevicecontrol--writetoerrorlog"></a>[**IStiDeviceControl::WriteToErrorLog**](https://msdn.microsoft.com/library/windows/hardware/ff543727)  
+<a href="" id="istidevicecontrol--writetoerrorlog"></a>[**IStiDeviceControl::WriteToErrorLog**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-writetoerrorlog)  
 Allows a still image minidriver to write a message into the still image error log.
 
  

@@ -18,7 +18,7 @@ The CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP bug check has a value of 
 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 
@@ -59,7 +59,7 @@ A Cluster Shared Volume state transition took too long. The system generated a l
 ## See Also
 ----------
 
-[Troubleshooting Hangs Using Live Dump (Blog)](https://blogs.msdn.microsoft.com/clustering/2016/03/02/troubleshooting-hangs-using-live-dump/)
+[Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

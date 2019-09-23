@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The topics in this section describe how to convert an existing WDM driver to a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver.
 
-Architecturally, Windows Driver Frameworks (WDF) drivers are similar to WDM drivers. A WDM driver consists of a [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) function, various dispatch routines that the operating system calls to service I/O requests, and additional driver-specific utility functions. A WDF driver consists of a [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) function, various event callback functions that the framework calls to service I/O requests, and additional driver-specific utility functions. However, within this broad structure, the two models have important differences.
+Architecturally, Windows Driver Frameworks (WDF) drivers are similar to WDM drivers. A WDM driver consists of a [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function, various dispatch routines that the operating system calls to service I/O requests, and additional driver-specific utility functions. A WDF driver consists of a [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) function, various event callback functions that the framework calls to service I/O requests, and additional driver-specific utility functions. However, within this broad structure, the two models have important differences.
 
 ## In this section
 

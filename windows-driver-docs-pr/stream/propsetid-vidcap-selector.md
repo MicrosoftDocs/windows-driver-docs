@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_propsetid_vidcap_selector_ks"></span><span id="DDK_PROPSETID_VIDCAP_SELECTOR_KS"></span>
 
 
-The PROPSETID\_VIDCAP\_SELECTOR property set is new for use with the [USB Video Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff568649). This property set contains properties that are needed to implement the **ISelector** interface (see the DirectShow documentation in the Microsoft Windows SDK).
+The PROPSETID\_VIDCAP\_SELECTOR property set is new for use with the [USB Video Class Driver](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver). This property set contains properties that are needed to implement the **ISelector** interface (see the DirectShow documentation in the Microsoft Windows SDK).
 
 The KSPROPERTY\_VIDCAP\_SELECTOR enumeration in *ksmedia.h* specifies the properties of this set.
 

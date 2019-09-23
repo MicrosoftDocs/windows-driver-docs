@@ -52,16 +52,16 @@ When a user clicks on the properties for a device in Device Manager or in Contro
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
+Supplies a handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set. If *DeviceInfoSet* is **NULL**, Windows is requesting property pages for the [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set. If *DeviceInfoSet* is **NULL**, Windows is requesting property pages for the [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-Device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) are associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
+Device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) are associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_ADDPROPERTYPAGE_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552337) structure is associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
+An [**SP_ADDPROPERTYPAGE_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
 
 ### Installer Output
 
@@ -69,7 +69,7 @@ An [**SP_ADDPROPERTYPAGE_DATA**](https://msdn.microsoft.com/library/windows/hard
 An installer can modify the device installation parameters.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP_ADDPROPERTYPAGE_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552337) to supply custom pages.
+An installer can modify the [**SP_ADDPROPERTYPAGE_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) to supply custom pages.
 
 ### Installer Return Value
 
@@ -104,9 +104,9 @@ A co-installer should add custom pages in its preprocessing pass.
 
 If an installer allows a user to set a property that requires Windows to remove and restart the device, the installer must set the DI_FLAGSEX_PROPCHANGE_PENDING flag in the device installation parameters from its **DialogProc** routine.
 
-For more information about how to provide device property pages, see [Providing Device Property Pages](https://msdn.microsoft.com/library/windows/hardware/ff549784).
+For more information about how to provide device property pages, see [Providing Device Property Pages](https://docs.microsoft.com/windows-hardware/drivers/install/providing-device-property-pages).
 
-For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+For more information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes).
 
 Requirements
 ------------
@@ -131,11 +131,11 @@ Requirements
 ## See also
 
 
-[**SP_ADDPROPERTYPAGE_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552337)
+[**SP_ADDPROPERTYPAGE_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data)
 
-[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
 
  
 

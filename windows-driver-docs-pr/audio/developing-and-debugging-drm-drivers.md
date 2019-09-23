@@ -28,7 +28,7 @@ The following checklist may help driver writers avoid some common pitfalls:
 
 The [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk_system_driver) prevents the kernel debugger from connecting while DRM-protected content is playing. Anti-debugging armor is one of several measures that DRMK uses to make protected content opaque. Once your driver is ready to be tested, however, you can debug its DRM-compliant features by using the following technique:
 
--   Temporarily modify the wave stream's **SetState** method (for example, see [**IMiniportWavePciStream::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536733)) to call [**IDrmAudioStream::SetContentId**](https://msdn.microsoft.com/library/windows/hardware/ff536570) and set the [**DRMRIGHTS**](https://msdn.microsoft.com/library/windows/hardware/ff536355) parameter's **CopyProtect** member to **TRUE**.
+-   Temporarily modify the wave stream's **SetState** method (for example, see [**IMiniportWavePciStream::SetState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavepcistream-setstate)) to call [**IDrmAudioStream::SetContentId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/drmk/nf-drmk-idrmaudiostream-setcontentid) and set the [**DRMRIGHTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/drmk/ns-drmk-tagdrmrights) parameter's **CopyProtect** member to **TRUE**.
 
 -   After you finish debugging, remember to remove the **SetContentId** call.
 

@@ -147,7 +147,7 @@ After you update the DllMain routine, update each .CPP source file and include t
 ## <span id="related_topics"></span>Related topics
 
 
-[WDK and Visual Studio build environment](https://msdn.microsoft.com/library/windows/hardware/hh454286)
+[WDK and Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment)
 
  
 

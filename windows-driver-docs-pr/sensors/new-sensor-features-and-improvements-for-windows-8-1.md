@@ -47,7 +47,7 @@ The new programming guide includes a section that describes driver logic for a s
 
 The geolocation sample driver demonstrates a minimal UMDF driver that emulates a Global Positioning System (GPS) device. This sample driver is described in detail in the new [Programming Guide](programming-guide.md).
 
-The geolocation sample driver also includes code that demonstrates adding support for the Radio Management API. This is described in the [Supporting radio managment](https://msdn.microsoft.com/library/windows/hardware/jj200337) topic.
+The geolocation sample driver also includes code that demonstrates adding support for the Radio Management API. This is described in the [Supporting radio managment](https://docs.microsoft.com/windows-hardware/drivers/gnss/supporting-radio-management) topic.
 
 ## Related topics
 [Programming Guide](programming-guide.md)  

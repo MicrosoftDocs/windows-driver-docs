@@ -117,7 +117,7 @@ You can enable the bcdedit bootdebug option to view early boot information that 
 bcdedit -bootdebug on
 ```
 
-For more information, see [BCDEdit Options Reference](https://msdn.microsoft.com/library/windows/hardware/ff542205).
+For more information, see [BCDEdit Options Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 If the kernel debugger exits, no more driver replacement occurs. However, any drivers that have already been replaced do not revert to their old binaries, because the driver files are actually overwritten.
 

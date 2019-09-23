@@ -51,7 +51,7 @@ The following table lists the color attributes.
 <tr class="even">
 <td><p><strong></em>EnableGDIColorMapping</strong></p></td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>. Indicates whether GDI should perform gamut mapping from display to printer color space.</p></td>
-<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, Unidrv sets the HT_FLAG_DO_DEVCLR_XFORM flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566484)"><strong>GDIINFO</strong></a> structure.</p></td>
+<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, Unidrv sets the HT_FLAG_DO_DEVCLR_XFORM flag in the <a href="https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_gdiinfo)"><strong>GDIINFO</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><em>MagentaInCyanDye</strong></p></td>
@@ -81,7 +81,7 @@ The following table lists the color attributes.
 **Note**   When the **\*ChangeColorModeOnDoc?** color attribute is set to **TRUE**, color optimization is enabled. When this attribute is set to **FALSE**, no optimization is performed. When color optimization is enabled, the presence of color in the spool file causes the spool file to be played in color; the lack of color in the spool file causes the spool file to be played in monochrome.
 If you are creating a Unidrv rendering plug-in to generate color watermarks, be advised that color optimization causes color watermarks to be printed in black and white when they are printed on black-and-white documents. To ensure that color watermarks print correctly with color and black-and-white documents, disable color optimization.
 
-The color optimization controlled by the **\*ChangeColorModeOnDoc?** color attribute can also be controlled by setting the **dwColorOptimization** member of the [**ATTRIBUTE\_INFO\_2**](https://msdn.microsoft.com/library/windows/hardware/ff545091) or [**ATTRIBUTE\_INFO\_3**](https://msdn.microsoft.com/library/windows/hardware/ff545093) structures. Color optimization also can be controlled by using the [**GdiEndPageEMF**](https://msdn.microsoft.com/library/windows/hardware/ff549468) function.
+The color optimization controlled by the **\*ChangeColorModeOnDoc?** color attribute can also be controlled by setting the **dwColorOptimization** member of the [**ATTRIBUTE\_INFO\_2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/ns-winddiui-_attribute_info_2) or [**ATTRIBUTE\_INFO\_3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/ns-winddiui-_attribute_info_3) structures. Color optimization also can be controlled by using the [**GdiEndPageEMF**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winppi/nf-winppi-gdiendpageemf) function.
 
  
 

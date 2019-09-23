@@ -52,13 +52,13 @@ After selecting the driver, registering any device co-installers, and registerin
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device to be installed.
+Supplies a handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains the device to be installed.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure for the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure for the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -72,11 +72,11 @@ An installer can modify the device installation parameters for the *DeviceInfoDa
 
 A co-installer typically returns NO_ERROR or ERROR_DI_POSTPROCESSING_REQUIRED. A co-installer might also return a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
 If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
-**Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler. For more information about calling a default DIF code handler, see [Calling Default DIF Code Handlers](https://msdn.microsoft.com/library/windows/hardware/ff537868).
+**Note**   The class installer can directly call the default handler, but the class installer should never attempt to supersede the operations of the default handler. For more information about calling a default DIF code handler, see [Calling Default DIF Code Handlers](https://docs.microsoft.com/windows-hardware/drivers/install/calling-the-default-dif-code-handlers).
 
  
 
@@ -84,7 +84,7 @@ If the class installer encounters an error, the installer should return an appro
 
 ### Default DIF Code Handler
 
-[**SetupDiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552039)
+[**SetupDiInstallDevice**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldevice)
 
 ### Installer Operation
 
@@ -100,15 +100,15 @@ In its postprocessing pass, the device is up and running unless the DI_NEEDREBOO
 
 If the installer returns a Win32 error code, Windows abandons the installation.
 
-If Windows cannot locate an INF file for a new device, it sends DIF_INSTALLDEVICE in an attempt to install a *null driver*. The default handler (**SetupDiInstallDevice** or is a non-PnP device (reported by [**IoReportDetectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549597)), In the latter case, Windows installs a null driver for the device.
+If Windows cannot locate an INF file for a new device, it sends DIF_INSTALLDEVICE in an attempt to install a *null driver*. The default handler (**SetupDiInstallDevice** or is a non-PnP device (reported by [**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioreportdetecteddevice)), In the latter case, Windows installs a null driver for the device.
 
-If this attempt fails, Windows sends DIF_INSTALLDEVICE again, this time with the DI_FLAGSEX_SETFAILEDINSTALL flag set in the [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure. In this case, the default handler just sets the FAILEDINSTALL flag in the device's **ConfigFlags** registry value. If the DI_FLAGSEX_SETFAILEDINSTALL flag is set, class installers must return NO_ERROR or ERROR_DI_DO_DEFAULT and co-installers must return NO_ERROR.
+If this attempt fails, Windows sends DIF_INSTALLDEVICE again, this time with the DI_FLAGSEX_SETFAILEDINSTALL flag set in the [**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure. In this case, the default handler just sets the FAILEDINSTALL flag in the device's **ConfigFlags** registry value. If the DI_FLAGSEX_SETFAILEDINSTALL flag is set, class installers must return NO_ERROR or ERROR_DI_DO_DEFAULT and co-installers must return NO_ERROR.
 
-For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+For more information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes).
 
 ### **Calling the Default Handler SetupDiInstallDevice**
 
-For general information about when and how to call a **SetupDiInstallDevice**, see [Calling Default DIF Code Handlers](https://msdn.microsoft.com/library/windows/hardware/ff537868).
+For general information about when and how to call a **SetupDiInstallDevice**, see [Calling Default DIF Code Handlers](https://docs.microsoft.com/windows-hardware/drivers/install/calling-the-default-dif-code-handlers).
 
 In the rare situation where the class installer must perform operations after all **SetupDiInstallDevice** operations, except for starting a device, have completed, the class installer must:
 
@@ -120,7 +120,7 @@ In the rare situation where the class installer must perform operations after al
 
 4.  Perform the operations that must be done after all default installation operations, except for starting the device, have completed.
 
-5.  Call [**SetupDiRestartDevices**](https://msdn.microsoft.com/library/windows/hardware/ff552104) to start the device.
+5.  Call [**SetupDiRestartDevices**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdirestartdevices) to start the device.
 
 6.  Return NO_ERROR if the class installer successfully completed the installation operation or return a Win32 error if the installation operation failed.
 
@@ -149,11 +149,11 @@ Requirements
 
 [**DIF_INSTALLDEVICEFILES**](dif-installdevicefiles.md)
 
-[**SetupDiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552039)
+[**SetupDiInstallDevice**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldevice)
 
-[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
 
  
 

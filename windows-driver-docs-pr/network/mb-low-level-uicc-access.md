@@ -6,6 +6,7 @@ keywords:
 - MB low level UICC access, Mobile Broadband low level UICC access, Mobile Broadband miniport driver low level UICC, MB UICC ATR, MB UICC Answer to Reset, MB UICC open channel, MB UICC close channel, MB UICC APDU, MB UICC terminal capability, MB UICC reset
 ms.date: 12/05/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # MB low level UICC access
@@ -30,12 +31,12 @@ The following table specifies the command code for each CID, as well as whether 
 
 | CID | Command code | Set | Query | Notify |
 | --- | --- | --- | --- | --- |
-| [MBIM_CID_MS_UICC_ATR](#mbimcidmsuiccatr) | 1 | N | Y | N |
-| [MBIM_CID_MS_UICC_OPEN_CHANNEL](#mbimcidmsuiccopenchannel) | 2 | Y | N | N |
-| [MBIM_CID_MS_UICC_CLOSE_CHANNEL](#mbimcidmsuiccclosechannel) | 3 | Y | N | N |
-| [MBIM_CID_MS_UICC_APDU](#mbimcidmsuiccapdu) | 4 | Y | N | N |
-| [MBIM_CID_MS_UICC_TERMINAL_CAPABILITY](#mbimcidmsuiccterminalcapability) | 5 | Y | Y | N |
-| [MBIM_CID_MS_UICC_RESET](#mbimcidmsuiccreset) | 6 | Y | Y | N |
+| MBIM_CID_MS_UICC_ATR | 1 | N | Y | N |
+| MBIM_CID_MS_UICC_OPEN_CHANNEL | 2 | Y | N | N |
+| MBIM_CID_MS_UICC_CLOSE_CHANNEL | 3 | Y | N | N |
+| MBIM_CID_MS_UICC_APDU) | 4 | Y | N | N |
+| MBIM_CID_MS_UICC_TERMINAL_CAPABILITY | 5 | Y | Y | N |
+| MBIM_CID_MS_UICC_RESET | 6 | Y | Y | N |
 
 ## Status codes
 
@@ -47,7 +48,7 @@ MBIM status codes are defined in Section 9.4.5 of the [MBIM standard](https://go
 | MBIM_STATUS_MS_SELECT_FAILED | 87430002 | The logical channel open was not successful because SELECT failed. |
 | MBIM_STATUS_MS_INVALID_LOGICAL_CHANNEL | 87430003 | The logical channel number is invalid (it was not opened by MBIM_CID_MS_UICC_OPEN_CHANNEL). |
 
-## MBIM_SUBSCRIBER_READY_STATE
+### MBIM_SUBSCRIBER_READY_STATE
 
 | Type | Value | Description |
 | --- | --- | --- |
@@ -100,7 +101,6 @@ The InformationBuffer of MBIM_COMMAND_DONE contains the following MBIM_MS_ATR_IN
 | 0 | 4 | AtrSize | SIZE(0..33) | The length of **AtrData**. |
 | 4 | 4 | AtrOffset | OFFSET | The offset in bytes, calculated from the beginning of this structure, to a byte array called **AtrData** that contains the ATR data. |
 | 8 | AtrSize | DataBuffer | DATABUFFER | The **AtrData** byte array. |
-
 
 ### Unsolicited events
 
@@ -430,9 +430,9 @@ The MBIM_SET_MS_UICC_RESET structure contains the passthrough action specified b
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | PassThroughAction | MBIM_MS_UICC_PASSTHROUGH_ACTION | For more info, see [MBIM_MS_UICC_PASSTHROUGH_ACTION](#mbimmsuiccpassthroughaction). |
+| 0 | 4 | PassThroughAction | MBIM_MS_UICC_PASSTHROUGH_ACTION | For more info, see [MBIM_MS_UICC_PASSTHROUGH_ACTION](#mbim_ms_uicc_passthrough_action). |
 
-#### MBIM_MS_UICC_PASSTHROUGH_ACTION
+#### <a name="mbim_ms_uicc_passthrough_action">MBIM_MS_UICC_PASSTHROUGH_ACTION</a>
 
 The MBIM_MS_UICC_PASSTHROUGH_ACTION enumeration defines the types of passthrough actions the host can specify to the MBIM function.
 
@@ -449,9 +449,9 @@ The MBIM_MS_UICC_RESET_INFO structure contains the passthrough status of the MBI
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
-| 0 | 4 | PassThroughStatus | MBIM_MS_UICC_PASSTHROUGH_STATUS | For more info, see [MBIM_MS_UICC_PASSTHROUGH_STATUS](#mbimmsuiccpassthroughstatus). |
+| 0 | 4 | PassThroughStatus | MBIM_MS_UICC_PASSTHROUGH_STATUS | For more info, see [MBIM_MS_UICC_PASSTHROUGH_STATUS](#mbim_ms_uicc_passthrough_status). |
 
-#### MBIM_MS_UICC_PASSTHROUGH_STATUS
+#### <a name="mbim_ms_uicc_passthrough_status">MBIM_MS_UICC_PASSTHROUGH_STATUS</a> 
 
 The MBIM_MS_UICC_PASSTHROUGH_STATUS enumeration defines the types of passthrough status the MBIM function specifies to the host.
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_VPMUX
 
 
-The KSCATEGORY_VPMUX [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that supports video multiplexing.
+The KSCATEGORY_VPMUX [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that supports video multiplexing.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_VPMUX to indicate to the operating system that the devices support the KSCATEGORY_VPMUX functional category.
 
-For general information about video devices, see [Video Capture Devices](https://msdn.microsoft.com/library/windows/hardware/ff568699).
+For general information about video devices, see [Video Capture Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/video-capture-devices).
 
 For information about the device interface class for video devices, see [**KSCATEGORY_VIDEO**](kscategory-video.md).
 

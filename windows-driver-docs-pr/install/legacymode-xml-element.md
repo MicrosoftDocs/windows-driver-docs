@@ -16,9 +16,9 @@ ms.date: 10/17/2018
 # legacyMode XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
-The **legacyMode** XML element is an empty element that sets the **legacyMode** flag to ON, which configures DPInst to install unsigned drivers and [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) that have missing files.
+The **legacyMode** XML element is an empty element that sets the **legacyMode** flag to ON, which configures DPInst to install unsigned drivers and [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) that have missing files.
 
 **Element Tag**
 
@@ -61,7 +61,7 @@ None
 
 **Remarks**
 
-By default, DPInst installs only signed [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) and driver packages that do not have missing files. To configure DPInst to accept unsigned driver packages or driver packages that have missing files, set the **legacyMode** flag to ON by including an **legacyMode** element as a child element of a **dpinst** XML element or by using the **/lm** command-line switch.
+By default, DPInst installs only signed [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) and driver packages that do not have missing files. To configure DPInst to accept unsigned driver packages or driver packages that have missing files, set the **legacyMode** flag to ON by including an **legacyMode** element as a child element of a **dpinst** XML element or by using the **/lm** command-line switch.
 
 The following code example demonstrates a **legacyMode** element.
 

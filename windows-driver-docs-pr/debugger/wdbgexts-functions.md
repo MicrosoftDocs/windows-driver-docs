@@ -15,129 +15,129 @@ ms.localizationpriority: medium
 
 The wdbgexts.h header file contains prototypes for the following functions. These functions use the same prototype for both 32-bit and 64-bit extensions:
 
-[**GetContext**](https://msdn.microsoft.com/library/windows/hardware/ff545736)
+[**GetContext**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff545736(v=vs.85))
 
-[**SetContext**](https://msdn.microsoft.com/library/windows/hardware/ff556644)
+[**SetContext**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556644(v=vs.85))
 
-[**CheckControlC**](https://msdn.microsoft.com/library/windows/hardware/ff539072)
+[**CheckControlC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_check_control_c)
 
-[**GetCurrentProcessAddr**](https://msdn.microsoft.com/library/windows/hardware/ff545779)
+[**GetCurrentProcessAddr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getcurrentprocessaddr)
 
-[**GetCurrentProcessHandle**](https://msdn.microsoft.com/library/windows/hardware/ff545816)
+[**GetCurrentProcessHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugsystemobjects-getcurrentprocesshandle)
 
-[**GetCurrentThreadAddr**](https://msdn.microsoft.com/library/windows/hardware/ff545889)
+[**GetCurrentThreadAddr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getcurrentthreadaddr)
 
-[**GetDebuggerCacheSize**](https://msdn.microsoft.com/library/windows/hardware/ff546568)
+[**GetDebuggerCacheSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getdebuggercachesize)
 
-[**GetDebuggerData**](https://msdn.microsoft.com/library/windows/hardware/ff546573)
+[**GetDebuggerData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getdebuggerdata)
 
-[**Disasm**](https://msdn.microsoft.com/library/windows/hardware/ff541945)
+[**Disasm**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_disasm)
 
-[**dprintf**](https://msdn.microsoft.com/library/windows/hardware/ff542750)
+[**dprintf**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_output_routine)
 
-[**GetExpression**](https://msdn.microsoft.com/library/windows/hardware/ff546683)
+[**GetExpression**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_get_expression)
 
-[**GetExpressionEx**](https://msdn.microsoft.com/library/windows/hardware/ff546691)
+[**GetExpressionEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getexpressionex)
 
-[**GetInputLine**](https://msdn.microsoft.com/library/windows/hardware/ff546905)
+[**GetInputLine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getinputline)
 
-[**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084)
+[**Ioctl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine)
 
-[**GetKdContext**](https://msdn.microsoft.com/library/windows/hardware/ff546962)
+[**GetKdContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getkdcontext)
 
-[**ReadMemory**](https://msdn.microsoft.com/library/windows/hardware/ff554287)
+[**ReadMemory**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff554287(v=vs.85))
 
-[**SearchMemory**](https://msdn.microsoft.com/library/windows/hardware/ff554742)
+[**SearchMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-searchmemory)
 
-[**WriteMemory**](https://msdn.microsoft.com/library/windows/hardware/ff561420)
+[**WriteMemory**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff561420(v=vs.85))
 
-[**ReadMsr**](https://msdn.microsoft.com/library/windows/hardware/ff554289)
+[**ReadMsr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readmsr)
 
-[**WriteMsr**](https://msdn.microsoft.com/library/windows/hardware/ff561424)
+[**WriteMsr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writemsr)
 
-[**GetPebAddress**](https://msdn.microsoft.com/library/windows/hardware/ff548122)
+[**GetPebAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getpebaddress)
 
-[**ReadPhysical**](https://msdn.microsoft.com/library/windows/hardware/ff554310)
+[**ReadPhysical**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readphysical)
 
-[**ReadPhysicalWithFlags**](https://msdn.microsoft.com/library/windows/hardware/ff554315)
+[**ReadPhysicalWithFlags**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readphysicalwithflags)
 
-[**WritePhysical**](https://msdn.microsoft.com/library/windows/hardware/ff561432)
+[**WritePhysical**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writephysical)
 
-[**WritePhysicalWithFlags**](https://msdn.microsoft.com/library/windows/hardware/ff561448)
+[**WritePhysicalWithFlags**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writephysicalwithflags)
 
-[**GetTebAddress**](https://msdn.microsoft.com/library/windows/hardware/ff549267)
+[**GetTebAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-gettebaddress)
 
-[**StackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff558794)
+[**StackTrace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_stacktrace_routine)
 
-[**GetSymbol**](https://msdn.microsoft.com/library/windows/hardware/ff548447)
+[**GetSymbol**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nc-wdbgexts-pwindbg_get_symbol)
 
-[**ReloadSymbols**](https://msdn.microsoft.com/library/windows/hardware/ff554381)
+[**ReloadSymbols**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-reloadsymbols)
 
-[**GetSetSympath**](https://msdn.microsoft.com/library/windows/hardware/ff548291)
+[**GetSetSympath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getsetsympath)
 
-[**TranslateVirtualToPhysical**](https://msdn.microsoft.com/library/windows/hardware/ff558914)
+[**TranslateVirtualToPhysical**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-translatevirtualtophysical)
 
 The wdbgexts.h header file contains prototypes for the following functions. These functions have different prototypes for 32-bit and 64-bit extensions:
 
-[**ReadControlSpace**](https://msdn.microsoft.com/library/windows/hardware/ff553527)
+[**ReadControlSpace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readcontrolspace)
 
-[**ReadControlSpace64**](https://msdn.microsoft.com/library/windows/hardware/ff553532)
+[**ReadControlSpace64**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readcontrolspace64)
 
-[**ReadTypedControlSpace32**](https://msdn.microsoft.com/library/windows/hardware/ff554339)
+[**ReadTypedControlSpace32**](https://docs.microsoft.com/previous-versions/ff554339(v=vs.85))
 
-[**ReadTypedControlSpace64**](https://msdn.microsoft.com/library/windows/hardware/ff554341)
+[**ReadTypedControlSpace64**](https://docs.microsoft.com/previous-versions/ff554341(v=vs.85))
 
-[**WriteControlSpace**](https://msdn.microsoft.com/library/windows/hardware/ff561375)
+[**WriteControlSpace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writecontrolspace)
 
-[**ReadIoSpace**](https://msdn.microsoft.com/library/windows/hardware/ff553574)
+[**ReadIoSpace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readiospace)
 
-[**ReadIoSpace64**](https://msdn.microsoft.com/library/windows/hardware/ff553577)
+[**ReadIoSpace64**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readiospace64)
 
-[**ReadIoSpaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff553580)
+[**ReadIoSpaceEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readiospaceex)
 
-[**ReadIoSpaceEx64**](https://msdn.microsoft.com/library/windows/hardware/ff553583)
+[**ReadIoSpaceEx64**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readiospaceex64)
 
-[**WriteIoSpace**](https://msdn.microsoft.com/library/windows/hardware/ff561406)
+[**WriteIoSpace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writeiospace)
 
-[**WriteIoSpace64**](https://msdn.microsoft.com/library/windows/hardware/ff561408)
+[**WriteIoSpace64**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writeiospace64)
 
-[**WriteIoSpaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff561413)
+[**WriteIoSpaceEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writeiospaceex)
 
-[**WriteIoSpaceEx64**](https://msdn.microsoft.com/library/windows/hardware/ff561414)
+[**WriteIoSpaceEx64**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writeiospaceex64)
 
-[**SetThreadForOperation**](https://msdn.microsoft.com/library/windows/hardware/ff556830)
+[**SetThreadForOperation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-setthreadforoperation)
 
-[**SetThreadForOperation64**](https://msdn.microsoft.com/library/windows/hardware/ff556832)
+[**SetThreadForOperation64**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-setthreadforoperation64)
 
 The wdbgexts.h header file contains prototypes for the following functions. These functions can be used only in 64-bit extensions:
 
-[**GetFieldData**](https://msdn.microsoft.com/library/windows/hardware/ff546743)
+[**GetFieldData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getfielddata)
 
-[**GetFieldOffset**](https://msdn.microsoft.com/library/windows/hardware/ff546758)
+[**GetFieldOffset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugsymbols-getfieldoffset)
 
-[**GetFieldValue**](https://msdn.microsoft.com/library/windows/hardware/ff546781)
+[**GetFieldValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getfieldvalue)
 
-[**GetShortField**](https://msdn.microsoft.com/library/windows/hardware/ff548299)
+[**GetShortField**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-getshortfield)
 
-[**ReadField**](https://msdn.microsoft.com/library/windows/hardware/ff553539)
+[**ReadField**](https://docs.microsoft.com/previous-versions/ff553539(v=vs.85))
 
-[**ReadListEntry**](https://msdn.microsoft.com/library/windows/hardware/ff553585)
+[**ReadListEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readlistentry)
 
-[**ReadPointer**](https://msdn.microsoft.com/library/windows/hardware/ff554318)
+[**ReadPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readpointer)
 
-[**WritePointer**](https://msdn.microsoft.com/library/windows/hardware/ff561450)
+[**WritePointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-writepointer)
 
-[**IsPtr64**](https://msdn.microsoft.com/library/windows/hardware/ff551094)
+[**IsPtr64**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-isptr64)
 
-[**ReadPtr**](https://msdn.microsoft.com/library/windows/hardware/ff554330)
+[**ReadPtr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readptr)
 
-[**GetTypeSize**](https://msdn.microsoft.com/library/windows/hardware/ff549446)
+[**GetTypeSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-gettypesize)
 
-[**InitTypeRead**](https://msdn.microsoft.com/library/windows/hardware/ff550953)
+[**InitTypeRead**](https://docs.microsoft.com/previous-versions/ff550953(v=vs.85))
 
-[**InitTypeReadPhysical**](https://msdn.microsoft.com/library/windows/hardware/ff550957)
+[**InitTypeReadPhysical**](https://docs.microsoft.com/previous-versions/ff550957(v=vs.85))
 
-[**ListType**](https://msdn.microsoft.com/library/windows/hardware/ff551988)
+[**ListType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-listtype)
 
  
 

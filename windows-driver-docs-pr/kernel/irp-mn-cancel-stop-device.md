@@ -48,7 +48,7 @@ In response to this IRP, drivers return the device to the started state. Drivers
 
 If the device is already in an active state when the driver receives this IRP, a function or filter driver simply sets status to success and passes the IRP to the next driver. The parent bus driver completes the IRP. For such a cancel-stop IRP, a function or filter driver need not set a completion routine.
 
-See [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) for detailed information about handling stop IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for detailed information about handling stop IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

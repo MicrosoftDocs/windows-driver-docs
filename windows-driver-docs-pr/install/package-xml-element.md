@@ -16,9 +16,9 @@ ms.date: 10/17/2018
 # package XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
-The **package** XML element specifies an INF file for a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840).
+The **package** XML element specifies an INF file for a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages).
 
 **Element Tag**
 
@@ -74,7 +74,7 @@ The **package** XML element specifies an INF file for a [driver package](https:/
 
 **Remarks**
 
-The following code example demonstrates a **package** element that specifies DirAbc\\Abc.inf as the INF file for the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840).
+The following code example demonstrates a **package** element that specifies DirAbc\\Abc.inf as the INF file for the [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages).
 
 ```cpp
 <dpinst>

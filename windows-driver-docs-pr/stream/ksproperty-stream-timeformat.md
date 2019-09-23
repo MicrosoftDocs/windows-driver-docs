@@ -60,7 +60,7 @@ Remarks
 
 The property returns a GUID specifying the time format used in the connection and indicating the format of the presentation time and extent. The defined time formats correspond to those defined by DirectShow.
 
-KSPROPERTY\_STREAM\_TIMEFORMAT is an optional property that should be implemented if the pin supports the rate, presentation time/extent, or skip degradation properties (For more information about these properties, see [Quality Management](https://msdn.microsoft.com/library/windows/hardware/ff568124)). This allows a client to determine the time format used for connection and the format of the time stamp information used in rate, presentation time/extent, and skip degradation operations.
+KSPROPERTY\_STREAM\_TIMEFORMAT is an optional property that should be implemented if the pin supports the rate, presentation time/extent, or skip degradation properties (For more information about these properties, see [Quality Management](https://docs.microsoft.com/windows-hardware/drivers/stream/quality-management)). This allows a client to determine the time format used for connection and the format of the time stamp information used in rate, presentation time/extent, and skip degradation operations.
 
 Requirements
 ------------

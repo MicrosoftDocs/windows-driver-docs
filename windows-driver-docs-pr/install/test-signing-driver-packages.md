@@ -21,9 +21,9 @@ ms.localizationpriority: medium
 
 In this section, a computer that test-signs drivers for release on Windows Vista and later versions of Windows is referred to as the *signing computer*. The signing computer must be running Windows XP SP2 or later versions of Windows. For example, a driver intended for release on Windows 7 can be signed on a computer running Windows Vista.
 
-In order to use the [driver signing tools](https://msdn.microsoft.com/library/windows/hardware/ff552958), the signing computer must have the Windows Vista and later versions of the WDK installed.
+In order to use the [driver signing tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-signing-drivers), the signing computer must have the Windows Vista and later versions of the WDK installed.
 
-**Note**  You must use the version of the [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of the SignTool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
+**Note**  You must use the version of the [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of the SignTool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
 
  
 
@@ -83,7 +83,7 @@ Starting with Windows Vista, embedding a signature in a driver file is optional 
 
 The PnP device installation signing requirements do not apply to non-PnP drivers.
 
-**Note**   Using embedded signatures is generally simpler and more efficient than using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver).
+**Note**   Using embedded signatures is generally simpler and more efficient than using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://docs.microsoft.com/windows-hardware/drivers).
 
  
 

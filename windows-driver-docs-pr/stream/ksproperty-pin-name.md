@@ -47,7 +47,7 @@ The client uses KSPROPERTY\_PIN\_NAME to retrieve the Registry name of a pin fac
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566722" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566722)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>A buffer containing the localized Unicode string.</p></td>
 </tr>
 </tbody>
@@ -81,7 +81,7 @@ Requirements
 ## See also
 
 
-[**KSP\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566722)
+[**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)
 
  
 

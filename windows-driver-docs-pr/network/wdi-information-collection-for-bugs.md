@@ -24,7 +24,7 @@ When an operating system crash occurs, a memory dump file is generated at %windi
 ## OS crash with kernel debugger attached
 
 
-Developers or QA should have kernel debuggers attached if possible. A kernel debugger can quickly tell what is wrong and which direction to investigate further. The kd command '[**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) –v' is useful as the first command to run after a bug check. This command points to the location inside a module where the crash occurred and the reason (bug check code) for the crash.
+Developers or QA should have kernel debuggers attached if possible. A kernel debugger can quickly tell what is wrong and which direction to investigate further. The kd command '[**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) –v' is useful as the first command to run after a bug check. This command points to the location inside a module where the crash occurred and the reason (bug check code) for the crash.
 
 ## When Reset Recovery is invoked
 

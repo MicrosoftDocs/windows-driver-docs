@@ -19,11 +19,11 @@ ms.localizationpriority: medium
 
 To participate in error information retrieval, a PSHED plug-in must implement the following callback functions:
 
-[*RetrieveErrorInfo*](https://msdn.microsoft.com/library/windows/hardware/ff559483)
+[*RetrieveErrorInfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pshed_pi_retrieve_error_info)
 
-[*FinalizeErrorRecord*](https://msdn.microsoft.com/library/windows/hardware/ff559357)
+[*FinalizeErrorRecord*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pshed_pi_finalize_error_record)
 
-[*ClearErrorStatus*](https://msdn.microsoft.com/library/windows/hardware/ff559275)
+[*ClearErrorStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pshed_pi_clear_error_status)
 
 The following code example shows how to implement these callback functions.
 

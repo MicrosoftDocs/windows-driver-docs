@@ -3,6 +3,7 @@ Description: 'Describes the behavior of the USB Type-C Port Controller Interface
 title: Write a USB Type-C port controller driver
 ms.date: 01/07/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Write a USB Type-C port controller driver
@@ -147,7 +148,7 @@ Sample reference: See `EvtDeviceD0Entry` in `Device.cpp` and `HardwareRequestQue
  
  2. Call UcmTcpciPortControllerSetHardwareRequestQueue to register the new framework queue object with UcmTpciCx. After that call succeeds, UcmTcpciCx puts framework queue objects (WDFREQUEST) in this queue when it requires action from the driver. 
 
- 3. Implement EvtIoDeviceControl callback funciton to handle these IOCTLs. 
+ 3. Implement EvtIoDeviceControl callback function to handle these IOCTLs. 
 
 |  Control Code |  Description | 
 |---            |           ---|
@@ -200,11 +201,11 @@ As part of state machine execution, UcmTcpciCx needs to send requests to the por
 
 UcmTcpciCx sends the commands as I/O Control Code describing the get/set operation that is required from the client driver. In the client driver's queue setup, the driver registered its queue with UcmTcpciCx.  UcmTcpciCx starts placing framework request objects in the queue it requires operation from the driver. The I/O Control codes are listed in the table in step 4.
 
-It is the client driver’s responsibility to complete requests in a timely fashion.TBD,
+It is the client driver's responsibility to complete requests in a timely fashion.
 
 The client driver calls WdfRequestComplete on the framework request object with a completion status when it has finished the requested operation. 
 
 The client driver might need to send an I/O request to another driver to perform the hardware operation. For example, in the sample, the driver sends an SPB request to the I<sup>2</sup>C-connected port controller. In that case, the driver cannot forward the framework request object it received from UcmTcpciCx because the request object might not have the correct number of stack locations in the WDM IRP. The client driver must create another framework request object and forward it to another driver. The client driver can preallocate request objects it needs during initialization, instead of creating a one every time it gets a request from UcmTcpciCx. This is possible because UcmTcpciCx guarantees that there will be only one request outstanding at any given time. 
 
 ## See Also
-[USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826)
+[USB Type-C Port Controller Interface driver class extensions reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt805826(v=vs.85))

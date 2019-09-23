@@ -68,7 +68,7 @@ This extension is only useful during WPP software tracing, and earlier (legacy) 
 
 This extension is similar to the [**!wmitrace.eventlogdump**](-wmitrace-eventlogdump.md) extension, except that the output of **!wmitrace.logdump** is formatted in WPP style, and the output of **!wmitrace.eventlogdump** is formatted in event log style. You should choose the extension whose format is appropriate for the data you want to display.
 
-For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff561391#viewing-the-umdf-trace-log).
+For information about how to view the UMDF trace log, see [Using WPP Software Tracing in UMDF-based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-umdf-drivers#viewing-the-umdf-trace-log).
 
  
 

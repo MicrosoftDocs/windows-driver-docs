@@ -26,7 +26,7 @@ When you activate Disk Integrity Checking, you can choose to verify any or all o
 
 As soon as Windows and its drivers are loaded, Driver Verifier begins to monitor all read and write actions made to these drives. Driver Verifier calculates a CRC (cyclic redundancy check) checksum value for each sector that is accessed and saves this value. The next time this sector is accessed, Driver Verifier recalculates this checksum and compares it to the previous value.
 
-If the checksum value changes, this indicates a disk integrity problem -- either the read operation is returning faulty information, or the disk medium has altered its contents since the last access was made. When this happens, Driver Verifier issues bug check 0xC4 with Parameter 1 equal to 0xA0. The other parameters identify the IRP making the request, the device object of the lower device, and the sector in which the error occurred. For details, see [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION).
+If the checksum value changes, this indicates a disk integrity problem -- either the read operation is returning faulty information, or the disk medium has altered its contents since the last access was made. When this happens, Driver Verifier issues bug check 0xC4 with Parameter 1 equal to 0xA0. The other parameters identify the IRP making the request, the device object of the lower device, and the sector in which the error occurred. For details, see [**Bug Check 0xC4**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION).
 
 ### <span id="performance_issues"></span><span id="PERFORMANCE_ISSUES"></span>Performance Issues
 

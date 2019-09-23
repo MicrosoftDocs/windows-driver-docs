@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 To open a handle to a file, perform the following steps:
 
-1.  Create an [**OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff557749) structure, and call the [**InitializeObjectAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff547804) macro to initialize the structure. You specify the file's object name as the *ObjectName* parameter to **InitializeObjectAttributes**.
+1.  Create an [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_object_attributes) structure, and call the [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfwdm/nf-wudfwdm-initializeobjectattributes) macro to initialize the structure. You specify the file's object name as the *ObjectName* parameter to **InitializeObjectAttributes**.
 
-2.  Open a handle to the file by passing the **OBJECT\_ATTRIBUTES** structure to [**IoCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff548418), [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424), or [**ZwOpenFile**](https://msdn.microsoft.com/library/windows/hardware/ff567011).
+2.  Open a handle to the file by passing the **OBJECT\_ATTRIBUTES** structure to [**IoCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatefile), [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntopenfile).
 
     If the file does not exist, **IoCreateFile** and **ZwCreateFile** will create it, whereas **ZwOpenFile** will return STATUS\_OBJECT\_NAME\_NOT\_FOUND.
 
@@ -64,7 +64,7 @@ Whichever routine you call, you must pass the access rights you need as the *Des
 
  
 
-For more information about the values available for *DesiredAccess*, see [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424).
+For more information about the values available for *DesiredAccess*, see [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile).
 
  
 

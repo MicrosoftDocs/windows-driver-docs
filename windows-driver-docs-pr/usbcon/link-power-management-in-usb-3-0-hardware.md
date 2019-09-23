@@ -12,7 +12,7 @@ This section provides information about certain limitations of the Universal Ser
 
 This section assumes that the reader is familiar with the following:
 
--   The official [USB 3.0 specification](http://www.usb.org/developers/docs/).
+-   The official [USB 3.0 specification](https://www.usb.org/documents).
 -   The [USB Selective Suspend](https://go.microsoft.com/fwlink/p/?linkid=230964) mechanism. The mechanism is described in the blog post, [Demystifying USB Selective Suspend](https://go.microsoft.com/fwlink/p/?linkid=230962).
 
 ## In this section

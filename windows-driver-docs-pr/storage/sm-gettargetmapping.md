@@ -94,9 +94,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetTargetMapping\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566256)
+[**SM\_GetTargetMapping\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_gettargetmapping_in)
 
-[**SM\_GetTargetMapping\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566258)
+[**SM\_GetTargetMapping\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_gettargetmapping_out)
 
  
 

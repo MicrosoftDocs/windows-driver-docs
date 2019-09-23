@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Bug Check Bug Check 0x1CC: EXRESOURCE\_TIMEOUT\_LIVEDUMP
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 The EXRESOURCE_TIMEOUT_LIVEDUMP bug check has a value of 0x000001CC.

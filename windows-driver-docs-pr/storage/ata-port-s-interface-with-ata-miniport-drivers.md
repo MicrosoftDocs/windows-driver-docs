@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_ata_ports_interface_with_ata_minport_drivers_kg"></span><span id="DDK_ATA_PORTS_INTERFACE_WITH_ATA_MINPORT_DRIVERS_KG"></span>
 
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 
 In the IDE architecture for Windows Vista and later versions of Windows, there are four system-supplied IDE drivers:

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_seventh_picture_decoding_configuration_gg"></span><span id="DDK_SEVENTH_PICTURE_DECODING_CONFIGURATION_GG"></span>
 
 
-The seventh configuration in this set is defined only for the [MPEG2\_C](mpeg2-c.md) and [MPEG2\_D](mpeg2-d.md) restricted profiles indicated in the [**DXVA\_ConnectMode**](https://msdn.microsoft.com/library/windows/hardware/ff563138) structure. No other restricted profiles include this configuration in their minimal interoperability set.
+The seventh configuration in this set is defined only for the [MPEG2\_C](mpeg2-c.md) and [MPEG2\_D](mpeg2-d.md) restricted profiles indicated in the [**DXVA\_ConnectMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_connectmode) structure. No other restricted profiles include this configuration in their minimal interoperability set.
 
 This configuration (which is not a preferred configuration) is defined the same way as the [first picture decoding configuration](first-picture-decoding-configuration.md) with the following exceptions.
 

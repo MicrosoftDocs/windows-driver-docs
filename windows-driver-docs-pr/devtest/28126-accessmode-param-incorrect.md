@@ -16,7 +16,7 @@ f1_keywords:
 
 warning C28126: The AccessMode parameter to ObReferenceObject\* should be IRP-&gt;RequestorMode
 
-In a call to [**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679) or [**ObReferenceObjectByPointer**](https://msdn.microsoft.com/library/windows/hardware/ff558686), the driver is passing **UserMode** or **KernelMode** for the *AccessMode* parameter, instead of using **Irp-&gt;RequestorMode**.
+In a call to [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbyhandle) or [**ObReferenceObjectByPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbypointer), the driver is passing **UserMode** or **KernelMode** for the *AccessMode* parameter, instead of using **Irp-&gt;RequestorMode**.
 
 The driver should use **Irp-&gt;RequestorMode**, rather than specifying **UserMode** or **KernelMode**. This allows the senders of kernel-mode IRP to supply kernel-mode handles safely.
 

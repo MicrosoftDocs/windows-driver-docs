@@ -25,7 +25,7 @@ This documentation covers the initial release of the MB driver model, so both th
 
 When the driver model moves to the next version, its version number is increased by 1. Any new OIDs added to the driver model will start at revision 1; any existing OIDs whose data structures have changed will increase their corresponding revision by 1, and any existing OIDs that do not change will keep their respective revision numbers.
 
-The driver model version is conveyed by [OID\_WWAN\_DRIVER\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569825). The MB Service sends an OID\_WWAN\_DRIVER\_CAPS query request to the miniport driver during [MB Miniport Driver Initialization](mb-miniport-driver-initialization.md). Individual OID revisions are described by the **Revision** member of the [**NDIS\_OBJECT\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff566588) structure that is included as part of the data structure for each individual OID.
+The driver model version is conveyed by [OID\_WWAN\_DRIVER\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-driver-caps). The MB Service sends an OID\_WWAN\_DRIVER\_CAPS query request to the miniport driver during [MB Miniport Driver Initialization](mb-miniport-driver-initialization.md). Individual OID revisions are described by the **Revision** member of the [**NDIS\_OBJECT\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_object_header) structure that is included as part of the data structure for each individual OID.
 
  
 

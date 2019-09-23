@@ -59,14 +59,14 @@ TAEF runs the fixture in an 'Immersive Broker' process.
 
 **Note**  
 -   'Broker' is only supported on Windows 8 and higher operating systems.
--   The test signing policy must be enabled on the system. For more information, [The TESTSIGNING Boot Configuration Option](https://msdn.microsoft.com/library/windows/hardware/ff553484).
+-   The test signing policy must be enabled on the system. For more information, [The TESTSIGNING Boot Configuration Option](https://docs.microsoft.com/windows-hardware/drivers/install/the-testsigning-boot-configuration-option).
 -   Running tests remotely with 'RunFixtureAs=Broker' is not currently supported.
 -   When executing with 'RunFixtureAs=Broker' TAEF will use the "TE.ProcessHost.Broker.exe" process for fixture execution, not "TE.ProcessHost.exe".
 
  
 
 <span id="UIAccess"></span><span id="uiaccess"></span><span id="UIACCESS"></span>**UIAccess**  
-TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://msdn.microsoft.com/library/bb625963).
+TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://docs.microsoft.com/previous-versions/dotnet/articles/bb625963(v=msdn.10)).
 
 **Note**  
 -   UIAccess is only supported on Vista and higher operating systems.

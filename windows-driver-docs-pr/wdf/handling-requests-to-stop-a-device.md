@@ -27,11 +27,11 @@ There are two circumstances in which, before asking a device's drivers to stop a
 
 There are several ways in which a driver can handle these situations:
 
--   If your driver has called [**WdfDeviceSetSpecialFileSupport**](https://msdn.microsoft.com/library/windows/hardware/ff546903) because a device is supporting a special file, and if a special file is open on the device, the framework will not allow the device to be stopped.
+-   If your driver has called [**WdfDeviceSetSpecialFileSupport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetspecialfilesupport) because a device is supporting a special file, and if a special file is open on the device, the framework will not allow the device to be stopped.
 
--   To temporarily prevent all stoppages for a relatively short period of time, the driver can call [**WdfDeviceSetStaticStopRemove**](https://msdn.microsoft.com/library/windows/hardware/ff546915).
+-   To temporarily prevent all stoppages for a relatively short period of time, the driver can call [**WdfDeviceSetStaticStopRemove**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetstaticstopremove).
 
--   To evaluate and process each stop attempt individually, the driver can provide [*EvtDeviceQueryStop*](https://msdn.microsoft.com/library/windows/hardware/ff540885) and [*EvtDeviceQueryRemove*](https://msdn.microsoft.com/library/windows/hardware/ff540883) callback functions.
+-   To evaluate and process each stop attempt individually, the driver can provide [*EvtDeviceQueryStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_query_stop) and [*EvtDeviceQueryRemove*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_query_remove) callback functions.
 
 If the device is not supporting special files, and if stopping or removing a device is never a problem for the driver or device, the driver doesn't provide *EvtDeviceQueryStop* and *EvtDeviceQueryRemove* callback functions and never calls **WdfDeviceSetStaticStopRemove**. In this case the PnP manager always stops the device without first checking to see if the driver allows it.
 
@@ -39,7 +39,7 @@ If the device is not supporting special files, and if stopping or removing a dev
 
 Sometimes the PnP manager must redistribute the system's hardware resources. Typically, this redistribution occurs because a bus driver has reported that a new device has been plugged in, and the new device requires already-assigned resources. Devices must be stopped before resources are reassigned.
 
-If it is necessary for your driver to sometimes prevent the PnP manager from stopping a busy device, the driver can provide an [*EvtDeviceQueryStop*](https://msdn.microsoft.com/library/windows/hardware/ff540885) callback function. If your driver's *EvtDeviceQueryStop* callback function returns an error status value, the PnP manager will not stop the device.
+If it is necessary for your driver to sometimes prevent the PnP manager from stopping a busy device, the driver can provide an [*EvtDeviceQueryStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_query_stop) callback function. If your driver's *EvtDeviceQueryStop* callback function returns an error status value, the PnP manager will not stop the device.
 
 If the driver determines that it is safe to stop the device, the callback function returns STATUS\_SUCCESS. If none of the device's other drivers prevent stoppage, the PnP manager temporarily stops the device.
 
@@ -49,13 +49,13 @@ For information about the order in which the framework calls a driver's event ca
 
 A user can remove or disable some devices. For example:
 
--   If your driver has set the **Removable** member (and not the **SurpriseRemovalOK** member) of the device's [**WDF\_DEVICE\_PNP\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551257) structure, the user can run the Unplug or Eject Hardware program and then unplug or eject the device.
+-   If your driver has set the **Removable** member (and not the **SurpriseRemovalOK** member) of the device's [**WDF\_DEVICE\_PNP\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_pnp_capabilities) structure, the user can run the Unplug or Eject Hardware program and then unplug or eject the device.
 
--   If your driver has not set the **NotDisableable** member of the device's [**WDF\_DEVICE\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff551284) structure, the user can use Device Manager to disable the device.
+-   If your driver has not set the **NotDisableable** member of the device's [**WDF\_DEVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_state) structure, the user can use Device Manager to disable the device.
 
 In such cases, the PnP manager attempts to stop the device before the user removes it.
 
-If it is necessary for your driver to sometimes prevent removal of a busy device, the driver can provide an [*EvtDeviceQueryRemove*](https://msdn.microsoft.com/library/windows/hardware/ff540883) callback function. If any driver's *EvtDeviceQueryRemove* callback function returns an error status value, the PnP manager will not stop the device.
+If it is necessary for your driver to sometimes prevent removal of a busy device, the driver can provide an [*EvtDeviceQueryRemove*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_query_remove) callback function. If any driver's *EvtDeviceQueryRemove* callback function returns an error status value, the PnP manager will not stop the device.
 
 If the driver determines that it is safe for the user to remove the device, the callback function returns STATUS\_SUCCESS. If none of the device's other drivers prevent removal, the PnP manager stops the device.
 

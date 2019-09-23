@@ -40,7 +40,7 @@ A deserialized miniport driver must meet the following requirements when it inte
 
 A deserialized miniport driver must meet the following driver-internal requirements:
 
--   A deserialized miniport driver must protect its network buffer queues with [spin locks](https://msdn.microsoft.com/library/windows/hardware/ff548114). A deserialized miniport driver must also protect its shared state from simultaneous access by its own *MiniportXxx* functions.
+-   A deserialized miniport driver must protect its network buffer queues with [spin locks](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-spin-locks). A deserialized miniport driver must also protect its shared state from simultaneous access by its own *MiniportXxx* functions.
 
 -   A deserialized miniport driver's *MiniportXxx* functions can run at IRQL &lt;= DISPATCH\_LEVEL. Consequently, the driver writer cannot assume that *MiniportXxx* functions will be called in the sequence in which they process requests. One *MiniportXxx* function can preempt another *MiniportXxx* function that is running at a lower IRQL.
 

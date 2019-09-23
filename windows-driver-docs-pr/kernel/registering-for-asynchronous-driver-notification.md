@@ -28,7 +28,7 @@ NTSTATUS
     );
 ```
 
-A device driver registers for asynchronous notification by calling the [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526) function, one time for each of the device driver's callback functions, specifying a pointer to one of the following GUIDs for the *EventCategoryData* parameter:
+A device driver registers for asynchronous notification by calling the [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification) function, one time for each of the device driver's callback functions, specifying a pointer to one of the following GUIDs for the *EventCategoryData* parameter:
 
 <a href="" id="guid-device-processor"></a>GUID\_DEVICE\_PROCESSOR  
 Register to be notified when a processor is dynamically added to the hardware partition.
@@ -72,7 +72,7 @@ Status =
 
  
 
-When a device driver must stop receiving asynchronous driver notifications, such as when it is being unloaded, it must unregister each callback function by calling the [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398) function. The following code example shows how to unregister the callback functions:
+When a device driver must stop receiving asynchronous driver notifications, such as when it is being unloaded, it must unregister each callback function by calling the [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iounregisterplugplaynotification) function. The following code example shows how to unregister the callback functions:
 
 ```cpp
 // Unregister for asynchronous notifications

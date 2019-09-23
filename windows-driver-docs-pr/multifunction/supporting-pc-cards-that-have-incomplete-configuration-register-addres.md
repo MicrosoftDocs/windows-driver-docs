@@ -35,11 +35,11 @@ The vendor of such a device must provide the following:
 
     The INF files can be the same files that are used when the functions are packaged as individual devices. The INF files do not need any special multifunction semantics.
 
-The custom INF for such a multifunction device must contain at least one [**INF DDInstall.LogConfigOverride section**](https://msdn.microsoft.com/library/windows/hardware/ff547339). The override section must contain an **MfCardConfig** entry for each function, identifying the location of each set of configuration registers.
+The custom INF for such a multifunction device must contain at least one [**INF DDInstall.LogConfigOverride section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-logconfigoverride-section). The override section must contain an **MfCardConfig** entry for each function, identifying the location of each set of configuration registers.
 
 The INF must restate all the resource requirements specified by the device because if override configurations are present in the INF, the PnP manager does not use any device resource requirements from the device.
 
-Specify the **MfCardConfig** entries using the syntax described in [**INF LogConfig Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547448).
+Specify the **MfCardConfig** entries using the syntax described in [**INF LogConfig Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive).
 
 For example, consider the following excerpt from a custom INF for a multifunction PC Card device that contains a modem and a network adapter:
 

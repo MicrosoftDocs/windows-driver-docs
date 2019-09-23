@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_creating_instances_of_directx_va_device_objects_gg"></span><span id="DDK_CREATING_INSTANCES_OF_DIRECTX_VA_DEVICE_OBJECTS_GG"></span>
 
 
-Use the following example code to create instances of DirectX VA device objects. This code is an implementation of the [*DdMoCompCreate*](https://msdn.microsoft.com/library/windows/hardware/ff549656) callback function. The **CreateMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
+Use the following example code to create instances of DirectX VA device objects. This code is an implementation of the [*DdMoCompCreate*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_create) callback function. The **CreateMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function.
 
 ```cpp
 // Determine that the passed in GUID is valid. 

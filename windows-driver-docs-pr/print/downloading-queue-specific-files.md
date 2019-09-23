@@ -29,7 +29,7 @@ If a user decides to create a printer connection from his or her client system t
 4.  The client's Win32spl.dll calls EnumPrinterKey and EnumPrinterDataEx on the server to copy the printer's registry entries.
 
 5.  As the server's spooler enumerates registry values during processing of EnumPrinterDataEx, it performs the following operations each time it encounters a subkey of the printer's **CopyFiles** key, such as **CopyFiles\\ICM**:
-    -   Loads the [Point and Print DLL](point-and-print-dlls.md), if specified, and calls its [**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896) function, which can modify source and/or destination paths.
+    -   Loads the [Point and Print DLL](point-and-print-dlls.md), if specified, and calls its [**GenerateCopyFilePaths**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-generatecopyfilepaths) function, which can modify source and/or destination paths.
     -   Creates **SourceDir** and **TargetDir** keys, based on source and destination paths returned by **GenerateCopyFilePaths**, and returns them to the client spooler as EnumPrinterDataEx data. (These keys do not really exist on the server.)
 
 6.  The client's Win32spl.dll caches printer keys received in response to EnumPrinterData and EnumPrinterDataEx calls.
@@ -38,13 +38,13 @@ If a user decides to create a printer connection from his or her client system t
     -   Loads the local Point and Print DLL, if one is provided, and calls its **GenerateCopyFilePaths** function, which can modify source and/or destination paths. (Inputs are the **SourceDir** and **TargetDir** keys received from the server.)
     -   Downloads all files associated with the **Files** key from the server.
     -   Logs an event, indicating Point and Print files were downloaded.
-    -   Calls the Point and Print DLL's [**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681) function, if a DLL is provided, specifying a COPYFILE\_EVENT\_FILES\_CHANGED event.
+    -   Calls the Point and Print DLL's [**SpoolerCopyFileEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-spoolercopyfileevent) function, if a DLL is provided, specifying a COPYFILE\_EVENT\_FILES\_CHANGED event.
 
-8.  The client spooler calls the driver's [**DrvPrinterEvent**](https://msdn.microsoft.com/library/windows/hardware/ff548564) function, specifying a PRINTER\_EVENT\_CACHE\_REFRESH event.
+8.  The client spooler calls the driver's [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent) function, specifying a PRINTER\_EVENT\_CACHE\_REFRESH event.
 
-9.  The client spooler calls the driver's [**DrvPrinterEvent**](https://msdn.microsoft.com/library/windows/hardware/ff548564) function again, specifying a PRINTER\_EVENT\_ADD\_CONNECTION event.
+9.  The client spooler calls the driver's [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent) function again, specifying a PRINTER\_EVENT\_ADD\_CONNECTION event.
 
-10. If a Point and Print DLL is provided, the client spooler calls its [**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681) function, specifying a COPYFILE\_EVENT\_ADD\_PRINTER\_CONNECTION event.
+10. If a Point and Print DLL is provided, the client spooler calls its [**SpoolerCopyFileEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-spoolercopyfileevent) function, specifying a COPYFILE\_EVENT\_ADD\_PRINTER\_CONNECTION event.
 
 ### Connection Example
 
@@ -56,7 +56,7 @@ To connect to the print queue named HpColor on NTPRINT, a user application on My
 AddPrinterConnection("\\NTPRINT\HpColor")
 ```
 
-On the server, the spooler loads Mscms.dll and calls [**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896) as follows:
+On the server, the spooler loads Mscms.dll and calls [**GenerateCopyFilePaths**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-generatecopyfilepaths) as follows:
 
 ```cpp
 GenerateCopyFilePaths(
@@ -84,7 +84,7 @@ On the client, the value for **TargetDir** expands to C:\\Winnt\\System32\\Spool
 
 The spooler on MyClient performs the following operations:
 
--   Downloads Mscms.dll and calls [**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896) as follows:
+-   Downloads Mscms.dll and calls [**GenerateCopyFilePaths**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-generatecopyfilepaths) as follows:
 
     ```cpp
     GenerateCopyFilePaths(
@@ -105,13 +105,13 @@ The spooler on MyClient performs the following operations:
 
 -   Logs an event, indicating Point and Print files were downloaded.
 
--   Calls the [**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681) function in Mscms.dll, specifying a COPYFILE\_EVENT\_FILES\_CHANGED event.
+-   Calls the [**SpoolerCopyFileEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-spoolercopyfileevent) function in Mscms.dll, specifying a COPYFILE\_EVENT\_FILES\_CHANGED event.
 
--   Calls the printer driver's [**DrvPrinterEvent**](https://msdn.microsoft.com/library/windows/hardware/ff548564) function, specifying a PRINTER\_EVENT\_CACHE\_REFRESH event.
+-   Calls the printer driver's [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent) function, specifying a PRINTER\_EVENT\_CACHE\_REFRESH event.
 
--   Calls the printer driver's [**DrvPrinterEvent**](https://msdn.microsoft.com/library/windows/hardware/ff548564) function again, specifying a PRINTER\_EVENT\_ADD\_CONNECTION event.
+-   Calls the printer driver's [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent) function again, specifying a PRINTER\_EVENT\_ADD\_CONNECTION event.
 
--   Calls the [**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681) function in Mscms.dll, specifying a COPYFILE\_EVENT\_ADD\_PRINTER\_CONNECTION event.
+-   Calls the [**SpoolerCopyFileEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-spoolercopyfileevent) function in Mscms.dll, specifying a COPYFILE\_EVENT\_ADD\_PRINTER\_CONNECTION event.
 
  
 

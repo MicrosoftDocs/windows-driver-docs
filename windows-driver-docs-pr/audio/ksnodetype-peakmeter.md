@@ -29,7 +29,7 @@ Microsoft recommends making a peakmeter node the final node through which a stre
 
 An audio adapter should name a peakmeter node KSAUDFNAME\_PEAKMETER.
 
-A peakmeter node should provide a property handler for the property flags (see [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262)) that appear in the following table.
+A peakmeter node should provide a property handler for the property flags (see [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))) that appear in the following table.
 
 <table>
 <colgroup>

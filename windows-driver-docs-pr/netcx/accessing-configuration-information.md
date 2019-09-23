@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 The NetAdapterCx class extension supports a set of functions that provide access to client driver registry parameters.
 
-Typically, the client driver reads configuration info from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
+Typically, the client driver reads configuration info from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
 For a NetAdapter object, start by calling [**NetAdapterOpenConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapteropenconfiguration) to get a handle to a configuration object.  You can then query it:
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The SYSTEM\_PTE\_MISUSE bug check has a value of 0x000000DA. This indicates that a page table entry (PTE) routine has been used in an improper way.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SYSTEM\_PTE\_MISUSE Parameters
@@ -191,8 +191,8 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The address of the invalid mapping</p></td>
 <td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>The number of mappings in the mapping address space</p></td>
-<td align="left"><p>The mapping address space that the caller is trying to free is still reserved. <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff556392" data-raw-source="[MmUnmapReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff556392)">MmUnmapReservedMapping</a></strong></p>
-<p>must be called before <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554512" data-raw-source="[MmFreeMappingAddress](https://msdn.microsoft.com/library/windows/hardware/ff554512)">MmFreeMappingAddress</a></strong>.</p></td>
+<td align="left"><p>The mapping address space that the caller is trying to free is still reserved. <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong></p>
+<p>must be called before <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmfreemappingaddress" data-raw-source="[MmFreeMappingAddress](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmfreemappingaddress)">MmFreeMappingAddress</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x104</p></td>
@@ -213,7 +213,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The first mapping address</p></td>
 <td align="left"><p>The address of the non-empty mapping</p></td>
 <td align="left"><p>The last mapping address</p></td>
-<td align="left"><p>The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff556392" data-raw-source="[MmUnmapReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff556392)">MmUnmapReservedMapping</a></strong> prior to calling <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554640" data-raw-source="[MmMapLockedPagesWithReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff554640)">MmMapLockedPagesWithReservedMapping</a></strong></p></td>
+<td align="left"><p>The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong> prior to calling <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmaplockedpageswithreservedmapping" data-raw-source="[MmMapLockedPagesWithReservedMapping](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmaplockedpageswithreservedmapping)">MmMapLockedPagesWithReservedMapping</a></strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x108</p></td>

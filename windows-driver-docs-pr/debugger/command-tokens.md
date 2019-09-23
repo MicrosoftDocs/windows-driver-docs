@@ -29,7 +29,7 @@ These tokens include:
 
 [**.block**](-block.md)
 
-[**.break**](https://msdn.microsoft.com/library/windows/hardware/ff556242)
+[**.break**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-break)
 
 [**.catch**](-catch.md)
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Freeing Resources for a Virtual Function
 
 
-The overlying driver requests resource allocation for a PCI Express (PCIe) Virtual Function (VF) through object identifier (OID) method requests of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451814). After the VF resources are successfully allocated, the overlying driver frees the resources through an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](https://msdn.microsoft.com/library/windows/hardware/hh451822).
+The overlying driver requests resource allocation for a PCI Express (PCIe) Virtual Function (VF) through object identifier (OID) method requests of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-allocate-vf). After the VF resources are successfully allocated, the overlying driver frees the resources through an OID set request of [OID\_NIC\_SWITCH\_FREE\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-free-vf).
 
 This section includes the following topics:
 

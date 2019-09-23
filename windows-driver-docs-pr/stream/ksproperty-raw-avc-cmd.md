@@ -43,7 +43,7 @@ The KSPROPERTY\_RAW\_AVC\_CMD property issues a raw AV/C command. Raw AV/C comma
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Device</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff565167" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff565167)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
 <td><p>Embedded <strong>RawAVC</strong> structure</p></td>
 </tr>
 </tbody>
@@ -53,11 +53,11 @@ The property value (operation data) is the embedded **RawAVC** member of the KSP
 
 ## Remarks
 
-This property can only be used with devices that can support AV/C commands and where [**KSPROPERTY\_EXTDEVICE\_PORT**](ksproperty-extdevice-port.md) returns DEV\_PORT\_1394 in the **DevPort** member of the [**KSPROPERTY\_EXTDEVICE\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565156) structure.
+This property can only be used with devices that can support AV/C commands and where [**KSPROPERTY\_EXTDEVICE\_PORT**](ksproperty-extdevice-port.md) returns DEV\_PORT\_1394 in the **DevPort** member of the [**KSPROPERTY\_EXTDEVICE\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extdevice_s) structure.
 
 Driver developers for IEEE 1394 devices may optionally support this property in their drivers in order to extend the device transport controls that are not supported by standard interfaces (such as the user-mode **IAMExtTransport** COM interface methods **put\_Mode** and **get\_Mode**).
 
-It is not necessary to implement support for this property on USB devices because the [USB Video Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff568649) provides this functionality. Normally applications can use the **IKsControl** COM interface to control an IEEE 1394 device. However, the **IKsControl** COM interface does not provide a standard method to support tape seek that is portable across USB and IEEE 1394 buses. Therefore, to perform a tape seek a caller must use the **DeviceIoControl** function instead of the **IKsControl** COM interface. Callers perform a tape seek on 1394 AV/C devices by using a raw AV/C command with an absolute track number (ATN) or time code to seek to. This is a primary reason why this property does not apply to USB devices.
+It is not necessary to implement support for this property on USB devices because the [USB Video Class Driver](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver) provides this functionality. Normally applications can use the **IKsControl** COM interface to control an IEEE 1394 device. However, the **IKsControl** COM interface does not provide a standard method to support tape seek that is portable across USB and IEEE 1394 buses. Therefore, to perform a tape seek a caller must use the **DeviceIoControl** function instead of the **IKsControl** COM interface. Callers perform a tape seek on 1394 AV/C devices by using a raw AV/C command with an absolute track number (ATN) or time code to seek to. This is a primary reason why this property does not apply to USB devices.
 
 See the [Digital Video Application Compatibility](https://go.microsoft.com/fwlink/?linkid=2085071) white paper for more information about the differences between tape location searches on USB and 1394 devices.
 
@@ -80,4 +80,4 @@ See the [Digital Video Application Compatibility](https://go.microsoft.com/fwlin
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
-[**KSPROPERTY\_EXTXPORT\_S**](https://msdn.microsoft.com/library/windows/hardware/ff565167)
+[**KSPROPERTY\_EXTXPORT\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_extxport_s)

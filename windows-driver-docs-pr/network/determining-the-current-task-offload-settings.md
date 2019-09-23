@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Determining the Current Task Offload Settings
 
 
-A protocol driver can determine the current task offload encapsulation settings of an underlying miniport adapter by issuing an [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762) OID query request.
+A protocol driver can determine the current task offload encapsulation settings of an underlying miniport adapter by issuing an [OID\_OFFLOAD\_ENCAPSULATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-offload-encapsulation) OID query request.
 
 
 

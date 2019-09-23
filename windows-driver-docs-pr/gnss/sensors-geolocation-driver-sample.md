@@ -24,9 +24,9 @@ The geolocation sample driver for Windows 8.1 demonstrates a sensor driver for a
 This sample serves three purposes: First, it demonstrates the minimal functionality required by a UMDF sensor driver. Second, it provides a skeleton on which you can build a working driver. Third, it includes support for the Radio Management API that provides notifications of radio-state changes for devices like a GPS.
 
 ## Related topics
-[The Sensor Diagnostic Tool](https://msdn.microsoft.com/library/windows/hardware/hh780319)  
+[The Sensor Diagnostic Tool](https://docs.microsoft.com/windows-hardware/drivers/sensors/the-sensor-diagnostic-tool)  
 [Writing a Location Sensor Driver](writing-a-location-sensor-driver.md)  
-[Writing a Sensor Device Driver](https://msdn.microsoft.com/library/windows/hardware/ff545927)  
+[Writing a Sensor Device Driver](https://docs.microsoft.com/windows-hardware/drivers/sensors/writing-a-sensor-device-driver)  
 
 
 

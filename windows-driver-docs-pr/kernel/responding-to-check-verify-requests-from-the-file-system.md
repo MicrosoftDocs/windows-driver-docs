@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-At its discretion, the file system can send an IRP to the device driver's Dispatch entry point for [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) requests with **Parameters.DeviceIoControl.IoControlCode** in the I/O stack location set to the following:
+At its discretion, the file system can send an IRP to the device driver's Dispatch entry point for [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests with **Parameters.DeviceIoControl.IoControlCode** in the I/O stack location set to the following:
 
 <a href="" id="ioctl-xxx-check-verify"></a>IOCTL\_*XXX*\_CHECK\_VERIFY  
 where *XXX* is the type of device, such as DISK, TAPE, or CDROM.
@@ -51,7 +51,7 @@ If the underlying device driver determines that the media has changed, it takes 
     -   **Status** set to STATUS\_VERIFY\_REQUIRED
     -   **Information** set to zero
 
-3.  Call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with the input IRP.
+3.  Call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) with the input IRP.
 
 If the volume is not mounted, the driver must not set the DO\_VERIFY\_VOLUME bit. The driver should set **IoStatus.Status** to STATUS\_IO\_DEVICE\_ERROR, set **IoStatus.Information** to zero, and call **IoCompleteRequest** with the IRP.
 

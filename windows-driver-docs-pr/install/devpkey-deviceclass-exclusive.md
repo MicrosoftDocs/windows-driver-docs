@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_Exclusive
 
 
-The DEVPKEY_DeviceClass_Exclusive device property represents a Boolean flag that indicates whether devices that are members of a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) are exclusive devices.
+The DEVPKEY_DeviceClass_Exclusive device property represents a Boolean flag that indicates whether devices that are members of a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) are exclusive devices.
 
 <table>
 <colgroup>
@@ -54,11 +54,11 @@ The DEVPKEY_DeviceClass_Exclusive device property represents a Boolean flag that
 Remarks
 -------
 
-You can set the value of DEVPKEY_DeviceClass_Exclusive when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335) and the information about the registry value **Exclusive** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+You can set the value of DEVPKEY_DeviceClass_Exclusive when an installation application installs a device setup class. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) and the information about the registry value **Exclusive** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_Exclusive.
+You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Exclusive.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Exclusive property key. On these earlier versions of Windows, you can use the SPCRP_EXCLUSIVE identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550644).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Exclusive property key. On these earlier versions of Windows, you can use the SPCRP_EXCLUSIVE identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/retrieving-spcrp-xxx-properties).
 
 Requirements
 ------------
@@ -83,13 +83,13 @@ Requirements
 ## See also
 
 
-[**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320)
+[**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)
 
-[**INF ClassInstall32 Section**](https://msdn.microsoft.com/library/windows/hardware/ff546335)
+[**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section)
 
-[**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086)
+[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090)
+[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
  
 

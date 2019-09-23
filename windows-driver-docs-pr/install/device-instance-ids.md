@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Device Instance ID
 
 
-A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system. The Plug and Play (PnP) manager assigns a device instance ID to each device node (*devnode*) in a system's [device tree](https://msdn.microsoft.com/library/windows/hardware/ff543194).
+A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system. The Plug and Play (PnP) manager assigns a device instance ID to each device node (*devnode*) in a system's [device tree](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-tree).
 
 
 

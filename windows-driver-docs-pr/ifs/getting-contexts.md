@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Once a minifilter driver has set a context for an object, it can get the context by calling **FltGet***Xxx***Context**, where *Xxx* is the context type.
 
-In the following code example, taken from the SwapBuffers sample minifilter driver, the minifilter driver calls [**FltGetVolumeContext**](https://msdn.microsoft.com/library/windows/hardware/ff543189) to get a volume context:
+In the following code example, taken from the SwapBuffers sample minifilter driver, the minifilter driver calls [**FltGetVolumeContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetvolumecontext) to get a volume context:
 
 ```cpp
 status = FltGetVolumeContext(
@@ -29,7 +29,7 @@ if (volCtx != NULL) {
 }
 ```
 
-If the call to [**FltGetVolumeContext**](https://msdn.microsoft.com/library/windows/hardware/ff543189) is successful, the *Context* parameter receives the address of the caller's volume context. **FltGetVolumeContext** increments the reference count on the *Context* pointer. Thus, when this pointer is no longer needed, the minifilter driver must release it by calling [**FltReleaseContext**](https://msdn.microsoft.com/library/windows/hardware/ff544314).
+If the call to [**FltGetVolumeContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetvolumecontext) is successful, the *Context* parameter receives the address of the caller's volume context. **FltGetVolumeContext** increments the reference count on the *Context* pointer. Thus, when this pointer is no longer needed, the minifilter driver must release it by calling [**FltReleaseContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreleasecontext).
 
  
 

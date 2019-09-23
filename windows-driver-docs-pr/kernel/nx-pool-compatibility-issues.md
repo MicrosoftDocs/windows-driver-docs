@@ -16,7 +16,7 @@ Windows 8 is the first version of Windows to support the NX nonpaged pool. Howe
 ## Running Existing Driver Binaries on Windows 8
 
 
-A driver binary that is built for Windows 7 (or possibly for an earlier version of Windows), and that uses the **NonPagedPool** pool type, is not prevented from running on Windows 8. To enable backward compatibility, the **NonPagedPoolExecute** constant is defined to have the same value as the **NonPagedPool** constant in the [**POOL\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559707) enumeration. Thus, in any version of Windows in which this driver runs, the memory that the driver allocates from nonpaged pool is always executable.
+A driver binary that is built for Windows 7 (or possibly for an earlier version of Windows), and that uses the **NonPagedPool** pool type, is not prevented from running on Windows 8. To enable backward compatibility, the **NonPagedPoolExecute** constant is defined to have the same value as the **NonPagedPool** constant in the [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_pool_type) enumeration. Thus, in any version of Windows in which this driver runs, the memory that the driver allocates from nonpaged pool is always executable.
 
 Windows 8 is the first version of Windows to support the ARM architecture. Thus, there are no driver binaries for ARM that are built for earlier versions of Windows and that require backward compatibility. Instead, all drivers written for Windows on ARM are expected to specify **NonPagedPoolNx** instead of **NonPagedPoolExecute** in their nonpaged pool allocations unless they explicitly require executable memory.
 
@@ -27,7 +27,7 @@ If a driver is ported to ARM from x86, x64, or IA64, the [POOL\_NX\_OPTIN\_AUTO]
 
 The **NonPagedPoolNx** pool type is supported starting with Windows 8. Do not use this pool type in drivers for earlier versions of Windows. The pool allocators in these earlier versions of Windows do not operate correctly when the driver requests an allocation with a **NonPagedPoolNx** pool type.
 
-In versions of Windows before Windows 8, the **NonPagedPoolExecute** pool type can be freely used as a substitute for the **NonPagedPool** pool type. The [**POOL\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559707) enumeration defines **NonPagedPool** and **NonPagedPoolExecute** to have the same value.
+In versions of Windows before Windows 8, the **NonPagedPoolExecute** pool type can be freely used as a substitute for the **NonPagedPool** pool type. The [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_pool_type) enumeration defines **NonPagedPool** and **NonPagedPoolExecute** to have the same value.
 
 ## NX Pool Type Porting Guidelines
 

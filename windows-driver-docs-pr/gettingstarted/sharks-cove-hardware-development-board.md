@@ -228,7 +228,7 @@ If you are writing a driver for a driver for a device that connects to a simple 
 
 Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](https://go.microsoft.com/fwlink/p?linkid=401463) accelerometer.
 
-**Note**  See the [SpbAccelerometer driver cookbook](https://msdn.microsoft.com/library/windows/hardware/dn760712) for a step-by-step guide to the [SpbAccelerometer sample driver](https://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
+**Note**  See the [SpbAccelerometer driver cookbook](https://docs.microsoft.com/windows-hardware/drivers/sensors/spbaccelerometer-driver-cookbook) for a step-by-step guide to the [SpbAccelerometer sample driver](https://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
 
 
 
@@ -455,8 +455,8 @@ As an alternative to using Visual Studio for debugging, you can use WinDbg.
 
 Regardless of whether you use Visual Studio or WinDbg, these hands-on guides are helpful for learning debugger commands:
 
--   [Getting Started with WinDbg (User-Mode)](https://msdn.microsoft.com/library/windows/hardware/dn745911)
--   [Getting Started with WinDbg (Kernel-Mode)](https://msdn.microsoft.com/library/windows/hardware/dn745912)
+-   [Getting Started with WinDbg (User-Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg)
+-   [Getting Started with WinDbg (Kernel-Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-)
 
 ## <span id="Sample_driver_code"></span><span id="sample_driver_code"></span><span id="SAMPLE_DRIVER_CODE"></span>Sample driver code
 

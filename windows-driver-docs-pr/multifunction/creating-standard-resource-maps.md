@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-If a multifunction device's INF contains an [**INF DDInstall.LogConfigOverride section**](https://msdn.microsoft.com/library/windows/hardware/ff547339), the parent resources are implicitly numbered 00 through *nn* as they appear in the INF's *log-config-section* sections (see [**INF LogConfig Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547448)). For example, consider a multifunction PC Card with the following INF *DDInstall*.**LogConfigOverride** section:
+If a multifunction device's INF contains an [**INF DDInstall.LogConfigOverride section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-logconfigoverride-section), the parent resources are implicitly numbered 00 through *nn* as they appear in the INF's *log-config-section* sections (see [**INF LogConfig Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive)). For example, consider a multifunction PC Card with the following INF *DDInstall*.**LogConfigOverride** section:
 
 ```cpp
 [DDInstall.LogConfigOverride]

@@ -179,7 +179,7 @@ You can use the following binary operators. The operators in each cell take prec
 <p>Not equal to</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong>and</strong> (or &amp;)</p></td>
+<td align="left"><p><strong>and</strong> (or &)</p></td>
 <td align="left"><p>Bitwise AND</p></td>
 </tr>
 <tr class="even">

@@ -21,7 +21,7 @@ The requirements for color buffers and depth buffers are as follows:
 
 ### <span id="color_buffers"></span><span id="COLOR_BUFFERS"></span>Color Buffers
 
-If the hardware does not support a render target that is also to be used as a texture (that is, the device cannot "render to a texture"), the device must fail calls to the **IDirect3DDevice7::SetRenderTarget** and **IDirect3D7::CreateDevice** methods. These methods are described in the Direct3D SDK documentation. The fact that a render target is to be used as a texture is signified by the presence of the DDSCAPS\_TEXTURE flag in the surface description (see the **dwCaps** member of the [**DDSCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff550286) structure).
+If the hardware does not support a render target that is also to be used as a texture (that is, the device cannot "render to a texture"), the device must fail calls to the **IDirect3DDevice7::SetRenderTarget** and **IDirect3D7::CreateDevice** methods. These methods are described in the Direct3D SDK documentation. The fact that a render target is to be used as a texture is signified by the presence of the DDSCAPS\_TEXTURE flag in the surface description (see the **dwCaps** member of the [**DDSCAPS**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550286(v=vs.85)) structure).
 
 ### <span id="depth_buffers"></span><span id="DEPTH_BUFFERS"></span>Depth Buffers
 

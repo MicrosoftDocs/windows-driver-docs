@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # PnPUtil
 
 
-PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform the following actions on [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840):
+PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform the following actions on [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages):
 
--   Adds a driver package to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868).
+-   Adds a driver package to the [driver store](https://docs.microsoft.com/windows-hardware/drivers/install/driver-store).
 
 -   Installs a driver package on the computer.
 
@@ -36,7 +36,7 @@ PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform 
 <li>Type <strong>pnputil /?</strong> to view command options. See <a href="pnputil-command-syntax.md" data-raw-source="[&lt;strong&gt;PnPUtil Command Syntax&lt;/strong&gt;](pnputil-command-syntax.md)"><strong>PnPUtil Command Syntax</strong></a> for more information.</li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544838" data-raw-source="[Driver Install Frameworks (DIFx)](https://msdn.microsoft.com/library/windows/hardware/ff544838)">Driver Install Frameworks (DIFx)</a> tools to create and customize the installation of driver packages.
+<strong>Note</strong>  PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines" data-raw-source="[Driver Install Frameworks (DIFx)](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines)">Driver Install Frameworks (DIFx)</a> tools to create and customize the installation of driver packages.
 </div>
 <div>
  

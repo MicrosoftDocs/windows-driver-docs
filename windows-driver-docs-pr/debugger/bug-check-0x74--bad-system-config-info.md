@@ -15,11 +15,10 @@ ms.localizationpriority: medium
 
 # Bug Check 0x74: BAD\_SYSTEM\_CONFIG\_INFO
 
-
 The BAD\_SYSTEM\_CONFIG\_INFO bug check has a value of 0x00000074. This bug check indicates that there is an error in the registry.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## BAD\_SYSTEM\_CONFIG\_INFO Parameters
@@ -74,7 +73,7 @@ Check in the Windows system eventlog to see if there are any registry related er
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-```
+```dbgcmd
 BAD_SYSTEM_CONFIG_INFO (74)
 Can indicate that the SYSTEM hive loaded by the osloader/NTLDR
 was corrupt.  This is unlikely, since the osloader will check
@@ -97,14 +96,14 @@ Review all of the information returned by the !analyze to learn about the failur
 
 Use the [!error](-error.md) extension to display information about the NTSTATUS value in parameter 4.
 
-```
+```dbgcmd
 2: kd> !ERROR ffffffffc000014c
 Error code: (NTSTATUS) 0xc000014c (3221225804) - {The Registry Is Corrupt}  The structure of one of the files that contains Registry data is corrupt, or the image of the file in memory is corrupt, or the file could not be recovered because the alternate copy or log was absent or corrupt.
 ```
 
 Use the [!reg](-reg.md) extenstion to display information about the registry, for example the hives present in the registry.
 
-```
+```dbgcmd
 !reg hivelist
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -120,7 +119,7 @@ Use the [!reg](-reg.md) extenstion to display information about the registry, fo
 
 Use the !reg openkeys command to see which registry keys were open.
 
-```
+```dbgcmd
 2: kd> !reg openkeys
 
 Hive: \REGISTRY\MACHINE\SYSTEM
@@ -135,30 +134,16 @@ Index 5: 	 e9dd6ce5 kcb=ffffd805e4180e48 cell=00812970 f=00200000 \REGISTRY\MACH
 
 ```
 
-
-**Time Travel Trace**
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
-
-
 Remarks
 ----------
 
 Try booting into safe mode and then restart the OS normally. If the restart does not fix the problem, the registry damage is too extensive. Try the following steps.
 
--   If you have a system restore point, try restoring to an earlier restore point.
--   Reset your PC.
--   Use installation media to restore or reset your PC.
--   Use installation media to reinstall Windows.
+- If you have a system restore point, try restoring to an earlier restore point.
+- Reset your PC.
+- Use installation media to restore or reset your PC.
+- Use installation media to reinstall Windows.
 
-For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options#).
+For more information, see [Recovery options in Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options#).
 
-This support article discusses this bug check code: [Error 0x74: Bad_system_config_info](https://support.microsoft.com/en-us/help/4028653/windows-error-0x74-badsystemconfiginfo)
-
- 
-
- 
-
-
-
-
+This support article discusses this bug check code: [Error 0x74: Bad_system_config_info](https://support.microsoft.com/help/4028653/windows-error-0x74-badsystemconfiginfo)

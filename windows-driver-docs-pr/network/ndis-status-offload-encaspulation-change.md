@@ -16,9 +16,9 @@ Miniport drivers use the NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE status ind
 Remarks
 -------
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](https://msdn.microsoft.com/library/windows/hardware/ff566702) structure. NDIS\_OFFLOAD\_ENCAPSULATION specifies the encapsulation settings.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_offload_encapsulation) structure. NDIS\_OFFLOAD\_ENCAPSULATION specifies the encapsulation settings.
 
-For more information about encapsulation settings, see [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762).
+For more information about encapsulation settings, see [OID\_OFFLOAD\_ENCAPSULATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-offload-encapsulation).
 
 Requirements
 ------------
@@ -43,11 +43,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_OFFLOAD\_ENCAPSULATION**](https://msdn.microsoft.com/library/windows/hardware/ff566702)
+[**NDIS\_OFFLOAD\_ENCAPSULATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_offload_encapsulation)
 
-[**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
 
-[OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762)
+[OID\_OFFLOAD\_ENCAPSULATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-offload-encapsulation)
 
  
 

@@ -48,7 +48,7 @@ The KSPROPERTY\_DVDCOPY\_DISC\_KEY property retrieves the disc key information f
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567637" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_DISCKEY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567637)"><strong>KS_DVDCOPY_DISCKEY</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey" data-raw-source="[&lt;strong&gt;KS_DVDCOPY_DISCKEY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey)"><strong>KS_DVDCOPY_DISCKEY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -60,7 +60,7 @@ The property value (operation data) is a KS\_DVDCOPY\_DISCKEY structure that des
 Remarks
 -------
 
-For more information about the disc key, see [DVD Copyright Protection](https://msdn.microsoft.com/library/windows/hardware/ff558736).
+For more information about the disc key, see [DVD Copyright Protection](https://docs.microsoft.com/windows-hardware/drivers/stream/dvd-copyright-protection).
 
 Requirements
 ------------
@@ -81,7 +81,7 @@ Requirements
 ## See also
 
 
-[**KS\_DVDCOPY\_DISCKEY**](https://msdn.microsoft.com/library/windows/hardware/ff567637)
+[**KS\_DVDCOPY\_DISCKEY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey)
 
  
 

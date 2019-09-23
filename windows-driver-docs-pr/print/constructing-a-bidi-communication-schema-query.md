@@ -22,7 +22,7 @@ There are three points to remember when you construct a bidi communications sche
 
 ### <a href="" id="example-request-and-response"></a> Example Request and Response
 
-The following are examples of the XML query and response format that is required by the [bidi communication interfaces](https://msdn.microsoft.com/library/windows/hardware/ff545163), and specifically by the IBidiSpl2 COM interface. The first example is a request that contains two schemas. The first schema determines whether a duplex unit is installed. The second schema determines the values associated with the hard disk.
+The following are examples of the XML query and response format that is required by the [bidi communication interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index), and specifically by the IBidiSpl2 COM interface. The first example is a request that contains two schemas. The first schema determines whether a duplex unit is installed. The second schema determines the values associated with the hard disk.
 
 ```cpp
 <bidi:Get xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">

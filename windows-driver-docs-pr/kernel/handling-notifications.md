@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Handling Notifications
 
 
-The [*RegistryCallback*](https://msdn.microsoft.com/library/windows/hardware/ff560903) routine receives a pointer to a **REG\_*XXX*\_KEY\_INFORMATION** structure that contains information about the registry operation that is occurring.
+The [*RegistryCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-ex_callback_function) routine receives a pointer to a **REG\_*XXX*\_KEY\_INFORMATION** structure that contains information about the registry operation that is occurring.
 
 The *RegistryCallback* routine can monitor, block, or modify a registry operation.
 
@@ -38,7 +38,7 @@ When a registry filtering driver's *RegistryCallback* routine receives a post-no
 
     Modifying output parameters is supported in Windows Vista and later.
 
--   Modify the registry operation's return value by providing a status value for the **ReturnStatus** member of the [**REG\_POST\_OPERATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff560971) structure and then returning STATUS\_CALLBACK\_BYPASS. The configuration manager returns the specified return value to the calling thread.
+-   Modify the registry operation's return value by providing a status value for the **ReturnStatus** member of the [**REG\_POST\_OPERATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_post_operation_information) structure and then returning STATUS\_CALLBACK\_BYPASS. The configuration manager returns the specified return value to the calling thread.
 
     **Note**  If the driver changes a status code from success to failure, it might have to deallocate objects that the configuration manager allocated. Alternatively, if the driver changes a status code from failure to success, it might have to provide appropriate output parameters.
 

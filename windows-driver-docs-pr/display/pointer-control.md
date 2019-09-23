@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 Every application must be able to control a pointer that moves around a windowed display in response to a pointing device, such as a mouse. The display driver, GDI, or the video miniport driver can [draw the pointer](pointer-drawing.md). Refer also to [Controlling the Pointer](controlling-the-pointer--drvsetpointershape.md) and [Moving the Pointer](moving-the-pointer--drvmovepointer.md).
 
-GDI can directly handle all pointer drawing for a display that uses a linearly addressable buffer. For a device that is not a *linear frame buffer*, GDI uses [**DrvCopyBits**](https://msdn.microsoft.com/library/windows/hardware/ff556182) for pointer drawing. However, pointer code supported by hardware and implemented in the display driver is much faster.
+GDI can directly handle all pointer drawing for a display that uses a linearly addressable buffer. For a device that is not a *linear frame buffer*, GDI uses [**DrvCopyBits**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvcopybits) for pointer drawing. However, pointer code supported by hardware and implemented in the display driver is much faster.
 
 Display drivers can sometimes choose which kinds of pointers they will draw and which kind they will allow GDI to handle. For example, a device might support monochrome pointers in hardware but fail the color pointer calls, allowing GDI to handle them instead.
 

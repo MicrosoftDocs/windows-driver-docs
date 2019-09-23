@@ -31,9 +31,9 @@ A network migration DLL must:
 
     The DLL cannot call any functions specific to Windows 2000 or later or use any features specific to Windows 2000 or later. If the DLL runs in the postupgrade (GUI mode) phase, it must also load under Windows 2000 and later operating systems.
 
--   **Export the** [**PreUpgradeInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff562439)**and**[**DoPreUpgradeProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff545634)**functions**
+-   **Export the** [**PreUpgradeInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562439(v=vs.85))**and**[**DoPreUpgradeProcessing**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545634(v=vs.85))**functions**
 
-    If the DLL runs in the GUI mode phase, it must export the [**PostUpgradeInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff562410) and [**DoPostUpgradeProcessing**](https://msdn.microsoft.com/library/windows/hardware/ff545629) functions, as well.
+    If the DLL runs in the GUI mode phase, it must export the [**PostUpgradeInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562410(v=vs.85)) and [**DoPostUpgradeProcessing**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545629(v=vs.85)) functions, as well.
 
 -   **Make no irreversible changes during the Winnt32 phase**
 

@@ -19,11 +19,11 @@ This section includes the following topics:
 
 [Driver Packages](driver-packages.md)
 
-[INF Files](inf-files.md)
+[INF Files](overview-of-inf-files.md)
 
 [Driver Signing](driver-signing.md)
 
-[Device Metadata Packages](device-metadata-packages.md)
+[Device Metadata Packages](overview-of-device-metadata-packages.md)
 
 [Device and Driver Installation Software](device-and-driver-installation-software.md)
 

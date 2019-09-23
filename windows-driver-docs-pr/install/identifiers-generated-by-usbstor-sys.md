@@ -54,7 +54,7 @@ Where:
 
 If the data retrieved from the device's device descriptor matches any of these compatible IDs, the operating system will load *Usbstor.sys*.
 
-As soon as it is loaded, the USB storage port driver creates a new PDO for each of the device's logical units. For more information, see the example device stack created by *Usbstor.sys* illustrated in [Device Object Example for a USB Mass Storage Device](https://msdn.microsoft.com/windows/hardware/drivers/storage/device-object-example-for-a-usb-mass-storage-device).
+As soon as it is loaded, the USB storage port driver creates a new PDO for each of the device's logical units. For more information, see the example device stack created by *Usbstor.sys* illustrated in [Device Object Example for a USB Mass Storage Device](https://docs.microsoft.com/windows-hardware/drivers/storage/device-object-example-for-a-usb-mass-storage-device).
 
 When the PnP manager queries for the device identification strings of the newly created PDOs, the USB storage port driver creates a new set of device, hardware and compatible IDs derived from the device's SCSI inquiry data. The device ID format is as follows:
 

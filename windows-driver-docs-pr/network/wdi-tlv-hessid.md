@@ -21,14 +21,14 @@ WDI\_TLV\_HESSID is a TLV that contains a list of HESSIDs.
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) structures. The array must contain 1 or more structures.
+The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) structures. The array must contain 1 or more structures.
 
 ## Values
 
 
 | Type                                                  | Description        |
 |-------------------------------------------------------|--------------------|
-| [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)\[\] | A list of HESSIDs. |
+| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address)\[\] | A list of HESSIDs. |
 
  
 

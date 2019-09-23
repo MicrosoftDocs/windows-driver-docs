@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 
 The service number uniquely identifies the given mobile operator and is a required field for authoring a service metadata package. This field is represented by a GUID, and has to be in the following format: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx (without any braces).
 
-[ServiceNumber](https://msdn.microsoft.com/library/windows/hardware/dn973170) is a required element in the ServiceInfo.xsd file of the service metadata package.
+[ServiceNumber](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/servicenumber) is a required element in the ServiceInfo.xsd file of the service metadata package.
 
 ## <span id="related_topics"></span>Related topics
 
-- [Create a mobile broadband experience](https://msdn.microsoft.com/library/windows/hardware/dn236414.aspx)
+- [Create a mobile broadband experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-mobile-broadband-experience)
 
  
 

@@ -83,7 +83,7 @@ This lab uses two PCs. Windows debugger runs on the *host* system and the KMDF E
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+To work with kernel mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://docs.microsoft.com/windows-hardware/drivers) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 ### <span id="Configure__kernel_mode_debugging_using_ethernet"></span><span id="configure__kernel_mode_debugging_using_ethernet"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_ETHERNET"></span>Configure kernel–mode debugging using ethernet
 
@@ -455,7 +455,7 @@ f. Reboot the target computer.
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
-*C:\\Program Files (x86)\\Windows Kits\\10.0\\Tools\\x64\\devcon.exe*
+*C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
 Create a folder on the target for the built driver package (for example, *C:\\EchoDriver*). Copy all the files from the built driver described earlier on the host computer and save them to the folder that you created on the target computer.
 
 Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
@@ -743,7 +743,7 @@ This diagram shows a more complex device node tree.
 
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
-**Note**  For more information about more complex driver stacks, see [Driver stacks](https://msdn.microsoft.com/library/windows/hardware/hh439632) and [Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721).
+**Note**  For more information about more complex driver stacks, see [Driver stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/driver-stacks) and [Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks).
 
 
 
@@ -853,11 +853,11 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 11. **&lt;- On the host system**
 
-    When the driver is enabled, the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) debug breakpoint should fire, and the execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output will display "Breakpoint 1 hit".
+    When the driver is enabled, the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) debug breakpoint should fire, and the execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output will display "Breakpoint 1 hit".
 
     ![windbg showing sample code locals and command windows](images/debuglab-image-breakpoint-echo-deviceadd.png)
 
-12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine. The Brace character “}” will be highlighted as shown.
+12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine. The Brace character “}” will be highlighted as shown.
 
     ![code window showing brace character highlighted at start of adddevice routine](images/debuglab-image-breakpoint-end-deviceadd.png)
 
@@ -972,7 +972,7 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 *In Section 8, you will display information about variables and call stacks.*
 
-This lab assumes that you are stopped at the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine using the process described earlier. To view the output show here, repeat the steps described previously, if necessary.
+This lab assumes that you are stopped at the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine using the process described earlier. To view the output show here, repeat the steps described previously, if necessary.
 
 **&lt;- On the host system**
 

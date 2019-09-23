@@ -28,9 +28,9 @@ It is preferable to use **BUS\_INTERFACE\_STANDARD** where possible, because a b
 
 Three steps are required when accessing the configuration space of a PCI device at IRQL = DISPATCH\_LEVEL:
 
-1.  Send an [**IRP\_MN\_QUERY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff551687) request at IRQL = PASSIVE\_LEVEL to get the direct-call interface structure (**BUS\_INTERFACE\_STANDARD**) from the PCI bus driver. Store this in a nonpaged pool memory (typically in a device extension).
+1.  Send an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request at IRQL = PASSIVE\_LEVEL to get the direct-call interface structure (**BUS\_INTERFACE\_STANDARD**) from the PCI bus driver. Store this in a nonpaged pool memory (typically in a device extension).
 
-2.  Call the **BUS\_INTERFACE\_STANDARD** interface routines, [*SetBusData*](https://msdn.microsoft.com/library/windows/hardware/gg604856) and [*GetBusData*](https://msdn.microsoft.com/library/windows/hardware/gg604850), to access the PCI configuration space at IRQL = DISPATCH\_LEVEL.
+2.  Call the **BUS\_INTERFACE\_STANDARD** interface routines, [*SetBusData*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/gg604856(v=vs.85)) and [*GetBusData*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-get_set_device_data), to access the PCI configuration space at IRQL = DISPATCH\_LEVEL.
 
 3.  Dereference the interface. The PCI bus driver takes a reference count on the interface before it returns, so the driver that accesses the interface must dereference it, once it is no longer needed.
 
@@ -96,7 +96,7 @@ End:
 }
 ```
 
-The following code snippet shows how to use the [*GetBusData*](https://msdn.microsoft.com/library/windows/hardware/gg604850) interface routine to get the configuration space data (step 2).
+The following code snippet shows how to use the [*GetBusData*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-get_set_device_data) interface routine to get the configuration space data (step 2).
 
 ```cpp
  bytes = busInterfaceStandard.GetBusData(
@@ -116,7 +116,7 @@ When the driver is done with the interface, it can use code similar to the follo
 
 The interface synchronizes the caller's access to the bus hardware with the PCI bus driver's access. The driver writer need not worry about creating spin locks to avoid contending with the PCI bus driver for access to bus hardware.
 
-Note, that if all that is needed are bus, function, and device numbers, it is usually unnecessary to resort to a bus interface to obtain this information. This data can be retrieved indirectly by passing the PDO of the target device to the [**IoGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff549203) function as follows:
+Note, that if all that is needed are bus, function, and device numbers, it is usually unnecessary to resort to a bus interface to obtain this information. This data can be retrieved indirectly by passing the PDO of the target device to the [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceproperty) function as follows:
 
 ```cpp
     ULONG   propertyAddress, length;

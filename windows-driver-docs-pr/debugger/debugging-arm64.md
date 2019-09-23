@@ -48,9 +48,9 @@ When debugging x86 apps in user mode, regardless of which WinDbg version you are
 - The emulator internally generates Data misaligned, Illegal instruction, In-page I/O error exceptions and handles the ones it generates. When you are using WinDbg, consider configuring these exceptions as *Ignored* under the Debug / Event Filters… menu item.  
 - If using ARM64 WinDbg in user mode, single-stepping across x86 & CHPE function boundaries is not supported. To work around this, set breakpoints on the target code. 
 
-For general information about ARM64 and WOW64 see [Running 32-bit Applications](https://msdn.microsoft.com/library/windows/desktop/aa384249.aspx) in the 64-bit Windows programming guide. 
+For general information about ARM64 and WOW64 see [Running 32-bit Applications](https://docs.microsoft.com/windows/desktop/WinProg64/running-32-bit-applications) in the 64-bit Windows programming guide. 
 
-For information on debugging applications running under WOW64, see [Debugging WOW64](https://msdn.microsoft.com/library/windows/desktop/aa384163.aspx).
+For information on debugging applications running under WOW64, see [Debugging WOW64](https://docs.microsoft.com/windows/desktop/WinProg64/debugging-wow64).
 
 
 

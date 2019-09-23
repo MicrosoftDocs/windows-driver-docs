@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 The CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP bug check has a value of 0x0000016A. This indicates that a Cluster Shared Volume Manager volume removal request has timed out.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 
@@ -45,7 +45,7 @@ The system generated a live dump for analysis of the delay.
 ## See Also
 ----------
 
-[Troubleshooting Hangs Using Live Dump (Blog)](https://blogs.msdn.microsoft.com/clustering/2016/03/02/troubleshooting-hangs-using-live-dump/)
+[Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

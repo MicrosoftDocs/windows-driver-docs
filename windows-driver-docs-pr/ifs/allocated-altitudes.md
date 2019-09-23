@@ -884,7 +884,7 @@ The current altitude allocations are listed below for each of the following load
 | Spiderg3.sys | 323600 | Doctor Web Ltd. |
 | STKrnl64.sys | 323500 | Verdasys Inc |
 | UFDFilter.sys | 323400 | Yoggie |
-| SCFltr.sys | 323300 | SecurtiyCoverage, Inc. |
+| SCFltr.sys | 323300 | SecurityCoverage, Inc. |
 | fildds.sys | 323200 | Filseclab |
 | fsfilter.sys | 323100 | MastedCode Ltd |
 | fpav_rtp.sys | 323000 | f-protect |

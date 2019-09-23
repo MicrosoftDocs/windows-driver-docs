@@ -3,7 +3,7 @@ title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 ms.assetid: 7d3ff54e-e61a-43fa-a378-fb8d32565586
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
-ms.date: 03/29/2019
+ms.date: 06/29/2019
 topic_type:
 - apiref
 api_name:
@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The MEMORY\_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## MEMORY\_MANAGEMENT Parameters
@@ -52,7 +52,11 @@ Parameter 1 identifies the exact violation.
 </tr>
 <tr class="odd">
 <td align="left"><p>0x403</p></td>
-<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 &amp; 4 differ by only a single bit.</p></td>
+<td align="left"><p>The page table and PFNs are out of sync . This is probably a hardware error, especially if parameters 3 & 4 differ by only a single bit.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x404</p></td>
+<td align="left"><p>In the process of deleting a system page there was an inconsistency between the Page Frame Number (PFN) and the current Page Table Entry (PTE) pointer. Parameter 2 is the expected PTE. Parameter 3 is the PTE contents and parameter 4 is the PFN’s PTE.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x411</p></td>
@@ -96,6 +100,10 @@ Parameter 1 identifies the exact violation.
 <td align="left"><p>The caller specified an MDL that contains an unlocked (or invalid) physical page. Parameter 2 contains a pointer to the MDL. Parameter 3 contains a pointer to the invalid PFN. Parameter 4 contains the invalid PFN value.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p>0x3300</p></td>
+<td align="left"><p>In the process of performing a write, the referenced virtual address is mistakenly marked as copy on write. Parameter 2 is the FaultingAddress.  Parameter 3 is the PTE contents. Parameter 4 indicates the virtual address space type.</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>0x3451</p></td>
 <td align="left"><p>The PTEs of a kernel thread stack that has been swapped out are corrupted.</p></td>
 </tr>
@@ -119,6 +127,10 @@ Parameter 1 identifies the exact violation.
 <td align="left"><p>0x5200</p></td>
 <td align="left"><p>A page on a free pool SLIST has been corrupted. This can be the result of a write-after-free bug in a driver, or an overrun from a previous page. Parameter 2 contains the address of a free pool block. Parameter 4 contains the value that was expected to be at that address. Parameter 3 contains the actual value that was found.</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>0x6001</p></td>
+<td align="left"><p>The memory store component’s private memory range is corrupted, causing it to become inaccessible. Parameter 2 is the returned status.  Parameter 3 is the virtual address in the store’s private memory range. Parameter 4 is the MemoryDescriptorList.</p></td>
+</tr>
 <tr class="even">
 <td align="left"><p>0x8884</p></td>
 <td align="left"><p>(Windows 7 only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
@@ -139,6 +151,10 @@ Parameter 1 identifies the exact violation.
 <tr class="even">
 <td align="left"><p>0x15001</p></td>
 <td align="left"><p>An error occurred In the process of un-securing memory that was previously secured.  This can happen when the caller mistakenly invoked  MmUnsecureVirtualMemory in the wrong process context.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x41201</p></td>
+<td align="left"><p>In the process of querying a virtual address, there was an inconsistency between the Page Frame Number(PFN) and the current Page Table Entry (PTE) pointer. Parameter 2 is the corresponding PTE. Parameter 3 is the PTE contents and parameter 4 is the virtual address descriptor.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x41283</p></td>
@@ -183,6 +199,10 @@ Parameter 1 identifies the exact violation.
 <tr class="odd">
 <td align="left"><p>0x61946</p></td>
 <td align="left"><p>The MDL being created is flawed. This almost always means the driver calling <strong>MmProbeAndLockPages</strong> is at fault. Typically the driver is attempting to create a Write MDL when it is being asked to process a paging Read.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x61948</p></td>
+<td align="left"><p>In the process of decrementing the reference counts for an I/O space region, its accounting node could not be found.  Typically this means the argument range was never locked or has already been unlocked.  Parameter 2 is the base I/O frame. Parameter 3 is the number of pages in the region, and parameter 4 is the specific I/O frame whose node could not be found.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x61949</p></td>

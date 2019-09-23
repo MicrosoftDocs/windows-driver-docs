@@ -59,9 +59,9 @@ If you are preparing to write a filter driver for a device, determine where your
 
 A driver that is not associated with a device is called a *software driver*. For a discussion about software drivers, see the [What is a driver?](what-is-a-driver-.md) topic. Software drivers are useful because they can run in kernel mode, which gives them access to protected operating system data. For information about processor modes, see [User mode and kernel mode](user-mode-and-kernel-mode.md).
 
-For a software driver, your two options are KMDF and the kernel-modeWindows NT driver model. With both KMDF and the kernel-modeWindows NT model, you can write your driver without being concerned about Plug and Play (PnP) and power management. You can concentrate instead on your driver's primary tasks. With KMDF, you do not have to be concerned with PnP and power because the framework handles PnP and power for you. With the kernel-modeWindows NT model, you do not have to be concerned about PnP and power because kernel-mode services operate in an environment that is completely independent from PnP and power management.
+For a software driver, your two options are KMDF and the legacy Windows NT driver model. With both KMDF and the legacy Windows NT model, you can write your driver without being concerned about Plug and Play (PnP) and power management. You can concentrate instead on your driver's primary tasks. With KMDF, you do not have to be concerned with PnP and power because the framework handles PnP and power for you. With the legacy Windows NT model, you do not have to be concerned about PnP and power because kernel-mode services operate in an environment that is completely independent from PnP and power management.
 
-Our recommendation is that you use KMDF, especially if you are already familiar with it. If you want your driver to be completely independent from PnP and power management, use the kernel-modeWindows NT model. If you need to write a software driver that is aware of power transitions or PnP events, you cannot use the kernel-modeWindows NT model; you must use KMDF.
+Our recommendation is that you use KMDF, especially if you are already familiar with it. If you want your driver to be completely independent from PnP and power management, use the legacy Windows NT model. If you need to write a software driver that is aware of power transitions or PnP events, you cannot use the legacy Windows NT model; you must use KMDF.
 
 **Note**  In the very rare case that you need to write a software driver that is aware of PnP or power events, and your driver needs access to data that is not available through KMDF, you must use WDM.
 
@@ -74,12 +74,12 @@ For help with choosing a model for a file system filter driver, see [File system
 ## <span id="Choosing_a_driver_model_for_a_file_system_filter_driver"></span><span id="choosing_a_driver_model_for_a_file_system_filter_driver"></span><span id="CHOOSING_A_DRIVER_MODEL_FOR_A_FILE_SYSTEM_FILTER_DRIVER"></span>Choosing a driver model for a file system filter driver
 
 
-For help with choosing a model for a file system filter driver, see File system minifilter drivers and [File system filter drivers](https://msdn.microsoft.com/library/windows/hardware/ff540382).
+For help with choosing a model for a file system filter driver, see File system minifilter drivers and [File system filter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/file-system-filter-drivers).
 
 ## <span id="Choosing_a_driver_model_for_a_file_system_minifilter_driver"></span><span id="choosing_a_driver_model_for_a_file_system_minifilter_driver"></span><span id="CHOOSING_A_DRIVER_MODEL_FOR_A_FILE_SYSTEM_MINIFILTER_DRIVER"></span>Choosing a driver model for a file system minifilter driver
 
 
-For help choosing a model for a file system minifilter driver, see [File System Minifilter Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540402).
+For help choosing a model for a file system minifilter driver, see [File System Minifilter Drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/file-system-minifilter-drivers).
 
 ## <span id="related_topics"></span>Related topics
 

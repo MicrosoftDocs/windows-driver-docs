@@ -50,11 +50,11 @@ Requirements
 ## See also
 
 
-[**BdaMethodCreateTopology**](https://msdn.microsoft.com/library/windows/hardware/ff556471)
+[**BdaMethodCreateTopology**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdamethodcreatetopology)
 
-[**KSMETHOD**](https://msdn.microsoft.com/library/windows/hardware/ff563398)
+[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
 
-[**KSMULTIPLE\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff563441)
+[**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmultiple_item)
 
  
 

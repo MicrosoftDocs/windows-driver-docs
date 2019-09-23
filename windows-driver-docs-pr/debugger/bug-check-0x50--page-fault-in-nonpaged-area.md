@@ -3,7 +3,7 @@ title: Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA
 description: The PAGE_FAULT_IN_NONPAGED_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. 
 ms.assetid: 63b4ab82-f7a9-4e14-bf7c-707a22d7e251
 keywords: ["Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA", "PAGE_FAULT_IN_NONPAGED_AREA"]
-ms.date: 03/28/2017
+ms.date: 04/18/2019
 topic_type:
 - apiref
 api_name:
@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. Typically the memory address is wrong or the memory address is pointing at freed memory.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## PAGE\_FAULT\_IN\_NONPAGED\_AREA Parameters
@@ -43,10 +43,25 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p><strong>0:</strong> Read operation</p>
+<td align="left">
+<p><i>After Windows 1507 (TH1) Version - x64 </i> </p>
+<p><strong>0:</strong> Read operation</p>
+<p><strong>2:</strong> Write operation</p>
+<p><strong>10:</strong> Execute operation</p>
+
+<p><i> After Windows 1507 (TH1) Version - x86 </i></p>
+<p><strong>0:</strong> Read operation</p>
+<p><strong>2:</strong> Write operation</p>
+<p><strong>10:</strong> Execute operation</p>
+
+<p><i> After Windows 1507 (TH1) Version - ARM </i></p>
+<p><strong>0:</strong> Read operation</p>
 <p><strong>1:</strong> Write operation</p>
-<p><strong>2:</strong> Execute operation</p>
 <p><strong>8:</strong> Execute operation</p>
+
+<p><i> Before Windows 1507 (TH1) Version x64 / x86 </i></p>
+<p><strong>0:</strong> Read operation</p>
+<p><strong>1:</strong> Write operation</p>
 </td>
 </tr>
 <tr class="odd">
@@ -78,12 +93,12 @@ Remarks
 ----------
 
 **Event Log:**
-Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://windows.microsoft.com/windows/what-information-event-logs-event-viewer#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
+Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 **Resolving a faulty driver:** 
 Examine the name of the driver if that was listed on the blue screen or is present in the event log. Contact the driver vendor to see if an updated driver is available. 
 
-**Resolving a faulty system service problem:** Disable the service and confirm that this resolves the error. If so, contact the manufacturer of the system service about a possible update. If the error occurs during system startup, investigate the Windows repair options. For more information, see [Recovery options in Windows 10](https://windows.microsoft.com/windows-10/windows-10-recovery-options).
+**Resolving a faulty system service problem:** Disable the service and confirm that this resolves the error. If so, contact the manufacturer of the system service about a possible update. If the error occurs during system startup, investigate the Windows repair options. For more information, see [Recovery options in Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options).
 
 **Resolving an antivirus software problem:** Disable the program and confirm that this resolves the error. If it does, contact the manufacturer of the program about a possible update.
 
@@ -101,7 +116,7 @@ Resolution
 
 Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques.
 
-Use the [**!analyze**](-analyze.md) debug extension with teh -v verbose option to display information about the bug check to work to determine the root cause.
+Use the [**!analyze**](-analyze.md) debug extension with the -v verbose option to display information about the bug check to work to determine the root cause.
 
 ```dbgcmd
 2: kd> !analyze -v
@@ -209,9 +224,4 @@ Use `!memusage` and to examine the general state of the system memory.
 **Driver Verifier**
 
 Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it sees errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
-
-
-**Time Travel Trace**
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 

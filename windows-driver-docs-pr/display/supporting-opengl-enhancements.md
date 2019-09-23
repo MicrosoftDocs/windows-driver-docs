@@ -22,55 +22,55 @@ You can implement your OpenGL installable client driver (ICD) to use the followi
 
 You can enhance the synchronization capabilities of your OpenGL ICD by using the following second-generation OpenGL synchronization functions:
 
--   [**D3DKMTCreateSynchronizationObject2**](https://msdn.microsoft.com/library/windows/hardware/ff546879)
+-   [**D3DKMTCreateSynchronizationObject2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtcreatesynchronizationobject2)
 
--   [**D3DKMTOpenSynchronizationObject**](https://msdn.microsoft.com/library/windows/hardware/ff547069)
+-   [**D3DKMTOpenSynchronizationObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtopensynchronizationobject)
 
--   [**D3DKMTWaitForSynchronizationObject2**](https://msdn.microsoft.com/library/windows/hardware/ff547262)
+-   [**D3DKMTWaitForSynchronizationObject2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtwaitforsynchronizationobject2)
 
--   [**D3DKMTSignalSynchronizationObject2**](https://msdn.microsoft.com/library/windows/hardware/ff547227)
+-   [**D3DKMTSignalSynchronizationObject2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtsignalsynchronizationobject2)
 
 ### <span id="controlling_resource_access_with_mutexes"></span><span id="CONTROLLING_RESOURCE_ACCESS_WITH_MUTEXES"></span>Controlling Resource Access with Mutexes
 
 You can use the following OpenGL mutex functions to control access to resources:
 
--   [**D3DKMTCreateKeyedMutex**](https://msdn.microsoft.com/library/windows/hardware/ff546845)
+-   [**D3DKMTCreateKeyedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtcreatekeyedmutex)
 
--   [**D3DKMTOpenKeyedMutex**](https://msdn.microsoft.com/library/windows/hardware/ff547054)
+-   [**D3DKMTOpenKeyedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtopenkeyedmutex)
 
--   [**D3DKMTDestroyKeyedMutex**](https://msdn.microsoft.com/library/windows/hardware/ff546920)
+-   [**D3DKMTDestroyKeyedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtdestroykeyedmutex)
 
--   [**D3DKMTAcquireKeyedMutex**](https://msdn.microsoft.com/library/windows/hardware/ff546732)
+-   [**D3DKMTAcquireKeyedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtacquirekeyedmutex)
 
--   [**D3DKMTReleaseKeyedMutex**](https://msdn.microsoft.com/library/windows/hardware/ff547129)
+-   [**D3DKMTReleaseKeyedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtreleasekeyedmutex)
 
 ### <span id="managing_access_to_shared_resources"></span><span id="MANAGING_ACCESS_TO_SHARED_RESOURCES"></span>Managing Access to Shared Resources
 
 You can use the following OpenGL functions to manage access to a shared resource:
 
--   [**D3DKMTConfigureSharedResource**](https://msdn.microsoft.com/library/windows/hardware/ff546798)
+-   [**D3DKMTConfigureSharedResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtconfiguresharedresource)
 
--   [**D3DKMTCheckSharedResourceAccess**](https://msdn.microsoft.com/library/windows/hardware/ff546769)
+-   [**D3DKMTCheckSharedResourceAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtchecksharedresourceaccess)
 
 ### <span id="monitoring_present_history"></span><span id="MONITORING_PRESENT_HISTORY"></span>Monitoring Present History
 
 You can use the following OpenGL functions to monitor the history of present operations:
 
--   [**D3DKMTPresent**](https://msdn.microsoft.com/library/windows/hardware/ff547091) with [**D3DKMT\_PRESENTHISTORYTOKEN**](https://msdn.microsoft.com/library/windows/hardware/ff548188) structures populated in the **PresentHistoryToken** member of the [**D3DKMT\_PRESENT**](https://msdn.microsoft.com/library/windows/hardware/ff548168) structure
+-   [**D3DKMTPresent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtpresent) with [**D3DKMT\_PRESENTHISTORYTOKEN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_presenthistorytoken) structures populated in the **PresentHistoryToken** member of the [**D3DKMT\_PRESENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_present) structure
 
--   [**D3DKMTGetPresentHistory**](https://msdn.microsoft.com/library/windows/hardware/ff546987)
+-   [**D3DKMTGetPresentHistory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtgetpresenthistory)
 
 ### <span id="miscellaneous_enhancements"></span><span id="MISCELLANEOUS_ENHANCEMENTS"></span>Miscellaneous Enhancements
 
 You can use the following OpenGL miscellaneous enhancements:
 
--   [**D3DKMTCheckVidPnExclusiveOwnership**](https://msdn.microsoft.com/library/windows/hardware/ff546779)
+-   [**D3DKMTCheckVidPnExclusiveOwnership**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtcheckvidpnexclusiveownership)
 
--   [**D3DKMTGetOverlayState**](https://msdn.microsoft.com/library/windows/hardware/ff546977)
+-   [**D3DKMTGetOverlayState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtgetoverlaystate)
 
--   [**D3DKMTSetDisplayMode**](https://msdn.microsoft.com/library/windows/hardware/ff547169) with the [**D3DKMT\_SETDISPLAYMODE\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff548286) structure populated in the **Flags** member of the [**D3DKMT\_SETDISPLAYMODE**](https://msdn.microsoft.com/library/windows/hardware/ff548275) structure
+-   [**D3DKMTSetDisplayMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtsetdisplaymode) with the [**D3DKMT\_SETDISPLAYMODE\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_setdisplaymode_flags) structure populated in the **Flags** member of the [**D3DKMT\_SETDISPLAYMODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_setdisplaymode) structure
 
--   [**D3DKMTPollDisplayChildren**](https://msdn.microsoft.com/library/windows/hardware/ff547077) with new flags set in the [**D3DKMT\_POLLDISPLAYCHILDREN**](https://msdn.microsoft.com/library/windows/hardware/ff548161) structure
+-   [**D3DKMTPollDisplayChildren**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtpolldisplaychildren) with new flags set in the [**D3DKMT\_POLLDISPLAYCHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_polldisplaychildren) structure
 
 ## <span id="windows_8_enhancements"></span><span id="WINDOWS_8_ENHANCEMENTS"></span>Windows 8 Enhancements
 
@@ -83,25 +83,25 @@ You can implement your OpenGL installable client driver (ICD) to use the followi
 
 You can use these OpenGL mutex functions and associated structures to control access to resources while specifying private data to associate with a keyed mutex:
 
--   [**D3DKMTAcquireKeyedMutex2**](https://msdn.microsoft.com/library/windows/hardware/hh439340)
--   [**D3DKMTCreateKeyedMutex2**](https://msdn.microsoft.com/library/windows/hardware/hh439345)
--   [**D3DKMT\_ACQUIREKEYEDMUTEX2**](https://msdn.microsoft.com/library/windows/hardware/hh439466)
--   [**D3DKMT\_CREATEKEYEDMUTEX2**](https://msdn.microsoft.com/library/windows/hardware/hh439474)
+-   [**D3DKMTAcquireKeyedMutex2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtacquirekeyedmutex2)
+-   [**D3DKMTCreateKeyedMutex2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtcreatekeyedmutex2)
+-   [**D3DKMT\_ACQUIREKEYEDMUTEX2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_acquirekeyedmutex2)
+-   [**D3DKMT\_CREATEKEYEDMUTEX2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_createkeyedmutex2)
 
 ### <span id="OpenGL_Helper_Functions"></span><span id="opengl_helper_functions"></span><span id="OPENGL_HELPER_FUNCTIONS"></span>OpenGL Helper Functions
 
 You can use these functions and their associated structures to access objects and their handles:
 
--   [**D3DKMTGetSharedResourceAdapterLuid**](https://msdn.microsoft.com/library/windows/hardware/jj128339)
--   [**D3DKMTOpenAdapterFromLuid**](https://msdn.microsoft.com/library/windows/hardware/hh780247)
--   [**D3DKMTOpenNtHandleFromName**](https://msdn.microsoft.com/library/windows/hardware/hh439409)
--   [**D3DKMTOpenResourceFromNtHandle**](https://msdn.microsoft.com/library/windows/hardware/hh439413)
--   [**D3DKMTOpenSyncObjectFromNtHandle**](https://msdn.microsoft.com/library/windows/hardware/hh780248)
--   [**D3DKMT\_GETSHAREDRESOURCEADAPTERLUID**](https://msdn.microsoft.com/library/windows/hardware/jj128344)
--   [**D3DKMT\_OPENADAPTERFROMLUID**](https://msdn.microsoft.com/library/windows/hardware/hh780267)
--   [**D3DKMT\_OPENNTHANDLEFROMNAME**](https://msdn.microsoft.com/library/windows/hardware/hh406493)
--   [**D3DKMT\_OPENRESOURCEFROMNTHANDLE**](https://msdn.microsoft.com/library/windows/hardware/hh406496)
--   [**D3DKMT\_OPENSYNCOBJECTFROMNTHANDLE**](https://msdn.microsoft.com/library/windows/hardware/hh780268)
+-   [**D3DKMTGetSharedResourceAdapterLuid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtgetsharedresourceadapterluid)
+-   [**D3DKMTOpenAdapterFromLuid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtopenadapterfromluid)
+-   [**D3DKMTOpenNtHandleFromName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtopennthandlefromname)
+-   [**D3DKMTOpenResourceFromNtHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtopenresourcefromnthandle)
+-   [**D3DKMTOpenSyncObjectFromNtHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtopensyncobjectfromnthandle)
+-   [**D3DKMT\_GETSHAREDRESOURCEADAPTERLUID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_getsharedresourceadapterluid)
+-   [**D3DKMT\_OPENADAPTERFROMLUID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_openadapterfromluid)
+-   [**D3DKMT\_OPENNTHANDLEFROMNAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_opennthandlefromname)
+-   [**D3DKMT\_OPENRESOURCEFROMNTHANDLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_openresourcefromnthandle)
+-   [**D3DKMT\_OPENSYNCOBJECTFROMNTHANDLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_opensyncobjectfromnthandle)
 
  
 

@@ -24,7 +24,7 @@ Following the practices outlined in this document ensures that the WIA drivers d
 
 [WIA Security Best Practices](wia-security-best-practices.md)
 
-For additional information about device driver security, see the [Securing Device Objects](https://msdn.microsoft.com/library/windows/hardware/ff563688) and [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212) sections.
+For additional information about device driver security, see the [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [Creating Secure Device Installations](https://docs.microsoft.com/windows-hardware/drivers/install/creating-secure-device-installations) sections.
 
  
 

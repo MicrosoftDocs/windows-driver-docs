@@ -33,7 +33,7 @@ Lower feature numbers indicates better matches. The default feature score is 0xF
 
 Microsoft recommends a feature score of 0xa0 for legacy biometric drivers. The feature score should never be set to 0x00, in case there is a need to override it later.
 
-The feature score for a driver is set by an INF FeatureScore directive in the [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) for the device.
+The feature score for a driver is set by an INF FeatureScore directive in the [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) for the device.
 
 For example, the following code sets the feature score of a driver to 0x20:
 

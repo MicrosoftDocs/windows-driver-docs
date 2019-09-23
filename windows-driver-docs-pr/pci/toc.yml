@@ -1,6 +1,8 @@
 - name: "PCI driver programming guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "PCI driver programming guide"
+    href: index.md
   - name: "PCI Power Management and Device Drivers"
     href: pci-power-management-and-device-drivers.md
   - name: "Enabling PCI Express Native Control in Windows"

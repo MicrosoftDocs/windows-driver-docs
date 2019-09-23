@@ -13,29 +13,29 @@ ms.localizationpriority: medium
 
 
 
-Depending on the position of a particular driver in a chain of layered drivers, the nature of the underlying device, and the design of the driver, a [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine also can be responsible for the following:
+Depending on the position of a particular driver in a chain of layered drivers, the nature of the underlying device, and the design of the driver, a [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine also can be responsible for the following:
 
--   Calling [**IoAllocateDriverObjectExtension**](https://msdn.microsoft.com/library/windows/hardware/ff548233) to create and initialize a driver object extension, if the driver requires storage for data on a driver-wide basis. The driver object extension is a driver-specific data structure. For example, a driver might use its driver object extension to store a registry path or other global information.
+-   Calling [**IoAllocateDriverObjectExtension**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatedriverobjectextension) to create and initialize a driver object extension, if the driver requires storage for data on a driver-wide basis. The driver object extension is a driver-specific data structure. For example, a driver might use its driver object extension to store a registry path or other global information.
 
--   Calling [**PsCreateSystemThread**](https://msdn.microsoft.com/library/windows/hardware/ff559932) to create executive worker threads, if the driver is a highest-level driver (such as a file system driver) that uses such threads. In this case, the driver must also have a callback routine of type WORKER\_THREAD\_ROUTINE, which takes a single input PVOID *Parameter*.
+-   Calling [**PsCreateSystemThread**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pscreatesystemthread) to create executive worker threads, if the driver is a highest-level driver (such as a file system driver) that uses such threads. In this case, the driver must also have a callback routine of type WORKER\_THREAD\_ROUTINE, which takes a single input PVOID *Parameter*.
 
--   Registering a [*Reinitialize*](https://msdn.microsoft.com/library/windows/hardware/ff561022) routine. (See [Writing a Reinitialize Routine](writing-a-reinitialize-routine.md).)
+-   Registering a [*Reinitialize*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-driver_reinitialize) routine. (See [Writing a Reinitialize Routine](writing-a-reinitialize-routine.md).)
 
 -   Handling class-specific initialization requirements that differ from those discussed here, such as those that a device-specific miniport or miniclass driver working in tandem with a port or class driver might have. See the device-type specific documentation in the Windows Driver Kit (WDK) for details.
 
 ### Providing Storage for System Resources
 
-Per-device objects should be allocated in the [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine or in the Dispatch routine that handles the PnP [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request, not in **DriverEntry**.
+Per-device objects should be allocated in the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine or in the Dispatch routine that handles the PnP [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request, not in **DriverEntry**.
 
 However, a driver might need to allocate additional system-space memory for other driver-wide uses. If so, the **DriverEntry** routine can call one (or more) of the following routines:
 
 -   **IoAllocateDriverObjectExtension**, to create a context area associated with the driver object
 
--   [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) for paged or nonpaged system-space memory
+-   [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) for paged or nonpaged system-space memory
 
--   [**MmAllocateNonCachedMemory**](https://msdn.microsoft.com/library/windows/hardware/ff554479) or [**MmAllocateContiguousMemory**](https://msdn.microsoft.com/library/windows/hardware/ff554460) for cache-aligned nonpaged system-space memory (used for I/O buffers)
+-   [**MmAllocateNonCachedMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmallocatenoncachedmemory) or [**MmAllocateContiguousMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemory) for cache-aligned nonpaged system-space memory (used for I/O buffers)
 
-Every **DriverEntry** routine is run in the context of a system thread at IRQL = PASSIVE\_LEVEL. Therefore, any memory allocated with **ExAllocatePoolWithTag** for use exclusively during initialization can be from paged pool, as long as the driver does not control the device that holds the system page file. The allocated memory must be released with [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590) before **DriverEntry** returns control. However, a driver that sets a *Reinitialize* routine can pass a pointer to this memory when it calls [**IoRegisterDriverReinitialization**](https://msdn.microsoft.com/library/windows/hardware/ff549511), thus making the driver's *Reinitialize* routine responsible for freeing the memory allocation.
+Every **DriverEntry** routine is run in the context of a system thread at IRQL = PASSIVE\_LEVEL. Therefore, any memory allocated with **ExAllocatePoolWithTag** for use exclusively during initialization can be from paged pool, as long as the driver does not control the device that holds the system page file. The allocated memory must be released with [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-exfreepool) before **DriverEntry** returns control. However, a driver that sets a *Reinitialize* routine can pass a pointer to this memory when it calls [**IoRegisterDriverReinitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioregisterdriverreinitialization), thus making the driver's *Reinitialize* routine responsible for freeing the memory allocation.
 
 ### <a href="" id="claiming-hardware-resources-"></a>Claiming Hardware Resources
 

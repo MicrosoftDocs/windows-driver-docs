@@ -51,13 +51,13 @@ Two INF files are required to install a network filter intermediate driver:
 <p><strong>ClassGuid</strong>= {4D36E974-E325-11CE-BFC1-08002BE10318}</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547478" data-raw-source="[&lt;strong&gt;INF SourceDisksNames Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547478)"><strong>INF SourceDisksNames Section</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547472" data-raw-source="[&lt;strong&gt;INF SourceDisksFiles Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547472)"><strong>INF SourceDisksFiles Section</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section" data-raw-source="[&lt;strong&gt;INF SourceDisksNames Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksnames-section)"><strong>INF SourceDisksNames Section</strong></a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section" data-raw-source="[&lt;strong&gt;INF SourceDisksFiles Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section)"><strong>INF SourceDisksFiles Section</strong></a></p></td>
 <td align="left"><p>Required if ...</p></td>
 <td align="left"><p>Required if the INF file is not distributed with Windows 2000. If the INF file is distributed with Windows 2000, a <strong>LayoutFile</strong> entry must be specified in the <strong>Version</strong> section, and the <strong>SourceDisksNames</strong> and <strong>SourceDisksFiles</strong> sections are not used.</p>
 <p>No network-specific requirements.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547383" data-raw-source="[&lt;strong&gt;INF DestinationDirs Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547383)"><strong>INF DestinationDirs Section</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section" data-raw-source="[&lt;strong&gt;INF DestinationDirs Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section)"><strong>INF DestinationDirs Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
@@ -67,7 +67,7 @@ Two INF files are required to install a network filter intermediate driver:
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547454" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547454)"><strong>INF Manufacturer Section</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section)"><strong>INF Manufacturer Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
@@ -81,7 +81,7 @@ Two INF files are required to install a network filter intermediate driver:
 <td align="left"><p>Required</p></td>
 <td align="left"><p><strong>Characteristics</strong> entry:</p>
 <p>NCF_FILTER is required. NCF_HAS_UI and NCF_NO_SERVICE are optional.</p>
-<p>The device INF must be copied to the system INF directory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540117" data-raw-source="[Copying INFs](https://msdn.microsoft.com/library/windows/hardware/ff540117)">Copying INFs</a>.</p></td>
+<p>The device INF must be copied to the system INF directory, see <a href="https://docs.microsoft.com/windows-hardware/drivers/install/copying-inf-files" data-raw-source="[Copying INFs](https://docs.microsoft.com/windows-hardware/drivers/install/copying-inf-files)">Copying INFs</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ddinstall-services-section-in-a-network-inf-file.md" data-raw-source="[DDInstall.Services Section](ddinstall-services-section-in-a-network-inf-file.md)">DDInstall.Services Section</a></p></td>
@@ -112,7 +112,7 @@ Two INF files are required to install a network filter intermediate driver:
 <td align="left"></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547485" data-raw-source="[&lt;strong&gt;INF Strings Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547485)"><strong>INF Strings Section</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section" data-raw-source="[&lt;strong&gt;INF Strings Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section)"><strong>INF Strings Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
@@ -149,7 +149,7 @@ Two INF files are required to install a network filter intermediate driver:
 <td align="left"><p>This section must contain an <strong>ExcludeFromSelect</strong> entry for the device.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547454" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547454)"><strong>INF Manufacturer Section</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section" data-raw-source="[&lt;strong&gt;INF Manufacturer Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section)"><strong>INF Manufacturer Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>
@@ -182,7 +182,7 @@ Two INF files are required to install a network filter intermediate driver:
 <p><a href="requiring-the-installation-of-another-network-component.md" data-raw-source="[Requiring the Installation of Another Network Component](requiring-the-installation-of-another-network-component.md)">Requiring the Installation of Another Network Component</a></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff547485" data-raw-source="[&lt;strong&gt;INF Strings Section&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547485)"><strong>INF Strings Section</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section" data-raw-source="[&lt;strong&gt;INF Strings Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section)"><strong>INF Strings Section</strong></a></p></td>
 <td align="left"><p>Required</p></td>
 <td align="left"><p>No network-specific requirements.</p></td>
 </tr>

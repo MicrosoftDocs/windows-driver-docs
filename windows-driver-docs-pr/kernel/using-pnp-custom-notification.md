@@ -23,13 +23,13 @@ The programmer that defines the custom event must do the following:
 
 2.  Write code to trigger the custom event.
 
-    In kernel mode, a driver calls [**IoReportTargetDeviceChange**](https://msdn.microsoft.com/library/windows/hardware/ff549625) with the custom GUID and a pointer to the PDO for the device. Custom events can only be triggered from kernel mode.
+    In kernel mode, a driver calls [**IoReportTargetDeviceChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreporttargetdevicechange) with the custom GUID and a pointer to the PDO for the device. Custom events can only be triggered from kernel mode.
 
 A driver writer uses custom notification with a procedure like the following:
 
 1.  The driver (or application) registers for notification of the custom event.
 
-    In kernel mode, a driver calls [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526) and registers for an **EventCategoryTargetDeviceChange** on the device.
+    In kernel mode, a driver calls [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification) and registers for an **EventCategoryTargetDeviceChange** on the device.
 
     In user mode, an application registers using **RegisterDeviceNotification**. See the Windows SDK for further information.
 

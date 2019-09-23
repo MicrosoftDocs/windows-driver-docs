@@ -13,23 +13,23 @@ ms.localizationpriority: medium
 
 
 
-On entry, an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine receives a *Context* pointer. When a dispatch routine calls [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679), it can supply a *Context* pointer. This pointer can reference whatever driver-determined context information the *IoCompletion* routine requires to process an IRP. Note that the context area cannot be pageable because the *IoCompletion* routine can be called at IRQL = DISPATCH\_LEVEL.
+On entry, an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine receives a *Context* pointer. When a dispatch routine calls [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine), it can supply a *Context* pointer. This pointer can reference whatever driver-determined context information the *IoCompletion* routine requires to process an IRP. Note that the context area cannot be pageable because the *IoCompletion* routine can be called at IRQL = DISPATCH\_LEVEL.
 
 **Consider the following implementation guidelines for IoCompletion routines:**
 
 -   An *IoCompletion* routine can check the IRP's [I/O status block](i-o-status-blocks.md) to determine the result of the I/O operation.
 
--   If the input IRP was allocated by the dispatch routine using [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) or [**IoBuildAsynchronousFsdRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548310), the *IoCompletion* routine must call [**IoFreeIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549113) to release that IRP, preferably before it completes the original IRP.
+-   If the input IRP was allocated by the dispatch routine using [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) or [**IoBuildAsynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildasynchronousfsdrequest), the *IoCompletion* routine must call [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreeirp) to release that IRP, preferably before it completes the original IRP.
 
     -   The *IoCompletion* routine must release any per-IRP resources the dispatch routine allocated for the driver-allocated IRP, preferably before it frees the corresponding IRP.
 
-        For example, if the dispatch routine allocates an MDL with [**IoAllocateMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548263) and calls [**IoBuildPartialMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548324) for a partial-transfer IRP it allocates, the *IoCompletion* routine must release the MDL with [**IoFreeMdl**](https://msdn.microsoft.com/library/windows/hardware/ff549126). If it allocates resources to maintain state about the original IRP, it must free those resources, preferably before it calls [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with the original IRP and definitely before it returns control.
+        For example, if the dispatch routine allocates an MDL with [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatemdl) and calls [**IoBuildPartialMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildpartialmdl) for a partial-transfer IRP it allocates, the *IoCompletion* routine must release the MDL with [**IoFreeMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreemdl). If it allocates resources to maintain state about the original IRP, it must free those resources, preferably before it calls [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) with the original IRP and definitely before it returns control.
 
         In general, before freeing or completing an IRP, the *IoCompletion* routine should free any per-IRP resources allocated by the Dispatch routine. Otherwise, the driver must maintain state about the resources to be freed before its *IoCompletion* routine returns control from completing the original request.
 
     -   If the *IoCompletion* routine cannot complete the original IRP with STATUS\_SUCCESS, it must set the I/O status block in the original IRP to the value returned in the driver-allocated IRP that caused the *IoCompletion* routine to fail the original request.
 
-    -   If the *IoCompletion* routine will complete the original request with STATUS\_PENDING, it must call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) with the original IRP before it calls **IoCompleteRequest**.
+    -   If the *IoCompletion* routine will complete the original request with STATUS\_PENDING, it must call [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending) with the original IRP before it calls **IoCompleteRequest**.
 
     -   If the *IoCompletion* routine must fail the original IRP with an error STATUS\_*XXX*, it can [log an error](logging-errors.md). However, it is the responsibility of the underlying device driver to log any device I/O errors that occur, so *IoCompletion* routines usually do not log errors.
 
@@ -37,9 +37,9 @@ On entry, an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardwar
 
         Returning STATUS\_MORE\_PROCESSING\_REQUIRED from the *IoCompletion* routine forestalls the I/O manager's completion processing for a driver-allocated and freed IRP. A second call to **IoCompleteRequest** causes the I/O manager to resume calling the IRP's completion routines, starting with the completion routine immediately above the routine that returned STATUS\_MORE\_PROCESSING\_REQUIRED.
 
--   If the *IoCompletion* routine reuses an incoming IRP to send one or more requests to lower drivers, or if the routine retries failed operations, it should update whatever context the *IoCompletion* routine maintains about each reuse or retry of the IRP. Then it can set up the next-lower driver's I/O stack location again, call [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679) with its own entry point, and call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) for the IRP.
+-   If the *IoCompletion* routine reuses an incoming IRP to send one or more requests to lower drivers, or if the routine retries failed operations, it should update whatever context the *IoCompletion* routine maintains about each reuse or retry of the IRP. Then it can set up the next-lower driver's I/O stack location again, call [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) with its own entry point, and call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) for the IRP.
 
-    -   The *IoCompletion* routine should not call [**IoMarkIrpPending**](https://msdn.microsoft.com/library/windows/hardware/ff549422) at each reuse or retry of the IRP.
+    -   The *IoCompletion* routine should not call [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending) at each reuse or retry of the IRP.
 
         The dispatch routine already marked the original IRP as pending. Until all drivers in the chain complete the original IRP with **IoCompleteRequest**, it remains pending.
 
@@ -47,7 +47,7 @@ On entry, an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardwar
 
         For each retry, the *IoCompletion* routine usually decrements a retry count set up by the Dispatch routine. Typically, the *IoCompletion* routine must call **IoCompleteRequest** to fail the IRP when some limited number of retries have failed.
 
-    -   The *IoCompletion* routine must return STATUS\_MORE\_PROCESSING\_REQUIRED after it calls [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679) and [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with an IRP that is being reused or retried.
+    -   The *IoCompletion* routine must return STATUS\_MORE\_PROCESSING\_REQUIRED after it calls [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) and [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) with an IRP that is being reused or retried.
 
         Returning STATUS\_MORE\_PROCESSING\_REQUIRED from the *IoCompletion* routine forestalls the I/O manager's completion processing of a reused or retried IRP.
 
@@ -64,7 +64,7 @@ If any higher-level driver has set its *IoCompletion* routine in the original IR
 
 ### Supplying a Priority Boost in Calls to IoCompleteRequest
 
-If a lowest-level device driver can complete an IRP in its dispatch routine, it calls [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) with a *PriorityBoost* of IO\_NO\_INCREMENT. No run-time priority increase is needed because the driver can assume that the original requester did not wait for its I/O operation to be completed.
+If a lowest-level device driver can complete an IRP in its dispatch routine, it calls [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) with a *PriorityBoost* of IO\_NO\_INCREMENT. No run-time priority increase is needed because the driver can assume that the original requester did not wait for its I/O operation to be completed.
 
 Otherwise, the lowest-level driver supplies a system-defined and device-type-specific value that boosts the requester's run-time priority to compensate for the time the requester waited on its device I/O request. See Wdm.h or Ntddk.h for the boost values.
 

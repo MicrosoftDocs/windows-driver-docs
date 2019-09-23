@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_macroblock_addresses_gg"></span><span id="DDK_MACROBLOCK_ADDRESSES_GG"></span>
 
 
-A macroblock address is the position of the macroblock in raster-scan order within the picture. The horizontal and vertical position of the macroblock in the picture is determined from the macroblock address using the specified width and height of the picture, which is defined by the **wPicWidthInMBminus1** and **wPicHeightInMBminus1** members of the [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) structure. Following are some examples of macroblock addresses.
+A macroblock address is the position of the macroblock in raster-scan order within the picture. The horizontal and vertical position of the macroblock in the picture is determined from the macroblock address using the specified width and height of the picture, which is defined by the **wPicWidthInMBminus1** and **wPicHeightInMBminus1** members of the [**DXVA\_PictureParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_pictureparameters) structure. Following are some examples of macroblock addresses.
 
 <table>
 <colgroup>

@@ -11,6 +11,11 @@ ms.localizationpriority: medium
 
 Your organization's administrator must [register](https://go.microsoft.com/fwlink/?LinkID=828002) for the Windows Hardware Dev Center program.
 
+> [!Note]
+> If you need support during this process please open a support ticket here: https://developer.microsoft.com/windows/support.  
+>- Select **Contact us**,  **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown.  
+>- Live Chat and Email support hours are 8am-8pm CST Monday-Friday.  SLA for an initial response is 24-48 hours for email support.
+
 ## Before you sign up
 
 Review the following requirements before you start the registration process.

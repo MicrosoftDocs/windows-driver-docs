@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 The STORE\_DATA\_STRUCTURE\_CORRUPTION bug check has a value of 0x000001C7. It indicates that the store component detected a corruption in its data structures.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 
@@ -66,7 +66,7 @@ This bugcheck can occur by memory corruption due to physical memory access. The 
 2.	A driver or device incorrectly modifying physical pages via an incorrect DMA operation or associated MDL.
 3.	Corruption caused by a hardware device or firmware corrupting memory, such as firmware illegally modifying physical pages across a power transition.
 
-For more information on Windows memory manager, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/en-us/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+For more information on Windows memory manager, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## Resolution
 -----
@@ -80,4 +80,4 @@ To investigate if this bug check is caused by defective RAM hardware, run the Wi
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)
+[Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)

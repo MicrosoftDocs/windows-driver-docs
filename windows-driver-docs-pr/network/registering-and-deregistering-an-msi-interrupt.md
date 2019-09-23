@@ -18,31 +18,31 @@ ms.localizationpriority: medium
 
 
 
-To register for MSI support, a miniport driver calls the [**NdisMRegisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563649) function to register an MSI interrupt. The driver allocates and initializes an [**NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566465) structure to specify the interrupt characteristics and function entry points. The driver must set the **MsiSupported** member of the NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS structure to **TRUE**. The driver then passes the structure to **NdisMRegisterInterruptEx**.
+To register for MSI support, a miniport driver calls the [**NdisMRegisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterinterruptex) function to register an MSI interrupt. The driver allocates and initializes an [**NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_interrupt_characteristics) structure to specify the interrupt characteristics and function entry points. The driver must set the **MsiSupported** member of the NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS structure to **TRUE**. The driver then passes the structure to **NdisMRegisterInterruptEx**.
 
 You must define the following functions to support MSI interrupts:
 
--   [*MiniportMessageInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559407)
+-   [*MiniportMessageInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_message_interrupt)
 
--   [*MiniportMessageInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff559411)
+-   [*MiniportMessageInterruptDpc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_message_interrupt_dpc)
 
--   [*MiniportDisableMessageInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559376)
+-   [*MiniportDisableMessageInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_disable_message_interrupt)
 
--   [*MiniportEnableMessageInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559383)
+-   [*MiniportEnableMessageInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_enable_message_interrupt)
 
 The miniport driver should provide entry points for the line-based interrupt functions (which are shown in the following list), even if the driver supports the MSI entry points. If NDIS does not grant an MSI interrupt, it can grant a normal interrupt as a fallback condition.
 
 The line-interrupt functions include the following:
 
--   [*MiniportInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559395)
+-   [*MiniportInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_isr)
 
--   [*MiniportInterruptDPC*](https://msdn.microsoft.com/library/windows/hardware/ff559398)
+-   [*MiniportInterruptDPC*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_interrupt_dpc)
 
--   [*MiniportDisableInterruptEx*](https://msdn.microsoft.com/library/windows/hardware/ff559375)
+-   [*MiniportDisableInterruptEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_disable_interrupt)
 
--   [*MiniportEnableInterruptEx*](https://msdn.microsoft.com/library/windows/hardware/ff559380)
+-   [*MiniportEnableInterruptEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_enable_interrupt)
 
-Drivers should call the [**NdisMDeregisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563575) function to release resources that were previously allocated with **NdisMRegisterInterruptEx**.
+Drivers should call the [**NdisMDeregisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex) function to release resources that were previously allocated with **NdisMRegisterInterruptEx**.
 
  
 

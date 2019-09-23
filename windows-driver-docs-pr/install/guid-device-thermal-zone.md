@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVICE_THERMAL_ZONE
 
 
-The GUID_DEVICE_THERMAL_ZONE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) thermal zone devices.
+The GUID_DEVICE_THERMAL_ZONE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for Advanced Configuration and Power Interface (ACPI) thermal zone devices.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The GUID_DEVICE_THERMAL_ZONE [device interface class](https://msdn.microsoft.com
 Remarks
 -------
 
-The system-supplied [ACPI driver](https://msdn.microsoft.com/library/windows/hardware/ff540493) registers an instance of this device interface class to notify the operating system and applications of the presence of thermal zone devices.
+The system-supplied [ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver) registers an instance of this device interface class to notify the operating system and applications of the presence of thermal zone devices.
 
-For information about supplying WDM [function drivers](https://msdn.microsoft.com/library/windows/hardware/ff546516) for ACPI devices, see [Supporting ACPI Devices](https://msdn.microsoft.com/library/windows/hardware/ff536161).
+For information about supplying WDM [function drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers) for ACPI devices, see [Supporting ACPI Devices](https://docs.microsoft.com/windows-hardware/drivers/acpi/supporting-acpi-devices).
 
 Requirements
 ------------

@@ -42,14 +42,14 @@ Specifies a string indicating the registry path to the driver's configuration in
 Return value
 ------------
 
-**DriverEntry** returns STATUS\_SUCCESS if successful; otherwise it returns the error code received from the [**PciIdeXInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff563788) library routine.
+**DriverEntry** returns STATUS\_SUCCESS if successful; otherwise it returns the error code received from the [**PciIdeXInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine.
 
 Remarks
 -------
 
 Each controller minidriver must have a routine named **DriverEntry** in order to load.
 
-An IDE controller minidriver's **DriverEntry** routine must call the [**PciIdeXInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff563788) library routine. **PciIdeXInitialize** initializes the controller minidriver's dispatch tables, allocates an extension for the *DriverObject*, and stores various values in the driver object's extension. Values that must be stored in the driver object's extension include the size of the driver extension and a pointer to a controller minidriver [**HwIdeXGetControllerProperties**](https://msdn.microsoft.com/library/windows/hardware/ff557254) routine that retrieves information about the IDE controller.
+An IDE controller minidriver's **DriverEntry** routine must call the [**PciIdeXInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine. **PciIdeXInitialize** initializes the controller minidriver's dispatch tables, allocates an extension for the *DriverObject*, and stores various values in the driver object's extension. Values that must be stored in the driver object's extension include the size of the driver extension and a pointer to a controller minidriver [**HwIdeXGetControllerProperties**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557254(v=vs.85)) routine that retrieves information about the IDE controller.
 
 Requirements
 ------------
@@ -82,11 +82,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**HwIdeXGetControllerProperties**](https://msdn.microsoft.com/library/windows/hardware/ff557254)
+[**HwIdeXGetControllerProperties**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557254(v=vs.85))
 
-[**IDE\_CONTROLLER\_PROPERTIES**](https://msdn.microsoft.com/library/windows/hardware/ff559076)
+[**IDE\_CONTROLLER\_PROPERTIES**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff559076(v=vs.85))
 
-[**PciIdeXInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff563788)
+[**PciIdeXInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563788(v=vs.85))
 
  
 

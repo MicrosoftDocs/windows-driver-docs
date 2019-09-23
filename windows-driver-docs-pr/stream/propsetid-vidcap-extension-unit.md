@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_propsetid_vidcap_extension_unit_ks"></span><span id="DDK_PROPSETID_VIDCAP_EXTENSION_UNIT_KS"></span>
 
 
-The PROPSETID\_VIDCAP\_EXTENSION\_UNIT property set is new for use with the [USB Video Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff568649).
+The PROPSETID\_VIDCAP\_EXTENSION\_UNIT property set is new for use with the [USB Video Class Driver](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver).
 
-This property set is supported for devices that implement a vendor-specific extension unit. Vendor-supplied property pages and applications access this property set through the generic [IKsControl](https://msdn.microsoft.com/library/windows/hardware/ff559766) COM interface.
+This property set is supported for devices that implement a vendor-specific extension unit. Vendor-supplied property pages and applications access this property set through the generic [IKsControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nn-ksproxy-ikscontrol) COM interface.
 
 The KSPROPERTY\_EXTENSION\_UNIT enumeration in *ksmedia.h* specifies the properties of this set.
 

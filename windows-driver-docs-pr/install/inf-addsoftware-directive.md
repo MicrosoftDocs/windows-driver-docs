@@ -57,22 +57,29 @@ SoftwareType=type-code
 [SoftwareID=pfn://x.y.z]
 ```
 
-The **SoftwareType** entry is required.  If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but arguments and flags are optional. If **SoftwareType** is set to 2, **SoftwareID** is required, and flags are optional.
+>[!NOTE]
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on section entries and values.
 
 Any software installed using **AddSoftware** must be installed silently (or quietly). In other words, no user interface can be shown to the user during installation.
 
 Any software installed using **AddSoftware** will **not** be uninstalled if the virtual software component device or its parent devices are uninstalled. If your software is not a UWP app (i.e. you're using **AddSoftware** with a value of 1), please make sure users can easily uninstall it without leaving a trace in the registry. To do so:
 
-* If you're using an MSI installer, set up an [Add/Remove Programs](https://msdn.microsoft.com/library/windows/desktop/aa368032) entry in the application's Windows Installer package.
-* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](https://msdn.microsoft.com/library/windows/desktop/aa372105). 
+* If you're using an MSI installer, set up an [Add/Remove Programs](https://docs.microsoft.com/windows/desktop/Msi/configuring-add-remove-programs-with-windows-installer) entry in the application's Windows Installer package.
+* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](https://docs.microsoft.com/windows/desktop/Msi/uninstall-registry-key). 
 
-## Software-Install Section Entries and Values
+## [software-install-section]: SoftwareType
 
-**SoftwareType**=*type-code*
+`SoftwareType={type-code}`
 
-Specifies the type of software installation.
+**SoftwareType** specifies the type of software installation and is a required entry.
 
-A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for device-specific software that has no graphical user interface.  If you have a device-specific app with graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
+A value of 1 indicates that the associated software is an MSI or EXE binary.  When this value is set, the **SoftwareBinary** entry is also required.  A value of 1 is not supported on Windows 10 S.  
+
+If **SoftwareType** is set to 1, **SoftwareBinary** and **SoftwareVersion** are also required, but **SoftwareArguments** and flags (in the **AddSoftware** directive) are optional. 
+
+Starting in Windows 10 version 1709, a value of 2 indicates that the associated software is a Microsoft Store link.  Use a value of 1 only for device-specific software that has no graphical user interface.  If you have a device-specific app with graphical elements, it should come from the Microsoft Store, and the driver should reference it using **SoftwareType** 2.
+
+If **SoftwareType** is set to 2, **SoftwareID** is required, and flags (in the **AddSoftware** directive) are optional. If **SoftwareType** is set to 2, **SoftwareBinary** and **SoftwareVersion** are not used.
 
 >[!NOTE]
 >When using Type 2 of the AddSoftware directive, it is not required to utilize a Component INF.  The directive can be used in any INF successfully.  An AddSoftware directive of Type 1, however, must be used from a Component INF.
@@ -81,11 +88,13 @@ Do not use AddSoftware to distribute software that is unrelated to a device. For
 Instead, use one of the following options to preinstall an app in an OEM image of Windows 10:
 
 * To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/audit-mode-overview).
-* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop).
+* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop)
 
 For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
-**SoftwareBinary**=*filename*
+## [software-install-section]: SoftwareBinary
+
+`SoftwareBinary={filename}`
 
 Specifies the path to the executable.  The system generates command lines like the following:
 
@@ -95,7 +104,12 @@ Specifies the path to the executable.  The system generates command lines like t
 
 If you use this entry, you must add the executable to the DriverStore by specifying the [INF CopyFiles Directive](inf-copyfiles-directive.md) with  a **DestinationDirs** value of 13.
 
-**SoftwareArguments**=*argument1[, argument2[, … argumentN]]*
+>[!NOTE]
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareBinary** entries and values.
+
+## [software-install-section]: SoftwareArguments
+
+`SoftwareArguments={argument1[, argument2[, … argumentN]]}`
 
 Specifies extension-specific arguments to append to the command line.  You can specify command line arguments that the system simply passes through into the generated command line.  You can also specify special strings called *runtime context variables*.  When you specify a runtime context variable, the system converts it into a device-specific value before appending it to the generated command line.  You can mix and match literal string arguments with runtime context variables.  Supported runtime context variables are:
 
@@ -130,15 +144,26 @@ The above results in:
 
 `<DriverStorePath>\ContosoControlPanel.exe arg1 PCI\VEN_0000&DEV_0001&SUBSYS_00000000&REV_00\0123 arg2`
 
-**SoftwareVersion**=*w.x.y.z*
+>[!NOTE]
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareArguments** entries and values.
+
+## [software-install-section]: SoftwareVersion
+
+`SoftwareVersion={w.x.y.z}`
 
 Specifies the software version.  Each value should not exceed 65535.  When the system encounters a duplicate **SoftwareName**, it checks the **SoftwareVersion** against the previous **SoftwareVersion**.  If it is greater, Windows runs the software.
 
-**SoftwareID**=*x.y.z*
+>[!NOTE]
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareVersion** entries and values.
+
+## [software-install-section]: SoftwareID
+
+`SoftwareID={x.y.z}`
 
 Specifies a Microsoft Store identifier and identifier type.  Currently, only Package Family Name (PFN) is supported.  Use a PFN to reference a Universal Windows Platform (UWP) app using the form `pfn://<x.y.z>`.
 
-<!--add link to related page in UWP docs once it is available-->
+>[!NOTE]
+>See [**SoftwareType**](#software-install-section-softwaretype) for information about constraints on **SoftwareID** entries and values.
 
 ## See Also
 

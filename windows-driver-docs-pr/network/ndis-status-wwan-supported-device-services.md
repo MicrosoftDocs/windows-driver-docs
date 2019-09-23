@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES
 
 
-Miniport drivers use the NDIS\_STATUS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES notification to inform the MB Service about the completion of [OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICES](https://msdn.microsoft.com/library/windows/hardware/hh846220) query requests.
+Miniport drivers use the NDIS\_STATUS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES notification to inform the MB Service about the completion of [OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-enumerate-device-services) query requests.
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](https://msdn.microsoft.com/library/windows/hardware/hh831867) structure.
+This notification uses the [**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services) structure.
 
 Requirements
 ------------
@@ -40,9 +40,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICES](https://msdn.microsoft.com/library/windows/hardware/hh846220)
+[OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-enumerate-device-services)
 
-[**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](https://msdn.microsoft.com/library/windows/hardware/hh831867)
+[**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services)
 
  
 

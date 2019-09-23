@@ -14,22 +14,10 @@ ms.localizationpriority: medium
 
 # Opening and Initializing a 16550 UART-Compatible Interface
 
-
-
-
-
 When Serial is used as a lower-level device filter driver, the following considerations apply to opening and initializing the filter device:
 
--   Serial supports only one open at a time on the filter device.
+- Serial supports only one open at a time on the filter device.
 
--   The filter device is in an undefined state when it is open.
+- The filter device is in an undefined state when it is open.
 
-    A client should initialize the filter device to a known state before using it. A user-mode client can use the [IOCTL\_SERIAL\_SET\_Xxx](https://msdn.microsoft.com/library/windows/hardware/ff547466) requests. Note, however, that a Win32-compliant application must use the communication functions that are supported by the Windows Base Services in the Microsoft Windows SDK. A kernel-mode client can use the IOCTL\_SERIAL\_Xxx and the [IOCTL\_SERIAL\_INTERNAL\_Xxx](https://msdn.microsoft.com/library/windows/hardware/ff547480) requests.
-
- 
-
- 
-
-
-
-
+A client should initialize the filter device to a known state before using it. A user-mode client can use the IOCTL\_SERIAL\_SET\_Xxx requests. Note, however, that a Win32-compliant application must use the communication functions that are supported by the Windows Base Services in the Microsoft Windows SDK. A kernel-mode client can use the IOCTL\_SERIAL\_Xxx and the IOCTL\_SERIAL\_INTERNAL\_Xxx requests. For more information see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddser/) header.

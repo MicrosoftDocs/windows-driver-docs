@@ -20,15 +20,15 @@ ms.localizationpriority: medium
 
 The **FSCTL\_ENUM\_OVERLAY** control code enumerates all the data sources from a backing provider for a specified volume.
 
-To perform this operation, call [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
 
 **Parameters**
 
 <a href="" id="instance--in-"></a>*Instance \[in\]*  
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) only. Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) only. Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) only. The file pointer object specifying the volume to be dismounted. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object specifying the volume to be dismounted. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle--in-"></a>*FileHandle \[in\]*  
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. The file handle of the volume to be dismounted. This parameter is required and cannot be **NULL**.
@@ -37,13 +37,13 @@ To perform this operation, call [**FltFsControlFile**](https://msdn.microsoft.co
 Control code for the operation. Use **FSCTL\_REMOVE\_OVERLAY** for this operation.
 
 <a href="" id="inputbuffer"></a>*InputBuffer*  
-A pointer to the input buffer, which must contain a [**WOF\_EXTERNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn632452) structure.
+A pointer to the input buffer, which must contain a [**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wof_external_info) structure.
 
 <a href="" id="inputbufferlength--in-"></a>*InputBufferLength \[in\]*  
 Set to **sizeof**(WOF\_EXTERNAL\_INFO).
 
 <a href="" id="outputbuffer--out-"></a>*OutputBuffer \[out\]*  
-Pointer to an output buffer which will receive one or more [**WIM\_PROVIDER\_OVERLAY\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn632451) structures for data sources backing the volume.
+Pointer to an output buffer which will receive one or more [**WIM\_PROVIDER\_OVERLAY\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wim_provider_update_overlay_input) structures for data sources backing the volume.
 
 <a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
 Size of the buffer pointed to by *OutputBuffer*, in bytes.
@@ -54,7 +54,7 @@ Specifies the number of bytes written into *OutputBuffer* on successful completi
 Status block
 ------------
 
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
 <table>
 <colgroup>
@@ -92,7 +92,7 @@ Status block
 Remarks
 -------
 
-When enumerating the data sources for the WIM provider, the output buffer will contain an array of [**WIM\_PROVIDER\_OVERLAY\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn632451) structures. The size of the output buffer must be large enough to contain all the overlay entries or the call will return STATUS\_BUFFER\_TOO\_SMALL.
+When enumerating the data sources for the WIM provider, the output buffer will contain an array of [**WIM\_PROVIDER\_OVERLAY\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wim_provider_update_overlay_input) structures. The size of the output buffer must be large enough to contain all the overlay entries or the call will return STATUS\_BUFFER\_TOO\_SMALL.
 
 Additional backing providers will define their own specific enumeration structures.
 
@@ -119,13 +119,13 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988)
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile)
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 
 [**FSCTL\_ADD\_OVERLAY**](fsctl-add-overlay.md)
 
-[**WOF\_EXTERNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn632452)
+[**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wof_external_info)
 
  
 

@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # enableNotListedLanguages XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
 
 The **enableNotListedLanguages** XML element is an empty element that sets the **enableNotListedLanguages** flag to ON, which configures DPInst to enable all of the supported languages that are not explicitly enabled by [**language**](language-xml-element.md) XML elements in a *DPInst.xml* file.
 

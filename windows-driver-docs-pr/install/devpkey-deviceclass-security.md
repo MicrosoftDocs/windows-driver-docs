@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_Security
 
 
-The DEVPKEY_DeviceClass_Security device property represents a security descriptor structure for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_Security device property represents a security descriptor structure for a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
 
 <table>
 <colgroup>
@@ -54,11 +54,11 @@ The DEVPKEY_DeviceClass_Security device property represents a security descripto
 Remarks
 -------
 
-You can set the value of DEVPKEY_DeviceClass_Security either during or after an installation application installs a device setup class. For more information about how to set this property, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212).
+You can set the value of DEVPKEY_DeviceClass_Security either during or after an installation application installs a device setup class. For more information about how to set this property, see [Creating Secure Device Installations](https://docs.microsoft.com/windows-hardware/drivers/install/creating-secure-device-installations).
 
-You can retrieve the value of DEVPKEY_DeviceClass_Security by calling [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090). You can set DEVPKEY_DeviceClass_Security by calling [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128) or [**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132).
+You can retrieve the value of DEVPKEY_DeviceClass_Security by calling [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw). You can set DEVPKEY_DeviceClass_Security by calling [**SetupDiSetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw) or [**SetupDiSetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyexw).
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Security property key. On these earlier versions of Windows, you can use the SPCRP_SECURITY identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550644) and [Setting Device Setup Class SPCRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff550814).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Security property key. On these earlier versions of Windows, you can use the SPCRP_SECURITY identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/retrieving-spcrp-xxx-properties) and [Setting Device Setup Class SPCRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/setting-spcrp-xxx-properties).
 
 Requirements
 ------------
@@ -83,13 +83,13 @@ Requirements
 ## See also
 
 
-[**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086)
+[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090)
+[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128)
+[**SetupDiSetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
 
-[**SetupDiSetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff552132)
+[**SetupDiSetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyexw)
 
  
 

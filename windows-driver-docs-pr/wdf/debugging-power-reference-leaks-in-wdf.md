@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # Debugging Power Reference Leaks in WDF
 
 
-When a Windows Driver Frameworks (WDF) driver calls [**WdfDeviceStopIdle**](https://msdn.microsoft.com/library/windows/hardware/ff546921), the framework increments the device's power reference count. Every successful call to **WdfDeviceStopIdle** must be matched by a call to [**WdfDeviceResumeIdle**](https://msdn.microsoft.com/library/windows/hardware/ff546838) to decrement the power reference count.
+When a Windows Driver Frameworks (WDF) driver calls [**WdfDeviceStopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle), the framework increments the device's power reference count. Every successful call to **WdfDeviceStopIdle** must be matched by a call to [**WdfDeviceResumeIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidle) to decrement the power reference count.
 
-Starting in Kernel-Mode Driver Framework (KMDF) 1.15 and User-Mode Driver Framework (UMDF) 2.15, you can monitor power reference usage by using the [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) and [**!wdfkd.wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) debugger extensions. This functionality is disabled by default for performance reasons, so you need to turn it on with the WdfVerifier application or by manually editing the driver’s service key.
+Starting in Kernel-Mode Driver Framework (KMDF) 1.15 and User-Mode Driver Framework (UMDF) 2.15, you can monitor power reference usage by using the [**!wdfkd.wdfdevice**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdevice) and [**!wdfkd.wdftagtracker**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdftagtracker) debugger extensions. This functionality is disabled by default for performance reasons, so you need to turn it on with the WdfVerifier application or by manually editing the driver’s service key.
 
 ## WdfVerifier
 
@@ -47,7 +47,7 @@ For a UMDF driver:
 ## Driver Code
 
 
-Drivers call [**WdfDeviceStopIdle**](https://msdn.microsoft.com/library/windows/hardware/ff546921) and [**WdfDeviceResumeIdle**](https://msdn.microsoft.com/library/windows/hardware/ff546838) to manage the device’s working power state as follows:
+Drivers call [**WdfDeviceStopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle) and [**WdfDeviceResumeIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceresumeidle) to manage the device’s working power state as follows:
 
 ```cpp
 //
@@ -65,14 +65,14 @@ if (NT_SUCCESS(status)) {
 ## Debugging with WdfKd
 
 
-To display the power references taken on the device, as well as a tag tracker that shows the reference history, use [**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) with verbose flags:
+To display the power references taken on the device, as well as a tag tracker that shows the reference history, use [**!wdfkd.wdfdevice**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdevice) with verbose flags:
 
 ```cpp
 kd> !wdfkd.wdfdevice 0x6d939790 ff
 Power references: 0 !wdftagtracker 0x9ea030a8
 ```
 
-Calling the [**!wdfkd.wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) shows the device’s power reference history:
+Calling the [**!wdfkd.wdftagtracker**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdftagtracker) shows the device’s power reference history:
 
 ```cpp
 kd> !wdftagtracker 0x9ea030a8
@@ -93,7 +93,7 @@ Reference and Release History:
 ## Specifying a Tag
 
 
-Optionally, specify a tag name to facilitate identification of specific power references. To do so, use [**WdfDeviceStopIdleWithTag**](https://msdn.microsoft.com/library/windows/hardware/dn932460) and [**WdfDeviceResumeIdleWithTag**](https://msdn.microsoft.com/library/windows/hardware/dn932459):
+Optionally, specify a tag name to facilitate identification of specific power references. To do so, use [**WdfDeviceStopIdleWithTag**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevicestopidlewithtag) and [**WdfDeviceResumeIdleWithTag**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdeviceresumeidlewithtag):
 
 ```cpp
 status = WdfDeviceStopIdleWithTag(device, FALSE, (PVOID)'oyeH');
@@ -102,7 +102,7 @@ if (NT_SUCCESS(status)) {
 }
 ```
 
-Corresponding [**!wdftagtracker**](https://msdn.microsoft.com/library/windows/hardware/ff566126) sample output:
+Corresponding [**!wdftagtracker**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdftagtracker) sample output:
 
 ```cpp
 (--) 0 ref: Tag 'Heyo' at Time 0x24e40 ticks

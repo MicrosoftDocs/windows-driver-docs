@@ -21,9 +21,9 @@ For more information about the extensible switch data path, see [Hyper-V Extensi
 <a href="" id="standard-port-policies"></a>Standard Port Policies  
 Standard port policies specify security, profile, or virtual LAN (VLAN) properties. These properties are provisioned by object identifier (OID) requests issued by the protocol edge of the extensible switch. If a forwarding extension is not installed and enabled in the extensible switch data path, these policies are enforced by the underlying extensible switch's miniport edge. Otherwise, the forwarding extension enforces these policies if it allows the policy to be provisioned.
 
-Standard port properties are specified by an [**NDIS\_SWITCH\_PORT\_PROPERTY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh598242) enumeration value of **NdisSwitchPortPropertyTypeSecurity**, **NdisSwitchPortPropertyTypeVlan**, and **NdisSwitchPortPropertyTypeProfile**.
+Standard port properties are specified by an [**NDIS\_SWITCH\_PORT\_PROPERTY\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_switch_port_property_type) enumeration value of **NdisSwitchPortPropertyTypeSecurity**, **NdisSwitchPortPropertyTypeVlan**, and **NdisSwitchPortPropertyTypeProfile**.
 
-**Note**  If a forwarding extension does not manage or enforce VLAN port properties, it must return STATUS\_DATA\_NOT\_ACCEPTED for the [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275) and [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598278) requests that add or update the property. VLAN port properties have a property type of **NdisSwitchPortPropertyTypeVlan**.
+**Note**  If a forwarding extension does not manage or enforce VLAN port properties, it must return STATUS\_DATA\_NOT\_ACCEPTED for the [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-add) and [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-update) requests that add or update the property. VLAN port properties have a property type of **NdisSwitchPortPropertyTypeVlan**.
 
  
 
@@ -32,7 +32,7 @@ Custom port policies specify proprietary properties that are defined by an indep
 
 Custom port properties are defined through managed object format (MOF) class definitions. The ISV defines the format of the custom port properties through the MOF class definition. After the MOF file is registered with the WMI management layer, the underlying extensions are provisioned with the custom port policy.
 
-A custom port property is specified by [**NDIS\_SWITCH\_PORT\_PROPERTY\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh598242) enumeration value of **NdisSwitchPortPropertyTypeCustom**. Each custom port property is uniquely defined through a GUID value. The extension manages those custom port properties for which it has been configured with the property's GUID value.
+A custom port property is specified by [**NDIS\_SWITCH\_PORT\_PROPERTY\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_switch_port_property_type) enumeration value of **NdisSwitchPortPropertyTypeCustom**. Each custom port property is uniquely defined through a GUID value. The extension manages those custom port properties for which it has been configured with the property's GUID value.
 
 **Note**  The method by which the extension is configured with the property's GUID value is proprietary to the ISV.
 
@@ -40,13 +40,13 @@ A custom port property is specified by [**NDIS\_SWITCH\_PORT\_PROPERTY\_TYPE**](
 
 Standard and custom port policies are provisioned through the following OID requests:
 
--   The protocol edge issues OID set requests of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275) to notify underlying extensions of the addition of a standard or custom port property.
+-   The protocol edge issues OID set requests of [OID\_SWITCH\_PORT\_PROPERTY\_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-add) to notify underlying extensions of the addition of a standard or custom port property.
 
--   The protocol edge issues OID set requests of [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598278) to notify underlying extensions of the update to a standard or custom port property.
+-   The protocol edge issues OID set requests of [OID\_SWITCH\_PORT\_PROPERTY\_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-update) to notify underlying extensions of the update to a standard or custom port property.
 
--   The protocol edge issues OID set requests of [OID\_SWITCH\_PORT\_PROPERTY\_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598276) to notify underlying extensions of the deletion of a standard or custom port property.
+-   The protocol edge issues OID set requests of [OID\_SWITCH\_PORT\_PROPERTY\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-delete) to notify underlying extensions of the deletion of a standard or custom port property.
 
-A forwarding extension can block the provisioning of the new or updated port policy by vetoing the OID request. The extension does this by completing the OID request with STATUS\_DATA\_NOT\_ACCEPTED. If the extension does not veto the OID request, it must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward the OID request down the extensible switch control path.
+A forwarding extension can block the provisioning of the new or updated port policy by vetoing the OID request. The extension does this by completing the OID request with STATUS\_DATA\_NOT\_ACCEPTED. If the extension does not veto the OID request, it must call [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest) to forward the OID request down the extensible switch control path.
 
 **Note**  If the extension does not veto the OID request, it monitors the status when the request is completed. The extension does this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # WIA Item Flags for Scanner Storage
 
 
-This topic lists the required and optional WIA item flags for the root item and child items of a storage scanner item tree. For a complete list of the WIA item flags and their definitions, see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).
+This topic lists the required and optional WIA item flags for the root item and child items of a storage scanner item tree. For a complete list of the WIA item flags and their definitions, see [**WIA\_IPA\_ITEM\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-flags).
 
 ### Required WIA Item Flags for Scanners Storage
 

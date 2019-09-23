@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_dvd_4_3_pan_scan_within_16_9_pictures_example_gg"></span><span id="DDK_DVD_4_3_PAN_SCAN_WITHIN_16_9_PICTURES_EXAMPLE_GG"></span>
 
 
-In DVD use of MPEG-2 for 4:3 pan-scan within 16:9 pictures, the pan-scan MPEG-2 variables must not violate the restrictions specified in the [**DXVA\_BlendCombination**](https://msdn.microsoft.com/library/windows/hardware/ff563120) structure. These variables must also maintain the following restrictions required by the DVD specification.
+In DVD use of MPEG-2 for 4:3 pan-scan within 16:9 pictures, the pan-scan MPEG-2 variables must not violate the restrictions specified in the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure. These variables must also maintain the following restrictions required by the DVD specification.
 
 <table>
 <colgroup>

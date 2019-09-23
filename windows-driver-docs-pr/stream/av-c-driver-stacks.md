@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-As AV/C devices are added to and removed from the IEEE 1394 bus, the Plug and Play manager loads and unloads the corresponding subunit drivers. Vendors implement unique AV/C subunit functionality by writing a subunit driver that Windows loads onto the IEEE 1394 stack above *Avc.sys*. *Avc.sys* uses functionality provided by the underlying IEEE 1394 and IEC-61883 drivers to control devices and to connect and manage plugs. For more information about these underlying driver stacks, see [The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867) and [IEC-61883 Client Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537188).
+As AV/C devices are added to and removed from the IEEE 1394 bus, the Plug and Play manager loads and unloads the corresponding subunit drivers. Vendors implement unique AV/C subunit functionality by writing a subunit driver that Windows loads onto the IEEE 1394 stack above *Avc.sys*. *Avc.sys* uses functionality provided by the underlying IEEE 1394 and IEC-61883 drivers to control devices and to connect and manage plugs. For more information about these underlying driver stacks, see [The IEEE 1394 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/the-ieee-1394-driver-stack) and [IEC-61883 Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-client-drivers).
 
 The peer driver stack is for subunits on external AV/C devices. In contrast, the virtual driver stack is a separate driver stack that exposes the computer as an AV/C device to other AV/C devices that are connected on the IEEE 1394 bus. The following diagram demonstrates the two different *Avc.sys* stacks.
 

@@ -45,7 +45,7 @@ The audio driver for the offload-capable hardware solution uses **KSPROPERTY\_AU
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via filter</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh450862" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_DESCRIPTOR&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450862)"><strong>KSAUDIOENGINE_DESCRIPTOR</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor" data-raw-source="[&lt;strong&gt;KSAUDIOENGINE_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor)"><strong>KSAUDIOENGINE_DESCRIPTOR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -81,7 +81,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIOENGINE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/hh450862)
+[**KSAUDIOENGINE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_tagksaudioengine_descriptor)
 
 [**KSPROPERTY\_AUDIOENGINE**](ksproperty-audioengine.md)
 

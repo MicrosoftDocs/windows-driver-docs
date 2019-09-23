@@ -19,7 +19,7 @@ You can automate the process for building a private version of an inbox driver t
    $(O)\sample.inf
    ```
 
-2. Add directives to the *Makefile* that will generate a new INF file and execute the [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) tool to time stamp the INF file. For example, the following code example shows how you can create and time stamp an INF file that is named *Sample.inf*:
+2. Add directives to the *Makefile* that will generate a new INF file and execute the [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) tool to time stamp the INF file. For example, the following code example shows how you can create and time stamp an INF file that is named *Sample.inf*:
 
    ```cpp
    $(O)\ sample.inf: $(_INX)\ sample.inx $(_LNG)\ sample.txt
@@ -30,7 +30,7 @@ You can automate the process for building a private version of an inbox driver t
        $(TSBINPLACE_CMD)
    ```
 
-   The following [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) command-line parameters are used in this example:
+   The following [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) command-line parameters are used in this example:
 
    - The -d \* parameter uses the current date as part of the DriverVer directive in the INF file.
    - The **-v \\*** parameter uses the current time for the version number. If the STAMPINF_VERSION environment variable is set, Stampinf uses the version number value that is specified by this environment variable.
@@ -40,7 +40,7 @@ You can automate the process for building a private version of an inbox driver t
 
      
 
-Once the driver is built, you must sign the [driver package](driver-packages.md) and must use the same [catalog file](catalog-files.md) that was specified in the **-c** parameter of [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) within your *Makefile*. To sign the driver package, follow the steps that are outlined in [Signing Drivers During Development and Test](signing-drivers-during-development-and-test.md).
+Once the driver is built, you must sign the [driver package](driver-packages.md) and must use the same [catalog file](catalog-files.md) that was specified in the **-c** parameter of [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) within your *Makefile*. To sign the driver package, follow the steps that are outlined in [Signing Drivers During Development and Test](signing-drivers-during-development-and-test.md).
 
  
 

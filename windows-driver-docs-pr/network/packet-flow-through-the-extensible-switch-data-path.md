@@ -48,7 +48,7 @@ The extensible switch data path has the following parts, listed in the order tha
 
 2.  In NDIS 6.40 (Windows Server 2012 R2) and later, if the packet is an NVGRE packet from an external network adapter, the extensible switch sets the **NativeForwardingRequired** flag in the packet's out-of-band (OOB) information. For more information, see [Hybrid Forwarding](hybrid-forwarding.md).
 
-3.  If the packet arrived on a port where the traffic has a virtual subnet, the extensible switch sets the **VirtualSubnetId** member of the [**NDIS\_NET\_BUFFER\_LIST\_VIRTUAL\_SUBNET\_INFO**](https://msdn.microsoft.com/library/windows/hardware/jj614359) structure for the packet.
+3.  If the packet arrived on a port where the traffic has a virtual subnet, the extensible switch sets the **VirtualSubnetId** member of the [**NDIS\_NET\_BUFFER\_LIST\_VIRTUAL\_SUBNET\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_net_buffer_list_virtual_subnet_info) structure for the packet.
 
     **Note**  The virtual subnet could be an HNV subnet or a third-party virtual subnet.
 
@@ -56,7 +56,7 @@ The extensible switch data path has the following parts, listed in the order tha
 
 ### Ingress data path
 
-1.  An extension obtains a packet from the ingress data path when its [*FilterSendNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549966) function is called. The extension forwards the packet to underlying extensions on the ingress data path by calling [**NdisFSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562616). Filtering and forwarding extensions can also drop the packet from the ingress data path by calling [**NdisFSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff562618).
+1.  An extension obtains a packet from the ingress data path when its [*FilterSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_send_net_buffer_lists) function is called. The extension forwards the packet to underlying extensions on the ingress data path by calling [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsendnetbufferlists). Filtering and forwarding extensions can also drop the packet from the ingress data path by calling [**NdisFSendNetBufferListsComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsendnetbufferlistscomplete).
 
 2.  When capturing extensions obtain packets on the ingress data path, they can inspect the packet data. However, capturing extensions must not complete the send requests for packets on the ingress data path. These extensions must always forward the packets to underlying extensions in the extensible switch driver stack.
 
@@ -133,11 +133,11 @@ In addition, the forwarding extension can do the following:
 
 ### Egress data path
 
-1.  An extension obtains a packet from the egress data path when its [*FilterReceiveNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549960) function is called. The extension forwards the packet to overlying extensions on the egress data path by calling [**NdisFIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561820). Filtering and forwarding extensions can also drop the packet from the egress data path by calling [**NdisFReturnNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562613).
+1.  An extension obtains a packet from the egress data path when its [*FilterReceiveNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_receive_net_buffer_lists) function is called. The extension forwards the packet to overlying extensions on the egress data path by calling [**NdisFIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatereceivenetbufferlists). Filtering and forwarding extensions can also drop the packet from the egress data path by calling [**NdisFReturnNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreturnnetbufferlists).
 
 2.  When the forwarding extension obtains a packet on the egress data path, it can inspect the packet's destination port information in the OOB data.
 
-    **Note**  The extension obtains this information from the OOB data by calling [*GetNetBufferListDestinations*](https://msdn.microsoft.com/library/windows/hardware/hh598157).
+    **Note**  The extension obtains this information from the OOB data by calling [*GetNetBufferListDestinations*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_get_net_buffer_list_destinations).
 
 
 
@@ -153,10 +153,10 @@ Based on standard or custom switch or port policies, the extension can exclude t
 
     For more information, see [Cloning or Packet Traffic](cloning-or-duplicating-packet-traffic.md).
 
-5.  When capturing extensions obtain packets on the egress data path, they can inspect the packet data. However, if the capturing extension needs to originate packets in order to report traffic conditions to a remote monitoring application, it must originate this packet traffic by calling [**NdisFSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff562616) to initiate a send operation on the ingress data path.
+5.  When capturing extensions obtain packets on the egress data path, they can inspect the packet data. However, if the capturing extension needs to originate packets in order to report traffic conditions to a remote monitoring application, it must originate this packet traffic by calling [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsendnetbufferlists) to initiate a send operation on the ingress data path.
 
 6.  When the packet arrives at the overlying protocol edge of the extensible switch, the extensible switch interface forwards the packet to all specified destination ports.
 
-7.  Once the packet has been forwarded, the interface completes the packet through the same path in reverse. First, the interface calls the extension's [*FilterReturnNetBufferLists*](https://msdn.microsoft.com/library/windows/hardware/ff549964) function to complete packets forwarded on the egress data path. Then, the interface calls the extension's [*FilterSendNetBufferListsComplete*](https://msdn.microsoft.com/library/windows/hardware/ff549967) function to complete packets forwarded on the ingress data path.
+7.  Once the packet has been forwarded, the interface completes the packet through the same path in reverse. First, the interface calls the extension's [*FilterReturnNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_return_net_buffer_lists) function to complete packets forwarded on the egress data path. Then, the interface calls the extension's [*FilterSendNetBufferListsComplete*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_send_net_buffer_lists_complete) function to complete packets forwarded on the ingress data path.
 
     When the packet is completed on both the egress and ingress data path, the extension performs any necessary packet cleanup and post-processing that may be required.

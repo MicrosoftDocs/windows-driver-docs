@@ -30,7 +30,7 @@ During the **Scan** step, SDV scans your driver's code for function role type de
 
 ### <span id="check"></span><span id="CHECK"></span>Check
 
-During the **Check** step, SDV prepares for and verifies the driver by using the rules that you selected for the verification. For more information about the rules that you can select, see [Static Driver Verifier Rules](https://msdn.microsoft.com/library/windows/hardware/ff551714).
+During the **Check** step, SDV prepares for and verifies the driver by using the rules that you selected for the verification. For more information about the rules that you can select, see [Static Driver Verifier Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
 
 SDV begins by determining if the selected rules require additional components of the operating system model. If they do, SDV copies the additional operating system model files into the driver's sources directory.
 

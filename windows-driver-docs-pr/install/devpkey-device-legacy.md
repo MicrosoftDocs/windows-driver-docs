@@ -52,7 +52,7 @@ Remarks
 
 The PnP manager sets the value of DEVPKEY_Device_Reported to DEVPROP_TRUE if the PnP manager automatically created the device as a root-enumerated device when the non-PnP driver for the device was loaded. Otherwise, the PnP manager sets the value of the property to DEVPROP_FALSE.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Legacy.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Legacy.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
@@ -79,7 +79,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

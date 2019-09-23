@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CHANGE_OPERATION_MODE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE
@@ -24,7 +25,7 @@ OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE configures the operation mode for the po
 
 | TLV                                                              | Multiple TLV instances allowed | Optional | Description                 |
 |------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
-| [**WDI\_TLV\_OPERATION\_MODE**](https://msdn.microsoft.com/library/windows/hardware/dn897856) |                                |          | The desired operation mode. |
+| [**WDI\_TLV\_OPERATION\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-operation-mode) |                                |          | The desired operation mode. |
 
  
 
@@ -32,6 +33,7 @@ OID\_WDI\_TASK\_CHANGE\_OPERATION\_MODE configures the operation mode for the po
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_CHANGE\_OPERATION\_MODE\_COMPLETE](ndis-status-wdi-indication-change-operation-mode-complete.md)
+
 Requirements
 ------------
 

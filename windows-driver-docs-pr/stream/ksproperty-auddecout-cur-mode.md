@@ -75,7 +75,7 @@ The audio miniport driver get-property handler returns the current mode of the d
 
 We recommend that you specify a default value for the KSPROPERTY\_AUDDECOUT\_CUR\_MODE property in the minidriver's serialized property set in the registry.
 
-For more information, see [Audio Miniport Drivers](https://msdn.microsoft.com/library/windows/hardware/ff536206).
+For more information, see [Audio Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-miniport-drivers).
 
 Requirements
 ------------

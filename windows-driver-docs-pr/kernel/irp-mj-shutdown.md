@@ -35,7 +35,7 @@ Operation
 
 The driver must complete the transfer of any data currently cached in the device or held in the driver's internal buffers before completing the shutdown request.
 
-A driver does not receive an **IRP\_MJ\_SHUTDOWN** request for a device object unless it registers to do so with either [**IoRegisterShutdownNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549541) or [**IoRegisterLastChanceShutdownNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549518).
+A driver does not receive an **IRP\_MJ\_SHUTDOWN** request for a device object unless it registers to do so with either [**IoRegisterShutdownNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregistershutdownnotification) or [**IoRegisterLastChanceShutdownNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterlastchanceshutdownnotification).
 
 Requirements
 ------------
@@ -58,9 +58,9 @@ Requirements
 
 [*DispatchShutdown*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
 
-[**IoRegisterLastChanceShutdownNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549518)
+[**IoRegisterLastChanceShutdownNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterlastchanceshutdownnotification)
 
-[**IoRegisterShutdownNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549541)
+[**IoRegisterShutdownNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregistershutdownnotification)
 
  
 

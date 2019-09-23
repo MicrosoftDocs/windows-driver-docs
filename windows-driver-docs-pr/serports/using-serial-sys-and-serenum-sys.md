@@ -20,11 +20,7 @@ ms.localizationpriority: medium
 
 # Using Serial.sys and Serenum.sys
 
-
-
-
-
-Starting with Windows 2000, the following system components are available for use with serial controller devices that have hardware interfaces that are compatible with the 16550 universal asynchronous receiver-transmitter (UART):
+The following system components are available for use with serial controller devices that have hardware interfaces that are compatible with the 16550 universal asynchronous receiver-transmitter (UART):
 
 -   Serial and Serenum drivers
 
@@ -34,27 +30,27 @@ Starting with Windows 2000, the following system components are available for us
 
     For more information about the operation of Serial and Serenum, see the following topics:
 
-    -   [Serial Controller Drivers Overview](serial-drivers-overview.md)
-    -   [Features of Serial and Serenum](features-of-serial-and-serenum.md)
-    -   [Configuration of Serial Devices and Drivers](configuration-of-serial-devices-and-drivers.md)
-    -   [Operation of Serenum and Serial](operation-of-serenum-and-serial.md)
-    -   [Registry Settings for Serial](registry-settings-for-serial.md)
-    -   [Registry Settings for Serenum](registry-settings-for-serenum.md)
-    -   [Serial Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff547476)
-    -   [Serenum Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff547040)
-    -   Data definitions in the Ntddser.h header file in the WDK.
+    - [Serial Controller Drivers Overview](serial-drivers-overview.md)
+    - [Features of Serial and Serenum](features-of-serial-and-serenum.md)
+    - [Configuration of Serial Devices and Drivers](configuration-of-serial-devices-and-drivers.md)
+    - [Operation of Serenum and Serial](operation-of-serenum-and-serial.md)
+    - [Registry Settings for Serial](registry-settings-for-serial.md)
+    - [Registry Settings for Serenum](registry-settings-for-serenum.md)
+    - [Serial Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+    - [Serenum Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+    - Data definitions in the Ntddser.h header file in the WDK.
 
 <!-- -->
 
--   Ports [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509)
+- Ports [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes)
 
     The Ports class includes *serial ports* and *COM ports*. A serial port is a serial communication hardware interface on a 16550 UART or compatible device. An RS-232 port on a computer is typically a DB-9 or DB-25 connector that is electrically connected to the serial port on a UART. A COM port is a serial port that complies with additional Windows-specific requirements. For more information, see [Configuration of COM Ports](configuration-of-com-ports.md).
 
--   COM port [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339)
+- COM port [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes)
 
-    You must use a COM port device interface to access a COM port. (The GUID for the COM port device interface class is [**GUID\_DEVINTERFACE\_COMPORT**](https://msdn.microsoft.com/library/windows/hardware/ff545821).)
+    You must use a COM port device interface to access a COM port. (The GUID for the COM port device interface class is [**GUID\_DEVINTERFACE\_COMPORT**](https://docs.microsoft.com/windows-hardware/drivers/install/guid-devinterface-comport).)
 
--   [COM port database](com-port-database.md) and [COM port database support routines](https://msdn.microsoft.com/library/windows/hardware/ff546483)
+- [COM port database](com-port-database.md) and [COM port database support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
     The COM port database arbitrates the use of COM port numbers by COM ports.
 
@@ -64,19 +60,10 @@ For general information about the high-level operation of a serial device, see t
 
 ## Serial driver samples
 
-
 These samples demonstrates serial drivers.
 
--   The [Serial](https://go.microsoft.com/fwlink/p/?LinkId=617962) sample builds a function driver for serial devices.
--   The [Serenum](https://go.microsoft.com/fwlink/p/?LinkId=617961) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
--   A simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem).
+- The [Serial](https://go.microsoft.com/fwlink/p/?LinkId=617962) sample builds a function driver for serial devices.
+- The [Serenum](https://go.microsoft.com/fwlink/p/?LinkId=617961) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
+- A simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem).
     -   [The Virtual serial driver sample (UMDF 1.0)](https://go.microsoft.com/fwlink/p/?LinkId=617963)
     -   [The Virtual serial2 driver sample (KMDF)](https://go.microsoft.com/fwlink/p/?LinkId=722209)
-
- 
-
- 
-
-
-
-

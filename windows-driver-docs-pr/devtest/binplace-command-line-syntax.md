@@ -55,7 +55,7 @@ Causes BinPlace to verify the executable file. *LCFile* specifies the localizati
 Causes BinPlace to create hard links instead of copying the file when placing files. This option is only available on the NTFS file system.
 
 <span id="-j"></span><span id="-J"></span>**-j**  
-Causes BinPlace to verify that the proper symbols exist before copying any executable files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) for details.)
+Causes BinPlace to verify that the proper symbols exist before copying any executable files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.)
 
 <span id="-k"></span><span id="-K"></span>**-k**  
 Causes BinPlace to preserve file attributes. By default, BinPlace will turn off the archive attribute.
@@ -112,7 +112,7 @@ Causes BinPlace to use a custom application to validate all executable files. Yo
 Causes BinPlace to only place files whose archive attributes are set.
 
 <span id="-_DBG"></span><span id="-_dbg"></span>**-:DBG**  
-Prevents BinPlace from placing .dbg files. If the **-j** switch is also used, this will prevent BinPlace from placing binaries that point to .dbg files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) for details.)
+Prevents BinPlace from placing .dbg files. If the **-j** switch is also used, this will prevent BinPlace from placing binaries that point to .dbg files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.)
 
 <span id="-_DEST_ClassPath"></span><span id="-_dest_classpath"></span><span id="-_DEST_CLASSPATH"></span>**-:DEST** *ClassPath*  
 Causes BinPlace to ignore the place file and use the specified *ClassPath* as the class subdirectory. See [BinPlace Destination Directories](binplace-destination-directories.md) for details.

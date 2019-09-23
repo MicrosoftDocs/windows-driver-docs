@@ -81,9 +81,9 @@ Requirements
 ## See also
 
 
-[**FECMethod**](https://msdn.microsoft.com/library/windows/hardware/ff559594)
+[**FECMethod**](https://docs.microsoft.com/previous-versions/windows/desktop/mstv/fecmethod)
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
+[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
 
  
 

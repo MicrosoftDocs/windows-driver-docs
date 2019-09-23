@@ -19,7 +19,7 @@ Processors must be enumerated in the ACPI namespace. Processors are declared und
 
 ## Display-specific objects
 
-For more information about display-specific objects, see Appendix B, "Video Extensions", of the [ACPI 5.0 specification](https://www.uefi.org/specifications).
+For more information about display-specific objects, see Appendix B, "Video Extensions", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ### Display-Specific Object Requirements
 
@@ -80,7 +80,7 @@ In addition to selective suspend, internal USB devices connected to XHCI control
 
 Windows needs to know the visibility and connect-ability of USB Ports on the system. This is required in order to provide accurate information to the user about ports and devices. Two objects, Physical Device Location (\_PLD) and USB Port Capabilities (\_UPC), are used for this purpose. For more information, see the following:
 
-- Sections 6.1.6, "Device Identification Objects", and 9.13.1, "USB 2.0 Host Controllers and \_UPC and \_PLD", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
+- Sections 6.1.6, "Device Identification Objects", and 9.13.1, "USB 2.0 Host Controllers and \_UPC and \_PLD", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 - [Using ACPI to Configure USB Ports on a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/using-acpi-to-configure-usb-ports-on-a-computer).
 
 ## SD host controllers and devices
@@ -142,13 +142,13 @@ Camera devices may be enumerated by the graphics driver or by USB. In either cas
 - The camera device to provide the \_PLD object.
 - If there are any sideband resources required by the camera driver (such as GPIO interrupt or I/O connections, or an SPB connection), the \_CRS object is provided for these resources.
 
-In the \_PLD object, the **Panel** field (bits 67-69), **Lid** field (bit 66) and **Dock** field (bit 65) are set to correct values for the surface on which the camera is mounted. All other fields are optional. For handheld mobile devices, including tablets, the front panel is the one holding the display screen, and its origin is in the lower-left corner when the display is viewed in the portrait orientation. Using this reference, "Front" indicates that the camera views the user (webcam), while "Back" indicates that the camera views away from the user (still or video camera). For more information, see, section 6.1.8, "\_PLD (Physical Location of Device)", in the [ACPI 5.0 specification](https://www.uefi.org/specifications).
+In the \_PLD object, the **Panel** field (bits 67-69), **Lid** field (bit 66) and **Dock** field (bit 65) are set to correct values for the surface on which the camera is mounted. All other fields are optional. For handheld mobile devices, including tablets, the front panel is the one holding the display screen, and its origin is in the lower-left corner when the display is viewed in the portrait orientation. Using this reference, "Front" indicates that the camera views the user (webcam), while "Back" indicates that the camera views away from the user (still or video camera). For more information, see, section 6.1.8, "\_PLD (Physical Location of Device)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ### ACPI namespace hierarchy and \_ADR for embedded USB devices
 
 When adding embedded USB devices to the ACPI namespace, the hierarchy of the device nodes must exactly match that of the devices that are enumerated by the Windows USB driver. This can be determined by examining Windows Device Manager in its "View by Connection" mode. The entire hierarchy, starting from the USB host controller and extending down to the embedded device, must be included. The "Address" property provided in Device Manager for each device is the address that the firmware must report in the device's \_ADR.
 
-The [ACPI 5.0 specification](https://www.uefi.org/specifications) defines the addresses for USB devices as follows:
+The [ACPI 5.0 specification](https://uefi.org/specifications) defines the addresses for USB devices as follows:
 
 |              |                                                                                                                  |
 |--------------|------------------------------------------------------------------------------------------------------------------|

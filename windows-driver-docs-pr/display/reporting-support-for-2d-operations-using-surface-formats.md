@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_reporting_support_for_2d_operations_using_surface_formats_gg"></span><span id="DDK_REPORTING_SUPPORT_FOR_2D_OPERATIONS_USING_SURFACE_FORMATS_GG"></span>
 
 
-The driver specifies flags in the **dwOperations** member of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274) structure for a surface's format to indicate that it can perform 2D operations using that format.
+The driver specifies flags in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat) structure for a surface's format to indicate that it can perform 2D operations using that format.
 
 For example, the driver can indicate that it can copy to or from and color fill to a surface by setting the D3DFORMAT\_OP\_OFFSCREENPLAIN flag.
 

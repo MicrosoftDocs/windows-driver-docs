@@ -11,7 +11,7 @@ Starting with version 1709, Windows 10 Desktop (Pro and S editions) can run on m
 
 ## Setup
 
-1. Download [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/).  You'll need at minimum version 15.4.0 Preview 2.0.
+1. Download [Visual Studio 2017 Preview](https://visualstudio.microsoft.com/vs/preview/).  You'll need at minimum version 15.4.0 Preview 2.0.
 2. On the Windows start menu, type **Visual Studio Installer**.  Then on the **Workloads** tab, select **Desktop development with C++**.  
 ![Selecting Desktop development with C++ from Windows options on Workloads tile](images/VS-workloads.png)
 

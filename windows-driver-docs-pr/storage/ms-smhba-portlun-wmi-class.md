@@ -29,7 +29,7 @@ class MS_SMHBA_PORTLUN
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_PORTLUN**](https://msdn.microsoft.com/library/windows/hardware/ff563169)
+[**MS\_SMHBA\_PORTLUN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_ms_smhba_portlun)
 
 There are no methods associated with this WMI class.
 

@@ -4,11 +4,10 @@
   href: what-s-new-in-driver-development.md
 - name: "Download the Windows Driver Kit (WDK)"
   href: download-the-wdk.md
-  items: 
-  - name: "Installing preview versions of the WDK"
-    href: installing-preview-versions-wdk.md
-  - name: "Other WDK downloads"
-    href: other-wdk-downloads.md
+- name: "Installing preview versions of the WDK"
+  href: installing-preview-versions-wdk.md
+- name: "Other WDK downloads"
+  href: other-wdk-downloads.md
 - name: "Bring up guide"
   href: bringup/index.md
 - name: "Developing, Testing, and Deploying Drivers"
@@ -27,9 +26,10 @@
   href: debugger/index.md
 - name: "Windows Store Device Apps"
   href: devapps/index.md
-- name: "Device and Driver Technologies"
-  href: device-and-driver-technologies.md
+- name: "Driver Technologies"
   items: 
+  - name: "Overview of Driver Technologies"
+    href: device-and-driver-technologies.md
   - name: "3D print devices"
     href: 3dprint/index.md
   - name: "ACPI"

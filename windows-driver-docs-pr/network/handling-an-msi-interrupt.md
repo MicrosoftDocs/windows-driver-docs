@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 
 
-NDIS calls the [*MiniportMessageInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559407) function when a network interface card (NIC) generates an interrupt. The *MessageId* parameter in this function identifies the MSI-X message.
+NDIS calls the [*MiniportMessageInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_message_interrupt) function when a network interface card (NIC) generates an interrupt. The *MessageId* parameter in this function identifies the MSI-X message.
 
 *MiniportMessageInterrupt* should always return **TRUE** after processing the interrupt because message interrupts are not shared.
 
-A miniport driver should do as little work as possible in its *MiniportMessageInterrupt* function. The driver should defer I/O operations to the [*MiniportMessageInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff559411) function, which NDIS calls to complete the deferred processing of an interrupt.
+A miniport driver should do as little work as possible in its *MiniportMessageInterrupt* function. The driver should defer I/O operations to the [*MiniportMessageInterruptDpc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_message_interrupt_dpc) function, which NDIS calls to complete the deferred processing of an interrupt.
 
-To queue additional deferred procedure calls (DPCs) after [*MiniportMessageInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559407) returns, the miniport driver sets the bits of the *TargetProcessors* parameter of the *MiniportMessageInterrupt* function. To request additional DPCs from *MiniportMessageInterrupt* or *MiniportMessageInterruptDPC*, the miniport driver can call the [**NdisMQueueDpc**](https://msdn.microsoft.com/library/windows/hardware/ff563637) function.
+To queue additional deferred procedure calls (DPCs) after [*MiniportMessageInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_message_interrupt) returns, the miniport driver sets the bits of the *TargetProcessors* parameter of the *MiniportMessageInterrupt* function. To request additional DPCs from *MiniportMessageInterrupt* or *MiniportMessageInterruptDPC*, the miniport driver can call the [**NdisMQueueDpc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismqueuedpc) function.
 
 The miniport driver can call **NdisMQueueDpc** to request additional DPCs for other processors.
 

@@ -1,7 +1,7 @@
 ---
 Description: The easiest way to write a Windows desktop app that communicates with a USB device, is by using the C/C++ WinUSB template.
 title: Write a Windows desktop app based on the WinUSB template
-ms.date: 04/20/2017
+ms.date: 07/16/2019
 ms.localizationpriority: medium
 ---
 
@@ -10,56 +10,79 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [SetupAPI Functions](https://msdn.microsoft.com/library/windows/hardware/ff550855)
--   [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)
+-   [SetupAPI Functions](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi)
+-   [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)
 
 The easiest way to write a Windows desktop app that communicates with a USB device, is by using the C/C++ WinUSB template. For this template, you need an integrated environment with the Windows Driver Kit (WDK) (with Debugging Tools for Windows) and Microsoft Visual Studio (Professional or Ultimate). You can use the template as a starting point.
 
 ## Prerequisites
 
 
--   To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2012 or Microsoft Visual Studio Professional 2012 and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](https://go.microsoft.com/fwlink/p/?linkid=239721).
--   Debugging Tools for Windows is included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=235427).
+-   To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2019 or Microsoft Visual Studio Professional 2019 and then install the WDK. You can find information about how to get Visual Studio and the WDK [here](https://go.microsoft.com/fwlink/p/?linkid=239721).
+-   Debugging Tools for Windows are included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=235427).
 
 ## Creating a WinUSB application
 
-
 To create an application from the template:
 
-1.  Open Microsoft Visual Studio. On the **File** menu, choose **New** &gt; **Project**. The **New Project** dialog box opens, as shown in the following screen shot.
-2.  In the **New Project** dialog box, in the left pane, locate and select **USB**.
-3.  In the middle pane, select **WinUSB application.**
-4.  In the **Name** field, if you want, change the project name. In this topic, we'll use the default name.
-5.  In the **Location** field, enter the directory where you want to create the new project.
-6.  Check **Create directory for solution**. Click **OK**.
+1.  In the **New Project** dialog box, in the search box at the top, type **USB.**
+2.  In the middle pane, select **WinUSB Application (Universal)**.
+3.  Click **Next**.
+4.  Enter a project name, choose a save location, and click **Create**.
 
-    ![winusb template in visual studio](images/winusb-template.png)
+    The following screenshots show the **New Project** dialog box for the **WinUSB Application (Universal)** template.
 
-    Visual Studio creates two projects and a solution. You can see the solution, the two projects, and the files that belong to each project in the **Solution Explorer** window, as shown in the following screen shot. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution contains a C++ application project named USB Application1 and a driver package project named USB Application1 Package. If you want to look at the application source code, you can open any of the files that appear under **Source Files**.
+    ![winusb template new project creation first screen](images/winusb-template-creation-1.png)
 
-    ![winusb template solution explorer](images/winusb-template1.png)
+    ![winusb template new project creation second screen](images/winusb-template-creation-2.png)
 
-    The USB Application1 project has source files for the application.
+    This topic assumes that the name of the Visual Studio project is *USB Application1*.
+
+    Visual Studio creates one project and a solution. You can see the solution, the project, and the files that belong to the project in the **Solution Explorer** window, as shown in the following screen shot. (If the **Solution Explorer** window is not visible, choose **Solution Explorer** from the **View** menu.) The solution contains a C++ application project named USB Application1.
+
+    ![winusb template solution explorer 1](images/winusb-template-solution-explorer-1.png)
+
+    The USB Application1 project has source files for the application. If you want to look at the application source code, you can open any of the files that appear under **Source Files**.  
+    
+5. Add a driver package project to the solution. Right-click the solution (Solution 'USB Application1'), then click **Add** \> **New Project** as shown in the following screenshot.
+
+    ![winusb template creation second project addition](images/winusb-template-creation-3.png)
+
+6. In the **New Project** dialog box, in the search box at the top, once again type **USB.**
+7.  In the middle pane, select **WinUSB INF Driver Package**.
+8.  Click **Next**.
+9.  Enter a project name, then click **Create**.
+
+    The following screenshots show the **New Project** dialog box for the **WinUSB INF Driver Package** template.
+
+    ![winusb template second project creation first screen](images/winusb-template-creation-4.png)
+
+    ![winusb template second project creation second screen](images/winusb-template-creation-5.png)
+
+    This topic assumes that the name of the Visual Studio project is *USB Application1 Package*.        
 
     The USB Application1 Package project contains an INF file that is used to install Microsoft-provided Winusb.sys driver as the device driver.
 
-7.  In the INF file, USBApplication1.inf, locate these lines:
+    Your **Solution Explorer** should now contain both projects, as shown in the following screenshot.
+
+    ![winusb template solution explorer 2](images/winusb-template-solution-explorer-2.png)
+
+10.  In the INF file, USBApplication1.inf, locate these lines:
 
     `%DeviceName% =USB_Install, USB\VID_vvvv&PID_pppp`
 
-8.  Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
-9.  In the **Solution Explorer** window, right-click **Solution 'USB Application1' (2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Win8.1 Debug and x64, as shown in the following screen shot.
+11.  Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
+12.  In the **Solution Explorer** window, right-click **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
 
-    ![winusb application template](images/winusb-template2.png)
+![winusb application template](images/winusb-template-configuration-manager.png)
 
 ## Building, deploying and debugging the project
 
-
-So far in this exercise, you've used Visual Studio to build your projects. Next you need to configure the device to which the device is connected. The template requires that the Winusb driver is installed as the driver for your device.
+So far in this exercise, you've used Visual Studio to create your projects. Next you need to configure the device to which the device is connected. The template requires that the Winusb driver is installed as the driver for your device.
 
 Your testing and debugging environment can have:
 
--   Two computer setup: the host computer and the target computer. You develop and build your project in Visual Studio on the host computer. The debugger runs on the host computer and is available in the Visual Studio user interface. When you test and debug the application, it driver runs on the target computer.
+-   Two computer setup: the host computer and the target computer. You develop and build your project in Visual Studio on the host computer. The debugger runs on the host computer and is available in the Visual Studio user interface. When you test and debug the application, the driver runs on the target computer.
 
 -   Single computer setup: Your target and host run on one computer. You develop and build your project in Visual Studio, and run the debugger and the application.
 
@@ -67,9 +90,8 @@ You can deploy, install, load, and debug your application and the driver by foll
 
 -   **Two computer setup**
 
-    1.  Provision your target computer by following the instructions in [Provision a computer for driver deployment and testing](https://msdn.microsoft.com/library/windows/hardware/dn745909).
-        **Note**  
-        Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. 
+    1.  Provision your target computer by following the instructions in [Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+        **Note:**  Provisioning creates a user on the target machine named, WDKRemoteUser. After provisioning is complete you will see the user switch to WDKRemoteUser. 
     2.  On the host computer, open your solution in Visual Studio.
     3.  In main.cpp add this line before the OpenDevice call.
 
@@ -81,21 +103,22 @@ You can deploy, install, load, and debug your application and the driver by foll
 
         `#include <cstdlib>`
 
-        This include statement is required for the system() call in the preceding step.
+        This include statement is required for the `system()` call in the preceding step.
 
     5.  In the **Solution Explorer** window, right-click USB Application1 Package, and choose **Properties**.
     6.  In the **USB Application1 Package Property Pages** window, in the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown in the following screen shot.
-    7.  Check **Enable deployment**, and check **Remove previous driver versions before deployment**.
+    7.  Check **Remove previous driver versions before deployment**.
     8.  For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named dbg-target.
-    9.  Select **Install and Verify**. Click **OK**.
+    9.  Select **Install/Reinstall and Verify**. Click **Apply**.
 
-        ![winusb template](images/winusb-template4.png)
+        ![winusb template deployment](images/winusb-template-deployment.png)
 
     10. In the property page, navigate to **Configuration Properties &gt; Debugging**, and select **Debugging Tools for Windows – Remote Debugger**, as shown in the following screen shot.
 
-        ![winusb template debug setting](images/winusb-template5.png)
+        ![winusb template remote debugger](images/winusb-template-remote-debugger.png)
 
-    11. Select **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
+    11. Select **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've built the project for an x64 system running Windows 10.
+    12. Select **Deploy Solution** from the **Build** menu. 
 
 On the target computer, you will see driver install scripts running. The driver files are copied to the %Systemdrive%\\drivertest\\drivers folder on the target computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present %systemdrive%\\drivertest\\drivers folder. The device must appear in Device Manager without errors.
 
@@ -103,7 +126,7 @@ On the host computer, you will see this message in the **Output** window.
 
 ```syntax
 Deploying driver files for project 
-"<path>\visual studio 12\Projects\USB Application1\USB Application1 Package\USB Application1 Package.vcxproj".  
+"<path>\visual studio 14\Projects\USB Application1\USB Application1 Package\USB Application1 Package.vcxproj".  
 Deployment may take a few minutes...
 ========== Build: 1 succeeded, 0 failed, 1 up-to-date, 0 skipped ==========
 ```
@@ -129,13 +152,13 @@ The preceding instructions debug the application by using **Debugging Tools for 
 5.  On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
 6.  Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
 7.  Change **Debugger to launch** to **Remote Windows Debugger**.
-8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://msdn.microsoft.com/library/vstudio/8x6by8d2.aspx). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
+8.  Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2015). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
 9.  To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
 
 -   **Single computer setup:**
 
-    1.  To build your application and the driver installation package, choose **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window, as shown in the following screen shot. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've build the project for an x-64 system running Windows 8.1.
-    2.  To see the built driver package, navigate in Windows Explorer to your USB Application1 folder, and then navigate to **x64 &gt; Win8.1Debug &gt; USB Application1 Package**. The driver package contains several files: USBApplication1.inf is an information file that Windows uses when you install the driver, usbapplication1.cat is a catalog file that the installer uses to verify the test signature for the driver package. The other file is a co-installer for the Windows Driver Frameworks (WDF). These files are shown in the following screen shot.
+    1.  To build your application and the driver installation package, choose **Build Solution** from the **Build** menu. Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) In this exercise, we've built the project for an x64 system running Windows 10.
+    2.  To see the built driver package, navigate in Windows Explorer to your USB Application1 folder, and then navigate to **x64 \> Debug \> USB Application1 Package**. The driver package contains several files: MyDriver.inf is an information file that Windows uses when you install the driver, mydriver.cat is a catalog file that the installer uses to verify the test signature for the driver package. These files are shown in the following screen shot.
 
         ![winusb application template](images/winusb-template3.png)
 
@@ -168,7 +191,7 @@ typedef struct _DEVICE_DATA {
 
 ### <a href="" id="deviceinstance"></a>Getting the instance path for the device - see RetrieveDevicePath in device.cpp
 
-To access a USB device, the application creates a valid file handle for the device by calling **CreateFile**. For that call, the application must obtain the device path instance. To obtain the device path, the app uses [SetupAPI](https://msdn.microsoft.com/library/windows/hardware/ff550855) routines and specifies the device interface GUID in the INF file that was used to install Winusb.sys. Device.h declares a GUID constant named GUID\_DEVINTERFACE\_USBApplication1. By using those routines, the application enumerates all devices in the specified device interface class and retrieves the device path of the device.
+To access a USB device, the application creates a valid file handle for the device by calling **CreateFile**. For that call, the application must obtain the device path instance. To obtain the device path, the app uses [SetupAPI](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi) routines and specifies the device interface GUID in the INF file that was used to install Winusb.sys. Device.h declares a GUID constant named GUID\_DEVINTERFACE\_USBApplication1. By using those routines, the application enumerates all devices in the specified device interface class and retrieves the device path of the device.
 
 ```cpp
 HRESULT
@@ -326,25 +349,25 @@ Return value:
 
 In the preceding function, the application gets the device path by calling these routines:
 
-1.  [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551072) to get a handle to the *device information set*, an array that contains information about all installed devices that matched the specified device interface class, GUID\_DEVINTERFACE\_USBApplication1. Each element in the array called a *device interface* corresponds to a device that is installed and registered with the system. The device interface class is identified by passing the device interface GUID that you defined in the INF file. The function returns an HDEVINFO handle to the device information set.
-2.  [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) to enumerate the device interfaces in the device information set and obtain information about your device interface.
+1.  [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to get a handle to the *device information set*, an array that contains information about all installed devices that matched the specified device interface class, GUID\_DEVINTERFACE\_USBApplication1. Each element in the array called a *device interface* corresponds to a device that is installed and registered with the system. The device interface class is identified by passing the device interface GUID that you defined in the INF file. The function returns an HDEVINFO handle to the device information set.
+2.  [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate the device interfaces in the device information set and obtain information about your device interface.
 
     This call requires the following items:
 
-    -   An initialized caller-allocated [**SP\_DEVICE\_INTERFACE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure that has its **cbSize** member set to the size of the structure.
+    -   An initialized caller-allocated [**SP\_DEVICE\_INTERFACE\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that has its **cbSize** member set to the size of the structure.
     -   The HDEVINFO handle from step 1.
     -   The device interface GUID that you defined in the INF file.
 
-    [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) looks up the device information set array for the specified index of the device interface and fills the initialized [**SP\_DEVICE\_INTERFACE\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552342) structure with basic data about the interface.
+    [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) looks up the device information set array for the specified index of the device interface and fills the initialized [**SP\_DEVICE\_INTERFACE\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure with basic data about the interface.
 
-    **Note**   To enumerate all the device interfaces in the device information set, call [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) in a loop until the function returns **FALSE** and the error code for the failure is ERROR\_NO\_MORE\_ITEMS. The ERROR\_NO\_MORE\_ITEMS error code can be retrieved by calling **GetLastError**. With each iteration, increment the member index.
+    **Note**   To enumerate all the device interfaces in the device information set, call [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) in a loop until the function returns **FALSE** and the error code for the failure is ERROR\_NO\_MORE\_ITEMS. The ERROR\_NO\_MORE\_ITEMS error code can be retrieved by calling **GetLastError**. With each iteration, increment the member index.
 
-    Alternately, you can call [**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010) that enumerates the device information set and returns information about device interface elements, specified by the index, in a caller-allocated [**SP\_DEVINFO\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure. You can then pass a reference to this structure in the *DeviceInfoData* parameter of the [**SetupDiEnumDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff551015) function.
+    Alternately, you can call [**SetupDiEnumDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo) that enumerates the device information set and returns information about device interface elements, specified by the index, in a caller-allocated [**SP\_DEVINFO\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure. You can then pass a reference to this structure in the *DeviceInfoData* parameter of the [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) function.
 
-3.  [**SetupDiGetDeviceInterfaceDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551120) to get detailed data for the device interface. The information is returned in a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552343) structure. Because the size of the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure varies, **SetupDiGetDeviceInterfaceDetail** is called twice. The first call gets the buffer size to allocate for the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure. The second call fills the allocated buffer with detailed information about the interface.
-    1.  Calls [**SetupDiGetDeviceInterfaceDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551120) with *DeviceInterfaceDetailData* parameter set to **NULL**. The function returns the correct buffer size in the *requiredlength* parameter. This call fails with the ERROR\_INSUFFICIENT\_BUFFER error code. This error code is expected.
-    2.  Allocates memory for a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552343) structure based on the correct buffer size that is retrieved in the *requiredlength* parameter.
-    3.  Calls [**SetupDiGetDeviceInterfaceDetail**](https://msdn.microsoft.com/library/windows/hardware/ff551120) again and passes it a reference to the initialized structure in the *DeviceInterfaceDetailData* parameter. When the function returns, the structure is filled with detailed information about the interface. The device path is in the [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552343) structure's **DevicePath** member.
+3.  [**SetupDiGetDeviceInterfaceDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to get detailed data for the device interface. The information is returned in a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure. Because the size of the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure varies, **SetupDiGetDeviceInterfaceDetail** is called twice. The first call gets the buffer size to allocate for the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure. The second call fills the allocated buffer with detailed information about the interface.
+    1.  Calls [**SetupDiGetDeviceInterfaceDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) with *DeviceInterfaceDetailData* parameter set to **NULL**. The function returns the correct buffer size in the *requiredlength* parameter. This call fails with the ERROR\_INSUFFICIENT\_BUFFER error code. This error code is expected.
+    2.  Allocates memory for a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure based on the correct buffer size that is retrieved in the *requiredlength* parameter.
+    3.  Calls [**SetupDiGetDeviceInterfaceDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) again and passes it a reference to the initialized structure in the *DeviceInterfaceDetailData* parameter. When the function returns, the structure is filled with detailed information about the interface. The device path is in the [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure's **DevicePath** member.
 
 ### <a href="" id="filehandle"></a>Creating a file handle for the device - see OpenDevice in device.cpp
 
@@ -429,14 +452,14 @@ Return value:
 ```
 
 1.  The app calls **CreateFile** to create a file handle for the device by specifying the device path retrieved earlier. It uses the FILE\_FLAG\_OVERLAPPED flag because WinUSB depends on this setting.
-2.  By using the file handle for the device, the app creates a WinUSB interface handle. [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb) use this handle to identify the target device instead of the file handle. To obtain a WinUSB interface handle, the app calls [**WinUsb\_Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff540277) by passing the file handle. Use the received handle in the subsequent calls to get information from the device, and to send I/O requests to the device.
+2.  By using the file handle for the device, the app creates a WinUSB interface handle. [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) use this handle to identify the target device instead of the file handle. To obtain a WinUSB interface handle, the app calls [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize) by passing the file handle. Use the received handle in the subsequent calls to get information from the device, and to send I/O requests to the device.
 
 ### Release the device handles - see CloseDevice in device.cpp
 
 The template code implements code to release the file handle and the WinUSB interface handle for the device.
 
 -   **CloseHandle** to release the handle that was created by **CreateFile**, as described in the [Create a File Handle for the Device](#filehandle) section of this walkthrough.
--   [**WinUsb\_Free**](https://msdn.microsoft.com/library/windows/hardware/ff540233) to release the WinUSB interface handle for the device, which is returned by [**WinUsb\_Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff540277).
+-   [**WinUsb\_Free**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_free) to release the WinUSB interface handle for the device, which is returned by [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize).
 
 ```cpp
 VOID
@@ -492,7 +515,7 @@ Next, read these topics to send get device information and send data transfers t
 
 ## Related topics
 [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)  
-[Provision a computer for driver deployment and testing](https://msdn.microsoft.com/library/windows/hardware/dn745909)  
+[Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)  
 
 
 

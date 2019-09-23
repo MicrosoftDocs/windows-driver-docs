@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Tools for Signing Drivers
 
 
-The Microsoft Windows Driver Kit (WDK) includes the following tools that you can use to create a code-signing certificate, to sign the [catalog file](https://msdn.microsoft.com/library/windows/hardware/ff537872) of a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840), and to embed a signature in a driver file:
+The Microsoft Windows Driver Kit (WDK) includes the following tools that you can use to create a code-signing certificate, to sign the [catalog file](https://docs.microsoft.com/windows-hardware/drivers/install/catalog-files) of a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages), and to embed a signature in a driver file:
 
 [**CertMgr**](certmgr.md)
 
@@ -35,9 +35,9 @@ These tools are located in the following directories:
 
 The Microsoft Windows SDK includes information about the services, components, and tools that enable you to add cryptographic security to your applications. This includes the [**CertMgr**](certmgr.md), [**MakeCert**](makecert.md), and [**SignTool**](signtool.md) tools.
 
-For more information on signing drivers and [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840), see [Driver Signing](https://msdn.microsoft.com/library/windows/hardware/ff544865).
+For more information on signing drivers and [driver packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages), see [Driver Signing](https://docs.microsoft.com/windows-hardware/drivers/install/driver-signing).
 
-For information on test-signing a driver package, see [Signing Drivers during Development and Test](https://msdn.microsoft.com/library/windows/hardware/ff552264).
+For information on test-signing a driver package, see [Signing Drivers during Development and Test](https://docs.microsoft.com/windows-hardware/drivers/install/signing-drivers-during-development-and-test).
 
  
 

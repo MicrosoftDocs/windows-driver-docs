@@ -43,17 +43,17 @@ Inappropriate design for the billing page:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   For more information about views and layouts: see [Choosing a layout](https://msdn.microsoft.com/library/windows/apps/hh465327).
+-   For more information about views and layouts: see [Choosing a layout](https://docs.microsoft.com/previous-versions/windows/apps/hh465327(v=win.10)).
 
--   For more information about Listviews, see [Quickstart: Adding a ListView](https://msdn.microsoft.com/library/windows/apps/hh465496).
+-   For more information about Listviews, see [Quickstart: Adding a ListView](https://docs.microsoft.com/previous-versions/windows/apps/hh465496(v=win.10)).
 
--   For design guidance for error handling, see [Laying out your UI](https://msdn.microsoft.com/library/windows/apps/hh465304).
+-   For design guidance for error handling, see [Laying out your UI](https://docs.microsoft.com/previous-versions/windows/apps/hh465304(v=win.10)).
 
--   For accessibility guidance, see [Accessibility in UWP apps using C++, C#, or Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh452680).
+-   For accessibility guidance, see [Accessibility in UWP apps using C++, C#, or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh452680(v=win.10)).
 
--   For more information about how to use built-in controls, see [Adding controls and content](https://msdn.microsoft.com/library/windows/apps/hh465393).
+-   For more information about how to use built-in controls, see [Adding controls and content](https://docs.microsoft.com/previous-versions/windows/apps/hh465393(v=win.10)).
 
--   For touch input guidelines, see [Quickstart: Touch input](https://msdn.microsoft.com/library/windows/apps/xaml/hh465387).
+-   For touch input guidelines, see [Quickstart: Touch input](https://docs.microsoft.com/previous-versions/windows/apps/hh465387(v=win.10)).
 
 ## <span id="related_topics"></span>Related topics
 

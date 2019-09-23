@@ -27,7 +27,7 @@ For more information, see [Creating an INF File](overview-of-inf-files.md).
 <a href="" id="one-or-more-drivers-for-the-device"></a>One or more drivers for the device  
 A .*sys* file is the driver's image file. Windows copies this file to the *%SystemRoot%\\system32\\drivers* directory when the driver is installed. Drivers are required for most devices.
 
-For more information, see [Choosing a Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff554652).
+For more information, see [Choosing a Driver Model](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/choosing-a-driver-model).
 
 <a href="" id="digital-signatures-for-the-driver-package--a-driver-catalog-file-"></a>Digital signatures for the [driver package](driver-packages.md) (a driver catalog file)  
 A driver catalog file contains digital signatures. All driver packages should be signed.

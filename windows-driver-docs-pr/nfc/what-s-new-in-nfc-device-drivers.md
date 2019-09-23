@@ -25,5 +25,5 @@ This topic summarizes the new features and improvements for NFC device drivers i
 
  
 ## Related topics
- [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
+ [NFC device driver interface (DDI) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
  

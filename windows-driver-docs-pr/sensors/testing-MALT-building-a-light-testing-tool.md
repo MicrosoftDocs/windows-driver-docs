@@ -23,13 +23,13 @@ This guide assumes that you have basic knowledge in electronics, programming, an
 
 You will need the following components.
 
-* [Microcontroller](https://www.arduino.cc/en/Main/arduinoBoardMega)
+* [Microcontroller](https://store.arduino.cc/mega-2560-r3)
 * [Calibrated light source of sufficient range / spectrum](https://www.superbrightleds.com/moreinfo/led-panel-light/square-12v-led-panel-light-fixture-1ft-x-1ft-35w/2184/)
 * [Power supply for light source](https://www.superbrightleds.com/moreinfo/led-panel-light/square-12v-led-panel-light-fixture-1ft-x-1ft-35w/2184/#tab/PowerSupplies/subtab/powersupply)
 * [Digital to analog converter (DAC)](https://www.microchip.com/wwwproducts/en/MCP4821)
 * 2 [Ambient light sensors (ex TI OPT3001 or better)](https://www.ti.com/product/OPT3001)
 * 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/TCS34727FN/TCS34727FNCT-ND/3737677)
-* [Light enclosure](#light-enclosure)
+* [Light enclosure](#step-1---assemble-light-enclosure)
 
 ## Instructions
 

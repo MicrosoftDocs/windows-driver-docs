@@ -29,7 +29,7 @@ LoadOrderGroup = Video
 ServiceBinary  = %12%\r200.sys
 ```
 
-For more information about service-install sections that are associated with the **AddService** directive, see [**INF AddService Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326).
+For more information about service-install sections that are associated with the **AddService** directive, see [**INF AddService Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive).
 
  
 

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 
 
-This section provides high level information about [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structures and related data structures and functions. NET\_BUFFER structures provide an efficient means to package and manage network data.
+This section provides high level information about [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structures and related data structures and functions. NET\_BUFFER structures provide an efficient means to package and manage network data.
 
 The following topics are included in this section:
 

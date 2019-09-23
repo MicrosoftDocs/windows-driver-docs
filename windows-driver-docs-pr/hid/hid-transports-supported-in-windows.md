@@ -39,7 +39,7 @@ The following table shows the recommended transports for keyboards, mice, and to
 
  
 
-[**USB Generic HID Test**](https://msdn.microsoft.com/library/windows/hardware/dn942240) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID mini drivers. 
+[**USB Generic HID Test**](https://docs.microsoft.com/windows-hardware/test/hlk/testref/f7949ab5-dd13-4c74-876f-6d54ff85e213) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID mini drivers. 
  
 
 

@@ -55,7 +55,7 @@ The override mechanism is a registry-based lookup table that consists of registr
 <tr class="even">
 <td align="left"><p>3</p></td>
 <td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a></p></td>
-<td align="left"><p>Specifies that only the location path of the device's parent device node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) will have the removable device capability override applied.</p></td>
+<td align="left"><p>Specifies that only the location path of the device's parent device node (<a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) will have the removable device capability override applied.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>

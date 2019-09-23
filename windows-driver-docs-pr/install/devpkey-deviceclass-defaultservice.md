@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_DefaultService
 
 
-The DEVPKEY_DeviceClass_DefaultService device property represents the name of the default service for a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_DefaultService device property represents the name of the default service for a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
 
 <table>
 <colgroup>
@@ -54,13 +54,13 @@ The DEVPKEY_DeviceClass_DefaultService device property represents the name of th
 Remarks
 -------
 
-If a default service is installed for a device setup class and a device does not install a device-specific service, the [**INF ClassInstall32.Services section**](https://msdn.microsoft.com/library/windows/hardware/ff546339) of the INF file that installs the class installs the class default service for the device.
+If a default service is installed for a device setup class and a device does not install a device-specific service, the [**INF ClassInstall32.Services section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-services-section) of the INF file that installs the class installs the class default service for the device.
 
 The value of DEVPKEY_DeviceClass_DefaultService is the value of the **Default Service** registry value under the class registry key.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_DefaultService.
+You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_DefaultService.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_DefaultService property key. You can access the value of this property by accessing the corresponding **Default Service** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://msdn.microsoft.com/library/windows/hardware/ff537751).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_DefaultService property key. You can access the value of this property by accessing the corresponding **Default Service** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-registry-entry-values-under-the-class-registry-key).
 
 Requirements
 ------------
@@ -85,11 +85,11 @@ Requirements
 ## See also
 
 
-[**INF ClassInstall32.Services Section**](https://msdn.microsoft.com/library/windows/hardware/ff546339)
+[**INF ClassInstall32.Services Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-services-section)
 
-[**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086)
+[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090)
+[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
  
 

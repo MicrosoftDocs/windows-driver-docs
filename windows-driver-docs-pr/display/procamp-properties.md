@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_procamp_properties_gg"></span><span id="DDK_PROCAMP_PROPERTIES_GG"></span>
 
 
-A display driver must supply minimum, maximum, step size, and default values when the VMR queries the driver for information about ProcAmp properties. The driver can supply this information in response to a call to its [**ProcAmpControlQueryRange**](https://msdn.microsoft.com/library/windows/hardware/ff563950) function. Although the driver can return any value for the ProcAmp properties, the following are the recommended settings (all values are floats).
+A display driver must supply minimum, maximum, step size, and default values when the VMR queries the driver for information about ProcAmp properties. The driver can supply this information in response to a call to its [**ProcAmpControlQueryRange**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange) function. Although the driver can return any value for the ProcAmp properties, the following are the recommended settings (all values are floats).
 
 <table>
 <colgroup>

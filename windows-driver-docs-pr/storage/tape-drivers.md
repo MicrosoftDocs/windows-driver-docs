@@ -34,7 +34,7 @@ If a tape miniclass driver calls only routines in the tape class driver, the min
 
 An existing tape miniclass driver must be modified to support one new entry point, TapeMiniGetMediaTypes, in order to build and run under Windows 2000 and later operating systems. No other modifications are required. The system-supplied tape class driver, together with the system-supplied storage port driver, handles Plug and Play and power management requests on behalf of a tape miniclass driver.
 
-This section describes the support provided by the operating system-specific tape class driver and provides guidelines for writing a new tape miniclass driver. See [Tape Class Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567959) and [Tape Miniclass Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff567970) for details on the routines in the tape class and tape miniclass drivers. See [Device Configurations and Layered Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543100) for a description of the storage device driver layers.
+This section describes the support provided by the operating system-specific tape class driver and provides guidelines for writing a new tape miniclass driver. See [Tape Class Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) and [Tape Miniclass Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) for details on the routines in the tape class and tape miniclass drivers. See [Device Configurations and Layered Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-configurations-and-layered-drivers) for a description of the storage device driver layers.
 
  
 

@@ -24,9 +24,9 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-This OID returns the time, starting from the last computer restart, when the interface had a discontinuity in maintaining the statistics counters. For example, there was a discontinuity because the interface was disabled or the associated adapter was removed from the computer. For more information about the statistics counters, see [OID\_GEN\_STATISTICS](oid-gen-statistics.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](https://msdn.microsoft.com/library/windows/hardware/ff562675) function.
+This OID returns the time, starting from the last computer restart, when the interface had a discontinuity in maintaining the statistics counters. For example, there was a discontinuity because the interface was disabled or the associated adapter was removed from the computer. For more information about the statistics counters, see [OID\_GEN\_STATISTICS](oid-gen-statistics.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisgetsystemuptimeex) function.
 
 If no such discontinuity occurred since the last re-initialization of the interface this value should be zero. If the interface provider does not track discontinuity time, this value should be zero.
 
@@ -51,7 +51,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
+[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
 
  
 

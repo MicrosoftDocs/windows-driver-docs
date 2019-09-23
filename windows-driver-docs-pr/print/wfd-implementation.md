@@ -17,7 +17,7 @@ For a WFD-WSD device to get the seamless connectivity experience as described in
 -   The device must support Vertical pairing and send the relevant DPWS (WSD) data in the WPS messages (formats described in "Implementing Vertical Pairing Data Blob" below)
 -   All logical devices in the physical device MUST use the same PnP-X Container ID in its PnP-X extension
     -   For details on implementing PnP-X Container IDs for Network Connected Devices, see [Overview of Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-container-ids).
-    -   For general information on PnP-X extensions, see the [PnP-X: Plug and Play Extensions for Windows Specification](https://msdn.microsoft.com/windows/hardware/gg463082).
+    -   For general information on PnP-X extensions, see the [PnP-X: Plug and Play Extensions for Windows Specification](https://docs.microsoft.com/previous-versions/gg463082(v=msdn.10)).
 
 Since the WFD Container ID will match the UUID of the printer, PnP-X Container ID will not be required in the device metadata. However, it is still recommended that the device supports PnP-X metadata in the device metadata and advertise a PnP-X Container ID as part of the PnP-X metadata in the device metadata. This Container ID should match the WFD Container ID.
 

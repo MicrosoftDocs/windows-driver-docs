@@ -17,7 +17,7 @@ Location sensors must track the number of connected applications, and must track
 
 When the number of connected clients is zero, the location sensor should enter the lowest possible power state, preferably D3. When an event indicates that a client is connected, the sensor should exit the low-power state and acquire data.
 
-Also, if the location device contains a radio, like a GPS location sensor, then the radio state must also be tracked using [Radio Management](https://msdn.microsoft.com/library/windows/hardware/hh406615). The driver writer must create a Radio Management implementation that communicates with the driver to set the radio state. An example of the Radio Management implementation and how to communicate with the driver is in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md).
+Also, if the location device contains a radio, like a GPS location sensor, then the radio state must also be tracked using [Radio Management](https://docs.microsoft.com/previous-versions/windows/hardware/radio/hh406615(v=vs.85)). The driver writer must create a Radio Management implementation that communicates with the driver to set the radio state. An example of the Radio Management implementation and how to communicate with the driver is in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md).
 
 When tracking connected clients and radio state, the location sensor should enter the lowest possible power state, preferably D3, at any time there is not a connected client while the radio is on. The diagram below illustrates a state machine for connected clients, radio state, and the suggested corresponding device state.
 
@@ -44,7 +44,7 @@ The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in
 
 Applications that consume location data by subscribing to events request the maximum frequency for data-updated events by setting the SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL property. To conserve power, your driver should send data reports no more frequently than the lowest requested report interval.
 
-For more information on how to track values for each application, see [Filtering data](https://msdn.microsoft.com/library/windows/hardware/hh706201). You can also find example of tracking report intervals in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK.
+For more information on how to track values for each application, see [Filtering data](https://docs.microsoft.com/windows-hardware/drivers/sensors/filtering-data). You can also find example of tracking report intervals in the [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK.
 
 ### Tracking Desired Accuracy
 
@@ -60,7 +60,7 @@ If any app requests DESIRED\_ACCURACY\_HIGH, the sensor should deliver the highe
 
 ### Detecting Idle States
 
-Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or GNSS device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff561211.aspx) for more info.
+Your driver should detect an idle state and enter a low-power state. For example, an idle state may occur when the location of a GPS device is not changing, there are no pending I/O requests, or data is not available. If your GPS or GNSS device is implemented over USB, it must support selective suspend. See [Supporting Idle Power-Down in UMDF-based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-idle-power-down-in-umdf-drivers) for more info.
 
 ### Position Injection for GPS and GNSS
 
@@ -74,7 +74,7 @@ If the GNSS driver does not get a position from the Sensor API within 15 seconds
 
  
 
-**Important**  Do not instantiate [**ILocation**](https://msdn.microsoft.com/library/windows/desktop/dd317674) to get data from other location sensors. Instead, use the Sensor API ([**ISensorManager**](https://msdn.microsoft.com/library/windows/desktop/dd318946)).
+**Important**  Do not instantiate [**ILocation**](https://docs.microsoft.com/windows/desktop/api/locationapi/nn-locationapi-ilocation) to get data from other location sensors. Instead, use the Sensor API ([**ISensorManager**](https://docs.microsoft.com/windows/desktop/api/sensorsapi/nn-sensorsapi-isensormanager)).
 
  
 
@@ -82,7 +82,7 @@ If the GNSS driver does not get a position from the Sensor API within 15 seconds
 
  
 
-To access triangulation sensors, call [**ISensorManager::GetSensorByType**](https://msdn.microsoft.com/library/windows/desktop/dd318866) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](https://msdn.microsoft.com/library/windows/desktop/dd318960) for more information on the use of **GetSensorsByType**.
+To access triangulation sensors, call [**ISensorManager::GetSensorByType**](https://docs.microsoft.com/windows/desktop/api/sensorsapi/nf-sensorsapi-isensormanager-getsensorsbytype) with type SENSOR\_TYPE\_LOCATION\_TRIANGULATION. This will return all triangulation sensors, including the Windows Location Provider that is built into Windows 8. Your GPS driver needs to be able to handle anywhere from zero sensors returned to multiple sensors. See [Retrieving a Sensor Object](https://docs.microsoft.com/windows/desktop/SensorsAPI/retrieving-a-sensor) for more information on the use of **GetSensorsByType**.
 
 **Note**  The Windows Location Provider does not provide any guarantee of accuracy or availability.
 

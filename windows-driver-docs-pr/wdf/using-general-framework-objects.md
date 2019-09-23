@@ -16,7 +16,7 @@ The *general framework object* is the framework object from which all other type
 
 Like other framework objects, general objects support a reference count, context space, deletion callback functions, and a parent object, as described in [Introduction to Framework Objects](introduction-to-framework-objects.md).
 
-Drivers can create and use general framework objects. If your driver calls [**WdfObjectCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548730) to create general objects, the driver can:
+Drivers can create and use general framework objects. If your driver calls [**WdfObjectCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectcreate) to create general objects, the driver can:
 
 -   Create one or more context spaces for each general object.
 
@@ -28,11 +28,11 @@ Drivers can create and use general framework objects. If your driver calls [**Wd
 
     The general object will be deleted when the parent object is deleted. For example, if your driver specifies a framework device object as the parent object of one of its general objects, the framework will delete the general object when it deletes the device object.
 
-    Drivers specify an object's parent object by setting the **ParentObject** member of the object's [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
+    Drivers specify an object's parent object by setting the **ParentObject** member of the object's [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
 
 -   Provide deletion callback functions.
 
-    The driver can provide [*EvtCleanupCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540840) and [*EvtDestroyCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540841) functions, which can deallocate system resources that the driver allocated when it created the general object. For example, if the driver called [**ExAllocatePool**](https://msdn.microsoft.com/library/windows/hardware/ff544501) when it created a general object, the cleanup or destroy callback function can call [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590).
+    The driver can provide [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) and [*EvtDestroyCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) functions, which can deallocate system resources that the driver allocated when it created the general object. For example, if the driver called [**ExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepool) when it created a general object, the cleanup or destroy callback function can call [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-exfreepool).
 
 Using general objects can be a convenient way to manage driver-allocated resources. For example, a higher-level driver might require multiple memory allocations to process a received I/O request, if the driver sends the request to multiple devices or breaks the request into several smaller ones. The driver can create one or more general objects that are children of the received I/O request, and it can store information about the memory allocations in the general objects' context space.
 

@@ -74,5 +74,5 @@ For more information about NetAdapterCx data structures, see [NetAdapterCx](../n
 
 The following data structures are new in NDIS 6.70.
 
-- [NDIS_STATUS_WWAN_DEVICE_CAPS_EX](https://msdn.microsoft.com/library/windows/hardware/mt782396)
+- [NDIS_STATUS_WWAN_DEVICE_CAPS_EX](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps-ex)
 

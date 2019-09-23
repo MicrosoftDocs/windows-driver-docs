@@ -78,7 +78,7 @@ Requirements
 ## See also
 
 
-[Extensible Authentication Protocol](https://msdn.microsoft.com/library/windows/desktop/aa363502)
+[Extensible Authentication Protocol](https://docs.microsoft.com/previous-versions/windows/desktop/eap/eap-start-page)
 
  
 

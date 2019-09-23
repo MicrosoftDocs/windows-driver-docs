@@ -17,31 +17,31 @@ ms.localizationpriority: medium
 
 Memory corruption is a common driver problem. Driver errors can result in crashes long after the errors are made. The most common of these errors is accessing memory that has already been freed, and allocating *n* bytes and then accessing *n*+1 bytes.
 
-To detect memory corruption, Driver Verifier can allocate driver memory from a special pool and monitor that pool for incorrect access. Special pool support is provided for kernel-mode system-supplied routines, such as [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) and also for the GDI system-supplied routines, such as [**EngAllocMem**](https://msdn.microsoft.com/library/windows/hardware/ff564176).
+To detect memory corruption, Driver Verifier can allocate driver memory from a special pool and monitor that pool for incorrect access. Special pool support is provided for kernel-mode system-supplied routines, such as [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) and also for the GDI system-supplied routines, such as [**EngAllocMem**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem).
 
 Two alignments of the special pool are available. The **Verify End** alignment is better at detecting access overruns, and the **Verify Start** alignment is better at detecting access underruns. (Note that the vast majority of memory corruptions are due to overruns, not underruns.)
 
 When the Special Pool feature is active and **Verify End** has been selected, each memory allocation requested by the driver is placed on a separate page. The highest possible address that allows the allocation to fit on the page is returned, so that the memory is aligned with the end of the page. The previous portion of the page is written with special patterns. The previous page and the next page are marked inaccessible.
 
-If the driver attempts to access memory after the end of the allocation, Driver Verifier will detect this immediately, and will issue [**Bug Check 0xCD**](https://msdn.microsoft.com/library/windows/hardware/ff560219). If the driver writes in the memory prior to the beginning of the buffer, this will (presumably) alter the patterns. When the buffer is freed, Driver Verifier will detect the alteration and issue [**Bug Check 0xC1**](https://msdn.microsoft.com/library/windows/hardware/ff560183).
+If the driver attempts to access memory after the end of the allocation, Driver Verifier will detect this immediately, and will issue [**Bug Check 0xCD**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xcd--page-fault-beyond-end-of-allocation). If the driver writes in the memory prior to the beginning of the buffer, this will (presumably) alter the patterns. When the buffer is freed, Driver Verifier will detect the alteration and issue [**Bug Check 0xC1**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc1--special-pool-detected-memory-corruption).
 
-If the driver reads or writes to the buffer after freeing it, Driver Verifier will issue [**Bug Check 0xCC**](https://msdn.microsoft.com/library/windows/hardware/ff560216).
+If the driver reads or writes to the buffer after freeing it, Driver Verifier will issue [**Bug Check 0xCC**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xcc--page-fault-in-freed-special-pool).
 
 When **Verify Start** is selected, the memory buffer is aligned with the beginning of the page. With this setting, underruns cause an immediate bug check and overruns cause a bug check when the memory is freed. This option is otherwise identical to the **Verify End** option.
 
 **Verify End** is the default alignment, as overrun errors are much more common in drivers than underrun errors.
 
-An individual memory allocation can override these settings and choose its alignment by calling [**ExAllocatePoolWithTagPriority**](https://msdn.microsoft.com/library/windows/hardware/ff544523) with the *Priority* parameter set to XxxSpecialPoolOverrun or XxxSpecialPoolUnderrun. (This routine cannot activate or deactivate the Special Pool feature, or request the special pool for a memory allocation, which would otherwise be allocated from normal pool. Only the alignment can be controlled from this routine.)
+An individual memory allocation can override these settings and choose its alignment by calling [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority) with the *Priority* parameter set to XxxSpecialPoolOverrun or XxxSpecialPoolUnderrun. (This routine cannot activate or deactivate the Special Pool feature, or request the special pool for a memory allocation, which would otherwise be allocated from normal pool. Only the alignment can be controlled from this routine.)
 
 In Windows 7 and later versions of the Windows operating system, the Special Pool option supports memory that was allocated by using the following kernel APIs:
 
--   [**IoAllocateMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548263)
+-   [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatemdl)
 
--   [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) and the other routines that can allocate I/O request packet (IRP) data structures
+-   [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
 
--   [**RtlAnsiStringToUnicodeString**](https://msdn.microsoft.com/library/windows/hardware/ff561729) and other run-time library (RTL) string routines
+-   [**RtlAnsiStringToUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
 
--   [**IoSetCompletionRoutineEx**](https://msdn.microsoft.com/library/windows/hardware/ff549686)
+-   [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutineex)
 
 ### <span id="special_pool_by_pool_tag_or_allocation_size"></span><span id="SPECIAL_POOL_BY_POOL_TAG_OR_ALLOCATION_SIZE"></span>Special Pool by Pool Tag or Allocation Size
 
@@ -61,7 +61,7 @@ Not all special pool requests are fulfilled. Each allocation from the special po
 
 A single driver that makes many small memory requests can also deplete this pool. If this occurs, it may be preferable to assign pool tags to the driver's memory allocations and dedicate the special pool to one pool tag at a time.
 
-The size of the special pool increases with the amount of physical memory on the system; ideally this should be at least 1 Gigabyte (GB). On x86 machines, because virtual (in addition to physical) space is consumed, do not use the [**/3GB**](https://msdn.microsoft.com/library/windows/hardware/ff556232) boot option. It is also a good idea to increase the pagefile minimum/maximum quantities by a factor of two or three.
+The size of the special pool increases with the amount of physical memory on the system; ideally this should be at least 1 Gigabyte (GB). On x86 machines, because virtual (in addition to physical) space is consumed, do not use the [**/3GB**](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-3gb) boot option. It is also a good idea to increase the pagefile minimum/maximum quantities by a factor of two or three.
 
 To be sure that all of a driver's allocations are being tested, stressing the driver over long periods of time is recommended.
 
@@ -75,7 +75,7 @@ These counters do not track allocations whose size is one page or larger, since 
 
 If the Special Pool feature is enabled, but less than 95% of all pool allocations have been assigned from the special pool, a warning will appear in Driver Verifier Manager. In Windows 2000, this warning will appear on the **Driver Status** screen. In Windows XP and later, this warning will appear on the **Global Counters** screen. If this occurs, you should verify a shorter list of drivers, verify individual pools by pool tag, or add more physical memory to your system.
 
-The kernel debugger extension **!verifier** can also be used to monitor special pool use. It presents similar information to that of Driver Verifier Manager. For information about debugger extensions, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
+The kernel debugger extension **!verifier** can also be used to monitor special pool use. It presents similar information to that of Driver Verifier Manager. For information about debugger extensions, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 

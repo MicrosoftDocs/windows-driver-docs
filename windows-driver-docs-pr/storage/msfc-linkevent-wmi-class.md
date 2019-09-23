@@ -33,7 +33,7 @@ class MSFC_LinkEvent : WMIEvent {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_LinkEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562514)
+[**MSFC\_LinkEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_linkevent)
 
 There are no methods associated with this WMI class.
 

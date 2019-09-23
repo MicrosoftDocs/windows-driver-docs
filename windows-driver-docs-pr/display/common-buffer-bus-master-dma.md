@@ -20,19 +20,19 @@ The miniport driver performs the following sequence of operations to use common-
 
 1.  Get an adapter object.
 
-    The miniport driver calls the video port driver's [**VideoPortGetDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff570312) function, usually within the miniport driver's [*HwVidFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff567332) routine, to get a pointer to a [**VP\_DMA\_ADAPTER**](https://msdn.microsoft.com/library/windows/hardware/ff570570) structure. The miniport driver uses this pointer for subsequent DMA operations.
+    The miniport driver calls the video port driver's [**VideoPortGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportgetdmaadapter) function, usually within the miniport driver's [*HwVidFindAdapter*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_find_adapter) routine, to get a pointer to a [**VP\_DMA\_ADAPTER**](https://docs.microsoft.com/previous-versions/ff570570(v=vs.85)) structure. The miniport driver uses this pointer for subsequent DMA operations.
 
 2.  Allocate a common buffer.
 
-    The miniport driver calls the video port driver's [**VideoPortAllocateCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff570178) function, using the pointer obtained in the previous step.
+    The miniport driver calls the video port driver's [**VideoPortAllocateCommonBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportallocatecommonbuffer) function, using the pointer obtained in the previous step.
 
 3.  Release the common buffer.
 
-    When the miniport driver no longer requires the common buffer, it calls the video port driver's [**VideoPortReleaseCommonBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff570355) function.
+    When the miniport driver no longer requires the common buffer, it calls the video port driver's [**VideoPortReleaseCommonBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportreleasecommonbuffer) function.
 
 4.  Discard the adapter object.
 
-    This step is optional. If, for some reason, the miniport driver decides that there will be no further DMA operations for the rest of its lifetime, it should discard the DMA adapter object by calling the video port driver's [**VideoPortPutDmaAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff570335) function.
+    This step is optional. If, for some reason, the miniport driver decides that there will be no further DMA operations for the rest of its lifetime, it should discard the DMA adapter object by calling the video port driver's [**VideoPortPutDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportputdmaadapter) function.
 
  
 

@@ -62,7 +62,7 @@ Windows Plug and Play (PnP) determines that the hot-plug device instance require
 
 -   The device instance is either started or can be ejected automatically by the system.
 
--   The CM_DEVCAP_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967).
+-   The CM_DEVCAP_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya).
 
 -   The device instance does not have the [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md) device property set to DEVPROP_FALSE.
 
@@ -72,7 +72,7 @@ Windows Plug and Play (PnP) determines that the hot-plug device instance require
 
 -   The device instance is either directly removable from its parent device instance or has a removable ancestor in its device tree.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_SafeRemovalRequired.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_SafeRemovalRequired.
 
 Requirements
 ------------
@@ -99,9 +99,9 @@ Requirements
 
 [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967)
+[**SetupDiGetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
 
  
 

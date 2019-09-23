@@ -14,6 +14,8 @@ To request a minifilter altitude identifier, send email in an ASCII text e-mail 
 
 An altitude for this filter will then be e-mailed back to the specified contact e-mail address.
 
+You can also send email to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Minifilter%20altitude%20request) to update information associated with existing altitudes.
+
 <table>
 <colgroup>
 <col width="50%" />

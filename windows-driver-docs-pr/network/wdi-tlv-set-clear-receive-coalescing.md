@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING
 
 
-WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING is a TLV that contains a filter ID for [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](https://msdn.microsoft.com/library/windows/hardware/dn925926).
+WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING is a TLV that contains a filter ID for [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-clear-receive-coalescing).
 
 ## TLV Type
 

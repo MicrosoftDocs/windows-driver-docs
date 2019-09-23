@@ -26,7 +26,7 @@ Remarks
 
 The OID\_GEN\_MINIPORT\_RESTART\_ATTRIBUTES OID is not used to issue OID query or set requests.
 
-If the **Oid** member in the [**NDIS\_RESTART\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff567255) structure is OID\_GEN\_MINIPORT\_RESTART\_ATTRIBUTES, the **Data** member of the structure contains an [**NDIS\_RESTART\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff567260) structure.
+If the **Oid** member in the [**NDIS\_RESTART\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_restart_attributes) structure is OID\_GEN\_MINIPORT\_RESTART\_ATTRIBUTES, the **Data** member of the structure contains an [**NDIS\_RESTART\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_restart_general_attributes) structure.
 
 Requirements
 ------------
@@ -47,9 +47,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_RESTART\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff567255)
+[**NDIS\_RESTART\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_restart_attributes)
 
-[**NDIS\_RESTART\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff567260)
+[**NDIS\_RESTART\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_restart_general_attributes)
 
  
 

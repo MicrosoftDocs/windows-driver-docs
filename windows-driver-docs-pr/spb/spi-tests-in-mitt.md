@@ -22,9 +22,9 @@ SPI test modules that are included in the MITT software package can be used to t
 ## Before you begin...
 
 
--   Get a MITT board and a SPI or UART adapter board. See [Buy hardware for using MITT](https://msdn.microsoft.com/library/windows/hardware/dn919811).
--   [Download the MITT software package](https://msdn.microsoft.com/library/windows/hardware/dn919810). Install it on the system under test.
--   Install MITT firmware on the MITT board. See [Get started with MITT](https://msdn.microsoft.com/library/windows/hardware/dn919779).
+-   Get a MITT board and a SPI or UART adapter board. See [Buy hardware for using MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--).
+-   [Download the MITT software package](https://docs.microsoft.com/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
+-   Install MITT firmware on the MITT board. See [Get started with MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/get-started-with-mitt---).
 
 ## Hardware setup
 
@@ -62,7 +62,7 @@ Perform these steps on the system under test that has the I²C controller:
 
 
 
-2.  Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](https://msdn.microsoft.com/library/windows/hardware/dn551195).
+2.  Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](https://docs.microsoft.com/windows-hardware/drivers/bringup/microsoft-asl-compiler).
 
     **Note**  Change "\\\\\_SB\_.SPI1" to ACPI entry name for the SPI controller to test as shown here. It defines three test targets with SPI frequency at 1Mhz, 5Mhz, and 20Mhz.
 

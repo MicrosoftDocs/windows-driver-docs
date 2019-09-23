@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Release-signing identifies the publisher of a kernel-mode binary (for example, driver or *.dll*) that loads into Windows Vista and later versions of Windows. Kernel-mode binaries are release-signed through either:
 
--   A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Logo Program](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver).
+-   A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Logo Program](https://docs.microsoft.com/windows-hardware/drivers).
 
 -   A release signature created through a [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 

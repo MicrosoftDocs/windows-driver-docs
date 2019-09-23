@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_IO_VOLUME_DEVICE_INTERFACE
 
 
-The GUID_IO_VOLUME_DEVICE_INTERFACE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for volume devices.
+The GUID_IO_VOLUME_DEVICE_INTERFACE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for volume devices.
 
 <table>
 <colgroup>

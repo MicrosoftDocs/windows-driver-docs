@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The MULTIPROCESSOR\_CONFIGURATION\_NOT\_SUPPORTED bug check has a value of 0x0000003E. This indicates that the system has multiple processors, but they are asymmetric in relation to one another.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## MULTIPROCESSOR\_CONFIGURATION\_NOT\_SUPPORTED Parameters

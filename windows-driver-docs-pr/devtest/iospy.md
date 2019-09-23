@@ -54,7 +54,7 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 <td align="left"><p>Disable I/O Spy on 1 or more devices. Uninstalls IoSpy and disables IOCTL and WMI filtering for all devices on the test system.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_DisableSupport.wsc</p>
 <p><strong>Test method:</strong> DisableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="even">
@@ -68,7 +68,7 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 <td align="left"><p>Installs IoSpy on the test system and enables IOCTL and WMI filtering on one or more devices. The DQ parameter controls which devices the IoSpy filter driver will get installed on.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_EnableSupport.wsc</p>
 <p><strong>Test method:</strong> EnableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](https://docs.microsoft.com/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>DFD</em> - specifies the path to the IoSpy data file. The default location is %SystemDrive%\DriverTest\IoSpy</p></td>
 </tr>

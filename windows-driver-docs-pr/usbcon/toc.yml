@@ -1,360 +1,390 @@
 - name: "Universal Serial Bus (USB)"
   href: index.md
+- name: "New for USB in different versions of Windows"
   items: 
-  - name: "New for USB in different versions of Windows"
-    href: new-for-usb-in-different-versions-of-windows.md
-    items: 
-    - name: "Windows 10: What's new for USB"
-      href: windows-10--what-s-new-for-usb.md
-    - name: "Windows 8.1: What's new for USB"
-      href: what-s-new-for-usb-in-windows-blue.md
-    - name: "Windows 8: What's new for USB"
-      href: what-s-new-in-usb-in-windows-8.md
-  - name: "Concepts for all USB developers"
+  - name: "Windows 10: What's new for USB"
+    href: windows-10--what-s-new-for-usb.md
+  - name: "Windows 8.1: What's new for USB"
+    href: what-s-new-for-usb-in-windows-blue.md
+  - name: "Windows 8: What's new for USB"
+    href: what-s-new-in-usb-in-windows-8.md
+- name: "Concepts for all USB developers"
+  items: 
+  - name: "Getting started with USB development"
     href: usb-concepts-for-all-developers.md
-    items: 
-    - name: "USB device layout"
-      href: usb-device-layout.md
-    - name: "Standard USB descriptors"
-      href: standard-usb-descriptors.md
-    - name: "USB endpoints and their pipes"
-      href: usb-endpoints-and-their-pipes.md
-    - name: "USB in Windows - FAQ"
-      href: usb-faq--introductory-level.md
-  - name: "Building USB devices for Windows"
+  - name: "USB device layout"
+    href: usb-device-layout.md
+  - name: "Standard USB descriptors"
+    href: standard-usb-descriptors.md
+  - name: "USB endpoints and their pipes"
+    href: usb-endpoints-and-their-pipes.md
+  - name: "USB in Windows - FAQ"
+    href: usb-faq--introductory-level.md
+- name: "Building USB devices for Windows"
+  items:
+  - name: "Overview of building USB devices for Windows"
     href: building-usb-devices-for-windows.md
-    items: 
-    - name: "Microsoft OS Descriptors for USB Devices"
-      href: microsoft-defined-usb-descriptors.md
-    - name: "USB ContainerIDs in Windows"
-      href: usb-containerids-in-windows.md
-    - name: "Link Power Management in USB 3.0 Hardware"
-      href: link-power-management-in-usb-3-0-hardware.md
-      items: 
-      - name: "Limitations of USB 2.0 Mechanism"
-        href: limitations-of-usb-2-0-mechanism.md
-      - name: "USB 3.0 LPM Mechanism"
-        href: usb-3-0-lpm-mechanism-.md
-      - name: "U1 and U2 Transitions"
-        href: u1-and-u2-transitions.md
-      - name: "Common Hardware Problems with U1 or U2 Implementation"
-        href: common-hardware-problems-with-u1-or-u2-implementation.md
+  - name: "Microsoft OS Descriptors for USB Devices"
+    href: microsoft-defined-usb-descriptors.md
+  - name: "OS Descriptors Specifications"
+    items:
+    - name: "Microsoft OS 1.0 Descriptors Specification"
+      href: microsoft-os-1-0-descriptors-specification.md
+    - name: "Microsoft OS 2.0 Descriptors Specification"
+      href: microsoft-os-2-0-descriptors-specification.md
+  - name: "USB ContainerIDs in Windows"
+    href: usb-containerids-in-windows.md
+  - name: "Link Power Management in USB 3.0 Hardware"
+    items:
+    - name: "Limitations of USB 2.0 Mechanism"
+      href: limitations-of-usb-2-0-mechanism.md
+    - name: "USB 3.0 LPM Mechanism"
+      href: usb-3-0-lpm-mechanism-.md
+    - name: "U1 and U2 Transitions"
+      href: u1-and-u2-transitions.md
+    - name: "Common Hardware Problems with U1 or U2 Implementation"
+      href: common-hardware-problems-with-u1-or-u2-implementation.md
     - name: "Configuring USB Devices that Require Firmware Downloads"
       href: configuring-usb-devices-that-require-firmware-downloads.md
-  - name: "USB Dual Role Driver Stack Architecture"
-    href: usb-dual-role-driver-stack-architecture.md
-  - name: "USB host-side drivers in Windows"
-    href: usb-3-0-driver-stack-architecture.md
-  - name: "USB device-side drivers in Windows"
-    href: usb-device-side-drivers-in-windows.md
-  - name: "Developing Windows applications for USB devices"
+- name: "USB Dual Role Driver Stack Architecture"
+  href: usb-dual-role-driver-stack-architecture.md
+- name: "USB host-side drivers in Windows"
+  href: usb-3-0-driver-stack-architecture.md
+- name: "USB device-side drivers in Windows"
+  href: usb-device-side-drivers-in-windows.md
+- name: "Developing Windows applications for USB devices"
+  items: 
+  - name: "Overview of developing Windows applications for USB devices"
     href: developing-windows-applications-that-communicate-with-a-usb-device.md
+  - name: "Writing a UWP app for a USB device"
     items: 
     - name: "UWP app for a USB device"
       href: writing-usb-device-companion-apps-for-microsoft-store.md
-      items: 
-      - name: "Talking to USB devices, start to finish (UWP app)"
-        href: talking-to-usb-devices-start-to-finish.md
-      - name: "How to add USB device capabilities to the app manifest"
-        href: updating-the-app-manifest-with-usb-device-capabilities.md
-      - name: "How to connect to a USB device (UWP app)"
-        href: how-to-connect-to-a-usb-device--UWP-app-.md
-      - name: "How to send a USB control transfer (UWP app)"
-        href: how-to-send-a-usb-control-transfer--UWP-app-.md
-      - name: "How to send a USB interrupt transfer request (UWP app)"
-        href: how-to-send-a-usb-interrupt-transfer--UWP-app-.md
-      - name: "How to send a USB bulk transfer request (UWP app)"
-        href: how-to-send-a-usb-bulk-transfer--UWP-app-.md
-      - name: "How to get USB descriptors (UWP app)"
-        href: how-to-get-usb-descriptors--UWP-app-.md
-      - name: "How to select a USB interface setting (UWP app)"
-        href: how-to-select-a-usb-interface-setting--UWP-app-.md
+    - name: "Talking to USB devices, start to finish (UWP app)"
+      href: talking-to-usb-devices-start-to-finish.md
+    - name: "How to add USB device capabilities to the app manifest"
+      href: updating-the-app-manifest-with-usb-device-capabilities.md
+    - name: "How to connect to a USB device (UWP app)"
+      href: how-to-connect-to-a-usb-device--UWP-app-.md
+    - name: "How to send a USB control transfer (UWP app)"
+      href: how-to-send-a-usb-control-transfer--UWP-app-.md
+    - name: "How to send a USB interrupt transfer request (UWP app)"
+      href: how-to-send-a-usb-interrupt-transfer--UWP-app-.md
+    - name: "How to send a USB bulk transfer request (UWP app)"
+      href: how-to-send-a-usb-bulk-transfer--UWP-app-.md
+    - name: "How to get USB descriptors (UWP app)"
+      href: how-to-get-usb-descriptors--UWP-app-.md
+    - name: "How to select a USB interface setting (UWP app)"
+      href: how-to-select-a-usb-interface-setting--UWP-app-.md
+  - name: "Writing a Windows desktop app for a USB device"
+    items: 
     - name: "Windows desktop app for a USB device"
       href: windows-desktop-app-for-a-usb-device.md
-      items: 
-      - name: "Write a Windows desktop app based on the WinUSB template"
-        href: how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md
-      - name: "How to Access a USB Device by Using WinUSB Functions"
-        href: using-winusb-api-to-communicate-with-a-usb-device.md
-      - name: "Send USB isochronous transfers from a WinUSB desktop app"
-        href: getting-set-up-to-use-windows-devices-usb.md
-      - name: "WinUSB Functions for Pipe Policy Modification"
-        href: winusb-functions-for-pipe-policy-modification.md
-      - name: "WinUSB Power Management"
-        href: winusb-power-management.md
-  - name: "Developing Windows client drivers for USB devices"
+    - name: "Write a Windows desktop app based on the WinUSB template"
+      href: how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md
+    - name: "How to Access a USB Device by Using WinUSB Functions"
+      href: using-winusb-api-to-communicate-with-a-usb-device.md
+    - name: "Send USB isochronous transfers from a WinUSB desktop app"
+      href: getting-set-up-to-use-windows-devices-usb.md
+    - name: "WinUSB Functions for Pipe Policy Modification"
+      href: winusb-functions-for-pipe-policy-modification.md
+    - name: "WinUSB Power Management"
+      href: winusb-power-management.md
+- name: "Developing Windows client drivers for USB devices"
+  items: 
+  - name: "Overview of developing Windows client drivers for USB devices"
     href: usb-driver-development-guide.md
+  - name: "Getting started with USB client driver development"
     items: 
-    - name: "Getting started with USB client driver development"
+    - name: "First steps for USB client driver development"
       href: getting-started-with-usb-client-driver-development.md
-      items: 
-      - name: "Choosing a driver model for developing a USB client driver"
-        href: winusb-considerations.md
-      - name: "Common tasks for USB client drivers"
-        href: wdk-resources-for-usb-driver-development.md
-      - name: "Headers and libraries required by a USB client driver"
-        href: headers-and-libraries-for-a-usb-client-driver.md
-      - name: "USB driver samples"
-        href: usb-driver-samples-in-wdk.md
+    - name: "Choosing a driver model for developing a USB client driver"
+      href: winusb-considerations.md
+    - name: "Common tasks for USB client drivers"
+      href: wdk-resources-for-usb-driver-development.md
+    - name: "Headers and libraries required by a USB client driver"
+      href: headers-and-libraries-for-a-usb-client-driver.md
+    - name: "USB driver samples"
+      href: usb-driver-samples-in-wdk.md
+  - name: "Writing your first USB client driver (KMDF)"
+    items: 
     - name: "How to write your first USB client driver (KMDF)"
       href: tutorial--write-your-first-usb-client-driver--kmdf-.md
-      items: 
-      - name: "Understanding the USB client driver code structure (KMDF)"
-        href: understanding-the-kmdf-template-code-for-usb.md
+    - name: "Understanding the USB client driver code structure (KMDF)"
+      href: understanding-the-kmdf-template-code-for-usb.md
+  - name: "Writing your first USB client driver (UMDF)"
+    items: 
     - name: "How to write your first USB client driver (UMDF)"
       href: implement-driver-entry-for-a-usb-driver--umdf-.md
-      items: 
-      - name: "Understanding the  USB client driver code structure (UMDF)"
-        href: understanding-the-umdf-template-code-for-usb.md
-    - name: "About USB Requests Block (URBs)"
+    - name: "Understanding the  USB client driver code structure (UMDF)"
+      href: understanding-the-umdf-template-code-for-usb.md
+  - name: "About USB Requests Block (URBs)"
+    items: 
+    - name: "USB Requests Block (URBs)"
       href: communicating-with-a-usb-device.md
-      items: 
-      - name: "Allocating and Building URBs"
-        href: how-to-add-xrb-support-for-client-drivers.md
-      - name: "How to Submit an URB"
-        href: send-requests-to-the-usb-driver-stack.md
-      - name: "Best Practices: Using URBs"
-        href: usb-client-driver-contract-in-windows-8.md
+    - name: "Allocating and Building URBs"
+      href: how-to-add-xrb-support-for-client-drivers.md
+    - name: "How to Submit an URB"
+      href: send-requests-to-the-usb-driver-stack.md
+    - name: "Best Practices: Using URBs"
+      href: usb-client-driver-contract-in-windows-8.md
+  - name: "About USB descriptors"
+    items: 
     - name: "USB descriptors"
       href: usb-descriptors.md
-      items: 
-      - name: "USB device descriptors"
-        href: usb-device-descriptors.md
-      - name: "USB configuration descriptors"
-        href: usb-configuration-descriptors.md
-      - name: "USB String Descriptors"
-        href: usb-string-descriptors.md
-      - name: "USB Interface Association Descriptor"
-        href: usb-interface-association-descriptor.md
-    - name: "Selecting a USB configuration in USB drivers"
+    - name: "USB device descriptors"
+      href: usb-device-descriptors.md
+    - name: "USB configuration descriptors"
+      href: usb-configuration-descriptors.md
+    - name: "USB String Descriptors"
+      href: usb-string-descriptors.md
+    - name: "USB Interface Association Descriptor"
+      href: usb-interface-association-descriptor.md
+  - name: "Selecting a USB configuration in USB drivers"
+    items: 
+    - name: "Overview of selecting a USB configuration in USB drivers"
       href: configuring-usb-devices.md
-      items: 
-      - name: "How to select a configuration for a USB device"
-        href: how-to-select-a-configuration-for-a-usb-device.md
-      - name: "How to select an alternate setting in a USB interface"
-        href: select-a-usb-alternate-setting.md
-      - name: "Configuring Usbccgp.sys to Select a Non-Default USB Configuration"
-        href: selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md
-    - name: "Sending USB data transfers in USB client drivers"
+    - name: "How to select a configuration for a USB device"
+      href: how-to-select-a-configuration-for-a-usb-device.md
+    - name: "How to select an alternate setting in a USB interface"
+      href: select-a-usb-alternate-setting.md
+    - name: "Configuring Usbccgp.sys to Select a Non-Default USB Configuration"
+      href: selecting-the-configuration-for-a-multiple-interface--composite--usb-d.md
+  - name: "Sending USB data transfers in USB client drivers"
+    items: 
+    - name: "Overview of sending USB data transfers in USB client drivers"
       href: usb-device-i-o.md
-      items: 
-      - name: "How to send a USB control transfer"
-        href: usb-control-transfer.md
-      - name: "How to enumerate USB pipes"
-        href: how-to-get-usb-pipe-handles.md
-      - name: "How to use the continuous reader for reading data from a USB pipe"
-        href: how-to-use-the-continous-reader-for-getting-data-from-a-usb-endpoint--umdf-.md
-      - name: "How to send USB bulk transfer requests"
-        href: usb-bulk-and-interrupt-transfer.md
-      - name: "How to open and close static streams in a USB bulk endpoint"
-        href: how-to-open-streams-in-a-usb-endpoint.md
-      - name: "How to transfer data to USB isochronous endpoints"
-        href: transfer-data-to-isochronous-endpoints.md
-      - name: "USB client drivers for Media-Agnostic (MA-USB)"
-        href: usb-client-drivers-for-ma-usb.md
-      - name: "How to send chained MDLs"
-        href: how-to-send-chained-mdls.md
-      - name: "How to recover from USB pipe errors"
-        href: how-to-recover-from-usb-pipe-errors.md
-      - name: "USB Bandwidth Allocation"
-        href: usb-bandwidth-allocation.md
-    - name: "Implementing power management in USB client drivers"
+    - name: "How to send a USB control transfer"
+      href: usb-control-transfer.md
+    - name: "How to enumerate USB pipes"
+      href: how-to-get-usb-pipe-handles.md
+    - name: "How to use the continuous reader for reading data from a USB pipe"
+      href: how-to-use-the-continous-reader-for-getting-data-from-a-usb-endpoint--umdf-.md
+    - name: "How to send USB bulk transfer requests"
+      href: usb-bulk-and-interrupt-transfer.md
+    - name: "How to open and close static streams in a USB bulk endpoint"
+      href: how-to-open-streams-in-a-usb-endpoint.md
+    - name: "How to transfer data to USB isochronous endpoints"
+      href: transfer-data-to-isochronous-endpoints.md
+    - name: "USB client drivers for Media-Agnostic (MA-USB)"
+      href: usb-client-drivers-for-ma-usb.md
+    - name: "How to send chained MDLs"
+      href: how-to-send-chained-mdls.md
+    - name: "How to recover from USB pipe errors"
+      href: how-to-recover-from-usb-pipe-errors.md
+    - name: "USB Bandwidth Allocation"
+      href: usb-bandwidth-allocation.md
+  - name: "Implementing power management in USB client drivers"
+    items: 
+    - name: "Overview of implementing power management in USB client drivers"
       href: usb-power-management.md
+    - name: "USB Device Power States"
+      href: comparing-usb-device-states-to-wdm-device-states.md
+    - name: "Selective suspend in WDF USB drivers"
       items: 
-      - name: "USB Device Power States"
-        href: comparing-usb-device-states-to-wdm-device-states.md
       - name: "Selective suspend in USB drivers (WDF)"
         href: selective-suspend-in-usb-drivers-wdf.md
-        items: 
-        - name: "Selective suspend in UMDF drivers"
-          href: selective-suspend-in-umdf-drivers.md
-        - name: "Selective suspend in USB KMDF function drivers"
-          href: selective-suspend-in-a-kmdf-function-driver.md
-      - name: "USB Selective Suspend"
-        href: usb-selective-suspend.md
-      - name: "How to Register a Composite Driver"
-        href: register-a-composite-driver.md
-      - name: "How to Implement Function Suspend for a Composite Driver"
-        href: how-to--implement-remote-and-function-wake-support.md
-      - name: "Remote Wakeup of USB Devices"
-        href: remote-wakeup-of-usb-devices.md
-    - name: "Querying for Bus Driver Interfaces"
-      href: querying-for-usb-interfaces.md
-  - name: "Developing Windows drivers for USB host controllers"
+      - name: "Selective suspend in UMDF drivers"
+        href: selective-suspend-in-umdf-drivers.md
+      - name: "Selective suspend in USB KMDF function drivers"
+        href: selective-suspend-in-a-kmdf-function-driver.md
+    - name: "USB Selective Suspend"
+      href: usb-selective-suspend.md
+    - name: "How to Register a Composite Driver"
+      href: register-a-composite-driver.md
+    - name: "How to Implement Function Suspend for a Composite Driver"
+      href: how-to--implement-remote-and-function-wake-support.md
+    - name: "Remote Wakeup of USB Devices"
+      href: remote-wakeup-of-usb-devices.md
+  - name: "Querying for Bus Driver Interfaces"
+    href: querying-for-usb-interfaces.md
+- name: "Developing Windows drivers for USB host controllers"
+  items: 
+  - name: "Overview of developing Windows drivers for USB host controllers"
     href: developing-windows-drivers-for-usb-host-controllers.md
-    items: 
-    - name: "Architecture: USB host controller extension (UCX)"
-      href: get-started-with-host-controller-driver-development.md
-    - name: "UCX objects and handles used by a host controller driver"
-      href: ucx-objects-and-handles-used-by-host-controller-driver.md
-    - name: "Root hub callback functions of a USB host controller driver"
-      href: manage-the-root-hub-in-a-host-controller-driver.md
-    - name: "Handle I/O requests in a USB host controller driver"
-      href: handling-i-o-requests-in-a-host-controller-driver.md
-    - name: "Configure USB endpoints in a USB host controller driver"
-      href: configuring-usb-endpoints-in-a-host-controller-driver.md
-  - name: "Developing Windows drivers for emulated USB devices (UDE)"
+  - name: "Architecture: USB host controller extension (UCX)"
+    href: get-started-with-host-controller-driver-development.md
+  - name: "UCX objects and handles used by a host controller driver"
+    href: ucx-objects-and-handles-used-by-host-controller-driver.md
+  - name: "Root hub callback functions of a USB host controller driver"
+    href: manage-the-root-hub-in-a-host-controller-driver.md
+  - name: "Handle I/O requests in a USB host controller driver"
+    href: handling-i-o-requests-in-a-host-controller-driver.md
+  - name: "Configure USB endpoints in a USB host controller driver"
+    href: configuring-usb-endpoints-in-a-host-controller-driver.md
+- name: "Developing Windows drivers for emulated USB devices (UDE)"
+  items: 
+  - name: "Overview of developing Windows drivers for emulated USB devices (UDE)"
     href: developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md
-    items: 
-    - name: "Architecture: USB Device Emulation (UDE)"
-      href: usb-emulated-device--ude--architecture.md
-    - name: "Write a UDE client driver"
-      href: writing-a-ude-client-driver.md
-  - name: "Developing Windows drivers for USB function controllers"
+  - name: "Architecture: USB Device Emulation (UDE)"
+    href: usb-emulated-device--ude--architecture.md
+  - name: "Write a UDE client driver"
+    href: writing-a-ude-client-driver.md
+- name: "Developing Windows drivers for USB function controllers"
+  items: 
+  - name: "Overview of developing Windows drivers for USB function controllers"
     href: developing-windows-drivers-for-usb-function-controllers.md
-    items: 
-    - name: "USB registry settings for a function controller driver"
-      href: usb-registry-settings-for-a-function-controller-driver.md
-    - name: "Write a USB function controller client driver"
-      href: function-client-driver.md
-    - name: "UFX objects and handles used by a USB function client driver"
-      href: ufx-objects-and-handles-used-by-a-usb-function-controller.md
-    - name: "USB filter driver for supporting USB chargers"
-      href: usb-filter-driver-for-supporting-chargers.md
-    - name: "Communicating with GenericUSBFn.sys from a user-mode service"
-      href: user-mode-services-ufx.md
+  - name: "USB registry settings for a function controller driver"
+    href: usb-registry-settings-for-a-function-controller-driver.md
+  - name: "Write a USB function controller client driver"
+    href: function-client-driver.md
+  - name: "UFX objects and handles used by a USB function client driver"
+    href: ufx-objects-and-handles-used-by-a-usb-function-controller.md
+  - name: "USB filter driver for supporting USB chargers"
+    href: usb-filter-driver-for-supporting-chargers.md
+  - name: "Communicating with GenericUSBFn.sys from a user-mode service"
+    href: user-mode-services-ufx.md
+- name: "USB Type-C connectors in Windows"
+  items: 
   - name: "Windows support for USB Type-C connectors"
     href: oem-tasks-for-bringing-up-a-usb-typec.md
+  - name: "Hardware design: USB Type-C systems"
+    href: hardware-design-of-a-usb-type-c-system.md
+  - name: "OEM tasks for USB Type-C systems"
+    href: oem-tasks-for-usb-type-c-systems-running-windows.md
+  - name: "USB Type-C Connector System Software Interface (UCSI) driver"
+    href: ucsi.md
+  - name: "FAQ: USB Type-C connector on a Windows system"
+    href: faq--usb-type-c-connector-on-a-windows-system.md
+  - name: "Developing Windows drivers for USB Type-C connectors"
     items: 
-    - name: "Hardware design: USB Type-C systems"
-      href: hardware-design-of-a-usb-type-c-system.md
-    - name: "OEM tasks for USB Type-C systems"
-      href: oem-tasks-for-usb-type-c-systems-running-windows.md
-    - name: "USB Type-C Connector System Software Interface (UCSI) driver"
-      href: ucsi.md
-    - name: "FAQ: USB Type-C connector on a Windows system"
-      href: faq--usb-type-c-connector-on-a-windows-system.md
-    - name: "Developing Windows drivers for USB Type-C connectors"
+    - name: "Overview of developing Windows drivers for USB Type-C connectors"
       href: developing-windows-drivers-for-usb-type-c-connectors.md
-      items: 
-      - name: "Architecture: USB Type-C design for a Windows system"
-        href: architecture--usb-type-c-in-a-windows-system.md
-      - name: "Bring up the function controller on a USB Type-C Windows system"
-        href: function-controller-bringup-for-a-usb-type-c-system.md
-      - name: "Bring up the dual-role controller for a USB Type-C Windows system"
-        href: dual-role-controller-bringup-for-a-usb-type-c-system.md
-      - name: "Write a USB Type-C connector driver"
-        href: bring-up-a-usb-type-c-connector-on-a-windows-system.md
-      - name: "Write a USB Type-C Policy Manager client driver"
-        href: policy-manager-client.md
-      - name: "Write a USB Type-C port controller driver"
-        href: write-a-usb-type-c-port-controller-driver.md
-      - name: "Write a UCSI client driver"
-        href: write-a-ucsi-driver.md
-  - name: "USB Event Tracing for Windows"
+    - name: "Architecture: USB Type-C design for a Windows system"
+      href: architecture--usb-type-c-in-a-windows-system.md
+    - name: "Bring up the function controller on a USB Type-C Windows system"
+      href: function-controller-bringup-for-a-usb-type-c-system.md
+    - name: "Bring up the dual-role controller for a USB Type-C Windows system"
+      href: dual-role-controller-bringup-for-a-usb-type-c-system.md
+    - name: "Write a USB Type-C connector driver"
+      href: bring-up-a-usb-type-c-connector-on-a-windows-system.md
+    - name: "Write a USB Type-C Policy Manager client driver"
+      href: policy-manager-client.md
+    - name: "Write a USB Type-C port controller driver"
+      href: write-a-usb-type-c-port-controller-driver.md
+    - name: "Write a UCSI client driver"
+      href: write-a-ucsi-driver.md
+- name: "USB Event Tracing for Windows"
+  items: 
+  - name: "Overview of USB Event Tracing for Windows"
     href: usb-event-tracing-for-windows.md
+  - name: "Capture and view USB traces with Microsoft Message Analyzer"
+    href: capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md
+  - name: "How to capture a USB event trace with Logman"
+    href: how-to-capture-a-usb-event-trace.md
+  - name: "Using activity ID GUIDs in USB ETW traces"
+    href: using-usb-etw.md
+  - name: "USB ETW traces in Netmon"
     items: 
-    - name: "Capture and view USB traces with Microsoft Message Analyzer"
-      href: capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md
-    - name: "How to capture a USB event trace with Logman"
-      href: how-to-capture-a-usb-event-trace.md
-    - name: "Using activity ID GUIDs in USB ETW traces"
-      href: using-usb-etw.md
-    - name: "USB ETW traces in Netmon"
+    - name: "Overview of USB ETW traces in Netmon"
       href: viewing-etw-traces-in-netmon.md
-      items: 
-      - name: "How to install Netmon and USB ETW Parsers"
-        href: how-to-install-netmon-and-the-netmon-usb-parser.md
-      - name: "How to view a USB ETW trace in Netmon"
-        href: how-to-examining-a-trace-file-by-using-netmon.md
-      - name: "Debugging USB device issues by using ETW events"
-        href: best-practices--debugging-usb-device-problems.md
-      - name: "Case Study: Troubleshooting an unknown USB device by using ETW and Netmon"
-        href: case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md
-    - name: "Using Xperf with USB ETW"
+    - name: "How to install Netmon and USB ETW Parsers"
+      href: how-to-install-netmon-and-the-netmon-usb-parser.md
+    - name: "How to view a USB ETW trace in Netmon"
+      href: how-to-examining-a-trace-file-by-using-netmon.md
+    - name: "Debugging USB device issues by using ETW events"
+      href: best-practices--debugging-usb-device-problems.md
+    - name: "Case Study: Troubleshooting an unknown USB device by using ETW and Netmon"
+      href: case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md
+  - name: "Using Xperf with USB ETW"
+    items: 
+    - name: "Overview of using Xperf with USB ETW"
       href: using-xperf-with-usb-etw.md
-      items: 
-      - name: "Viewing a USB Event Trace in Xperf"
-        href: viewing-a-usb-event-trace-in-xperf.md
-      - name: "Analyzing USB Performance Issues by Using Xperf and Netmon"
-        href: analyzing-usb-performance-issues-by-using-xperf-and-netmon.md
-    - name: "USB ETW and Power Management"
-      href: usb-etw-and-power-management.md
-  - name: "Testing USB hardware, drivers, and apps in Windows"
-    href: usb-driver-testing-guide.md
+    - name: "Viewing a USB Event Trace in Xperf"
+      href: viewing-a-usb-event-trace-in-xperf.md
+    - name: "Analyzing USB Performance Issues by Using Xperf and Netmon"
+      href: analyzing-usb-performance-issues-by-using-xperf-and-netmon.md
+  - name: "USB ETW and Power Management"
+    href: usb-etw-and-power-management.md
+- name: "Testing USB hardware, drivers, and apps in Windows"
+  items: 
+  - name: "Microsoft USB Test Tool (MUTT) devices"
     items: 
-    - name: "Microsoft USB Test Tool (MUTT) devices"
+    - name: "Overview of Microsoft USB Test Tool (MUTT) devices"
       href: microsoft-usb-test-tool--mutt--devices.md
-      items: 
-      - name: "Tools in the MUTT software package"
-        href: mutt-software-package.md
-    - name: "USB test tools"
-      href: usb-test-tools.md
-      items: 
-      - name: "MuttUtil"
-        href: muttutil.md
-      - name: "USB client driver verifier"
-        href: how-to-send-a-usb-device-to-select-suspend.md
-      - name: "USB hardware verifier (USB3HWVerifierAnalyzer.exe)"
-        href: how-to-retrieve-information-about-a-usb-device.md
-      - name: "USBLPM"
-        href: usblpm-tool.md
-      - name: "USBStress"
-        href: usbstress.md
-      - name: "USBTCD"
-        href: usbtcd.md
-      - name: "USB XHCIWMI"
-        href: usb-xhciwmi.md
-    - name: "Test USB Type-C systems with USB Type-C ConnEx"
-      href: test-usb-type-c-systems-with-mutt-connex-c.md
-    - name: "USB Type-C manual interoperability test procedures"
-      href: type.md
-    - name: "How to prepare the test system to run MUTT test tools"
-      href: mutt-testing-options.md
-    - name: "How to run stress and transfer performance tests for MUTT devices"
-      href: how-to-run-stress-and-transfer-and-super-mutt-performance-tests-for-mutt-devices.md
-    - name: "How to run system power devfund tests in Visual Studio for MUTT devices"
-      href: how-to-run-device-fundamental-tests-in-visual-studio-for-connected-mutt-devices.md
-    - name: "BIOS/UEFI testing with the MUTT devices"
-      href: how-to-run-bios-uefi-testing-with-the-mutt-device.md
-    - name: "Test USB hubs with MUTT devices"
-      href: how-to-run-hub-testing-with-the-mutt-device.md
-    - name: "Test USB host controllers with MUTT devices"
-      href: how-to-run-controller-and-device-testing-with-the-mutt-device.md
-    - name: "Test USB devices with MUTT devices"
-      href: tools-in-the-package.md
-    - name: "Windows Hardware Certification Kit Tests for USB"
-      href: windows-hardware-certification-kit-tests-for-usb.md
-      items: 
-      - name: "Recommended USB tests for system development"
-        href: usb-tests-for-system-development.md
-      - name: "USB-IF Certification Tests"
-        href: usb-if-certification-tests.md
-      - name: "Common failures for USB tests in the Windows HCK"
-        href: common-failures-for-usb-tests-in-the-windows-hck.md
-  - name: "Microsoft-provided USB drivers"
-    href: system-supplied-usb-drivers.md
+    - name: "Tools in the MUTT software package"
+      href: mutt-software-package.md
+  - name: "USB test tools"
     items: 
-    - name: "USB device class drivers included in Windows"
-      href: supported-usb-classes.md
-    - name: "USB serial driver (Usbser.sys)"
-      href: usb-driver-installation-based-on-compatible-ids.md
-    - name: "Microsoft-Defined USB Driver Frameworks"
-      href: microsoft-defined-usb-frameworks.md
-    - name: "USB Device Registry Entries"
-      href: usb-device-specific-registry-settings.md
+    - name: "MuttUtil"
+      href: muttutil.md
+    - name: "USB client driver verifier"
+      href: how-to-send-a-usb-device-to-select-suspend.md
+    - name: "USB hardware verifier (USB3HWVerifierAnalyzer.exe)"
+      href: how-to-retrieve-information-about-a-usb-device.md
+    - name: "USBLPM"
+      href: usblpm-tool.md
+    - name: "USBStress"
+      href: usbstress.md
+    - name: "USBTCD"
+      href: usbtcd.md
+    - name: "USB XHCIWMI"
+      href: usb-xhciwmi.md
+  - name: "Test USB Type-C systems with USB Type-C ConnEx"
+    href: test-usb-type-c-systems-with-mutt-connex-c.md
+  - name: "USB Type-C manual interoperability test procedures"
+    href: type.md
+  - name: "How to prepare the test system to run MUTT test tools"
+    href: mutt-testing-options.md
+  - name: "How to run stress and transfer performance tests for MUTT devices"
+    href: how-to-run-stress-and-transfer-and-super-mutt-performance-tests-for-mutt-devices.md
+  - name: "How to run system power devfund tests in Visual Studio for MUTT devices"
+    href: how-to-run-device-fundamental-tests-in-visual-studio-for-connected-mutt-devices.md
+  - name: "BIOS/UEFI testing with the MUTT devices"
+    href: how-to-run-bios-uefi-testing-with-the-mutt-device.md
+  - name: "Test USB hubs with MUTT devices"
+    href: how-to-run-hub-testing-with-the-mutt-device.md
+  - name: "Test USB host controllers with MUTT devices"
+    href: how-to-run-controller-and-device-testing-with-the-mutt-device.md
+  - name: "Test USB devices with MUTT devices"
+    href: tools-in-the-package.md
+  - name: "Windows Hardware Certification Kit Tests for USB"
+    items: 
+    - name: "Windows Hardware Lab Kit (HLK) Tests for USB"
+      href: windows-hardware-certification-kit-tests-for-usb.md
+    - name: "Recommended USB tests for system development"
+      href: usb-tests-for-system-development.md
+    - name: "USB-IF Certification Tests"
+      href: usb-if-certification-tests.md
+    - name: "Common failures for USB tests in the Windows HCK"
+      href: common-failures-for-usb-tests-in-the-windows-hck.md
+- name: "Microsoft-provided USB drivers"
+  items: 
+  - name: "Overview of Microsoft-provided USB drivers"
+    href: system-supplied-usb-drivers.md
+  - name: "USB device class drivers included in Windows"
+    href: supported-usb-classes.md
+  - name: "USB serial driver (Usbser.sys)"
+    href: usb-driver-installation-based-on-compatible-ids.md
+  - name: "Microsoft-Defined USB Driver Frameworks"
+    href: microsoft-defined-usb-frameworks.md
+  - name: "USB Device Registry Entries"
+    href: usb-device-specific-registry-settings.md
+  - name: "Usbccgp.sys"
+    items: 
     - name: "USB Generic Parent Driver (Usbccgp.sys)"
       href: usb-common-class-generic-parent-driver.md
+    - name: "Enumeration of USB Composite  Devices"
+      href: enumeration-of-the-composite-parent-device.md
+    - name: "Descriptors on Composite USB Devices"
+      href: descriptors-on-composite-usb-devices.md
+    - name: "Enumeration of Interfaces on USB Composite Devices"
+      href: enumeration-of-interfaces-not-grouped-in-collections.md
+    - name: "Enumeration of Interface Collections on USB Composite Devices"
       items: 
-      - name: "Enumeration of USB Composite  Devices"
-        href: enumeration-of-the-composite-parent-device.md
-      - name: "Descriptors on Composite USB Devices"
-        href: descriptors-on-composite-usb-devices.md
-      - name: "Enumeration of Interfaces on USB Composite Devices"
-        href: enumeration-of-interfaces-not-grouped-in-collections.md
-      - name: "Enumeration of Interface Collections on USB Composite Devices"
+      - name: "Overview of Enumeration of Interface Collections on USB Composite Devices"
         href: support-for-interface-collections.md
-        items: 
-        - name: "Support for the Wireless Mobile Communication Device Class"
-          href: support-for-the-wireless-mobile-communication-device-class--wmcdc-.md
-      - name: "Content Security Features in Usbccgp.sys"
-        href: content-security-features-in-the-composite-client-generic-parent-drive.md
+      - name: "Support for the Wireless Mobile Communication Device Class"
+        href: support-for-the-wireless-mobile-communication-device-class--wmcdc-.md
+    - name: "Content Security Features in Usbccgp.sys"
+      href: content-security-features-in-the-composite-client-generic-parent-drive.md
+  - name: "Winusb.sys"
+    items: 
     - name: "WinUSB (Winusb.sys)"
       href: winusb.md
-      items: 
-      - name: "WinUSB Architecture and Modules"
-        href: winusb-architecture.md
-      - name: "WinUSB (Winusb.sys) Installation"
-        href: winusb-installation.md
-      - name: "WinUSB Device"
-        href: automatic-installation-of-winusb.md
+    - name: "WinUSB Architecture and Modules"
+      href: winusb-architecture.md
+    - name: "WinUSB (Winusb.sys) Installation"
+      href: winusb-installation.md
+    - name: "WinUSB Device"
+      href: automatic-installation-of-winusb.md

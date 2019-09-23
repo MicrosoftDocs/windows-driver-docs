@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Open the networks list
 
 
-You can open the networks list by calling the [**ShowConnectionUI**](https://msdn.microsoft.com/library/windows/apps/hh921594) method of the current network object for the account.
+You can open the networks list by calling the [**ShowConnectionUI**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork#Windows_Networking_NetworkOperators_MobileBroadbandNetwork_ShowConnectionUI) method of the current network object for the account.
 
 For example:
 

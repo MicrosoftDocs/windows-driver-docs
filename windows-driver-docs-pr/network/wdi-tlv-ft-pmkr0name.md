@@ -21,14 +21,14 @@ WDI\_TLV\_FT\_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Name (802.11r
 ## Length
 
 
-The size (in bytes) of a [**WDI\_TYPE\_PMK\_NAME**](https://msdn.microsoft.com/library/windows/hardware/mt269156) structure.
+The size (in bytes) of a [**WDI\_TYPE\_PMK\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ns-wditypes-_wdi_type_pmk_name) structure.
 
 ## Values
 
 
 | Type                                                   | Description                         |
 |--------------------------------------------------------|-------------------------------------|
-| [**WDI\_TYPE\_PMK\_NAME**](https://msdn.microsoft.com/library/windows/hardware/mt269156) | A PMKR0Name or PMKR1Name (802.11r). |
+| [**WDI\_TYPE\_PMK\_NAME**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ns-wditypes-_wdi_type_pmk_name) | A PMKR0Name or PMKR1Name (802.11r). |
 
  
 

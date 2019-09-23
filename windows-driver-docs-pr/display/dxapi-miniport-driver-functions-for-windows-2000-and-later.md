@@ -26,7 +26,7 @@ DxApi interface support is useful for the following operations:
 
 -   Field skipping using an IRQ to support MPEG drivers that can undo the 3:2 pulldown of MPEG data originally sampled from film.
 
--   Bus mastering, so devices can continuously transfer data without having to call [*DdLock*](https://msdn.microsoft.com/library/windows/hardware/ff549599) / [*DdUnlock*](https://msdn.microsoft.com/library/windows/hardware/ff550365) for every frame. This is especially useful because the drivers for these devices are WDM drivers.
+-   Bus mastering, so devices can continuously transfer data without having to call [*DdLock*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_lock) / [*DdUnlock*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_unlock) for every frame. This is especially useful because the drivers for these devices are WDM drivers.
 
 -   Capturing video and VBI. In the miniport driver, it is easy to capture video that is based on a hardware video port IRQ or graphics IRQ.
 

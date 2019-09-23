@@ -15,29 +15,29 @@ In Windows Vista and later versions of Windows, the [unified device property mod
 
 The following system-defined device property keys are defined in *Devpkey.h*:
 
--   The DEVPKEY_NAME property key that represents the name of a component. Use the value of the DEVPKEY_NAME property to indentify the component to an end-user. Windows supports the DEVPKEY_NAME property for [**device instances**](https://msdn.microsoft.com/library/windows/hardware/ff543530), [**device setup classes**](https://msdn.microsoft.com/library/windows/hardware/ff543534), and [**device interfaces**](https://msdn.microsoft.com/library/windows/hardware/ff543533).
+-   The DEVPKEY_NAME property key that represents the name of a component. Use the value of the DEVPKEY_NAME property to indentify the component to an end-user. Windows supports the DEVPKEY_NAME property for [**device instances**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-name--device-instance-), [**device setup classes**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-name--device-setup-class-), and [**device interfaces**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-name--device-interface-).
 
--   Property keys that represent the [device instance properties that correspond to the SPDRP_Xxx identifiers](https://msdn.microsoft.com/library/windows/hardware/ff541334). (The SPDRP_*Xxx* identifiers are defined in *Setupapi.h*.)
+-   Property keys that represent the [device instance properties that correspond to the SPDRP_Xxx identifiers](https://docs.microsoft.com/previous-versions/ff541334(v=vs.85)). (The SPDRP_*Xxx* identifiers are defined in *Setupapi.h*.)
 
 -   Property keys that represent the device instance properties that do not have corresponding SPDRP_*Xxx* identifiers. This includes the following:
 
-    [Device status and problem properties](https://msdn.microsoft.com/library/windows/hardware/ff542254)
+    [Device status and problem properties](https://docs.microsoft.com/previous-versions/ff542254(v=vs.85))
 
-    [Device relations properties](https://msdn.microsoft.com/library/windows/hardware/ff541498), including the parent device, child devices, and sibling devices
+    [Device relations properties](https://docs.microsoft.com/previous-versions/ff541498(v=vs.85)), including the parent device, child devices, and sibling devices
 
-    [Device driver properties](https://msdn.microsoft.com/library/windows/hardware/ff541205)
+    [Device driver properties](https://docs.microsoft.com/previous-versions/ff541205(v=vs.85))
 
-    [Device driver package properties](https://msdn.microsoft.com/library/windows/hardware/ff541200)
+    [Device driver package properties](https://docs.microsoft.com/previous-versions/ff541200(v=vs.85))
 
-    [Miscellaneous other device properties](https://msdn.microsoft.com/library/windows/hardware/ff549289)
+    [Miscellaneous other device properties](https://docs.microsoft.com/previous-versions/ff549289(v=vs.85))
 
--   Property keys that represent [device setup class properties](https://msdn.microsoft.com/library/windows/hardware/ff542239) that correspond to the SPCRP_Xxx identifiers. (The SPCRP_Xxx identifiers are defined in *Setupapi.h*.)
+-   Property keys that represent [device setup class properties](https://docs.microsoft.com/previous-versions/ff542239(v=vs.85)) that correspond to the SPCRP_Xxx identifiers. (The SPCRP_Xxx identifiers are defined in *Setupapi.h*.)
 
 -   Property keys that represent device setup class properties that do not have corresponding SPCRP_Xxx identifiers.
 
--   Property keys that represent [device interface class properties](https://msdn.microsoft.com/library/windows/hardware/ff541406).
+-   Property keys that represent [device interface class properties](https://docs.microsoft.com/previous-versions/ff541406(v=vs.85)).
 
--   Property keys that represent [device interface properties](https://msdn.microsoft.com/library/windows/hardware/ff541409).
+-   Property keys that represent [device interface properties](https://docs.microsoft.com/previous-versions/ff541409(v=vs.85)).
 
 For information about how to create custom device properties, see [Creating Custom Device Properties](creating-custom-device-properties.md).
 

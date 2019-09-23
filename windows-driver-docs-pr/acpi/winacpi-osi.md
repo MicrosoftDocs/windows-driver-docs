@@ -11,6 +11,7 @@ This topic describes how to use the \_OSI method in Advanced Configuration and P
 
 This information applies to the following operating systems:
 
+- Windows 10, version 1903
 - Windows 10, version 1809
 - Windows 10, version 1803
 - Windows 10, version 1709
@@ -31,7 +32,7 @@ This information applies to the following operating systems:
 
 ## The \_OSI Method
 
-All recent versions of the Windows operating system support components of the [Advanced Configuration and Power Interface (ACPI) Specification](https://www.uefi.org/specifications). The ACPI specification defines an interpreted language, ACPI Source Language (ASL), to enable the operating system to execute firmware-provided control methods for power management and configuration. To improve the ability for ASL writers to identify the host operating system version, ASL provides the Operating System Interface Level (\_OSI).
+All recent versions of the Windows operating system support components of the [Advanced Configuration and Power Interface (ACPI) Specification](https://uefi.org/specifications). The ACPI specification defines an interpreted language, ACPI Source Language (ASL), to enable the operating system to execute firmware-provided control methods for power management and configuration. To improve the ability for ASL writers to identify the host operating system version, ASL provides the Operating System Interface Level (\_OSI).
 
 By using the \_OSI method, ASL writers can easily determine the version of the ACPI interfaces that the host operating system supports. This versioning method provides a solution for creating firmware that can support future operating systems and enable the operating system to change behavior based on the requested interface levels.
 
@@ -90,10 +91,11 @@ Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method 
 | Windows 2017.2      | Windows 10, version 1709      |
 | Windows 2018        | Windows 10, version 1803      |
 | Windows 2018.2      | Windows 10, version 1809      |
+| Windows 2019        | Windows 10, version 1903      |
 
 ### Implementation Note
 
 Place the routine that identifies the operating system in an \_INI method under the \\\_SB scope so that \_OSI can run as early as possible. This placement is important because the operating system makes features available based on the string argument to the \_OSI method.
 
 ## Additional resources
-[Advanced Configuration and Power Interface Specification](https://www.uefi.org/specifications)
+[Advanced Configuration and Power Interface Specification](https://uefi.org/specifications)

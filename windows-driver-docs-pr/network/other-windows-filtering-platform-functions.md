@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Other Windows Filtering Platform functions
 
-This section contains information about Windows Filtering Platform functions that do not fall under the category of [Functions Called by Callout Drivers](https://msdn.microsoft.com/library/windows/hardware/ff550051) or [Callout Driver Callout Functions](https://msdn.microsoft.com/library/windows/hardware/ff543875). 
+This section contains information about Windows Filtering Platform functions that do not fall under the category of [Functions Called by Callout Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Callout Driver Callout Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/). 
 
 ## In this section
 
@@ -22,5 +22,5 @@ This section contains information about Windows Filtering Platform functions tha
 
 ## Related topics
 
-[Windows Filtering Platform Functions](https://msdn.microsoft.com/library/windows/hardware/ff550048)
+[Windows Filtering Platform Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
 

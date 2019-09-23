@@ -233,12 +233,12 @@ Any **AddReg** directive specified in a *DDInstall* section is assumed to refere
 
 Depending on the [device setup class](device-setup-classes.md) that was specified in the [**INF Version section**](inf-version-section.md), additional class-specific directives can be specified in a *DDInstall* section. For more information about class-specific directives, see the following topics:
 
--   [Building an INF File for a Windows SideShow-Compatible Device](https://msdn.microsoft.com/library/windows/hardware/ff547750)
--   [DDInstall Section in a Network INF File](https://msdn.microsoft.com/library/windows/hardware/ff546332)
--   [INF Files for Still Image Devices](https://msdn.microsoft.com/library/windows/hardware/ff542762)
--   [INF Files for WIA Devices](https://msdn.microsoft.com/library/windows/hardware/ff542770)
--   [Installation Requirements for Network Components](https://msdn.microsoft.com/library/windows/hardware/ff554949)
--   [Specifying WDF Directives in INF Files](https://msdn.microsoft.com/windows/hardware/drivers/wdf/specifying-wdf-directives-in-inf-files)
+-   [Building an INF File for a Windows SideShow-Compatible Device](https://docs.microsoft.com/windows-hardware/drivers/)
+-   [DDInstall Section in a Network INF File](https://docs.microsoft.com/windows-hardware/drivers/network/ddinstall-services-section-in-a-network-inf-file)
+-   [INF Files for Still Image Devices](https://docs.microsoft.com/windows-hardware/drivers/image/inf-files-for-still-image-devices)
+-   [INF Files for WIA Devices](https://docs.microsoft.com/windows-hardware/drivers/image/inf-files-for-wia-devices)
+-   [Installation Requirements for Network Components](https://docs.microsoft.com/windows-hardware/drivers/network/installation-requirements-for-network-components)
+-   [Specifying WDF Directives in INF Files](https://docs.microsoft.com/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files)
 
 Examples
 --------

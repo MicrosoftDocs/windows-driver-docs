@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS registers WMI GUIDs with WMI for miniport adapters. To obtain the list of OIDs that a miniport adapter supports, NDIS issues an [OID\_GEN\_SUPPORTED\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569642) query to the associated miniport driver. The miniport driver must provide the list of all of the OIDs that the miniport adapter supports. This list must contain all of the mandatory OIDs and should contain optional and custom OIDs, if any.
+NDIS registers WMI GUIDs with WMI for miniport adapters. To obtain the list of OIDs that a miniport adapter supports, NDIS issues an [OID\_GEN\_SUPPORTED\_LIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-list) query to the associated miniport driver. The miniport driver must provide the list of all of the OIDs that the miniport adapter supports. This list must contain all of the mandatory OIDs and should contain optional and custom OIDs, if any.
 
 NDIS maps the supported OIDs to WMI GUIDs and registers the GUIDs with WMI. NDIS translates WMI GUID requests to OID requests, if necessary, for the registered OIDs.
 

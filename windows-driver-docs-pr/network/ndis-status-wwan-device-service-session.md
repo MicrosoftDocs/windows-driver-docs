@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION
 
 
-Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION indication to report the completion of a device service session state change originated by [OID\_WWAN\_DEVICE\_SERVICE\_SESSION](https://msdn.microsoft.com/library/windows/hardware/hh846218).
+Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION indication to report the completion of a device service session state change originated by [OID\_WWAN\_DEVICE\_SERVICE\_SESSION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-service-session).
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh831858) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_info) structure.
 
 Requirements
 ------------
@@ -40,9 +40,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_DEVICE\_SERVICE\_SESSION](https://msdn.microsoft.com/library/windows/hardware/hh846218)
+[OID\_WWAN\_DEVICE\_SERVICE\_SESSION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-service-session)
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh831858)
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_info)
 
  
 

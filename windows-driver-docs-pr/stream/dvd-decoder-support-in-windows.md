@@ -29,7 +29,7 @@ Under Windows XP, the following components support DVD decoding and playback:
 
 -   **WDM Stream Class Driver**
 
-    The WDM stream class driver supports streaming data types and MPEG-2 and AC-3 hardware decoders. For more information, see [Streaming Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff568275).
+    The WDM stream class driver supports streaming data types and MPEG-2 and AC-3 hardware decoders. For more information, see [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index).
 
 **Note**   Microsoft does not provide MPEG-2 or AC-3 software/hardware decoder filters with Windows XP. Vendors must supply either a DirectShow-compatible software decoder for each required DVD data stream, or provide a WDM streaming-compatible DVD decoder minidriver to support their DVD hardware decoders.
 

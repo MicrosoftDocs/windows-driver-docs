@@ -25,9 +25,9 @@ ms.localizationpriority: medium
 
         Additionally, all HP-GL/2 commands are hard-coded in the driver.
 
-3.  Masks received in calls to [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) and other bit-block transfer functions may not work correctly.
+3.  Masks received in calls to [**DrvBitBlt**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvbitblt) and other bit-block transfer functions may not work correctly.
 
-4.  When Windows XP Unidrv is used on Windows 2000 and HP-GL/2 is activated, some graphics rendering functions may not work correctly. For example, the output from [**DrvGradientFill**](https://msdn.microsoft.com/library/windows/hardware/ff556236) calls has red and blue reversed.
+4.  When Windows XP Unidrv is used on Windows 2000 and HP-GL/2 is activated, some graphics rendering functions may not work correctly. For example, the output from [**DrvGradientFill**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgradientfill) calls has red and blue reversed.
 
 5.  Unidrv assumes that printer hardware supports ROP commands. If a printer does not support ROP, some documents might not print correctly.
 

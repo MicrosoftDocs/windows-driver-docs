@@ -48,7 +48,7 @@ On all systems, use the [**BCDEdit /ems**](bcdedit--ems.md) command and specify 
 
 The boot parameters described in this section enable EMS console redirection after Windows is installed. For information about enabling EMS during a new installation or upgrade of Windows, search for "Enabling Emergency Management Services" on the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=10111) website.
 
-For a detailed example, see [Boot Parameters to Enable EMS Redirection](https://msdn.microsoft.com/library/windows/hardware/ff542282).
+For a detailed example, see [Boot Parameters to Enable EMS Redirection](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-parameters-to-enable-ems-redirection).
 
  
 

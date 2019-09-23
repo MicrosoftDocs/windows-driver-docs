@@ -33,7 +33,7 @@ If a BDA minidriver does not define it's own handlers for the methods in this me
 
 ### See Also
 
-[**BdaInitFilter**](https://msdn.microsoft.com/library/windows/hardware/ff556464)
+[**BdaInitFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdainitfilter)
 
  
 

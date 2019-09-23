@@ -1,8 +1,6 @@
 ---
 title: Get product data
 description: These methods from the Microsoft Hardware APIs get data for hardware products registered to your Dev Center Account.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium
@@ -172,15 +170,15 @@ This object represents the downloads for a given submission.
   "items": [
     {
       "type": "initialPackage",
-      "url": "https://ingestionpackagesint1.blob.core.windows.net/ingestion/dc55b8c6-a01c-40b6-b815-cac8bc08812a?sv=2016-05-31&sr=b&sig=ipjW3RsVC75lZrcEZRh9JmTX89L4gTIKkxwqv9F8Axs%3D&se=2018-03-12T15:32:10Z&sp=rl"
+      "url": "https://ingestionpackages.blob.core.windows.net/ingestion/dc55b8c6-a01c-40b6-b815-cac8bc08812a?sv=2016-05-31&sr=b&sig=ipjW3RsVC75lZrcEZRh9JmTX89L4gTIKkxwqv9F8Axs%3D&se=2018-03-12T15:32:10Z&sp=rl"
     },
     {
       "type": "derivedPackage",
-      "url": "https://ingestionpackagesint1.blob.core.windows.net/ingestion/6bd77dbf-a851-46d2-b703-29ea4efae006?sv=2016-05-31&sr=b&sig=O5XQf%2FzMbI2FFt5WwSUJWL1JbWY4JXXPRkCKAnX7IRs%3D&se=2018-03-12T15:32:10Z&sp=rl&rscd=attachment%3B filename%3DShell_1152921504621441930.hlkx"
+      "url": "https://ingestionpackages.blob.core.windows.net/ingestion/6bd77dbf-a851-46d2-b703-29ea4efae006?sv=2016-05-31&sr=b&sig=O5XQf%2FzMbI2FFt5WwSUJWL1JbWY4JXXPRkCKAnX7IRs%3D&se=2018-03-12T15:32:10Z&sp=rl&rscd=attachment%3B filename%3DShell_1152921504621441930.hlkx"
     },
     {
       "type": "signedPackage",
-      "url": "https://ingestionpackagesint1.blob.core.windows.net/ingestion/0b83a294-c1d1-4136-82a1-dd52f51841e3?sv=2016-05-31&sr=b&sig=zTfxKJmaTwpbFol%2FpAKG0QuXJTTxm5aZ0F2wQQI8whc%3D&se=2018-03-12T15:32:10Z&sp=rl"
+      "url": "https://ingestionpackages.blob.core.windows.net/ingestion/0b83a294-c1d1-4136-82a1-dd52f51841e3?sv=2016-05-31&sr=b&sig=zTfxKJmaTwpbFol%2FpAKG0QuXJTTxm5aZ0F2wQQI8whc%3D&se=2018-03-12T15:32:10Z&sp=rl"
     },
     {
       "type": "certificationReport",
@@ -392,6 +390,7 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100Server_RS5 | Windows Server 2019 |
 | Windows_v100_RS5 | Windows 10 RS5 x86 |
 | Windows_v100_RS5 | Windows 10 RS5 x64 |
+| Windows_v100_19H1 | Windows 10 19H1 Update |
 
 ### List of Operating System Codes
 
@@ -446,9 +445,12 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_RS4_FULL|Windows 10 RS4 Client|
 |WINDOWS_v100_X64_RS4_FULL|Windows 10 RS4 Client x64|
 |WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client ARM64|
-| WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
-| WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
-| WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 x64 |
+|WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
+|WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
+|WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 Client x64 |
+|WINDOWS_v100_19H1_FULL |Windows 19H1 Client x86 |
+|WINDOWS_v100_X64_19H1_FULL |Windows 19H1 Client x64 |
+|WINDOWS_v100_ARM64_19H1_FULL | Windows 19H1 Client ARM64 |
 
 ## Error codes
 

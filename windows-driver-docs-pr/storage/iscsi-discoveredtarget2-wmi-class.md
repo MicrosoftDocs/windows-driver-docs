@@ -15,7 +15,7 @@ This class is similar to the [ISCSI\_DiscoveredTarget WMI class](iscsi-discovere
 
 The ISCSI\_DiscoveredTarget2 class is unpublished and is defined in *Discover.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget2**](https://msdn.microsoft.com/library/windows/hardware/ff561503) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsifnd/ns-iscsifnd-_iscsi_discoveredtarget2) data structure.
 
  
 

@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 The INF file in a driver package specifies the driver-version information for the drivers that are installed by the INF. The version information in the file identifies the driver package as a whole, in contrast to the [internal and external version numbers](internal-and-external-version-numbers.md) for the individual driver files within the package.
 
-The file specifies each driver's date and version number in an [**INF DriverVer directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394) with the following format:
+The file specifies each driver's date and version number in an [**INF DriverVer directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) with the following format:
 
 **DriverVer**= *mm* / *dd* / *yyyy*\[,*x*.*y*.*v*.*z*\]
 

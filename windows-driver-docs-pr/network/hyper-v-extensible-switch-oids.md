@@ -26,29 +26,29 @@ The OID request is issued by an extension.
 
 | Name                                                                                                 | Q | S | M | P | E |
 |---                                                                                                   |---|---|---|---|---|
-| [OID_SWITCH_FEATURE_STATUS_QUERY](https://msdn.microsoft.com/library/windows/hardware/hh598260)      |   |   | X | X |   | 
-| [OID_SWITCH_NIC_ARRAY](https://msdn.microsoft.com/library/windows/hardware/hh598261)                 | X |   |   |   | X | 
-| [OID_SWITCH_NIC_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262)               |   | X |   | X |   |
-| [OID_SWITCH_NIC_CREATE](https://msdn.microsoft.com/library/windows/hardware/hh598263)                |   | X |   | X |   |
-| [OID_SWITCH_NIC_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598264)                |   | X |   | X |   |  
-| [OID_SWITCH_NIC_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598265)            |   | X |   | X |   | 
-| [OID_SWITCH_NIC_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh598266)               |   |   | X |   | X |   
-| [OID_SWITCH_NIC_RESTORE](https://msdn.microsoft.com/library/windows/hardware/hh598267)               |   | X |   | X |   |   
-| [OID_SWITCH_NIC_SAVE](https://msdn.microsoft.com/library/windows/hardware/hh598268)                  | X |   |   | X |   |
-| [OID_SWITCH_NIC_SAVE_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/hh598269)         |   | X |   | X |   | 
-| [OID_SWITCH_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh598270)                | X |   |   |   | X |
-| [OID_SWITCH_PORT_ARRAY](https://msdn.microsoft.com/library/windows/hardware/hh598271)                | X |   |   |   | X | 
-| [OID_SWITCH_PORT_CREATE](https://msdn.microsoft.com/library/windows/hardware/hh598272)               |   | X |   | X |   | 
-| [OID_SWITCH_PORT_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598273)               |   | X |   | X |   | 
-| [OID_SWITCH_PORT_FEATURE_STATUS_QUERY](https://msdn.microsoft.com/library/windows/hardware/hh598274) |   |   | X | X |   | 
-| [OID_SWITCH_PORT_PROPERTY_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275)         |   | X |   | X |   |
-| [OID_SWITCH_PORT_PROPERTY_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598276)      |   | X |   | X |   |   
-| [OID_SWITCH_PORT_PROPERTY_ENUM](https://msdn.microsoft.com/library/windows/hardware/hh598277)        |   |   | X |   | X |   
-| [OID_SWITCH_PORT_PROPERTY_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598278)      |   | X |   | X |   | 
-| [OID_SWITCH_PORT_TEARDOWN](https://msdn.microsoft.com/library/windows/hardware/hh598279)             |   | X |   | X |   |
-| [OID_SWITCH_PROPERTY_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598280)              |   | X |   | X |   | 
-| [OID_SWITCH_PROPERTY_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598281)           |   | X |   | X |   | 
-| [OID_SWITCH_PROPERTY_ENUM](https://msdn.microsoft.com/library/windows/hardware/hh598282)             |   |   | X |   | X |
-| [OID_SWITCH_PROPERTY_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598283)           |   | X |   | X |   | 
+| [OID_SWITCH_FEATURE_STATUS_QUERY](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-feature-status-query)      |   |   | X | X |   | 
+| [OID_SWITCH_NIC_ARRAY](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-array)                 | X |   |   |   | X | 
+| [OID_SWITCH_NIC_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-connect)               |   | X |   | X |   |
+| [OID_SWITCH_NIC_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-create)                |   | X |   | X |   |
+| [OID_SWITCH_NIC_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete)                |   | X |   | X |   |  
+| [OID_SWITCH_NIC_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect)            |   | X |   | X |   | 
+| [OID_SWITCH_NIC_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request)               |   |   | X |   | X |   
+| [OID_SWITCH_NIC_RESTORE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-restore)               |   | X |   | X |   |   
+| [OID_SWITCH_NIC_SAVE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-save)                  | X |   |   | X |   |
+| [OID_SWITCH_NIC_SAVE_COMPLETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-save-complete)         |   | X |   | X |   | 
+| [OID_SWITCH_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-parameters)                | X |   |   |   | X |
+| [OID_SWITCH_PORT_ARRAY](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-array)                | X |   |   |   | X | 
+| [OID_SWITCH_PORT_CREATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-create)               |   | X |   | X |   | 
+| [OID_SWITCH_PORT_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-delete)               |   | X |   | X |   | 
+| [OID_SWITCH_PORT_FEATURE_STATUS_QUERY](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-feature-status-query) |   |   | X | X |   | 
+| [OID_SWITCH_PORT_PROPERTY_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-add)         |   | X |   | X |   |
+| [OID_SWITCH_PORT_PROPERTY_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-delete)      |   | X |   | X |   |   
+| [OID_SWITCH_PORT_PROPERTY_ENUM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-enum)        |   |   | X |   | X |   
+| [OID_SWITCH_PORT_PROPERTY_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-property-update)      |   | X |   | X |   | 
+| [OID_SWITCH_PORT_TEARDOWN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-port-teardown)             |   | X |   | X |   |
+| [OID_SWITCH_PROPERTY_ADD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-add)              |   | X |   | X |   | 
+| [OID_SWITCH_PROPERTY_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-delete)           |   | X |   | X |   | 
+| [OID_SWITCH_PROPERTY_ENUM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-enum)             |   |   | X |   | X |
+| [OID_SWITCH_PROPERTY_UPDATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-property-update)           |   | X |   | X |   | 
 
 

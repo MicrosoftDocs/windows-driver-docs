@@ -62,7 +62,7 @@ Create a new submission for each of the packages created above and upload them t
 
 #### ExtensionID
 
-The ExtensionID is a GUID that you generate that is used for driver lineage identification and versioning. It describes a hardware device part or part series, and is [automatically registered](https://blogs.msdn.microsoft.com/windows_hardware_certification/2017/11/08/hardware-dev-center-now-automatically-registers-extension-ids/) to the SellerID that submitted it. The owner of this SellerID is responsible for keeping track of ExtensionID usage and mapping, similar to CHID management. 
+The ExtensionID is a GUID that you generate that is used for driver lineage identification and versioning. It describes a hardware device part or part series, and is [automatically registered](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification) to the SellerID that submitted it. The owner of this SellerID is responsible for keeping track of ExtensionID usage and mapping, similar to CHID management. 
 
 For example, when you create an ExtensionID for a new system part:
 

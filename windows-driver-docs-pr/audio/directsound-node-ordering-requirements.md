@@ -23,17 +23,17 @@ ms.localizationpriority: medium
 
 A DirectSound 2D or 3D mixer pin should have a node chain that contains the following sequence of nodes:
 
--   Volume node (See [**KSNODETYPE\_VOLUME**](https://msdn.microsoft.com/library/windows/hardware/ff537208).)
+-   Volume node (See [**KSNODETYPE\_VOLUME**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-volume).)
 
--   3D node (This node is optional. See [**KSNODETYPE\_3D\_EFFECTS**](https://msdn.microsoft.com/library/windows/hardware/ff537148).)
+-   3D node (This node is optional. See [**KSNODETYPE\_3D\_EFFECTS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-3d-effects).)
 
--   Supermixer node (See [**KSNODETYPE\_SUPERMIX**](https://msdn.microsoft.com/library/windows/hardware/ff537198).)
+-   Supermixer node (See [**KSNODETYPE\_SUPERMIX**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-supermix).)
 
 -   Volume node (for panning effects)
 
--   SRC node (See [**KSNODETYPE\_SRC**](https://msdn.microsoft.com/library/windows/hardware/ff537190).)
+-   SRC node (See [**KSNODETYPE\_SRC**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-src).)
 
--   SUM node (See [**KSNODETYPE\_SUM**](https://msdn.microsoft.com/library/windows/hardware/ff537196).)
+-   SUM node (See [**KSNODETYPE\_SUM**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-sum).)
 
 The nodes in this list appear in the order in which they are encountered by data streaming into the pin. Other nodes can be interleaved between these nodes without causing problems, provided that the above ordering is preserved.
 

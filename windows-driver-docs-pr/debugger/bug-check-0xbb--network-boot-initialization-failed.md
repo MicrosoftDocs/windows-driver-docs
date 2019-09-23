@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The NETWORK\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x000000BB. This indicates that Windows failed to successfully boot off a network.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## NETWORK\_BOOT\_INITIALIZATION\_FAILED Parameters

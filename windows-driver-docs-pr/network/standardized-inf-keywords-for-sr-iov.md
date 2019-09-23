@@ -13,9 +13,9 @@ This topic describes the standardized INF keywords for the single root I/O virtu
 
 The SR-IOV INF keywords are described in the following sections:
 
-[Standardized INF Keywords for the Enabling or Disabling SR-IOV Support](#sr-iov)
+[Standardized INF Keywords for the Enabling or Disabling SR-IOV Support](#standardized-inf-keywords-for-enabling-or-disabling-sr-iov-support)
 
-[Standardized INF Keywords for Configuration of the Default NIC Switch](#nic-switch)
+[Standardized INF Keywords for Configuration of the Default NIC Switch](#standardized-inf-keywords-for-configuration-of-the-default-nic-switch)
 
 ## Standardized INF Keywords for Enabling or Disabling SR-IOV Support
 
@@ -170,7 +170,7 @@ The type of the data value.
 <td align="left"><p>REG_DWORD</p></td>
 <td align="left"><p><em>n</em> is the maximum number of PCIe Virtual Functions (VFs) that are supported by the SR-IOV network adapter.</p>
 <div class="alert">
-<strong>Note</strong>  This registry key defines the maximum number of VFs that the network adapter supports. When the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff563672" data-raw-source="[&lt;strong&gt;NdisMSetMiniportAttributes&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff563672)"><strong>NdisMSetMiniportAttributes</strong></a>, it can advertise less than this value depending on the available hardware resources on the network adapter. For more information, see <a href="determining-nic-switch-capabilities.md" data-raw-source="[Determining NIC Switch Capabilities](determining-nic-switch-capabilities.md)">Determining NIC Switch Capabilities</a>.
+<strong>Note</strong>  This registry key defines the maximum number of VFs that the network adapter supports. When the miniport driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes" data-raw-source="[&lt;strong&gt;NdisMSetMiniportAttributes&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes)"><strong>NdisMSetMiniportAttributes</strong></a>, it can advertise less than this value depending on the available hardware resources on the network adapter. For more information, see <a href="determining-nic-switch-capabilities.md" data-raw-source="[Determining NIC Switch Capabilities](determining-nic-switch-capabilities.md)">Determining NIC Switch Capabilities</a>.
 </div>
 <div>
  
@@ -188,7 +188,7 @@ HKR, NicSwitches\0, *SwitchId,   0x00010001, 0
 HKR, NicSwitches\0, *SwitchName, 0x00000000, “Default Switch”
 ```
 
-For more information about the syntax of the **AddReg** directive, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+For more information about the syntax of the **AddReg** directive, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
 For more information about the default NIC switch, see [NIC Switches](nic-switches.md).
 

@@ -22,7 +22,7 @@ When Sent
 
 A driver sends this IRP as an optimization to determine whether its device actually entered a specific power state. Support for this IRP is optional.
 
-To send this IRP, a driver must call [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) to allocate the IRP, specifying the major IRP code [**IRP\_MJ\_POWER**](irp-mj-power.md) and minor IRP code **IRP\_MN\_POWER\_SEQUENCE**. The driver must then call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) (Windows Vista) or [**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654) (Windows Server 2003, Windows XP, and Windows 2000) to pass the IRP to the next lower driver. The power manager cannot send this IRP.
+To send this IRP, a driver must call [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) to allocate the IRP, specifying the major IRP code [**IRP\_MJ\_POWER**](irp-mj-power.md) and minor IRP code **IRP\_MN\_POWER\_SEQUENCE**. The driver must then call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) (Windows Vista) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver) (Windows Server 2003, Windows XP, and Windows 2000) to pass the IRP to the next lower driver. The power manager cannot send this IRP.
 
 Senders of this IRP must be running at IRQL &lt;= DISPATCH\_LEVEL.
 

@@ -21,7 +21,7 @@ WDK 10 includes PkgGen, a tool that generates package files. You run PkgGen in 
 
 To view the contents of the package file, append a .cab suffix to the file name and then open the cab file in Windows Explorer.
 
-To learn about running PkgGen outside of Visual Studio, see [Creating mobile packages](https://msdn.microsoft.com/Library/Windows/Hardware/Dn756642).
+To learn about running PkgGen outside of Visual Studio, see [Creating mobile packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)).
 
 To install a mobile driver package (.spkg file), you have two options.
 
@@ -38,7 +38,7 @@ To install a mobile driver package (.spkg file), you have two options.
        IUTool -p MyKmdfDriver.spkg
        ```
 
-2.  For more information, see [Adding a driver to a test image](https://msdn.microsoft.com/Library/Windows/Hardware/Mt131832).
+2.  For more information, see [Adding a driver to a test image](https://docs.microsoft.com/previous-versions/mt131832(v=vs.85)).
 
 **Using ImgGen to add a driver package (.spkg) to a mobile OS image (.ffu)**
 

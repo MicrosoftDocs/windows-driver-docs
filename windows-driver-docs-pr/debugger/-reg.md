@@ -86,7 +86,7 @@ Displays the security cache for a hive. *HiveAddress* specifies the address of t
 <span id="_______hashindex_______HiveAddress_HashKey______"></span><span id="_______hashindex_______hiveaddress_hashkey______"></span><span id="_______HASHINDEX_______HIVEADDRESS_HASHKEY______"></span> **hashindex** **** \[*HiveAddress*\] **** *HashKey*   
 Computes the hash index entry for a hash key. *HiveAddress* specifies the address of the hive. *HashKey* specifies the key.
 
-**Note**  *HiveAddress* is required if the target computer is running Windows 7 or later.
+**Note** *HiveAddress* is required if the target computer is running Windows 7 or later.
 
 
 

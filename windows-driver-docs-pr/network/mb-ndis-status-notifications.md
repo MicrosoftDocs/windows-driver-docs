@@ -4,12 +4,13 @@ description: MB NDIS Status Notifications
 ms.assetid: 97538f74-f602-4d38-a5a8-e52eb3194fb9
 ms.date: 07/18/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # MB NDIS Status Notifications
 
 
-This section NDIS status notifications for Mobile Broadband (MB) miniport drivers:
+This section contains NDIS status notifications for Mobile Broadband (MB) miniport drivers:
 
 [**NDIS\_STATUS\_WWAN\_AUTH\_RESPONSE**](ndis-status-wwan-auth-response.md)
 
@@ -49,11 +50,15 @@ This section NDIS status notifications for Mobile Broadband (MB) miniport driver
 
 [**NDIS_STATUS_WWAN_MODEM_CONFIG_INFO**](ndis-status-wwan-modem-config-info.md)
 
+[**NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG**](ndis-status-wwan-modem-logging-config.md)
+
 [**NDIS_STATUS_WWAN_MPDP_LIST**](ndis-status-wwan-mpdp-list.md)
 
 [**NDIS_STATUS_WWAN_MPDP_STATE**](ndis-status-wwan-mpdp-state.md)
 
 [**NDIS_STATUS_WWAN_NETWORK_BLACKLIST**](ndis-status-wwan-network-blacklist.md)
+
+[**NDIS_STATUS_WWAN_NITZ_INFO**](ndis-status-wwan-nitz-info.md)
 
 [**NDIS\_STATUS\_WWAN\_PACKET\_SERVICE**](ndis-status-wwan-packet-service.md)
 
@@ -102,6 +107,14 @@ This section NDIS status notifications for Mobile Broadband (MB) miniport driver
 [**NDIS\_STATUS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](ndis-status-wwan-supported-device-services.md)
 
 [**NDIS\_STATUS\_WWAN\_SYS\_CAPS**](ndis-status-wwan-sys-caps.md)
+
+[**NDIS_STATUS_WWAN_UICC_APP_LIST**](ndis-status-wwan-uicc-app-list.md)
+
+[**NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE**](ndis-status-wwan-uicc-binary-response.md)
+
+[**NDIS_STATUS_WWAN_UICC_FILE_STATUS**](ndis-status-wwan-uicc-file-status.md)
+
+[**NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE**](ndis-status-wwan-uicc-record-response.md)
 
 [**NDIS_STATUS_WWAN_UICC_RESET_INFO**](ndis-status-wwan-uicc-reset-info.md)
 

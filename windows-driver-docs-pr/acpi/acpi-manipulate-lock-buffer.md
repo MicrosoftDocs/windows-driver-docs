@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # ACPI\_MANIPULATE\_LOCK\_BUFFER structure
 
 
-The ACPI\_MANIPULATE\_LOCK\_BUFFER macro is reserved for internal use only with an [**IOCTL\_ACPI\_ACQUIRE\_GLOBAL\_LOCK**](https://msdn.microsoft.com/library/windows/hardware/ff536144) and [**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](https://msdn.microsoft.com/library/windows/hardware/ff536150).
+The ACPI\_MANIPULATE\_LOCK\_BUFFER macro is reserved for internal use only with an [**IOCTL\_ACPI\_ACQUIRE\_GLOBAL\_LOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock) and [**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_release_global_lock).
 
 Requirements
 ------------
@@ -32,9 +32,9 @@ Requirements
 ## See also
 
 
-[**IOCTL\_ACPI\_ACQUIRE\_GLOBAL\_LOCK**](https://msdn.microsoft.com/library/windows/hardware/ff536144)
+[**IOCTL\_ACPI\_ACQUIRE\_GLOBAL\_LOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock)
 
-[**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](https://msdn.microsoft.com/library/windows/hardware/ff536150)
+[**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_release_global_lock)
 
  
 

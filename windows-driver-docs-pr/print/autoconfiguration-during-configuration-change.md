@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Autoconfiguration During Configuration Change
 
 
-After the device has been installed, the port monitor is responsible for keeping the configuration data current either by sending events or by polling. Whenever a driver or application is interested in the current configuration of the device, it can use the [bidi communication interfaces](https://msdn.microsoft.com/library/windows/hardware/ff545163) and the [bidi communications schema](https://msdn.microsoft.com/library/windows/hardware/ff545175) to query the port monitor for this information.
+After the device has been installed, the port monitor is responsible for keeping the configuration data current either by sending events or by polling. Whenever a driver or application is interested in the current configuration of the device, it can use the [bidi communication interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index) and the [bidi communications schema](https://docs.microsoft.com/windows-hardware/drivers/print/bidi-communications-schema-reference) to query the port monitor for this information.
 
 The following figure shows the data flow in autoconfiguration when the device's configuration changes:
 

@@ -55,13 +55,13 @@ The DEVPKEY_Device_DriverDesc device property represents the description of the 
 Remarks
 -------
 
-The value of DEVPKEY_Device_DriverDesc is set by the *device-description* entry value that is supplied by the [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
+The value of DEVPKEY_Device_DriverDesc is set by the *device-description* entry value that is supplied by the [**INF *Models* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section) of the INF file that installs a device.
 
 The value of DEVPKEY_Device_DriverDesc is not displayed in an end-user dialog box or used for any reason by the operating system.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DriverDesc.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverDesc.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LocationPaths property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverDesc** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://msdn.microsoft.com/library/windows/hardware/ff537732).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LocationPaths property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverDesc** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-driver-properties).
 
 Requirements
 ------------
@@ -86,7 +86,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

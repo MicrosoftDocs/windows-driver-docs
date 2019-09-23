@@ -14,15 +14,15 @@ ms.localizationpriority: medium
 ## <span id="ddk_storage_class_drivers_driverentry_routine_kg"></span><span id="DDK_STORAGE_CLASS_DRIVERS_DRIVERENTRY_ROUTINE_KG"></span>
 
 
-Like any other Windows NT kernel-mode higher-level driver, the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine of a storage class driver must do the following:
+Like any other Windows NT kernel-mode higher-level driver, the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine of a storage class driver must do the following:
 
-1.  Allocate a driver object extension of appropriate size by calling [**IoAllocateDriverObjectExtension**](https://msdn.microsoft.com/library/windows/hardware/ff548233).
+1.  Allocate a driver object extension of appropriate size by calling [**IoAllocateDriverObjectExtension**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatedriverobjectextension).
 
 2.  Copy the input registry path into the driver extension for later use (if necessary) and initialize the driver extension.
 
 3.  Define its dispatch entry points in the input driver object.
 
-For more information about a PnP driver's **DriverEntry** routine, see [Writing a DriverEntry Routine](https://msdn.microsoft.com/library/windows/hardware/ff566402).
+For more information about a PnP driver's **DriverEntry** routine, see [Writing a DriverEntry Routine](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-a-driverentry-routine).
 
  
 

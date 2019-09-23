@@ -27,9 +27,9 @@ To install a device and driver in the Windows operating system, follow these st
 
 -   Step 3: Learn about information (INF) files.
 
-    An INF file contains the information and device settings which the system-provided [device installation components](https://msdn.microsoft.com/library/windows/hardware/ff541277) use to install your [driver package](driver-packages.md), such as the driver for the device and any device-specific applications.
+    An INF file contains the information and device settings which the system-provided [device installation components](https://docs.microsoft.com/previous-versions/ff541277(v=vs.85)) use to install your [driver package](driver-packages.md), such as the driver for the device and any device-specific applications.
 
-    For more information, see [INF Files](inf-files.md).
+    For more information, see [INF Files](overview-of-inf-files.md).
 
 -   Step 4: Create a driver package for your device and drivers.
 
@@ -41,7 +41,7 @@ To install a device and driver in the Windows operating system, follow these st
 
 -   Step 5: Test-sign your driver package during development and testing.
 
-    Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign driver packages by using self-signed certificates, such as those the [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool generates. This capability allows developers to install and test driver packages in Windows with driver signature verification enabled.
+    Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign driver packages by using self-signed certificates, such as those the [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert) tool generates. This capability allows developers to install and test driver packages in Windows with driver signature verification enabled.
 
     For more information, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
 

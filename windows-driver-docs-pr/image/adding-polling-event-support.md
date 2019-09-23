@@ -16,13 +16,13 @@ To properly set up your WIA driver to report polling events, do the following:
 
 1.  Set **Capabilities=0x33** in your device's INF file. (See [INF Files for WIA Devices](inf-files-for-wia-devices.md) for details.)
 
-2.  Report STI\_GENCAP\_NOTIFICATIONS and STI\_USD\_GENCAP\_NATIVE\_PUSHSUPPORT in the [**IStiUSD::GetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543817) method.
+2.  Report STI\_GENCAP\_NOTIFICATIONS and STI\_USD\_GENCAP\_NATIVE\_PUSHSUPPORT in the [**IStiUSD::GetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getcapabilities) method.
 
-3.  Report all supported events in the [**IWiaMiniDrv::drvGetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543977) method.
+3.  Report all supported events in the [**IWiaMiniDrv::drvGetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
 
-4.  Respond to calls to the [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823) method. The WIA service calls this method at a preset interval that is configurable in the INF file. The default setting is a 1-second interval.
+4.  Respond to calls to the [**IStiUSD::GetStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getstatus) method. The WIA service calls this method at a preset interval that is configurable in the INF file. The default setting is a 1-second interval.
 
-5.  Report the proper event information response in the [**IStiUSD::GetNotificationData**](https://msdn.microsoft.com/library/windows/hardware/ff543821) method.
+5.  Report the proper event information response in the [**IStiUSD::GetNotificationData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getnotificationdata) method.
 
 The WIA service calls the **IStiUSD::GetStatus** method for two major operations:
 
@@ -30,7 +30,7 @@ The WIA service calls the **IStiUSD::GetStatus** method for two major operations
 
 2.  Polling for device events, such as a push button event.
 
-Determining the operation request can be done by checking the **StatusMask** member of the [**STI\_DEVICE\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff548369) structure. The **StatusMask** member can be either of the following requests:
+Determining the operation request can be done by checking the **StatusMask** member of the [**STI\_DEVICE\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sti/ns-sti-_sti_device_status) structure. The **StatusMask** member can be either of the following requests:
 
 <a href="" id="sti-devstatus-online-state"></a>STI\_DEVSTATUS\_ONLINE\_STATE  
 This operation request checks whether the device is online and should be filled by setting the **dwOnlinesState** member of the STI\_DEVICE\_STATUS structure.
@@ -42,12 +42,12 @@ When STI\_EVENTHANDLING\_PENDING is set, the WIA service is signaled that an eve
 
 The **IStiUSD::GetNotificationData** method is called for polled events and interrupt events. It is in this method that you should fill out the proper event information to return to the WIA service.
 
-**Note**  **** Always clear the STI\_EVENTHANDLING\_PENDING flag in the **dwEventHandlingState** member to ensure that it is properly set when a device event occurs.
+**Note**  Always clear the STI\_EVENTHANDLING\_PENDING flag in the **dwEventHandlingState** member to ensure that it is properly set when a device event occurs.
 This WIA driver should set the *m\_guidLastEvent* class member variable to the proper event GUID when an event is detected. The *m\_guidLastEvent* is checked at a later time when the WIA service calls the **IStiUSD::GetNotificationData** method. The *m\_guidLastEvent* member variable is defined in the **CWIADevice** class (in the following code snippet), used to cache the last event signaled. After this member variable has been requested by the WIA service, it is always set to GUID\_NULL.
 
  
 
-The following example shows an implementation of the [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823) method.
+The following example shows an implementation of the [**IStiUSD::GetStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-getstatus) method.
 
 ```cpp
 STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)

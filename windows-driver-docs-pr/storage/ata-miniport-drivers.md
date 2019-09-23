@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_ata_miniport_drivers_kg"></span><span id="DDK_ATA_MINIPORT_DRIVERS_KG"></span>
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 ATA miniport drivers work with the ATA port Driver. The following sections describe the routines within ATA miniport drivers that get called by the ATA port Driver and the routines that ATA miniport drivers call within the ATA port driver:
 
-[ATA Miniport Driver Routines](https://msdn.microsoft.com/library/windows/hardware/ff551318)
+[ATA Miniport Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
-[ATA Port Library Routines](https://msdn.microsoft.com/library/windows/hardware/ff551343)
+[ATA Port Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
 
  
 

@@ -13,31 +13,31 @@ ms.localizationpriority: medium
 
 Every SCSI miniport driver must have at least the following system-defined routines:
 
-- [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff552654) to initialize the miniport driver
+- [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) to initialize the miniport driver
 
-- [*HwScsiFindAdapter*](https://msdn.microsoft.com/library/windows/hardware/ff557300) to determine how (or whether) driver-supported HBA(s) are configured in the machine
+- [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) to determine how (or whether) driver-supported HBA(s) are configured in the machine
 
-- [*HwScsiInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff557302) to initialize supported HBA(s)
+- [*HwScsiInitialize*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557302(v=vs.85)) to initialize supported HBA(s)
 
-- [**HwScsiStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557323) to start operations on its HBA(s) for incoming requests
+- [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) to start operations on its HBA(s) for incoming requests
 
-- [*HwScsiResetBus*](https://msdn.microsoft.com/library/windows/hardware/ff557318) to handle bus reset requests
+- [*HwScsiResetBus*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557318(v=vs.85)) to handle bus reset requests
 
 Depending on each HBA and the driver designer, SCSI miniport drivers also have some or all of the following system-defined routines:
 
-- [**HwScsiInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff557312)to handle HBA-generated interrupts, which is optional if and only if the HBA does not generate interrupts so the miniport driver manages all I/O operations on its HBA by polling. However, using polling exclusively has an adverse effect on a miniport driver's performance and on its HBA's I/O throughput. Such a miniport driver should also have an [*HwScsiTimer*](https://msdn.microsoft.com/library/windows/hardware/ff557327) routine.
+- [**HwScsiInterrupt**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557312(v=vs.85))to handle HBA-generated interrupts, which is optional if and only if the HBA does not generate interrupts so the miniport driver manages all I/O operations on its HBA by polling. However, using polling exclusively has an adverse effect on a miniport driver's performance and on its HBA's I/O throughput. Such a miniport driver should also have an [*HwScsiTimer*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557327(v=vs.85)) routine.
 
-- [**HwScsiDisableInterruptsCallback**](https://msdn.microsoft.com/library/windows/hardware/ff557288) and [**HwScsiEnableInterruptsCallback**](https://msdn.microsoft.com/library/windows/hardware/ff557295) to handle deferred I/O processing if interrupt-driven I/O operations take a long time
+- [**HwScsiDisableInterruptsCallback**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557288(v=vs.85)) and [**HwScsiEnableInterruptsCallback**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557295(v=vs.85)) to handle deferred I/O processing if interrupt-driven I/O operations take a long time
 
 - *HwScsiTimer* to time operations that require long delays on the HBA, or for any other purpose determined by the driver designer. A miniport driver should have a *HwScsiTimer* routine if it has no *HwScsiInterrupt* routine so it can use the *HwScsiTimer* routine for efficient polling of its HBA.
 
-- [**HwScsiDmaStarted**](https://msdn.microsoft.com/library/windows/hardware/ff557291), which is required if the HBA uses a system DMA controller, to set up an HBA transfer after the system DMA controller has been programmed by the port driver
+- [**HwScsiDmaStarted**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557291(v=vs.85)), which is required if the HBA uses a system DMA controller, to set up an HBA transfer after the system DMA controller has been programmed by the port driver
 
-- [**HwScsiAdapterState**](https://msdn.microsoft.com/library/windows/hardware/ff557278), which is optional if and only if the HBA has no BIOS or x86-real-mode driver and/or will never run in x86-only Microsoft Windows systems
+- [**HwScsiAdapterState**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557278(v=vs.85)), which is optional if and only if the HBA has no BIOS or x86-real-mode driver and/or will never run in x86-only Microsoft Windows systems
 
-- [**HwScsiAdapterControl**](https://msdn.microsoft.com/library/windows/hardware/ff557274), which is required if the miniport driver supports Plug and Play
+- [**HwScsiAdapterControl**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557274(v=vs.85)), which is required if the miniport driver supports Plug and Play
 
-Each of the preceding miniport driver routines, except [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff552654), has a name chosen to describe its functionality. Except for **DriverEntry**, which is a required name for every miniport driver's initial entry point, names for miniport driver routines can be anything the driver writer chooses.
+Each of the preceding miniport driver routines, except [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), has a name chosen to describe its functionality. Except for **DriverEntry**, which is a required name for every miniport driver's initial entry point, names for miniport driver routines can be anything the driver writer chooses.
 
 The following sections describe the requirements for and functionality of each of these miniport driver routines.
 

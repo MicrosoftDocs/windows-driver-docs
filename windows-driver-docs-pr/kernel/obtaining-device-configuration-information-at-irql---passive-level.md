@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-To access device configuration space at IRQL = PASSIVE\_LEVEL, you must use [**IRP\_MN\_READ\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551727) and [**IRP\_MN\_WRITE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551769). You indicate in the IRP stack which configuration space you wish to access and where the I/O buffer is. See the description of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure for further details.
+To access device configuration space at IRQL = PASSIVE\_LEVEL, you must use [**IRP\_MN\_READ\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config) and [**IRP\_MN\_WRITE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-write-config). You indicate in the IRP stack which configuration space you wish to access and where the I/O buffer is. See the description of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure for further details.
 
 The following code sample demonstrates how to access a device's configuration space.
 

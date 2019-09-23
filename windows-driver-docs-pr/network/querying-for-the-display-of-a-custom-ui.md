@@ -24,9 +24,9 @@ The connection phase before the IHV Extensions DLL initiates a pre-association o
 <a href="" id="post-association-------"></a>**Post-association**   
 The connection phase after the IHV Extensions DLL completes a post-association operation. For more information about the post-association operation, see [Post-Association Operations](post-association-operations.md).
 
-The operating system calls the Native 802.11 IHV Extensions DLL's [*Dot11ExtIhvQueryUIRequest*](https://msdn.microsoft.com/library/windows/hardware/ff547507) IHV Handler function to query whether a custom UI can be displayed. The operating system passes the current phase of the connection process through the *connectionPhase* parameter. If a custom UI must be displayed, the DLL returns a [**DOT11EXT\_IHV\_UI\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff547637) structure through the p *pIhvUIRequest* parameter.
+The operating system calls the Native 802.11 IHV Extensions DLL's [*Dot11ExtIhvQueryUIRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11extihv_query_ui_request) IHV Handler function to query whether a custom UI can be displayed. The operating system passes the current phase of the connection process through the *connectionPhase* parameter. If a custom UI must be displayed, the DLL returns a [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure through the p *pIhvUIRequest* parameter.
 
-Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff547637) structure, the Native 802.11 IHV Extensions DLL specifies the custom UI through the following data.
+Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure, the Native 802.11 IHV Extensions DLL specifies the custom UI through the following data.
 
 -   The user session identifier (ID), which is used to identify a specific user context.
 

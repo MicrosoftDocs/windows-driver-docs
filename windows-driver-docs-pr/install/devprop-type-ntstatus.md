@@ -23,13 +23,13 @@ The DEVPROP_TYPE_NTSTATUS identifier represents the base-data-type identifier fo
 Remarks
 -------
 
-In Windows Vista and later versions of Windows, the [unified device property model](https://msdn.microsoft.com/library/windows/hardware/ff553515) also defines a [**DEVPROP_TYPE_ERROR**](devprop-type-error.md) base-data-type identifier for Microsoft Win32 error code values.
+In Windows Vista and later versions of Windows, the [unified device property model](https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-) also defines a [**DEVPROP_TYPE_ERROR**](devprop-type-error.md) base-data-type identifier for Microsoft Win32 error code values.
 
 You can combine DEVPROP_TYPE_NTSTATUS only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
 ### Setting a Property of This Type
 
-To set a property whose base data type is DEVPROP_TYPE_NTSTATUS, call the corresponding **SetupDiSet***Xxx* property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_NTSTATUS, call the corresponding **SetupDiSet**_Xxx_ property function and set the function input parameters as follows:
 
 - Set the *PropertyType* parameter to DEVPROP_TYPE_NTSTATUS.
 

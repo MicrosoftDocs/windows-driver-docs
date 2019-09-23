@@ -36,14 +36,14 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The class driver passes the parameters of the operation in the *pSrb*-&gt;**CommandData.PropertyInfo** buffer, a structure of the form [**STREAM\_PROPERTY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568442). The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. The **Property** member of STREAM\_PROPERTY\_DESCRIPTOR describes the property in question, while the **PropertyInfo** member specifies a buffer to copy the property data into. If the buffer is too small, the minidriver should set the **Status** member of *pSrb* to STATUS\_BUFFER\_OVERFLOW.
+The class driver passes the parameters of the operation in the *pSrb*-&gt;**CommandData.PropertyInfo** buffer, a structure of the form [**STREAM\_PROPERTY\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_stream_property_descriptor). The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure. The **Property** member of STREAM\_PROPERTY\_DESCRIPTOR describes the property in question, while the **PropertyInfo** member specifies a buffer to copy the property data into. If the buffer is too small, the minidriver should set the **Status** member of *pSrb* to STATUS\_BUFFER\_OVERFLOW.
 
-For more information about property sets, see [KS Properties](https://msdn.microsoft.com/library/windows/hardware/ff567671).
+For more information about property sets, see [KS Properties](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties).
 
 ## See also
 
 
-[**STREAM\_PROPERTY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff568442)
+[**STREAM\_PROPERTY\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_stream_property_descriptor)
 
  
 

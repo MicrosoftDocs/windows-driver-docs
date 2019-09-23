@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_ClassName
 
 
-The DEVPKEY_DeviceClass_ClassName device property represents the class name of a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509).
+The DEVPKEY_DeviceClass_ClassName device property represents the class name of a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
 
 <table>
 <colgroup>
@@ -50,11 +50,11 @@ The DEVPKEY_DeviceClass_ClassName device property represents the class name of a
 Remarks
 -------
 
-The value of DEVPKEY_DeviceClass_ClassName is set by the **Class** directive that is included in the [**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547394) that installs the device setup class.
+The value of DEVPKEY_DeviceClass_ClassName is set by the **Class** directive that is included in the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) that installs the device setup class.
 
-You can call [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) or [**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090) to retrieve the value of DEVPKEY_DeviceClass_ClassName.
+You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_ClassName.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_ClassName property key. For information about how to access the name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](https://msdn.microsoft.com/library/windows/hardware/ff537755).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_ClassName property key. For information about how to access the name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-the-friendly-name-and-class-name-of-a-device-setup-class).
 
 Requirements
 ------------
@@ -79,13 +79,13 @@ Requirements
 ## See also
 
 
-[**INF Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547394)
+[**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive)
 
-[**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086)
+[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/ff551090)
+[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiClassNameFromGuid**](https://msdn.microsoft.com/library/windows/hardware/ff550947)
+[**SetupDiClassNameFromGuid**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiclassnamefromguida)
 
  
 

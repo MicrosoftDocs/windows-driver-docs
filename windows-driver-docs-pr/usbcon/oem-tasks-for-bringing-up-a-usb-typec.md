@@ -48,7 +48,7 @@ The main component are: the USB Type-C connector and its port or PD controller t
 - [Hardware design for a USB Type-C system with an embedded controller](ucsi.md)
 
 Consider recommendations for the design and development of USB components, including minimum hardware requirements, Windows Hardware Compatibility Program requirements, and other recommendations that build on those requirements.
-[Hardware component guidelines USB](https://msdn.microsoft.com/library/windows/hardware/dn915125)
+[Hardware component guidelines USB](https://docs.microsoft.com/windows-hardware/design/component-guidelines/universal-serial-bus--usb-)
 
 ## Choose a driver model
 

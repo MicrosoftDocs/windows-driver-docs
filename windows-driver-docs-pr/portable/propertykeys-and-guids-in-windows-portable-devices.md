@@ -15,17 +15,17 @@ The reference section of this document describes all the PROPERTYKEY values defi
 ## <span id="related_topics"></span>Related topics
 
 
-[**WPD\_CONTENT\_TYPE\_FUNCTIONAL\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff597845)
+[**WPD\_CONTENT\_TYPE\_FUNCTIONAL\_OBJECT**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597845(v=vs.85))
 
 [**Requirements for Objects**](requirements-for-objects.md)
 
-[**Object Format GUIDs**](https://msdn.microsoft.com/library/windows/hardware/ff597651)
+[**Object Format GUIDs**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597651(v=vs.85))
 
-[**Requirements for Resources**](https://msdn.microsoft.com/library/windows/hardware/ff597663)
+[**Requirements for Resources**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597663(v=vs.85))
 
-[**Commands**](https://msdn.microsoft.com/library/windows/hardware/ff597554)
+[**Commands**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597554(v=vs.85))
 
-[**Properties and Attributes**](https://msdn.microsoft.com/library/windows/hardware/ff597900)
+[**Properties and Attributes**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597900(v=vs.85))
 
 [**WPD Drivers Overview**](wpd-drivers-overview.md)
 

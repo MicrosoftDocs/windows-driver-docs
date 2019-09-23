@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_setting_and_canceling_battery_notification_dg"></span><span id="DDK_SETTING_AND_CANCELING_BATTERY_NOTIFICATION_DG"></span>
 
 
-A miniclass driver provides a [*BatteryMiniSetStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536277) routine so that the class driver can request notification of specific conditions. The routine is declared as follows:
+A miniclass driver provides a [*BatteryMiniSetStatusNotify*](https://docs.microsoft.com/windows/desktop/api/batclass/nc-batclass-bclass_set_status_notify_callback) routine so that the class driver can request notification of specific conditions. The routine is declared as follows:
 
 ```cpp
 typedef
@@ -31,13 +31,13 @@ NTSTATUS
     );
 ```
 
-The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the BATTERY\_MINIPORT\_INFO structure at device initialization. The *BatteryTag* parameter is a value previously returned by [*BatteryMiniQueryTag*](https://msdn.microsoft.com/library/windows/hardware/ff536275).
+The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the BATTERY\_MINIPORT\_INFO structure at device initialization. The *BatteryTag* parameter is a value previously returned by [*BatteryMiniQueryTag*](https://docs.microsoft.com/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback).
 
-The *BatteryNotify* parameter contains a set of flags indicating the battery power condition, and a pair of ULONG values that define a range of acceptable battery capacities. When the battery no longer satisfies the specified power conditions or its capacity goes above or below the specified range, the miniclass driver should call [**BatteryClassStatusNotify**](https://msdn.microsoft.com/library/windows/hardware/ff536269).
+The *BatteryNotify* parameter contains a set of flags indicating the battery power condition, and a pair of ULONG values that define a range of acceptable battery capacities. When the battery no longer satisfies the specified power conditions or its capacity goes above or below the specified range, the miniclass driver should call [**BatteryClassStatusNotify**](https://docs.microsoft.com/windows/desktop/api/batclass/nf-batclass-batteryclassstatusnotify).
 
 *BatteryMiniSetStatusNotify* should return STATUS\_NOT\_SUPPORTED for any conditions or trigger values that cannot be determined for this battery.
 
-The class driver calls the [*BatteryMiniDisableStatusNotify*](https://msdn.microsoft.com/library/windows/hardware/ff536272) routine to cancel notification of battery status changes previously requested by BatteryMiniSetStatusNotify. This routine is declared as follows:
+The class driver calls the [*BatteryMiniDisableStatusNotify*](https://docs.microsoft.com/windows/desktop/api/batclass/nc-batclass-bclass_disable_status_notify_callback) routine to cancel notification of battery status changes previously requested by BatteryMiniSetStatusNotify. This routine is declared as follows:
 
 ```cpp
 typedef

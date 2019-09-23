@@ -50,7 +50,7 @@ Additionally, Driver Verifier checks for invalid I/O calls, including:
 
 Because the special IRP pool is of limited size, I/O Verification is most effective when it is only used on one driver at a time.
 
-I/O Verification Level 1 failures cause bug check 0xC9 to be issued. The first parameter of this bug check indicates what violation has occurred. See [**Bug Check 0xC9**](https://msdn.microsoft.com/library/windows/hardware/ff560205) (DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION) for a full parameter listing.
+I/O Verification Level 1 failures cause bug check 0xC9 to be issued. The first parameter of this bug check indicates what violation has occurred. See [**Bug Check 0xC9**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc9--driver-verifier-iomanager-violation) (DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION) for a full parameter listing.
 
 ### <span id="level_2_i_o_verification"></span><span id="LEVEL_2_I_O_VERIFICATION"></span>Level 2 I/O Verification
 
@@ -62,7 +62,7 @@ In a crash dump file, most of these errors are noted by the message **BugCheck 0
 
 In a kernel debugger (KD or WinDbg), these errors are noted by the message **WDM DRIVER ERROR** and a descriptive text string. When the kernel debugger is active, it is possible to ignore the Level 2 errors and resume system operation. (This is not possible with any other bug checks.)
 
-The blue screen, the crash dump file, and the kernel debugger each display additional information as well. For a full description of most I/O Verification Level 2 error messages, see [**Bug Check 0xC9**](https://msdn.microsoft.com/library/windows/hardware/ff560205). For the remainder, see [**Bug Check 0xC4**](https://msdn.microsoft.com/library/windows/hardware/ff560187).
+The blue screen, the crash dump file, and the kernel debugger each display additional information as well. For a full description of most I/O Verification Level 2 error messages, see [**Bug Check 0xC9**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc9--driver-verifier-iomanager-violation). For the remainder, see [**Bug Check 0xC4**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation).
 
 Starting in Window Vista, the I/O Verification option checks for the following driver errors:
 
@@ -70,27 +70,27 @@ Starting in Window Vista, the I/O Verification option checks for the following d
 
 -   Releasing a remove lock that has not yet been acquired.
 
--   Calling [**IoReleaseRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549560) or [**IoReleaseRemoveLockAndWait**](https://msdn.microsoft.com/library/windows/hardware/ff549567) with a tag parameter that differs from the tag parameter used in the corresponding [**IoAcquireRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff548204) call.
+-   Calling [**IoReleaseRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreleaseremovelock) or [**IoReleaseRemoveLockAndWait**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreleaseremovelockandwait) with a tag parameter that differs from the tag parameter used in the corresponding [**IoAcquireRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioacquireremovelock) call.
 
--   Calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with interrupts disabled.
+-   Calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) with interrupts disabled.
 
--   Calling [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) at IRQL greater than DISPATCH\_LEVEL.
+-   Calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) at IRQL greater than DISPATCH\_LEVEL.
 
 -   Returning from a driver dispatch routine with interrupts disabled.
 
 -   Returning from a driver dispatch routine with a changed IRQL.
 
--   Returning from a driver dispatch routine with APCs disabled. In this case, the driver might have called [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) more times than [**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964), which is the primary cause for [**Bug Check 0x20**](https://msdn.microsoft.com/library/windows/hardware/ff557421) (KERNEL\_APC\_PENDING\_DURING\_EXIT) and [**Bug Check 0x1**](https://msdn.microsoft.com/library/windows/hardware/ff557419) (APC\_INDEX\_MISMATCH).
+-   Returning from a driver dispatch routine with APCs disabled. In this case, the driver might have called [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion) more times than [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleavecriticalregion), which is the primary cause for [**Bug Check 0x20**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x20--kernel-apc-pending-during-exit) (KERNEL\_APC\_PENDING\_DURING\_EXIT) and [**Bug Check 0x1**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x1--apc-index-mismatch) (APC\_INDEX\_MISMATCH).
 
 Starting in Windows 7, the I/O Verification option checks for the following driver errors:
 
--   Attempts to free IRPs by calling [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590). IRPs must be freed with [**IoFreeIrp**](https://msdn.microsoft.com/library/windows/hardware/ff549113).
+-   Attempts to free IRPs by calling [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-exfreepool). IRPs must be freed with [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreeirp).
 
 In addition, you can use this option to detect another common driver bug—reinitializing remove locks. Remove locks data structures should be allocated inside device extensions. This ensures that the I/O manager frees the memory that holds the IO\_REMOVE\_LOCK structure only when the device object is deleted. If the driver performs the following three steps, it is possible that after step 2, an application or driver still holds a reference to Device1:
 
 -   Allocates the IO\_REMOVE\_LOCK structure that corresponds to Device1, but does the allocation outside of Device1’s extension.
--   Calls [**IoReleaseRemoveLockAndWait**](https://msdn.microsoft.com/library/windows/hardware/ff549567) when Device1 is being removed.
--   Calls [**IoInitializeRemoveLock**](https://msdn.microsoft.com/library/windows/hardware/ff549324) for the same lock to reuse it as a remove lock for Device2.
+-   Calls [**IoReleaseRemoveLockAndWait**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreleaseremovelockandwait) when Device1 is being removed.
+-   Calls [**IoInitializeRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinitializeremovelock) for the same lock to reuse it as a remove lock for Device2.
 
 It is possible that after step 2 an application or driver still holds a reference to Device1. The application or driver can still send requests to Device1, even though this device was removed. Therefore, it is not safe to reuse the same memory as a new remove lock until I/O manager deletes Device1. Reinitializing the same lock while another thread is trying to acquire it can result in the corruption of the lock, with unpredictable results for the driver and the entire system.
 

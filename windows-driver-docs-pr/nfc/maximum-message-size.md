@@ -19,7 +19,7 @@ Each provider implementation can specify a maximum message size for publications
 
 
 ## Related topics
-[IOCTL\_NFP\_GET\_MAX\_MESSAGE\_BYTES](https://msdn.microsoft.com/library/windows/hardware/jj853318)  
-[NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
-[Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
+[IOCTL\_NFP\_GET\_MAX\_MESSAGE\_BYTES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfpdev/ni-nfpdev-ioctl_nfp_get_max_message_bytes)  
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
+[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
 

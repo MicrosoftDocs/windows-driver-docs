@@ -424,7 +424,7 @@ A common use for the WexLoggerErrorCallback function would be to write out the e
 ## .NET 4.0 Compatibility
 
 
-Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be loaded into both NetFx 2/3/3.5 and NetFx 4 processes. This allows TAEF to run all managed assemblies above NetFx 2. If you're using Wex.Logger outside TAEF, then you need to add a [config file](https://msdn.microsoft.com/library/ms229689.aspx) for your exe to configure the NetFx 4 runtime to load NetFx 2/3/3.5 binaries into it's process. The config file should contain the following:
+Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be loaded into both NetFx 2/3/3.5 and NetFx 4 processes. This allows TAEF to run all managed assemblies above NetFx 2. If you're using Wex.Logger outside TAEF, then you need to add a [config file](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms229689(v=vs.90)) for your exe to configure the NetFx 4 runtime to load NetFx 2/3/3.5 binaries into it's process. The config file should contain the following:
 
 ```cpp
 <configuration> 

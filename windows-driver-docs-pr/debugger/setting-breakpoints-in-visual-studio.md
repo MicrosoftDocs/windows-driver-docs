@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 >
 
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://msdn.microsoft.com/library/windows/hardware/ff557573).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/).
 
 You can set, view, and manipulate breakpoints by entering commands in the Debugger Immediate Window. For a list of commands, see [Methods of Controlling Breakpoints](methods-of-controlling-breakpoints.md). If the Debugger Immediate window is not already open, from the **Debug** menu, choose **Windows&gt;Immediate**.
 

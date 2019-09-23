@@ -213,7 +213,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
 ## <span id="related_topics"></span>Related topics
 
 
-[Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver)
+[Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver)
 
 [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md)
 

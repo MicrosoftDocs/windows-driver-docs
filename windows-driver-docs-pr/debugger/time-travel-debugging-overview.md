@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 09/18/2017
+ms.date: 04/15/2019
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +40,21 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 ## TTD Availability 
 
-TTD is available on Windows 10 after installing the WinDbg Preview app from the Store.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+TTD is available on Windows 10 after installing the WinDbg Preview app from the Store.  WinDbg Preview is an improved version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+
+## Administrator rights required to use TTD
+
+To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, right-click on the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
+
+## Video Training
+
+To learn more about TTD see these videos.
+
+[Defrag Tools 185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) - Ivette and JamesP go over the basics of TTD and demo some features in WinDbg Preview
+
+[Defrag Tools 186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) - Jordi and JCAB demo more great features of TTD in WinDbg Preview
+
+[CppCon (YouTube)](https://www.youtube.com/watch?v=l1YJTg_A914) - Jordi, Ken and JamesM presented TTD in WinDbg Preview at CppCon 2017
 
 
 ## Trace file basics 
@@ -74,22 +88,6 @@ C:\Users\User1\Documents
 
 For more information on working the trace files, see [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md).
 
-## Getting started with TTD
-
-Review these topics to record and replay a trace file as well as for information on working with trace files and troubleshooting.
-
-- [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
-- [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
-- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
-- [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
-- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
-
-These topics describe additional advanced functionality in time travel debugging. 
-
-- [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
-- [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
-
-
 ## Things to look out for 
 
 ### Anti-virus incompatibilities 
@@ -111,6 +109,10 @@ You can travel back in time, but you can't change history. You can use read memo
 ### System Protected Processes
 
 Some Windows system protected processes, such as Protected Process Light (PPL) process are protected, so the TTD cannot inject itself into the protected process to allow for the recording of the code execution.
+
+### Performance impact of recording
+
+Recording an application or process impacts the performance of the PC. The actual performance overhead varies based upon the amount and type of code being executed during recording. You can expect about a 10x-20x performance hit in typical recording scenarios. Sometimes there will not be a noticeable slowdown but for more resource intensive operations (i.e. File Open dialog) you can see the impact of recording.
 
 ### Trace file errors
 
@@ -134,25 +136,31 @@ For general information about the debugger data model, see [WinDbg Preview - Dat
 
 For general information about working with JavaScript and NatVis, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
+### Managed code TTD support
+
+You can use the SOS debugging extension (sos.dll) running in 64 bit mode to debug managed code using TTD in WinDbg Preview. For more information, see [Debugging Managed Code Using the Windows Debugger](debugging-uwp-apps-using-the-windows-debugger.md).
+
 
 ## <span id="providingfeedback"></span>Providing feedback
 
-Your feedback will help guide time travel development priorities going forward. 
+Your feedback will help guide time travel development priorities going forward.
 
 - If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
 
-## TTD Latest News
+## Getting started with TTD
 
-For the latest news, tips, and tricks from the debugger dev team, refer to the debugger tools team blog.
-[https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
+Review these topics to record and replay a trace file as well as for information on working with trace files and troubleshooting.
 
+- [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
+- [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
+- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
+- [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
+- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 
---- 
+These topics describe additional advanced functionality in time travel debugging. 
 
-
-
-
-
+- [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
+- [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)

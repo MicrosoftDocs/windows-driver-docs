@@ -29,5 +29,5 @@ The metadata field L2 identifiers are each represented by a bit field. These ide
 
 [Metadata fields at each filtering layer](metadata-fields-at-each-filtering-layer.md)
 
-[FWPS_INCOMING_METADATA_VALUES0](https://msdn.microsoft.com/library/windows/hardware/ff552397)
+[FWPS_INCOMING_METADATA_VALUES0](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_incoming_metadata_values0_)
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_Reported
 
 
-The DEVPKEY_Device_Reported device property represents a Boolean value that indicates whether a device instance is a root-enumerated device that the driver for the device reported to the Plug and Play (PnP) manager by calling [**IoReportDetectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549597).
+The DEVPKEY_Device_Reported device property represents a Boolean value that indicates whether a device instance is a root-enumerated device that the driver for the device reported to the Plug and Play (PnP) manager by calling [**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioreportdetecteddevice).
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Remarks
 
 The PnP manager sets the value of DEVPKEY_Device_Reported to DEVPROP_TRUE if the device is a root-enumerated device that the driver for the device reported to the PnP manager by calling IoReportDetectedDevice. Otherwise, the PnP manager sets the value of the property to DEVPROP_FALSE.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_Reported.
+You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Reported.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
@@ -79,9 +79,9 @@ Requirements
 ## See also
 
 
-[**IoReportDetectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549597)
+[**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioreportdetecteddevice)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
+[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

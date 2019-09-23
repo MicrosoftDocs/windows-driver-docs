@@ -31,7 +31,7 @@ WPP uses this field to identify the complex type. For example, **.\*ls**.
 <span id="HelperMacroName"></span><span id="helpermacroname"></span><span id="HELPERMACRONAME"></span>*HelperMacroName*  
 A helper macro that converts an argument into a variable-length array in the format of a length/address pair. This format is required by the **TraceMessage** function for each of the entries in its variable argument list.
 
-To format the argument properly, you must use the [**WPP\_LOGPAIR**](https://msdn.microsoft.com/library/windows/hardware/ff556197) macro in the definition of the helper macro, as shown in the following example:
+To format the argument properly, you must use the [**WPP\_LOGPAIR**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556197(v=vs.85)) macro in the definition of the helper macro, as shown in the following example:
 
 ```
 #define HelperMacroName(x) WPP_LOGPAIR(length, x)
@@ -114,7 +114,7 @@ Now, add a macro to combine the data types into a string of type **xwstr\_t**, a
 
 where **ItemPWString** is a counted Unicode string type recognized by WPP. The length is specified as 2 bytes.
 
-When ETW interprets the WPP\_LOGXWCS definition, it puts a 2-byte string into a buffer the first [**WPP\_LOGPAIR**](https://msdn.microsoft.com/library/windows/hardware/ff556197) macro is interpreted. ETW then copies all the bytes of the string into a buffer when ETW interprets the second WPP\_LOGPAIR macro,
+When ETW interprets the WPP\_LOGXWCS definition, it puts a 2-byte string into a buffer the first [**WPP\_LOGPAIR**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556197(v=vs.85)) macro is interpreted. ETW then copies all the bytes of the string into a buffer when ETW interprets the second WPP\_LOGPAIR macro,
 
 Because you specified the length separate from the data, WPP\_LOGXWCS consumes two slots of [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214). Therefore, the number **2** is the eighth argument.
 

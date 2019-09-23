@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](https://msdn.microsoft.com/library/windows/hardware/ff540212) or passed to [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407). The [Security Descriptor Definition Language](https://msdn.microsoft.com/library/windows/desktop/aa379567) is fully documented in the Microsoft Windows SDK documentation.
+The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/creating-secure-device-installations) or passed to [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure). The [Security Descriptor Definition Language](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language) is fully documented in the Microsoft Windows SDK documentation.
 
 While INF files support the full range of SDDL, only a subset of the language is supported by the **IoCreateDeviceSecure** routine. This subset is defined here.
 
@@ -259,7 +259,7 @@ The following SIDs deserve special mention.
 <td><p>UD</p></td>
 <td><p>User-Mode Drivers</p>
 <p>This SID grants access to user-mode drivers. Currently, this SID covers only drivers that are written for the User-Mode Driver Framework (UMDF). This SID is available starting with Windows 8.</p>
-<p>In earlier versions of Windows, which do not recognize the "UD" abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439567" data-raw-source="[Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/hh439567)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
+<p>In earlier versions of Windows, which do not recognize the "UD" abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/controlling-device-access" data-raw-source="[Controlling Device Access](https://docs.microsoft.com/windows-hardware/drivers/wdf/controlling-device-access)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
 </tr>
 </tbody>
 </table>

@@ -17,17 +17,17 @@ ms.localizationpriority: medium
 
 You can optionally supply a special Point and Print DLL by associating its name with the **Module** registry value. This DLL must export the following two functions:
 
-<a href="" id="generatecopyfilepaths"></a>[**GenerateCopyFilePaths**](https://msdn.microsoft.com/library/windows/hardware/ff549896)  
+<a href="" id="generatecopyfilepaths"></a>[**GenerateCopyFilePaths**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-generatecopyfilepaths)  
 This function, which is called by both the server's spooler and the client's spooler, can be used to modify the directory path specified by the **Directory** registry value. Either the source path (on the server) or the destination path (on the client), or both, can be modified.
 
-<a href="" id="spoolercopyfileevent"></a>[**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681)  
+<a href="" id="spoolercopyfileevent"></a>[**SpoolerCopyFileEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-spoolercopyfileevent)  
 This function, also called by both the server's spooler and the client's spooler, receives an event code indicating the occurrence of certain connection-related printer events.
 
 A Point and Print DLL need not export only these functions. For example Mscms.dll, which is used by Microsoft's ICM component, also exports a set of ICM API functions.
 
 Note that you can specify other DLLs in addition to, or instead of, a Point and Print DLL that exports **GenerateCopyFilePaths** and **SpoolerCopyFileEvent**. To do so, assign the DLL file names to the **Files** registry key instead of the **Module** registry key. (See [Installing Queue-Specific Files](installing-queue-specific-files.md)).
 
-After the installation application has placed the DLL's name in the server's registry by calling **SetPrinterDataEx**, all subsequent calls to **SetPrinterDataEx** result in a call to the DLL's [**SpoolerCopyFileEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562681) function, with a supplied event code of COPYFILE\_EVENT\_SET\_PRINTER\_DATAEX.
+After the installation application has placed the DLL's name in the server's registry by calling **SetPrinterDataEx**, all subsequent calls to **SetPrinterDataEx** result in a call to the DLL's [**SpoolerCopyFileEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-spoolercopyfileevent) function, with a supplied event code of COPYFILE\_EVENT\_SET\_PRINTER\_DATAEX.
 
 Unlike the files listed under the **Files** registry key (see [Installing Queue-Specific Files](installing-queue-specific-files.md)), the Point and Print DLL is not copied from the print server to the client when the client connects to a printer. Instead, the DLL is assumed to already be client-resident when a connection to the print server is made. As a result, the DLL can be used for additional purposes not related to Point and Print functionality.
 

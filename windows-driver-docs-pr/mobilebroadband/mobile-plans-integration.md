@@ -33,7 +33,7 @@ Validate that you can run 50 end-to-end user cases that you defined. For example
 
 ### Walled Garden
 
-When the user has no balance, ensure that the user can access Walled Garden sites defined in [Walled Garden](mobile-plans-device-experience.md#walled-garden).
+When the user has no balance, ensure that the user can access Walled Garden sites defined in [Walled Garden](mobile-plans-walled-garden.md).
 
 ### Getting Balance
 
@@ -68,4 +68,4 @@ This test configuration is generated from projected traffic of 10,000 SIMs. The 
 | --- | --- | --- | --- |
 | GetBalance | 96% | 1 | 3 |
 
-During test runs, the expected success rate is: 99.9%. On achieving this success rate, the MO API will be ready to enable in the Mobile Plans production service.
+During test runs, the expected success rate is: **99.9%** and average latency: **400ms**. On achieving this success rate, the MO API will be ready to enable in the Mobile Plans production service.

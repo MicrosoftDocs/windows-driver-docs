@@ -21,7 +21,7 @@ The following subsections discuss how to register for device interface change no
 
 [Handling Device Interface Change Events](handling-device-interface-change-events.md)
 
-See [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) and related routines For information about device interfaces.
+See [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) and related routines For information about device interfaces.
 
  
 

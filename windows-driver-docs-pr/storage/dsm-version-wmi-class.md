@@ -25,7 +25,7 @@ class DSM_VERSION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_VERSION**](https://msdn.microsoft.com/library/windows/hardware/ff552750) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_VERSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_dsm_version) data structure. There are no methods associated with this WMI class.
 
  
 

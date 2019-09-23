@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Bug Check Bug Check 0x1CF: HARDWARE\_WATCHDOG\_TIMEOUT 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 The HARDWARE_WATCHDOG_TIMEOUT bug check has a value of 0x000001CF. This indicates that the system is hung and not processing timer ticks.

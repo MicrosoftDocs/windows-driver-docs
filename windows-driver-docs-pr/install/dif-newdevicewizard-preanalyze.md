@@ -52,16 +52,16 @@ After the user has selected a driver, but before Windows registers the device th
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
+Supplies a handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) structure is associated with the *DeviceInfoData*.
+An [**SP_NEWDEVICEWIZARD_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
@@ -69,7 +69,7 @@ An [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hard
 An installer can modify the flags in the device installation parameters. Windows does not check the flags upon completion of this DIF request. However, it checks them later in the installation process.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305) to supply custom wizard page(s).
+An installer can modify the [**SP_NEWDEVICEWIZARD_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) to supply custom wizard page(s).
 
 ### Installer Return Value
 
@@ -91,7 +91,7 @@ If an installer adds custom preselect page(s), the installer should first check 
 
 An installer should supply a Wizard 97 header title and a header subtitle in the PROPSHEETPAGE structure for a custom wizard page. An installer should not replace the system-supplied wizard title. See the Microsoft Windows SDK for documentation of the PROPSHEETPAGE structure and for more information about property pages.
 
-For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+For more information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes).
 
 Requirements
 ------------
@@ -122,11 +122,11 @@ Requirements
 
 [**DIF_NEWDEVICEWIZARD_SELECT**](dif-newdevicewizard-select.md)
 
-[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
 
-[**SP_NEWDEVICEWIZARD_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff553305)
+[**SP_NEWDEVICEWIZARD_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data)
 
  
 

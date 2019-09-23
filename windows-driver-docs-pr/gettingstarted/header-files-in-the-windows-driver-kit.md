@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # Header files in the Windows Driver Kit
 
 
-The [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573) contains all the header files (.h files) that you need to build kernel-mode and user-mode drivers. Header files are in the Include folder in your WDK installation folder. Example: C:\\Program Files (x86)\\Windows Kits\\10\\Include.
+The [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/) contains all the header files (.h files) that you need to build kernel-mode and user-mode drivers. Header files are in the Include folder in your WDK installation folder. Example: C:\\Program Files (x86)\\Windows Kits\\10\\Include.
 
 The header files contain version information so that you can use the same set of header files regardless of which version of Windows your driver will run on.
 
@@ -94,7 +94,7 @@ KeSetTargetProcessorDpcEx (
 #endif
 ```
 
-In the example you can see that the [**KeSetTargetProcessorDpcEx**](https://msdn.microsoft.com/library/windows/hardware/ff553279) function is available only in Windows 7 and later versions of Windows.
+In the example you can see that the [**KeSetTargetProcessorDpcEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesettargetprocessordpcex) function is available only in Windows 7 and later versions of Windows.
 
 This conditional declaration appears in Winspool.h, which is a header file that might be included by a user-mode driver.
 
@@ -110,7 +110,7 @@ GetPrintExecutionData(
 #endif // (NTDDI_VERSION >= NTDDI_WIN7)
 ```
 
-In the example can see that the [**GetPrintExecutionData**](https://msdn.microsoft.com/library/windows/desktop/ee264322) function is available only in Windows 7 and later versions of Windows.
+In the example can see that the [**GetPrintExecutionData**](https://docs.microsoft.com/windows/desktop/printdocs/getprintexecutiondata) function is available only in Windows 7 and later versions of Windows.
 
 ## <span id="Header_files_for_the_Kernel_Mode_Driver_Framework"></span><span id="header_files_for_the_kernel_mode_driver_framework"></span><span id="HEADER_FILES_FOR_THE_KERNEL_MODE_DRIVER_FRAMEWORK"></span>Header files for the Kernel Mode Driver Framework
 

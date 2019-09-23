@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Drivers that perform DMA use three different address spaces, as shown in the following figure.
 
-![diagram illustrating logical, physical, and virtual address mappings](images/3addrspc.png)
+![physical, logical, and virtual address mappings](images/3addrspc.png)
 
 On any Windows platform, a driver has access to the full virtual address space supported by the processor. On a 32-bit processor, the virtual address space represents four gigabytes. The CPU translates addresses in the virtual address space to addresses in the system's physical address space by using a page table. Each page table entry (PTE) maps one page of virtual memory to a page of physical memory, resulting in a paging operation when necessary. An MDL (memory descriptor list) provides a similar mapping for a buffer associated with driver DMA operations.
 
@@ -49,7 +49,7 @@ Note the correspondence between a map register and a virtual-to-physical entry i
 
 -   Each map register and each virtual entry in an MDL maps at most a full physical page of data for a DMA transfer operation.
 
--   Each map register and each virtual entry in an MDL might map less than a full page of data. For example, the initial virtual entry in an MDL can map to an offset from the physical page boundary, as shown earlier in the [Physical, Logical, and Virtual Address Mappings](#physical-logical-and-virtual-address-mappings) figure.
+-   Each map register and each virtual entry in an MDL might map less than a full page of data. For example, the initial virtual entry in an MDL can map to an offset from the physical page boundary, as shown earlier in the **Physical, Logical, and Virtual Address Mappings** figure.
 
 -   Each map register and each virtual entry in an MDL maps, at a minimum, one byte.
 

@@ -21,23 +21,23 @@ ms.localizationpriority: medium
 
 
 
-NDIS drivers use [**NET\_BUFFER\_LIST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structures to store additional data that is associated with a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure. The **Context** member of the NET\_BUFFER\_LIST structure is a pointer to a NET\_BUFFER\_LIST\_CONTEXT structure. The information stored in the NET\_BUFFER\_LIST\_CONTEXT structures is opaque to NDIS and other drivers in the stack.
+NDIS drivers use [**NET\_BUFFER\_LIST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list_context) structures to store additional data that is associated with a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure. The **Context** member of the NET\_BUFFER\_LIST structure is a pointer to a NET\_BUFFER\_LIST\_CONTEXT structure. The information stored in the NET\_BUFFER\_LIST\_CONTEXT structures is opaque to NDIS and other drivers in the stack.
 
 The following figure shows the fields in a NET\_BUFFER\_LIST\_CONTEXT structure.
 
 ![diagram illustrating the fields in a net\-buffer\-list\-context structure](images/netbufferlistcontext.png)
 
-The [**NET\_BUFFER\_LIST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff568389) structure includes **ContextData** member that contains the context data. This data can be any context information that a driver requires for the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure.
+The [**NET\_BUFFER\_LIST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list_context) structure includes **ContextData** member that contains the context data. This data can be any context information that a driver requires for the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure.
 
 Drivers should use the following NDIS macros and functions to access and manipulate members in a NET\_BUFFER\_LIST\_CONTEXT structure:
 
-[**NdisAllocateNetBufferListContext**](https://msdn.microsoft.com/library/windows/hardware/ff561610)
+[**NdisAllocateNetBufferListContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocatenetbufferlistcontext)
 
-[**NdisFreeNetBufferListContext**](https://msdn.microsoft.com/library/windows/hardware/ff562587)
+[**NdisFreeNetBufferListContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreenetbufferlistcontext)
 
-[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_START**](https://msdn.microsoft.com/library/windows/hardware/ff568391)
+[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_START**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-context-data-start)
 
-[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff568390)
+[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-context-data-size)
 
  
 

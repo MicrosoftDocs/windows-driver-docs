@@ -17,7 +17,7 @@ Embedded-signing of kernel-mode binaries (for example, drivers and associated .d
 
 -   The driver is installed through a driver package that does not include a catalog file.
 
-As with [catalog files](catalog-files.md), [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) is used to embed a digital signature within kernel-mode binary files by using a test certificate. The following command line shows how to run SignTool to do the following:
+As with [catalog files](catalog-files.md), [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) is used to embed a digital signature within kernel-mode binary files by using a test certificate. The following command line shows how to run SignTool to do the following:
 
 -   Test-sign the 64-bit version of the Toastpkg sample's binary file, toaster.sys. Within the WDK installation directory, this file is located in the *src\\general\\toaster\\toastpkg\\toastcd\\amd64* directory.
 
@@ -28,7 +28,7 @@ As with [catalog files](catalog-files.md), [**SignTool**](https://msdn.microsoft
 To test-sign the *toaster.sys* file, run the following command line:
 
 ```cpp
-Signtool sign /v /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.verisign.com/scripts/timestamp.dll amd64\toaster.sys
+Signtool sign /v /fd sha256 /s PrivateCertStore /n Contoso.com(Test) /t http://timestamp.digicert.com amd64\toaster.sys
 ```
 
 Where:
@@ -37,18 +37,20 @@ Where:
 
 -   The **/v** option enables verbose operations, in which SignTool displays successful execution and warning messages.
 
+-   The **/fd** option specifies the file digest algorithm to use for creating file signatures. The default is SHA1.
+
 -   The **/s** option specifies the name of the certificate store (*PrivateCertStore)* that contains the test certificate.
 
 -   The **/n** option specifies the name of the certificate (*Contoso.com(Test))* that is installed in the specified certificate store.
 
--   The **/t** option specifies URL of the TSA (*http://timestamp.verisign.com/scripts/timestamp.dll*) which will time stamp the digital signature.
+-   The **/t** option specifies URL of the TSA (*http://timestamp.digicert.com*) which will time stamp the digital signature.
     **Important**   Including a time stamp provides the necessary information for key revocation in case the signer's code signing private key is compromised.
 
      
 
 -   *amd64\\toaster.sys* specifies the name of the kernel-mode binary file which will be embedded-signed.
 
-For more information about SignTool and its command-line arguments, see [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778).
+For more information about SignTool and its command-line arguments, see [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool).
 
 For more information about how to test-sign a driver by using an embedded signature, see [Test-Signing a Driver File](test-signing-a-driver-file.md).
 

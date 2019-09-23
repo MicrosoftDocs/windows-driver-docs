@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_MIXER
 
 
-The KSCATEGORY_MIXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that mixes data streams.
+The KSCATEGORY_MIXER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that mixes data streams.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_MIXER to indicate to the operating system that the devices support the KSCATEGORY_MIXER functional category.
 
-For more information about this functional category and other functional categories, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
+For more information about this functional category and other functional categories, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories).
 
 Requirements
 ------------
@@ -71,7 +71,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)
 
  
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR
 
 
-The KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that processes input from a microphone array.
+The KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that processes input from a microphone array.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS devices register an instance of KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR to indicate to the operating system that the devices support the KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR functional category.
 
-For more information about functional categories for audio devices, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
+For more information about functional categories for audio devices, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories).
 
 For more information about how to process a microphone array in Windows Vista, refer to the [Microphone Array Support in Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=120592) and the [How to Build and Use Microphone Arrays for Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=120593) white papers.
 
@@ -77,7 +77,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)
 
  
 

@@ -1,12 +1,12 @@
 ---
-title: Enabling mobile operator notifications and system events
-description: Enabling mobile operator notifications and system events
+title: Introduction to enabling mobile operator notifications and system events
+description: Introduction to enabling mobile operator notifications and system events
 ms.assetid: 988bafcc-ad8e-446d-9336-85c19cf05577
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# Enabling mobile operator notifications and system events
+# Introduction to enabling mobile operator notifications and system events
 
 
 This topic provides information about the Mobile Operator Notification system event. It provides guidelines for you to develop UWP mobile broadband apps that handle incoming SMS- or USSD-based mobile operator notifications and relevant mobile broadband system events.

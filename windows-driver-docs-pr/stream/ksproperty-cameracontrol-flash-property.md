@@ -48,7 +48,7 @@ User-mode clients use this property to get or set a camera's flash control chara
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><a href="https://msdn.microsoft.com/library/windows/hardware/jj151590" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FLASH_S&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/jj151590)"><strong>KSPROPERTY_CAMERACONTROL_FLASH_S</strong></a></td>
+<td><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_flash_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_FLASH_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_flash_s)"><strong>KSPROPERTY_CAMERACONTROL_FLASH_S</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -81,7 +81,7 @@ Requirements
 
 [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
 
-[**KSPROPERTY\_CAMERACONTROL\_FLASH\_S**](https://msdn.microsoft.com/library/windows/hardware/jj151590)
+[**KSPROPERTY\_CAMERACONTROL\_FLASH\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_cameracontrol_flash_s)
 
  
 

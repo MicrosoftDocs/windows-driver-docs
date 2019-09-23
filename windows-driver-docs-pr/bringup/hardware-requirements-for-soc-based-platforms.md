@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Hardware requirements for SoC-based platforms
 
 
-The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces a new set of hardware requirements to support SoC-based platforms that run Windows. ACPI 5.0 supports hardware-reduced system designs to lower cost, and supports the connected standby power model to enable long battery life.
+The [ACPI 5.0 specification](https://uefi.org/specifications) introduces a new set of hardware requirements to support SoC-based platforms that run Windows. ACPI 5.0 supports hardware-reduced system designs to lower cost, and supports the connected standby power model to enable long battery life.
 
 ## Hardware-reduced ACPI platforms
 
@@ -34,7 +34,7 @@ Platforms that implement the connected standby power model (a key feature of Ins
 
 Windows supports platforms that have low-power S0-idle capability regardless of whether they implement hardware-reduced ACPI or full ACPI. However, as required by the ACPI 5.0 specification, Windows does not use traditional sleep/resume features on platforms that have low-power S0-idle capability, regardless of ACPI configuration.
 
-For more information about the connected standby power model, see [Modern Standby](https://msdn.microsoft.com/library/windows/hardware/dn915061).
+For more information about the connected standby power model, see [Modern Standby](https://docs.microsoft.com/previous-versions/dn915061(v=vs.85)).
 
 ## ACPI events
 

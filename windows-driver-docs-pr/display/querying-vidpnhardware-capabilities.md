@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 
 Beginning in Windows 7, display miniport drivers are required to report all hardware capabilities of a specified functional VidPN. Drivers should support the following callback function and its associated structures:
 
--   [**DxgkDdiQueryVidPnHWCapability**](https://msdn.microsoft.com/library/windows/hardware/ff559771) function
+-   [**DxgkDdiQueryVidPnHWCapability**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_queryvidpnhwcapability) function
 
--   [**DXGKARG\_QUERYVIDPNHWCAPABILITY**](https://msdn.microsoft.com/library/windows/hardware/ff557628) structure
+-   [**DXGKARG\_QUERYVIDPNHWCAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgkarg_queryvidpnhwcapability) structure
 
--   [**D3DKMDT\_VIDPN\_HW\_CAPABILITY**](https://msdn.microsoft.com/library/windows/hardware/ff546639) structure
+-   [**D3DKMDT\_VIDPN\_HW\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_hw_capability) structure
 
 When the driver reports the hardware capabilities, it should consider cloning to be an implicit procedure that is done as part of rotation or scaling transformations: a source must first be cloned before it can be rotated or scaled.
 
@@ -33,7 +33,7 @@ To show how the display miniport driver should report hardware capabilities, con
 
 -   **P3:** Source S2 has no applied transformation.
 
-When [**DxgkDdiQueryVidPnHWCapability**](https://msdn.microsoft.com/library/windows/hardware/ff559771) is called, the driver should return values for the rotation, scaling, and cloning members of [**D3DKMDT\_VIDPN\_HW\_CAPABILITY**](https://msdn.microsoft.com/library/windows/hardware/ff546639) according to the following table:
+When [**DxgkDdiQueryVidPnHWCapability**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_queryvidpnhwcapability) is called, the driver should return values for the rotation, scaling, and cloning members of [**D3DKMDT\_VIDPN\_HW\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_hw_capability) according to the following table:
 
 Returned Values for Members of D3DKMDT\_VIDPN\_HW\_CAPABILITY
 Hardware Capabilities

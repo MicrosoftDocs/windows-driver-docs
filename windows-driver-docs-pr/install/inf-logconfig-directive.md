@@ -338,7 +338,7 @@ A given *log-config-section* name must be unique to the INF file, but it can be 
 
 Only one **ConfigPriority** entry can be used in each *log-config-section*. There can be more than one of each of the other entries, depending on the hardware resource requirements of the device.
 
-One or more **MfCardConfig=** entries can appear only in a *log-config-section* that is referenced by a **LogConfig** directive in the <em>DDInstall</em>**.LogConfigOverride** section of an INF for a multifunction device. For more information about INF files for multifunction devices, see [Supporting Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743).
+One or more **MfCardConfig=** entries can appear only in a *log-config-section* that is referenced by a **LogConfig** directive in the <em>DDInstall</em>**.LogConfigOverride** section of an INF for a multifunction device. For more information about INF files for multifunction devices, see [Supporting Multifunction Devices](https://docs.microsoft.com/windows-hardware/drivers/multifunction/index).
 
 ### LogConfig-Referenced Section Entries and Values
 
@@ -447,7 +447,7 @@ IRQConfig=14,15,5,7,9,11,12,3
 PcCardConfig=1:0:0(W)
 ```
 
-For some examples of how **MfCardConfig** entries are used, see [Supporting PC Cards That Have Incomplete Configuration Register Addresses](https://msdn.microsoft.com/library/windows/hardware/ff542774).
+For some examples of how **MfCardConfig** entries are used, see [Supporting PC Cards That Have Incomplete Configuration Register Addresses](https://docs.microsoft.com/windows-hardware/drivers/multifunction/supporting-pc-cards-that-have-incomplete-configuration-register-addres).
 
 ## See also
 

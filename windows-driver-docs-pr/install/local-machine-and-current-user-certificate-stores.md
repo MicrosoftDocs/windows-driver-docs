@@ -28,7 +28,7 @@ Be aware that all current user certificate stores *except the Current User/Perso
 
  
 
-For more information about how to add or delete certificates from the system certificate stores, see [**CertMgr**](https://msdn.microsoft.com/library/windows/hardware/ff543411).
+For more information about how to add or delete certificates from the system certificate stores, see [**CertMgr**](https://docs.microsoft.com/windows-hardware/drivers/devtest/certmgr).
 
  
 

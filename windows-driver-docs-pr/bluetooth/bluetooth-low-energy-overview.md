@@ -13,7 +13,7 @@ Windows 8 introduces support for the Bluetooth Low Energy technology.
 
 Bluetooth Low Energy introduces a new physical layer that shares the same frequency space as Bluetooth Basic Rate. Profiles that are developed on this technology are organized into the Generic Attribute Profile (or GATT).
 
-Each profile defines the use of one or more services to create a use case or scenario. Compliant service implementations are constructed from characteristics organized in a way that conforms to the established schema defined on the Bluetooth Special Interest Group [developer website](http://developer.bluetooth.org/gatt/services/Pages/ServicesHome.aspx).
+Each profile defines the use of one or more services to create a use case or scenario. Compliant service implementations are constructed from characteristics organized in a way that conforms to the established schema defined on the Bluetooth Special Interest Group [developer website](https://www.bluetooth.com/specifications/gatt/services/).
 
 The diagram below illustrates the way objects are structured inside a typical GATT service.
 
@@ -23,9 +23,9 @@ When a Bluetooth Low Energy device is paired with a Windows 8 machine, the devic
 
 ![device object structure of the windows 8 bluetooth low energy implementation](images/bthlewin8supt.png)
 
-Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff549791) such as [**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010), and [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963).
+Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](https://docs.microsoft.com/previous-versions/ff549791(v=vs.85)) such as [**SetupDiEnumDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo), and [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
-In addition to the standard [Bluetooth Profile Driver functions](https://msdn.microsoft.com/library/windows/hardware/hh450828), Windows 8 introduces new [Bluetooth Low Energy functions](https://msdn.microsoft.com/library/windows/hardware/hh450825) which allows for the development of Bluetooth GATT client applications.
+In addition to the standard [Bluetooth Profile Driver functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), Windows 8 introduces new [Bluetooth Low Energy functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) which allows for the development of Bluetooth GATT client applications.
 
 These functions allows for the enumeration of services and their objects (including services, characteristics and their descriptors) as well as read and write capabilities.
 

@@ -25,9 +25,9 @@ If the driver indicates more data is being returned, the I/O manager will copy a
 
 For a file system or file system filter driver, there is the added risk of disclosing file information to users who should not be allowed to access the data. This can be done in many different ways:
 
--   A filter driver that uses [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424) to open the file, and then provides access to the data through its intermediate handle. The **ZwCreateFile** function will, by default, open the file and bypassing security checks because the request is coming from kernel mode. So, access using this handle may disclose information that would not normally be available to an application.
+-   A filter driver that uses [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile) to open the file, and then provides access to the data through its intermediate handle. The **ZwCreateFile** function will, by default, open the file and bypassing security checks because the request is coming from kernel mode. So, access using this handle may disclose information that would not normally be available to an application.
 
-    If the filter driver wants to enforce access checks to ensure it is not exposing data that should not be exposed, then the filter driver should specify OBJ\_FORCE\_ACCESS\_CHECK in the *ObjectAttributes* parameter of the [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424) function.
+    If the filter driver wants to enforce access checks to ensure it is not exposing data that should not be exposed, then the filter driver should specify OBJ\_FORCE\_ACCESS\_CHECK in the *ObjectAttributes* parameter of the [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile) function.
 
 -   A filter driver that opens a handle in kernel mode (bypassing access checks) but does not specify OBJ\_KERNEL\_HANDLE. So the handle created is placed in the current process's handle table. This handle, with full access to the data, is then visible in user mode. A rogue application can be watching for such handles and try to use them to access the data.
 

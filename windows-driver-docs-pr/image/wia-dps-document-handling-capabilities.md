@@ -89,7 +89,7 @@ The following table describes the constants that are valid with Windows 7 only.
 <tbody>
 <tr class="odd">
 <td><p>AUTO_SOURCE</p></td>
-<td><p>The device supports <a href="https://msdn.microsoft.com/library/windows/hardware/ff539393" data-raw-source="[auto-configured scanning](https://msdn.microsoft.com/library/windows/hardware/ff539393)">auto-configured scanning</a>.</p></td>
+<td><p>The device supports <a href="https://docs.microsoft.com/windows-hardware/drivers/image/auto-configured-scanning" data-raw-source="[auto-configured scanning](https://docs.microsoft.com/windows-hardware/drivers/image/auto-configured-scanning)">auto-configured scanning</a>.</p></td>
 </tr>
 </tbody>
 </table>

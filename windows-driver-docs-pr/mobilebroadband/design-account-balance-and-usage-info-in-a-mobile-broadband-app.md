@@ -51,7 +51,7 @@ Appropriate design for displaying account info:
 -   Use illustrations, such as charts and graphs, to visualize data
 
     **Tip**  
-    You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](https://msdn.microsoft.com/library/windows/apps/hh465428).
+    You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](https://docs.microsoft.com/previous-versions/windows/apps/hh465428(v=win.10)).
 
      
 

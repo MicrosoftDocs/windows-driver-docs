@@ -23,11 +23,11 @@ Similar rules apply to a storage driver's device control dispatch routine, [**Di
 
 However, Microsoft requires that all *storage* IOCTL requests be submitted at PASSIVE\_LEVEL, so although the dispatch routine is not itself pageable, it can call pageable subroutines to handle storage IOCTL requests. These subroutines can also access pageable memory.
 
-Routines such as [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113), [**Reinitialize**](https://msdn.microsoft.com/library/windows/hardware/ff561022), and [**Unload**](https://msdn.microsoft.com/library/windows/hardware/ff564886), that do no I/O and run at IRQL = PASSIVE\_LEVEL can also have pageable code.
+Routines such as [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize), [**Reinitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-driver_reinitialize), and [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload), that do no I/O and run at IRQL = PASSIVE\_LEVEL can also have pageable code.
 
 Special considerations apply to drivers that manage storage devices in the paging path. A driver is in the "paging path" if it participates in I/O operations on the paging file. When a storage driver is in the paging path, its [**DispatchPower**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine for IRP\_MJ\_POWER requests must not be pageable.
 
-By default, the code for kernel-mode drivers is not pageable, nor is the global memory used by kernel-mode drivers pageable. For information about how to make code pageable, see [Making Driver Code or Data Pageable](https://msdn.microsoft.com/library/windows/hardware/ff554349).
+By default, the code for kernel-mode drivers is not pageable, nor is the global memory used by kernel-mode drivers pageable. For information about how to make code pageable, see [Making Driver Code or Data Pageable](https://docs.microsoft.com/windows-hardware/drivers/kernel/making-driver-code-or-data-pageable).
 
  
 

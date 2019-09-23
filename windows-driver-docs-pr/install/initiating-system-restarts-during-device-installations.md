@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 In the rare cases in which it is necessary for the system to be restarted to complete a device installation, use the following rules:
 
--   During initial installations, a device's installer or co-installer can request a system restart by setting DI_NEEDRESTART in the [**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346) structure, which is received along with [device installation function codes](https://msdn.microsoft.com/library/windows/hardware/ff541307). (This should not be done unless absolutely necessary.)
+-   During initial installations, a device's installer or co-installer can request a system restart by setting DI_NEEDRESTART in the [**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure, which is received along with [device installation function codes](https://docs.microsoft.com/previous-versions/ff541307(v=vs.85)). (This should not be done unless absolutely necessary.)
 
--   During update installations, a device's installation application can call [**UpdateDriverForPlugAndPlayDevices**](https://msdn.microsoft.com/library/windows/hardware/ff553534), which determines whether a system restart is necessary.
+-   During update installations, a device's installation application can call [**UpdateDriverForPlugAndPlayDevices**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa), which determines whether a system restart is necessary.
 
  
 

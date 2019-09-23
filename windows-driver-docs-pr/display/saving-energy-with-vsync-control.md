@@ -24,27 +24,27 @@ You can take advantage of this feature by rebuilding Windows Display Driver Mode
 
 ### <span id="driver_changes_for_vsync_control"></span><span id="DRIVER_CHANGES_FOR_VSYNC_CONTROL"></span>Windows Vista with SP1 Driver Changes for VSync Control
 
-For drivers to take advantage of this feature, they must support the **VSyncPowerSaveAware** member in the [**DXGK\_VIDSCHCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff562863) structure that was introduced in Windows Vista with SP1. Existing drivers that follow the WDDM must be recompiled with the **VSyncPowerSaveAware** member by using the Windows Server 2008 or later versions of the WDK.
+For drivers to take advantage of this feature, they must support the **VSyncPowerSaveAware** member in the [**DXGK\_VIDSCHCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_vidschcaps) structure that was introduced in Windows Vista with SP1. Existing drivers that follow the WDDM must be recompiled with the **VSyncPowerSaveAware** member by using the Windows Server 2008 or later versions of the WDK.
 
 A Windows Vista with SP1 or later system with a driver that follows the WDDM and that supports this feature will turn off the counting feature of the VSync interrupt if no GPU activity occurs for 10 continuous periods of 1/Vsync, where VSync is the monitor refresh rate. If the VSync rate is 60 hertz (Hz), the VSync interrupt occurs one time every 16 milliseconds. Thus, in the absence of a screen update, the VSync interrupt is turned off after 160 milliseconds. If GPU activity resumes, the VSync interrupt is turned on again to refresh the screen.
 
 ### <span id="Windows_8_Display-Only_VSync_Requirements"></span><span id="windows_8_display-only_vsync_requirements"></span><span id="WINDOWS_8_DISPLAY-ONLY_VSYNC_REQUIREMENTS"></span>Windows 8 Display-Only VSync Requirements
 
-Starting in Windows 8, it's optional for a [kernel mode display-only driver (KMDOD)](https://msdn.microsoft.com/library/windows/hardware/jj673962) to support VSync functionality, as follows:
+Starting in Windows 8, it's optional for a [kernel mode display-only driver (KMDOD)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) to support VSync functionality, as follows:
 
 <span id="Display-only_driver_supports_VSync_control"></span><span id="display-only_driver_supports_vsync_control"></span><span id="DISPLAY-ONLY_DRIVER_SUPPORTS_VSYNC_CONTROL"></span>Display-only driver supports VSync control  
-If the KMDOD supports the VSync control feature, it must implement both [*DxgkDdiControlInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559602) and [*DxgkDdiGetScanLine*](https://msdn.microsoft.com/library/windows/hardware/ff559668) functions and must provide valid function pointers to both of these functions in the [**KMDDOD\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/hh451571) structure.
+If the KMDOD supports the VSync control feature, it must implement both [*DxgkDdiControlInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_controlinterrupt) and [*DxgkDdiGetScanLine*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_getscanline) functions and must provide valid function pointers to both of these functions in the [**KMDDOD\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_kmddod_initialization_data) structure.
 
-In this case the KMDOD must also implement the [*DxgkDdiInterruptRoutine*](https://msdn.microsoft.com/library/windows/hardware/ff559680) and [*DxgkDdiDpcRoutine*](https://msdn.microsoft.com/library/windows/hardware/ff559645) functions in order to report VSync interrupts to the operating system.
+In this case the KMDOD must also implement the [*DxgkDdiInterruptRoutine*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine) and [*DxgkDdiDpcRoutine*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_dpc_routine) functions in order to report VSync interrupts to the operating system.
 
-In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554007) structure cannot be **D3DKMDT\_FREQUENCY\_NOTSPECIFIED**.
+In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-displayconfig_video_signal_info) structure cannot be **D3DKMDT\_FREQUENCY\_NOTSPECIFIED**.
 
 <span id="Display-only_driver_does_not_support_VSync_control"></span><span id="display-only_driver_does_not_support_vsync_control"></span><span id="DISPLAY-ONLY_DRIVER_DOES_NOT_SUPPORT_VSYNC_CONTROL"></span>Display-only driver does not support VSync control  
-If the KMDOD does not support the VSync control feature, it must not implement either [*DxgkDdiControlInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559602) or [*DxgkDdiGetScanLine*](https://msdn.microsoft.com/library/windows/hardware/ff559668) functions and must not provide valid function pointers to either of these functions in the [**KMDDOD\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/hh451571) structure.
+If the KMDOD does not support the VSync control feature, it must not implement either [*DxgkDdiControlInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_controlinterrupt) or [*DxgkDdiGetScanLine*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_getscanline) functions and must not provide valid function pointers to either of these functions in the [**KMDDOD\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_kmddod_initialization_data) structure.
 
 In this case the Microsoft DirectX graphics kernel subsystem simulates values of VSync interrupts and scan lines based on the current mode and the time of the last simulated VSync.
 
-In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554007) structure must be set to **D3DKMDT\_FREQUENCY\_NOTSPECIFIED**.
+In addition, the values of the **PixelRate**, **hSyncFreq**, and **vSyncFreq** members of the [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-displayconfig_video_signal_info) structure must be set to **D3DKMDT\_FREQUENCY\_NOTSPECIFIED**.
 
 If these conditions are not met, the DirectX graphics kernel subsystem will not load the KMDOD.
 

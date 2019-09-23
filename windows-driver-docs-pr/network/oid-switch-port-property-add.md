@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_PROPERTY\_ADD to notify extensible switch extensions about the addition of a policy property for an extensible switch port.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to a buffer. This buffer contains the following data:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer. This buffer contains the following data:
 
--   An [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598238) structure that specifies the identification and type of parameters for a port policy.
+-   An [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters) structure that specifies the identification and type of parameters for a port policy.
 
--   A property buffer that contains the parameters for a port policy. The property buffer contains a structure that is based on the **PropertyType** member of the [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598238) structure. For example, if the **PropertyType** member is set to **NdisSwitchPortPropertyTypeVlan**, the property buffer contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://msdn.microsoft.com/library/windows/hardware/hh598243) structure.
+-   A property buffer that contains the parameters for a port policy. The property buffer contains a structure that is based on the **PropertyType** member of the [**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters) structure. For example, if the **PropertyType** member is set to **NdisSwitchPortPropertyTypeVlan**, the property buffer contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_vlan) structure.
 
 Remarks
 -------
 
-A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_ADD. All other types of extensions must call [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) to forward the OID request to the next extension in the extensible switch driver stack.
+A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_ADD. All other types of extensions must call [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest) to forward the OID request to the next extension in the extensible switch driver stack.
 
 The extension can veto the addition of the port property by returning NDIS\_STATUS\_DATA\_NOT\_ACCEPTED for the OID request. For example, if an extension cannot allocate resources to enforce its configured policies on the port, it should veto the addition request.
 
@@ -32,7 +32,7 @@ The extension can veto the addition of the port property by returning NDIS\_STAT
 
 If the extension does not veto the OID request, it should monitor the status when the request is completed. The extension should do this to determine whether the OID request was vetoed by underlying extensions in the extensible switch control path or by the extensible switch interface.
 
-For guidelines on how to handle an OID set request of OID\_SWITCH\_PORT\_PROPERTY\_ADD, see [Managing Port Policies](https://msdn.microsoft.com/library/windows/hardware/hh598202).
+For guidelines on how to handle an OID set request of OID\_SWITCH\_PORT\_PROPERTY\_ADD, see [Managing Port Policies](https://docs.microsoft.com/windows-hardware/drivers/network/managing-port-policies).
 
 ### Return Status Codes
 
@@ -52,7 +52,7 @@ If the forwarding extension completes the OID set request of OID\_SWITCH\_PORT\_
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The length of the information buffer is too small to process the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598238" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_PORT_PROPERTY_PARAMETERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh598238)"><strong>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</strong></a> structure and the data in the structure's property buffer. The extension sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566710)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small to process the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_PORT_PROPERTY_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters)"><strong>NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</strong></a> structure and the data in the structure's property buffer. The extension sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_DATA_NOT_ACCEPTED</p></td>
@@ -118,15 +118,15 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](https://msdn.microsoft.com/library/windows/hardware/hh598230)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_custom)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598238)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://msdn.microsoft.com/library/windows/hardware/hh598243)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_vlan)
 
-[**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830)
+[**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest)
 
  
 

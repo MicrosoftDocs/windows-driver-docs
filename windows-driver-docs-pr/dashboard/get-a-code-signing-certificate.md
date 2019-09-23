@@ -21,6 +21,8 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 ### Extended validation code signing certificates
 
+- [Buy an SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+
 - [Buy a Symantec EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393248)
 
 - [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)
@@ -56,8 +58,8 @@ Once the certificate authority has verified your contact information and your ce
 
 This section provides answers to frequently asked questions about code signing for Windows 10. Additional code signing information is available on the Windows Hardware Certification blog.
 
-- [Driver Signing Changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx)
-- [Update on Sysdev EV Certificate requirement](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/10/20/update-on-sysdev-ev-certificate-requirement.aspx)
+- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
+- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
 
 ### HLK Tested and Dashboard Signed Drivers
 
@@ -83,14 +85,14 @@ Cross-signing describes a process where a driver is signed with a certificate is
 - Windows 7, if patched, supports SHA-256. If you need to support unpatched devices that run Windows 7, you need to either cross-sign with a SHA-1 certificate or submit to the Dashboard for signing. Otherwise, you can either cross-sign with SHA-1 or SHA-2 certificate or create an HLK/HCK submission for signing.
 - Because Windows Vista doesn’t support SHA-256, you need to either cross-sign with a SHA-1 certificate or create an HLK/HCK submission for Windows Vista driver signing.
 - A driver cross-signed with a SHA-256 certificate (including an EV certificate) issued prior to July 29th, 2015 will work on Windows 8 and later. It will not work on Windows Vista or Windows Server 2008.
-- A driver cross-signed with a SHA-256 certificate (including an EV certificate) issued prior to July 29th, 2015 will work on Windows 7 or Server 2008R2 if the patch issued through Windows Update earlier this year has been applied. For more information, see [Availability of SHA-2 Hashing Algorithm for Windows 7 and Windows Server 2008 R2](https://technet.microsoft.com/library/security/2949927.aspx) and [Microsoft security advisory: Availability of SHA-2 code signing support for Windows 7 and Windows Server 2008 R2: March 10, 2015](https://support.microsoft.com/kb/3033929).
+- A driver cross-signed with a SHA-256 certificate (including an EV certificate) issued prior to July 29th, 2015 will work on Windows 7 or Server 2008R2 if the patch issued through Windows Update earlier this year has been applied. For more information, see [Availability of SHA-2 Hashing Algorithm for Windows 7 and Windows Server 2008 R2](https://docs.microsoft.com/security-updates/SecurityAdvisories/2014/2949927) and [Microsoft security advisory: Availability of SHA-2 code signing support for Windows 7 and Windows Server 2008 R2: March 10, 2015](https://support.microsoft.com/help/3033929/microsoft-security-advisory-availability-of-sha-2-code-signing-support).
 - A cross-signed driver using a SHA-1 certificate issued prior to July 29th, 2015 will work on all platforms starting with Windows Vista through Windows 10.
 - A cross-signed driver using a SHA-1 or SHA-256 certificate issued after July 29th, 2015 is not recommended for Windows 10.
-- For more information about the effort to move to SHA-256 Certificates, see [Windows Enforcement of Authenticode Code Signing and Timestamping](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)
+- For more information about the effort to move to SHA-256 Certificates, see [Windows Enforcement of Authenticode Code Signing and Timestamping](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)
 
 ### Device Guard
 
-- Enterprises may implement a device guard policy to modify the driver signing requirements using Windows 10 Enterprise edition. Device Guard provides an enterprise-defined code integrity policy, which may be configured to require at least an attestation-signed driver. For more information about Device Guard, see [Device Guard certification and compliance](https://technet.microsoft.com/library/mt219733.aspx).
+- Enterprises may implement a device guard policy to modify the driver signing requirements using Windows 10 Enterprise edition. Device Guard provides an enterprise-defined code integrity policy, which may be configured to require at least an attestation-signed driver. For more information about Device Guard, see [Device Guard certification and compliance](https://docs.microsoft.com/windows/keep-secure/device-guard-certification-and-compliance).
 
 ### Windows Server
 
@@ -123,6 +125,6 @@ This table summarizes the driver signing requirements for Windows.
 | Windows IoT Enterprise- DG Enabled | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
 | Windows IoT Core(1)                | Yes (Not Required)             | Yes (Not Required)                 | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
 
-\*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Device Guard to define custom driver signing requirements. For more information about Device Guard, see [Device Guard certification and compliance](https://technet.microsoft.com/library/mt219733.aspx).
+\*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Device Guard to define custom driver signing requirements. For more information about Device Guard, see [Device Guard certification and compliance](https://docs.microsoft.com/windows/keep-secure/device-guard-certification-and-compliance).
 
 (1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). Note that if UEFI Secure Boot is enabled, then drivers must be signed.

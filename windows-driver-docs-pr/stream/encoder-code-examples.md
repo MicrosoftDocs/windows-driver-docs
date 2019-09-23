@@ -31,7 +31,7 @@ The following code examples are based on the [AVStream Simulated Hardware Sample
 
 ### **Implementing Supported Bit Rates**
 
-The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE](https://msdn.microsoft.com/library/windows/hardware/ff559520) property. Use a [**KSPROPERTY\_STEPPING\_LONG**](https://msdn.microsoft.com/library/windows/hardware/ff565631) structure to specify a stepping granularity of 400 bits per second (bps) with a 400-bps lower-bound and 4,000,000-bps upper-bound.
+The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate) property. Use a [**KSPROPERTY\_STEPPING\_LONG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_stepping_long) structure to specify a stepping granularity of 400 bits per second (bps) with a 400-bps lower-bound and 4,000,000-bps upper-bound.
 
 ```cpp
 const KSPROPERTY_STEPPING_LONG BitRateRanges [] = {
@@ -116,7 +116,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRate) {
 
 ### **Implementing Supported Encoding Bit Rate Modes**
 
-The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE\_MODE](https://msdn.microsoft.com/library/windows/hardware/ff559524) property.
+The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE\_MODE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate-mode) property.
 
 Define the encoding modes supported by the encoder:
 
@@ -193,7 +193,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRateMode) {
 
  
 
-The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff562553) structure's automation table.
+The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksfilter_descriptor) structure's automation table.
 
 ```cpp
 DEFINE_KSPROPERTY_SET_TABLE(PropertyTable) {

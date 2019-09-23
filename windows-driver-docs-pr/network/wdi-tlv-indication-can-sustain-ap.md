@@ -28,7 +28,7 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                                                        |
 |--------|------------------------------------------------------------------------------------------------------------------------------------|
-| UINT32 | The Can Sustain AP reason. See [**WDI\_CAN\_SUSTAIN\_AP\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn897797) for possible reason values. |
+| UINT32 | The Can Sustain AP reason. See [**WDI\_CAN\_SUSTAIN\_AP\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_can_sustain_ap_reason) for possible reason values. |
 
  
 
@@ -59,7 +59,7 @@ Requirements
 ## See also
 
 
-[NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP](https://msdn.microsoft.com/library/windows/hardware/dn925570)
+[NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-can-sustain-ap)
 
  
 

@@ -15,14 +15,14 @@ OID\_WWAN\_DEVICE\_CAPS returns the capabilities of the MB device, including the
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567845) status notification containing a [**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907) structure that indicates the capabilities of the MB device when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps) status notification containing a [**NDIS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure that indicates the capabilities of the MB device when completing query requests.
 
 Remarks
 -------
 
-Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
+Starting with Windows 8, the MB driver model has been updated to version 2.0. Windows 8 miniport drivers should set the **Header.Revision** member of the [**NDIS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_2** for *query* requests. Windows 7 miniport drivers should set the **Header.Revision** member of the **NDIS\_WWAN\_DEVICE\_CAPS** structure to **NDIS\_WWAN\_DEVICE\_CAPS\_REVISION\_1** for *query* requests.
 
-For more information about using this OID, see [WWAN Driver Initialization Procedure](https://msdn.microsoft.com/library/windows/hardware/ff557186).
+For more information about using this OID, see [WWAN Driver Initialization Procedure](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization).
 
 Miniport drivers can access device memory when processing query operations, but should not access the provider network or the Subscriber Identity Module (SIM card).
 
@@ -310,9 +310,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907)
+[**NDIS\_WWAN\_DEVICE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps)
 
-[WWAN Driver Initialization Procedure](https://msdn.microsoft.com/library/windows/hardware/ff557186)
+[WWAN Driver Initialization Procedure](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization)
 
  
 

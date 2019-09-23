@@ -11,13 +11,13 @@ ms.localizationpriority: medium
 
 This section describes the structures that work with the Windows Bluetooth Handsfree profile (HFP) driver.
 
-[**BTHHFP\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/dn302030)
+[**BTHHFP\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ns-bthhfpddi-_bthhfp_descriptor)
 
-[**BTHHFP\_DESCRIPTOR2**](https://msdn.microsoft.com/library/windows/hardware/dn302031)
+[**BTHHFP\_DESCRIPTOR2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ns-bthhfpddi-_bthhfp_descriptor2)
 
-[**HFP\_BYPASS\_CODEC\_ID\_VERSION**](https://msdn.microsoft.com/library/windows/hardware/dn798964)
+[**HFP\_BYPASS\_CODEC\_ID\_VERSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ne-bthhfpddi-_hfp_bypass_codec_id_version)
 
-[**HFP\_BYPASS\_CODEC\_ID\_V1**](https://msdn.microsoft.com/library/windows/hardware/dn913703)
+[**HFP\_BYPASS\_CODEC\_ID\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ns-bthhfpddi-_hfp_bypass_codec_id_v1)
 
 ## <span id="related_topics"></span>Related topics
 

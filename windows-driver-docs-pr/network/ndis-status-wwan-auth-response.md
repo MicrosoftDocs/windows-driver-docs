@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_AUTH\_RESPONSE
 
 
-Miniport drivers use the NDIS\_STATUS\_WWAN\_AUTH\_RESPONSE notification to inform the MB Service of a challenge response received from a previous challenge request issued using an [OID\_WWAN\_AUTH\_CHALLENGE](https://msdn.microsoft.com/library/windows/hardware/hh440092) query request.
+Miniport drivers use the NDIS\_STATUS\_WWAN\_AUTH\_RESPONSE notification to inform the MB Service of a challenge response received from a previous challenge request issued using an [OID\_WWAN\_AUTH\_CHALLENGE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-auth-challenge) query request.
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This NDIS status notification uses the [NDIS\_WWAN\_AUTH\_RESPONSE](https://msdn.microsoft.com/library/windows/hardware/hh439834) structure.
+This NDIS status notification uses the [NDIS\_WWAN\_AUTH\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response) structure.
 
 Requirements
 ------------
@@ -40,9 +40,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_AUTH\_CHALLENGE](https://msdn.microsoft.com/library/windows/hardware/hh440092)
+[OID\_WWAN\_AUTH\_CHALLENGE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-auth-challenge)
 
-[NDIS\_WWAN\_AUTH\_RESPONSE](https://msdn.microsoft.com/library/windows/hardware/hh439834)
+[NDIS\_WWAN\_AUTH\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response)
 
  
 

@@ -239,17 +239,23 @@ The Symbol Server Proxy registry key supports the following global settings (all
 <p>On success, the symbol file is returned and the miss is deleted.</p>
 <p>On failure, the miss is moved forward to the current time (in UTC) to start a new timeout period.</p>
 <p>Use the “Miss Cache <em>” counters to monitor the misses.</p>
-<p>• Unspecified - (default) 300 seconds/5 minutes</p>
-<p>• 0 – Feature disabled</p>
-<p>• N – Timeout lasts N seconds</p></td>
+<p><ul>
+    <li>Unspecified - (default) 300 seconds/5 minutes</li>
+    <li>0 – Feature disabled</li>
+    <li>N – Timeout lasts N seconds</li>
+   </ul>
+</td>
 </tr>
 <tr class="even">
 <td align="left">MissAgeCheck</td>
 <td align="left"><p>Period between Miss Age checks. The Miss cache is scanned and records older than MissAgeTimeout seconds are removed.</p>
 <p>The current statistics are saved to the Event Log using Event ID 4.</p>
-<p>• Unspecified - (default) 3600 seconds / 1 hour</p>
-<p>• 0 – Feature disabled</p>
-<p>• N – Period between checks in N seconds</p></td>
+<p><ul>
+    <li>Unspecified - (default) 3600 seconds / 1 hour</li>
+    <li>0 – Feature disabled</li>
+    <li>N – Period between checks in N seconds</li>
+   </ul>
+</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>FailureTimeout</p>

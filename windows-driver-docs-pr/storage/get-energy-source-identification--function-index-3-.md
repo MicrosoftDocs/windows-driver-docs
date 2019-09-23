@@ -59,7 +59,7 @@ None.
 <td align="left"><strong>Device-Managed ES Identification</strong></td>
 <td align="left">11</td>
 <td align="left">5</td>
-<td align="left">&amp;gt; [!Note]<br/><p>&amp;gt;This field contains valid data only if the current ES policy is device-managed (i.e. bit 2 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
+<td align="left">&gt; [!Note]<br/><p>&gt;This field contains valid data only if the current ES policy is device-managed (i.e. bit 2 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
 
 <p>See Device-Managed ES Identification for information.</p></td>
 </tr>
@@ -67,7 +67,7 @@ None.
 <td align="left"><strong>Host-Managed ES Identification</strong></td>
 <td align="left">3</td>
 <td align="left">16</td>
-<td align="left">&amp;gt; [!Note]<br/><p>&amp;gt;This field contains valid data only if the current ES policy is host-managed (i.e. bit 3 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
+<td align="left">&gt; [!Note]<br/><p>&gt;This field contains valid data only if the current ES policy is host-managed (i.e. bit 3 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
 
 <p>See Host-Managed ES Identification for information.</p></td>
 </tr>

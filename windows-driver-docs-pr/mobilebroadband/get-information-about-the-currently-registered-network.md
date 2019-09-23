@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Get information about the currently registered network
 
 
-You can get the data class, service provider ID and name of the network that the mobile broadband device is currently registered to. To do this, use the [**RegisteredDataClass**](https://msdn.microsoft.com/library/windows/apps/hh967833), [**RegisteredProviderId**](https://msdn.microsoft.com/library/windows/apps/hh967834), and [**RegisteredProviderName**](https://msdn.microsoft.com/library/windows/apps/hh967835) properties of the current network object for the account.
+You can get the data class, service provider ID and name of the network that the mobile broadband device is currently registered to. To do this, use the [**RegisteredDataClass**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork#Windows_Networking_NetworkOperators_MobileBroadbandNetwork_RegisteredDataClass), [**RegisteredProviderId**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork#Windows_Networking_NetworkOperators_MobileBroadbandNetwork_RegisteredProviderId), and [**RegisteredProviderName**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork#Windows_Networking_NetworkOperators_MobileBroadbandNetwork_RegisteredProviderName) properties of the current network object for the account.
 
 For example:
 

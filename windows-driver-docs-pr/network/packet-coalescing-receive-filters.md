@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 #  Packet Coalescing Receive Filters
 
 
-Starting with NDIS 6.30, [NDIS receive filters](https://msdn.microsoft.com/library/windows/hardware/hh205393) have been extended to support packet coalescing. Each receive filter for packet coalescing defines the following:
+Starting with NDIS 6.30, [NDIS receive filters](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) have been extended to support packet coalescing. Each receive filter for packet coalescing defines the following:
 
 -   A set of fields within the various protocol headers of a packet, such as the destination address of a media access control (MAC) header or destination port of a User Datagram Protocol (UDP) header.
 
@@ -19,9 +19,9 @@ Starting with NDIS 6.30, [NDIS receive filters](https://msdn.microsoft.com/libra
 
      
 
-Overlying drivers, such as protocol and filter drivers, download the packet coalescing receive filters to the miniport driver by issuing object identifier (OID) set requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795). For more information, see [Setting Packet Coalescing Receive Filters](setting-packet-coalescing-receive-filters.md).
+Overlying drivers, such as protocol and filter drivers, download the packet coalescing receive filters to the miniport driver by issuing object identifier (OID) set requests of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter). For more information, see [Setting Packet Coalescing Receive Filters](setting-packet-coalescing-receive-filters.md).
 
-Overlying drivers can also query the packet coalescing receive filters downloaded to the miniport driver. Overlying drivers do this by issuing OID method requests of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787) to the miniport driver. For more information, see [Querying Packet Coalescing Receive Filters](querying-packet-coalescing-receive-filters.md).
+Overlying drivers can also query the packet coalescing receive filters downloaded to the miniport driver. Overlying drivers do this by issuing OID method requests of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-enum-filters) to the miniport driver. For more information, see [Querying Packet Coalescing Receive Filters](querying-packet-coalescing-receive-filters.md).
 
  
 

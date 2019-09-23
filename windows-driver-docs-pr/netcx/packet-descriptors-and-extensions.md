@@ -4,8 +4,9 @@ description: Packet descriptors and extensions
 ms.assetid: 7B2357AE-F446-4AE8-A873-E13DF04D8D71
 keywords:
 - WDF Network Adapter Class Extension Packet descriptors and extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
-ms.date: 07/31/2018
+ms.date: 01/30/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # Packet descriptors and extensions
@@ -18,9 +19,9 @@ In NetAdapterCx, *packet descriptors* are small, compact, runtime-extensible str
 - One or more fragment descriptors
 - Zero or more packet extensions 
 
-The *core descriptor* of the packet is the [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the packet's first fragment descriptor.   
+The *core descriptor* of the packet is the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the packet's first fragment descriptor.   
 
-Each packet must also have one or more *fragment descriptors*, or [NET_PACKET_FRAGMENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures, that describe the location within system memory where the packet data resides.
+Each packet must also have one or more *fragment descriptors*, or [**NET_PACKET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_fragment) structures, that describe the location within system memory where the packet data resides.
 
 *Packet extensions* are optional and hold per-packet metadata for scenario-specific features. For instance, extensions can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details.
 
@@ -33,15 +34,11 @@ The second figure shows a packet stored across two memory fragments, with both R
 ![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments.png)
 
 
-## Storage of packet descriptors
+## Packet descriptor storage and access
 
-The core descriptors and fragment descriptors are stored indepenently in two separate ring buffers, the *packet ring* and *fragment ring*. Every core descriptor in the packet ring has indices into the fragment ring for locating that packet's fragment descriptors. Another data structure, [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor), groups the packet ring and fragment ring together for a given packet queue.
+Packet descriptors and fragment descriptors are both stored in **NET_RING** structures. A NIC client driver accesses the net rings and performs operations on them by calling into the Net Ring Iterator Interface, which enables the driver to work with NetAdapterCx to post network data to hardware and drain completed data back to the OS. 
 
-![multi-ring layout](images/multi-ring.png) 
-
-Every packet queue has its own [NET_DATAPATH_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netdatapathdescriptor/ns-netdatapathdescriptor-_net_datapath_descriptor) structure, and, consequently, its own packet ring, fragment ring, and descriptors in those rings. Therefore, the network data transfer operation of each packet queue is completely independent. To learn more about packet queues, see [Transmit and receive queues](transmit-and-receive-queues.md).
-
-Client drivers are advised to use predefined convenient macros to access the packet ring, the fragment ring and the descriptors they contain. To learn more about these macros, see [Using the ring buffer](using-the-ring-buffer.md).
+For more information on net rings and the Net Ring Iterator Interface, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
 
 ## Packet descriptor extensibility
 
@@ -88,77 +85,33 @@ For a code example of advertising hardware offloads for checksum and LSO, see [N
 
 ### Querying packet extension offsets for datapath queues
 
-After registering packet extensions by declaring your hardware offload support, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback function and store the offset information in your queue context. Here is an example for a transmit queue. This example is similar to the example on *[EvtNetAdapterCreateTxQueue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)* but focuses only on packet extensions.
+After registering packet extensions by declaring your hardware offload support, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback function and store the offset information in your queue context. 
 
-```C++
-NTSTATUS
-MyAdapterCreateTxQueue(
-    _In_    NETADAPTER          Adapter,
-    _Inout_ PNETTXQUEUE_INIT    TxQueueInit
-)
-{
-    NTSTATUS status = STATUS_SUCCESS;
-
-    // Prepare the configuration structure
-    NET_PACKET_QUEUE_CONFIG txConfig;
-    NET_PACKET_QUEUE_CONFIG_INIT(
-        &txConfig,
-        EvtTxQueueAdvance,
-        EvtTxQueueSetNotificationEnabled,
-        EvtTxQueueCancel);
-
-    // Configure other Tx queue properties such as packet contexts
-    ...
-
-    // Create the transmit queue
-    NETPACKETQUEUE txQueue;
-    status = NetTxQueueCreate(
-        txQueueInit,
-        &txAttributes,
-        &txConfig,
-        &txQueue);
-
-    // Get the queue context for storing the queue ID and packet extension offset info
-    PMY_TX_QUEUE_CONTEXT queueContext = GetMyTxQueueContext(txQueue);
-
-    // Query checksum packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY extension;
-    NET_PACKET_EXTENSION_QUERY_INIT(
-        &extension,
-        NET_PACKET_EXTENSION_CHECKSUM_NAME,
-        NET_PACKET_EXTENSION_CHECKSUM_VERSION_1);
-
-    queueContext->ChecksumExtensionOffset = NetTxQueueGetPacketExtensionOffset(txQueue, &extension);
-
-    // Query Large Send Offload packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY_INIT(
-        &extension,
-        NET_PACKET_EXTENSION_LSO_NAME,
-        NET_PACKET_EXTENSION_LSO_VERSION_1);
-    
-    queueContext->LsoExtensionOffset = NetTxQueueGetPacketExtensionOffset(txQueue, &extension);
-
-    return status;
-}
-```
+For an example of querying extension offsets and storing them in the queue context, see [Transmit and receive queues](transmit-and-receive-queues.md).
 
 ### Getting packet extensions at runtime
 
-Once you have stored extension offsets in your queue context, you can use them any time you need information in an extension. For example, you could call the [NetPacketGetPacketChecksum](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketchecksum) method while you program descriptors to hardware:
+Once you have stored extension offsets in your queue context, you can use them any time you need information in an extension. For example, you could call the [**NetExtensionGetPacketChecksum**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/checksum/nf-checksum-netextensiongetpacketchecksum) method while you program descriptors to hardware for a transmit queue:
 
 ```C++
     // Get the extension offset from the device context
     PMY_TX_QUEUE_CONTEXT queueContext = GetMyTxQueueContext(txQueue);
-    size_t checksumOffset = queueContext->ChecksumExtensionOffset;
+    NET_EXTENSION checksumExtension = queueContext->ChecksumExtension;
 
     // Get the checksum info for this packet
-    NET_PACKET_CHECKSUM* checksumInfo = NetPacketGetChecksum(packet, checksumOffset);
+    NET_PACKET_CHECKSUM* checksumInfo = NetExtensionGetPacketChecksum(checksumExtension, packetIndex);
 
     // Do work with the checksum info
-    if(checksumInfo->Layer4 == NET_PACKET_TX_CHECKSUM_REQUIRED)
+    if (packet->Layout.Layer3Type == NET_PACKET_LAYER3_TYPE_IPV4_NO_OPTIONS ||
+        packet->Layout.Layer3Type == NET_PACKET_LAYER3_TYPE_IPV4_WITH_OPTIONS ||
+        packet->Layout.Layer3Type == NET_PACKET_LAYER3_TYPE_IPV4_UNSPECIFIED_OPTIONS)
     {
-        ...
+        if(checksumInfo->Layer4 == NET_PACKET_TX_CHECKSUM_REQUIRED)
+        {
+            ...
+        }
     }
+    ...
 ```
 
 ## Predefined packet extension constants and helper methods
@@ -172,10 +125,10 @@ NetAdapterCx provides definitions for known packet extensions constants.
 | <ul><li>NET_PACKET_EXTENSION_LSO_NAME</li><li>NET_PACKET_EXTENSION_LSO_VERSION_1</li><li>NET_PACKET_EXTENSION_LSO_VERSION_1_SIZE</li></ul> | The name, version, and size of the large send offload (LSO) packet extension. |
 | <ul><li>NET_PACKET_EXTENSION_RSC_NAME</li><li>NET_PACKET_EXTENSION_RSC_VERSION_1</li><li>NET_PACKET_EXTENSION_RSC_VERSION_1_SIZE</li></ul> | The name, version, and size of the receive segment coalescence (RSC) packet extension. |
 
-Additionally, NetAdapterCx provides three helper methods that act as wrappers around the [NetPacketGetExtension](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetextension) method. Each of these methods returns a pointer to the appropriate type of structure.
+Additionally, NetAdapterCx provides three helper methods that act as wrappers around the [**NetExtensionGetData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/extension/nf-extension-netextensiongetdata) method. Each of these methods returns a pointer to the appropriate type of structure.
 
 | Method | Structure |
 | --- | --- |
-| [NetPacketGetPacketChecksum](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketchecksum) | [NET_PACKET_CHECKSUM](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_checksum) |
-| [NetPacketGetPacketLargeSendSegmentation](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketlargesendsegmentation) | [NET_PACKET_LARGE_SEND_SEGMENTATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_large_send_segmentation)
-| [NetPacketGetPacketReceiveSegmentCoalescence](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/nf-netpacket-netpacketgetpacketreceivesegmentcoalescence) | [NET_PACKET_RECEIVE_SEGMENT_COALESCENCE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacket/ns-netpacket-_net_packet_receive_segment_coalescence) |
+| [**NetExtensionGetPacketChecksum**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/checksum/nf-checksum-netextensiongetpacketchecksum) | [**NET_PACKET_CHECKSUM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/checksumtypes/ns-checksumtypes-_net_packet_checksum) |
+| [**NetExtensionGetLargeSendSegmentation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/lso/nf-lso-netextensiongetpacketlargesendsegmentation) | [**NET_PACKET_LARGE_SEND_SEGMENTATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/lsotypes/ns-lsotypes-_net_packet_large_send_segmentation)
+| [**NetExtensionGetPacketReceiveSegmentCoalescence**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rsc/nf-rsc-netextensiongetpacketreceivesegmentcoalescence) | [**NET_PACKET_RECEIVE_SEGMENT_COALESCENCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rsctypes/ns-rsctypes-_net_packet_receive_segment_coalescence) |

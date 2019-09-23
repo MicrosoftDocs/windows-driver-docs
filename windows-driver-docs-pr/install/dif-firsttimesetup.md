@@ -54,13 +54,13 @@ During GUI-mode setup.
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the device information set. There is a [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) associated with the *DeviceInfoSet*.
+Supplies a handle to the device information set. There is a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) associated with the *DeviceInfoSet*.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
 None
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoSet*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoSet*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -91,7 +91,7 @@ GUI-mode setup sends a DIF_FIRSTTIMESETUP request with an empty *DeviceInfoSet*.
 
 An installer detects new devices of its setup class, based on registry information, by calling into a kernel-mode detection component, or by consulting *unattend.txt* information that is stored when a migration DLL ran during an operating system upgrade.
 
-If an installer detects a non-PnP device, the installer should select a driver for the device as follows: create a device information element ([**SetupDiCreateDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff550952)), set the SPDRP_HARDWAREID property by calling [**SetupDiSetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552169), call [**SetupDiBuildDriverInfoList**](https://msdn.microsoft.com/library/windows/hardware/ff550917), and then call [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) to send a [**DIF_SELECTBESTCOMPATDRV**](dif-selectbestcompatdrv.md) request.
+If an installer detects a non-PnP device, the installer should select a driver for the device as follows: create a device information element ([**SetupDiCreateDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)), set the SPDRP_HARDWAREID property by calling [**SetupDiSetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya), call [**SetupDiBuildDriverInfoList**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdibuilddriverinfolist), and then call [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) to send a [**DIF_SELECTBESTCOMPATDRV**](dif-selectbestcompatdrv.md) request.
 
 If one or more installers detect device(s) in response to this DIF code, GUI-mode setup attempts to install the device(s). GUI-mode setup attempts to install all devices in the list; if an installer returns a device that was previously configured, GUI-mode setup will install the device twice.
 
@@ -101,7 +101,7 @@ Installers should not perform tasks when they handle this DIF request that requi
 
 To detect non-PnP devices during GUI-mode setup, an installer must handle this request. GUI-mode setup does not send a DIF_DETECT request.
 
-For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+For more information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes).
 
 Requirements
 ------------
@@ -128,17 +128,17 @@ Requirements
 
 [**DIF_SELECTBESTCOMPATDRV**](dif-selectbestcompatdrv.md)
 
-[**SetupDiBuildDriverInfoList**](https://msdn.microsoft.com/library/windows/hardware/ff550917)
+[**SetupDiBuildDriverInfoList**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdibuilddriverinfolist)
 
-[**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922)
+[**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller)
 
-[**SetupDiCreateDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff550952)
+[**SetupDiCreateDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)
 
-[**SetupDiSetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552169)
+[**SetupDiSetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya)
 
-[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
+[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
 
  
 

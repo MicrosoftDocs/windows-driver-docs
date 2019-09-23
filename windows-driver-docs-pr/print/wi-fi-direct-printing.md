@@ -80,7 +80,7 @@ All existing Certification Requirements for Print devices apply including requir
 Please see the following topics for related information:
 
 [Overview of Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-container-ids)
-[PnP-X: Plug and Play Extensions for Windows Specification](https://msdn.microsoft.com/windows/hardware/gg463082)
+[PnP-X: Plug and Play Extensions for Windows Specification](https://docs.microsoft.com/previous-versions/gg463082(v=msdn.10))
 [Wi-Fi Alliance - Wi-Fi Direct Industry Whitepaper](https://go.microsoft.com/fwlink/p/?LinkId=784967)
  
 

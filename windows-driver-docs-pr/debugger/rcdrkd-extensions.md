@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This section describes the RCDRKD debugger extension commands. These commands display WPP trace messages created by drivers. Starting with Windows 8, you no longer need a separate trace message format (TMF) file to parse WPP messages. The TMF information is stored in the regular symbol file (PDB file).
 
-Starting in Windows 10, kernel-mode and user-mode drivers can use [Inflight Trace Recorder (IFR) for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610). Your kernel-mode driver can use the RCDRKD commands to read messages from the circular buffers, format the messages, and display the messages in the debugger.
+Starting in Windows 10, kernel-mode and user-mode drivers can use [Inflight Trace Recorder (IFR) for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder). Your kernel-mode driver can use the RCDRKD commands to read messages from the circular buffers, format the messages, and display the messages in the debugger.
 
 **Note**  You cannot use the RCDRKD commands to view UMDF driver logs, UMDF framework logs, and KMDF framework logs. To view those logs, use [Windows Driver Framework Extensions (Wdfkd.dll)](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) commands.
 

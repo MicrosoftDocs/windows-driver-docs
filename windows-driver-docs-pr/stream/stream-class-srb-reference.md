@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_stream_class_srb_reference_ks"></span><span id="DDK_STREAM_CLASS_SRB_REFERENCE_KS"></span>
 
 
-The class driver uses the [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure to pass SRB requests to the minidriver. In this reference section, pSRB refers to a pointer to a HW\_STREAM\_REQUEST\_BLOCK object. The stream class driver passes this pointer when it calls minidriver-provided callbacks.
+The class driver uses the [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure to pass SRB requests to the minidriver. In this reference section, pSRB refers to a pointer to a HW\_STREAM\_REQUEST\_BLOCK object. The stream class driver passes this pointer when it calls minidriver-provided callbacks.
 
 SRB requests are either device/instance-specific or stream-specific. Depending on the SRB command, additional parameters may be passed in the HW\_STREAM\_REQUEST\_BLOCK.
 

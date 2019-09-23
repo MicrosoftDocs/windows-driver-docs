@@ -85,7 +85,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
+[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_LNB\_LOF\_HIGH\_BAND**](ksproperty-bda-lnb-lof-high-band.md)
 

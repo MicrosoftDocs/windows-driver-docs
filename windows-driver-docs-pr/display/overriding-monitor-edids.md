@@ -62,7 +62,7 @@ To update an EDID by using an INF:
 ## <span id="Overriding_an_EDID_with_an_INF"></span><span id="overriding_an_edid_with_an_inf"></span><span id="OVERRIDING_AN_EDID_WITH_AN_INF"></span>Overriding an EDID with an INF
 
 
-To override an EDID, include an [**AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) in the INF for each block that you want to override, in the following format:
+To override an EDID, include an [**AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) in the INF for each block that you want to override, in the following format:
 
 ```inf
 HKR, EDID_OVERRIDE, BlockNumber, Byte 1, Byte 2, Byte 3, Byte 4,...
@@ -83,7 +83,7 @@ HKR, EDID_OVERRIDE, 5, 1, 24, 5C, ..., 2D
 ...
 ```
 
-For more info on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](https://msdn.microsoft.com/library/windows/hardware/ff538378).
+For more info on INFs in general, and **AddReg** and **DDInstall** in particular, see [Creating an INF File](https://docs.microsoft.com/windows-hardware/drivers/hid/creating-an-inf-file).
 
 ```inf
 ; monsamp.INF

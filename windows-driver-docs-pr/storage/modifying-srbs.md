@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_modifying_srbs_kg"></span><span id="DDK_MODIFYING_SRBS_KG"></span>
 
 
-As mentioned in the preceding section, a SCSI miniport driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff552654) routine must request that the port driver allocate memory for SRB extensions if the miniport driver maintains per-request state information.
+As mentioned in the preceding section, a SCSI miniport driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) routine must request that the port driver allocate memory for SRB extensions if the miniport driver maintains per-request state information.
 
 Otherwise, a SCSI miniport driver can write values into SRBs *only* for the following purposes and *only* in the following members:
 
@@ -30,7 +30,7 @@ Otherwise, a SCSI miniport driver can write values into SRBs *only* for the foll
 
 -   If the miniport driver supports more than eight logical units, to set the **Lun** member to the logical unit number
 
-If the HBA can handle more than eight logical units, as indicated when *HwScsiFindAdapter* sets up the [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff563900), the port driver does not interpret LUN information. The miniport driver is responsible for mapping the 8-bit LUN from an SRB to a SCSI-3 address if necessary.
+If the HBA can handle more than eight logical units, as indicated when *HwScsiFindAdapter* sets up the [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information), the port driver does not interpret LUN information. The miniport driver is responsible for mapping the 8-bit LUN from an SRB to a SCSI-3 address if necessary.
 
 The mapping from the 8-bit LUN to SCSI-3 address is miniport driver-specific. The following tables show the recommended mapping, where *P* is the physical addressing mode, *B* is the bus, and *T* is the target.
 

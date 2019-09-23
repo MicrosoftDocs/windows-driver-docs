@@ -25,11 +25,11 @@ To take advantage of the built-in system support for audio devices, Microsoft re
 
 However, if these options are not sufficient, a vendor can implement one of the following:
 
--   A proprietary KS filter (see [KS Filters](https://msdn.microsoft.com/library/windows/hardware/ff567644))
+-   A proprietary KS filter (see [KS Filters](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-filters))
 
 -   Microsoft does not recommend a proprietary KS filter because they are difficult to implement, and are unnecessary for most ISA, PCI, and USB devices.
 
--   Stream class minidriver (see [Streaming Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff568277))
+-   Stream class minidriver (see [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2))
 
 -   Microsoft does not recommend a proprietary stream class minidriver because it is difficult to implement, although it can be appropriate for devices that integrate audio and video.
 

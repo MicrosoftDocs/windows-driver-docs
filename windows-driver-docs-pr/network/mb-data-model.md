@@ -13,7 +13,7 @@ The MB driver model uses a data model that consists of a set of objects defined 
 
 In the MB driver model, only *set* and *query* operations are used for OID requests. The MB driver model does not use *method* operations. For indications, the MB driver model uses both event and transactional notifications to indicate state changes in the objects of the MB device. Transactional notifications also signal completion of an asynchronous transaction.
 
-The following tables list the OIDs and status indications defined for MB miniport drivers, as well as the associated data structures. MB miniport drivers must implement all mandatory general OIDs that the NDIS 6.20 Specification requires. For a list of general OIDs for NDIS 6.x, see [General Operational OIDs](https://msdn.microsoft.com/library/windows/hardware/ff552474).
+The following tables list the OIDs and status indications defined for MB miniport drivers, as well as the associated data structures. MB miniport drivers must implement all mandatory general OIDs that the NDIS 6.20 Specification requires. For a list of general OIDs for NDIS 6.x, see [General Operational OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/index).
 
 In addition, MB miniport drivers must implement OID\_GEN\_PHYSICAL\_MEDIUM even though the NDIS Specification describes it as optional to implement.
 
@@ -24,33 +24,33 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 | OID and Corresponding Data Structure | Set operation |   | Query operation |   | GSM/CDMA |
 | ---                                  | ---       | ---       | ---       | ---       |--- |
 |                                      | Windows 7 | Windows 8 | Windows 7 | Windows 8 |    |
-| [OID\_WWAN\_DRIVER\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569825) uses [**NDIS\_WWAN\_DRIVER\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567908) | Not supported | Not supported |S | S | GSM, CDMA |
-| [OID\_WWAN\_DEVICE\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569824) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
-| [OID\_WWAN\_READY\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569833) has no corresponding structure | Not supported Not supported | A | A | GSM, CDMA |
-| [OID\_WWAN\_SERVICE\_ACTIVATION](https://msdn.microsoft.com/library/windows/hardware/ff569835)† uses [**NDIS\_WWAN\_SERVICE\_ACTIVATION**](https://msdn.microsoft.com/library/windows/hardware/ff567918) | A | A | Not supported | Not supported | GSM, CDMA |
-| [OID\_WWAN\_RADIO\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832) uses [**NDIS\_WWAN\_SET\_RADIO\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567925) | A | A | A | A | GSM, CDMA |
-| [OID\_WWAN\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff569828) uses [**NDIS\_WWAN\_SET\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff567922) | A | Not supported | A | Not supported | GSM, CDMA |
-| [OID\_WWAN\_PIN\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569829) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
-| [OID\_WWAN\_PIN\_EX](https://msdn.microsoft.com/library/windows/hardware/hh440095) uses [**NDIS\_WWAN\_SET\_PIN\_EX**](https://msdn.microsoft.com/library/windows/hardware/hh439842) | Not supported | A | Not supported | A | GSM, CDMA |
-| [OID\_WWAN\_HOME\_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
-| [OID\_WWAN\_PREFERRED\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830)† uses [**NDIS\_WWAN\_SET\_PREFERRED\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/ff567923) | A | A | A | A | GSM only |
-| [OID\_WWAN\_VISIBLE\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569843) has no corresponding structure | Not supported | Not supported | A | A | GSM |
-| [OID\_WWAN\_REGISTER\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569834) uses [**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567926) | A | A | A | A | CDMA |
-| [OID\_WWAN\_SIGNAL\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569836) uses [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567928) | A | A | A | A | GSM, CDMA |
-| [OID\_WWAN\_PACKET\_SERVICE](https://msdn.microsoft.com/library/windows/hardware/ff569827) uses [**NDIS\_WWAN\_SET\_PACKET\_SERVICE**](https://msdn.microsoft.com/library/windows/hardware/ff567921) | A | A | A | A | GSM, CDMA |
-| [OID\_WWAN\_PROVISIONED\_CONTEXTS](https://msdn.microsoft.com/library/windows/hardware/ff569831)†† uses [**NDIS\_WWAN\_SET\_PROVISIONED\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff567924) | A | A | A | A | GSM, CDMA |
-| [OID\_WWAN\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/ff569823) uses [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff567920) | A | A | A | A | GSM, CDMA |
-| [OID\_WWAN\_SMS\_CONFIGURATION](https://msdn.microsoft.com/library/windows/hardware/ff569837) uses [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff567929) | A | A | A | A | GSM, CDMA | 
-| [OID\_WWAN\_SMS\_READ](https://msdn.microsoft.com/library/windows/hardware/ff569839) uses [**NDIS\_WWAN\_SMS\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff567941) | Not supported | A | A | A |GSM, CDMA | 
-| [OID\_WWAN\_SMS\_SEND](https://msdn.microsoft.com/library/windows/hardware/ff569840) uses [**NDIS\_WWAN\_SMS\_SEND**](https://msdn.microsoft.com/library/windows/hardware/ff567943) | A | A | Not supported | Not supported | GSM, CDMA |
-| [OID\_WWAN\_SMS\_DELETE](https://msdn.microsoft.com/library/windows/hardware/ff569838) uses [**NDIS\_WWAN\_SMS\_DELETE**](https://msdn.microsoft.com/library/windows/hardware/ff567938) | A | A | Not supported | Not supported |  GSM, CDMA |
-| [OID\_WWAN\_SMS\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff569841) uses [**NDIS\_WWAN\_SMS\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567945) | Not supported | Not supported | A | A | GSM, CDMA |
-| [OID\_WWAN\_VENDOR\_SPECIFIC](https://msdn.microsoft.com/library/windows/hardware/ff569842)† uses a vendor-defined structure | A | A | Not supported | Not supported | GSM, CDMA |
-| [OID\_WWAN\_DEVICE\_SERVICES](https://msdn.microsoft.com/library/windows/hardware/hh440093) has no corresponding structure | Not supported | Not supported | Not supported | A | GSM, CDMA |
-| [OID\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS](https://msdn.microsoft.com/library/windows/hardware/hh440096) uses [**NDIS\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS**](https://msdn.microsoft.com/library/windows/hardware/hh439843) | Not supported | A | Not supported | Not supported | GSM, CDMA |
-| [OID\_WWAN\_AUTH\_CHALLENGE](https://msdn.microsoft.com/library/windows/hardware/hh440092) uses [**NDIS\_WWAN\_AUTH\_CHALLENGE**](https://msdn.microsoft.com/library/windows/hardware/hh439833) | Not supported | Not supported | Not supported | A | GSM, CDMA |
-| [OID\_WWAN\_USSD](https://msdn.microsoft.com/library/windows/hardware/hh440100) uses [**NDIS\_WWAN\_USSD\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh439846) | Not supported | A | Not supported | Not supported | GSM |
-| [OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://msdn.microsoft.com/library/windows/hardware/hh440094) uses [**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/hh439836) | Not supported | A | Not supported | A| GSM, CDMA |
+| [OID\_WWAN\_DRIVER\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-driver-caps) uses [**NDIS\_WWAN\_DRIVER\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps) | Not supported | Not supported |S | S | GSM, CDMA |
+| [OID\_WWAN\_DEVICE\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-caps) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_READY\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-ready-info) has no corresponding structure | Not supported Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_SERVICE\_ACTIVATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-service-activation)† uses [**NDIS\_WWAN\_SERVICE\_ACTIVATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_service_activation) | A | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_RADIO\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-radio-state) uses [**NDIS\_WWAN\_SET\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_radio_state) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_PIN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pin) uses [**NDIS\_WWAN\_SET\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin) | A | Not supported | A | Not supported | GSM, CDMA |
+| [OID\_WWAN\_PIN\_LIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pin-list) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_PIN\_EX](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pin-ex) uses [**NDIS\_WWAN\_SET\_PIN\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin_ex) | Not supported | A | Not supported | A | GSM, CDMA |
+| [OID\_WWAN\_HOME\_PROVIDER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-home-provider) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_PREFERRED\_PROVIDERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-preferred-providers)† uses [**NDIS\_WWAN\_SET\_PREFERRED\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preferred_providers) | A | A | A | A | GSM only |
+| [OID\_WWAN\_VISIBLE\_PROVIDERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-visible-providers) has no corresponding structure | Not supported | Not supported | A | A | GSM |
+| [OID\_WWAN\_REGISTER\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-register-state) uses [**NDIS\_WWAN\_SET\_REGISTER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_register_state) | A | A | A | A | CDMA |
+| [OID\_WWAN\_SIGNAL\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-signal-state) uses [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_signal_indication) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_PACKET\_SERVICE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-packet-service) uses [**NDIS\_WWAN\_SET\_PACKET\_SERVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_packet_service) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_PROVISIONED\_CONTEXTS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-provisioned-contexts)†† uses [**NDIS\_WWAN\_SET\_PROVISIONED\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_provisioned_context) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_CONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-connect) uses [**NDIS\_WWAN\_SET\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_context_state) | A | A | A | A | GSM, CDMA |
+| [OID\_WWAN\_SMS\_CONFIGURATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-sms-configuration) uses [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration) | A | A | A | A | GSM, CDMA | 
+| [OID\_WWAN\_SMS\_READ](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-sms-read) uses [**NDIS\_WWAN\_SMS\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_read) | Not supported | A | A | A |GSM, CDMA | 
+| [OID\_WWAN\_SMS\_SEND](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-sms-send) uses [**NDIS\_WWAN\_SMS\_SEND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send) | A | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_SMS\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-sms-delete) uses [**NDIS\_WWAN\_SMS\_DELETE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete) | A | A | Not supported | Not supported |  GSM, CDMA |
+| [OID\_WWAN\_SMS\_STATUS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-sms-status) uses [**NDIS\_WWAN\_SMS\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status) | Not supported | Not supported | A | A | GSM, CDMA |
+| [OID\_WWAN\_VENDOR\_SPECIFIC](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-vendor-specific)† uses a vendor-defined structure | A | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_DEVICE\_SERVICES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-services) has no corresponding structure | Not supported | Not supported | Not supported | A | GSM, CDMA |
+| [OID\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-subscribe-device-service-events) uses [**NDIS\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_subscribe_device_service_events) | Not supported | A | Not supported | Not supported | GSM, CDMA |
+| [OID\_WWAN\_AUTH\_CHALLENGE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-auth-challenge) uses [**NDIS\_WWAN\_AUTH\_CHALLENGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_challenge) | Not supported | Not supported | Not supported | A | GSM, CDMA |
+| [OID\_WWAN\_USSD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-ussd) uses [**NDIS\_WWAN\_USSD\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_ussd_request) | Not supported | A | Not supported | Not supported | GSM |
+| [OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-service-command) uses [**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_command) | Not supported | A | Not supported | A| GSM, CDMA |
 
 > [!NOTE]
 > The following notes apply to the preceding table:
@@ -64,7 +64,7 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 >
 > The data structures in the preceding table correspond to set operation OIDs and to return data for synchronous query operation OIDs.
 > 
-> The following OIDs share a common variable length list data structure called [**WWAN\_LIST\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff571208) in their corresponding data structures:
+> The following OIDs share a common variable length list data structure called [**WWAN\_LIST\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_list_header) in their corresponding data structures:
 > -   OID\_WWAN\_READY\_INFO
 > -   OID\_WWAN\_PREFERRED\_PROVIDERS
 > -   OID\_WWAN\_VISIBLE\_PROVIDERS
@@ -85,163 +85,163 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 <p><strong>Windows 8 Revision</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567845" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567845)"><strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567907" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567907)"><strong>NDIS_WWAN_DEVICE_CAPS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps)"><strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps)"><strong>NDIS_WWAN_DEVICE_CAPS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_CAPS_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_CAPS_REVISION_2</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567856" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_READY_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567856)"><strong>NDIS_STATUS_WWAN_READY_INFO</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567916" data-raw-source="[&lt;strong&gt;NDIS_WWAN_READY_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567916)"><strong>NDIS_WWAN_READY_INFO</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ready-info" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_READY_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ready-info)"><strong>NDIS_STATUS_WWAN_READY_INFO</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info" data-raw-source="[&lt;strong&gt;NDIS_WWAN_READY_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info)"><strong>NDIS_WWAN_READY_INFO</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_READY_INFO_REVISION_1</p>
 <p>NDIS_WWAN_READY_INFO_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567855" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_RADIO_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567855)"><strong>NDIS_STATUS_WWAN_RADIO_STATE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567915" data-raw-source="[&lt;strong&gt;NDIS_WWAN_RADIO_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567915)"><strong>NDIS_WWAN_RADIO_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-radio-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_RADIO_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-radio-state)"><strong>NDIS_STATUS_WWAN_RADIO_STATE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_radio_state" data-raw-source="[&lt;strong&gt;NDIS_WWAN_RADIO_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_radio_state)"><strong>NDIS_WWAN_RADIO_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_RADIO_STATE_REVISION_1</p>
 <p>NDIS_WWAN_RADIO_STATE_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567851" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567851)"><strong>NDIS_STATUS_WWAN_PIN_INFO</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567911" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PIN_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567911)"><strong>NDIS_WWAN_PIN_INFO</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-info" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-info)"><strong>NDIS_STATUS_WWAN_PIN_INFO</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PIN_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info)"><strong>NDIS_WWAN_PIN_INFO</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PIN_INFO_REVISION_1</p>
 <p>NDIS_WWAN_PIN_INFO_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567852" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_LIST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567852)"><strong>NDIS_STATUS_WWAN_PIN_LIST</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567912" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PIN_LIST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567912)"><strong>NDIS_WWAN_PIN_LIST</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-list" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_LIST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-list)"><strong>NDIS_STATUS_WWAN_PIN_LIST</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_list" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PIN_LIST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_list)"><strong>NDIS_WWAN_PIN_LIST</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PIN_LIST_REVISION_1</p>
 <p>NDIS_WWAN_PIN_LIST_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567858" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SERVICE_ACTIVATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567858)"><strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong></a>†</p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567919" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SERVICE_ACTIVATION_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567919)"><strong>NDIS_WWAN_SERVICE_ACTIVATION_STATUS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-service-activation" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SERVICE_ACTIVATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-service-activation)"><strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong></a>†</p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_service_activation_status" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SERVICE_ACTIVATION_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_service_activation_status)"><strong>NDIS_WWAN_SERVICE_ACTIVATION_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SERVICE_ACTIVATION_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SERVICE_ACTIVATION_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567909" data-raw-source="[&lt;strong&gt;NDIS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567909)"><strong>NDIS_WWAN_HOME_PROVIDER</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider" data-raw-source="[&lt;strong&gt;NDIS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider)"><strong>NDIS_WWAN_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_HOME_PROVIDER_REVISION_1</p>
 <p>NDIS_WWAN_HOME_PROVIDER_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567853" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567853)"><strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong></a>†</p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567913" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567913)"><strong>NDIS_WWAN_PREFERRED_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-providers)"><strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong></a>†</p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_providers)"><strong>NDIS_WWAN_PREFERRED_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PREFERRED_PROVIDERS_REVISION_1</p>
 <p>NDIS_WWAN_PREFERRED_PROVIDERS_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567948" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567948)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_VISIBLE_PROVIDERS_REVISION_1</p>
 <p>NDIS_WWAN_VISIBLE_PROVIDERS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567857" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_REGISTER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567857)"><strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567917" data-raw-source="[&lt;strong&gt;NDIS_WWAN_REGISTRATION_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567917)"><strong>NDIS_WWAN_REGISTRATION_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-register-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_REGISTER_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-register-state)"><strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state" data-raw-source="[&lt;strong&gt;NDIS_WWAN_REGISTRATION_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state)"><strong>NDIS_WWAN_REGISTRATION_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_REGISTRATION_STATE_REVISION_1</p>
 <p>NDIS_WWAN_REGISTRATION_STATE_REVISION_2</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567859" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567859)"><strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567931" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567931)"><strong>NDIS_WWAN_SIGNAL_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-signal-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-signal-state)"><strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state)"><strong>NDIS_WWAN_SIGNAL_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SIGNAL_STATE_REVISION_1</p>
 <p>NDIS_WWAN_SIGNAL_STATE_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567850" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PACKET_SERVICE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567850)"><strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567910" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PACKET_SERVICE_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567910)"><strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-packet-service" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PACKET_SERVICE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-packet-service)"><strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PACKET_SERVICE_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state)"><strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PACKET_SERVICE_STATE_REVISION_1</p>
 <p>NDIS_WWAN_PACKET_SERVICE_STATE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567854" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567854)"><strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567914" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567914)"><strong>NDIS_WWAN_PROVISIONED_CONTEXTS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-provisioned-contexts" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-provisioned-contexts)"><strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts)"><strong>NDIS_WWAN_PROVISIONED_CONTEXTS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PROVISIONED_CONTEXTS_REVISION_1</p>
 <p>NDIS_WWAN_PROVISIONED_CONTEXTS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567843" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567843)"><strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567906" data-raw-source="[&lt;strong&gt;NDIS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567906)"><strong>NDIS_WWAN_CONTEXT_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-context-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-context-state)"><strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state" data-raw-source="[&lt;strong&gt;NDIS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state)"><strong>NDIS_WWAN_CONTEXT_STATE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_CONTEXT_STATE_REVISION_1</p>
 <p>NDIS_WWAN_CONTEXT_STATE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567860" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567860)"><strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567935" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567935)"><strong>NDIS_WWAN_SMS_CONFIGURATION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-configuration" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-configuration)"><strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_configuration" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_configuration)"><strong>NDIS_WWAN_SMS_CONFIGURATION</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_CONFIGURATION_REVISION_1</p>
 <p>NDIS_WWAN_SMS_CONFIGURATION_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567862" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567862)"><strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567942" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567942)"><strong>NDIS_WWAN_SMS_RECEIVE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-receive" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-receive)"><strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive)"><strong>NDIS_WWAN_SMS_RECEIVE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_RECEIVE_REVISION_1</p>
 <p>NDIS_WWAN_SMS_RECEIVE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567863" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_SEND&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567863)"><strong>NDIS_STATUS_WWAN_SMS_SEND</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567944" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_SEND_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567944)"><strong>NDIS_WWAN_SMS_SEND_STATUS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-send" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_SEND&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-send)"><strong>NDIS_STATUS_WWAN_SMS_SEND</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send_status" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_SEND_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send_status)"><strong>NDIS_WWAN_SMS_SEND_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_SEND_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SMS_SEND_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567861" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_DELETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567861)"><strong>NDIS_STATUS_WWAN_SMS_DELETE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567940" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_DELETE_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567940)"><strong>NDIS_WWAN_SMS_DELETE_STATUS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-delete" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_DELETE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-delete)"><strong>NDIS_STATUS_WWAN_SMS_DELETE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete_status" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_DELETE_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete_status)"><strong>NDIS_WWAN_SMS_DELETE_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_DELETE_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SMS_DELETE_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567864" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567864)"><strong>NDIS_STATUS_WWAN_SMS_STATUS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567945" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567945)"><strong>NDIS_WWAN_SMS_STATUS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-status" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-status)"><strong>NDIS_STATUS_WWAN_SMS_STATUS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status)"><strong>NDIS_WWAN_SMS_STATUS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_SMS_STATUS_REVISION_1</p>
 <p>NDIS_WWAN_SMS_STATUS_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567865" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VENDOR_SPECIFIC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567865)"><strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong></a>†</p>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-vendor-specific" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VENDOR_SPECIFIC&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-vendor-specific)"><strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong></a>†</p>
 <p>uses a vendor-defined structure</p></td>
 <td align="left"><p>N/A</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439822" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_USSD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439822)"><strong>NDIS_STATUS_WWAN_USSD</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439844" data-raw-source="[&lt;strong&gt;NDIS_WWAN_USSD_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439844)"><strong>NDIS_WWAN_USSD_EVENT</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ussd" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_USSD&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ussd)"><strong>NDIS_STATUS_WWAN_USSD</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_ussd_event" data-raw-source="[&lt;strong&gt;NDIS_WWAN_USSD_EVENT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_ussd_event)"><strong>NDIS_WWAN_USSD_EVENT</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_USSD_EVENT_REVISION_1</p>
 <p>NDIS_WWAN_USSD_EVENT_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846210" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846210)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh846214" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846214)"><strong>NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands)"><strong>NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICES_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICES_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846205" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846205)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439838" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439838)"><strong>NDIS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-response" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-response)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_response" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_response)"><strong>NDIS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICE_RESPONSE_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICE_RESPONSE_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846204" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846204)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439837" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439837)"><strong>NDIS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-event" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-event)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_event" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_event)"><strong>NDIS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICE_EVENT_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICE_EVENT_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846209" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846209)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439839" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439839)"><strong>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-subscription" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-subscription)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_subscription" data-raw-source="[&lt;strong&gt;NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_subscription)"><strong>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION_REVISION_1</p>
 <p>NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION_REVISION_1</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439821" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439821)"><strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439834" data-raw-source="[&lt;strong&gt;NDIS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439834)"><strong>NDIS_WWAN_AUTH_RESPONSE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-auth-response" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-auth-response)"><strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response" data-raw-source="[&lt;strong&gt;NDIS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response)"><strong>NDIS_WWAN_AUTH_RESPONSE</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_AUTH_RESPONSE_REVISION_1</p>
 <p>NDIS_WWAN_AUTH_RESPONSE_REVISION_1</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846212" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846212)"><strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439841" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439841)"><strong>NDIS_WWAN_SET_HOME_PROVIDER</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-set-home-provider-complete" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-set-home-provider-complete)"><strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_HOME_PROVIDER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider)"><strong>NDIS_WWAN_SET_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>N/A</p>
 <p>NDIS_WWAN_HOME_PROVIDER_REVISION_2</p></td>
 </tr>
@@ -271,165 +271,165 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 <p><strong>allowed?</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567845" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567845)"><strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_CAPS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-caps)"><strong>NDIS_STATUS_WWAN_DEVICE_CAPS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567856" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_READY_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567856)"><strong>NDIS_STATUS_WWAN_READY_INFO</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ready-info" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_READY_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ready-info)"><strong>NDIS_STATUS_WWAN_READY_INFO</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567855" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_RADIO_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567855)"><strong>NDIS_STATUS_WWAN_RADIO_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-radio-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_RADIO_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-radio-state)"><strong>NDIS_STATUS_WWAN_RADIO_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567851" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_INFO&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567851)"><strong>NDIS_STATUS_WWAN_PIN_INFO</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-info" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-info)"><strong>NDIS_STATUS_WWAN_PIN_INFO</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567852" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_LIST&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567852)"><strong>NDIS_STATUS_WWAN_PIN_LIST</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-list" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PIN_LIST&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pin-list)"><strong>NDIS_STATUS_WWAN_PIN_LIST</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567858" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SERVICE_ACTIVATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567858)"><strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-service-activation" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SERVICE_ACTIVATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-service-activation)"><strong>NDIS_STATUS_WWAN_SERVICE_ACTIVATION</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567853" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567853)"><strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-providers)"><strong>NDIS_STATUS_WWAN_PREFERRED_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567857" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_REGISTER_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567857)"><strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-register-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_REGISTER_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-register-state)"><strong>NDIS_STATUS_WWAN_REGISTER_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567859" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567859)"><strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-signal-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SIGNAL_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-signal-state)"><strong>NDIS_STATUS_WWAN_SIGNAL_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567850" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PACKET_SERVICE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567850)"><strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567910" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PACKET_SERVICE_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567910)"><strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-packet-service" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PACKET_SERVICE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-packet-service)"><strong>NDIS_STATUS_WWAN_PACKET_SERVICE</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PACKET_SERVICE_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state)"><strong>NDIS_WWAN_PACKET_SERVICE_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567854" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567854)"><strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-provisioned-contexts" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-provisioned-contexts)"><strong>NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567843" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567843)"><strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-context-state" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_CONTEXT_STATE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-context-state)"><strong>NDIS_STATUS_WWAN_CONTEXT_STATE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567860" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567860)"><strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-configuration" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_CONFIGURATION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-configuration)"><strong>NDIS_STATUS_WWAN_SMS_CONFIGURATION</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567862" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567862)"><strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-receive" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_RECEIVE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-receive)"><strong>NDIS_STATUS_WWAN_SMS_RECEIVE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567863" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_SEND&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567863)"><strong>NDIS_STATUS_WWAN_SMS_SEND</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567944" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_SEND_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567944)"><strong>NDIS_WWAN_SMS_SEND_STATUS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-send" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_SEND&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-send)"><strong>NDIS_STATUS_WWAN_SMS_SEND</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send_status" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SMS_SEND_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_send_status)"><strong>NDIS_WWAN_SMS_SEND_STATUS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567861" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_DELETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567861)"><strong>NDIS_STATUS_WWAN_SMS_DELETE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-delete" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_DELETE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-delete)"><strong>NDIS_STATUS_WWAN_SMS_DELETE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567864" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_STATUS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567864)"><strong>NDIS_STATUS_WWAN_SMS_STATUS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-status" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SMS_STATUS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-sms-status)"><strong>NDIS_STATUS_WWAN_SMS_STATUS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567865" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VENDOR_SPECIFIC&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567865)"><strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-vendor-specific" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VENDOR_SPECIFIC&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-vendor-specific)"><strong>NDIS_STATUS_WWAN_VENDOR_SPECIFIC</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439822" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_USSD&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439822)"><strong>NDIS_STATUS_WWAN_USSD</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ussd" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_USSD&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-ussd)"><strong>NDIS_STATUS_WWAN_USSD</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846210" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846210)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846205" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846205)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-response" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-response)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846204" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846204)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-event" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-event)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846209" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846209)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-subscription" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-subscription)"><strong>NDIS_STATUS_WWAN_DEVICE_SERVICE_SUBSCRIPTION</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh439821" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439821)"><strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-auth-response" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_AUTH_RESPONSE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-auth-response)"><strong>NDIS_STATUS_WWAN_AUTH_RESPONSE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846212" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846212)"><strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-set-home-provider-complete" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-set-home-provider-complete)"><strong>NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
@@ -456,15 +456,15 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <td align="left"><p><strong>GSM/CDMA</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569826" data-raw-source="[OID_WWAN_HOME_PROVIDER](https://msdn.microsoft.com/library/windows/hardware/ff569826)">OID_WWAN_HOME_PROVIDER</a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439841" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439841)"><strong>NDIS_WWAN_SET_HOME_PROVIDER</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-home-provider" data-raw-source="[OID_WWAN_HOME_PROVIDER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-home-provider)">OID_WWAN_HOME_PROVIDER</a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_HOME_PROVIDER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider)"><strong>NDIS_WWAN_SET_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>GSM, CDMA</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569830" data-raw-source="[OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/ff569830)">OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh831866" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh831866)"><strong>NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS</strong></a>. The <strong>PreferredListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the structure is WWAN_PROVIDER2.</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-preferred-providers" data-raw-source="[OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-preferred-providers)">OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preferred_multicarrier_providers" data-raw-source="[&lt;strong&gt;NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preferred_multicarrier_providers)"><strong>NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS</strong></a>. The <strong>PreferredListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the structure is WWAN_PROVIDER2.</p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>A</p></td>
 <td align="left"><p>GSM, CDMA</p></td>
@@ -485,18 +485,18 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <td align="left"><p><strong>Windows 8 Revision</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh439840" data-raw-source="[&lt;strong&gt;NDIS_WWAN_HOME_PROVIDER2&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439840)"><strong>NDIS_WWAN_HOME_PROVIDER2</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider2" data-raw-source="[&lt;strong&gt;NDIS_WWAN_HOME_PROVIDER2&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider2)"><strong>NDIS_WWAN_HOME_PROVIDER2</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_HOME_PROVIDER_REVISION_2</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846211" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846211)"><strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/hh831864" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh831864)"><strong>NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers)"><strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers" data-raw-source="[&lt;strong&gt;NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)"><strong>NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS_REVISION_1. The <strong>PreferredListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the list should contain WWAN_PROVIDER2 structure.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567948" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567948)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>NDIS_WWAN_VISIBLE_PROVIDERS_REVISION_1. The <strong>VisibleListHeader.ElementType</strong> should be set to <strong>WwanStructProvider2</strong> and the list should contain WWAN_PROVIDER2 structure.</p></td>
 </tr>
 </tbody>
@@ -521,20 +521,20 @@ The following changes apply to NDIS 6.30 miniport drivers that support multi-car
 <p><strong>allowed?</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567848" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567848)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_HOME_PROVIDER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-home-provider)"><strong>NDIS_STATUS_WWAN_HOME_PROVIDER</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/hh846211" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh846211)"><strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers)"><strong>NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>Y</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff567866" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567866)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
-<p>uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff567948" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff567948)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers" data-raw-source="[&lt;strong&gt;NDIS_STATUS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-visible-providers)"><strong>NDIS_STATUS_WWAN_VISIBLE_PROVIDERS</strong></a></p>
+<p>uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers" data-raw-source="[&lt;strong&gt;NDIS_WWAN_VISIBLE_PROVIDERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)"><strong>NDIS_WWAN_VISIBLE_PROVIDERS</strong></a></p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>X</p></td>
 <td align="left"><p>N</p></td>

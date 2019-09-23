@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # VolumeClassGuid
 
 
-VolumeClassGuid is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for volume devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) class identifier for new instances of this class.
+VolumeClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for volume devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) class identifier for new instances of this class.
 
 Remarks
 -------

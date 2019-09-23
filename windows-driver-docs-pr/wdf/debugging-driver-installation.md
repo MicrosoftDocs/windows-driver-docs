@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The framework's co-installer creates debugging messages. You can see these messages in a debugger if you are running a checked build of Windows.
 
-Additionally, the co-installer writes its debugging messages to the [Setup action log](https://msdn.microsoft.com/library/windows/hardware/ff550900) (*%windir%\\setupact.log*) file. The Setup action log contains the version of the co-installer and the driver specified in the driver's INF file. You should verify that these are as expected.
+Additionally, the co-installer writes its debugging messages to the [Setup action log](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-text-logs) (*%windir%\\setupact.log*) file. The Setup action log contains the version of the co-installer and the driver specified in the driver's INF file. You should verify that these are as expected.
 
 ## Examining KMDF Installation
 

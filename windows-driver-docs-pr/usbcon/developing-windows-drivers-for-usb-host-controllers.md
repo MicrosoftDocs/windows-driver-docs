@@ -1,11 +1,11 @@
 ---
 Description: Developing Windows drivers for USB host controllers
-title: Developing Windows drivers for USB host controllers
+title: Overview of developing Windows drivers for USB host controllers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Developing Windows drivers for USB host controllers
+# Overview of developing Windows drivers for USB host controllers
 
 
 <table>
@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 <p>UCX is one of the <a href="usb-3-0-driver-stack-architecture.md" data-raw-source="[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)">USB host-side drivers in Windows</a>. It is loaded as the FDO in the host controller device stack.</p>
 <p><strong>USB host controller driver</strong></p>
 <p>UCX is extensible and is designed to support various host controller drivers. Windows provides an xHCI driver (Usbxhci.sys) that targets USB xHCI host controllers.</p>
-<p>The host controller driver is a client of UCX, written as <a href="https://msdn.microsoft.com/library/windows/hardware/ff551869" data-raw-source="[Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff551869)">Kernel-Mode Driver Framework</a> (KMDF) driver.</p>
+<p>The host controller driver is a client of UCX, written as <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-debugging" data-raw-source="[Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-debugging)">Kernel-Mode Driver Framework</a> (KMDF) driver.</p>
 <p><strong>Microsoft-provided binaries</strong></p>
 <p>To write a host controller driver, you need UCX (Ucx01000.sys) and the stub library (Ucx01000.lib). The stub library is in the Windows Driver Kit (WDK). The library performs two main functions.</p>
 <ul>
@@ -42,24 +42,24 @@ ms.localizationpriority: medium
 <a href="usb-3-0-driver-stack-architecture.md" data-raw-source="[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)">USB host-side drivers in Windows</a>
 <a href="get-started-with-host-controller-driver-development.md" data-raw-source="[Architecture: USB host controller extension (UCX)](get-started-with-host-controller-driver-development.md)">Architecture: USB host controller extension (UCX)</a>
 <p><strong>Familiarize yourself with UCX objects and handles</strong></p>
-<p>UCX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544249" data-raw-source="[Introduction to Framework Objects](https://msdn.microsoft.com/library/windows/hardware/ff544249)">Introduction to Framework Objects</a>.</p>
+<p>UCX extends the WDF object functionality to define its own USB-specific UCX objects. For more details on WDF objects, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects" data-raw-source="[Introduction to Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-framework-objects)">Introduction to Framework Objects</a>.</p>
 <p>For queuing requests to any underlying host controller driver, UCX uses these objects. For more information, see <a href="ucx-objects-and-handles-used-by-host-controller-driver.md" data-raw-source="[UCX objects and handles used by a host controller driver](ucx-objects-and-handles-used-by-host-controller-driver.md)">UCX objects and handles used by a host controller driver</a>.</p>
 <p></p>
 <dl>
 <dt>Host controller object (UCXCONTROLLER)</dt>
-<dd><p>Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541693" data-raw-source="[**EVT_WDF_DRIVER_DEVICE_ADD**](https://msdn.microsoft.com/library/windows/hardware/ff541693)"><strong>EVT_WDF_DRIVER_DEVICE_ADD</strong></a>callback by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033" data-raw-source="[&lt;strong&gt;UcxControllerCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt188033)"><strong>UcxControllerCreate</strong></a> method.</p>
+<dd><p>Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add" data-raw-source="[**EVT_WDF_DRIVER_DEVICE_ADD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)"><strong>EVT_WDF_DRIVER_DEVICE_ADD</strong></a>callback by calling the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)" data-raw-source="[&lt;strong&gt;UcxControllerCreate&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188033(v=vs.85))"><strong>UcxControllerCreate</strong></a> method.</p>
 </dd>
 <dt>Root hub object (UCXROOTHUB)</dt>
-<dd><p>Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541693" data-raw-source="[**EVT_WDF_DRIVER_DEVICE_ADD**](https://msdn.microsoft.com/library/windows/hardware/ff541693)"><strong>EVT_WDF_DRIVER_DEVICE_ADD</strong></a> callback by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048" data-raw-source="[&lt;strong&gt;UcxRootHubCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt188048)"><strong>UcxRootHubCreate</strong></a> method.</p>
+<dd><p>Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add" data-raw-source="[**EVT_WDF_DRIVER_DEVICE_ADD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)"><strong>EVT_WDF_DRIVER_DEVICE_ADD</strong></a> callback by calling the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188048(v=vs.85)" data-raw-source="[&lt;strong&gt;UcxRootHubCreate&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188048(v=vs.85))"><strong>UcxRootHubCreate</strong></a> method.</p>
 </dd>
 <dt>USB device object (UCXUSBDEVICE)</dt>
-<dd><p>Represents a physical USB device connected to the bus. Created by the host controller driver typically within the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187823" data-raw-source="[&lt;em&gt;EVT_UCX_CONTROLLER_USBDEVICE_ADD&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/mt187823)"><em>EVT_UCX_CONTROLLER_USBDEVICE_ADD</em></a> callback by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052" data-raw-source="[&lt;strong&gt;UcxUsbDeviceCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt188052)"><strong>UcxUsbDeviceCreate</strong></a> method.</p>
+<dd><p>Represents a physical USB device connected to the bus. Created by the host controller driver typically within the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxcontroller/nc-ucxcontroller-evt_ucx_controller_usbdevice_add" data-raw-source="[&lt;em&gt;EVT_UCX_CONTROLLER_USBDEVICE_ADD&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxcontroller/nc-ucxcontroller-evt_ucx_controller_usbdevice_add)"><em>EVT_UCX_CONTROLLER_USBDEVICE_ADD</em></a> callback by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate" data-raw-source="[&lt;strong&gt;UcxUsbDeviceCreate&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate)"><strong>UcxUsbDeviceCreate</strong></a> method.</p>
 </dd>
 <dt>Endpoint object (UCXENDPOINT)</dt>
-<dd><p>Represents an endpoint on a USB device object. Created by the host controller driver typically within the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187839" data-raw-source="[&lt;em&gt;EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/mt187839)"><em>EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</em></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/mt187843" data-raw-source="[&lt;em&gt;EVT_UCX_USBDEVICE_ENDPOINT_ADD&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/mt187843)"><em>EVT_UCX_USBDEVICE_ENDPOINT_ADD</em></a> callback by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039" data-raw-source="[&lt;strong&gt;UcxEndpointCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt188039)"><strong>UcxEndpointCreate</strong></a> method.</p>
+<dd><p>Represents an endpoint on a USB device object. Created by the host controller driver typically within the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add" data-raw-source="[&lt;em&gt;EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_default_endpoint_add)"><em>EVT_UCX_USBDEVICE_DEFAULT_ENDPOINT_ADD</em></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add" data-raw-source="[&lt;em&gt;EVT_UCX_USBDEVICE_ENDPOINT_ADD&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add)"><em>EVT_UCX_USBDEVICE_ENDPOINT_ADD</em></a> callback by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nf-ucxendpoint-ucxendpointcreate" data-raw-source="[&lt;strong&gt;UcxEndpointCreate&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nf-ucxendpoint-ucxendpointcreate)"><strong>UcxEndpointCreate</strong></a> method.</p>
 </dd>
 <dt>Stream object (UCXSTREAMS)</dt>
-<dd><p>Represents a number of pipes to the device across a single bulk endpoint. Created by the host controller driver typically within the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187830" data-raw-source="[&lt;em&gt;EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/mt187830)"><em>EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</em></a> callback by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188050" data-raw-source="[&lt;strong&gt;UcxStaticStreamsCreate&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt188050)"><strong>UcxStaticStreamsCreate</strong></a> method.</p>
+<dd><p>Represents a number of pipes to the device across a single bulk endpoint. Created by the host controller driver typically within the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nc-ucxendpoint-evt_ucx_endpoint_static_streams_add" data-raw-source="[&lt;em&gt;EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD&lt;/em&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nc-ucxendpoint-evt_ucx_endpoint_static_streams_add)"><em>EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</em></a> callback by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxsstreams/nf-ucxsstreams-ucxstaticstreamscreate" data-raw-source="[&lt;strong&gt;UcxStaticStreamsCreate&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxsstreams/nf-ucxsstreams-ucxstaticstreamscreate)"><strong>UcxStaticStreamsCreate</strong></a> method.</p>
 </dd>
 </dl>
 <p><strong>Documentation sections</strong></p>
@@ -81,7 +81,7 @@ ms.localizationpriority: medium
  
 
 ## Related topics
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
 
 
 

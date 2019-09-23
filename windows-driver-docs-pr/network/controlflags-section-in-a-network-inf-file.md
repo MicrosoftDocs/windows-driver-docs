@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-A **ControlFlags** section in a network INF file is based on the generic [**INF ControlFlags section**](https://msdn.microsoft.com/library/windows/hardware/ff546342).
+A **ControlFlags** section in a network INF file is based on the generic [**INF ControlFlags section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-controlflags-section).
 
 The **ControlFlags** section in a network INF file typically has one or more **ExcludeFromSelect** entries. Each **ExcludeFromSelect** entry specifies a network component that will not be displayed to the end user as an option during a manual installation.
 

@@ -20,17 +20,17 @@ Some file systems might find it useful to perform operations on behalf of the or
 
 The key routines needed for impersonation include:
 
--   [**PsImpersonateClient**](https://msdn.microsoft.com/library/windows/hardware/ff551907) [**SeImpersonateClientEx**](https://msdn.microsoft.com/library/windows/hardware/ff556659)--initiates impersonation. Unless a specific thread is indicated, the impersonation is done in the current thread context.
+-   [**PsImpersonateClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-psimpersonateclient) [**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seimpersonateclientex)--initiates impersonation. Unless a specific thread is indicated, the impersonation is done in the current thread context.
 
 -   **PsRevertToSelf**--terminates impersonation within the current thread context.
 
--   [**PsReferencePrimaryToken**](https://msdn.microsoft.com/library/windows/hardware/ff551930)--holds a reference on the primary (process) token for the specified process. This function may be used to capture the token for any process on the system.
+-   [**PsReferencePrimaryToken**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-psreferenceprimarytoken)--holds a reference on the primary (process) token for the specified process. This function may be used to capture the token for any process on the system.
 
--   [**PsDereferencePrimaryToken**](https://msdn.microsoft.com/library/windows/hardware/ff551896)--releases a reference on a previously referenced primary token.
+-   [**PsDereferencePrimaryToken**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-psdereferenceprimarytoken)--releases a reference on a previously referenced primary token.
 
--   [**SeCreateClientSecurityFromSubjectContext**](https://msdn.microsoft.com/library/windows/hardware/ff556598)--returns a client security context useful for impersonation from a subject context (provided to the FSD during the **IRP\_MJ\_CREATE** handling, for example).
+-   [**SeCreateClientSecurityFromSubjectContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-secreateclientsecurityfromsubjectcontext)--returns a client security context useful for impersonation from a subject context (provided to the FSD during the **IRP\_MJ\_CREATE** handling, for example).
 
--   [**SeCreateClientSecurity**](https://msdn.microsoft.com/library/windows/hardware/ff556595)--creates a client security context based upon the security credentials of an existing thread on the system.
+-   [**SeCreateClientSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-secreateclientsecurity)--creates a client security context based upon the security credentials of an existing thread on the system.
 
 -   **ImpersonateSecurityContext**--impersonates security context within ksecdd.sys, the kernel security service.
 
