@@ -15,15 +15,15 @@ These principles enable an isolated driver package to be self-contained and sand
 ![screen shot of the output window](images/non-isolated-vs-isolated.png)
 ## Benefits of Driver Package Isolation
 
-Drivers that follow driver package isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
+Driver packages that follow driver package isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
 
 Isolated driver packages have the added benefit of being more resilient to changes in the OS.  Additionally, because isolated driver packages leave all driver package files in the driver store, the likelihood of an issue arising during install of the driver is much lower.
 
-By leveraging device interfaces, isolated driver packages are more robust to changes in other drivers as they do not take dependencies on other drivers modifying state in a global location.  Instead, an appropriately versioned interaction between drivers occurs using a device interface to communicate state between components. 
+By leveraging device interfaces to interact with a driver from other components, isolated driver packages are more robust to changes in other driver packages as they do not take dependencies on components in other driver packages modifying state in a global location.  Instead, an appropriately versioned interaction between a driver and other components occurs using a device interface to communicate state between them.
   
 ## Run From Driver Store
 
-All isolated driver packages leave their driver package files in the driver store. This means that they leverage **DIRID 13** in their INF to specify the location for driver package files on install.
+All isolated driver packages leave their driver package files in the driver store. This means that they leverage [**DIRID 13**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids) in their INF to specify the location for driver package files on install.
 
 A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [IoQueryFullDriverPath]() to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
 
