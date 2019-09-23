@@ -10,13 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-These measures monitor two process:
-* The *Windows Audio* service, which is the instance of svchost.exe hosting AudioSrv.dll (AudioSrv)
-* AudioSrv's helper process *Audio Device Graph Isolation*, which is AudioDG.exe (AudioDG)
-
-If either process crashes, the user’s machine can’t play any audio and the user must wait till the service recovers to reinitialize any audio streams.
-
-Audio drivers commonly include custom audio processing in Audio Processing Objects (APOs). These APOs are .dlls which are loaded into the AudioDG helper process. Note that if an APO .dll crashes it will be reflected in measure 23032999 but not measure 12518948.
+See the "Audio user-mode reliability" section at [Audio measures](audio-measures.md)
 
 ## Measure attributes
 

@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 
 ## Description
 
+See the "Audio stream initialization" section at [Audio measures](audio-measures.md)
+
 These measures determine an *audio stream initialization success rate* for each machine and calculates a percentage of machines with less than 90% stream initialization rate. When an application is unable to initialize an audio stream, the user will not have access to the application’s audio experience.
 
 Some machines have multiple audio drivers on them. Some audio drivers work together to power the same audio hardware; some audio drivers work separately to power different audio hardware on the same machine.
@@ -45,4 +47,4 @@ Measure 21271062 looks at the audio stream initialization success rate for audio
 
 ### Final calculation
 
-*Percent of machines with supbar initialization rates = Machines with subpar initialization / Total machines*
+*Percent of machines with subpar initialization rates = Machines with subpar initialization / Total machines*

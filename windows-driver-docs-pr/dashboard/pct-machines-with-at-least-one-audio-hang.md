@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-This measure monitors two services – *Windows Audio Service (AudioSrv.dll)* and the *Audio Device Graph (AudioDG.exe)* – to examine if a hang occurred in either service. An audio hang causes the audio platform to be unresponsive to user-applications.
+See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 
 ## Measure attributes
 
