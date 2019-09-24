@@ -325,6 +325,8 @@
       href: configure-and-query-audiodevicemodules.md
   - name: "Low Latency Audio"
     href: low-latency-audio.md
+  - name: "Multiple Voice Assistant"
+    href: voice-activation-mva.md
   - name: "Voice Activation"
     href: voice-activation.md
   - name: "USB Audio 2.0 Drivers"
