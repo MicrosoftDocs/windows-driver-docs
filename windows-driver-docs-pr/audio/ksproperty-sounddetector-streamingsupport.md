@@ -1,24 +1,23 @@
 ---
-title: KSPROPERTY\_SOUNDDETECTOR\_ARMED
-description: The KSPROPERTY\_SOUNDDETECTOR\_ARMED property is the current arming state of the detector.
-ms.assetid: 3B9B43C0-31EE-4490-AD29-98DA81D1664F
-keywords: ["KSPROPERTY_SOUNDDETECTOR_ARMED Audio Devices"]
+title: KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT
+description: The KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT property indicates whether or not streaming is supported.
+ms.assetid: 3B9B43C0-31EE-4490-AD29-98DA81D1664E
+keywords: ["KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT Audio Devices"]
 topic_type:
 - apiref
 api_name:
-- KSPROPERTY_SOUNDDETECTOR_ARMED
+- KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/24/2019
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_SOUNDDETECTOR\_ARMED
+# KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT
 
-
-The **KSPROPERTY\_SOUNDDETECTOR\_ARMED** property is the current arming state of the detector.
+The **KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT** property indicates whether or not streaming is supported.
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -54,22 +53,16 @@ The **KSPROPERTY\_SOUNDDETECTOR\_ARMED** property is the current arming state of
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
-The property value is a BOOL indicating the arming state of the detector.
+The property value is a BOOL indicating whether or not streaming is supported.
+
+The driver filter supports this read property. If false is returned, that indicates that a voice onset event is supported, but burst streaming of the buffered audio is not supported.
 
 Remarks
 -------
 
-The OS sets this true to engage the detector.
+This property is for future use for voice onset detectors only. Fail this request indicating property not supported or succeed and return true for all other drivers.
 
-The driver resets this to false when:
-
--   The filter interface is disabled.
--   The [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) property is set.
--   A keyword is detected.
-
-Setting this true while no keyword patterns are set ([**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) is empty) has no effect.
-
-Note: If this property is true, subsequently setting [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) automatically resets this to false, as mentioned above.
+Should always return true or not supported.
 
 Requirements
 ------------
@@ -82,11 +75,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Minimum supported client</p></td>
-<td align="left"><p>Windows 10</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Minimum supported server</p></td>
-<td align="left"><p>Windows Server 2016</p></td>
+<td align="left"><p>Windows 10 Version 1903</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Header</p></td>
@@ -97,17 +86,6 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-
 [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md)
 
 [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
-
- 
-
- 
-
-
-
-
-
-
