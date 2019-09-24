@@ -35,10 +35,11 @@ The `KSPROPSETID_SoundDetector2` property set contains the following properties:
 
 - [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](ksproperty-sounddetector-supportedpatterns.md) - This property is set by the operating system to configure the keywords to be detected.
 
+- [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) - The driver’s KS filter supports this read/write property. The OS sets this property to configure the keywords to be detected.
+
 - [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](ksproperty-sounddetector-armed.md) - This read/write property is a simply Boolean status indicating whether the detector is armed. The OS sets this to engage the keyword detector. The OS can clear this to disengage. The driver automatically clears this when keyword patterns are set and also after a keyword is detected. (The OS must rearm.)
 
 - [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](ksproperty-sounddetector-matchresult.md) is used to reset the sound detector at startup time.
 
-- [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md)
 
 At keyword detection time, a PNP notification containing KSNOTIFICATIONID_SoundDetector is sent. NOTE: this is not a KSEvent, but rather a PNP event which is sent, with a payload, via [IoReportTargetDeviceChangeAsynchronous](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous).
