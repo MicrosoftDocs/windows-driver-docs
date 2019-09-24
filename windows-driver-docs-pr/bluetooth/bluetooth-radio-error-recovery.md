@@ -50,6 +50,12 @@ While there are different approaches to recover from a failed state, Bluetooth u
 
   - If the __PR3_ (D3Cold) mechanism is used for PLDR, care must be taken to ensure that scenarios like SystemWake and DeviceWake continue to work. Nominally, this means that there are appropriate power resources defined for D2 e.g. __PR2_. The following table is a useful guide:
 
+| Power state | ACPI resource | Behavior |  
+| --- | --- | --- |  
+| D2 | _PR2 | Any power or clocks required for the class-defined reduced-functionality of this state. |  
+| D3 Hot (reqd.) | _PR2 | The same resources as the next higher state that is supported (D2, D1, or D0). |  
+| D3cold | _PR3 | Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command.|  
+
 ### Related links
 
 [Resetting and recovering a device](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/resetting-and-recovering-a-device)
