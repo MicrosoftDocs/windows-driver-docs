@@ -90,3 +90,5 @@
     href: bluetooth-proximity-profile.md
   - name: "Proximity Profile Implementation Details"
     href: proximity-profile-implementation-details.md
+- name: "Bluetooth Radio Reset and Recovery"
+  href: bluetooth-radio-error-recovery.md
