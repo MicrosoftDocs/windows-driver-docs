@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The **HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles** registry tree contains information about the hardware profiles on the system.
+The **HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles** registry tree contains information about the hardware profiles on the system. Hardware profiles are deprecated and state should not be stored relative to a hardware profile.
 
  
 
