@@ -23,7 +23,7 @@ There are three broad categories of issues where Bluetooth Reset and Recovery is
 
 - **Driver enumeration failures:** The Bluetooth radio is in a failed state _after_ after successful enumeration by the underlying bus. This typically occurs when building up the driver stack for the radio, e.g. when a filter or function driver is installed on the Bluetooth radio device node (devnode). Failures could occur if a driver encounters an error during one or more start operations and as a result reports a PnP failure. An example of such an operation could be a firmware download to the device.
 
-- **Non-enumeration failures:** The device is not in a failed state but is otherwise non-operational as seen by the driver stack. These are failures outside of the enumeration pathway and could be general critical transport-specific failures or device-specific failures such as a catastrophic firmware error. The Bluetooth Reset and Recovery mechanisms described below is used in these cases.
+- **Non-enumeration failures:** The device is not in a failed state but is otherwise non-operational as seen by the driver stack. These are failures outside of the enumeration pathway and could be general critical transport-specific failures or device-specific failures such as a catastrophic firmware error. The Bluetooth Reset and Recovery mechanisms described below are used in these cases.
 
 ## Reset and Recovery Mechanisms
 
