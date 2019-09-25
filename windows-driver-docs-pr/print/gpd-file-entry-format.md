@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 All GPD file entries conform to the following format:
 
-**\\*** <em>EntryName</em>**:** *EntryValue* **{**<em>GPD\_FileEntry, GPD\_FileEntry, ...</em>**}**
+**\*** <em>EntryName</em>**:** *EntryValue* **{**<em>GPD\_FileEntry, GPD\_FileEntry, ...</em>**}**
 
 *EntryName* is always a predefined keyword that Unidrv's GPD parser recognizes, preceded by an asterisk.
 
