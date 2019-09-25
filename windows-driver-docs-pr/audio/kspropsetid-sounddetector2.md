@@ -1,8 +1,8 @@
 ---
 title: KSPROPSETID\_SoundDetector2
-description: .
+description: KSPROPSETID_SoundDetector2 property set contains properties that are used to register a filter for an audio capture device that also supports a detector.
 ms.assetid: FC4A354B-D42C-4199-B613-1E1B75A600C7
-ms.date: 09/24/2019
+ms.date: 09/25/2019
 ms.localizationpriority: medium
 ---
 
@@ -39,8 +39,8 @@ The `KSPROPSETID_SoundDetector2` property set contains the following properties:
 
 - [KSPROPERTY\_SOUNDDETECTOR\_ARMED](ksproperty-sounddetector-armed.md) - This read/write property is a simply Boolean status indicating whether the detector is armed. The OS sets this to engage the keyword detector. The OS can clear this to disengage. The driver automatically clears this when keyword patterns are set and also after a keyword is detected. (The OS must rearm.)
 
-- [KSPROPERTY\_SOUNDDETECTOR\_RESET])(ksproperty-sounddetector-reset.md) - Reset the detector to an unarmed state with no pattern set.
+- [KSPROPERTY\_SOUNDDETECTOR\_RESET](ksproperty-sounddetector-reset.md) - Reset the detector to an unarmed state with no pattern set.
 
 - [KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT](ksproperty-sounddetector-streamingsupport.md) - Future use for voice onset detectors only. Fail this request indicating property not supported or succeed and return true for all other drivers.
 
-At keyword detection time, a PNP notification containing KSNOTIFICATIONID_SoundDetector is sent. NOTE: this is not a KSEvent, but rather a PNP event which is sent, with a payload, via [IoReportTargetDeviceChangeAsynchronous](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous).
+At keyword detection time, a PNP notification containing KSNOTIFICATIONID_SoundDetector is sent. NOTE: This is not a KSEvent, but rather a PNP event which is sent, with a payload, via [IoReportTargetDeviceChangeAsynchronous](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous).

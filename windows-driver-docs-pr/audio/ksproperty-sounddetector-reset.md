@@ -11,7 +11,7 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 09/24/2019
+ms.date: 09/25/2019
 ms.localizationpriority: medium
 ---
 
@@ -40,10 +40,10 @@ The **KSPROPERTY\_SOUNDDETECTOR\_RESET** property resets the detector to an unar
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Yes</p></td>
+<td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/" data-raw-source="[&lt;strong&gt;KSSOUNDDETECTORPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/"><strong>KSSOUNDDETECTORPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -51,15 +51,15 @@ The **KSPROPERTY\_SOUNDDETECTOR\_RESET** property resets the detector to an unar
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
-The property value is a BOOL. True indicates to reset, false is ignored
+The property value is a BOOL. True indicates to reset, false is ignored.
 
 Remarks
 -------
 
-The driver resets this to true when it would like to:
+The OS calls reset with a value of true when it would like to:
 
-- Unarm the keyword detector 
-- Clear any [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) (and/or) KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS ???)that have been set.
+- Unarm the keyword detector.
+- Clear any [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) that have been set.
 
 Setting this true while no keyword patterns are set ([**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) is empty) has no effect.
 
@@ -87,4 +87,4 @@ Requirements
 
 [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md)
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSSOUNDDETECTORPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/)

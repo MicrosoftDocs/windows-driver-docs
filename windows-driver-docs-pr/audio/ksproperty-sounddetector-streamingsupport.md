@@ -41,9 +41,9 @@ The **KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT** property indicates whether o
 <tbody>
 <tr class="odd">
 <td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
+<td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/" data-raw-source="[&lt;strong&gt;KSSOUNDDETECTORPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/"><strong>KSSOUNDDETECTORPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -55,14 +55,15 @@ The **KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT** property indicates whether o
 
 The property value is a BOOL indicating whether or not streaming is supported.
 
-The driver filter supports this read property. If false is returned, that indicates that a voice onset event is supported, but burst streaming of the buffered audio is not supported.
+A driver which supports this read property and returns false is indicating that only voice onset is supported without the associated burst audio stream.
+
+A driver which does not support this property, or supports this property and returns true, is indicating that it supports bursting the audio data which triggered the keyword detection.
+
+All detectors must support buffering and burst streaming the audio data which triggered the hardware keyword detection, and fail this request or set this value to true.
 
 Remarks
 -------
-
-This property is for future use for voice onset detectors only. Fail this request indicating property not supported or succeed and return true for all other drivers.
-
-Should always return true or not supported.
+This property is for future use. There is currently no OS support for detectors which do voice onset only.
 
 Requirements
 ------------
@@ -88,4 +89,4 @@ Requirements
 
 [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md)
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSSOUNDDETECTORPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/)
