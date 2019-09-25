@@ -46,7 +46,7 @@ While there are different approaches to recover from a failed state, Bluetooth u
 
 - **To support PLDR** there must be an _RST or _PR3  method defined within the __ADR_ namespace as detailed in [ACPI firmware: Platform-level reset](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/resetting-and-recovering-a-device#acpi-firmware-platform-level-reset). Note that if a __PR3_ method is used, ACPI uses the D3Cold power cycle mechanism to reset. This emulates removing power from the device and subsequently restoring it. If any other devices share the same power rail they will also be reset. If an __RST_ method is defined and referenced by a __PRR_ (PowerResource) then all devices that use that PowerResource will be affected.
 
-  - Since PLDR works only for internal devices, it must be declared as such in ACPI. Specifically for USB devices, To specify a port that is internal (not user visible) and can be connected to an integrated device, the __UPC.PortIsConnectable_ byte must be set to 0xFF and the __PLD.UserVisible_ bit must be set to 0.
+  - Since PLDR works only for internal devices, it must be declared as such in ACPI. For USB devices, to specify a port that is internal (not user visible) and can be connected to an integrated device, set the __UPC.PortIsConnectable_ byte to 0xFF and the __PLD.UserVisible_ bit to 0.
 
   - If the __PR3_ (D3Cold) mechanism is used for PLDR, care must be taken to ensure that scenarios like SystemWake and DeviceWake continue to work. Nominally, this means that there are appropriate power resources defined for D2 e.g. __PR2_. The following table is a useful guide:
 
