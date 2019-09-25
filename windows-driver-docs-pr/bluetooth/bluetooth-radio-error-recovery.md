@@ -48,7 +48,7 @@ While there are different approaches to recover from a failed state, Bluetooth u
 
   - Since PLDR works only for internal devices, it must be declared as such in ACPI. For USB devices, to specify a port that is internal (not user visible) and can be connected to an integrated device, set the __UPC.PortIsConnectable_ byte to 0xFF and the __PLD.UserVisible_ bit to 0.
 
-  - If the __PR3_ (D3Cold) mechanism is used for PLDR, care must be taken to ensure that scenarios like SystemWake and DeviceWake continue to work. Nominally, this means that there are appropriate power resources defined for D2 e.g. __PR2_. The following table is a useful guide:
+  - If the __PR3_ (D3Cold) mechanism is used for PLDR, ensure that scenarios like SystemWake and DeviceWake continue to work. Nominally, this means that there are appropriate power resources defined for D2, e.g. __PR2_. The following table is a useful guide:
 
 | Power state | ACPI resource | Behavior |  
 | --- | --- | --- |  
