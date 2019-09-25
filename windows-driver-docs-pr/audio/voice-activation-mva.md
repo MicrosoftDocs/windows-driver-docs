@@ -2,7 +2,7 @@
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
 ms.assetid: 48a7e96b-58e8-4a49-b673-14036d4108d5
-ms.date: 09/23/2019
+ms.date: 09/25/2019
 ms.localizationpriority: medium
 ---
 
@@ -124,6 +124,16 @@ All KSPROPSETID_SoundDetector2 properties are called with a KSSOUNDDETECTORPROPE
 - Match result - **KSPROPERTY\_SOUNDDETECTOR\_RESET** is used to reset the sound detector at startup time.
 
 At keyword detection time, a PNP notification containing KSNOTIFICATIONID_SoundDetector is sent. NOTE: this is not a KSEvent, but rather a PNP event which is sent, with a payload, via IoReportTargetDeviceChangeAsynchronous.
+
+KSNOTIFICATIONID_SoundDetector is defined in ksmedia.h as shown here. 
+
+```
+// The payload of this notification is a SOUNDDETECTOR_DETECTIONHEADER
+#define STATIC_KSNOTIFICATIONID_SoundDetector\
+    0x6389d844, 0xbb32, 0x4c4c, 0xa8, 0x2, 0xf4, 0xb4, 0xb7, 0x7a, 0xfe, 0xad
+DEFINE_GUIDSTRUCT("6389D844-BB32-4C4C-A802-F4B4B77AFEAD", KSNOTIFICATIONID_SoundDetector);
+#define KSNOTIFICATIONID_SoundDetector DEFINE_GUIDNAMED(KSNOTIFICATIONID_SoundDetector)
+```
 
 **Sequence of Operation**
 
