@@ -140,7 +140,7 @@ Specifies one or more of the options given in the following table. These options
 An optional parameter specifying the module that defines this structure. If there is a local variable or type with the same name as a global variable or type, you should include *module* to specify that you mean the global variable. Otherwise, the **dt** command will display the local variable, even if the local variable is a case-insensitive match and the global variable is a case-sensitive match.
 
 <span id="_______Name______"></span><span id="_______name______"></span><span id="_______NAME______"></span> *Name*   
-Specifies the name of a type or global variable. If *Name* ends with an asterisk (**\\***), a list of all matches is displayed. Thus, **dt A\\*** will list all data types, globals, and statics beginning with "A", but will not display the actual instances of these types. (If the **-v** display option is used at the same time, all symbols will be displayed -- not just those with associated type information.) You can also replace *Name* with a period (**.**) to signify that you want to repeat the most recently used value of *Name*.
+Specifies the name of a type or global variable. If *Name* ends with an asterisk (**\***), a list of all matches is displayed. Thus, **dt A\\*** will list all data types, globals, and statics beginning with "A", but will not display the actual instances of these types. (If the **-v** display option is used at the same time, all symbols will be displayed -- not just those with associated type information.) You can also replace *Name* with a period (**.**) to signify that you want to repeat the most recently used value of *Name*.
 
 If *Name* contains a space, it should be enclosed in parentheses.
 
