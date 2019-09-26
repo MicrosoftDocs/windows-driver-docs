@@ -72,7 +72,7 @@ AddReg = Example_DDInstall.AddReg
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 
-#### Device Interface Registry State
+#### Leveraging Device Interfaces
 
 When state needs to be shared between drivers, there should be a **single driver** that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
 
@@ -95,7 +95,9 @@ The typical pattern is to **register for notifications** of device interface arr
 
 You can find more information on device interfaces on the [Microsoft Docs page](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-device-interfaces).   Information on how to register for device interface arrival and removal can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  Additionally, information on registering for device interface change notifications can be found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
 
-Isolated driver packages leverage device interfaces to share state with other drivers and components. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces as opposed to hardcoding paths to global registry locations:
+#### Device Interface Registry State
+
+Isolated driver packages leverage device interfaces to share state with other drivers and components via device interfaces as opposed to hardcoding paths to global registry locations. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces:
 
 ![screen shot of the output window](images/device-interface-communication.png)
 
@@ -168,7 +170,7 @@ The OS provides API’s for services to get storage locations for their internal
 
 ## DriverData and ProgramData
 
-Temporary files that are to be used as part of intermediate operations that can be shared with other components should be written to either **DriverData** or **ProgramData** locations.
+Files that are to be used as part of intermediate operations that can be shared with other components should be written to either **DriverData** or **ProgramData** locations.
 
 These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
 
@@ -182,7 +184,7 @@ UserMode programs should access the “DriverData” directory via the environme
 
 The %ProgramData% UserMode environment variable is available for UserMode components to use when storing data. 
 
-Files should not be written in the root of neither the DriverData nor the ProgramData directories. A sub-directory must be created with your company name and then files and further sub-directories should be written within that directory.
+Files should not be written in the root of the DriverData nor the ProgramData directories. A sub-directory must be created with your company name and then files and further sub-directories should be written within that directory.
 
 For example, for a company name of Contoso, a KernelMode driver could write a custom log to “\DriverData\Contoso\Logs” and a UserMode application could collect or analyze the log files from “%DriverData%\Contoso\Logs”.
 
