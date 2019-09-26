@@ -16,23 +16,21 @@ ms.localizationpriority: medium
 
 # DevCon Restart
 
-
 Stops and restarts the specified devices. Valid only on the local computer.
 
 ```
-    devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]} 
+    devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_restart_tools"></span><span id="DDK_DEVCON_RESTART_TOOLS"></span>Parameters
 
-
-<span id="________r______"></span><span id="________R______"></span> **/r**   
+<span id="________r______"></span><span id="________R______"></span> **/r**
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
 
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*   
+<span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
 
 The following special characters modify the ID parameter.
@@ -65,11 +63,9 @@ The following special characters modify the ID parameter.
 </tbody>
 </table>
 
-
-
 <span id="________class______"></span><span id="________CLASS______"></span>  
 
-**=**_class_   
+**=**_class_
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
@@ -91,12 +87,3 @@ devcon restart =printer *desk*
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
 [Example 38: Restart a device](devcon-examples.md#ddk_example_38_restart_a_device_tools)
-
-
-
-
-
-
-
-
-
