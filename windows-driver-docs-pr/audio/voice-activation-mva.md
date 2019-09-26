@@ -2,7 +2,7 @@
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
 ms.assetid: 48a7e96b-58e8-4a49-b673-14036d4108d5
-ms.date: 09/25/2019
+ms.date: 09/26/2019
 ms.localizationpriority: medium
 ---
 
@@ -116,7 +116,7 @@ The driver exposes a KS filter for its capture device as usual. This filter supp
 
 The property is: **KSPROPSETID_SoundDetector2**
 
-All KSPROPSETID_SoundDetector2 properties are called with a KSSOUNDDETECTORPROPERTY data structure. This data structure contains a KSPROPERTY and the event id for the keyword to be armed, reset, detected, etc.
+All KSPROPSETID_SoundDetector2 properties are called with a [KSSOUNDDETECTORPROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kssounddetectorproperty)  data structure. This data structure contains a KSPROPERTY and the event id for the keyword to be armed, reset, detected, etc.
 
 - Supported keyword types - [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/ksproperty-sounddetector). This property is set by the operating system to configure the keywords to be detected.
 -   List of keyword patterns GUIDs - [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/ksproperty-sounddetector). This property is used to get a list of GUIDs that identify the types of supported patterns.

@@ -12,7 +12,7 @@ The `KSPROPSETID_SoundDetector2` property set contains properties that are used 
 
 `KSPROPSETID_SoundDetector2` is supported in  Windows 10 Version 1903 and later. The KSPROPSETID_SoundDetector2 property set is used to support multiple voice agents. For more information, see [Multiple Voice Assistant](voice-activation-mva.md).  [KSPROPSETID\_SoundDetector](kspropsetid-sounddetector.md) property set is used on systems that support just Cortana.  
 
-`KSPROPSETID_SoundDetector2` uses the KSSOUNDDETECTORPROPERTY structure, instead of a KSPROPERTY:
+`KSPROPSETID_SoundDetector2` uses the [KSSOUNDDETECTORPROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kssounddetectorproperty) structure, instead of a KSPROPERTY:
 
 ``` syntax
 typedef struct {
@@ -21,7 +21,7 @@ typedef struct {
 } KSSOUNDDETECTORPROPERTY, *PKSSOUNDDETECTORPROPERTY;
 ```
 
-All KSPROPSETID_SoundDetector2 properties are called with a KSSOUNDDETECTORPROPERTY data structure. This data structure contains a KSPROPERTY and the event id for the keyword to be armed, reset, detected, etc.
+All KSPROPSETID_SoundDetector2 properties are called with a [KSSOUNDDETECTORPROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kssounddetectorproperty)  data structure. This data structure contains a KSPROPERTY and the event id for the keyword to be armed, reset, detected, etc.
 
 The header file defines the **KSPROPSETID\_SoundDetector2** property set as follows:
 
