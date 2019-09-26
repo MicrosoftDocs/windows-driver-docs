@@ -37,13 +37,16 @@ Since [SourceDisksFiles]() entries cannot have multiple entries with the same fi
 
 More information on how to find and load files from the driver store can be found in the [Universal Driver Scenarios](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/universal-driver-scenarios#dynamically-finding-and-loading-files-from-the-driver-store) page.
 
-## Provisioning and Accessing Registry State
+## Provisioning and Accessing State
 
 > [!NOTE]
-> If your component is using device or device interface *properties* to store state, continue to use that method and the appropriate OS API's to store and access state. The following guidance is for *custom state* that needs to be stored by a component.
+> If your component is using device or device interface *properties* to store state, continue to use that method and the appropriate OS API's to store and access state. The following guidance is for other state that needs to be stored by a component.
 
 Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Hardcoded absolute registry paths and file paths **should not be used**.
-### PnP Device Registry State
+
+### Provisioning and Accessing Registry State
+
+#### PnP Device Registry State
 
 There is a need for isolated driver packages and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the **"hardware key"** (aka "device key") for the device and the **"software key"** (aka "driver key") for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
 
@@ -69,7 +72,7 @@ AddReg = Example_DDInstall.AddReg
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 
-### Device Interface Registry State
+#### Device Interface Registry State
 
 When state needs to be shared between drivers, there should be a **single driver** that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
 
@@ -105,7 +108,7 @@ In order to read and write device interface registry state, use the following AP
 * Provision Values via INF:
   * [INF AddReg]() directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section]() section.
 
-### Service Registry State
+#### Service Registry State
 
 Registry state that is provisioned by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg]() section referenced by the service install section in the INF.  Below is an example:
 
@@ -134,9 +137,9 @@ Use the appropriate API's to access the location of this state:
 * Win32 Services
   * [GetServiceRegistryStateKey]()
 
-## Provisioning and Accessing File State
+### Provisioning and Accessing File State
 
-### Device File State
+#### Device File State
 
 If files related to a device need to be written, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here.
 
@@ -145,7 +148,7 @@ If files related to a device need to be written, those files should be stored re
 * WDF
   * [WdfDeviceRetrieveDeviceDirectoryString]()
 
-### Service File State
+#### Service File State
 
 There is a need for services (both Win32 services and driver services) to read, and sometimes write, state about themselves. This is state that is owned by the service and accessed only by the service.
 
