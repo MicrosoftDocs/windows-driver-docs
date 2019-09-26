@@ -61,4 +61,4 @@ As an alternative to a full checked build, you can configure a computer to use a
 
 For more complete testing of your driver when you are using a partial checked build, you also consider installing the checked versions of the related system-provided drivers. For example, if you are developing a lower disk filter driver, you should consider extracting and installing the checked build of Disk.sys and Storport.sys from the full checked build.
 
-To verify that you are running the check build, follow the instructions at [Step 4 - Restart the computer](installing-just-the-checked-operating-system-and-hal--for-windows-vist#step-4---restart-the-computer) in [Installing Just the Checked Operating System and HAL (For Windows Vista and Later)](installing-just-the-checked-operating-system-and-hal--for-windows-vist.md)
+To verify that you are running the check build, follow the instructions in **Step 4 - Restart the computer** in [Installing Just the Checked Operating System and HAL (For Windows Vista and Later)](installing-just-the-checked-operating-system-and-hal--for-windows-vist.md)
