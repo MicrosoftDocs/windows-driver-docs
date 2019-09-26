@@ -11,11 +11,11 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 09/25/2019
+ms.date: 09/26/2019
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_SOUNDDETECTOR\_ARMED 
+# KSPROPERTY\_SOUNDDETECTOR\_ARMED
 
 
 The **KSPROPERTY\_SOUNDDETECTOR\_ARMED** property is the current arming state of the detector.
@@ -52,6 +52,13 @@ This usage table summarizes when KSPROPERTY\_SOUNDDETECTOR\_ARMED is called with
 </tbody>
 </table>
 
+When called by [KSPROPSETID_SoundDetector](kspropsetid-sounddetector.md), the driver resets this to false when:
+
+-   The filter interface is disabled.
+-   The [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) property is set.
+-   A keyword is detected.
+
+
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table - KSPROPSETID_SoundDetector2
 
 
@@ -85,7 +92,7 @@ This usage table summarizes when KSPROPERTY\_SOUNDDETECTOR\_ARMED is called with
 </tbody>
 </table>
 
- 
+When called with [KSPROPSETID_SoundDetector2](kspropsetid-sounddetector2.md) the arm state will not be reset when a keyword is detected.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -95,12 +102,6 @@ Remarks
 -------
 
 The OS sets this true to engage the detector.
-
-The driver resets this to false when:
-
--   The filter interface is disabled.
--   The [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) property is set.
--   A keyword is detected.
 
 Setting this true while no keyword patterns are set ([**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) is empty) has no effect.
 
