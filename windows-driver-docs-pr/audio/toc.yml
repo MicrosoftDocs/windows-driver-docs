@@ -272,13 +272,15 @@
         href: uaa-class-drivers.md
       - name: "Communicating Verbs with the HD Audio Codec"
         href: communicating-verbs-with-the-hd-audio-codec.md
-    - name: "Programming Guidelines"
-# Auto-expanded node
+    - name: "HD Audio DDI Programming Guidelines"
+      href: programming-guidelines.md
       items: 
       - name: "Programming Guidelines"
         href: programming-guidelines.md
       - name: "Differences Between the HD Audio DDI Versions"
         href: differences-between-the-hd-audio-ddi-versions.md
+      - name: "Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations"
+        href: managing-memory-buffers-rebalance.md
       - name: "Synchronous and Asynchronous Codec Commands"
         href: synchronous-and-asynchronous-codec-commands.md
       - name: "Wall Clock and Link Position Registers"
