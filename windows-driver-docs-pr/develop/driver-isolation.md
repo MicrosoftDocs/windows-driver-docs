@@ -96,7 +96,7 @@ HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 #### Device Interface Registry State
 
-Isolated driver packages leverage device interfaces to share state with other drivers and components via device interfaces as opposed to hardcoding paths to global registry locations. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces:
+Isolated driver packages leverage device interfaces to share state with other drivers and components as opposed to hardcoding paths to global registry locations. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces:
 
 ![screen shot of the output window](images/device-interface-communication.png)
 
