@@ -936,6 +936,8 @@
       href: kspropsetid-rtaudio.md
     - name: "KSPROPSETID_SoundDetector"
       href: kspropsetid-sounddetector.md
+    - name: "KSPROPSETID_SoundDetector2"
+      href: kspropsetid-sounddetector2.md
     - name: "KSPROPSETID_Synth"
       href: kspropsetid-synth.md
     - name: "KSPROPSETID_SynthClock"
@@ -1471,6 +1473,10 @@
       href: ksproperty-sounddetector-matchresult.md
     - name: "KSPROPERTY_SOUNDDETECTOR_PATTERNS"
       href: ksproperty-sounddetector-patterns.md
+    - name: "KSPROPERTY_SOUNDDETECTOR_RESET"
+      href: ksproperty-sounddetector-reset.md
+    - name: "KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT"
+      href: ksproperty-sounddetector-streamingsupport.md
     - name: "KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS"
       href: ksproperty-sounddetector-supportedpatterns.md
     - name: "KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE"
