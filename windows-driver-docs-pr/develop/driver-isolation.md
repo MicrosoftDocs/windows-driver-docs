@@ -25,15 +25,15 @@ By leveraging device interfaces to interact with a driver from other components,
 
 All isolated driver packages leave their driver package files in the driver store. This means that they leverage [**DIRID 13**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-dirids) in their INF to specify the location for driver package files on install.
 
-A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [IoQueryFullDriverPath]() to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
+A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [IoQueryFullDriverPath](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
 
-Alternatively, on Windows 10 Verison 1803 and later, [IoGetDriverDirectory]() with *DriverDirectoryImage* as the directory type could be used to get the directory path that the driver was loaded from.
+Alternatively, on Windows 10 Verison 1803 and later, [IoGetDriverDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type could be used to get the directory path that the driver was loaded from.
 
-For a file payloaded by an INF, the *subdir* listed in the [SourceDisksFiles]() entry for the file in the INF must match the subdir listed in the [DestinationDirs]() entry for the file in the INF.
+For a file payloaded by an INF, the *subdir* listed in the [SourceDisksFiles](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entry for the file in the INF must match the subdir listed in the [DestinationDirs](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-destinationdirs-section) entry for the file in the INF.
 
-Additionally, a [CopyFiles]() directive cannot be used to rename a file. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the DriverStore directory.
+Additionally, a [CopyFiles](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-copyfiles-directive) directive cannot be used to rename a file. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the DriverStore directory.
 
-Since [SourceDisksFiles]() entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a **unique file name**.
+Since [SourceDisksFiles](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a **unique file name**.
 
 More information on how to find and load files from the driver store can be found in the [Universal Driver Scenarios](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/universal-driver-scenarios#dynamically-finding-and-loading-files-from-the-driver-store) page.
 
@@ -41,16 +41,17 @@ More information on how to find and load files from the driver store can be foun
 
 When state needs to be shared between drivers, there should be a **single driver** that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
 
-Typically, this would be accomplished by the driver that owns the state exposing a **device interface** in a custom device interface class and enabling that interface when the driver is ready for other drivers to have access to the state. Drivers that want access to this state can **register for [device interface arrival notifications]()**. To access the state, the custom device interface class can define one of two contracts:
+Typically, this would be accomplished by the driver that owns the state exposing a **device interface** in a custom device interface class and enabling that interface when the driver is ready for other drivers to have access to the state. Drivers that want access to this state can **register for [device interface arrival notifications](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal)**. To access the state, the custom device interface class can define one of two contracts:
 
 * An *IO contract* can be associated with that device interface class that provides a mechanism for accessing the state. Other drivers can use the enabled device interface to send IO that conforms to that contract to the owning driver
-* A *direct-call interface* that gets returned via a query interface. Other drivers could send [IRP_MN_QUERY_INTERFACE]() to retrieve function pointers from the driver to call.
+* A *direct-call interface* that gets returned via a query interface. Other drivers could send [IRP_MN_QUERY_INTERFACE](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mn-query-interface) to retrieve function pointers from the driver to call.
 
 Alternatively, If the driver that owns the state is robust to allowing direct access to the state, the other drivers could access state by using the OS API’s for programmatic access to device interface state.
 
 These interfaces or state (depending on sharing method used) need to be **properly versioned** so the driver owning the state can be serviced independently of other drivers that want to access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version in lockstep.  
 
-For simplicity, it may be tempting to have an application or driver get a list of enabled interfaces at a single point in time, such as during startup of the component, through functions such as [IoGetDeviceInterfaces](). However, this method is not advised as it leads to problems.
+For simplicity, it may be tempting to have an application or driver get a list of enabled interfaces at a single point in time, such as during startup of the component, through functions such as [IoGetDeviceInterfaces](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces
+). However, this method is not advised as it leads to problems.
 
 Devices and the drivers controlling interfaces can start up asynchronously of other devices and UserMode applications and may have their device stack torn down, such as when the device is disabled or restarted, leading to device interfaces exposed from that device being disabled.
 
@@ -76,14 +77,14 @@ There is a need for isolated driver packages and user mode components to read, a
 The following API's should be used to ensure your driver is isolated:
 
 * WDM:
-  * [IoOpenDeviceRegistryKey]()
+  * [IoOpenDeviceRegistryKey](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
 * WDF:
-  * [WdfDeviceOpenRegistryKey]()
-  * [WdfFdoInitOpenRegistryKey]()
+  * [WdfDeviceOpenRegistryKey](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceopenregistrykey)
+  * [WdfFdoInitOpenRegistryKey](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdffdo/nf-wdffdo-wdffdoinitopenregistrykey)
 * Other UserMode Code:
-  * [CM_Open_DevNode_Key]()
+  * [CM_Open_DevNode_Key](https://docs.microsoft.com/en-us/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key)
 * Provision Values via INF:
-  * [INF AddReg]() directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall]() section or [DDInstall.HW]() section
+  * [INF AddReg](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-ddinstall-section) section or [DDInstall.HW](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-ddinstall-hw-section) section
 
 Below is an example of an INF provisioning device registry state through its INF:
 
@@ -103,15 +104,15 @@ Isolated driver packages leverage device interfaces to share state with other dr
 In order to read and write device interface registry state, use the following API's:
 
 * WDM:
-  * [IoOpenDeviceInterfaceRegistryKey]()
+  * [IoOpenDeviceInterfaceRegistryKey](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey)
 * Other UserMode Code:
-  * [CM_Open_Device_Interface_Key]()
+  * [CM_Open_Device_Interface_Key](https://docs.microsoft.com/en-us/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keya?redirectedfrom=MSDN)
 * Provision Values via INF:
-  * [INF AddReg]() directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section]() section.
+  * [INF AddReg](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addinterface-directive) section.
 
 #### Service Registry State
 
-Registry state that is provisioned by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg]() section referenced by the service install section in the INF.  Below is an example:
+Registry state that is provisioned by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-addreg-directive) section referenced by the service install section in the INF.  Below is an example:
 
 ```
 [ExampleDDInstall.Services]
@@ -132,11 +133,11 @@ HKR, Parameters, ExampleValue, 0x00010001, 1
 Use the appropriate API's to access the location of this state:
 
 * WDM 
-  * [IoOpenDriverRegistryKey]()
+  * [IoOpenDriverRegistryKey](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
 * WDF
-  * [WdfDriverOpenParamatersRegistryKey]()
+  * [WdfDriverOpenParamatersRegistryKey](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey)
 * Win32 Services
-  * [GetServiceRegistryStateKey]()
+  * GetServiceRegistryStateKey
 
 ### Provisioning and Accessing File State
 
@@ -145,9 +146,9 @@ Use the appropriate API's to access the location of this state:
 If files related to a device need to be written, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here.
 
 * WDM
-  * [IoGetDeviceDirectory]()
+  * [IoGetDeviceDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdevicedirectory)
 * WDF
-  * [WdfDeviceRetrieveDeviceDirectoryString]()
+  * [WdfDeviceRetrieveDeviceDirectoryString](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 #### Service File State
 
@@ -158,14 +159,14 @@ If that internal state of the service needs to be shared with other components, 
 The OS provides API’s for services to get storage locations for their internal state, but those storage locations are intended to be accessed only by the service itself. 
 
 * WDM
-  * [IoGetDriverDirectory]()
+  * [IoGetDriverDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory)
 * WDF
   * KMDF Drivers
-    * [IoGetDriverDirectory]()
+    * [IoGetDriverDirectory](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory)
   * UMDF Drivers
-    * [WdfDriverRetrieveDriverDataDirectoryString]()
+    * [WdfDriverRetrieveDriverDataDirectoryString](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
 * Win32 Services
-  * [GetServiceDirectory]()
+  * GetServiceDirectory
 
 ## DriverData and ProgramData
 
