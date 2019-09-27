@@ -83,7 +83,8 @@ paged pool. These commands, may also be useful in gathering information about th
 </table>
 
 
-## Cause
+Cause
+-----
 
 This bug check is usually caused by kernel-mode device drivers that use improper addresses.
 
@@ -100,7 +101,8 @@ Following are some general guidelines that you can use to categorize the type of
 - Otherwise, this may be a bad pointer, possibly caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [**!pte**](-pte.md), [**!address**](-address.md), and [**ln** (list nearest symbols)](ln--list-nearest-symbols-.md).
 
 
-## Resolution
+Resolution
+----------
 
 If a kernel debugger is available, obtain a stack trace. Start by running the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debugger extension to display information about the bug check. (The **!analyze** extension can be helpful in determining the root cause.) Next, enter one of the [**k\*** (display stack backtrace)](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
 
@@ -154,7 +156,8 @@ NDIS!_EthFilterIndicateReceiveComplete+0x31
 8013ef64 00000246 fe551aa1 ff690268 00000002 elnkii!_ElnkiiRcvInterruptDpc+0x1d0
 ```
 
-## Remarks
+Remarks
+-------
 
 The error that generates this bug check usually occurs after the installation of a faulty device driver, system service, or BIOS.
 

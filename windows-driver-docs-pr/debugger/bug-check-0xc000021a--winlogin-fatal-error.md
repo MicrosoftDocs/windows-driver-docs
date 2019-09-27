@@ -1,28 +1,26 @@
 ---
-title: Bug Check 0xC000021A STATUS_SYSTEM_PROCESS_TERMINATED
-description: The STATUS_SYSTEM_PROCESS_TERMINATED bug check has a value of 0xC000021A. This means that an error has occurred in a crucial user-mode subsystem.
+title: Bug Check 0xC000021A WINLOGON_FATAL_ERROR
+description: The WINLOGON_FATAL_ERROR bug check has a value of 0xC000021A. This means that the Winlogon process terminated unexpectedly.
 ms.assetid: d46e2948-ff18-49e0-a738-7b90ab54d333
-keywords: ["Bug Check 0xC000021A STATUS_SYSTEM_PROCESS_TERMINATED", "STATUS_SYSTEM_PROCESS_TERMINATED"]
-ms.date: 03/15/2019
+keywords: ["Bug Check 0xC000021A WINLOGON_FATAL_ERROR", "WINLOGON_FATAL_ERROR"]
+ms.date: 09/12/2019
 topic_type:
 - apiref
 api_name:
-- STATUS_SYSTEM_PROCESS_TERMINATED
+- WINLOGON_FATAL_ERROR
 api_type:
 - NA
 ms.localizationpriority: medium
 ---
 
-# Bug Check 0xC000021A: STATUS\_SYSTEM\_PROCESS\_TERMINATED
+# Bug Check 0xC000021A: WINLOGON\_FATAL\_ERROR
 
-The STATUS\_SYSTEM\_PROCESS\_TERMINATED bug check has a value of 0xC000021A. This means that an error has occurred in a crucial user-mode subsystem.
+The WINLOGON\_FATAL\_ERROR bug check has a value of 0xC000021A. This means that that the Winlogon process terminated unexpectedly.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
-## STATUS\_SYSTEM\_PROCESS\_TERMINATED parameters
-
+## WINLOGON\_FATAL\_ERROR Parameters
 
 <table>
 <colgroup>
@@ -55,8 +53,8 @@ The STATUS\_SYSTEM\_PROCESS\_TERMINATED bug check has a value of 0xC000021A. Thi
 </tbody>
 </table>
 
-
-## Cause
+Cause
+-----
 
 This error occurs when a user-mode subsystem, such as WinLogon or the Client Server Run-Time Subsystem (CSRSS), has been fatally compromised and security can no longer be guaranteed. In response, the operating system switches to kernel mode. Microsoft Windows cannot run without WinLogon or CSRSS. Therefore, this is one of the few cases where the failure of a user-mode service can shut down the system.
 
@@ -74,17 +72,15 @@ Because bug check 0xC000021A occurs in a user-mode process, the most common culp
 
 If you have recently restored your hard disk from a backup, check if there is an updated version of the backup/restore program available from the manufacturer.
 
-The following steps may be helpful in gathering additional information:
+- Look at the most recently installed applications. To do this navigate to "Uninstall or change a program" in control panel and sort the installed applications by install date.
 
--   Look at the most recently installed applications. To do this, navigate to **Uninstall or change a program** in Control Panel, and sort the installed applications by installation date.
+- Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 -   Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
 ## Remarks
 
-The following actions may be helpful in resolving this issue:
-
--   Use System File Checker to repair missing or corrupted system files. System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and to repair corrupted files. Use the following command to run System File Checker (SFC.exe).
+- Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 
     ```console
     SFC /scannow

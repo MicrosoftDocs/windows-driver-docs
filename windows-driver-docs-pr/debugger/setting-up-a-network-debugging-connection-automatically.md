@@ -1,9 +1,9 @@
 ---
 title: Setting Up KDNET Network Kernel Debugging Automatically
-description: Use KDNET to configure network kernel debugging automatically for the Windows debuggging tools.
+description: Use KDNET to configure network kernel debugging automatically for the Windows debugging tools.
 ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
-ms.date: 09/25/2018
+ms.date: 09/12/2019
 ms.localizationpriority: medium
 ---
 
@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 Debugging Tools for Windows supports kernel debugging over a network. This topic describes how to set up network debugging automatically using the kdnet.exe setup tool.
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows 7 or later, and the target computer must be running Windows 8 or later.
-
-
 
 ## <span id="Determining_the_IP_Address_of_the_Host_Computer"></span><span id="determining_the_ip_address_of_the_host_computer"></span><span id="DETERMINING_THE_IP_ADDRESS_OF_THE_HOST_COMPUTER"></span>Determining the IP Address of the Host Computer
 
@@ -102,6 +100,16 @@ If you are prompted about allowing WinDbg to access the port through the firewal
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
+At this point the debugger will be waiting for the target to reconnect and text similar to the following will be displayed in the debugger command window.
+
+   ```console
+   Microsoft (R) Windows Debugger Version 1.0.1908.30002 AMD64
+   Copyright (c) Microsoft Corporation. All rights reserved.
+
+   Using NET for debugging
+   Opened WinSock 2.0
+   Waiting to reconnect...
+   ```
 
 ## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
 
@@ -110,6 +118,8 @@ Once the debugger is connected, reboot the target computer. One way to do restar
    ```console
    shutdown -r -t 0 
    ```
+
+After the target PC restarts, the debugger should connect automatically.
 
 ## <span id="troubleshooting_tips"></span><span id="TROUBLESHOOTING_TIPS"></span>Troubleshooting Tips
 
@@ -149,23 +159,14 @@ If "Network debugging is not supported on any of the NICs in this machine" is di
 
 The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
-
-
 ## <span id="related_topics"></span>Related topics
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
- 
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md)
 
-
 [Setting Up KDNET Network Kernel Debugging Manually](setting-up-a-network-debugging-connection.md)
 
+[Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md)
 
- 
-
-
-
-
-
-
+[Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)

@@ -3,8 +3,6 @@ title: Number of user mode reliability for crashes in creative applications
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in creative applications, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +12,7 @@ ms.localizationpriority: medium
 
 This measure counts the number of crashes in display drivers that happen in the context of the creative applications and calculating the runtime of [creative applications](measure-appendix.md#creative-applications-example) on all machines that have the updated driver. The measure then normalizes the total runtime to years, indicating the number of crashes a user would experience if they used the creative applications for a year.
 
-This measure is normalized by usage, less than or equal to the baseline goal.
+This measure is normalized by usage, which is less than or equal to the baseline goal.
 
 ## Measure attributes
 

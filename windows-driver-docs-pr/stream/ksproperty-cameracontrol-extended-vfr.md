@@ -53,7 +53,7 @@ If set to VFR\_OFF, driver shall deliver fixed frame rate for the video pin.
 
 If set to VFR\_ON, the frame rate is automatically determined by the driver and can vary based on the capture condition and scenario for the video pin. When VFR\_ON is set, the maximum frame rate allowed is further determined by the fixed frame rate embedded in the media type selected for video recording.
 
-If the driver does not support variable frame rate for video, the driver should not implement this control, and fixed frame rate will be implied.
+If the driver does not support variable frame rate for video, the driver should not implement this control, and variable frame rate will be implied.
 
 This control has no effect during the video recording for the driver that doesn’t support on the fly toggling of the VFR settings. The driver shall ignore the control received during an active video recording in that case.
 
