@@ -29,7 +29,7 @@ All isolated driver packages leave their driver package files in the driver stor
 
 A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
 
-Alternatively, on Windows 10 version 1803 and later, call [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from.
+Alternatively, on Windows 10, version 1803 and later, call [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from.
 
 For a file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entry for the file in the INF must match the subdir listed in the [**DestinationDirs**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section) entry for the file in the INF.
 
@@ -48,7 +48,7 @@ Typically, the driver that owns the state exposes a device interface in a custom
 * An *I/O contract* can be associated with that device interface class that provides a mechanism for accessing the state. Other drivers use the enabled device interface to send I/O requests that conform to the contract.
 * A *direct-call interface* that gets returned via a query interface. Other drivers could send [IRP_MN_QUERY_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) to retrieve function pointers from the driver to call.
 
-Alternatively, if the driver that owns the state allows direct access to the state, other drivers could access state by using the OS APIs for programmatic access to device interface state.
+Alternatively, if the driver that owns the state allows direct access to the state, other drivers could access state by using system-supplied functions for programmatic access to device interface state.
 
 These interfaces or state (depending on sharing method used) need to be **properly versioned** so the driver owning the state can be serviced independently of other drivers that access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version.  
 
@@ -179,10 +179,10 @@ These locations offer components a location to write temporary state or state th
 
 ### DriverData
 
-The `DriverData` directory is available in Windows 10 Version 1803 and later. This directory is accessible by both user mode and kernel mode components through different mechanisms.
+The `DriverData` directory is available in Windows 10, version 1803 and later. This directory is accessible by both user mode and kernel mode components through different mechanisms.
 
-Kernel mode drivers should access the `DriverData` directory via an operating system provided symbolic link called `\DriverData`.
-user mode programs should access the `DriverData` directory via the environment variable `%DriverData%`.
+Kernel mode drivers should access the `DriverData` directory by using a system-supplied symbolic link called `\DriverData`.
+User mode programs should access the `DriverData` directory by using the environment variable `%DriverData%`.
 
 ### ProgramData
 
