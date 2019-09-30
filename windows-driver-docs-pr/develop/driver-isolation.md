@@ -58,9 +58,9 @@ Instead, the best practice is to **register for notifications** of device interf
 
 For more info, see:
 
-* [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces).  
-* [Registering for Notification of Device Interface Arrival and Device Removal](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  
-* [Registering for Device Interface Change Notification](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
+* [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces)
+* [Registering for Notification of Device Interface Arrival and Device Removal](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal)
+* [Registering for Device Interface Change Notification](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification)
 
 ## Reading and Writing State
 
@@ -71,11 +71,11 @@ Access to various state should be done by calling functions that provide a calle
 
 This section contains the following subsections:
 
-* [PnP Device Registry State](pnp-device-registry-state)
-* [Device Interface Registry State](device-interface-registry-state)
-* [Service Registry State](service-registry-state)
-* [Device File State](device-file-state)
-* [Service File State](service-file-state)
+* [PnP Device Registry State](#pnp-device-registry-state)
+* [Device Interface Registry State](#device-interface-registry-state)
+* [Service Registry State](#service-registry-state)
+* [Device File State](#device-file-state)
+* [Service File State](#service-file-state)
 
 ### PnP Device Registry State
 
