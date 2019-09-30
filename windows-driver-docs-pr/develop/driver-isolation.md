@@ -6,13 +6,21 @@ ms.date: 09/12/2019
 
 ## Driver Package Isolation Overview
 
-Binaries in an isolated driver package store registry and file state using a handle to a relative location provided by OS API's as opposed to hardcoding global location paths.
+Driver isolation describes a set of best practices that make drivers less prone to crashes and easier to update.
 
-Binaries in isolated driver packages interact with other components and their state through OS API's or interfaces exposed by those components. They do not use hardcoded paths to manually modify and interact with other drivers' state.  Additionally, all isolated driver packages are run from the driver store.
+Because an isolated driver package is sandboxed, multiple versions can run on a system simultaneously.
 
-These principles enable an isolated driver package to be self-contained and sandboxed which makes it more robust to multiple versions existing or running on a system simultaneously. Additionally, this enables the OS to move driver packages to different locations based on new servicing or security features without risking driver package functionality.  Below is a diagram of the four main principles that isolated driver packages use:
+The following diagram shows the four main principles of driver isolation:
 
-![screen shot of the output window](images/non-isolated-vs-isolated.png)
+![diagram showing ](images/non-isolated-vs-isolated.png)
+
+|Non-isolated Driver|Isolated Driver|
+|-|-|
+|Hardcodes path to global registry locations|Uses HKR & OS APIs for relative location of registry and file state|
+|INF copies files to System32\drivers|Driver files are run from the driver store|
+|Interacts with other drivers and their state via hardcoded paths|Driver interacts with other drivers via OS APIs or device interfaces|
+|Runtime file writes to any location|Driver writes files to OS provided locations|
+
 ## Benefits of Driver Package Isolation
 
 Driver packages that follow driver package isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
