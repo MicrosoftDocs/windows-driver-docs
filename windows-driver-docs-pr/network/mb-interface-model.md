@@ -1,12 +1,12 @@
 ---
-title: MB Interface Model
+title: MB Interface Model Overview
 description: This section provides information for mobile broadband devices that are implemented based on the Mobile Broadband Interface Model (MBIM) specification.
 ms.assetid: B1C6D5F4-63E2-4C46-8038-71B8144AB474
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# MB Interface Model
+# MB Interface Model Overview
 
 
 This section provides information for mobile broadband devices that are implemented based on the Mobile Broadband Interface Model (MBIM) specification.
@@ -23,14 +23,14 @@ These scenarios are discussed in more detail throughout the MB Interface Model t
 
 *Microsoft OS compatible IDs*
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="33%" />  
+<col width="33%" />  
+<col width="33%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Microsoft OS Compatible ID</th>
 <th align="left">Microsoft OS Sub Compatible ID</th>
 <th align="left">Required for Scenario</th>

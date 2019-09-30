@@ -1,6 +1,6 @@
 ---
-title: WAN Packet Framing
-description: WAN Packet Framing
+title: WAN Packet Framing Overview
+description: WAN Packet Framing Overview
 ms.assetid: 11a6fbf5-c7a9-474b-811e-c77a36e834f3
 keywords:
 - WAN miniport drivers WDK networking , packets
@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# WAN Packet Framing
+# WAN Packet Framing Overview
 
 
 

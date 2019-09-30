@@ -1,6 +1,6 @@
 ---
-title: Introduction to NDIS Filter Drivers
-description: Introduction to NDIS Filter Drivers
+title: Getting started with NDIS Filter Drivers
+description: Getting started with NDIS Filter Drivers
 ms.assetid: dcf9b992-4812-43d7-9170-1a565d8db8fb
 keywords:
 - filter drivers WDK networking , about filter drivers
@@ -9,11 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Introduction to NDIS Filter Drivers
-
-
-
-
+# Getting started with NDIS Filter Drivers
 
 Filter drivers provide filtering services for miniport drivers. NDIS driver stacks must include miniport drivers and protocol drivers and optionally include filter drivers. For more information about NDIS drivers and the driver stack, see [Driver Stack Management](driver-stack-management.md).
 

@@ -1,12 +1,12 @@
 ---
-title: Writing Hyper-V Extensible Switch Extensions
-description: Writing Hyper-V Extensible Switch Extensions
+title: Writing Hyper-V Extensible Switch Extensions Topics
+description: Writing Hyper-V Extensible Switch Extensions Topics
 ms.assetid: 282CEE4D-0818-4091-A327-68FDD7B0D12F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Writing Hyper-V Extensible Switch Extensions
+# Writing Hyper-V Extensible Switch Extensions Topics
 
 
 The following topics provide information about how to write Hyper-V extensible switch extensions:

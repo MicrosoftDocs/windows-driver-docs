@@ -1,50 +1,18 @@
 ---
 title: Debugger Data Model C++ Scripting
 description: This topic describes how to use Debugger Data Model C++ scripting to support automation with the debugger engine.
-ms.date: 10/08/2018
+ms.date: 09/12/2019
 ---
 
 # Debugger Data Model C++ Scripting
 
 This topic describes how to use Debugger Data Model C++ Debugger Data Model C++ scripting to support automation with the debugger engine using scripting.
 
-This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
-debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
-
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
-
-[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
----
-
-## Topic Sections
-
-This topic includes the following sections.
-
-[Script Management in the Debugger Data Model](#scriptmanangement)
-
-[Debugger Data Model C++ Host Interfaces for Scripting](#hostinterfacesscript)
-
-[Debugger Data Model C++ Scripting Interfaces](#scriptinterface)
-
-[Debugger Data Model C++ Script Debugging Interfaces](#debugscript)
-
----
-
 ## <span id="scriptmanangement"> Script Management in the Debugger Data Model 
 
 In addition to the Data Model Manager's role as the central authority on object creation and extensibility, it is also responsible for the management of an abstract concept of scripts. From the perspective of the Script Manager portion of the Data Model Manager, a script is something which can be dynamically loaded, unloaded, and potentially debugged by a provider in order to extend or provide new functionality to the data model. 
 
 A script provider is a component which bridges a language (e.g.: NatVis, JavaScript, etc...) to the data model. It registers one or more file extensions (e.g.: ".NatVis", ".js") which are handled by the provider allowing a debugger client or a user interface to allow for loading of script files with that particular extension by delegation to the provider. 
-
 
 **The Core Script Manager: IDataModelScriptManager**
 
@@ -659,13 +627,11 @@ The Reset method resets the position of the enumerator to where it was just afte
 
 The GetNext method moves the enumerator forward to the next breakpoint to be enumerated and returns the IDataModelScriptDebugBreakpoint interface for that breakpoint. If the enumerator has reached the end of the enumeration, it returns E_BOUNDS. Once the E_BOUNDS error has been produced, subsequent calls to the GetNext method will continue to produce E_BOUNDS unless an intervening call to the Reset method has been made. 
 
-
-
-
-
 ---
 
 ## <span id="related_topics"></span>Related topics
+
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
@@ -676,5 +642,3 @@ The GetNext method moves the enumerator forward to the next breakpoint to be enu
 [Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
 
 [Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)

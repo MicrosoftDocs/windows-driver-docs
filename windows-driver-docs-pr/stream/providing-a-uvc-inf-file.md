@@ -27,7 +27,7 @@ To do so, include the following code in the INF file, here arbitrarily named *Xu
 ; Copyright (c) CompanyName. All rights reserved.
 
 [Version]
-Signature="$CHICAGO$"
+Signature="$Windows NT$"
 Class=Image
 ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
 Provider=%CompanyName%
@@ -35,35 +35,39 @@ Provider=%CompanyName%
 [SourceDisksNames]
 1=%Package%
 
-[SourceDisksFiles.x86]
+[SourceDisksFiles]
 MyPlugin.ax=1
 
 [ControlFlags]
 ExcludeFromSelect=*
 
 [DestinationDirs]
-MyDevice.CopyList=11    ; %systemroot%\system32 on 
-   NT-based systems
+MyDevice.CopyList=11    ; %systemroot%\system32 on NT-based systems
 
 [Manufacturer]
-%CompanyName%=CompanyName
+%CompanyName%=CompanyName,NT$ARCH$
 ```
 
 The device-specific INF file is matched with the device based on the VID/PID identifier. In this case, the device-specific INF file takes precedence over *Usbvideo.inf*.
 
 ```INF
-[CompanyName]
+[CompanyName.NT$ARCH$]
 %MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&Pid_XXXX&MI_XX
 
-[MyDevice.NT]
+[MyDevice]
 Include=usbvideo.inf, ks.inf, kscaptur.inf, dshowext.inf
-Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT,
-DSHOWEXT.Registration
+Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT, DSHOWEXT.Registration
 AddReg=MyDevice.Plugins
 CopyFiles=MyDevice.CopyList
 ```
 
-The following portion of the INF file shows the registry entries for a node-based Extension Unit plug-in. Refer to *Usbvideo.inf* for similar examples.
+The INF also needs a CopyFiles section to copy the plug-in into the system folder.
+```INF
+[MyDevice.CopyList]
+MyPlugin.ax
+```
+
+The first part of the following INF AddReg section registers the plug-in.  The remainder of this section shows the registry entries for a node-based Extension Unit plug-in. Refer to *Usbvideo.inf* for similar examples.
 
 ```INF
 [MyDevice.PlugIns]
@@ -82,8 +86,10 @@ HKLM,System\CurrentControlSet\Control\NodeInterfaces\%XU_GUID%,
    CLSID,1,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz,zz
 ```
 
+The following INF section shows how to populate interface-specific registry entries.
+
 ```INF
-[MyDevice.NT.Interfaces]
+[MyDevice.Interfaces]
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,MyDevice.Interface
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,MyDevice.Interface
 AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,MyDevice.Interface
@@ -97,7 +103,11 @@ HKR,,FriendlyName,,%MyDevice.DeviceDesc%
 HKR,,RTCFlags,0x00010001,0x00000010
 ```
 
-For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.
+For USB Cameras, if the device interface registry key location contains a DWORD registry entry **EnableDependentStillPinCapture** with a non-zero value, the dependent pin on such cameras will be used for photo capture. If the registry entry is not present or set to zero, the dependent pin will not be used. Instead, the photo capture will be done using a frame taken from the preview pin.  The following enables dependent still pin capture:
+
+```INF
+HKR,,EnableDependentStillPinCapture,0x00010001,1
+```
 
 You can also define an optional registry value called **UvcFlags**. **UvcFlags** should be a DWORD value. When the device is plugged in, the UVC driver receives a Plug and Play (PnP) Start request. The driver then searches for **UvcFlags** in the device registry key. The DWORD value is a bitmask and can contain the values in the following table.
 
@@ -155,20 +165,7 @@ In low frame rate conditions, the EOF bit might report completion faster than th
 
 For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
 
-```INF
-[MyDevice.NT.Services]
-AddService = usbvideo,0x00000002,MyDevice.ServiceInstall
-
-[MyDevice.ServiceInstall]
-DisplayName   = %USBVideo.SvcDesc%
-ServiceType   = %SERVICE_KERNEL_DRIVER%
-StartType     = %SERVICE_DEMAND_START%
-ErrorControl  = %SERVICE_ERROR_NORMAL%
-ServiceBinary = %10%\System32\Drivers\usbvideo.sys
-
-[MyDevice.CopyList]
-MyPlugin.ax
-```
+This final section supplies missing definitions for the INF.
 
 ```INF
 [Strings]
@@ -179,15 +176,11 @@ XU_GUID="{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}"
 KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
 KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
 KSCATEGORY_VIDEO="{6994AD05-93EF-11D0-A3CC-00A0C9223196}"
-SERVICE_KERNEL_DRIVER=1
-SERVICE_DEMAND_START=3
-SERVICE_ERROR_NORMAL=1
 
 ; Localizable
 CompanyName="CompanyName"
 Package="Installation Package"
 MyDevice.DeviceDesc="CompanyName Camera"
-USBVideo.SvcDesc="USB Video Device (WDM)"
 
 PlugIn_IMyExtensionUnit="CompanyName Extension Unit Interface"
 ```

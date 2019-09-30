@@ -1,39 +1,12 @@
 ---
 title: Debugger Data Model C++ Concepts
 description: This topic describes concepts in Debugger C++ Data Model.
-ms.date: 10/04/2018
+ms.date: 09/12/2019
 ---
 
 # Debugger Data Model C++ Concepts
 
-This topic describes concepts in Debugger C++ Data Model.
-
-This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
-debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
-
-
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
-
-[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
----
-
-## Topic Sections
-
-This topic includes the following sections.
-
-[Concepts in the Data Model](#concepts) 
-
----
-
+This topic describes concepts in Debugger C++ Data Model .
 
 ## <span id="concepts"> Concepts in the Data Model 
 
@@ -324,10 +297,11 @@ IDynamicConceptProviderConcept's [NotifyDestruct](https://docs.microsoft.com/win
 
 The NotifyDestruct method on a dynamic concept provider is a callback made by the core data model at the start of destruction of the object which is a dynamic concept provider. It provides additional clean up opportunities to clients which require it. 
 
-
----
+--
 
 ## <span id="related_topics"></span>Related topics
+
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
