@@ -4,15 +4,11 @@ ms.date: 09/12/2019
 ---
 # Driver Package Isolation
 
-## Driver Package Isolation Overview
-
 Driver isolation describes a set of best practices that make drivers less prone to crashes and easier to update.
 
 Because an isolated driver package is sandboxed, multiple versions can run on a system simultaneously.
 
-The following diagram shows the four main principles of driver isolation:
-
-![diagram showing ](images/non-isolated-vs-isolated.png)
+The following table shows four legacy driver practices and how they map to principles of driver isolation:
 
 |Non-isolated Driver|Isolated Driver|
 |-|-|
@@ -21,21 +17,19 @@ The following diagram shows the four main principles of driver isolation:
 |Interacts with other drivers and their state via hardcoded paths|Driver interacts with other drivers via OS APIs or device interfaces|
 |Runtime file writes to any location|Driver writes files to OS provided locations|
 
-## Benefits of Driver Package Isolation
+Using driver isolation principles yields the following benefits:
 
-Driver packages that follow driver package isolation principles are more robust to servicing operations as they do not rely on implicit assumptions of global locations existing.  Instead, they use OS API's to get relative handles to locations.
+* By depending on relative handles instead of global locations, a driver is more easily updated.
+* Isolated driver packages are more resilient to changes in the OS. Installation to the driver store has fewer issues.
+* By using device interfaces to interact with another driver, an isolated driver package is more resilient to any changes in the other driver.
 
-Isolated driver packages have the added benefit of being more resilient to changes in the OS.  Additionally, because isolated driver packages leave all driver package files in the driver store, the likelihood of an issue arising during install of the driver is much lower.
-
-By leveraging device interfaces to interact with a driver from other components, isolated driver packages are more robust to changes in other driver packages as they do not take dependencies on components in other driver packages modifying state in a global location.  Instead, an appropriately versioned interaction between a driver and other components occurs using a device interface to communicate state between them.
-  
 ## Run From Driver Store
 
-All isolated driver packages leave their driver package files in the driver store. This means that they leverage [**DIRID 13**](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) in their INF to specify the location for driver package files on install.
+All isolated driver packages leave their driver package files in the driver store. This means that they specify [**DIRID 13**](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) in their INF to specify the location for driver package files on install.
 
 A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
 
-Alternatively, on Windows 10 Version 1803 and later, [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type could be used to get the directory path that the driver was loaded from.
+Alternatively, on Windows 10 version 1803 and later, call [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from.
 
 For a file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entry for the file in the INF must match the subdir listed in the [**DestinationDirs**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section) entry for the file in the INF.
 
@@ -43,38 +37,37 @@ Additionally, a [**CopyFiles**](https://docs.microsoft.com/windows-hardware/driv
 
 Since [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a **unique file name**.
 
-More information on how to find and load files from the driver store can be found in the [Universal Driver Scenarios](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios#dynamically-finding-and-loading-files-from-the-driver-store) page.
+For more information about finding and loading files from the driver store, see [Universal Driver Scenarios](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios#dynamically-finding-and-loading-files-from-the-driver-store).
 
-## Leveraging Device Interfaces
+## Using Device Interfaces
 
-When state needs to be shared between drivers, there should be a **single driver** that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
+When state needs to be shared between drivers, there should be a single driver that owns the shared state, and it should expose a way for other drivers to *read* and *modify* that state.
 
-Typically, this would be accomplished by the driver that owns the state exposing a **device interface** in a custom device interface class and enabling that interface when the driver is ready for other drivers to have access to the state. Drivers that want access to this state can **register for [device interface arrival notifications](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal)**. To access the state, the custom device interface class can define one of two contracts:
+Typically, the driver that owns the state exposes a device interface in a custom device interface class. When the driver is ready for other drivers to have access to the state, it enables the interface. Other drivers can register for [device interface arrival notifications](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal). To access the state, the custom device interface class can define one of two contracts:
 
-* An *IO contract* can be associated with that device interface class that provides a mechanism for accessing the state. Other drivers can use the enabled device interface to send IO that conforms to that contract to the owning driver
+* An *I/O contract* can be associated with that device interface class that provides a mechanism for accessing the state. Other drivers use the enabled device interface to send I/O requests that conform to the contract.
 * A *direct-call interface* that gets returned via a query interface. Other drivers could send [IRP_MN_QUERY_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) to retrieve function pointers from the driver to call.
 
-Alternatively, If the driver that owns the state is robust to allowing direct access to the state, the other drivers could access state by using the OS API’s for programmatic access to device interface state.
+Alternatively, if the driver that owns the state allows direct access to the state, other drivers could access state by using the OS APIs for programmatic access to device interface state.
 
-These interfaces or state (depending on sharing method used) need to be **properly versioned** so the driver owning the state can be serviced independently of other drivers that want to access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version in lockstep.  
+These interfaces or state (depending on sharing method used) need to be **properly versioned** so the driver owning the state can be serviced independently of other drivers that access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version.  
 
-For simplicity, it may be tempting to have an application or driver get a list of enabled interfaces at a single point in time, such as during startup of the component, through functions such as [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces
-). However, this method is not advised as it leads to problems.
+Because devices and drivers controlling interfaces come and go, drivers and applications should avoid calling [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces) at component start-up to get a list of enabled interfaces.
 
-Devices and the drivers controlling interfaces can start up asynchronously of other devices and UserMode applications and may have their device stack torn down, such as when the device is disabled or restarted, leading to device interfaces exposed from that device being disabled.
+Instead, the best practice is to **register for notifications** of device interface arrival or removal and then use an API to get the list of existing enabled interfaces on the machine.
 
-The driver may also want to disable interfaces at any point in time for its own internal reasons. Without a registration for notifications of device interface arrival and removal, a component that would like to send IO to that device and driver would miss any device interfaces that are enabled after the request for the list of interfaces and would not know when one of the interfaces is disabled (meaning IO can no longer be sent to that interface).
+For more info, see:
 
-The typical pattern is to **register for notifications** of device interface arrival/removal and then use an **API to get the list of existing enabled interfaces** on the machine.
-
-You can find more information on device interfaces on the [Microsoft Docs page](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces).   Information on how to register for device interface arrival and removal can be found [here](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  Additionally, information on registering for device interface change notifications can be found [here](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
+* [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces).  
+* [Registering for Notification of Device Interface Arrival and Device Removal](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  
+* [Registering for Device Interface Change Notification](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
 
 ## Provisioning and Accessing State
 
 > [!NOTE]
 > If your component is using device or device interface *properties* to store state, continue to use that method and the appropriate OS API's to store and access state. The following guidance is for *other* state that needs to be stored by a component.
 
-Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Hardcoded absolute registry paths and file paths **should not be used**.
+Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Do not use hardcoded absolute registry paths and file paths.
 
 ### Provisioning and Accessing Registry State
 
@@ -105,7 +98,7 @@ HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 #### Device Interface Registry State
 
-Isolated driver packages leverage device interfaces to share state with other drivers and components as opposed to hardcoding paths to global registry locations. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces:
+Isolated driver packages use device interfaces to share state with other drivers and components as opposed to hardcoding paths to global registry locations. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces:
 
 ![screen shot of the output window](images/device-interface-communication.png)
 
