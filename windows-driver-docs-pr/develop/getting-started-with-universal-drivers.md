@@ -8,10 +8,6 @@ ms.localizationpriority: medium
 
 # Getting Started with Universal Windows drivers
 
-> [!NOTE]
-> New 09/2019:
-> We are introducing a new concept called **["Driver Package Isolation"](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/driver-isolation)** for Universal drivers. 
-
 Universal Windows drivers enable developers to create a single driver package that runs across multiple device types, from embedded systems to tablets to desktop PCs.
 
 A Universal Windows driver package contains an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows 10](windows-10-editions-for-universal-drivers.md). They also install and run on other editions of Windows 10 that share a common set of interfaces.
@@ -50,7 +46,7 @@ When you write a universal driver package, there are four design principles to c
 
 * Universal API compliance **(U)**: Binaries in the universal driver package call only those APIs and DDIs that are included in UWP-based editions of Windows 10. These DDIs are marked as **Universal** on the corresponding documentation reference pages. INF files use only universal INF syntax.
 
-Additionally, Universal drivers also benefit from the principles of driver package isolation.  You'll find detailed guidance on how to follow these best practices in the ["Driver Package Isolation"](driver-isolation.md) page.
+Additionally, Universal drivers also benefit from the principles of driver package isolation.  You'll find detailed guidance on how to follow these best practices in the [Driver Package Isolation](driver-isolation.md) page.
 
 In the documentation, we use the **DCHU** acronym to refer to these principles. Later in this article, you'll find guidance to make your driver package DCHU-compliant.
 Also check out [Universal driver scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
