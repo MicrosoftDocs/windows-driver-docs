@@ -8,13 +8,13 @@ Driver isolation describes a set of best practices that make drivers less prone 
 
 Because an isolated driver package is sandboxed, multiple versions can run on a system simultaneously.
 
-The following table shows four legacy driver practices and how they map to principles of driver isolation:
+The following table shows legacy driver practices and how they map to recommended principles of driver isolation:
 
 |Non-isolated Driver|Isolated Driver|
 |-|-|
-|Hardcodes path to global registry locations|Uses HKR & OS APIs for relative location of registry and file state|
 |INF copies files to System32\drivers|Driver files are run from the driver store|
 |Interacts with other drivers and their state via hardcoded paths|Driver interacts with other drivers via OS APIs or device interfaces|
+|Hardcodes path to global registry locations|Uses HKR & OS APIs for relative location of registry and file state|
 |Runtime file writes to any location|Driver writes files to OS provided locations|
 
 Using driver isolation principles yields the following benefits:
@@ -54,7 +54,7 @@ These interfaces or state (depending on sharing method used) need to be **proper
 
 Because devices and drivers controlling interfaces come and go, drivers and applications should avoid calling [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces) at component start-up to get a list of enabled interfaces.
 
-Instead, the best practice is to **register for notifications** of device interface arrival or removal and then use an API to get the list of existing enabled interfaces on the machine.
+Instead, the best practice is to **register for notifications** of device interface arrival or removal and then call the appropriate function to get the list of existing enabled interfaces on the machine.
 
 For more info, see:
 
