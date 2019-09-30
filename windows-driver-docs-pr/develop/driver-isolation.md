@@ -11,9 +11,10 @@ The following table shows legacy driver practices that are no longer recommended
 |Non-isolated Driver|Isolated Driver|
 |-|-|
 |INF copies files to System32\drivers|Driver files are run from the driver store|
-|Interacts with other drivers and their state via hardcoded paths|Driver interacts with other drivers via OS APIs or device interfaces|
+|Interacts with other drivers and their state via hardcoded paths|Driver interacts with other drivers via system-supplied functions or device interfaces|
 |Hardcodes path to global registry locations|Uses HKR and system-supplied functions for relative location of registry and file state|
-|Runtime file writes to any location|Driver writes files to OS provided locations|
+|Runtime file writes to any location|Driver writes files to system-supplied locations|
+
 
 Using driver isolation principles yields the following benefits:
 
