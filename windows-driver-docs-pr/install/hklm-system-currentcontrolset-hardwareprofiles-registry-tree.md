@@ -14,10 +14,7 @@ ms.localizationpriority: medium
 
 The **HKLM\\SYSTEM\\CurrentControlSet\\HardwareProfiles** registry tree contains information about the hardware profiles on the system. Hardware profiles are deprecated and state should not be stored relative to a hardware profile.
 
- 
-
- 
-
+Instead, store information globally using **PLUGPLAY_REGKEY_DEVICE** and **PLUGPLAY_REGKEY_DRIVER** without also using **PLUGPLAY_REGKEY_CURRENT_HWPROFILE**. For more info, see [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey).
 
 
 
