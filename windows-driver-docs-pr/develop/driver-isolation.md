@@ -79,7 +79,7 @@ This section contains the following subsections:
 
 ### PnP Device Registry State
 
-Isolated driver packages and user mode components typically use two locations to store device state in the registry. These are the **"hardware key"** ("device key") for the device and the **"software key"** ("driver key") for the device. To retrieve a handle to these registry locations, use the following functions:
+Isolated driver packages and user mode components typically use two locations to store device state in the registry. These are the **"hardware key"** ("device key") for the device and the **"software key"** ("driver key") for the device. To retrieve a handle to these registry locations, use these functions:
 
 * WDM:
   * [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
@@ -102,11 +102,11 @@ HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 ### Device Interface Registry State
 
-Isolated driver packages use device interfaces to share state with other drivers and components as opposed to hardcoding paths to global registry locations. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces:
+Isolated driver packages use device interfaces to share state with other drivers and components instead of hardcoding paths to global registry locations. For example:
 
 ![screen shot of the output window](images/device-interface-communication.png)
 
-In order to read and write device interface registry state, use the following API's:
+To read and write device interface registry state, use these functions:
 
 * WDM:
   * [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey)
@@ -117,7 +117,7 @@ In order to read and write device interface registry state, use the following AP
 
 ### Service Registry State
 
-Registry state that is provisioned by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) section referenced by the service install section in the INF.  Below is an example:
+Registry values that are set by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service by providing an HKR line in an [AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) section, and then referencing that section in the service install section in the INF.  For example:
 
 ```
 [ExampleDDInstall.Services]
@@ -135,7 +135,7 @@ AddReg=Example_Service_Inst.AddReg
 HKR, Parameters, ExampleValue, 0x00010001, 1
 ```
 
-Use the appropriate API's to access the location of this state:
+To access the location of this state, use these functions:
 
 * WDM 
   * [**IoOpenDriverRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
