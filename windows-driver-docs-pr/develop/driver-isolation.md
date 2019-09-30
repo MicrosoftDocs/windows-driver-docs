@@ -4,21 +4,20 @@ ms.date: 09/12/2019
 ---
 # Driver Package Isolation
 
-Driver isolation describes a set of best practices that make drivers less prone to crashes and easier to update.
+Driver isolation describes a set of best practices that make drivers less prone to crashes and easier to update. These are general recommendations that any driver can follow.
 
-Because an isolated driver package is sandboxed, multiple versions can run on a system simultaneously.
-
-The following table shows legacy driver practices and how they map to recommended principles of driver isolation:
+The following table shows legacy driver practices that are no longer recommended in the left column, and the corresponding recommended principle of driver isolation in the right column.
 
 |Non-isolated Driver|Isolated Driver|
 |-|-|
 |INF copies files to System32\drivers|Driver files are run from the driver store|
 |Interacts with other drivers and their state via hardcoded paths|Driver interacts with other drivers via OS APIs or device interfaces|
-|Hardcodes path to global registry locations|Uses HKR & OS APIs for relative location of registry and file state|
+|Hardcodes path to global registry locations|Uses HKR and system-supplied functions for relative location of registry and file state|
 |Runtime file writes to any location|Driver writes files to OS provided locations|
 
 Using driver isolation principles yields the following benefits:
 
+* Because an isolated driver package is sandboxed, multiple versions of the same driver can run on a system simultaneously.
 * By depending on relative handles instead of global locations, a driver is more easily updated.
 * Isolated driver packages are more resilient to changes in the OS. Installation to the driver store has fewer issues.
 * By using device interfaces to interact with another driver, an isolated driver package is more resilient to any changes in the other driver.
