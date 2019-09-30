@@ -86,7 +86,7 @@ Isolated driver packages and user mode components typically use two locations to
 * WDF:
   * [**WdfDeviceOpenRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceopenregistrykey)
   * [**WdfFdoInitOpenRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdffdo/nf-wdffdo-wdffdoinitopenregistrykey)
-* Other UserMode Code:
+* Other user mode Code:
   * [**CM_Open_DevNode_Key**](https://docs.microsoft.com/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key)
 * Provision Values via INF:
   * [**INF AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) section or [DDInstall.HW](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section) section
@@ -110,7 +110,7 @@ To read and write device interface registry state, use these functions:
 
 * WDM:
   * [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey)
-* Other UserMode Code:
+* Other user mode Code:
   * [**CM_Open_Device_Interface_Key**](https://docs.microsoft.com/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keya?redirectedfrom=MSDN)
 * Provision Values via INF:
   * [INF AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive) section.
@@ -179,15 +179,16 @@ These locations offer components a location to write temporary state or state th
 
 ### DriverData
 
-The “DriverData” directory is available in Windows 10 Version 1803 and later. This directory is accessible by both UserMode and KernelMode components through different mechanisms.
-KernelMode drivers should access the “DriverData” directory via an operating system provided symbolic link called “\DriverData”.
-UserMode programs should access the “DriverData” directory via the environment variable "%DriverData%".
+The `DriverData` directory is available in Windows 10 Version 1803 and later. This directory is accessible by both user mode and kernel mode components through different mechanisms.
+
+Kernel mode drivers should access the `DriverData` directory via an operating system provided symbolic link called `\DriverData`.
+user mode programs should access the `DriverData` directory via the environment variable `%DriverData%`.
 
 ### ProgramData
 
-The %ProgramData% UserMode environment variable is available for UserMode components to use when storing data. 
+The `%ProgramData%` user mode environment variable is available for user mode components to use when storing data. 
 
-Files should not be written in the root of the DriverData nor the ProgramData directories. A sub-directory must be created with your company name and then files and further sub-directories should be written within that directory.
+Avoid writing files in the root of the `DriverData` or `ProgramData` directories. Instead, create a subdirectory with your company name and then write files and further subdirectories within that directory.
 
-For example, for a company name of Contoso, a KernelMode driver could write a custom log to “\DriverData\Contoso\Logs” and a UserMode application could collect or analyze the log files from “%DriverData%\Contoso\Logs”.
+For example, for a company name of Contoso, a kernel mode driver could write a custom log to `\DriverData\Contoso\Logs` and a user mode application could collect or analyze the log files from `%DriverData%\Contoso\Logs`.
 
