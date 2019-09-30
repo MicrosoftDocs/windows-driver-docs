@@ -155,11 +155,9 @@ If files related to a device need to be written, those files should be stored re
 
 ### Service File State
 
-There is a need for services (both Win32 services and driver services) to read, and sometimes write, state about themselves. This is state that is owned by the service and accessed only by the service.
+Both Win32 and driver services read and write state about themselves.
 
-If that internal state of the service needs to be shared with other components, it should be done through a controlled, versioned, interface and not through direct registry or file reads of the internal service state.
-
-The OS provides API’s for services to get storage locations for their internal state, but those storage locations are intended to be accessed only by the service itself. 
+To access its own internal state values, a service uses the following functions: 
 
 * WDM
   * [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory)
@@ -170,6 +168,8 @@ The OS provides API’s for services to get storage locations for their internal
     * [**WdfDriverRetrieveDriverDataDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
 * Win32 Services
   * GetServiceDirectory
+
+To share internal state of the service with other components, use a controlled, versioned interface instead of direct registry or file reads.
 
 ## DriverData and ProgramData
 
