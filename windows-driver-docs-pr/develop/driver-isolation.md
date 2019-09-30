@@ -62,20 +62,24 @@ For more info, see:
 * [Registering for Notification of Device Interface Arrival and Device Removal](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal).  
 * [Registering for Device Interface Change Notification](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
 
-## Provisioning and Accessing State
+## Reading and Writing State
 
 > [!NOTE]
 > If your component is using device or device interface *properties* to store state, continue to use that method and the appropriate OS API's to store and access state. The following guidance is for *other* state that needs to be stored by a component.
 
-Access to various state should be done using OS API's that provide a caller with the location of the state and then the state is read/written relative to that location. Do not use hardcoded absolute registry paths and file paths.
+Access to various state should be done by calling functions that provide a caller with the location of the state and then the state is read/written relative to that location. Do not use hardcoded absolute registry paths and file paths.
 
-### Provisioning and Accessing Registry State
+This section contains the following subsections:
 
-#### PnP Device Registry State
+* [PnP Device Registry State](pnp-device-registry-state)
+* [Device Interface Registry State](device-interface-registry-state)
+* [Service Registry State](service-registry-state)
+* [Device File State](device-file-state)
+* [Service File State](service-file-state)
 
-There is a need for isolated driver packages and user mode components to read, and sometimes write, device state.  There are already two locations that can be used to store device state in the registry. They are called the **"hardware key"** (aka "device key") for the device and the **"software key"** (aka "driver key") for the device. These registry locations are already accessible via API's that give a caller a handle to the location.
+### PnP Device Registry State
 
-The following API's should be used to ensure your driver is isolated:
+Isolated driver packages and user mode components typically use two locations to store device state in the registry. These are the **"hardware key"** ("device key") for the device and the **"software key"** ("driver key") for the device. To retrieve a handle to these registry locations, use the following functions:
 
 * WDM:
   * [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
@@ -87,7 +91,7 @@ The following API's should be used to ensure your driver is isolated:
 * Provision Values via INF:
   * [**INF AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) section or [DDInstall.HW](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section) section
 
-Below is an example of an INF provisioning device registry state through its INF:
+Below is an example of an INF writing device registry state in its INF:
 
 ```
 [ExampleDDInstall.HW]
@@ -96,7 +100,7 @@ AddReg = Example_DDInstall.AddReg
 [Example_DDInstall.AddReg] 
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
-#### Device Interface Registry State
+### Device Interface Registry State
 
 Isolated driver packages use device interfaces to share state with other drivers and components as opposed to hardcoding paths to global registry locations. Below is an example of how isolated driver packages should think about communicating with other drivers via device interfaces:
 
@@ -111,7 +115,7 @@ In order to read and write device interface registry state, use the following AP
 * Provision Values via INF:
   * [INF AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive) section.
 
-#### Service Registry State
+### Service Registry State
 
 Registry state that is provisioned by the INF for driver and Win32 services should be stored under the "Parameters" subkey of the service using an HKR line in an [AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) section referenced by the service install section in the INF.  Below is an example:
 
@@ -140,9 +144,7 @@ Use the appropriate API's to access the location of this state:
 * Win32 Services
   * GetServiceRegistryStateKey
 
-### Provisioning and Accessing File State
-
-#### Device File State
+### Device File State
 
 If files related to a device need to be written, those files should be stored relative to a handle or file path provided via OS API’s. Configuration files specific to that device is one example of what types of files to be stored here.
 
@@ -151,7 +153,7 @@ If files related to a device need to be written, those files should be stored re
 * WDF
   * [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
-#### Service File State
+### Service File State
 
 There is a need for services (both Win32 services and driver services) to read, and sometimes write, state about themselves. This is state that is owned by the service and accessed only by the service.
 
