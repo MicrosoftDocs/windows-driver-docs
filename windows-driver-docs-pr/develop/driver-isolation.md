@@ -79,7 +79,7 @@ This section contains the following subsections:
 
 ### PnP Device Registry State
 
-Isolated driver packages and user mode components typically use two locations to store device state in the registry. These are the **"hardware key"** ("device key") for the device and the **"software key"** ("driver key") for the device. To retrieve a handle to these registry locations, use these functions:
+Isolated driver packages and user mode components typically use two locations to store device state in the registry. These are the **"hardware key"** ("device key") for the device and the **"software key"** ("driver key") for the device. To retrieve a handle to these registry locations, use one of the following options, based on the platform you are using:
 
 * WDM:
   * [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
@@ -102,11 +102,9 @@ HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 ### Device Interface Registry State
 
-Isolated driver packages use device interfaces to share state with other drivers and components instead of hardcoding paths to global registry locations. For example:
+Use device interfaces to share state with other drivers and components. Do not hardcode paths to global registry locations.
 
-![screen shot of the output window](images/device-interface-communication.png)
-
-To read and write device interface registry state, use these functions:
+To read and write device interface registry state, use one of the following options, based on the platform you are using:
 
 * WDM:
   * [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey)
@@ -135,12 +133,12 @@ AddReg=Example_Service_Inst.AddReg
 HKR, Parameters, ExampleValue, 0x00010001, 1
 ```
 
-To access the location of this state, use these functions:
+To access the location of this state, use one of these functions, based on your platform:
 
 * WDM 
   * [**IoOpenDriverRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
 * WDF
-  * [**WdfDriverOpenParamatersRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey)
+  * [**WdfDriverOpenParametersRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey)
 * Win32 Services
   * GetServiceRegistryStateKey
 
@@ -157,7 +155,7 @@ If files related to a device need to be written, those files should be stored re
 
 Both Win32 and driver services read and write state about themselves.
 
-To access its own internal state values, a service uses the following functions: 
+To access its own internal state values, a service uses one of the following options: 
 
 * WDM
   * [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory)
