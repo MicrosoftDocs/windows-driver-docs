@@ -6,12 +6,12 @@ ms.date: 09/12/2019
 
 Driver isolation describes a set of best practices that make drivers less prone to crashes and easier to update. These are general recommendations that any driver can follow.
 
-The following table shows legacy driver practices that are no longer recommended in the left column, and the corresponding recommended principle of driver isolation in the right column.
+The following table shows legacy driver practices that are no longer recommended in the left column along with the recommended best practice in the right column.
 
 |Non-isolated Driver|Isolated Driver|
 |-|-|
 |INF copies files to System32\drivers|Driver files are run from the driver store|
-|Interacts with other drivers and their state via hardcoded paths|Driver interacts with other drivers via system-supplied functions or device interfaces|
+|Interacts with other drivers using hardcoded paths|Interacts with other drivers using system-supplied functions or device interfaces|
 |Hardcodes path to global registry locations|Uses HKR and system-supplied functions for relative location of registry and file state|
 |Runtime file writes to any location|Driver writes files to system-supplied locations|
 
@@ -35,7 +35,7 @@ For a file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**
 
 Additionally, a [**CopyFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive cannot be used to rename a file. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the DriverStore directory.
 
-Since [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a **unique file name**.
+Since [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a unique file name.
 
 For more information about finding and loading files from the driver store, see [Universal Driver Scenarios](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios#dynamically-finding-and-loading-files-from-the-driver-store).
 
@@ -50,13 +50,13 @@ Typically, the driver that owns the state exposes a device interface in a custom
 
 Alternatively, if the driver that owns the state allows direct access to the state, other drivers could access state by using system-supplied functions for programmatic access to device interface state.
 
-These interfaces or state (depending on sharing method used) need to be **properly versioned** so the driver owning the state can be serviced independently of other drivers that access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version.  
+These interfaces or state (depending on sharing method used) need to be properly versioned so the driver owning the state can be serviced independently of other drivers that access that state. Driver vendors cannot rely on both drivers being serviced at the same time and staying at the same version.  
 
 Because devices and drivers controlling interfaces come and go, drivers and applications should avoid calling [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces) at component start-up to get a list of enabled interfaces.
 
-Instead, the best practice is to **register for notifications** of device interface arrival or removal and then call the appropriate function to get the list of existing enabled interfaces on the machine.
+Instead, the best practice is to register for notifications of device interface arrival or removal and then call the appropriate function to get the list of existing enabled interfaces on the machine.
 
-For more info, see:
+For more information about device interfaces, see:
 
 * [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces)
 * [Registering for Notification of Device Interface Arrival and Device Removal](https://docs.microsoft.com/windows-hardware/drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal)
@@ -79,7 +79,7 @@ This section contains the following subsections:
 
 ### PnP Device Registry State
 
-Isolated driver packages and user mode components typically use two locations to store device state in the registry. These are the **"hardware key"** ("device key") for the device and the **"software key"** ("driver key") for the device. To retrieve a handle to these registry locations, use one of the following options, based on the platform you are using:
+Isolated driver packages and user mode components typically use two locations to store device state in the registry. These are the *hardware key* ("device key") for the device and the *software key* ("driver key") for the device. To retrieve a handle to these registry locations, use one of the following options, based on the platform you are using:
 
 * WDM:
   * [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey)
@@ -171,7 +171,7 @@ To share internal state of the service with other components, use a controlled, 
 
 ## DriverData and ProgramData
 
-Files that are to be used as part of intermediate operations that can be shared with other components should be written to either **DriverData** or **ProgramData** locations.
+Files that are to be used as part of intermediate operations that can be shared with other components should be written to either *DriverData* or *ProgramData* locations.
 
 These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
 
