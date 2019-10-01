@@ -2,7 +2,7 @@
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
 ms.assetid: 48a7e96b-58e8-4a49-b673-14036d4108d5
-ms.date: 09/23/2019
+ms.date: 09/26/2019
 ms.localizationpriority: medium
 ---
 
@@ -88,7 +88,7 @@ AEC can be performed by the DSP at the time the burst audio is captured, or it c
 
 **Validation**
 
-Validate HW support for KSPROPSETID_SoundDetector2 properties with [Voice Activation Manager 2 tests](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/5119a80f-8aae-49bb-aa59-8eaa7e7b1fad).
+Validate HW support for [KSPROPSETID_SoundDetector2](kspropsetid-sounddetector2.md) properties with [Voice Activation Manager 2 tests](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/5119a80f-8aae-49bb-aa59-8eaa7e7b1fad).
 
 ## <span id="sample_code_overview"></span>Sample Code Overview
 
@@ -114,23 +114,33 @@ Audio endpoint graph building occurs normally. The graph is prepared to handle f
 
 The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword spotter (KWS) pin. This pin is used to stream audio from the keyword spotter.
 
-The property is: **KSPROPSETID_SoundDetector2**
+The property is: [**KSPROPSETID_SoundDetector2**](kspropsetid-sounddetector2.md)
 
-All KSPROPSETID_SoundDetector2 properties are called with a KSSOUNDDETECTORPROPERTY data structure. This data structure contains a KSPROPERTY and the event id for the keyword to be armed, reset, detected, etc.
+All [**KSPROPSETID_SoundDetector2**](kspropsetid-sounddetector2.md) properties are called with a [KSSOUNDDETECTORPROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-kssounddetectorproperty)  data structure. This data structure contains a KSPROPERTY and the event id for the keyword to be armed, reset, detected, etc.
 
 - Supported keyword types - [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/ksproperty-sounddetector). This property is set by the operating system to configure the keywords to be detected.
 -   List of keyword patterns GUIDs - [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/ksproperty-sounddetector). This property is used to get a list of GUIDs that identify the types of supported patterns.
 - Armed - [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/ksproperty-sounddetector). This read/write property is a simply Boolean status indicating whether the detector is armed. The OS sets this to engage the keyword detector. The OS can clear this to disengage. The driver automatically clears this when keyword patterns are set and also after a keyword is detected. (The OS must rearm.)
-- Match result - **KSPROPERTY\_SOUNDDETECTOR\_RESET** is used to reset the sound detector at startup time.
+- Match result - [**KSPROPERTY\_SOUNDDETECTOR\_RESET**](ksproperty-sounddetector-reset.md) is used to reset the sound detector at startup time.
 
 At keyword detection time, a PNP notification containing KSNOTIFICATIONID_SoundDetector is sent. NOTE: this is not a KSEvent, but rather a PNP event which is sent, with a payload, via IoReportTargetDeviceChangeAsynchronous.
+
+KSNOTIFICATIONID_SoundDetector is defined in ksmedia.h as shown here.
+
+```
+// The payload of this notification is a SOUNDDETECTOR_DETECTIONHEADER
+#define STATIC_KSNOTIFICATIONID_SoundDetector\
+    0x6389d844, 0xbb32, 0x4c4c, 0xa8, 0x2, 0xf4, 0xb4, 0xb7, 0x7a, 0xfe, 0xad
+DEFINE_GUIDSTRUCT("6389D844-BB32-4C4C-A802-F4B4B77AFEAD", KSNOTIFICATIONID_SoundDetector);
+#define KSNOTIFICATIONID_SoundDetector DEFINE_GUIDNAMED(KSNOTIFICATIONID_SoundDetector)
+```
 
 **Sequence of Operation**
 
 *System Startup*
 
-1. The OS sends a KSPROPERTY_SOUNDDETECTOR_RESET to clear any previous detector state, resetting all detectors to disarmed and clearing previous patterns set.
-2. The OS queries KSPROPERTY_SOUNDDETECTOR_PATTERNS to retrieve the clsid for the event detector OEM adapter.
+1. The OS sends a [**KSPROPERTY\_SOUNDDETECTOR\_RESET**](ksproperty-sounddetector-reset.md) to clear any previous detector state, resetting all detectors to disarmed and clearing previous patterns set.
+2. The OS queries [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://docs.microsoft.com/en-us/windows-hardware/drivers/audio/ksproperty-sounddetector) to retrieve the clsid for the event detector OEM adapter.
 3. The OS uses the event detector oem adapter to retrieve the list of supported keywords and languages.
 4. The OS registers for custom PNP notifications sent by the driver
 5. The OS sets the required keyword pattern(s).
