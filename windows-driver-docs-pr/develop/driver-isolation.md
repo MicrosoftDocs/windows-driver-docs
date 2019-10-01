@@ -127,7 +127,7 @@ To access the location of this state, use one of these functions, based on your 
 
 * [**IoOpenDriverRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey) (WDM)
 * [**WdfDriverOpenParametersRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) (WDF)
-* **GetServiceRegistryStateKey** (Win32 Services)
+* **GetServiceRegistryStateKey** (Win32 services)
 
 ### Device File State
 
@@ -145,7 +145,7 @@ To access its own internal state values, a service uses one of the following opt
 * [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (WDM)
 * [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdriverdirectory) (KMDF)
 * [**WdfDriverRetrieveDriverDataDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring) (UMDF)
-* **GetServiceDirectory** (Win32 Services)
+* **GetServiceDirectory** (Win32 services)
 
 To share internal state of the service with other components, use a controlled, versioned interface instead of direct registry or file reads.
 
