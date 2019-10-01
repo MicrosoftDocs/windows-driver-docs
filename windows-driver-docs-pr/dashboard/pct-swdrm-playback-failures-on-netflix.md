@@ -34,4 +34,4 @@ Software Digital Rights Management (SWDRM) is a feature that enable the content 
 
 ### Final calculation
 
-*Percent of SWDRM Netflix playback errors = Netflix HWDRM playback failures / Total Netflix videos*
+*Percent of SWDRM Netflix playback errors = Netflix SWDRM playback failures / Total Netflix videos*

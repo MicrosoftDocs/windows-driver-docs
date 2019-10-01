@@ -115,7 +115,7 @@ Here are the possible valid values for the native C++ **TestResults::Result** en
 
 
 
-**Here is the list of native C++ LogContoller methods available:**
+**Here is the list of native C++ LogController methods available:**
 
 | Native C++ LogController Methods                                                                       | Functionality                                                                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

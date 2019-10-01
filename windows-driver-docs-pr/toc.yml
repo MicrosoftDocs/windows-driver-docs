@@ -1,5 +1,5 @@
 - name: "Getting Started with the Windows Driver Kit"
-  href: index.md
+  href: index.yml
 - name: "What's new in driver development"
   href: what-s-new-in-driver-development.md
 - name: "Download the Windows Driver Kit (WDK)"
