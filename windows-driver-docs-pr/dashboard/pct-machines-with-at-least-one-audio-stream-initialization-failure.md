@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-If a device is unable to initialize an audio stream, the user cannot access the application’s audio experience. This measure calculates the percent of machines that had an audio device fail to initialize a stream.
+See the "Audio stream initialization" section at [Audio measures](audio-measures.md)
 
 ## Measure attributes
 

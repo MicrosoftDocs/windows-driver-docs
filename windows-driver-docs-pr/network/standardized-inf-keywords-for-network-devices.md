@@ -46,7 +46,7 @@ This section specifies the INF keywords that are exposed in the user interface. 
 
 Within an INF file, definitions for these keywords are placed with the other definitions for the advanced properties page. For more information about advanced properties, see [Specifying Configuration Parameters for the Advanced Properties Page](specifying-configuration-parameters-for-the-advanced-properties-page.md).
 
-All standardized keyword names start with an asterisk (**\\***). This naming convention enables you to easily distinguish standardized names from non-standard names.
+All standardized keyword names start with an asterisk (**\***). This naming convention enables you to easily distinguish standardized names from non-standard names.
 
 There are three types of standardized keyword data that are exposed in the user interface:
 

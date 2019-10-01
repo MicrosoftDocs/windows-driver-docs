@@ -5,7 +5,7 @@ ms.assetid: e9cd2bc7-99c1-4aca-91b0-9faefa4a856d
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
-ms.date: 09/10/2017
+ms.date: 09/10/2019
 ms.localizationpriority: medium
 ---
 
@@ -19,17 +19,29 @@ In the following table, the XR part of a format name can be considered a new sha
 
 The following table shows resources with particular attributes that use the extended formats (DXGI_FORMAT_*) if the hardware supports these extended formats for the resource with those attributes or if extended formats for those resources are optional. See [DXGI_FORMAT](https://docs.microsoft.com/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) for a description of each format.
 
+Column key for the below table:
+
+- **A**: DXGI_FORMAT_B8G8R8A8_TYPELESS
+- **B**: DXGI_FORMAT_B8G8R8A8_UNORM (existing)
+- **C**: DXGI_FORMAT_B8G8R8A8_UNORM_SRGB
+- **D**: DXGI_FORMAT_B8G8R8X8_TYPELESS
+- **E**: DXGI_FORMAT_B8G8R8X8_UNORM (existing)
+- **F**: DXGI_FORMAT_B8G8R8X8_UNORM_SRGB
+- **G**: DXGI_FORMAT_R10G10B10A2_TYPELESS
+- **H**: DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
+
 <table>
 <head>
     <tr>
         <th>Resource Attribute</th>
-        <th>B8G8R8A8_TYPELESS</th>
-        <th>B8G8R8A8_UNORM (existing)</th>
-        <th>B8G8R8A8_UNORM_SRGB</th>
-        <th>B8G8R8X8_TYPELESS</th>
-        <th>B8G8R8X8_UNORM (existing)</th>
-        <th>B8G8R8X8_UNORM_SRGB</th>
-        <th>R10G10B10_XR_BIAS_A2_UNORM</th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>F</th>
+        <th>G</th>
+        <th>H</th>
     </tr>
 </head>
 <body>

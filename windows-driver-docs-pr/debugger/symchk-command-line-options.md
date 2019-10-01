@@ -59,10 +59,10 @@ Displays verbose information. This includes the file name of every program file 
 Enables quiet mode. All output will be suppressed (unless the **/ot** option is included).
 
 <span id="_______FileNames______"></span><span id="_______filenames______"></span><span id="_______FILENAMES______"></span> *FileNames*   
-Specifies the program files whose symbols are to be checked. Absolute paths, relative paths, and UNC paths are permitted. An asterisk (**\\**<em>) wildcard is permitted. If *FileNames</em> ends in a slash, it is taken to be a directory name, and all files within that directory are checked. If *FileNames* contains spaces, it must be enclosed in quotation marks.
+Specifies the program files whose symbols are to be checked. Absolute paths, relative paths, and UNC paths are permitted. An asterisk (**\***) wildcard is permitted. If *FileNames</em> ends in a slash, it is taken to be a directory name, and all files within that directory are checked. If *FileNames* contains spaces, it must be enclosed in quotation marks.
 
 <span id="________ie_______ExeFile______"></span><span id="________ie_______exefile______"></span><span id="________IE_______EXEFILE______"></span> **/ie** *ExeFile*   
-Specifies the name of a program that is currently executing. The symbols for this program will be checked. *ExeFile* must include the name of the file and file extension (usually .exe), but no path information. If there are two different executables with the same name, this option is not recommended. *ExeFile* can specify any program, including a kernel-mode driver. If *ExeFile* is a single asterisk ( **\\*** ), SymChk will check the symbols for all running processes, including drivers.
+Specifies the name of a program that is currently executing. The symbols for this program will be checked. *ExeFile* must include the name of the file and file extension (usually .exe), but no path information. If there are two different executables with the same name, this option is not recommended. *ExeFile* can specify any program, including a kernel-mode driver. If *ExeFile* is a single asterisk (**\***), SymChk will check the symbols for all running processes, including drivers.
 
 <span id="________id_______DumpFile______"></span><span id="________id_______dumpfile______"></span><span id="________ID_______DUMPFILE______"></span> **/id** *DumpFile*   
 Specifies a memory dump file. The symbols for this dump file will be checked.
@@ -75,10 +75,10 @@ Specifies the process ID of a program that is currently executing. The symbols f
 
 - If *ProcessID* is zero ( **0** ), SymChk will check the symbols for all running drivers.
 
-- If *ProcessID* is a single asterisk ( **\\*** ), SymChk will check the symbols for all running processes, including drivers.
+- If *ProcessID* is a single asterisk (**\***), SymChk will check the symbols for all running processes, including drivers.
 
 <span id="________it_______TextFileList______"></span><span id="________it_______textfilelist______"></span><span id="________IT_______TEXTFILELIST______"></span> **/it** *TextFileList*   
-Specifies a text file that contains a list of program files. The symbols for all these programs will be checked. *TextFileList* must specify exactly one file (by relative, absolute, or UNC path, but with no wildcards); if it contains spaces it should be enclosed in quotation marks. Within this file, each line indicates a program file (by relative, absolute, or UNC paths), and an asterisk wildcard (**\\***) is permitted. However, any line using this wildcard must use a relative path.
+Specifies a text file that contains a list of program files. The symbols for all these programs will be checked. *TextFileList* must specify exactly one file (by relative, absolute, or UNC path, but with no wildcards); if it contains spaces it should be enclosed in quotation marks. Within this file, each line indicates a program file (by relative, absolute, or UNC paths), and an asterisk wildcard (**\***) is permitted. However, any line using this wildcard must use a relative path.
 
 If a line in this file contains spaces, it should be enclosed in quotation marks. A semicolon within this file is a comment character -- everything between a semicolon and the end of the line will be ignored.
 
