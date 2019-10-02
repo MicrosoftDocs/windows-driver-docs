@@ -5,7 +5,7 @@ ms.date: 10/01/2019
 
 # Driver Package Isolation
 
-Driver isolation describes a set of best practices that make drivers more resilient to external changes, easier to update, and more straightforward to install.
+Driver package isolation describes a set of best practices that make drivers more resilient to external changes, easier to update, and more straightforward to install.
 
 The following table shows legacy driver practices that are no longer recommended in the left column along with the recommended best practice in the right column.
 
