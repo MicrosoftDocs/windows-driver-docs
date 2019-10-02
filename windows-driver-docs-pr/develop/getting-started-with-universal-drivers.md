@@ -1,4 +1,4 @@
----
+﻿---
 ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting started with Universal Windows drivers
 description: With Universal Windows drivers, you can create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
@@ -12,6 +12,7 @@ Universal Windows drivers enable developers to create a single driver package th
 
 A Universal Windows driver package contains an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows 10](windows-10-editions-for-universal-drivers.md). They also install and run on other editions of Windows 10 that share a common set of interfaces.
 
+
 The driver binary can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md), or the Windows Driver Model (WDM).
 
 A universal driver consists of the following parts:
@@ -23,9 +24,13 @@ The base driver contains all the core functionality and shared code. The optiona
 
 Typically, a device manufacturer, or independent hardware vendor (IHV), writes the base driver. Then, a system builder, or original equipment manufacturer (OEM), provides any optional component packages.
 
+An IHV follows the design best practices of *driver package isolation* to ensure the driver is reliable and robust to servicing operations.
+
 After the IHV has certified the base driver, it can be deployed on all OEM systems. Because a base driver can be used across all systems that share a hardware part, Microsoft can test the base driver broadly by using Windows Insider *driver flighting* instead of limiting distribution to specific machines.
 
-The OEM validates only the optional customizations that it provides for the OEM device.
+After IHV has certified the base driver package, it can be deployed on all OEM systems. Because a base driver package can be used across all systems that share a hardware part, Microsoft can test the base driver package broadly via Windows Insider flighting, rather than limiting distribution to specific machines. 
+
+The OEM validates only the optional customizations that it provides for the OEM system.
 
 Universal drivers are distributed through Windows Update, and hardware support apps are distributed through Microsoft Store.
 
@@ -40,6 +45,8 @@ When you write a universal driver package, there are four design principles to c
 * Hardware Support App **(H)**: Any user interface (UI) component associated with a universal driver must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM device.  An HSA is an optional device-specific app that's paired with a driver. The application can be a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) app.  You must distribute and update an HSA through the Microsoft Store.  For details, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for app developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
 
 * Universal API compliance **(U)**: Binaries in the universal driver package call only those APIs and DDIs that are included in UWP-based editions of Windows 10. These DDIs are marked as **Universal** on the corresponding documentation reference pages. INF files use only universal INF syntax.
+
+Additionally, Universal drivers also benefit from the principles of driver package isolation.  You'll find detailed guidance on how to follow these best practices in the [Driver Package Isolation](driver-isolation.md) page.
 
 In the documentation, we use the **DCHU** acronym to refer to these principles. Later in this article, you'll find guidance to make your driver package DCHU-compliant.
 Also check out [Universal driver scenarios](universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies the DCHU design principles.
@@ -60,6 +67,12 @@ When you write a universal driver package, follow these steps:
     1. Open the driver project properties.
     2. Select **Driver Settings**.
     3. Use the drop-down menu to set **Target Platform** to `Universal`.
+
+* Driver Package Isolation:
+
+  * To maximize reliability and serviceability of your Universal driver, ensure your driver follows the principles of **driver package isolation**
+  * Driver package isolation is a new concept that allows your driver to be self-contained and robust to OS changes
+  * See more details on the [Driver Package Isolation](driver-isolation.md) page
     
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF. You can update an extension INF independently from the base driver package to make it more robust and serviceable. For more information, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
 *  If you want to provide an application that works with your device, include a UWP app. For more information, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can preload such an app by using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows). Or, users can manually download the app from the Microsoft Store.
