@@ -3,7 +3,7 @@ title: User-Mode Dump Files
 description: User-Mode Dump Files
 ms.assetid: bef29d75-6620-4219-b402-36fbddc4fe1f
 keywords: ["dump file, user-mode"]
-ms.date: 08/01/2018
+ms.date: 10/04/2019
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +35,7 @@ The difference between these dump files is one of size. Minidumps are usually mo
 
 A *full user-mode dump* is the basic user-mode dump file.
 
-This dump file includes the entire memory space of a process, the program's executable image itself, the handle table, and other information that will be useful to the debugger.
+This dump file includes the entire memory space of a process, the program's executable image itself, the handle table, and other information that will be useful to the debugger in reconstructing the memory that was in use when the dump occurred.
 
 It is possible to "shrink" a full user-mode dump file into a minidump. Simply load the dump file into the debugger and then use the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to save a new dump file in minidump format.
 
