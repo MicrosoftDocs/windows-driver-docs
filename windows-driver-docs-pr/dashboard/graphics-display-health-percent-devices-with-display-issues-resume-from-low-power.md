@@ -3,8 +3,6 @@ title: Percent of machines with display issues when resume from low power state
 description: The measure aggregates telemetry from a 7-day sliding window into a percent of machines that encountered display issues when resuming from a low power state
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 

@@ -3,8 +3,6 @@ title: Percent of machines with at least one audio hang
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one audio hang in AudioSrv.dll or AudioDG.exe
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-This measure monitors two services – *Windows Audio Service (AudioSrv.dll)* and the *Audio Device Graph (AudioDG.exe)* – to examine if a hang occurred in either service. An audio hang causes the audio platform to be unresponsive to user-applications.
+See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 
 ## Measure attributes
 

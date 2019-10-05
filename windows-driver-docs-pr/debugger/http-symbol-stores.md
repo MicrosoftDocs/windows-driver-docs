@@ -89,7 +89,7 @@ The MIME Type for the downloaded content needs to be set to application/octet-st
 
 4. Click **New**.
 
-5. For **Extension**, type **\\***.
+5. For **Extension**, type **\***.
 
 6. For **MIME type**, type **application/octet-stream**.
 

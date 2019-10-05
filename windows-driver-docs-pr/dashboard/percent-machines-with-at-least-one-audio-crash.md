@@ -3,8 +3,6 @@ title: Percent of machines with at least one audio crash
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one audio crash in AudioSrv.dll or AudioDG.exe
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
@@ -12,25 +10,24 @@ ms.localizationpriority: medium
 
 ## Description
 
-This measure monitors two services - *Windows Audio Service (AudioSrv.dll)* and the *Audio Device Graph (AudioDG.exe)* - to examine if a crash occurred in either service. If either service crashes, the user’s machine can’t play any audio and the user must wait till the service recovers to reinitialize any audio streams.
+See the "Audio user-mode reliability" section at [Audio measures](audio-measures.md)
 
 ## Measure attributes
 
 |Attribute|Value|
 |----|----|
 |**Audience**|Standard|
-|**Time period**|7 days|
+|**Time period**|Daily, averaged over 7 days|
 |**Measurement criteria**|Percent of machines|
-|**Minimum population**|50 machines|
-|**Passing criteria**|<=0.4 % of machines with at least 1 crash in either audio service|
-|**Measure ID**|12518948|
+|**Minimum population**|Dynamic, uses confidence intervals|
+|**Passing criteria**|<=0.4 % of machines with at least 1 crash in AudioSrv<br/><1% of machines with at least 1 crash in either AudioSrv or AudioDG|
+|**Measure IDs**|12518948 - AudioSrv only<br/>23032999 - both AudioSrv and AudioDG|
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have at least one audio crash in AudioSrv.dll or AudioDG.exe**
-2. *Crashing Machines = Count (Machines with at least one crash in either AudioSrv.dll or AudioDG.exe)*
-3. *Total Machines=Count (Machines that successfully initialzed at least 1 audio stream)*
+Every day:
+1. Count the number of machines that hit a crash in AudioSrv or AudioDg
+1. Count the number of machines which attempted to use audio
+1. Percent of machines hitting a crash = (number of machines hitting a crash) / (number of machines which attempted to use audio)
 
-### Final calculation
-
-*Percent of devices with at least one audio crash = Crashing Machines / Total Machines*
+The value of the measure at any time is the seven-day rolling average of this percentage.

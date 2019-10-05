@@ -3,8 +3,6 @@ title: Number of machines that had a blue screen caused by a crash in the graphi
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that experienced a blue screen caused crash in the graphics kernel
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
