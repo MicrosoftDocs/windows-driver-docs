@@ -3,7 +3,7 @@ title: How Windows Installs Devices
 description: How Windows Installs Devices
 ms.assetid: 8d8af8bc-1368-4532-913f-11d3d65e1b20
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # How Windows Installs Devices
