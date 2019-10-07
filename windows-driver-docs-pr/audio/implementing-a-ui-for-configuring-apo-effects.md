@@ -2,7 +2,7 @@
 title: Implementing a UI for Configuring APO Effects
 description: This topic describes how to implement a user interface (UI) that allows a user to configure the effects. 
 ms.assetid: C8D1CB20-2E77-430A-9933-4BDFFB997158
-ms.date: 11/08/2017
+ms.date: 10/07/2019
 ms.localizationpriority: medium
 ---
 
@@ -13,7 +13,7 @@ This topic describes how to implement a user interface (UI) that allows a user t
 ## <span id="Overview"></span><span id="overview"></span><span id="OVERVIEW"></span>Overview
 
 > [!NOTE]
-> This customization is no longer supported after Windows 10, version 1809 and the PropPageExtensions project is no longer present in the Sysvad Sample.
+> This customization is no longer supported after Windows 10, version 1809 and the PropPageExtensions project is no longer present in the Sysvad Sample. For later versions of Windows, the recommended approach is to create a Hardware Support App. For more information, see [Hardware Support App (HSA): Steps for Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers).
 >
 
 An APO commonly provides a UI that allows a user to configure the effects. This UI can, for example, allow the user to select from several different signal processing algorithms. Microsoft provides a configuration UI for the standard Windows APOs. If a custom APO has user-accessible settings, the developer must provide an appropriate configuration UI. The configuration UI is installed with the device driver and is associated with the APO by a registration process.
