@@ -8,17 +8,17 @@ ms.localizationpriority: medium
 
 # Implementing a UI for Configuring APO Effects
 
-
 This topic describes how to implement a user interface (UI) that allows a user to configure the effects. For general information about APOs, see [Audio Processing Object Architecture](audio-processing-object-architecture.md).
 
 ## <span id="Overview"></span><span id="overview"></span><span id="OVERVIEW"></span>Overview
 
+> [!NOTE]
+> This customization is no longer supported after Windows 10, version 1809 and the PropPageExtensions project is no longer present in the Sysvad Sample.
+>
 
 An APO commonly provides a UI that allows a user to configure the effects. This UI can, for example, allow the user to select from several different signal processing algorithms. Microsoft provides a configuration UI for the standard Windows APOs. If a custom APO has user-accessible settings, the developer must provide an appropriate configuration UI. The configuration UI is installed with the device driver and is associated with the APO by a registration process.
 
 **Note**   Manufacturers can replace this property page with a custom property page that is designed to support their APOs. Manufacturers can also opt to not have any UI at all, if their custom APO does not have user-accessible settings.
-
- 
 
 The standard enhancements tab is shown below.
 
@@ -54,11 +54,11 @@ See [About Property Sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) fo
 
 To design and implement the custom property page provider, perform the following steps.
 
-1.  Create a custom property page. See [Creating property sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
+1. Create a custom property page. See [Creating property sheets](https://go.microsoft.com/fwlink/p/?linkid=106006) for more information.
 
-2.  Package your property page as a DLL. See [Creating and using a DLL](https://go.microsoft.com/fwlink/p/?linkid=106014) topic for more information on packaging your custom page as a DLL.
+2. Package your property page as a DLL. See [Creating and using a DLL](https://go.microsoft.com/fwlink/p/?linkid=106014) topic for more information on packaging your custom page as a DLL.
 
-3.  Modify your [INF file](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) to install and register the DLL for the property page.
+3. Modify your [INF file](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-inf-files) to install and register the DLL for the property page.
 
     The following INF file fragment shows how to modify the INF file to register your custom property page.
 
@@ -92,7 +92,7 @@ To design and implement the custom property page provider, perform the following
 
     The CLSID of the default property page is replaced with the CLSID of your custom property page.
 
-4.  In a global AddReg section in the INF file, register the CLSID with COM.
+4. In a global AddReg section in the INF file, register the CLSID with COM.
 
     The sample INF file sections, taken from the SYSVAD tabletaudiosample.inf file, shows how to do this. The \[SWAPAPO.AddReg\] section is in the global AddReg section. The \[SWAPAPO.I.Association0.AddReg\] is part of the AddReg section for the specific KSCATEGORY\_AUDIO interfaces.
 
@@ -121,9 +121,9 @@ To design and implement the custom property page provider, perform the following
 
 If you are using the Windows-provided effects directly or wrapping them, complete these steps:
 
-1.  Follow step 3 above, to register your CLSID in the effects property store.
+1. Follow step 3 above, to register your CLSID in the effects property store.
 
-2.  Follow step 4 above, to register the CLSID with COM. In addition, you will need to invoke the supplied wdmaudio.inf via *Include* and *Needs* statements in your INF file as shown below.
+2. Follow step 4 above, to register the CLSID with COM. In addition, you will need to invoke the supplied wdmaudio.inf via *Include* and *Needs* statements in your INF file as shown below.
 
     ```cpp
     [YourGlobalSection]
@@ -136,50 +136,7 @@ If you are using the Windows-provided effects directly or wrapping them, complet
 
 Using the SYVAD Swap APO code sample as a template can accelerate the custom APO development process. For general information about SWAP APO sample, see [Implementing Audio Processing Objects](implementing-audio-processing-objects.md).
 
-**Example Code**
-
-There are six projects in the SYSVAD sample The PropPageExtensions project contains the sample code for an example APO property page.
-
-|                    |                                                            |
-|--------------------|------------------------------------------------------------|
-| **Project**        | **Description**                                            |
-| PropPageExtensions | Sample code for example custom property page UI extensions |
-
- 
-
-The following code samples are useful to look at as you work on developing your custom UI.
-
-|                         |                                                                                                      |
-|-------------------------|------------------------------------------------------------------------------------------------------|
-| **Name**                | **Description**                                                                                      |
-| SwapPropPage.cpp        | Implementation of the CSwapPropPage class                                                            |
-| CplExt.cpp              | Implementation of DLL Exports for the control panel extensions                                       |
-| UIWidgets.cpp           | Implementation of CUIWidget and derived classes                                                      |
-| AdvEndpointPropPage.cpp | Implementation of CAdvEndpointPropPage                                                               |
-| Parts.cpp               | Implementation of CPart and derived classes.                                                         |
-| TopologyExaminers.cpp   | Implementation of methods to support examining the audio topology, such as connectors and endpoints. |
-
- 
-
-The following header files are used in the property page extensions sample.
-
-|                       |
-|-----------------------|
-| **Name**              |
-| swapproppage.h        |
-| uiwidgets.h           |
-| advendpointproppage.h |
-| parts.h               |
-| topologyexaminers.h   |
-
- 
-
-To become familiar with the PropPageExtensions sample, you might want to review the headers and then examine the source code related to defining the text on the properties page. If your requirements are similar to what the sample code provides, you may be able to reuse much of the code that creates and updates the custom UI page.
-
 ## <span id="related_topics"></span>Related topics
 [Audio Processing Object Architecture](audio-processing-object-architecture.md)  
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
 [Implementing Audio Processing Objects](implementing-audio-processing-objects.md)  
-
-
-
