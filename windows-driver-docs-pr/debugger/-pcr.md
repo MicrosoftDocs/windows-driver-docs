@@ -3,7 +3,7 @@ title: pcr
 description: The pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 ms.assetid: a9d82aa4-57de-4170-80fd-b7cd5b82f1e5
 keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 10/07/2019
 topic_type:
 - apiref
 api_name:
@@ -27,6 +27,9 @@ The **!pcr** extension displays the current status of the Processor Control Regi
 
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies the processor to retrieve the PCR information from. If *Processor* is omitted, the current processor is used.
+
+> [!NOTE] This command is not currently supported and may display incorrect output.
+>
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
