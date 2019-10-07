@@ -28,7 +28,8 @@ The **!pcr** extension displays the current status of the Processor Control Regi
 <span id="_______Processor______"></span><span id="_______processor______"></span><span id="_______PROCESSOR______"></span> *Processor*   
 Specifies the processor to retrieve the PCR information from. If *Processor* is omitted, the current processor is used.
 
-> [!NOTE] This command is not currently supported and may display incorrect output.
+> [!NOTE]
+> This command is not currently supported and may display incorrect output.
 >
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
