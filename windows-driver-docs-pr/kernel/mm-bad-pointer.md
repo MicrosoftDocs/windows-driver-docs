@@ -2,7 +2,7 @@
 title: Windows kernel macros
 description: Windows kernel macros
 ms.assetid: 91366400-3307-4F13-A839-50BA85B7F73E
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
 
