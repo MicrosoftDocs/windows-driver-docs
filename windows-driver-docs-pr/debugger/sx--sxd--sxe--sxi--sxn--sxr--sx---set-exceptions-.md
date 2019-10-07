@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 
-The **sx***\** commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
+The **sx** commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
 
 ```dbgcmd
 sx
