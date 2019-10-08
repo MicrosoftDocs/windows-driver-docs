@@ -61,6 +61,7 @@ The DRIVER\_RETURNED\_STATUS\_REPARSE\_FOR\_VOLUME\_OPEN bug check has a value o
 Remarks
 -------
 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
 STATUS\_REPARSE should be returned only for IRP\_MJ\_CREATE requests with trailing names, as that indicates the driver is supporting name spaces.
 
  
