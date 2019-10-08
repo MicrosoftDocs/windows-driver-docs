@@ -85,15 +85,4 @@ The following tables describe the Direct3D hardware specification updates for Wi
 | If implemented | Threading Command Lists                |
 | If implemented | Double-precision support               |
 
- 
-
-**\\*** Already exists in the Microsoft Direct3D 9 hardware specification, but is not previously exposed in Direct3D 10.
-
- 
-
- 
-
-
-
-
-
+**\*** Already exists in the Microsoft Direct3D 9 hardware specification, but is not previously exposed in Direct3D 10.
