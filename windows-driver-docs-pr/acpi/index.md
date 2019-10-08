@@ -10,12 +10,10 @@ ms.technology: windows-devices
 
 # ACPI design guide
 
-
 This section describes how device drivers can interface with an Advanced Configuration and Power Interface (ACPI) device. 
 ACPI devices are defined by the [Advanced Configuration and Power Interface (ACPI) Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).
 
 ## In this section
-
 
 | Section | Description |
 | --- | --- |
@@ -23,12 +21,6 @@ ACPI devices are defined by the [Advanced Configuration and Power Interface (ACP
 | [Evaluating ACPI Control Methods](evaluating-acpi-control-methods.md) | Provides information about how device drivers that comply with the requirements of [Kernel-Mode Driver Framework (KMDF)](https://docs.microsoft.com/windows-hardware/drivers/kernel), [User-Mode Driver Framework (UMDF)](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2), or [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) can evaluate ACPI control methods. |
 | [How to Identify the Windows Version in ACPI by Using _OSI](winacpi-osi.md) | Provides information about the ACPI Source Language (ASL) Operating System Interface Level (\_OSI) method used to identify the host operating system. |
 
+## Related sections
 
-## Related sctions
-
--   [ACPI DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_acpi)
-
- 
-
-
-
+- [ACPI DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_acpi)

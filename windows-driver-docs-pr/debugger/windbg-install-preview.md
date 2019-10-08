@@ -2,7 +2,7 @@
 title: WinDbg Preview - Installation
 description: This section describes how to install the WinDbg Preview debugger.
 ms.date: 08/17/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # WinDbg Preview - Installation

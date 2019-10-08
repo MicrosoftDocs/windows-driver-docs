@@ -4,7 +4,7 @@ description: There are three kinds of WDM drivers bus drivers, function drivers,
 ms.assetid: 86acc77e-816e-46c8-b63c-2bb10920acd6
 keywords: ["WDM drivers WDK kernel , types", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "bus drivers WDK WDM", "function drivers WDK WDM", "filter drivers WDK WDM", "WDM bus drivers WDK", "WDM function drivers WDK", "WDM filter drivers WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # Types of WDM Drivers
