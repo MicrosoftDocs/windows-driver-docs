@@ -278,7 +278,7 @@
         href: ata-port-s-interface-with-the-storage-class-driver.md
       - name: "ATA Port's Interface with ATA Miniport Drivers"
         href: ata-port-s-interface-with-ata-miniport-drivers.md
-      - name: "ATA Port "Storport driver support routines"
+      - name: "ATA port driver support routines"
         href: ata-port-driver-support-routines.md
       - name: "ATA Port I/O Model"
 # Auto-expanded node
