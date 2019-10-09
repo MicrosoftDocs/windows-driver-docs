@@ -7,7 +7,7 @@ keywords:
 - device installations WDK , about device installations
 - installing devices WDK , about device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # Overview of Device and Driver Installation
