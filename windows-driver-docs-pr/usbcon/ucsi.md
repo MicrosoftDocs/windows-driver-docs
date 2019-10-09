@@ -2,7 +2,7 @@
 Description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
 title: USB Type-C Connector System Software Interface (UCSI) driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # USB Type-C Connector System Software Interface (UCSI) driver

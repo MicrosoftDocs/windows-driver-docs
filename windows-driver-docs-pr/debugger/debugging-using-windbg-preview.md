@@ -2,7 +2,7 @@
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ms.date: 04/03/2019
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 ![Small logo on windbg preview](images/windbgx-preview-logo.png) 

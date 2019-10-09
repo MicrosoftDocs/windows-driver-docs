@@ -16,27 +16,23 @@ ms.localizationpriority: medium
 
 # DevCon Resources
 
-
 Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. Valid on local and remote computers.
 
 ```
-    devcon [/m:\\computer] resources {* | ID [ID ...] | =class [ID [ID...]]} 
+    devcon [/m:\\computer] resources {* | ID [ID ...] | =class [ID [ID...]]}
 ```
 
 ## <span id="ddk_devcon_resources_tools"></span><span id="DDK_DEVCON_RESOURCES_TOOLS"></span>Parameters
 
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>   
+<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
 Runs the command on the specified remote computer. The backslashes are required.
 
 **Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default.
 
-
-
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*   
+<span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
 
 The following special characters modify the ID parameter.
@@ -64,14 +60,12 @@ The following special characters modify the ID parameter.
 <tr class="odd">
 <td align="left"><p><strong>'</strong></p>
 <p>(single quote)</p></td>
-<td align="left"><p>Matches the string literally (exactly as it appears). Precede a string with a single quote to indicate that an asterisk is part of the ID name and is not a wildcard character, for example, <strong>'*PNP0600</strong>, where *PNP0600 (including the asterisk) is the hardware ID.</p></td>
+<td align="left"><p>Matches the string literally (exactly as it appears). Precede a string with a single quote to indicate that an asterisk is part of the ID name and is not a wildcard character, for example, <strong>'*PNP0600'</strong>, where *PNP0600 (including the asterisk) is the hardware ID.</p></td>
 </tr>
 </tbody>
 </table>  
 
-
-
-<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>   
+<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
@@ -95,12 +89,3 @@ devcon resources =class @port*(by class and device instance ID)
 [Example 12: List resources of a class of devices](devcon-examples.md#ddk_example_12_list_resources_of_a_class_of_devices_tools)
 
 [Example 13: List resources of device on a remote computer by ID](devcon-examples.md#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)
-
-
-
-
-
-
-
-
-

@@ -23,9 +23,10 @@ Raising the processor's IRQL to the interrupt's synchronization IRQL prevents th
 
 The system assigns the interrupt spin lock and synchronization IRQL for the interrupt when the driver calls [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioconnectinterruptex). In most instances, the driver can allow the system to determine both values:
 
--   If the driver uses the CONNECT\_LINE\_BASED or CONNECT\_MESSAGE\_BASED versions of **IoConnectInterruptEx**, and specifies a **NULL** spin lock, the system will allocate a spin lock to be shared across all of the device's interrupts. The system also determines the value for the synchronization IRQL (drivers can optionally specify a higher value). All of the driver's interrupts will share the same critical section.
+-   If the driver uses the CONNECT\_LINE\_BASED version of **IoConnectInterruptEx**, and specifies a **NULL** spin lock, the system will allocate a spin lock for the interrupt line. The system also determines the value for the synchronization IRQL (drivers can optionally specify a higher value).
 
--   If the driver uses the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx** and has only a single interrupt vector, the driver can specify a **NULL** spin lock. The system will allocate a spin lock for only that particular interrupt, which will have its own critical section.
+-   If the driver uses the CONNECT\_MESSAGE\_BASED version of **IoConnectInterruptEx**, and specifies a **NULL** spin lock, the system will allocate a spin lock for each interrupt message. The system also determines the value of the synchronization IRQL for each message (drivers can optionally specify a higher value that will be common to all messages).
+
 
 A driver must allocate its own spin lock only when using the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx** and when it has multiple interrupt vectors that must share the same critical section. A driver can specify its own spin lock and synchronization IRQL by using the **SpinLock** and **SynchronizeIrql** members of **IO\_CONNECT\_INTERRUPT\_PARAMETERS**. For more information, see [**IO\_CONNECT\_INTERRUPT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_connect_interrupt_parameters).
 

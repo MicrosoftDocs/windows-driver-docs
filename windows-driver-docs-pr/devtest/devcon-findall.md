@@ -16,27 +16,23 @@ ms.localizationpriority: medium
 
 # DevCon FindAll
 
-
 Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved. (These are known as nonpresent devices or *phantom* devices.) The **DevCon FindAll** operation also finds devices that are enumerated differently as a result of a BIOS change. Valid on local and remote computers.
 
 ```
-    devcon [/m:\\computer] findall {* | ID [ID ...] | =class [ID [ID ...]]} 
+    devcon [/m:\\computer] findall {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_findall_tools"></span><span id="DDK_DEVCON_FINDALL_TOOLS"></span>Parameters
 
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>   
+<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
 Runs the command on the specified remote computer. The backslashes are required.
 
 **Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default.
 
-
-
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*   
+<span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
 
 The following special characters modify the ID parameter.
@@ -69,9 +65,7 @@ The following special characters modify the ID parameter.
 </tbody>
 </table>  
 
-
-
-<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>   
+<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
@@ -93,12 +87,3 @@ devcon resources @pci*
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
 [Example 22: Find (and find all) devices in a setup class](devcon-examples.md#ddk_example_22_find_and_find_all_devices_in_a_setup_class_tools)
-
-
-
-
-
-
-
-
-

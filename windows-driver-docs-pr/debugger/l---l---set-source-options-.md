@@ -15,22 +15,20 @@ ms.localizationpriority: medium
 
 # l+, l- (Set Source Options)
 
-
 The <strong>l+</strong>and **l-** commands set the source line options that control source display and program stepping options.
 
 ```dbgcmd
-l+Option 
-l-Option 
-l{+|-} 
+l+Option
+l-Option
+l{+|-}
 ```
 
 ## <span id="ddk_cmd_set_source_options_dbg"></span><span id="DDK_CMD_SET_SOURCE_OPTIONS_DBG"></span>Parameters
 
-
 <span id="_________or_-"></span><span id="_________OR_-"></span> **+** or **-**  
 Specifies whether a given option is to be turned on (plus sign \[+\])or turned off (minus sign \[-\]).
 
-<span id="_______Option______"></span><span id="_______option______"></span><span id="_______OPTION______"></span> *Option*   
+<span id="_______Option______"></span><span id="_______option______"></span><span id="_______OPTION______"></span> *Option*
 One of the following options. The options must be in lowercase letters.
 
 <span id="l"></span><span id="L"></span>**l**  
@@ -45,7 +43,7 @@ Displays source lines and source line numbers at the command prompt.
 <span id="t"></span><span id="T"></span>**t**  
 Starts [source mode](debugging-in-source-mode.md). If this mode is not set, the debugger is in [assembly mode](debugging-in-assembly-mode.md).
 
-<span id="_"></span>**\\***  
+<span id="_"></span>**\***  
 Turns on or turns off all options.
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -71,9 +69,7 @@ Turns on or turns off all options.
 </tbody>
 </table>
 
- 
-
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+ ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md). For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
@@ -87,12 +83,3 @@ You can include only one *Option* every time that you issue this command. If you
 When you specify the **s** option, source lines and line numbers are displayed when you step through code, regardless of whether you specified the **l** option. The **o** option has no effect unless you specify the **s** option.
 
 Source line options do not take effect unless you enable line number loading by using the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command or the [-lines command-line option](command-line-options.md). By default, if you have not used these commands, WinDbg turns on source line support and CDB turns it off.
-
- 
-
- 
-
-
-
-
-
