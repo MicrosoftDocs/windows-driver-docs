@@ -26,7 +26,7 @@ To prepare your storage miniport driver to handle WMI SRBs, complete the followi
 
     The SCSI Port WMI library simplifies the processing of WMI SRBs for miniport drivers. To use the SCSI Port WMI library, implement the *HwScsiWmiXxx* callback routines described in [SCSI Miniport Driver Routines](scsi-miniport-driver-routines.md).
 
-3. Add required code to the miniport driver's [**DriverEntry of SCSI Miniport Driver**](driverentry-of-a-scsi-miniport-driver.md) routine.
+3. Add required code to the miniport driver's [**DriverEntry of SCSI Miniport Driver**](driverentry-of-scsi-miniport-driver.md) routine.
 
 4. Add required code to the miniport driver's [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) routine.
 

@@ -26,7 +26,7 @@ This section contains the following information:
 
 [SCSI Miniport Driver Routines](scsi-miniport-driver-routines.md)
 
-SCSI miniport drivers for NT-based operating systems are HBA-specific but operating system-independent. That is, each miniport driver links itself with the system-supplied SCSI port driver, which is a dynamic-link library (DLL), and calls only the port driver's **ScsiPort***Xxx* routines to communicate with the system and its HBA. Such SCSI miniport drivers run on other Microsoft operating systems that support Microsoft Win32 applications and also export the **ScsiPort***Xxx* routines. For more information about the **ScsiPort***Xxx* routines, see [SCSI Port Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+SCSI miniport drivers for NT-based operating systems are HBA-specific but operating system-independent. That is, each miniport driver links itself with the system-supplied SCSI port driver, which is a dynamic-link library (DLL), and calls only the port driver's **ScsiPort***Xxx* routines to communicate with the system and its HBA. Such SCSI miniport drivers run on other Microsoft operating systems that support Microsoft Win32 applications and also export the **ScsiPort***Xxx* routines. For more information about the **ScsiPort***Xxx* routines, see [SCSI Port Driver Support Routines](scsi-port-driver-support-routines.md).
 
 Note that any SCSI miniport driver that calls routines other than the **ScsiPort***Xxx* cannot run in both Microsoft operating system environments. To remain portable across Microsoft Windows systems, including NT-based operating systems, SCSI miniport drivers must call only the system-supplied **ScsiPort***Xxx*.
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 A miniport driver that works with the Storport driver must contain implementations of the routine descriptions listed in this section, and it must expose them through a [HW_INITIALIZATION_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/ns-storport-_hw_initialization_data) structure during the miniport driver's initialization phase.
 
-The Storport miniport driver routines are in most respects equivalent to their SCSI port counterparts (see [SCSI Miniport Routines](scsi-miniport-routines.md) for more information). However, there are important differences between the design of the SCSI port driver and that of the Storport driver, and these routines must accommodate those differences.
+The Storport miniport driver routines are in most respects equivalent to their SCSI port counterparts (see [SCSI Miniport Driver Routines](scsi-miniport-driver-routines.md) for more information). However, there are important differences between the design of the SCSI port driver and that of the Storport driver, and these routines must accommodate those differences.
 
 For instance, miniport drivers that work with the Storport driver must always be prepared to receive another I/O request after the [HwStorStartIo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_startio) routine has completed. A miniport driver that works with SCSI port is not required to do this. The SCSI port version does not receive a new I/O request until it explicitly signals the port driver, using the [StorPortNotification](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportnotification) function, that it is prepared to handle another request.
 

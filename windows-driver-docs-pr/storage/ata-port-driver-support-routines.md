@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This page categorizes the support routines provided by the system-supplied ATA port driver.
 
-For a list of ATA driver miniport routines, see [ATA Miniport Driver Routines](ata-miniport-driver-routines.md).
+For a list of ATA driver miniport routines, see [ATA Miniport Drivers](ata-miniport-drivers.md).
 
 ## Initialization Routine
 

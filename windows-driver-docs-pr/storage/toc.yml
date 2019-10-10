@@ -133,11 +133,11 @@
     - name: "SCSI Port Driver"
 # Auto-expanded node
       items: 
-      - name: "SCSI Port Driver"
-        href: scsi-port-driver.md
+      - name: "SCSI Port Driver Overview"
+        href: scsi-port-driver-overview.md
       - name: "Capabilities Provided by SCSI Port"
         href: capabilities-provided-by-scsi-port.md
-      - name: "SCSI port driver support routines"
+      - name: "SCSI Port Driver Support Routines"
         href: scsi-port-driver-support-routines.md
       - name: "SCSI Port's Interface with the Storage Class Driver"
 # Auto-expanded node
@@ -272,8 +272,8 @@
     - name: "ATA Port Driver"
 # Auto-expanded node
       items: 
-      - name: "ATA Port Driver"
-        href: ata-port-driver.md
+      - name: "ATA Port Driver Overview"
+        href: ata-port-driver-overview.md
       - name: "ATA Port's Interface with the Storage Class Driver"
         href: ata-port-s-interface-with-the-storage-class-driver.md
       - name: "ATA Port's Interface with ATA Miniport Drivers"
@@ -555,12 +555,14 @@
   - name: "Tape Drivers"
 # Auto-expanded node
     items: 
-    - name: "Tape Drivers"
-      href: tape-drivers.md
+    - name: "Tape Drivers Overview"
+      href: tape-drivers-overview.md
     - name: "Using the Tape Class Driver"
       href: using-the-tape-class-driver.md
-    - name: "Required and Optional Tape Miniclass Routines"
-      href: required-and-optional-tape-miniclass-routines.md
+    - name: "Tape Class Driver Routines"
+      href: tape-class-driver-routines.md
+    - name: "Tape Miniclass Driver Routines"
+      href: tape-miniclass-driver-routines.md
     - name: "DriverEntry of Tape Miniclass Driver"
       href: driverentry-of-tape-miniclass-driver.md
     - name: "Storing Tape Miniclass Context in Optional Extensions"
