@@ -10,7 +10,7 @@ ms.technology: windows-devices
 
 # Storage driver design guide
 
-Storage drivers include [class](storage-class-drivers.md), [port](storage-port-drivers.md), [miniport](storage-miniport-drivers.md), and [filter](storage-filter-drivers.md) drivers. Typically, a device vendor will implement a miniport driver for a specific adapter or adapter type. Although not common, a new storage class can be defined and a new class driver developed for it. Storage classes in Windows include the Disk, CDROM, USB storage, and encrypted drive classes. Storage driver development is usually limited to writing a miniport driver to work with the [StorPort](storport-driver.md) port driver.
+Storage drivers include [class](storage-class-drivers.md), [port](storage-port-drivers.md), [miniport](storage-miniport-drivers.md), and [filter](storage-filter-drivers.md) drivers. Typically, a device vendor will implement a miniport driver for a specific adapter or adapter type. Although not common, a new storage class can be defined and a new class driver developed for it. Storage classes in Windows include the Disk, CDROM, USB storage, and encrypted drive classes. Storage driver development is usually limited to writing a miniport driver to work with the [StorPort](storport-driver-overview.md) port driver.
 
 Other types of storage drivers are secure [silo](storage-silo-drivers.md) drivers and Device Specific Modules (DSM) for multipath I/O. For storage management, [WMI](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-wmi-classes) providers are developed as a control interface to a driver.
 
