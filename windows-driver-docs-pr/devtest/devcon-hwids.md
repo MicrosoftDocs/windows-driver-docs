@@ -16,27 +16,23 @@ ms.localizationpriority: medium
 
 # DevCon HwIDs
 
-
 Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. Valid on local and remote computers.
 
 ```
-    devcon [/m:\\computer] hwids {* | ID [ID ...] | =class [ID [ID ...]]} 
+    devcon [/m:\\computer] hwids {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_hwids_tools"></span><span id="DDK_DEVCON_HWIDS_TOOLS"></span>Parameters
 
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>   
+<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
 Runs the command on the specified remote computer. The backslashes are required.
 
 **Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
-
-
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*   
+<span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies one or more devices by using an identifier.
 
 Type all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
@@ -71,9 +67,7 @@ The following special characters modify the ID parameter.
 </tbody>
 </table>  
 
-
-
-<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>   
+<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>
 Specifies one or more devices by using a setup class.
 
 Type all or part of the name of the setup class of the devices. The equal sign (**=**) identifies the string as a class name.
@@ -90,7 +84,7 @@ To create a hardware ID for a root-enumerated device, use the [**DevCon SetHwID*
 
 ```
 devcon hwids *
-devcon /m:\\server01 hwids acpi* 
+devcon /m:\\server01 hwids acpi*
 devcon hwids acpi* *port*
 devcon hwids =usb
 ```
@@ -102,12 +96,3 @@ devcon hwids =usb
 [Example 2: Find hardware IDs by using a pattern](devcon-examples.md#ddk_example_2_find_hardware_ids_by_using_a_pattern_tools)
 
 [Example 3: Find hardware IDs by using a class](devcon-examples.md#ddk_example_3_find_hardware_ids_by_using_a_class_tools)
-
-
-
-
-
-
-
-
-

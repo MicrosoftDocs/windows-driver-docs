@@ -15,23 +15,21 @@ ms.localizationpriority: medium
 
 # !amli bc
 
-
 The **!amli bc** extension permanently clears an AML breakpoint.
 
 Syntax
 
 ```dbgcmd
-    !amli bc Breakpoint 
+    !amli bc Breakpoint
     !amli bc *
 ```
 
 ## <span id="ddk__amli_bc_dbg"></span><span id="DDK__AMLI_BC_DBG"></span>Parameters
 
-
-<span id="_______Breakpoint______"></span><span id="_______breakpoint______"></span><span id="_______BREAKPOINT______"></span> *Breakpoint*   
+<span id="_______Breakpoint______"></span><span id="_______breakpoint______"></span><span id="_______BREAKPOINT______"></span> *Breakpoint*
 Specifies the number of the breakpoint to be cleared.
 
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Specifies that all breakpoints should be cleared.
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
@@ -46,12 +44,3 @@ Remarks
 -------
 
 To determine the breakpoint number of a breakpoint, use the [**!amli bl**](-amli-bl.md) extension.
-
- 
-
- 
-
-
-
-
-
