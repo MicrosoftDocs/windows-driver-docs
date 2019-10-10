@@ -28,7 +28,7 @@ After each call to **ScsiPortInitialize**, such a miniport driver must:
 
 -   Call ScsiPortInitialize for each type of bus on which a supported HBA might be connected.
 
-If the miniport driver is a legacy driver that does not support Plug and Play, **ScsiPortInitialize** calls the miniport driver's *HwScsiFindAdapter* routine one or more times before it returns control to the miniport driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) routine. All of the [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) calls are made in the context of the miniport driver's **DriverEntry** routine, in the order **DriverEntry** called **ScsiPortInitialize**.
+If the miniport driver is a legacy driver that does not support Plug and Play, **ScsiPortInitialize** calls the miniport driver's *HwScsiFindAdapter* routine one or more times before it returns control to the miniport driver's [**DriverEntry**](scsi-miniport-driver-s-driverentry-routine.md) routine. All of the [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) calls are made in the context of the miniport driver's **DriverEntry** routine, in the order **DriverEntry** called **ScsiPortInitialize**.
 
 If the miniport driver supports Plug and Play, **ScsiPortInitialize** stores the initialization data for future use and returns STATUS\_SUCCESS to the miniport driver's **DriverEntry** routine. The port driver does not call the miniport driver's *HwScsiFindAdapter* routine until the Plug and Play manager detects an HBA for which the miniport driver is registered as a service.
 
