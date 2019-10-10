@@ -6,23 +6,19 @@ ms.date: 09/21/2017
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
-
 # !positions
 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
 The **!positions** extension displays all the active threads, including their current positions in the time travel trace.
-
 
 ```dbgcmd
 !positions 
 ```
 
-
 ## <span id="ddk__analyze_dbg"></span><span id="DDK__ANALYZE_DBG"></span>Parameters
 
 None
-
 
 ## Example
 
@@ -36,7 +32,6 @@ This output shows four threads. Thread 3824 is the current thread indicated by *
  Thread ID=0x2DC4 - Position: 401:0
 ```
 
-
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
 ttdext.dll
@@ -45,17 +40,6 @@ ttdext.dll
 
 This extension only works with time travel traces. For more information about time travel, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
-
 ## See Also
 
 [Time Travel Debugging - Extension Commands](time-travel-debugging-extension-commands.md)
-
-
- 
-
- 
-
-
-
-
-

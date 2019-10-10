@@ -5,12 +5,11 @@ ms.date: 09/22/2017
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
-
 #  Time Travel Debugging - Record a trace 
 
-This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg Preview, *Launch Executable (advanced)* and *Attach to a process*. 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
+This section describes how to record time travel debugging (TTD) traces. There are two ways to record a Trace in WinDbg Preview, *Launch Executable (advanced)* and *Attach to a process*. 
 
 ## Launch executable (advanced)
 
@@ -102,16 +101,7 @@ Now that you have a recorded a TTD trace, you can replay the trace back or work 
 
 [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 
-
-
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-
-
-
-
 
