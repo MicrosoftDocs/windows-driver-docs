@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Storport Miniport Drivers
 
-Storport miniport drivers work with the [Storport Driver](storport-driver.md). The following sections describe Storport miniport drivers and the routines that they call:
+Storport miniport drivers work with the [Storport Driver](storport-driver-overview.md). The following sections describe Storport miniport drivers and the routines that they call:
 
 [Storport Miniport Driver Routines](storport-miniport-driver-routines.md)
 

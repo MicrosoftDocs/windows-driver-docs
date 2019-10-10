@@ -30,7 +30,7 @@ The following list indicates the system-supplied port driver support library tha
 
 | Miniport Driver | Port Driver |
 | --------------- | ----------- |
-| Storport miniport drivers  | [Storport Driver](storport-driver.md) (*Storport.sys*), available in Windows Server 2003 and later versions of the operating system (recommended) |
-| SCSI Port miniport drivers | [SCSI Port Driver](scsi-port-driver.md) (*Scsiport.sys*) |
-| ATA Port miniport drivers  | [ATA Port Driver](ata-port-driver.md) (*Ataport.sys*), available in Windows Vista and later versions of the operating system |
+| Storport miniport drivers  | [Storport Driver](storport-driver-overview.md) (*Storport.sys*), available in Windows Server 2003 and later versions of the operating system (recommended) |
+| SCSI Port miniport drivers | [SCSI Port Driver](scsi-port-driver-overview.md) (*Scsiport.sys*) |
+| ATA Port miniport drivers  | [ATA Port Driver](ata-port-driver-overview.md) (*Ataport.sys*), available in Windows Vista and later versions of the operating system |
 | IDE miniport drivers       | See [IDE Port Driver](ide-port-driver.md) |
