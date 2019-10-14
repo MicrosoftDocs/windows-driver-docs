@@ -156,6 +156,13 @@ If there are multiple services hosted in the same process and one service has SE
 
 More details can be found on the [service_sid_info page](https://docs.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
 
+<a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
+
+Contains the delayed auto-start setting of an auto-start service.
+
+If this member is TRUE, the service is started after other auto-start services are started plus a short delay. Otherwise, the service is started during system boot.
+This setting is ignored unless the service is an auto-start service.
+
 <a href="" id="servicetype-type-code"></a>**ServiceType**=*type-code*  
 The type-code for a kernel-mode device driver must be set to 0x00000001 (SERVICE_KERNEL_DRIVER).
 
