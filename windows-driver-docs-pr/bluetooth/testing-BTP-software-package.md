@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Tools in the BTP software package
 
-The BTP software package contains several tools to be used for testing the Bluetooth.
+The BTP software package contains several tools to be used for testing the Bluetooth. BTP is intended to be an extensible framework.  Examples of extending BTP hardware, software, and tests can be found on GitHub. 
 
 
 ## Download the BTP Software Package ##
