@@ -48,7 +48,7 @@ Causes console output to be flushed after every line is written - useful when TE
 
 Sets the position (in pixels) of the console window relative to the corner of the primary monitor. Use a value of **current** to specify that the current console position should be stored and used when resuming from reboot.
 
-#### /console:size=\[ &lt;x,y&gt; | current \]
+#### /console:size=\[ \<x,y\> | current \]
 
 Sets the size of the console window (in character dimensions). The screen buffer size will be increased to match the size of the window if necessary. Use a value of **current** to specify that the current console size should be stored and used when resuming from reboot.
 

@@ -3,7 +3,7 @@ title: System-Provided Device Installation Components
 description: System-Provided Device Installation Components
 ms.assetid: faf586b9-ab99-4fee-a0d1-923000000189
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # System-Provided Device Installation Components

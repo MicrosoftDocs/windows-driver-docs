@@ -4,7 +4,7 @@ description: This section describes the Windows Driver Model (WDM), and discusse
 ms.assetid: 9e76c5a8-a19a-44cf-867a-b2246ea8eaf1
 keywords: ["kernel-mode drivers WDK , WDM drivers"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # Windows Driver Model (WDM)

@@ -16,20 +16,18 @@ ms.localizationpriority: medium
 
 # DevCon DriverFiles
 
-
 Displays the full path and file name of installed INF files and device driver files for the specified devices. Valid only on the local computer.
 
 ```
-    devcon driverfiles {* | ID [ID ...] | =class [ID [ID ...]]} 
+    devcon driverfiles {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_driverfiles_tools"></span><span id="DDK_DEVCON_DRIVERFILES_TOOLS"></span>Parameters
 
-
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*   
+<span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
 
 The following special characters modify the ID parameter.
@@ -62,9 +60,7 @@ The following special characters modify the ID parameter.
 </tbody>
 </table>
 
-
-
-<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>   
+<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
@@ -87,12 +83,3 @@ devcon driverfiles =media isapnp*
 [Example 8: List all driver files](devcon-examples.md#ddk_example_8_list_all_driver_files_tools)
 
 [Example 9: List the driver files of a particular device](devcon-examples.md#ddk_example_9_list_the_driver_files_of_a_particular_device_tools)
-
-
-
-
-
-
-
-
-

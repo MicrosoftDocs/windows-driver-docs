@@ -18,11 +18,11 @@ A value that describes whether the device should be enabled to wake the computer
 <a href="" id="-wakeonmagicpacket"></a>**\*WakeOnMagicPacket**  
 A value that describes whether the device should be enabled to wake the computer when the device receives a *magic packet*. (A *magic packet* is a packet that contains 16 contiguous copies of the receiving network adapter's Ethernet address)
 
-<a href="" id="-modernstandbywolmagicpacket"></a>**\*ModernStandyWoLMagicPacket**  
+<a href="" id="-modernstandbywolmagicpacket"></a>**\*ModernStandbyWoLMagicPacket**  
 A value that describes whether the device should be enabled to wake the computer when the device receives a *magic paket* and the system is in the *S0ix* power state. This does not apply when the system is in the *S4* power state.
 
 > [!NOTE]
-> **\*ModernStandyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later.
+> **\*ModernStandbyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later.
 
 <a href="" id="-devicesleepondisconnect"></a>**\*DeviceSleepOnDisconnect**  
 A value that describes whether the device should be enabled to put the device into a low-power state (sleep state) when media is disconnected and return to a full-power state (wake state) when media is connected again.
@@ -96,7 +96,7 @@ The following table describes the possible INF entries for the Power Management 
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><strong></em>ModernStandyWoLMagicPacket</strong></p></td>
+<td align="left"><p><strong></em>ModernStandbyWoLMagicPacket</strong></p></td>
 <td align="left"><p>Wake on magic packet when system is in the <i>S0ix</i> power state</p></td>
 <td align="left"><p>0 (Default)</p></td>
 <td align="left"><p>Disabled</p></td>
