@@ -138,6 +138,8 @@ The *description-string* should be long enough to be descriptive but not so long
 
 <a href="" id="description-description-string"></a>**ServiceSidType**=*value*
 
+**Note:** This value can only be used for *Win32 Services*
+
 **0x00000000** (SERVICE_SID_TYPE_NONE)
 
 Use this type to reduce application compatibility issues.
@@ -160,6 +162,8 @@ If there are multiple services hosted in the same process and one service has SE
 More details can be found on the [service_sid_info page](https://docs.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
 
 <a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
+
+**Note:** This value can only be used for *Win32 Services*
 
 Contains the delayed auto-start setting of an auto-start service.
 
