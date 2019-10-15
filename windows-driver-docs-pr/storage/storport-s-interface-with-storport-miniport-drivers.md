@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Storport's Interface with Storport Miniport Drivers
 
-Communication between the Storport driver and the Storport miniport drivers takes place by means of SCSI request blocks (SRBs) and miniport driver callback routines. For a detailed discussion of the Storport miniport driver callback routines, see [Storport Driver Miniport Routines](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver-miniport-routines).
+Communication between the Storport driver and the Storport miniport drivers takes place by means of SCSI request blocks (SRBs) and miniport driver callback routines. For a detailed discussion of the Storport miniport driver callback routines, see [Storport Miniport Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-driver-routines).
 
 For an overview and definition of the individual SRB functions, SRB flags, and SRB status values, see [**SCSI_REQUEST_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block).
 

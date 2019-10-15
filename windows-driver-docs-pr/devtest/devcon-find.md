@@ -16,27 +16,23 @@ ms.localizationpriority: medium
 
 # DevCon Find
 
-
 Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. Valid on local and remote computers.
 
 ```
-    devcon [/m:\\computer] find {* | ID [ID ...] | =class [ID [ID ...]]} 
+    devcon [/m:\\computer] find {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_find_tools"></span><span id="DDK_DEVCON_FIND_TOOLS"></span>Parameters
 
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>   
+<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
 Runs the command on the specified remote computer. The backslashes are required.
 
 **Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
-
-
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*   
+<span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
 
 The following special characters modify the ID parameter.
@@ -69,9 +65,7 @@ The following special characters modify the ID parameter.
 </tbody>
 </table>
 
-
-
-<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>   
+<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
@@ -91,7 +85,7 @@ To find all devices, including those that are not currently attached to the comp
 ```
 devcon find *
 devcon find =media *pnp*
-devcon /m:\\Server01 find *mou* 
+devcon /m:\\Server01 find *mou*
 devcon find @*hub*
 ```
 
@@ -100,12 +94,3 @@ devcon find @*hub*
 [Example 20: Find devices by hardware ID pattern](devcon-examples.md#ddk_example_20_find_devices_by_hardware_id_pattern_tools)
 
 [Example 21: Find devices by device instance ID or class](devcon-examples.md#ddk_example_21_find_devices_by_device_instance_id_or_class_tools)
-
-
-
-
-
-
-
-
-
