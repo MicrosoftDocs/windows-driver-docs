@@ -139,12 +139,15 @@ The *description-string* should be long enough to be descriptive but not so long
 <a href="" id="description-description-string"></a>**ServiceSidType**=*value*
 
 **0x00000000** (SERVICE_SID_TYPE_NONE)
+
 Use this type to reduce application compatibility issues.
 
 **0x00000001** (SERVICE_SID_TYPE_UNRESTRICTED)
+
 When the service process is created, the service SID is added to the service process token with the following attributes: SE_GROUP_ENABLED_BY_DEFAULT | SE_GROUP_OWNER.
 
 **0x000000003** (SERVICE_SID_TYPE_RESTRICTED)
+
 This type includes SERVICE_SID_TYPE_UNRESTRICTED. The service SID is also added to the restricted SID list of the process token. Three additional SIDs are also added to the restricted SID list:
 * World SID S-1-1-0
 * Service logon SID
