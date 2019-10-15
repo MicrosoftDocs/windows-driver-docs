@@ -39,45 +39,64 @@ Changes for version xx.yy
     <tr class="odd">
         <td>TraduciCmd</td>
         <td>
-            <ul><li>TraduciCmd is an application (TraduciCmd.exe) that communicates with BTP hardware to update firware.</li></ul>
+            <ul>
+                <li>TraduciCmd is an application that communicates with BTP hardware to update firware.</li>
+            </ul>
+        </td>
+        <td>TraduciCmd.exe</td>
+    </tr>
+    <tr class="even">
+        <td>ConfigureMachineForBtp</a></td>
+        <td>
+            <ul>
+                <li>Comes as either a CMD script or a PowerShell script</li>
+                <li>Configures a test machine for running BTP tests.</li>
+                <li>Meant to be run before any tests.</li>
+            </ul>
+        </td>
+        <td>
+            <p>ConfigureMachineForBtp.bat</p>
+            <p>ConfigureMachineForBtp.ps1</p>
         </td>
     </tr>
-    <tr class="even">
-    <td><a href="usb-xhciwmi.md" data-raw-source="[XHCIWMI](usb-xhciwmi.md)">XHCIWMI</a><a href="usblpm-tool.md" data-raw-source="[USBLPM](usblpm-tool.md)">USBLPM</a></td>
-    <td><ul>
-    <li>Monitors the U0/U1/U2/U3 power states of USB 3.0 ports.</li>
-    <li>It verifies that transitions between U0/U1/U2 occur correctly.</li>
-    </ul></td>
-    <td>UsbLPM.exe</td>
-    </tr>
-    <tr class="even">
-    <td><a href="usbstress.md" data-raw-source="[USBStress](usbstress.md)">USBStress</a></td>
-    <td><ul>
-    <li>The USBStress application communicates with a kernel-mode driver (usbstress.sys) and performs common USB data transfer scenarios.</li>
-    <li>The driver installation files are usbstress.sys, and usbstress.inf.</li>
-    <li>The UsbStressTest file runs all data transfer tests after the driver is installed.</li>
-    </ul></td>
-    <td><p>usbstress.exe</p>
-    <p>usbstress.inf</p>
-    <p>usbstress.sys</p>
-    <p>UsbStressTest.bat</p></td>
-    </tr>
     <tr class="odd">
-    <td><a href="muttutil.md" data-raw-source="[MuttUtil](muttutil.md)">MuttUtil</a></td>
-    <td><ul>
-    <li>Updates the firmware of the test devices.</li>
-    <li>Installs drivers for MUTT devices.</li>
-    <li>Verifies that the devices are installed without errors.</li>
-    <li>Changes the operating bus speed of the device.</li>
-    <li>Configures the device to send a resume wake signal after a specified time period.</li>
-    <li>For the MUTT Pack, it sets the hub to operate at full or high speed; as a single-TT or multi-TT hub.</li>
-    </ul></td>
-    <td><p>MuttUtil.exe</p></td>
+        <td>RunPairingTests</a></td>
+        <td>
+            <ul>
+                <li>Comes as either a CMD script or a PowerShell script</li>
+                <li>Runs the Bluetooth pairing tests.</li>
+                <li>Supports custom arguments if provided.</li>
+            </ul>
+        </td>
+        <td>
+            <p>RunPairingTests.bat</p>
+            <p>RunPairingTests.ps1</p>
+        </td>
     </tr>
-    <tr class="even">
-    <td><a href="how-to-retrieve-information-about-a-usb-device.md" data-raw-source="[USB hardware verifier](how-to-retrieve-information-about-a-usb-device.md)">USB hardware verifier</a></td>
-    <td>Displays all hardware events on the console.</td>
-    <td>USB3HWVerifierAnalyzer.exe</td>
+        <tr class="even">
+        <td>RunHIDTests</a></td>
+        <td>
+            <ul>
+                <li>Comes as either a CMD script or a PowerShell script.</li>
+                <li>Runs the Bluetooth HID tests.</li>
+                <li>Supports custom arguments if provided.</li>
+            </ul>
+        </td>
+        <td>
+            <p>RunHIDTests.bat</p>
+            <p>RunHIDTests.ps1</p>
+        </td>
+    </tr>
+        <tr class="odd">
+        <td>RunTaefTest</a></td>
+        <td>
+            <ul>
+                <li>PowerShell helper script for running TAEF tests given the test dll name and test parameters.</li>
+            </ul>
+        </td>
+        <td>
+            <p>RunTeafTests.ps1</p>
+        </td>
     </tr>
     </tbody>
 </table>
@@ -86,6 +105,4 @@ Changes for version xx.yy
 
 ### Known issues ###
 
-- Power: If the device is plugged into a non-powered hub or VCC is not able to supply 5V intermittent failures may be seen. Please remedy by using a powered USB hub or use a 9V AC-DC Barrel adapter.
-
-- Stress tests: If the test is run in a tight loop there an issue where the radios will not have finished disconnecting after the pairing test reports success before the next test attempts to pair resulting in a failure.
+- Documentation: Incomplete documentation

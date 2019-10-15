@@ -15,9 +15,9 @@ is the software component of Microsoft's latest automated Bluetooth testing. The
 
 As this time the only supported radio is the RN42. Purchasing information for the Traduci, RN42 and future radios can be found below.
 
-### Devices ###
+# Devices #
 
-Traduci board
+## Traduci board ##
 [**MCCI**](https://mcci.com/usb/dev-tools/model-2411/)
 
 ![Photo of the Traduci board](images/Traduci_Overhead.jpg)
@@ -27,13 +27,13 @@ Traduci board
 - Supports audio testing via the integrated audio codec
 - Supports HID and pairing tests
 
-RN42 Radio Sled
+## RN42 Radio Sled ##
 [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 ![Photo of the RN42 Radio on a Digilent sled](images/Traduci_and_DigilentRN42.jpg)
 
 The Traduci requires a 12-pin connector to communicate with any radio module. THe RN42 Radio Sled takes the RN42 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information.
 
-RN42 Module
+## RN42 Module ##
 [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42)
 
 - UART data connection
