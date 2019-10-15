@@ -57,12 +57,12 @@ The Traduci requires a 12-pin connector to communicate with any radio module. Th
 ![Audio Sled Schematic](images/RN52Schematic.png)
 
 ### RN52 Module ###
-[**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42)
+[**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52)
 
 - UART data connection with AT commands to configure software
 - Supports SPP, A2DP, HFP/HSP, and AVRCP profiles
-- Fully certified version 3.0 audio module
-- Class 2 BR Bluetooth 2.1+EDR
+- Version 3.0 audio module
+- Fully certified Class 2 BR Bluetooth 2.1+EDR
 - Small form factor, low power, surface mount module
 
 ![Photo of the RN52 Radio](images/RN52.png)
