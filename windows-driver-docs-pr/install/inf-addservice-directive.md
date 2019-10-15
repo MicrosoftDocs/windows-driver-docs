@@ -138,7 +138,7 @@ The *description-string* should be long enough to be descriptive but not so long
 
 <a href="" id="description-description-string"></a>**ServiceSidType**=*value*
 
-**Note:** This value can only be used for *Win32 Services*
+**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 20H1 and above.
 
 **0x00000000** (SERVICE_SID_TYPE_NONE)
 
@@ -163,7 +163,7 @@ More details can be found on the [service_sid_info page](https://docs.microsoft.
 
 <a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
 
-**Note:** This value can only be used for *Win32 Services*
+**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 20H1 and above.
 
 Contains the delayed auto-start setting of an auto-start service.
 
