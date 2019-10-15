@@ -75,3 +75,5 @@ Questions and comments about the tests should be sent to BTPSupport@microsoft.co
 - Power: If the device is plugged into a non-powered hub or VCC is not able to supply 5V intermittent failures may be seen. Please remedy by using a powered USB hub or use a 9V AC-DC Barrel adapter.
 
 - Stress tests: If the test is run in a tight loop there an issue where the radios will not have finished disconnecting after the pairing test reports success before the next test attempts to pair resulting in a failure.
+
+- Incomplete Documentation: Test commit
