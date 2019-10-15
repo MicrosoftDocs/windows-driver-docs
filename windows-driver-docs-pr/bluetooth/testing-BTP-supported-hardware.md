@@ -26,42 +26,43 @@ At this time the only supported radio is the RN42. Purchasing information for th
 - Supports audio testing via the integrated audio codec
 - Supports HID and pairing tests
 
-## HID Radio Sled ##
+## HID Sled ##
 [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
 <img src="images/Traduci_and_DigilentRN42.jpg" alt="Photo of the RN42 Radio on a Digilent sled" width="400"/>
 
 The Traduci requires a 12-pin connector to communicate with any radio module. The HID Sled takes the RN42 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information. The schematic is available below.
 
-### HID Radio Sled Schematic ###
-![HID Radio Sled Schematic](images/RN42Schematic.png)
+### HID Sled Schematic ###
+![HID Sled Schematic](images/RN42Schematic.png)
 
 ### RN42 Module ###
 [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42)
 
 - UART data connection
 - Supports HID profiles and Bluetooth data links
-- Fully certified Class 2 Bluetooth 2.1+
+- Fully certified Class 2 BR Bluetooth 2.1+
 - Small form factor, low power, surface mount module
 
 ![Photo of the RN42 Radio](images/RN42.png)
 
-## Audio Radio Sled ##
+## Audio Sled ##
 [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
 <img src="images/Traduci_and_RN52.jpg" alt="Photo of the RN52 Radio on a sled" width="400"/>
 
-The Traduci requires a 12-pin connector to communicate with any radio module. The HID Sled takes the RN42 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information. The schematic is available below.
+The Traduci requires a 12-pin connector to communicate with any radio module. The Audio Sled takes the RN52 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information. The schematic is available below.
 
-### Audio Radio Sled Schematic ###
-![HID Radio Sled Schematic](images/RN52Schematic.png)
+### Audio Sled Schematic ###
+![Audio Sled Schematic](images/RN52Schematic.png)
 
 ### RN52 Module ###
 [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42)
 
-- UART data connection
-- Supports HID profiles and Bluetooth data links
-- Fully certified Class 2 Bluetooth 2.1+
+- UART data connection with AT commands to configure software
+- Supports SPP, A2DP, HFP/HSP, and AVRCP profiles
+- Fully certified version 3.0 audio module
+- Class 2 BR Bluetooth 2.1+EDR
 - Small form factor, low power, surface mount module
 
-![Photo of the RN52 Radio](images/RN52.png)]
+![Photo of the RN52 Radio](images/RN52.png)
