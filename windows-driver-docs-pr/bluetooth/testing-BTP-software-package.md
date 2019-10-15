@@ -22,6 +22,7 @@ Changes for version xx.yy
 
 ## Tools in the package ##
 
+### Architecture Independent Files ###
 <table>
     <colgroup>
         <col width="33%" />
@@ -36,20 +37,11 @@ Changes for version xx.yy
         </tr>
     </thead>
     <tbody>
-    <tr class="odd">
-        <td>TraduciCmd</td>
-        <td>
-            <ul>
-                <li>TraduciCmd is an application that communicates with BTP hardware to update firware.</li>
-            </ul>
-        </td>
-        <td>TraduciCmd.exe</td>
-    </tr>
     <tr class="even">
         <td>ConfigureMachineForBtp</a></td>
         <td>
             <ul>
-                <li>Comes as either a CMD script or a PowerShell script</li>
+                <li>Comes as either a CMD script or a PowerShell script.</li>
                 <li>Configures a test machine for running BTP tests.</li>
                 <li>Meant to be run before any tests.</li>
             </ul>
@@ -63,7 +55,7 @@ Changes for version xx.yy
         <td>RunPairingTests</a></td>
         <td>
             <ul>
-                <li>Comes as either a CMD script or a PowerShell script</li>
+                <li>Comes as either a CMD script or a PowerShell script.</li>
                 <li>Runs the Bluetooth pairing tests.</li>
                 <li>Supports custom arguments if provided.</li>
             </ul>
@@ -101,7 +93,103 @@ Changes for version xx.yy
     </tbody>
 </table>
 
-
+### Architecture Dependent Binaries ###
+The files listed in this table are available in X86, AMD64, and ARM64 architectures. The installer will extract one instance of each for each architecture.
+<table>
+    <colgroup>
+        <col width="33%" />
+        <col width="33%" />
+        <col width="33%" />
+    </colgroup>
+    <thead>
+        <tr class="header">
+            <th>Test Tool</th>
+            <th>Description</th>
+            <th>Filename</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+        <td>HidTests</td>
+        <td>
+            <ul>
+                <li>Test binary for Bluetooth HID tests.</li>
+                <li>Can be run using TAEF or via the provided script.</li>
+            </ul>
+        </td>
+        <td>HidTests.dll</td>
+    </tr>
+    <tr class="even">
+        <td>HidInputObserver</a></td>
+        <td>
+            <ul>
+                <li>Binary needed to support HID tests.</li>
+            </ul>
+        </td>
+        <td>
+            <p>Microsoft.Bluetooth.TestPlatform.HidInputObserver.dll</p>
+        </td>
+    </tr>
+    <tr class="odd">
+        <td>LocalRadioAdapter</a></td>
+        <td>
+            <ul>
+                <li>Binary needed to support tests that use the local Bluetooth radio.</li>
+            </ul>
+        </td>
+        <td>
+            <p>Microsoft.Bluetooth.TestPlatform.LocalRadioAdapter.dll</p>
+        </td>
+    </tr>
+    <tr class="even">
+        <td>TraduciInputOutput</a></td>
+        <td>
+            <ul>
+                <li>Binary needed to support tests that use the Traduci.</li>
+            </ul>
+        </td>
+        <td>
+            <p>Microsoft.Bluetooth.TestPlatform.TraduciInputOutput.dll</p>
+        </td>
+    </tr>
+    <tr class="odd">
+        <td>PairingTests</a></td>
+        <td>
+            <ul>
+                <li>Test binary for Bluetooth Pairing tests.</li>
+                <li>Can be run using TAEF or via the provided script.</li>
+            </ul>
+        </td>
+        <td>
+            <p>PairingTests.dll</p>
+        </td>
+    </tr>
+    <tr class="even">
+        <td>SleepTests</a></td>
+        <td>
+            <ul>
+                <li>Experimental test binary for Bluetooth Sleep tests.</li>
+                <li>Can be run using TAEF. Note: this is not fully supported yet.</li>
+            </ul>
+        </td>
+        <td>
+            <p>SleepTests.dll</p>
+        </td>
+    </tr>
+    <tr class="odd">
+        <td>TraduciCmd</a></td>
+        <td>
+            <ul>
+                <li>Command line tool for querying and changing the state of the Traduci, including certain debug commands.</li>
+                <li>Handles firmware update.</li>
+            </ul>
+        </td>
+        <td>
+            <p>TraduciCmd.exe</p>
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 ### Known issues ###
 
