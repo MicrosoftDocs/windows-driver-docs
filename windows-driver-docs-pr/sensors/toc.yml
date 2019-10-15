@@ -15,7 +15,7 @@
 # Auto-expanded node
       items: 
       - name: "Sensors thresholds overview"
-        href: sensor-thresholds-v2
+        href: sensor-thresholds-v2.md
       - name: "Accelerometer thresholds"
         href: accelerometer-thresholds.md
       - name: "Magnetometer thresholds"
