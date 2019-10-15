@@ -20,18 +20,19 @@ As this time the only supported radio is the RN42. Purchasing information for th
 ## Traduci board ##
 [**MCCI**](https://mcci.com/usb/dev-tools/model-2411/)
 
-![Photo of the Traduci board](images/Traduci_Overhead.jpg)
+![Photo of the Traduci board](images/Traduci_Overhead.jpg =400x)
 
 - 4 12-pin ports to support 4 radios simultaneously
 - 3 FPGAs connected to ports 1, 2, and 3 respectively
 - Supports audio testing via the integrated audio codec
 - Supports HID and pairing tests
 
-## RN42 Radio Sled ##
+## HID Radio Sled ##
 [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
-![Photo of the RN42 Radio on a Digilent sled](images/Traduci_and_DigilentRN42.jpg)
+![Photo of the RN42 Radio on a Digilent sled](images/Traduci_and_DigilentRN42.jpg =400x)
 
-The Traduci requires a 12-pin connector to communicate with any radio module. THe RN42 Radio Sled takes the RN42 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information.
+The Traduci requires a 12-pin connector to communicate with any radio module. The HID Sled takes the RN42 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information. The schematic is available below.
+![HID Radio Sled Schematic](images/RN42Schematic.pngg)
 
 ## RN42 Module ##
 [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42)
