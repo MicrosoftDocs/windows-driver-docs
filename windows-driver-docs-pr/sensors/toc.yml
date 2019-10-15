@@ -1,14 +1,12 @@
 - name: "Universal sensors driver model"
   href: overview-of-converged-sensor-driver-model.md
 - name: "Windows sensors driver reference"
-#Auto-expanded node
   items:
   - name: "Sensor types"
     href: sensor-types.md
   - name: "Sensor categories"
     href: sensor-categories.md
   - name: "Sensors threshold configuration"
-# Auto-expanded node
     items: 
     - name: "Sensors thresholds overview"
       href: sensor-thresholds-v2.md
@@ -25,7 +23,6 @@
     - name: "Proximity sensor thresholds"
       href: proximity-sensor-thresholds.md
   - name: "Sensors helper functions"
-# Auto-expanded node
     items: 
     - name: "Marshalling helper functions"
       href: marshalling-helper-functions.md
@@ -40,7 +37,6 @@
     - name: "Collection list legacy helpers"
       href: collection-list-legacy-helpers.md
   - name: "Sensor data fields"
-# Auto-expanded node
     items: 
       - name: "Data fields overview"
         href: common-data-fields.md
@@ -75,7 +71,6 @@
       - name: "Custom sensor data fields"
         href: custom-sensor-data-fields.md
   - name: "Sensor properties"
-# Auto-expanded node
     items: 
       - name: "Common sensor properties"
         href: common-sensor-properties.md
@@ -94,7 +89,6 @@
   - name: "Sensors Windows 10 Mobile ACPI entries"
     href: sensors-acpi-entries.md
 - name: "Programming Guide"
-# Auto-expanded node
   items: 
     - name: "How to Build a Universal Sensor Driver"
       href: how-to-build-a-universal-sensor-driver.md
@@ -135,12 +129,10 @@
     - name: "Fusion Sensor Implementation Details"
       href: fusion-sensor-implementation-details.md
 - name: "Testing Windows sensor hardware, drivers, and apps"
-# Auto-expanded node
   items:
   - name: "Sensor Testing Sources"
     href: testing-sensor-landing.md
   - name: "Building and Using the Microsoft Ambient Light Tool (MALT)"
-# Auto-expanded node
     items:
     - name: "Building a Light Testing Tool"
       href: testing-MALT-building-a-light-testing-tool.md
@@ -155,24 +147,20 @@
     - name: "Microcontroller Commands"
       href: testing-MALT-microcontroller-commands.md
 - name: "Previous Versions"
-# Auto-expanded node
   items: 
   - name: "Windows 8.1 new sensor features and improvements"
     href: new-sensor-features-and-improvements-for-windows-8-1.md
   - name: "Windows 8.1 sensor driver design guide"
-# Auto-expanded node
     items: 
     - name: "Introduction to the Sensor and Location Platform in Windows"
       href: introduction-to-the-sensor-and-location-platform-in-windows.md
     - name: "Sensor Driver Overview"
-# Auto-expanded node
       items: 
       - name: "Architecture Overview"
         href: architecture-overview-for-sensor-drivers.md
       - name: "About the Sensor Class Extension"
         href: about-the-sensor-class-extension.md
       - name: "About the Interfaces"
-# Auto-expanded node
         items: 
         - name: "About ISensorClassExtension"
           href: about-isensorclassextension.md
@@ -183,7 +171,6 @@
       - name: "About Sensor Driver Events"
         href: about-sensor-driver-events.md
       - name: "Sensor Constants"
-# Auto-expanded node
         items: 
         - name: "Sensor constants overview"
           href: about-sensor-constants.md
@@ -194,7 +181,6 @@
         - name: "Sensor Icon Constants"
           href: sensor-icon-constants.md
         - name: "Sensor Categories, Types, and Data Fields"
-# Auto-expanded node
           items: 
           - name: "SENSOR_CATEGORY_ALL"
             href: sensor-category-all.md
@@ -217,7 +203,6 @@
           - name: "SENSOR_CATEGORY_SCANNER"
             href: sensor-category-scanner.md
   - name: "Windows 8.1 sensor driver programming guide"
-# Auto-expanded node
     items: 
       - name: "Considerations for Writing a Sensor Driver"
         href: considerations-for-writing-a-sensor-driver.md
@@ -240,7 +225,6 @@
       - name: "Supporting Ambient Light Sensors"
         href: supporting-ambient-light-sensors.md
   - name: "Windows 8.1 sensor driver logic walkthrough"
-# Auto-expanded node
     items: 
       - name: "Sensor Driver Logic"
         href: driver-logic--pseudo-code-.md
@@ -271,7 +255,6 @@
       - name: "Known Issues"
         href: known-issues.md
   - name: "Windows 8.1 sample driver getting started"
-# Auto-expanded node
     items: 
     - name: "SpbAccelerometer sensor sample driver"
       href: spbaccelerometer-driver-cookbook.md
