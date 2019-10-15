@@ -1,99 +1,96 @@
 - name: "Universal sensors driver model"
   href: overview-of-converged-sensor-driver-model.md
 - name: "Windows sensors driver reference"
+#Auto-expanded node
+  items:
+  - name: "Sensor types"
+    href: sensor-types.md
+  - name: "Sensor categories"
+    href: sensor-categories.md
+  - name: "Sensors threshold configuration"
 # Auto-expanded node
-  items: 
-  - name: "Universal sensors driver reference"
+    items: 
+    - name: "Sensors thresholds overview"
+      href: sensor-thresholds-v2.md
+    - name: "Accelerometer thresholds"
+      href: accelerometer-thresholds.md
+    - name: "Magnetometer thresholds"
+      href: magnetometer-thresholds.md
+    - name: "Gyroscope thresholds"
+      href: gyroscope-thresholds.md
+    - name: "Orientation sensor thresholds"
+      href: orientation-sensor-thresholds.md
+    - name: "Light sensor thresholds"
+      href: light-sensor-thresholds.md
+    - name: "Proximity sensor thresholds"
+      href: proximity-sensor-thresholds.md
+  - name: "Sensors helper functions"
 # Auto-expanded node
-    items:
-    - name: "Sensor types"
-      href: sensor-types.md
-    - name: "Sensor categories"
-      href: sensor-categories.md
-    - name: "Sensor data fields"
-    - name: "Sensors threshold configuration"
+    items: 
+    - name: "Marshalling helper functions"
+      href: marshalling-helper-functions.md
+    - name: "Time stamp helper"
+      href: timestamp-helper.md
+    - name: "PropVariant helpers"
+      href: propvariant-helpers.md
+    - name: "Collection list helpers"
+      href: collection-list-helpers.md
+    - name: "Collection list serialization helpers"
+      href: collection-list-serialization-helpers.md
+    - name: "Collection list legacy helpers"
+      href: collection-list-legacy-helpers.md
+  - name: "Sensor data fields"
 # Auto-expanded node
-      items: 
-      - name: "Sensors thresholds overview"
-        href: sensor-thresholds-v2.md
-      - name: "Accelerometer thresholds"
-        href: accelerometer-thresholds.md
-      - name: "Magnetometer thresholds"
-        href: magnetometer-thresholds.md
-      - name: "Gyroscope thresholds"
-        href: gyroscope-thresholds.md
-      - name: "Orientation sensor thresholds"
-        href: orientation-sensor-thresholds.md
-      - name: "Light sensor thresholds"
-        href: light-sensor-thresholds.md
-      - name: "Proximity sensor thresholds"
-        href: proximity-sensor-thresholds.md
-    - name: "Sensors helper functions"
+    items: 
+      - name: "Data fields overview"
+        href: common-data-fields.md
+      - name: "Accelerometer data fields"
+        href: accelerometer-data-fields.md
+      - name: "Linear accelerometer data fields"
+        href: linear-accelerometer-data-fields.md
+      - name: "Magnetometer data fields"
+        href: magnetometer-data-fields.md
+      - name: "Geomagnetic orientation"
+        href: geomagnetic-orientation.md
+      - name: "Gravity vector data fields"
+        href: gravity-vector-data-fields.md
+      - name: "Gyroscope data fields"
+        href: gyroscope-data-fields.md
+      - name: "Light sensor data fields"
+        href: light-sensor-data-fields.md
+      - name: "Orientation sensor data fields"
+        href: device-orientation-sensor-data-fields.md
+      - name: "Proximity sensor data fields"
+        href: proximity-sensor-data-fields.md
+      - name: "Barometer data fields"
+        href: barometer-sensor-data-fields.md
+      - name: "Simple device orientation sensor data fields"
+        href: simple-device-orientation-sensor-data-fields.md
+      - name: "Activity detection sensor data fields"
+        href: activity-detection-sensor-data-fields.md
+      - name: "Pedometer data fields"
+        href: pedometer-data-fields.md
+      - name: "Relative orientation sensor data fields"
+        href: relative-orientation-data-fields.md
+      - name: "Custom sensor data fields"
+        href: custom-sensor-data-fields.md
+  - name: "Sensor properties"
 # Auto-expanded node
-      items: 
-        - name: "Marshalling helper functions"
-          href: marshalling-helper-functions.md
-        - name: "Time stamp helper"
-          href: timestamp-helper.md
-        - name: "PropVariant helpers"
-          href: propvariant-helpers.md
-        - name: "Collection list helpers"
-          href: collection-list-helpers.md
-        - name: "Collection list serialization helpers"
-          href: collection-list-serialization-helpers.md
-        - name: "Collection list legacy helpers"
-          href: collection-list-legacy-helpers.md
-# Auto-expanded node
-      items: 
-        - name: "Data fields overview"
-          href: common-data-fields.md
-        - name: "Accelerometer data fields"
-          href: accelerometer-data-fields.md
-        - name: "Linear accelerometer data fields"
-          href: linear-accelerometer-data-fields.md
-        - name: "Magnetometer data fields"
-          href: magnetometer-data-fields.md
-        - name: "Geomagnetic orientation"
-          href: geomagnetic-orientation.md
-        - name: "Gravity vector data fields"
-          href: gravity-vector-data-fields.md
-        - name: "Gyroscope data fields"
-          href: gyroscope-data-fields.md
-        - name: "Light sensor data fields"
-          href: light-sensor-data-fields.md
-        - name: "Orientation sensor data fields"
-          href: device-orientation-sensor-data-fields.md
-        - name: "Proximity sensor data fields"
-          href: proximity-sensor-data-fields.md
-        - name: "Barometer data fields"
-          href: barometer-sensor-data-fields.md
-        - name: "Simple device orientation sensor data fields"
-          href: simple-device-orientation-sensor-data-fields.md
-        - name: "Activity detection sensor data fields"
-          href: activity-detection-sensor-data-fields.md
-        - name: "Pedometer data fields"
-          href: pedometer-data-fields.md
-        - name: "Relative orientation sensor data fields"
-          href: relative-orientation-data-fields.md
-        - name: "Custom sensor data fields"
-          href: custom-sensor-data-fields.md
-    - name: "Sensor properties"
-# Auto-expanded node
-      items: 
-        - name: "Common sensor properties"
-          href: common-sensor-properties.md
-        - name: "Enumeration properties"
-          href: enumeration-properties.md
-        - name: "Proximity sensor property"
-          href: proximity-sensor-property.md
-        - name: "Light sensor property"
-          href: light-sensor-property.md
-        - name: "Orientation sensor property"
-          href: orientation-sensor-property.md
-        - name: "Activity sensor property"
-          href: activity-sensor-properties.md
-        - name: "Pedometer sensor property"
-          href: pedometer-sensor-property.md
+    items: 
+      - name: "Common sensor properties"
+        href: common-sensor-properties.md
+      - name: "Enumeration properties"
+        href: enumeration-properties.md
+      - name: "Proximity sensor property"
+        href: proximity-sensor-property.md
+      - name: "Light sensor property"
+        href: light-sensor-property.md
+      - name: "Orientation sensor property"
+        href: orientation-sensor-property.md
+      - name: "Activity sensor property"
+        href: activity-sensor-properties.md
+      - name: "Pedometer sensor property"
+        href: pedometer-sensor-property.md
   - name: "Sensors Windows 10 Mobile ACPI entries"
     href: sensors-acpi-entries.md
 - name: "Programming Guide"
@@ -165,8 +162,6 @@
   - name: "Windows 8.1 sensor driver design guide"
 # Auto-expanded node
     items: 
-    - name: "Windows 8.1 sensor driver design guide"
-      href: sensor-driver-design-guide.md
     - name: "Introduction to the Sensor and Location Platform in Windows"
       href: introduction-to-the-sensor-and-location-platform-in-windows.md
     - name: "Sensor Driver Overview"
@@ -224,29 +219,26 @@
   - name: "Windows 8.1 sensor driver programming guide"
 # Auto-expanded node
     items: 
-      - name: "Writing a Sensor Device Driver"
-# Auto-expanded node
-        items: 
-        - name: "Considerations for Writing a Sensor Driver"
-          href: considerations-for-writing-a-sensor-driver.md
-        - name: "Creating a Sensor Driver"
-          href: creating-the-driver.md
-        - name: "Creating a Persistent Unique Identifier for a Sensor"
-          href: creating-a-persistent-unique-identifier.md
-        - name: "Raising Sensor Events"
-          href: raising-events.md
-        - name: "Filtering Data"
-          href: filtering-data.md
-        - name: "Using Vector Types with Sensors"
-          href: using-vector-types.md
-        - name: "Defining Custom Values for Sensor Constants"
-          href: defining-custom-values-for-constants.md
-        - name: "Specifying a Sensor Icon"
-          href: specifying-an-icon.md
-        - name: "Sensor Driver Best Practices"
-          href: sensor-driver-best-practices.md
-        - name: "Supporting Ambient Light Sensors"
-          href: supporting-ambient-light-sensors.md
+      - name: "Considerations for Writing a Sensor Driver"
+        href: considerations-for-writing-a-sensor-driver.md
+      - name: "Creating a Sensor Driver"
+        href: creating-the-driver.md
+      - name: "Creating a Persistent Unique Identifier for a Sensor"
+        href: creating-a-persistent-unique-identifier.md
+      - name: "Raising Sensor Events"
+        href: raising-events.md
+      - name: "Filtering Data"
+        href: filtering-data.md
+      - name: "Using Vector Types with Sensors"
+        href: using-vector-types.md
+      - name: "Defining Custom Values for Sensor Constants"
+        href: defining-custom-values-for-constants.md
+      - name: "Specifying a Sensor Icon"
+        href: specifying-an-icon.md
+      - name: "Sensor Driver Best Practices"
+        href: sensor-driver-best-practices.md
+      - name: "Supporting Ambient Light Sensors"
+        href: supporting-ambient-light-sensors.md
   - name: "Windows 8.1 sensor driver logic walkthrough"
 # Auto-expanded node
     items: 
