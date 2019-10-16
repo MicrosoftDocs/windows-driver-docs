@@ -232,6 +232,8 @@ For a PEP_NOTIFY_PPM_PERF_CONSTRAINTS notification, the AcceptProcessorNotificat
 PASSIVE_LEVEL
  
 ## PEP_NOTIFY_PPM_PERF_SET 
+ 
+This notification informs the PEP that the current operating performance of the processor should be changed.
 
 The following describe parameters to [*AcceptProcessorNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pepfx/nc-pepfx-pepcallbacknotifyppm).
 
@@ -246,7 +248,6 @@ The value **PEP_NOTIFY_PPM_PERF_SET**.
 *Data*
 
 A pointer to a [**PEP_PPM_PERF_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pep_x/ns-pep_x-_pep_ppm_perf_set) structure.
- Informs the PEP that the current operating performance of the processor should be changed.
 
 **Remarks**
 
@@ -658,19 +659,27 @@ Note  The PEP must not queue any work from this notification. The processors wil
 DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_PERF_SET_STATE 
-Handle
+
+The following describe parameters to [*AcceptProcessorNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pepfx/nc-pepfx-pepcallbacknotifyppm).
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
-The value PEP_NOTIFY_PPM_PERF_SET_STATE.
+*Notification*
 
-Data
-A pointer to a PEP_PPM_PERF_SET_STATE structure.
- Used at runtime to set the current operating performance state of the processor. If the PEP has autonomous hardware capable of boosting/reducing performance without a performance set request, it should limit the requests from autonomous hardware based on the minimum performance state and/or maximum performance state, and target the desired performance state. Otherwise, it should run at exactly the desired performance state.  
+The value **PEP_NOTIFY_PPM_PERF_SET_STATE**.
+
+*Data*
+
+A pointer to a [**PEP_PPM_PERF_SET_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pep_x/ns-pep_x-_pep_ppm_perf_set_state) structure.
+
+**Remarks**
+
+Used at runtime to set the current operating performance state of the processor. If the PEP has autonomous hardware capable of boosting/reducing performance without a performance set request, it should limit the requests from autonomous hardware based on the minimum performance state and/or maximum performance state, and target the desired performance state. Otherwise, it should run at exactly the desired performance state.  
 
 This notification is sent at DISPATCH_LEVEL. If scheduler directed performance states are in use, the PEP must adhere to the restrictions in section 3.3.6 when processing this notification. It may be sent while executing on any processor. 
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_QUERY_DISCRETE_PERF_STATES 
 Handle
