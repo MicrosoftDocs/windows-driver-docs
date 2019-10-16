@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ---
 
 # Processor power management (PPM) notifications
-Each processor power management (PPM) notification that the PEP's AcceptProcessorNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
+Each processor power management (PPM) notification that the PEP's [*AcceptProcessorNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pepfx/nc-pepfx-pepcallbacknotifyppm) callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
 
 In this call, the Notification parameter is set to a PEP_NOTIFY_PPM_XXX constant value that indicates the notification type. The Data parameter points to a PEP_PPM_XXX structure type that is associated with this notification type.
 
@@ -239,7 +239,7 @@ Notification
 The value PEP_NOTIFY_PPM_PERF_SET.
 
 Data
-A pointer to a PEP_PPM_PERF_SET structure.
+A pointer to a [**PEP_PPM_PERF_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pep_x/ns-pep_x-_pep_ppm_perf_set) structure.
  Informs the PEP that the current operating performance of the processor should be changed.
 
 The Windows power management framework (PoFx) sends this notification when it wants to change the current operating performance of the processor. This notification may be sent while executing on any processor.
