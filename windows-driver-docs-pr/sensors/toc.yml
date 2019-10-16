@@ -88,10 +88,8 @@
         href: pedometer-sensor-property.md
   - name: "Sensors Windows 10 Mobile ACPI entries"
     href: sensors-acpi-entries.md
-- name: "Programming Guide"
+- name: "Build and test a universal sensor driver"
   items: 
-    - name: "How to Build a Universal Sensor Driver"
-      href: how-to-build-a-universal-sensor-driver.md
     - name: "Set up your Development Environment"
       href: set-up-your-development-environment.md
     - name: "Prepare your Sensor Test Board"
