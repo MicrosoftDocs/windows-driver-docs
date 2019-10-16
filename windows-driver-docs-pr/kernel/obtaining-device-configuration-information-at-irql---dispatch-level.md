@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The method illustrated in the [Obtaining Device Configuration Information at IRQL = PASSIVE\_LEVEL](obtaining-device-configuration-information-at-irql---passive-level.md) section makes use of I/O request packets (IRPs) and therefore is only valid for drivers running at IRQL = PASSIVE\_LEVEL. Drivers running at IRQL = DISPATCH\_LEVEL must use a bus interface to obtain device configuration space data. To obtain this data, you can use a bus-specific interface or the system-supplied bus-independent bus interface, **BUS\_INTERFACE\_STANDARD**.
 
-The GUID_BUS_INTERFACE_STANDARD interface (defined in `wdmguids.h`) enables device drivers to make direct calls to parent bus driver routines instead of using I/O request packets (IRP) to communicate with the bus driver. In particular, this interface enables drivers to access routines that the bus driver provides for the following functions:
+The GUID_BUS_INTERFACE_STANDARD interface (defined in `wdmguid.h`) enables device drivers to make direct calls to parent bus driver routines instead of using I/O request packets (IRP) to communicate with the bus driver. In particular, this interface enables drivers to access routines that the bus driver provides for the following functions:
 
 -    Translating bus addresses 
 -    Retrieving a DMA adapter structure in cases where the bus adapter supports DMA 
