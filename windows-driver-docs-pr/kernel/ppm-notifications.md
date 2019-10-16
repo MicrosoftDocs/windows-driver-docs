@@ -232,21 +232,28 @@ For a PEP_NOTIFY_PPM_PERF_CONSTRAINTS notification, the AcceptProcessorNotificat
 PASSIVE_LEVEL
  
 ## PEP_NOTIFY_PPM_PERF_SET 
-Handle
+
+The following describe parameters to [*AcceptProcessorNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pepfx/nc-pepfx-pepcallbacknotifyppm).
+
+*Handle*
+
 A PEPHANDLE structure containing the device handle of the PEP for the target processor. If the notification does not target a specific processor, this will be NULL.
 
-Notification
-The value PEP_NOTIFY_PPM_PERF_SET.
+*Notification*
 
-Data
+The value **PEP_NOTIFY_PPM_PERF_SET**.
+
+*Data*
+
 A pointer to a [**PEP_PPM_PERF_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pep_x/ns-pep_x-_pep_ppm_perf_set) structure.
  Informs the PEP that the current operating performance of the processor should be changed.
 
+**Remarks**
+
 The Windows power management framework (PoFx) sends this notification when it wants to change the current operating performance of the processor. This notification may be sent while executing on any processor.
 
-For a PEP_NOTIFY_PPM_PERF_SET notification, the AcceptProcessorNotification routine is always called at IRQL = DISPATCH_LEVEL.
+For a PEP_NOTIFY_PPM_PERF_SET notification, the *AcceptProcessorNotification* routine is always called at IRQL = DISPATCH_LEVEL.
 
-DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_PARK_SELECTION 
 Handle
