@@ -1,7 +1,7 @@
 ---
 title: MB Multi-SIM Operations
 description: MB Multi-SIM Operations
-ms.date: 04/20/2017
+ms.date: 10/16/2019
 ms.localizationpriority: medium
 ---
 
@@ -397,6 +397,24 @@ The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of 
 | UICCSlotStateError | 6 | The UICC slot is occupied and powered on but the card is in an error state and cannot be used until it is next reset. |
 | UICCSlotStateActiveEsim | 7 | The card in the slot is an eSIM with an active profile and is ready to accept commands. |
 | UICCSlotStateActiveEsimNoProfiles | 8 | The card in the slot is an eSIM with no profiles (or no active profiles) and is ready to accept commands. |
+
+##### MBIM_MS_UICCSLOT_STATE transition guidance for multi-sim devices
+
+Conforming to the correct UICC slot state transitions ensures that the OS handles all changes properly and displays the correct toast notifications to the user.
+
+For the *SIM inserted* toast notification, the OS expects the embedded slot (SIM2/Slot 1) to be selected and the following state transition to occur upon the insertion of a SIM in the physical slot (SIM1/Slot 0).
+
+| Possible values of Slot 0 before SIM insertion | Possible values of Slot 0 after SIM insertion |
+| --- | --- |
+| UICCSlotStateEmpty | UICCSlotStateActive |
+| UICCSlotStateOffEmpty | <ul><li>UICCSlotStateActiveEsim</li><li>UICCSlotStateActiveEsimNoProfile</li></ul> |
+
+For the *SIM removed* toast notification, the OS expects the physical slot (SIM1/Slot 0) to be selected with a SIM inserted and the following state transition to occur upon the removal of the SIM from the physical slot (SIM1/Slot 0).
+
+| Possible values of Slot 0 before SIM removal | Possible values of Slot 0 after SIM removal |
+| --- | --- |
+| UICCSlotStateActive | UICCSlotStateEmpty |
+| <ul><li>UICCSlotStateActiveEsim</li><li>UICCSlotStateActiveEsimNoProfile</li></ul> | UICCSlotStateOffEmpty |
 
 #### Status Codes
 
