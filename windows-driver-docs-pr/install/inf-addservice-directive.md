@@ -242,26 +242,7 @@ For more information about how to specify security descriptors, see [Creating Se
 
 **Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 20H1 and above.
 
-**0x00000000** (SERVICE_SID_TYPE_NONE)
-
-Use this type to reduce application compatibility issues.
-
-**0x00000001** (SERVICE_SID_TYPE_UNRESTRICTED)
-
-When the service process is created, the service SID is added to the service process token with the following attributes: SE_GROUP_ENABLED_BY_DEFAULT | SE_GROUP_OWNER.
-
-**0x000000003** (SERVICE_SID_TYPE_RESTRICTED)
-
-This type includes SERVICE_SID_TYPE_UNRESTRICTED. The service SID is also added to the restricted SID list of the process token. Three additional SIDs are also added to the restricted SID list:
-* World SID S-1-1-0
-* Service logon SID
-* Write-restricted SID S-1-5-33
-
-One ACE that allows GENERIC_ALL access for the service logon SID is also added to the service process token object. 
-
-If there are multiple services hosted in the same process and one service has SERVICE_SID_TYPE_RESTRICTED, all services must have SERVICE_SID_TYPE_RESTRICTED.
-
-More details can be found on the [service_sid_info page](https://docs.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
+This entry can use any valid value as described in [SERVICE_SID_INFO](https://docs.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
 
 <a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
 
