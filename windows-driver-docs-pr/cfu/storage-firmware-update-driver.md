@@ -1,0 +1,340 @@
+---
+title: Storage Firmware Update (SFU)
+description: Provides information about Storage Firmware Update (SFU) 
+ms.date: 10/17/2019
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.localizationpriority: medium
+---
+
+# Storage Firmware Update
+
+## Storage Firmware Update (SFU) overview
+
+Modern servicing ensures the following:
+
+- Customers can trust that their devices are secure and are kept up to date without lost productivity.
+
+- All devices can update their firmware, drivers, operating system, and apps through Windows Update (WU).
+
+![modern servicing](images/modern-servicing.png)
+
+For Storage Firmware Update (SFU), this is implemented with the inbox **storfwupdate** driver.
+
+## Existing Storage Firmware Update (SFU) issues
+
+- Current storage device updates do not utilize WWindows Update (WU) for driver distribution or telemetry
+
+- Storage device vendors must provide a utility for storage firmware updates
+
+- Updates are shipped as Win32 or EFI apps which cannot run on S-mode devices
+
+- Existing documentation on [working with NVMe devices](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices#dont-update-firmware-through-the-pass-through-mechanism) recommends using storage IOCTLs:
+
+  - [IOCTL_STORAGE_FIRMWARE_GET_INFO](https://docs.microsoft.com/windows/win32/api/winioctl/ni-winioctl-ioctl_storage_firmware_get_info)
+
+  - [IOCTL_STORAGE_FIRMWARE_DOWNLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_firmware_download)
+
+  - [IOCTL_STORAGE_FIRMWARE_ACTIVATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_firmware_activate)
+
+## NVMe driver firmware update COMPAT requirements
+
+Device.Storage.ControllerDrive.NVMe.BasicFunction
+
+The device must have at least one upgradeable firmware slot.
+
+### 5.7 Firmware Commit
+
+Activation of a firmware image should be done without requiring a power cycle of the device.
+The activation process is expected to be achieved via a host-initiated reset, as described in section 8.1 of spec version 1.2a.
+Windows will utilize commit actions 001b or 010b when issuing a firmware commit command.
+Expected completion values for successful activation without a power cycle are 00h (generic success), 10h, or 11h.
+If 0Bh is returned as completion status, Windows will inform the user to perform a power cycle of the device. This is highly discouraged, as it prevents updating of firmware at OS runtime and causes significant workload disruption.
+
+### 5.8 Firmware Image Download
+
+The device must not fail I/O during the download phase and shall continue serving I/O.
+
+### Reference
+
+[Windows HW Cpmpat Req - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840)
+
+## Storage Firmware Update Solution Overview
+
+### 1. View Current NVMe Disk HWID
+
+TBD - Add screenshots and text procedures from video
+
+### 2. View Current NVMe Disk Firmware Version (Y9)
+
+TBD - Add screenshots and text procedures from video
+
+### 3. View and install the extension INF
+
+TBD - Add screenshots and text procedures from video
+
+### 4. View new SWC node
+
+TBD - Add screenshots and text procedures from video
+
+### 5. View and install the NVMe disk firmware update (102)
+
+TBD - Add screenshots and text procedures from video
+
+### 6. View the updated HWID revision
+
+TBD - Add screenshots and text procedures from video
+
+## Storage Firmware Update Solution Details
+
+![storage firmware update details](storage-firmware-update-details.png)
+
+[Adding firmware update logic to a Microsoft-supplied driver](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update#adding-firmware-update-logic-to-a-microsoft-supplied-driver)
+
+- Inbox support for storage firmware update
+
+- Create second DeviceNode for firmware update
+
+- IHV/OEM storage firmware update package (INF +firmware binary) targets second DeviceNode and only contains firmware payload
+
+## Component Firmware Update
+
+### CFU Over HID Solution Overview
+
+- Primary component's current FW
+
+- Firmware update package (containing firmware files)
+
+- Firmware update driver package
+
+## Storage Firmware Update (StorFwUpdate) driver
+
+Utilizes User Mode Driver Framework (UMDF v2)
+
+Loads as WDF user mode reflector (StorFwUpdate.dll)
+
+Available in 18963+
+
+Supports NVMe drives
+
+Device.Storage.ControllerDrive.NVMe
+
+in sections 5.7 and 5.8.
+
+No RAID support
+
+### Step1: Extension INF to create 2nd DEV Node
+
+OEM creates Extension INF to create Software Component Node (\SWC\\*) for target NVMe disk
+
+Must utilize CHID to limit distribution
+
+### Step2: Storage firmware update INF
+
+Create Storage Firmware INF to target SWC\\* created in Step #1
+
+Include references to inbox driver Include & Needs directives*
+
+Store firmware payload
+
+Must utilize CHID to limit distribution
+
+Storage Samples
+
+Primary component's current FW
+
+FW update package contents
+
+- New FW Image(s)
+
+- Primary component FW - CFU aware
+
+- Not mandatory for each component
+
+- An Offer for each FW image
+
+FW Update Driver Package
+
+- Common for all components
+
+- FW Update Driver
+
+- DMF Driver
+
+- UMDF 2.0 Driver
+
+- HID Client Driver
+
+- Loads on FW Update HID TLC
+
+- Sends FW offers and images.
+
+- Oblivious to firmware image contents.
+
+- INF
+
+- Hardware ID for all CFU components
+
+## OEM Disk Extension INF sample
+
+```INF
+;/*++
+;
+;Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;Module Name:
+;    OEMDiskExtnPackage.inx
+;
+;Abstract:
+;    INF file for installing the OEMDiskExtnPackage. This will create a SWC\ DevNode
+;    which will serve as the target HWID for the Disk storage firmware package
+;--*/
+
+[Version]
+Signature="$Windows NT$"
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider=%ManufacturerName%
+ExtensionId = {A789DC2B-128A-4BF9-AA34-1B6590A0113D}
+CatalogFile=delta.cat
+DriverVer = 08/26/2019,1.0.0.0
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%OEMDiskExtnPackage.DeviceDesc%=StorageIHV1-87B, SCSI\DiskNVMe____StorageIHV1-87B
+%OEMDiskExtnPackage.DeviceDesc%=StorageIHV1-87A, SCSI\DiskNVMe____StorageIHV1-87A
+%OEMDiskExtnPackage.DeviceDesc%=StorageIHV2_KUS02020, SCSI\DiskNVMe____StorageIHV2_KUS02020
+%OEMDiskExtnPackage.DeviceDesc%=StorageIHV3_KBG40ZPZ512G, SCSI\DiskNVMe____KBG40ZPZ512G_TOS00Y9
+%OEMDiskExtnPackage.DeviceDesc%=StorageIHV3_KBG40ZPZ512G, SCSI\DiskNVMe____KBG40ZPZ512G_TOS0015
+
+[StorageIHV1-87B.NT]
+[StorageIHV1-87B.NT.Components]
+AddComponent = StorageIHV1-87B_component,,StorageIHV1-87B_ComponentInstall
+
+[StorageIHV1-87B_ComponentInstall]
+ComponentIds=StorageIHV1-87B
+
+[StorageIHV1-87A.NT]
+[StorageIHV1-87A.NT.Components]
+AddComponent = StorageIHV1-87A_component,,StorageIHV1-87A_ComponentInstall
+
+[StorageIHV1-87A_ComponentInstall]
+ComponentIds=StorageIHV1-87A
+
+[StorageIHV2_KUS02020.NT]
+[StorageIHV2_KUS02020.NT.Components]
+AddComponent = StorageIHV2_KUS02020_component,,StorageIHV2_KUS02020_ComponentInstall
+
+[StorageIHV2_KUS02020_ComponentInstall]
+ComponentIds=StorageIHV2_KUS02020
+
+[StorageIHV3_KBG40ZPZ512G.NT]
+[StorageIHV3_KBG40ZPZ512G.NT.Components]
+AddComponent = StorageIHV3_KBG40ZPZ512G_component,,StorageIHV3_KBG40ZPZ512G_ComponentInstall
+
+[StorageIHV3_KBG40ZPZ512G_ComponentInstall]
+ComponentIds=StorageIHV3_KBG40ZPZ512G
+
+;*****************************************
+; Strings section
+;*****************************************
+
+[Strings]
+ManufacturerName = "OEM"
+DiskName = "OEM Disk Extn package Installation Disk"
+OEMDiskExtnPackage.DeviceDesc = "Disk Extn Package"
+OEMDiskExtnPackage.SVCDESC = "Disk Extn Package"
+
+;Non-Localizable
+REG_EXPAND_SZ          = 0x00020000
+REG_DWORD              = 0x00010001
+REG_MULTI_SZ           = 0x00010000
+REG_BINARY             = 0x00000001
+REG_SZ                 = 0x00000000
+
+SERVICE_KERNEL_DRIVER  = 0x1
+SERVICE_ERROR_IGNORE   = 0x0
+SERVICE_ERROR_NORMAL   = 0x1
+SERVICE_ERROR_SEVERE   = 0x2
+SERVICE_ERROR_CRITICAL = 0x3
+```
+
+## Disk Firmware INF sample
+
+```INF
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:               StorageIHV3-Firmware-Update.inx
+;
+; Description:        Driver installation file for firmware update.
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+; Licensed under the MIT license.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%ManufacturerName%
+CatalogFile=delta.cat
+DriverVer = 08/26/2019,11.37.9.948
+PnPLockDown=1
+
+[SourceDisksNames]
+1= %DiskName%
+
+[DestinationDirs]
+StorFwUpdateOem.CopyFiles=13
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%StorFwUpdateOem.DeviceDesc%=StorFwUpdateOem, SWC\StorageIHV3_KBG40ZPZ512G
+
+[StorFwUpdateOem.NT]
+Include            = StorFwUpdate.inf
+Needs              = StorFwUpdate.NT
+CopyFiles          = StorFwUpdateOem.CopyFiles
+
+[StorFwUpdateOem.NT.Wdf]
+Include            = StorFwUpdate.inf
+Needs              = StorFwUpdate.NT.Wdf
+
+[StorFwUpdateOem.NT.HW]
+AddReg = StorFwUpdateOem_HWAddReg
+
+[StorFwUpdateOem_HWAddReg]
+HKR,,FriendlyName,,%FwUpdateFriendlyName%
+
+; Specify the location of the firmware offer and payload file in the registry.
+; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
+; in driver store.
+;
+HKR,0D9EB3D6-6F14-4E8A-811B-F3B19F7ED98A\0,FirmwareImageVersion, 0x00000000, "AEMS0102"
+HKR,0D9EB3D6-6F14-4E8A-811B-F3B19F7ED98A\0,FirmwareFileName, 0x00000000, %13%\AEMS0102.sig
+
+[SourceDisksFiles]
+AEMS0102.sig=1
+
+[StorFwUpdateOem.CopyFiles]
+AEMS0102.sig
+
+[StorFwUpdateOem.NT.Services]
+Include            = StorFwUpdate.inf
+Needs              = StorFwUpdate.NT.Services
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName="{Your Manufacturer Name}"
+StorFwUpdateOem.DeviceDesc = "Storage Firmware Update (StorageIHV3) 1"
+DiskName = "Storage Firmware Update Installation Disk"
+FwUpdateFriendlyName= "StorageIHV3 Firmware Update"
+```
