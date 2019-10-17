@@ -133,10 +133,12 @@
     - name: "SCSI Port Driver"
 # Auto-expanded node
       items: 
-      - name: "SCSI Port Driver"
-        href: scsi-port-driver.md
+      - name: "SCSI Port Driver Overview"
+        href: scsi-port-driver-overview.md
       - name: "Capabilities Provided by SCSI Port"
         href: capabilities-provided-by-scsi-port.md
+      - name: "SCSI Port Driver Support Routines"
+        href: scsi-port-driver-support-routines.md
       - name: "SCSI Port's Interface with the Storage Class Driver"
 # Auto-expanded node
         items: 
@@ -170,8 +172,8 @@
     - name: "Storport Driver"
 # Auto-expanded node
       items: 
-      - name: "Storport Driver"
-        href: storport-driver.md
+      - name: "Storport Driver Overview"
+        href: storport-driver-overview.md
       - name: "Life Cycle of a Storport Driver"
         href: life-cycle-of-a-storport-driver.md
       - name: "History of Storport"
@@ -183,8 +185,8 @@
           href: capabilities-provided-by-storport.md
         - name: "Storport driver support routines"
           href: storport-driver-support-routines.md
-        - name: "Storport driver miniport routines"
-          href: storport-driver-miniport-routines.md
+        - name: "Storport miniport driver routines"
+          href: storport-miniport-driver-routines.md
       - name: "Storport’s Interface with the Storage Class Driver"
 # Auto-expanded node
         items: 
@@ -270,12 +272,14 @@
     - name: "ATA Port Driver"
 # Auto-expanded node
       items: 
-      - name: "ATA Port Driver"
-        href: ata-port-driver.md
+      - name: "ATA Port Driver Overview"
+        href: ata-port-driver-overview.md
       - name: "ATA Port's Interface with the Storage Class Driver"
         href: ata-port-s-interface-with-the-storage-class-driver.md
       - name: "ATA Port's Interface with ATA Miniport Drivers"
         href: ata-port-s-interface-with-ata-miniport-drivers.md
+      - name: "ATA port driver support routines"
+        href: ata-port-driver-support-routines.md
       - name: "ATA Port I/O Model"
 # Auto-expanded node
         items: 
@@ -335,11 +339,11 @@
         href: restrictions-on-scsi-miniport-drivers-that-manage-the-boot-drive.md
       - name: "Error Handling in SCSI Miniport Drivers"
         href: error-handling-in-scsi-miniport-drivers.md
-      - name: "Required and Optional SCSI Miniport Driver Routines"
+      - name: "SCSI Miniport Driver Routines"
 # Auto-expanded node
         items: 
-        - name: "Required and Optional SCSI Miniport Driver Routines"
-          href: required-and-optional-scsi-miniport-driver-routines.md
+        - name: "SCSI Miniport Driver Routines"
+          href: scsi-miniport-driver-routines.md
         - name: "SCSI Miniport Driver's DriverEntry Routine"
           href: scsi-miniport-driver-s-driverentry-routine.md
         - name: "DriverEntry of SCSI Miniport Driver"
@@ -551,12 +555,14 @@
   - name: "Tape Drivers"
 # Auto-expanded node
     items: 
-    - name: "Tape Drivers"
-      href: tape-drivers.md
+    - name: "Tape Drivers Overview"
+      href: tape-drivers-overview.md
     - name: "Using the Tape Class Driver"
       href: using-the-tape-class-driver.md
-    - name: "Required and Optional Tape Miniclass Routines"
-      href: required-and-optional-tape-miniclass-routines.md
+    - name: "Tape Class Driver Routines"
+      href: tape-class-driver-routines.md
+    - name: "Tape Miniclass Driver Routines"
+      href: tape-miniclass-driver-routines.md
     - name: "DriverEntry of Tape Miniclass Driver"
       href: driverentry-of-tape-miniclass-driver.md
     - name: "Storing Tape Miniclass Context in Optional Extensions"
