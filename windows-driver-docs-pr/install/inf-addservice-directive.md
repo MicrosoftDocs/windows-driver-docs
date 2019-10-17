@@ -120,6 +120,8 @@ ServiceBinary=path-to-service
 [LoadOrderGroup=load-order-group-name]
 [Dependencies=depend-on-item-name[,depend-on-item-name]
 [Security="security-descriptor-string"]...]
+[ServiceSidType=value]
+[DelayedAutoStart=true/false]
 ```
 
 Each *service-install-section* must have at least the **ServiceType**, **StartType**, **ErrorControl**, and **ServiceBinary** entries as shown here. However, the remaining entries are optional.
@@ -135,40 +137,6 @@ Optionally specifies a string that describes the service, usually expressed as a
 This string gives the user more information about the service than the **DisplayName**. For example, the **DisplayName** might be something like "DHCP Client" and the Description might be something like "Manages network configuration by registering and updating IP addresses and DNS names".
 
 The *description-string* should be long enough to be descriptive but not so long as to be awkward. If a *description-string* contains any %*strkey*% tokens, each token can represent a maximum of 511 characters. The total string, after any string token substitutions, should not exceed 1024 characters.
-
-<a href="" id="description-description-string"></a>**ServiceSidType**=*value*
-
-**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 20H1 and above.
-
-**0x00000000** (SERVICE_SID_TYPE_NONE)
-
-Use this type to reduce application compatibility issues.
-
-**0x00000001** (SERVICE_SID_TYPE_UNRESTRICTED)
-
-When the service process is created, the service SID is added to the service process token with the following attributes: SE_GROUP_ENABLED_BY_DEFAULT | SE_GROUP_OWNER.
-
-**0x000000003** (SERVICE_SID_TYPE_RESTRICTED)
-
-This type includes SERVICE_SID_TYPE_UNRESTRICTED. The service SID is also added to the restricted SID list of the process token. Three additional SIDs are also added to the restricted SID list:
-* World SID S-1-1-0
-* Service logon SID
-* Write-restricted SID S-1-5-33
-
-One ACE that allows GENERIC_ALL access for the service logon SID is also added to the service process token object. 
-
-If there are multiple services hosted in the same process and one service has SERVICE_SID_TYPE_RESTRICTED, all services must have SERVICE_SID_TYPE_RESTRICTED.
-
-More details can be found on the [service_sid_info page](https://docs.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
-
-<a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
-
-**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 20H1 and above.
-
-Contains the delayed auto-start setting of an auto-start service.
-
-If this member is TRUE, the service is started after other auto-start services are started plus a short delay. Otherwise, the service is started during system boot.
-This setting is ignored unless the service is an auto-start service.
 
 <a href="" id="servicetype-type-code"></a>**ServiceType**=*type-code*  
 The type-code for a kernel-mode device driver must be set to 0x00000001 (SERVICE_KERNEL_DRIVER).
@@ -269,6 +237,43 @@ Specifies a security descriptor, to be applied to the service. This security des
 For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
+
+<a href="" id="description-description-string"></a>**ServiceSidType**=*value*
+
+**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 20H1 and above.
+
+**0x00000000** (SERVICE_SID_TYPE_NONE)
+
+Use this type to reduce application compatibility issues.
+
+**0x00000001** (SERVICE_SID_TYPE_UNRESTRICTED)
+
+When the service process is created, the service SID is added to the service process token with the following attributes: SE_GROUP_ENABLED_BY_DEFAULT | SE_GROUP_OWNER.
+
+**0x000000003** (SERVICE_SID_TYPE_RESTRICTED)
+
+This type includes SERVICE_SID_TYPE_UNRESTRICTED. The service SID is also added to the restricted SID list of the process token. Three additional SIDs are also added to the restricted SID list:
+* World SID S-1-1-0
+* Service logon SID
+* Write-restricted SID S-1-5-33
+
+One ACE that allows GENERIC_ALL access for the service logon SID is also added to the service process token object. 
+
+If there are multiple services hosted in the same process and one service has SERVICE_SID_TYPE_RESTRICTED, all services must have SERVICE_SID_TYPE_RESTRICTED.
+
+More details can be found on the [service_sid_info page](https://docs.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
+
+<a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
+
+**Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 20H1 and above.
+
+Contains the delayed auto-start setting of an auto-start service.
+
+If this member is TRUE, the service is started after other auto-start services are started plus a short delay. Otherwise, the service is started during system boot.
+
+This setting is ignored unless the service is an auto-start service.
+
+For more information, see [this page](https://docs.microsoft.com/en-us/windows/win32/api/winsvc/ns-winsvc-service_delayed_auto_start_info).
 
 ### Specifying Driver Load Order
 
