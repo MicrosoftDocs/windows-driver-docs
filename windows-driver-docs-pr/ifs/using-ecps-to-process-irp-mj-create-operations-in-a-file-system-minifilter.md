@@ -2,20 +2,19 @@
 title: Using ECPs to Process IRP_MJ_CREATE in File System Filter Drivers
 description: Using ECPs to Process IRP_MJ_CREATE Operations in a File System Filter Driver
 ms.assetid: 969709a9-cdca-4a1a-95a0-0bb89cd17693
-ms.date: 04/20/2017
+ms.date: 10/16/2019
 ms.localizationpriority: medium
 ---
 
-# Using ECPs to Process IRP\_MJ\_CREATE Operations in a File System Filter Driver
+# Using ECPs to Process IRP_MJ_CREATE Operations in a File System Filter Driver
 
-
-You can use ECPs in your file system filter driver to process [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operations. Your file system filter driver can call the routines in the following sections to retrieve, acknowledge, add, and remove ECPs for the **IRP\_MJ\_CREATE** operation. You can also determine the operating-system space from which the ECPs originated.
+You can use ECPs in your file system filter driver to process [**IRP_MJ_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operations. Your file system filter driver can call the routines in the following sections to retrieve, acknowledge, add, and remove ECPs for the **IRP_MJ_CREATE** operation. You can also determine the operating-system space from which the ECPs originated.
 
 ### <span id="Retrieving_ECPs"></span><span id="retrieving_ecps"></span><span id="RETRIEVING_ECPS"></span>Retrieving ECPs
 
-Your file system filter driver can follow these steps to retrieve ECPs for the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation:
+Your file system filter driver can follow these steps to retrieve ECPs for the [**IRP_MJ_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation:
 
-1.  Call the [**FltGetEcpListFromCallbackData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetecplistfromcallbackdata) or [**FsRtlGetEcpListFromIrp**](https://msdn.microsoft.com/library/windows/hardware/ff546015) routine to retrieve a pointer to an ECP context structure list (ECP\_LIST) that is associated with the create operation.
+1.  Call the [**FltGetEcpListFromCallbackData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetecplistfromcallbackdata) or [**FsRtlGetEcpListFromIrp**](https://msdn.microsoft.com/library/windows/hardware/ff546015) routine to retrieve a pointer to an ECP context structure list (ECP_LIST) that is associated with the create operation.
 
 2.  Perform either of the following operations:
     -   Call the [**FltGetNextExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetnextextracreateparameter) or [**FsRtlGetNextExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff546028) routine to retrieve a pointer to the next (or first) ECP context structure in the ECP list.
@@ -23,29 +22,29 @@ Your file system filter driver can follow these steps to retrieve ECPs for the [
 
 ### <span id="Setting_ECPs"></span><span id="setting_ecps"></span><span id="SETTING_ECPS"></span>Setting ECPs
 
-To set ECPs for the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation, your file system filter driver can first either retrieve an existing ECP context structure list (ECP\_LIST) that is associated with the create operation, or allocate ECP\_LIST and an ECP context structure and insert the ECP context structure in the ECP\_LIST.
+To set ECPs for the [**IRP_MJ_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation, your file system filter driver can first either retrieve an existing ECP context structure list (ECP_LIST) that is associated with the create operation, or allocate ECP_LIST and an ECP context structure and insert the ECP context structure in the ECP_LIST.
 
-Your file system filter driver can follow these steps to set ECPs in an existing ECP\_LIST that is associated with the create operation:
+Your file system filter driver can follow these steps to set ECPs in an existing ECP_LIST that is associated with the create operation:
 
-1.  Call the [**FltGetEcpListFromCallbackData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetecplistfromcallbackdata) or [**FsRtlGetEcpListFromIrp**](https://msdn.microsoft.com/library/windows/hardware/ff546015) routine to retrieve a pointer to an ECP context structure list (ECP\_LIST) that is associated with the create operation.
-
-2.  Call the [**FltAllocateExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocateextracreateparameter) or [**FsRtlAllocateExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff545609) routine to allocate paged memory pool for an ECP context structure and to generate a pointer to that structure.
-
-3.  Call the [**FltInsertExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltinsertextracreateparameter) or [**FsRtlInsertExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff546179) routine to insert ECP context structures into the [ECP\_LIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
-
-Your file system filter driver can follow these steps to set ECPs in a newly created ECP\_LIST that is associated with the create operation:
-
-1.  Call the [**FltAllocateExtraCreateParameterList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocateextracreateparameterlist) or [**FsRtlAllocateExtraCreateParameterList**](https://msdn.microsoft.com/library/windows/hardware/ff545632) routine to allocate memory for an [ECP\_LIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
+1.  Call the [**FltGetEcpListFromCallbackData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltgetecplistfromcallbackdata) or [**FsRtlGetEcpListFromIrp**](https://msdn.microsoft.com/library/windows/hardware/ff546015) routine to retrieve a pointer to an ECP context structure list (ECP_LIST) that is associated with the create operation.
 
 2.  Call the [**FltAllocateExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocateextracreateparameter) or [**FsRtlAllocateExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff545609) routine to allocate paged memory pool for an ECP context structure and to generate a pointer to that structure.
 
-3.  Call the [**FltInsertExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltinsertextracreateparameter) or [**FsRtlInsertExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff546179) routine to insert ECP context structures into the [ECP\_LIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
+3.  Call the [**FltInsertExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltinsertextracreateparameter) or [**FsRtlInsertExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff546179) routine to insert ECP context structures into the [ECP_LIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
+
+Your file system filter driver can follow these steps to set ECPs in a newly created ECP_LIST that is associated with the create operation:
+
+1.  Call the [**FltAllocateExtraCreateParameterList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocateextracreateparameterlist) or [**FsRtlAllocateExtraCreateParameterList**](https://msdn.microsoft.com/library/windows/hardware/ff545632) routine to allocate memory for an [ECP_LIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
+
+2.  Call the [**FltAllocateExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltallocateextracreateparameter) or [**FsRtlAllocateExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff545609) routine to allocate paged memory pool for an ECP context structure and to generate a pointer to that structure.
+
+3.  Call the [**FltInsertExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltinsertextracreateparameter) or [**FsRtlInsertExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff546179) routine to insert ECP context structures into the [ECP_LIST](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
 
 4.  Call the [**FltSetEcpListIntoCallbackData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltsetecplistintocallbackdata) or [**FsRtlSetEcpListIntoIrp**](https://msdn.microsoft.com/library/windows/hardware/ff547250) routine to attach an ECP list to the create operation.
 
 ### <span id="Removing_ECPs"></span><span id="removing_ecps"></span><span id="REMOVING_ECPS"></span>Removing ECPs
 
-Your file system filter driver can follow these steps to remove ECPs for the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation:
+Your file system filter driver can follow these steps to remove ECPs for the [**IRP_MJ_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation:
 
 1.  Call the [**FltRemoveExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltremoveextracreateparameter) or [**FsRtlRemoveExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff547203) routine to search an ECP list for an ECP context structure. If the ECP context structure is found, the routine detaches the ECP context structure from the ECP list.
 

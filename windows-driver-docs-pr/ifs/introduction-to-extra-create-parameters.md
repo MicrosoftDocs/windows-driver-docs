@@ -20,7 +20,7 @@ The following sections describe how to define, attach, and use ECPs. The followi
 
 [Attaching ECPs to IRP_MJ_CREATE Operations that a Kernel-Mode Driver Originated](attaching-ecps-to-irp-mj-create-operations-that-a-kernel-mode-driver-o.md)
 
-[Using ECPs to Process IRP_MJ_CREATE Operations in a File System Filter Driver](using-ecps-to-process-irp-mj-create-operations-in-a-file-system-filter.md)
+[Using ECPs to Process IRP_MJ_CREATE Operations in a File System Minifilter](using-ecps-to-process-irp-mj-create-operations-in-a-file-system-minifilter.md)
 
 [User-Defined ECPs](user-defined-ecps.md)
 

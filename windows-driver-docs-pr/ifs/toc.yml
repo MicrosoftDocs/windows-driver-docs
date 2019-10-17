@@ -1,37 +1,18 @@
-- name: "File system driver design guide"
+- name: "File Systems Driver Design Guide"
+  href: index.md
 # Auto-expanded node
   items: 
-  - name: "File system driver design guide"
-    href: index.md
   - name: "File System Drivers"
 # Auto-expanded node
     items: 
-    - name: "File System Drivers"
-      href: file-system-drivers.md
+    - name: "About File System Drivers"
+      href: about-file-system-drivers.md
     - name: "Installing a File System Driver"
-# Auto-expanded node
-      items: 
-      - name: "Installing a File System Driver"
-        href: installing-a-file-system-driver.md
-      - name: "Creating an INF File for a File System Driver"
-        href: creating-an-inf-file-for-a-file-system-driver.md
-    - name: "Using Extra Create Parameters with an IRP_MJ_CREATE Operation"
-# Auto-expanded node
-      items: 
-      - name: "Using Extra Create Parameters with an IRP_MJ_CREATE Operation"
-        href: using-extra-create-parameters-with-an-irp-mj-create-operation.md
-      - name: "Attaching ECPs to IRP_MJ_CREATE Operations that a Kernel-Mode Driver Originated"
-        href: attaching-ecps-to-irp-mj-create-operations-that-a-kernel-mode-driver-o.md
-      - name: "Using ECPs to Process IRP_MJ_CREATE Operations in a File System Filter Driver"
-        href: using-ecps-to-process-irp-mj-create-operations-in-a-file-system-filter.md
-      - name: "User-Defined ECPs"
-        href: user-defined-ecps.md
-      - name: "System-Defined ECPs"
-        href: system-defined-ecps.md
-  - name: "File System Filter Drivers"
+      href: installing-a-file-system-driver.md
+  - name: "File System Legacy Filter Drivers"
 # Auto-expanded node
     items: 
-    - name: "File System Filter Drivers"
+    - name: "File System Legacy Filter Drivers"
       href: file-system-filter-drivers.md
     - name: "File System Fundamentals"
 # Auto-expanded node
@@ -390,6 +371,19 @@
         href: file-system-support-for-contexts.md
       - name: "Best Practices"
         href: best-practices.md
+      - name: "Using Extra Create Parameters with an IRP_MJ_CREATE Operation"
+# Auto-expanded node
+      items: 
+      - name: "Using Extra Create Parameters with an IRP_MJ_CREATE Operation"
+        href: using-extra-create-parameters-with-an-irp-mj-create-operation.md
+      - name: "Attaching ECPs to IRP_MJ_CREATE Operations that a Kernel-Mode Driver Originated"
+        href: attaching-ecps-to-irp-mj-create-operations-that-a-kernel-mode-driver-o.md
+      - name: "Using ECPs to Process IRP_MJ_CREATE Operations in a File System Minifilter"
+        href: using-ecps-to-process-irp-mj-create-operations-in-a-file-system-minifilter.md
+      - name: "User-Defined ECPs"
+        href: user-defined-ecps.md
+      - name: "System-Defined ECPs"
+        href: system-defined-ecps.md
   - name: "Network Redirector Drivers"
 # Auto-expanded node
     items: 
@@ -723,7 +717,7 @@
   - name: "Reference"
 # Auto-expanded node
     items: 
-    - name: "Additional Reference"
+    - name: "Reference Overview"
       href: ifs-reference.md
     - name: "CcIsThereDirtyLoggedPages"
       href: ccistheredirtyloggedpages.md
