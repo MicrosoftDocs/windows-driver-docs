@@ -476,8 +476,6 @@
     href: audio-processing-object-architecture.md
   - name: "Implementing Audio Processing Objects"
     href: implementing-audio-processing-objects.md
-  - name: "Implementing a UI for Configuring APO Effects"
-    href: implementing-a-ui-for-configuring-apo-effects.md
   - name: "Implementing Hardware Offloaded APO Effects"
     href: implementing-hardware-offloaded-apo-effects.md
   - name: "Windows Default APOs"
