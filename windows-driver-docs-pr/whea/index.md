@@ -27,10 +27,7 @@ This section describes the Windows Hardware Error Architecture (WHEA), which pro
 
 - How user-mode applications can communicate with the WHEA platform. For more information, see [Windows Hardware Error Architecture-Aware User-Mode Applications](windows-hardware-error-architecture-aware-user-mode-applications.md).
 
-For more detailed information about WHEA and how to implement WHEA on a hardware platform, see the WHEA Platform Design Guide. Platform vendors can obtain this design guide by sending email to <wheafb@microsoft.com>.
-
-> [!NOTE]
-> WHEA is supported in Windows Vista, Windows Server 2008, and later versions of the Windows operating system. For hardware error reporting that is supported on versions of Microsoft Windows prior to Windows Vista, see [Machine Check Architecture (MCA)](https://docs.microsoft.com/previous-versions/windows/hardware/mca/ff540685(v=vs.85)).
+For more detailed information about WHEA and how to implement WHEA on a hardware platform, see the **WHEA Platform Design Guide**. Platform vendors can obtain this design guide by sending email to <wheafb@microsoft.com>.
 
 ## In this section
 

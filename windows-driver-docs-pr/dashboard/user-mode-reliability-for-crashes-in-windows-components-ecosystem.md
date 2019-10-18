@@ -3,8 +3,6 @@ title: Number of user mode reliability for crashes in Windows Components, normal
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Components, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 08/08/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 

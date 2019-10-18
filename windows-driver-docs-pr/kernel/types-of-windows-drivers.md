@@ -4,7 +4,7 @@ description: Types of Windows Drivers
 ms.assetid: e6696c6b-2d3c-473c-9f46-576fe0c40496
 keywords: ["Windows drivers WDK , types", "drivers WDK , types", "kernel-mode drivers WDK , types", "highest-level drivers WDK", "intermediate drivers WDK kernel", "lowest-level drivers WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # Types of Windows Drivers

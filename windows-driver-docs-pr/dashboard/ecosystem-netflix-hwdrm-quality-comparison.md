@@ -3,8 +3,6 @@ title: Ecosystem Netflix HWDRM Quality Comparison
 description: The measure aggregates telemetry from a 28 day sliding window into a binary value (0 or 1), indicating if the driver performance is within 2 standard deviations of the aggregate performance of all drivers from the same IHV in the retail market
 ms.topic: article
 ms.date: 08/19/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 

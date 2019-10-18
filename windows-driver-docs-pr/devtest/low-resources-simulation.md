@@ -12,9 +12,7 @@ ms.localizationpriority: medium
 
 # Low Resources Simulation
 
-
 ## <span id="ddk_low_resources_simulation_tools"></span><span id="DDK_LOW_RESOURCES_SIMULATION_TOOLS"></span>
-
 
 When the Low Resources Simulation option (called *Randomized low resources simulation* in Windows 8.1) is active, Driver Verifier fails random instances of the driver's memory allocations, as might occur if the driver was running on a computer with insufficient memory. This tests the driver's ability to respond properly to low memory and other low-resource conditions.
 
@@ -136,7 +134,7 @@ At the command line, the syntax for these settings is as follows:
 
 - *PoolTags*
 
-  Limits the allocations that Driver Verifier can fail to allocations with the specified pool tags. You can use a wildcard character (**\\***) to represent multiple pool tags. To list multiple pool tags, separate the tags with spaces. By default, all allocations can fail.
+  Limits the allocations that Driver Verifier can fail to allocations with the specified pool tags. You can use a wildcard character (**\***) to represent multiple pool tags. To list multiple pool tags, separate the tags with spaces. By default, all allocations can fail.
 
 - *Applications*
 
@@ -267,12 +265,3 @@ Verified drivers:
 
 blah.sys
 ```
-
-
-
-
-
-
-
-
-

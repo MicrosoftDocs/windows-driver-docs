@@ -51,7 +51,7 @@ Each Signature Type has a corresponding attribute and value, as listed below. Us
 Remarks
 -------
 
-These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests. These are additions to the normal behavior of Hardware Certification, and the corresponding Certification Requirements for Elam, HalExt, PETrust, and DRM can be found [here](https://go.microsoft.com/fwlink/p/?linkid=239763).
+These additional signatures will only be applied if your Hardware Certification Kit package contains the proper Features and passing Tests. These are additions to the normal behavior of Hardware Certification, and the corresponding Certification Requirements for Elam, HalExt, PETrust, and DRM. For more info, see [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/).
 
 These INF sections should be used when requesting additional signatures regardless of the target OS.
 

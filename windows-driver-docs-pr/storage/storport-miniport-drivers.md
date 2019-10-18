@@ -7,15 +7,15 @@ keywords:
 - Storport miniport drivers WDK , routines listed
 - storage miniport drivers WDK , Storport miniport drivers
 - miniport drivers WDK storage , Storport miniport drivers
-ms.date: 04/20/2017
+ms.date: 10/08/2019
 ms.localizationpriority: medium
 ---
 
 # Storport Miniport Drivers
 
-Storport miniport drivers work with the [Storport Driver](storport-driver.md). The following sections describe Storport miniport drivers and the routines that they call:
+Storport miniport drivers work with the [Storport Driver](storport-driver-overview.md). The following sections describe Storport miniport drivers and the routines that they call:
 
-[Storport Driver Miniport Routines](storport-driver-miniport-routines.md)
+[Storport Miniport Driver Routines](storport-miniport-driver-routines.md)
 
 [Storport Driver Support Routines](storport-driver-support-routines.md)
 

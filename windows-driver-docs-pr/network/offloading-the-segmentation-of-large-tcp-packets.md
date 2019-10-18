@@ -80,6 +80,8 @@ The following assumptions and restrictions apply to processing IP and TCP header
 
 -   If the PSH bit in the TCP header of the large TCP packet is set, the miniport driver must set this bit in the TCP header of the last packet that it creates from the large TCP packet.
 
+-   If the CWR bit in the TCP header of the large TCP packet is set, the miniport driver must set this bit in the TCP header of the first packet that it creates from the large TCP packet. The miniport driver may choose to set this bit in the TCP header of the last packet that it creates from the large TCP packet, although this is less desirable.
+
 -   If the large TCP packet contains IP options or TCP options (or both), the miniport driver copies these options, unaltered, to each packet that it derived from the large TCP packet. Specifically, the NIC will not increment the Time Stamp option.
 
 -   All packet headers (Ethernet, IP, TCP) will be in the first MDL of the packet. The headers will not be split across multiple MDLs. 

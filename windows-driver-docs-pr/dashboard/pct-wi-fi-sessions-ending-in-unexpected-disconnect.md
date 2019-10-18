@@ -3,8 +3,6 @@ title: Percent of Wi-Fi sessions ending in an unexpected disconnect
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a device unexpectedly disconnects from Wi-Fi
 ms.topic: article
 ms.date: 05/20/2019
-ms.author: paslote
-author: parkeratmicrosoft
 ms.localizationpriority: medium
 ---
 
@@ -41,4 +39,4 @@ Once a device successfully connects to Wi-Fi, it must maintain that connection, 
 
 ### Final calculation
 
-*Percent of Wi-Fi sessions ending in an unexpected connect = average(all instances)*
+*Percent of Wi-Fi sessions ending in an unexpected disconnect = average(all instances)*

@@ -2,7 +2,7 @@
 title: Windows kernel macros
 description: Windows kernel macros
 ms.assetid: 91366400-3307-4F13-A839-50BA85B7F73E
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
 
@@ -418,7 +418,7 @@ Specifies the length, in bytes, of the buffer to be described by the MDL. This r
 
 **VOID**
 
-The buffer that _MemoryDescriptorList_ points to must be allocated in nonpaged memory. The size, in bytes, of this buffer must be at least **sizeof**(MDL) + **sizeof**(PFN_NUMBER)**ADDRESS_AND_SIZE_TO_SPAN_PAGES**(_BaseVa_, _Length_).
+The buffer that _MemoryDescriptorList_ points to must be allocated in nonpaged memory. The size, in bytes, of this buffer must be at least **sizeof**(MDL) + **sizeof**(PFN_NUMBER) * **ADDRESS_AND_SIZE_TO_SPAN_PAGES**(_BaseVa_, _Length_).
 
 Available in Windows 2000 and later versions of Windows.
 
