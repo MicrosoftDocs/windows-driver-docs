@@ -2,7 +2,7 @@
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
 ms.assetid: F4B56B3F-792F-4887-AF0F-FFC1F000CB8F
-ms.date: 10/27/2017
+ms.date: 10/18/2019
 ms.localizationpriority: medium
 ---
 
@@ -121,6 +121,10 @@ The traditional INF files continue to be available in the SYSVAD sample.
 All APO vendor system specific settings, parameters, and tuning values must be installed via an extension INF package. In many cases, this can be performed in a simple manner with the [INF AddReg directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). In more complex cases, a tuning file can be used.  
 
 Base driver packages must not depend on these customizations in order to function (although of course functionality may be reduced).  
+
+### UWP Audio Settings APPs
+
+To implement an end user UI, use a Hardware Support App (HSA) for a Windows Universal Audio driver.  For more information, see [Hardware Support App (HSA): Steps for Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers).
 
 ### Programmatically launching UWP Hardware Support Apps
 
