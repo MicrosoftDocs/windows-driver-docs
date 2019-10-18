@@ -1,6 +1,6 @@
 - name: "Universal sensors driver model"
   href: overview-of-converged-sensor-driver-model.md
-- name: "Windows sensors driver reference"
+- name: "Windows sensors programming guide"
   items:
   - name: "Sensor types"
     href: sensor-types.md
