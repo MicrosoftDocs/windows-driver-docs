@@ -7,17 +7,16 @@ keywords:
 - stacks WDK file system
 - device objects WDK file system
 - volumes WDK file system
-ms.date: 04/20/2017
+ms.date: 10/16/2019
 ms.localizationpriority: medium
 ---
 
 # Storage Device Stacks, Storage Volumes, and File System Stacks
 
+> [!NOTE]
+> For optimal reliability and performance, we recommend using [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-## <span id="ddk_storage_volumes_storage_device_stacks_and_file_system_stacks_if"></span><span id="DDK_STORAGE_VOLUMES_STORAGE_DEVICE_STACKS_AND_FILE_SYSTEM_STACKS_IF"></span>
-
-
-Before exploring how file system filter drivers attach to file systems and volumes, it is necessary to understand the relationship between storage device stacks, storage volumes, and file system stacks. This relationship is discussed in the following sections:
+Before exploring how file system legacy filter drivers attach to file systems and volumes, it is necessary to understand the relationship between storage device stacks, storage volumes, and file system stacks. This relationship is discussed in the following sections:
 
 [Storage Device Stacks](storage-device-stacks.md)
 

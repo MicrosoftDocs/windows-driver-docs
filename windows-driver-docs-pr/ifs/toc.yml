@@ -1,20 +1,29 @@
 - name: "File Systems Driver Design Guide"
   href: index.md
-# Auto-expanded node
+# Auto-expanded node L1
   items: 
   - name: "File System Drivers"
-# Auto-expanded node
+# Auto-expanded node L2
     items: 
     - name: "About File System Drivers"
       href: about-file-system-drivers.md
     - name: "Installing a File System Driver"
       href: installing-a-file-system-driver.md
-  - name: "File System Legacy Filter Drivers"
+  - name: "File System Filter Drivers"
 # Auto-expanded node
-    items: 
-    - name: "File System Legacy Filter Drivers"
-      href: file-system-filter-drivers.md
-    - name: "File System Fundamentals"
+    items:
+    - name: "About File System Filter Drivers"
+      href: about-file-system-filter-drivers.md
+    - name: "How File System Filter Drivers Are Similar to Device Drivers"
+      href: how-file-system-filter-drivers-are-similar-to-device-drivers.md
+    - name: "How File System Filter Drivers Are Different from Device Drivers"
+      href: how-file-system-filter-drivers-are-different-from-device-drivers.md 
+  - name: "File System Legacy Filter Drivers"
+  # Auto-expanded node L1
+    items:
+    - name: "About File System Legacy Filter Drivers"
+      href: about-file-system-legacy-filter-drivers.md
+    - name: "File System Fundamentals for Legacy Filter Drivers"
 # Auto-expanded node
       items: 
       - name: "File System Fundamentals"
@@ -24,10 +33,9 @@
       - name: "What Happens to File Systems During System Boot"
         href: what-happens-to-file-systems-during-system-boot.md
       - name: "Storage Device Stacks, Storage Volumes, and File System Stacks"
+        href: storage-device-stacks--storage-volumes--and-file-system-stacks.md
 # Auto-expanded node
         items: 
-        - name: "Storage Device Stacks, Storage Volumes, and File System Stacks"
-          href: storage-device-stacks--storage-volumes--and-file-system-stacks.md
         - name: "Storage Device Stacks"
           href: storage-device-stacks.md
         - name: "Storage Volumes"
