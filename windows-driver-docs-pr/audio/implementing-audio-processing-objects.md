@@ -27,12 +27,9 @@ You can implement an APO by basing your custom class on the CBaseAudioProcessing
 Perform the following steps to implement your custom APOs.
 
 1.  Create custom APO com objects to provide the desired audio processing.
-2.  Optionally create a user interface for configuring the custom APOs.
+2.  Optionally create a user interface for configuring the custom APOs using a.
 3.  Create an INF file to install and register the APOs and the custom user interface.
 
-For more information on implementing a custom properties page, see [Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md). The screen shot below shows the SwapAPO properties.
-
-![speaker properties showing system effects sample tab that offers systems effects configuration](images/audio-apo-speaker-properties.png)
 
 ## <span id="Design_Considerations_for_Custom_APO_Development"></span><span id="design_considerations_for_custom_apo_development"></span><span id="DESIGN_CONSIDERATIONS_FOR_CUSTOM_APO_DEVELOPMENT"></span>Design Considerations for Custom APO Development
 
@@ -506,7 +503,6 @@ HKCR,AudioEngine\AudioProcessingObjects\%FX_DISCOVER_EFFECTS_APO_CLSID%, "APOInt
 
 ## <span id="APO_Registration"></span><span id="apo_registration"></span><span id="APO_REGISTRATION"></span>APO Registration
 
-
 APO registration is used to support a process that dynamically matches the effects to endpoints using a weighted calculation. The weighted calculation uses the following property stores. Every audio interface has zero or more *endpoint property stores* and *effects property stores* registered either via the .inf or at runtime. The most specific endpoint property store and the most specific effects property store have the highest weights and are used. All other property stores are ignored.
 
 Specificity is calculated as follows:
@@ -599,9 +595,4 @@ Also, if the failure count value for an SFX, MFX or EFX APO reaches a system-spe
 
 ## <span id="related_topics"></span>Related topics
 
-[Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)  
-
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
-
-
-
