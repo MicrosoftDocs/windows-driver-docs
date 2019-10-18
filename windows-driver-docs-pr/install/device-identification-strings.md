@@ -37,3 +37,7 @@ In addition to using the preceding IDs to identify devices, the PnP manager uses
 Starting with Windows 7, the PnP manager uses the [Container ID](container-ids.md) device identification string to group one or more device nodes (devnodes) that were enumerated from each instance of a physical device installed in a computer.
 
 Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to uniquely identify the device that it enumerates. In addition, each enumerator has its own policy to identify hardware IDs and compatible IDs. For more information about hardware ID and compatible ID formats for most of the system buses, see [Device Identifier Formats](device-identifier-formats.md).
+
+> [!NOTE]
+> Device identification strings should not be parsed. They are meant only for string comparisons and should be treated as opaque strings.
+
