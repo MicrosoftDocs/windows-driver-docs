@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 # What Determines When a Driver Is Loaded
 
 > [!NOTE]
-> For optimal reliability and performance, we recommend using [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 Before exploring when and how file system drivers are loaded during the system boot sequence, it is necessary to understand driver start types and load order groups.
 

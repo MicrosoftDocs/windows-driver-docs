@@ -15,4 +15,4 @@ ms.localizationpriority: medium
 The information in this section is for developers who are maintaining an existing legacy filter driver. The legacy file system filter model has been replaced by [Filter Manager and minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-and-minifilter-driver-architecture).
 
 > [!NOTE]
-> For optimal reliability and performance, we recommend using [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).

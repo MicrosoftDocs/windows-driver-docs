@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 # What Happens to File Systems During System Boot
 
 > [!NOTE]
-> For optimal reliability and performance, we recommend using [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](filter-manager-and-minifilter-driver-architecture.md) instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 File systems are initialized during the system boot process; specifically, during I/O system initialization. The I/O Manager creates the global file system queue and initializes the file system and legacy filter drivers that were loaded by the operating system (OS) loader and the PnP Manager.
 

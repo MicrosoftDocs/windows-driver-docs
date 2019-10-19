@@ -23,101 +23,75 @@
     items:
     - name: "About File System Legacy Filter Drivers"
       href: about-file-system-legacy-filter-drivers.md
-    - name: "File System Fundamentals for Legacy Filter Drivers"
+    - name: "File System Driver Concepts for Legacy Filter Drivers"
 # Auto-expanded node
       items: 
-      - name: "File System Fundamentals"
-        href: file-system-fundamentals.md
       - name: "What Determines When a Driver Is Loaded"
         href: what-determines-when-a-driver-is-loaded.md
       - name: "What Happens to File Systems During System Boot"
         href: what-happens-to-file-systems-during-system-boot.md
       - name: "Storage Device Stacks, Storage Volumes, and File System Stacks"
         href: storage-device-stacks--storage-volumes--and-file-system-stacks.md
-# Auto-expanded node
-        items: 
-        - name: "Storage Device Stacks"
-          href: storage-device-stacks.md
-        - name: "Storage Volumes"
-          href: storage-volumes.md
-        - name: "File System Stacks"
-          href: file-system-stacks.md
       - name: "Mounting a Volume"
 # Auto-expanded node
         items: 
-        - name: "Mounting a Volume"
-          href: mounting-a-volume.md
+        - name: "How the Volume is Recognized"
+          href: how-the-volume-is-recognized.md
         - name: "How the Volume Is Mounted"
           href: how-the-volume-is-mounted.md
         - name: "Volume Mount Example"
           href: volume-mount-example.md
-    - name: "Introduction to File System Filter Drivers"
+    - name: "Installing a Legacy Filter Driver"
 # Auto-expanded node
       items: 
-      - name: "Introduction to File System Filter Drivers"
-        href: introduction-to-file-system-filter-drivers.md
-      - name: "What Is a File System Filter Driver?"
-        href: what-is-a-file-system-filter-driver-.md
-      - name: "File System Filter Drivers Are Not Device Drivers"
-# Auto-expanded node
-        items: 
-        - name: "File System Filter Drivers Are Not Device Drivers"
-          href: file-system-filter-drivers-are-not-device-drivers.md
-        - name: "How File System Filter Drivers Are Similar to Device Drivers"
-          href: how-file-system-filter-drivers-are-similar-to-device-drivers.md
-        - name: "How File System Filter Drivers Are Different from Device Drivers"
-          href: how-file-system-filter-drivers-are-different-from-device-drivers.md
       - name: "Installing a File System Filter Driver"
+        href: installing-a-file-system-filter-driver.md
+      - name: "Creating an INF File for a File System Filter Driver"
+        href: creating-an-inf-file-for-a-file-system-filter-driver.md
+      - name: "Load Order Groups for File System Filter Drivers "
+        href: load-order-groups-for-file-system-filter-drivers.md
+      - name: "File System Filter Driver Classes and Class GUIDs"
+        href: file-system-filter-driver-classes-and-class-guids.md
+      - name: "Using an INF File to Install a File System Filter Driver"
+        href: using-an-inf-file-to-install-a-file-system-filter-driver.md
+      - name: "Using an INF File to Uninstall a File System Filter Driver"
+        href: using-an-inf-file-to-uninstall-a-file-system-filter-driver.md
+    - name: "Initializing a File System Filter Driver"
 # Auto-expanded node
-        items: 
-        - name: "Installing a File System Filter Driver"
-          href: installing-a-file-system-filter-driver.md
-        - name: "Creating an INF File for a File System Filter Driver"
-          href: creating-an-inf-file-for-a-file-system-filter-driver.md
-        - name: "Load Order Groups for File System Filter Drivers "
-          href: load-order-groups-for-file-system-filter-drivers.md
-        - name: "File System Filter Driver Classes and Class GUIDs"
-          href: file-system-filter-driver-classes-and-class-guids.md
-        - name: "Using an INF File to Install a File System Filter Driver"
-          href: using-an-inf-file-to-install-a-file-system-filter-driver.md
-        - name: "Using an INF File to Uninstall a File System Filter Driver"
-          href: using-an-inf-file-to-uninstall-a-file-system-filter-driver.md
+      items: 
       - name: "Initializing a File System Filter Driver"
+        href: initializing-a-file-system-filter-driver.md
+      - name: "Creating the Control Device Object"
+        href: creating-the-control-device-object.md
+      - name: "Registering IRP Dispatch Routines"
+        href: registering-irp-dispatch-routines.md
+      - name: "Registering Fast I/O Dispatch Routines"
+        href: registering-fast-i-o-dispatch-routines.md
+      - name: "Registering FsFilter Callback Routines"
+        href: registering-fsfilter-callback-routines.md
+      - name: "Performing Any Other Needed Initialization"
+        href: performing-any-other-needed-initialization.md
+      - name: "Optional] Registering Callback Routines"
+        href: -optional--registering-callback-routines.md
+      - name: "Optional] Saving a Copy of the Registry Path String"
+        href: -optional--saving-a-copy-of-the-registry-path-string.md
+      - name: "Returning Status"
+        href: returning-status.md
+    - name: "Attaching a Filter to a File System or Volume"
 # Auto-expanded node
-        items: 
-        - name: "Initializing a File System Filter Driver"
-          href: initializing-a-file-system-filter-driver.md
-        - name: "Creating the Control Device Object"
-          href: creating-the-control-device-object.md
-        - name: "Registering IRP Dispatch Routines"
-          href: registering-irp-dispatch-routines.md
-        - name: "Registering Fast I/O Dispatch Routines"
-          href: registering-fast-i-o-dispatch-routines.md
-        - name: "Registering FsFilter Callback Routines"
-          href: registering-fsfilter-callback-routines.md
-        - name: "Performing Any Other Needed Initialization"
-          href: performing-any-other-needed-initialization.md
-        - name: "Optional] Registering Callback Routines"
-          href: -optional--registering-callback-routines.md
-        - name: "Optional] Saving a Copy of the Registry Path String"
-          href: -optional--saving-a-copy-of-the-registry-path-string.md
-        - name: "Returning Status"
-          href: returning-status.md
+      items: 
       - name: "Attaching a Filter to a File System or Volume"
-# Auto-expanded node
-        items: 
-        - name: "Attaching a Filter to a File System or Volume"
-          href: attaching-a-filter-to-a-file-system-or-volume.md
-        - name: "Creating the Filter Device Object"
-          href: creating-the-filter-device-object.md
-        - name: "Attaching the Filter Device Object to the Target Device Object"
-          href: attaching-the-filter-device-object-to-the-target-device-object.md
-        - name: "Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags"
-          href: propagating-the-do-buffered-io-and-do-direct-io-flags.md
-        - name: "Propagating the FILE_DEVICE_SECURE_OPEN Flag"
-          href: propagating-the-file-device-secure-open-flag.md
-        - name: "Clearing the DO_DEVICE_INITIALIZING Flag"
-          href: clearing-the-do-device-initializing-flag.md
+        href: attaching-a-filter-to-a-file-system-or-volume.md
+      - name: "Creating the Filter Device Object"
+        href: creating-the-filter-device-object.md
+      - name: "Attaching the Filter Device Object to the Target Device Object"
+        href: attaching-the-filter-device-object-to-the-target-device-object.md
+      - name: "Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags"
+        href: propagating-the-do-buffered-io-and-do-direct-io-flags.md
+      - name: "Propagating the FILE_DEVICE_SECURE_OPEN Flag"
+        href: propagating-the-file-device-secure-open-flag.md
+      - name: "Clearing the DO_DEVICE_INITIALIZING Flag"
+        href: clearing-the-do-device-initializing-flag.md
     - name: "Filtering IRPs and Fast I/O"
 # Auto-expanded node
       items: 
