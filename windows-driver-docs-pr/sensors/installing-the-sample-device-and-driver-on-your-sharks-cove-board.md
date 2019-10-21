@@ -11,11 +11,12 @@ ms.localizationpriority: medium
 
 Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
 
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
+
 ## Install Windows on the Sharks Cove board
 
-
-For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board) and [SharksCove.org](https://go.microsoft.com/fwlink/p/?linkid=403167).
-
+For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board) and SharksCove.org.
 ## Modify the ADXL345 to work with the Sharks Cove
 
 
