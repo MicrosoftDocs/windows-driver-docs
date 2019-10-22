@@ -29,7 +29,7 @@ Symbol files have date and time stamps. You do not have to worry that the debugg
 
 One way to set the symbol path is by entering the [**.sympath**](-sympath--set-symbol-path-.md) command. For other ways to set the symbol path, see [Controlling the Symbol Path](#controlling-the-symbol-path) later in this topic.
 
-## <span id="Caching_Symbols_Locally"></span><span id="caching_symbols_locally"></span><span id="CACHING_SYMBOLS_LOCALLY"></span>Caching symbols lLocally
+## <span id="Caching_Symbols_Locally"></span><span id="caching_symbols_locally"></span><span id="CACHING_SYMBOLS_LOCALLY"></span>Caching symbols locally
 
 
 We strongly recommend that you always cache your symbols locally. One way to cache symbols locally is to include `cache*;` or `cache*localsymbolcache;*` in your symbol path.
