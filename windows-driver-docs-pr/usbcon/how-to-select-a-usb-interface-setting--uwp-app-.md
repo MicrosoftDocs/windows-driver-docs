@@ -69,7 +69,7 @@ private async void SetInterfaceSetting(UsbDevice device, Byte settingNumber)
 }
 ```
 
-# See Also
+## See Also
 
 [**UsbInterfaceSetting.Selected**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_Selected)
 
