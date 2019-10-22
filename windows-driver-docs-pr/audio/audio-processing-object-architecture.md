@@ -2,25 +2,21 @@
 title: Audio Processing Object Architecture
 description: Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
 ms.assetid: 2F57B4C7-8C83-4DDF-BFAF-B9308752E91D
-ms.date: 04/20/2017
+ms.date: 10/18/2019
 ms.localizationpriority: medium
 ---
 
 # Audio Processing Object Architecture
 
-
 Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
 
 ## <span id="Audio_Processing_Objects_Overview"></span><span id="audio_processing_objects_overview"></span><span id="AUDIO_PROCESSING_OBJECTS_OVERVIEW"></span>Audio Processing Objects Overview
-
 
 Windows allows OEMs and third-party audio hardware manufacturers to include custom digital signal processing effects as part of their audio driver's value-added features. These effects are packaged as user-mode system effect Audio Processing Objects (APOs).
 
 Audio processing objects (APOs), provide software based digital signal processing for Windows audio streams. An APO is a COM host object that contains an algorithm that is written to provide a specific Digital Signal Processing (DSP) effect. This capability is known informally as an "audio effect." Examples of APOs include graphic equalizers, reverb, tremolo, Acoustic Echo Cancellation (AEC) and Automatic Gain Control (AGC). APOs are COM-based, real-time, in-process objects.
 
 **Note**   The descriptions and terminology in this documentation refers mostly to output devices. However, the technology is symmetric and works essentially in reverse for input devices.
-
- 
 
 **Software APOs vs. Hardware DSP**
 
@@ -55,15 +51,9 @@ A custom APO can be installed by an OEM or a third-party to enhance the audio ex
 
 For more information on creating custom APOs see, [Implementing Audio Processing Objects](implementing-audio-processing-objects.md).
 
-**Custom APO Properties UI**
+**Custom APO Support App**
 
-On desktop PCs, you can create a custom APO properties page to allow the user to configure settings associated with your custom APO. This custom APO page can be made available to the user as an extension of the standard Windows audio settings.
-
-The SYSVAD audio sample includes an example custom APO control sample. This screen shot shows the property page for the SYSVAD audio Swap APO sample.
-
-![screenshot of the speaker property page for the sysvad audio swap apo control sample](images/audio-apo-speaker-properties.png)
-
-For more information on adding APO dialog panels see, [Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md).
+To allow the user to configure settings associated with your custom APO the recommended approach is to create a Hardware Support App. For more information, see [Hardware Support App (HSA): Steps for Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers).
 
 **Custom APO Tests and Requirements**
 
@@ -88,7 +78,6 @@ You can use the "Audio Effects Discovery Sample" to explore the available audio 
 Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.AudioRenderEffectsManager).
 
 ## <span id="Audio_Processing_Objects_Architecture"></span><span id="audio_processing_objects_architecture"></span><span id="AUDIO_PROCESSING_OBJECTS_ARCHITECTURE"></span>Audio Processing Objects Architecture
-
 
 **Placement of Audio Effects**
 
@@ -125,8 +114,6 @@ This diagram illustrates how multiple applications can access multiple combinati
 
 **Note**  You can use the scroll bar at the very bottom of this page to view all of this diagram.
 
- 
-
 **Software Mode Effects and Hardware Endpoint Effects for Render and Capture**
 
 This diagram illustrates software mode effects and hardware endpoint effects for render and capture.
@@ -141,7 +128,3 @@ This diagram illustrates a DSP equipped system that implements effects in hardwa
 
 ## <span id="related_topics"></span>Related topics
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)  
-[Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)  
-
-
-
