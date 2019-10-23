@@ -36,7 +36,7 @@ The *general* and mandatory *media-specific* OIDs are documented in the Network 
 
 Objects are classified as *operational characteristics* (for example, multicast address list) or *statistics* (for example, broadcast packets received), and they are also classified as *mandatory* or *optional*. All operational characteristics objects for general or media-specific classes are mandatory, but only some statistics objects are mandatory. All implementation-specific objects are classified as mandatory.
 
-For more information about OID classifications, see [NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+For more information about OID classifications, see [NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
  
 

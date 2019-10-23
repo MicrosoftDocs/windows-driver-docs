@@ -96,7 +96,7 @@ Requirements
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
-[**KSAUDIOMODULE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_notification)
+[**KSAUDIOMODULE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_notification)
 
  
 

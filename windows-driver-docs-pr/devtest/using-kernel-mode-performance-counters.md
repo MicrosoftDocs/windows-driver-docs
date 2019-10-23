@@ -25,7 +25,7 @@ Use the following steps to develop new counters:
 
 3.  Add code to register and unregister the counter sets.
 
-    For more information, see the [**PcwRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pcwregister) and [**PcwUnregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pcwunregister) functions.
+    For more information, see the [**PcwRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pcwregister) and [**PcwUnregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pcwunregister) functions.
 
 4.  Add code to expose the instances.
 

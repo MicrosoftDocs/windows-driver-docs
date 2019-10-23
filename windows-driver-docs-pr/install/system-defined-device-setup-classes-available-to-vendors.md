@@ -161,7 +161,7 @@ This class includes intelligent multiport serial cards, but not peripheral devic
 <a href="" id="network-adapter-"></a>**Network Adapter**  
 Class = Net  
 ClassGuid = {4d36e972-e325-11ce-bfc1-08002be10318}  
-This class consists of network adapter drivers.  These drivers must either call [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterminiportdriver) or [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadaptercreate).  Drivers that do not use NDIS or NetAdapter should use a different setup class.
+This class consists of network adapter drivers.  These drivers must either call [**NdisMRegisterMiniportDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver) or [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate).  Drivers that do not use NDIS or NetAdapter should use a different setup class.
   
 <a href="" id="network-client-"></a>**Network Client**  
 Class = NetClient  

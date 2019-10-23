@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_FLUSH\_BUFFERS
 
 
-Drivers of devices with internal caches for data and drivers that maintain internal buffers for data must handle this request in a [*DispatchFlushBuffers*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+Drivers of devices with internal caches for data and drivers that maintain internal buffers for data must handle this request in a [*DispatchFlushBuffers*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 When Sent
 ---------
@@ -52,7 +52,7 @@ Requirements
 ## See also
 
 
-[*DispatchFlushBuffers*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchFlushBuffers*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
 

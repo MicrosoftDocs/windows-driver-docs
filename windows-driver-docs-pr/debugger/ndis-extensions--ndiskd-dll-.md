@@ -178,7 +178,7 @@ The following commands display information about NDIS.sys and ndiskd.dll.
 
 For more information about designing NDIS drivers for Windows Vista and later, see the [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index).
 
-For more information about reference for NDIS drivers for Windows Vista and later, see [Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+For more information about reference for NDIS drivers for Windows Vista and later, see [Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
 For a demonstration of using the !ndiskd debugger commands to debug the network stack, see [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311).
 

@@ -97,7 +97,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SETCONNECT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_setconnect_info), [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avcconnectinfo), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function), [**AV/C Intersect Handler**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/nc-avc-pfnavcintersecthandler)
+[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SETCONNECT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_setconnect_info), [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function), [**AV/C Intersect Handler**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/nc-avc-pfnavcintersecthandler)
 
  
 

@@ -24,7 +24,7 @@ To determine the status of kernel debugging, the following variables and routine
 
 -   (Windows XP and later) The [**KD\_DEBUGGER\_NOT\_PRESENT**](https://docs.microsoft.com/previous-versions/ff548125(v=vs.85)) global kernel variable indicates whether a kernel debugger is currently attached.
 
--   (Microsoft Windows Server 2003 and later) The [**KdRefreshDebuggerNotPresent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdrefreshdebuggernotpresent) routine refreshes the value of KD\_DEBUGGER\_NOT\_PRESENT.
+-   (Microsoft Windows Server 2003 and later) The [**KdRefreshDebuggerNotPresent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdrefreshdebuggernotpresent) routine refreshes the value of KD\_DEBUGGER\_NOT\_PRESENT.
 
  
 

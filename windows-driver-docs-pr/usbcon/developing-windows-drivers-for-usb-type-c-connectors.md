@@ -24,7 +24,7 @@ You need to write a driver for the connector if your USB Type-C system does not 
 
 **Important APIs**
 
--   [USB Type-C driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
+-   [USB Type-C driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
 ![drivers](images/drivers-c.png)
 
@@ -94,7 +94,7 @@ To implementation the proposed solutions in the preceding table, read these topi
 
 [Write a USB function client driver](developing-windows-drivers-for-usb-function-controllers.md)  
 
-[USB function controller programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[USB function controller programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 ## Related topics
 

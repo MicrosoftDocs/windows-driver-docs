@@ -17,7 +17,7 @@ A WFP redirect record is a buffer of opaque data that WFP must set on an outboun
 
 For more information about redirection, see [Using Bind or Connect Redirection](https://docs.microsoft.com/windows-hardware/drivers/network/using-bind-or-connect-redirection).
 
-To set the redirect record to the new TCP socket used for connecting to the final destination, a Winsock client calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the redirect record to the new TCP socket used for connecting to the final destination, a Winsock client calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -74,7 +74,7 @@ To set the redirect record to the new TCP socket used for connecting to the fina
 
 The Winsock client must allocate a buffer and specify a pointer to the buffer and its size in *InputBuffer* and *InputSize.*
 
-A Winsock client must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The client must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the client must check the IRP status and release all resources that it had previously allocated for the request.
+A Winsock client must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The client must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the client must check the IRP status and release all resources that it had previously allocated for the request.
 
 **Note**  It is also possible to perform this query in a user-mode application by using [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS (SDK)**](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/hh859714(v=vs.85)).
 

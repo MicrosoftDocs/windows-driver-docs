@@ -23,7 +23,7 @@ For each readable property, the framework defines a "get" [method](framework-obj
 
 For each writable property, the framework defines a "set" method that a driver can call to modify the property's value. The driver supplies the property's new value as an input parameter to the "set" method.
 
-For example, the framework device object defines two methods, [**WdfDeviceGetDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicegetdevicestate) and [**WdfDeviceSetDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate), that a driver can call to get or set a device's Plug and Play (PnP) state.
+For example, the framework device object defines two methods, [**WdfDeviceGetDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetdevicestate) and [**WdfDeviceSetDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate), that a driver can call to get or set a device's Plug and Play (PnP) state.
 
  
 

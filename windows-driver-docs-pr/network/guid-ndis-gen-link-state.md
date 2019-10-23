@@ -16,9 +16,9 @@ NDIS handles this GUID and miniport drivers do not receive an OID query.
 
 When a WMI client issues a GUID_NDIS_GEN_LINK_STATE WMI method request, NDIS returns the current link state for the miniport adapter or NDIS port.
 
-The WMI method identifier should be NDIS_WMI_DEFAULT_METHOD_ID, and the WMI input buffer should contain an [NDIS_WMI_METHOD_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_wmi_method_header) structure.
+The WMI method identifier should be NDIS_WMI_DEFAULT_METHOD_ID, and the WMI input buffer should contain an [NDIS_WMI_METHOD_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_wmi_method_header) structure.
 
-The data buffer that NDIS returns with this GUID contains an [NDIS_LINK_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure.
+The data buffer that NDIS returns with this GUID contains an [NDIS_LINK_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure.
 
 Miniport drivers supply the link state during initialization and provide updates with status indications. WMI clients can use the GUID_NDIS_GEN_LINK_STATE GUID to receive updates when the link state changes.
 

@@ -20,7 +20,7 @@ The root item represents the actual device, and the child items represent images
 
 Going through the WIA service, an application uses an item to perform such tasks as getting and setting device information, controlling the device, and starting driver item enumeration.
 
-Applications can call the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method to acquire data from an item by requesting a data transfer from the item.
+Applications can call the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method to acquire data from an item by requesting a data transfer from the item.
 
  
 

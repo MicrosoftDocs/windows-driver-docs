@@ -36,7 +36,7 @@ LPTENUM\Hewlett-PackardHP_Co3115
 
 The hardware ID is made up of the enumerator prefix, followed by the Manufacturer Name, the Model name, and a cyclic redundancy check (CRC) code. The CRC code, which is the last four digits of the hardware ID, is generated from the manufacturer and model strings. Spaces in the string are replaced with underscores.
 
-To read the 1284 ID string from the device, send [**IOCTL\_PAR\_QUERY\_DEVICE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_query_device_id). Note that the spooler redirects the LPT*x* symbolic link (where *x* is the LPT number 1, 2, or 3) to the spooler's named pipe, which means that if the spooler is running, then parport never sees the IOCTLs sent to LPTx.
+To read the 1284 ID string from the device, send [**IOCTL\_PAR\_QUERY\_DEVICE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_par_query_device_id). Note that the spooler redirects the LPT*x* symbolic link (where *x* is the LPT number 1, 2, or 3) to the spooler's named pipe, which means that if the spooler is running, then parport never sees the IOCTLs sent to LPTx.
 
 The devnode for a parallel-connected Plug and Play printer is placed under **HKLM\\SYSTEM\\CurrentControlSet\\Enum\\LPTENUM** and has a single hardware ID of the form:
 

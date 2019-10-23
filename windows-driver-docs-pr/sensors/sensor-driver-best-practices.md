@@ -21,7 +21,7 @@ Generally, the recommendations in this WDK documentation match the program requi
 
 Follow these recommendations to optimize the performance of your sensor when you use the Location API and Sensor API:
 
--   Use the calls to [**ISensorDriver::OnClientSubscribeToEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-onclientsubscribetoevents) and [**ISensorDriver::OnClientUnsubscribeFromEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-onclientunsubscribefromevents) to keep track of whether any programs are monitoring events. Stop raising events when no clients are subscribed.
+-   Use the calls to [**ISensorDriver::OnClientSubscribeToEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-onclientsubscribetoevents) and [**ISensorDriver::OnClientUnsubscribeFromEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-onclientunsubscribefromevents) to keep track of whether any programs are monitoring events. Stop raising events when no clients are subscribed.
 
 -   Use the value that is provided for the SENSOR\_PROPERTY\_CURRENT\_REPORT\_INTERVAL as a hint for how often to raise events. Raise events only during or after the suggested interval to prevent filtering of the data your driver provides.
 

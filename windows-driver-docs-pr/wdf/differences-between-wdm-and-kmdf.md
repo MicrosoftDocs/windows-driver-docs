@@ -39,7 +39,7 @@ In a WDF driver, the framework registers its own dispatch routines, which receiv
 A typical WDF driver for a Plug and Play device contains:
 
 -   A [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine.
--   An [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) routine, which is similar in function to a WDM AddDevice routine.
+-   An [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) routine, which is similar in function to a WDM AddDevice routine.
 -   One or more I/O queues.
 -   One or more I/O event callback functions, which are similar in function to a WDM driver’s I/O *DispatchXxx* routines.
 -   Callbacks to handle the Plug and Play and power events that the driver supports.
@@ -83,11 +83,11 @@ WDF drivers follow a regular pattern to create all types of objects:
 2.  Optionally initialize the attributes structure for the object.
 3.  Call the creation method to create the object.
 
-The configuration structure and the attributes structure supply basic information about the object and how the driver uses it. All object types use [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) as the attributes structure, but the configuration structure for each type of object is different and some objects do not have one. For example, there is a [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure but not a **WDF\_DEVICE\_CONFIG** structure.
+The configuration structure and the attributes structure supply basic information about the object and how the driver uses it. All object types use [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) as the attributes structure, but the configuration structure for each type of object is different and some objects do not have one. For example, there is a [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure but not a **WDF\_DEVICE\_CONFIG** structure.
 
-The configuration structure holds pointers to object-specific information, such as the driver’s event callback functions for the object. The driver fills in this structure and then passes it to the framework when it calls the object creation method. For example, a call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) includes a pointer to a [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure that contains a pointer to the driver’s [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
+The configuration structure holds pointers to object-specific information, such as the driver’s event callback functions for the object. The driver fills in this structure and then passes it to the framework when it calls the object creation method. For example, a call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) includes a pointer to a [**WDF\_DRIVER\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config) structure that contains a pointer to the driver’s [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 
-The framework defines functions that are named WDF\_*Object*\_CONFIG\_INIT to initialize the configuration structures, where *Object* represents the name of the object type. The [**WDF\_OBJECT\_ATTRIBUTES\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdf_object_attributes_init) function initializes a driver's [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
+The framework defines functions that are named WDF\_*Object*\_CONFIG\_INIT to initialize the configuration structures, where *Object* represents the name of the object type. The [**WDF\_OBJECT\_ATTRIBUTES\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init) function initializes a driver's [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
 
 ## Object Context Area
 
@@ -106,7 +106,7 @@ Even if your driver receives IRPs other than those listed in the table, you can 
 
 Nearly all drivers queue I/O requests. WDM drivers typically use one of the following approaches:
 
--   Implement a [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) function and call [**IoStartPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartpacket) and [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartnextpacket) to use the system’s device queue for I/O requests.
+-   Implement a [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) function and call [**IoStartPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartpacket) and [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket) to use the system’s device queue for I/O requests.
 -   Use the **IoCsqXxx** or other list-management functions to implement its own internal I/O queues.
 -   Use the **KeXxxDeviceQueue** functions to initialize and manage a queue that is protected by a spin lock.
 

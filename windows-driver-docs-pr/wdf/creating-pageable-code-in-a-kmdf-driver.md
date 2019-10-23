@@ -32,9 +32,9 @@ To help you determine whether pageable code or data is appropriate for your driv
 
 3.  Determine whether your driver requires access to pageable data outside the driver, such as files, the registry, or paged pool, during power transitions.
 
-    For information about how to enable and disable a driver's ability to access pageable data during power transitions, see [**WdfDeviceInitSetPowerPageable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpageable) and [**WdfDeviceInitSetPowerNotPageable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowernotpageable).
+    For information about how to enable and disable a driver's ability to access pageable data during power transitions, see [**WdfDeviceInitSetPowerPageable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpageable) and [**WdfDeviceInitSetPowerNotPageable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowernotpageable).
 
-    For information about how to determine when your driver is in a nonpageable state, see [**WdfDevStateIsNP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevstateisnp).
+    For information about how to determine when your driver is in a nonpageable state, see [**WdfDevStateIsNP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevstateisnp).
 
  
 

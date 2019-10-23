@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Enabling an Error Source
 
 
-A user-mode application can enable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::EnableErrorSourceRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) method.
+A user-mode application can enable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::EnableErrorSourceRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method.
 
 The following code example shows how to enable an error source.
 
@@ -119,7 +119,7 @@ pClass->Release();
 pOutParameters->Release();
 ```
 
-A user-mode application can disable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::DisableErrorSourceRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_whea/) method. For more information about disabling an error source, see [Disabling an Error Source](disabling-an-error-source.md).
+A user-mode application can disable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::DisableErrorSourceRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method. For more information about disabling an error source, see [Disabling an Error Source](disabling-an-error-source.md).
 
  
 

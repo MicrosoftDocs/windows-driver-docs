@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_designing_a_miniport_driver_callback_routine_that_handles_wmi_clas"></span><span id="DDK_DESIGNING_A_MINIPORT_DRIVER_CALLBACK_ROUTINE_THAT_HANDLES_WMI_CLAS"></span>
 
 
-This section uses example WMI classes that contain WMI methods and describes what the corresponding miniport driver callback routine should look like. For more information about the miniport driver callback routine that executes WMI methods, see [**HwScsiWmiExecuteMethod**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nc-scsiwmi-pscsiwmi_execute_method).
+This section uses example WMI classes that contain WMI methods and describes what the corresponding miniport driver callback routine should look like. For more information about the miniport driver callback routine that executes WMI methods, see [**HwScsiWmiExecuteMethod**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/nc-scsiwmi-pscsiwmi_execute_method).
 
 The following example WMI classes contain WMI methods:
 
@@ -158,7 +158,7 @@ case MSFC_HBAPortMethodsGuidIndex:
     }
 ```
 
-Before returning, your callback routine should call [**ScsiPortWmiPostProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nf-scsiwmi-scsiportwmipostprocess). This SCSI Port WMI library routine updates the request context with information, such as the status of the request and the size of the return data. For more information about the information that is stored in the request context, see [**SCSIWMI\_REQUEST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/ns-scsiwmi-scsiwmi_request_context).
+Before returning, your callback routine should call [**ScsiPortWmiPostProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmipostprocess). This SCSI Port WMI library routine updates the request context with information, such as the status of the request and the size of the return data. For more information about the information that is stored in the request context, see [**SCSIWMI\_REQUEST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmi_request_context).
 
  
 

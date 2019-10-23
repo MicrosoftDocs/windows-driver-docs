@@ -54,7 +54,7 @@ The DEVPKEY_Device_Address device property represents the bus-specific address o
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_Address to the address of the device on its bus. For information about the interpretation of a device address, see the **DevicePropertyAddress** value of the *DeviceProperty* parameter of [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceproperty).
+Windows sets the value of DEVPKEY_Device_Address to the address of the device on its bus. For information about the interpretation of a device address, see the **DevicePropertyAddress** value of the *DeviceProperty* parameter of [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty).
 
 You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Address.
 
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceproperty)
+[**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty)
 
 [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 

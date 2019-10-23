@@ -25,7 +25,7 @@ Like the Storport driver, and unlike the SCSI port driver, the ATA port driver a
 
 For example, suppose the ATA port driver issues an IRB to reset a LUN after one of the LUN's uncompleted requests times out. In response to this LUN reset, the miniport driver performs a device reset operation, if the hardware supports it, and completes all the outstanding requests on the LUN including the reset IRB. The reset IRB is not timed. Therefore no additional requests will be issued to the LUN if the miniport driver does not complete the reset IRB.
 
-If the miniport driver fails the reset IRB (that is, completes the reset IRB with any status other than IRB\_STATUS\_SUCCESS), the ATA port driver calls the miniport driver's [**IdeHwReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nc-irb-ide_hw_reset) routine to reset the whole channel. The miniport driver must then complete all the outstanding requests for that channel and perform the necessary operations on the hardware to reset the devices that are attached to that channel.
+If the miniport driver fails the reset IRB (that is, completes the reset IRB with any status other than IRB\_STATUS\_SUCCESS), the ATA port driver calls the miniport driver's [**IdeHwReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_reset) routine to reset the whole channel. The miniport driver must then complete all the outstanding requests for that channel and perform the necessary operations on the hardware to reset the devices that are attached to that channel.
 
 The ATA port driver does not support target resets for devices that have multiple LUNs.
 

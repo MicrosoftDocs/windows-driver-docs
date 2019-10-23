@@ -15,7 +15,7 @@ Miniport drivers use the **NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE** notification 
 
 Unsolicited events are not applicable.
 
-This notification uses the [**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response) structure.
+This notification uses the [**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response) structure.
 
 ## Requirements
 
@@ -30,4 +30,4 @@ This notification uses the [**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.
 
 [OID_WWAN_UICC_ACCESS_BINARY](oid-wwan-uicc-access-binary.md)
 
-[**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response)
+[**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response)

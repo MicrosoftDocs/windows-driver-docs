@@ -13,13 +13,13 @@ ms.custom: 19H1
 
 OID_WWAN_UICC_APP_LIST retrieves a list of applications in a UICC and information about them.
 
-Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_UICC_UICC_APP_LIST](ndis-status-wwan-uicc-app-list.md) status notification containing an [**NDIS_WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_app_list) structure that describes the app list for the UICC.
+Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_UICC_UICC_APP_LIST](ndis-status-wwan-uicc-app-list.md) status notification containing an [**NDIS_WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_app_list) structure that describes the app list for the UICC.
 
 Set requests are not applicable.
 
 ## Remarks
 
-When the UICC in the modem is fully initialized and ready to register with the mobile operator, a UICC application must be selected for registration and a Query request with this OID should return the selected application in the **ActiveAppIndex** field of the [**WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_uicc_app_list) structure used in response.
+When the UICC in the modem is fully initialized and ready to register with the mobile operator, a UICC application must be selected for registration and a Query request with this OID should return the selected application in the **ActiveAppIndex** field of the [**WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_uicc_app_list) structure used in response.
 
 For more information about usage of this OID, see [MB UICC application and file system access](mb-uicc-application-and-file-system-access.md).
 
@@ -36,6 +36,6 @@ For more information about usage of this OID, see [MB UICC application and file 
 
 [NDIS_STATUS_WWAN_UICC_UICC_APP_LIST](ndis-status-wwan-uicc-app-list.md)
 
-[**NDIS_WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_app_list)
+[**NDIS_WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_app_list)
 
-[**WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_uicc_app_list)
+[**WWAN_UICC_APP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_uicc_app_list)

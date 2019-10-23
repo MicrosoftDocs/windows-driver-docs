@@ -22,13 +22,13 @@ All IDE controller minidrivers must provide a series of standard routines that i
 
 ![program flow for minidriver routine initialization](images/idecallbacks.png)
 
-1.  The PnP manager loads the IDE controller driver-minidriver, then calls its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine, passing it a pointer to the driver object for the controller driver.
+1.  The PnP manager loads the IDE controller driver-minidriver, then calls its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, passing it a pointer to the driver object for the controller driver.
 
 2.  The minidriver's **DriverEntry** calls the [**PciIdeXInitialize**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563788(v=vs.85)) library routine, passing it a pointer to the minidriver's **GetControllerProperties** routine.
 
 3.  **PciIdeXInitialize** stores the pointer to **GetControllerProperties** in the driver object.
 
-4.  PnP manager dispatches an IRP\_MN\_START\_DEVICE request to the IDE controller driver to start the controller. The IDE controller driver receives the request in its [**DispatchPnP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine and calls an internal routine that starts the device.
+4.  PnP manager dispatches an IRP\_MN\_START\_DEVICE request to the IDE controller driver to start the controller. The IDE controller driver receives the request in its [**DispatchPnP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine and calls an internal routine that starts the device.
 
 5.  The controller driver retrieves a pointer to **GetControllerProperties** that is stored in the driver object.
 

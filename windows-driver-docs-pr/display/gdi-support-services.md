@@ -57,7 +57,7 @@ These service routines fall into the following categories:
 
 [Halftone services](gdi-halftone-services.md)
 
-[Using the Graphics DDI](using-the-graphics-ddi.md) describes the graphics DDI entry points and also explains where many of these service routines can be used to help the driver implement the entry points. For detailed descriptions of each of the service functions, see [GDI Functions Called by Printer and Display Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+[Using the Graphics DDI](using-the-graphics-ddi.md) describes the graphics DDI entry points and also explains where many of these service routines can be used to help the driver implement the entry points. For detailed descriptions of each of the service functions, see [GDI Functions Called by Printer and Display Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
  
 

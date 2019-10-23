@@ -18,13 +18,13 @@ Each framework object exports a set of methods (functions). Each method serves o
 
 -   It performs an action that is associated with the object.
 
-    For example, the [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate) method creates an I/O queue for a device.
+    For example, the [**WdfIoQueueCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate) method creates an I/O queue for a device.
 
     Methods that perform an action typically return an [NTSTATUS value](https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values).
 
 -   It retrieves or modifies a [property](framework-object-properties.md) that is associated with the object.
 
-    For example, the [**WdfRequestGetInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestgetinformation) method returns information about an I/O request's completion status.
+    For example, the [**WdfRequestGetInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetinformation) method returns information about an I/O request's completion status.
 
     Methods that retrieve a property typically return the property's value, while methods that modify a property typically do not return a value.
 

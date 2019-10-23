@@ -24,7 +24,7 @@ Color management can be enabled by either an application or a printer driver. Ap
 
     This method allows the application to select system-controlled, driver-controlled, or device-controlled color management (assuming the specified control type is supported).
 
-Printer drivers can enable color management by setting either DMICMMETHOD\_SYSTEM, DMICMMETHOD\_DRIVER, or DMICMMETHOD\_DEVICE in the **dmICMMethod** member of the driver's default DEVMODE structure. (An application can override the default setting if supplying a DEVMODE structure for **CreateDC**. Additionally, the driver is responsible for storing the user's choice for color management during execution of the driver's [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdocumentpropertysheets) function.)
+Printer drivers can enable color management by setting either DMICMMETHOD\_SYSTEM, DMICMMETHOD\_DRIVER, or DMICMMETHOD\_DEVICE in the **dmICMMethod** member of the driver's default DEVMODE structure. (An application can override the default setting if supplying a DEVMODE structure for **CreateDC**. Additionally, the driver is responsible for storing the user's choice for color management during execution of the driver's [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) function.)
 
  
 

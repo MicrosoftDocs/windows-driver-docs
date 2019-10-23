@@ -54,9 +54,9 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The fatal error that caused this live dump to be taken. Possible values:</p>
 <ol>
 <li>70: Caused by user mode</li>
-<li>71: Caused by <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismremoveminiport" data-raw-source="[NdisMRemoveMiniport](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismremoveminiport)">NdisMRemoveMiniport</a></strong></li>
-<li>72: Caused by <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisiminitializedeviceinstanceex" data-raw-source="[NdisIMInitializeDeviceInstanceEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisiminitializedeviceinstanceex)">NdisIMInitializeDeviceInstanceEx</a></strong> failing</li>
-<li>73: Caused by <em><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart" data-raw-source="[MiniportRestart](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart)">MiniportRestart</a></em> failing</li>
+<li>71: Caused by <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismremoveminiport" data-raw-source="[NdisMRemoveMiniport](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismremoveminiport)">NdisMRemoveMiniport</a></strong></li>
+<li>72: Caused by <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisiminitializedeviceinstanceex" data-raw-source="[NdisIMInitializeDeviceInstanceEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisiminitializedeviceinstanceex)">NdisIMInitializeDeviceInstanceEx</a></strong> failing</li>
+<li>73: Caused by <em><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart" data-raw-source="[MiniportRestart](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart)">MiniportRestart</a></em> failing</li>
 <li>74: Caused by failing a <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power" data-raw-source="[OID_PNP_SET_POWER (D0)](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power)">OID_PNP_SET_POWER (D0)</a> request</li>
 <li>75: Caused by failing a <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power" data-raw-source="[OID_PNP_SET_POWER (Dx)](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power)">OID_PNP_SET_POWER (Dx)</a> request</li>
 </ol></td>
@@ -108,7 +108,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The value of Parameter 4 depends on the value of Parameter 2. Each number in this list corresponds to the same number in Parameter 2.</p>
 <ul>
 <li>0x01 : 0</li>
-<li>0x02 : The NET_PNP_EVENT_CODE of the stuck event. For more information about these codes, see <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_pnp_event" data-raw-source="[NET_PNP_EVENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_pnp_event)">NET_PNP_EVENT</a></strong>..</li>
+<li>0x02 : The NET_PNP_EVENT_CODE of the stuck event. For more information about these codes, see <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event" data-raw-source="[NET_PNP_EVENT](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event)">NET_PNP_EVENT</a></strong>..</li>
 <li>0x03 : The NDIS_STATUS code of the stuck indication. Use <strong><a href="-ndiskd-help.md" data-raw-source="[!ndiskd.help](-ndiskd-help.md)">!ndiskd.help</a></strong> to decode it.</li>
 <li>0x04 : 0</li>
 <li>0x11 : 0</li>

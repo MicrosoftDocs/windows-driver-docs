@@ -30,7 +30,7 @@ The changer class driver:
 
 -   Performs device-independent preprocessing for [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests, calls the appropriate **Changer***Xxx* miniclass routines, and completes the requests.
 
--   Performs device-independent preprocessing for errors and calls the miniclass driver's [**ChangerError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changererror) routine for device-specific processing.
+-   Performs device-independent preprocessing for errors and calls the miniclass driver's [**ChangerError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changererror) routine for device-specific processing.
 
 -   Calls **Changer***Xxx* miniclass driver routines to get product data, change element status, or query inquiry or volume tags data.
 

@@ -24,11 +24,11 @@ The print spooler, in conjunction with [printer interface DLLs](printer-interfac
 
 1.  The application calls the print spooler's **DocumentProperties** function (described in the Microsoft Windows SDK documentation), specifying the printer on which the document is to be printed.
 
-2.  The print spooler calls CPSUI's entry point function, [**CommonPropertySheetUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nf-compstui-commonpropertysheetuia), specifying an internal [**PFNPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nc-compstui-pfnpropsheetui)-typed callback function.
+2.  The print spooler calls CPSUI's entry point function, [**CommonPropertySheetUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nf-compstui-commonpropertysheetuia), specifying an internal [**PFNPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-pfnpropsheetui)-typed callback function.
 
 3.  CPSUI calls the spooler's PFNPROPSHEETUI-typed callback function.
 
-4.  The spooler's PFNPROPSHEETUI-typed callback function calls CPSUI's [**ComPropSheet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/nc-compstui-pfncompropsheet) function (with a [**CPSFUNC\_ADD\_PFNPROPSHEETUI**](https://docs.microsoft.com/previous-versions/ff546391(v=vs.85)) function code) to notify CPSUI of the address of the appropriate printer interface DLL's [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdocumentpropertysheets) function.
+4.  The spooler's PFNPROPSHEETUI-typed callback function calls CPSUI's [**ComPropSheet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function (with a [**CPSFUNC\_ADD\_PFNPROPSHEETUI**](https://docs.microsoft.com/previous-versions/ff546391(v=vs.85)) function code) to notify CPSUI of the address of the appropriate printer interface DLL's [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) function.
 
 5.  CPSUI calls the printer interface DLL's **DrvDocumentPropertySheets** function.
 
@@ -44,7 +44,7 @@ As the application user traverses the property sheet pages and modifies option v
 
 When the user dismisses the property sheet by clicking on the **Ok** or **Cancel** button, CPSUI destroys the pages and causes the **CommonPropertySheetUI** function to return to the print spooler, which then returns control to the application.
 
-When an application displays a property sheet for a printer device instead of a print document, the same steps are followed, except that the application calls the spooler's **PrinterProperties** function and the spooler passes the address of the printer interface DLL's [**DrvDevicePropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicepropertysheets) function to CPSUI.
+When an application displays a property sheet for a printer device instead of a print document, the same steps are followed, except that the application calls the spooler's **PrinterProperties** function and the spooler passes the address of the printer interface DLL's [**DrvDevicePropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicepropertysheets) function to CPSUI.
 
  
 

@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_SMS\_RECEIVE notification to inform
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_SMS\_RECEIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive) structure.
+This notification uses the [**NDIS\_WWAN\_SMS\_RECEIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive) structure.
 
 Remarks
 -------
@@ -53,7 +53,7 @@ Requirements
 
 [OID\_WWAN\_SMS\_READ](oid-wwan-sms-read.md)
 
-[**NDIS\_WWAN\_SMS\_RECEIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive)
+[**NDIS\_WWAN\_SMS\_RECEIVE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive)
 
  
 

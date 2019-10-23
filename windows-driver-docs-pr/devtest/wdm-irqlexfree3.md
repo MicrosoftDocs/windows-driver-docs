@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # IrqlExFree3 rule (wdm)
 
 
-The **IrqlExFree3** rule specifies that [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-exfreepool) and [**ExFreePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exfreepoolwithtag) are called at proper IRQL.
+The **IrqlExFree3** rule specifies that [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) and [**ExFreePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreepoolwithtag) are called at proper IRQL.
 
 |              |     |
 |--------------|-----|
@@ -51,7 +51,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**ExFreePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exfreepoolwithtag)
+[**ExFreePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreepoolwithtag)
  
 
  

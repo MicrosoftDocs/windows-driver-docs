@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 
 The **NDIS\_STATUS\_SWITCH\_NIC\_STATUS** status indication is used to encapsulate a status indication from a physical network adapter that is bound to the external network adapter of the Hyper-V extensible switch. Through this encapsulation, the status indication is forwarded up the extensible switch driver stack.
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure for this indication contains a pointer to an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure for this indication contains a pointer to an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure.
 
 Remarks
 -------
 
 When an underlying physical network adapter issues an NDIS status indication, it is received by the external network adapter. When this happens, the extensible switch interface performs these steps:
 
-1.  The interface encapsulates the status indication inside an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure.
+1.  The interface encapsulates the status indication inside an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure.
 
 2.  The interface issues an **NDIS\_STATUS\_SWITCH\_NIC\_STATUS** status indication to forward the encapsulated status indication up the extensible switch driver stack. This allows extensible switch extensions to modify the encapsulated status indication.
 
@@ -60,7 +60,7 @@ Requirements
 
 
 ****
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
 [**NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES**](ndis-status-receive-filter-current-capabilities.md)
 

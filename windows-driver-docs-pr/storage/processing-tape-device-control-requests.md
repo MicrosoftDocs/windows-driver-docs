@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_processing_tape_device_control_requests_kg"></span><span id="DDK_PROCESSING_TAPE_DEVICE_CONTROL_REQUESTS_KG"></span>
 
 
-All tape miniclass drivers must report status using the values listed in the [**TAPE\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/ne-minitape-_tape_status) enumerator. However, when the tape class driver completes an I/O control request, it reports status using the equivalent NT Status Values. The following table provides a mapping between TAPE\_STATUS values and their equivalent NT status values:
+All tape miniclass drivers must report status using the values listed in the [**TAPE\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/minitape/ne-minitape-_tape_status) enumerator. However, when the tape class driver completes an I/O control request, it reports status using the equivalent NT Status Values. The following table provides a mapping between TAPE\_STATUS values and their equivalent NT status values:
 
 <table>
 <colgroup>

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Local NDIS Quality of Service (QoS) parameters specify the locally provisioned QoS settings for a miniport driver and its network adapter. Miniport drivers obtain the local NDIS QoS parameters in the following ways:
 
--   Through an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters) that is issued by the Data Center Bridging (DCB) component (Msdcb.sys). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure that specifies the local NDIS QoS parameters.
+-   Through an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters) that is issued by the Data Center Bridging (DCB) component (Msdcb.sys). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure that specifies the local NDIS QoS parameters.
 
     For more information on the DCB component, see [NDIS QoS Architecture for Data Center Bridging](ndis-qos-architecture-for-data-center-bridging.md).
 
@@ -19,7 +19,7 @@ Local NDIS Quality of Service (QoS) parameters specify the locally provisioned Q
 
      
 
--   Through proprietary settings that are stored in the system registry and defined by the independent hardware vendor (IHV) for the network adapter. The miniport driver reads these settings when its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function is called by NDIS.
+-   Through proprietary settings that are stored in the system registry and defined by the independent hardware vendor (IHV) for the network adapter. The miniport driver reads these settings when its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function is called by NDIS.
 
 -   Through proprietary settings issued to the miniport driver through a management application developed by the IHV.
 
@@ -47,7 +47,7 @@ If the local DCBX Willing state is disabled, the miniport driver must follow the
 
      
 
--   The miniport driver should *apply* the local QoS parameters that are contained in the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure when it resolves its operational NDIS QoS parameters. If the driver applies these local QoS parameters, it must not use any remote QoS parameters that it received from the remote peer.
+-   The miniport driver should *apply* the local QoS parameters that are contained in the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure when it resolves its operational NDIS QoS parameters. If the driver applies these local QoS parameters, it must not use any remote QoS parameters that it received from the remote peer.
 
     For more information on this procedure, see [Resolving Operational NDIS QoS Parameters](resolving-operational-ndis-qos-parameters.md).
 

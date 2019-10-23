@@ -15,7 +15,7 @@ OID\_WWAN\_PRESHUTDOWN is sent to notify the modem that the system is entering t
 
 Query requests are not supported.
 
-Miniport drivers must process set requests asynchronously, initially returning **NDIS\_STATUS\_INDICATION\_REQUIRED** to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preshutdown-state) status notification when the MBB driver has finished all necessary modem operations prior to shutting down. The set request has a [**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state) structure.
+Miniport drivers must process set requests asynchronously, initially returning **NDIS\_STATUS\_INDICATION\_REQUIRED** to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preshutdown-state) status notification when the MBB driver has finished all necessary modem operations prior to shutting down. The set request has a [**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state) structure.
 
 Miniport drivers should return **NDIS\_STATUS\_NOT\_SUPPORTED** if they do not support this operation.
 
@@ -44,7 +44,7 @@ Requirements
 
 [**NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preshutdown-state)
 
-[**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state)
+[**NDIS\_WWAN\_SET\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_preshutdown_state)
 
  
 

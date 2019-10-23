@@ -20,13 +20,13 @@ If you want to support new device fonts in a PCL XL minidriver, you must create 
 
 A UFM file has the following format:
 
-A [**UNIFM\_HDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_unifm_hdr) structure, which serves as a header for the UFM file
+A [**UNIFM\_HDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unifm_hdr) structure, which serves as a header for the UFM file
 
-A [**UNIDRVINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_unidrvinfo) structure
+A [**UNIDRVINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unidrvinfo) structure
 
 An [**IFIMETRICS**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_ifimetrics) structure
 
-An [**EXTTEXTMETRIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prntfont/ns-prntfont-_exttextmetric) structure
+An [**EXTTEXTMETRIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_exttextmetric) structure
 
 A character width table
 

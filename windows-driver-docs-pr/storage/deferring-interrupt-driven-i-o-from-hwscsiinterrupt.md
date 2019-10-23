@@ -25,7 +25,7 @@ For example, if a miniport driver must stall for longer than 50 microseconds doi
 
 2.  Set up the device extension with any context necessary to complete the operation.
 
-3.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification) with a pointer to the device extension, the *NotificationType***CallEnableInterrupts**, and the miniport driver's *HwScsiEnableInterruptsCallback* routine, described in [SCSI Miniport Driver's HwScsiEnableInterruptsCallback Routine](scsi-miniport-driver-s-hwscsienableinterruptscallback-routine.md).
+3.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with a pointer to the device extension, the *NotificationType***CallEnableInterrupts**, and the miniport driver's *HwScsiEnableInterruptsCallback* routine, described in [SCSI Miniport Driver's HwScsiEnableInterruptsCallback Routine](scsi-miniport-driver-s-hwscsienableinterruptscallback-routine.md).
 
 4.  Return control.
 

@@ -32,7 +32,7 @@ Instructions
 
 ### <a href="" id="implement-the-settarget-method-for-your-device"></a>Step 2: Implement the SetTarget method for your device
 
-- Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**IAction::SetTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iaction-settarget) SetTarget method. This method has a section marked with comments and TODO: that indicates where you should implement code that checks for compatibility with your device.
+- Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**IAction::SetTarget**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iaction-settarget) SetTarget method. This method has a section marked with comments and TODO: that indicates where you should implement code that checks for compatibility with your device.
 
   The **SetTarget** method is called once by WDTF for each instance. It has two main purposes:
 
@@ -55,13 +55,13 @@ Instructions
 
 Next, you need to open the ITarget for testing by implementing the provided Open() method.
 
-This [**Open**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method should attempt to open the target device. If the method is unable to do this, the method should return an HRESULT indicating the failure. This method should fail if the SimpleIO interface is already open (initialized). How you implement this method depends upon your ITarget type and what makes the most sense in your situation. Perhaps this means you should open a handle to it with CreateFile(). Perhaps it means that you initialize a context structure so that you can keep track of an ongoing test case. In the event of an error, the method should ideally use COMReportError () and should provide a description of the error and any information or steps that could help prevent future occurrences.
+This [**Open**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method should attempt to open the target device. If the method is unable to do this, the method should return an HRESULT indicating the failure. This method should fail if the SimpleIO interface is already open (initialized). How you implement this method depends upon your ITarget type and what makes the most sense in your situation. Perhaps this means you should open a handle to it with CreateFile(). Perhaps it means that you initialize a context structure so that you can keep track of an ongoing test case. In the event of an error, the method should ideally use COMReportError () and should provide a description of the error and any information or steps that could help prevent future occurrences.
 
 **Note**  This method should fail if ISimpleIO\_Action is already opened.
 
  
 
--   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**Open**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method. This method has a section marked with comments and TODO:
+-   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of [**Open**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-open) method. This method has a section marked with comments and TODO:
 
     ```cpp
     //
@@ -84,7 +84,7 @@ This method should close your previously opened test context. You should clear y
 
  
 
--   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the [**Close**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-close) method. This method has a section marked with comments and TODO:
+-   Open the implementation file for your project, for example, CWDTFmyDeviceTypeSimpleIoActionImpl.cpp, and locate the instance of the [**Close**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdtfsimpleioex2-close) method. This method has a section marked with comments and TODO:
 
     ```cpp
     //

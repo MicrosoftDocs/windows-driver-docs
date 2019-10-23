@@ -45,7 +45,7 @@ The **IWiaUIExtension** interface provides the following methods:
 
  
 
-[**IWiaUIExtension::DeviceDialog**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)) accepts a pointer to a [**DEVICEDIALOGDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiadevd/ns-wiadevd-tagdevicedialogdata) structure (declared in *wiadevd.h*), which contains all the data needed to implement the device dialog box.
+[**IWiaUIExtension::DeviceDialog**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)) accepts a pointer to a [**DEVICEDIALOGDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiadevd/ns-wiadevd-tagdevicedialogdata) structure (declared in *wiadevd.h*), which contains all the data needed to implement the device dialog box.
 
 The device dialog must be implemented as a modal Win32 dialog box, subject to the following four constraints:
 

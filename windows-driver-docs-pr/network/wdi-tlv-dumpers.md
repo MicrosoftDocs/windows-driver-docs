@@ -53,7 +53,7 @@ Unlike the Parse and Generate APIs, the dumper is very permissive. It attempts t
 
 Like the Parse APIs, the *pBuffer* pointer and *BufferLength* parameters should exclude any headers and point directly at the first TLV.
 
-The Message variants of the APIs include the message ID and the message direction to better disambiguate the TLV. This is helpful because the same TLV ID can be decoded in different ways depending upon context. For example, [**WDI\_TLV\_BSSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bssid) can directly contain a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) when part of [OID\_WDI\_TASK\_SCAN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-scan), or it can contain a list of **WDI\_MAC\_ADDRESS** when part of [**WDI\_TLV\_P2P\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-attributes).
+The Message variants of the APIs include the message ID and the message direction to better disambiguate the TLV. This is helpful because the same TLV ID can be decoded in different ways depending upon context. For example, [**WDI\_TLV\_BSSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bssid) can directly contain a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) when part of [OID\_WDI\_TASK\_SCAN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-scan), or it can contain a list of **WDI\_MAC\_ADDRESS** when part of [**WDI\_TLV\_P2P\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-attributes).
 
  
 

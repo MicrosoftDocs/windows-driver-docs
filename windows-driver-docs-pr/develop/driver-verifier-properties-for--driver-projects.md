@@ -93,7 +93,7 @@ You can configure the following Driver Verifier options on the test computer.
 
 -   [Force pending I/O requests](https://docs.microsoft.com/windows-hardware/drivers/devtest/force-pending-i-o-requests)
 
-    When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
+    When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 -   [IRP logging](https://docs.microsoft.com/windows-hardware/drivers/devtest/irp-logging)
 

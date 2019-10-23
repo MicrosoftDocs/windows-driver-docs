@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 By handling the [**KSPROPERTY\_GENERAL\_COMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-general-componentid) property, an audio filter can provide hardware-specific information that applications can use to uniquely identify the underlying device. Microsoft Windows XP is the first version of Windows to support this feature; this feature is not available in earlier versions.
 
-The filter provides the hardware-specific information in the form of a [**KSCOMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kscomponentid) structure that contains the following:
+The filter provides the hardware-specific information in the form of a [**KSCOMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) structure that contains the following:
 
 -   Manufacturer GUID
 

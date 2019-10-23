@@ -21,14 +21,14 @@ WDI\_TLV\_P2P\_DEVICE\_ADDRESS is a TLV that contains the device address of the 
 ## Length
 
 
-The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
+The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
 
 ## Values
 
 
 | Type                                              | Description                            |
 |---------------------------------------------------|----------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The device address of the Group Owner. |
+| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The device address of the Group Owner. |
 
  
 

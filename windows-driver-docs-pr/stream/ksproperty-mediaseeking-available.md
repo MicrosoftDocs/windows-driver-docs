@@ -47,8 +47,8 @@ The KSPROPERTY\_MEDIASEEKING\_AVAILABLE property retrieves the media time span t
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_mediaavailable" data-raw-source="[&lt;strong&gt;KSPROPERTY_MEDIAAVAILABLE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_mediaavailable)"><strong>KSPROPERTY_MEDIAAVAILABLE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable" data-raw-source="[&lt;strong&gt;KSPROPERTY_MEDIAAVAILABLE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable)"><strong>KSPROPERTY_MEDIAAVAILABLE</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -79,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_MEDIAAVAILABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_mediaavailable)
+[**KSPROPERTY\_MEDIAAVAILABLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable)
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
 

@@ -36,17 +36,17 @@ There are three key differences between the implementation of the changer class/
 
 In Windows 2000, the changer class driver provides the following routines for the miniclass driver to call:
 
--   [**ChangerClassAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassallocatepool) -- allocates pool memory.
+-   [**ChangerClassAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassallocatepool) -- allocates pool memory.
 
--   [**ChangerClassFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassfreepool) -- frees pool memory.
+-   [**ChangerClassFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassfreepool) -- frees pool memory.
 
--   [**ChangerClassDebugPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassdebugprint) -- prints debugging information.
+-   [**ChangerClassDebugPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassdebugprint) -- prints debugging information.
 
 In Windows XP and later operating systems, the changer class driver provides, two additional routines in addition to the routines previously listed.
 
--   [**ChangerClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassinitialize) -- The changer miniclass driver calls **ChangerClassInitialize** from within its **DriverEntry** routine to initialize the driver. **ChangerClassInitialize** performs many tasks formerly performed by the Windows 2000 changer class driver's **DriverEntry** routine.
+-   [**ChangerClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassinitialize) -- The changer miniclass driver calls **ChangerClassInitialize** from within its **DriverEntry** routine to initialize the driver. **ChangerClassInitialize** performs many tasks formerly performed by the Windows 2000 changer class driver's **DriverEntry** routine.
 
--   [**ChangerClassSendSrbSynchronous**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclasssendsrbsynchronous) -- initializes and synchronously sends an SRB to an indicated target device.
+-   [**ChangerClassSendSrbSynchronous**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclasssendsrbsynchronous) -- initializes and synchronously sends an SRB to an indicated target device.
 
  
 

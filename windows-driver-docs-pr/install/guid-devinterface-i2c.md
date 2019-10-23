@@ -50,7 +50,7 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of I2C interfaces that perform transactions with monitor child devices.
 
-If a display miniport driver supports a direct-call I2C interface for this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_I2C to specify the interface type.
+If a display miniport driver supports a direct-call I2C interface for this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_I2C to specify the interface type.
 
 For information about the I2C bus, see [I2C Bus and Child Devices of the Display Adapter](https://docs.microsoft.com/windows-hardware/drivers/display/i2c-bus-and-child-devices-of-the-display-adapter).
 

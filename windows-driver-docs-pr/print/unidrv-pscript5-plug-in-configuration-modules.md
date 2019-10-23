@@ -20,7 +20,7 @@ XPSDrv print driver configuration modules that use Unidrv or PScript5 configurat
 
 -   The PrintTicket and PrintCapabilities features
 
--   The [IPrintCoreHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelper) interface for manipulating Unidrv and PScript5 settings
+-   The [IPrintCoreHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelper) interface for manipulating Unidrv and PScript5 settings
 
 -   XPSDrv Document events
 
@@ -28,7 +28,7 @@ XPSDrv print driver configuration modules that use Unidrv or PScript5 configurat
 
 ### PrintTicket and PrintCapabilities Interface Support
 
-Unidrv and PScript5 print driver plug-ins implement the [IPrintOemPrintTicketProvider](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintoemprintticketprovider) interface to customize the PrintTicket and PrintCapabilities data. The methods in this interface allow a plug-in to customize PrintTicket and PrintCapabilities processing for the custom features that the plug-in provides.
+Unidrv and PScript5 print driver plug-ins implement the [IPrintOemPrintTicketProvider](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintoemprintticketprovider) interface to customize the PrintTicket and PrintCapabilities data. The methods in this interface allow a plug-in to customize PrintTicket and PrintCapabilities processing for the custom features that the plug-in provides.
 
 The Unidrv and PScript5 print drivers implement the [IPrintTicketProvider](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff554375(v=vs.85)) interface and generate the initial version of the PrintTicket and PrintCapabilities data that is based on the GPD or PPD file. After the initial processing, the Unidrv or PScript5 print driver then calls the plug-in's **IPrintOemPrintTicketProvider** interface so that the plug-in can modify this data before the print driver returns it to the calling application.
 
@@ -57,7 +57,7 @@ DECLARE_INTERFACE_(IPrintCoreHelper, IUnknown) {
 };
 ```
 
-The following two additional interfaces, [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni) and [IPrintCoreHelperPS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperps), are derived from the **IPrintCoreHelper** interface. These interfaces are specific to Unidrv and PScript5 print drivers, respectively, and include additional methods that are unique to each driver.
+The following two additional interfaces, [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni) and [IPrintCoreHelperPS](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperps), are derived from the **IPrintCoreHelper** interface. These interfaces are specific to Unidrv and PScript5 print drivers, respectively, and include additional methods that are unique to each driver.
 
 ```cpp
 DECLARE_INTERFACE_(IPrintCoreHelperUni, IUnknown) {

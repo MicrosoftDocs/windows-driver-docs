@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**Polarization**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff567780(v=vs.85))
 

@@ -46,7 +46,7 @@ A WavePci device requires a bus-master DMA controller supporting scatter/gather 
 
 -   **The device must be able to handle data transfers of arbitrary length.**
 
-    It should handle mappings (see [**IPortWavePciStream::GetMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavepcistream-getmapping)) larger than a memory page. A device with a transfer limitation of 4 kilobytes, for example, does not fit the full requirements for WavePci. On 64-bit CPUs that support Microsoft Windows, the page size is 8 kilobytes, which makes it likely that some mappings will be larger than 4 kilobytes in size. Data transfers that exceed 32 kilobytes in a single mapping are theoretically possible, depending on physical memory fragmentation. At the other extreme, a mapping size of one byte is possible.
+    It should handle mappings (see [**IPortWavePciStream::GetMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-getmapping)) larger than a memory page. A device with a transfer limitation of 4 kilobytes, for example, does not fit the full requirements for WavePci. On 64-bit CPUs that support Microsoft Windows, the page size is 8 kilobytes, which makes it likely that some mappings will be larger than 4 kilobytes in size. Data transfers that exceed 32 kilobytes in a single mapping are theoretically possible, depending on physical memory fragmentation. At the other extreme, a mapping size of one byte is possible.
 
 -   **The device should handle data transfers to or from any location in system memory.**
 

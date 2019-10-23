@@ -28,7 +28,7 @@ This information, along with any other a given usage might need, is then set on 
 
 
 ## Setting a Kernel Extended Attribute
-In order to set a Kernel EA, it must begin with the prefix ``"$Kernel."`` and be trailed by a valid EA name string. An attempt to set a Kernel EA from user mode will be silently ignored.  The request will return **STATUS_SUCCESS** but no actual EA modification will be made. To set a Kernel EA calling an API like [ZwSetEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961908) or [FltSetEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltseteafile) from kernel mode is not sufficient.  This is because SMB supports the setting of EA’s across the network and those requests will be issued from kernel mode on the server.  
+In order to set a Kernel EA, it must begin with the prefix ``"$Kernel."`` and be trailed by a valid EA name string. An attempt to set a Kernel EA from user mode will be silently ignored.  The request will return **STATUS_SUCCESS** but no actual EA modification will be made. To set a Kernel EA calling an API like [ZwSetEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961908) or [FltSetEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltseteafile) from kernel mode is not sufficient.  This is because SMB supports the setting of EA’s across the network and those requests will be issued from kernel mode on the server.  
 
 To set a Kernel EA the caller must also set the **IRP_MN_KERNEL_CALL** value in the MinorFunction field of the IRP (I/O request packet). Since the only way to set this field is by generating a custom IRP, the routine [FsRtlSetKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807493) has been exported from the FsRtl package as a support function to set up a Kernel EA.
 
@@ -36,7 +36,7 @@ You may not intermix the setting of normal and kernel EA’s in the same call to
 
 
 ## Querying an Extended Attribute
-Querying the EA’s on a file from user mode will return both normal and Kernel EA’s. They are returned to user mode to minimize any application compatibility issues. The normal [ZwQueryEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961907) and [FltQueryEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltqueryeafile) operations will return both normal and kernel EA's from both user and kernel modes.
+Querying the EA’s on a file from user mode will return both normal and Kernel EA’s. They are returned to user mode to minimize any application compatibility issues. The normal [ZwQueryEaFile](https://msdn.microsoft.com/library/windows/hardware/ff961907) and [FltQueryEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryeafile) operations will return both normal and kernel EA's from both user and kernel modes.
 
 When only a **FileObject** is available, using [FsRtlQueryKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807492) may be more convenient for use to query for Kernel EA's from kernel mode.
 
@@ -63,8 +63,8 @@ This delete of Kernel EA’s will be successful even in low memory situations.
 
 
 ## See Also
-[FltQueryEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltqueryeafile)  
-[FltSetEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltseteafile)  
+[FltQueryEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryeafile)  
+[FltSetEaFile](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltseteafile)  
 [FSCTL_QUERY_USN_JOURNAL](https://docs.microsoft.com/windows/desktop/api/winioctl/ni-winioctl-fsctl_query_usn_journal)  
 [FsRtlQueryKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807492)      
 [FsRtlSetKernelEaFile](https://msdn.microsoft.com/library/windows/hardware/mt807493)  
