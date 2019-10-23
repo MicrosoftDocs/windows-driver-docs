@@ -33,9 +33,9 @@ The ability to set individual Willing bits in these TLVs depends on the local DC
 
 The miniport driver manages the local DCBX Willing state in the following way:
 
--   When the miniport driver is initialized through a call to its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, it should enable the local DCBX Willing state based on proprietary QoS settings that are defined by the IHV.
+-   When the miniport driver is initialized through a call to its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, it should enable the local DCBX Willing state based on proprietary QoS settings that are defined by the IHV.
 
--   The DCB component (Msdcb.sys) issues an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters) to configure the local QoS parameters on a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure for this OID request contains a pointer to an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure.
+-   The DCB component (Msdcb.sys) issues an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters) to configure the local QoS parameters on a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for this OID request contains a pointer to an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure.
 
     If the **NDIS\_QOS\_PARAMETERS\_WILLING** flag is set in the **Flags** member of this structure, the miniport driver enables the DCBX Willing state. If this bit is not set, the miniport driver disabled the DCBX Willing state.
 

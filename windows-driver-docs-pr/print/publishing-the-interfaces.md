@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Publishing the Interfaces
 
 
-Plug-ins typically receive instances of objects that implement behavior in the core drivers by a mechanism called publishing. The [IPrintCoreHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelper), [IPrintCoreHelperPS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperps), and [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni) helper interfaces are published by means of that same model, with a few minor differences.
+Plug-ins typically receive instances of objects that implement behavior in the core drivers by a mechanism called publishing. The [IPrintCoreHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelper), [IPrintCoreHelperPS](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperps), and [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni) helper interfaces are published by means of that same model, with a few minor differences.
 
 The following lists summarize the order in which objects are published in user interface (UI) and render modules, for both Unidrv and Pscript5. For each of the four modules, the number in the list indicates the order in which an object is published, and the COM interfaces that are named indicate which interfaces that the object implements.
 

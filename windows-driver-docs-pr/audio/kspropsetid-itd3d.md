@@ -27,7 +27,7 @@ When the position of a sound source changes, the following parameters must be up
 
 Making instantaneous changes to these parameters can cause clicks and other spurious noises. The ITD algorithm smoothes transitions in these parameters over a number of samples in order to filter out such noises.
 
-For more information about the parameters used by the ITD algorithm, see [**KSDS3D\_ITD\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksds3d_itd_params).
+For more information about the parameters used by the ITD algorithm, see [**KSDS3D\_ITD\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksds3d_itd_params).
 
 This property set contains only a single property:
 

@@ -14,11 +14,11 @@ This section contains information about the sensor structures that provide acces
 
 |Topic|Description|
 |---|---|
-|[SENSOR_VALUE_PAIR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_value_pair)|This structure pairs the property keys listed in the Sensor properties section with the data that each key represents.|
-|[SENSOR_COLLECTION_LIST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list)|This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor.|
-|[SENSOR_PROPERTY_LIST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_property_list)|This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor.|
-|[SENSOR_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_config)|This structure contains information that the sensor driver passes to the class extension about each sensor.|
-|[SENSOR_CONTROLLER_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config)|This structure contains pointers to callback functions that must be implemented by the driver, and passed on to the class extension to call.|
+|[SENSOR_VALUE_PAIR](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_value_pair)|This structure pairs the property keys listed in the Sensor properties section with the data that each key represents.|
+|[SENSOR_COLLECTION_LIST](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list)|This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor.|
+|[SENSOR_PROPERTY_LIST](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_property_list)|This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor.|
+|[SENSOR_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_config)|This structure contains information that the sensor driver passes to the class extension about each sensor.|
+|[SENSOR_CONTROLLER_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)|This structure contains pointers to callback functions that must be implemented by the driver, and passed on to the class extension to call.|
 |SENSOR_DATA|This structure defines a base type that other sensors use to define sensor-specific data types.|
 |SENSOR_DEVICE_CAPS|This structure describes the capabilities of a sensor component.|
 |SENSOR_DATA_HEADER|This structure contains information about a sensor reading.|

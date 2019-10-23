@@ -25,7 +25,7 @@ There are two levels of power management support for miniport drivers:
 
 2.  A miniport driver can also support one or more [network wake-up events](network-wake-up-events.md).
 
-Miniport drivers report power management capabilities during initialization. For more information about power management capabilities that are reported during initialization, see [**NDIS\_MINIPORT\_ADAPTER\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_attributes) and the related attributes structures.
+Miniport drivers report power management capabilities during initialization. For more information about power management capabilities that are reported during initialization, see [**NDIS\_MINIPORT\_ADAPTER\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_attributes) and the related attributes structures.
 
 A miniport driver must support the following OIDs directly or in attributes for a network adapter to make a transition between power states:
 

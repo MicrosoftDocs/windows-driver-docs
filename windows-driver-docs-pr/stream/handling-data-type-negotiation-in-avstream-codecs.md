@@ -26,11 +26,11 @@ The following interactions occur during a data type negotiation:
 
 4.  MF Topology Builder (the MF equivalent of DirectShow graph builder) constructs streaming topology.
 
-5.  After the MF Topology builder finalizes a data type for a Devproxy input/output pin, it sets the data type on the pin by calling the minidriver's [*AVStrMiniPinSetDataFormat*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinsetdataformat) callback function. If the KS pin does not exist, Devproxy calls [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatepin).
+5.  After the MF Topology builder finalizes a data type for a Devproxy input/output pin, it sets the data type on the pin by calling the minidriver's [*AVStrMiniPinSetDataFormat*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdataformat) callback function. If the KS pin does not exist, Devproxy calls [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kscreatepin).
 
 To enable successful data type negotiation, the minidriver must follow these steps:
 
-1.  Supply a list of supported data ranges in the **DataRanges** member of [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_descriptor) for each exposed pin included in the hardware codec filters. For example:
+1.  Supply a list of supported data ranges in the **DataRanges** member of [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) for each exposed pin included in the hardware codec filters. For example:
 
     ```cpp
     const PKSDATARANGE VideoDecoderInputPinDataRanges[8] = {
@@ -45,7 +45,7 @@ To enable successful data type negotiation, the minidriver must follow these ste
     };
     ```
 
-    In this case, the specified ranges are of wrapper types such as [**KS\_DATARANGE\_MPEG2\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_mpeg2_video), [**KS\_DATARANGE\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_video), and [**KS\_DATARANGE\_VIDEO2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_video2). In the code example listed previously, each range is typecast to [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)).
+    In this case, the specified ranges are of wrapper types such as [**KS\_DATARANGE\_MPEG2\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_mpeg2_video), [**KS\_DATARANGE\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video), and [**KS\_DATARANGE\_VIDEO2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video2). In the code example listed previously, each range is typecast to [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)).
 
     The last member of the wrapper structures is known as the format block structure, for example, KS\_DATARANGE\_MPEG2\_VIDEO.**VideoInfoHeader**.
 
@@ -55,7 +55,7 @@ To enable successful data type negotiation, the minidriver must follow these ste
 
 2.  Drivers should allow a media type to be set on a pin while in KSSTATE\_STOP/KSSTATE\_RUN. No action is required here other than to make sure that the driver does not disallow this.
 
-3.  The driver should supply an intersect handler in [**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin_descriptor_ex).**IntersectHandler** for each pin.
+3.  The driver should supply an intersect handler in [**KSPIN\_DESCRIPTOR\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_descriptor_ex).**IntersectHandler** for each pin.
 
 4.  The minidriver should supply a handler for the [**KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-connection-proposedataformat) property.
 

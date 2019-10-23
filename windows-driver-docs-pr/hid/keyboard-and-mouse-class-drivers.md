@@ -48,7 +48,7 @@ Kbdclass and Mouclass each feature:
 
 -   Simultaneous operation of more than one device.
 
--   Connection of a [class service callback routine](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/kbdmou/nc-kbdmou-pservice_callback_routine) that a function driver uses to transfer data from the input data buffer of the device to the data buffer of the class driver.
+-   Connection of a [class service callback routine](https://docs.microsoft.com/windows-hardware/drivers/ddi/kbdmou/nc-kbdmou-pservice_callback_routine) that a function driver uses to transfer data from the input data buffer of the device to the data buffer of the class driver.
 
 ## Configuration of device objects
 
@@ -117,7 +117,7 @@ A vendor can modify the operation of a class service callback by installing an u
 
 The class and filter service callbacks are connected in the following way:
 
--   The class driver sends an internal device connect request down the device stack ([**IOCTL\_INTERNAL\_KEYBOARD\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/kbdmou/ni-kbdmou-ioctl_internal_keyboard_connect) or [**IOCTL\_INTERNAL\_MOUSE\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/kbdmou/ni-kbdmou-ioctl_internal_mouse_connect)). The class connect data is specified by a CONNECT\_DATA structure that includes a pointer to the class device object, and a pointer to the class service callback.
+-   The class driver sends an internal device connect request down the device stack ([**IOCTL\_INTERNAL\_KEYBOARD\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/kbdmou/ni-kbdmou-ioctl_internal_keyboard_connect) or [**IOCTL\_INTERNAL\_MOUSE\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/kbdmou/ni-kbdmou-ioctl_internal_mouse_connect)). The class connect data is specified by a CONNECT\_DATA structure that includes a pointer to the class device object, and a pointer to the class service callback.
 
 -   After the filter driver receives the connect request, it saves a copy of the class connect data, and replaces the request's connect data with filter connect data. The filter connect data specifies a pointer to the filter device object and a pointer to the filter driver service callback. The filter driver then sends the filtered connect request to the function driver.
 
@@ -144,7 +144,7 @@ I8042prt supports the following internal device control requests to query inform
 
 [**IOCTL\_KEYBOARD\_SET\_TYPEMATIC**](https://docs.microsoft.com/windows/desktop/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_set_typematic)
 
-For more information about all keyboard device control requests, see [I8042prt Keyboard Internal Device Control Requests](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For more information about all keyboard device control requests, see [I8042prt Keyboard Internal Device Control Requests](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 ## Scan code mapper for keyboards
 
@@ -252,7 +252,7 @@ I8042prt supports the following internal device control request to query informa
 
 [**IOCTL\_MOUSE\_QUERY\_ATTRIBUTES**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff542085(v=vs.85))
 
-For more information about all mouse device control requests, see [I8042prt Mouse Internal Device Control Requests](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For more information about all mouse device control requests, see [I8042prt Mouse Internal Device Control Requests](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 ## Registry settings associated with mouse class driver
 

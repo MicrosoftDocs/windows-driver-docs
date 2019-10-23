@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # HD Audio DDI Programming Guidelines
 
 
-This section presents programming guidelines for using the HD Audio DDI versions (as defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface), [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structures) to control audio and modem codecs that are connected to an HD Audio bus interface controller.
+This section presents programming guidelines for using the HD Audio DDI versions (as defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface), [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structures) to control audio and modem codecs that are connected to an HD Audio bus interface controller.
 
 The HD Audio bus driver exposes one or both versions of the HD Audio DDI to its children, which are kernel-mode function drivers for the audio and modem codecs. (One of these children might be the UAA HD Audio class driver.) These drivers call the routines in the DDIs to access the hardware capabilities of the HD Audio controller device.
 

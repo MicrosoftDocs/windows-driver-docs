@@ -46,6 +46,6 @@ The following topics describe how to supply a function driver for an ACPI device
 
 [Operation of an ACPI Device Function Driver](operation-of-an-acpi-device-function-driver.md)
 
-For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_acpi/index).
+For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_acpi/index).
 
 For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).

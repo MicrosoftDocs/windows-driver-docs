@@ -79,7 +79,7 @@ In the example illustrated by the previous figure, two class co-installers are r
 
 6.  **SetupDiCallClassInstaller** calls any co-installers that requested postprocessing. In this example, the second class co-installer requested postprocessing.
 
-Co-installer postprocessing is similar to driver [**IoCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routines, except that the co-installer is called a second time at its single entry point. When **SetupDiCallClassInstaller** calls a co-installer for postprocessing, it sets *PostProcessing* to **TRUE** and *InstallResult* to the appropriate value in the *Context* parameter. In this example, *Context*.*InstallResult* is NO_ERROR because the default handler executed successfully.
+Co-installer postprocessing is similar to driver [**IoCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines, except that the co-installer is called a second time at its single entry point. When **SetupDiCallClassInstaller** calls a co-installer for postprocessing, it sets *PostProcessing* to **TRUE** and *InstallResult* to the appropriate value in the *Context* parameter. In this example, *Context*.*InstallResult* is NO_ERROR because the default handler executed successfully.
 
 For postprocessing, **SetupDiCallClassInstaller** calls co-installers in reverse order. If all the co-installers in the previous figure had returned ERROR_DI_POSTPROCESSING_REQUIRED, **SetupDiCallClassInstaller** would call Device_Coinstaller_1 first for postprocessing, followed by Class_Coinstaller_2, and then Class_Coinstaller_1. Class Installers do not request postprocessing; only co-installers do.
 

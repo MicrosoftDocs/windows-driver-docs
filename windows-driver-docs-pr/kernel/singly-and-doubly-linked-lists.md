@@ -25,9 +25,9 @@ Suppose that the *ListHead* variable is a pointer to the **SINGLE\_LIST\_ENTRY**
 
 -   To initialize the list as empty, set *ListHead***-&gt;Next** to be **NULL**.
 
--   To add a new entry to the list, allocate a **SINGLE\_LIST\_ENTRY** to represent the new entry, and then call [**PushEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pushentrylist) to add the entry to beginning of the list.
+-   To add a new entry to the list, allocate a **SINGLE\_LIST\_ENTRY** to represent the new entry, and then call [**PushEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pushentrylist) to add the entry to beginning of the list.
 
--   Pop the first entry off the list by using [**PopEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-popentrylist).
+-   Pop the first entry off the list by using [**PopEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-popentrylist).
 
 A **SINGLE\_LIST\_ENTRY**, by itself, only has a **Next** member. To store your own data in the lists, embed the **SINGLE\_LIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
 
@@ -46,7 +46,7 @@ typedef struct {
 } XXX_ENTRY;
 ```
 
-To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SingleListEntry** member to [**PushEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pushentrylist). To convert a pointer to the **SINGLE\_LIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer). Here is an example of routines that insert and remove driver-defined entries from a singly linked list.
+To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SingleListEntry** member to [**PushEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pushentrylist). To convert a pointer to the **SINGLE\_LIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer). Here is an example of routines that insert and remove driver-defined entries from a singly linked list.
 
 ```cpp
 typedef struct {
@@ -94,21 +94,21 @@ The routines that manipulate a doubly linked list take a pointer to a [**LIST\_E
 
 Suppose that the *ListHead* variable is a pointer to the **LIST\_ENTRY** structure that represents the list head. A driver manipulates *ListHead* as follows:
 
--   To initialize the list as empty, use [**InitializeListHead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-initializelisthead), which initializes *ListHead***-&gt;Flink** and *ListHead***-&gt;Blink** to point to *ListHead*.
+-   To initialize the list as empty, use [**InitializeListHead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-initializelisthead), which initializes *ListHead***-&gt;Flink** and *ListHead***-&gt;Blink** to point to *ListHead*.
 
--   To insert a new entry at the head of the list, allocate a **LIST\_ENTRY** to represent the new entry, and then call [**InsertHeadList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-insertheadlist) to insert the entry at the beginning of the list.
+-   To insert a new entry at the head of the list, allocate a **LIST\_ENTRY** to represent the new entry, and then call [**InsertHeadList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-insertheadlist) to insert the entry at the beginning of the list.
 
--   To append a new entry to the tail of the list, allocate a **LIST\_ENTRY** to represent the new entry, and then call [**InsertTailList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-inserttaillist) to insert the entry at the end of the list.
+-   To append a new entry to the tail of the list, allocate a **LIST\_ENTRY** to represent the new entry, and then call [**InsertTailList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-inserttaillist) to insert the entry at the end of the list.
 
--   To remove the first entry from the list, use [**RemoveHeadList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-removeheadlist). This returns a pointer to the removed entry from the list, or to *ListHead* if the list is empty.
+-   To remove the first entry from the list, use [**RemoveHeadList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist). This returns a pointer to the removed entry from the list, or to *ListHead* if the list is empty.
 
--   To remove the last entry from the list, use [**RemoveTailList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-removetaillist). This returns a pointer to the removed entry from the list, or to *ListHead* if the list is empty.
+-   To remove the last entry from the list, use [**RemoveTailList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-removetaillist). This returns a pointer to the removed entry from the list, or to *ListHead* if the list is empty.
 
--   To remove a specified entry from the list, use [**RemoveEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-removeentrylist).
+-   To remove a specified entry from the list, use [**RemoveEntryList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-removeentrylist).
 
--   To check to see if a list is empty, use [**IsListEmpty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-islistempty).
+-   To check to see if a list is empty, use [**IsListEmpty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-islistempty).
 
--   To append a list to the tail of another list, use [**AppendTailList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-appendtaillist).
+-   To append a list to the tail of another list, use [**AppendTailList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-appendtaillist).
 
 A [**LIST\_ENTRY**](https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_list_entry), by itself, only has **Blink** and **Flink** members. To store your own data in the lists, embed the **LIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
 
@@ -139,21 +139,21 @@ Do not mix calls to the atomic and non-atomic versions of the list operations on
 
 A sequenced singly linked list is an implementation of singly linked lists that supports atomic operations. It is more efficient for atomic operations than the implementation of singly linked lists described in [Singly Linked Lists](#singly-linked-lists).
 
-An [**SLIST\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure is used to describe the head of a sequenced singly linked list, while [**SLIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_slist_entry) is used to describe an entry in the list.
+An [**SLIST\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure is used to describe the head of a sequenced singly linked list, while [**SLIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_slist_entry) is used to describe an entry in the list.
 
 A driver manipulates the list as follows:
 
--   To initialize an **SLIST\_HEADER** structure, use [**ExInitializeSListHead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-initializeslisthead).
+-   To initialize an **SLIST\_HEADER** structure, use [**ExInitializeSListHead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-initializeslisthead).
 
--   To add a new entry to the list, allocate a **SLIST\_ENTRY** to represent the new entry, and then call [**ExInterlockedPushEntrySList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinterlockedpushentryslist) to add the entry to the beginning of the list.
+-   To add a new entry to the list, allocate a **SLIST\_ENTRY** to represent the new entry, and then call [**ExInterlockedPushEntrySList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinterlockedpushentryslist) to add the entry to the beginning of the list.
 
--   Pop the first entry off the list by using [**ExInterlockedPopEntrySList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinterlockedpopentryslist).
+-   Pop the first entry off the list by using [**ExInterlockedPopEntrySList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinterlockedpopentryslist).
 
--   To clear the list completely, use [**ExInterlockedFlushSList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinterlockedflushslist).
+-   To clear the list completely, use [**ExInterlockedFlushSList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinterlockedflushslist).
 
--   To determine the number of entries in the list, use [**ExQueryDepthSList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exquerydepthslist).
+-   To determine the number of entries in the list, use [**ExQueryDepthSList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exquerydepthslist).
 
-A [**SLIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_slist_entry), by itself, only has a **Next** member. To store your own data in the lists, embed the **SLIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
+A [**SLIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_slist_entry), by itself, only has a **Next** member. To store your own data in the lists, embed the **SLIST\_ENTRY** as a member of the structure that describes the list entry, as follows.
 
 ```cpp
 typedef struct 
@@ -173,7 +173,7 @@ typedef struct
 
 To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SListEntry** member to **ExInterlockedPushEntrySList**. To convert a pointer to the **SLIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer). For an example of this technique, using non-sequenced singly linked lists, see [Singly Linked Lists](#singly-linked-lists).
 
-**Warning**   For 64-bit Microsoft Windows operating systems, [**SLIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_slist_entry) structures must be 16-byte aligned.
+**Warning**   For 64-bit Microsoft Windows operating systems, [**SLIST\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_slist_entry) structures must be 16-byte aligned.
 
  
 

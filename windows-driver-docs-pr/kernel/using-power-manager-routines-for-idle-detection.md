@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The power manager provides support for idle detection through the [**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-poregisterdeviceforidledetection) and [**PoSetDeviceBusy**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) routines.
+The power manager provides support for idle detection through the [**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection) and [**PoSetDeviceBusy**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) routines.
 
 To enable idle detection for its device, a device power policy owner calls **PoRegisterDeviceForIdleDetection** and specifies:
 

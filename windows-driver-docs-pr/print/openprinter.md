@@ -23,11 +23,11 @@ The methods of the **IPrintTicketProvider** interface in a Unidrv or PScript5 pr
 
 ![diagram illustrating the openprinter calling sequence](images/ptpcopen-uml.gif)
 
-1.  For each plug-in, call [**IPrintOemPrintTicketProvider::GetSupportedVersions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-getsupportedversions).
+1.  For each plug-in, call [**IPrintOemPrintTicketProvider::GetSupportedVersions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemprintticketprovider-getsupportedversions).
 
 2.  For each plug-in, call [**IPrintOemPrintTicketProvider::BindPrinter**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff553151(v=vs.85)).
 
-3.  For each plug-in, call [**IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-querydevicedefaultnamespace).
+3.  For each plug-in, call [**IPrintOemPrintTicketProvider::QueryDeviceDefaultNamespace**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemprintticketprovider-querydevicedefaultnamespace).
 
  
 

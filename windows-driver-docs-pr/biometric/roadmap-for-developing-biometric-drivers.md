@@ -45,7 +45,7 @@ To create a biometric driver, follow these steps:
 
     For more information about how to manage request queues in a WBDI driver, see [Managing Queues in a WBDI Driver](managing-queues-in-a-wbdi-driver.md).
 
-    For more information about IOCTLs, structures, and error codes related to WBDI, see [Biometric Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+    For more information about IOCTLs, structures, and error codes related to WBDI, see [Biometric Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
     For information about how to test biometric drivers, see [Testing Biometric Drivers](testing-biometric-drivers.md).
 

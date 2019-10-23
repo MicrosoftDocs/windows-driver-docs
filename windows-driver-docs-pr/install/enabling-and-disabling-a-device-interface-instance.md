@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 
 
-After successfully starting the device, the driver that registered the interface calls [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) to enable an interface instance. The driver passes the symbolic link name returned by [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) together with the Boolean value **TRUE** to enable the interface instance.
+After successfully starting the device, the driver that registered the interface calls [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) to enable an interface instance. The driver passes the symbolic link name returned by [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) together with the Boolean value **TRUE** to enable the interface instance.
 
 If the driver can successfully start its device, it should call this routine while handling the Plug and Play (PnP) manager's [**IRP_MN_START_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request.
 
 After the IRP_MN_START_DEVICE request completes, the PnP manager issues device interface arrival notifications to any kernel-mode or user-mode components that requested them. For more information, see [Registering for Device Interface Change Notification](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-for-device-interface-change-notification).
 
-To disable a device interface instance, a driver calls [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate), passing the *SymbolicLinkName* returned by [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) and **FALSE** as the value of *Enable*.
+To disable a device interface instance, a driver calls [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate), passing the *SymbolicLinkName* returned by [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) and **FALSE** as the value of *Enable*.
 
 A driver should disable a device's interfaces when it handles an [**IRP_MN_SURPRISE_REMOVAL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal) or [**IRP_MN_REMOVE_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request for the device. If a driver does not disable a device's interfaces when it handles these removal IRPs, it must not subsequently attempt to do this because the PnP manager will disable the interfaces when it removes the device.
 

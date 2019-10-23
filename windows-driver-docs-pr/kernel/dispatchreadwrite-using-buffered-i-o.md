@@ -17,7 +17,7 @@ Any lowest-level device driver that sets up its device objects for buffered I/O 
 
 Consequently, the *DispatchReadWrite* routine of such a device driver usually does the following on receipt of a transfer request:
 
-1.  Calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) and determines the direction of the transfer request.
+1.  Calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) and determines the direction of the transfer request.
 
 2.  Checks the validity of the parameters for the request.
 

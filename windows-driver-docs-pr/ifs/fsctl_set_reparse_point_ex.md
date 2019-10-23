@@ -20,11 +20,11 @@ ms.localizationpriority: medium
 
 The FSCTL_SET_REPARSE_POINT_EX control code sets a reparse point on a file or directory.
 
-Minifilters should use [**FltTagFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-flttagfileex) instead of FSCTL_SET_REPARSE_POINT_EX to set a reparse point.
+Minifilters should use [**FltTagFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flttagfileex) instead of FSCTL_SET_REPARSE_POINT_EX to set a reparse point.
 
 For more information about reparse points, see the Microsoft Windows SDK documentation.
 
-To perform this operation, call [**ZwFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntfscontrolfile) with the following parameters.
+To perform this operation, call [**ZwFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntfscontrolfile) with the following parameters.
 
 ## Parameters
 
@@ -47,7 +47,7 @@ Pointer to an IO_STATUS_BLOCK structure that receives the final completion statu
 Control code for the operation. Use FSCTL_SET_REPARSE_POINT_EX for this operation.
 
 *InputBuffer*  
-Pointer to a caller-allocated [REPARSE_DATA_BUFFER_EX](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_reparse_data_buffer_ex) structure that contains the reparse point data.
+Pointer to a caller-allocated [REPARSE_DATA_BUFFER_EX](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer_ex) structure that contains the reparse point data.
 
 *InputBufferLength*  
 Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. This value must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE.
@@ -60,7 +60,7 @@ Not used with this operation; set to zero.
 
 Status block
 ------------
-[**ZwFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntfscontrolfile) returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+[**ZwFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntfscontrolfile) returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
 <table>
 <colgroup>
@@ -120,9 +120,9 @@ Status block
 
 [**FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/flt-parameters-for-irp-mj-file-system-control)
 
-[**FltTagFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-flttagfileex)
+[**FltTagFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flttagfileex)
 
-[**FltUntagFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltuntagfile)
+[**FltUntagFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltuntagfile)
 
 [**FSCTL\_DELETE\_REPARSE\_POINT**](fsctl-delete-reparse-point.md)
 
@@ -130,12 +130,12 @@ Status block
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
-[**IsReparseTagMicrosoft**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-isreparsetagmicrosoft)
+[**IsReparseTagMicrosoft**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-isreparsetagmicrosoft)
 
-[**IsReparseTagNameSurrogate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-isreparsetagnamesurrogate)
+[**IsReparseTagNameSurrogate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-isreparsetagnamesurrogate)
 
-[**REPARSE\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_reparse_data_buffer_ex)
+[**REPARSE\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer_ex)
 
-[**REPARSE\_GUID\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_reparse_guid_data_buffer)
+[**REPARSE\_GUID\_DATA\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer)
 
-[**ZwFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntfscontrolfile)
+[**ZwFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntfscontrolfile)

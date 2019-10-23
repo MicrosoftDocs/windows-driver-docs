@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/creating-secure-device-installations) or passed to [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure). The [Security Descriptor Definition Language](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language) is fully documented in the Microsoft Windows SDK documentation.
+The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](https://docs.microsoft.com/windows-hardware/drivers/install/creating-secure-device-installations) or passed to [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure). The [Security Descriptor Definition Language](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language) is fully documented in the Microsoft Windows SDK documentation.
 
 While INF files support the full range of SDDL, only a subset of the language is supported by the **IoCreateDeviceSecure** routine. This subset is defined here.
 

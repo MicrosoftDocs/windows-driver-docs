@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Capturing Video
 
 
-Once the stream is in the **KSSTATE\_RUN** state, the capture process begins. Based on the frame interval specified by the **AvgTimePerFrame** member of the [**KS\_VIDEOINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_videoinfoheader) structure passed when the stream is opened, the stream transfers images into buffers passed through SRB\_READ\_DATA. Additional information about the image captured is returned in the [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info) structure that is appended to the end of the [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header) structure.
+Once the stream is in the **KSSTATE\_RUN** state, the capture process begins. Based on the frame interval specified by the **AvgTimePerFrame** member of the [**KS\_VIDEOINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_videoinfoheader) structure passed when the stream is opened, the stream transfers images into buffers passed through SRB\_READ\_DATA. Additional information about the image captured is returned in the [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info) structure that is appended to the end of the [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure.
 
 The following example code obtains the appended KS\_FRAME\_INFO structure:
 
@@ -27,7 +27,7 @@ A minidriver should set additional information fields about the data captured, s
 *pFrameInfo = pStrmEx->FrameInfo; // Get the frame info from the minidriver-defined stream extension
 ```
 
-It is optimal to update the **PictureNumber** or **DropCount** members of [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info), [**KS\_VBI\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_vbi_frame_info), or [**KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s) at transition into the **KSSTATE\_ACQUIRE** state.
+It is optimal to update the **PictureNumber** or **DropCount** members of [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info), [**KS\_VBI\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_vbi_frame_info), or [**KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s) at transition into the **KSSTATE\_ACQUIRE** state.
 
 It is acceptable to update these members on transition from the **KSSTATE\_ACQUIRE** state into the **KSSTATE\_PAUSE** state.
 

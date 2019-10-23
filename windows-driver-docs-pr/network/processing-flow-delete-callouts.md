@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Processing Flow Delete Callouts
 
 
-When a data flow that is being processed by a callout is stopped, the filter engine calls the callout's [*flowDeleteFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_flow_delete_notify_fn0) callout function if the callout driver previously associated a context with the data flow. A callout's *flowDeleteFn* callout function performs any necessary clean up of the context that the callout driver associated with the data flow before the data flow is stopped.
+When a data flow that is being processed by a callout is stopped, the filter engine calls the callout's [*flowDeleteFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_flow_delete_notify_fn0) callout function if the callout driver previously associated a context with the data flow. A callout's *flowDeleteFn* callout function performs any necessary clean up of the context that the callout driver associated with the data flow before the data flow is stopped.
 
 For example:
 
@@ -50,7 +50,7 @@ VOID NTAPI
 }
 ```
 
-The filter engine automatically removes the context that a callout associated with a data flow when the data flow is stopped. Therefore, a callout is not required to call the [**FwpsFlowRemoveContext0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsflowremovecontext0) function from its [*flowDeleteFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_flow_delete_notify_fn0) callout function to remove the context from the data flow.
+The filter engine automatically removes the context that a callout associated with a data flow when the data flow is stopped. Therefore, a callout is not required to call the [**FwpsFlowRemoveContext0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsflowremovecontext0) function from its [*flowDeleteFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_flow_delete_notify_fn0) callout function to remove the context from the data flow.
 
  
 

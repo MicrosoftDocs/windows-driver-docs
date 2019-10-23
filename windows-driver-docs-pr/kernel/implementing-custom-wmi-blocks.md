@@ -41,7 +41,7 @@ To improve performance and ease of use of custom WMI data blocks, consider the f
 
 -   Limit event blocks to a maximum size of 1K bytes.
 
-    Event items should be defined as small data types, because there is a registry-defined size limit (initially, 1K) for the entire [**WNODE\_EVENT\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_event_item) structure that contains the generated event. For large notifications, a driver can send a [**WNODE\_EVENT\_REFERENCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmistr/ns-wmistr-tagwnode_event_reference) structure that specifies a single instance of a data block, which WMI then queries to obtain the actual event. However, this increases the time lag between the occurrence of the event and the notification.
+    Event items should be defined as small data types, because there is a registry-defined size limit (initially, 1K) for the entire [**WNODE\_EVENT\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_event_item) structure that contains the generated event. For large notifications, a driver can send a [**WNODE\_EVENT\_REFERENCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_event_reference) structure that specifies a single instance of a data block, which WMI then queries to obtain the actual event. However, this increases the time lag between the occurrence of the event and the notification.
 
 -   Place fixed-size data items at the beginning of a data block, followed by any variable-size data items.
 

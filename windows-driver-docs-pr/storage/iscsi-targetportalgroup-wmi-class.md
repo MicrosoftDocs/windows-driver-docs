@@ -27,7 +27,7 @@ class ISCSI_TargetPortalGroup {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortalGroup**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsidef/ns-iscsidef-_iscsi_targetportalgroup) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortalGroup**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_targetportalgroup) data structure.
 
  
 

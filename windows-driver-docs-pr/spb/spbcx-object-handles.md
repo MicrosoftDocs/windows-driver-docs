@@ -34,12 +34,12 @@ For more information about these methods, see [Framework Request Objects](https:
 However, some SpbCx methods and callback functions specifically require **SPBREQUEST** handles as parameters.
 For such a parameter, substituting a **WDFREQUEST** handle that is not also an **SPBREQUEST** handle is an error.
 
-For example, the [SpbRequestGetTransferParameters](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nf-spbcx-spbrequestgettransferparameters) method takes an **SPBREQUEST** handle as a parameter.
+For example, the [SpbRequestGetTransferParameters](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbrequestgettransferparameters) method takes an **SPBREQUEST** handle as a parameter.
 To supply, for this parameter, a **WDFREQUEST** handle that is not also an **SPBREQUEST** handle is an error.
 The reason for this requirement is that an **SPBREQUEST** object must store additional, SPB-specific state information to support [I/O transfer sequences](https://docs.microsoft.com/windows-hardware/drivers/spb/i-o-transfer-sequences).
 The **WDFREQUEST** base object class does not provide this support.
 
-During device initialization, your SPB controller driver can assign a per-request context to an **SPBREQUEST** handle by calling the [SpbControllerSetRequestAttributes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nf-spbcx-spbcontrollersetrequestattributes) method.
+During device initialization, your SPB controller driver can assign a per-request context to an **SPBREQUEST** handle by calling the [SpbControllerSetRequestAttributes](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbcontrollersetrequestattributes) method.
   
 ## SPBTARGET Object Handle
 
@@ -52,13 +52,13 @@ An **SPBTARGET** object handle identifies a logical connection from a client (pe
 For an I<sup>2</sup>C bus, an **SPBTARGET** handle corresponds to a specific device address.  
 For an SPI bus, an **SPBTARGET** handle corresponds to a device-select line.
 
-Typically, an **SPBTARGET** object exists from the start of the [EvtSpbTargetConnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_target_connect) event callback through the end of the corresponding [EvtSpbTargetDisconnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_target_disconnect) event callback. However, the lifetime of the **SPBTARGET** object might extend beyond the second callback if the SPB controller driver takes an additional reference on the **SPBTARGET** object to prevent the object from unexpectedly disappearing during the processing of an I/O request for the target.
+Typically, an **SPBTARGET** object exists from the start of the [EvtSpbTargetConnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_connect) event callback through the end of the corresponding [EvtSpbTargetDisconnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_disconnect) event callback. However, the lifetime of the **SPBTARGET** object might extend beyond the second callback if the SPB controller driver takes an additional reference on the **SPBTARGET** object to prevent the object from unexpectedly disappearing during the processing of an I/O request for the target.
 
 The SPB controller driver performs all hardware-specific operations for an SPB controller device.
-When a client sends an [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) request to open a connection to a target on the bus, the SPB framework extension (SpbCx), which manages the I/O queue for the controller driver, passes this request to the SPB controller driver by calling this driver's [EvtSpbTargetConnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_target_connect) callback function.
+When a client sends an [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) request to open a connection to a target on the bus, the SPB framework extension (SpbCx), which manages the I/O queue for the controller driver, passes this request to the SPB controller driver by calling this driver's [EvtSpbTargetConnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_connect) callback function.
 This _Target_ parameter of this function is an **SPBTARGET** handle.
 The function can use this handle to retrieve connection-specific resource information (for example, the device address) from the PnP manager.
-When the client sends an [IRP_MJ_CLOSE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close) request to close the connection, SpbCx passes this request to the SPB controller driver's [EvtSpbTargetDisconnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_target_disconnect) callback function, which releases these resources.
+When the client sends an [IRP_MJ_CLOSE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close) request to close the connection, SpbCx passes this request to the SPB controller driver's [EvtSpbTargetDisconnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_disconnect) callback function, which releases these resources.
 
 ### Exclusive-Mode Access
 
@@ -69,28 +69,28 @@ If a target device must be able to receive requests from several clients, this d
 
 ### Interoperability with KMDF
 
-The [SerCx2 Driver Support Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) and [SpbCx Event Callback Functions](https://docs.microsoft.com/previous-versions/hh450911(v=vs.85)) that are defined by SpbCx use **SPBTARGET** handles to represent open connections to target devices on the bus.
+The [SerCx2 Driver Support Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) and [SpbCx Event Callback Functions](https://docs.microsoft.com/previous-versions/hh450911(v=vs.85)) that are defined by SpbCx use **SPBTARGET** handles to represent open connections to target devices on the bus.
 However, a controller driver must typically call KMDF methods that require WDFFILEOBJECT handles, instead of **SPBTARGET** handles, to designate target devices.
 
 An **SPBTARGET** object is similar to a WDFFILEOBJECT object. However, an **SPBTARGET** object contains additional, SPB-specific information.
 For example, during the processing of an [IOCTL_SPB_EXECUTE_SEQUENCE](https://msdn.microsoft.com/library/windows/hardware/hh450857) I/O control request, the **SPBTARGET** object for the target device tracks the state of the transfers in the [I/O transfer sequence](https://docs.microsoft.com/windows-hardware/drivers/spb/i-o-transfer-sequences).
 
-To obtain the WDFFILEOBJECT handle to a target, the SPB controller driver calls the [SpbTargetGetFileObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nf-spbcx-spbtargetgetfileobject) method.
+To obtain the WDFFILEOBJECT handle to a target, the SPB controller driver calls the [SpbTargetGetFileObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbtargetgetfileobject) method.
 This method accepts, as an input parameter, an **SPBTARGET** handle to an open target device, and returns the corresponding WDFFILEOBJECT handle to this target.
 
-In accordance with KMDF conventions, the SPB controller driver can attach its own context to the **SPBTARGET** object for a target device, and this context can include associated [EvtCleanupCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) and [EvtDestroyCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback functions.
+In accordance with KMDF conventions, the SPB controller driver can attach its own context to the **SPBTARGET** object for a target device, and this context can include associated [EvtCleanupCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) and [EvtDestroyCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy) callback functions.
 The SPB controller driver uses this context to track information that is specific to the controller driver and to the target device.
 In addition, this driver can create child objects of the **SPBTARGET** object, such as timers, DPCs, or, if needed, I/O requests and I/O queues.
 
 ## Related topics
 
-[EvtCleanupCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup)
+[EvtCleanupCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup)
 
-[EvtDestroyCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy)
+[EvtDestroyCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy)
 
-[EvtSpbTargetConnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_target_connect)
+[EvtSpbTargetConnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_connect)
 
-[EvtSpbTargetDisconnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nc-spbcx-evt_spb_target_disconnect)
+[EvtSpbTargetDisconnect](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_disconnect)
 
 [Framework Request Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-request-objects)
 
@@ -102,14 +102,14 @@ In addition, this driver can create child objects of the **SPBTARGET** object, s
 
 [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create)
 
-[SerCx2 Driver Support Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[SerCx2 Driver Support Methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
-[SpbControllerSetRequestAttributes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nf-spbcx-spbcontrollersetrequestattributes)
+[SpbControllerSetRequestAttributes](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbcontrollersetrequestattributes)
 
 [SpbCx Event Callback Functions](https://docs.microsoft.com/previous-versions/hh450911(v=vs.85))
 
-[SpbRequestGetTransferParameters](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nf-spbcx-spbrequestgettransferparameters)
+[SpbRequestGetTransferParameters](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbrequestgettransferparameters)
 
-[SpbTargetGetFileObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/spbcx/nf-spbcx-spbtargetgetfileobject)
+[SpbTargetGetFileObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbtargetgetfileobject)
 
 [Summary of Framework Objects](https://docs.microsoft.com/windows-hardware/drivers/wdf/summary-of-framework-objects)

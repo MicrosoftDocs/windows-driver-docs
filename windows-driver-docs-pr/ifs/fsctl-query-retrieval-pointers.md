@@ -22,12 +22,12 @@ The **FSCTL\_QUERY\_RETRIEVAL\_POINTERS** control code retrieves a mapping betwe
 
 **FSCTL\_QUERY\_RETRIEVAL\_POINTERS** is similar to [**FSCTL\_GET\_RETRIEVAL\_POINTERS**](fsctl-get-retrieval-pointers.md). However, **FSCTL\_QUERY\_RETRIEVAL\_POINTERS** only works in kernel mode on local paging files or the system hives. The paging file is guaranteed to have a one-to-one mapping from the VCN in a volume to the LCN that refer more directly to the underlying physical storage. You must not use **FSCTL\_QUERY\_RETRIEVAL\_POINTERS** with files other than the page file, because they might reside on volumes, such as mirrored volumes, that have one-to-many mappings of VCNs to LCNs.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
 
 **Parameters**
 
 <a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the paging file or hibernation file. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the paging file or hibernation file. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. A file handle for the paging file or hibernation file. This parameter is required and cannot be **NULL**.
@@ -59,7 +59,7 @@ The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 Status block
 ------------
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) both return STATUS\_SUCCESS or an appropriate NTSTATUS error value.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) both return STATUS\_SUCCESS or an appropriate NTSTATUS error value.
 
 Remarks
 -------
@@ -85,7 +85,7 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
 [**FSCTL\_GET\_RETRIEVAL\_POINTERS**](fsctl-get-retrieval-pointers.md)
 

@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 AVStream supports DMA on 32-bit and 64-bit addressable devices.
 
-All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::RegisterAdapterObjectEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-iksdevicefunctions-registeradapterobjectex) instead of [**KsDeviceRegisterAdapterObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksdeviceregisteradapterobject).
+All drivers compiled for Win64 platforms should use [**IKsDeviceFunctions::RegisterAdapterObjectEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-iksdevicefunctions-registeradapterobjectex) instead of [**KsDeviceRegisterAdapterObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksdeviceregisteradapterobject).
 
 **IKsDeviceFunctions::RegisterAdapterObjectEx** is only available in Microsoft Windows Server 2003 SP1 and later.
 

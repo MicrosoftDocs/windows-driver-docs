@@ -21,7 +21,7 @@ The **NDIS_STATUS_WWAN_MPDP_LIST** notification is sent by a mobile broadband mi
 
 This notification is not sent as an unsolicited event.
 
-This notification uses the [**NDIS_WWAN_MPDP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_mpdp_list) structure.
+This notification uses the [**NDIS_WWAN_MPDP_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_mpdp_list) structure.
 
 ## Requirements
 

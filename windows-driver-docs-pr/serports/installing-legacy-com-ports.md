@@ -16,7 +16,7 @@ Serial detects the presence of legacy ports by reading corresponding COM port su
 
 When Serial is loaded it determines which legacy ports were not previously detected by checking the **LegacyDiscovered** entry value for a legacy port. If this entry value does not exist or is zero, Serial performs the following tasks:
 
-1. Calls [**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioreportdetecteddevice) to report the device to the Plug and Play manager.
+1. Calls [**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice) to report the device to the Plug and Play manager.
 
 2. Sets the **LegacyDiscovered** entry value for the port to 0x00000001, which indicates that the port has been reported.
 

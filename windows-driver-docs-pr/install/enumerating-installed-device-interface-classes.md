@@ -26,7 +26,7 @@ Use the following guidelines to safely discover the attributes of device interfa
 
     2.  Use [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate interfaces that are registered for a device interface class. This interface class is specified through the *InterfaceClassGuid* parameter.
 
--   Kernel-mode drivers should use [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces) to enumerate the device interface classes that are installed in the system.
+-   Kernel-mode drivers should use [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to enumerate the device interface classes that are installed in the system.
 
  
 

@@ -36,7 +36,7 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The class driver specifies the new stream state in *pSrb*-&gt;**CommandData**.**StreamState**. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure. See [**KSPROPERTY\_CONNECTION\_STATE**](ksproperty-connection-state.md) for a description of stream states.
+The class driver specifies the new stream state in *pSrb*-&gt;**CommandData**.**StreamState**. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. See [**KSPROPERTY\_CONNECTION\_STATE**](ksproperty-connection-state.md) for a description of stream states.
 
 The minidriver should set the stream to the specified state and return STATUS\_SUCCESS if successful. An appropriate error code should be returned if the operation fails.
 

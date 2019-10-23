@@ -43,7 +43,7 @@ Other vendor-supplied USB client drivers.
 [USB Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)) and [I/O requests](https://docs.microsoft.com/previous-versions/ff537421(v=vs.85)) that USB client drivers can use to interface with the USB driver stack.
 
 <a href="" id="usb-driver-stack"></a>USB Driver Stack  
-Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
  
 

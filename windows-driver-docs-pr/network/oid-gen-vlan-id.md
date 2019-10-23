@@ -39,7 +39,7 @@ The information buffer passed in this request contains an NDIS\_VLAN\_ID data ty
 
 When a transport uses OID\_GEN\_VLAN\_ID in a query, the miniport driver returns the current configured VLAN ID for the NIC. When used in a set, the miniport driver sets the NIC's current configured VLAN ID to the specified value.
 
-During the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function for a particular NIC, the driver initially sets the NIC's VLAN ID to zero. The driver's *MiniportInitializeEx* function then reads the following configuration parameter from the registry, and, if the parameter is present, sets the NIC's VLAN ID to the parameter's value.
+During the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function for a particular NIC, the driver initially sets the NIC's VLAN ID to zero. The driver's *MiniportInitializeEx* function then reads the following configuration parameter from the registry, and, if the parameter is present, sets the NIC's VLAN ID to the parameter's value.
 
 ```syntax
 VlanId, REG_DWORD
@@ -64,7 +64,7 @@ Requirements
 ## See also
 
 
-[*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize)
+[*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)
 
  
 

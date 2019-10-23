@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *lpVideoDescription* \[in\]
-Supplies a pointer to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc) structure that contains a description of the video stream for the deinterlacing or frame-rate conversion to be performed.
+Supplies a pointer to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure that contains a description of the video stream for the deinterlacing or frame-rate conversion to be performed.
 
 *lpdwNumModesSupported* \[in, out\]
 Receives a pointer to the number of deinterlace or frame-rate conversion modes that are returned in the array at *pGuidsDeinterlaceModes*.
@@ -56,7 +56,7 @@ The GUIDs returned by the *pGuidsDeinterlaceModes* parameter should be returned 
 
 All drivers should be able to support the bob mode using the existing *bit-block transfer* (blt) hardware. For more information about modes, see the [Deinterlace Modes](https://docs.microsoft.com/windows-hardware/drivers/display/deinterlace-modes) and [Frame-Rate Conversion Modes](https://docs.microsoft.com/windows-hardware/drivers/display/frame-rate-conversion-modes) topics.
 
-The driver returns the GUIDs (modes) that it supports in response to a request from the *VMR*. The driver responds to a call to its [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback function. The driver returns the GUIDs through the **lpOutputData** member of the [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure to which the *lpRenderData* parameter of *DdMoCompRender* points. The **lpOutputData** member points to the [**DXVA\_DeinterlaceQueryAvailableModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_deinterlacequeryavailablemodes) structure, which contains the array of GUIDs in the **Guids** member.
+The driver returns the GUIDs (modes) that it supports in response to a request from the *VMR*. The driver responds to a call to its [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback function. The driver returns the GUIDs through the **lpOutputData** member of the [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure to which the *lpRenderData* parameter of *DdMoCompRender* points. The **lpOutputData** member points to the [**DXVA\_DeinterlaceQueryAvailableModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacequeryavailablemodes) structure, which contains the array of GUIDs in the **Guids** member.
 
 **Mapping RenderMoComp to** ***DeinterlaceQueryAvailableModes***
 
@@ -92,11 +92,11 @@ The DD\_RENDERMOCOMPDATA structure is filled as follows.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Pointer to a filled <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc" data-raw-source="[&lt;strong&gt;DXVA_VideoDesc&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc)"><strong>DXVA_VideoDesc</strong></a> structure.</p></td>
+<td align="left"><p>Pointer to a filled <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc" data-raw-source="[&lt;strong&gt;DXVA_VideoDesc&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)"><strong>DXVA_VideoDesc</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
-<td align="left"><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_deinterlacequeryavailablemodes" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_deinterlacequeryavailablemodes)"><strong>DXVA_DeinterlaceQueryAvailableModes</strong></a> structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacequeryavailablemodes" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceQueryAvailableModes&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacequeryavailablemodes)"><strong>DXVA_DeinterlaceQueryAvailableModes</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -114,9 +114,9 @@ After the *VMR* has determined the deinterlace or frame conversion modes availab
 
 [**DeinterlaceQueryModeCaps**](dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md)
 
-[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc)
+[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
 
-[**DXVA\_SampleFormat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ne-dxva-_dxva_sampleformat)
+[**DXVA\_SampleFormat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)
 
  
 

@@ -33,7 +33,7 @@ The following figure shows the extensible switch control path for NDIS status in
 
 The extensible switch supports NDIS status indications from the underlying physical adapter or extensible switch team in the following ways:
 
--   When an NDIS status indication arrives at the extensible switch interface, it encapsulates the indication inside an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. Then, the miniport edge of the extensible switch issues an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication that contains this structure.
+-   When an NDIS status indication arrives at the extensible switch interface, it encapsulates the indication inside an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. Then, the miniport edge of the extensible switch issues an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication that contains this structure.
 
     When a forwarding extension receives this indication, it can duplicate the indication to change the encapsulated data. This allows the forwarding extension to change the indicated status or capabilities of the underlying extensible switch team.
 

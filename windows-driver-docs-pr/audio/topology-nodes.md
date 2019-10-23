@@ -118,7 +118,7 @@ A [**tone node**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksno
 
 Each property query that succeeds generates a mixer-line control. Due to naming issues, a single tone node should support only a single property. If a device supports both bass and treble, for example, it should have two tone nodes so that the nodes can have different names.
 
-A [**supermix node**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-supermix) supports up to two controls: mute and volume. A supermix node can be used as a mute control when it satisfies at least one of these two conditions for every entry in the supermix node's [**capabilities table**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_mixcap_table):
+A [**supermix node**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-supermix) supports up to two controls: mute and volume. A supermix node can be used as a mute control when it satisfies at least one of these two conditions for every entry in the supermix node's [**capabilities table**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixcap_table):
 
 -   The entry supports the mute property, as specified by the **Capabilities**.**Mute** flag.
 

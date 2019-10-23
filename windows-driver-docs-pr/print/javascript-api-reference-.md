@@ -31,10 +31,10 @@ Parameters
 
 *scriptContext*
 
-\[in\] An [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
+\[in\] An [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
 *printerStream*
 
-\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
+\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
 *schemaRequests*
 
 \[in\] Array object containing all of the requested Bidi query strings.
@@ -61,10 +61,10 @@ Parameters
 
 *scriptContext*
 
-\[in\] An [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
+\[in\] An [**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext) object that provides access to relevant property bags.
 *printerStream*
 
-\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
+\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read and write access to the USB bus.
 *printerBidiSchemaElement*
 
 \[in\] An [IPrinterBidiSchemaElement](https://docs.microsoft.com/windows-hardware/drivers/print/iprinterbidischemaelement-interface) object that contains all the data associated with the Bidi Schema Value to set.
@@ -91,7 +91,7 @@ Parameters
 \[in\] An **IPrinterScriptContext** object that provides access to relevant property bags.
 *printerStream*
 
-\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read access to the USB bus.
+\[in\] An [IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream) object that allows read access to the USB bus.
 *printerBidiSchemaResponses*
 
 \[out\] Object that the script uses to store all responses to query keys.
@@ -279,8 +279,8 @@ Return values
 
 
 ## Related topics
-[**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptcontext)  
-[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
+[**IPrinterScriptContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
+[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
 [USB Bidi Extender](usb-bidi-extender.md)  
 
 

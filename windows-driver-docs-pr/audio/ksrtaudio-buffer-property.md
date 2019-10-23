@@ -41,7 +41,7 @@ A KSPROPERTY structure that the client initializes appropriately prior to callin
 Specifies the desired buffer base address. Unless the client specifies a base address, this parameter is set to **NULL**.
 
 **RequestedBufferSize**  
-Specifies the desired buffer size in bytes. The driver returns the actual size of the allocated buffer in the [**KSRTAUDIO\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksrtaudio_buffer) structure that it returns.
+Specifies the desired buffer size in bytes. The driver returns the actual size of the allocated buffer in the [**KSRTAUDIO\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_buffer) structure that it returns.
 
 Remarks
 -------

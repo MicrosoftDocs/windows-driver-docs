@@ -18,7 +18,7 @@ The following figure shows the data flow in autoconfiguration when a device is i
 
 1.  When a printer is installed, the spooler initializes the driver by calling `DrvPrinterEvent` and passing PRINTER\_EVENT\_INITIALIZE in the call.
 
-2.  The driver uses [bidi communication interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index) to obtain the data of interest to it, including values for installable options such as \\Printer.Configuration.DuplexUnit:Installed and \\Printer.Configuration.HardDisk:Installed.
+2.  The driver uses [bidi communication interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index) to obtain the data of interest to it, including values for installable options such as \\Printer.Configuration.DuplexUnit:Installed and \\Printer.Configuration.HardDisk:Installed.
 
 3.  The bidi communication interface queries the port monitor for values of these attributes. The port monitor might have some of the data requested in its cache. For illustrative purposes in the following steps, assume that the value for \\Printer.Configuration.HardDisk:Installed is in the port monitor's cache, but the value for \\Printer.Configuration.DuplexUnit:Installed is not.
 

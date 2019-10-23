@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # OID_CO_TAPI_TRANSLATE_TAPI_SAP
 
-The OID_CO_TAPI_TRANSLATE_TAPI_SAP OID requests a call manager or integrated MCM driver to prepare one or more SAPs from TAPI call parameters. The client that queries this OID uses an NDIS SAP returned by the call manager or MCM driver as an input (formatted as a [CO_SAP](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545392(v=vs.85)) structure) to [NdisClRegisterSap](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclregistersap), which the client calls to register a SAP on which to receive incoming calls.
+The OID_CO_TAPI_TRANSLATE_TAPI_SAP OID requests a call manager or integrated MCM driver to prepare one or more SAPs from TAPI call parameters. The client that queries this OID uses an NDIS SAP returned by the call manager or MCM driver as an input (formatted as a [CO_SAP](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545392(v=vs.85)) structure) to [NdisClRegisterSap](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclregistersap), which the client calls to register a SAP on which to receive incoming calls.
 
 This request uses a CO_TAPI_TRANSLATE_SAP structure, which is defined as follows:
 

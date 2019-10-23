@@ -23,7 +23,7 @@ This section contains design guidance for building GNSS device drivers.
 ## Related sections
 
 
--   [GNSS DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/index)
+-   [GNSS DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/index)
 
 
  

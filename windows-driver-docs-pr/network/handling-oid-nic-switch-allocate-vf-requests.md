@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 
 When the miniport driver for the PCI Express (PCIe) Physical Function (PF) on the network adapter handles the object identifier (OID) method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-allocate-vf), it does the following:
 
--   The PF miniport driver allocates the software resources for a PCIe Virtual Function (VF) on the network adapter. These resources are configured based on the parameters that are specified in the [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
+-   The PF miniport driver allocates the software resources for a PCIe Virtual Function (VF) on the network adapter. These resources are configured based on the parameters that are specified in the [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
 
--   The PF miniport driver assigns the VF to a NIC switch on the network adapter. The NIC switch is identified by the **SwitchId** member of the [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
+-   The PF miniport driver assigns the VF to a NIC switch on the network adapter. The NIC switch is identified by the **SwitchId** member of the [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
 
     For more information on a NIC switch, see [NIC Switches](nic-switches.md).
 
@@ -23,7 +23,7 @@ When the miniport driver for the PCI Express (PCIe) Physical Function (PF) on th
 
 -   The PF miniport driver updates the **RequestorId** member with a PCIe Requestor Identifier (RID) for the VF.
 
-    The miniport driver calls [**NdisMGetVirtualFunctionLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismgetvirtualfunctionlocation) to get the RID information that corresponds to the VF. The driver then creates the RID by using the [**NDIS\_MAKE\_RID**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-make-rid) macro based on the information returned by the call to **NdisMGetVirtualFunctionLocation**.
+    The miniport driver calls [**NdisMGetVirtualFunctionLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetvirtualfunctionlocation) to get the RID information that corresponds to the VF. The driver then creates the RID by using the [**NDIS\_MAKE\_RID**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-make-rid) macro based on the information returned by the call to **NdisMGetVirtualFunctionLocation**.
 
     The RID is used by the virtualization stack for remapping DMA and interrupts between the PF and VF. The RID also enables the hardware input/output memory management unit (IOMMU) to convert guest physical addresses to host physical addresses.
 

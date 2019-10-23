@@ -42,11 +42,11 @@ The functions include the following:
 
 In addition, any kernel driver may create a SID by using the following standard runtime library routines:
 
--   [**RtlInitializeSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtlinitializesid)—initializes a buffer for a new SID.
+-   [**RtlInitializeSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlinitializesid)—initializes a buffer for a new SID.
 
--   [**RtlLengthSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtllengthsid)—determines the size of the SID stored within the given buffer.
+-   [**RtlLengthSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtllengthsid)—determines the size of the SID stored within the given buffer.
 
--   [**RtlValidSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtlvalidsid)—determines if the given SID buffer is a valid formatted buffer.
+-   [**RtlValidSid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlvalidsid)—determines if the given SID buffer is a valid formatted buffer.
 
 Note that **RtlLengthSid** and **RtlValidSid** assume that the 8-byte fixed header for a SID is present. So a driver should check for this minimum length for a SID header before calling these functions.
 

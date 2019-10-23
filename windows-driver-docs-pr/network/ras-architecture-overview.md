@@ -68,7 +68,7 @@ NDPTSP works with NDPROXY to convert user-mode requests to TAPI connection-orien
 
 ### <a href="" id="ddk-ndistapi-ng"></a>NDISTAPI
 
-NDISTAPI (Ndistapi.sys) receives TAPI requests from [KMDDSP](#ddk-kmddsp-ng) and then calls [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisoidrequest) to route the corresponding TAPI OIDs to NDIS WAN miniport drivers. For more information about NDISTAPI, see [NDISTAPI Overview](ndistapi-overview.md).
+NDISTAPI (Ndistapi.sys) receives TAPI requests from [KMDDSP](#ddk-kmddsp-ng) and then calls [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) to route the corresponding TAPI OIDs to NDIS WAN miniport drivers. For more information about NDISTAPI, see [NDISTAPI Overview](ndistapi-overview.md).
 
 ### <a href="" id="ddk-ndproxy-ng"></a>NDPROXY
 

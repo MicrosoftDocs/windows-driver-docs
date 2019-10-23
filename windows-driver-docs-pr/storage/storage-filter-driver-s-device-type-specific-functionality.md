@@ -27,7 +27,7 @@ Depending on the nature of its device, an storage filter driver (SFD) might be r
 
 -   Establishing time-out values for requests
 
--   Supplying one or more [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routines and, like the corresponding storage class driver, handling certain error conditions and retries for device-specific requests that require special handling
+-   Supplying one or more [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines and, like the corresponding storage class driver, handling certain error conditions and retries for device-specific requests that require special handling
 
 In general, an SFD has the same responsibilities as a storage class driver for those requests that require device-specific handling. For a discussion of the functionality required of storage class drivers, see [Storage Class Drivers](storage-class-drivers.md).
 

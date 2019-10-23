@@ -43,7 +43,7 @@ A simple driver stack includes a bus driver at the bottom of the stack, which ha
 
 ### Device stacks
 
-Each driver stack supports one or more *device stacks*. A device stack is a set of *device objects* that are created from WDM-defined [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structures. Each device stack represents one device. Each driver creates a device object for each of its devices and attaches each device object to a device stack. Device stacks are created and removed as devices are plugged in and unplugged, and each time the system is rebooted.
+Each driver stack supports one or more *device stacks*. A device stack is a set of *device objects* that are created from WDM-defined [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structures. Each device stack represents one device. Each driver creates a device object for each of its devices and attaches each device object to a device stack. Device stacks are created and removed as devices are plugged in and unplugged, and each time the system is rebooted.
 
 When a bus driver detects that child devices have been plugged in or unplugged, it informs the Plug and Play (PnP) manager. In response, the PnP manager asks the bus driver to create a physical device object (PDO) for each child device that is connected to the parent device (that is, the bus). The PDO becomes the bottom of a device stack.
 

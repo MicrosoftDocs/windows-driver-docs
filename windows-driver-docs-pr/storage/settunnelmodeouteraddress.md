@@ -15,7 +15,7 @@ In tunnel mode, an inner-encrypted IP packet is nested within an outer IP packet
 
 The initiator HBA or HBA miniport driver should maintain the default tunnel-mode outer address in nonvolatile storage if nonvolatile storage is available
 
-**SetTunnelModeOuterAddress** belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetTunnelModeOuterAddress** method, see the member descriptions for the [**SetTunnelModeOuterAddress\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_settunnelmodeouteraddress_in) and [**SetTunnelModeOuterAddress\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_settunnelmodeouteraddress_out) structures.
+**SetTunnelModeOuterAddress** belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **SetTunnelModeOuterAddress** method, see the member descriptions for the [**SetTunnelModeOuterAddress\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_settunnelmodeouteraddress_in) and [**SetTunnelModeOuterAddress\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_settunnelmodeouteraddress_out) structures.
 
 Miniport drivers that implement the MSiSCSI\_SecurityConfigOperations WMI class must support **SetTunnelModeOuterAddress**.
 

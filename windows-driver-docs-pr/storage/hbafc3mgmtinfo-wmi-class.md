@@ -40,7 +40,7 @@ class HBAFC3MgmtInfo {
 };
 ```
 
-When compiled by the WMI tool suite, this class definition produces the [**HBAFC3MgmtInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo) data structure. There are no methods associated with this WMI class.
+When compiled by the WMI tool suite, this class definition produces the [**HBAFC3MgmtInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo) data structure. There are no methods associated with this WMI class.
 
  
 

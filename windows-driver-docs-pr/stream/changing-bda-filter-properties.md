@@ -24,13 +24,13 @@ On the other hand, if the filter is already active, the minidriver should attemp
 
 Typically, a BDA minidriver's filter object intercepts and supplies methods for the methods of the KSMETHODSETID\_BdaChangeSync method set. For example, the minidriver supplies methods for starting, checking, and committing filter changes and for getting the change state of a filter. In addition, the following minidriver-supplied methods should call the corresponding BDA support library functions to synchronize changes on the structures that the minidriver previously registered with the BDA support library:
 
--   Start-changes method calls the [**BdaStartChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdastartchanges) function.
+-   Start-changes method calls the [**BdaStartChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdastartchanges) function.
 
--   Check-changes method calls the [**BdaCheckChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdacheckchanges) function.
+-   Check-changes method calls the [**BdaCheckChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacheckchanges) function.
 
--   Commit-changes method calls the [**BdaCommitChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdacommitchanges) function.
+-   Commit-changes method calls the [**BdaCommitChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges) function.
 
--   Get-changed-state method calls the [**BdaGetChangeState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdagetchangestate) function.
+-   Get-changed-state method calls the [**BdaGetChangeState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate) function.
 
 The following code snippet shows how to intercept method requests of the KSMETHODSETID\_BdaChangeSync method set using an internal method:
 

@@ -48,7 +48,7 @@ In response to this IRP, drivers return the device to the state it was in prior 
 
 If the device is already started when the driver receives this IRP, the driver simply sets status to success and passes the IRP to the next driver (or completes the IRP if the driver is a bus driver). For such a cancel-remove IRP, a function or filter driver need not set a completion routine. The device may not be in the remove-pending state, because, for example, the driver failed the previous **IRP\_MN\_QUERY\_REMOVE\_DEVICE**.
 
-The PnP manager calls any **EventCategoryTargetDeviceChange** notification callbacks with GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED after the **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request completes. Such callbacks were registered on the device by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification). The PnP manager also calls any user-mode components that registered for notification on the device by calling **RegisterDeviceNotification**.
+The PnP manager calls any **EventCategoryTargetDeviceChange** notification callbacks with GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED after the **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request completes. Such callbacks were registered on the device by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification). The PnP manager also calls any user-mode components that registered for notification on the device by calling **RegisterDeviceNotification**.
 
 If a file system is mounted on the device, it must undo any operations it did in response to the query-remove notification.
 
@@ -77,7 +77,7 @@ Requirements
 ## See also
 
 
-[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification)
+[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification)
 
 [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](irp-mn-query-remove-device.md)
 

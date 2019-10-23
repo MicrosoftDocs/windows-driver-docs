@@ -44,7 +44,7 @@ For details about these functions, see [Storage Class Drivers](storage-class-dri
 
 Miniport driver designers can assume that their miniport drivers will *never* be sent an SRB with any of the immediately preceding **Function** values. The NT-based operating system port driver handles these requests from storage class and filter drivers to protect higher-level drivers from having to access any HBA-specific (or miniport driver-specific) state information to find their devices or to cancel queued requests. This ensures that NT-based operating system storage class and filter drivers have no dependencies on any particular model of HBA.
 
-See [**SCSI\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block) structure for more information.
+See [**SCSI\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block) structure for more information.
 
  
 

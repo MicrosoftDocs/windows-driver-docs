@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # System paging process
 
 
-Most paging operations occur in a context of the system paging process. The only exception is the page table update from the [*UpdateGpuVirtualAddress callback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb), which occurs in a special companion context and occurs synchronous of rendering.
+Most paging operations occur in a context of the system paging process. The only exception is the page table update from the [*UpdateGpuVirtualAddress callback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb), which occurs in a special companion context and occurs synchronous of rendering.
 
 The Microsoft DirectX graphics kernel uses the system paging process to perform paging operations, such as:
 

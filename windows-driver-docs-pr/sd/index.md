@@ -38,7 +38,7 @@ Certain restrictions apply to Secure Digital (SD) card device drivers that manag
 
 - SD I/O commands that specify a function number of a different device stack.
 
-SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/nf-ntddsd-sdbussubmitrequest) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/ne-ntddsd-sd_request_function).
+SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbussubmitrequest) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/ne-ntddsd-sd_request_function).
 
 ## SD Bus Sample
 

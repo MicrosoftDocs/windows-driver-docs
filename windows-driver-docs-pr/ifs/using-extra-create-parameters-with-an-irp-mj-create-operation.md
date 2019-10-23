@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Components of the operating system use extra create parameters (ECPs) to associate additional information with the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation on a file. Drivers can also use ECPs to process or associate additional information with the IRP\_MJ\_CREATE operation on a file in the following situations:
 
--   When a kernel-mode driver calls the [**FltCreateFileEx2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2) or [**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefileex) routine to create or open the file
+-   When a kernel-mode driver calls the [**FltCreateFileEx2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatefileex2) or [**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefileex) routine to create or open the file
 
 -   When a file system filter driver processes the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) operation for the file
 

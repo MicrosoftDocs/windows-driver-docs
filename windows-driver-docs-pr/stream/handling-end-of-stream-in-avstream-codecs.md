@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 # Handling End of Stream in AVStream Codecs
 
 
-When a HW MFT receives a sample with an end of stream (EOS) flag set, it sets KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM in the **OptionsFlag** member of the [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header) structure that corresponds to that sample.
+When a HW MFT receives a sample with an end of stream (EOS) flag set, it sets KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM in the **OptionsFlag** member of the [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure that corresponds to that sample.
 
-After the minidriver receives a [**KSSTREAM\_POINTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksstream_pointer) with the KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM flag set in **StreamHeader.OptionsFlag**, the input pin will not receive any new input stream pointers until the minidriver sets KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM on an output stream pointer.
+After the minidriver receives a [**KSSTREAM\_POINTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer) with the KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM flag set in **StreamHeader.OptionsFlag**, the input pin will not receive any new input stream pointers until the minidriver sets KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM on an output stream pointer.
 
 Before the minidriver sets KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM on an output stream pointer, it should generate as many output frames as possible with currently available inputs.
 

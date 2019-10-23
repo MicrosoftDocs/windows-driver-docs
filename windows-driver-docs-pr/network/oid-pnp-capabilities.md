@@ -44,7 +44,7 @@ typedef struct _NDIS_PM_WAKE_UP_CAPABILITIES {
 The members of this structure contain the following information:
 
 <a href="" id="minmagicpacketwakeup"></a>**MinMagicPacketWakeUp**  
-Specifies the lowest device power state from which the miniport driver's network adapter can signal a wake-up on receipt of a magic packet. (A *magic packet* is a packet that contains 16 contiguous copies of the receiving network adapter's Ethernet address.) The device power state is specified as one of the following [**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state) values:
+Specifies the lowest device power state from which the miniport driver's network adapter can signal a wake-up on receipt of a magic packet. (A *magic packet* is a packet that contains 16 contiguous copies of the receiving network adapter's Ethernet address.) The device power state is specified as one of the following [**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state) values:
 
 <a href="" id="ndisdevicestateunspecified"></a>**NdisDeviceStateUnspecified**  
 The network adapter does not support magic-packet wake-ups.
@@ -62,7 +62,7 @@ The network adapter can signal a magic-packet wake-up from device states D2, D1,
 The network adapter can signal a magic-packet wake-up from device power states D3, D2, D1, and D0.
 
 <a href="" id="minpatternwakeup"></a>**MinPatternWakeUp**  
-Specifies the lowest device power state from which the miniport driver's network adapter can signal a wake-up event on receipt of a network frame that contains a pattern specified by the protocol driver. The power state is specified as one of the following [**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state) values:
+Specifies the lowest device power state from which the miniport driver's network adapter can signal a wake-up event on receipt of a network frame that contains a pattern specified by the protocol driver. The power state is specified as one of the following [**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state) values:
 
 <a href="" id="ndisdevicestateunspecified"></a>**NdisDeviceStateUnspecified**  
 The network adapter does not support pattern-match wake-ups.
@@ -96,7 +96,7 @@ When calling [**NdisMSetAttributesEx**](https://docs.microsoft.com/previous-vers
 
 A miniport driver's network adapter can support any combination of wake-up events, including no wake-up events. A miniport driver can still support power management even if its network adapter cannot not signal wake-up events. In this case, the only power management OIDs that the miniport driver supports in addition to OID\_PNP\_CAPABILITIES are [OID\_PNP\_QUERY\_POWER](oid-pnp-query-power.md) and [OID\_PNP\_SET\_POWER](oid-pnp-set-power.md).
 
-If a miniport driver's network adapter does not support a particular wake-up event, the miniport driver should indicate an [**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state) value of **NdisDeviceStateUnspecified** for the wake-up event in the **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure.
+If a miniport driver's network adapter does not support a particular wake-up event, the miniport driver should indicate an [**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state) value of **NdisDeviceStateUnspecified** for the wake-up event in the **NDIS\_PM\_WAKE\_UP\_CAPABILITIES** structure.
 
 OID\_PNP\_CAPABILITIES only indicates the wake-up capabilities of a miniport driver' s network adapter; it does not enable such capabilities. [OID\_PNP\_ENABLE\_WAKE\_UP](oid-pnp-enable-wake-up.md) is used to enable a network adapter's wake-up capabilities.
 
@@ -133,7 +133,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_device_power_state)
+[**NDIS\_DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state)
 
 [**NdisMSetAttributesEx**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff553623(v=vs.85))
 

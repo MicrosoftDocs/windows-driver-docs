@@ -122,7 +122,7 @@ In this example, the OID pending is [OID\_GEN\_STATISTICS](https://docs.microsof
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
 
@@ -138,9 +138,9 @@ In this example, the OID pending is [OID\_GEN\_STATISTICS](https://docs.microsof
 
 [OID\_GEN\_STATISTICS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-statistics)
 
-[NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
-[NDIS OID Request Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[NDIS OID Request Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
  
 

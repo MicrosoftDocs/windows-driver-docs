@@ -28,7 +28,7 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                                                             |
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| UINT32 | The IHV-requested priority for this task. See [**WDI\_IHV\_TASK\_PRIORITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_ihv_task_priority) for valid priority values. |
+| UINT32 | The IHV-requested priority for this task. See [**WDI\_IHV\_TASK\_PRIORITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_ihv_task_priority) for valid priority values. |
 
  
 
