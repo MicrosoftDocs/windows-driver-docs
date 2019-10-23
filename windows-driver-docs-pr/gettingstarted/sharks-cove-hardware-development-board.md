@@ -470,9 +470,6 @@ To learn how Windows drivers work with simple peripheral buses, see [Simple Peri
 
 ## <span id="related_topics"></span>Related topics
 
-
-[SharksCove.org](https://go.microsoft.com/fwlink/p?linkid=403167)
-
 [Concepts for all driver developers](https://go.microsoft.com/fwlink/p/?linkid=399233)
 
 [Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p/?linkid=399234)

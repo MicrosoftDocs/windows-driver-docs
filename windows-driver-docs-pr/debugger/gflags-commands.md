@@ -81,7 +81,7 @@ gflags /p [/disable ImageFile] [/?]
 To display help:
 
 ```console
-glags /?
+gflags /?
 ```
 
 ## <span id="ddk_gflags_commands_dtools"></span><span id="DDK_GFLAGS_COMMANDS_DTOOLS"></span>Parameters

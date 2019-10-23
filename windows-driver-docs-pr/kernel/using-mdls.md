@@ -69,12 +69,4 @@ VOID MyFreeMdl(PMDL Mdl)
 
 If the physical pages that are described by an MDL in the chain are locked, the example function calls the [**MmUnlockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmunlockpages) routine to unlock the pages before it calls [**IoFreeMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreemdl) to free the MDL. However, the example function does not need to explicitly unmap the pages before it calls **IoFreeMdl**. Instead, **IoFreeMdl** automatically unmaps the pages when it frees the MDL.
 
-For a summary of the system routines that allocate, free, and manage MDLs, see [Address Mappings and MDLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
-
- 
-
- 
-
-
-
 
