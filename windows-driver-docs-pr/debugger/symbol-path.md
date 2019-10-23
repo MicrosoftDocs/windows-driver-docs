@@ -3,7 +3,7 @@ title: Symbol path for Windows debuggers
 description: The symbol path specifies locations where the Windows debuggers (WinDbg, KD, CDB, NTST) look for symbol files. 
 ms.assetid: 705df98f-717f-40ad-a424-101826970691
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
-ms.date: 09/09/2019
+ms.date: 10/23/2019
 ms.localizationpriority: medium
 ---
 
@@ -113,7 +113,6 @@ You can turn off lazy symbol loading in CDB and KD by using the `-s` [command-li
 ## <span id="azure"></span><span id="AZURE"></span>Azure DevOps Services Artifacts
 
 A symbol server is available with Azure Artifacts in Azure DevOps Services. For information on working with Azure Artifacts in WinDbg, see [Debug with symbols in WinDbg](https://docs.microsoft.com/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio). For general information about Azure generated symbols, see [Symbol files (PDBs)](https://docs.microsoft.com/azure/devops/artifacts/concepts/symbols).
-
 
 ### <span id="controlling-the-symbol-path"></span><span id="CONTROLLING-THE-SYMBOL-PATH"></span>Controlling the symbol path
 
