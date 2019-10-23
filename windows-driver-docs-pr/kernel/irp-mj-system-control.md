@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_SYSTEM\_CONTROL
 
 
-All drivers must provide a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine that handles **IRP\_MJ\_SYSTEM\_CONTROL** requests, which are sent by the kernel-mode component of [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi) (WMI).
+All drivers must provide a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine that handles **IRP\_MJ\_SYSTEM\_CONTROL** requests, which are sent by the kernel-mode component of [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi) (WMI).
 
 When Sent
 ---------
@@ -31,7 +31,7 @@ Depends on the value at **MinorFunction** in the current I/O stack location of t
 Operation
 ---------
 
-All drivers must support **IRP\_MJ\_SYSTEM\_CONTROL** requests by supplying a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+All drivers must support **IRP\_MJ\_SYSTEM\_CONTROL** requests by supplying a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 Drivers that support [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi) (WMI) must handle **IRP\_MJ\_SYSTEM\_CONTROL** requests by processing the minor function codes associated with this major function code. For information about the WMI minor function codes, see [WMI Minor IRPs](wmi-minor-irps.md).
 
@@ -56,7 +56,7 @@ Requirements
 ## See also
 
 
-[*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
 

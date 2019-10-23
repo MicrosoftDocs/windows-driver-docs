@@ -41,5 +41,5 @@ This section contains information about Windows Image Acquisition (WIA) drivers,
 ## Related sections
 
  
--   [Imaging DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image)
+-   [Imaging DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_image)
 

@@ -33,7 +33,7 @@ In addition, you must follow these guidelines for INF files for extensible switc
 
   If the **FilterMediaTypes** entry only specifies the **vmnetextension** value, the extension will only bind to the driver stacks for all extensible switches on the system.
 
-  If the **FilterMediaTypes** entry specifies **vmnetextension** as well as other media types, the extension can determine whether it is bound within an extensible switch driver stack by calling [**NdisFGetOptionalSwitchHandlers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfgetoptionalswitchhandlers). If the function returns NDIS\_STATUS\_SUCCESS, the extension is bound within the extension driver stack. If the function returns NDIS\_STATUS\_NOT\_SUPPORTED, the extension is bound within the driver stack for a different physical network interface.
+  If the **FilterMediaTypes** entry specifies **vmnetextension** as well as other media types, the extension can determine whether it is bound within an extensible switch driver stack by calling [**NdisFGetOptionalSwitchHandlers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers). If the function returns NDIS\_STATUS\_SUCCESS, the extension is bound within the extension driver stack. If the function returns NDIS\_STATUS\_NOT\_SUPPORTED, the extension is bound within the driver stack for a different physical network interface.
 
   For more information about the **FilterMediaTypes** entry, see [Intermediate Driver UpperRange And LowerRange INF File Entries](intermediate-driver-upperrange-and-lowerrange-inf-file-entries.md).
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This event occurs after a successful scan event.
 
-The scanned data is variable length and consists of the [PosBarcodeScannerDataReceivedEventData](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pointofservicedriverinterface/ns-pointofservicedriverinterface-_posbarcodescannerdatareceivedeventdata) structure followed by **ScanDataLength** bytes of raw scan data followed by **ScanDataLabelLength** bytes of decoded scan data in which the header and footer information is removed, leaving only the scanner data. The data buffer for this event is as follows.
+The scanned data is variable length and consists of the [PosBarcodeScannerDataReceivedEventData](https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicedriverinterface/ns-pointofservicedriverinterface-_posbarcodescannerdatareceivedeventdata) structure followed by **ScanDataLength** bytes of raw scan data followed by **ScanDataLabelLength** bytes of decoded scan data in which the header and footer information is removed, leaving only the scanner data. The data buffer for this event is as follows.
 
 ## Syntax
 

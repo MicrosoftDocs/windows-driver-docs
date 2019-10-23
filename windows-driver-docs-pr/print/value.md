@@ -43,7 +43,7 @@ The WSD `Value` construct allows you to extend the bidi communications schema wi
 </tr>
 <tr class="odd">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the <code>Value</code> construct, a value in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
+<td><p>The type of data in the <code>Value</code> construct, a value in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>xmllang</strong></p></td>

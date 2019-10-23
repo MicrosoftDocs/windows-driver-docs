@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 
 A device driver can use the following device control requests to synchronously evaluate control methods that are defined in the ACPI namespace of a device:
 
--   [**IOCTL\_ACPI\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_eval_method)
+-   [**IOCTL\_ACPI\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method)
 
     This request evaluates a control method that is an immediate child object in the ACPI namespace of the device to which the request is sent.
 
--   [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex)
+-   [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex)
 
     This request synchronously evaluates a control method that is supported by the device or a descendant child object of the device to which the request is sent.
 
@@ -27,9 +27,9 @@ The [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/ke
 
 For example, a WDM driver performs the following sequence of operations to use one of these IOCTLs:
 
-1.  Calls [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to build the request.
+1.  Calls [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to build the request.
 
-2.  Calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) to send the request down the device stack.
+2.  Calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the request down the device stack.
 
 3.  Waits for the I/O manager to signal the driver that the lower-level drivers have completed the request.
 
@@ -57,9 +57,9 @@ To build a request, a driver calls **IoBuildDeviceIoControlRequest** and supplie
 
 -   *Event* is set to a pointer to a caller-allocated and initialized event object. The driver waits until the I/O manager signals this event, which indicates that the lower-level drivers have completed the request.
 
--   *OutputBuffer* supplies a pointer to an [**ACPI\_EVAL\_OUTPUT\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ns-acpiioct-_acpi_eval_output_buffer_v1) structure that contains the output arguments from the control method. Output arguments are specific to a given control method. For a driver to return any output, it must allocate a buffer that is large enough to hold all the output arguments.
+-   *OutputBuffer* supplies a pointer to an [**ACPI\_EVAL\_OUTPUT\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_eval_output_buffer_v1) structure that contains the output arguments from the control method. Output arguments are specific to a given control method. For a driver to return any output, it must allocate a buffer that is large enough to hold all the output arguments.
 
--   *IoStatusBlock* is set to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure. This returns the status of the request that was set by the lower-level drivers.
+-   *IoStatusBlock* is set to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure. This returns the status of the request that was set by the lower-level drivers.
 
 For a code example of how to evaluate a control method that does not take input arguments, see [Evaluating a Control Method Without Input Arguments](evaluating-a-control-method-without-input-arguments.md).
 

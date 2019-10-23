@@ -32,7 +32,7 @@ To add the default form of WPP software tracing to a [trace provider](trace-prov
 
 -   One [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro call to the driver's source code.
 
-    For drivers, this macro activates software tracing in the driver. This macro is typically called during driver initialization, for example in a [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine.
+    For drivers, this macro activates software tracing in the driver. This macro is typically called during driver initialization, for example in a [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine.
 
     For user-mode applications, call this macro at a point in your source code where no tracing attempts have been previously made.
 
@@ -40,7 +40,7 @@ To add the default form of WPP software tracing to a [trace provider](trace-prov
 
 -   One [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro call to the [trace provider's](trace-provider.md) source code. This macro deactivates software tracing in the driver.
 
-    For drivers, this macro call is typically added to the driver's [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload) routine.
+    For drivers, this macro call is typically added to the driver's [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine.
 
     For user-mode applications, call this macro at a point in your source code after the last tracing attempts has been made.
 

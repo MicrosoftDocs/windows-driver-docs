@@ -46,7 +46,7 @@ The improved connection management that is implemented for Windows Vista in *Avc
 
 Four scenarios (1 through 4) represent *intra*-unit connections. These connections are contained completely within in one AV/C unit. Four other scenarios (5 through 8) represent *inter*-unit connections. These connections are between two different AV/C units.
 
-The following topics discuss the eight different AV/C connection management scenarios and the respective values for the members of the [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avcconnectinfo) structure:
+The following topics discuss the eight different AV/C connection management scenarios and the respective values for the members of the [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure:
 
 [Connections Between Subunit Plugs and Unit Plugs Within One AV/C Unit](connections-between-subunit-plugs-and-unit-plugs-within-one-av-c-unit.md)
 

@@ -20,7 +20,7 @@ Starting with NDIS 6.30, the miniport driver issues an NDIS status indication of
 
 If the miniport driver supports this type of status indication, the miniport driver must issue an **NDIS\_STATUS\_PM\_WAKE\_REASON** status indication if the network adapter generated a wake-up signal. The driver does this while it is handling the OID set request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) for the transition of the adapter to a full-power state.
 
-When the miniport driver makes this status indication, it sets the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure to a pointer to an [**NDIS\_PM\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_wake_reason) structure.
+When the miniport driver makes this status indication, it sets the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure to a pointer to an [**NDIS\_PM\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wake_reason) structure.
 
 For more information about how to issue an **NDIS\_STATUS\_PM\_WAKE\_REASON** indication, see [Issuing NDIS Wake Reason Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/issuing-ndis-wake-reason-indications).
 
@@ -48,9 +48,9 @@ Requirements
 
 
 ****
-[**NDIS\_PM\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_wake_reason)
+[**NDIS\_PM\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wake_reason)
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
  
 

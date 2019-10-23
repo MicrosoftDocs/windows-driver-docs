@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # IrqlRtlPassive rule (wdm)
 
 
-The IrqlRtlPassive rule specifies that the driver calls [**RtlDeleteRegistryValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtldeleteregistryvalue) only when it is executing at IRQL = PASSIVE\_LEVEL.
+The IrqlRtlPassive rule specifies that the driver calls [**RtlDeleteRegistryValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue) only when it is executing at IRQL = PASSIVE\_LEVEL.
 
 |              |     |
 |--------------|-----|
@@ -73,7 +73,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**RtlDeleteRegistryValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtldeleteregistryvalue)
+[**RtlDeleteRegistryValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue)
  
 
  

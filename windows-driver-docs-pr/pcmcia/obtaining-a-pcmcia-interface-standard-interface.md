@@ -16,7 +16,7 @@ This section describes how a driver can obtain a PCMCIA\_INTERFACE\_STANDARD int
 
 A driver obtains a PCMCIA\_INTERFACE\_STANDARD interface by creating and sending an IRP\_MJ\_PNP request that specifies a [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) minor function code. The driver carries out the following operations:
 
--   Allocates and zero-fills a [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) structure in the paged memory pool.
+-   Allocates and zero-fills a [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) structure in the paged memory pool.
 
 -   Creates an IRP for the query interface request and gets the next stack location for the new IRP.
 

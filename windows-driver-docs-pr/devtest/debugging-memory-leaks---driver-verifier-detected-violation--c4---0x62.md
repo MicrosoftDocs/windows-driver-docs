@@ -69,7 +69,7 @@ Driver Verifier flags
 Name of the driver.
 Reserved
 Total number of allocations that were not freed, including both paged and non-paged pool.
-The driver is unloading without first freeing its pool allocations. In Windows 8.1, this bug check will also occur if the driver unloaded without first freeing any work items ([**IO\_WORKITEM**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess)) it had allocated with [**IoAllocateWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateworkitem). A bug check with this parameter occurs only when the [Pool Tracking](pool-tracking.md) option is active.
+The driver is unloading without first freeing its pool allocations. In Windows 8.1, this bug check will also occur if the driver unloaded without first freeing any work items ([**IO\_WORKITEM**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess)) it had allocated with [**IoAllocateWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem). A bug check with this parameter occurs only when the [Pool Tracking](pool-tracking.md) option is active.
 Specify [Pool Tracking](pool-tracking.md) (**verifier /flags 0x8**). The Pool Tracking option is enabled with Standard Flags (**verifier /standard** ).
  
 
@@ -153,7 +153,7 @@ Summary of All Verifier Statistics
 
 In example, the driver, MyDriver.sys, has two memory allocations and one I/O work item that have not been properly freed. Each listing shows the address of the current allocation, the size, the pool tag used, and the address in the driver code where the request for an allocation was made. If symbols are loaded for the driver in question, it will also show the name of the function next to the caller address.
 
-Of the tags displayed, only one (for the allocation at address 0x8645a000) was supplied by the driver itself (**mdrv**). The tag **VMdl** is used whenever a driver being verified by Driver Verifier makes calls [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatemdl). Similarly, the tag **Vfwi** is used whenever a driver being verified by Driver Verifier makes a request to allocate a work item using [**IoAllocateWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateworkitem).
+Of the tags displayed, only one (for the allocation at address 0x8645a000) was supplied by the driver itself (**mdrv**). The tag **VMdl** is used whenever a driver being verified by Driver Verifier makes calls [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl). Similarly, the tag **Vfwi** is used whenever a driver being verified by Driver Verifier makes a request to allocate a work item using [**IoAllocateWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem).
 
 ### If you have symbols you can locate where in the source files the memory allocations occurred
 

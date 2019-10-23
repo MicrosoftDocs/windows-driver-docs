@@ -29,7 +29,7 @@ System components and drivers send this IRP at IRQL PASSIVE\_LEVEL in an arbitra
 ## Input Parameters
 
 
-The **Parameters.UsageNotification.InPath** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure is a BOOLEAN. When this parameter is **TRUE**, the system is creating a paging, crash dump, or hibernation file on the device. When **InPath** is **FALSE**, such a file has been removed from the device.
+The **Parameters.UsageNotification.InPath** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a BOOLEAN. When this parameter is **TRUE**, the system is creating a paging, crash dump, or hibernation file on the device. When **InPath** is **FALSE**, such a file has been removed from the device.
 
 **Parameters.UsageNotification.Type** is an enum indicating the kind of file. This parameter has one of the following values: **DeviceUsageTypePaging**, **DeviceUsageTypeDumpFile**, or **DeviceUsageTypeHibernation**.
 
@@ -66,7 +66,7 @@ A driver responds to this IRP with a procedure like the following:
 
         A driver typically increments or decrements a counter. For example, if **Parameters.UsageNotification.Type** is **DeviceUsageTypePaging** and **Parameters.UsageNotification.InPath** is **TRUE**, increment a count of the number of paging files on the device. Certain driver dispatch routines must check the counter(s).
 
-        A device that contains a special file should not be disabled. A driver can call [**IoInvalidateDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicestate), requesting the PnP manager to re-query for the device's PnP device state information. In response to the resulting [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md) IRP, the driver should set the PNP\_DEVICE\_NOT\_DISABLEABLE flag.
+        A device that contains a special file should not be disabled. A driver can call [**IoInvalidateDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate), requesting the PnP manager to re-query for the device's PnP device state information. In response to the resulting [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md) IRP, the driver should set the PNP\_DEVICE\_NOT\_DISABLEABLE flag.
 
         If **InPath** is **FALSE**, a driver sets the DO\_POWER\_PAGABLE bit in its device object for the device.
 
@@ -78,11 +78,11 @@ A driver responds to this IRP with a procedure like the following:
 
         For example, when ftdisk is running a five-disk stripe set, it propagates paging notifications to each of these five disks, since each of these devices can be required to handle paging file operations.
 
-    3.  In a function or filter driver, set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine.
+    3.  In a function or filter driver, set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine.
 
-    4.  In a function or filter driver, set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS, set up the next stack location, and pass the IRP to the next lower driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver). Do not complete the IRP.
+    4.  In a function or filter driver, set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS, set up the next stack location, and pass the IRP to the next lower driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver). Do not complete the IRP.
 
-        In a bus driver that is handling the IRP for a child PDO: set **Irp-&gt;IoStatus.Status** and complete the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest)).
+        In a bus driver that is handling the IRP for a child PDO: set **Irp-&gt;IoStatus.Status** and complete the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)).
 
     5.  During IRP completion processing:
 
@@ -98,7 +98,7 @@ When any of a driver's special file counts is nonzero, the driver must support t
 
 For a **DeviceUsageTypePaging** file created on its device, a driver must do the following:
 
--   Lock code in memory for its [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch), and [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines.
+-   Lock code in memory for its [*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch), [*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch), [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch), and [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routines.
 
 -   Clear the DO\_POWER\_PAGABLE bit in its device object for the device (on the IRP's way up the device stack).
 
@@ -110,7 +110,7 @@ For a **DeviceUsageTypeDumpFile** file on its device, a driver must do the follo
 
 -   Do not take the device out of the D0 state.
 
-    Do not register the device for idle detection ([**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-poregisterdeviceforidledetection)). If the device is already registered, cancel the registration. If the driver performs its own idle detection for the device, suspend such detection.
+    Do not register the device for idle detection ([**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection)). If the device is already registered, cancel the registration. If the driver performs its own idle detection for the device, suspend such detection.
 
 -   Clear the DO\_POWER\_PAGABLE bit in its device object for the device (on the IRP's way up the device stack).
 
@@ -124,7 +124,7 @@ For a **DeviceUsageTypeHibernation** file on its device, a driver must do the fo
 
 -   Do not power down the device in response to a D3 set-power IRP that is part of an S4 hibernate action. See [System Power Actions](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-power-actions) for more information.
 
-    Upon receipt of such a D3 set-power IRP, perform all tasks required to put the device in the D3 state except for powering off the device and notifying the power manager ([**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-posetpowerstate)). The device must retain power until the hibernation file has been written.
+    Upon receipt of such a D3 set-power IRP, perform all tasks required to put the device in the D3 state except for powering off the device and notifying the power manager ([**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate)). The device must retain power until the hibernation file has been written.
 
 -   Clear the DO\_POWER\_PAGABLE bit in its device object for the device (on the IRP's way up the device stack).
 
@@ -155,21 +155,21 @@ Requirements
 ## See also
 
 
-[*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchRead*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-[*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchWrite*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-[**IoAdjustPagingPathCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioadjustpagingpathcount)
+[**IoAdjustPagingPathCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioadjustpagingpathcount)
 
-[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver)
+[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 
-[**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest)
+[**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location)
+[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
@@ -181,9 +181,9 @@ Requirements
 
 [**IRP\_MN\_QUERY\_STOP\_DEVICE**](irp-mn-query-stop-device.md)
 
-[**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-poregisterdeviceforidledetection)
+[**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection)
 
-[**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-posetpowerstate)
+[**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate)
 
  
 

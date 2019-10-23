@@ -23,5 +23,5 @@ The following diagram illustrates the NFC stack architecture:
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  

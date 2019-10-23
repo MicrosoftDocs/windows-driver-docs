@@ -22,7 +22,7 @@ One exception to this OID serialization rule is for Wi-Fi miniport adapters that
 
 1. The first OID request is passed to the WDI miniport adapter.
 2. The NIC does not respond to the OID within the time limit specified by the driver.
-3. WDI calls the driver's [MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose) callback function to collect diagnostic data about the NIC.
+3. WDI calls the driver's [MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose) callback function to collect diagnostic data about the NIC.
 4. The first OID is no longer considered to block serialization. This means the WDI miniport adapter can now receive other OID requests, even though the first OID is serialized. However, these other OIDS are also serialized, which means the WDI miniport adapter will not pend more than 2 OIDs simultaneously (the first OID that is still hung and a second OID).
 
 ## Related topics

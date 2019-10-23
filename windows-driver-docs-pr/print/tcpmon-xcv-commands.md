@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes the commands that can be specified in a call to the [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) or [**XcvDataPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-xcvdataport) function, when it is communicating with the standard TCP/IP port monitor (TCPMON). Each command is specified by the *pszDataName* string in the call to these functions. Certain commands require an input buffer, or an output buffer, or both. The *pInputData* and *pOutputData* parameters of these functions hold the addresses of these buffers.
+This section describes the commands that can be specified in a call to the [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) or [**XcvDataPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-xcvdataport) function, when it is communicating with the standard TCP/IP port monitor (TCPMON). Each command is specified by the *pszDataName* string in the call to these functions. Certain commands require an input buffer, or an output buffer, or both. The *pInputData* and *pOutputData* parameters of these functions hold the addresses of these buffers.
 
 The table that appears in the description of each of the following commands lists the **XcvData** and **XcvDataPort** parameters that are used with the commands. Note that the *hXcv* parameter (common to both functions) is not listed, nor is the **XcvData** function's *pdwStatus* parameter.
 
@@ -53,7 +53,7 @@ The **AddPort** command adds a standard TCP/IP port, which can be either an LPR 
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -100,7 +100,7 @@ The **ConfigPort** command configures an existing standard TCP/IP port monitor p
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -147,7 +147,7 @@ The **DeletePort** command deletes a port from the standard TCP/IP port monitor.
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_delete_port_data_1" data-raw-source="[&lt;strong&gt;DELETE_PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_delete_port_data_1)"><strong>DELETE_PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1" data-raw-source="[&lt;strong&gt;DELETE_PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1)"><strong>DELETE_PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -194,7 +194,7 @@ The **GetConfigInfo** command obtains the configuration information of a particu
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_config_info_data_1" data-raw-source="[&lt;strong&gt;CONFIG_INFO_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_config_info_data_1)"><strong>CONFIG_INFO_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1" data-raw-source="[&lt;strong&gt;CONFIG_INFO_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1)"><strong>CONFIG_INFO_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -202,7 +202,7 @@ The **GetConfigInfo** command obtains the configuration information of a particu
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>

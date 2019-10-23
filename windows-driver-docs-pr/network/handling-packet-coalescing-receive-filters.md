@@ -17,11 +17,11 @@ As soon as the network adapter has been configured with receive filters, it must
 
 -   All the header field test parameters for a particular filter must match on the received packet in order to coalesce the packet in the coalescing buffer.
 
-    The network adapter combines the results from all header field tests of a receive filter with a logical AND operation. That is, if any header field test that is included in the array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures for a receive filter fails, the received packet does not meet the specified filter criterion and must not be coalesced.
+    The network adapter combines the results from all header field tests of a receive filter with a logical AND operation. That is, if any header field test that is included in the array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures for a receive filter fails, the received packet does not meet the specified filter criterion and must not be coalesced.
 
 -   The network adapter only inspects packet data based on the specified header field test parameters. The adapter must ignore all header fields in the packet for which header field tests are not specified.
 
--   If a received packet matches all the header field tests for any of the receive filters, the network adapter must coalesce the packet within the hardware coalescing buffer. As soon as the first packet is coalesced, the network adapter must start a hardware timer and must set the expiration time to the value of the **MaxCoalescingDelay** member of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure for the matching receive filter.
+-   If a received packet matches all the header field tests for any of the receive filters, the network adapter must coalesce the packet within the hardware coalescing buffer. As soon as the first packet is coalesced, the network adapter must start a hardware timer and must set the expiration time to the value of the **MaxCoalescingDelay** member of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure for the matching receive filter.
 
 -   As more packets are received that match a packet coalescing receive filter, the network adapter puts them into the coalescing buffer.
 

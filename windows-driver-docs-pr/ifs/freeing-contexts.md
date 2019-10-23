@@ -19,7 +19,7 @@ A context is freed after it is deleted and all outstanding references to it have
 
 There is one exception to this rule: if a context has been created but has not been set by calling **FltSet***Xxx***Context**, it does not need to be deleted. It is freed when its reference count reaches zero. (See the code example in [Releasing Contexts](releasing-contexts.md).)
 
-When a minifilter driver registers its context types, each context definition can optionally include a context cleanup callback routine to be called before the context is freed. For more information, see [**PFLT\_CONTEXT\_CLEANUP\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_context_cleanup_callback).
+When a minifilter driver registers its context types, each context definition can optionally include a context cleanup callback routine to be called before the context is freed. For more information, see [**PFLT\_CONTEXT\_CLEANUP\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_cleanup_callback).
 
  
 

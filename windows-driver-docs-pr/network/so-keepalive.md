@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The state of the SO\_KEEPALIVE socket option determines whether keep-alive packets are sent on a connection-oriented socket. This socket option applies only to listening sockets and connection-oriented sockets.
 
-To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>

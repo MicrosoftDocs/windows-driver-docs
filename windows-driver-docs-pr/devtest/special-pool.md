@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 Memory corruption is a common driver problem. Driver errors can result in crashes long after the errors are made. The most common of these errors is accessing memory that has already been freed, and allocating *n* bytes and then accessing *n*+1 bytes.
 
-To detect memory corruption, Driver Verifier can allocate driver memory from a special pool and monitor that pool for incorrect access. Special pool support is provided for kernel-mode system-supplied routines, such as [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) and also for the GDI system-supplied routines, such as [**EngAllocMem**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem).
+To detect memory corruption, Driver Verifier can allocate driver memory from a special pool and monitor that pool for incorrect access. Special pool support is provided for kernel-mode system-supplied routines, such as [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and also for the GDI system-supplied routines, such as [**EngAllocMem**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engallocmem).
 
 Two alignments of the special pool are available. The **Verify End** alignment is better at detecting access overruns, and the **Verify Start** alignment is better at detecting access underruns. (Note that the vast majority of memory corruptions are due to overruns, not underruns.)
 
@@ -31,17 +31,17 @@ When **Verify Start** is selected, the memory buffer is aligned with the beginni
 
 **Verify End** is the default alignment, as overrun errors are much more common in drivers than underrun errors.
 
-An individual memory allocation can override these settings and choose its alignment by calling [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority) with the *Priority* parameter set to XxxSpecialPoolOverrun or XxxSpecialPoolUnderrun. (This routine cannot activate or deactivate the Special Pool feature, or request the special pool for a memory allocation, which would otherwise be allocated from normal pool. Only the alignment can be controlled from this routine.)
+An individual memory allocation can override these settings and choose its alignment by calling [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) with the *Priority* parameter set to XxxSpecialPoolOverrun or XxxSpecialPoolUnderrun. (This routine cannot activate or deactivate the Special Pool feature, or request the special pool for a memory allocation, which would otherwise be allocated from normal pool. Only the alignment can be controlled from this routine.)
 
 In Windows 7 and later versions of the Windows operating system, the Special Pool option supports memory that was allocated by using the following kernel APIs:
 
--   [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatemdl)
+-   [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl)
 
--   [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
+-   [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
 
--   [**RtlAnsiStringToUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
+-   [**RtlAnsiStringToUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
 
--   [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutineex)
+-   [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)
 
 ### <span id="special_pool_by_pool_tag_or_allocation_size"></span><span id="SPECIAL_POOL_BY_POOL_TAG_OR_ALLOCATION_SIZE"></span>Special Pool by Pool Tag or Allocation Size
 

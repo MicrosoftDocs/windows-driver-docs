@@ -26,7 +26,7 @@ The Windows Sockets switch always uses the [WSK address families](https://docs.m
 
 During initialization, a proxy driver typically registers with Transport Driver Interface (TDI) for address change notifications. All Plug and Play (PnP) aware transports, including TCP/IP, supply address change notifications through TDI to clients that have registered for such notifications.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 
@@ -48,7 +48,7 @@ where NIC-GUID is the globally unique identifier assigned by the network configu
 
 The preceding structure definitions are defined in the tdi.h header file. The preceding registration and callback functions are defined in the tdikrnl.h header file. These header files are available in the Microsoft Windows Driver Development Kit (DDK) and the Windows Driver Kit (WDK). Detailed information about TDI PnP notifications is included in [TDI Client Callbacks](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565081(v=vs.85)) and [TDI Client Event and PnP Notification Handlers](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565082(v=vs.85)).
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 

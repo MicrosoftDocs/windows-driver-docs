@@ -17,17 +17,17 @@ The Windows kernel-mode process and thread manager handles the execution of all 
 
 If threads from different processes attempt to use the same resource at the same time, problems can occur. Windows provides several techniques to avoid this problem. The technique of making sure that threads from different processes do not touch the same resource is called *synchronization*. For more information about synchronization, see [Synchronization Techniques](synchronization-techniques.md).
 
-Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of kernel DDIs, see [Windows kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_kernel/).
+Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of kernel DDIs, see [Windows kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/_kernel/).
 
 This set of guidelines applies to these callback routines:
 
-[_PCREATE_PROCESS_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_process_notify_routine)
+[_PCREATE_PROCESS_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine)
 
-[_PCREATE_PROCESS_NOTIFY_ROUTINE_EX_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_process_notify_routine_ex)
+[_PCREATE_PROCESS_NOTIFY_ROUTINE_EX_](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine_ex)
 
-[_PCREATE_THREAD_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pcreate_thread_notify_routine)
+[_PCREATE_THREAD_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_thread_notify_routine)
 
-[_PLOAD_IMAGE_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pload_image_notify_routine)
+[_PLOAD_IMAGE_NOTIFY_ROUTINE_](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine)
 
 -    Keep notify routines short and simple.
 -    Do not make calls into a user mode service to validate the process, thread, or image. 
@@ -47,11 +47,11 @@ Starting in Windows 10, the Windows Subsystem for Linux (WSL) enables a user to
 
 One of the components is a *subsystem process* that hosts the unmodified user-mode Linux binary, such as /bin/bash. Subsystem processes do not contain data structures associated with Win32 processes, such as Process Environment Block (PEB) and Thread Environment Block (TEB). For a subsystem process, system calls and user mode exceptions are dispatched to a paired driver.
 
-Here are the changes to the [Process and Thread Manager Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) in order to support subsystem processes:
+Here are the changes to the [Process and Thread Manager Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) in order to support subsystem processes:
 
--   The WSL type is indicated by the **SubsystemInformationTypeWSL** value in the [**SUBSYSTEM\_INFORMATION\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ne-ntddk-_subsystem_information_type) enumeration. Drivers can call [**NtQueryInformationProcess**](https://docs.microsoft.com/windows/desktop/api/winternl/nf-winternl-ntqueryinformationprocess) and [**NtQueryInformationThread**](https://docs.microsoft.com/windows/desktop/api/winternl/nf-winternl-ntqueryinformationthread) to determine the underlying subsystem. Those calls return **SubsystemInformationTypeWSL** for WSL.
--   Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-pssetcreatethreadnotifyroutineex), and specify **PsCreateThreadNotifySubsystems** as the type of notification.
--   The [**PS\_CREATE\_NOTIFY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_ps_create_notify_info) structure has been extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM\_INFORMATION\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ne-ntddk-_subsystem_information_type).
+-   The WSL type is indicated by the **SubsystemInformationTypeWSL** value in the [**SUBSYSTEM\_INFORMATION\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type) enumeration. Drivers can call [**NtQueryInformationProcess**](https://docs.microsoft.com/windows/desktop/api/winternl/nf-winternl-ntqueryinformationprocess) and [**NtQueryInformationThread**](https://docs.microsoft.com/windows/desktop/api/winternl/nf-winternl-ntqueryinformationthread) to determine the underlying subsystem. Those calls return **SubsystemInformationTypeWSL** for WSL.
+-   Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreatethreadnotifyroutineex), and specify **PsCreateThreadNotifySubsystems** as the type of notification.
+-   The [**PS\_CREATE\_NOTIFY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_ps_create_notify_info) structure has been extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM\_INFORMATION\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type).
 
  
 

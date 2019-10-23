@@ -144,7 +144,7 @@ If an app does not call EnableEvents within 5 seconds, Windows will timeout and 
 
 ### DriverEvent handler
 
-After an OnDriverEvent handler is registered and events are enabled, if the printer extension was launched to handle print preferences or printer notifications, then the handler will be invoked. In the preceding code snippet, a method called OnDriverEvent was registered as the event handler. In the following code snippet, the *PrinterExtensionEventArgs* parameter is the object that enables the print preferences and printer notifications scenarios to be constructed. *PrinterExtensionEventArgs* is a wrapper for [**IPrinterExtensionEventArgs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterextensioneventargs).
+After an OnDriverEvent handler is registered and events are enabled, if the printer extension was launched to handle print preferences or printer notifications, then the handler will be invoked. In the preceding code snippet, a method called OnDriverEvent was registered as the event handler. In the following code snippet, the *PrinterExtensionEventArgs* parameter is the object that enables the print preferences and printer notifications scenarios to be constructed. *PrinterExtensionEventArgs* is a wrapper for [**IPrinterExtensionEventArgs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs).
 
 ```csharp
 static void OnDriverEvent(object sender, PrinterExtensionEventArgs eventArgs)
@@ -200,7 +200,7 @@ New ReasonIds may be supported in the future. As a result, printer extensions mu
 
 Print preferences is driven by the PrintSchemaEventArgs.Ticket object. This object encapsulates both the PrintTicket and PrintCapabilities documents that describe the features and options for a device. While the underlying XML is also available, the object model makes working with these formats easier.
 
-Inside each [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschematicket) or [**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemacapabilities) object there are features ([**IPrintSchemaFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemafeature)) and options ([**IPrintSchemaOption**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemaoption)). While the interfaces used for features and options are the same regardless of the origin, the behavior varies slightly as a result of the underlying XML. For example, PrintCapabilities documents specify many options per feature, while PrintTicket documents specify only the selected (or default) option. Similarly, PrintCapabilities documents specify localized display strings, whereas PrintTicket documents do not.
+Inside each [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) or [**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities) object there are features ([**IPrintSchemaFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature)) and options ([**IPrintSchemaOption**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption)). While the interfaces used for features and options are the same regardless of the origin, the behavior varies slightly as a result of the underlying XML. For example, PrintCapabilities documents specify many options per feature, while PrintTicket documents specify only the selected (or default) option. Similarly, PrintCapabilities documents specify localized display strings, whereas PrintTicket documents do not.
 
 The [PrinterExtensionSample](https://go.microsoft.com/fwlink/p/?LinkId=617945) uses data binding to create ComboBox controls for printer preferences. Microsoft recommends using data binding as it makes the code much easier to maintain by reducing scattering. For more information on data binding in WPF, see [Data Binding Overview](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview).
 
@@ -208,11 +208,11 @@ In order to maximize performance, Microsoft recommends that calls to GetPrintCap
 
 As a user makes choices using the data bound ComboBox controls, the PrintTicket object is automatically updated. When the user finally clicks **OK**, a chain of asynchronous validation and completion begins. This asynchronous pattern is used extensively in order to prevent long running tasks from occurring on UI threads and causing hangs in either the print preferences UI or the app that is printing. The following is a list of the steps used for processing the PrintTicket changes after the user clicks **OK**.
 
-1. The PrintSchemaTicket is validated asynchrously using the [**IPrintSchemaTicket::ValidateAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprintschematicket-validateasync) method.
+1. The PrintSchemaTicket is validated asynchrously using the [**IPrintSchemaTicket::ValidateAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprintschematicket-validateasync) method.
 
 1. When the asynchronous validation completes, the Common Language Runtime (CLR) invokes the PrintTicketValidateCompleted method.
 
-    1. If validation was successful, it calls the CommitPrintTicketAsync method, and CommitPrintTicketAsync calls the [**IPrintSchemaTicket::CommitAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprintschematicket-commitasync) method. And when update PrintTicket is successfully completed, this invokes the PrintTicketCommitCompleted method, which calls a convenience method that calls the PrinterExtensionEventArgs.Request.Complete method to indicate that print preferences are complete, and then it closes the app.
+    1. If validation was successful, it calls the CommitPrintTicketAsync method, and CommitPrintTicketAsync calls the [**IPrintSchemaTicket::CommitAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprintschematicket-commitasync) method. And when update PrintTicket is successfully completed, this invokes the PrintTicketCommitCompleted method, which calls a convenience method that calls the PrinterExtensionEventArgs.Request.Complete method to indicate that print preferences are complete, and then it closes the app.
 
     1. Otherwise, it presents UI to the user to handle the constraint situation.
 
@@ -306,12 +306,12 @@ Microsoft also recommends that printer extensions postpone initialization tasks 
 
 After the OnDriverEvent call, printer extensions should initialize their UI and draw as quickly as possible, making use of asynchronous methods where possible to ensure responsiveness. Printer extensions should have no dependency on network calls or Bidi in order to create the initial window state for print preferences or printer notifications.
 
-As the user makes choices using the on screen UI that affect the PrintTicket, the printer extension should make use of the IPrintSchemaTicket::ValidateAsync method in order to validate changes as early as possible. Finally, the printer extension should use the [**IPrintSchemaTicket::CommitAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprintschematicket-commitasync) method in order to commit the PrintTicket changes.
+As the user makes choices using the on screen UI that affect the PrintTicket, the printer extension should make use of the IPrintSchemaTicket::ValidateAsync method in order to validate changes as early as possible. Finally, the printer extension should use the [**IPrintSchemaTicket::CommitAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprintschematicket-commitasync) method in order to commit the PrintTicket changes.
 
 Printer extensions are always executed out of process from the process invoked them. So you must keep window behavior in mind when you're developing a printer extension:
 
-- The **WindowParent** property from [**IPrinterExtensionEventArgs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterextensioneventargs) specifies the handle to the window that invoked the app.
-- The **WindowModal** property from [**IPrinterExtensionEventArgs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterextensioneventargs) specifies whether a printer extension (in print preferences mode) should be run modally.
+- The **WindowParent** property from [**IPrinterExtensionEventArgs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs) specifies the handle to the window that invoked the app.
+- The **WindowModal** property from [**IPrinterExtensionEventArgs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs) specifies whether a printer extension (in print preferences mode) should be run modally.
 
 The Printer Extension Sample demonstrates how to create a UI that is generally launched as the topmost window. But in some cases, the UI will not be shown in the foreground, such as when the process that caused the UI to be invoked is running at a different integrity level, or when the process is compiled for a different processor architecture. In this case, the printer extension should call FlashWindowEx to request user permission to come to the foreground by flashing the icon in the taskbar.
 
@@ -329,7 +329,7 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 
 [Native Image Generator](https://docs.microsoft.com/dotnet/framework/tools/ngen-exe-native-image-generator)
 
-[Print Schema Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index)
+[Print Schema Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index)
 
 [Printer Extension Sample](https://go.microsoft.com/fwlink/p/?LinkId=617945)
 

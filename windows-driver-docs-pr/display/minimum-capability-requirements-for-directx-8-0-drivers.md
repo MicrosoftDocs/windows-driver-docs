@@ -25,7 +25,7 @@ A DirectX 8.0 driver must explicitly:
 
 -   Modify its list of supported texture formats to support new style pixel format specifications.
 
--   Handle the new [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) (DP2) drawing tokens.
+-   Handle the new [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) (DP2) drawing tokens.
 
 -   Handle [**D3dCreateSurfaceEx**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) for vertex and index buffers even if your driver does not support video memory vertex buffer creation. Handles for system memory vertex and index buffers are passed to the driver.
 

@@ -45,6 +45,6 @@ Sercx2.sys and its associated serial controller driver enable the run-time [powe
 
 In contrast, Serial.sys is not managed by PoFx, and instead relies on device power management capabilities that are supported in earlier versions of Windows.
 
-Another difference is that Serial.sys implements software flow control, but Sercx2.sys does not. Both Serial.sys and Sercx2.sys support hardware flow control using the *request to send* (RTS) and *clear to send* (CTS) signals. For more information about flow control, see [**SERIAL\_HANDFLOW**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ns-ntddser-_serial_handflow).
+Another difference is that Serial.sys implements software flow control, but Sercx2.sys does not. Both Serial.sys and Sercx2.sys support hardware flow control using the *request to send* (RTS) and *clear to send* (CTS) signals. For more information about flow control, see [**SERIAL\_HANDFLOW**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ns-ntddser-_serial_handflow).
 
 A final difference is that Serial.sys can work in conjunction with Serenum.sys, but Sercx2.sys cannot. Serenum.sys is a filter driver that enumerates devices that are connected to serial ports. For more information, see [Enumerating Serenum Devices](enumerating-serenum-devices.md).

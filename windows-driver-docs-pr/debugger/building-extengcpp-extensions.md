@@ -19,7 +19,7 @@ The EngExtCpp implementation code (engextcpp.cpp) is used instead of linking wit
 
 Because the EngExtCpp extension framework is built on top of the DbgEng extension framework, an EngExtCpp extension DLL should export the same functions as a DbgEng extension DLL.
 
-Each extension should be exported. When you use the [**EXT\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-ext_command) macro to define an extension function, this macro also creates a C function with the same name as the extension. This function should be exported from the DLL.
+Each extension should be exported. When you use the [**EXT\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command) macro to define an extension function, this macro also creates a C function with the same name as the extension. This function should be exported from the DLL.
 
 The following functions are provided by engextcpp should be exported from the EngExtCpp DLL.
 

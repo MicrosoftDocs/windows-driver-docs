@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # DEBUG\_ATTACH\_XXX
 
-The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control how the debugger engine attaches to a user-mode process. For the DEBUG_ATTACH_XXX options used when attaching to a kernel target, see the [IDebugClient::AttachKernel method](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugclient-attachkernel).
+The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control how the debugger engine attaches to a user-mode process. For the DEBUG_ATTACH_XXX options used when attaching to a kernel target, see the [IDebugClient::AttachKernel method](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient-attachkernel).
 
 The possible values include the following.
 

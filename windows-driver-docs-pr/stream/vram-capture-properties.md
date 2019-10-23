@@ -24,7 +24,7 @@ To capture to system memory, return KS\_CAPTURE\_ALLOC\_SYSTEM\_AGP.
 
 The capture driver then receives a [**KSPROPERTY\_CURRENT\_CAPTURE\_SURFACE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-current-capture-surface) set-property request with a system memory value type. The capture driver now acts as bus-master DMA device and places the data directly into system memory.
 
-In this mode, the capture driver receives system memory buffers in the [*AVStrMiniPinProcess*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspin) callback function of the output pin.
+In this mode, the capture driver receives system memory buffers in the [*AVStrMiniPinProcess*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspin) callback function of the output pin.
 
 For information about how to implement DMA in your pin process callback, see [Packet-based DMA in AVStream](packet-based-dma-in-avstream.md).
 
@@ -46,15 +46,15 @@ VRAM processing requests consist of two parts. First, the capture driver receive
 
 The capture driver or the display miniport driver should map the VRAM surface handle to an actual VRAM physical address. The VRAM surface handle *does not remain valid; do not* cache it for later use.
 
-Return the mapped address in the [**VRAM\_SURFACE\_INFO\_PROPERTY\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-vram_surface_info_property_s) that was provided in the property request. The capture driver can issue an IOCTL to request the mapping from the display miniport driver.
+Return the mapped address in the [**VRAM\_SURFACE\_INFO\_PROPERTY\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-vram_surface_info_property_s) that was provided in the property request. The capture driver can issue an IOCTL to request the mapping from the display miniport driver.
 
 Second, the capture filter's *AVStrMiniPinProcess* is called when a pin has data to process.
 
-The minidriver should now call [**KsPinGetLeadingEdgeStreamPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetleadingedgestreampointer) to acquire and lock the leading edge stream pointer for this pin. This function returns a pointer to a [**KSSTREAM\_POINTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksstream_pointer) structure.
+The minidriver should now call [**KsPinGetLeadingEdgeStreamPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspingetleadingedgestreampointer) to acquire and lock the leading edge stream pointer for this pin. This function returns a pointer to a [**KSSTREAM\_POINTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer) structure.
 
-This stream pointer structure contains a pointer to a [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header).
+This stream pointer structure contains a pointer to a [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header).
 
-In the **Data** member of the stream header, find a pointer to a [**VRAM\_SURFACE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-vram_surface_info) structure.
+In the **Data** member of the stream header, find a pointer to a [**VRAM\_SURFACE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-vram_surface_info) structure.
 
 This structure contains the physical address returned in response to KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS. The **hSurface** member that represents the handle is **NULL**.
 
@@ -68,7 +68,7 @@ The capture driver should:
 
 -   If your capture driver performs timestamping, set **PresentationTime**, **Duration**, and, if relevant, **OptionsFlags** in KSSTREAM\_HEADER.
 
--   Call [**KsStreamPointerAdvanceOffsets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointeradvanceoffsets) to continue processing or delete all clones and complete the request by calling [**KsStreamPointerDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksstreampointerdelete).
+-   Call [**KsStreamPointerAdvanceOffsets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointeradvanceoffsets) to continue processing or delete all clones and complete the request by calling [**KsStreamPointerDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete).
 
 The **CCapturePin::ProcessD3DSurface** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit (WDK) samples show one way to implement this callback for VRAM support.
 

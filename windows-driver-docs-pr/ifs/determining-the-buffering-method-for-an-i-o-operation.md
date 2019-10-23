@@ -39,7 +39,7 @@ For IRP-based I/O operations, the buffering method used is operation-specific an
 
 -   The type of I/O operation that is being performed
 
--   The value of the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure for the file system volume
+-   The value of the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure for the file system volume
 
 -   For I/O control (IOCTL) and file system control (FSCTL) operations, the value of the *TransferType* parameter that was passed to the CTL\_CODE macro when the IOCTL or FSCTL was defined
 

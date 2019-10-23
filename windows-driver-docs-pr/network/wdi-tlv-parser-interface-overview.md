@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## Callee allocation model
 
 
-An entry point within the driver receives a message or indication that contains TLVs. After the code extracts the message ID and determines if it is an ID that it wants to handle, it calls the generic parse routine and passes the TLV blob (after advancing past the [**WDI\_MESSAGE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_message_header)) to parse the TLVs into a C-structure.
+An entry point within the driver receives a message or indication that contains TLVs. After the code extracts the message ID and determines if it is an ID that it wants to handle, it calls the generic parse routine and passes the TLV blob (after advancing past the [**WDI\_MESSAGE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header)) to parse the TLVs into a C-structure.
 
 ```c
 ndisStatus = Parse(

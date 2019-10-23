@@ -27,7 +27,7 @@ Creating a framework device object involves three steps:
 
     The driver calls a set of framework-supplied functions that add information to the structure.
 
-3.  Calling [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate).
+3.  Calling [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate).
 
     The driver passes the WDFDEVICE\_INIT structure's pointer to the **WdfDeviceCreate** method. The method creates a framework device object and uses information in the WDFDEVICE\_INIT structure to initialize the object.
 

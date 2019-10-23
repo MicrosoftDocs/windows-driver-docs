@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # IoSetCompletionExCompleteIrp rule (wdm)
 
 
-The **IoSetCompletionExCompleteIrp** rule specifies that the [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutineex) routine returns an NTSTATUS value. The driver must check this value to determine if the [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine was successfully registered before calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver) and if **IoSetCompletionRoutineEx** fails then the IRP should be completed and the dispatch routine should return.
+The **IoSetCompletionExCompleteIrp** rule specifies that the [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex) routine returns an NTSTATUS value. The driver must check this value to determine if the [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine was successfully registered before calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver) and if **IoSetCompletionRoutineEx** fails then the IRP should be completed and the dispatch routine should return.
 
 |              |     |
 |--------------|-----|
@@ -73,8 +73,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest)
-[**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutineex)
+[**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
+[**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)
  
 
  

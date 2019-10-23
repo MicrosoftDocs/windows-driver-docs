@@ -29,7 +29,7 @@ class DSM_QueryLBPolicy
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QueryLBPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiodisk/ns-mpiodisk-_dsm_querylbpolicy) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QueryLBPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_querylbpolicy) data structure. There are no methods associated with this WMI class.
 
  
 

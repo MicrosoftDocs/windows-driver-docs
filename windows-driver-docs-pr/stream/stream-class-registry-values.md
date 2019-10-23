@@ -33,7 +33,7 @@ Software-only device drivers should use this registry string to inform stream cl
 The following flags were supported on Windows 9x but are obsolete in NT-based operating systems:
 
 <a href="" id="dontsuspendifstreamsarerunning"></a>**DontSuspendIfStreamsAreRunning**  
-This registry variable is obsolete in Windows 2000 and later NT-based operating systems. (As of this release, DirectShow listens to power queries and puts all streams into pause when it receives a low-power query.) An application can still inform the system that it is in use by calling **SetThreadExecutionState**. This routine is described in the Microsoft Windows SDK documentation. Alternatively, a driver can use [**PoSetSystemState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-posetsystemstate).
+This registry variable is obsolete in Windows 2000 and later NT-based operating systems. (As of this release, DirectShow listens to power queries and puts all streams into pause when it receives a low-power query.) An application can still inform the system that it is in use by calling **SetThreadExecutionState**. This routine is described in the Microsoft Windows SDK documentation. Alternatively, a driver can use [**PoSetSystemState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate).
 
 <a href="" id="oktohibernate"></a>**OkToHibernate**  
 This registry string is only valid for drivers running on Windows 98. It is not used in NT-based operating systems.

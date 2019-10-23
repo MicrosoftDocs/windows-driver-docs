@@ -26,7 +26,7 @@ To add or modify a print queue object's property information, carry out the foll
 
 2.  Call the spooler's **SetPrinter** function, with an input structure of PRINTER\_INFO\_7 (described in the Windows SDK documentation) and an action of DSPRINT\_UPDATE, to inform the spooler that it should update the published print queue object. (Drivers should not specify an action of DSPRINT\_PUBLISH.)
 
-These steps should be implemented within the printer driver's [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent) function, when the function receives a PRINTER\_EVENT\_INITIALIZE event.
+These steps should be implemented within the printer driver's [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent) function, when the function receives a PRINTER\_EVENT\_INITIALIZE event.
 
 If a driver must obtain the current values for a printer's published properties, it should call **GetPrinterDataEx** or **EnumPrinterDataEx** to obtain the information from the registry, which is spooler-maintained and always up to date. An alternative way is to call **GetPrinter** to obtain the print queue's object identifier and then to call ADSI functions to obtain the values of the published properties. This technique is not recommended, both because it is more resource intensive and because returned data might not always be current.
 

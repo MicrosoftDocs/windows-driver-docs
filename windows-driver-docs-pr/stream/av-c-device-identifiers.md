@@ -78,7 +78,7 @@ If available, the ***SubunitType*** field is extracted from the subunit address 
 
 For example: **AVC\\VEN\_50F2&MOD\_0&TYP\_4&*SubunitID***
 
-For a list of subunit types that *Avc.sys* supports and their corresponding numeric values, see [**AvcSubunitType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavcsubunittype).
+For a list of subunit types that *Avc.sys* supports and their corresponding numeric values, see [**AvcSubunitType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavcsubunittype).
 
 <a href="" id="subunitid"></a>***SubunitID***  
 If the ***SubunitType*** field is available, the ***SubunitID*** field also is available. When *Avc.sys* queries the AV/C device for its subunit information, the device responds with the count of the subunits for each type. This zero-based count is used to create a device identifier for each subunit. The subunit address specification also allows for the ***SubunitID*** field to be extended, but this aspect is hidden from the subunit driver (and from you, the author of the INF file). The zero-based instance number is used in all cases. For example, if the ***SubunitID*** field is extended to support 270 subunits, the 270th subunit has a subunit identifier of 10D (269 decimal). For example:
