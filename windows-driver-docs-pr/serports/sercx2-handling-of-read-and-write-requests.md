@@ -21,7 +21,7 @@ However, if the read or write request is canceled after one or more bytes of dat
 ## Requests that time out
 
 
-If a read or write request can time out if the request takes too long to process. Also, a read request can time out if the time between two successive bytes received by the serial controller exceeds some maximum allowed time. In either case, when the time-out condition is detected, SerCx2 immediately completes the request with the STATUS\_TIMEOUT status code. The completed request reports the number of bytes read or written by SerCx2 during the handling of the request. If necessary, the peripheral driver that sent the request can use this information to send a second request to finish the partially completed read or write operation. For more information about time-outs, see [**SERIAL\_TIMEOUTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ns-ntddser-_serial_timeouts).
+If a read or write request can time out if the request takes too long to process. Also, a read request can time out if the time between two successive bytes received by the serial controller exceeds some maximum allowed time. In either case, when the time-out condition is detected, SerCx2 immediately completes the request with the STATUS\_TIMEOUT status code. The completed request reports the number of bytes read or written by SerCx2 during the handling of the request. If necessary, the peripheral driver that sent the request can use this information to send a second request to finish the partially completed read or write operation. For more information about time-outs, see [**SERIAL\_TIMEOUTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ns-ntddser-_serial_timeouts).
 
 ## Impact of hardware limitations
 

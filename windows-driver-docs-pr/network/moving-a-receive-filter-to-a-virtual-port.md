@@ -19,9 +19,9 @@ The overlying driver issues an object identifier (OID) set request of [OID\_RECE
 
 -   A VF has been detached from a Hyper-V child partition in which the guest operating system is still running. In this case, the overlying driver issues the OID set request to move the receive filter for the VM network adapter from the nondefault VPort to the default VPort attached to the PF. When this happens, packet traffic reverts to the synthetic data path.
 
-To move a receive filter from one VPort to another VPort, an overlying driver issues an OID set request of [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-move-filter). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters) structure.
+To move a receive filter from one VPort to another VPort, an overlying driver issues an OID set request of [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-move-filter). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_clear_parameters) structure.
 
-Before the overlying driver issues the [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-move-filter) request, it must initialize an [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_move_filter_parameters) structure in the following way:
+Before the overlying driver issues the [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-move-filter) request, it must initialize an [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_move_filter_parameters) structure in the following way:
 
 -   The driver sets the **FilterId** member to the identifier of the identifier of the previously allocated receive filter.
 
@@ -37,7 +37,7 @@ Before the overlying driver issues the [OID\_RECEIVE\_FILTER\_MOVE\_FILTER](http
 
 -   The driver sets the **DestVPortId** member to the identifier of the VPort on which this filter is to be moved.
 
-NDIS validates the members of the [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_move_filter_parameters) before it forwards the OID set request to the PF miniport driver.
+NDIS validates the members of the [**NDIS\_RECEIVE\_FILTER\_MOVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_move_filter_parameters) before it forwards the OID set request to the PF miniport driver.
 
 When the PF miniport driver handles this OID set request, it must move the receive filter in an atomic operation. The driver must be able to configure the network adapter to simultaneously remove the filter from a receive queue and VPort and set it on a different receive queue and VPort.
 

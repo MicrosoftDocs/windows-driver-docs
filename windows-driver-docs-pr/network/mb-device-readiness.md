@@ -37,7 +37,7 @@ Miniport drivers do not need to wait for the SMS subsystem to be ready before re
 
 ### Emergency Mode Support
 
-If the miniport driver indicates that it supports emergency call services while processing [OID\_WWAN\_READY\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-ready-info) the miniport driver must set the **EmergencyMode** member of the [**WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_ready_info) structure to **WwanEmergencyModeOn**. In this case, the miniport driver should continue to send registration notifications to the MB Service, but the service will not invoke any automatic configuration related functionalities.
+If the miniport driver indicates that it supports emergency call services while processing [OID\_WWAN\_READY\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-ready-info) the miniport driver must set the **EmergencyMode** member of the [**WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info) structure to **WwanEmergencyModeOn**. In this case, the miniport driver should continue to send registration notifications to the MB Service, but the service will not invoke any automatic configuration related functionalities.
 
 Miniport drivers can specify that they support emergency call services even in scenarios where they detect that the SIM is no longer valid, perhaps because the subscription is unpaid, or service has been deactivated because the device has been reported stolen.
 

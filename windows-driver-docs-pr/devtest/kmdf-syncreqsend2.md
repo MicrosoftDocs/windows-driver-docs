@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **SyncReqSend2** rule specifies that synchronous request sends have a nonzero time-out value set.
 
-If the driver calls [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsend) without setting a valid time-out in the request options, the thread can be stalled if hardware does not respond promptly.
+If the driver calls [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) without setting a valid time-out in the request options, the thread can be stalled if hardware does not respond promptly.
 
 |              |      |
 |--------------|------|
@@ -53,7 +53,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsend)
+[**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)
  
 
  

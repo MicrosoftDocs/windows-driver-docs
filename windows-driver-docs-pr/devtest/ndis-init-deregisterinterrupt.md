@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Init\_DeRegisterInterrupt rule (ndis)
 
 
-The **Init\_DeRegisterInterrupt** rule specifies that if [**NdisMRegisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterinterruptex) is called at least once during MPInitilize, [**NdisMDeregisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex) should be called at least once in MPHaltEx.
+The **Init\_DeRegisterInterrupt** rule specifies that if [**NdisMRegisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex) is called at least once during MPInitilize, [**NdisMDeregisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex) should be called at least once in MPHaltEx.
 
 Register of interrupts, which usually happen during initialization, should be undone (deregister) if something goes wrong in the initialization process or during the halting of the miniport.
 
@@ -53,8 +53,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisMDeregisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex)
-[**NdisMRegisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterinterruptex)
+[**NdisMDeregisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex)
+[**NdisMRegisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex)
  
 
  

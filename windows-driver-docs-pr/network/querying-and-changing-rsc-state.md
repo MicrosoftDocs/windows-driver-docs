@@ -19,7 +19,7 @@ The current RSC state can be queried by issuing the [OID\_TCP\_OFFLOAD\_CURRENT\
 ## Changing RSC State
 
 
-RSC can be enabled or disabled by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-parameters) OID request. This OID uses an [**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. In this structure, the **RscIPv4** and **RscIPv6** members can have the following values:
+RSC can be enabled or disabled by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-parameters) OID request. This OID uses an [**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. In this structure, the **RscIPv4** and **RscIPv6** members can have the following values:
 
 <table>
 <colgroup>

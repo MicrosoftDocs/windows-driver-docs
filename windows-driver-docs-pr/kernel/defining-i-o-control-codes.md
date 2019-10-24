@@ -33,13 +33,13 @@ Choose a descriptive constant name for the IOCTL, of the form IOCTL\_*Device*\_*
 Supply the following parameters to the **CTL\_CODE** macro:
 
 <a href="" id="devicetype"></a>*DeviceType*  
-Identifies the device type. This value must match the value that is set in the **DeviceType** member of the driver's [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure. (See [Specifying Device Types](specifying-device-types.md)). Values of less than 0x8000 are reserved for Microsoft. Values of 0x8000 and higher can be used by vendors. Note that the vendor-assigned values set the **Common** bit.
+Identifies the device type. This value must match the value that is set in the **DeviceType** member of the driver's [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. (See [Specifying Device Types](specifying-device-types.md)). Values of less than 0x8000 are reserved for Microsoft. Values of 0x8000 and higher can be used by vendors. Note that the vendor-assigned values set the **Common** bit.
 
 <a href="" id="functioncode"></a>*FunctionCode*  
 Identifies the function to be performed by the driver. Values of less than 0x800 are reserved for Microsoft. Values of 0x800 and higher can be used by vendors. Note that the vendor-assigned values set the **Custom** bit.
 
 <a href="" id="transfertype"></a>*TransferType*  
-Indicates how the system will pass data between the caller of [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) (or [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest)) and the driver that handles the IRP.
+Indicates how the system will pass data between the caller of [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) (or [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)) and the driver that handles the IRP.
 
 Use one of the following system-defined constants:
 
@@ -100,7 +100,7 @@ Other system-defined I/O control codes require the caller to have read access ri
 
  
 
-Drivers can use [**IoValidateDeviceIoControlAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) to perform stricter access checking than that provided by an IOCTL's *RequiredAccess* bits.
+Drivers can use [**IoValidateDeviceIoControlAccess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) to perform stricter access checking than that provided by an IOCTL's *RequiredAccess* bits.
 
 ## Other useful macros
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_storage_class_drivers_adddevice_routine_kg"></span><span id="DDK_STORAGE_CLASS_DRIVERS_ADDDEVICE_ROUTINE_KG"></span>
 
 
-The PnP manager calls a storage class driver's [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine when it detects a device controlled by that driver. A storage class driver's *AddDevice* routine:
+The PnP manager calls a storage class driver's [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine when it detects a device controlled by that driver. A storage class driver's *AddDevice* routine:
 
 -   Claims the device as described in [Storage Class Driver's ClaimDevice Routine](storage-class-driver-s-claimdevice-routine.md), or, if the driver is unable to claim the device, returns STATUS\_SUCCESS.
 
@@ -24,9 +24,9 @@ The PnP manager calls a storage class driver's [**AddDevice**](https://docs.micr
 
 -   Prepares the device object to handle a start request as described in [Writing an AddDevice Routine](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-an-adddevice-routine).
 
--   Attaches the device object to the device stack by calling [**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioattachdevicetodevicestack) with the input PDO.
+-   Attaches the device object to the device stack by calling [**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack) with the input PDO.
 
--   If the device starts in a known power state, calls [**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-posetpowerstate).
+-   If the device starts in a known power state, calls [**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate).
 
 -   Clears the DO\_DEVICE\_INITIALIZING flag on the new device object.
 

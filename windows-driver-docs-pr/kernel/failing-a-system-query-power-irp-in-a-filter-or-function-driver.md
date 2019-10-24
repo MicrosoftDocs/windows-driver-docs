@@ -21,13 +21,13 @@ A filter or function driver (that is not the power policy owner for a device) ca
 
 To fail an **IRP\_MN\_QUERY\_POWER** request for a system power state, a driver should take the following steps:
 
-1.  Call [**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-postartnextpowerirp) to indicate that the driver is prepared to handle the next power IRP. (Windows Server 2003, Windows XP, and Windows 2000 only)
+1.  Call [**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp) to indicate that the driver is prepared to handle the next power IRP. (Windows Server 2003, Windows XP, and Windows 2000 only)
 
-2.  Set **Irp-&gt;IoStatus.Status** to a failure status and call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest), specifying IO\_NO\_INCREMENT. Do not pass the IRP further down the device stack.
+2.  Set **Irp-&gt;IoStatus.Status** to a failure status and call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest), specifying IO\_NO\_INCREMENT. Do not pass the IRP further down the device stack.
 
-3.  Call [**IoReleaseRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreleaseremovelock) to release the previously acquired lock.
+3.  Call [**IoReleaseRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock) to release the previously acquired lock.
 
-4.  Return a failure status from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+4.  Return a failure status from its [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
  
 

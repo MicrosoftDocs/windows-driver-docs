@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS defines object identifier (OID) values to identify adapter parameters, which include operating parameters such as device characteristics, configurable settings and statistics. For more information about OIDs, see [NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+NDIS defines object identifier (OID) values to identify adapter parameters, which include operating parameters such as device characteristics, configurable settings and statistics. For more information about OIDs, see [NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
 Filter drivers can query or set the operating parameters of underlying drivers or filter the OID requests of overlying drivers.
 

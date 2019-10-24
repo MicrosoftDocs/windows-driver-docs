@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 # Requirements of an IViewHelper Clone-View COM Object
 
 
-A hardware vendor's clone-view [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) COM interface object must meet the following requirements:
+A hardware vendor's clone-view [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) COM interface object must meet the following requirements:
 
 -   The COM object must reside within a dynamic-link library (DLL), which is a COM in-process (in-proc) server.
 
 -   The implementation of the COM object must be opaque to the operating system.
 
--   The [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) interface must provide methods for getting and setting the topology data, which includes clone view.
+-   The [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) interface must provide methods for getting and setting the topology data, which includes clone view.
 
 -   The hardware vendor must find a display mode for clone view so that the display is shown on two or more monitors.
 

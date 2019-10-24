@@ -15,7 +15,7 @@ Filtering extensions are invoked after capturing extensions in the ingress data 
 
 A filtering extension can do the following with packets that were obtained on the ingress data path:
 
--   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the ingress data path, it can apply filtering rules based only on the source port and network adapter connection from which the packet originated. This information is stored in the out-of-band (OOB) data of a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure and can be obtained by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-switch-forwarding-detail) macro.
+-   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the ingress data path, it can apply filtering rules based only on the source port and network adapter connection from which the packet originated. This information is stored in the out-of-band (OOB) data of a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure and can be obtained by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-switch-forwarding-detail) macro.
 
     **Note**  Packets obtained on the ingress data path do not contain destination ports. Filtering packets based on destination ports can be done only on packets obtained on the egress data path.
 
@@ -31,7 +31,7 @@ A filtering extension can do the following with packets that were obtained on th
 
 A filtering extension can do the following with packets that were obtained on the egress data path:
 
--   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the egress data path, it can apply filtering rules based on the source or destination ports for a packet. Destination port data is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure. Extensions obtain this information by calling the [*GetNetBufferListDestinations*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_get_net_buffer_list_destinations) function.
+-   Filter packet traffic and enforce custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the egress data path, it can apply filtering rules based on the source or destination ports for a packet. Destination port data is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. Extensions obtain this information by calling the [*GetNetBufferListDestinations*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_get_net_buffer_list_destinations) function.
 
 -   Exclude the delivery of the packet to one or more extensible switch destination ports. This allows the filtering extension to exclude the delivery of a packet to extensible switch ports.
 
@@ -39,7 +39,7 @@ A filtering extension can do the following with packets that were obtained on th
 
 -   Manage the traffic flow to one or more destination ports by postponing the forwarding of packets up the egress data path.
 
-    For example, a filtering extension that supports quality of service (QoS) functionality may want to immediately call [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsendnetbufferlists) to forward packets that are specified with a higher priority value. Depending on the traffic flow, the extension may want to forward packets with a lower priority value at a later time.
+    For example, a filtering extension that supports quality of service (QoS) functionality may want to immediately call [**NdisFSendNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) to forward packets that are specified with a higher priority value. Depending on the traffic flow, the extension may want to forward packets with a lower priority value at a later time.
 
 -   Modify the packet data. If the filtering extension needs to modify the data in a packet, it must first clone the packet without preserving port destinations. Then, the extension must inject the modified packet into the ingress data path. This allows the underlying extensions to enforce policies on the modified packet and the forwarding extension can add port destinations.
 

@@ -54,7 +54,7 @@ typedef struct _HBAFCPBindingEntry
 
 You can cast this structure declaration to the input and output buffers of the SRB when managing input and output data.
 
-Before returning, your callback routine should call [**ScsiPortWmiPostProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nf-scsiwmi-scsiportwmipostprocess). This SCSI Port WMI library routine updates the request context with information, such as the status of the request and the size of the return data. For more information about the data stored in the request context, see [**SCSIWMI\_REQUEST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/ns-scsiwmi-scsiwmi_request_context).
+Before returning, your callback routine should call [**ScsiPortWmiPostProcess**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmipostprocess). This SCSI Port WMI library routine updates the request context with information, such as the status of the request and the size of the return data. For more information about the data stored in the request context, see [**SCSIWMI\_REQUEST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmi_request_context).
 
  
 

@@ -94,7 +94,7 @@ errExit:
 }
 ```
 
-The KSMETHOD\_BDA\_CREATE\_TOPOLOGY method request calls the minidriver's CFilter::CreateTopology method. This method calls the BDA support library function [**BdaMethodCreateTopology**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdasup/nf-bdasup-bdamethodcreatetopology) to create a topology between filter pins. This function actually creates a topology structure in Ring 3, which reflects, for other property sets, the known connections of the filter. A BDA minidriver should intercept the KSMETHOD\_BDA\_CREATE\_TOPOLOGY method request as shown in the preceding code snippet if that minidriver must send special instructions to the hardware when connecting particular pin types--for example, if the BDA device performs hardware demultiplexing and creates an arbitrary number of output pins fanned off from a single input pin.
+The KSMETHOD\_BDA\_CREATE\_TOPOLOGY method request calls the minidriver's CFilter::CreateTopology method. This method calls the BDA support library function [**BdaMethodCreateTopology**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatetopology) to create a topology between filter pins. This function actually creates a topology structure in Ring 3, which reflects, for other property sets, the known connections of the filter. A BDA minidriver should intercept the KSMETHOD\_BDA\_CREATE\_TOPOLOGY method request as shown in the preceding code snippet if that minidriver must send special instructions to the hardware when connecting particular pin types--for example, if the BDA device performs hardware demultiplexing and creates an arbitrary number of output pins fanned off from a single input pin.
 
  
 

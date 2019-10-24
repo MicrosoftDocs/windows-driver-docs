@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 #  Packet Coalescing Receive Filters
 
 
-Starting with NDIS 6.30, [NDIS receive filters](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) have been extended to support packet coalescing. Each receive filter for packet coalescing defines the following:
+Starting with NDIS 6.30, [NDIS receive filters](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) have been extended to support packet coalescing. Each receive filter for packet coalescing defines the following:
 
 -   A set of fields within the various protocol headers of a packet, such as the destination address of a media access control (MAC) header or destination port of a User Datagram Protocol (UDP) header.
 

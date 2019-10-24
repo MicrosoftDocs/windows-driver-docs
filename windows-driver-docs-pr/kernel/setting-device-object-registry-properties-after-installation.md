@@ -45,7 +45,7 @@ The correspondence between values for the *Property* parameter and actual proper
 </tr>
 <tr class="even">
 <td><p>SPDRP_SECURITY</p></td>
-<td><p>Security descriptor as a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_security_descriptor" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_security_descriptor)"><strong>SECURITY_DESCRIPTOR</strong></a> structure</p></td>
+<td><p>Security descriptor as a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor)"><strong>SECURITY_DESCRIPTOR</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p>SPDRP_SECURITY_SDS</p></td>

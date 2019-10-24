@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 DirectSound supports the use of custom properties on sound cards and provides an **IKsPropertySet** interface for this purpose.
 
-**Note**   Header files Dsound.h and Ksproxy.h define similar but incompatible versions of the **IKsPropertySet** interface. DirectSound applications should use the version defined in Dsound.h. The DirectSound version of **IKsPropertySet** is defined in the DirectSound reference pages in the Microsoft Windows SDK documentation. For the KSProxy version, see [IKsPropertySet](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dsound/nn-dsound-ikspropertyset).
+**Note**   Header files Dsound.h and Ksproxy.h define similar but incompatible versions of the **IKsPropertySet** interface. DirectSound applications should use the version defined in Dsound.h. The DirectSound version of **IKsPropertySet** is defined in the DirectSound reference pages in the Microsoft Windows SDK documentation. For the KSProxy version, see [IKsPropertySet](https://docs.microsoft.com/windows-hardware/drivers/ddi/dsound/nn-dsound-ikspropertyset).
 
  
 

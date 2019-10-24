@@ -55,7 +55,7 @@ You can manage BCD remotely and manage BCD when the system boots from media othe
 
 The BCD store, with its familiar object-and-element architecture, uses GUIDs and names such as "Default" to precisely identify boot-related applications.
 
-BCD includes its own set of boot options. For more information about these boot options, see [BCD Boot Options Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+BCD includes its own set of boot options. For more information about these boot options, see [BCD Boot Options Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 ## Editing Boot Options
 

@@ -16,7 +16,7 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **Similar Structure**
 
-  Like device drivers, file system filter drivers have [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize), [dispatch](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines), and [I/O completion](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-iocompletion-routines) routines. They call many of the same kernel-mode routines that device drivers call, and they filter I/O requests for devices (that is, file system volumes) with which they are associated.
+  Like device drivers, file system filter drivers have [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), [dispatch](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines), and [I/O completion](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-iocompletion-routines) routines. They call many of the same kernel-mode routines that device drivers call, and they filter I/O requests for devices (that is, file system volumes) with which they are associated.
 
 - **Similar Functionality**
 
@@ -28,6 +28,6 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **Other Similarities**
 
-  - Like device drivers, file system filter drivers can receive [Introduction to I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes) (IOCTLs). Note that file system filter drivers can also receive and define [file system control codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) (FSCTLs).
+  - Like device drivers, file system filter drivers can receive [Introduction to I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes) (IOCTLs). Note that file system filter drivers can also receive and define [file system control codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) (FSCTLs).
 
   - Like device drivers, file system filter drivers can be configured to be loaded at system startup time or to be loaded later, after the system startup process is complete.

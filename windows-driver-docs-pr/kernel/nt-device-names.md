@@ -29,7 +29,7 @@ Driver writers must not name more than one object in a device stack. The operati
 
 ### Device Names for non-WDM Drivers
 
-A non-WDM driver must explicitly specify a name for any named device objects. The driver must create at least one named device object in the **\\Device** object directory to receive I/O requests. The driver specifies the device name as the *DeviceName* parameter to [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) when creating the device object.
+A non-WDM driver must explicitly specify a name for any named device objects. The driver must create at least one named device object in the **\\Device** object directory to receive I/O requests. The driver specifies the device name as the *DeviceName* parameter to [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) when creating the device object.
 
  
 

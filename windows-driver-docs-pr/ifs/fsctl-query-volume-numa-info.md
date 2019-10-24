@@ -54,7 +54,7 @@ Not used with this operation; set to **NULL**
 Not used with this operation; set to zero.
 
 *lpOutBuffer* \[out\]  
-A pointer to a buffer that receives a [**FSCTL\_QUERY\_VOLUME\_NUMA\_INFO\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_fsctl_query_volume_numa_info_output) structure which specifies a Non Uniform Memory Architecture (NUMA) volume's current node.
+A pointer to a buffer that receives a [**FSCTL\_QUERY\_VOLUME\_NUMA\_INFO\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_query_volume_numa_info_output) structure which specifies a Non Uniform Memory Architecture (NUMA) volume's current node.
 
 *nOutBufferSize* \[in\]  
 The size of the output buffer, in bytes.
@@ -106,7 +106,7 @@ Ntifs.h</td>
 
 [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)
 
-[**FSCTL\_QUERY\_VOLUME\_NUMA\_INFO\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_fsctl_query_volume_numa_info_output)
+[**FSCTL\_QUERY\_VOLUME\_NUMA\_INFO\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_query_volume_numa_info_output)
 
  
 

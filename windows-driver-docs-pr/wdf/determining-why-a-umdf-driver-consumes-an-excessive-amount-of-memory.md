@@ -33,7 +33,7 @@ To investigate memory usage, use the following steps:
     These objects might be in the object tree and would therefore eventually be freed. However, they are being accumulated unnecessarily. These objects might require:
 
     -   Corrections to their parent objects.
-    -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfobject-deletewdfobject) method.
+    -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-deletewdfobject) method.
 
  
 

@@ -94,7 +94,7 @@ The filtering condition identifiers are each represented by a GUID. These identi
 </td>
 <td>
 <p>The 
-       <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid"><b>LUID</b></a> for the network interface that is associated with the
+       <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid"><b>LUID</b></a> for the network interface that is associated with the
        arrival IP address.</p>
 <p>WFP uses the Arrival interface to match this condition. The Arrival Interface is the first interface the
        packet sees before entering the IP stack inbound from the network, before weak-host or forwarding are
@@ -189,7 +189,7 @@ The filtering condition identifiers are each represented by a GUID. These identi
 </td>
 <td>
 <p>The 
-       <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid"><b>LUID</b></a>for the network interface that is associated with the
+       <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid"><b>LUID</b></a>for the network interface that is associated with the
        arrival IP address.</p>
 <p>WFP uses the Next Hop interface to match this condition. The Next Hop Interface is the last interface the
        packet sees before leaving the IP stack outbound towards the network, after weak-host or forwarding are
@@ -883,7 +883,7 @@ If the frame is ETHERNET II, this value is 0.
 <p>FWPM_CONDITION_NDIS_MEDIA_TYPE</p>
 </td>
 <td>
-<p>The type of the NDIS medium specified as one of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_medium"><b>NDIS_MEDIUM</b></a> enumeration values.</p>
+<p>The type of the NDIS medium specified as one of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_medium"><b>NDIS_MEDIUM</b></a> enumeration values.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -1055,7 +1055,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_TYPE</p>
 </td>
 <td>
-<p>The type of the virtual switch interface that created the frame. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_nic_switch_type"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
+<p>The type of the virtual switch interface that created the frame. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_nic_switch_type"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>
@@ -1065,7 +1065,7 @@ NDIS_PHYSICAL_MEDIUM enumeration values.</p>
 <p>FWPM_CONDITION_VSWITCH_DESTINATION_INTERFACE_TYPE</p>
 </td>
 <td>
-<p>The type of the virtual switch interface to which the frame is destined. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_nic_switch_type"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
+<p>The type of the virtual switch interface to which the frame is destined. This is one of the values that are defined in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_nic_switch_type"><b>NDIS_NIC_SWITCH_TYPE</b></a> enumeration in Ntddndis.h.</p>
 <div class="alert"><b>Note</b>  Supported in Windows 8,  Windows Server 2012, and later versions of Windows.</div>
 <div> </div>
 </td>

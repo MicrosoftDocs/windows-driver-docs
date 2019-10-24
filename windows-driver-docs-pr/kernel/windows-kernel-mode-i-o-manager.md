@@ -25,7 +25,7 @@ For programming techiques related to I/O management, see [I/O Manager Programmin
 
 Routines that provide a direct interface to the I/O manager are usually prefixed with the letters "**Io**"; for example, **IoCreateDevice**. For a list of I/O manager routines, see [I/O Manager Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551797(v=vs.85)).
 
-For lists of routines that relate to IRPS, see [IRPs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For lists of routines that relate to IRPS, see [IRPs](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 The I/O manager has two subcomponents: the Plug and Play manager and power manager. They manage the I/O functionality for the technologies of Plug and Play and power management. For more information about Plug and Play management, see [Windows Kernel-Mode Plug and Play Manager](windows-kernel-mode-plug-and-play-manager.md) and for more information about power management, see [Windows Kernel-Mode Power Manager](windows-kernel-mode-power-manager.md).
 

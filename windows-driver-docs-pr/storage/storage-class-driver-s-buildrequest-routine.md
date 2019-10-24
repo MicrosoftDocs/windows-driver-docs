@@ -34,7 +34,7 @@ A *BuildRequest* routine might share the responsibility for setting up an SRB wi
 
 After the class driver has loaded, it sets up most SRBs with the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI, indicating a device I/O request to be sent over the bus.
 
-For more information about the system-defined SRB members and their values, see [**SCSI\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_request_block).
+For more information about the system-defined SRB members and their values, see [**SCSI\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block).
 
 ### <span id="Setting_Up_SRBs_for_Request_Sense"></span><span id="setting_up_srbs_for_request_sense"></span><span id="SETTING_UP_SRBS_FOR_REQUEST_SENSE"></span>Setting Up SRBs for Request Sense
 

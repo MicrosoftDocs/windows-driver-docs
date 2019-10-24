@@ -17,15 +17,15 @@ In response to an [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://docs.microsoft.c
 
 In addition to sending an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** to a device, the PnP manager sends the IRP to the device's removal relations, if any. The PnP manager also sends a cancel-remove IRP to the device's children.
 
-The PnP manager calls any **EventCategoryTargetDeviceChange** notification callbacks after the **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request completes. Such callbacks were registered on the device by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification). The PnP manager also calls any user-mode components that registered for such notification by calling **RegisterDeviceNotification**.
+The PnP manager calls any **EventCategoryTargetDeviceChange** notification callbacks after the **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request completes. Such callbacks were registered on the device by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification). The PnP manager also calls any user-mode components that registered for such notification by calling **RegisterDeviceNotification**.
 
-An **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request must be handled first by the parent bus driver for a device and then by each higher driver in the device stack. A driver handles remove IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+An **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request must be handled first by the parent bus driver for a device and then by each higher driver in the device stack. A driver handles remove IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 A driver handles an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request with a procedure such as the following in its *DispatchPnP* routine:
 
 1.  In a function or filter driver, postpone restarting the device until lower drivers have completed their restart operations.
 
-    A function or filter driver sets an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine, passes the **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** down the device stack, and postpones its restart operations until all lower drivers have finished with the IRP. (See [Postponing PnP IRP Processing Until Lower Drivers Finish](postponing-pnp-irp-processing-until-lower-drivers-finish.md).)
+    A function or filter driver sets an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, passes the **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** down the device stack, and postpones its restart operations until all lower drivers have finished with the IRP. (See [Postponing PnP IRP Processing Until Lower Drivers Finish](postponing-pnp-irp-processing-until-lower-drivers-finish.md).)
 
 2.  After lower drivers finish, return the device to its previous PnP state.
 
@@ -33,7 +33,7 @@ A driver handles an **IRP\_MN\_CANCEL\_REMOVE\_DEVICE** request with a procedure
 
     If the device was previously enabled for wake-up, the device power policy owner (typically the function driver) should send an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) request to reenable wake-up. See [Power Management](implementing-power-management.md) for details.
 
-3.  Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS and complete the IRP with [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest).
+3.  Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS and complete the IRP with [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest).
 
     As with any PnP IRP, a bus driver completes the IRP.
 

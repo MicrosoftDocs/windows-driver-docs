@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 For each IRP requesting an I/O operation to/from removable media, a removable-media device driver must determine whether DO\_VERIFY\_VOLUME is already set in its **DeviceObject-&gt;Flags**. If this value is set, the driver must do the following:
 
--   For [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read), [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write), and [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests, check whether SL\_OVERRIDE\_VERIFY\_VOLUME is set in the **Flags** member of the driver's [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure. If it is, continue the requested operation.
+-   For [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read), [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write), and [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests, check whether SL\_OVERRIDE\_VERIFY\_VOLUME is set in the **Flags** member of the driver's [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure. If it is, continue the requested operation.
 
     Device control requests that return information about the logical structure of the underlying media have SL\_OVERRIDE\_VERIFY\_VOLUME set in the I/O stack location's **Flags** member when an IFS mounts or remounts a removable-media volume.
 

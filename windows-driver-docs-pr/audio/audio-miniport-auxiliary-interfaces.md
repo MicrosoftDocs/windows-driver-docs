@@ -16,13 +16,13 @@ Some miniport drivers support auxiliary interfaces that are optional and provide
 
 The following interfaces are discussed in this section:
 
-[IMusicTechnology](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-imusictechnology)- Used to change the DirectMusic synthesizer technology that is specified in the data ranges for the DMus miniport driver's pins.
+[IMusicTechnology](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-imusictechnology)- Used to change the DirectMusic synthesizer technology that is specified in the data ranges for the DMus miniport driver's pins.
 
-[IPinCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-ipincount) - Provides a means for the miniport driver to dynamically monitor and manipulate its pin counts.
+[IPinCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-ipincount) - Provides a means for the miniport driver to dynamically monitor and manipulate its pin counts.
 
-[IPinName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-ipinname-getpinname) - Allows the port driver to dynamically update the name of an endpoint.
+[IPinName](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-ipinname-getpinname) - Allows the port driver to dynamically update the name of an endpoint.
 
-[IAdapterPnpManagement](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iadapterpnpmanagement) - Allows adapters to register to receive PnP management messages.
+[IAdapterPnpManagement](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpnpmanagement) - Allows adapters to register to receive PnP management messages.
 
  
 

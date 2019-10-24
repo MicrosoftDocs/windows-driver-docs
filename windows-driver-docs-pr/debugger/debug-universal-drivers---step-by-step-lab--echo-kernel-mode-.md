@@ -853,11 +853,11 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 11. **&lt;- On the host system**
 
-    When the driver is enabled, the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) debug breakpoint should fire, and the execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output will display "Breakpoint 1 hit".
+    When the driver is enabled, the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) debug breakpoint should fire, and the execution of the driver code on the target system should halt. When the breakpoint is hit, the execution should be stopped at the start of the *AddDevice* routine. The debug command output will display "Breakpoint 1 hit".
 
     ![windbg showing sample code locals and command windows](images/debuglab-image-breakpoint-echo-deviceadd.png)
 
-12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine. The Brace character “}” will be highlighted as shown.
+12. Step through the code line-by-line by typing the **p** command or pressing F10 until you reach the following end of the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. The Brace character “}” will be highlighted as shown.
 
     ![code window showing brace character highlighted at start of adddevice routine](images/debuglab-image-breakpoint-end-deviceadd.png)
 
@@ -972,7 +972,7 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
 *In Section 8, you will display information about variables and call stacks.*
 
-This lab assumes that you are stopped at the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine using the process described earlier. To view the output show here, repeat the steps described previously, if necessary.
+This lab assumes that you are stopped at the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine using the process described earlier. To view the output show here, repeat the steps described previously, if necessary.
 
 **&lt;- On the host system**
 

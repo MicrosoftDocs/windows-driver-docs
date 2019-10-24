@@ -82,7 +82,7 @@ Default mode. Enable monochrome z-order text analysis and blank band optimizatio
 
 2
 
-Enable 1 BPP optimization for 24 BPP [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) callbacks.
+Enable 1 BPP optimization for 24 BPP [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) callbacks.
 
 4
 
@@ -154,7 +154,7 @@ Setting the \***PreAnalysisOptions** parameter to 4 allows Unidrv to download [*
 
 When Unidrv generates 24 BPP color data, all stretchblt images are stretched to the resolution of the device, which results in very large quantities of raster data that must be downloaded. This can result in slow performance, in addition to out-of-memory conditions on many East Asian printers.
 
-A minidriver render plug-in is required to take advantage of the stretchblt mode because it must hook [**OEMStretchBlt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/nf-printoem-oemstretchblt) and provide its own image download commands. Unidrv allows the OEMStretchBlt hook only on calls that can be directly downloaded. Therefore, the plug-in is not responsible for handling z-order issues. The plug-in needs only to directly download the source image data contained in the OEMStretchBlt calls that it receives. The plug-in also has the option of punting the image back to Unidrv if the image is in a format that the plug-in does not support or cannot download.
+A minidriver render plug-in is required to take advantage of the stretchblt mode because it must hook [**OEMStretchBlt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printoem/nf-printoem-oemstretchblt) and provide its own image download commands. Unidrv allows the OEMStretchBlt hook only on calls that can be directly downloaded. Therefore, the plug-in is not responsible for handling z-order issues. The plug-in needs only to directly download the source image data contained in the OEMStretchBlt calls that it receives. The plug-in also has the option of punting the image back to Unidrv if the image is in a format that the plug-in does not support or cannot download.
 
 Whenever objects are directly downloaded to a device while other data is rendered on the system, there can be z-order problems or halftone inconsistencies. This mode uses preanalysis to determine which stretchblts can be directly downloaded. Only stretchblts that contain no mask or complex clipping will be considered for direct download. If a later object overlays any of the stretchblts being considered for direct download, then no objects will be directly downloaded. This principle should improve performance and should ensure that no image includes halftone from both the system and from the device, which results in very poor quality print output.
 

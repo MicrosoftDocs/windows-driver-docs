@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_use_of_mapping_buffers_in_the_storport_i_o_model_kg"></span><span id="DDK_USE_OF_MAPPING_BUFFERS_IN_THE_STORPORT_I_O_MODEL_KG"></span>
 
 
-In the SCSI Port I/O model, miniport drivers can require the port driver to allocate and map system virtual memory for SRB I/O buffers. Miniport drivers configure the port driver to map I/O buffers by setting the **MapBuffers** member of the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information) structure to **TRUE**.
+In the SCSI Port I/O model, miniport drivers can require the port driver to allocate and map system virtual memory for SRB I/O buffers. Miniport drivers configure the port driver to map I/O buffers by setting the **MapBuffers** member of the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information) structure to **TRUE**.
 
 If the port driver is configured with **MapBuffers** set to **TRUE**, the **DataBuffer** member of each SRB that the miniport driver receives will contain a system virtual address of an I/O buffer. This address is valid in the address space of all processes in the system. Also, the miniport driver will be free to directly access the I/O buffer.
 

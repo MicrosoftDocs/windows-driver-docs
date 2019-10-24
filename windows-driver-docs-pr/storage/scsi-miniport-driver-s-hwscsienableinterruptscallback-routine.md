@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 A [*HwScsiEnableInterruptsCallback*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557295(v=vs.85)) routine finishes processing an interrupt-driven I/O operation without inhibiting I/O operations for other devices in the machine.
 
-When the *HwScsiEnableInterruptsCallback* routine gets control, all system device interrupts are enabled except from the HBA because the *HwScsiInterrupt* routine disabled interrupts on the HBA before it called [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification). Thus, the miniport driver's *HwScsiInterrupt* routine cannot be called and cannot disturb the context data it set up about the current operation while the *HwScsiEnableInterruptsCallback* routine is running.
+When the *HwScsiEnableInterruptsCallback* routine gets control, all system device interrupts are enabled except from the HBA because the *HwScsiInterrupt* routine disabled interrupts on the HBA before it called [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification). Thus, the miniport driver's *HwScsiInterrupt* routine cannot be called and cannot disturb the context data it set up about the current operation while the *HwScsiEnableInterruptsCallback* routine is running.
 
 A *HwScsiEnableInterruptsCallback* routine should do the following:
 

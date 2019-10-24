@@ -770,7 +770,7 @@ Exit:
 ## Related topics
 
 
-[classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
 [Types of Callouts](types-of-callouts.md)
 

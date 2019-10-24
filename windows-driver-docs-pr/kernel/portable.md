@@ -35,7 +35,7 @@ To write portable drivers, it is best to avoid:
 
 ### Using WDK-Supplied Interfaces
 
-Each Windows NT executive component exports a set of kernel-mode [driver support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) that drivers and all other kernel-mode components call. If the underlying implementation of a support routine changes over time, its callers remain portable because the interface to the defining component does not change.
+Each Windows NT executive component exports a set of kernel-mode [driver support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) that drivers and all other kernel-mode components call. If the underlying implementation of a support routine changes over time, its callers remain portable because the interface to the defining component does not change.
 
 The WDK supplies a set of header files that define system-specific data types and constants that drivers (and all other kernel-mode components) use to help maintain portability from one platform to another. All kernel-mode drivers include one of the master WDK kernel-mode header files, Wdm.h or Ntddk.h. The master header files pull in not only system-supplied headers that define the basic kernel-mode types, but also appropriate selections from any processor-architecture-specific headers when a driver is compiled with the corresponding compiler directive.
 

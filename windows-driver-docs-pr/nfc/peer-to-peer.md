@@ -28,11 +28,11 @@ The Driver MUST support the default SNEP server running over LLCP to exchange ND
 -   On arrival of a remote P2P device, the driver MUST establish a client SNEP connection with the remote device’s default SNEP server (followed by which the “DeviceArrived” subscriptions is triggered).
 -   The driver MUST also be able to accept connections on its default SNEP server from a remote device’s SNEP client connection.
 -   All NDEF messages received on the SNEP server MUST be translated into message types as defined in this document.
--   All message types to be published MUST be translated into NDEF messages and sent to the remote device as defined above. Once the message is transmitted, the [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) is completed as defined in this document.
+-   All message types to be published MUST be translated into NDEF messages and sent to the remote device as defined above. Once the message is transmitted, the [**IOCTL\_NFP\_GET\_NEXT\_TRANSMITTED\_MESSAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_get_next_transmitted_message) is completed as defined in this document.
 
  
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  

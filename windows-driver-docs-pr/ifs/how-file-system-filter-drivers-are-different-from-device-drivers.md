@@ -16,7 +16,7 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **No Power Management**
 
-  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) routines.
+  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) routines.
 
 - **No WDM**
 
@@ -24,7 +24,7 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **No AddDevice or StartIo**
 
-  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) or [**StartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) routines.
+  Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) or [**StartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routines.
 
 - **Different Device Objects Created**
 

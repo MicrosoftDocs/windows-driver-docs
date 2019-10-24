@@ -37,7 +37,7 @@ These headings have the following meanings:
 
 -   **Property descriptor type**
 
-    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure.
+    The property descriptor specifies the property and the operation to perform on that property. The descriptor always begins with a [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) structure.
 
 -   **Property value type**
 
@@ -57,7 +57,7 @@ All filter and pin objects support the basic-support operation on their properti
 
 A table in the description of every property indicates whether video encoder minidrivers are required to support reading or writing the property. Video encoder minidrivers should return STATUS\_NOT\_SUPPORTED in response to get or set requests for properties that are not supported by the minidriver.
 
-The following property sets each contain a single property that must be implemented by video encoder minidrivers. That is, effectively each property gets its own set, so specify 0 in the **PropertyId** member of the [**KSPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_item) member in the [**KSPROPERTY\_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksproperty_set) structure as required.
+The following property sets each contain a single property that must be implemented by video encoder minidrivers. That is, effectively each property gets its own set, so specify 0 in the **PropertyId** member of the [**KSPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_item) member in the [**KSPROPERTY\_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_set) structure as required.
 
 The following property sets belong to the codec API:
 

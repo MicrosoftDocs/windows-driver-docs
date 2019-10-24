@@ -52,7 +52,7 @@ Applies to
 ----------
 
 [**WdfWaitLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff551168)
-[**WdfWaitLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfsync/nf-wdfsync-wdfwaitlockrelease)
+[**WdfWaitLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfwaitlockrelease)
  
 
  

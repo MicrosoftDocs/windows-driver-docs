@@ -80,13 +80,13 @@ For more information about ETW, see [Event Tracing](https://go.microsoft.com/fwl
 
 **Note** WPP trace providers can only be enabled by one trace session at a time. See [WPP Providers](https://docs.microsoft.com/windows/desktop/ETW/about-event-tracing#providers) for more information.
 
-For information about the [WMI library support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) that support WPP software tracing, see:
+For information about the [WMI library support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) that support WPP software tracing, see:
 
-[**WmiQueryTraceInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-wmiquerytraceinformation)
+[**WmiQueryTraceInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-wmiquerytraceinformation)
 
-[**WmiTraceMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-wmitracemessage)
+[**WmiTraceMessage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessage)
 
-[**WmiTraceMessageVa**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-wmitracemessageva)
+[**WmiTraceMessageVa**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessageva)
 
  
 

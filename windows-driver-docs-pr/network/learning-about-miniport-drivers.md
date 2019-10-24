@@ -65,7 +65,7 @@ If you are writing a miniport driver that controls an IrDA adapter, read:
 <a href="" id="miniport-drivers-that-support-scalable-networking"></a>**Miniport drivers that support scalable networking**  
 To learn about miniport drivers that support scalable networking, read:
 
--   [Scalable Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+-   [Scalable Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
 <a href="" id="miniport-drivers-that-support-offloading-tcp-ip--------to-hardware-------"></a>**Miniport drivers that support offloading TCP/IP to hardware**   
 To learn about miniport drivers that offload TCP/IP to hardware, read:

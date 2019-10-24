@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-In order to determine private TWAIN-supported capabilities, a TWAIN application notifies the TWAIN compatibility layer, which then sends the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to the WIA driver's [**IStiUSD::Escape**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-escape) method. The following pseudocode implementation of the **Escape** method demonstrates how it should respond to the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to report private TWAIN-support capabilities.
+In order to determine private TWAIN-supported capabilities, a TWAIN application notifies the TWAIN compatibility layer, which then sends the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to the WIA driver's [**IStiUSD::Escape**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method. The following pseudocode implementation of the **Escape** method demonstrates how it should respond to the ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS escape code to report private TWAIN-support capabilities.
 
 **Note**   The **Escape** method in this example is the same as the one shown in [ESC\_TWAIN\_CAPABILITY Escape Code](esc-twain-capability-escape-code.md), although the focus of each sample is a different escape code.
 

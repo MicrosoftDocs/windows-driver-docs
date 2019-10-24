@@ -81,7 +81,7 @@ Requirements
 
 [**KSEVENT\_BDA\_CA\_MODULE\_STATUS\_CHANGED**](ksevent-bda-ca-module-status-changed.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS specifies the amount of data backfill space that the miniport driver should allocate in the **BackfillSize** member of the [**NDIS\_HD\_SPLIT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_hd_split_attributes) structure. For more information about setting header-data split attributes, see [Initializing a Header-Data Split Provider](initializing-a-header-data-split-provider.md).
+NDIS specifies the amount of data backfill space that the miniport driver should allocate in the **BackfillSize** member of the [**NDIS\_HD\_SPLIT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_hd_split_attributes) structure. For more information about setting header-data split attributes, see [Initializing a Header-Data Split Provider](initializing-a-header-data-split-provider.md).
 
 When a NIC splits the header and data in a received Ethernet frame, the miniport driver must pre-allocate backfill storage of at least the number of bytes that **BackfillSize** specifies before the starting address of data portion of the frame. The backfill storage must not cross a page boundary.
 

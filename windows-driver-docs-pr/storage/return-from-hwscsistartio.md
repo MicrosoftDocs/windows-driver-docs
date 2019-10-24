@@ -23,7 +23,7 @@ If the *HwScsiStartIo* routine cannot carry out a requested operation when it is
 
 1.  Set the input SRB's **SrbStatus** to SRB\_STATUS\_BUSY.
 
-2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestComplete** and with the input SRB.
+2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestComplete** and with the input SRB.
 
 3.  Call **ScsiPortNotification** with the *NotificationType***NextRequest** if the driver can accept a request to a different target logical unit than the one in the just completed SRB.
 

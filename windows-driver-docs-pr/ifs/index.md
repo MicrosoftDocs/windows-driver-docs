@@ -10,7 +10,7 @@ ms.technology: windows-devices
 
 # File Systems Driver Design Guide
 
-This section of the WDK provides conceptual information related to file systems and filter drivers (minifilters). For reference pages that describe the interfaces your driver can implement or call, see the [File System Programming Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_ifsk/).
+This section of the WDK provides conceptual information related to file systems and filter drivers (minifilters). For reference pages that describe the interfaces your driver can implement or call, see the [File System Programming Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_ifsk/).
 
 ## File Systems
 

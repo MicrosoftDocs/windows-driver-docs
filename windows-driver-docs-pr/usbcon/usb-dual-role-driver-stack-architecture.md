@@ -83,7 +83,7 @@ The Microsoft USB Role Switch (URS) driver allows a system implementer to take a
 
 The URS driver is intended to provide dual-role functionality for platforms that use a single USB controller that can operate in both host and peripheral roles over a single port. The *peripheral role* is also known as a *function role*. The URS driver manages the current role of the port, and the loading and unloading of the appropriate software stacks, based on hardware events from the platform.
 
-On a system that has a USB micro-AB connector, the driver makes use of hardware interrupts that indicates the state of the ID pin on the connector. This pin is used to detect whether the controller needs to assume the host role or the function role in a connection. For more information, see the [USB On-The-Go specification](https://go.microsoft.com/fwlink/p/?LinkId=698414). On systems with a USB Type-C connector, the OEM implementer is expected to provide a connector client driver by using the [USB Type-C connector driver programming interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference). The client driver communicates with the Microsoft-provided USB connector Manager class extension (UcmCx) to manage all aspects of the USB Type-C connector, such as CC detection, PD messaging, and others. For role switching, the client driver communicates the state of the USB Type-C connector to the URS driver.
+On a system that has a USB micro-AB connector, the driver makes use of hardware interrupts that indicates the state of the ID pin on the connector. This pin is used to detect whether the controller needs to assume the host role or the function role in a connection. For more information, see the [USB On-The-Go specification](https://go.microsoft.com/fwlink/p/?LinkId=698414). On systems with a USB Type-C connector, the OEM implementer is expected to provide a connector client driver by using the [USB Type-C connector driver programming interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference). The client driver communicates with the Microsoft-provided USB connector Manager class extension (UcmCx) to manage all aspects of the USB Type-C connector, such as CC detection, PD messaging, and others. For role switching, the client driver communicates the state of the USB Type-C connector to the URS driver.
 
 The following diagram shows the USB software driver stack for a dual-role controller that uses the URS driver.
 
@@ -258,7 +258,7 @@ If you're an IHV or an OEM and you're thinking of providing your own driver pack
   The IHV/OEM can also include a filter driver in the driver package.
   ## See Also
 
-[Dual-role controller driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#dual-role-controller-driver-reference)
+[Dual-role controller driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#dual-role-controller-driver-reference)
 
 
 

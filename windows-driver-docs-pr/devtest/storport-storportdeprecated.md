@@ -51,8 +51,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortLogError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportlogerror)
-[**StorPortValidateRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportvalidaterange)
+[**StorPortLogError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror)
+[**StorPortValidateRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportvalidaterange)
  
 
  

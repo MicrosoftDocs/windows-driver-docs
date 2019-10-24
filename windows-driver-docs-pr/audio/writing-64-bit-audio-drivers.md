@@ -19,7 +19,7 @@ If you are writing a 64-bit driver or writing a driver that can be compiled to r
 
 First and foremost, a potential problem to look for in existing 32-bit driver code is conversion between pointer types and integer types such as DWORD or ULONG. Programmers with experience writing code for 32-bit machines might be used to assuming that a pointer value fits into a DWORD or ULONG. For 64-bit code, this assumption is dangerous. Casting a pointer to type DWORD or ULONG can cause a 64-bit pointer to be truncated. A better approach is to cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer of type DWORD\_PTR or ULONG\_PTR is always large enough to store the entire pointer, regardless of whether the code is compiled for a 32- or 64-bit machine.
 
-For example, the [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp) pointer field **IoStatus**.**Information** is of type ULONG\_PTR. The following code shows what not to do when copying a 64-bit pointer value to this field:
+For example, the [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) pointer field **IoStatus**.**Information** is of type ULONG\_PTR. The following code shows what not to do when copying a 64-bit pointer value to this field:
 
 ```cpp
     PDEVICE_RELATIONS pDeviceRelations;
@@ -35,7 +35,7 @@ This code sample erroneously casts the `pDeviceRelations` pointer to type ULONG,
 
 This preserves all 64 bits of the pointer value.
 
-A resource list stores the physical address of a resource in a structure of type PHYSICAL\_ADDRESS (see [IResourceList](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iresourcelist)). To avoid truncating a 64-bit address, you should access the structure's **QuadPart** member rather than its **LowPart** member when copying an address into the structure or reading an address from the structure. For example, the **FindTranslatedPort** macro returns a pointer to a [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_partial_resource_descriptor) structure that contains the base address of an I/O port. The **u**.**Port**.**Start** member of this structure is a PHYSICAL\_ADDRESS pointer to the base address. The following code shows what not to do:
+A resource list stores the physical address of a resource in a structure of type PHYSICAL\_ADDRESS (see [IResourceList](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist)). To avoid truncating a 64-bit address, you should access the structure's **QuadPart** member rather than its **LowPart** member when copying an address into the structure or reading an address from the structure. For example, the **FindTranslatedPort** macro returns a pointer to a [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor) structure that contains the base address of an I/O port. The **u**.**Port**.**Start** member of this structure is a PHYSICAL\_ADDRESS pointer to the base address. The following code shows what not to do:
 
 ```cpp
     PUSHORT pBase = (PUSHORT)FindTranslatedPort(0)->u.Port.Start.LowPart;  // wrong

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # ObsoleteDDIs rule (wdm)
 
 
-The **ObsoleteDDIs** rule specifies that drivers should not call [**FsRtlPrivateLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprivatelock). This function is obsolete. Use [**FsRtlFastLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlfastlock) instead.
+The **ObsoleteDDIs** rule specifies that drivers should not call [**FsRtlPrivateLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprivatelock). This function is obsolete. Use [**FsRtlFastLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlfastlock) instead.
 
 |              |     |
 |--------------|-----|

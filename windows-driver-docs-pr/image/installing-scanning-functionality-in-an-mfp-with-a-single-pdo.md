@@ -67,7 +67,7 @@ The Windows DDK ships with an example INF that installs scanning functionality i
 **Note**   The **Include** and **Needs** entries cannot be used in the **WIASection** section.
 All kernel-mode portions must be installed by the original [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section).
 
-If the device is hot-pluggable, and requires its own kernel-mode component, it must create and enable an Image class device interface (in addition to any other class device interfaces, such as the Print class device interface). The kernel-mode component enables an Image class device interface on the device's devnode by means of a call to the [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) function. When the Image class device interface is enabled, a Plug and Play event is fired, notifying the WIA service that the device is connected.
+If the device is hot-pluggable, and requires its own kernel-mode component, it must create and enable an Image class device interface (in addition to any other class device interfaces, such as the Print class device interface). The kernel-mode component enables an Image class device interface on the device's devnode by means of a call to the [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) function. When the Image class device interface is enabled, a Plug and Play event is fired, notifying the WIA service that the device is connected.
 
  
 

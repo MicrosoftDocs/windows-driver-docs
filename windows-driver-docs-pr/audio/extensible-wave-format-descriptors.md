@@ -29,21 +29,21 @@ The following figure shows the data-format descriptor for a wave audio stream.
 
 ![diagram illustrating a wave-format descriptor](images/wavefmt.png)
 
-As indicated in the figure, the amount of additional format information following the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure varies depending on the data format.
+As indicated in the figure, the amount of additional format information following the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure varies depending on the data format.
 
 Audio systems use this type of format descriptor in several ways:
 
--   A format descriptor like the one shown in the preceding figure is passed as a call parameter to a miniport driver's **NewStream** method (for example, see [**IMiniportWaveCyclic::NewStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportwavecyclic-newstream)).
+-   A format descriptor like the one shown in the preceding figure is passed as a call parameter to a miniport driver's **NewStream** method (for example, see [**IMiniportWaveCyclic::NewStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclic-newstream)).
 
--   The *ResultantFormat* parameter of the [**IMiniport::DataRangeIntersection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiport-datarangeintersection) method points to a buffer into which the method writes a format descriptor like the one shown in the preceding figure.
+-   The *ResultantFormat* parameter of the [**IMiniport::DataRangeIntersection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-datarangeintersection) method points to a buffer into which the method writes a format descriptor like the one shown in the preceding figure.
 
 -   The [**KSPROPERTY\_PIN\_DATAINTERSECTION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-dataintersection) get-property request retrieves a format descriptor like the one shown in the preceding figure.
 
 -   The [**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-proposedataformat) set-property request accepts a format descriptor like the one shown in the preceding figure.
 
--   A similar format is used for the [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatepin) function's *Connect* call parameter. This parameter points to the [**KSPIN\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_connect) structure at the beginning of a buffer that also contains a format descriptor. The format descriptor, which immediately follows the KSPIN\_CONNECT structure, begins with a KSDATAFORMAT structure like the one shown in the preceding figure.
+-   A similar format is used for the [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kscreatepin) function's *Connect* call parameter. This parameter points to the [**KSPIN\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspin_connect) structure at the beginning of a buffer that also contains a format descriptor. The format descriptor, which immediately follows the KSPIN\_CONNECT structure, begins with a KSDATAFORMAT structure like the one shown in the preceding figure.
 
-The format information that follows the KSDATAFORMAT structure should be either a [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-waveformatextensible) structure or a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) structure. WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX that can describe a broader range of formats than WAVEFORMATEX. WAVEFORMATEX is an extended version of the pre-WDM WAVEFORMAT structure. WAVEFORMAT is obsolete and is not supported by the WDM audio subsystem in any version of Microsoft Windows.
+The format information that follows the KSDATAFORMAT structure should be either a [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure or a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) structure. WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX that can describe a broader range of formats than WAVEFORMATEX. WAVEFORMATEX is an extended version of the pre-WDM WAVEFORMAT structure. WAVEFORMAT is obsolete and is not supported by the WDM audio subsystem in any version of Microsoft Windows.
 
 Similarly, the PCMWAVEFORMAT structure is an extended version of WAVEFORMAT that is obsolete, but for which the WDM audio subsystem provides limited support.
 

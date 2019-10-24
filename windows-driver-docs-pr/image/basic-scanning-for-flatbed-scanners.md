@@ -32,11 +32,11 @@ An application will normally perform the following operations when it programs t
 
 The driver will normally perform the following operations when it uses the scanner's flatbed to scan:
 
-1.  Call [**IWiaMiniDrv::drvValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) and [**IWiaMiniDrv::drvReadItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties). The WIA driver should validate any property settings during the application's property-setting phase.
+1.  Call [**IWiaMiniDrv::drvValidateItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) and [**IWiaMiniDrv::drvReadItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties). The WIA driver should validate any property settings during the application's property-setting phase.
 
-2.  Call [**IWiaMiniDrv::drvWriteItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvwriteitemproperties). The WIA item context that is passed in belongs to the flatbed scanner item so that the driver knows that the application intends to use the scanner's flatbed to scan.
+2.  Call [**IWiaMiniDrv::drvWriteItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvwriteitemproperties). The WIA item context that is passed in belongs to the flatbed scanner item so that the driver knows that the application intends to use the scanner's flatbed to scan.
 
-3.  Call [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata). The WIA item context that is passed in belongs to the flatbed scanner item, so the driver can easily determine that the application intends to scan by using the flatbed platen.
+3.  Call [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata). The WIA item context that is passed in belongs to the flatbed scanner item, so the driver can easily determine that the application intends to scan by using the flatbed platen.
 
 4.  Program the device and scan from the flatbed, using the current flatbed item properties. If the WIA driver is not in flatbed scanning mode, it should attempt to switch to this mode for the scan. There is no special setting for the application to toggle to use the flatbed. Using the flatbed item to scan is a contract between the application and the driver; they agree that the flatbed is to be used for the data transfer.
 
