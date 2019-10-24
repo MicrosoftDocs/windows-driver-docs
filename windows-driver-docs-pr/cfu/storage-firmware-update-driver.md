@@ -64,7 +64,47 @@ The device must not fail I/O during the download phase and shall continue servin
 
 ### 1. View Current NVMe Disk HWID
 
+To view the current NVMe disk hardware ID:
+
+1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**.
+
+1. In Device Manager, select **Disk drives**, then expand the node and select the disk drive you want to upgrade.
+
+    ![device manager](images/media1-1.png)
+
+1. Once you have selected the drive you are upgrading, in the **Device Manager** **View** menu, select **Devices by connection**
+
+    ![devices by connection](images/media1-2.png)
+
 TBD - Add screenshots and text procedures from video
+
+
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+![TBD](images/media1-1.png)
+
+
 
 ### 2. View Current NVMe Disk Firmware Version (Y9)
 
@@ -88,7 +128,7 @@ TBD - Add screenshots and text procedures from video
 
 ## Storage Firmware Update Solution Details
 
-![storage firmware update details](storage-firmware-update-details.png)
+![storage firmware update details](images/storage-firmware-update-details.png)
 
 [Adding firmware update logic to a Microsoft-supplied driver](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update#adding-firmware-update-logic-to-a-microsoft-supplied-driver)
 
