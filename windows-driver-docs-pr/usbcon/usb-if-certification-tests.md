@@ -1,7 +1,7 @@
 ---
 Description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
 title: USB-IF Certification Tests
-ms.date: 10/220/2019
+ms.date: 10/22/2019
 ms.localizationpriority: medium
 ---
 
@@ -28,7 +28,7 @@ A non-compliant USB device can cause a poor user experience, difficult public re
 
 ## Windows HLK requirements for USB-IF tests
 
-- Devices (**Device.Connectivity.UsbDevices.UsbifCertification)**
+- Devices (**Device.Connectivity.UsbDevices.UsbifCertification)**:
 
     We strongly recommend USB-IF certification; however, the Windows HLK requirement **Device.Connectivity.UsbDevices.UsbifCertification** no longer requires USB-IF certification for USB devices. The requirement states that the device can be either USB-IF certified, or that a subset of the USB-IF’s certification tests can be run on the device.
 
@@ -71,9 +71,9 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
 - **USB-IF self-test**
 
-  Download the USB Command Verifier test tools and the USB interoperability test documents and run the required tests from the [USB-IF](https://www.usb.org/about). Then submit the device for Windows Certification qualification.
+  Download the USB Command Verifier test tools and the USB interoperability test documents and run the required tests from the [USB-IF](https://usb.org/usb32tools). Then submit the device for Windows Certification qualification.
 
-  **Note**  USB host controllers and hubs are not eligible for the USB-IF self-testing option and must obtain full USB-IF certification.
+ >**Note**: USB host controllers and hubs are not eligible for the USB-IF self-testing option and must obtain full USB-IF certification.
 
   If you decide to use the USB-IF self-test option to obtain Windows Certification, you must at minimum perform the following USB-IF tests:
 
@@ -90,11 +90,11 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
   | USB version | USB-IF tests |
   | --- | --- |
-  | USB 2.0 | Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 2.0 devices] in the USB 3.0 Command Verifier test tool (USB30CV). <br><br> Run the interoperability tests as described in the EHCI portion of the Interoperability section of the <a href="http://compliance.usb.org/resources/GoldSuite%20Test%20Procedure.pdf">GoldSuite Test Procedure document</a>. Run these tests twice: one with the device attached behind an EHCI host controller, and then with the device attached behind an xHCI host controller. |
-  | USB 3.0 | Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 3.0 devices] in the USB 3.0 Command Verifier test tool (USB30CV). <br><br> Run the interoperability tests as described in the <a href="https://go.microsoft.com/fwlink/p/?LinkId=623335" data-raw-source="[XHCI Interoperability Testing](https://go.microsoft.com/fwlink/p/?LinkId=623335)">XHCI Interoperability Testing</a> document. Run these tests two times: one time with the device attached behind an EHCI host controller, and one time with the device attached behind an xHCI host controller. |
+  | USB 2.0 | Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 2.0 devices] in the USB 3.0 Command Verifier test tool (USB3CV). <br><br> Run the interoperability tests as described in the EHCI portion of the Interoperability section of the [EHCI Test Procedures](http://compliance.usb.org/resources/GoldSuite%20Test%20Procedure.pdf). Run these tests twice: one with the device attached behind an EHCI host controller, and then with the device attached behind an xHCI host controller. |
+  | USB 3.0 | Attach the device behind an xHCI host controller and run the Chapter 9 Tests [USB 3.0 devices] in the USB 3.0 Command Verifier test tool (USB3CV). <br><br> Run the interoperability tests as described in the [xHCI Interoperability Test Procedures](https://www.usb.org/document-library/xhci-interoperability-test-procedures-peripherals-hubs-and-hosts-version-096) document. Run these tests two times: one time with the device attached behind an EHCI host controller, and one time with the device attached behind an xHCI host controller. |
   
   3. If the tests are passing, enter the string "SELFTEST" as the Test ID (TID) input to the USB-IF Certification Validation Test in the HLK.
 
 ## Related topics
 
-[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)  
+[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)
