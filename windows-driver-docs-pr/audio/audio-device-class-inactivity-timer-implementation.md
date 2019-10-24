@@ -60,7 +60,7 @@ Vendors can override the default values of the following power-idle parameters:
 
 The three power-idle registry keys exist only if the device-installation INF file creates them. Before configuring the power-idle timer, PortCls attempts to retrieve the driver-specific power-idle parameters from the registry. PortCls uses the default values in place of any power-idle parameters it does not find in the registry. As explained previously, the default power-idle parameter values disable the idle timer.
 
-For more information about specifying the *ConservationIdleTime*, *PerformanceIdleTime*, and *IdlePowerState* parameters, see the definitions of the last three call parameters in [**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-poregisterdeviceforidledetection).
+For more information about specifying the *ConservationIdleTime*, *PerformanceIdleTime*, and *IdlePowerState* parameters, see the definitions of the last three call parameters in [**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection).
 
 ### <span id="example"></span><span id="EXAMPLE"></span> Example
 

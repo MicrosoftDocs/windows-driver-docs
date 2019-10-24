@@ -23,9 +23,9 @@ The Native 802.11 IHV Extensions DLL can request the display of a custom user in
 
 -   Notify the end user with the results of the authentication to the WLAN network.
 
-To launch a custom UI or display a notification, the Native 802.11 IHV Extensions DLL calls [**Dot11ExtSendUIRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11ext_send_ui_request) and passes a pointer to a [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure through the *pIhvUIRequest* parameter of this function.
+To launch a custom UI or display a notification, the Native 802.11 IHV Extensions DLL calls [**Dot11ExtSendUIRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_ui_request) and passes a pointer to a [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure through the *pIhvUIRequest* parameter of this function.
 
-Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure, the Native 802.11 IHV Extensions DLL specifies the custom UI through the following data:
+Through the [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure, the Native 802.11 IHV Extensions DLL specifies the custom UI through the following data:
 
 -   The user session identifier (ID), which is used to identify a specific user context.
 

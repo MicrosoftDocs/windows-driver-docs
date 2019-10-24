@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [**IWDFUsbTargetDevice::SetPowerPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfusb/nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy)
--   [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings)
--   [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings)
+-   [**IWDFUsbTargetDevice::SetPowerPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy)
+-   [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings)
+-   [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings)
 
 This topic describes how UMDF function drivers support USB selective suspend.
 
@@ -84,7 +84,7 @@ hr = __super::Initialize(WdfIoQueueDispatchParallel,
                          );
 ```
 
-**CMyQueue::Initialize** then calls [**IWDFDevice::CreateIoQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-createioqueue) to create the queue as follows:
+**CMyQueue::Initialize** then calls [**IWDFDevice::CreateIoQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-createioqueue) to create the queue as follows:
 
 ```cpp
 hr = m_FxDevice->CreateIoQueue(
@@ -104,12 +104,12 @@ This code sequence results in a default queue that dispatches requests in parall
 
 To support selective suspend, a UMDF USB driver that is the PPO for its device stack must do the following:
 
-1.  Claim power policy ownership for the device stack, typically in the [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method on its driver callback object, as described earlier.
-2.  Enable selective suspend by calling the [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings) method on the framework device object.
+1.  Claim power policy ownership for the device stack, typically in the [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method on its driver callback object, as described earlier.
+2.  Enable selective suspend by calling the [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings) method on the framework device object.
 
 **To enable USB selective suspend from a PPO**
 
--   Call [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings), typically from the **OnPrepareHardware** method on the device callback object. Set the parameters to AssignS0IdleSettings as follows:
+-   Call [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings), typically from the **OnPrepareHardware** method on the device callback object. Set the parameters to AssignS0IdleSettings as follows:
     -   *IdleCaps* to **IdleUsbSelectiveSuspend**.
     -   *DxState* to the device sleep state to which the framework transitions the idle device. For USB selective suspend, specify **PowerDeviceMaximum**, which indicates that the framework should use the value that the bus driver specified.
     -   *IdleTimeout* to the number of milliseconds that the device must be idle before the framework transitions it to *DxState*.
@@ -165,7 +165,7 @@ HKR,,"DeviceIdleEnabled",0x00010001,1
 
 A UMDF USB driver can enable USB selective suspend either at runtime or during installation in the INF.
 
--   To enable support at runtime, the function driver calls [**IWDFUsbTargetDevice::SetPowerPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfusb/nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy) and sets the PolicyType parameter to AUTO\_SUSPEND and the Value parameter to TRUE or 1. The following example shows how the Fx2\_Driver sample enables selective suspend in the DeviceNonPpo.cpp file:
+-   To enable support at runtime, the function driver calls [**IWDFUsbTargetDevice::SetPowerPolicy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy) and sets the PolicyType parameter to AUTO\_SUSPEND and the Value parameter to TRUE or 1. The following example shows how the Fx2\_Driver sample enables selective suspend in the DeviceNonPpo.cpp file:
     ```cpp
     BOOL AutoSuspend = TRUE;
     hr = m_pIUsbTargetDevice->SetPowerPolicy( AUTO_SUSPEND,
@@ -218,7 +218,7 @@ A USB non-PPO driver can use the system wake support that the WinUSB.sys driver 
 
 **To support system wake in a UMDF USB driver that is the PPO**
 
-Call the [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings) method on the framework’s device object with the following parameters:
+Call the [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings) method on the framework’s device object with the following parameters:
 
 -   *DxState* to the power state to which the device transitions when the system enters a wakeable Sx state. For USB devices, specify **PowerDeviceMaximum** to use the value that the bus driver specified.
 -   *UserControlOfWakeSettings* to **WakeAllowUserControl** if your driver allows users to manage the wake settings or otherwise to **WakeDoNotAllowUserControl.**

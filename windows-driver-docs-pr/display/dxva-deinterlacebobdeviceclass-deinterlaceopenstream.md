@@ -46,7 +46,7 @@ After a deinterlace mode GUID is found using the [**DeinterlaceQueryAvailableMod
 
 For more information about how the driver performs deinterlace or frame-rate-conversion operations using the information supplied by the *lpVideoDescription* parameter, see [Video Content for Deinterlace and Frame-Rate Conversion](https://docs.microsoft.com/windows-hardware/drivers/display/video-content-for-deinterlace-and-frame-rate-conversion).
 
-The sample *DeinterlaceOpenStream* function maps directly to the **CreateMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure, where the GUID is the deinterlace mode requested. The **lpData** member of the [**DD\_CREATEMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_createmocompdata) structure points to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc) structure.
+The sample *DeinterlaceOpenStream* function maps directly to the **CreateMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure, where the GUID is the deinterlace mode requested. The **lpData** member of the [**DD\_CREATEMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_createmocompdata) structure points to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure.
 
 ## <span id="see_also"></span>See also
 
@@ -57,7 +57,7 @@ The sample *DeinterlaceOpenStream* function maps directly to the **CreateMoComp*
 
 [**DeinterlaceQueryAvailableModes**](dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes.md)
 
-[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc)
+[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
 
  
 

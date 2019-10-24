@@ -18,9 +18,9 @@ NDIS uses the D3 on disconnect feature under these conditions:
 
 -   The network adapter hardware must be able to generate a wake event on media connect.
 
--   The miniport driver must report the wake event capability of the network adapter in the **MinLinkChangeWakeUp** member of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
+-   The miniport driver must report the wake event capability of the network adapter in the **MinLinkChangeWakeUp** member of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
 
--   The value of **MinLinkChangeWakeUp** must correspond to the value of the **DeviceWake** member of the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure that is reported by the [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) IRP.
+-   The value of **MinLinkChangeWakeUp** must correspond to the value of the **DeviceWake** member of the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure that is reported by the [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) IRP.
 
 -   The miniport driver must register as an NDIS 6.20 driver or later version.
 
@@ -36,7 +36,7 @@ A miniport driver reports D3 on disconnect capabilities during initialization. F
 
 The **\*DeviceSleepOnDisconnect** standard INF file keyword specifies whether the device has enabled or disabled support for D3 on disconnect. For more information about this INF keyword, see [Standardized INF Keywords for Power Management](standardized-inf-keywords-for-power-management.md).
 
-During initialization, a miniport drivers that supports D3 on disconnect must report the lowest power level where it can support the ability to notify the operating system of media connect event. The miniport driver reports the power level in the **MinLinkChangeWakeUp** member of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure. For example, the miniport driver can report **NdisDeviceStateD3**.
+During initialization, a miniport drivers that supports D3 on disconnect must report the lowest power level where it can support the ability to notify the operating system of media connect event. The miniport driver reports the power level in the **MinLinkChangeWakeUp** member of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure. For example, the miniport driver can report **NdisDeviceStateD3**.
 
 The following figure illustrates the sequence of events to set a network adapter to a low-power state after a media disconnect event.
 
@@ -46,7 +46,7 @@ When the adapter detects a media disconnect, the following sequence occurs:
 
 1.  The network adapter hardware detects a media disconnect event and passes the information to the miniport driver.
 
-2.  The miniport driver notifies NDIS of a media disconnect event using the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure. The MediaConnectStateDisconnected value is set in the **MediaConnectState** member of the **NDIS\_LINK\_STATE** structure.
+2.  The miniport driver notifies NDIS of a media disconnect event using the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure. The MediaConnectStateDisconnected value is set in the **MediaConnectState** member of the **NDIS\_LINK\_STATE** structure.
 
 3.  NDIS uses [OID\_PM\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-parameters) to disable Wake-on-LAN and to enable wake on media connect (NDIS\_PM\_WAKE\_ON\_LINK\_CHANGE\_ENABLED is set in the **WakeUpFlags** member).
 
@@ -70,7 +70,7 @@ When the media is reconnected the following sequence occurs:
 
 4.  NDIS notifies the miniport driver that the network adapter is in the full power (D0) state with the OID set request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power).
 
-5.  The network adapter notifies NDIS of a media connect event with the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication. The **MediaConnectStateConnected** value is set in the **MediaConnectState** member of the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_link_state) structure.
+5.  The network adapter notifies NDIS of a media connect event with the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication. The **MediaConnectStateConnected** value is set in the **MediaConnectState** member of the [**NDIS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure.
 
 Starting with NDIS 6.30, if the miniport driver supports [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pm-wake-reason) status indications, it must issue this status notification if the network adapter wakes the system. The driver issues this status notification while it is handling the OID set request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power) for the transition to a full-power (D0) state.
 

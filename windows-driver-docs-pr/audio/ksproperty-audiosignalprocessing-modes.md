@@ -44,8 +44,8 @@ The **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** property returns the list of au
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin factory (via Filter instance)</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin" data-raw-source="[KSP_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)">KSP_PIN</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmultiple_item" data-raw-source="[KSMULTIPLE_ITEM](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmultiple_item)">KSMULTIPLE_ITEM</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[KSP_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)">KSP_PIN</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[KSMULTIPLE_ITEM](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)">KSMULTIPLE_ITEM</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +74,7 @@ Remarks
 
 The basic support handler for **KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES** should be handed a **KSP\_PIN** structure, and should advertise support only on non-loopback streaming pins. Audio drivers should support signal processing modes only on host and offload pins. For loopback or bridge pins the audio driver should still support the property, but return a **KSMULTIPLE\_ITEM** structure with its *Count* parameter set to zero (0).
 
-Any audio miniport driver that is developed to work with the Microsoft audio port Class driver (Portcls) can implement the [**IMiniportAudioSignalProcessing::GetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes) method.
+Any audio miniport driver that is developed to work with the Microsoft audio port Class driver (Portcls) can implement the [**IMiniportAudioSignalProcessing::GetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes) method.
 
 Requirements
 ------------
@@ -99,11 +99,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**IMiniportAudioSignalProcessing::GetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes)
+[**IMiniportAudioSignalProcessing::GetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportaudiosignalprocessing-getmodes)
 
-[KSMULTIPLE\_ITEM](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmultiple_item)
+[KSMULTIPLE\_ITEM](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
-[KSP\_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)
+[KSP\_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 
  
 

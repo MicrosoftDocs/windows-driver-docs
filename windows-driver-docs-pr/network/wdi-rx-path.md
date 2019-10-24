@@ -36,9 +36,9 @@ The RxEngine sends and receives data-synchronous messages to and from the target
 | RX function                             | Description                                                                                                                                                                                                                                              |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Host-to-Target message construction     | Construct host-to-target data path-related messages.                                                                                                                                                                                                     |
-| Target-to-Host message parsing          | Parse and process target-to-host data-synchronous messages such as [*NdisWdiRxInorderDataIndication*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-ndis_wdi_rx_inorder_data_ind).                                                                                                          |
+| Target-to-Host message parsing          | Parse and process target-to-host data-synchronous messages such as [*NdisWdiRxInorderDataIndication*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_rx_inorder_data_ind).                                                                                                          |
 | Interpretation of target RX descriptors | Provide an interface (functions) for querying RX frame attributes from the target-specific descriptor.                                                                                                                                                   |
-| RX FIFO management                      | Provide a target-accessible FIFO for posting empty RX buffers for the target to fill. Remove buffers from the FIFO during [*NdisWdiRxInorderDataIndication*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-ndis_wdi_rx_inorder_data_ind) processing, and provide replacement empty buffers. |
+| RX FIFO management                      | Provide a target-accessible FIFO for posting empty RX buffers for the target to fill. Remove buffers from the FIFO during [*NdisWdiRxInorderDataIndication*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_rx_inorder_data_ind) processing, and provide replacement empty buffers. |
 | RX buffer pool management               | Maintain a pool of buffers for DMA transfer of receive frames.                                                                                                                                                                                           |
 | MPDU discard                            | Discard MPDUs with errors. The target indicates the receive frames marked for discard - for example, due to FCS errors or ARQ duplication errors. This is only done if it is not implemented by the target.                                              |
 | MPDU reorder                            | Store MPDUs in order within an RX reordering array until the missing preceding MPDUs arrive. This is only done if it is not implemented by the target.                                                                                                   |
@@ -50,14 +50,14 @@ The RxEngine sends and receives data-synchronous messages to and from the target
 ## RX path requests and indications
 
 
-For RX path request and indication function reference, see [WDI RX Path Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+For RX path request and indication function reference, see [WDI RX Path Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
 ## Related topics
 
 
-[*NdisWdiRxInorderDataIndication*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/nc-dot11wdi-ndis_wdi_rx_inorder_data_ind)
+[*NdisWdiRxInorderDataIndication*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_rx_inorder_data_ind)
 
-[WDI RX Path Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[WDI RX Path Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
  
 

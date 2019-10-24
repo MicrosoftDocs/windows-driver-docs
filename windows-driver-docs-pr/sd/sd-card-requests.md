@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 # SD Card Requests
 
 
-After a Secure Digital (SD) card device driver has opened and initialized an interface to the SD bus driver, it can submit requests. There are two ways to submit requests: synchronously by means of the [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/nf-ntddsd-sdbussubmitrequest) routine, and asynchronously by means of the [**SdBusSubmitRequestAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/nf-ntddsd-sdbussubmitrequestasync) routine. Both of these routines are exported by the SD bus library (*sdbus.lib*).
+After a Secure Digital (SD) card device driver has opened and initialized an interface to the SD bus driver, it can submit requests. There are two ways to submit requests: synchronously by means of the [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbussubmitrequest) routine, and asynchronously by means of the [**SdBusSubmitRequestAsync**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbussubmitrequestasync) routine. Both of these routines are exported by the SD bus library (*sdbus.lib*).
 
 The synchronous request routine takes two parameters: an interface context and a request packet.
 
 <a href="" id="interface-context"></a>**Interface context**  
-The device driver retrieves the interface context from the **Context** member of the [**SDBUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537923(v=vs.85)) structure after opening an SD interface with [**SdBusOpenInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/nf-ntddsd-sdbusopeninterface). The driver must pass this context information in whenever it calls a method in the interface.
+The device driver retrieves the interface context from the **Context** member of the [**SDBUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537923(v=vs.85)) structure after opening an SD interface with [**SdBusOpenInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbusopeninterface). The driver must pass this context information in whenever it calls a method in the interface.
 
 <a href="" id="request-packet"></a>**Request packet**  
 The device driver must allocate and initialize an [**SDBUS\_REQUEST\_PACKET**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537931(v=vs.85)) structure. This structure specifies the request function and other characteristics of the request.
@@ -41,14 +41,14 @@ This parameter is the same as the parameter by the same name used with the synch
 This parameter holds an IRP that the device driver has allocated, or an IRP that the driver received from the driver located above it in the driver stack. The IRP is used as a carrier for the request.
 
 <a href="" id="completion-routine"></a>**Completion routine**  
-This parameter holds an [**IoCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine for the IRP supplied in the IRP parameter.
+This parameter holds an [**IoCompletion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine for the IRP supplied in the IRP parameter.
 
 <a href="" id="user-context"></a>**User context**  
 This parameter holds a pointer to user context data that the system passes to the completion routine specified in the completion routine parameter.
 
 The device driver must be running at IRQL &lt;= DISPATCH\_LEVEL when it calls the **SdBusSubmitRequestAsync** routine. **SdBusSubmitRequest** is a wrapper that allocates its own IRP and calls **SdBusSubmitRequestAsync**. It is provided for convenience of the driver writer.
 
-The following sections provide code examples that illustrate how a device driver submits each of the two principal categories of SD requests: For a description the different requests, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/ne-ntddsd-sd_request_function).
+The following sections provide code examples that illustrate how a device driver submits each of the two principal categories of SD requests: For a description the different requests, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/ne-ntddsd-sd_request_function).
 
 ## Secure Digital (SD) Property Requests
 
@@ -78,13 +78,13 @@ The following code example illustrates how a driver for a function on a multifun
  }
 ```
 
-In this code example, a device driver initializes an SD bus request packet, [**SDBUS\_REQUEST\_PACKET**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537931(v=vs.85)), and passes it to [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/nf-ntddsd-sdbussubmitrequest). The fully initialized request packet has the following characteristics:
+In this code example, a device driver initializes an SD bus request packet, [**SDBUS\_REQUEST\_PACKET**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537931(v=vs.85)), and passes it to [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbussubmitrequest). The fully initialized request packet has the following characteristics:
 
 <a href="" id="type-of-the-request"></a>**Type of the request**  
-The code example specifies an SDRF\_GET\_PROPERTY request in the **RequestFunction** member of the request packet, which instructs the bus driver to retrieve a property from the card. For a description of the SDRF\_GET\_PROPERTY request, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/ne-ntddsd-sd_request_function).
+The code example specifies an SDRF\_GET\_PROPERTY request in the **RequestFunction** member of the request packet, which instructs the bus driver to retrieve a property from the card. For a description of the SDRF\_GET\_PROPERTY request, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/ne-ntddsd-sd_request_function).
 
 <a href="" id="property-to-retrieve"></a>**Property to retrieve**  
-The code example specifies the SDP\_FUNCTION\_NUMBER property in the **Parameters.GetSetProperty.Property** member of the request packet, which instructs the bus driver to retrieve the contents of the function number property. For a description of the SDP\_FUNCTION\_NUMBER property, see [**SDBUS\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddsd/ne-ntddsd-sdbus_property).
+The code example specifies the SDP\_FUNCTION\_NUMBER property in the **Parameters.GetSetProperty.Property** member of the request packet, which instructs the bus driver to retrieve the contents of the function number property. For a description of the SDP\_FUNCTION\_NUMBER property, see [**SDBUS\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/ne-ntddsd-sdbus_property).
 
 <a href="" id="property-contents-and-length"></a>**Property Contents and Length**  
 The code example puts a pointer to a buffer in the device extension in the

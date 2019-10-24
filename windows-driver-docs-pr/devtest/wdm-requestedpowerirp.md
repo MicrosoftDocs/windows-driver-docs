@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 # RequestedPowerIrp rule (wdm)
 
 
-The **RequestedPowerIrp** rule specifies that driver calls [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) with the `*Irp` pointer variable set to **NULL**.
+The **RequestedPowerIrp** rule specifies that driver calls [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) with the `*Irp` pointer variable set to **NULL**.
 
-Because the pointer returned by [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) is not reliable, drivers should not retrieve or use this value.
+Because the pointer returned by [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) is not reliable, drivers should not retrieve or use this value.
 
 |              |     |
 |--------------|-----|
@@ -75,7 +75,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp)
+[**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)
  
 
  

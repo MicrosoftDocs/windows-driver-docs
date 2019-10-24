@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The following system-supplied I/O Manager functions and macros can be called by kernel-mode file systems and file system filter (minifilter or legacy filter) drivers. They cannot be used by device drivers. They are listed in alphabetic order.
 
-In addition to the routines listed here, file systems and filter drivers can also call any of the Io*Xxx*** routines described in the [Windows Kernel Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_kernel/) section that are declared in *ntifs.h*.
+In addition to the routines listed here, file systems and filter drivers can also call any of the Io*Xxx*** routines described in the [Windows Kernel Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_kernel/) section that are declared in *ntifs.h*.
 
 **Header File:** *ntifs.h*
 

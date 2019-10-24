@@ -21,11 +21,11 @@ Otherwise, a miniport driver's *HwScsiInterrupt* routine is generally responsibl
 
 -   Dismisses the interrupt on the HBA (required)
 
--   Notifies the port driver (by calling [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification) or [**ScsiPortCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportcompleterequest)) if the HBA indicates that certain SCSI error conditions occurred during the operation and possibly logs the error.
+-   Notifies the port driver (by calling [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) or [**ScsiPortCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportcompleterequest)) if the HBA indicates that certain SCSI error conditions occurred during the operation and possibly logs the error.
 
     For more information about logging errors, see [Error Handling in SCSI Miniport Drivers](error-handling-in-scsi-miniport-drivers.md).
 
--   Completes the requested operation that caused the interrupt, such as calling [**ScsiPortIoMapTransfer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportiomaptransfer) (see [SCSI Miniport Driver's HwScsiDmaStarted Routine](scsi-miniport-driver-s-hwscsidmastarted-routine.md)) if the interrupt came in from a previously selected target TID and LU, indicating a readiness to transfer data.
+-   Completes the requested operation that caused the interrupt, such as calling [**ScsiPortIoMapTransfer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportiomaptransfer) (see [SCSI Miniport Driver's HwScsiDmaStarted Routine](scsi-miniport-driver-s-hwscsidmastarted-routine.md)) if the interrupt came in from a previously selected target TID and LU, indicating a readiness to transfer data.
 
 When the *HwScsiInterrupt* routine (or an internal miniport driver routine) completes an SRB, it calls **ScsiPortNotification** twice:
 
@@ -33,7 +33,7 @@ When the *HwScsiInterrupt* routine (or an internal miniport driver routine) comp
 
 2.  Next, with the *NotificationType***NextRequest**, or with **NextLuRequest** if the HBA supports tagged queuing or multiple requests per logical unit.
 
-For better overall system performance, a miniport driver's *HwScsiInterrupt* routine should do only the minimum necessary to process I/O requests. That is, the miniport driver should be designed to return control from the *HwScsiInterrupt* routine as quickly as possible. An *HwScsiInterrupt* routine must not call [**ScsiPortStallExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportstallexecution) with large intervals, thereby monopolizing a processor and preventing other drivers from servicing their device interrupts.
+For better overall system performance, a miniport driver's *HwScsiInterrupt* routine should do only the minimum necessary to process I/O requests. That is, the miniport driver should be designed to return control from the *HwScsiInterrupt* routine as quickly as possible. An *HwScsiInterrupt* routine must not call [**ScsiPortStallExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportstallexecution) with large intervals, thereby monopolizing a processor and preventing other drivers from servicing their device interrupts.
 
  
 

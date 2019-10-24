@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="audio_data_formats_and_data_ranges"></span><span id="AUDIO_DATA_FORMATS_AND_DATA_RANGES"></span>
 
 
-Audio drivers use the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) and [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structures to specify audio stream formats:
+Audio drivers use the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) and [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structures to specify audio stream formats:
 
 -   The digital format of a KS data stream is specified by a KS format descriptor that begins with a KSDATAFORMAT structure.
 

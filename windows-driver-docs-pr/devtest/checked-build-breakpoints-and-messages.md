@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_checked_build_breakpoints_and_messages_tools"></span><span id="DDK_CHECKED_BUILD_BREAKPOINTS_AND_MESSAGES_TOOLS"></span>
 
 
-This topic contains a list and explanation of some of the common breakpoints and [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgprint) messages that a driver might encounter in the checked build.
+This topic contains a list and explanation of some of the common breakpoints and [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) messages that a driver might encounter in the checked build.
 
 <span id="____DPC_routine___1_sec_---_This_is_not_a_break_in_KeUpdateSystemTime"></span><span id="____dpc_routine___1_sec_---_this_is_not_a_break_in_keupdatesystemtime"></span><span id="____DPC_ROUTINE___1_SEC_---_THIS_IS_NOT_A_BREAK_IN_KEUPDATESYSTEMTIME"></span>**\*\*\* DPC routine &gt; 1 sec --- This is not a break in KeUpdateSystemTime**  
 This message appears just before a breakpoint is issued. It indicates that the active driver spent more than one second in a DPC routine.

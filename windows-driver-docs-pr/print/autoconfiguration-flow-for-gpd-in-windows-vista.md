@@ -16,7 +16,7 @@ Autoconfiguration follows the following sequence:
 
 1.  Port Monitor sends to the spooler a notification that contains any values that formerly were not in the cache or that changed.
 
-2.  The spooler responds to the notification from the port monitor by calling [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent).
+2.  The spooler responds to the notification from the port monitor by calling [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent).
 
 3.  Printer\_Event\_Configuration is passed to the driver that contains any and all new values. The driver is notified that the value of an attribute has changed, and the registry is also updated.
 

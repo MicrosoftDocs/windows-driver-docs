@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # StorPortBuildIo rule (storport)
 
 
-This rule verifies that if the StorPort miniport's **StorPortBuildIo** routine returns **FALSE**, the SRB in question is not passed to **StartIo**. (In such cases, the miniport driver must complete the SRB by calling [**StorPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportnotification) with a notification type of **RequestComplete** from **StorPortBuildIo** or someplace else).
+This rule verifies that if the StorPort miniport's **StorPortBuildIo** routine returns **FALSE**, the SRB in question is not passed to **StartIo**. (In such cases, the miniport driver must complete the SRB by calling [**StorPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification) with a notification type of **RequestComplete** from **StorPortBuildIo** or someplace else).
 
 > [!NOTE]
 > This rule is testing StorPort's correct operation, not the miniport's.

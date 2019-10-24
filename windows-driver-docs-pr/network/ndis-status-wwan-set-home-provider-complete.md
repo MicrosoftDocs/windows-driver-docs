@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 Miniport drivers use the NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE notification to inform the MB Service about the completion of [OID\_WWAN\_HOME\_PROVIDER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-home-provider) set requests.
 
-This notification uses the [**NDIS\_WWAN\_SET\_HOME\_PROVIDER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider) structure.
+This notification uses the [**NDIS\_WWAN\_SET\_HOME\_PROVIDER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider) structure.
 
 Requirements
 ------------

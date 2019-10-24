@@ -60,7 +60,7 @@ STATUS_NOT_A_DIRECTORY
 The device is not a directory.
 
 ### Operation
-A parallel device is an exclusive device. If a parallel device is open, the system-supplied bus driver for parallel ports fails any subsequent [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) requests for the device until the device has been closed. A client must open a parallel device before it sends other I/O requests to the device or calls the [parallel device callback routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+A parallel device is an exclusive device. If a parallel device is open, the system-supplied bus driver for parallel ports fails any subsequent [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) requests for the device until the device has been closed. A client must open a parallel device before it sends other I/O requests to the device or calls the [parallel device callback routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 For more information, see [Opening and Using a Parallel Device](https://docs.microsoft.com/windows-hardware/drivers/parports/opening-and-using-a-parallel-device).
 
@@ -74,7 +74,7 @@ A client uses device control requests for the following types of operations:
 * Obtain information about a device
 * Set the operating mode of the device
 
-See [Device Control Requests for Parallel Devices](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+See [Device Control Requests for Parallel Devices](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 ### Input Parameters
 Request-specific.
@@ -130,7 +130,7 @@ A client uses internal device control requests for the following types of operat
 * Obtain connection information about a parallel port
 * Lock and unlock a parallel port for exclusive use by the device
 
-See Internal [Device Control Requests for Parallel Devices](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+See Internal [Device Control Requests for Parallel Devices](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 ### Input Parameters
 Request-specific.
@@ -189,13 +189,13 @@ The **Parameters.QueryFile.FileInformationClass** member is set to **FileStandar
 
 **FileStandardInformation** request:
  
-The **AssociatedIrp.SystemBuffer** member points to a [FILE_STANDARD_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_standard_information) structure that the client allocates for output of file information.
+The **AssociatedIrp.SystemBuffer** member points to a [FILE_STANDARD_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_standard_information) structure that the client allocates for output of file information.
 
 The **Parameters.QueryFile.Length** member is set to the size, in bytes, of a **FILE_STANDARD_INFORMATION** structure.
 
 **FilePositionInformation** request: 
 
-**AssociatedIrp.SystemBuffer** points to a [FILE_POSITION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_position_information) structure that the client allocates for output of file information.
+**AssociatedIrp.SystemBuffer** points to a [FILE_POSITION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_position_information) structure that the client allocates for output of file information.
 
 The **Parameters.SetFile.Length** member is set to the size, in bytes, of a **FILE_POSITION_INFORMATION** structure.
 
@@ -288,7 +288,7 @@ STATUS_DEVICE_REMOVED
 The device has been removed.
 
 ### Operation
-The system-supplied bus driver for parallel ports uses the read protocol set for the parallel device. The default read protocol is NIBBLE_MODE. A client can negotiate a read protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_ieee1284_negotiate) request.
+The system-supplied bus driver for parallel ports uses the read protocol set for the parallel device. The default read protocol is NIBBLE_MODE. A client can negotiate a read protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_ieee1284_negotiate) request.
 
 The parallel port bus driver sets a cancel routine for the read request, marks the read request as pending, and queues the read request on a work queue. The read request is held in the work queue in a state that can be canceled until the read request is either completed or canceled by the client.
 
@@ -339,7 +339,7 @@ STATUS_DEVICE_REMOVED
 The device has been removed.
 
 ### Operation
-The system-supplied bus driver for parallel ports transfers data by using the write protocol that is set for the parallel device. The default write protocol is CENTRONICS. A client can negotiate a write protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_ieee1284_negotiate) request. 
+The system-supplied bus driver for parallel ports transfers data by using the write protocol that is set for the parallel device. The default write protocol is CENTRONICS. A client can negotiate a write protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_ieee1284_negotiate) request. 
 
 The parallel port bus driver sets a cancel routine for the write request, marks the write request as pending, and queues the write request on a work queue. The write request is held in a state that can be canceled until the request is either completed or canceled.
 
@@ -347,15 +347,15 @@ For more information, see [Reading and Writing a Parallel Device](https://docs.m
 
 ## Related topics
 
-[Device Control Requests for Parallel Devices](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+[Device Control Requests for Parallel Devices](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
-[FILE_POSITION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_position_information) [FILE_STANDARD_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_standard_information)
+[FILE_POSITION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_position_information) [FILE_STANDARD_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_standard_information)
 
 [Opening and Using a Parallel Device](https://docs.microsoft.com/windows-hardware/drivers/parports/opening-and-using-a-parallel-device)
 
 [Operating a Parallel Device Attached to a Parallel Port](https://docs.microsoft.com/windows-hardware/drivers/parports/operating-a-parallel-device-attached-to-a-parallel-port.md)
 
-[Parallel device callback routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[Parallel device callback routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 [Reading and Writing a Parallel Device](https://docs.microsoft.com/windows-hardware/drivers/parports/reading-and-writing-a-parallel-device)
 

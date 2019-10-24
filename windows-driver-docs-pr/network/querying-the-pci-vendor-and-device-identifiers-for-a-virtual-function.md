@@ -20,7 +20,7 @@ The guest operating system, which runs in a Hyper-V child partition, uses the Ve
 
 -   A VendorID and DeviceID that differ from the identifiers of the physical network adapter. This allows a driver to be loaded in the guest operating system that is more appropriate for its use. For example, the PF miniport driver may return a VendorID and DeviceID for a VF network adapter so that a driver is loaded that disables certain feature sets, such as power management or protocol task offloads.
 
-Before it issues this OID method request, the overlying driver must initialize an [**NDIS\_SRIOV\_VF\_VENDOR\_DEVICE\_ID\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_sriov_vf_vendor_device_id_info) structure. The driver must set the **VFId** member to the identifier of the VF from which the information is to be read.
+Before it issues this OID method request, the overlying driver must initialize an [**NDIS\_SRIOV\_VF\_VENDOR\_DEVICE\_ID\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_sriov_vf_vendor_device_id_info) structure. The driver must set the **VFId** member to the identifier of the VF from which the information is to be read.
 
 When it handles this OID request, the PF miniport driver must verify that the specified VF has resources that have been previously allocated. The PF miniport driver allocates resources for a VF during an OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-allocate-vf). If resources for the specified VF have not been allocated, the driver must fail the OID request.
 

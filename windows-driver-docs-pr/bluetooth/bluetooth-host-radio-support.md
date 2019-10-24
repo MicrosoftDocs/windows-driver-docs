@@ -12,7 +12,7 @@ This topic provides answers to typical questions about Bluetooth Radio support.
 
 ## Bluetooth host controllers supported in Windows
 
-With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_bltooth/) for more information.
+With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_bltooth/) for more information.
 
 ## Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)
 

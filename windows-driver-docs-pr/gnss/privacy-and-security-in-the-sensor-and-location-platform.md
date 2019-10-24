@@ -24,7 +24,7 @@ The sensor and location platform in Windows provides the following features to h
 
 ## Keeping User Data Private
 
-When you write a sensor driver, you must consider user privacy. You must make sure not to bypass the privacy controls that are enforced by the sensor class extension. Because certain properties can be retrieved before the user has granted permission, you must make sure that your driver does not reveal personally identifiable information through these properties. For a list of properties that are available before the user has granted permission, see [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties).
+When you write a sensor driver, you must consider user privacy. You must make sure not to bypass the privacy controls that are enforced by the sensor class extension. Because certain properties can be retrieved before the user has granted permission, you must make sure that your driver does not reveal personally identifiable information through these properties. For a list of properties that are available before the user has granted permission, see [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties).
 
 ## Additional Resources
 

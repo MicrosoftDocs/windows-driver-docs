@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # EvtIoResumeGetParam rule (kmdf)
 
 
-The **EvtIoResumeGetParam** rule specifies that [**WdfRequestGetParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestgetparameters) is not called within the **EvtIoResumeGetParam** callback function.
+The **EvtIoResumeGetParam** rule specifies that [**WdfRequestGetParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetparameters) is not called within the **EvtIoResumeGetParam** callback function.
 
 |              |      |
 |--------------|------|
@@ -51,7 +51,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**WdfRequestGetParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestgetparameters)
+[**WdfRequestGetParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetparameters)
  
 
  

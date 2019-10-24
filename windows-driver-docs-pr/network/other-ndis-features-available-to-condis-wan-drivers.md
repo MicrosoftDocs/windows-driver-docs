@@ -22,7 +22,7 @@ CoNDIS WAN miniport drivers or MCMs can take advantage of the following function
 
 -   Canceling send packets
 
--   Registering a [*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_shutdown) function
+-   Registering a [*MiniportShutdownEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_shutdown) function
 
 -   New miniport driver attributes
 

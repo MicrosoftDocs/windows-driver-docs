@@ -26,7 +26,7 @@ NDIS 6.0 and later miniport drivers should generate the NDIS\_STATUS\_NETWORK\_C
 
  
 
-NDIS supplies one of the following NDIS\_NETWORK\_CHANGE\_TYPE values in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure:
+NDIS supplies one of the following NDIS\_NETWORK\_CHANGE\_TYPE values in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure:
 
 <a href="" id="ndispossiblenetworkchange"></a>**NdisPossibleNetworkChange**  
 The miniport driver detected that there might be a network change. In this case, the overlying protocols must detect the network change, if any, and renegotiate the addresses if necessary.
@@ -39,7 +39,7 @@ The miniport driver detected that there is a network change, so the overlying pr
 <a href="" id="ndisnetworkchangefrommediaconnect"></a>**NdisNetworkChangeFromMediaConnect**  
 An older 802.1X wireless miniport driver that emulates 802.3 generated an [**NDIS\_STATUS\_MEDIA\_CONNECT**](ndis-status-media-connect.md) status indication when it was in a connected state. This value is used in the WMI event notification for [GUID\_NDIS\_STATUS\_NETWORK\_CHANGE](https://docs.microsoft.com/windows-hardware/drivers/network/guid-ndis-status-network-change). **NdisNetworkChangeFromMediaConnect** is not used in the NDIS\_STATUS\_NETWORK\_CHANGE status indication.
 
-The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(NDIS\_NETWORK\_CHANGE\_TYPE).
+The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(NDIS\_NETWORK\_CHANGE\_TYPE).
 
 Requirements
 ------------
@@ -64,7 +64,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
 [**NDIS\_STATUS\_MEDIA\_CONNECT**](ndis-status-media-connect.md)
 

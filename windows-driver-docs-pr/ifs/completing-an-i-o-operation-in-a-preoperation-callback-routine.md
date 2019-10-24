@@ -21,11 +21,11 @@ When a minifilter driver completes an I/O operation, the filter manager does the
 
 -   Does not send the operation to minifilter drivers below the current minifilter driver, to legacy filters, or to the file system.
 
--   Calls the [**postoperation callback routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_post_operation_callback) of the minifilter drivers above the current minifilter driver in the minifilter driver instance stack.
+-   Calls the [**postoperation callback routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_post_operation_callback) of the minifilter drivers above the current minifilter driver in the minifilter driver instance stack.
 
 -   Does not call the current minifilter driver's postoperation callback routine for the operation, if one exists.
 
-A minifilter driver's [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_pre_operation_callback) completes an I/O operation by performing the following steps:
+A minifilter driver's [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) completes an I/O operation by performing the following steps:
 
 1.  Setting the callback data structure's **IoStatus.Status** field to the final NTSTATUS value for the operation.
 
@@ -37,7 +37,7 @@ A minifilter driver can also complete an operation in the work routine for a pre
 
 1.  Setting the callback data structure's **IoStatus.Status** field to the final NTSTATUS value for the operation.
 
-2.  Passing FLT\_PREOP\_COMPLETE in the *CallbackStatus* parameter when the work routine calls [**FltCompletePendedPreOperation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcompletependedpreoperation).
+2.  Passing FLT\_PREOP\_COMPLETE in the *CallbackStatus* parameter when the work routine calls [**FltCompletePendedPreOperation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcompletependedpreoperation).
 
 When completing an I/O operation, a minifilter driver must set the callback data structure's **IoStatus.Status** field to the final NTSTATUS value for the operation, but this NTSTATUS value cannot be STATUS\_PENDING or STATUS\_FLT\_DISALLOW\_FAST\_IO. For a cleanup or close operation, the field must be STATUS\_SUCCESS. These operations cannot be completed with any other NTSTATUS value.
 

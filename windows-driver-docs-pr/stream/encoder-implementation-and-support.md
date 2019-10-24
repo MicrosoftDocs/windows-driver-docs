@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 # Encoder Implementation and Support
 
-In Windows XP Service Pack 1, Microsoft defined three kernel streaming property sets and one enumeration in *ksmedia.h* to support video-only encoder devices. Each property set contains a single property. In other words, each property receives its own property set. If your driver makes *get*-property or *Set*-property calls, then specify the property set's GUID (as defined in *ksmedia.h*) in the **Set** member of the [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) structure and zero in the **Id** member when you set up the call:
+In Windows XP Service Pack 1, Microsoft defined three kernel streaming property sets and one enumeration in *ksmedia.h* to support video-only encoder devices. Each property set contains a single property. In other words, each property receives its own property set. If your driver makes *get*-property or *Set*-property calls, then specify the property set's GUID (as defined in *ksmedia.h*) in the **Set** member of the [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) structure and zero in the **Id** member when you set up the call:
 
 <table>
 <colgroup>
@@ -39,7 +39,7 @@ In Windows XP Service Pack 1, Microsoft defined three kernel streaming property 
 </tr>
 <tr class="even">
 <td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate-mode" data-raw-source="[ENCAPIPARAM_BITRATE_MODE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate-mode)">ENCAPIPARAM_BITRATE_MODE</a></td>
-<td><p>Implement this property set to specify the encoding modes supported by the device. This property set uses the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-videoencoder_bitrate_mode" data-raw-source="[&lt;strong&gt;VIDEOENCODER_BITRATE_MODE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)"><strong>VIDEOENCODER_BITRATE_MODE</strong></a> enumeration to specify the supported modes. See <a href="encoder-code-examples.md" data-raw-source="[Encoder Code Examples](encoder-code-examples.md)">Encoder Code Examples</a> for more details.</p></td>
+<td><p>Implement this property set to specify the encoding modes supported by the device. This property set uses the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode" data-raw-source="[&lt;strong&gt;VIDEOENCODER_BITRATE_MODE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)"><strong>VIDEOENCODER_BITRATE_MODE</strong></a> enumeration to specify the supported modes. See <a href="encoder-code-examples.md" data-raw-source="[Encoder Code Examples](encoder-code-examples.md)">Encoder Code Examples</a> for more details.</p></td>
 </tr>
 <tr class="odd">
 <td><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-peak-bitrate" data-raw-source="[ENCAPIPARAM_PEAK_BITRATE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-peak-bitrate)">ENCAPIPARAM_PEAK_BITRATE</a></td>

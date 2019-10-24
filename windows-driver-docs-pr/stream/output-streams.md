@@ -86,7 +86,7 @@ No format block.</td>
 
  
 
-A frame size of 200 (decimal) in the **SampleSize** member of the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure must be specified. For more information, see [Closed Captioning Streams](closed-captioning-streams.md).
+A frame size of 200 (decimal) in the **SampleSize** member of the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure must be specified. For more information, see [Closed Captioning Streams](closed-captioning-streams.md).
 
  
 

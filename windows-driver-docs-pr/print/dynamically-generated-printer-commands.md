@@ -31,7 +31,7 @@ To place a command string in a GPD file, you need to include a \*Cmd attribute w
 
 To provide code that dynamically generates a command string, you must do the following:
 
--   Provide a rendering plug-in that implements the [**IPrintOemUni::CommandCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-commandcallback) method.
+-   Provide a rendering plug-in that implements the [**IPrintOemUni::CommandCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback) method.
 
 -   Include a \*CallbackID command attribute and, optionally, a \*Params attribute, within the command's \*Command entry in the GPD file.
 

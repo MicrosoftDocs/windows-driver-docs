@@ -18,25 +18,25 @@ Kernel-mode device drivers that comply with the requirements of Kernel-Mode Driv
 
 A driver evaluates control methods by sending one of the following [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests to a device.
 
--   [**IOCTL\_ACPI\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_eval_method)
+-   [**IOCTL\_ACPI\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method)
 
     This request synchronously evaluates a control method that is supported by the device to which the request is sent. To use this IOCTL, a driver for the device supplies input and output method argument buffers, the name of a method, and an event object that waits for the request to complete. The method must be an immediate child object in the ACPI namespace of the device to which the request is sent.
 
--   [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method)
+-   [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method)
 
     This request asynchronously evaluates a control method that is supported by the device to which the request is sent. To use this IOCTL, a driver for the device supplies input and output method argument buffers, the name of a method, and an *IoCompletion* routine that the I/O manager calls after all lower-level drivers have completed the request. The method must be an immediate child object in the ACPI namespace of the device to which the request is sent.
 
--   [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex)
+-   [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex)
 
     This request synchronously evaluates a control method that is supported by the device or a descendant child object of the device to which the request is sent. To use this IOCTL, a driver for the device supplies input and output method argument buffers, the path and name of the control method in the ACPI namespace of the device, and an event object that waits for the request to complete.
 
--   [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method_ex)
+-   [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method_ex)
 
     This request asynchronously evaluates a control method that is supported by the device or a descendant child object of the device to which the request is sent. To use this IOCTL, a driver for the device supplies input and output method argument buffers, the path and name of the control method in the ACPI namespace of the device, and an *IoCompletion* routine that the I/O manager calls after all lower-level drivers have completed the request.
 
-For more information about how to evaluate ACPI control methods synchronously, see [Evaluating ACPI Control Methods Synchronously](evaluating-acpi-control-methods-synchronously.md). For more information about how to evaluate ACPI control methods asynchronously, see [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method) and [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method_ex).
+For more information about how to evaluate ACPI control methods synchronously, see [Evaluating ACPI Control Methods Synchronously](evaluating-acpi-control-methods-synchronously.md). For more information about how to evaluate ACPI control methods asynchronously, see [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method) and [**IOCTL\_ACPI\_ASYNC\_EVAL\_METHOD\_EX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_async_eval_method_ex).
 
-For a driver of a device to evaluate a control method that is not an immediate child object of the device, the driver must supply the path and name of the method in the ACPI namespace of the device. To help obtain the path and name of child objects of a device, Windows supports the [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request, which a driver for a device can use to enumerate the following:
+For a driver of a device to evaluate a control method that is not an immediate child object of the device, the driver must supply the path and name of the method in the ACPI namespace of the device. To help obtain the path and name of child objects of a device, Windows supports the [**IOCTL\_ACPI\_ENUM\_CHILDREN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children) request, which a driver for a device can use to enumerate the following:
 
 -   The device and its immediate child devices.
 

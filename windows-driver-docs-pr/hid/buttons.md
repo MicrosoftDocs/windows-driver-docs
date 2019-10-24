@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [Virtual HID Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+-   [Virtual HID Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 -   [UMDF HID Minidriver IOCTLs](https://docs.microsoft.com/previous-versions/hh463977(v=vs.85))
 
 Use the Microsoft-provided button driver for GPIO buttons; otherwise, implement your driver that injects HID data to the operating system.
@@ -64,12 +64,12 @@ Here are some general pointers to help you decide which implementation you shoul
 <td><p>If you are implementing a non-GPIO button such as a stream of data in the HID format that needs to be injected by another software component, you can choose to write a kernel-mode driver. Starting in Windows 10, you can write a HID source driver by calling programming interfaces that communicate with Virtual HID Framework (VHF) and gets and sets HID Reports to and from the HID class driver.</p>
 <ul>
 <li><a href="virtual-hid-framework--vhf-.md" data-raw-source="[How to write a HID source driver that interacts with Virtual HID Framework (VHF)](virtual-hid-framework--vhf-.md)">How to write a HID source driver that interacts with Virtual HID Framework (VHF)</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index" data-raw-source="[Virtual HID Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)">Virtual HID Framework Reference</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[Virtual HID Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)">Virtual HID Framework Reference</a></li>
 </ul>
 <p>Alternately, you can write a kernel-mode HID transport minidriver as supported by the earlier versions of Windows. However, we do not recommend this approach because poorly written KMDF HID transport minidrivers can crash the system.</p>
 <ul>
 <li><a href="transport-minidrivers.md" data-raw-source="[Transport Minidrivers](transport-minidrivers.md)">Transport Minidrivers</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index" data-raw-source="[HID Minidriver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)">HID Minidriver IOCTLs</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[HID Minidriver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)">HID Minidriver IOCTLs</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -89,7 +89,7 @@ Here are some general pointers to help you decide which implementation you shoul
 ## Universal Windows drivers for HID buttons
 
 
-Starting with Windows 10, the HID driver programming interfaces are part of OneCoreUAP-based editions of Windows. By using that common set of interfaces, you can write a button driver by using [Virtual HID Framework](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) or [Transport Minidrivers](transport-minidrivers.md) interfaces. Those drivers will run on both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile, as well as other Windows 10 versions.
+Starting with Windows 10, the HID driver programming interfaces are part of OneCoreUAP-based editions of Windows. By using that common set of interfaces, you can write a button driver by using [Virtual HID Framework](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) or [Transport Minidrivers](transport-minidrivers.md) interfaces. Those drivers will run on both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile, as well as other Windows 10 versions.
 
 For step-by-step guidance, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers).
 

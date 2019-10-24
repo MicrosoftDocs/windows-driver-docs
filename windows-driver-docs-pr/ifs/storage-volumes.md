@@ -38,9 +38,9 @@ When a file system is mounted on a storage volume, it creates a file system volu
 
 The *Mount Manager* is the part of the I/O system that is responsible for managing storage volume information such as volume names, drive letters, and volume mount points. When a new storage volume is added to the system, the Mount Manager is notified of its arrival in either of the following ways:
 
--   The class driver that created the storage volume calls [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) to register a new interface in the MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class. When this happens, the Plug and Play device interface notification mechanism alerts the Mount Manager of the volume's arrival in the system.
+-   The class driver that created the storage volume calls [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) to register a new interface in the MOUNTDEV\_MOUNTED\_DEVICE\_GUID interface class. When this happens, the Plug and Play device interface notification mechanism alerts the Mount Manager of the volume's arrival in the system.
 
--   The driver for the storage volume sends the Mount Manager an IRP\_MJ\_DEVICE\_CONTROL request, specifying [**IOCTL\_MOUNTMGR\_VOLUME\_ARRIVAL\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountmgr_volume_arrival_notification) for the I/O control code. This request can be created by calling [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
+-   The driver for the storage volume sends the Mount Manager an IRP\_MJ\_DEVICE\_CONTROL request, specifying [**IOCTL\_MOUNTMGR\_VOLUME\_ARRIVAL\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mountmgr/ni-mountmgr-ioctl_mountmgr_volume_arrival_notification) for the I/O control code. This request can be created by calling [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest).
 
 ### <span id="ddk_unique_volume_name_if"></span><span id="DDK_UNIQUE_VOLUME_NAME_IF"></span>Unique Volume Name
 

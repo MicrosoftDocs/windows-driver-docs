@@ -58,7 +58,7 @@ Remarks
 
 This extension can only be used after a bug check has occurred, or when you are debugging a kernel-mode crash dump file.
 
-The *Component* parameter corresponds to the final parameter used in [**KeRegisterBugCheckCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keregisterbugcheckcallback).
+The *Component* parameter corresponds to the final parameter used in [**KeRegisterBugCheckCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback).
 
 The buffers that hold callback data are not available in a Small Memory Dump. These buffers are present in Kernel Memory Dumps and Full Memory Dumps. However, in Windows XP SP1, Windows Server 2003, and later versions of Windows, the dump file is created before the drivers' **BugCheckCallback** routines are called, and therefore these buffers will not contain the data written by these routines.
 

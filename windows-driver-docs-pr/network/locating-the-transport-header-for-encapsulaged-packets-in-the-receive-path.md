@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 On receiving a packet, a NIC that supports [Network Virtualization using Generic Routing Encapsulation (NVGRE)](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md) must first determine whether the packet is encapsulated and, if so, the type of encapsulation.
 
-**Note**  In the send path, a packet is encapsulated if [**NDIS\_TCP\_SEND\_OFFLOADS\_SUPPLEMENTAL\_NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_tcp_send_offloads_supplemental_net_buffer_list_info).**IsEncapsulatedPacket** is **TRUE**.
+**Note**  In the send path, a packet is encapsulated if [**NDIS\_TCP\_SEND\_OFFLOADS\_SUPPLEMENTAL\_NET\_BUFFER\_LIST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_send_offloads_supplemental_net_buffer_list_info).**IsEncapsulatedPacket** is **TRUE**.
  
 
 In the receive path, the NIC must determine whether the packet is encapsulated by checking the protocol number in the **Protocol** field of the IPv4 tunnel (outer) header or the **NextHeader** field of the IPv6 tunnel (outer) header. The list of assigned protocol numbers can be found at <http://www.iana.org/assignments/protocol-numbers/protocol-numbers.xml>.

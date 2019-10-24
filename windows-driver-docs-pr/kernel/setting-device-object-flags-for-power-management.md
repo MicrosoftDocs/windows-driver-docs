@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-In its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine, each driver creates a device object (filter device object (DO), functional device object (FDO), or physical device object (PDO)) and sets the DO\_*XXX* flags in the device object to describe the device attributes and driver configuration. The following device object flags pertain to power management.
+In its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, each driver creates a device object (filter device object (DO), functional device object (FDO), or physical device object (PDO)) and sets the DO\_*XXX* flags in the device object to describe the device attributes and driver configuration. The following device object flags pertain to power management.
 
 | Flag               | Description                                                                                                                                                                                                                                                                                                |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -21,7 +21,7 @@ Protocol drivers enable connection offload services with an object identifier (O
 
  
 
-The TCP/IP transport enables or disables the connection offload capabilities of a network interface card (NIC) by setting the [OID\_TCP\_CONNECTION\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-connection-offload-parameters) OID. In this set operation, the TCP/IP transport passes the NDIS\_TCP\_CONNECTION\_OFFLOAD\_PARAMETERS structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure. (For information on NDIS\_TCP\_CONNECTION\_OFFLOAD\_PARAMETERS, see [NDIS 6.0 TCP chimney offload documentation](full-tcp-offload.md).)
+The TCP/IP transport enables or disables the connection offload capabilities of a network interface card (NIC) by setting the [OID\_TCP\_CONNECTION\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-connection-offload-parameters) OID. In this set operation, the TCP/IP transport passes the NDIS\_TCP\_CONNECTION\_OFFLOAD\_PARAMETERS structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure. (For information on NDIS\_TCP\_CONNECTION\_OFFLOAD\_PARAMETERS, see [NDIS 6.0 TCP chimney offload documentation](full-tcp-offload.md).)
 
 For more information about configuring connection offload services, see Initializing an Offload Target in the [NDIS 6.0 TCP chimney offload documentation](full-tcp-offload.md).
 

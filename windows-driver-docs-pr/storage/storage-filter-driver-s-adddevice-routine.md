@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_storage_filter_driver_s_adddevice_routine_kg"></span><span id="DDK_STORAGE_FILTER_DRIVER_S_ADDDEVICE_ROUTINE_KG"></span>
 
 
-The PnP manager calls the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine of a storage filter driver when it detects a device controlled by that driver. The *AddDevice* routine of an storage filter driver (SFD) is similar to that of a storage class driver, except that it must not attempt to claim the device (SRB\_FUNCTION\_CLAIM\_DEVICE).
+The PnP manager calls the [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine of a storage filter driver when it detects a device controlled by that driver. The *AddDevice* routine of an storage filter driver (SFD) is similar to that of a storage class driver, except that it must not attempt to claim the device (SRB\_FUNCTION\_CLAIM\_DEVICE).
 
-For information about a storage class driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine, see [Storage Class Drivers](storage-class-drivers.md). For general information about a PnP driver's *AddDevice* routine, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+For information about a storage class driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, see [Storage Class Drivers](storage-class-drivers.md). For general information about a PnP driver's *AddDevice* routine, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
 
  
 

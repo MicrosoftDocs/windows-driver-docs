@@ -53,7 +53,7 @@ A client sends an internal device control request to do the following types of o
 * Allocate the port or select a device on the port
 * Set the communication mode
 
-See [Internal Device Control Requests for Parallel Ports](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+See [Internal Device Control Requests for Parallel Ports](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 ### Input Parameters
 The input is request-specific.
@@ -92,7 +92,7 @@ The operation is request-specific.
 
 ## Related topics
 
-[Internal Device Control Requests for Parallel Ports](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[Internal Device Control Requests for Parallel Ports](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 [Operating a Parallel Device Attached to a Parallel Port](https://docs.microsoft.com/windows-hardware/drivers/parports/operating-a-parallel-device-attached-to-a-parallel-port.md)
 

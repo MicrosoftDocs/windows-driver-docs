@@ -25,8 +25,8 @@ This topic describes Container ID support for displays—visual representation o
 
 Implement this function and structure in your display miniport driver:
 
--   [*DxgkDdiGetChildContainerId*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_get_child_container_id)
--   [**DXGK\_CHILD\_CONTAINER\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/ns-dispmprt-_dxgk_child_container_id)
+-   [*DxgkDdiGetChildContainerId*](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_get_child_container_id)
+-   [**DXGK\_CHILD\_CONTAINER\_ID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_container_id)
 
 ## <span id="Container_ID_description"></span><span id="container_id_description"></span><span id="CONTAINER_ID_DESCRIPTION"></span>Container ID description
 

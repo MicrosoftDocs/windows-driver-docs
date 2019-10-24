@@ -18,7 +18,7 @@ ISCSI\_DiscoveredTargetPortal is a superset of the information that is provided 
 
 The ISCSI\_DiscoveredTargetPortal class is unpublished and is defined in *Discover.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortal**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportal) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortal**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportal) data structure.
 
  
 

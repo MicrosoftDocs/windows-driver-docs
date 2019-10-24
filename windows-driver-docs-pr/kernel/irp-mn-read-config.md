@@ -27,7 +27,7 @@ A driver or other system component sends this IRP at IRQL &lt; DISPATCH\_LEVEL i
 ## Input Parameters
 
 
-The **Parameters.ReadWriteConfig** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure is itself a structure containing the following information:
+The **Parameters.ReadWriteConfig** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is itself a structure containing the following information:
 
 ```cpp
 ULONG WhichSpace;
@@ -117,7 +117,7 @@ Operation
 
 A bus driver handles this IRP for its child devices (child PDOs).
 
-Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus**.Status and they do not set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine.
+Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus**.Status and they do not set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine.
 
 A bus driver that handles this request should check the WhichSpace parameter to ensure that it contains a value that the driver supports.
 
@@ -141,7 +141,7 @@ Drivers must send this IRP from IRQL &lt; DISPATCH\_LEVEL.
 
 A driver can access a bus's configuration space at DISPATCH\_LEVEL through a bus interface routine, if the parent bus driver supports such an interface. To get a bus interface, a driver sends an [**IRP\_MN\_QUERY\_INTERFACE**](irp-mn-query-interface.md) request to the device stack in which the driver is attached. The driver then calls the appropriate routine returned in the interface.
 
-For example, to read configuration space from DISPATCH\_LEVEL, a driver can call **IRP\_MN\_QUERY\_INTERFACE** during driver initialization to get the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard) interface from the parent bus driver. The driver sends the query IRP from IRQL PASSIVE\_LEVEL. Later, from code at IRQL DISPATCH\_LEVEL, the driver calls the appropriate routine returned in the interface, such as the **Interface.GetBusData** routine.
+For example, to read configuration space from DISPATCH\_LEVEL, a driver can call **IRP\_MN\_QUERY\_INTERFACE** during driver initialization to get the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface from the parent bus driver. The driver sends the query IRP from IRQL PASSIVE\_LEVEL. Later, from code at IRQL DISPATCH\_LEVEL, the driver calls the appropriate routine returned in the interface, such as the **Interface.GetBusData** routine.
 
 Requirements
 ------------

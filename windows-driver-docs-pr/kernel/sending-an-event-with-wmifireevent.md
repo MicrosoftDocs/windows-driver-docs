@@ -13,15 +13,15 @@ ms.localizationpriority: medium
 
 
 
-A driver can call [**WmiFireEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmifireevent) to send events that do not use dynamic instance names, and that base static instance names on a single base name string or the device instance ID of a PDO.
+A driver can call [**WmiFireEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmifireevent) to send events that do not use dynamic instance names, and that base static instance names on a single base name string or the device instance ID of a PDO.
 
-The event must be a single instance of a block—that is, a driver cannot call **WmiFireEvent** to send an event that consists of a single item or multiple instances. To send such events, a driver must call [**IoWMIWriteEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iowmiwriteevent), as described in [Sending an Event with IoWMIWriteEvent](sending-an-event-with-iowmiwriteevent.md).
+The event must be a single instance of a block—that is, a driver cannot call **WmiFireEvent** to send an event that consists of a single item or multiple instances. To send such events, a driver must call [**IoWMIWriteEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent), as described in [Sending an Event with IoWMIWriteEvent](sending-an-event-with-iowmiwriteevent.md).
 
 A driver should not send events until WMI has enabled the event. After the event has been enabled, when the event's trigger condition occurs, the driver:
 
 1.  Allocates a buffer from the nonpaged pool and writes the event data to the buffer. If the event has no data, the driver can skip this step.
 
-2.  Calls [**WmiFireEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmifireevent) with the following parameters:
+2.  Calls [**WmiFireEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmifireevent) with the following parameters:
 
     -   A pointer to the driver's device object
 

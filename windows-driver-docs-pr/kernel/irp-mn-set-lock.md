@@ -27,7 +27,7 @@ The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in an arbitrary thread con
 ## Input Parameters
 
 
-The **Parameters.SetLock.Lock** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure is a BOOLEAN value specifying whether to lock (TRUE) or unlock (FALSE) the device.
+The **Parameters.SetLock.Lock** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a BOOLEAN value specifying whether to lock (TRUE) or unlock (FALSE) the device.
 
 ## Output Parameters
 
@@ -43,7 +43,7 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
+Function and filter drivers do not handle this IRP. Such drivers call [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP down to the next driver. Function and filter drivers do not set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, do not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
 
 Operation
 ---------

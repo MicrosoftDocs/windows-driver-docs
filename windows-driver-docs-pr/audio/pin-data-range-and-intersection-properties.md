@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Several property requests provide information about the data formats for the audio streams that an audio device is capable of handling at its input and output pins.
 
-The audio-stream data formats that a pin is capable of supporting are expressed in a [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmultiple_item) array of [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85))-derived structures. Pin data-range support is exposed through the following three [KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin) properties on the filter:
+The audio-stream data formats that a pin is capable of supporting are expressed in a [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) array of [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85))-derived structures. Pin data-range support is exposed through the following three [KSPROPSETID\_Pin](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-pin) properties on the filter:
 
 [**KSPROPERTY\_PIN\_DATARANGES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-dataranges)
 This property reports data ranges that are static and represent all possible formats supported. Typically, data ranges are contained in a static array in the adapter driver.

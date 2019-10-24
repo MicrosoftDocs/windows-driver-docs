@@ -26,7 +26,7 @@ NDIS serves as the device power policy owner for each network device. As such, N
 
 NDIS uses the following information to set the power policy for a NIC:
 
--   The [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure that the bus driver returns in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request that NDIS issued.
+-   The [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure that the bus driver returns in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request that NDIS issued.
 
 -   The miniport driver's response to an [OID\_PNP\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-capabilities) request issued by NDIS.
 
@@ -34,7 +34,7 @@ NDIS uses the following information to set the power policy for a NIC:
 
 ### <a href="" id="using-the-device-capabilities-structure"></a>Using the DEVICE\_CAPABILITIES Structure
 
-When a NIC is enumerated, NDIS queries the NIC's capabilities by issuing, in addition to other requests, an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request. In response to this request, the bus driver returns a [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure. NDIS copies this structure and uses the following information from this structure when setting the power policy for the NIC.
+When a NIC is enumerated, NDIS queries the NIC's capabilities by issuing, in addition to other requests, an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request. In response to this request, the bus driver returns a [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure. NDIS copies this structure and uses the following information from this structure when setting the power policy for the NIC.
 
 <table>
 <colgroup>
@@ -114,11 +114,11 @@ To determine whether both the system and NIC support wake-on-LAN, NDIS examines 
 
 ### <a href="" id="using-oid-pnp-capabilities"></a>Using OID\_PNP\_CAPABILITIES
 
-After a miniport driver successfully returns from its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, NDIS sends an OID\_PNP\_CAPABILITIES request to the driver if either of the following is true:
+After a miniport driver successfully returns from its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, NDIS sends an OID\_PNP\_CAPABILITIES request to the driver if either of the following is true:
 
--   Both the **SystemWake** and **DeviceWake** members of the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure that is returned by the bus driver are *not* set to **PowerSystemUnspecified**.
+-   Both the **SystemWake** and **DeviceWake** members of the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure that is returned by the bus driver are *not* set to **PowerSystemUnspecified**.
 
--   The miniport driver set the NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND flag when it called [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) during initialization.
+-   The miniport driver set the NDIS\_ATTRIBUTE\_NO\_HALT\_ON\_SUSPEND flag when it called [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) during initialization.
 
 Note that NDIS issues an OID\_PNP\_CAPABILITIES request regardless of whether the user has enabled wake-on-LAN in the user interface.
 

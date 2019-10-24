@@ -18,8 +18,8 @@ ms.localizationpriority: medium
 
 The **IrqlKeRaiseLower** rule specifies that the driver does the following when raising and lowering the IRQL:
 
-When the driver calls [**KeRaiseIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keraiseirql), it is executing at an IRQL that is lower than or equal to the value of the *NewIrql* parameter.
-The driver calls [**KeLowerIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kelowerirql) only after calling **KeRaiseIrql** or [**KeRaiseIrqlToDpcLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keraiseirqltodpclevel).
+When the driver calls [**KeRaiseIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirql), it is executing at an IRQL that is lower than or equal to the value of the *NewIrql* parameter.
+The driver calls [**KeLowerIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kelowerirql) only after calling **KeRaiseIrql** or [**KeRaiseIrqlToDpcLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel).
 This rule permits nested calls to **KeRaiseIrql**, **KeRaiseIrqlToDpcLevel**, and **KeLowerIrql**.
 
 |              |     |
@@ -55,8 +55,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**KeLowerIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kelowerirql)
-[**KeRaiseIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keraiseirql)
+[**KeLowerIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kelowerirql)
+[**KeRaiseIrql**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirql)
 See also
 --------
 
