@@ -48,9 +48,9 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
 -   **USB Type-C ConnEx**
 
-    The device has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The device also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The device monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](https://go.microsoft.com/fwlink/p/?LinkId=733488) or [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287).
+    The device has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The device also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The device monitors amperage and voltage being drawn from the SUT. You can buy the necessary hardware from [MCCI](https://mcci.com/usb/dev-tools/3201-enhanced-type-c-connection-exerciser/).
 
-    ![USB Type-C ConnEx](images/newconnexc-top.png)
+    ![USB Type-C ConnEx](images/newconnexc.jpg)
 
 -   **Peripheral USB devices**
 
@@ -58,7 +58,13 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
 -   **USB A to A Cable**
 
-    You will use this cable to connect your USB Type-C ConnEx to a PC for power and communication (If your SUT is a PC, this is where you will connect it).
+    You will use this cable to connect your USB Type-C ConnEx to a PC for power and communication (If your SUT has a USB A port, this is where you will connect it).
+
+-   **Proxy controller**
+
+    The USB Type-C ConnEx can be controlled by using a proxy for running the tests if the SUT does not have a USB A port. The proxy controller should be a secondary desktop PC or a laptop.
+
+    The proxy controller communicates (with a mobile SUT) to the microcontroller to load the firmware by using a secondary USB port.
 
 ## Hardware requirements for older versions
 
