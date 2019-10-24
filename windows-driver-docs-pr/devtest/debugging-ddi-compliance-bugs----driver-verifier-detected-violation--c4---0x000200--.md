@@ -60,7 +60,7 @@ In this example, [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](htt
 
 The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) output includes the following information:
 
-**DV\_VIOLATED\_CONDITION:** This field provides a description of what caused the rule violation. In this example, the condition violated was that a driver attempted to allocate memory at a very high IRQL level, or attempted to allocated paged pool memory at DISPATCH\_LEVEL. For example, this may have been a driver that was attempting to call [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority) in an Interrupt Service Routine (ISR), or a driver that attempted to allocate paged pool memory while holding a spin lock.
+**DV\_VIOLATED\_CONDITION:** This field provides a description of what caused the rule violation. In this example, the condition violated was that a driver attempted to allocate memory at a very high IRQL level, or attempted to allocated paged pool memory at DISPATCH\_LEVEL. For example, this may have been a driver that was attempting to call [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) in an Interrupt Service Routine (ISR), or a driver that attempted to allocate paged pool memory while holding a spin lock.
 
 **DV\_MSDN\_LINK:** In WinDBG, this is a live link that causes the debugger to open the MSDN page showing more information about the [**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool) rule.
 
@@ -135,9 +135,9 @@ FAULTING_SOURCE_LINE_NUMBER:  206
 
 Fixing these bug checks that have Arg1 values in the range 0x00020000 to 0x00020022, generally consists of verifying the driver meets the API and DDI usage conditions described in the corresponding documentation.
 
-In the example we've used here (0x20004), a memory allocation of any sort in the ISR is going to violate the IRQL rules set for the [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority) routine.
+In the example we've used here (0x20004), a memory allocation of any sort in the ISR is going to violate the IRQL rules set for the [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) routine.
 
-In general, you should review the documentation about the routine for information about IRQL and proper usage. Review the specific [DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) that test the function. In this case, the rule is [**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool).
+In general, you should review the documentation about the routine for information about IRQL and proper usage. Review the specific [DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) that test the function. In this case, the rule is [**IrqlExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexallocatepool).
 
 Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver source code, using the same rule(s). Static Driver Verifier is a tool that scans Windows driver source code and reports on possible issues by simulating the exercising of various code paths. Static Driver Verifier is an excellent development-time utility to help identify these kinds of issues.
 
@@ -146,7 +146,7 @@ Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver s
 
 [DDI compliance checking](ddi-compliance-checking.md)
 
-[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 [Static Driver Verifier](static-driver-verifier.md)
 

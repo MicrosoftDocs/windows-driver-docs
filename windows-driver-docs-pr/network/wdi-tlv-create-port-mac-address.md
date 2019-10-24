@@ -21,14 +21,14 @@ WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS is a TLV that contains a MAC address for [O
 ## Length
 
 
-The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
+The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
 
 ## Values
 
 
 | Type                                              | Description                                   |
 |---------------------------------------------------|-----------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address to be used for port creation. |
+| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address to be used for port creation. |
 
  
 

@@ -37,7 +37,7 @@ Logically, ActiveBoth signals have both an asserted and unasserted state, whethe
 
  
 
-To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_reconfigure_interrupt) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](https://docs.microsoft.com/windows-hardware/drivers/gpio).
+To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_reconfigure_interrupt) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](https://docs.microsoft.com/windows-hardware/drivers/gpio).
 
 ## GPIO namespace objects
 

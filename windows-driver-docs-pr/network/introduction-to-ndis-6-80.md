@@ -63,22 +63,22 @@ For information on building a driver with the Windows 10, version 1709 release 
 
 The following APIs and data structures are new in NDIS 6.80.
 
-- [MINIPORT_SYNCHRONOUS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-miniport_synchronous_oid_request)
-- [FILTER_SYNCHRONOUS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-filter_synchronous_oid_request)
-- [FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-filter_synchronous_oid_request_complete)
-- [NdisFSynchronousOidRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsynchronousoidrequest)
-- [NdisSynchronousOidRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissynchronousoidrequest)
+- [MINIPORT_SYNCHRONOUS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-miniport_synchronous_oid_request)
+- [FILTER_SYNCHRONOUS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-filter_synchronous_oid_request)
+- [FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-filter_synchronous_oid_request_complete)
+- [NdisFSynchronousOidRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsynchronousoidrequest)
+- [NdisSynchronousOidRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissynchronousoidrequest)
 - [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md)
 - [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md)
-- [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters_v2)
-- [NDIS_RSS_SET_INDIRECTION_ENTRIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entries)
-- [NDIS_RSS_SET_INDIRECTION_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry)
+- [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters_v2)
+- [NDIS_RSS_SET_INDIRECTION_ENTRIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entries)
+- [NDIS_RSS_SET_INDIRECTION_ENTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry)
 
 ### Updated APIs and data structures
 
 The following APIs and data structures were updated in NDIS 6.80.
 
-- [NDIS_MINIPORT_DRIVER_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_driver_characteristics)
-- [NDIS_FILTER_DRIVER_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_filter_driver_characteristics)
-- [NDIS_RECEIVE_SCALE_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities)
+- [NDIS_MINIPORT_DRIVER_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_driver_characteristics)
+- [NDIS_FILTER_DRIVER_CHARACTERISTICS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_driver_characteristics)
+- [NDIS_RECEIVE_SCALE_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities)
 

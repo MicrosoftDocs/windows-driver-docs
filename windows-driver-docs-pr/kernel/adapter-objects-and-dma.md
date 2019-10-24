@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes adapter objects and [*AdapterControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_control) routines, and how they are used to control DMA operations. The section contains the following topics:
+This section describes adapter objects and [*AdapterControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routines, and how they are used to control DMA operations. The section contains the following topics:
 
 [Introduction to Adapter Objects](introduction-to-adapter-objects.md)
 

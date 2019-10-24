@@ -33,12 +33,12 @@ You can use the DDI to discover internal memory fragmentation or the impact of s
 
 Use these functions, enumeration, and structure from the Umdprovider.h header to log events in your user-mode display driver:
 
--   [**UMDEtwLogMapAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/umdprovider/nf-umdprovider-umdetwlogmapallocation) function
--   [**UMDEtwLogUnmapAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/umdprovider/nf-umdprovider-umdetwlogunmapallocation) function
--   [**UMDEtwRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/umdprovider/nf-umdprovider-umdetwregister) function
--   [**UMDEtwUnregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/umdprovider/nf-umdprovider-umdetwunregister) function
--   [**UMDETW\_ALLOCATION\_SEMANTIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/umdprovider/ne-umdprovider-_umdetw_allocation_semantic) enumeration
--   [**UMDETW\_ALLOCATION\_USAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/umdprovider/ns-umdprovider-_umdetw_allocation_usage) structure
+-   [**UMDEtwLogMapAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwlogmapallocation) function
+-   [**UMDEtwLogUnmapAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwlogunmapallocation) function
+-   [**UMDEtwRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwregister) function
+-   [**UMDEtwUnregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwunregister) function
+-   [**UMDETW\_ALLOCATION\_SEMANTIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/ne-umdprovider-_umdetw_allocation_semantic) enumeration
+-   [**UMDETW\_ALLOCATION\_USAGE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/ns-umdprovider-_umdetw_allocation_usage) structure
 
 Also see the Umdetw.h header.
 

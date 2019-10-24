@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 If a device has idle power-down or wake-up capabilities, you can decide whether users should be allowed to enable or disable these capabilities.
 
-Your driver can use members of the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure to specify whether users with registry access can enable or disable a device's idle power-down capability.
+Your driver can use members of the [**WDF\_DEVICE\_POWER\_POLICY\_IDLE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure to specify whether users with registry access can enable or disable a device's idle power-down capability.
 
-Your driver can use members of the [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings) structure to specify whether users with registry access can enable or disable a device's wake-up capability.
+Your driver can use members of the [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings) structure to specify whether users with registry access can enable or disable a device's wake-up capability.
 
 Both of these structures allow the driver to enable the capability, disable the capability, or give users control of the capability. To give users control, in the appropriate settings structure the driver sets the **UserControlOfIdleSettings** or **UserControlOfWakeSettings** member to **IdleAllowUserControl** or **WakeAllowUserControl**, respectively, and the **Enabled** member to **WdfTrue** or **WdfUseDefault**,.
 

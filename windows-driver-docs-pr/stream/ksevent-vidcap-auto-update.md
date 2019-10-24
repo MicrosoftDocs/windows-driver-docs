@@ -46,7 +46,7 @@ The KSEVENT\_VIDCAP\_AUTO\_UPDATE event is triggered when a property value chang
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
 <td><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +58,7 @@ Remarks
 
 Clients might register for this event to be notified if a user flips a switch on the device, changing a property value. For this event to be available, the hardware implementation must provide support for this feature.
 
-For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index).
+For more information about DirectShow filters and KsProxy see [Kernel Streaming Proxy](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index).
 
  
 

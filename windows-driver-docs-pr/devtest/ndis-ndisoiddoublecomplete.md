@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # NdisOidDoubleComplete rule (ndis)
 
 
-The **NdisOidDoubleComplete** rule specifies that an NDIS miniport driver must not call the [**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismoidrequestcomplete) routine twice for the same OID.
+The **NdisOidDoubleComplete** rule specifies that an NDIS miniport driver must not call the [**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete) routine twice for the same OID.
 
 The OID is tracked ( TRACKED\_OBJECT). To help debug this error with the kernel debugger, use **!ndiskd.oid** debugger extension.
 
@@ -54,8 +54,8 @@ How to test
 Applies to
 ----------
 
-[**MiniportOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request)
-[**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismoidrequestcomplete)
+[**MiniportOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request)
+[**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)
  
 
  

@@ -50,17 +50,17 @@ DEFINE_GUIDSTRUCT("1CB79112-C0D2-4213-9CA6-CD4FDB927972", KSPROPERTYSETID_Extend
 
 To retrieve metadata, the user mode component (DevProxy) must query the driver for the metadata buffer requirement. Once the user mode component has this information, it allocates the appropriate metadata buffer for the driver to fill and return back to the user mode component.
 
-The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-metadata) property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used by the client to query for the metadata buffer requirements, such as required metadata size, memory alignment requirements, and desired memory allocation type, for metadata buffer allocation.
+The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-metadata) property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration is used by the client to query for the metadata buffer requirements, such as required metadata size, memory alignment requirements, and desired memory allocation type, for metadata buffer allocation.
 
 Once user mode component has obtained the metadata buffer requirements from the driver, it allocates the appropriately sized metadata buffer with the desired memory alignment from the desired memory pool. This metadata buffer, along with the actual frame buffer, will be sent to the driver to fulfill and then returned back to the user mode component when filled. For multishot scenarios, a corresponding metadata buffer is allocated and delivered to the camera driver for each frame buffer allocated.
 
-The [**KSSTREAM\_METADATA\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_metadata_info) structure, along with the following flag, is used to send the metadata buffer to the driver.
+The [**KSSTREAM\_METADATA\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_metadata_info) structure, along with the following flag, is used to send the metadata buffer to the driver.
 
 ```cpp
 #define KSSTREAM_HEADER_OPTIONSF_METADATA           0x00001000
 ```
 
-Once the buffer (metadata + frame) is queued to the driver, DevProxy sends a standard [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header) structure, followed by a [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info) structure, and followed by a **KSSTREAM\_METADATA\_INFO** structure. DevProxy will further mask **KSSTREAM\_HEADER.OptionFlags** with **KSSTREAM\_HEADER\_OPTIONSF\_METADATA** before it passes the buffer down to the driver.
+Once the buffer (metadata + frame) is queued to the driver, DevProxy sends a standard [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure, followed by a [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info) structure, and followed by a **KSSTREAM\_METADATA\_INFO** structure. DevProxy will further mask **KSSTREAM\_HEADER.OptionFlags** with **KSSTREAM\_HEADER\_OPTIONSF\_METADATA** before it passes the buffer down to the driver.
 
 If the driver does not support metadata, or if **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA** is not implemented, the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_METADATA** property control will fail. In this case, DevProxy will not allocate a metadata buffer and the payload that is passed down to the driver from DevProxy will not contain the **KSSTREAM\_METADATA\_INFO** structure.
 
@@ -68,13 +68,13 @@ If the driver supports metadata and the client does not want any metadata, DevPr
 
 The following structures describe the layout of the metadata items to be filled by the camera driver in the metadata buffer.
 
-- [**KSCAMERA\_MetadataId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ne-ksmedia-kscamera_metadataid)
-- [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
-- [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_metadata_photoconfirmation)
+- [**KSCAMERA\_MetadataId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-kscamera_metadataid)
+- [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
+- [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_photoconfirmation)
 
 The list below contains the layout of a metadata item. This must be 8-byte aligned.
 
-- [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
+- [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
 - Metadata
 
 The photo confirmation metadata is identified by **MetadataId\_PhotoConfirmation**. When present, it indicates that the preview frame associated is a photo confirmation frame. Photo confirmation metadata is parsed by the DevProxy.

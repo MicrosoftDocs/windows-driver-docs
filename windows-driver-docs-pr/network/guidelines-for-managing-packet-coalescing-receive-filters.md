@@ -15,7 +15,7 @@ If the miniport driver supports NDIS packet coalescing, it must follow these gui
 
 -   The miniport driver must maintain a coalesced packet counter. This 64-bit counter contains a value for the number of received packets that have matched a packet coalescing filter. NDIS queries this counter through an OID query request of [OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-packet-coalescing-filter-match-count).
 
-    **Note**  The miniport driver clears this counter when it transitions to a full-power state by handling an OID set request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power). The miniport driver also clears the counter when its [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) function is called.
+    **Note**  The miniport driver clears this counter when it transitions to a full-power state by handling an OID set request of [OID\_PNP\_SET\_POWER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power). The miniport driver also clears the counter when its [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset) function is called.
 
      
 
@@ -23,7 +23,7 @@ If the miniport driver supports NDIS packet coalescing, it must follow these gui
 
     The miniport driver must configure the network adapter with the packet coalescing receive filters when the adapter transitions to a full-power state.
 
--   The miniport driver must not discard the packet coalescing receive filters when NDIS calls the driver's [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) function. After the driver resets the network adapter, it must configure the adapter with the packet coalescing filters. Also, the driver *must clear* the coalesced packet counter.
+-   The miniport driver must not discard the packet coalescing receive filters when NDIS calls the driver's [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset) function. After the driver resets the network adapter, it must configure the adapter with the packet coalescing filters. Also, the driver *must clear* the coalesced packet counter.
 
     **Note**  The miniport driver must perform this operation regardless of whether the driver sets the *AddressingReset* parameter to TRUE.
 

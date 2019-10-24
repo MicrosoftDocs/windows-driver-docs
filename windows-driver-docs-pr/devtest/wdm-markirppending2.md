@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # MarkIrpPending2 rule (wdm)
 
 
-The **MarkIrpPending2** rule specifies that if a dispatch routine returns STATUS\_PENDING, it has called [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending) or passed the IRP to the lower driver. See [**MarkIrpPending**](wdm-markirppending.md) for a complimentary specification.
+The **MarkIrpPending2** rule specifies that if a dispatch routine returns STATUS\_PENDING, it has called [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending) or passed the IRP to the lower driver. See [**MarkIrpPending**](wdm-markirppending.md) for a complimentary specification.
 
 |              |     |
 |--------------|-----|
@@ -51,11 +51,11 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver)
-[**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending)
-[**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject)
-[**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver)
-[**RemoveHeadList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-removeheadlist)
+[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
+[**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending)
+[**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject)
+[**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver)
+[**RemoveHeadList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist)
 See also
 --------
 

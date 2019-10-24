@@ -36,7 +36,7 @@ To safely access device properties, follow these guidelines:
 
         To save the custom settings, use [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
 
--   For kernel-mode drivers, use [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceproperty) to access device properties.
+-   For kernel-mode drivers, use [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to access device properties.
 
  
 

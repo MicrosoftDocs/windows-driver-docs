@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # PcPoRequestPowerIrp rule (audio)
 
 
-This rule verifies that a PortCls miniport driver should not call [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) with [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power).
+This rule verifies that a PortCls miniport driver should not call [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) with [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power).
 
 |              |       |
 |--------------|-------|

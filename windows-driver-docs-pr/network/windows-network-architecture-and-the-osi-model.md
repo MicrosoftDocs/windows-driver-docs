@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## Overview <a href="" id="ddk-windows-network-architecture-and-the-osi-model-ng"></a>
 
 
-The Microsoft Windows operating systems use a network architecture that is based on the seven-layer networking model developed by the International Standards Organization (ISO). Introduced in 1978, the ISO Open Systems Interconnection (OSI) Reference model describes networking as "a series of protocol layers with a specific set of functions allocated to each layer. Each layer offers specific services to higher layers while shielding these layers from the details of how the services are implemented. A well-defined interface between each pair of adjacent layers defines the services offered by the lower layer to the higher one and how those services are accessed." The following diagram illustrates the OSI reference model.
+The Microsoft Windows operating systems use a network architecture that is based on the seven-layer networking model developed by the International Organization for Standardization (ISO). Introduced in 1978, the ISO Open Systems Interconnection (OSI) Reference model describes networking as "a series of protocol layers with a specific set of functions allocated to each layer. Each layer offers specific services to higher layers while shielding these layers from the details of how the services are implemented. A well-defined interface between each pair of adjacent layers defines the services offered by the lower layer to the higher one and how those services are accessed." The following diagram illustrates the OSI reference model.
 
 ![diagram illustrating the osi reference model](images/101osi.png)
 

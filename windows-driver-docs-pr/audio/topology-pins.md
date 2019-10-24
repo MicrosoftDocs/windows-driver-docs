@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 
 The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates topology pins on KS filters into the source and destination mixer lines that the mixer API exposes to applications. Input (sink) pins become source mixer lines, and output (source) pins become destination mixer lines.
 
-As described in [Pin Factories](pin-factories.md), a miniport driver provides an array of pin descriptors, each of which is a structure of type [**PCPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcpin_descriptor) that describes a pin factory belonging to a filter. Each pin descriptor includes the following information:
+As described in [Pin Factories](pin-factories.md), a miniport driver provides an array of pin descriptors, each of which is a structure of type [**PCPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-pcpin_descriptor) that describes a pin factory belonging to a filter. Each pin descriptor includes the following information:
 
 -   **Dataflow direction specifier**
 

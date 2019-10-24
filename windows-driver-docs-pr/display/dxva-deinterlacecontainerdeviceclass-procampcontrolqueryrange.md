@@ -72,10 +72,10 @@ Identifies the ProcAmp control property for which the driver should return infor
  
 
 *lpVideoDescription* \[in\]
-Supplies a pointer to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc) structure. This structure provides the driver with a description of the video to which the ProcAmp adjustment will be applied. Drivers can adjust their ProcAmp support for particular video streams.
+Supplies a pointer to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure. This structure provides the driver with a description of the video to which the ProcAmp adjustment will be applied. Drivers can adjust their ProcAmp support for particular video streams.
 
 *lpPropRange* \[out\]
-Receives a pointer to a [**DXVA\_VideoPropertyRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videopropertyrange) structure that specifies the range, step size, and default value for the ProcAmp.
+Receives a pointer to a [**DXVA\_VideoPropertyRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videopropertyrange) structure that specifies the range, step size, and default value for the ProcAmp.
 
 Return value
 ------------
@@ -117,11 +117,11 @@ The sample **ProcAmpControlQueryRange** function maps directly to a call to the 
 </tr>
 <tr class="even">
 <td align="left"><p>lpInputData</p></td>
-<td align="left"><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolqueryrange" data-raw-source="[&lt;strong&gt;DXVA_ProcAmpControlQueryRange&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolqueryrange)"><strong>DXVA_ProcAmpControlQueryRange</strong></a> structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolqueryrange" data-raw-source="[&lt;strong&gt;DXVA_ProcAmpControlQueryRange&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolqueryrange)"><strong>DXVA_ProcAmpControlQueryRange</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>lpOutputData</p></td>
-<td align="left"><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videopropertyrange" data-raw-source="[&lt;strong&gt;DXVA_VideoPropertyRange&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videopropertyrange)"><strong>DXVA_VideoPropertyRange</strong></a> structure.</p></td>
+<td align="left"><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videopropertyrange" data-raw-source="[&lt;strong&gt;DXVA_VideoPropertyRange&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videopropertyrange)"><strong>DXVA_VideoPropertyRange</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -201,11 +201,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**DXVA\_ProcAmpControlQueryRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_procampcontrolqueryrange)
+[**DXVA\_ProcAmpControlQueryRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_procampcontrolqueryrange)
 
-[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc)
+[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
 
-[**DXVA\_VideoPropertyRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videopropertyrange)
+[**DXVA\_VideoPropertyRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videopropertyrange)
 
  
 

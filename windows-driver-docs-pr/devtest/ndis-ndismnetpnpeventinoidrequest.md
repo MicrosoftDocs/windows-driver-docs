@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # NdisMNetPnPEventInOIDRequest rule (ndis)
 
 
-This rule checks that [**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismnetpnpevent) is not called in the context of an OID request.
+This rule checks that [**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismnetpnpevent) is not called in the context of an OID request.
 
 |              |      |
 |--------------|------|
@@ -51,8 +51,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismnetpnpevent)
-[**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismoidrequestcomplete)
+[**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismnetpnpevent)
+[**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)
  
 
  

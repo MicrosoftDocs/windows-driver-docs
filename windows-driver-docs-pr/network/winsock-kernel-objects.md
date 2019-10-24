@@ -21,7 +21,7 @@ The Winsock Kernel (WSK) [Network Programming Interface (NPI)](network-programmi
 A *client object* represents the attachment, or binding, between a WSK application and the WSK subsystem. A client object is represented by the [**WSK\_CLIENT**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-client) structure. A pointer to a client object is returned to a WSK application during the process of attachment to the WSK subsystem. A WSK application passes this pointer to all WSK functions that operate at the client object level.
 
 <a href="" id="socket-object-------"></a>**Socket Object**   
-A *socket object* represents a network socket that can be used for network I/O. A socket object is represented by the [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_socket) structure. A pointer to a socket object is returned to a WSK application when the application creates a new socket or when the application accepts an incoming connection. A WSK application passes this pointer to all WSK functions that are specific to a particular socket.
+A *socket object* represents a network socket that can be used for network I/O. A socket object is represented by the [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket) structure. A pointer to a socket object is returned to a WSK application when the application creates a new socket or when the application accepts an incoming connection. A WSK application passes this pointer to all WSK functions that are specific to a particular socket.
 
  
 

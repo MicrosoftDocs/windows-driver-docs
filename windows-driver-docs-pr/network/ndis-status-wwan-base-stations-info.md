@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 The NDIS_STATUS_WWAN_BASE_STATIONS_INFO notification is sent by modem miniport drivers in response to an [OID_WWAN_BASE_STATIONS_INFO](oid-wwan-base-stations-info.md) query request to provide the MB host with information about both serving and neighboring base stations.
 
-This notification uses the [NDIS_WWAN_BASE_STATIONS_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_base_stations_info) structure.
+This notification uses the [NDIS_WWAN_BASE_STATIONS_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_base_stations_info) structure.
 
 ## Requirements
 
@@ -25,7 +25,7 @@ This notification uses the [NDIS_WWAN_BASE_STATIONS_INFO](https://docs.microsoft
 
 [OID_WWAN_BASE_STATIONS_INFO](oid-wwan-base-stations-info.md)
 
-[NDIS_WWAN_BASE_STATIONS_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_base_stations_info)
+[NDIS_WWAN_BASE_STATIONS_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_base_stations_info)
 
 [MB base stations information query operations](mb-base-stations-information-query-support.md)
 

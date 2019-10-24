@@ -53,15 +53,15 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsend)
-[**WdfRequestSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestsetcompletionroutine)
+[**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)
+[**WdfRequestSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetcompletionroutine)
 See also
 --------
 
 [Completing I/O Requests](https://docs.microsoft.com/windows-hardware/drivers/wdf/completing-i-o-requests)
 [Synchronizing Cancel and Completion Code](https://docs.microsoft.com/windows-hardware/drivers/wdf/synchronizing-cancel-and-completion-code)
-[**WDF\_REQUEST\_SEND\_OPTIONS\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/ne-wdfrequest-_wdf_request_send_options_flags)
-[**WDF\_REQUEST\_SEND\_OPTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/ns-wdfrequest-_wdf_request_send_options)
+[**WDF\_REQUEST\_SEND\_OPTIONS\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_send_options_flags)
+[**WDF\_REQUEST\_SEND\_OPTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_send_options)
  
 
  

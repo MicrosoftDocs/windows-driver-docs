@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Describing Extended Sample Information in AVStream Codecs
 
 
-Decoder filters can find extended sample information in the extended [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksstream_header) structure [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_frame_info), which follows KSSTREAM\_HEADER in memory.
+Decoder filters can find extended sample information in the extended [**KSSTREAM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure [**KS\_FRAME\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info), which follows KSSTREAM\_HEADER in memory.
 
 The driver must propagate information specified in KSSTREAM\_HEADER.OptionsFlags from input (source) to output (destination) KS pins.
 

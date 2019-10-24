@@ -97,7 +97,7 @@ When DMA Verification is active, Driver Verifier detects misuses of DMA routines
 
 -   Attempting to map a zero-length buffer for transfer.
 
--   Calling the obsolete function [**HalGetAdapter**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) (all drivers must use [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdmaadapter) instead).
+-   Calling the obsolete function [**HalGetAdapter**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)) (all drivers must use [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter) instead).
 
 Driver Verifier monitors the driver's behavior and issues bug check 0xE6 if any of these violations occur. See [**Bug Check 0xE6**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xe6--driver-verifier-dma-violation) (DRIVER\_VERIFIER\_DMA\_VIOLATION) for a list of the bug check parameters.
 

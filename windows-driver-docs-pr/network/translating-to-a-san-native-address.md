@@ -24,7 +24,7 @@ A proxy driver uses TDI Plug and Play (PnP) notifications to maintain the list o
 
 The proxy driver receives requests from its SAN service provider that contain IP addresses. These requests include, for example, the request to bind to a specific NIC and the request to connect to a remote peer. The proxy driver must translate to native SAN addresses to complete these requests. The proxy driver also receives incoming connection requests from remote peers that contain SAN native addresses of those remote peers. The proxy driver must translate to the IP addresses of those remote peers to complete these requests.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 

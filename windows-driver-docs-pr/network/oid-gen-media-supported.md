@@ -122,7 +122,7 @@ NDIS 6.0 and later miniport drivers that support the WLAN media transfer packets
 
 For more information about Native 802.11 miniport drivers, see [Native 802.11 Wireless LAN Miniport Drivers](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ff560648(v=vs.85)).
 
-If the underlying miniport driver returns **NULL** for this query, or if an experimental media type is used, the driver must indicate receive operations using the [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function. Any protocol that is bound to such an underlying miniport driver receives all such indications, that is, the protocol driver cannot filter receive operations with [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md).
+If the underlying miniport driver returns **NULL** for this query, or if an experimental media type is used, the driver must indicate receive operations using the [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function. Any protocol that is bound to such an underlying miniport driver receives all such indications, that is, the protocol driver cannot filter receive operations with [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md).
 
 Requirements
 ------------
@@ -143,7 +143,7 @@ Requirements
 ## See also
 
 
-[**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatereceivenetbufferlists)
+[**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists)
 
 [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md)
 

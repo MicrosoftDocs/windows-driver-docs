@@ -33,7 +33,7 @@ A *per-stream context* is a filter-defined structure that contains a [**FSRTL\_P
 
 ### <span id="File_System_Support_for_Per-Stream_Contexts"></span><span id="file_system_support_for_per-stream_contexts"></span><span id="FILE_SYSTEM_SUPPORT_FOR_PER-STREAM_CONTEXTS"></span>File System Support for Per-Stream Contexts
 
-On Microsoft Windows XP and later, file systems that support per-stream contexts must use stream context structures that contain a [**FSRTL\_ADVANCED\_FCB\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure.
+On Microsoft Windows XP and later, file systems that support per-stream contexts must use stream context structures that contain a [**FSRTL\_ADVANCED\_FCB\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure.
 
 The global list of per-stream contexts associated with a particular file stream is owned by the file system. When the file system creates a new stream context (FSRTL\_ADVANCED\_FCB\_HEADER object) for a file stream, it calls [**FsRtlSetupAdvancedHeader**](https://msdn.microsoft.com/library/windows/hardware/ff547257) to initialize this list. When a file system filter driver calls [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194), the per-stream context created by the filter is added to the global list.
 

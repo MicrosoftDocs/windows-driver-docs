@@ -17,7 +17,7 @@ A driver that handles IRPs registers with WMI as a *data provider*. System-suppl
 
 A driver that does not handle IRPs should simply forward WMI requests to the next-lower driver in the driver stack. The next-lower driver then registers with WMI and handles WMI requests on the first driver's behalf. For instance, SCSI miniport drivers and NDIS miniport drivers can register as WMI providers and supply WMI data to their corresponding class drivers.
 
-A driver that supplies WMI data to a class or port driver must support the driver-type-specific WMI interfaces that are defined by the class or port driver. For example, a SCSI miniport driver must set **WmiDataProvider** to **TRUE** in the [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information) structure and handle SRB\_FUNCTION\_WMI requests from the SCSI port driver.
+A driver that supplies WMI data to a class or port driver must support the driver-type-specific WMI interfaces that are defined by the class or port driver. For example, a SCSI miniport driver must set **WmiDataProvider** to **TRUE** in the [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information) structure and handle SRB\_FUNCTION\_WMI requests from the SCSI port driver.
 
 Similarly, a connection-oriented NDIS miniport driver that defines custom data blocks must support [OID\_GEN\_CO\_SUPPORTED\_GUIDS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-co-supported-guids); otherwise, NDIS maps those OIDs and status indications returned from OID\_GEN\_SUPPORTED\_LIST that are common and known to NDIS to GUIDs defined by NDIS.
 

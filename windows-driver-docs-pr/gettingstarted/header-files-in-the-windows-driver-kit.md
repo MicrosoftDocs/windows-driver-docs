@@ -94,7 +94,7 @@ KeSetTargetProcessorDpcEx (
 #endif
 ```
 
-In the example you can see that the [**KeSetTargetProcessorDpcEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesettargetprocessordpcex) function is available only in Windows 7 and later versions of Windows.
+In the example you can see that the [**KeSetTargetProcessorDpcEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettargetprocessordpcex) function is available only in Windows 7 and later versions of Windows.
 
 This conditional declaration appears in Winspool.h, which is a header file that might be included by a user-mode driver.
 

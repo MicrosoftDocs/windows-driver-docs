@@ -27,4 +27,4 @@ A filter driver communicates with NDIS and other NDIS drivers through the NDIS l
 
 [NDIS Filter Drivers](ndis-filter-drivers2.md)
 
-[NDIS Filter Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[NDIS Filter Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)

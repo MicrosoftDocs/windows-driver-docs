@@ -215,7 +215,7 @@ Device MFTs must support the following interfaces:
 
 - [IMFDeviceTransform](https://docs.microsoft.com/windows/desktop/api/mftransform/nn-mftransform-imfdevicetransform)
 
-- [IKsControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nn-ks-ikscontrol)
+- [IKsControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nn-ks-ikscontrol)
 
     - This allows all ksproperties, events and methods to go through the Device MFT. This gives Device MFT the ability to handle these functions calls inside Device MFT or just forward them to the driver. In the case where it handles the KsEvent methods, then the Device MFT has to do the following:
 

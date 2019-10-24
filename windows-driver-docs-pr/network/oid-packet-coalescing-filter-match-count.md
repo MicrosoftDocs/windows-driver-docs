@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 NDIS issues an OID query request of OID\_PACKET\_COALESCING\_FILTER\_MATCH\_COUNT to obtain the number of packets that were cached, or *coalesced*, on the network adapter. The network adapter coalesces received packets if the adapter is enabled for [NDIS packet coalescing](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-packet-coalescing) and the packet matches a receive filter.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a caller-allocated ULONG64 variable. Before a successful return from the query request, the driver updates the ULONG64 variable with the number of packets that have matched receive filters on the network adapter.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a caller-allocated ULONG64 variable. Before a successful return from the query request, the driver updates the ULONG64 variable with the number of packets that have matched receive filters on the network adapter.
 
 Remarks
 -------
@@ -32,9 +32,9 @@ The miniport driver must not clear the counter after it handles the OID query re
 
 -   The miniport driver handles an OID set request of [OID\_PNP\_SET\_POWER](oid-pnp-set-power.md) to resume to a full-power state of NdisDeviceStateD0.
 
--   NDIS calls the miniport driver's [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset) function to reset the underlying network adapter.
+-   NDIS calls the miniport driver's [*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset) function to reset the underlying network adapter.
 
-For more information about packet coalescing, see [NDIS Packet Coalescing](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+For more information about packet coalescing, see [NDIS Packet Coalescing](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
 ### Return status codes
 
@@ -44,7 +44,7 @@ The miniport driver returns one of the following status codes for the OID method
 The OID request completed successfully.
 
 <a href="" id="ndis-status-invalid-length"></a>NDIS\_STATUS\_INVALID\_LENGTH  
-The information buffer was too short. The driver sets the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.
+The information buffer was too short. The driver sets the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.
 
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for other reasons.
@@ -72,9 +72,9 @@ Requirements
 ## See also
 
 
-[*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_reset)
+[*MiniportResetEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_reset)
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
 [OID\_PNP\_SET\_POWER](oid-pnp-set-power.md)
 

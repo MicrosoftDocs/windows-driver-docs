@@ -37,7 +37,7 @@ For more information about various kinds of drivers and the requests that each i
 
 [HID Architecture](https://docs.microsoft.com/previous-versions/jj126193(v=vs.85))
 
-[I/O Requests for USB Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#km-ioctl)
+[I/O Requests for USB Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#km-ioctl)
 
 [The IEEE 1394 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/the-ieee-1394-driver-stack)
 

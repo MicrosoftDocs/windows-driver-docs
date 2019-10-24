@@ -20,7 +20,7 @@ This section describes the specific header-data split requirements that apply to
 
  
 
-If the header-data split provider splits a frame in compliance with the header-data split requirements, the indicated [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_HD\_SPLIT flag set in the **NblFlags** member. If the header-data split provider does not split a frame, the frame must be indicated with the following flags cleared in **NblFlags** :
+If the header-data split provider splits a frame in compliance with the header-data split requirements, the indicated [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_HD\_SPLIT flag set in the **NblFlags** member. If the header-data split provider does not split a frame, the frame must be indicated with the following flags cleared in **NblFlags** :
 
 -   NDIS\_NBL\_FLAGS\_HD\_SPLIT
 

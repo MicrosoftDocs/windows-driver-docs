@@ -28,7 +28,7 @@ The miniport driver:
 
 -   Sets NDIS\_OID\_REQUEST **BytesWritten** to 8.
 
--   Returns NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_oid_request) function.
+-   Returns NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function.
 
 ### <a href="" id="-32-bit-query-of-a-64-bit-value"></a>32-bit query of a 64-bit value
 
@@ -42,7 +42,7 @@ The miniport driver:
 
 -   Sets NDIS\_OID\_REQUEST **BytesNeeded** to 8.
 
--   Returns NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_oid_request) function.
+-   Returns NDIS\_STATUS\_SUCCESS from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function.
 
 ### Invalid-length query of a 64-bit value
 
@@ -56,7 +56,7 @@ The miniport driver:
 
 -   Sets NDIS\_OID\_REQUEST **BytesNeeded** to 8.
 
--   Returns NDIS\_STATUS\_INVALID\_LENGTH from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_co_oid_request) function.
+-   Returns NDIS\_STATUS\_INVALID\_LENGTH from its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) or [**MiniportCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function.
 
  
 

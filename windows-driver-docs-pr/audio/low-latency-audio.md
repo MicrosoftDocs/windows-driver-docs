@@ -527,8 +527,8 @@ static struct
 
 See the following topics for more in-depth information regarding these structures:
 
--   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints)
--   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
+-   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints)
+-   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
 
 Also, the sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>) shows how to use these properties, in order for a driver to declare the minimum buffer for each mode.
 
@@ -543,8 +543,8 @@ The DDIs that are described in this section allow the driver to:
 
 This DDI is very useful in the case, where an DSP is used. However, a standard HD Audio driver or other simple circular DMA buffer designs might not find much benefit in these new DDIs listed here.
 
--   [IMiniportWaveRTInputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavertinputstream)
--   [IMiniportWaveRTOutputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportwavertoutputstream)
+-   [IMiniportWaveRTInputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertinputstream)
+-   [IMiniportWaveRTOutputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertoutputstream)
 
 Several of the driver routines return Windows performance counter timestamps reflecting the time at which samples are captured or presented by the device.
 
@@ -581,15 +581,15 @@ Notes:
 -   HDAudio miniport function drivers that are enumerated by the inbox HDAudio bus driver hdaudbus.sys do not need to register the HDAudio interrupts, as this is already done by hdaudbus.sys. However, if the miniport driver creates its own threads, then it needs to register them.
 -   Drivers that link with Portcls only for the purpose of registering streaming resources must update their INFs to include/needs wdmaudio.inf and copy portcls.sys (and dependent files). A new INF copy section is defined in wdmaudio.inf to only copy those files.
 -   Audio drivers that only run in Windows 10 can hard-link to:
-    -   [**PcAddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcaddstreamresource)
-    -   [**PcRemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcremovestreamresource)
+    -   [**PcAddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddstreamresource)
+    -   [**PcRemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcremovestreamresource)
 -   Audio drivers that must run on a down-level OS can use the following interface (the miniport can call QueryInterface for the IID\_IPortClsStreamResourceManager interface and register its resources only when PortCls supports the interface).
-    -   [IPortClsStreamResourceManager](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsstreamresourcemanager)
-        -   [**AddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsstreamresourcemanager-addstreamresource)
-        -   [**RemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsstreamresourcemanager-removestreamresource)
+    -   [IPortClsStreamResourceManager](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsstreamresourcemanager)
+        -   [**AddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsstreamresourcemanager-addstreamresource)
+        -   [**RemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsstreamresourcemanager-removestreamresource)
 -   These DDIs, use this enumeration and structure:
-    -   [**PcStreamResourceType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ne-portcls-_pcstreamresourcetype)
-    -   [**PCSTREAMRESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-_pcstreamresource_descriptor)
+    -   [**PcStreamResourceType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ne-portcls-_pcstreamresourcetype)
+    -   [**PCSTREAMRESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcstreamresource_descriptor)
 
 Finally, drivers that link-in PortCls for the sole purpose of registering resources must add the following two lines in their inf's DDInstall section. Audio miniport drivers do not need this because they already have include/needs in wdmaudio.inf.
 

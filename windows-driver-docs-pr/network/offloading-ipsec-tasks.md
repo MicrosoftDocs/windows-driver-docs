@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 
 This section describes the offloading of Internet protocol security (IPsec) tasks.
 
-**Note**  IPsec offload out-of-band (OOB) data is stored in the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) information array. For more information about OOB data, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
+**Note**  IPsec offload out-of-band (OOB) data is stored in the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) information array. For more information about OOB data, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
 
  
 

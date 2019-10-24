@@ -60,11 +60,11 @@ The PrinterExtensionLibrary project that is shipped in the Microsoft Store devic
 
 An API has been developed as part of the v4 print driver model to support Printer Extensions and UWP device apps for printing. At a high level, the print preferences scenario uses PrintTicket, PrintCapabilities and the new property bags to get and store all of its information. Printer notifications are driven by a new eventing system that is based on the Bidirectional Communication (Bidi) Schema, and this new system uses the AsyncUI protocol between client and server. The data-centric nature of this API means that one application could easily support many devices.
 
-Printer extensions need to be built in such a way that they can gracefully degrade if the requested data is unavailable. For example, if a particular PrintCapabilities feature is unavailable, or if a property in one of the property bags is unavailable, this should not prevent the rest of the app from functioning. When accessing property bags, or specific properties in a property bag, the app should use the try-catch syntax in order to ensure that any exceptions that are thrown do not cause the app to crash. For more information, see [Printer Extension Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/index#interfaces).
+Printer extensions need to be built in such a way that they can gracefully degrade if the requested data is unavailable. For example, if a particular PrintCapabilities feature is unavailable, or if a property in one of the property bags is unavailable, this should not prevent the rest of the app from functioning. When accessing property bags, or specific properties in a property bag, the app should use the try-catch syntax in order to ensure that any exceptions that are thrown do not cause the app to crash. For more information, see [Printer Extension Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/index#interfaces).
 
 ## Related resources
 
-[Printer Extension Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/#interfaces)
+[Printer Extension Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/#interfaces)
 
 [v4 print driver samples on GitHub](https://github.com/Microsoft/Windows-driver-samples/tree/master/print/v4PrintDriverSamples)
 

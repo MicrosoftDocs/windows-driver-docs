@@ -121,11 +121,11 @@ There can also be software dependencies between device drivers. These dependenci
 -   For driver-load-order dependencies, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
 -   For power-relations dependencies, see:
 
-    -   [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
+    -   [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
     -   [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
     -   [Enumerating the Devices on a Bus](https://docs.microsoft.com/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus)
     -   [Dynamic Enumeration](https://docs.microsoft.com/windows-hardware/drivers/wdf/dynamic-enumeration)
-    -   [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method
+    -   [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method
 
 
 

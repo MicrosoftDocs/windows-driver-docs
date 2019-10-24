@@ -15,7 +15,7 @@ The state of the SO\_REUSEADDR socket option determines whether the local transp
 
 If a WSK application sets this socket option, it must do so before the socket is bound to a local transport address.
 
-To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>

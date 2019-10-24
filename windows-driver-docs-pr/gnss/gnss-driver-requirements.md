@@ -23,7 +23,7 @@ Describes requirements, assumptions, and constraints to consider when developing
 
     The support in the GNSS driver for multiple application sessions has the advantage of enabling a test application in the HLOS to interact directly with the GNSS driver at the same time as the GNSS adapter. The test application and the GNSS adapter are what we considered different applications that can request to a single GNSS driver different sessions simultaneously. If multiple application sessions are not supported, then the GNSS driver needs to either be tested with through the OS Location Platform, or otherwise the service hosting the OS Location Platform should be stopped to avoid interfering with the test application.
 
--   **Fix session:** The act of getting positioning information from the underlying driver (single shot or tracking) is abstracted into a notion of a fix session. Drivers need to support at least one fix session of each session type supported. The session types are defined under the [**GNSS\_FIXSESSIONTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ne-gnssdriver-gnss_fixsessiontype) enumeration.
+-   **Fix session:** The act of getting positioning information from the underlying driver (single shot or tracking) is abstracted into a notion of a fix session. Drivers need to support at least one fix session of each session type supported. The session types are defined under the [**GNSS\_FIXSESSIONTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ne-gnssdriver-gnss_fixsessiontype) enumeration.
 
     -   At a minimum, GNSS drivers must support a single shot fix session.
 
@@ -92,7 +92,7 @@ Describes requirements, assumptions, and constraints to consider when developing
 
 ## Minimum support requirements
 
-There will be a large variety of GNSS devices that can be used for Windows platforms to satisfy the needs of diverse tiers of devices (low cost, high end, different device types, and so on). To enable such rich ecosystem and increase the number of tablets, laptops and other device types that can include a GNSS chip at lower cost, Microsoft does not require all GNSS devices to support the full set of features described in [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver). The following table provides a high level view of the minimal functionality required for different device types and what functionality is optional or recommended.
+There will be a large variety of GNSS devices that can be used for Windows platforms to satisfy the needs of diverse tiers of devices (low cost, high end, different device types, and so on). To enable such rich ecosystem and increase the number of tablets, laptops and other device types that can include a GNSS chip at lower cost, Microsoft does not require all GNSS devices to support the full set of features described in [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver). The following table provides a high level view of the minimal functionality required for different device types and what functionality is optional or recommended.
 
 <table>
 <colgroup>

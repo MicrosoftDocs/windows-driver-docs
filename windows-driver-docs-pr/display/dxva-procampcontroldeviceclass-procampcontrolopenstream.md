@@ -32,7 +32,7 @@ Parameters
 ----------
 
 *lpVideoDescription* \[in\]
-Supplies a pointer to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc) structure that defines the ProcAmp control parameters for the video to be processed.
+Supplies a pointer to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure that defines the ProcAmp control parameters for the video to be processed.
 
 Return value
 ------------
@@ -49,7 +49,7 @@ The *ProcAmpControlOpenStream* function maps directly to a call to the CreateMoC
 ## <span id="see_also"></span>See also
 
 
-[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videodesc)
+[**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc)
 
 [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 

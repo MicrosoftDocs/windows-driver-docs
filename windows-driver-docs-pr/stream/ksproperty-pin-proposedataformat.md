@@ -47,8 +47,8 @@ Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -60,9 +60,9 @@ Remarks
 
 KSPROPERTY_PIN_PROPOSEDATAFORMAT includes a structure of type KSDATAFORMAT, specifying the proposed data format. Specify this property using KSP_PIN, where the member specifies the relevant pin factory.
 
-KSPROPERTY\_PIN\_PROPOSEDATAFORMAT includes a structure of type [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat), specifying the proposed data format.
+KSPROPERTY\_PIN\_PROPOSEDATAFORMAT includes a structure of type [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat), specifying the proposed data format.
 
-[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier) is supported in Windows 7 and later versions of Windows. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*. 
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) is supported in Windows 7 and later versions of Windows. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*. 
 
 **KSPROPERTY_TYPE_GET** with this property allows the audio driver to provide information about the default data format on a pin. **KSPROPERTY_TYPE_GET** 
 is optional to implement for this property unless the driver supports [**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange). 
@@ -93,15 +93,15 @@ Requirements
 ## See also
 
 
-[**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)
+[**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 
-[**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat)
+[**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)
  
 [**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange)
 
 [**KS Properites**](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/ks-properties)
 
-[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
  
 [**KSPROPERTY_AUDIOSIGNALPROCESSING_MODES**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiosignalprocessing-modes)
 

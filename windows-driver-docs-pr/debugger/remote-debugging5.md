@@ -16,7 +16,7 @@ There are many possible configurations: the client object can be created in the 
 
 Multiple clients can simultaneously connect to the host engine. And the host engine can connect to multiple targets in the same debugging session. Optionally, there can be one or more proxies between the clients and the host engine and between the host engine and each target.
 
-Smart clients are client objects that communicate directly with the host engine. A debugging client is created by calling [**DebugConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-debugconnect); the client communicates with the host engine using RPC calls that represent method calls in the engine's API (including calls that the host engine makes to the client's [callback objects](client-objects.md#callback-objects)).
+Smart clients are client objects that communicate directly with the host engine. A debugging client is created by calling [**DebugConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-debugconnect); the client communicates with the host engine using RPC calls that represent method calls in the engine's API (including calls that the host engine makes to the client's [callback objects](client-objects.md#callback-objects)).
 
 A debugging server is an engine instance that communicates directly with the target and is also the host engine. Process servers and kernel connection servers communicate directly with the target but are not the host engine. The host engine communicates with the process server, or kernel connection server, by sending low-level memory, processor, and operating system requests, and the server sends back the results.
 

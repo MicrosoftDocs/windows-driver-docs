@@ -27,7 +27,7 @@ Use the following guidelines to safely query and modify the attributes of device
 
         To save the custom settings, use [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) after the registry key has been created or opened.
 
--   Kernel-mode drivers should use [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to open the registry key for a device interface class.
+-   Kernel-mode drivers should use [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to open the registry key for a device interface class.
 
  
 

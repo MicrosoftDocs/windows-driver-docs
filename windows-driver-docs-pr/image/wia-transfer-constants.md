@@ -96,7 +96,7 @@ The following table shows possible values for the *lFlags* parameter of **IWiaTr
 
 ### Transfer Flags
 
-The following table shows the flags that may be passed into [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata).
+The following table shows the flags that may be passed into [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata).
 
 <table>
 <colgroup>

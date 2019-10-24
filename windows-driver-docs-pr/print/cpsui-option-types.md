@@ -34,7 +34,7 @@ When using CPSUI to create a property sheet page, user-selectable options must b
 
 [**TVOT\_UDARROW**](tvot-udarrow.md)
 
-An option's type is specified in the **Type** member of an [**OPTTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_opttype) structure.
+An option's type is specified in the **Type** member of an [**OPTTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) structure.
 
  
 

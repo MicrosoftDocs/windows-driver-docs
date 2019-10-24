@@ -39,7 +39,7 @@ The following notes correspond to the circled numbers in the previous figure:
 
 3.  Reenumerate the device
 
-    If the device is reenumerated after drivers have deleted their device objects, the PnP manager calls the drivers' [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routines and issues an [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) to reinstate the device. (Also see the [Device States from the PnP Perspective](state-transitions-for-pnp-devices.md#ddk-state-transitions-for-pnp-devices-kg) figure.)
+    If the device is reenumerated after drivers have deleted their device objects, the PnP manager calls the drivers' [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routines and issues an [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) to reinstate the device. (Also see the [Device States from the PnP Perspective](state-transitions-for-pnp-devices.md#ddk-state-transitions-for-pnp-devices-kg) figure.)
 
 4.  Cancel a query remove
 

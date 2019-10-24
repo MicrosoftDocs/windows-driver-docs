@@ -54,7 +54,7 @@ The DEVPKEY_Device_PDOName device property represents the name of the physical d
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) routine.
+Windows sets the value of DEVPKEY_Device_PDOName to the name of the physical name object (PDO) that represents a device. For more information about PDO names, see the *DeviceName* parameter that is used with the [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) routine.
 
 You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PDOName.
 
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice)
+[**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)
 
 [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 

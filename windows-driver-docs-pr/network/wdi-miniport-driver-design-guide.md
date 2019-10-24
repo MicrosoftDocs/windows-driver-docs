@@ -122,7 +122,7 @@ The following principles guided the overall model and design of this protocol.
 ## Related topics
 
 
-[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
  
 

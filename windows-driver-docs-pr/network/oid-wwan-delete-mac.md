@@ -26,7 +26,7 @@ OID\_WWAN\_DELETE\_MAC requests sent to delete the default port will fail with t
 
 Upon receiving an OID\_WWAN\_DELETE\_MAC request, miniport drivers should deactivate the PDP context associated with the port, if it has not already been deactivated. This is because a surprise removal event could occur. Deactivating the PDP context at such time will ensure that the modem and the miniport driver remain in a good state.
 
-When the driver receives a surprise removal, the driver blocks and cancels all further OIDs. This means that the driver filters out OID\_WWAN\_DELETE\_MAC even though Windows sends a call with OID\_WWAN\_DELETE\_MAC as part of the [*FILTER\_DETACH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_detach) call.
+When the driver receives a surprise removal, the driver blocks and cancels all further OIDs. This means that the driver filters out OID\_WWAN\_DELETE\_MAC even though Windows sends a call with OID\_WWAN\_DELETE\_MAC as part of the [*FILTER\_DETACH*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_detach) call.
 
 Requirements
 ------------

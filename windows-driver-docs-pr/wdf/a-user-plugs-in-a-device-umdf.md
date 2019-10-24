@@ -18,7 +18,7 @@ When a user plugs in a device, the framework calls a UMDF driver's PnP and Power
 
 ![device enumeration and startup sequence for a umdf driver](images/umdf-powerup-sequence.png)
 
-The framework begins by calling the driver’s [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback so that the driver can create a device callback object and a framework device object to represent the device. The framework continues calling the driver’s callback routines by progressing up through the sequence until the device is operational.
+The framework begins by calling the driver’s [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback so that the driver can create a device callback object and a framework device object to represent the device. The framework continues calling the driver’s callback routines by progressing up through the sequence until the device is operational.
 
 The framework proceeds through this sequence for each UMDF function or filter driver that supports the device, one driver at a time, starting with the driver that is lowest in the driver stack.
 

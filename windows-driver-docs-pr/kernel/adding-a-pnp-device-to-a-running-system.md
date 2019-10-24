@@ -35,7 +35,7 @@ The following notes correspond to the circled numbers in the previous figure:
 
 3.  The function driver for the bus device notifies the PnP manager that its set of child devices has changed.
 
-    The function driver notifies the PnP manager by calling [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) with a *Type* of **BusRelations**.
+    The function driver notifies the PnP manager by calling [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) with a *Type* of **BusRelations**.
 
 4.  The PnP manager queries the bus's drivers for the current list of devices on the bus.
 
@@ -49,7 +49,7 @@ The following notes correspond to the circled numbers in the previous figure:
 
     In this example, the USB hub driver handles this IRP for the hub *FDO*. The hub driver creates a *PDO* for the joystick device and includes a referenced pointer to the joystick PDO in its list of child devices returned with the IRP.
 
-    When the USB hub's parent bus driver (the USB host controller class/miniclass driver pair) completes the IRP, the IRP travels back up the device stack by means of any [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routines registered by the hub drivers.
+    When the USB hub's parent bus driver (the USB host controller class/miniclass driver pair) completes the IRP, the IRP travels back up the device stack by means of any [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines registered by the hub drivers.
 
 Note that the bus function driver reports a change in its list of children by requesting that the PnP manager query for its list of child devices. The resulting **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request is seen by all the drivers for the bus device. Typically, the bus function driver is the only driver to handle the IRP and report children. In some device stacks, a bus filter driver is present and participates in constructing the list of bus relations. One example is ACPI, which attaches as a bus filter driver for ACPI devices. In some device stacks, nonbus filter drivers handle the **IRP\_MN\_QUERY\_DEVICE\_RELATIONS** request, but this is not typical.
 
@@ -151,7 +151,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
 2.  The user-mode Setup components direct the kernel-mode PnP manager to load the function and filter drivers.
 
-    The user-mode components call back to kernel mode to get the drivers loaded, causing their [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routines to be called.
+    The user-mode components call back to kernel mode to get the drivers loaded, causing their [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routines to be called.
 
 The following figure shows the PnP manager loading the drivers (if appropriate), calling their *AddDevice* routines, and directing the drivers to start the device.
 
@@ -161,7 +161,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
 1.  Lower-filter drivers
 
-    Before the function driver attaches to the device stack, the PnP manager processes any lower-filter drivers. For each lower-filter driver, the PnP manager calls the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine if the driver is not yet loaded. Then the PnP manager calls the driver's *AddDevice* routine. In its *AddDevice* routine, the filter driver creates a filter device object (filter DO) and attaches it to the device stack ([**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioattachdevicetodevicestack)). Once it attaches its device object to the device stack, the driver is engaged as a driver for the device.
+    Before the function driver attaches to the device stack, the PnP manager processes any lower-filter drivers. For each lower-filter driver, the PnP manager calls the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine if the driver is not yet loaded. Then the PnP manager calls the driver's *AddDevice* routine. In its *AddDevice* routine, the filter driver creates a filter device object (filter DO) and attaches it to the device stack ([**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack)). Once it attaches its device object to the device stack, the driver is engaged as a driver for the device.
 
     In the USB joystick example, there is one lower-filter driver for the device.
 
@@ -214,7 +214,7 @@ The following notes correspond to the numbered circles in the previous figure:
 
 The GUID_PNP_LOCATION_INTERFACE interface supplies the SPDRP_LOCATION_PATHS Plug and Play (PnP) device property for a device.
 
-To implement this interface in your driver, handle the IRP_MN_QUERY_INTERFACE IRP with InterfaceType = GUID_PNP_LOCATION_INTERFACE. Your driver supplies a pointer to a PNP_LOCATION_INTERFACE structure that contains pointers to the individual routines of the interface. The [PnpGetLocationString routine](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-pget_location_string) provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
+To implement this interface in your driver, handle the IRP_MN_QUERY_INTERFACE IRP with InterfaceType = GUID_PNP_LOCATION_INTERFACE. Your driver supplies a pointer to a PNP_LOCATION_INTERFACE structure that contains pointers to the individual routines of the interface. The [PnpGetLocationString routine](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pget_location_string) provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
 
 
 
