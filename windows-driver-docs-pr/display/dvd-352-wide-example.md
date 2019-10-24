@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_dvd_352_wide_example_gg"></span><span id="DDK_DVD_352_WIDE_EXAMPLE_GG"></span>
 
 
-DVD can use 352-wide pictures, which can be stretched to a width of 704 by use of the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure (in one-sixteenth of a luminance sample spacing resolution).
+DVD can use 352-wide pictures, which can be stretched to a width of 704 by use of the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination) structure (in one-sixteenth of a luminance sample spacing resolution).
 
 The **PictureSourceRect16thPel** member defines a source rectangle with the following values:
 
@@ -25,7 +25,7 @@ The **PictureSourceRect16thPel** member defines a source rectangle with the foll
 
 -   **right** = 16 X (**left** + *horizontal\_size*) = 5632
 
-The **PictureDestinationRect** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure defines two alternative destination rectangles with the following values:
+The **PictureDestinationRect** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination) structure defines two alternative destination rectangles with the following values:
 
 1.  A destination rectangle with the following values:
     -   **left** = 8

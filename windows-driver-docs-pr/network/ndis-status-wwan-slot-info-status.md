@@ -15,7 +15,7 @@ Miniport drivers use the **NDIS\_STATUS\_WWAN\_SLOT\_INFO** notification to info
 
 Miniport drivers can send a **NDIS\_STATUS\_WWAN\_SLOT\_INFO** notification as an unsolicited event when the slot/card state changes.
 
-This notification uses the [**NDIS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure.
+This notification uses the [**NDIS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure.
 
 Requirements
 ------------
@@ -42,7 +42,7 @@ Requirements
 
 [OID\_WWAN\_SLOT\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-slot-info-status)
 
-[**NDIS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info)
+[**NDIS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info)
 
  
 

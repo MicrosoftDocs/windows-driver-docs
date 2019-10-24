@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The file system object I/O routines represent the traditional file I/O calls for read, write, and other file operations. These routines are often called "low I/O routines" in the network mini-redirector. RDBSS calls these routines in response to receiving a specific IRP
 
-The low I/O routines are passed in as an array of routine pointers as part of the MINIRDR\_DISPATCH structure passed to the [**RxRegisterMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nf-mrx-rxregisterminirdr) routine that is used to register the network mini-redirector at startup (in the **DriverEntry** routine). The value of the array entry is the low I/O operation to perform.
+The low I/O routines are passed in as an array of routine pointers as part of the MINIRDR\_DISPATCH structure passed to the [**RxRegisterMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nf-mrx-rxregisterminirdr) routine that is used to register the network mini-redirector at startup (in the **DriverEntry** routine). The value of the array entry is the low I/O operation to perform.
 
 These low I/O or file system object I/O routines are normally called asynchronously by RDBSS. So a network mini-redirector must make certain that any low I/O routines that are implemented can be safely called asynchronously. It is also possible for a network mini-redirector to ignore the request for an asynchronous call and implement a routine to only operate synchronously. However, for certain calls that may take time to complete (read and write, for example), implementing these as synchronous operations can significantly reduce I/O performance for the entire operating system.
 
@@ -28,7 +28,7 @@ Other file I/O routines other than the low I/O routines are based on synchronous
 
 While in the LowIo path, the **LowIoContext.ResourceThreadId** member of the RX\_CONTEXT is guaranteed to indicate the owning thread that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member can be used to release the FCB resource on behalf of another thread. When an asynchronous routine completes, the FCB resource that was acquired from the initial thread can be released.
 
-If an **MrxLowIoSubmit\[LOWIO\_OP\_XXX\]** routine is likely to take a long time to complete, the network mini-redirector driver should release the FCB resource before initiating the network communication. The FCB resource can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
+If an **MrxLowIoSubmit\[LOWIO\_OP\_XXX\]** routine is likely to take a long time to complete, the network mini-redirector driver should release the FCB resource before initiating the network communication. The FCB resource can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx).
 
 The following table lists the routines that can be implemented by a network mini-redirector for file system object I/O (low I/O) operations.
 

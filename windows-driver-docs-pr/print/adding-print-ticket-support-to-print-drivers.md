@@ -18,7 +18,7 @@ To completely support the [Print Ticket and Print Capabilities technologies](pri
 
 -   Support the [IPrintTicketProvider interface](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff554375(v=vs.85)), as appropriate, to provide the [Print Capabilities](print-capabilities.md) document for the printer.
 
--   Support the [IPrintOemPrintTicketProvider interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintoemprintticketprovider) in print driver plug-ins.
+-   Support the [IPrintOemPrintTicketProvider interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintoemprintticketprovider) in print driver plug-ins.
 
 -   Use the [Print Ticket](print-ticket.md) information when processing a print job.
 

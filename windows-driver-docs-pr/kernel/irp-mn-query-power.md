@@ -20,7 +20,7 @@ Major Code
 When Sent
 ---------
 
-The power manager or a device power policy owner sends this IRP to determine whether it can change the system or device power state, typically to go to sleep. A driver must call [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) to allocate and send this IRP.
+The power manager or a device power policy owner sends this IRP to determine whether it can change the system or device power state, typically to go to sleep. A driver must call [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to allocate and send this IRP.
 
 The power manager sends this IRP at IRQL = PASSIVE\_LEVEL to device stacks that set the DO\_POWER\_PAGABLE flag in the PDO.
 
@@ -33,9 +33,9 @@ The power manager can send the IRP at IRQL = DISPATCH\_LEVEL if the DO\_POWER\_I
 
 **Parameters.Power.State** specifies the power state itself, as follows:
 
--   If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_system_power_state) type.
+-   If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) type.
 
--   If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_device_power_state) type.
+-   If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) type.
 
 **Parameters.Power.ShutdownType** specifies additional information about the requested transition. Possible values are enumerators of the **POWER\_ACTION** type.
 
@@ -56,7 +56,7 @@ The parameters for **IRP\_MN\_QUERY\_POWER** are identical to those for [**IRP\_
 
 A driver must not change the power state of its device in response to an **IRP\_MN\_QUERY\_POWER** request.
 
-After a driver receives an **IRP\_MN\_QUERY\_POWER** request on Windows Server 2003, Windows XP, and Windows 2000, a driver must call [**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-postartnextpowerirp), as described in [Calling **PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/kernel/calling-postartnextpowerirp). Beginning with Windows Vista, calling **PoStartNextPowerIrp** is not required and such a call performs no power management operation.
+After a driver receives an **IRP\_MN\_QUERY\_POWER** request on Windows Server 2003, Windows XP, and Windows 2000, a driver must call [**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp), as described in [Calling **PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/kernel/calling-postartnextpowerirp). Beginning with Windows Vista, calling **PoStartNextPowerIrp** is not required and such a call performs no power management operation.
 
 **IRP\_MN\_QUERY\_POWER for a System Power State**
 
@@ -68,7 +68,7 @@ When a driver receives a system power query IRP, it should fail the IRP if it ca
 
 Beginning with Windows Vista, transition to a system sleep state is considered a critical operation. Although a driver might fail a system query-power IRP, the power manager might still change the system power state to a sleep state. After a driver receives a system query-power IRP, the driver should always be prepared for a subsequent change in the system power state.
 
-When a device power policy owner receives a system power query IRP, it should set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine in the IRP before passing it down. In the *IoCompletion* routine, it should send an **IRP\_MN\_QUERY\_POWER** for a device state that is valid for the queried system state. For more information, see [Handling a System Query-Power IRP in a Device Power Policy Owner](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-a-system-query-power-irp-in-a-device-power-policy-owner).
+When a device power policy owner receives a system power query IRP, it should set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine in the IRP before passing it down. In the *IoCompletion* routine, it should send an **IRP\_MN\_QUERY\_POWER** for a device state that is valid for the queried system state. For more information, see [Handling a System Query-Power IRP in a Device Power Policy Owner](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-a-system-query-power-irp-in-a-device-power-policy-owner).
 
 When the IRP specifies **PowerSystemShutdown** (S5), the value at **Parameters.Power.ShutdownType** provides a reason for the shutdown. The **ShutdownType** tells the driver whether the system is resetting (**PowerActionShutdownReset**) or powering off indefinitely to reboot later (**PowerActionShutdownOff**). For drivers of most devices, the difference is inconsequential. However, for certain devices, such as a video streaming device that performs DMA, a driver might opt to power down its device when the system is resetting, thus stopping any ongoing I/O.
 
@@ -109,9 +109,9 @@ Requirements
 
 [**IRP\_MN\_SET\_POWER**](irp-mn-set-power.md)
 
-[**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp)
+[**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)
 
-[**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-postartnextpowerirp)
+[**PoStartNextPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp)
 
  
 

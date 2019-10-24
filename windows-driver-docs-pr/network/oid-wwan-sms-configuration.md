@@ -17,7 +17,7 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Query requests return the MB device's current SMS text message configuration stored in the device or Subscriber Identity Module (SIM) card.
 
-Set requests use the [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration) structure to change the SMS text message configuration of the MB device.
+Set requests use the [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration) structure to change the SMS text message configuration of the MB device.
 
 Remarks
 -------
@@ -57,7 +57,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration)
+[**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration)
 
 [**NDIS\_STATUS\_WWAN\_SMS\_CONFIGURATION**](ndis-status-wwan-sms-configuration.md)
 

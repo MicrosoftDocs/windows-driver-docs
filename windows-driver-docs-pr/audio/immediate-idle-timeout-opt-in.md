@@ -35,7 +35,7 @@ When the runtime power management framework invokes a callback for the **DeviceP
 
 If a driver opts-in to immediate idle power management, it must ensure that the Power Engine Plug-in (PEP) for the system contains the logic needed to prevent unnecessarily and continuously powering the adapter up and down for IRPs received in immediate succession. Some residency rules should be applied in order to keep the device powered up for batches of I/O requests.
 
-In addition, the new interface introduced in Windows 7 that allows drivers to programmatically enable or disable idle power management, continues to be honored when the driver has not opted-in to immediate idle power management. This is done via the [**IPortClsPower::SetIdlePowerManagement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclspower-setidlepowermanagement) method and would override the settings in the registry, except for the case in which *ImmediateIdle* is set to 1 (TRUE).
+In addition, the new interface introduced in Windows 7 that allows drivers to programmatically enable or disable idle power management, continues to be honored when the driver has not opted-in to immediate idle power management. This is done via the [**IPortClsPower::SetIdlePowerManagement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclspower-setidlepowermanagement) method and would override the settings in the registry, except for the case in which *ImmediateIdle* is set to 1 (TRUE).
 
  
 

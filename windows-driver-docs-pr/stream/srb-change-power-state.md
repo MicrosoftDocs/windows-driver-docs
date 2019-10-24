@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_srb_change_power_state_ks"></span><span id="DDK_SRB_CHANGE_POWER_STATE_KS"></span>
 
 
-The class driver sends this request to signal to the minidriver that it should reset its power state. *pSrb*-&gt;**DeviceState** specifies the new power state. See [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block).
+The class driver sends this request to signal to the minidriver that it should reset its power state. *pSrb*-&gt;**DeviceState** specifies the new power state. See [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block).
 
 ### <span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 

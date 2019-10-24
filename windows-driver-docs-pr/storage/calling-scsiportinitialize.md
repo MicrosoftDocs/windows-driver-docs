@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_calling_scsiportinitialize_kg"></span><span id="DDK_CALLING_SCSIPORTINITIALIZE_KG"></span>
 
 
-If a miniport driver's HBA can be connected on more than one type of I/O bus, the miniport driver must call [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportinitialize) for each bus type and can have a different *HwScsiFindAdapter* routine for each bus type.
+If a miniport driver's HBA can be connected on more than one type of I/O bus, the miniport driver must call [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize) for each bus type and can have a different *HwScsiFindAdapter* routine for each bus type.
 
 After each call to **ScsiPortInitialize**, such a miniport driver must:
 
 -   Modify the AdapterInterfaceType member.
 
--   Modify the HwScsiFindAdapter member in [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_hw_initialization_data) if the miniport driver has a different HwScsiFindAdapter routine for that bus type.
+-   Modify the HwScsiFindAdapter member in [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_hw_initialization_data) if the miniport driver has a different HwScsiFindAdapter routine for that bus type.
 
 -   Modify the miniport driver-supplied context data for the new bus type.
 
@@ -40,7 +40,7 @@ For both Plug and Play and legacy miniport drivers, the port driver does all of 
 
 -   Allocates memory for and initializes with zeros a device extension of the requested size in which the miniport driver can store driver-determined information about the HBA.
 
--   Allocates memory for a configuration information buffer that is **sizeof**([**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information)).
+-   Allocates memory for a configuration information buffer that is **sizeof**([**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information)).
 
 -   In the configuration information buffer, fills in a PORT\_CONFIGURATION\_INFORMATION structure with as much configuration information about an HBA on a particular I/O bus as possible, from the miniport driver-supplied HW\_INITIALIZATION\_DATA and from other sources, such as the registry for a legacy miniport driver or from the Plug and Play manager for a Plug and Play miniport driver.
 
@@ -62,7 +62,7 @@ For a Plug and Play miniport driver, the port driver performs these operations a
 
 Each SCSI miniport driver defines the internal structure and contents of its device extension, logical unit extensions (if any), and SRB extensions (if any). A pointer to the HBA-specific device extension is an input argument to every system-defined miniport driver routine except **DriverEntry**. Many **ScsiPort***Xxx* routines require this pointer as an argument.
 
-**ScsiPortInitialize** can be called only from a miniport driver's **DriverEntry** routine. For more information, see [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_hw_initialization_data) and [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportinitialize).
+**ScsiPortInitialize** can be called only from a miniport driver's **DriverEntry** routine. For more information, see [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_hw_initialization_data) and [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize).
 
  
 

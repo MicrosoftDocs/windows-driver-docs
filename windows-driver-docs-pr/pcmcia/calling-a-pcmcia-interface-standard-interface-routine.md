@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This section describes how to call a PCMCIA\_INTERFACE\_STANDARD interface routine.
 
-After a driver obtains an [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) structure from the PCMCIA bus driver, the driver can call the interface routines.
+After a driver obtains an [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) structure from the PCMCIA bus driver, the driver can call the interface routines.
 
 Each interface routine requires a context pointer. The driver must use the **Context** member value returned by the PCMCIA bus driver in the PCMCIA\_INTERFACE\_STANDARD structure. If the context pointer is not valid, the system behavior is not defined, and the system might halt.
 

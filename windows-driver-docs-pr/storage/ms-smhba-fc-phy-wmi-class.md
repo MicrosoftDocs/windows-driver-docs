@@ -32,7 +32,7 @@ class MS_SMHBA_FC_PHY
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_FC\_PHY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_ms_smhba_fc_phy)
+[**MS\_SMHBA\_FC\_PHY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_fc_phy)
 
 There are no methods associated with this WMI class.
 

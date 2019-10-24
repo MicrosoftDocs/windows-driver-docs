@@ -15,7 +15,7 @@ For more information about PnP for drivers, see [Plug and Play](implementing-plu
 
 The PnP manager is actually a subsystem of the I/O manager. For more information about the I/O manager, see [Windows Kernel-Mode I/O Manager](windows-kernel-mode-i-o-manager.md).
 
-For lists of PnP routines, see [Plug and Play Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For lists of PnP routines, see [Plug and Play Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 Note that there are no routines that provide a direct interface to the PnP manager; that is, there are no "**Pp**" routines.
 

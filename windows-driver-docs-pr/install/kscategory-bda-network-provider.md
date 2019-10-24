@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_NETWORK_PROVIDER
 
 
-The KSCATEGORY_BDA_NETWORK_PROVIDER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a network provider in the [broadcast driver architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index) (BDA).
+The KSCATEGORY_BDA_NETWORK_PROVIDER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a network provider in the [broadcast driver architecture](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index) (BDA).
 
 <table>
 <colgroup>

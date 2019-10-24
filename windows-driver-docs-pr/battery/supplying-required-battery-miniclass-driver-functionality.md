@@ -42,7 +42,7 @@ In addition to the routines required to support [Plug and Play](https://docs.mic
 
 [DriverEntry](driverentry-routine-of-a-battery-miniclass-driver.md), [Unload](unload-routine-of-a-battery-miniclass-driver.md), [DispatchDeviceControl](dispatchdevicecontrol-routine-of-a-battery-miniclass-driver.md), and [AddDevice](adddevice-routine-of-a-battery-miniclass-driver.md) are standard driver routines. The name DriverEntry is required, so that the operating system can call it upon starting the driver. You can choose names for the other driver routines at your discretion, as long as their addresses are loaded properly in the appropriate data structures.
 
-The [BatteryMini*Xxx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_battery/) routines are supplied by the miniclass driver and called by the battery class driver. When writing a miniclass driver, you can choose not to implement the functionality of any of these routines; however, an entry point for the routine must nevertheless be provided, and the routine must return STATUS\_NOT\_SUPPORTED. Prototypes for these routines appear in Batclass.h.
+The [BatteryMini*Xxx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/_battery/) routines are supplied by the miniclass driver and called by the battery class driver. When writing a miniclass driver, you can choose not to implement the functionality of any of these routines; however, an entry point for the routine must nevertheless be provided, and the routine must return STATUS\_NOT\_SUPPORTED. Prototypes for these routines appear in Batclass.h.
 
 Battery miniclass drivers must include the following header files:
 

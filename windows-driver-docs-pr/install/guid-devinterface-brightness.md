@@ -50,9 +50,9 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of brightness control interfaces for monitor child devices.
 
-If the display miniport driver supports a direct-call brightness control interface for this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_BRIGHTNESS to specify the interface type.
+If the display miniport driver supports a direct-call brightness control interface for this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_BRIGHTNESS to specify the interface type.
 
-For information about brightness devices, see [Supporting Brightness Controls on Integrated Display Panels](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels) and [Brightness Control Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For information about brightness devices, see [Supporting Brightness Controls on Integrated Display Panels](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels) and [Brightness Control Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 Requirements
 ------------

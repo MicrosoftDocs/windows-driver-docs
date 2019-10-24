@@ -48,7 +48,7 @@ The following screen shot shows a Static Driver Verifier Report page.
 
 Before trying to find the rule violation in the code, become familiar with the rules that the driver violated.
 
-The [Static Driver Verifier Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) section includes a topic that explains each rule, for example, [CancelSpinLock](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-cancelspinlock).
+The [Static Driver Verifier Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) section includes a topic that explains each rule, for example, [CancelSpinLock](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-cancelspinlock).
 
 To see the code for the rule, in the **Source Code** pane of the Static Driver Verifier Report, click the tab with the rule code, such as CancelSpinLock.slic.
 

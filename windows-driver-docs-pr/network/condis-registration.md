@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-To support CoNDIS, NDIS drivers must register the optional CoNDIS function entry points. NDIS drivers call the [**NdisSetOptionalHandlers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissetoptionalhandlers) function to register optional services.
+To support CoNDIS, NDIS drivers must register the optional CoNDIS function entry points. NDIS drivers call the [**NdisSetOptionalHandlers**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetoptionalhandlers) function to register optional services.
 
 This section includes the following topics:
 

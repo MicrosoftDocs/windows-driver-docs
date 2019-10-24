@@ -235,7 +235,7 @@ Only the following values can be specified in an INF:
 #define FILE_DEVICE_SECURE_OPEN         0x00000100
 ```
 
-For a description of these values, see [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice).
+For a description of these values, see [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice).
 
 The characteristics values, which are specified by using a **DeviceCharacteristics** entry, are ORed with those specified in each call to **IoCreateDevice** that creates a device object on the device stack. The OR operation occurs after all device objects are added, but before the device is started.
 

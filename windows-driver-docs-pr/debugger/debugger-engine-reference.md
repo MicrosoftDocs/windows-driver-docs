@@ -21,9 +21,9 @@ This section includes:
 
 [Callback Debug Engine Interfaces](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugbaseeventcallbacks)
 
-[Other Debug Engine Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/index)
+[Other Debug Engine Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/index)
 
-[Structures and Constants](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/)
+[Structures and Constants](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/)
 
 Certain common methods are supported by all COM interfaces on Microsoft Windows. These methods are not listed individually in this reference section. For details, see [Using Client Objects](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-client-objects).
 

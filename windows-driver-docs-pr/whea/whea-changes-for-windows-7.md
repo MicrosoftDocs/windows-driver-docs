@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Starting with Windows 7, the following changes have been made to Windows Hardware Error Architecture (WHEA):
 
--   A new error record format ([**WHEA\_ERROR\_PACKET\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_packet_v2)) is used to report a hardware error in Windows 7 and later versions of Windows. The previous error record format ([WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85))) has been renamed to [**WHEA\_ERROR\_PACKET\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_packet_v1), and is only used to report a hardware error in Windows Server 2008 and Windows Vista SP1.
+-   A new error record format ([**WHEA\_ERROR\_PACKET\_V2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_packet_v2)) is used to report a hardware error in Windows 7 and later versions of Windows. The previous error record format ([WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85))) has been renamed to [**WHEA\_ERROR\_PACKET\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_packet_v1), and is only used to report a hardware error in Windows Server 2008 and Windows Vista SP1.
 
     Starting with the Windows 7 Windows Driver Kit (WDK), WHEA\_ERROR\_PACKET is a macro that, depending on the build target, references either the WHEA\_ERROR\_PACKET\_V1 or WHEA\_ERROR\_PACKET\_V2 structures.
 

@@ -17,9 +17,9 @@ Before a Winsock Kernel (WSK) application can register with the [Network Module 
 
 -   [**NPI\_MODULEID**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568813(v=vs.85))
 
--   [**NPI\_CLIENT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/ns-netioddk-_npi_client_characteristics)
+-   [**NPI\_CLIENT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_client_characteristics)
 
--   [**NPI\_REGISTRATION\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/ns-netioddk-_npi_registration_instance) contained within the [**NPI\_CLIENT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/ns-netioddk-_npi_client_characteristics) structure
+-   [**NPI\_REGISTRATION\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) contained within the [**NPI\_CLIENT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_client_characteristics) structure
 
 All of these data structures must remain valid and resident in memory as long as the WSK application is registered with the NMR.
 
@@ -74,7 +74,7 @@ const NPI_CLIENT_CHARACTERISTICS Characteristics =
 };
 ```
 
-A WSK application calls the [**NmrRegisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netioddk/nf-netioddk-nmrregisterclient) function to register the application with the NMR.
+A WSK application calls the [**NmrRegisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient) function to register the application with the NMR.
 
 For example:
 

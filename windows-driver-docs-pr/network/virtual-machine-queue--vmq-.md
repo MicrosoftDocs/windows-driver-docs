@@ -20,7 +20,7 @@ The VMQ interface supports:
 
 -   Classification of received packets in network adapter hardware by using the destination media access control (MAC) address to route the packets to different receive queues.
 
--   NIC ability to use DMA to transfer packets directly to a virtual machine's shared memory. For more information about shared memory, see [NDIS Memory Management Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+-   NIC ability to use DMA to transfer packets directly to a virtual machine's shared memory. For more information about shared memory, see [NDIS Memory Management Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
 -   Scaling to multiple processors by processing packets for different virtual machines on different processors.
 

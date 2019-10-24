@@ -124,7 +124,7 @@ Requirements
 ## See also
 
 
-[**MRxStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_calldown_ctx)
+[**MRxStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)
 
 [**MRxStop**](mrxstop.md)
 

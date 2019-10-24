@@ -32,7 +32,7 @@ Access Rights: Read-only
 Remarks
 -------
 
-The *full item name* is the same as the *bstrFullItemName* parameter of the [**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. An application reads the WIA\_IPA\_FULL\_ITEM\_NAME property to determine which item it is currently using and where that item is located in the WIA item tree. Each item should have a unique name. Applications commonly use the full item name to search for items in the WIA item tree. The WIA service creates and maintains WIA\_IPA\_FULL\_ITEM\_NAME.
+The *full item name* is the same as the *bstrFullItemName* parameter of the [**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. An application reads the WIA\_IPA\_FULL\_ITEM\_NAME property to determine which item it is currently using and where that item is located in the WIA item tree. Each item should have a unique name. Applications commonly use the full item name to search for items in the WIA item tree. The WIA service creates and maintains WIA\_IPA\_FULL\_ITEM\_NAME.
 
 An application reads WIA\_IPA\_FULL\_ITEM\_NAME to determine the format of the image that it is about to receive. An application writes this property to set the format. WIA\_IPA\_FULL\_ITEM\_NAME depends on the [**WIA\_IPA\_TYMED**](wia-ipa-tymed.md) property. The WIA minidriver creates and maintains WIA\_IPA\_FULL\_ITEM\_NAME.
 
@@ -55,11 +55,11 @@ Requirements
 ## See also
 
 
-[**IWiaMiniDrvTransferCallback::GetNextStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvtransfercallback-getnextstream)
+[**IWiaMiniDrvTransferCallback::GetNextStream**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvtransfercallback-getnextstream)
 
 [**WIA\_IPA\_TYMED**](wia-ipa-tymed.md)
 
-[**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiascreatedrvitem)
+[**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem)
 
  
 

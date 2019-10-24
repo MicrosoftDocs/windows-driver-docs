@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # IrqlApcLte rule (wdm)
 
 
-The **IrqlApcLte** rule specifies that the driver calls [**ObGetObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obgetobjectsecurity) and [**ObReleaseObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreleaseobjectsecurity) only when it is executing at IRQL &lt;= APC\_LEVEL.
+The **IrqlApcLte** rule specifies that the driver calls [**ObGetObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obgetobjectsecurity) and [**ObReleaseObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreleaseobjectsecurity) only when it is executing at IRQL &lt;= APC\_LEVEL.
 
 |              |     |
 |--------------|-----|
@@ -73,8 +73,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**ObGetObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obgetobjectsecurity)
-[**ObReleaseObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreleaseobjectsecurity)
+[**ObGetObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obgetobjectsecurity)
+[**ObReleaseObjectSecurity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreleaseobjectsecurity)
 See also
 --------
 

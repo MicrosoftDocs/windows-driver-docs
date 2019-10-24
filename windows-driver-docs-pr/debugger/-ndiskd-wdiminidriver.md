@@ -20,7 +20,7 @@ The **!ndiskd.wdiminidriver** extension displays information about one or more C
 
 For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide).
 
-For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
 ```console
 !ndiskd.wdiminidriver [-handle <x>] [-pm] [-rcvfilter] 
@@ -124,7 +124,7 @@ HANDLERS
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
 
@@ -134,7 +134,7 @@ HANDLERS
 
 [WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide)
 
-[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
  
 

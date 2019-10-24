@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 The **FSCTL\_GET\_WOF\_VERSION** I/O control code (IOCTL) is used to query the version of the driver used to support a particular provider.
 
-To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
 
 ``` syntax
 BOOL 
@@ -44,16 +44,16 @@ A handle to the device. To obtain a device handle, call the [**CreateFile**](htt
 The control code for the operation. Use **FSCTL\_GET\_WOF\_VERSION** for this operation.
 
 <a href="" id="lpinbuffer"></a>*lpInBuffer*  
-The input buffer for the operation. This is a pointer to a [**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wof_external_info) structure.
+The input buffer for the operation. This is a pointer to a [**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure.
 
 <a href="" id="ninbuffersize--in-"></a>*nInBufferSize \[in\]*  
-The size, in bytes, of the input buffer. This should be **sizeof**([**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wof_external_info)).
+The size, in bytes, of the input buffer. This should be **sizeof**([**WOF\_EXTERNAL\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info)).
 
 <a href="" id="lpoutbuffer--out-"></a>*lpOutBuffer \[out\]*  
-The output buffer for the operation. This is a pointer to a [**WOF\_VERSION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wof_version_info) structure.
+The output buffer for the operation. This is a pointer to a [**WOF\_VERSION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_version_info) structure.
 
 <a href="" id="noutbuffersize--in-"></a>*nOutBufferSize \[in\]*  
-The size, in bytes, of the output buffer. This should be **sizeof**([**WOF\_VERSION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_wof_version_info)).
+The size, in bytes, of the output buffer. This should be **sizeof**([**WOF\_VERSION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_version_info)).
 
 <a href="" id="lpbytesreturned--out-"></a>*lpBytesReturned \[out\]*  
 **LPDWORD**

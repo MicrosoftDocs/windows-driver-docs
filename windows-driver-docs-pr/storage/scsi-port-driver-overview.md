@@ -1,6 +1,6 @@
 ---
 title: SCSI Port Driver Overview
-description: SCSI Port Driver
+description: SCSI Port Driver Overview
 ms.assetid: e97ea5f2-7f20-4d3d-82a2-7d83e1eba30e
 keywords:
 - storage port drivers WDK , SCSI Port driver
@@ -31,4 +31,4 @@ The following sections examine the key features of the SCSI Port driver.
 
 A general discussion of SCSI Port miniport drivers is provided in [SCSI Miniport Drivers](scsi-miniport-drivers.md).
 
-The Windows storage architecture also provides the [Storport Driver](storport-driver.md), the recommended alternative to SCSI Port for high-performance devices.
+The Windows storage architecture also provides the [Storport Driver](storport-driver-overview.md), the recommended alternative to SCSI Port for high-performance devices.

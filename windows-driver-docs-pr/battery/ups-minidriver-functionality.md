@@ -16,17 +16,17 @@ ms.localizationpriority: medium
 
 A UPS minidriver must export the following set of functions, which are called by the system-supplied UPS service:
 
--   [**UPSInit**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/upssvc/nf-upssvc-upsinit)
+-   [**UPSInit**](https://docs.microsoft.com/windows-hardware/drivers/ddi/upssvc/nf-upssvc-upsinit)
 
--   [**UPSGetState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/upssvc/nf-upssvc-upsgetstate)
+-   [**UPSGetState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/upssvc/nf-upssvc-upsgetstate)
 
--   [**UPSWaitForStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/upssvc/nf-upssvc-upswaitforstatechange)
+-   [**UPSWaitForStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/upssvc/nf-upssvc-upswaitforstatechange)
 
--   [**UPSCancelWait**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/upssvc/nf-upssvc-upscancelwait)
+-   [**UPSCancelWait**](https://docs.microsoft.com/windows-hardware/drivers/ddi/upssvc/nf-upssvc-upscancelwait)
 
--   [**UPSTurnOff**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/upssvc/nf-upssvc-upsturnoff)
+-   [**UPSTurnOff**](https://docs.microsoft.com/windows-hardware/drivers/ddi/upssvc/nf-upssvc-upsturnoff)
 
--   [**UPSStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/upssvc/nf-upssvc-upsstop)
+-   [**UPSStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/upssvc/nf-upssvc-upsstop)
 
 Additionally, the minidriver must export a [**DLLMain**](https://docs.microsoft.com/windows/desktop/Dlls/dllmain) function, as described in Microsoft Windows SDK documentation.
 

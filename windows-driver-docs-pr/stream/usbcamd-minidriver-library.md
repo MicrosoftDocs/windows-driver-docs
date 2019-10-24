@@ -28,9 +28,9 @@ The camera minidriver is responsible for:
 
 -   Implementing support for kernel streaming properties, such as [PROPSETID\_VIDCAP\_VIDEOPROCAMP](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-videoprocamp) and [PROPSETID\_VIDCAP\_CAMERACONTROL](https://docs.microsoft.com/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol).
 
--   Determining whether the data stream is valid and part of the current or next video frame in the camera minidriver's [*CamProcessUSBPacketEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_process_packet_routine_ex) callback function.
+-   Determining whether the data stream is valid and part of the current or next video frame in the camera minidriver's [*CamProcessUSBPacketEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-pcam_process_packet_routine_ex) callback function.
 
--   Extracting video frames from the stream and performing processing on video frames before they are returned to the calling application in the camera minidriver's [*CamProcessRawVideoFrameEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/nc-usbcamdi-pcam_process_raw_frame_routine_ex) callback function.
+-   Extracting video frames from the stream and performing processing on video frames before they are returned to the calling application in the camera minidriver's [*CamProcessRawVideoFrameEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-pcam_process_raw_frame_routine_ex) callback function.
 
 The original USBCAMD minidriver library is supported on Windows 98 as *usbcamd.sys*, but is not supported on Windows 2000. USBCAMD2 is supported on Windows 2000 and later and on Windows Millennium Edition and later as both *usbcamd.sysand usbcamd2.sys*. Neither the original USBCAMD minidriver library nor USBCAMD2 are supported on 64-bit platforms.
 
@@ -40,7 +40,7 @@ You can use the *usbintel* example camera minidriver as a starting point. This s
 
 **Additional Resources**
 
-Developers should familiarize themselves with the material in [Kernel Streaming](kernel-streaming.md), [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index), and [Video Capture Devices](video-capture-devices.md).
+Developers should familiarize themselves with the material in [Kernel Streaming](kernel-streaming.md), [Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index), and [Video Capture Devices](video-capture-devices.md).
 
 For additional developer information, including the USB specifications, see [USB-IF Developers Area](https://go.microsoft.com/fwlink/p/?linkid=8781).
 

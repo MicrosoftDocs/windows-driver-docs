@@ -19,7 +19,7 @@ The Microsoft HD Audio class driver automatically constructs the KSPROPERTY\_JAC
 
 An audio endpoint device can connect to a bridge pin through one or more jacks. For example, a set of (two-channel) stereo speakers requires one jack, but a set of 5.1 surround-sound speakers requires three jacks (assuming that each jack handles two of the six channels).
 
-The description for each jack is contained in a [**KSJACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description) structure. For example, the KSPROPERTY\_JACK\_DESCRIPTION property value for an audio endpoint device with one jack contains one KSJACK\_DESCRIPTION structure, but the property value for an endpoint device with three jacks contains three KSJACK\_DESCRIPTION structures. In either case, the KSJACK\_DESCRIPTION structure or structures in the property value are preceded by a [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksmultiple_item) structure that specifies the size of the property value. For more information, see [**KSPROPERTY\_JACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-jack-description).
+The description for each jack is contained in a [**KSJACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description) structure. For example, the KSPROPERTY\_JACK\_DESCRIPTION property value for an audio endpoint device with one jack contains one KSJACK\_DESCRIPTION structure, but the property value for an endpoint device with three jacks contains three KSJACK\_DESCRIPTION structures. In either case, the KSJACK\_DESCRIPTION structure or structures in the property value are preceded by a [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure that specifies the size of the property value. For more information, see [**KSPROPERTY\_JACK\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-jack-description).
 
 Jack information is particularly useful for helping users to distinguish among the jacks that connect to a multichannel speaker configuration. The following code example shows an array of KSJACK\_DESCRIPTION structures that an audio driver uses to describe the three jacks for a set of 5.1 surround speakers:
 
@@ -299,7 +299,7 @@ Two additional modifications to the Simple MSVAD sample are required to support 
 
 -   Add the declaration of the **PropertyHandlerJackDescription** method in the preceding code example to the CMiniportTopology class definition in header file Mintopo.h.
 
--   Implement an automation table for the topology filter and load the address of this table into the **AutomationTable** member of the [**PCFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcfilter_descriptor) structure in header file Toptable.h. This structure is named **MiniportFilterDescriptor**.
+-   Implement an automation table for the topology filter and load the address of this table into the **AutomationTable** member of the [**PCFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor) structure in header file Toptable.h. This structure is named **MiniportFilterDescriptor**.
 
 To implement the automation table for the filter, insert the following code into header file Toptable.h (before the definition of **MiniportFilterDescriptor**):
 
@@ -317,7 +317,7 @@ static PCPROPERTY_ITEM PropertiesTopoFilter[] =
 DEFINE_PCAUTOMATION_TABLE_PROP(AutomationTopoFilter, PropertiesTopoFilter);
 ```
 
-In the preceding code example, the **Handler** member of the [**PCPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcproperty_item) structure contains a function pointer to the property handler that was added to Mintopo.cpp in a previous step. To make the property handler accessible from the header file, insert an **extern** function declaration for PropertyHandler\_TopoFilter at the start of the header file.
+In the preceding code example, the **Handler** member of the [**PCPROPERTY\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-pcproperty_item) structure contains a function pointer to the property handler that was added to Mintopo.cpp in a previous step. To make the property handler accessible from the header file, insert an **extern** function declaration for PropertyHandler\_TopoFilter at the start of the header file.
 
 For more information about the jack description property, see [Jack Descriptions for Dynamic Audio Subdevices](jack-descriptions-for-dynamic-audio-subdevices.md).
 

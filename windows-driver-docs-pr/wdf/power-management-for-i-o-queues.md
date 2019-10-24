@@ -35,7 +35,7 @@ As you are designing your driver, you should group the I/O requests that your dr
 
 Unless you are writing a filter driver, or a driver for a stack that does not communicate with hardware, it is likely that your driver will receive some requests that require the device to be in its working state, together with some that do not.
 
-To support these two types of requests, the framework provides two types of I/O queues: those that are *power-managed* and those that are not. When your driver creates each of its I/O queues, it sets the **PowerManaged** member in the queue's [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/ns-wdfio-_wdf_io_queue_config) structure to either **WdfTrue** or **WdfFalse** to indicate one of the following:
+To support these two types of requests, the framework provides two types of I/O queues: those that are *power-managed* and those that are not. When your driver creates each of its I/O queues, it sets the **PowerManaged** member in the queue's [**WDF\_IO\_QUEUE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config) structure to either **WdfTrue** or **WdfFalse** to indicate one of the following:
 
 -   If your driver sets **PowerManaged** to **WdfTrue**, the queue is power-managed.
 

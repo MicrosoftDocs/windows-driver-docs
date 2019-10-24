@@ -24,7 +24,7 @@ This topic summarizes the general DDI changes that support the new 1394 bus driv
 
 The 1394ohci.sys bus driver supports an extended bus reset notification. This notification returns information about the current generation of the bus (such as the generation count and node ids) to 1394 client drivers in the context of the bus reset notification. This information can eliminate the need for a 1394 client driver to synchronize the retrieval of the generation count, node ids, and other information, with its bus reset notification handler.
 
-To register for extended bus reset notifications, a client driver uses the existing [**REQUEST\_BUS\_RESET\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537638) I/O request and specifies the new EXTENDED\_NOTIFICATION\_ROUTINE flag in the **u.BusResetNotification.fulFlags** parameter. When the EXTENDED\_NOTIFICATION\_ROUTINE flag is specified, the **u.BusResetNotification.ResetContext** parameter points to a [**BUS\_RESET\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_bus_reset_data) structure.
+To register for extended bus reset notifications, a client driver uses the existing [**REQUEST\_BUS\_RESET\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff537638) I/O request and specifies the new EXTENDED\_NOTIFICATION\_ROUTINE flag in the **u.BusResetNotification.fulFlags** parameter. When the EXTENDED\_NOTIFICATION\_ROUTINE flag is specified, the **u.BusResetNotification.ResetContext** parameter points to a [**BUS\_RESET\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/1394/ns-1394-_bus_reset_data) structure.
 
 ## New IOCTLs for PHY Packet Support
 
@@ -144,7 +144,7 @@ You can specify SPEED\_FLAGS\_*XXX* flags in the **nSpeed** member.
 
 Specifies the transfer rate. The possible speed values are SPEED\_FLAGS\_*XXX*, where *XXX* is the (approximate) transfer rate in mbps.
 
-[REQUEST\_ISOCH\_MODIFY\_STREAM\_PROPERTIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/1394/ns-1394-_irb_req_isoch_modify_stream_properties)
+[REQUEST\_ISOCH\_MODIFY\_STREAM\_PROPERTIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/1394/ns-1394-_irb_req_isoch_modify_stream_properties)
 You can specify SPEED\_FLAGS\_*XXX* flags in the **fulSpeed** member.
 
 ### u.IsochModifyStreamProperties.fulSpeed

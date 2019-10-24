@@ -35,7 +35,7 @@ At system startup, TDI calls the proxy driver's address-addition callback to ind
 
 TDI calls the proxy driver's address-removal callback whenever the TCP/IP transport protocol indicates to TDI that a NIC has been removed. If the IP address of the NIC belongs to one of the proxy driver's NICs, the proxy driver removes the IP address from the list.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 

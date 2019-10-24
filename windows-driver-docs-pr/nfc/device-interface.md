@@ -58,6 +58,6 @@ The following table describes the reserved and vender specific control code rang
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
 

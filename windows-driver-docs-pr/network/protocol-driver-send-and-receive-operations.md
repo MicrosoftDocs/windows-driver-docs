@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Protocol drivers originate send requests and handle the receive indications of underlying drivers. In a single function call, NDIS protocol drivers can send multiple [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structures with multiple [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structures on each NET\_BUFFER\_LIST structure. In the receive path, protocol drivers can receive a list of NET\_BUFFER\_LIST structures.
+Protocol drivers originate send requests and handle the receive indications of underlying drivers. In a single function call, NDIS protocol drivers can send multiple [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures with multiple [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures on each NET\_BUFFER\_LIST structure. In the receive path, protocol drivers can receive a list of NET\_BUFFER\_LIST structures.
 
 Protocol drivers must manage send buffer pools. Proper management of such pools requires preallocation of sufficient buffer space to optimize system performance.
 

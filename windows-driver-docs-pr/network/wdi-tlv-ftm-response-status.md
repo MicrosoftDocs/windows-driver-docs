@@ -27,7 +27,7 @@ The size (in bytes) of a UINT32.
 
 | Type | Description |
 | --- | --- |
-| [**WDI_FTM_RESPONSE_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_ftm_response_status) | The FTM response status. |
+| [**WDI_FTM_RESPONSE_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_ftm_response_status) | The FTM response status. |
 
 ## Requirements
 

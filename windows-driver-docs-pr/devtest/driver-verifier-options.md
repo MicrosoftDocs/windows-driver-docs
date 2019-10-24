@@ -107,7 +107,7 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [Force Pending I/O Requests](force-pending-i-o-requests.md)
 
-(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
+(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 [IRP Logging](irp-logging.md)
 

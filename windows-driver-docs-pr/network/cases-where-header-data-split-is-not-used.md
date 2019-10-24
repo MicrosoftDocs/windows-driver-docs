@@ -21,7 +21,7 @@ This topic provides an overview of the cases where a header-data split provider 
 
  
 
-All Ethernet frames that are not split must follow the general NDIS rules and requirements. For example, the first MDL in the chain of MDLs in a received [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure must contain either the lookahead part of the frame or the entire Ethernet frame (whichever is smaller) in a virtually contiguous buffer. NDIS sets the size of lookahead with the [OID\_GEN\_CURRENT\_LOOKAHEAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-lookahead) OID.
+All Ethernet frames that are not split must follow the general NDIS rules and requirements. For example, the first MDL in the chain of MDLs in a received [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure must contain either the lookahead part of the frame or the entire Ethernet frame (whichever is smaller) in a virtually contiguous buffer. NDIS sets the size of lookahead with the [OID\_GEN\_CURRENT\_LOOKAHEAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-lookahead) OID.
 
 Header-data split providers:
 

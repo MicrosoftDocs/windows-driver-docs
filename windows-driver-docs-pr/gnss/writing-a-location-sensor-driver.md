@@ -44,7 +44,7 @@ The rest of this section describes these minimum requirements
 
 ## Identifying the category
 
-When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCATION);
@@ -52,7 +52,7 @@ hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCAT
 
 ## Setting the location sensor type
 
-When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(SENSOR_PROPERTY_TYPE, SENSOR_TYPE_LOCATION_GPS);
@@ -72,9 +72,9 @@ To support a civic address report, at least one of the following data fields is 
 
 -   SENSOR\_DATA\_TYPE\_COUNTRY\_REGION
 
-(To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-category-loc) in the [Windows Sensor Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) section.)
+(To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-category-loc) in the [Windows Sensor Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) section.)
 
-When they are called through [**ISensorDriver::OnGetSupportedDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) through a variable named pKeyCollection.
+When they are called through [**ISensorDriver::OnGetSupportedDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](https://go.microsoft.com/fwlink/p/?linkid=131484) through a variable named pKeyCollection.
 
 ```cpp
 pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
@@ -108,7 +108,7 @@ Like other sensor drivers, location drivers provide information about the sensor
 
 ## Providing data
 
-Location drivers provide data through the same mechanisms as other sensor drivers. That is, the sensor class extension calls the driver through [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields) and the driver returns the values through the *ppDataValues* parameter.
+Location drivers provide data through the same mechanisms as other sensor drivers. That is, the sensor class extension calls the driver through [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields) and the driver returns the values through the *ppDataValues* parameter.
 
 The following requirements apply to providing data from a location sensor:
 
@@ -199,7 +199,7 @@ The following table describes the [sensor data fields](https://docs.microsoft.co
 
 ## Managing state transitions
 
-At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
+At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
 
 -   Always start in the SENSOR\_STATE\_INITIALIZING state, but do not raise a state-changed event at startup.
 
@@ -271,9 +271,9 @@ The Location API, requires location sensors, such as GPS sensors, to raise event
 
 When raising these events, location drivers must follow these rules:
 
--   Raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. Do not call [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) to raise state change events.
+-   Raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. Do not call [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) to raise state change events.
 
--   Raise data-updated events by calling [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent).
+-   Raise data-updated events by calling [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent).
 -   Raise a data-updated event only if the data is up to date and accurate.
 
 -   Do not raise a data-updated event twice. This means that you should not raise a data-updated event by using cached data. You can provide cached data in response to a synchronous request for data.

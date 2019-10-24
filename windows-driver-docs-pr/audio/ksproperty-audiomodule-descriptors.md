@@ -51,7 +51,7 @@ ms.localizationpriority: medium
 
  
 
-The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) structures.
+The property value is a structure, followed by zero (0) or more [**KSAUDIOMODULE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) structures.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -88,7 +88,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIOMODULE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor)
+[**KSAUDIOMODULE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor)
 
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 

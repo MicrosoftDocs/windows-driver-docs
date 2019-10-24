@@ -23,7 +23,7 @@ When this function is called, the driver ensures that the indicated *PDEV* is ei
 
 GDI calls *DrvAssertMode* to set the mode of a specified hardware device. This function selects either the mode specified when the display driver-defined PDEV structure was created or the default mode of the hardware. The driver should keep a record of the current mode of the PDEV.
 
-GDI also calls [**DrvAssertMode**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvassertmode), with the enable parameter set to **FALSE**, when the user switches from a windowed application to a full-screen application in *x*86 applications, or when the user switches desktops (on all platforms). The display driver must restore the video hardware to a default mode by sending [**IOCTL\_VIDEO\_RESET\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddvdeo/ni-ntddvdeo-ioctl_video_reset_device) in an [**EngDeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engdeviceiocontrol) call to the video miniport driver.
+GDI also calls [**DrvAssertMode**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvassertmode), with the enable parameter set to **FALSE**, when the user switches from a windowed application to a full-screen application in *x*86 applications, or when the user switches desktops (on all platforms). The display driver must restore the video hardware to a default mode by sending [**IOCTL\_VIDEO\_RESET\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddvdeo/ni-ntddvdeo-ioctl_video_reset_device) in an [**EngDeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engdeviceiocontrol) call to the video miniport driver.
 
  
 

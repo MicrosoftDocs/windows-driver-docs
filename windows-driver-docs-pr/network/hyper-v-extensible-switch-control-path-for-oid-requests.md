@@ -39,7 +39,7 @@ The miniport edge of the extensible switch is responsible for completing the OID
 
  
 
-**Note**  Stack restart requests using [**NdisFRestartFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfrestartfilter) will not complete while an extensible switch OID request is pending. For this reason, an extension that is waiting for a stack restart must complete any ongoing OID requests.
+**Note**  Stack restart requests using [**NdisFRestartFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfrestartfilter) will not complete while an extensible switch OID request is pending. For this reason, an extension that is waiting for a stack restart must complete any ongoing OID requests.
 
  
 

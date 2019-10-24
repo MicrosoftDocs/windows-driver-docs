@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_RADIO\_STATE notification to inform
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_radio_state) structure.
+This notification uses the [**NDIS\_WWAN\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_radio_state) structure.
 
 Remarks
 -------
@@ -45,7 +45,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_radio_state)
+[**NDIS\_WWAN\_RADIO\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_radio_state)
 
 [OID\_WWAN\_RADIO\_STATE](oid-wwan-radio-state.md)
 
