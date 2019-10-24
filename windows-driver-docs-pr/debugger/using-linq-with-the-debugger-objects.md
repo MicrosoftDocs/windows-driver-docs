@@ -837,7 +837,7 @@ This table summarizes the use of the dx command with common device capability fl
 </table>
 
 
-For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities).
+For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
 
 
 ## <span id="see_also"></span>See also

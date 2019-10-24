@@ -23,9 +23,9 @@ ms.localizationpriority: medium
 ## <span id="pin_factories"></span><span id="PIN_FACTORIES"></span>
 
 
-An audio filter's pin factories describe all of the pins that the filter can instantiate. As mentioned previously, an audio miniport driver stores pin information in an array of [**PCPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcpin_descriptor) structures. Each structure specifies a pin factory, and a pin factory is identified by its index in the array. This index is frequently referred to as the *pin ID*.
+An audio filter's pin factories describe all of the pins that the filter can instantiate. As mentioned previously, an audio miniport driver stores pin information in an array of [**PCPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-pcpin_descriptor) structures. Each structure specifies a pin factory, and a pin factory is identified by its index in the array. This index is frequently referred to as the *pin ID*.
 
-A PCPIN\_DESCRIPTOR structure contains an automation table and a [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_descriptor) structure.
+A PCPIN\_DESCRIPTOR structure contains an automation table and a [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) structure.
 
 The KSPIN\_DESCRIPTOR structure contains the following information about the pins in the pin factory:
 
@@ -45,9 +45,9 @@ The structure's **Category** and **Name** members specify the pin factory's pin 
 
 A pin factory specifies the range of data formats that it supports as an array of extended [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structures:
 
--   A pin factory that supports a range of wave or DirectSound data formats for its input or output stream specifies an array of [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structures.
+-   A pin factory that supports a range of wave or DirectSound data formats for its input or output stream specifies an array of [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structures.
 
--   A pin factory that supports a range of MIDI or DirectMusic data formats for its input or output stream specifies an array of [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_music) structures.
+-   A pin factory that supports a range of MIDI or DirectMusic data formats for its input or output stream specifies an array of [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structures.
 
 KSDATARANGE\_AUDIO and KSDATARANGE\_MUSIC are extended versions of KSDATARANGE. For examples of both types of data ranges, see [Audio Data Formats and Data Ranges](audio-data-formats-and-data-ranges.md).
 
@@ -61,9 +61,9 @@ A filter can have multiple pin factories, and a pin factory can support multiple
 
 -   Having multiple pin instances on a sink-pin factory frequently implies mixing, in which case the filter contains a SUM node ([**KSNODETYPE\_SUM**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-sum)).
 
-Like filters, pins are kernel objects and are identified by kernel handles. The handle for a pin instance is created by calling [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatepin). As a kernel object, a pin can be specified as the target of an IRP. A client of the driver specifies the pin handle when sending an IOCTL request to a pin.
+Like filters, pins are kernel objects and are identified by kernel handles. The handle for a pin instance is created by calling [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kscreatepin). As a kernel object, a pin can be specified as the target of an IRP. A client of the driver specifies the pin handle when sending an IOCTL request to a pin.
 
-When building an [audio filter graph](audio-filter-graphs.md), SysAudio links one filter to another by connecting their pins. A source pin from one filter can be connected to the sink pin of another filter. Data and IRPs from the source pin flow into the sink pin through this connection. To make the connection, a graph builder (typically SysAudio) creates the source pin first by calling [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatepin) and then creates the sink pin by calling **KsCreatePin** again. In the second call, however, the client specifies that the new sink pin is to be connected to the source pin that was created in the first call.
+When building an [audio filter graph](audio-filter-graphs.md), SysAudio links one filter to another by connecting their pins. A source pin from one filter can be connected to the sink pin of another filter. Data and IRPs from the source pin flow into the sink pin through this connection. To make the connection, a graph builder (typically SysAudio) creates the source pin first by calling [**KsCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kscreatepin) and then creates the sink pin by calling **KsCreatePin** again. In the second call, however, the client specifies that the new sink pin is to be connected to the source pin that was created in the first call.
 
  
 

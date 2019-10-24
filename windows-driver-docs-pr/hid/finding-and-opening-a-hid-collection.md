@@ -27,7 +27,7 @@ Microsoft Windows provides device installation routines (**SetupDi***Xxx* functi
 
 After a user-mode application is loaded, it does the following sequence of operations:
 
--   Calls [**HidD\_GetHidGuid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidsdi/nf-hidsdi-hidd_gethidguid) to obtain the system-defined GUID for HIDClass devices.
+-   Calls [**HidD\_GetHidGuid**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_gethidguid) to obtain the system-defined GUID for HIDClass devices.
 
 -   Calls [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) to obtain a handle to an opaque device information set that describes the device interfaces supported by all the [HID collections](hid-collections.md) currently installed in the system. The application should specify DIGCF\_PRESENT and DIGCF\_DEVICEINTERFACE in the *Flags* parameter that is passed to **SetupDiGetClassDevs**.
 

@@ -26,7 +26,7 @@ To open or create a device's hardware key, follow these guidelines:
 
      
 
--   Kernel-mode callers should use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioopendeviceregistrykey) and set the *DevInstKeyType* parameter to PLUGPLAY_REGKEY_DEVICE.
+-   Kernel-mode callers should use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) and set the *DevInstKeyType* parameter to PLUGPLAY_REGKEY_DEVICE.
 
  
 

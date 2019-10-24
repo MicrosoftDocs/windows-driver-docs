@@ -19,13 +19,13 @@ ms.localizationpriority: medium
 
 The use of 16:9 video for 4:3 displays with letterbox framing for DVD has the following values for the source and destination pictures.
 
-The following rectangle values are used in the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure for the source picture:
+The following rectangle values are used in the **PictureSourceRect16thPel** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination) structure for the source picture:
 
 -   **top** = 0
 
 -   **bottom** = **top** + (16 X *vertical\_size*) = 7680 or 9216
 
-The following rectangle values are used in the **PictureDestinationRect** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_blendcombination) structure for the destination picture:
+The following rectangle values are used in the **PictureDestinationRect** member of the [**DXVA\_BlendCombination**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_blendcombination) structure for the destination picture:
 
 -   **top** = *vertical\_size* / 8 = 60 or 72
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Handling WMI SRBs in Storage Miniport Drivers
 
-WMI interfaces that report information about a host bus adapter (HBA), or that allow WMI clients to interact with the HBA's storage miniport driver, usually require the miniport driver to function as a WMI provider. After a storage miniport driver registers as a WMI provider, it must be prepared to handle a special kind of SCSI request block (SRB) called a Windows Management Instrumentation (WMI) SCSI request block ([SCSI_WMI_REQUEST_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_scsi_wmi_request_block)).
+WMI interfaces that report information about a host bus adapter (HBA), or that allow WMI clients to interact with the HBA's storage miniport driver, usually require the miniport driver to function as a WMI provider. After a storage miniport driver registers as a WMI provider, it must be prepared to handle a special kind of SCSI request block (SRB) called a Windows Management Instrumentation (WMI) SCSI request block ([SCSI_WMI_REQUEST_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_wmi_request_block)).
 
 To prepare your storage miniport driver to handle WMI SRBs, complete the following steps:
 

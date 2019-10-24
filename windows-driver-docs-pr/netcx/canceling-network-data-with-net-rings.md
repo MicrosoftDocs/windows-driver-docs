@@ -11,11 +11,11 @@ ms.custom: 19H1
 
 # Canceling network data with net rings
 
-NetAdapterCx client drivers cancel network data when the framework invokes their [*EvtPacketQueueCancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_cancel) callback function for a packet queue. This callback is where client drivers perform any processing needed before the framework deletes the packet queues.
+NetAdapterCx client drivers cancel network data when the framework invokes their [*EvtPacketQueueCancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_cancel) callback function for a packet queue. This callback is where client drivers perform any processing needed before the framework deletes the packet queues.
 
 ### Canceling a transmit queue
 
-In your *EvtPacketQueueCancel* callback function for a transmit queue, you have an opportunity to complete any outstanding transmit packets. Unlike with a receive queue, you not required to do so. If you leave outstanding packets, NetAdapterCx calls your [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) for the transmit queue, where you process them as part of your regular operation.
+In your *EvtPacketQueueCancel* callback function for a transmit queue, you have an opportunity to complete any outstanding transmit packets. Unlike with a receive queue, you not required to do so. If you leave outstanding packets, NetAdapterCx calls your [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) for the transmit queue, where you process them as part of your regular operation.
 
 If your hardware supports canceling in-flight transmits, you should also advance the net ring's post packet iterator past all canceled packets. This might look like the following example:
 

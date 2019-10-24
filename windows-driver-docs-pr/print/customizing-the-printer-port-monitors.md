@@ -74,7 +74,7 @@ In the preceding code example, note that:
 
 ### Conversion of WinSNMP to Bidi Data Types
 
-The correspondence between Simple Network Management Protocol (SNMP) types and bidi types is given in the [**BIDI\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winspool/ne-winspool-bidi_type) enumeration topic.
+The correspondence between Simple Network Management Protocol (SNMP) types and bidi types is given in the [**BIDI\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type) enumeration topic.
 
 The remainder of this section contains the following topics to help you create your own bidi schema extensions.
 

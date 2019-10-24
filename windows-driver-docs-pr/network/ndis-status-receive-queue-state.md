@@ -18,9 +18,9 @@ Remarks
 
 NDIS 6.20 and later miniport drivers that support the virtual machine queue interface generate this status indication.
 
-The miniport driver supplies an [**NDIS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_receive_queue_state) structure in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure.
+The miniport driver supplies an [**NDIS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_queue_state) structure in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure.
 
-The change to the *DMA Stopped* state is the only queue state change indication that is required. A miniport driver must indicate this state after it receives an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-free-queue) set request and stops the DMA. In this case, the miniport driver sets the **QueueState** member of the [**NDIS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_receive_queue_state) structure to **NdisReceiveQueueOperationalStateDmaStopped**.
+The change to the *DMA Stopped* state is the only queue state change indication that is required. A miniport driver must indicate this state after it receives an [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-free-queue) set request and stops the DMA. In this case, the miniport driver sets the **QueueState** member of the [**NDIS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_queue_state) structure to **NdisReceiveQueueOperationalStateDmaStopped**.
 
 After the miniport driver receives the [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-free-queue) set request, it must stop DMA to any shared memory that was allocated for the specified queue.
 
@@ -49,9 +49,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_receive_queue_state)
+[**NDIS\_RECEIVE\_QUEUE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_queue_state)
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
 [OID\_RECEIVE\_FILTER\_FREE\_QUEUE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-free-queue)
 

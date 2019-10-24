@@ -20,15 +20,15 @@ ms.localizationpriority: medium
 
 
 
-Retreat operations can increase the size of the used data space in a [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure.
+Retreat operations can increase the size of the used data space in a [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
 
 NDIS provides the following retreat functions:
 
-[**NdisRetreatNetBufferDataStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisretreatnetbufferdatastart)
+[**NdisRetreatNetBufferDataStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisretreatnetbufferdatastart)
 
-[**NdisRetreatNetBufferListDataStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisretreatnetbufferlistdatastart)
+[**NdisRetreatNetBufferListDataStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisretreatnetbufferlistdatastart)
 
-Retreat operations can sometimes allocate MDLs that are associated with a NET\_BUFFER structure. To provide the mechanism for allocating MDLs, a driver can provide an optional entry point for a [**NetAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-net_buffer_allocate_mdl_handler) function. If the entry point is **NULL**, NDIS uses a default method to allocate MDLs. MDLs must be freed within a [**NetFreeMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-net_buffer_free_mdl_handler) function that provides the reciprocal of the mechanism that was used to allocate the MDL.
+Retreat operations can sometimes allocate MDLs that are associated with a NET\_BUFFER structure. To provide the mechanism for allocating MDLs, a driver can provide an optional entry point for a [**NetAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-net_buffer_allocate_mdl_handler) function. If the entry point is **NULL**, NDIS uses a default method to allocate MDLs. MDLs must be freed within a [**NetFreeMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-net_buffer_free_mdl_handler) function that provides the reciprocal of the mechanism that was used to allocate the MDL.
 
 To obtain the new **DataLength**, NDIS adds the driver-specified *DataOffsetDelta* to the current **DataLength** . If the size of the *unused data space* is greater than the *DataOffsetDelta*, a retreat operation reduces the **DataOffset** . In this case, the new **DataOffset** is the current **DataOffset** minus the *DataOffsetDelta* .
 

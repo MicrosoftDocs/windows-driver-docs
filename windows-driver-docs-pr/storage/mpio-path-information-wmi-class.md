@@ -48,7 +48,7 @@ class MPIO_PATH_INFORMATION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_PATH\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_mpio_path_information) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_PATH\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_path_information) data structure. There are no methods associated with this WMI class.
 
  
 

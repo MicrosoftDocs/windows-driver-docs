@@ -23,4 +23,4 @@ Describes support for key buttons (Power, Windows, volume and rotation lock) and
 
 ## Related topics
 
-[Hardware notifications reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[Hardware notifications reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)

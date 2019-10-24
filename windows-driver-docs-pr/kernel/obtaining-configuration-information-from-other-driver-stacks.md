@@ -21,7 +21,7 @@ Windows 2000 and later versions of Windows do not allow drivers to access hardw
 
 Alternatively, you can install a filter programmatically using **SetupDi<em>Xxx</em>** functions in the co-installer for your device.
 
-The filter driver can then access the bridge using the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard) interface.
+The filter driver can then access the bridge using the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface.
 
  
 

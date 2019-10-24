@@ -33,7 +33,7 @@ To support PnP, a driver must follow these guidelines:
 
 -   It must not search for hardware.
 
-    The PnP manager is responsible for determining the presence of hardware devices. When the PnP manager detects a device, it notifies the driver by calling its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine. Hardware can be detected when the system is booted, or any time that a user adds a device to, or removes one from, a running system.
+    The PnP manager is responsible for determining the presence of hardware devices. When the PnP manager detects a device, it notifies the driver by calling its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. Hardware can be detected when the system is booted, or any time that a user adds a device to, or removes one from, a running system.
 
 -   It must not allocate hardware resources.
 

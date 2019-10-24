@@ -68,7 +68,7 @@ The display text that is associated with each value that appears in the menu.
 
  
 
-When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, the driver must do the following:
+When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the driver must do the following:
 
 -   The miniport driver must register the NDIS QoS hardware capabilities that the network adapter supports.
 

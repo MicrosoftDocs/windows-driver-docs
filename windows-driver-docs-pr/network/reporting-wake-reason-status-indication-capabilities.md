@@ -25,18 +25,18 @@ Starting with NDIS 6.30, the miniport driver must report whether it can issue an
 
  
 
-When NDIS calls the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function, the miniport driver reports its wake reason status indication capabilities by following these steps:
+When NDIS calls the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the miniport driver reports its wake reason status indication capabilities by following these steps:
 
-1.  The miniport driver initializes an [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure with the power management capabilities of the underlying hardware.
+1.  The miniport driver initializes an [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure with the power management capabilities of the underlying hardware.
 
-    To enable the support for wake reason status indications, the miniport driver must set the members of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure as follows:
+    To enable the support for wake reason status indications, the miniport driver must set the members of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure as follows:
 
-    -   The miniport driver must specify NDIS\_PM\_CAPABILITIES\_REVISION\_2 and NDIS\_SIZEOF\_NDIS\_PM\_CAPABILITIES\_REVISION\_2 for the revision and length of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure within the structure's **Header** member.
+    -   The miniport driver must specify NDIS\_PM\_CAPABILITIES\_REVISION\_2 and NDIS\_SIZEOF\_NDIS\_PM\_CAPABILITIES\_REVISION\_2 for the revision and length of the [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure within the structure's **Header** member.
     -   If the network adapter can store the received packet that caused a system wake-up event, the miniport driver sets the NDIS\_PM\_WAKE\_PACKET\_INDICATION\_SUPPORTED flag within the **Flags** member of this structure.
 
         If this flag is set, the network adapter must be able to save the received packet that caused the adapter to generate a wake-up event. In addition, the miniport driver must be able to do the following with this packet after the network adapter transitions to a full-power state:
 
-        -   The miniport driver must be able to indicate the packet by calling [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
+        -   The miniport driver must be able to indicate the packet by calling [**NdisMIndicateReceiveNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists).
 
         -   The miniport driver must be able to issue an [**NDIS\_STATUS\_PM\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pm-wake-reason) status indication and must pass the packet with indication.
 
@@ -48,9 +48,9 @@ When NDIS calls the driver's [*MiniportInitializeEx*](https://docs.microsoft.com
 
     -   The miniport driver sets the **MediaSpecificWakeUpEvents** to the media-specific wake-up events that the network adapter supports. These events include generating a wake-up event when the 802.11 adapter becomes disassociated with the AP.
 
-2.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure and sets the**PowerManagementCapabilitiesEx** member to the address of the initialized [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
+2.  The miniport driver initializes an [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure and sets the**PowerManagementCapabilitiesEx** member to the address of the initialized [**NDIS\_PM\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_capabilities) structure.
 
-3.  The miniport driver calls the [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismsetminiportattributes) function to register its power management capabilities. When the miniport driver calls this function, it sets the *MiniportAttributes* parameter to the address of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
+3.  The miniport driver calls the [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function to register its power management capabilities. When the miniport driver calls this function, it sets the *MiniportAttributes* parameter to the address of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
 
 The method that is used by miniport drivers to report the wake reason status indication capabilities is based on the NDIS 6.20 method for reporting power management capabilities. For more information about this method, see [Reporting Power Management Capabilities](reporting-power-management-capabilities.md).
 

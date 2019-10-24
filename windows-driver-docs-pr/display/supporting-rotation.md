@@ -13,7 +13,7 @@ The following topics describe how display miniport drivers and user-mode display
 
 [Supporting Rotation in a Display Miniport Driver](supporting-rotation-in-a-display-miniport-driver.md)
 
-[VidPN Path-Independent Rotation Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[VidPN Path-Independent Rotation Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 [Supporting Rotation in a User-Mode Display Driver](supporting-rotation-in-a-user-mode-display-driver.md)
 

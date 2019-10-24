@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 In Windows Me/98, and Windows 2000 and later, an adapter driver can access its adapter card's PCI configuration space at IRQL PASSIVE\_LEVEL by using the [**IRP\_MN\_READ\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config) and [**IRP\_MN\_WRITE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-write-config) requests.
 
-In Windows 2000 and later, PCI driver stacks export the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard) interface, which provides access to the PCI configuration space at IRQL DISPATCH\_LEVEL.
+In Windows 2000 and later, PCI driver stacks export the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface, which provides access to the PCI configuration space at IRQL DISPATCH\_LEVEL.
 
 For more information, see [Accessing Device Configuration Space](https://docs.microsoft.com/windows-hardware/drivers/kernel/accessing-device-configuration-space).
 

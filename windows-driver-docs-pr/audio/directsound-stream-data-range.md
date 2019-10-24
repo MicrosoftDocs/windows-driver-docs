@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="directsound_stream_data_range"></span><span id="DIRECTSOUND_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structure to describe the data range for a DirectSound stream.
+This example uses a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure to describe the data range for a DirectSound stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);

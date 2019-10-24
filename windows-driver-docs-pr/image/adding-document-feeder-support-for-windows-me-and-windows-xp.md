@@ -35,13 +35,13 @@ It is important to remember that if the device has a document feeder, it must su
 
 ## Acquiring data from a document feeder
 
-There are a few changes that must be made in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method when the scanner acquires images from a document feeder.
+There are a few changes that must be made in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method when the scanner acquires images from a document feeder.
 
 1. An application reads the WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES property to determine whether the scanner supports scanning using the document feeder.
 1. An application reads the WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT property to determine whether the scanner is configured to scan using the document feeder.
 1. An application determines whether there is paper in the document feeder by reading WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS. If there is no paper in the feeder, set the WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS to the proper status code and return WIA\_ERROR\_PAPER\_EMPTY from **IWiaMiniDrv::drvAcquireItemData** immediately after an acquisition takes place.
 1. Check the WIA\_DPS\_PAGES property to determine the scanning behavior. If this property is zero, scan all pages until the feeder is empty. If it is positive, scan only the number of pages indicated by the value contained in the WIA\_DPS\_PAGES property.
-1. Scan the requested number of pages by controlling a loop, continually scanning, and sending data (one page at a time) to the WIA application by calling the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) method. The following code example shows how this might work:
+1. Scan the requested number of pages by controlling a loop, continually scanning, and sending data (one page at a time) to the WIA application by calling the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) method. The following code example shows how this might work:
 
     ```cpp
     for(int x=1; x=Pagecount; x++)
@@ -52,7 +52,7 @@ There are a few changes that must be made in the implementation of the [**IWiaMi
     }
     ```
 
-1. If [**WIA\_IPA\_TYMED**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-tymed) is set to TYMED\_CALLBACK or TYMED\_MULTIPAGE\_CALLBACK, then an extra message (IT\_MSG\_NEW\_PAGE) must be sent after one page has been scanned and before the next one is to be scanned. This is done by calling the [**wiasSendEndOfPage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiassendendofpage) WIA service utility function.
+1. If [**WIA\_IPA\_TYMED**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-tymed) is set to TYMED\_CALLBACK or TYMED\_MULTIPAGE\_CALLBACK, then an extra message (IT\_MSG\_NEW\_PAGE) must be sent after one page has been scanned and before the next one is to be scanned. This is done by calling the [**wiasSendEndOfPage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiassendendofpage) WIA service utility function.
 
 The number of pages that a document feeder driver returns depends on the setting of the WIA\_DPS\_PAGES property.
 

@@ -13,7 +13,7 @@ Your driver must create a *persistent unique identifier* (PUID) for each sensor.
 
 You should create a new PUID for each sensor, when the sensor first connects to the computer, and then store this value for later use.
 
-Your driver should create or retrieve the PUID before calling the [SensorsCxSensorInitialize](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/nf-sensorscx-sensorscxsensorinitialize) initialization routine. This function supplies a pointer to the [SENSOR_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_config) structure that holds the sensor configuration. You can use this pointer to access a specific property store for each device.
+Your driver should create or retrieve the PUID before calling the [SensorsCxSensorInitialize](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensorscxsensorinitialize) initialization routine. This function supplies a pointer to the [SENSOR_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_config) structure that holds the sensor configuration. You can use this pointer to access a specific property store for each device.
 
 ## Related topics
 [Sensors Driver ADXL345Acc Sample](https://go.microsoft.com/fwlink/p/?LinkId=617957)

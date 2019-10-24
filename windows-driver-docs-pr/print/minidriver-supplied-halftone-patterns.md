@@ -31,7 +31,7 @@ When GDI-supported halftone methods are being used, GDI allows specification of 
 
     where halftone.bin is a file containing a halftone pattern.
 
--   The \*HTCallbackID attribute allows you to indicate that you are implementing the [**IPrintOemUni::HalftonePattern**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern) method in a [rendering plug-in](rendering-plug-ins.md). A unique \***HTCallbackID** value must be provided for each pattern the **IPrintOemUni::HalftonePattern** method supports.
+-   The \*HTCallbackID attribute allows you to indicate that you are implementing the [**IPrintOemUni::HalftonePattern**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern) method in a [rendering plug-in](rendering-plug-ins.md). A unique \***HTCallbackID** value must be provided for each pattern the **IPrintOemUni::HalftonePattern** method supports.
 
 You can provide halftone pattern resources, an **IPrintOemUni::HalftonePattern** method, or both, as follows:
 

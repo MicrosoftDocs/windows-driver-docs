@@ -28,7 +28,7 @@ Through an IHV Extensions DLL, the independent hardware vendor (IHV) can support
 
 -   Verification of proprietary extensions to a network profile. For example, the IHV Extensions DLL is responsible for the validation of user settings for IHV-defined security options.
 
--   Configuration of the Native 802.11 miniport driver. For example, prior to starting a connection operation with the miniport driver, the operating system will call the [*Dot11ExtIhvPerformPreAssociate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11extihv_perform_pre_associate) function so that the IHV Extensions DLL can configure the driver with proprietary extensions related to the connection to a BSS network.
+-   Configuration of the Native 802.11 miniport driver. For example, prior to starting a connection operation with the miniport driver, the operating system will call the [*Dot11ExtIhvPerformPreAssociate*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_perform_pre_associate) function so that the IHV Extensions DLL can configure the driver with proprietary extensions related to the connection to a BSS network.
 
 -   Interface to the IHV UI Extensions DLL. Through this interface, the IHV Extensions DLL can request user input or notification. For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md).
 

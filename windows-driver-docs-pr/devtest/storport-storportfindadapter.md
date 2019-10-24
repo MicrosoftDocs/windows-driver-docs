@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # StorPortFindAdapter rule (storport)
 
 
-The [**HwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_find_adapter) routine must set the **MaximumTransferLength** and the **NumberOfPhysicalBreaks** fields in the **PORT\_CONFIGURATION\_INFORMATION** structure. By default, the value of both these fields is **SP\_UNINITIALIZED\_VALUE**. If either of these fields is still set to **SP\_UNINITIALIZED\_VALUE** upon exit from **FindAdapter**, the driver fails the rule.
+The [**HwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) routine must set the **MaximumTransferLength** and the **NumberOfPhysicalBreaks** fields in the **PORT\_CONFIGURATION\_INFORMATION** structure. By default, the value of both these fields is **SP\_UNINITIALIZED\_VALUE**. If either of these fields is still set to **SP\_UNINITIALIZED\_VALUE** upon exit from **FindAdapter**, the driver fails the rule.
 
 |              |          |
 |--------------|----------|

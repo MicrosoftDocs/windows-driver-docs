@@ -18,7 +18,7 @@ This section defines the minimal interoperability configuration set for compress
 
 The first six configurations in this set are for all [restricted profiles](restricted-profiles.md). The seventh configuration in this set is defined only for MPEG2\_C and MPEG2\_D.
 
-The minimal interoperability configuration set of configurations for compressed picture decoding is defined by the third through the last members of the [**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configpicturedecode) structure.
+The minimal interoperability configuration set of configurations for compressed picture decoding is defined by the third through the last members of the [**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure.
 
  
 

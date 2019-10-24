@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_PROVISIONED\_CONTEXTS notification 
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts) structure.
+This notification uses the [**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts) structure.
 
 Remarks
 -------
@@ -47,7 +47,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts)
+[**NDIS\_WWAN\_PROVISIONED\_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_provisioned_contexts)
 
 [OID\_WWAN\_PROVISIONED\_CONTEXTS](oid-wwan-provisioned-contexts.md)
 

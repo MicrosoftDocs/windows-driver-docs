@@ -20,30 +20,30 @@ Kernel Mode Performance Counter makes use of the following DDIs:
 
 ## Kernel Mode Performance Counter Provider Functions
 
-[PcwAddInstance](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pcwaddinstance)
+[PcwAddInstance](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pcwaddinstance)
 
-[PcwCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-pcw_callback)
+[PcwCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pcw_callback)
 
-[PcwCloseInstance](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pcwcloseinstance)
+[PcwCloseInstance](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pcwcloseinstance)
 
-[PcwCreateInstance](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pcwcreateinstance)
+[PcwCreateInstance](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pcwcreateinstance)
 
-[PcwRegister](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pcwregister)
+[PcwRegister](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pcwregister)
 
-[PcwUnregister](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-pcwunregister)
+[PcwUnregister](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pcwunregister)
 
 ## Kernel Mode Performance Counter Structures and Enumerations
 
-[PCW_CALLBACK_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pcw_callback_information)
+[PCW_CALLBACK_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_pcw_callback_information)
 
-[PCW_CALLBACK_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_pcw_callback_type)
+[PCW_CALLBACK_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_pcw_callback_type)
 
-[PCW_COUNTER_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pcw_counter_descriptor)
+[PCW_COUNTER_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_pcw_counter_descriptor)
 
-[PCW_COUNTER_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pcw_counter_information)
+[PCW_COUNTER_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_pcw_counter_information)
 
-[PCW_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pcw_counter_information)
+[PCW_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_pcw_counter_information)
 
-[PCW_MASK_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pcw_mask_information)
+[PCW_MASK_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_pcw_mask_information)
 
-[PCW_REGISTRATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_pcw_registration_information)
+[PCW_REGISTRATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_pcw_registration_information)

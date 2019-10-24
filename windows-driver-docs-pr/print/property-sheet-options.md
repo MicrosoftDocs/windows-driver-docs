@@ -22,13 +22,13 @@ A property sheet option is a displayable, selectable item on a property sheet pa
 
 Each property sheet page typically contains several options. For each property sheet option, a CPSUI application must use the following CPSUI structures:
 
--   One [**OPTITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_optitem) structure, which identifies the option's display name and other characteristics.
+-   One [**OPTITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_optitem) structure, which identifies the option's display name and other characteristics.
 
--   One [**OPTTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_opttype) structure, which identifies the option's display dialog type ([CPSUI option type](https://docs.microsoft.com/windows-hardware/drivers/print/cpsui-option-types)).
+-   One [**OPTTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) structure, which identifies the option's display dialog type ([CPSUI option type](https://docs.microsoft.com/windows-hardware/drivers/print/cpsui-option-types)).
 
--   One or more [**OPTPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_optparam) structures, which identify the option's user-selectable parameter values.
+-   One or more [**OPTPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_optparam) structures, which identify the option's user-selectable parameter values.
 
-To use these CPSUI structures to describe property sheet options, the page containing the option must be defined using a [**COMPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/compstui/ns-compstui-_compropsheetui) structure.
+To use these CPSUI structures to describe property sheet options, the page containing the option must be defined using a [**COMPROPSHEETUI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_compropsheetui) structure.
 
  
 

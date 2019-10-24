@@ -43,7 +43,7 @@ Drivers can define new IO\_ERR\_*XXX* values to identify custom error messages i
 
 Pairs of drivers can define driver-specific STATUS\_*XXX* values to communicate information about privately defined [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests from the lower to the higher driver of the pair.
 
-The class driver must map any private STATUS\_*XXX* value to a system-defined NTSTATUS value when it completes an IRP if an existing higher-level driver's [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine might be called for that IRP.
+The class driver must map any private STATUS\_*XXX* value to a system-defined NTSTATUS value when it completes an IRP if an existing higher-level driver's [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine might be called for that IRP.
 
 For paired display and video miniport drivers, the video port driver does the mapping between public STATUS\_*XXX* values and the Win32-defined constants returned by video miniport drivers. For more information, see [Video Miniport Drivers in the Windows 2000 Display Driver Model](https://docs.microsoft.com/windows-hardware/drivers/display/video-miniport-drivers-in-the-windows-2000-display-driver-model).
 

@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 
 
-NDIS calls a protocol driver's [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_bind_adapter_ex) function to open a binding whenever an underlying adapter to which the driver can bind becomes available. After NDIS calls *ProtocolBindAdapterEx*, the binding enters the Opening state. In the *Opening* state, the protocol driver allocates resources for the binding and opens the adapter.
+NDIS calls a protocol driver's [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function to open a binding whenever an underlying adapter to which the driver can bind becomes available. After NDIS calls *ProtocolBindAdapterEx*, the binding enters the Opening state. In the *Opening* state, the protocol driver allocates resources for the binding and opens the adapter.
 
-NDIS passes to *ProtocolBindAdapterEx* the NDIS context for the binding operation as well as a pointer to an [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_bind_parameters) structure. This structure contains information about the adapter such as:
+NDIS passes to *ProtocolBindAdapterEx* the NDIS context for the binding operation as well as a pointer to an [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure. This structure contains information about the adapter such as:
 
 -   The name of the adapter.
 
@@ -26,23 +26,23 @@ NDIS passes to *ProtocolBindAdapterEx* the NDIS context for the binding operatio
 
 -   The physical device object for the adapter.
 
-To open an adapter, protocol drivers call the [**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisopenadapterex) function. The protocol driver passes the following to **NdisOpenAdapterEx**:
+To open an adapter, protocol drivers call the [**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex) function. The protocol driver passes the following to **NdisOpenAdapterEx**:
 
 -   The handle that NDIS returned to the driver at the *NdisProtocolHandle* parameter of the **NdisRegisterProtocolDriver** function.
 
 -   The protocol driver's context for this binding.
 
--   A pointer to a structure of type [**NDIS\_OPEN\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_open_parameters).
+-   A pointer to a structure of type [**NDIS\_OPEN\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_open_parameters).
 
-[**NDIS\_OPEN\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_open_parameters) contains information such as name of the adapter that **NdisOpenAdapterEx** should open, an array of medium types that the protocol driver supports and, optionally, an array of frame types that the driver can receive on this binding.
+[**NDIS\_OPEN\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_open_parameters) contains information such as name of the adapter that **NdisOpenAdapterEx** should open, an array of medium types that the protocol driver supports and, optionally, an array of frame types that the driver can receive on this binding.
 
-If a protocol driver returns NDIS\_STATUS\_PENDING from *ProtocolBindAdapterEx*, it must call [**NdisCompleteBindAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscompletebindadapterex) with the final status to complete the bind request.
+If a protocol driver returns NDIS\_STATUS\_PENDING from *ProtocolBindAdapterEx*, it must call [**NdisCompleteBindAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscompletebindadapterex) with the final status to complete the bind request.
 
-If NDIS returns NDIS\_STATUS\_PENDING from **NdisOpenAdapterEx**, NDIS later calls the protocol driver's [*ProtocolOpenAdapterCompleteEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_open_adapter_complete_ex) function with the final status after the open request has been completed.
+If NDIS returns NDIS\_STATUS\_PENDING from **NdisOpenAdapterEx**, NDIS later calls the protocol driver's [*ProtocolOpenAdapterCompleteEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_open_adapter_complete_ex) function with the final status after the open request has been completed.
 
 After the driver successfully opens the binding to the adapter, the binding is in the Paused state.
 
-A protocol driver calls the [**NdisCloseAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscloseadapterex) function to close the adapter. The driver can call **NdisCloseAdapterEx** from the *ProtocolBindAdapterEx* function or [*ProtocolUnbindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_unbind_adapter_ex) function.
+A protocol driver calls the [**NdisCloseAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscloseadapterex) function to close the adapter. The driver can call **NdisCloseAdapterEx** from the *ProtocolBindAdapterEx* function or [*ProtocolUnbindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_unbind_adapter_ex) function.
 
 If after opening the adapter and before completing the bind request, *ProtocolBindAdapterEx* encounters a failure and must close the binding to the adapter, it can call **NdisCloseAdapterEx**. For more information about closing an adapter, see [Unbinding from an Adapter](unbinding-from-an-adapter.md).
 

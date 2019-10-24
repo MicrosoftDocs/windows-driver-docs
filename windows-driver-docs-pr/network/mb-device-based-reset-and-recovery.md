@@ -67,7 +67,7 @@ Platform-level Device Reset is for cases where FLDR cannot be used, or as a last
 
 ### Reset recovery for UDE devices 
 
-For UDE client drivers that enable an MBIM function, Windows 10, version 1809 includes an API that can be used to request a reset whenever the UDECx client driver detects an error. The client driver requests a reset by calling a new method, [**UdecxWdfDeviceNeedsReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceneedsreset), specifying the reset type that it wants the UDECx to attempt for the device (if supported). These reset types are **PlatformLevelDeviceReset** and **FunctionLevelDeviceReset** and are values of the [**UDECX_WDF_DEVICE_RESET_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/ne-udecxwdfdevice-_udecx_wdf_device_reset_type) enumeration. Once a reset is initiated, UDECx invokes the driver's [*EVT_UDECX_WDF_DEVICE_RESET*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nc-udecxwdfdevice-evt_udecx_wdf_device_reset) callback function and ensures that no other callback is invoked during this process. The client driver is expected to perform any reset related operations such as releasing any resources, then signal reset completion by invoking [**UdecxWdfDeviceResetComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceresetcomplete).
+For UDE client drivers that enable an MBIM function, Windows 10, version 1809 includes an API that can be used to request a reset whenever the UDECx client driver detects an error. The client driver requests a reset by calling a new method, [**UdecxWdfDeviceNeedsReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceneedsreset), specifying the reset type that it wants the UDECx to attempt for the device (if supported). These reset types are **PlatformLevelDeviceReset** and **FunctionLevelDeviceReset** and are values of the [**UDECX_WDF_DEVICE_RESET_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/ne-udecxwdfdevice-_udecx_wdf_device_reset_type) enumeration. Once a reset is initiated, UDECx invokes the driver's [*EVT_UDECX_WDF_DEVICE_RESET*](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/nc-udecxwdfdevice-evt_udecx_wdf_device_reset) callback function and ensures that no other callback is invoked during this process. The client driver is expected to perform any reset related operations such as releasing any resources, then signal reset completion by invoking [**UdecxWdfDeviceResetComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceresetcomplete).
 
 The following flow diagram illustrates the UDE device reset process.
 
@@ -149,10 +149,10 @@ Alternatively, PLDR can be achieved by putting the device into the D3Cold power 
 
 [MB hang detection](mb-hang-detection.md)
 
-[**UDECX_WDF_DEVICE_RESET_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/ne-udecxwdfdevice-_udecx_wdf_device_reset_type)
+[**UDECX_WDF_DEVICE_RESET_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/ne-udecxwdfdevice-_udecx_wdf_device_reset_type)
 
-[**UdecxWdfDeviceNeedsReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceneedsreset)
+[**UdecxWdfDeviceNeedsReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceneedsreset)
 
-[*EVT_UDECX_WDF_DEVICE_RESET*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nc-udecxwdfdevice-evt_udecx_wdf_device_reset)
+[*EVT_UDECX_WDF_DEVICE_RESET*](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/nc-udecxwdfdevice-evt_udecx_wdf_device_reset)
 
-[**UdecxWdfDeviceResetComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceresetcomplete)
+[**UdecxWdfDeviceResetComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceresetcomplete)

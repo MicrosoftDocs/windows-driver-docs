@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 Depending on the type of driver, porting involves performing the following steps:
 
 1.  [Port the DriverEntry routine](porting-driver-entry.md) and add code to create the WDFDRIVER object.
-2.  [Port the AddDevice routine](porting-adddevice-to-evtdriverdeviceadd.md) to an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback, and add code to create the WDFDEVICE objects.
+2.  [Port the AddDevice routine](porting-adddevice-to-evtdriverdeviceadd.md) to an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback, and add code to create the WDFDEVICE objects.
 3.  Add support for [interrupts](porting-interrupt-functionality.md) if the driver supports interrupt handling.
 
 At this point, you can perform the remaining steps incrementally and in any order, testing and debugging after each addition. For example, you can start by implementing the I/O queues and using the framework defaults for Plug and Play and power management. After you have debugged the basic I/O support, you can add support for more extensive Plug and Play and power management requests. The remaining steps are as follows:

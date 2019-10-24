@@ -17,7 +17,7 @@ Properties of device objects can be set in the registry as follows:
 
 -   For WDM drivers, properties can be set for each model of a device, or for a whole device setup class. (For more information about device setup classes, see [Device Setup Classes](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).)
 
--   For non-WDM drivers, properties can be set for a named device object's device setup class. The driver specifies the device setup class when it creates the device object with **IoCreateDeviceSecure**. For more information about how to specify a device setup class, see [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
+-   For non-WDM drivers, properties can be set for a named device object's device setup class. The driver specifies the device setup class when it creates the device object with **IoCreateDeviceSecure**. For more information about how to specify a device setup class, see [**IoCreateDeviceSecure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
 
 Any settings in the registry override the properties supplied when the driver created the device object.
 

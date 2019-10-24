@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_POWER
 
 
-All drivers must be prepared to service **IRP\_MJ\_POWER** requests in a [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+All drivers must be prepared to service **IRP\_MJ\_POWER** requests in a [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 When Sent
 ---------
@@ -54,7 +54,7 @@ Requirements
 ## See also
 
 
-[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
 

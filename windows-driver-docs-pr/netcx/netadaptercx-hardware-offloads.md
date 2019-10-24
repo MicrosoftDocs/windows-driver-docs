@@ -18,7 +18,7 @@ NetAdapterCx focuses on ease of offload configuration and management of offload 
 
 This guidance provides an overview of key concepts for hardware offloads in NetAdapterCx.
 
-- Hardware offload capabilities are advertised by the network adapter hardware during initialization and must be advertised before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapterstart).
+- Hardware offload capabilities are advertised by the network adapter hardware during initialization and must be advertised before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart).
 - The driver doesn't need to worry about checking standard registry keywords. NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities.
 - The *active* offload capabilities of the network adapter are those that the network adapter is currently programmed to perform. These are a subset of the hardware capabilities advertised by the client driver previously.
 - The TCP/IP stack or an overlying protocol driver can request a change in active capabilities of the network adapter. Client drivers register callbacks with NetAdapterCx to be notified of changes in the active offload capabilities.
@@ -37,7 +37,7 @@ The following offloads are supported by NetAdapterCx and the Windows TCP/IP stac
 
 ## Configuring hardware offloads
 
-Client drivers first advertise their hardware's checksum offload capabilities during net adapter initialization. This might occur within the context of [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) when starting a net adapter. To get started, the client driver allocates a capabilities structure for each supported offload, initializes them, and calls the appropriate **NetAdapterOffloadSetXxxCapabilities** methods to register them with NetAdapterCx. During the call to **NET_ADAPTER_OFFLOAD_XxX_CAPABILITIES_INIT**, the driver provides a pointer to a callback function that the system invokes later if active hardware offload capabilities change.
+Client drivers first advertise their hardware's checksum offload capabilities during net adapter initialization. This might occur within the context of [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) when starting a net adapter. To get started, the client driver allocates a capabilities structure for each supported offload, initializes them, and calls the appropriate **NetAdapterOffloadSetXxxCapabilities** methods to register them with NetAdapterCx. During the call to **NET_ADAPTER_OFFLOAD_XxX_CAPABILITIES_INIT**, the driver provides a pointer to a callback function that the system invokes later if active hardware offload capabilities change.
 
 This example shows how a client driver might set up its hardware offload capabilities.
 
@@ -125,18 +125,18 @@ MyEvtAdapterOffloadSetLso(
 
 [Packet descriptors and extensions](packet-descriptors-and-extensions.md)
 
-[**NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/ns-netadapter-_net_adapter_offload_checksum_capabilities)
+[**NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_offload_checksum_capabilities)
 
-[**NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-net_adapter_offload_checksum_capabilities_init)
+[**NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_checksum_capabilities_init)
 
-[**NetAdapterOffloadSetChecksumCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nf-netadapter-netadapteroffloadsetchecksumcapabilities)
+[**NetAdapterOffloadSetChecksumCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadsetchecksumcapabilities)
 
-[*EvtNetAdapterOffloadSetChecksum*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapter/nc-netadapter-evt_net_adapter_offload_set_checksum)
+[*EvtNetAdapterOffloadSetChecksum*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_checksum)
 
-[**NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_lso_capabilities)
+[**NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_lso_capabilities)
 
-[**NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapteroffload/nf-netadapteroffload-net_adapter_offload_lso_capabilities_init)
+[**NET_ADAPTER_OFFLOAD_LSO_CAPABILITIES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-net_adapter_offload_lso_capabilities_init)
 
-[**NetAdapterOffloadSetLsoCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetlsocapabilities)
+[**NetAdapterOffloadSetLsoCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetlsocapabilities)
 
-[*EvtNetAdapterOffloadSetLso*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_lso)
+[*EvtNetAdapterOffloadSetLso*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_lso)

@@ -41,7 +41,7 @@ HKR, Parameters\Wdf,DbgBreakOnError,0x00010001,1
 Set to a nonzero value to enable the [**WDFVERIFY**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfverify) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifierOn value is set, VerifyOn is implicitly set to nonzero.
 
 <a href="" id="dbgbreakonerror--reg-dword-"></a>**DbgBreakOnError** (**REG\_DWORD**)  
-If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example above.
+If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example above.
 
 <a href="" id="dbgwaitforsignaltimeoutinsec--reg-dword-"></a>**DbgWaitForSignalTimeoutInSec** (**REG\_DWORD**)  
 Starting in Windows 8, when **VerifierOn** and **DbgBreakOnError** are set to nonzero values, the driver can change the default timeout period for breaking into the debugger by setting **DbgWaitForSignalTimeoutInSec**.

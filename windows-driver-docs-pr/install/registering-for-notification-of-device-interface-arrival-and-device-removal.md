@@ -65,7 +65,7 @@ Typically, a user-mode component calls [**CM_Register_Notification**](https://do
 
 6. Once you are finished with the device, call [**CM_Unregister_Notification**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_unregister_notification) to unregister the interface notification callback that you registered in step 1.
 
-If you are following this procedure in a UMDF 2 driver, see [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces) for a code example. A UMDF 2 driver might perform steps 1-4 in the driver's [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback routine, and step 6 in one of the driver's device removal callback routines.
+If you are following this procedure in a UMDF 2 driver, see [Using Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces) for a code example. A UMDF 2 driver might perform steps 1-4 in the driver's [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback routine, and step 6 in one of the driver's device removal callback routines.
 
 ## Related topics
 

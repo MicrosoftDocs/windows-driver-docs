@@ -23,8 +23,8 @@ ms.localizationpriority: medium
 **Important APIs**
 
 -   [**WppRecorderLogGetDefault**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/dn895240(v=vs.85))
--   [**WppRecorderLogCreate (Kernel-mode drivers only)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate)
--   [**WppRecorderDumpLiveDriverData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
+-   [**WppRecorderLogCreate (Kernel-mode drivers only)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate)
+-   [**WppRecorderDumpLiveDriverData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
 
 *Inflight Trace Recorder (IFR)* is a new tracing feature that allows a trace provider, such as a kernel-mode driver, to get trace logs with minimal setup and create a set of in-memory buffers where the latest WPP log messages are preserved.
 
@@ -148,7 +148,7 @@ After adding WPP software tracing to your driver, the IFR infrastructure is alre
 
     ![enable wpp recorder in visual studio](images/wpp-enable4.png)
 
-6.  Add **Wpprecorder.h** to each source file that calls IFR APIs, such as [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to set up your own IFR log. Call the APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) call in the *DriverEntry* routine of a KMDF or UMDF 2.15 driver.
+6.  Add **Wpprecorder.h** to each source file that calls IFR APIs, such as [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to set up your own IFR log. Call the APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) call in the *DriverEntry* routine of a KMDF or UMDF 2.15 driver.
 
 ## <span id="Use__the_default_log"></span><span id="use__the_default_log"></span><span id="USE__THE_DEFAULT_LOG"></span>Use the default log
 
@@ -157,13 +157,13 @@ After WPP is enabled for the driver project, WPP creates a default log. The buff
 
 If the default log buffer fails to allocate, trace messages are sent to the WPP. That is, the trace message are not recorded through the IFR, but the traces can still be seen as live WPP traces. To determine whether the default log was created, the driver must call [**WppRecorderIsDefaultLogAvailable**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/dn914614(v=vs.85)). If the default log does not exist and the driver wants to use IFR, the driver must create a log. For more information, see [Create a custom log](#create).
 
-1.  Initialize a [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/ns-wpprecorder-_recorder_configure_params) structure by calling [**RECORDER\_CONFIGURE\_PARAMS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-recorder_configure_params_init). The macro sets the **CreateDefaultLog** member to TRUE, which indicates that the driver wants to use the default log.
-2.  Call [**WppRecorderConfigure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderconfigure) by specifying the address of the initialized [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/ns-wpprecorder-_recorder_configure_params) structure.
+1.  Initialize a [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_configure_params) structure by calling [**RECORDER\_CONFIGURE\_PARAMS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-recorder_configure_params_init). The macro sets the **CreateDefaultLog** member to TRUE, which indicates that the driver wants to use the default log.
+2.  Call [**WppRecorderConfigure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderconfigure) by specifying the address of the initialized [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_configure_params) structure.
 3.  You can get a RECORDER\_LOG opaque handle to the default log by calling [**WppRecorderLogGetDefault**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/dn895240(v=vs.85)).
 4.  Print trace messages to the default log by calling the trace macros declared in Trace.h. For more information, see [Define trace functions](#define).
 5.  View traces messages in the debugger. For more information, see [View the trace messages](#view).
 
-**Note**  To disable the default log, set the **CreateDefaultLog** member of the [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/ns-wpprecorder-_recorder_configure_params) to FALSE, and then call [**WppRecorderConfigure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderconfigure).
+**Note**  To disable the default log, set the **CreateDefaultLog** member of the [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_configure_params) to FALSE, and then call [**WppRecorderConfigure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderconfigure).
 
 
 
@@ -242,15 +242,15 @@ For example, your driver has separate flow paths for control and data transfer r
 
 In another example, you have two devices, and one device sends more trace messages more than the other. If a driver uses the default log, that device can flood the buffer and messages from the other device can get dropped. Instead, the driver can create two custom logs so that each device can send messages to its buffer, and you can view messages from each device, separately.
 
-1.  Initialize a [**RECORDER\_LOG\_CREATE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/ns-wpprecorder-_recorder_log_create_params) structure by calling [**RECORDER\_LOG\_CREATE\_PARAMS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-recorder_log_create_params_init). WPP uses the default log parameters unless the members of the structure are modified.
+1.  Initialize a [**RECORDER\_LOG\_CREATE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_log_create_params) structure by calling [**RECORDER\_LOG\_CREATE\_PARAMS\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-recorder_log_create_params_init). WPP uses the default log parameters unless the members of the structure are modified.
 2.  Optional. Set the **TotalBufferSize** member to the desired size . By default, the size is set to 1024 bytes (see RECORDER\_LOG\_DEFAULT\_BUFFER\_SIZE in Wpprecorder.h).
     **Note**  WPP allocates buffer for the log from the non-paged pool. The log is divided into two circular buffers called partitions: general and error. The error partition only shows messages of TRACE\_LEVEL\_ERROR. Messages related to all other levels are sent to the general partition. The partitions are designed to prevent verbose trace providers from overwriting their own error messages with lower priority messages. The caller specifies the buffer size in **TotalBufferSize**, which indicates the total size of those partitions. The error partition cannot exceed half the total buffer size. The buffer sizes can be modified after initialization.
 
 
 
 3.  Optional. Set the **LogIdentifier** to a string that will help you identify trace messages from this buffer. The string must not exceed 16 characters in length.
-4.  Call [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) by specifying the address of the populated [**RECORDER\_LOG\_CREATE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/ns-wpprecorder-_recorder_log_create_params) structure.
-5.  Print trace messages to this new buffer by calling trace macros and passing the RECORDER\_LOG handle received by the [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) call.
+4.  Call [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) by specifying the address of the populated [**RECORDER\_LOG\_CREATE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_log_create_params) structure.
+5.  Print trace messages to this new buffer by calling trace macros and passing the RECORDER\_LOG handle received by the [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) call.
 6.  View traces messages in the debugger. For more information, see [View the trace messages](#view).
 
 The system defines maximum and minimum buffer sizes in the registry. You can set these values appropriately to conserve memory and configure logging capabilities.
@@ -282,9 +282,9 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\<serviceName>\Parameters
    By default (0), IFR only logs errors, warnings, and informational events. Setting this value to 1 adds the verbose output to get logged. 
 ```
 
-If the size specified in [**RECORDER\_LOG\_CREATE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/ns-wpprecorder-_recorder_log_create_params) is less than the minimum number of bytes, [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) allocates **WppRecorder\_PerBufferMinBytes** bytes. Similarly, if the size exceeds the maximum value, **WppRecorderLogCreate** allocates **WppRecorder\_PerBufferMaxBytes** bytes.
+If the size specified in [**RECORDER\_LOG\_CREATE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_log_create_params) is less than the minimum number of bytes, [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) allocates **WppRecorder\_PerBufferMinBytes** bytes. Similarly, if the size exceeds the maximum value, **WppRecorderLogCreate** allocates **WppRecorder\_PerBufferMaxBytes** bytes.
 
-To delete the custom log, call [**WppRecorderLogDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogdelete) before calling [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)). After a thread enters this function, all threads must not log into this buffer anymore. You can call this function in the [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) implementation of the driver.
+To delete the custom log, call [**WppRecorderLogDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogdelete) before calling [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)). After a thread enters this function, all threads must not log into this buffer anymore. You can call this function in the [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) implementation of the driver.
 
 This example code is a snippet from the driver's DriverEntry function. In this example, the driver disables the default log, creates a custom log, and sets its buffer size and an identifier.
 
@@ -382,7 +382,7 @@ In the preceding example, there are two tracing functions, TraceEvents and Print
 
 To print trace messages to the default log, the driver either calls PrintEvents with the handle received by the [**WppRecorderLogGetDefault**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/dn895240(v=vs.85)) call, or call TraceEvents, without the handle.
 
-To print to the custom log, the driver passes the handle received in the call to [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate).
+To print to the custom log, the driver passes the handle received in the call to [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate).
 
 ## <span id="Make__trace_messages_available_in_public_symbols"></span><span id="make__trace_messages_available_in_public_symbols"></span><span id="MAKE__TRACE_MESSAGES_AVAILABLE_IN_PUBLIC_SYMBOLS"></span>Make trace messages available in public symbols
 
@@ -424,13 +424,13 @@ Your kernel-mode driver can view the trace log by using [RCDRKD Extensions](http
 
 -   Call the IFR APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) call in the *DriverEntry* routine of a kernel-mode driver or in the *DLLMain* routine of a UMDF 2.15 driver. If logging is disabled by a global policy, then calling WPP\_INIT\_TRACING does not enable logging.
 
--   If [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) fails, the call returns a NULL handle. In that case, you can choose to ignore the return value of **WppRecorderLogCreate** and use the RECODER\_LOG handle to print your WPP messages.
+-   If [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) fails, the call returns a NULL handle. In that case, you can choose to ignore the return value of **WppRecorderLogCreate** and use the RECODER\_LOG handle to print your WPP messages.
 
--   Do not delete the handle returned by [**WppRecorderLogGetDefault**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/dn895240(v=vs.85)). To disable the default log, set the **CreateDefaultLog** member of [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/ns-wpprecorder-_recorder_configure_params) to FALSE, and then call [**WppRecorderConfigure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderconfigure).
+-   Do not delete the handle returned by [**WppRecorderLogGetDefault**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/dn895240(v=vs.85)). To disable the default log, set the **CreateDefaultLog** member of [**RECORDER\_CONFIGURE\_PARAMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_configure_params) to FALSE, and then call [**WppRecorderConfigure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderconfigure).
 
--   Do not call [**WppRecorderLogSetIdentifier**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogsetidentifier) by passing the default log handle. That operation is not allowed.
+-   Do not call [**WppRecorderLogSetIdentifier**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogsetidentifier) by passing the default log handle. That operation is not allowed.
 
--   IFR buffers are allocated from the non-page pool. The accumulative effect of those allocations can lead to significant performance issues, particularly on smaller footprint devices. Request smaller buffer sizes in your [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wpprecorder/nf-wpprecorder-wpprecorderlogcreate). Also, if you do not need the logging feature, disable the default log.
+-   IFR buffers are allocated from the non-page pool. The accumulative effect of those allocations can lead to significant performance issues, particularly on smaller footprint devices. Request smaller buffer sizes in your [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate). Also, if you do not need the logging feature, disable the default log.
 
 -   To view the size of the log buffer, use the [**!wdfkd.wdflogdump**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdflogdump) command. If you are using [RCDRKD Extensions](https://docs.microsoft.com/windows-hardware/drivers/debugger/rcdrkd-extensions), then you can view the size by using [**!rcdrkd.rcdrloglist**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-rcdrkd-rcdrloglist)
 

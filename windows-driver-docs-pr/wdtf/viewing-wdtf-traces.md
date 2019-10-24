@@ -69,11 +69,11 @@ Viewing WDTF traces requires formatting the ETL files. The following steps show 
 
 All WDTF objects provide tracing information as they run.
 
-WDTF provides a set of configurable [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) levels. For information on how to set the **TTraceLevel** of a specific object instance at run-time, see the [**ITracing::SetTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) method.
+WDTF provides a set of configurable [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) levels. For information on how to set the **TTraceLevel** of a specific object instance at run-time, see the [**ITracing::SetTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) method.
 
-For information on how to set the default [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) for an interface, see the [Windows Device Testing Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For information on how to set the default [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) for an interface, see the [Windows Device Testing Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
-For a detailed description of the types of traces included in each [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), see the [**ITracer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) interface. You can globally configure these levels yourself using the **ITracer**'s registry TraceLevel Path.
+For a detailed description of the types of traces included in each [**TTraceLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), see the [**ITracer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) interface. You can globally configure these levels yourself using the **ITracer**'s registry TraceLevel Path.
 
 The following table describes the trace levels that you can set.
 
@@ -89,7 +89,7 @@ The following table describes the trace levels that you can set.
 
 When you are debugging by using trace content, consider setting the trace levels to 1 for all objects and then setting trace levels much higher for the objects that you are examining.
 
-For more information about trace levels, see the [**ITracer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) interface.
+For more information about trace levels, see the [**ITracer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) interface.
 
 ## Related topics
 

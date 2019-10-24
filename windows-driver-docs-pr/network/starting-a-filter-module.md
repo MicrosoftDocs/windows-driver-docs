@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 
 
-To start a paused filter module, NDIS calls the filter driver's [*FilterSetModuleOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_set_module_options) function, if any, followed by a call to the [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_restart) function. The filter module enters the *Restarting* state at the start of execution in the *FilterRestart* function.
+To start a paused filter module, NDIS calls the filter driver's [*FilterSetModuleOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_set_module_options) function, if any, followed by a call to the [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart) function. The filter module enters the *Restarting* state at the start of execution in the *FilterRestart* function.
 
-If the driver provided an entry point for [*FilterSetModuleOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_set_module_options), the driver can change the partial characteristic for a filter module. For more information, see [Data Bypass Mode](data-bypass-mode.md).
+If the driver provided an entry point for [*FilterSetModuleOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_set_module_options), the driver can change the partial characteristic for a filter module. For more information, see [Data Bypass Mode](data-bypass-mode.md).
 
-When it calls a filter driver's [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_restart) function, NDIS passes a pointer to an [**NDIS\_RESTART\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_restart_attributes) structure to filter driver in the **RestartAttributes** member of the [**NDIS\_FILTER\_RESTART\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_filter_restart_parameters) structure. Filter drivers can modify the restart attributes that are specified by underlying drivers. For more information about how to modify restart attributes, see *FilterRestart*.
+When it calls a filter driver's [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart) function, NDIS passes a pointer to an [**NDIS\_RESTART\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_restart_attributes) structure to filter driver in the **RestartAttributes** member of the [**NDIS\_FILTER\_RESTART\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_restart_parameters) structure. Filter drivers can modify the restart attributes that are specified by underlying drivers. For more information about how to modify restart attributes, see *FilterRestart*.
 
-**Note**  NDIS calls [*FilterSetModuleOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_set_module_options) for all filter modules in a stack before NDIS calls the [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_restart) function for any filter module in the stack.
+**Note**  NDIS calls [*FilterSetModuleOptions*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_set_module_options) for all filter modules in a stack before NDIS calls the [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart) function for any filter module in the stack.
 
  
 
@@ -41,29 +41,29 @@ On behalf of a filter module that is in the *Restarting* state, the filter drive
 
 -   Should not initiate any new receive indications.
 
--   Should reject all new send requests made to its [*FilterSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_send_net_buffer_lists) function immediately by calling the [**NdisFSendNetBufferListsComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfsendnetbufferlistscomplete) function. It should set the complete status in each [NET\_BUFFER\_LIST](net-buffer-list-structure.md) to NDIS\_STATUS\_PAUSED.
+-   Should reject all new send requests made to its [*FilterSendNetBufferLists*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists) function immediately by calling the [**NdisFSendNetBufferListsComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlistscomplete) function. It should set the complete status in each [NET\_BUFFER\_LIST](net-buffer-list-structure.md) to NDIS\_STATUS\_PAUSED.
 
--   Can provide status indications with the [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus) function.
+-   Can provide status indications with the [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus) function.
 
     For more information about status indications, see [Filter Module Status Indications](filter-module-status-indications.md).
 
--   Should handle OID requests in the [*FilterOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_oid_request) function.
+-   Should handle OID requests in the [*FilterOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request) function.
 
     For more information about OID requests, see [Filter Module OID Requests](filter-module-oid-requests.md).
 
 -   Should not initiate any new send requests.
 
--   Should return new receive indications to NDIS immediately by calling the [**NdisFReturnNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreturnnetbufferlists) function. If necessary, the driver can copy such receive indications before it returns them.
+-   Should return new receive indications to NDIS immediately by calling the [**NdisFReturnNetBufferLists**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreturnnetbufferlists) function. If necessary, the driver can copy such receive indications before it returns them.
 
 -   Can make OID requests to the underlying drivers to set or query updated configuration information.
 
--   Should handle status indications in its [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_status) function.
+-   Should handle status indications in its [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_status) function.
 
 -   Should Indicate NDIS\_STATUS\_SUCCESS or a failure status. If a filter module does not restart, NDIS will detach it and if it is a mandatory filter, NDIS terminates the entire driver stack.
 
-After the filter driver successfully restarts the send and receive operations, it must complete the restart operation. The filter driver can complete the restart operation synchronously or asynchronously by returning NDIS\_STATUS\_SUCCESS or NDIS\_STATUS\_PENDING respectively from [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_restart).
+After the filter driver successfully restarts the send and receive operations, it must complete the restart operation. The filter driver can complete the restart operation synchronously or asynchronously by returning NDIS\_STATUS\_SUCCESS or NDIS\_STATUS\_PENDING respectively from [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart).
 
-If the driver returns NDIS\_STATUS\_PENDING, it must call the [**NdisFRestartComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfrestartcomplete) function after it completes the restart operation. In this case, he driver passes the final status of the restart operation to **NdisFRestartComplete**.
+If the driver returns NDIS\_STATUS\_PENDING, it must call the [**NdisFRestartComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfrestartcomplete) function after it completes the restart operation. In this case, he driver passes the final status of the restart operation to **NdisFRestartComplete**.
 
 After the restart operation is complete, the filter module is in the *Running* state. The driver resumes normal send and receive processing.
 

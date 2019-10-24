@@ -15,14 +15,14 @@ Starting with NDIS 6.30, miniport drivers issue an NDIS wake reason status indic
 
  
 
-The miniport driver is configured with power management (PM) parameters through an object identifier (OID) set request of [OID\_PM\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-parameters). This OID request specifies the PM parameters through an [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
+The miniport driver is configured with power management (PM) parameters through an object identifier (OID) set request of [OID\_PM\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-parameters). This OID request specifies the PM parameters through an [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
 
-The [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure specifies the parameters for the following types of wake-up events.
+The [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure specifies the parameters for the following types of wake-up events.
 
 <a href="" id="received-packet-wake-up-events"></a>Received Packet Wake-up Events  
 The network adapter generates a wake-up event if it receives a packet that matched a wake-on-LAN (WOL) pattern. WOL patterns include the following:
 
--   Media-independent WOL patterns, such as magic packets or TCP/IP data patterns within the packet payload. For example, the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure could specify a WOL pattern for a TCP SYN frame.
+-   Media-independent WOL patterns, such as magic packets or TCP/IP data patterns within the packet payload. For example, the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure could specify a WOL pattern for a TCP SYN frame.
 
 -   Media-specific WOL patterns, such as an EAPOL request identifier packet or mobile broadband (MB) Short Message Service (SMS) message.
 
@@ -32,21 +32,21 @@ The network adapter generates a wake-up event if it receives a packet that match
 
  
 
-WOL patterns are specified through the **EnabledWoLPacketPatterns** member of the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
+WOL patterns are specified through the **EnabledWoLPacketPatterns** member of the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
 
 <a href="" id="media-specific-wake-up-events"></a>Media-Specific Wake-up Events  
 The network adapter generates a wake-up event because of a media-specific reason, such as a disassociation from an 802.11 access point (AP) or the receipt of a mobile broadband (MB) Short Message Service (SMS) message.
 
-Wake-up events of this type are specified through the **MediaSpecificWakeUpEvents** member of the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
+Wake-up events of this type are specified through the **MediaSpecificWakeUpEvents** member of the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
 
 <a href="" id="media-independent-wake-up-events"></a>Media-Independent Wake-up Events  
 The network adapter generates a wake-up event because of a media-independent reason, such as media connection or disconnection.
 
-Wake-up events of this type are specified through the **WakeUpFlags** member of the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
+Wake-up events of this type are specified through the **WakeUpFlags** member of the [**NDIS\_PM\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
 
 The miniport driver must follow these guidelines for NDIS wake reason status indications:
 
--   If the miniport driver supports the ability to issue wake packet indications, it must report this ability when NDIS calls the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function. For more information, see [Reporting Wake Reason Status Indication Capabilities](reporting-wake-reason-status-indication-capabilities.md).
+-   If the miniport driver supports the ability to issue wake packet indications, it must report this ability when NDIS calls the driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. For more information, see [Reporting Wake Reason Status Indication Capabilities](reporting-wake-reason-status-indication-capabilities.md).
 
     **Note**  The miniport driver does not have to report its ability to issue NDIS wake reason status indications for events that are not related to the receipt of a WOL packet.
 

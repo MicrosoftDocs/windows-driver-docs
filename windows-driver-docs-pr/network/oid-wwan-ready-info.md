@@ -15,7 +15,7 @@ OID\_WWAN\_READY\_INFO returns the device ready-state, which includes its Subscr
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md) status notification containing an [**NDIS\_WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info) structure that indicates the MB device's ready-state when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md) status notification containing an [**NDIS\_WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info) structure that indicates the MB device's ready-state when completing query requests.
 
 Remarks
 -------
@@ -63,7 +63,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info)
+[**NDIS\_WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info)
 
 [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md)
 

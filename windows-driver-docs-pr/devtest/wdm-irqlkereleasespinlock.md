@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 # IrqlKeReleaseSpinLock rule (wdm)
 
 
-The **IrqlKeReleaseSpinLock** rule specifies that the driver calls [**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleasespinlock) only when it is executing at IRQL = DISPATCH\_LEVEL.
+The **IrqlKeReleaseSpinLock** rule specifies that the driver calls [**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock) only when it is executing at IRQL = DISPATCH\_LEVEL.
 
-This rule also specifies that the value of the *NewIrql* parameter in the call to **KeReleaseSpinLock** is equal to the IRQL at which the driver was executing before the call to [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keacquirespinlock). (This value is also the value of the *OldIrql* parameter that is supplied by **KeAcquireSpinLock**.)
+This rule also specifies that the value of the *NewIrql* parameter in the call to **KeReleaseSpinLock** is equal to the IRQL at which the driver was executing before the call to [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock). (This value is also the value of the *OldIrql* parameter that is supplied by **KeAcquireSpinLock**.)
 
 |              |     |
 |--------------|-----|
@@ -75,7 +75,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleasespinlock)
+[**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock)
  
 
  

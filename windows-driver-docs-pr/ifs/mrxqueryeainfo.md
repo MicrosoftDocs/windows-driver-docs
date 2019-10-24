@@ -154,7 +154,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 

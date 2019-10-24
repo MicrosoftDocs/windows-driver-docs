@@ -11,7 +11,7 @@ ms.custom: 19H1
 
 # Receiving network data with net rings
 
-NetAdapterCx client drivers receive network data when the framework invokes their [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function for a receive queue. During this callback, client drivers indicate receives by draining received fragments and packets to the OS, then post new buffers to hardware.
+NetAdapterCx client drivers receive network data when the framework invokes their [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function for a receive queue. During this callback, client drivers indicate receives by draining received fragments and packets to the OS, then post new buffers to hardware.
 
 ## Receive (Rx) post and drain operation overview
 
@@ -27,25 +27,25 @@ Here is a typical sequence for a driver that receives data in order, with one fr
 
 1. Call **NetRxQueueGetRingCollection** to retrieve the receive queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
 2. Indicate received data to the OS by draining the net rings:
-    1. Use the ring collection to retrieve the drain iterator for the receive queue's fragment ring through a call to [**NetRingGetDrainFragments**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netringgetdrainfragments).
-    2. Get a packet iterator for all available packets in the packet ring by calling [**NetRingGetAllPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netringgetallpackets).
+    1. Use the ring collection to retrieve the drain iterator for the receive queue's fragment ring through a call to [**NetRingGetDrainFragments**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netringgetdrainfragments).
+    2. Get a packet iterator for all available packets in the packet ring by calling [**NetRingGetAllPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netringgetallpackets).
     3. Do the following in a loop:
         1. Check if the fragment has been received by the hardware. If not, break out of the loop.
-        2. Get the fragment iterator's current fragment by calling [**NetFragmentIteratorGetFragment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratorgetfragment).
+        2. Get the fragment iterator's current fragment by calling [**NetFragmentIteratorGetFragment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratorgetfragment).
         3. Fill in the fragment's information, such as its **ValidLength**, based on its matching hardware descriptor.
-        4. Get a packet for this fragment by calling [**NetPacketIteratorGetPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratorgetpacket).
+        4. Get a packet for this fragment by calling [**NetPacketIteratorGetPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratorgetpacket).
         5. Bind the fragment to the packet by setting the packet's **FragmentIndex** to the fragment's current index in the fragment ring and setting the number of fragments appropriately (in this example, it is set to **1**). 
         6. Optionally, fill in any other packet information such as checksum info.
-        7. Call [**NetFragmentIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratoradvance) to move to the next fragment.
-        7. Call [**NetPacketIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratoradvance) to move to the next packet.
-    4. Call [**NetFragmentIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratorset) and [**NetPacketIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netpacketiteratorset) to finalize indicating received packets and their fragments to the OS.
+        7. Call [**NetFragmentIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratoradvance) to move to the next fragment.
+        7. Call [**NetPacketIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratoradvance) to move to the next packet.
+    4. Call [**NetFragmentIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratorset) and [**NetPacketIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratorset) to finalize indicating received packets and their fragments to the OS.
 3. Post fragment buffers to hardware for the next receives:    
-    1. Use the ring collection to retrieve the post iterator for the receive queue's fragment ring by calling [**NetRingGetPostFragments**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netringgetpostfragments).
+    1. Use the ring collection to retrieve the post iterator for the receive queue's fragment ring by calling [**NetRingGetPostFragments**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netringgetpostfragments).
     2. Do the following in a loop:
-        1. Get the fragment iterator's current index by calling [**NetFragmentIteratorGetIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratorgetindex).
+        1. Get the fragment iterator's current index by calling [**NetFragmentIteratorGetIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratorgetindex).
         2. Post the fragment's information to the matching hardware descriptor.
-        3. Call [**NetFragmentIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratoradvance) to move to the next fragment.
-    3. Call [**NetFragmentIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/nf-netringiterator-netfragmentiteratorset) to finalize posting fragments to hardware.
+        3. Call [**NetFragmentIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratoradvance) to move to the next fragment.
+    3. Call [**NetFragmentIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratorset) to finalize posting fragments to hardware.
 
 These steps might look like this in code:
 

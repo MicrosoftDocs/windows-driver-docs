@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 A **DriverEntry** routine is the initial entry point for most Microsoft Windows kernel-mode drivers and for every SCSI miniport driver. A miniport driver's [**DriverEntry**](driverentry-of-scsi-miniport-driver.md) routine is called with two input arguments of type PVOID and must do the following:
 
-1. Initialize a [HW_INITIALIZATION_DATA (SCSI)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_hw_initialization_data) structure on the stack with zeros.
+1. Initialize a [HW_INITIALIZATION_DATA (SCSI)](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_hw_initialization_data) structure on the stack with zeros.
 
 2. Set the **HwInitializationDataSize** member to **sizeof**(HW_INITIALIZATION_DATA).
 
@@ -32,4 +32,4 @@ A **DriverEntry** routine is the initial entry point for most Microsoft Windows 
 
 4. In an a legacy miniport driver, set up any driver-determined context data that the miniport driver's *HwScsiFindAdapter* routine will use.
 
-5. Call [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportinitialize) with the pointers that were input to the **DriverEntry** routine, the address of the filled-in HW_INITIALIZATION_DATA, and the address of the context data, if any.
+5. Call [**ScsiPortInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize) with the pointers that were input to the **DriverEntry** routine, the address of the filled-in HW_INITIALIZATION_DATA, and the address of the context data, if any.

@@ -20,7 +20,7 @@ NDIS handles OID\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES and miniport drivers do n
 
 This query is optional for other NDIS drivers.
 
-NDIS returns an [**NDIS\_PCI\_DEVICE\_CUSTOM\_PROPERTIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pci_device_custom_properties) structure that contains the PCI custom properties.
+NDIS returns an [**NDIS\_PCI\_DEVICE\_CUSTOM\_PROPERTIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pci_device_custom_properties) structure that contains the PCI custom properties.
 
 For non-PCI miniport adapters, NDIS fails OID\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES with the NDIS\_STATUS\_INVALID\_DEVICE\_REQUEST status code.
 
@@ -47,7 +47,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_PCI\_DEVICE\_CUSTOM\_PROPERTIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pci_device_custom_properties)
+[**NDIS\_PCI\_DEVICE\_CUSTOM\_PROPERTIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pci_device_custom_properties)
 
  
 

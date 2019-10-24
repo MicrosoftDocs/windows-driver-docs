@@ -14,7 +14,7 @@ The input and output facilities of the [debugger engine](introduction.md#debugge
 
 The debugger engine maintains an *input stream* and an *output stream*. Input can be requested from the input stream, and output sent to the output stream.
 
-When the [**Input**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugcontrol-input) method is called to request input from the engine's input stream, the engine will call all the registered [input callbacks](using-input-and-output.md#input-callbacks) to inform them that it is waiting for input. It then waits for the input callbacks to provide the input by calling the [**ReturnInput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugcontrol3-returninput) method.
+When the [**Input**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol-input) method is called to request input from the engine's input stream, the engine will call all the registered [input callbacks](using-input-and-output.md#input-callbacks) to inform them that it is waiting for input. It then waits for the input callbacks to provide the input by calling the [**ReturnInput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-returninput) method.
 
 When output is sent to the engine's output stream, the engine will call the registered [output callbacks](using-input-and-output.md#output-callbacks) passing the output to them. When sending output to the output stream, it can be filtered by the client object; in which case, only output callbacks that are registered with particular client objects will receive the output.
 

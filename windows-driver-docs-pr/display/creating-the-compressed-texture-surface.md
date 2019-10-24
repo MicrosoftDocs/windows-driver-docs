@@ -22,9 +22,9 @@ Whenever DirectDraw requests the driver to create a surface, the driver must det
 
 -   Check for the DDSCAPS\_TEXTURE flag in the **dwFlags** member of the [**DDSCAPS**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550286(v=vs.85)) structure.
 
--   Check for the DDPF\_FOURCC flag in the **dwFlags** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat) structure for the surface being created. This check should occur before the following **dwFourCC** check.
+-   Check for the DDPF\_FOURCC flag in the **dwFlags** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for the surface being created. This check should occur before the following **dwFourCC** check.
 
--   Check for one of the DXT codes in the **dwFourCC** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat) structure for the surface being created.
+-   Check for one of the DXT codes in the **dwFourCC** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for the surface being created.
 
 -   Check the width and height members (**dwWidth** and **dwHeight**) of the [**DDSURFACEDESC2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550340(v=vs.85)) structure. DirectDraw sets these members to multiples of 4 pixels.
 

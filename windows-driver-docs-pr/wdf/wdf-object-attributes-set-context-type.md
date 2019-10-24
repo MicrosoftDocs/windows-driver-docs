@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 \[Applies to KMDF and UMDF\]
 
-The WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro inserts an object's driver-defined context information into the object's [**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
+The WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro inserts an object's driver-defined context information into the object's [**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
 
 Syntax
 ------
@@ -29,7 +29,7 @@ Parameters
 ----------
 
 *_attributes*   
-A pointer to an object's [**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
+A pointer to an object's [**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
 
 *_contexttype*   
 The structure type name of a driver-defined structure that describes the contents of an object's context space.
@@ -42,7 +42,7 @@ This macro does not return a value.
 Remarks
 -------
 
-You should use the WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro after calling [**WDF_OBJECT_ATTRIBUTES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdf_object_attributes_init).
+You should use the WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro after calling [**WDF_OBJECT_ATTRIBUTES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init).
 
 For more information about using the WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro, see [Framework Object Context Space](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-context-space).
 
@@ -81,9 +81,9 @@ Requirements
 
 [**WDF_DECLARE_CONTEXT_TYPE**](wdf-declare-context-type.md)
 
-[**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/ns-wdfobject-_wdf_object_attributes)
+[**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes)
 
-[**WDF_OBJECT_ATTRIBUTES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdf_object_attributes_init)
+[**WDF_OBJECT_ATTRIBUTES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init)
 
 [**WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE**](wdf-object-attributes-init-context-type.md)
 

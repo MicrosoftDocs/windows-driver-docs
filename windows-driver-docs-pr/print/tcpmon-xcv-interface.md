@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes the transceive (Xcv) interface for the standard TCP/IP port monitor (TCPMON). This interface, which is implemented using [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) and [**XcvDataPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-xcvdataport) function calls, enables those using it to configure a TCP/IP printer port or to obtain information about a TCP/IP printer port configuration. The Xcv interface described in this section is specific to TCP/IP ports. Other Xcv interfaces might be available for other port types.
+This section describes the transceive (Xcv) interface for the standard TCP/IP port monitor (TCPMON). This interface, which is implemented using [**XcvData**](https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)) and [**XcvDataPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-xcvdataport) function calls, enables those using it to configure a TCP/IP printer port or to obtain information about a TCP/IP printer port configuration. The Xcv interface described in this section is specific to TCP/IP ports. Other Xcv interfaces might be available for other port types.
 
 To obtain a handle to an Xcv interface for either a local machine or a remote machine, call the **OpenPrinter** function (described in the Microsoft Windows SDK documentation). The following code example illustrates how to obtain an Xcv handle to a port:
 

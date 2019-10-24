@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 A filter driver must support the following operational states for each filter module (instance of a filter driver) that the driver manages:
 
 <a href="" id="detached"></a>Detached  
-The *Detached* state is the initial state of a filter module. When a filter module is in this state, NDIS can call the filter driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_attach) function to attach the filter module to the driver stack.
+The *Detached* state is the initial state of a filter module. When a filter module is in this state, NDIS can call the filter driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) function to attach the filter module to the driver stack.
 
 <a href="" id="attaching"></a>Attaching  
 In the *Attaching* state, a filter driver prepares to attach the filter module to the driver stack.
@@ -172,31 +172,31 @@ In the following table, the headings are the filter module states. Major events 
 The primary filter driver events are defined as follows:
 
 <a href="" id="--------filter-attach--------"></a> Filter attach   
-NDIS called the driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_attach) function to attach a filter module to a driver stack. For more information about attaching a filter module, see [Attaching a Filter Module](attaching-a-filter-module.md).
+NDIS called the driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) function to attach a filter module to a driver stack. For more information about attaching a filter module, see [Attaching a Filter Module](attaching-a-filter-module.md).
 
 <a href="" id="attach-is-complete"></a>Attach is complete  
 When a filter module is in the *Attaching* state and the filter driver completes initialization of all the resources that the filter module requires, the filter module enters the *Paused* state.
 
 <a href="" id="--------filter-detach--------"></a> Filter detach   
-NDIS called the driver's [*FilterDetach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_detach) function to detach a filter module from a driver stack. For more information, see [Detaching a Filter Module](detaching-a-filter-module.md).
+NDIS called the driver's [*FilterDetach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_detach) function to detach a filter module from a driver stack. For more information, see [Detaching a Filter Module](detaching-a-filter-module.md).
 
 <a href="" id="--------filter-restart--------"></a> Filter restart   
-NDIS called the driver's [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_restart) function to restart a paused filter module. For more information, see [Starting a Filter Module](starting-a-filter-module.md).
+NDIS called the driver's [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart) function to restart a paused filter module. For more information, see [Starting a Filter Module](starting-a-filter-module.md).
 
 <a href="" id="restart-is-complete"></a>Restart is complete  
 When the filter module is in the *Restarting* state and the driver is ready to perform send and receive operations, the filter module enters the *Running* state.
 
 <a href="" id="--------filter-pause--------"></a> Filter pause   
-NDIS called the driver's [*FilterPause*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_pause) function to pause a filter module. For more information, see [Pausing a Filter Module](pausing-a-filter-module.md).
+NDIS called the driver's [*FilterPause*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_pause) function to pause a filter module. For more information, see [Pausing a Filter Module](pausing-a-filter-module.md).
 
 <a href="" id="pause-is-complete"></a>Pause is complete  
 After the driver has completed all operations that are required to stop send and receive operations, the pause operation is complete and the filter module is in the *Paused* state.
 
 <a href="" id="attach-failed"></a>Attach failed  
-If NDIS calls a driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_attach) function and the attach operation fails (for example, because the required resources are not available), the filter module returns to the *Detached* state.
+If NDIS calls a driver's [*FilterAttach*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) function and the attach operation fails (for example, because the required resources are not available), the filter module returns to the *Detached* state.
 
 <a href="" id="restart-failed"></a>Restart failed  
-If NDIS calls a driver's [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_restart) function and the restart attempt fails, the filter module returns to the *Paused* state.
+If NDIS calls a driver's [*FilterRestart*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_restart) function and the restart attempt fails, the filter module returns to the *Paused* state.
 
 <a href="" id="send-and-receive-operations"></a>Send and Receive Operations  
 A driver can handle send and receive operations in the *Running* and *Pausing* states. For more information about send and receive operations, see [Filter Module Send and Receive Operations](filter-module-send-and-receive-operations.md).

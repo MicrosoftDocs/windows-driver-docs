@@ -47,7 +47,7 @@ Typically, the forwarding extension originates encapsulated NDIS status indicati
 
 The forwarding extension can also originate encapsulated NDIS status indications to change the hardware offload resources that are allocated for a Hyper-V child partition. Starting with NDIS 6.30, the extension can issue an encapsulated [**NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-port-remove-vf) indication to remove the binding between a VM network adapter and a PCI Express (PCIe) virtual function (VF). The VF is exposed and supported by an underlying physical network adapter that supports the [single root I/O virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md) interface.
 
-If the forwarding extension originates an encapsulated NDIS status indication for the hardware offload resources of an underlying physical adapter, it must set the members of the [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure in the following way:
+If the forwarding extension originates an encapsulated NDIS status indication for the hardware offload resources of an underlying physical adapter, it must set the members of the [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure in the following way:
 
 -   The **DestinationPortId** member must be set to **NDIS\_SWITCH\_DEFAULT\_PORT\_ID**.
 -   The **DestinationNicIndex** member must be set to **NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX**
@@ -60,9 +60,9 @@ If the forwarding extension originates an encapsulated NDIS status indication fo
 
      
 
--   The **StatusIndication** member must be set to a pointer to an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure. This structure contains the data for the encapsulated NDIS status indication.
+-   The **StatusIndication** member must be set to a pointer to an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure. This structure contains the data for the encapsulated NDIS status indication.
 
-If the forwarding extension is originating an NDIS status indication for the hardware offload resources of a Hyper-V child partition, it must set the members of the [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure in the following way:
+If the forwarding extension is originating an NDIS status indication for the hardware offload resources of a Hyper-V child partition, it must set the members of the [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure in the following way:
 
 -   The **DestinationPortId** and **DestinationNicIndex** members must be set to the corresponding values of the port and network adapter index for the network connection that is used by the partition.
 
@@ -70,29 +70,29 @@ If the forwarding extension is originating an NDIS status indication for the har
 
 -   The **SourceNicIndex** member must be set to **NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX**.
 
--   The **StatusIndication** member must be set to a pointer to an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure. This structure contains the data for the encapsulated NDIS status indication.
+-   The **StatusIndication** member must be set to a pointer to an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure. This structure contains the data for the encapsulated NDIS status indication.
 
 When the extension issues the encapsulated NDIS status indication, it must follow these steps:
 
-1.  The extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the source or destination network adapter connection. This guarantees that the extensible switch interface will not delete the network adapter connection while its reference counter is nonzero.
+1.  The extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the source or destination network adapter connection. This guarantees that the extensible switch interface will not delete the network adapter connection while its reference counter is nonzero.
 
-    When the extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic), it sets the parameters in the following ways:
+    When the extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic), it sets the parameters in the following ways:
 
     -   If the forwarding extension is originating an encapsulated NDIS status indication for an underlying physical adapter, it sets the *SwitchPortId* parameter to the value specified for the **SourcePortId** member. The extension also sets the *SwitchNicIndex* parameter to the value specified for the **SourceNicIndex** member.
 
     -   If the forwarding extension is originating an NDIS status indication for a Hyper-V child partition, it sets the *SwitchPortId* parameter to the value specified for the **DestinationPortId** member. The extension also sets the *SwitchNicIndex* parameter to the value specified for the **DestinationNicIndex** member.
 
-    **Note**  If [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) does not return NDIS\_STATUS\_SUCCESS, the encapsulated NDIS status indication cannot be issued.
+    **Note**  If [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) does not return NDIS\_STATUS\_SUCCESS, the encapsulated NDIS status indication cannot be issued.
 
      
 
-2.  The extension calls [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus) to forward the encapsulated status notification.
+2.  The extension calls [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus) to forward the encapsulated status notification.
 
-    **Note**  If the extension is forwarding a filtered OID request, it must call [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus) within the context of the call to its [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-filter_status) function.
+    **Note**  If the extension is forwarding a filtered OID request, it must call [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus) within the context of the call to its [*FilterStatus*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_status) function.
 
      
 
-3.  After [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfindicatestatus) returns, the extension calls [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to clear the reference counter for the source or destination network adapter connection. The extension sets the *SwitchPortId* and *SwitchNicIndex* parameters to the same values that it used in the call to [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic).
+3.  After [**NdisFIndicateStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus) returns, the extension calls [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic) to clear the reference counter for the source or destination network adapter connection. The extension sets the *SwitchPortId* and *SwitchNicIndex* parameters to the same values that it used in the call to [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic).
 
  
 

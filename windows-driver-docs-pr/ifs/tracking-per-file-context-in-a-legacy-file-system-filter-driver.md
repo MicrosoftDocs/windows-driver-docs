@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 A legacy file system filter driver can record context information for a file by associating a [**FSRTL\_PER\_FILE\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff547352) object with a user-defined context information structure.
 
 <div class="alert">
-<strong>Note</strong>   Not all file systems support per-file context objects. To find out whether a file is associated with a file system that supports them, use the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlsupportsperfilecontexts" data-raw-source="[**FsRtlSupportsPerFileContexts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlsupportsperfilecontexts)"><strong>FsRtlSupportsPerFileContexts</strong></a> macro.
+<strong>Note</strong>   Not all file systems support per-file context objects. To find out whether a file is associated with a file system that supports them, use the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlsupportsperfilecontexts" data-raw-source="[**FsRtlSupportsPerFileContexts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlsupportsperfilecontexts)"><strong>FsRtlSupportsPerFileContexts</strong></a> macro.
 </div>
  
 

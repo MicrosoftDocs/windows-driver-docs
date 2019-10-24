@@ -6,7 +6,7 @@ ms.date: 10/17/2018
 
 # Using Device Interfaces
 
-To receive IOCTLs from user mode, the client driver calls [**WdfDeviceCreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) with a reference string, as shown here:
+To receive IOCTLs from user mode, the client driver calls [**WdfDeviceCreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) with a reference string, as shown here:
 
 ```cpp
 DECLARE_CONST_UNICODE_STRING(c_RefString, L"MyRefString");

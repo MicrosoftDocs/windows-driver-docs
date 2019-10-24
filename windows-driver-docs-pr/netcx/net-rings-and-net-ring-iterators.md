@@ -33,7 +33,7 @@ Each element in a **NET_RING** is owned by either the client driver or NetAdapte
 | NextIndex | The beginning of the *post* section of the **NET_RING**. **NextIndex** divides the section of the ring that the client driver owns into the post and drain subsections. When **NextIndex** is incremented, the driver *posts* the buffers to hardware and transfers the buffers to the drain section of the ring. | No | NIC client driver, through Net Ring Iterator Interface API calls |
 | EndIndex | The end of the range of elements in the **NET_RING** that the NIC client driver owns. Client drivers own elements up to **EndIndex - 1** inclusive. | Yes | NetAdapterCx |
 
-Manipulating these indices with net ring iterators during a packet queue's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback is how client drivers transfer network data between the system and the network interface card (NIC) hardware.
+Manipulating these indices with net ring iterators during a packet queue's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback is how client drivers transfer network data between the system and the network interface card (NIC) hardware.
 
 Client drivers own every element from **BeginIndex** to **EndIndex - 1** inclusive. For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
 
@@ -51,15 +51,15 @@ For specific information about managing the elements in net rings, see [Net ring
 
 ## Net Ring Iterator Interface overview
 
-NIC client drivers perform post and drain operations on net rings by calling into the *Net Ring Iterator Interface*. A [**NET_RING_ITERATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/ns-netringiterator-_net-ring-iterator) is a small structure that contains references to the post and drain indices of a **NET_RING** to which it belongs. 
+NIC client drivers perform post and drain operations on net rings by calling into the *Net Ring Iterator Interface*. A [**NET_RING_ITERATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/ns-netringiterator-_net-ring-iterator) is a small structure that contains references to the post and drain indices of a **NET_RING** to which it belongs. 
 
 Each **NET_RING** can have multiple iterators. For example, the packet ring might have an iterator that covers the drain section of the ring (a *drain iterator*), an iterator that covers the post section of the ring (a *post iterator*), and an iterator that covers both the post and drain sections. Likewise, the fragment ring can have the same iterators.
 
-To make it easy for client drivers to control each iterator for each ring, the Net Ring Iterator Interface separates iterators into two categories: [**NET_RING_PACKET_ITERATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/ns-netringiterator-_net-ring-packet-iterator) and [**NET_RING_FRAGMENT_ITERATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/ns-netringiterator-_net-ring-fragment-iterator). These are wrapper structures around the **NET_RING_ITERATOR** and are used in all Net Ring Iterator Interface API calls. Client drivers should not use a **NET_RING_ITERATOR** directly. Instead, they should use the appropriate type of iterator for a given net ring (either packet or fragment).
+To make it easy for client drivers to control each iterator for each ring, the Net Ring Iterator Interface separates iterators into two categories: [**NET_RING_PACKET_ITERATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/ns-netringiterator-_net-ring-packet-iterator) and [**NET_RING_FRAGMENT_ITERATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/ns-netringiterator-_net-ring-fragment-iterator). These are wrapper structures around the **NET_RING_ITERATOR** and are used in all Net Ring Iterator Interface API calls. Client drivers should not use a **NET_RING_ITERATOR** directly. Instead, they should use the appropriate type of iterator for a given net ring (either packet or fragment).
 
 By getting, advancing, and setting net ring iterators, client drivers send and receive network data in their packet queues. Client drivers also call methods on net ring iterators to access the ring's elements.
 
-For a complete list of net ring iterator data structures and methods, see [Netringiterator.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/netringiterator/).
+For a complete list of net ring iterator data structures and methods, see [Netringiterator.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/).
 
 ## Sending and receiving network data with net rings and net ring iterators
 

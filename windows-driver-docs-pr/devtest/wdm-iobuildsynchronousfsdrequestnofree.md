@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 # IoBuildSynchronousFsdRequestNoFree rule (wdm)
 
 
-The **IoBuildSynchronousFsdRequestNoFree** rule specifies that a driver that calls [**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest) must not call [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreeirp).
+The **IoBuildSynchronousFsdRequestNoFree** rule specifies that a driver that calls [**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest) must not call [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp).
 
-The **IoBuildSynchronousFsdRequestNoFree** rule reports that [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreeirp) should not be called for this IRP.
+The **IoBuildSynchronousFsdRequestNoFree** rule reports that [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp) should not be called for this IRP.
 
 |              |     |
 |--------------|-----|
@@ -53,8 +53,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest)
-[**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iofreeirp)
+[**IoBuildSynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)
+[**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp)
  
 
  

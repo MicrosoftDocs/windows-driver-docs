@@ -46,7 +46,7 @@ WFP callout drivers may support handling of support receive packets that are lar
 
 -   Opt in during registration to handle large packets.
 
--   Set the callout driver flag as specified in the reference page for the [**FWPS\_CALLOUT2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/ns-fwpsk-fwps_callout2_) structure.
+-   Set the callout driver flag as specified in the reference page for the [**FWPS\_CALLOUT2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout2_) structure.
 
 Whenever a callout driver that has not opted in to handle large packets is registered, WFP will notify TCP/IP in the context of the registration. As part of handling this notification, TCP/IP will disable RSC on the interface.
 

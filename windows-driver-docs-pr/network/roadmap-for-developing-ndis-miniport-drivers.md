@@ -66,7 +66,7 @@ To create a Network Driver Interface Specification (NDIS) miniport driver packag
 
   [WAN Miniport Drivers](wan-miniport-drivers.md)
 
-  [Scalable Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+  [Scalable Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
 - Step 9: Develop (or port), build, test, and debug your NDIS driver.
 

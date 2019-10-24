@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The implementation of status indications in intermediate drivers is nearly identical to the implementation in protocol drivers. For more information about intermediate driver status indications, see [Status Indications in a Protocol Driver](status-indications-in-a-protocol-driver.md).
 
-When an intermediate driver receives a status indication, it can indicate the status indication up to the higher-level drivers by calling [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex). An intermediate driver should indicate status changes to overlying drivers as appropriate for its specific design requirements.
+When an intermediate driver receives a status indication, it can indicate the status indication up to the higher-level drivers by calling [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex). An intermediate driver should indicate status changes to overlying drivers as appropriate for its specific design requirements.
 
  
 

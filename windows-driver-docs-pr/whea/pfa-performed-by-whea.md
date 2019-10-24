@@ -38,7 +38,7 @@ When an ECC memory error occurs, WHEA performs the following steps:
 
 7.  If a PSHED plug-in is installed and is registered to retrieve information about the error, the PSHED will call into the PSHED plug-in so that the plug-in can modify the information in the error record.
 
-    **Note**  If the PSHED plug-in is not performing PFA, it must not set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
+    **Note**  If the PSHED plug-in is not performing PFA, it must not set the **PlatformPfaControl** bit in the [**WHEA\_ERROR\_PACKET\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_packet_flags) member of the [WHEA\_ERROR\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)) structure.
 
      
 

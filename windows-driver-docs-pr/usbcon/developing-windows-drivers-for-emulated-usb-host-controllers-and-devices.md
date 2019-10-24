@@ -43,8 +43,8 @@ ms.localizationpriority: medium
 <p>Understand the behavior of UDE, how it interacts with the client driver, and the features that the client driver is expected to implement.</p>
 <p><a href="writing-a-ude-client-driver.md" data-raw-source="[Write a UDE client driver](writing-a-ude-client-driver.md)">Write a UDE client driver</a></p>
 <p><strong>Programming reference sections</strong></p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#emulated-host-controller-driver-reference" data-raw-source="[Emulated USB host controller driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#emulated-host-controller-driver-reference)">Emulated USB host controller driver programming reference</a></p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf/" data-raw-source="[WDF Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_wdf/)">WDF Reference</a></p></td>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#emulated-host-controller-driver-reference" data-raw-source="[Emulated USB host controller driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#emulated-host-controller-driver-reference)">Emulated USB host controller driver programming reference</a></p>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_wdf/" data-raw-source="[WDF Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_wdf/)">WDF Reference</a></p></td>
 </tr>
 </tbody>
 </table>
