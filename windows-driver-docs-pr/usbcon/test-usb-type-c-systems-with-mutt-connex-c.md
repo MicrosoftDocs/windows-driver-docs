@@ -56,7 +56,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     Any USB device with a USB Type-C port that can be attached to the SUT. This category includes traditional USB devices and other devices that support the accessory and alternate modes as defined in the USB Type-C specification.
 
--   **USB A to A Cable**
+-   **Micro-USB to USB A Cable**
 
     You will use this cable to connect your USB Type-C ConnEx to a PC for power and communication (If your SUT has a USB A port, this is where you will connect it).
 
@@ -155,7 +155,32 @@ Here are the tools in MUTT software package that are specific to USB Type-C Conn
 
 For information about all other tools, see [Tools in the MUTT software package](mutt-software-package.md).
 
-## Get started...
+## Get started with the newest version...
+
+Follow this procedure to set up your test environment.
+
+(pic of new set-up)
+
+The configuration will be similar to this image. Note that the Micro-USB port on the device provides control over USB Type-C ConnEx when connected to a PC.
+
+In these steps, you will connect the hardware pieces, update the firmware on the microcontroller, and validate the installation.
+
+1. Plug the micro-usb into the back of the ConnEx and the USB A into the proxy controller (SUT if available).
+
+2. Update the device with the USB Type-C ConnEx firmware.
+    -   Open an elevated Command Prompt window.
+    -   Navigate to the location of the MUTT software package, such as C:\\Program Files (x86)\\USBTest\\*&lt;arch&gt;*.
+    -   Run the following command:
+
+        **ConnExUtil.exe –UpdateFirmware**
+
+3. Plug in the SUT using the attached USB Type-C cable on the back of the device.
+
+4.  Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
+
+5. Ensure that the device is recognized by the Device Manager on your proxy controller (SUT if available).
+
+## Get started with older versions...
 
 
 Follow this procedure to set up your test environment.
