@@ -40,7 +40,30 @@ This topic provides guidelines to automate the testing of systems, devices, dock
 ## Hardware requirements
 
 
-To perform the USB Type-C interoperability test procedures by using USB Type-C ConnEx, you need:
+To perform the USB Type-C interoperability test procedures by using USB Type-C ConnEx Version 2, you need:
+
+-   **System under test (SUT)**
+
+    Desktops, laptops, tablets, servers, or phones with at least one exposed Type-C USB port.
+
+-   **USB Type-C ConnEx**
+
+    The device has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The device also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The device monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](https://go.microsoft.com/fwlink/p/?LinkId=733488) or [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287).
+
+    ![USB Type-C ConnEx](images/newconnexc-top.png)
+
+-   **Peripheral USB devices**
+
+    Any USB device with a USB Type-C port that can be attached to the SUT. This category includes traditional USB devices and other devices that support the accessory and alternate modes as defined in the USB Type-C specification.
+
+-   **USB A to A Cable**
+
+    You will use this cable to connect your USB Type-C ConnEx to a PC for power and communication (If your SUT is a PC, this is where you will connect it).
+
+## Hardware requirements for older versions
+
+
+To perform the USB Type-C interoperability test procedures by using USB Type-C ConnEx Version 2, you need:
 
 -   **System under test (SUT)**
 
