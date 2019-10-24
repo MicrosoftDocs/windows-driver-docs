@@ -20,7 +20,7 @@ The following subsections describe some of the differences between file system f
 
 ### <span id="No_Power_Management"></span><span id="no_power_management"></span><span id="NO_POWER_MANAGEMENT"></span>No Power Management
 
-Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) routines.
+Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they do not receive [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power) requests. Instead, power IRPs are sent directly to the storage device stack. In rare circumstances, however, file system filter drivers might interfere with power management. For this reason, file system filter drivers should not register dispatch routines for IRP\_MJ\_POWER in the **DriverEntry** routine, and they should not call [PoXxx](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) routines.
 
 ### <span id="No_WDM"></span><span id="no_wdm"></span><span id="NO_WDM"></span>No WDM
 
@@ -28,7 +28,7 @@ File system filter drivers cannot be Windows Driver Model (WDM) drivers. The Mic
 
 ### <span id="No_AddDevice_or_StartIo"></span><span id="no_adddevice_or_startio"></span><span id="NO_ADDDEVICE_OR_STARTIO"></span>No AddDevice or StartIo
 
-Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) or [**StartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_startio) routines.
+Because file system filter drivers are not device drivers and thus do not control hardware devices directly, they should not have [**AddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) or [**StartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routines.
 
 ### <span id="Different_Device_Objects_Created"></span><span id="different_device_objects_created"></span><span id="DIFFERENT_DEVICE_OBJECTS_CREATED"></span>Different Device Objects Created
 

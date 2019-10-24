@@ -53,12 +53,12 @@ These routines include the items in the following table.
 <td align="left"><p>This routine raises an exception that is handled by the kernel debugger if one is installed; otherwise, it is handled by the debug system.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fcb/nf-fcb-rxptrackdereference" data-raw-source="[&lt;strong&gt;RxpTrackDereference&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fcb/nf-fcb-rxptrackdereference)"><strong>RxpTrackDereference</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackdereference" data-raw-source="[&lt;strong&gt;RxpTrackDereference&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackdereference)"><strong>RxpTrackDereference</strong></a></p></td>
 <td align="left"><p>This routine is used to track a request to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these reference requests can be accessed by the logging system and WMI. This routine does not perform the dereference operation.</p>
 <p>For retail builds, this routine does nothing.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fcb/nf-fcb-rxptrackreference" data-raw-source="[&lt;strong&gt;RxpTrackReference&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fcb/nf-fcb-rxptrackreference)"><strong>RxpTrackReference</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackreference" data-raw-source="[&lt;strong&gt;RxpTrackReference&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackreference)"><strong>RxpTrackReference</strong></a></p></td>
 <td align="left"><p>This routine is used to track a request to dereference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these dereference requests can be accessed by the logging system and WMI. This routine does not perform the reference operation.</p>
 <p>For retail builds, this routine does nothing.</p></td>
 </tr>
@@ -67,7 +67,7 @@ These routines include the items in the following table.
 
  
 
-In addition to the routines listed in the previous table, a number of macros that call these routines are defined for debugging. These macros, which are listed in the following table, provide a wrapper around the [**RxReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxprocs/nf-rxprocs-rxreference) or [**RxDereference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxprocs/nf-rxprocs-rxdereference) routines used for file structure management operations on SRV\_CALL, NET\_ROOT, V\_NET\_ROOT, FOBX, FCB, and SRV\_OPEN structures. These macros first call the corresponding [**RxpTrackReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fcb/nf-fcb-rxptrackreference) or [**RxpTrackDereference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fcb/nf-fcb-rxptrackdereference) routine to log diagnostic information before calling the corresponding **RxReference** or **RxDeference** routine. A log of the reference and dereference requests can be accessed by the RDBSS logging system and WMI.
+In addition to the routines listed in the previous table, a number of macros that call these routines are defined for debugging. These macros, which are listed in the following table, provide a wrapper around the [**RxReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxreference) or [**RxDereference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxdereference) routines used for file structure management operations on SRV\_CALL, NET\_ROOT, V\_NET\_ROOT, FOBX, FCB, and SRV\_OPEN structures. These macros first call the corresponding [**RxpTrackReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackreference) or [**RxpTrackDereference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fcb/nf-fcb-rxptrackdereference) routine to log diagnostic information before calling the corresponding **RxReference** or **RxDeference** routine. A log of the reference and dereference requests can be accessed by the RDBSS logging system and WMI.
 
 <table>
 <colgroup>

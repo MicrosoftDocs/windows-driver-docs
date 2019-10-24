@@ -19,7 +19,7 @@ A WSK application uses the WSK\_TDI\_BEHAVIOR client control operation to contro
 
 If a WSK application uses the WSK\_TDI\_BEHAVIOR client control operation, it must do so before it creates any sockets.
 
-To control whether the WSK subsystem will divert network I/O to TDI transports, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
+To control whether the WSK subsystem will divert network I/O to TDI transports, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>

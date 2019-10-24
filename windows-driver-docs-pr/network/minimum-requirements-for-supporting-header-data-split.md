@@ -21,7 +21,7 @@ The following list contains the minimum requirements for header-data split suppo
 
 -   Providers must not split frames that the [Cases Where Header-Data Split Is Not Used](cases-where-header-data-split-is-not-used.md) topic describes.
 
--   Providers must move virtual LAN (VLAN) tags to the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure OOB data. For more information about VLAN requirements, see [Receive Indications with Header-Data Split](receive-indications-with-header-data-split.md).
+-   Providers must move virtual LAN (VLAN) tags to the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure OOB data. For more information about VLAN requirements, see [Receive Indications with Header-Data Split](receive-indications-with-header-data-split.md).
 
 -   Providers must support splitting IPv4 frames without options. For more information about splitting IPv4 frames, see [Splitting IPv4 Frames](splitting-ipv4-frames.md).
 
@@ -33,7 +33,7 @@ The following list contains the minimum requirements for header-data split suppo
 
 -   Providers must support the header-data split initialization attributes. For more information about these attributes, see [Initializing a Header-Data Split Provider](initializing-a-header-data-split-provider.md).
 
--   Providers must support the header-data split receive indication requirements, including setting the header-data split flags in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structures, header size requirements, and data backfill requirements. For more information about receive requirements, see [Receive Indications with Header-Data Split](receive-indications-with-header-data-split.md).
+-   Providers must support the header-data split receive indication requirements, including setting the header-data split flags in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures, header size requirements, and data backfill requirements. For more information about receive requirements, see [Receive Indications with Header-Data Split](receive-indications-with-header-data-split.md).
 
 -   Providers must support the [OID\_GEN\_HD\_SPLIT\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-hd-split-parameters) OID, the [OID\_GEN\_HD\_SPLIT\_CURRENT\_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-hd-split-current-config) OID, the [**NDIS\_STATUS\_HD\_SPLIT\_CURRENT\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-hd-split-current-config) status indication, and registry settings. For more information about header-data split parameters and settings, see [Header-Data Split Administration and Configuration](header-data-split-administration-and-configuration.md).
 

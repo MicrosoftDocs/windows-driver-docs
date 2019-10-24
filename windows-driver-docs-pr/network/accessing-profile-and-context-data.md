@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 A custom user interface (UI) that is supported by the Native 802.11 IHV UI Extensions DLL can be displayed through either:
 
--   A call to [**Dot11ExtSendUIRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11ext_send_ui_request) made by the Native 802.11 IHV Extensions DLL. For more information about this process, see [Requesting the Display of a Custom UI](requesting-the-display-of-a-custom-ui.md).
+-   A call to [**Dot11ExtSendUIRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_ui_request) made by the Native 802.11 IHV Extensions DLL. For more information about this process, see [Requesting the Display of a Custom UI](requesting-the-display-of-a-custom-ui.md).
 
 -   A call to the Native 802.11 IHV Extensions DLL's *Dot11ExtQueryUIRequest* IHV Handler function made by the operating system. For more information about this process, see [Querying for the Display of a Custom UI](querying-for-the-display-of-a-custom-ui.md).
 
@@ -32,7 +32,7 @@ If the custom UI is displayed within the Network Connection Wizard, the Native 8
 Access to the profile data is through the **Read** and **Write** methods of the [IPropertyBag COM interface](https://go.microsoft.com/fwlink/p/?linkid=56610) for a property named **IHV\_PROFILE\_DATA**.
 
 <a href="" id="context-data"></a>**Context data**  
-The Native 802.11 IHV Extensions DLL specifies a custom UI through a [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure, which is passed as an argument in both the [**Dot11ExtSendUIRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11ext_send_ui_request) and [*Dot11ExtIhvQueryUIRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wlanihv/nc-wlanihv-dot11extihv_query_ui_request) functions. Within the DOT11EXT\_IHV\_UI\_REQUEST structure, the IHV can provide (through the **pvUIRequest** member) context data specific to the custom UI. Typically, the IHV formats this data with default settings for the custom UI.
+The Native 802.11 IHV Extensions DLL specifies a custom UI through a [**DOT11EXT\_IHV\_UI\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/ns-wlanihv-_dot11ext_ihv_ui_request) structure, which is passed as an argument in both the [**Dot11ExtSendUIRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_ui_request) and [*Dot11ExtIhvQueryUIRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_query_ui_request) functions. Within the DOT11EXT\_IHV\_UI\_REQUEST structure, the IHV can provide (through the **pvUIRequest** member) context data specific to the custom UI. Typically, the IHV formats this data with default settings for the custom UI.
 
 Access to the profile data is through the **Read** and **Write** methods of the [IPropertyBag COM interface](https://go.microsoft.com/fwlink/p/?linkid=56610) for a property named **IHV\_NOTIFICATION\_DATA**.
 

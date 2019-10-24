@@ -18,9 +18,9 @@ All the options below require you to have one machine that can connect to Micros
  
 If you have access to an online machine with the same exact patch level as the offline machine, you have two options:
 
-•	[Option 1: Copy the ETL event log to the online machine](#ETL)
+- [Option 1: Copy the ETL event log to the online machine](#ETL)
 
-•	[Option 2: Copy the Symbols to offline machine](#OFFLINE)
+- [Option 2: Copy the Symbols to offline machine](#OFFLINE)
 
 Verify the online and offline PCs the same version level by running `winver` or `ver` on both machines.
 

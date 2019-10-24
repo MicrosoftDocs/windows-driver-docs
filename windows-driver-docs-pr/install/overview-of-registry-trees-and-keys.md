@@ -32,8 +32,7 @@ The following trees in the registry are of particular interest to driver writers
 
 For information on accessing registry keys from WDF (KMDF or UMDF) drivers, see [Introduction to Registry Keys for Drivers](../wdf/introduction-to-registry-keys-for-drivers.md).
 
-**Note**  The keys under **HKLM\\SYSTEM\\CurrentControlSet** are a safe place to preserve data that is important to your driver because the data is stored in the system hive. The system takes additional precautions to protect the system hive (for example, keeping multiple copies).
-
+For information on accessing registry keys from WDM drivers, see [Plug and Play Registry Routines](../kernel/plug-and-play-registry-routines.md).
  
 
  

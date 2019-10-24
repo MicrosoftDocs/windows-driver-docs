@@ -12,7 +12,7 @@ This topic provides answers to typical questions about Bluetooth Radio support.
 
 ## Bluetooth host controllers supported in Windows
 
-With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_bltooth/) for more information.
+With Windows, a Bluetooth radio can be packaged as an external dongle or embedded inside a computer but it must be connected to one of the computer’s USB ports. The Bluetooth stack that is included with Windows 7 and Windows Vista does not support Bluetooth radio connections over PCI, I2C, serial, Secure Digital I/O (SDIO), CompactFlash, or PC Card interfaces. In Windows 8 and Windows 8.1, radios connected over alternate transports can be added via a third-party bus driver. Refer to the Extensible Transport sections of the [Bluetooth Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_bltooth/) for more information.
 
 ## Forcing the Bluetooth stack to load if Windows cannot match the device ID (Windows Vista)
 
@@ -34,7 +34,7 @@ For a detailed description of this procedure, see [Appendix A: How to Install an
 
 IHVs should take the following steps to ensure that their Bluetooth radios have in box support on Windows:
 
-* Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=617154).
+* Ensure that the radio supports the extended compat ID OS feature descriptor. For details, see [Microsoft OS Descriptors](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-os-1-0-descriptors-specification).
 * Obtain Windows Certification Program approval for the Bluetooth radio hardware and the associated INF file. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
 * Use the Partner Center to make the INF file available through Windows Update
 

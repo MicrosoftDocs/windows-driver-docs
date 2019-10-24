@@ -38,7 +38,7 @@ This section presents the following topics:
 
 [Audio Power Management Interfaces](audio-power-management-interfaces.md)
 
-[Audio Port Class Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/)
+[Audio Port Class Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/)
 
 [Macro Definitions for Obsolete Functions](macro-definitions-for-obsolete-functions.md)
 

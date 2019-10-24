@@ -77,7 +77,7 @@ Remarks
 
 This command can take a significant amount of time to execute, depending on the size of pool memory that must be searched. To speed up this execution, increase the COM port speed with the [**CTRL+A (Toggle Baud Rate)**](ctrl-a--toggle-baud-rate-.md) key, or use the [**.cache (Set Cache Size)**](-cache--set-cache-size-.md) command to increase the cache size (to approximately 10 MB).
 
-The pool tag is the same tag passed to the **ExAllocate***Xxx* family of routines.
+The pool tag is the same tag passed to the **ExAllocate**_Xxx_ family of routines.
 
 Here is an example. The entire nonpaged pool is searched and then the paged pool is searched, but the command is terminated before completion (after an hour of operation):
 

@@ -54,10 +54,34 @@ This graph shows the subdivision of D3 into D3hot and D3cold. D3hot and D3cold a
 
 In the preceding graph, the transition from D3hot to D3cold is the only direct transition between device low-power states. All other transitions between low-power states require an intermediate transition to D0, which allows the device driver to configure the device hardware, as required, either to enter the next low-power state or to stay in D0. However, a device exits D3hot and enters D3cold when power to the device is shut off, which requires no intervention from the device driver. This driver does any necessary configuration of the device hardware before the device enters D3hot; no additional configuration is required to prepare the device for the transition from D3hot to D3cold. For more information, see [Supporting D3cold in a Driver](supporting-d3cold-in-a-driver.md).
 
+
+## PCI Root Port to endpoint D-state mapping 
  
-
+On Windows 10 systems, the overall platform power state depends on the power states (D-states) of SoC (System on Chip) integrated devices, including the PCI Root Ports. Depending on the platform being developed, the D-state requirements for PCI Root Ports may vary for each platform power state. OEMs are encouraged to refer to the IHV platform-specific documentation for platform and device power state requirements.  
  
+The table below enumerates the power state mapping of PCI Root Ports and its attached endpoints. The D-states of endpoints listed below must be achieved in order for the Root Port to enter the target D-state. 
+ 
+<table>
+<thead>
+<tr class="header">
+<th>Root Port Target D-State</th>
+<th>Endpoint D-State </th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+<td><p>D0</p></td>
+<td><p>D0, D0:F1</p></td>
+</tr>
+<tr class="even">
+<td><p>D0:F1</p></td>
+<td><p>D3hot</p></td>
+</tr>
+<tr class="odd">
+<td><p>D3hot</p></td>
+<td><p>D3cold*</p></td>
+</tr>
+</tbody>
+</table>
 
-
-
-
+*PCI D3cold power state requires BIOS and device driver support. If support is missing, the PCI endpoint will only be able to achieve D3Hot. For more information, see [Supporting D3Cold in a driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-d3cold-in-a-driver).

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Usually, drivers do not complete IRPs in their dispatch routines unless the parameters for the given request are invalid or, in a device driver, unless the particular **IRP\_MJ\_*XXX*** requires no device I/O operations.
+Usually, drivers do not complete IRPs in their dispatch routines unless the parameters for the given request are invalid or, in a device driver, unless the particular **IRP\_MJ\_<em>XXX</em>** requires no device I/O operations.
 
 Every driver in a chain of layered drivers can check the validity of parameters in its own I/O stack location, for each IRP received by the driver's dispatch routines. Completing IRPs with invalid parameters in the dispatch routine of the highest possible driver improves I/O throughput for any chain of drivers and for the system overall.
 
@@ -21,9 +21,9 @@ A dispatch routine in a higher-level driver should either complete an IRP or pas
 
 -   If the dispatch routine determines that any parameters in its own I/O stack location are invalid, it should complete that IRP immediately with an appropriate error status, such as STATUS\_INVALID\_PARAMETER.
 
--   If the IRP contains the function code [**IRP\_MJ\_CLEANUP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-cleanup), the [*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine must complete every IRP currently queued to the target device object, for the file object specified in the driver's I/O stack location, and complete the cleanup IRP.
+-   If the IRP contains the function code [**IRP\_MJ\_CLEANUP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-cleanup), the [*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine must complete every IRP currently queued to the target device object, for the file object specified in the driver's I/O stack location, and complete the cleanup IRP.
 
-    A cleanup request indicates that an application is being terminated or has closed a file handle for the file object that represents the driver's device object. When the *DispatchCleanup* routine returns, usually the driver's [*DispatchClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine is called next.
+    A cleanup request indicates that an application is being terminated or has closed a file handle for the file object that represents the driver's device object. When the *DispatchCleanup* routine returns, usually the driver's [*DispatchClose*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine is called next.
 
 -   Otherwise, a higher-level driver can satisfy the request only by passing it on to the next-lower driver.
 
@@ -39,9 +39,9 @@ A dispatch routine in a lowest-level driver should complete an IRP according to 
 
 -   If the request requires no device I/O operation, the dispatch routine should satisfy the request and complete the IRP.
 
-    For example, a driver might save the current mode of its device in the device extension, particularly if it seldom changes device modes after initialization. Its [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine could then satisfy a request that queried the current device mode by returning this stored information.
+    For example, a driver might save the current mode of its device in the device extension, particularly if it seldom changes device modes after initialization. Its [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine could then satisfy a request that queried the current device mode by returning this stored information.
 
-Otherwise, the dispatch routine must call [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending), queue the IRP to other driver routines for further processing, and return STATUS\_PENDING.
+Otherwise, the dispatch routine must call [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending), queue the IRP to other driver routines for further processing, and return STATUS\_PENDING.
 
  
 

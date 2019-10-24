@@ -23,7 +23,7 @@ The following sections describe the functions, callbacks, structures, enumeratio
 -   [Sensor properties](sensor-properties2.md)
  
 
-For Sensors DDI reference, see https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_sensors/.
+For Sensors DDI reference, see https://docs.microsoft.com/windows-hardware/drivers/ddi/_sensors/.
 
 
 

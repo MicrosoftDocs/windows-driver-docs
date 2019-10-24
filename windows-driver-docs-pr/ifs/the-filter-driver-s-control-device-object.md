@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 Unlike a file system, which is required to create and use a named control device object (CDO), a file system filter driver is not required to have a CDO. If it does, this CDO, which can optionally be named, represents the filter driver to the system. Its role is to receive I/O requests from a user-mode application (or, less commonly, another kernel-mode driver), and to act on them appropriately.
 
-Most file system filter drivers create and use a CDO. However, support for I/O requests on the CDO is optional. To provide this support, when the filter driver calls [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) to create the CDO, it must supply a device name for the object. The user-mode application can then obtain a handle to the named CDO by calling [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), supplying the user-mode version of the device name.
+Most file system filter drivers create and use a CDO. However, support for I/O requests on the CDO is optional. To provide this support, when the filter driver calls [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) to create the CDO, it must supply a device name for the object. The user-mode application can then obtain a handle to the named CDO by calling [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), supplying the user-mode version of the device name.
 
 For example, consider a hypothetical "MyLegacyFilter" kernel-mode driver. This driver can create a CDO with the name:
 
@@ -25,7 +25,7 @@ For example, consider a hypothetical "MyLegacyFilter" kernel-mode driver. This d
 \Device\MyLegacyFilter
 ```
 
-and calls [**IoCreateSymbolicLink**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatesymboliclink) to link this name to an equivalent user-mode-visible name. This is done so that MyLegacyFilter's user-mode application can open a handle to the kernel-mode driver's CDO by supplying the name:
+and calls [**IoCreateSymbolicLink**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatesymboliclink) to link this name to an equivalent user-mode-visible name. This is done so that MyLegacyFilter's user-mode application can open a handle to the kernel-mode driver's CDO by supplying the name:
 
 ```cpp
 \\.\MyLegacyFilter

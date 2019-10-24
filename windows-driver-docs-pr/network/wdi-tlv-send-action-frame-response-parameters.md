@@ -30,7 +30,7 @@ The sum (in bytes) of the sizes of all contained elements.
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | WDI\_CHANNEL\_NUMBER (UINT32)                     | The channel on which to send the action frame and also to linger on as specified in the post-ACK dwell time.                                    |
 | WDI\_BAND\_ID (UINT32)                            | The ID of the band on which to send the action frame.                                                                                           |
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address of the target access point or peer adapter.                                                                                     |
+| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address of the target access point or peer adapter.                                                                                     |
 | UINT32                                            | The send timeout. Specifies the maximum time (in milliseconds) to send this Action Frame.                                                       |
 | UINT32                                            | The post-acknowledgment dwell time. Specifies the time (in milliseconds) to remain on listen channel after the incoming packet is acknowledged. |
 

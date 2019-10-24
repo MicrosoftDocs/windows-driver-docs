@@ -199,7 +199,7 @@ Note that the device index should be set to zero.
 
 ### Feature Discovery
 
-[IOCTL_HPMI_QUERY_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ni-hpmi-ioctl_hpmi_query_capabilities) is used to discover features supported by HPMI. IOCTL_HPMI_QUERY_CAPABILITIES is a required IOCTL.
+[IOCTL_HPMI_QUERY_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_query_capabilities) is used to discover features supported by HPMI. IOCTL_HPMI_QUERY_CAPABILITIES is a required IOCTL.
 
 Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered. 
 
@@ -273,7 +273,7 @@ typedef struct _HPMI_QUERY_CAPABILITIES_RESPONSE {
 
 ### Command Format
 
-Windows issues this IOCTL with [HPMI_QUERY_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ns-hpmi-_hpmi_query_capabilities).
+Windows issues this IOCTL with [HPMI_QUERY_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/ddi/hpmi/ns-hpmi-_hpmi_query_capabilities).
 
 The Version is set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
@@ -282,16 +282,16 @@ The Version is set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
 HPMI must return STATUS_SUCCESS code.
 
-HPMI responds by setting the following values in [HPMI_QUERY_CAPABILITIES_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ns-hpmi-_hpmi_query_capabilities_response) struct:
+HPMI responds by setting the following values in [HPMI_QUERY_CAPABILITIES_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/hpmi/ns-hpmi-_hpmi_query_capabilities_response) struct:
 
 - Version is set to HPMI_QUERY_CAPABILITIES_RESPONSE_VERSION_1
-- RequestService is set to HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS to ensure HPMI driver receives [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint).
+- RequestService is set to HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS to ensure HPMI driver receives [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint).
 - SdbCapabilities is set to HPMI_CAPABILITY_SDB_OEM_SIMPLE_AGE_BALANCING to indicate battery age balancing support.
 
 
 #### Battery Utilization
 
-Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint) to HPMI to provide most updated battery utilization hints. IOCTL_HPMI_BATTERY_UTILIZATION_HINT is a required IOCTL.
+Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint) to HPMI to provide most updated battery utilization hints. IOCTL_HPMI_BATTERY_UTILIZATION_HINT is a required IOCTL.
 
 HPMI may utilize the PreserveNonHotSwappableBatteries hint as described in [Adapting SDB Algorithm for use with Hot Swappable Batteries](#ADAPTING-SDB) to conserve the internal batteries.
 
@@ -374,7 +374,7 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
 
 Windows issues this IOCTL with HPMI_BATTERY_UTILIZATION_HINT. Version is set to *HPMI_BATTERY_UTILIZATION_HINT_VERSION_1*.
 
-[HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/ns-hpmi-_hpmi_battery_utilization_hint)
+[HPMI_BATTERY_UTILIZATION_HINT](https://docs.microsoft.com/windows-hardware/drivers/ddi/hpmi/ns-hpmi-_hpmi_battery_utilization_hint)
 
 PreserveNonHotSwappableBatteries is set to one of the following values:
 
@@ -391,7 +391,7 @@ No data is returned in the response.
 
 ## Sample Interface Contract
 
-Refer to [HMPI.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hpmi/index) for a full (sample) API contract for the interface definitions described here.
+Refer to [HMPI.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/hpmi/index) for a full (sample) API contract for the interface definitions described here.
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: Designing the user experience of a mobile broadband app
-description: Designing the user experience of a mobile broadband app
+title: Introduction to designing the user experience of a mobile broadband app
+description: Introduction to designing the user experience of a mobile broadband app
 ms.assetid: c84e2814-69ba-4cd0-ba11-1b035ccdfbde
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# Designing the user experience of a mobile broadband app
+# Introduction to designing the user experience of a mobile broadband app
 
 
 This topic provides information about how to design UWP mobile broadband apps for Windows 10. It provides user experience design guidelines to design apps for users to manage their mobile broadband account and service. It assumes you familiar with mobile broadband technology, Windows mobile broadband networking, and the Microsoft Store app platform.

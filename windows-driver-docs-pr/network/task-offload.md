@@ -1,6 +1,6 @@
 ---
-title: TCP/IP Task Offload
-description: TCP/IP Task Offload
+title: TCP/IP Task Offload Overview
+description: TCP/IP Task Offload Overview
 ms.assetid: e73cc4e8-574b-438b-acd2-f0aaf5c20589
 keywords:
 - TCP/IP offload WDK networking , task offload
@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# TCP/IP Task Offload
+# TCP/IP Task Offload Overview
 
 
 

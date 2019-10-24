@@ -14,7 +14,7 @@ Miniport drivers use the **NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS** notificati
 
 Unsolicited events are sent when there is a change to the active over-the-air (OTA) channels. For example, if a modem started uploading packet data, it would be required to set up uplink channels when it uses the network data channel so that it can upload payloads. This would trigger the notification to be provided to the operating system.
 
-This notification uses the [**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_TRANSMISSION_STATUS_info) structure.
+This notification uses the [**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_TRANSMISSION_STATUS_info) structure.
 
 ## Requirements
 
@@ -29,4 +29,4 @@ This notification uses the [**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://
 
 [OID_WWAN_SAR_TRANSMISSION_STATUS](oid-wwan-sar-transmission-status.md)
 
-[**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_transmission_status_info)
+[**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_transmission_status_info)

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The DRIVER\_UNMAPPING\_INVALID\_VIEW bug check has a value of 0x000000D7. This indicates a driver is trying to unmap an address that was not mapped.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_UNMAPPING\_INVALID\_VIEW Parameters
@@ -62,7 +62,7 @@ The DRIVER\_UNMAPPING\_INVALID\_VIEW bug check has a value of 0x000000D7. This i
 Remarks
 -------
 
-The driver that caused the error can be determined from the stack trace.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. Use the [**kb (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) command to get a stack trace: the driver that caused the error can be determined from the stack trace.
 
  
 

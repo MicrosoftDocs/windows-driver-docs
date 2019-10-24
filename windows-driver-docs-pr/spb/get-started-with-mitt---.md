@@ -47,7 +47,7 @@ To run MITT tests, you need a computer that will run as the host and system unde
 ## Install WDTF Runtime Library
 
 
-To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 **Download location**: [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
 

@@ -30,7 +30,7 @@ For a standard file system, such as the FAT file system, the checks that are mad
 
 In addition, file attributes must be compatible. A file with the read-only attribute cannot be opened for write access. Note that the desired access should be checked after expansion of the generic rights are expanded. For example, this check within the FASTFAT file system is in the **FatCheckFileAccess** function (see the Acchksup.c source file from the fastfat samples that the WDK contains).
 
-The following code example is specific to the FAT semantics. A file system that implements DACLs as well, would do an additional security check using the Security Reference Monitor routines ([**SeAccessCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-seaccesscheck), for example.)
+The following code example is specific to the FAT semantics. A file system that implements DACLs as well, would do an additional security check using the Security Reference Monitor routines ([**SeAccessCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck), for example.)
 
 ```cpp
     //
@@ -104,7 +104,7 @@ The following code example demonstrates an important concept for file system sec
     }
 ```
 
-Fortunately for file systems, once the security check has been done during the initial create processing, subsequent security checks are performed by the I/O manager. Thus, for example, the I/O manager ensures that user-mode applications do not perform a write operation against a file that has been opened only for read access. In fact, a file system should not attempt to enforce read-only semantics against the file object, even if it was opened only for read access, during the IRP\_MJ\_WRITE dispatch routine. This is due to the way the memory manager associates a specific file object with a given section object. Subsequent writing through that section will be sent as IRP\_MJ\_WRITE operations on the file object, even though the file was opened read-only. In other words, the access enforcement is done when a file handle is converted into the corresponding file object at Nt system service entry points by [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbyhandle).
+Fortunately for file systems, once the security check has been done during the initial create processing, subsequent security checks are performed by the I/O manager. Thus, for example, the I/O manager ensures that user-mode applications do not perform a write operation against a file that has been opened only for read access. In fact, a file system should not attempt to enforce read-only semantics against the file object, even if it was opened only for read access, during the IRP\_MJ\_WRITE dispatch routine. This is due to the way the memory manager associates a specific file object with a given section object. Subsequent writing through that section will be sent as IRP\_MJ\_WRITE operations on the file object, even though the file was opened read-only. In other words, the access enforcement is done when a file handle is converted into the corresponding file object at Nt system service entry points by [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle).
 
 There are two additional places within a file system where semantic security checks must be made similar to "create" processing:
 

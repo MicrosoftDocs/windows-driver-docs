@@ -30,7 +30,7 @@ In existing 32-bit driver code, be careful about conversions between pointer typ
 
 Instead, cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer of type DWORD\_PTR or ULONG\_PTR is always large enough to store the entire pointer, regardless of whether the code is compiled for a 32-bit or 64-bit computer.
 
-For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printoem/ns-printoem-_oemcuipparam) structure is of type ULONG\_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
+For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemcuipparam) structure is of type ULONG\_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
 
 ```cpp
     PUSERDATA pData;

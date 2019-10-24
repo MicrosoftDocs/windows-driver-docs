@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Code Example for Initializing Device Properties
 
 
-During the [**IWiaMiniDrv::drvInitItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinititemproperties) call for the Root item, the minidriver must initialize the following WIA properties that describe the device:
+During the [**IWiaMiniDrv::drvInitItemProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinititemproperties) call for the Root item, the minidriver must initialize the following WIA properties that describe the device:
 
 [**WIA\_DPS\_SERVICE\_ID**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-service-id)
 

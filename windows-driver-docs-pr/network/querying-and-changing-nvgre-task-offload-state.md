@@ -14,7 +14,7 @@ This section describes how to query or change the current [Network Virtualizatio
 ## Querying NVGRE Task Offload State
 
 
-To query a miniport driver's current NVGRE task offload state, an NDIS protocol or filter driver uses the [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-current-config) OID request. This will return an [**NDIS\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndischimney/ns-ndischimney-_ndis_offload_handle) structure whose **EncapsulatedPacketTaskOffloadGre** member is an [**NDIS\_ENCAPSULATED\_PACKET\_TASK\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_encapsulated_packet_task_offload) structure that contains **NDIS\_OFFLOAD\_SUPPORTED** if those offloads are currently enabled for GRE-encapsulated packets and **NDIS\_OFFLOAD\_NOT\_SUPPORTED** otherwise. NDIS handles this OID and does not pass it down to the miniport.
+To query a miniport driver's current NVGRE task offload state, an NDIS protocol or filter driver uses the [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-current-config) OID request. This will return an [**NDIS\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_offload_handle) structure whose **EncapsulatedPacketTaskOffloadGre** member is an [**NDIS\_ENCAPSULATED\_PACKET\_TASK\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_encapsulated_packet_task_offload) structure that contains **NDIS\_OFFLOAD\_SUPPORTED** if those offloads are currently enabled for GRE-encapsulated packets and **NDIS\_OFFLOAD\_NOT\_SUPPORTED** otherwise. NDIS handles this OID and does not pass it down to the miniport.
 
 **Note**  To determine whether a miniport driver supports NVGRE task offload, use the [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-hardware-capabilities) OID request as described in [Determining the NVGRE Task Offload Capabilities of a Network Adapter](determining-the-nvgre-task-offload-capabilities-of-a-network-adapter.md).
 
@@ -23,7 +23,7 @@ To query a miniport driver's current NVGRE task offload state, an NDIS protocol 
 ## Changing NVGRE Task Offload State
 
 
-An NDIS protocol or filter driver can enable or disable NVGRE task offload by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-parameters) OID request. This OID uses an [**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. In this structure, the **EncapsulatedPacketTaskOffload** member can have the following values:
+An NDIS protocol or filter driver can enable or disable NVGRE task offload by issuing the [OID\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-parameters) OID request. This OID uses an [**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters) structure. In this structure, the **EncapsulatedPacketTaskOffload** member can have the following values:
 
 <table>
 <colgroup>

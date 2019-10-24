@@ -37,13 +37,13 @@ When Unidrv renders print page images, it uses GDI-managed drawing surfaces. All
     [**DrvStrokePath**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvstrokepath)
     [**DrvTextOut**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtextout)
     [**DrvTransparentBlt**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtransparentblt)
--   The [**IPrintOemUni::EnableDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-enabledriver) method, which is used to provide Unidrv with pointers to the graphics DDI hooking functions.
+-   The [**IPrintOemUni::EnableDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-enabledriver) method, which is used to provide Unidrv with pointers to the graphics DDI hooking functions.
 
--   The [**IPrintOemUni::DriverDMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-driverdms) method, which informs Unidrv that a device-managed surface is to be used, and specifies which of the defined hooking functions will be used for the surface.
+-   The [**IPrintOemUni::DriverDMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-driverdms) method, which informs Unidrv that a device-managed surface is to be used, and specifies which of the defined hooking functions will be used for the surface.
 
 The hooking functions cannot call back to GDI's Eng-prefixed support services when drawing on a device-managed surface. However, they can create a temporary bitmap surface, and then pass that surface's handle to Eng-prefixed drawing functions (see [Rendering a Print Job](rendering-a-print-job.md)).
 
-The [**IPrintOemUni::DriverDMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-driverdms) method is called each time a print job is about to be rendered, so the rendering plug-in can specify the type of rendering surface (GDI-managed or device-managed) for each job. Basing the surface choice on a selectable option in the user interface requires you to also provide a [user interface plug-in](user-interface-plug-ins.md).
+The [**IPrintOemUni::DriverDMS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-driverdms) method is called each time a print job is about to be rendered, so the rendering plug-in can specify the type of rendering surface (GDI-managed or device-managed) for each job. Basing the surface choice on a selectable option in the user interface requires you to also provide a [user interface plug-in](user-interface-plug-ins.md).
 
 ### Drawing Text on a Device-Managed Surface
 
@@ -53,9 +53,9 @@ The rendering plug-in must hook out Unidrv's [**DrvTextOut**](https://docs.micro
 
 -   Rendering plug-in's [**DrvTextOut**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtextout) hooking function
 
--   Unidrv's [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) method
+-   Unidrv's [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) method
 
--   Rendering plug-in's [**IPrintOemUni::TextOutAsBitmap**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-textoutasbitmap) method
+-   Rendering plug-in's [**IPrintOemUni::TextOutAsBitmap**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-textoutasbitmap) method
 
 The steps involved in displaying text on a device-managed surface are as follows:
 
@@ -65,11 +65,11 @@ The steps involved in displaying text on a device-managed surface are as follows
 
 3.  The hooking function sends commands to the device to specify the text's brush, rotation, and clip region.
 
-4.  The hooking function calls Unidrv's [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) method, which uses downloaded fonts to output the text. This method also handles glyph-based clipping.
+4.  The hooking function calls Unidrv's [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) method, which uses downloaded fonts to output the text. This method also handles glyph-based clipping.
 
-5.  If [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) cannot use a downloadable font (because the font is not available or is rotated), it calls the rendering plug-in's [**IPrintOemUni::TextOutAsBitmap**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-textoutasbitmap) method, which draws the text as a bitmap.
+5.  If [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) cannot use a downloadable font (because the font is not available or is rotated), it calls the rendering plug-in's [**IPrintOemUni::TextOutAsBitmap**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-textoutasbitmap) method, which draws the text as a bitmap.
 
-6.  After [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) returns, the [**DrvTextOut**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtextout) hooking function must draw underlines and strike-throughs, based on the rectangles specified by the **DrvTextOut** function's *prclExtra* parameter, using vector commands (if supported).
+6.  After [**IPrintOemDriverUni::DrvUniTextOut**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvunitextout) returns, the [**DrvTextOut**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtextout) hooking function must draw underlines and strike-throughs, based on the rectangles specified by the **DrvTextOut** function's *prclExtra* parameter, using vector commands (if supported).
 
  
 

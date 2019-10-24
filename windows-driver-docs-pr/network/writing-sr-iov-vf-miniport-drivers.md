@@ -1,12 +1,12 @@
 ---
-title: Writing SR-IOV VF Miniport Drivers
-description: Writing SR-IOV VF Miniport Drivers
+title: Writing SR-IOV VF Miniport Drivers Overview
+description: Writing SR-IOV VF Miniport Drivers Overview
 ms.assetid: 15CA65DD-AAAB-4EDA-8743-8A3E63E50190
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Writing SR-IOV VF Miniport Drivers
+# Writing SR-IOV VF Miniport Drivers Overview
 
 
 This section discusses the requirements and guidelines for writing an NDIS miniport driver for the PCI Express (PCIe) Virtual Function (VF) of a single root I/O virtualization (SR-IOV) network adapter.

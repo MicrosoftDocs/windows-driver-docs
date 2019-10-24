@@ -1,6 +1,6 @@
 ---
-title: Windows Sockets Direct Component Operation
-description: Windows Sockets Direct Component Operation
+title: Windows Sockets Direct Component Operation Topics
+description: Windows Sockets Direct Component Operation Topics
 ms.assetid: 6fa4a89c-f147-48bd-8fdc-562743f81bcd
 keywords:
 - Windows Sockets Direct WDK , operations
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Windows Sockets Direct Component Operation
+# Windows Sockets Direct Component Operation Topics
 
 
 

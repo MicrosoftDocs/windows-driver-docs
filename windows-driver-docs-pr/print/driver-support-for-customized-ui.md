@@ -19,7 +19,7 @@ All v4 print drivers work with print preferences, however, it is important to ma
 
 Some constraint validation in the printer extension or UWP device app could be helpful in terms of providing a highly informative, interactive experience, but it should not replace the driver's validation, which is considered authoritative.
 
-Printer extensions and UWP device apps should use the [**IPrinterQueue::SendBidiQuery**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprinterqueue-sendbidiquery) method instead of making any direct network calls to a network resource. If a network resource must be contacted, it should be done on another thread, or asynchronously in order to prevent UI from hanging. Data should be cached after it is retrieved to make future calls faster.
+Printer extensions and UWP device apps should use the [**IPrinterQueue::SendBidiQuery**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueue-sendbidiquery) method instead of making any direct network calls to a network resource. If a network resource must be contacted, it should be done on another thread, or asynchronously in order to prevent UI from hanging. Data should be cached after it is retrieved to make future calls faster.
 
 **Printer Notifications**
 
@@ -63,7 +63,7 @@ The following diagram shows the protocol utilization.
 ## Related topics
 [AsyncUIBalloon](https://docs.microsoft.com/openspecs/windows_protocols/ms-pan/9ec494fd-eea8-4545-8e38-5992fa7f6a4a)  
 [AsyncUI Default Resource File String Resources](https://docs.microsoft.com/openspecs/windows_protocols/ms-pan/cbd34ab3-5a2a-4292-b7ce-e584020d14d7)  
-[**IPrinterQueue::SendBidiQuery**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprinterqueue-sendbidiquery)  
+[**IPrinterQueue::SendBidiQuery**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueue-sendbidiquery)  
 [MS-PAN protocol](https://docs.microsoft.com/openspecs/windows_protocols/ms-pan/e44d984c-07d3-414c-8ffc-f8c8ad8512a8)  
 
 

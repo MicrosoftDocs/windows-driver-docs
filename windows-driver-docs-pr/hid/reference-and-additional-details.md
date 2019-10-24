@@ -11,14 +11,6 @@ ms.localizationpriority: medium
 
 The following references may prove helpful when creating your HID device:
 
--   [HID USB specification](https://go.microsoft.com/fwlink/p/?LinkId=620757)
--   [HID USB homepage]( https://go.microsoft.com/fwlink/p/?LinkId=620758)
--   [HID Usage Pages](https://go.microsoft.com/fwlink/p/?LinkId=620759)
-
- 
-
- 
-
-
-
-
+-   [HID USB homepage](https://www.usb.org/hid)
+-   [HID USB specification](https://www.usb.org/sites/default/files/documents/hid1_11.pdf)
+-   [HID Usage Tables](https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf)

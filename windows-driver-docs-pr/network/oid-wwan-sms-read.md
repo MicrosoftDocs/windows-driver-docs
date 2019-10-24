@@ -15,7 +15,7 @@ OID\_WWAN\_SMS\_READ reads SMS text messages stored in the MB device, or Subscri
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_SMS\_RECEIVE**](ndis-status-wwan-sms-receive.md) status notification containing an [**NDIS\_WWAN\_SMS\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_read) structure to provide the SMS messages requested that was initially provided by the caller when completing query requests.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_SMS\_RECEIVE**](ndis-status-wwan-sms-receive.md) status notification containing an [**NDIS\_WWAN\_SMS\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_read) structure to provide the SMS messages requested that was initially provided by the caller when completing query requests.
 
 Callers requesting to read SMS text messages provide an NDIS\_WWAN\_SMS\_READ structure to indicate which SMS messages the caller wants the miniport to return.
 
@@ -59,7 +59,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SMS\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_read)
+[**NDIS\_WWAN\_SMS\_READ**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_read)
 
 [WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations)
 

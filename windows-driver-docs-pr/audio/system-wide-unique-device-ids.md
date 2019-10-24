@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 ## <span id="system_wide_unique_device_ids"></span><span id="SYSTEM_WIDE_UNIQUE_DEVICE_IDS"></span>
 
 
-A driver for a typical audio adapter should easily be able to support several instances of the same audio adapter card in a system. Nearly all the data structures that a driver maintains are stored in the device-extension buffer (see the description of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure's **DeviceExtension** field). If several instances of a driver share any global data, however, those instances should synchronize their access to this data.
+A driver for a typical audio adapter should easily be able to support several instances of the same audio adapter card in a system. Nearly all the data structures that a driver maintains are stored in the device-extension buffer (see the description of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure's **DeviceExtension** field). If several instances of a driver share any global data, however, those instances should synchronize their access to this data.
 
 One additional requirement is that each subdevice on a particular instance of an adapter card should have a [device-ID string](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings) that uniquely identifies the subdevice across all instances of the same adapter card in the system.
 
@@ -43,7 +43,7 @@ When either type of dependency exists, a proprietary bus driver is nearly always
 
 If you provide your own bus driver for an adapter card, you should ensure that the device IDs that your bus driver assigns are unique across the system.
 
-A bus driver provides a device ID for one of its children in response to an [**IRP\_MN\_QUERY\_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id) query from the Plug and Play manager. The ID can be specified in one of two ways, which the bus driver indicates in its response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) query by setting the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure's **UniqueID** field to **TRUE** or **FALSE**:
+A bus driver provides a device ID for one of its children in response to an [**IRP\_MN\_QUERY\_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id) query from the Plug and Play manager. The ID can be specified in one of two ways, which the bus driver indicates in its response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) query by setting the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure's **UniqueID** field to **TRUE** or **FALSE**:
 
 -   **UniqueID** = **TRUE**
 

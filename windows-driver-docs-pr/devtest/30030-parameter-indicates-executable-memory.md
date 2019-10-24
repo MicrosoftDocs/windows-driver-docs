@@ -114,7 +114,7 @@ ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 
 **Other special cases:**
 
-There has been a change in the [**ExInitializeNPagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializenpagedlookasidelist) routine that now enables you to specify non-executable nonpaged pool memory. For example, the following code generates this warning:
+There has been a change in the [**ExInitializeNPagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist) routine that now enables you to specify non-executable nonpaged pool memory. For example, the following code generates this warning:
 
 ```
 ExInitializeNPagedLookasideList(pLookaside,
@@ -141,7 +141,7 @@ ExInitializeNPagedLookasideList(pLookaside,
 ## <span id="For_defects_involving_page_protections_"></span><span id="for_defects_involving_page_protections_"></span><span id="FOR_DEFECTS_INVOLVING_PAGE_PROTECTIONS_"></span>For defects involving page protections:
 
 
-Some APIs allow you to specify page protections, [**ZwMapViewOfSection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwmapviewofsection) is one of these. In these cases, use the non-executable version of the protection type.
+Some APIs allow you to specify page protections, [**ZwMapViewOfSection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwmapviewofsection) is one of these. In these cases, use the non-executable version of the protection type.
 
 Change:
 
@@ -185,12 +185,12 @@ Status = ZwMapViewOfSection(   handle,
 ## <span id="For_defects_involving_cache_types_"></span><span id="for_defects_involving_cache_types_"></span><span id="FOR_DEFECTS_INVOLVING_CACHE_TYPES_"></span>For defects involving cache types:
 
 
-Some APIs allocate memory with executable permissions dependent on a cache type. Two such APIs are [**MmAllocateContiguousMemorySpecifyCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycache) and [**MmAllocateContiguousMemorySpecifyCacheNode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycachenode). Should a cache type of **MmCached** be used (see [**MEMORY\_CACHING\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_memory_caching_type)), then executable memory will be allocated. To fix this, either select another caching type, or if cached memory is required then use the API [**MmAllocateContiguousNodeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousnodememory).
+Some APIs allocate memory with executable permissions dependent on a cache type. Two such APIs are [**MmAllocateContiguousMemorySpecifyCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycache) and [**MmAllocateContiguousMemorySpecifyCacheNode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycachenode). Should a cache type of **MmCached** be used (see [**MEMORY\_CACHING\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_memory_caching_type)), then executable memory will be allocated. To fix this, either select another caching type, or if cached memory is required then use the API [**MmAllocateContiguousNodeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousnodememory).
 
 Change:
 
 -   **MmCached** to **MmNonCached** or **MmWriteCombined** if cached memory is not required
--   The API to [**MmAllocateContiguousNodeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmallocatecontiguousnodememory) if cached memory is required
+-   The API to [**MmAllocateContiguousNodeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousnodememory) if cached memory is required
 
 The following code generates a warning:
 
@@ -253,7 +253,7 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 ## <span id="related_topics"></span>Related topics
 
 
-[**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_pool_type)
+[**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type)
 
 
 

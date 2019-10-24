@@ -18,7 +18,7 @@ While you develop your Bluetooth profile driver, you can use [Driver Verifier](h
 
 To enable the verification check you must [enable Driver Verifier for Bthusb.sys](https://docs.microsoft.com/windows-hardware/drivers/devtest/selecting-drivers-to-be-verified). If you do not do this, the verification checks will be disabled.
 
-To utilize the verification checks fully, make sure you use the Bluetooth Request Block (BRB) allocation routines, for example, [**BthAllocateBrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/nc-bthddi-pfnbth_allocate_brb) and [**BthInitializeBrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/nc-bthddi-pfnbth_initialize_brb), that are provided by the Bluetooth driver stack to [build and send BRBs](building-and-sending-a-brb.md). These routines include additional functionality to help debug profile drivers.
+To utilize the verification checks fully, make sure you use the Bluetooth Request Block (BRB) allocation routines, for example, [**BthAllocateBrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbth_allocate_brb) and [**BthInitializeBrb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbth_initialize_brb), that are provided by the Bluetooth driver stack to [build and send BRBs](building-and-sending-a-brb.md). These routines include additional functionality to help debug profile drivers.
 
 The verification checks can help to catch the following kinds of errors:
 

@@ -14,11 +14,7 @@ ms.localizationpriority: medium
 
 # Sample KMDF Drivers
 
-
-This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can download from the [Windows driver samples repository](https://github.com/Microsoft/Windows-driver-samples) on GitHub.
-
-
-
+This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can browse and download on the [Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
 
 For information on building the samples, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
@@ -91,5 +87,3 @@ For more information about this sample, see the [Usbsamp Sample](https://github.
 Demonstrates how to register WMI providers and create provider instances for framework device objects and how to handle WMI queries that applications send to the device.
 
 For more information about this sample, see the [WmiSamp WMI Provider](https://github.com/Microsoft/Windows-driver-samples/tree/master/wmi/wmisamp).
-
-

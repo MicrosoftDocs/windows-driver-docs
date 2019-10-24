@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 
-To find the header and library for a specific device driver interface (DDI), consult the reference pages in the [USB Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/).
+To find the header and library for a specific device driver interface (DDI), consult the reference pages in the [USB Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/).
 
 ## Headers
 
@@ -41,7 +41,7 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>usb.h</td>
 <td>Include\shared</td>
 <td></td>
-<td>Defines <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
+<td>Defines <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
 </tr>
 <tr class="odd">
 <td>usb100.h</td>

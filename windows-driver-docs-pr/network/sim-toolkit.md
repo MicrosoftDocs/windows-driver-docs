@@ -1,12 +1,12 @@
 ---
-title: SIM toolkit
-description: SIM toolkit
+title: SIM toolkit Overview
+description: SIM toolkit Overview
 ms.assetid: 39869948-d61c-438c-a90c-05dcb099acad
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# SIM toolkit
+# SIM toolkit Overview
 
 
 SIM toolkit is a set of applications on the SIM that can be activated by network events or user actions. SIM toolkit applications are represented by proactive commands that are defined by 3GPP and ETSI specifications. Windows 10 Mobile supports a subset of the SIM toolkit commands. For a list of the supported commands, see [SIM toolkit commands](sim-toolkit-commands.md).

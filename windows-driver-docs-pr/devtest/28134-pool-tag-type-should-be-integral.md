@@ -31,7 +31,7 @@ warning C28134: The type of a pool tag should be integral, not a string or strin
 
  
 
-The driver is calling a function that assigns a pool tag, such as [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag), but it is using a value other than a literal in single quotation marks to specify the value of the pool tag. Do not use a quoted string in a pool tag.
+The driver is calling a function that assigns a pool tag, such as [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag), but it is using a value other than a literal in single quotation marks to specify the value of the pool tag. Do not use a quoted string in a pool tag.
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 

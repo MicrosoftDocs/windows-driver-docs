@@ -50,7 +50,7 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of OPM device interfaces.
 
-If a display miniport driver supports a direct-call OPM interface for this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_OPM to specify the interface type.
+If a display miniport driver supports a direct-call OPM interface for this [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_OPM to specify the interface type.
 
 For information about OPM, see [Supporting Output Protection Manager](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-output-protection-manager).
 

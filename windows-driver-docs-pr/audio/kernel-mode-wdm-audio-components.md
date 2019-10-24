@@ -173,7 +173,7 @@ For more information about the driver components in the figure, see the followin
 
 [AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview)
 
-[AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_stream/index)
+[AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index)
 
 [IEEE 1394 Bus](https://developer.microsoft.com/windows/hardware)
 

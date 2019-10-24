@@ -34,7 +34,7 @@ Beginning with Windows XP, the operating system graphics interface supports DMA 
 
 Depending on the nature of the bus-master adapter, some miniport drivers use packet-based DMA exclusively, others use common-buffer DMA exclusively, and some use both.
 
-Regardless of which type of DMA is used, the miniport driver should call [**VideoPortGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportgetdmaadapter) to get a pointer to the [**VP\_DMA\_ADAPTER**](https://docs.microsoft.com/previous-versions/ff570570(v=vs.85)) structure and use it for subsequent DMA functions calls. When there is no longer any need for continued DMA operations, the miniport driver should call [**VideoPortPutDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nf-video-videoportputdmaadapter) to discard the adapter object.
+Regardless of which type of DMA is used, the miniport driver should call [**VideoPortGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportgetdmaadapter) to get a pointer to the [**VP\_DMA\_ADAPTER**](https://docs.microsoft.com/previous-versions/ff570570(v=vs.85)) structure and use it for subsequent DMA functions calls. When there is no longer any need for continued DMA operations, the miniport driver should call [**VideoPortPutDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportputdmaadapter) to discard the adapter object.
 
 The following subsections describe how to use the packet-based and common-buffer DMA support supplied by the video port driver.
 

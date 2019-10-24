@@ -15,7 +15,7 @@ OID\_WWAN\_HOME\_PROVIDER is used to set and retrieve information about the home
 
 Windows 8 supports both *set* and *query* requests. Windows 7 supports only *query* requests.
 
-Miniport drivers must process both *set* and *query* requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request and later sending a [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](ndis-status-wwan-home-provider.md) status notification, for a *query*, or NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE status notification, for *set*, containing an [**NDIS\_WWAN\_HOME\_PROVIDER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider) structure to return information about the home network provider with the **Provider.ProviderState** member of the NDIS\_WWAN\_HOME\_PROVIDER structure set to WWAN\_PROVIDER\_STATE\_HOME.
+Miniport drivers must process both *set* and *query* requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request and later sending a [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](ndis-status-wwan-home-provider.md) status notification, for a *query*, or NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE status notification, for *set*, containing an [**NDIS\_WWAN\_HOME\_PROVIDER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider) structure to return information about the home network provider with the **Provider.ProviderState** member of the NDIS\_WWAN\_HOME\_PROVIDER structure set to WWAN\_PROVIDER\_STATE\_HOME.
 
 *Set* operations are only required to be supported by multi-carrier capable devices. The MB service will only *set* the home provider to multi-carrier providers reported by the miniport via OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS or OID\_WWAN\_VISIBLE\_PROVIDERS. *Set* operations have an input buffer of NDIS\_WWAN\_SET\_HOME\_PROVIDER.
 
@@ -59,7 +59,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_HOME\_PROVIDER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider)
+[**NDIS\_WWAN\_HOME\_PROVIDER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider)
 
 [**NDIS\_STATUS\_WWAN\_HOME\_PROVIDER**](ndis-status-wwan-home-provider.md)
 

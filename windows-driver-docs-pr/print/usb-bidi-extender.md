@@ -111,9 +111,9 @@ After the registry key shown in preceding section is created, and the hosting pr
 
 [IPrinterBidiSchemaElement](iprinterbidischemaelement-interface.md)  
 
-[IPrinterScriptContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptcontext)  
+[IPrinterScriptContext](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptcontext)  
 
-[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
+[IPrinterScriptableSequentialStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream)  
 
 [JavaScript API Reference](javascript-api-reference-.md)  
 

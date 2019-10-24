@@ -25,7 +25,7 @@ This section discusses how a CoNDIS WAN miniport driver enumerates its TAPI capa
 
 -   Information for specific channel addresses on lines of devices--address information includes, for example, the identity of a caller (Caller ID) and the number of active calls possible.
 
-To retrieve information about underlying hardware, NDPROXY issues requests for line and channel-address capabilities. That is, the NDPROXY driver queries the TAPI capabilities of a CoNDIS WAN miniport driver. The NDPROXY driver calls the [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscooidrequest) function to query the TAPI capabilities of the miniport driver. In this call, NDPROXY passes an NDIS\_OID\_REQUEST structure. NDPROXY specifies the following in NDIS\_OID\_REQUEST:
+To retrieve information about underlying hardware, NDPROXY issues requests for line and channel-address capabilities. That is, the NDPROXY driver queries the TAPI capabilities of a CoNDIS WAN miniport driver. The NDPROXY driver calls the [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) function to query the TAPI capabilities of the miniport driver. In this call, NDPROXY passes an NDIS\_OID\_REQUEST structure. NDPROXY specifies the following in NDIS\_OID\_REQUEST:
 
 -   **NdisRequestQueryInformation** value in the **RequestType** member
 
@@ -33,7 +33,7 @@ To retrieve information about underlying hardware, NDPROXY issues requests for l
 
 -   Buffer to hold the TAPI-capability information that is returned in the **InformationBuffer** member
 
-All queries sent to a CoNDIS WAN miniport driver by the NDPROXY driver can be completed either synchronously or asynchronously. If a CoNDIS WAN miniport driver determines that it cannot complete the query immediately, then it can simply return NDIS\_STATUS\_PENDING and call the [**NdisMCmOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcmoidrequestcomplete) function from within its *ProtocolCoOidRequest* function when it has completed the query.
+All queries sent to a CoNDIS WAN miniport driver by the NDPROXY driver can be completed either synchronously or asynchronously. If a CoNDIS WAN miniport driver determines that it cannot complete the query immediately, then it can simply return NDIS\_STATUS\_PENDING and call the [**NdisMCmOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequestcomplete) function from within its *ProtocolCoOidRequest* function when it has completed the query.
 
 After a CoNDIS WAN miniport driver notifies NDPROXY about the registration of a new address family as specified in [CoNDIS TAPI Registration](condis-tapi-registration.md), NDPROXY queries the following OIDs to determine the TAPI-specific capabilities of the CoNDIS WAN miniport driver and the miniport driver's NIC.
 

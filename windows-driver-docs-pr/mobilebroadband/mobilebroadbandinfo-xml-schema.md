@@ -1,12 +1,12 @@
 ---
-title: MobileBroadbandInfo XML schema
-description: MobileBroadbandInfo XML schema
+title: MobileBroadbandInfo XML schema overview
+description: MobileBroadbandInfo XML schema overview
 ms.assetid: fdbc340c-8fed-4a25-96c4-ec185af04de9
-ms.date: 04/20/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# MobileBroadbandInfo XML schema
+# MobileBroadbandInfo XML schema overview
 
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 

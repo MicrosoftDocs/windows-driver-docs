@@ -25,7 +25,7 @@ Some IOCTL requests require the miniport driver to access video registers, and o
 
 In general, and unless modularity dictates otherwise, the display driver handles drawing and other time-critical operations. Sending an IOCTL to the miniport driver to perform a time-critical function can degrade system performance.
 
-See [Video Miniport Driver I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) for descriptions of system-defined video IOCTLs. You can extend the interface between the display driver and the video miniport driver by adding a *private IOCTL*, which must be formatted as described in [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes). If you need to write a new IOCTL, you should first contact Microsoft Technical Support.
+See [Video Miniport Driver I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) for descriptions of system-defined video IOCTLs. You can extend the interface between the display driver and the video miniport driver by adding a *private IOCTL*, which must be formatted as described in [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes). If you need to write a new IOCTL, you should first contact Microsoft Technical Support.
 
  
 

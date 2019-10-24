@@ -1,6 +1,6 @@
 ---
-title: Splitting Ethernet Frames
-description: Splitting Ethernet Frames
+title: Splitting Ethernet Frames Overview
+description: Splitting Ethernet Frames Overview
 ms.assetid: 7b857dee-2805-4004-8f31-452f0cff0e0c
 keywords:
 - header-data split WDK , Ethernet frame splitting
@@ -12,11 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Splitting Ethernet Frames
-
-
-
-
+# Splitting Ethernet Frames Overview
 
 This section describes the specific header-data split requirements that apply to header-data split providers, depending on the type of Ethernet frame that the provider is splitting.
 
@@ -24,7 +20,7 @@ This section describes the specific header-data split requirements that apply to
 
  
 
-If the header-data split provider splits a frame in compliance with the header-data split requirements, the indicated [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_HD\_SPLIT flag set in the **NblFlags** member. If the header-data split provider does not split a frame, the frame must be indicated with the following flags cleared in **NblFlags** :
+If the header-data split provider splits a frame in compliance with the header-data split requirements, the indicated [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_HD\_SPLIT flag set in the **NblFlags** member. If the header-data split provider does not split a frame, the frame must be indicated with the following flags cleared in **NblFlags** :
 
 -   NDIS\_NBL\_FLAGS\_HD\_SPLIT
 

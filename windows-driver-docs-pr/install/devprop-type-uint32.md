@@ -27,7 +27,7 @@ DEVPROP_TYPE_UINT32 can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](de
 
 **Setting a Property of this Type**
 
-To set a property whose base data type is DEVPROP_TYPE_UINT32, call the corresponding **SetupDiSet*Xxx*** property function and set the function input parameters as follows:
+To set a property whose base data type is DEVPROP_TYPE_UINT32, call the corresponding **SetupDiSet<em>Xxx</em>** property function and set the function input parameters as follows:
 
 - Set the *PropertyType* parameter to DEVPROP_TYPE_UINT32, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one ULONG value, and set the *PropertyBufferSize* parameter to <strong>sizeof(</strong>ULONG<strong>)</strong>.
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_adddevice_routine_of_battery_miniclass_driver_dg"></span><span id="DDK_ADDDEVICE_ROUTINE_OF_BATTERY_MINICLASS_DRIVER_DG"></span>
 
 
-Every battery miniclass driver must have an [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine, which initializes battery-specific state. The PnP Manager calls the *AddDevice* routine for each battery device controlled by this miniclass driver.
+Every battery miniclass driver must have an [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, which initializes battery-specific state. The PnP Manager calls the *AddDevice* routine for each battery device controlled by this miniclass driver.
 
 In addition to the tasks required of a PnP *AddDevice* routine, the *AddDevice* routine for a battery miniclass driver must also do the following:
 

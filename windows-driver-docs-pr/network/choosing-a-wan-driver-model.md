@@ -1,6 +1,6 @@
 ---
-title: Choosing a WAN Driver Model
-description: Choosing a WAN Driver Model
+title: Introduction to Choosing a WAN Driver Model
+description: Introduction to Choosing a WAN Driver Model
 ms.assetid: 63976cfa-6f7b-44d0-a4c5-de82254bedbd
 keywords:
 - WAN miniport drivers WDK networking , driver models
@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Choosing a WAN Driver Model
+# Introduction to Choosing a WAN Driver Model
 
 
 

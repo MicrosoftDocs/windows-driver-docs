@@ -16,7 +16,7 @@ Some compilers (such as Microsoft Visual Studio) put symbol files in the same di
 
 In most other situations, you have to set the symbol path to point to your symbol file locations.
 
-## <span id="Symbol_Path_Syntax"></span><span id="symbol_path_syntax"></span><span id="SYMBOL_PATH_SYNTAX"></span>Symbol Path Syntax
+## <span id="Symbol_Path_Syntax"></span><span id="symbol_path_syntax"></span><span id="SYMBOL_PATH_SYNTAX"></span>Symbol path syntax
 
 
 The debugger's symbol path is a string that consists of multiple directory paths, separated by semicolons.
@@ -29,7 +29,7 @@ Symbol files have date and time stamps. You do not have to worry that the debugg
 
 One way to set the symbol path is by entering the [**.sympath**](-sympath--set-symbol-path-.md) command. For other ways to set the symbol path, see [Controlling the Symbol Path](#controlling-the-symbol-path) later in this topic.
 
-## <span id="Caching_Symbols_Locally"></span><span id="caching_symbols_locally"></span><span id="CACHING_SYMBOLS_LOCALLY"></span>Caching Symbols Locally
+## <span id="Caching_Symbols_Locally"></span><span id="caching_symbols_locally"></span><span id="CACHING_SYMBOLS_LOCALLY"></span>Caching symbols locally
 
 
 We strongly recommend that you always cache your symbols locally. One way to cache symbols locally is to include `cache*;` or `cache*localsymbolcache;*` in your symbol path.
@@ -48,7 +48,7 @@ For example, the following command tells the debugger to obtain symbols from the
 .sympath cache*c:\MySymbols;\\someshare
 ```
 
-## <span id="Using_a_Symbol_Server"></span><span id="using_a_symbol_server"></span><span id="USING_A_SYMBOL_SERVER"></span>Using a Symbol Server
+## <span id="Using_a_Symbol_Server"></span><span id="using_a_symbol_server"></span><span id="USING_A_SYMBOL_SERVER"></span>Using a symbol server
 
 
 If you are connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server. You can use a symbol server by using the `srv*`, `srv*symbolstore`, or `srv*localsymbolcache*symbolstore` string in your symbol path.
@@ -96,14 +96,14 @@ For example, the following command tells the debugger to use a symbol server to 
 .sympath cache*c:\MySymbols;srv*https://msdl.microsoft.com/download/symbols
 ```
 
-## <span id="using_agestore_to_reduce_the_cache_size"></span><span id="USING_AGESTORE_TO_REDUCE_THE_CACHE_SIZE"></span>Using AgeStore to Reduce the Cache Size
+## <span id="using_agestore_to_reduce_the_cache_size"></span><span id="USING_AGESTORE_TO_REDUCE_THE_CACHE_SIZE"></span>Using AgeStore to reduce the cache size
 
 
 You can use the AgeStore tool to delete cached files that are older than a specified date, or to delete enough old files that the resulting size of the cache is less than a specified amount. This can be useful if your downstream store is too large. For details, see [AgeStore](agestore.md).
 
 For more information about symbol servers and symbol stores, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
-## <span id="lazy_symbol_loading"></span><span id="LAZY_SYMBOL_LOADING"></span>Lazy Symbol Loading
+## <span id="lazy_symbol_loading"></span><span id="LAZY_SYMBOL_LOADING"></span>Lazy symbol loading
 
 
 The debugger's default behavior is to use *lazy symbol loading* (also known as *deferred symbol loading*). This kind of loading means that symbols are not loaded until they are required.
@@ -119,7 +119,7 @@ You can turn off lazy symbol loading in CDB and KD by using the `-s` [command-li
 ## <span id="ddk_symbol_path_dbg"></span><span id="DDK_SYMBOL_PATH_DBG"></span>
 
 
-### <span id="controlling-the-symbol-path"></span><span id="CONTROLLING-THE-SYMBOL-PATH"></span>Controlling the Symbol Path
+### <span id="controlling-the-symbol-path"></span><span id="CONTROLLING-THE-SYMBOL-PATH"></span>Controlling the symbol path
 
 To control the symbol path, you can do one of the following:
 

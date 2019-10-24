@@ -17,7 +17,7 @@ The following are additional errors that drivers sometimes make when handling IR
 
 ### Lost or double-completed IRPs
 
-These problems, along with missing calls to I/O manager routines such as [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iostartnextpacket), often occur in error-handling paths. Quick reviews of driver paths can find such problems.
+These problems, along with missing calls to I/O manager routines such as [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket), often occur in error-handling paths. Quick reviews of driver paths can find such problems.
 
 ### Converging public IOCTL and private IOCTL paths
 

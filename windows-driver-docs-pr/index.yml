@@ -1,0 +1,106 @@
+### YamlMime:Landing
+
+title: Windows Driver Kit documentation
+summary: Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio and Debugging Tools for Windows. This integrated environment gives you the tools you need to develop, build, package, deploy, test, and debug drivers. You can run many basic certification tests in the integrated environment. The WDK includes templates for several technologies and driver models, including Windows Driver Frameworks (WDF), Universal Serial Bus (USB), print, networking, and file system filters.
+
+metadata: 
+  author: tedhudek
+  description: "This section describes how to get the WDK and samples and start building Windows drivers."
+  ms.author: tedhudek
+  ms.date: 09/18/2019
+  ms.topic: landing-page
+  ms.prod: windows-hardware
+  ms.technology: windows-devices
+  services: wdk
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+# TODO: move text blocks into other topics, use action phrases as titles (About x; Order, set up, copy, return; Manage device; View requirements; Troubleshoot)
+# we want 24ish links max
+
+landingContent: 
+  # Card
+  - title: About the kit
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: New features and updates
+            url: https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development
+          - text: What's new for WDF drivers
+            url: https://docs.microsoft.com/windows-hardware/drivers/wdf/
+      - linkListType: reference
+        links:
+          - text: Windows driver API reference
+            url: https://docs.microsoft.com/windows-hardware/drivers/ddi/
+  
+  - title: Get the tools
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Windows Driver Kit
+            url: https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk
+          - text: Visual Studio 2019
+            url: https://go.microsoft.com/fwlink/p/?LinkId=698539
+          - text: Debugging Tools for Windows
+            url: https://docs.microsoft.com/windows-hardware/drivers/debugger/
+          - text: Windows driver samples
+            url: https://docs.microsoft.com/samples/browse/?products=windows-wdk
+          - text: Installing preview versions of the WDK
+            url: https://docs.microsoft.com/windows-hardware/drivers/installing-preview-versions-wdk
+
+
+  - title:  Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is a driver?
+            url: https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/what-is-a-driver-
+          - text: Get started with Universal Windows drivers
+            url: https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers
+      - linkListType: tutorial
+        links:
+          - text: Write a universal Hello World driver
+            url: https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-very-small-kmdf--driver
+
+
+  - title: Installation
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Device and driver installation
+            url: https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation
+          - text: Adding boot entries
+            url: https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-boot-entries
+          - text: Editing boot options
+            url: https://docs.microsoft.com/windows-hardware/drivers/devtest/editing-boot-options
+          - text: Using Device Manager to uninstall devices and driver packages
+            url: https://docs.microsoft.com/windows-hardware/drivers/install/using-device-manager-to-uninstall-devices-and-driver-packages
+
+  - title: Debugging
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Getting started with WinDbg
+            url: https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg
+          - text: Setting up KDNET debugging
+            url: https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically
+          - text: Windows symbol packages
+            url: https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols
+      - linkListType: tutorial
+        links:
+          - text: Debug Universal drivers
+            url: https://docs.microsoft.com/windows-hardware/drivers/debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-
+
+  - title: Get a driver signed
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Partner Center for Windows Hardware
+            url: https://docs.microsoft.com/windows-hardware/drivers/dashboard/
+          - text: Create a new shipping label
+            url: https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-new-shipping-label
+          - text: Manage shipping labels
+            url: https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-shipping-labels
+          - text: Update a shipping label
+            url: https://docs.microsoft.com/windows-hardware/drivers/dashboard/update-a-shipping-label
+          - text: Get a code signing certificate
+            url: https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate

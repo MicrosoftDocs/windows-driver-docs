@@ -66,9 +66,9 @@ Custom setup code that is run by a user can display a user interface.
 
 Almost all printer driver code runs in the spooler's execution context and therefore cannot display a user interface. User interfaces can be displayed only by printer interface DLLs, and only from within the following functions:
 
--   The [**DrvDevicePropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicepropertysheets) and [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdocumentpropertysheets) functions, which create property pages.
+-   The [**DrvDevicePropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicepropertysheets) and [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) functions, which create property pages.
 
--   The [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvprinterevent) function, which receives event codes identifying printer events. Note that the function can display a user interface only for the PRINTER\_EVENT\_ADD\_CONNECTION and PRINTER\_EVENT\_DELETE\_CONNECTION event codes.
+-   The [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent) function, which receives event codes identifying printer events. Note that the function can display a user interface only for the PRINTER\_EVENT\_ADD\_CONNECTION and PRINTER\_EVENT\_DELETE\_CONNECTION event codes.
 
 All other printer driver code executes in the spooler's context. From this context, calling **MessageBox** or **MessageBoxEx** is allowed, but you must set MB\_SERVICE\_NOTIFICATION. These functions are described in the Windows SDK documentation.
 

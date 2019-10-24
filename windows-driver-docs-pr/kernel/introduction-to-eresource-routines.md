@@ -27,7 +27,7 @@ A thread that cannot currently acquire an ERESOURCE can optionally be put in a w
 
 A typical use for exclusive/shared synchronization is to implement a read/write lock. A read/write lock allows several threads to perform a read operation, but only one thread can write at a time. This can be implemented directly in terms of acquiring an ERESOURCE.
 
-A driver allocates the storage for an ERESOURCE and initializes it with [**ExInitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializeresourcelite). The system maintains a list of all ERESOURCE structures in use. When the driver no longer requires a particular ERESOURCE, it must call [**ExDeleteResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exdeleteresourcelite) to delete it from the system's list. The driver can also reuse an ERESOURCE by calling [**ExReinitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreinitializeresourcelite).
+A driver allocates the storage for an ERESOURCE and initializes it with [**ExInitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite). The system maintains a list of all ERESOURCE structures in use. When the driver no longer requires a particular ERESOURCE, it must call [**ExDeleteResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite) to delete it from the system's list. The driver can also reuse an ERESOURCE by calling [**ExReinitializeResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
 
 Drivers can perform the following basic operations on an ERESOURCE:
 
@@ -37,7 +37,7 @@ Drivers can perform the following basic operations on an ERESOURCE:
 
 -   Convert an exclusive acquisition to a shared acquisition with [**ExConvertExclusiveToSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544558).
 
--   Release an acquired resource with [**ExReleaseResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaseresourcelite).
+-   Release an acquired resource with [**ExReleaseResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite).
 
 The *Wait* parameter of [**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363) and [**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351) determines whether the current thread waits for the ERESOURCE to be acquired. If you specify a value of **FALSE** and the ERESOURCE cannot be acquired, then the routine returns **FALSE**. If you specify a value of **TRUE**, then the current thread is put on the appropriate wait list for the ERESOURCE.
 
@@ -45,9 +45,9 @@ The *Wait* parameter of [**ExAcquireResourceSharedLite**](https://msdn.microsoft
 
 A driver can also determine the current state of an ERESOURCE, as follows:
 
--   Use [**ExIsResourceAcquiredLite**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545466(v=vs.85)) or [**ExIsResourceAcquiredSharedLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exisresourceacquiredsharedlite) to determine if the ERESOURCE has already been acquired as either shared or exclusive. Use [**ExIsResourceAcquiredExclusiveLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exisresourceacquiredexclusivelite) to check whether the ERESOURCE has been specifically acquired exclusively.
+-   Use [**ExIsResourceAcquiredLite**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545466(v=vs.85)) or [**ExIsResourceAcquiredSharedLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exisresourceacquiredsharedlite) to determine if the ERESOURCE has already been acquired as either shared or exclusive. Use [**ExIsResourceAcquiredExclusiveLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exisresourceacquiredexclusivelite) to check whether the ERESOURCE has been specifically acquired exclusively.
 
--   Use [**ExGetSharedWaiterCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exgetsharedwaitercount) to determine the number of shared waiters for the ERESOURCE, and use [**ExGetExclusiveWaiterCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exgetexclusivewaitercount) to determine the number of exclusive waiters for the ERESOURCE.
+-   Use [**ExGetSharedWaiterCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exgetsharedwaitercount) to determine the number of shared waiters for the ERESOURCE, and use [**ExGetExclusiveWaiterCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exgetexclusivewaitercount) to determine the number of exclusive waiters for the ERESOURCE.
 
  
 

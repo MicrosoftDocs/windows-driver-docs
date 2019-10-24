@@ -16,7 +16,7 @@ The NDIS\_STATUS\_RESET\_END status indicates that a miniport adapter reset oper
 Remarks
 -------
 
-Miniport drivers should not call the [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex) function to signal the start and finish of each reset operation because NDIS notifies overlying drivers when a reset operation begins and ends.
+Miniport drivers should not call the [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function to signal the start and finish of each reset operation because NDIS notifies overlying drivers when a reset operation begins and ends.
 
 When a miniport driver starts a reset operation, NDIS notifies the overlying drivers with an [**NDIS\_STATUS\_RESET\_START**](ndis-status-reset-start.md) status indication.
 
@@ -49,7 +49,7 @@ Requirements
 
 [**NDIS\_STATUS\_RESET\_START**](ndis-status-reset-start.md)
 
-[**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex)
+[**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex)
 
  
 

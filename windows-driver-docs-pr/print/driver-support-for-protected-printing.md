@@ -276,11 +276,11 @@ The Microsoft recommendation is that, to minimize the rendering requirements on 
 
 **Printer extensions**
 
-Printer extensions should be able to display a control for protected printing in their print preferences UI. This ensures that users of desktop apps can configure the protected printing feature when using the printer extension. Microsoft is making changes that will allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschematicket) family of APIs to support protected printing from printer extensions.
+Printer extensions should be able to display a control for protected printing in their print preferences UI. This ensures that users of desktop apps can configure the protected printing feature when using the printer extension. Microsoft is making changes that will allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to support protected printing from printer extensions.
 
 **UWP device apps**
 
-Microsoft is also making changes to allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschematicket) family of APIs to work with UWP device apps to display a control for protected printing in their print preferences UI.
+Microsoft is also making changes to allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to work with UWP device apps to display a control for protected printing in their print preferences UI.
 
  
 

@@ -19,9 +19,9 @@ In Windows NT 4.0, drivers could access the configuration space of such devices 
 
 Windows 2000 and later versions of Windows do not allow drivers to access hardware belonging to other driver stacks. A filter driver can be written to provide the functionality needed. If you wish to access bridge hardware, for instance, you must design a filter driver that implements the required operations on the bridge's configuration space. You must also provide an INF file that specifies the bridge hardware's possible hardware IDs, so the PnP manager can load the filter driver onto the bridge's driver stack when it detects the device ID of the bridge.
 
-Alternatively, you can install a filter programmatically using **SetupDi*Xxx*** functions in the co-installer for your device.
+Alternatively, you can install a filter programmatically using **SetupDi<em>Xxx</em>** functions in the co-installer for your device.
 
-The filter driver can then access the bridge using the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard) interface.
+The filter driver can then access the bridge using the [**BUS\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface.
 
  
 

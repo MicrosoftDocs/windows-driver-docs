@@ -59,14 +59,14 @@ If you are having issues with connecting, sending or receiving SMS, sending or r
 
 If you are having problems with IP address configuration, please perform the following:
 
-1.  1. **netsh trace start wwan\_dbg**
-2.  2. &lt;Execute task(s) that leads to unexpected behavior of the system
-3.  3.**netsh trace stop**
-4.  4. Upload the following information:
+1. **netsh trace start wwan\_dbg**
+2. &lt;Execute task(s) that leads to unexpected behavior of the system
+3. **netsh trace stop**
+4. Upload the following information:
 
-    • All files under `%localappdata%\temp\nettraces\`
+    - All files under `%localappdata%\temp\nettraces\`
 
-    • Output of **ipconfig /all**
+    - Output of **ipconfig /all**
 
 **Data path**
 

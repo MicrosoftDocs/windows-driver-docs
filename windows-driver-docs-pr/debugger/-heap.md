@@ -3,7 +3,7 @@ title: heap
 description: The heap extension displays heap usage information, controls breakpoints in the heap manager, detects leaked heap blocks, searches for heap blocks, or displays page heap information.
 ms.assetid: 70947b56-1a8c-4e78-85d0-d5df87f3150c
 keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 08/23/2019
 topic_type:
 - apiref
 api_name:
@@ -87,13 +87,13 @@ Can be any combination of the following options. The *SummaryOptions* are not ca
 <span id="_______-triage__Handle___Address___"></span><span id="_______-triage__handle___address___"></span><span id="_______-TRIAGE__HANDLE___ADDRESS___"></span> **-triage \[**<em>Handle</em> **|** <em>Address</em>**\]**   
 Causes the debugger to automatically search for failures in a process's heaps. If a heap handle is specified as an argument, that heap is examined; otherwise, all the heaps are searched for one that contains the given address, and if one is found, it is examined. Using **-triage** is the only way to validate low-fragmentation heap (LFH) corruption.
 
-<span id="_______-x_-v_"></span><span id="_______-X_-V_"></span> **-x** **** \[**-v**\]   
+<span id="_______-x_-v_"></span><span id="_______-X_-V_"></span> **-x** \[**-v**\]   
 Causes the debugger to search for the heap block containing the specified address. If -v is added, the command will search the entire virtual memory space of the current process for pointers to this heap block.
 
 <span id="_______-l______"></span><span id="_______-L______"></span> **-l**   
 Causes the debugger to detect leaked heap blocks.
 
-<span id="_______-i________Address______-h_HeapAddress______"></span><span id="_______-i________address______-h_heapaddress______"></span><span id="_______-I________ADDRESS______-H_HEAPADDRESS______"></span> **-i** **** *Address* **-h** *HeapAddress*   
+<span id="_______-i________Address______-h_HeapAddress______"></span><span id="_______-i________address______-h_heapaddress______"></span><span id="_______-I________ADDRESS______-H_HEAPADDRESS______"></span> **-i** *Address* **-h** *HeapAddress*   
 Displays information about the specified *Heap*.
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
@@ -213,7 +213,7 @@ Can be any single one of the following options. The *ValidationOptions* are case
 
  
 
-<span id="_______-i________Heap_Address______or_HeapAddress______"></span><span id="_______-i________heap_address______or_heapaddress______"></span><span id="_______-I________HEAP_ADDRESS______OR_HEAPADDRESS______"></span> **-i** **** *Heap* **** *Address* **or** *HeapAddress*   
+<span id="_______-i________Heap_Address______or_HeapAddress______"></span><span id="_______-i________heap_address______or_heapaddress______"></span><span id="_______-I________HEAP_ADDRESS______OR_HEAPADDRESS______"></span> **-i** *Heap* *Address* **or** *HeapAddress*   
 Displays information about the specified *Heap*.
 
 <span id="_______BreakAddress______"></span><span id="_______breakaddress______"></span><span id="_______BREAKADDRESS______"></span> *BreakAddress*   
@@ -361,7 +361,7 @@ Displays usage statistics for the specified heap.
 <span id="_______-h________Handle______"></span><span id="_______-h________handle______"></span><span id="_______-H________HANDLE______"></span> **-h** *Handle*   
 Causes usage statistics for only the heap at *Handle* to be displayed. If *Handle* is 0 or omitted, then usage statistics for all heaps are displayed.
 
-<span id="_______-grp________GroupBy______"></span><span id="_______-grp________groupby______"></span><span id="_______-GRP________GROUPBY______"></span> **-grp** **** *GroupBy*   
+<span id="_______-grp________GroupBy______"></span><span id="_______-grp________groupby______"></span><span id="_______-GRP________GROUPBY______"></span> **-grp** *GroupBy*   
 Reorders the display as specified by *GroupBy*. The options for *GroupBy* can be found in the following table.
 
 <table>
@@ -413,11 +413,17 @@ Exts.dll</td>
 </tbody>
 </table>
 
- 
-
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about heaps, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
+For information about heaps, see the following resources:
+
+Book: *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
+
+[Example 11: Enabling Page Heap Verification](example-11---enabling-page-heap-verification.md)
+
+[Example 12: Using Page Heap Verification to Find a Bug](example-12---using-page-heap-verification-to-find-a-bug.md)
+
+For information on using the Heap memory process logger, see [Example 11: Starting a Private Trace Session](https://docs.microsoft.com/windows-hardware/drivers/devtest/example-11--starting-a-private-trace-session)
 
 Remarks
 -------
@@ -708,12 +714,3 @@ Full page heap block -- freed:
 ```
 
 To see the stack trace of the allocation or the freeing of a heap block or full page heap block, use [**dt DPH\_BLOCK\_INFORMATION**](dt--display-type-.md) with the header address, followed by [**dds**](dds--dps--dqs--display-words-and-symbols-.md) with the block's **StackTrace** field.
-
- 
-
- 
-
-
-
-
-

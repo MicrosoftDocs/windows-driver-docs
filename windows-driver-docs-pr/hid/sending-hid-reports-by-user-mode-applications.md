@@ -19,12 +19,12 @@ An application should use write requests to send output reports to a HID collect
 
 ### <a href="" id="using-hidd-setxxx-routines"></a>Using HidD\_SetXxx Routines
 
-An application can use the following [HIDClass support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) to send HID reports to a HID collection:
+An application can use the following [HIDClass support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) to send HID reports to a HID collection:
 
-<a href="" id="hidd-setoutputreport"></a>[**HidD\_SetOutputReport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidsdi/nf-hidsdi-hidd_setoutputreport)  
+<a href="" id="hidd-setoutputreport"></a>[**HidD\_SetOutputReport**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setoutputreport)  
 Sends an output report to a HID collection (Windows XP and later versions).
 
-<a href="" id="hidd-setfeature"></a>[**HidD\_SetFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidsdi/nf-hidsdi-hidd_setfeature)  
+<a href="" id="hidd-setfeature"></a>[**HidD\_SetFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setfeature)  
 Sends a feature report to a HID collection.
 
  

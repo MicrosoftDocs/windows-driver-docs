@@ -22,11 +22,11 @@ Subunit drivers communicate with *Avc.sys* through the standard IRP-based mechan
 
 A subunit driver allocates and initializes IRPs to be processed by *Avc.sys*. A subunit driver sets the IRP's **Parameters.DeviceIoControl.IoControlCode** member to the IOCTL that corresponds to the desired AV/C operation.
 
-*Avc.sys* registers one of two [device interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), depending upon which subunit driver stack that it was loaded to support (peer or virtual). These interfaces define the functionality that *Avc.sys* exports for subunit drivers, other drivers, and applications to use. *Avc.sys* then changes the interface's state to enabled or disabled according to the driver's PnP state.
+*Avc.sys* registers one of two [device interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), depending upon which subunit driver stack that it was loaded to support (peer or virtual). These interfaces define the functionality that *Avc.sys* exports for subunit drivers, other drivers, and applications to use. *Avc.sys* then changes the interface's state to enabled or disabled according to the driver's PnP state.
 
 *Avc.sys* registers a new instance of GUID\_AVC\_CLASS if it was loaded to provide support for external AV/C subunits (the peer stack). This interface supports only the following I/O control (IOCTL) code:
 
--   [**IOCTL\_AVC\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_class)
+-   [**IOCTL\_AVC\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_class)
 
 IOCTL\_AVC\_CLASS in turn supports multiple function codes. Child drivers of instances of *Avc.sys* to support peer subunits are guaranteed to have access to this interface through their parent device object.
 
@@ -34,13 +34,13 @@ The GUID\_AVC\_CLASS interface supports all IOCTL\_AVC\_CLASS function codes, al
 
 *Avc.sys* registers a new instance of GUID\_VIRTUAL\_AVC\_CLASS, if it was loaded, to provide support for virtual AV/C subunits (the virtual stack). This interface supports four I/O control (IOCTL) codes:
 
--   [**IOCTL\_AVC\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_class)
+-   [**IOCTL\_AVC\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_class)
 
--   [**IOCTL\_AVC\_UPDATE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_update_virtual_subunit_info)
+-   [**IOCTL\_AVC\_UPDATE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_update_virtual_subunit_info)
 
--   [**IOCTL\_AVC\_REMOVE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_remove_virtual_subunit_info)
+-   [**IOCTL\_AVC\_REMOVE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_remove_virtual_subunit_info)
 
--   [**IOCTL\_AVC\_BUS\_RESET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_bus_reset)
+-   [**IOCTL\_AVC\_BUS\_RESET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_bus_reset)
 
 The GUID\_VIRTUAL\_AVC\_CLASS interface does not support every IOCTL\_AVC\_CLASS function code. The reference page for each individual function code specifies whether it is supported for GUID\_VIRTUAL\_AVC\_CLASS instances of *Avc.sys*.
 
@@ -50,9 +50,9 @@ The last three IOCTL codes are supported in both kernel-mode and user-mode throu
 
 The IOCTL\_AVC\_CLASS IOCTL code must always be accompanied by an I/O request block (IRB), which further describes the AV/C operation to perform. The IRB header includes a function number, which determines the structure of the rest of the IRB. The IRB structure and size varies according to the function. *Avc.sys* uses two custom IRBs:
 
--   [**AVC\_COMMAND\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_command_irb)
+-   [**AVC\_COMMAND\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb)
 
--   [**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_multifunc_irb)
+-   [**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb)
 
 The choice of which IRB a subunit driver must use depends on the desired function. For more information about the IOCTL\_AVC\_CLASS function codes supported by *Avc.sys,* see [AV/C Protocol Driver Function Codes](https://docs.microsoft.com/windows-hardware/drivers/stream/av-c-protocol-driver-function-codes).
 

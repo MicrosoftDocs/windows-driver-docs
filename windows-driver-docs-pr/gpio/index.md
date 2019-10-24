@@ -6,6 +6,7 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # General-Purpose I/O (GPIO) Driver Design Guide
@@ -46,7 +47,7 @@ This section describes how to write a driver for a general-purpose I/O (GPIO) co
 </tr>
 <tr class="odd">
 <td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/gpio/gpioclx-ddi" data-raw-source="[GpioClx DDI](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpioclx-ddi)">GpioClx DDI</a></p></td>
-<td><p>The general-purpose I/O (GPIO) controller driver communicates with the GPIO framework extension (GpioClx) through the GpioClx device-driver interface (DDI). This DDI is defined in the Gpioclx.h header file and is described in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index" data-raw-source="[General-Purpose I/O (GPIO) Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)">General-Purpose I/O (GPIO) Driver Reference</a>. As part of this DDI, GpioClx implements several <a href="https://docs.microsoft.com/previous-versions/hh439460(v=vs.85)" data-raw-source="[driver support methods](https://docs.microsoft.com/previous-versions/hh439460(v=vs.85))">driver support methods</a>, which are called by the GPIO controller driver. This driver implements a set of <a href="https://docs.microsoft.com/previous-versions/hh439464(v=vs.85)" data-raw-source="[event callback functions](https://docs.microsoft.com/previous-versions/hh439464(v=vs.85))">event callback functions</a>, which are called by GpioClx. GpioClx uses these callbacks to manage interrupt requests from GPIO pins that are configured as interrupt inputs, and to transfer data to or from GPIO pins that are configured as data inputs and outputs.</p></td>
+<td><p>The general-purpose I/O (GPIO) controller driver communicates with the GPIO framework extension (GpioClx) through the GpioClx device-driver interface (DDI). This DDI is defined in the Gpioclx.h header file and is described in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[General-Purpose I/O (GPIO) Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)">General-Purpose I/O (GPIO) Driver Reference</a>. As part of this DDI, GpioClx implements several <a href="https://docs.microsoft.com/previous-versions/hh439460(v=vs.85)" data-raw-source="[driver support methods](https://docs.microsoft.com/previous-versions/hh439460(v=vs.85))">driver support methods</a>, which are called by the GPIO controller driver. This driver implements a set of <a href="https://docs.microsoft.com/previous-versions/hh439464(v=vs.85)" data-raw-source="[event callback functions](https://docs.microsoft.com/previous-versions/hh439464(v=vs.85))">event callback functions</a>, which are called by GpioClx. GpioClx uses these callbacks to manage interrupt requests from GPIO pins that are configured as interrupt inputs, and to transfer data to or from GPIO pins that are configured as data inputs and outputs.</p></td>
 </tr>
 </tbody>
 </table>

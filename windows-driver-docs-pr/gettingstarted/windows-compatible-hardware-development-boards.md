@@ -40,7 +40,7 @@ For information on the latest supported development boards, see [IoT Device Opti
 
     Read about the initiative to make Windows and driver development tools available for affordable development boards.
 
-    [Windows-compatible hardware development boards available soon](http://blogs.windows.com/windows/b/buildingapps/archive/2014/04/04/windows-compatible-hardware-development-boards-available-soon.aspx)
+    [Windows-compatible hardware development boards available soon](https://blogs.windows.com/windowsdeveloper/2014/04/04/windows-compatible-hardware-development-boards-available-soon/#V762kL2jCQwuiIiU.97)
 
 -   **Join the community**
 

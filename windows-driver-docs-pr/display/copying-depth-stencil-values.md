@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Copying Depth-Stencil Values
 
 
-The Microsoft Direct3D runtime calls the user-mode display driver's [**Blt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_blt) function to copy depth-stencil values from video memory to system memory, or vice versa. The driver and hardware must perform format conversions from, or to, all driver-supported opaque depth-stencil formats (that is, all formats defined by the [**D3DDDIFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ne-d3dukmdt-_d3dddiformat) enumeration type except D3DDDIFMT\_D\*\_LOCKABLE) to, or from, any of the following formats:
+The Microsoft Direct3D runtime calls the user-mode display driver's [**Blt**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_blt) function to copy depth-stencil values from video memory to system memory, or vice versa. The driver and hardware must perform format conversions from, or to, all driver-supported opaque depth-stencil formats (that is, all formats defined by the [**D3DDDIFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat) enumeration type except D3DDDIFMT\_D\*\_LOCKABLE) to, or from, any of the following formats:
 
 -   D3DDDIFMT\_D16\_LOCKABLE
 

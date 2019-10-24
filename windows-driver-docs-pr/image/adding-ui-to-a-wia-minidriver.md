@@ -18,7 +18,7 @@ If you implement the **IWiaUIExtension** interface and do not wish to replace th
 
 The device dialog box must be implemented as a modal dialog in an in-process COM server, passing *pDeviceDialogData* -&gt;*hwndParent* for the parent to the **DialogBoxParam** function (described in the Windows SDK documentation). The device dialog box must return S\_OK for success, S\_FALSE if the user cancels the dialog box, or a COM error HRESULT for other errors.
 
-The [**DEVICEDIALOGDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiadevd/ns-wiadevd-tagdevicedialogdata) structure contains all of the data needed to implement a custom device dialog.
+The [**DEVICEDIALOGDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiadevd/ns-wiadevd-tagdevicedialogdata) structure contains all of the data needed to implement a custom device dialog.
 
 To provide a custom icon for a device, implement the [**IWiaUIExtension::GetDeviceIcon**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545075(v=vs.85)) method. The icon is destroyed by the caller using **DestroyIcon** (described in the Windows SDK documentation).
 

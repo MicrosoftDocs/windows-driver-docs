@@ -3,7 +3,7 @@ title: Bug Check 0xA5 ACPI_BIOS_ERROR
 description: The ACPI_BIOS_ERROR bug check has a value of 0x000000A5 that indicates that the ACPI BIOS of the computer is not fully compliant with the ACPI specification.
 ms.assetid: f0366a3c-a2c4-4fc8-a722-52fdda59eb2b
 keywords: ["Bug Check 0xA5 ACPI_BIOS_ERROR", "ACPI_BIOS_ERROR"]
-ms.date: 05/23/2017
+ms.date: 09/12/2019
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,13 @@ ms.localizationpriority: medium
 
 # Bug Check 0xA5: ACPI\_BIOS\_ERROR
 
-
 The ACPI\_BIOS\_ERROR bug check has a value of 0x000000A5. This bug check indicates that the Advanced Configuration and Power Interface (ACPI) BIOS of the computer is not fully compliant with the ACPI specification.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ACPI\_BIOS\_ERROR Parameters
-
 
 Parameter 1 indicates the kind of the incompatibility. The meaning of the other parameters depends on the value of Parameter 1.
 
@@ -308,16 +306,28 @@ If an interrupt routing failure or incompatibility has occurred, the following p
 <td align="left"><p>The length of the ACPI table is not consistent with the table revision.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x20000</p></td>
-<td align="left"><p>The I/O port in the Fixed Table</p></td>
+<td align="left"><p>0x1000C</p></td>
+<td align="left"><p>Revision ID</p></td>
+<td align="left"><p>Function Index</p></td>
 <td align="left"><p>0</p></td>
+<td align="left"><p>_DSM method for interrupts returned malformed data.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x1000D</p></td>
+<td align="left"><p>The ACPI Extension for the device</p></td>
+<td align="left"><p>Value 0 : _PRW specified with no wake-capable interrupts and at least one GPIO interrupt Value 1 : Since there are wake-capable interrupts, _PRW should specify a GpeInfo value of 0xffffffff</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>The PM_TMR_BLK entry in the Fixed ACPI Description Table doesn't point to a working ACPI timer block.</p></td>
+<td align="left"><p>A device used both GPE and GPIO interrupts, which is not supported.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x1000E</p></td>
+<td align="left"><p></p>The Status returned by the validation function.</td>
+<td align="left"><p> Pointer to the ACPI namespace path UNICODE_STRING.</p></td>
+<td align="left"><p>Pointer to the resource list compared against the SDEV.</p></td>
+<td align="left"><p>A secure device's SDEV resources do not match its corresponding _CRS or _PRS entry.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 If a miscellaneous failure or incompatibility has occurred, the following parameters are used.
 
@@ -349,7 +359,36 @@ If a miscellaneous failure or incompatibility has occurred, the following parame
 </tbody>
 </table>
 
- 
+This table describes memory usage issues where the following parameters are used.
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Parameter 2</th>
+<th align="left">Parameter 3</th>
+<th align="left">Parameter 4</th>
+<th align="left">Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>0x1000</p></td>
+<td align="left"><p>The high portion of the physical address of the memory region.</p></td>
+<td align="left"><p>The low portion of the physical address of the memory region.</p></td>
+<td align="left"><p>The length of memory being mapped.</p></td>
+<td align="left"><p>ACPI had a fatal error when processing a memory operation region. The memory operation region tried to map memory that has been allocated for OS usage.</p></td>
+</tr>
+</tbody>
+</table>
+
 
 If Parameter 1 equals **0x02**, the ACPI BIOS could not process the resource list for the PCI root buses. In this case, Parameter 3 specifies the exact problem, and the remaining parameters have the following definitions.
 

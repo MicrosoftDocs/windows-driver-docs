@@ -90,7 +90,7 @@ Like a debug print function, a trace message function is a function (or macro) y
 
 **Creating or customizing a trace message function**
 
-1.  If you are using custom trace message functions, or want to convert debug print functions (for example, [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprint)) to generate trace messages, you need to define WPP macros that identify and enable the trace message functions in your trace provider. Put these macros in the Trace.h header file that you added to your project.
+1.  If you are using custom trace message functions, or want to convert debug print functions (for example, [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint)) to generate trace messages, you need to define WPP macros that identify and enable the trace message functions in your trace provider. Put these macros in the Trace.h header file that you added to your project.
 
 2.  Define the WPP macros to enable the trace function.
 
@@ -154,7 +154,7 @@ Next, you need to specify the custom trace functions in the WPP configuration bl
 //
 ```
 
-You can also convert existing debug print statements to trace messages statements by added a similar **FUNC** declaration in WPP configuration block. For example, the following example adds the code to convert the existing [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprint) statements. The **FUNC** declaration also globally defines the **KdPrint** to use the specified trace level and flag {LEVEL=TRACE\_LEVEL\_INFORMATION, FLAGS=TRACE\_DRIVER}. Instead of sending the output to the debugger, the debug print statements are sent to the trace log.
+You can also convert existing debug print statements to trace messages statements by added a similar **FUNC** declaration in WPP configuration block. For example, the following example adds the code to convert the existing [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint) statements. The **FUNC** declaration also globally defines the **KdPrint** to use the specified trace level and flag {LEVEL=TRACE\_LEVEL\_INFORMATION, FLAGS=TRACE\_DRIVER}. Instead of sending the output to the debugger, the debug print statements are sent to the trace log.
 
 ```ManagedCPlusPlus
 //
@@ -168,7 +168,7 @@ You can also convert existing debug print statements to trace messages statement
 //
 ```
 
-**Note**  If you want to convert [**KdPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprintex) to a trace message function, you need to take a few extra steps. Compared to [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprint), the **KdPrintEx** function takes two additional arguments. To convert the **KdPrintEx** function, you need to define a **WPP\_DEFINE\_BIT** for the *ComponentID*, and define custom **WPP\_*&lt;condition&gt;*\_LOGGER** and **WPP\_*&lt;condition&gt;*\_ENABLED** macros. The second parameter for **KdPrintEx** specifies the level of is similar to the [Trace Level](trace-level.md) values, so you don't necessarily need to redefine them.
+**Note**  If you want to convert [**KdPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex) to a trace message function, you need to take a few extra steps. Compared to [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint), the **KdPrintEx** function takes two additional arguments. To convert the **KdPrintEx** function, you need to define a **WPP\_DEFINE\_BIT** for the *ComponentID*, and define custom **WPP\_*&lt;condition&gt;*\_LOGGER** and **WPP\_*&lt;condition&gt;*\_ENABLED** macros. The second parameter for **KdPrintEx** specifies the level of is similar to the [Trace Level](trace-level.md) values, so you don't necessarily need to redefine them.
 
 
 
@@ -230,7 +230,7 @@ In addition, you need to add an **\#include** statement for [Trace Message Heade
 
     For a user-mode driver (UMDF 1.x) or application, add the [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro to the *DLLMain* routine.
 
-    You should also add the [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro to the *DriverEntry* routine in case the *DriverEntry* fails. For example, if the *DriverEntry* fails, the driver unload routine will not be called. See the call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) in the following example.
+    You should also add the [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro to the *DriverEntry* routine in case the *DriverEntry* fails. For example, if the *DriverEntry* fails, the driver unload routine will not be called. See the call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) in the following example.
 
 Example of a kernel-mode driver using WPP\_INIT\_TRACING and WPP\_CLEANUP in *DriverEntry*
 
@@ -386,7 +386,7 @@ You can use any trace message function you choose, provided the trace message fu
 <td align="left"><p>If you create a driver using WDF templates in Visual Studio, this is the default trace message function. The advantage of using <strong>TraceEvents</strong> is that the trace message function, the trace flags, and <a href="trace-level.md" data-raw-source="[Trace Level](trace-level.md)">Trace Level</a> are already defined for you. In addition, the templates also include instrumentation that writes messages to the log file upon function entry and exit.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprint" data-raw-source="[&lt;strong&gt;KdPrint&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprint)"><strong>KdPrint</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprintex" data-raw-source="[&lt;strong&gt;KdPrintEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdprintex)"><strong>KdPrintEx</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgprint" data-raw-source="[&lt;strong&gt;DbgPrint&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgprint)"><strong>DbgPrint</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgprintex" data-raw-source="[&lt;strong&gt;DbgPrintEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgprintex)"><strong>DbgPrintEx</strong></a></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint" data-raw-source="[&lt;strong&gt;KdPrint&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint)"><strong>KdPrint</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex" data-raw-source="[&lt;strong&gt;KdPrintEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex)"><strong>KdPrintEx</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint" data-raw-source="[&lt;strong&gt;DbgPrint&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint)"><strong>DbgPrint</strong></a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex" data-raw-source="[&lt;strong&gt;DbgPrintEx&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex)"><strong>DbgPrintEx</strong></a></td>
 <td align="left"><p>The advantage of using the debug print functions is that you do not need to modify your existing debug print statements. You can easily switch from viewing messages in the debugger, to recording trace messages in a file. If you customized the trace message function to include one of the debug print functions, you do not need to do any more work. When you create a trace session with Logman or <a href="tracelog.md" data-raw-source="[Tracelog](tracelog.md)">Tracelog</a>, or another trace controller, you just specify the flags and levels for your provider. Any debug print statements that meet the conditions you specify are printed to the log.</p></td>
 </tr>
 </tbody>

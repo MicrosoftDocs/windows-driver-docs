@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Parsing Extension Arguments
 
 
-The EngExtCpp extension framework provides methods to aid in parsing the command-line arguments passed to an extension. To take advantage of these methods, the extension must first declare the format of the command-line arguments in the [**EXT\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-ext_command) macro.
+The EngExtCpp extension framework provides methods to aid in parsing the command-line arguments passed to an extension. To take advantage of these methods, the extension must first declare the format of the command-line arguments in the [**EXT\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command) macro.
 
 To bypass the command-line argument parsing done by the framework and let the extension itself parse the arguments, set the command-line description to `"{{custom}}"` and use the method [**GetRawArgStr**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff548226(v=vs.85)) to get the command-line arguments for parsing.
 

@@ -55,9 +55,9 @@ static const DWORD g_dwDefaultInterval = 1000; // one second
 
 ### Lifetime Management
 
-The callback class, named CSensorDdi, which implements [ISensorDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nn-sensorsclassextension-isensordriver), creates an instance of the CSampleEvents event class when the first client subscribes to events. The callback class destroys the CSampleEvents instance when clients are no longer subscribed to events.
+The callback class, named CSensorDdi, which implements [ISensorDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver), creates an instance of the CSampleEvents event class when the first client subscribes to events. The callback class destroys the CSampleEvents instance when clients are no longer subscribed to events.
 
-CSampleEvents calls back to CSensorDdi to retrieve the newest data by using the same methods that the class extension uses, such as [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields).
+CSampleEvents calls back to CSensorDdi to retrieve the newest data by using the same methods that the class extension uses, such as [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields).
 
 The following code example contains the method implementations for the CSampleEvents event class.
 

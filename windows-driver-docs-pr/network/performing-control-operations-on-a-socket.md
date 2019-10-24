@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 After a Winsock Kernel (WSK) application has successfully created a socket, it can perform control operations on the socket. The control operations that can be performed on a socket include setting and retrieving socket options and executing socket IOCTL operations.
 
-A WSK application performs control operations on a socket by calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function. The **WskControlSocket** function is pointed to by the **WskControlSocket** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
+A WSK application performs control operations on a socket by calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function. The **WskControlSocket** function is pointed to by the **WskControlSocket** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
 
 The following code example shows how a WSK application can set the [**SO\_EXCLUSIVEADDRUSE**](https://docs.microsoft.com/windows-hardware/drivers/network/so-exclusiveaddruse) socket option on a datagram socket.
 

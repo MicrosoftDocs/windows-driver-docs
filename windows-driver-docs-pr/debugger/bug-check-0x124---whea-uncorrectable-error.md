@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 The WHEA\_UNCORRECTABLE\_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. This bug check uses the error data that is provided by the Windows Hardware Error Architecture (WHEA).
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## WHEA\_UNCORRECTABLE\_ERROR Parameters
@@ -147,7 +147,7 @@ The [**!analyze**](-analyze.md) debug extension displays information about the b
 
 Parameter 1 identifies the type of error source that reported the error. Parameter 2 holds the address of the WHEA\_ERROR\_RECORD structure that describes the error condition.
 
-When a hardware error occurs, WHEA creates an error record to store the error information associated with the hardware error condition. Each error record is described by a WHEA\_ERROR\_RECORD structure. The Windows kernel includes the error record with the Event Tracing for Windows (ETW) hardware error event that it raises in response to the error so that the error record is saved in the system event log. The format of the error records that are used by WHEA are based on the Common Platform Error Record as described in Appendix N of version 2.2 of the Unified Extensible Firmware Interface (UEFI) Specification. For more information, see [WHEA\_ERROR\_RECORD](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_record) and [Windows Hardware Error Architecture (WHEA)](https://docs.microsoft.com/windows-hardware/drivers/whea).
+When a hardware error occurs, WHEA creates an error record to store the error information associated with the hardware error condition. Each error record is described by a WHEA\_ERROR\_RECORD structure. The Windows kernel includes the error record with the Event Tracing for Windows (ETW) hardware error event that it raises in response to the error so that the error record is saved in the system event log. The format of the error records that are used by WHEA are based on the Common Platform Error Record as described in Appendix N of version 2.2 of the Unified Extensible Firmware Interface (UEFI) Specification. For more information, see [WHEA\_ERROR\_RECORD](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record) and [Windows Hardware Error Architecture (WHEA)](https://docs.microsoft.com/windows-hardware/drivers/whea).
 
 You can use [**!errrec**](-errrec.md) &lt;addr&gt; to display the WHEA\_ERROR\_RECORD structure using the address provided in Parameter 2. The [**!whea**](-whea.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information.
 

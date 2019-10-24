@@ -51,7 +51,7 @@ class MPIO_DSM_Path
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DSM\_Path**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiodisk/ns-mpiodisk-_mpio_dsm_path) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DSM\_Path**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_mpio_dsm_path) data structure. There are no methods associated with this WMI class.
 
  
 

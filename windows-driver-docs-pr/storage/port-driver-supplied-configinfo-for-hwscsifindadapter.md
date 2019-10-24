@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_port_driver_supplied_configinfo_for_hwscsifindadapter_kg"></span><span id="DDK_PORT_DRIVER_SUPPLIED_CONFIGINFO_FOR_HWSCSIFINDADAPTER_KG"></span>
 
 
-The system port driver always sets up the following [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_port_configuration_information) before it calls a miniport driver's *HwScsiFindAdapter* routine with a pointer to the PORT\_CONFIGURATION\_INFORMATION (the *ConfigInfo* buffer):
+The system port driver always sets up the following [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information) before it calls a miniport driver's *HwScsiFindAdapter* routine with a pointer to the PORT\_CONFIGURATION\_INFORMATION (the *ConfigInfo* buffer):
 
 -   **Length** to **sizeof**(PORT\_CONFIGURATION\_INFORMATION)
 
--   **AdapterInterfaceType** to the miniport driver's [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/ns-srb-_hw_initialization_data) specification
+-   **AdapterInterfaceType** to the miniport driver's [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_hw_initialization_data) specification
 
 -   **InterruptMode** to **LevelSensitive** for a PCI bus or **Latched** for all other bus types
 
@@ -47,7 +47,7 @@ The port driver also attempts to fill in the following members with values from 
 
     The port driver either supplies all the information in an ACCESS\_RANGE element or it sets all members of the element to (default) zero. Usually, the port driver supplies additional configuration information if it provides nonzero values for an access range.
 
-    A miniport driver must map any bus-relative access range values supplied by the port driver with [**ScsiPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportgetdevicebase) and use the mapped logical address values to determine whether the corresponding HBA is one that the driver supports. *Never* map and use a miniport driver-supplied range to access an HBA on the bus if the port driver supplies filled-in access range elements in the PORT\_CONFIGURATION\_INFORMATION it passes to the *HwScsiFindAdapter* routine. Using miniport driver-supplied addresses when the port driver has supplied range configuration information can reset an already configured HBA, making it dysfunctional, or even cause the system to fail the boot process.
+    A miniport driver must map any bus-relative access range values supplied by the port driver with [**ScsiPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetdevicebase) and use the mapped logical address values to determine whether the corresponding HBA is one that the driver supports. *Never* map and use a miniport driver-supplied range to access an HBA on the bus if the port driver supplies filled-in access range elements in the PORT\_CONFIGURATION\_INFORMATION it passes to the *HwScsiFindAdapter* routine. Using miniport driver-supplied addresses when the port driver has supplied range configuration information can reset an already configured HBA, making it dysfunctional, or even cause the system to fail the boot process.
 
     For more information about using mapped logical access ranges, see [Setting up ConfigInfo in HwScsiFindAdapter](setting-up-configinfo-in-hwscsifindadapter.md).
 

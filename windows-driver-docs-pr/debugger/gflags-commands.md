@@ -81,7 +81,7 @@ gflags /p [/disable ImageFile] [/?]
 To display help:
 
 ```console
-glags /?
+gflags /?
 ```
 
 ## <span id="ddk_gflags_commands_dtools"></span><span id="DDK_GFLAGS_COMMANDS_DTOOLS"></span>Parameters
@@ -146,7 +146,7 @@ Sets the maximum size of the user-mode stack trace database for the process. To 
 <span id="_______PoolTag______"></span><span id="_______pooltag______"></span><span id="_______POOLTAG______"></span> *PoolTag*   
 (Windows Vista and later.) Specifies a pool tag for the [Special Pool](special-pool.md) feature. Use only with the **spp** flag.
 
-Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
+Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
 
 <span id="0xSize______"></span><span id="0xsize______"></span><span id="0XSIZE______"></span>**0x***Size*   
 (Windows Vista and later.) Specifies a size range for the Special Pool feature. Use only with the **spp** flag. For guidance on selecting a size value, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).

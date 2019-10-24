@@ -30,5 +30,5 @@ This section describes constants used in Windows Filtering Platform callout driv
 
 ## Related topics
 
-[Windows Filtering Platform Callout Drivers reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+[Windows Filtering Platform Callout Drivers reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 

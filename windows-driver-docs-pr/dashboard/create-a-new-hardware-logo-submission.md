@@ -2,7 +2,6 @@
 title: Create a new WLK device certification submission
 description: Create a new WLK device certification submission
 ms.assetid: e812eee1-768d-42d6-918e-c716b5c29ea2
-ms.author: EliotSeattle
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/17/2018
@@ -13,7 +12,7 @@ ms.date: 10/17/2018
 
 To prepare your Windows Server 2008 (and below) hardware for certification, you must create and submit a **WQReady.xml** file. Submitting this file allows the dashboard to test your device and return a report on its performance. The report includes a detailed list of how the device compares to Windows standards.
 
-# Creating a WQReady.xml file
+## Creating a WQReady.xml file
 
 1.  Download the [Windows Logo Kit (WLK)](https://go.microsoft.com/fwlink/p/?LinkId=219237). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
 
@@ -21,7 +20,7 @@ To prepare your Windows Server 2008 (and below) hardware for certification, you 
 
 3.  Browse to the **.cpk** file (WLK test results) and click **Load**.
 
-4.  If the device isn't inbox, enter the **Driver Package**, **Driver Locales**, and **Symbols (optional)**.
+4.  If the device isn't inbox, enter the **Driver Package**, **Driver Locales**, and **Symbols (optional)**. **Note**: The relative path plus filenames for your driver package must be less than 160 characters. Submissions will fail to process if this is exceeded.
 
 5.  Close the **Add DTM Results** dialog box.
 

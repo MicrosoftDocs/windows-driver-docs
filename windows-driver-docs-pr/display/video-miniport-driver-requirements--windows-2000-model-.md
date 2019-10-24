@@ -22,7 +22,7 @@ The following are some of the requirements for video miniport drivers.
 
 -   **A miniport driver can only make calls exported by** ***videoprt.sys*.**
 
-    A miniport driver can call only those functions that are exported by the system-supplied video port driver. (The exported video port functions are listed on the reference pages following [Video Port Driver Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).) Driver writers can also use the following to determine which functions a miniport driver is calling:
+    A miniport driver can call only those functions that are exported by the system-supplied video port driver. (The exported video port functions are listed on the reference pages following [Video Port Driver Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).) Driver writers can also use the following to determine which functions a miniport driver is calling:
 
     ```cpp
     link -dump -imports my_driver.sys
