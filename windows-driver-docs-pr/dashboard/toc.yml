@@ -109,6 +109,10 @@
               href: user-mode-reliability-for-crashes-in-windows-components.md
             - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
               href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
+            - name: "Number of crashes and hangs in UWP games, normalized by usage, is less than or equal to the baseline goal"
+              href: graphics-game-reliability-uwp-crashes-hangs-by-usage.md
+            - name: "Number of crashes and hangs in Win32 games, normalized by usage, is less than or equal to the baseline goal"
+              href: graphics-game-reliability-win32-crashes-hangs-by-usage.md
           - name: "Ecosystem audience measures"
             items:
             - name: "Number of machines with a blue screen caused by a crash in graphics driver binary" 
