@@ -77,7 +77,7 @@ To set the symbol path so that the debugger will copy symbol files from a symbol
 set _NT_SYMBOL_PATH=symsrv*symsrv.dll*c:\localsymbols*\\mybuilds\mysymbols
 ```
 
-To set the symbol path so that the debugger will copy symbol files from the HTTPS site `www.company.com/manysymbols` to a local network directory \\\\localserver\\myshare\\mycache, use:
+To set the symbol path so that the debugger will copy symbol files from the HTTPS site `https://www.company.com/manysymbols` to a local network directory \\\\localserver\\myshare\\mycache, use:
 
 ```console
 set _NT_SYMBOL_PATH=symsrv*symsrv.dll*\\localserver\myshare\mycache*https://www.company.com/manysymbols

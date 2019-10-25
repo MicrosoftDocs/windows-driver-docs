@@ -5,9 +5,9 @@ ms.date: 04/15/2019
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
-
 # Time Travel Debugging - Working with Trace Files
+
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
 This section describes how to work with files created and consumed by time travel debugging.
 
@@ -145,5 +145,3 @@ Workaround:  Close the debugger and delete any index file (.idx) that may exist 
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----

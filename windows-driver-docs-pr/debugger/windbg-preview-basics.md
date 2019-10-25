@@ -5,6 +5,8 @@ ms.date: 05/02/2019
 ms.localizationpriority: medium
 ---
 
+# WinDbg Preview Basics
+
 ![Small logo on windbg preview](images/windbgx-preview-logo.png) 
 
 | Title               | Description        |
