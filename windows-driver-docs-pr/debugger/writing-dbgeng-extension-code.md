@@ -17,8 +17,8 @@ If you intend to use functions from wdbgexts.h, you need to define KDEXT\_64BIT 
 
 ```cpp
 #define KDEXT_64BIT
-#include dbgeng.h
 #include wdbgexts.h
+#include dbgeng.h
 ```
 
 For a full list of interfaces in dbgeng.h that can be used in an extension command, see [Debugger Engine Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-engine-reference).
