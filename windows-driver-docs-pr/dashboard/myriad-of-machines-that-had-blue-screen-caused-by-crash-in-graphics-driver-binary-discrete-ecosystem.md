@@ -2,7 +2,7 @@
 title: Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a bluescreen caused by a crash in the graphics driver binary
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 10/28/2019
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 During a user’s session, crash in graphics driver binary may cause bluescreen resulting in machine restart which can interrupt user’s workflow. This measure evaluates myriad (out of 10,000) of machines with discrete GPUs having the driver, encountering bluescreen due to a crash in graphics driver binary. 
 
-This is the ecosystem counterpart of [this](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard)  measure.
+This is the ecosystem counterpart of [Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard)  measure.
 
 ## Measure attributes
 
@@ -27,10 +27,10 @@ This is the ecosystem counterpart of [this](https://docs.microsoft.com/en-us/win
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines with discrete GPU that experienced a blue screen due to a crash in the graphics driver binary.**
-2. *Machines that bluescreened = count(machines having discrete GPU with the driver that experienced a blue screen)*
-3. *Total machines = count(machines having discrete GPU with the driver)*
-4. *Ratio of bluescreened machines = Machines that bluescreened / Total machines*
+The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines with discrete GPU that experienced a blue screen due to a crash in the graphics driver binary.**
+1. *Machines that bluescreened = count(machines having discrete GPU with the driver that experienced a blue screen)*
+2. *Total machines = count(machines having discrete GPU with the driver)*
+3. *Ratio of bluescreened machines = Machines that bluescreened / Total machines*
 
 ### Final calculation
 

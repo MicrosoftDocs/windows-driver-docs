@@ -2,7 +2,7 @@
 title: Myriad of machines that had a TDR caused by a crash in the graphics driver binary
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that experienced a TDR caused by a crash in the graphics driver binary
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 10/28/2019
 ms.localizationpriority: medium
 ---
 
@@ -25,10 +25,10 @@ During a user’s session, crash in the graphics driver binary may cause the mac
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines that experienced a TDR caused by a crash in the graphics driver binary**.
-2. *Machines that experieced a TDR = count(machines with the driver that experienced a TDR)*
-3. *Total machines = count(machines with the driver)*
-4. *Ratio of machines that experienced a TDR = Machines that experienced a TDR / Total machines*
+The measure aggregates telemetry from a 7-day sliding window into a **myriad** of **distinct machines that experienced a TDR caused by a crash in the graphics driver binary**.
+1. *Machines that experieced a TDR = count(machines with the driver that experienced a TDR)*
+2. *Total machines = count(machines with the driver)*
+3. *Ratio of machines that experienced a TDR = Machines that experienced a TDR / Total machines*
 
 ### Final calculation
 
