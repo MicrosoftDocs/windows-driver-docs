@@ -62,13 +62,13 @@ The device must not fail I/O during the download phase and shall continue servin
 
 ## Storage Firmware Update Solution Overview
 
-### 1. View Current NVMe Disk HWID
+### 1. View the current NVMe disk Hardware ID
 
 To view the current NVMe disk hardware ID:
 
-1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**.
+1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**
 
-1. In Device Manager, select **Disk drives**, then expand the node and select the disk drive you want to upgrade.
+1. In Device Manager, select **Disk drives**, then expand the node and select the disk drive you want to upgrade
 
     ![device manager](images/media1-1.png)
 
@@ -76,57 +76,54 @@ To view the current NVMe disk hardware ID:
 
     ![devices by connection](images/media1-2.png)
 
-TBD - Add screenshots and text procedures from video
+1. Right-click on the selected drive and click **Properties**
 
+    ![properties dialog](images/media1-3.png)
 
+1. In the **Properties** dialog window, select the **Details** tab, then select **Hardware Ids** from the **Property** drop down list view the Hardware ID for the drive
 
-![TBD](images/media1-1.png)
+    ![hardware ID](images/media1-4.png)
 
-![TBD](images/media1-1.png)
+### 2. View current NVMe disk firmware version
 
-![TBD](images/media1-1.png)
+To view the current NVMe disk firmware version:
 
-![TBD](images/media1-1.png)
+1. Open a Powershell window as an administrator
 
-![TBD](images/media1-1.png)
+1. Type `Get-PhysicalDisk | Get-StorageFirmwareInformation`, then press **Enter** to view the current NVMe disk firmware version
 
-![TBD](images/media1-1.png)
-
-![TBD](images/media1-1.png)
-
-![TBD](images/media1-1.png)
-
-![TBD](images/media1-1.png)
-
-![TBD](images/media1-1.png)
-
-![TBD](images/media1-1.png)
-
-![TBD](images/media1-1.png)
-
-
-
-### 2. View Current NVMe Disk Firmware Version (Y9)
-
-TBD - Add screenshots and text procedures from video
+    ![firmware version](images/media2-1.png)
 
 ### 3. View and install the extension INF
+
+1. Move to the directory on your system that contains the driver extension package INF file. For example, type `cd .\signed-DiskExtnPackage\`.
+
+1. TBD
+
+
+    ![TBD](images/media3-1.png)
 
 TBD - Add screenshots and text procedures from video
 
 ### 4. View new SWC node
 
+    ![TBD](images/media4-1.png)
+
 TBD - Add screenshots and text procedures from video
 
-### 5. View and install the NVMe disk firmware update (102)
+### 5. View and install the NVMe disk firmware update
+
+    ![TBD](images/media5-1.png)
 
 TBD - Add screenshots and text procedures from video
 
 ### 6. View the updated HWID revision
 
+    ![TBD](images/media6-1.png)
+
 TBD - Add screenshots and text procedures from video
 
-## Storage Firmware Update Solution Details
+## Storage Firmware Update solution details
 
 ![storage firmware update details](images/storage-firmware-update-details.png)
 
