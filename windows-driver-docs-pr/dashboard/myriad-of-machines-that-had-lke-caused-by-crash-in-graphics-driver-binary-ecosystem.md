@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 During a user’s session, crash in the graphics driver binary may cause a live kernel event (LKE), which can restart the machine and can interrupt a user’s workflow. This measure is evaluating how many machines with the driver are encountering LKEs due to a crash in the graphics driver binary.
 
-This is the ecosystem counterpart of [Myriad of machines that had an LKE caused by a crash in the graphics driver binary](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-standard)  measure.
+This is the ecosystem counterpart of [Myriad of machines that had an LKE caused by a crash in the graphics driver binary](https://docs.microsoft.com/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-standard)  measure.
 
 ## Measure attributes
 
