@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 During a user’s session, crash in graphics driver binary may cause bluescreen resulting in machine restart which can interrupt user’s workflow. This measure evaluates myriad (out of 10,000) of machines with integrated GPUs having the driver, encountering bluescreen due to a crash in graphics driver binary. 
 
-This is the ecosystem counterpart of [Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard)  measure.
+This is the ecosystem counterpart of [Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary](https://docs.microsoft.com/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard)  measure.
 
 ## Measure attributes
 
