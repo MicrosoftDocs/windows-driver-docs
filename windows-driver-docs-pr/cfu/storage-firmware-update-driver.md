@@ -88,7 +88,7 @@ To view the current NVMe disk hardware ID:
 
 To view the current NVMe disk firmware version:
 
-1. Open a Powershell window as an administrator
+1. Open a Powershell window as an administrator.
 
 1. Type `Get-PhysicalDisk | Get-StorageFirmwareInformation`, then press **Enter** to view the current NVMe disk firmware version
 
@@ -98,30 +98,35 @@ To view the current NVMe disk firmware version:
 
 1. Move to the directory on your system that contains the driver extension package INF file. For example, type `cd .\signed-DiskExtnPackage\`.
 
-1. TBD
+1. Type the `dir` command to display the contents of the directory.
 
+    ![driver extension package directory](images/media3-1.png)
 
-    ![TBD](images/media3-1.png)
+1. Open the extension INF file with the Notepad app. For example, type `notepad .\SurfaceDiskExtnPackage.inf`.
 
-TBD - Add screenshots and text procedures from video
+1. Verify that the extension INF file contains the information for the drives you are updating. See the [OEM Disk Extension INF file ]() in this topic for an example extension INF.
+
+1. Install the extension INF with the Microsoft PnP utility. For example, type `pnputil /add-driver .\SurfaceDiskExtnPackage.inf /install`. You will see information similar to that in the following command output:
+
+    ![pnputil command output](images/media3-2.png)
 
 ### 4. View new SWC node
 
-    ![TBD](images/media4-1.png)
+1. TBD Add screenshots and text procedures from video
 
-TBD - Add screenshots and text procedures from video
+    ![TBD](images/media4-1.png)
 
 ### 5. View and install the NVMe disk firmware update
 
-    ![TBD](images/media5-1.png)
+1. TBD Add screenshots and text procedures from video
 
-TBD - Add screenshots and text procedures from video
+    ![TBD](images/media5-1.png)
 
 ### 6. View the updated HWID revision
 
-    ![TBD](images/media6-1.png)
+1. TBD Add screenshots and text procedures from video
 
-TBD - Add screenshots and text procedures from video
+    ![TBD](images/media6-1.png)
 
 ## Storage Firmware Update solution details
 
