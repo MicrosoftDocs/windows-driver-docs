@@ -6,7 +6,9 @@ ms.localizationpriority: medium
 ---
 
 # TTD Position Objects
+
 ## Description
+
 *Position* objects are used to describe a position in a time travel trace. A position object is normally described by two hexadecimal numbers separated by a colon. The first of the hexadecimal numbers is the *Sequence* and the second is the *Steps*.
 
 A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
@@ -25,6 +27,7 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 | SeekTo() | Time travels to this position in the trace. |
 
 ## Example Usage
+
 *Information pending*
 
 
@@ -34,7 +37,3 @@ A position of FFFFFFFFFFFFFFFE:0 indicates the end of the trace.
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-
