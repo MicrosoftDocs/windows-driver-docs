@@ -104,23 +104,45 @@ To view the current NVMe disk firmware version:
 
 1. Open the extension INF file with the Notepad app. For example, type `notepad .\SurfaceDiskExtnPackage.inf`.
 
-1. Verify that the extension INF file contains the information for the drives you are updating. See the [OEM Disk Extension INF file ]() in this topic for an example extension INF.
+1. Verify that the extension INF file contains the information for the drives you are updating. See the [OEM Disk Extension INF file ](#oem-disk-extension-inf-sample) in this topic for an example extension INF.
 
-1. Install the extension INF with the Microsoft PnP utility. For example, type `pnputil /add-driver .\SurfaceDiskExtnPackage.inf /install`. You will see information similar to that in the following command output:
+1. Install the extension INF with the Microsoft PnP utility. For example, type `pnputil /add-driver .\SurfaceDiskExtnPackage.inf /install`. You will see information similar to the following command output:
 
     ![pnputil command output](images/media3-2.png)
 
-### 4. View new SWC node
+### 4. View the new software component (SWC) node
 
-1. TBD Add screenshots and text procedures from video
+To view the new SWC node and hardware ID:
 
-    ![TBD](images/media4-1.png)
+1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**
+
+1. In Device Manager, select **Disk drives**, then expand the node and select the disk drive you have updated.
+
+    ![device manager](images/media4-1.png)
+
+1. Once you have selected the drive you have updated, in the **Device Manager** **View** menu, select **Devices by connection**
+
+    ![devices by connection](images/media4-2.png)
+
+1. Click on the selected drive node, then click to expand. You will see a child **Generic software component** under the drive node.
+
+  ![generic software component](images/media4-3.png)
+
+1. Right-click on the **Generic software component** and click **Properties**
+
+    ![generic software component properties dialog](images/media4-4.png)
+
+1. In the **Properties** dialog window, select the **Details** tab, then select **Hardware Ids** from the **Property** drop down list view the Hardware ID for the **Generic software component** on the drive node.
+
+    ![generic software component hardware ID](images/media4-5.png)
 
 ### 5. View and install the NVMe disk firmware update
 
 1. TBD Add screenshots and text procedures from video
 
     ![TBD](images/media5-1.png)
+
+    [TBD](#disk-firmware-inf-sample)
 
 ### 6. View the updated HWID revision
 
