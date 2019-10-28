@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 During a user’s session, crash in the graphics driver binary may cause the machine’s screen to hang or appear completely frozen. A Timeout Detection and Recovery (TDR) event attempts to detect these hangs and dynamically recover to unfreeze the display. Users that have encountered a TDR will be unable to use their computer until the TDR is successful, which causes the screen to flicker. 
 
-This is the ecosystem counterpart of [Myriad of machines that had a TDR caused by a crash in the graphics driver binary](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard)  measure.
+This is the ecosystem counterpart of [Myriad of machines that had a TDR caused by a crash in the graphics driver binary](https://docs.microsoft.com/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard)  measure.
 
 ## Measure attributes
 
