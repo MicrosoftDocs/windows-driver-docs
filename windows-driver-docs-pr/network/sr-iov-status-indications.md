@@ -7,6 +7,8 @@ ms.date: 08/21/2017
 ms.localizationpriority: medium
 ---
 
+# NDIS status indications
+
 This section contains NDIS status indications used in Single Root I/O Virtualization (SR-IOV).
 
 [NDIS_STATUS_NIC_SWITCH_CURRENT_CAPABILITIES](ndis-status-nic-switch-current-capabilities.md)
