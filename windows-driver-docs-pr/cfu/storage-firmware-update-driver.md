@@ -24,7 +24,9 @@ For Storage Firmware Update (SFU), this is implemented with the inbox **storfwup
 
 ## Existing storage firmware update (SFU) issues
 
-- Current storage device updates do not utilize WWindows Update (WU) for driver distribution or telemetry
+There are several issues with existing storage firmware update methods:
+
+- Current storage device updates do not utilize Windows Update (WU) for driver distribution or telemetry
 
 - Storage device vendors must provide a utility for storage firmware updates
 
@@ -40,25 +42,29 @@ For Storage Firmware Update (SFU), this is implemented with the inbox **storfwup
 
 ## NVMe driver firmware update COMPAT requirements
 
-Device.Storage.ControllerDrive.NVMe.BasicFunction
+### Device.Storage.ControllerDrive.NVMe.BasicFunction
 
 The device must have at least one upgradeable firmware slot.
 
-### 5.7 Firmware commit
+#### 5.7 Firmware commit
 
-Activation of a firmware image should be done without requiring a power cycle of the device.
-The activation process is expected to be achieved via a host-initiated reset, as described in section 8.1 of spec version 1.2a.
-Windows will utilize commit actions 001b or 010b when issuing a firmware commit command.
-Expected completion values for successful activation without a power cycle are 00h (generic success), 10h, or 11h.
-If 0Bh is returned as completion status, Windows will inform the user to perform a power cycle of the device. This is highly discouraged, as it prevents updating of firmware at OS runtime and causes significant workload disruption.
+- Activation of a firmware image should be done without requiring a power cycle of the device.
 
-### 5.8 Firmware image download
+- The activation process is expected to be achieved via a host-initiated reset, as described in section 8.1 of spec version 1.2a.
+
+- Windows will utilize commit actions 001b or 010b when issuing a firmware commit command.
+
+- Expected completion values for successful activation without a power cycle are 00h (generic success), 10h, or 11h.
+
+- If 0Bh is returned as completion status, Windows will inform the user to perform a power cycle of the device. This is highly discouraged, as it prevents updating of firmware at OS runtime and causes significant workload disruption.
+
+#### 5.8 Firmware image download
 
 The device must not fail I/O during the download phase and shall continue serving I/O.
 
-### Reference
+#### Related reference
 
-[Windows HW Cpmpat Req - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840)
+[Windows Hardware Compatibility Requirements - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840)
 
 ## Storage firmware update solution overview
 
@@ -180,95 +186,51 @@ To view the updated NVMe disk firmware version in Device Manager:
 
     ![hardware ID](images/media1-4.png)
 
-## Storage Firmware Update solution details
+## Storage firmware update solution details
+
+The following diagram shows the Storage firmware update solution:
 
 ![storage firmware update details](images/storage-firmware-update-details.png)
 
-[Adding firmware update logic to a Microsoft-supplied driver](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update#adding-firmware-update-logic-to-a-microsoft-supplied-driver)
+The solution details are as follows:
 
-- Inbox support for storage firmware update
+- Provides inbox support for storage firmware update
 
-- Create second DeviceNode for firmware update
+- Creates a second DeviceNode for firmware update
 
-- IHV/OEM storage firmware update package (INF +firmware binary) targets second DeviceNode and only contains firmware payload
+- IHV/OEM storage firmware update package (an INF and a firmware binary) targets the second DeviceNode and only contains a firmware payload
 
-## Component Firmware Update
+For more information, see [Adding firmware update logic to a Microsoft-supplied driver](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update#adding-firmware-update-logic-to-a-microsoft-supplied-driver).
 
-### CFU Over HID Solution Overview
+## Storage firmware update (StorFwUpdate) driver
 
-- Primary component's current FW
+- Utilizes User Mode Driver Framework (UMDF2)
 
-- Firmware update package (containing firmware files)
+- Loads as WDF user mode reflector (StorFwUpdate.dll)
 
-- Firmware update driver package
+- Available in 18963+
 
-## Storage Firmware Update (StorFwUpdate) driver
+- Supports NVMe drives
 
-Utilizes User Mode Driver Framework (UMDF v2)
+- Device.Storage.ControllerDrive.NVMe in sections 5.7 and 5.8.
 
-Loads as WDF user mode reflector (StorFwUpdate.dll)
+- No RAID support
 
-Available in 18963+
+### Step 1 - Extension INF to create a second DeviceNode
 
-Supports NVMe drives
+- OEM creates Extension INF to create Software Component Node (\SWC\\*) for target NVMe disk
 
-Device.Storage.ControllerDrive.NVMe
+- Must utilize CHID to limit distribution
 
-in sections 5.7 and 5.8.
+### Step 2 - Storage firmware update INF
 
-No RAID support
+- Create Storage Firmware INF to target SWC\\* created in Step #1
 
-### Step1: Extension INF to create 2nd DEV Node
+- Include references to inbox driver **Include** and **Needs** directives*
 
-OEM creates Extension INF to create Software Component Node (\SWC\\*) for target NVMe disk
+- Store firmware payload
 
-Must utilize CHID to limit distribution
-
-### Step2: Storage firmware update INF
-
-Create Storage Firmware INF to target SWC\\* created in Step #1
-
-Include references to inbox driver Include & Needs directives*
-
-Store firmware payload
-
-Must utilize CHID to limit distribution
-
-Storage Samples
-
-Primary component's current FW
-
-FW update package contents
-
-- New FW Image(s)
-
-- Primary component FW - CFU aware
-
-- Not mandatory for each component
-
-- An Offer for each FW image
-
-FW Update Driver Package
-
-- Common for all components
-
-- FW Update Driver
-
-- DMF Driver
-
-- UMDF 2.0 Driver
-
-- HID Client Driver
-
-- Loads on FW Update HID TLC
-
-- Sends FW offers and images.
-
-- Oblivious to firmware image contents.
-
-- INF
-
-- Hardware ID for all CFU components
+- Must utilize CHID to limit distribution
 
 ## OEM Disk Extension INF sample
 
