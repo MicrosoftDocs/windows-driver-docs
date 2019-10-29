@@ -1,16 +1,16 @@
 ---
 title: Storage Firmware Update (SFU)
 description: Provides information about Storage Firmware Update (SFU) 
-ms.date: 10/17/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Storage Firmware Update
+# Storage firmware update (SFU)
 
-## Storage Firmware Update (SFU) overview
+## Storage firmware update (SFU) overview
 
 Modern servicing ensures the following:
 
@@ -22,7 +22,7 @@ Modern servicing ensures the following:
 
 For Storage Firmware Update (SFU), this is implemented with the inbox **storfwupdate** driver.
 
-## Existing Storage Firmware Update (SFU) issues
+## Existing storage firmware update (SFU) issues
 
 - Current storage device updates do not utilize WWindows Update (WU) for driver distribution or telemetry
 
@@ -44,7 +44,7 @@ Device.Storage.ControllerDrive.NVMe.BasicFunction
 
 The device must have at least one upgradeable firmware slot.
 
-### 5.7 Firmware Commit
+### 5.7 Firmware commit
 
 Activation of a firmware image should be done without requiring a power cycle of the device.
 The activation process is expected to be achieved via a host-initiated reset, as described in section 8.1 of spec version 1.2a.
@@ -52,7 +52,7 @@ Windows will utilize commit actions 001b or 010b when issuing a firmware commit 
 Expected completion values for successful activation without a power cycle are 00h (generic success), 10h, or 11h.
 If 0Bh is returned as completion status, Windows will inform the user to perform a power cycle of the device. This is highly discouraged, as it prevents updating of firmware at OS runtime and causes significant workload disruption.
 
-### 5.8 Firmware Image Download
+### 5.8 Firmware image download
 
 The device must not fail I/O during the download phase and shall continue serving I/O.
 
@@ -60,27 +60,29 @@ The device must not fail I/O during the download phase and shall continue servin
 
 [Windows HW Cpmpat Req - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840)
 
-## Storage Firmware Update Solution Overview
+## Storage firmware update solution overview
+
+The following procedures show you how to update NVMe disk firmware.
 
 ### 1. View the current NVMe disk Hardware ID
 
 To view the current NVMe disk hardware ID:
 
-1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**
+1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**.
 
-1. In Device Manager, select **Disk drives**, then expand the node and select the disk drive you want to upgrade
+1. In Device Manager, select **Disk drives**, then expand the node and select the disk drive you want to update.
 
     ![device manager](images/media1-1.png)
 
-1. Once you have selected the drive you are upgrading, in the **Device Manager** **View** menu, select **Devices by connection**
+1. Once you have selected the drive you are updating, in the **Device Manager** **View** menu, select **Devices by connection**.
 
     ![devices by connection](images/media1-2.png)
 
-1. Right-click on the selected drive and click **Properties**
+1. Right-click on the selected drive and click **Properties**.
 
     ![properties dialog](images/media1-3.png)
 
-1. In the **Properties** dialog window, select the **Details** tab, then select **Hardware Ids** from the **Property** drop down list view the Hardware ID for the drive
+1. In the **Properties** dialog window, select the **Details** tab, then select **Hardware Ids** from the **Property** drop down list view the Hardware ID for the drive.
 
     ![hardware ID](images/media1-4.png)
 
@@ -90,7 +92,7 @@ To view the current NVMe disk firmware version:
 
 1. Open a Powershell window as an administrator.
 
-1. Type `Get-PhysicalDisk | Get-StorageFirmwareInformation`, then press **Enter** to view the current NVMe disk firmware version
+1. Type `Get-PhysicalDisk | Get-StorageFirmwareInformation` to view the current NVMe disk firmware version.
 
     ![firmware version](images/media2-1.png)
 
@@ -104,7 +106,7 @@ To view the current NVMe disk firmware version:
 
 1. Open the extension INF file with the Notepad app. For example, type `notepad .\SurfaceDiskExtnPackage.inf`.
 
-1. Verify that the extension INF file contains the information for the drives you are updating. See the [OEM Disk Extension INF file ](#oem-disk-extension-inf-sample) in this topic for an example extension INF.
+1. Verify that the extension INF file contains the information for the drives you are updating. See the [OEM Disk Extension INF file](#oem-disk-extension-inf-sample) in this topic for an example extension INF.
 
 1. Install the extension INF with the Microsoft PnP utility. For example, type `pnputil /add-driver .\SurfaceDiskExtnPackage.inf /install`. You will see information similar to the following command output:
 
@@ -114,21 +116,21 @@ To view the current NVMe disk firmware version:
 
 To view the new SWC node and hardware ID:
 
-1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**
+1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**.
 
 1. In Device Manager, select **Disk drives**, then expand the node and select the disk drive you have updated.
 
     ![device manager](images/media4-1.png)
 
-1. Once you have selected the drive you have updated, in the **Device Manager** **View** menu, select **Devices by connection**
+1. Once you have selected the drive you have updated, in the **Device Manager** **View** menu, select **Devices by connection**.
 
     ![devices by connection](images/media4-2.png)
 
 1. Click on the selected drive node, then click to expand. You will see a child **Generic software component** under the drive node.
 
-  ![generic software component](images/media4-3.png)
+    ![generic software component](images/media4-3.png)
 
-1. Right-click on the **Generic software component** and click **Properties**
+1. Right-click on the **Generic software component** and click **Properties**.
 
     ![generic software component properties dialog](images/media4-4.png)
 
@@ -138,17 +140,45 @@ To view the new SWC node and hardware ID:
 
 ### 5. View and install the NVMe disk firmware update
 
-1. TBD Add screenshots and text procedures from video
+1. Open a Powershell window as an administrator.
 
-    ![TBD](images/media5-1.png)
+1. Move to the directory on your system that contains the NVMe disk firmware update INF file. For example, type `cd .\signed-toshiba-firmware\`.
 
-    [TBD](#disk-firmware-inf-sample)
+1. Type the `dir` command to display the contents of the directory.
 
-### 6. View the updated HWID revision
+    ![storage firmware update directory](images/media5-1.png)
 
-1. TBD Add screenshots and text procedures from video
+1. Open the disk firmware update INF file with the Notepad app. For example, type `notepad .\StorFwUpdateToshiba.inf`.
 
-    ![TBD](images/media6-1.png)
+1. Verify that the disk firmware update INF contains the information for the drives you are updating. See the [Disk Firmware INF file](#disk-firmware-inf-sample) in this topic for an example disk firmware update INF.
+
+1. At the Powershell prompt, type `Get-PhysicalDisk | Get-StorageFirmwareInformation` to view the current NVMe disk firmware version.
+
+    ![firmware version](images/media5-2.png)
+
+1. Install the disk firmware update INF with the Microsoft PnP utility. For example, type `pnputil /add-driver .\StorFwUpdateToshiba.inf /install`. You will see information similar to the following command output:
+
+    ![pnputil command output](images/media5-3.png)
+
+1. Type `Get-PhysicalDisk | Get-StorageFirmwareInformation` to view the updated NVMe disk firmware information in the **ActiveSlotNumber** and **FirmwareVersionInSlot** fields of the command output.
+
+    ![firmware version](images/media5-4.png)
+
+### 6. View the updated NVMe disk firmware version in Device Manager
+
+To view the updated NVMe disk firmware version in Device Manager:
+
+1. From the Windows 10 Start menu, open **Control Panel**, then open **Device Manager**.
+
+1. In Device Manager, select **Disk drives**, then expand the node and select the NVMe disk you updated.
+
+1. Once you have selected the drive you updated, in the **Device Manager** **View** menu, select **Devices by connection**.
+
+1. Right-click on the selected drive and click **Properties**.
+
+1. In the **Properties** dialog window, select the **Details** tab, then select **Hardware Ids** from the **Property** drop down list view the Hardware ID for the drive. You should see the updated NVMe disk in the **Values** list.
+
+    ![hardware ID](images/media1-4.png)
 
 ## Storage Firmware Update solution details
 
