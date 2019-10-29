@@ -7,7 +7,9 @@ ms.localizationpriority: medium
 
 
 # TTD Exception Objects
+
 ## Description
+
 *TTD Exception* objects are used to give information about exceptions that happened during a trace session.
 
 
@@ -31,14 +33,8 @@ ms.localizationpriority: medium
 
 *Information pending*
 
-
-
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-

@@ -1,7 +1,7 @@
 ---
 Description: Overview of developing Windows drivers for emulated USB devices (UDE)
 title: Overview of developing Windows drivers for emulated USB devices (UDE)
-ms.date: 04/20/2017
+ms.date: 10/23/2019
 ms.localizationpriority: medium
 ---
 
@@ -52,7 +52,7 @@ ms.localizationpriority: medium
  
 
 ## Related topics
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/usbcon)  
 
 
 

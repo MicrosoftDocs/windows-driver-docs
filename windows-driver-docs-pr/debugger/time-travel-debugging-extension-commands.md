@@ -54,11 +54,3 @@ The time travel debugger extension commands are implemented in ttdext.dll. The t
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-
-
-
-
-
