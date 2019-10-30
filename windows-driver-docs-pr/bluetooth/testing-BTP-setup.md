@@ -7,24 +7,8 @@ ms.localizationpriority: medium
 
 ---
 
-# Bluetooth Test Platform (BTP)
+# Setting up BTP
 
-The Bluetooth Test Platform (BTP) is a software package to for automating testing of bluetooth hardware & software. It can be used to exercise bluetooth radios in the host (inside the PC) and peripheral radios. 
-
-The Bluetooth Test Platform (BTP) is the software component of Microsoft's latest automated Bluetooth testing. The Traduci is the hardware platform that the BTP runs on and supports peripheral radios to be plugged into it. The package consists of software tests, a firmware package, a provisioning tool  the Traduci board and a set of peripheral radios used for testing basic functionality.
-
-As this time the only supported radio is the RN42. Purchasing information for the Traduci, RN42 and future radios can be found below.
-
-### Devices ###
-
-Traduci board
-[**MCCI**](https://mcci.com/usb/dev-tools/model-2411/)
-
-![Photo of the Traduci board](images/Traduci_Overhead.jpg)
-
-RN42 Radio Sled
-[**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
-![Photo of the RN42 Radio on a Digilent sled](images/Traduci_and_DigilentRN42.jpg)
 
 ### Setting up Traduci Hardware ###
 
