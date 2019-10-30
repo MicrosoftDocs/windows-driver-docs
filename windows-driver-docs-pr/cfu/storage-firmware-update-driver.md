@@ -40,7 +40,7 @@ There are several issues with existing storage firmware update methods:
 
   - [IOCTL_STORAGE_FIRMWARE_ACTIVATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_firmware_activate)
 
-## NVMe driver firmware update COMPAT requirements
+## NVMe driver firmware update compatibility requirements
 
 ### Device.Storage.ControllerDrive.NVMe.BasicFunction
 
@@ -202,17 +202,67 @@ The solution details are as follows:
 
 For more information, see [Adding firmware update logic to a Microsoft-supplied driver](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update#adding-firmware-update-logic-to-a-microsoft-supplied-driver).
 
+## Driver publishing workflow (proposed)
+
+The driver publishing workflow is as follows:
+
+1. Create and submit Extension INF (AddComponent)
+
+    - Specify a unique extension GUID
+  
+1. Distribute the extension through Windows Update (WU)
+
+    - From Windows Update (WU):
+        - Requires reboot for new node creation
+        - Must be CHID targeted
+
+    - Business justification must contain `ExtendsInboxDriver=<storenvme.inf>`
+
+    - Include in the manufacturing process (recommended)
+
+1. Create and submit the storage firmware update package
+
+    - Storage IHV resells with `require CHIDs`
+
+    - OEM/IHV targets storage firmware the update to specific devices
+
 ## Storage firmware update (StorFwUpdate) driver
 
-- Utilizes User Mode Driver Framework (UMDF2)
+- Utilizes the [User Mode Driver Framework version 2 (UMDF2)](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2)
 
-- Loads as WDF user mode reflector (StorFwUpdate.dll)
+- Loads as a WDF user mode reflector (StorFwUpdate.dll)
 
-- Available in 18963+
+    ```INF
+    [StorFwUpdate.NT.Services]
+    AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall
+
+    [StorFwUpdate.NT.Wdf]
+    UmdfService=StorFwUpdate,StorFwUpdate_Install
+    UmdfServiceOrder=StorFwUpdate
+
+    [StorFwUpdate_Install]
+    UmdfLibraryVersion=$UMDFVERSION$ 
+    ServiceBinary=%13%\StorFwUpdate.dll
+
+    [WUDFRD_ServiceInstall]
+    DisplayName = %WudfRdDisplayName%
+    ServiceType  = 1
+    StartType    = 3
+    ErrorControl = 1
+    ServiceBinary = %12%\WUDFRd.sys
+
+    [DestinationDirs]
+    StorFwUpdate.CopyFiles=13 ; copy to Driverstore
+
+    [StorFwUpdate.CopyFiles]
+    StorFwUpdate.dll
+    ```
+
+- Available in Windows Insider Preview Build Build 18971 and later
 
 - Supports NVMe drives
 
-- Device.Storage.ControllerDrive.NVMe in sections 5.7 and 5.8.
+  - Device.Storage.ControllerDrive.NVMe in sections 5.7 and 5.8.  See the NVMe driver firmware update compatibility requirements in [Windows Hardware Compatibility Requirements - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840).
 
 - No RAID support
 
@@ -222,13 +272,71 @@ For more information, see [Adding firmware update logic to a Microsoft-supplied 
 
 - Must utilize CHID to limit distribution
 
+    ```INF
+    [Version]
+    Signature="$Windows NT$"
+    Class = Extension
+    ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+
+    [Standard.NTamd64]
+    %DiskExtnPackage.DeviceDesc%=DiskGDGTNG-87A, SCSI\DiskNVMe____DiskGDGTNG-87A
+    %DiskExtnPackage.DeviceDesc%=StorageIHV1_KUS02020, SCSI\DiskNVMe____StorageIHV1_KUS02020
+    %DiskExtnPackage.DeviceDesc%=StorageIHV2_KBG40ZPZ512G, SCSI\DiskNVMe____KBG40ZPZ512G_TOS0015
+    %DiskExtnPackage.DeviceDesc%=StorageIHV2_KBG40ZPZ512G, SCSI\DiskNVMe____KBG40ZPZ512G_TOS00Y9
+
+    [StorageIHV1_KUS02020.NT]
+    [StorageIHV1_KUS02020.NT.Components]
+    AddComponent = StorageIHV1_KUS02020_component,,StorageIHV1_KUS02020_ComponentInstall
+
+    [StorageIHV1_KUS02020_ComponentInstall]
+    ComponentIds=SWC\StorageIHV2_KBG40ZPZ512G
+    ...
+    ```
+
 ### Step 2 - Storage firmware update INF
 
-- Create Storage Firmware INF to target SWC\\* created in Step #1
+- Create Storage Firmware INF to target the SWC\\* created in Step 1 above.
 
-- Include references to inbox driver **Include** and **Needs** directives*
+    ```INF
+    [Version]
+    Signature="$Windows NT$"
+    Class=Firmware
+    ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+
+    [Standard.NTamd64]
+    %StorFwUpdateOem.DeviceDesc%=StorFwUpdateOem, SWC\StorageIHV2_KBG40ZPZ512G
+    ```
+
+- Include references to the inbox driver **Include** and **Needs** directives. For more information, see [INF DDInstall](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section).
+
+    ```INF
+    [StorFwUpdateOem.NT.Services]
+    Include            = StorFwUpdate.inf
+    Needs              = StorFwUpdate.NT.Services
+    ```
 
 - Store firmware payload
+
+    ```INF
+    [StorFwUpdateOem.NT.HW]
+    AddReg = StorFwUpdateOem_HWAddReg
+
+    [StorFwUpdateOem_HWAddReg]
+    HKR,,FriendlyName,,%FwUpdateFriendlyName%
+
+    ; Specify the location of the firmware offer and payload file in the registry.
+    ; The files are kept in driver store. When deployed, %13% would be expanded to the actual path 
+    ; in driver store.
+    ;
+    HKR,0D9EB3D6-6F14-4E8A-811B-F3B19F7ED98A\0,FirmwareImageVersion, 0x00000000, "AEMS0102"
+    HKR,0D9EB3D6-6F14-4E8A-811B-F3B19F7ED98A\0,FirmwareFileName, 0x00000000, %13%\AEMS0102.sig
+
+    [SourceDisksFiles]
+    AEMS0102.sig=1
+
+    [StorFwUpdateOem.CopyFiles]
+    AEMS0102.sig
+    ```
 
 - Must utilize CHID to limit distribution
 
