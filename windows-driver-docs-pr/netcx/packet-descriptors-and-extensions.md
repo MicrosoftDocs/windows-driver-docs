@@ -36,7 +36,7 @@ The second figure shows a packet stored across two memory fragments, with both R
 
 Packet descriptors and fragment descriptors are both stored in **NET_RING** structures. A NIC client driver accesses the net rings and performs operations on them by calling into the Net Ring Iterator Interface, which enables the driver to work with NetAdapterCx to post network data to hardware and drain completed data back to the OS. 
 
-For more information on net rings and the Net Ring Iterator Interface, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
+For more information on net rings and the Net Ring Iterator Interface, see [Introduction to net rings](introduction-to-net-rings.md).
 
 ## Packet descriptor extensibility
 

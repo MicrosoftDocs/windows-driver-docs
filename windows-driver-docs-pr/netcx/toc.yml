@@ -38,10 +38,10 @@
     href: transmit-and-receive-queues.md
   - name: "Network data buffer management"
     href: network-data-buffer-management.md
-  - name: "Net rings and net ring iterators"
+  - name: "Net rings"
     items:
-    - name: "Introduction to net rings and net ring iterators"
-      href: net-rings-and-net-ring-iterators.md
+    - name: "Introduction to net rings"
+      href: introduction-to-net-rings.md
     - name: "Sending network data with net rings"
       href: sending-network-data-with-net-rings.md
     - name: "Receiving network data with net rings"
