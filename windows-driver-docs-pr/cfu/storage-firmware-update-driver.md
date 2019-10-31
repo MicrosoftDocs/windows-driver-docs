@@ -8,9 +8,9 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Storage firmware update (SFU)
+# Storage Firmware Update (SFU)
 
-## Storage firmware update (SFU) overview
+## Storage Firmware Update (SFU) overview
 
 Modern servicing ensures the following:
 
@@ -18,11 +18,11 @@ Modern servicing ensures the following:
 
 - All devices can update their firmware, drivers, operating system, and apps through Windows Update (WU).
 
-![modern servicing](images/modern-servicing.png)
+![modern servicing](images/modern-servicing-scaled.png)
 
 For Storage Firmware Update (SFU), this is implemented with the inbox **storfwupdate** driver.
 
-## Existing storage firmware update (SFU) issues
+## Existing storage firmware update issues
 
 There are several issues with existing storage firmware update methods:
 
@@ -66,7 +66,7 @@ The device must not fail I/O during the download phase and shall continue servin
 
 [Windows Hardware Compatibility Requirements - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840)
 
-## Storage firmware update solution overview
+## Storage Firmware Update (SFU) solution overview
 
 The following procedures show you how to update NVMe disk firmware.
 
@@ -186,7 +186,7 @@ To view the updated NVMe disk firmware version in Device Manager:
 
     ![hardware ID](images/media1-4.png)
 
-## Storage firmware update solution details
+## Storage Firmware Update (SFU) solution details
 
 The following diagram shows the Storage firmware update solution:
 
@@ -194,11 +194,11 @@ The following diagram shows the Storage firmware update solution:
 
 The solution details are as follows:
 
-- Provide inbox support for storage firmware update. See [Storage firmware update (StorFwUpdate) driver](#storage-firmware-update-storfwupdate-driver) in this topic for implementation details.
+- Provide inbox support for Storage Firmware Update. See [Storage Firmware Update (StorFwUpdate) driver](#storage-firmware-update-storfwupdate-driver) in this topic for implementation details.
 
 - Create a second DeviceNode for firmware update. See [Use an extension INF to create a second DeviceNode](#use-an-extension-inf-to-create-a-second-devicenode) in this topic for implementation details.
 
-- The IHV/OEM storage firmware update package (INF and firmware binary) targets the second DeviceNode and only contains a firmware payload. See [Storage firmware update INF](#storage-firmware-update-inf) in this topic for implementation details.
+- The IHV/OEM Storage Firmware Update package (INF and firmware binary) targets the second DeviceNode and only contains a firmware payload. See [Storage firmware update INF](#storage-firmware-update-inf) in this topic for implementation details.
 
 For more information, see [Adding firmware update logic to a Microsoft-supplied driver](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update#adding-firmware-update-logic-to-a-microsoft-supplied-driver).
 
@@ -220,7 +220,7 @@ The driver publishing workflow is as follows:
 
     - Include in the manufacturing process (recommended)
 
-1. Create and submit the storage firmware update package
+1. Create and submit the Storage Firmware Update package
 
     - Storage IHV resells with `require CHIDs`
 
