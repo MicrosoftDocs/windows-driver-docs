@@ -194,11 +194,11 @@ The following diagram shows the Storage firmware update solution:
 
 The solution details are as follows:
 
-- Provides inbox support for storage firmware update
+- Provide inbox support for storage firmware update. See [Storage firmware update (StorFwUpdate) driver](#storage-firmware-update-storfwupdate-driver) in this topic for implementation details.
 
-- Creates a second DeviceNode for firmware update
+- Create a second DeviceNode for firmware update. See [Use an extension INF to create a second DeviceNode](#use-an-extension-inf-to-create-a-second-devicenode) in this topic for implementation details.
 
-- IHV/OEM storage firmware update package (an INF and a firmware binary) targets the second DeviceNode and only contains a firmware payload
+- The IHV/OEM storage firmware update package (INF and firmware binary) targets the second DeviceNode and only contains a firmware payload. See [Storage firmware update INF](#storage-firmware-update-inf) in this topic for implementation details.
 
 For more information, see [Adding firmware update logic to a Microsoft-supplied driver](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update#adding-firmware-update-logic-to-a-microsoft-supplied-driver).
 
@@ -241,7 +241,7 @@ The driver publishing workflow is as follows:
     UmdfServiceOrder=StorFwUpdate
 
     [StorFwUpdate_Install]
-    UmdfLibraryVersion=$UMDFVERSION$ 
+    UmdfLibraryVersion=$UMDFVERSION$
     ServiceBinary=%13%\StorFwUpdate.dll
 
     [WUDFRD_ServiceInstall]
@@ -262,15 +262,13 @@ The driver publishing workflow is as follows:
 
 - Supports NVMe drives
 
-  - Device.Storage.ControllerDrive.NVMe in sections 5.7 and 5.8.  See the NVMe driver firmware update compatibility requirements in [Windows Hardware Compatibility Requirements - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840).
+  - See Device.Storage.ControllerDrive.NVMe in sections 5.7 and 5.8 of the NVMe driver firmware update compatibility requirements in [Windows Hardware Compatibility Requirements - 20H1 (Final Draft)](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840).
 
 - No RAID support
 
-### Step 1 - Extension INF to create a second DeviceNode
+## Use an extension INF to create a second DeviceNode
 
-- OEM creates Extension INF to create Software Component Node (\SWC\\*) for target NVMe disk
-
-- Must utilize CHID to limit distribution
+- Use an extension INF to create a software component node (\SWC\\*) for target NVMe disk. For example:
 
     ```INF
     [Version]
@@ -293,9 +291,11 @@ The driver publishing workflow is as follows:
     ...
     ```
 
-### Step 2 - Storage firmware update INF
+- Must utilize CHID to limit distribution
 
-- Create Storage Firmware INF to target the SWC\\* created in Step 1 above.
+## Storage firmware update INF
+
+- Create  a storage firmware INF to target the SWC\\* created in the extension INF above. For example:
 
     ```INF
     [Version]
@@ -307,7 +307,7 @@ The driver publishing workflow is as follows:
     %StorFwUpdateOem.DeviceDesc%=StorFwUpdateOem, SWC\StorageIHV2_KBG40ZPZ512G
     ```
 
-- Include references to the inbox driver **Include** and **Needs** directives. For more information, see [INF DDInstall](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section).
+- Include references to the inbox driver **Include** and **Needs** directives. For more information, see [INF DDInstall](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section):
 
     ```INF
     [StorFwUpdateOem.NT.Services]
@@ -315,7 +315,7 @@ The driver publishing workflow is as follows:
     Needs              = StorFwUpdate.NT.Services
     ```
 
-- Store firmware payload
+- Storage firmware payload example:
 
     ```INF
     [StorFwUpdateOem.NT.HW]
@@ -325,7 +325,7 @@ The driver publishing workflow is as follows:
     HKR,,FriendlyName,,%FwUpdateFriendlyName%
 
     ; Specify the location of the firmware offer and payload file in the registry.
-    ; The files are kept in driver store. When deployed, %13% would be expanded to the actual path 
+    ; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
     ; in driver store.
     ;
     HKR,0D9EB3D6-6F14-4E8A-811B-F3B19F7ED98A\0,FirmwareImageVersion, 0x00000000, "AEMS0102"
@@ -340,7 +340,9 @@ The driver publishing workflow is as follows:
 
 - Must utilize CHID to limit distribution
 
-## OEM Disk Extension INF sample
+## Disk extension INF sample
+
+The following in an example extension INF file:
 
 ```INF
 ;/*++
@@ -429,7 +431,9 @@ SERVICE_ERROR_SEVERE   = 0x2
 SERVICE_ERROR_CRITICAL = 0x3
 ```
 
-## Disk Firmware INF sample
+## Disk firmware INF sample
+
+The following in an example disk firmware INF file:
 
 ```INF
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
