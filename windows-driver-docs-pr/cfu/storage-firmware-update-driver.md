@@ -112,7 +112,7 @@ To view the current NVMe disk firmware version:
 
 1. Open the extension INF file with the Notepad app. For example, type `notepad .\SurfaceDiskExtnPackage.inf`.
 
-1. Verify that the extension INF file contains the information for the drives you are updating. See the [OEM Disk Extension INF file](#oem-disk-extension-inf-sample) in this topic for an example extension INF.
+1. Verify that the extension INF file contains the information for the drives you are updating. See [Disk extension INF file](disk-extension-inf-sample) in this topic for an example extension INF.
 
 1. Install the extension INF with the Microsoft PnP utility. For example, type `pnputil /add-driver .\SurfaceDiskExtnPackage.inf /install`. You will see information similar to the following command output:
 
@@ -307,7 +307,7 @@ The driver publishing workflow is as follows:
     %StorFwUpdateOem.DeviceDesc%=StorFwUpdateOem, SWC\StorageIHV2_KBG40ZPZ512G
     ```
 
-- Include references to the inbox driver **Include** and **Needs** directives. For more information, see [INF DDInstall](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section):
+- Include references to the inbox driver **Include** and **Needs** directives (for more information, see [INF DDInstall](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)). For example:
 
     ```INF
     [StorFwUpdateOem.NT.Services]
@@ -342,7 +342,7 @@ The driver publishing workflow is as follows:
 
 ## Disk extension INF sample
 
-The following in an example extension INF file:
+The following is an example extension INF file:
 
 ```INF
 ;/*++
@@ -433,7 +433,7 @@ SERVICE_ERROR_CRITICAL = 0x3
 
 ## Disk firmware INF sample
 
-The following in an example disk firmware INF file:
+The following is an example OEM disk firmware INF file:
 
 ```INF
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
