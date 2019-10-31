@@ -193,4 +193,4 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 
 ### Known issues ###
 
-- Documentation: Incomplete documentation
+-First release.
