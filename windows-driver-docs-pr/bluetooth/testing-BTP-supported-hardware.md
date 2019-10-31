@@ -26,6 +26,11 @@ At this time the only supported radio is the RN42. Purchasing information for th
 - Supports audio testing via the integrated audio codec
 - Supports HID and pairing tests
 
+### PMOD Layout ###
+<img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
+- Unlabled pins can easily be statically assigned to HIGH or LOW depending on the needs of the radio plugged into the port
+- The Traduci does not currently support hardware handshaking using CTS and RTS
+
 ## HID Sled ##
 [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
