@@ -139,7 +139,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 Cause
 -----
 
-Parameter 1 indicates the specific cause of the BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP bugcheck.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. Parameter 1 indicates the specific cause of the BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP bugcheck.
 
 Remarks
 -------

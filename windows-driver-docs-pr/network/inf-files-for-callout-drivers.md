@@ -13,7 +13,6 @@ ms.localizationpriority: medium
 
 # INF Files for Callout Drivers
 
-
 A Windows Filtering Platform callout driver is installed by a setup information file (INF) file. INF files for callout drivers contain only the following INF file sections:
 
 [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section)
@@ -78,9 +77,9 @@ ErrorControl = 1 ; SERVICE_ERROR_NORMAL
 ServiceBinary = %12%\ExampleCalloutDriver.sys
 
 [Strings]
-%Msft% = "Microsoft Corporation"
-%DiskName% = "Example Callout Driver Installation Disk"
-%Description% = "Example Callout Driver"
-%ServiceName% = "ExampleCalloutDriver"
-%ServiceDesc% = "Example Callout Driver"
+Msft = "Microsoft Corporation"
+DiskName = "Example Callout Driver Installation Disk"
+Description = "Example Callout Driver"
+ServiceName = "ExampleCalloutDriver"
+ServiceDesc = "Example Callout Driver"
 ```

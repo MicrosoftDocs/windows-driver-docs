@@ -89,14 +89,16 @@
             href: graphics-measures.md
           - name: "Standard and Expanded audience measures"
             items:
-            - name: "Number of machines with a blue screen caused by a crash in the graphics driver binary"
-              href: number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-expanded.md
+            - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary"
+              href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md
+            - name: "Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary"
+              href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
+            - name: "Myriad of machines that had an LKE caused by a crash in the graphics driver binary"
+              href: myriad-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-standard.md
+            - name: "Myriad of machines that had a TDR caused by a crash in the graphics driver binary"
+              href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
             - name: "Number of machines that had a blue screen caused by a crash in the graphics kernel"
               href: number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md
-            - name: "Number of machines that had a TDR caused by a crash in the graphics driver binary"
-              href: number-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-expanded.md
-            - name: "Number of machines that had an LKE caused by a crash in the graphics driver binary"
-              href: number-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-expanded.md
             - name: "Number of user mode crashes in Microsoft Photos app"
               href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
             - name: "Number of user mode for crashes in creative applications"
@@ -111,10 +113,14 @@
               href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
           - name: "Ecosystem audience measures"
             items:
-            - name: "Number of machines with a blue screen caused by a crash in graphics driver binary" 
-              href: number-of-machines-with-bluescreen-caused-by-crash-in-graphics-driver-binary-ecosystem.md
-            - name: "Number of machines that had an LKE caused by a crash in the graphics driver binary"
-              href: number-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-ecosystem.md
+            - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
+              href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md
+            - name: "Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary" 
+              href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md
+            - name: "Myriad of machines that had an LKE caused by a crash in the graphics driver binary" 
+              href: myriad-of-machines-that-had-lke-caused-by-crash-in-graphics-driver-binary-ecosystem.md
+            - name: "Myriad of machines that had a TDR caused by a crash in the graphics driver binary" 
+              href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
             - name: "Number of user mode crashes in Microsoft Edge"
               href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
             - name: "Number of user mode crashes in top Microsoft apps"

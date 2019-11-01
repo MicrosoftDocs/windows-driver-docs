@@ -75,5 +75,5 @@ The following directives are valid with some caveats:
 
 ## See Also
 
-* [Installing a Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers)
+* [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 * [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif)
