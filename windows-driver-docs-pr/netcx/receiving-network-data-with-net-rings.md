@@ -4,9 +4,9 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 ms.assetid: 78D202E2-4123-4F63-9B86-48400C2CCC38
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
-ms.date: 03/21/2019
+ms.date: 11/01/2019
 ms.localizationpriority: medium
-ms.custom: 19H1
+ms.custom: Vib
 ---
 
 # Receiving network data with net rings

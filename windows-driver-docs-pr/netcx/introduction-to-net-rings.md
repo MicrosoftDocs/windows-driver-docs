@@ -25,7 +25,7 @@ Every packet queue has its own **NET_RING_COLLECTION** structure, and, consequen
 
 ## NET_RING element ownership
 
-Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. Ownership is controlled by three indices, which mark sections of the **NET_RING**. These indices are described in the following table. The act of moving these indices, which client drivers do by calling into the [Net Ring Iterator Interface](#net-ring-iterator-interface-overview), is described by *post* and *drain* semantics. 
+Each element in a **NET_RING** is owned by either the client driver or NetAdapterCx. Ownership is controlled by three indices, which mark sections of the **NET_RING**. These indices are described in the following table. The act of moving these indices is described by *post* and *drain* semantics. 
 
 | **NET_RING** index name | Description | Required for transferring network data | Modified by |
 | --- | --- | --- | --- |
