@@ -25,27 +25,28 @@ In this animation, the packets owned by the client driver are highlighted in lig
 
 Here is a typical post and drain sequence for a driver whose device transmits data in order, such as a simple PCI NIC.
 
-1. Call **NetTxQueueGetRingCollection** to retrieve the transmit queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
+1. Call [**NetTxQueueGetRingCollection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuegetringcollection) to retrieve the transmit queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
 2. Post data to hardware:    
-    1. Use the ring collection to retrieve the post iterator for the transmit queue's packet ring by calling [**NetRingGetPostPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netringgetpostpackets).
-    2. Do the following in a loop:
-        1. Get a packet by calling [**NetPacketIteratorGetPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratorgetpacket) with the packet iterator.
+    1. Use the ring collection to retrieve the transmit queue's packet ring.
+    2. Allocate a UINT32 variable for the packet index and set it to the packet ring's **NextIndex**, which is the start of the post subsection of the ring.
+    3. Do the following in a loop:
+        1. Get a packet by calling [**NetRingGetPacketAtIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringgetpacketatindex) with the packet index.
         2. Check if this packet should be ignored. If it should be ignored, skip to step 6 of this loop. If not, continue.
-        3. Get a fragment iterator for this packet's fragments by calling [**NetPacketIteratorGetFragments**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratorgetfragments).
+        3. Get this packet's fragments. Retrieve the transmit queue's fragment ring from the ring collection, retrieve the beginning of the packet's fragments from the packet's **FragmentIndex** member, then retrieve the end of the packet's fragments by calling [**NetRingIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringincrementindex) with the packet's **FragmentCount**.
         4. Do the doing the following in a loop:
-            1. Call [**NetFragmentIteratorGetFragment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratorgetfragment) with the fragment iterator to get a fragment.
+            1. Call [**NetRingGetFragmentAtIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringgetpacketatindex) to get a fragment.
             2. Translate the **NET_FRAGMENT** descriptor into the associated hardware fragment descriptor.
-            3. Call [**NetFragmentIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netfragmentiteratoradvance) to move to the next fragment for this packet.
+            3. Advance the fragment index by calling  [**NetRingIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringincrementindex).
         5. Update the fragment ring's **Next** index to match the fragment iterator's current **Index**, which indicates that posting to hardware is complete.
-        6. Call [**NetPacketIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratoradvance) to move to the next packet.
-    3. Call [**NetPacketIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratorset) to finalize posting packets to hardware.
+        6. Advance the packet index by calling  [**NetRingIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringincrementindex).
+    4. Update the packet ring's **NextIndex** to the packet index to finalize posting packets to hardware.
 3. Drain completed transmit packets to the OS:
-    1. Use the ring collection to retrieve the drain iterator for the transmit queue's packet ring by calling [**NetRingGetDrainPackets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netringgetdrainpackets).
+    1. Set the packet index to the packet ring's **BeginIndex**, which is the start of the drain subsection of the ring.
     2. Do the following in a loop:
-        1. Get a packet by calling [**NetPacketIteratorGetPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratorgetpacket).
+        1. Get a packet by calling [**NetRingGetPacketAtIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringgetpacketatindex) with the packet index.
         2. Check if the packet has finished transmitting. If it has not, break out of the loop.
-        2. Call [**NetPacketIteratorAdvance**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratoradvance) to move to the next packet.
-    3. Call [**NetPacketIteratorSet**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/nf-netringiterator-netpacketiteratorset) to finalize draining packets to the OS.
+        3. Advance the packet index by calling  [**NetRingIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringincrementindex).
+    3. Update the packet ring's **BeginIndex** to the packet index to finalize posting packets to hardware.
 
 These steps might look like this in code. Note that hardware-specific details such as how to post descriptors to hardware or flushing a successful post transaction are left out for clarity.
 
@@ -55,9 +56,13 @@ MyEvtTxQueueAdvance(
     NETPACKETQUEUE TxQueue
 )
 {
+    //
+    // Retrieve the transmit queue's ring collection and packet ring. 
+    // This example stores the Tx queue's ring collection in its queue context space.
+    //
     PMY_TX_QUEUE_CONTEXT txQueueContext = MyGetTxQueueContext(TxQueue);
-    NET_RING_COLLECTION const * Rings = txQueueContext->Rings;
-    NET_RING * packetRing = Rings->Rings[NET_RING_TYPE_PACKET];
+    NET_RING_COLLECTION const * ringCollection = txQueueContext->RingCollection;
+    NET_RING * packetRing = ringCollection->Rings[NET_RING_TYPE_PACKET];
     UINT32 packetRingIndex = 0;
 
     //
@@ -69,7 +74,7 @@ MyEvtTxQueueAdvance(
         NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, packetRingIndex);        
         if(!packet->Ignore)
         {
-            NET_RING * fragmentRing = Rings->Rings[NET_RING_TYPE_FRAGMENT];
+            NET_RING * fragmentRing = ringCollection->Rings[NET_RING_TYPE_FRAGMENT];
             UINT32 fragmentRingIndex = packet->FragmentIndex;
             UINT32 fragmentRingEndIndex = NetRingIncrementIndex(fragmentRing, fragmentRingIndex + packet->FragmentCount - 1);
             
@@ -105,7 +110,7 @@ MyEvtTxQueueAdvance(
         
         // Test packet for transmit completion by checking hardware ownership flags in the packet's last fragment
         // Break if transmit is not complete
-        ..
+        ...
         //
         
         packetRingIndex = NetRingIncrementIndex(packetRing, packetRingIndex);
