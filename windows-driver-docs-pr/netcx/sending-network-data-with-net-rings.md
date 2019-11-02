@@ -55,59 +55,62 @@ MyEvtTxQueueAdvance(
     NETPACKETQUEUE TxQueue
 )
 {
-    // Get the transmit queue's context to retrieve the net ring collection
     PMY_TX_QUEUE_CONTEXT txQueueContext = MyGetTxQueueContext(TxQueue);
     NET_RING_COLLECTION const * Rings = txQueueContext->Rings;
+    NET_RING * packetRing = Rings->Rings[NET_RING_TYPE_PACKET];
+    UINT32 packetRingIndex = 0;
 
     //
     // Post data to hardware
-    //
-    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetPostPackets(Rings);
-    while(NetPacketIteratorHasAny(&packetIterator))
+    //      
+    packetRingIndex = Rings->NextIndex;
+    while(packetRingIndex != packetRing->EndIndex)
     {
-        NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);        
+        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, packetRingIndex);        
         if(!packet->Ignore)
         {
-            NET_FRAGMENT_ITERATOR fragmentIterator = NetPacketIteratorGetFragments(&packetIterator);
-            UINT32 packetIndex = NetPacketIteratorGetIndex(&packetIterator);
+            NET_RING * fragmentRing = Rings->Rings[NET_RING_TYPE_FRAGMENT];
+            UINT32 fragmentRingIndex = packet->FragmentIndex;
+            UINT32 fragmentRingEndIndex = NetRingIncrementIndex(fragmentRing, fragmentRingIndex + packet->FragmentCount - 1);
             
             for(txQueueContext->PacketTransmitControlBlocks[packetIndex]->numTxDescriptors = 0; 
-                NetFragmentIteratorHasAny(&fragmentIterator); 
+                fragmentRingIndex != fragmentRingEndIndex; 
                 txQueueContext->PacketTransmitControlBlocks[packetIndex]->numTxDescriptors++)
             {
-                NET_FRAGMENT* fragment = NetFragmentIteratorGetFragment(&fragmentIterator);
+                NET_FRAGMENT* fragment = NetRingGetFragmentAtIndex(fragmentRing, fragmentRingIndex);
 
                 // Post fragment descriptor to hardware
                 ...
                 //
 
-                NetFragmentIteratorAdvance(&fragmentIterator);
+                fragmentRingIndex = NetRingIncrementIndex(fragmentRing, fragmentRingIndex);
             }
 
             //
             // Update the fragment ring's Next index to indicate that posting is complete and prepare for draining
             //
-            fragmentIterator.Iterator.Rings->Rings[NET_RING_TYPE_FRAGMENT]->NextIndex = NetFragmentIteratorGetIndex(&fragmentIterator);
+            fragmentRing->NextIndex = fragmentRingIndex;
         }
-        NetPacketIteratorAdvance(&packetIterator);
+        packetRingIndex = NetRingIncrementIndex(packetRing, packetRingIndex);
     }
-    NetPacketIteratorSet(&packetIterator);
+    packetRing->NextIndex = packetRingIndex;
 
     //
     // Drain packets if completed
     //
-    packetIterator = NetRingGetDrainPackets(Rings);
-    while(NetPacketIteratorHasAny(&packetIterator))
+    packetRingIndex = packetRing->BeginIndex;
+    while(packetRingIndex != packetRing->NextIndex)
     {        
-        NET_PACKET* packet = NetPacketIteratorGetPacket(&packetIterator);
+        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, packetRingIndex); 
         
         // Test packet for transmit completion by checking hardware ownership flags in the packet's last fragment
+        // Break if transmit is not complete
         ..
         //
         
-        NetPacketIteratorAdvance(&packetIterator);
+        packetRingIndex = NetRingIncrementIndex(packetRing, packetRingIndex);
     }
-    NetPacketIteratorSet(&packetIterator);
+    packetRing->BeginIndex = packetRingIndex;
 }
 ```
 
