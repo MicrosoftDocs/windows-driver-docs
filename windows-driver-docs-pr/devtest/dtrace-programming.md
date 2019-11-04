@@ -11,7 +11,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 10/16/2019
+ms.date: 11/04/2019
 ms.localizationpriority: medium
 ---
 
