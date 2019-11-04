@@ -2541,6 +2541,19 @@
       href: about-event-tracing-for-drivers.md
     - name: "Adding Event Tracing to Kernel-Mode Drivers"
       href: adding-event-tracing-to-kernel-mode-drivers.md
+  - name: "DTrace on Windows"
+# Auto-expanded node
+    items: 
+    - name: "DTrace On Windows"
+      href: dtrace.md
+    - name: "DTrace Programming"
+      href: dtrace-programming.md
+    - name: "DTrace Code Samples"
+      href: dtrace-code-samples.md
+    - name: "DTrace ETW"
+      href: dtrace-etw.md
+    - name: "DTrace Live Dump"
+      href: dtrace-live-dump.md
   - name: "TraceLogging API"
 # Auto-expanded node
     items: 
