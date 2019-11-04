@@ -268,8 +268,8 @@ This CID sends a specific command to access a UICC binary file, with structure t
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_UICC_ACCESS_BINARY | MBIM_UICC_ACCESS_BINARY | Not applicable |
-| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
+| Command | Not applicable | MBIM_UICC_ACCESS_BINARY | Not applicable |
+| Response | Not applicable | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
@@ -294,7 +294,7 @@ Reads a binary file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM
 
 ### Set
 
-Updates a transparent file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM_UICC_ACCESS_BINARY structure. An MBIM_UICC_RESPONSE structure is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+Not applicable.
 
 ### Response
 
@@ -336,8 +336,8 @@ This CID sends a specific command to access a UICC linear fixed or cyclic file, 
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_UICC_ACCESS_RECORD | MBIM_UICC_ACCESS_RECORD | Not applicable |
-| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
+| Command | Not applicable | MBIM_UICC_ACCESS_RECORD | Not applicable |
+| Response | Not applicable | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
@@ -361,7 +361,7 @@ Reads contents of a record. The InformationBuffer for MBIM_COMMAND_MSG contains 
 
 ### Set
 
-Updates a linear fixed or cyclic file. The InformationBuffer for MBIM_COMMAND_MSG contains the following MBIM_UICC_ACCESS_RECORD structure. MBIM_UICC_RESPONSE is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+Not applicable.
 
 ### Response
 

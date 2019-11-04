@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 [!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
 
 
-This guide walks you through the process of creating a service metadata package on the Windows Dev Center hardware dashboard, previously known as Sysdev (<http://sysdev.microsoft.com>). Service metadata is required to connect a mobile broadband app to your hardware device. When a user plugs a mobile broadband device into their computer, the associated service metadata is downloaded and then the mobile broadband app is automatically downloaded.
+This guide walks you through the process of creating a service metadata package on the Windows Dev Center hardware dashboard, previously known as Sysdev (<https://sysdev.microsoft.com>). Service metadata is required to connect a mobile broadband app to your hardware device. When a user plugs a mobile broadband device into their computer, the associated service metadata is downloaded and then the mobile broadband app is automatically downloaded.
 
 You can leverage service metadata to create a deeply integrated experience with Windows. Service metadata packages allow you to include branding information, such as icons and your operator name, configure settings and permissions for accessing SIM hardware and personal hotspots, and provision mobile broadband apps to work with your mobile broadband device.
 
@@ -163,7 +163,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
 **To create a service metadata package**
 
-1.  Navigate to <http://sysdev.microsoft.com>.
+1.  Navigate to <https://sysdev.microsoft.com>.
 
 2.  Under the **Device metadata** heading, click **Create mobile broadband experience**.
 
