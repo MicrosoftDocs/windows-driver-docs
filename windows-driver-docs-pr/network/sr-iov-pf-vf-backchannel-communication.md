@@ -1,12 +1,12 @@
 ---
-title: SR-IOV PF/VF Backchannel Communication
-description: SR-IOV PF/VF Backchannel Communication
+title: SR-IOV PF/VF Backchannel Communication Overview
+description: SR-IOV PF/VF Backchannel Communication Overview
 ms.assetid: 66D40452-1286-449E-BD6B-AFAD466E03A1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# SR-IOV PF/VF Backchannel Communication
+# SR-IOV PF/VF Backchannel Communication Overview
 
 
 The single root I/O virtualization (SR-IOV) interface provides a communication channel, or *backchannel*, between the miniport drivers of a PCI Express (PCIe) Virtual Function (VF) and the PCIe Physical Function (PF). Each VF miniport driver can issue requests over the backchannel to the PF miniport driver. The PF miniport driver can issue status notifications over the backchannel to individual VF miniport drivers.

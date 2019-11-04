@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Sending Data over a Datagram Socket
 
 
-After a Winsock Kernel (WSK) application has bound a datagram socket to a local transport address it can send datagrams over the socket. A WSK application sends a datagram over a datagram socket by calling the [**WskSendTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_send_to) function.
+After a Winsock Kernel (WSK) application has bound a datagram socket to a local transport address it can send datagrams over the socket. A WSK application sends a datagram over a datagram socket by calling the [**WskSendTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_to) function.
 
 The following code example shows how a WSK application can send a datagram over a datagram socket.
 
@@ -124,7 +124,7 @@ NTSTATUS
 }
 ```
 
-If the WSK application has set either a fixed remote transport address or a fixed destination transport address for the datagram socket, the *RemoteAddress* parameter passed to the [**WskSendTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_send_to) function is optional and can be **NULL**. If **NULL**, the datagram is sent to the fixed remote transport address or the fixed destination transport address. If non-**NULL**, the datagram is sent to the specified remote transport address.
+If the WSK application has set either a fixed remote transport address or a fixed destination transport address for the datagram socket, the *RemoteAddress* parameter passed to the [**WskSendTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_to) function is optional and can be **NULL**. If **NULL**, the datagram is sent to the fixed remote transport address or the fixed destination transport address. If non-**NULL**, the datagram is sent to the specified remote transport address.
 
 For more information about setting a fixed remote transport address for a datagram socket, see [**SIO\_WSK\_SET\_REMOTE\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/network/sio-wsk-set-remote-address).
 

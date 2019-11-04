@@ -16,8 +16,8 @@ A display miniport driver's Hardware Functionality Scan (HFS) ensures that the m
 
 A display miniport driver must start performing an HFS whenever the Microsoft DirectX graphics kernel subsystem (*Dxgkrnl.sys*) calls the following driver functions:
 
--   [**DxgkDdiStartDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_start_device)
+-   [**DxgkDdiStartDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device)
 
--   [**DxgkDdiSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_set_power_state) with the graphics adapter's power state set to D0.
+-   [**DxgkDdiSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_set_power_state) with the graphics adapter's power state set to D0.
 
-The HFS can be asynchronous and is not required to complete before [**DxgkDdiStartDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_start_device) or [**DxgkDdiSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_set_power_state) returns. However, no [OPM DDI](supporting-output-protection-manager.md) function can return until the HFS completes.
+The HFS can be asynchronous and is not required to complete before [**DxgkDdiStartDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device) or [**DxgkDdiSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_set_power_state) returns. However, no [OPM DDI](supporting-output-protection-manager.md) function can return until the HFS completes.

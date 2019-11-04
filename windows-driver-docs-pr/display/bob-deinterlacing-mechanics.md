@@ -25,7 +25,7 @@ The following figure shows a video surface that contains two interleaved fields.
 
 ![diagram illustrating memory layout of a surface containing two interleaved fields](images/deinterlace.png)
 
-If the video sample contains two interleaved fields as specified by the **DXVA\_SampleFieldInterleavedEvenFirst** and **DXVA\_SampleFieldInterleavedOddFirst** members of the [**DXVA\_SampleFormat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ne-dxva-_dxva_sampleformat) enumeration, the start time of the second field is calculated using the **rtStart** and **rtEnd** members of the [**DXVA\_VideoSample**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_videosample) structure as follows:
+If the video sample contains two interleaved fields as specified by the **DXVA\_SampleFieldInterleavedEvenFirst** and **DXVA\_SampleFieldInterleavedOddFirst** members of the [**DXVA\_SampleFormat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat) enumeration, the start time of the second field is calculated using the **rtStart** and **rtEnd** members of the [**DXVA\_VideoSample**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample) structure as follows:
 
 (**rtStart** + **rtEnd**) / 2
 

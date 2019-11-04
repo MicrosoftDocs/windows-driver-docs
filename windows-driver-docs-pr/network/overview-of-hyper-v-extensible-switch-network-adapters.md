@@ -80,7 +80,7 @@ After the OID request has completed with NDIS\_STATUS\_SUCCESS, the network adap
 
 -   Issue extensible switch OIDs or status indications that use the port as the source port.
 
--   Call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the network adapter connection. The extensible switch interface will not tear down a network adapter connection while the reference counter has a nonzero value.
+-   Call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) to increment a reference counter for the network adapter connection. The extensible switch interface will not tear down a network adapter connection while the reference counter has a nonzero value.
 
 <a href="" id="oid-switch-nic-updated"></a>[OID\_SWITCH\_NIC\_UPDATED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-updated)  
 The protocol edge of the extensible switch issues an OID set request of OID\_SWITCH\_NIC\_UPDATED to notify extensible switch extensions that the parameters for an extensible switch network adapter have been updated. The OID will only be issued for NICs that have already been connected, and have not yet begun the disconnect process. These run-time configuration changes can include *NicFriendlyName*, *MTU*, *NetCfgInstanceId*, *PermanentMacAddress*, *VMMacAddress*, *CurrentMacAddress*, and *VFAssigned.*
@@ -92,7 +92,7 @@ The protocol edge of the extensible switch issues an OID set request of [OID\_SW
 
 The extension must always forward this OID set request down the extensible switch driver stack. The extension must not fail the request.
 
-After the extension forwards this OID request, it can no longer generate or forward packets to the port on which the network adapter connection is being torn down. Also, the extension can no longer call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) for the network adapter connection.
+After the extension forwards this OID request, it can no longer generate or forward packets to the port on which the network adapter connection is being torn down. Also, the extension can no longer call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) for the network adapter connection.
 
 <a href="" id="oid-switch-nic-delete"></a>[OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete)  
 The protocol edge of the extensible switch issues an OID set request of [OID\_SWITCH\_NIC\_DELETE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-delete) to notify extensible switch extensions that an extensible switch network adapter connection has been torn down and deleted. This OID request is only issued for network connections for which an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) was previously issued.
@@ -107,23 +107,23 @@ The extension must always forward this OID set request down the extensible switc
 
 The extensible switch interface maintains a reference counter for each network adapter connection that has been created. A network adapter connection will not be deleted if its reference counter has a nonzero value. The interface provides the following handler functions for incrementing or decrementing the reference counter of an extensible switch network adapter connection:
 
-<a href="" id="referenceswitchnic"></a>[*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic)  
+<a href="" id="referenceswitchnic"></a>[*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic)  
 The extensible switch extension calls this function to increment a network adapter connection's reference counter. Although the reference counter has a nonzero value, the extensible switch interface does not delete the network adapter connection.
 
-The extension should call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) before it performs the following operations:
+The extension should call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) before it performs the following operations:
 
 -   Forwards an [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request) request down the extensible switch driver stack to an underlying external adapter.
 
 -   Forwards an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) status indication up the extensible switch driver stack from an underlying external adapter.
 
-**Note**  The extension must not call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic) for a network adapter connection after it receives an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) for that connection.
+**Note**  The extension must not call [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic) for a network adapter connection after it receives an OID set request of [OID\_SWITCH\_NIC\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-disconnect) for that connection.
 
  
 
-<a href="" id="dereferenceswitchnic"></a>[*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_dereference_switch_nic)  
+<a href="" id="dereferenceswitchnic"></a>[*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic)  
 The extensible switch extension calls this function to decrement a port's reference counter.
 
-If the extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_reference_switch_nic), it must call [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-ndis_switch_dereference_switch_nic) after the [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request) or [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication have completed.
+If the extension calls [*ReferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic), it must call [*DereferenceSwitchNic*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_nic) after the [OID\_SWITCH\_NIC\_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-switch-nic-request) or [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication have completed.
 
  
 

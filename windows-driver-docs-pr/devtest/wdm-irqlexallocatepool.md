@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 # IrqlExAllocatePool rule (wdm)
 
 
-The **IrqlExAllocatePool** rule specifies that the driver calls [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) and [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority) only when it is executing at IRQL&lt;=DISPATCH\_LEVEL.
+The **IrqlExAllocatePool** rule specifies that the driver calls [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and [**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) only when it is executing at IRQL&lt;=DISPATCH\_LEVEL.
 
-A caller executing at DISPATCH\_LEVEL must specify a NonPaged*Xxx* value for *PoolType*. A caller executing at IRQL &lt;= APC\_LEVEL can specify any [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_pool_type) value.
+A caller executing at DISPATCH\_LEVEL must specify a NonPaged*Xxx* value for *PoolType*. A caller executing at IRQL &lt;= APC\_LEVEL can specify any [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) value.
 
 |              |     |
 |--------------|-----|
@@ -31,7 +31,7 @@ A caller executing at DISPATCH\_LEVEL must specify a NonPaged*Xxx* value for *Po
 Example
 -------
 
-In the following example, the [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) routine is called after the [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keacquirespinlock) routine, which sets IRQL to DISPATCH\_LEVEL. The **ExAllocatePoolWithTag** routine is called with **PagedPool**, which violates the rule.
+In the following example, the [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) routine is called after the [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock) routine, which sets IRQL to DISPATCH\_LEVEL. The **ExAllocatePoolWithTag** routine is called with **PagedPool**, which violates the rule.
 
 ```ManagedCPlusPlus
 NTSTATUS
@@ -134,8 +134,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag)
-[**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtagpriority)
+[**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
+[**ExAllocatePoolWithTagPriority**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
 See also
 --------
 

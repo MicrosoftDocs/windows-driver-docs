@@ -29,6 +29,6 @@ The following describes how Serenum filters I/O requests that are directed to a 
 
 For more information, see the following:
 
-- [ntddser.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/)
+- [ntddser.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/)
 
 - Sample code in the \\src\\kernel\\serenum directory in the Windows Driver Kit (WDK)

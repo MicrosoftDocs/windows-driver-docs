@@ -1,6 +1,6 @@
 ---
-title: Network Wake-Up Events
-description: Network Wake-Up Events
+title: About Network Wake-Up Events
+description: About Network Wake-Up Events
 ms.assetid: 85195d44-4d79-4feb-af35-c478dc4319c5
 keywords:
 - wake-up capabilities WDK networking , types
@@ -15,7 +15,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Network Wake-Up Events
+# About Network Wake-Up Events
 
 
 
@@ -29,7 +29,7 @@ NDIS defines the following two network wake-up events:
 
 -   Receipt of a Magic Packet.
 
-A network adapter can support any combination of network wake-up events, including none at all. NDIS treats the miniport driver as not power management-aware if the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL**.
+A network adapter can support any combination of network wake-up events, including none at all. NDIS treats the miniport driver as not power management-aware if the miniport driver sets the **PowerManagementCapabilities** member of [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) to **NULL**.
 
 Depending on the capabilities of the network adapter, a network wake-up event can occur from any device power state, including the highest-powered state (D0).
 

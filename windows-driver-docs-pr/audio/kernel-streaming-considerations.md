@@ -64,10 +64,10 @@ DeviceStateInfo = 0
 JackCapabilities = JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY
 **KSPROPERTY\_ONESHOT\_RECONNECT**
 
-The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_RECONNECT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-oneshot-reconnect). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_request_connect) to the HFP driver. The HFP driver completes this request, and then attempts to connect to the Bluetooth audio device asynchronously.
+The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_RECONNECT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-oneshot-reconnect). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_CONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_request_connect) to the HFP driver. The HFP driver completes this request, and then attempts to connect to the Bluetooth audio device asynchronously.
 **KSPROPERTY\_ONESHOT\_DISCONNECT**
 
-The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-oneshot-disconnect). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_request_disconnect) to the HFP driver. The HFP driver completes this request, and then attempts to disconnect from the Bluetooth audio device asynchronously.
+The audio driver’s filter should support [**KSPROPERTY\_ONESHOT\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-oneshot-disconnect). To create and initialize this structure, the audio driver sends [**IOCTL\_BTHHFP\_DEVICE\_REQUEST\_DISCONNECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_request_disconnect) to the HFP driver. The HFP driver completes this request, and then attempts to disconnect from the Bluetooth audio device asynchronously.
 When an audio driver supports these properties, the Sound dialog box in the Control Panel exposes Connect and Disconnect commands for the HFP endpoint.
 
 ## <span id="related_topics"></span>Related topics

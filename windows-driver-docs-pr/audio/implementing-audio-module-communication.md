@@ -104,7 +104,7 @@ typedef enum {
 
 ### Audio Module Descriptors
 
-Support for the [KSPROPERTY_AUDIOMODULE_DESCRIPTORS](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-descriptors) property identifies the driver as being Audio Module aware. The property will be queried through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call. [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) has been defined to describe each module within the audio hardware. An array of these descriptors is returned in response to this request
+Support for the [KSPROPERTY_AUDIOMODULE_DESCRIPTORS](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-descriptors) property identifies the driver as being Audio Module aware. The property will be queried through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call. [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor) has been defined to describe each module within the audio hardware. An array of these descriptors is returned in response to this request
 
 #### ksmedia.h:
 
@@ -120,11 +120,11 @@ typedef struct _KSAUDIOMODULE_DESCRIPTOR
     WCHAR   Name[AUDIOMODULE_MAX_NAME_SIZE];
 } KSAUDIOMODULE_DESCRIPTOR, *PKSAUDIOMODULE_DESCRIPTOR;
 ```
-For more information, see [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor).
+For more information, see [KSAUDIOMODULE_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_descriptor).
 
 ### Audio Module Command
 
-Support for the [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property) in the input buffer to send custom commands.
+Support for the [KSPROPERTY_AUDIOMODULE_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-command) property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) in the input buffer to send custom commands.
 
 #### ksmedia.h:
 
@@ -139,14 +139,14 @@ typedef struct _KSPAUDIOMODULE_PROPERTY
 } KSAUDIOMODULE_PROPERTY, *PKSPAUDIOMODULE_PROPERTY;
 
 ```
-For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property).
+For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property).
 
 
 ### Audio Module Notification Device ID
 
 Support for the [KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audiomodule-notification-device-id) is required to enable the miniport to signal notifications and pass information to Audio Module clients. The lifetime of this ID is tied to the lifetime of the audio device being exposed and active to the Windows Audio stack. The property can be sent through the filter or pin handle and a KSPROPERTY is passed as the input buffer for the DeviceIoControl call.
 
-For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ksaudiomodule_property).
+For more information, see [KSAUDIOMODULE_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property).
 
 
 <span id="PortCls_Helper"></span>PortCls Helper - Audio Module Notifications
@@ -208,13 +208,13 @@ typedef struct _KSAUDIOMODULE_NOTIFICATION {
 ```
 For more information, see:
 
- [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iportclsnotifications)
+ [IPortClsNotifications](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsnotifications)
 	
- [IPortClsNotifications::AllocNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsnotifications-allocnotificationbuffer)
+ [IPortClsNotifications::AllocNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-allocnotificationbuffer)
 
- [IPortClsNotifications::FreeNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsnotifications-freenotificationbuffer)	
+ [IPortClsNotifications::FreeNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-freenotificationbuffer)	
 	
- [IPortClsNotifications::SendNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportclsnotifications-sendnotification)	
+ [IPortClsNotifications::SendNotificationBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-sendnotification)	
 
 ### Calling Sequence
 

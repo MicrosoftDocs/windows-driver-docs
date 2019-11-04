@@ -1,6 +1,6 @@
 ---
-title: Remote NDIS (RNDIS)
-description: Remote NDIS (RNDIS)
+title: Introduction to Remote NDIS (RNDIS)
+description: Introduction to Remote NDIS (RNDIS)
 ms.assetid: 857cec9c-6098-4fd3-9528-fa592da997f4
 keywords:
 - Remote NDIS WDK networking
@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Remote NDIS (RNDIS)
+# Introduction to Remote NDIS (RNDIS)
 
 
 

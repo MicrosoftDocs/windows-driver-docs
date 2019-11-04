@@ -58,10 +58,3 @@ For more information about working with NatVis, see [Debugger Objects in NatVis]
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
-
- 
-
-
-
-
-

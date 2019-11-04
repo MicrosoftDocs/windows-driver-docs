@@ -23,9 +23,9 @@ ms.localizationpriority: medium
 
 
 
-To distinguish between color and noncolor (monochrome or grayscale) devices, Windows 2000 and later NT-based operating system versions call the [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities) function, passing the DC\_COLORDEVICE constant in the call. This function returns 1 if the device supports color, and 0 if the device produces monochrome or grayscale output. It is recommended that all printer drivers support calls to **DrvDeviceCapabilities** for the DC\_COLORDEVICE constant.
+To distinguish between color and noncolor (monochrome or grayscale) devices, Windows 2000 and later NT-based operating system versions call the [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function, passing the DC\_COLORDEVICE constant in the call. This function returns 1 if the device supports color, and 0 if the device produces monochrome or grayscale output. It is recommended that all printer drivers support calls to **DrvDeviceCapabilities** for the DC\_COLORDEVICE constant.
 
-It is very important for drivers to implement the [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities) function. Otherwise it is more difficult for the operating system to distinguish between color and noncolor devices, for the following reasons:
+It is very important for drivers to implement the [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function. Otherwise it is more difficult for the operating system to distinguish between color and noncolor devices, for the following reasons:
 
 -   A call to the **GetDeviceCaps** function (described in the Windows SDK documentation), in which the NUMCOLORS constant is passed, usually results in a return value less than or equal to 2 for most noncolor devices, and greater than 2 for color devices. The operating system is unable to distinguish between monochrome and grayscale devices.
 

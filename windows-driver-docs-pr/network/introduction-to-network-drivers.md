@@ -1,5 +1,5 @@
 ---
-title: Introduction to Network Drivers
+title: Introduction to Network Drivers Topics
 description: Introduction to Network Drivers
 ms.assetid: a3160487-666b-470d-a551-d04b0723d0e7
 keywords:
@@ -8,11 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Introduction to Network Drivers
-
-
-
-
+# Introduction to Network Drivers Topics
 
 This section discusses introductory concepts for kernel-mode network drivers and includes the following topics:
 

@@ -33,7 +33,7 @@ Drivers should follow these rules for specifying **StartType**:
 
 -   Non-*boot-start driver* that detects device(s) that are not PnP-enumerable
 
-    For a device that is not PnP-enumerable, a driver reports the device to the PnP manager by calling [**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioreportdetecteddevice). Such a driver should have the start type SERVICE_SYSTEM_START (0x01) so Windows will load the driver during system initialization.
+    For a device that is not PnP-enumerable, a driver reports the device to the PnP manager by calling [**IoReportDetectedDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice). Such a driver should have the start type SERVICE_SYSTEM_START (0x01) so Windows will load the driver during system initialization.
 
     Only drivers that report non-PnP hardware should set this start type. If a driver services both PnP and non-PnP devices, it should set this start type.
 

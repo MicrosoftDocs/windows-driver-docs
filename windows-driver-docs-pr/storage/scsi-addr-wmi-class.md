@@ -24,7 +24,7 @@ class SCSI_ADDR
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**SCSI\_ADDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_scsi_addr) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**SCSI\_ADDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_scsi_addr) data structure. There are no methods associated with this WMI class.
 
  
 

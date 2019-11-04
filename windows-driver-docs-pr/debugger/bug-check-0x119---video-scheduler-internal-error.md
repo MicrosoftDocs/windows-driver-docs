@@ -59,7 +59,9 @@ Parameter 1 is the only parameter of interest and identifies the exact violation
 </table>
 
  
+## Resolution
 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
  

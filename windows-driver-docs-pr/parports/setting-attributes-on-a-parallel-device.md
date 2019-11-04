@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 A client uses following device control requests to set the indicated operations of a parallel device:
 
--   [**IOCTL\_PAR\_SET\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_set_information) initializes a parallel device.
+-   [**IOCTL\_PAR\_SET\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_par_set_information) initializes a parallel device.
 
--   [**IOCTL\_SERIAL\_SET\_TIMEOUTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_set_timeouts) sets time outs for a parallel device.
+-   [**IOCTL\_SERIAL\_SET\_TIMEOUTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_set_timeouts) sets time outs for a parallel device.
 
--   [**IOCTL\_PAR\_SET\_READ\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_set_read_address) sets an ECP or EPP read address (channel) for a parallel device.
+-   [**IOCTL\_PAR\_SET\_READ\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_par_set_read_address) sets an ECP or EPP read address (channel) for a parallel device.
 
--   [**IOCTL\_PAR\_SET\_WRITE\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddpar/ni-ntddpar-ioctl_par_set_write_address) sets an ECP or EPP write address (channel) for a parallel device.
+-   [**IOCTL\_PAR\_SET\_WRITE\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_par_set_write_address) sets an ECP or EPP write address (channel) for a parallel device.
 
  
 

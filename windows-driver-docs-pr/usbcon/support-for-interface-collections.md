@@ -35,8 +35,8 @@ Some USB devices have interface collections that the USB Interface Association D
 
 For the generic parent driver to define custom interface collections, the vendor of the composite device must:
 
-1.  Implement the enumeration callback routine ([**USBC\_START\_DEVICE\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbbusif/nc-usbbusif-usbc_start_device_callback)).
-2.  Supply a pointer to the callback routine in the *USB device configuration interface* (**StartDeviceCallback** member of [**USBC\_DEVICE\_CONFIGURATION\_INTERFACE\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbbusif/ns-usbbusif-_usbc_device_configuration_interface_v1)).
+1.  Implement the enumeration callback routine ([**USBC\_START\_DEVICE\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbbusif/nc-usbbusif-usbc_start_device_callback)).
+2.  Supply a pointer to the callback routine in the *USB device configuration interface* (**StartDeviceCallback** member of [**USBC\_DEVICE\_CONFIGURATION\_INTERFACE\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_device_configuration_interface_v1)).
 3.  Provide an INF file that matches the device ID of the composite device and explicitly loads both the USB generic parent driver and the filter driver.
 
 ### Implementation Considerations
@@ -46,11 +46,11 @@ The filter driver that contains the enumeration callback routine can be either a
 
 On receiving an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request, the filter driver must check the GUID type in the **InterfaceType** member of the request to verify that the interface that is requested is of type USB\_BUS\_INTERFACE\_USBC\_CONFIGURATION\_GUID. If it is, the filter driver returns a pointer to the interface in the **Interface** member of the IRP.
 
-The enumeration callback routine must return a pointer to an array of *function descriptors* ([**USBC\_FUNCTION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbbusif/ns-usbbusif-_usbc_function_descriptor)) that describe the interface collections. Each function descriptor contains an array of interface descriptors ([**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_interface_descriptor)) that describe the interface collection. The callback routine must allocate both the function descriptors and the interface descriptors from non-paged pool. The generic parent driver releases this memory. The callback routine must ensure that the **NumberOfInterfaces** member of each **USB\_INTERFACE\_DESCRIPTOR** accurately reports the number of interfaces in the interface collection.
+The enumeration callback routine must return a pointer to an array of *function descriptors* ([**USBC\_FUNCTION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_function_descriptor)) that describe the interface collections. Each function descriptor contains an array of interface descriptors ([**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor)) that describe the interface collection. The callback routine must allocate both the function descriptors and the interface descriptors from non-paged pool. The generic parent driver releases this memory. The callback routine must ensure that the **NumberOfInterfaces** member of each **USB\_INTERFACE\_DESCRIPTOR** accurately reports the number of interfaces in the interface collection.
 
 The generic parent driver creates a physical device object (PDO) for each function descriptor.
 
-The USB device configuration interface and the enumeration callback routine is summarized in [Generic Parent Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#usbccgp).
+The USB device configuration interface and the enumeration callback routine is summarized in [Generic Parent Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#usbccgp).
 
 ### USB Generic Parent Driver Loading Mechanism
 
@@ -106,7 +106,7 @@ The following topics further describe the WMCDC:
 
 The USB wireless mobile communication device class (WMCDC) is a subclass of the USB communications device class (CDC). The WMCDC specification extends but does not substantially change the CDC guidelines for defining interface collections. In particular, WMCDC devices must comply with the CDC guidelines for defining interface collections.
 
-CDC interface collections contain a master interface ([**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_interface_descriptor)) that belongs to the communication interface class (`bInterfaceClass = 0x02`) or data interface class (`bInterfaceClass = 0x0A`). If the master interface belongs to the communication interface class (which is the typical situation), the subclass of the master interface (**bInterfaceSubClass**) specifies a CDC *control model*. The control model indicates the type of interfaces included in the interface collection. For a description of the control models that the USB Implementers Forum defines, see the CDC specification and the WMCDC specification.
+CDC interface collections contain a master interface ([**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor)) that belongs to the communication interface class (`bInterfaceClass = 0x02`) or data interface class (`bInterfaceClass = 0x0A`). If the master interface belongs to the communication interface class (which is the typical situation), the subclass of the master interface (**bInterfaceSubClass**) specifies a CDC *control model*. The control model indicates the type of interfaces included in the interface collection. For a description of the control models that the USB Implementers Forum defines, see the CDC specification and the WMCDC specification.
 
 The master interface of an interface collection is followed by a set of mandatory class-specific functional descriptors, including a union functional descriptor (UFD). The UFD lists the numbers of the interfaces that belong to the collection. The **bMasterInterface** field of the UFD contains the number of the master interface. Zero or more **bSubordinateInterface** fields contain the numbers of the other (subordinate) interfaces in the collection.
 

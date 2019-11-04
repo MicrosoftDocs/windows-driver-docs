@@ -42,14 +42,14 @@ Pointer to operating system-specific information.
 Return value
 ------------
 
-The miniclass driver's **DriverEntry** routine must return the value returned by the [**ChangerClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassinitialize) routine.
+The miniclass driver's **DriverEntry** routine must return the value returned by the [**ChangerClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassinitialize) routine.
 
 Remarks
 -------
 
 Parameters **Argument1** and **Argument2** point to operating system-specific information. A Miniclass driver should *not* attempt to interpret these parameters. Instead, it should pass these parameters to the **ChangerClassInitialize** routine.
 
-**ChangerClassInitialize** performs most of the initialization required by the miniclass driver. The principal task of the minidriver in its **DriverEntry** routine is to load the entry points to its command processing routines into an [**MCD\_INIT\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/ns-mcd-_mcd_init_data) structure and pass the address of this structure to the **ChangerClassInitialize** routine.
+**ChangerClassInitialize** performs most of the initialization required by the miniclass driver. The principal task of the minidriver in its **DriverEntry** routine is to load the entry points to its command processing routines into an [**MCD\_INIT\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/ns-mcd-_mcd_init_data) structure and pass the address of this structure to the **ChangerClassInitialize** routine.
 
 Requirements
 ------------
@@ -82,9 +82,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**ChangerClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassinitialize)
+[**ChangerClassInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassinitialize)
 
-[**MCD\_INIT\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/ns-mcd-_mcd_init_data)
+[**MCD\_INIT\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/ns-mcd-_mcd_init_data)
 
  
 

@@ -26,7 +26,7 @@ WDTF includes a simple query language to simplify the task of collecting targets
 
 The following sections within this topic describe how you can use SDEL.
 
-**Note**  For a complete list of all namespace tokens and the attribute tokens within them, see [SDEL Tokens](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+**Note**  For a complete list of all namespace tokens and the attribute tokens within them, see [SDEL Tokens](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
  
 
@@ -70,7 +70,7 @@ When there is more than one actual value (or an array) in the attribute, all of 
 
 ### Understanding Attribute Namespaces
 
-SDEL uses namespace tokens to group attributes. For a complete list of all namespace tokens and the attribute tokens within them, see [SDEL Tokens](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+SDEL uses namespace tokens to group attributes. For a complete list of all namespace tokens and the attribute tokens within them, see [SDEL Tokens](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 To use any attribute that is outside the root namespace, you must prefix the attribute with the namespace name and then two colons (::). The following VBScript code example displays the value of the Disk::IsRemovable attribute.
 
@@ -80,15 +80,15 @@ WScript.Echo "Is Removable?: " & DeviceObj.GetValue("Disk::IsRemovable")
 
 ### Examining a Target by Using GetValue and Eval
 
-The [**IWDTFTarget2::GetValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-getvalue) method lets you ask a target about its attributes. The following VBScript code example prints the value of the [FriendlyName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) attribute for a target.
+The [**IWDTFTarget2::GetValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getvalue) method lets you ask a target about its attributes. The following VBScript code example prints the value of the [FriendlyName](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) attribute for a target.
 
 ```cpp
 WScript.Echo "FriendlyName: " & Device.GetValue("FriendlyName")
 ```
 
-For a full list of attribute tokens, see [SDEL Tokens](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For a full list of attribute tokens, see [SDEL Tokens](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
-You can also use the [**IWDTFTarget2::Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-eval) method to evaluate an SDEL statement against a target. **Eval** returns **VARIANT\_TRUE** or **VARIANT\_FALSE**. The following VBScript code example uses **Eval** to determine if a device can be disabled.
+You can also use the [**IWDTFTarget2::Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-eval) method to evaluate an SDEL statement against a target. **Eval** returns **VARIANT\_TRUE** or **VARIANT\_FALSE**. The following VBScript code example uses **Eval** to determine if a device can be disabled.
 
 ```cpp
 If Device.Eval("IsDisableable=true") Then 
@@ -96,7 +96,7 @@ If Device.Eval("IsDisableable=true") Then
 End If
 ```
 
-You can also use [**Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-eval) to test for the presence of an attribute. When you pass **Eval** an attribute but no comparison operator or value, **Eval** will return **VARIANT\_TRUE** if the attribute or namespace holds any value (other than **VT\_EMPTY**). The following VBScript code example uses **Eval** to determine if the target has a SymbolicLink keyword.
+You can also use [**Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-eval) to test for the presence of an attribute. When you pass **Eval** an attribute but no comparison operator or value, **Eval** will return **VARIANT\_TRUE** if the attribute or namespace holds any value (other than **VT\_EMPTY**). The following VBScript code example uses **Eval** to determine if the target has a SymbolicLink keyword.
 
 ```cpp
 If Device.Eval("SymbolicLink") Then 
@@ -108,13 +108,13 @@ Additionally, attributes that are missing a comparison operator but contain a **
 
 ### Navigating Relationships
 
-Testing often involves examining what happens when related devices change state. For example, when a USB hub is disabled, do the devices that are attached to it handle the state change properly? Additionally, you might want to locate a device based on information in related devices. To support this functionality, SDEL includes a way to specify one or more logical relationships before any attribute or namespace (but not after either of them). Relation tokens are separated from the attribute or namespace by a forward-slash (/). The following VBScript code example prints the value of the [FriendlyName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) attribute for the parent device of a target.
+Testing often involves examining what happens when related devices change state. For example, when a USB hub is disabled, do the devices that are attached to it handle the state change properly? Additionally, you might want to locate a device based on information in related devices. To support this functionality, SDEL includes a way to specify one or more logical relationships before any attribute or namespace (but not after either of them). Relation tokens are separated from the attribute or namespace by a forward-slash (/). The following VBScript code example prints the value of the [FriendlyName](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) attribute for the parent device of a target.
 
 ```cpp
 WScript.Echo "FriendlyName: " & Device.GetValue("parent/FriendlyName")
 ```
 
-You can also combine relation modifiers. The following VBScript code example prints the value of the [FriendlyName](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) attribute of the grandparent device of the target object.
+You can also combine relation modifiers. The following VBScript code example prints the value of the [FriendlyName](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) attribute of the grandparent device of the target object.
 
 ```cpp
 WScript.Echo "FriendlyName: " & Device.GetValue("parent/parent/FriendlyName")
@@ -122,27 +122,27 @@ WScript.Echo "FriendlyName: " & Device.GetValue("parent/parent/FriendlyName")
 
 Sometimes, devices have many-to-many relationships. For example, a logical storage volume might reside on many physical disks, and those individual disks might contribute space to many volumes.
 
-Within WDTF, all non-phantom devices (that is, physically present devices) are descendants of the root device (which you can retrieve from the [**RootDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtfdevicedepot2-get_rootdevice) property). (For more information about phantom devices, see [Creating WDTF Scenarios](creating-wdtf-scenarios.md).)
+Within WDTF, all non-phantom devices (that is, physically present devices) are descendants of the root device (which you can retrieve from the [**RootDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtfdevicedepot2-get_rootdevice) property). (For more information about phantom devices, see [Creating WDTF Scenarios](creating-wdtf-scenarios.md).)
 
 ### Collecting Targets by Using GetRelations
 
-The following illustration shows the [**IWDTFTarget2::GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-getrelations) method.
+The following illustration shows the [**IWDTFTarget2::GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getrelations) method.
 
 ![diagram illustrating the target::getrelations method](images/wdtf-getrelations.gif)
 
-The [**IWDTFTarget2::GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-getrelations) method accepts only the relation specifier portion of the SDEL statement syntax and returns an [**IWDTFTargets2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nn-wdtf-iwdtftargets2) collection interface that contains all of the targets that meet the relationship criteria. The following VBScript code example returns a collection that contains the original target and all of its siblings.
+The [**IWDTFTarget2::GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getrelations) method accepts only the relation specifier portion of the SDEL statement syntax and returns an [**IWDTFTargets2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2) collection interface that contains all of the targets that meet the relationship criteria. The following VBScript code example returns a collection that contains the original target and all of its siblings.
 
 ```cpp
 Set TestDevices = Device.GetRelations("parent/child/", "")
 ```
 
-The second parameter for [**GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-getrelations) can optionally include a statement to be passed to the [**Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-eval) method of each target that meets the specific relationship. For example, if you add *IsDisableable=true* as the second parameter, the preceding code example would return only the device and its siblings that can be disabled.
+The second parameter for [**GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getrelations) can optionally include a statement to be passed to the [**Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-eval) method of each target that meets the specific relationship. For example, if you add *IsDisableable=true* as the second parameter, the preceding code example would return only the device and its siblings that can be disabled.
 
 If there are no matches, a collection with zero items is returned.
 
 ### Collecting Targets by Using Query
 
-The [**IWDTFDeviceDepot2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nn-wdtf-iwdtfdevicedepot2) interface contains a **Query** method. This method takes an SDEL statement that is designed for the [**IWDTFTarget2::Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-eval) method and returns a new instance of the [**IWDTFTargets2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nn-wdtf-iwdtftargets2) collection interface that contains a subset of the targets that meet the criteria of the query. The following VBScript code example enumerates all non-phantom devices and shows the friendly name for each device.
+The [**IWDTFDeviceDepot2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfdevicedepot2) interface contains a **Query** method. This method takes an SDEL statement that is designed for the [**IWDTFTarget2::Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-eval) method and returns a new instance of the [**IWDTFTargets2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2) collection interface that contains a subset of the targets that meet the criteria of the query. The following VBScript code example enumerates all non-phantom devices and shows the friendly name for each device.
 
 ```cpp
 For Each Device In WDTF.DeviceDepot.Query("IsPhantom=false")
@@ -150,11 +150,11 @@ For Each Device In WDTF.DeviceDepot.Query("IsPhantom=false")
 Next
 ```
 
-The returned collection has the [**IWDTFTargets2::Query**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftargets2-query) method, which has an identical implementation to **IWDTFDeviceDepot2::Query**. **IWDTFTargets2::Query** returns a subset of targets from the original collection that meets the SDEL statement.
+The returned collection has the [**IWDTFTargets2::Query**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftargets2-query) method, which has an identical implementation to **IWDTFDeviceDepot2::Query**. **IWDTFTargets2::Query** returns a subset of targets from the original collection that meets the SDEL statement.
 
 ### Boolean Logic in SDEL
 
-The [**IWDTFTarget2::GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-getrelations) method can accept only the Boolean **OR** operator, but your calls to the [**IWDTFTargets2::Query**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftargets2-query), [**IWDTFTarget2::Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-eval), and [**IWDTFTarget2::GetValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nf-wdtf-iwdtftarget2-getvalue) methods can use Boolean **AND** and **OR** operators. For the **Query** method and **Eval** method, the operators will act like normal Boolean operators, returning the result as expected. However, for the **GetValue** method, **AND** will compose the values on both sides of itself, and **OR** will return only the first value that is found (starting with the left).
+The [**IWDTFTarget2::GetRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getrelations) method can accept only the Boolean **OR** operator, but your calls to the [**IWDTFTargets2::Query**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftargets2-query), [**IWDTFTarget2::Eval**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-eval), and [**IWDTFTarget2::GetValue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getvalue) methods can use Boolean **AND** and **OR** operators. For the **Query** method and **Eval** method, the operators will act like normal Boolean operators, returning the result as expected. However, for the **GetValue** method, **AND** will compose the values on both sides of itself, and **OR** will return only the first value that is found (starting with the left).
 
 ### Parentheses in SDEL
 

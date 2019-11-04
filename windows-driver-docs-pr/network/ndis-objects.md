@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-Components that do not have an NDIS handle use the [**NdisAllocateGenericObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocategenericobject) function to allocate a generic NDIS object. A component must call the [**NdisFreeGenericObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreegenericobject) function to free a generic object that was created with **NdisAllocateGenericObject**.
+Components that do not have an NDIS handle use the [**NdisAllocateGenericObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocategenericobject) function to allocate a generic NDIS object. A component must call the [**NdisFreeGenericObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreegenericobject) function to free a generic object that was created with **NdisAllocateGenericObject**.
 
 For information about using generic objects, see [Obtaining Pool Handles](obtaining-pool-handles.md).
 

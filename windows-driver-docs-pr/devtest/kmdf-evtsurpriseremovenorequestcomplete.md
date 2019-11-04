@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # EvtSurpriseRemoveNoRequestComplete rule (kmdf)
 
 
-The **EvtSurpriseRemoveNoRequestComplete** rule specifies that WDF drivers shouldn’t complete requests from [*EvtDeviceSurpriseRemoval*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal) callback, instead self-managed I/O callback functions should be used. *EvtDeviceSurpriseRemoval* callback isn’t synchronized with the power-down path.
+The **EvtSurpriseRemoveNoRequestComplete** rule specifies that WDF drivers shouldn’t complete requests from [*EvtDeviceSurpriseRemoval*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal) callback, instead self-managed I/O callback functions should be used. *EvtDeviceSurpriseRemoval* callback isn’t synchronized with the power-down path.
 
 |              |      |
 |--------------|------|
@@ -51,9 +51,9 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**WdfRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestcomplete)
-[**WdfRequestCompleteWithInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation)
-[**WdfRequestCompleteWithPriorityBoost**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost)
+[**WdfRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete)
+[**WdfRequestCompleteWithInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation)
+[**WdfRequestCompleteWithPriorityBoost**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost)
  
 
  

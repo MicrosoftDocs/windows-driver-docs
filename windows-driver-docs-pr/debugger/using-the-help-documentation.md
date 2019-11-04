@@ -37,7 +37,7 @@ To search for phrases that contain more than one word, enclose the phrase in quo
 
 Note that "AND NOT" is invalid. To search for topics that contain *x* and not *y*, use "*x* NOT *y*". You can also use NEAR in searches.
 
-Wildcard characters are also permitted. Use a question mark (**?**) to represent any single character and an asterisk (**\\***) to represent zero or more characters. However, you cannot use wildcard characters within quoted strings.
+Wildcard characters are also permitted. Use a question mark (**?**) to represent any single character and an asterisk (**\***) to represent zero or more characters. However, you cannot use wildcard characters within quoted strings.
 
 All letters and numbers are treated literally, but some symbols are not permitted in searches.
 

@@ -6,7 +6,9 @@ ms.localizationpriority: medium
 ---
 
 # TTD Range Objects
+
 ## Description
+
 *TTD Range* objects are used to give information about a range of time in a trace. These are generally used to describe the lifetime of a [TTD thread object](time-travel-debugging-thread-objects.md) during a TTD session.
 
 ## Children
@@ -21,14 +23,9 @@ ms.localizationpriority: medium
 
 *Information pending*
 
-
-
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
 

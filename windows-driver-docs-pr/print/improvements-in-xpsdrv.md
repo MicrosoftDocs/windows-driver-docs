@@ -28,13 +28,13 @@ The XPS Rasterization Service can also provide rasterization in several pixel fo
 
 ## IPrintCoreHelperUni2
 
-The [IPrintCoreHelperUni2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni2) interface was introduced in Windows 8 to support the retrieval of command strings from GPD files. The interface is identical to [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni), except for the additional **GetNamedCommand** method.
+The [IPrintCoreHelperUni2](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni2) interface was introduced in Windows 8 to support the retrieval of command strings from GPD files. The interface is identical to [IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni), except for the additional **GetNamedCommand** method.
 
 ## Related topics
 
-[IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni)  
+[IPrintCoreHelperUni](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni)  
 
-[IPrintCoreHelperUni2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelperuni2)  
+[IPrintCoreHelperUni2](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni2)  
 
 [Microsoft Xml Paper Specification 1.0](https://docs.microsoft.com/en-us/previous-versions/windows/hardware/design/dn614032(v=vs.85))  
 

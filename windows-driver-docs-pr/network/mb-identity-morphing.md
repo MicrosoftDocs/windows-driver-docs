@@ -1,12 +1,12 @@
 ---
-title: MB identity morphing
-description: Describes identity morphing for MB device drivers
+title: Introduction to MB identity morphing
+description: Introduction to Describes identity morphing for MB device drivers
 ms.assetid: 7AA14A5E-47AA-4A9A-94A4-769F374EA465
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# MB Identity Morphing
+# Introduction to MB Identity Morphing
 
 
 ## Identity Morphing

@@ -84,7 +84,7 @@ While USSD, EAP-SIM, and multiple PDP contexts are supported by the mobile broad
 
 Additional device functionality can be implemented using custom device service extensions, which will be exposed directly to the mobile broadband app through the WinRT Device Services API.
 
-For more information on the mobile broadband class driver, see [Mobile Broadband (MB) Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/).
+For more information on the mobile broadband class driver, see [Mobile Broadband (MB) Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
 ### <span id="Device_service_extension_API"></span><span id="device_service_extension_api"></span><span id="DEVICE_SERVICE_EXTENSION_API"></span>Device service extension API
 
@@ -197,7 +197,7 @@ For more info about the APN database, see [APN database overview](apn-database-o
 
 Certain operators require that mobile broadband-enabled systems be locked to its network or have requirements to unlock a locked device to allow for service portability. To enable this scenario, we require the OEM’s and device vendors use MBIM\_PIN\_TYPE guidance in the MBIM Specification for Subsidy Lock.
 
-The device must report [**WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_ready_info):: [**ReadyState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ne-wwan-_wwan_ready_state)=**WwanReadyStateInitialized** in this locked state and should not report **WwanReadyStateDeviceLocked**.
+The device must report [**WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info):: [**ReadyState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_ready_state)=**WwanReadyStateInitialized** in this locked state and should not report **WwanReadyStateDeviceLocked**.
 
 **Note**  
 There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.

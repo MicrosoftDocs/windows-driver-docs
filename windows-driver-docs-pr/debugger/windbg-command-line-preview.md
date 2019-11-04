@@ -74,6 +74,7 @@ Option | Description
 |          -z *DumpFile*           |                                                                    Specifies the name of a crash dump file to debug. If the path and file name contain spaces, this must be surrounded by quotation marks.                                                                    |
 | -openPrivateDumpByHandle *Handle* |                                                                                             *Microsoft internal use only*. Specifies the handle of a crash dump file to debug.                                                                                               |
 |    -debugArch x86 -or- amd64     |                                                                                                 Override the autodetect behavior and set the target bitness for the debugger.                                                                                                 |
+|            executable            | Specifies the command line of an executable process. This is used to launch a new process and debug it. This has to be the final item on the command line. All text after the executable name is passed to the executable as its argument string.                             |
 
 **Symbol Options**
 

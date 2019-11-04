@@ -37,7 +37,8 @@ The VIDEO\_ENGINE\_TIMEOUT\_DETECTED bug check has a value of 0x00000141. This i
 Remarks
 -------
 
-Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use .enumtag to view the data.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-enumtag--enumerate-secondary-callback-data-) to view the data.
 
  
 

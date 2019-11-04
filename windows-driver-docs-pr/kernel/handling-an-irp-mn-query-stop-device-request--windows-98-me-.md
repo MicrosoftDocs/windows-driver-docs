@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-An [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-stop-device) request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles stop IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+An [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-stop-device) request is handled first by the top driver in the device stack and then by each next lower driver. A driver handles stop IRPs in its [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the following:
 
@@ -33,9 +33,9 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
 2.  If the device cannot be stopped, fail the query-stop IRP.
 
-    Set **Irp-&gt;IoStatus.Status** to an appropriate error status, call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) with IO\_NO\_INCREMENT, and return from the driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine. Do not pass the IRP to the next lower driver.
+    Set **Irp-&gt;IoStatus.Status** to an appropriate error status, call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) with IO\_NO\_INCREMENT, and return from the driver's [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine. Do not pass the IRP to the next lower driver.
 
-3.  If the device can be stopped, call [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) and [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterdeviceinterface) to disable and deregister any user-mode interfaces. Then start failing any incoming I/O requests that require access to the device.
+3.  If the device can be stopped, call [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) and [**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) to disable and deregister any user-mode interfaces. Then start failing any incoming I/O requests that require access to the device.
 
     Alternatively, the drivers for a device can defer completely pausing the device until the drivers receive the subsequent **IRP\_MN\_STOP\_DEVICE** request. Such drivers, however, should disable and deregister their user-mode interfaces while handling the query-stop request to prevent the opening of any additional handles to the device.
 
@@ -51,19 +51,19 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
     One way that a driver can achieve this is to use a reference count and an event to ensure that all requests have been completed:
 
-    -   In its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine, the driver defines an I/O reference count in the device extension and initializes the count to one.
+    -   In its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, the driver defines an I/O reference count in the device extension and initializes the count to one.
 
-    -   Also in its *AddDevice* routine, the driver creates an event with [**KeInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keinitializeevent) and initializes the event to the Not-Signaled state with [**KeClearEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keclearevent).
+    -   Also in its *AddDevice* routine, the driver creates an event with [**KeInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializeevent) and initializes the event to the Not-Signaled state with [**KeClearEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keclearevent).
 
-    -   Each time it processes an IRP, the driver increments the reference count with [**InterlockedIncrement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedincrement).
+    -   Each time it processes an IRP, the driver increments the reference count with [**InterlockedIncrement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-interlockedincrement).
 
-    -   Each time it completes a request, the driver decrements the reference count with [**InterlockedDecrement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockeddecrement).
+    -   Each time it completes a request, the driver decrements the reference count with [**InterlockedDecrement**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-interlockeddecrement).
 
-        The driver decrements the reference count in the [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine, if the request has one, or immediately after the call to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) if the driver uses no *IoCompletion* routine for the request.
+        The driver decrements the reference count in the [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, if the request has one, or immediately after the call to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) if the driver uses no *IoCompletion* routine for the request.
 
     -   When the driver receives an **IRP\_MN\_QUERY\_STOP\_DEVICE**, it decrements the reference count with **InterlockedDecrement**. If there are no outstanding requests, this reduces the reference count to zero.
 
-    -   When the reference count reaches zero, the driver sets the event with [**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesetevent) signaling that the query-stop code can continue.
+    -   When the reference count reaches zero, the driver sets the event with [**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetevent) signaling that the query-stop code can continue.
 
     As an alternative to the above procedure, a driver can serialize the **IRP\_MN\_QUERY\_STOP\_DEVICE** IRP behind any IRPs in progress.
 
@@ -77,7 +77,7 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP to the next lower driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
+    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP to the next lower driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
     -   Propagate the status from **IoCallDriver** as the return status from the *DispatchPnP* routine.
 
@@ -89,7 +89,7 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
         If, however, the devices on the bus use hardware resources, reevaluate the resource requirements of the bus and the child devices. If any of the requirements have changed, return STATUS\_RESOURCE\_REQUIREMENTS\_CHANGED instead of STATUS\_SUCCESS. This status indicates success but requests that the PnP manager requery your resources before sending the stop IRP.
 
-    -   Complete the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest)) with IO\_NO\_INCREMENT.
+    -   Complete the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) with IO\_NO\_INCREMENT.
 
     -   Return from the *DispatchPnP* routine.
 

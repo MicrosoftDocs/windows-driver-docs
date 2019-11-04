@@ -28,7 +28,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                         | Description                            |
 |--------------------------------------------------------------|----------------------------------------|
-| [**WDI\_P2P\_LISTEN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_p2p_listen_state) | The desired Wi-Fi Direct listen state. |
+| [**WDI\_P2P\_LISTEN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_listen_state) | The desired Wi-Fi Direct listen state. |
 
  
 

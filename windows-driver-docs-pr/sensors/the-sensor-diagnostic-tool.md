@@ -20,6 +20,8 @@ ms.localizationpriority: medium
 
 # Testing sensor functionality with the Sensor Diagnostic Tool
 
+> [!IMPORTANT]
+> The Sensor Diagnostic Tool was used with previous versions of Windows. Microsoft recommends using the [SensorExplorer](https://www.microsoft.com/p/sensorexplorer/9pgl3xpq1tpx?activetab=pivot:overviewtab) to verify the installation of supported sensors. 
 
 Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
 
@@ -45,7 +47,6 @@ The following image shows the Sensor Diagnostic Tool startup screen when several
 In this case, the Sensor Diagnostic Tool detected the presence of a collection of HID sensors as well as a simple device orientation sensor, the Windows Location provider, and a Geolocation Sensor which is supported by the Geolocation driver sample.
 
 ## Support for Ambient Light Sensors
-
 
 The Sensor Diagnostic Tool includes support for ambient light sensors (ALS). The current display brightness is reported in the SB% box in the tool's upper left corner.
 

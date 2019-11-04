@@ -19,9 +19,9 @@ To create a Hyper-V Extensible Switch extension, follow these steps:
 
 1.  Learn the extension architecture and programming model.
     -   Read the online documentation for NDIS-based extensions, beginning with [Hyper-V Extensible Switch](hyper-v-extensible-switch.md). Capture, filtering, and forwarding extensions use the standard NDIS filtering API. The NDIS interfaces have been enhanced to provide configuration, notifications, and identification of virtual switches and virtual machines.
-        [Hyper-V Extensible Switch Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
-        [Hyper-V Extensible Switch Enumerations](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/index)
-        [Hyper-V Extensible Switch Structures and Unions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)
+        [Hyper-V Extensible Switch Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+        [Hyper-V Extensible Switch Enumerations](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/index)
+        [Hyper-V Extensible Switch Structures and Unions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
         [Hyper-V Extensible Switch OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-oids)
         [Hyper-V Extensible Switch Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-status-indications)
         [Hyper-V Extensible Switch Macros](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch-macros)

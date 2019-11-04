@@ -34,7 +34,7 @@ If you built your driver using a version of the KMDF library that is more recent
 
 When you build your driver, the MSBuild utility links the driver with a stub file that contains the version number of the library that the MSBuild utility used. When the operating system loads your driver, the framework's loader checks the version information in your driver's stub to determine if the driver will run with the version of the framework library that is on the system.
 
-To determine the version of the library that your driver is running with, the driver can call [**WdfDriverIsVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverisversionavailable) or [**WdfDriverRetrieveVersionString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrieveversionstring).
+To determine the version of the library that your driver is running with, the driver can call [**WdfDriverIsVersionAvailable**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverisversionavailable) or [**WdfDriverRetrieveVersionString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverretrieveversionstring).
 
 WDF allows you to build a driver using a different version of Windows than the one that the driver will run on.  For more info, see [Building a WDF driver for multiple versions of Windows](https://docs.microsoft.com/windows-hardware/drivers/wdf/building-a-wdf-driver-for-multiple-versions-of-windows).
 

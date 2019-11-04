@@ -103,7 +103,7 @@ For example, if your GPD file contains the following directive:
 *SetPPPrefix: #SpecialPrefix#
 ```
 
-then the preprocessor stops searching for preprocessor directives that begin with **\\*** and instead looks for directives beginning with **\#SpecialPrefix\#**. The following sequence temporarily changes the preprocessor prefix to **\#SpecialPrefix\#**, then restores it to **\\***.
+then the preprocessor stops searching for preprocessor directives that begin with **\*** and instead looks for directives beginning with **\#SpecialPrefix\#**. The following sequence temporarily changes the preprocessor prefix to **\#SpecialPrefix\#**, then restores it to **\***.
 
 ```cpp
 *SetPPPrefix: #SpecialPrefix#

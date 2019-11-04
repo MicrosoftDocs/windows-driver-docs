@@ -272,13 +272,15 @@
         href: uaa-class-drivers.md
       - name: "Communicating Verbs with the HD Audio Codec"
         href: communicating-verbs-with-the-hd-audio-codec.md
-    - name: "Programming Guidelines"
-# Auto-expanded node
+    - name: "HD Audio DDI Programming Guidelines"
+      href: programming-guidelines.md
       items: 
       - name: "Programming Guidelines"
         href: programming-guidelines.md
       - name: "Differences Between the HD Audio DDI Versions"
         href: differences-between-the-hd-audio-ddi-versions.md
+      - name: "Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations"
+        href: managing-memory-buffers-rebalance.md
       - name: "Synchronous and Asynchronous Codec Commands"
         href: synchronous-and-asynchronous-codec-commands.md
       - name: "Wall Clock and Link Position Registers"
@@ -325,6 +327,8 @@
       href: configure-and-query-audiodevicemodules.md
   - name: "Low Latency Audio"
     href: low-latency-audio.md
+  - name: "Multiple Voice Assistant"
+    href: voice-activation-mva.md
   - name: "Voice Activation"
     href: voice-activation.md
   - name: "USB Audio 2.0 Drivers"
@@ -472,8 +476,6 @@
     href: audio-processing-object-architecture.md
   - name: "Implementing Audio Processing Objects"
     href: implementing-audio-processing-objects.md
-  - name: "Implementing a UI for Configuring APO Effects"
-    href: implementing-a-ui-for-configuring-apo-effects.md
   - name: "Implementing Hardware Offloaded APO Effects"
     href: implementing-hardware-offloaded-apo-effects.md
   - name: "Windows Default APOs"
@@ -934,6 +936,8 @@
       href: kspropsetid-rtaudio.md
     - name: "KSPROPSETID_SoundDetector"
       href: kspropsetid-sounddetector.md
+    - name: "KSPROPSETID_SoundDetector2"
+      href: kspropsetid-sounddetector2.md
     - name: "KSPROPSETID_Synth"
       href: kspropsetid-synth.md
     - name: "KSPROPSETID_SynthClock"
@@ -1469,6 +1473,10 @@
       href: ksproperty-sounddetector-matchresult.md
     - name: "KSPROPERTY_SOUNDDETECTOR_PATTERNS"
       href: ksproperty-sounddetector-patterns.md
+    - name: "KSPROPERTY_SOUNDDETECTOR_RESET"
+      href: ksproperty-sounddetector-reset.md
+    - name: "KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT"
+      href: ksproperty-sounddetector-streamingsupport.md
     - name: "KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS"
       href: ksproperty-sounddetector-supportedpatterns.md
     - name: "KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE"

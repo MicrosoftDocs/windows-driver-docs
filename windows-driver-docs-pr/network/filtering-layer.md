@@ -17,7 +17,7 @@ When a [filter](filter.md) is added to the filter engine, it is added at a desig
 
 [Run-time Filtering Layer Identifiers](https://docs.microsoft.com/windows-hardware/drivers/network/run-time-filtering-layer-identifiers) (FWPS\_*XXX*) are used by kernel-mode callout drivers. [Management Filtering Layer Identifiers](https://docs.microsoft.com/windows-hardware/drivers/network/management-filtering-layer-identifiers) (FWPM\_*XXX*) are used by **Fwpm<em>Xxx</em>** functions that interact with the Base Filtering Engine (BFE) from either user mode or kernel mode (for example, [**FwpmFilterAdd0**](https://docs.microsoft.com/windows/desktop/api/fwpmu/nf-fwpmu-fwpmfilteradd0)).
 
-The FWPS data types are smaller than their FWPM counterparts: the FWPM filtering layer identifiers are GUIDs (128 bits), whereas the FWPS filtering layer identifiers are [**LUIDs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid)(64 bits). The smaller size for FWPS data types improves system performance because integer comparisons are faster than GUID comparisons for real-time traffic, and the kernel memory handles FWPS types more efficiently.
+The FWPS data types are smaller than their FWPM counterparts: the FWPM filtering layer identifiers are GUIDs (128 bits), whereas the FWPS filtering layer identifiers are [**LUIDs**](https://docs.microsoft.com/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid)(64 bits). The smaller size for FWPS data types improves system performance because integer comparisons are faster than GUID comparisons for real-time traffic, and the kernel memory handles FWPS types more efficiently.
 
  
 

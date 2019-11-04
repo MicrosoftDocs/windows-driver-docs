@@ -33,7 +33,7 @@ Displays only the allocations with the specified pool tag. You can have multiple
 Excludes allocations with the specified tag from the display. You can have multiple **/x** parameters in a PoolMon command. Do not type a space between the **/x** and the *Tag* argument.
 
 <span id="_______Tag______"></span><span id="_______tag______"></span><span id="_______TAG______"></span> *Tag*   
-Specifies a pool tag or pool tag pattern. Pool tags are case-sensitive. The *Tag* argument can include an asterisk (**\\***) to represent zero or more instances of any character, or a question mark (*<em>?</em>*) to represent one instance of any character. Do not begin a tag with an asterisk.
+Specifies a pool tag or pool tag pattern. Pool tags are case-sensitive. The *Tag* argument can include an asterisk (**\***) to represent zero or more instances of any character, or a question mark (*<em>?</em>*) to represent one instance of any character. Do not begin a tag with an asterisk.
 
 <span id="________c______"></span><span id="________C______"></span> **/c**   
 Adds a column to the display (Mapped\_Driver) listing the drivers on the local computer that use each pool tag. This feature is supported only on 32-bit versions of Windows.

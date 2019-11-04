@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Registering and Deregistering an Operation Region Handler
 
 
-An ACPI device function driver registers an operation region handler by calling [**RegisterOpRegionHandler**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/oprghdlr/nf-oprghdlr-registeropregionhandler) and supplying the following information:
+An ACPI device function driver registers an operation region handler by calling [**RegisterOpRegionHandler**](https://docs.microsoft.com/windows-hardware/drivers/ddi/oprghdlr/nf-oprghdlr-registeropregionhandler) and supplying the following information:
 
 -   The physical device object (PDO) representing the ACPI device that defines the operation region.
 
@@ -40,7 +40,7 @@ An ACPI device function driver registers an operation region handler by calling 
 
 Typically, a driver registers an operation region handler in the driver's Plug and Play dispatch routine after it starts an FDO in response to an [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request. The driver must register the handler after it allocates the handler's operation region context. If the driver creates a vendor-defined device interface, the driver should enable the device interface after it registers the handler.
 
-An ACPI device function driver deregisters an operation region handler by calling [**DeRegisterOpRegionHandler**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/oprghdlr/nf-oprghdlr-deregisteropregionhandler) and supplying the following information:
+An ACPI device function driver deregisters an operation region handler by calling [**DeRegisterOpRegionHandler**](https://docs.microsoft.com/windows-hardware/drivers/ddi/oprghdlr/nf-oprghdlr-deregisteropregionhandler) and supplying the following information:
 
 -   The PDO that represents the ACPI device that defines the operation region.
 

@@ -68,7 +68,7 @@ The minidriver must verify the data's integrity and check that the data block si
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier), [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md)
+[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier), [CODECAPI\_CURRENTCHANGELIST](codecapi-currentchangelist.md)
 
  
 

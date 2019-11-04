@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_AUTH\_RESPONSE notification to info
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This NDIS status notification uses the [NDIS\_WWAN\_AUTH\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response) structure.
+This NDIS status notification uses the [NDIS\_WWAN\_AUTH\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response) structure.
 
 Requirements
 ------------
@@ -42,7 +42,7 @@ Requirements
 
 [OID\_WWAN\_AUTH\_CHALLENGE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-auth-challenge)
 
-[NDIS\_WWAN\_AUTH\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response)
+[NDIS\_WWAN\_AUTH\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_auth_response)
 
  
 

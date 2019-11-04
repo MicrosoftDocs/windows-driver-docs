@@ -158,7 +158,7 @@ Indicates a driver started during operating system initialization.
 
 This value should be used by PnP drivers that do device detection during initialization but are not required to load the system.
 
-For example, a PnP driver that can also detect a legacy device should specify this value in its INF so that its [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine is called to find the legacy device, even if that device cannot be enumerated by the PnP manager.
+For example, a PnP driver that can also detect a legacy device should specify this value in its INF so that its [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine is called to find the legacy device, even if that device cannot be enumerated by the PnP manager.
 
 <a href="" id="0x2--service-auto-start-"></a>**0x2** (SERVICE_AUTO_START)  
 Indicates a driver started by the service control manager during system startup.

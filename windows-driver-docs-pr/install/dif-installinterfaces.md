@@ -96,7 +96,7 @@ Unless the DI_NOFILECOPY flag is set, an installer that handles this DIF request
 
 If the DI_NOFILECOPY flag is clear but the DI_NOVCP flag is set, the installer must enqueue any file operations to the supplied file queue but must not commit the queue.
 
-If an installer registers a device interface, a kernel-mode component for the device (for example, a driver) must call [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetdeviceinterfacestate) to enable the interface.
+If an installer registers a device interface, a kernel-mode component for the device (for example, a driver) must call [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) to enable the interface.
 
 If the installer returns a Win32 error code, Windows stops the installation.
 

@@ -19,7 +19,7 @@ When handling a GUID\_TARGET\_DEVICE\_REMOVE\_COMPLETE event, a notification cal
 
 -   Remove notification registration on the device.
 
-    The device has been removed, so the driver calls [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iounregisterplugplaynotification) to remove the notification registration.
+    The device has been removed, so the driver calls [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification) to remove the notification registration.
 
     The device may still be physically present on the machine, but all device objects have been deleted and the device is not available for use.
 

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 The **FSCTL\_INVALIDATE\_VOLUMES** control code finds and removes all the volumes mounted on the device represented by the specified file object or handle.
 
-To perform this operation, minifilter drivers call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile), and file systems, redirectors, and legacy file system filter drivers call [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462), using the following parameters.
+To perform this operation, minifilter drivers call [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile), and file systems, redirectors, and legacy file system filter drivers call [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462), using the following parameters.
 
 **Parameters**
 
@@ -48,7 +48,7 @@ Not used with this operation; set to zero.
 Status block
 ------------
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) return STATUS\_SUCCESS if the operation succeeds or an appropriate NTSTATUS value.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) return STATUS\_SUCCESS if the operation succeeds or an appropriate NTSTATUS value.
 
 Remarks
 -------
@@ -76,7 +76,7 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltfscontrolfile)
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
 [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
 

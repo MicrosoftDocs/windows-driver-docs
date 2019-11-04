@@ -72,7 +72,7 @@ class MPIO_TIMERS_COUNTERS
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_TIMERS\_COUNTERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_mpio_timers_counters) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_TIMERS\_COUNTERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_timers_counters) data structure. There are no methods associated with this WMI class.
 
  
 

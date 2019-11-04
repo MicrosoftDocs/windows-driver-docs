@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 Clients use the properties in the KSPROPSETID\_Pin property set to query a KS filter For information about each pin factory that it supports.
 
-The [**KSPROPERTY\_PIN\_CTYPES**](ksproperty-pin-ctypes.md) property specifies how many pin factories the KS filter supports. All other properties in this property set specify information about an individual pin factory. The KS filter identifies each pin factory by an ID, which ranges from zero to the number of pin factories minus one. The client includes the pin factory T within the [**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin) structure that it uses when it issues the property request.
+The [**KSPROPERTY\_PIN\_CTYPES**](ksproperty-pin-ctypes.md) property specifies how many pin factories the KS filter supports. All other properties in this property set specify information about an individual pin factory. The KS filter identifies each pin factory by an ID, which ranges from zero to the number of pin factories minus one. The client includes the pin factory T within the [**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) structure that it uses when it issues the property request.
 
 The KSPROPSETID\_Pin property set includes:
 

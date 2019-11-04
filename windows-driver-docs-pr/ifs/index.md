@@ -10,7 +10,7 @@ ms.technology: windows-devices
 
 # File systems driver design guide
 
-This section of the WDK provides conceptual information related to file systems and filter drivers (minifilters). For information about programming interfaces that your driver can implement or call, see the [File System Programming Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_ifsk/).
+This section of the WDK provides conceptual information related to file systems and filter drivers (minifilters). For information about programming interfaces that your driver can implement or call, see the [File System Programming Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_ifsk/).
 
 The file systems in Windows are implemented as file system drivers working above the storage system. Each of the file systems in Windows are designed to provide reliable data storage with varying features to meet the user’s requirements. A comparison of features for each of the standard file systems in Windows is shown in [File System Functionality Comparison](https://docs.microsoft.com/windows/desktop/FileIO/filesystem-functionality-comparison). New for Windows Server 2012 is ReFS. ReFS is a file system with scalable large volume support and the ability detect and correct data corruption on disk.
 

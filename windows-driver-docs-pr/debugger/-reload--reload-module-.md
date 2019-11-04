@@ -39,7 +39,7 @@ Forces the debugger to immediately load the symbols. This parameter overrides *l
 Ignores a mismatch in the .pdb file versions. (If you do not include this parameter, the debugger does not load mismatched symbol files.) When you use **/i**, **/f** is used also, even if you do not explicitly specify it.
 
 <span id="_l"></span><span id="_L"></span>**/l**  
-Lists the modules but does not reload their symbols. (In kernel mode, this parameter gives the same output as the [**!drivers**](-drivers.md) extension.)
+Lists the modules but does not reload their symbols. (In kernel mode, this parameter provides output similar to the [**lm**](lm--list-loaded-modules-.md) command.)
 
 <span id="_n"></span><span id="_N"></span>**/n**  
 Reloads kernel symbols only. This parameter does not reload any user symbols. (You can use this option only during kernel-mode debugging.)

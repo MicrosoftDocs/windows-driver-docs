@@ -22,7 +22,7 @@ How a callout driver specifies an unload function depends on whether the callout
 
 ### WDM-Based Callout Drivers
 
-If a callout driver is based on WDM, it specifies an [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload) function in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function. For example:
+If a callout driver is based on WDM, it specifies an [**Unload**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. For example:
 
 ```C++
 VOID
@@ -47,7 +47,7 @@ NTSTATUS
 
 ### WDF-Based Callout Drivers
 
-If a callout driver is based on WDF, it specifies an [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) function in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) function. For example:
+If a callout driver is based on WDF, it specifies an [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) function in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. For example:
 
 ```C++
 VOID

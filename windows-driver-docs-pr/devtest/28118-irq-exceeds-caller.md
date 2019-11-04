@@ -13,12 +13,7 @@ f1_keywords:
 
 # C28118
 
-warning: C28118: Copying a whole IRP stack entry leaves certain fields initialized that should be cleared or updated.
-
-The current function is permitted to run at an IRQ level 
-above the maximum permitted for %func% (%level%). 
-Prior function calls or annotation are inconsistent with 
-use of that function
+warning: C28118: The current function is permitted to run at an IRQ level above the maximum permitted for %func% (%level%). Prior function calls or annotation are inconsistent with use of that function.
 
 <table>
 <colgroup>

@@ -5,9 +5,10 @@ ms.date: 09/17/2018
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-#  Time Travel Debugging - Sample App Walkthrough
+# Time Travel Debugging - Sample App Walkthrough
+
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
 This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue. Although the issue in this small program is easy to find, the general procedure can be used on more complex code. This general procedure can be summarized as follows.
 
@@ -701,13 +702,11 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 For more information about the TTD.Memory objects, see [TTD.Memory Object](time-travel-debugging-object-model.md).
 
-
-**Summary**      
+**Summary**  
 
 In this very small sample the issue could have been determined by looking at the few lines of code, but in larger programs the techniques presented here can be used to decrease the time necessary to locate an issue. 
 
 Once a trace is recorded, the trace and repro steps can be shared, and the issue will be reproducible on demand on any PC.  
-
 
 ---
 
@@ -720,11 +719,3 @@ Once a trace is recorded, the trace and repro steps can be shared, and the issue
 [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
 
 [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
-
----
-
-
-
-
-
-

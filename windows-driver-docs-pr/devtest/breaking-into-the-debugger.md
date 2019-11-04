@@ -47,11 +47,11 @@ When a user-mode program calls **DebugBreak**, the following possible actions wi
 
 When a kernel-mode program breaks into the debugger, the entire operating system freezes until the kernel debugger allows execution to resume. If a kernel debugger is not present, this is treated as a bug check.
 
-The [**DbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgbreakpoint) routine works in kernel-mode code, but is otherwise similar to the **DebugBreak** user-mode routine.
+The [**DbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpoint) routine works in kernel-mode code, but is otherwise similar to the **DebugBreak** user-mode routine.
 
-The [**DbgBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgbreakpointwithstatus) routine also causes a break, but it additionally sends a 32-bit status code to the debugger.
+The [**DbgBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpointwithstatus) routine also causes a break, but it additionally sends a 32-bit status code to the debugger.
 
-The [**KdBreakPoint**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff548063(v=vs.85)) and [**KdBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdbreakpointwithstatus) routines are identical to **DbgBreakPoint** and **DbgBreakPointWithStatus**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
+The [**KdBreakPoint**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff548063(v=vs.85)) and [**KdBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdbreakpointwithstatus) routines are identical to **DbgBreakPoint** and **DbgBreakPointWithStatus**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
 ### <span id="kernel_mode_conditional_break_macros"></span><span id="KERNEL_MODE_CONDITIONAL_BREAK_MACROS"></span>Kernel-Mode Conditional Break Macros
 
@@ -59,7 +59,7 @@ Two conditional break macros are available for kernel-mode drivers:
 
 -   The [**ASSERT**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)) macro tests a logical expression. If the expression is false, execution halts and the debugger becomes active. The failed expression and its location in the program are displayed in the debugger.
 
--   The [**ASSERTMSG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-assertmsg) macro is identical to **ASSERT** except that it allows an additional message to be sent to the debugger.
+-   The [**ASSERTMSG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-assertmsg) macro is identical to **ASSERT** except that it allows an additional message to be sent to the debugger.
 
 **ASSERT** and **ASSERTMSG** are only active when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 

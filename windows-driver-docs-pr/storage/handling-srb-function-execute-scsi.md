@@ -28,7 +28,7 @@ On receipt of an SRB\_FUNCTION\_EXECUTE\_SCSI request, a miniport driver's *HwSc
 
     For a device I/O operation, such an internal routine generally selects the target device and sends the CDB over the bus to the target logical unit.
 
-If the miniport driver uses system DMA, it must call [**ScsiPortIoMapTransfer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportiomaptransfer)*before* programming the HBA to transfer data. **ScsiPortIoMapTransfer** sets up the system DMA controller and calls the miniport driver's *HwScsiDmaStarted* routine, described later in [SCSI Miniport Driver's HwScsiDmaStarted Routine](scsi-miniport-driver-s-hwscsidmastarted-routine.md).
+If the miniport driver uses system DMA, it must call [**ScsiPortIoMapTransfer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportiomaptransfer)*before* programming the HBA to transfer data. **ScsiPortIoMapTransfer** sets up the system DMA controller and calls the miniport driver's *HwScsiDmaStarted* routine, described later in [SCSI Miniport Driver's HwScsiDmaStarted Routine](scsi-miniport-driver-s-hwscsidmastarted-routine.md).
 
 All system-defined, required device I/O control requests sent to NT-based operating system storage class drivers are mapped to SRBs with the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI.
 

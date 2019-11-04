@@ -24,9 +24,9 @@ In Windows Vista and Windows XP, Enhanced I/O Verification is activated independ
 
 Driver Verifier adds the following checks when you activate Enhanced I/O Verification.
 
--   Monitors all IRPs to ensure that the driver returns STATUS\_PENDING if and only if it has called [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending).
+-   Monitors all IRPs to ensure that the driver returns STATUS\_PENDING if and only if it has called [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending).
 
--   Monitors the use of [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodeletedevice) to verify that the driver is not deleting the same device more that once and to detect inappropriate detaching and deleting of device objects.
+-   Monitors the use of [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice) to verify that the driver is not deleting the same device more that once and to detect inappropriate detaching and deleting of device objects.
 
 -   Verifies that the driver correctly unwinds all [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) calls.
 

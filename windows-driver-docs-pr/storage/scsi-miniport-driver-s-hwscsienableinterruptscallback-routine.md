@@ -6,40 +6,29 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiEnableInterruptsCallback
 - HwScsiEnableInterruptsCallback
 - interrupts WDK SCSI
-ms.date: 04/20/2017
+ms.date: 10/08/2019
 ms.localizationpriority: medium
 ---
 
 # SCSI Miniport Driver's HwScsiEnableInterruptsCallback Routine
 
+A [*HwScsiEnableInterruptsCallback*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557295(v=vs.85)) routine finishes processing an interrupt-driven I/O operation without inhibiting I/O operations for other devices in the machine.
 
-## <span id="ddk_scsi_miniport_drivers_hwscsienableinterruptscallback_routine_kg"></span><span id="DDK_SCSI_MINIPORT_DRIVERS_HWSCSIENABLEINTERRUPTSCALLBACK_ROUTINE_KG"></span>
-
-
-An [**HwScsiEnableInterruptsCallback**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557295(v=vs.85)) routine finishes processing an interrupt-driven I/O operation without inhibiting I/O operations for other devices in the machine.
-
-When the *HwScsiEnableInterruptsCallback* routine gets control, all system device interrupts are enabled except from the HBA because the *HwScsiInterrupt* routine disabled interrupts on the HBA before it called [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification). Thus, the miniport driver's *HwScsiInterrupt* routine cannot be called and cannot disturb the context data it set up about the current operation while the *HwScsiEnableInterruptsCallback* routine is running.
+When the *HwScsiEnableInterruptsCallback* routine gets control, all system device interrupts are enabled except from the HBA because the *HwScsiInterrupt* routine disabled interrupts on the HBA before it called [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification). Thus, the miniport driver's *HwScsiInterrupt* routine cannot be called and cannot disturb the context data it set up about the current operation while the *HwScsiEnableInterruptsCallback* routine is running.
 
 A *HwScsiEnableInterruptsCallback* routine should do the following:
 
-1.  Use the context that was set up for the operation in the input device extension to complete processing of the request that caused the interrupt.
+1. Use the context that was set up for the operation in the input device extension to complete processing of the request that caused the interrupt.
 
-2.  Call **ScsiPortNotification** with the *NotificationType***RequestComplete** and the just-satisfied SRB.
+2. Call **ScsiPortNotification** with the *NotificationType***RequestComplete** and the just-satisfied SRB.
 
-3.  Call **ScsiPortNotification** with the *NotificationType***NextRequest**, or with **NextLuRequest** if the HBA supports tagged queuing or multiple requests per logical unit.
+3. Call **ScsiPortNotification** with the *NotificationType***NextRequest**, or with **NextLuRequest** if the HBA supports tagged queuing or multiple requests per logical unit.
 
-4.  Call **ScsiPortNotification** with a pointer to the device extension, the *NotificationType***CallDisableInterrupts**, and the miniport driver's *HwScsiDisableInterruptsCallback* routine, described in [SCSI Miniport Driver's HwScsiDisableInterruptsCallback Routine](scsi-miniport-driver-s-hwscsidisableinterruptscallback-routine.md).
+4. Call **ScsiPortNotification** with a pointer to the device extension, the *NotificationType***CallDisableInterrupts**, and the miniport driver's *HwScsiDisableInterruptsCallback* routine, described in [SCSI Miniport Driver's HwScsiDisableInterruptsCallback Routine](scsi-miniport-driver-s-hwscsidisableinterruptscallback-routine.md).
 
-5.  Return control.
+5. Return control.
 
 The NT-based operating system **ScsiPortNotification** routine calls the *HwScsiDisableInterruptsCallback* routine with a subset of the system device interrupts disabled. No device interrupt with a system-assigned hardware priority (IRQL) less than or equal to the HBA's can occur.
 
-See [IRQL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) for more information.
-
- 
-
- 
-
-
-
-
+See [Managing Hardware Priorities](https://docs.microsoft.com/windows-hardware/drivers/kernel/managing-hardware-priorities
+) for more information.

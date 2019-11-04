@@ -56,7 +56,7 @@ For more information about handling this IRP, see [Handling an IRP\_MN\_REMOVE\_
 
 Reserved for system use. Drivers must not send this IRP.
 
-If a bus driver detects that one (or more) of its child devices (child PDOs) has been physically removed from the computer, the bus driver calls [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations) to report the change to the PnP manager. The PnP manager then sends remove IRPs for any devices that have disappeared.
+If a bus driver detects that one (or more) of its child devices (child PDOs) has been physically removed from the computer, the bus driver calls [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) to report the change to the PnP manager. The PnP manager then sends remove IRPs for any devices that have disappeared.
 
 Requirements
 ------------
@@ -77,9 +77,9 @@ Requirements
 ## See also
 
 
-[**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicerelations)
+[**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations)
 
-[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification)
+[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification)
 
 [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](irp-mn-cancel-remove-device.md)
 

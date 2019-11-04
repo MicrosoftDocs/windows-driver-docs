@@ -2,7 +2,7 @@
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
 ms.assetid: F4B56B3F-792F-4887-AF0F-FFC1F000CB8F
-ms.date: 10/27/2017
+ms.date: 10/18/2019
 ms.localizationpriority: medium
 ---
 
@@ -122,6 +122,10 @@ All APO vendor system specific settings, parameters, and tuning values must be i
 
 Base driver packages must not depend on these customizations in order to function (although of course functionality may be reduced).  
 
+### UWP Audio Settings APPs
+
+To implement an end user UI, use a Hardware Support App (HSA) for a Windows Universal Audio driver.  For more information, see [Hardware Support App (HSA): Steps for Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers).
+
 ### Programmatically launching UWP Hardware Support Apps
 
 To programmatically launch a UWP Hardware Support App, based on a driver event (for example, when a new audio device is connected), use the Windows Shell APIs. The Windows 10 Shell APIs support a method for launching UWP UI based on resource activation, or directly via [IApplicationActivationManager](https://docs.microsoft.com/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication). You can find more details on automated launching for UWP applications in [Automate launching Windows 10 UWP apps](https://docs.microsoft.com/windows/uwp/xbox-apps/automate-launching-uwp-apps#launch-activation).  
@@ -141,9 +145,9 @@ APO Hardware IDs incorporate both standard information and vendor-defined string
 They are constructed as follows:
 
 ```syntax
-APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) &REV_r(4)
-APO\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4)
-APO\VEN_v(4)&AID_a(4)
+SWC\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4) &REV_r(4)
+SWC\VEN_v(4)&AID_a(4)&SUBSYS_ n(4)s(4)
+SWC\VEN_v(4)&AID_a(4)
 ```
 
 Where:
@@ -161,7 +165,7 @@ To allow the latest driver to be used, be sure and update the date and version, 
 
 ### APO driver registry key
 
-For third party-defined audio driver/APO registry keys, use the HKR with the exception of HKLM\System\CurrentControlSet.
+For third party-defined audio driver/APO registry keys, use HKR with the exception of HKLM\System\CurrentControlSet.
 
 ### Use a Windows Service to facilitate UWP <-> APO communication
 

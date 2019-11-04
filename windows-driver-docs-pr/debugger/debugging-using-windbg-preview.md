@@ -2,25 +2,23 @@
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
 ms.date: 04/03/2019
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png) 
-
 # Debugging Using WinDbg Preview 
+
+![Small logo on windbg preview](images/windbgx-preview-logo.png) 
 
 WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
 
 For the latest news, tips, and tricks from the debugger dev team, refer to the debugger tools team blog.
 [https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
 
-
 ## Major Features of WinDbg Preview
 
 Here's some of the most notable things that have changed or are new.
 
 ![Main screen in debugger](images/windbgx-main-menu.png)
-
 
 ### General features
 
@@ -58,14 +56,11 @@ Use **File** > **Settings** to enable the dark theme.
 
 ![Screen shot showing dark theme](images/windbgx-dark-theme.png)
 
-
 ### Ribbon Quick Access
 
 Just pin the buttons you use the most and you can collapse the ribbon to save screen real estate. 
- 
+
 ![Screen shot showing a ribon with pinned items](images/windbgx-quick-access.png)
-
-
 
 ### Source Window
 
@@ -73,20 +68,17 @@ The source window has been updated to be much more in line with modern editors.
 
 ![Screen shot of scripting menu in debugger](images/windbgx-source-window.png)
 
-
 ### Highlighting
 
 The command window has two new highlighting features. Selecting any text will give a subtle highlight to any other instances of that text. You can then hit "Highlight/Un-highlight" or Ctrl+Alt+H to persist the highlighting. 
 
 ![Screen shot showing columns highlighted in yellow](images/windbgx-highlighting.gif)
 
-
 ### Better keyboard navigation
 
 Just hit Ctrl+Tab and you can easily navigate between windows with just your keyboard. 
 
 ![Screen shot showing ctrl tab menu](images/windbgx-ctrl-tab.gif)
-
 
 ### Integrated Time Travel Debugging (TTD)
 
@@ -96,7 +88,6 @@ If you need a TTD trace of your application, just check the "Record process with
 
 For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
-
 ### Debugging App packages
 
 Debugging your universal app or background task is now a single click.
@@ -105,13 +96,11 @@ Debugging your universal app or background task is now a single click.
 
 For more information, see [Launch App Package](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
 
-
 ### Attach to a process
 
 The attach dialog is faster, more detailed, and is easier to use.
 
 ![Attach to a process dialog](images/windbgx-attach-to-a-process-zoomed.png)
-
 
 ### Enhanced breakpoint tracking  
 
@@ -130,8 +119,7 @@ For more information, see [WinDbg Preview - Data model](windbg-data-model-previe
 
 ![Screen shot of data model menu in debugger](images/windbgx-data-model-menu.png)
 
-
-### New scripting development UI 
+### New scripting development UI
 
 - **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting and IntelliSense.
 
@@ -185,10 +173,4 @@ These topics describe some common tasks, organized by the menu tabs.
 - [WinDbg Preview – Data model](windbg-data-model-preview.md)
 - [WinDbg Preview – Scripting](windbg-scripting-preview.md)
 
-
---- 
-
-
-
-
-
+---

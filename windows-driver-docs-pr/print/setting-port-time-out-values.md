@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-If you are writing a port monitor for a port that has modifiable time-out values, the time-out values should be initialized from within the monitor's [**OpenPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-openport) function. For example the **OpenPort** function in Localmon.dll, the [sample port monitor](sample-port-monitor.md), calls the **SetCommTimeouts** function, described in the Microsoft Windows SDK documentation, for this purpose.
+If you are writing a port monitor for a port that has modifiable time-out values, the time-out values should be initialized from within the monitor's [**OpenPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-openport) function. For example the **OpenPort** function in Localmon.dll, the [sample port monitor](sample-port-monitor.md), calls the **SetCommTimeouts** function, described in the Microsoft Windows SDK documentation, for this purpose.
 
 Additionally, a port monitor can optionally provide a [**SetPortTimeOuts**](https://docs.microsoft.com/previous-versions/ff562630(v=vs.85)) function, which can be called by language monitors. The function is called by Pjlmon.dll, the [sample language monitor](sample-language-monitor.md). The print spooler does not call **SetPortTimeOuts**.
 

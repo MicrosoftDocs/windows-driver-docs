@@ -29,7 +29,7 @@ Like a storage class driver, an SFD has the following requirements common to all
 
 -   For [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) requests, it must support as many of the class driver-supported I/O control codes as its physical device can handle and, if possible, emulate support for any remaining I/O control codes in the driver.
 
--   It must have a [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine, an [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device) routine, an [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload) routine, and *Dispatch* routines to handle PnP and power IRPs and can have any other standard higher-level driver routine, such as [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routines, as necessary.
+-   It must have a [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, an [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, an [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine, and *Dispatch* routines to handle PnP and power IRPs and can have any other standard higher-level driver routine, such as [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines, as necessary.
 
 -   It must follow the rules for processing PnP, power management, and system control IRPs.
 

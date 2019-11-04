@@ -161,7 +161,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 Because DevCon operations use IDs and ID patterns to identify devices, a common first step in using DevCon is to create a hardware ID reference file for devices on the computer.
 
-The following command uses the [**DevCon HwIDs**](devcon-hwids.md) operation, which returns the IDs and the device description. It uses the wildcard character (**\\***) to represent all devices on the local computer.
+The following command uses the [**DevCon HwIDs**](devcon-hwids.md) operation, which returns the IDs and the device description. It uses the wildcard character (**\***) to represent all devices on the local computer.
 
 ```
 devcon hwids *
@@ -169,7 +169,7 @@ devcon hwids *
 
 Because the output is lengthy and used repeatedly, save the output in a text file for reference.
 
-The following command uses the wildcard character (**\\***) to represent all devices on the computer. It uses the redirection character (*<em>&gt;</em>*) to save the command output in the hwids.txt file.
+The following command uses the wildcard character (**\***) to represent all devices on the computer. It uses the redirection character (*<em>&gt;</em>*) to save the command output in the hwids.txt file.
 
 ```
 devcon hwids * > hwids.txt
@@ -189,7 +189,7 @@ devcon /m:\\server01 hwids * > server01_hwids.txt
 
 To find the hardware IDs of a particular device, enter the hardware ID or pattern, the compatible ID or pattern, the device instance ID or pattern, or the name of the device setup class.
 
-The following command uses the **DevCon HwIDs** operation and a pattern to find the hardware IDs of the floppy disk drive on the computer. (The user assumes that the pattern appears in one of the device identifiers.) The command uses the wildcard character (**\\***) to represent all characters that might precede or follow the word "floppy" in any of the IDs.
+The following command uses the **DevCon HwIDs** operation and a pattern to find the hardware IDs of the floppy disk drive on the computer. (The user assumes that the pattern appears in one of the device identifiers.) The command uses the wildcard character (**\***) to represent all characters that might precede or follow the word "floppy" in any of the IDs.
 
 ```
 devcon hwids *floppy*
@@ -359,7 +359,7 @@ No devices for setup class "TapeDrive" (Tape drives) on \\server01.
 
 ### <span id="ddk_example_8_list_all_driver_files_tools"></span><span id="DDK_EXAMPLE_8_LIST_ALL_DRIVER_FILES_TOOLS"></span><a name="ddk_example_8_list_all_driver_files_tools"></a>Example 8: List all driver files
 
-The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to list the file names of drivers that devices on the system use. The command uses the wildcard character (**\\***) to indicate all devices on the system. Because the output is extensive, the command uses the redirection character (*<em>&gt;</em>*) to redirect the output to a reference file, driverfiles.txt.
+The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to list the file names of drivers that devices on the system use. The command uses the wildcard character (**\***) to indicate all devices on the system. Because the output is extensive, the command uses the redirection character (*<em>&gt;</em>*) to redirect the output to a reference file, driverfiles.txt.
 
 ```
 devcon driverfiles * > driverfiles.txt
@@ -687,7 +687,7 @@ ROOT\MS_PTIMINIPORT\0000
 
 ### <span id="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></span><span id="DDK_EXAMPLE_17_DISPLAY_THE_STATUS_OF_ALL_DEVICES_ON_THE_LOCAL_COMPUTER"></span><a name="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></a>Example 17: Display the status of all devices on the local computer
 
-The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\\***) to represent all devices and the redirection character (*<em>&gt;</em>*) to redirect the output to the status.txt file.
+The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\***) to represent all devices and the redirection character (*<em>&gt;</em>*) to redirect the output to the status.txt file.
 
 ```
 devcon status * > status.txt
@@ -814,7 +814,7 @@ ROOT\RDP_MOU\0000
 
 The following commands use the [**DevCon Find**](devcon-find.md) operation to display all legacy devices on the local computer. Because legacy devices do not have a hardware ID, you must search for them by their device instance ID (registry path), ROOT\\LEGACY, or their setup class, LegacyDriver.
 
-The first command finds legacy drivers by a device instance ID pattern. The ID pattern is prefaced by the at character (**@**) to indicate a device instance ID and followed by the wildcard character (**\\***) to find all devices in the ROOT\\Legacy subkey.
+The first command finds legacy drivers by a device instance ID pattern. The ID pattern is prefaced by the at character (**@**) to indicate a device instance ID and followed by the wildcard character (**\***) to find all devices in the ROOT\\Legacy subkey.
 
 ```
 devcon find @root\legacy*

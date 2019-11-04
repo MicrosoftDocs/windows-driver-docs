@@ -33,7 +33,7 @@ ms.localizationpriority: medium
 
 The Windows Driver Kit (WDK) contains two header files that define the speaker configurations that are supported by the Windows multimedia control panel:
 
--   Ksmedia.h defines the channel masks for the [**KSAUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksaudio_channel_config) structure that is used by the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) property request.
+-   Ksmedia.h defines the channel masks for the [**KSAUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config) structure that is used by the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) property request.
 
 -   Dsound.h defines a list of speaker-configuration identifiers that can be submitted to the **IDirectSound::SetSpeakerConfig** method. For more information about this method, see the Windows SDK documentation.
 

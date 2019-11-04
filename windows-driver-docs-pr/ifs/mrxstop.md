@@ -87,7 +87,7 @@ The **StartStopContext.State** member of the RDBSS\_DEVICE\_OBJECT structure poi
 
 The **StartStopContext.pStopContext** member of the RDBSS\_DEVICE\_OBJECT structure pointed to by *RxDeviceObject* is set to the *RxContext* parameter.
 
-*MRxStop* is called by RDBSS from the [**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nf-mrx-rxstopminirdr) routine.
+*MRxStop* is called by RDBSS from the [**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr) routine.
 
 If *MRxStop* returns STATUS\_SUCCESS, then the routine was successful. Any other return value indicates that an error occurred in stopping the network mini-redirector.
 
@@ -120,9 +120,9 @@ Requirements
 
 [**MRxDevFcbXXXControlFile**](mrxdevfcbxxxcontrolfile.md)
 
-[**MrxStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nc-mrx-pmrx_calldown_ctx)
+[**MrxStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)
 
-[**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mrx/nf-mrx-rxstopminirdr)
+[**RxStopMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr)
 
  
 

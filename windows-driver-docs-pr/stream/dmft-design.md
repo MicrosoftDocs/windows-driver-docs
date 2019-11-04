@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Device MFT design guide
 
-The video capture stack in Windows supports a user-mode extension in the form of MFT0. This is a per-stream extension component that IHVs supply, and the capture pipeline inserts as the first transform, post-capture. The MFT0 is fed post-processed frames from the device. Further post processing operations on the frames can be done inside MFT0. 
+The video capture stack in Windows supports a user-mode extension in the form of DMFT. This is a per-device extension component that IHVs supply, and the capture pipeline inserts as the first transform, post-capture. The DMFT receives post-processed frames from the device. Further post processing operations on the frames can be done inside the DMFT. The DMFT can receive frames from all the streams of the device and it can expose any number of output streams as per the requirement.
 
 This topic outlines the design of a device-wide extension running in user mode that can be used to perform post-processing common to all streams.
 
@@ -215,7 +215,7 @@ Device MFTs must support the following interfaces:
 
 - [IMFDeviceTransform](https://docs.microsoft.com/windows/desktop/api/mftransform/nn-mftransform-imfdevicetransform)
 
-- [IKsControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nn-ks-ikscontrol)
+- [IKsControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nn-ks-ikscontrol)
 
     - This allows all ksproperties, events and methods to go through the Device MFT. This gives Device MFT the ability to handle these functions calls inside Device MFT or just forward them to the driver. In the case where it handles the KsEvent methods, then the Device MFT has to do the following:
 

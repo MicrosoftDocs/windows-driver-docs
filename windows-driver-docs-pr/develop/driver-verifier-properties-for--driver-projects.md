@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
 
-You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Setting Up Kernel-Mode Debugging in Visual Studio](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-kernel-mode-debugging-in-visual-studio).
+You should always set up a kernel mode debugging connection with the test computer when you enable Driver Verifier on the remote test computer. For information about configuring a target computer and setting up a debug cable, see [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging).
 
 ## <span id="Setting_Driver_Verifier_properties_for_driver_package_projects"></span><span id="setting_driver_verifier_properties_for_driver_package_projects"></span><span id="SETTING_DRIVER_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting Driver Verifier properties for driver package projects
 
@@ -93,7 +93,7 @@ You can configure the following Driver Verifier options on the test computer.
 
 -   [Force pending I/O requests](https://docs.microsoft.com/windows-hardware/drivers/devtest/force-pending-i-o-requests)
 
-    When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
+    When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 -   [IRP logging](https://docs.microsoft.com/windows-hardware/drivers/devtest/irp-logging)
 
@@ -134,8 +134,8 @@ There are four options that require you to first enable [I/O Verification](https
 
 * [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)
 * [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-kernel-mode-debugging-in-visual-studio)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
+* [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
  
 
  

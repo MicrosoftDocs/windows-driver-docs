@@ -30,7 +30,7 @@ A DirectX 9.0 driver for a device that supports a nonstandard display mode must 
 
 -   Windowed mode and nonstandard formats
 
-    The [Reporting Support for 2D Operations Using Surface Formats](reporting-support-for-2d-operations-using-surface-formats.md) topic describes how the driver specifies that it can perform rendering to and present images from a format that differs from that of the current desktop. This scheme extends naturally to support nonstandard formats; the driver must merely add the enabling flags in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ddpixelformat) structure for the formats.
+    The [Reporting Support for 2D Operations Using Surface Formats](reporting-support-for-2d-operations-using-surface-formats.md) topic describes how the driver specifies that it can perform rendering to and present images from a format that differs from that of the current desktop. This scheme extends naturally to support nonstandard formats; the driver must merely add the enabling flags in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for the formats.
 
 Private formats and legacy code cannot be used to expose nonstandard desktop formats.
 

@@ -42,8 +42,8 @@ WDI\_ALGO\_PAIRS consists of the following elements.
 
 | Type  | Description                                                                                     |
 |-------|-------------------------------------------------------------------------------------------------|
-| UINT8 | Authentication algorithm as defined in [**WDI\_AUTH\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_auth_algorithm). |
-| UINT8 | Cipher algorithm as defined in [**WDI\_CIPHER\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_cipher_algorithm).     |
+| UINT8 | Authentication algorithm as defined in [**WDI\_AUTH\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm). |
+| UINT8 | Cipher algorithm as defined in [**WDI\_CIPHER\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm).     |
 
  
 
