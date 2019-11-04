@@ -850,6 +850,10 @@
       href: flt-parameters-for-irp-mj-acquire-for-section-synchronization.md
     - name: "FLT_PARAMETERS for IRP_MJ_CREATE"
       href: flt-parameters-for-irp-mj-create.md
+    - name: "FLT_PARAMETERS for IRP_MJ_CREATE_MAILSLOT"
+      href: flt-parameters-for-irp-mj-create-mailslot.md
+    - name: "FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE"
+      href: flt-parameters-for-irp-mj-create-named-pipe.md
     - name: "FLT_PARAMETERS for IRP_MJ_DEVICE_CONTROL and IRP_MJ_INTERNAL_DEVICE_CONTROL"
       href: flt-parameters-for-irp-mj-device-control-and-irp-mj-internal-device-co.md
     - name: "FLT_PARAMETERS for IRP_MJ_DIRECTORY_CONTROL"
@@ -920,6 +924,10 @@
       href: irp-mj-close.md
     - name: "IRP_MJ_CREATE"
       href: irp-mj-create.md
+    - name: "IRP_MJ_CREATE_MAILSLOT"
+      href: irp-mj-create-mailslot.md
+    - name: "IRP_MJ_CREATE_NAMED_PIPE"
+      href: irp-mj-create-named-pipe.md
     - name: "IRP_MJ_DEVICE_CONTROL"
       href: irp-mj-device-control.md
     - name: "IRP_MJ_DIRECTORY_CONTROL"
