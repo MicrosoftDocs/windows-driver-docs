@@ -13,12 +13,9 @@ ms.custom: 19H1
 
 # Network Adapter WDF Class Extension (NetAdapterCx)
 
-> [!NOTE]
-> The first official release of NetAdapterCx is version 2.0. All versions before 2.0 are prerelease versions and are no longer supported. Any NetAdapterCx client driver written for a prerelease version of the framework must be rebuilt for 2.0. For more info, see [Introduction to NetAdapterCx 2.0](introduction-to-netadaptercx-2-0.md) and [Building a NetAdapterCx client driver](building-a-netadaptercx-client-driver.md).
-
 ## Overview
 
-Starting in Windows 10, version 1703, the Windows Driver Kit (WDK) includes a Network Adapter WDF Class Extension module (NetAdapterCx) that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a driver for your NIC.
+Starting in the next version of Windows 10, the Windows Driver Kit (WDK) includes a Network Adapter WDF Class Extension module (NetAdapterCx) that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a driver for your NIC.
 
 In previous versions of Windows, WDF and NDIS had individual advantages, but did not interoperate well. The only way to write a NIC driver was to write an NDIS miniport driver. To use WDF in an NDIS miniport driver, you had to write extra code in your driver, and even then, you only had access to a small subset of WDF functionality.
 
