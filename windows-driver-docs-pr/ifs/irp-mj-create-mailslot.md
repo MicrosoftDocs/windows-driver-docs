@@ -17,7 +17,12 @@ ms.localizationpriority: medium
 
 ## When Sent
 
-The I/O Manager sends the IRP_MJ_CREATE_MAILSLOT request when a new mailslot is being created or opened. Normally this IRP is sent on behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateMailslot**](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-createmailslota). If the create request is completed successfully, the application receives a handle to the server end of the named pipe instance.
+The I/O Manager sends the IRP_MJ_CREATE_MAILSLOT request when a new mailslot is being created or opened. Normally this IRP is sent:
+
+- On behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateMailslot**](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-createmailslota).
+- Or, on behalf of a kernel-mode component that has called [**IoCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile), [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint), [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile).
+
+If the create request is completed successfully, the application or kernel-mode component receives a handle to the mailslot file instance.
 
 The handling of IRP_MJ_CREATE_MAILSLOT is much the same as [IRP_MJ_CREATE](irp-mj-create.md).
 
@@ -127,6 +132,10 @@ A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://
 [ACCESS_MASK](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask)
 
 [ACCESS_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_access_state)
+
+[FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
+
+[FLT_PARAMETERS for IRP_MJ_CREATE_MAILSLOT](flt-parameters-for-irp-mj-create-mailslot.md)
 
 [**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen)
 

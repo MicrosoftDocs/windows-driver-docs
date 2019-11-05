@@ -17,7 +17,14 @@ ms.localizationpriority: medium
 
 ## When Sent
 
-The I/O Manager sends the IRP_MJ_CREATE_NAMED_PIPE request when a new named pipe is being created or opened. Normally this IRP is sent on behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateNamedPipe**](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-createnamedpipea). If the create request is completed successfully, the application receives a handle to the server end of the named pipe instance.
+The I/O Manager sends the IRP_MJ_CREATE_NAMED_PIPE request when a new named pipe is being created or opened.
+
+Normally this IRP is sent:
+
+- On behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateNamedPipe**](https://docs.microsoft.com/windows/win32/api/winbase/nf-winbase-createnamedpipea).
+- Or, on behalf of a kernel-mode component that has called [**IoCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile), [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint), [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile).
+
+If the create request is completed successfully, the application or kernel-mode component receives a handle to the server end of the named pipe file instance.
 
 The handling of IRP_MJ_CREATE_NAMED_PIPE is much the same as [IRP_MJ_CREATE](irp-mj-create.md).
 
@@ -33,11 +40,11 @@ If the target device object is the filter driver's control device object, the fi
 
 Otherwise, the filter driver should perform any needed processing and, depending on the nature of the filter, either complete the IRP or pass it down to the next-lower driver on the stack.
 
-Generally, filter drivers should not return **STATUS_PENDING** in response to **IRP_MJ_CREATE_NAMED_PIPE**. However, if a lower-level driver returns **STATUS_PENDING**, the filter driver should pass this status value up the driver chain.
+Generally, filter drivers should not return **STATUS_PENDING** in response to IRP_MJ_CREATE_NAMED_PIPE. However, if a lower-level driver returns **STATUS_PENDING**, the filter driver should pass this status value up the driver chain.
 
 ## Parameters
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a create request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a create request.
 
 - *DeviceObject*
 
@@ -127,6 +134,10 @@ A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://
 [ACCESS_MASK](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask)
 
 [ACCESS_STATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_access_state)
+
+[FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
+
+[FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE](flt-parameters-for-irp-mj-create-named-pipe.md)
 
 [**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen)
 
