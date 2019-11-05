@@ -4,9 +4,9 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 ms.assetid: 009CC1D7-5168-4D7B-9284-04F922D37434
 keywords:
 - NetAdapterCx Net rings and net ring iterators cancel, NetAdapterCx cancel packet queue
-ms.date: 01/24/2019
+ms.date: 11/01/2019
 ms.localizationpriority: medium
-ms.custom: 19H1
+ms.custom: Vib
 ---
 
 # Canceling network data with net rings
@@ -27,16 +27,20 @@ MyEvtTxQueueCancel(
 {
     // Get the transmit queue's context to retrieve the net ring collection
     PMY_TX_QUEUE_CONTEXT txQueueContext = MyGetTxQueueContext(TxQueue);
-    NET_RING_COLLECTION const * rings = txQueueContext->Rings;
+    NET_RING_COLLECTION const * ringCollection = txQueueContext->RingCollection;
+    NET_RING * packetRing = ringCollection->Rings[NET_RING_TYPE_PACKET];
+    UINT32 currentPacketIndex = packetRing->BeginIndex;
+    UINT32 packetEndIndex = packetRing->EndIndex;
 
-    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetPostPackets(rings);
-    while (NetPacketIteratorHasAny(&packetIterator))
+    while (currentPacketIndex != packetEndIndex)
     {
         // Mark this packet as canceled with the scratch field, then move past it
-        NetPacketIteratorGetPacket(&packetIterator)->Scratch = 1;
-        NetPacketIteratorAdvance(&packetIterator);
+        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, currentPacketIndex);
+        packet->Scratch = 1;
+        currentPacketIndex = NetRingIncrementIndex(packetRing, currentPacketIndex);
     }
-    NetPacketIteratorSet(&packetIterator);
+    
+    packetRing->BeginIndex = packetRing->EndIndex;
 }
 ```
 
@@ -59,7 +63,11 @@ MyEvtRxQueueCancel(
 {
     // Get the receive queue's context to retrieve the net ring collection
     PMY_RX_QUEUE_CONTEXT rxQueueContext = MyGetRxQueueContext(RxQueue);
-    NET_RING_COLLECTION const * rings = rxQueueContext->Rings;
+    NET_RING_COLLECTION const * ringCollection = rxQueueContext->RingCollection;
+    NET_RING * packetRing = ringCollection->Rings[NET_RING_TYPE_PACKET];
+    NET_RING * fragmentRing = ringCollection->Rings[NET_RING_TYPE_FRAGMENT];
+    UINT32 currentPacketIndex = packetRing->BeginIndex;
+    UINT32 packetEndIndex = packetRing->EndIndex;
 
     // Set hardware register for cancellation
     ...
@@ -70,17 +78,17 @@ MyEvtRxQueueCancel(
     //
 
     // Get all packets and mark them for ignoring
-    NET_RING_PACKET_ITERATOR packetIterator = NetRingGetAllPackets(rings);
-    while(NetPacketIteratorHasAny(&packetIterator))
+    currentPacketIndex = packetRing->BeginIndex;
+    while(currentPacketIndex != packetEndIndex)
     {
-        NetPacketIteratorGetPacket(&packetIterator)->Ignore = 1;
-        NetPacketIteratorAdvance(&packetIterator);
+        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, currentPacketIndex);
+        packet->Ignore = 1;
+        currentPacketIndex = NetRingIncrementIndex(packetRing, currentPacketIndex);
     }
-    NetPacketIteratorSet(&packetIterator);
+    
+    packetRing->BeginIndex = packetRing->EndIndex;
 
     // Return all fragments to the OS
-    NET_RING_FRAGMENT_ITERATOR fragmentIterator = NetRingGetAllFragments(rings);
-    NetFragmentIteratorAdvanceToTheEnd(&fragmentIterator);
-    NetFragmentIteratorSet(&fragmentIterator);
+    fragmentRing->BeginIndex = fragmentRing->EndIndex;
 }
 ```

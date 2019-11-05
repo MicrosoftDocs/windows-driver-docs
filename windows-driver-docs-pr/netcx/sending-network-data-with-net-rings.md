@@ -25,11 +25,10 @@ In this animation, the packets owned by the client driver are highlighted in lig
 
 Here is a typical post and drain sequence for a driver whose device transmits data in order, such as a simple PCI NIC.
 
-1. Call [**NetTxQueueGetRingCollection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuegetringcollection) to retrieve the transmit queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. 
-2. Post data to hardware:    
-    1. Use the ring collection to retrieve the transmit queue's packet ring.
-    2. Allocate a UINT32 variable for the packet index and set it to the packet ring's **NextIndex**, which is the start of the post subsection of the ring.
-    3. Do the following in a loop:
+1. Call [**NetTxQueueGetRingCollection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/nettxqueue/nf-nettxqueue-nettxqueuegetringcollection) to retrieve the transmit queue's ring collection structure. You can store this in the queue's context space to reduce calls out of the driver. Use the ring collection to retrieve the transmit queue's packet ring.
+2. Post data to hardware:        
+    1. Allocate a UINT32 variable for the packet index and set it to the packet ring's **NextIndex**, which is the start of the post subsection of the ring.
+    2. Do the following in a loop:
         1. Get a packet by calling [**NetRingGetPacketAtIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringgetpacketatindex) with the packet index.
         2. Check if this packet should be ignored. If it should be ignored, skip to step 6 of this loop. If not, continue.
         3. Get this packet's fragments. Retrieve the transmit queue's fragment ring from the ring collection, retrieve the beginning of the packet's fragments from the packet's **FragmentIndex** member, then retrieve the end of the packet's fragments by calling [**NetRingIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringincrementindex) with the packet's **FragmentCount**.
@@ -39,7 +38,7 @@ Here is a typical post and drain sequence for a driver whose device transmits da
             3. Advance the fragment index by calling  [**NetRingIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringincrementindex).
         5. Update the fragment ring's **Next** index to match the fragment iterator's current **Index**, which indicates that posting to hardware is complete.
         6. Advance the packet index by calling  [**NetRingIncrementIndex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ring/nf-ring-netringincrementindex).
-    4. Update the packet ring's **NextIndex** to the packet index to finalize posting packets to hardware.
+    3. Update the packet ring's **NextIndex** to the packet index to finalize posting packets to hardware.
 3. Drain completed transmit packets to the OS:
     1. Set the packet index to the packet ring's **BeginIndex**, which is the start of the drain subsection of the ring.
     2. Do the following in a loop:
@@ -63,59 +62,59 @@ MyEvtTxQueueAdvance(
     PMY_TX_QUEUE_CONTEXT txQueueContext = MyGetTxQueueContext(TxQueue);
     NET_RING_COLLECTION const * ringCollection = txQueueContext->RingCollection;
     NET_RING * packetRing = ringCollection->Rings[NET_RING_TYPE_PACKET];
-    UINT32 packetRingIndex = 0;
+    UINT32 currentPacketIndex = 0;
 
     //
     // Post data to hardware
     //      
-    packetRingIndex = Rings->NextIndex;
-    while(packetRingIndex != packetRing->EndIndex)
+    currentPacketIndex = packetRing->NextIndex;
+    while(currentPacketIndex != packetRing->EndIndex)
     {
-        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, packetRingIndex);        
+        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, currentPacketIndex);        
         if(!packet->Ignore)
         {
             NET_RING * fragmentRing = ringCollection->Rings[NET_RING_TYPE_FRAGMENT];
-            UINT32 fragmentRingIndex = packet->FragmentIndex;
-            UINT32 fragmentRingEndIndex = NetRingIncrementIndex(fragmentRing, fragmentRingIndex + packet->FragmentCount - 1);
+            UINT32 currentFragmentIndex = packet->FragmentIndex;
+            UINT32 fragmentEndIndex = NetRingIncrementIndex(fragmentRing, currentFragmentIndex + packet->FragmentCount - 1);
             
             for(txQueueContext->PacketTransmitControlBlocks[packetIndex]->numTxDescriptors = 0; 
-                fragmentRingIndex != fragmentRingEndIndex; 
+                currentFragmentIndex != fragmentEndIndex; 
                 txQueueContext->PacketTransmitControlBlocks[packetIndex]->numTxDescriptors++)
             {
-                NET_FRAGMENT* fragment = NetRingGetFragmentAtIndex(fragmentRing, fragmentRingIndex);
+                NET_FRAGMENT * fragment = NetRingGetFragmentAtIndex(fragmentRing, currentFragmentIndex);
 
                 // Post fragment descriptor to hardware
                 ...
                 //
 
-                fragmentRingIndex = NetRingIncrementIndex(fragmentRing, fragmentRingIndex);
+                currentFragmentIndex = NetRingIncrementIndex(fragmentRing, currentFragmentIndex);
             }
 
             //
             // Update the fragment ring's Next index to indicate that posting is complete and prepare for draining
             //
-            fragmentRing->NextIndex = fragmentRingIndex;
+            fragmentRing->NextIndex = currentFragmentIndex;
         }
-        packetRingIndex = NetRingIncrementIndex(packetRing, packetRingIndex);
+        currentPacketIndex = NetRingIncrementIndex(packetRing, currentPacketIndex);
     }
-    packetRing->NextIndex = packetRingIndex;
+    packetRing->NextIndex = currentPacketIndex;
 
     //
     // Drain packets if completed
     //
-    packetRingIndex = packetRing->BeginIndex;
-    while(packetRingIndex != packetRing->NextIndex)
+    currentPacketIndex = packetRing->BeginIndex;
+    while(currentPacketIndex != packetRing->NextIndex)
     {        
-        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, packetRingIndex); 
+        NET_PACKET * packet = NetRingGetPacketAtIndex(packetRing, currentPacketIndex); 
         
         // Test packet for transmit completion by checking hardware ownership flags in the packet's last fragment
         // Break if transmit is not complete
         ...
         //
         
-        packetRingIndex = NetRingIncrementIndex(packetRing, packetRingIndex);
+        currentPacketIndex = NetRingIncrementIndex(packetRing, currentPacketIndex);
     }
-    packetRing->BeginIndex = packetRingIndex;
+    packetRing->BeginIndex = currentPacketIndex;
 }
 ```
 
