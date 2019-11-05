@@ -16,9 +16,9 @@ This topic describes how to sign a driver using attestation signing.
 > - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
 > - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 > - Attestation signing requires the use of an EV Certificate to submit the driver to the Partner Center.
-> - **An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows 8.1,  Windows 7, or any Windows Server versions.**
+> - **An attestation signed driver will only work for Windows 10. It will not work for other versions of Windows, such as Windows 8.1,  Windows 7, or versions of Windows Server later than Windows Server 2016.**
 > - Attestation signing requires driver folder names to contain no special characters, no UNC file share paths, and to be less than 40 characters long.
- 
+
 ## Attestation signing a kernel mode driver
 
 To attestation sign a kernel mode driver complete the following steps:
