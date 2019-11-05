@@ -44,7 +44,7 @@ Authorization: Bearer <your access token>
 
 The response will be empty with a HTTP status of 204.
 
-After this step, use the method in [Get a shipping label](get-a-shipping-label.md) to get the updated details of the shipping label. Please note that actually cancellation of the driver in the driver flighting systems may take over a day to complete.
+After this step, use the method in [Get a shipping label](get-a-shipping-label.md) to get the updated details of the shipping label. Please note that actual cancellation of the driver in the driver flighting systems may take over a day to complete.
 
 ## Error codes
 
