@@ -54,6 +54,6 @@ Note that OEM extensions to COSA, if specified in the device image, are in the C
 
 COSA replaces apndatabase.xml after the upgrade. If an APN was provisioned in the previous version, whether custom, manual, or device-provisioned via the database, it is migrated as a part of the upgrade to version 1703 and the device continues to use it for connectivity without requiring any additional action. Manually provisioned APNs still have priority over the defaults from the database just as they did in version 1607 and earlier.
 
-### <a href="" id="metered"></a>Why does the **Set as metered connection** setting sometimes change from **Off** to **On**?
+### <a href="" id="metered"></a>Why does the "Set as metered connection" setting sometimes change from **Off** to **On**?
 
-Updates to the Windows operating system may include updates for the COSA database. If the database is updated, the provisioning engine may remove the cellular profiles. When the system restarts after the update, the provisioning engine reinstalls the cellular profiles. This operation resets user settings such as **Set as metered connection** to their default values. This behavior is by design.
+Updates to the Windows operating system may include updates for the COSA database. If the database is updated, the provisioning engine may remove the cellular profiles. When the system restarts after database updates are installed, the provisioning engine reinstalls the cellular profiles. This operation resets user settings to their default values. For example, **Set as metered connection** changes from **Off** to **On**. This behavior is by design.
