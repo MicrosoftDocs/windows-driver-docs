@@ -11,7 +11,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 10/30/2019
+ms.date: 11/04/2019
 ms.localizationpriority: medium
 ---
 
@@ -82,7 +82,9 @@ C:\> dtrace -ln syscall:::
 
 Note that not all screen output is shown in these examples. "..." is used to represent truncated output.
 
-You can pipe out to the more command like this `dtrace -ln syscall:::|more` to scroll  through the output.
+To scroll through the output, pipe out to the *more* command like this:
+
+`dtrace -ln syscall:::|more`
 
 Add the v option to display more information about the available syscall probes.
 
@@ -147,7 +149,7 @@ C:\>dtrace -ln "fbt:nt::"
 ```
 
 > [!NOTE]
-> Although the command above shows all that is available in nt, as there are thousands of calls available in nt, it would not be a good idea to leave the function name empty when running a DTrace command to gather data as there could be a performance impact. The recommended approach is to specify at least the function name, such as `fbt:nt:*Timer*:entry`.
+> As there are thousands of calls available in nt, it would not be a good idea to leave the function name empty when running a DTrace command that logs data. The recommended approach to avoid a possible performance impact is to specify at least part of the function name, such as `fbt:nt:*Timer*:entry`.
 
 ### PID
 
@@ -171,7 +173,7 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
 ## Installing DTrace under Windows
 
-1. Install MSI installation files from the Microsoft Download Center - [Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=58091).
+1. Install MSI installation files from the Microsoft Download Center - [Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441).
 
 2. Select the Complete install.
 

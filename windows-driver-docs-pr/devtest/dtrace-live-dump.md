@@ -11,7 +11,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 10/30/2019
+ms.date: 11/04/2019
 ms.localizationpriority: medium
 ---
 
@@ -39,7 +39,7 @@ The following options can be set to change what information is included in the l
 0x2 - Minidump
 
 0x4 - Hyper-V pages + Kernel pages)
- 
+
 0x5 - User, kernel and hypervisor pages.
 
 ## Live Dump Example Code
@@ -88,11 +88,13 @@ Use WinDbg to work with a dump file as described above.
 
 Open the Windows Event Viewer: Go to: Applications and Services Logs->Microsoft->Windows->Kernel-Livedump->Operational
 
-Don't find any logs? - *Enable the analytic channel*
+If you didn't find any logs, enable the analytic channel from the command prompt or the event viewer as described below.
 
 **Enable  analytic channel from command prompt**
 
-- `wevtutil sl Microsoft-Windows-Kernel-LiveDump/Analytic /e:true`
+Use this command to enable the analytic channel from and administrator command prompt.
+
+`wevtutil sl Microsoft-Windows-Kernel-LiveDump/Analytic /e:true`
 
 **Enable  analytic channel using Event Viewer**
 
@@ -104,7 +106,7 @@ Don't find any logs? - *Enable the analytic channel*
 
 ### Enabling full live dumps
 
-These example settings below, show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
+These example settings below show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReports" /f /t REG_DWORD /v FullLiveReportsMax /d 10`
 
@@ -125,11 +127,11 @@ reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReport
 
 ### Disk space issues (Event ID 202 -Error Text: Live Dump Write Deferred Dump Data API ended. NT Status: 0xC000007F.)
 
-This means the disk space is insufficient. Update the registry key show below to change the path for live dump creation, in this example to a drive d: that has addtional storage space available.
+This means the disk space is insufficient. Update the registry key show below to change the path for live dump creation, in this example to a drive d: that has additional storage space available.
 
 `reg add hklm\system\currentcontrolset\control\crashcontrol\livekernelreports /v "LiveKernelReportsPath" /t reg_sz /d "\??\d:\livedumps"`
 
-This command sets the live dump root path to `"d:\livedumps" (as an example).
+This command sets the live dump root path to `d:\livedumps` (as an example).
 
 Do not manually create the folder as it is managed by the OS and will be created when the dump is triggered with the proper permissions.
 

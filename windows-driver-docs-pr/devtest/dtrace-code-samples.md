@@ -11,7 +11,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 10/29/2019
+ms.date: 11/04/2019
 ms.localizationpriority: medium
 ---
 
@@ -450,7 +450,7 @@ END
 
 Save the file as pooltrackingsummary.d and use the -s option to run the test script, providing a tag value and other parameters discussed above.
 
-The 120s option, the program runs for two minutes. Durring that time, use Windows to exericse the monitored memory pool. For example load and unload a web browser or other programs.
+The 120s option, the program runs for two minutes. During that time, use Windows to exercise the monitored memory pool. For example load and unload a web browser or other programs.
 
 ```dtrace
 C:\>dtrace -s pooltrackingsummary.d "120s" 0x4666744e -x aggsortkey -x aggsortkeypos=1
