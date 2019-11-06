@@ -60,7 +60,9 @@ Pointer to a [NAMED_PIPE_CREATE_PARAMETERS](https://docs.microsoft.com/windows-h
 
 ## Remarks
 
-The [FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for the [IRP_MJ_CREATE_NAMED_PIPE](irp-mj-create-named-pipe.md) operation contains the parameters for an IRP-based **CreatePipe** operation represented by a callback data ([FLT_CALLBACK_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [FLT_IO_PARAMETER_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
+[FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) contains a **CreatePipe** structure when the I/O operation is IRP_MJ_CREATE_NAMED_PIPE. The I/O operation is represented by a ([FLT_CALLBACK_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure, with the operation parameters contained within the [FLT_IO_PARAMETER_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure that the callback data's *Iopb* parameter points to.
+
+A file system minifilter driver that has registered a callback routine for IRP_MJ_CREATE_NAMED_PIPE operations should perform any needed processing and return.
 
 Note that, other than the last longword field, the fields in the **CreatePipe** structure must match those for the **Create** structure.
 

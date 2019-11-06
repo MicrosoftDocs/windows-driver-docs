@@ -2,7 +2,7 @@
 title: FLT_PARAMETERS for IRP_MJ_CREATE_MAILSLOT union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_CREATE_MAILSLOT.
 ms.assetid: aa223d51-7d13-4244-bad5-db14f1fb0d2c
-keywords: ["FLT_PARAMETERS for IRP_MJ_CREATE_MAILSLOT union File System Drivers", "FLT_PARAMETERS union File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
+keywords: ["FLT_PARAMETERS for IRP_MJ_CREATE_MAILSLOT union File System Drivers", "FLT_PARAMETERS union File System Drivers", "PFLT_PARAMETERS union pointer File System Drivers"]
 topic_type:
 - apiref
 api_name:
@@ -60,7 +60,9 @@ Pointer to a [MAILSLOT_CREATE_PARAMETERS](https://docs.microsoft.com/windows-har
 
 ## Remarks
 
-The [FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for the [IRP_MJ_CREATE_MAILSLOT](irp-mj-create-mailslot.md) operation contains the parameters for an IRP-based **CreateMailslot** operation represented by a callback data ([FLT_CALLBACK_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an [FLT_IO_PARAMETER_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
+[FLT_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) contains a **CreateMailslot** structure when the I/O operation is IRP_MJ_CREATE_MAILSLOT. The I/O operation is represented by a ([FLT_CALLBACK_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure, with the operation parameters contained within the [FLT_IO_PARAMETER_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure that the callback data's *Iopb* parameter points to.
+
+A file system minifilter driver that has registered a callback routine for IRP_MJ_CREATE_MAILSLOT operations should perform any needed processing and return.
 
 Note that, other than the last longword field, the fields in the **CreateMailslot** structure must match those for the **Create** structure.
 
