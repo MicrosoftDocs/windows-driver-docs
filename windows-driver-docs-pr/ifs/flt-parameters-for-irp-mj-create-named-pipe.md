@@ -2,7 +2,10 @@
 title: FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_CREATE_NAMED_PIPE.
 ms.assetid: cbe7e523-3ae2-424b-a2e2-edaeb64c15c5
-keywords: ["FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE union File System Drivers", "FLT_PARAMETERS union File System Drivers", "PFLT_PARAMETERS union pointer File System Drivers"]
+keywords:
+- FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE union File System Drivers
+- FLT_PARAMETERS union File System Drivers
+- PFLT_PARAMETERS union pointer File System Drivers
 topic_type:
 - apiref
 api_name:
@@ -56,7 +59,7 @@ Reserved; do not use.
 Bitmask of share access rights requested for the named pipe file. If this parameter is zero, exclusive access is being requested. For more information, see the *ShareAccess* parameter to [**FltCreateNamedPipeFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatenamedpipefile).
 
 **Parameters**  
-Pointer to a [NAMED_PIPE_CREATE_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_named_pipe_create_parameters.md) structure containing information about the named pipe that is being created or opened.
+Pointer to a [NAMED_PIPE_CREATE_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_named_pipe_create_parameters) structure containing information about the named pipe that is being created or opened.
 
 ## Remarks
 
@@ -90,4 +93,4 @@ IRP_MJ_CREATE_NAMED_PIPE is an IRP-based operation.
 
 [IRP_MJ_CREATE_NAMED_PIPE](irp-mj-create-named-pipe.md)
 
-[NAMED_PIPE_CREATE_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_named_pipe_create_parameters.md)
+[NAMED_PIPE_CREATE_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_named_pipe_create_parameters)
