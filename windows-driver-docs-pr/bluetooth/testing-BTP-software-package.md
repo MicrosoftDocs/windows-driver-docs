@@ -193,4 +193,4 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 
 ### Known issues ###
 
--First release.
+- Stress tests: If the test is run in a tight loop there an issue where the peripheral radios will not have finished disconnecting after the pairing test reports success before the next test attempts to pair resulting in a failure.  There is a delay coded into the sample script remedy this. 
