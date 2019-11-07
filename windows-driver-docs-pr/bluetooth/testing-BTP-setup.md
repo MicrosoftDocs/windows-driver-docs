@@ -15,6 +15,11 @@ Using the supplied USB A-to-B cable plug the Traduci into a USB port on the syst
 ![Traduci showing USB and power ports](images/Traduci_USBPortSidejpg.jpg)
 
 ### Connecting peripherals to the Traduci 
+The Traduci has four 12 pin ports (labeled JA, JB, JC, JD)for periphal testing.  
+![Traduci showing USB and power ports](images/Traduci_12PinPortSide.jpg)
+
+
+
 
  Orient the Traduci so that LEDs and buttons are face up. Next orient the RN42 radio sled such that the printed label on the radio containing the MAC address is face up. Keeping this orientation, plug the RN42 radio in the 12 Pin port labeled JB.
 
