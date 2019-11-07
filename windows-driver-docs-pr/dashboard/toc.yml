@@ -237,6 +237,9 @@
       href: get-audience-data.md
     - name: "Driver package metadata"
       href: driver-package-metadata.md
+      items:
+      - name: "Create Publisher Driver Metadata"
+        href: create-publisher-metadata.md
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
   - name: "Dashboard Administration"
