@@ -62,7 +62,7 @@ Note that Secure Boot does not apply to Windows Vista and Windows 7.
 |--- |--- |--- |--- |--- |
 |**Architectures:**|64-bit only, no signature required for 32-bit|64-bit, 32-bit|64-bit, 32-bit|64-bit, 32-bit|
 |**Signature required:**|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|
-|**Signature algorithm:**|SHA1|SHA1|SHA2 or SHA1|SHA2|
+|**Signature algorithm:**|SHA2|SHA2|SHA2|SHA2|
 |**Certificate:**|Standard roots trusted by Code Integrity|Standard roots trusted by Code Integrity|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|
 
 In addition to driver code signing, you also need to meet the PnP device installation signing requirements for installing a driver.  For more info, see [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
