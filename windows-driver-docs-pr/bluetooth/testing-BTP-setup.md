@@ -8,15 +8,17 @@ ms.localizationpriority: medium
 ---
 
 # Setting up BTP
-
-
-### Setting up Traduci Hardware ###
-
+## Hardware setup 
+### Connecting Traduci to the PC 
 Using the supplied USB A-to-B cable plug the Traduci into a USB port on the system under test (SUT). Performance is best if the Traduci is plgged directly into an A port on the PC and the Traduci is powered through the barrel connector to the right of the USB connector.  Do not connect the Traduci to a USB hub.
 
 ![Traduci showing USB and power ports](images/Traduci_USBPortSidejpg.jpg)
 
+### Connecting peripherals to the Traduci 
+
  Orient the Traduci so that LEDs and buttons are face up. Next orient the RN42 radio sled such that the printed label on the radio containing the MAC address is face up. Keeping this orientation, plug the RN42 radio in the 12 Pin port labeled JB.
+
+## Software setup 
 
 #### Getting TAEF ####
 
