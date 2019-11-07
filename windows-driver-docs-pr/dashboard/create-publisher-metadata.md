@@ -2,7 +2,7 @@
 title: Create Publisher Driver Metadata
 description: Describes the API call to create publisher driver package metadata for Partner Center submissions.
 author: VanathiGanesh
-ms.author: VanathiGanesh
+ms.author: vaganesh
 ms.topic: article
 ms.date: 11/06/2019
 ---
