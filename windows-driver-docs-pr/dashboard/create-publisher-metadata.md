@@ -1,3 +1,12 @@
+---
+title: Create Publisher Driver Metadata
+description: Describes the API call to create publisher driver package metadata for Partner Center submissions.
+author: vaganesh
+ms.author: vaganesh
+ms.topic: article
+ms.date: 11/06/2019
+---
+
 # Create Publisher Driver Metadata
 
 Use this method in the Microsoft Hardware API to create the Publisher Driver Metadata for a submission. To learn more about the driver metadata package please see the [Driver package metadata](driver-package-metadata.md) page.
