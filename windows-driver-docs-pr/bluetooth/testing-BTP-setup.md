@@ -15,13 +15,13 @@ Using the supplied USB A-to-B cable plug the Traduci into a USB port on the syst
 ![Traduci showing USB and power ports](images/Traduci_USBPortSidejpg.jpg)
 
 ### Connecting peripherals to the Traduci 
-The Traduci has four 12 pin ports (labeled JA, JB, JC, JD)for periphal testing.  
+The Traduci has four 12 pin ports (labeled JA, JB, JC, JD) that used for periphals.
+
 ![Traduci showing USB and power ports](images/Traduci_12PinPortSide.jpg)
 
+To plug a peruipheral radio into a port on the Tradui, orient the Traduci so that LEDs and buttons are face up. Next orient the RN42 radio sled such that the printed label on the radio containing the MAC address is face up. Keeping this orientation, plug the RN42 radio in the 12 Pin port labeled JB.
 
-
-
- Orient the Traduci so that LEDs and buttons are face up. Next orient the RN42 radio sled such that the printed label on the radio containing the MAC address is face up. Keeping this orientation, plug the RN42 radio in the 12 Pin port labeled JB.
+![Traduci with peripheral plugged in](images/Traduci_and_DigilentRN42.jpg)
 
 ## Software setup 
 
@@ -44,26 +44,6 @@ Extract the files from the zip file to:
 
 - Disable secure boot (if enabled) in order to enable test signing. From an elevated command line on the SUT, run `setup-test.bat` to enable test signing and to reboot the machine.
 
-## Test Scripts ##
-
-### Pairing Script ###
-
-Once the system has rebooted, check that the green power indicator & the 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth Radio is powered on. Then from an elevated command prompt, run `test-pair.bat` to run the pairing tests with the RN42.  
-
-This script will check the firmware version to ensure that the latest version is present on the Traduci. If the version in the package is newer, the script will update it. Once the firmware has been checked, the pairing test will run. The red LED next to the 12 pin adapter will turn on once the command from the test to power the radio has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the radio being in an unknown state.
-
-### HID Script ##
-Once the system has rebooted, check that the green power indicator & the 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth Radio is powered on. Then from an elevated command prompt, run `test-hid.bat` to run the HID tests with the RN42.  
-
-This script will check the firmware version to ensure that the latest version is present on the Traduci. If the version in the package is newer, the script will update it. Once the firmware has been checked, the HID test will run. The red LED next to the 12 pin adapter will turn on once the command from the test to power the radio has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the radio being in an unknown state.
-
-### Capturing Logs ###
-
-To capture the Bluetooth logs, follow the instructions at https://aka.ms/BluetoothTracing.
-
-### Support ###
-
-Questions and comments about the tests should be sent to BTPSupport@microsoft.com.
 
 #### Known issues ####
 
