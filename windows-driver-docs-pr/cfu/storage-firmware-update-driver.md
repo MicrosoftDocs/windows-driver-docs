@@ -156,7 +156,7 @@ To view the new SWC node and hardware ID:
 
 1. In the **Properties** dialog window, select the **Details** tab, then select **Hardware Ids** from the **Property** drop down list view the Hardware ID for the **Generic software component** on the drive node.
 
-1. The SWC\* Hardware Id should match the one specified in the Extension INF.
+1. The SWC\\* Hardware Id should match the one specified in the Extension INF.
 
 ### View and install the NVMe disk firmware update
 
