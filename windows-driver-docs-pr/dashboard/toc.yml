@@ -231,10 +231,15 @@
         href: create-a-new-shipping-label.md
       - name: "Update a shipping label"
         href: update-a-shipping-label.md
+      - name: "Cancel a shipping label"
+        href: cancel-a-shipping-label.md
     - name: "Get audience data"
       href: get-audience-data.md
     - name: "Driver package metadata"
       href: driver-package-metadata.md
+      items:
+      - name: "Create Publisher Driver Metadata"
+        href: create-publisher-metadata.md
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
   - name: "Dashboard Administration"
