@@ -83,8 +83,8 @@ EvtAdapterCreateTxQueue(
     queueContext->QueueId = queueId;
 
     // Query checksum packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY extension;
-    NET_PACKET_EXTENSION_QUERY_INIT(
+    NET_EXTENSION_QUERY extension;
+    NET_EXTENSION_QUERY_INIT(
         &extension,
         NET_PACKET_EXTENSION_CHECKSUM_NAME,
         NET_PACKET_EXTENSION_CHECKSUM_VERSION_1);
@@ -92,7 +92,7 @@ EvtAdapterCreateTxQueue(
     NetTxQueueGetExtension(txQueue, &extension, &queueContext->ChecksumExtension);
 
     // Query Large Send Offload packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY_INIT(
+    NET_EXTENSION_QUERY_INIT(
         &extension,
         NET_PACKET_EXTENSION_LSO_NAME,
         NET_PACKET_EXTENSION_LSO_VERSION_1);
@@ -148,8 +148,8 @@ EvtAdapterCreateRxQueue(
     queueContext->QueueId = queueId;
 
     // Query the checksum packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY extension;
-    NET_PACKET_EXTENSION_QUERY_INIT(
+    NET_EXTENSION_QUERY extension;
+    NET_EXTENSION_QUERY_INIT(
         &extension,
         NET_PACKET_EXTENSION_CHECKSUM_NAME,
         NET_PACKET_EXTENSION_CHECKSUM_VERSION_1); 
