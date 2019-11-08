@@ -102,9 +102,9 @@ For more information, see [Using a Component INF file](https://docs.microsoft.co
 
 The StorFwUpdate component does not perform any validation (signature verification or decryption) of the firmware binary payload. If this level of feature is required then hardware partners can write their own storage firmware update driver.
 
-## Storage drive firmware updater example
+## Storage drive firmware update example
 
-Since both INFs require CHIDs for WU distribution,hardware partners can validate the solution locally using PNPUTIL.EXE as shown below.
+Since both INFs require CHIDs for WU distribution, hardware partners can validate the solution locally using PNPUTIL.EXE as shown below.
 
 ### Requirements
 
