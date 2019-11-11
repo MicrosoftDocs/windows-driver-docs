@@ -87,7 +87,7 @@
           items:
             - name: "Firmware measures"
               href: firmware-measures.md
-            - name: "Perent of machines reporting successful firmware installation from ESRT"
+            - name: "Percent of machines reporting successful firmware installation from ESRT"
               href: ESRT-pct-machines-reporting-successful-firmware-installation.md
             - name: "Percent of machinces exceeded firmware max retry limit from ESRT"
               href: ESRT-pct-machines-exceed-max-retry.md
@@ -99,9 +99,9 @@
               href: ESRT-7-day-brick-detector.md
             - name: "Percent of machines that successfully installed firmware and not heartbeat within 14 days"
               href: ESRT-14-day-brick-detector.md
-            - name: "Percent of machines that installed firmware and was blocked by bitlocker"
+            - name: "Percent of machines with pending firmware updates due to Bitlocker Risk"
               href: ESRT-pct-machines-blocked-bitlocker.md
-            - name: "Percent of machines that installed firmware and entered bitlocker recovery"
+            - name: "Percent of machines updated and successfully unlocked bitlocker recovery"
               href: ESRT-pct-machines-entered-bitlocker-recovery.md
         - name: "Graphics"
           items:
