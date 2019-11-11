@@ -10,7 +10,10 @@ ms.localizationpriority: medium
 
 ## Description
 
-% of machines successfully installing firmware that has not heartbeat for 14 days.   
+Percent of machines successfully installing firmware that has not heartbeat for 14 days.   
+
+The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that have not reported any telemetry in 14 days over machines that successfully installed the firmware
+
 This is to detect machines that have potentially bricked. 
 
 ## Measure attributes

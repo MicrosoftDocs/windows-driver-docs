@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
+The measure aggregates telemetry from a 28-day sliding window into a ratio of successful installs over attempts.
 A successful installation is defined where the following events happen:
 
 1. firmware w/ device instance starting with UEFI is installed via drvinst

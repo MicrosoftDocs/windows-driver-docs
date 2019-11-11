@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-% of machines that installed a firmware and was blocked by bitlocker 
+Percent of machines that installed a firmware and was blocked by bitlocker 
 
 ## Measure attributes
 

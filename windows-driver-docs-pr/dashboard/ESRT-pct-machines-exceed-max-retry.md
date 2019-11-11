@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 ## Description
 
-% of machines having successful installation that attempted to install a firmware and has exceeded the firmware max retry limit (defaults to 3)
+Percent of machines having successful installation that attempted to install a firmware and has exceeded the firmware max retry limit (defaults to 3)
+
+The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that hit max retry over machines that had an install event
 
 ## Measure attributes
 

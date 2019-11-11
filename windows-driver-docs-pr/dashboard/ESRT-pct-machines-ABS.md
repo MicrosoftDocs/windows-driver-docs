@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 ## Description
 
-% of machines with successful installations where the machine abnormally shutdown for reasons excluding bugcheck (which automatically triggers an ABS) or ungraceful power button shutdown within 3 days of install, and did not abnormally shutdown 3 days before install.
+Percent of machines with successful installations where the machine abnormally shutdown for reasons excluding bugcheck (which automatically triggers an ABS) or ungraceful power button shutdown within 3 days of install, and did not abnormally shutdown 3 days before install.
+
+The measure aggregates telemetry from a 28-day sliding window into a ratio of machines reported abnormal shutdown within 3 days of installation / machines successfuly installed
 
 ## Measure attributes
 

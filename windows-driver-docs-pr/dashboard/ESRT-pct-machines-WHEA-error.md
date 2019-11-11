@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 ## Description
 
-% of machines having successful installations that reported a fatal WHEA event (WheaProvider.WheaDriverErrorExternal) after firmware installation.
+Percent of machines having successful installations that reported a fatal WHEA event (WheaProvider.WheaDriverErrorExternal) after firmware installation.
+
+The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that have reported a fatal WHEA event over machines successfully installing firmware
 
 The WHEA event is only in WheaProvider.WheaDriverErrorExternal but is currently being backported to 19H1.
 

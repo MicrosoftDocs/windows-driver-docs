@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 ## Description
 
-% of machines that installed firmware and entered bitlocker recovery causing the customer recover by entering the bitlocker recovery key
+Percent of machines that installed firmware and entered bitlocker recovery causing the customer recover by entering the bitlocker recovery key
+
+The measure aggregates telemetry from a 28-day sliding window into a ratio of machines that reported a bitlocker recovery event over the machines that attempted a firmware install
 
 ## Measure attributes
 
