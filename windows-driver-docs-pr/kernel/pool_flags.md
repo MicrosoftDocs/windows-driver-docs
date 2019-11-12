@@ -74,4 +74,4 @@ Optional flags are satisfied by the pool allocator opportunistically. If the all
 
 ## See Also
 
-[**ExAllocatePool2**](windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2)
+[**ExAllocatePool2**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2)
