@@ -252,7 +252,7 @@
     href: allocating-system-space-memory.md
   - name: "POOL_FLAGS"
     href: pool_flags.md
-- name: "Map Registers"
+  - name: "Map Registers"
     href: map-registers.md
   - name: "Mapping Bus-Relative Addresses to Virtual Addresses"
     href: mapping-bus-relative-addresses-to-virtual-addresses.md
