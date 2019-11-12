@@ -10,8 +10,7 @@ ms.date: 11/12/2019: medium
 
 A ULONG64-typed value specifying the type of pool memory, attributes the memory is required to have, and attributes the memory can optionally have. Multiple flag values can be combined using bit-wise OR.
 
-
-```ini
+```cpp
 //
 // POOL_FLAG values
 //
