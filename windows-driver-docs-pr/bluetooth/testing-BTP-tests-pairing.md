@@ -1,77 +1,46 @@
 ---
 title: Microsoft Bluetooth Test Platform
-description: Bluetooth Test Platform (BTP) overview.
+description: Bluetooth Test Platform (BTP) pairing tests.
 ms.assetid: 19caf4db-9303-47d1-be12-5ff4b2710bc8
 ms.date: 4/17/2019
 ms.localizationpriority: medium
 
 ---
 
-# Bluetooth Test Platform (BTP)
+# BTP Pairing Tests
 
-The Bluetooth Test Platform (BTP) is a software package to for automating testing of bluetooth hardware & software. It can be used to exercise bluetooth radios in the host (inside the PC) and peripheral radios. 
+The BTP pairing tests will test the ability of the local system to pair to and unpair from a remote radio over BR/EDR or LE.
 
-The Bluetooth Test Platform (BTP) is the software component of Microsoft's latest automated Bluetooth testing. The Traduci is the hardware platform that the BTP runs on and supports peripheral radios to be plugged into it. The package consists of software tests, a firmware package, a provisioning tool  the Traduci board and a set of peripheral radios used for testing basic functionality.
+### Setting Up ##
 
-As this time the only supported radio is the RN42. Purchasing information for the Traduci, RN42 and future radios can be found below.
+First check that the green power indicator and the 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate radio(s) are correctly plugged in to the Traduci. More detailed information on this can be found [here](testing-BTP-setup.md).
 
-### Devices ###
+At this time the only supported radios for HID tests are the RN42 and the Bluefruit. Purchasing information for the Traduci, RN42, Bluefruit, and future radios can be found [here](testing-BTP-supported-hardware.md).
 
-Traduci board
-[**MCCI**](https://mcci.com/usb/dev-tools/model-2411/)
+### Running the Pairing Tests ##
 
-![Photo of the Traduci board](images/Traduci_Overhead.jpg)
+Navigate to the folder where the BTP package was extracted. It will tipically be under `C:\BluetoothTestPlatform`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:
 
-RN42 Radio Sled
-[**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
-![Photo of the RN42 Radio on a Digilent sled](images/Traduci_and_DigilentRN42.jpg)
+- `RunPairingTests.bat` from an elevated command prompt or
+- `RunPairingTests.ps1` from an elevated PowerShell console
 
-### Setting up Traduci Hardware ###
+This will run the pairing tests with the RN42. The RN42 is a BR/EDR only radio.
 
-Using the supplied USB A-to-B cable plug the Traduci into a USB port on the system under test (SUT). Performance is best if the USB A port on the PC is directly powered & not on an internal hub. Orient the Traduci so that LEDs and buttons are face up. Next orient the RN42 radio sled such that the printed label on the radio containing the MAC address is face up. Keeping this orientation, plug the RN42 radio in the 12 Pin port labeled JB.
+You may also run tests with the Bluefruit radio. The Bluefruit is an LE only radio. After following the same precautions as the RN42 described above, run either:
 
-#### Getting TAEF ####
+- `RunPairingTests.bat bluefruit` from an elevated command prompt or
+- `RunPairingTests.ps1 bluefruit` from an elevated PowerShell console
 
-Follow the instructions to download TAEF from [**docs.microsoft.com**](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/getting-started)
+You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
-To enable the use of the scripts for running tests, copy the TAEF binaries to:
-
-- `c:\Taef`
-
-#### Getting BTP binaries ####
-
-Download the test binaries from link
-  
-Extract the files from the zip file to:
-- `c:\BTP`
-
-### Setting up the System ###
-
-- Disable secure boot (if enabled) in order to enable test signing. From an elevated command line on the SUT, run `setup-test.bat` to enable test signing and to reboot the machine.
-
-## Test Scripts ##
-
-### Pairing Script ###
-
-Once the system has rebooted, check that the green power indicator & the 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth Radio is powered on. Then from an elevated command prompt, run `test-pair.bat` to run the pairing tests with the RN42.  
-
-This script will check the firmware version to ensure that the latest version is present on the Traduci. If the version in the package is newer, the script will update it. Once the firmware has been checked, the pairing test will run. The red LED next to the 12 pin adapter will turn on once the command from the test to power the radio has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the radio being in an unknown state.
-
-### HID Script ##
-Once the system has rebooted, check that the green power indicator & the 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth Radio is powered on. Then from an elevated command prompt, run `test-hid.bat` to run the HID tests with the RN42.  
-
-This script will check the firmware version to ensure that the latest version is present on the Traduci. If the version in the package is newer, the script will update it. Once the firmware has been checked, the HID test will run. The red LED next to the 12 pin adapter will turn on once the command from the test to power the radio has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the radio being in an unknown state.
+As a test starts the red LED next to the 12 pin adapter will turn on once the command from the test to power the radio has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the radio being in an unknown state.
 
 ### Capturing Logs ###
 
 To capture the Bluetooth logs, follow the instructions at https://aka.ms/BluetoothTracing.
 
-### Support ###
-
-Questions and comments about the tests should be sent to BTPSupport@microsoft.com.
-
-#### Known issues ####
+### Known issues ###
 
 - Power: If the device is plugged into a non-powered hub or VCC is not able to supply 5V intermittent failures may be seen. Please remedy by using a powered USB hub or use a 9V AC-DC Barrel adapter.
 
-- Stress tests: If the test is run in a tight loop there an issue where the radios will not have finished disconnecting after the pairing test reports success before the next test attempts to pair resulting in a failure.
+- Stress tests: If a test is run in a tight loop using an LE radio it may hit a problem that can cause pairing or unpairing to fail.

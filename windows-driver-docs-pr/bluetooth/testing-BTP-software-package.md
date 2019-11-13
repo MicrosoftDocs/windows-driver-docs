@@ -1,24 +1,26 @@
 ---
 title: Microsoft Bluetooth Test Platform
-description: Bluetooth Test Platform (BTP) overview.
+description: Bluetooth Test Platform (BTP) software package.
 ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
 ms.date: 4/17/2019
 ms.localizationpriority: medium
 
 ---
 
-# Tools in the BTP software package
+# BTP software package
 
-The BTP software package contains several tools to be used for testing the Bluetooth. BTP is intended to be an extensible framework.  Examples of extending BTP hardware, software, and tests can be found on GitHub. 
-
+The BTP software package contains several tools to be used for testing Bluetooth scenarios.
 
 ## Download the BTP Software Package ##
-The Bluetooth Test Platform (BTP) software package contains test tools for hardware test engineers to test interoperability of their Bluetooth enabled peripherals and systems with the Microsoft Bluetooth driver stack. The included documentation provides a brief overview of the ways to configure your hardware and suggests topologies for best test coverage. The documentation also contains procedural information about how to run the tests, trace events in the Bluetooth driver stack, and capture information in the kernel debugger.
+
+The Bluetooth Test Platform (BTP) software package contains test tools for hardware test engineers to test interoperability of their Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure your hardware and suggests topologies for best test coverage. The documentation also contains procedural information about how to run the tests, trace events in the Bluetooth driver stack, and capture information in the kernel debugger.
 
 ## Version Updates ##
-Changes for version xx.yy
-- Moving BTP from private preview to public.  Woohoo!!  ;)
 
+Changes for version 1.2.0:
+- Moving BTP from private preview to public.
+- Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.
+- Several fixes and improvements to test reliability.
 
 ## Tools in the package ##
 
@@ -41,7 +43,7 @@ Changes for version xx.yy
         <td>ConfigureMachineForBtp</a></td>
         <td>
             <ul>
-                <li>Comes as either a CMD script or a PowerShell script.</li>
+                <li>Provided both as a CMD script and a PowerShell script.</li>
                 <li>Configures a test machine for running BTP tests.</li>
                 <li>Meant to be run before any tests.</li>
             </ul>
@@ -55,7 +57,7 @@ Changes for version xx.yy
         <td>RunPairingTests</a></td>
         <td>
             <ul>
-                <li>Comes as either a CMD script or a PowerShell script.</li>
+                <li>Provided both as a CMD script and a PowerShell script.</li>
                 <li>Runs the Bluetooth pairing tests.</li>
                 <li>Supports custom arguments if provided.</li>
             </ul>
@@ -69,7 +71,7 @@ Changes for version xx.yy
         <td>RunHIDTests</a></td>
         <td>
             <ul>
-                <li>Comes as either a CMD script or a PowerShell script.</li>
+                <li>Provided both as a CMD script and a PowerShell script.</li>
                 <li>Runs the Bluetooth HID tests.</li>
                 <li>Supports custom arguments if provided.</li>
             </ul>
@@ -114,7 +116,7 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
         <td>
             <ul>
                 <li>Test binary for Bluetooth HID tests.</li>
-                <li>Can be run using TAEF or via the provided script.</li>
+                <li>Can be run using TAEF or via the provided scripts.</li>
             </ul>
         </td>
         <td>HidTests.dll</td>
@@ -134,7 +136,7 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
         <td>LocalRadioAdapter</a></td>
         <td>
             <ul>
-                <li>Binary needed to support tests that use the local Bluetooth radio.</li>
+                <li>Binary needed to support tests that use the local Windows Bluetooth radio.</li>
             </ul>
         </td>
         <td>
@@ -157,7 +159,7 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
         <td>
             <ul>
                 <li>Test binary for Bluetooth Pairing tests.</li>
-                <li>Can be run using TAEF or via the provided script.</li>
+                <li>Can be run using TAEF or via the provided scripts.</li>
             </ul>
         </td>
         <td>
@@ -190,7 +192,3 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
     </tr>
     </tbody>
 </table>
-
-### Known issues ###
-
-- Stress tests: If the test is run in a tight loop there an issue where the peripheral radios will not have finished disconnecting after the pairing test reports success before the next test attempts to pair resulting in a failure.  There is a delay coded into the sample script remedy this. 

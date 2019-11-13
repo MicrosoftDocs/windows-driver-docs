@@ -9,10 +9,10 @@ ms.localizationpriority: medium
 
 # Bluetooth Test Platform (BTP)
 
-The **B**luetooth **T**est **P**latform (BTP) is designed for automating testing of bluetooth hardware, drivers and software. BTP can be used to exercise bluetooth radios in the host (inside the PC) and peripheral radios. 
+The **B**luetooth **T**est **P**latform (BTP) is designed for automating testing of Bluetooth hardware, drivers, and software. BTP can be used to exercise Bluetooth radios in the host (inside the PC) and peripheral radios. BTP is intended to be an extensible framework. Guidance on and examples of extending BTP hardware, software, and tests will be available soon.
 
 ![Test Overview - Hardware View](images/btp-hwOverview.png)
 
-The Bluetooth Test Platform (BTP) is the software component of Microsoft's latest automated Bluetooth testing. The Traduci is the hardware platform that the BTP runs on and supports peripheral radios to be plugged into it. The package consists of software tests, a firmware package, a provisioning tool  the Traduci board and a set of peripheral radios used for testing basic functionality.
+The Bluetooth Test Platform (BTP) is the software component of Microsoft's latest automated Bluetooth testing. The Traduci is a hardware platform used by BTP that supports power management and sideband control of peripheral radios plugged into it. The package consists of software tests, a firmware package, a provisioning tool, the Traduci board, and a set of peripheral radios used for testing basic functionality.
 
 ![Test Overview - Software View](images/btp-swOverview.png)

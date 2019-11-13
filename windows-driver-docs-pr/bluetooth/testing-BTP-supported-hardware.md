@@ -1,6 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform
-description: Bluetooth Test Platform (BTP) Supported Hardware.
+description: Bluetooth Test Platform (BTP) supported hardware.
 ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
 ms.date: 4/17/2019
 ms.localizationpriority: medium
