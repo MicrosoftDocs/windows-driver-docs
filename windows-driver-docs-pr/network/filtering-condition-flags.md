@@ -468,7 +468,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x02000000</p>
 </td>
 <td>
-<p>Indicates that the current classification is being performed to honor the intention of a redirected Universal Windows app to connect to a specified host. Such a classification will contain the same classifiable field values as if the app were never redirected. The flag also indicates that a future classification will be invoked to match the effective redirected destination. If the app is redirected to a proxy service for inspection, it also means a future classification will be invoked on the proxy connection. Callout drivers should generally allow this classification.</p>
+<p>Indicates that the current classification is being performed to honor the intention of a redirected Universal Windows app to connect to a specified host. Such a classification will contain the same classifiable field values as if the app were never redirected. The flag also indicates that a future classification will be invoked to match the effective redirected destination. If the app is redirected to a proxy service for inspection, it also means a future classification will be invoked on the proxy connection. Callouts should use FWPS_FIELD_ALE_AUTH_CONNECT_V4_ALE_ORIGINAL_APP_ID to find the appid of the (original) redirected connection.</p>
 <p>This flag is applicable at the following filtering layers in Windows Server 2012, Windows 8, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V4</dd>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V6</dd>
