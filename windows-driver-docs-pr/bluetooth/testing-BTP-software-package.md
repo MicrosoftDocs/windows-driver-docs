@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 ---
 
-# BTP software package
+# The BTP Software Package
 
 The BTP software package contains several tools to be used for testing Bluetooth scenarios.
 

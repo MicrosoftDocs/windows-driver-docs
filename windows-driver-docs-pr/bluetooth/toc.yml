@@ -91,15 +91,15 @@
     - name: "Bluetooth Test Platform (BTP)"
       href: testing-BTP-Overview.md
       items:
-      - name: "Tools in the BTP software package"
+      - name: "The BTP Software Package"
         href: testing-BTP-software-package.md
-      - name: "Supported BTP hardware"
+      - name: "Supported BTP Hardware"
         href: testing-BTP-supported-hardware.md
-      - name: "Setting up BTP"
+      - name: "Setting Up BTP"
         href: testing-BTP-setup.md
       - name: "BTP Tests"
         href: testing-BTP-Tests.md
-        items:        
+        items:
         - name: "Testing Bluetooth Pairing"
           href: testing-BTP-tests-pairing.md
         - name: "Testing Bluetooth HID"
