@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-Percent of machines that installed a firmware and was blocked by bitlocker 
+Percent of machines with pending firmware updates due to the risk of entering bitlocker recovery post install. This is due to customers running versions less than Windows 10 w/ June 2018 cumulative updates.
 
 ## Measure attributes
 
