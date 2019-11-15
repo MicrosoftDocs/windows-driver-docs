@@ -1,3 +1,11 @@
+---
+title: Cancel a shipping label
+description: Use this method in the Microsoft Hardware API to request cancellation of a shipping label in Microsoft Approval or Gradual Rollout.
+ms.topic: article
+ms.date: 11/13/2019
+ms.localizationpriority: medium
+---
+
 # Cancel a shipping label
 
 Use this method in the *Microsoft Hardware API* to request cancellation of a shipping label in Microsoft Approval or Gradual Rollout. Before using this method, make sure your shipping label is in Microsoft Approval or Gradual Rollout. For more info about getting a shipping label, see [Get a new shipping label](get-a-shipping-label.md).
