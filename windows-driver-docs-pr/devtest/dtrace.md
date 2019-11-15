@@ -11,7 +11,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/04/2019
+ms.date: 11/14/2019
 ms.localizationpriority: medium
 ---
 
@@ -68,7 +68,6 @@ The following are some of the providers available on Windows and what they instr
 ### SYSCALL
 
 SYSCALL provides a pair of probes for each system call: an entry probe that fires before the system call is entered, and a return probe that fires after the system call has completed but before control has transferred back to user-level. For all SYSCALL probes, the function name is set to be the name of the instrumented system call and the module name is the module in which the function exists. The names of the system calls as provided by the SYSCALL provider may be found by typing the command `dtrace.exe -l -P syscall` from the command prompt. Note that the probe name is lower case syscall. The command `dtrace -ln syscall:::` will also list all the probes and their parameters available from the syscall provider.
-
 
 ```dtrace
 C:\> dtrace -ln syscall:::
@@ -173,7 +172,13 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
 ## Installing DTrace under Windows
 
-1. Install MSI installation files from the Microsoft Download Center - [Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441).
+1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Insider Preview Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.*
+
+   The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/en-us/download/58091). Note that this version of DTrace is no longer supported.
+
+
+1. Download the MSI installation file from the Microsoft Download Center - [Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441).
+
 
 2. Select the Complete install.
 
@@ -197,17 +202,17 @@ Configure VSM (Virtual Secure Mode) on the machine for enabling kernel function 
 To do this, use the REG Add command, like this:
 
 ```cmd
-REG ADD HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\ /v EnableVirtualizationBasedSecurity /t REG_DWORD /d 1 
+REG ADD HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\ /v EnableVirtualizationBasedSecurity /t REG_DWORD /d 1
 ```
 
-Some DTrace command use Windows symbols. To use these symbols create a symbols directory and set the symbols path:  
+Some DTrace command use Windows symbols. To use Windows symbols create a symbols directory and set the symbols path:  
 
 ```cmd
 mkdir c:\symbols
 set _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols 
 ```
 
-For more information about symbols paths, see [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path)
+For more information about symbols paths, see [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path).
 
 ### Using DTrace inside of a Virtual Machine
 
@@ -225,7 +230,7 @@ Use the -l option to list the active probes. If DTrace is active many probes sho
 
 Open a Windows command prompt as an administrator to enter DTrace commands.
 
-```dtrace 
+```dtrace
 C:\> dtrace -l
 
 ...
