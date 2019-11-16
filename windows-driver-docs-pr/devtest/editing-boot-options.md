@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 This section is a practical guide to editing the boot options on a computer running Windows 10, Windows 8, Windows Server 2012, Windows 7, or Windows Server 2008. It suggests a step-by-step procedure for customizing the basic elements of boot options.
 
-This section describes a method of using BCDEdit, a tool included with the operating system. For information about BCDEdit command syntax, type **bcdedit /?** or **bcdedit /? TOPICS** in a Command Prompt window. See [BCD Boot Options Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) for more information.
+This section describes a method of using BCDEdit, a tool included with the operating system. For information about BCDEdit command syntax, type **bcdedit /?** or **bcdedit /? TOPICS** in a Command Prompt window. See [BCD Boot Options Reference](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/bcd-boot-options-reference) for more information.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
@@ -40,6 +40,9 @@ Then, to make testing quicker and easier:
 - [Make the new boot entry the default entry](changing-the-default-boot-entry.md).
 
 -  [Change the boot menu time-out](changing-the-boot-menu-time-out.md). You can shorten the boot menu time-out so that Windows boots quickly. Or, lengthen the boot menu time-out so that you have ample time to select the preferred boot entry.
+
+# Related Topics 
+ [BCDEdit Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/bcdedit-command-line-options)
 
 > [!CAUTION]
 > Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
