@@ -13,7 +13,7 @@ The driver samples in this directory provide a starting point for writing a cust
 | Sample | Description
 | --- | --- |
 | [CDFS File System Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/cdfs-file-system-driver) | The CD-ROM file system driver (cdfs) sample is a file system driver for removable media. |
-| [fastfat File System Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/fastfat-file-system-driver) A file system driver based on the Windows inbox FastFAT file system used as a model for new file systems. |
+| [fastfat File System Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/fastfat-file-system-driver) | A file system driver based on the Windows inbox FastFAT file system used as a model for new file systems. |
 | [AvScan File System Minifilter Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/avscan-file-system-minifilter-driver) | This filter is a transaction-aware file scanner that examines data in files. Anti-virus might operate in this fashion. |
 | [CancelSafe File System Minifilter Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/cancelsafe-file-system-minifilter-driver) | A minifilter demonstrating the use of cancel-safe queues. |
 | [CDO File System Minifilter Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/cdo-file-system-minifilter-driver) | An example of using a control device object (CDO) with a minifilter. |
