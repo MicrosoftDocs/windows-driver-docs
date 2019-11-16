@@ -430,8 +430,6 @@
         href: error-handling-in-storport-miniport-drivers.md
       - name: "Interlocked Operations in Storport Miniport Drivers"
         href: interlocked-operations-in-storport-miniport-drivers.md
-      - name: "NVMe Storage Driver"
-        href: nvme-storage-driver.md
       - name: "Upgrading Firmware for an NVMe Device"
         href: upgrading-firmware-for-an-nvme-device.md
       - name: "Registry Entries for StorPort Miniport Drivers"
