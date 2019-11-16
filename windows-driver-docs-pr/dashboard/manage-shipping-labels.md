@@ -20,6 +20,7 @@ Methods for managing shipping labels
 |:--|:--|:--|
 |[Create a new shipping label](create-a-new-shipping-label.md)|POST|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|
 |[Update a shipping label](update-a-shipping-label.md)|PATCH|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|
+|[Cancel a shipping label](cancel-a-shipping-label.md)|PUT|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId/cancel}`|
 
 ## Create a new shipping label
 

@@ -83,6 +83,26 @@
             href: camera-photo-failure-rate.md
           - name: "Percent of Camera video and stream failures"
             href: camera-video-and-stream-failure-rate.md
+        - name: "Firmware"
+          items:
+            - name: "Firmware measures"
+              href: firmware-measures.md
+            - name: "Percent of machines reporting successful firmware installation from ESRT"
+              href: ESRT-pct-machines-reporting-successful-firmware-installation.md
+            - name: "Percent of machinces exceeded firmware max retry limit from ESRT"
+              href: ESRT-pct-machines-exceed-max-retry.md
+            - name: "Percent of machines with WHEA error after firmware installation"
+              href: ESRT-pct-machines-WHEA-error.md
+            - name: "Percent of machines with abnormal shutdown not due to bugcheck or power button"
+              href: ESRT-pct-machines-ABS.md
+            - name: "Percent of machines that successfully installed firmware and not heartbeat within 7 days"
+              href: ESRT-7-day-brick-detector.md
+            - name: "Percent of machines that successfully installed firmware and not heartbeat within 14 days"
+              href: ESRT-14-day-brick-detector.md
+            - name: "Percent of machines with pending firmware updates due to Bitlocker Risk"
+              href: ESRT-pct-machines-blocked-bitlocker.md
+            - name: "Percent of machines updated and successfully unlocked bitlocker recovery"
+              href: ESRT-pct-machines-entered-bitlocker-recovery.md
         - name: "Graphics"
           items:
           - name: "Graphics measures"
@@ -111,6 +131,10 @@
               href: user-mode-reliability-for-crashes-in-windows-components.md
             - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
               href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
+            - name: "Number of crashes and hangs in UWP games, normalized by usage, is less than or equal to the baseline goal"
+              href: graphics-game-reliability-uwp-crashes-hangs-by-usage.md
+            - name: "Number of crashes and hangs in Win32 games, normalized by usage, is less than or equal to the baseline goal"
+              href: graphics-game-reliability-win32-crashes-hangs-by-usage.md
           - name: "Ecosystem audience measures"
             items:
             - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
@@ -231,10 +255,15 @@
         href: create-a-new-shipping-label.md
       - name: "Update a shipping label"
         href: update-a-shipping-label.md
+      - name: "Cancel a shipping label"
+        href: cancel-a-shipping-label.md
     - name: "Get audience data"
       href: get-audience-data.md
     - name: "Driver package metadata"
       href: driver-package-metadata.md
+      items:
+      - name: "Create Publisher Driver Metadata"
+        href: create-publisher-metadata.md
   - name: "File signing LSA plugins and UEFI firmware"
     href: lsa-and-uefi-file-signing.md
   - name: "Dashboard Administration"
@@ -295,3 +324,4 @@
     href: windows-device-experience-list.md
   - name: "Windows Certified Products List"
     href: windows-certified-products-list.md
+ 
