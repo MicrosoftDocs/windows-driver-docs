@@ -133,40 +133,37 @@ These options can be combined. For example, the command **.dump /mfiu** can be u
 
 ## <span id="creating"></span><span id="CREATING"></span>Creating a User-Mode Dump File
 
-There are several different tools that can be used to create a user-mode dump file: CDB, WinDbg, Windows Error Reporting (WER), UserDump, and ADPlus.
+There are several different tools that can be used to create a user-mode dump file: CDB, WinDbg, Windows Error Reporting (WER), UserDump, and Sysinternal's ProcDump.
 
-For information about creating a user-mode dump file through ADPlus, see [ADPlus](adplus.md).
+For information about creating a user-mode dump file through ProcDump, see [Sysinternal's Procdump](https://aka.ms/procdump)).
 
 For information about creating a user-mode dump file through WER, see [Windows Error Reporting](windows-error-reporting.md).
 
 
 ## <span id="ddk_choosing_the_best_tool_dbg"></span><span id="DDK_CHOOSING_THE_BEST_TOOL_DBG"></span>Choosing the Best Tool
 
-There are several different tools that can create user-mode dump files. In most cases, ADPlus is the best tool to use.
+There are several different tools that can create user-mode dump files. In most cases, Sysinternal's ProcDump is the best tool to use.
 
 The following table shows the features of each tool.
 
 <table>
 <colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th align="left">Feature</th>
-<th align="left"><a href="adplus.md" data-raw-source="[ADPlus](adplus.md)">ADPlus</a></th>
+<th align="left"><a href="https://aka.ms/procdump" data-raw-source="[ProcDump](#procdump)">Sysinternal's ProcDump</a></th>
 <th align="left"><a href="windows-error-reporting.md" data-raw-source="[Windows Error Reporting](windows-error-reporting.md)">Windows Error Reporting</a></th>
 <th align="left"><a href="#cdb-windbg" data-raw-source="[CDB and WinDbg](#cdb-windbg)">CDB and WinDbg</a></th>
-<th align="left"><a href="#userdump" data-raw-source="[UserDump](#userdump)">UserDump</a></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p>Creating a dump file when an application crashes (postmortem debugging)</p></td>
-<td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
@@ -176,27 +173,23 @@ The following table shows the features of each tool.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Creating a dump file when an application encounters an exception</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Creating a dump file while an application is running normally</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
+<td align="left"><p>Yes</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Creating a dump file from an application that fails during startup</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
+<td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 </tr>
 <tr class="even">
@@ -204,14 +197,16 @@ The following table shows the features of each tool.
 <td align="left"><p>No</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p>No</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span>CDB and WinDbg
+## <span id="ProcDump"></span><span id="ProcDump"></span>Sysinternal's ProcDump
 
+Sysinternal's ProcDump can create user-mode dump files in a variety of ways. For more info and to download these tools, see [Sysinternal's ProcDump](https://aka.ms/procdump) and follow the instructions on that page.
+
+
+## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span>CDB and WinDbg
 
 CDB and WinDbg can create user-mode dump files in a variety of ways.
 
@@ -229,14 +224,6 @@ This command does not cause the target application to terminate. By selecting th
 
 CDB and WinDbg can also be used to *shrink* a dump file. To do this, begin debugging an existing dump file, and then use the **.dump** command to create a dump file of smaller size.
 
-
-## <span id="userdump"></span><span id="USERDUMP"></span>UserDump
-
-The UserDump tool (Userdump.exe), also known as User-Mode Process Dump, can create user-mode dump files.
-
-UserDump and its documentation are part of the OEM Support Tools package.
-
-For more info and to download these tools, see [How to use the Userdump.exe tool to create a dump file](https://go.microsoft.com/fwlink/p/?LinkId=241339) and follow the instructions on that page. Additionally, When CDB or WinDbg is debugging a user-mode application, you can also use the [.dump (Create Dump File) command](-dump--create-dump-file-.md) to create a dump file.
 
 
 
