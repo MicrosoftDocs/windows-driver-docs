@@ -104,10 +104,10 @@ Visual Studio Build Tools, the SDK, and the WDK. This environment
 doesn't include all the features available in Visual Studio, such as
 the integrated development environment (IDE).
 
-Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](https://docs.microsoft.com/en-us/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](https://docs.microsoft.com/en-us/dotnet/framework/install/guide-for-developers).
+Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](https://docs.microsoft.com/dotnet/framework/install/guide-for-developers).
 
 For more information about the EWDK, see
-[Using the Enterprise WDK 10](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/using-the-enterprise-wdk).
+[Using the Enterprise WDK 10](https://docs.microsoft.com/windows-hardware/drivers/develop/using-the-enterprise-wdk).
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
@@ -142,7 +142,7 @@ Framework 4.0.
 > [!IMPORTANT]
 > Newer versions of the Visual C++ 2010 Redistributable can cause
 > issues when you install the SDK for Windows 7. For more information, see
-> [Windows SDK Fails to Install with Return Code 5100](https://support.microsoft.com/en-us/help/2717426/windows-sdk-fails-to-install-with-return-code-5100) on Microsoft Support.
+> [Windows SDK Fails to Install with Return Code 5100](https://support.microsoft.com/help/2717426/windows-sdk-fails-to-install-with-return-code-5100) on Microsoft Support.
 
 Get the standalone debugging tools for Windows XP by first downloading
 the Windows 7 SDK:
