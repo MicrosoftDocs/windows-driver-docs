@@ -12,7 +12,7 @@ ms.technology: windows-devices
 
 You can browse and download individual Windows 10 driver samples on the [Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
 
-Earlier versions of Windows driver samples are archived here:
+Earlier versions of Windows driver samples are archived on GitHub:
 
 - [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
 
