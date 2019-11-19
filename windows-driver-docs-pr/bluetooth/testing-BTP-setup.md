@@ -43,6 +43,9 @@ To plug a peripheral radio into a port on the Tradui, orient the Traduci so that
 - From an elevated command line on the SUT, run `setup-test.bat` to enable test signing
 - Reboot the machine under test.
 
+### Step 4 - Start testing
+Refer to [BTP tests](testing-BTP-Tests.md) for running test scripts in the package.
+
 
 ## Known issues
 
