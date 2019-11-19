@@ -40,11 +40,15 @@ For more information about the Windows 10 driver samples available for a specifi
 
 - [General-purpose input/output (GPIO) driver samples](general-purpose-input-output--gpio--driver-samples.md)
 
+- [Global Navigation Satellite System (GNSS) driver samples](gnss-location-driver-samples.md)
+
 - [Human interface devices (HID) driver samples](human-interface-devices--hid--driver-samples.md)
 
 - [Input driver samples](input-driver-samples.md)
 
 - [Networking driver samples](networking-driver-samples.md)
+
+- [Near field communication (NFC) driver samples](near-field-communication--nfc--driver-samples.md)
 
 - [Near field proximity (NFP) driver samples](near-field-proximity--nfp--driver-samples.md)
 
