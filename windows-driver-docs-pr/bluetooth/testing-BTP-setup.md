@@ -27,27 +27,23 @@ To plug a peripheral radio into a port on the Tradui, orient the Traduci so that
 ![Traduci with peripheral plugged in](images/Traduci_and_DigilentRN42.jpg)
 
 ## Software setup 
+### Step 1 - Get TAEF
 
-#### Getting TAEF ####
+- Follow the instructions to download TAEF from [**docs.microsoft.com**](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/getting-started)
+- Copy the TAEF binaries to `c:\Taef`.
 
-Follow the instructions to download TAEF from [**docs.microsoft.com**](https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/getting-started)
+### Step 2 - Getting BTP binaries 
 
-To enable the use of the scripts for running tests, copy the TAEF binaries to:
+- Download the [BTP software package](testing-BTP-software-package.md).  
+- Extract the files from the zip file to `c:\BTP`.
 
-- `c:\Taef`
+### Step 3 - Setting up the System 
 
-#### Getting BTP binaries ####
-
-Download the test binaries from link
-  
-Extract the files from the zip file to:
-- `c:\BTP`
-
-### Setting up the System ###
-
-- Disable secure boot (if enabled) in order to enable test signing. From an elevated command line on the SUT, run `setup-test.bat` to enable test signing and to reboot the machine.
+- Ensure secure boot is [disabled](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot).
+- From an elevated command line on the SUT, run `setup-test.bat` to enable test signing
+- Reboot the machine under test.
 
 
-#### Known issues ####
+## Known issues
 
 - Power: If the device is plugged into a non-powered hub or VCC is not able to supply 5V intermittent failures may be seen. Please remedy by using a powered USB hub or use a 9V AC-DC Barrel adapter.
