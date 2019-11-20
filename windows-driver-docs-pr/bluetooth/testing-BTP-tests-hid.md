@@ -40,7 +40,4 @@ As a test starts the red LED next to the 12 pin adapter will turn on once the co
 To capture the Bluetooth logs, follow the instructions at https://aka.ms/BluetoothTracing.
 
 ### Known issues ###
-
-- Power: If the device is plugged into a non-powered hub or VCC is not able to supply 5V intermittent failures may be seen. Please remedy by using a powered USB hub or use a 9V AC-DC Barrel adapter.
-
 - Stress tests: If a test is run in a tight loop using an LE radio it may hit a problem that can cause pairing or unpairing to fail.
