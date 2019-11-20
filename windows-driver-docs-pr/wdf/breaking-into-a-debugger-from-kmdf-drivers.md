@@ -26,7 +26,7 @@ If you want your framework-based driver to break into a kernel-mode debugger, yo
 
 -   The [**DbgPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex) and [**KdPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex) functions supply a displayable text message to the debugger.
 
-The code for the WDFVERIFY and VERIFY\_IS\_IRQL\_PASSIVE\_LEVEL macros is included in your driver when you build your driver in a release or debug configuration (referred to as a free build environment or a checked build environment in Windows 7 and earlier). The code for the ASSERT and ASSERTMSG macros is included in your driver only when you build your driver in a debug configuration.
+The code for the WDFVERIFY and VERIFY\_IS\_IRQL\_PASSIVE\_LEVEL macros is included in your driver when you build your driver in a release or debug configuration. The code for the ASSERT and ASSERTMSG macros is included in your driver only when you build your driver in a debug configuration.
 
 For more information about project configurations, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 

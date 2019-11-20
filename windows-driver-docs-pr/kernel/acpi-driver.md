@@ -52,7 +52,13 @@ Revision 5.0 of the ACPI specification introduces a set of features to support l
 ## ACPI debugging
 
 
-System integrators and ACPI device driver developers can use the Microsoft [AMLI debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction-to-the-amli-debugger) to debug AML code. Because AML is an interpreted language, AML debugging requires special software tools. Checked versions of the Windows ACPI driver, Acpi.sys, contain a debugger component to support AML debugging. For more information about the AMLI debugger, see [ACPI Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/acpi-debugging). For information about how to download a checked build of Windows, see [Downloading a Checked Build of Windows](https://docs.microsoft.com/windows-hardware/drivers/devtest/obtaining-the-checked-build). For information about compiling ACPI Source Language (ASL) into AML, see [Microsoft ASL Compiler](https://docs.microsoft.com/windows-hardware/drivers/bringup/microsoft-asl-compiler).
+System integrators and ACPI device driver developers can use the Microsoft [AMLI debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction-to-the-amli-debugger) to debug AML code. Because AML is an interpreted language, AML debugging requires special software tools.
+
+Checked versions of the Windows ACPI driver, Acpi.sys, contain a debugger component to support AML debugging.
+
+For more information about the AMLI debugger, see [ACPI Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/acpi-debugging).
+
+For information about compiling ACPI Source Language (ASL) into AML, see [Microsoft ASL Compiler](https://docs.microsoft.com/windows-hardware/drivers/bringup/microsoft-asl-compiler).
 
  
 
