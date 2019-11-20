@@ -13,7 +13,7 @@ The BTP software package contains several tools to be used for testing Bluetooth
 
 ## Download the BTP Software Package ##
 
-The Bluetooth Test Platform (BTP) software package contains test tools for hardware test engineers to test interoperability of their Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure your hardware and suggests topologies for best test coverage. The documentation also contains procedural information about how to run the tests, trace events in the Bluetooth driver stack, and capture information in the kernel debugger.
+The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests, collect trace events in the Bluetooth driver stack, and capture information in the kernel debugger are included.
 
 ## Version Updates ##
 
@@ -43,9 +43,9 @@ Changes for version 1.2.0:
         <td>ConfigureMachineForBtp</a></td>
         <td>
             <ul>
-                <li>Provided both as a CMD script and a PowerShell script.</li>
+                <li>Provided as a CMD script and a PowerShell script.</li>
                 <li>Configures a test machine for running BTP tests.</li>
-                <li>Meant to be run before any tests.</li>
+                <li>Intended to be run before first test is run on a new machine or OS install.</li>
             </ul>
         </td>
         <td>
@@ -57,7 +57,7 @@ Changes for version 1.2.0:
         <td>RunPairingTests</a></td>
         <td>
             <ul>
-                <li>Provided both as a CMD script and a PowerShell script.</li>
+                <li>Provided as a CMD script and a PowerShell script.</li>
                 <li>Runs the Bluetooth pairing tests.</li>
                 <li>Supports custom arguments if provided.</li>
             </ul>
@@ -71,7 +71,7 @@ Changes for version 1.2.0:
         <td>RunHIDTests</a></td>
         <td>
             <ul>
-                <li>Provided both as a CMD script and a PowerShell script.</li>
+                <li>Provided as a CMD script and a PowerShell script.</li>
                 <li>Runs the Bluetooth HID tests.</li>
                 <li>Supports custom arguments if provided.</li>
             </ul>
@@ -96,7 +96,7 @@ Changes for version 1.2.0:
 </table>
 
 ### Architecture Dependent Binaries ###
-The files listed in this table are available in X86, AMD64, and ARM64 architectures. The installer will extract one instance of each for each architecture.
+The files listed in this table are available in X86, AMD64, and ARM64 architectures. The installer will extract one instance of each per architecture.
 <table>
     <colgroup>
         <col width="33%" />
@@ -171,7 +171,8 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
         <td>
             <ul>
                 <li>Experimental test binary for Bluetooth Sleep tests.</li>
-                <li>Can be run using TAEF. Note: this is not fully supported yet.</li>
+                <li>Can be run using TAEF.</li>
+                <li> <b>Note:</b> This is not fully supported yet.</li>
             </ul>
         </td>
         <td>
@@ -182,8 +183,8 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
         <td>TraduciCmd</a></td>
         <td>
             <ul>
-                <li>Command line tool for querying and changing the state of the Traduci, including certain debug commands.</li>
-                <li>Handles firmware update.</li>
+                <li>Command line tool for querying and changing the state of the Traduci, including debug commands.</li>
+                <li>Used for firmware update to Traduci hardware.</li>
             </ul>
         </td>
         <td>
