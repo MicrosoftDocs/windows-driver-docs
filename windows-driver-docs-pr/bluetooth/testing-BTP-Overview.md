@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Bluetooth Test Platform (BTP)
 
-The **B**luetooth **T**est **P**latform (BTP) is designed for automating testing of Bluetooth hardware, drivers, and software. BTP can be used to exercise Bluetooth radios in the host (inside the PC) and peripheral radios. BTP is intended to be an extensible framework. Guidance on and examples of extending BTP hardware, software, and tests will be available soon.
+The **B**luetooth **T**est **P**latform (BTP) is designed for automating the testing of Bluetooth hardware, drivers, and software. BTP can be used to exercise Bluetooth radios in the host (inside the PC) and peripheral radios. BTP is intended to be an extensible framework. Guidance and examples of how to extend BTP hardware, software, and tests will be available soon.
 
 ![Test Overview - Hardware View](images/btp-hwOverview.png)
 

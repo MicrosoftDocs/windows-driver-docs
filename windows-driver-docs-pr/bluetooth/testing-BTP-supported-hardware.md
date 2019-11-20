@@ -27,7 +27,9 @@ At this time the only supported radio is the RN42. Purchasing information for th
 - Supports HID and pairing tests
 
 ### PMOD Layout ###
+
 <img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
+
 - Unlabled pins can easily be statically assigned to HIGH or LOW depending on the needs of the radio plugged into the port
 - The Traduci does not currently support hardware handshaking using CTS and RTS
 
@@ -56,7 +58,7 @@ The Traduci requires a 12-pin connector to communicate with any radio module. Th
 
 <img src="images/Traduci_and_RN52.jpg" alt="Photo of the RN52 Radio on a sled" width="400"/>
 
-The Traduci requires a 12-pin connector to communicate with any radio module. The Audio Sled takes the RN52 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information. The schematic is available below.
+The Traduci requires a 12-pin connector to communicate with any radio module. The Audio Sled takes the RN52 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasing information. The schematic is available below.
 
 ### Audio Sled Schematic ###
 ![Audio Sled Schematic](images/RN52Schematic.png)
