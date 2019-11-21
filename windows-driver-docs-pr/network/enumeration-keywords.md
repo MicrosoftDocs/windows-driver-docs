@@ -5,15 +5,11 @@ ms.assetid: ac1fb871-7720-4497-b9f7-8f592fe19bd0
 keywords:
 - installation keywords WDK networking , enumeration keywords
 - enumeration keywords WDK NDIS miniport
-ms.date: 04/20/2017
+ms.date: 11/21/2019
 ms.localizationpriority: medium
 ---
 
 # Enumeration Keywords
-
-
-
-
 
 NDIS 6.0 and later versions of NDIS provide standardized enumeration keywords for miniport drivers of network devices. Enumeration keywords are associated with values that appear as a list in a menu.
 
@@ -61,14 +57,12 @@ Set this registry value to 0x00000001.
 
 If it does not exist, you can create a value with the name **AllowFlowControlUnderDebugger** and the type **REG\_DWORD** and set it to 0x00000001.
 
- 
-
 <a href="" id="-priorityvlantag"></a>**\*PriorityVLANTag**  
 A value that indicates whether the device has enabled or disabled the ability to insert the 802.1Q tags for packet priority and virtual LANs (VLANs). This keyword does not indicate whether the device enabled or disabled packet priority or VLAN tags. Instead, it describes the following:
 
--   Whether the device inserts 802.1Q tags during a send operation
--   Whether 802.1Q tag information is available in the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) out-of-band (OOB) information
--   Whether the device copies 802.1Q tags to OOB during receive operations
+- Whether the device inserts 802.1Q tags during a send operation
+- Whether 802.1Q tag information is available in the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) out-of-band (OOB) information
+- Whether the device copies 802.1Q tags to OOB during receive operations
 
 The miniport driver should remove the 802.1Q header from all receive packets regardless of the **\*PriorityVLANTag** setting. If the 802.1Q header is left in a packet, other drivers might not be able to parse the packet correctly.
 
@@ -78,19 +72,17 @@ Otherwise, if the Rx flag is disabled, the miniport driver should not copy the r
 
 If the Tx flag is enabled on the transmit path, the miniport driver should do the following:
 
--   Insert the 802.1Q header into each outgoing packet and fill it up with the data from OOB (if any non-zero data exists in OOB).
--   Advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) (**NDIS\_MAC\_OPTION\_8021P\_PRIORITY** and **NDIS\_MAC\_OPTION\_8021Q\_VLAN**).
+- Insert the 802.1Q header into each outgoing packet and fill it up with the data from OOB (if any non-zero data exists in OOB).
+- Advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) (**NDIS\_MAC\_OPTION\_8021P\_PRIORITY** and **NDIS\_MAC\_OPTION\_8021Q\_VLAN**).
 
 Otherwise, if the Tx flag is disabled, then:
 
--   The miniport filter should not honor 802.1Q information in OOB (and therefore not insert any tag).
--   The miniport filter should not advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes).
+- The miniport filter should not honor 802.1Q information in OOB (and therefore not insert any tag).
+- The miniport filter should not advertise appropriate **MacOptions** in [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes).
 
 **Note**  If the miniport driver supports NDIS quality of service (QoS), it must also read the **\*QOS** keyword value. Based on the **\*QOS** keyword value, the **\*PriorityVLANTag** keyword values are interpreted differently. For more information, see [Standardized INF Keywords for NDIS QoS](standardized-inf-keywords-for-ndis-qos.md).
 
- 
-
-<a href="" id="-interruptmoderation"></a>**\*InterruptModeration**  
+ <a href="" id="-interruptmoderation"></a>**\*InterruptModeration**  
 A value that describes whether the device enabled or disabled interrupt moderation. Interrupt moderation algorithms are device-dependent. The device manufacturer can use non-standardized keywords to support algorithmic settings. For more information about interrupt moderation, see [Interrupt Moderation](interrupt-moderation.md).
 
 <a href="" id="-rss"></a>**\*RSS**  
@@ -125,9 +117,7 @@ The following keywords are associated with task offload services:
 
 **Note**  For devices that support both large send offload version 1 (LSOv1) and LSOv2 over IPv4, only the **\*LsoV2IPv4** keyword should be used in the INF file and registry values. If, for example, the **\*LsoV2IPv4** keyword appears in the INF file and the **\*LsoV1IPv4** keyword appears in the registry (or vice versa), the **\*LsoV2IPv4** keyword always takes precedence.
 
- 
-
-**\*LsoV2IPv6**
+ **\*LsoV2IPv6**
 
 **\*IPsecOffloadV1IPv4**
 
@@ -246,7 +236,7 @@ The following table lists all of the keywords and describes the values that a dr
 <td align="left"><p><strong></em>FlowControl</strong></p></td>
 <td align="left"><p>Flow Control</p></td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
+<td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -634,14 +624,3 @@ The following table lists all of the keywords and describes the values that a dr
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
