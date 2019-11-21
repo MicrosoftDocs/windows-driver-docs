@@ -31,7 +31,7 @@ You build a driver the same way you build any project or solution in Visual Stud
 
 For information about managing and editing build configurations, see [Building in Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=227872).
 
-The default Solution build configuration is **Debug** and **Win32**. In versions of the WDK prior to Windows 8, this build configuration would correspond to building a driver using an **x86 Checked Build Environment**.
+The default Solution build configuration is **Debug** and **Win32**. 
 
 **To select a configuration and build a driver**
 
