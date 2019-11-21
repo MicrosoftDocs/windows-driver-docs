@@ -235,7 +235,7 @@ The following table lists all of the keywords and describes the values that a dr
 <tr class="even">
 <td align="left"><p><strong></em>FlowControl</strong></p></td>
 <td align="left"><p>Flow Control</p></td>
-<td align="left"><p>0</p></td>
+<td align="left"><p>1</p></td>
 <td align="left"><p>Enabled</p></td>
 </tr>
 <tr class="odd">
