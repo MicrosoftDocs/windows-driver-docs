@@ -10,6 +10,6 @@ ms.localizationpriority: medium
 
 The driver sample in this directory provides a starting point for writing a custom NFP driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [Near Field Proximity Sample Driver (UMDF 1)](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/near-field-proximity-sample-driver-umdf-version-1) | Demonstrates how to write a UMDF 1 near field proximity driver that uses a TCP/IPv6 network connection and a static configuration between two machines to simulate near field interaction. |

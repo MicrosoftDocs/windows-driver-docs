@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The driver samples in this directory provide a starting point for writing a custom file system driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [CDFS File System Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/cdfs-file-system-driver) | The CD-ROM file system driver (cdfs) sample is a file system driver for removable media. |
 | [fastfat File System Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/fastfat-file-system-driver) | A file system driver based on the Windows inbox FastFAT file system used as a model for new file systems. |

@@ -10,6 +10,6 @@ ms.localizationpriority: medium
 
 The audio driver samples in this directory provides a starting point for writing a custom audio driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [SysVAD Virtual Audio Device Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sysvad-virtual-audio-device-driver-sample/) | The Virtual Audio Device Driver (SYSVAD) shows how to develop a WDM audio driver that exposes support for multiple audio devices. |

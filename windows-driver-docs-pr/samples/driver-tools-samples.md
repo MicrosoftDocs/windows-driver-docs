@@ -12,7 +12,7 @@ The driver samples in this directory contains intentional code errors that are d
 
 SDV is a static verification tool that systematically analyzes the source code of Windows kernel-mode drivers. SDV is included in the Windows Driver Kit (WDK) and can be run from Microsoft Visual Studio.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [SDV-FailDriver-KMDF](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sdv-faildriver-kmdf/) | This sample demonstrates how SDV can find errors in a KMDF driver. |
 | [SDV-FailDriver-NDIS](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sdv-faildriver-ndis/) | This sample demonstrates how SDV can find errors in a NDIS driver. |

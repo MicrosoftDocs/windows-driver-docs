@@ -9,6 +9,6 @@ ms.localizationpriority: medium
 
 The driver samples in this directory provides a starting point for writing a custom GNSS driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [GNSS UMDF Sample Driver (UMDF Version 2)](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/gnss-umdf-sample-driver-umdf-version-2) | Demonstrates how to use the User-Mode Driver Framework (UMDF) to write a Global Navigation Satellite System (GNSS) driver. |

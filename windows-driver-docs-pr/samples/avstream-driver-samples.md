@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The AVStream driver samples in this directory provide a starting point for writing a custom streaming media driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [AvsCamera - AVStream camera sample driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/avscamera) | Provides a pin-centric AVStream capture driver for a simulated front and back camera that performs simulated captures at 320x240 or 640x480 in RGB24, RGB32, YUY2 and NV12 formats at various frame rates. |
 | [AVStream simulated hardware sample driver (Avshws)](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/avstream-simulated-hardware-sample-driver-avshws) | A simulated hardware sample driver providing a pin-centric capture driver to simulate AV capture hardware. |

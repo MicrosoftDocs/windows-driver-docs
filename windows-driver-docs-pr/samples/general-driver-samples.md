@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The samples in this directory provide a starting point for writing a custom driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [Cancel Safe IRP Queue](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/cancel-safe-irp-queue-sample) | Demonstrates the use of the cancel-safe queue routines IoCsqInitialize, IoCsqInsertIrp, IoCsqRemoveIrp, IoCsqRemoveNextIrp. By using these routines, driver developers do not have to worry about IRP cancellation race conditions. |
 | [KMDF Echo](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/kmdf-echo-sample) | Demonstrates how to use a sequential queue to serialize read and write requests presented to the driver. |

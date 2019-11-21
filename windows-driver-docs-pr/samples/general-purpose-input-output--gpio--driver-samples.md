@@ -10,6 +10,6 @@ ms.localizationpriority: medium
 
 The driver samples in this directory provide a starting point for writing a custom GPIOdriver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [GPIO Drivers](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/gpio-sample-drivers) | The GPIO driver samples contain annotated code to illustrate how to write a GPIO controller driver that works in conjunction with the GPIO framework extension (GpioClx) to handle GPIO I/O control requests, and a peripheral driver that runs in kernel mode and uses GPIO resources. |

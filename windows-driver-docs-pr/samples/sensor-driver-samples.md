@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The driver samples in this directory provide a starting point for writing a custom sensor driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [Activity](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/activity-sensor-driver-sample) | Demonstrates how to write a UMDF v2 driver to control a virtual activity sensor. |
 | [ADXL345 Accelerometer](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/adxl345-accelerometer-sample-driver) | Demonstrates how to write a UMDF v2 driver to control an ADXL345 accelerometer chip. |

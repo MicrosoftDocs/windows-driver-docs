@@ -10,6 +10,6 @@ ms.localizationpriority: medium
 
 The driver samples in this directory provide a starting point for writing a custom biometrics driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [Windows Biometric Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/windows-biometric-driver-samples-umdf-version-1) | Contains the Windows Biometric Driver Interface sample and the Windows Biometric Service Adapter samples. |

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The driver samples in this directory provide a starting point for writing a custom driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [Keyboard Filter](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/keyboard-input-wdf-filter-driver-kbfiltr) | A WDF example of a keyboard input filter driver. |
 | [Keyboard Layout Samples](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/keyboard-layout-samples) | The keyboard layout samples demonstrate how to generate layouts for various keyboards and locales. |

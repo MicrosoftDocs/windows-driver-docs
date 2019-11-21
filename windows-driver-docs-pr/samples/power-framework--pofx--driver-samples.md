@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The driver samples in this directory provide a starting point for writing a custom PoFx driver for your device.
 
-| Sample | Description
+| Sample | Description |
 | --- | --- |
 | [PEP ACPI Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/pep-acpi-sample) | Demonstrates an interface which allows a Power Engine Plugin (PEP) to implement ACPI runtime methods natively via a Windows driver rather than firmware. |
 | [UMDF2 PoFx Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/power-framework-pofx-sample-umdf-version-2) | The UMDF 2 SingleComp sample demonstrates how a UMDF2 driver can implement F-state-based power management for a device that has only a single component. |
