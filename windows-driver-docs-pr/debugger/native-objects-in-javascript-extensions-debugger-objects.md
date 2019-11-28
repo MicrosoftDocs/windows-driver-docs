@@ -310,7 +310,7 @@ Directly within the host object, the following properties, methods, and construc
 <td align="left">registerPrototypeForTypeSignature</td>
 <td align="left"><p>registerPrototypeForTypeSignature(object, typeSignature)</p></td>
 <td align="left">2</td>
-<td align="left">This registers a JavaScript prototype or ES6 class as the canonical data model (e.g.: visualizer) for a native type as given by the supplied type signature. Note that a script should prefer to return a <strong>typeSignatureExtension</strong> object from its <strong>initializeScript</strong> method rather than doing this imperatively. Any script which makes changes imperatively is required to have an <strong>uninitializeScript</strong>method in order to clean up.</td>
+<td align="left">This registers a JavaScript prototype or ES6 class as the canonical data model (e.g.: visualizer) for a native type as given by the supplied type signature. Note that a script should prefer to return a <strong>typeSignatureRegistration</strong> object from its <strong>initializeScript</strong> method rather than doing this imperatively. Any script which makes changes imperatively is required to have an <strong>uninitializeScript</strong>method in order to clean up.</td>
 </tr>
 <tr class="even">
 <td align="left">parseInt64</td>
