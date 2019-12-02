@@ -33,7 +33,7 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 
-  Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](https://docs.microsoft.com/windows-hardware/drivers). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/index).
+  Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Compatibilty](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/) testing, see [Building, Debugging, and Testing Drivers](https://docs.microsoft.com/windows-hardware/drivers). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/index).
 
 - Step 5: Read the [filter driver introduction topics](introduction-to-ndis-filter-drivers.md).
 
@@ -59,7 +59,7 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
 
 - Step 10: Sign and distribute your driver.
 
-  The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](https://docs.microsoft.com/windows-hardware/drivers).
+  The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Compatibilty Program](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](https://docs.microsoft.com/windows-hardware/drivers).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
