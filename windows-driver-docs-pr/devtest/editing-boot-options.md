@@ -41,7 +41,7 @@ Then, to make testing quicker and easier:
 
 -  [Change the boot menu time-out](changing-the-boot-menu-time-out.md). You can shorten the boot menu time-out so that Windows boots quickly. Or, lengthen the boot menu time-out so that you have ample time to select the preferred boot entry.
 
-# Related Topics 
+## Related Topics 
  [BCDEdit Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/bcdedit-command-line-options)
 
 > [!CAUTION]
