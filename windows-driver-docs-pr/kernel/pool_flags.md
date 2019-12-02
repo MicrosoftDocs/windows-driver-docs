@@ -8,7 +8,7 @@ ms.date: 11/12/2019: medium
 
 # POOL_FLAGS
 
-A ULONG64-typed value specifying the type of pool memory, attributes the memory is required to have, and attributes the memory can optionally have. Multiple flag values can be combined using bit-wise OR.
+A ULONG64-typed value specifying the type of pool memory along with required and optional attributes. Multiple flag values can be combined using bit-wise OR.
 
 ```cpp
 //
@@ -45,8 +45,8 @@ Required flags must be recognized and satisfied by the pool allocator. If the al
 
 |Name|Description|
 |-|-|
-|POOL_FLAG_USE_QUOTA|This flag is passed by highest-level drivers that allocate memory to satisfy a request in the context of the process that originally made the I/O request. Lower-level drivers call need not specify this flag.|
-|POOL_FLAG_UNINITIALIZED|Leave the allocation uninitialized. The contents of the allocation are indeterminant. Drivers must be extremely careful never to copy uninitialized memory to untrusted destinations (user-mode, over the network, etc.).|
+|POOL_FLAG_USE_QUOTA|This flag is passed by highest-level drivers that allocate memory to satisfy a request in the context of the process that originally made the I/O request. Lower-level drivers need not specify this flag.|
+|POOL_FLAG_UNINITIALIZED|Leave the allocation uninitialized. The contents of the allocation are indeterminant. The driver must be extremely careful never to copy uninitialized memory to untrusted destinations (user-mode, over the network, etc.).|
 |POOL_FLAG_SESSION|Reserved for the operating system.|
 |POOL_FLAG_CACHE_ALIGNED|Cache align the pool allocation.|
 |POOL_FLAG_RESERVED1|Reserved for internal use.|
