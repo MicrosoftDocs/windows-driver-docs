@@ -7,17 +7,17 @@ ms.date: 03/26/2017
 ms.localizationpriority: medium
 ---
 
-# Installing Windows Symbol Files
+# Установка символьных файлов Windows
 
-Before you debug the Windows kernel, a driver or app, you need access to the proper symbol files. The official way to get Windows symbols is to use the Microsoft Symbol Server. The symbol server makes symbols available to your debugging tools as needed. After a symbol file is downloaded from the symbol server it is cached on the local computer for quick access. 
+Прежде чем отлаживать ядро Windows, драйвер или приложение, необходимо получить доступ к соответствующим символьным файлам. Официальным способом получения этих символов является использование Microsoft Symbol Server. Сервер символов позволяет использовать символы в инструментах отладки по мере надобности. После загрузки символьного файла с сервера символов он помещается в кэш локального компьютера для быстрого доступа. 
 
-You can connect to the Microsoft Symbol Server with one simple use of the [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md) command. For full details, see [Microsoft Public Symbols](microsoft-public-symbols.md).
+Подключиться к серверу Microsoft Symbol Server можно с помощью одной простой команды [**.symfix (Set Symbol Store Path)**](-symfix--set-symbol-store-path-.md). Подробнее см. в разделе  [Microsoft Public Symbols](microsoft-public-symbols.md).
 
 > [!IMPORTANT]
-> We are no longer publishing the offline symbol packages for Windows. The faster Windows update cadence means the Windows debugging symbols are quickly made out of  date. We have made significant improvements to the online [Microsoft Symbol Server](microsoft-public-symbols.md) where symbols for all Windows versions and updates are available. You can find more about this in this [blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). 
+> Мы больше не публикуем автономные символьные пакеты для Windows. Чем чаще происходит обновление Windows, тем больше устаревают символы отладки Windows. Мы внесли значительные улучшения в онлайновую версию [Microsoft Symbol Server](microsoft-public-symbols.md), где доступны символы для всех версий и обновлений Windows. Подробнее об этом можно прочитать здесь [blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/). 
 >
-> For information on how to retrieve symbols for a machine that is not connected to the Internet, see [Using a Manifest File with SymChk](using-a-manifest-file-with-symchk.md).
+> Информацию о том, как можно загрузить символы для компьютера, не подключенного к Интернету, см. в разделе [Using a Manifest File with SymChk](using-a-manifest-file-with-symchk.md).
 
-If you are going to debug a user-mode app, you need to install the symbols for this app as well.
+Если вы собираетесь отлаживать пользовательское приложение, вам также потребуется установить символы для этого приложения.
 
-You can debug an app if you have its symbols but not Windows symbols. However, your results will be much more limited. You will still be able to step through the app code, but any debugger activity which requires analysis of the kernel (such as getting a stack trace) is likely to fail.
+Отлаживать приложение можно, лишь имея символы приложения, без символов Windows. Однако ваши действия будут значительно ограничены. Вы все равно сможете пройтись по коду приложения, но любая попытка выполнить операцию отладчика, требующую анализа ядра (например, получить трассировку стека), скорее всего, закончится неудачей.
