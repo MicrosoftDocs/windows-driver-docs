@@ -2,7 +2,7 @@
 title: Universal Serial Bus (USB) driver samples
 description: The driver samples in this directory provide a starting point for writing a custom USB driver for your device.
 ms.assetid: 4A61F62B-9C23-4265-8AB4-D3AB45F512DF
-ms.date: 12/02/2019
+ms.date: 12/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -21,3 +21,7 @@ The driver samples in this directory provide a starting point for writing a cust
 | [UMDF 2 Function Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sample-function-driver-for-osr-usb-fx2-umdf-version-2) | A User-Mode Driver Framework (UMDF 2) driver for the OSR USB-FX2 device. It includes a test application and sample device metadata, and supports impersonation and idle power down. |
 | [Usbsamp Generic USB Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/usbsamp-generic-usb-driver) | Demonstrates how to perform full speed, high speed, and SuperSpeed transfers to and from bulk and isochronous endpoints of a generic USB device. |
 | [USBView](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/usbview-sample-application) | A Windows application that allows you to browse all USB controllers and connected USB devices on your system. |
+| [WDF Sample Driver Learning Lab for OSR USB-FX2](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/wdf-sample-driver-learning-lab-for-osr-usb-fx2) | Contains a console test application and a series of iterative drivers for both KMDF and UMDF version 1. |
+| [UcmCxUcsi Port Controller Client Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/ucmtcpcicx-port-controller-client-driver-v2) | Demonstrates how to create a Windows USB Type-C port controller driver using the USB Connector Manager class extension driver (UcmCx). |
+| [UcmTcpciCx Port Controller Client Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/ucmtcpcicx-port-controller-client-driver) | Demonstrates how to create a Windows USB Type-C port controller driver using the USB Connector Manager Type-C Port Controller Interface class extension driver (UcmTcpciCx).
+| [UcmUcsiCx ACPI Client Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/ucmucsicx-acpi-client-driver) | Demonstrates how to create a UCSI-compliant (ACPI transport) Windows USB Type-C port controller driver using the USB Connector Manager class extension driver (UcmCx). |

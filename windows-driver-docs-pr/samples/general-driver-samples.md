@@ -2,7 +2,7 @@
 title: General driver samples
 description: The samples in this directory provide a starting point for writing a custom driver for your device.
 ms.assetid: C5DC72F1-D093-47D0-9AC3-680878C5A868
-ms.date: 11/18/2019
+ms.date: 12/03/2019
 ms.localizationpriority: medium
 ---
 
@@ -35,3 +35,5 @@ The samples in this directory provide a starting point for writing a custom driv
 | [System Trace Control](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/systemtraceprovider) | Demonstrates how to use event tracing control APIs to collect events from the system trace provider. |
 | [Tracedrv](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/tracedrv) | A sample driver instrumented for software tracing.|
 | [UMDF Driver Skeleton](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/umdf-driver-skeleton-sample-umdf-version-1) | Demonstrates how to use the User-Mode Driver Framework to write a minimal driver and shows best practices. |
+| [Driver package installation toolkit for universal drivers](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/driver-package-installation-toolkit-for-universal-drivers) | Illustrates DCHU principles of universal driver design. |
+| [WinHEC 2017 Lab](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/winhec-2017-lab) | Toaster samples from the WinHEC 2017 Lab: Toaster Driver, PlugInToaster, and Toaster Support App. |
