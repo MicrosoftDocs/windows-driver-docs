@@ -7,7 +7,7 @@ This drop includes a Wi-Fi WDF class extension (WifiCx) that works with NetAdapt
 
 ![WiFiCx architecture](images/wificx.png)
 
-An Wifi-NetAdapter client driver performs 3 categories of tasks based on its relationships with the framework:
+A Wifi-NetAdapter client driver performs 3 categories of tasks based on its relationships with the framework:
 
 - Call [standard WDF APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_wdf/) for common device tasks like Pnp and Power management.
 - Call [NetAdapterCx APIs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/#netadaptercx) for common network device operations like transmitting or receiving network packets.
@@ -43,7 +43,7 @@ This message flow diagram illustrates the initialization process.
 
 ### **Default (station) adapter creation flow**
 
-Next, the client driver must set all the WiFi specific device capabilities, typically in the [EvtDevicePrepareHardware](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. Note that WifiCx/WDI will no longer be querying for these capabilities via WDI_GET_ADAPTER_CAPABILITIES command. Also, unlike other types of NetAdapterCx drivers, WiFi client drivers must not create the NETADAPTER for object from within the EvtDriverDeviceAdd callback function. Instead, it will be instructed by WifiCx to create the default NetAdapter (station) do so later using the EvtWifiCxDeviceCreateAdapter callback (after the client’s PrepareHardware WDF callback is successful). Note that WifiCx/WDI will no longer call WDI_TASK_CREATE_PORT command.
+Next, the client driver must set all the WiFi specific device capabilities, typically in the [EvtDevicePrepareHardware](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. Note that WifiCx/WDI will no longer be querying for these capabilities via WDI_GET_ADAPTER_CAPABILITIES command. Also, unlike other types of NetAdapterCx drivers, WiFi client drivers must not create the NETADAPTER object from within the EvtDriverDeviceAdd callback function. Instead, it will be instructed by WifiCx to create the default NetAdapter (station) later using the EvtWifiCxDeviceCreateAdapter callback (after the client’s PrepareHardware WDF callback is successful). Note that WifiCx/WDI will no longer call WDI_TASK_CREATE_PORT command.
 
 In this call, the client driver needs to call into NetAdapterCx to create the new NetAdapter object and then call into WifiCx (using WifiCxAdapterInitialize API) to initialize the WiFiCx context and associate it with this NetAdapter object.
 
