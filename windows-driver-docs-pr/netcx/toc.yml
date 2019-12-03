@@ -60,3 +60,5 @@
     href: mobile-broadband-mbb-wdf-class-extension-mbbcx.md
   - name: "Writing an MBBCx client driver"
     href: writing-an-MBBcx-client-driver.md
+- name: "Wi-Fi WDF class extension (WiFiCx)"
+  href: wifi-wdf-class-extension-wificx.md
