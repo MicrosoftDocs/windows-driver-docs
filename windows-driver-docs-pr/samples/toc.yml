@@ -53,10 +53,14 @@
     href: thermal-driver-samples.md
   - name: "Tools samples"
     href: driver-tools-samples.md
+  - name: "Trusted Execution Environment (TrEE) driver samples"
+    href: tree-driver-samples.md
   - name: "Universal Serial Bus (USB) driver samples"
     href: universal-serial-bus--usb--driver-samples.md
   - name: "Video driver samples"
     href: video-driver-samples.md
+  - name: "Windows Image Acquisition (WIA) driver samples"
+    href: wia-driver-samples.md
   - name: "Windows Management Instrumentation (WMI) driver samples"
     href: windows-management-instrumentation--wmi--driver-samples.md
   - name: "Windows Portable Device (WPD) driver samples"

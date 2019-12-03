@@ -2,7 +2,7 @@
 title: Windows driver samples
 description: Windows 10 driver samples are available on the Microsoft Samples portal and on GitHub.
 ms.assetid: 4c51f6c3-a84d-4790-82df-a50570af02bd
-ms.date: 11/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -12,7 +12,7 @@ ms.technology: windows-devices
 
 You can browse and download individual Windows 10 driver samples on the [Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
 
-Earlier versions of Windows driver samples are archived on GitHub:
+Earlier versions of Windows driver samples are archived at Microsoft Archive on GitHub:
 
 - [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
 
@@ -78,9 +78,13 @@ For more information about the Windows 10 driver samples available for a specifi
 
 - [Tools samples](driver-tools-samples.md)
 
+- [Trusted Execution Environment (TrEE) driver samples](tree-driver-samples.md)
+
 - [Universal Serial Bus (USB) driver samples](universal-serial-bus--usb--driver-samples.md)
 
 - [Video driver samples](video-driver-samples.md)
+
+- [Windows Image Acquisition (WIA) driver samples](wia-driver-samples.md)
 
 - [Windows Management Instrumentation (WMI) driver samples](windows-management-instrumentation--wmi--driver-samples.md)
 
