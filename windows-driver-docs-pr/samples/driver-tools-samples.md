@@ -14,6 +14,7 @@ SDV is a static verification tool that systematically analyzes the source code o
 
 | Sample | Description |
 | --- | --- |
+| [DV-FailDriver-WDM](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/dv-faildriver-wdm/) | This sample demonstrates how DV can find errors in a WDM driver. |
 | [SDV-FailDriver-KMDF](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sdv-faildriver-kmdf/) | This sample demonstrates how SDV can find errors in a KMDF driver. |
 | [SDV-FailDriver-NDIS](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sdv-faildriver-ndis/) | This sample demonstrates how SDV can find errors in a NDIS driver. |
 | [SDV-FailDriver-STORPORT](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sdv-faildriver-storport/) | This sample demonstrates how SDV can find errors in a Storport driver. |
