@@ -5,7 +5,7 @@
 
 This drop includes a Wi-Fi WDF class extension (WifiCx) that works with NetAdapterCx. This enables Wi-Fi network drivers to be fully fledged WDF client drivers. In addition, they are also NetAdapterCx client drivers just like other NIC drivers and also client drivers of Wifi class extension that provides Wi-Fi media-specific functionality. The following block diagram illustrates the WifiCx architecture:
 
-![WiFiCx architecture](images/WiFiCx.png)
+![WiFiCx architecture](images/wificx.png)
 
 An Wifi-NetAdapter client driver performs 3 categories of tasks based on its relationships with the framework:
 
@@ -68,6 +68,7 @@ If this was a set command and the original request did not conatin a large enoug
 What’s new:
 -	WifiCx Client APIs to initialize device, set capabilities, create default adapter and process WDI commands implemented.
 -	Basic STA functionality including scan, connect, radio toggle etc supported.
+
 Limitations:
 -	Data path support (for STA) is limited and implemented using existing NetAdapterCx APIs. Packet extension for encryption exclusion policy etc is not implemented yet, therefore connection to only open networks has been tested.
 -	Direct OID commands not yet forwarded by NetAdapter to WifiCx (will be available in next drop).
