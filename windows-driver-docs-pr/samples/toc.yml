@@ -13,8 +13,6 @@
     href: biometrics-driver-samples.md
   - name: "Bluetooth driver samples"
     href: bluetooth-driver-samples.md
-  - name: "Camera driver samples"
-    href: camera-driver-samples.md
   - name: "File system driver samples"
     href: file-system-driver-samples.md
   - name: "General driver samples"
