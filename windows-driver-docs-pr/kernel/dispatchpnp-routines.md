@@ -55,7 +55,6 @@ Each driver's *DispatchPnP* routine must follow these rules:
 
     Most PnP IRPs are sent by the PnP manager, but some can be sent by drivers (for example, [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface)). A driver must send a PnP IRP to the driver at the top of the device stack. Call [**IoGetAttachedDeviceReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetattacheddevicereference) to get a pointer to the device object for the driver at the top of the device stack.
 
-You should test your drivers with a checked build of the operating system. The checked build of the system verifies whether a driver follows many of the PnP rules listed above.
 
  
 

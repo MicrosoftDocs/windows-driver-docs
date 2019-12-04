@@ -139,7 +139,7 @@ Values](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatu
 3. Not using NTSTATUS macros to check the returned status of system functions.
 4. Not asserting on state variables or flags where needed.
 5. Checking to see if the pointer is valid before accessing it to work around race conditions.
-6. ASSERTING on NULL pointers. If you attempt to use a NULL pointer to access memory Windows will bug check. The parameters of the bug check will provide the necessary information to fix the null pointer. Overtime, when many unneeded ASSERT statements are added to the code, they consume memory, slow the system and make checked build binaries unusable. Note that asserts are not included in the free retail build.
+6. ASSERTING on NULL pointers. If you attempt to use a NULL pointer to access memory Windows will bug check. The parameters of the bug check will provide the necessary information to fix the null pointer. Overtime, when many unneeded ASSERT statements are added to the code, they consume memory and slow the system.
 7. ASSERTING on object context pointer. The driver framework guarantees that object will always get allocated with context.
 
 ### Tracing
