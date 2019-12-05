@@ -15,13 +15,11 @@ ms.localizationpriority: medium
 
 # title element
 
-
 The required **title** element provides text that is displayed in the title of the event notification message.
 
-The **title** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **title** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
-Usage
------
+## Usage
 
 ```xml
 <title
@@ -29,8 +27,7 @@ Usage
   resourceDll = "xs:string"/>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -67,11 +64,9 @@ Attributes
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -93,15 +88,13 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the attribute **resourceDll** is not specified, title text is generated from the Microsoft-supplied user interface DLL, Prnntfy.dll.
 
 The body text loaded from the resource DLL can contain percentage (%) characters that will be replaced with text strings specified by the [**parameter**](parameter.md) child element.
 
-Examples
---------
+## Examples
 
 The following code example shows how to use the **title** element to indicate the string location in the resource DLL (in this example, stringID="1234") that contains the text to be used for the title.
 

@@ -15,7 +15,6 @@ ms.localizationpriority: medium
 
 # Troubleshooting GDL Parsing
 
-
 The following information covers some of the causes of unexpected behaviors that you might encounter when parsing GDL files.
 
 <a href="" id="symptom--you-include-the-schema-file--but-the-parser-emits-an-error-message-that-says---no--root--template-found--gdl-entries-will-not-be--templatized--and-ignores-the-schema---"></a>Symptom: You include the schema file, but the parser emits an error message that says "no 'ROOT' template found, GDL entries will not be templatized" and ignores the schema.   
@@ -57,7 +56,7 @@ Solution: The parser internally converts any arbitrary string of whitespace (spa
 <a href="" id="symptom--dom-interface---xpath-query-cannot-find-any-elements-in-the-snapshot---for-example--selectsinglenode---snapshotroot-gdl-attribute----returns-nothing--"></a>Symptom: DOM interface: Xpath Query cannot find any elements in the snapshot (for example, selectSingleNode("/SnapshotRoot/GDL\_ATTRIBUTE") returns nothing).  
 Solution: Xpath assumes that element names without a namespace prefix refer to the null or empty namespace, not the default namespace. The snapshot defines a default namespace and most elements belong to the default namespace.
 
-To access these elements by using Xpath, the client must first map this default namespace to an explict prefix. To map the default namespace in this way, use the document pbjects setProperty method. The property that needs to be set is SelectionNamespaces. Use this property to assign the default namespace an explict prefix. In the snapshot, the default namespace is http://schemas.microsoft.com/2002/print/gdl/1.0 so the call to setProperty might look like the following code example.
+To access these elements by using Xpath, the client must first map this default namespace to an explict prefix. To map the default namespace in this way, use the document pbjects setProperty method. The property that needs to be set is SelectionNamespaces. Use this property to assign the default namespace an explict prefix. In the snapshot, the default namespace is [http://schemas.microsoft.com/2002/print/gdl/1.0](https://schemas.microsoft.com/2002/print/gdl/1.0) so the call to setProperty might look like the following code example.
 
 ```cpp
 XMLDoc->setProperty(L"SelectionNamespaces", "xmlns:gdl=\"http://schemas.microsoft.com/2002/print/gdl/1.0\"");
@@ -80,11 +79,3 @@ Solution: Creating your own XML by using the PASSTHROUGH or XSD\_DEFINED data ty
 
 <a href="" id="symptom---the-parser-says--preface-cannot-be-used-with-a-precompiled-file---but-the-root-file-does-not-contain-a--precompiled-directive-"></a>Symptom: The parser says "Preface cannot be used with a precompiled file", but the root file does not contain a \#Precompiled directive.  
 Solution: The \#Precompiled directive might actually reside in the preface itself. The parser cannot distinguish whether GDL content came from the preface or the root file.
-
- 
-
- 
-
-
-
-
