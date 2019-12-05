@@ -125,7 +125,7 @@ This feature enables the UMD to comment on each programmable stage of the graphi
 
 ### WDDM 2.1 Caps
 
-Drivers will report WDDM 2.1 support through [DXGK_DRIVERCAPS::WDDMVersion](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) with a new version constant:
+Drivers will report WDDM 2.1 support through [DXGK_DRIVERCAPS::WDDMVersion](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) with a new version constant:
 
 `DXGK_WDDMVERSION::DXGKDDI_WDDMv2_1 = 0x2100`
 

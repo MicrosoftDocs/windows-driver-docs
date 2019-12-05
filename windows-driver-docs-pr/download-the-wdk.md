@@ -80,7 +80,7 @@ To get universal Windows driver samples, do one of the following:
 
 * Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples) and click **Clone or download > Download ZIP** on the right side of the page.
 * Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) to connect to the GitHub repositories.
-* [Browse the driver samples on the Microsoft Samples portal](https://docs.microsoft.com/en-us/samples/browse/?products=windows-wdk).
+* [Browse the driver samples on the Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk).
 
 ## Related downloads
 

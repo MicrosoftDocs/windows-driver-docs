@@ -57,36 +57,37 @@ One way to solve the problem is to use the ACPI \_PLD structure which already ha
 
 ![ACPI PLD panel field](images/acpi-pld-panel-field.png)
 
-*Definition of ACPI \_PLD Panel field (Rev. 5.0a)*
+### Definition of ACPI \_PLD Panel field (Rev. 5.0a)
 
 The next two diagrams illustrate the definition of each panel visually:
 
+#### Panel definitions for desktop PCs and most devices
+
 ![Panel definitions - desktop](images/panel-definitions-desktop.png)
 
-*Panel definitions for desktop PCs and most devices*
+#### Panel definitions for foldable devices
 
 ![Panel definitions - foldable devices](images/panel-definitions-foldable-devices.png)
 
-*Panel definitions for foldable devices*!
-
-In fact, the concept of an ACPI “panel” is already adopted by Windows where:
+In fact, the concept of an ACPI "panel" is already adopted by Windows where:
 
 - A camera device interface is associated with a \_PLD structure with the Panel field being set accordingly if a capture device is statically mounted at a fixed location.
-- An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](https://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.enumeration.enclosurelocation.panel.aspx) property.
+
+- An application can retrieve the panel on which a capture device resides by calling the [Windows.Devices.Enumeration.DeviceInformation.EnclosureLocation.Panel](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.EnclosureLocation) property.
 
 The ACPI \_PLD structure also has a Rotation field defined as follow:
 
+#### Definition of ACPI \_PLD Rotation field (Rev 5.0a)
+
 ![ACPI \_PLD Rotation field definitions](./images/acpi-pld-rotation-field.png)
 
-*Definition of ACPI \_PLD Rotation field (Rev 5.0a)*
-
-Instead of using the definition above “as is”, we’ll further refine it to avoid ambiguity:
+Instead of using the definition above as is, we further refine it to avoid ambiguity:
 
 - For camera, the Rotation field in an ACPI \_PLD structure specifies the number of degrees (‘0’ for 0°, ‘2’ for 90°, ‘4’ for 180°, and ‘6’ for 270°) a captured frame is rotated relative to the screen while the display is in its native orientation.
 
 ## Landscape Primary vs Portrait Primary
 
-In Windows, one can query the native display orientation by calling the property, [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.display.displayinformation.nativeorientation.aspx), which returns either **Landscape** or **Portrait**:
+In Windows, one can query the native display orientation by calling the property, [Windows.Graphics.Display.DisplayInformation.NativeOrientation](https://docs.microsoft.com/uwp/api/Windows.Graphics.Display.DisplayInformation), which returns either **Landscape** or **Portrait**:
 
 ![Display native orientation scanning pattern](./images/native-scanning-pattern.png)
 
@@ -101,8 +102,10 @@ IHV/OEMs are strongly encouraged to avoid mounting the sensor in a non-0 degree 
 In cases where IHV/OEMs are unable to mount the sensor in 0 degree orientation as described above, the following mitigation steps are recommended in the order of preference:
 
 1. Auto-Correct the non-0 degree orientation within the Camera Driver (either in kernel mode with the AV stream miniport driver or in user mode using a plug in such as Device MFT or MFT0) so the resulting output frames are in the 0 degree orientation.
-2. Declare the non-0 degree orientation via FSSensorOrientation tag so the Camera Pipeline can correct the captured image.
-3. Declare the non-0 degree orientation in the ACPI’s PLD table as described above.
+
+1. Declare the non-0 degree orientation via FSSensorOrientation tag so the Camera Pipeline can correct the captured image.
+
+1. Declare the non-0 degree orientation in the ACPI’s PLD table as described above.
 
 ### Compressed/Encoded Media Types
 
@@ -250,7 +253,9 @@ The following figures illustrate the values of the \_PLD Rotation field for each
 In the figure above:
 
 - The picture on the left illustrates the scene to capture.
+
 - The picture in the middle depicts how a scene is viewed by a CMOS sensor whose physical readout order starts from the bottom-left corner moving from left to right upwards.
+
 - The picture on the right represents the output of the camera driver. In this example, the content of the media buffer can be rendered directly while the display is its native orientation without additional rotation. Consequently, the ACPI \_PLD Rotation field has a value of 0.
 
 ### Rotation: 90 degrees clockwise

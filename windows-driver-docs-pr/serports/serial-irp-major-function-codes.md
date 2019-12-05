@@ -59,7 +59,7 @@ A client uses device control requests to:
 * Get and set registers
 * Get and set operating modes
 
-For a description of the device control requests supported by Serial, see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntddser/) header.
+For a description of the device control requests supported by Serial, see the [ntddser.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/) header.
 
 ### Input parameters
 
@@ -426,4 +426,4 @@ A client can use time-out events to terminate a write request. Note, however, th
 
 [Rules for Handling Power IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/rules-for-handling-power-irps)
 
-[Serial Controller Driver Design Guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/)
+[Serial Controller Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/serports/)

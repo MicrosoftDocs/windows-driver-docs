@@ -15,7 +15,7 @@ When the operating system detects a new device, it queries an online service cal
 
  
 
-If you submit your device metadata package to [Windows Quality Online Services (Winqual)](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/winqual-submission-tool--winqualexe-) when you submit your [driver package](driver-packages.md) to the [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) for digital signing, your package will be available to WMIS for download requests made by DMRC on any computer that runs Windows 7 and later versions of Windows.
+If you submit your device metadata package to [Windows Quality Online Services (Winqual)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/winqual-submission-tool--winqualexe-) when you submit your [driver package](driver-packages.md) to the [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) for digital signing, your package will be available to WMIS for download requests made by DMRC on any computer that runs Windows 7 and later versions of Windows.
 
 **Important**  We highly recommended that OEMs distribute device metadata packages only through WMIS. Distribution of device metadata packages through WMIS supports the *hardware-first* installation scenario. In this scenario, a new device is installed before the driver and device-specific software for the device is installed. For more information about this scenario, see [Hardware-First Installation](hardware-first-installation.md).
 

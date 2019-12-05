@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The optional **customData** element specifies a custom data source for this asynchronous notification XML schema.
 
-The **customData** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **customData** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 Usage
 -----

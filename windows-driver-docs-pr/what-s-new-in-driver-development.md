@@ -66,7 +66,7 @@ This section provides highlights of new features for driver development in Windo
 
 ### WDK supports Visual Studio 2019
 
-The Windows Driver Kit (WDK) for Windows 10, version 1903, has been updated to support Visual Studio 2019 as previously [announced](https://social.msdn.microsoft.com/Forums/en-US/b116571d-d5b2-4c1c-a43e-4b57171c8c41/windows-driver-kit-wdk-to-support-visual-studio-2019?forum=wdk). This release of the WDK is not compatible with Visual Studio 2017 however, developers can continue working with Visual Studio 2017 using the previous releases of the WDK, (releases 1709 thru 1809 found [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/other-wdk-downloads)). To learn about what is new with Visual Studio 2019 please review the information [here](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019).
+The Windows Driver Kit (WDK) for Windows 10, version 1903, has been updated to support Visual Studio 2019 as previously [announced](https://social.msdn.microsoft.com/Forums/en-US/b116571d-d5b2-4c1c-a43e-4b57171c8c41/windows-driver-kit-wdk-to-support-visual-studio-2019?forum=wdk). This release of the WDK is not compatible with Visual Studio 2017 however, developers can continue working with Visual Studio 2017 using the previous releases of the WDK, (releases 1709 thru 1809 found [here](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads)). To learn about what is new with Visual Studio 2019 please review the information [here](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019).
 
 The following are a few items of notable changes in Visual Studio 2019 that Windows driver developers will see.
 

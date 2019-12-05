@@ -15,13 +15,11 @@ ms.localizationpriority: medium
 
 # messageBoxUI element
 
-
 The optional **messageBoxUI** element is used to display a message box on the client computer.
 
-The **messageBoxUI** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **messageBoxUI** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
-Usage
------
+## Usage
 
 ```xml
 <messageBoxUI>
@@ -29,13 +27,11 @@ Usage
 </messageBoxUI>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
 ## Child elements
-
 
 <table>
 <colgroup>
@@ -74,7 +70,6 @@ There are no attributes.
 
 ## Parent elements
 
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -95,13 +90,11 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 See [**button**](button.md) for a code example that shows how to place an **OK** button and a **CANCEL** button a message box. See the **Examples** section for information about how to capture a button-click on a message box.
 
-Examples
---------
+## Examples
 
 The following code example shows how to notify the printer driver that the **OK** button was clicked on the message box.
 

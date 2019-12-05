@@ -51,7 +51,7 @@ These callback routines are required by the power management framework (PoFx) to
 |[ComponentPerfStateCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_perf_state_callback)|The *ComponentPerfStateCallback* callback routine notifies the driver that its request to change the performance state of a component is complete.|
 |[DevicePowerNotRequiredCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_device_power_not_required_callback)|The *DevicePowerNotRequiredCallback* callback routine notifies the device driver that the device is not required to stay in the D0 power state.|
 |[DevicePowerRequiredCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_device_power_required_callback)|The *DevicePowerRequiredCallback* callback routine notifies the device driver that the device must enter and remain in the D0 power state.|
-|[PowerControlCallback](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_power_control_callback)|The *PowerControlCallback* callback routine performs a power control operation that is requested by the power management framework (PoFx).|
+|[PowerControlCallback](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_power_control_callback)|The *PowerControlCallback* callback routine performs a power control operation that is requested by the power management framework (PoFx).|
 
 ## Device Power Management Structures
 

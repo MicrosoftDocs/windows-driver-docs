@@ -158,8 +158,6 @@
     items: 
     - name: "Tools Included in Debugging Tools for Windows"
       href: extra-tools.md
-    - name: "ADPlus"
-      href: adplus.md
     - name: "DumpChk"
       href: dumpchk.md
     - name: "GFlags"
