@@ -1,23 +1,23 @@
 ---
-title: SetupAPI Functions that Simplify Driver Installation
-description: SetupAPI Functions that Simplify Driver Installation
+title: Functions that Simplify Driver Installation
+description: Functions that Simplify Driver Installation
 ms.assetid: 7201b260-6239-4c76-8d48-7e2df9c662cd
 keywords:
-- SetupAPI functions WDK , simplifying driver installations
+- Functions WDK , simplifying driver installations
 - DiInstallDevice
 - DiInstallDriver
 - DiRollbackDriver
 - UpdateDriverForPlugAndPlayDevices
-- PnP WDK device installations , SetupAPI
-- Plug and Play WDK device installations , SetupAPI
+- PnP WDK device installations
+- Plug and Play WDK device installations
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# SetupAPI Functions that Simplify Driver Installation
+# Functions that Simplify Driver Installation
 
 
-An installation application can use the following SetupAPI functions to simplify the installation of a PnP function driver.
+An installation application can use the following functions to simplify the installation of a PnP function driver.
 
 ### <a href="" id="diinstalldevice--windows-vista-and-later-versions-of-windows-"></a> DiInstallDevice (Windows Vista and later versions of Windows)
 

@@ -56,35 +56,35 @@ Windows operating systems include native support for USB host controllers, hubs,
 <li>USB host controller (UCX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxclass/)">Ucxclass.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/)">Ucxclass.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxcontroller/)">Ucxcontroller.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/)">Ucxcontroller.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/Ucxroothub/)">Ucxroothub.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/Ucxroothub/)">Ucxroothub.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxusbdevice/)">Ucxusbdevice.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/)">Ucxusbdevice.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxendpoint/)">Ucxendpoint.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/)">Ucxendpoint.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxsstreams/)">Ucxsstreams.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/)">Ucxsstreams.h</a>
     </li>
     </ul>
 </li>
 <li>USB function class extension (UFX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxbase/)">Ufxbase.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/)">Ufxbase.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxclient/)">Ufxclient.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/)">Ufxclient.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
     </li>
     </ul>
 </li>
@@ -126,22 +126,22 @@ Windows operating systems include native support for USB host controllers, hubs,
 <li>USB host controller (UCX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxclass/)">Ucxclass.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/)">Ucxclass.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxcontroller/)">Ucxcontroller.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/)">Ucxcontroller.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/Ucxroothub/)">Ucxroothub.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/Ucxroothub/)">Ucxroothub.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxusbdevice/)">Ucxusbdevice.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/)">Ucxusbdevice.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxendpoint/)">Ucxendpoint.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/)">Ucxendpoint.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ucxsstreams/)">Ucxsstreams.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/)">Ucxsstreams.h</a>
     </li>
     </ul>
 </li>
@@ -153,13 +153,13 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>USB function class extension (UFX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxbase/)">Ufxbase.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/)">Ufxbase.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxclient/)">Ufxclient.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/)">Ufxclient.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
     </li>
     </ul>
 </p>

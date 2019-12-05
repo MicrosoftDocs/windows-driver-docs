@@ -274,4 +274,4 @@ SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, S
 
 5. The Serial.sys driver always completes an **IOCTL\_SERIAL\_RESET\_DEVICE** request with STATUS\_SUCCESS, but performs no operation in response to this request. SerCx2 and SerCx do not support **IOCTL\_SERIAL\_RESET\_DEVICE** requests and always complete these requests with STATUS\_NOT\_IMPLEMENTED.
 
-For more information about **IOCTL\_SERIAL\_<em>XXX</em>** requests and read and write requests for serial controllers, see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntddser/) header.
+For more information about **IOCTL\_SERIAL\_<em>XXX</em>** requests and read and write requests for serial controllers, see the [ntddser.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/) header.
