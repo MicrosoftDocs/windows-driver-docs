@@ -412,7 +412,7 @@
       href: using-device-installation-functions.md
     - name: "Basic Installation Operations"
       href: basic-installation-operations.md
-    - name: "SetupAPI Functions that Simplify Driver Installation"
+    - name: "Functions that Simplify Driver Installation"
       href: setupapi-functions-that-simplify-driver-installation.md
     - name: "Using SetupAPI To Verify Driver Authenticode Signatures"
       href: using-setupapi-to-verify-driver-authenticode-signatures.md
