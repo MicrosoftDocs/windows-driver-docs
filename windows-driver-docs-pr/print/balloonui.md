@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The optional **balloonUI** element is used to display a message balloon on the client computer.
 
-The **balloonUI** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **balloonUI** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request) (this resource may not be available in some languages and countries.)
 
 ## Usage
 
