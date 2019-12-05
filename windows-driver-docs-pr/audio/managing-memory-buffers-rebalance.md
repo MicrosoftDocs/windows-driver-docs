@@ -111,7 +111,7 @@ For more information, see:
 
 [PSET_DMA_ENGINE_STATE callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pset_dma_engine_state)
 
-[HDAUDIO_STREAM_STATE Enumeration](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/hdaudio/ne-hdaudio-_hdaudio_stream_state)
+[HDAUDIO_STREAM_STATE Enumeration](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ne-hdaudio-_hdaudio_stream_state)
 
 [PFREE_DMA_ENGINE callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_engine)
 
