@@ -15,30 +15,25 @@ ms.localizationpriority: medium
 
 # requestClose element
 
-
 The optional **requestClose** element is used to close an event notification message on the client computer.
 
-The **requestClose** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **requestClose** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
-Usage
------
+## Usage
 
 ```xml
 <requestClose/>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -60,8 +55,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Examples
---------
+## Examples
 
 The following code example shows how to close an event notification after a button-click on the message box has been captured for the **OK** button.
 

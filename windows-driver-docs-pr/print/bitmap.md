@@ -15,13 +15,11 @@ ms.localizationpriority: medium
 
 # bitmap element
 
-
 The optional **bitmap** element is used to display a bitmap image to the left of the body text in a message box.
 
-The **bitmap** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **bitmap** element is defined in the *asyncui* namespace at this URI: https://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
 
-Usage
------
+## Usage
 
 ```xml
 <bitmap
@@ -29,8 +27,7 @@ Usage
   resourceDll = "xs:string"/>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -67,11 +64,9 @@ Attributes
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -93,8 +88,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Examples
---------
+## Examples
 
 The following code example shows how to use the **bitmap** element.
 

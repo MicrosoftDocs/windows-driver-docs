@@ -12,7 +12,7 @@ This topic provides information about updates that have been made to the XPSDrv 
 
 ## XPS Format
 
-The XPS Print API and/or the print filter pipeline will convert seamlessly between [Microsoft Xml Paper Specification 1.0](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614032(v=vs.85)) (MS XPS), and [OpenXPS](http://www.ecma-international.org/publications/standards/Ecma-388.htm) (ECMA-388). Unless otherwise specified, v4 print drivers default to consuming MS XPS. Using the manifest directive XpsFormat, drivers may choose to support one or both of the available XPS formats. For more information about OpenXPS support, see [OpenXPS Support in Windows](https://docs.microsoft.com/windows-hardware/drivers/print/driver-support-for-openxps).
+The XPS Print API and/or the print filter pipeline will convert seamlessly between [Microsoft XML Paper Specification 1.0](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614032(v=vs.85)) (MS XPS), and [OpenXPS](https://www.ecma-international.org/publications/standards/Ecma-388.htm) (ECMA-388). Unless otherwise specified, v4 print drivers default to consuming MS XPS. Using the manifest directive XpsFormat, drivers may choose to support one or both of the available XPS formats. For more information about OpenXPS support, see [OpenXPS Support in Windows](https://docs.microsoft.com/windows-hardware/drivers/print/driver-support-for-openxps).
 
 ## XPS Rasterization Service Improvements
 
@@ -36,11 +36,11 @@ The [IPrintCoreHelperUni2](https://docs.microsoft.com/windows-hardware/drivers/d
 
 [IPrintCoreHelperUni2](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni2)  
 
-[Microsoft Xml Paper Specification 1.0](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614032(v=vs.85))  
+[Microsoft XML Paper Specification 1.0](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614032(v=vs.85))  
 
 [Native Pixel Formats Overview](https://docs.microsoft.com/windows/desktop/wic/-wic-codec-native-pixel-formats)  
 
-[OpenXPS](http://www.ecma-international.org/publications/standards/Ecma-388.htm)  
+[OpenXPS](https://www.ecma-international.org/publications/standards/Ecma-388.htm)  
 
 [OpenXPS Support in Windows](https://docs.microsoft.com/windows-hardware/drivers/print/driver-support-for-openxps)  
 
