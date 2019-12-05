@@ -14,7 +14,7 @@ This topic describes how to sign a driver using attestation signing via the Wind
 
  - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
  - Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center Dashboard.
- - An attestation signed driver will only work for Windows 10 Desktop, it will not work for other versions of Windows, such as Windows Server 2016, Windows 8.1, or Windows 7.
+ - An attestation signed driver works on Windows 10 and Windows Server 2016 and later. It does not work on earlier versions of Windows, such as Windows 8.1 and Windows 7.
 
 
 
