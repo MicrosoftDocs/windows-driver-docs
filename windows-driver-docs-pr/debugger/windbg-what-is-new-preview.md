@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 This topic provides information on what's new in the WinDbg Preview debugger.
 
 ## 1.0.1908.30002
-**Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
+**Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
 
 **Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications, you can find directions for how to do this in the [Open Enclave documentation](https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/GettingStarted.Windows.md).
 
@@ -30,7 +30,7 @@ You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode
 * Running 'dx' without any parameters will now show the root namespace for easier browsability.
 * You can now modify the default symbol and source cache location via the settings menu.
 * Improved support for recording AVX-512 (recording of AVX-512 will cause a larger than normal slow-down)
-* We've enabled [offline licensing](https://docs.microsoft.com/en-us/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing)
+* We've enabled [offline licensing](https://docs.microsoft.com/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing)
 
 ## 1.0.1905.12001
 **Improvements to SymSetDiaSession error mitigation** - Our fix last month to mitigate the error caused by applications injecting DbgHelp into our process was still not working in some scenarios. We've made improvements to it and will continue to monitor feedback on this error.

@@ -47,7 +47,7 @@ If your computer has Visual Studio and the WDK installed, then you have six avai
 All of these debugging environments provide user interfaces for the same underlying debugging engine, which is implemented in the Windows Symbolic Debugger Engine (Dbgeng.dll). This debugging engine is also called the *Windows debugger*, and the six debugging environments are collectively called the *Windows debuggers*.
 
 > [!NOTE]
-> Visual Studio includes its own debugging environment and debugging engine, which together are called the *Visual Studio debugger*. For information on debugging in Visual Studio, see [Debugging in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/). For debugging managed code, such as C#, using the Visual Studio debugger is often the easiest way to get started.
+> Visual Studio includes its own debugging environment and debugging engine, which together are called the *Visual Studio debugger*. For information on debugging in Visual Studio, see [Debugging in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/). For debugging managed code, such as C#, using the Visual Studio debugger is often the easiest way to get started.
 
 
 ## <span id="Windows_debuggers"></span><span id="windows_debuggers"></span><span id="WINDOWS_DEBUGGERS"></span>Windows debuggers

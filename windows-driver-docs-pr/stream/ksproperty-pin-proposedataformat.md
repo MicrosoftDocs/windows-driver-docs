@@ -62,7 +62,7 @@ KSPROPERTY_PIN_PROPOSEDATAFORMAT includes a structure of type KSDATAFORMAT, spec
 
 KSPROPERTY\_PIN\_PROPOSEDATAFORMAT includes a structure of type [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat), specifying the proposed data format.
 
-[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) is supported in Windows 7 and later versions of Windows. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*. 
+[**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) is supported in Windows 7 and later versions of Windows. In Windows Vista **KSPROPERTY\_TYPE\_GET** is *not supported*. 
 
 **KSPROPERTY_TYPE_GET** with this property allows the audio driver to provide information about the default data format on a pin. **KSPROPERTY_TYPE_GET** 
 is optional to implement for this property unless the driver supports [**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange). 
@@ -99,7 +99,7 @@ Requirements
  
 [**KSEVENT_PINCAPS_FORMATCHANGE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-pincaps-formatchange)
 
-[**KS Properites**](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/ks-properties)
+[**KS Properites**](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-properties)
 
 [**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
  

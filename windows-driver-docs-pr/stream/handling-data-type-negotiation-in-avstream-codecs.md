@@ -65,7 +65,7 @@ To enable successful data type negotiation, the minidriver must follow these ste
 
 7.  If the input media type is set, Video Processors should report their output types based on the specified input media type.
 
-8.  The driver should support the [ICodecAPI](https://docs.microsoft.com/en-us/previous-versions/ms784893(v%3Dvs.85)) interface. User-mode components can then obtain codec configuration information by using this user-mode interface.
+8.  The driver should support the [ICodecAPI](https://docs.microsoft.com/previous-versions/ms784893(v%3Dvs.85)) interface. User-mode components can then obtain codec configuration information by using this user-mode interface.
 
 9.  During setup of an encoder, first the ICodecAPI properties are set, followed by the output media type. Following this, the encoder should only provide input types that it can support with the current configuration.
 
