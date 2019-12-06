@@ -94,7 +94,12 @@
       - name: "The BTP Software Package"
         href: testing-BTP-software-package.md
       - name: "Supported BTP Hardware"
-        href: testing-BTP-supported-hardware.md
+        href: testing-BTP-hw.md
+        items:
+        - name: "Basic HID Peripheral"
+          href: testing-BTP-hw-hid.md
+        - name: "Basic Audio Peripheral"
+          href: testing-BTP-hw-audio.md
       - name: "Setting Up BTP"
         href: testing-BTP-setup.md
       - name: "BTP Tests"
