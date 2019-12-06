@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Debugging OCA minidump files
 
 
-Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/) information. Your company can use OCA crash dumps to analyze customer problems.
+Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](https://docs.microsoft.com/windows/desktop/wer/windows-error-reporting) information. Your company can use OCA crash dumps to analyze customer problems.
 
 ## <span id="Analyze_dump_files"></span><span id="analyze_dump_files"></span><span id="ANALYZE_DUMP_FILES"></span>Analyze dump files
 
