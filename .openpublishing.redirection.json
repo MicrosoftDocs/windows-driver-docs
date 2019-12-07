@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows-driver-docs-pr/install/setupapi-functions-that-simplify-driver-installation.md",
+      "redirect_URL": "/windows-hardware/drivers/install/functions-that-simplify-driver-installation",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows-driver-docs-pr/wdf/wdf-objects.md",
       "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-framework-objects",
       "redirect_document_id": true
