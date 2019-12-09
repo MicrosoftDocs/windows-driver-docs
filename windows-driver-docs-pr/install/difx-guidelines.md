@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Starting in Windows 10 Version 1607 (Redstone 1), the Driver Install Frameworks (DIFx) tools (`Difxapi.dll`, `Difxapp.dll`, `Difxappa.dll`, and `DPInst.exe`) are deprecated and are no longer included in the WDK.
 
-Instead, we recommend providing your [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) as a standalone driver package that does not require an installer.  This is a self-contained package that adds its own settings or configuration, rather than depending on an installer to modify system state.  Standalone driver packages are required in order to have robust support of all driver package scenarios.  The recommended way to publish a standalone driver package is through Windows Update.  The first step to doing this is to submit your driver package to the [Windows Hardware Dev Center](https://partner.microsoft.com/dashboard).
+Instead, we recommend providing your [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) as a standalone driver package that does not require an installer.  This is a self-contained package that adds its own settings or configuration, rather than depending on an installer to modify system state.  Standalone driver packages are required in order support installation scenarios such as distribution through Windows Update and installation from an offline image.  The recommended way to publish a standalone driver package is through Windows Update.  The first step to doing this is to submit your driver package to the [Windows Hardware Dev Center](https://partner.microsoft.com/dashboard).
 
 If you choose to use DIFx anyway, you must use an older WDK to get the right tools. The following caveats apply:
 
