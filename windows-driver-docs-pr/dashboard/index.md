@@ -92,7 +92,7 @@ The Partner Center for Windows Hardware enables you to create and manage your sy
                         <ul>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program">Register for the hardware program</a></li>
                             <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/adding-or-removing-users">Add or remove users</a></li>
-                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-failure-reporting">Report driver failures</a></li>
+                            <li><a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/update-a-code-signing-certificate">Add a code signing certificate</a></li>
                         </ul>
                     </div>
                 </div>
