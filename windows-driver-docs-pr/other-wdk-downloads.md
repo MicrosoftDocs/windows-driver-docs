@@ -111,10 +111,10 @@ For more information about the EWDK, see
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
-| Windows 10, version 1809          | [EWDK for Windows 10, version 1809](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
-| Windows 10, version 1803          | [EWDK for Windows 10, version 1803](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
-| Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) <br/>[EWDK for Visual Studio with Build Tools 15.2](https://developer.microsoft.com/windows/hardware/license-terms-EWDK) |
-| Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk) |
+| Windows 10, version 1809          | [EWDK for Windows 10, version 1809](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) |
+| Windows 10, version 1803          | [EWDK for Windows 10, version 1803](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) |
+| Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) <br/>[EWDK for Visual Studio with Build Tools 15.2](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) |
+| Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2015) |
 
 > [!Note]
 > Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, and then run **LaunchBuildEnv**.
