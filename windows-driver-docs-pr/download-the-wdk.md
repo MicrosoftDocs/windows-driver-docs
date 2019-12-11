@@ -55,7 +55,7 @@ The EWDK is a standalone self-contained command-line environment for building dr
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
-* [Download EWDK for Windows 10, version 1903](https://developer.microsoft.com/windows/hardware/license-terms-EWDK-2)
+* [Download EWDK for Windows 10, version 1903](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2019)
 
 ## Additional information
 
