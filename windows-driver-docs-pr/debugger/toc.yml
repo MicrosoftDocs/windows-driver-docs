@@ -73,6 +73,8 @@
     href: windbg-what-is-new-preview.md
   - name: "WinDbg Preview - Installation"
     href: windbg-install-preview.md
+  - name: "WinDbg Preview - Timeline"
+    href: windbg-timeline-preview.md
   - name: "WinDbg Preview - Command line startup options"
     href: windbg-command-line-preview.md
   - name: "WinDbg Preview – Settings and workspaces"
