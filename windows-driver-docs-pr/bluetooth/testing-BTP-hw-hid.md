@@ -16,23 +16,6 @@ At this time the only supported radio is the RN42. Purchasing information for th
 
 # Devices #
 
-## Traduci board ##
-[**MCCI**](https://mcci.com/usb/dev-tools/model-2411/)
-
-<img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
-
-- 4 12-pin ports to support 4 radios simultaneously
-- 3 FPGAs connected to ports 1, 2, and 3 respectively
-- Supports audio testing via the integrated audio codec
-- Supports HID and pairing tests
-
-### PMOD Layout ###
-
-<img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
-
-- Unlabled pins can easily be statically assigned to HIGH or LOW depending on the needs of the radio plugged into the port
-- The Traduci does not currently support hardware handshaking using CTS and RTS
-
 ## HID Sled ##
 [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
@@ -52,24 +35,3 @@ The Traduci requires a 12-pin connector to communicate with any radio module. Th
 - Small form factor, low power, surface mount module
 
 ![Photo of the RN42 Radio](images/RN42.png)
-
-## Audio Sled ##
-[**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
-
-<img src="images/Traduci_and_RN52.jpg" alt="Photo of the RN52 Radio on a sled" width="400"/>
-
-The Traduci requires a 12-pin connector to communicate with any radio module. The Audio Sled takes the RN52 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasing information. The schematic is available below.
-
-### Audio Sled Schematic ###
-![Audio Sled Schematic](images/RN52Schematic.png)
-
-### RN52 Module ###
-[**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52)
-
-- UART data connection with AT commands to configure software
-- Supports SPP, A2DP, HFP/HSP, and AVRCP profiles
-- Version 3.0 audio module
-- Fully certified Class 2 BR Bluetooth 2.1+EDR
-- Small form factor, low power, surface mount module
-
-![Photo of the RN52 Radio](images/RN52.png)
