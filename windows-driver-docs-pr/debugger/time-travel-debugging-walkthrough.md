@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Sample App Walkthrough
 description: This section contains a walk through of a small C++ app. 
-ms.date: 09/17/2018
+ms.date: 11/25/2019
 ms.localizationpriority: medium
 ---
 
@@ -69,7 +69,7 @@ The lab has the following three sections.
 
 3. Click on **Finish**.
 
-3. Paste in the following text to the DisplayGreeting.cpp pane in Visual Studio.
+4. Paste in the following text to the DisplayGreeting.cpp pane in Visual Studio.
 
     ```cpp
     // DisplayGreeting.cpp : Defines the entry point for the console application.
@@ -98,7 +98,7 @@ The lab has the following three sections.
     }
     ```
 
-4.  In Visual Studio, click **Project** &gt; **DisplayGreeting properties**. Then click on **C/C++** and **Code Generation**.
+6. In Visual Studio, click **Project** &gt; **DisplayGreeting properties**. Then click on **C/C++** and **Code Generation**.
 
     Set the following properties.
 
@@ -113,17 +113,17 @@ The lab has the following three sections.
    > to expedite coding or to facilitate certain testing environments.
    >  
 
-5.  In Visual Studio, click **Build** &gt; **Build Solution**.
+7. In Visual Studio, click **Build** &gt; **Build Solution**.
 
     If all goes well, the build windows should display a message indicating that the build succeeded.
 
-6.  **Locate the built sample app files**
+8. **Locate the built sample app files**
 
     In the Solution Explorer, right click on the *DisplayGreeting* project and select **Open Folder in File explorer**.
-    
+
     Navigate to the Debug folder that contains the complied exe and symbol pdb file for the sample. For example, you would navigate to *C:\Projects\DisplayGreeting\Debug*, if that's the folder that your projects are stored in. 
 
-7. **Run the sample app with the code flaw**
+9. **Run the sample app with the code flaw**
 
     Double click on the exe file to run the sample app.
 
@@ -233,7 +233,6 @@ In the next section of this lab we will analyze the trace file to locate the iss
    > In this walkthrough three periods are used to indicate that extraneous output was removed. 
    >
 
-
 3. Click on the Exception event to display information about that TTD event. 
 
     ```dbgcmd
@@ -286,8 +285,7 @@ In the next section of this lab we will analyze the trace file to locate the iss
 
 **Examine the local variables and set a code breakpoint**
 
-At the point of failure in trace it is common to end up a fews steps after the true cause in error handling code. With time travel we can go back an instruction at a time, to locate investigate the true root cause.
-
+At the point of failure in trace it is common to end up a few steps after the true cause in error handling code. With time travel we can go back an instruction at a time, to locate the true root cause.
 
 1. From the **Home** ribbon use the  **Step Into Back** command to step back three instructions. As you do this, continue to examine the stack and memory windows.
 
@@ -318,8 +316,7 @@ At the point of failure in trace it is common to end up a fews steps after the t
     ```
 
    > [!NOTE]
-   > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a
-   > command line  usage preference to use command line commands.
+   > In this walkthrough, the command output shows the commands that can be used instead of the UI Menu options to allow users with a command line  usage preference to use command line commands.
    > 
 
 2. At this point in the trace our  stack and base pointer have values that make more sense, so it appears that we have getting closer to the point in the code where the corruption occurred.
@@ -432,7 +429,7 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
 
 1. Use the breakpoints window to clear the existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
 
-2. Determine the address of the DisplayGreeting!DetermineStringSize function using the **dx** command. 
+2. Determine the address of the DisplayGreeting!GetCppConGreeting function using the **dx** command.
 
     ```dbgcmd
     0:000> dx &DisplayGreeting!GetCppConGreeting
@@ -557,16 +554,15 @@ As it is very unlikely that the Microsoft provided wscpy_s() function would have
     013a17c1 8bf4            mov     esi,esp
     ```
 
-
-**Set the break on access breakpoint for the *greeting* variable**    
+**Set the break on access breakpoint for the *greeting* variable**
 
 Another alternative way to perform this investigation, would be to set a breakpoint on suspect variables and examine what code is changing them. For example, to set a breakpoint on the greeting variable in the GetCppConGreeting method, use this procedure.
 
 This portion of the walkthrough assumes that you are still located at the breakpoint from the previous section. 
 
-1. From **View** and then **Locals**. In the locals window, *greeting* is available in the current context, so we will be able to determine its memory location. 
+1. From **View** and then **Locals**. In the locals window, *greeting* is available in the current context, so we will be able to determine its memory location.
 
-2.  Use the **dx** command to examine the *greeting* array. 
+2. Use the **dx** command to examine the *greeting* array. 
 
     ```dbgcmd
     0:000> dx &greeting
@@ -577,16 +573,16 @@ This portion of the walkthrough assumes that you are still located at the breakp
     In this trace, *greeting* is located in memory at ddf800. 
 
 
-2. Use the breakpoints window to clear any existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
+3. Use the breakpoints window to clear any existing breakpoint by right clicking on the existing breakpoint and selecting **Remove**.
 
 
-3.  Set the breakpoint with the **ba** command using the memory address we want to monitor for write access. 
+4.  Set the breakpoint with the **ba** command using the memory address we want to monitor for write access. 
 
     ```dbgcmd
     ba w4 ddf800
     ```
 
-4. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
+5. On the Time Travel menu, use **Time travel to start** command to move to the start of the trace.
 
     ```dbgcmd
     0:000> !tt 0
@@ -601,7 +597,7 @@ This portion of the walkthrough assumes that you are still located at the breakp
     77a266ac 83bdbcfeffff00  cmp     dword ptr [ebp-144h],0 ss:002b:00ddf4c4=00000000
     ```
 
-5. On the Home menu, select **Go** to travel forward to the first point of memory access of the greeting array. 
+6. On the Home menu, select **Go** to travel forward to the first point of memory access of the greeting array. 
 
     ```dbgcmd
     0:000> g-
@@ -610,18 +606,17 @@ This portion of the walkthrough assumes that you are still located at the breakp
     eax=cccccccc ebx=002b1000 ecx=00000000 edx=68d51a6c esi=013a1046 edi=001bf7d8
     eip=013a1735 esp=001bf6b8 ebp=001bf7d8 iopl=0         nv up ei pl nz na po nc
     cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
-    DisplayGreeting!DetermineStringSize+0x25:
+    DisplayGreeting!GetCppConGreeting+0x25:
     013a1735 c745ec04000000  mov     dword ptr [ebp-14h],4 ss:002b:001bf7c4=cccccccc
     ```
 
    Alternatively, we could have traveled to the end of the trace and worked in reverse through the code to find that last point in the trace that the array memory location was written to.
-      
 
-**Use the TTD.Memory objects to view memory access**    
+**Use the TTD.Memory objects to view memory access**
 
 Another way to determine at what points in the trace memory has been accessed, is to use the TTD.Memory objects and the dx command.
 
-1.  Use the **dx** command to examine the *greeting* array. 
+1. Use the **dx** command to examine the *greeting* array.
 
     ```dbgcmd
     0:000> dx &greeting
@@ -702,7 +697,7 @@ Another way to determine at what points in the trace memory has been accessed, i
 
 For more information about the TTD.Memory objects, see [TTD.Memory Object](time-travel-debugging-object-model.md).
 
-**Summary**  
+## Summary
 
 In this very small sample the issue could have been determined by looking at the few lines of code, but in larger programs the techniques presented here can be used to decrease the time necessary to locate an issue. 
 

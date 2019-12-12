@@ -299,7 +299,7 @@ Open a command prompt as an Administrator and run the script using the -s option
 Running on a client Windows PC, a single NUMA node is displayed.
 
 ```dtrace
-C:\> dtrace -s etwnumamemstats.d 
+C:\> dtrace -s etwnumamemstats.d
 trace: script 'etwnumamemstats.d' matched 36 probes
 CPU     ID                    FUNCTION:NAME
   0  42735       0xff_0xffffffffffffffff:12

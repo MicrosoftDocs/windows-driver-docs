@@ -10,10 +10,9 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - Command line startup options
 
-## Starting WinDbg Preview
+**Starting WinDbg Preview** 
 
-After WinDbg Preview is installed, WinDbgX.exe is available to run from any directory location. 
-
+After WinDbg Preview is installed, WinDbgX.exe is available to run from any directory location.
 
 ## Command line startup options
 
@@ -24,7 +23,6 @@ WinDbgX [options]
 This following tables summarizes the available command line options.
 
 **General Options**
-
 
 |     Option      |                                                                          Description                                                                          |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,17 +96,8 @@ You can use /? to list the supported command line options.
 
 ![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
 
-
-
 ---
 
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
-
-
-
-
-
-
-
