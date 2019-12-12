@@ -77,7 +77,7 @@ After you have an Azure AD access token, you can call methods in the Microsoft H
 
 The following sample provides detailed code that demonstrate how to use the Microsoft Hardware API along with a complete end to end prebuilt solution created by the Microsoft Surface and Devices team:
 
-* [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
+* [C# sample](https://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
 
 [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
 

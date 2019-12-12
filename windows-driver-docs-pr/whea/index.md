@@ -47,7 +47,7 @@ For more detailed information about WHEA and how to implement WHEA on a hardware
 
 ## Related topics
 
-[Windows Hardware Error Architecture ACPI Table Specification](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
+[Windows Hardware Error Architecture ACPI Table Specification](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
 
 [Hardware Management and Security](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614601(v=vs.85))  
 

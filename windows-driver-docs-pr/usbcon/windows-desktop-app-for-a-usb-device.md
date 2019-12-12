@@ -42,7 +42,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 <td><p><strong>Step 1</strong>—Get the tools you need to write a Windows desktop app for devices.</p></td>
 <td><ul>
 <li>Install <a href="https://go.microsoft.com/fwlink/p/?LinkId=623328" data-raw-source="[Microsoft Visual Studio (Ultimate or Professional)]( https://go.microsoft.com/fwlink/p/?LinkId=623328)">Microsoft Visual Studio (Ultimate or Professional)</a>.</li>
-<li>Install the <a href="http://download.microsoft.com/download/E/C/E/ECE11176-1E40-46E7-A24B-D507D7F6FB65/wdk/wdksetup.exe" data-raw-source="[Windows Driver Kit (WDK) 8.1](http://download.microsoft.com/download/E/C/E/ECE11176-1E40-46E7-A24B-D507D7F6FB65/wdk/wdksetup.exe)">Windows Driver Kit (WDK) 8.1</a>.</li>
+<li>Install the <a href="https://download.microsoft.com/download/E/C/E/ECE11176-1E40-46E7-A24B-D507D7F6FB65/wdk/wdksetup.exe" data-raw-source="[Windows Driver Kit (WDK) 8.1](https://download.microsoft.com/download/E/C/E/ECE11176-1E40-46E7-A24B-D507D7F6FB65/wdk/wdksetup.exe)">Windows Driver Kit (WDK) 8.1</a>.</li>
 </ul>
 <div class="alert">
 <strong>Note</strong>  Visual Studio must be installed before installing the WDK 8.1.
@@ -55,8 +55,8 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 <td><p><strong>Step 2</strong>—Obtain a test USB device and its hardware specification. Use the specification to determine the functionality of the app and the related design decisions.</p></td>
 <td><p>For learning purposes, popular choices are:</p>
 <ul>
-<li>OSR USB FX2 learning kit. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from <a href="http://www.osronline.com/" data-raw-source="[OSR Online](http://www.osronline.com/)">OSR Online</a>.</li>
-<li>Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="http://jjgtechnologies.com/mutt.md" data-raw-source="[JJG Technologies](http://jjgtechnologies.com/mutt.md)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, download the MUTT software package from <a href="mutt-software-package.md" data-raw-source="[this Web site](mutt-software-package.md)">this Web site</a> and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
+<li>OSR USB FX2 learning kit. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from <a href="https://www.osronline.com/" data-raw-source="[OSR Online](https://www.osronline.com/)">OSR Online</a>.</li>
+<li>Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="https://jjgtechnologies.com/mutt.md" data-raw-source="[JJG Technologies](https://jjgtechnologies.com/mutt.md)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, download the MUTT software package from <a href="mutt-software-package.md" data-raw-source="[this Web site](mutt-software-package.md)">this Web site</a> and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
 </ul></td>
 </tr>
 <tr class="odd">
