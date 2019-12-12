@@ -1,6 +1,3 @@
-- name: "UWP device apps"
-# Auto-expanded node
-  items: 
   - name: "UWP device apps"
     href: index.md
   - name: "What's new"

@@ -1,6 +1,3 @@
-- name: "Multifunction device driver design guide"
-# Auto-expanded node
-  items: 
   - name: "Multifunction device driver design guide"
     href: index.md
   - name: "Supporting Multifunction PC Card Devices"

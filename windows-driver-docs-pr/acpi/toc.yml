@@ -1,6 +1,3 @@
-- name: "ACPI design guide"
-# Auto-expanded node
-  items: 
   - name: "ACPI design guide"
     href: index.md
   - name: "Supporting ACPI Devices"

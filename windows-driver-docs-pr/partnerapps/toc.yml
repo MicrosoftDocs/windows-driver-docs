@@ -1,6 +1,3 @@
-- name: "Partner app development"
-# Auto-expanded node
-  items: 
   - name: "Partner app development"
     href: index.md
   - name: "Background tasks and custom triggers"

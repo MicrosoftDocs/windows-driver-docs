@@ -1,6 +1,3 @@
-- name: "IEEE 1394 Bus Drivers"
-# Auto-expanded node
-  items: 
   - name: "IEEE 1394 Bus Drivers"
     href: index.md
   - name: "The IEEE 1394 Driver Stack"

@@ -1,6 +1,3 @@
-- name: "Audio Drivers Design Guide"
-# Auto-expanded node
-  items: 
   - name: "Audio Drivers Design Guide"
     href: index.md
   - name: "Windows 10: What's New for Audio"

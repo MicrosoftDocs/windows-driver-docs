@@ -1,6 +1,3 @@
-- name: "Serial Controller Driver Design Guide"
-# Auto-expanded node
-  items: 
   - name: "Serial Controller Driver Design Guide"
     href: index.md
   - name: "Serial Controller Drivers"

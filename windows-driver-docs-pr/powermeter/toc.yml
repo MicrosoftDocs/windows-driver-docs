@@ -1,6 +1,3 @@
-- name: "Power Metering and Budgeting Design Guide"
-# Auto-expanded node
-  items: 
   - name: "Power Metering and Budgeting Design Guide"
     href: index.md
   - name: "Overview of the Power Metering and Budgeting Infrastructure"

@@ -1,6 +1,3 @@
-- name: "Biometric Design Guide"
-# Auto-expanded node
-  items: 
   - name: "Biometric Design Guide"
     href: index.md
   - name: "Getting Started with Biometric Drivers"

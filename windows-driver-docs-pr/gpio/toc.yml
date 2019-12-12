@@ -1,6 +1,3 @@
-- name: "General-Purpose I/O (GPIO) Driver Design Guide"
-# Auto-expanded node
-  items: 
   - name: "General-Purpose I/O (GPIO) Driver Design Guide"
     href: index.md
   - name: "GPIO Driver Support Overview"

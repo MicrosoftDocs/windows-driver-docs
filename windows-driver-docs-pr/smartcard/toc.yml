@@ -1,6 +1,3 @@
-- name: "Design Guide"
-# Auto-expanded node
-  items: 
   - name: "Design Guide"
     href: index.md
   - name: "Smart Card Driver Environment"

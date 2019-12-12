@@ -1,6 +1,3 @@
-- name: "Parallel Devices Design Guide"
-# Auto-expanded node
-  items: 
   - name: "Parallel Devices Design Guide"
     href: index.md
   - name: "Introduction to Parallel Ports and Devices"

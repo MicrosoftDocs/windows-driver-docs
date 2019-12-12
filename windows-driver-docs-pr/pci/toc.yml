@@ -1,6 +1,3 @@
-- name: "PCI driver programming guide"
-# Auto-expanded node
-  items: 
   - name: "PCI driver programming guide"
     href: index.md
   - name: "PCI Power Management and Device Drivers"

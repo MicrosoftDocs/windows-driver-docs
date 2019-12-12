@@ -1,6 +1,3 @@
-- name: "File system driver design guide"
-# Auto-expanded node
-  items: 
   - name: "File system driver design guide"
     href: index.md
   - name: "File System Drivers"

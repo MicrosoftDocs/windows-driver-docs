@@ -1,6 +1,3 @@
-- name: "Battery Devices Design Guide"
-# Auto-expanded node
-  items: 
   - name: "Battery Devices Design Guide"
     href: index.md
   - name: "Writing Battery Miniclass Drivers"

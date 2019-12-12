@@ -1,6 +1,3 @@
-- name: "GNSS driver design guide"
-# Auto-expanded node
-  items: 
   - name: "GNSS driver design guide"
     href: index.md
   - name: "GNSS driver design guide for Windows 8.1"

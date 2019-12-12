@@ -1,6 +1,3 @@
-- name: "Windows driver samples"
-# Auto-expanded node
-  items: 
   - name: "Windows driver samples"
     href: index.md
   - name: "Audio driver samples"

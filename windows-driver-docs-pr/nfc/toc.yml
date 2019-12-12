@@ -1,6 +1,3 @@
-- name: "NFC design guide"
-# Auto-expanded node
-  items: 
   - name: "NFC design guide"
     href: index.md
   - name: "What's new in NFC device drivers"

@@ -1,6 +1,3 @@
-- name: "Partner Center for Windows Hardware"
-# Auto-expanded node
-  items: 
   - name: "Partner Center for Windows Hardware"
     href: index.md
   - name: "Hardware Program dashboard FAQ"

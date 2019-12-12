@@ -1,6 +1,3 @@
-- name: "Hardware notifications design guide"
-# Auto-expanded node
-  items: 
   - name: "Hardware notifications design guide"
     href: index.md
   - name: "GPIO buttons and indicators implementation guide"
