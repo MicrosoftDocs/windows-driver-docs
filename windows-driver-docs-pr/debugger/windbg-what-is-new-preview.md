@@ -12,6 +12,20 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.0.1912.11001
+**TTD Timelines** - We've added a new window that displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. Timelines will automatically open and display exceptions (if present) and breakpoints. For more information, see [WinDbg Preview - Timeline](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/windbg-timeline-preview).
+
+**Switched to default window chrome** - The custom window chrome we were using, while prettier, was causing some scaling and resizing issues for a notable number of people, so we’ve opted to remove it for the time being.
+
+**File menu improved keyboard navigation** - The file menu is now much easier to navigate with just a keyboard.
+
+**Other changes and bug fixes**
+* The stack and locals window will now be disabled when your target is running and won’t show “Unspecified error” when there is no target.
+* Added a “Services” column to the attach dialog to easily find which services are running.
+* Fixed a bug that caused architecture detection to not work when launching applications with arguments.
+* The disassembly window has improved disassembly when private symbols are loaded.
+* jsprovider.dll is now loaded automatically, so we removed the “Load JSProvider” button from the scripting ribbon.
+
 ## 1.0.1908.30002
 **Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
 
