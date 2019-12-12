@@ -1,74 +1,71 @@
 - name: "Design Guide"
+  href: index.md
+- name: "Smart Card Driver Environment"
+  href: smart-card-driver-environment.md
+- name: "Management of IOCTL Requests in a Smart Card Reader Driver"
 # Auto-expanded node
   items: 
-  - name: "Design Guide"
-    href: index.md
-  - name: "Smart Card Driver Environment"
-    href: smart-card-driver-environment.md
   - name: "Management of IOCTL Requests in a Smart Card Reader Driver"
+    href: management-of-ioctl-requests-in-a-smart-card-reader-driver.md
+  - name: "Smart Card Driver Library"
+    href: smart-card-driver-library.md
+  - name: "Interaction with the Smart Card Driver Library"
+    href: interaction-with-the-smart-card-driver-library.md
+  - name: "Smart Card Driver Library Callback Routines"
+    href: smart-card-driver-library-callback-routines.md
+  - name: "Smart Card Callback Parameters"
+    href: smart-card-callback-parameters.md
+- name: "WDM Reader Driver"
+  href: wdm-reader-driver.md
+- name: "Smart Card Minidrivers"
 # Auto-expanded node
-    items: 
-    - name: "Management of IOCTL Requests in a Smart Card Reader Driver"
-      href: management-of-ioctl-requests-in-a-smart-card-reader-driver.md
-    - name: "Smart Card Driver Library"
-      href: smart-card-driver-library.md
-    - name: "Interaction with the Smart Card Driver Library"
-      href: interaction-with-the-smart-card-driver-library.md
-    - name: "Smart Card Driver Library Callback Routines"
-      href: smart-card-driver-library-callback-routines.md
-    - name: "Smart Card Callback Parameters"
-      href: smart-card-callback-parameters.md
-  - name: "WDM Reader Driver"
-    href: wdm-reader-driver.md
+  items: 
   - name: "Smart Card Minidrivers"
+    href: smart-card-minidrivers.md
+  - name: "Smart Card Minidriver Overview"
+    href: smart-card-minidriver-overview.md
+  - name: "Smart Card Minidriver Versions"
 # Auto-expanded node
     items: 
-    - name: "Smart Card Minidrivers"
-      href: smart-card-minidrivers.md
-    - name: "Smart Card Minidriver Overview"
-      href: smart-card-minidriver-overview.md
     - name: "Smart Card Minidriver Versions"
-# Auto-expanded node
-      items: 
-      - name: "Smart Card Minidriver Versions"
-        href: smart-card-minidriver-versions.md
-      - name: "Minidriver Version 7.07 Features"
-        href: minidriver-version-7-07-features.md
-      - name: "Minidriver Version 7.06 Features"
-        href: minidriver-version-7-06-features.md
-      - name: "Minidriver Version 6.02 Features"
-        href: minidriver-version-6-02-features.md
-      - name: "Minidriver Version 5.07 Features"
-        href: minidriver-version-5-07-features.md
-    - name: "Developer Guidelines"
-      href: developer-guidelines.md
-    - name: "Card Requirements"
-      href: card-requirements.md
-    - name: "File System Requirements"
-      href: file-system-requirements.md
-    - name: "Card PIN Operations"
-      href: card-pin-operations.md
-    - name: "Smart Card Plug and Play"
-      href: smart-card-plug-and-play.md
-    - name: "Discovery Process"
-      href: discovery-process.md
-    - name: "Secure Key Injection"
-      href: secure-key-injection.md
-    - name: "Windows Inbox Smart Card Minidriver"
-      href: windows-inbox-smart-card-minidriver.md
-    - name: "Minidriver Registration"
-      href: minidriver-registration.md
-  - name: "Smart Card Reader States"
-    href: smart-card-reader-states.md
-  - name: "Installing Smart Card Reader Drivers"
-    href: installing-smart-card-reader-drivers.md
-  - name: "Registering a WDM Smart Card Reader Driver"
-    href: registering-a-wdm-smart-card-reader-driver.md
-  - name: "Enabling Smart Card Event Logging in the Registry"
-    href: enabling-smart-card-event-logging-in-the-registry.md
-  - name: "WDM Device Names for Smart Card Readers"
-    href: wdm-device-names-for-smart-card-readers.md
-  - name: "Smart Card Driver Debugging"
-    href: smart-card-driver-debugging.md
-  - name: "Specifications and Resources"
-    href: specifications-and-resources.md
+      href: smart-card-minidriver-versions.md
+    - name: "Minidriver Version 7.07 Features"
+      href: minidriver-version-7-07-features.md
+    - name: "Minidriver Version 7.06 Features"
+      href: minidriver-version-7-06-features.md
+    - name: "Minidriver Version 6.02 Features"
+      href: minidriver-version-6-02-features.md
+    - name: "Minidriver Version 5.07 Features"
+      href: minidriver-version-5-07-features.md
+  - name: "Developer Guidelines"
+    href: developer-guidelines.md
+  - name: "Card Requirements"
+    href: card-requirements.md
+  - name: "File System Requirements"
+    href: file-system-requirements.md
+  - name: "Card PIN Operations"
+    href: card-pin-operations.md
+  - name: "Smart Card Plug and Play"
+    href: smart-card-plug-and-play.md
+  - name: "Discovery Process"
+    href: discovery-process.md
+  - name: "Secure Key Injection"
+    href: secure-key-injection.md
+  - name: "Windows Inbox Smart Card Minidriver"
+    href: windows-inbox-smart-card-minidriver.md
+  - name: "Minidriver Registration"
+    href: minidriver-registration.md
+- name: "Smart Card Reader States"
+  href: smart-card-reader-states.md
+- name: "Installing Smart Card Reader Drivers"
+  href: installing-smart-card-reader-drivers.md
+- name: "Registering a WDM Smart Card Reader Driver"
+  href: registering-a-wdm-smart-card-reader-driver.md
+- name: "Enabling Smart Card Event Logging in the Registry"
+  href: enabling-smart-card-event-logging-in-the-registry.md
+- name: "WDM Device Names for Smart Card Readers"
+  href: wdm-device-names-for-smart-card-readers.md
+- name: "Smart Card Driver Debugging"
+  href: smart-card-driver-debugging.md
+- name: "Specifications and Resources"
+  href: specifications-and-resources.md

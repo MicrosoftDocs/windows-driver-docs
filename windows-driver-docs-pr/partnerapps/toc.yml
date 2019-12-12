@@ -1,13 +1,10 @@
 - name: "Partner app development"
-# Auto-expanded node
-  items: 
-  - name: "Partner app development"
-    href: index.md
-  - name: "Background tasks and custom triggers"
-    href: background-tasks-and-oem-triggers.md
-  - name: "Kiosk apps for assigned access: Best practices"
-    href: create-a-kiosk-app-for-assigned-access.md
-  - name: "Create a partner settings app"
-    href: create-a-system-settings-application.md
-  - name: "Wi-Fi Direct"
-    href: wi-fi-direct.md
+  href: index.md
+- name: "Background tasks and custom triggers"
+  href: background-tasks-and-oem-triggers.md
+- name: "Kiosk apps for assigned access: Best practices"
+  href: create-a-kiosk-app-for-assigned-access.md
+- name: "Create a partner settings app"
+  href: create-a-system-settings-application.md
+- name: "Wi-Fi Direct"
+  href: wi-fi-direct.md
