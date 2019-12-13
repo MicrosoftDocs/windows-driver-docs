@@ -39,11 +39,7 @@ The following options can be set to change what information is included in the l
 0x2 - Minidump
 
 0x4 - Hyper-V pages + Kernel pages)
-<<<<<<< HEAD
- 
-=======
 
->>>>>>> master
 0x5 - User, kernel and hypervisor pages.
 
 ## Live Dump Example Code
@@ -92,13 +88,6 @@ Use WinDbg to work with a dump file as described above.
 
 Open the Windows Event Viewer: Go to: Applications and Services Logs->Microsoft->Windows->Kernel-Livedump->Operational
 
-<<<<<<< HEAD
-Don't find any logs? - *Enable the analytic channel*
-
-**Enable  analytic channel from command prompt**
-
-- `wevtutil sl Microsoft-Windows-Kernel-LiveDump/Analytic /e:true`
-=======
 If you didn't find any logs, enable the analytic channel from the command prompt or the event viewer as described below.
 
 **Enable  analytic channel from command prompt**
@@ -106,7 +95,6 @@ If you didn't find any logs, enable the analytic channel from the command prompt
 Use this command to enable the analytic channel from and administrator command prompt.
 
 `wevtutil sl Microsoft-Windows-Kernel-LiveDump/Analytic /e:true`
->>>>>>> master
 
 **Enable  analytic channel using Event Viewer**
 
@@ -118,11 +106,7 @@ Use this command to enable the analytic channel from and administrator command p
 
 ### Enabling full live dumps
 
-<<<<<<< HEAD
 These example settings below, show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
-=======
-These example settings below show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
->>>>>>> master
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReports" /f /t REG_DWORD /v FullLiveReportsMax /d 10`
 
