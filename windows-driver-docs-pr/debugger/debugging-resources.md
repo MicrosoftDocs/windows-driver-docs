@@ -16,7 +16,7 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 
 ## <span id="Installing_Debugging_Tools_for_Windows"></span><span id="installing_debugging_tools_for_windows"></span><span id="INSTALLING_DEBUGGING_TOOLS_FOR_WINDOWS"></span>Installing Debugging Tools for Windows
 
-- [Download and Install Debugging Tools for Windows](https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk)
+- [Download and Install Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
 
 ## <span id="Debugger_How-Tos"></span><span id="debugger_how-tos"></span><span id="DEBUGGER_HOW-TOS"></span>Debugger How-Tos
 

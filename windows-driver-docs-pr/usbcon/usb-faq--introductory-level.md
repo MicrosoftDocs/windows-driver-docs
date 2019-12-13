@@ -205,9 +205,7 @@ The USB-IF has worked with Microsoft and other USB-IF member companies to develo
 
 More information is available on the USB Web site.
 
-For USB and Hi-Speed USB refer to: [http://www.usb.org/developers/packaging](https://www.usb.org/developers/packaging/)/.
-
-For SuperSpeed USB refer to: <http://www.usb.org/channel/>.
+For USB Hi-Speed and SuperSpeed refer to: [https://www.usb.org/](https://www.usb.org/).
 
 ## Do I have to rewrite my client driver to support USB 3.0 devices?
 
@@ -240,7 +238,7 @@ Uaspstor.sys is new to Windows 8. It is not present in earlier versions of Windo
 
 ## Which USB DWG Classes does Microsoft support?
 
-Windows supports several USB classes that the USB Device Working Group (DWG) has defined. For the current list of USB class specifications and class codes, visit the USB DWG Web site at [http://www.usb.org/developers/devclass\_docs]( https://go.microsoft.com/fwlink/p/?LinkId=623332).
+Windows supports several USB classes that the USB Device Working Group (DWG) has defined. For the current list of USB class specifications and class codes, visit the USB DWG Web site at [https://www.usb.org/documents]( https://go.microsoft.com/fwlink/p/?LinkId=623332).
 
 This table highlights the USB DWG classes that are supported in Windows and also identifies the versions of Windows that support each class.
 
@@ -482,8 +480,6 @@ Because Windows 2000 and Windows XP were released before USB 2.0 hardware was av
 
 4. In the Add New Hardware Wizard, select **Install the software automatically (Recommended)**, and then click **Next**. Continue with the wizard, accepting all default options, until you reach the last page of the wizard, and then click **Finish**. You might be required to restart your computer to finish the installation.
 
-For additional information about the availability of USB 2.0 in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1" at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632&](https://support.microsoft.com/help/329632).
-
 **Note**  
 To ensure that you have the latest updates installed on your machine, visit Windows Update regularly.
 
@@ -499,8 +495,6 @@ To disable the notice, follow these steps:
 
 **Note**  
 The preceding procedure disables all USB notices, not just "HI-SPEED USB Device plugged into non-HI-SPEED port".
-
-For additional information about USB 2.0 support in Windows XP Service Pack 1, see Microsoft Knowledge Base article 329632, "How to obtain and to install USB 2.0 drivers in Windows XP Service Pack 1, at [http://support.microsoft.com/default.aspx?scid=KB;EN-US;Q329632](https://support.microsoft.com/help/329632).
 
 ## Is my USB 2.0 hub single-TT or multi-TT?
 
@@ -622,10 +616,6 @@ No. This functionality is not supported by the USB stack that is included with W
 A composite USB device - also referred to as a multifunction USB device - exposes multiple functions, each of which can be treated as an independent device. The system loads the USB generic parent driver, **Usbccgp.sys**, to serve as the parent driver for eaech of the device's functions. The USB generic parent driver enumerates the composite device's functions as though they were separate USB devices and then creates a PDO and constructs a device stack for each function.
 
 A composite USB device cannot expose a function that serves as a hub. Windows does not enumerate such hubs properly and attempting to install the device might cause a system crash.
-
-## Where can I find additional FAQs on USB?
-
-See the USB-IF FAQ page at <http://www.usb.org/developers/usbfaq/>.
 
 ## Related topics
 
