@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Accessing Hardware and Handling Interrupts
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 Starting in UMDF 1.11, UMDF drivers can retrieve hardware resources that the system has assigned to the device, directly read or write to device registers that the system has assigned and mapped to memory space or I/O port space, and connect and service hardware interrupts.
 

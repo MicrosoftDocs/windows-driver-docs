@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # UMDF DDI Programming Model
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The framework and the UMDF driver communicate through the UMDF DDI. The UMDF DDI is similar to the KMDF DDI except that the UMDF DDI is based on COM. Therefore, driver writers familiar with KMDF will understand UMDF.
 

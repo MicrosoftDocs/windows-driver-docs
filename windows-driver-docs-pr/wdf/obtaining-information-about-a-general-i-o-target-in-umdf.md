@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Obtaining Information About a General I/O Target in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 To obtain information about an I/O target, a UMDF driver can call the following methods that the I/O target object defines:
 

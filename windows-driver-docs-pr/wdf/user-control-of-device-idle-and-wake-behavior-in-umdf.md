@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # User Control of Device Idle and Wake Behavior in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 If a device has idle power-down or wake-up capabilities, you can decide whether users should be allowed to enable or disable these capabilities.
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Handling Client Impersonation in UMDF 1.x Drivers
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 UMDF drivers typically run under the LocalService account and cannot access files or resources that require user credentials, such as protected files or other protected resources. A UMDF driver typically operates on commands and data that flow between a client application and a device. Therefore, most UMDF drivers do not access protected resources.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Synchronizing Interrupt Code
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 All driver code that accesses the interrupt data buffer must be synchronized so that only one routine accesses the data at a time.
 

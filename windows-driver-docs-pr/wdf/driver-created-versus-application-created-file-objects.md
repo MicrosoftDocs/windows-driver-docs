@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Driver-Created Versus Application-Created File Objects
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 When an application opens a handle to a device, the framework calls your driver's [**IQueueCallbackCreate::OnCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackcreate-oncreatefile) method and supplies a pointer to the [**IWDFFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile) interface for the file object that is associated with the device. Any I/O requests that the application sends to the opened handle are associated with the created file object. When such requests arrive, the framework calls the appropriate method from one of the driver-supplied [UMDF Queue Object Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/). The driver can then call [**IWDFIoRequest::GetFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getfileobject) to determine the file object associated with the request. The driver can call [**AssignContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-assigncontext) on the file object to associate context that is specific to the I/O session.
 

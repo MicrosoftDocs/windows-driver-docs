@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # Configuring Dispatch Mode for an I/O Queue
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 When I/O requests from applications arrive, the framework places each request in the appropriate I/O queue. How and when the requests are delivered to the driver depend on how the driver configures dispatching for the I/O queue and on how the driver [specifies callback-function synchronization](specifying-a-callback-synchronization-mode.md). The I/O queue also interacts with the PnP and power management subsystem of UMDF to hold I/O requests in the queue until the device reaches the proper state.
 
