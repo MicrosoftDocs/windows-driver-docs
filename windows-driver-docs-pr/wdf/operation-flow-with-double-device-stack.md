@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Operation Flow with Double Device Stack
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The following figure shows the flow of operations that occur to and from UMDF filter and functional drivers in a double device stack.
 

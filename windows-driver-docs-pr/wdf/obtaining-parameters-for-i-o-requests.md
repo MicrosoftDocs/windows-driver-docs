@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Obtaining Parameters for I/O Requests
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 When a driver receives an I/O request, the driver can use the following methods of the [IWDFIoRequest](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest) interface to obtain parameters related to the request:
 

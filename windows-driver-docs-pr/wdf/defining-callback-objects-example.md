@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Defining Callback Objects Example
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The following code example shows how a driver inherits from the [IPnpCallbackHardware](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware) interface to define a device callback object.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Creating an Interrupt Object
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 A UMDF driver that handles a device's hardware interrupts must create a framework interrupt object for each interrupt that each device can support.
 

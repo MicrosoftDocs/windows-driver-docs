@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Power Policy Ownership in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 For each device, one (and only one) of the device's drivers must be the device's *power policy owner*. The power policy owner determines the appropriate [device power state](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-power-states) for a device and sends requests to the device's driver stack whenever the device's power state should change.
 

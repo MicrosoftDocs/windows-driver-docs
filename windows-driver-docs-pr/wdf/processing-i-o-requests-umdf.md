@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Processing I/O Requests
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 ## In this section
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # Using the Registry in UMDF 1.x Drivers
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 UMDF-based drivers can read and write values in the registry by using interfaces of the property store object.
 

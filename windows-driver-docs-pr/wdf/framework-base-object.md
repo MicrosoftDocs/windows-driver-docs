@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Framework Base Object
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The framework base object is exposed to drivers by the [IWDFObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject) interface. It provides basic functionality that is common across all framework object types. All framework objects are derived from this root object.
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Framework I/O Queue Object
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The framework I/O queue object is exposed to drivers by the [IWDFIoQueue](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue) interface. It represents an I/O queue, which is a container for I/O requests. An I/O queue controls the flow of requests into the driver. When an I/O request arrives, it is placed in the appropriate queue. I/O queue objects are children of [UMDF device objects](framework-device-object.md). A driver can call the [**IWDFDevice::CreateIoQueue**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-createioqueue) method to create I/O queue objects. In the call to **IWDFDevice::CreateIoQueue**, the driver can specify whether the queue is the default queue.
 

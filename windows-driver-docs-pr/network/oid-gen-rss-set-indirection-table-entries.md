@@ -7,7 +7,7 @@ ms.date: 10/11/2017
 ms.localizationpriority: medium
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
+[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
 
 # OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
 

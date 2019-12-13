@@ -7,7 +7,7 @@ ms.date: 10/11/2017
 ms.localizationpriority: medium
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
+[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
 
 # Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80
 
