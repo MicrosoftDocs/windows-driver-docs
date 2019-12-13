@@ -41,7 +41,6 @@ This topic presents frequently asked questions for driver developers who are new
 - [Does the USB stack handle chained MDLs in a URB?](#does-the-usb-stack-handle-chained-mdls-in-a-urb)
 - [Can a driver have more than one URB in an IRP?](#can-a-driver-have-more-than-one-urb-in-an-irp)
 - [Does Windows Support USB Composite Hubs?](#does-windows-support-usb-composite-hubs)
-- [Where can I find additional FAQs on USB?](#where-can-i-find-additional-faqs-on-usb)
 
 ## I hear numerous USB terms thrown around almost interchangeably. What do they all mean?
 
