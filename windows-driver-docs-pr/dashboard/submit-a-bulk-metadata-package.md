@@ -140,7 +140,7 @@ The XML document must be saved by using UTF-8 encoding.
 
 **BulkMetadataSubmission XML Schema NameSpace**
 
-The following is the namespace of the PcMetadataSubmission XML schema: http://schemas.microsoft.com/Windows/2010/08/MetadataSubmission/BulkMetadataSubmission
+The following is the namespace of the PcMetadataSubmission XML schema: `http://schemas.microsoft.com/Windows/2010/08/MetadataSubmission/BulkMetadataSubmission`
 
 **Overview of BulkMetadataSubmission XML Elements/Attributes**
 
