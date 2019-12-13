@@ -3,6 +3,7 @@ title: UMDF 1 Deprecation
 author: tedhudek
 ms.localizationpriority: medium
 ms.date: 10/17/2018
+ms.topic: include
 ---
 
 # 

@@ -2,6 +2,7 @@
 title: RSSv2 beta and preview warning
 ms.localizationpriority: medium
 ms.date: 10/17/2018
+ms.topic: include
 ---
 
 # 
