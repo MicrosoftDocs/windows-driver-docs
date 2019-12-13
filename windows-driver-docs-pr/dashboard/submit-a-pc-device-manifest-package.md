@@ -140,9 +140,9 @@ For more information about ComputerHardwareID, see [How to Create a Device Metad
 
 The following are the namespaces of the PcMetadataSubmission XML schema:
 
--   http://schemas.microsoft.com/Windows/2009/05/MetadataSubmission/PcMetadataSubmission
+-   `http://schemas.microsoft.com/Windows/2009/05/MetadataSubmission/PcMetadataSubmission`
 
--   http://schemas.microsoft.com/Windows/2011/06/MetadataSubmission/PcMetadataSubmissionv2
+-   `http://schemas.microsoft.com/Windows/2011/06/MetadataSubmission/PcMetadataSubmissionv2`
 
 **Overview of PcMetadataSubmission XML Elements/Attributes**
 
