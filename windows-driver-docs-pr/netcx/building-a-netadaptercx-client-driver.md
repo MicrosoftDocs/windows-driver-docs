@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # Building a NetAdapterCx client driver
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 To obtain the latest version of Visual Studio and the Windows Driver Kit (WDK), please visit the [Hardware Dev Center](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
 Use the following steps to create a new NetAdapter client driver in Visual Studio:
@@ -21,7 +19,7 @@ Use the following steps to create a new NetAdapter client driver in Visual Studi
 3. To open the Driver Property Page dialog, choose **Project > Properties**.
 4. In the **Configuration Properties > Driver Settings > Network Adapter Driver** dialog box, select the **Link to the Network Adapter Class Extension** dropdown and set to **Yes**.
 5. In the **Configuration Properties > Driver Settings > Network Adapter Driver** dialog box, select **Network Adapter Major Version** and **Network Adapter Minor Version**.
-    1. The current version of NetAdapterCx is **1.3**.
+    1. The current version of NetAdapterCx is **2.0**.
 6. Add the following header to every source file (or to your common/precompiled header):
 
 ```C++

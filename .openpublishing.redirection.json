@@ -6079,7 +6079,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/netcx/using-the-ring-buffer.md",
-      "redirect_URL": "/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators",
+      "redirect_URL": "/windows-hardware/drivers/netcx/introduction-to-net-rings",
       "redirect_document_id": true
     },
     {

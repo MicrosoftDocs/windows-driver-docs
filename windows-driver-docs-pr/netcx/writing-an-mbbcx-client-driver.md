@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # Writing an MBBCx client driver
 
-[!include[MBBCx Beta Prerelease](../mbbcx-beta-prerelease.md)]
-
 >[!WARNING]
 >The sequence diagrams in this topic are for illustration purposes only. They are not public contracts and are subject to change in the future.
 

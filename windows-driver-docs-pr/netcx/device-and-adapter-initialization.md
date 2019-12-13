@@ -4,14 +4,12 @@ description: Device and adapter initialization
 ms.assetid: EBBEF0FB-6CDB-4899-AAE9-71812EE20AFB
 keywords:
 - NetAdapterCx device initialization, NetCx device initialization, NetAdapterCx adapter initialization, NetCx adapter initialization
-ms.date: 01/18/2019
+ms.date: 01/07/2019
 ms.localizationpriority: medium
-ms.custom: 19H1
+ms.custom: Vib
 ---
 
 # Device and adapter initialization
-
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 This topic describes the steps for a NetAdapterCx client driver to initialize and start WDFDEVICE and NETADAPTER objects. For more info about these objects and their relationship, see [Summary of NetAdapterCx objects](summary-of-netadaptercx-objects.md).
 
@@ -21,10 +19,10 @@ A NetAdapterCx client driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https:/
 
 In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), a NetAdapterCx client driver should do the following in order:
 
-1. Call [**NetAdapterDeviceInitConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterdeviceinitconfig).
+1. Call [**NetDeviceInitConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig).
 
     ```C++
-    status = NetAdapterDeviceInitConfig(DeviceInit);
+    status = NetDeviceInitConfig(DeviceInit);
     if (!NT_SUCCESS(status)) 
     {
         return status;
@@ -57,21 +55,12 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
     //
 
     // Datapath callbacks for creating packet queues
-    PNET_ADAPTER_DATAPATH_CALLBACKS datapathCallbacks;
-    NET_ADAPTER_DATAPATH_CALLBACKS_INIT(datapathCallbacks,
+    NET_ADAPTER_DATAPATH_CALLBACKS datapathCallbacks;
+    NET_ADAPTER_DATAPATH_CALLBACKS_INIT(&datapathCallbacks,
                                         MyEvtAdapterCreateTxQueue,
                                         MyEvtAdapterCreateRxQueue);
     NetAdapterInitSetDatapathCallbacks(adapterInit,
                                        datapathCallbacks);
-
-    // Power settings attributes
-    NetAdapterInitSetNetPowerSettingsAttributes(adapterInit,
-                                                attribs);
-
-    // Net request attributes
-    NetAdapterInitSetNetRequestAttributes(adapterInit,
-                                            attribs);
-
     // 
     // Required: create the adapter
     //
@@ -152,11 +141,6 @@ NetAdapterSetDatapathCapabilities(netAdapter,
                                   &txCapabilities,
                                   &rxCapabilities);
 
-// Power capabilities
-...
-NetAdapterSetPowerCapabilities(netAdapter,
-                               &powerCapabilities);
-
 // Receive scaling capabilities
 ...
 NetAdapterSetReceiveScalingCapabilities(netAdapter,
@@ -169,6 +153,9 @@ NetAdapterOffloadSetChecksumCapabilities(netAdapter,
 ...
 NetAdapterOffloadSetLsoCapabilities(netAdapter,
                                     &lsoCapabilities);
+                                    ...
+NetAdapterOffloadSetRscCapabilities(netAdapter,
+                                    &rscCapabilities);
 
 //
 // Required: start the adapter
