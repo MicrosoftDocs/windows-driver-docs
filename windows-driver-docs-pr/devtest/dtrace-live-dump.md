@@ -143,19 +143,11 @@ reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReport
 
 ### Disk space issues (Event ID 202 -Error Text: Live Dump Write Deferred Dump Data API ended. NT Status: 0xC000007F.)
 
-<<<<<<< HEAD
-This means the disk space is insufficient. Update the registry key show below to change the path for live dump creation, in this example to a drive d: that has addtional storage space available.
-
-`reg add hklm\system\currentcontrolset\control\crashcontrol\livekernelreports /v "LiveKernelReportsPath" /t reg_sz /d "\??\d:\livedumps"`
-
-This command sets the live dump root path to `"d:\livedumps" (as an example).
-=======
-This means the disk space is insufficient. Update the registry key show below to change the path for live dump creation, in this example to a drive d: that has additional storage space available.
+This means the disk space is insufficient. Update the registry key shown below to change the path for live dump creation, in this example to a drive d: that has additional storage space available.
 
 `reg add hklm\system\currentcontrolset\control\crashcontrol\livekernelreports /v "LiveKernelReportsPath" /t reg_sz /d "\??\d:\livedumps"`
 
 This command sets the live dump root path to `d:\livedumps` (as an example).
->>>>>>> master
 
 Do not manually create the folder as it is managed by the OS and will be created when the dump is triggered with the proper permissions.
 
