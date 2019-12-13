@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # Power-up sequence for a NetAdapterCx client driver
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 The following figure shows the order in which NetAdapterCx calls a client driver's event callback functions when bringing a device to the fully operational state, starting from the Device Arrived state at the bottom of the figure:
 
 <img src="images/netadaptercx-powerup.png" alt="Device enumeration and power-up sequence for NetAdapterCx client driver" title="Device enumeration and power-up sequence for NetAdapterCx client driver" style="width: 600px;"/>

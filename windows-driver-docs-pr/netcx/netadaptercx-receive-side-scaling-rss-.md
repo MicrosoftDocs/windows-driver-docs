@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # NetAdapterCx receive side scaling (RSS)
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 Receive side scaling (RSS) is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems. RSS improves system performance and increases network scalability by harnessing all available processors in a system and dynamically rebalancing CPU workloads. 
 
 This topic highlights RSS for NetAdapterCx client drivers and assumes knowledge of RSS concepts and terminology. For more information about RSS in general, including diagrams illustrating RSS in different hardware scenarios, see [Receive Side Scaling](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-receive-side-scaling2).

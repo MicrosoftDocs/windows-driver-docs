@@ -328,7 +328,7 @@ Updates to Display driver development in Windows 10, version 1903 include the fo
 
 In the NetAdapter WDF class extension (NetAdapterCx), Net ring buffers have been replaced by Net rings, which have a new interface for sending and receiving network data using net ring iterators. The following is a list of new topics:
 
-* [Net rings and net ring iterators](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators)
+* [Introduction to net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/introduction-to-net-rings)
 * [Sending network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/sending-network-data-with-net-rings) with a new animation that illustrates how to send data
 * [Receiving network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/receiving-network-data-with-net-rings) with a new animation that illustrates how to receive data
 * [Canceling network data with net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/canceling-network-data-with-net-rings)
