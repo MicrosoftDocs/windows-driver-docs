@@ -16,7 +16,7 @@ A configuration can have one or more *USB interfaces* that define the functional
 
 Each interface contains one or more *endpoints*, which are used to transfer data to and from the device. In addition, the interface contains *alternate settings* that define the bandwidth requirements of the function associated with the interface. To sum up, a group of endpoints form an interface, and a set of interfaces constitutes a configuration in the device.
 
-So what does it mean to select an active configuration? During device initialization, the device driver for USB device must select a configuration, one or more or interfaces within that configuration, and an alternate setting for each interface. Most USB devices don't provide multiple interfaces or multiple alternate settings. For example, the OSR USB FX2 Learning Kit device has one interface with one alternate setting and three endpoints. For more information about the learning kit, see [OSR Online](http://www.osronline.com/).
+So what does it mean to select an active configuration? During device initialization, the device driver for USB device must select a configuration, one or more or interfaces within that configuration, and an alternate setting for each interface. Most USB devices don't provide multiple interfaces or multiple alternate settings. For example, the OSR USB FX2 Learning Kit device has one interface with one alternate setting and three endpoints. For more information about the learning kit, see [OSR Online](https://www.osronline.com/).
 
 **Single interface device**
 

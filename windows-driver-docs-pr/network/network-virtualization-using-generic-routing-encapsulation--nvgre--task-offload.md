@@ -31,7 +31,7 @@ NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Of
 
 For more information about NVGRE, see the following Internet Draft:
 
--   [NVGRE: Network Virtualization using Generic Routing Encapsulation](http://ietfreport.isoc.org/idref/draft-sridharan-virtualization-nvgre/)
+-   [NVGRE: Network Virtualization using Generic Routing Encapsulation](https://ietfreport.isoc.org/idref/draft-sridharan-virtualization-nvgre/)
 
 NVGRE is based on Generic Routing Encapsulation (GRE). For more information about GRE, see the following resources:
 
