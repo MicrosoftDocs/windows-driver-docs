@@ -20,7 +20,7 @@ Windows OS support for NetAdapterCx versions are described in the following tabl
 
 | Operating system | Supported NetAdapterCx version | Version notes |
 | --- | --- | --- |
-| The next version of Windows 10 | 2.0 | Initial release |
+| Windows 10, version 2004 | 2.0 | Initial release |
 
 > [!IMPORTANT]
 > NetAdapterCx client drivers written in previous versions will not work in the latest version of Windows until they are retargeted to the current version.
