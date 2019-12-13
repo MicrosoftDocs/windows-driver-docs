@@ -22,7 +22,7 @@ For more information about address ranges, see [How to Create a Device Metadata 
 
 ### <span id="LocaleInfo_XML_Schema_NameSpace"></span><span id="localeinfo_xml_schema_namespace"></span><span id="LOCALEINFO_XML_SCHEMA_NAMESPACE"></span>LocaleInfo XML Schema NameSpace
 
-The following is the namespace of the LocaleInfo XML schema: **http://schemas.microsoft.com/Windows/2010/08/MetadataSubmission/LocaleInfo**
+The following is the namespace of the LocaleInfo XML schema: `http://schemas.microsoft.com/Windows/2010/08/MetadataSubmission/LocaleInfo`
 
 ### <span id="Overview_of_LocaleInfo_XML_Elements_Attributes"></span><span id="overview_of_localeinfo_xml_elements_attributes"></span><span id="OVERVIEW_OF_LOCALEINFO_XML_ELEMENTS_ATTRIBUTES"></span>Overview of LocaleInfo XML Elements/Attributes
 
