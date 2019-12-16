@@ -5,7 +5,7 @@ ms.date: 08/09/2017
 ms.localizationpriority: medium
 ---
 
-# WinDbg Preview - View Menu 
+# WinDbg Preview - View Menu
 
 This section describes how work with the view menu in WinDbg Preview.
 

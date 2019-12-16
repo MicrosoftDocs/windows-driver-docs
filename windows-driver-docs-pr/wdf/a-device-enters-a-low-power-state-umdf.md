@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # A Device Enters a Low-Power State
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 A device leaves its working (D0) state and enters a low-power state if one of the following occurs:
 

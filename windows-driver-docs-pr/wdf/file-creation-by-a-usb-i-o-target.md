@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # File Creation by a USB I/O Target
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 During its initialization, the USB I/O target creates an intra-stack file object, which represents a default session that the USB I/O target keeps open. For more information about an intra-stack file object, see [Creating a File Object to Handle I/O](creating-a-file-object-to-handle-i-o.md). The USB I/O target or its USB pipe target children use this file object to send any I/O that they originate (for example, I/O to obtain the USB configuration descriptor).
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Adding a Device Overview
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The following figure shows an overview of how the framework adds a new device:
 

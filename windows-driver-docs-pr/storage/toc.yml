@@ -432,6 +432,12 @@
         href: interlocked-operations-in-storport-miniport-drivers.md
       - name: "NVMe Features Supported by StorNVMe"
         href: nvme-features-supported-by-stornvme.md
+      - name: "StorNVMe Command Set Support"
+        href: stornvme-command-set-support.md
+      - name: "StorNVMe Feature Support"
+        href: stornvme-feature-support.md
+      - name: "StorNVMe SCSI Translation Support"
+        href: stornvme-scsi-translation-support.md
       - name: "Upgrading Firmware for an NVMe Device"
         href: upgrading-firmware-for-an-nvme-device.md
       - name: "Registry Entries for StorPort Miniport Drivers"

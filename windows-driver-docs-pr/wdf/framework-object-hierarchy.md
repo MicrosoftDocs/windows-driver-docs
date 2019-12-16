@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Framework Object Hierarchy
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The following figure shows the parent-child framework object hierarchy.
 

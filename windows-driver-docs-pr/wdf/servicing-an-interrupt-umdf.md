@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Servicing an Interrupt
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 Servicing an interrupt consists of two steps:
 

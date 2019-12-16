@@ -100,7 +100,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <a href="https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog" data-raw-source="[Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog)">Microsoft Windows USB Core Team Blog</a>
 <p>Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.</p>
 <a href="https://community.osr.com/categories/ntdev" data-raw-source="[OSR Online Lists - ntdev](https://community.osr.com/categories/ntdev)">OSR Online Lists - ntdev</a>
-<p>Discussion list managed by <a href="http://www.osronline.com/index.cfm" data-raw-source="[OSR Online](http://www.osronline.com/index.cfm)">OSR Online</a> for kernel-mode driver developers.</p>
+<p>Discussion list managed by <a href="https://www.osronline.com/index.cfm" data-raw-source="[OSR Online](https://www.osronline.com/index.cfm)">OSR Online</a> for kernel-mode driver developers.</p>
 <a href="https://msdn.microsoft.com/windows/hardware/" data-raw-source="[Windows Dev-Center for Hardware Development](https://msdn.microsoft.com/windows/hardware/)">Windows Dev-Center for Hardware Development</a>
 <p>Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.</p>
 <p></p>
@@ -112,7 +112,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><strong>USB hardware for learning</strong></p>
 <a href="microsoft-usb-test-tool--mutt--devices.md" data-raw-source="[MUTT devices](microsoft-usb-test-tool--mutt--devices.md)">MUTT devices</a>
 <p>MUTT and SuperMUTT devices and the accompanying software package are integrated into the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.</p>
-<a href="http://www.osronline.com/index.cfm" data-raw-source="[OSR USB FX2 Learning Kit](http://www.osronline.com/index.cfm)">OSR USB FX2 Learning Kit</a>
+<a href="https://www.osronline.com/index.cfm" data-raw-source="[OSR USB FX2 Learning Kit](https://www.osronline.com/index.cfm)">OSR USB FX2 Learning Kit</a>
 <p>If you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from OSR Online Store.</p></td>
 <td><strong>Write a USB client driver (KMDF, UMDF)</strong>
 <p>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. This section also includes tutorials about writing your first user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.</p>

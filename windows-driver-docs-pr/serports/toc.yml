@@ -1,168 +1,165 @@
 - name: "Serial Controller Driver Design Guide"
+  href: index.md
+- name: "Serial Controller Drivers"
 # Auto-expanded node
   items: 
-  - name: "Serial Controller Driver Design Guide"
-    href: index.md
   - name: "Serial Controller Drivers"
+    href: serial-drivers-overview.md
+  - name: "Serial I/O Request Interface"
 # Auto-expanded node
     items: 
-    - name: "Serial Controller Drivers"
-      href: serial-drivers-overview.md
     - name: "Serial I/O Request Interface"
+      href: serial-i-o-request-interface.md
+    - name: "SerCx I/O Control Requests"
+      href: sercx-io-control-requests.md
+  - name: "Differences Between SerCx2.sys and Serial.sys"
+    href: differences-between-sercx2-and-serial-sys.md
+- name: "Using Version 2 of the Serial Framework Extension (SerCx2)"
 # Auto-expanded node
-      items: 
-      - name: "Serial I/O Request Interface"
-        href: serial-i-o-request-interface.md
-      - name: "SerCx I/O Control Requests"
-        href: sercx-io-control-requests.md
-    - name: "Differences Between SerCx2.sys and Serial.sys"
-      href: differences-between-sercx2-and-serial-sys.md
+  items: 
   - name: "Using Version 2 of the Serial Framework Extension (SerCx2)"
+    href: using-version-2-of-the-serial-framework-extension.md
+  - name: "SerCx2 Architectural Overview"
+    href: sercx2-architectural-overview.md
+  - name: "Serial Controller Driver Design for SerCx2"
 # Auto-expanded node
     items: 
-    - name: "Using Version 2 of the Serial Framework Extension (SerCx2)"
-      href: using-version-2-of-the-serial-framework-extension.md
-    - name: "SerCx2 Architectural Overview"
-      href: sercx2-architectural-overview.md
     - name: "Serial Controller Driver Design for SerCx2"
+      href: serial-controller-driver-design-for-sercx2.md
+    - name: "Features of SerCx2-Based Serial Controller Drivers"
+      href: features-of-sercx2-based-serial-controller-drivers.md
+    - name: "SerCx2 I/O Transactions"
 # Auto-expanded node
       items: 
-      - name: "Serial Controller Driver Design for SerCx2"
-        href: serial-controller-driver-design-for-sercx2.md
-      - name: "Features of SerCx2-Based Serial Controller Drivers"
-        href: features-of-sercx2-based-serial-controller-drivers.md
       - name: "SerCx2 I/O Transactions"
-# Auto-expanded node
-        items: 
-        - name: "SerCx2 I/O Transactions"
-          href: sercx2-i-o-transactions.md
-        - name: "Overview of SerCx2 I/O Transactions"
-          href: overview-of-sercx2-i-o-transactions.md
-        - name: "SerCx2 PIO-Receive Transactions"
-          href: sercx2-pio-receive-transactions.md
-        - name: "SerCx2 PIO-Transmit Transactions"
-          href: sercx2-pio-transmit-transactions.md
-        - name: "SerCx2 System-DMA-Receive Transactions"
-          href: sercx2-system-dma-receive-transactions.md
-        - name: "SerCx2 System-DMA-Transmit Transactions"
-          href: sercx2-system-dma-transmit-transactions.md
-        - name: "SerCx2 Custom-Receive Transactions"
-          href: sercx2-custom-receive-transactions.md
-        - name: "SerCx2 Custom-Transmit Transactions"
-          href: sercx2-custom-transmit-transactions.md
-    - name: "Accessing a Device on a SerCx2-Managed Serial Port"
-# Auto-expanded node
-      items: 
-      - name: "Accessing a Device on a SerCx2-Managed Serial Port"
-        href: accessing-a-device-on-a-sercx2-managed-serial-port.md
-      - name: "Peripheral Drivers for Devices on SerCx2-Managed Serial Ports"
-        href: peripheral-drivers-for-devices-on-sercx2-managed-serial-ports.md
-      - name: "Opening a SerCx2-Managed Serial Port"
-# Auto-expanded node
-        items: 
-        - name: "Opening a SerCx2-Managed Serial Port"
-          href: opening-a-sercx2-managed-serial-port.md
-        - name: "Connection IDs for Serially Connected Peripheral Devices"
-          href: connection-ids-for-serially-connected-peripheral-devices.md
-        - name: "Connecting a UMDF Peripheral Driver to a Serial Port"
-          href: connecting-a-umdf-peripheral-device-driver-to-a-serial-port.md
-        - name: "Connecting a KMDF Peripheral Driver to a Serial Port"
-          href: connecting-a-kmdf-peripheral-device-driver-to-a-serial-port.md
-      - name: "SerCx2 Handling of Read and Write Requests"
-        href: sercx2-handling-of-read-and-write-requests.md
-      - name: "Reading Data from a SerCx2-Managed Serial Port"
-        href: reading-data-from-a-sercx2-managed-serial-port.md
-    - name: "SerCx2 Object Handles"
-      href: sercx2-object-handles.md
-  - name: "Using Serial.sys and Serenum.sys"
+        href: sercx2-i-o-transactions.md
+      - name: "Overview of SerCx2 I/O Transactions"
+        href: overview-of-sercx2-i-o-transactions.md
+      - name: "SerCx2 PIO-Receive Transactions"
+        href: sercx2-pio-receive-transactions.md
+      - name: "SerCx2 PIO-Transmit Transactions"
+        href: sercx2-pio-transmit-transactions.md
+      - name: "SerCx2 System-DMA-Receive Transactions"
+        href: sercx2-system-dma-receive-transactions.md
+      - name: "SerCx2 System-DMA-Transmit Transactions"
+        href: sercx2-system-dma-transmit-transactions.md
+      - name: "SerCx2 Custom-Receive Transactions"
+        href: sercx2-custom-receive-transactions.md
+      - name: "SerCx2 Custom-Transmit Transactions"
+        href: sercx2-custom-transmit-transactions.md
+  - name: "Accessing a Device on a SerCx2-Managed Serial Port"
 # Auto-expanded node
     items: 
-    - name: "Using Serial.sys and Serenum.sys"
-      href: using-serial-sys-and-serenum-sys.md
-    - name: "Features of Serial and Serenum"
-      href: features-of-serial-and-serenum.md
+    - name: "Accessing a Device on a SerCx2-Managed Serial Port"
+      href: accessing-a-device-on-a-sercx2-managed-serial-port.md
+    - name: "Peripheral Drivers for Devices on SerCx2-Managed Serial Ports"
+      href: peripheral-drivers-for-devices-on-sercx2-managed-serial-ports.md
+    - name: "Opening a SerCx2-Managed Serial Port"
+# Auto-expanded node
+      items: 
+      - name: "Opening a SerCx2-Managed Serial Port"
+        href: opening-a-sercx2-managed-serial-port.md
+      - name: "Connection IDs for Serially Connected Peripheral Devices"
+        href: connection-ids-for-serially-connected-peripheral-devices.md
+      - name: "Connecting a UMDF Peripheral Driver to a Serial Port"
+        href: connecting-a-umdf-peripheral-device-driver-to-a-serial-port.md
+      - name: "Connecting a KMDF Peripheral Driver to a Serial Port"
+        href: connecting-a-kmdf-peripheral-device-driver-to-a-serial-port.md
+    - name: "SerCx2 Handling of Read and Write Requests"
+      href: sercx2-handling-of-read-and-write-requests.md
+    - name: "Reading Data from a SerCx2-Managed Serial Port"
+      href: reading-data-from-a-sercx2-managed-serial-port.md
+  - name: "SerCx2 Object Handles"
+    href: sercx2-object-handles.md
+- name: "Using Serial.sys and Serenum.sys"
+# Auto-expanded node
+  items: 
+  - name: "Using Serial.sys and Serenum.sys"
+    href: using-serial-sys-and-serenum-sys.md
+  - name: "Features of Serial and Serenum"
+    href: features-of-serial-and-serenum.md
+  - name: "Configuration of Serial Devices and Drivers"
+# Auto-expanded node
+    items: 
     - name: "Configuration of Serial Devices and Drivers"
+      href: configuration-of-serial-devices-and-drivers.md
+    - name: "Configuration of COM Ports"
+      href: configuration-of-com-ports.md
+    - name: "Configuration of Non-Pnp device to an RS-232 Port"
+      href: configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23.md
+    - name: "Configuration of PnP Device to an RS-232 Port"
+      href: configuration-of-plug-and-play-serial-device-connected-to-an-rs-232-po.md
+    - name: "Configure PnP Serial Devices for 16550 UART Interface"
+      href: configuration-of-plug-and-play-serial-device-that-requires-a-16550-uar.md
+    - name: "Configure PnP Multifunction Serial Device with 16550 UART Interface "
+      href: configuration-of-plug-and-play-serial-device-on-a-multifunction-device.md
+  - name: "Operation of Serenum and Serial"
 # Auto-expanded node
-      items: 
-      - name: "Configuration of Serial Devices and Drivers"
-        href: configuration-of-serial-devices-and-drivers.md
-      - name: "Configuration of COM Ports"
-        href: configuration-of-com-ports.md
-      - name: "Configuration of Non-Pnp device to an RS-232 Port"
-        href: configuration-of-non-plug-and-play-serial-device-connected-to-an-rs-23.md
-      - name: "Configuration of PnP Device to an RS-232 Port"
-        href: configuration-of-plug-and-play-serial-device-connected-to-an-rs-232-po.md
-      - name: "Configure PnP Serial Devices for 16550 UART Interface"
-        href: configuration-of-plug-and-play-serial-device-that-requires-a-16550-uar.md
-      - name: "Configure PnP Multifunction Serial Device with 16550 UART Interface "
-        href: configuration-of-plug-and-play-serial-device-on-a-multifunction-device.md
+    items: 
     - name: "Operation of Serenum and Serial"
+      href: operation-of-serenum-and-serial.md
+    - name: "Serenum Filtering of I/O Requests"
+      href: serenum-filtering-of-i-o-requests.md
+    - name: "Enumerating Serenum Devices"
+      href: enumerating-serenum-devices.md
+    - name: "Enumerating Legacy COM Ports"
+      href: enumerating-legacy-com-ports.md
+    - name: "External Naming of COM Ports"
+      href: external-naming-of-com-ports.md
+    - name: "Opening and Initializing a Serial Device"
+      href: opening-and-initializing-a-serial-device.md
+    - name: "Opening and Initializing a 16550 UART-Compatible Interface"
+      href: opening-and-initializing-a-16550-uart-compatible-interface.md
+    - name: "Sharing a Serial Device Interrupt"
+      href: sharing-a-serial-device-interrupt.md
+    - name: "Powering Up a Serial Device"
+      href: powering-up-a-serial-device.md
+    - name: "Setting Read and Write Timeouts for a Serial Device"
+      href: setting-read-and-write-timeouts-for-a-serial-device.md
+    - name: "Removing a Plug and Play Serial Device on an RS-232 Port"
+      href: removing-a-plug-and-play-serial-device-on-an-rs-232-port.md
+    - name: "Removing a Plug and Play RS-232 Port"
+      href: removing-a-plug-and-play-rs-232-port.md
+    - name: "Serial Device Control Requests"
+      href: serial-device-control-requests2.md
+    - name: "Determining Which COM Port a Debugger Uses"
+      href: determining-which-com-port-a-debugger-uses.md
+  - name: "Registry Settings for Serial"
 # Auto-expanded node
-      items: 
-      - name: "Operation of Serenum and Serial"
-        href: operation-of-serenum-and-serial.md
-      - name: "Serenum Filtering of I/O Requests"
-        href: serenum-filtering-of-i-o-requests.md
-      - name: "Enumerating Serenum Devices"
-        href: enumerating-serenum-devices.md
-      - name: "Enumerating Legacy COM Ports"
-        href: enumerating-legacy-com-ports.md
-      - name: "External Naming of COM Ports"
-        href: external-naming-of-com-ports.md
-      - name: "Opening and Initializing a Serial Device"
-        href: opening-and-initializing-a-serial-device.md
-      - name: "Opening and Initializing a 16550 UART-Compatible Interface"
-        href: opening-and-initializing-a-16550-uart-compatible-interface.md
-      - name: "Sharing a Serial Device Interrupt"
-        href: sharing-a-serial-device-interrupt.md
-      - name: "Powering Up a Serial Device"
-        href: powering-up-a-serial-device.md
-      - name: "Setting Read and Write Timeouts for a Serial Device"
-        href: setting-read-and-write-timeouts-for-a-serial-device.md
-      - name: "Removing a Plug and Play Serial Device on an RS-232 Port"
-        href: removing-a-plug-and-play-serial-device-on-an-rs-232-port.md
-      - name: "Removing a Plug and Play RS-232 Port"
-        href: removing-a-plug-and-play-rs-232-port.md
-      - name: "Serial Device Control Requests"
-        href: serial-device-control-requests2.md
-      - name: "Determining Which COM Port a Debugger Uses"
-        href: determining-which-com-port-a-debugger-uses.md
+    items: 
     - name: "Registry Settings for Serial"
+      href: registry-settings-for-serial.md
+    - name: "Registry Settings for the Serial Service"
+      href: registry-settings-for-the-serial-service.md
+    - name: "Registry Settings for a Plug and Play Serial Device"
+      href: registry-settings-for-a-plug-and-play-serial-device.md
+    - name: "Registry Settings for a Legacy COM Port"
+      href: registry-settings-for-a-legacy-com-port.md
+  - name: "Registry Settings for Serenum"
+    href: registry-settings-for-serenum.md
+  - name: "COM Port Database"
+    href: com-port-database.md
+  - name: "Installing Serial Devices"
 # Auto-expanded node
-      items: 
-      - name: "Registry Settings for Serial"
-        href: registry-settings-for-serial.md
-      - name: "Registry Settings for the Serial Service"
-        href: registry-settings-for-the-serial-service.md
-      - name: "Registry Settings for a Plug and Play Serial Device"
-        href: registry-settings-for-a-plug-and-play-serial-device.md
-      - name: "Registry Settings for a Legacy COM Port"
-        href: registry-settings-for-a-legacy-com-port.md
-    - name: "Registry Settings for Serenum"
-      href: registry-settings-for-serenum.md
-    - name: "COM Port Database"
-      href: com-port-database.md
+    items: 
     - name: "Installing Serial Devices"
+      href: installing-serial-devices.md
+    - name: "Installing Serial Ports and COM Ports"
 # Auto-expanded node
       items: 
-      - name: "Installing Serial Devices"
-        href: installing-serial-devices.md
       - name: "Installing Serial Ports and COM Ports"
-# Auto-expanded node
-        items: 
-        - name: "Installing Serial Ports and COM Ports"
-          href: installing-serial-ports-and-com-ports.md
-        - name: "Installing Plug and Play Serial Ports and COM Ports"
-          href: installing-plug-and-play-serial-ports-and-com-ports.md
-        - name: "Installing Legacy COM Ports"
-          href: installing-legacy-com-ports.md
-      - name: "Installing an Advanced Properties Page for a COM Port"
-        href: installing-an-advanced-properties-page-for-a-com-port.md
-      - name: "Installing Serial Devices that Use a 16550 UART-Compatible Interface"
-        href: installing-serial-devices-that-use-a-16550-uart-compatible-interface.md
-      - name: "Installing Serenum Devices"
-        href: installing-serenum-devices.md
-  - name: "Serial IRP major function codes"
-    href: serial-irp-major-function-codes.md
-  - name: "Serial Port Console Redirection Table (SPCR)"
-    href: serial-port-console-redirection-table.md
+        href: installing-serial-ports-and-com-ports.md
+      - name: "Installing Plug and Play Serial Ports and COM Ports"
+        href: installing-plug-and-play-serial-ports-and-com-ports.md
+      - name: "Installing Legacy COM Ports"
+        href: installing-legacy-com-ports.md
+    - name: "Installing an Advanced Properties Page for a COM Port"
+      href: installing-an-advanced-properties-page-for-a-com-port.md
+    - name: "Installing Serial Devices that Use a 16550 UART-Compatible Interface"
+      href: installing-serial-devices-that-use-a-16550-uart-compatible-interface.md
+    - name: "Installing Serenum Devices"
+      href: installing-serenum-devices.md
+- name: "Serial IRP major function codes"
+  href: serial-irp-major-function-codes.md
+- name: "Serial Port Console Redirection Table (SPCR)"
+  href: serial-port-console-redirection-table.md

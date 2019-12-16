@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 # Controlling a General I/O Target's State in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The framework defines the following states for general I/O targets:
 

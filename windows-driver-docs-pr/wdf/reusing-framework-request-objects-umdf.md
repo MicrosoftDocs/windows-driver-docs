@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Reusing Framework Request Objects in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 To improve driver performance, framework-based drivers that create and send many nearly identical asynchronous requests to an I/O target can reuse request objects instead of creating a new request object for each request. A driver can reuse a request object after the request has been completed.
 

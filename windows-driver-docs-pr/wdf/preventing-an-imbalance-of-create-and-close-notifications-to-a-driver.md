@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Preventing an Imbalance of Create and Close Notifications to a Driver
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 An upper UMDF driver can use the [**IWDFDeviceInitialize::AutoForwardCreateCleanupClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-autoforwardcreatecleanupclose) method to control when the framework automatically forwards create-file, cleanup-file, and close-file notifications to the next lower driver in the device stack. However, because the upper driver sets **AutoForwardCreateCleanupClose** to automatically forward only on a device level and not on a per-file level, forwarding must be the same for all files for a device. The framework ensures this forwarding behavior for cleanup-file and close-file notifications. If the upper driver implements the [**IQueueCallbackCreate::OnCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackcreate-oncreatefile) callback function, it must ensure that its forwarding behavior is the same for all create-file requests and is consistent with the forwarding behavior for cleanup-file and close-file notifications. Failing to do so might cause lower drivers to receive an unequal amount of calls to their **IQueueCallbackCreate::OnCreateFile** method and [**IFileCallbackCleanup::OnCleanupFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ifilecallbackcleanup-oncleanupfile) and [**IFileCallbackClose::OnCloseFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ifilecallbackclose-onclosefile) methods.
 

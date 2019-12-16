@@ -34,7 +34,7 @@ The following table describes which members of the net ring that client drivers 
 
 Client drivers must not modify any read only members of this structure, nor should they ever increment **BeginIndex** past **EndIndex** during a call to [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance).
 
-For more information about index ownership in net rings, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
+For more information about index ownership in net rings, see [Introduction to net rings](introduction-to-net-rings.md).
 
 ## NET_PACKET
 

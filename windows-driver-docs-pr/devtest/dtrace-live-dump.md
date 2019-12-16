@@ -106,7 +106,7 @@ Use this command to enable the analytic channel from and administrator command p
 
 ### Enabling full live dumps
 
-These example settings below show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
+These example settings below, show setting the maximum number of full live dumps that may be on disk at any given time to 10 and stores the full memory dumps, not just a mini dump.
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReports" /f /t REG_DWORD /v FullLiveReportsMax /d 10`
 
@@ -127,7 +127,7 @@ reg add "HKLM\System\CurrentControlSet\Control\CrashControl\FullLiveKernelReport
 
 ### Disk space issues (Event ID 202 -Error Text: Live Dump Write Deferred Dump Data API ended. NT Status: 0xC000007F.)
 
-This means the disk space is insufficient. Update the registry key show below to change the path for live dump creation, in this example to a drive d: that has additional storage space available.
+This means the disk space is insufficient. Update the registry key shown below to change the path for live dump creation, in this example to a drive d: that has additional storage space available.
 
 `reg add hklm\system\currentcontrolset\control\crashcontrol\livekernelreports /v "LiveKernelReportsPath" /t reg_sz /d "\??\d:\livedumps"`
 
