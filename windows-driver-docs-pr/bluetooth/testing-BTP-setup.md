@@ -42,6 +42,7 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 - Ensure secure boot is [disabled](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot).
 - Ensure BitLocker is disabled.
+- Ensure the Traduci board is plugged into the SUT.
 - From an elevated command line on the SUT, navigate to the `c:\BTP` directory and run `ConfigureMachineForBTP.bat` to enable test signing
 - Reboot the machine under test.
 
