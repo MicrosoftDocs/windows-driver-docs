@@ -7,6 +7,7 @@
           "**/**.yml"
         ],
         "exclude": [
+          "**/includes/**",
           "**/obj/**"
         ]
       }
@@ -22,8 +23,8 @@
         "exclude": [
           "docfx.json",
           "**/obj/**",
-          "**/includes/**",
-          "**/README.md"
+          "**/includes/**", 
+         "**/README.md"
         ]
       }
     ],
