@@ -184,15 +184,6 @@ When **DbgPrint**, **DbgPrintEx**, **KdPrint**, or **KdPrintEx** transmits a mes
 
 During local kernel debugging, and any other time this display has been disabled, the contents of the DbgPrint buffer can only be viewed by using the [**!dbgprint**](-dbgprint.md) extension command.
 
-Any single call to **DbgPrint**, **DbgPrintEx**, **KdPrint**, or **KdPrintEx** will only transmit 512 bytes of information. Any output longer than this will be lost. The DbgPrint buffer itself can hold up to 4 KB of data on a free build of Windows, and up to 32 KB of data on a checked build of Windows. On Windows Server 2003 and later versions of Windows, you can use the KDbgCtrl tool to alter the size of the DbgPrint buffer. See [Using KDbgCtrl](using-kdbgctrl.md) for details.
+Any single call to **DbgPrint**, **DbgPrintEx**, **KdPrint**, or **KdPrintEx** will only transmit 512 bytes of information. Any output longer than this will be lost. The DbgPrint buffer itself can hold up to 4 KB of data on a free build of Windows. On Windows Server 2003 and later versions of Windows, you can use the KDbgCtrl tool to alter the size of the DbgPrint buffer. See [Using KDbgCtrl](using-kdbgctrl.md) for details.
 
 If a message is filtered out because of its *ComponentId* and *Level* values, it is not transmitted across the debugging connection. Therefore there is no way to display this message in the debugger.
-
- 
-
- 
-
-
-
-
-

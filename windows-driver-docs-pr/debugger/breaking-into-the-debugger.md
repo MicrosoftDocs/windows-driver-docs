@@ -38,8 +38,6 @@ The **DbgBreakPoint** routine works in kernel-mode code, but is otherwise simila
 
 **KdBreakPoint** and **KdBreakPointWithStatus** are identical to **DbgBreakPoint** and **DbgBreakPointWithStatus**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
-For complete documentation of these routines, as well as the build environment, see the Windows Driver Kit.
-
 ### <span id="kernel_mode_conditional_break_routines"></span><span id="KERNEL_MODE_CONDITIONAL_BREAK_ROUTINES"></span>Kernel-Mode Conditional Break Routines
 
 Two conditional break routines are available for kernel-mode code. These routines test a logical expression. If the expression is false, execution halts and the debugger becomes active.
