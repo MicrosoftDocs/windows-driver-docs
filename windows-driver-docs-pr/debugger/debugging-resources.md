@@ -37,7 +37,7 @@ A number of [Knowledge Base articles](https://support.microsoft.com/) are availa
 
 ## <span id="related_topics"></span>Related topics
 
-[DebugView Monitoring Tool](https://technet.microsoft.com/sysinternals/bb896647.aspx)
+[DebugView Monitoring Tool](https://docs.microsoft.com/sysinternals/downloads/debugview)
 
 [Driver Developer Community Resources](https://msdn.microsoft.com/windows/hardware/gg454517)
 

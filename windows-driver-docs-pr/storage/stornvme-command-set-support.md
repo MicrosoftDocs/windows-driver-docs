@@ -42,7 +42,7 @@ The matrices below list the NVMe *Admin* and *NVM* command sets and associated o
 | 86h     | Get LBA Status              |   | Currently not supported |
 | C0h-FFh | Vendor Specific             | IOCTL_STORAGE_PROTOCOL_COMMAND | Vendor-specific pass-through commands. Requires controller to support command effects log and command effect data of vendor command should report as supported. |
 
-## NVM Command Set Support Matrix
+## NVM Command Set Support
 
 | Opcode  | NVMe Command                | StorNVMe Support      | Comments |
 | ------  | --------------------------  | --------------------- | -------- |
