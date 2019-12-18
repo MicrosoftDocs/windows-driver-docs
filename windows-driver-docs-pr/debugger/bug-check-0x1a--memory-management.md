@@ -40,7 +40,7 @@ Parameter 1 identifies the exact violation.
 <tbody>
 <tr class="odd">
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>The fork clone block reference count is corrupt. (This only occurs on checked builds of Windows.)</p></td>
+<td align="left"><p>The fork clone block reference count is corrupt. This only occurs on checked builds of Windows. Checked builds were available on older versions of Windows, before Windows 10 version 1803.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x31</p></td>

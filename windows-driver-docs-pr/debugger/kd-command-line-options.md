@@ -214,7 +214,7 @@ Specifies the error level that will cause the debugger to display an error messa
 
  
 
-This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
+This error level only has meaning in checked builds of Microsoft Windows. The default value is 1. Checked builds were available on older versions of Windows, before Windows 10 version 1803.
 
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Generates verbose messages for loads, deferred loads, and unloads.

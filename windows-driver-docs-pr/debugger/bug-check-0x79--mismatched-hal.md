@@ -88,7 +88,7 @@ The MISMATCHED\_HAL bug check often occurs when a user manually updates Ntoskrnl
 
 The error can also indicate that one of those two files is out of date. Or the computer might erroneously have a multiprocessor HAL and a single-processor kernel installed, or vice versa.
 
-The Ntoskrnl.exe kernel file is for single-processor systems and Ntkrnlmp.exe is for multiprocessor systems. However, these file names correspond to the files on the installation media.After you have installed the Windows operating system, the file is renamed to Ntoskrnl.exe, regardless of the source file that is used. The HAL file also uses the name Hal.dll after installation, but there are several possible HAL files on the installation media. For more information, see "Installing the Checked Build" in the Windows Driver Kit (WDK).
+The Ntoskrnl.exe kernel file is for single-processor systems and Ntkrnlmp.exe is for multiprocessor systems. However, these file names correspond to the files on the installation media.After you have installed the Windows operating system, the file is renamed to Ntoskrnl.exe, regardless of the source file that is used. The HAL file also uses the name Hal.dll after installation, but there are several possible HAL files on the installation media on older versions of Windows.
 
 Resolution
 ----------
