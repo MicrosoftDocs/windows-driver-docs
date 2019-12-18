@@ -26,6 +26,7 @@ The following table lists SCSI commands and the translated NVMe command(s), wher
 | Read (16)               | Read                        |
 | Read Capacity (10)      | Identify                    |
 | Read Capacity (16)      | Identify                    |
+| Read Data Buffer 16     | Get Log Page                |
 | Report LUNs             | Identify                    |
 | Request Sense*          | -                           |
 | Security Protocol In    | Security Receive            |
