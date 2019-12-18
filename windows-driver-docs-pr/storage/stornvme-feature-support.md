@@ -84,4 +84,4 @@ The following matrix lists NVME features, indicates whether each feature is mand
 | NVMe Qualified Names                                           | X |   |   | |
 | Namespace Thinprovisioning                                     | X |   | X | |
 | NVMe Boot                                                      |   | X | X | |
-| Controller Fatal Status Condition                              | X |   | X | Log the event and continue with controller reset |
+| Controller Fatal Status Condition                              | X |   | X | Log the event and continue with controller re-initialization |
