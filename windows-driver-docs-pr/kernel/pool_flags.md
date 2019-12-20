@@ -32,7 +32,6 @@ A ULONG64-typed value specifying the type of pool memory along with required and
 #define POOL_FLAG_PAGED                   0x0000000000000100UI64     // Paged pool
 #define POOL_FLAG_RESERVED2               0x0000000000000200UI64     // Reserved for system use
 #define POOL_FLAG_RESERVED3               0x0000000000000400UI64     // Reserved for system use
-#define POOL_FLAG_LAST_KNOWN_REQUIRED     POOL_FLAG_RESERVED3         // Must be set to the last known required entry.
 #define POOL_FLAG_REQUIRED_END            0x0000000080000000UI64
 #define POOL_FLAG_OPTIONAL_START          0x0000000100000000UI64
 #define POOL_FLAG_SPECIAL_POOL            0x0000000100000000UI64     // Make special pool allocation
