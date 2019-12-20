@@ -28,18 +28,6 @@ For complete documentation of this routine, see the Microsoft Windows SDK.
 **DbgPrintEx** is similar to **DbgPrint**, but it allows you to "tag" your messages. When running the debugger, you can permit only those messages with certain tags to be sent. This allows you to view only those messages that you are interested in. For details, see [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).
 
 **Note**   In Windows Vista and later versions of Windows, **DbgPrint** produces tagged messages as well. This is a change from previous versions of Windows.
-
- 
-
 **KdPrint** and **KdPrintEx** are identical to **DbgPrint** and **DbgPrintEx**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
 For complete documentation of these routines, as well as the build environment, see the Windows Driver Kit.
-
- 
-
- 
-
-
-
-
-

@@ -23,7 +23,6 @@
         "exclude": [
           "docfx.json",
           "**/obj/**",
-          "**/includes/**", 
          "**/README.md"
         ]
       }

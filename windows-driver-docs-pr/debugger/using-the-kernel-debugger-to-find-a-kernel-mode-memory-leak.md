@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 The kernel debugger determines the precise location of a kernel-mode memory leak.
 
-### <span id="enable_pool_tagging__windows_2000_and_windows_xp_"></span><span id="ENABLE_POOL_TAGGING__WINDOWS_2000_AND_WINDOWS_XP_"></span>Enable Pool Tagging (Windows 2000 and Windows XP)
+### <span id="enable_pool_tagging__windows_2000_and_windows_xp_"></span><span id="ENABLE_POOL_TAGGING__WINDOWS_2000_AND_WINDOWS_XP_"></span>Enable Pool Tagging 
 
 You must first use [GFlags](gflags.md) to enable pool tagging. GFlags is included in Debugging Tools for Windows. Start GFlags, choose the **System Registry** tab, check the **Enable Pool Tagging** box, and then click **Apply**. You must restart Windows for this setting to take effect.
 
