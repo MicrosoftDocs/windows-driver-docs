@@ -1,7 +1,7 @@
 ---
 title: USB Audio 2.0 Drivers
 description: Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality.
-ms.date: 12/18/2019
+ms.date: 12/19/2019
 ms.localizationpriority: medium
 ms.topic: article
 ms.custom: 
@@ -155,7 +155,7 @@ The driver supports a subset of the control requests defined in ADC-2, section 5
 
 Additional information on the controls and requests is available in the following subsections.
 
-### Clock source entity 
+### Clock source entity
 
 For details on this specification, refer to ADC-2 5.2.5.1.
 
@@ -165,7 +165,7 @@ The Sampling Frequency Control GET RANGE request returns a list of subranges (AD
 
 A Clock Source Entity which implements one single fixed frequency only does not need to implement Sampling Frequency Control SET CUR. It implements GET CUR which returns the fixed frequency, and it implements GET RANGE which reports one single discrete frequency.
 
-### Clock selector entity 
+### Clock selector entity
 
 For details on this specification, refer to ADC-2 5.2.5.2
 
@@ -192,6 +192,7 @@ This INF file entry (provided in a update to Windows Release 1703), is used to i
 ```inf
 GenericDriverInstalled,,,,1
 ```
+
 The in-box driver registers for the following compatible IDs with usbaudio2.inf.
 
 ```inf
@@ -324,53 +325,15 @@ UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
 
 ## Troubleshooting
 
-If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
+If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://matthewvaneerde.wordpress.com/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
 
-For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2017/10/23/how-to-gather-and-read-logs-for-microsofts-usb-audio-2-0-class-driver/). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](https://docs.microsoft.com/windows-hardware/drivers/devtest/displaying-a-trace-log-with-a-tmf-file).
+For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub//). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](https://docs.microsoft.com/windows-hardware/drivers/devtest/displaying-a-trace-log-with-a-tmf-file).
 
-### "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703
-
-Consider the following scenario:
-
-1. You connect a Universal Serial Bus (USB) audio device, such as an audio adapter or USB digital-to-analog converter (DAC), to a Windows 10 Version 1703-based computer for the first time.
-1. The operating system detects the device and loads the standard USB audio 2.0 driver (usbaudio2.sys).
-1. Windows then downloads the device-specific driver from Windows Update.  
-1. The downloaded device driver replaces the usbaudio2.sys driver.
-
-In this scenario, the device cannot be used, and the computer does not have sound. The speaker icon on the task bar is marked with an X mark. When you select the icon, you receive the following message:
-
-> Audio services not responding. Both the Windows Audio and the Windows Audio End Point Builder services must be running for audio to work correctly.
-
-#### Cause
-
-This "audio not playing" problem occurs because the default USB audio 2.0 driver (usbaudio2.sys) uses the WaveRT port for operation but the device-specific driver does not. However, both drivers use the "wave" reference string when the device interface is registered.
-When the device-specific driver replaces the default driver, the device interface that is created by usbaudio2.sys is still used because the reference strings overlap. Therefore, the operating system assumes that the new driver also supports the WaveRT port. Because the new driver does not support the WaveRT port, the system cannot access the driver.
-
-#### Resolution
-
-To fix this problem, use one of the following methods.
-
-**Method 1**
-
-Uninstall the device. To do this, follow these steps:
-
-1. Open Device Manager.
-1. Right-click (or tap and hold) the name of the device, and then select **Uninstall**.
-
-> Note:
-> In step 2, don't select the **Delete the driver software for this device** check box.
-
-**Method 2**
-
-Connect the device to a different USB port. The problem may not occur if the device is connected to a different USB port.
-
-**Method 3**
-
-If the device is not yet connected, install the device-specific driver first. You can do this by using the appropriate installer for the device. Then, connect the device. Windows now selects the device-specific driver instead of the default USB audio 2.0 driver. This method works in this situation because the problem occurs only if the device-specific driver replaces the default driver after the device is connected.
+For information on "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md)
 
 ## Feedback Hub
 
-If you run into a problem with this driver, please collect audio logs and then  follow steps outlined in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) to bring it to our attention via the Feedback Hub.
+If you run into a problem with this driver, collect audio logs and then  follow steps outlined in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) to bring it to our attention via the Feedback Hub.
 
 ## Driver development
 
