@@ -20,7 +20,7 @@ An INF file specifies settings for an audio processing mode effect in the add-re
 
 ```inf
 [Strings]
-PKEY_CompositeFX_Offload_StreamEffectClsid   = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},11"
+PKEY_CompositeFX_Offload_StreamEffectClsid   = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},13"
 ...
 ; Driver developers should replace this CLSIDs with that of their own APO
 SWAP_FX_MODE_CLSID      = "{00000000-0000-0000-0000-000000000000}"
