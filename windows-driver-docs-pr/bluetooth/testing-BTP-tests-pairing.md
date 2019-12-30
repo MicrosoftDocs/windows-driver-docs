@@ -15,7 +15,7 @@ The BTP pairing tests will test the ability of the local system to pair to and u
 
 First check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate radio(s) are correctly plugged in to the Traduci. The RN42 and the Bluefruit radios can ONLY be plugged into JB. More detailed information on this can be found [here](testing-BTP-setup.md).
 
-At this time the only supported radios for HID tests are the RN42 and the Bluefruit. Purchasing information for the Traduci, RN42, Bluefruit, and future radios can be found [here](testing-BTP-supported-hardware.md).
+At this time the only supported radios for HID tests are the RN42 and the Bluefruit. Purchasing information for the Traduci, RN42, Bluefruit, and future radios can be found [here](testing-BTP-hw.md).
 
 ### Running the Pairing Tests ##
 
