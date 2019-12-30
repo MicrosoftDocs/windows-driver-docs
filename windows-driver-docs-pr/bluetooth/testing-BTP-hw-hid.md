@@ -1,37 +1,42 @@
 ---
 title: Microsoft Bluetooth Test Platform
-description: Bluetooth Test Platform (BTP) supported hardware.
+description: Bluetooth Test Platform (BTP) supported hardware (HID).
 ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
 ms.date: 4/17/2019
 ms.localizationpriority: medium
 
 ---
 
-# BTP Suported Hardware
+# HID Capable Peripheral Radios #
 
-The Bluetooth Test Platform (BTP) requires external Bluetooth radios to simulate peripheral is the software component of Microsoft's latest automated Bluetooth testing. The Traduci is the hardware platform that the BTP runs on and supports peripheral radios to be plugged into it. The package consists of software tests, a firmware package, a provisioning tool  the Traduci board and a set of peripheral radios used for testing basic functionality.
+The Traduci requires a 12-pin connector to communicate with any radio module. The HID radios and breakouts listed here take a radio module and break out the necessary pins to a 12 pin layout.
 
-At this time the only supported radio is the RN42. Purchasing information for the Traduci, RN42 and future radios can be found below.
+## PMOD BT2 (RN42 radio) ##
+Purchasable via [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
-
-# Devices #
-
-## HID Sled ##
-[**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
-
+<img src="images/RN42.png" alt="Photo of the RN42 Radio" width="150"/>
 <img src="images/Traduci_and_DigilentRN42.jpg" alt="Photo of the RN42 Radio on a Digilent sled" width="400"/>
 
-The Traduci requires a 12-pin connector to communicate with any radio module. The HID Sled takes the RN42 module and breaks out the necessary pins to a 12 pin layout. These sleds are purchasable via Digilent. Click the link above for more purchasng information. The schematic is available below.
+The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as a HID peripheral (like a keyboard or mouse). It is currently supported by the BTP pairing and HID tests. More info can be found via the Digilent link above and through the RN42 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42).
 
-### HID Sled Schematic ###
-![HID Sled Schematic](images/RN42Schematic.png)
-
-### RN42 Module ###
-[**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42)
+> [!NOTE] 
+> Currently the RN42 radio can **only** be plugged into JB.
 
 - UART data connection
-- Supports HID profiles and Bluetooth data links
+- Supports HID profile and Bluetooth data links
 - Fully certified Class 2 BR Bluetooth 2.1+
 - Small form factor, low power, surface mount module
 
-![Photo of the RN42 Radio](images/RN42.png)
+## Bluefruit LE UART Friend (nRF51 radio) ##
+Purchasable via [**Adafruit**](https://www.adafruit.com/product/2479)
+
+The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral (like a keyboard or mouse) among other things. It is currently supported by the BTP pairing and HID tests. More info can be found via the Adafruit link above and through the nRF51822 page from [**Nordic**](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF51822).
+
+> [!NOTE] 
+> Currently the Bluefruit radio can **only** be plugged into JC.
+
+- UART data connection
+- Supports HID and other GATT based services
+- Fully certified Low Energy Bluetooth 4.1 radio
+- Configurable ATT database
+- Small form factor, low power, surface mount module

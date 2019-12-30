@@ -7,14 +7,15 @@ ms.localizationpriority: medium
 
 ---
 
-# BTP Suported Hardware
+# BTP Supported Hardware #
 
-The Bluetooth Test Platform (BTP) requires external Bluetooth radios to simulate peripheral is the software component of Microsoft's latest automated Bluetooth testing. The Traduci is the hardware platform that the BTP runs on and supports peripheral radios to be plugged into it. The package consists of software tests, a firmware package, a provisioning tool  the Traduci board and a set of peripheral radios used for testing basic functionality.
+The Bluetooth Test Platform (BTP) makes use of certain specialized hardware to make Bluetooth testing easier. The Traduci is used to more easily allow software on a host device (like a PC) to communicate with external radios over a sideband.
 
-At this time the only supported radio is the RN42. Purchasing information for the Traduci, RN42 and future radios can be found below.
+For example, an LE pairing test requires a peripheral radio to be powered on, have certain IO capabilities, and be advertising as connectable/discoverable before it can be paired to. The peripheral radio has well defined commands that can make this happen, so the BTP software on the host sends these commands over USB to the Traduci which in turn routes it to the appropriate radio. After successful completion of the commands, the BTP software would then proceed with the test by requesting that the host pair to the peripheral radio which is now ready to accept the pairing.
 
+In the above scenario the Traduci makes several things simpler: It is able to provide and cut-off power with the correct voltage to the radios, it can route different commands to different radios, and it will mediate this communication through the correct protocols and baud rate.
 
-# Devices #
+Additionally, it is important to note that BTP tests do not have a tight dependency on the Traduci. If other external hardware is needed for a test, the BTP is designed to allow easy extensibility to support that scenario.
 
 ## Traduci board ##
 [**MCCI**](https://mcci.com/usb/dev-tools/model-2411/)
@@ -22,14 +23,14 @@ At this time the only supported radio is the RN42. Purchasing information for th
 <img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
 
 - 4 12-pin ports to support 4 radios simultaneously
+- Able to route data to and from multiple radios simultaneously
 - 3 FPGAs connected to ports 1, 2, and 3 respectively
 - Supports audio testing via the integrated audio codec
-- Supports HID and pairing tests
-
-### PMOD Layout ###
-
-<img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
-
 - Unlabled pins can easily be statically assigned to HIGH or LOW depending on the needs of the radio plugged into the port
 - The Traduci does not currently support hardware handshaking using CTS and RTS
 
+## Supported radios ##
+
+Currently, only the RN42 (BR) and Bluefruit (LE) radios are officially supported. They are both capable of running the pairing and HID tests. More info about them can be found here: [HID Capable Peripheral Radios](testing-BTP-hw-hid.md).
+
+Audio tests are forthcoming. You can find more info on the audio radio that will be used with those here: [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md).
