@@ -1,6 +1,6 @@
 ---
 title: Component Firmware Update (CPU) overview
-description: Component Firmware Update (CPU) overview TBD
+description: Component Firmware Update (CPU) easily delivers firmware updates through Windows Update using CFU drivers.
 ms.date: 09/10/2019
 ms.topic: article
 ms.prod: windows-hardware
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CPU) overview
 
-The Microsoft Devices Team is excited to announce the release of an open-source model for Component Firmware Update for Windows system developers – **[<span class="underline">Component Firmware Update</span>](https://github.com/Microsoft/CFU) (CFU).** With CFU, you can easily deliver firmware updates through Windows Update by using CFU drivers.
+The Microsoft Devices Team is excited to announce the release of an open-source model for Component Firmware Update for Windows system developers – **[Component Firmware Update](https://github.com/Microsoft/CFU) (CFU).** With CFU, you can easily deliver firmware updates through Windows Update by using CFU drivers.
 
 **Background**
 
@@ -18,11 +18,11 @@ Computers and peripherals have components running their own software preprogramm
 
 Firmware updates for embedded components have three primary delivery mechanisms:
 
-  - Stand-alone tools
+- Stand-alone tools
 
-  - [<span class="underline">Windows UEFI UpdateCapsule</span>](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform) drivers
+- [Windows UEFI UpdateCapsule](https://docs.microsoft.com/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform) drivers
 
-  - Component-specific firmware update drivers
+- Component-specific firmware update drivers
 
 Each of those mechanisms have its own advantages. Stand-alone tools can support component-specific protocols but require the user to find and download the tools and find out if an update is available and applicable. UEFI UpdateCapsule drivers can be pushed through Windows Update but can only update components during boot-time when components may not be available or may not be attached. The most flexible mechanism is the component-specific firmware update driver, which can support component-specific protocols and can run whenever the device is enumerated on the system.
 

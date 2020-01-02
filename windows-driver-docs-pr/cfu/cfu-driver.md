@@ -241,7 +241,7 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
 ### 3. Configure the diagnostic capabilities
 
-    1. The CFU driver sample uses [WPP Software Tracing](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/wpp-software-tracing) for diagnostics. Update the trace with you own GUID to ensure that you can capture the WPP traces for your customized driver.
+    1. The CFU driver sample uses [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) for diagnostics. Update the trace with you own GUID to ensure that you can capture the WPP traces for your customized driver.
 
         Reference sample: [Trace.h](https://github.com/Microsoft/CFU/blob/master/Host/ComponentFirmwareUpdateDriver/Trace.h)
 
@@ -265,9 +265,9 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
 Next, deploy the package through Windows Update. For information about deployment, see:
 
-[Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
+[Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
 
-[Using an Extension INF File](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file)
+[Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
 
 ## Firmware File Format
 
@@ -366,6 +366,6 @@ The firmware update status is updated by the driver in the registry as part of b
 
 - Familiarize yourself with developing Windows drivers by using Windows Driver Foundation (WDF).
 
-  [Developing Drivers with Windows Driver Foundation](http://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
+  [Developing Drivers with Windows Driver Foundation](https://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
 
-  [Using WDF to Develop a Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver)
+  [Using WDF to Develop a Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver)
