@@ -96,7 +96,7 @@ Restore data and settings using USMT Load State.
 
 ## Troubleshooting
 
-Please refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or SCCM/MDT task sequences, you can script handlers for the returned codes that are discussed in the documentation.
+Please refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or Microsoft Endpoint Configuration Manager/Microsoft Deployment Toolkit (MDT) task sequences, you can script handlers for the returned codes that are discussed in the documentation.
 
 ## Related resources
 
