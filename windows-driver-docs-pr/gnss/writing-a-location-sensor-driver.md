@@ -20,7 +20,7 @@ The Windows Hardware Certification Program enables hardware manufacturers to rec
 
 -   Location sensors must support the required data fields for at least one built-in data report type.
 
-Generally, the recommendations in this WDK documentation match the Certification Program requirements. However, you must review the official Certification Program documentation when you create sensor drivers that you intend to submit for approval. For more information about the Windows Hardware Certification Program, see the [Windows Hardware Developer Central](https://developer.microsoft.com/en-us/windows/hardware) website.
+Generally, the recommendations in this WDK documentation match the Certification Program requirements. However, you must review the official Certification Program documentation when you create sensor drivers that you intend to submit for approval. For more information about the Windows Hardware Certification Program, see the [Windows Hardware Developer Central](https://developer.microsoft.com/windows/hardware) website.
 
 ## Location API requirements
 

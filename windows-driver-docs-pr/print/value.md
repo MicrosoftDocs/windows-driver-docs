@@ -65,7 +65,7 @@ The `Value` construct is defined in WsdBidi.xsd.
 In the following code example, the WSD monitor determines the size, as an integer value, of RAM memory.
 
 ```cpp
-<Schema xmlns:nprt='http://schemas.microsoft.com/windows/2005/05/wdp/print'>
+<Schema xmlns:nprt='https://schemas.microsoft.com/windows/2005/05/wdp/print'>
   <Property name='Printer'>
     <Property name='DeviceInfo'>
       <Value name='PrinterString' 

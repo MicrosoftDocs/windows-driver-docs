@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The optional **parameter** element specifies a text string that is substituted for a percentage (%) character in the text of an event notification message.
 
-The **parameter** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **parameter** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 ## Usage
 
@@ -120,7 +120,7 @@ In this example, the **stringID** values specify the following:
 ```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <balloonUI iconID="1" resourceDll="IHV.dll">
