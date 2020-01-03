@@ -60,13 +60,13 @@ After the printer confirms that it supports WS-Print v1.2, the client sends a Ge
 
 ### WS-Print v1.1 namespace
 
-**Namespace:** `<http://schemas.microsoft.com/windows/2010/06/wdp/printv11>`
-**XML Namespace Definition:** `xmlns:wprt12="<http://schemas.microsoft.com/windows/2012/10/wdp/printV12>"`
+**Namespace:** `<https://schemas.microsoft.com/windows/2010/06/wdp/printv11>`
+**XML Namespace Definition:** `xmlns:wprt12="<https://schemas.microsoft.com/windows/2012/10/wdp/printV12>"`
 
 ### WS-Print v1.2 namespace
 
-**Namespace:** `<http://schemas.microsoft.com/windows/2012/10/wdp/printV12>`
-**XML Namespace Definition:** `xmlns:wprt11="<http://schemas.microsoft.com/windows/2010/06/wdp/printv11>"`
+**Namespace:** `<https://schemas.microsoft.com/windows/2012/10/wdp/printV12>`
+**XML Namespace Definition:** `xmlns:wprt11="<https://schemas.microsoft.com/windows/2010/06/wdp/printv11>"`
 
 ## Specifying WS-Print 1.1 support
 
@@ -77,7 +77,7 @@ Print devices that support WS-Print v1.1 must include the following content in t
 ```xml
 <soap:Envelope
 ...
-  xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11">"
+  xmlns:wprt11="https://schemas.microsoft.com/windows/2010/06/wdp/printv11">"
 ...
   <wprt11:SupportsWSPrintv11>true</wprt11:SupportsWSPrintv11>
 ...
@@ -87,14 +87,14 @@ The following XML snippet is derived from the WSD Print Service Specification v1
 
 ```xml
 <soap:Envelope
-        xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-        xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-        xmlns:wprt="http://schemas.microsoft.com/windows/2006/08/wdp/print"
-        xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11">"
+        xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+        xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+        xmlns:wprt="https://schemas.microsoft.com/windows/2006/08/wdp/print"
+        xmlns:wprt11="https://schemas.microsoft.com/windows/2010/06/wdp/printv11">"
   <soap:Header>
-    <wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To>
+    <wsa:To>https://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/08/wdp/print/GetPrinterElementsResponse
+      https://schemas.microsoft.com/windows/2006/08/wdp/print/GetPrinterElementsResponse
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheGetPrinterElementsRequest</wsa:RelatesTo>
@@ -130,9 +130,9 @@ The following XML snippet is derived from the WSD Print Service Specification v1
 The following XML snippet shows the schema for a print device that supports WS-Print v1.1.
 
 ```xml
-<xs:schema targetNamespace="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
-           xmlns:wprt11="http://schemas.microsoft.com/windows/2010/06/wdp/printv11"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema targetNamespace="https://schemas.microsoft.com/windows/2010/06/wdp/printv11"
+           xmlns:wprt11="https://schemas.microsoft.com/windows/2010/06/wdp/printv11"
+           xmlns:xs="https://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
 
 <xs:annotation>
@@ -159,7 +159,7 @@ Print devices that support WS-Print v1.2 must include the following content in t
 ```xml
 <soap:Envelope
 …
-    xmlns:wprtV12="http://schemas.microsoft.com/windows/2012/10/wdp/printV12">
+    xmlns:wprtV12="https://schemas.microsoft.com/windows/2012/10/wdp/printV12">
 …
     <wprtV12:SupportsWSPrintV12>true</wprtV12:SupportsWSPrintV12>
 …
@@ -170,14 +170,14 @@ The following XML snippet is derived from the WSD Print Service Specification v1
 
 ```xml
 <soap:Envelope
-     xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-     xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-     xmlns:wprt="http://schemas.microsoft.com/windows/2006/08/wdp/print"
-     xmlns:wprtV12="http://schemas.microsoft.com/windows/2012/10/wdp/printV12">
+     xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+     xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+     xmlns:wprt="https://schemas.microsoft.com/windows/2006/08/wdp/print"
+     xmlns:wprtV12="https://schemas.microsoft.com/windows/2012/10/wdp/printV12">
      <soap:Header>
-          <wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To>
+          <wsa:To>https://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To>
           <wsa:Action>
-               http://schemas.microsoft.com/windows/2006/08/wdp/print/GetPrinterElementsResponse
+               https://schemas.microsoft.com/windows/2006/08/wdp/print/GetPrinterElementsResponse
           </wsa:Action>
           <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
           <wsa:RelatesTo>uuid:MsgIdOfTheGetPrinterElementsRequest</wsa:RelatesTo>

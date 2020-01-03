@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The optional **customData** element specifies a custom data source for this asynchronous notification XML schema.
 
-The **customData** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **customData** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 Usage
 -----
@@ -133,8 +133,8 @@ The following code example shows how you can use the **customData** element to o
 
 ```xml
 <?xml version="1.0"?>
-  <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request"
-      xmlns:myco="http://www.myprintercompany.com">
+  <asyncPrintUIRequest xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request"
+      xmlns:myco="https://www.myprintercompany.com">
     <requestOpen>
       <customData dll="abc.dll" entrypoint="IHVFunction" bidi="true">
         <IHV:anyXMLData />

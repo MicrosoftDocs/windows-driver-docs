@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The optional **messageBoxUI** element is used to display a message box on the client computer.
 
-The **messageBoxUI** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **messageBoxUI** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 ## Usage
 
@@ -100,7 +100,7 @@ The following code example shows how to notify the printer driver that the **OK*
 
 ```xml
 <?xml version="1.0" ?> 
-  <asyncPrintUIResponse xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
+  <asyncPrintUIResponse xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/response">
     <v1>
       <requestClose>
         <messageBoxUI>
