@@ -26,7 +26,7 @@ PrinterDriverID={GUID}
 DriverCategory=PrintFax.Printer
 ConstraintScript=faconst.js
 EventFile=faevents.xml
-PrinterExtensionUrl="http://www.fabrikam.com/download.asp?uiapp=120"
+PrinterExtensionUrl="https://www.fabrikam.com/download.asp?uiapp=120"
 
 [BidiFiles]
 BidiSPMFile=FABidiSPM.xml

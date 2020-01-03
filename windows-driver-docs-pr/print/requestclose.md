@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The optional **requestClose** element is used to close an event notification message on the client computer.
 
-The **requestClose** element is defined in the *asyncui* namespace at this URI: [http://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **requestClose** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 ## Usage
 
@@ -62,7 +62,7 @@ The following code example shows how to close an event notification after a butt
 ```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIResponse
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/response">
     <v1>
       <requestClose>
         <messageBoxUI>

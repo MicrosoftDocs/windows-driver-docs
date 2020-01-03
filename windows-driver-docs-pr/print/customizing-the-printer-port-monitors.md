@@ -48,7 +48,7 @@ The following is an incomplete example of a TCP/IP bidi extension file that show
 
 ```cpp
 <?xml version="1.0" encoding="US-ASCII"?>
-<bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
+<bidi:Schema xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Schema>
     <Property name="Printer">
       <Property name="Configuration">

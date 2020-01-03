@@ -94,7 +94,7 @@ The following code example shows how to use the **bitmap** element.
 
 ```xml
 <?xml version="1.0" ?>
-   <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+   <asyncPrintUIRequest xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <messageBoxUI>
