@@ -20,7 +20,7 @@ Software Digital Rights Management (SWDRM) is a feature that enable the content 
 |**Time period**|90-day sliding window|
 |**Measurement criteria**|Aggregation of session instances|
 |**Minimum instances**|25 devices|
-|**Passing criteria**|Driver session failure rate less than or equal to 2.0|
+|**Passing criteria**|Driver session failure rate less than or equal to 1.0|
 |**Measure ID**|19170139|
 
 ## Calculation

@@ -35,7 +35,7 @@ Hardware Digital Rights Management (HWDRM) is a feature that enables secure play
 		*	removes potentially invalid device configurations 
 	*	Devices with only a single GPU (filtered out)
 		*	Ensures we are only measuring results each IHV separately. 
-	*	Sessions that resulted in expected error codes are filtered out.  Expected error codes are those that are by-design and are very unlikely to be attributed to an OS or driver bug.  These are reviewed quarterly. Many error cods may be expected but are accommodated for by setting the pass/fail threshold at 2% rather than being filtered out.  This allows us to monitor the rates of those error codes within the threshold. 
+	*	Sessions that resulted in expected error codes are filtered out.  Expected error codes are those that are by-design and are very unlikely to be attributed to an OS or driver bug.  These are reviewed quarterly. Many error codes may be expected but are accommodated for by setting the pass/fail threshold at 2% rather than being filtered out.  This allows us to monitor the rates of those error codes within the threshold. 
 3.	Additionally, outlying devices are identified and filtered out based on the following metrics.  This removes devices that could skew results (positively or negatively) in the final dataset used for measurement.  Devices are filtered out if the metric result for that device is within the specified percentile criteria: 
 	*	Session count per device over the 90-day period: >= 95th percentile
 	*	Number of days with sessions over the 90-day period: >= 97.5th percentile
