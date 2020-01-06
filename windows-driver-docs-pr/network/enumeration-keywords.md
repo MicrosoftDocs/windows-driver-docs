@@ -235,8 +235,8 @@ The following table lists all of the keywords and describes the values that a dr
 <tr class="even">
 <td align="left"><p><strong></em>FlowControl</strong></p></td>
 <td align="left"><p>Flow Control</p></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>Enabled</p></td>
+<td align="left"><p>0 (Client Default)</p></td>
+<td align="left"><p>Tx & Rx Disabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -253,7 +253,7 @@ The following table lists all of the keywords and describes the values that a dr
 <tr class="odd">
 <td align="left"></td>
 <td align="left"></td>
-<td align="left"><p>3 (Default)</p></td>
+<td align="left"><p>3 (Server Default)</p></td>
 <td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="even">
