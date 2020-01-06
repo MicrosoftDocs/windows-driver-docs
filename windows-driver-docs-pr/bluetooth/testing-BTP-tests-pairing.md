@@ -24,6 +24,8 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunPairingTests.bat <radio name>` from an elevated command prompt or
 - `RunPairingTests.ps1 <radio name>` from an elevated PowerShell console
 
+Information on available radio name parameters can be found [here](testing-BTP-hw.md#supported-radios)
+
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
 As a test starts the red LED next to the 12 pin adapter will turn on once the command from the test to power the radio has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the radio being in an unknown state.

@@ -24,7 +24,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunHidTests.bat <radio name>` from an elevated command prompt or
 - `RunHidTests.ps1 <radio name>` from an elevated PowerShell console
 
-Information on available parameters can be found [here](testing-BTP-hw.md)
+Information on available radio name parameters can be found [here](testing-BTP-hw.md#supported-radios)
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
