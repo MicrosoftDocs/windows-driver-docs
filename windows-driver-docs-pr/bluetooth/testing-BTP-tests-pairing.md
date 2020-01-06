@@ -15,21 +15,14 @@ The BTP pairing tests will test the ability of the local system to pair to and u
 
 First check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate radio(s) are correctly plugged in to the Traduci. Currently the RN42 radios can **only** be plugged into JB. Simlarly the Bluefruit radio can **only** be plugged into JC. More detailed information on setting up can be found [here](testing-BTP-setup.md).
 
-At this time the only supported radios for HID tests are the RN42 and Bluefruit. Purchasing information for the Traduci, RN42, Bluefruit, and future radios can be found [here](testing-BTP-hw.md).
+Information and purchasing information for supported radios can be found [here](testing-BTP-hw.md).
 
 ### Running the Pairing Tests ##
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:
 
-- `RunPairingTests.bat` from an elevated command prompt or
-- `RunPairingTests.ps1` from an elevated PowerShell console
-
-This will run the pairing tests with the RN42. The RN42 is a BR/EDR only radio.
-
-You may also run tests with the Bluefruit radio. The Bluefruit is an LE only radio. After following the same precautions as the RN42 described above, run either:
-
-- `RunPairingTests.bat bluefruit` from an elevated command prompt or
-- `RunPairingTests.ps1 bluefruit` from an elevated PowerShell console
+- `RunPairingTests.bat <radio name>` from an elevated command prompt or
+- `RunPairingTests.ps1 <radio name>` from an elevated PowerShell console
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

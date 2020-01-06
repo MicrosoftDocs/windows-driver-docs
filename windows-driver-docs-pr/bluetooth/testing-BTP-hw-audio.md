@@ -11,6 +11,33 @@ ms.localizationpriority: medium
 
 The Traduci requires a 12-pin connector to communicate with any radio module. The audio radios and breakouts listed here take a radio module and break out the necessary pins to a 12 pin layout.
 
+<table>
+    <colgroup>
+        <col width="15%" />
+        <col width="33%" />
+        <col width="33%" />
+    </colgroup>
+    <thead>
+        <tr class="header">
+            <th>Radio</th>
+            <th>Capabilities</th>
+            <th>Parameter</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr class="even">
+        <td>RN52</a></td>
+        <td>
+            <ul>
+                <li>Basic Rate (BR) radio</li>
+            </ul>
+        </td>
+        <td>
+            <p>rn52 (ex. RunPairingTests.bat rn52)</p>
+        </td>
+    </tr>
+</table>
+
 ## Audio Sled (RN52 radio) ##
 
 <img src="images/RN52.png" alt="Photo of the RN52 Radio" width="150"/>

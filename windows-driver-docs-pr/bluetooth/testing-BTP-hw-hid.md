@@ -11,6 +11,44 @@ ms.localizationpriority: medium
 
 The Traduci requires a 12-pin connector to communicate with any radio module. The HID radios and breakouts listed here take a radio module and break out the necessary pins to a 12 pin layout.
 
+<table>
+    <colgroup>
+        <col width="15%" />
+        <col width="33%" />
+        <col width="33%" />
+    </colgroup>
+    <thead>
+        <tr class="header">
+            <th>Radio</th>
+            <th>Capabilities</th>
+            <th>Parameter</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr class="even">
+        <td>RN42</a></td>
+        <td>
+            <ul>
+                <li>Basic Rate (BR) radio</li>
+            </ul>
+        </td>
+        <td>
+            <p>rn42 (ex. RunPairingTests.bat rn42)</p>
+        </td>
+    </tr>
+    <tr class="odd">
+        <td>Bluefruit</a></td>
+        <td>
+            <ul>
+                <li>Low Energy (LE) radio</li>
+            </ul>
+        </td>
+        <td>
+            <p>bluefruit (ex. RunPairingTests.bat bluefruit)</p>
+        </td>
+    </tr>
+</table>
+
 ## PMOD BT2 (RN42 radio) ##
 Purchasable via [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
