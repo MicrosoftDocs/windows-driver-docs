@@ -32,7 +32,9 @@ WIFI_DEVICE_CONFIG wifiDeviceConfig;
 WIFI_DEVICE_CONFIG_INIT(&wifiDeviceConfig,
                         WDI_VERSION_LATEST,
                         EvtWifiDeviceSendCommand,
-                        EvtWifiDeviceCreateAdapter);
+                        EvtWifiDeviceCreateAdapter,
+                        EvtWifiDeviceCreateWifiDirectDevice,       //2001 (Drop 2) New Added Callback
+                        EvtWifiDeviceCreateWifiDirectRoleAdapter); //2001 (Drop 2) New Added Callback
 
 status = WifiDeviceInitialize(wdfDevice, &wifiDeviceConfig);
 ```
@@ -62,7 +64,328 @@ If this was a set command and the original request did not conatin a large enoug
 - Unsolicited indications are also notified via the WifiDeviceReceiveIndication API but with transaction ID set to 0.
 
 ![WiFiCx client driver command](images/wificx_command.png)
+## Wi-Fi Direct (P2P) Support
 
+Since 2001 (Drop 2) the Wi-Fi Direct Mira-cast scenario will be supported. To enable the Mira-cast, the client driver must implement the following sections.
+### Wi-Fi Direct Device Capabilities
+
+WIFI_WIFIDIRECT_CAPABILITIES is an new introduced structure which merged from the WDI_P2P_CAPABILITIES and WDI_AP_CAPABILITIES. The client driver need to call WifiDeviceSetWiFiDirectCapabilities API for updating WifiCx in the set device capabilities phase.
+```C++
+WIFI_WIFIDIRECT_CAPABILITIES wfdCapabilities = {};
+
+// Set values
+wfdCapabilities.ConcurrentGOCount = 1;
+wfdCapabilities.ConcurrentClientCount = 1;
+
+// Update back to WifiCx
+WifiDeviceSetWiFiDirectCapabilities(Device, &wfdCapabilities);
+```
+### Wi-Fi Direct Event Callback For "WfdDevice"
+
+In Wi-Fi direct world, the "WfdDevice" is a no data path support concept, so WifiCx created a new WDFObject named WIFIDIRECTDEVICE. WifiDirectDeviceGetPortId and WifiDirectDeviceSetCurrentLinkLayerAddress APIs created for this WIFIDIRECTDEVICE handle. 
+```C++
+NTSTATUS
+EvtWifiDeviceCreateWifiDirectDevice(
+    WDFDEVICE  Device,
+    WIFIDIRECT_DEVICE_INIT * WfdDeviceInit
+)
+{
+    WDF_OBJECT_ATTRIBUTES wfdDeviceAttributes;
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&wfdDeviceAttributes, WIFI_WFDDEVICE_CONTEXT);
+    wfdDeviceAttributes.EvtCleanupCallback = EvtWifiDirectDeviceContextCleanup;
+
+    WIFIDIRECTDEVICE wfdDevice;
+    NTSTATUS ntStatus = WifiDirectDeviceCreate(WfdDeviceInit, &wfdDeviceAttributes, &wfdDevice);
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: WifiDirectDeviceCreate failed, status=0x%x\n", ntStatus);
+        return ntStatus;
+    }
+
+    ntStatus = WifiDirectDeviceInitialize(wfdDevice);
+
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: WifiDirectDeviceInitialize failed with %!STATUS!\n", ntStatus);
+        return ntStatus;
+    }
+
+    ntStatus = ClientDriverInitWifiDirectDeviceContext(
+        Device,
+        wfdDevice,
+        WifiDirectDeviceGetPortId(wfdDevice));
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: ClientDriverInitWifiDirectDeviceContext failed with %!STATUS!\n", ntStatus);
+        return ntStatus;
+    }
+
+    ntStatus = WifiDirectDeviceStart(wfdDevice); //!! This API will be removed in the DROP 3 !!
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: WifiDirectDeviceStart failed with %!STATUS!", ntStatus);
+        return ntStatus;
+    }
+
+    return ntStatus;
+}
+```
+### Wi-Fi Direct Event Callback For "WfdRole"
+
+WfdRole is a data path support adapter, which is similar to the default (station) adapter creation flow. (the reason we may merge to the station adapter creation in Drop 3).
+```C++
+NTSTATUS
+EvtWifiDeviceCreateWifiDirectRoleAdapter(
+    WDFDEVICE Device,
+    NETADAPTER_INIT* AdapterInit
+)
+{
+    NET_ADAPTER_DATAPATH_CALLBACKS datapathCallbacks;
+    NET_ADAPTER_DATAPATH_CALLBACKS_INIT(&datapathCallbacks,
+        EvtAdapterCreateTxQueue,
+        EvtAdapterCreateRxQueue);
+
+    NetAdapterInitSetDatapathCallbacks(AdapterInit, &datapathCallbacks);
+
+    WDF_OBJECT_ATTRIBUTES adapterAttributes;
+    WDF_OBJECT_ATTRIBUTES_INIT(&adapterAttributes);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&adapterAttributes, WIFI_NETADAPTER_CONTEXT);
+    adapterAttributes.EvtCleanupCallback = EvtAdapterContextCleanup;
+
+    NETADAPTER netAdapter;
+    NTSTATUS ntStatus = NetAdapterCreate(AdapterInit, &adapterAttributes, &netAdapter);
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: NetAdapterCreate failed, status=0x%x\n", ntStatus);
+        return ntStatus;
+    }
+
+    ntStatus = WifiDirectRoleAdapterInitialize(netAdapter);
+
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: WifiDirectRoleAdapterInitialize failed with %!STATUS!\n", ntStatus);
+        return ntStatus;
+    }
+
+    ntStatus = ClientDriverInitDataAdapterContext(
+        Device,
+        netAdapter,
+        EXT_P2P_ROLE_PORT,
+        WifiDirectRoleAdapterGetPortId(netAdapter));
+
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: ClientDriverInitDataAdapterContext failed with %!STATUS!\n", ntStatus);
+        return ntStatus;
+    }
+
+    ntStatus = ClientDriverNetAdapterStart(netAdapter);
+    if (!NT_SUCCESS(ntStatus))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: ClientDriverNetAdapterStart failed with %!STATUS!\n", ntStatus);
+        return ntStatus;
+    }
+
+    return ntStatus;
+}
+```
+### Wi-Fi Direct ExemptionAction support in TxQueue
+
+ExemptionAction added as a NetAdapter package extension in version 2.1, so please make sure bump the version and set Preview to true in the solution.
+```C++
+#include <net/wifi/exemptionaction.h>
+
+typedef struct _WIFI_TXQUEUE_CONTEXT
+{
+    WIFI_NETADAPTER_CONTEXT* NetAdapterContext;
+    LONG NotificationEnabled;
+    NET_RING_COLLECTION const* Rings;
+    NET_EXTENSION VaExtension;
+    NET_EXTENSION LaExtension;
+    NET_EXTENSION ExemptionActionExtension;
+    CLIENTDRIVER_TCB* PacketContext;
+} WIFI_TXQUEUE_CONTEXT, * PWIFI_TXQUEUE_CONTEXT;
+WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(WIFI_TXQUEUE_CONTEXT, WifiGetTxQueueContext);
+
+NTSTATUS
+EvtAdapterCreateTxQueue(
+    _In_ NETADAPTER NetAdapter,
+    _Inout_ NETTXQUEUE_INIT* TxQueueInit
+)
+{
+    TraceEvents(TRACE_LEVEL_VERBOSE, DBG_INIT, "-->%!FUNC!\n");
+
+    NTSTATUS status = STATUS_SUCCESS;
+    PWIFI_TXQUEUE_CONTEXT txQueueContext = NULL;
+    PWIFI_NETADAPTER_CONTEXT netAdapterContext = WifiGetNetAdapterContext(NetAdapter);
+    WDF_OBJECT_ATTRIBUTES txAttributes;
+
+    WDF_OBJECT_ATTRIBUTES_INIT(&txAttributes);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&txAttributes, WIFI_TXQUEUE_CONTEXT);
+
+    txAttributes.EvtDestroyCallback = EvtTxQueueDestroy;
+
+    NET_PACKET_QUEUE_CONFIG queueConfig;
+    NET_PACKET_QUEUE_CONFIG_INIT(&queueConfig,
+        EvtTxQueueAdvance,
+        EvtTxQueueSetNotificationEnabled,
+        EvtTxQueueCancel);
+    queueConfig.EvtStart = EvtTxQueueStart;
+    NETPACKETQUEUE txQueue;
+    status =
+        NetTxQueueCreate(TxQueueInit,
+            &txAttributes,
+            &queueConfig,
+            &txQueue);
+
+    if (!NT_SUCCESS(status))
+    {
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_INIT, "NetTxQueueCreate failed, Adapter=0x%p status=0x%x\n", NetAdapter, status);
+        goto Exit;
+    }
+
+    txQueueContext = WifiGetTxQueueContext(txQueue);
+
+    TraceEvents(TRACE_LEVEL_INFORMATION, DBG_INIT, "NetTxQueueCreate succeeded, Adapter=0x%p, TxQueue=0x%p\n", NetAdapter, txQueue);
+
+    txQueueContext->NetAdapterContext = netAdapterContext;
+    txQueueContext->Rings = NetTxQueueGetRingCollection(txQueue);
+    netAdapterContext->TxQueue = txQueue;
+
+    NET_EXTENSION_QUERY extensionQuery;
+    NET_EXTENSION_QUERY_INIT(
+        &extensionQuery,
+        NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_NAME,
+        NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_VERSION_1,
+        NetExtensionTypeFragment);
+
+    NetTxQueueGetExtension(
+        txQueue,
+        &extensionQuery,
+        &txQueueContext->VaExtension);
+
+    if (!txQueueContext->VaExtension.Enabled)
+    {
+        TraceEvents(
+            TRACE_LEVEL_ERROR,
+            DBG_INIT,
+            "%!FUNC!: Required virtual address extension is missing.");
+
+        status = STATUS_UNSUCCESSFUL;
+        goto Exit;
+    }
+
+    NET_EXTENSION_QUERY_INIT(
+        &extensionQuery,
+        NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_NAME,
+        NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_VERSION_1,
+        NetExtensionTypeFragment);
+
+    NetTxQueueGetExtension(
+        txQueue,
+        &extensionQuery,
+        &txQueueContext->LaExtension);
+
+    if (!txQueueContext->LaExtension.Enabled)
+    {
+        TraceEvents(
+            TRACE_LEVEL_ERROR,
+            DBG_INIT,
+            "%!FUNC!: Required logical address extension is missing.");
+
+        status = STATUS_UNSUCCESSFUL;
+        goto Exit;
+    }
+
+     NET_EXTENSION_QUERY_INIT(
+        &extensionQuery,
+        NET_PACKET_EXTENSION_WIFI_EXEMPTION_ACTION_NAME,
+        NET_PACKET_EXTENSION_WIFI_EXEMPTION_ACTION_VERSION_1,
+        NetExtensionTypePacket);
+
+    NetTxQueueGetExtension(
+        txQueue,
+        &extensionQuery,
+        &txQueueContext->ExemptionActionExtension);
+
+    if (!txQueueContext->ExemptionActionExtension.Enabled)
+    {
+        TraceEvents(
+            TRACE_LEVEL_ERROR,
+            DBG_INIT,
+            "%!FUNC!: Required Exemption Action extension is missing.");
+
+        status = STATUS_UNSUCCESSFUL;
+        goto Exit;
+    }
+
+    status = InitializeTCBs(txQueue, txQueueContext);
+
+    if (status != STATUS_SUCCESS)
+    {
+        goto Exit;
+    }
+
+Exit:
+    TraceEvents(TRACE_LEVEL_VERBOSE, DBG_INIT, "<--%!FUNC! with 0x%x\n", status);
+
+    return status;
+}
+
+static
+void
+BuildTcbForPacket(
+    _In_ WIFI_TXQUEUE_CONTEXT const * TxQueueContext,
+    _Inout_ CLIENTDRIVER_TCB * Tcb,
+    _In_ UINT32 PacketIndex,
+    _In_ NET_RING_COLLECTION const * Rings
+)
+{
+    auto const pr = NetRingCollectionGetPacketRing(Rings);
+    auto const fr = NetRingCollectionGetFragmentRing(Rings);
+
+    auto const packet = NetRingGetPacketAtIndex(pr, PacketIndex);
+
+    auto const & vaExtension = TxQueueContext->VaExtension;
+    auto const & laExtension = TxQueueContext->LaExtension;
+    auto const & exemptionActionExtension = TxQueueContext->ExemptionActionExtension;
+
+
+
+    auto const packageExemptionAction = WifiExtensionGetExemptionAction(&exemptionActionExtension, PacketIndex);
+    Tcb->EncInfo.ExemptionActionType = packageExemptionAction->ExemptionAction;
+
+}
+
+```
+### Wi-Fi Direct INI/INF file change
+
+VWifi functionalities has been replaced by the NetAdapter, if porting from WDI based driver, the INI/INF should remove the VWIFI related information. 
+```INF
+Characteristics = 0x84
+BusType         = 5
+*IfType         = 71; IF_TYPE_IEEE80211
+*MediaType      = 16; NdisMediumNative802_11
+*PhysicalMediaType = 9; NdisPhysicalMediumNative802_11
+NumberOfNetworkInterfaces   = 5; For WIFI DIRECT DEVICE AND ROLE ADAPTER
+
+; TODO: Set this to 0 if your device is not a physical device.
+*IfConnectorPresent     = 1     ; true
+
+; In most cases, you can keep these at their default values.
+*ConnectionType         = 1     ; NET_IF_CONNECTION_DEDICATED
+*DirectionType          = 0     ; NET_IF_DIRECTION_SENDRECEIVE
+*AccessType             = 2     ; NET_IF_ACCESS_BROADCAST
+*HardwareLoopback       = 0     ; false
+
+[ndi.NT.Wdf]
+KmdfService = %ServiceName%, wdf
+
+[wdf]
+KmdfLibraryVersion      = $KMDFVERSION$
+
+```
 ## Appendix
 
 1911 (Drop 1):
