@@ -71,7 +71,7 @@ If the **-v** parameter is not specified or is specified without any options, St
 
 -   If the STAMPINF\_VERSION environment variable is set, Stampinf uses the version number value that is specified by this environment variable.
 
--   If the STAMPINF\_VERSION environment variable is not specified, Stampinf extracts the version number from the Ntverp.hNtverp.h file.
+-   If the STAMPINF\_VERSION environment variable is not specified, Stampinf extracts the version number from the Ntverp.h file.
 
 <span id="_______-k________version______"></span><span id="_______-K________VERSION______"></span> **-k** *version*   
 Specifies the *version* of KMDF that this driver depends on. This is used to customize the KmdfLibraryVersion and KMDF co-installer name in the INF file. This option replaces the $KMDFVERSION$ and $KMDFCOINSTALLERVERSION$ keywords in the INF file. The string has the following format:
