@@ -1,6 +1,6 @@
 ---
 title: Introduction to the Directed Power Management Framework
-description: Describes the Directed Power Management Framework, or DFx, which is equivalent to Power Framework, or PoFx, version 3.
+description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
 ms.assetid: 58550c57-3439-4212-b0c6-6a2fbfd38414
 ms.date: 03/27/2019
 ms.custom: 19H1
@@ -14,7 +14,7 @@ With DFx, the operating system directs device stacks to enter their appropriate 
 
 The objective is to make systems more power-efficient and to reduce energy consumption for Windows devices across form factors.
 
-DFx currently supports D-state management only.  DFx skips any device subtree with an F-state constraint.
+DFx is currently support for devices with D-state constraints only.  DFx skips any device subtree with an F-state constraint.
 
 ## Requirements for WDF (non-miniport) drivers
 
@@ -32,7 +32,7 @@ If the WDF driver does not use runtime power management, add support for it and 
 
 ## Requirements for WDM (non-miniport) drivers
 
-If your driver does not use the system-managed idle support provided by WDF (the driver is either a WDF driver using driver-managed idle, or a WDM driver), it can still get DFx support by registering itself with PoFx.  In this scenario, the driver registers with PoFx by implementing:
+If your driver does not use the system-managed idle support provided by WDF (the driver is either a WDF driver using [driver-managed idle](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type), or a WDM driver), it can still get DFx support by registering itself with PoFx.  In this scenario, the driver registers with PoFx by implementing:
 
 - [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
 - [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
