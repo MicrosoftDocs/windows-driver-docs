@@ -137,9 +137,11 @@ Even though the link speed influences routing behavior among currently connected
 
 ### <span id="Signal_strength"></span><span id="signal_strength"></span><span id="SIGNAL_STRENGTH"></span>Signal strength
 
-If Windows detects that the currently connected Wi-Fi network has very low signal strength, it may choose to connect a mobile broadband network (if permitted by policy) to avoid disrupting network connectivity. This helps to smooth the transition when a user is moving away from a wireless access point.
+For Windows 8 and Windows 8.1, if Windows detects that the currently connected Wi-Fi network has very low signal strength, it may choose to connect a mobile broadband network (if permitted by policy) to avoid disrupting network connectivity. This helps to smooth the transition when a user is moving away from a wireless access point.
 
 Windows does not disconnect a more preferred Wi-Fi network until the signal strength cannot maintain the connection. If signal strength improves, Windows may soft-disconnect the mobile broadband adapter.
+
+Windows 10 does not use the Wi-Fi signal strength.
 
 ### <span id="Preferred_network_list"></span><span id="preferred_network_list"></span><span id="PREFERRED_NETWORK_LIST"></span>Preferred network list
 
