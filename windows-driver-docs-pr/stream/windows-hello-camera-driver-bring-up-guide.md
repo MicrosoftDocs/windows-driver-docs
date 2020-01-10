@@ -42,7 +42,7 @@ To enable face authentication for an infrared camera on your device, you must pr
 
 ### Configure the DeviceMFT component
 
-As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](https://docs.microsoft.com/en-us/samples/microsoft/windows-driver-samples/driver-device-transform-sample/) sample.
+As a starting point for building a DeviceMFT component that supports face authentication on your device, you can use the [sampledevicemft](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/driver-device-transform-sample/) sample.
 
 To modify the driver sample, make the following changes to the sample source code:
 
