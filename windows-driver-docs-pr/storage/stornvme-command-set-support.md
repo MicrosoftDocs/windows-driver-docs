@@ -2,13 +2,13 @@
 title: StorNVMe Command Set Support
 description: StorNVMe Command Set Support
 ms.assetid: c0bcee11-ea66-4726-99a2-ad18256cf616
-ms.date: 12/12/2019
+ms.date: 01/13/2020
 ms.localizationpriority: medium
 ---
 
 # StorNVMe Command Set Support
 
-The matrices below list the NVMe *Admin* and *NVM* command sets and associated opcodes, and indicate the support that **StorNVMe** provides for each command.  
+The matrices below list the NVMe *Admin* and *NVM* command sets and associated opcodes, and indicate the support provided by **StorNVMe** on Windows 10 version 1903 and later.  
 
 ## Admin Command Set Support
 
