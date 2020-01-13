@@ -66,10 +66,10 @@ If this was a set command and the original request did not conatin a large enoug
 ![WiFiCx client driver command](images/wificx_command.png)
 ## Wi-Fi Direct (P2P) Support
 
-Since 2001 (Drop 2) the Wi-Fi Direct Mira-cast scenario will be supported. To enable the Mira-cast, the client driver must implement the following sections.
+Since 2001 (Drop 2) the Wi-Fi Direct Miracast scenario will be supported. To enable Miracast, the client driver must implement the following sections.
 ### Wi-Fi Direct Device Capabilities
 
-WIFI_WIFIDIRECT_CAPABILITIES is an new introduced structure which merged from the WDI_P2P_CAPABILITIES and WDI_AP_CAPABILITIES. The client driver need to call WifiDeviceSetWiFiDirectCapabilities API for updating WifiCx in the set device capabilities phase.
+WIFI_WIFIDIRECT_CAPABILITIES is an new introduced structure merged from the WDI_P2P_CAPABILITIES and WDI_AP_CAPABILITIES. The client driver need to call WifiDeviceSetWiFiDirectCapabilities API for updating WifiCx in the set device capabilities phase.
 ```C++
 WIFI_WIFIDIRECT_CAPABILITIES wfdCapabilities = {};
 
@@ -82,7 +82,7 @@ WifiDeviceSetWiFiDirectCapabilities(Device, &wfdCapabilities);
 ```
 ### Wi-Fi Direct Event Callback For "WfdDevice"
 
-In Wi-Fi direct world, the "WfdDevice" is a no data path support concept, so WifiCx created a new WDFObject named WIFIDIRECTDEVICE. WifiDirectDeviceGetPortId and WifiDirectDeviceSetCurrentLinkLayerAddress APIs created for this WIFIDIRECTDEVICE handle. 
+For Wi-Fi Direct, the "WfdDevice" is a control concept with no data path support, therefore WifiCx has a new WDFObject named WIFIDIRECTDEVICE. WifiDirectDeviceGetPortId and WifiDirectDeviceSetCurrentLinkLayerAddress APIs created for this WIFIDIRECTDEVICE handle. 
 ```C++
 NTSTATUS
 EvtWifiDeviceCreateWifiDirectDevice(
@@ -132,7 +132,7 @@ EvtWifiDeviceCreateWifiDirectDevice(
 ```
 ### Wi-Fi Direct Event Callback For "WfdRole"
 
-WfdRole is a data path support adapter, which is similar to the default (station) adapter creation flow. (the reason we may merge to the station adapter creation in Drop 3).
+WfdRole is a data path support adapter, which is similar to the default (station) adapter creation flow. (Note this will be merged with the station adapter creation in a future drop).
 ```C++
 NTSTATUS
 EvtWifiDeviceCreateWifiDirectRoleAdapter(
@@ -192,7 +192,7 @@ EvtWifiDeviceCreateWifiDirectRoleAdapter(
 ```
 ### Wi-Fi Direct ExemptionAction support in TxQueue
 
-ExemptionAction added as a NetAdapter package extension in version 2.1, so please make sure bump the version and set Preview to true in the solution.
+ExemptionAction added as a NetAdapter packet extension in version 2.1, so please make sure bump the version and set Preview to true in the solution.
 ```C++
 #include <net/wifi/exemptionaction.h>
 
@@ -361,7 +361,7 @@ BuildTcbForPacket(
 ```
 ### Wi-Fi Direct INI/INF file change
 
-VWifi functionalities has been replaced by the NetAdapter, if porting from WDI based driver, the INI/INF should remove the VWIFI related information. 
+vWifi functionalities has been replaced by the NetAdapter, if porting from WDI based driver, the INI/INF should remove the vWIFI related information. 
 ```INF
 Characteristics = 0x84
 BusType         = 5
@@ -387,6 +387,20 @@ KmdfLibraryVersion      = $KMDFVERSION$
 
 ```
 ## Appendix
+
+2001 (Drop 2):
+
+**What’s new**:
+-	Wi-Fi Direct related commands implemented. Tested with Miracast and P2PApplication.
+-	Packet extension implemented. Encryption exclusion to support secure networks.
+
+**Limitations**:
+-	Direct OID commands not yet forwarded by NetAdapter to WifiCx (will be available in next drop).
+-	API for IHV to query OS WDI version not implemented yet (please use WDI_VERSION_LATEST for now).
+-	Wi-Fi requests are targeted towards device (in the future, this may be sent on the adapter object).
+-	Reset recovery (PLDR) and aborting of commands not yet implemented.
+-	Power related commands not yet implemented.
+-	No support for FIPS.
 
 1911 (Drop 1):
 
