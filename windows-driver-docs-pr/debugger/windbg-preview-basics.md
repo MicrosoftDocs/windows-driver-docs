@@ -13,7 +13,6 @@ ms.localizationpriority: medium
 | ------------------- | -------------------|
 |[WinDbg Preview - What's New](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-using-windbg-preview)|What's new with WinDbg Preview |
 
-
 ## The debugger data model
 
 | Title               | Description        |
@@ -31,7 +30,6 @@ ms.localizationpriority: medium
 | [WinDbg Preview - Scripting](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-scripting-preview) |Using the WinDbg Preview built in scripting  |
 | https://github.com/Microsoft/WinDbg-Samples |The debugger team GitHub site where they share the latest JavaScript (and C++) sample code. |
 |[Native Debugger Objects in JavaScript Extensions](https://docs.microsoft.com/windows-hardware/drivers/debugger/native-objects-in-javascript-extensions) | Describes how to work with common objects and provides reference information on their attributes and behaviors.|
-
 
 ## TTD Basics
 
