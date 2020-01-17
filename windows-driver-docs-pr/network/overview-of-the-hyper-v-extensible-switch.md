@@ -55,7 +55,7 @@ Each extensible switch module routes incoming and outgoing packets over the netw
 
 - VM network adapters that are exposed within the guest operating system that runs in a Hyper-V child partition. VM network adapters provide a connection to the extensible switch for packets to be sent or received by processes that run in the guest operating system of the child partition.
 
-    For more information about this type of network adapter, see [Virtual Machine Network Adapters](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/virtual-machine-network-adapters).
+    For more information about this type of network adapter, see [Virtual Machine Network Adapters](https://docs.microsoft.com/windows-hardware/drivers/network/virtual-machine-network-adapters).
 
 Each Hyper-V child partition can be configured to have one or more VM network adapters. Each VM network adapter is configured to be associated with an instance of an extensible switch. This allows a child partition to be configured in the following way:
 
