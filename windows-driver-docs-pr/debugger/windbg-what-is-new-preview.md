@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - What's New
 
+![Small logo on windbg preview](images/windbgx-preview-logo.png)
+
 This topic provides information on what's new in the WinDbg Preview debugger.
 
 ## 1.0.1912.11001
@@ -277,8 +279,8 @@ This version adds Time Travel Tracing. Time Travel Debugging, allows you to reco
 
 This version was the first release of WinDbg Preview. For general information on the features available in WinDbg Preview, [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
 
----
- 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Preview – Installation](windbg-install-preview.md)
+
+[WinDbg Preview – Command line startup options](windbg-command-line-preview.md)
