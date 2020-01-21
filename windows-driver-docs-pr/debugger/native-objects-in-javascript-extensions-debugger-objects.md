@@ -2,7 +2,7 @@
 title: Native Debugger Objects in JavaScript Extensions - Debugger Object Details
 description: Native debugger objects represent various constructs of the debugger environment. This topic describes additional details about the native debugger objects in JavaScript extensions.
 ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE9
-ms.date: 09/07/2019
+ms.date: 01/15/2020
 ms.localizationpriority: medium
 ---
 
@@ -54,11 +54,10 @@ The following properties (and methods) are projected onto native objects which e
 | hostContext        | Property                   | Returns an object which represents the context the object is within (the address space, debug target, etc...)                              |
 | targetLocation     | Property                   | Returns an object which is an abstraction of where the object is within an address space (virtual address, register, sub-register, etc...) |
 | targetSize         | Property                   | Returns the size of the object (effectively: sizeof(&lt;TYPE OF OBJECT&gt;)                                                                |
-| addParentModel     | .addParentModel(object)    | Adds a new parent model (akin to a JavaScript prototype but on the data mdoel side) to the object                                          |
+| addParentModel     | .addParentModel(object)    | Adds a new parent model (akin to a JavaScript prototype but on the data model side) to the object                                          |
 | removeParentModel  | .removeParentModel(object) | Removes a given parent model from the object                                                                                               |
 | runtimeTypedObject | Property                   | Performs analysis on the object and tries to convert it to the runtime (most derived) type                                                 |
-
- 
+| targetType         | Property                   | JavaScript extensions have direct access to the type system of the underlying language. This access is expressed through the notion of type objects. For more information, see [Native Debugger Objects in JavaScript Extensions - Type Objects](native-objects-in-javascript-extensions-type-objects.md)  |
 
 If the object is a pointer, the following properties (and methods) are projected onto the pointer which enters JavaScript:
 
@@ -68,8 +67,6 @@ If the object is a pointer, the following properties (and methods) are projected
 | address       | Property       | Returns the address of the pointer as a 64-bit ordinal object (a library type) |
 | dereference   | .dereference() | Dereferences the pointer and returns the underlying object                     |
 | isNull        | Property       | Returns whether or not the pointer value is nullptr (0)                        |
-
- 
 
 **Special Types Pertaining to Native Debugger Objects**
 
@@ -81,8 +78,6 @@ The location object which is returned from the targetLocation property of a nati
 |---------------|------------------|------------------------------------------------------|
 | add           | .add(value)      | Adds an absolute byte offset to the location.        |
 | subtract      | .subtract(value) | Subtracts an absolute byte offset from the location. |
-
- 
 
 **Additional Attributes**
 
@@ -168,10 +163,7 @@ As mentioned, a JavaScript script can get access to native objects by having the
 </tbody>
 </table>
 
- 
-
 ## <span id="Host-APIs"></span><span id="host-apis"></span><span id="HOST-APIS"></span>Host APIs for JavaScript Extensions
-
 
 The JavaScript provider inserts an object called host into the global namespace of every script which it loads. This object provides access to critical functionality for the script as well as access to the namespace of the debugger. It is set up in two phases.
 
@@ -187,8 +179,6 @@ A few key pieces of functionality are directly under the host object. The remain
 |-------------|--------------------------------------------------------------------------|
 | diagnostics | Functionality to assist in the diagnosis and debugging of script code    |
 | memory      | Functionality to enable memory reading and writing within a debug target |
-
- 
 
 **Root Level**
 
@@ -359,8 +349,6 @@ The diagnostics sub-namespace of the host object contains the following.
 |----------|---------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | debugLog | debugLog(object...) | 1             | This provides printf style debugging to a script extension. At present, output from debugLog is routed to the output console of the debugger. At a later point in time, there are plans to provide flexibility on routing this output. NOTE: This should not be used as a means of printing user output to console. It may not be routed there in the future. |
 
- 
-
 **Memory Functionality**
 
 The memory sub-namespace of the host object contains the following.
@@ -404,10 +392,7 @@ The memory sub-namespace of the host object contains the following.
 </tbody>
 </table>
 
- 
-
 ## <span id="Data-Model"></span><span id="data-model"></span><span id="DATA-MODEL"></span>Data Model Concepts in JavaScript
-
 
 **Data Model Mapping**
 
@@ -419,8 +404,6 @@ The following data model concepts map to JavaScript.
 | Iterability             | IIterableConcept             | standard: \[Symbol.iterator\](){...}                                 |
 | Indexability            | IIndexableConcept            | protocol: getDimensionality(...) / getValueAt(...) / setValueAt(...) |
 | Runtime Type Conversion | IPreferredRuntimeTypeConcept | protocol: getPreferredRuntimeTypedObject(...)                        |
-
- 
 
 **String Conversion**
 
