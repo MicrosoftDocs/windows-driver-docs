@@ -902,6 +902,8 @@
       href: native-objects-in-javascript-extensions.md
     - name: "Native Debugger Objects in JavaScript Extensions - Debugger Object Details"
       href: native-objects-in-javascript-extensions-debugger-objects.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Type Objects"
+      href: native-objects-in-javascript-extensions-type-objects.md
     - name: "Native Debugger Objects in JavaScript Extensions - Design Considerations"
       href: native-objects-in-javascript-extensions-design-considerations.md   
   - name: "Native Debugger Objects in NatVis"
