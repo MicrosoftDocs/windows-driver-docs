@@ -1,6 +1,6 @@
 ---
-title: Using the Network Driver Design Guide
-description: Using the Network Driver Design Guide
+title: Navigating the Network Driver Design Guide
+description: Navigating the Network Driver Design Guide
 ms.assetid: 8d9cbf3c-5eec-4409-ab4c-595bb921832d
 keywords:
 - network drivers WDK , documentation
@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Using the Network Driver Design Guide
+# Navigating the Network Driver Design Guide
 
 
 
@@ -34,7 +34,7 @@ This network driver design guide documents the following Network Driver Interfac
 
     For more information about NDIS 6.1, see [Introduction to NDIS 6.1](introduction-to-ndis-6-1.md).
 
--   NDIS 6.0, which is supported on Windows Vista and later versions of Windows. NDIS 6.0 includes support for filter drivers and many additional services that were not provided by earlier NDIS versions. NDIS 6.0 includes major updates to driver initialization and network data management including required support for driver reconfiguration at runtime and the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer) architecture for handling network packet data. For more information about supporting runtime reconfiguration, see [Driver Stack Management](driver-stack-management.md). For more information about how to handle network packet data in NDIS 6.0 see [NET\_BUFFER Architecture](net-buffer-architecture.md).
+-   NDIS 6.0, which is supported on Windows Vista and later versions of Windows. NDIS 6.0 includes support for filter drivers and many additional services that were not provided by earlier NDIS versions. NDIS 6.0 includes major updates to driver initialization and network data management including required support for driver reconfiguration at runtime and the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) architecture for handling network packet data. For more information about supporting runtime reconfiguration, see [Driver Stack Management](driver-stack-management.md). For more information about how to handle network packet data in NDIS 6.0 see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
     For more information about NDIS 6.0, see [Introduction to NDIS 6.0](introduction-to-ndis-6-0.md).
 
@@ -64,20 +64,20 @@ For more information about network INF files, which are used to install network 
 
 The following additional driver models are available to use particular hardware technologies and architectures.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="50%" />  
+<col width="50%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Technology</th>
 <th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/" data-raw-source="[Scalable Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)">Scalable Networking</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Scalable Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)">Scalable Networking</a></p></td>
 <td align="left"><p>Networking technologies that support the offload of tasks to a network adapter, such as the following:</p>
 <ul>
 <li><p><a href="header-data-split.md" data-raw-source="[Header-Data Split](header-data-split.md)">Header-Data Split</a>, a service that splits the header and the data in received Ethernet frames into separate buffers.</p></li>
@@ -104,15 +104,15 @@ The following additional driver models are available to use particular hardware 
 </ul></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/" data-raw-source="[Wireless Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)">Wireless Networking</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Wireless Networking](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)">Wireless Networking</a></p></td>
 <td align="left"><p>Networking capabilities that include Native 802.11 Wireless LAN.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/" data-raw-source="[Network Module Registrar](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)">Network Module Registrar</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Network Module Registrar](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)">Network Module Registrar</a></p></td>
 <td align="left"><p>A system facility that allows a driver to attach network modules to one another.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/" data-raw-source="[Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/)">Winsock Kernel</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/" data-raw-source="[Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)">Winsock Kernel</a></p></td>
 <td align="left"><p>A kernel-mode Network Programming Interface (NPI).</p></td>
 </tr>
 <tr class="even">

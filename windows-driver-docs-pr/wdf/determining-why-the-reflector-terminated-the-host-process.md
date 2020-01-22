@@ -17,6 +17,12 @@ This topic describes how you can analyze why the reflector terminated the driver
 
 The most common reason for the reflector to terminate the host process is the expiration of UMDF [host process timeouts](how-umdf-enforces-time-outs.md).
 
+We strongly recommend doing all development and testing of your UMDF driver with a kernel debugger attached to the test system and enabling [Application Verifier (AppVerif.exe)](../debugger/debugger-download-tools.md) on WUDFHost.exe. Use the following command, attach a kernel debugger and then reboot.
+
+```cpp
+AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
+```
+
 ## Using Dump Files
 
 
@@ -40,7 +46,7 @@ For many crashes, dump file details are sufficient to determine why the terminat
 
 In other cases, you might need to attach to a live kernel-mode target to determine why the reflector terminated the host process. To set up your debugging session, follow the steps described in [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md#kd).
 
-Once you have established a connection, display the outstanding IRPs by using the [**!wdfkd.wdfumirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirps) UMDF debugger extension ([**!wudfext.umirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirps) for UMDF version 1).
+Once you have established a connection, use !wdfkd.wdfumtriage to examine the UMDF drivers, display the outstanding IRPs by using the [**!wdfkd.wdfumirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumirps) UMDF debugger extension ([**!wudfext.umirps**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umirps) for UMDF version 1).
 
 -   If a PnP IRP or a power IRP is pending, determine why the driver causes the IRP to hang by examining threads in the host process.
 

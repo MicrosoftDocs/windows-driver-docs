@@ -57,7 +57,7 @@ The following table lists the predefined registry value names and their meanings
 
  
 
-Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543801(v=vs.85)) and [**IStillImage::GetDeviceValue**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543786(v=vs.85)) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istiusd-initialize) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
+Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543801(v=vs.85)) and [**IStillImage::GetDeviceValue**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543786(v=vs.85)) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
 
 ### Customized Registry Values
 

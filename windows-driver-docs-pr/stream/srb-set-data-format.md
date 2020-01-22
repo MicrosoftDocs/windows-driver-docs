@@ -31,7 +31,7 @@ Indicates that the minidriver does not support the requested data format.
 
 ### Comments
 
-The class driver passes the new data format in the **CommandData**.**OpenFormat** member of the *pSrb* pointer. (This pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_stream_request_block) structure.)
+The class driver passes the new data format in the **CommandData**.**OpenFormat** member of the *pSrb* pointer. (This pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure.)
 
 For more information about data formats, see the [Stream Class Minidriver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2). Also see [Data Range Intersections in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/data-range-intersections-in-avstream).
 

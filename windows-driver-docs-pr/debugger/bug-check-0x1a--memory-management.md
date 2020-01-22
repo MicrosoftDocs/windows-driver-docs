@@ -40,7 +40,7 @@ Parameter 1 identifies the exact violation.
 <tbody>
 <tr class="odd">
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>The fork clone block reference count is corrupt. (This only occurs on checked builds of Windows.)</p></td>
+<td align="left"><p>The fork clone block reference count is corrupt. This only occurs on checked builds of Windows. Checked builds were available on older versions of Windows, before Windows 10 version 1803.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x31</p></td>
@@ -229,4 +229,4 @@ Resolution
 
 The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause. 
 
-Running the [**Windows Memory Diagnostic**](https://social.technet.microsoft.com/wiki/contents/articles/29343.windows-10-technical-preview-running-windows-memory-diagnostics-tool.aspx) tool could be useful as well to exclude any kind of problem affecting the physical memory modules.
+Running the Windows Memory Diagnostic tool could be useful as well to exclude any kind of problem affecting the physical memory modules.

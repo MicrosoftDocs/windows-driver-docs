@@ -295,7 +295,7 @@ Specifies the error level that will cause the target to break into the debugger.
 
  
 
-This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
+This error level only has meaning in checked builds of Microsoft Windows. The default value is 1. Checked builds were available on older versions of Windows, before Windows 10 version 1803.
 
 <span id="_______-robp______"></span><span id="_______-ROBP______"></span> **-robp**   
 This allows CDB to set a breakpoint on a read-only memory page. (The default is for such an operation to fail.)
@@ -372,7 +372,7 @@ Specifies the error level that will cause the debugger to display an error messa
 
  
 
-This error level only has meaning in checked builds of Microsoft Windows. The default value is 1.
+This error level only has meaning in checked builds of Microsoft Windows. Checked builds were available on older versions of Windows before Windows 10, version 1803. The default value is 1.
 
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Enables verbose output from the debugger.

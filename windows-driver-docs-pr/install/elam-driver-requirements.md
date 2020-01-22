@@ -69,19 +69,19 @@ The Early Launch drivers can use registry or boot driver callbacks to monitor an
 
 These callbacks are valid through the lifetime of the ELAM driver and will be unregistered when the driver is unloaded. For more info, see:
 
-* [**CmRegisterCallbackEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmregistercallbackex)
-* [**CmRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmregistercallback)
-* [**CmUnRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-cmunregistercallback)
+* [**CmRegisterCallbackEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallbackex)
+* [**CmRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallback)
+* [**CmUnRegisterCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-cmunregistercallback)
 
 ### Boot Driver Callbacks
 
-Use [**IoRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioregisterbootdrivercallback) and [**IoUnRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iounregisterbootdrivercallback) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nc-ntddk-boot_driver_callback_function).
+Use [**IoRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioregisterbootdrivercallback) and [**IoUnRegisterBootDriverCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iounregisterbootdrivercallback) to register and unregister a [*BOOT_DRIVER_CALLBACK_FUNCTION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-boot_driver_callback_function).
 
 This callback provides status updates from Windows to an ELAM driver, including when all boot-start drivers have been initialized and the callback facility is no longer functional.
 
 ### Callback Type
 
-The [**BDCB_CALLBACK_TYPE enumeration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ne-ntddk-_bdcb_callback_type) describes two types of callbacks:
+The [**BDCB_CALLBACK_TYPE enumeration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_bdcb_callback_type) describes two types of callbacks:
 
 -   Callbacks that provide status updates to an ELAM driver (BdCbStatusUpdate)
 -   Callbacks used by the AM driver to classify boot-start drivers and dependent DLLs before initializing their images (BdCbInitializeImage)

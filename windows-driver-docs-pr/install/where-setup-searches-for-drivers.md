@@ -7,7 +7,7 @@ keywords:
 - locating drivers for device installation WDK device installations , where Device setupsearches
 - searching for drivers during device installation WDK device installations , where Device setupsearches
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # Where Windows Searches for Drivers

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_fvf_gg"></span><span id="DDK_FVF_GG"></span>
 
 
-The driver's [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) callback receives vertex data in a flexible vertex format (FVF). Because the vertex format is flexible, there is no comprehensive data structure defined for this data. Drivers must implement full FVF functionality.
+The driver's [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) callback receives vertex data in a flexible vertex format (FVF). Because the vertex format is flexible, there is no comprehensive data structure defined for this data. Drivers must implement full FVF functionality.
 
 There is an FVF update for Microsoft DirectX 7.0 that includes 1D, 3D, and 4D textures in addition to the usual 2D textures. For more information about this update, see [FVF Update](fvf-update.md). See the *Perm3* sample driver and DirectX SDK documentation for more information about these topics.
 

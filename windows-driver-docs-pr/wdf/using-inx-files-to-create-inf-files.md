@@ -21,8 +21,6 @@ If you create INX files for your drivers, you do not have to maintain multiple v
 
 To modify Stampinf properties within Visual Studio, open the Property Pages for your driver package project. Right-click the package project in Solution Explorer and select **Properties**. In the Property Pages for the package, click **Configuration Properties**, and then **StampInf**.
 
-You can also manually run the Stampinf tool, which is located in the *bin* subdirectory of the WDK.
-
 The WDK includes INX files for all the KMDF and UMDF sample drivers.
 
 INX files can contain the following string variables:

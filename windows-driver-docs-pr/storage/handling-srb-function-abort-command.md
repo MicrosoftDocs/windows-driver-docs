@@ -22,7 +22,7 @@ For an abort request, the miniport driver's *HwScsiStartIo* routine should verif
 
 1.  Set the input SRB's **SrbStatus** to SRB\_STATUS\_ABORT\_FAILED.
 
-2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportnotification) with the _NotificationType_**RequestComplete** and with the input SRB.
+2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the _NotificationType_**RequestComplete** and with the input SRB.
 
 3.  Call **ScsiPortNotification** again with the _NotificationType_**NextRequest**, or with **NextLuRequest** if the HBA supports tagged queuing or multiple requests per logical unit.
 

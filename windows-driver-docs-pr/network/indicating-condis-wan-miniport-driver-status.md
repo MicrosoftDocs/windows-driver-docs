@@ -18,13 +18,13 @@ ms.localizationpriority: medium
 
 
 
-A CoNDIS WAN miniport driver calls [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcoindicatestatusex) to indicate status changes up to bound protocol drivers. For more information about indicating status from a CoNDIS miniport driver or MCM, see [Indicating Miniport Driver Status](indicating-miniport-driver-status.md).
+A CoNDIS WAN miniport driver calls [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) to indicate status changes up to bound protocol drivers. For more information about indicating status from a CoNDIS miniport driver or MCM, see [Indicating Miniport Driver Status](indicating-miniport-driver-status.md).
 
 Bound protocol drivers can ignore these status indications. However, processing these indications typically results in improved performance for protocol drivers and the miniport driver.
 
-The NDISWAN intermediate driver forwards status indications to NDIS. NDIS calls the [**ProtocolCoStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-protocol_co_status_ex) functions of bound protocol drivers or a configuration manager. These protocol drivers or configuration manager can log these indications and possibly take corrective action, if necessary.
+The NDISWAN intermediate driver forwards status indications to NDIS. NDIS calls the [**ProtocolCoStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_status_ex) functions of bound protocol drivers or a configuration manager. These protocol drivers or configuration manager can log these indications and possibly take corrective action, if necessary.
 
-For a CoNDIS WAN miniport driver, a call to [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcoindicatestatusex) is the same as in any CoNDIS miniport driver, except that the CoNDIS WAN miniport driver indicates a WAN-specific status for each virtual connection (VC) on the miniport driver's NIC. The miniport driver calls **NdisMCoIndicateStatusEx** with an explicit VC handle to indicate these changes up to a protocol driver that shares this VC. If the driver specifies a **NULL***NdisVcHandle*, the status pertains to a general change in the state of the NIC.
+For a CoNDIS WAN miniport driver, a call to [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) is the same as in any CoNDIS miniport driver, except that the CoNDIS WAN miniport driver indicates a WAN-specific status for each virtual connection (VC) on the miniport driver's NIC. The miniport driver calls **NdisMCoIndicateStatusEx** with an explicit VC handle to indicate these changes up to a protocol driver that shares this VC. If the driver specifies a **NULL***NdisVcHandle*, the status pertains to a general change in the state of the NIC.
 
 Each status indication provides two basic pieces of information:
 
@@ -36,7 +36,7 @@ The CoNDIS WAN VC status indications are:
 
 -   NDIS\_STATUS\_WAN\_CO\_LINKPARAMS
 
-    A CoNDIS WAN miniport driver calls [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismcoindicatestatusex) to indicate that the parameters for a particular VC that is active on the NIC have changed. In this call, the miniport driver passes the handle to the VC in the *NdisVcHandle* parameter, NDIS\_STATUS\_WAN\_CO\_LINKPARAMS in the *GeneralStatus* parameter, and a pointer to a [**WAN\_CO\_LINKPARAMS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565819(v=vs.85)) structure in the *StatusBuffer* parameter. WAN\_CO\_LINKPARAMS describes new parameters for the VC.
+    A CoNDIS WAN miniport driver calls [**NdisMCoIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) to indicate that the parameters for a particular VC that is active on the NIC have changed. In this call, the miniport driver passes the handle to the VC in the *NdisVcHandle* parameter, NDIS\_STATUS\_WAN\_CO\_LINKPARAMS in the *GeneralStatus* parameter, and a pointer to a [**WAN\_CO\_LINKPARAMS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565819(v=vs.85)) structure in the *StatusBuffer* parameter. WAN\_CO\_LINKPARAMS describes new parameters for the VC.
 
 -   NDIS\_STATUS\_WAN\_CO\_FRAGMENT
 

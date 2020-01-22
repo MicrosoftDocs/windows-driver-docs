@@ -64,7 +64,7 @@ This flag is similar to the **ASSISTANT\_ON** flag. Instead of always turning on
 
 This flag indicates that AF assistant light is off.
 
-The descriptions for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE** property are the same as the Windows 8.1 DDI.
+The descriptions for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE** property are the same as the Windows 8.1 DDI.
 
 ## Requirements
 

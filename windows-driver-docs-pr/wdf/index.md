@@ -36,12 +36,12 @@ No functionality added or changed.
 
 ## New in WDF for Windows 10, version 1809
 
-* Added new API [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
+* Added new API [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
 
 ## New in WDF for Windows 10, version 1803
 
 * [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
-* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
+* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ## New in WDF for Windows 10, version 1709
 
@@ -81,11 +81,11 @@ The rest of this page describes functionality that was added in Windows 10, vers
 ## WDF source code is publicly available
 
 
--   The WDF source code is now available as open source on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from <http://github.com/Microsoft/Windows-Driver-Frameworks>.
+-   The WDF source code is now available as open source on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from <https://github.com/Microsoft/Windows-Driver-Frameworks>.
 
 -   The private symbol files for WDF on Windows 10 are now available through the Microsoft Symbol Server.
 
--   The Windows Driver Kit (WDK) 10 samples are also now published to GitHub. Download them from <http://github.com/Microsoft/Windows-Driver-Samples>.
+-   The Windows Driver Kit (WDK) 10 samples are also now published to GitHub. Download them from <https://github.com/Microsoft/Windows-Driver-Samples>.
 
 ## Automatic Source Level Debugging of Framework Code
 

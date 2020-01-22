@@ -24,7 +24,7 @@ All error messages that are defined within the WSD Scan Service must be sent acc
 Endpoints must include required message information headers on all fault messages. Fault messages are correlated as replies by using the \[relationship\] property as defined in WS-Addressing. The following \[action\] property designates fault messages:
 
 ```xml
-http://schemas.xmlsoap.org/ws/2004/08/addressing/fault
+https://schemas.xmlsoap.org/ws/2004/08/addressing/fault
 ```
 
 The definitions of faults use the following properties.
@@ -67,7 +67,7 @@ These properties bind to a SOAP 1.2 fault as the following code example shows.
 ```xml
 <S:Envelope>
   <S:Header>
-    <wsa:Action>http://schemas.xmlsoap.org/ws/2004/08/addressing/fault</wsa:Action>
+    <wsa:Action>https://schemas.xmlsoap.org/ws/2004/08/addressing/fault</wsa:Action>
     <!-- Headers excluded for clarity -->
   </S:Header>
   <S:Body>
@@ -90,12 +90,12 @@ These properties bind to a SOAP 1.2 fault as the following code example shows.
 The following code example shows a sample SOAP **Fault**.
 
 ```xml
-<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soapelope"
-    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-    xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-    xmlns:nprt="http://schemas.microsoft.com/windows/2006/01/wdp/scan">
+<soap:Envelope xmlns:soap="https://www.w3.org/2003/05/soapelope"
+    xmlns:xml="https://www.w3.org/XML/1998/namespace"
+    xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+    xmlns:nprt="https://schemas.microsoft.com/windows/2006/01/wdp/scan">
   <soap:Header>
-    <wsa:Action>http://schemas.xmlsoap.org/ws/2004/08/addressing/fault</wsa:Action>
+    <wsa:Action>https://schemas.xmlsoap.org/ws/2004/08/addressing/fault</wsa:Action>
     <!-- Headers excluded for brevity -->
   </soap:Header>
   <soap:Body>

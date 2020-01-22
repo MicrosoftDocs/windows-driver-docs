@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-Kernel streaming services support kernel-mode processing of streamed data. In this model, streaming data flows through a series of nodes that are grouped into blocks called filters. Each filter encapsulates some processing task to be performed upon the data. A [KS filter](ks-filters.md) is implemented as a kernel-mode [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_driver_object).
+Kernel streaming services support kernel-mode processing of streamed data. In this model, streaming data flows through a series of nodes that are grouped into blocks called filters. Each filter encapsulates some processing task to be performed upon the data. A [KS filter](ks-filters.md) is implemented as a kernel-mode [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object).
 
 A KS filter appears through the proxy as a DirectShow filter in user mode. As such, the graph builder and user-mode applications can interact with KS filters. In an active graph, the kernel-mode components still communicate directly, eliminating resource-consuming transitions between user mode and kernel mode.
 

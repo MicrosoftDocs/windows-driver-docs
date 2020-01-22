@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_return_values_for_directdraw_gg"></span><span id="DDK_RETURN_VALUES_FOR_DIRECTDRAW_GG"></span>
 
 
-The following tables list values that can be returned by the [DirectDraw driver-supplied functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index). The DDHAL\_DRIVER\_*Xxx* values actually are returned in the DWORD return value. The DD\_OK value and DDERR\_*Xxx* error codes are returned in the **ddRVal** member of the structure to which the particular function's parameter points.
+The following tables list values that can be returned by the [DirectDraw driver-supplied functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index). The DDHAL\_DRIVER\_*Xxx* values actually are returned in the DWORD return value. The DD\_OK value and DDERR\_*Xxx* error codes are returned in the **ddRVal** member of the structure to which the particular function's parameter points.
 
 For specific error codes that each function can return, see the function descriptions in the reference section. Refer to DirectDraw header files *ddraw.h* and *dxmini.h* for a complete listing of error codes and return values. Note that error codes are represented by negative values and cannot be combined.
 
@@ -68,7 +68,7 @@ A function in a DirectDraw driver must return one of the two return codes: DDHAL
 
  
 
-A [DxApi function](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) that is implemented in a [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md) returns one of the codes in the following table. These codes are defined in *dxmini.h*.
+A [DxApi function](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) that is implemented in a [video miniport driver](video-miniport-drivers-in-the-windows-2000-display-driver-model.md) returns one of the codes in the following table. These codes are defined in *dxmini.h*.
 
 <table>
 <colgroup>

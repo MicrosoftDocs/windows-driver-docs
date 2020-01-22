@@ -27,9 +27,9 @@ A callout driver should filter the network data at the highest possible filterin
 
 ### <a href="" id="blocking-at-the-application-layer-enforcement--ale--flow-established-l"></a>Blocking at the Application Layer Enforcement (ALE) Flow Established Layers
 
-Usually, if a callout has been added to the filter engine at one of the *ALE flow established* filtering layers (FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V4 or FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V6), its [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function should never return FWP\_ACTION\_BLOCK for the action. A decision to authorize or reject a connection should not be made at one of the ALE flow established filtering layers. Such a decision should always be made at one of the other ALE filtering layers.
+Usually, if a callout has been added to the filter engine at one of the *ALE flow established* filtering layers (FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V4 or FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V6), its [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function should never return FWP\_ACTION\_BLOCK for the action. A decision to authorize or reject a connection should not be made at one of the ALE flow established filtering layers. Such a decision should always be made at one of the other ALE filtering layers.
 
-The only valid reason for such a [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function to return FWP\_ACTION\_BLOCK for the action is if an error occurs that could pose a potential security risk if the established connection is not ended. In this case, returning FWP\_ACTION\_BLOCK for the action closes the connection to prevent the potential security risk from being exploited.
+The only valid reason for such a [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function to return FWP\_ACTION\_BLOCK for the action is if an error occurs that could pose a potential security risk if the established connection is not ended. In this case, returning FWP\_ACTION\_BLOCK for the action closes the connection to prevent the potential security risk from being exploited.
 
 ### Callout Function Execution Time
 
@@ -41,7 +41,7 @@ Callouts should recalculate IP checksums before they call [packet injection func
 
 ### Inline Injection of TCP Packet from Transport Layers
 
-Because of the TCP stack's locking behavior, a callout at the transport layer cannot inject a new or cloned TCP packet from the [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) callout function. If inline injection is desired, the callout must queue a DPC to perform the injection.
+Because of the TCP stack's locking behavior, a callout at the transport layer cannot inject a new or cloned TCP packet from the [classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) callout function. If inline injection is desired, the callout must queue a DPC to perform the injection.
 
 ### Outgoing IP Header Alignment
 

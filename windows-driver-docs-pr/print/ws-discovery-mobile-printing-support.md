@@ -13,12 +13,12 @@ Devices that support printing from Windows 10 Mobile, must add the MobilePrinte
 
 ```xml
 <soap:Envelope
-    xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-    xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-    xmlns:wsdisco="http://schemas.xmlsoap.org/ws/2005/04/discovery"
-    xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
-    xmlns:wsd="http://schemas.xmlsoap.org/ws/2006/02/devprof"
-    xmlns:pnpx="http://schemas.microsoft.com/windows/pnpx/2005/10"> 
+    xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+    xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+    xmlns:wsdisco="https://schemas.xmlsoap.org/ws/2005/04/discovery"
+    xmlns:wsx="https://schemas.xmlsoap.org/ws/2004/09/mex"
+    xmlns:wsd="https://schemas.xmlsoap.org/ws/2006/02/devprof"
+    xmlns:pnpx="https://schemas.microsoft.com/windows/pnpx/2005/10"> 
 
     <soap:Header>
         <!-- Place SOAP header information here.-->
@@ -27,14 +27,14 @@ Devices that support printing from Windows 10 Mobile, must add the MobilePrinte
     <soap:Body>
         <wsx:Metadata>
             <wsx:MetadataSection
-                Dialect="http://schemas.xmlsoap.org/ws/2005/05/devprof/ThisDevice">
+                Dialect="https://schemas.xmlsoap.org/ws/2005/05/devprof/ThisDevice">
                 <wsd:ThisDevice>
                     <!-- Place ThisDevice metadata here.-->
                 </wsd:ThisDevice>
             </wsx:MetadataSection>
                 
            <wsx:MetadataSection
-                Dialect="http://schemas.xmlsoap.org/ws/2005/05/devprof/ThisModel">
+                Dialect="https://schemas.xmlsoap.org/ws/2005/05/devprof/ThisModel">
                 <wsd:ThisModel>
                     <!-- Place ThisModel metadata here.-->              
                     <pnpx:DeviceCategory>
@@ -45,9 +45,9 @@ Devices that support printing from Windows 10 Mobile, must add the MobilePrinte
             </wsx:MetadataSection>  
 
             <wsx:MetadataSection
-                Dialect="http://schemas.xmlsoap.org/ws/2005/05/devprof/Relationship">
+                Dialect="https://schemas.xmlsoap.org/ws/2005/05/devprof/Relationship">
                 <wsd:Relationship
-                    Type="http://schemas.xmlsoap.org/ws/2005/05/devprof/host">
+                    Type="https://schemas.xmlsoap.org/ws/2005/05/devprof/host">
 
                     <wsd:Hosted>
                         <!-- Place Hosted metadata for the 

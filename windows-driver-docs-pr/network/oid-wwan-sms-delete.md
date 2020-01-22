@@ -15,7 +15,7 @@ OID\_WWAN\_SMS\_DELETE deletes SMS text messages stored in the MB device, or Sub
 
 Query requests are not supported.
 
-Set requests use the [**NDIS\_WWAN\_SMS\_DELETE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete) structure.
+Set requests use the [**NDIS\_WWAN\_SMS\_DELETE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete) structure.
 
 Miniport drivers process this OID asynchronously, and should return an NDIS\_STATUS\_INDICATION\_REQUIRED provisional response to any set requests. Miniport drivers should send an [**NDIS\_STATUS\_WWAN\_SMS\_DELETE**](ndis-status-wwan-sms-delete.md) indication when they have completed the transaction.
 
@@ -53,7 +53,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SMS\_DELETE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete)
+[**NDIS\_WWAN\_SMS\_DELETE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete)
 
 [WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations)
 

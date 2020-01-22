@@ -38,7 +38,7 @@ None
 Remarks
 -------
 
-The code for the **WDFVERIFY** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration. If your driver's binary includes **WDFVERIFY** code, the code will run when your driver runs with checked builds or free builds of the Microsoft Windows operating system.
+The code for the **WDFVERIFY** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration.
 
 The **WDFVERIFY** code breaks into a kernel debugger only if the **VerifyOn** value is set in the registry. For more information about registry entries that you can use to debug your driver, see [Registry Entries for Debugging Framework-Based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/registry-values-for-debugging-kmdf-drivers).
 

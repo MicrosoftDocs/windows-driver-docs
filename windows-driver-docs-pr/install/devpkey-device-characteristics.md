@@ -54,7 +54,7 @@ The DEVPKEY_Device_Characteristics device property represents the characteristic
 Remarks
 -------
 
-The value of DEVPKEY_Device_Characteristics is a bitwise OR of the FILE_*Xxx* file characteristic flags that are defined in Wdm.h and Ntddk.h. For more information about the device characteristic flags, see the *DeviceCharacteristics* parameter of [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) and [Specifying Device Characteristics](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-characteristics).
+The value of DEVPKEY_Device_Characteristics is a bitwise OR of the FILE_*Xxx* file characteristic flags that are defined in Wdm.h and Ntddk.h. For more information about the device characteristic flags, see the *DeviceCharacteristics* parameter of [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) and [Specifying Device Characteristics](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-characteristics).
 
 You can set the value of DEVPKEY_Device_Characteristics by using an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) that is included in the [**INF DDInstall.HW section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section) that installs a device.
 
@@ -89,7 +89,7 @@ Requirements
 
 [**INF DDInstall.HW Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section)
 
-[**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice)
+[**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)
 
 [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 

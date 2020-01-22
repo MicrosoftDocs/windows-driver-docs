@@ -274,6 +274,8 @@
       href: software-publisher-certificate.md
     - name: "Commercial Release Certificate"
       href: commercial-release-certificate.md
+    - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
+      href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md  
     - name: "Release-Signing Driver Packages"
       href: release-signing-driver-packages.md
     - name: "Release-Signing a Driver File"
@@ -410,8 +412,8 @@
       href: using-device-installation-functions.md
     - name: "Basic Installation Operations"
       href: basic-installation-operations.md
-    - name: "SetupAPI Functions that Simplify Driver Installation"
-      href: setupapi-functions-that-simplify-driver-installation.md
+    - name: "Functions that Simplify Driver Installation"
+      href: functions-that-simplify-driver-installation.md
     - name: "Using SetupAPI To Verify Driver Authenticode Signatures"
       href: using-setupapi-to-verify-driver-authenticode-signatures.md
     - name: "Determining the Parent of a Device"

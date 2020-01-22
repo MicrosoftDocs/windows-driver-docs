@@ -1,12 +1,12 @@
 ---
-title: Hyper-V Extensible Switch Architecture
-description: Hyper-V Extensible Switch Architecture
+title: Hyper-V Extensible Switch Architecture Topics
+description: Hyper-V Extensible Switch Architecture Topics
 ms.assetid: AEFF534A-56AF-47AC-AA94-46EA0C2FC50A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Hyper-V Extensible Switch Architecture
+# Hyper-V Extensible Switch Architecture Topics
 
 
 This section describes the architecture of the Microsoft Hyper-V extensible switch interface. This section includes the following topics:

@@ -25,9 +25,9 @@ ms.localizationpriority: medium
 
 
 
-KS pins specify data formats and ranges using the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) and [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structures. A data format specifies a single attribute of a data stream, for example an audio sampling size of 16 bits. A data range specifies multiple formats, for example an audio sampling range of 16-24 bits.
+KS pins specify data formats and ranges using the [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) and [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structures. A data format specifies a single attribute of a data stream, for example an audio sampling size of 16 bits. A data range specifies multiple formats, for example an audio sampling range of 16-24 bits.
 
-A minidriver includes an array of KSDATARANGE structures in each [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kspin_descriptor) structure that it provides. Microsoft-provided formats are enumerated in *ksmedia.h*.
+A minidriver includes an array of KSDATARANGE structures in each [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) structure that it provides. Microsoft-provided formats are enumerated in *ksmedia.h*.
 
 A KSDATARANGE structure has the same members as a KSDATAFORMAT structure; however, the minidriver can specify wildcard values for the major format, subformat, and specifier members of KSDATARANGE.
 
@@ -45,7 +45,7 @@ Clients use the following properties to query data format support of pins instan
 
 Once a pin is instantiated, a user-mode client can determine the current data format or requests a change of data format through [KSPROPSETID\_Connection](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-connection) property requests. For example, the client uses [**KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-connection-proposedataformat) to determine if a pin supports a given data format. The client uses [**KSPROPERTY\_CONNECTION\_DATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-connection-dataformat) to change the data format.
 
-KS minidrivers and clients can dynamically negotiate data formats. When the data format of a stream changes, the minidriver specifies the KSSTREAM\_HEADER\_OPTIONSF\_DATADISCONTINUITY flag in the **OptionsFlags** member of a KSSTREAM\_HEADER. The minidriver passes the new data format itself, described in a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksdataformat) structure, in the corresponding data buffer.
+KS minidrivers and clients can dynamically negotiate data formats. When the data format of a stream changes, the minidriver specifies the KSSTREAM\_HEADER\_OPTIONSF\_DATADISCONTINUITY flag in the **OptionsFlags** member of a KSSTREAM\_HEADER. The minidriver passes the new data format itself, described in a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure, in the corresponding data buffer.
 
  
 

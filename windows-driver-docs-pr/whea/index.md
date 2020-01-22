@@ -14,29 +14,22 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # Windows Hardware Error Architecture (WHEA) design guide
 
-
 This section describes the Windows Hardware Error Architecture (WHEA), which provides support for hardware error reporting and recovery. In this section, the following information is provided:
 
--   An overview of WHEA and its components. For more information, see [Windows Hardware Error Architecture Overview](windows-hardware-error-architecture-overview.md).
+- An overview of WHEA and its components. For more information, see [Windows Hardware Error Architecture Overview](windows-hardware-error-architecture-overview.md).
 
--   How to develop and distribute platform-specific hardware error driver (PSHED) plug-ins. For more information, see [Platform-Specific Hardware Error Driver Plug-Ins](platform-specific-hardware-error-driver-plug-ins2.md).
+- How to develop and distribute platform-specific hardware error driver (PSHED) plug-ins. For more information, see [Platform-Specific Hardware Error Driver Plug-Ins](platform-specific-hardware-error-driver-plug-ins2.md).
 
--   How user-mode applications can communicate with the WHEA platform. For more information, see [Windows Hardware Error Architecture-Aware User-Mode Applications](windows-hardware-error-architecture-aware-user-mode-applications.md).
+- How user-mode applications can communicate with the WHEA platform. For more information, see [Windows Hardware Error Architecture-Aware User-Mode Applications](windows-hardware-error-architecture-aware-user-mode-applications.md).
 
-For more detailed information about WHEA and how to implement WHEA on a hardware platform, see the WHEA Platform Design Guide. Platform vendors can obtain this design guide by sending email to <wheafb@microsoft.com>.
-
-**Note**   WHEA is supported in Windows Vista, Windows Server 2008, and later versions of the Windows operating system. For hardware error reporting that is supported on versions of Microsoft Windows prior to Windows Vista, see [Machine Check Architecture (MCA)](https://docs.microsoft.com/previous-versions/windows/hardware/mca/ff540685(v=vs.85)).
-
- 
+For more detailed information about WHEA and how to implement WHEA on a hardware platform, see the **WHEA Platform Design Guide**. Platform vendors can obtain this design guide by sending email to <wheafb@microsoft.com>.
 
 ## In this section
-
-
-This section includes the following topics:
 
 [Introduction to the Windows Hardware Error Architecture](introduction-to-the-windows-hardware-error-architecture.md)
 
@@ -53,11 +46,9 @@ This section includes the following topics:
 [Windows Hardware Error Architecture Debugger Extensions](windows-hardware-error-architecture-debugger-extensions.md)
 
 ## Related topics
-[Windows Hardware Error Architecture ACPI Table Specification](http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
+
+[Windows Hardware Error Architecture ACPI Table Specification](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
+
 [Hardware Management and Security](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614601(v=vs.85))  
+
 [**Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR (Windows Debuggers)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x124---whea-uncorrectable-error)  
-
-
-
-
-

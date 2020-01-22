@@ -5,9 +5,9 @@ ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+# Time Travel Debugging - Replay a trace
 
-# Time Travel Debugging - Replay a trace 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
 This section describes how to replay time travel traces, navigating forwards and backwards in time.
 
@@ -213,11 +213,4 @@ For information on the `!tt`, `!positions` and the `!index` commands see [Time T
 [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
 
 [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
-
----
-
-
-
-
-
 

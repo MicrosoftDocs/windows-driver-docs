@@ -54,7 +54,7 @@ The DEVPKEY_Device_PowerData device property represents power information about 
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_PowerData. The value of DEVPKEY_Device_PowerData contains a [**CM_POWER_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-cm_power_data_s) structure.
+Windows sets the value of DEVPKEY_Device_PowerData. The value of DEVPKEY_Device_PowerData contains a [**CM_POWER_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-cm_power_data_s) structure.
 
 You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PowerData.
 
@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**CM_POWER_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-cm_power_data_s)
+[**CM_POWER_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-cm_power_data_s)
 
 [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 

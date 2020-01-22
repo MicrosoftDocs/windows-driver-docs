@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # WdfWaitlockRelease rule (kmdf)
 
 
-The **WdfWaitlockRelease** rule specifies that calls to [**WdfWaitLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff551168) and [**WdfWaitLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfsync/nf-wdfsync-wdfwaitlockrelease) are used in a balanced way within a KMDF event callback function. When the KMDF event callback function returns, the driver should not hold the framework spin lock object that was obtained by a previous call to **WdfWaitLockAcquire**.
+The **WdfWaitlockRelease** rule specifies that calls to [**WdfWaitLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff551168) and [**WdfWaitLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfwaitlockrelease) are used in a balanced way within a KMDF event callback function. When the KMDF event callback function returns, the driver should not hold the framework spin lock object that was obtained by a previous call to **WdfWaitLockAcquire**.
 
 |              |      |
 |--------------|------|
@@ -52,7 +52,7 @@ Applies to
 ----------
 
 [**WdfWaitLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff551168)
-[**WdfWaitLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfsync/nf-wdfsync-wdfwaitlockrelease)
+[**WdfWaitLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfwaitlockrelease)
  
 
  

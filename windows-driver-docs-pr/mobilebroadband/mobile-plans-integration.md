@@ -33,7 +33,7 @@ Validate that you can run 50 end-to-end user cases that you defined. For example
 
 ### Walled Garden
 
-When the user has no balance, ensure that the user can access Walled Garden sites defined in [Walled Garden](mobile-plans-device-experience.md#walled-garden).
+When the user has no balance, ensure that the user can access Walled Garden sites defined in [Walled Garden](mobile-plans-walled-garden.md).
 
 ### Getting Balance
 

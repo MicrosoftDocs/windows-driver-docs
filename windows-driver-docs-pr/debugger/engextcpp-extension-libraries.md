@@ -29,7 +29,7 @@ When the extension library is loaded, the [**Initialize**](https://docs.microsof
 
 ### <span id="extension_commands"></span><span id="EXTENSION_COMMANDS"></span>Extension Commands
 
-The [**EXT\_CLASS**](https://docs.microsoft.com/previous-versions/ff544508(v=vs.85)) class can contain a number of methods that are used to execute extension commands. Each extension command is declared in the EXT\_CLASS class by using the [**EXT\_COMMAND\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-ext_command_method) macro. The implementation of a command is defined by using the [**EXT\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-ext_command) macro.
+The [**EXT\_CLASS**](https://docs.microsoft.com/previous-versions/ff544508(v=vs.85)) class can contain a number of methods that are used to execute extension commands. Each extension command is declared in the EXT\_CLASS class by using the [**EXT\_COMMAND\_METHOD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command_method) macro. The implementation of a command is defined by using the [**EXT\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command) macro.
 
 ### <span id="known_structures"></span><span id="KNOWN_STRUCTURES"></span>Known Structures
 

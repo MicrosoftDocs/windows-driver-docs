@@ -40,7 +40,7 @@ class MPIO_CONTROLLER_CONFIGURATION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_CONTROLLER\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mpiowmi/ns-mpiowmi-_mpio_controller_configuration) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_CONTROLLER\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_controller_configuration) data structure. There are no methods associated with this WMI class.
 
  
 

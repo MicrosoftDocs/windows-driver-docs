@@ -15,7 +15,6 @@ ms.localizationpriority: medium
 
 # (Developer Content) Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE
 
-
 The DRIVER\_POWER\_STATE\_FAILURE bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 
 > [!IMPORTANT]
@@ -286,10 +285,6 @@ To help you determine the cause of the error, consider the following questions:
 - What symbols are on the stack?
 
 - Refer to the additional techniques described above under parameter 0x3.
-
-**Time Travel Trace**
-
-If the bug check can be reproduced on demand, investigate the possibility of taking a time travel trace using WinDbg Preview. For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
 ## Remarks
 ----------

@@ -30,7 +30,7 @@ The following standard INF keywords are mandatory for connectionless NDIS 6.0 an
 
 -   **\*PhysicalMediaType**
 
-If the mandatory keywords are missing from the driver's INF file, NDIS does not call the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function.
+If the mandatory keywords are missing from the driver's INF file, NDIS does not call the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
 
 Standardized keywords are required for NDIS 6.0 and later miniport drivers if both of the following are true:
 
@@ -46,7 +46,7 @@ This section specifies the INF keywords that are exposed in the user interface. 
 
 Within an INF file, definitions for these keywords are placed with the other definitions for the advanced properties page. For more information about advanced properties, see [Specifying Configuration Parameters for the Advanced Properties Page](specifying-configuration-parameters-for-the-advanced-properties-page.md).
 
-All standardized keyword names start with an asterisk (**\\***). This naming convention enables you to easily distinguish standardized names from non-standard names.
+All standardized keyword names start with an asterisk (**\***). This naming convention enables you to easily distinguish standardized names from non-standard names.
 
 There are three types of standardized keyword data that are exposed in the user interface:
 

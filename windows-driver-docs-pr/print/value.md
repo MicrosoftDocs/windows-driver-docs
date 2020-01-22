@@ -43,7 +43,7 @@ The WSD `Value` construct allows you to extend the bidi communications schema wi
 </tr>
 <tr class="odd">
 <td><p><strong>type</strong></p></td>
-<td><p>The type of data in the <code>Value</code> construct, a value in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
+<td><p>The type of data in the <code>Value</code> construct, a value in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type" data-raw-source="[&lt;strong&gt;BIDI_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type)"><strong>BIDI_TYPE</strong></a> enumeration.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>xmllang</strong></p></td>
@@ -65,7 +65,7 @@ The `Value` construct is defined in WsdBidi.xsd.
 In the following code example, the WSD monitor determines the size, as an integer value, of RAM memory.
 
 ```cpp
-<Schema xmlns:nprt='http://schemas.microsoft.com/windows/2005/05/wdp/print'>
+<Schema xmlns:nprt='https://schemas.microsoft.com/windows/2005/05/wdp/print'>
   <Property name='Printer'>
     <Property name='DeviceInfo'>
       <Value name='PrinterString' 

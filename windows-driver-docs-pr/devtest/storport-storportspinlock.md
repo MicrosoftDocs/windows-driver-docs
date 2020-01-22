@@ -51,8 +51,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportacquirespinlock)
-[**StorPortReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportreleasespinlock)
+[**StorPortAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock)
+[**StorPortReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportreleasespinlock)
  
 
  

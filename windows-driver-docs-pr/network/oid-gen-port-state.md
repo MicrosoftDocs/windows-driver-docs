@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # OID\_GEN\_PORT\_STATE
 
 
-As a query, overlying drivers use the OID\_GEN\_PORT\_STATE OID to get the current state of the port that is specified in the **PortNumber** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure.
+As a query, overlying drivers use the OID\_GEN\_PORT\_STATE OID to get the current state of the port that is specified in the **PortNumber** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure.
 
 **Version Information**
 
@@ -26,7 +26,7 @@ Remarks
 
 NDIS handles this OID and miniport drivers do not receive this OID query.
 
-If the query succeeds, NDIS returns NDIS\_STATUS\_SUCCESS and returns the port state information in an [**NDIS\_PORT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_port_state) structure.
+If the query succeeds, NDIS returns NDIS\_STATUS\_SUCCESS and returns the port state information in an [**NDIS\_PORT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_state) structure.
 
 Requirements
 ------------
@@ -47,9 +47,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_PORT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_port_state)
+[**NDIS\_PORT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_state)
 
  
 

@@ -22,7 +22,7 @@ Miniport drivers that returned VP\_FLAGS\_PROTECTED in [**VIDEOPARAMETERS**](htt
 
 -   If **dwCPCommand** is VP\_CP\_CMD\_CHANGE and the copy protection key in **dwCPKey** is valid, the miniport driver should change copy protection based on the data in based on the trigger data in **bCP\_APSTriggerBits**.
 
-Miniport drivers of devices that do not have copy protection hardware should simply return NO\_ERROR in the **Status** field of the [**VRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/ns-video-_video_request_packet)'s **StatusBlock**.
+Miniport drivers of devices that do not have copy protection hardware should simply return NO\_ERROR in the **Status** field of the [**VRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet)'s **StatusBlock**.
 
  
 

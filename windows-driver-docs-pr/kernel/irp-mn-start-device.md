@@ -22,16 +22,16 @@ When Sent
 
 The PnP manager sends this IRP after it has assigned hardware resources, if any, to the device. The device may have been recently enumerated and is being started for the first time, or the device may be restarting after being stopped for resource rebalancing.
 
-Sometimes the PnP manager sends an **IRP\_MN\_START\_DEVICE** to a device that is already started, supplying a different set of resources than the device is currently using. A driver initiates this action by calling [**IoInvalidateDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinvalidatedevicestate) and responding to the subsequent [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md) request with the PNP\_RESOURCE\_REQUIREMENTS\_CHANGED flag set. A bus driver might use this mechanism, for example, to open a new aperture on a PCI-to-PCI bridge.
+Sometimes the PnP manager sends an **IRP\_MN\_START\_DEVICE** to a device that is already started, supplying a different set of resources than the device is currently using. A driver initiates this action by calling [**IoInvalidateDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate) and responding to the subsequent [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](irp-mn-query-pnp-device-state.md) request with the PNP\_RESOURCE\_REQUIREMENTS\_CHANGED flag set. A bus driver might use this mechanism, for example, to open a new aperture on a PCI-to-PCI bridge.
 
 The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in the context of a system thread.
 
 ## Input Parameters
 
 
-The **Parameters.StartDevice.AllocatedResources** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure points to a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in raw form. Use the raw resources to program the device.
+The **Parameters.StartDevice.AllocatedResources** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure points to a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in raw form. Use the raw resources to program the device.
 
-**Parameters.StartDevice.AllocatedResourcesTranslated** points to a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in translated form. Use the translated resources to connect the interrupt vector, map I/O space, and map memory.
+**Parameters.StartDevice.AllocatedResourcesTranslated** points to a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) describing the hardware resources that the PnP manager assigned to the device. This list contains the resources in translated form. Use the translated resources to connect the interrupt vector, map I/O space, and map memory.
 
 ## Output Parameters
 

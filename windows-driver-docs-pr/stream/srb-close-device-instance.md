@@ -36,7 +36,7 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-Most adapters do not support multiple instances, so in those cases the **FilterInstanceExtensionSize** field in the [**HW\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_initialization_data) structure should be set to zero and should never receive this command.
+Most adapters do not support multiple instances, so in those cases the **FilterInstanceExtensionSize** field in the [**HW\_INITIALIZATION\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_initialization_data) structure should be set to zero and should never receive this command.
 
  
 

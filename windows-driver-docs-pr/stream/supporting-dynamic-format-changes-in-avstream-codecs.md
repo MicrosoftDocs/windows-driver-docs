@@ -28,9 +28,9 @@ The following sequence of events occurs when a dynamic format change originates 
 
 5.  When the HW MFT receives the KSEVENT notification, it transitions the output pin from **KSSTATE\_RUN** to KSSTATE\_STOP.
 
-6.  The HW MFT then queries the driver for available media types, which translates into a call to the driver's [*AVStrMiniIntersectHandlerEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnksintersecthandlerex) intersection handler. The driver should report preferred output media types in the order of preference.
+6.  The HW MFT then queries the driver for available media types, which translates into a call to the driver's [*AVStrMiniIntersectHandlerEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnksintersecthandlerex) intersection handler. The driver should report preferred output media types in the order of preference.
 
-7.  The user-mode client selects a media type and sets the new media type on the output pin of the HW MFT. This results in a call to the driver's [*AVStrMiniPinSetDataFormat*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnkspinsetdataformat) dispatch routine. If the driver accepts the format by returning STATUS\_SUCCESS, streaming resumes with the new media type. If the call fails, the components involved in the format change must renegotiate media type.
+7.  The user-mode client selects a media type and sets the new media type on the output pin of the HW MFT. This results in a call to the driver's [*AVStrMiniPinSetDataFormat*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdataformat) dispatch routine. If the driver accepts the format by returning STATUS\_SUCCESS, streaming resumes with the new media type. If the call fails, the components involved in the format change must renegotiate media type.
 
 8.  The HW MFT checks if there is any change in the connected medium. If there is no change, it sets the selected media type on the pin and puts it into KSSTATE\_RUN. If there is a change in the connected medium, the HW MFT destroys the pin and recreates it with the newly selected media type and medium. The MFT then puts the pin into KSSTATE\_RUN.
 
@@ -79,9 +79,9 @@ KSEVENT_SET PinEventTable[] =
 
 Each pin should expose this event in its pin descriptor. The event is of type KSEVENTF\_EVENT\_HANDLE.
 
-Before the driver generates this event, it should set the preferred media types for the KS pin based on the currently selected input media type. You can do this by using the [**\_KsEdit**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-_ksedit) function on the pin's descriptor.
+Before the driver generates this event, it should set the preferred media types for the KS pin based on the currently selected input media type. You can do this by using the [**\_KsEdit**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-_ksedit) function on the pin's descriptor.
 
-To generate the event, drivers should call [**KsGenerateEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksgenerateevents).
+To generate the event, drivers should call [**KsGenerateEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksgenerateevents).
 
  
 

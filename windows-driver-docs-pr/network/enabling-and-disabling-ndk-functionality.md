@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Enabling and Disabling NDK Functionality
 
 
-To enable or disable NDK functionality, NDIS issues an [OID\_NDK\_SET\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-ndk-set-state) OID request. An NDK-capable miniport driver must register support for this OID in its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_oid_request) function.
+To enable or disable NDK functionality, NDIS issues an [OID\_NDK\_SET\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-ndk-set-state) OID request. An NDK-capable miniport driver must register support for this OID in its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function.
 
 ## Determining whether NDK functionality can be enabled
 
@@ -38,13 +38,13 @@ This state change can be triggered by an [OID\_NDK\_SET\_STATE](https://docs.mic
 
 To enable or disable its NDK functionality, the miniport driver must send a **NetEventNDKEnable** or **NetEventNDKDisable** Plug and Play (PnP) event to NDIS.
 
-To send the PnP event, the miniport driver calls the [**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismnetpnpevent) function, setting the **NetPnPEvent** member of the [**NET\_PNP\_EVENT\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_pnp_event_notification) structure that the *NetPnPEvent* parameter points to as follows:
+To send the PnP event, the miniport driver calls the [**NdisMNetPnPEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismnetpnpevent) function, setting the **NetPnPEvent** member of the [**NET\_PNP\_EVENT\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification) structure that the *NetPnPEvent* parameter points to as follows:
 
 -   **NetEventNDKEnable** if NDK functionality is to be enabled.
 
 -   **NetEventNDKDisable** if NDK functionality is to be disabled.
 
-The **NetEventNDKDisable** PnP event triggers NDIS and upper layer drivers to start closing their opened [**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndkpi/ns-ndkpi-_ndk_adapter) instances over the adapter where the NDK functionality is being disabled. The PnP event will remain pending until all of the opened **NDK\_ADAPTER** instances over the adapter are closed.
+The **NetEventNDKDisable** PnP event triggers NDIS and upper layer drivers to start closing their opened [**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) instances over the adapter where the NDK functionality is being disabled. The PnP event will remain pending until all of the opened **NDK\_ADAPTER** instances over the adapter are closed.
 
 ## Related topics
 

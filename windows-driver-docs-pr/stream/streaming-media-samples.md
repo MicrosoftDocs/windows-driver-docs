@@ -11,14 +11,15 @@ ms.localizationpriority: medium
 
 # Streaming Media Samples
 
+You can browse and download individual Windows 10 driver samples on the [Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk). You can also clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
 
-### <a href="" id="streaming-media-samples"></a>
+Earlier versions of Windows driver samples are archived here:
 
-Starting with Windows 10, the [Windows driver samples repository](https://go.microsoft.com/fwlink/p/?LinkId=616507) is available on GitHub.
+- [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
 
-The [Windows 8 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) and the [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) can be downloaded from the [Windows Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=616506).
+- [Windows 8 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616509)
 
-In Windows 7, samples are included in the Windows Driver Kit (WDK).
+For Windows 7, samples were included in the Windows Driver Kit (WDK).
 
 <table style="width:100%;">
 <colgroup>
@@ -92,13 +93,3 @@ In Windows 7, samples are included in the Windows Driver Kit (WDK).
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

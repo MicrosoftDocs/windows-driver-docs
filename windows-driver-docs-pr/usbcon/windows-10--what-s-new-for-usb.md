@@ -48,7 +48,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
 -   **New set of programming interfaces for developing a USB host controller driver.**
 
-    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
+    You can develop a host controller if your hardware is not xHCI specification-compliant or your are writing a virtual host controller, such as a controller that routes USB traffic over a TCP connection to the peripherals attached to a device. Your host controller driver is a client to the USB host controller extension, which is a system-supplied driver that follows the framework class extension model. Within the [Microsoft USB 3.0 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ddi/index#usb-3-0-driver-stack), UCX provides functionality to assist the host controller driver in managing a USB host controller device.
 
     [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)
 
@@ -64,7 +64,7 @@ This topic highlights the new features and improvements for Universal Serial Bus
 
     [Tasks for a function controller client driver](function-client-driver.md)
 
-    [User mode services to UFX programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+    [User mode services to UFX programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
     [USB function class driver to UFX programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188008(v=vs.85))
 

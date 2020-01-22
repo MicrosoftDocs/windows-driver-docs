@@ -28,7 +28,7 @@ class MSFC_FC4STATISTICS {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_FC4STATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics)
+[**MSFC\_FC4STATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics)
 
 There are no methods associated with this WMI class.
 

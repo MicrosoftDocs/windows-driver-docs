@@ -27,7 +27,7 @@ This section includes:
 
 [Survey of Verification Tools](survey-of-verification-tools.md)
 
-[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 [Checked Build of Windows](checked-build-of-windows.md)
 

@@ -77,7 +77,7 @@ The following C# code example demonstrates how to upload a package to Azure Blob
 
 The following code examples demonstrates how to use the Microsoft Hardware API:
 
-* [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
+* [C# sample](https://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
 
 ## Data resources
 

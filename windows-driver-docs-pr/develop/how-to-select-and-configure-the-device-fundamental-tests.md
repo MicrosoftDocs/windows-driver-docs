@@ -38,7 +38,7 @@ The [Device Fundamentals Tests](https://docs.microsoft.com/windows-hardware/driv
 
 You can edit the run-time parameters for many of the Device Fundamentals tests. In the Driver Test Group window, an arrow (») next to a test name indicates that the test has parameters that you can change. Click the arrow (») to display the run-time parameters.
 
-One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index) [SDEL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) query that identifies the target devices. You can specify a particular device for testing, for example:
+One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index) [SDEL](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) query that identifies the target devices. You can specify a particular device for testing, for example:
 
 **DeviceID=’USB\\ROOT\_HUB\\4&1CD5D022&0’** selects only the device for testing with the specified **DeviceID**.
 
@@ -61,14 +61,15 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="DQ"></span><span id="dq"></span><em>DQ</em></p></td>
-<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/index" data-raw-source="[&lt;strong&gt;WDTF&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index)"><strong>WDTF</strong></a><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index" data-raw-source="[SDEL](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)">SDEL</a> query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
+<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/index" data-raw-source="[&lt;strong&gt;WDTF&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index)"><strong>WDTF</strong></a><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[SDEL](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)">SDEL</a> query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
 <p>Common examples:</p>
 <p></p>
 <dl>
 <dt><span id="To_test_all_devices_that_were_installed_with_a_specific_INF_File_"></span><span id="to_test_all_devices_that_were_installed_with_a_specific_inf_file_"></span><span id="TO_TEST_ALL_DEVICES_THAT_WERE_INSTALLED_WITH_A_SPECIFIC_INF_FILE_"></span>To test all devices that were installed with a specific INF File:</dt>
 <dd><p><strong>INF::FileName=</strong><em>INF_File_Name</em></p>
-<p>For example, <strong>INF::OriginalInfFileName='%InfFileName%'</strong></p>
-<p>This is the default value.</p>
+<p>For example, <strong>INF::OriginalInfFileName='KMDFTest.inf'</strong></p>
+ <p><strong>Inf::OriginalInFileName can be used with any INF.</strong></p>
+
 </dd>
 <dt><span id="To_test_a_device_with_a_specific_Device_Id__"></span><span id="to_test_a_device_with_a_specific_device_id__"></span><span id="TO_TEST_A_DEVICE_WITH_A_SPECIFIC_DEVICE_ID__"></span>To test a device with a specific Device Id: </dt>
 <dd><p><strong>DeviceId=’</strong><em>DeviceId</em><strong>’</strong></p>
@@ -77,13 +78,51 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <dt><span id="_To_test_a_device_with_a_specific_interface_"></span><span id="_to_test_a_device_with_a_specific_interface_"></span><span id="_TO_TEST_A_DEVICE_WITH_A_SPECIFIC_INTERFACE_"></span> To test a device with a specific interface:</dt>
 <dd><p><strong>Interfaces::</strong><em>InterfaceGUID</em></p>
 </dd>
+ 
 <dt><span id="To_test_a_device_with_a_specific_driver_letter_"></span><span id="to_test_a_device_with_a_specific_driver_letter_"></span><span id="TO_TEST_A_DEVICE_WITH_A_SPECIFIC_DRIVER_LETTER_"></span>To test a device with a specific driver letter:</dt>
 <dd><p><strong>Volume::DriverLetter=’</strong><em>DriveLetter</em><strong>’</strong></p>
 <p>For example, <strong>Volume::DriverLetter=’c:\’</strong></p>
 </dd>
 <dt><span id="To_test_a_device_with_a_specific_driver____"></span><span id="to_test_a_device_with_a_specific_driver____"></span><span id="TO_TEST_A_DEVICE_WITH_A_SPECIFIC_DRIVER____"></span>To test a device with a specific driver: </dt>
 <dd><p><strong>DriverBinaryNames=</strong><em>mydriver.sys</em></p>
+
+Where <strong>KMDFTest.inf</strong> is the inf used to install the driver. You can also use the folloiwng target the devices(s) that use <strong>KMDFTest.sys</strong> driver.</p>
+(<strong>DriverBinaryNames</strong>='<strong>KMDFTest.sys</strong>') works.
+
+After setting the SDEL correctly you should see the following output on the console when you run a test.
+
+WDTF_TARGETS              : INFO  :  - Query("IsDevice AND ((Inf::OriginalInfFileName='KMDFTest.inf'))")
+WDTF_TARGETS              : INFO  :          Target: KMDFTest Device ROOT\SAMPLE\0000 ​
+WDTF_TEST                 : INFO  : WARNING: The test is not enforcing that Driver Verifier is enabled.​
+WDTF_TEST                 : INFO  : DV is enabled with Flag:=0x209bb​
+WDTF_TEST                 : INFO  : DV is successfully enabled for all drivers of this devnode(UniqueTargetName):=KMDFTest Device ROOT\SAMPLE\0000 ​
+WDTF_TARGET               : INFO  :  - GetInterface("Support")​
+WDTF_TARGET               : INFO  :          Target: DESKTOP-2OVFH3G​
+WDTF_TARGETS              : INFO  :  - Query("IsDevice")​
+WDTF_TARGETS              : INFO  :          Target: KMDFTest Device ROOT\SAMPLE\0000 ​
+WDTF_TARGETS              : INFO  :  - GetRelations("below-or-self/","IsDevice")​
+WDTF_TARGETS              : INFO  :          Target: KMDFTest Device ROOT\SAMPLE\0000 ​
+WDTF_TARGETS              : INFO  :  - GetInterfacesIfExist("SimpleIOStressProc")​
+WDTF_SIMPLE_IO            : INFO  :  - For Target:KMDFTest Device ROOT\SAMPLE\0000  no Simple IO Interface was found.​
+WDTF_SIMPLE_IO            : INFO  :  - For Target:KMDFTest Device ROOT\SAMPLE\0000  WDTF will use the ANY Simple IO Interface.​
+
+See attached files config and log files for more details. 
+WDTF_TARGETS              : INFO  :          Target: KMDFTest Device ROOT\SAMPLE\0000 ​
+WDTF_TEST                 : INFO  : Perform 1 cycle(s) of I/O termination test​
+WDTF_TEST                 : INFO  : I/O termination cycle #1​
+WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - StartAsync(KMDFTest Device ROOT\SAMPLE\0000 )​
+WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - WaitAsyncCompletion(KMDFTest Device ROOT\SAMPLE\0000 )​
+WDTF_SIMPLE_IO            : INFO  :  - For Target:KMDFTest Device ROOT\SAMPLE\0000  no Simple IO Interface was found.​
+WDTF_SIMPLE_IO            : INFO  :  - For Target:KMDFTest Device ROOT\SAMPLE\0000  WDTF will use the ANY Simple IO Interface.​
+WDTF_SIMPLE_IO            : INFO  :  - Open(KMDFTest Device ROOT\SAMPLE\0000 ) Try count 1​
+WDTF_SUPPORT              : INFO  :  - WaitForMinutes : 1​
+WDTF_SIMPLE_IO            : INFO  :  - PerformIO(KMDFTest Device ROOT\SAMPLE\0000 ) Count 1​
+WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - Terminate(KMDFTest Device ROOT\SAMPLE\0000 ) process
+
+
 </dd>
+ 
+ 
 <dt><span id="____To_test_all_device_of_a_specific_device_Class___________________"></span><span id="____to_test_all_device_of_a_specific_device_class___________________"></span><span id="____TO_TEST_ALL_DEVICE_OF_A_SPECIFIC_DEVICE_CLASS___________________"></span> To test all device of a specific device Class: </dt>
 <dd><p>For example, <strong>Class=CDROM</strong> would test all device of class CDROM.</p>
 <p>For example, <strong>ClassGUID= {36fc9e60-c465-11cf-8056-444553540000}</strong> would test all the devices whose class GUID matches the specified GUID. In this case, the GUID is for the USB class.</p>

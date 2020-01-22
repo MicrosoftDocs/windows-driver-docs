@@ -21,7 +21,7 @@ For more information see the following topics:
 
 -   [**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-preferred-multicarrier-providers)
 
--   [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)
+-   [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)
 
  
 

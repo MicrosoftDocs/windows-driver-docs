@@ -21,11 +21,13 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 ### Extended validation code signing certificates
 
+- [Buy an SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+
 - [Buy a Symantec EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393248)
 
 - [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)
 
-- [Buy an Entrust EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843068)
+- [Buy an Entrust EV code signing cert](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
 
 - [Buy a GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
 
@@ -50,14 +52,15 @@ Once the certificate authority has verified your contact information and your ce
 
 - If you’re setting up a new Partner Center account, follow the steps in [Register for the Hardware Program](register-for-the-hardware-program.md).
 
-- If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/update-a-code-signing-certificate).
+- If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](update-a-code-signing-certificate.md).
 
 ## Code Signing FAQ
 
 This section provides answers to frequently asked questions about code signing for Windows 10. Additional code signing information is available on the Windows Hardware Certification blog.
 
-- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
-- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
+- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10/ba-p/364859)
+- [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894)
+- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Update-on-Sysdev-EV-Certificate-requirement/ba-p/364879)
 
 ### HLK Tested and Dashboard Signed Drivers
 
@@ -71,7 +74,7 @@ This section provides answers to frequently asked questions about code signing f
 
 ### Windows 10 Earlier Certificate Transition Signing
 
-- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1809, these will no longer work. 
+- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1809, these will no longer work.
 - A driver signed with any certificate issued after July 29th, 2015, with time stamping, is not recommended for Windows 10.
 - A driver signed with any certificate that expires after July 29th, 2015, without time stamping, will work on Windows 10 until the certificate expires.
 

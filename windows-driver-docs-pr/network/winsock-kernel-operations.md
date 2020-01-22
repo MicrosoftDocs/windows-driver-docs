@@ -1,6 +1,6 @@
 ---
-title: Winsock Kernel Operations
-description: Winsock Kernel Operations
+title: Winsock Kernel Operations Topics
+description: Winsock Kernel Operations Topics
 ms.assetid: 5e336c62-8808-418e-8bd4-d54c4c747854
 keywords:
 - Winsock Kernel WDK networking , operations
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Winsock Kernel Operations
+# Winsock Kernel Operations Topics
 
 
 This section discusses Winsock Kernel (WSK) operations and includes the following topics:

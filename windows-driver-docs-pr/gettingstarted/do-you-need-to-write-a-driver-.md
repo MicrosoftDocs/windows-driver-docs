@@ -14,7 +14,7 @@ Microsoft Windows contains built-in drivers for many device types. If there is a
 ## <span id="Built-in_drivers_for_USB_devices"></span><span id="built-in_drivers_for_usb_devices"></span><span id="BUILT-IN_DRIVERS_FOR_USB_DEVICES"></span>Built-in drivers for USB devices
 
 
-If your device belongs to a device class that is defined by the USB Device Working Group (DWG), there may already be an existing Windows USB class driver for it. For more information, see [Drivers for the Supported USB Device Classes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+If your device belongs to a device class that is defined by the USB Device Working Group (DWG), there may already be an existing Windows USB class driver for it. For more information, see [Drivers for the Supported USB Device Classes](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 ## <span id="Built-in_drivers_for_other_devices"></span><span id="built-in_drivers_for_other_devices"></span><span id="BUILT-IN_DRIVERS_FOR_OTHER_DEVICES"></span>Built-in drivers for other devices
 

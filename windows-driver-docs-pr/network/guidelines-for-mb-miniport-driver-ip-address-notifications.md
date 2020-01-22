@@ -23,7 +23,7 @@ When miniport drivers specify *EnableDhcp* equal to zero they are required to pe
 
 IP addresses and default gateways that are set by using the IP Helper API persist network connect or disconnect events, or both. Therefore, if the new IP address or default gateway, or both, values are different than the values currently set, the miniport driver should first clear the previous values before setting new values on a network connection event.
 
-**Note**  Miniport drivers can find the **LUID** and **Index** of the MB interface from the **NetLuid** or **IfIndex** members of [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_init_parameters) structure that is passed to the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function.
+**Note**  Miniport drivers can find the **LUID** and **Index** of the MB interface from the **NetLuid** or **IfIndex** members of [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_init_parameters) structure that is passed to the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
 
  
 
@@ -35,7 +35,7 @@ Miniport drivers should use following procedure to be notified when the addresse
 
 1.  During **driver initialization**, miniport drivers should specify a callback function to register for IP interface change notifications using [**NotifyIpInterfaceChange**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568805(v=vs.85)). Windows will call the function wheneven an IP interface is added, deleted or changed.
 
-2.  During **adapter initialization**, miniport drivers should save in miniport driver's local adapter context the **LUID** value from the [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_init_parameters) structure that is passed to the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function. The value contains the *NetLuid* which identifies adapter's interface, which is used in the notification callback.
+2.  During **adapter initialization**, miniport drivers should save in miniport driver's local adapter context the **LUID** value from the [**NDIS\_MINIPORT\_INIT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_init_parameters) structure that is passed to the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. The value contains the *NetLuid* which identifies adapter's interface, which is used in the notification callback.
 
 3.  In the **notification callback**, Windows passes the following parameters to the notification function registered with [**NotifyIpInterfaceChange**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568805(v=vs.85)):
 

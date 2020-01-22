@@ -22,7 +22,7 @@ typedef struct _CO_PVC {
 The members of this structure contain the following information:
 
 **NdisAfHandle**  
-Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclopenaddressfamilyex).
+Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex).
 
 **PvcParameters**  
 A formatted [CO_SPECIFIC_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545396(v=vs.85)) structure. This structure contains protocol-specific parameters that describe the PVC.

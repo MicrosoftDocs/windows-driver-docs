@@ -1,50 +1,47 @@
 - name: "General-Purpose I/O (GPIO) Driver Design Guide"
+  href: index.md
+- name: "GPIO Driver Support Overview"
+  href: gpio-driver-support-overview.md
+- name: "GpioClx I/O and Interrupt Interfaces"
+  href: gpioclx-i-o-and-interrupt-interfaces.md
+- name: "GPIO-Based Hardware Resources"
 # Auto-expanded node
   items: 
-  - name: "General-Purpose I/O (GPIO) Driver Design Guide"
-    href: index.md
-  - name: "GPIO Driver Support Overview"
-    href: gpio-driver-support-overview.md
-  - name: "GpioClx I/O and Interrupt Interfaces"
-    href: gpioclx-i-o-and-interrupt-interfaces.md
   - name: "GPIO-Based Hardware Resources"
+    href: gpio-based-hardware-resources.md
+  - name: "Connecting a KMDF Driver to GPIO I/O Pins"
+    href: connecting-a-kmdf-driver-to-gpio-i-o-pins.md
+- name: "GPIO Interrupts"
 # Auto-expanded node
-    items: 
-    - name: "GPIO-Based Hardware Resources"
-      href: gpio-based-hardware-resources.md
-    - name: "Connecting a KMDF Driver to GPIO I/O Pins"
-      href: connecting-a-kmdf-driver-to-gpio-i-o-pins.md
+  items: 
   - name: "GPIO Interrupts"
+    href: gpio-interrupts.md
+  - name: "Primary and Secondary Interrupts"
+    href: primary-and-secondary-interrupts.md
+  - name: "GPIO-Based Interrupt Resources"
+    href: gpio-based-interrupt-resources.md
+  - name: "Passive-Level ISRs"
+    href: passive-level-isrs.md
+  - name: "Interrupt-Related Callbacks"
+    href: interrupt-related-callbacks.md
+  - name: "Interrupt Synchronization for GPIO Controller Drivers"
+    href: interrupt-synchronization-for-gpio-controller-drivers.md
+  - name: "Enabling and Disabling Shared GPIO Interrupts"
+    href: enabling-and-disabling-shared-gpio-interrupts.md
+  - name: "GPIO Interrupt Masks"
+    href: gpio-interrupt-masks.md
+- name: "GpioClx DDI"
 # Auto-expanded node
-    items: 
-    - name: "GPIO Interrupts"
-      href: gpio-interrupts.md
-    - name: "Primary and Secondary Interrupts"
-      href: primary-and-secondary-interrupts.md
-    - name: "GPIO-Based Interrupt Resources"
-      href: gpio-based-interrupt-resources.md
-    - name: "Passive-Level ISRs"
-      href: passive-level-isrs.md
-    - name: "Interrupt-Related Callbacks"
-      href: interrupt-related-callbacks.md
-    - name: "Interrupt Synchronization for GPIO Controller Drivers"
-      href: interrupt-synchronization-for-gpio-controller-drivers.md
-    - name: "Enabling and Disabling Shared GPIO Interrupts"
-      href: enabling-and-disabling-shared-gpio-interrupts.md
-    - name: "GPIO Interrupt Masks"
-      href: gpio-interrupt-masks.md
+  items: 
   - name: "GpioClx DDI"
-# Auto-expanded node
-    items: 
-    - name: "GpioClx DDI"
-      href: gpioclx-ddi.md
-    - name: "Driver Support Methods in the GpioClx DDI"
-      href: driver-support-methods-in-the-gpioclx-ddi.md
-    - name: "Optional and Required GPIO Callback Functions"
-      href: optional-and-required-gpio-callback-functions.md
-    - name: "GPIO Device Contexts"
-      href: gpio-device-contexts.md
-    - name: "Partitioning a GPIO Controller into Banks of Pins"
-      href: partitioning-a-gpio-controller-into-banks-of-pins.md
-    - name: "Implementation Issues for GPIO Controller Drivers"
-      href: implementation-issues-for-gpio-controller-drivers.md
+    href: gpioclx-ddi.md
+  - name: "Driver Support Methods in the GpioClx DDI"
+    href: driver-support-methods-in-the-gpioclx-ddi.md
+  - name: "Optional and Required GPIO Callback Functions"
+    href: optional-and-required-gpio-callback-functions.md
+  - name: "GPIO Device Contexts"
+    href: gpio-device-contexts.md
+  - name: "Partitioning a GPIO Controller into Banks of Pins"
+    href: partitioning-a-gpio-controller-into-banks-of-pins.md
+  - name: "Implementation Issues for GPIO Controller Drivers"
+    href: implementation-issues-for-gpio-controller-drivers.md

@@ -63,7 +63,7 @@ The actions taken by bus driver depend on the device power level that the power 
 
     1.  Suspends the device's USB port by setting the PORT\_SUSPEND feature.
     2.  Completes the device's wait wake IRP with STATUS\_POWER\_STATE\_INVALID, if one is pending.
-    3.  Completes the device's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
+    3.  Completes the device's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
 
 ## Changing the Power State of a Composite Device
 
@@ -86,7 +86,7 @@ A client driver for an interface on a composite device must share the power stat
     The bus driver performs the following tasks:
 
     1.  Completes the client driver's wait wake IRP (IRP\_MN\_WAIT\_WAKE) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
-    2.  Completes the client driver's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
+    2.  Completes the client driver's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
 
 The generic parent driver suspends the USB port for the device when one of the following conditions is true:
 

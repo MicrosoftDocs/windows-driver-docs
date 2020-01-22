@@ -21,7 +21,7 @@ To activate diagnostics, add the **/debug** flag after a **/check** command.  Fo
 msbuild /t:sdv /p:Inputs="/check:* /debug" mydriver.VcxProj /p:Configuration="Release" /p:Platform=x64
 ```
 
-Enabling diagnostics will result in significantly more output to the command window, as wel as the creation of specific log files.
+Enabling diagnostics will result in significantly more output to the command window, as well as the creation of specific log files.
 
 ### <span id="enabling_diagnostics"></span><span id="ENABLING_DIAGNOSTICS"></span>Understanding Diagonistics
 

@@ -20,7 +20,7 @@ Starting with Windows 8, guarded mutexes are implemented as fast mutexes. In a 
 
 ### Fast Mutexes
 
-A fast mutex is represented by a [**FAST\_MUTEX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure. The driver allocates its own storage for a **FAST\_MUTEX** structure and then calls the [**ExInitializeFastMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exinitializefastmutex) routine to initialize the structure.
+A fast mutex is represented by a [**FAST\_MUTEX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure. The driver allocates its own storage for a **FAST\_MUTEX** structure and then calls the [**ExInitializeFastMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializefastmutex) routine to initialize the structure.
 
 A thread acquires a fast mutex by doing one of the following:
 
@@ -44,7 +44,7 @@ Starting with Windows 8, guarded mutexes and fast mutexes are implemented ident
 
 In versions of Windows before Windows 8, guarded mutexes are implemented differently from fast mutexes. Acquiring a fast mutex raises the current IRQL to APC\_LEVEL, while acquiring a guarded mutex enters a guarded region, which is a faster operation. For more information about guarded regions, see [Critical Regions and Guarded Regions](critical-regions-and-guarded-regions.md).
 
-A guarded mutex is represented by a [**KGUARDED\_MUTEX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure. The driver allocates its own storage for a **KGUARDED\_MUTEX** structure and then calls the [**KeInitializeGuardedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keinitializeguardedmutex) routine to initialize the structure.
+A guarded mutex is represented by a [**KGUARDED\_MUTEX**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure. The driver allocates its own storage for a **KGUARDED\_MUTEX** structure and then calls the [**KeInitializeGuardedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializeguardedmutex) routine to initialize the structure.
 
 A thread acquires a guarded mutex by doing one of the following:
 
@@ -52,11 +52,11 @@ A thread acquires a guarded mutex by doing one of the following:
 
 -   Calling [**KeTryToAcquireGuardedMutex**](https://msdn.microsoft.com/library/windows/hardware/ff553307) to try to acquire the guarded mutex without suspending the current thread. The routine returns immediately, regardless of whether the mutex has been acquired. **KeTryToAcquireGuardedMutex** returns **TRUE** if it successfully acquired the mutex for the caller; otherwise, it returns **FALSE**.
 
-A thread calls [**KeReleaseGuardedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleaseguardedmutex) to release a guarded mutex that was acquired by either **KeAcquireGuardedMutex** or **KeTryToAcquireGuardedMutex**.
+A thread calls [**KeReleaseGuardedMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseguardedmutex) to release a guarded mutex that was acquired by either **KeAcquireGuardedMutex** or **KeTryToAcquireGuardedMutex**.
 
 A thread that holds a guarded mutex implicitly runs inside a guarded region. **KeAcquireGuardedMutex** and **KeTryToAcquireGuardedMutex** enter the guarded region, while **KeReleaseGuardedMutex** exits it. All APCs are disabled while the thread holds a guarded mutex.
 
-If a code path is guaranteed to run with all APCs disabled, the driver can instead use [**KeAcquireGuardedMutexUnsafe**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551894(v=vs.85)) and [**KeReleaseGuardedMutexUnsafe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleaseguardedmutexunsafe) to acquire and release the guarded mutex. These routines do not enter or exit a guarded region and can be used only inside an already-existing guarded region or at IRQL = APC\_LEVEL.
+If a code path is guaranteed to run with all APCs disabled, the driver can instead use [**KeAcquireGuardedMutexUnsafe**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551894(v=vs.85)) and [**KeReleaseGuardedMutexUnsafe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseguardedmutexunsafe) to acquire and release the guarded mutex. These routines do not enter or exit a guarded region and can be used only inside an already-existing guarded region or at IRQL = APC\_LEVEL.
 
 Guarded mutexes cannot be acquired recursively. If a thread that is already holding a guarded mutex tries to acquire it, that thread will deadlock. Guarded mutexes can be used only in code that runs at IRQL &lt;= APC\_LEVEL.
 

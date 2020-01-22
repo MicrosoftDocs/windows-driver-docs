@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The volume mount process is typically triggered by a request to open a file on a logical volume (that is, a partition or dynamic volume) as follows:
 
-1.  A user application calls **CreateFile** to open a file. Or a kernel-mode driver calls [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile) or [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
+1.  A user application calls **CreateFile** to open a file. Or a kernel-mode driver calls [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile) or [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
 
 2.  The I/O Manager determines which logical volume is the target of the request and checks its device object to see whether it is mounted. If the VPB\_MOUNTED flag is set, the volume has been mounted by a file system.
 

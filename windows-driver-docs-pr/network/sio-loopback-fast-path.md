@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The **SIO\_LOOPBACK\_FAST\_PATH** socket I/O control code allows a WSK application to configure a TCP socket for faster operations on the loopback interface.
 
-To use this IOCTL, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To use this IOCTL, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -100,7 +100,7 @@ Only a subset of the TCP/IP socket options are supported when the **SIO\_LOOPBAC
 -   SO\_REUSEADDR
 -   TCP\_BSDURGENT
 
-A WSK application must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The application must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the application must check the IRP status and release all resources that it had previously allocated for the request.
+A WSK application must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The application must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the application must check the IRP status and release all resources that it had previously allocated for the request.
 
 For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel Functions](https://docs.microsoft.com/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions).
 

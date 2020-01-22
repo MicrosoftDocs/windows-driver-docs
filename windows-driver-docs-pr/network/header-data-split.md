@@ -1,6 +1,6 @@
 ---
-title: Header-Data Split
-description: Header-Data Split
+title: Introduction to Header-Data Split
+description: Introduction to Header-Data Split
 ms.assetid: ecbf4b08-8be4-42ca-8a65-1cb8124bee33
 keywords:
 - header-data split WDK
@@ -15,11 +15,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Header-Data Split
-
-
-
-
+# Introduction to Header-Data Split
 
 This section describes header-data split services that are available in NDIS 6.1 and later versions. *Header-data split* improves network performance by splitting the header and data in received Ethernet frames into separate buffers. Separating the headers and the data enables the headers to be collected together into smaller regions of memory. As a result, more headers will fit into a single memory page and more headers will fit into the system caches, so the overhead for memory accesses in the driver stack is reduced.
 

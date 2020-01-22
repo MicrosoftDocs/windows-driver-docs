@@ -17,13 +17,10 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # PCI driver programming guide
-
-
-## Supported PCIe features in Windows
-
 
 The following table summarizes the PCIe features that are supported by different versions of Windows. For details, see the specified sections in the [official PCIe specification](http://pcisig.com/specifications/review-zone).
 
@@ -99,28 +96,15 @@ The following table summarizes the PCIe features that are supported by different
 </tbody>
 </table>
 
-
-
-
-
 ## In this section
 
-
--   [PCI Power Management and Device Drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-power-management-and-device-drivers)
--   [Accessing PCI Device Configuration Space](https://docs.microsoft.com/windows-hardware/drivers/pci/accessing-pci-device-configuration-space)
--   [I/O Resource Usage Reduction](https://docs.microsoft.com/windows-hardware/drivers/pci/i-o-resource-usage-reduction)
--   [Order of Resources in Start-Device IRP](https://docs.microsoft.com/windows-hardware/drivers/pci/order-of-resources-in-start-device-irp)
--   [PCI Express FAQ for Graphics](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-express-faq-for-graphics)
--   [PCI Sample](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-sample)
-
+- [PCI Power Management and Device Drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-power-management-and-device-drivers)
+- [Accessing PCI Device Configuration Space](https://docs.microsoft.com/windows-hardware/drivers/pci/accessing-pci-device-configuration-space)
+- [I/O Resource Usage Reduction](https://docs.microsoft.com/windows-hardware/drivers/pci/i-o-resource-usage-reduction)
+- [Order of Resources in Start-Device IRP](https://docs.microsoft.com/windows-hardware/drivers/pci/order-of-resources-in-start-device-irp)
+- [PCI Express FAQ for Graphics](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-express-faq-for-graphics)
+- [PCI Sample](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-sample)
 
 ## See Also
--   [Official PCIe specification](http://pcisig.com/specifications/review-zone)
 
- 
-
- 
-
-
-
-
+- [Official PCIe specification](http://pcisig.com/specifications/review-zone)

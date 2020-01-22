@@ -20,6 +20,7 @@ Methods for managing shipping labels
 |:--|:--|:--|
 |[Create a new shipping label](create-a-new-shipping-label.md)|POST|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels`|
 |[Update a shipping label](update-a-shipping-label.md)|PATCH|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId}`|
+|[Cancel a shipping label](cancel-a-shipping-label.md)|PUT|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels/{shippingLabelId/cancel}`|
 
 ## Create a new shipping label
 
@@ -40,7 +41,7 @@ Methods for managing shipping labels
 
 The following code example demonstrates how to use the Microsoft Hardware API:
 
-* [C# sample](http://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
+* [C# sample](https://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
 
 ## Data resources
 

@@ -68,9 +68,9 @@ If your printer supports color formats that are not listed in the preceding tabl
 
 -   Set the \*DevNumOfPlanes and \*DevBPP attributes to zero. Doing this prevents Unidrv from sending DIB data to the printer.
 
--   Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method.
+-   Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method.
 
-The [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method must perform the following operations:
+The [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method must perform the following operations:
 
 -   Convert DIB data into the printer's color format.
 
@@ -78,7 +78,7 @@ The [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardw
 
 -   Send the data to the print spooler.
 
-For more information about providing an [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) function, see [Customized Color Formats](customized-color-formats.md).
+For more information about providing an [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) function, see [Customized Color Formats](customized-color-formats.md).
 
 ### Rendering High Quality Images
 

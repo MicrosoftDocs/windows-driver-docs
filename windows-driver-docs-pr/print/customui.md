@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The optional **customUI** element specifies a custom user interface to be displayed on a client computer.
 
-The **customUI** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **customUI** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 Usage
 -----
@@ -133,8 +133,8 @@ The following code example shows how to use the **customUI** element to call and
 
 ```cpp
 <?xml version="1.0"?>
-  <asyncPrintUIRequest xmlns="http://schemas.microsoft.com/2003/print/asyncui/1.0"
-      xmlns:myco="http://www.myprintercompany.com">
+  <asyncPrintUIRequest xmlns="https://schemas.microsoft.com/2003/print/asyncui/1.0"
+      xmlns:myco="https://www.myprintercompany.com">
     <requestOpen>
       <customUI dll="abc.dll" entrypoint="IHVFunction" bidi="true">
         <IHV:anyXMLData />

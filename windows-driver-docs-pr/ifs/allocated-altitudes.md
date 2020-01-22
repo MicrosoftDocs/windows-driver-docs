@@ -1049,7 +1049,7 @@ The current altitude allocations are listed below for each of the following load
 | dpnedriver.sys   (x86) | 280850 | HP |
 | dpnedriver64.sys (x64) | 280850 | HP |
 | hpchgflt.sys | 280800 | HP |
-| VirtFile.sys | 280700 | Symantec |
+| VirtFile.sys | 280700 | Veritas |
 | DeqoCPS.sys | 280600 | Deqo |
 | LV_Tracker.sys | 280500 | LiveVault |
 | cpbak.sys | 280410 | Checkpoint Software |

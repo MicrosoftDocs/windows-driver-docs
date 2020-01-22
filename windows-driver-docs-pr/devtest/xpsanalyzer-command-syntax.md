@@ -58,7 +58,7 @@ Within these files, the name of the XPS file that has been analyzed is followed 
 
 If the **/Directory:** argument is specified, the file contains the analysis of every XPS file that resides in the specified directory. The name of each file is followed by the XPS analysis for that file.
 
-If the **/FlushSql:** argument is specified, XpsAnalyzer creates two SQL files along with the XpsAnalyzer\_Result.htm and XpsAnalyzer\_Result.xml files. The details of the SQL files are as folllows:
+If the **/FlushSql:** argument is specified, XpsAnalyzer creates two SQL files along with the XpsAnalyzer\_Result.htm and XpsAnalyzer\_Result.xml files. The details of the SQL files are as follows:
 
 <span id="setup_sqlserver.sql_______"></span><span id="SETUP_SQLSERVER.SQL_______"></span>**Setup\_SqlServer.sql**   
 This file contains a script to prepare an SQL database that can be used to search on the XPS analysis.

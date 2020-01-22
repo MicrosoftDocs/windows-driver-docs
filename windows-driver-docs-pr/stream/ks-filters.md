@@ -31,7 +31,7 @@ The graph describes the internal relationship between the filter's pins. A more 
 
 Filters specify internal connections between pins and internal nodes by using the [KSPROPSETID\_Topology](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-topology) property set.
 
-The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-connections) property queries all connections between nodes of a KS filter. This property returns an array of [**KSTOPOLOGY\_CONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-kstopology_connection). Each KSTOPOLOGY\_CONNECTION structure represents a single data-path connection inside a filter. In the mixer diagram above, the sequence of KSTOPOLOGY\_CONNECTION structures could be as follows:
+The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-connections) property queries all connections between nodes of a KS filter. This property returns an array of [**KSTOPOLOGY\_CONNECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection). Each KSTOPOLOGY\_CONNECTION structure represents a single data-path connection inside a filter. In the mixer diagram above, the sequence of KSTOPOLOGY\_CONNECTION structures could be as follows:
 
 ```cpp
 //    FromNode,       FromNodePin,     ToNode,        ToNodePin,

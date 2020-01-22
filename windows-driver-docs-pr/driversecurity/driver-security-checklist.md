@@ -120,7 +120,7 @@ This article provides driver specific guidance for creating a lightweight threat
 
 ![Sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
 
-Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/security-overview#sdl-recommendations-for-oems).
+Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](https://docs.microsoft.com/windows-hardware/drivers/bringup/security-overview#sdl-recommendations-for-oems).
 
 
 ## <span id="DriverSecurityCodePractices"></span><span id="driversecuritycodepractices"></span><span id="DRIVERSECURITYCODEPRACTICES"></span>Follow driver secure coding guidelines
@@ -138,7 +138,7 @@ The [Code Validation Tools](#codevalidationtools) section of this article descri
 
 - Properly initialize all output buffers with zeros before returning them to the caller. For more information, see [Failure to Initialize Output Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-initialize-output-buffers).
 
-- Validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-validate-variable-length-buffers). For more information about working with buffers and using [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-probeforwrite) to validate the address of a buffer, see [Buffer Handling](https://docs.microsoft.com/windows-hardware/drivers/ifs/buffer-handling).
+- Validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-validate-variable-length-buffers). For more information about working with buffers and using [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate the address of a buffer, see [Buffer Handling](https://docs.microsoft.com/windows-hardware/drivers/ifs/buffer-handling).
 
 
 **Use the appropriate method for accessing  data buffers with IOCTLs**
@@ -163,7 +163,7 @@ For more information about working with buffers in IOCTLs, see [Methods for Acce
 
 - Properly validate variable-length buffers. For more information, see [Failure to Validate Variable-Length Buffers](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-validate-variable-length-buffers).
 
-- When using buffered I/O, be sure and return the proper length for the OutputBuffer in the [IO_STATUS_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure Information field.  Don't just directly return the length directly from a READ request.  For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer.  If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field an information disclosure vulnerability has occurred. This problem occurs because in earlier versions of Windows, the buffer the I/O Manager uses for Buffered I/O is not zeroed.  Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
+- When using buffered I/O, be sure and return the proper length for the OutputBuffer in the [IO_STATUS_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure Information field.  Don't just directly return the length directly from a READ request.  For example, consider a situation where the returned data from the user space indicates that there is a 4K buffer.  If the driver actually should only return 200 bytes, but instead just returns 4K in the Information field an information disclosure vulnerability has occurred. This problem occurs because in earlier versions of Windows, the buffer the I/O Manager uses for Buffered I/O is not zeroed.  Thus, the user app gets back the original 200 bytes of data plus 4K-200 bytes of whatever was in the buffer (non-paged pool contents). This scenario can occur with all uses of Buffered I/O and not just with IOCTLs.
 
 **Errors in IOCTL direct I/O**
 
@@ -172,7 +172,7 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 **Errors in referencing user-space addresses**
 - Validate pointers embedded in buffered I/O requests. For more information, see [Errors in Referencing User-Space Addresses](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-referencing-user-space-addresses).
 
-- Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-probeforwrite) when appropriate. 
+- Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) when appropriate. 
 
 **TOCTOU vulnerabilities**
 
@@ -231,7 +231,7 @@ A driver must never complete an IRP with a status value of STATUS\_SUCCESS unles
 
 **Manage driver IRP pending state**
 
-The driver should mark the IRP pending before it saves the IRP, and should consider including both the call to [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iomarkirppending) and the assignment in an interlocked sequence. For more information, see [Failure to Check a Driver's State](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-check-a-driver-s-state) and [Holding Incoming IRPs When A Device Is Paused](https://docs.microsoft.com/windows-hardware/drivers/kernel/holding-incoming-irps-when-a-device-is-paused).
+The driver should mark the IRP pending before it saves the IRP, and should consider including both the call to [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending) and the assignment in an interlocked sequence. For more information, see [Failure to Check a Driver's State](https://docs.microsoft.com/windows-hardware/drivers/kernel/failure-to-check-a-driver-s-state) and [Holding Incoming IRPs When A Device Is Paused](https://docs.microsoft.com/windows-hardware/drivers/kernel/holding-incoming-irps-when-a-device-is-paused).
 
 **Handle IRP cancellation operations properly**
 
@@ -263,9 +263,9 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 - Use safe string functions. For more information, see [Using Safe String Functions](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-safe-string-functions).
 
-- Use safe arithmetic functions. For more information, see [Arithmetic Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) in [Safe Integer Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+- Use safe arithmetic functions. For more information, see [Arithmetic Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) in [Safe Integer Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
-- Use safe conversion functions. For more information, see [Conversion Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) in [Safe Integer Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+- Use safe conversion functions. For more information, see [Conversion Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) in [Safe Integer Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 **Additional code vulnerabilities**
 
@@ -283,7 +283,7 @@ For additional information about C and C++ secure coding, see [Secure coding res
 
 Drivers must work to prevent users from inappropriately accessing a computer's devices and files. To prevent unauthorized access to devices and files, you must:
 
--   Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you’re using a non-PNP device/control device.  Note that WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
+-   Name device objects only when necessary. Named device objects are generally only necessary for legacy reasons, for example if you have an application that expects to open the device using a particular name or if you’re using a non-PNP device/control device.  Note that WDF drivers do not need to name their PnP device FDO in order to create a symbolic link using [WdfDeviceCreateSymbolicLink](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatesymboliclink).
 
 -   Secure access to device objects and interfaces. 
 
@@ -300,7 +300,7 @@ For more information about controlling access, see the following articles:
 
 **Managing driver access control - WDM**
 
-If you are working with a WDM Driver and you used a named device object you can use [IoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) and specify a SDDL to secure it. When you implement [IoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
+If you are working with a WDM Driver and you used a named device object you can use [IoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) and specify a SDDL to secure it. When you implement [IoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
    
 For more information, see the following articles:
 
@@ -333,7 +333,7 @@ Following the general least privilege security principle, configure only the min
 
 **WDM Granular IOCTL security control**
 
-To further manage security when IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iovalidatedeviceiocontrolaccess), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. 
+To further manage security when IOCTLs are sent by user-mode callers, the driver code can include the [IoValidateDeviceIoControlAccess](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) function. This function allows a driver to check access rights. Upon receiving an IOCTL, a driver can call [IoValidateDeviceIoControlAccess](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess), specifying FILE_READ_ACCESS, FILE_WRITE_ACCESS, or both. 
 
 Implementing granular IOCTL security control does not replace the need to manage driver access using the techniques discussed above.
 
@@ -364,7 +364,7 @@ For more information about using the tool and a list of incompatible memory call
 
 For general information about Device Guard, see [Driver compatibility with Device Guard in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification).
 
-For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
+For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](https://docs.microsoft.com/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
 
 
@@ -619,11 +619,11 @@ The following tests are examples of tests that may be useful to check driver cod
 
  You can also use the [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing) that is included with Driver Verifier.
 
-The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently. For more information, see [CHAOS Tests (Device Fundamentals)](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/chaos-tests--device-fundamentals-).
+The CHAOS (Concurrent Hardware and Operating System) tests run various PnP driver tests, device driver fuzz tests, and power system tests concurrently. For more information, see [CHAOS Tests (Device Fundamentals)](https://docs.microsoft.com/windows-hardware/drivers/devtest/chaos-tests--device-fundamentals-).
 
-The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces. For more information, see [Penetration Tests (Device Fundamentals)](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/penetration-tests--device-fundamentals-).
+The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces. For more information, see [Penetration Tests (Device Fundamentals)](https://docs.microsoft.com/windows-hardware/drivers/devtest/penetration-tests--device-fundamentals-).
 
-Use the [Device Guard - Compliance Test](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc), along with the other tools described in this article, to confirm that your driver is Device Guard compatible.
+Use the [Device Guard - Compliance Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc), along with the other tools described in this article, to confirm that your driver is Device Guard compatible.
 
 
 **Custom and domain-specific test tools**

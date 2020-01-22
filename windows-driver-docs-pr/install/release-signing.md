@@ -149,7 +149,7 @@ Use the MMC Certificates snap-in (certmgr.msc) to view the certificates in the P
 Run the following commands to sign the cat file which signs the driver package. The /n command should use the quoted name of the certificate which you will see under Subject in step 4 above, as CN= MyCompany Inc.
 
 ```cpp
-signtool sign /v /ac MSCV-VSClass3.cer /s My /n “MyCompany Inc.“ /t http://timestamp.verisign.com/scripts/timestamp.dll  toaster.cat
+signtool sign /v /ac MSCV-VSClass3.cer /s My /n “MyCompany Inc.“ /t http://timestamp.digicert.com toaster.cat
 ```
 
 /ac FileName
@@ -188,7 +188,7 @@ Please refer to [Kernel-Mode Code Signing Requirements](kernel-mode-code-signing
 Command for embed signing the toaster.sys file.
 
 ```cpp
-signtool sign /v /ac MSCV-VSClass3.cer /s my /n “MyCompany Inc. “ /t http://timestamp.verisign.com/scripts/timestamp.dll   toaster.sys
+signtool sign /v /ac MSCV-VSClass3.cer /s my /n “MyCompany Inc. “ /t http://timestamp.digicert.com toaster.sys
 ```
 
 After signing is completed, run the command below to verify the signed driver.

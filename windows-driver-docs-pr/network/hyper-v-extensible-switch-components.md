@@ -1,12 +1,12 @@
 ---
-title: Hyper-V Extensible Switch Components
-description: Hyper-V Extensible Switch Components
+title: Hyper-V Extensible Switch Components Overview
+description: Hyper-V Extensible Switch Components Overview
 ms.assetid: 510A4D75-8DB4-46D7-BA54-248ED4FEC349
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Hyper-V Extensible Switch Components
+# Hyper-V Extensible Switch Components Overview
 
 
 Starting with Windows Server 2012, the Hyper-V extensible switch supports an interface that allows NDIS filter drivers (known as *Hyper-V extensible switch extensions*) to bind within the extensible switch driver stack. This allows extensions to monitor, modify, and forward packets to extensible switch ports. This also allows extensions to drop, redirect, or originate packets to ports that are used by the Hyper-V partitions.

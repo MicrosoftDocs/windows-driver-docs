@@ -49,7 +49,7 @@ An access token that describes a restricted security context for a thread or pro
 
 Every named Windows object has a security descriptor; some unnamed objects do, too. The security descriptor describes the owner and group SIDs for the object along with its ACLs.
 
-An object’s security descriptor is usually created by the function that creates the object. When a driver calls the [IoCreateDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice) or [IoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) routine to create a device object, the system applies a security descriptor to the created device object and sets ACLs for the object. For most devices, ACLs are specified in the device Information (INF) file.
+An object’s security descriptor is usually created by the function that creates the object. When a driver calls the [IoCreateDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) or [IoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) routine to create a device object, the system applies a security descriptor to the created device object and sets ACLs for the object. For most devices, ACLs are specified in the device Information (INF) file.
 
 For more information [Security Descriptors](https://docs.microsoft.com/windows-hardware/drivers/kernel/security-descriptors) in the kernel driver documentation.
 

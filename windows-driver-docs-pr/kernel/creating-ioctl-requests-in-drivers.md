@@ -15,30 +15,30 @@ ms.localizationpriority: medium
 
 A class driver or other higher-level driver can allocate IRPs for I/O control requests and send them to the next-lower driver as follows:
 
-1.  Allocate or reuse an I/O request packet ([**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)) with the major function code [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control). You can use the [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) routine to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization routines, such as [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp), [**IoReuseIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioreuseirp), or [**IoInitializeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinitializeirp). For more information about IRP allocation, see [Creating IRPs for Lower-Level Drivers](creating-irps-for-lower-level-drivers.md).
+1.  Allocate or reuse an I/O request packet ([**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)) with the major function code [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control). You can use the [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) routine to specifically allocate an IOCTL IRP. You can also use general-purpose IRP creation and initialization routines, such as [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp), [**IoReuseIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreuseirp), or [**IoInitializeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializeirp). For more information about IRP allocation, see [Creating IRPs for Lower-Level Drivers](creating-irps-for-lower-level-drivers.md).
 
 2.  Set up the lower driver's I/O stack location for the IRP with the IOCTL\_*XXX* code and appropriate parameters.
 
-3.  If the IOCTL request is to be completed asynchronously, call the [**KeInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keinitializeevent) routine to initialize an event object as a notification event. The driver uses this event to wait for an I/O operation to be completed.
+3.  If the IOCTL request is to be completed asynchronously, call the [**KeInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializeevent) routine to initialize an event object as a notification event. The driver uses this event to wait for an I/O operation to be completed.
 
-4.  Call [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine) with the IRP so that the upper driver can supply an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine, if necessary, to do the following:
+4.  Call [**IoSetCompletionRoutine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) with the IRP so that the upper driver can supply an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, if necessary, to do the following:
 
     -   Determine how the lower driver handled a given request.
 
-    -   Reuse the IRP to send another request or dispose of the driver-created IRP, after the lower driver completes a requested operation. The driver cannot reuse IRPs that [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest) created. For more information, see [Reusing IRPs](reusing-irps.md).
+    -   Reuse the IRP to send another request or dispose of the driver-created IRP, after the lower driver completes a requested operation. The driver cannot reuse IRPs that [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) created. For more information, see [Reusing IRPs](reusing-irps.md).
 
-5.  Call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) to pass the request on to the lower driver.
+5.  Call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass the request on to the lower driver.
 
-6.  If [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) returns STATUS\_PENDING, call the [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject) routine to put the current thread into a wait state. The driver sets the routine's *Object* parameter to the address of the event object that was initialized in the call to [**KeInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keinitializeevent).
+6.  If [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) returns STATUS\_PENDING, call the [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) routine to put the current thread into a wait state. The driver sets the routine's *Object* parameter to the address of the event object that was initialized in the call to [**KeInitializeEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializeevent).
 
-    **Note**  If the driver calls [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject) with its *Timeout* parameter set either to **NULL** or to the address of a variable that contains a nonzero value, the driver must be running at IRQL &lt;= APC\_LEVEL in a nonarbitrary thread context. Otherwise, the driver must be running at IRQL &lt;= DISPATCH\_LEVEL.
-
-
+    **Note**  If the driver calls [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) with its *Timeout* parameter set either to **NULL** or to the address of a variable that contains a nonzero value, the driver must be running at IRQL &lt;= APC\_LEVEL in a nonarbitrary thread context. Otherwise, the driver must be running at IRQL &lt;= DISPATCH\_LEVEL.
 
 
-The event is signaled by its [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine when the IOCTL request has completed. Once the event is signaled, the thread resumes execution.
 
-**Important**  If the driver allocates the event object as a local variable on the stack, the driver must call [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitforsingleobject) with its *WaitMode* parameter set to **KernelMode**. This parameter value prevents the stack from being paged out.
+
+The event is signaled by its [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine when the IOCTL request has completed. Once the event is signaled, the thread resumes execution.
+
+**Important**  If the driver allocates the event object as a local variable on the stack, the driver must call [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) with its *WaitMode* parameter set to **KernelMode**. This parameter value prevents the stack from being paged out.
 
 
 

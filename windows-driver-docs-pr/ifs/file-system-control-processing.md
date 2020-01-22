@@ -47,7 +47,7 @@ typedef struct {
 } MOVE_FILE_DATA, *PMOVE_FILE_DATA;
 ```
 
-As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open" operation of the entire volume, while the operation actually applies to the file handle specified in the MOVE\_FILE\_DATA input buffer. This makes the security checks for this operation somewhat complex. For example, this interface must convert the file handle to a file object that represents the file being moved. This requires careful consideration on the part of any driver. FASTFAT does this using [**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obfreferenceobject) in a guarded fashion in the **FatMoveFile** function in the fsctrl.c source file in the fastfat sample that the WDK contains:
+As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open" operation of the entire volume, while the operation actually applies to the file handle specified in the MOVE\_FILE\_DATA input buffer. This makes the security checks for this operation somewhat complex. For example, this interface must convert the file handle to a file object that represents the file being moved. This requires careful consideration on the part of any driver. FASTFAT does this using [**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) in a guarded fashion in the **FatMoveFile** function in the fsctrl.c source file in the fastfat sample that the WDK contains:
 
 ```cpp
     //

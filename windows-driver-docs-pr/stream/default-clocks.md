@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-Kernel streaming minidrivers can call [**KsAllocateDefaultClockEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksallocatedefaultclockex) to allocate and initialize a default clock structure. Alternatively, they can call [**KsAllocateDefaultClock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksallocatedefaultclock), which is a wrapper for **KsAllocateDefaultClockEx** with default parameters for the nonclock members. Call [**KsCreateDefaultClock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kscreatedefaultclock) after using **KsAllocateDefaultClockEx** to initialize the default clock.
+Kernel streaming minidrivers can call [**KsAllocateDefaultClockEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksallocatedefaultclockex) to allocate and initialize a default clock structure. Alternatively, they can call [**KsAllocateDefaultClock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksallocatedefaultclock), which is a wrapper for **KsAllocateDefaultClockEx** with default parameters for the nonclock members. Call [**KsCreateDefaultClock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kscreatedefaultclock) after using **KsAllocateDefaultClockEx** to initialize the default clock.
 
 The default clock supports [KSPROPSETID\_Clock](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-clock), and may be accessed just as any other clock presented by a filter pin. The underlying data structure, however, is created by the filter pin, and shared by that pin and any instances of the clock that are created. The clock relies on the pin to update the current state and other elements in the shared structure. The default clock handles notification requests and clock queries.
 
@@ -24,7 +24,7 @@ Minidrivers can support the [**KSPROPERTY\_CLOCK\_FUNCTIONTABLE**](https://docs.
 
 In addition, minidrivers support the [**KSPROPERTY\_STREAM\_RATE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-stream-rate) property if a specified pin allows rate changes.
 
-Applications that use the kernel streaming proxy interface call methods in the [IKsClockPropertySet](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nn-ksproxy-iksclockpropertyset) interface to get and set time on physical clocks that may be used elsewhere for rate matching.
+Applications that use the kernel streaming proxy interface call methods in the [IKsClockPropertySet](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-iksclockpropertyset) interface to get and set time on physical clocks that may be used elsewhere for rate matching.
 
 See [Quality Management](quality-management.md) for related information.
 

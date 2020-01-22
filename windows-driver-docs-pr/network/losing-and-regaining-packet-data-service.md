@@ -17,11 +17,11 @@ To regain packet data service after it has been lost, use the following procedur
 
 1.  The miniport driver sends NDIS\_WWAN\_LINK\_STATE to the MB Service.
 
-2.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
+2.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
-3.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
+3.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
-4.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
+4.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
 5.  The miniport driver sends NDIS\_WWAN\_REGISTER\_STATE to the MB Service.
 
@@ -29,7 +29,7 @@ To regain packet data service after it has been lost, use the following procedur
 
 7.  The miniport driver sends [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) to the MB Service.
 
-8.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
+8.  The miniport driver sends [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) to the MB Service.
 
  
 

@@ -45,7 +45,7 @@ The components in the diagram are described here:
 ## Support for GNSS devices and drivers that follow the legacy Windows model
 
 
-The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver).
+The location platform in Windows 10 supports GNSS devices integrated via the legacy Sensors v1.0 class driver (see [Writing a location sensor driver](writing-a-location-sensor-driver.md)) or integrated via the new GNSS DDI described in thr [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver).
 
 Therefore, Windows devices with a GNSS device that integrate with the Sensor v1.0 class extension model that existed in Windows 7, Windows 8, and Windows 8.1 are expected to continue working in Windows 10 without the need of any changes. It is strongly recommended for these drivers (and any new drivers) to be published to Windows Update to improve the upgrade process for our users.
 
@@ -86,13 +86,13 @@ The interaction between the GNSS adapter and the GNSS driver falls under the fol
 
 To support extensibility and adaptability of the GNSS stack on Windows platforms, the GNSS adapter and the GNSS driver establish a common understanding of the various well-defined capabilities of the underlying GNSS stack, as well as the support provided by the Windows platform. The capability aspects are well defined by Microsoft as part of this GNSS interface definition and will evolve as more innovation in the GNSS space continues and a diverse set of chipsets/drivers emerge in the market. The GNSS adapter queries the various capabilities of the underlying GNSS driver/device at the time of initialization or on as-needed basis and accordingly optimizes the interaction with the GNSS driver.
 
-The capability information exchange between the GNSS adapter and the GNSS driver is done using the control codes [**IOCTL\_GNSS\_SEND\_PLATFORM\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_send_platform_capability) and [**IOCTL\_GNSS\_GET\_DEVICE\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_get_device_capability).
+The capability information exchange between the GNSS adapter and the GNSS driver is done using the control codes [**IOCTL\_GNSS\_SEND\_PLATFORM\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_send_platform_capability) and [**IOCTL\_GNSS\_GET\_DEVICE\_CAPABILITY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_device_capability).
 
 ### GNSS driver command and configuration
 
 The GNSS adapter may perform one-time configuration or periodic re-configuration of the GNSS driver. Similarly the GNSS adapter may execute certain GNSS-specific commands through the driver. This is accomplished by defining a command execution protocol between the driver and the high level operating system (HLOS). Depending on the specific command type, the intended action may take effect immediately or after a system restart. Similar to GNSS device capability information, the GNSS commands are also well-defined by Microsoft as part of this GNSS interface definition and will continue evolving with future innovations and diversification of GNSS devices/drivers.
 
-Device command execution and configuration is done using the control code [**IOCTL\_GNSS\_SEND\_DRIVERCOMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_send_drivercommand).
+Device command execution and configuration is done using the control code [**IOCTL\_GNSS\_SEND\_DRIVERCOMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_send_drivercommand).
 
 ### Position information
 
@@ -108,16 +108,16 @@ The only mandatory position session type required by every GNSS hardware and GNS
 
 The act of retrieving position information from the GNSS driver happens through a stateful, unique fix session, consisting of the following actions:
 
-1.  **Start fix session:** The GNSS adapter initiates a start fix session (as a result of a request from an LBS application). The GNSS adapter sets the specific requirements and preferences association with the request, and intimates the GNSS driver to start the engine to get the fix by issuing control code [**IOCTL\_GNSS\_START\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession).
+1.  **Start fix session:** The GNSS adapter initiates a start fix session (as a result of a request from an LBS application). The GNSS adapter sets the specific requirements and preferences association with the request, and intimates the GNSS driver to start the engine to get the fix by issuing control code [**IOCTL\_GNSS\_START\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession).
 
-2.  **Get device position (fix data):** Once a fix session is started, the GNSS adapter issues control code [**IOCTL\_GNSS\_GET\_FIXDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) to start waiting for a fix from the driver. When a new position information is available from the engine , the GNSS driver responds to this pending get fix request.
+2.  **Get device position (fix data):** Once a fix session is started, the GNSS adapter issues control code [**IOCTL\_GNSS\_GET\_FIXDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) to start waiting for a fix from the driver. When a new position information is available from the engine , the GNSS driver responds to this pending get fix request.
 
     > [!NOTE]
     > If fix session type is LKG fix (rather than current fix), the position information comes from the driver’s cache.
 
     The GNSS adapter makes sure that an asynchronous I/O request is always available for the GNSS driver to return the fix data when available. Depending on the nature of the fix, if more fix data is expected, the GNSS adapter issues another I/O request (using the same IOCTL) and this sequence continues till no more data will be available or the fix session is stopped.
 
-3.  **Modify fix session:** If the GNSS driver does not support multiplexing of fix sessions of the same type the GNSS adapter may issue an [**IOCTL\_GNSS\_MODIFY\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_modify_fixsession) for that fix session type when it does multiplexing at its level.
+3.  **Modify fix session:** If the GNSS driver does not support multiplexing of fix sessions of the same type the GNSS adapter may issue an [**IOCTL\_GNSS\_MODIFY\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_modify_fixsession) for that fix session type when it does multiplexing at its level.
 
 4.  **Stop fix session:** The GNSS adapter issues a stop fix session when no further position information pertaining to a specific fix session is either needed or expected.
 
@@ -187,9 +187,9 @@ From time to time, the GNSS driver may need assistance data or helper actions fr
 
 Since the GNSS driver is unable to initiate a request to the upper layer on its own, this type of operations can be accomplished by the GNSS adapter proactively seeking such request from the GNSS driver and thereby always keeping one or more pending IRPs so that the GNSS driver can respond back on such pending requests. On receipt of request for assistance/helper date, the GNSS adapter fetches the data (or executes the specific action on behalf of the GNSS driver), and subsequently injects the needed information to the GNSS driver through another **DeviceIoControl** call.
 
-The notification from the driver is handled through a common event model. For example, for GNSS assistance, the GNSS adapter uses control code [**IOCTL\_GNSS\_LISTEN\_AGNSS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_agnss) to receive the AGNSS request from the GNSS driver. Subsequently the GNSS adapter fetches the AGNSS assistance data and issues [**IOCTL\_GNSS\_INJECT\_AGNSS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_inject_agnss) to push the data into the GNSS driver.
+The notification from the driver is handled through a common event model. For example, for GNSS assistance, the GNSS adapter uses control code [**IOCTL\_GNSS\_LISTEN\_AGNSS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_agnss) to receive the AGNSS request from the GNSS driver. Subsequently the GNSS adapter fetches the AGNSS assistance data and issues [**IOCTL\_GNSS\_INJECT\_AGNSS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_inject_agnss) to push the data into the GNSS driver.
 
-This notification mechanism is also used for receiving geofence-related alert data and status updates. The adapter uses control code [**IOCTL\_GNSS\_LISTEN\_GEOFENCE\_ALERT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofence_alert) for receiving individual geofence alerts, and [**IOCTL\_GNSS\_LISTEN\_GEOFENCES\_TRACKINGSTATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofences_trackingstatus) for receiving changes in the overall status of geofence tracking.
+This notification mechanism is also used for receiving geofence-related alert data and status updates. The adapter uses control code [**IOCTL\_GNSS\_LISTEN\_GEOFENCE\_ALERT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofence_alert) for receiving individual geofence alerts, and [**IOCTL\_GNSS\_LISTEN\_GEOFENCES\_TRACKINGSTATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_listen_geofences_trackingstatus) for receiving changes in the overall status of geofence tracking.
 
 ### GNSS driver logging
 
@@ -229,7 +229,7 @@ To facilitate the implementation of the mobile operator protocols and reduce the
 
     Only one SUPL configuration is supported in a system, including in cases of dual SIM devices. Microsoft provides the functionality to reconfigure SUPL based on UICC and on UICC change. In addition to this, in case of the device roaming, the HLOS re-configures the SUPL client to work in standalone mode. This document defines the IOCTLs for pushing such configuration data for a variety of mobile operation protocols (SUPL 1.0 and 2.0, v2UPL, and so on).
 
-2.  **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver).
+2.  **User consent UI:** To meet privacy requirements, certain network initiated positioning requests need user consent. IHVs are not allowed to write UI for platform components. Hence the GNSS adapter handles the UI for user consent on behalf of the GNSS driver. The notification IOCTLs for the GNSS driver to request a UI popup, and the IOCTLs for the GNSS adapter to convey the user response to such a request are defined in [GNSS driver IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver).
 
 In order to implement a fully functional SUPL client the IHV stack will need to make use of interfaces or general functionality available in/through the OS platform. The following is the list of functionality available in Windows 10 that IHVs can leverage to implement their SUPL client:
 
@@ -316,17 +316,17 @@ The sequence description is as follows:
 
 4.  The GNSS adapter issues IOCTLs for any driver-specific configuration or commands. The GNSS driver performs the needed action and completes the I/O operation.
 
-5.  The GNSS adapter issues an [**IOCTL\_GNSS\_START\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession), along with the parameters specifying the type and other aspects of the fix. On receipt of this IOCTL, the GNSS driver interacts with the underlying device to start receiving fixes and subsequently completes the I/O operation.
+5.  The GNSS adapter issues an [**IOCTL\_GNSS\_START\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_start_fixsession), along with the parameters specifying the type and other aspects of the fix. On receipt of this IOCTL, the GNSS driver interacts with the underlying device to start receiving fixes and subsequently completes the I/O operation.
 
-6.  The GNSS adapter issues an [**IOCTL\_GNSS\_GET\_FIXDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) and waits for the I/O completion. Whenever the GNSS driver has an available intermediate fix, it returns the data by completing the I/O operation.
+6.  The GNSS adapter issues an [**IOCTL\_GNSS\_GET\_FIXDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) and waits for the I/O completion. Whenever the GNSS driver has an available intermediate fix, it returns the data by completing the I/O operation.
 
 7.  Step 6 is repeated till the GNSS driver indicates that no more fixes are expected (final fix received).
 
-8.  The GNSS adapter issues [**IOCTL\_GNSS\_STOP\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/ni-gnssdriver-ioctl_gnss_stop_fixsession). The GNSS driver does the needed cleanup operation associated with the original fix request.
+8.  The GNSS adapter issues [**IOCTL\_GNSS\_STOP\_FIXSESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_stop_fixsession). The GNSS driver does the needed cleanup operation associated with the original fix request.
 
 9.  The GNSS adapter closes the driver file handle using the **CloseHandle** API.
 
-The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gnssdriver/).
+The GNSS IOCTLs and associated data structures are described in detail in the [GNSS driver reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/).
 
 ## Distance-based tracking session
 
