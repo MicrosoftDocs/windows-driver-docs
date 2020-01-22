@@ -18,7 +18,6 @@ ms.localizationpriority: medium
 
 # WinDbg Command-Line Options
 
-
 First-time users of WinDbg should begin with the [Debugging Using WinDbg](debugging-using-windbg.md) section.
 
 The WinDbg command line uses the following syntax:

@@ -1,20 +1,30 @@
 ---
 title: WinDbg Preview - Settings and workspaces
 description: This section describes how to setup the WinDbg preview debugger.
-ms.date: 08/17/2017
+ms.date: 01/16/2020
 ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Settings and workspaces
 
-This section describes how to setup and configure the WinDbg Preview debugger.
+![Small logo of windbg preview with bit pattern](images/windbgx-preview-logo.png)
 
+This section describes how to setup and configure the WinDbg Preview debugger.
 
 ## Settings
 
-Use the settings menu to set the source and symbol path as well as choose the light and dark theme for the debugger. 
+Use the settings menu to set things such as the source and symbol path as well as choose the light and dark theme for the debugger. 
 
-![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-settings-menu.png)
+![Screen shot of settings showing general tab](images/windbgx-settings-menu.png)
+
+There are currently six settings dialog panels:
+
+- General
+- Command Window
+- Debugging Settings
+- Disassembly windows
+- Events & exceptions
+- Source window
 
 For more information on setting the paths, see [Accessing Symbols for Debugging](accessing-symbols-for-debugging.md) and [Source Code Debugging in WinDbg](source-window.md).
 
@@ -28,7 +38,8 @@ Workspaces are automatically loaded when launching from the recent targets list 
 
 In addition to the target connection information, the following settings are stored in the workspaces file.
 
-#### General Settings 
+#### General Settings
+
 > [!NOTE]
 > This list and format isn't final and is subject to change.
 
@@ -46,8 +57,7 @@ UseImplicitCommandLine | false | Use implicit command-line (-cimp command-line o
 
 For more information about the command line options, see [WinDbg Command-Line Options](windbg-command-line-options.md).
 
-
-#### Symbol Settings 
+#### Symbol Settings
 
 Setting | Default | Description
 --- | --- | ---
@@ -64,15 +74,13 @@ SymOptDebug | false | This symbol option turns on noisy symbol loading. This ins
 
 For more information on symbol options, see [Symbol Options](symbol-options.md).
 
-
 #### Window layout settings
 
  Window layout is saved globally and are not saved in the workspaces file. 
 
-
 #### Workspaces XML file
 
-The workspace and target connection information is stored in XML format. 
+The workspace and target connection information is stored in XML format.
 
 The following file, shows an example workspaces configuration file.
 
@@ -109,17 +117,10 @@ The following file, shows an example workspaces configuration file.
 </TargetConfig>
 ```
 
-Note that this file format will continue to evolve as more features are added to the WinDbg Preview debugger.
-
+Note that this file format continues to evolve as more features are added to the WinDbg Preview debugger.
 
 ---
 
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
-
-
-
-
-
-

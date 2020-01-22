@@ -24,7 +24,7 @@ ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,”GLOBAL”,USBAudio.Interface
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",USBAudio.Interface
 ...
 
 [USBAudio.Interface]
@@ -39,7 +39,7 @@ HKR,"EP\\n",%PKEY_AudioDevice_NeverSetAsDefaultEndpoint%,0x00010001,NeverSetAsDe
 ...
 
 [Strings]
-KSCATEGORY_AUDIO=” {6994AD04-93EF-11D0-A3CC-00A0C9223196}”
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
 PKEY_AudioEndpoint_Association="{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
 PKEY_AudioDevice_NeverSetAsDefaultEndpoint = "{F3E80BEF-1723-4FF2-BCC4-7F83DC5E46D4},3"
 ...
@@ -60,7 +60,7 @@ ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,”GLOBAL”,USBAudio.Interface
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",USBAudio.Interface
 ...
 
 [USBAudio.Interface]
@@ -75,7 +75,7 @@ HKR,"EP\\0",%PKEY_AudioDevice_NeverSetAsDefaultEndpoint%,0x00010001,0x00000305
 ...
 
 [Strings]
-KSCATEGORY_AUDIO=” {6994AD04-93EF-11D0-A3CC-00A0C9223196}”
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
 KSNODETYPE_OUTPUT_UNDEFINED="{DFF21CE0-F70F-11D0-B917-00A0C9223196}"
 PKEY_AudioEndpoint_Association="{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
 PKEY_AudioDevice_NeverSetAsDefaultEndpoint = "{F3E80BEF-1723-4FF2-BCC4-7F83DC5E46D4},3"

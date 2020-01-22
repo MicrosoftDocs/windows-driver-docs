@@ -64,7 +64,7 @@
     href: debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
   - name: "Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)"
     href: debug-universal-drivers--kernel-mode-.md
-- name: "Debugging Using WinDbg Preview"
+- name: "WinDbg Preview"
 # Auto-expanded node
   items: 
   - name: "Debugging Using WinDbg Preview"
@@ -73,8 +73,6 @@
     href: windbg-what-is-new-preview.md
   - name: "WinDbg Preview - Installation"
     href: windbg-install-preview.md
-  - name: "WinDbg Preview - Timeline"
-    href: windbg-timeline-preview.md
   - name: "WinDbg Preview - Command line startup options"
     href: windbg-command-line-preview.md
   - name: "WinDbg Preview – Settings and workspaces"
@@ -85,37 +83,45 @@
     href: windbg-user-mode-preview.md
   - name: "WinDbg Preview - Start a kernel mode session"
     href: windbg-kernel-mode-preview.md
+  - name: "WinDbg Preview - Start a remote, process or dump file session"
+    href: windbg-remote-preview.md
   - name: "WinDbg Preview – File menu"
     href: windbg-file-preview.md
   - name: "WinDbg Preview – Home menu"
     href: windbg-home-preview.md
   - name: "WinDbg Preview – View menu"
     href: windbg-view-preview.md
-  - name: "WinDbg Preview – Breakpoints"
+  - name: "WinDbg Preview – Breakpoints menu"
     href: windbg-breakpoints-preview.md
-  - name: "WinDbg Preview – Data Model"
+  - name: "WinDbg Preview – Time Travel menu"
+    href: windbg-timetravel-preview.md
+  - name: "WinDbg Preview – Data Model menu"
     href: windbg-data-model-preview.md
-  - name: "WinDbg Preview – Scripting"
+  - name: "WinDbg Preview – Scripting menu"
     href: windbg-scripting-preview.md
-  - name: "Time Travel Debugging - Overview"
+  - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
+    href: windbg-notes-etc-preview.md
+  - name: "Time Travel Debugging"
 # Auto-expanded node
     items: 
     - name: "Time Travel Debugging - Overview"
       href: time-travel-debugging-overview.md
-    - name: "Time Travel Debugging - Recording"
+    - name: "Time Travel Debugging - Record a trace"
       href: time-travel-debugging-record.md
     - name: "Time Travel Debugging - Replay a trace"
       href: time-travel-debugging-replay.md
+    - name: "WinDbg Preview - Timelines"
+      href: windbg-timeline-preview.md
     - name: "Time Travel Debugging - Working with trace files"
       href: time-travel-debugging-trace-file-information.md
     - name: "Time Travel Debugging - Troubleshooting"
       href: time-travel-debugging-troubleshooting.md
     - name: "Time Travel Debugging - Navigation commands"
       href: time-travel-debugging-navigation-commands.md
-    - name: "Time Travel Debugging - Extension Commands"
+    - name: "Time Travel Debugging - Commands"
 # Auto-expanded node
       items: 
-      - name: "Time Travel Debugging - Extension Commands"
+      - name: "Time Travel Debugging - Overview of Extension Commands"
         href: time-travel-debugging-extension-commands.md
       - name: "Time Travel Debugging - !tt (time travel)"
         href: time-travel-debugging-extension-tt.md
@@ -123,9 +129,9 @@
         href: time-travel-debugging-extension-index.md
       - name: "Time Travel Debugging - !positions (time travel)"
         href: time-travel-debugging-extension-positions.md
-    - name: "Time Travel Debugging - Sample App Walkthrough"
+    - name: "Time Travel Debugging - Walkthrough"
       href: time-travel-debugging-walkthrough.md
-    - name: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
+    - name: "Time Travel Debugging - Time Travel Debugging objects"
 # Auto-expanded node
       items: 
       - name: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
@@ -896,6 +902,8 @@
       href: native-objects-in-javascript-extensions.md
     - name: "Native Debugger Objects in JavaScript Extensions - Debugger Object Details"
       href: native-objects-in-javascript-extensions-debugger-objects.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Type Objects"
+      href: native-objects-in-javascript-extensions-type-objects.md
     - name: "Native Debugger Objects in JavaScript Extensions - Design Considerations"
       href: native-objects-in-javascript-extensions-design-considerations.md   
   - name: "Native Debugger Objects in NatVis"
