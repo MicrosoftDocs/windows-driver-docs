@@ -23,11 +23,11 @@ The following matrix lists NVME features and indicates the support provided by *
 | Reservations                                                   |   | |
 | Host Memory Buffer                                             | X | |
 | Replay Protected Memory Block                                  |   | |
-| Device Self-test Operations                                    | X | Supported through IOCTL_STORAGE_PROTOCOL_COMMAND |
-| Namespace Management                                           | X | Supported through IOCTL_STORAGE_PROTOCOL_COMMAND in WinPE mode |
+| Device Self-test Operations                                    | X | No native support; feature available through IOCTL_STORAGE_PROTOCOL_COMMAND.|
+| Namespace Management                                           | X | No native support; feature available through IOCTL_STORAGE_PROTOCOL_COMMAND in WinPE mode. |
 | Boot Partitions                                                |   | |
-| Telemetry                                                      | X | Supported through IOCTL_SCSI_PASS_THROUGH using command SCSIOP_READ_DATA_BUFF16 with buffer mode as READ_BUFFER_MODE_ERROR_HISTORY |
-| Sanitize Operations                                            |   | |
+| Telemetry                                                      | X | Supported through IOCTL_SCSI_PASS_THROUGH using command SCSIOP_READ_DATA_BUFF16 with buffer mode as READ_BUFFER_MODE_ERROR_HISTORY. Also available through StorageAdapterProtocolSpecificProperty/StorageDeviceProtocolSpecificProperty from IOCTL_STORAGE_QUERY_PROPERTY. For host telemetry, this is also available through IOCTL_STORAGE_GET_DEVICE_INTERNAL_LOG. |
+| Sanitize Operations                                            | X | Supported through IOCTL_STORAGE_PROTOCOL_COMMAND in WinPE mode. |
 | Read Recovery Level                                            |   | |
 | Endurance Groups                                               | X | Information can be retrieved through IOCTL_STORAGE_QUERY_PROPERTY |
 | Predictable Latency Mode                                       |   | |
