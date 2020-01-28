@@ -60,14 +60,6 @@
           href: percent-machines-with-at-least-one-audio-crash.md
         - name: "Percent of machines with at least one audio hang"
           href: pct-machines-with-at-least-one-audio-hang.md
-      - name: "Bluetooth" 
-        items:
-        - name: "Bluetooth measures"
-          href: bluetooth-measures.md
-        - name: "Percent of Bluetooth pairing failures"
-          href: bluetooth-pairing-failure-rate-per-machine.md
-        - name: "Percent of Bluetooth connection failures"
-          href: bluetooth-connect-failure-rate-for-machines-with-the-driver.md
       - name: "Camera"
         items:
         - name: "Camera measures"
@@ -130,6 +122,8 @@
               href: user-mode-reliability-for-crashes-in-windows-components.md
             - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
               href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
+            - name: "Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary"
+              href: graphics-tdr-integrated-gpu.md
           - name: "Ecosystem audience measures"
             items:
             - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
@@ -154,6 +148,8 @@
               href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
             - name: "Ecosystem Netflix HWDRM Quality Comparison"
               href: ecosystem-netflix-hwdrm-quality-comparison.md
+            - name: "Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary"
+              href: graphics-ecosystem-integrated-gpu.md
         - name: "Wi-Fi"
           items:
           - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
