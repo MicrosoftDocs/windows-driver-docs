@@ -94,7 +94,7 @@ Use device interfaces to share state with other drivers and components. Do not h
 To read and write device interface registry state, use one of the following options, based on the platform you are using:
 
 * [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) (WDM)
-* [**CM_Open_Device_Interface_Key**](https://docs.microsoft.com/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keya) (user-mode code)
+* [**CM_Open_Device_Interface_Key**](https://docs.microsoft.com/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw) (user-mode code)
 * [INF AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive using HKR *reg-root* entries in an *add-registry-section* referenced from an [add-interface-section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addinterface-directive) section
 
 ### Service Registry State
@@ -119,7 +119,7 @@ HKR, Parameters, ExampleValue, 0x00010001, 1
 
 To access the location of this state, use one of these functions, based on your platform:
 
-* [**IoOpenDriverRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) (WDM)
+* [**IoOpenDriverRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM)
 * [**WdfDriverOpenParametersRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) (WDF)
 * **GetServiceRegistryStateKey** (Win32 services)
 
@@ -136,8 +136,7 @@ Both Win32 and driver services read and write state about themselves.
 
 To access its own internal state values, a service uses one of the following options: 
 
-* [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) (WDM)
-* [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) (KMDF)
+* [**IoGetDriverDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) (WDM and KMDF)
 * [**WdfDriverRetrieveDriverDataDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring) (UMDF)
 * **GetServiceDirectory** (Win32 services)
 
