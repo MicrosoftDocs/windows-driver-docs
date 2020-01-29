@@ -12,7 +12,7 @@ ms.localizationpriority: High
 
 -   April, 2015
 
-** OS version**
+**OS version**
 
 -   Windows 10
 -   Windows 8.1
