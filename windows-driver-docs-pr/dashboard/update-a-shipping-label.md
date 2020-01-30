@@ -21,7 +21,7 @@ This method has the following syntax. The other sections in this topic provide u
 
 | Method | Request URI |
 |:--|:--|
-| PATCH | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` |
+| PATCH | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}/shippingLabels/{shippingLabelId}` |
 
 The *productID*, *submissionID* and *shippingLabelId* in the method represent the product, submission and shipping label to be updated.
 
@@ -107,7 +107,7 @@ Points to note:
 The following example demonstrates how to update a product.
 
 ```json
-PATCH https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300 HTTP/1.1
+PATCH https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964156/submissions/1152921504621467600/shippingLabels/1152921504606980300 HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
