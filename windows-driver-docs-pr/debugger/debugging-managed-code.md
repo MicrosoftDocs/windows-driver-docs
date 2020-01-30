@@ -168,7 +168,7 @@ start             end                 module name
 ...
 ```
 
-In the preceding example, notice that the version of the CLR (clr.dll) matches the version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
+In the preceding example, notice that the version of the CLR (clr.dll) matches the product version of the DAC (mscordacwks.dll): v4.0.30319. Also notice that both components are 64-bit.
 
 ### <span id="Using_the_SOS_Debugging_Extension_"></span><span id="using_the_sos_debugging_extension_"></span><span id="USING_THE_SOS_DEBUGGING_EXTENSION_"></span>Using the SOS Debugging Extension
 
@@ -190,12 +190,3 @@ To test the SOS debugging extension, enter **!sos.help**. Then try one of the co
 ### <span id="Notes"></span><span id="notes"></span><span id="NOTES"></span>Notes
 
 Sometimes a managed-code application loads more than one version of the CLR. In that case, you must specify which version of the DAC to load. For more information, see [**.cordll**](-cordll--control-clr-debugging-.md).
-
- 
-
- 
-
-
-
-
-
