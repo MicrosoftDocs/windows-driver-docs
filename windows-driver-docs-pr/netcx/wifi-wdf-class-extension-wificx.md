@@ -18,7 +18,7 @@ A Wifi-NetAdapter client driver performs 3 categories of tasks based on its rela
 In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), a WifiCx client driver must also perform the following tasks in its [EvtDriverDeviceAdd](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) callback function:
 1.	Call  WifiDeviceInitConfig after calling NetDeviceInitConfig but before calling [WdfDeviceCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [WDFDEVICE_INIT](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/wdfdevice_init) object passed in by the framework.
 
-2.	Call WifiDeviceInitialize to register WifCx device-specific callback functions using an initialized WIFI_DEVICE_CONFIG structure and the WDFDEVICE object obtained from WdfDeviceCreate.
+2.	Call WifiDeviceInitialize to register WifCx device-specific callback functions using an initialized WIFI\_DEVICE\_CONFIG structure and the WDFDEVICE object obtained from WdfDeviceCreate.
 The following example demonstrates how to initialize the WifiCx device. Error handling has been left out for clarity.
 
 ```C++
@@ -45,11 +45,11 @@ This message flow diagram illustrates the initialization process.
 
 ### **Default (station) adapter creation flow**
 
-Next, the client driver must set all the WiFi specific device capabilities, typically in the [EvtDevicePrepareHardware](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. Note that WifiCx/WDI will no longer be querying for these capabilities via WDI_GET_ADAPTER_CAPABILITIES command. Also, unlike other types of NetAdapterCx drivers, WiFi client drivers must not create the NETADAPTER object from within the EvtDriverDeviceAdd callback function. Instead, it will be instructed by WifiCx to create the default NetAdapter (station) later using the EvtWifiCxDeviceCreateAdapter callback (after the client’s PrepareHardware WDF callback is successful). Note that WifiCx/WDI will no longer call WDI_TASK_CREATE_PORT command.
+Next, the client driver must set all the WiFi specific device capabilities, typically in the [EvtDevicePrepareHardware](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function that follows. If your hardware needs interrupts to be enabled in order to query firmware capabilities, this can be done in the [EvtWdfDeviceD0EntryPostInterruptsEnabled](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry_post_interrupts_enabled). Note that WifiCx will no longer be calling WDI\_TASK\_OPEN\WDI\_TASK\_CLOSE to instruct clients to load\unload firmware nor will it be querying for Wi-Fi capabilities via WDI\_GET\_ADAPTER\_CAPABILITIES command. Also, unlike other types of NetAdapterCx drivers, WiFi client drivers must not create the NETADAPTER object from within the EvtDriverDeviceAdd callback function. Instead, it will be instructed by WifiCx to create the default NetAdapter (station) later using the EvtWifiCxDeviceCreateAdapter callback (after the client’s PrepareHardware WDF callback is successful). Note that WifiCx/WDI will no longer call WDI\_TASK\_CREATE\_PORT command.
 
 In this call, the client driver needs to call into NetAdapterCx to create the new NetAdapter object and then call into WifiCx (using WifiCxAdapterInitialize API) to initialize the WiFiCx context and associate it with this NetAdapter object.
 
-If this succeeds, WifiCx will then go on to send initialization commands for the device/adapter (TASK_OPEN, SET_ADAPTER_CONFIGURATION, TASK_SET_RADIO_STATE if necessary etc).
+If this succeeds, WifiCx will then go on to send initialization commands for the device/adapter (TASK_OPEN, SET\_ADAPTER\_CONFIGURATION, TASK\_SET\_RADIO\_STATE if necessary etc).
 
 ![WiFiCx client driver station adapter creation](images/wificx_station.png)
 
@@ -57,7 +57,7 @@ If this succeeds, WifiCx will then go on to send initialization commands for the
 
 WifiCx uses WDI commands for most control path operations as defined in the WDI spec. The commands are exchanged through a set of callback functions provided by the client driver and APIs provided by WifiCx. The following function calls are used by WifiCx to replicate WDI command handling:
 - WifiCx sends a WDI command message to the client driver by invoking its EvtWifiDeviceSendCommand callback function. The client driver sends the M3 for the command asynchronously by calling WifiRequestComplete. The client driver calls API WifiRequestGetInOutBuffer to retrieve the input/output buffer and buffer lengths and WifiRequestGetMessageId to retrieve the WDI message ID of the command.
-If this was a set command and the original request did not conatin a large enough buffer, the client should call WifiRequestSetBytesNeeded to set the needed buffer size and then fail the request with status BUFFER_OVERFLOW.
+If this was a set command and the original request did not conatin a large enough buffer, the client should call WifiRequestSetBytesNeeded to set the needed buffer size and then fail the request with status BUFFER\_OVERFLOW.
 
 - If this is a task command, the client driver needs to later send the associated M4 indication by calling WifiDeviceReceiveIndication and pass the indication buffer with a WDI header that contains the same transaction ID as in the M1.
 
@@ -69,7 +69,7 @@ If this was a set command and the original request did not conatin a large enoug
 Since 2001 (Drop 2) the Wi-Fi Direct Miracast scenario will be supported. To enable Miracast, the client driver must implement the following sections.
 ### Wi-Fi Direct Device Capabilities
 
-WIFI_WIFIDIRECT_CAPABILITIES is an new introduced structure merged from the WDI_P2P_CAPABILITIES and WDI_AP_CAPABILITIES. The client driver need to call WifiDeviceSetWiFiDirectCapabilities API for updating WifiCx in the set device capabilities phase.
+WIFI\_WIFIDIRECT\_CAPABILITIES is an new introduced structure merged from the WDI\_P2P\_CAPABILITIES and WDI\_AP\_CAPABILITIES. The client driver need to call WifiDeviceSetWiFiDirectCapabilities API for updating WifiCx in the set device capabilities phase.
 ```C++
 WIFI_WIFIDIRECT_CAPABILITIES wfdCapabilities = {};
 
