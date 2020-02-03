@@ -45,7 +45,7 @@ A pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardw
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 A pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_SET\_SECURITY and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_SET\_SECURITY and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_SET\_SECURITY.
