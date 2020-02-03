@@ -59,7 +59,7 @@ Pointer to a caller-supplied output buffer to be passed to the device driver for
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL.
