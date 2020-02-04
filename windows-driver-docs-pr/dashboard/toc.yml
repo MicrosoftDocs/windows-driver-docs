@@ -129,7 +129,7 @@
           - name: "Myriad of machines with discrete GPU that had a TDR caused by a crash in the graphics driver binary" 
             href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
           - name: "Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary"
-            href: graphics-ecosystem-integrated-gpu.md
+            href: graphics-ecosystem-integrated-gpu-with-tdr.md
           - name: "Number of user mode crashes in Microsoft Edge"
             href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
           - name: "Number of user mode crashes in top Microsoft apps"
