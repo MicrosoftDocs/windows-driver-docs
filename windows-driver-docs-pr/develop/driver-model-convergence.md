@@ -68,8 +68,8 @@ To make your device work on Windows and Windows Phone releases before Windows 1
 <tr class="odd">
 <td align="left">Location</td>
 <td align="left">Yes</td>
-<td align="left"><p>New GNSS (Global Navigation Satellite System) adapter DDI for Windows 10.</p>
-<p>Windows 8.1 sensor will be supported using a GNSS legacy PE.</p></td>
+<td align="left"><p>New Global Navigation Satellite System (GNSS) adapter DDI for Windows 10.</p>
+<p>Windows 8.1 sensor will be supported using a Global Navigation Satellite System (GNSS) legacy PE.</p></td>
 </tr>
 <tr class="even">
 <td align="left">NFC</td>
