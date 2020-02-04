@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Global Navigation Satellite System (GNSS) driver overview
 
-Use the Global Navigation Satellite System (GNSS)S driver design guide to learn how to implement the **DeviceIoControl** APIs with the GNSS driver so that a high level operating system component (HLOS) like the GNSS adapter can access the desired GNSS functionality.
+Use the Global Navigation Satellite System (GNSS) driver design guide to learn how to implement the **DeviceIoControl** APIs with the GNSS driver so that a high level operating system component (HLOS) like the GNSS adapter can access the desired GNSS functionality.
 
 The GNSS functionality can be augmented by an IHV to provide positions at lower power cost or to provide better performance when needed.
 
