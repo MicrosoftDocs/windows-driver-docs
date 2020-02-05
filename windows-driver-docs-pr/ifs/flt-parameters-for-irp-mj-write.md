@@ -53,13 +53,13 @@ Starting byte offset within the file of the data to be written.
 Pointer to a buffer that contains the data to be written to the file. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
 
 **MdlAddress**  
-Address of a memory descriptor list (MDL) that describes the buffer that the **WriteBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **writeBuffer**. See **Remarks**.
+Address of a memory descriptor list (MDL) that describes the buffer that the **WriteBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **WriteBuffer**. See **Remarks**.
 
 ## Remarks
 
 The [**FLT_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_WRITE operations contains the parameters for a write operation represented by a callback data ([**FLT_CALLBACK_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
-If both a **writeBuffer** and **MdlAddress** buffer are provided, it is recommended that minifilters use the MDL. The memory that **WriteBuffer** points to is valid when it is a user mode address being accessed within the context of the calling process, or if it is a kernel mode address.
+If both a **WriteBuffer** and **MdlAddress** buffer are provided, it is recommended that minifilters use the MDL. The memory that **WriteBuffer** points to is valid when it is a user mode address being accessed within the context of the calling process, or if it is a kernel mode address.
 
 If a minifilter changes the value of **MdlAddress**, then after its post operation callback, Filter Manager will free the MDL currently stored in **MdlAddress** and restore the previous value of **MdlAddress**.
 

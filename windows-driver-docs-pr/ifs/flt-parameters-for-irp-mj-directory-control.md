@@ -78,10 +78,10 @@ Specifies one of the values described below.
 Index of the file where the directory scan begins. Ignored if the SL_INDEX_SPECIFIED flag is not set. This parameter cannot be specified in any Win32 function or kernel-mode support routine. Currently it is used only by the NT virtual DOS machine (NTVDM), which exists only on 32-bit NT-based operating systems. Note that the file index is undefined for file systems, such as NTFS, in which the position of a file within the parent directory is not fixed and can be changed at any time to maintain sort order.
 
 **DirectoryBuffer**  
-Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **QueryDirectory.MdlAddress**. See **Remarks**.
 
 **MdlAddress**  
-Address of a memory descriptor list (MDL) that describes the buffer that the **QueryDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **DirectoryBuffer**. See **Remarks**.
+Address of a memory descriptor list (MDL) that describes the buffer that the **QueryDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **QueryDirectory.DirectoryBuffer**. See **Remarks**.
 
 **NotifyDirectory**  
 Union component used for IRP_MN_NOTIFY_CHANGE_DIRECTORY operations.
@@ -115,10 +115,10 @@ Not currently used.
 Not currently used.
 
 **DirectoryBuffer**  
-Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+Pointer to a caller-supplied output buffer that receives the requested information about the contents of the directory. This member is optional and can be NULL if a MDL is provided in **NotifyDirectory.MdlAddress**. See **Remarks**.
 
 **MdlAddress**  
-Address of an MDL that describes the buffer that the **NotifyDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **DirectoryBuffer**. See **Remarks**.
+Address of an MDL that describes the buffer that the **NotifyDirectory.DirectoryBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **NotifyDirectory.DirectoryBuffer**. See **Remarks**.
 
 ## Remarks
 
