@@ -106,7 +106,7 @@ This resource represents a submission of a product.
   "id": 1152921504621442000,
   "productId": 13635057453741328,
    "workflowStatus": {
-      “currentStep": " finalizeIngestion",
+      "currentStep": " finalizeIngestion",
       " state": " completed",
       " messages": []
     },
@@ -147,7 +147,7 @@ This object represents the status of workflow for a given entity
 
 ```json
 {
-      “currentStep": " finalizeIngestion",
+      "currentStep": " finalizeIngestion",
       " state": " completed",
       " messages": []
     }
@@ -203,7 +203,7 @@ This object represents a list of helpful links for the containing entity
 
 ```json
 {
-      “href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     }
@@ -466,7 +466,6 @@ The error codes are applicable to all web methods of the API. If the request can
 | 422 - Unprocessable Entity | Validation failures. |
 | 500 - Internal Server Error | Unrecoverable error occurred at the API server. |
 
-
 If there are functional validation failures, the response body will contain one of the following functional error codes.
 
 | Error Code | Error Message | Description |
@@ -492,4 +491,4 @@ If there are functional validation failures, the response body will contain one 
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+* [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
