@@ -35,7 +35,7 @@ Configuration information for the USB device are under:
 
 **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN**
 
-This table describes the subkeys that OEMs can modify under this key. More information about the supported values for each subkey is provided in sections below.
+This table describes its subkeys. Some of them can be modified by OEMs. More information about the supported values for each subkey is provided in sections below.
 
 <table>
 <colgroup>
@@ -67,7 +67,7 @@ This table describes the subkeys that OEMs can modify under this key. More infor
 </tr>
 <tr class="odd">
 <td><strong>Configurations\Default</strong></td>
-<td>This subkey contains values for the default configuration. The interfaces in the default configuration are added before the current configuration present when the <strong>IncludeDefaultCfg</strong> value is set under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN key.</td>
+<td>This is a Microsoft-owned subkey. It contains values for the default configuration. The interfaces in the default configuration are added before the current configuration present when the <strong>IncludeDefaultCfg</strong> value is set to 1 under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN key.</td>
 </tr>
 <tr class="even">
 <td><strong>Interfaces</strong></td>
@@ -78,7 +78,7 @@ This table describes the subkeys that OEMs can modify under this key. More infor
 
  
 
-This table describes the values that OEMs can modify in the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN** key. Values that are not modified in this key assume the default values defined by Microsoft under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Default**.
+This table describes the values that OEMs can define in the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN** key. Values that are not defined in this key assume the default values defined by Microsoft under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Default**.
 
 All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and **ProductString** values. OEMs that create and add their own interfaces must also set **CurrentConfiguration** to the name of the subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Configurations** that includes their interfaces in the **InterfaceList**.
 
