@@ -84,7 +84,7 @@ All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and *
 
 | Value | Type | Owner | Description|
 |--|--|--|--|
-| **IncludeDefaultCfg** | REG\_DWORD | OEM | Set to 0 when OEMs do not want to include the interfaces of the Default configuration such as IpOverUsb or MTP. When ommited, the default value is 1. |
+| **IncludeDefaultCfg** | REG\_DWORD | OEM | Set to 1 when OEMs want to include the interfaces of the Default configuration such as IpOverUsb or MTP. |
 | **idVendor** | REG\_DWORD | OEM | The vendor identifier for the device descriptor that is sent to the host during enumeration. |
 | **idProduct** | REG\_DWORD | OEM | The product identifier for the device descriptor that is sent to the host during enumeration. |
 | **ManufacturerString** | REG\_SZ| OEM | The manufacturer string that is sent to the host to identify the manufacturer of the device. |
