@@ -115,7 +115,7 @@ Pointer to a caller-supplied output buffer to be passed to the file system or fi
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_FILE\_SYSTEM\_CONTROL and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_FILE\_SYSTEM\_CONTROL and should not be used.
 
 <a href="" id="irpsp--flags"></a>*IrpSp-&gt;Flags*  
 The following flag can be set for IRP\_MN\_VERIFY\_VOLUME:
