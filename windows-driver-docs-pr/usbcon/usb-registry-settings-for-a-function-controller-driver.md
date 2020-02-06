@@ -97,7 +97,7 @@ All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and *
 ## USBFN\\Configurations registry key
 
 
-This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Configurations**. Each subkey represents a different USB configuration. If the OEM wants to create their own interface, the OEM must define a new configuration which contains the interfaces to be used. To do this, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Configurations** that uses the name of the configuration and populate the subkey with the values in this table. Additionally, for the USB driver to use the new configuration, the **CurrentConfiguration** value (described in the preceding table) must be set to the name of the configuration subkey.
+This table describes the values that OEMs can define for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Configurations**. Each subkey represents a different USB configuration. If the OEM wants to create their own interface, the OEM must define a new configuration which contains the interfaces to be used. To do this, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Configurations** that uses the name of the configuration and populate the subkey with the values in this table. Additionally, for the USB driver to use the new configuration, the **CurrentConfiguration** value (described in the preceding table) must be set to the name of the configuration subkey.
 
 <table>
 <colgroup>
@@ -119,14 +119,14 @@ This table describes the values that OEMs can modify for subkeys under **HKEY\_L
 <td><strong>InterfaceList</strong></td>
 <td>REG_MULTI_SZ</td>
 <td>OEM or Microsoft</td>
-<td><p>Contains a list of interface names that correspond to interface subkeys under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Interfaces</strong>, the IAD associations defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Associations</strong>, and the alternate interfaces defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Alternates</strong>. Those keys determine the interfaces that are used to describe the composite configuration descriptor.</p>
-<p>If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong> key is set to 1, this list is appended to the Microsoft-owned default interface list to create the complete interface list that the device will use to enumerate.</p></td>
+<td><p>Contains a list of interface names that correspond to interface subkeys under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Interfaces</strong>, the IAD associations defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Associations</strong>, and the alternate interfaces defined under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Alternates</strong>. Those keys determine the interfaces that are used to describe the composite configuration descriptor.</p>
+<p>If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN</strong> key is set to 1, this list is appended to the Microsoft-owned default interface list to create the complete interface list that the device will use to enumerate.</p></td>
 </tr>
 <tr class="even">
 <td><strong>MSOSCompatIdDescriptor</strong></td>
 <td>REG_BINARY</td>
 <td>OEM or Microsoft</td>
-<td><p>Optional. Defines an Extended Compat ID OS Feature Descriptor for the configuration. If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong> key is set to 1, the functions in this descriptor are appended to the functions and interfaces in the default configuration.</p></td>
+<td><p>Optional. Defines an Extended Compat ID OS Feature Descriptor for the configuration. If the <strong>IncludeDefaultCfg</strong> value under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN</strong> key is set to 1, the functions in this descriptor are appended to the functions and interfaces in the default configuration.</p></td>
 </tr>
 </tbody>
 </table>
@@ -136,9 +136,9 @@ This table describes the values that OEMs can modify for subkeys under **HKEY\_L
 ## USBFN\\Interfaces registry key
 
 
-This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Interfaces**.
+This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Interfaces**.
 
-Each subkey represents a different USB interface. To define an interface, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Interfaces** using the name of the interface, and populate it with the values in the table below. Additionally, an interface will only be included if the interface is part of the **InterfaceList** of the **CurrentConfiguration**.
+Each subkey represents a different USB interface. To define an interface, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Interfaces** using the name of the interface, and populate it with the values in the table below. Additionally, an interface will only be included if the interface is part of the **InterfaceList** of the **CurrentConfiguration**.
 
 | Value                              | Type        | Owner            | Description                                                                                                                                                                                                                                                                                                  |
 |------------------------------------|-------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -152,13 +152,13 @@ Each subkey represents a different USB interface. To define an interface, create
 ## USBFN\\Alternates registry key
 
 
-The alternates subkey is used to define a single interface that has one or more alternate interfaces. This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Alternates**.
+The alternates subkey is used to define a single interface that has one or more alternate interfaces. This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Alternates**.
 
-Each subkey represents a different interface. To define an interface with alternate settings, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Alternates** by using the name of the interface, and populate it with the values in the table below.
+Each subkey represents a different interface. To define an interface with alternate settings, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Alternates** by using the name of the interface, and populate it with the values in the table below.
 
 | Value                              | Type           | Owner            | Description                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------|----------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **InterfaceList**                  | REG\_MULTI\_SZ | OEM or Microsoft | A list of two of more interface names that correspond to interfaces defined under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Interfaces**. That key collectively defines an interface with alternate settings. The first interface corresponds to alternate setting 0, the second interface corresponds to alternate setting 1, and so on. |
+| **InterfaceList**                  | REG\_MULTI\_SZ | OEM or Microsoft | A list of two of more interface names that correspond to interfaces defined under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Interfaces**. That key collectively defines an interface with alternate settings. The first interface corresponds to alternate setting 0, the second interface corresponds to alternate setting 1, and so on. |
 | **InterfaceNumber**                | REG\_DWORD     | OEM or Microsoft | Optional. This value is used to assign a fixed interface number to a function. Interface numbers 0-1F are reserved for legacy functions, 20-3F are reserved for Microsoft, and 40-5F are reserved for use by OEMs.                                                                                                                                                 |
 | **MSOSExtendedPropertyDescriptor** | REG\_BINARY    | OEM or Microsoft | Optional. Defines an Extended Property OS Feature Descriptor for the interface.                                                                                                                                                                                                                                                                                    |
 
@@ -167,9 +167,9 @@ Each subkey represents a different interface. To define an interface with altern
 ## USBFN\\Associations registry key
 
 
-OEMs can specify associations by defining Interface Association Descriptors (IADs). Each IAD allows multiple interfaces to be grouped into a single function. This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Associations**.
+OEMs can specify associations by defining Interface Association Descriptors (IADs). Each IAD allows multiple interfaces to be grouped into a single function. This table describes the values that OEMs can modify for subkeys under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Associations**.
 
-Each subkey represents a different IAD. To define an association, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Associations** by using the name of the IAD, and populate it with the values in the table below.
+Each subkey represents a different IAD. To define an association, create a subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Associations** by using the name of the IAD, and populate it with the values in the table below.
 
 | Value                              | Type           | Owner            | Description                                                                                                                                                                                                                 |
 |------------------------------------|----------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
