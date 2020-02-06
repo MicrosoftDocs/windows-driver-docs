@@ -24,7 +24,7 @@ OEMs must set several registry values to make sure that their device enumerates 
 
 Registry keys related to the device-side USB drivers are under:
 
-**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**
+**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN**
 
 This topic describes settings for the preceding key and subkeys that define the device, configuration, and interface descriptors for the device.
 
@@ -33,7 +33,7 @@ This topic describes settings for the preceding key and subkeys that define the 
 
 Configuration information for the USB device are under:
 
-**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**
+**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN**
 
 This table describes the subkeys that OEMs can modify under this key. More information about the supported values for each subkey is provided in sections below.
 
@@ -51,48 +51,46 @@ This table describes the subkeys that OEMs can modify under this key. More infor
 <tbody>
 <tr class="odd">
 <td><strong>Alternates</strong></td>
-<td>This subkey contains additional subkeys that describe an interface that has one or more alternate settings:
-<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Alternates</strong></p></td>
+<td>This subkey contains additional subkeys that describe an interface that has one or more alternate settings.</td>
 </tr>
 <tr class="even">
 <td><strong>Associations</strong></td>
-<td>This subkey defines Interface Association Descriptors (IADs). Each IAD allows multiple interfaces to be grouped into a single function. Each subkey represents a different IAD and OEMs can modify the values for those subkeys.
-<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Associations</strong></p></td>
+<td>This subkey defines Interface Association Descriptors (IADs). Each IAD allows multiple interfaces to be grouped into a single function. Each subkey represents a different IAD and OEMs can modify the values for those subkeys.</td>
 </tr>
 <tr class="odd">
 <td><strong>Default</strong></td>
-<td>This subkey contains default values that are used to describe device-specific settings such as the VID and PID. This is a Microsoft-owned subkey whose values are overridden by those in the parent key:
-<p><strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong></p></td>
+<td>This subkey contains default values that are used to describe device-specific settings such as the VID and PID. This is a Microsoft-owned subkey whose values are overridden by those in the parent key.</td>
 </tr>
 <tr class="even">
 <td><strong>Configurations</strong></td>
-<td>This subkey contains additional subkeys that contain configuration descriptor values that are used during USB enumeration. For example, the standard test configuration might exist under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Configurations</strong>&lt;strong&gt;TestConfigClassic</strong>.</td>
+<td>This subkey contains additional subkeys that contain configuration descriptor values that are used during USB enumeration. For example, the standard test configuration might exist under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations\TestConfig</strong>.</td>
 </tr>
 <tr class="odd">
 <td><strong>Configurations\Default</strong></td>
-<td>This subkey contains values for the default configuration. The interfaces in the default configuration are added before the current configuration present when the <strong>IncludeDefaultCfg</strong> value is set under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong> key.</td>
+<td>This subkey contains values for the default configuration. The interfaces in the default configuration are added before the current configuration present when the <strong>IncludeDefaultCfg</strong> value is set under the <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN key.</td>
 </tr>
 <tr class="even">
 <td><strong>Interfaces</strong></td>
-<td>This subkey contains additional subkeys that describe specific interface descriptors. For example, the IP over USB configuration may reside under a subkey named <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control</strong>&lt;strong&gt;USBFN</strong>&lt;strong&gt;Interfaces</strong>&lt;strong&gt;IpOverUsb</strong>. The name of this subkey for an interface is what determines the hardware ID of the class driver. In the IP over USB example, the _HID of the loaded PDO is <strong>USBFN\IpOverUsb</strong>.</td>
+<td>This subkey contains additional subkeys that describe specific interface descriptors. For example, the IP over USB interface may reside under <strong>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Interfaces\IpOverUsb</strong>. The name of the interface subkey is also used as the hardware ID of the USBFN child device for loading the USBFn class driver. In the IP over USB example, the hardware ID of the USBFN child device will be <strong>USBFN\IpOverUsb</strong>.</td>
 </tr>
 </tbody>
 </table>
 
  
 
-This table describes the values that OEMs can modify in the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN** key. Values that are not listed in this table assume the default values defined by Microsoft under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Default**.
+This table describes the values that OEMs can modify in the **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN** key. Values that are not modified in this key assume the default values defined by Microsoft under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Default**.
 
-All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and **ProductString** values. OEMs that create and add their own interfaces must also set **CurrentConfiguration** to the name of the subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control**\\**USBFN**\\**Configurations** that includes their interfaces in the **InterfaceList**.
+All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and **ProductString** values. OEMs that create and add their own interfaces must also set **CurrentConfiguration** to the name of the subkey under **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\USBFN\\Configurations** that includes their interfaces in the **InterfaceList**.
 
-| Value                    | Type       | Owner | Description                                                                                                                                                                                                                                                                                                                |
-|--------------------------|------------|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **idVendor**             | REG\_DWORD | OEM   | The vendor identifier for the device descriptor that is sent to the host during enumeration.                                                                                                                                                                                                                               |
-| **idProduct**            | REG\_DWORD | OEM   | The product identifier for the device descriptor that is sent to the host during enumeration.                                                                                                                                                                                                                              |
-| **ManufacturerString**   | REG\_SZ    | OEM   | The manufacturer string that is sent to the host to identify the manufacturer of the device.                                                                                                                                                                                                                               |
-| **ProductString**        | REG\_SZ    | OEM   | A string that describes the device as a product. The default value is Windows 10 Mobile Device. This value is used as the display name of the device in the connected computer's user interface. OEMs should make sure that this value matches the value of the PhoneModelName value under the DeviceTargetingInfo subkey. |
-| **iSerialNumber**        | REG\_DWORD | OEM   | If this value is set to 0, then the device does not have a serial number. If this value is non-zero or does not exist, then the serial number is generated uniquely per device.                                                                                                                                            |
-| **CurrentConfiguration** | REG\_SZ    | OEM   | This string must correspond to the name of a configuration subkey. This string determines which configuration to use to build a configuration descriptor for USB device enumeration.                                                                                                                                       |
+| Value | Type | Owner | Description|
+|--|--|--|--|
+| **IncludeDefaultCfg** | REG\_DWORD | OEM | Set to 0 when OEMs do not want to include the interfaces of the Default configuration such as IpOverUsb or MTP. When ommited, the default value is 1. |
+| **idVendor** | REG\_DWORD | OEM | The vendor identifier for the device descriptor that is sent to the host during enumeration. |
+| **idProduct** | REG\_DWORD | OEM | The product identifier for the device descriptor that is sent to the host during enumeration. |
+| **ManufacturerString** | REG\_SZ| OEM | The manufacturer string that is sent to the host to identify the manufacturer of the device. |
+| **ProductString** | REG\_SZ| OEM | A string that describes the device as a product. The default value is Windows 10 Mobile Device. This value is used as the display name of the device in the connected computer's user interface. OEMs should make sure that this value matches the value of the PhoneModelName value under the DeviceTargetingInfo subkey. |
+| **iSerialNumber**| REG\_DWORD | OEM | If this value is set to 0, then the device does not have a serial number. If this value is non-zero or does not exist, then the serial number is generated uniquely per device. |
+| **CurrentConfiguration** | REG\_SZ | OEM | This string must correspond to the name of a configuration subkey. This string determines which configuration to use to build a configuration descriptor for USB device enumeration. |
 
  
 
