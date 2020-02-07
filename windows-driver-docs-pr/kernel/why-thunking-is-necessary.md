@@ -23,7 +23,7 @@ On 32-bit Windows, the size of the DRIVER\_DATA structure is 12 bytes.
 
 |HANDLE Event|UNICODE\_STRING ObjectName|||
 |----|----|----|---|
-||USHORT Length|USHORT Maximum Length|PWSTR Buffer|
+||**USHORT Length**|**USHORT Maximum Length**|**PWSTR Buffer**|
 |32 bits|16 bits|16 bits|32 bits|
 |(4 bytes)|(2 bytes)|(2 bytes)|(4 bytes)|
 
