@@ -118,6 +118,7 @@ If set to a nonzero value, the framework's loader sends a variety of messages to
 
 ## UMDF
 
+### Registry values in WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}
 
 You can also set the following registry values in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}**. These values affect all UMDF drivers on the system.
 
@@ -138,7 +139,13 @@ Contains a delay value in seconds. Causes WUDFHost to delay the specified number
 
 Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.
 
+> [!NOTE]
+> Starting in UMDF 2.31, you can set a per-driver **HostProcessDbgBreakOnDriverLoad**.  For details, see below.
+
+
 You can also set these registry values by using the WDF Verifier tool (WdfVerifier.exe) that is included in the WDK. For information on using this tool with UMDF drivers, see [Managing UMDF Verifier Settings with WDF Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab).
+
+### Registry values in WUDF\\DebugMode
 
 These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\DebugMode**:
 
@@ -170,7 +177,8 @@ These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\
 </tbody>
 </table>
 
- 
+### Registry values in WUDF\\DebugMode
+
 
 When you use the F5 option in Microsoft Visual Studio, all three flags are set for the deployed driver.
 
@@ -184,13 +192,18 @@ If this value is non-zero and a kernel debugger is connected to the machine, the
 
 The reflector also breaks into the kernel debugger if there is an unexpected termination of the host process (e.g. by a non-UMDF component or due to an unhandled exception). If there are multiple device stacks pooled in the host process that is being terminated, the reflector breaks into the debugger multiple times, once for each device stack loaded in the host process.
 
+### Registry values in WUDF\Services\<service name>\Parameters\Wdf
+
+UMDF version 2.31 includes a new registry key in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\<service name>\\Parameters\\Wdf**.
+
+**HostProcessDbgBreakOnDriverLoad** (**REG\_DWORD**):
+
+Set this registry key to `0x80000000` to break into the kernel debugger when the specified UMDF driver is loaded.
+
+This value is available in UMDF versions 2.31 and later.
+
 For changes to UMDF registry values to take effect, you must reboot the computer.
 
  
 
  
-
-
-
-
-
