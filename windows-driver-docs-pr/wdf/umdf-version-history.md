@@ -45,6 +45,10 @@ For information about the new features for UMDF drivers in Windows 10, see [Wha
 
 ## UMDF Version 2.31
 
+* Added new API [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex)
+* Improved existing API [**WdfDeviceGetSystemPowerAction**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetsystempoweraction)
+* Added per-driver **HostProcessDbgBreakOnDriverLoad** registry value. For info, see [Registry Values for Debugging WDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/registry-values-for-debugging-kmdf-drivers).
+
 ## UMDF Version 2.29
 
 Unchanged from version 2.27.
