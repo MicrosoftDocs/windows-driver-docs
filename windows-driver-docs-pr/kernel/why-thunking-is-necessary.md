@@ -49,7 +49,7 @@ typedef struct _DRIVER_DATA32
 
 Because it contains only fixed-precision data types, this new structure is the same size on 32-bit Windows and 64-bit Windows.
 
-|POINTER\_32 **Event**|UNICODE\_STRING32 **ObjectName**|||
+|POINTER\_32 Event|UNICODE\_STRING32 ObjectName|||
 |----|----|----|----|
 ||**USHORT Length**|**USHORT Maximum Length**|**ULONG Buffer**|
 |32 bits|16 bits|16 bits|32 bits|
