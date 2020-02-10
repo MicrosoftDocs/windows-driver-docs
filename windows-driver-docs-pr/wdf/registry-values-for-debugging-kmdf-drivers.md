@@ -187,17 +187,19 @@ If this value is non-zero and a kernel debugger is connected to the machine, the
 The reflector also breaks into the kernel debugger if there is an unexpected termination of the host process (e.g. by a non-UMDF component or due to an unhandled exception). If there are multiple device stacks pooled in the host process that is being terminated, the reflector breaks into the debugger multiple times, once for each device stack loaded in the host process.
 
 
-You can also set the following registry value in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\<service name>\\Parameters\\Wdf**. This value affects only the specified UMDF driver.
+You can also set the following registry value in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\<service name>\\Parameters\\Wdf**. 
+
+> [!NOTE]
+> This value affects only the specified UMDF driver.
 
 **HostProcessDbgBreakOnDriverLoad** (**REG\_DWORD**)
 
-Contains a delay value in seconds. Causes WUDFHost to delay the specified number of seconds after the driver has been loaded.
+Contains a delay value in seconds. Causes WUDFHost to try to connect to a debugger for the specified number of seconds after the driver has been loaded.
 
-During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in **HostProcessDbgBreakOnStart** is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. For example:
+During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. See the section on **HostProcessDbgBreakOnStart** above for examples.
 
 This registry value is available in UMDF 2.31 and later.
 
 For changes to UMDF registry values to take effect, you must reboot the computer.
 
-<!--find other starting ref and match; clarify delay behavior-->
  
