@@ -66,4 +66,4 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 
 - [Getting started with Windows drivers](gettingstarted/index.md)
 - [Driver Development Tools](devtest/index.md)
-- [Partner Center for Windows Hardware](dashboard/index.md)
+- [Partner Center for Windows Hardware](dashboard/index.yml)
