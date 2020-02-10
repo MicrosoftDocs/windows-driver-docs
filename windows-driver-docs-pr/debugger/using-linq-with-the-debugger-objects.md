@@ -548,7 +548,7 @@ In addition to the methods which are projected directly onto string objects, any
 
 |                      |                                                                                                                                                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .ToDisplayString ( ) | Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. |
+| .ToDisplayString ( ) | Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. All format specifiers can be found here: https://docs.microsoft.com/en-us/visualstudio/debugger/format-specifiers-in-cpp?view=vs-2019 |
 
 
 
@@ -566,6 +566,9 @@ kd> dx (10).ToDisplayString("o")
 
 kd> dx (10).ToDisplayString("b") 
 (10).ToDisplayString("b")  : 0y1010
+
+kd> dx ("some wchar string here").ToDisplayString("sub") 
+("some wchar string here").ToDisplayString("su")  : some wchar string here
 ```
 
 ## <span id="Debugging_Plug_and_Play"></span><span id="debugging_plug_and_play"></span><span id="DEBUGGING_PLUG_AND_PLAY"></span>Debugging Plug and Play Example
