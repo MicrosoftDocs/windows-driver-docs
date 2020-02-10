@@ -21,6 +21,7 @@ The following table shows the release history of the UMDF library:
 
 |UMDF version|Release method|Included in this version of Windows|Drivers using it can run on|
 |--- |--- |--- |--- |
+|2.31|Windows 10, version 2004 WDK|Windows 10, version 2004 (April 2020 Update, Vibranium)|Windows 10, version 2004 and later|
 |2.29|Not released in WDK|Windows 10, version 1903 (March 2019 Update, 19H1)|Windows 10, version 1903 and later|
 |2.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
 |2.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10, version 1803 and later|
@@ -41,6 +42,8 @@ You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to b
 For help determining what version of WDF to use, see [Which framework version should I use?](building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use).
 
 For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
+
+## UMDF Version 2.31
 
 ## UMDF Version 2.29
 
