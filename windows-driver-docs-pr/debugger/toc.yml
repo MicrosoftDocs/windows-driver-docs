@@ -2725,6 +2725,10 @@
       href: bug-check-0x19d--cluster-svhdx-livedump.md
     - name: "Bug Check 0x1A0: TTM_WATCHDOG_TIMEOUT"
       href: bug-check-0x1a0--ttm-watchdog-timeout.md
+    - name: "Bug Check 0x1A1: WIN32K_CALLOUT_WATCHDOG_LIVEDUMP"
+      href: bug-check-0x1a1--win32k-callout-watchdog-livedump.md
+    - name: "Bug Check 0x1A2: WIN32K_CALLOUT_WATCHDOG_BUGCHECK"
+      href: bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md
     - name: "Bug Check 0x1A3: CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP"
       href: bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md
     - name: "Bug Check 0x1A4: DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"
