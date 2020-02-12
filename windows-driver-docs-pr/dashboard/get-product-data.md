@@ -11,17 +11,17 @@ ms.localizationpriority: medium
 Use the following methods in *Microsoft Hardware APIs* to get data for hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
 ```cpp
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
+https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/
 ```
 
 Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
 |-|-|-|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/`|[Get data for all your products](get-all-products.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}`|[Get data for a specific product](get-a-product.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions`|[Get data for all submissions of a product](get-all-submissions.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}`|[Get data for a specific submission of a product](get-a-submission.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/`|[Get data for all your products](get-all-products.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}`|[Get data for a specific product](get-a-product.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}/submissions`|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}/submissions/{submissionId}`|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
@@ -41,12 +41,12 @@ This resource represents a hardware product (driver) that is registered to your 
   “sharedProductId”: 1152921504606971100,
   “links”: [
     {
-      “href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834",
+      “href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834/submissions",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834/submissions",
       "rel": "get_submissions",
       "method": "GET"
     }
@@ -106,13 +106,13 @@ This resource represents a submission of a product.
   "id": 1152921504621442000,
   "productId": 13635057453741328,
    "workflowStatus": {
-      “currentStep": " finalizeIngestion",
+      "currentStep": " finalizeIngestion",
       " state": " completed",
       " messages": []
     },
   "links": [
     {
-      "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/13635057453741329/submissions/1152921504621441944",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/13635057453741329/submissions/1152921504621441944",
       "rel": "self",
       "method": "GET"
     }
@@ -147,7 +147,7 @@ This object represents the status of workflow for a given entity
 
 ```json
 {
-      “currentStep": " finalizeIngestion",
+      "currentStep": " finalizeIngestion",
       " state": " completed",
       " messages": []
     }
@@ -203,7 +203,7 @@ This object represents a list of helpful links for the containing entity
 
 ```json
 {
-      “href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     }
@@ -466,7 +466,6 @@ The error codes are applicable to all web methods of the API. If the request can
 | 422 - Unprocessable Entity | Validation failures. |
 | 500 - Internal Server Error | Unrecoverable error occurred at the API server. |
 
-
 If there are functional validation failures, the response body will contain one of the following functional error codes.
 
 | Error Code | Error Message | Description |
@@ -492,4 +491,4 @@ If there are functional validation failures, the response body will contain one 
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+* [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

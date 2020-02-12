@@ -30,7 +30,7 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Bluetooth Drivers](bluetooth/index.md)
 - [Display drivers](display/index.md)
 - [File system drivers](ifs/index.md)
-- [GNSS drivers](gnss/index.md)
+- [Global Navigation Satellite System (GNSS) drivers](gnss/index.md)
 - [GPIO drivers](gpio/index.md)
 - [Hardware notifications](gpiobtn/index.md)
 - [HID Drivers](hid/index.md)
@@ -66,4 +66,4 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 
 - [Getting started with Windows drivers](gettingstarted/index.md)
 - [Driver Development Tools](devtest/index.md)
-- [Partner Center for Windows Hardware](dashboard/index.md)
+- [Partner Center for Windows Hardware](dashboard/index.yml)

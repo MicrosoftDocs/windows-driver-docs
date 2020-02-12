@@ -84,9 +84,17 @@ Use a UWP device app for a printer if you'd like to:
 
 The UWP device app samples for printers demonstrate the printer-related features that you can implement in your own UWP device app. Each sample also includes the `PrinterExtensionLibrary` project, that you can reuse in your own app to help with printer extensions. The printer extension library wraps the COM implementation of the [printer extension interfaces](https://go.microsoft.com/fwlink/p/?LinkID=299887) from the v4 print driver.
 
+
+**Windows 8 Samples:**
+
 -   The [Print job management and printer maintenance](https://go.microsoft.com/fwlink/p/?LinkID=299829) sample demonstrates how to manage print jobs and perform printer maintenance tasks using bidirectional communications (Bidi).
 
 -   The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample shows how to create a UWP device app that provides a customized flyout for advanced print settings, can display printer status, and can display printer notifications in tiles or toasts.
+
+
+**Windows 10 Sample:**
+
+-   The [Writing print workflow apps and migrating WSDAs to UWP](https://github.com/microsoft/print-oem-samples) sample shows OEM print partners how to use the Print Workflow feature and migrate their existing Windows Store Device Apps (WSDAs) code to the Universal Windows Platform.
 
 ## <span id="related_topics"></span>Related topics
 

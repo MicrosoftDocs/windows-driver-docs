@@ -132,7 +132,7 @@ VOID NTAPI
      flowHandle = inMetaValues->flowHandle;
 
     // Check whether there is a context associated with the data flow
-     if (flowContext != 0) 
+     if (flowHandle != 0) 
      {
         // Get a pointer to the flow context structure
         context = (PFLOW_CONTEXT)flowContext;

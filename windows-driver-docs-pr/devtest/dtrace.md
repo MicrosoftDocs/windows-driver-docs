@@ -34,7 +34,7 @@ The primary GitHub site is located at [https://github.com/opendtrace/](https://g
 
 A set of useful scripts is available at [https://github.com/opendtrace/toolkit](https://github.com/opendtrace/toolkit).
 
-[DTrace.Org](https://dtrace.org) is a web site where many of the original developers provide tips and tricks.
+[DTrace.Org](http://dtrace.org) is a web site where many of the original developers provide tips and tricks.
 
 The illumos [Dynamic Tracing Guide](http://dtrace.org/guide/bookinfo.html) describes how to use DTrace to observe, debug, and tune system behavior.
 
