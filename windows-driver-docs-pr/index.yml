@@ -119,9 +119,9 @@ additionalContent:
         - title: New features and updates
           summary: Learn about the latest driver development features in Windows 10.
           url: https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development
-        - title: What is a driver?
-          summary: Describes the fundamental concepts you need to understand Windows drivers.
-          url: https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/what-is-a-driver-
+        - title: Overview of Driver Technologies
+          summary: Entryway to specific Windows driver models, from Bluetooth to USB and more.
+          url: https://docs.microsoft.com/windows-hardware/drivers/device-and-driver-technologies
         - title: Windows symbol packages
           summary: Symbol files make it easier to debug your code.
           url: https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols
