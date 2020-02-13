@@ -21,6 +21,7 @@ ms.localizationpriority: medium
 
 # Monitor Hot Plug Detection
 
+The information on this page applies to graphics drivers that are implemented using a version earlier than WDDM version 2.2.
 
 A video output on a display adapter is considered a child device of the display adapter. A monitor or other external display device that connects to the output is not considered a child device. During initialization, the display miniport driver's [**DxgkDdiQueryChildRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations) function assigns each child device a type and an HPD awareness value. The type is one of the [**DXGK\_CHILD\_DEVICE\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/ne-dispmprt-_dxgk_child_device_type) enumerators:
 
