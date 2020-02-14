@@ -15,7 +15,11 @@ The BTP software package contains several tools to be used for testing Bluetooth
 
 The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included.
 
+[Bluetooth Test Platform Software Package](//download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.2.1.msi)
+
 ## Version Updates ##
+
+Changes for version 1.2.1:
 
 - Moving BTP from private preview to public.
 - Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.
