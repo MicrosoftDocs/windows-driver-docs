@@ -17,7 +17,6 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 ## Version Updates ##
 
-Changes for version 1.2.0:
 - Moving BTP from private preview to public.
 - Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.
 - Several fixes and improvements to test reliability.

@@ -50,12 +50,12 @@ The Traduci requires a 12-pin connector to communicate with any radio module. Th
 </table>
 
 ## PMOD BT2 (RN42 radio) ##
-Purchasable via [**Digilent**](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
+The Pmod BT2 radio can be purchased via [Digilent](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/)
 
 <img src="images/RN42.png" alt="Photo of the RN42 Radio" width="150"/>
 <img src="images/Traduci_and_DigilentRN42.jpg" alt="Photo of the RN42 Radio on a Digilent sled" width="400"/>
 
-The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as a HID peripheral (like a keyboard or mouse). It is currently supported by the BTP pairing and HID tests. More info can be found via the Digilent link above and through the RN42 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42).
+The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as a HID peripheral such as a keyboard or mouse. It is currently supported by the BTP pairing and HID tests. More info can be found at [Digilent](https://store.digilentinc.com/pmod-bt2-bluetooth-interface/) and through the [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN42) RN42 reference.
 
 > [!NOTE] 
 > Currently the RN42 radio can **only** be plugged into JB.
@@ -66,9 +66,9 @@ The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 - Small form factor, low power, surface mount module
 
 ## Bluefruit LE UART Friend (nRF51 radio) ##
-Purchasable via [**Adafruit**](https://www.adafruit.com/product/2479)
+The Bluefruit LE UART Friend can be purchased via [Adafruit](https://www.adafruit.com/product/2479)
 
-The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral (like a keyboard or mouse) among other things. It is currently supported by the BTP pairing and HID tests. More info can be found via the Adafruit link above and through the nRF51822 page from [**Nordic**](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF51822).
+The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behaving as a HID peripheral (like a keyboard or mouse) among other things. It is currently supported by the BTP pairing and HID tests. More information can be found at [Adafruit](https://www.adafruit.com/product/2479) and through the [Nordic](https://www.nordicsemi.com/Products/Low-power-short-range-wireless/nRF51822) nRF51822 reference. 
 
 > [!NOTE] 
 > Currently the Bluefruit radio can **only** be plugged into JC.

@@ -7,9 +7,9 @@ ms.localizationpriority: medium
 
 ---
 
-# BTP Supported Hardware #
+# Bluetooth Testing Platform Supported Hardware #
 
-The Bluetooth Test Platform (BTP) makes use of certain specialized hardware to make Bluetooth testing easier. The Traduci is used to more easily allow software on a host device (like a PC) to communicate with external radios over a sideband.
+The Bluetooth Test Platform (BTP) makes use of specialized hardware to make Bluetooth testing easier. The Traduci board is used to more easily allow software on a host device (like a PC) to communicate with external radios over a sideband.
 
 For example, an LE pairing test requires a peripheral radio to be powered on, have certain IO capabilities, and be advertising as connectable/discoverable before it can be paired to. The peripheral radio has well defined commands that can make this happen, so the BTP software on the host sends these commands over USB to the Traduci which in turn routes it to the appropriate radio. After successful completion of the commands, the BTP software would then proceed with the test by requesting that the host pair to the peripheral radio which is now ready to accept the pairing.
 
@@ -18,7 +18,7 @@ In the above scenario the Traduci makes several things simpler: It is able to pr
 Additionally, it is important to note that BTP tests do not have a tight dependency on the Traduci. If other external hardware is needed for a test, the BTP is designed to allow easy extensibility to support that scenario.
 
 ## Traduci board ##
-[**MCCI**](https://mcci.com/usb/dev-tools/model-2411/)
+The Traduci board is provided by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
 
 <img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
 
@@ -31,6 +31,6 @@ Additionally, it is important to note that BTP tests do not have a tight depende
 
 ## Supported radios ##
 
-Currently, only the RN42 (BR) and Bluefruit (LE) radios are officially supported. They are both capable of running the pairing and HID tests. More info about them can be found here: [HID Capable Peripheral Radios](testing-BTP-hw-hid.md).
+Currently, only the RN42 (BR) and Bluefruit (LE) radios are officially supported. They are both capable of running the pairing and HID tests. More information about these radios can be reviwed at [HID Capable Peripheral Radios](testing-BTP-hw-hid.md).
 
-Audio tests are forthcoming. You can find more info on the audio radio that will be used with those here: [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md).
+Audio tests are under development. More information on the audio radio that will be used can be reviewed at [Audio Capable Peripheral Radios](testing-BTP-hw-audio.md).

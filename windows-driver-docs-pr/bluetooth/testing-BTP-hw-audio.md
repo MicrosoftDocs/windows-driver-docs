@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Audio Capable Peripheral Radios #
 
-The Traduci requires a 12-pin connector to communicate with any radio module. The audio radios and breakouts listed here take a radio module and break out the necessary pins to a 12 pin layout.
+The Traduci board requires a 12-pin connector to communicate with any radio module. The audio radios and breakouts listed here take a radio module and break out the necessary pins to a 12 pin layout.
 
 <table>
     <colgroup>
@@ -43,7 +43,7 @@ The Traduci requires a 12-pin connector to communicate with any radio module. Th
 <img src="images/RN52.png" alt="Photo of the RN52 Radio" width="150"/>
 <img src="images/Traduci_and_RN52.jpg" alt="Photo of the RN52 Radio on a sled" width="400"/>
 
-The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as an Audio peripheral (like a speaker or headset). It is currently planned to be supported upcoming BTP audio tests. More info can be found via the RN52 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52). This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci in order to aid with validation.
+The RN52 is a Basic Rate (BR) radio from Roving Networks capable of behaving as an Audio peripheral such as a speaker or headset). It is currently planned to be supported upcoming BTP audio tests. More information can be found via the RN52 page from [**MicroChip**](https://www.microchip.com/wwwproducts/en/RN52). This sled breaks out the audio out data from the radio and routes it to an audio codec and audio processing FPGA on the Traduci in order to aid with validation.
 
 > [!NOTE] 
 > Currently the RN52 radio can **only** be plugged into JA.

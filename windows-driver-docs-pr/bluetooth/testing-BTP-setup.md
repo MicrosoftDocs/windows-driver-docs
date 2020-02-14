@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 ---
 
-# Setting up BTP #
+# Setting up the Bluetooth Test Platform (BTP) #
 
 ## Hardware setup ##
 
@@ -29,27 +29,23 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 ![Traduci with peripheral plugged in](images/Traduci_and_DigilentRN42.jpg)
 
-## Software setup 
-### Step 1 - Get TAEF
+## Software Setup 
 
-- Follow the instructions to download the WDK from [**docs.microsoft.com**](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk#download-icon-step-2-install-wdk-for-windows-10-version-1903).
-- After the WDK download and install, the TAEF installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\8.0\Testing\Runtimes` directory.
+1. Download the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk#download-icon-step-2-install-wdk-for-windows-10-version-1903).
 
-### Step 2 - Getting BTP binaries 
+2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\8.0\Testing\Runtimes` directory.
 
-- Download the [BTP software package](testing-BTP-software-package.md).  
-- This installs all necessary files to the `C:\BTP` directory.
+3. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
 
-### Step 3 - Setting up the System 
+4. Ensure [Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
 
-- Ensure secure boot is [disabled](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot).
-- Ensure BitLocker is disabled.
-- Ensure the Traduci board is plugged into the SUT.
-- From an elevated command line on the SUT, navigate to the `C:\BTP` directory and run `ConfigureMachineForBTP.bat` to configure the test machine. A reboot may be required.
+5. Ensure BitLocker is **disabled**.
 
-### Step 4 - Start testing
-Refer to [BTP tests](testing-BTP-Tests.md) for running test scripts in the package.
+6. Ensure the Traduci board is plugged into the SUT.
 
+7. From an elevated command line on the SUT, navigate to the `C:\BTP` directory and run `ConfigureMachineForBTP.bat` to configure the test machine. A reboot may be required.
+
+8. Refer to [BTP tests](testing-BTP-Tests.md) for running test scripts in the package.
 
 ## Known issues
 

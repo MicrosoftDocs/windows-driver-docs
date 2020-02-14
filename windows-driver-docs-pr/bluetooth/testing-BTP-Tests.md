@@ -7,11 +7,9 @@ ms.localizationpriority: medium
 
 ---
 
-# BTP Supported Tests
+# Currently Supported BTP Tests
 
-The following are the currently supported tests:
+These are the currently supported tests. Additional tests are planned and under development. Updates will be listed here as they become available. 
 
 - [Pairing Tests](testing-BTP-tests-pairing.md)
 - [HID Tests](testing-BTP-tests-hid.md)
-
-Many more tests are planned, and currently being worked on. Check back on later releases for an updated list.
