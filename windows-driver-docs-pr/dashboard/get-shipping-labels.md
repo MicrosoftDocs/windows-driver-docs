@@ -11,15 +11,15 @@ For an introduction to Microsoft Hardware APIs, including prerequisites for usin
 Use the following methods in *Microsoft Hardware APIs* to get data for shipping labels of hardware products registered to your Hardware Dev Center Account.
 
 ```html
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
+https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
 ```
 
 Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 |Description|Method|URI|
 |-|-|-|
-|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
-|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`|
+|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
+|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`|
 
 ## Prerequisites
 
@@ -101,7 +101,7 @@ This resource represents a shipping label created for a submission of your produ
   },
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978422",
+      "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978422",
       "rel": "self",
       "method": "GET"
     }

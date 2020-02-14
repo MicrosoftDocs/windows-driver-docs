@@ -1048,7 +1048,7 @@ Camera driver development in Windows 10, version 1607 includes new and updated t
 
 ### <a name="location-1607"></a>Location
 
-Location driver development in Windows 10, version 1607 includes the following new GNSS Breadcrumb DDIs:
+Location driver development in Windows 10, version 1607 includes the following new Global Navigation Satellite System (GNSS) Breadcrumb DDIs:
 
 * [**GNSS\_BREADCRUMB\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_breadcrumb_list)
 * [**GNSS\_BREADCRUMB\_V1**](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_breadcrumb_v1)
