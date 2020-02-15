@@ -83,7 +83,7 @@ Requirements
 ## See also
 
 
-[**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive)
+[**INF Version Section**](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/inf-version-section)
 
 [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
