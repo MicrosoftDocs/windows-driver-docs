@@ -2743,6 +2743,8 @@
       href: bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md
     - name: "Bug Check 0x1B0: VIDEO_MINIPORT_FAILED_LIVEDUMP"
       href: bug-check-0x1b0--video-miniport-failed-livedump.md      
+    - name: "Bug Check 0x1B8: VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP"
+      href: bug-check-0x1b8--video-miniport-black-screen-livedump.md      
     - name: "Bug Check 0x1C4: DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"
       href: bug-check-0x1c4--driver-verifier-detected-violation-livedump.md
     - name: "Bug Check 0x1C5: IO_THREADPOOL_DEADLOCK_LIVEDUMP"
