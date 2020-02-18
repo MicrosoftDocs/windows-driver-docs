@@ -2,12 +2,12 @@
 title: Microsoft Bluetooth Test Platform
 description: Bluetooth Test Platform (BTP) software package.
 ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
-ms.date: 4/17/2019
+ms.date: 2/14/2020
 ms.localizationpriority: medium
 
 ---
 
-# The BTP Software Package
+# The BTP Software Package #
 
 The BTP software package contains several tools to be used for testing Bluetooth scenarios.
 
@@ -19,15 +19,15 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 ## Version Updates ##
 
-Changes for version 1.2.1:
-
-- Moving BTP from private preview to public.
-- Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.
-- Several fixes and improvements to test reliability.
+| Version | Changes |
+| --- | --- |
+| 1.2.1 | * Moving BTP from private preview to public.<br>* Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.<br>* Several fixes and improvements to test reliability. |
 
 ## Tools in the package ##
 
 ### Architecture Independent Files ###
+
+
 <table>
     <colgroup>
         <col width="33%" />
@@ -99,6 +99,7 @@ Changes for version 1.2.1:
 </table>
 
 ### Architecture Dependent Binaries ###
+
 The files listed in this table are available in X86, AMD64, and ARM64 architectures. The installer will extract one instance of each per architecture.
 <table>
     <colgroup>
