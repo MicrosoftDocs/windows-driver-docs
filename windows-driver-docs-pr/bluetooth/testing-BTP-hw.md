@@ -2,7 +2,7 @@
 title: Microsoft Bluetooth Test Platform
 description: Bluetooth Test Platform (BTP) supported hardware.
 ms.assetid: a6beeecb-5967-4e08-bfe2-b8aae26861ad
-ms.date: 4/17/2019
+ms.date: 2/14/2020
 ms.localizationpriority: medium
 
 ---
@@ -20,7 +20,7 @@ Additionally, it is important to note that BTP tests do not have a tight depende
 ## Traduci board ##
 The Traduci board is provided by [MCCI](https://mcci.com/usb/dev-tools/model-2411/)
 
-<img src="images/Traduci_Overhead.jpg" alt="Photo of the Traduci board" width="400"/>
+![Photo of the Traduci board](images/Traduci_Overhead.jpg)
 
 - 4 12-pin ports to support 4 radios simultaneously
 - Able to route data to and from multiple radios simultaneously
