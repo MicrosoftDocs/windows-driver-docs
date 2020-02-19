@@ -2,7 +2,7 @@
 title: Microsoft Bluetooth Test Platform
 description: Bluetooth Test Platform (BTP) pairing tests.
 ms.assetid: 19caf4db-9303-47d1-be12-5ff4b2710bc8
-ms.date: 4/17/2019
+ms.date: 2/14/2020
 ms.localizationpriority: medium
 
 ---
