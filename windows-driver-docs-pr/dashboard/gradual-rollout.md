@@ -1,10 +1,10 @@
 ---
 title: Gradual rollout for driver distribution
 description: Gradual rollout ensures the best driver experience for each system by monitoring telemetry during deployment, speeding and slowing release as indicated.
-author: sillykeith
-ms.author: keithke
+author: Pamela Du
+ms.author: pameladu
 ms.topic: article
-ms.date: 06/03/2019
+ms.date: 02/19/2020
 ms.localizationpriority: medium
 ---
 
@@ -13,8 +13,7 @@ ms.localizationpriority: medium
 The goal of gradual rollout is to ensure the Windows ecosystem has the best driver available for each system by monitoring telemetry to ensure your customers are having the best possible experience. Should a driver appear unhealthy during gradual rollout phase, Microsoft may choose to **pause** the driver distribution for investigation and/or seek appropriate remediation, including a Microsoft-initiated driver cancellation (_expiration_).
 
 >[!NOTE]
-> - Drivers in gradual rollout are visible only to systems running Windows 10 verion 1709 and later.
-> - Eventually, all drivers submitted to Windows Update will go through gradual rollout.
+> - Drivers in gradual rollout are visible only to systems running Windows 10 version 1709 and later.
 
 ## Main concepts of gradual rollout
 
@@ -23,9 +22,12 @@ There are two distinct aspect of the Gradual Rollout process that partners shoul
 - The 30-day **monitoring** period
   - The 30-day monitoring period begins on the very first day that the driver is throttled and ends roughly 30 days later. This monitoring period does not affect your drivers WU status.
 - The **driver throttling** period
-  - Throttling ranges from 1% to 100% of the Retail Windows population.
-  - Automation rules govern the percentage progression.
-  - When the throttled percentage is at 100% it is completely live on WU to all systems running **Windows 10 version 1709 and later**.  Microsoft will continue to **monitor** the release for rest of the 30 day period.
+  - Microsoft completes a risk assessment for each eligible driver and assigns a release throttle curve for that driver. A driver's risk is assessed against several factors including but not limited to flighting coverage and retail population
+  - There are a few typical driver release throttle curves:
+    - immediately throttled to 100% of the Retail Windows population 
+    - throttle through 1% to 100% of the Retail Window population 
+    - throttle with an initial set of its eligible population that are highly active, and warrant even adoption of each targeting cluster governed by HWID/CHID combination, before progress to 1% to 100% percentage of the Retail Windows population
+  - When the throttled percentage is at 100% it is completely live on WU to all systems running **Windows 10 version 1709 and later**. Microsoft will continue to **monitor** the release for rest of the 30 day period.
 
 Note that during this entire process, the status for your shipping label remains as **Gradual Rollout**. This is normal, and your driver is available on Windows Update.
 
@@ -49,7 +51,13 @@ When a driver is being throttled and assigned a percentage, for the target audie
 
 ## Driver Throttling Assessments
 
-Microsoft completes a risk assessment for each eligible driver and assigns a release throttle curve for that driver. A driver's risk is assessed against several factors including but not limited to flighting coverage and retail population. The throttle curve, or the percentage of a driver roll-out, is tightly related to its risk assessment. In addition, all throttle curves are largely percentage-based on the targeted audience.
+### Rules that define which release throttle curve a driver gets assigned with ###
+
+The throttle curve, or the percentage of a driver roll-out, is tightly related to its risk assessment. A driver's risk is assessed against several factors including but not limited to flighting coverage and retail population.
+
+Optional drivers typically are throttled to 100% immediately, but subject to up to 30-day monitoring. 
+
+Driver Published behind Test Reg Key typically are throttled to 100% and set to ReleaseComplete immediately. 
 
 ### Rules that define when a rollout should automatically pause
 
@@ -103,7 +111,3 @@ To submit a [support request](https://developer.microsoft.com/windows/hardware/s
 1. **First**, sign into your hardware dev center account, and then
 2. Go to [https://developer.microsoft.com/windows/support](https://developer.microsoft.com/windows/support).
 3. Select **Contact us**, **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown menu.
-
-### What drivers are included in the gradual rollout?
-
-**All** drivers will eventually be subject to gradual rollout.
