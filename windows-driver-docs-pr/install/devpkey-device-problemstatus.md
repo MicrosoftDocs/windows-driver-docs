@@ -18,7 +18,8 @@ ms.date: 02/14/2020
 # DEVPKEY_Device_ProblemStatus
 
 
-The DEVPKEY_Device_ProblemStatus device property represents TBD
+The DEVPKEY_Device_ProblemStatus device property is an NTSTATUS value that is set when a problem code is generated. It provides more context on why the problem code was set. If no additional context is available, ProblemStatus shows as STATUS_SUCCESS (0x00000000).
+
 
 <table>
 <colgroup>
@@ -32,7 +33,7 @@ The DEVPKEY_Device_ProblemStatus device property represents TBD
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p><a href="devprop-type-int32.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_INT32&lt;/strong&gt;](devprop-type-int32.md)"><strong>DEVPROP_TYPE_INT32</strong></a></p></td>
+<td align="left"><p><a href="devprop-type-int32.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_NTSTATUS&lt;/strong&gt;](devprop-type-ntstatus.md)"><strong>DEVPROP_TYPE_INT32</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -50,7 +51,9 @@ The DEVPKEY_Device_ProblemStatus device property represents TBD
 Remarks
 -------
 
-The value of DEVPKEY_Device_ProblemStatus is one of the CM_PROB_*Xxx* problem codes that are defined in Cfg.h.
+When there is a problem with a devnode, the **Problem status** property appears in the **Property** dropdown on the **Details** tab for the device in Device Manager.
+
+For more info about NTSTATUS values, see [Using NTSTATUS Values](../kernel/using-ntstatus-values.md).
 
 You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_ProblemStatus.
 

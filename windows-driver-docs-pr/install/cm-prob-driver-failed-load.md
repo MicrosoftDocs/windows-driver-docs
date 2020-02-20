@@ -32,6 +32,3 @@ Reasons for this error include the following:
 
 - The driver does not comply with [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
 
-## See Also
-
-[Detecting Driver Load Errors](https://docs.microsoft.com/windows-hardware/drivers/install/detecting-driver-load-errors)
