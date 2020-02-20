@@ -13,7 +13,7 @@
 - name: "Developing, Testing, and Deploying Drivers"
   href: develop/index.md
 - name: "Windows Hardware Dev Center Dashboard"
-  href: dashboard/index.md
+  href: dashboard/index.yml
 - name: "Device and Driver Installation"
   href: install/index.md
 - name: "Kernel-Mode Driver Architecture Design Guide"
