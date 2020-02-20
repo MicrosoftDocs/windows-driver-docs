@@ -2789,6 +2789,8 @@
       href: bug-check-0x1d8--ucmucsi-failure.md
     - name: "Bug Check 0x1D9: HAL_IOMMU_INTERNAL_ERROR"
       href: bug-check-0x1d9--hal-iommu-internal-error.md
+    - name: "Bug Check 0x1DA: HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR"
+      href: bug-check-0x1da--hal-blocked-processor-internal-error.md
     - name: "Bug Check 0x1DB: IPI_WATCHDOG_TIMEOUT"
       href: bug-check-0x1db--ipi-watchdog-timeout.md
     - name: "Bug Check 0x1DC: DMA_COMMON_BUFFER_VECTOR_ERROR"
