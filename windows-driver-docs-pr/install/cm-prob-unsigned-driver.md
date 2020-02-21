@@ -27,3 +27,7 @@ The driver does not comply with the [kernel-mode code signing policy](kernel-mod
 For end-users, the only way to avoid this error is to obtain and install a digitally signed driver for the device.
 
 For driver developers, you can use various methods to load an unsigned driver on a 64-bit version of Windows. For more information, see [Installing an Unsigned Driver during Development and Test](installing-an-unsigned-driver-during-development-and-test.md).
+
+## See Also
+
+[Code Integrity Diagnostic System Log Events](https://docs.microsoft.com/windows-hardware/drivers/install/code-integrity-diagnostic-system-log-events)

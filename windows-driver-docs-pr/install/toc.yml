@@ -1362,6 +1362,8 @@
     href: devpkey-device-powerrelations.md
   - name: "DEVPKEY_Device_ProblemCode"
     href: devpkey-device-problemcode.md
+  - name: "DEVPKEY_Device_ProblemStatus"
+    href: devpkey-device-problemstatus.md
   - name: "DEVPKEY_Device_RemovalPolicy"
     href: devpkey-device-removalpolicy.md
   - name: "DEVPKEY_Device_RemovalPolicyDefault"

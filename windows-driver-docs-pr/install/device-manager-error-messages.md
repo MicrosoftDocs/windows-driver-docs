@@ -20,6 +20,9 @@ ms.localizationpriority: medium
 When Device Manager marks a device with a yellow exclamation point, it also provides an error message.
 
 The following table lists the errors reported by Device Manager. These error codes are defined in Cfg.h.
+ 
+For related info, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).
+
 
 <table>
 <colgroup>
