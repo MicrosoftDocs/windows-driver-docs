@@ -31,3 +31,7 @@ If the device's hardware key contains a "FailReasonString" value, the value stri
 Select **Update Driver**, which starts the Hardware Update wizard.
 
 This error code is set when one of the drivers in the device's driver stack fails IRP_MN_START_DEVICE. If there are many drivers in the stack, it can be difficult to determine the one that failed.
+
+See the [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device for the failure code returned for the start IRP.
+
+For additional information, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).

@@ -29,11 +29,8 @@ To access the status and problem code for a device instance on Windows Server 20
 
 If the call to **CM_Get_DevNode_Status** succeeds, **CM_Get_DevNode_Status** retrieves the requested status and problem code for the device instance and returns CR_SUCCESS. If the function call fails, **CM_Get_DevNode_Status** returns one of the error codes with prefix "CR_" that are defined in *Cfgmgr32.h*.
 
+## See Also
  
-
- 
-
-
-
-
+* [**DEVPKEY_Device_ProblemCode**](devpkey-device-problemcode.md)
+* [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md)
 
