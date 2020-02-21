@@ -16,10 +16,10 @@
     href: getting-started-with-windbg.md
   - name: "Getting Started with WinDbg (Kernel-Mode)"
     href: getting-started-with-windbg--kernel-mode-.md
-  - name: "Choosing the 32-Bit or 64-Bit Debugging Tools"
-    href: choosing-a-32-bit-or-64-bit-debugger-package.md
   - name: "Debugging Environments"
     href: debuggers-in-the-debugging-tools-for-windows-package.md
+  - name: "Choosing the 32-Bit or 64-Bit Debugging Tools"
+    href: choosing-a-32-bit-or-64-bit-debugger-package.md
   - name: "Setting Up Debugging (Kernel-Mode and User-Mode)"
 # Auto-expanded node
     items: 
@@ -34,22 +34,20 @@
         href: setting-up-a-network-debugging-connection-automatically.md
       - name: "Setting Up KDNET Network Kernel Debugging Manually"
         href: setting-up-a-network-debugging-connection.md
-      - name: "Setting Up Kernel-Mode Debugging over a 1394 Cable Manually"
-        href: setting-up-a-1394-cable-connection.md
+      - name: "Setting Up Network Debugging of a Virtual Machine Host - KDNET"
+        href: setting-up-network-debugging-of-a-virtual-machine-host.md
+      - name: "Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a COM Port"
+        href: attaching-to-a-virtual-machine--kernel-mode-.md
+      - name: "Setting Up Local Kernel Debugging of a Single Computer Manually"
+        href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
+      - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
+        href: setting-up-a-null-modem-cable-connection.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
         href: setting-up-a-usb-3-0-debug-cable-connection.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually"
         href: setting-up-a-usb-2-0-debug-cable-connection.md
-      - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
-        href: setting-up-a-null-modem-cable-connection.md
-      - name: "Setting Up Kernel-Mode Debugging using Serial over USB Manually"
-        href: setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md
-      - name: "Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a COM Port"
-        href: attaching-to-a-virtual-machine--kernel-mode-.md
-      - name: "Setting Up Network Debugging of a Virtual Machine Host - KDNET"
-        href: setting-up-network-debugging-of-a-virtual-machine-host.md
-      - name: "Setting Up Local Kernel Debugging of a Single Computer Manually"
-        href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
+      - name: "Setting Up Kernel-Mode Debugging over a 1394 Cable Manually"
+        href: setting-up-a-1394-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
