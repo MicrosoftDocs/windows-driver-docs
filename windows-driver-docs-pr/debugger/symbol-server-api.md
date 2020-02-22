@@ -17,6 +17,8 @@ The **SymbolServer*Xxx*** routines are needed if you want to write your own symb
 
 These routines are part of the DbgHelp interface. For full documentation regarding the DbgHelp and ImageHlp interfaces, see the "Debug Help Library" documentation (dbghelp.chm). This can be found in the sdk\\help subdirectory of the Debugging Tools for Windows installation directory.
 
+Download the latest windows 10 SDK from (https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
+
  
 
  
