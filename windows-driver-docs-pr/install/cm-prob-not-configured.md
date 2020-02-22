@@ -27,3 +27,9 @@ There is a device on the system for which there is no **ConfigFlags** registry e
 ### Recommended Resolution
 
 Select **Update Driver**, which starts the Hardware Update wizard.
+
+## For driver developers
+
+This error means that PnP has not attempted to install the device. This should be a transient problem code only appearing briefly when a device is first enumerated.
+
+If this problem status occurs in conjunction with a [Bug Check 0x7B: INACCESSIBLE_BOOT_DEVICE](../debugger/bug-check-0x7b--inaccessible-boot-device.md) and the device is on the path to the boot disk, the system is missing a driver for a boot critical device.
