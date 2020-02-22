@@ -34,7 +34,7 @@ If the WDF driver does not use runtime power management, add support for it and 
 
 ## Requirements for WDM (non-miniport) drivers
 
-If your driver does not use the system-managed idle support provided by WDF (the driver is either a WDF driver using [driver-managed idle](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type), or a WDM driver), it can still get DFx support by registering itself with PoFx.  In this scenario, the driver registers with PoFx by implementing:
+If your driver does not use the system-managed idle support provided by WDF (the driver is either a WDF driver using [driver-managed idle](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type), or a WDM driver), it can still get DFx support by registering itself with PoFx.  In this scenario, the driver registers with PoFx by implementing:
 
 - [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
 - [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
