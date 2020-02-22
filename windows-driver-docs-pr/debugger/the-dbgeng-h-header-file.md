@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 Routines in the dbgeng.h header file are used to write DbgEng extensions.
 
-For details on the dbgeng.h header file and information about how to write debugger extensions, see
+For details on the dbgeng.h header file and information about how to write debugger extensions,
 
-For information about how to write debugger extensions, see [Writing DbgEng Extensions](writing-dbgeng-extensions.md) and [Using the Debugger Engine API](using-the-debugger-engine-api.md).
+see [Writing DbgEng Extensions](writing-dbgeng-extensions.md) and [Using the Debugger Engine API](using-the-debugger-engine-api.md).
 
  
 
