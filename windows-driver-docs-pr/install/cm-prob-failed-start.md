@@ -36,7 +36,7 @@ See the [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) prop
 
 For additional information, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).
 
-### For driver developers
+## For driver developers
 
 One of the drivers in the device stack failed the start IRP. The [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device should indicate the failure code.
 
