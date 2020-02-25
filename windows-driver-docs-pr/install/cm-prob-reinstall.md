@@ -43,3 +43,11 @@ Alternatively, you can reinstall a device driver by following these steps:
 4. Click **Action** on the Device Manager menu bar.
 
 5. On the **Action** menu, click **Scan for hardware changes** to reinstall the device driver.
+
+## For driver developers
+
+This problem code is frequently transient. If it persists across reboots, try the following:
+
+1. Look in the [Windows Update log files](https://docs.microsoft.com/windows/deployment/update/windows-update-logs). Search for problem code "0x000012" (18) in conjunction with your device's hardware ID.
+2. Look in the [SetupAPI Text Logs](setupapi-text-logs.md) for an installation attempt for a driver with that hardware ID.
+3. If you see a **Needs Reinstall** line in the log, retry the installation.

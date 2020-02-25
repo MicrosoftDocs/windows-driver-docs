@@ -32,12 +32,10 @@ Select **Update Driver**, which starts the Hardware Update wizard.
 
 This error code is set when one of the drivers in the device's driver stack fails IRP_MN_START_DEVICE. If there are many drivers in the stack, it can be difficult to determine the one that failed.
 
-See the [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device for the failure code returned for the start IRP.
+See the [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device for the failure code returned for the [start IRP](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device).
 
 For additional information, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).
 
 ## For driver developers
 
-One of the drivers in the device stack failed the start IRP. The [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device should indicate the failure code.
-
-If debugging from a kernel debugger, you can set a breakpoint on *PnpStartDevice* to step through the sending and handling of the start IRP to identify the source of the failure. Since this routine is called when starting any device, ensure that you are stepping through the start IRP for the right device stack.
+One of the drivers in the device stack failed the [start IRP](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device). The [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device should indicate the failure code.
