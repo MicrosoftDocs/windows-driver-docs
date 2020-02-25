@@ -128,7 +128,7 @@ Your driver can call the following methods to access a PDO's identification desc
 
 ### Handling re-enumeration requests
 
-Framework-based bus drivers that support dynamic enumeration can receive a request to reenumerate a particular child device through the [**REENUMERATE\_SELF\_INTERFACE\_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_reenumerate_self_interface_standard) interface. More information is available at [Handling Enumeration Requests](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-enumeration-requests)
+Framework-based bus drivers that support dynamic enumeration can receive a request to reenumerate a particular child device through the [**REENUMERATE_SELF_INTERFACE_STANDARD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_reenumerate_self_interface_standard) interface. For more info, see [Handling Enumeration Requests](https://docs.microsoft.com/windows-hardware/drivers/wdf/handling-enumeration-requests)
 
 
 
