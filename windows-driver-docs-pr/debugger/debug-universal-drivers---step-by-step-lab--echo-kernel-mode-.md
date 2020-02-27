@@ -3,30 +3,28 @@ title: Debug Universal Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 03/28/2019
+ms.date: 02/27/2020
 ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debug_universal_drivers_-_step_by_step_lab__echo_kernel-mode_"></span>Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)
 
-
 This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 
 ## <span id="Lab_objectives"></span><span id="lab_objectives"></span><span id="LAB_OBJECTIVES"></span>Lab objectives
-
 
 This lab includes exercises that introduce the debugging tools, teach common debugging commands, illustrate the use of break points, and show the use of the debugging extensions.
 
 In this lab, a live kernel debug connection is used to explore the following:
 
--   Use the Windows debugger commands
--   Use standard commands (Call stacks, variables, threads, IRQL)
--   Use advanced driver debugging commands (!commands)
--   Use symbols
--   Set breakpoints in live debugging
--   View call stacks
--   Display the Plug and Play device tree
--   Work with thread and process context
+- Use the Windows debugger commands
+- Use standard commands (Call stacks, variables, threads, IRQL)
+- Use advanced driver debugging commands (!commands)
+- Use symbols
+- Set breakpoints in live debugging
+- View call stacks
+- Display the Plug and Play device tree
+- Work with thread and process context
 
 **Note**  When working with the Windows debugger, there are two types of debugging that can be performed - user or kernel mode debugging.
 
@@ -36,42 +34,39 @@ In this lab, a live kernel debug connection is used to explore the following:
 
 This lab will focus on kernel mode debugging, as that is the method used to debug many device drivers.
 
-
 This exercise covers debug commands that are frequently used during both user-mode and kernel-mode debugging. The exercise also covers debug extensions (sometimes called "!commands") that are used for kernel-mode debugging.
 
 ## <span id="Lab_setup"></span><span id="lab_setup"></span><span id="LAB_SETUP"></span>Lab setup
 
-
 You will need the following hardware to be able to complete the lab.
 
--   A laptop or desktop computer (host) running Windows 10
--   A laptop or desktop computer (target) running Windows 10
--   A network hub/router and network cables to connect the two PCs
--   Access to the internet to download symbol files
+- A laptop or desktop computer (host) running Windows 10
+- A laptop or desktop computer (target) running Windows 10
+- A network hub/router and network cables to connect the two PCs
+- Access to the internet to download symbol files
 
 You will need the following software to be able to complete the lab.
 
--   Visual Studio 2017
--   Windows Software Development Kit (SDK) for Windows 10
--   Windows Driver Kit (WDK) for Windows 10
--   The sample echo driver for Windows 10
+- Visual Studio 
+- Windows Software Development Kit (SDK) for Windows 10
+- Windows Driver Kit (WDK) for Windows 10
+- The sample echo driver for Windows 10
 
 The lab has the following eleven sections.
 
--   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
--   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
--   [Section 3: Download and build the KMDF Universal Echo Driver](#download)
--   [Section 4: Install the KMDF Echo driver sample on the target system](#install)
--   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
--   [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
--   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
--   [Section 8: View variables and call stacks](#viewingvariables)
--   [Section 9: Display processes and threads](#displayingprocessesandthreads)
--   [Section 10: IRQL, Registers and Ending the WinDbg session](#irqlregistersmemory)
--   [Section 11: Windows debugging resources](#windowsdebuggingresources)
+- [Section 1: Connect to a kernel mode WinDbg session](#connectto)
+- [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
+- [Section 3: Download and build the KMDF Universal Echo Driver](#download)
+- [Section 4: Install the KMDF Echo driver sample on the target system](#install)
+- [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
+- [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
+- [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
+- [Section 8: View variables and call stacks](#viewingvariables)
+- [Section 9: Display processes and threads](#displayingprocessesandthreads)
+- [Section 10: IRQL, Registers and Ending the WinDbg session](#irqlregistersmemory)
+- [Section 11: Windows debugging resources](#windowsdebuggingresources)
 
 ## <span id="connectto"></span><span id="CONNECTTO"></span>Section 1: Connect to a kernel mode WinDbg session
-
 
 *In Section 1, you will configure network debugging on the host and target system.*
 
@@ -171,8 +166,6 @@ If you receive a pop-up message from the firewall, and you wish to use the debug
 
 ![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
 
-
-
 **&lt;- On the host system**
 
 1. On the host computer, open a Command Prompt window as Administrator. We will use the x64 version of WinDbg.exe from the Windows Driver Kit (WDK) that was installed as part of the Windows kit installation. By default it is located here.
@@ -182,11 +175,11 @@ If you receive a pop-up message from the firewall, and you wish to use the debug
     ```
 
 > [!NOTE]
-> This labs assumes that both PCs are running a 64 bit version of Windows on both the target and host. 
-> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
+> This labs assumes that both PCs are running a 64 bit version of Windows on both the target and host.
+> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running.
 For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
 > For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
-> 
+>
 
 2. Launch WinDbg with remote user debug using the following command. The value for the key and port match what we set earlier using BCDEdit on the target.
 
@@ -596,7 +589,7 @@ set ENABLE_OPTIMIZER=0
    0: kd> x /D Echo!a*
    ```
 
-3. As it turns out, the echo sample doesn’t contain any symbols that start with the letter “a”, so to display information about all of the symbols associated with echo driver that start with Echo, type **x ECHO!Echo\\***.
+3. As it turns out, the echo sample doesn’t contain any symbols that start with the letter “a”, so type `x ECHO!Echo*` to display information about all of the symbols associated with echo driver that start with Echo.
 
    ```dbgcmd
    0: kd> x ECHO!Echo*
@@ -735,7 +728,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 The output shows that we have a fairly simple device driver stack. The echo driver is a child of the PnPManager node. The PnPManager is a root node.
 
-\Driver\ECHO      
+\Driver\ECHO
 
 \Driver\PnpManager
 
@@ -744,8 +737,6 @@ This diagram shows a more complex device node tree.
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
 **Note**  For more information about more complex driver stacks, see [Driver stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/driver-stacks) and [Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks).
-
-
 
 ## <span id="WorkingWithBreakpoints"></span><span id="workingwithbreakpoints"></span><span id="WORKINGWITHBREAKPOINTS"></span>Section 7: Working with breakpoints and source code
 
@@ -780,10 +771,6 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 </tr>
 </tbody>
 </table>
-
-
-
-
 
 For more information, see [Source Code Debugging in WinDbg](source-window.md) in the debugging reference documentation.
 
@@ -1073,7 +1060,7 @@ You can display or set process information by using the [**!process**](-process.
    ECHO!EchoEvtIoRead         
    ```
 
-2. Clear the previous breakpoints using **bc \\***.
+2. Clear the previous breakpoints using **bc \***.
 
    ```dbgcmd
    0: kd> bc *  
@@ -1478,7 +1465,7 @@ For information about contents of the register, see [x86 Architecture](x86-archi
 
 To end a user-mode debugging session, return the debugger to dormant mode, and set the target application to run again, enter the **qd** (Quit and Detach) command.
 
-Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \\***, so that the target computer won't break and try to connect to the host computer debugger.
+Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \***, so that the target computer won't break and try to connect to the host computer debugger.
 
 ```dbgcmd
 0: kd> qd

@@ -3,7 +3,7 @@ title: Bug Check 0xEF CRITICAL_PROCESS_DIED
 description: The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died.
 ms.assetid: caa18221-6128-4d77-ab61-ef3c28cfba38
 keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
-ms.date: 09/17/2018
+ms.date: 02/25/2020
 topic_type:
 - apiref
 api_name:
@@ -66,8 +66,6 @@ For more information, see [Crash dump analysis using the Windows debuggers (WinD
 In many cases a user dump is also created before the system bugchecks.  In general, when a user dump is available, it should be examined first to root cause the issue. This is because there are limitations to debugging user mode code from the kernel dump, including paged out/missing data. For more information see, [User-Mode Dump Files](user-mode-dump-files.md). 
 
 Consider using the event log to see if there are errors that occur leading up to this stop code. If there are, these errors can be used to examine specific services or other code to investigate.
-
-If the bug check can be reproduced at will, consider using Time Travel Tracing to record events leading up to the bug check. For more information see, [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
 Once information about the code in question is available,  set a breakpoint in the related code before this code is executed and single step forward through the code looking at the values of critical variables that are used to control the code flow.  Carefully examine this area of your code to look for false assumptions or other mistakes. 
 
