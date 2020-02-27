@@ -8,9 +8,6 @@
   items: 
   - name: "HID Clients Overview"
     href: hid-clients.md
-  - name: "HID Clients Supported in Windows"
-    href: hid-clients-supported-in-windows.md
-    href: hid-clients.md
   - name: "HID Usages"
     href: hid-usages.md
   - name: "HID Collections"
