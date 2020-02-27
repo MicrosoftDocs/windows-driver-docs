@@ -1,18 +1,15 @@
 - name: "HID drivers"
   href: index.md
-- name: "What's New in HID"
-  href: what-s-new-in-hid.md
 - name: "Introduction to HID Concepts"
   href: introduction-to-hid-concepts.md
 - name: "HID Architecture"
   href: hid-architecture.md
-- name: "HID Clients Supported in Windows"
-  href: hid-clients-supported-in-windows.md
-- name: "HID Transports Supported in Windows"
-  href: hid-transports-supported-in-windows.md
 - name: "HID Clients"
   items: 
   - name: "HID Clients Overview"
+    href: hid-clients.md
+  - name: "HID Clients Supported in Windows"
+    href: hid-clients-supported-in-windows.md
     href: hid-clients.md
   - name: "HID Usages"
     href: hid-usages.md
