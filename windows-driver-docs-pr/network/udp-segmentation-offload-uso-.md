@@ -7,7 +7,7 @@ keywords:
 - UDP Segmentation Offload (USO) WDK networking
 - UDP Segmentation Offload (USO) WDK networking , about UDP Segmentation Offload (USO)
 - about UDP Segmentation Offload (USO)
-ms.date: 06/27/2019
+ms.date: 02/27/2020
 ms.localizationpriority: medium
 ---
 
@@ -33,6 +33,7 @@ The TCP/IP transport offloads only those UDP packets that meet the following cri
 - If the miniport driver does not set the **SubMssFinalSegmentSupported** capability, then each large UDP packet offloaded by the transport must have **Length % MSS == 0**. That is, the large packet is divisible into **N** packets with each packet segment containing exactly **MSS** user bytes. If the miniport driver sets the **SubMssFinalSegmentSupported** capability, then this packet length divisibility condition on the transport does not apply. In other words, the final segment can be less than **MSS**.
 - The packet is not a loopback packet.
 - The **MF** bit in the IP header of the large UDP packet that the TCP/IP transport offloaded will not be set, and the **Fragment Offset** in the IP header will be zero.
+- The application has specified UDP_SEND_MSG_SIZE/[WSASetUdpSendMessageSize](https://docs.microsoft.com/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetudpsendmessagesize).
 
 Before offloading a large UDP packet for segmentation, the TCP/IP transport does the following:
 
@@ -75,6 +76,7 @@ USO-capable miniport drivers must also do the following:
 - If the large UDP packet contains IP options, the miniport driver copies these options, unaltered, to each packet that is derived from the large UDP packet.
 - Use the byte offset in the **UdpHeaderOffset** member of [**NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_udp_segmentation_offload_net_buffer_list_info) to determine the location of the UDP header, starting from the first byte of the packet.
 - Increment transmit statistics based on the segmented packets. For example, include the count of Ethernet, IP, and UDP header bytes for each packet segment, and the packet count is the number of **MSS**-sized segments, not **1**.
+- Set the UDP total length and IP length fields based on each segmented datagram size.
 
 ## NDIS interface changes
 
