@@ -1,9 +1,9 @@
 - name: "HID drivers"
   href: index.md
-- name: "Introduction to HID Concepts"
-  href: introduction-to-hid-concepts.md
 - name: "HID Architecture"
   href: hid-architecture.md
+- name: "HID Application Programming Interface (API)"
+  href: introduction-to-hid-concepts.md
 - name: "HID Clients"
   items: 
   - name: "HID Clients Overview"
