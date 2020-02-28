@@ -36,10 +36,14 @@
       items:
       - name: "Driver installation measures"
         items:
+        - name: "Percent of machines that WU reported a successful download"
+          href: pct-machines-wu-success-download.md
+        - name: "Percent of machines that WU reported a successful install"
+          href: pct-macines-wu-success-install.md
         - name: "Percent of machines where the driver install process completes successfully"
           href: pct-machines-where-driver-install-completes-successfully.md
-        - name: Percent of machines that installed a driver update and reported a PnP error code within two days of install
-          href: "pct-machines-installed-driver-update-and-reported-pnp-error-within-2-days.md"
+        - name: "Percent of machines that installed a driver update and reported a PnP error code within two days of install"
+          href: pct-machines-installed-driver-update-and-reported-pnp-error-within-2-days.md
       - name: "Reliability measures"
         items:
         - name: "Percentage of machines without a kernel mode crash"
