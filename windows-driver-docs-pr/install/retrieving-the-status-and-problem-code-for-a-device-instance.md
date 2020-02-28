@@ -31,7 +31,9 @@ If the call to **CM_Get_DevNode_Status** succeeds, **CM_Get_DevNode_Status** ret
 
 ## Using Device Manager to find problem code and problem status for a device
 
-When there is a problem with a devnode, the **Problem status** property appears in the **Property** dropdown on the **Details** tab for the device in Device Manager.
+When there is a problem with a devnode, the problem code appears on the **General** tab, in the **Device status** field.
+
+The **Problem status** property appears in the **Property** dropdown on the **Details** tab for the device in Device Manager.
 
 ## Using the debugger to find problem code and problem status for a device
 

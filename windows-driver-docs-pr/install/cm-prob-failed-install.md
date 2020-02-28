@@ -46,15 +46,11 @@ The INF that matched on the device uses Include/Needs and includes an INF that i
 
 Check for correct use of **Include** and **Needs** entries specified in the [INF DDInstall Section](inf-ddinstall-section.md).
 
-### 0xC0000493 - STATUS_PNP_DRIVER_CONFIGURATION_INCOMPLETE
-
-Ensure that the device meets the [Universal INF requirements](using-a-universal-inf-file.md), and retry installation.
-
 ### 0xC0000494 - STATUS_PNP_FUNCTION_DRIVER_REQUIRED
 
 Verify that either:
 
-1. The INF file contains an [**AddService directive**](inf-addservice-directive.md) that sets an associated service or function driver using the flag SPSVCINST_ASSOCSERVICE (0x00000002).
+1. The INF file for the device being installed contains an [**AddService directive**](inf-addservice-directive.md) that sets an associated service or function driver using the flag SPSVCINST_ASSOCSERVICE (0x00000002).
 2. The INF file specifies **Include** or **Needs** entries in a [INF DDInstall Section](inf-ddinstall-section.md) that reference a system-supplied driver that in turn sets an associated service on the device.
 
 ### Upgrade to Windows 10
