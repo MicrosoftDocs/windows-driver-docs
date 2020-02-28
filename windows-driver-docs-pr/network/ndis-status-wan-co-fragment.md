@@ -16,7 +16,7 @@ The NDIS\_STATUS\_WAN\_CO\_FRAGMENT status indicates that a CoNDIS WAN miniport 
 Remarks
 -------
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure contains a pointer to an [**NDIS\_WAN\_CO\_FRAGMENT**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559030(v=vs.85)) structure. The NDIS\_WAN\_CO\_FRAGMENT structure describes the reason that the partial packet was received.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a pointer to an [**NDIS\_WAN\_CO\_FRAGMENT**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559030(v=vs.85)) structure. The NDIS\_WAN\_CO\_FRAGMENT structure describes the reason that the partial packet was received.
 
 For more information about NDIS\_STATUS\_WAN\_CO\_FRAGMENT, see [Indicating CoNDIS WAN Miniport Driver Status](https://docs.microsoft.com/windows-hardware/drivers/network/indicating-condis-wan-miniport-driver-status). For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/implementing-condis-wan-miniport-drivers).
 
@@ -43,7 +43,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
 [**NDIS\_WAN\_CO\_FRAGMENT**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559030(v=vs.85))
 

@@ -42,7 +42,7 @@ A handle to the device. To obtain a device handle, call the [**CreateFile**](htt
 The control code for the operation. Use **FSCTL\_SET\_REFS\_SMR\_VOLUME\_GC\_PARAMETERS** for this operation.
 
 *lpInBuffer*   
-A pointer to a caller-allocated [**REFS\_SMR\_VOLUME\_GC\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_refs_smr_volume_gc_parameters) structure.
+A pointer to a caller-allocated [**REFS\_SMR\_VOLUME\_GC\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_refs_smr_volume_gc_parameters) structure.
 
 *nInBufferSize* \[in\]  
 The size of the input buffer, in bytes.

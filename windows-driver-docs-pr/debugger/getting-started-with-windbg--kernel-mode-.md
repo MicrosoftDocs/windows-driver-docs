@@ -2,49 +2,49 @@
 title: Getting Started with WinDbg (Kernel-Mode)
 description: This topic provides hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
 ms.assetid: 1B61591F-0D48-4FBD-B242-68BB90D27FAF
-ms.date: 05/21/2018
+ms.date: 02/20/2020
 ms.localizationpriority: medium
 ---
 
 # <span id="debugger.getting_started_with_windbg__kernel-mode_"></span>Getting Started with WinDbg (Kernel-Mode)
 
-
 WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
 
 For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md). After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
--   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x64
--   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x86
+- C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
+- C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86
 
 ## <span id="Set_up_a_kernel-mode_debugging"></span><span id="set_up_a_kernel-mode_debugging"></span><span id="SET_UP_A_KERNEL-MODE_DEBUGGING"></span>Set up a kernel-mode debugging
-
 
 A kernel-mode debugging environment typically has two computers: the *host computer* and the *target computer*. The debugger runs on the host computer, and the code being debugged runs on the target computer. The host and target are connected by a debug cable.
 
 The Windows debuggers support these types of cables for debugging:
 
--   Ethernet
--   USB 2.0
--   USB 3.0
--   1394
--   Serial (also called null modem)
+- Ethernet
+- USB 2.0 / USB 3.0
+- Serial (also called null modem)
 
-If your target computer is running Windows 8 or later, you can use any type of debug cable, including Ethernet. This diagram illustrates a host and target computer connected for debugging over Ethernet cable.
+For speed and reliablity, using Ethernet with a local network hub, is recommended. This diagram illustrates a host and target computer connected for debugging over Ethernet cable.
 
 ![diagram of host and target with ethernet connection](images/configfortest01.png)
 
-If your target computer is running a version of Windows earlier than Window 8, then you cannot use Ethernet for debugging; you must use USB, 1394, or serial. This diagram illustrates a host and target computer connected by a USB, 1394, or serial debug cable.
+Another option for older versions of Windows is to use a direct cable such as USB or serial cable. 
 
 ![diagram of host and target with debug cable](images/configfortest02.png)
 
 For details about how to set up the host and target computers, see [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md).
+
+### Virtual Machine - VMs
+
+For information on connecting a debugger to a Hyper-V virtual machine, see [Setting Up Network Debugging of a Virtual Machine - KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md).
 
 ## <span id="Establish_a_kernel-mode_debugging_session"></span><span id="establish_a_kernel-mode_debugging_session"></span><span id="ESTABLISH_A_KERNEL-MODE_DEBUGGING_SESSION"></span>Establish a kernel-mode debugging session
 
 
 After you have set up your host and target computer and connected them with a debug cable, you can establish a kernel-mode debugging session by following the instructions in the same topic that you used for getting set up. For example, if you decided to set up your host and target computers for debugging over Ethernet, you can find instructions for establishing a kernel-mode debugging session is this topic:
 
--   [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
+-  [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 
 
 ## <span id="Get_started_using_WinDbg"></span><span id="get_started_using_windbg"></span><span id="GET_STARTED_USING_WINDBG"></span>Get started using WinDbg
@@ -412,23 +412,14 @@ After you have set up your host and target computer and connected them with a de
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Getting Started with WinDbg (User-Mode)](getting-started-with-windbg.md)
 
-[Setting Up Kernel-Mode Debugging Manually](https://go.microsoft.com/fwlink/p?linkid=272138)
+[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 
-[Debugger Operation](https://go.microsoft.com/fwlink/p?linkid=399247)
+[Debugger Operation](debugger-operation-win8.md)
 
-[Debugging Techniques](https://go.microsoft.com/fwlink/p?linkid=399248)
+[Debugging Techniques](debugging-techniques.md)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/)
 
- 
-
- 
-
-
-
-
-
-
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)

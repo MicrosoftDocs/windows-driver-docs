@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Sensor DDSI callbacks
 
-The sensor device driver software interface (DDSI) functions represent the interface a sensor driver uses to interact with the class extension. These callbacks are implemented by sensor drivers and called by the class extension. You can find more information about these callbacks in the [_SENSOR_CONTROLLER_CONFIG structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_controller_config).
+The sensor device driver software interface (DDSI) functions represent the interface a sensor driver uses to interact with the class extension. These callbacks are implemented by sensor drivers and called by the class extension. You can find more information about these callbacks in the [_SENSOR_CONTROLLER_CONFIG structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
 ## Callbacks
 

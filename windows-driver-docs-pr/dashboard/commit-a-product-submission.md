@@ -25,7 +25,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI                                                                                                    |
 |:-------|:---------------------------------------------------------------------------------------------------------------|
-| POST   | https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionID}/commit |
+| POST   | https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/commit |
 
 The productId in the method is the product for which the submission is intended. The submssionID in the method is the submission which is being committed.
 
@@ -49,7 +49,7 @@ Do not provide request body for this method.
 The following example demonstrates how to commit a submission.
 
 ```cpp
-POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504621465124/commit HTTP/1.1
+POST https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14631253285588838/submissions/1152921504621465124/commit HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 
@@ -75,6 +75,6 @@ After this step, use the method [get submission details](get-a-submission.md)  t
 
 For more info, see [Error codes](get-product-data.md#error-codes).
 
-# See also
+## See also
 
 [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

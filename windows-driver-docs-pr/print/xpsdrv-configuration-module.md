@@ -29,7 +29,7 @@ The two main components of an XPSDrv print driver are the [Version 3 print drive
 
 ### XPSDrv Document Events
 
-XPSDrv drivers can receive GDI document events through the [**DrvDocumentEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdocumentevent) function when Win32-based applications are printing to them, and the drivers can receive XPS document events through DrvDocumentEvent when WPF applications are printing to them. For more information about XPSDrv document events, see [XPSDrv Driver Document Events](xps-driver-document-events.md).
+XPSDrv drivers can receive GDI document events through the [**DrvDocumentEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent) function when Win32-based applications are printing to them, and the drivers can receive XPS document events through DrvDocumentEvent when WPF applications are printing to them. For more information about XPSDrv document events, see [XPSDrv Driver Document Events](xps-driver-document-events.md).
 
 ### XPSDrv Driver Installation
 

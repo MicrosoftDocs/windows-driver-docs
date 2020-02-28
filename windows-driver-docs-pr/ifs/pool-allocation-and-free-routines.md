@@ -23,7 +23,7 @@ RDBSS provides a number of routines to use for pool allocation. Normally, these 
 
 On a checked build, these routines were designed to add wrappers around the normal kernel allocation and free routines. These wrappers for pool allocation and free routines provide additional debugging information and call a set of routines that perform various kinds of checking and guarding before calling the kernel pool allocation and free routines. However, these features are not currently implemented in these allocation and free routines, but might be added in future releases.
 
-On a free build, these routines become direct calls to the kernel allocation and free routines, [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithtag) and [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-exfreepool).
+On a free build, these routines become direct calls to the kernel allocation and free routines, [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool).
 
 The following table lists the RDBSS pool allocation and free routines.
 

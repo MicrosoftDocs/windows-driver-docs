@@ -67,13 +67,13 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
     WPP_INIT_TRACING( DriverObject, RegistryPath );
     ```
 
-    To deactivate tracing, both KMDF and UMDF 2 drivers call [**WPP\_CLEANUP for Kernel-Mode Drivers**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) from [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) or [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload):
+    To deactivate tracing, both KMDF and UMDF 2 drivers call [**WPP\_CLEANUP for Kernel-Mode Drivers**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) from [*EvtCleanupCallback*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup) or [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload):
 
     ```cpp
     WPP_CLEANUP( WdfDriverWdmGetDriverObject( Driver ));
     ```
 
-    The [**WPP\_CLEANUP**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) macro takes a parameter of type PDRIVER\_OBJECT, so if your driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) fails, you can skip calling [**WdfDriverWdmGetDriverObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) and instead call **WPP\_CLEANUP** with a pointer to the WDM driver object.
+    The [**WPP\_CLEANUP**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)) macro takes a parameter of type PDRIVER\_OBJECT, so if your driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) fails, you can skip calling [**WdfDriverWdmGetDriverObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) and instead call **WPP\_CLEANUP** with a pointer to the WDM driver object.
 
     Starting in UMDF version 2.15, UMDF drivers use the kernel-mode signatures of these macros for initializing and cleaning up tracing. This means that the calls look identical for KMDF and UMDF.
 

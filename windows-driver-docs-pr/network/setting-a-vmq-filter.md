@@ -18,11 +18,11 @@ After a receive queue is allocated, overlying drivers can set filters on the rec
 ## Setting a Filter on a Receive Queue
 
 
-To set a filter on a receive queue with an initial set of configuration parameters, an overlying driver issues an [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) method object identifier (OID) request. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure initially contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an **NDIS\_RECEIVE\_FILTER\_PARAMETERS** structure with a new filter identifier.
+To set a filter on a receive queue with an initial set of configuration parameters, an overlying driver issues an [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) method object identifier (OID) request. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure initially contains a pointer to an [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an **NDIS\_RECEIVE\_FILTER\_PARAMETERS** structure with a new filter identifier.
 
-The overlying driver initializes the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure with the following filter configuration parameters for the receive queue:
+The overlying driver initializes the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure with the following filter configuration parameters for the receive queue:
 
--   The filter type that is specified through an [**NDIS\_RECEIVE\_FILTER\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_receive_filter_type) enumeration value.
+-   The filter type that is specified through an [**NDIS\_RECEIVE\_FILTER\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_receive_filter_type) enumeration value.
 
     **Note**  Starting with NDIS 6.20, only **NdisReceiveFilterTypeVMQueue** filter types are supported for the virtual machine queue (VMQ) interface.
 
@@ -30,19 +30,19 @@ The overlying driver initializes the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](htt
 
 -   The queue identifier.
 
--   One or more field test parameters that are formatted as [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures. For VMQ, the following field test parameters are defined.
+-   One or more field test parameters that are formatted as [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures. For VMQ, the following field test parameters are defined.
 
     -   The destination media access control (MAC) address in the packet equals the specified MAC address.
 
     -   The virtual LAN (VLAN) identifier in the packet equals the specified VLAN identifier.
 
-The [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure is used with the [OID\_RECEIVE\_FILTER\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-parameters) OID and the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) OID to specify the configuration parameters of a filter.
+The [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure is used with the [OID\_RECEIVE\_FILTER\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-parameters) OID and the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) OID to specify the configuration parameters of a filter.
 
-The **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure define an array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures. Each **NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS** structure in the array sets the filter test criterion for one field in a network header.
+The **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure define an array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures. Each **NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS** structure in the array sets the filter test criterion for one field in a network header.
 
-The **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure specifies actions to be performed for the receive filter. The following points apply to the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag:
+The **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure specifies actions to be performed for the receive filter. The following points apply to the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag:
 
--   If the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is set in the **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure, the network adapter must indicate only received packets that match all of the following test criteria:
+-   If the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag is set in the **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structure, the network adapter must indicate only received packets that match all of the following test criteria:
 
     -   A packet with a matching MAC address.
 
@@ -58,14 +58,14 @@ The **Flags** member of the [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https
 
     -   If the miniport driver supports NDIS 6.20, it must return a failed status for the OID request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter).
 
-    -   If the miniport driver supports NDIS 6.30 or later versions of NDIS, it must configure the network adapter to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must put the VLAN tag in an [**NDIS\_NET\_BUFFER\_LIST\_8021Q\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_net_buffer_list_8021q_info) that is associated with the packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_net_buffer_list) structure.
+    -   If the miniport driver supports NDIS 6.30 or later versions of NDIS, it must configure the network adapter to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must put the VLAN tag in an [**NDIS\_NET\_BUFFER\_LIST\_8021Q\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_net_buffer_list_8021q_info) that is associated with the packet's [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
 
 -   If a protocol driver sets a MAC address filter and a VLAN identifier filter with the [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) OID, it does not set the **NDIS\_RECEIVE\_FILTER\_FIELD\_MAC\_HEADER\_VLAN\_UNTAGGED\_OR\_ZERO** flag in either of the filter fields. In this case, the miniport driver should indicate packets that match both the specified MAC address and the VLAN identifier. That is, the miniport driver should not indicate packets with a matching MAC address that have a zero VLAN identifier or are untagged packets.
 
 ## Using the Filter Identifier
 
 
-NDIS assigns a filter identifier in the **FilterId** member of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure and passes the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) to the underlying miniport driver. Each filter that is set on a receive queue has a unique filter identifier for a network adapter. That is, the filter identifiers are not duplicated on different queues that the network adapter manages.
+NDIS assigns a filter identifier in the **FilterId** member of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters) structure and passes the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-receive-filter-set-filter) to the underlying miniport driver. Each filter that is set on a receive queue has a unique filter identifier for a network adapter. That is, the filter identifiers are not duplicated on different queues that the network adapter manages.
 
 The overlying driver must use the filter identifier that NDIS provides in later OID requests; for example, to modify the filter parameters or to free a filter.
 
@@ -84,7 +84,7 @@ The miniport driver programs the network adapter based on the filters in the fol
 
 -   Packets must be assigned to the receive queue if any of the filters pass.
 
-The network adapter combines the results from all the field tests with a logical **AND** operation. That is, if any field test that is included in the array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures fails, the network packet does not meet the specified filter criterion.
+The network adapter combines the results from all the field tests with a logical **AND** operation. That is, if any field test that is included in the array of [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_field_parameters) structures fails, the network packet does not meet the specified filter criterion.
 
 When a network adapter tests a received packet against these filter criteria, it must ignore all fields in the packet that have no test criteria specified.
 

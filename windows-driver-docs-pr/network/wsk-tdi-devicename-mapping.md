@@ -15,7 +15,7 @@ A WSK application uses the WSK\_TDI\_DEVICENAME\_MAPPING client control operatio
 
 If a WSK application uses the WSK\_TDI\_DEVICENAME\_MAPPING client control operation to map combinations of address family, socket type, and protocol to device names of TDI transports, it must do so before it creates any sockets.
 
-To map combinations of address family, socket type, and protocol to device names of TDI transports, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
+To map combinations of address family, socket type, and protocol to device names of TDI transports, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>
@@ -39,7 +39,7 @@ To map combinations of address family, socket type, and protocol to device names
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_tdi_map_info" data-raw-source="[&lt;strong&gt;WSK_TDI_MAP_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_tdi_map_info)"><strong>WSK_TDI_MAP_INFO</strong></a> structure that contains a list of mappings of combinations of address family, socket type, and protocol to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565091(v=vs.85)" data-raw-source="[TDI](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565091(v=vs.85))">TDI</a> device names.</p></td>
+<td><p>A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_tdi_map_info" data-raw-source="[&lt;strong&gt;WSK_TDI_MAP_INFO&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_tdi_map_info)"><strong>WSK_TDI_MAP_INFO</strong></a> structure that contains a list of mappings of combinations of address family, socket type, and protocol to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565091(v=vs.85)" data-raw-source="[TDI](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565091(v=vs.85))">TDI</a> device names.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -64,7 +64,7 @@ For more information about using TDI transports, see [Using TDI Transports](http
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](https://docs.microsoft.com/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2) or [Winsock Kernel](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/) instead.
 
  
 

@@ -79,11 +79,11 @@ Requirements
 ## See also
 
 
-[**BDA\_CA\_MODULE\_UI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bdatypes/ns-bdatypes-_bda_ca_module_ui)
+[**BDA\_CA\_MODULE\_UI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_ca_module_ui)
 
 [**KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED**](ksevent-bda-ca-module-ui-requested.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
 

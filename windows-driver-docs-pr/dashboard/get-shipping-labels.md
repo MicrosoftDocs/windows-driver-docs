@@ -1,10 +1,8 @@
 ---
 title: Get shipping label data
 description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Dev Center Account.
-author: balapv
-ms.author: balapv
 ms.topic: article
-ms.date: 08/21/2018
+ms.date: 10/03/2019
 ---
 # Get shipping label data
 
@@ -13,15 +11,15 @@ For an introduction to Microsoft Hardware APIs, including prerequisites for usin
 Use the following methods in *Microsoft Hardware APIs* to get data for shipping labels of hardware products registered to your Hardware Dev Center Account.
 
 ```html
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
+https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
 ```
 
 Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 |Description|Method|URI|
 |-|-|-|
-|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
-|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`|
+|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
+|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`|
 
 ## Prerequisites
 
@@ -103,7 +101,7 @@ This resource represents a shipping label created for a submission of your produ
   },
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978422",
+      "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978422",
       "rel": "self",
       "method": "GET"
     }
@@ -291,16 +289,17 @@ This object has the following values
 
 The hardware ID object should contain a valid combination of bundle ID, PNP ID, OS Code and INF name while creating a new shipping label. To get the allowed/valid combinations of these attributes for your submission (package), you can download the driver metadata file which is provided as a link when you get details of a submission. For more information refer to [driver package metadata](driver-package-metadata.md).
 
-
 ### CHIDs object
 
 This object represents the CHID (computer hardware ID) which needs to be targeted by the shipping label. Refer [using CHIDs](https://docs.microsoft.com/windows-hardware/drivers/dashboard/using-chids) for more details.
+
 ```json
 {
 	"chid": "346511cf-ccee-5c6d-8ee9-3c70fc7aae83",
 	"distributionState": "pendingAdd"
 }
 ```
+
 This object has the following values
 
 | Value | Type | Description |
@@ -323,8 +322,8 @@ This object has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-|flooring|string|Use this option when you want a driver to be offered only at and above the listed Windows 10 operating system. For example, selecting an RS4 flooring would mean only systems running Windows 10 1803 (RS4) and later will be offered this driver. Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li></ul> Note that the possible values will expand to include the current version of the OS (which is RS5 at the time of this document)|
-|ceiling|string|*Access to this feature is limited*. Use this option when you want a driver to be offered only for the listed operating system and earlier systems. For example, selecting an RS3 ceiling on a Windows 10 1607 RS1 certified driver would mean your driver would never be offered to systems running Windows 10 1803 (RS4) or above.Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li></ul> Note that the possible values will expand to include the current version of the OS (which is RS5 at the time of this document)|
+|flooring|string|Use this option when you want a driver to be offered only at and above the listed Windows 10 operating system. For example, selecting an RS4 flooring would mean only systems running Windows 10 1803 (RS4) and later will be offered this driver. Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li><li>19H1</li></ul> Note that the possible values will expand to include the current version of the OS. |
+|ceiling|string|*Access to this feature is limited*. Use this option when you want a driver to be offered only for the listed operating system and earlier systems. For example, selecting an RS3 ceiling on a Windows 10 1607 RS1 certified driver would mean your driver would never be offered to systems running Windows 10 1803 (RS4) or above.Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li><li>19H1</li></ul> Note that the possible values will expand to include the current version of the OS. |
 
 For more info about these values, see [Limiting driver distribution by Windows versions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/limit-driver-distribution).
 

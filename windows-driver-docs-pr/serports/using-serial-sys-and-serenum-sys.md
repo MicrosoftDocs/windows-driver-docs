@@ -36,8 +36,8 @@ The following system components are available for use with serial controller dev
     - [Operation of Serenum and Serial](operation-of-serenum-and-serial.md)
     - [Registry Settings for Serial](registry-settings-for-serial.md)
     - [Registry Settings for Serenum](registry-settings-for-serenum.md)
-    - [Serial Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
-    - [Serenum Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+    - [Serial Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+    - [Serenum Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
     - Data definitions in the Ntddser.h header file in the WDK.
 
 <!-- -->
@@ -50,7 +50,7 @@ The following system components are available for use with serial controller dev
 
     You must use a COM port device interface to access a COM port. (The GUID for the COM port device interface class is [**GUID\_DEVINTERFACE\_COMPORT**](https://docs.microsoft.com/windows-hardware/drivers/install/guid-devinterface-comport).)
 
-- [COM port database](com-port-database.md) and [COM port database support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+- [COM port database](com-port-database.md) and [COM port database support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
     The COM port database arbitrates the use of COM port numbers by COM ports.
 

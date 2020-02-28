@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE to notify extensible switch extensions about the deletion of a policy property for an extensible switch port.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer that contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_DELETE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_delete_parameters) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer that contains an [**NDIS\_SWITCH\_PORT\_PROPERTY\_DELETE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_delete_parameters) structure.
 
 Remarks
 -------
 
-A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE. All other types of extensions must call [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest) to forward the OID request to the next extension in the extensible switch driver stack.
+A forwarding extension can handle the OID set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE. All other types of extensions must call [**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request to the next extension in the extensible switch driver stack.
 
 For guidelines on how to handle an OID set request of OID\_SWITCH\_PORT\_PROPERTY\_DELETE, see [Managing Port Policies](https://docs.microsoft.com/windows-hardware/drivers/network/managing-port-policies).
 
@@ -102,15 +102,15 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_custom)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_CUSTOM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_custom)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters)
 
-[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_switch_port_property_vlan)
+[**NDIS\_SWITCH\_PORT\_PROPERTY\_VLAN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_vlan)
 
-[**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfoidrequest)
+[**NdisFOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest)
 
  
 

@@ -99,7 +99,7 @@ The [WIA utility library](wia-utility-library.md) includes a collection of debug
 
 ### WIA Minidrivers
 
-[WIA minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which the WIA service calls to communicate with the minidriver.
+[WIA minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which the WIA service calls to communicate with the minidriver.
 
 A WIA minidriver provides a device-specific, user-mode interface to a kernel-mode still image driver, which drives the imaging device through a driver, such as a USB driver. A minidriver communicates with the kernel-mode drivers by calling the [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) Microsoft Win32 functions (which are described in the Microsoft Windows SDK documentation).
 

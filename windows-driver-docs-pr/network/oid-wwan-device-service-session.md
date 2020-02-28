@@ -15,7 +15,7 @@ OID\_WWAN\_DEVICE\_SERVICE\_SESSION directs a miniport driver to open or close a
 
 Query requests are not supported.
 
-Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-session) status notification containing a [**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session) structure that describes the result of the operation.
+Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-session) status notification containing a [**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session) structure that describes the result of the operation.
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support specified device service or operation.
 
@@ -42,7 +42,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session)
+[**NDIS\_WWAN\_SET\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_set_service_session)
 
 [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-session)
 

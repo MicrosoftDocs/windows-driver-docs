@@ -54,7 +54,7 @@ This section provides information on designing, testing, and debugging printer d
 ## Related sections
 
 
--   [Print DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print)
+-   [Print DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print)
  
 
 

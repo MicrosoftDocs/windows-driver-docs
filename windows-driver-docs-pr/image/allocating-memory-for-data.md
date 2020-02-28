@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The WIA service relies on the information supplied in the [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure to perform a proper data transfer. The members of this structure that are relevant to the WIA minidriver are:
+The WIA service relies on the information supplied in the [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure to perform a proper data transfer. The members of this structure that are relevant to the WIA minidriver are:
 
 **bClassDrvAllocBuf** − WIA service allocation Boolean.
 
@@ -40,9 +40,9 @@ A WIA application uses the WIA\_IPA\_BUFFER\_SIZE property to determine the mini
 
 It is recommended that you set the WIA\_IPA\_BUFFER\_SIZE property to a reasonable size to allow the device to transfer data at an efficient rate. Do this by balancing the number of requests (buffer size not too small) and the number of time-consuming requests (buffer too large) for your device in order to ensure optimal performance.
 
-You should set the [**WIA\_IPA\_ITEM\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-size) property to zero if the WIA minidriver can transfer data. If the transfer type is TYMED\_FILE or TYMED\_MULTIPAGE\_FILE, it is the minidriver's responsibility to allocate memory for the data buffer to be passed to the WIA service function that writes to the file. This provides consistency in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method.
+You should set the [**WIA\_IPA\_ITEM\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-size) property to zero if the WIA minidriver can transfer data. If the transfer type is TYMED\_FILE or TYMED\_MULTIPAGE\_FILE, it is the minidriver's responsibility to allocate memory for the data buffer to be passed to the WIA service function that writes to the file. This provides consistency in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method.
 
-The [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method is called by the WIA service when it intends to transfer data from the device to an application. The WIA driver should determine which type of transfer (via the WIA service) the application is attempting, by reading the **tymed** member of the [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context):
+The [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method is called by the WIA service when it intends to transfer data from the device to an application. The WIA driver should determine which type of transfer (via the WIA service) the application is attempting, by reading the **tymed** member of the [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context):
 
 The **tymed** member, which is set by the application, can have one of the following four values:
 
@@ -62,7 +62,7 @@ The different TYMED settings XXX\_CALLBACK and XXX\_FILE change the usage of cal
 
 ### <a href="" id="tymed-callback-and-tymed-multipage-callback"></a>TYMED\_CALLBACK and TYMED\_MULTIPAGE\_CALLBACK
 
-For a memory transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback:
+For a memory transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback:
 
 (*pmdtc-&gt;pIWiaMiniDrvCallBack-&gt;MiniDrvCallback* in the following sample source code)
 
@@ -84,11 +84,11 @@ Update this to the current location where the application should write the next 
 The number of bytes in the data chunk being sent to the application.
 
 <a href="" id="pmdtc"></a>*pmdtc*  
-Pointer to a [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure that contains the data transfer values.
+Pointer to a [**MINIDRV\_TRANSFER\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure that contains the data transfer values.
 
 ### <a href="" id="tymed-file-and-tymed-multipage-file"></a>TYMED\_FILE and TYMED\_MULTIPAGE\_FILE
 
-For a file transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback::
+For a file transfer, issue a [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) callback::
 
 (*pmdtc-&gt;pIWiaMiniDrvCallBack-&gt;MiniDrvCallback* in the following sample source code)
 

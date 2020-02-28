@@ -23,7 +23,7 @@ To *complete* an IRP, a dispatch routine must perform all of the following steps
 
 1.  Set **Irp-&gt;IoStatus.Status** to an appropriate NTSTATUS value.
 
-2.  Call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) to return the IRP to the I/O Manager.
+2.  Call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) to return the IRP to the I/O Manager.
 
 3.  Return the same status value as in step 1 to the caller.
 

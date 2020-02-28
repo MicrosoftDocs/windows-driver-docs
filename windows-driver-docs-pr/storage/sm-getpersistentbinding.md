@@ -94,9 +94,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetPersistentBinding\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_in)
+[**SM\_GetPersistentBinding\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_in)
 
-[**SM\_GetPersistentBinding\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_out)
+[**SM\_GetPersistentBinding\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_out)
 
  
 

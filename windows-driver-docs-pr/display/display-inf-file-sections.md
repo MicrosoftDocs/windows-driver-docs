@@ -112,7 +112,7 @@ Microsoft Windows XP and earlier operating systems do not delete the **Capabilit
 
 ### <span id="Disabling_AGP_Transfer_Rates_and_Sideband_Addressing"></span><span id="disabling_agp_transfer_rates_and_sideband_addressing"></span><span id="DISABLING_AGP_TRANSFER_RATES_AND_SIDEBAND_ADDRESSING"></span>Disabling AGP Transfer Rates and Sideband Addressing
 
-If necessary, you can modify the INF file for your display adapter to disable certain AGP transfer rates or sideband addressing. Note that a miniport driver can change AGP transfer rates when it calls [**AgpSetRate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/videoagp/nc-videoagp-pagp_set_rate), but such calls are not allowed to change transfer rates that are disabled in an INF file.
+If necessary, you can modify the INF file for your display adapter to disable certain AGP transfer rates or sideband addressing. Note that a miniport driver can change AGP transfer rates when it calls [**AgpSetRate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_set_rate), but such calls are not allowed to change transfer rates that are disabled in an INF file.
 
 The *regstr.h* header file, which is shipped with the Windows Driver Kit (WDK), defines the following set of flags.
 

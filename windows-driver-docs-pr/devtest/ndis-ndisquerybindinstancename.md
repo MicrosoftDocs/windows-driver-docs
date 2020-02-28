@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # NdisQueryBindInstanceName rule (ndis)
 
 
-[**NdisQueryBindInstanceName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisquerybindinstancename) allocates memory for the string that specifies the friendly name. After the caller finishes using this memory, the caller must call the [**NdisFreeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreememory) function to release the memory.
+[**NdisQueryBindInstanceName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisquerybindinstancename) allocates memory for the string that specifies the friendly name. After the caller finishes using this memory, the caller must call the [**NdisFreeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreememory) function to release the memory.
 
 |              |      |
 |--------------|------|
@@ -51,8 +51,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisFreeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreememory)
-[**NdisQueryBindInstanceName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisquerybindinstancename)
+[**NdisFreeMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreememory)
+[**NdisQueryBindInstanceName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisquerybindinstancename)
  
 
  

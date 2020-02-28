@@ -16,7 +16,7 @@ This section includes the following topics:
 
 [Basic Installation Operations](basic-installation-operations.md)
 
-[SetupAPI Functions that Simplify Driver Installation](setupapi-functions-that-simplify-driver-installation.md)
+[SetupAPI Functions that Simplify Driver Installation](functions-that-simplify-driver-installation.md)
 
 [Using SetupAPI To Verify Driver Authenticode Signatures](using-setupapi-to-verify-driver-authenticode-signatures.md)
 

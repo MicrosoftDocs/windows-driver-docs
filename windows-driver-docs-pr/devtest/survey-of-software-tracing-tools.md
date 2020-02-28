@@ -55,7 +55,7 @@ The following software tracing tools are included in either the Windows Driver K
 
 -   Logman (Logman.exe) is a fully functional, GUI-based [trace controller](trace-controller.md) that is designed especially to control the logging of performance counters and event traces.
 
-    Logman is included in Windows XP and later versions of Windows. For more information about how to use this tool, see the [Logman](https://go.microsoft.com/fwlink/p/?linkid=179385) topic on the TechNet website.
+    Logman is included in Windows XP and later versions of Windows. For more information about how to use this tool, see [Logman](https://go.microsoft.com/fwlink/p/?linkid=179385).
 
 ### <span id="creating_tmf_files"></span><span id="CREATING_TMF_FILES"></span>Creating TMF files
 
@@ -73,7 +73,7 @@ The following software tracing tools are included in either the Windows Driver K
 
 -   Tracerpt (Tracerpt.exe) is a command-line [trace consumer](trace-consumer.md) that formats *trace events* (**TraceEvent**) and performance counters and writes them to CSV or XML files. It also analyzes the events and generates summary reports.
 
-    Tracerpt is included in Windows XP and later versions of Windows. For more information about how to use this tool, see [Tracerpt](https://go.microsoft.com/fwlink/p/?linkid=179389) topic on the TechNet website.
+    Tracerpt is included in Windows XP and later versions of Windows. For more information about how to use this tool, see [Tracerpt](https://go.microsoft.com/fwlink/p/?linkid=179389).
 
 -   [TraceView](traceview.md), a GUI tool, that is a trace controller and a trace consumer, also formats and displays trace messages (**TraceMessage**) from real-time trace sessions or trace logs. It displays the trace messages in a tabular form, making them easier to filter and browse.
 

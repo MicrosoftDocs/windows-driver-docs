@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 OID_WWAN_PCO reports the status and the payload of a Protocol Configuration Optiont (PCO) value that the modem has received from a mobile operator network. The PCO value that is returned from the modem corresponds to the PDN that the port number specifies in the OID request structure.
 
-For query requests, the modem first responds with NDIS_STATUS_INDICATION_REQUIRED when it receives this OID. An [NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md) notification will be returned containing an [NDIS_WWAN_PCO_STATUS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pco_status) structure when the query request is completed. **NDIS_WWAN_PCO_STATUS**, in turn, contains the PCO status and a [WWAN_PCO_VALUE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_pco_value) structure that represents the PCO value.
+For query requests, the modem first responds with NDIS_STATUS_INDICATION_REQUIRED when it receives this OID. An [NDIS_STATUS_WWAN_PCO_STATUS](ndis-status-wwan-pco-status.md) notification will be returned containing an [NDIS_WWAN_PCO_STATUS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pco_status) structure when the query request is completed. **NDIS_WWAN_PCO_STATUS**, in turn, contains the PCO status and a [WWAN_PCO_VALUE](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pco_value) structure that represents the PCO value.
 
 Set requests are not applicable.
 
@@ -33,9 +33,9 @@ For modems that choose not use Microsoft inbox miniport class driver, to receive
 
 [**NDIS_STATUS_WWAN_PCO_STATUS**](ndis-status-wwan-pco-status.md)
 
-[**NDIS_WWAN_PCO_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_pco_status)
+[**NDIS_WWAN_PCO_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pco_status)
 
-[**WWAN_PCO_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ns-wwan-_wwan_pco_value) 
+[**WWAN_PCO_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pco_value) 
 
 [**OID OID_WWAN_DEVICE_CAPS_EX**](oid-wwan-device-caps-ex.md)
 

@@ -20,9 +20,9 @@ Because the TWAIN API does not allow an application to specify the active device
 
 To access a device, image acquisition software calls [**IStillImage::CreateDevice**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543778(v=vs.85)) to create an instance of the COM object that defines the **IStiDevice** interface. The **IStiDevice** interface provides several methods for performing device I/O operations. When creating the object instance, image acquisition software should specify the "data" [Transfer Modes](transfer-modes.md).
 
-Image acquisition software can call [**IStiDevice::Subscribe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sti/nf-sti-istidevice-subscribe) to request the event monitor to deliver notification of [Still Image Device Events](still-image-device-events.md). Once notification is received, [**IStiDevice::GetLastNotificationData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sti/nf-sti-istidevice-getlastnotificationdata) can be called to determine the type of event. [**IStiDevice::UnSubscribe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sti/nf-sti-istidevice-unsubscribe) should be called when notifications are no longer needed.
+Image acquisition software can call [**IStiDevice::Subscribe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sti/nf-sti-istidevice-subscribe) to request the event monitor to deliver notification of [Still Image Device Events](still-image-device-events.md). Once notification is received, [**IStiDevice::GetLastNotificationData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sti/nf-sti-istidevice-getlastnotificationdata) can be called to determine the type of event. [**IStiDevice::UnSubscribe**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sti/nf-sti-istidevice-unsubscribe) should be called when notifications are no longer needed.
 
-When the image acquisition software has finished using the **IStiDevice** interface, it must call [**IStiDevice::Release**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sti/nf-sti-istidevice-release).
+When the image acquisition software has finished using the **IStiDevice** interface, it must call [**IStiDevice::Release**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sti/nf-sti-istidevice-release).
 
  
 

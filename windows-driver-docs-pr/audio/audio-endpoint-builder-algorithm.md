@@ -27,7 +27,7 @@ The following list summarizes how the algorithm that is used by AudioEndpointBui
 
 3.  Sets the default properties for the endpoint. For example, AudioEndpointBuilder sets the name, icon, and the form factor.
 
-4.  Determines whether there is a path from the endpoint to a host pin that supports pulse code modulation (PCM), audio codec-3 (AC3), or Windows media video (WMV). A host pin is a KSPIN structure with its Communication member set to KSPIN\_COMMUNICATION\_SINK or KSPIN\_COMMUNICATION\_BOTH. For more information about the KSPIN structure, see [**KSPIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_kspin).
+4.  Determines whether there is a path from the endpoint to a host pin that supports pulse code modulation (PCM), audio codec-3 (AC3), or Windows media video (WMV). A host pin is a KSPIN structure with its Communication member set to KSPIN\_COMMUNICATION\_SINK or KSPIN\_COMMUNICATION\_BOTH. For more information about the KSPIN structure, see [**KSPIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_kspin).
 
 5.  Populates the endpoint PropertyStore with property information from the registry keys of the audio device interface.
 

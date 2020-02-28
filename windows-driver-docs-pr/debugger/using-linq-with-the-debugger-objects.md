@@ -548,7 +548,7 @@ In addition to the methods which are projected directly onto string objects, any
 
 |                      |                                                                                                                                                                                                                  |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .ToDisplayString ( ) | Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. |
+| .ToDisplayString ( ) | Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. For more information, see [Format specifiers for C++ in the Visual Studio debugger](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-cpp?view=vs-2019) |
 
 
 
@@ -566,6 +566,13 @@ kd> dx (10).ToDisplayString("o")
 
 kd> dx (10).ToDisplayString("b") 
 (10).ToDisplayString("b")  : 0y1010
+
+kd> dx ("some wchar string here").ToDisplayString("su") 
+("some wchar string here").ToDisplayString("su")  : "some wchar string here"
+
+kd> dx ("some wchar string here").ToDisplayString("sub") 
+("some wchar string here").ToDisplayString("sub")  : some wchar string here
+
 ```
 
 ## <span id="Debugging_Plug_and_Play"></span><span id="debugging_plug_and_play"></span><span id="DEBUGGING_PLUG_AND_PLAY"></span>Debugging Plug and Play Example
@@ -837,7 +844,7 @@ This table summarizes the use of the dx command with common device capability fl
 </table>
 
 
-For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities).
+For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
 
 
 ## <span id="see_also"></span>See also

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Creating a Driver Verification Log
 
-The Windows Server [Hardware Certification Program](https://docs.microsoft.com/en-us/windows-hardware/design/compatibility/) requires a Driver Verification Log (DVL) for all driver submissions. The DVL contains a summary of the results from the Code Analysis (CA) and Static Driver Verifier (SDV) log files. The DVL does not contain any source information. You must run the Code Analysis tool and Static Driver Verifier prior to creating a DVL for your driver.
+The Windows Server [Hardware Certification Program](https://docs.microsoft.com/windows-hardware/design/compatibility/) requires a Driver Verification Log (DVL) for all driver submissions. The DVL contains a summary of the results from the Code Analysis (CA) and Static Driver Verifier (SDV) log files. The DVL does not contain any source information. You must run the Code Analysis tool and Static Driver Verifier prior to creating a DVL for your driver.
 
 **To create a driver verification log**
 
@@ -23,7 +23,7 @@ The driver verification log has the file name extension .DVL.XML. The log is cre
 
 **Note**  SDV performs a clean rebuild of the driver, which removes the Code Analysis log.  As such, please be sure to run SDV before running CA.
 
-**Note**  When you are ready to test your driver using the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893), you need to copy the driver verification log to the %systemdrive%\\DVL directory on the test computer. Be sure to delete the contents of the directory on the test computer before you copy the new driver verification log.
+**Note**  When you are ready to test your driver using the [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/), you need to copy the driver verification log to the %systemdrive%\\DVL directory on the test computer. Be sure to delete the contents of the directory on the test computer before you copy the new driver verification log.
 
  
 

@@ -38,7 +38,7 @@ To sign a driver for Windows 10, follow these steps:
 
 1. For each version of Windows 10 that you want to certify on, download the Windows HLK (Hardware Lab Kit) for that version and run a full cert pass against the client for that version. You'll get one log per version.
 2. If you have multiple logs, merge them into a single log using the most recent HLK.
-3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](../dashboard/index.md).
+3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](../dashboard/index.yml).
 
 For version-specific details, please review the [WHCP (Windows Hardware Compatibility Program) policy](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-specifications-policies) for the Windows versions you want to target.
 
@@ -62,7 +62,7 @@ Note that Secure Boot does not apply to Windows Vista and Windows 7.
 |--- |--- |--- |--- |--- |
 |**Architectures:**|64-bit only, no signature required for 32-bit|64-bit, 32-bit|64-bit, 32-bit|64-bit, 32-bit|
 |**Signature required:**|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|
-|**Signature algorithm:**|SHA1|SHA1|SHA2 or SHA1|SHA2|
+|**Signature algorithm:**|SHA2|SHA2|SHA2|SHA2|
 |**Certificate:**|Standard roots trusted by Code Integrity|Standard roots trusted by Code Integrity|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|
 
 In addition to driver code signing, you also need to meet the PnP device installation signing requirements for installing a driver.  For more info, see [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).

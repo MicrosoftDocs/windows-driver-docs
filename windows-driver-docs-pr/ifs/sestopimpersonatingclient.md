@@ -40,7 +40,7 @@ None
 Remarks
 -------
 
-A server thread can impersonate a user by calling the [**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seimpersonateclientex) routine. When the thread is done impersonating the user, it calls the **SeStopImpersonatingClient** routine to end the impersonation.
+A server thread can impersonate a user by calling the [**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex) routine. When the thread is done impersonating the user, it calls the **SeStopImpersonatingClient** routine to end the impersonation.
 
 Requirements
 ------------
@@ -73,7 +73,7 @@ Requirements
 ## See also
 
 
-[**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-seimpersonateclientex)
+[**SeImpersonateClientEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex)
 
  
 

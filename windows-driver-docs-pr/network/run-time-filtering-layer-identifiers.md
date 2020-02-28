@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Run-time filtering layer identifiers
 
-The run-time filtering layer identifiers are used by kernel-mode callout drivers and are each represented by a locally unique identifier ([LUID](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid)), which is 64 bits in size. These identifiers are constant values in the FWPS_BUILTIN_LAYERS enumeration that is defined in Fwpsk.h. These identifiers are defined as follows:
+The run-time filtering layer identifiers are used by kernel-mode callout drivers and are each represented by a locally unique identifier ([LUID](https://docs.microsoft.com/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid)), which is 64 bits in size. These identifiers are constant values in the FWPS_BUILTIN_LAYERS enumeration that is defined in Fwpsk.h. These identifiers are defined as follows:
 
 > [!NOTE]
 > The V4 and V6 suffixes at the end of the run-time layer identifiers indicate whether the layer is located in the IPv4 network stack or in the IPv6 network stack.

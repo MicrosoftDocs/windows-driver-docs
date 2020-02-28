@@ -26,7 +26,7 @@ In the installation INF, the driver can define multiple values in the following 
 - CopyToVmWhenNewerWow64
 
 The former sub-keys modify the system32 directory, while the latter sub-keys modify the syswow64 directory.
-__Newer__ is defined by comparing the file's [ChangeTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information).
+__Newer__ is defined by comparing the file's [ChangeTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_basic_information).
 Each value type under a subkey must be REG_MULTI_SZ or REG_SZ. 
 If the value type is REG_MULTI_SZ, there must be maximum 2 strings in the value. 
 This implies that each value defines a pair of stings, where the second string could be empty.
@@ -69,17 +69,17 @@ The OS will copy \<DriverStorePath>\Subdir1\Subdir2\softgpu2wow64.dll to %windir
 ## Driver Modifications to Registry and File Paths
 Inside containers, the driver store is not consistently located at the same canonical path as it normally is.
 To consistently use the correctly adjusted path, the registry and driver store must be accessed indirectly through
-[D3DKMTQueryAdapterInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo)
+[D3DKMTQueryAdapterInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo)
 with 
-[KMTQAITYPE_QUERYREGISTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ne-d3dkmthk-_kmtqueryadapterinfotype),
-and [D3DDDI_QUERYREGISTRY_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dukmdt/ns-d3dukmdt-_d3dddi_queryregistry_info).
+[KMTQAITYPE_QUERYREGISTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-_kmtqueryadapterinfotype),
+and [D3DDDI_QUERYREGISTRY_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_queryregistry_info).
 
 ## Honor OS Default Adapter Setting
 The default adapter must honor the user's choice that is stored in the OS, which requires:
 1. Enumerating adapters through DXGI's [IDXGIFactory::EnumAdapters](https://docs.microsoft.com/windows/desktop/api/dxgi/nf-dxgi-idxgifactory-enumadapters),
 as DXGI honors the user's choice. 
 Adapter 0 changes based on the [user's settings](https://blogs.windows.com/windowsexperience/2018/02/07/announcing-windows-10-insider-preview-build-17093-pc/).
-2. Match the adapter order gotten through [D3DKMTEnumAdapters2](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/nf-d3dkmthk-d3dkmtenumadapters2) to DXGI's.
+2. Match the adapter order gotten through [D3DKMTEnumAdapters2](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtenumadapters2) to DXGI's.
 Adapter identities can be matched up by correlating the LUID between both enumeration techniques.
 DXGI returns its LUID through [IDXGIAdapter::GetDesc](https://docs.microsoft.com/windows/desktop/api/dxgi/nf-dxgi-idxgiadapter-getdesc).
 

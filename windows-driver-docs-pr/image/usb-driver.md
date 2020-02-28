@@ -18,9 +18,9 @@ Before calling [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/
 
 For devices that support multiple interrupt or bulk endpoints, a single call to [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) opens transfer pipes to the highest-numbered endpoint of each type. If you want to use a different endpoint, you must do the following:
 
-1.  Call [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol), specifying an I/O control code of [**IOCTL\_GET\_PIPE\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbscan/ni-usbscan-ioctl_get_pipe_configuration), to determine a port's endpoint index numbers (that is, indexes into the returned [**USBSCAN\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbscan/ns-usbscan-_usbscan_pipe_information) structure array). Note that these index numbers are *not* the endpoint numbers described in the *Universal Serial Bus Specification*.
+1.  Call [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol), specifying an I/O control code of [**IOCTL\_GET\_PIPE\_CONFIGURATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbscan/ni-usbscan-ioctl_get_pipe_configuration), to determine a port's endpoint index numbers (that is, indexes into the returned [**USBSCAN\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbscan/ns-usbscan-_usbscan_pipe_information) structure array). Note that these index numbers are *not* the endpoint numbers described in the *Universal Serial Bus Specification*.
 
-2.  Append a backslash and the endpoint's index number to the port name returned by [**IStiDeviceControl::GetMyDevicePortName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname) when calling CreateFile.
+2.  Append a backslash and the endpoint's index number to the port name returned by [**IStiDeviceControl::GetMyDevicePortName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname) when calling CreateFile.
 
 For example, suppose a device (with a port name of "usbscan0") has two endpoints of each type (interrupt, bulk IN, bulk OUT), with index numbers as follows:
 
@@ -81,9 +81,9 @@ For this device, if you want to use interrupt endpoint 0, bulk IN endpoint 1, an
 
 Because only one control endpoint is supported, specifying any I/O control code that uses the control pipe causes the driver to use the proper endpoint, regardless of which endpoint (if any) was specified to [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea).
 
-For descriptions of all I/O control codes, see [USB Still Image I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_image/index).
+For descriptions of all I/O control codes, see [USB Still Image I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/ddi/_image/index).
 
-The kernel-mode USB driver does not implement a package or message protocol. Read operations do not require any particular packet alignment, but better performance can be achieved if read requests are aligned to maximum packet size boundaries. The maximum packet size can be obtained using the [**IOCTL\_GET\_CHANNEL\_ALIGN\_RQST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbscan/ni-usbscan-ioctl_get_channel_align_rqst) I/O control code.
+The kernel-mode USB driver does not implement a package or message protocol. Read operations do not require any particular packet alignment, but better performance can be achieved if read requests are aligned to maximum packet size boundaries. The maximum packet size can be obtained using the [**IOCTL\_GET\_CHANNEL\_ALIGN\_RQST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbscan/ni-usbscan-ioctl_get_channel_align_rqst) I/O control code.
 
  
 

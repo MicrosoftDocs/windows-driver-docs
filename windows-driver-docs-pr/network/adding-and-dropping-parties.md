@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-A connection-oriented client can add a party to an outgoing multipoint call that it initiated with [**NdisClMakeCall**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclmakecall). A connection-oriented client can also delete a party from a multipoint call either at its own discretion or at the request of the remote party to be dropped.
+A connection-oriented client can add a party to an outgoing multipoint call that it initiated with [**NdisClMakeCall**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmakecall). A connection-oriented client can also delete a party from a multipoint call either at its own discretion or at the request of the remote party to be dropped.
 
 This section includes:
 

@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUBSCRIPTION notif
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This indication uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUBSCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_subscription) structure.
+This indication uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUBSCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_subscription) structure.
 
 Requirements
 ------------
@@ -42,7 +42,7 @@ Requirements
 
 [OID\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-subscribe-device-service-events)
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_SUBSCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_subscription)
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_SUBSCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_subscription)
 
  
 

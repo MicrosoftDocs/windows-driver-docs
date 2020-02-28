@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The required **button** element specifies the characteristics of a button in a message box that is displayed on the client computer.
 
-The **button** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **button** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 Usage
 -----
@@ -118,7 +118,7 @@ The following code example shows how to use the **button** element to display **
 ```xml
 <?xml version="1.0" ?>
   <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <messageBoxUI>

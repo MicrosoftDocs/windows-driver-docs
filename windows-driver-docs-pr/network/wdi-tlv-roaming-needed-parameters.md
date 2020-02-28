@@ -28,7 +28,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                | Description                                                                                                                                      |
 |-----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_ASSOC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_assoc_status) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-roam) is triggered, this reason is forwarded to it. |
+| [**WDI\_ASSOC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_assoc_status) | Specifies the reason for a roam trigger. When a [OID\_WDI\_TASK\_ROAM](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-roam) is triggered, this reason is forwarded to it. |
 
  
 

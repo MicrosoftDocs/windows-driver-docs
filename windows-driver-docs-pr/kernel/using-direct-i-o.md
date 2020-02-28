@@ -19,7 +19,7 @@ Generally, mass-storage device drivers request direct I/O for transfer requests,
 
 The I/O manager determines that an I/O operation is using direct I/O as follows:
 
--   For [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) requests, DO\_DIRECT\_IO is set in the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
+-   For [**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write) requests, DO\_DIRECT\_IO is set in the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. For more information, see [Initializing a Device Object](initializing-a-device-object.md).
 
 -   For [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control) requests, the IOCTL code's value contains METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT as the *TransferType* value in the IOCTL value. For more information, see [Defining I/O Control Codes](defining-i-o-control-codes.md).
 

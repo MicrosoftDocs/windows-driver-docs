@@ -1,60 +1,57 @@
 - name: "3D printer driver design guide"
+  href: index.md
+- name: "3D print partner onboarding guide"
+  href: 3d-partner-onboarding-guide.md
+- name: "Microsoft Standard Driver for 3D Printers"
+  href: microsoft-standard-driver-for-3d-printers-.md
+- name: "MS3DPrint Standard G-Code driver"
 # Auto-expanded node
   items: 
-  - name: "3D printer driver design guide"
-    href: index.md
-  - name: "3D print partner onboarding guide"
-    href: 3d-partner-onboarding-guide.md
-  - name: "Microsoft Standard Driver for 3D Printers"
-    href: microsoft-standard-driver-for-3d-printers-.md
   - name: "MS3DPrint Standard G-Code driver"
+    href: ms3dprint-standard-g-code-driver.md
+  - name: "Driver installation"
+    href: driver-installation.md
+  - name: "Configuring the device"
+    href: configuring-the-device.md
+  - name: "Slicer settings"
+    href: slicer-settings.md
+  - name: "Sample configuration XML"
+    href: sample-configuration-xml.md
+- name: "3D printer custom USB interface support"
+  href: 3d-printer-custom-usb-interface.md
+- name: "3D printing sample WSD app"
 # Auto-expanded node
-    items: 
-    - name: "MS3DPrint Standard G-Code driver"
-      href: ms3dprint-standard-g-code-driver.md
-    - name: "Driver installation"
-      href: driver-installation.md
-    - name: "Configuring the device"
-      href: configuring-the-device.md
-    - name: "Slicer settings"
-      href: slicer-settings.md
-    - name: "Sample configuration XML"
-      href: sample-configuration-xml.md
-  - name: "3D printer custom USB interface support"
-    href: 3d-printer-custom-usb-interface.md
+  items: 
   - name: "3D printing sample WSD app"
+    href: 3d-printing-sample-wsd-app.md
+  - name: "Install the driver and sample app"
+    href: install-the-driver-and-sample-app.md
+  - name: "Print files to the WSD sample"
+    href: print-files-to-the-wsd-sample.md
+  - name: "Test-sign a driver package"
+    href: test-sign-a-driver-package.md
+- name: "Enable WSPrint 2.0 on a device"
+  href: enabling-wsprint-on-a-device.md
+- name: "Print Schema keywords for 3D manufacturing"
 # Auto-expanded node
-    items: 
-    - name: "3D printing sample WSD app"
-      href: 3d-printing-sample-wsd-app.md
-    - name: "Install the driver and sample app"
-      href: install-the-driver-and-sample-app.md
-    - name: "Print files to the WSD sample"
-      href: print-files-to-the-wsd-sample.md
-    - name: "Test-sign a driver package"
-      href: test-sign-a-driver-package.md
-  - name: "Enable WSPrint 2.0 on a device"
-    href: enabling-wsprint-on-a-device.md
+  items: 
   - name: "Print Schema keywords for 3D manufacturing"
-# Auto-expanded node
-    items: 
-    - name: "Print Schema keywords for 3D manufacturing"
-      href: print-schema-keywords-for-3d-manufacturing.md
-    - name: "3D manufacturing keywords overview"
-      href: 3d-manufacturing-keywords-overview.md
-    - name: "Device control keywords"
-      href: device-control-keywords.md
-    - name: "Material keywords"
-      href: material-keywords.md
-    - name: "Output keywords"
-      href: output-keywords.md
-    - name: "Print schema glossary"
-      href: print-schema-glossary.md
-    - name: "PrintCapabilities document example"
-      href: example-printcapabilities-document.md
-    - name: "PrintTicket document example"
-      href: example-printticket-document.md
-    - name: "Print schema references"
-      href: print-schema-references.md
-  - name: "3D hardware partners"
-    href: 3d-printing-partners.md
+    href: print-schema-keywords-for-3d-manufacturing.md
+  - name: "3D manufacturing keywords overview"
+    href: 3d-manufacturing-keywords-overview.md
+  - name: "Device control keywords"
+    href: device-control-keywords.md
+  - name: "Material keywords"
+    href: material-keywords.md
+  - name: "Output keywords"
+    href: output-keywords.md
+  - name: "Print schema glossary"
+    href: print-schema-glossary.md
+  - name: "PrintCapabilities document example"
+    href: example-printcapabilities-document.md
+  - name: "PrintTicket document example"
+    href: example-printticket-document.md
+  - name: "Print schema references"
+    href: print-schema-references.md
+- name: "3D hardware partners"
+  href: 3d-printing-partners.md

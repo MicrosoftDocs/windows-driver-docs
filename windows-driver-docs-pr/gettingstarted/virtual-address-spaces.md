@@ -17,7 +17,7 @@ When a processor reads or writes to a memory location, it uses a virtual address
 
 -   The virtual addresses used by different processes are isolated from each other. The code in one process cannot alter the physical memory that is being used by another process or the operating system.
 
-The range of virtual addresses that is available to a process is called the *virtual address space* for the process. Each user-mode process has its own private virtual address space. For a 32-bit process, the virtual address space is usually the 2-gigabyte range 0x00000000 through 0x7FFFFFFF. For a 64-bit process, the virtual address space is the 8-terabyte range 0x000'00000000 through 0x7FF'FFFFFFFF. A range of virtual addresses is sometimes called a range of *virtual memory*.
+The range of virtual addresses that is available to a process is called the *virtual address space* for the process. Each user-mode process has its own private virtual address space. For a 32-bit process, the virtual address space is usually the 2-gigabyte range 0x00000000 through 0x7FFFFFFF. For a 64-bit process on 64-bit Windows, virtual address space is the 128-terabyte range 0x000'00000000 through 0x7FFF'FFFFFFFF. A range of virtual addresses is sometimes called a range of *virtual memory*. For more info, see [Memory and Address Space Limits](https://docs.microsoft.com/windows/win32/memory/memory-limits-for-windows-releases#memory-and-address-space-limits).
 
 This diagram illustrates some of the key features of virtual address spaces.
 

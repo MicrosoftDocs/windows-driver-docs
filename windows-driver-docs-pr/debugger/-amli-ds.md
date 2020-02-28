@@ -28,7 +28,7 @@ Syntax
 
 
 <span id="________v______"></span><span id="________V______"></span> **/v**   
-Causes the display to be verbose. In Windows 2000, this option is available only if you are using the checked build of this extension (w2kchk\\Acpikd.dll).
+Causes the display to be verbose. 
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the address of the context block whose stack is desired. If *Address* is omitted, the current context is used.

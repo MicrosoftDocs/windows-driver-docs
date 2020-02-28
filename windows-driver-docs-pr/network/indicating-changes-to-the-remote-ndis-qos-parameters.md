@@ -34,33 +34,33 @@ The miniport driver follows these steps when it issues the [**NDIS\_STATUS\_QOS\
 
 1.  The miniport driver allocates a buffer that is large enough to contain the following:
 
-    -   An [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure that contains the NDIS QoS configuration settings as well as global operational parameters for the NDIS QoS traffic classes.
+    -   An [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure that contains the NDIS QoS configuration settings as well as global operational parameters for the NDIS QoS traffic classes.
 
-    -   An array of [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_classification_element) structures. Each of these structures specifies a traffic classification as defined by a packet data pattern (*condition*) and associated IEEE 802.1p priority level (*action*). If the network adapter finds a pattern in the transmit, or *egress*, packet that matches a condition, it assigns the associated priority level to the packet. The adapter also applies the other NDIS QoS policies to the packet based on the priority level.
+    -   An array of [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_classification_element) structures. Each of these structures specifies a traffic classification as defined by a packet data pattern (*condition*) and associated IEEE 802.1p priority level (*action*). If the network adapter finds a pattern in the transmit, or *egress*, packet that matches a condition, it assigns the associated priority level to the packet. The adapter also applies the other NDIS QoS policies to the packet based on the priority level.
 
-2.  The miniport initializes the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure with the remote NDIS QoS parameters. The driver must provide the complete set of remote parameters that were received from the DCBX frame sent by the remote peer.
+2.  The miniport initializes the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure with the remote NDIS QoS parameters. The driver must provide the complete set of remote parameters that were received from the DCBX frame sent by the remote peer.
 
     When the miniport driver initializes the **Header** member, it sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_QOS\_PARAMETERS. The miniport driver sets the **Revision** member of **Header** to NDIS\_QOS\_PARAMETERS\_REVISION\_1 and the **Size** member to NDIS\_SIZEOF\_QOS\_PARAMETERS\_REVISION\_1.
 
     The miniport driver sets the appropriate **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags if the corresponding members contain data that has changed since the miniport driver previously issued an [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-qos-remote-parameters-change) status indication.
 
-    **Note**   Setting these **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags is optional. NDIS always assumes that the members of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) are specified even if they have not changed from the previous [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-qos-remote-parameters-change) status indication.
+    **Note**   Setting these **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags is optional. NDIS always assumes that the members of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) are specified even if they have not changed from the previous [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-qos-remote-parameters-change) status indication.
 
-    The miniport driver sets the **Flags** member to specify status information for the data that is contained in the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure members.
+    The miniport driver sets the **Flags** member to specify status information for the data that is contained in the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure members.
 
     For example, the miniport driver sets the appropriate **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags in the **Flags** member for those members which contain data that has changed since the miniport driver previously issued an [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-qos-remote-parameters-change) status indication.
 
     For more information on how to set the **Flags** member, see [Guidelines for Setting the **Flags** Member](#guidelines-for-setting-the-flags-member).
 
-3.  The miniport driver initializes an [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_classification_element) structure for each traffic classification from the remote NDIS QoS parameters. The driver adds these elements past the end of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure in the buffer.
+3.  The miniport driver initializes an [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_classification_element) structure for each traffic classification from the remote NDIS QoS parameters. The driver adds these elements past the end of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure in the buffer.
 
-    **Note**  The miniport driver must not set the NDIS\_QOS\_CLASSIFICATION\_ENFORCED\_BY\_MINIPORT flag in the **Flags** member of any [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_classification_element) structures.
+    **Note**  The miniport driver must not set the NDIS\_QOS\_CLASSIFICATION\_ENFORCED\_BY\_MINIPORT flag in the **Flags** member of any [**NDIS\_QOS\_CLASSIFICATION\_ELEMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_classification_element) structures.
 
-    The driver sets the **NumClassificationElements** member of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure to the number of classification elements in the array. The driver sets the **FirstClassificationElementOffset** member to the byte offset of the first element from the start of the buffer. The driver also sets the **ClassificationElementSize** member to the length, in bytes, of each element in the array.
+    The driver sets the **NumClassificationElements** member of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure to the number of classification elements in the array. The driver sets the **FirstClassificationElementOffset** member to the byte offset of the first element from the start of the buffer. The driver also sets the **ClassificationElementSize** member to the length, in bytes, of each element in the array.
 
     **Note**  Starting with NDIS 6.30, the miniport driver must set the **ClassificationElementSize** member to `sizeof(NDIS_QOS_CLASSIFICATION_ELEMENT`).
 
-4.  The miniport driver initializes an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure for the status indication in the following way:
+4.  The miniport driver initializes an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure for the status indication in the following way:
 
     -   The **StatusCode** member must be set to NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE.
 
@@ -68,11 +68,11 @@ The miniport driver follows these steps when it issues the [**NDIS\_STATUS\_QOS\
 
     -   The **StatusBufferSize** member must be set to the length, in bytes, of the buffer.
 
-5.  The miniport driver issues the status indication by calling [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex). The driver must pass a pointer to the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure to the *StatusIndication* parameter.
+5.  The miniport driver issues the status indication by calling [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex). The driver must pass a pointer to the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure to the *StatusIndication* parameter.
 
 ## Guidelines for Setting the Flags Member
 
-The miniport driver sets the following flags in the **Flags** member of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure to specify which operational NDIS QoS parameters have been configured or changed on the network adapter:
+The miniport driver sets the following flags in the **Flags** member of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure to specify which operational NDIS QoS parameters have been configured or changed on the network adapter:
 
 <a href="" id="ndis-qos-parameters-ets-configured"></a>**NDIS\_QOS\_PARAMETERS\_ETS\_CONFIGURED**  
 If this flag is set, the miniport driver has configured the network adapter with the ETS parameters contained in the following members:
@@ -124,7 +124,7 @@ If this flag is set, one or more QoS traffic classification parameters have chan
 
 -   **FirstClassificationElementOffset**
 
-**Note**  The **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CONFIGURED** flags must be set if the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure contains NDIS QoS parameter settings. The miniport driver must set these flags regardless of whether the settings have changed. However, the driver must only set the **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags for those settings that have changed.
+**Note**  The **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CONFIGURED** flags must be set if the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure contains NDIS QoS parameter settings. The miniport driver must set these flags regardless of whether the settings have changed. However, the driver must only set the **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags for those settings that have changed.
 
 ## Guidelines for Indicating Invalid Remote NDIS QoS Parameters
 
@@ -141,18 +141,18 @@ The miniport driver must invalidate its remote QoS parameters if the following c
 
 When the miniport driver invalidates its remote NDIS QoS parameters, it must follow these steps when it issues the [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-qos-remote-parameters-change) status indication:
 
-1.  Because the miniport driver is not reporting any valid remote NDIS QoS parameters, it must first fill an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure with zeros.
+1.  Because the miniport driver is not reporting any valid remote NDIS QoS parameters, it must first fill an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure with zeros.
 
     When the miniport driver initializes the **Header** member of this structure, it sets the **Type** member of **Header** to NDIS\_OBJECT\_TYPE\_QOS\_PARAMETERS. The miniport driver sets the **Revision** member of **Header** to NDIS\_QOS\_PARAMETERS\_REVISION\_1 and the **Size** member to NDIS\_SIZEOF\_QOS\_PARAMETERS\_REVISION\_1.
 
     The miniport driver sets the appropriate **NDIS\_QOS\_PARAMETERS\_*Xxx*\_CHANGED** flags in the **Flags** member.
 
-2.  The miniport driver initializes an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure for the status indication in the following way:
+2.  The miniport driver initializes an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure for the status indication in the following way:
 
     -   The **StatusCode** member must be set to NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE.
 
-    -   The **StatusBuffer** member must be set to the address of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure.
+    -   The **StatusBuffer** member must be set to the address of the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure.
 
     -   The **StatusBufferSize** member must be set to `sizeof(NDIS_QOS_PARAMETERS)`.
 
-3.  The miniport driver issues the status indication by calling [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex). The driver must pass a pointer to the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure to the *StatusIndication* parameter.
+3.  The miniport driver issues the status indication by calling [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex). The driver must pass a pointer to the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure to the *StatusIndication* parameter.

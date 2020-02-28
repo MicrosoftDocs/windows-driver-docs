@@ -61,11 +61,11 @@ The WIA\_CMD\_XXX commands are described in the Microsoft Windows SDK documentat
 
 ### Adding Device Command Support
 
-To properly set up your WIA minidriver to report device commands, report an array of supported commands in the [**IWiaMiniDrv::drvGetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method. For an example implementation of the **IWiaMiniDrv::drvGetCapabilities** method, see [Adding Interrupt Event Support](adding-interrupt-event-support.md).
+To properly set up your WIA minidriver to report device commands, report an array of supported commands in the [**IWiaMiniDrv::drvGetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method. For an example implementation of the **IWiaMiniDrv::drvGetCapabilities** method, see [Adding Interrupt Event Support](adding-interrupt-event-support.md).
 
 ### Implementing the IWiaMiniDrv::drvDeviceCommand Method
 
-The WIA service calls the [**IWiaMiniDrv::drvDeviceCommand**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvdevicecommand) method in response to the application's call to the **IWiaItem::DeviceCommand** method (described in the Microsoft Windows SDK documentation). The **IWiaMiniDrv::drvDeviceCommand** method should perform the following tasks:
+The WIA service calls the [**IWiaMiniDrv::drvDeviceCommand**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvdevicecommand) method in response to the application's call to the **IWiaItem::DeviceCommand** method (described in the Microsoft Windows SDK documentation). The **IWiaMiniDrv::drvDeviceCommand** method should perform the following tasks:
 
 1.  Determine whether the command sent is a supported command.
 

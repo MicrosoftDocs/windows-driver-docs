@@ -26,11 +26,11 @@ ms.custom: seodec18
 
 The *DXVA\_ConfigQueryOrReplyFlag* variable indicates the type of query or response when using probing and locking commands. The most significant 24 bits of the **dwFunction** member of the following structures contains the *DXVA\_ConfigQueryOrReplyFlag* variable.
 
-[**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
+[**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
 
-[**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
+[**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
 
-[**DXVA\_ConfigAlphaCombine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
+[**DXVA\_ConfigAlphaCombine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
 
 The most significant 20 bits of the *DXVA\_ConfigQueryOrReplyFlag* variable specify the following queries and responses.
 
@@ -124,11 +124,11 @@ When *bDXVA\_Func* is used to probe and lock a configuration for a specific Dire
 
 When *bDXVA\_Func* is used to specify the function associated with a configuration structure that is passed with a probe or lock command, *bDXVA\_Func* is placed in the 8 least significant bits of the *DXVA\_ConfigQueryorReplyFunc* variable in the **dwFunction** member of one of the following configuration structures:
 
-[**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
+[**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) for compressed picture decoding.
 
-[**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
+[**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) for alpha-blending data loading.
 
-[**DXVA\_ConfigAlphaCombine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
+[**DXVA\_ConfigAlphaCombine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphacombine) for alpha-blending combination.
 
 ### <span id="DXVA_EncryptProtocolFunc"></span><span id="dxva_encryptprotocolfunc"></span><span id="DXVA_ENCRYPTPROTOCOLFUNC"></span>DXVA\_EncryptProtocolFunc
 
@@ -136,7 +136,7 @@ The most significant 24 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable a
 
 -   0xFFFF00 when sent by the host software decoder in the **dwFunction** member of the [**DD\_RENDERMOCOMPDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure in a call to [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render).
 
--   0xFFFF08 when sent by the video accelerator in the **dwFunction** member of the [**DXVA\_EncryptProtocolHeader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dxva/ns-dxva-_dxva_encryptprotocolheader) structure.
+-   0xFFFF08 when sent by the video accelerator in the **dwFunction** member of the [**DXVA\_EncryptProtocolHeader**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_encryptprotocolheader) structure.
 
 The least significant 8 bits of the *DXVA\_EncryptProtocolFunc* DWORD variable contain the value of *bDXVA\_Func* associated with the encryption protocol. The only value supported for this use is *bDXVA\_Func* = 1 (compressed picture decoding).
 

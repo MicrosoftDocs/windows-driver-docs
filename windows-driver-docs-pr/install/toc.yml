@@ -412,8 +412,8 @@
       href: using-device-installation-functions.md
     - name: "Basic Installation Operations"
       href: basic-installation-operations.md
-    - name: "SetupAPI Functions that Simplify Driver Installation"
-      href: setupapi-functions-that-simplify-driver-installation.md
+    - name: "Functions that Simplify Driver Installation"
+      href: functions-that-simplify-driver-installation.md
     - name: "Using SetupAPI To Verify Driver Authenticode Signatures"
       href: using-setupapi-to-verify-driver-authenticode-signatures.md
     - name: "Determining the Parent of a Device"
@@ -1362,6 +1362,8 @@
     href: devpkey-device-powerrelations.md
   - name: "DEVPKEY_Device_ProblemCode"
     href: devpkey-device-problemcode.md
+  - name: "DEVPKEY_Device_ProblemStatus"
+    href: devpkey-device-problemstatus.md
   - name: "DEVPKEY_Device_RemovalPolicy"
     href: devpkey-device-removalpolicy.md
   - name: "DEVPKEY_Device_RemovalPolicyDefault"

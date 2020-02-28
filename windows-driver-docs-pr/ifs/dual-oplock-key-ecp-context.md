@@ -52,7 +52,7 @@ Remarks
 
 The **DUAL\_OPLOCK\_KEY\_ECP\_CONTEXT** structure provides dual oplock keys to allow oplock requests on files and directories. Like the [**OPLOCK\_KEY\_ECP\_CONTEXT**](oplock-key-ecp-context.md) structure, **DUAL\_OPLOCK\_KEY\_ECP\_CONTEXT** is set in an extra create parameter list ([**ECP\_LIST**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85))) and later associated with a file object during processing of [**IRP\_MJ\_CREATE**](irp-mj-create.md) by a file system or file system filter driver.
 
-The value **GUID\_ECP\_DUAL\_OPLOCK\_KEY** is used when calling support routines such as [**FsRtlAllocateExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff545609), [**FsRtlInitializeExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff546113), or [**FltRemoveExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltremoveextracreateparameter).
+The value **GUID\_ECP\_DUAL\_OPLOCK\_KEY** is used when calling support routines such as [**FsRtlAllocateExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff545609), [**FsRtlInitializeExtraCreateParameter**](https://msdn.microsoft.com/library/windows/hardware/ff546113), or [**FltRemoveExtraCreateParameter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltremoveextracreateparameter).
 
 Requirements
 ------------
@@ -79,9 +79,9 @@ Requirements
 
 [**ECP\_LIST**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540148(v=vs.85))
 
-[**IO\_DRIVER\_CREATE\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_io_driver_create_context)
+[**IO\_DRIVER\_CREATE\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_io_driver_create_context)
 
-[**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefileex)
+[**IoCreateFileEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefileex)
 
 [**IRP\_MJ\_CREATE**](irp-mj-create.md)
 

@@ -65,7 +65,7 @@ Parameter 1 identifies the type of violation.
 <td align="left"><p>The IRP completion status code.</p></td>
 <td align="left"><p>The driver object of the UNC provider that completed the IRP (might be <strong>NULL</strong>).</p></td>
 <td align="left"><p>The IRP completion status was unexpected or invalid.</p>
-<p>This bug check occurs only when you are using a Checked Build of Windows and should only be caused by file system filter drivers that are attached to legacy network redirectors. Legacy redirectors use <strong>FsRtlRegisterUncProvider</strong> to register with MUP. This bug check detects filter drivers that return an NTSTATUS that is not STATUS_SUCCESS in IRP_MJ_CLEANUP or IRP_MJ_CLOSE requests.</p></td>
+<p>This bug check occurs only when you are using a Checked Build of Windows and should only be caused by file system filter drivers that are attached to legacy network redirectors. Checked builds were available on older versions of Windows before Windows 10, version 1803. Legacy redirectors use <strong>FsRtlRegisterUncProvider</strong> to register with MUP. This bug check detects filter drivers that return an NTSTATUS that is not STATUS_SUCCESS in IRP_MJ_CLEANUP or IRP_MJ_CLOSE requests.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x4</p></td>

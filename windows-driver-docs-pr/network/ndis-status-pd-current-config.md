@@ -11,13 +11,13 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_PD\_CURRENT\_CONFIG
 
 
-This status indication is a notification that the [**NDIS\_PD\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pd_config) structure has changed.
+This status indication is a notification that the [**NDIS\_PD\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pd_config) structure has changed.
 
 A PacketDirect-capable miniport driver must make an NDIS\_STATUS\_PD\_CURRENT\_CONFIG status indication after an [OID\_PD\_CLOSE\_PROVIDER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pd-close-provider) or [OID\_PD\_OPEN\_PROVIDER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pd-open-provider) request.
 
-The miniport driver calls [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex) to make the status indication, and must pass a pointer to an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure through the *StatusIndication* parameter. When making this indication, the miniport driver must set the following members of the **NDIS\_STATUS\_INDICATION** structure:
+The miniport driver calls [**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) to make the status indication, and must pass a pointer to an [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure through the *StatusIndication* parameter. When making this indication, the miniport driver must set the following members of the **NDIS\_STATUS\_INDICATION** structure:
 
--   **SourceHandle** must be set to the handle that the miniport received in the *MiniportAdapterHandle* parameter of the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize) function.
+-   **SourceHandle** must be set to the handle that the miniport received in the *MiniportAdapterHandle* parameter of the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
 
 -   **StatusCode** must be set to NDIS\_STATUS\_PD\_CURRENT\_CONFIG.
 
@@ -52,9 +52,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
-[**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex)
+[**NdisMIndicateStatusEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex)
 
 [OID\_PD\_CLOSE\_PROVIDER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pd-close-provider)
 

@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 # User Control of Device Idle and Wake Behavior in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 If a device has idle power-down or wake-up capabilities, you can decide whether users should be allowed to enable or disable these capabilities.
 
-Your UMDF-based driver can use the [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings) method to specify whether users with registry access can enable or disable a device's idle power-down capability.
+Your UMDF-based driver can use the [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings) method to specify whether users with registry access can enable or disable a device's idle power-down capability.
 
-Your driver can use the [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings) method to specify whether users with registry access can enable or disable a device's wake-up capability.
+Your driver can use the [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings) method to specify whether users with registry access can enable or disable a device's wake-up capability.
 
 Both of these methods allow the driver to enable the capability, disable the capability, or give users control of the capability:
 
@@ -40,9 +40,9 @@ Therefore, versions 1.9 and later of the framework provide two driver-definable 
 
 Your driver's INF file can use an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) to create and set the **WdfDefaultIdleInWorkingState** and **WdfDefaultWakeFromSleepState** registry values. For example, if your driver enables a device's idle power-down capability, but if the capability must be disabled when the device is installed, the driver's INF file can set **WdfDefaultIdleInWorkingState** to "0".
 
-The framework examines the **WdfDefaultIdleInWorkingState** registry value only if the driver sets the *UserControlOfIdleSettings* parameter to **IdleAllowUserControl** and the *Enabled* parameter to **WdfTrue** or **WdfUseDefault** when the driver calls the [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings) method.
+The framework examines the **WdfDefaultIdleInWorkingState** registry value only if the driver sets the *UserControlOfIdleSettings* parameter to **IdleAllowUserControl** and the *Enabled* parameter to **WdfTrue** or **WdfUseDefault** when the driver calls the [**IWDFDevice2::AssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings) method.
 
-The framework examines the **WdfDefaultWakeFromSleepState** registry values only if the driver sets the *UserControlOfWakeSettings* parameter to **IWakeAllowUserControl** and the *Enabled* parameter to **WdfTrue** or **WdfUseDefault** when the driver calls the [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings) method.
+The framework examines the **WdfDefaultWakeFromSleepState** registry values only if the driver sets the *UserControlOfWakeSettings* parameter to **IWakeAllowUserControl** and the *Enabled* parameter to **WdfTrue** or **WdfUseDefault** when the driver calls the [**IWDFDevice2::AssignSxWakeSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assignsxwakesettings) method.
 
  
 

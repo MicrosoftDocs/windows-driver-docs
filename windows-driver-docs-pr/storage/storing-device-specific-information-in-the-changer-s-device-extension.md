@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_storing_device_specific_information_in_the_changers_device_extensi"></span><span id="DDK_STORING_DEVICE_SPECIFIC_INFORMATION_IN_THE_CHANGERS_DEVICE_EXTENSI"></span>
 
 
-A changer miniclass driver specifies the storage it requires for device-specific data in its [**ChangerAdditionalExtensionSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changeradditionalextensionsize) routine. The changer class driver allocates the requested storage on behalf of the changer miniclass driver, then calls the miniclass driver's [**ChangerInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerinitialize) routine.
+A changer miniclass driver specifies the storage it requires for device-specific data in its [**ChangerAdditionalExtensionSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changeradditionalextensionsize) routine. The changer class driver allocates the requested storage on behalf of the changer miniclass driver, then calls the miniclass driver's [**ChangerInitialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerinitialize) routine.
 
 Whether the changer miniclass driver stores data in the device extension and what data it stores, is up to the driver designer. It typically includes SCSI inquiry data or the non-SCSI equivalent for changer devices.
 

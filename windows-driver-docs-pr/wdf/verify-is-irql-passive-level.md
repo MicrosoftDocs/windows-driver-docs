@@ -35,7 +35,7 @@ None
 Remarks
 -------
 
-The code for the **VERIFY_IS_IRQL_PASSIVE_LEVEL** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration. If your driver's binary includes **VERIFY_IS_IRQL_PASSIVE_LEVEL** code, the code will run when your driver runs with checked builds or free builds of the Microsoft Windows operating system.
+The code for the **VERIFY_IS_IRQL_PASSIVE_LEVEL** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration. 
 
 The **VERIFY_IS_IRQL_PASSIVE_LEVEL** code breaks into a kernel debugger if one of the following is true:
 

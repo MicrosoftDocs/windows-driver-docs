@@ -11,13 +11,13 @@ ms.localizationpriority: medium
 
 An overlying driver or user application can obtain a list of all NIC switches that have been created on a network adapter that supports single root I/O virtualization (SR-IOV). The driver or application issues an object identifier (OID) query request of [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-enum-switches) to obtain this list.
 
-After a successful return from this OID request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer that contains the following:
+After a successful return from this OID request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer that contains the following:
 
--   An [**NDIS\_NIC\_SWITCH\_INFO\_ARRAY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_delete_vport_parameters) structure that defines the number of elements within the array.
+-   An [**NDIS\_NIC\_SWITCH\_INFO\_ARRAY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_delete_vport_parameters) structure that defines the number of elements within the array.
 
--   An array of [**NDIS\_NIC\_SWITCH\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_info) structures. Each of these structures contains the information about a single NIC switch created on the network adapter.
+-   An array of [**NDIS\_NIC\_SWITCH\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_info) structures. Each of these structures contains the information about a single NIC switch created on the network adapter.
 
-    **Note**  If the network adapter has no NIC switches, the driver sets the **NumElements** member of the [**NDIS\_NIC\_SWITCH\_INFO\_ARRAY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_delete_vport_parameters) structure to zero and no [**NDIS\_NIC\_SWITCH\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_nic_switch_info) structures are returned.
+    **Note**  If the network adapter has no NIC switches, the driver sets the **NumElements** member of the [**NDIS\_NIC\_SWITCH\_INFO\_ARRAY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_delete_vport_parameters) structure to zero and no [**NDIS\_NIC\_SWITCH\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_info) structures are returned.
 
      
 
@@ -31,7 +31,7 @@ NDIS handles the [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://docs.microsoft.com/w
 
 -   OID requests of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-create-switch) and [OID\_NIC\_SWITCH\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-parameters).
 
-**Note**  NDIS also provides the enumeration of the switches in the **NicSwitchArray** member in the [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_bind_parameters) and [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_filter_attach_parameters) structures. Therefore, the overlying protocol and filter drivers do not have to issue [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-enum-switches) requests to obtain this information.
+**Note**  NDIS also provides the enumeration of the switches in the **NicSwitchArray** member in the [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) and [**NDIS\_FILTER\_ATTACH\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_attach_parameters) structures. Therefore, the overlying protocol and filter drivers do not have to issue [OID\_NIC\_SWITCH\_ENUM\_SWITCHES](https://docs.microsoft.com/windows-hardware/drivers/network/oid-nic-switch-enum-switches) requests to obtain this information.
 
  
 

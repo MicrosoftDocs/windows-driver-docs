@@ -30,7 +30,7 @@ The battery class driver takes care of the following tasks for miniclass drivers
 
 -   Handling certain standard battery WMI classes
 
-See [Battery Miniclass Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_battery/) for descriptions of the routines that the battery class driver exports to battery miniclass drivers.
+See [Battery Miniclass Driver Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/_battery/) for descriptions of the routines that the battery class driver exports to battery miniclass drivers.
 
  
 

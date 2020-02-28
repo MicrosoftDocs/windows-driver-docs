@@ -339,7 +339,7 @@ The techniques shown in the two previous examples can be combined to support con
 ## Device driver requirements
 
 
-The power policy owner for a device (typically the function driver) tells the operating system whether to enable the device's transition from D3hot to D3cold. The driver can supply this information in the INF file that installs the device. Or, the driver can call the [*SetD3ColdSupport*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-set_d3cold_support) routine at run time to dynamically enable or disable the device's transitions to D3cold. By enabling a device to enter D3cold, a driver guarantees the following behavior:
+The power policy owner for a device (typically the function driver) tells the operating system whether to enable the device's transition from D3hot to D3cold. The driver can supply this information in the INF file that installs the device. Or, the driver can call the [*SetD3ColdSupport*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-set_d3cold_support) routine at run time to dynamically enable or disable the device's transitions to D3cold. By enabling a device to enter D3cold, a driver guarantees the following behavior:
 
 -   The device can tolerate a transition from D3hot to D3cold when the computer is to remain in S0.
 -   The device will work properly when it returns to D0 from D3cold.

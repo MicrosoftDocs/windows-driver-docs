@@ -29,7 +29,7 @@ PMI also provides support for the notification of power metering events, such as
 
 The power metering information that is accessed from PMI is generally read-only. However, depending on the capabilities of the power meter, its budgeting configuration could have read-only or read/write permission.
 
-For more information about the PMI IOCTL interface, see [PMI IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pmi/index).
+For more information about the PMI IOCTL interface, see [PMI IOCTLs](https://docs.microsoft.com/windows-hardware/drivers/ddi/pmi/index).
 
  
 **Note**   The PMB infrastructure is supported on Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.

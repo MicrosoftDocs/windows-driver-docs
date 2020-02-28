@@ -29,14 +29,14 @@ The thread context for the stored event. The type of the thread context is the C
 Remarks
 -------
 
-This information is also returned to the *Context* parameter by the [**GetStoredEventInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugcontrol4-getstoredeventinformation) method.
+This information is also returned to the *Context* parameter by the [**GetStoredEventInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-getstoredeventinformation) method.
 
 ## <span id="see_also"></span>See also
 
 
 [**Request**](request.md)
 
-[**GetStoredEventInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugcontrol4-getstoredeventinformation)
+[**GetStoredEventInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-getstoredeventinformation)
 
  
 

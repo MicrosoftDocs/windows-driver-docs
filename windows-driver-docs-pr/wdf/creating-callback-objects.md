@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Creating Callback Objects
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 A UMDF driver can create *callback objects*, which consist of context data and interface methods. The framework accesses the driver's callback objects through the driver's callback interface methods.
 

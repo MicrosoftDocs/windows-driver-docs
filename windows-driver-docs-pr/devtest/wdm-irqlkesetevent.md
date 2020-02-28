@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # IrqlKeSetEvent rule (wdm)
 
 
-The **IrqlKeSetEvent** rule specifies that the [**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesetevent) routine is only called at IRQL &lt;= DISPATCH\_LEVEL when *Wait* is set to **FALSE**, and at IRQL &lt;= APC\_LEVEL when *Wait* is set to **TRUE**.
+The **IrqlKeSetEvent** rule specifies that the [**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetevent) routine is only called at IRQL &lt;= DISPATCH\_LEVEL when *Wait* is set to **FALSE**, and at IRQL &lt;= APC\_LEVEL when *Wait* is set to **TRUE**.
 
 |              |     |
 |--------------|-----|
@@ -73,7 +73,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesetevent)
+[**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetevent)
  
 
  

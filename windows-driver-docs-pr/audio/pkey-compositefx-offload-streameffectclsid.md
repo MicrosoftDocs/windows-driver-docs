@@ -1,12 +1,11 @@
 ---
 title: PKEY\_CompositeFX\_Offload\_StreamEffectClsid
 description: In Windows 10, version 1803 and later, the PKEY\_CompositeFX\_Offload\_StreamEffectClsid property key identifies the stream effect (SFX) supported by the driver.
-ms.date: 11/15/2018
+ms.date: 01/07/2020
 ms.localizationpriority: medium
 ---
 
 # PKEY\_CompositeFX\_Offload\_StreamEffectClsid
-
 
 In Windows 10, version 1803 and later, the **PKEY\_CompositeFX\_Offload\_StreamEffectClsid** property key identifies the stream effect (SFX) supported by the driver that will be loaded during offload playback. The driver developer should specify the list of supported stream effects that their driver supports for the offload pin.
 
@@ -20,13 +19,13 @@ An INF file specifies settings for an audio processing mode effect in the add-re
 
 ```inf
 [Strings]
-PKEY_CompositeFX_Offload_StreamEffectClsid   = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},11"
+PKEY_CompositeFX_Offload_StreamEffectClsid   = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},19"
 ...
 ; Driver developers should replace this CLSIDs with that of their own APO
 SWAP_FX_MODE_CLSID      = "{00000000-0000-0000-0000-000000000000}"
 DELAY_FX_STREAM_CLSID   = "{00000000-0000-0000-0000-000000000000}"
 ...
- 
+
 [SWAPAPO.I.Association0.AddReg]
 HKR,FX\0,%PKEY_CompositeFX_Offload_StreamEffectClsid%,0x00010000,%SWAP_FX_MODE_CLSID%,%DELAY_FX_MODE_CLSID%
 
@@ -35,15 +34,4 @@ HKR,FX\0,%PKEY_CompositeFX_Offload_StreamEffectClsid%,0x00010000,%SWAP_FX_MODE_C
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Media-Class INF Extensions](media-class-inf-extensions.md)
-
- 
-
- 
-
-
-
-
-
-

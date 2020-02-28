@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # IrqlObPassive rule (wdm)
 
 
-The **IrqlObPassive** rule specifies that the driver calls [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbyhandle) only when it is executing at IRQL = PASSIVE\_LEVEL.
+The **IrqlObPassive** rule specifies that the driver calls [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) only when it is executing at IRQL = PASSIVE\_LEVEL.
 
 |              |     |
 |--------------|-----|
@@ -73,7 +73,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbyhandle)
+[**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)
  
 
  

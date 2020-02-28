@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Determining Why a UMDF Driver Consumes an Excessive Amount of Memory
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 driver to determine why a UMDF driver consumes an excessive amount of memory.
 
@@ -33,7 +33,7 @@ To investigate memory usage, use the following steps:
     These objects might be in the object tree and would therefore eventually be freed. However, they are being accumulated unnecessarily. These objects might require:
 
     -   Corrections to their parent objects.
-    -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfobject-deletewdfobject) method.
+    -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-deletewdfobject) method.
 
  
 

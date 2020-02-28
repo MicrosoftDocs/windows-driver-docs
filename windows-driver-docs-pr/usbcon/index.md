@@ -49,42 +49,42 @@ Windows operating systems include native support for USB host controllers, hubs,
 <ul>
 <li>USB connector manager class extension (UcmCx) reference
     <ul>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmmanager/" data-raw-source="[Ucmmanager.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmmanager/)">Ucmmanager.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucmmanager/" data-raw-source="[Ucmmanager.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucmmanager/)">Ucmmanager.h</a>
     </li>
     </ul>
 </li>
 <li>USB host controller (UCX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxclass/)">Ucxclass.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/)">Ucxclass.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxcontroller/)">Ucxcontroller.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/)">Ucxcontroller.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/Ucxroothub/)">Ucxroothub.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/Ucxroothub/)">Ucxroothub.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxusbdevice/)">Ucxusbdevice.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/)">Ucxusbdevice.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxendpoint/)">Ucxendpoint.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/)">Ucxendpoint.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxsstreams/)">Ucxsstreams.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/)">Ucxsstreams.h</a>
     </li>
     </ul>
 </li>
 <li>USB function class extension (UFX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxbase/)">Ufxbase.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/)">Ufxbase.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxclient/)">Ufxclient.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/)">Ufxclient.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
     </li>
     </ul>
 </li>
@@ -100,7 +100,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <a href="https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog" data-raw-source="[Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/bg-p/MicrosoftUSBBlog)">Microsoft Windows USB Core Team Blog</a>
 <p>Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.</p>
 <a href="https://community.osr.com/categories/ntdev" data-raw-source="[OSR Online Lists - ntdev](https://community.osr.com/categories/ntdev)">OSR Online Lists - ntdev</a>
-<p>Discussion list managed by <a href="http://www.osronline.com/index.cfm" data-raw-source="[OSR Online](http://www.osronline.com/index.cfm)">OSR Online</a> for kernel-mode driver developers.</p>
+<p>Discussion list managed by <a href="https://www.osronline.com/index.cfm" data-raw-source="[OSR Online](https://www.osronline.com/index.cfm)">OSR Online</a> for kernel-mode driver developers.</p>
 <a href="https://msdn.microsoft.com/windows/hardware/" data-raw-source="[Windows Dev-Center for Hardware Development](https://msdn.microsoft.com/windows/hardware/)">Windows Dev-Center for Hardware Development</a>
 <p>Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.</p>
 <p></p>
@@ -112,12 +112,12 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><strong>USB hardware for learning</strong></p>
 <a href="microsoft-usb-test-tool--mutt--devices.md" data-raw-source="[MUTT devices](microsoft-usb-test-tool--mutt--devices.md)">MUTT devices</a>
 <p>MUTT and SuperMUTT devices and the accompanying software package are integrated into the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.</p>
-<a href="http://www.osronline.com/index.cfm" data-raw-source="[OSR USB FX2 Learning Kit](http://www.osronline.com/index.cfm)">OSR USB FX2 Learning Kit</a>
+<a href="https://www.osronline.com/index.cfm" data-raw-source="[OSR USB FX2 Learning Kit](https://www.osronline.com/index.cfm)">OSR USB FX2 Learning Kit</a>
 <p>If you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from OSR Online Store.</p></td>
 <td><strong>Write a USB client driver (KMDF, UMDF)</strong>
 <p>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. This section also includes tutorials about writing your first user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.</p>
 <p><a href="getting-started-with-usb-client-driver-development.md" data-raw-source="[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)">Getting started with USB client driver development</a></p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/" data-raw-source="[USB device driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/)">USB device driver programming reference</a></p>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/" data-raw-source="[USB device driver programming reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/)">USB device driver programming reference</a></p>
 <strong>Write a USB host controller driver</strong>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
 <p><a href="developing-windows-drivers-for-usb-host-controllers.md" data-raw-source="[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)">Developing Windows drivers for USB host controllers</a></p>
@@ -126,22 +126,22 @@ Windows operating systems include native support for USB host controllers, hubs,
 <li>USB host controller (UCX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxclass/)">Ucxclass.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/" data-raw-source="[Ucxclass.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxclass/)">Ucxclass.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxcontroller/)">Ucxcontroller.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/" data-raw-source="[Ucxcontroller.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxcontroller/)">Ucxcontroller.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/Ucxroothub/)">Ucxroothub.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxroothub/" data-raw-source="[Ucxroothub.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/Ucxroothub/)">Ucxroothub.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxusbdevice/)">Ucxusbdevice.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/" data-raw-source="[Ucxusbdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxusbdevice/)">Ucxusbdevice.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxendpoint/)">Ucxendpoint.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/" data-raw-source="[Ucxendpoint.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxendpoint/)">Ucxendpoint.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ucxsstreams/)">Ucxsstreams.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/" data-raw-source="[Ucxsstreams.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucxsstreams/)">Ucxsstreams.h</a>
     </li>
     </ul>
 </li>
@@ -153,13 +153,13 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>USB function class extension (UFX) reference
     <ul>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxbase/)">Ufxbase.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/" data-raw-source="[Ufxbase.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxbase/)">Ufxbase.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxclient/)">Ufxclient.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/" data-raw-source="[Ufxclient.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxclient/)">Ufxclient.h</a>
     </li>
     <li>
-    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/" data-raw-source="[Ufxproprietarycharger.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ufxproprietarycharger/)">Ufxproprietarycharger.h</a>
     </li>
     </ul>
 </p>
@@ -168,7 +168,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><a href="developing-windows-drivers-for-usb-type-c-connectors.md" data-raw-source="[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)">Developing Windows drivers for USB Type-C connectors</a></p>
 <p>USB connector manager class extension (UcmCx) reference
     <ul>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmmanager/" data-raw-source="[Ucmmanager.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucmmanager/)">Ucmmanager.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ucmmanager/" data-raw-source="[Ucmmanager.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucmmanager/)">Ucmmanager.h</a>
     </li>
     </ul>
 </p>
@@ -178,7 +178,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><a href="usb-dual-role-driver-stack-architecture.md" data-raw-source="[USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)">USB Dual Role Driver Stack Architecture</a></p>
 <p>USB dual-role controller driver programming reference
     <ul>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ursdevice/" data-raw-source="[Ursdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ursdevice/)">Ursdevice.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ursdevice/" data-raw-source="[Ursdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ursdevice/)">Ursdevice.h</a>
     </li>
     </ul>
 </p>
@@ -187,13 +187,13 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><a href="developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md" data-raw-source="[Developing Windows drivers for emulated USB devices (UDE)](developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)">Developing Windows drivers for emulated USB devices (UDE)</a></p>
 <p>Emulated USB host controller driver programming reference
     <ul>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxusbdevice/" data-raw-source="[Udecxusbdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxusbdevice/)">Udecxusbdevice.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxusbdevice/" data-raw-source="[Udecxusbdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxusbdevice/)">Udecxusbdevice.h</a>
     </li>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxusbendpoint/" data-raw-source="[Udecxusbendpoint.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxusbendpoint/)">Udecxusbendpoint.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxusbendpoint/" data-raw-source="[Udecxusbendpoint.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxusbendpoint/)">Udecxusbendpoint.h</a>
     </li>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/" data-raw-source="[Udecxwdfdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxwdfdevice/)">Udecxwdfdevice.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/" data-raw-source="[Udecxwdfdevice.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxwdfdevice/)">Udecxwdfdevice.h</a>
     </li>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxurb/" data-raw-source="[Udecxurb.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/udecxurb/)">Udecxurb.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxurb/" data-raw-source="[Udecxurb.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/udecxurb/)">Udecxurb.h</a>
     </li>
     </ul>
 </p>
@@ -208,7 +208,7 @@ Windows operating systems include native support for USB host controllers, hubs,
     <ul>
     <li><a href="https://docs.microsoft.com/windows/desktop/api/winusb/" data-raw-source="[Winusb.h](https://docs.microsoft.com/windows/desktop/api/winusb/)">Winusb.h</a>
     </li>
-    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/" data-raw-source="[Usbioctl.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/)">Usbioctl.h</a>
+    <li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/" data-raw-source="[Usbioctl.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/)">Usbioctl.h</a>
     </li>
     </ul>
 </p>

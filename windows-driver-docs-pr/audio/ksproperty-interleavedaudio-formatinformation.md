@@ -22,11 +22,11 @@ The **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** property provides additio
 
  |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|Yes|No|Pin|[KS_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_interleaved_audio_format_information)|
+|Yes|No|Pin|[KS_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)|[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_interleaved_audio_format_information)|
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
- For the get, **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** returns an [INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_interleaved_audio_format_information) structure which contains additional information about the interleaving of loopback audio and capture audio in the audio stream. 
+ For the get, **KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION** returns an [INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_interleaved_audio_format_information) structure which contains additional information about the interleaving of loopback audio and capture audio in the audio stream. 
 
 Starting in Windows 10 19H1, setting the KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION property key is a requirement for systems that support the Hardware Keyword Spotter (HW KWS) that combine microphone and loopback audio into a single stream, in order to use an AEC APO on the keyword burst output. For more information, see [Voice Activation](voice-activation.md).
 
@@ -51,6 +51,6 @@ Requirements
 
 [KSPROPSETID\_INTERLEAVEDAUDIO](kspropsetid-interleavedaudio.md)
 
-[KS_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksp_pin)
+[KS_PIN](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 
-[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_interleaved_audio_format_information) 
+[INTERLEAVED_AUDIO_FORMAT_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_interleaved_audio_format_information) 

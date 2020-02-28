@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The **DownloadPreviewImage** function downloads image data from the scanner by calling the preview component's **IWiaPreview::GetNewPreview** method. It then calls the **DetectSubregions** function if the application user wants to invoke the segmentation filter, which creates a child item under *pWiaItem2* for each region that it detects. For information about **DetectSubregions**, which is used in this example, see the [**IWiaSegmentationFilter::DetectRegions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wia_lh/nf-wia_lh-iwiasegmentationfilter-detectregions) method.
+The **DownloadPreviewImage** function downloads image data from the scanner by calling the preview component's **IWiaPreview::GetNewPreview** method. It then calls the **DetectSubregions** function if the application user wants to invoke the segmentation filter, which creates a child item under *pWiaItem2* for each region that it detects. For information about **DetectSubregions**, which is used in this example, see the [**IWiaSegmentationFilter::DetectRegions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiasegmentationfilter-detectregions) method.
 
 In this example, the application user sets the *m\_bUseSegmentationFilter* parameter by clicking a check box. If the application supports this, it should first check that the driver has a segmentation filter by calling **IWiaItem2::CheckExtension**. For information about **CheckImgFilter**, which is used in this example, see the **IWiaPreview::GetNewPreview** method in the Microsoft Windows SDK documentation.
 

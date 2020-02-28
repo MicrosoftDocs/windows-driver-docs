@@ -16,25 +16,23 @@ ms.localizationpriority: medium
 
 # DevCon Disable
 
-
 Disables devices on the computer. Valid only on the local computer.
 
 To *disable* a device means that the device remains physically connected to the computer, but its driver is unloaded from memory and its resources are freed so that the device cannot be used.
 
 ```
-    devcon [/r] disable {* | ID [ID ...] | =class [ID [ID ...]]} 
+    devcon [/r] disable {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_disable_tools"></span><span id="DDK_DEVCON_DISABLE_TOOLS"></span>Parameters
 
-
-<span id="________r______"></span><span id="________R______"></span> **/r**   
+<span id="________r______"></span><span id="________R______"></span> **/r**
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
 
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*   
+<span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
 
 The following special characters modify the ID parameter.
@@ -67,9 +65,7 @@ The following special characters modify the ID parameter.
 </tbody>
 </table>
 
-
-
-<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>   
+<span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
@@ -95,12 +91,3 @@ devcon /r disable =printer
 [Example 30: Disable devices by an ID pattern](devcon-examples.md#ddk_example_30_disable_devices_by_an_id_pattern_tools)
 
 [Example 31: Disable devices by device instance ID](devcon-examples.md#ddk_example_31_disable_devices_by_device_instance_id_tools)
-
-
-
-
-
-
-
-
-

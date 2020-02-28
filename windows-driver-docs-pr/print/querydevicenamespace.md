@@ -19,7 +19,7 @@ The following sample code illustrates how this method could be implemented.
 STDMETHODIMP
 CPrintTicketProvider::QueryDeviceNamespace(BSTR *pDefaultNamespace)
 {
-    *pDefaultNamespace = SysAllocString(TEXT("http://schemas.contoso.com/printers/seriesA/v.1.0"));
+    *pDefaultNamespace = SysAllocString(TEXT("https://schemas.contoso.com/printers/seriesA/v.1.0"));
     
     if (!(*pDefaultNamespace))
     {

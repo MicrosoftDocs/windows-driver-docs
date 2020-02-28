@@ -38,7 +38,7 @@ If your device requires a transport other than USB, Bluetooth, Bluetooth LE, or 
 
 -   **Report Descriptor Length**
 
-    A transport minidriver submits report descriptors to Hidclass in a [**HID\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidport/ns-hidport-_hid_descriptor) structure. Regardless of the size defined by the transport protocol for transferring HID report descriptor with their devices, the actual report descriptor size is limited during the communication between Hidclass and HID minidrivers.
+    A transport minidriver submits report descriptors to Hidclass in a [**HID\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_descriptor) structure. Regardless of the size defined by the transport protocol for transferring HID report descriptor with their devices, the actual report descriptor size is limited during the communication between Hidclass and HID minidrivers.
 
 -   **TLCs in a Report Descriptor**
 

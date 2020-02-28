@@ -25,9 +25,12 @@ Any entry in the per-manufacturer *Models* section can also specify one or more 
 [models-section-name] |
 [models-section-name.TargetOSVersion]  (Windows XP and later versions of Windows)
 
-device-description=install-section-name[,hw-id][,compatible-id...]
-[device-description=install-section-name[,hw-id][,compatible-id]...] ...
+device-description=install-section-name,[hw-id][,compatible-id...]
+[device-description=install-section-name,[hw-id][,compatible-id]...] ...
 ```
+
+> [!NOTE]
+> INFs are required to specify at least one device ID for each entry in the models section.  This may be either a hardware ID or compatible ID.
 
 ## Entries
 

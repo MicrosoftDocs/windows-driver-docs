@@ -51,7 +51,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisStallExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisstallexecution)
+[**NdisStallExecution**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisstallexecution)
  
 
  

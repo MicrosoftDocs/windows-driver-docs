@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 A two-monitor configuration generates the TMM dialog. If two targets are part of the same graphics adapter, TMM will map the one source that is currently mapped to one of the targets to both targets. After TMM performs the mapping, the TMM dialog will pop up. If the targets are on different graphics adapters, the TMM dialog will pop up without activating the second monitor. In this situation, the TMM dialog will not have the option for clone or extended.
 
-The following sequence shows the order in which TMM calls the methods of [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) and performs other operations in this situation:
+The following sequence shows the order in which TMM calls the methods of [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) and performs other operations in this situation:
 
 1.  TMM calls the **EnumDisplayDevices** function to retrieve the current display configuration, which includes adapters, displays, and monitors. For more information about **EnumDisplayDevices**, see the Microsoft Windows SDK documentation.
 
@@ -34,7 +34,7 @@ The following sequence shows the order in which TMM calls the methods of [IViewH
 
 9.  TMM calls the [**IViewHelper::Commit**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568167(v=vs.85)) method.
 
-If an error result is returned from any of the [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) methods, the computer does not enter clone view, and the TMM dialog pops up with clone-view and external-only options disabled.
+If an error result is returned from any of the [IViewHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) methods, the computer does not enter clone view, and the TMM dialog pops up with clone-view and external-only options disabled.
 
 If the computer enters clone view and the user chooses extended view from the TMM dialog (and clicks **OK** or **Apply**), TMM must turn off clone view as follows:
 

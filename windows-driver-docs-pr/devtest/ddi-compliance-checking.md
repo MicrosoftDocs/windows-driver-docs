@@ -37,7 +37,7 @@ When you select the DDI compliance checking option, the following rules are incl
 
 [**IrqlExApcLte1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte1)
 
-[**IrqlExApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[**IrqlExApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 [**IrqlExApcLte3**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte3)
 

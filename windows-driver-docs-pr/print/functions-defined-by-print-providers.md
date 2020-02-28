@@ -26,7 +26,7 @@ All print providers must supply pointers for all listed functions. However, most
 
 In the following function lists, functions that must be supported are labeled "Required".
 
-All print providers must export the initialization function, [**InitializePrintProvidor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintprovidor). Pointers to all the other functions must be supplied in a [**PRINTPROVIDOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-_printprovidor) structure. (Note that these two names are misspelled, but are consistent with the names that appear in the header file, Winsplp.h.)
+All print providers must export the initialization function, [**InitializePrintProvidor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor). Pointers to all the other functions must be supplied in a [**PRINTPROVIDOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_printprovidor) structure. (Note that these two names are misspelled, but are consistent with the names that appear in the header file, Winsplp.h.)
 
 Functions are divided into groups, and presented in the following sections:
 
@@ -67,7 +67,7 @@ Other Functions
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintprovidor" data-raw-source="[&lt;strong&gt;InitializePrintProvidor&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintprovidor)"><strong>InitializePrintProvidor</strong></a> (Required)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor" data-raw-source="[&lt;strong&gt;InitializePrintProvidor&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor)"><strong>InitializePrintProvidor</strong></a> (Required)</p></td>
 <td><p>Initializes the print provider and returns pointers to supplied functions.</p></td>
 </tr>
 </tbody>
@@ -421,7 +421,7 @@ Returns the directory path in which print processor files must be stored.
 <tbody>
 <tr class="odd">
 <td><p><strong>AddPort</strong></p></td>
-<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-addportui" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-addportui)"><strong>AddPortUI</strong></a> function.</p></td>
+<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-addportui" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-addportui)"><strong>AddPortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AddPortEx</strong></p></td>
@@ -431,13 +431,13 @@ Returns the directory path in which print processor files must be stored.
 <td><p></p>
 <strong>ConfigurePort</strong>
 (Required)</td>
-<td><p>Configures a printer port, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-configureportui" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-configureportui)"><strong>ConfigurePortUI</strong></a> function.</p></td>
+<td><p>Configures a printer port, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-configureportui" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-configureportui)"><strong>ConfigurePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p></p>
 <strong>DeletePort</strong>
 (Required)</td>
-<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-deleteportui" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-deleteportui)"><strong>DeletePortUI</strong></a> function.</p></td>
+<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-deleteportui" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-deleteportui)"><strong>DeletePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p>

@@ -45,7 +45,7 @@ class MSiSCSI_LB_Operations {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_LB\_Operations](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index) data structures.
+When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_LB\_Operations](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) data structures.
 
  
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Setting Up the Web Site
 
 
-Set up a Web site from which to share the source files and note the root directory of the site. Your source is then available from a site such as:
+Set up a Web site from which to share the source files and not the root directory of the site. Your source is then available from a site such as:
 
 ```text
 https://SrcMachineName/source
