@@ -1036,6 +1036,10 @@
     href: cm-prob-used-by-debugger.md
   - name: "CM_PROB_DEVICE_RESET"
     href: cm-prob-device-reset.md
+  - name: "CM_PROB_CONSOLE_LOCKED"
+    href: cm-prob-console-locked.md
+  - name: "CM_PROB_NEED_CLASS_CONFIG"
+    href: cm-prob-need-class-config.md
   - name: "Device Manager Details Tab"
     href: device-manager-details-tab.md
   - name: "Viewing Hidden Devices"

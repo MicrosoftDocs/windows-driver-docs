@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
-ms.date: 02/14/2020
+ms.date: 02/28/2020
 ---
 
 # DEVPKEY_Device_ProblemStatus
