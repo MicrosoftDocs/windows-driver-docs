@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_PARTIAL_LOG_CONF
+# Code 16 - CM_PROB_PARTIAL_LOG_CONF
 
 This function is reserved for system use.
 

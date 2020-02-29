@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_WAITING_ON_DEPENDENCY
+# Code 51 - CM_PROB_WAITING_ON_DEPENDENCY
 
 This function is reserved for system use.
 

@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_REGISTRY_TOO_LARGE
+# Code 49 - CM_PROB_REGISTRY_TOO_LARGE
 
 This function is reserved for system use.
 

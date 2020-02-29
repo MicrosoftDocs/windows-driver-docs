@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_SYSTEM_SHUTDOWN
+# Code 46 - CM_PROB_SYSTEM_SHUTDOWN
 
 This function is reserved for system use.
 

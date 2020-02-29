@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_HALTED
+# Code 44 - CM_PROB_HALTED
 
 This function is reserved for system use.
 

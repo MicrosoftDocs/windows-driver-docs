@@ -8,7 +8,7 @@ ms.date: 02/28/2020
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_REINSTALL
+# Code 18 - CM_PROB_REINSTALL
 
 This function is reserved for system use.
 

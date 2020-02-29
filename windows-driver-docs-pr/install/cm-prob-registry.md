@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_REGISTRY
+# Code 19 - CM_PROB_REGISTRY
 
 This function is reserved for system use.
 

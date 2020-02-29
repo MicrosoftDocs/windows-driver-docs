@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DRIVER_SERVICE_KEY_INVALID
+# Code 40 - CM_PROB_DRIVER_SERVICE_KEY_INVALID
 
 This function is reserved for system use.
 

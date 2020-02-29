@@ -8,7 +8,7 @@ ms.date: 02/28/2020
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_FAILED_INSTALL
+# Code 28 - CM_PROB_FAILED_INSTALL
 
 This function is reserved for system use.
 

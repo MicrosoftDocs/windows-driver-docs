@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_NO_SOFTCONFIG
+# Code 34 - CM_PROB_NO_SOFTCONFIG
 
 This function is reserved for system use.
 

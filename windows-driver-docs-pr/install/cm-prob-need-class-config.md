@@ -8,7 +8,7 @@ ms.date: 02/28/2020
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_NEED_CLASS_CONFIG
+# Code 56 - CM_PROB_NEED_CLASS_CONFIG
 
 This problem code is frequently transient.
 

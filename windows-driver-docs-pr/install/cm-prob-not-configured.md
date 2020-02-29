@@ -8,7 +8,7 @@ ms.date: 02/28/2020
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_NOT_CONFIGURED
+# Code 1 - CM_PROB_NOT_CONFIGURED
 
 This function is reserved for system use.
 

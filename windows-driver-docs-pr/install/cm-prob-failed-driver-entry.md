@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_FAILED_DRIVER_ENTRY
+# Code 37 - CM_PROB_FAILED_DRIVER_ENTRY
 
 This function is reserved for system use.
 The driver returned failure from its **DriverEntry** routine.

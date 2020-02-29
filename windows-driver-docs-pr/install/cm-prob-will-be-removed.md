@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_WILL_BE_REMOVED
+# Code 21 - CM_PROB_WILL_BE_REMOVED
 
 This function is reserved for system use.
 

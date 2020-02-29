@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DUPLICATE_DEVICE
+# Code 42 - CM_PROB_DUPLICATE_DEVICE
 
 This function is reserved for system use.
 

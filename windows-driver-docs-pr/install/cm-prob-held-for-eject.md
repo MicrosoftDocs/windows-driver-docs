@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_HELD_FOR_EJECT
+# Code 47 - CM_PROB_HELD_FOR_EJECT
 
 This function is reserved for system use.
 
