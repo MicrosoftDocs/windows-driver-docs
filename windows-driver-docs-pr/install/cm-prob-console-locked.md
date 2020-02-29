@@ -22,7 +22,7 @@ For more info on Kernel DMA Protection, see https://docs.microsoft.com/windows/s
 
 ### Display Message
 
-"(Code 55)"
+"This device is blocked from starting while the user is not logged in. (Code 55)"
 
 
 ### Recommended Resolution

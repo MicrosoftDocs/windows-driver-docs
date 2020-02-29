@@ -19,7 +19,7 @@ This problem code is frequently transient.
 
 ### Display Message
 
-"(Code 56)"
+"Windows is still setting up the class configuration for this device. (Code 56)"
 
 
 ### Recommended Resolution
