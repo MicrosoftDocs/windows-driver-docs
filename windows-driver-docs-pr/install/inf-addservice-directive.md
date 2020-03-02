@@ -265,9 +265,10 @@ Each named service-trigger-install section referenced by an AddTrigger directive
 
 ```
 [service-trigger-install-section]
+
 TriggerType=trigger-type
 Action=action-type
-TriggerSubType=trigger-subtype
+SubType=trigger-subtype
 [DataItem=data-type,data]
 ...
 ```
@@ -283,20 +284,23 @@ Indicates that event is triggered when a device of the specified device interfac
 For more information, see [SERVICE_TRIGGER structure](https://docs.microsoft.com/en-us/windows/desktop/api/winsvc/ns-winsvc-_service_trigger)
 
 **Action**=*action-type*
+
 Specifies the action to take when the specified trigger event occurs.
-**0x1** (SERVICE_TRIGGER_ACTION_SERVICE_START)
-**0x2** (SERVICE_TRIGGER_ACTION_SERVICE_STOP)
+**0x1** (SERVICE_TRIGGER_ACTION_SERVICE_START) Start the service when the specified trigger event occurs.
+**0x2** (SERVICE_TRIGGER_ACTION_SERVICE_STOP) Stop the service when the specified trigger event occurs.
 
 For more information, see [SERVICE_TRIGGER structure](https://docs.microsoft.com/en-us/windows/desktop/api/winsvc/ns-winsvc-_service_trigger)
 
 **TriggerSubType**=*trigger-subtype*
+
 Specifies a GUID that identifies the trigger event subtype. The value depends on the value of the **TriggerType**. 
-When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL),**TriggerSubType** specifies the GUID that identifies the device interface class.
+When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL),**SubType** specifies the GUID that identifies the device interface class.
 
 For more information, see [SERVICE_TRIGGER structure](https://docs.microsoft.com/en-us/windows/desktop/api/winsvc/ns-winsvc-_service_trigger).
 
 **DataItem**=*data-type, data*
-This optional entry specifies the trigger-specific data for a service trigger event. When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL), an optional DataItem may be specified with a data-type of **0x2** (SERVICE_TRIGGER_DATA_TYPE_STRING) to scope the device interface class to a specific hardware ID or compatible ID.
+
+Optionally specifies the trigger-specific data for a service trigger event. When **TriggerType** is **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL), an optional DataItem may be specified with a data-type of **0x2** (SERVICE_TRIGGER_DATA_TYPE_STRING) to scope the device interface class to a specific hardware ID or compatible ID.
 
 For more information, see [SERVICE_TRIGGER_SPECIFIC_DATA_ITEM structure](https://docs.microsoft.com/en-us/windows/desktop/api/winsvc/ns-winsvc-_service_trigger_specific_data_item)
 
