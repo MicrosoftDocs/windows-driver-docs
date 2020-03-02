@@ -111,6 +111,16 @@ Enumerate all devices on the system.
 /relations - display parent and child device relations.
 /drivers - display matching and installed drivers.
 ```
+
+**/enum-interfaces** <em> [/enabled | /disabled] [/class <name | GUID>] </em>
+
+Enumerate all device interfaces on the system.
+
+```
+/enabled | /disabled - filter by enabled interfaces or filter by disabled interfaces.
+/class <GUID> - filter by interface class GUID.
+```
+
 **/?**
 
 Displays the command-line syntax.
