@@ -37,7 +37,7 @@
       - name: "Overview of the Driver Selection Process"
         href: overview-of-the-driver-selection-process.md
       - name: "How Windows selects a driver for a device"
-        href: where-setup-searches-for-drivers.md
+        href: how-windows-selects-a-driver-for-a-device.md
     - name: "How Windows Ranks Drivers"
       items: 
         - name: "How Windows Ranks Drivers"
