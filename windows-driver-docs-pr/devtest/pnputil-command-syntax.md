@@ -73,6 +73,25 @@ Enable devices on the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
+**/restart-device** <em><instance ID> [/reboot]</em>
+
+Restart devices devices on the system. 
+
+```
+/reboot - reboot system if needed to complete the operation.
+```
+
+**/remove-device** <em><instance ID> [/subtree] [/reboot]</em>
+
+Attempt to remove a device from the system. 
+
+```
+/subtree - remove entire device subree, including any child devices.
+/reboot - reboot system if needed to complete the operation.
+```
+
+
+
 **/?**
 
 Displays the command-line syntax.
