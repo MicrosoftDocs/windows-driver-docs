@@ -286,8 +286,10 @@ For more information, see [SERVICE_TRIGGER structure](https://docs.microsoft.com
 **Action**=*action-type*
 
 Specifies the action to take when the specified trigger event occurs.
-**0x1** (SERVICE_TRIGGER_ACTION_SERVICE_START) Start the service when the specified trigger event occurs.
-**0x2** (SERVICE_TRIGGER_ACTION_SERVICE_STOP) Stop the service when the specified trigger event occurs.
+
+**0x1** (SERVICE_TRIGGER_ACTION_SERVICE_START) starts the service when the specified trigger event occurs.
+
+**0x2** (SERVICE_TRIGGER_ACTION_SERVICE_STOP) stops the service when the specified trigger event occurs.
 
 For more information, see [SERVICE_TRIGGER structure](https://docs.microsoft.com/en-us/windows/desktop/api/winsvc/ns-winsvc-_service_trigger)
 
