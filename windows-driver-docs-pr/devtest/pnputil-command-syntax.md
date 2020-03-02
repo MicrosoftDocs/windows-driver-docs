@@ -90,8 +90,27 @@ Attempt to remove a device from the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
+**/scan-devices** <em> [/instanceid <instance ID>] [/async]</em>
 
+Scan the system for any device hardware changes. 
 
+```
+/instanceid <instance ID> - scan device subtree for changes.
+/async - scan for changes asynchronously.
+```
+**/enum-devices** <em> [/connected] [/disconnected] [instanceid <instance ID>] [/class <name | GUID>] [/problem [<code>]] [/ids] [/relations] [/drivers] </em>
+
+Enumerate all devices on the system.
+
+```
+/connected | /disconnected - filter by connected devices or filter by disconnected devices.
+/instanceid <instance ID> - filter by device instance ID.
+/class <name | GUID> - filter by device class name or GUID.
+/problem [<code>] - filter by devices with problems or filter by specific problem code.
+/ids - display hardware IDs and compatible IDs.
+/relations - display parent and child device relations.
+/drivers - display matching and installed drivers.
+```
 **/?**
 
 Displays the command-line syntax.
