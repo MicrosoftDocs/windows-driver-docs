@@ -1040,6 +1040,8 @@
     href: cm-prob-console-locked.md
   - name: "Code 56 - CM_PROB_NEED_CLASS_CONFIG"
     href: cm-prob-need-class-config.md
+  - name: "Code 57 - CM_PROB_GUEST_ASSIGNMENT_FAILED"
+    href: cm-prob-guest-assignment-failed.md
   - name: "Device Manager Details Tab"
     href: device-manager-details-tab.md
   - name: "Viewing Hidden Devices"

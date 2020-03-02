@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 
 # Code 55 - CM_PROB_CONSOLE_LOCKED
 
+This function is reserved for system use.
+
 The device is blocked from enumeration due to a Group Policy / MDM (Intune) policy to protect from DMA attacks.
 
 For more info on Kernel DMA Protection, see https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.

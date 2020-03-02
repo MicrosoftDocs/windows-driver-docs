@@ -10,6 +10,8 @@ ms.localizationpriority: medium
 
 # Code 56 - CM_PROB_NEED_CLASS_CONFIG
 
+This function is reserved for system use.
+
 This problem code is frequently transient.
 
 
