@@ -986,7 +986,7 @@
     href: cm-prob-device-not-there.md
   - name: "Code 28 - CM_PROB_FAILED_INSTALL"
     href: cm-prob-failed-install.md
-  - name: "Code 30 - CM_PROB_HARDWARE_DISABLED"
+  - name: "Code 29 - CM_PROB_HARDWARE_DISABLED"
     href: cm-prob-hardware-disabled.md
   - name: "Code 31 - CM_PROB_FAILED_ADD"
     href: cm-prob-failed-add.md
