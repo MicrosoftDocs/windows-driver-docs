@@ -1,10 +1,10 @@
 ---
-title: Gradual rollout for driver distribution
+title: Gradual rollout
 description: Gradual rollout ensures the best driver experience for each system by monitoring telemetry during deployment, speeding and slowing release as indicated.
 author: Pamela Du
 ms.author: pameladu
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 03/01/2020
 ms.localizationpriority: medium
 ---
 
@@ -24,8 +24,8 @@ There are two distinct aspect of the Gradual Rollout process that partners shoul
 - The **driver throttling** period
   - Microsoft completes a risk assessment for each eligible driver and assigns a release throttle curve for that driver. A driver's risk is assessed against several factors including but not limited to flighting coverage and retail population.
   - There are a few typical driver release throttle curves:
-    - immediately throttled to 100% of the Retail Windows population 
-    - throttle through 1% to 100% of the Retail Window population 
+    - immediately throttled to 100% of the retail Windows population 
+    - throttle through 1% to 100% of the retail Window population 
     - throttle with an initial set of its eligible population that are highly active, and warrant even adoption of each targeting cluster governed by hardware ID (HWID) and computer hardware ID (CHID) combination, before progressing to 1% to 100% percentage of the retail Windows population
   - When the throttled percentage is at 100% it is completely live on WU to all systems running **Windows 10 version 1709 and later**. Microsoft will continue to **monitor** the release for rest of the 30 day period.
 
