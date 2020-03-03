@@ -98,7 +98,7 @@ Scan the system for any device hardware changes.
 /instanceid <instance ID> - scan device subtree for changes.
 /async - scan for changes asynchronously.
 ```
-**/enum-devices** *[/connected] [/disconnected] [/instanceid \<instance ID\>] [/class <name | GUID>] [/problem [<proble code>]] [/ids] [/relations] [/drivers]*
+**/enum-devices** *[/connected] [/disconnected] [/instanceid \<instance ID\>] [/class <name | GUID>] [/problem [\<proble code\>]] [/ids] [/relations] [/drivers]*
 
 Enumerate all devices on the system.
 
