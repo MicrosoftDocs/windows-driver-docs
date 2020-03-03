@@ -81,7 +81,7 @@ Restart devices devices on the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
-**/remove-device** *<instance ID> [/subtree] [/reboot]*
+**/remove-device** *\<instance ID\> [/subtree] [/reboot]*
 
 Attempt to remove a device from the system. 
 
@@ -90,7 +90,7 @@ Attempt to remove a device from the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
-**/scan-devices** *[/instanceid <instance ID>] [/async]*
+**/scan-devices** *[/instanceid \<instance ID\>] [/async]*
 
 Scan the system for any device hardware changes. 
 
@@ -98,7 +98,7 @@ Scan the system for any device hardware changes.
 /instanceid <instance ID> - scan device subtree for changes.
 /async - scan for changes asynchronously.
 ```
-**/enum-devices** *[/connected] [/disconnected] [/instanceid <instance ID>] [/class <name | GUID>] [/problem [<proble code>]] [/ids] [/relations] [/drivers]*
+**/enum-devices** *[/connected] [/disconnected] [/instanceid \<instance ID\>] [/class <name | GUID>] [/problem [<proble code>]] [/ids] [/relations] [/drivers]*
 
 Enumerate all devices on the system.
 
@@ -112,7 +112,7 @@ Enumerate all devices on the system.
 /drivers - display matching and installed drivers.
 ```
 
-**/enum-interfaces** *[/enabled | /disabled] [/class <GUID>]*
+**/enum-interfaces** *[/enabled | /disabled] [/class \<GUID\>]*
 
 Enumerate all device interfaces on the system.
 
