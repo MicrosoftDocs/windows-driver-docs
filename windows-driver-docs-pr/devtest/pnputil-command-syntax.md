@@ -10,7 +10,7 @@ api_name:
 - PnPUtil
 api_type:
 - NA
-ms.date: 01/31/2018
+ms.date: 03/03/2020
 ms.localizationpriority: medium
 ---
 
