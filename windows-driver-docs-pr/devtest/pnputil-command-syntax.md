@@ -57,7 +57,7 @@ Export driver package(s) from the driver store into a target directory.
 
 Enumerate all 3rd party driver packages in the driver store.
 
-**/disable-device** * <instance ID> [/reboot] *
+**/disable-device** <em><instance ID></em> [/reboot]
 
 Disable devices on the system. 
 
