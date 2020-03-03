@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 
 This function is reserved for system use.
 
-This problem code is frequently transient.
-
 
 ## Error Code
 
@@ -24,8 +22,7 @@ This problem code is frequently transient.
 "Windows is still setting up the class configuration for this device. (Code 56)"
 
 
-### Recommended Resolution
-
-
 ## For driver developers
+
+This problem code is frequently transient.
 

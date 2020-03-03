@@ -20,7 +20,7 @@ The device failed to start.
 
 ### Display Message
 
-If the device's hardware key contains a "FailReasonString" value, the value string is displayed as the error message. (A driver or enumerator supplies this registry string value.) If the hardware key does not contain a "FailReasonString" value, the following generic error message is displayed:
+If the device's [hardware key](opening-a-device-s-hardware-key.md) contains a "FailReasonString" value, the value string is displayed as the error message. (A driver or enumerator supplies this registry string value.) If the hardware key does not contain a "FailReasonString" value, the following generic error message is displayed:
 
 "This device cannot start. (Code 10)"
 
