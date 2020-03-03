@@ -30,7 +30,7 @@ pnputil [/add-driver <...> | /delete-driver <...> |
 
 ## Commands
 
-  **/add-driver** <filename.inf | *.inf> [/subdirs] [/install] [/reboot]
+ **/add-driver** *<filename.inf | *.inf> [/subdirs] [/install] [/reboot]*
 
 Add driver package(s) into the driver store.  
 ```
@@ -39,7 +39,7 @@ Add driver package(s) into the driver store.
 /reboot - reboot system if needed to complete the operation.  
 ```
 
-  **/delete-driver** *<oem#.inf> [/uninstall] [/force] [/reboot]*
+**/delete-driver** *<oem#.inf> [/uninstall] [/force] [/reboot]*
 
 Delete driver package from the driver store.  
 
@@ -57,7 +57,7 @@ Export driver package(s) from the driver store into a target directory.
 
 Enumerate all 3rd party driver packages in the driver store.
 
-**/disable-device** <em><instance ID> [/reboot]</em>
+**/disable-device** *<instance ID> [/reboot]*
 
 Disable devices on the system. 
 
@@ -65,7 +65,7 @@ Disable devices on the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
-**/enable-device** <em><instance ID> [/reboot]</em>
+**/enable-device** *<instance ID> [/reboot]*
 
 Enable devices on the system.  
 
@@ -73,7 +73,7 @@ Enable devices on the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
-**/restart-device** <em><instance ID> [/reboot]</em>
+**/restart-device** *<instance ID> [/reboot]*
 
 Restart devices devices on the system. 
 
@@ -81,7 +81,7 @@ Restart devices devices on the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
-**/remove-device** <em><instance ID> [/subtree] [/reboot]</em>
+**/remove-device** *<instance ID> [/subtree] [/reboot]*
 
 Attempt to remove a device from the system. 
 
@@ -90,7 +90,7 @@ Attempt to remove a device from the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
-**/scan-devices** <em> [/instanceid <instance ID>] [/async]</em>
+**/scan-devices** *[/instanceid <instance ID>] [/async]*
 
 Scan the system for any device hardware changes. 
 
@@ -98,7 +98,7 @@ Scan the system for any device hardware changes.
 /instanceid <instance ID> - scan device subtree for changes.
 /async - scan for changes asynchronously.
 ```
-**/enum-devices** <em> [/connected] [/disconnected] [instanceid <instance ID>] [/class <name | GUID>] [/problem [<code>]] [/ids] [/relations] [/drivers] </em>
+**/enum-devices** *[/connected] [/disconnected] [/instanceid <instance ID>] [/class <name | GUID>] [/problem [<proble code>]] [/ids] [/relations] [/drivers]*
 
 Enumerate all devices on the system.
 
@@ -112,7 +112,7 @@ Enumerate all devices on the system.
 /drivers - display matching and installed drivers.
 ```
 
-**/enum-interfaces** <em> [/enabled | /disabled] [/class <name | GUID>] </em>
+**/enum-interfaces** *[/enabled | /disabled] [/class <GUID>]*
 
 Enumerate all device interfaces on the system.
 
