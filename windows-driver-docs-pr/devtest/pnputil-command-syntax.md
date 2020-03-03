@@ -65,7 +65,7 @@ Disable devices on the system.
 /reboot - reboot system if needed to complete the operation.
 ```
 
-**/enable-device** <em>\<instance ID\></em> [/reboot]
+**/enable-device** *\<instance ID\> [/reboot]*
 
 Enable devices on the system.  
 
