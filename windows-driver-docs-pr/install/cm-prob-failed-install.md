@@ -33,20 +33,25 @@ The [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property
 
 ### 0xC0000490 - STATUS_PNP_NO_COMPAT_DRIVERS
 
-PnP could not find a driver for the device.
+PnP could not find a compatible driver for the device. This failure is often referred to as a DNF (driver not found) problem.
 
-Examine the hardware and compatible IDs of the device in question and compare to the ID(s) that the INF specifies.
-Look for the [**Models sections**](inf-models-section.md) in the INF. Make sure that the **TargetOSVersion** part of the Models section name applies to the architecture and OS version you are running on.
+Examine the hardware IDs and compatible IDs of the device in question and compare to the hardware ID(s) that the INF specifies under the [**Models sections**](inf-models-section.md).  Also make sure that the **TargetOSVersion** part of the Models section name applies to the architecture and OS version you are running on.
 
 ### 0xC0000491 - STATUS_PNP_DRIVER_PACKAGE_NOT_FOUND
 
-The INF that matched on the device uses Include/Needs and includes an INF that is not present.
+This code indicates a missing driver package dependency.
+
+Specifically, the INF that matched on the device uses **Include** entries in the [INF DDInstall Section](inf-ddinstall-section.md) to specify a Microsoft-supplied INF that is not present in this version of Windows.
 
 ### 0xC0000492 - STATUS_PNP_DRIVER_CONFIGURATION_NOT_FOUND
 
-Check for correct use of **Include** and **Needs** entries specified in the [INF DDInstall Section](inf-ddinstall-section.md).
+This code also indicates a missing driver package dependency.
+
+In this case, the INF that matched on the device uses **Needs** entries in the [INF DDInstall Section](inf-ddinstall-section.md) to specify a missing Microsoft-supplied INF.
 
 ### 0xC0000494 - STATUS_PNP_FUNCTION_DRIVER_REQUIRED
+
+This failure occurs when the INF does not specify an associated function driver service.
 
 Verify that either:
 
