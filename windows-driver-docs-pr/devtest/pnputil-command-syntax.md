@@ -30,7 +30,7 @@ pnputil [/add-driver <...> | /delete-driver <...> |
 
 ## Commands
 
- **/add-driver** *<filename.inf | *.inf> [/subdirs] [/install] [/reboot]*
+ **/add-driver** * <filename.inf | *.inf> [/subdirs] [/install] [/reboot]*
 
 Add driver package(s) into the driver store.  
 ```
@@ -57,7 +57,7 @@ Export driver package(s) from the driver store into a target directory.
 
 Enumerate all 3rd party driver packages in the driver store.
 
-**/disable-device** *<instance ID> [/reboot]*
+**/disable-device** * <instance ID> [/reboot]*
 
 Disable devices on the system. 
 
