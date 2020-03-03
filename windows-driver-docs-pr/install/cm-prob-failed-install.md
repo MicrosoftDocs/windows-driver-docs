@@ -41,13 +41,13 @@ Examine the hardware IDs and compatible IDs of the device in question and compar
 
 This code indicates a missing driver package dependency.
 
-Specifically, the INF that matched on the device uses **Include** entries in the [INF DDInstall Section](inf-ddinstall-section.md) to specify a Microsoft-supplied INF that is not present in this version of Windows.
+Specifically, the INF that matched on the device uses **Include** entries in the [INF DDInstall section](inf-ddinstall-section.md) to specify a Microsoft-supplied INF that is not present in this version of Windows.
 
 ### 0xC0000492 - STATUS_PNP_DRIVER_CONFIGURATION_NOT_FOUND
 
 This code also indicates a missing driver package dependency.
 
-In this case, the INF that matched on the device uses **Needs** entries in the [INF DDInstall Section](inf-ddinstall-section.md) to specify a missing Microsoft-supplied INF.
+In this case, the INF that matched on the device uses **Needs** entries in the [INF DDInstall section](inf-ddinstall-section.md) to specify a section that does not exist in any Microsoft-supplied INF referenced by an **Include** directive.
 
 ### 0xC0000494 - STATUS_PNP_FUNCTION_DRIVER_REQUIRED
 
