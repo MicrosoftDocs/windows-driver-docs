@@ -188,6 +188,18 @@ For related info, see [Retrieving the Status and Problem Code for a Device Insta
 <td align="left"><p>Code 54</p></td>
 <td align="left"><p><a href="cm-prob-device-reset.md" data-raw-source="[CM_PROB_DEVICE_RESET](cm-prob-device-reset.md)">CM_PROB_DEVICE_RESET</a></p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>Code 55</p></td>
+<td align="left"><p><a href="cm-prob-console-locked.md" data-raw-source="[CM_PROB_CONSOLE_LOCKED](cm-prob-console-locked.md)">CM_PROB_CONSOLE_LOCKED</a></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Code 56</p></td>
+<td align="left"><p><a href="cm-prob-need-class-config.md" data-raw-source="[CM_PROB_NEED_CLASS_CONFIG](cm-prob-need-class-config.md)">CM_PROB_NEED_CLASS_CONFIG</a></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Code 57</p></td>
+<td align="left"><p><a href="cm-prob-guest-assignment-failed.md" data-raw-source="[CM_PROB_GUEST_ASSIGNMENT_FAILED](cm-prob-guest-assignment-failed.md)">CM_PROB_GUEST_ASSIGNMENT_FAILED</a></p></td>
+</tr>
 </tbody>
 </table>
 
