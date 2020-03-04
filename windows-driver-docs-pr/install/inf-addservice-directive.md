@@ -293,7 +293,7 @@ Specifies the action to take when the specified trigger event occurs.
 
 For more information, see [SERVICE_TRIGGER structure](https://docs.microsoft.com/en-us/windows/desktop/api/winsvc/ns-winsvc-_service_trigger)
 
-**TriggerSubType**=*trigger-subtype*
+**SubType**=*trigger-subtype*
 
 Specifies a GUID that identifies the trigger event subtype. The value depends on the value of the **TriggerType**. 
 
