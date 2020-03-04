@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_HARDWARE_DISABLED
+# Code 29 - CM_PROB_HARDWARE_DISABLED
 
-This function is reserved for system use.
-
-The device is disabled.
+This Device Manager error message indicates that the device is disabled.
 
 ## Error Code
 

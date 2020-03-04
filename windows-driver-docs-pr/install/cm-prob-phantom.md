@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_PHANTOM
+# Code 45 - CM_PROB_PHANTOM
 
-This function is reserved for system use.
-
-The device is not present.
+This Device Manager error message indicates that the device is not present.
 
 ## Error Code
 

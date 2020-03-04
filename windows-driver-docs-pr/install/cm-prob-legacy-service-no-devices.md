@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_LEGACY_SERVICE_NO_DEVICES
+# Code 41 - CM_PROB_LEGACY_SERVICE_NO_DEVICES
 
-This function is reserved for system use.
-
-A driver was loaded but Windows cannot find the device.
+This Device Manager error message indicates that a driver was loaded but Windows cannot find the device.
 
 ## Error Code
 
