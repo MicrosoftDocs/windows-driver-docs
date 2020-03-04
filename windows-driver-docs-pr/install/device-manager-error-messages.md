@@ -7,7 +7,7 @@ keywords:
 - errors WDK Device Manager
 - yellow exclamation point WDK Device Manager
 - messages WDK Device Manager
-ms.date: 04/20/2017
+ms.date: 03/04/2020
 ms.localizationpriority: medium
 ---
 
