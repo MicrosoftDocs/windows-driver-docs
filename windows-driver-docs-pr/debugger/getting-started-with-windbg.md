@@ -2,7 +2,7 @@
 title: Getting Started with WinDbg (User-Mode)
 description: WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a user-mode debugger.
 ms.assetid: 8C2D2D0C-7E54-4711-A6FD-970E040F1C50
-ms.date: 10/09/2017
+ms.date: 02/20/2020
 ms.localizationpriority: medium
 ---
 
@@ -14,8 +14,8 @@ For information about how to get Debugging Tools for Windows, see [Debugging Too
 
 After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
--   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x64
--   C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\x86
+-   C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
+-   C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86
 
 ## <span id="Launch_Notepad_and_attach_WinDbg"></span><span id="launch_notepad_and_attach_windbg"></span><span id="LAUNCH_NOTEPAD_AND_ATTACH_WINDBG"></span>Launch Notepad and attach WinDbg
 
@@ -335,21 +335,12 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md)
 
-[Debugger Operation](https://go.microsoft.com/fwlink/p?linkid=399247)
+[Debugger Operation](debugger-operation-win8.md)
 
-[Debugging Techniques](https://go.microsoft.com/fwlink/p?linkid=399248)
+[Debugging Techniques](debugging-techniques.md)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/)
 
- 
-
- 
-
-
-
-
-
-
+[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)

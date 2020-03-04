@@ -36,8 +36,8 @@
       items: 
       - name: "Overview of the Driver Selection Process"
         href: overview-of-the-driver-selection-process.md
-      - name: "Where Windows Searches for Drivers"
-        href: where-setup-searches-for-drivers.md
+      - name: "How Windows selects a driver for a device"
+        href: how-windows-selects-a-driver-for-a-device.md
     - name: "How Windows Ranks Drivers"
       items: 
         - name: "How Windows Ranks Drivers"
@@ -1362,6 +1362,8 @@
     href: devpkey-device-powerrelations.md
   - name: "DEVPKEY_Device_ProblemCode"
     href: devpkey-device-problemcode.md
+  - name: "DEVPKEY_Device_ProblemStatus"
+    href: devpkey-device-problemstatus.md
   - name: "DEVPKEY_Device_RemovalPolicy"
     href: devpkey-device-removalpolicy.md
   - name: "DEVPKEY_Device_RemovalPolicyDefault"
