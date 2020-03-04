@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 28 - CM_PROB_FAILED_INSTALL
 
-This function is reserved for system use.
-
-The device's drivers are not installed.
+This Device Manager error message indicates that the device's drivers are not installed.
 
 ## Error Code
 

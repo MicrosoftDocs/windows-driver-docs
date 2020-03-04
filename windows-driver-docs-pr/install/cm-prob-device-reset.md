@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Code 54 - CM_PROB_DEVICE_RESET
 
-This function is reserved for system use.
+This Device Manager error message indicates that the device has failed and is undergoing a reset.
 
 ## Error
 

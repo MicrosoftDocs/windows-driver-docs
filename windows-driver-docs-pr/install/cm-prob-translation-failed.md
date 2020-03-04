@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 33 - CM_PROB_TRANSLATION_FAILED
 
-This function is reserved for system use.
-
-Resource translation failed for the device.
+This Device Manager error message indicates that resource translation failed for the device.
 
 ## Error Code
 

@@ -10,8 +10,7 @@ ms.localizationpriority: medium
 
 # Code 37 - CM_PROB_FAILED_DRIVER_ENTRY
 
-This function is reserved for system use.
-The driver returned failure from its **DriverEntry** routine.
+This Device Manager error message indicates that the driver returned failure from its **DriverEntry** routine.
 
 ## Error Code
 

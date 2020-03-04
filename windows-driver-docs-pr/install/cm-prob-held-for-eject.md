@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 47 - CM_PROB_HELD_FOR_EJECT
 
-This function is reserved for system use.
-
-The device has been prepared for ejection.
+This Device Manager error message indicates that the device has been prepared for ejection.
 
 ## Error Code
 

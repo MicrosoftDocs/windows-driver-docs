@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 19 - CM_PROB_REGISTRY
 
-This function is reserved for system use.
-
-A registry problem was detected.
+This Device Manager error message indicates that a registry problem was detected.
 
 ## Error Code
 

@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 22 - CM_PROB_DISABLED
 
-This function is reserved for system use.
-
-The device is disabled.
+This Device Manager error message indicates that the device is disabled.
 
 ## Error Code
 

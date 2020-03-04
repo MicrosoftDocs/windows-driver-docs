@@ -8,9 +8,7 @@ ms.localizationpriority: medium
 
 # Code 51 - CM_PROB_WAITING_ON_DEPENDENCY
 
-This function is reserved for system use.
-
-The device did not start because it has a dependency on another device that has not started.
+This Device Manager error message indicates that the device did not start because it has a dependency on another device that has not started.
 
 ## Error Code
 

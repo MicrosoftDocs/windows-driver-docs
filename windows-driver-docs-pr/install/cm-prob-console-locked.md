@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 55 - CM_PROB_CONSOLE_LOCKED
 
-This function is reserved for system use.
-
-The device is blocked from enumeration due to a Group Policy / MDM (Intune) policy to protect from DMA attacks.
+This Device Manager error message indicates that the device is blocked from enumeration due to a Group Policy / MDM (Intune) policy to protect from DMA attacks.
 
 
 

@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 42 - CM_PROB_DUPLICATE_DEVICE
 
-This function is reserved for system use.
-
-A duplicate device was detected.
+This Device Manager error message indicates that a duplicate device was detected.
 
 ## Error Code
 

@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 57 - CM_PROB_GUEST_ASSIGNMENT_FAILED
 
-This function is reserved for system use.
-
-The device did not start because of a failure during device assignment.
+This Device Manager error message indicates that the device did not start because of a failure during device assignment.
 
 ## Error Code
 

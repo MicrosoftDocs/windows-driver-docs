@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 18 - CM_PROB_REINSTALL
 
-This function is reserved for system use.
-
-Drivers must be reinstalled.
+This Device Manager error message indicates that drivers must be reinstalled.
 
 ## Error Code
 

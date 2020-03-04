@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 38 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
 
-This function is reserved for system use.
-
-The driver could not be loaded because a previous instance is still loaded.
+This Device Manager error message indicates that the driver could not be loaded because a previous instance is still loaded.
 
 ## Error Code
 

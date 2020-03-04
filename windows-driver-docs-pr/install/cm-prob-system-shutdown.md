@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 46 - CM_PROB_SYSTEM_SHUTDOWN
 
-This function is reserved for system use.
-
-The device is not available because the system is shutting down.
+This Device Manager error message indicates that the device is not available because the system is shutting down.
 
 ## Error Code
 

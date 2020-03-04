@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 44 - CM_PROB_HALTED
 
-This function is reserved for system use.
-
-The device has been stopped.
+This Device Manager error message indicates that the device has been stopped.
 
 ## Error Code
 

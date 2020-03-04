@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 16 - CM_PROB_PARTIAL_LOG_CONF
 
-This function is reserved for system use.
-
-The device is only partially configured.
+This Device Manager error message indicates that the device is only partially configured.
 
 ## Error Code
 

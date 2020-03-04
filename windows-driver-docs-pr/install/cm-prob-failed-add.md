@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 31 - CM_PROB_FAILED_ADD
 
-This function is reserved for system use.
-
-A driver's attempt to add a device failed.
+This Device Manager error message indicates that a driver's attempt to add a device failed.
 
 ## Error Code
 

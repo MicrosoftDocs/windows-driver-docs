@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 50 - CM_PROB_SETPROPERTIES_FAILED
 
-This function is reserved for system use.
-
-Device properties cannot be set.
+This Device Manager error message indicates that device properties cannot be set.
 
 ## Error Code
 

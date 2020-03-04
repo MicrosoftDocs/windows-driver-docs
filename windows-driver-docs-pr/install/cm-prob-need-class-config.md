@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Code 56 - CM_PROB_NEED_CLASS_CONFIG
 
-This function is reserved for system use.
+This Device Manager error message indicates that Windows is still setting up the class configuration for this device.
 
 
 ## Error Code

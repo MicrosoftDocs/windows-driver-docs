@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 1 - CM_PROB_NOT_CONFIGURED
 
-This function is reserved for system use.
-
-There is a device on the system for which there is no **ConfigFlags** registry entry. This means no driver is installed. Typically this means an INF file could not be found.
+This Device Manager error message indicates that there is a device on the system for which there is no **ConfigFlags** registry entry. This means no driver is installed. Typically this means an INF file could not be found.
 
 ## Error Code
 

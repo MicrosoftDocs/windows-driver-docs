@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 14 - CM_PROB_NEED_RESTART
 
-This function is reserved for system use.
-
-The system must be restarted.
+This Device Manager error message indicates that the system must be restarted.
 
 ## Error Code
 

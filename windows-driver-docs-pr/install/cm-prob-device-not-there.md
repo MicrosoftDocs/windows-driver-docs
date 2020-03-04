@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 24 - CM_PROB_DEVICE_NOT_THERE
 
-This function is reserved for system use.
-
-The device does not seem to be present.
+This Device Manager error message indicates that the device does not seem to be present.
 
 ## Error Code
 

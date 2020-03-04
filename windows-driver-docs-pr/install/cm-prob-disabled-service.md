@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 32 - CM_PROB_DISABLED_SERVICE
 
-This function is reserved for system use.
-
-The driver has been disabled.
+This Device Manager error message indicates that the driver has been disabled.
 
 ## Error Code
 

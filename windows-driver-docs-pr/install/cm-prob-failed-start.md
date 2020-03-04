@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 10 - CM_PROB_FAILED_START
 
-This function is reserved for system use.
-
-The device failed to start.
+This Device Manager error message indicates that the device failed to start.
 
 ## Error Code
 

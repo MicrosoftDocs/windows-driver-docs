@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 21 - CM_PROB_WILL_BE_REMOVED
 
-This function is reserved for system use.
-
-The system will remove the device.
+This Device Manager error message indicates that the system will remove the device.
 
 ## Error Code
 

@@ -10,9 +10,7 @@ ms.localizationpriority: medium
 
 # Code 43 - CM_PROB_FAILED_POST_START
 
-This function is reserved for system use.
-
-A driver has reported a device failure.
+This Device Manager error message indicates that a driver has reported a device failure.
 
 ## Error Code
 
