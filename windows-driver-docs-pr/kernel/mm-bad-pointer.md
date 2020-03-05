@@ -333,7 +333,7 @@ Pointer to a buffer whose corresponding base virtual address is to be mapped.
 
 _Priority [in]_
 
-**Mm_PAGE_PRIORITY**
+**MM_PAGE_PRIORITY**
 
 Specifies an **MM_PAGE_PRIORITY** value that indicates the importance of success under low available PTE conditions. Specify a priority value of **LowPagePriority**, **NormalPagePriority**, or **HighPagePriority**. Starting with Windows 8, the specified priority value can be bitwise-ORed with the **MdlMappingNoWrite** or **MdlMappingNoExecute** flags.
 
@@ -547,6 +547,8 @@ Defined in: Ntddk.h
 Returns a pointer to the process of the current thread.
 
 **Return value**
+
+**PEPROCESS**
 
 A pointer to an opaque process object.
 
