@@ -54,7 +54,7 @@ Length, in bytes, of the buffer that **EaList** points to.
 Index of the entry at which to begin scanning the extended-attribute list. This parameter is ignored if the SL_INDEX_SPECIFIED flag is not set in the FLT_IO_PARAMETER_BLOCK structure for the operation or if **EaList** points to a nonempty list.
 
 **EaBuffer**  
-Pointer to a caller-supplied, [**FILE_FULL_EA_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)-structured output buffer where the extended attribute values are to be returned. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+Pointer to a caller-supplied, [**FILE_FULL_EA_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)-structured output buffer where the extended attribute values are to be returned. This member is optional and can be **NULL** if a MDL is provided in **MdlAddress**. See **Remarks**.
 
 **MdlAddress**  
 Address of a memory descriptor list (MDL) describing the buffer that **EaBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **EaBuffer**. See **Remarks**.
