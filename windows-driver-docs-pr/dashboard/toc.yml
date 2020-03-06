@@ -39,7 +39,7 @@
         - name: "Percent of machines that WU reported a successful download"
           href: pct-machines-wu-success-download.md
         - name: "Percent of machines that WU reported a successful install"
-          href: pct-macines-wu-success-install.md
+          href: pct-machines-wu-success-install.md
         - name: "Percent of machines where the driver install process completes successfully"
           href: pct-machines-where-driver-install-completes-successfully.md
         - name: "Percent of machines that installed a driver update and reported a PnP error code within two days of install"
