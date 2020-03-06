@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This drop includes a Wi-Fi WDF class extension (WifiCx) that works with NetAdapterCx. This enables Wi-Fi network drivers to be fully fledged WDF client drivers. In addition, they are also NetAdapterCx client drivers just like other NIC drivers and also client drivers of Wifi class extension that provides Wi-Fi media-specific functionality. The following block diagram illustrates the WifiCx architecture:
+This section covers the Wi-Fi WDF class extension (WifiCx) that works with NetAdapterCx. This enables Wi-Fi network drivers to be fully fledged WDF client drivers. In addition, they are also NetAdapterCx client drivers just like other NIC drivers and also client drivers of Wifi class extension that provides Wi-Fi media-specific functionality. The following block diagram illustrates the WifiCx architecture:
 
 ![WiFiCx architecture](images/wificx.png)
 
@@ -33,8 +33,7 @@ WIFI_DEVICE_CONFIG_INIT(&wifiDeviceConfig,
                         WDI_VERSION_LATEST,
                         EvtWifiDeviceSendCommand,
                         EvtWifiDeviceCreateAdapter,
-                        EvtWifiDeviceCreateWifiDirectDevice,       //2001 (Drop 2) New Added Callback
-                        EvtWifiDeviceCreateWifiDirectRoleAdapter); //2001 (Drop 2) New Added Callback
+                        EvtWifiDeviceCreateWifiDirectDevice); 
 
 status = WifiDeviceInitialize(wdfDevice, &wifiDeviceConfig);
 ```
@@ -66,7 +65,7 @@ If this was a set command and the original request did not conatin a large enoug
 ![WiFiCx client driver command](images/wificx_command.png)
 ## Wi-Fi Direct (P2P) Support
 
-Since 2001 (Drop 2) the Wi-Fi Direct Miracast scenario will be supported. To enable Miracast, the client driver must implement the following sections.
+Wi-Fi Direct and Miracast scenarios are supported. To enable Miracast, the client driver must implement the following sections.
 ### Wi-Fi Direct Device Capabilities
 
 WIFI\_WIFIDIRECT\_CAPABILITIES is an new introduced structure merged from the WDI\_P2P\_CAPABILITIES and WDI\_AP\_CAPABILITIES. The client driver need to call WifiDeviceSetWiFiDirectCapabilities API for updating WifiCx in the set device capabilities phase.
@@ -120,22 +119,15 @@ EvtWifiDeviceCreateWifiDirectDevice(
         return ntStatus;
     }
 
-    ntStatus = WifiDirectDeviceStart(wfdDevice); //!! This API will be removed in the DROP 3 !!
-    if (!NT_SUCCESS(ntStatus))
-    {
-        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: WifiDirectDeviceStart failed with %!STATUS!", ntStatus);
-        return ntStatus;
-    }
-
     return ntStatus;
 }
 ```
-### Wi-Fi Direct Event Callback For "WfdRole"
+### Event Callback For Create Adapter
 
-WfdRole is a data path support adapter, which is similar to the default (station) adapter creation flow. (Note this will be merged with the station adapter creation in a future drop).
+The station adapter and WfdRole adapter are created using the same event callback. The adapter type can be determined using WifiAdapterGetType.
 ```C++
 NTSTATUS
-EvtWifiDeviceCreateWifiDirectRoleAdapter(
+EvtWifiDeviceCreateAdapter(
     WDFDEVICE Device,
     NETADAPTER_INIT* AdapterInit
 )
@@ -160,19 +152,19 @@ EvtWifiDeviceCreateWifiDirectRoleAdapter(
         return ntStatus;
     }
 
-    ntStatus = WifiDirectRoleAdapterInitialize(netAdapter);
+    ntStatus = WifiAdapterInitialize(netAdapter);
 
     if (!NT_SUCCESS(ntStatus))
     {
-        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: WifiDirectRoleAdapterInitialize failed with %!STATUS!\n", ntStatus);
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_DEVICE, "%!FUNC!: WifiAdapterInitialize failed with %!STATUS!\n", ntStatus);
         return ntStatus;
     }
 
     ntStatus = ClientDriverInitDataAdapterContext(
         Device,
         netAdapter,
-        EXT_P2P_ROLE_PORT,
-        WifiDirectRoleAdapterGetPortId(netAdapter));
+        WifiAdapterGetType(netAdapter) == WIFI_ADAPTER_EXTENSIBLE_STATION ? EXTSTA_PORT : EXT_P2P_ROLE_PORT,
+        WifiAdapterGetPortId(netAdapter));
 
     if (!NT_SUCCESS(ntStatus))
     {
@@ -416,7 +408,7 @@ A driver that leverages the system allocated data buffer pool, typically impleme
 
 Similar to other rings, every element in the data buffer ring from **BeginIndex** to **EndIndex - 1** is one available data buffer for the client driver to uses. The client driver owns all of them and it decides how many of data buffers it wants to use. The only constraint is that the client driver must use the data buffers in sequential order. **NextIndex** is optional for the driver to use as a way to remember which data buffers have been already used by the client driver.
 
-In Dec drop, we provide a convenience helper API **NetDataBufferFetch** to perform the "fetch" operation
+We provide a convenience helper API **NetDataBufferFetch** to perform the "fetch" operation
 
 ```C++
 
@@ -485,7 +477,7 @@ dataBuffer->Handle = dataBufferHandle;
 The formed packets and fragments should be returned to the OS as described in [Receiving network data with net rings](receiving-network-data-with-net-rings.md). 
 In addition, the data buffer described by the fragment descriptor should be returned to the OS by the client driver too, by incrementing **EndIndex** of the data buffer ring. Note, the data buffer must only be returned in-order.
 
-In Dec drop, we provide a convenience helper API **NetDataBufferReturn** to perform the "return" operation.
+We provide a convenience helper API **NetDataBufferReturn** to perform the "return" operation.
 
 If a data buffer is used to store a single received network packet, the data buffer is returned whenever that packet is returned to the OS.
 
@@ -495,31 +487,10 @@ If a data buffer is used to store multiple received network packets, **keep the 
 
 ## Appendix
 
-2001 (Drop 2):
-
-**What’s new**:
--	Wi-Fi Direct related commands implemented. Tested with Miracast and P2PApplication.
--	Packet extension implemented. Encryption exclusion to support secure networks.
-
 **Limitations**:
--	Direct OID commands not yet forwarded by NetAdapter to WifiCx (will be available in next drop).
 -	API for IHV to query OS WDI version not implemented yet (please use WDI_VERSION_LATEST for now).
 -	Wi-Fi requests are targeted towards device (in the future, this may be sent on the adapter object).
 -	Reset recovery (PLDR) and aborting of commands not yet implemented.
 -	Power related commands not yet implemented.
 -	No support for FIPS.
 
-1911 (Drop 1):
-
-**What’s new**:
--	WifiCx Client APIs to initialize device, set capabilities, create default adapter and process WDI commands implemented.
--	Basic STA functionality including scan, connect, radio toggle etc supported.
-
-**Limitations**:
--	Data path support (for STA) is limited and implemented using existing NetAdapterCx APIs. Packet extension for encryption exclusion policy etc is not implemented yet, therefore connection to only open networks has been tested.
--	Direct OID commands not yet forwarded by NetAdapter to WifiCx (will be available in next drop).
--	API for IHV to query OS WDI version not implemented yet (please use WDI_VERSION_LATEST for now).
--	Wi-Fi requests are targeted towards device (in the future, this may be sent on the adapter object).
--	Reset recovery (PLDR) and aborting of commands not yet implemented.
--	Wi-Fi Direct/power related commands not yet implemented.
--	No support for FIPS.
