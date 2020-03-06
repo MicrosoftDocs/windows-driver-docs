@@ -18,7 +18,7 @@ One exception to restricting a filter driver from attaching any of the following
 <span id="GUID_ECP_OPLOCK_KEY"></span><span id="guid_ecp_oplock_key"></span>GUID\_ECP\_OPLOCK\_KEY  
 A GUID that identifies the [**OPLOCK\_KEY\_ECP\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ifs/oplock-key-ecp-context) structure and is used to attach an oplock key to the open file request. The oplock key lets an application open multiple handles to the same stream without breaking the application's own oplock.
 
-For more information about oplocks and oplock keys, see [Oplock Semantics Overview](overview.md).
+For more information about oplocks and oplock keys, see [Oplock Semantics Overview](oplock-overview.md).
 
 <span id="GUID_ECP_NETWORK_OPEN_CONTEXT"></span><span id="guid_ecp_network_open_context"></span>GUID\_ECP\_NETWORK\_OPEN\_CONTEXT  
 A GUID that identifies the [**NETWORK\_OPEN\_ECP\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff550896) structure and is used to attach extra information for network redirectors. This GUID also identifies the [**NETWORK\_OPEN\_ECP\_CONTEXT\_V0**](https://msdn.microsoft.com/library/windows/hardware/ff550899) structure for drivers that run on Windows 7 and later versions of Windows and that must interpret network ECP contexts on files that reside on Windows Vista.
