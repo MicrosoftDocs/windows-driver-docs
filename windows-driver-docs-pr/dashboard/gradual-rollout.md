@@ -1,7 +1,6 @@
 ---
 title: Gradual rollout
 description: Gradual rollout ensures the best driver experience for each system by monitoring telemetry during deployment, speeding and slowing release as indicated.
-author: Wendy Breiding
 ms.author: webreidi
 ms.topic: article
 ms.date: 03/01/2020
