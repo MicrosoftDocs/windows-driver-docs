@@ -10,7 +10,7 @@ api_name:
 - BCDEdit /set
 api_type:
 - NA
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # BCDEdit /set
