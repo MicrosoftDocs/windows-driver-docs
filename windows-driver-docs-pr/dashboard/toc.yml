@@ -218,7 +218,7 @@
     href: limit-driver-distribution.md
   - name: "Publishing for test distribution"
     href: publishing-for-test-distribution.md
-  - name: Gradual rollout for driver distribution
+  - name: Gradual rollout
     href: "gradual-rollout.md"
 - name: "Hardware dashboard API"
   items: 
