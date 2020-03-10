@@ -114,7 +114,7 @@ Scan the system for any device hardware changes.
 ```
 **/enum-devices** *[/connected] [/disconnected] [/instanceid \<instance ID\>] [/class <name | GUID>] [/problem [\<problem code\>]] [/ids] [/relations] [/drivers]*
 
-**Only available on Windows 10 Version 2004 and above**
+**Only available on Windows 10 Version 1903 and above**
 
 Enumerate all devices on the system.
 
@@ -130,7 +130,7 @@ Enumerate all devices on the system.
 
 **/enum-interfaces** *[/enabled | /disabled] [/class \<GUID\>]*
 
-**Only available on Windows 10 Version 2004 and above**
+**Only available on Windows 10 Version 1903 and above**
 
 Enumerate all device interfaces on the system.
 
