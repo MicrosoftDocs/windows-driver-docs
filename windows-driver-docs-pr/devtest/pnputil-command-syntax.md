@@ -24,11 +24,11 @@ To run PnPUtil, open a Command Prompt window (**Run as Administrator**) and type
  
 
 ```
-pnputil [/add-driver <...> | /delete-driver <...> |
-         /export-driver <...> | /enum-drivers |
+pnputil [/add-driver <...> | /delete-driver <...>     |
+         /export-driver <...> | /enum-drivers         |
 	 /disable-device <...> | /enable-device <...> |
 	 /restart-device <...> | /remove-device <...> | 
-	 /scan-devices <...> | /enum-devices <...> |
+	 /scan-devices <...> | /enum-devices <...>    |
 	 /enum-interfaces <...> | /?]
 ```
 
@@ -63,6 +63,8 @@ Enumerate all 3rd party driver packages in the driver store.
 
 **/disable-device** <em>\<instance ID\> [/reboot]</em>
 
+**Only available on Windows 10 Version 2004 and above**
+
 Disable devices on the system. 
 
 ```
@@ -70,6 +72,8 @@ Disable devices on the system.
 ```
 
 **/enable-device** *\<instance ID\> [/reboot]*
+
+**Only available on Windows 10 Version 2004 and above**
 
 Enable devices on the system.  
 
@@ -79,6 +83,8 @@ Enable devices on the system.
 
 **/restart-device** *\<instance ID\> [/reboot]*
 
+**Only available on Windows 10 Version 2004 and above**
+
 Restart devices devices on the system. 
 
 ```
@@ -86,6 +92,8 @@ Restart devices devices on the system.
 ```
 
 **/remove-device** *\<instance ID\> [/subtree] [/reboot]*
+
+**Only available on Windows 10 Version 2004 and above**
 
 Attempt to remove a device from the system. 
 
@@ -96,6 +104,8 @@ Attempt to remove a device from the system.
 
 **/scan-devices** *[/instanceid \<instance ID\>] [/async]*
 
+**Only available on Windows 10 Version 2004 and above**
+
 Scan the system for any device hardware changes. 
 
 ```
@@ -103,6 +113,8 @@ Scan the system for any device hardware changes.
 /async - scan for changes asynchronously.
 ```
 **/enum-devices** *[/connected] [/disconnected] [/instanceid \<instance ID\>] [/class <name | GUID>] [/problem [\<problem code\>]] [/ids] [/relations] [/drivers]*
+
+**Only available on Windows 10 Version 2004 and above**
 
 Enumerate all devices on the system.
 
@@ -117,6 +129,8 @@ Enumerate all devices on the system.
 ```
 
 **/enum-interfaces** *[/enabled | /disabled] [/class \<GUID\>]*
+
+**Only available on Windows 10 Version 2004 and above**
 
 Enumerate all device interfaces on the system.
 
