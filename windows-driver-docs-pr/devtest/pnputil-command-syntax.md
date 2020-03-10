@@ -24,8 +24,8 @@ To run PnPUtil, open a Command Prompt window (**Run as Administrator**) and type
  
 
 ```
-pnputil [/add-driver <...> | /delete-driver <...>     |
-         /export-driver <...> | /enum-drivers         |
+pnputil [/add-driver <...> | /delete-driver <...> |
+         /export-driver <...> | /enum-drivers     |
 	 /disable-device <...> | /enable-device <...> |
 	 /restart-device <...> | /remove-device <...> | 
 	 /scan-devices <...> | /enum-devices <...>    |
