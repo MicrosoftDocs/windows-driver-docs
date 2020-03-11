@@ -1,15 +1,15 @@
 ---
-title: Building a Light Testing Tool (MALT)
+title: Building a Light and Color Testing Tool (MALT)
 author: windows-driver-content
-description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light testing solution.
+description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light and color testing solution.
 ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a8
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
 
-# Building a Light Testing Tool (MALT)
+# Building a Light and Color Testing Tool (MALT)
 
-This topic provides instructions and requirements on how to use (and build if neccessary) a tool for testing and calibrating screen brightness. The MALT (**M**icrosoft **A**mbient **L**ight **T**ool) is provided for reference. 
+This topic provides instructions and requirements on how to use (and build if neccessary) a tool for testing and calibrating screen brightness and color. The MALT (**M**icrosoft **A**mbient **L**ight **T**ool) is provided for reference. 
 
 Please use these instructions for leveraging ideas and concepts into your testing solution. The microcontroller API is published for you to further leverage tests published in the HLK and elsewhere. Your feedback will help improve this guide.
 
@@ -28,7 +28,7 @@ You will need the following components.
 * [Power supply for light source](https://www.superbrightleds.com/moreinfo/led-panel-light/square-12v-led-panel-light-fixture-1ft-x-1ft-35w/2184/#tab/PowerSupplies/subtab/powersupply)
 * [Digital to analog converter (DAC)](https://www.microchip.com/wwwproducts/en/MCP4821)
 * 2 [Ambient light sensors (ex TI OPT3001 or better)](https://www.ti.com/product/OPT3001)
-* 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/TCS34727FN/TCS34727FNCT-ND/3737677)
+* 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/TCS34007FNM/TCS34007FNMCT-ND/6131552)
 * [Light enclosure](#step-1---assemble-light-enclosure)
 
 ## Instructions
