@@ -191,7 +191,7 @@
       href: best-practices.md
   - name: "ECPs in IRP_MJ_CREATE operations"
     items:
-    - name: "Using ECPs with an IRP_MJ_CREATE operation"
+    - name: Introduction to Extra Create Parameters
       href: introduction-to-extra-create-parameters.md
     - name: "Attaching ECPs to KM driver-originated IRP_MJ_CREATE operations"
       href: attaching-ecps-to-irp-mj-create-operations-that-a-kernel-mode-driver-o.md
