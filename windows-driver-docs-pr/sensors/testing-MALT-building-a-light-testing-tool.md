@@ -28,7 +28,7 @@ You will need the following components.
 * [Power supply for light source](https://www.superbrightleds.com/moreinfo/led-panel-light/square-12v-led-panel-light-fixture-1ft-x-1ft-35w/2184/#tab/PowerSupplies/subtab/powersupply)
 * [Digital to analog converter (DAC)](https://www.microchip.com/wwwproducts/en/MCP4821)
 * 2 [Ambient light sensors (ex TI OPT3001 or better)](https://www.ti.com/product/OPT3001)
-* 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/TCS34007FNM/TCS34007FNMCT-ND/6131552)
+* 2 [Color sensors](https://www.digikey.com/product-detail/en/ams/AS73211-AQFT/AS73211-AQFT-ND/7802175)
 * [Light enclosure](#step-1---assemble-light-enclosure)
 
 ## Instructions
