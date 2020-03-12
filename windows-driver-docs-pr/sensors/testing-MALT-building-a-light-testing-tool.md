@@ -68,9 +68,6 @@ The MALT uses two light sensors (one to measure the screen brightness and one to
 
 Connect the LED light panel to the power supply and connect it to the DAC. The microcontroller must be able to control the voltage sent to the light panel in order to control its intensity, which is achieved using the DAC. The schematic below shows how connections were made for the tool we use. More details can be found in the Sensor PCB KiCad project.
 
-![sensor schematic](images/SensorPCB.png)
-
-
 ### Step 3 - Connect the microcontroller
 
 Connect the sensors to the microcontroller and the microcontroller to the PC. For our purposes, we have the PC controlling the tests be the same as the system under test (SUT).
@@ -80,8 +77,6 @@ The following diagram shows how various parts of MALT are connected.
 ![block diagram](images/BlockDiagram.png)
 
 Through the MALT PCB, we are able to connect the Arduino board to the sensor PCB and the light source. More details can be found in the MALT PCB KiCad project.
-
-![MALT schematic](images/MaltPCB.png)
 
 ### Step 4- Start testing
 
