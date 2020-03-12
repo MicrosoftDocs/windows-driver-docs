@@ -117,11 +117,11 @@ For any unrecognized command:
 
 **Serial output:**
 
-| Line 0                |
-|-----------------------|
-| MALTERROR status code |
+| Line 0                                                                        |
+|-------------------------------------------------------------------------------|
+| MALTERROR status code (where MALTERROR status code = `E_UNRECOGNIZED_COMMAND`)|
 
-where MALTERROR status code = `E_UNRECOGNIZED_COMMAND`
+
 
 ## MALT error code
 
