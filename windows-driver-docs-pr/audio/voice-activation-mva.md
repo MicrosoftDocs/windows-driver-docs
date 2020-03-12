@@ -2,7 +2,7 @@
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
 ms.assetid: 48a7e96b-58e8-4a49-b673-14036d4108d5
-ms.date: 09/26/2019
+ms.date: 03/12/2020
 ms.localizationpriority: medium
 ---
 
@@ -24,8 +24,8 @@ Implementing voice activation is a significant project and is a task completed b
 
 Voice activation allows users to quickly engage the voice assistant experience outside of his or her active context (i.e., what is currently on screen) by using his or her voice. Users often want to be able to instantly access an experience without having to physically interact with or touch a device. For an Xbox user this may be from not wanting to find and connect a controller. For PC users, they might want rapid access to an experience without having to perform multiple mouse, touch and/or keyboard actions, as in the case of a computer in the kitchen.
 
-Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. Key phrases may include key words such as “Hey Contoso.” *Keyword detection* describes the detection of the keyword by either hardware or software.
-Key phrases may be uttered by themselves (“Hey Contoso”) as a staged command, or followed by a speech action composing a chained command (“Hey Contoso, where is my next meeting?”)
+Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. Key phrases may include key words such as "Hey Contoso." *Keyword detection* describes the detection of the keyword by either hardware or software.
+Key phrases may be uttered by themselves ("Hey Contoso") as a staged command, or followed by a speech action composing a chained command ("Hey Contoso, where is my next meeting?")
 
 Microsoft provides an OS default keyword spotter (software keyword spotter) to provide voice assistant experience in cases where hardware keyword detection is unavailable. While this is currently available for Cortana, additional Microsoft configuration may be needed to onboard other voice assistants to do two-stage keyword detection. For more information contact `AskMVA@Microsoft.com`.  
 
@@ -37,13 +37,13 @@ This glossary summarizes terms related to voice activation.
 
 |                      |                                                                                                                                                           |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Staged Command | Example: Hey Contoso <pause, wait for assistant UI> What’s the weather? This is sometimes referred to as “two-shot command” or “keyword-only” |
-| Chained Command | Example: Hey Contoso what’s the weather? This is sometimes referred to as a “one-shot command” |
+| Staged Command | Example: Hey Contoso <pause, wait for assistant UI> What's the weather? This is sometimes referred to as "two-shot command" or "keyword-only" |
+| Chained Command | Example: Hey Contoso what's the weather? This is sometimes referred to as a "one-shot command" |
 | Voice Activation | Example: "Hey Contoso" The scenario where keyword is detected in a predefined activation key phrase |
 | Wake-on-Voice (WoV) | Technology that enables voice activation from a screen off, lower power state, to a screen on full power state |
 |WoV from Modern Standby| Wake-on-Voice from a Modern Standby (S0ix) screen off state to a screen on full power (S0) state |
 | Modern Standby | Windows Low Power Idle infrastructure - successor to Connected Standby (CS) in Windows 10. The first state of modern standby is when the screen is off. The deepest sleep state is when in DRIPS/Resiliency. For more information, see [Modern Standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby)|
-| KWS | Keyword spotter – the algorithm that provides the detection of “Hey Contoso” |
+| KWS | Keyword spotter – the algorithm that provides the detection of "Hey Contoso" |
 | SW KWS | Software keyword spotter – an implementation of KWS that runs on the host (CPU). For "Hey Cortana", SW KWS is included as part of Windows. |
 | HW KWS | Hardware keyword spotter – an implementation of KWS that runs offloaded on hardware |
 | Burst buffer | A circular buffer used to store PCM data that can be bursted up in the event of a KWS detection, so that all audio that triggered a KWS detection is included |
@@ -65,7 +65,7 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
     - [PKEY\_SFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-sfx-keyworddetector-processingmodes-supported-for-streaming)
     - [PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-mfx-keyworddetector-processingmodes-supported-for-streaming)
     - [PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-efx-keyworddetector-processingmodes-supported-for-streaming)
-- Review the hardware recommendations and test guidance in [Audio Device Recommendation](https://docs.microsoft.com/windows-hardware/design/component-guidelines/audio). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft’s Speech Platform.
+- Review the hardware recommendations and test guidance in [Audio Device Recommendation](https://docs.microsoft.com/windows-hardware/design/component-guidelines/audio). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft's Speech Platform.
 - Support both staged and chained commands.
 - Meet locale requirements of voice assistants
 - The APOs (Audio Processing Objects) must provide the following effects: 
@@ -73,18 +73,20 @@ To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the f
     -   AGC
     -   NS
 -   Effects for Speech processing mode must be reported by the MFX APO.
--   The APO may perform format conversion as MFX.   
--   The APO must output the following format: 
+-   The APO may perform format conversion as MFX.
+-   The APO must output the following format:
     -   16 kHz, mono, FLOAT.
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 
 Hardware-offloaded keyword spotter (HW KWS) WoV Requirements
-- HW KWS WoV is supported during S0 Working state and S0 sleep state also known as Modern Standby.  
+- HW KWS WoV is supported during S0 Working state and S0 sleep state also known as Modern Standby.
 - HW KWS WoV is not supported from S3.  
 
 **AEC**
 
-AEC can be performed by the DSP at the time the burst audio is captured, or it can be done at a later time via a software APO. In order to perform a software AEC with KWS burst data, it is necessary to have the corresponding loopback audio from the time the burst data was captured. To do this a custom audio format for the burst output was created which interleaves the loopback audio into the burst audio data. The Microsoft AEC APO is aware of this interleaved format and can use it to perform the AEC. For more information, see [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation). 
+AEC can be performed by the DSP at the time the burst audio is captured, or it can be done at a later time via a software APO. In order to perform a software AEC with KWS burst data, it is necessary to have the corresponding loopback audio from the time the burst data was captured. To do this a custom audio format for the burst output was created which interleaves the loopback audio into the burst audio data.
+
+Starting with Windows version 20H1, the Microsoft AEC APO is aware of this interleaved format and can use it to perform the AEC. For more information, see [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation).
 
 **Validation**
 
@@ -148,7 +150,7 @@ DEFINE_GUIDSTRUCT("6389D844-BB32-4C4C-A802-F4B4B77AFEAD", KSNOTIFICATIONID_Sound
 
 **Internal Driver and Hardware Operation**
 
-While the detector is armed, the hardware can be continuously capturing and buffering audio data in a small FIFO buffer. (The size of this FIFO buffer is determined by requirements outside of this document, but might typically be hundreds of milliseconds to several seconds.) The detection algorithm operates on the data streaming through this buffer. The design of the driver and hardware are such that while armed there is no interaction between the driver and hardware and no interrupts to the “application” processors until a keyword is detected. This allows the system to reach a lower power state if there is no other activity.
+While the detector is armed, the hardware can be continuously capturing and buffering audio data in a small FIFO buffer. (The size of this FIFO buffer is determined by requirements outside of this document, but might typically be hundreds of milliseconds to several seconds.) The detection algorithm operates on the data streaming through this buffer. The design of the driver and hardware are such that while armed there is no interaction between the driver and hardware and no interrupts to the "application" processors until a keyword is detected. This allows the system to reach a lower power state if there is no other activity.
 
 When the hardware detects a keyword, it generates an interrupt. While waiting for the driver to service the interrupt, the hardware continues to capture audio into the buffer, ensuring no data after the keyword is lost, within buffering limits.
 
@@ -163,11 +165,11 @@ In order to support the keyword start/end timestamps, DSP software may need to i
 
 The OEM supplies a COM object implementation that acts as an intermediary between the OS and the driver, helping to compute or parse the opaque data that is written and read to the audio driver through [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-patterns) and [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-matchresult).
 
-The CLSID of the COM object is a detector pattern type GUID returned by the [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-supportedpatterns). The OS calls CoCreateInstance passing the pattern type GUID to instantiate the appropriate COM object that is compatible with keyword pattern type and calls methods on the object’s IEventDetectorOemAdapter interface.
+The CLSID of the COM object is a detector pattern type GUID returned by the [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-supportedpatterns). The OS calls CoCreateInstance passing the pattern type GUID to instantiate the appropriate COM object that is compatible with keyword pattern type and calls methods on the object's IEventDetectorOemAdapter interface.
 
 **COM Threading Model requirements**
 
-The OEM’s implementation may choose any of the COM threading models.
+The OEM's implementation may choose any of the COM threading models.
 
 **IEventDetectorOemAdapter**
 
@@ -248,7 +250,7 @@ For [**KSNODETYPE\_AUDIO\_KEYWORDDETECTOR**](https://docs.microsoft.com/windows-
 
 Wake-on-Voice (WoV) enables the user to activate and query a speech recognition engine from a low power state to a full power state with screen on by saying a certain keyword, such as "Hey Contoso."
 
-This feature allows for the device to be always listening for the user’s voice while the device is idle and the screen is off. This is due to listening mode which uses much less power compared to normal microphone recording. WoV allows for chained speech phrase like “Hey Contoso, when’s my next appointment” to invoke a response from a voice assistant in a hands-free manner.
+This feature allows for the device to be always listening for the user's voice while the device is idle and the screen is off. This is due to listening mode which uses much less power compared to normal microphone recording. WoV allows for chained speech phrase like "Hey Contoso, when's my next appointment" to invoke a response from a voice assistant in a hands-free manner.
 
 The audio stack is responsible for communicating the wake data (speaker ID, keyword trigger, context information on confidence level) as well as notifying interested clients that the keyword has been detected.
 
