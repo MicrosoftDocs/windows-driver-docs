@@ -14,7 +14,7 @@ ms.custom: 19H1
 
 # Download the Windows Driver Kit (WDK)
 
-The WDK is used to develop, test, and deploy Windows drivers. The latest public version of the WDK is available in the following section.
+The WDK is used to develop, test, and deploy Windows drivers.
 
 * [Learn what's new in driver development](what-s-new-in-driver-development.md)
 * [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
@@ -25,15 +25,15 @@ Join the Windows Insider Program to get [WDK Insider Preview builds](https://www
 
 ### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019
 
-The WDK requires Visual Studio. For more information on system requirements for Visual Studio, please review [Visual Studio 2019 System Requirements](https://docs.microsoft.com/visualstudio/releases/2019/system-requirements). 
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/visualstudio/releases/2019/system-requirements). 
 
-The following editions of Visual Studio 2019 support driver development:
+The following editions of Visual Studio 2019 support driver development for this release:
 
 * [Download Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16)
 * [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
 * [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
-When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. However, the version of the SDK that is compatible with the WDK for Windows 10, version 1903 is not currently the default SDK. To select the correct SDK:
+When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the WDK for Windows 10, version 1903 may not be the default SDK. To select the correct SDK:
 
 1. In **Visual Studio Installer**, on the **Workloads** tab, under **Installation Details**, expand **Universal Windows Platform development**.
 1. Under **Optional**, select **Windows 10 Preview SDK (10.0.18362.0)**.
@@ -61,7 +61,7 @@ The WDK installation will by default install the WDK Visual Studio extension.
 
 The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.0.0.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
-The EWDK will additionally need .NET 4.7.2. For more information on what .NET runs on, please review [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements).
+The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements).
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
@@ -82,10 +82,10 @@ Windows 7|Windows Server 2008 R2 SP1|
 
 ### Universal Windows driver samples
 
-To get universal Windows driver samples, do one of the following:
+To download universal Windows driver samples, do one of the following:
 
-* Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples) and click **Clone or download** and then click **Download ZIP** on the right side of the page.
-* Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/) to connect to the GitHub repositories.
+* Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples), click **Clone or download**, and then click **Download ZIP**.
+* Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/), and then connect to the GitHub repositories.
 * Browse the driver samples on the [Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk).
 
 ## Related downloads
