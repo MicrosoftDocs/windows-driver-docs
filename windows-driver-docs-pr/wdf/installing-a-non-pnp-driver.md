@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Installing a Non-PnP Driver
 
 
-If your KMDF driver supports a non-Plug and Play (PnP) device on Windows 10, use the same approach as that shown in the [Non-PnP Driver Sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/ioctl/kmdf), but remove the co-installer references. For example, you do not need the following:
+If your KMDF driver supports a non-Plug and Play (PnP) device on Windows 10, use the same approach as that shown in the [Non-PnP Driver Sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/ioctl/kmdf), but remove references to INF files and co-installers. For example, you do not need the following:
 
 ```
 #define NONPNP_INF_FILENAME  L"\\nonpnp.inf"
