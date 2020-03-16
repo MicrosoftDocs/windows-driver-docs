@@ -87,7 +87,6 @@ Requirements
 
 [**OPLOCK\_KEY\_ECP\_CONTEXT**](oplock-key-ecp-context.md)
 
-[Oplock Semantics](https://docs.microsoft.com/windows-hardware/drivers/ifs/oplock-semantics)
 
  
 

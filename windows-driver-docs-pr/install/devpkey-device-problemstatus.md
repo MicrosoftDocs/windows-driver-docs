@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
-ms.date: 02/14/2020
+ms.date: 02/28/2020
 ---
 
 # DEVPKEY_Device_ProblemStatus
@@ -51,7 +51,7 @@ The DEVPKEY_Device_ProblemStatus device property is an NTSTATUS value that is se
 Remarks
 -------
 
-When there is a problem with a devnode, the **Problem status** property appears in the **Property** dropdown on the **Details** tab for the device in Device Manager.
+For info on finding problem status in Device Manager or the kernel debugger, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).
 
 For more info about NTSTATUS values, see [Using NTSTATUS Values](../kernel/using-ntstatus-values.md).
 

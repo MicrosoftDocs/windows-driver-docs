@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_NO_SOFTCONFIG
+# Code 34 - CM_PROB_NO_SOFTCONFIG
 
-This function is reserved for system use.
-
-The device requires a forced configuration.
+This Device Manager error message indicates that the device requires a forced configuration.
 
 ### Error Code
 
