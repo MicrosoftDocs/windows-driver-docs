@@ -207,7 +207,7 @@ Needs=inf-section-name.Services
 
 For devices that do not require a function driver, the NULL driver can be specified as follows:
 <pre>
-AddService = ,2.
+AddService = ,2
 </pre>
 <b>Only use this in the case where the INF is installing a non-functional device to specify it does not need a driver.</b>
 </td>
