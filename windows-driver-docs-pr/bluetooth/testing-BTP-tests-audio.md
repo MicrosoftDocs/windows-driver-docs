@@ -17,12 +17,12 @@ First check that the green power indicator, an optional yellow test LED, and 3 o
 
 Information and purchasing information for supported radios can be found [Supported BTP Hardware](testing-BTP-hw.md).
 
-## Running the HID Tests ##
+## Running the Audio Tests ##
 
 Navigate to the folder where the BTP package was extracted. It will typically be under `C:\BTP`. In a folder named after the version of the package, you will find the scripts referenced below. Then run either:
 
-- `RunHidTests.bat <radio name>` from an elevated command prompt or
-- `RunHidTests.ps1 <radio name>` from an elevated PowerShell console
+- `RunAudioTests.bat <radio name>` from an elevated command prompt or
+- `RunAudioTests.ps1 <radio name>` from an elevated PowerShell console
 
 Information on available radio name parameters can be found [here](testing-BTP-hw.md#supported-radios)
 
