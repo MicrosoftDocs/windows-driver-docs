@@ -3,7 +3,7 @@ title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
 ms.date: 02/12/2020
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ---
 
 # Bug Check Code Reference
