@@ -209,7 +209,15 @@ For devices that do not require a function driver, the NULL driver can be specif
 <pre>
 AddService = ,2
 </pre>
+
 <b>Only use this in the case where the INF is installing a non-functional device to specify it does not need a driver.</b>
+
+For example: A device that requires only a filter driver, and not a function driver would have two AddService directives:
+<pre>
+AddService = MyFilterDriver,, My-Service-Install-Section 
+AddService = ,2
+</pre>
+
 </td>
 </tr>
 </tbody>
