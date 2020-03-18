@@ -54,7 +54,7 @@ conceptualContent:
           url: https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically
           itemType: overview
         - text: Download Debugging Tools for Windows - WinDbg
-          url: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools
+          url: https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools
           itemType: download
         - text: Debug Universal drivers
           url: https://docs.microsoft.com/windows-hardware/drivers/debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-
