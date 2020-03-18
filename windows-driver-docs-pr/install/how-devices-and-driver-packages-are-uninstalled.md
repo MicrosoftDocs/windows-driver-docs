@@ -57,13 +57,6 @@ Before deleting a driver package from the driver store, be sure to uninstall all
 
  
 
-### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
-
-[Device Manager](using-device-manager.md) and the PnP manager do not support deleting driver binaries from the target destinations where they were installed. 
-
-When you uninstall a driver package, the associated driver binaries might still be used by devices or applications. Removing the binaries can lead to system failures. Before you remove any driver binaries, make sure that the binaries are not still being used by any other component on the system and can be safely removed.
-
-
 
  
 
