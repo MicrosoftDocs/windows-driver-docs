@@ -17,7 +17,7 @@ keywords:
 - device management WDK DevCon
 - listing device information WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # Windows Device Console (Devcon.exe)

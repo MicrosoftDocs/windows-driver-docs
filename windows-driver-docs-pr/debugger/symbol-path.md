@@ -4,7 +4,7 @@ description: The symbol path specifies locations where the Windows debuggers (Wi
 ms.assetid: 705df98f-717f-40ad-a424-101826970691
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
 ms.date: 10/23/2019
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # Symbol path for Windows debuggers

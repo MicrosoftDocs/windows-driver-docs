@@ -65,10 +65,10 @@ To update an EDID by using an INF:
 To override an EDID, include an [**AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) in the INF for each block that you want to override, in the following format:
 
 ```inf
-HKR, EDID_OVERRIDE, BlockNumber, Byte 1, Byte 2, Byte 3, Byte 4,...
+HKR, EDID_OVERRIDE, BlockNumber, 0x1, Byte 1, Byte 2, Byte 3, Byte 4,...
 ```
 
-The block number is followed by 128 hexadecimal integers that contain the binary EDID data.
+The block number is a zero-indexed value of the EDID block to override. The data bytes should be formatted as 128 hexadecimal integers that contain the binary EDID data. The "0x1" value after the block number is a flag indicating that this registry value contains binary data (FLG_ADDREG_BINVALUETYPE).
 
 Manufacturers must update only those EDID blocks that are incorrect. The system obtains the remaining blocks from EEPROM. The following example shows the relevant sections of an INF that updates EDID blocks 0, 4, and 5. The monitor driver obtains blocks 1 - 3 and any extension blocks that follow block 5 from EEPROM:
 

@@ -20,7 +20,7 @@ Percent of machines with pending firmware updates due to the risk of entering bi
 |**Time period**|28 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|250|
-|**Passing criteria**|>= 90%|
+|**Passing criteria**|<= 10%|
 |**Measure ID**|23153969|
 
 ## Calculation

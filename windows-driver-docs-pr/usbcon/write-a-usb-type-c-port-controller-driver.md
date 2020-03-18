@@ -170,7 +170,7 @@ Sample reference: See `EvtDeviceD0Entry` in `Device.cpp` and `HardwareRequestQue
 hardware request queue. 
 
  
-## 5. Handlle alerts from the port controller hardware
+## 5. Handle alerts from the port controller hardware
 
 Sample reference: See `ProcessAndSendAlerts` in `Alert.cpp`.
 
