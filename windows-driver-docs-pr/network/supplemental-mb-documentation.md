@@ -21,6 +21,8 @@ The following sections provide supplemental information for developers of MB dev
 
 [Mobile Broadband Implementation Guidelines for USB Devices](mobile-broadband-implementation-guidelines-for-usb-devices.md)
 
+[Mobile Broadband Troubleshooting Guide](mobile-broadband-troubleshooting-guide.md)
+
  
 
  

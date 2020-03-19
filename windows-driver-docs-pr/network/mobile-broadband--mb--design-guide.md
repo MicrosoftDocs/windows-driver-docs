@@ -63,6 +63,8 @@ This section includes the following topics:
 
 [MB low level UICC access](mb-low-level-uicc-access.md)
 
+[MB eSIM Operations](mb-esim-operations.md)
+
 [MB device-based reset and recovery](mb-device-based-reset-and-recovery.md)
 
 [MB hang detection](mb-hang-detection.md)
