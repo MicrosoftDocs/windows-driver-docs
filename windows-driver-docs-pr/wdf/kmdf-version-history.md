@@ -6,7 +6,7 @@ keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
-ms.date: 10/02/2018
+ms.date: 03/29/2019
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---

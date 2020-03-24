@@ -952,6 +952,8 @@
     href: configuring-windows-to-rank-driver-signatures-equally.md
   - name: "Installing the Updated Version of the Driver Package"
     href: installing-the-updated-version-of-the-driver-package.md
+  - name: "Writing Win32 Services to Interact with Devices"
+    href: best-practices-win32services-interacting-with-devices.md
 - name: "Troubleshooting"
   items: 
   - name: "Troubleshooting Device and Driver Installations"
