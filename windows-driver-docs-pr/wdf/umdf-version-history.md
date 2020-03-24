@@ -7,7 +7,7 @@ keywords:
 - UMDF WDK , version information
 - revision history WDK UMDF
 - version information WDK UMDF
-ms.date: 03/29/2019
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
