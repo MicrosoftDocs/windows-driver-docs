@@ -16,8 +16,6 @@ The [Sharks Cove development board](https://go.microsoft.com/fwlink/p?linkid=403
 
 To use Microsoft Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p?linkid=301383).
 
-As an alternative to using Visual Studio to set up serial debugging over a USB cable, you can do the setup manually. For more information, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md).
-
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. In this topic, the Sharks Cove board is the target computer.
 
 ## <span id="Setting_up_a_Host_Computer_for_debugging_the_Sharks_Cove_board"></span><span id="setting_up_a_host_computer_for_debugging_the_sharks_cove_board"></span><span id="SETTING_UP_A_HOST_COMPUTER_FOR_DEBUGGING_THE_SHARKS_COVE_BOARD"></span>Setting up a Host Computer for debugging the Sharks Cove board
@@ -88,16 +86,6 @@ On the host computer, verify that you are using a baud rate of 115200.
 4.  Verify that the **Baud Rate** is 115200.
 
 ## <span id="related_topics"></span>Related topics
-
-
-[Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
-
- 
-
- 
-
-
-
 
 
 

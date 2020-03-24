@@ -6,9 +6,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_USED_BY_DEBUGGER
+# Code 53 - CM_PROB_USED_BY_DEBUGGER
 
-This function is reserved for system use.
+This Device Manager error message indicates that the device is reserved for use by the Windows kernel debugger.
 
 ## Error
 

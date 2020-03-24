@@ -39,7 +39,7 @@ The number of user handles for the file if the request is for an exclusive oploc
 A bitmask for the associated oplock operations. A file system or filter driver sets bits to specify the behavior of [**FsRtlOplockFsctrlEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex). The *Flags* parameter has the following options:
 
 <a href="" id="oplock-fsctrl-flag-all-keys-match--0x00000001-"></a>OPLOCK\_FSCTRL\_FLAG\_ALL\_KEYS\_MATCH (0x00000001)  
-Specifies that the file system has verified that all opportunistic lock keys match on any handle that is currently open. By specifying this flag, the oplock package can grant an oplock of level RW or RWH when more than one open handle to the file exists. For more information about oplock types, see [Overview](https://docs.microsoft.com/windows-hardware/drivers/ifs/overview).
+Specifies that the file system has verified that all opportunistic lock keys match on any handle that is currently open. By specifying this flag, the oplock package can grant an oplock of level RW or RWH when more than one open handle to the file exists. For more information about oplock types, see [Overview](https://docs.microsoft.com/windows-hardware/drivers/ifs/oplock-overview).
 
 Status block
 ------------

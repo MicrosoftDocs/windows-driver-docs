@@ -48,7 +48,7 @@ Oplocks are granted on stream handles when a stream is opened. Such a stream han
 
 Oplock keys are associated with handles when the handles are created. You can associate a handle with an oplock key even if no oplocks are granted.
 
-For more information about oplocks and oplock keys, see [Oplock Semantics Overview](https://docs.microsoft.com/windows-hardware/drivers/ifs/overview).
+For more information about oplocks and oplock keys, see [Oplock Semantics Overview](https://docs.microsoft.com/windows-hardware/drivers/ifs/oplock-overview).
 
 ## Requirements
 

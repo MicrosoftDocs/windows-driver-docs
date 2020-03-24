@@ -22,7 +22,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI                                                                                                    |
 |:-------|:---------------------------------------------------------------------------------------------------------------|
-| POST   | https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productID}/submissions/{submissionID}/createpublishermetadata |
+| POST   | https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/createpublishermetadata |
 
 ### Request header
 
@@ -44,7 +44,7 @@ Do not provide request body for this method.
 The following example demonstrates how to create publisher driver metadata for a submission.
 
 ```cpp
-POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14631253285588838/submissions/1152921504621465124/createpublishermetadata HTTP/1.1
+POST https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14631253285588838/submissions/1152921504621465124/createpublishermetadata HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

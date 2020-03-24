@@ -12,7 +12,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 02/28/2020
 ---
 
 # DEVPKEY_Device_ProblemCode
@@ -56,6 +56,10 @@ You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/d
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to access the problem code for a device instance on these earlier versions of Windows, see [Retrieving the Status and Problem Code for a Device Instance](https://docs.microsoft.com/windows-hardware/drivers/install/retrieving-the-status-and-problem-code-for-a-device-instance).
 
+For info on finding problem status in Device Manager or the kernel debugger, see [Retrieving the Status and Problem Code for a Device Instance](retrieving-the-status-and-problem-code-for-a-device-instance.md).
+
+For additional information that may help with the problem code, see [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md).
+
 Requirements
 ------------
 
@@ -83,7 +87,7 @@ Requirements
 
 [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
- 
+[**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md)
 
  
 

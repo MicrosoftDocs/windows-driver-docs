@@ -22,7 +22,7 @@ The measure aggregates telemetry from a 28-day sliding window into a ratio of ma
 |**Time period**|28 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|250|
-|**Passing criteria**|>= 90%|
+|**Passing criteria**|<= 10%|
 |**Measure ID**|23154031|
 
 ## Calculation
