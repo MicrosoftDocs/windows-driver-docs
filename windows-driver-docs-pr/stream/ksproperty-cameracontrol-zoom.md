@@ -57,6 +57,8 @@ User-mode clients use the KSPROPERTY\_CAMERACONTROL\_ZOOM property to get or set
 
 The property value (operation data) is a LONG that specifies a camera's zoom setting. This value is expressed in millimeters.
 
+**Caution**  When writing or testing an app, you should be aware that in practice, some drivers define a custom range of zoom values and custom step values that might not be based on typical units. Drivers might implement the zoom control either physically or digitally.
+
 Remarks
 -------
 
