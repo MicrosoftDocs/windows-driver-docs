@@ -26,7 +26,7 @@ There are two file system filter models in Windows:
 - The [legacy file system filter model](https://docs.microsoft.com/windows-hardware/drivers/ifs/about-file-system-legacy-filter-drivers)
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers]((https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts)) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 ## File system filter drivers are not device drivers
 
