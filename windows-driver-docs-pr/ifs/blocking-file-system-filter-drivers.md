@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block legacy file system filter drivers. *Legacy file system filter drivers* are drivers that attach to the file system stack directly and don't use Filter Manager. This topic describes the registry setting for blocking and unblocking legacy file system filter drivers. It also describes the event entered into the System event log when a legacy file system filter is blocked and how to check if the OS has legacy file system drivers running.
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers]((https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts)) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 ## How to block legacy drivers
 
