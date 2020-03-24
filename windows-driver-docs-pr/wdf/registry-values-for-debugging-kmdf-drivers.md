@@ -5,7 +5,7 @@ ms.assetid: d54bdc6c-b409-4973-9b29-16967a4d83fb
 keywords:
 - debugging drivers WDK KMDF , registry values
 - registry values for debugging drivers WDK KMDF
-ms.date: 04/20/2017
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
