@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CPU) 
 description: Provides information about Component Firmware Update (CPU)
-ms.date: 09/10/2019
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
