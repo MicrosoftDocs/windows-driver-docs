@@ -148,7 +148,18 @@ After adding WPP software tracing to your driver, the IFR infrastructure is alre
 
     ![enable wpp recorder in visual studio](images/wpp-enable4.png)
 
-6.  Add **Wpprecorder.h** to each source file that calls IFR APIs, such as [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to set up your own IFR log. Call the APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) call in the *DriverEntry* routine of a KMDF or UMDF 2.15 driver.
+6.  For a KMDF driver, add **Wpprecorder.h** to each source file that calls IFR APIs, such as [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to set up your own IFR log. For a UMDF driver, add **WppRecorderUm.lib**. Then use this code in `driver.c`:
+```cpp
+    // Do not #include <WppRecorder.h>. This is for a KMDF driver that creates multiple logs. No need when using default log handle.
+    DriverEntry
+        WPP_INIT_TRACING(DriverObject, RegistryPath);
+    EvtDriverContextCleanup
+        WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver));
+```
+
+ 7. Call the APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) call in the *DriverEntry* routine of a KMDF or UMDF 2.15 driver.
+
+For an example of enabling WppRecorder in a UMDF driver, see the [Sample Function Driver for OSR USB-FX2 (UMDF Version 2)](https://github.com/microsoft/Windows-driver-samples/tree/master/usb/umdf2_fx2).
 
 ## <span id="Use__the_default_log"></span><span id="use__the_default_log"></span><span id="USE__THE_DEFAULT_LOG"></span>Use the default log
 
