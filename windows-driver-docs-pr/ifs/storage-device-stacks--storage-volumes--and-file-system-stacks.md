@@ -20,7 +20,7 @@ Before exploring how file system legacy filter drivers attach to file systems an
 
 ## Storage Device Stacks
 
-Most storage drivers are PnP device drivers, which are loaded and managed by the PnP Manager. Storage devices are represented in the PnP *device tree*, which contains a device node, or *devnode*, for every physical or logical device on the machine. It is important to note that file systems and file system filter drivers are not PnP device drivers; thus the PnP [device tree]((https://docs.microsoft.com/windows-hardware/drivers/kernel/device-tree)) contains no devnodes for them.
+Most storage drivers are PnP device drivers, which are loaded and managed by the PnP Manager. Storage devices are represented in the PnP *device tree*, which contains a device node, or *devnode*, for every physical or logical device on the machine. It is important to note that file systems and file system filter drivers are not PnP device drivers; thus the PnP [device tree](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-tree) contains no devnodes for them.
 
 The devnode for a particular storage device contains the *storage device stack* for the device; this is the chain of attached device objects that represent the device's storage device drivers. Because a storage device, such as a disk, might contain one or more logical volumes (partitions or dynamic volumes), the storage device stack itself often looks more like a tree than a stack. The root of this tree is a functional device object (FDO) for a storage adapter or for another device stack that is integrated with the storage stack. The leaves of this tree are the physical device objects (PDOs) for the logical volumes, also called *storage volumes*, on which file system volumes can be mounted.
 
