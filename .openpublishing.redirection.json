@@ -103,7 +103,7 @@
     {
       "source_path": "windows-driver-docs-pr/dashboard/dashboard-services.md",
       "redirect_URL": "/windows-hardware/drivers/dashboard/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/dashboard/manage-your-divisions.md",
