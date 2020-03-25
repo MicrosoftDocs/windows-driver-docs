@@ -20,7 +20,7 @@ The following table shows the release history of the KMDF library:
 
 |KMDF version|Release method|Included in this version of Windows|Drivers using it run on|
 |--- |--- |--- |--- |
-|1.31|Windows 10, version 2004 WDK|Windows 10, version 2004 (April 2020 Update, Vibranium)|Windows 10, version 2004 and later|
+|1.31|Windows 10, version 2004 WDK|Windows 10, version 2004 (May 2020 Update, Vibranium)|Windows 10, version 2004 and later|
 |1.29|Not released in WDK|Windows 10, version 1903 (March 2019 Update, 19H1)|Windows 10, version 1903 and later|
 |1.27|Windows 10, version 1809 WDK|Windows 10, version 1809 (October 2018 Update, Redstone 5)|Windows 10, version 1809 and later|
 |1.25|Windows 10, version 1803 WDK|Windows 10, version 1803 (April 2018 Update, Redstone 4)|Windows 10, version 1803 and later|
