@@ -95,7 +95,7 @@ No matter which value **NativeOrientation** returns, the logical display scannin
 
 Note that, unlike camera, the **NativeOrientation** property is not based on ACPI and thus does not have a \_PLD structure. This is true even if a display is statically mounted to a device.
 
-When mounting on a Portrait Primary device, Camera Drivers must be aware that most application will treat the device as outputting a Landscape camera output buffer regardless of the actual camera output buffer orientation. Because of this, Camera Drivers are recommended to output a camera buffer that has a 90 degree orientation offset from the NativeOrientation Portrait when on a Portrait Primary device. This will then allow applications that are performing this additional rotation on Portrait devices to correct the rotation to the expected Orientation.
+When mounting on a Portrait Primary device, camera drivers must be aware that most applications will treat the device as outputting a landscape camera output buffer regardless of the actual camera output buffer orientation. Because of this, we recommend that camera drivers output a camera buffer that has a 90 degree orientation offset from the NativeOrientation Portrait when on a Portrait Primary device. This will then allow applications that are performing this additional rotation on portrait devices to correct the rotation to the expected orientation.
 
 ## Offset Mounting
 
