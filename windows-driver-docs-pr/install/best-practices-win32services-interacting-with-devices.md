@@ -1,3 +1,11 @@
+---
+title: Win32 Services Interacting with Devices
+description: Win32 Services Interacting with Devices
+ms.assetid: 0ecc6979-25b3-41eb-8d6f-9eee3b80a56f
+ms.date: 03/02/2020
+ms.localizationpriority: medium
+---
+
 # Win32 Services Interacting with Devices
 
 ## Motivation:
