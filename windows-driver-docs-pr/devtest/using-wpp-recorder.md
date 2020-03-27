@@ -152,7 +152,7 @@ After adding WPP software tracing to your driver, the IFR infrastructure is alre
 ```
 Call additional WPP APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) call in the *DriverEntry* routine of a KMDF or UMDF 2.15 driver.
 
-7.  **KMDF only**: modify the project settings as follows:
+7.  **KMDF only**: Modify the project settings as follows:
 ```xml
     <ClCompile Include=...>
         <WppEnabled>true</WppEnabled>
@@ -163,7 +163,7 @@ Call additional WPP APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.c
 ```
 Use the [Toaster KMDF sample .vcxproj file](https://github.com/microsoft/Windows-driver-samples/blob/dd4fad494b996f5729be98e0271ea74ef1a5d2ad/general/toaster/toastDrv/kmdf/func/featured/wdffeatured.vcxproj#L81-L86) as a reference.
 
-8.  **UMDF only**: modify the project settings as follows:
+8.  **UMDF only**: Modify the project settings as follows:
 ```xml
     <ClCompile Include=...>
         <WppEnabled>true</WppEnabled>
