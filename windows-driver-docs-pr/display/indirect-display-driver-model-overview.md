@@ -44,6 +44,9 @@ The following sections describe the Indirect Display Driver Model:
 
 [IddCx Objects](iddcx-objects.md)
  
+## Sample Code
+
+Microsoft has provided a sample implementation of an indirect display driver located at the [Windows Driver Samples GitHub](https://github.com/microsoft/Windows-driver-samples/tree/master/video/IndirectDisplay). This sample demonstrates how to connect a monitor, how to respond to a mode set, and how to receive frames.
 
  
 
