@@ -84,7 +84,7 @@ The following points apply to VMQ miniport drivers that run on Windows Server 2
 
     -   The miniport driver must not set the **NDIS\_RECEIVE\_FILTER\_LOOKAHEAD\_SPLIT\_SUPPORTED** flag in the **Flags** member.
 
-    -   The miniport driver must set the **MinLookaheadSplitSize** and **MinLookaheadSplitSize** members to zero.
+    -   The miniport driver must set the **MinLookaheadSplitSize** and **MaxLookaheadSplitSize** members to zero.
 
     For more information about how to register VMQ capabilities, see [Determining the VMQ Capabilities of a Network Adapter](determining-the-vmq-capabilities-of-a-network-adapter.md).
 
