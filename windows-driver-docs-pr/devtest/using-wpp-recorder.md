@@ -153,21 +153,24 @@ After adding WPP software tracing to your driver, the IFR infrastructure is alre
 Call additional WPP APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) call in the *DriverEntry* routine of a KMDF or UMDF 2.15 driver.
 
 7.  **KMDF only**: modify the project settings as follows:
-```cpp
-    ClCompile
-        WppEnabled
-        WppKernelMode
-        WppRecorderEnabled
+```xml
+    <ClCompile Include=...>
+        <WppEnabled>true</WppEnabled>
+        <WppKernelMode>true</WppKernelMode>
+        <WppRecorderEnabled>true</WppRecorderEnabled>
+        ...
+    </ClCompile>
 ```
 Use the [Toaster KMDF sample .vcxproj file](https://github.com/microsoft/Windows-driver-samples/blob/master/general/toaster/toastDrv/kmdf/func/featured/wdffeatured.vcxproj) as a reference.
 
 8.  **UMDF only**: modify the project settings as follows:
-```cpp
-    ClCompile
-        WppEnabled
-        WppRecorderEnabled
-        WppPreprocessorDefinitions
-            WPP_MACRO_USE_KM_VERSION_FOR_UM=1 
+```xml
+    <ClCompile Include=...>
+        <WppEnabled>true</WppEnabled>
+        <WppRecorderEnabled>true</WppRecorderEnabled>
+        <WppPreprocessorDefinitions>ENABLE_WPP_RECORDER=1;WPP_MACRO_USE_KM_VERSION_FOR_UM=1</WppPreprocessorDefinitions>
+        ...
+    </ClCompile>
 ```
 Use the [UMDF FX2 sample .vcxproj file](https://github.com/microsoft/Windows-driver-samples/blob/master/usb/umdf2_fx2/driver/osrusbfx2um.vcxproj) as a reference.
 
