@@ -161,7 +161,7 @@ Call additional WPP APIs after the [WPP\_INIT\_TRACING](https://docs.microsoft.c
         ...
     </ClCompile>
 ```
-Use the [Toaster KMDF sample .vcxproj file](https://github.com/microsoft/Windows-driver-samples/blob/master/general/toaster/toastDrv/kmdf/func/featured/wdffeatured.vcxproj) as a reference.
+Use the [Toaster KMDF sample .vcxproj file](https://github.com/microsoft/Windows-driver-samples/blob/dd4fad494b996f5729be98e0271ea74ef1a5d2ad/general/toaster/toastDrv/kmdf/func/featured/wdffeatured.vcxproj#L81-L86) as a reference.
 
 8.  **UMDF only**: modify the project settings as follows:
 ```xml
@@ -172,7 +172,7 @@ Use the [Toaster KMDF sample .vcxproj file](https://github.com/microsoft/Windows
         ...
     </ClCompile>
 ```
-Use the [UMDF FX2 sample .vcxproj file](https://github.com/microsoft/Windows-driver-samples/blob/master/usb/umdf2_fx2/driver/osrusbfx2um.vcxproj) as a reference.
+Use the [UMDF FX2 sample .vcxproj file](https://github.com/microsoft/Windows-driver-samples/blob/dd4fad494b996f5729be98e0271ea74ef1a5d2ad/usb/umdf2_fx2/driver/osrusbfx2um.vcxproj#L79-L85) as a reference.
 
 9.  **KMDF only**: if you would to create multiple logs, add `#include <WppRecorder.h>` to each source file that calls IFR APIs, such as [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate). You might do this, for example, if the driver is a bus driver and you want each child device to have its own dedicated log. Then you can use the debugger extension [!rcdrkd.rcdrlogdump](https://docs.microsoft.com/windows-hardware/drivers/debugger/-rcdrkd-rcdrlogdump) to dump the log for a specific device.
 
