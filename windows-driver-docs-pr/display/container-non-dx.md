@@ -26,7 +26,6 @@ In the installation INF, the driver can define multiple values in the following 
 - CopyToVmWhenNewerWow64
 
 The former sub-keys modify the system32 directory, while the latter sub-keys modify the syswow64 directory.
-__Newer__ is defined by comparing the file's [ChangeTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_basic_information).
 Each value type under a subkey must be REG_MULTI_SZ or REG_SZ. 
 If the value type is REG_MULTI_SZ, there must be maximum 2 strings in the value. 
 This implies that each value defines a pair of stings, where the second string could be empty.
@@ -36,6 +35,24 @@ The second name in a pair is the name of the file how it will appear in the syst
 The second name must be just the file name, not including path. 
 If the second name is empty, the file name is the same as in the driver store (excluding subdirectories).
 This allows the driver to have different names in the host driver store and in the guest. 
+
+Files listed under the **CopyToVmWhenNewer** and **CopyToVmWhenNewerWow64** graphics adapter registry sub-keys
+only overwrite the destination files when they satisfy the "newer" criteria.
+
+In Windows 10 version 2004, the "newer" criteria compares two pieces of information:
+- [FileVersion](https://docs.microsoft.com/windows/desktop/api/verrsrc/ns-verrsrc-vs_fixedfileinfo)
+- [LastWriteTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information)
+
+When the destination file ends with the .dll or .exe suffix,
+the **FileVersion** is used as the most-significant comparison value
+where the greatest version is deemed "newer".
+
+When the destination file doesn't end with the .dll nor .exe suffix OR the two **FileVersion** are equal,
+then **LastWriteTime** is used as the least-significant comparison values
+where the later date/ time is deemed "newer".
+
+In Windows 10 versions earlier than 2004, the "newer" criteria only compared the files'
+[ChangeTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information).
 
 ### Example 1:
 INF [DDInstall] section  
@@ -87,16 +104,17 @@ DXGI returns its LUID through [IDXGIAdapter::GetDesc](https://docs.microsoft.com
 Honor as many [universal driver](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers) design principals as possible,
 which may vary based on the exact device being supported.
 
-## WDK Dependency
+## D3DKMT Headers
+The headers that include the previously mentioned methods and types are available in the Windows SDK for Windows 10 version 2004 and beyond,
+instead of being exclusively available in the WDK.
 
-Many of the previously mentioned methods and types are exclusively available in the WDK.
-While the WDK is primarily used to build drivers,
-it also provides lower-level interfaces for components that are bundled with drivers.
-If it is too onerous for non-DX APIs to include the WDK
-or localize the WDK dependency to the non-DX runtime or driver-loader,
-then Microsoft gives non-DX API projects permission to effectively sever the WDK dependency.
-The WDK dependency can be severed by using Microsoft's public documentation,
-and creating binary-compatible types and function declarations into their project.
-These typenames must not be identical to those used by Microsoft,
-to avoid name conflicts if someone else intentionally leverages the WDK with non-DX API projects.
-
+One option to cleanly include the necessary headers is as follows.
+Other options may also exist.
+```cpp
+// Turn off NTSTATUS codes within windows.h, so that the more exhaustive ntstatus.h can be used.
+#define UMDF_USING_NTSTATUS
+#include <windows.h> // For the vast majority of Windows functionality
+#include <winternl.h> // For NT_SUCCESS
+#include <ntstatus.h> // For the most exhaustive list of NTSTATUS codes
+#include <d3dkmthk.h> // For D3DKMT support
+```
