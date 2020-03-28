@@ -89,7 +89,7 @@ For WDM drivers, use **!rcdrkd.rcdrloglist** and **!rcdrkd.rcdrlogdump**.
 
 ## Configure Inflight Trace Recorder parameters
 
-The IFR can be configured under the driver's [Parameter key](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers).
+The IFR can be configured under the driver's [Parameter key](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers).
 
 Use the following registry values:
 
