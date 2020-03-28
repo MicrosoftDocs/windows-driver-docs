@@ -20,7 +20,7 @@ IFR is built on top of [WPP software tracing](wpp-software-tracing.md). The prim
 
 ## How to enable Inflight Trace Recorder in Visual Studio
 
-First, follow the steps in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md). 
+First, follow the steps in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md).
 
 Next, in the Project property page, under **Configuration Properties->WPP Tracing->Function and Macro Options->Enable Inflight Trace Recorder**, select **Yes**.
 
@@ -54,11 +54,14 @@ For a UMDF driver:
 ```
 
 
-## How to send trace messages to the WPP default log
+## How to send trace messages to the default log
 
-Follow the instructions in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md).  For example, in *DriverEntry*, call `WPP_INIT_TRACING(DriverObject, RegistryPath)`; in *EvtDriverUnload*, call `WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver))`.
+Follow the instructions in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md).  For example,
 
-Once that is done, you're free to call the trace function as you like.
+ - in *DriverEntry*, call `WPP_INIT_TRACING(DriverObject, RegistryPath)`
+ - in *EvtDriverUnload*, call `WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver))`
+
+Once that is done, you're free to call the trace function as you like. For example: `TraceEvents(TRACE_LEVEL_ERROR, DBG_INIT, "WdfDriverCreate failed, %!STATUS!", ntStatus);`
 
 
 ## How to send trace messages to a custom log
@@ -74,9 +77,9 @@ To set up custom logs, the driver must include `<WppRecorder.h>`. Then call the 
  - **WppRecorderLogCreate** to create more than one log buffer
  - **WppRecorderLogDelete** before calling **WPP_CLEANUP**.
  - **WppRecorderLogSetIdentifier** to set a string identifier for a given recorder log (optional)
- - **WppRecorderConfigure** to disable the default log
+ - **WppRecorderConfigure** to disable the default log (optional)
 
-The driver also needs to define a new trace macro that takes the log handle as the first parameter. For an example, see the [Toaster Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv).
+The driver also needs to define a new trace macro that takes the log handle as the first parameter. For an example, see the [Toaster Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured/trace.h).
 
 
 ## How to view trace messages in the debugger
@@ -98,4 +101,4 @@ Set to the number of pages to store the default log. The default is one.
 
 **VerboseOn: REG_DWORD**
 
-The default setting of zero causes the IFR to log errors, warnings, and informational events. Set to one to add verbose output to the log. 
+The default setting of zero causes the IFR to log errors, warnings, and informational events. Set to one to add verbose output to the log.
