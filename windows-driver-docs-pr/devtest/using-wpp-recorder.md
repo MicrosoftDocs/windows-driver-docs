@@ -9,15 +9,14 @@ ms.localizationpriority: medium
 # Inflight Trace Recorder (IFR) for logging traces
 
 
-**Applies to:**
-
--   Minimum OS: Windows 8 for KMDF and WDM driver developers
--   Minimum OS: Windows 10 for UMDF (2.15) driver developers
-
 *Inflight Trace Recorder (IFR)* is a tracing feature that allows a trace provider, such as a kernel-mode driver or a UMDF driver, to create a set of in-memory circular buffer where the latest log messages are preserved. The log message can be viewed using a debugger.
 
 IFR is built on top of [WPP software tracing](wpp-software-tracing.md). The primary benefit of IFR over WPP is that it is turned on automatically and you do not need to start trace sessions in advance.
 
+**Applies to:**
+
+-   Minimum OS: Windows 8 for KMDF and WDM driver developers
+-   Minimum OS: Windows 10 for UMDF (2.15) driver developers
 
 ## How to enable Inflight Trace Recorder in Visual Studio
 
