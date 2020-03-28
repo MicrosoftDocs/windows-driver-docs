@@ -86,5 +86,5 @@ The following matrix lists NVME features and indicates the support provided by *
 --->
 
 ## Reference Links
--   [Working with NVMe Devices](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices)
--   [NVMe Storage Protocal Data Type](https://docs.microsoft.com/windows/win32/api/winioctl/ne-winioctl-storage_protocol_nvme_data_type)
+- [Working with NVMe Devices](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices)
+- [NVMe Storage Protocal Data Type](https://docs.microsoft.com/windows/win32/api/winioctl/ne-winioctl-storage_protocol_nvme_data_type)
