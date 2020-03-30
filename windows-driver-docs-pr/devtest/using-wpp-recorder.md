@@ -2,7 +2,7 @@
 title: Inflight Trace Recorder (IFR) for logging traces
 description: Inflight Trace Recorder (IFR) allows a trace provider, such as a kernel-mode driver, to record trace logs and store WPP log messages in buffers.
 ms.assetid: D11FA28E-3B0C-4D9D-AEDA-8A80DE58091C
-ms.date: 03/27/2020
+ms.date: 03/30/2020
 ms.localizationpriority: medium
 ---
 
@@ -56,12 +56,12 @@ For a UMDF driver:
 
 ## How to send trace messages to the default log
 
-Follow the instructions in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md).  For example,
+Follow the instructions in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md).  For example:
 
- - in *DriverEntry*, call `WPP_INIT_TRACING(DriverObject, RegistryPath)`
- - in *EvtDriverUnload*, call `WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver))`
+ - In *DriverEntry*, call `WPP_INIT_TRACING(DriverObject, RegistryPath)`.
+ - In *EvtDriverUnload*, call `WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver))`.
 
-Once that is done, you're free to call the trace function as you like. For example: `TraceEvents(TRACE_LEVEL_ERROR, DBG_INIT, "WdfDriverCreate failed, %!STATUS!", ntStatus);`
+Now the driver is free to call the trace function as needed. For example: `TraceEvents(TRACE_LEVEL_ERROR, DBG_INIT, "WdfDriverCreate failed, %!STATUS!", ntStatus);`
 
 
 ## How to send trace messages to a custom log
