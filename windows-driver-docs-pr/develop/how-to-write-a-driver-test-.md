@@ -2,11 +2,16 @@
 ms.assetid: 79AB7242-72D6-4198-9AF0-482CBFB756C7
 title: How to write a driver test using a Driver Test template
 description: Use the Windows Driver Kit (WDK) for Windows 8 to create your own driver tests or to customize some of the tests that are provided.
-ms.date: 04/20/2017
+ms.date: 03/26/2020
 ms.localizationpriority: medium
 ---
 
 # How to write a driver test using a Driver Test template
+
+> [!NOTE]
+> This topic describes functionality that is only available in Visual Studio 2013. For info on previous WDK and Visual Studio editions, see [Other WDK downloads](../other-wdk-downloads.md).
+> 
+
 
 You can use the Windows Driver Kit (WDK) for Windows 8 to create your own driver tests or to customize some of the tests that are provided. You can deploy the tests that you create to remote test computers using the driver testing framework that the WDK provides for Microsoft Visual Studio Ultimate 2012.
 
