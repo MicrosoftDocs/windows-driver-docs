@@ -58,11 +58,12 @@ For a UMDF driver:
 
 Follow the instructions in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md).  For example:
 
- - In *DriverEntry*, call `WPP_INIT_TRACING(DriverObject, RegistryPath)`.
- - In *EvtDriverUnload*, call `WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver))`.
+ - In [*DriverEntry*](../wdf/driverentry-for-kmdf-drivers.md), call `WPP_INIT_TRACING(DriverObject, RegistryPath)`.
+ - In [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload), call `WPP_CLEANUP(WdfDriverWdmGetDriverObject(Driver))`.
 
 Now the driver is free to call the trace function as needed. For example: `TraceEvents(TRACE_LEVEL_ERROR, DBG_INIT, "WdfDriverCreate failed, %!STATUS!", ntStatus);`
 
+For more info, see [WPP_INIT_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556193(v%3Dvs.85)) and [WPP_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)).
 
 ## How to send trace messages to a custom log
 
@@ -74,19 +75,19 @@ For example, when writing a bus driver, you might want each child device to have
 
 To set up custom logs, the driver must include `<WppRecorder.h>`. Then call the following APIs:
 
- - **WppRecorderLogCreate** to create more than one log buffer
- - **WppRecorderLogDelete** before calling **WPP_CLEANUP**.
- - **WppRecorderLogSetIdentifier** to set a string identifier for a given recorder log (optional)
- - **WppRecorderConfigure** to disable the default log (optional)
+ - [**WppRecorderLogCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to create more than one log buffer
+ - [**WppRecorderLogDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogdelete) before calling **WPP_CLEANUP**.
+ - [**WppRecorderLogSetIdentifier**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogsetidentifier) to set a string identifier for a given recorder log (optional)
+ - [**WppRecorderConfigure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderconfigure) to disable the default log (optional)
 
 The driver also needs to define a new trace macro that takes the log handle as the first parameter. For an example, see the [Toaster Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured/trace.h).
 
 
 ## How to view trace messages in the debugger
 
-For KMDF and UMDF drivers, use **!wdfkd.wdflogdump** as usual. It will print out both the framework IFR log and the driver IFR log.
+For KMDF and UMDF drivers, use [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md) as usual. It will print out both the framework IFR log and the driver IFR log.
 
-For WDM drivers, use **!rcdrkd.rcdrloglist** and **!rcdrkd.rcdrlogdump**.
+For WDM drivers, use [**!rcdrkd.rcdrloglist**](../debugger/-rcdrkd-rcdrloglist.md) and [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md).
 
 
 ## Configure Inflight Trace Recorder parameters
