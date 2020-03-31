@@ -76,7 +76,7 @@
           href: camera-photo-failure-rate.md
         - name: "Percent of Camera video and stream failures"
           href: camera-video-and-stream-failure-rate.md
-      - name: "Fingerprint"
+      - name: "Fingerprint-Biometric"
         items:
         - name: "Fingerprint measures"
           href: fingerprint-measures.md
