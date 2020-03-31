@@ -21,7 +21,7 @@ Typically, the firmware update driver is a lightweight device driver that does t
 * At device start or in the driver's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
     1. Identify the device to which it is attached.
-    2. Determine whether the driver has a firmware version that is more recent than the version on the device.
+    2. Determine whether the driver has a firmware version that is more recent than the version on the firmware currently flashed on device hardware.
     3. If a firmware update is necessary, set an event timer to schedule the update.
     4. Otherwise, do nothing until the driver is started again.
 

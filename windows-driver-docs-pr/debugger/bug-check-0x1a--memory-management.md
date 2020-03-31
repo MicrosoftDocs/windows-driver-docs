@@ -146,12 +146,11 @@ Parameter 1 identifies the exact violation.
 <td align="left"><p>The memory store component’s private memory range is corrupted, causing it to become inaccessible. Parameter 2 is the returned status.  Parameter 3 is the virtual address in the store’s private memory range. Parameter 4 is the MemoryDescriptorList.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x8884</p></td>
-<td align="left"><p>(Windows 7 only). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
+<td align="left"><p>0x8884</p><p>0x8885</p><p>0x8886</p><p>0x8887</p></td>
+<td align="left"><p>(Windows 7 and later). Two pages on the standby list that were supposed to have identical page priority values do not, in fact, have identical page priority values. The differing values are captured in parameter 4.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>0x8888</p>
-<p>0x8889</p></td>
+<td align="left"><p>0x8888</p><p>0x8889</p></td>
 <td align="left"><p>Internal memory management structures are corrupted.</p></td>
 </tr>
 <tr class="even">
