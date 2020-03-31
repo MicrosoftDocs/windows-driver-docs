@@ -84,3 +84,7 @@ The following matrix lists NVME features and indicates the support provided by *
 | NVMe Boot                                                      | X | |
 | Controller Fatal Status Condition                              | X | Log the event and continue with controller re-initialization |
 --->
+
+## Reference Links
+- [Working with NVMe Devices](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices)
+- [NVMe Storage Protocal Data Type](https://docs.microsoft.com/windows/win32/api/winioctl/ne-winioctl-storage_protocol_nvme_data_type)
