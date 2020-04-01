@@ -41,6 +41,10 @@ When you install Visual Studio 2019, select the **Desktop development with C++**
 
 If you already have Visual Studio 2019 installed, you can install the Windows 10 Preview SDK (10.0.18362.0) by using the **Modify** button in Visual Studio install.
 
+Verify that you have correct version of MSVC v142 build tools for x86/x64 installed by 
+1. Choose **Individual components**
+1. Under **Compilers, build tools, and runtimes**, options **MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)** should be checked and if not please go ahead and check it.
+
 For ARM/ARM64 driver development: 
 
 1. Choose **Individual components**. 
