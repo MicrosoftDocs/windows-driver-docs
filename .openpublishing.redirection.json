@@ -1333,7 +1333,7 @@
     {
       "source_path": "windows-driver-docs-pr/network/mb-uicc-reset-operations.md",
       "redirect_URL": "/windows-hardware/drivers/network/mb-low-level-uicc-access#mbimcidmsuiccreset",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/ndis-status-receive-filter-queue-allocation-state.md",
