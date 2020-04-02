@@ -205,8 +205,6 @@
       "redirect_URL": "/windows-hardware/drivers/dashboard/driver-failure-reporting",
       "redirect_document_id": false
     },
-
-
     {
       "source_path": "windows-driver-docs-pr/devtest/boot-options-in-windows-vista-and-later.md",
       "redirect_URL": "/windows-hardware/drivers/devtest/boot-options-in-windows",
@@ -842,7 +840,7 @@
       "redirect_URL": "/windows-hardware/drivers/devtest/installing-the-checked-build",
       "redirect_document_id": true
     },
-        {
+    {
       "source_path": "initial-setup-by-software.md",
       "redirect_URL": "/windows-hardware/drivers/usbcon/u1-and-u2-transitions",
       "redirect_document_id": true
@@ -1335,7 +1333,7 @@
     {
       "source_path": "windows-driver-docs-pr/network/mb-uicc-reset-operations.md",
       "redirect_URL": "/windows-hardware/drivers/network/mb-low-level-uicc-access#mbimcidmsuiccreset",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows-driver-docs-pr/network/ndis-status-receive-filter-queue-allocation-state.md",
@@ -1476,7 +1474,7 @@
       "source_path": "windows-driver-docs-pr/3dprint/microsoft-3d-printer-drivers.md",
       "redirect_URL": "/windows-hardware/drivers/3dprint/index",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/net-buffer-checksum-bias.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_checksum_bias",
@@ -6056,17 +6054,17 @@
       "source_path": "windows-driver-docs-pr/image/ws-dsp-operation-elements.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/image/ws-dsp-operations.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/image/ws-dsp-scenario--device-initiated-scan.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/image/ws-dsp-scenarios.md",
       "redirect_URL": "/windows-hardware/drivers/image/index",
@@ -6171,11 +6169,13 @@
       "source_path": "windows-driver-docs-pr/audio/windows-vista-sapo-feature-reference.md",
       "redirect_URL": "/windows-hardware/drivers/audio/audio-processing-object-architecture",
       "redirect_document_id": false
-    },    {
+    },
+    {
       "source_path": "windows-driver-docs-pr/audio/custom-ui-design-information.md",
       "redirect_URL": "/windows-hardware/drivers/audio/implementing-a-ui-for-configuring-apo-effects",
       "redirect_document_id": false
-    },     {
+    },
+    {
       "source_path": "windows-driver-docs-pr/audio/implementing-a-ui-for-configuring-sapos.md",
       "redirect_URL": "/windows-hardware/drivers/audio/implementing-a-ui-for-configuring-apo-effects",
       "redirect_document_id": false
@@ -6219,12 +6219,12 @@
       "source_path": "windows-driver-docs-pr/audio/windows-vista-audio-system-effects.md",
       "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objectst",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/audio/audio-system-effects.md",
       "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objects",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/audio/system-effects-audio-processing-objects.md",
       "redirect_URL": "/windows-hardware/drivers/audio/windows-audio-processing-objects",
@@ -6419,7 +6419,7 @@
       "source_path": "windows-driver-docs-pr/network/porting-protocol-driver-initialization-to-ndis-6-0.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/porting-protocol-driver-initialization-to-ndis-6-0",
       "redirect_document_id": true
-    }, 
+    },
     {
       "source_path": "windows-driver-docs-pr/network/updating-the-driverentry-routine-for-an-ndis-6-0-protocol-driver.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-the-driverentry-routine-for-an-ndis-6-0-protocol-driver",
@@ -6684,7 +6684,7 @@
       "source_path": "windows-driver-docs-pr/network/ndis-6-0-task-offload-porting-issues.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-task-offload-porting-issues",
       "redirect_document_id": true
-    },  
+    },
     {
       "source_path": "windows-driver-docs-pr/network/ndis-6-0-support-for-task-offload.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-6-0-support-for-task-offload",
@@ -6889,17 +6889,17 @@
       "source_path": "windows-driver-docs-pr/network/ndis-tcp-chimney-offload.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-tcp-chimney-offload",
       "redirect_document_id": true
-    },     
+    },
     {
       "source_path": "windows-driver-docs-pr/network/overview-of-tcp-chimney-offload.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/overview-of-tcp-chimney-offload",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/tcp-chimney-architecture.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-architecture",
       "redirect_document_id": true
-    },  
+    },
     {
       "source_path": "windows-driver-docs-pr/network/compliance-with-ietf-rfcs.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/compliance-with-ietf-rfcs",
@@ -6934,7 +6934,7 @@
       "source_path": "windows-driver-docs-pr/network/initializing-an-offload-target.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initializing-an-offload-target",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/registering-chimney-offload-functions.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/registering-chimney-offload-functions",
@@ -6954,7 +6954,7 @@
       "source_path": "windows-driver-docs-pr/network/tcp-chimney-offload-state.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-offload-state",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/layers-of-offload-state.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/layers-of-offload-state",
@@ -7004,7 +7004,7 @@
       "source_path": "windows-driver-docs-pr/network/offloading-tcp-chimney-state.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/offloading-tcp-chimney-state",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/initiate-offload-call-sequence.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initiate-offload-call-sequence",
@@ -7074,7 +7074,7 @@
       "source_path": "windows-driver-docs-pr/network/querying-offloaded-state.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/querying-offloaded-state",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/query-offload-sequence.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/query-offload-sequence",
@@ -7094,7 +7094,7 @@
       "source_path": "windows-driver-docs-pr/network/updating-offloaded-state.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/updating-offloaded-state",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/reasons-for-updating-offloaded-state-objects.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reasons-for-updating-offloaded-state-objects",
@@ -7129,7 +7129,7 @@
       "source_path": "windows-driver-docs-pr/network/invalidating-offloaded-state.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/invalidating-offloaded-state",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/reasons-for-invalidating-offloaded-state-objects.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/reasons-for-invalidating-offloaded-state-objects",
@@ -7154,7 +7154,7 @@
       "source_path": "windows-driver-docs-pr/network/terminating-offload-state.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/terminating-offload-state",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/terminate-offload-requested-by-an-offload-target.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/terminate-offload-requested-by-an-offload-target",
@@ -7179,7 +7179,7 @@
       "source_path": "windows-driver-docs-pr/network/handling-buffered-receive-data-during-a-terminate-offload-operation.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-buffered-receive-data-during-a-terminate-offload-operation",
       "redirect_document_id": true
-    },  
+    },
     {
       "source_path": "windows-driver-docs-pr/network/handling-send-requests-during-a-terminate-offload-operation.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/handling-send-requests-during-a-terminate-offload-operation",
@@ -7199,7 +7199,7 @@
       "source_path": "windows-driver-docs-pr/network/tcp-chimney-data-i-o-operations.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-data-i-o-operations",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/sending-data-from-an-offload-target.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/sending-data-from-an-offload-target",
@@ -7304,7 +7304,7 @@
       "source_path": "windows-driver-docs-pr/network/indicating-chimney-related-events.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/indicating-chimney-related-events",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/making-a-neighborreachabilityquery-indication.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/making-a-neighborreachabilityquery-indication",
@@ -7324,7 +7324,7 @@
       "source_path": "windows-driver-docs-pr/network/closing-an-offloaded-tcp-connection.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/closing-an-offloaded-tcp-connection",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/responding-to-a-disconnect-request.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/responding-to-a-disconnect-request",
@@ -7339,7 +7339,7 @@
       "source_path": "windows-driver-docs-pr/network/tcp-timers-maintained-by-an-offload-target.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-timers-maintained-by-an-offload-target",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/overview-of-tcp-timers.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/overview-of-tcp-timers",
@@ -7384,7 +7384,7 @@
       "source_path": "windows-driver-docs-pr/network/generating-and-using-timestamps.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/generating-and-using-timestamps",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/calculating-the-timestamp-delta.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/calculating-the-timestamp-delta",
@@ -7414,7 +7414,7 @@
       "source_path": "windows-driver-docs-pr/network/tcp-chimney-offload-for-intermediate-drivers.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-offload-for-intermediate-drivers",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/initializing-a-tcp-chimney-capable-intermediate-driver.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/initializing-a-tcp-chimney-capable-intermediate-driver",
@@ -7499,7 +7499,7 @@
       "source_path": "windows-driver-docs-pr/network/tcp-chimney-offload-status-indications.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/tcp-chimney-offload-status-indications",
       "redirect_document_id": true
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/network/ndis-status-offload-pause.md",
       "redirect_URL": "https://docs.microsoft.com/previous-versions/windows/hardware/network/ndis-status-offload-pause",
@@ -7524,17 +7524,17 @@
       "source_path": "windows-driver-docs-pr/print/devices-and-printers.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/print/document-devices-in-devices-and-printers.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/print/device-experience-in-devices-and-printers.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/device-stage-custom-experience.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/print/device-experience-scenarios-for-document-devices",
@@ -7564,7 +7564,8 @@
       "source_path": "windows-driver-docs-pr/wdf/wdf-device-object-macros.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/",
       "redirect_document_id": false
-    },{
+    },
+    {
       "source_path": "windows-driver-docs-pr/wdf/wdfdeviceresumeidlewithtag.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceresumeidlewithtag",
       "redirect_document_id": false
@@ -7593,86 +7594,101 @@
       "source_path": "windows-driver-docs-pr/dashboard/schedule-custom-reports-for-driver-failure-details.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/enable-secure-data-sharing.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/create-a-new-report-template.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/schedule-a-new-report.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/get-report-data.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/legacy-error-reporting-data-process.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/download-failure-cabs.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/get-error-reporting-data-for-windows-10-drivers.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/get-details-for-a-windows-10-driver-error.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/download-the-cab-file-for-a-windows-10-driver-error.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/get-error-reporting-data-for-windows-7-and-windows-8.x-drivers.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/get-details-for-a-windows-7-or-windows-8.x-driver-error.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/download-the-cab-file-for-a-windows-7-or-windows-8.x-driver-error.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/get-oem-hardware-error-reporting-data.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/get-details-for-an-oem-hardware-error.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/dashboard/download-the-cab-file-for-an-oem-hardware-error.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows-driver-docs-pr/devtest/introduction-to-boot-options.md",
       "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/develop/attestation-signing-a-kernel-driver-for-public-release.md",
+      "redirect_url": "https://msdn.microsoft.com/library/windows/hardware/mt786448",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/nfc/nfc-design-guide.md",
+      "redirect_url": "https://msdn.microsoft.com/windows/hardware/drivers/nfc/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows-driver-docs-pr/wdf/design-guide.md",
+      "redirect_url": "https://msdn.microsoft.com/windows/hardware/drivers/wdf/",
+      "redirect_document_id": false
     }
   ]
 }
