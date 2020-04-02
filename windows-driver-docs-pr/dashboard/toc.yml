@@ -81,7 +81,7 @@
         - name: "Fingerprint measures"
           href: fingerprint-measures.md
         - name: "Success Rate of Fingerprint Enrollment"
-          href: success-rate-fingerprint-enrollent.md
+          href: success-rate-fingerprint-enrollment.md
         - name: "Success Rate of Fingerprint Signin Experience"
           href: success-rate-fingerprint-signin-experience.md
       - name: "Firmware"
