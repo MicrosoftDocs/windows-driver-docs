@@ -36,14 +36,15 @@ The following editions of Visual Studio 2019 support driver development for this
 When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the WDK for Windows 10, version 1903 may not be the default SDK. To select the correct SDK:
 
 1. In **Visual Studio Installer**, on the **Workloads** tab, under **Installation Details**, expand **Universal Windows Platform development**.
-1. Under **Optional**, select **Windows 10 Preview SDK (10.0.18362.0)**.
+1. Under **Optional**, select **Windows 10 SDK (10.0.18362.0)**.
 1. Continue with the install.
 
-If you already have Visual Studio 2019 installed, you can install the Windows 10 Preview SDK (10.0.18362.0) by using the **Modify** button in Visual Studio install.
+If you already have Visual Studio 2019 installed, you can install the Windows 10 SDK (10.0.18362.0) by using the **Modify** button in Visual Studio install.
 
 Verify that you have correct version of MSVC v142 build tools for x86/x64 installed by 
 1. Choose **Individual components**
 1. Under **Compilers, build tools, and runtimes**, options **MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)** should be checked and if not please go ahead and check it.
+1. If later versions of MSVC build tools are already installed then you would need to set the MSCV version in Project's Porperities inside VS. Go to **Configuration Properties** then **Advanced** then set **MSVC Toolset Version** to **14.21.XXXX**. If you want to use comandline then follow this [VS Link](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=vs-2019).
 
 For ARM/ARM64 driver development: 
 
