@@ -248,7 +248,7 @@ For all other device control requests, Kbfiltr skips the current IRP stack and s
 
 I8042prt calls <b>KbFilter_InitializationRoutine</b> when it initializes the keyboard. Default keyboard initialization includes the following operations: reset the keyboard, set the typematic rate and delay, and set the light-emitting diodes (LED).
 
-<pre><code>
+```cpp
 /*
 Parameters
 DeviceObject [in]
@@ -272,13 +272,14 @@ KbFilter_InitializationRoutine returns an appropriate NTSTATUS code.
 */
 
 NTSTATUS KbFilter_InitializationRoutine(
-  <em>In</em>  PDEVICE_OBJECT          DeviceObject,
-  <em>In</em>  PVOID                   SynchFuncContext,
-  <em>In</em>  PI8042_SYNCH_READ_PORT  ReadPort,
-  <em>In</em>  PI8042_SYNCH_WRITE_PORT WritePort,
-  <em>Out</em> PBOOLEAN                TurnTranslationOn
+  In  PDEVICE_OBJECT          DeviceObject,
+  In  PVOID                   SynchFuncContext,
+  In  PI8042_SYNCH_READ_PORT  ReadPort,
+  In  PI8042_SYNCH_WRITE_PORT WritePort,
+  Out PBOOLEAN                TurnTranslationOn
 );
-</code></pre>
+```
+
 </li>
 <li>
 <b>KbFilter_IsrHook</b> (see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_keyboard_isr"><i>PI8042_KEYBOARD_ISR</i></a>)
@@ -289,7 +290,7 @@ The I8042prt keyboard ISR calls <b>KbFilter_IsrHook</b> after it validates the i
 
 <b>KbFilter_IsrHook</b> runs in kernel mode at the IRQL of the I8042prt keyboard ISR.
 
-<pre><code>
+```cpp
 /*
 Parameters
 DeviceObject [in]
@@ -319,15 +320,16 @@ KbFilter_IsrHook returns TRUE if the interrupt service routine should continue; 
 */
 
 KbFilter_IsrHook KbFilter_IsrHook(
-  <em>In</em>    PDEVICE_OBJECT       DeviceObject,
-  <em>In</em>    PKEYBOARD_INPUT_DATA CurrentInput,
-  <em>In</em>    POUTPUT_PACKET       CurrentOutput,
-  <em>Inout</em> UCHAR                StatusByte,
-  <em>In</em>    PUCHAR               DataByte,
-  <em>Out</em>   PBOOLEAN             ContinueProcessing,
-  <em>In</em>    PKEYBOARD_SCAN_STATE ScanState
+  In    PDEVICE_OBJECT       DeviceObject,
+  In    PKEYBOARD_INPUT_DATA CurrentInput,
+  In    POUTPUT_PACKET       CurrentOutput,
+  Inout UCHAR                StatusByte,
+  In    PUCHAR               DataByte,
+  Out   PBOOLEAN             ContinueProcessing,
+  In    PKEYBOARD_SCAN_STATE ScanState
 );
-</code></pre>
+```
+
 </li>
 <li>
 <b>KbFilter_ServiceCallback</b> (see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/kbdmou/nc-kbdmou-pservice_callback_routine"><i>PSERVICE_CALLBACK_ROUTINE</i></a>)
@@ -336,7 +338,7 @@ The ISR dispatch completion routine of the function driver calls <b>KbFilter_Ser
 
 A vendor can implement a filter service callback to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data.
 
-<pre><code>
+```cpp
 /*
 Parameters
 DeviceObject [in]
@@ -357,12 +359,13 @@ None
 */
 
 VOID KbFilter_ServiceCallback(
-  <em>In</em>    PDEVICE_OBJECT       DeviceObject,
-  <em>In</em>    PKEYBOARD_INPUT_DATA InputDataStart,
-  <em>In</em>    PKEYBOARD_INPUT_DATA InputDataEnd,
-  <em>Inout</em> PULONG               InputDataConsumed
+  In    PDEVICE_OBJECT       DeviceObject,
+  In    PKEYBOARD_INPUT_DATA InputDataStart,
+  In    PKEYBOARD_INPUT_DATA InputDataEnd,
+  Inout PULONG               InputDataConsumed
 );
-</code></pre>
+```
+
 </li>
 </ul>
 
@@ -434,7 +437,7 @@ For all other requests, Moufiltr skips the current IRP stack and sends the reque
 <li>
 <b>MouFilter_IsrHook</b> (See  <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_mouse_isr"><i>PI8042_MOUSE_ISR</i></a>)
 
-<pre><code>
+```cpp
 /*
 Parameters
 DeviceObject
@@ -476,7 +479,7 @@ BOOLEAN MouFilter_IsrHook(
    PMOUSE_STATE          MouseState,
    PMOUSE_RESET_SUBSTATE ResetSubState
 );
-</code></pre>
+```
 
 A <b>MouFilter_IsrHook</b> callback is not needed if the default operation of I8042prt is sufficient.
 
@@ -490,7 +493,7 @@ To reset a mouse, I8042prt goes through a sequence of operational substates, eac
 <li>
 <b>MouFilter_ServiceCallback</b> (See <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/kbdmou/nc-kbdmou-pservice_callback_routine"><i>PSERVICE_CALLBACK_ROUTINE</i></a>)
 
-<pre><code>
+```cpp
 /*
 Parameters
 DeviceObject [in]
@@ -516,7 +519,7 @@ VOID MouFilter_ServiceCallback(
   _In_    PMOUSE_INPUT_DATA InputDataEnd,
   _Inout_ PULONG            InputDataConsumed
 );
-</code></pre>
+```
 
 The ISR DPC of I8042prt calls MouFilter_ServiceCallback, which then calls MouseClassServiceCallback. A filter service callback can be configured to modify the input data that is transferred from the device's input buffer to the class data queue. For example, the callback can delete, transform, or insert data.
 </li>
