@@ -73,11 +73,11 @@ This way, a single installer can make use of primitive drivers on compatible OS 
 
 ## Converting from a device driver INF
 
-Converting an INF that uses \[Manufacturer\] to one that uses \[DefaultInstall\] requires minor changes to the INF. Unlike a \[Manufacturer\] section, a \[DefaultInstall\] section is both an entry points and an install section. This conceptually combines the \[Manufacturer\], \[Models\], and \[DDInstall\] section into one.
+Converting an INF that uses \[Manufacturer\] to one that uses \[DefaultInstall\] requires minor changes to the INF. Unlike a \[Manufacturer\] section, a \[DefaultInstall\] section is both an entry point and an install section. This conceptually combines the \[Manufacturer\], \[Models\], and \[DDInstall\] section into one.
 
 Consider the following device driver INF:
 
-```
+```ini
 [Manufacturer]
 %Company% = Driver, NTx86, NTamd64
 
@@ -96,9 +96,9 @@ CopyFiles=MyCopyFiles_x86
 AddReg=MyAddReg
 ```
 
-This INF will receive an 1297 error in InfVerif because it doesn't install on any hardware. This INF can be converted to a \[DefaultInstall\]-based INF, as shown below.
+This INF will receive an 1297 error in [InfVerif](../devtest/infverif.md) because it doesn't install on any hardware. This INF can be converted to a \[DefaultInstall\]-based INF, as shown below.
 
-```
+```ini
 [DefaultInstall.NTamd64]
 CopyFiles=MyCopyFiles_64
 AddReg=MyAddReg
