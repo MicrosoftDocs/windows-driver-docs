@@ -70,3 +70,40 @@ The \[DefaultInstall\] and \[DefaultUninstall\] sections **must still be archite
 Beginning with Windows 10 version 1903, if you pass an architecture-decorated \[DefaultInstall\] or
 \[DefaultUninstall\] section in to the [InstallHInfSection](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-installhinfsectionw) API in setupapi.dll, the driver package will be checked to determine if it supports primitive driver functionality. If it does support primitive driver functionality, rather than process the specified section in the legacy way, the INF is passed to [DiInstallDriver](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diinstalldrivera) or [DiUninstallDriver](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diuninstalldriverw), as appropriate. 
 This way, a single installer can make use of primitive drivers on compatible OS versions and maintain support for previous OS versions.
+
+## Converting from a device driver INF
+
+Converting an INF that uses \[Manufacturer\] to one that uses \[DefaultInstall\] requires minor changes to the INF. Unlike a \[Manufacturer\] section, a \[DefaultInstall\] section is both an entry point and an install section. This conceptually combines the \[Manufacturer\], \[Models\], and \[DDInstall\] section into one.
+
+Consider the following device driver INF:
+
+```ini
+[Manufacturer]
+%Company% = Driver, NTx86, NTamd64
+
+[Driver.NTx86]
+%DeviceDesc% = InstallSection_32,
+
+[Driver.NTamd64]
+%DeviceDesc% = InstallSection_64,
+
+[InstallSection_64]
+CopyFiles=MyCopyFiles_64
+AddReg=MyAddReg
+
+[InstallSection_32]
+CopyFiles=MyCopyFiles_x86
+AddReg=MyAddReg
+```
+
+This INF will receive an 1297 error in [InfVerif](../devtest/infverif.md) because it doesn't install on any hardware. This INF can be converted to a \[DefaultInstall\]-based INF, as shown below.
+
+```ini
+[DefaultInstall.NTamd64]
+CopyFiles=MyCopyFiles_64
+AddReg=MyAddReg
+
+[DefaultInstall.NTx86]
+CopyFiles=MyCopyFiles_x86
+AddReg=MyAddReg
+```
