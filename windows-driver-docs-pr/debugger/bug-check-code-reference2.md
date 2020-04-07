@@ -2,24 +2,55 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
-ms.date: 02/12/2020
+ms.date: 04/03/2020
 ms.localizationpriority: high
 ---
 
 # Bug Check Code Reference
 
-This section contains descriptions of common bug check codes, including the parameters displayed with the error code on the blue bug check screen. This section also describes how you can diagnose the fault which led to the bug check, as well as possible ways to deal with the error.
+This section contains descriptions of common bug check codes that are displayed on the blue bug check screen. This section also describes how you can use the [**!analyze**](-analyze.md) extension in the Windows Debugger to display information about a bug check code.
 
-> [!NOTE] 
+> [!NOTE]
 > This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
-If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
+## Using WinDbg to display stop code information
+
+If a specific bug check code does not appear in this topic, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
 
 `!analyze -show <code>`
 
 Entering this command causes WinDbg to display information about the specified bug check code. If your default number base (radix) is not 16, prefix `<code>` with **0x**.
 
-The following table shows the code and name of each bug check code.
+Provide the stop code parameters to the !analyze command to display any available parameter information. For example, to display information on [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](bug-check-0x9f--driver-power-state-failure.md), with a parameter 1 value of 0x3, use `!analyze -show 0x9F 0x3` as shown here.  
+
+```dbgcmd
+1: kd> !analyze -show 0x9F 0x3
+DRIVER_POWER_STATE_FAILURE (9f)
+A driver has failed to complete a power IRP within a specific time.
+Arguments:
+Arg1: 0000000000000003, A device object has been blocking an Irp for too long a time
+Arg2: 0000000000000000, Physical Device Object of the stack
+Arg3: 0000000000000000, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
+Arg4: 0000000000000000, The blocked IRP
+```
+
+To download WinDbg, see [Download Debugging Tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
+
+## Bug check dump files
+
+When a bug check occurs, a dump file may be available that contains additional information about the contents of memory when the stop code occurred. To understand the contents of memory during a failure, knowledge of processor memory registers and assembly is required.
+
+For more information, see:
+
+- [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+
+- [!analyze](-analyze.md)
+
+- [Processor Architecture](processor-architecture.md)
+
+## Bug Check Codes
+
+The following table provides links to bug check codes.
 
 | Code       | Name                                                                                                                                              |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
