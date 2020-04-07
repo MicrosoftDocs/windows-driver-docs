@@ -1052,7 +1052,7 @@
     },
     {
       "source_path": "windows-driver-docs-pr/install/signing-drivers-during-development-and-test--windows-vista-and-later-.md",
-      "redirect_URL": "/windows-hardware/drivers/install/signing-drivers-during-development-and-test.md",
+      "redirect_URL": "/windows-hardware/drivers/install/signing-drivers-during-development-and-test",
       "redirect_document_id": true
     },
     {
