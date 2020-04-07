@@ -88,22 +88,34 @@ Consider the following device driver INF:
 %DeviceDesc% = InstallSection_64,
 
 [InstallSection_64]
-CopyFiles=MyCopyFiles_64
-AddReg=MyAddReg
+CopyFiles = MyCopyFiles_64
+AddReg = MyAddReg
+
+[InstallSection_64.Services]
+AddService = MyService,, MyService_Install
 
 [InstallSection_32]
-CopyFiles=MyCopyFiles_x86
-AddReg=MyAddReg
+CopyFiles = MyCopyFiles_x86
+AddReg = MyAddReg
+
+[InstallSection_32.Services]
+AddService = MyService,, MyService_Install
 ```
 
 This INF will receive an 1297 error in InfVerif because it doesn't install on any hardware. This INF can be converted to a \[DefaultInstall\]-based INF, as shown below.
 
 ```
 [DefaultInstall.NTamd64]
-CopyFiles=MyCopyFiles_64
-AddReg=MyAddReg
+CopyFiles = MyCopyFiles_64
+AddReg = MyAddReg
+
+[DefaultInstall.NTamd64.Services]
+AddService = MyService,, MyService_Install
 
 [DefaultInstall.NTx86]
-CopyFiles=MyCopyFiles_x86
-AddReg=MyAddReg
+CopyFiles = MyCopyFiles_x86
+AddReg = MyAddReg
+
+[DefaultInstall.NTx86.Services]
+AddService = MyService,, MyService_Install
 ```
