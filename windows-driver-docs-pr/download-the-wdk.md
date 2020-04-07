@@ -44,7 +44,7 @@ If you already have Visual Studio 2019 installed, you can install the Windows 10
 Verify that you have correct version of MSVC v142 build tools for x86/x64 installed by 
 1. Choose **Individual components**
 1. Under **Compilers, build tools, and runtimes**, options **MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.21)** should be checked and if not please go ahead and check it.
-1. If later versions of MSVC build tools are already installed then you would need to set the MSVC version in Project's Properties inside VS. Go to **Configuration Properties** then **Advanced** then set **MSVC Toolset Version** to **14.21.XXXX**. If you want to use command line then follow this [VS Link](https://docs.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=vs-2019).
+1. If later versions of MSVC build tools are already installed then you would need to set the MSVC version in Project's Properties inside VS. Go to **Configuration Properties** then **Advanced** then set **MSVC Toolset Version** to **14.21.XXXX**. If you want to use command line then follow this [VS Link](https://docs.microsoft.com/cpp/build/building-on-the-command-line?view=vs-2019).
 
 For ARM/ARM64 driver development: 
 
