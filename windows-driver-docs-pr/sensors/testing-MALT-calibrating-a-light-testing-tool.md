@@ -37,7 +37,7 @@ Use the below equation and the matrices you just built to generate the calibrati
 
 ![Calibration Formula](images/calibration.png)
 
-INSERT EXCEL SPREADSHEET HERE
+[CLICK HERE FOR EXCEL SPREADSHEET](https://1drv.ms/x/s!ArMRS6_gMCd5vmkVn2rPrb31yfgp?e=CIIpKR)
 
 K is a 3x3 matrix such that: 
 
