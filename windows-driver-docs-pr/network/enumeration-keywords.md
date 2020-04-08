@@ -47,6 +47,9 @@ The ability for the device to enable or disable flow control in the send or rece
 **Note**  
 Ethernet devices today support flow control, and the Windows 8 in-box drivers for LAN have flow control enabled by default. When a kernel debugger attaches to one of these LAN adapters, the NIC will start pushing flow control pause frames into the network. Most network switches will react by temporarily taking down the network for all other computers that are connected to the same hub. This is a common development scenario, and the end-user experience is both undesirable and difficult to diagnose.
 
+**Note**  
+Client and Server defaults are not the same; refer to the table of defaults below.
+
 For this reason, in Windows 8 and later, NDIS will disable flow control automatically when debugging is enabled on the computer (for example, by typing **bcdedit /set debug on** at the command line). When kernel debugging is enabled and the miniport calls [**NdisReadConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreadconfiguration) and passes "\*FlowControl" for the *Keyword* parameter, NDIS will override the configured value and return zero.
 
 If you need to enable flow control while debugging, NDIS provides the **AllowFlowControlUnderDebugger** registry value to allow you to do that. The **AllowFlowControlUnderDebugger** registry value prevents NDIS from disabling flow control, and allows NICs to keep their configured behavior. It can be found under the following registry key:
