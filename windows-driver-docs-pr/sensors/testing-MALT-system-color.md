@@ -26,7 +26,7 @@ This topic provides instructions on how to test color by using the MALT (Microso
    
 3. **Configure background color and sleep for SUT.**  The configuration script [MALT_SUT_Setup.bat](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT/Code/Scripts) will properly setup your device for testing.  From an elevated command prompt run ``MALT_SUT_Setup.bat`` and follow the script instructions.
 
-4. **Use SensorExplorer to gather color values.** Once you are connected to the MALT in SensorExplorer, all functions of the MALT are available via butons in the Home tab.
+4. **Use SensorExplorer to gather color values.** Once you are connected to the MALT in SensorExplorer, all functions of the MALT are available via buttons in the Home tab.
 
 ## MALT sensor placement
 
