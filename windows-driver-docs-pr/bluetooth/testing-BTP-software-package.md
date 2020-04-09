@@ -21,8 +21,8 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 | Version | Changes |
 | --- | --- |
-| 1.2.1 | <ul><li>Moving BTP from private preview to public.</li><li>Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</li><li>Several fixes and improvements to test reliability.</li><ul> |
 | 1.3.1 | <ul><li>Added audio tests capable of exercising A2DP and HFP.</li><li>Added audio volume validation and glitch detection via an FPGA on the Traduci.</li><li>Renamed tests to shoter and more user friendly names.</li><li>Several fixes and improvements to test reliability.</li><ul> |
+| 1.2.1 | <ul><li>Moving BTP from private preview to public.</li><li>Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</li><li>Several fixes and improvements to test reliability.</li><ul> |
 
 ## Tools in the package ##
 
