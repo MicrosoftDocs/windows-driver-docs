@@ -130,7 +130,7 @@ The device setup classes are different from USB device classes discussed earlier
          <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</td>
          <td>Uaspstor.sys is the class driver for SuperSpeed USB devices that support bulk stream endpoints. For more information see:
           <ul>
-           <li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642103(v=vs.85)">Loading a UASP Storage Driver as a Class Driver on xHCI</a></li><li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642113(v=vs.85)">USB Attached SCSI (UAS) Best Practices for Windows 8</li></ul></td>
+           <li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642103(v=vs.85)">Loading a UASP Storage Driver as a Class Driver on xHCI</a></li><li><a href="https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642113(v=vs.85)">USB Attached SCSI (UAS) Best Practices for Windows 8</a></li></ul></td>
         </tr>
     </tr>
     <tr>
