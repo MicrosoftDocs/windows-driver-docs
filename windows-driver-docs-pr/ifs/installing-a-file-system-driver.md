@@ -29,7 +29,7 @@ The Setup application programming interface ([SetupAPI](https://docs.microsoft.c
 
 The installation process is controlled by INF files. For more information about INF files:
 
-- For file system driver-specific INF file information, see [below](##creating-an-inf-file-for-a-file-system-driver)
+- For file system driver-specific INF file information, see [below](#creating-an-inf-file-for-a-file-system-driver)
 
 - For more information about general driver installation (including information about driver packages, INF files, and driver signing), see [Device and Driver Installation](https://docs.microsoft.com/windows-hardware/drivers/install/).
 

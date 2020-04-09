@@ -1051,14 +1051,14 @@
                              "redirect_document_id":  true
                          },
                          {
-                             "source_path":  "windows-driver-docs-pr/install/signing-drivers-during-development-and-test--windows-vista-and-later-.md",
-                             "redirect_URL":  "/windows-hardware/drivers/install/signing-drivers-during-development-and-test",
+                            "source_path":  "windows-driver-docs-pr/hid/minidriver-supplied-callbacks.md",
+                            "redirect_URL":  "/windows-hardware/drivers/hid/joystick-support",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/signing-drivers-during-development-and-test--windows-vista-and-later-.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/signing-drivers-during-development-and-test",
                              "redirect_document_id":  false
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/hid/minidriver-supplied-callbacks.md",
-                             "redirect_URL":  "/windows-hardware/drivers/hid/joystick-support",
-                             "redirect_document_id":  true
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/sensors/architecture-overview.md",
