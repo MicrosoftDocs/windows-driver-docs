@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 
 # Using WHEA on Windows 10
 
-In Windows 10, version 2004,  Windows Hardware Error Architecture (WHEA) includes a new interface (v2).  This page describes how to register as an error source and report errors.
+In Windows 10, version 2004, Windows Hardware Error Architecture (WHEA) includes a new interface (v2).  This page describes how to register as an error source and report errors.
 
 ## Registering as an Error Source
 
-To register with WHEA as an error source on Windows 10, the driver should do the following:
+To register with WHEA as an error source using WHEA v2, the driver should do the following:
 
 1. Specify a configuration for your device driver by instantiating a [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-whea_error_source_configuration_device_driver) structure.
 2. Call [**WheaAddErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver), providing the configuration structure.  To remove an error source at a later time, call [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver).
@@ -22,20 +22,18 @@ To register with WHEA as an error source on Windows 10, the driver should do the
 
 ## Reporting an Error
 
-After WHEA calls the initialize callback, follow these steps to report an error:
+After WHEA calls the initialize callback, use the following steps to report an error. Steps 1-3 should be done sequentially, at the same time.
 
-1. Call [**WheaCreateHwErrorReportDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheacreatehwerrorreportdevicedriver).  Provide the *ErrorSourceId* and, optionally, a *DeviceObject* for your driver.  The routine returns a handle to the in progress error.
+1. Call [**WheaCreateHwErrorReportDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheacreatehwerrorreportdevicedriver), providing the *ErrorSourceId* and, optionally, a *DeviceObject* for the driver.  The routine returns a handle to the in progress error.
 
 2. To add data to the error, call [**WheaAddHwErrorReportSectionDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheaaddhwerrorreportsectiondevicedriver), providing the error handle.  This function adds a single section to the error report and configures a driver-supplied data buffer.  The driver can call this routine up to **MaxSectionsPerReport** times as specified in [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-whea_error_source_configuration_device_driver).
 
-3. The driver calls [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver), again providing the error handle. After this call, buffers in the buffer sets are unavailable and the handle is invalid.
-
-4. If an error has occurred or the error is no longer valid, the driver can optionally call [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver).  No report is submitted to WHEA.
-
-Reporting an error should be an atomic operation. Create and submit errors all at once.
-
-The driver must call either [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver) or [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver) on every handle created by [**WheaCreateHwErrorReportDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheacreatehwerrorreportdevicedriver). Failing to do so leaks resources. Driver error sources keep track of the number of open handles and will fail to remove if any handle is still open.
-
-To set the error severity of the packet and sections, the driver can call [**WheaHwErrorReportSetSeverityDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsetseveritydevicedriver).
+Optionally, the driver can call [**WheaHwErrorReportSetSeverityDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsetseveritydevicedriver) to set the error severity of the packet and sections.
 
 [**WheaHwErrorReportSetSectionNameDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsetsectionnamedevicedriver) is a helper function for updating the FRUText without having to do it manually.
+
+3. Call [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver), again providing the error handle. After this call, buffers in the buffer sets are unavailable and the handle is invalid.
+
+4. If an error occurs or the error is no longer valid, the driver can optionally call [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver).  In this case, no report is submitted to WHEA.
+
+The driver must call either [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver) or [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver) on every handle created by [**WheaCreateHwErrorReportDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheacreatehwerrorreportdevicedriver). Otherwise, [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver) might return STATUS_RESOURCE_IN_USE.
