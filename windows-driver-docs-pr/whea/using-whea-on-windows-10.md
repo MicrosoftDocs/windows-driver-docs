@@ -32,8 +32,7 @@ After WHEA calls the initialize callback, use the following steps to report an e
 
     [**WheaHwErrorReportSetSectionNameDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsetsectionnamedevicedriver) is a helper function for updating the FRUText without having to do it manually.
 
-3. Call [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver), again providing the error handle. After this call, buffers in the buffer sets are unavailable and the handle is invalid.  
-test
+3. Call [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver), again providing the error handle. After this call, buffers in the buffer sets are unavailable and the handle is invalid.
 
 4. If an error occurs or the error is no longer valid, the driver can optionally call [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver).  In this case, no report is submitted to WHEA.
 
