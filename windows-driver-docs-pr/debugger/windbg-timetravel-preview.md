@@ -5,7 +5,7 @@ ms.date: 01/10/2020
 ms.localizationpriority: medium
 ---
 
-# WinDbg Preview - View Menu
+# WinDbg Preview - Time Travel Menu
 
 ![Small logo on windbg preview](images/windbgx-preview-logo.png)
 
