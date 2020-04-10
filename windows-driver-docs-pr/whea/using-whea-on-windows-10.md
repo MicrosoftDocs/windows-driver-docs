@@ -22,7 +22,7 @@ To register with WHEA as an error source using WHEA v2, the driver should do the
 
 ## Reporting an Error
 
-After WHEA calls the initialize callback, use the following steps to report an error. Steps 1-3 should be done sequentially, at the same time.
+After WHEA has called the driver's initialize callback, use the following steps to report an error. Steps 1-3 should be done sequentially, at the same time.
 
 1. Call [**WheaCreateHwErrorReportDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheacreatehwerrorreportdevicedriver), providing the *ErrorSourceId* and, optionally, a *DeviceObject* for the driver.  The routine returns a handle to the in progress error.
 
