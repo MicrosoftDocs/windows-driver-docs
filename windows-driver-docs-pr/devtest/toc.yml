@@ -776,6 +776,8 @@
         href: ks-ksdevicemutex.md
       - name: "KsFilterMutex"
         href: ks-ksfiltermutex.md
+      - name: "KsInvalidStreamPointer"
+        href: ks-ksinvalidstreampointer.md
       - name: "KsIrqlDDIs"
         href: ks-ksirqlddis.md
       - name: "KsIrqlDeviceCallbacks"
@@ -1040,6 +1042,8 @@
           href: wdm-irqliopassive4.md
         - name: "IrqlIoPassive5"
           href: wdm-irqliopassive5.md
+        - name: "rqlIoRtlZwPassive"
+          href: wdm-irqliortlzwpassive.md
         - name: "IrqlKeApcLte1"
           href: wdm-irqlkeapclte1.md
         - name: "IrqlKeApcLte2"
@@ -1062,6 +1066,8 @@
           href: wdm-irqlmmapclte.md
         - name: "IrqlMmDispatch"
           href: wdm-irqlmmdispatch.md
+        - name: "IrqlNtifsApcPassive"
+          href: wdm-irqlntifsapcpassive.md
         - name: "IrqlObPassive"
           href: wdm-irqlobpassive.md
         - name: "IrqlPsPassive"
@@ -1652,6 +1658,8 @@
           href: ndis-ndistimeddatasend.md
         - name: "NdisTimedOidComplete"
           href: ndis-ndistimedoidcomplete.md
+        - name: "WlanAssert"
+          href: ndis-wlanassert.md
         - name: "WlanAssociation"
           href: ndis-wlanassociation.md
         - name: "WlanConnectionRoaming"

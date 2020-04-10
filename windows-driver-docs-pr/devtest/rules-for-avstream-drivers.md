@@ -47,6 +47,10 @@ The DDI compliance rules for AVStream miniport drivers verify the DDI interface 
 <td align="left"><p>The KsIrqlDeviceCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a KS device callback function with the same IRQL it had when it was called.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p><a href="ks-ksinvalidstreampointer.md" data-raw-source="[&lt;strong&gt;KsInvalidStreamPointer&lt;/strong&gt;](ks-ksinvalidstreampointer.md)"><strong>KsInvalidStreamPointer</strong></a></p></td>
+<td align="left"><p>The KsInvalidStreamPointer rule verifies if a KS miniport driver provides a valid KS Stream Pointer as a function argument.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p><a href="ks-ksirqlfiltercallbacks.md" data-raw-source="[&lt;strong&gt;KsIrqlFilterCallbacks&lt;/strong&gt;](ks-ksirqlfiltercallbacks.md)"><strong>KsIrqlFilterCallbacks</strong></a></p></td>
 <td align="left"><p>The KsIrqlFilterCallbacks rule specifies that a kernel-streaming (KS) miniport driver returns from a KS filter callback function with the same IRQL it had when the callback function was called.</p></td>
 </tr>
