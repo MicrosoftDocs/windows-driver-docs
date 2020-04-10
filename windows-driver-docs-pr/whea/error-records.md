@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The Windows Hardware Error Architecture (WHEA) uses a standard error record format to represent all platform hardware errors. As a result, the system firmware, the Windows operating system, and user-mode applications can design hardware error reporting and recovery mechanisms that are all based on the same error record format.
 
-The format of the error records that are used by WHEA are based on the *Common Platform Error Record* as described in Appendix N of version 2.2 of the [Unified Extensible Firmware Interface (UEFI) Specification](https://go.microsoft.com/fwlink/p/?linkid=69484).
+The format of the error records that are used by WHEA are based on the *Common Platform Error Record* (CPER) as described in Appendix N of version 2.2 of the [Unified Extensible Firmware Interface (UEFI) Specification](https://go.microsoft.com/fwlink/p/?linkid=69484).
 
 The following diagram shows the general format of an error record.
 
