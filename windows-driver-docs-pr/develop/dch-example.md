@@ -1,7 +1,7 @@
 ---
-title: Windows  Driver Scenarios
+title: Windows Driver Scenarios
 description: Describes how the DCHU universal driver sample applies the DCHU design principles (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).
-ms.date: 04/04/2018
+ms.date: 04/15/2020
 ms.localizationpriority: medium
 ---
 
@@ -11,15 +11,15 @@ This topic describes how the [DCHU driver sample](https://github.com/Microsoft/W
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
-Some portions of the sample may use directives and API's that are only available on certain versions of Windows 10 and above.  Please refer to the [INF Directives](../install/inf-directives) section to see what OS version a given directive is supported on.
+Some portions of the sample may use directives and API's that are only available on certain versions of Windows 10 and above.  Please refer to [INF Directives](../install/inf-directives) to see what OS version a given directive is supported on.
 
 ## Prerequisites
 
-Before you read this section, check out the DCH Design Principles on the [DCH Design Principles and Best Practices](dch-design-principles-best-practices.md) page.
+Before you read this section, you should become familiar with the DCH Design Principles on [DCH Design Principles and Best Practices](dch-design-principles-best-practices.md).
 
 ## Overview
 
-The sample provides example scenarios where two hardware partners, Contoso (a system builder, or OEM) and Fabrikam (a device manufacturer, or IHV) are working together to create a driver that is DCH-compliant for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://go.microsoft.com/fwlink/p/?linkid=2113717).  In the past, Fabrikam would write a legacy driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  This resulted in significant maintenance overhead, so Fabrikam decides to refactor the code and create a DCH-compliant driver package instead.
+The sample provides example scenarios where two hardware partners, Contoso (a system builder, or OEM) and Fabrikam (a device manufacturer, or IHV) are working together to create a driver that is DCH-compliant for a device in Contoso's upcoming system.  The device in question is an [OSR USB FX2 learning kit](https://go.microsoft.com/fwlink/p/?linkid=2113717).  In the past, Fabrikam would write a legacy driver package that was customized to a specific Contoso product line, and then hand it to the OEM to handle servicing.  This resulted in significant maintenance overhead, so Fabrikam decided to refactor the code and create a DCH-compliant driver package instead.
 
 ## Use declarative sections/directives and properly isolate INF
 
@@ -59,7 +59,7 @@ HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"
 ```
 
-Note that extensions are always processed after the base INF in no definite order. If a base INF is updated to a newer version, then the extensions will still be re-applied after the new base INF is installed.
+Note that extensions are always processed after the base INF but in no definite order. If a base INF is updated to a newer version, then the extensions will still be re-applied after the new base INF is installed.
 
 ## Install a service from an INF file
 
@@ -151,11 +151,11 @@ The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Micr
                                               (PVOID)customCapabilities);
 ```
 
-The new app (not included in the sample) is secure and can be updated easily in the Microsoft Store.   With the UWP application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows Desktop edition images.
+The new app (not included in the sample) is secure and can be updated easily in the Microsoft Store. With the UWP application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows Desktop edition images.
 
 ## Tightly coupling multiple INF files
 
-Ideally, there should be strong versioning contracts between base, extensions and components.  There are servicing advantages in having these three packages serviced independently (the "loosely coupled" scenario), but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes examples of both scenarios:
+Ideally, there should be strong versioning contracts between base, extensions, and components.  There are servicing advantages in having these three packages serviced independently (the "loosely coupled" scenario), but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes examples of both scenarios:
 
 * [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
 * [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
@@ -198,6 +198,9 @@ Note that the component INF will match on the component hardware ID, whereas the
 [Using an Extension INF File](../install/using-an-extension-inf-file.md)
 
 [`osrfx2_DCHU_base.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/osrfx2_DCHU_base.inx
+
 [`osrfx2_DCHU_usersvc.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_usersvc/osrfx2_DCHU_usersvc.inx
+
 [`osrfx2_DCHU_component.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_component/osrfx2_DCHU_component.inx
+
 [`osrfx2_DCHU_extension.inx`]: https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx
