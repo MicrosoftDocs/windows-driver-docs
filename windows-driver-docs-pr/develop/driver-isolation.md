@@ -51,7 +51,7 @@ Since [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers
 
 In some scenarios, a driver package may contain a file that is intended to be loaded by a binary in another driver package or by a user mode component.
 
-Here are a couple examples:
+Here are a couple of examples:
 
 * A user mode DLL provides an interface for communicating with a driver in the driver package.
 * An extension driver package contains a configuration file that is loaded by the driver in the base driver package.
@@ -83,7 +83,7 @@ AddReg = Example_Add_Interface_Section.AddReg
 HKR,,ExampleValue,,%13%\ExampleFile.dll
 ```
 
-The above examples use an empty flags value, which results in a REG_SZ registry value. This results in the **%13%** being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of **0x20000** is used, the registry value is of type REG_EXPAND_SZ and the **%13%** converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call [**ExpandEnvironmentStrings**](https://docs.microsoft.com/windows/desktop/api/rrascfg/nn-rrascfg-ieapproviderconfig) to resolve the environment variables in the path.
+The previous examples use an empty flags value, which results in a REG_SZ registry value. This results in the **%13%** being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of **0x20000** is used, the registry value is of type REG_EXPAND_SZ and the **%13%** converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call [**ExpandEnvironmentStrings**](https://docs.microsoft.com/windows/desktop/api/rrascfg/nn-rrascfg-ieapproviderconfig) to resolve the environment variables in the path.
 
 If the value needs to be read by a kernel mode component, the value should be a REG_SZ value. When the kernel mode component reads that value, it should prepend `\??\` before passing it to APIs such as [**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenfile).
 
