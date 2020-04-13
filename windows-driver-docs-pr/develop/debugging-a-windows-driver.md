@@ -5,13 +5,13 @@ ms.date: 08/22/2019
 ms.localizationpriority: medium
 ---
 
-# Debugging a Universal Windows driver 
+# Debugging a Windows Driver 
 
-For general information about debugging universal drivers, see [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging).
+For general information about debugging drivers, see [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging).
 
 ## Inflight Trace Recorder
 
-Starting in Windows 10, you can build your KMDF or UMDF driver binary so that it gets additional driver debugging information through the [Inflight Trace Recorder](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder). Universal Windows drivers can take advantage of this feature.
+Starting in Windows 10, you can build your KMDF or UMDF driver binary so that it gets additional driver debugging information through the [Inflight Trace Recorder](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder). Windows Drivers can take advantage of this feature.
 
 In addition, if you used the Visual Studio KMDF template, your driver uses Windows software trace preprocessor (WPP) to write trace messages. Your driver binary is an ETW provider with a provider GUID.
 

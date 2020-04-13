@@ -14,7 +14,7 @@ Here's an example of such an entry:
 
 ![target platform set to universal in requirements block](images/TargetPlatform.png)
 
-The values specified in **Target Platform** map to the values you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties-&gt;Driver Settings-&gt;General**.
+The values specified in **Target Platform** map to the values you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties-&gt;Driver Settings-&gt;General**.  **Windows Drivers** can use any DDI that specifies **"Universal"** as the Target Platform.
 
 Here are the values you might see for **Target Platform**, and what they mean:
 
@@ -32,8 +32,8 @@ Here are the values you might see for **Target Platform**, and what they mean:
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Universal"></span><span id="universal"></span><span id="UNIVERSAL"></span>Universal</p></td>
-<td align="left"><p>A driver binary in a Universal Windows driver can call this device driver interface (DDI).</p>
-<p>A Universal Windows driver runs on the following Universal Windows Platform (UWP)-based editions of Windows 10:</p>
+<td align="left"><p>A driver binary in a Windows Driver can call this device driver interface (DDI).</p>
+<p>A Windows Driver runs on the following Universal Windows Platform (UWP)-based editions of Windows 10:</p>
 <ul>
 <li>Windows 10 for desktop editions (Home, Pro, and Enterprise)</li>
 <li>Windows 10 in S-Mode</li>
@@ -41,7 +41,7 @@ Here are the values you might see for **Target Platform**, and what they mean:
 <li>Windows 10 IoT Core</li>
 <li>Windows Server 2016</li>
 </ul>
-<p>For more info, see <a href="getting-started-with-universal-drivers.md" data-raw-source="[Getting Started with Universal Windows drivers](getting-started-with-universal-drivers.md)">Getting Started with Universal Windows drivers</a>.</p></td>
+<p>For more info, see <a href="getting-started-with-windows-drivers.md" data-raw-source="[Getting Started with Windows drivers](getting-started-with-windows-drivers.md)">Getting Started with Windows drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>Desktop</p></td>

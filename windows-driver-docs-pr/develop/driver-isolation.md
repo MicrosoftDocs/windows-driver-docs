@@ -5,9 +5,12 @@ ms.date: 10/01/2019
 
 # Driver Package Isolation
 
-Driver package isolation describes a set of best practices that make drivers more resilient to external changes, easier to update, and more straightforward to install.
+Driver package isolation is a requirement for Windows Drivers that makes drivers more resilient to external changes, easier to update, and more straightforward to install.
 
-The following table shows legacy driver practices that are no longer recommended in the left column along with the recommended best practice in the right column.
+> [!NOTE]
+> While Driver Package Isolation is required for Windows Drivers, Windows Desktop Drivers will still benefit from being isolated.  Isolated drivers on Windows 10 Desktop will benefit from improved resiliency and updateability.
+
+The following table shows legacy driver practices that are no longer allowed for Windows Drivers in the left column along with the required behavior for Windows Drivers in the right column.
 
 |Non-isolated Driver|Isolated Driver|
 |-|-|
@@ -21,6 +24,18 @@ The following table shows legacy driver practices that are no longer recommended
 
 All isolated driver packages leave their driver package files in the driver store. This means that they specify [**DIRID 13**](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) in their INF to specify the location for driver package files on install.
 
+A kernel mode driver that is running from the Driver Store can call [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) and use that path to find configuration files relative to it.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath. UMDF drivers can use [**GetModuleHandleExW**](https://docs.microsoft.com/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) and [**GetModuleFileNameW**](https://docs.microsoft.com/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to determine where the driver was loaded from.  For example:
+
+```cpp
+bRet = GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
+                         (PCWSTR)&DriverEntry,
+                         &handleModule);
+if (bRet) {
+   winErr = GetModuleFileNameW(handleModule,
+                               path,
+                               pathLength);
+     …
+```
 
 A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [**IoQueryFullDriverPath**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
 
@@ -32,7 +47,65 @@ Additionally, a [**CopyFiles**](https://docs.microsoft.com/windows-hardware/driv
 
 Since [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every file that an INF references must have a unique file name.
 
-For more information about finding and loading files from the driver store, see [Universal Driver Scenarios](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios#dynamically-finding-and-loading-files-from-the-driver-store).
+### Dynamically finding and loading files from the Driver Store
+
+In some scenarios, a driver package may contain a file that is intended to be loaded by a binary in another driver package or by a user mode component.
+
+Here are a couple examples:
+
+* A user mode DLL provides an interface for communicating with a driver in the driver package.
+* An extension driver package contains a configuration file that is loaded by the driver in the base driver package.
+
+In these situations, the driver package should set some state indicating the path of the file or a device interface exposed by the device.
+
+For example, the driver package could use an HKR [**AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) to set this state. For this example, it should be assumed that for `ExampleFile.dll`, the driver package has a [**SourceDisksFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section) entry with no *subdir*.  This results in the file being at the root of the driver package directory, and the [**DestinationDirs**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section) for a [**CopyFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive specifies **dirid** 13.
+
+Here is an INF example for setting this as device state:
+
+```cpp
+[ExampleDDInstall.HW]
+AddReg = Example_DDInstall.AddReg
+
+[Example_DDInstall.AddReg]
+HKR,,ExampleValue,,%13%\ExampleFile.dll
+```
+
+An INF example for setting this as device interface state would be:
+
+```cpp
+[ExampleDDInstall.Interfaces]
+AddInterface = {<fill in an interface class GUID for an interface exposed by the device>},,Example_Add_Interface_Section
+
+[Example_Add_Interface_Section]
+AddReg = Example_Add_Interface_Section.AddReg
+
+[Example_Add_Interface_Section.AddReg]
+HKR,,ExampleValue,,%13%\ExampleFile.dll
+```
+
+The above examples use an empty flags value, which results in a REG_SZ registry value. This results in the **%13%** being turned into a fully qualified user mode file path. In many cases, it is preferable to have the path be relative to an environment variable. If a flags value of **0x20000** is used, the registry value is of type REG_EXPAND_SZ and the **%13%** converts to a path with appropriate environment variables to abstract the location of the path. When retrieving this registry value, call [**ExpandEnvironmentStrings**](https://docs.microsoft.com/windows/desktop/api/rrascfg/nn-rrascfg-ieapproviderconfig) to resolve the environment variables in the path.
+
+If the value needs to be read by a kernel mode component, the value should be a REG_SZ value. When the kernel mode component reads that value, it should prepend `\??\` before passing it to APIs such as [**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenfile).
+
+To access this setting when it is part of the device's state, first the application must find the identity of the device.  User mode code can use [**CM_Get_Device_ID_List_Size**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_list_sizea) and [**CM_Get_Device_ID_List**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) to get a list of devices, filtered as necessary. That list of devices might contain multiple devices, so search for the appropriate device before reading state from the device. For example, call [**CM_Get_DevNode_Property**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) to retrieve properties on the device when looking for a device matching specific criteria.
+
+Once the correct device is found, call [**CM_Open_DevNode_Key**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key) to get a handle to the registry location where the device state was stored.
+
+Kernel mode code should retrieve a PDO (physical device object) and call [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
+
+To access this setting when it is device interface state, User mode code can call [**CM_Get_Device_Interface_List_Size**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_list_sizea) and [**CM_Get_Device_Interface_List**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista).
+
+Additionally [**CM_Register_Notification**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_register_notification) can be used to be notified of arrivals and removals of device interfaces so the code gets notified when the interface is enabled and then can retrieve the state. There may be multiple device interfaces in the device interface class used in the above APIs.  Examine those interfaces to determine which is the correct interface for the setting to read.
+
+Once the correct device interface is found, call [**CM_Open_Device_Interface_Key**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw).
+
+Kernel mode code can retrieve a symbolic link name for the device interface from which to get state. To do so, call [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) to register for device interface notifications on the appropriate device interface class.  Alternatively, call [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to get a list of current device interfaces on the system.  There may be multiple device interfaces in the device interface class used in the above APIs.  Examine those interfaces to determine which is the correct interface that should have the setting to be read.
+
+Once the appropriate symbolic link name is found, call [**IoOpenDeviceInterfaceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a handle to the registry location where the device interface state was stored.
+
+> [!NOTE]
+> Use the **CM_GETIDLIST_FILTER_PRESENT** flag with [CM_Get_Device_ID_List_Size](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_list_sizea) and [**CM_Get_Device_ID_List**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_id_lista) or the **CM_GET_DEVICE_INTERFACE_LIST_PRESENT** flag with [**CM_Get_Device_Interface_List_Size**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_list_sizew) and [**CM_Get_Device_Interface_List**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_lista). This ensures that hardware is present and ready for communication.
+
 
 ## Using Device Interfaces
 

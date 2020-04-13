@@ -68,7 +68,7 @@ You can build a driver from the command line using the **Visual Studio Command P
     msbuild /t:clean /t:build ProjectFile /p:Configuration=<Debug|Release> /p:Platform=architecture /p:TargetPlatformVersion=a.b.c.d /p:TargetVersion=OS    
     ```
 
-    For example, the following command builds a Universal Windows driver for the "Debug" configuration, "Win32" platform, and for Windows 10.
+    For example, the following command builds a driver for the "Debug" configuration, "Win32" platform, and for Windows 10.
 
     ```cpp
     msbuild /t:clean /t:build .\MyDriver.vcxproj /p:Configuration="Debug" /p:Platform=Win32 /p:TargetVersion=”Windows10” /p:TargetPlatformVersion=”10.0.10010.0”
