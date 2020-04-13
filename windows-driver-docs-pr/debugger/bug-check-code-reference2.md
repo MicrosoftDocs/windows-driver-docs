@@ -447,7 +447,7 @@ The following table provides links to bug check codes.
 | 0x000001D7 | [**EFS\_FATAL\_ERROR**](bug-check-0x1d7--efs-fatal-error.md)                                                                                      |
 | 0x000001D8 | [**UCMUCSI\_FAILURE**](bug-check-0x1d8--ucmucsi-failure.md)                                                                                       |
 | 0x000001D9 | [**HAL\_IOMMU\_INTERNAL\_ERROR**](bug-check-0x1d8--ucmucsi-failure.md)                                                                            |  
-| 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR **](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                         |
+| 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR**](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                         |
 | 0x000001DB | [**IPI\_WATCHDOG\_TIMEOUT**](bug-check-0x1db--ipi-watchdog-timeout.md)                                                                            |
 | 0x000001DC | [**DMA_COMMON_BUFFER_VECTOR_ERROR**](bug-check-0x1dc--dma-common-buffer-vector-error.md)                                                          |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
