@@ -1,6 +1,6 @@
 ---
-title: Windows Driver Scenarios
-description: Describes how the DCHU universal driver sample applies the DCHU design principles (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).
+title: DCH Example
+description: Describes how the DCHU driver sample applies the DCH design principles (Declarative, Componentized, Hardware Support Apps [HSA]).
 ms.assetid: f46f0ea6-d855-49d2-8c09-a6ad56084742
 ms.date: 04/15/2020
 ms.localizationpriority: medium
@@ -8,15 +8,15 @@ ms.localizationpriority: medium
 
 # DCH-Compliant Driver Package Example
 
-This topic describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies [DCH design principles](dch-design-principles-best-practices.md).  You can use it as a model for your own driver package to adhere to DCH design principles.  
+This topic describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies [DCH design principles](dch-design-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.  
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
-Some portions of the sample may use directives and API's that are only available on certain versions of Windows 10 and above.  Please refer to [INF Directives](../install/inf-directives) to see what OS version a given directive is supported on.
+Some portions of the sample may use directives and APIs that are only available on certain versions of Windows 10 and above.  Please refer to [INF Directives](../install/inf-directives) to see what OS version a given directive is supported on.
 
 ## Prerequisites
 
-Before you read this section, you should become familiar with the DCH Design Principles on [DCH Design Principles and Best Practices](dch-design-principles-best-practices.md).
+Before you read this section, you should become familiar with the [DCH Design Principles](dch-design-principles-best-practices.md).
 
 ## Overview
 
@@ -175,7 +175,7 @@ This directive can also be used to coordinate installation of INF files in multi
 
 ## Run from the driver store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../drivers/install/using-dirids) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../install/using-dirids.md) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
 
 ```cpp
 [DestinationDirs]

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 API Layering requires that binaries in Windows Driver packages call only those APIs and DDIs that are included in UWP-based editions of Windows 10 or are from a curated set of Win32 APIs. API Layering is an extension of the previous "U" requirement that was a part of DCHU design principles.
 
-To see which platform an API supports, visit the documentation page for the API and examine the **Target Platform** entry of the Requirements section.  Windows Drivers must only use APIs or DDIs that have a **Target Platform** listed as `Universal`.
+To see which platform an API supports, visit the documentation page for the API and examine the **Target Platform** entry of the Requirements section.  Windows Drivers must only use APIs or DDIs that have a **Target Platform** listed as `Universal`, meaning the subset of functionality that is available on all Windows offerings.
 
 ## Validating API Layering  
 

@@ -1,8 +1,8 @@
 ---
-ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
-title: Getting Started with Windows Drivers
-description: Windows drivers allow you to create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
-ms.date: 04/20/2018
+ms.assetid: 5865ded8-5b50-4646-a993-613b91d360fb
+title: DCH Design Principles and Best Practices
+description: Describes DCH principles for Windows drivers.
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 

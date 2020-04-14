@@ -15,11 +15,6 @@
                             "redirect_URL":  "/windows-hardware/drivers/develop/debugging-a-windows-driver",
                             "redirect_document_id":  false
                         },
-                        {
-                            "source_path":  "windows-driver-docs-pr/develop/debugging-a-universal-driver.md",
-                            "redirect_URL":  "/windows-hardware/drivers/develop/debugging-a-windows-driver",
-                            "redirect_document_id":  false
-                        },
 
                         {
                              "source_path":  "windows-driver-docs-pr/develop/validating-universal-drivers.md",
