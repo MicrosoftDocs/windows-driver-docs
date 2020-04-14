@@ -40,7 +40,7 @@ If your code calls non-universal APIs, you might see the following [ApiValidator
 
 * `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`
     
-    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the API Layering requirement for [Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers), wrap these calls with [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented).
+    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the API Layering requirement for [Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers), wrap these calls with [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented).
 
 This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented) returns FALSE.
 

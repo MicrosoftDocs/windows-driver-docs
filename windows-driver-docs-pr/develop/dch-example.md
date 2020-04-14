@@ -1,6 +1,7 @@
 ---
 title: Windows Driver Scenarios
 description: Describes how the DCHU universal driver sample applies the DCHU design principles (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).
+ms.assetid: f46f0ea6-d855-49d2-8c09-a6ad56084742
 ms.date: 04/15/2020
 ms.localizationpriority: medium
 ---
