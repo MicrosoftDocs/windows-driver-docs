@@ -45,7 +45,7 @@ A Windows Driver running on Windows 10 Desktop benefits from improved serviceabi
 
 ## Windows Drivers Requirements
 
-Windows Drivers must adhere to the following requirements:
+Windows Drivers must meet the following requirements:
 
 - Compliant with [**DCH Design Principles**](dch-principles-best-practices.md)
 - Follow the principles of [**Driver Package Isolation**](driver-isolation.md)
@@ -56,6 +56,4 @@ Additionally, all Windows Drivers **must be [WHCP certified](https://docs.micros
 ## Driver Certification and Submission for Windows 10 Version 2004
 
 This distinction between Windows Drivers and Windows Desktop Drivers **does not impact any driver being submitted and certified for Windows 10 Version 2004**.  Changes in certification and submission processes that reflect the distinction between Windows Drivers and Windows Desktop Drivers will happen at a later date.  Appropriate guidance and documentation will be provided ahead of any changes made.
-
-
 

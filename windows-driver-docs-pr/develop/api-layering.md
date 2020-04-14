@@ -1,8 +1,8 @@
 ---
-ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
+ms.assetid: 9f14c40b-0d6a-45d0-9c8b-6c5603fee3c6
 title: API Layering
 description: Windows drivers allow you to create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
-ms.date: 04/20/2018
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
@@ -16,6 +16,6 @@ To see which platform an API supports, visit the API's documentation page and ex
 
 ## Validating API Layering  
 
-[ApiValidator](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/df4a9671-c2aa-4c81-b964-7247fb4799df) is the main tool used to validate API Layering compliance for Windows Drivers.  ApiValidator ships as part of the Windows Driver Kit (WDK).  
+[ApiValidator](https://docs.microsoft.com/windows-hardware/test/hlk/testref/df4a9671-c2aa-4c81-b964-7247fb4799df) is the main tool used to validate API Layering compliance for Windows Drivers.  ApiValidator ships as part of the Windows Driver Kit (WDK).  
 
 See [Validating Windows Drivers](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/validating-windows-drivers) for more details regarding how to use ApiValidator to verify your Windows Driver is adhering to the API Layering requirement.

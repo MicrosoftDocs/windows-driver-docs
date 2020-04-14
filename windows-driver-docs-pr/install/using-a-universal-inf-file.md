@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Using a Universal INF File
 
-If you are building a [Windows Driver](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-windows-drivers) package or mobile driver package, you must use a universal INF file. If you are building a Windows Desktop Driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
+If you are building a [Windows Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers) package or mobile driver package, you must use a universal INF file. If you are building a Windows Desktop Driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
 
 A universal INF file uses a subset of the [INF syntax](inf-file-sections-and-directives.md) that is available to a Windows driver. A universal INF file installs a driver and configures device hardware, but does not perform any other action, such as running a co-installer.
 
@@ -75,5 +75,5 @@ The following directives are valid with some caveats:
 
 ## See Also
 
-* [Getting Started with Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/getting-started-with-windows-drivers)
+* [Getting Started with Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers)
 * [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif)

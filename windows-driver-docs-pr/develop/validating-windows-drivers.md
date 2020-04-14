@@ -10,13 +10,13 @@ ms.localizationpriority: medium
 
 ## InfVerif
 
-[InfVerif](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/infverif) is a tool for statically analyzing INF files that ships with the Windows Driver Kit (WDK).  It performs syntax valiation on the INF file and checks that the INF conforms to certain requirements and restrictions.
+[InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) is a tool for statically analyzing INF files that ships with the Windows Driver Kit (WDK).  It performs syntax valiation on the INF file and checks that the INF conforms to certain requirements and restrictions.
 
 InfVerif can run in multiple modes with different levels of validation strictness.
 
 If you are developing a *Windows Driver*:
 
-Use **infverif /w** to determine compatability with the **declarative (D)** requirement for Windows Drivers.  Additionally, this flag will determine if your driver's INF file is properly isolated according to [driver package isolation](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/driver-isolation) requirements. This switch is present in all kits for Windows 10 Version 1809 and later.
+Use **infverif /w** to determine compatability with the **declarative (D)** requirement for Windows Drivers.  Additionally, this flag will determine if your driver's INF file is properly isolated according to [driver package isolation](https://docs.microsoft.com/windows-hardware/drivers/develop/driver-isolation) requirements. This switch is present in all kits for Windows 10 Version 1809 and later.
 
 The **“/v”** argument will run InfVerif in verbose mode. An example of using InfVerif is:
 
@@ -37,7 +37,7 @@ infverif.exe /w test*.inf
 
 ## ApiValidator
 
-[ApiValidator](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/testref/df4a9671-c2aa-4c81-b964-7247fb4799df) is a tool to verify that the APIs that your binaries call are valid for a Windows Driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Windows Drivers. This tool is part of the WDK for Windows 10.
+[ApiValidator](https://docs.microsoft.com/windows-hardware/test/hlk/testref/df4a9671-c2aa-4c81-b964-7247fb4799df) is a tool to verify that the APIs that your binaries call are valid for a Windows Driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Windows Drivers. This tool is part of the WDK for Windows 10.
 
 ApiValidator is critical while developing Windows Drivers as it helps validate that your driver is following the proper [API Layering](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/develop/api-layering) requirements for Windows Drivers.
 
