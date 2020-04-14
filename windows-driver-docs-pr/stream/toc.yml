@@ -1544,6 +1544,8 @@
       href: ksproperty-cameracontrol-extended-photomode2.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE"
       href: ksproperty-cameracontrol-extended-profile.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION"
+    - href: ksproperty-cameracontrol-extended-relativepaneloptimization.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS"
       href: ksproperty-cameracontrol-extended-roi-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL"
@@ -2094,5 +2096,10 @@
       href: kseventsetid-vpnotify.md
     - name: "KSEVENT_VPNOTIFY_FORMATCHANGE"
       href: ksevent-vpnotify-formatchange.md
+- name: "KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER"
+# Auto-expanded node
+  items: 
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER"
+    href: ksproperty_networkcameracontrol_ntpinfo_header.md 
 - name: "COM Interfaces"
   href: com-interfaces.md
