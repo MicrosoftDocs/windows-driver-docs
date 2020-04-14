@@ -3,7 +3,7 @@ title: Blue Screen Data
 description: When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check or stop error.
 ms.assetid: 8cc42643-e231-49dd-96b0-6cb528d5d7a9
 keywords: ["Blue Screen Data Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 03/30/2020
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,10 @@ ms.localizationpriority: medium
 
 # Blue Screen Data
 
-
-**Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
-
- 
+> [!NOTE]
+> This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
 
 **Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/).
-
- 
 
 When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a *bug check*. It is also commonly referred to as a *system crash*, a *kernel error*, or a *stop error*.
 
