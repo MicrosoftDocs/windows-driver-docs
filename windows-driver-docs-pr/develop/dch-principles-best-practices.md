@@ -18,7 +18,7 @@ There are three design principles to consider for a Windows Driver to be DCH-Com
 
 - Hardware Support App **(H)**: Any user interface (UI) component associated with a Windows Driver must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM device. An HSA is an optional device-specific app that's paired with a driver. The application can be a [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or [Desktop Bridge app](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root). You must distribute and update an HSA through the Microsoft Store. For details, see [Hardware Support App (HSA): Steps for driver developers](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers) and [Hardware Support App (HSA): Steps for app developers](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-app-developers).
 
-The acronym "DCH" refers to the principles listed above. Please refer to the [DCH-Compliant Driver Package Example](windows-driver-scenarios.md) page to see how a driver sample can apply DCH design principles.
+The acronym "DCH" refers to the principles listed above. Please refer to the [DCH-Compliant Driver Package Example](dch-example.md) page to see how a driver sample can apply DCH design principles.
 
 ## Overview 
 
