@@ -63,7 +63,7 @@
   - name: "Driver convergence model for Windows 10"
     href: driver-model-convergence.md
   - name: "Target platform on driver reference pages"
-    href: windows-10-editions-for-universal-drivers.md
+    href: target-platforms.md
   - name: "Analyzing a Driver Using Code Analysis and Verification Tools"
     href: analyzing-driver-quality-by-using-code-analysis-tools.md
   - name: "Preparing a Computer for Manual Driver Deployment"
