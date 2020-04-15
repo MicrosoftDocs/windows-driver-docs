@@ -49,7 +49,7 @@ Windows Drivers must meet the following requirements:
 
 - Compliant with [**DCH Design Principles**](dch-principles-best-practices.md)
 - Follow the principles of [**Driver Package Isolation**](driver-isolation.md)
-- Adhere to [**API Layering Requirements**](api-layering.md)
+- Follow [**API Layering Requirements**](api-layering.md)
 
 Additionally, all Windows Drivers **must be [WHCP certified](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/)** as the main certification vehicle.
 

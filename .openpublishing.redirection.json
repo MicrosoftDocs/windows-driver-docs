@@ -1,7 +1,7 @@
 {
     "redirections":  [
                         {
-                            "source_path":  "windows-driver-docs-pr/develop/windows-10-editions-for-universal-drivers.md",
+                            "source_path":  "windows-driver-docs-pr/develop/target-platforms.md",
                             "redirect_URL":  "/windows-hardware/drivers/develop/target-platforms",
                             "redirect_document_id":  true
                         },

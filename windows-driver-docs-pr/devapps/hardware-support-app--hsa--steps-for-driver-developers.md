@@ -19,7 +19,7 @@ To associate a Store app with a driver, first reserve a special value called a c
 
 The steps for the app developer are described in [Hardware Support App (HSA): Steps for App Developers](hardware-support-app--hsa--steps-for-app-developers.md).
 
-HSA is one of the four ("DCHU") design principles of [Universal Windows drivers](../develop/getting-started-with-universal-drivers.md).
+HSA is one of the three ("DCH") design principles of [Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
 ## Reserving a custom capability
 
@@ -173,7 +173,7 @@ The following diagram summarizes the sequence described above:
 
 ## See Also
 
-* [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
+* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
 * [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
 * [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)
 * [App capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)

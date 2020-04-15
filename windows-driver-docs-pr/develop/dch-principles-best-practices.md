@@ -22,7 +22,7 @@ The acronym "DCH" refers to the principles listed above. Please refer to the [DC
 
 ## Overview 
 
-Driver packages that are DCH-compliant contain an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows 10](windows-10-editions-for-universal-drivers.md). They also install and run on other editions of Windows 10 that share a common set of interfaces.
+Driver packages that are DCH-compliant contain an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows 10](target-platforms.md). They also install and run on other editions of Windows 10 that share a common set of interfaces.
 
 DCH-compliant driver binaries can use [KMDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/index), [UMDF 2](https://docs.microsoft.com/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2), or the Windows Driver Model (WDM).
 
@@ -46,7 +46,7 @@ To create a driver package that follows DCH design principles, follow these step
 
 *  Create a [Universal INF](../install/using-a-universal-inf-file.md) for your driver:
     1.  Review the [list of INF sections and directives that are valid in Windows Driver packages](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
-    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file adheres to Declarative (D) requirements for Windows Drivers.
+    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file follows Declarative (D) requirements for Windows Drivers.
 *  Ensure that any optional component packages that do not contain core driver functionality are separated from the base driver package.    
 *  Hardware support applications associated with your driver package must be distributed through the Microsoft Store.
 

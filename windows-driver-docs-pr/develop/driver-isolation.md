@@ -1,6 +1,9 @@
 ---
 title: Driver Package Isolation
+description: This page describes driver isolation, a requirement for a Windows Driver.
 ms.date: 10/01/2019
+ms.assetid: 3955fb29-ee49-4c3e-ac6d-700dcba3f884
+ms.localizationpriority: medium
 ---
 
 # Driver Package Isolation
@@ -8,7 +11,7 @@ ms.date: 10/01/2019
 Driver package isolation is a requirement for Windows Drivers that makes drivers more resilient to external changes, easier to update, and more straightforward to install.
 
 > [!NOTE]
-> While Driver Package Isolation is required for Windows Drivers, Windows Desktop Drivers will still benefit from being isolated.  Isolated drivers on Windows 10 Desktop will benefit from improved resiliency and updateability.
+> While Driver Package Isolation is required for Windows Drivers, Windows Desktop Drivers still benefit from it through improved resiliency and serviceability.
 
 The following table shows legacy driver practices that are no longer allowed for Windows Drivers in the left column along with the required behavior for Windows Drivers in the right column.
 

@@ -97,7 +97,7 @@ To make your device work on Windows and Windows Phone releases before Windows 1
 <tr class="even">
 <td align="left">Windows Driver Frameworks (WDF)</td>
 <td align="left">Yes</td>
-<td align="left"><p>Windows 10 ships with KMDF 1.15, UMDF 2.15, UMDF 1.11, and earlier framework versions. Windows 10 Mobile also ships with KMDF 1.15, UMDF 2.15, and earlier framework versions. Note that UMDF version 1 is not available in Windows 10 Mobile. Only KMDF and UMDF version 2 can be used to write <a href="getting-started-with-universal-drivers.md" data-raw-source="[Windows drivers](getting-started-with-universal-drivers.md)">Universal Windows drivers</a>.</p></td>
+<td align="left"><p>Windows 10 ships with KMDF 1.15, UMDF 2.15, UMDF 1.11, and earlier framework versions. Windows 10 Mobile also ships with KMDF 1.15, UMDF 2.15, and earlier framework versions. Note that UMDF version 1 is not available in Windows 10 Mobile. Only KMDF and UMDF version 2 can be used to write <a href="getting-started-with-windows-drivers.md" data-raw-source="[Windows drivers](getting-started-with-windows-drivers.md)">Windows drivers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">WLAN</td>

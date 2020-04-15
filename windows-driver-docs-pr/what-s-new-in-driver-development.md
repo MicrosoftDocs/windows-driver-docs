@@ -215,7 +215,7 @@ This existing topic has been enhanced to describe how to use flexible linking to
 
 #### Universal Drivers in Windows 10, version 1803
 
-See the latest recommendations for universal drivers in [Getting started with universal drivers](develop/getting-started-with-universal-drivers.md).
+See the latest recommendations for Windows Drivers in [Getting started with Windows Drivers](develop/getting-started-with-windows-drivers.md).
 
 #### Universal Drivers in Windows 10, version 1709
 
