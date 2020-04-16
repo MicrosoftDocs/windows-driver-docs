@@ -8,9 +8,11 @@ ms.localizationpriority: medium
 
 # DCH Design Principles and Best Practices
 
+This page describes design principles and best practices for Windows Drivers.
+
 ## DCH Design Principles
 
-There are three design principles to consider for a Windows Driver to be DCH-Compliant:
+There are three design principles to consider for a Windows Driver to be DCH-compliant:
 
 - Declarative **(D)**: Install the driver by using only declarative INF directives. Don't include co-installers or RegisterDll functions.
 
