@@ -2,7 +2,7 @@
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
 ms.assetid: 2CBEB814-974D-4E8B-A44A-2CFAA8D4C94E
-ms.date: 04/20/2017
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
@@ -75,5 +75,5 @@ The following directives are valid with some caveats:
 
 ## See Also
 
-* [Getting Started with Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers)
-* [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif)
+* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+* [InfVerif](../devtest/infverif.md)
