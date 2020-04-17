@@ -38,7 +38,7 @@ Primitive drivers use the same installation and uninstallation APIs as device dr
 
   * The **ClassGuid** directive must be filled in.
 
-* The driver must comply with [Universal](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers) requirements.
+* The driver must be [DCH-Compliant](dch-principles-best-practices.md).
 
 * No \[Manufacturer\] section may be present.
 
