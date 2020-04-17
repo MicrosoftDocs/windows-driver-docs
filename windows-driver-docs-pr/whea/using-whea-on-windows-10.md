@@ -25,7 +25,7 @@ To register with WHEA as an error source using WHEA v2, the driver should do the
 
 ## Reporting an Error
 
-Use the following steps to report an error. Steps 1-3 should be done sequentially, at the same time.
+To report an error, perform the following steps in sequence at the same time:
 
 1. Call [**WheaCreateHwErrorReportDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheacreatehwerrorreportdevicedriver), providing the *ErrorSourceId* and, optionally, a *DeviceObject* for the driver.  The routine returns a handle to the in progress error.
 
@@ -37,6 +37,6 @@ Use the following steps to report an error. Steps 1-3 should be done sequentiall
 
 4. Call [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver), again providing the error handle. After this call, buffers in the buffer sets are unavailable and the handle is invalid.
 
-5. If an error occurs or the error is no longer valid, the driver can optionally call [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver).  In this case, no report is submitted to WHEA.
+5. If an error occurs or the error is no longer valid, the driver can optionally call [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver). In this case, no report is submitted to WHEA.
 
 The driver must call either [**WheaHwErrorReportSubmitDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportsubmitdevicedriver) or [**WheaHwErrorReportAbandonDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheahwerrorreportabandondevicedriver) on every handle created by [**WheaCreateHwErrorReportDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheacreatehwerrorreportdevicedriver). Otherwise, [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver) might return STATUS_RESOURCE_IN_USE.
