@@ -42,7 +42,7 @@ Use these steps to convert the projects in a driver solution.
 
     For more information about ApiValidator, see [Validating Universal Windows drivers](validating-universal-drivers.md).
 
-    To learn how to determine the target platform for a given DDI, see [Target platform on driver reference pages](windows-10-editions-for-universal-drivers.md).
+    To learn how to determine the target platform for a given DDI, see [Target platform on driver reference pages](target-platforms.md).
 
  
 

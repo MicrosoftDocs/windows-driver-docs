@@ -121,7 +121,7 @@ When the target machine is in Developer Mode, you can try the following steps to
 * [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md)
 * [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 * [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
-* [Getting Started with Universal Windows drivers](../develop/getting-started-with-universal-drivers.md)
+* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
 * [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
 * [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)

@@ -2,7 +2,7 @@
 title: Running InfVerif from the command line
 description: This topic lists the options that are available when you run InfVerif.exe from the command line.
 ms.assetid: CC2DB624-FFEE-4049-ACE7-4A24B330BADB
-ms.date: 04/20/2017
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
@@ -14,7 +14,7 @@ This topic lists the options that are available when you run InfVerif.exe from t
 > InfVerif requires that each combined path and file name must be less than 260 characters.
 
 ```
-USAGE: InfVerif.exe [/v] [/u | /universal] [/k] [/info] [/stampinf] [/l <path>]
+USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <path>]
                     [/osver TargetOSVersion>] [/product <ias file>] <files>
 
 /v
@@ -25,6 +25,9 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/k] [/info] [/stampinf] [/l <path>]
 
 /u
         Reports errors if INF is not Universal. (mode)
+
+/w
+        Reports Windows Driver compatibility. See below. (mode)
 
 /info
         Displays INF summary information.
@@ -53,9 +56,17 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/k] [/info] [/stampinf] [/l <path>]
 Only one mode option may be passed at a time.
 ```
 
-For examples of *TargetOSVersion* formatting, see Remarks section of [INF Manufacturer Section](../install/inf-manufacturer-section.md).
-
 The verbose option adds a line to the output that specifies if the INF is valid or not.  Certain arguments are tagged as modes, where only one should be passed.
+
+For examples of *TargetOSVersion* formatting, see Remarks section of [INF Manufacturer Section](../install/inf-manufacturer-section.md).
 
 *New for Windows 10, version 1703:*  The info option is especially useful to verify INF applicability.  It reports each supported hardware ID along with valid architecture and minimum OS version.  You can use /info and /osver together to validate an INF's applicability across OS versions and architectures.
 
+*New for Windows 10, version 1809:*  If you are developing a *Windows Driver*, use `infverif /w` (ideally with `/v`) to determine compatability with the **declarative (D)** principle of [DCH Design Principles](dch-principles-best-practices.md).  The `/w` flag also checks if the INF complies with the [driver package isolation](driver-isolation.md) requirement of [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+
+To validate multiple INF files, provide multiple filenames or use a wildcard:
+
+```
+infverif.exe /w test1.inf test2.inf
+infverif.exe /w test*.inf
+```

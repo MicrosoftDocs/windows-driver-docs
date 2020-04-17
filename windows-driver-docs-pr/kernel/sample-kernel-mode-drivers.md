@@ -13,7 +13,7 @@ The WDK provides various sample kernel-mode drivers. After you have installed th
 
 [**DCHU**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
 
-Applies the DCHU [design principles](../develop/getting-started-with-universal-drivers.md) (Declarative, Componentized, Hardware Support Apps [HSA], and Universal API compliance).  You can use it as a model for your own universal driver package.
+Applies the DCH [design principles](../develop/getting-started-with-windows-drivers.md) (Declarative, Componentized, and Hardware Support Apps [HSA]).  You can use it as a model for your own Windows Driver package.
 
 [**PLX9x5x**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/PLX9x5x)
 
