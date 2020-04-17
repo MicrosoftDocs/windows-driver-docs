@@ -15,12 +15,10 @@ The following is a list of new feature highlights for driver development in Wind
 
 * [Windows 10, version 1903 WDK supports Visual Studio 2019](#wdk-supports-visual-studio-2019)
 * [Windows Hardware Dev Center dashboard](#windows-hardware-dev-center-dashboard)
-* [Open publishing](#open-publishing)
 * [Debugging Tools for Windows](#debugging-tools-for-windows)
 * [Device and Driver Installation](#device-and-driver-installation)
-* [Driver Verifier](#driver-verifier)
 * [Windows Driver Frameworks](#windows-driver-frameworks-wdf)
-* [Universal Windows drivers](#universal-windows-drivers)
+* [Windows drivers](#universal-windows-drivers)
 * [Windows Compatible hardware development boards](#windows-compatible-hardware-development-boards)
 * [Power Management Framework](#power-management-framework)
 * [System-Supplied Driver Interfaces](#system-supplied-driver-interfaces)
@@ -94,51 +92,15 @@ The WDK Driver templates were previously found in Visual Studio 2017 under New P
 
 
 
-### Debugging Tools for Windows
+#### Debugging Tools for Windows
 
 Changes in the debugging tools for Windows are described in each release section.
 
 
-### Device and Driver Installation
 
-In Windows 10, version 1809, the following content was added:
+### Windows Drivers in Windows 10, version 2004
 
-* [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
-* [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
-
-The following was updated:
-
-* [Early Launch AntiMalware Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/elam-driver-requirements)
-* [Kernel-Mode Code Signing Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)
-
-### Driver Verifier
-
-Driver verifier includes new driver validation rules for the following technologies:
-
-* New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-audio-drivers)
-* New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
-* Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
-* Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
-* New [Nullcheck rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/nullcheck) *Added in version 1703*
-
-### Windows Driver Frameworks (WDF)
-
-#### WDF in Windows 10, version 1903
-
-In Windows 10, version 1903, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
-
-For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
-To see what was added in previous versions of WDF, see [KMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/kmdf-version-history) and [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history).
-
-### Universal Windows drivers
-
-This section describes new and updated features for Universal Windows drivers in Windows 10.
-
-[Back to Top](#top)
-
-#### Universal Drivers in Windows 10, version 1809
-
-Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
+Starting in Windows 10, version 2004, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
 To enable flexible linking, use the following new SDK API:
 
 * [IsApiSetImplemented](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
@@ -147,23 +109,7 @@ This existing topic has been enhanced to describe how to use flexible linking to
 
 * [Building for OneCore](https://docs.microsoft.com/windows-hardware/drivers/develop/building-for-onecore)
 
-#### Universal Drivers in Windows 10, version 1803
 
-See the latest recommendations for universal drivers in [Getting started with universal drivers](develop/getting-started-with-universal-drivers.md).
-
-#### Universal Drivers in Windows 10, version 1709
-
-The following is a list of new features to Universal Drivers in Windows 10, version 1709:
-
-* [Updating Device Firmware using Windows Update](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update) - Describes how to update a removable or in-chassis device's firmware by using the Windows Update (WU) service.
-* [Reg2inf](https://docs.microsoft.com/windows-hardware/drivers/devtest/reg2inf) - The Driver Package INF Registry Conversion Tool (reg2inf.exe) converts a registry key and its values or a COM .dll implementing a DLL RegisterServer routine, into a set of INF AddReg directives. These directives are included in the driver package INF file.
-
-The following is a list of updates to Universal Drivers in Windows 10, version 1709:
-
-* The [Universal Drivers Scenario](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios) has a new COM component example
-* [INF AddComponent Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addcomponent-directive)
-* [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
-* [Using a Component INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file)
 
 #### Universal Drivers in Windows 10
 
@@ -243,7 +189,7 @@ New Camera driver documentation and features added in Windows 10, version 1903 i
   * MSUX_CONTROL_IR_TORCH
 
 
-### Debugging
+#### Debugging
 
 Changes to the Debugger for Windows 10, version 1903 include the following:
 
@@ -351,6 +297,13 @@ The following Storage features were added in Windows 10, version 1903:
 * New API to set the properties of a storage device or adapter
 * For file systems, new DDIs were added to support retrieving extended attributes (EA) information upon create completion, allowing mini-filters to alter the ECP payload to change what higher filters see
 
+### Windows Driver Frameworks (WDF)
+
+In Windows 10, version 1903, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
+
+For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
+To see what was added in previous versions of WDF, see [KMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/kmdf-version-history) and [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history).
+
 ### Windows Hardware Error Architecture (WHEA)
 
 Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
@@ -407,7 +360,7 @@ Use the asynchronous custom report methods to access reporting data for driver e
 
 * [Schedule custom reports for your driver failure details](https://docs.microsoft.com/windows-hardware/drivers/dashboard/schedule-custom-reports-for-driver-failure-details)
 
-## Debugging
+### Debugging
 
 Changes to the Debugger for Windows 10, version 1809 include the following:
 
@@ -415,6 +368,17 @@ Changes to the Debugger for Windows 10, version 1809 include the following:
 
 * **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at [https://aka.ms/windbgpreview](https://aka.ms/windbgpreview) that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details.
 
+### Device and Driver Installation
+
+In Windows 10, version 1809, the following content was added:
+
+* [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
+* [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
+
+The following was updated:
+
+* [Early Launch AntiMalware Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/elam-driver-requirements)
+* [Kernel-Mode Code Signing Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)
 
 ### <a name="display-1809"></a>Display
 
@@ -589,7 +553,7 @@ Updates to Camera driver development include:
 * [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices) - Implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses Microsoft OS Descriptors from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 * [360 camera video capture](https://docs.microsoft.com/windows-hardware/drivers/stream/360-camera-video-capture) - Provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
 
-### Debugging
+#### Debugging
 
 Changes to the Debugger for Windows 10, version 1803 include the following:
 
@@ -768,7 +732,7 @@ The following is a list of new Advanced Configuration and Power Interface (ACPI)
 
 There are new signing requirements for Windows Biometric Drivers. For more information, see [Signing WBDI Drivers](https://docs.microsoft.com/windows-hardware/drivers/biometric/signing-wbdi-drivers).
 
-### Debugging
+#### Debugging
 
 Changes to the Debugger for Windows 10, version 1709 include the following:
 
@@ -973,7 +937,7 @@ The following is a list of updates to Camera driver development in Windows 10, v
   * [KSCATEGORY_SENSOR_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-sensor-camera)
   * [KSCATEGORY_VIDEO_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-video-camera)
 
-### Debugging
+#### Debugging
 
 Changes to the Debugger for Windows 10, version 1703 include the following:
 
@@ -1042,7 +1006,7 @@ Camera driver development in Windows 10, version 1607 includes new and updated t
 * [Extended camera controls](https://docs.microsoft.com/windows-hardware/drivers/stream/standardized-extended-controls-)
 * [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-faceauth-mode)
 
-### Debugging
+#### Debugging
 
 Changes to the Debugger for Windows 10, version 1607 include the following:
 
@@ -1102,7 +1066,7 @@ The camera driver DDIs have converged into a Universal Windows driver model, inc
 
 [Cellular architecture and implementation](https://docs.microsoft.com/windows-hardware/drivers/network/cellular-architecture-and-driver-model) for Windows 10 has been updated.
 
-### Debugging
+#### Debugging
 
 Changes to the Debugger for Windows 10, version 1507 include the following:
 
