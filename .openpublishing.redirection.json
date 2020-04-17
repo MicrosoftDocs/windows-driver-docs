@@ -848,17 +848,17 @@
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/why-is-my-usb-driver-getting-out-of-bandwidth-errors-.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/setting-usb-transfer-and-packet-sizes.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/delimiting-usb-data-transfers-with-packets-smaller-than-wmaxpacketsize.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/sending-a-usb-idle-request-irp.md",
