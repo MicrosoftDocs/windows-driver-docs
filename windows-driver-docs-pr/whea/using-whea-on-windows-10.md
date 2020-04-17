@@ -16,12 +16,12 @@ In Windows 10, version 2004, Windows Hardware Error Architecture (WHEA) includes
 
 To register with WHEA as an error source using WHEA v2, the driver should do the following:
 
-1. Specify a configuration for your device driver by instantiating a [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-whea_error_source_configuration_device_driver) structure, providing pointers to [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver.md) and [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver.md) event callback functions.
+1. Specify a configuration for your device driver by instantiating a [**WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-whea_error_source_configuration_device_driver) structure, providing pointers to [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver) and [*WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_uninitialize_device_driver) event callback functions.
 2. Call [**WheaAddErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver), providing the configuration structure.  Typically, the driver calls this routine from *DriverEntry*.
 
     To remove an error source at a later time, call [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver).
 
-3. WHEA calls the the driver's [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver.md) event callback function when the error source is ready to report errors. The driver receives an *ErrorSourceId* as a parameter to the callback.
+3. WHEA calls the the driver's [*WHEA_ERROR_SOURCE_INITIALIZE_DEVICE_DRIVER*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-_whea_error_source_initialize_device_driver) event callback function when the error source is ready to report errors. The driver receives an *ErrorSourceId* as a parameter to the callback.
 
 ## Reporting an Error
 
