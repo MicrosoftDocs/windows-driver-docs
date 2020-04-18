@@ -5,7 +5,7 @@ ms.assetid: d54bdc6c-b409-4973-9b29-16967a4d83fb
 keywords:
 - debugging drivers WDK KMDF , registry values
 - registry values for debugging drivers WDK KMDF
-ms.date: 04/20/2017
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
@@ -118,7 +118,6 @@ If set to a nonzero value, the framework's loader sends a variety of messages to
 
 ## UMDF
 
-
 You can also set the following registry values in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}**. These values affect all UMDF drivers on the system.
 
 <a href="" id="hostprocessdbgbreakonstart--reg-dword-"></a>**HostProcessDbgBreakOnStart** (**REG\_DWORD**)  
@@ -138,9 +137,13 @@ Contains a delay value in seconds. Causes WUDFHost to delay the specified number
 
 Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.
 
+> [!NOTE]
+> Starting in UMDF 2.31, you can set a per-driver **HostProcessDbgBreakOnDriverLoad**.  For details, see below.
+
+
 You can also set these registry values by using the WDF Verifier tool (WdfVerifier.exe) that is included in the WDK. For information on using this tool with UMDF drivers, see [Managing UMDF Verifier Settings with WDF Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab).
 
-These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\DebugMode**:
+In addition, the following values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\DebugMode**:
 
 <a href="" id="debugmodeflags--reg-dword-"></a>**DebugModeFlags** (**REG\_DWORD**)  
 <table>
@@ -170,7 +173,6 @@ These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\
 </tbody>
 </table>
 
- 
 
 When you use the F5 option in Microsoft Visual Studio, all three flags are set for the deployed driver.
 
@@ -184,13 +186,20 @@ If this value is non-zero and a kernel debugger is connected to the machine, the
 
 The reflector also breaks into the kernel debugger if there is an unexpected termination of the host process (e.g. by a non-UMDF component or due to an unhandled exception). If there are multiple device stacks pooled in the host process that is being terminated, the reflector breaks into the debugger multiple times, once for each device stack loaded in the host process.
 
+
+You can also set the following registry value in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\<service name>\\Parameters\\Wdf**. 
+
+> [!NOTE]
+> This value affects only the specified UMDF driver.
+
+**HostProcessDbgBreakOnDriverLoad** (**REG\_DWORD**)
+
+Contains a delay value in seconds. Causes WUDFHost to try to connect to a debugger for the specified number of seconds after the driver has been loaded.
+
+During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. See the section on **HostProcessDbgBreakOnStart** above for examples.
+
+This registry value is available in UMDF 2.31 and later.
+
 For changes to UMDF registry values to take effect, you must reboot the computer.
 
  
-
- 
-
-
-
-
-

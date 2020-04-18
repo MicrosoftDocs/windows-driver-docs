@@ -1,8 +1,8 @@
 ---
-ms.assetid: ee46801a-4fa5-465a-aa81-5e76eb83d315
 title: Building for OneCore
 description: You can build a single binary that targets pre-Windows 10 and OneCore editions.
-ms.date: 10/02/2018
+ms.assetid: ee46801a-4fa5-465a-aa81-5e76eb83d315
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
@@ -40,7 +40,7 @@ If your code calls non-universal APIs, you might see the following [ApiValidator
 
 * `Error: <Binary Name> has a dependency on <Module Name><Api Name> but is missing: IsApiSetImplemented("<contract-name-for-Module>)`
     
-    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the U requirement of [DCHU](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles), wrap these calls with [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented).
+    API calls in the above category compile fine, but may not behave as expected at runtime, depending on the target operating system. To pass the [API Layering](api-layering.md) requirement for [Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers), wrap these calls with [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented).
 
 This enables you to compile your code with no errors.  Then at runtime, if the target machine does not have the needed API, [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented) returns FALSE.
 
@@ -50,7 +50,7 @@ The following code samples illustrate how to do this.
 
 This code runs fine on versions of Windows earlier than Windows 10, but running it on a OneCore edition of Windows 10 results in WTSEnumerateSessions failure : 78 or ERROR_CALL_NOT_IMPLEMENTED 120 (0x78).
 
-This code sample fails the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) errors:
+This code sample fails the [API Layering](api-layering.md) requirement of Windows Drivers with the following [ApiValidator](validating-universal-drivers.md) errors:
 
 ```cpp
 ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSEnumerateSessionsW' but is missing: IsApiSetImplemented("ext-ms-win-session-wtsapi32-l1-1-0")
@@ -92,7 +92,7 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 
 ## Code sample: Direct usage of API, after evaluating for existence
 
-This sample shows how to call [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented). This sample passes the U part of DCHU with the following [ApiValidator](validating-universal-drivers.md) output:
+This sample shows how to call [**IsApiSetImplemented**](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented). This sample passes the [API Layering](api-layering.md) requirement of Windows Drivers with the following [ApiValidator](validating-universal-drivers.md) output:
 
 ```cpp
 ApiValidation: All binaries are Universal
@@ -146,7 +146,7 @@ int __cdecl wmain(int /* argc */, PCWSTR /* argv */ [])
 
 ## See Also
 
-* [Validating Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers)
+* [Validating Windows Drivers](validating-windows-drivers.md)
 * [OneCore](https://docs.microsoft.com/windows-hardware/get-started/what-s-new-in-windows)
 
 <!--API BOILERPLATE: Compiles using OneCore.lib but returns ERROR_CALL_NOT_IMPLEMENTED on non-Desktop OneCore editions.-->

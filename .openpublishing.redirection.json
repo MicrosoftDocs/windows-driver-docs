@@ -1,9 +1,35 @@
 {
     "redirections":  [
-                         {
-                             "source_path":  "windows-driver-docs-pr/install/where-setup-searches-for-drivers.md",
-                             "redirect_URL":  "/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device",
+                        {
+                            "source_path":  "windows-driver-docs-pr/develop/windows-10-editions-for-universal-drivers.md",
+                            "redirect_URL":  "/windows-hardware/drivers/develop/target-platforms",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/develop/getting-started-with-universal-drivers.md",
+                            "redirect_URL":  "/windows-hardware/drivers/develop/getting-started-with-windows-drivers",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/develop/universal-driver-scenarios.md",
+                            "redirect_URL":  "/windows-hardware/drivers/develop/dch-example",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/develop/debugging-a-universal-driver.md",
+                            "redirect_URL":  "/windows-hardware/drivers/develop/debugging-a-windows-driver",
+                            "redirect_document_id":  false
+                        },
+
+                        {
+                             "source_path":  "windows-driver-docs-pr/develop/validating-universal-drivers.md",
+                             "redirect_URL":  "/windows-hardware/drivers/develop/validating-windows-driver",
                              "redirect_document_id":  true
+                         },
+                         {
+                            "source_path":  "windows-driver-docs-pr/install/where-setup-searches-for-drivers.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device",
+                            "redirect_document_id":  true
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/install/setupapi-functions-that-simplify-driver-installation.md",

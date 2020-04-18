@@ -2,22 +2,38 @@
 ms.assetid: D4B7FC2A-259F-4B72-A52B-03CBF712D5C5
 title: Validating Universal Windows drivers
 description: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
-ms.date: 04/20/2017
+ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
-# Validating Universal Windows drivers
+# Validating Windows Drivers
 
-You can use the ApiValidator.exe tool to verify that the APIs that your binaries call are valid for a Universal Windows driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the Windows Driver Kit (WDK) for Windows 10.
+Use the InfVerif and ApiValidator tools to test your Windows Driver for compliance with the requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
 
-## <span id="Running_ApiValidator_in_Visual_Studio"></span><span id="running_apivalidator_in_visual_studio"></span><span id="RUNNING_APIVALIDATOR_IN_VISUAL_STUDIO"></span>Running ApiValidator in Visual Studio
+## InfVerif
 
+[InfVerif](../devtest/infverif.md) is a tool that validates INF syntax and checks that the INF conforms to requirements and restrictions.
 
-If the **Target Platform** property of your driver project is set to **Universal**, Visual Studio runs ApiValidator automatically as a post-build step.
+Use InfVerif with `/w` and `/v` to verify that a Windows Driver:
 
-To view all the messages displayed by ApiValidator, navigate to **Tools &gt; Options &gt; Projects and Solutions &gt; Build and Run**, and set **MSBuild project build output verbosity** to **Detailed**. When building from the command line, add the switch **/v:detailed** or **/v:diag** to your build command to increase the verbosity.
+* Meets the **declarative (D)** principle of [DCH Design Principles](dch-principles-best-practices.md)
+* Complies with the [driver package isolation](driver-isolation.md) requirement of [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md)
 
-For the umdf2\_fx2 driver sample, API validation errors look this:
+For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md) for 
+
+## ApiValidator
+
+The ApiValidator tool verifies that the APIs that your binaries call are valid for a Windows Driver. The tool returns an error if your binaries call an API that is outside the set of valid APIs for Windows Drivers. This tool is part of the WDK for Windows 10.
+
+ApiValidator validates that a driver supports [API Layering](api-layering.md), one of the requirements for Windows Drivers. For a full list of requirements, see [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+
+### Running ApiValidator in Visual Studio
+
+If the **Target Platform** property of your driver project is set to **Windows Driver**, Visual Studio runs ApiValidator automatically as a post-build step.
+
+To view all the messages displayed by ApiValidator, navigate to **Tools->Options->Projects and Solutions->Build and Run**, and set **MSBuild project build output verbosity** to **Detailed**. When building from the command line, add the switch **/v:detailed** or **/v:diag** to your build command to increase the verbosity.
+
+For the umdf2_fx2 driver sample, API validation errors look this:
 
 ```cpp
 Warning  1   warning : API DecodePointer in kernel32.dll is not supported. osrusbfx2um.dll calls this API.   C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\driver\ApiValidator.exe    osrusbfx2um
@@ -32,9 +48,9 @@ Warning 9   warning : API QueryPerformanceCounter in kernel32.dll is not support
 Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\bin\x64\ApiValidator.exe" -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\Debug\\" -SupportedApiXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x86\UniversalDDIs.xml" -ApiExtractorExePath:"C:\Program Files (x86)\Windows Kits\10\bin\x64"" exited with code -1.    C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets   1531    5   osrusbfx2um
 ```
 
-## Fixing validation errors
+### Fixing validation errors
 
-1.  If you switched a legacy desktop UMDF driver project to universal, verify that you are including the correct libraries when building your binaries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
+1.  If you switched a legacy desktop UMDF driver project to Windows Driver, verify that you are including the correct libraries when building your binaries. Right click the project and choose properties. Navigate to **Linker->Input**. The **Additional Dependencies** should contain:
 
     ```cpp
     %AdditionalDependencies);$(SDK_LIB_PATH)\OneCoreUAP.lib
@@ -42,9 +58,9 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
     To review other linker options for targeting OneCore SKUs, see [Building for OneCore](building-for-onecore.md).
 
-2.  Remove or replace the non-universal API calls one at a time and rerun the tool until there are no errors.
+2.  Remove or replace API calls that are not permitted one at a time and rerun the tool until there are no errors.
 
-3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please [submit feedback](https://go.microsoft.com/fwlink/p/?linkid=529549).  You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Universal Windows driver starting from the driver templates in the WDK.
+3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please [submit feedback](https://go.microsoft.com/fwlink/p/?linkid=529549).  You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Windows Driver starting from the driver templates in the WDK.
 
 If you see errors like the following, please refer to the guidance in [Building for OneCore](building-for-onecore.md).
 
@@ -54,18 +70,23 @@ ApiValidation: Error: FlexLinkTest.exe has a dependency on 'wtsapi32.dll!WTSFree
 ApiValidation: NOT all binaries are Universal
 ```
 
-## Running ApiValidator from the Command Prompt
+### Running ApiValidator from the Command Prompt
 
-You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to C:\\Program Files (x86)\\Windows Kits\\10\\bin\\*&lt;arch&gt;*.
+You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to **C:\Program Files (x86)\Windows Kits\10\bin\<arch>** and **C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\<arch>**. 
+
+**Important Notes:**
+* ApiValidator requires the following files: ApiValidator.exe, Aitstatic.exe, Microsoft.Kits.Drivers.ApiValidator.dll, and UniversalDDIs.xml. 
+* The UniversalDDIs.xml must match the binary architecture being validated, for example for an x64 driver use the x64 UniversalDDI.xml
+* ApiValidator only tests one architecture at a time
+* See Known ApiValidator issues below for additional info
 
 Use the following syntax:
 
-**Apivalidator.exe** **-DriverPackagePath:**_&lt;driver folder path&gt;_  
- **-SupportedApiXmlFiles:**_&lt;path to XML files containing supported APIs for universal drivers&gt;_
+`Apivalidator.exe -DriverPackagePath: <driver folder path> -SupportedApiXmlFiles: (path to XML files containing supported APIs for Windows drivers)`
 
-For example, to verify the APIs called by the Activity sample in the WDK, first build the sample in Visual Studio. Then open a command prompt and navigate to the directory containing the tool, for example C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64. Enter the following command:
+For example, to verify the APIs called by the Activity sample in the WDK, first build the sample in Visual Studio. Then open a command prompt and navigate to the directory containing the tool, for example `C:\Program Files (x86\Windows Kits\10\bin\x64`. Enter the following command:
 
-**apivalidator.exe -DriverPackagePath:"C:\\Program Files (x86)\\Windows Kits\\10\\src\\usb\\umdf2\_fx2\\Debug\\\\" -SupportedApiXmlFiles:"c:\\Program Files (x86)\\Windows Kits\\10\\build\\universalDDIs\\x64\\UniversalDDIs.xml"**
+`apivalidator.exe -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2\_fx2\Debug" -SupportedApiXmlFiles:"c:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x64\UniversalDDIs.xml"`
 
 The command produces the following output:
 
@@ -83,9 +104,7 @@ ApiValidator.exe: Warning: API QueryPerformanceCounter in kernel32.dll is not su
 ApiValidator.exe Driver located at C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\Debug is NOT a Universal Driver
 ```
 
-The XML files that enumerate the valid APIs for Universal Windows drivers are located in C:\\Program Files (x86)\\Windows Kits\\10\\build\\universalDDIs\\*&lt;arch&gt;*.
-
-## <span id="Troubleshooting"></span><span id="troubleshooting"></span><span id="TROUBLESHOOTING"></span>Troubleshooting
+### Troubleshooting ApiValidator
 
 
 If ApiValidator.exe outputs an incorrect format error such as the following:
@@ -104,11 +123,12 @@ Use this workaround:
 
 2.  Rebuild the solution.
 
-## Known issues
+### Known ApiValidator Issues
 
 * ApiValidator does not run on ARM64 because AitStatic does not work on ARM64.
 * ARM64 binaries can be tested on x64 machines but not on an x86 machine.
 * ApiValidator can run on x86 to test x86 binaries and ARM binaries.
 * ApiValidator can run on x64 to test x86, x64, ARM, and ARM64 binaries.
+
 
 

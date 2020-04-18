@@ -30,6 +30,10 @@ You can use these framework versions to build drivers for:
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
 
+## New in WDF for Windows 10, version 2004
+
+See [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
+
 ## New in WDF for Windows 10, version 1903
 
 No functionality added or changed.
