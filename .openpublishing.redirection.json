@@ -848,212 +848,212 @@
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/why-is-my-usb-driver-getting-out-of-bandwidth-errors-.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/setting-usb-transfer-and-packet-sizes.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/delimiting-usb-data-transfers-with-packets-smaller-than-wmaxpacketsize.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/sending-a-usb-idle-request-irp.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-selective-suspend",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/canceling-a-usb-idle-request.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-selective-suspend",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/usb-idle-request-irp-completion-routine.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-selective-suspend",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/usb-idle-notification-callback-routine.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-selective-suspend",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/conditions-for-global-suspend-in-windows-xp.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-selective-suspend",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/enabling-selective-suspend.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-selective-suspend",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/support-for-the-wireless-mobile-communication-device-class--wmcdc-.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/enumerating-interface-collections-on-wireless-mobile-communication-dev.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/handling-cdc-and-wmcdc-interface-collections.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-and-wmcdc-control-models.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/audio-class-interfaces.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-abstract-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-atm-networking-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-capi-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-direct-line-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-ethernet-networking-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-multi-channel-isdn-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/cdc-telephone-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/mcpc-vendor-unique-interfaces.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/video-class-interfaces.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/wmcdc-abstract-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/wmcdc-device-management-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/wmcdc-mobile-direct-line-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/wmcdc-obex-control-model--multiple-pdos-.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/wmcdc-obex-control-model--single-pdo-.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/wmcdc-wireless-handset-control-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/enumeration-of-interface-collections-on-devices-that-have-iads.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/enumeration-of-interface-collections-on-audio-devices-without-iads.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/support-for-interface-collections",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/obtaining-hid-reports-by-user-mode-applications.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/obtaining-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/obtaining-hid-reports-by-kernel-mode-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/obtaining-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/sending-hid-reports-by-user-mode-applications.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/sending-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/sending-hid-reports-by-kernel-mode-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/sending-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/extracting-value-data-by-specifying-its-usage.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/interpreting-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/extracting-button-usages-that-are-set-to-on.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/interpreting-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/setting-value-data-by-specifying-its-usage.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/interpreting-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/setting-button-state-by-specifying-its-usage.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/interpreting-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/extracting-and-setting-control-data-by-data-indices.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/interpreting-hid-reports",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/hid/joystick-driver-model.md",
                              "redirect_URL":  "/windows-hardware/drivers/hid/joystick-support",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                             "source_path":  "windows-driver-docs-pr/hid/minidriver-supplied-callbacks.md",
                             "redirect_URL":  "/windows-hardware/drivers/hid/joystick-support",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/install/signing-drivers-during-development-and-test--windows-vista-and-later-.md",
