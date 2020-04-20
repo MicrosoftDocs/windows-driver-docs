@@ -163,7 +163,7 @@ The following features were added for Windows Mobile Broadband and Mobile Operat
 - [eSIM and MBIM ReadyState guidance](https://docs.microsoft.com/windows-hardware/drivers/network/mb-esim-mbim-ready-state-guidance)
 
 In Windows 10, version 1709, the [desktop COSA documentation](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission) was updated to include new branding-related fields.
-See the list of [deprecated features](#deprecated-features) for other changes to Mobile Operator Scenarios.
+See the list of [deprecated features](what-s-new-in-driver-development.md/#deprecated-features) for other changes to Mobile Operator Scenarios.
 
 ### Networking
 
