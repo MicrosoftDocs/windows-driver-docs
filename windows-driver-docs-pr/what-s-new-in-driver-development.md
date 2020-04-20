@@ -10,17 +10,6 @@ ms.localizationpriority: medium
 
 This section provides information about the new features and updates to Windows driver development in Windows 10.
 
-The following is a list of new feature highlights for driver development in Windows 10.
-
-* [Windows 10, version 1903 WDK supports Visual Studio 2019](#wdk-supports-visual-studio-2019)
-* [Windows Hardware Dev Center dashboard](#windows-hardware-dev-center-dashboard)
-* [Debugging Tools for Windows](#debugging-tools-for-windows)
-* [Device and Driver Installation](#device-and-driver-installation)
-* [Windows Driver Frameworks](#windows-driver-frameworks-wdf)
-* [Windows Compatible hardware development boards](#windows-compatible-hardware-development-boards)
-* [Power Management Framework](#power-management-framework)
-* [System-Supplied Driver Interfaces](#system-supplied-driver-interfaces)
-* [WPP Software Tracing](#wpp-software-tracing)
 
 ## WDK supports Visual Studio 2019
 
