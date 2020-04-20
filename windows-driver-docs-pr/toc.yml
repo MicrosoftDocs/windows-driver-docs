@@ -8,6 +8,8 @@
     href: driver-changes-for-windows-10-version-1809.md
   - name: "Driver development changes for Windows 10, version 1803"
     href: driver-changes-for-windows-10-version-1803.md
+  - name: "Driver development changes for Windows 10, version 1709"
+    href: driver-changes-for-windows-10-version-1709.md
 - name: "Download the Windows Driver Kit (WDK)"
   href: download-the-wdk.md
 - name: "Installing preview versions of the WDK"
