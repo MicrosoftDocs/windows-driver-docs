@@ -19,7 +19,7 @@ Use this option to connect to a remote debugging server.
 
 Remote debugging involves two debuggers running at two different locations. The debugger that performs the debugging is called the debugging server. The second debugger, called the debugging client, controls the debugging session from a remote location. To establish a remote session, you must set up the debugging server first and then connect to it with the the debugging client.
 
-For more information about remote sessions, see [Remote Debugging Using WinDbg](remode-debugging-using-windbg.md).
+For more information about remote sessions, see [Remote Debugging Using WinDbg](remote-debugging-using-windbg.md).
 
 ## Process Debug Server
 
