@@ -2,13 +2,13 @@
   items: 
   - name: "What's new in driver development"
     href: what-s-new-in-driver-development.md
-  - name: "Driver development changes for Windows 10, version 1903"
+  - name: "What's new in  for Windows 10, version 1903"
     href: driver-changes-for-windows-10-version-1903.md
-  - name: "Driver development changes for Windows 10, version 1809"
+  - name: "What's new in  for Windows 10, version 1809"
     href: driver-changes-for-windows-10-version-1809.md
-  - name: "Driver development changes for Windows 10, version 1803"
+  - name: "What's new in  for Windows 10, version 1803"
     href: driver-changes-for-windows-10-version-1803.md
-  - name: "Driver development changes for Windows 10, version 1709"
+  - name: "What's new in  for Windows 10, version 1709"
     href: driver-changes-for-windows-10-version-1709.md
 - name: "Download the Windows Driver Kit (WDK)"
   href: download-the-wdk.md
