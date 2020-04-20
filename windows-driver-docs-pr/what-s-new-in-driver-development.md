@@ -15,12 +15,9 @@ The following is a list of new feature highlights for driver development in Wind
 
 * [Windows 10, version 1903 WDK supports Visual Studio 2019](#wdk-supports-visual-studio-2019)
 * [Windows Hardware Dev Center dashboard](#windows-hardware-dev-center-dashboard)
-* [Open publishing](#open-publishing)
 * [Debugging Tools for Windows](#debugging-tools-for-windows)
 * [Device and Driver Installation](#device-and-driver-installation)
-* [Driver Verifier](#driver-verifier)
 * [Windows Driver Frameworks](#windows-driver-frameworks-wdf)
-* [Universal Windows drivers](#universal-windows-drivers)
 * [Windows Compatible hardware development boards](#windows-compatible-hardware-development-boards)
 * [Power Management Framework](#power-management-framework)
 * [System-Supplied Driver Interfaces](#system-supplied-driver-interfaces)
@@ -66,9 +63,10 @@ This section provides highlights of new features for driver development in Windo
 
 ### WDK supports Visual Studio 2019
 
-The Windows Driver Kit (WDK) for Windows 10, version 1903, has been updated to support Visual Studio 2019 as previously [announced](https://social.msdn.microsoft.com/Forums/en-US/b116571d-d5b2-4c1c-a43e-4b57171c8c41/windows-driver-kit-wdk-to-support-visual-studio-2019?forum=wdk). This release of the WDK is not compatible with Visual Studio 2017 however, developers can continue working with Visual Studio 2017 using the previous releases of the WDK, (releases 1709 thru 1809 found [here](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads)). To learn about what is new with Visual Studio 2019 please review the information [here](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019).
+Starting in Windows 10, version 1809, the Windows Driver Kit (WDK) supports Visual Studio 2019. This release of the WDK is not compatible with Visual Studio 2017.
+Developers can continue working with Visual Studio 2017 by using releases 1709 thru 1809 of the WDK,  found in [Other WDK downloads](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads). To learn about what is new with Visual Studio 2019, see the [Visual Studio 2019 version 16.5 Release Notes](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019).
 
-The following are a few items of notable changes in Visual Studio 2019 that Windows driver developers will see.
+The following are a few of the notable changes in Visual Studio 2019 that Windows driver developers will see.
 
 #### WDK GUI Driver Menu moved
 
@@ -90,196 +88,35 @@ The WDK Driver templates were previously found in Visual Studio 2017 under New P
 
 ![screenshot of Visual Studio 2017 driver templates](images/vs-2017-driver-template.png)
 
-### Windows Hardware Dev Center dashboard
 
-In Windows 10, version 1809, we added new and improved functionality in the way of [Hardware APIs](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api) for developers, IHVs, and OEMs to track and submit driver packages to the Windows hardware dashboard.
 
-Use the shipping label REST APIs to create and manage shipping labels, the method by which you distribute your drivers.
+#### Debugging Tools for Windows
 
-* [Manage Shipping Labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-shipping-labels)
-* [Get shipping label data](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-shipping-labels)
+Changes in the debugging tools for Windows are described in each release section.
 
-Use the asynchronous custom report methods to access reporting data for driver errors and OEM hardware errors. You can define reporting templates based on your needs, set a schedule and you will have data delivered to you at regular intervals.
 
-* [Schedule custom reports for your driver failure details](https://docs.microsoft.com/windows-hardware/drivers/dashboard/schedule-custom-reports-for-driver-failure-details)
-
-### Open publishing
-
-We're making the docs more community-driven. On many pages of the Windows driver documentation, you can suggest changes directly. Look for the **Contribute** button in the upper right corner of a page. It looks like this:
-
-![screenshot of contribute button](contribute-button.png)
-
-When you click **Contribute**, you'll arrive at the Markdown source file for that topic in a [GitHub repository](https://github.com/MicrosoftDocs/windows-driver-docs). You can click **Edit** and suggest changes right here.
-
-For more details, see [CONTRIBUTING.md](https://github.com/MicrosoftDocs/windows-driver-docs/blob/staging/CONTRIBUTING.md) in the repo. And thanks for taking the time to improve the docs!
-
-### Debugging Tools for Windows
-
-This section describes the changes in the debugging tools for Windows.
-
-#### Debugging in Windows 10, version 1903
-
-* New stop codes were added to allow better tracking on unique failure types in the Windows operating system. In addition a number of existing bug check topics were expanded and updated. For more information, see [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
-
-* Updates to KDNET topics to improve ease of use, for example in new [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically)
-
-* Updates to IP V6 KDNET support.
-
-* New [JavaScript Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) topic
-
-#### Debugging in Windows 10, version 1809
-
-* **New Debugger Data Model API** – A new object oriented debugger data model interface to support debugger automation is now available using the dbgmodel.h header. The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's dx expression evaluator as well as from JavaScript extensions or C++ extensions. Documentation will be available at: [Overview of the Debugger Data Model C++ Interface](debugger/data-model-cpp-overview.md)  and the [dbgmodel.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/) header reference topics.
-
-* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at [https://aka.ms/windbgpreview](https://aka.ms/windbgpreview) that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details.
-
-#### Debugging in Windows 10, version 1803
-
-[WinDbg Preview Time Travel Debugging (TTD) hands on lab](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough) - This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue.
-
-#### Debugging in Windows 10, version 1709
-
-The following is a list of new content sets for the Debugger in Windows 10, version 1709:
-
-* [Debugging Using WinDbg Preview](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-using-windbg-preview) - A preview into the next generation debugger.
-* [Time Travel Debugging - Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-overview) - Record and replay an execution of your process.
-
-#### Debugging in Windows 10, version 1703
-
-The following table shows changes for the Debugger in Windows 10, version 1703:
-
-| New topics | Updated topics |
-| --- | --- |
-| [JavaScript Debugger Scripting](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) | [dtx (Display Type - Extended Debugger Object Model Information)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dtx--display-type---extended-debugger-object-model-information-) command |
-| 40 undocumented stop codes in the [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2) | Updates to the [Configuring tools.ini](https://docs.microsoft.com/windows-hardware/drivers/debugger/configuring-tools-ini) topic with additional options in the tools.ini file for the command line debuggers |
-| [!ioctldecode command](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ioctldecode) | New command capabilities in the [dx (Display Debugger Object Model Extension)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command |
-
-#### Debugging in Windows 10, version 1607
-
-In Windows 10, version 1607, changes to the Debugger include a new topic about [Debugging a UWP app using WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-uwp-app-using-windbg), and updates to the 30 most-viewed developer bug check topics in [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
-
-#### Debugging in Windows 10, version 1507
-
-The following is a list of new commands for the Windows Debugger in Windows 10, version 1507:
-
-* [**dx (Display NatVis Expression)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) - A new debugger command which displays object information using the NatVis extension model.
-* [**.settings**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-settings--set-debug-settings-) - A new command that sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
-
-### Device and Driver Installation
-
-In Windows 10, version 1809, the following content was added:
-
-* [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
-* [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
-
-The following was updated:
-
-* [Early Launch AntiMalware Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/elam-driver-requirements)
-* [Kernel-Mode Code Signing Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)
-
-### Driver Verifier
-
-Driver verifier includes new driver validation rules for the following technologies:
-
-* New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-audio-drivers)
-* New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
-* Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
-* Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
-* New [Nullcheck rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/nullcheck) *Added in version 1703*
-
-### Windows Driver Frameworks (WDF)
-
-#### WDF in Windows 10, version 1903
-
-In Windows 10, version 1903, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
-
-For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
-To see what was added in previous versions of WDF, see [KMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/kmdf-version-history) and [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history).
-
-### Universal Windows drivers
-
-This section describes new and updated features for Universal Windows drivers in Windows 10.
-
-[Back to Top](#top)
-
-#### Universal Drivers in Windows 10, version 1809
-
-Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
-To enable flexible linking, use the following new SDK API:
-
-* [IsApiSetImplemented](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
-
-This existing topic has been enhanced to describe how to use flexible linking to comply with the U requirement of the [DCHU driver design principles](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles):
-
-* [Building for OneCore](https://docs.microsoft.com/windows-hardware/drivers/develop/building-for-onecore)
-
-#### Universal Drivers in Windows 10, version 1803
-
-See the latest recommendations for universal drivers in [Getting started with universal drivers](develop/getting-started-with-universal-drivers.md).
-
-#### Universal Drivers in Windows 10, version 1709
-
-The following is a list of new features to Universal Drivers in Windows 10, version 1709:
-
-* [Updating Device Firmware using Windows Update](https://docs.microsoft.com/windows-hardware/drivers/install/updating-device-firmware-using-windows-update) - Describes how to update a removable or in-chassis device's firmware by using the Windows Update (WU) service.
-* [Reg2inf](https://docs.microsoft.com/windows-hardware/drivers/devtest/reg2inf) - The Driver Package INF Registry Conversion Tool (reg2inf.exe) converts a registry key and its values or a COM .dll implementing a DLL RegisterServer routine, into a set of INF AddReg directives. These directives are included in the driver package INF file.
-
-The following is a list of updates to Universal Drivers in Windows 10, version 1709:
-
-* The [Universal Drivers Scenario](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios) has a new COM component example
-* [INF AddComponent Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addcomponent-directive)
-* [Using an Extension INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
-* [Using a Component INF file](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-component-inf-file)
-
-#### Universal Drivers in Windows 10
-
-Starting in Windows 10, you can write a single driver that works on OneCoreUAP-based editions of Windows, such as Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, and Windows 10 IoT Core (IoT Core). Such a driver is called a Universal Windows driver. A Universal Windows driver calls a subset of the interfaces that are available to a Windows driver. For information about how to build, install, deploy, and debug a Universal Windows driver for Windows 10, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
-
-When you build a Universal Windows driver using Microsoft Visual Studio 2015, Visual Studio automatically checks if the APIs that your driver calls are valid for a Universal Windows driver. You can also use the ApiValidator.exe as a standalone tool to perform this task. The ApiValidator.exe tool is part of the Windows Driver Kit (WDK) for Windows 10. For info, see [Validating Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-drivers).
-
-Universal Windows drivers also require a special kind of INF file called a *universal INF*. A universal INF can use a subset of the directives and sections available to a legacy INF file. To learn more, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file). To see which sections and directives apply, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
-
-When you're ready, use the [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) tool to test your driver's INF file. In addition to reporting INF syntax problems, the tool reports if the INF file will work with a Universal Windows driver.
-
-You can also find information about which APIs you can call from a Universal Windows driver. This information is located in the Requirements block at the bottom of driver reference pages.
-
-For example, you'll see a listing similar to this one that tells you if a given DDI is **Universal.**
-
-![target platform set to universal in requirements block](targetplatform.png)
-
-For more info, see [Target platform on driver reference pages](https://docs.microsoft.com/windows-hardware/drivers/develop/windows-10-editions-for-universal-drivers).
 
 ### Windows compatible hardware development boards
 
 Windows is now supported on more affordable boards such as the Raspberry Pi 2. Become a part of our early adopter community and load Windows on that board. For more information, see [Windows compatible hardware development boards](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/windows-compatible-hardware-development-boards).
 
-### Power Management Framework
 
-The power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device. The driver can use performance states to throttle a component's workload to provide just enough performance for its current needs. For more information, see [Component-Level Performance State Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/component-level-performance-management).
 
-Windows 10, version 1903 includes support for the [Directed Power Management Framework (DFx)](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework).  Related reference documentation includes the following:
+## What's new in Windows 10, version 2004 (latest)
 
-* [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3)
-* [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
-* [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
-* [PoFxCompleteDirectedPowerDown](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxcompletedirectedpowerdown) function
+This section describes new features and updates for driver development in Windows 10, version 2004 (Windows 10 May 2020 Update).
 
-For information about testing for DFx, please see the following pages:
+### Windows Drivers
 
-* [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
-* [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
-* [PwrTest DirectedFx Scenario](devtest/pwrtest-directedfx-scenario.md)
+Windows 10, version 2004 is a transition release for universal drivers. In this release, universal drivers still exist, but are being replaced by Windows Drivers. A Windows Driver is a universal driver with a few additional requirements.
 
-### WPP Software Tracing
+Windows Drivers are distinguished from Windows Desktop Drivers. While Windows Drivers run on Windows 10X and Windows 10 Desktop editions,  Windows Desktop Drivers run only on Windows 10 Desktop editions.
 
-[WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) introduces a new feature: *Inflight Trace Recorder*. If the driver enables WPP tracing and WPP Recorder, trace logging is turned on automatically and you can easily view messages without starting or stopping trace sessions. For more fine tuned control over the log, WPP Recorder allows a KMDF driver to create and manage custom buffers.
+No changes are required to universal drivers for the version 2004 release, but documentation is available now so that you can plan ahead for upcoming changes.
 
-* [WPP Recorder for logging traces](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-wpp-recorder)
-* [WppRecorderLogGetDefault](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-imp_wpprecorderloggetdefault)
-* [WppRecorderLogCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) (KMDF only)
-* [WppRecorderDumpLiveDriverData](https://docs.microsoft.com/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderdumplivedriverdata)
+For information about how to build, install, deploy, and debug a Windows Driver, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers).
 
-## What's new in Windows 10, version 1903 (latest)
+## What's new in Windows 10, version 1903
 
 This section describes new features and updates for driver development in Windows 10, version 1903 (Windows 10 April 2019 Update).
 
@@ -307,6 +144,19 @@ New Camera driver documentation and features added in Windows 10, version 1903 i
   * MSXU_CONTROL_FACE_AUTHENTICATION
   * MSXU_CONTROL_METADATA
   * MSUX_CONTROL_IR_TORCH
+
+
+#### Debugging
+
+Changes to the Debugger for Windows 10, version 1903 include the following:
+
+* New stop codes were added to allow better tracking on unique failure types in the Windows operating system. In addition a number of existing bug check topics were expanded and updated. For more information, see [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
+
+* Updates to KDNET topics to improve ease of use, for example in new [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically)
+
+* Updates to IP V6 KDNET support.
+
+* New [JavaScript Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) topic
 
 ### <a name="display-1903"></a>Display
 
@@ -378,6 +228,23 @@ The following features were added to Mobile broadband in Windows 10, version 190
 * New [modem logging with DSS](https://docs.microsoft.com/windows-hardware/drivers/network/mb-modem-logging-with-dss) feature.
 * New [5G data class support](https://docs.microsoft.com/windows-hardware/drivers/network/mb-5g-data-class-support) feature.
 
+### Power Management Framework
+
+The power management framework (PoFx) enables a driver to define one or more sets of individually adjustable performance states for individual components within a device. The driver can use performance states to throttle a component's workload to provide just enough performance for its current needs. For more information, see [Component-Level Performance State Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/component-level-performance-management).
+
+Windows 10, version 1903 includes support for the [Directed Power Management Framework (DFx)](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework).  Related reference documentation includes the following:
+
+* [PO_FX_DEVICE_V3](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-po_fx_device_v3)
+* [PO_FX_DIRECTED_POWER_DOWN_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_down_callback)
+* [PO_FX_DIRECTED_POWER_UP_CALLBACK callback function](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback)
+* [PoFxCompleteDirectedPowerDown](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxcompletedirectedpowerdown) function
+
+For information about testing for DFx, please see the following pages:
+
+* [Directed FX Single Device Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/34cfdfa6-7826-443c-9717-bc28c3166092)
+* [Directed FX System Verification Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
+* [PwrTest DirectedFx Scenario](devtest/pwrtest-directedfx-scenario.md)
+
 ### <a name="print-1903"></a>Print
 
 New Print driver documentation and features added in Windows 10, version 1903 include:
@@ -403,6 +270,13 @@ The following Storage features were added in Windows 10, version 1903:
 * New Storport APIs for logging device failure and hardware protocol errors in ETW events and to query for platform D3 desired behavior
 * New API to set the properties of a storage device or adapter
 * For file systems, new DDIs were added to support retrieving extended attributes (EA) information upon create completion, allowing mini-filters to alter the ECP payload to change what higher filters see
+
+### Windows Driver Frameworks (WDF)
+
+In Windows 10, version 1903, the Windows Driver Framework (WDF) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
+
+For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
+To see what was added in previous versions of WDF, see [KMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/kmdf-version-history) and [UMDF Version History](https://docs.microsoft.com/windows-hardware/drivers/wdf/umdf-version-history).
 
 ### Windows Hardware Error Architecture (WHEA)
 
@@ -446,6 +320,39 @@ Documentation on the new [sidebandaudio](https://docs.microsoft.com/windows-hard
 * HCI_VS_MSFT_Read_Supported_Features has been updated to include a new flag for secure simple pairing process. See, [Microsoft-defined Bluetooth HCI commands and events](https://docs.microsoft.com/windows-hardware/drivers/bluetooth/microsoft-defined-bluetooth-hci-commands-and-events#hcivsmsftreadsupportedfeatures).
 
 * New QDID for Windows 10, version 1809 is available here: [108589](https://launchstudio.bluetooth.com/ListingDetails/55701). For a complete list of QD ID for all releases, see [Bluetooth](https://docs.microsoft.com/windows-hardware/design/component-guidelines/bluetooth).
+
+### Windows Hardware Dev Center dashboard
+
+In Windows 10, version 1809, we added new and improved functionality in the way of [Hardware APIs](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api) for developers, IHVs, and OEMs to track and submit driver packages to the Windows hardware dashboard.
+
+Use the shipping label REST APIs to create and manage shipping labels, the method by which you distribute your drivers.
+
+* [Manage Shipping Labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-shipping-labels)
+* [Get shipping label data](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-shipping-labels)
+
+Use the asynchronous custom report methods to access reporting data for driver errors and OEM hardware errors. You can define reporting templates based on your needs, set a schedule and you will have data delivered to you at regular intervals.
+
+* [Schedule custom reports for your driver failure details](https://docs.microsoft.com/windows-hardware/drivers/dashboard/schedule-custom-reports-for-driver-failure-details)
+
+### Debugging
+
+Changes to the Debugger for Windows 10, version 1809 include the following:
+
+* **New Debugger Data Model API** – A new object oriented debugger data model interface to support debugger automation is now available using the dbgmodel.h header. The debugger data model is an extensible object model that is central to the way in which new debugger extensions (including those in JavaScript, NatVis, and C++) both consume information from the debugger and produce information that can be accessed from the debugger as well as other extensions. Constructs which are written to the data model APIs are available in the debugger's dx expression evaluator as well as from JavaScript extensions or C++ extensions. Documentation will be available at: [Overview of the Debugger Data Model C++ Interface](debugger/data-model-cpp-overview.md)  and the [dbgmodel.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/) header reference topics.
+
+* **IPv6** - We are adding support for IPv6 to KDNET. To make room for the larger headers required for IPv6, we decreased the payload size of packets. As a result, we’re declaring a new version of the KDNET protocol, so that host PCs running the latest version of the debugger can be used to debug target PCs that only support IPv4. There is a version of WinDbg Preview available at [https://aka.ms/windbgpreview](https://aka.ms/windbgpreview) that supports IPv6. Follow the Debugging Tools for Windows blog for updates on KDNET IPv6 support and see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) for more details.
+
+### Device and Driver Installation
+
+In Windows 10, version 1809, the following content was added:
+
+* [INF AddEventProvider Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive)
+* [INF DDInstall.Events Section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-events-section)
+
+The following was updated:
+
+* [Early Launch AntiMalware Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/elam-driver-requirements)
+* [Kernel-Mode Code Signing Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-)
 
 ### <a name="display-1809"></a>Display
 
@@ -556,6 +463,18 @@ The PKEY_SensorData_IsValid data field has been added to support auto brightness
 
 See [Light sensor data fields](https://docs.microsoft.com/windows-hardware/drivers/sensors/light-sensor-data-fields) for more info.
 
+### Universal Drivers in Windows 10, version 1809
+
+Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
+To enable flexible linking, use the following new SDK API:
+
+* [IsApiSetImplemented](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
+
+This existing topic has been enhanced to describe how to use flexible linking to comply with the U requirement of the [DCHU driver design principles](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles):
+
+* [Building for OneCore](https://docs.microsoft.com/windows-hardware/drivers/develop/building-for-onecore)
+
+
 ### <a name="usb-1809"></a>USB
 
 **New feature for USB Type-C driver developers:**
@@ -619,6 +538,12 @@ Updates to Camera driver development include:
 
 * [DShow (DirectShow) Bridge implementation guidance for UVC devices](https://docs.microsoft.com/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices) - Implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses Microsoft OS Descriptors from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 * [360 camera video capture](https://docs.microsoft.com/windows-hardware/drivers/stream/360-camera-video-capture) - Provides support for 360 camera preview, capture, and record with existing MediaCapture APIs. This enables the platform to expose spherical frame sources (for example, equirectangular frames ), enabling apps to detect and handle 360 video camera streams as well as to provide a 360 capture experience.
+
+#### Debugging
+
+Changes to the Debugger for Windows 10, version 1803 include the following:
+
+[WinDbg Preview Time Travel Debugging (TTD) hands on lab](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough) - This lab introduces Time Travel Debugging (TTD), using a small sample program with a code flaw. TTD is used to debug, identify and root cause the issue.
 
 ### <a name="display-1803"></a>Display
 
@@ -792,6 +717,15 @@ The following is a list of new Advanced Configuration and Power Interface (ACPI)
 ### <a name="biometric-1709"></a>Biometric
 
 There are new signing requirements for Windows Biometric Drivers. For more information, see [Signing WBDI Drivers](https://docs.microsoft.com/windows-hardware/drivers/biometric/signing-wbdi-drivers).
+
+#### Debugging
+
+Changes to the Debugger for Windows 10, version 1709 include the following:
+
+The following is a list of new content sets for the Debugger in Windows 10, version 1709:
+
+* [Debugging Using WinDbg Preview](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-using-windbg-preview) - A preview into the next generation debugger.
+* [Time Travel Debugging - Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-overview) - Record and replay an execution of your process.
 
 ### <a name="display-1709"></a>Display
 
@@ -989,6 +923,18 @@ The following is a list of updates to Camera driver development in Windows 10, v
   * [KSCATEGORY_SENSOR_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-sensor-camera)
   * [KSCATEGORY_VIDEO_CAMERA](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-video-camera)
 
+#### Debugging
+
+Changes to the Debugger for Windows 10, version 1703 include the following:
+
+The following table shows changes for the Debugger in Windows 10, version 1703:
+
+| New topics | Updated topics |
+| --- | --- |
+| [JavaScript Debugger Scripting](https://docs.microsoft.com/windows-hardware/drivers/debugger/javascript-debugger-scripting) | [dtx (Display Type - Extended Debugger Object Model Information)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dtx--display-type---extended-debugger-object-model-information-) command |
+| 40 undocumented stop codes in the [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2) | Updates to the [Configuring tools.ini](https://docs.microsoft.com/windows-hardware/drivers/debugger/configuring-tools-ini) topic with additional options in the tools.ini file for the command line debuggers |
+| [!ioctldecode command](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ioctldecode) | New command capabilities in the [dx (Display Debugger Object Model Extension)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command |
+
 ### <a name="kernel-1703"></a>Windows kernel
 
 [Windows Kernel-Mode Process and Thread Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager) - Starting in Windows 10 version 1703, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For more information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](https://blogs.msdn.microsoft.com/wsl/) blog.
@@ -1046,6 +992,12 @@ Camera driver development in Windows 10, version 1607 includes new and updated t
 * [Extended camera controls](https://docs.microsoft.com/windows-hardware/drivers/stream/standardized-extended-controls-)
 * [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-faceauth-mode)
 
+#### Debugging
+
+Changes to the Debugger for Windows 10, version 1607 include the following:
+
+In Windows 10, version 1607, changes to the Debugger include a new topic about [Debugging a UWP app using WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-uwp-app-using-windbg), and updates to the 30 most-viewed developer bug check topics in [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2).
+
 ### <a name="location-1607"></a>Location
 
 Location driver development in Windows 10, version 1607 includes the following new Global Navigation Satellite System (GNSS) Breadcrumb DDIs:
@@ -1099,6 +1051,16 @@ The camera driver DDIs have converged into a Universal Windows driver model, inc
 ### Cellular
 
 [Cellular architecture and implementation](https://docs.microsoft.com/windows-hardware/drivers/network/cellular-architecture-and-driver-model) for Windows 10 has been updated.
+
+#### Debugging
+
+Changes to the Debugger for Windows 10, version 1507 include the following:
+
+The following is a list of new commands for the Windows Debugger in Windows 10, version 1507:
+
+* [**dx (Display NatVis Expression)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) - A new debugger command which displays object information using the NatVis extension model.
+* [**.settings**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-settings--set-debug-settings-) - A new command that sets, modifies, displays, loads and saves settings in the Debugger.Settings namespace.
+
 
 ### <a name="display-1507"></a>Display
 

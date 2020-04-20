@@ -7,7 +7,7 @@ ms.date: 10/17/2018
 
 # Using a Component INF File
 
-If you want to include user-mode software for use with a device on Windows 10, you have the following options to create a [DCHU-compliant universal driver](../develop/getting-started-with-universal-drivers.md):
+If you want to include user-mode software for use with a device on Windows 10, you have the following options to create a [DCH-compliant driver](../develop/getting-started-with-windows-drivers.md):
     
 |Method|Scenario|
 |---|---|
@@ -75,13 +75,13 @@ To retrieve the device instance ID of a device that is associated with a softwar
 
 The executable can then retrieve the device instance ID of the software component from its incoming argument list.  
 
-Next, if the software component is targeting the Universal [target platform](../develop/windows-10-editions-for-universal-drivers.md), use the following procedure:
+Next, if the software component is targeting the Universal [target platform](../develop/target-platforms.md), use the following procedure:
 
 1. Call [**CM_Locate_DevNode**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_locate_devnodea) with the device instance ID of the software component to retrieve a device handle.
 2. Call [**CM_Get_Parent**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to retrieve a handle to that device’s parent.  This parent is the device that added the software component using the [INF AddComponent Directive](inf-addcomponent-directive.md).
 3. Then, to retrieve the device instance ID of the parent, call [**CM_Get_Device_ID**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) on the handle from [**CM_Get_Parent**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent).
 
-If the software component is targeting the Desktop [target platform](../develop/windows-10-editions-for-universal-drivers.md) only, use the following procedure:
+If the software component is targeting the Desktop [target platform](../develop/target-platforms.md) only, use the following procedure:
 
 1. Call [**SetupDiCreateDeviceInfoList**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinfolist) to create an empty device information set.
 2. Call [**SetupDiOpenDeviceInfo**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) with the software component device's device instance ID.

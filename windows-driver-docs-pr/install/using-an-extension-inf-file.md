@@ -235,5 +235,5 @@ For detailed information on how to work with Extension INFs on the Hardware Dev 
 
 * [Universal Driver Scenarios](../develop/universal-driver-scenarios.md)
 * [Using a Universal INF File](using-a-universal-inf-file.md)
-* [Getting Started with Universal Drivers](../develop/getting-started-with-universal-drivers.md)
+* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
 * [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
