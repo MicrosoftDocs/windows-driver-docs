@@ -1,7 +1,13 @@
 - name: "Getting Started with the Windows Driver Kit"
   href: index.yml
-- name: "What's new in driver development"
-  href: what-s-new-in-driver-development.md
+- name: "Driver Technologies"
+  items: 
+  - name: "What's new in driver development"
+    href: what-s-new-in-driver-development.md
+  - name: "Driver development changes for Windows 10, version 1903"
+    href: driver-changes-for-windows-10-version-1903.md
+  - name: "Driver development changes for Windows 10, version 1809"
+    href: driver-changes-for-windows-10-version-1809.md
 - name: "Download the Windows Driver Kit (WDK)"
   href: download-the-wdk.md
 - name: "Installing preview versions of the WDK"
