@@ -22,20 +22,14 @@ The following is a list of new feature highlights for driver development in Wind
 * [System-Supplied Driver Interfaces](#system-supplied-driver-interfaces)
 * [WPP Software Tracing](#wpp-software-tracing)
 
-## What's new in driver development for Windows 10
-
-[Back to Top](#top)
-
-This section provides highlights of new features for driver development in Windows 10.
-
-### WDK supports Visual Studio 2019
+## WDK supports Visual Studio 2019
 
 Starting in Windows 10, version 1809, the Windows Driver Kit (WDK) supports Visual Studio 2019. This release of the WDK is not compatible with Visual Studio 2017.
 Developers can continue working with Visual Studio 2017 by using releases 1709 thru 1809 of the WDK,  found in [Other WDK downloads](https://docs.microsoft.com/windows-hardware/drivers/other-wdk-downloads). To learn about what is new with Visual Studio 2019, see the [Visual Studio 2019 version 16.5 Release Notes](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019).
 
 The following are a few of the notable changes in Visual Studio 2019 that Windows driver developers will see.
 
-#### WDK GUI Driver Menu moved
+### WDK GUI Driver Menu moved
 
 In Visual Studio 2019 the WDK Driver menu has been moved to live under the Extension menu as seen below.
 
@@ -45,7 +39,7 @@ The WDK Driver menu in Visual Studio 2017 is located in the top menu options as 
 
 ![screenshot of Visual Studio 2017 menu](images/vs-2017-menu.png)
 
-#### Driver Templates discoverability
+### Driver Templates discoverability
 
 In Visual Studio 2019 the WDK Driver templates will be discoverable under Project Type, Drivers. The Driver Project Type will appear in the first official update release of Visual Studio 2019. Until then the Driver templates can be discovered by searching for them in the search menu.
 
@@ -56,9 +50,7 @@ The WDK Driver templates were previously found in Visual Studio 2017 under New P
 ![screenshot of Visual Studio 2017 driver templates](images/vs-2017-driver-template.png)
 
 
-
-
-### Windows compatible hardware development boards
+## Windows compatible hardware development boards
 
 Windows is now supported on more affordable boards such as the Raspberry Pi 2. Become a part of our early adopter community and load Windows on that board. For more information, see [Windows compatible hardware development boards](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/windows-compatible-hardware-development-boards).
 
@@ -88,9 +80,6 @@ For information on what was new for drivers in past Windows releases, see the fo
 * [Driver development changes for Windows 10, version 1903](driver-changes-for-windows-10-version-1903.md)
 * [Driver development changes for Windows 10, version 1809](driver-changes-for-windows-10-version-1809.md)
 * [Driver development changes for Windows 10, version 1809](driver-changes-for-windows-10-version-1803.md)
-
-
-
 
 
 [Back to Top](#top)
