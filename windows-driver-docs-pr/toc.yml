@@ -10,12 +10,14 @@
     href: driver-changes-for-windows-10-version-1803.md
   - name: "What's new in  for Windows 10, version 1709"
     href: driver-changes-for-windows-10-version-1709.md
-- name: "Download the Windows Driver Kit (WDK)"
-  href: download-the-wdk.md
-- name: "Installing preview versions of the WDK"
-  href: installing-preview-versions-wdk.md
-- name: "Other WDK downloads"
-  href: other-wdk-downloads.md
+- name: "Downloads"
+  items: 
+  - name: "Download the Windows Driver Kit (WDK)"
+    href: download-the-wdk.md
+  - name: "Installing preview versions of the WDK"
+    href: installing-preview-versions-wdk.md
+  - name: "Other WDK downloads"
+    href: other-wdk-downloads.md
 - name: "Bring up guide"
   href: bringup/index.md
 - name: "Developing, Testing, and Deploying Drivers"
