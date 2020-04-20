@@ -14,8 +14,6 @@ This section provides information about the new features and updates to Windows 
 
 This section describes new features and updates for driver development in Windows 10, version 2004 (Windows 10 May 2020 Update).
 
-[Back to Top](#top)
-
 ### Windows Drivers
 
 Windows 10, version 2004 is a transition release for universal drivers. In this release, universal drivers still exist, but are being replaced by Windows Drivers. A Windows Driver is a universal driver with a few additional requirements.
