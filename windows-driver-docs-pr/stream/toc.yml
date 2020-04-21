@@ -1,7 +1,10 @@
 - name: "Streaming media devices design guide"
   href: index.md
 - name: "Device firmware update for USB devices without using a co-installer"
-  href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+# Auto-expanded node
+  items: 
+  - name: "Device firmware update for USB devices without using a co-installer"
+    href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
 - name: "Network camera design guide"
 # Auto-expanded node
   items: 

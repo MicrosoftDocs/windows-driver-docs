@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION
-description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION is a property ID used to inform the driver of whether the camera is facing front or not, relative to the active display of the application.
+title: KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION
+description: KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION is a property ID used to inform the driver of whether the camera is facing front or not, relative to the active display of the application.
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,19 +10,17 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 08/05/2019
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.custom: Vb
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION
 
-**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION** is a property ID used to inform the driver of whether the camera is facing front or not,
-relative to the active display of the application.
-Windows will set the property when the new WinRT API property PanelBasedOptimizationControl.Panel is set.
-Samples for setting KSProperty controls can be found on GitHub here: https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera
+**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION** is a property ID used to inform the driver of whether the camera is facing front or not, relative to the active display of the application. Windows will set the property when the new WinRT API property PanelBasedOptimizationControl.Panel is set.
+
+Examples of setting KSProperty controls can be found in the [AVStream Camera Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera) on GitHub.
 
 ## Usage Summary Table
 
@@ -94,8 +92,7 @@ The table below contains the descriptions and requirements for the [KSCAMERA_EXT
 </tr>
 <tr class="even">
 <td><p>Flags</p></td>
-<td><p>This is a read/write field. This can be either <strong>KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION_ON</strong> or 
-<strong>KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION_OFF</strong> flags defined above.</p></td>
+<td><p>This is a read/write field. This can be either <strong>KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION_ON</strong> or <strong>KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION_OFF</strong> flags defined above.</p></td>
 </tr>
 </tbody>
 </table>
