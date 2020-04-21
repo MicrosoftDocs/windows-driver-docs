@@ -56,7 +56,7 @@ conceptualContent:
         - text: Download Debugging Tools for Windows - WinDbg
           url: https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools
           itemType: download
-        - text: Debug Universal drivers
+        - text: Debug Windows drivers
           url: https://docs.microsoft.com/windows-hardware/drivers/debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-
           itemType: tutorial
     - title: API reference
@@ -86,10 +86,10 @@ additionalContent:
     # Section
     - title: Tasks
       items:
-        - title: Write a universal Hello World driver
-          summary: Learn how to write a very small Universal Windows driver using KMDF.
+        - title: Write a Hello World Windows Driver
+          summary: Learn how to write a very small Windows Driver using KMDF.
           url: https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-very-small-kmdf--driver
-        - title: Get started with Universal Windows drivers
+        - title: Get started with Windows drivers
           summary: Write a single driver package that runs across multiple device types.
           url: https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers
         - title: Add boot entries
@@ -116,7 +116,7 @@ additionalContent:
         - title: Partner Center for Windows Hardware
           summary: Learn how to create and manage system and driver submissions quickly and easily.
           url: https://docs.microsoft.com/windows-hardware/drivers/dashboard/
-        - title: New features and updates
+        - title: What's new in driver development
           summary: Learn about the latest driver development features in Windows 10.
           url: https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development
         - title: Overview of Driver Technologies

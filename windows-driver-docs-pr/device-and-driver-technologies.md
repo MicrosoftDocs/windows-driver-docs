@@ -12,7 +12,7 @@ For general information about developing drivers see [Getting started with Windo
 
 The majority of the driver technology information is the same for all editions of Windows 10. When you must make special considerations for a particular edition of Windows, such as for Windows 10 Mobile, we explicitly called these out in each technology area.
 
-## Universal Windows drivers
+## Windows drivers
 
 You can create a Windows Driver—a driver that uses a subset of the available interfaces—to run on all editions of Windows 10. Where possible, use a Windows Driver to enable deployment of your drivers on multiple devices. For more information about how to build, install, deploy, and debug a Windows Driver for Windows 10, see [Getting Started with Windows Drivers](develop/getting-started-with-windows-drivers.md) and [Deploying a Driver to a Test Computer](develop/deploying-a-driver-to-a-test-computer.md).
 
