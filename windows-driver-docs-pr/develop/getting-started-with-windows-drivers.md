@@ -17,16 +17,16 @@ The *Windows Driver* classification will extend and replace the current *Univers
 This page provides a preview of the upcoming requirements for Windows Drivers.  
 
 > [!NOTE]
-> The distinction between Windows Drivers and Windows Desktop Drivers **does not affect any driver being submitted and certified for Windows 10 Version 2004**.  Changes in certification and submission will happen at a later date.
+> The distinction between Windows Drivers and Windows Desktop Drivers does not affect any driver being submitted and certified for Windows 10 Version 2004.  Changes in certification and submission will happen at a later date.
 
 
 ## Windows Drivers Requirements
 
 When Windows Drivers become a certification option, the following requirements will apply:
 
-- Compliant with [**DCH Design Principles**](dch-principles-best-practices.md)
-- Follow the principles of [**Driver Package Isolation**](driver-isolation.md)
-- Follow [**API Layering Requirements**](api-layering.md)
+- Compliant with [DCH Design Principles](dch-principles-best-practices.md)
+- Follow the principles of [Driver Package Isolation](driver-isolation.md)
+- Follow [API Layering Requirements](api-layering.md)
 - Certified with [Windows Hardware Compatibility Program Certification Process](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/)
 
 ## Windows Drivers vs. Windows Desktop Drivers
