@@ -28,8 +28,6 @@ An IHV follows the design best practices of *driver package isolation* to ensure
 
 After the IHV has certified the base driver, it can be deployed on all OEM systems. Because a base driver can be used across all systems that share a hardware part, Microsoft can test the base driver broadly by using Windows Insider *driver flighting* instead of limiting distribution to specific machines.
 
-After IHV has certified the base driver package, it can be deployed on all OEM systems. Because a base driver package can be used across all systems that share a hardware part, Microsoft can test the base driver package broadly via Windows Insider flighting, rather than limiting distribution to specific machines. 
-
 The OEM validates only the optional customizations that it provides for the OEM system.
 
 Universal drivers are distributed through Windows Update, and hardware support apps are distributed through Microsoft Store.
