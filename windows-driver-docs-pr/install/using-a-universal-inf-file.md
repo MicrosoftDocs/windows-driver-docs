@@ -14,7 +14,7 @@ A universal INF file uses a subset of the [INF syntax](inf-file-sections-and-dir
 
 ## Why is a universal INF file required on non-desktop editions of Windows?
 
-Some editions of Windows, such as Windows 10X, use only a subset of the driver installation methods that are available on Windows 10 Desktop. An INF file for non-Desktop versions of Windows must perform only additive operations that do not depend on the runtime behavior of the system. An INF file with such restricted syntax is called a universal INF file.
+Some editions of Windows, such as Windows 10X, use only a subset of the driver installation methods that are available on Windows 10 Desktop. An INF file for non-Desktop versions of Windows must perform only additive operations that do not depend on the runtime behavior of the system. An INF file with such restricted syntax is called a universal INF file.
 
 A universal INF file installs predictably, with the same result each time. The results of the installation do not depend on the runtime behavior of the system. For example, co-installer references are not valid in a universal INF file because code in an additional DLL cannot be executed on an offline system.
 
