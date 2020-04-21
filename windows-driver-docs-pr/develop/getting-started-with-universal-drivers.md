@@ -1,4 +1,4 @@
-﻿---
+---
 ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting started with Universal Windows drivers
 description: With Universal Windows drivers, you can create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
