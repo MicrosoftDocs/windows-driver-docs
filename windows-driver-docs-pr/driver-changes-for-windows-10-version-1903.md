@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 This section describes new features and updates for driver development in Windows 10, version 1903 (Windows 10 April 2019 Update).
 
-[Back to Top](#top)
-
 ## <a name="audio-1903"></a>Audio
 
 The following is a list of new and updated Audio features in Windows 10, version 1903:

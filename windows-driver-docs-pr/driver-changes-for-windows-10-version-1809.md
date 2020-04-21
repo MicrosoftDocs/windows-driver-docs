@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 This section describes new features and updates for driver development in Windows 10, version 1809 (Windows 10 October 2018 Update).
 
-[Back to Top](#top)
-
 ## <a name="audio-1809"></a>Audio
 
 Documentation on the new [sidebandaudio](https://docs.microsoft.com/windows-hardware/drivers/ddi/sidebandaudio/) and [usbsidebandaudio](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbsidebandaudio/) headers is  now available.

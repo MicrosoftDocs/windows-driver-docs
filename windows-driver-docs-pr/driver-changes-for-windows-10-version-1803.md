@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 This section describes new features and updates for driver development in Windows 10, version 1803 (Windows 10 April 2018 Update).
 
-[Back to Top](#top)
-
 ## <a name="acpi-1803"></a>ACPI
 
 Windows 10, version 1803 includes updates to ACPI DDIs to support platform capabilities and physical device location.
