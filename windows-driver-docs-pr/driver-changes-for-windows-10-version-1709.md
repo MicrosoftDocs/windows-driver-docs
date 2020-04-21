@@ -1,7 +1,7 @@
 ---
 title: Driver development changes for Windows 10, version 1709
 description: This section describes new features for driver development in Windows 10.
-ms.assetid: 5002AFF9-2424-4338-C646-C746R29F9A44
+ms.assetid: 68a5a513-0dab-40f7-b67f-29b76061e1ab
 ms.date: 04/14/2020
 author: EliotSeattle
 ms.localizationpriority: medium
