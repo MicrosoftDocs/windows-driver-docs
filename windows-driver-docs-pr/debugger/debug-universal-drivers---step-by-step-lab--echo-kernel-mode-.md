@@ -1,5 +1,5 @@
 ---
-title: Debug Universal Drivers - Step-by-Step Lab (Echo Kernel Mode)
+title: Debug Windows Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
@@ -7,7 +7,7 @@ ms.date: 02/27/2020
 ms.localizationpriority: medium
 ---
 
-# <span id="debugger.debug_universal_drivers_-_step_by_step_lab__echo_kernel-mode_"></span>Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)
+# Debug Windows Drivers - Step by Step Lab (Echo Kernel-Mode)
 
 This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 
@@ -56,7 +56,7 @@ The lab has the following eleven sections.
 
 - [Section 1: Connect to a kernel mode WinDbg session](#connectto)
 - [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
-- [Section 3: Download and build the KMDF Universal Echo Driver](#download)
+- [Section 3: Download and build the KMDF Echo Driver](#download)
 - [Section 4: Install the KMDF Echo driver sample on the target system](#install)
 - [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
 - [Section 6: Display Plug and Play device tree information](#displayingtheplugandplaydevicetree)
@@ -320,9 +320,9 @@ Unable to enumerate user-mode unloaded modules, Win32 error 0n30
 
 8. Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
-## <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF universal echo driver
+## <span id="Download"></span><span id="download"></span><span id="DOWNLOAD"></span>Section 3: Download and build the KMDF echo driver
 
-*In Section 3, you will download and build the KMDF universal echo driver.*
+*In Section 3, you will download and build the KMDF echo driver.*
 
 Typically, you would be working with your own driver code when you use WinDbg. To become familiar with WinDbg operation, the KMDF Template "Echo" sample driver is used. With the source code available, it will also be easier to understand the information that is displayed in WinDbg. In addition, this sample is used to illustrate how you can single step through native kernel mode code. This technique can be very valuable for debugging complex kernel mode code issues.
 
@@ -338,7 +338,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     <https://github.com/Microsoft/Windows-driver-samples/blob/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf/ReadMe.md>
 
-    You can browse all of the universal driver samples here:
+    You can browse all of the Windows driver samples here:
 
     <https://github.com/Microsoft/Windows-driver-samples>
 
@@ -346,7 +346,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     ![github windows-driver-samples highlighting the general folder and the download zip button](images/debuglab-image-github.png)
 
-    a. This lab, shows how to download the universal driver samples in one zip file.
+    a. This lab, shows how to download the driver samples in one zip file.
 
     <https://github.com/Microsoft/Windows-driver-samples/archive/master.zip>
 

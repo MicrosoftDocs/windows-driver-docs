@@ -58,7 +58,7 @@
       href: configuring-tools-ini.md
     - name: "Using KDbgCtrl"
       href: using-kdbgctrl.md
-  - name: "Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)"
+  - name: "Debug Windows Drivers - Step by Step Lab (Echo Kernel-Mode)"
     href: debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
   - name: "Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)"
     href: debug-universal-drivers--kernel-mode-.md
