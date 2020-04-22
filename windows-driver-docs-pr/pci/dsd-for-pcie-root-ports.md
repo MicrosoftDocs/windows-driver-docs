@@ -10,9 +10,10 @@ ms.localizationpriority: medium
 # ACPI Interface: Device Specific Data (_DSD) for PCIe Root Ports
 
 In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support Modern Standby and PCI hot plug scenarios:
-## Directed Deepest Runtime Idle Platform State (DRIPS) support on PCIe Root Ports 
 
- This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby-enabled desktop systems. 
+## Directed Deepest Runtime Idle Platform State (DRIPS) support on PCIe Root Ports
+
+ This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby-enabled systems that are capable of implementing the [Directed Power Management Framework (DFx)](../kernel/introduction-to-the-directed-power-management-framework.md).
 
 ```ASL
 Name (_DSD, Package () {
@@ -24,7 +25,7 @@ Name (_DSD, Package () {
                 Package (2) {"FundamentalDeviceResetTriggeredOnD3ToD0", 1},
             }
         }
-) 
+)
 ```
 
 ## Identifying PCIe Root Ports supporting hot plug in D3
@@ -64,6 +65,7 @@ Package (2) {"UID", 0}, // Property 2: UID of the externally facing port on plat
         }
 )
 ```
+
 ## See Also
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
