@@ -688,6 +688,8 @@
       href: indirect-display-driver-model-overview.md
     - name: "IddCx Objects"
       href: iddcx-objects.md
+    - name: "Debugging"
+      href: indirect-display-debugging.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
     items: 
