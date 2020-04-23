@@ -118,5 +118,6 @@
         href: testing-BTP-tests-pairing.md
       - name: "Testing Bluetooth HID"
         href: testing-BTP-tests-hid.md
+        href: testing-BTP-tests-audio.md
 - name: "Bluetooth Radio Reset and Recovery"
   href: bluetooth-radio-error-recovery.md

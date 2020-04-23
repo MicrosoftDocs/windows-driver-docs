@@ -21,7 +21,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 | Version | Changes |
 | --- | --- |
-| 1.3.1 | <ul><li>Added audio tests capable of exercising A2DP and HFP.</li><li>Added audio volume validation and glitch detection via an FPGA on the Traduci.</li><li>Renamed tests to shoter and more user friendly names.</li><li>Several fixes and improvements to test reliability.</li><ul> |
+| 1.3.1 | <ul><li>Added audio tests capable of exercising A2DP and HFP.</li><li>Added audio volume validation and glitch detection via an FPGA on the Traduci.</li><li>Renamed tests to shorter and more user friendly names.</li><li>Several fixes and improvements to test reliability.</li><ul> |
 | 1.2.1 | <ul><li>Moving BTP from private preview to public.</li><li>Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</li><li>Several fixes and improvements to test reliability.</li><ul> |
 
 ## Tools in the package ##
@@ -34,7 +34,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 | RunPairingTests | <ul><li>Provided as a CMD script and a PowerShell script.</li><li>Runs the Bluetooth pairing tests.</li><li>Supports custom arguments if provided.</li></ul> | RunPairingTests.bat<br>RunPairingTests.ps1 |
 | RunHIDTests | <ul><li>Provided as a CMD script and a PowerShell script.</li><li>Runs the Bluetooth HID tests.</li><li>Supports custom arguments if provided.</li></ul> | RunHIDTests.bat<br>RunHIDTests.ps1 |
 | RunTaefTest | <ul><li>PowerShell helper script for running TAEF tests given the test dll name and test parameters.</li></ul> | RunTeafTests.ps1 |
-| RunAudioTests | <ul><li>Provided as a CMD script and a Powershell script.</li><li>Runs audio tests including glitch detection and audio volume validation.</li><li>Supports custom arguments if provided</li></ul> | RunAudioTests.bat<br>RunAudioTests.ps1 |
+| RunAudioTests | <ul><li>Provided as a CMD script and a PowerShell script.</li><li>Runs audio tests including glitch detection and audio volume validation.</li><li>Supports custom arguments if provided</li></ul> | RunAudioTests.bat<br>RunAudioTests.ps1 |
 
 ### Architecture Dependent Binaries ###
 
