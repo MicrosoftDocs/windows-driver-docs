@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Debugging Indirect Displays
 
-Indirect Displays drivers are UMDF drivers so the UMDF debugging documentation is a good starting point, [here](https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails) is an example of a page in that section.  This page will provide Indirect Display specific debugging information.
+Indirect Displays drivers are UMDF drivers so the UMDF debugging documentation is a good starting point, [here](https://docs.microsoft.com/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails) is an example of a page in that section.  This page will provide Indirect Display specific debugging information.
 
 ## <span id="Registry_Control"></span><span id="registry_control"></span><span id="REGISTRY_CONTROL"></span>Registry Control
 
