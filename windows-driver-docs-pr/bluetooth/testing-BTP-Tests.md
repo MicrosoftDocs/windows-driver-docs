@@ -13,3 +13,4 @@ These are the currently supported tests. Additional tests are planned and under 
 
 - [Pairing Tests](testing-BTP-tests-pairing.md)
 - [HID Tests](testing-BTP-tests-hid.md)
+- [Audio Tests](testing-BTP-tests-audio.md)
