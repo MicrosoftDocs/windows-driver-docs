@@ -42,7 +42,8 @@ At build time, the UMDF Indirect Display driver declares the version of IddCx it
 
 The following sections describe the Indirect Display Driver Model:
 
-[IddCx Objects](iddcx-objects.md)
+[IddCx Objects](iddcx-objects.md)  
+[Debugging](indirect-display-debugging.md)
  
 ## Sample Code
 

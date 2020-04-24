@@ -21,8 +21,6 @@ These actions include the following:
 
 -   [Deleting a Driver Package from the Driver Store](#deleting-a-driver-package-from-the-driver-store)
 
--   Deleting the Binary Files of the Installed Driver
-
 **Note**  These actions do not need to be performed in sequential order.
 
  

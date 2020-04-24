@@ -9,7 +9,7 @@ keywords:
 - Serenum driver WDK , about Serenum driver
 - Serial service WDK
 - serial drivers WDK
-ms.date: 04/20/2017
+ms.date: 04/17/2020
 ms.localizationpriority: medium
 ---
 
@@ -29,7 +29,7 @@ Serial is used as:
 
 -   A function driver for legacy and Plug and Play serial devices.
 
--   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](https://go.microsoft.com/fwlink/p/?LinkId=799534).
+-   A lower-level device filter driver for Plug and Play devices that require a 16550 UART-compatible interface. An example of this configuration is a modem on a [PCMCIA bus](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/).
 
     Serial's operation as a filter driver is identical to its operation as a function driver.
 
