@@ -130,9 +130,10 @@ The controller shall always complete this command promptly with a Command Comple
 |0x00000000&#160;00000004  |Controller supports the RSSI Monitoring of LE legacy advertisements. |
 |0x00000000&#160;00000008|Controller supports Advertising Monitoring of LE legacy advertisements.|
 |0x00000000&#160;00000010 |Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br/>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440).|
-|0x00000000 00000020|Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities.|
+|0x00000000 00000020|Controller supports Continuous Advertising Monitoring of LE legacy advertisements performed concurrently with other radio activities.|
 |0x00000000 00000040|Reserved.|
-|0x00000000 00000080|Controller supports the RSSI monitoring of LE extended advertisements without sampling.|
+|0x00000000 00000080|Reserved.|
+|0x00000000 00000100|Reserved.|
 |0xFFFFFFFF&#160;FFFFFFF0|Bits reserved for future definition. Must be zero.|
 
 **Microsoft_event_prefix_length** (1 octet):
@@ -153,7 +154,7 @@ HCI_VS_MSFT_Monitor_Rssi requests that the controller starts monitoring the meas
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Read_Supported_Features|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_handle</li><li>RSSI_threshold_high</li><li>RSSI_threshold_low</li><li>RSSI_threshold_low_time_interval</li><li>RSSI_sampling_period</li></ul>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
+|HCI_VS_MSFT_Monitor_Rssi|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_handle</li><li>RSSI_threshold_high</li><li>RSSI_threshold_low</li><li>RSSI_threshold_low_time_interval</li><li>RSSI_sampling_period</li></ul>|<ul><li>Status</li><li>Subcommand_opcode</ul>|
 
 The controller shall notify the host of the RSSI value with a periodically generated event (based on the _RSSI_sampling_period_). The measured link RSSI shall be the **absolute** receiver signal strength value in dBm for the BR/EDR connection.
 In response to a HCI_VS_MSFT_Monitor_Rssi command, the controller shall generate a Command Complete event with status equaling zero if the controller can begin monitoring, or a non-zero status otherwise. If the status value is non-zero, the controller shall not generate an [HCI_VS_MSFT_Rssi_Event](#hci_vs_msft_rssi_event) in response to this command.
@@ -292,7 +293,7 @@ HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitor
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_LE_Monitor_Advertisement|Chosen base code |<ul><li>Subcommand_opcode</li><li>Connection_handle</li>|<ul><li>Status</li><li>Subcommand_opcode<li>Monitor_handle</li></ul>|
+|HCI_VS_MSFT_LE_Monitor_Advertisement|Chosen base code |<ul><li>Subcommand_opcode</li><li>RSSI_threshold_high</li><li>RSSI_threshold_low</li><li>RSSI_threshold_low_time_interval</li><li>RSSI_sampling_period</li><li>Condition_type</li><li>\<Condition Parameters\></li></ul>|<ul><li>Status</li><li>Subcommand_opcodee</li><li>Monitor_handle</li></ul>|
 
 The controller shall generate a Command Complete event in response to this command. The status value should be set to zero if the controller can begin monitoring, or a non-zero status otherwise.
 If the controller does not support RSSI monitoring for LE Advertisements, it shall ignore the _RSSI_threshold_high_, _RSSI_threshold_low_, _RSSI_threshold_low_time_interval_, and _RSSI_sampling_period_ parameter values.
@@ -326,7 +327,9 @@ If the controller has notified the host about a particular device (_A_) and it i
 
 The _Condition_type_ parameter specifies whether the _Condition_ parameter specifies a pattern, UUID, IRK, or BD_ADDR.
 
-If the _Condition_type_ parameter specifies a pattern, the _Condition_ contains 2 sections which contain the number of patterns present within the _Condition_, and the pattern data.![Pattern condition data layout](images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png)
+If the _Condition_type_ parameter specifies a pattern, the _Condition_ contains 2 sections which contain the number of patterns present within the _Condition_, and the pattern data.
+
+![Pattern condition data layout](images/HCI_VS_MSFT_LE_Monitor_Advertisement_Conditions.png)
 
 _Number of Patterns_ specifies the number of patterns that need to be matched.
 
