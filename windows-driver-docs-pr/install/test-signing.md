@@ -77,7 +77,7 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
 
 
 2.  Create a driver package folder and copy the driver files, maintaining any sub directories needed, for example C:\\DriverTestPackage.
-3.  Create an inf file for the driver package. Make sure that the date on the inf file is not prior to 08/21/2006 for Vista and similarly later dates for Windows 8.0, Windows 8.1, Windows 7.0 and Windows 7.1. It is advisable that you test the inf file using the chkinf.bat tool from WDK on the inf file so that no error is reported. If it is a printer driver, then test the inf file with the tool chkinf.bat and INFGate.exe from WDK.
+3.  Create an inf file for the driver package. Test the inf file using the [InfVerif](../devtest/infverif.md) tool from WDK on the inf file so that no error is reported.
 4.  *Excerpt from* [Creating Test Certificates](creating-test-certificates.md):
 
     The following command-line example uses MakeCert to complete the following tasks:

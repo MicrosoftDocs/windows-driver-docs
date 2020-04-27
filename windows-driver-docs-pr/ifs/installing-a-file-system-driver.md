@@ -65,7 +65,7 @@ INF files cannot be used to read information from the registry or to launch a us
 
 ## Sections in a File System Driver INF File
 
-To construct your own file system driver INF file, use the following information as a guide. You can use the [ChkINF](https://docs.microsoft.com/windows-hardware/drivers/devtest/chkinf) tool to check the syntax of your INF file.
+To construct your own file system driver INF file, use the following information as a guide. You can use the [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) tool to check the syntax of your INF file.
 
 An INF file for a file system driver generally contains the following sections.
 
