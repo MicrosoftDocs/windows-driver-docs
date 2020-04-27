@@ -48,7 +48,7 @@ INF files cannot be used to read information from the registry or to launch a us
 
 After creating an INF file, you will typically write the source code for your setup application. The setup application calls user-mode setup functions to access the information in the INF file and perform installation operations.
 
-To construct your own filter driver INF file, use the INF files for the sample file system filter drivers as a template. You can use the [ChkINF](https://docs.microsoft.com/windows-hardware/drivers/devtest/chkinf) tool to check the syntax of your INF file.
+To construct your own filter driver INF file, use the INF files for the sample file system filter drivers as a template. You can use the [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) tool to check the syntax of your INF file.
 
 An INF file for a file system filter driver generally contains the following sections.
 
