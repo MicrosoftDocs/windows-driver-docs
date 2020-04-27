@@ -105,6 +105,7 @@ Cross-signing describes a process where a driver is signed with a certificate is
 
 - As of October 31, 2015, your Hardware Dev Center dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
 - The submitted binaries themselves must be signed.
+- [Know how an EV Code Signing Certificate Works?](https://codesigningstore.com/how-ev-code-signing-certificate-works)
 
 ### OS Support Summary
 
