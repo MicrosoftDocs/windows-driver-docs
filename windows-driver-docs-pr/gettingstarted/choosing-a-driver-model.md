@@ -74,12 +74,12 @@ For help with choosing a model for a file system filter driver, see [File system
 ## <span id="Choosing_a_driver_model_for_a_file_system_filter_driver"></span><span id="choosing_a_driver_model_for_a_file_system_filter_driver"></span><span id="CHOOSING_A_DRIVER_MODEL_FOR_A_FILE_SYSTEM_FILTER_DRIVER"></span>Choosing a driver model for a file system filter driver
 
 
-For help with choosing a model for a file system filter driver, see File system minifilter drivers and [File system filter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/file-system-filter-drivers).
+For help with choosing a model for a file system filter driver, see File system minifilter drivers and [File system filter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/#file-system-filter-drivers).
 
 ## <span id="Choosing_a_driver_model_for_a_file_system_minifilter_driver"></span><span id="choosing_a_driver_model_for_a_file_system_minifilter_driver"></span><span id="CHOOSING_A_DRIVER_MODEL_FOR_A_FILE_SYSTEM_MINIFILTER_DRIVER"></span>Choosing a driver model for a file system minifilter driver
 
 
-For help choosing a model for a file system minifilter driver, see [File System Minifilter Drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/file-system-minifilter-drivers).
+For help choosing a model for a file system minifilter driver, see [File System Minifilter Drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts).
 
 ## <span id="related_topics"></span>Related topics
 
