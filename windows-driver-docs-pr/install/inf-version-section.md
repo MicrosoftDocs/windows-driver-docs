@@ -91,7 +91,11 @@ Specifies the extension ID GUID when authoring an extension INF. The GUID value 
 When creating the initial version of an extension INF, the INF must specify a newly generated **ExtensionId** value. However, when updating an existing extension INF, the **ExtensionId** must remain the same so that multiple related versions of the extension INF are versioned against each other instead of being treated as independent extension INFs that may be simultaneously installed on the same device instance. For more information about how to author extension INFs, see [Using an Extension INF File](using-an-extension-inf-file.md).
 
 **Note**  This entry is only required when creating an extension INF, as identified by specifying `Class = Extension` and `ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}`.
- 
+
+**ClassVer=**<em>major</em>**.**<em>minor</em>
+
+Reserved for system use unless explicitly required by a device class such as Printer. For example, see [V4 Driver INF](../print/v4-driver-inf.md).
+
 
 <a href="" id="provider--inf-creator-"></a>**Provider=%**<em>INF-creator</em>**%**  
 Identifies the provider of the INF file. Typically, this is specified as an **%**<em>OrganizationName</em>**%** token that is expanded later in the INF file's [**Strings**](inf-strings-section.md) section. The maximum length, in characters, of a provider name is LINE_LEN.
