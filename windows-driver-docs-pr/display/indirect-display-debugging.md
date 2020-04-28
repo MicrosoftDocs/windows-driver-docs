@@ -40,3 +40,55 @@ IddCx has some registry settings that can be used to aid debugging Indirect Disp
 | 0x0800 | Overlay pref stats into frame, requires 0x0200 to be set |
 
 **NOTE** For any of the overlay function to work the Direct3D device created by the driver and passed to IddCxSwapChainSetDevice() has to be created with the D3D11_CREATE_DEVICE_BGRA_SUPPORT flag.
+
+### Collect IddCx WPP traces
+
+Iddcx uses the WPP infurstucture to log debug information.  WPP information can be captured to a file and while this capture  is in progress it can be displayed in the kernel debugger.
+
+#### Capturing IddCx WPP tracing
+
+There are several ways to enable WPP tracing, one conveniant way it you use the build in logman.exe program.  If you copy the following line to a batch file and run from evelvated command prompt it will collect IddCx WPP traces into IddCx.etl
+
+```
+@echo off  
+echo Starting WPP tracing....
+logman create trace IddCx -o IddCx.etl -ets -ow -mode sequential -p  {D92BCB52-FA78-406F-A9A5-2037509FADEA} 0x4f4 0xFF
+echo Tracing enabled
+pause
+echo Stopping WPP tracing....
+logman -stop IddCx -ets
+```
+
+
+##### Controlling what is captured
+The Flags parameter of logman.exe (0x4f4) in this case control what IddCx logs.  The meaning value change in Windows build 19041 and above
+
+###### Flags meaning prior to Windows build 19041
+Flags was treated as a level, each increasing level added a new type of message along with all the messages from the previous levels
+
+
+| Flags level value  | Message type captured  |
+|:--------:|---------|
+| 0x001 | Error  |
+
+
+
+###### Flags meaning for Windows build 19041 and above
+Flags is a bit-field, each bit controls if that type of message is captured
+
+| Flags bit | Message type captured  |
+|:--------:|---------|
+| 0x001 | Unused  |
+| 0x002 | Unused  |
+| 0x004 | Errors  |
+| 0x008 | Bengein errors, when debug overlay are enabled without D3D11_CREATE_DEVICE_BGRA_SUPPORT set |
+| 0x010 | IddCx objects  |
+| 0x020 | UMDF framework calls into IddCx |
+| 0x040 | DDI calls from IddCx to the driver |
+| 0x080 | Low frequence calls from driver to IddCx |
+| 0x100 | High frequence frame related calls from driver to IddCx |
+| 0x200 | High frequence cursor related calls from driver to IddCx |
+| 0x400 | Calls from kernel to IddCx |
+| 0x800 | Calls from IddCx to kernel |
+
+#### 
