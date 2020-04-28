@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](https://docs.microsoft.com/windows/desktop/ETW/about-event-tracing) (ETW) providers associated with drivers. This directive is supported for Windows 10 version 1809 and later.
 
-```ini
+```inf
 [DDInstall.Events] 
 
 AddEventProvider={ProviderGUID},event-provider-install-section
@@ -44,7 +44,7 @@ Each INF-writer-created section name must be unique within the INF file and must
 
 An **AddEventProvider** directive must reference a named *event-provider-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```ini
+```inf
 [event-provider-install-section]
  
 ProviderName=name
@@ -102,7 +102,7 @@ Debug type channels support events that are used solely by developers to diagnos
 
 An **AddChannel** sub-directive can also reference a *channel-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```ini
+```inf
 [channel-install-section]
 
 [Isolation=isolation-type]
@@ -154,7 +154,7 @@ Examples
 
 This example shows the event-provider-install sections referenced by the **AddEventProvider** directives as already shown earlier in the example for [***DDInstall*.Events**](inf-ddinstall-events-section.md).
 
-```ini
+```inf
 [foo_Event_Provider_Inst]
 ProviderName  = FooCollector
 ResourceFile  = %13%\FooResource.dll

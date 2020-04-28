@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 An INF file's **DefaultInstall** section is accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
 
-```ini
+```inf
 [DefaultInstall] | 
 [DefaultInstall.nt] | 
 [DefaultInstall.ntx86] | 
@@ -74,7 +74,7 @@ This optional entry specifies one or more additional system-supplied INF files t
 
 For example, the system INF files for device drivers that depend on the system's kernel-streaming support specify this entry as follows:
 
-```ini
+```inf
 Include= ks.inf[,[kscaptur.inf,][ksfilter.inf]]
 ```
 
@@ -85,7 +85,7 @@ This optional entry specifies sections within system-supplied INF files that mus
 
 For example, the INF files for device drivers that have the preceding **Include** entry specify this entry as follows:
 
-```ini
+```inf
 Needs= KS.Registration[,KSCAPTUR.Registration | 
                         KSCAPTUR.Registration.NT,MSPCLOCK.Installation]
 ```
@@ -163,7 +163,7 @@ Providing a **DefaultInstall** section is optional. If an INF file does not incl
 
 To install a **DefaultInstall** section from a *device installation application*, use the following call to **InstallHinfSection**:
 
-```ini
+```inf
 InstallHinfSection(NULL,NULL,TEXT("DefaultInstall 132 path-to-inf\infname.inf"),0); 
 ```
 
@@ -176,7 +176,7 @@ Examples
 
 The following example shows a typical **DefaultInstall** section:
 
-```ini
+```inf
 [DefaultInstall]
 CopyFiles=MyAppWinFiles, MyAppSysFiles, @SRSutil.exe
 AddReg=MyAppRegEntries

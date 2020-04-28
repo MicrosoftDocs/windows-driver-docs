@@ -21,7 +21,7 @@ Each per-Models *DDInstall* section contains an optional **DriverVer** directive
 
 The sections referenced by these directives contain instructions for installing driver files and writing any device-specific and/or driver-specific information into the registry.
 
-```ini
+```inf
 [install-section-name] | 
 [install-section-name.nt] | 
 [install-section-name.ntx86] | 
@@ -89,7 +89,7 @@ This optional entry specifies one or more additional system-supplied INF files t
 
 For example, the system INF files for device drivers that depend on the system's kernel-streaming support specify this entry as follows:
 
-```ini
+```inf
 Include= ks.inf[, [kscaptur.inf,] [ksfilter.inf]]...
 ```
 
@@ -100,7 +100,7 @@ This optional entry specifies sections within system-supplied INF files that mus
 
 For example, the INF files for device drivers that have the preceding **Include** entry specify this entry as follows:
 
-```ini
+```inf
 Needs= KS.Registration[, KSCAPTUR.Registration | KSCAPTUR.Registration.NT, MSPCLOCK.Installation]
 ```
 
@@ -245,7 +245,7 @@ Examples
 
 This example shows the expansion of the *DDInstall* sections, **Ser_Inst** and **Inp_Inst**. These sections are referenced in the example for the [**INF *Models* section**](inf-models-section.md).
 
-```ini
+```inf
 [Ser_Inst]
 CopyFiles=Ser_CopyFiles, mouclass_CopyFiles
 
@@ -264,7 +264,7 @@ inport.sys
 
 The following example provides a general illustration of using platform extensions:
 
-```ini
+```inf
 [Manufacturer]
 %MSFT% = Microsoft
 
@@ -294,7 +294,7 @@ The following example provides a general illustration of using platform extensio
 
 The following example shows the *DDInstall* section of an INF file that installs a system-supplied WDM driver for an audio device on various operating system platforms:
 
-```ini
+```inf
 [WDMPNPB003_Device.NT]
 DriverVer=01/14/1999,5.0
 Include=ks.inf, wdmaudio.inf
@@ -307,7 +307,7 @@ AddReg=WDM_SB16.AddReg
 
 The following example shows the sections referenced by the preceding **Needs** entry in the system-supplied *ks.inf* and *wdmaudio.inf* files. In the preceding example, these files are specified in the **Includes** entry. When the operating system's device installer and/or media class installer process this device's <em>install-section-name</em>**.nt** section, these next two sections are also processed.
 
-```ini
+```inf
 [KS.Registration]
 ; following AddReg= is actually a single line in the ks.inf file
 AddReg=ProxyRegistration,CategoryRegistration,\
