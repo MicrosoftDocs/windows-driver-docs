@@ -147,17 +147,18 @@ For a KMDF driver, set this value under the **HKLM\\SYSTEM\\CurrentControlSet\\C
 
 You can also set the following registry values in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}**. These values affect all UMDF drivers on the system.
 
-## **HostProcessDbgBreakOnStart**
+## HostProcessDbgBreakOnStart
 
 *REG\_DWORD, UMDF-only*
 
 Contains a delay value in seconds. During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in **HostProcessDbgBreakOnStart** is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. For example:
 
 |Value|Result|
-| 0x00000004 | The framework attempts to connect to the user-mode debugger once a second for 4 seconds. The framework never tries to connect to the kernel-mode debugger.                                                       |
-| 0x80000000 | The framework makes a single attempt to connect to the user-mode debugger. If the user-mode debugger is not attached, the framework tries to connect to the kernel-mode debugger.                                |
-| 0x80000004 | The framework attempts to connect to the user-mode debugger once a second for 4 seconds. If the user-mode debugger is not attached within 4 seconds, the framework tries to connect to the kernel-mode debugger. |
- 
+|--- |--- |
+|0x00000004|The framework attempts to connect to the user-mode debugger once a second for 4 seconds. The framework never tries to connect to the kernel-mode debugger.|
+|0x80000000|The framework makes a single attempt to connect to the user-mode debugger. If the user-mode debugger is not attached, the framework tries to connect to the kernel-mode debugger.|
+|0x80000004|The framework attempts to connect to the user-mode debugger once a second for 4 seconds. If the user-mode debugger is not attached within 4 seconds, the framework tries to connect to the kernel-mode debugger.|
+
 
 ## HostProcessDbgBreakOnDriverLoad
 
