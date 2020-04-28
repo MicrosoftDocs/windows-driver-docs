@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **BitReg** directive references one or more INF-writer-defined sections used to set or clear bits within an existing [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -47,7 +47,7 @@ A **BitReg** directive can be specified under any of the sections shown in the f
 
 Each named section referenced by a **BitReg** directive has the following form:
 
-```ini
+```inf
 [bit-registry-section]
 reg-root, [subkey], value-entry-name, [flags], byte-mask, byte-to-modify
 reg-root, [subkey], value-entry-name, [flags], byte-mask, byte-to-modify
@@ -131,7 +131,7 @@ Examples
 
 The following example shows a bit-registry section for a fictional application.
 
-```ini
+```inf
 [AppX_BitReg]
 ; set first bit of byte 0 in ProgramData value entry
 HKLM,Software\AppX,ProgramData,1,0x01,0 

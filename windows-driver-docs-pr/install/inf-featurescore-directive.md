@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **FeatureScore** directive provides an additional ranking criterion for drivers based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](device-setup-classes.md) that distinguishes between drivers that are based on class-specific criteria.
 
-```ini
+```inf
 [DDInstall]
   
 FeatureScore=featurescore

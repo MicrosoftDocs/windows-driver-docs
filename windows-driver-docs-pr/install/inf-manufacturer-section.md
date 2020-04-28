@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The **Manufacturer** section identifies the manufacturer of one or more devices that can be installed by using the INF file.
 
-```ini
+```inf
 [Manufacturer]
 
 manufacturer-identifier
@@ -34,7 +34,7 @@ manufacturer-identifier
 <a href="" id="manufacturer-identifier"></a>*manufacturer-identifier*  
 Uniquely identifies a manufacturer and an INF section that contains information that identifies a manufacturer's device models. Each *manufacturer-identifier* entry must exist on a separate line and use the following format:
 
-```ini
+```inf
 manufacturer-name |
 %strkey%=models-section-name |
 %strkey%=models-section-name [,TargetOSVersion] [,TargetOSVersion] ...  (Windows XP and later versions of Windows)
@@ -75,11 +75,11 @@ The *models-section-name* entries in the **Manufacturer** section can be decorat
 
 For Windows XP to Windows 10, version 1511, the format of *TargetOSVersion* decoration is as follows:
 
-```ini
+```inf
 nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
 ```
 Starting with Windows 10, version 1607 (Build 14310 and later), the format of the *TargetOSVersion* decoration is as follows:
-```ini
+```inf
 nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.[SuiteMask][.[BuildNumber]]]]]
 ```
 
@@ -239,7 +239,7 @@ Examples
 
 This example shows a **Manufacturer** section typical to an INF for a single IHV.
 
-```ini
+```inf
 [Manufacturer]
 %Mfg%=Contoso        ; Models section == Contoso
 
@@ -252,7 +252,7 @@ Mfg = "Contoso, Ltd."
 
 The next example shows part of a **Manufacturer** section typical to an INF for a device-class-specific installer:
 
-```ini
+```inf
 [Manufacturer]
 %CONTOSO%=Contoso_Section
 ; several entries omitted here for brevity
@@ -262,7 +262,7 @@ The next example shows part of a **Manufacturer** section typical to an INF for 
 
 The following example shows a **Manufacturer** section that is specific to x86 platforms, Windows XP and later:
 
-```ini
+```inf
 [Manufacturer]
 %foo%=foosec,NTx86.5.1
 
@@ -271,7 +271,7 @@ The following example shows a **Manufacturer** section that is specific to x86 p
 
 The following example shows a **Manufacturer** section that is specific to x64 platforms, Windows 10 build 14393 and later:
 
-```ini
+```inf
 [Manufacturer]
 %foo%=foosec,NTamd64.10.0...14393
 
@@ -282,7 +282,7 @@ The following two examples show skeletal INF files with a variety of OS-specific
 
 Example 1:
 
-```ini
+```inf
 [Manufacturer]
 %MyName% = MyName,NTx86.5.1
 .
@@ -301,7 +301,7 @@ Example 1:
 
 Example 2:
 
-```ini
+```inf
 [Manufacturer]
 %MyName% = MyName,NTx86.6.0,NTx86.5.1,
 .
@@ -319,7 +319,7 @@ Example 2:
 
 Example 3:
 
-```ini
+```inf
 [Manufacturer]
 %MyMfg% = MyMfg, NTamd64.6.1, NTamd64.10.0, NTamd64.10.0...14310
 .

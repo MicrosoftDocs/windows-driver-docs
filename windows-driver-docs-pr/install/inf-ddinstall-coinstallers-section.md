@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 This optional section registers one or more device-specific co-installers supplied on the distribution media to supplement the operations of existing device class installers.
 
-```ini
+```inf
 [install-section-name.CoInstallers] |
 [install-section-name.nt.CoInstallers] | 
 [install-section-name.ntx86.CoInstallers] | 
@@ -131,7 +131,7 @@ All co-installer files must be copied into the *%SystemRoot%\\system32* director
 
 Registering one or more device-specific co-installers requires adding a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-typed value entry to the registry. Specify an *add-registry-section* referenced by the [**AddReg**](inf-addreg-directive.md) directive, by using the following general form:
 
-```ini
+```inf
 [DDInstall.CoInstallers_DeviceAddReg]
  
 HKR,,CoInstallers32,0x00010000,"DevSpecificCoInstall.dll
@@ -149,7 +149,7 @@ For more information, see [Registering a Device-Specific Co-installer](registeri
 
 To add a value entry (and setup-class subkey, if it does not exist already) for one or more device-class co-installers to the registry, an *add-registry-section* referenced by the [**AddReg**](inf-addreg-directive.md) directive has the following general form:
 
-```ini
+```inf
 [DDInstall.CoInstallers_ClassAddReg]
  
 HKLM,System\CurrentControlSet\Control
@@ -173,7 +173,7 @@ Examples
 
 This example shows the *DDInstall*.**CoInstallers** section for IrDA serial network adapters. The system-supplied INF for these IrDA (serial) NICs supplies a co-installer to the system IrDA class installer.
 
-```ini
+```inf
 ; DDInstall section
 [PNP.NT]
 AddReg=ISIR.reg, Generic.reg, Serial.reg

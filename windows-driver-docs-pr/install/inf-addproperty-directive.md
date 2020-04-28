@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 An **AddProperty** directive references one or more INF file sections that modify the [device properties](device-properties.md) that are set for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface.
 
-```ini
+```inf
 [DDInstall] |
 [DDInstall.nt] |
 [DDInstall.ntx86] |
@@ -54,7 +54,7 @@ Each *add-property-section* can have entries to do the following:
 
 An *add-property-section* that is referenced by an **AddProperty** directive has the following format:
 
-```ini
+```inf
 [add-property-section]
 (property-name, , , [flags], value]) | 
 ({property-category-guid}, property-pid, type, [flags], value)
@@ -136,7 +136,7 @@ The second line entry sets a custom property in a custom property category. The 
 
 The optional *flags* entry value is not present, and the type entry value is "18" (DEVPROP_TYPE_STRING). The value entry value is "String value for property 1."
 
-```ini
+```inf
 [SampleAddPropertySection]
 DeviceModel,,,,"Sample Device Model Name"
 {c22189e4-8bf3-4e6d-8467-8dc6d95e2a7e}, 2, 18,, "String value for property 1"

@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
-```ini
+```inf
 [ClassInstall32] | 
 [ClassInstall32.nt] | 
 [ClassInstall32.ntx86] |
@@ -138,7 +138,7 @@ Under this *SetupClassGUID* subkey, such an INF also provides registry informati
 
 Such a class-specific add-registry section has the following general form:
 
-```ini
+```inf
 [SetupClassAddReg]
  
 HKR,,,,%DevClassName% ; device-class friendly name 
@@ -171,7 +171,7 @@ Examples
 
 This example shows the **ClassInstall32** section, along with the named section it references with the [**AddReg directive**](inf-addreg-directive.md), of the INF for the system display class installer.
 
-```ini
+```inf
 [ClassInstall32] 
 AddReg=display_class_addreg
 
@@ -183,7 +183,7 @@ HKR,,Icon,,"-1"
 
 By contrast, this example shows the add-registry section referenced in the system CD-ROM INF's **ClassInstall32** section. It sets up a class-specific property-page provider for the CD-ROM devices/drivers that it installs. This INF also sets the **SilentInstall** and **NoInstallClass** value entries in the CD-ROM class key to **TRUE** (**1**).
 
-```ini
+```inf
 [cdrom_class_addreg]
 HKR,,,,%CDClassName%
 HKR,,EnumPropPages32,,"SysSetup.Dll,CdromPropPageProvider"
