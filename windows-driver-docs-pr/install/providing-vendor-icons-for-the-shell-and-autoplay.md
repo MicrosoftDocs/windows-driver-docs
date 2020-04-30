@@ -1,6 +1,6 @@
 ---
-title: Providing Vendor Icons for the Shell and AutoPlay
-description: Providing Vendor Icons for the Shell and AutoPlay
+title: Providing Icons for a Device
+description: Providing Icons for a Device
 ms.assetid: 2e3afbf6-57f6-4b83-b10a-c33d9b1c1731
 keywords:
 - AutoPlay icons WDK
