@@ -16,11 +16,10 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Providing Vendor Icons for the Shell and AutoPlay
+# Providing Icons for a Device
 
 
-
-This topic describes how you can provide custom icons for a device. The Shell and AutoPlay use these icons to represent the device in the AutoPlay, My Computer, and file Open dialog boxes. The icons indicate whether a device is present and whether a medium is inserted. You can provide the following icons:
+This topic describes how you can provide custom icons for a device by referencing them in a driver's INF file. The Shell and AutoPlay use these icons to represent the device in the AutoPlay, My Computer, and file Open dialog boxes. The icons indicate whether a device is present and whether a medium is inserted. You can provide the following icons:
 
 -   The *media-inserted icon* indicates that the device is present and a medium is inserted.
 
