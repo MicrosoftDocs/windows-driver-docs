@@ -20,10 +20,6 @@ ms.localizationpriority: medium
 
 
 
-
-
-[AutoPlay](https://go.microsoft.com/fwlink/p/?linkid=12031) is an extension of the Shell, and is supported by Microsoft Windows XP and later versions of Windows. AutoPlay detects different types of content, such as audio or video files, on removable media or removable devices. AutoPlay can display custom icons for content and devices, and it can automatically start an application to play or display content when the system detects a medium or device.
-
 This topic describes how you can provide custom icons for a device. The Shell and AutoPlay use these icons to represent the device in the AutoPlay, My Computer, and file Open dialog boxes. The icons indicate whether a device is present and whether a medium is inserted. You can provide the following icons:
 
 -   The *media-inserted icon* indicates that the device is present and a medium is inserted.
@@ -42,15 +38,14 @@ There are two steps to including icon files in a driver package:
 
 If a system-supplied driver handles your device, you do not have to supply a full [driver package](driver-packages.md). You only have to provide an INF file and the icon files. This INF file must include the required icon-specific entries, plus **Include** and **Needs** entries that refer to your device's installation sections in the system-supplied driver's INF file.
 
-### To create icons
+> [!NOTE]
+> Follow the guidelines that are provided in [Icons](https://docs.microsoft.com/windows/win32/uxguide/vis-icons). These guidelines describe how to create icons that have the appearance and behavior of Windows graphical elements.
 
--   Follow the guidelines that are provided at the Creating [Windows XP Icons](https://go.microsoft.com/fwlink/p/?linkid=6938) website. These guidelines describe how to create icons that have the appearance and behavior of Windows XP graphical elements.
+## To specify the icons in an INF file
 
-### To specify the icons in an INF file
+Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as indicated in the following example:
 
--   Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as indicated in the following example:
-
-    ```cpp
+    ```ini
     [DDInstall.NT.HW]
     AddReg = IconInformation
 
@@ -59,17 +54,17 @@ If a system-supplied driver handles your device, you do not have to supply a ful
     HKR, , NoMediaIcons, 0x10000, "no-media-inserted-icon-file"
     ```
 
-    <a href="" id="icons"></a>**Icons**  
+    **Icons**  
     Specifies the name of the file that contains the media-inserted icon. The *media-inserted-icon-file* value is a placeholder for the actual file name.
 
-    <a href="" id="nomediaicons"></a>**NoMediaIcons**  
+   **NoMediaIcons**  
     Specifies the name of the file that contains the no-media-inserted icon. The *no-media-inserted-icon-file* value is a placeholder for the actual file name.
 
-### <a href="" id="to-direct-setup-to-copy-the-icon-files-to-the-system"></a>To direct Windows to copy the icon files to the system
+## To direct Windows to copy the icon files to the system
 
 -   Include an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) that lists the icon files and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md) that copies them to the system.
 
-Windows saves the **Icons** and **NoMediaIcons** value entries under the **Device Parameters** key under the device's *hardware key*. The following example specifies the registry location, value-entry-type, and value of the **Icons** and **NoMediaIcons** value entries for the device whose device instance ID is USB\\Vid_0000&Pid_0000\\059B003112010E93.
+Windows saves the **Icons** and **NoMediaIcons** value entries under the **Device Parameters** key under the device's *hardware key*. The following example specifies the registry location, value-entry-type, and value of the **Icons** and **NoMediaIcons** value entries for the device whose device instance ID is `USB\Vid_0000&Pid_0000\059B003112010E93`.
 
 **HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\**<em>USB\\Vid_0000&Pid_0000\\059B003112010E93</em>\\**Device Parameters**
 
@@ -82,12 +77,4 @@ Drivers or other code should never access or modify the **Device Parameters** ke
 -   From user mode, use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) and [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
 
 -   From kernel mode, use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
-
- 
-
- 
-
-
-
-
 
