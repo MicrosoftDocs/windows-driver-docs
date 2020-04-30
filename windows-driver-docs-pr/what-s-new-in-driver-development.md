@@ -24,6 +24,9 @@ No changes are required to universal drivers for the version 2004 release, but d
 
 For information about how to build, install, deploy, and debug a Windows Driver, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers).
 
+### Windows Hardware Error Architecture (WHEA)
+
+WHEA includes a new interface (v2). For info about how to register as an error source and report errors, see [Using WHEA on Windows 10](whea/using-whea-on-windows-10.md).
 
 ## Related Topics
 
