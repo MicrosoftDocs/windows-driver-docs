@@ -204,10 +204,6 @@ If this value is non-zero and a kernel debugger is connected to the machine, the
 
 The reflector also breaks into the kernel debugger if there is an unexpected termination of the host process (e.g. by a non-UMDF component or due to an unhandled exception). If there are multiple device stacks pooled in the host process that is being terminated, the reflector breaks into the debugger multiple times, once for each device stack loaded in the host process.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> release-vibranium
 
 You can also set the following registry value in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\<service name>\\Parameters\\Wdf**. 
 
@@ -224,10 +220,4 @@ This registry value is available in UMDF 2.31 and later.
 
 For changes to UMDF registry values to take effect, you must reboot the computer.
 
-<<<<<<< HEAD
-=======
-For changes to UMDF registry values to take effect, you must reboot the computer.
->>>>>>> master
-=======
->>>>>>> release-vibranium
  
