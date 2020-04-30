@@ -1,4 +1,4 @@
-﻿---
+---
 ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting started with Universal Windows drivers
 description: With Universal Windows drivers, you can create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
@@ -27,8 +27,6 @@ Typically, a device manufacturer, or independent hardware vendor (IHV), writes t
 An IHV follows the design best practices of *driver package isolation* to ensure the driver is reliable and robust to servicing operations.
 
 After the IHV has certified the base driver, it can be deployed on all OEM systems. Because a base driver can be used across all systems that share a hardware part, Microsoft can test the base driver broadly by using Windows Insider *driver flighting* instead of limiting distribution to specific machines.
-
-After IHV has certified the base driver package, it can be deployed on all OEM systems. Because a base driver package can be used across all systems that share a hardware part, Microsoft can test the base driver package broadly via Windows Insider flighting, rather than limiting distribution to specific machines. 
 
 The OEM validates only the optional customizations that it provides for the OEM system.
 

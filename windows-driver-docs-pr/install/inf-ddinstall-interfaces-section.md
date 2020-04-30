@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 Each per-Models <em>DDInstall</em>**.Interfaces** section can have one or more [**AddInterface**](inf-addinterface-directive.md) directives, depending on how many device interfaces a particular device/driver supports.
 
-```ini
+```inf
 [install-section-name.Interfaces] |
 [install-section-name.nt.Interfaces] | 
 [install-section-name.ntx86.Interfaces] |
@@ -71,7 +71,7 @@ Examples
 
 This example shows the <em>DDInstall</em>**.nt.Interfaces** section in the INF file for the system-supplied WDM audio device/driver shown as examples for the [**INF *DDInstall* section**](inf-ddinstall-section.md) and the [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md) .
 
-```ini
+```inf
 ;
 ; following AddInterface= are all single lines (without 
 ; backslash line continuators) in the system-supplied INF file

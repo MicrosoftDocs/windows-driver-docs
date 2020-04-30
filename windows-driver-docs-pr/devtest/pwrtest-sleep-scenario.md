@@ -64,7 +64,7 @@ Specifies the timeout in seconds to wait for the transition end event (120 secon
 **Examples**
 
 ```
-pwrtest pwrtest /sleep /c:4 /s:all 
+pwrtest /sleep /c:4 /s:all 
 ```
 
 ```
