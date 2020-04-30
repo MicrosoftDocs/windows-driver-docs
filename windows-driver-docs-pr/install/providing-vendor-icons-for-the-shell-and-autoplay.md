@@ -26,9 +26,6 @@ This topic describes how you can provide custom icons for a device. The Shell an
 
 -   The *no-media-inserted icon* indicates that the device is present but a medium is not inserted.
 
-In addition to specifying icons for individual devices, you can also specify icons for all devices in a user-defined device group or a [device setup class](device-setup-classes.md). For more information, see the [Preparing Hardware and Software for Use with AutoPlay](https://go.microsoft.com/fwlink/p/?linkid=12032) website.
-
-If an updated [driver package](driver-packages.md) that contains a custom icon is posted on [Windows Update](https://docs.microsoft.com/windows-hardware/drivers), the user is prompted that a new download is available.
 
 There are two steps to including icon files in a driver package:
 
