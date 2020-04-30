@@ -27,7 +27,7 @@ Use the following suggestions for testing your driver code and driver package.
 
 -   Create the INF file and your driver package early in the development process and use it throughout testing.
 
--   Use the [ChkINF](https://docs.microsoft.com/windows-hardware/drivers/devtest/chkinf) tool to verify the structure and syntax of the INF file, and to help you diagnose the INF file and other installation related issues.
+-   Use the [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) tool to verify the structure and syntax of the INF file, and to help you diagnose the INF file and other installation related issues.
 
 -   Use the [**Inf2Cat**](https://docs.microsoft.com/windows-hardware/drivers/devtest/inf2cat) tool (with the **/nocat** option) to do additional INF file verification. **Inf2Cat** can verify that the files referenced by the INF are present and placed in the package directory as the INF expects them to be.
 

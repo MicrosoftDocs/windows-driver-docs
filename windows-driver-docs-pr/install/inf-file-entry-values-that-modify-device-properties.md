@@ -45,7 +45,7 @@ Many system-defined device properties have corresponding system-defined registry
 
 For example, the INF **AddReg** directive in the following "Abc_Device_Install.HW" section would set the **DeviceCharacteristics** registry entry value for a device instance:
 
-```ini
+```inf
 [Abc_Device_Install.HW]
 ...
 AddReg = Xxx_AddReg
@@ -64,7 +64,7 @@ Windows manages the correspondence between system-defined registry entry values 
 
 Custom device instance properties that are set as shown in the following example, can be retrieved by calling [**SetupDiGetCustomDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetcustomdevicepropertya).
 
-```ini
+```inf
 [XxxDDInstall.HW]
 ...
 AddReg = Xxx_AddReg

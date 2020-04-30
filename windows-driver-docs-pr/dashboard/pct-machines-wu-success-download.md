@@ -6,11 +6,15 @@ ms.date: 02/28/2020
 ms.localizationpriority: medium
 ---
  
-# Percent of machines that WU reported a successful download within the last 28 days
+# Percent of machines that Windows Update (WU) reported a successful download within the last 28 days
 
 ## Description
 
 Percent of machines that WU reported a successful download within the last 28 days
+ 
+For more information about Windows Update error codes, see:
+* [Windows Update error codes by component](https://docs.microsoft.com/windows/deployment/update/windows-update-error-reference)
+* [Windows Update common errors and mitigation](https://docs.microsoft.com/windows/deployment/update/windows-update-errors)
 
 ## Measure attributes
 
