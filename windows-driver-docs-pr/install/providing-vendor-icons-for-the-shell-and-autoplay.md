@@ -37,7 +37,7 @@ If a system-supplied driver handles your device, you do not have to supply a ful
 > [!NOTE]
 > Follow the guidelines that are provided in [Icons](https://docs.microsoft.com/windows/win32/uxguide/vis-icons). These guidelines describe how to create icons that have the appearance and behavior of Windows graphical elements.
 
-## To specify the icons in an INF file
+## Reference icons in an INF file
 
 Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as indicated in the following example:
 
@@ -56,7 +56,7 @@ Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF D
    **NoMediaIcons**  
     Specifies the name of the file that contains the no-media-inserted icon. The *no-media-inserted-icon-file* value is a placeholder for the actual file name.
 
-## To direct Windows to copy the icon files to the system
+## Copy icons to the system
 
 -   Include an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) that lists the icon files and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md) that copies them to the system.
 
