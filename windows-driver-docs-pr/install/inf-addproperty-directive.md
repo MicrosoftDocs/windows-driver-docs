@@ -76,6 +76,8 @@ One of the following property names that represent the device instance [driver p
 -   **DeviceIcon**
 -   **DeviceBrandingIcon**
 
+For more info about adding custom device icons, see [Providing Icons for a Device](providing-vendor-icons-for-the-shell-and-autoplay.md).
+
 <a href="" id="property-category-guid"></a>*property-category-guid*  
 A GUID value that identifies the property category. The GUID value can be a system-defined GUID that identifies one of the property categories for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface. All properties that have the same GUID value are members of the same category. These property categories are defined in *Devpkey.h*.
 

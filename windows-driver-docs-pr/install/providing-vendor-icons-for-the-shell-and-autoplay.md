@@ -12,34 +12,46 @@ keywords:
 - no-media-inserted icons WDK
 - icons WDK AutoPlay
 - copying icon files
-ms.date: 04/20/2017
+ms.date: 04/30/2020
 ms.localizationpriority: medium
 ---
 
 # Providing Icons for a Device
 
+This topic describes how you can provide custom icons for a device by referencing them in a driver's INF file. You can provide icons that appear in Device Manager, Windows Explorer, or both, as appropriate.
 
-This topic describes how you can provide custom icons for a device by referencing them in a driver's INF file. The Shell and AutoPlay use these icons to represent the device in the AutoPlay, My Computer, and file Open dialog boxes. The icons indicate whether a device is present and whether a medium is inserted. You can provide the following icons:
+## Adding icons for Device Manager
 
--   The *media-inserted icon* indicates that the device is present and a medium is inserted.
+You can either embed a custom icon in a DLL or provide a standalone .ico file. If your driver is already a DLL file, the first is the easiest option because it does not require copying any additional files.
 
--   The *no-media-inserted icon* indicates that the device is present but a medium is not inserted.
+To embed the icon in a DLL, use an entry like this:
+
+```inf
+[<DDInstall>]
+AddProperty = DeviceIconProperty
+
+[DeviceIconProperty]
+DeviceIcon,,,,"%13%\UmdfDriver.dll,-100"
+```
+
+The above example uses DIRID 13 to copy the file to the Driver Store, which avoids needing to copy it anywhere else. The entry follows the format `<Resource.dll>,-<IconResourceID>`, so the 100 signifies the resource ID of the icon in the resource table of the DLL. For more on DIRID 13, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
+
+To reference a standalone .ico file, use an entry like this:
 
 
-There are two steps to including icon files in a driver package:
+```inf
+[<DDInstall>]
+AddProperty = DeviceIconProperty
 
-1.  Add the icon files to the driver package.
+[DeviceIconProperty]
+DeviceIcon,,,,"%13%\vendor.ico"
+```
 
-2.  In the package's INF file, add entries that specify the icon files and copy them to the system.
+## Adding icons for storage volumes in Explorer
 
-If a system-supplied driver handles your device, you do not have to supply a full [driver package](driver-packages.md). You only have to provide an INF file and the icon files. This INF file must include the required icon-specific entries, plus **Include** and **Needs** entries that refer to your device's installation sections in the system-supplied driver's INF file.
+The shell uses **Icons** and **NoMediaIcons** registry values to represent the device in AutoPlay, My Computer, and file Open dialog boxes.
 
-> [!NOTE]
-> Follow the guidelines that are provided in [Icons](https://docs.microsoft.com/windows/win32/uxguide/vis-icons). These guidelines describe how to create icons that have the appearance and behavior of Windows graphical elements.
-
-## Reference icons in an INF file
-
-Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as indicated in the following example:
+To add these, include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as shown in the following example:
 
 ```inf
 [DDInstall.NT.HW]
@@ -50,27 +62,18 @@ HKR, , Icons, 0x10000, "media-inserted-icon-file"
 HKR, , NoMediaIcons, 0x10000, "no-media-inserted-icon-file"
 ```
 
-**Icons**  
-Specifies the name of the file that contains the media-inserted icon. The *media-inserted-icon-file* value is a placeholder for the actual file name.
+Then include an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) that lists the icon files and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md) that copies them to the system.
 
-**NoMediaIcons**  
-Specifies the name of the file that contains the no-media-inserted icon. The *no-media-inserted-icon-file* value is a placeholder for the actual file name.
+The **Icons** and **NoMediaIcons** value entries are stored under the **Device Parameters** key under the device's *hardware key*. For example, `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\<Hardware ID>\Device Parameters` would contain entries like the following:
 
-## Copy icons to the system
+* `Icons [REG_MULTI_SZ] = %SystemRoot%\system32\icon.ico`
 
--   Include an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) that lists the icon files and a corresponding [**INF CopyFiles directive**](inf-copyfiles-directive.md) that copies them to the system.
+* `NoMediaIcons [REG_MULTI_SZ] = %SystemRoot%\system32\noicon.ico`
 
-Windows saves the **Icons** and **NoMediaIcons** value entries under the **Device Parameters** key under the device's *hardware key*. The following example specifies the registry location, value-entry-type, and value of the **Icons** and **NoMediaIcons** value entries for the device whose device instance ID is `USB\Vid_0000&Pid_0000\059B003112010E93`.
+To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
 
-**HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\**<em>USB\\Vid_0000&Pid_0000\\059B003112010E93</em>\\**Device Parameters**
+From kernel mode, use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
 
-**Icons** \[REG_MULTI_SZ\] = %*SystemRoo*t%*\\system32\\icon.ico*
+## Resources
 
-**NoMediaIcons** \[REG_MULTI_SZ\] = %*SystemRoot*%*\\system32\\noicon.ico*
-
-Drivers or other code should never access or modify the **Device Parameters** key directly. Instead, you should use the following system functions:
-
--   From user mode, use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) and [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
-
--   From kernel mode, use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
-
+When you create icons, follow the guidelines that are provided in [Icons](https://docs.microsoft.com/windows/win32/uxguide/vis-icons). These guidelines describe how to create icons that have the appearance and behavior of Windows graphical elements.
