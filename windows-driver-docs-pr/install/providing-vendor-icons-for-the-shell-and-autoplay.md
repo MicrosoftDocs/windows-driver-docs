@@ -41,20 +41,20 @@ If a system-supplied driver handles your device, you do not have to supply a ful
 
 Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as indicated in the following example:
 
-    ```inf
-    [DDInstall.NT.HW]
-    AddReg = IconInformation
+```inf
+[DDInstall.NT.HW]
+AddReg = IconInformation
 
-    [IconInformation]
-    HKR, , Icons, 0x10000, "media-inserted-icon-file"
-    HKR, , NoMediaIcons, 0x10000, "no-media-inserted-icon-file"
-    ```
+[IconInformation]
+HKR, , Icons, 0x10000, "media-inserted-icon-file"
+HKR, , NoMediaIcons, 0x10000, "no-media-inserted-icon-file"
+```
 
-    **Icons**  
-    Specifies the name of the file that contains the media-inserted icon. The *media-inserted-icon-file* value is a placeholder for the actual file name.
+**Icons**  
+Specifies the name of the file that contains the media-inserted icon. The *media-inserted-icon-file* value is a placeholder for the actual file name.
 
-   **NoMediaIcons**  
-    Specifies the name of the file that contains the no-media-inserted icon. The *no-media-inserted-icon-file* value is a placeholder for the actual file name.
+**NoMediaIcons**  
+Specifies the name of the file that contains the no-media-inserted icon. The *no-media-inserted-icon-file* value is a placeholder for the actual file name.
 
 ## Copy icons to the system
 
