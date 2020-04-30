@@ -41,7 +41,7 @@ If a system-supplied driver handles your device, you do not have to supply a ful
 
 Include an [**INF AddReg directive**](inf-addreg-directive.md) under an [**INF DDInstall.HW section**](inf-ddinstall-hw-section.md) for the device. In the **AddReg** section, specify **Icons** and **NoMediaIcons** value entries, as indicated in the following example:
 
-    ```ini
+    ```inf
     [DDInstall.NT.HW]
     AddReg = IconInformation
 
