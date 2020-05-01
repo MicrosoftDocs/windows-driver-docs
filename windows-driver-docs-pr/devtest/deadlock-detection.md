@@ -89,7 +89,7 @@ When Deadlock Detection finds a violation, it will issue bug check 0xC4. The fir
 
 -   Two or more threads involved in a lock hierarchy violation
 
--   A thread that tries to acquire the same resource twice (a self-deadlock)
+-   A thread that tries to exclusively acquire an resource which is already onws shared (note that exlcusively owned resources can be acquired shared, just not vice-versa).
 
 -   A resource that is released without having been acquired first
 
