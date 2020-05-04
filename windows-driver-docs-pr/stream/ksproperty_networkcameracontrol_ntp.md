@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY_NETWORKCAMERACONTROL_NTP
 
-The KSPROPERTY_NETWORKCAMERACONTROL_NTP property is TBD.
+The KSPROPERTY_NETWORKCAMERACONTROL_NTP property property enables aquiring the NTP server on the Onvif protocol camera.
 
 ## Usage Summary Table
 

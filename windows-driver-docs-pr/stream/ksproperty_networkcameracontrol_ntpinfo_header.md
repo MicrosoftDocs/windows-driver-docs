@@ -7,8 +7,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER structure
 
-The **KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER** structure contains a NTP-specific payload that is used to set or disable an NTP server on a Onvif
-protocol camera.
+The **KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER** structure contains a NTP-specific payload that is used to set or disable an NTP server on a Onvif protocol camera.
 
 ## Syntax
 

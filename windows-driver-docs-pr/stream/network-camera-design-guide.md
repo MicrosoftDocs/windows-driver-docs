@@ -13,7 +13,7 @@ The network camera design guide describes the following controls, property sets,
 
 [**KSPROPERTY_NETWORKCAMERACONTROL_NTP**](ksproperty_networkcameracontrol_ntp.md)
 
-[**KSPROPERTY_NETWORKCAMERACONTROL_URI**](ksproperty_networkcameracontrol_uri.md0
+[**KSPROPERTY_NETWORKCAMERACONTROL_URI**](ksproperty_networkcameracontrol_uri.md)
 
 [**KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER**](ksproperty_networkcameracontrol_ntpinfo_header.md)
 
