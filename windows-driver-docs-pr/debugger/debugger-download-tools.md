@@ -2,7 +2,7 @@
 title: Download Debugging Tools for Windows - WinDbg
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
-ms.date: 04/09/2020
+ms.date: 05/01/2020
 ms.localizationpriority: High
 ---
 
@@ -22,7 +22,7 @@ WinDbg Preview is a new version of WinDbg with more modern visuals, faster windo
 
 ## ![Small classic windbg preview logo](images/windbg-classic-logo.png) Debugging Tools for Windows 10 (WinDbg)
 
-Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk). Use the download link on the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) page, as the Debugging Tools for Windows are not available as part of Visual Studio.
 
 If you just need the Debugging Tools for Windows, and not the Windows Driver Kit (WDK) for Windows 10, you can install the debugging tools as a standalone component from the Windows Software Development Kit (SDK).
 
