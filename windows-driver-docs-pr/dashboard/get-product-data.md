@@ -391,10 +391,7 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100_RS5 | Windows 10 RS5 x86 |
 | Windows_v100_RS5 | Windows 10 RS5 x64 |
 | Windows_v100_19H1 | Windows 10 19H1 Update |
-| Windows_v100_VB | Windows 10 upcoming Update |
-
->[!NOTE]
->The Windows_v100_VB operating system family code is not valid until that update has released.
+| Windows_v100_VB | Windows 10 version 2004 |
 
 ### List of Operating System Codes
 
@@ -455,12 +452,9 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_19H1_FULL |Windows 19H1 Client x86 |
 |WINDOWS_v100_X64_19H1_FULL |Windows 19H1 Client x64 |
 |WINDOWS_v100_ARM64_19H1_FULL | Windows 19H1 Client ARM64 |
-|WINDOWS_v100_VB_FULL | Windows 10 (next update) Client x86 |
-|WINDOWS_v100_X64_VB_FULL | Windows (next update) Client x64 |
-|WINDOWS_v100_ARM64_VB_FULL | Windows (next update) Client ARM64 |
-
->[!NOTE]
->The  three \*_VB\* operating system codes are not valid until that update has released.
+|WINDOWS_v100_VB_FULL | Windows 10 version 2004 Client x86 |
+|WINDOWS_v100_X64_VB_FULL | Windows version 2004 Client x64 |
+|WINDOWS_v100_ARM64_VB_FULL | Windows version 2004 Client ARM64 |
 
 ## Error codes
 
