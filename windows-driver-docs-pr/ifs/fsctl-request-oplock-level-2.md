@@ -22,7 +22,7 @@ The **FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2** control code requests a level 2 opportu
 
 To process this control code, a minifilter calls [**FltOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) with the following parameters. A file system or legacy filter driver calls [**FsRtlOplockFsctrl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl).
 
-For more information about opportunistic locking and about the **FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2** control code, see the Microsoft Windows SDK documentation.
+For more information about opportunistic locking and about the **FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2** control code, see the [**Microsoft Windows SDK documentation and downloads**](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
 
 **Parameters**
 
