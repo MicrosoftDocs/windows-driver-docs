@@ -1,13 +1,13 @@
 ---
 title: KSPROPERTY_NETWORKCAMERACONTROL_NTP
-description: Defines the NTP network camera control defined in the **KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY** enumeration.
+description: Enables aquiring the NTP server on a Onvif protocol camera.
 ms.date: 04/14/2020
 ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_NETWORKCAMERACONTROL_NTP
 
-The KSPROPERTY_NETWORKCAMERACONTROL_NTP property property enables aquiring the NTP server on the Onvif protocol camera.
+The KSPROPERTY_NETWORKCAMERACONTROL_NTP property enables aquiring the NTP server on a Onvif protocol camera.
 
 ## Usage Summary Table
 
