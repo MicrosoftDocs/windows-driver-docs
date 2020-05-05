@@ -51,7 +51,7 @@ After the driver package has been removed from the driver store, it is no longer
 
 Before deleting a driver package from the driver store, be sure to uninstall all devices that are using it.
 
-**Important**  You must not manually delete the [driver package](driver-packages.md) from the [driver store](driver-store.md). Doing so can cause an inconsistency between the INF file, the driver store catalog, and the driver in the driver store. You might also be unable to stage the same driver package to the driver store.
+**Important**  Manually deleting the [driver package](driver-packages.md) from the [driver store](driver-store.md) may result in unpredictable behavior.
 
  
 
