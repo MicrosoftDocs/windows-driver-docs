@@ -88,6 +88,9 @@ An INF file can contain only one **Strings** section, along with one **Strings.*
 Windows selects a single **Strings** section that is used to translate all %*strkey*% tokens for the installation. Depending on the current locale of a particular computer, Windows selects a **Strings** section in the following way:
 
 1.  Windows first looks for the *.LanguageID* values in the INF that match the current locale assigned to the computer. If an exact match is found, Windows uses that **Strings.LanguageID** INF section to translate all %*strkey*% tokens that are defined within the INF.
+
+    You do need to duplicate all string tokens across all **Strings.**<i>*</i>**]** sections, even numeric/fixed constants that do not need to be localized.
+
 2.  Otherwise, Windows looks next for a match to the LANG_*XXX* value with the value of SUBLANG_NEUTRAL as the SUBLANG_*XXX*. If such a match is found, Windows uses that INF section to translate all %*strkey*% tokens that are defined within the INF.
 3.  Otherwise, Windows looks next for a match to the LANG_*XXX* value and any valid SUBLANG_*XXX* for the same LANG_*XXX* family. If such a partial match is found, use that Strings.LanguageID INF section to translate all %*strkey*% tokens that are defined within the INF.
 4.  Otherwise, Windows uses the undecorated Strings section to all translate %*strkey*% tokens that are defined within the INF.
