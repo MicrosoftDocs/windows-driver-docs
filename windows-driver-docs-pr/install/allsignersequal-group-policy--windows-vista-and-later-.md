@@ -1,26 +1,26 @@
 ---
-title: AllSignersEqual Group Policy
-description: AllSignersEqual Group Policy
+title: AllSigningEqual Group Policy
+description: AllSigningEqual Group Policy
 ms.assetid: b23eed87-76ce-4447-86d2-2be370ee57c5
 keywords:
-- driver selections WDK device installations , AllSignersEqual group policy
-- locating drivers for device installation WDK device installations , AllSignersEqual group policy
-- searching for drivers during device installation WDK device installations , AllSignersEqual group policy
-- AllSignersEq
+- driver selections WDK device installations , AllSigningEqual group policy
+- locating drivers for device installation WDK device installations , AllSigningEqual group policy
+- searching for drivers during device installation WDK device installations , AllSigningEqual group policy
+- AllSigningEq
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# AllSignersEqual Group Policy
+# AllSigningEqual Group Policy
 
 
-If the **AllSignersEqual** Group Policy is disabled, Windows ranks drivers signed by a Windows signing authority (Microsoft signature) better than drivers that have one of the following:
+If the **AllSigningEqual** Group Policy is disabled, Windows ranks drivers signed by a Windows signing authority (Microsoft signature) better than drivers that have one of the following:
 
 -   An [Authenticode](authenticode.md) signature.
 
 -   A Microsoft signature for a Windows version earlier than the [LowerLogoVersion](lowerlogoversion.md) value of the driver's [device setup class](device-setup-classes.md).
 
-If the **AllSignersEqual** Group Policy is disabled, Windows selects a driver signed by a Windows signing authority over an Authenticode-signed driver, even if the Authenticode-signed driver is otherwise a better match to a device.
+If the **AllSigningEqual** Group Policy is disabled, Windows selects a driver signed by a Windows signing authority over an Authenticode-signed driver, even if the Authenticode-signed driver is otherwise a better match to a device.
 
 Signatures from a Windows signing authority are ranked equally and include the following signature types:
 
@@ -32,9 +32,9 @@ Signatures from a Windows signing authority are ranked equally and include the f
 
 -   A WHQL signature for a Windows version that is the same or later than the [LowerLogoVersion](lowerlogoversion.md) value of the driver's [device setup class](device-setup-classes.md).
 
-A network administrator can change this behavior by enabling the **AllSignersEqual** Group Policy. This configures Windows to treat all Microsoft signature types and Authenticode signatures as equal with respect to rank when selecting the driver that is the best match to a device.
+A network administrator can change this behavior by enabling the **AllSigningEqual** Group Policy. This configures Windows to treat all Microsoft signature types and Authenticode signatures as equal with respect to rank when selecting the driver that is the best match to a device.
 
-**Note**  Starting with Windows 7, the **AllSignersEqual** Group Policy is enabled by default.
+**Note**  Starting with Windows 7, the **AllSigningEqual** Group Policy is enabled by default.
 
  
 
@@ -48,11 +48,11 @@ To accomplish this, a network administrator:
 
 -   Adds an Enterprise CA certificate to the Trusted Publisher Store of the client computers.
 
--   Enables the **AllSignersEqual** Group Policy on the client computers.
+-   Enables the **AllSigningEqual** Group Policy on the client computers.
 
 After the network administrator configures the client computers in this manner, the administrator can sign the driver that has the Enterprise CA certificate and distribute the driver to the client computers. In this configuration, Windows on client computers will install the new driver for a device instead of a Microsoft-signed driver if the sum of the feature score and the identifier score is lower than the corresponding sum for the Microsoft-signed driver.
 
-Follow these steps to configure the AllSignersEqual Group Policy on Windows Vista and later versions of Windows:
+Follow these steps to configure the AllSigningEqual Group Policy on Windows Vista and later versions of Windows:
 
 1.  On the Start menu, click **Run.**
 
@@ -66,7 +66,7 @@ Follow these steps to configure the AllSignersEqual Group Policy on Windows Vist
 
 6.  Select **Treat all digitally signed drivers equally in the driver ranking and selection process** and then click **Properties**.
 
-7.  On the **Settings** tab, select **Enabled** (to enable the **AllSignersEqual** Group Policy) or **Disabled** (to disable the **AllSignersEqual** Group Policy).
+7.  On the **Settings** tab, select **Enabled** (to enable the **AllSigningEqual** Group Policy) or **Disabled** (to disable the **AllSigningEqual** Group Policy).
 
 To ensure that the settings are updated on the target system, do the following:
 
@@ -74,7 +74,7 @@ To ensure that the settings are updated on the target system, do the following:
 
 2.  From the Command Prompt window, run the Group Policy update utility, *GPUpdate.exe*.
 
-This configuration change is made one time and applies to all subsequent driver installations on the computer until AllSignersEqual is reconfigured.
+This configuration change is made one time and applies to all subsequent driver installations on the computer until AllSigningEqual is reconfigured.
 
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers.md).
 
