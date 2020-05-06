@@ -1,7 +1,7 @@
 ---
 title: MB SAR Platform Support
 description: MB SAR Platform Support
-ms.date: 04/20/2017
+ms.date: 05/06/2020
 ms.localizationpriority: medium
 ---
 
@@ -156,11 +156,11 @@ OEMs that use this command should be aware of the potential power impact as the 
 
 #### Query
 
-The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_SET_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
 #### Set
 
-The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STATUS. MBIM_MS_SET_TRANSIMISSION_STATUS _INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STATUS. MBIM_MS_TRANSMISSION_STATUS_INFO _INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
 #### Unsolicited Events
 
@@ -214,7 +214,7 @@ The following MBIM_MS_TRANSMISSION_STATUS structure is used in the preceding tab
 
 #### Notification
 
-For more information, see the MBIM_MS_SET_TRANSMISSION_STATUS_INFO table.
+For more information, see the MBIM_MS_TRANSMISSION_STATUS_INFO table.
 
 ### Status Codes
 
