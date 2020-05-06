@@ -19,7 +19,7 @@ The WDK is used to develop, test, and deploy Windows drivers.
 * [Learn what's new in driver development](what-s-new-in-driver-development.md)
 * [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
 
-[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
+[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
 ## WDK for Windows 10, version 1903
 
@@ -95,7 +95,7 @@ To download universal Windows driver samples, do one of the following:
 
 ## Related downloads
 
-* [Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+* [Download the WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 * [Download previous versions of the WDK](other-wdk-downloads.md)
 * [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 * [Download the Windows HLK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)

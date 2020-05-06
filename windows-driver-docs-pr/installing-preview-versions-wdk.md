@@ -40,11 +40,11 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ### 3. Install SDK Insider Preview 
 
-[Get SDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+[Get SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 
 ### 4. Install WDK Insider Preview
 
-[Get WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+[Get WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 
 > [!Note]   
 > During installation you will see the Visual Studio installer install the WDK Visual Studio Extensions. 
@@ -53,7 +53,7 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 The EWDK is a standalone self-contained command-line environment for building drivers.  It includes Build Tools for Visual Studio 2019, the SDK, the WDK and support for ARM64 driver development. See more at [Installing the Enterprise WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/installing-the-enterprise-wdk). 
 
-[Get the Enterprise Windows Driver Kit (EWDK) Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
+[Get the Enterprise Windows Driver Kit (EWDK) Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 
 To get started mount the ISO and click LaunchBuildEnv. 
 
