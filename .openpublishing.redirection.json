@@ -7689,6 +7689,11 @@
                              "source_path":  "windows-driver-docs-pr/wdf/design-guide.md",
                              "redirect_url":  "https://msdn.microsoft.com/windows/hardware/drivers/wdf/",
                              "redirect_document_id":  false
-                         }
+                         },
+                         {
+                            "source_path":  "windows-driver-docs-pr/install/allsignersequal-group-policy--windows-vista-and-later-.md",
+                            "redirect_url":  "https://docs.microsoft.com/windows-hardware/drivers/install/allsigningequal-group-policy",
+                            "redirect_document_id":  true
+                        }
                      ]
 }
