@@ -64,15 +64,8 @@ In addition to the device and the driver, a driver package also contains one or 
 
 A driver package can also contain other files, such as a device installation application, a device icon, device property pages, and so forth. For more information, see the following topics:
 
-[Providing Device Property Pages](providing-device-property-pages.md)
+[Providing Icons for a Device](providing-vendor-icons-for-the-shell-and-autoplay.md)
 
 [Installing a Boot-Start Driver](installing-a-boot-start-driver.md)
-
- 
-
- 
-
-
-
 
 

@@ -130,7 +130,7 @@
       href: opening-and-closing-an-inf-file.md
     - name: "Retrieving Information from an INF File"
       href: retrieving-information-from-an-inf-file.md
-    - name: "Providing Vendor Icons for the Shell and AutoPlay"
+    - name: "Providing Icons for a Device"
       href: providing-vendor-icons-for-the-shell-and-autoplay.md
   - name: "Driver Signing"
     items: 
