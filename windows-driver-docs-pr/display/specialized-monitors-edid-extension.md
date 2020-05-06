@@ -65,7 +65,7 @@ The version number associated with the contents of the Microsoft Display Vendor-
 |----------------------|---------|---------------------------|
 | HMD (VR/AR) display devices that will be used by the Windows Mixed Reality experience | `0x1` | Supported in Windows 10 Creator's Update and later |
 | HMD (VR/AR) display devices that will be used by third-party compositors (other than the Windows Mixed Reality experience) | `0x2` | Supported in Windows 10 October 2018 Update and later |
-| Specialized display devices that are not HMDs | `0x3` | Supported in next Windows vNext and later |
+| Specialized display devices that are not HMDs | `0x3` | Supported in Windows 10 May 2020 Update and later |
 
 ### Desktop Usage Flag [1 bit]
 
