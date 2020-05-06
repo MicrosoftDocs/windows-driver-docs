@@ -60,7 +60,7 @@ The following table lists the operations that drivers can perform on an open key
 
  
 
-Once the driver has finished its manipulations, it must call [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) to close the handle—unless it has already called **ZwDeleteKey** to delete the key. (Once a key is deleted, all the open handles to it become invalid, so the driver must not close the handle in this case.)
+Once the driver has finished its manipulations, it must call [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) to close the handle—even if it has already called **ZwDeleteKey** to delete the key. (Once a key is deleted, all the open handles to it become invalid, however the driver must still close the handle.)
 
 The following code example illustrates how to open a handle for a key named **\\Registry\\Machine\\Software\\**<em>MyCompany</em>\\*MyApp*, then retrieve key data and close the handle.
 
