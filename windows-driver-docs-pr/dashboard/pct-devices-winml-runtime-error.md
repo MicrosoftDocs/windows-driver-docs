@@ -14,7 +14,7 @@ This measure monitors the overall health & reliability of Windows Machine learni
 
 The main intent of this measure is to track the percentage of devices experiencing Winml Runtime Error.
 
-It is purely using Winml runtime Error telemetry and Winml ProcessInfo telemetry.
+The measure uses only Winml runtime Error telemetry and Winml ProcessInfo telemetry.
 
 ## Measure attributes
 
