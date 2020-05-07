@@ -21,7 +21,7 @@ The WDK is used to develop, test, and deploy Windows drivers.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
-## WDK for Windows 10, version 1903
+## WDK for Windows 10, version 2004
 
 ### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019
 
@@ -33,13 +33,13 @@ The following editions of Visual Studio 2019 support driver development for this
 * [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
 * [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
-When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the WDK for Windows 10, version 1903 may not be the default SDK. To select the correct SDK:
+When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the WDK for Windows 10, version 2004 may not be the default SDK. To select the correct SDK:
 
 1. In **Visual Studio Installer**, on the **Workloads** tab, under **Installation Details**, expand **Universal Windows Platform development**.
-1. Under **Optional**, select **Windows 10 SDK (10.0.18362.0)**.
+1. Under **Optional**, select **Windows 10 SDK (10.0.19041.1)**.
 1. Continue with the install.
 
-If you already have Visual Studio 2019 installed, you can install the Windows 10 SDK (10.0.18362.0) by using the **Modify** button in Visual Studio install.
+If you already have Visual Studio 2019 installed, you can install the Windows 10 SDK (10.0.19041.1) by using the **Modify** button in Visual Studio install.
 
 Verify that you have correct version of MSVC v142 build tools for x86/x64 installed by 
 1. Choose **Individual components**
@@ -56,21 +56,21 @@ You will need to install Spectre mitigated libraries for each architecture you i
   * For ARM select **MSVC v142 - VS 2019 C++ ARM Spectre-mitigated libs (v14.21)**.
   * For ARM64 select **MSVC v142 - VS 2019 C++ ARM64 Spectre-mitigated libs (v14.21)**.
 
-### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 1903
+### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 2004
 
-* [Download WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767)
+* [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
 
 The WDK installation will by default install the WDK Visual Studio extension. 
 
-## Enterprise WDK (EWDK) for Windows 10, version 1903
+## Enterprise WDK (EWDK) for Windows 10, version 2004
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.0.0.  To get started, mount the ISO and run **LaunchBuildEnv**.
+The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.3.0.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements).
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
-* [Download the EWDK for Windows 10, version 1903](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2019)
+* [Download the EWDK for Windows 10, version 2004](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2019)
 
 ## Additional information
 
