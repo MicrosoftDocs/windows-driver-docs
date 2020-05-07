@@ -17,6 +17,7 @@ Major Code
 ----------
 
 [**IRP\_MJ\_POWER**](irp-mj-power.md)
+
 When Sent
 ---------
 
