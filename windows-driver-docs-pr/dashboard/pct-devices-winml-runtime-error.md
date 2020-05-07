@@ -23,8 +23,8 @@ It is purely using Winml runtime Error telemetry and Winml ProcessInfo telemetry
 |**Audience**|Standard|
 |**Time period**|30 days|
 |**Measurement criteria**|Machine|
-|**Minimum population**|Less than 1%|
-|**Passing criteria**|30 devices, using confidence intervals|
+|**Minimum population**|30 devices, using confidence intervals|
+|**Passing criteria**|Less than 1%|
 |**Measure ID**|25419759|
 
 ## Calculation
