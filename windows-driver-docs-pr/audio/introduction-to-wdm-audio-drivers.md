@@ -61,7 +61,7 @@ This section contains the following topics:
 
 [KsStudio Utility](ksstudio-utility.md)
 
-For updates and information about new features of the WDM audio architecture, see the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
+For updates and information about new features of the WDM audio architecture, see the [audio technology](https://docs.microsoft.com/windows-hardware/drivers/audio/) website.
 
  
 

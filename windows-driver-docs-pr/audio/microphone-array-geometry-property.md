@@ -19,7 +19,7 @@ This topic describes how external USB microphone arrays can use the microphone a
 
 The USB microphone array uses a standard format to provide the geometry information. The Windows Vista USB audio class driver must use the same format when it reads the geometry information. For more information about the standard format, see [Microphone Array Geometry Descriptor Format](microphone-array-geometry-descriptor-format.md).
 
-An application can call [IPart::GetSubType](https://go.microsoft.com/fwlink/p/?linkid=143726) to retrieve information about a jack to determine if the device plugged into the jack is a microphone array. **IPart::GetSubType** returns a pin-category GUID that represents the input jack type. If the device that is plugged in is a microphone array, the returned GUID is equal to KSNODETYPE\_MICROPHONE\_ARRAY. The application can also help you determine whether you plugged your microphone array into the wrong jack. In the latter scenario, the returned pin-category GUID is either for a different device or it indicates that there is no device plugged into the microphone jack. For more information about the pin category GUIDs, see [Pin Category Property](pin-category-property.md).
+An application can call [IPart::GetSubType](https://docs.microsoft.com/windows/win32/api/devicetopology/nf-devicetopology-ipart-getsubtype) to retrieve information about a jack to determine if the device plugged into the jack is a microphone array. **IPart::GetSubType** returns a pin-category GUID that represents the input jack type. If the device that is plugged in is a microphone array, the returned GUID is equal to KSNODETYPE\_MICROPHONE\_ARRAY. The application can also help you determine whether you plugged your microphone array into the wrong jack. In the latter scenario, the returned pin-category GUID is either for a different device or it indicates that there is no device plugged into the microphone jack. For more information about the pin category GUIDs, see [Pin Category Property](pin-category-property.md).
 
 After an application discovers a microphone array that is plugged into the correct input jack, the next step is to determine the geometry of the array. There are three basic geometries: *linear*, *planar*, and *three dimensional (3-D)*. The geometry information also provides details such as the frequency range and x-y-z coordinates of each microphone.
 
@@ -128,7 +128,7 @@ After you complete the file modifications, complete the following procedure to b
 
 7.  Open the **Sound** applet in Control Panel and click the **Recording** tab to verify that you can see the virtual microphone array you just installed.
 
-For information about how to develop an application to discover microphone arrays, see Appendix C of [How to Build and Use Microphone Arrays for Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=306613).
+For information about how to develop an application to discover microphone arrays, see Appendix C of [How to Build and Use Microphone Arrays for Windows Vista](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/MicArrays_guide.doc).
 
  
 

@@ -14,7 +14,7 @@ The USB Audio class system driver (Usbaudio.sys) is an AVStream minidriver that 
 ## <span id="usbaudio_class_system_driver"></span><span id="USBAUDIO_CLASS_SYSTEM_DRIVER"></span>
 
 
-The USB Device Class Definition for Audio Devices specification (release 1.0) is available at the [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780) website. Usbaudio.sys supports a subset of the features that are described in the USB Audio specification. In addition to Usbaudio.sys, there are several other kernel-mode audio components in the Windows Driver Model (WDM). For more information, see [Kernel-Mode WDM Audio Components](kernel-mode-wdm-audio-components.md).
+The USB Device Class Definition for Audio Devices specification (release 1.0) is available at the [USB Implementers Forum](https://www.usb.org/) website. Usbaudio.sys supports a subset of the features that are described in the USB Audio specification. In addition to Usbaudio.sys, there are several other kernel-mode audio components in the Windows Driver Model (WDM). For more information, see [Kernel-Mode WDM Audio Components](kernel-mode-wdm-audio-components.md).
 
 In Windows 98 Usbaudio.sys introduced support for USB devices such as speakers and microphones. Support for MIDI devices was added in Windows Me.
 

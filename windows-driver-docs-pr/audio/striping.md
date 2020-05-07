@@ -22,7 +22,7 @@ The HD Audio architecture supports a technique called *striping* that can reduce
 
 The function driver enables striping through the [**AllocateRenderDmaEngine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine) routine's *stripe* call parameter.
 
-For more information about striping, see the *Intel High Definition Audio Specification* at the [Intel HD Audio](https://go.microsoft.com/fwlink/p/?linkid=42508) website.
+For more information about striping, see the *Intel High Definition Audio Specification* at the [Intel HD Audio](https://www.intel.com/content/www/us/en/standards/intel-standards-and-initiatives.html) website.
 
  
 
