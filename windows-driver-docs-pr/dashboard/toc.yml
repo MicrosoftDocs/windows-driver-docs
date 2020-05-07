@@ -132,6 +132,8 @@
             href: user-mode-reliability-for-crashes-in-windows-components.md
           - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
             href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
+          - name: "Percent of devices with WinML Runtime Errors"
+            href: pct-devices-winml-runtime-error.md
         - name: "Ecosystem audience measures"
           items:
           - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
