@@ -159,7 +159,7 @@ To work with the system-supplied drivers, hardware vendors should design their a
 
 -   Updates to the AV/C Audio Subunit Specifications currently in process
 
-These specifications are available at the [1394 Trade Association](https://go.microsoft.com/fwlink/p/?linkid=8728) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
+These specifications are available at the [1394 Trade Association](https://1394ta.org/) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
 
 When an audio device identifies itself as an IEEE 1394-compliant audio device during Plug and Play device enumeration, the system automatically loads the AVCAudio driver to drive the device. AVCAudio drives the device directly, without the aid of a proprietary adapter driver. This means that a device that complies with the appropriate IEEE 1394 specifications requires no proprietary adapter driver.
 
