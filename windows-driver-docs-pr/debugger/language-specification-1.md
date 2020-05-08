@@ -24,7 +24,7 @@ After SrcSrv finds the entry, it fills in the special variables (VAR1, VAR2, etc
 The following shows how the SRCSRVTRG variable is resolved using the special variables. We assume that the source path is still:
 
 ```console
-c:\proj\src\file.cpp*TOOLS_PRJ*tools/mytool/src/file.cpp*3 
+c:\proj\src\file.cpp*TOOLS_PRJ*tools/mytool/src/file.cpp*3
 ```
 
 Each line shows the resolution of one more special variable. The resolved variables are bold.
@@ -121,7 +121,7 @@ A string that indicates the date and time the .pdb file was processed. This vari
 
 The \[variables\] section of the data block contains variables that describe how to extract a file from source control. It can also be used to define commonly used text as variables to reduce the size of the data block.
 
-<span id="SRCSRV"></span><span id="srcsrv"></span>**SRCSRV**  
+<span id="SRCSRVTRG"></span><span id="srcsrv"></span>**SRCSRVTRG**  
 Describes how to build the target path for the extracted file. This is a required variable.
 
 <span id="SRCSRVCMD"></span><span id="srcsrvcmd"></span>**SRCSRVCMD**  
