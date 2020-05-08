@@ -2,7 +2,7 @@
 title: Provision a computer for driver deployment and testing (WDK 10)
 description: Provisioning a target or test computer is the process of configuring a computer for automatic driver deployment, testing, and debugging. To provision a computer, use Microsoft Visual Studio.
 ms.assetid: A2615EE9-316E-4AE2-BBAA-B9E153090016
-ms.date: 02/24/2020
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 
 A testing and debugging environment has two computers: the *host computer* and the *target computer*. The target computer is also called the *test computer*. You develop and build your driver in Visual Studio on the host computer. The debugger runs on the host computer and is available in the Visual Studio user interface. When you test and debug a driver, the driver runs on the target computer.
 
-The host and target computers must be able to ping each other by name. This might be easier if both computers are joined to the same workgroup or the same network domain. If your computers are in a workgroup, we recommend that you connect the computers with a router rather than a hub or switch. 
+The host and target computers must be able to ping each other by name. This might be easier if both computers are joined to the same workgroup or the same network domain. If your computers are in a workgroup, we recommend that you connect the computers with a router rather than a hub or switch.
 
 > [!TIP]
 > For the latest information on the WDK and known issues, see the  [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk).
 
-## <span id="preparing_the_target_computer_for_provisioning"></span><span id="PREPARING_THE_TARGET_COMPUTER_FOR_PROVISIONING"></span>Prepare the target computer for provisioning
+## Prepare the target computer for provisioning
 
 1. On the target computer, install the operating system that you'll use to run and test your driver.
 
@@ -48,7 +48,7 @@ If the host and target computers are joined to a workgroup and are on different 
 3. In the list of inbound rules, find all Network Discovery rules for your active network. (For example, find all Network Discovery rules that have a **Profile** of **Private**.) Double click each rule and open the **Scope** tab. Under **Remote IP address**, select **Any IP address**.
 4. In the list of inbound rules, locate all File and Printer Sharing rules for your active network. For each of those rules, double click the rule, and open the **Scope** tab. Under **Remote IP address**, select **Any IP address**.
 
-## <span id="Provision_the_target_computer"></span><span id="provision_the_target_computer"></span><span id="PROVISION_THE_TARGET_COMPUTER"></span>Provision the target computer
+## Provision the target computer
 
 Now you're ready to provision the target computer from the host computer in Visual Studio.
 
