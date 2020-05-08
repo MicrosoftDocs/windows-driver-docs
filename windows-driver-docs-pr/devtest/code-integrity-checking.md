@@ -87,4 +87,4 @@ You can activate code integrity checking for one or more drivers by using Driver
 
 ## Related topics
 
-[Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/use-device-guard-readiness-tool)
+[Evaluate HVCI driver compatibility](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/use-device-guard-readiness-tool)
