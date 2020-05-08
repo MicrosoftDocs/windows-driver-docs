@@ -17,7 +17,7 @@ The Miscellaneous Checks option of Driver Verifier monitors the driver for commo
 
 Specifically, the Miscellaneous Checks option looks for the following improper driver behavior:
 
--   **Active work items in freed memory.** The driver calls [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that contains work items that were queued by using [**IoQueueWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioqueueworkitem).. (This check is enabled by default in the checked build of Windows Server 2003.)
+-   **Active work items in freed memory.** The driver calls [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that contains work items that were queued by using [**IoQueueWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioqueueworkitem).. 
 
 -   **Active resources in freed memory.** The driver calls [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that contains active [ERESOURCE structures](https://docs.microsoft.com/windows-hardware/drivers/kernel/eresource-structures). The driver should call [**ExDeleteResource**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl) to delete ERESOURCE objects before calling **ExFreePool**.
 

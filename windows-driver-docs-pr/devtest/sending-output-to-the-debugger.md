@@ -43,15 +43,4 @@ The [**DbgPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm
 
 **Note**   In Windows Vista and later versions of Windows, **DbgPrint** produces tagged messages as well. In previous versions of Windows, **DbgPrint** produced untagged messages.
 
- 
-
 The [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint) and [**KdPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex) macros are identical to **DbgPrint** and **DbgPrintEx**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
-
- 
-
- 
-
-
-
-
-
