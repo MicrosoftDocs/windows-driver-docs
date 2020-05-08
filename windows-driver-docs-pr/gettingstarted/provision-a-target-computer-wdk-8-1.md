@@ -21,7 +21,7 @@ The host and target computers must be able to ping each other by name. This migh
 
 1. On the target computer, install the operating system that you'll use to run and test your driver.
 
-2. [Install the WDK](../download-the-wdk). You do not need to install Visual Studio, however, unless you plan on doing driver development on the target computer.
+2. [Install the WDK](../download-the-wdk.md). You do not need to install Visual Studio, however, unless you plan on doing driver development on the target computer.
 
 3. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](https://go.microsoft.com/fwlink/p/?LinkID=309386).
 
