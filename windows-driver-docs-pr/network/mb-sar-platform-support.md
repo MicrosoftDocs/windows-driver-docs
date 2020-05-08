@@ -160,7 +160,7 @@ The InformationBuffer on MBIM_COMMAND_MSG is not used. MBIM_MS_TRANSMISSION_STAT
 
 #### Set
 
-The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STATUS. MBIM_MS_TRANSMISSION_STATUS_INFO _INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STATUS. MBIM_MS_TRANSMISSION_STATUS_INFO is returned in the InformationBuffer of MBIM_COMMAND_DONE.
 
 #### Unsolicited Events
 
