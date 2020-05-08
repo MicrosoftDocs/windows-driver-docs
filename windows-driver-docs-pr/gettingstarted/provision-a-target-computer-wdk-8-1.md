@@ -21,21 +21,23 @@ The host and target computers must be able to ping each other by name. This migh
 
 1. On the target computer, install the operating system that you'll use to run and test your driver.
 
-2. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](https://go.microsoft.com/fwlink/p/?LinkID=309386).
+2. [Install the WDK](../download-the-wdk). You do not need to install Visual Studio, however, unless you plan on doing driver development on the target computer.
+
+3. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](https://go.microsoft.com/fwlink/p/?LinkID=309386).
 
     If the target computer uses an ARM processor, install the Windows Debug Policy. This can be done only by Microsoft or the manufacturer of the target computer. You do not need to disable Secure Boot.
 
-3. On the target computer, run the WDK Test Target Setup MSI that matches the platform of the target computer. You can find the MSI in the Windows Driver Kit (WDK) installation directory under Remote.
+4. On the target computer, run the WDK Test Target Setup MSI that matches the platform of the target computer. You can find the MSI in the Windows Driver Kit (WDK) installation directory under Remote.
 
     Example: C:\\Program Files (x86)\\Windows Kits\\10\\Remote\\x64\\WDK Test Target Setup x64-x64\_en-us.msi
 
-4. If the target computer is running an N or KN version of Windows, install the Media Feature Pack for N and KN versions of Windows:
+5. If the target computer is running an N or KN version of Windows, install the Media Feature Pack for N and KN versions of Windows:
 
     - [Media Feature Pack for N and KN versions of Windows 8.1](https://go.microsoft.com/fwlink/p?linkid=329737)
     - [Media Feature Pack for N and KN versions of Windows 8](https://go.microsoft.com/fwlink/p?linkid=329738)
     - [Media Feature Pack for N and KN versions of Windows 7](https://go.microsoft.com/fwlink/p?linkid=329739)
 
-5. If your target computer is running Windows Server, find the DriverTest folder that was just created by WDK Test Target Setup MSI. (Example: c:\\DriverTest). Right click the **DriverTest** folder, and choose **Properties**. On the **Security** tab, give **Modify** permission to the **Authenticated Users** group.
+6. If your target computer is running Windows Server, find the DriverTest folder that was just created by WDK Test Target Setup MSI. (Example: c:\\DriverTest). Right click the **DriverTest** folder, and choose **Properties**. On the **Security** tab, give **Modify** permission to the **Authenticated Users** group.
 
 Verify that the host and target computers can ping each other. Open a Command Prompt window, and enter **ping** *ComputerName*.
 
