@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Audio Hardware Resource Management
 
-Windows 10 includes the ability to express concurrency constraints using and XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
+Windows 10 includes the ability to express concurrency constraints using an XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
 
 **Note**   This mechanism is only available in phones and tablets.
  
