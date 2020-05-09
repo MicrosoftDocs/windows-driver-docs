@@ -10,15 +10,17 @@ keywords:
 - debugger messages WDK
 - messages WDK checked builds
 - errors WDK checked builds
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
 # How the Checked Build Indicates a Problem
 
-
 ## <span id="ddk_how_the_checked_build_indicates_a_problem_tools"></span><span id="DDK_HOW_THE_CHECKED_BUILD_INDICATES_A_PROBLEM_TOOLS"></span>
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 The checked build of the operating system uses a variety of methods to notify you of problems that it finds. These methods include ASSERT failures, breakpoints, and debugger messages. All of these methods result in output from a kernel debugger. Therefore, to be useful, you must run the checked build with a kernel-mode debugger (such as WinDbg or KD) connected.
 

@@ -10,15 +10,17 @@ keywords:
 - consistency checks WDK
 - informational checks WDK
 - tracing output checks WDK
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
 # What the Checked Build Checks
 
-
 ## <span id="ddk_what_the_checked_build_checks_tools"></span><span id="DDK_WHAT_THE_CHECKED_BUILD_CHECKS_TOOLS"></span>
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 The checked build includes a significant number of debugging checks that are normally not present in the system. These checks include:
 
