@@ -22,7 +22,7 @@ Windows Drivers are distinguished from Windows Desktop Drivers. While Windows Dr
 
 No changes are required to universal drivers for the version 2004 release, but documentation is available now so that you can plan ahead for upcoming changes.
 
-For information about how to build, install, deploy, and debug a Windows Driver, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers).
+For information about how to build, install, deploy, and debug a Windows Driver, see [Getting Started with Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers).
 
 ### Windows Hardware Error Architecture (WHEA)
 
