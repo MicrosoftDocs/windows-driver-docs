@@ -66,6 +66,28 @@ Package (2) {"UID", 0}, // Property 2: UID of the externally facing port on plat
 )
 ```
 
+## Identifying internal PCIe ports accessible to users, and requiring DMA protection
+
+This ACPI object allows the operating system to identify internal PCIe hierarchies that are easily accessible by users (e.g. Laptop M.2 PCIe slots accessible via a latch) and require protection by the OS [Kernel DMA Protection](https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) mechanism. This object must be implemented in the Root Port ACPI device scope. 
+
+Notes: 
+-	Protecting PCI ports using this ACPI object is only support on Windows 10 1903 and above
+-	Kernel DMA Protection must be enabled in system BIOS/UEFI, for the OS to parse the _DSD and apply necessary protections to the PCI port 
+-	Drivers of devices connected to this port MUST support DMA remapping, otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-dmaguard)
+
+
+```ASL
+Name (_DSD, Package () {  
+
+ToUUID("70D24161-6DD5-4C9E-8070-705531292865"),
+Package () {
+Package (2) {"DmaProperty", 1}, // Property 1: This port needs to be protected by the OS
+Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range is: 0, 1, …, n-1
+                   }
+        }
+)
+```
+
 ## See Also
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
