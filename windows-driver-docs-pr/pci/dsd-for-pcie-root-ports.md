@@ -91,3 +91,5 @@ Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range i
 ## See Also
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
+
+[Kernel DMA Protection for Thunderbolt™ 3](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
