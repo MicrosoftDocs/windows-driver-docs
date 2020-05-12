@@ -2,7 +2,7 @@
 title: Microsoft driver measure
 description: Publishers and authors use the descriptions of the Microsoft driver measures to better understand the criteria Microsoft uses in evaluating driver quality during driver flighting
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---
 
@@ -40,6 +40,20 @@ Each measure has its own calculation logic, which is an algorithm that parses te
 
 A measure is failing when its Current Value does not meet its Passing Criteria, triggering an investigation that may result in remediation, such as a flight rejection or an in-market expiration.
 
+## Evaluating by Targeting Cohort
+
+A driver can be developed to support multiple systems and devices. It is not always sufficient nor accurate to evaluate a driver’s quality aggregating its measure results across all of its targeting devices. To ensure there is no known targeting cohorts where the driver demonstrates low performance, a cohort analysis is applied to identify if there is any target cohort that fails to meet the measure requirements.
+
+All driver measures will be used to evaluate driver quality by targeting cohorts, as they are enabled to support evaluation by targeting cohorts. Measure Attribute ‘Cohort-capable’, listed on the measure dictionary, can be used to determine if a measure is enabled to support evaluation by targeting cohorts.
+
+# Targeting Cohorts/Clusters Definition
+A Targeting cohort/cluster is defined as a set of Windows systems and devices that a driver targets to support, and share the same targeting attributes, such as HWID, CHID, and OS version.
+
+# Cohort Evaluation Pass/Fail Criteria
+If one or more driver measures fail to meet its passing criteria while being used to evaluate a driver’s quality by a targeting cohort, the targeting cohort is considered Fail. A driver can be rejected if one or more failures is detected on one or more targeting cohorts.  
+
+Minimum instances is set as 500 for each measure used for evaluating by targeting cohorts. The minimum instances may be adjusted in the future as needed.
+
 ## Data sources for measures
 
 To evaluate driver quality, measures incorporate data from machines running in two distinct customer groups: **Windows Insider Program (WIP)** and **Retail**.
@@ -57,6 +71,8 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 [Bluetooth measures](bluetooth-measures.md)
 
 [Camera measures](camera-measures.md)
+
+[Fingerprint measures](fingerprint-measures.md)
 
 [Firmware measures](firmware-measures.md)
 
