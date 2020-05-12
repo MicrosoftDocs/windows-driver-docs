@@ -71,7 +71,7 @@ For information on audio requirements to support APOs, see [Device.Audio Require
 
 You can use the "Audio Effects Discovery Sample" to explore the available audio effects. This sample demonstrates how to query audio effects on render and capture audio devices and how to monitor changes with the audio effects. It is included as part of the SDK samples and can be downloaded using this link:
 
-[Audio effects discovery sample](https://go.microsoft.com/fwlink/p/?linkid=2112597)
+[Audio effects discovery sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Audio%20effects%20discovery%20sample)
 
 **Application Audio Effect Awareness**
 

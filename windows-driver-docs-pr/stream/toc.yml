@@ -1,7 +1,23 @@
 - name: "Streaming media devices design guide"
   href: index.md
 - name: "Device firmware update for USB devices without using a co-installer"
-  href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+# Auto-expanded node
+  items: 
+  - name: "Device firmware update for USB devices without using a co-installer"
+    href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+- name: "Network camera design guide"
+# Auto-expanded node
+  items: 
+  - name: "Network camera design guide"
+    href: network-camera-design-guide.md
+  - name: "KSPROPERTYSETID_NetworkCameraControl"
+    href: kspropertysetid-networkcameracontrol.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
+    href: ksproperty_networkcameracontrol_ntp.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
+    href: ksproperty_networkcameracontrol_uri.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER"
+    href: ksproperty_networkcameracontrol_ntpinfo_header.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
@@ -1544,6 +1560,8 @@
       href: ksproperty-cameracontrol-extended-photomode2.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE"
       href: ksproperty-cameracontrol-extended-profile.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION"
+      href: ksproperty-cameracontrol-extended-relativepaneloptimization.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS"
       href: ksproperty-cameracontrol-extended-roi-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL"

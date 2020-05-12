@@ -11,15 +11,17 @@ keywords:
 - names WDK checked builds
 - copying checked files
 - Boot.ini files WDK , checked builds
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
 # Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 ## <span id="ddk_installing_just_the_checked_operating_system_and_hal_tools"></span><span id="DDK_INSTALLING_JUST_THE_CHECKED_OPERATING_SYSTEM_AND_HAL_TOOLS"></span>
-
 
 Instead of installing the complete checked build on your computer, you can install the free build of the system, and then install the checked versions of the operating system image and HAL. If you use this procedure, you can configure the boot loader to provide you with two boot options. The first boot option is for the free build. The second boot option starts the system using the checked operating system image and HAL, but uses free versions of all other system components.
 

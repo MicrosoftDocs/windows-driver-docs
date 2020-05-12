@@ -58,8 +58,8 @@
           href: driver-rank-example--windows-vista-and-later-.md
         - name: "Driver Rank Information in the SetupAPI Log"
           href: driver-rank-information-in-the-setupapi-log.md
-        - name: "AllSignersEqual Group Policy"
-          href: allsignersequal-group-policy--windows-vista-and-later-.md
+        - name: "AllSigningEqual Group Policy"
+          href: allsigningequal-group-policy.md
 - name: "Concepts"
   items: 
   - name: "Driver Packages"

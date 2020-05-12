@@ -67,7 +67,7 @@ For more information about dynamic format change, see [Dynamic Format Change](ht
 Remarks
 -------
 
-If an audio device lacks jack presence detection, the **IsConnected** member of the [**KSJACK\_DESCRIPTION**](ksjack-description.md) structure must always be set to **TRUE**. To remove the ambiguity that results from this dual meaning of the **TRUE** value for **IsConnected**, a client application can call [IKsJackDescription2::GetJackDescription2](https://go.microsoft.com/fwlink/p/?linkid=143698) to read the **JackCapabilities** flag of the `KSJACK_DESCRIPTION2` structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint does in fact support jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted to accurately reflect the insertion status of the jack.
+If an audio device lacks jack presence detection, the **IsConnected** member of the [**KSJACK\_DESCRIPTION**](ksjack-description.md) structure must always be set to **TRUE**. To remove the ambiguity that results from this dual meaning of the **TRUE** value for **IsConnected**, a client application can call [IKsJackDescription2::GetJackDescription2](https://docs.microsoft.com/windows/win32/api/devicetopology/nf-devicetopology-iksjackdescription2-getjackdescription2) to read the **JackCapabilities** flag of the `KSJACK_DESCRIPTION2` structure. If this flag has the JACKDESC2\_PRESENCE\_DETECT\_CAPABILITY bit set, it indicates that the endpoint does in fact support jack presence detection. In that case, the return value of the **IsConnected** member can be interpreted to accurately reflect the insertion status of the jack.
 
 Requirements
 ------------
@@ -94,7 +94,7 @@ Requirements
 
 [**KSJACK\_DESCRIPTION**](ksjack-description.md)
 
-[IKsJackDescription2::GetJackDescription2](https://go.microsoft.com/fwlink/p/?linkid=143698)
+[IKsJackDescription2::GetJackDescription2](https://docs.microsoft.com/windows/win32/api/devicetopology/nf-devicetopology-iksjackdescription2-getjackdescription2)
 
  
 

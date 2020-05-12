@@ -96,7 +96,7 @@ A WavePci filter is implemented as a port/miniport driver pair. A WavePci filter
 
 -   It calls the port driver's [**IPort::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-init) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWavePci](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536905(v=vs.85)) and [IMiniportWavePci](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWavePci](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci) and [IMiniportWavePci](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci) interfaces.
 
 For more information, see [Implementation Issues for WavePci Devices](implementation-issues-for-wavepci-devices.md).
 
