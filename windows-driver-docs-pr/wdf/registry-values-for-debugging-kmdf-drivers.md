@@ -14,7 +14,6 @@ ms.localizationpriority: medium
 
 This article describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
 
-## Per driver registry values
 
 The following registry values can exist under a driver's **Parameters\\Wdf** subkey. For a KMDF driver, this subkey is located in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services**, under the driver's service name. For a UMDF driver, this subkey is located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services**, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
 
@@ -161,7 +160,6 @@ Set to a nonzero value to enable the [**WDFVERIFY**](https://docs.microsoft.com/
 
 
 
-## Global UMDF registry values
 
 You can also set the following registry values in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}**. These values affect all UMDF drivers on the system.
 
