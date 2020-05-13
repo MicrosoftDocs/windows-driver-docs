@@ -14,15 +14,16 @@ ms.localizationpriority: medium
 
 This article describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
 
+Unless otherwise specified below, the following registry values are located under a driver's `Parameters\Wdf` subkey. For a KMDF driver, this subkey is located in `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services`, under the driver's service name.
 
-The following registry values can exist under a driver's **Parameters\\Wdf** subkey. For a KMDF driver, this subkey is located in **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services**, under the driver's service name. For a UMDF driver, this subkey is located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services**, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
+For a UMDF driver, this subkey is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services`, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
 
 
 ## DbgBreakOnError
 
 *REG\_DWORD*
 
-If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example above.
+If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example in the [**VerifierOn**](#verifieron) section.
 
 ## DbgPrintOn
 
@@ -37,6 +38,28 @@ For a KMDF driver, set this value under the **HKLM\\SYSTEM\\CurrentControlSet\\C
 *REG\_DWORD, framework versions 1.11 and later*
 
 Starting in Windows 8, when **VerifierOn** and **DbgBreakOnError** are set to nonzero values, the driver can change the default timeout period for breaking into the debugger by setting **DbgWaitForSignalTimeoutInSec**.
+
+## DebugModeBinaries
+
+*REG\_MULTI\_SZ, UMDF-only*
+
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\DebugMode`.
+
+This value specifies the names of the driver binaries to be loaded in debug mode. To enable debug mode for driver binaries X.DLL, Y.DLL and Z.DLL, for example, this value would be set to *X.DLL\\0Y.DLL\\0Z.DLL\\0\\0*.
+
+## DebugModeFlags
+
+*REG\_DWORD, UMDF-only*
+
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\DebugMode`.
+
+|Value|Description|
+|--- |--- |
+|0x01|Enable debug mode. This setting turns off the automatic restart functionality described in [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).|
+|0x02|Disable device pooling. For more information about device pooling, see [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).|
+|0x04|Disable timeouts.|
+ 
+When you use the F5 option in Microsoft Visual Studio, all three flags are set for the deployed driver.
 
 ## EnhancedVerifierOptions
 
@@ -62,20 +85,61 @@ This value contains a bitmap. Each bit represents an additional verifier option 
 
 Set to a nonzero value to cause the framework to include information from its event logger in crash dump files.
 
-## HostProcessDbgBreakOnDriverLoad driver-specific
+## HostFailKdDebugBreak
+
+*REG\_DWORD, UMDF-only*
+
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF`.
+
+If this value is non-zero and a kernel debugger is connected to the machine, the reflector breaks into the kernel debugger before terminating the host process. **HostFailKdDebugBreak** is disabled by default in Windows 7 and earlier operating systems. Starting in Windows 8, **HostFailKdDebugBreak** is enabled by default.
+
+The reflector also breaks into the kernel debugger if there is an unexpected termination of the host process (e.g. by a non-UMDF component or due to an unhandled exception). If there are multiple device stacks pooled in the host process that is being terminated, the reflector breaks into the debugger multiple times, once for each device stack loaded in the host process.
+
+
+## HostProcessDbgBreakOnDriverLoad (driver-specific)
 
 *REG\_DWORD*, UMDF-only, UMDF 2.31 and later*
 
-> [!NOTE]
-> This value affects only the specified UMDF driver.
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\<service name>\Parameters\Wdf`.
 
-This registry value is located in `HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\<service name>\\Parameters\\Wdf`.
+This value affects only the specified UMDF driver.
 
 Contains a delay value in seconds. Causes WUDFHost to try to connect to a debugger for the specified number of seconds after the driver has been loaded.
 
 During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. See the section on **HostProcessDbgBreakOnStart** above for examples.
 
 For changes to UMDF registry values to take effect, you must reboot the computer.
+
+
+## HostProcessDbgBreakOnDriverLoad (global)
+
+*REG\_DWORD, UMDF-only*
+
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\{193a1820-d9ac-4997-8c55-be817523f6aa}`. You can set it by using the [WDF Verifier tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab) (WdfVerifier.exe) in the WDK. This value affects all UMDF drivers on the system.
+
+Contains a delay value in seconds. Causes WUDFHost to delay the specified number of seconds after the driver has been loaded. The behavior for **HostProcessDbgBreakOnDriverLoad** is otherwise the same as that described for **HostProcessDbgBreakOnStart**.
+
+Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.
+
+Starting in UMDF 2.31, you can set a per-driver **HostProcessDbgBreakOnDriverLoad**.  See [**HostProcessDbgBreakOnDriverLoad driver-specific](#hostprocessdbgbreakondriverload-driver-specific).
+
+
+## HostProcessDbgBreakOnStart
+
+*REG\_DWORD, UMDF-only*
+
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\{193a1820-d9ac-4997-8c55-be817523f6aa}`. You can set it by using the [WDF Verifier tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab) (WdfVerifier.exe) in the WDK. This value affects all UMDF drivers on the system.
+
+Contains a delay value in seconds. During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in **HostProcessDbgBreakOnStart** is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. For example:
+
+|Value|Result|
+|--- |--- |
+|0x00000004|The framework attempts to connect to the user-mode debugger once a second for 4 seconds. The framework never tries to connect to the kernel-mode debugger.|
+|0x80000000|The framework makes a single attempt to connect to the user-mode debugger. If the user-mode debugger is not attached, the framework tries to connect to the kernel-mode debugger.|
+|0x80000004|The framework attempts to connect to the user-mode debugger once a second for 4 seconds. If the user-mode debugger is not attached within 4 seconds, the framework tries to connect to the kernel-mode debugger.|
+
+You can also set this registry value by using the [WDF Verifier tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab) (WdfVerifier.exe) that is included in the WDK.
+
 
 ## LogPages
 
@@ -109,7 +173,7 @@ If set to a list of one or more type names of framework object handles, and if *
 
 *REG\_DWORD*
 
-If set to a nonzero value, the framework's [event logger](using-the-framework-s-event-logger.md) records additional information that can help you debug your driver, such as entries into or exits from internal code paths. You should set this value only while you are developing your driver. See the code example above.
+If set to a nonzero value, the framework's [event logger](using-the-framework-s-event-logger.md) records additional information that can help you debug your driver, such as entries into or exits from internal code paths. You should set this value only while you are developing your driver. See the code example in [**VerifierOn**](#verifieron).
 
 
 ## VerifierAllocateFailCount
@@ -160,71 +224,3 @@ Set to a nonzero value to enable the [**WDFVERIFY**](https://docs.microsoft.com/
 
 
 
-
-You can also set the following registry values in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\{193a1820-d9ac-4997-8c55-be817523f6aa}**. These values affect all UMDF drivers on the system.
-
-## HostProcessDbgBreakOnStart
-
-*REG\_DWORD, UMDF-only*
-
-Contains a delay value in seconds. During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in **HostProcessDbgBreakOnStart** is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. For example:
-
-|Value|Result|
-|--- |--- |
-|0x00000004|The framework attempts to connect to the user-mode debugger once a second for 4 seconds. The framework never tries to connect to the kernel-mode debugger.|
-|0x80000000|The framework makes a single attempt to connect to the user-mode debugger. If the user-mode debugger is not attached, the framework tries to connect to the kernel-mode debugger.|
-|0x80000004|The framework attempts to connect to the user-mode debugger once a second for 4 seconds. If the user-mode debugger is not attached within 4 seconds, the framework tries to connect to the kernel-mode debugger.|
-
-
-## HostProcessDbgBreakOnDriverLoad global
-
-*REG\_DWORD, UMDF-only*
-
-Contains a delay value in seconds. Causes WUDFHost to delay the specified number of seconds after the driver has been loaded. The behavior for **HostProcessDbgBreakOnDriverLoad** is otherwise the same as that described for **HostProcessDbgBreakOnStart**.
-
-Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.
-
-> [!NOTE]
-> Starting in UMDF 2.31, you can set a per-driver **HostProcessDbgBreakOnDriverLoad**.  For details, see above.
-
-
-You can also set these registry values by using the WDF Verifier tool (WdfVerifier.exe) that is included in the WDK. For information on using this tool with UMDF drivers, see [Managing UMDF Verifier Settings with WDF Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab).
-
-In addition, the following values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\DebugMode**:
-
-## DebugModeFlags
-
-*REG\_DWORD, UMDF-only*
-
-|Value|Description|
-|--- |--- |
-|0x01|Enable debug mode. This setting turns off the automatic restart functionality described in [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).|
-|0x02|Disable device pooling. For more information about device pooling, see [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).|
-|0x04|Disable timeouts.|
- 
-
-When you use the F5 option in Microsoft Visual Studio, all three flags are set for the deployed driver.
-
-## DebugModeBinaries
-
-*REG\_MULTI\_SZ, UMDF-only*
-
-This value specifies the names of the driver binaries to be loaded in debug mode. To enable debug mode for driver binaries X.DLL, Y.DLL and Z.DLL, for example, this value would be set to *X.DLL\\0Y.DLL\\0Z.DLL\\0\\0*.
-
-You can also set the following value in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF**:
-
-## HostFailKdDebugBreak
-
-*REG\_DWORD, UMDF-only*
-
-If this value is non-zero and a kernel debugger is connected to the machine, the reflector breaks into the kernel debugger before terminating the host process. **HostFailKdDebugBreak** is disabled by default in Windows 7 and earlier operating systems. Starting in Windows 8, **HostFailKdDebugBreak** is enabled by default.
-
-The reflector also breaks into the kernel debugger if there is an unexpected termination of the host process (e.g. by a non-UMDF component or due to an unhandled exception). If there are multiple device stacks pooled in the host process that is being terminated, the reflector breaks into the debugger multiple times, once for each device stack loaded in the host process.
-
-
-You can also set the following registry value in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services\\<service name>\\Parameters\\Wdf**. 
-
-
-
-
- 
