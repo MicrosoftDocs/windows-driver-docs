@@ -124,8 +124,6 @@ Contains a delay value in seconds. Causes WUDFHost to delay the specified number
 
 Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad** causes the framework to disable other UMDF timeouts (for example, Plug and Play operations). This means that if your driver causes excessive timeouts, using these values might result in your driver causing a fatal crash on the target.
 
-Starting in UMDF 2.31, you can set a per-driver **HostProcessDbgBreakOnDriverLoad**.  See [**HostProcessDbgBreakOnDriverLoad driver-specific](#hostprocessdbgbreakondriverload-driver-specific).
-
 
 ## HostProcessDbgBreakOnStart
 
