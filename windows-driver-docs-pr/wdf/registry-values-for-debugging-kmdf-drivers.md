@@ -1,5 +1,5 @@
 ---
-title: Registry Values for Debugging WDF Drivers (KMDF and UMDF)
+title: Registry Values for Debugging WDF Drivers
 description: This topic describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
 ms.assetid: d54bdc6c-b409-4973-9b29-16967a4d83fb
 keywords:
@@ -9,7 +9,7 @@ ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---
 
-# Registry Values for Debugging WDF Drivers (KMDF and UMDF)
+# Registry Values for Debugging WDF Drivers
 
 
 This article describes the registry values that a WDF driver can set. It applies to KMDF drivers and UMDF drivers starting with UMDF version 2.
