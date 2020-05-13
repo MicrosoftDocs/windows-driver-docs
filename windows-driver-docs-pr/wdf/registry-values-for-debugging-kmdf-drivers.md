@@ -12,11 +12,14 @@ ms.localizationpriority: medium
 # Registry Values for Debugging WDF Drivers (KMDF and UMDF)
 
 
-This article describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
+This article describes the registry values that a WDF driver can set. It applies to KMDF drivers and UMDF drivers starting with UMDF version 2.
 
-Unless otherwise specified below, the following registry values are located under a driver's `Parameters\Wdf` subkey. For a KMDF driver, this subkey is located in `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services`, under the driver's service name.
+Unless otherwise specified in sections below, the following registry values are located under a driver's `Parameters\Wdf` subkey.
 
-For a UMDF driver, this subkey is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services`, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
+* For a KMDF driver, this subkey is located in `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services`, under the driver's service name.
+* For a UMDF driver, this subkey is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services`, under the driver's service name.
+
+The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
 
 
 ## DbgBreakOnError
@@ -31,7 +34,7 @@ If set to a nonzero value, the framework breaks into the debugger when a driver 
 
 If set to a nonzero value, the framework's loader sends a variety of messages to the kernel debugger while it is loading a driver and binding it to a version of the framework library, or while it is unloading a driver.
 
-For a KMDF driver, set this value under the **HKLM\\SYSTEM\\CurrentControlSet\\Control\\Wdf\\Kmdf\\Diagnostics** registry key. For a UMDF driver, set this value under the **HKLM\\System\\CurrentControlSet\\Control\\Wdf\\Umdf\\Diagnostics** registry key. The driver might need to create the optional **Diagnostics** subkey.
+For a KMDF driver, set this value under the `HKLM\SYSTEM\CurrentControlSet\Control\Wdf\Kmdf\Diagnostics` registry key. For a UMDF driver, set this value under the `HKLM\System\CurrentControlSet\Control\Wdf\Umdf\Diagnostics` registry key. The driver might need to create the optional **Diagnostics** subkey.
 
 ## DbgWaitForSignalTimeoutInSec
 
@@ -45,7 +48,7 @@ Starting in Windows 8, when **VerifierOn** and **DbgBreakOnError** are set to n
 
 This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\DebugMode`.
 
-This value specifies the names of the driver binaries to be loaded in debug mode. To enable debug mode for driver binaries X.DLL, Y.DLL and Z.DLL, for example, this value would be set to *X.DLL\\0Y.DLL\\0Z.DLL\\0\\0*.
+This value specifies the names of the driver binaries to be loaded in debug mode. To enable debug mode for driver binaries X.DLL, Y.DLL and Z.DLL, for example, this value would be set to `X.DLL\0Y.DLL\0Z.DLL\0\0`.
 
 ## DebugModeFlags
 
@@ -98,7 +101,7 @@ The reflector also breaks into the kernel debugger if there is an unexpected ter
 
 ## HostProcessDbgBreakOnDriverLoad (driver-specific)
 
-*REG\_DWORD*, UMDF-only, UMDF 2.31 and later*
+*REG\_DWORD*, UMDF-only, UMDF version 2.31 and later
 
 This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\<service name>\Parameters\Wdf`.
 
