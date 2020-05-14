@@ -32,7 +32,10 @@ If set to a nonzero value, the framework breaks into the debugger when a driver 
 
 *REG\_DWORD*
 
-For a KMDF driver, set this value under the `HKLM\SYSTEM\CurrentControlSet\Control\Wdf\Kmdf\Diagnostics` registry key. For a UMDF driver, set this value under the `HKLM\System\CurrentControlSet\Control\Wdf\Umdf\Diagnostics` registry key. The driver might need to create the optional **Diagnostics** subkey.
+* For a KMDF driver, set this value under the `HKLM\SYSTEM\CurrentControlSet\Control\Wdf\Kmdf\Diagnostics` registry key.
+* For a UMDF driver, set this value under the `HKLM\System\CurrentControlSet\Control\Wdf\Umdf\Diagnostics` registry key.
+
+The driver might need to create the optional **Diagnostics** subkey.
 
 If set to a nonzero value, the framework's loader sends a variety of messages to the kernel debugger while it is loading a driver and binding it to a version of the framework library, or while it is unloading a driver.
 
