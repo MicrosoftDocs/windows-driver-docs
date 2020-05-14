@@ -32,9 +32,9 @@ If set to a nonzero value, the framework breaks into the debugger when a driver 
 
 *REG\_DWORD*
 
-If set to a nonzero value, the framework's loader sends a variety of messages to the kernel debugger while it is loading a driver and binding it to a version of the framework library, or while it is unloading a driver.
-
 For a KMDF driver, set this value under the `HKLM\SYSTEM\CurrentControlSet\Control\Wdf\Kmdf\Diagnostics` registry key. For a UMDF driver, set this value under the `HKLM\System\CurrentControlSet\Control\Wdf\Umdf\Diagnostics` registry key. The driver might need to create the optional **Diagnostics** subkey.
+
+If set to a nonzero value, the framework's loader sends a variety of messages to the kernel debugger while it is loading a driver and binding it to a version of the framework library, or while it is unloading a driver.
 
 ## DbgWaitForSignalTimeoutInSec
 
@@ -101,7 +101,7 @@ The reflector also breaks into the kernel debugger if there is an unexpected ter
 
 ## HostProcessDbgBreakOnDriverLoad (driver-specific)
 
-*REG\_DWORD*, UMDF-only, UMDF version 2.31 and later
+*REG\_DWORD*, UMDF-only, works with any UMDF 1.x/2.x driver running on a target computer with [UMDF version 2.31](umdf-version-history.md) or later
 
 This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\<service name>\Parameters\Wdf`.
 
