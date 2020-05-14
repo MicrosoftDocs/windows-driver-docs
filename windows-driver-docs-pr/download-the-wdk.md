@@ -42,24 +42,26 @@ If you already have Visual Studio 2019 installed, you can install the **Windows 
 
 WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Stuido for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64 require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
 
-To find the latest version of MSVC installed on your system, in **Visual Stuido Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version avaliable. 
+To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version available. 
 
-With this information (v14.xx), go to **Individual components** and search for **v14.xx**. This will return the tool sets for all architectures , including Spectre mitigated libs. Select the driver architecture you are developing for. 
+With this information (v14.xx), go to **Individual components** and search for **v14.xx**. This will return the tool sets for all architectures, including Spectre mitigated libs. Select the driver architecture you are developing for. 
 
-Example, searching for v14.25 will return the following:</br>
+For example, searching for v14.25 returns the following:
 
-MSVC v142 - VS 2019 C++ ARM build tools (v14.25)</br>
-MSVC v142 - VS 2019 C++ ARM Spectre-mitigated libs (v14.25)</br>
-MSVC v142 - VS 2019 C++ ARM64 build tools (v14.25)</br>
-MSVC v142 - VS 2019 C++ ARM64 Spectre-mitigated libs (v14.25)</br>
-MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.25)</br>
-MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.25)</br>
+```
+MSVC v142 - VS 2019 C++ ARM build tools (v14.25)
+MSVC v142 - VS 2019 C++ ARM Spectre-mitigated libs (v14.25)
+MSVC v142 - VS 2019 C++ ARM64 build tools (v14.25)
+MSVC v142 - VS 2019 C++ ARM64 Spectre-mitigated libs (v14.25)
+MSVC v142 - VS 2019 C++ x64/x86 build tools (v14.25)
+MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.25)
+```
 
 ### ![download icon](images/download-install.png) Step 2: Install WDK for Windows 10, version 2004
 
-* [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)d
+* [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
 
-The WDK installation will by default install the WDK Visual Studio extension. 
+The WDK Visual Studio extension is included in the default WDK installation. 
 
 ## Enterprise WDK (EWDK) for Windows 10, version 2004
 
