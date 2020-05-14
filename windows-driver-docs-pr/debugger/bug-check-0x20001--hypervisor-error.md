@@ -33,4 +33,4 @@ The HYPERVISOR\_ERROR bug check has a value of 0x00020001. This indicates that t
 
 ## Resolution 
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very in determining the root cause.
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause.
