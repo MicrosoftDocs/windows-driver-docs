@@ -2,7 +2,7 @@
 title: NVMe Features Supported by StorNVMe
 description: NVMe Features Supported by StorNVMe
 ms.assetid: 1c6f78d7-ea00-44d4-95d2-62f5a1c7d568
-ms.date: 12/12/2019
+ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---
 
@@ -15,3 +15,5 @@ ms.localizationpriority: medium
 - [StorNVMe Feature Support](stornvme-feature-support.md)
 
 - [StorNVMe SCSI Translation Support](stornvme-scsi-translation-support.md)
+
+See [Working with NVMe drives](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.
