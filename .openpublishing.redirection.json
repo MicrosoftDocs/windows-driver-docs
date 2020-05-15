@@ -23,7 +23,7 @@
 
                         {
                              "source_path":  "windows-driver-docs-pr/develop/validating-universal-drivers.md",
-                             "redirect_URL":  "/windows-hardware/drivers/develop/validating-windows-driver",
+                             "redirect_URL":  "https://docs.microsoft.com/windows-hardware/drivers/develop/validating-windows-drivers",
                              "redirect_document_id":  true
                          },
                          {
