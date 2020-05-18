@@ -94,6 +94,10 @@ See[DXGKDDI_SAVEMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/
 
 ## WDDM 2.5
 
+### Tracked Workloads
+
+Tracked Workloads is an experimental feature that provides more control over the trade-off between quicker processor execution vs. lower power consumption, and is not available until further notice. The implementation was removed from Windows 10, version 2003; and deprecated from earlier OS versions as part of a security fix.
+
 ### Content changes
 
 | Topic | Date | Description |
