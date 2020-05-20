@@ -119,7 +119,7 @@ Specifies the baud rate to use. This parameter is optional. Valid values for *ba
 
 ### Example
 
-The following command configures the target computer to use a serial connection for debugging. The command also specifies that the debugging connection will use COM2 and a baud rate of 115,200. 
+The following command configures the target computer to use a serial connection for debugging. The command also specifies that the debugging connection will use COM1 and a baud rate of 115,200. 
 
 ``` console
 bcdedit /dbgsettings serial debugport:1 baudrate:115200
