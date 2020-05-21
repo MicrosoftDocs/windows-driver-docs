@@ -8,7 +8,6 @@ ms.localizationpriority: medium
 
 # PnPUtil
 
-
 PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform actions on [driver packages](../install/driver-packages.md).  Some examples include:
 
 -   Adds a driver package to the [driver store](../install/driver-store.md).
@@ -30,9 +29,3 @@ PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Win
 
 > [!NOTE]
 > PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the [Driver Install Frameworks (DIFx)](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines) tools to create and customize the installation of driver packages.
-
-This section includes the following:
-
-[PnPUtil Command Syntax](pnputil-command-syntax.md)
-
-[PnPUtil Examples](pnputil-examples.md)
