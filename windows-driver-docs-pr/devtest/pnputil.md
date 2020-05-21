@@ -10,22 +10,20 @@ ms.localizationpriority: medium
 
 PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform actions on [driver packages](../install/driver-packages.md).  Some examples include:
 
--   Adds a driver package to the [driver store](../install/driver-store.md).
+- Adds a driver package to the [driver store](../install/driver-store.md).
 
--   Installs a driver package on the computer.
+- Installs a driver package on the computer.
 
--   Deletes a driver package from the driver store.
+- Deletes a driver package from the driver store.
 
--   Enumerates the driver packages that are currently in the driver store. Only driver packages that are not in-box packages are listed. An *in-box* driver package is one which is included in the default installation of Windows or its service packs.
+- Enumerates the driver packages that are currently in the driver store. Only driver packages that are not in-box packages are listed. An *in-box* driver package is one which is included in the default installation of Windows or its service packs.
 
-See [PnPUtil Command Syntax](pnputil-command-syntax.md) for a list of all supported actions.
+## Where can I download PnPUtil?
 
-**Where can I download PnPUtil?**
-
-PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the `%windir%\system32` directory). There isn't a separate PnPUtil download package.
+PnPUtil is included in every version of Windows, starting with Windows Vista (in the `%windir%\system32` directory). There isn't a separate PnPUtil download package.
 
 - Open a **Command Prompt** window (**Run as administrator**).
 - Type `pnputil /?` to view command options. See [**PnPUtil Command Syntax**](pnputil-command-syntax.md) for more information.
 
 > [!NOTE]
-> PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the [Driver Install Frameworks (DIFx)](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines) tools to create and customize the installation of driver packages.
+> PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the [Driver Install Frameworks (DIFx)](../install/difx-guidelines.md) tools to create and customize the installation of driver packages.
