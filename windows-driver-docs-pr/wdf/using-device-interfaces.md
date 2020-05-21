@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 
 
-A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 **CreateFile** function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about **SetupDi** functions, see [Using Device Interface Functions](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-installation-functions).
+A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 **CreateFile** function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about **SetupDi** functions, see [Using Device Installation Functions](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-installation-functions).
 
-Each device interface belongs to a *device interface class*. For example, a driver stack for a CD-ROM device might provide an interface that belongs to the GUID\_DEVINTERFACE\_CDROM class. One of the CD-ROM device's drivers would register an instance of the GUID\_DEVINTERFACE\_CDROM class to inform the system and applications that a CD-ROM device is available. For more information about device interface classes, see [Introduction to Device Interfaces](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-interface-classes).
+Each device interface belongs to a *device interface class*. For example, a driver stack for a CD-ROM device might provide an interface that belongs to the GUID\_DEVINTERFACE\_CDROM class. One of the CD-ROM device's drivers would register an instance of the GUID\_DEVINTERFACE\_CDROM class to inform the system and applications that a CD-ROM device is available. For more information about device interface classes, see [Overview of Device Interface Classes](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-interface-classes).
 
 ### Registering a Device Interface
 
