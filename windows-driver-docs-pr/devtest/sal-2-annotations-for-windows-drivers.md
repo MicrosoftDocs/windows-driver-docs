@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The Microsoft Source Code Annotation Language (SAL) includes annotations that are specific to the analysis of Windows drivers and the related kernel code. The annotation language provides a way of describing properties of functions, parameters, return values, structures, and structure fields. Annotations are like comments that you add to your code and are ignored by the compiler but are used by the static analysis tools. The use of annotations helps improve developer effectiveness, helps improve the accuracy of the results from static analysis, and allows the tools to better determine whether a particular bug exists. The driver annotations are not intended for use in non-driver or non-kernel-related code. The driver annotations are defined in Driverspecs.h.
 
-**Note**  Windows 8 introduces SAL 2.0, which replaces SAL 1.0. For information about SAL 2.0, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=247283). SAL 2.0 replaces SAL 1.0. SAL 2.0 should be used with the Windows Driver Kit (WDK) 8 for Windows 8. If you need information about the SAL 1.0 for drivers, refer to the documentation that ships with the WDK for Windows 7.
+**Note**  Windows 8 introduces SAL 2.0, which replaces SAL 1.0. For information about SAL 2.0, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://docs.microsoft.com/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects). SAL 2.0 replaces SAL 1.0. SAL 2.0 should be used with the Windows Driver Kit (WDK) 8 for Windows 8. If you need information about the SAL 1.0 for drivers, refer to the documentation that ships with the WDK for Windows 7.
 
  
 
@@ -90,7 +90,7 @@ The Microsoft Source Code Annotation Language (SAL) includes annotations that ar
 ## <span id="related_topics"></span>Related topics
 
 
-[Using SAL Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=247283)
+[Using SAL Annotations to Reduce C/C++ Code Defects](https://docs.microsoft.com/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)
 
  
 

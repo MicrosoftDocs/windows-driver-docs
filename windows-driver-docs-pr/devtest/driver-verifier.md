@@ -39,7 +39,7 @@ Run Driver Verifier throughout development and testing of your driver. More spec
 
 -   For troubleshooting and debugging test failures and computer crashes.
 
--   To monitor behavior when you deploy a driver for testing using the WDK, Visual Studio, and the tests from the [Windows Hardware Lab Kit](https://go.microsoft.com/fwlink/p/?linkid=254893) (Windows HLK) or [Windows Hardware Certification Kit](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8.1). For more information about testing drivers, see [Testing a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/testing-a-driver).
+-   To monitor behavior when you deploy a driver for testing using the WDK, Visual Studio, and the tests from the [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/) (Windows HLK) or [Windows Hardware Certification Kit](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8.1). For more information about testing drivers, see [Testing a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/testing-a-driver).
 
 
 ## How to start Driver Verifier

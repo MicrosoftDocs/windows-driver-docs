@@ -25,9 +25,9 @@ By default, TraceView.exe is located in the tools\\*&lt;Platform&gt;* subdirecto
 
 ### <span id="understand_event_tracing"></span><span id="UNDERSTAND_EVENT_TRACING"></span>Understand Event Tracing
 
-Before you use TraceView, you should be familiar with *event tracing*. For more information, see [WPP Software Tracing](wpp-software-tracing.md) and the "[Event Tracing](https://go.microsoft.com/fwlink/p/?linkid=60384)" topic in the Microsoft Windows SDK.
+Before you use TraceView, you should be familiar with *event tracing*. For more information, see [WPP Software Tracing](wpp-software-tracing.md) and [Event Tracing for Windows](https://docs.microsoft.com/windows-hardware/test/wpt/event-tracing-for-windows).
 
-Also, examine Tracedrv (Tracedrv.c), a sample driver instrumented with WPP software tracing. The [Tracedrv](https://go.microsoft.com/fwlink/p/?LinkId=617726) sample is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507 ) repository on GitHub. Build the Tracedrv driver and its engine, Tracectl (Tracectl.c), and then use the driver and engine to experiment with TraceView.
+Also, examine Tracedrv (Tracedrv.c), a sample driver instrumented with WPP software tracing. The [Tracedrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver) sample is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub. Build the Tracedrv driver and its engine, Tracectl (Tracectl.c), and then use the driver and engine to experiment with TraceView.
 
 ### <span id="know_the_trace_provider"></span><span id="KNOW_THE_TRACE_PROVIDER"></span>Know the Trace Provider
 

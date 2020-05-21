@@ -203,7 +203,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
 SFCDisable:REG_DWORD:2
 ```
 
-Setting **SFCDisable** to a value of 2 disables WFP for the next boot (only). A value of 0 (the default) enables WFP. For a description of the features of WFP, see the Microsoft Windows SDK. For more information about the WFP registry settings, see [Microsoft Knowledge Base Article Q222473](https://go.microsoft.com/fwlink/p/?linkid=38360).
+Setting **SFCDisable** to a value of 2 disables WFP for the next boot (only). A value of 0 (the default) enables WFP. For a description of the features of WFP, see the Microsoft Windows SDK.
 
  
 

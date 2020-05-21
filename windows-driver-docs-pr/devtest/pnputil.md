@@ -19,7 +19,7 @@ PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform 
 
 -   Enumerates the driver packages that are currently in the driver store. Only driver packages that are not in-box packages are listed. An *in-box* driver package is one which is included in the default installation of Windows or its service packs.
 
-See [PnP Command Syntax](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-command-syntax) for a list of all supported actions.
+See [PnP Command Syntax](https://docs.microsoft.com/windows-hardware/drivers/devtest/pnputil-command-syntax) for a list of all supported actions.
 
 <table>
 <colgroup>

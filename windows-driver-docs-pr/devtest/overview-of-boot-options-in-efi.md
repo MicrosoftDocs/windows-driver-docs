@@ -133,4 +133,4 @@ In addition, there is an important element of an EFI boot entry that Bootcfg doe
 > [!NOTE] 
 > The **Boot entry ID** field in Bootcfg and the boot entry number in Nvrboot do not display the EFI boot entry ID. The Bootcfg and Nvrboot IDs are line numbers that represent the order of the boot entry in the **Boot Entries** section and change when the entries are reordered.
 
-For a detailed description of boot options on Itanium-based systems, see the Extensible Firmware Interface Specification. You can download a copy of the specification from the [Intel Extensible Firmware Interface](https://go.microsoft.com/fwlink/p/?linkid=10596) website.
+For a detailed description of boot options on Itanium-based systems, see the Extensible Firmware Interface Specification. You can download a copy of the specification from the [Intel Extensible Firmware Interface](https://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/efi-homepage-general-technology.html) website.
