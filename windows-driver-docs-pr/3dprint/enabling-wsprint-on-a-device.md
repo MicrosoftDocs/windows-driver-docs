@@ -39,43 +39,43 @@ The following steps are a more detailed description of WSPrint 2.0 interactions:
 
 1. Probe – Network Discovery bootstrap
 
-2. Resolve – Network Discovery bootstrap
+1. Resolve – Network Discovery bootstrap
 
-3. Get – Printer MetaData Query
+1. Get – Printer MetaData Query
 
-4. GetPrinterElements – Printer MetaData Query
+1. GetPrinterElements – Printer MetaData Query
 
-5. Subscribe – Event model registration
+1. Subscribe – Event model registration
 
-6. Unsubscribe – Event unregistration
+1. Unsubscribe – Event unregistration
 
-7. SetEventRate – Event rate
+1. SetEventRate – Event rate
 
-8. Renew – Renew
+1. Renew – Renew
 
-9. PrepareToPrint – Print initialization
+1. PrepareToPrint – Print initialization
 
-10. CreatePrintJob – Print submission
+1. CreatePrintJob – Print submission
 
-11. CreatePrintJob2 – Print submission
+1. CreatePrintJob2 – Print submission
 
-12. GetPrintDeviceResources – Allows retrieval of localized resources in ResX (Multi Part Outgoing Response)
+1. GetPrintDeviceResources – Allows retrieval of localized resources in ResX (Multi Part Outgoing Response)
 
-13. GetPrintDeviceCapabilities  - Allows retrieval of Print Device Capabilities (Multi Part Outgoing Response)
+1. GetPrintDeviceCapabilities  - Allows retrieval of Print Device Capabilities (Multi Part Outgoing Response)
 
-14. GetBidiSchemaExtensions - Allows retrieval of Bidi Schema extensions (Multi Part Outgoing Response)
+1. GetBidiSchemaExtensions - Allows retrieval of Bidi Schema extensions (Multi Part Outgoing Response)
 
-15. CancelJob – Job cancellation
+1. CancelJob – Job cancellation
 
-16. GetActiveJobs – Job progress
+1. GetActiveJobs – Job progress
 
-17. GetJobHistory – Job history
+1. GetJobHistory – Job history
 
-18. AddDocument – Add document to current print
+1. AddDocument – Add document to current print
 
-19. GetJobElements – Get job statuses
+1. GetJobElements – Get job statuses
 
-20. SendDocument – Actual print data (Multi Part Incoming Request)
+1. SendDocument – Actual print data (Multi Part Incoming Request)
 
 For more information on WSPrint 2.0, see the following resources:
 
