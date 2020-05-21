@@ -36,7 +36,9 @@ ms.localizationpriority: medium
 
 - [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)
 
-Describes the behavior and usage for the `MemoryOverwriteRequestControlLock` UEFI variable, revision 2.
+## Overview
+
+THis topic describes the behavior and usage for the `MemoryOverwriteRequestControlLock` UEFI variable, revision 2.
 
 To prevent advanced memory attacks, the existing system BIOS security mitigation **MemoryOverwriteRequestControl** is improved to support locking to defend against new threats.  The threat model is expanded to include the host OS kernel as an adversary, thus ACPI and UEFI Runtime Services executing at kernel privilege level are not trusted.  Similar to Secure Boot implementations, MorLock should be implemented in a privileged firmware execution context that cannot be tampered by the host OS kernel (for example, System Management Mode, TrustZone, BMC, and so on).  The interface is built upon UEFI variable services, which are described in the UEFI Specification version 2.5, Section 7.2 named "Variable Services".
 
@@ -156,7 +158,7 @@ These flowcharts show the expected behavior of your implementation:
 
 [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 (PDF download)](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf)  
 
-[Protecting BitLocker from Cold Attacks (and other threats)]https://docs.microsoft.com/archive/blogs/si_team/protecting-bitlocker-from-cold-attacks-and-other-threats)  
+[Protecting BitLocker from Cold Attacks (and other threats)](https://docs.microsoft.com/archive/blogs/si_team/protecting-bitlocker-from-cold-attacks-and-other-threats)  
 
 [A Tour Beyond BIOS with the UEFI TPM2 Support in EDKII](https://github.com/tianocore/edk2-platforms/blob/devel-MinPlatform/Platform/Intel/MinPlatformPkg/Docs/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II%20-%20V2.pdf)
 

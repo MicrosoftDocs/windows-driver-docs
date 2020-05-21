@@ -108,18 +108,22 @@ Typically, there are hardware dependencies between devices on a particular platf
 
 1. **OpRegion dependencies**. For ASL control methods that use OpRegions to perform I/O, dependencies are not implicitly known by the operating system because they are only determined during control method evaluation. This issue is particularly applicable to GeneralPurposeIO and GenericSerialBus OpRegions in which Plug and Play drivers provide access to the region. To mitigate this issue, ACPI defines the OpRegion Dependency (\_DEP) object. \_DEP should be used in any device namespace in which an OpRegion (HW resource) is referenced by a control method, and neither 1 nor 2 above already applies for the referenced OpRegion's connection resource. For more information, see section 6.5.8, "\_DEP (Operation Region Dependencies)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-There can also be software dependencies between device drivers. These dependencies must also be described. For more information, see the following resources:
+There can also be software dependencies between device drivers. These dependencies must also be described. 
 
-- For driver-load-order dependencies, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
+For more information, see the following resources:
+
+- For driver-load-order dependencies, see:
+
+  - [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
 
 - For power-relations dependencies, see:
 
-  - [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) routine (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
+  - [IoInvalidateDeviceRelations](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
   
-  - [**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
+  - [IRP\_MN\_QUERY\_DEVICE\_RELATIONS](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
 
   - [Enumerating the Devices on a Bus](https://docs.microsoft.com/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus)
 
   - [Dynamic Enumeration](https://docs.microsoft.com/windows-hardware/drivers/wdf/dynamic-enumeration)
 
-  - [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method
+  - [WdfDeviceInitSetPnpPowerEventCallbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)
