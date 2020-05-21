@@ -34,7 +34,8 @@ Device identifiers should be used for INF matching only, and should never be par
 
 The minimum requirement for identifying a device in ACPI is the Hardware ID (\_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](https://docs.microsoft.com/windows-hardware/drivers/install/plug-and-play-id---pnpid-request).
 
-**Note**  ACPI 5.0 also supports the use of PCI-assigned vendor IDs in \_HID and other identification objects, so you might not need to get a vendor ID from Microsoft. For more information about hardware identification requirements, see section 6.1.5, "\_HID (Hardware ID)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
+> [!NOTE]
+> ACPI 5.0 also supports the use of PCI-assigned vendor IDs in \_HID and other identification objects, so you might not need to get a vendor ID from Microsoft. For more information about hardware identification requirements, see section 6.1.5, "\_HID (Hardware ID)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ### Compatible ID (\_CID)
 
@@ -108,13 +109,11 @@ Typically, there are hardware dependencies between devices on a particular platf
 
 1. **OpRegion dependencies**. For ASL control methods that use OpRegions to perform I/O, dependencies are not implicitly known by the operating system because they are only determined during control method evaluation. This issue is particularly applicable to GeneralPurposeIO and GenericSerialBus OpRegions in which Plug and Play drivers provide access to the region. To mitigate this issue, ACPI defines the OpRegion Dependency (\_DEP) object. \_DEP should be used in any device namespace in which an OpRegion (HW resource) is referenced by a control method, and neither 1 nor 2 above already applies for the referenced OpRegion's connection resource. For more information, see section 6.5.8, "\_DEP (Operation Region Dependencies)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-There can also be software dependencies between device drivers. These dependencies must also be described. 
+There can also be software dependencies between device drivers. These dependencies must also be described.
 
 For more information, see the following resources:
 
-- For driver-load-order dependencies, see:
-
-  - [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
+- For driver-load-order dependencies, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
 
 - For power-relations dependencies, see:
 
@@ -122,8 +121,8 @@ For more information, see the following resources:
   
   - [IRP\_MN\_QUERY\_DEVICE\_RELATIONS](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
 
+  - [WdfDeviceInitSetPnpPowerEventCallbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)
+
   - [Enumerating the Devices on a Bus](https://docs.microsoft.com/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus)
 
   - [Dynamic Enumeration](https://docs.microsoft.com/windows-hardware/drivers/wdf/dynamic-enumeration)
-
-  - [WdfDeviceInitSetPnpPowerEventCallbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)

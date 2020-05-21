@@ -38,7 +38,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-THis topic describes the behavior and usage for the `MemoryOverwriteRequestControlLock` UEFI variable, revision 2.
+This topic describes the behavior and usage for the `MemoryOverwriteRequestControlLock` UEFI variable, revision 2.
 
 To prevent advanced memory attacks, the existing system BIOS security mitigation **MemoryOverwriteRequestControl** is improved to support locking to defend against new threats.  The threat model is expanded to include the host OS kernel as an adversary, thus ACPI and UEFI Runtime Services executing at kernel privilege level are not trusted.  Similar to Secure Boot implementations, MorLock should be implemented in a privileged firmware execution context that cannot be tampered by the host OS kernel (for example, System Management Mode, TrustZone, BMC, and so on).  The interface is built upon UEFI variable services, which are described in the UEFI Specification version 2.5, Section 7.2 named "Variable Services".
 
