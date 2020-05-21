@@ -21,47 +21,18 @@ PnPUtil (PnPUtil.exe) is a command line tool that lets an administrator perform 
 
 See [PnPUtil Command Syntax](pnputil-command-syntax.md) for a list of all supported actions.
 
+**Where can I download PnPUtil?**
 
+PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the `%windir%\system32` directory). There isn't a separate PnPUtil download package.
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Where can I download PnPUtil?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the %windir%\system32 directory). There isn't a separate PnPUtil download package.</p>
-<ul>
-<li>Open a <strong>Command Prompt</strong> window (<strong>Run as administrator</strong>).</li>
-<li>Type <strong>pnputil /?</strong> to view command options. See <a href="pnputil-command-syntax.md" data-raw-source="[&lt;strong&gt;PnPUtil Command Syntax&lt;/strong&gt;](pnputil-command-syntax.md)"><strong>PnPUtil Command Syntax</strong></a> for more information.</li>
-</ul>
-<div class="alert">
-<strong>Note</strong>  PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines" data-raw-source="[Driver Install Frameworks (DIFx)](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines)">Driver Install Frameworks (DIFx)</a> tools to create and customize the installation of driver packages.
-</div>
-<div>
- 
-</div></td>
-</tr>
-</tbody>
-</table>
+- Open a **Command Prompt** window (**Run as administrator**).
+- Type `pnputil /?` to view command options. See [**PnPUtil Command Syntax**](pnputil-command-syntax.md) for more information.
 
- 
+> [!NOTE]
+> PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the [Driver Install Frameworks (DIFx)](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines) tools to create and customize the installation of driver packages.
 
 This section includes the following:
 
 [PnPUtil Command Syntax](pnputil-command-syntax.md)
 
 [PnPUtil Examples](pnputil-examples.md)
-
- 
-
- 
-
-
-
-
-
