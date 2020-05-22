@@ -2,7 +2,7 @@
 title: Percent of machines where the driver install process completes successfully
 description: The measure aggregates telemetry from a 30-day sliding window into a Percentage of Machines that have Successfully Installed the Driver
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---
 
@@ -21,6 +21,8 @@ When a driver fails to install correctly, the targeted component can lose functi
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|>= 95% of machines install the driver successfully|
+|**Cohort-enabled**|Yes|
+|**Minimum population per cohort**|500 machines|
 |**Measure ID**|10042840|
 
 ## Calculation
