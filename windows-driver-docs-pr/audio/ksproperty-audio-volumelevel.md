@@ -63,7 +63,7 @@ The property value is of type LONG and specifies the volume level of a channel i
 
 +2147483647 is +32767.99998474 decibels (gain).
 
-> [!Note]
+> [!NOTE]
 > The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
 
  

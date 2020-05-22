@@ -41,8 +41,8 @@ Members
 **ChannelMapping**  
 Specifies the mapping of the audio channels to the corresponding speaker positions. **ChannelMapping** is a bitmask of the KSAUDIO\_SPEAKER\_*XXX* flags (for example, SPEAKER\_FRONT\_LEFT | SPEAKER\_FRONT\_RIGHT), which are defined in the header file Ksmedia.h. **ChannelMapping** should be nonzero only for analog rendering pins. For capture pins or for digital rendering pins, set this member to 0.
 
-&gt; \[!Note\]
-&gt;  Devicetopology.h originally defined **ChannelMapping** as an enumeration of type **EChannelMapping**. The **EChannelMapping** enumeration has since been deprecated and is no longer used in Windows Vista and later versions of the Windows operating systems.
+> [!NOTE]
+> Devicetopology.h originally defined **ChannelMapping** as an enumeration of type **EChannelMapping**. The **EChannelMapping** enumeration has since been deprecated and is no longer used in Windows Vista and later versions of the Windows operating systems.
 
  
 
