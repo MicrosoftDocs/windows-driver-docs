@@ -55,7 +55,7 @@ To create the IPV6ADDR complex data type, add the following statements to the Lo
     </tbody>
     </table>
 
-    This statement defines the helper macro that is used to format the length/address pair of the IPV6 argument when it is passed to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function.
+    This statement defines the helper macro that is used to format the length/address pair of the IPV6 argument when it is passed to the [TraceMessage](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-tracemessage) function.
 
 In Visual Studio, open the properties page for your project. Under **WPP Tracing**, **File Options**, specify LocalWpp.ini as the **Additional Configuration file**. See [WPP Preprocessor](wpp-preprocessor.md) for more information.
 
@@ -138,7 +138,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </tbody>
     </table>
 
-    This statement defines the helper macro that is used to format the length/address pairs of the variable-length buffer argument when it is passed to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function.
+    This statement defines the helper macro that is used to format the length/address pairs of the variable-length buffer argument when it is passed to the [TraceMessage](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-tracemessage) function.
 
     Variable-length arguments require two length/address pairs. As a result, the WPP\_LOGHEXDUMP macro defines two calls to WPP\_LOGPAIR in the following way:
 

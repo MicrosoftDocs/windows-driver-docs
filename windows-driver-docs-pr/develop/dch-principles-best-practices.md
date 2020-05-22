@@ -62,6 +62,6 @@ To create a driver package that follows DCH design principles, follow these step
    
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF. You can update an extension INF independently from the base driver package to make it more robust and serviceable. For more information, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
 *  If you want to provide an application that works with your device, include a UWP app. For more information, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can preload such an app by using [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows). Or, users can manually download the app from the Microsoft Store.
-*  In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), set the destination directories to [dirid 13](../install/using-dirids) to make the driver run from the [driver store](driver-isolation.md#run-from-driver-store). This setting won't work for some devices.
+*  In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), set the destination directories to [dirid 13](../install/using-dirids.md) to make the driver run from the [driver store](driver-isolation.md#run-from-driver-store). This setting won't work for some devices.
 
 

@@ -28,6 +28,14 @@ For information about how to build, install, deploy, and debug a Windows Driver,
 
 WHEA includes a new interface (v2). For info about how to register as an error source and report errors, see [Using WHEA on Windows 10](whea/using-whea-on-windows-10.md).
 
+### Display and Graphics Drivers
+
+Several new and enhanced display and graphics driver features are available in Windows 10, version 2004, including D3D12 mesh shader support, sampler support, raytracing extensions, video motion estimation, and video protected resources support. See [What's New for Windows 10 Display and Graphics Drivers](https://docs.microsoft.com/windows-hardware/drivers/display/what-s-new-for-windows-10-display-and-graphics-drivers) for more details about these new features.
+
+### Storage Drivers
+
+A storage miniport driver can now get and set more information about a device's internal state, including the ability to reset a device. See [**IOCTL_STORAGE_GET_DEVICE_INTERNAL_LOG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_get_device_internal_log) and [**StorPortHardwareReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storporthardwarereset) as good starting points.
+
 ## Related Topics
 
 For information on what was new for drivers in past Windows releases, see the following pages:

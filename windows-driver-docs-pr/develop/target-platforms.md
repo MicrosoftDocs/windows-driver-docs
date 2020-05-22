@@ -20,7 +20,8 @@ Here are the values you might see for **Target Platform**, and what they mean:
 
 |Term|Description|
 |--- |--- |
-|Universal|A driver binary in a Windows Driver can call this device driver interface (DDI).
+|Universal|A driver binary in a Windows Driver can call this device driver interface (DDI). For more info, see [Getting Started with Windows drivers](getting-started-with-windows-drivers.md).|
+|Desktop|A driver binary for Windows 10 for desktop editions or Windows Server 2016 can call this DDI.|
 
 A Windows Driver runs on the following Universal Windows Platform (UWP)-based editions of Windows 10:
 
@@ -28,9 +29,5 @@ A Windows Driver runs on the following Universal Windows Platform (UWP)-based ed
 *   Windows 10 in S-Mode
 *   Windows 10 IoT Core
 *   Windows Server 2016
-
-For more info, see [Getting Started with Windows drivers](getting-started-with-windows-drivers.md).|
-|Desktop|A driver binary for Windows 10 for desktop editions or Windows Server 2016 can call this DDI.|
-
 
 

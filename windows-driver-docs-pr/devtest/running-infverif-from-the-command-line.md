@@ -62,7 +62,7 @@ For examples of *TargetOSVersion* formatting, see Remarks section of [INF Manufa
 
 *New for Windows 10, version 1703:*  The info option is especially useful to verify INF applicability.  It reports each supported hardware ID along with valid architecture and minimum OS version.  You can use /info and /osver together to validate an INF's applicability across OS versions and architectures.
 
-*New for Windows 10, version 1809:*  If you are developing a *Windows Driver*, use `infverif /w` (ideally with `/v`) to determine compatability with the **declarative (D)** principle of [DCH Design Principles](dch-principles-best-practices.md).  The `/w` flag also checks if the INF complies with the [driver package isolation](driver-isolation.md) requirement of [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+*New for Windows 10, version 1809:*  If you are developing a *Windows Driver*, use `infverif /w` (ideally with `/v`) to determine compatability with the **declarative (D)** principle of [DCH Design Principles](../develop/dch-principles-best-practices.md).  The `/w` flag also checks if the INF complies with the [driver package isolation](../develop/driver-isolation.md) requirement of [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
 To validate multiple INF files, provide multiple filenames or use a wildcard:
 

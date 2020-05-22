@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Performance Counters for Windows (PCW) interacts with different components in the system and keeps track of the counter sets (and their instances) that are provided by kernel-mode components. Additionally, PCW tracks service requests from consumers by reviewing the counter sets and returning the requested data.
 
-Kernel-mode PCW providers are installed in the system as Performance Counter Library (PERFLIB) (Version 2 providers), which allows their counters to be browsed, and allows for data collection and instance enumeration. Consumers can query KM PCW providers by using PDH and PERFLIB Version 1 without any modification to the consumer code. For more information, see [Developing with Performance Counters](https://go.microsoft.com/fwlink/p/?linkid=144623).
+Kernel-mode PCW providers are installed in the system as Performance Counter Library (PERFLIB) (Version 2 providers), which allows their counters to be browsed, and allows for data collection and instance enumeration. Consumers can query KM PCW providers by using PDH and PERFLIB Version 1 without any modification to the consumer code. For more information, see [Performance Counters](https://docs.microsoft.com/windows/win32/perfctrs/performance-counters-portal).
 
 Providers running in kernel-mode register their counter sets by using the kernel-mode PCW provider API. Providers can manage the instances of the registered counter sets and use notifications to be informed when various events related to performance counters occur (for example, when consumers add, remove, or collect counters).
 

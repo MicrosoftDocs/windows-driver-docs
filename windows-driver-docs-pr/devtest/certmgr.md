@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # CertMgr
 
 
-CertMgr (Certmgr.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
+CertMgr (Certmgr.exe) is a command-line [CryptoAPI](https://docs.microsoft.com/windows/win32/seccrypto/cryptography-portal) tool that manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
 
 CertMgr supports a large number of switches, but this section describes only those that are relevant to managing [test certificates](https://docs.microsoft.com/windows-hardware/drivers/install/test-certificates) within a certificate store.
 
@@ -75,7 +75,7 @@ Configures CertMgr to display detailed information about certificates, CTLs, and
 
 To use CertMgr, the user must be a member of the Administrators group on the system and run the command from an elevated command prompt.
 
-For a complete list of CertMgr parameters, see the [Certificate Manager Tool](https://go.microsoft.com/fwlink/p/?linkid=70233) website.
+For a complete list of CertMgr parameters, see the [Certificate Manager Tool](https://docs.microsoft.com/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) website.
 
 A 32-bit version of the CertMgr tool is located in the *bin\\i386* folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
 

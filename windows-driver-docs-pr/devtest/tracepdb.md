@@ -37,7 +37,7 @@ You can provide the private PDB symbol file for the trace provider or Tracepdb c
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Tracepdb (Tracepdb.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="https://go.microsoft.com/fwlink/p/?linkid=290798" data-raw-source="[Windows Hardware Downloads](https://go.microsoft.com/fwlink/p/?linkid=290798)">Windows Hardware Downloads</a>.</p>
+<td align="left"><p>Tracepdb (Tracepdb.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
 <p>%WindowsSdkDir%\bin\x64\Tracepdb.exe</p>
 <p>%WindowsSdkDir%\bin\x86\Tracepdb.exe</p>

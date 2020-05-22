@@ -16,11 +16,9 @@ The following verification tools are described in the WDK and recommended for us
 
 ### <span id="as_soon_as_the_code_compiles"></span><span id="AS_SOON_AS_THE_CODE_COMPILES"></span>As soon as the code compiles
 
--   [Code Analysis for Drivers](code-analysis-for-drivers.md) is a static verification tool that runs at compile time. The Windows Driver Kit provides a driver-specific extension to the [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836) in Microsoft Visual Studio Ultimate 2012.
+-   [Code Analysis for Drivers](code-analysis-for-drivers.md) is a static verification tool that runs at compile time. CCode Analysis for Drivers can verify drivers written in C/C++ and managed code. It examines the code in each function of a driver independently, so you can run it as soon as you can build your driver. It runs relatively quickly and uses few resources.
 
-    [Code Analysis for Drivers](code-analysis-for-drivers.md) can verify drivers written in C/C++ and managed code. It examines the code in each function of a driver independently, so you can run it as soon as you can build your driver. It runs relatively quickly and uses few resources.
-
-    The basic features of the [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836) detect general coding errors, such as not checking return values. The driver-specific features detect more subtle driver coding errors, such as leaving uninitialized fields in a copied IRP and failing to restore a changed IRQL by the end of a routine.
+    The basic features of the Code Analysis tool in Visual Studio detect general coding errors, such as not checking return values. The driver-specific features detect more subtle driver coding errors, such as leaving uninitialized fields in a copied IRP and failing to restore a changed IRQL by the end of a routine.
 
 <!-- -->
 
@@ -40,8 +38,7 @@ Use the following dynamic verification tools as soon as the driver is built and 
     -   **Memory leaks.** Driver Verifier tracks memory allocations made by a driver and makes sure the memory is freed before the driver gets unloaded.
     -   **I/O operations that take too much time to complete or to be canceled.** The Driver Verifier can test the driver's logic for responding to STATUS\_PENDING return values from [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
     -   **DDI Compliance Checking.** (Available starting with Windows 8) Driver Verifier applies a set of device driver interface (DDI) rules that check for the proper interaction between a driver and the kernel interface of the operating system. These rules correspond to rules that Static Driver Verifier uses in analyzing driver source code. If Driver Verifier finds an error when DDI Compliance Checking is enabled, run [Static Driver Verifier](static-driver-verifier.md) and select the same rule that caused the error. Static Driver Verifier can help you locate the cause of the defect in the driver source code.
--   [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code. Application Verifier is not included in the WDK, but you can download and install it from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=11573).
-
+-   [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code. 
  
 
  

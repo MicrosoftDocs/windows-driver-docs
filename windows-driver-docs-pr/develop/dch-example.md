@@ -8,15 +8,15 @@ ms.localizationpriority: medium
 
 # DCH-Compliant Driver Package Example
 
-This topic describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies [DCH design principles](dch-design-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.  
+This topic describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies [DCH design principles](dch-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.  
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
-Some portions of the sample may use directives and APIs that are only available on certain versions of Windows 10 and above.  Please refer to [INF Directives](../install/inf-directives) to see what OS version a given directive is supported on.
+Some portions of the sample may use directives and APIs that are only available on certain versions of Windows 10 and above.  Please refer to [INF Directives](../install/inf-directives.md) to see what OS version a given directive is supported on.
 
 ## Prerequisites
 
-Before you read this section, you should become familiar with the [DCH Design Principles](dch-design-principles-best-practices.md).
+Before you read this section, you should become familiar with the [DCH Design Principles](dch-principles-best-practices.md).
 
 ## Overview
 

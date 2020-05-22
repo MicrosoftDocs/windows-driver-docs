@@ -59,8 +59,8 @@ FileReparsePointInformation</td>
 
  
 
-&gt; \[!Note\]
-&gt;   The FileQuotaInformation information class is obsolete. [**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md) should be used instead.
+> [!NOTE]
+> The FileQuotaInformation information class is obsolete. [**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md) should be used instead.
 
  
 

@@ -204,7 +204,7 @@ Use the **-UsePerfCounter** parameter with **-dpcisr**. This parameter, which pr
 Enables kernel events using additional flags for [NT Kernel Logger trace sessions](nt-kernel-logger-trace-session.md), most notably, the flags to enable tracing of DPC, ISR, and context switch events. The **-eflag** option cannot be used with the **–dpcisr** option.
 
 <span id="_______-enableproperty________n______"></span><span id="_______-ENABLEPROPERTY________N______"></span> **-enableproperty** *n*   
-See the description of *EnabledProperties* in the *EnableParameters* struct passed as a parameter to [EnableTraceEx2](https://go.microsoft.com/fwlink/p/?linkid=155061) for descriptions and supported values.
+See the description of *EnabledProperties* in the *EnableParameters* struct passed as a parameter to [EnableTraceEx2](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) for descriptions and supported values.
 
 <span id="-EventIdFilter_____-in-out_n_id1_id2_..."></span><span id="-eventidfilter_____-in-out_n_id1_id2_..."></span><span id="-EVENTIDFILTER_____-IN-OUT_N_ID1_ID2_..."></span>**-EventIdFilter** {**-in**|**-out**} **** *n* **** *id1 id2 ...*  
 Specifies an event id filter with *n* event ids (maximum 64 event ids allowed). This option is available starting in Windows 8.1.
@@ -331,12 +331,12 @@ Specifies the *MatchAllKeyWord* bitmask that restricts the category of events th
 
 This bitmask is optional. If the event's keyword meets the condition specified in the -**matchanykw** option, the provider will write the event only if all of the bits in this mask exist in the event's keyword. This mask is not used if **-matchanykw** is zero.
 
-Tracelog passes the value *n* in the *MatchAllKeyWord* parameter of the [EnableTraceEx2](https://go.microsoft.com/fwlink/p/?linkid=155061) function call. See the Windows SDK for more information.
+Tracelog passes the value *n* in the *MatchAllKeyWord* parameter of the [EnableTraceEx2](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) function call. See the Windows SDK for more information.
 
 <span id="_______-matchanykw________n______"></span><span id="_______-MATCHANYKW________N______"></span> **-matchanykw** *n*   
 Specifies the *MatchAnyKeyword* bitmask that determines the category of events the provider writes.
 
-The provider writes the event if any of the event's keyword bits match any of the bits set in this mask. Tracelog passes the value *n* in the *MatchAnyKeyWord* parameter of the [EnableTraceEx2](https://go.microsoft.com/fwlink/p/?linkid=155061) function call. See the Windows SDK for more information.
+The provider writes the event if any of the event's keyword bits match any of the bits set in this mask. Tracelog passes the value *n* in the *MatchAnyKeyWord* parameter of the [EnableTraceEx2](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) function call. See the Windows SDK for more information.
 
 <span id="_______-min_______NumberOfBuffers______"></span><span id="_______-min_______numberofbuffers______"></span><span id="_______-MIN_______NUMBEROFBUFFERS______"></span> **-min** *NumberOfBuffers*   
 Specifies the number of buffers initially allocated for storing trace messages. When the buffers are full, Tracelog allocates more buffers until it reaches the maximum. The default value is determined by the number of processors, the amount of physical memory, and the operating system in use.
@@ -423,7 +423,7 @@ Specifies sequential logging (at end-of-file, stop recording events) to the even
 Sequential logging is the default, but you can use this parameter to set the maximum file size or to use **-prealloc**. Without this parameter, there is no file size limit.
 
 <span id="_______-sourceguid________SourceGuid______"></span><span id="_______-sourceguid________sourceguid______"></span><span id="_______-SOURCEGUID________SOURCEGUID______"></span> **-sourceguid** *SourceGuid*   
-Specifies the GUID passed as the *SourceId* parameter to the [EnableTraceEx](https://go.microsoft.com/fwlink/p/?linkid=103398) or [EnableTraceEx2](https://go.microsoft.com/fwlink/p/?linkid=155061) functions. The *SourceId* identifies the session that enabled the provider.
+Specifies the GUID passed as the *SourceId* parameter to the [EnableTraceEx](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-enabletraceex) or [EnableTraceEx2](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-enabletraceex2) functions. The *SourceId* identifies the session that enabled the provider.
 
 **-stackwalk** \[*Events*\]  
 Specifies kernel events to collect stacks on. Use **-eflag Help** for a list of kernel events. This parameter is valid only for the NT Kernel Logger or system logger trace sessions.

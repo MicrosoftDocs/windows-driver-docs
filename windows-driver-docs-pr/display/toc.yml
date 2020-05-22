@@ -7,8 +7,10 @@
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
-  - name: "What's new for Windows 10 display drivers (WDDM 2.0 and later)"
-    href: what-s-new-for-windows-threshold-display-drivers--wddm-2-0-.md
+  - name: "What's new for Windows 10 display and graphics drivers"
+    href: what-s-new-for-windows-10-display-and-graphics-drivers.md
+  - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
+    href: what-s-new-for-prior-wddm-2-x-versions.md
   - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
     href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
   - name: "What's new for Windows 8 display drivers (WDDM 1.2)"

@@ -60,8 +60,8 @@ For a Get request, the property value is of type LONG, and it specifies the volu
 
 +2147483647 (0x7FFFFFFF in hexadecimal, or LONG\_MAX) is +32767.99998474 decibels (gain).
 
-&gt; \[!Note\]
-&gt;  The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
+> [!NOTE]
+> The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
 
  
 
