@@ -14,7 +14,7 @@ When a driver package is copied to the driver store, all of its files are copied
 
 The process of copying a driver package to the driver store is called *staging*. A driver package must be *staged* to the driver store before the package can be used to install any devices. As a result, driver staging and device installation are separate operations.
 
-A driver package is staged to the driver store by being verified and validated:
+A driver package is staged to the driver store by being verified and validated.
 
 ## Verifying the driver package integrity
 
