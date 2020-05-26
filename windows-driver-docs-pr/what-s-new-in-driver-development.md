@@ -2,7 +2,7 @@
 title: What's new in driver development
 description: This section describes new features for driver development in Windows 10.
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
-ms.date: 04/28/2020
+ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---
 
@@ -35,6 +35,22 @@ Several new and enhanced display and graphics driver features are available in W
 ### Storage Drivers
 
 A storage miniport driver can now get and set more information about a device's internal state, including the ability to reset a device. See [**IOCTL_STORAGE_GET_DEVICE_INTERNAL_LOG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_get_device_internal_log) and [**StorPortHardwareReset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storporthardwarereset) as good starting points.
+
+### Windows Debugger
+
+#### WinDbg Preview
+
+Updates to [WinDbg Preview](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-using-windbg-preview) to cover new features such as [WinDbg Preview - Timelines](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-timeline-preview). Time travel timelines allows for the visualization of time travel code execution traces.
+
+#### Stop Codes
+
+- Updates to the [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2) topics and the addition of new parameters to topics such as [Bug Check 0x1A: MEMORY_MANAGEMENT](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x1a--memory-management) and [Bug Check 0xC4: DRIVER_VERIFIER_DETECTED_VIOLATION](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation).
+
+- New stop codes such as [Bug Check 0x1DA: HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x1da--hal-blocked-processor-internal-error), [Bug Check 0x1A2: WIN32K_CALLOUT_WATCHDOG_BUGCHECK](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x1a2--win32k-callout-watchdog-bugcheck) and  [Bug Check 0x119: VIDEO_SCHEDULER_INTERNAL_ERROR](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x119---video-scheduler-internal-error).
+
+### Driver Security
+
+Updates to the [Driver security checklist](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/driver-security-checklist) to use the BinSkim tool.
 
 ## Related Topics
 
