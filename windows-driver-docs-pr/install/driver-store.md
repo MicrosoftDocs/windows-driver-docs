@@ -18,7 +18,7 @@ A driver package is staged to the driver store by being verified and validated.
 
 ## Verifying the driver package integrity
 
-Software integrity has become a top priority for Independent Hardware Vendors (IHVs) and Original Equipment Manufactuers (OEMs). Concerned by the increase in malicious software on the Internet, these customers want to be sure that their software has not been tampered with or corrupted.
+Software integrity has become a top priority for Independent Hardware Vendors (IHVs) and Original Equipment Manufacturers (OEMs). Concerned by the increase in malicious software on the Internet, these customers want to be sure that their software has not been tampered with or corrupted.
 
 Before a driver package is copied to the driver store, the operating system first verifies that the digital signature is correct. For more information about digital signatures, see [Driver Signing](driver-signing.md).
 
