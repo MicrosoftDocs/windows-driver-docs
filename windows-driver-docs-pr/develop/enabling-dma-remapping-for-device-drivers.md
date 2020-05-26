@@ -38,7 +38,7 @@ _Note: DMA Remapping is currently not supported for graphics device drivers._
 
 To check if a specific driver is opted into DMA Remapping, check the values corresponding to the DMA Remapping Policy property in the "Details" tab of a device in Device Manager*. There are three possible values for the Policy in Device Manager:
 * 2 = DMA Remapping is currently enforced for the specific device instance
-* 1 = Device driver explicitely opted out of DMA Remapping
+* 1 = Device driver explicitly opted out of DMA Remapping
 * 0 or DMA Remapping Policy property is not visible in the drop down menu = DMA Remapping INF directive is not set or speicified in the INF file. The OS will not enforce DMA Remapping for this device
 
 _*For Windows 10 versions 1803 and 1809, the property field in Device Manager uses a GUID {83da6326-97a6-4088-9453-a1923f573b29}[18]_
