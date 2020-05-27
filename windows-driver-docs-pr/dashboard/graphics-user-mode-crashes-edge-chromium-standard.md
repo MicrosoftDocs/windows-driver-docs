@@ -25,7 +25,7 @@ When users are browsing the internet with Edge Chromium, their graphics componen
 
 ## Calculation
 
-The measure aggregates telemetry from a 7-day sliding window into the Ratio of Crashes in Microsoft Edge Chromium, caused by the graphics drivers, over total runtime in years 
+The measure aggregates telemetry from a 7-day sliding window into the Ratio of Crashes in Microsoft Edge Chromium, caused by the graphics drivers, over total runtime in years
 
 Total Edge Chromium Crashes=Count(Edge Chromium crashes on machines that have the driver)
 
@@ -33,8 +33,6 @@ Total Edge Chromium Runtime=Sum(Edge Chromium runtime for each machine that has 
 
 Runtime in Years=Total Edge Chromium Runtime∗60 (minute)∗ 60 (hour)∗24 (day)∗365 (year)
 
-### Final Calculation 
+### Final Calculation
 
 Crashes in Edge Chromium Normalized by Usage=Total Edge Chromium Crashes / Runtime in Years
-
-

@@ -45,7 +45,7 @@ Examples of Communication and Collaboration applications considered for this mea
 
 ## Calculation
 
-Ratio of Crashes in Communication and Collaboration Applications, caused by the graphics drivers, over total runtime in years 
+Ratio of Crashes in Communication and Collaboration Applications, caused by the graphics drivers, over total runtime in years
 
 Total Crashes in Communication and Collaboration Applications= Count(Crashes in Communication and Collaboration Applications on machines that have the driver)
 
@@ -53,7 +53,6 @@ Total Communication and Collaboration Applications Runtime= Sum(Runtime of Commu
 
 Runtime in Years=Total Runtime of Communication and Collaboration Applications∗60 (minute)∗ 60 (hour)∗24 (day)∗365 (year)
 
-### Final Calculation 
+### Final Calculation
 
 Crashes in Communication and Collaboration Applications normalized by usage in years=Total Crashes in Communication and Collaboration Applications / Runtime in Years
-
