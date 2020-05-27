@@ -15,34 +15,34 @@ The TLV generator/parser XML file is a list of messages, containers (TLVs), and 
   - [Content](#content)
   - [Example](#example)
 - [`<containerRef />`](#containerref-)
-  - [Attributes](#attributes)
-  - [Content](#content)
-  - [Example](#example)
+  - [Attributes](#containerref--attributes)
+  - [Content](#container--contents)
+  - [Example](#containerref--example)
 - [`<containers />`](#containers-)
 - [`<container />`](#container-)
-  - [Attributes](#attributes)
-  - [Contents](#contents)
-  - [Example](#example)
+  - [Attributes](#container--attributes)
+  - [Contents](#container--contents)
+  - [Example](#container--example)
 - [`<groupRef />`](#groupref-)
-  - [Attributes](#attributes)
-  - [Content](#content)
-  - [Examples](#examples)
+  - [Attributes](#groupref--attributes)
+  - [Content](#groupref--content)
+  - [Examples](#groupref--examples)
 - [`<namedType />`](#namedtype-)
-  - [Attributes](#attributes)
-  - [Content](#content)
-  - [Example](#example)
+  - [Attributes](#namedtype--attributes)
+  - [Content](#namedtype--content)
+  - [Example](#namedtype--example)
 - [`<aggregateContainer />`](#aggregatecontainer-)
-  - [Attributes](#attributes)
-  - [Content](#content)
-  - [Example](#example)
+  - [Attributes](#aggregatecontainer--attributes)
+  - [Content](#aggregatecontainer--content)
+  - [Example](#aggregatecontainer--example)
 - [`<propertyGroups />`](#propertygroups-)
 - [Primitive Field Types (`<bool/> <uint8/> <uint16/> <uint32/> <int8/> <int16/> <int32/>`)](#primitive-field-types-bool-uint8-uint16-uint32-int8-int16-int32)
-  - [Attributes](#attributes)
-  - [Contents](#contents)
+  - [Attributes](#attributes-for-primitive-field-types)
+  - [Contents](#contents-for-primitive-field-types)
 - [`<propertyGroup />`](#propertygroup-)
-  - [Attributes](#attributes)
-  - [Contents](#contents)
-  - [Example](#example)
+  - [Attributes](#propertygroup--attributes)
+  - [Contents](#propertygroup--contents)
+  - [Example](#propertygroup--example)
 
 ## `<message />`
 
@@ -256,7 +256,7 @@ None
 
 An individual structure.
 
-### `<propertyGroup />` Attributes 
+### `<propertyGroup />` Attributes
 
 - `name` - ID that is referenced by WDI messages/other containers.
 - `description` – Friendly description of what the property group is for.
