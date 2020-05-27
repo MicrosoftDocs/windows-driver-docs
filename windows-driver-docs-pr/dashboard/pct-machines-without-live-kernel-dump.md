@@ -2,7 +2,7 @@
 title: Percent of machines without a live kernel dump
 description: The measure aggregates telemetry from a 14-day sliding window into a percentage of machines that haven’t experienced a live kernel dump
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---
 
@@ -21,6 +21,8 @@ A live kernel dump (LKD) is the product of a kernel error, where the machine can
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|>= 90% machines did not encounter an LKD|
+|**Cohort-enabled**|Yes|
+|**Minimum population per cohort**|500 machines|
 |**Measure ID**|19888731|
 
 ## Calculation

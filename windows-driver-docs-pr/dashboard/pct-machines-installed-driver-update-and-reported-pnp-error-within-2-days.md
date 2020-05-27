@@ -2,7 +2,7 @@
 title: Percent of machines that installed a driver update and reported a PnP error code within two days of install
 description: The measure aggregates telemetry from a 30-day sliding window into a percentage of machines that successfully installed the driver and then Encountered a PNP error within two days of install
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---
 
@@ -21,6 +21,8 @@ After a successful install, machines can experience post-install PnP errors that
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|<=5% machines encounter a post-install PNP error|
+|**Cohort-enabled**|Yes|
+|**Minimum population per cohort**|500 machines|
 |**Measure ID**|10042784|
 
 ## Calculation

@@ -2,7 +2,7 @@
 title: Percent of machines without a kernel mode crash
 description: The measure aggregates telemetry from a 14-day sliding window into a percentage of machines that haven’t experienced a kernel mode crash 
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---
 
@@ -21,6 +21,8 @@ A Kernel Mode Crash (KMC) is caused by a kernel error which halts the Operating 
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|>= 96% machines did not encounter a kernel mode crash|
+|**Cohort-enabled**|Yes|
+|**Minimum population per cohort**|500 machines|
 |**Measure ID**|19888712|
 
 ## Calculation
