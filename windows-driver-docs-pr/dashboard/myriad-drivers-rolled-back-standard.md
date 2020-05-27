@@ -25,15 +25,12 @@ This measure is tracking whether a driver is rolled back or succeeded by another
 
 ## Calculation
 
-The measure aggregates telemetry from a 7-day sliding window into the Ratio of Driver Rollbacks/​Another Driver Installs per 10,000 devices that installed this driver 
+The measure aggregates telemetry from a 7-day sliding window into the Ratio of Driver Rollbacks/​Another Driver Installs per 10,000 devices that installed this driver
 
 Total Devices That Rolled Back Or Installed Another Driver = Count(devices that rolled back or installed another driver within 2 days from the driver installation)
 
 Total Devices = Count(Devices that installed the driver and used it for 2 days)
 
-
-### Final Calculation 
+### Final Calculation
 
 Ratio of Driver Rollbacks/Another Driver Installs = Total Devices That Rolled Back Or Installed Another Driver * 10,000 / Total Devices
-
-
