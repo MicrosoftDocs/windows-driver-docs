@@ -152,6 +152,10 @@ A driver that does not follow the IRQL rules can cause serious problems during o
 <td align="left"><p><a href="wdm-irqliopassive5.md" data-raw-source="[&lt;strong&gt;IrqlIoPassive5&lt;/strong&gt;](wdm-irqliopassive5.md)"><strong>IrqlIoPassive5</strong></a></p></td>
 <td align="left"><p>The <a href="wdm-irqliopassive5.md" data-raw-source="[&lt;strong&gt;IrqlIoPassive5&lt;/strong&gt;](wdm-irqliopassive5.md)"><strong>IrqlIoPassive5</strong></a> rule specifies that the driver calls specific I/O Manager routines only when it is executing at IRQL = PASSIVE_LEVEL.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p><a href="wdm-irqliortlzwpassive.md" data-raw-source="[&lt;strong&gt;IrqlIoRtlZwPassive&lt;/strong&gt;](wdm-irqliortlzwpassive.md)"><strong>IrqlIoRtlZwPassive</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-irqliortlzwpassive.md" data-raw-source="[&lt;strong&gt;IrqlIoRtlZwPassive&lt;/strong&gt;](wdm-irqliortlzwpassive.md)"><strong>IrqlIoRtlZwPassive</strong></a> rule specifies that the driver calls specific I/O Manager routines only when it is executing at IRQL = PASSIVE_LEVEL.</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p><a href="wdm-irqlkeapclte1.md" data-raw-source="[&lt;strong&gt;IrqlKeApcLte1&lt;/strong&gt;](wdm-irqlkeapclte1.md)"><strong>IrqlKeApcLte1</strong></a></p></td>
 <td align="left"><p>The <a href="wdm-irqlkeapclte1.md" data-raw-source="[&lt;strong&gt;IrqlKeApcLte1&lt;/strong&gt;](wdm-irqlkeapclte1.md)"><strong>IrqlKeApcLte1</strong></a> rule specifies that the driver calls the following kernel routines only when it is executing at IRQL &lt;= APC_LEVEL:</p></td>
@@ -198,6 +202,10 @@ The driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/dd
 <tr class="odd">
 <td align="left"><p><a href="wdm-irqlmmdispatch.md" data-raw-source="[&lt;strong&gt;IrqlMmDispatch&lt;/strong&gt;](wdm-irqlmmdispatch.md)"><strong>IrqlMmDispatch</strong></a></p></td>
 <td align="left"><p>The <a href="wdm-irqlmmdispatch.md" data-raw-source="[&lt;strong&gt;IrqlMmDispatch&lt;/strong&gt;](wdm-irqlmmdispatch.md)"><strong>IrqlMmDispatch</strong></a> rule specifies that the driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreecontiguousmemory" data-raw-source="[&lt;strong&gt;MmFreeContiguousMemory&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreecontiguousmemory)"><strong>MmFreeContiguousMemory</strong></a> only when it is executing at <strong>IRQL &lt;= DISPATCH_LEVEL</strong>.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><a href="wdm-irqlntifsapcpassive.md" data-raw-source="[&lt;strong&gt;IrqlNtifsApcPassive&lt;/strong&gt;](wdm-irqlntifsapcpassive.md)"><strong>IrqlNtifsApcPassive</strong></a></p></td>
+<td align="left"><p>The <a href="wdm-irqlntifsapcpassive.md" data-raw-source="[&lt;strong&gt;IrqlNtifsApcPassive&lt;/strong&gt;](wdm-irqlntifsapcpassive.md)"><strong>IIrqlNtifsApcPassive</strong></a> rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="wdm-irqlobpassive.md" data-raw-source="[&lt;strong&gt;IrqlObPassive&lt;/strong&gt;](wdm-irqlobpassive.md)"><strong>IrqlObPassive</strong></a></p></td>

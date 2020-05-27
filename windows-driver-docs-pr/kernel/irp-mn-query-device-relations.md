@@ -21,10 +21,15 @@ The PnP manager sends this request to determine certain relationships among devi
 
 -   Bus drivers might handle **EjectionRelations** requests for their child devices (child PDOs).
 
+## Value
+
+0x07
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

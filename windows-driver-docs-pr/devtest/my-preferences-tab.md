@@ -15,7 +15,7 @@ At the top of the **My Preferences** tab, you'll find the **User Mode Debugger P
 
 ![screen grab of my preferences tab](images/wdfverifier-tab5.png)
 
-The debuggers listed on this page are part of the **Debugging Tools for Windows**. To download this package, select the **Debugging Tools for Windows** box when you install the [Windows SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?LinkId=733744). Alternatively, choose a custom (non-Microsoft) debugger by selecting **Use custom**.
+The debuggers listed on this page are part of the **Debugging Tools for Windows**. To download this package, select the **Debugging Tools for Windows** box when you install the [Windows SDK for Windows 8.1](https://developer.microsoft.com/windows/downloads/sdk-archive/). Alternatively, choose a custom (non-Microsoft) debugger by selecting **Use custom**.
 
 Start by clicking the **Select a specific debugger** button and browsing to the user mode debugger you want to use. The **Debugging Tools for Windows** installs by default to C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\*&lt;x86 | x64&gt;*. The list of debuggers is grayed out if **Path to Debugger** does not specify a valid path.
 

@@ -139,7 +139,7 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 
 For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
-For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remode-debugging-using-windbg.md).
+For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remote-debugging-using-windbg.md).
 
 ## Using the Driver Module Framework (DMF)
 

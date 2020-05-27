@@ -71,9 +71,9 @@ The KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY property only supports KSPROPERTY\_T
 
 For more information about how to process a microphone array in Windows, refer to the following resources:
 
-[Microphone Array Support in Windows (white paper)](https://go.microsoft.com/fwlink/p/?linkid=120592)
-
 [Microphone Array Geometry Property](https://docs.microsoft.com/windows-hardware/drivers/audio/microphone-array-geometry-property)
+
+[Microphone Array Support in Windows (white paper)](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613960(v=vs.85))
 
 Requirements
 ------------

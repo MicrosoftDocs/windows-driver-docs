@@ -1,6 +1,6 @@
 ---
-title: Write a universal Hello World driver (KMDF)
-description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
+title: Write a Hello World Windows Driver (KMDF)
+description: This topic describes how to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 ms.assetid: B4200732-67B5-4BD9-8852-81387912A9A4
 keywords:
 - KMDF Hello World
@@ -8,7 +8,7 @@ ms.date: 04/20/2018
 ms.localizationpriority: medium
 ---
 
-# Write a universal Hello World driver (KMDF)
+# Write a Hello World Windows Driver (KMDF)
 
 
 This topic describes how to write a very small [Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer. 
@@ -328,7 +328,7 @@ Now that you have installed your KmdfHelloWorld driver on the target computer, y
 
 For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
-For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remode-debugging-using-windbg.md).
+For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remote-debugging-using-windbg.md).
 
 ## <span id="related_topics"></span>Related topics
 

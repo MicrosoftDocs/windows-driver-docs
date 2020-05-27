@@ -16,11 +16,4 @@ This section contains the following topics.
 -   [Implementing Audio Processing Objects](implementing-audio-processing-objects.md)
 -   [Implementing Hardware Offloaded APO Effects](implementing-hardware-offloaded-apo-effects.md)
 
- 
-APOs were first introduced in Windows Vista and you may see references to the earlier system APOs - sAPOs. For more information, see [Custom Audio Effects in Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=106024). This white paper may reference older [COM](https://go.microsoft.com/fwlink/p/?linkid=106293) and [UI development](https://go.microsoft.com/fwlink/p/?linkid=106294) topics.
-
- 
-
-
-
-
+APOs were first introduced in Windows Vista and you may see references to the earlier system APOs - sAPOs. For more information, see the [Custom Audio Effects in Windows Vista](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/sysfx.doc) white paper. This white paper may reference older [COM](https://docs.microsoft.com/windows/win32/com/component-object-model--com--portal) and [UI development](https://docs.microsoft.com/windows/win32/controls/property-sheets) topics.

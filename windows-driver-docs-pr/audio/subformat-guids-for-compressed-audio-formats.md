@@ -13,7 +13,7 @@ For Windows 7, new subformat GUIDs have been added to the Ksmedia.h header file 
 
 As a result of the CEA-861-D standard, you must ensure that audio formats that are not supported by a CEA device are not transmitted to such a device. High definition multimedia interface (HDMI) and [DisplayPort](https://www.displayport.org/) are examples of CEA devices.
 
-For user-mode access, the GUIDs are specified in the **SubFormat** member of [WAVEFORMATEXTENSIBLE](https://go.microsoft.com/fwlink/p/?linkid=142020) and in the **FormatExt** member of [WAVEFORMATEXTENSIBLE\_IEC61937](https://go.microsoft.com/fwlink/p/?linkid=142021). For kernel-mode access for audio drivers, the GUIDs are specified in the **DataRange** member of the [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure,
+For user-mode access, the GUIDs are specified in the **SubFormat** member of [WAVEFORMATEXTENSIBLE](https://docs.microsoft.com/windows/win32/api/mmreg/ns-mmreg-waveformatextensible) and in the **FormatExt** member of [WAVEFORMATEXTENSIBLE\_IEC61937](https://docs.microsoft.com/windows/win32/coreaudio/representing-formats-for-iec-61937-transmissions). For kernel-mode access for audio drivers, the GUIDs are specified in the **DataRange** member of the [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_audio) structure.
 
 The GUIDs for the available compressed audio formats are listed in the following table.
 

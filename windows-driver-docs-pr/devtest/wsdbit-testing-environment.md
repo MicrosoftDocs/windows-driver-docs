@@ -36,7 +36,7 @@ The following figure shows the network topology that consists of a device, clien
 
 ### <span id="test_device"></span><span id="TEST_DEVICE"></span>Test Device
 
-To participate in testing of the device side, you should implement the device as described in the following general guidelines. For more information about the device implementation, see the [WSDBIT Reference](wsdbit-reference.md) and the [Device Profile for Web Services (DPWS)](https://go.microsoft.com/fwlink/p/?linkid=163864) specification.
+To participate in testing of the device side, you should implement the device as described in the following general guidelines. For more information about the device implementation, see the [WSDBIT Reference](wsdbit-reference.md) and the [Devices Profile for Web Services (DPWS)](http://schemas.xmlsoap.org/ws/2006/02/devprof/) specification.
 
 The following table describes service and interoperability test case dependencies.
 

@@ -76,12 +76,12 @@
           href: camera-photo-failure-rate.md
         - name: "Percent of Camera video and stream failures"
           href: camera-video-and-stream-failure-rate.md
-      - name: "Fingerprint-Biometric"
+      - name: "Fingerprint"
         items:
         - name: "Fingerprint measures"
           href: fingerprint-measures.md
         - name: "Success Rate of Fingerprint Enrollment"
-          href: success-rate-fingerprint-enrollent.md
+          href: success-rate-fingerprint-enrollment.md
         - name: "Success Rate of Fingerprint Signin Experience"
           href: success-rate-fingerprint-signin-experience.md
       - name: "Firmware"
@@ -138,6 +138,8 @@
             href: graphics-user-mode-crashes-collaboration-standard.md
           - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
             href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
+          - name: "Percent of devices with WinML Runtime Errors"
+            href: pct-devices-winml-runtime-error.md
         - name: "Ecosystem audience measures"
           items:
           - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 

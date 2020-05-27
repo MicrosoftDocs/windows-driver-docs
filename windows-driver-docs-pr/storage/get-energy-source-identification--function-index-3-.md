@@ -11,8 +11,8 @@ ms.date: 10/17/2018
 
 This function returns identification information about the Energy Source (ES), which can be host-managed or device-managed.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
 
 

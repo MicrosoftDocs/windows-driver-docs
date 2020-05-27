@@ -45,8 +45,8 @@ When a file system tears down the per file context object for a file, it must ca
 
 For remarks about synchronizing access to per file context objects or to per stream context objects during a call to *FreeCallback*, see [**FsRtlTeardownPerFileContexts**](https://msdn.microsoft.com/library/windows/hardware/ff547290) and [**FsRtlTeardownPerStreamContexts**](https://msdn.microsoft.com/library/windows/hardware/ff547295).
 
-&gt; \[!Note\]
-&gt;   The *FreeCallback* routine cannot recursively call down into the file system or acquire any file system resources.
+> [!NOTE]
+> The *FreeCallback* routine cannot recursively call down into the file system or acquire any file system resources.
 
 To define a *FreeCallback* callback function that is named *MyFreeFunction*, you must first provide a function declaration that the [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier) (SDV) and other verification tools require, as follows:
 

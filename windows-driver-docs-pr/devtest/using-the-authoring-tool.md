@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Using the Device Metadata Authoring Wizard
 
 
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?LinkId=226411). For more information, see [Windows 8.1 device experience](https://go.microsoft.com/fwlink/p/?linkid=325561). \]
+\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://www.microsoft.com/download/details.aspx?id=42273).  \]
 
 ## <span id="Getting_started"></span><span id="getting_started"></span><span id="GETTING_STARTED"></span>Getting started
 
@@ -20,8 +20,7 @@ After you launch the **Authoring** tool, the **Welcome to the Metadata Authoring
 
 -   To create a new device metadata package, select **Create new device metadata package**, and then click **Next**.
 -   To update an existing device metadata package, select **Update existing device metadata package**, click **Browse** to select the package, and then click **Next**.
-    **Note**  You can't edit Device Stage experiences with the tool. However, the Device Stage folder isn't changed if you update the package by using this tool. For more information about Device Stage, please see [Windows 7 Device Experience](https://go.microsoft.com/fwlink/p/?linkid=221801).
-
+    **Note**  You can't edit Device Stage experiences with the tool. However, the Device Stage folder isn't changed if you update the package by using this tool. 
      
 
  

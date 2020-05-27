@@ -108,8 +108,8 @@ Remarks
 
 When a short buffer is supplied and STATUS\_BUFFER\_OVERFLOW is returned, NTFS returns the last whole FILE\_FULL\_EA\_INFORMATION entry that fits. When a short buffer is supplied and STATUS\_BUFFER\_TOO\_SMALL is returned, NTFS could not fit any FILE\_FULL\_EA\_INFORMATION entries.
 
-&gt; \[!Note\]
-&gt;   On Windows Vista and later, FAT16 no longer supports extended attributes.
+> [!NOTE]
+> On Windows Vista and later, FAT16 no longer supports extended attributes.
 
  
 

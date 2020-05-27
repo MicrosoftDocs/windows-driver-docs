@@ -58,7 +58,7 @@
       href: configuring-tools-ini.md
     - name: "Using KDbgCtrl"
       href: using-kdbgctrl.md
-  - name: "Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)"
+  - name: "Debug Windows Drivers - Step by Step Lab (Echo Kernel-Mode)"
     href: debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
   - name: "Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)"
     href: debug-universal-drivers--kernel-mode-.md
@@ -1033,7 +1033,7 @@
     - name: "Setting Symbol and Executable Image Paths in WinDbg"
       href: setting-symbol-and-source-paths-in-windbg.md
     - name: "Remote Debugging Using WinDbg"
-      href: remode-debugging-using-windbg.md
+      href: remote-debugging-using-windbg.md
     - name: "Entering Debugger Commands in WinDbg"
       href: debugger-command-window.md
     - name: "Using the Command Browser Window in WinDbg"

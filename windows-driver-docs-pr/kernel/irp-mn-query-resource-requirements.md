@@ -15,10 +15,15 @@ The PnP manager uses this IRP to get a device's resource requirements list.
 
 Bus drivers must handle this request for their child devices that require hardware resources. Bus filter drivers can handle this request. Function and filter drivers do not handle this IRP.
 
+## Value
+
+0x0B
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

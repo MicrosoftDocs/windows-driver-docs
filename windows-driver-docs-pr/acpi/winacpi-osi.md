@@ -1,7 +1,7 @@
 ---
 title: How to Identify the Windows Version in ACPI by Using _OSI
 description: Provides information about the ACPI Source Language (ASL) Operating System Interface Level (\_OSI) method used to identify the host operating system.
-ms.date: 11/09/2018
+ms.date: 04/14/2020
 ms.localizationpriority: medium
 ---
 
@@ -11,6 +11,7 @@ This topic describes how to use the \_OSI method in Advanced Configuration and P
 
 This information applies to the following operating systems:
 
+- Windows 10, version 2004
 - Windows 10, version 1903
 - Windows 10, version 1809
 - Windows 10, version 1803
@@ -69,7 +70,7 @@ The table below lists the versions of Windows that ASL can identify by using the
 
 Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method specifies an earlier version of Windows. For example, Windows 7 returns 0xFFFFFFFF for both "Windows 2009" (Windows 7) and "Windows 2006" (Windows Vista).
 
-**\_OSI Strings for Windows Operating Systems**
+### \_OSI Strings for Windows Operating Systems
 
 | OSI String          | Target OS                     |
 |---------------------|-------------------------------|
@@ -92,10 +93,12 @@ Windows operating systems return 0xFFFFFFFF if the argument to the \_OSI method 
 | Windows 2018        | Windows 10, version 1803      |
 | Windows 2018.2      | Windows 10, version 1809      |
 | Windows 2019        | Windows 10, version 1903      |
+| Windows 2020        | Windows 10, version 2004      |
 
 ### Implementation Note
 
 Place the routine that identifies the operating system in an \_INI method under the \\\_SB scope so that \_OSI can run as early as possible. This placement is important because the operating system makes features available based on the string argument to the \_OSI method.
 
 ## Additional resources
+
 [Advanced Configuration and Power Interface Specification](https://uefi.org/specifications)

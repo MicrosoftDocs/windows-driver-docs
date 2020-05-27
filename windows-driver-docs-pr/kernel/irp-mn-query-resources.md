@@ -15,10 +15,15 @@ The PnP manager uses this IRP to get a device's boot configuration resources.
 
 Bus drivers must handle this request for their child devices that require hardware resources. Function and filter drivers do not handle this IRP.
 
+## Value
+
+0x0A
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

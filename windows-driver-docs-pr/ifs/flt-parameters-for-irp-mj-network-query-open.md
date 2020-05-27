@@ -51,8 +51,9 @@ Remarks
 
 The [**FLT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_NETWORK\_QUERY\_OPEN operations contains the parameters for a NetworkQueryOpen operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. The **FLT\_PARAMETERS** structure is contained in an [**FLT\_IO\_PARAMETER\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure.
 
-&gt; \[!Note\]   The file object associated with IRP\_MJ\_NETWORK\_QUERY\_OPEN is a stack-based object.
-&gt;A filter registered for the NetworkQueryOpen callback must not reference this object. That is, do not call ObReferenceObject or ObDereferenceObject on this stack-based file object. Also, do not save a pointer to the object.
+> [!NOTE]
+> The file object associated with IRP\_MJ\_NETWORK\_QUERY\_OPEN is a stack-based object.
+A filter registered for the NetworkQueryOpen callback must not reference this object. That is, do not call ObReferenceObject or ObDereferenceObject on this stack-based file object. Also, do not save a pointer to the object.
 
  
 

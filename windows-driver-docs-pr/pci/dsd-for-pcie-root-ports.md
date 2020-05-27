@@ -7,12 +7,13 @@ ms.date: 04/10/2018
 ms.localizationpriority: medium
 ---
 
-# ACPI Interface: Device Specific Data (_DSD) for PCIe Root Ports
+# ACPI Interface: Device Specific Data (\_DSD) for PCIe Root Ports
 
-In Windows 10 (Version 1803), new ACPI _DSD methods have been added to support Modern Standby and PCI hot plug scenarios:
-## Directed Deepest Runtime Idle Platform State (DRIPS) support on PCIe Root Ports 
+In Windows 10 (Version 1803), new ACPI \_DSD methods have been added to support Modern Standby and PCI hot plug scenarios:
 
- This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby-enabled desktop systems. 
+## Directed Deepest Runtime Idle Platform State (DRIPS) support on PCIe Root Ports
+
+ This ACPI object must be implemented in the ACPI scope of every PCIe Root Port/slot that is accessible to the user on Modern Standby-enabled systems that are capable of implementing the [Directed Power Management Framework (DFx)](../kernel/introduction-to-the-directed-power-management-framework.md).
 
 ```ASL
 Name (_DSD, Package () {
@@ -24,14 +25,14 @@ Name (_DSD, Package () {
                 Package (2) {"FundamentalDeviceResetTriggeredOnD3ToD0", 1},
             }
         }
-) 
+)
 ```
 
 ## Identifying PCIe Root Ports supporting hot plug in D3
 
-This ACPI object allows the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object is not implemented on the a PCIe hot plug capable port, then the system does not power manage this port if it has no children PCIe devices, causing the system to consume more power than necessary.
+This ACPI object enables the operating system to identify and power manage PCIe Root ports that are capable of handling hot plug events while in D3 state. If this object is not implemented on the a PCIe hot plug capable port, then the system does not power manage this port if it has no children PCIe devices, causing the system to consume more power than necessary.
 
-This object must be implemented on all PCIe Root Ports of Thunderbolt™ hierarchies, on Runtime D3 (RTD3) capable systems, in the Root Port ACPI device scope.
+This object must be implemented on all PCIe Root Ports of Thunderbolt hierarchies, on Runtime D3 (RTD3) capable systems, in the Root Port ACPI device scope.
 
 ```ASL
 Name (_DSD, Package () {  
@@ -49,9 +50,9 @@ Name (_DSD, Package () {
 
 ## Identifying externally exposed PCIe Root Ports
 
-This ACPI object allows the operating system to identify externally exposed PCIe hierarchies (e.g. Thunderbolt™). This object must be implemented in the Root Port ACPI device scope.
+This ACPI object enables the operating system to identify externally exposed PCIe hierarchies, such as Thunderbolt. This object must be implemented in the Root Port ACPI device scope.
 
-Note: On systems shipping with Windows 10 1803, this should only be implemented on PCIe Root Ports of Thunderbolt™ hierarchies.
+Note: On systems shipping with Windows 10, version 1803, this object should only be implemented on PCIe Root Ports of Thunderbolt hierarchies.
 
 ```ASL
 Name (_DSD, Package () {  
@@ -64,6 +65,31 @@ Package (2) {"UID", 0}, // Property 2: UID of the externally facing port on plat
         }
 )
 ```
+
+## Identifying internal PCIe ports accessible to users and requiring DMA protection
+
+This ACPI object enables the operating system to identify internal PCIe hierarchies that are easily accessible by users (such as, Laptop M.2 PCIe slots accessible by way of a latch) and require protection by the OS [Kernel DMA Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) mechanism. This object must be implemented in the Root Port ACPI device scope. 
+
+Notes: 
+-	Protecting PCI ports using this ACPI object is supported only in Windows 10, version 1903 and later.
+-	Kernel DMA Protection must be enabled in system BIOS/UEFI, in order for the OS to parse the \_DSD and apply necessary protections to the PCI port.
+-	Drivers of devices connected to this port MUST support DMA remapping, otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard).
+
+
+```ASL
+Name (_DSD, Package () {  
+
+ToUUID("70D24161-6DD5-4C9E-8070-705531292865"),
+Package () {
+Package (2) {"DmaProperty", 1}, // Property 1: This port needs to be protected by the OS
+Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range is: 0, 1, …, n-1
+                   }
+        }
+)
+```
+
 ## See Also
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
+
+[Kernel DMA Protection for Thunderbolt™ 3](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)

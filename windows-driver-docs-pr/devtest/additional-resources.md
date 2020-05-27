@@ -13,17 +13,15 @@ ms.localizationpriority: medium
 # Additional resources
 
 
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?LinkId=226411). For more information, see [Windows 8.1 device experience](https://go.microsoft.com/fwlink/p/?linkid=325561). \]
-
-For more information about the device experience in Windows 8, see [Windows 8 Device Experience](https://go.microsoft.com/fwlink/p/?LinkId=227312) and [Device Metadata Package Pipeline white paper](https://go.microsoft.com/fwlink/p/?LinkId=242246).
+\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://www.microsoft.com/download/details.aspx?id=42273).\]
 
 For more information about UWP device apps, see:
 
--   [UWP device app Lifecycle](https://go.microsoft.com/fwlink/p/?LinkId=226757)
--   [UWP device apps for Cameras](https://go.microsoft.com/fwlink/p/?LinkId=241445)
--   [Mobile Broadband: UWP device apps](https://go.microsoft.com/fwlink/p/?LinkId=241446)
--   [Printers: UWP device apps](https://go.microsoft.com/fwlink/p/?LinkId=241444)
--   [Specialized devices: UWP device apps](https://go.microsoft.com/fwlink/p/?LinkId=241447)
+-   [UWP device app Lifecycle](https://docs.microsoft.com/windows-hardware/drivers/devapps/the-workflow)
+-   [UWP device apps for Cameras](https://docs.microsoft.com/windows-hardware/drivers/devapps/uwp-device-apps-for-webcams)
+-   [Mobile Broadband: UWP device apps](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps)
+-   [Printers: UWP device apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/uwp-device-apps-for-printers)
+-   [Specialized devices: UWP device apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices)
 
  
 

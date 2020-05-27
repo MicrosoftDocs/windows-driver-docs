@@ -37,7 +37,7 @@ Drivers often accept input buffers with fixed headers and trailing variable leng
    }
 ```
 
-If **WaitBuffer-&gt;NameLength** is a very large ULONG value, adding it to the offset could cause an integer overflow. Instead, a driver should subtract the offset from the **InputBufferLength**, and compare the result with **WaitBuffer-&gt;NameLength**, as in the following example:
+If **WaitBuffer-&gt;NameLength** is a very large ULONG value, adding it to the offset could cause an integer overflow. Instead, a driver should subtract the offset (fixed header size) from the **InputBufferLength** (buffer size), and test if the result leaves enough room for the **WaitBuffer-&gt;NameLength** (variable length data), as in the following example:
 
 ```cpp
    if (InputBufferLength < sizeof(WAIT_FOR_BUFFER)) {
@@ -48,12 +48,14 @@ If **WaitBuffer-&gt;NameLength** is a very large ULONG value, adding it to the o
    WaitBuffer = Irp->AssociatedIrp.SystemBuffer;
 
    if ((InputBufferLength -
-         FIELD_OFFSET(WAIT_FOR_BUFFER, Name[0])  >
+         FIELD_OFFSET(WAIT_FOR_BUFFER, Name[0])  <
          WaitBuffer->NameLength) {
       IoCompleteRequest( Irp, STATUS_INVALID_PARAMETER );
       return( STATUS_INVALID_PARAMETER );
    }
 ```
+
+In other words, if the buffer size minus the fixed header size leaves fewer than the number of bytes required for the variable length data, we return failure.
 
 The subtraction above cannot underflow because the first **if** statement ensures that the **InputBufferLength** is greater than or equal to the size of **WAIT\_FOR\_BUFFER**.
 

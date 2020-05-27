@@ -15,10 +15,15 @@ The PnP manager uses this IRP to get a device's description or location informat
 
 Bus drivers must handle this request for their child devices if the bus supports this information. Function and filter drivers do not handle this IRP.
 
+## Value
+
+0x0C
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

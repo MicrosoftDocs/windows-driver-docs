@@ -2,20 +2,22 @@
 title: Voice Activation
 description: Cortana, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation.
 ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
-ms.date: 07/02/2018
+ms.date: 05/15/2020
 ms.localizationpriority: medium
 ---
 
 # Voice Activation
+
+> [!NOTE]
+> This topic refers primarily to our consumer experiences, which are currently delivered in Windows 10 (version 1909 and earlier).
+>
 
 Cortana, the personal assistant technology was demonstrated for the first time at the Microsoft BUILD Developer Conference in 2013. The Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and Dictation. Voice activation is a feature that enables users to invoke a speech recognition engine from various device power states by saying a specific phrase - "Hey Cortana". To create hardware that supports voice activation technology, review the information in this topic.
 
 **Note**  
 Implementing voice activation is a significant project and is a task completed by SoC vendors. OEMs can contact their SoC vendor for information on their SoC's implementation of voice activation.
 
-
 ## <span id="cortana_end_user_experience">Cortana End User Experience
-
 
 To understand the voice interaction experience available in Windows, review these topics.
 
@@ -25,10 +27,7 @@ To understand the voice interaction experience available in Windows, review thes
 | [What is Cortana?](https://support.microsoft.com/help/17214/cortana-what-is)      | Provides and overview and usage direction for Cortana                 |
 | [Make Cortana yours](https://support.microsoft.com/help/17178/windows-10-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
 
-
-
 ## <span id="introduction_to__hey_cortana__voice_activation_and__learn_my_voice_"></span>Introduction to "Hey Cortana" Voice Activation and "Learn my voice"
-
 
 **"Hey Cortana" Voice Activation**
 
@@ -46,7 +45,7 @@ This diagram illustrates chained and keyword only activation.
 
 ![chained and keyword activation diagram showing audio buffer and time sequence](images/audio-chained-keyword-activation.png)
 
-Microsoft provides an OS default keyword spotter (software keyword spotter) that is used to ensure quality of hardware keyword detections and to provide the Hey Cortana experience in cases where hardware keyword detection is absent or unavailable. 
+Microsoft provides an OS default keyword spotter (software keyword spotter) that is used to ensure quality of hardware keyword detections and to provide the Hey Cortana experience in cases where hardware keyword detection is absent or unavailable.
 
 **The "Learn my voice" feature**
 
@@ -57,7 +56,6 @@ The "Learn my voice" feature allows the user to train Cortana to recognize their
 When voice activation is paired with "Learn my voice", the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices. This feature is  available only for Windows 10 version 1903 and earlier.
 
 Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake_on_voice).
-
 
 ## <span id="glossary_of_terms"></span><span id="Glossary_Of_Terms"></span>Glossary of Terms
 
@@ -118,9 +116,7 @@ AEC Requirements for HW KWS
     - HW KWS WoV for S0 working state is supported.
     - To enable HW KWS WoV for S0 working state, the APO must support AEC.
 
-
 ## <span id="sample_code_overview"></span>Sample Code Overview
-
 
 There is sample code for an audio driver that implements voice activation on GitHub as part of the SYSVAD virtual audio adapter sample. It is recommended to use this code as a starting point. The code is available at this location.
 
@@ -130,14 +126,13 @@ For more information about the SYSVAD sample audio driver, see [Sample Audio Dri
 
 ## <span id="keyword_recognition_system_information"></span>Keyword Recognition System Information
 
-
 **Voice Activation Audio Stack Support**
 
 The audio stack external interfaces for enabling Voice Activation serves as the communication pipeline for the speech platform and the audio drivers. The external interfaces are divided into three parts.
 
--   *Keyword detector Device Driver Interface (DDI)*. The Keyword detector Device Driver Interface is responsible for configuring and arming the HW Keyword Spotter (KWS).  It is also used by the driver to notify the system of a detection event.
--   *Keyword Detector OEM Adapter DLL*. This DLL implements a COM interface to adapt the driver specific opaque data for use by the OS to assist with keyword detection.
--   *WaveRT streaming enhancements*. The enhancements enable the audio driver to burst stream the buffered audio data from the keyword detection.
+- *Keyword detector Device Driver Interface (DDI)*. The Keyword detector Device Driver Interface is responsible for configuring and arming the HW Keyword Spotter (KWS).  It is also used by the driver to notify the system of a detection event.
+- *Keyword Detector OEM Adapter DLL*. This DLL implements a COM interface to adapt the driver specific opaque data for use by the OS to assist with keyword detection.
+- *WaveRT streaming enhancements*. The enhancements enable the audio driver to burst stream the buffered audio data from the keyword detection.
 
 **Audio Endpoint Properties**
 
@@ -149,10 +144,10 @@ The driver exposes a KS filter for its capture device as usual. This filter supp
 
 The properties are:
 
--   Supported keyword types - [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-patterns). This property is set by the operating system to configure the keywords to be detected.
--   List of keyword patterns GUIDs - [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-supportedpatterns). This property is used to get a list of GUIDs that identify the types of supported patterns.
--   Armed - [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-armed). This read/write property is a simply Boolean status indicating whether the detector is armed. The OS sets this to engage the keyword detector. The OS can clear this to disengage. The driver automatically clears this when keyword patterns are set and also after a keyword is detected. (The OS must rearm.)
--   Match result - [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-matchresult). This read property holds the result data after detection has occurred.
+- Supported keyword types - [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-patterns). This property is set by the operating system to configure the keywords to be detected.
+- List of keyword patterns GUIDs - [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-supportedpatterns). This property is used to get a list of GUIDs that identify the types of supported patterns.
+- Armed - [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-armed). This read/write property is a simply Boolean status indicating whether the detector is armed. The OS sets this to engage the keyword detector. The OS can clear this to disengage. The driver automatically clears this when keyword patterns are set and also after a keyword is detected. (The OS must rearm.)
+- Match result - [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-sounddetector-matchresult). This read property holds the result data after detection has occurred.
 
 The event that is fired when a keyword is detected is a [**KSEVENT\_SOUNDDETECTOR\_MATCHDETECTED**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksevent-sounddetector-matchdetected) event.
 

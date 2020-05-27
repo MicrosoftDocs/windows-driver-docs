@@ -39,8 +39,8 @@ Generally, filter drivers should not return **STATUS\_PENDING** in response to *
 
 File system filter driver writers should note that [**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobject) causes an [**IRP\_MJ\_CLEANUP**](irp-mj-cleanup.md) request to be sent to the file system driver stack for the volume. Because file systems often create stream file objects as a side effect of operations other than **IRP\_MJ\_CREATE**, it is difficult for filter drivers to reliably detect stream file object creation. Thus a filter driver should expect to receive **IRP\_MJ\_CLEANUP** and [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close) requests for previously unseen file objects. In the case of [**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobjectlite), an **IRP\_MJ\_CLEANUP** request is not sent.
 
-&gt; \[!Note\]
-&gt;  When legacy filter drivers re-issue a create in a post-create callback, they must release and set the buffer that is associated with their reparse point (the auxiliary buffer) to **NULL**. If a legacy filter driver does not free this buffer and set it to **NULL**, the driver will leak memory. Minifilter drivers do not have to do this because the Filter Manager does this for them.
+> [!NOTE]
+> When legacy filter drivers re-issue a create in a post-create callback, they must release and set the buffer that is associated with their reparse point (the auxiliary buffer) to **NULL**. If a legacy filter driver does not free this buffer and set it to **NULL**, the driver will leak memory. Minifilter drivers do not have to do this because the Filter Manager does this for them.
 
  
 

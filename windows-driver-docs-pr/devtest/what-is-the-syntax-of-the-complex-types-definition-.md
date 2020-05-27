@@ -57,7 +57,7 @@ A string appended to the function name to associate it with the complex type. Th
 This element is reserved and must be set to zero.
 
 <span id="Slots"></span><span id="slots"></span><span id="SLOTS"></span>*Slots*  
-Specifies the maximum number of variable-length parameters that the WPP preprocessor passes to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function for this complex type. This format element is optional. WPP uses a default value of 1 if this element is not specified.
+Specifies the maximum number of variable-length parameters that the WPP preprocessor passes to the [TraceMessage](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-tracemessage) function for this complex type. This format element is optional. WPP uses a default value of 1 if this element is not specified.
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -116,7 +116,7 @@ where **ItemPWString** is a counted Unicode string type recognized by WPP. The l
 
 When ETW interprets the WPP\_LOGXWCS definition, it puts a 2-byte string into a buffer the first [**WPP\_LOGPAIR**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556197(v=vs.85)) macro is interpreted. ETW then copies all the bytes of the string into a buffer when ETW interprets the second WPP\_LOGPAIR macro,
 
-Because you specified the length separate from the data, WPP\_LOGXWCS consumes two slots of [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214). Therefore, the number **2** is the eighth argument.
+Because you specified the length separate from the data, WPP\_LOGXWCS consumes two slots of [TraceMessage](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-tracemessage). Therefore, the number **2** is the eighth argument.
 
 When calling the [WPP Preprocessor](wpp-preprocessor.md), use the **Ignore Exclamation Marks** option (**-noshrieks**). This helps WPP to recognize a complex type that has a name that is not enclosed in exclamation marks (!), also known as "shrieks."
 

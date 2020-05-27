@@ -32,7 +32,7 @@ mso*
 Alternatively, you can store the exclusions in the registry. Create a key named
 
 ```text
-HKLM\ Software\Microsoft\Symbol Server\Exclusions
+HKLM\Software\Microsoft\Symbol Server\Exclusions
 ```
 
 Store the file name list as string values (REG\_SZ) within this key. The name of the string value acts as the file name to exclude. The contents of the string value can be used as a comment describing why the file is being excluded.

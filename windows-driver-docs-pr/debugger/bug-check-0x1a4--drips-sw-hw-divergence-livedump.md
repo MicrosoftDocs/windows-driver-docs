@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check Bug Check 0x1A4: DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP 
+# Bug Check 0x1A4: DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP 
 
 The DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP live dump has a value of 0x000001A4. 
 

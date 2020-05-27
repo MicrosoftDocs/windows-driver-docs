@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 
 # About Event Tracing for Drivers
 
-
-## What is Event Tracing?
+## Event Tracing defined
 
 Event Tracing for Windows (ETW) is an efficient and effective mechanism for tracing and logging events that are raised by user-mode applications and kernel-mode drivers. ETW consists of three components:
 
@@ -42,8 +41,6 @@ Event Tracing for Windows (ETW) is an efficient and effective mechanism for trac
 </tbody>
 </table>
 
- 
-
 ## The ETW Kernel-Mode API
 
 The ETW application programming interface (API) provides a set of functions that are available to kernel-mode components and drivers. [WMI Event Tracing](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-event-tracing) and [WPP Software Tracing](wpp-software-tracing.md) both use ETW. Driver developers can use these functions to register the driver as an ETW provider. ETW providers can raise events and can publish them to the Windows Event Log or can write their events to an ETW session, which gets written to a trace file or delivered to real-time consumer. Events are entities that describe interesting occurrences within the system and are defined by a set of attributes that are determined by the ETW providers.
@@ -53,12 +50,3 @@ ETW is implemented in the Windows operating system and provides developers a fas
 ## When to Use Event Tracing
 
 Use the ETW kernel-mode API if you want to publish events that can be consumed by applications interested in administrative, operational, and analytical events, in addition to the detailed tracing you might require during development. Use WPP Software Tracing if you are interested in primarily collecting trace data for development and debugging purposes.
-
- 
-
- 
-
-
-
-
-

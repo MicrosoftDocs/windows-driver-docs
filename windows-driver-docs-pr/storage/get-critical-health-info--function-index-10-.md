@@ -11,8 +11,8 @@ ms.date: 10/17/2018
 
 This function returns critical health-related information. Call [Get NVDIMM-N Health Info (Function Index 11)](get-nvdimm-n-health-info--function-index-11-.md) and [Get Energy Source Health Info (Function Index 12)](get-energy-source-health-info--function-index-12-.md) to obtain further health-related information.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 
