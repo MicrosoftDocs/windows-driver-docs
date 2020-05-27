@@ -90,6 +90,6 @@ For more info, see [Driver Module Framework (DMF)](https://github.com/Microsoft/
 
 [Developing, Testing, and Deploying Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/)
 
-[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/)
 
 [Write your first driver](writing-your-first-driver.md)
