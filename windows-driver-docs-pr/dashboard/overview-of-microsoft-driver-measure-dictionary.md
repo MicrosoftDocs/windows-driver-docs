@@ -42,12 +42,14 @@ A measure is failing when its Current Value does not meet its Passing Criteria, 
 
 ## Evaluating by Targeting Cohort
 
-A driver can be developed to support multiple systems and devices. It is not always sufficient or accurate to evaluate a driver’s quality aggregating its measure results across all of its targeting devices (See definition of targeting cohorts below). To ensure there is not a low performing targeting cohort, we analyze the cohorts to find any that fail to meet the measure requirements. All driver measures will be used to evaluate driver quality by targeting cohorts, as they are enabled to support evaluation by targeting cohorts. Refer to each measure definition page for the new measure attribute, `cohort-capable`. If a measure is marked as `cohort-capable`, the measure is enabled to support evaluation by targeting cohorts.
+A driver can be developed to support multiple systems and devices. It is not always sufficient or accurate to evaluate a driver’s quality aggregating its measure results across all of its targeting devices (See definition of targeting cohorts below). To ensure there is not a low performing targeting cohort, we analyze the cohorts to find any that fail to meet the measure requirements. All driver measures will be used to evaluate driver quality by targeting cohorts, as they are enabled to support evaluation by targeting cohorts. Refer to each measure definition page for the new measure attribute 'cohort-capable'. If a measure is marked as 'cohort-capable', the measure is enabled to support evaluation by targeting cohorts.
 
 ### Targeting Cohorts/Clusters Definition
+
 A targeting cohort/cluster is defined as a set of Windows systems and devices that a shipping label specifies and shares the same targeting attributes, including HWID, CHID, and OS version.
 
 ### Cohort Evaluation Pass/Fail Criteria
+
 If one or more driver measures fail to meet its passing criteria, the targeting cohort does not pass (it’s fails). **A driver can be rejected if one or more failures is detected on one or more targeting cohorts.**  The minimum instances for cohorts will be added to the measure definition page upon enablement.
 
 ## Data sources for measures
