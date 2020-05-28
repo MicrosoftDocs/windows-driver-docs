@@ -34,7 +34,7 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 ![empty checkbox](images/checkbox.png)[Follow driver secure coding guidelines](#driversecuritycodepractices)
 
-![empty checkbox](images/checkbox.png)[Validate Device Guard compatibility](#dgc)
+![empty checkbox](images/checkbox.png)[Validate HVCI compatibility](#dgc)
 
 ![empty checkbox](images/checkbox.png)[Follow technology specific code best practices](#technologyspecificcodepractices)
 
@@ -180,7 +180,7 @@ To manage this risk, copy any parameters that need to be validated from the user
 
 - Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests.
 
-To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Device Guard Compatibility](#dgc) later in this article.
+To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [HVCI Compatibility](#dgc) later in this article.
 
 **Handles**
 
@@ -330,15 +330,15 @@ For more information, see the following articles:
 
 [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes)
 
-## <span id="DGC"></span><span id="dgc"></span>Validate Device Guard compatibility
+## <span id="DGC"></span><span id="dgc"></span>Validate HVCI compatibility
 
-**Security checklist item \#8:** *Validate that your driver uses memory so that it is Device Guard compatible.*
+**Security checklist item \#8:** *Validate that your driver uses memory so that it is HVCI compatible.*
 
-**Memory usage and Device Guard compatibility**
+**Memory usage and HVCI compatibility**
 
-Device Guard uses hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the operating system. When using virtualization-based security to isolate CI, the only way kernel memory can become executable is through a CI verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
+HVCI uses hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the operating system. When using virtualization-based security to isolate CI, the only way kernel memory can become executable is through a CI verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
 
-To implement Device Guard compatible code, make sure your driver code does the following:
+To implement HVCI compatible code, make sure your driver code does the following:
 
 - Opts in to NX by default
 - Uses NX APIs/flags for memory allocation (NonPagedPoolNx)
@@ -348,9 +348,7 @@ To implement Device Guard compatible code, make sure your driver code does the f
 - Does not load data files as executable
 - Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
 
-For more information about using the tool and a list of incompatible memory calls, see [Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
-
-For general information about Device Guard, see [Driver compatibility with Device Guard in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification).
+For more information about using the tool and a list of incompatible memory calls, see [Evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
 
 For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](https://docs.microsoft.com/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
@@ -661,7 +659,7 @@ The CHAOS (Concurrent Hardware and Operating System) tests run various PnP drive
 
 The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces. For more information, see [Penetration Tests (Device Fundamentals)](https://docs.microsoft.com/windows-hardware/drivers/devtest/penetration-tests--device-fundamentals-).
 
-Use the [Device Guard - Compliance Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc), along with the other tools described in this article, to confirm that your driver is Device Guard compatible.
+Use the [Device Guard - Compliance Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc), along with the other tools described in this article, to confirm that your driver is HVCI compatible.
 
 **Custom and domain-specific test tools**
 
