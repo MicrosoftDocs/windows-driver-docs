@@ -1,4 +1,4 @@
-﻿---
+---
 ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting Started with Windows Drivers
 description: Windows Drivers allow you to create one driver that will run on on both Windows 10X and Windows Desktop.
@@ -24,10 +24,10 @@ This page provides a preview of the upcoming requirements for Windows Drivers.
 
 When Windows Drivers become a certification option, the following requirements will apply:
 
-- Compliant with [DCH Design Principles](dch-principles-best-practices.md)
-- Follow the principles of [Driver Package Isolation](driver-isolation.md)
-- Follow [API Layering Requirements](api-layering.md)
-- Certified with [Windows Hardware Compatibility Program Certification Process](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/)
+- Compliant with [DCH Design Principles](dch-principles-best-practices.md).
+- Follow the principles of [Driver Package Isolation](driver-isolation.md).
+- Follow [API Layering Requirements](api-layering.md).
+- Certified with [Windows Hardware Compatibility Program Certification Process](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/). Note that the Windows Hardware Compatibility Program Certification Process requirements applies to both KMDF and UMDF drivers.
 
 ## Windows Drivers vs. Windows Desktop Drivers
 
