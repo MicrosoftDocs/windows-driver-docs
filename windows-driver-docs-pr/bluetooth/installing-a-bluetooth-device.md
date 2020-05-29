@@ -3,7 +3,7 @@ title: Installing a Bluetooth Device
 description: Installing a Bluetooth Device
 ms.assetid: 2bf2b2df-260c-42a5-9ee9-6db91f304036
 keywords:
-- Bluetooth WDK , installations
+- Bluetooth WDK , bluetooth driver installations
 - client-side profile drivers WDK Bluetooth
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
@@ -18,15 +18,15 @@ ms.localizationpriority: medium
 
 There are two installation types for Bluetooth profile drivers:
 
-- **Client-side installation**, for remote devices where the remote device advertises its services and the computer connects to it. Examples include: mouse devices, keyboards, and printers.
+- **Client-side installation** for remote devices where the remote device advertises its services and the computer connects to it. Examples include: mouse devices, keyboards, and printers.
 
-- **Server-side installation**, where the computer advertises services and remote devices can connect to the computer to use those services. For example, a vendor could author a server-side installation to enable a PDA to print to a printer attached to the computer.
+- **Server-side installation** where the computer advertises services and remote devices can connect to the computer to use those services. For example, a vendor could author a server-side installation to enable a PDA to print to a printer attached to the computer.
 
 These two installation types require different installation procedures.
 
 ## Installing a Client-side Profile Driver
 
-When a user wants to use a Bluetooth-enabled device, the user should bring the device within range of the computer and initiate a connection from the computer to the remote device. The following is the installation sequence for a client-side profile driver installation.
+A user that wants to use a Bluetooth-enabled device will bring the device within range of the computer and initiate a connection from the computer to the remote device using the following installation sequence for a client-side profile driver.
 
 1. Launch Bluetooth Devices in **Control Panel** to find all devices within range of the computer.
 
