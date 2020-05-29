@@ -88,8 +88,25 @@ Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range i
 )
 ```
 
+## Identifying PCIe ports supporting D3_COLD_AUX_POWER ECN Interface
+
+This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxilliary power in D3, above the default 375mA @3.3V. Any pci port/bridge defining this DSD __must guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds__.
+
+```ASL
+Name (_DSD, Package () {
+            ToUUID("6B4AD420-8FD3-4364-ACF8-EB94876FD9EB"),
+            Package () {
+            }
+        }
+)
+
+```
+
+
 ## See Also
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
 
 [Kernel DMA Protection for Thunderbolt™ 3](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
+
+[D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface)
