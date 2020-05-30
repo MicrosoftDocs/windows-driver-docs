@@ -3,13 +3,13 @@ title: Device Specific Data (_DSD) for PCIe Root Ports
 description: ACPI _DSD methods for supporting Modern Standby and PCI hot plug scenarios
 ms:assetid: 44ad67da-f374-4a8e-80bd-d531853088a2
 keywords: ACPI, ACPI \_DSD method
-ms.date: 04/10/2018
+ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---
 
 # ACPI Interface: Device Specific Data (\_DSD) for PCIe Root Ports
 
-In Windows 10 (Version 1803), new ACPI \_DSD methods have been added to support Modern Standby and PCI hot plug scenarios:
+In Windows 10 (Version 1803), new ACPI \_DSD methods have been added to support Modern Standby and PCI hot plug scenarios.
 
 ## Directed Deepest Runtime Idle Platform State (DRIPS) support on PCIe Root Ports
 
@@ -68,15 +68,17 @@ Package (2) {"UID", 0}, // Property 2: UID of the externally facing port on plat
 
 ## Identifying internal PCIe ports accessible to users and requiring DMA protection
 
-This ACPI object enables the operating system to identify internal PCIe hierarchies that are easily accessible by users (such as, Laptop M.2 PCIe slots accessible by way of a latch) and require protection by the OS [Kernel DMA Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) mechanism. This object must be implemented in the Root Port ACPI device scope. 
+This ACPI object enables the operating system to identify internal PCIe hierarchies that are easily accessible by users (such as, Laptop M.2 PCIe slots accessible by way of a latch) and require protection by the OS [Kernel DMA Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) mechanism. This object must be implemented in the Root Port ACPI device scope.
 
-Notes: 
--	Protecting PCI ports using this ACPI object is supported only in Windows 10, version 1903 and later.
--	Kernel DMA Protection must be enabled in system BIOS/UEFI, in order for the OS to parse the \_DSD and apply necessary protections to the PCI port.
--	Drivers of devices connected to this port MUST support DMA remapping, otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard).
+Key items of note:
 
+- Protecting PCI ports using this ACPI object is supported only in Windows 10, version 1903 and later.
 
-```ASL
+- Kernel DMA Protection must be enabled in system BIOS/UEFI, in order for the OS to parse the \_DSD and apply necessary protections to the PCI port.
+
+- Drivers of devices connected to this port MUST support DMA remapping, otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard).
+
+```asl
 Name (_DSD, Package () {  
 
 ToUUID("70D24161-6DD5-4C9E-8070-705531292865"),
@@ -90,9 +92,9 @@ Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range i
 
 ## Identifying PCIe ports supporting D3_COLD_AUX_POWER ECN Interface
 
-This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxilliary power in D3, above the default 375mA @3.3V. Any pci port/bridge defining this DSD __must guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds__.
+This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxiliary power in D3, above the default 375mA @3.3V. Any PCI port or bridge defining this DSD *must* guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds.
 
-```ASL
+```asl
 Name (_DSD, Package () {
             ToUUID("6B4AD420-8FD3-4364-ACF8-EB94876FD9EB"),
             Package () {
@@ -102,11 +104,10 @@ Name (_DSD, Package () {
 
 ```
 
-
-## See Also
+## See also
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
 
-[Kernel DMA Protection for Thunderbolt™ 3](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
+[Kernel DMA Protection for Thunderbolt 3](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
 
 [D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface)
