@@ -78,8 +78,6 @@
     href: creating-a-driver-package.md
   - name: "Creating a Device Metadata Package"
     href: creating-a-device-metadata-package.md
-  - name: "Enabling DMA Remapping for device drivers"
-    href: enabling-dma-remapping-for-device-drivers.md
 - name: "Signing Drivers"
   items: 
   - name: "Signing a Driver"
