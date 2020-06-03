@@ -36,7 +36,7 @@ plmdebug /suspend Package
 plmdebug /resume Package
 plmdebug /disableDebug Package
 plmdebug /enumerateBgTasks Package
-plmdebug /activateBgTaskTaskId
+plmdebug /activateBgTaskTaskId "{TaskID}"
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -76,11 +76,13 @@ Resumes a package.
 <span id="________disableDebug_Package"></span><span id="________disabledebug_package"></span><span id="________DISABLEDEBUG_PACKAGE"></span> **/disableDebug** *Package*  
 Decrements the debug reference count for a package.
 
-<span id="________enumerateBgTasksPackage"></span><span id="________enumeratebgtaskspackage"></span><span id="________ENUMERATEBGTASKSPACKAGE"></span> **/enumerateBgTasks***Package*  
+<span id="________enumerateBgTasksPackage"></span><span id="________enumeratebgtaskspackage"></span><span id="________ENUMERATEBGTASKSPACKAGE"></span> **/enumerateBgTasks** *Package*  
 Enumerate background task ids for a package.
 
-<span id="________activateBgTaskTaskId"></span><span id="________activatebgtasktaskid"></span><span id="________ACTIVATEBGTASKTASKID"></span> **/activateBgTask***TaskId*  
-Activates a background task. Note that not all background tasks can be activated using PLMDebug.
+<span id="________activateBgTaskTaskId"></span><span id="________activatebgtasktaskid"></span><span id="________ACTIVATEBGTASKTASKID"></span> **/activateBgTask** "{*TaskId*}"  
+Activates a background task. Note that not all background tasks can be activated using PLMDebug. The TaskID must be wrapped in braces and quotation marks. For example:
+
+`plmdebug.exe /activatebgtask "{29421c11-1e1a-47a4-9121-949ce9e25456}"`
 
 Remarks
 -------
@@ -157,6 +159,29 @@ When you have finished debugging, resume the package.
 Finally, decrement the debug reference count for the package.
 
 **plmdebug /disableDebug MyApp\_1.0.0.0\_x64\_\_tnq5r49etfg3c**
+
+**Example 4**
+
+**Manually activate a background task**
+
+Suppose you want to manually activate a background task for debugging. You can query for the list of background task registered and then activate it through plmdebug.
+
+First query the set of background tasks registered:
+
+**plmdebug /enumeratebgtasks MyApp\_1.0.0.0\_x64\_\_tnq5r49etfg3c**
+```console
+Package full name is MyApp_1.0.0.0_x64__tnq5r49etfg3c.
+Background Tasks:
+SampleTask : {50DB0363-D722-4E23-A18F-1EF49B226CC3}
+```
+
+If you want to guarantee that the task activates, enable debug mode first. For example, opportunistic tasks like TimeTrigger-activated tasks will not activate while the system is in battery saver. Enabling debug mode on the package will ensure the system ignores the policies that would prevent activation otherwise.
+
+**plmdebug /enabledebug MyApp\_1.0.0.0\_x64\_\_tnq5r49etfg3c**
+
+Activate the desired task using its registration GUID.
+
+**plmdebug /activatebgtask "{50DB0363-D722-4E23-A18F-1EF49B226CC3}"**
 
 ## <span id="see_also"></span>See also
 

@@ -41,8 +41,8 @@ This section contains information on enhancing driver security.
 <td align="left"><p>This topic describes how the Windows security model applies to drivers and explains what driver writers must do to improve the security of their devices.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="use-device-guard-readiness-tool.md" data-raw-source="[Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md)">Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility</a></p></td>
-<td align="left"><p>This topic describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment. </p></td>
+<td align="left"><p><a href="use-device-guard-readiness-tool.md" data-raw-source="[Evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md)">Evaluate HVCI driver compatibility</a></p></td>
+<td align="left"><p>This topic describes how to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment. </p></td>
 </tr>
 </tr>
 </tbody>
