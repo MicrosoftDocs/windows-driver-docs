@@ -72,11 +72,6 @@ There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, 
 </tr>
 <tr class="even">
 <td>D3hot (required)</td>
-<td>_PR2</td>
-<td><p>The same resources as the next higher state that is supported (D2, D1, or D0).</p></td>
-</tr>
-<tr class="odd">
-<td>D3cold</td>
 <td>_PR3</td>
 <td><p>Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command.</p></td>
 </tr>
