@@ -21,7 +21,7 @@ The following system-defined device property keys are defined in *Devpkey.h*:
 
 -   Property keys that represent the device instance properties that do not have corresponding SPDRP_*Xxx* identifiers. This includes the following:
 
-    [Device status and problem properties](https://docs.microsoft.com/previous-versions/ff542254(v=vs.85))
+    [Device status and problem properties](https://docs.microsoft.com/windows-hardware/drivers/install/retrieving-the-status-and-problem-code-for-a-device-instance)
 
     [Device relations properties](https://docs.microsoft.com/previous-versions/ff541498(v=vs.85)), including the parent device, child devices, and sibling devices
 

@@ -8,6 +8,8 @@ ms.localizationpriority: medium
 
 # Declaring Functions Using Function Role Types for WDM Drivers
 
+> [!NOTE]
+> Starting in Windows 10 Version 2004, [Static Driver Verifier](https://review.docs.microsoft.com/en-us/windows-hardware/drivers/devtest/static-driver-verifier) (SDV) no longer requires annotations to identify role types of dispatch routines for WDM drivers.  Please follow the guidance in the *Basic and Advanced Initializations* section of this page.
 
 To inform SDV about the driver's entry points when you analyze a WDM driver, you must declare functions using function role type declarations. The function role types are defined in Wdm.h. Each entry point in the *DriverEntry* routine in your WDM driver must be declared by specifying the corresponding role type. The role types are predefined typedefs that correspond to the recognized entry points in a WDM driver.
 
@@ -63,7 +65,7 @@ SDV recognizes the types of entry points shown in the following table.
 <td align="left"><p></p>
 <strong><em>Dispatch_type</em>(</strong> <em>type</em> <strong>)</strong>
 DRIVER_DISPATCH</td>
-<td align="left"><p>The dispatch routine(s) used by the driver. See <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines" data-raw-source="[Writing Dispatch Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines)">Writing Dispatch Routines</a>. The <strong><em>Dispatch_type</em>(</strong><em>type</em><strong>)</strong> annotation must be combined with the DRIVER_DISPATCH role type declaration to specify the driver entry points.</p></td>
+<td align="left"><p>The dispatch routine(s) used by the driver. See <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines" data-raw-source="[Writing Dispatch Routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-dispatch-routines)">Writing Dispatch Routines</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IO_COMPLETION_ROUTINE</p></td>
@@ -107,71 +109,27 @@ DRIVER_DISPATCH</td>
 
 ### <span id="annotating_driver_dispatch_routines"></span><span id="ANNOTATING_DRIVER_DISPATCH_ROUTINES"></span>Declaring Driver Dispatch Routines
 
-The function role type declarations for dispatch routines require additional information. Use the annotation **\_Dispatch\_type\_(**<em>type</em>**)** in the declarations for dispatch routines that serve major IRP function codes. The *type* is the major I/O function code (for example, IRP\_MJ\_CREATE, IRP\_MJ\_CLOSE, IRP\_MJ\_SYSTEM\_CONTROL).
+Starting in Windows 10 Version 2004, the function role type declarations for dispatch routines are refined with their IRP category automatically based on the initialization of the DriverObject->MajorFunction table in the DriverEntry routine of a WDM driver.  
 
-For an example of how to declare driver dispatch routines, see the source code for the Cancel sample driver (Cancel.sys). In the header file for the driver (Cancel.h) there is a function role type declaration for *CsampCleanup*, a driver dispatch routine that handles the IRP\_MJ\_CLEANUP I/O function code. The **\_Dispatch\_type\_ (**<em>type</em>**)** annotation precedes the DRIVER\_DISPATCH role type declaration.
+A driver Foo must accomplish role declarations by using either the basic or advanced style of declaration in order to be compliant with SDV.  
 
-The *CsampCleanup* routine is declared as follows:
+#### Basic and Advanced Initializations
 
-```
-_Dispatch_type_(IRP_MJ_CLEANUP)
-DRIVER_DISPATCH CsampCleanup;
-```
-
-The Cancel sample driver also has a driver dispatch routine, *CsampCreateClose*, that handles both IRP\_MJ\_CREATE and IRP\_MJ\_CLOSE I/O function codes. The *CsampCreateClose* routine is declared in Cancel.h. Because this routine handles two I/O function codes, it requires two **\_Dispatch\_type\_** annotations in addition to the DRIVER\_DISPATCH role type declaration.
+The basic style can be seen in the example below (note the dispatch routine names FooCreate and FooCleanup are just examples, any appropriate name can be used):
 
 ```
-_Dispatch_type_(IRP_MJ_CREATE)
-_Dispatch_type_(IRP_MJ_CLOSE)
-DRIVER_DISPATCH CsampCreateClose;
+DriverObject->MajorFunction[IRP_MJ_CREATE] = FooCreate; //Basic style
+DriverObject->MajorFunction[IRP_MJ_CLEANUP] = FooCleanup;
 ```
 
-Suppose that a filter driver has a driver dispatch routine called *FilterDispatchIo* that handles the IRP\_MJ\_CREATE, IRP\_MJ\_CLOSE, IRP\_MJ\_CLEANUP, and IRP\_MJ\_DEVICE\_CONTROL I/O function codes.
-
-The *FilterDispatchIo* routine is declared in Filter.h as follows.
+A more advanced approach can be taken to shorten the list required.  While the same dispatch routine is used for more than one IRP category, a driver may encode two initializations this way:
 
 ```
-_Dispatch_type_(IRP_MJ_CREATE)
-_Dispatch_type_(IRP_MJ_CLOSE)
-_Dispatch_type_(IRP_MJ_CLEANUP)
-_Dispatch_type_(IRP_MJ_DEVICE_CONTROL)
-DRIVER_DISPATCH FilterDispatchIo;
+DriverObject->MajorFunction[IRP_MJ_CREATE] = 
+DriverObject->MajorFunction[IRP_MJ_CLEANUP] = FooCreateCleanup; // Advanced style for a multi-role dispatch routine 
 ```
 
-### <span id="quick_steps__how_to_annotate_a_wdm_driver"></span><span id="QUICK_STEPS__HOW_TO_ANNOTATE_A_WDM_DRIVER"></span>Quick Steps: How to Annotate a WDM Driver
-
-The procedure for declaring functions using the function role types is as follows:
-
-1.  Locate the source code for the *DriverEntry* routine.
-
-2.  Ensure that routines that are assigned to the following pointers are declared using function role types.
-
-    ```
-    DriverObject->DriverStartIo
-    DriverObject->Unload
-    DriverObject->DriverExtension->AddDevice 
-    ```
-
-    For example, the following code example shows the function role type declarations for routines that correspond to these pointers (*myDriverStartIO*, *myUnload*, and *myAddDevice*).
-
-    ```
-    DRIVER_STARTIO myDriverStartIo;
-    DRIVER_UNLOAD myUnload;
-    DRIVER_ADD_DEVICE myAddDevice 
-    ```
-
-3.  Ensure that routines that are assigned to the following pointers are declared using the DRIVER\_DISPATCH role type and that they have the **\_Dispatch\_type\_** annotations.
-
-    ```
-    DriverObject->MajorFunction[IRP_MJ_xxx]
-    ```
-
-    For example:
-
-    ```
-    _Dispatch_type_(IRP_MJ_CLEANUP)
-    DRIVER_DISPATCH CsampCleanup;
-    ```
+In order for a driver to be able to run SDV properly, **the driver must only use either the *basic* or *advanced* style shown above**.  SDV verficiation on the driver **will not work as expected** if one of these two methods is not used.
 
 ### <span id="function_parameters_and_function_role_types"></span><span id="FUNCTION_PARAMETERS_AND_FUNCTION_ROLE_TYPES"></span>Function Parameters and Function Role Types
 
@@ -200,12 +158,3 @@ myCompletionRoutine(
 
 
 To help you determine whether the source code is prepared, run [Code Analysis for Drivers](code-analysis-for-drivers.md). Code Analysis for Drivers checks for function role type declarations and can help identify function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
-
- 
-
- 
-
-
-
-
-
