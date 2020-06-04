@@ -79,7 +79,7 @@ There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, 
 </table>
 
  > [!NOTE]
- > If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's \_PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3hot.
+ > If a particular platform supports the D3cold feature, and the device driver for a device opts-in to D3cold, the device's \_PR3 power resources will, if they are not being used by any other device, be turned off sometime after the transition to D3Cold.
 
 For more information about the power resource requirements for a device that supports D3cold, see [Firmware Requirements for D3cold](firmware-requirements-for-d3cold.md).
 
