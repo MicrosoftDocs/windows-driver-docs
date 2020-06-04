@@ -8,10 +8,6 @@ ms.localizationpriority: medium
 
 # Using the Checked Build of Windows
 
-
-## <span id="ddk_using_the_checked_build_tools"></span><span id="DDK_USING_THE_CHECKED_BUILD_TOOLS"></span>
-
-
 This section includes:
 
 [What the Checked Build Checks](what-the-checked-build-checks.md)
@@ -27,11 +23,3 @@ This section includes:
 > [!NOTE]
 > Checked builds were available on older versions of Windows, before Windows 10 version 1803.
 > Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
- 
-
- 
-
-
-
-
-

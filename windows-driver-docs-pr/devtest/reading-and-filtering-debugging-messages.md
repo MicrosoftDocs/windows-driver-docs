@@ -16,44 +16,33 @@ keywords:
 - displaying debugging messages
 - prioritizing debugging messages WDK
 - DbgPrint buffer
-ms.date: 04/20/2017
+ms.date: 06/04/2020
 ms.localizationpriority: medium
 ---
 
-# Reading and Filtering Debugging Messages
-
-
-## <span id="ddk_reading_and_filtering_debugging_messages_tools"></span><span id="DDK_READING_AND_FILTERING_DEBUGGING_MESSAGES_TOOLS"></span>
-
+# Reading and filtering debugging messages
 
 The [**DbgPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex), [**vDbgPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-vdbgprintex), [**vDbgPrintExWithPrefix**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-vdbgprintexwithprefix), and [**KdPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex) routines send a message to the kernel debugger under conditions that you specify. This procedure enables you to filter out low-priority messages.
 
-**Note**   In Microsoft Windows Server 2003 and earlier versions of Windows, the [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) and [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint) routines send messages to the kernel debugger unconditionally. In Windows Vista and later versions of Windows, these routines send messages conditionally, like **DbgPrintEx** and **KdPrintEx**. Whichever version of Windows you are using, you should use **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, and **KdPrintEx**, because these routines enable you to control the conditions under which the message is sent.
+> [!NOTE]
+In Microsoft Windows Server 2003 and earlier versions of Windows, the [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) and [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint) routines send messages to the kernel debugger unconditionally.
+> In Windows Vista and later versions of Windows, these routines send messages conditionally, like **DbgPrintEx** and **KdPrintEx**.
+> Whichever version of Windows you are using, you should use **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, and **KdPrintEx**, because these routines enable you to control the conditions under which the message is sent.
 
- 
+## To filter debugging messages
 
-**To filter debugging messages**
+1. For each message that you want to send to the debugger, use **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, or **KdPrintEx** in your driver's code. Pass the appropriate component name to the *ComponentId* parameter, and pass a value to the *Level* parameter that reflects the severity or nature of this message. The message itself is passed to the *Format* and *arguments* parameters by using the same syntax as **printf**.
 
-1.  For each message that you want to send to the debugger, use **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, or **KdPrintEx** in your driver's code. Pass the appropriate component name to the *ComponentId* parameter, and pass a value to the *Level* parameter that reflects the severity or nature of this message. The message itself is passed to the *Format* and *arguments* parameters by using the same syntax as **printf**.
+1. Set the value of the appropriate *component filter mask*. Each component has a different mask. The mask value indicates which of that component's messages are displayed. You can set the component filter mask in the registry by using a registry editor or in memory by using a kernel debugger.
 
-2.  Set the value of the appropriate *component filter mask*. Each component has a different mask. The mask value indicates which of that component's messages are displayed. You can set the component filter mask in the registry by using a registry editor or in memory by using a kernel debugger.
-
-3.  Attach a kernel debugger to the computer. Every time that your driver passes a message to **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, or **KdPrintEx**, the values that are passed to *ComponentId* and *Level* are compared with the value of the corresponding component filter mask. If these values satisfy certain criteria, the message are sent to the kernel debugger and displayed. Otherwise, no message is sent.
+1. Attach a kernel debugger to the computer. Every time that your driver passes a message to **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, or **KdPrintEx**, the values that are passed to *ComponentId* and *Level* are compared with the value of the corresponding component filter mask. If these values satisfy certain criteria, the message are sent to the kernel debugger and displayed. Otherwise, no message is sent.
 
 For a full explanation, see the following section.
 
-**Note**   All references on this page to **DbgPrintEx** apply equally to **KdPrintEx**, **vDbgPrintEx**, and **vDbgPrintExWithPrefix**.
+> [!NOTE]
+> All references on this page to **DbgPrintEx** apply equally to **KdPrintEx**, **vDbgPrintEx**, and **vDbgPrintExWithPrefix**.
 
- 
-
--   [Identifying the Component Name](#identifying-the-component-name)
--   [Choosing the Correct Level](#choosing-the-correct-level)
--   [Setting the Component Filter Mask](#setting-the-component-filter-mask)
--   [Criteria for Displaying the Message](#criteria-for-displaying-the-message)
--   [Example](#example)
--   [DbgPrint Buffer and the Debugger](#dbgprint-buffer-and-the-debugger)
-
-### Identifying the Component Name
+## Identifying the component name
 
 Each component has a separate filter mask. This mask enables the debugger to configure the filter for each component separately.
 
@@ -63,64 +52,32 @@ There is a complete list of component names (in DPFLTR\_*XXXX*\_ID format) in th
 
 There are six component names that are reserved for independent hardware vendors. To avoid mixing your driver's output with the output of Windows components, you should use one of the following component names.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Component name</th>
-<th align="left">Driver type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IHVVIDEO</p></td>
-<td align="left"><p>Video driver</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IHVAUDIO</p></td>
-<td align="left"><p>Audio driver</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IHVNETWORK</p></td>
-<td align="left"><p>Network driver</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IHVSTREAMING</p></td>
-<td align="left"><p>Kernel streaming driver</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IHVBUS</p></td>
-<td align="left"><p>Bus driver</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IHVDRIVER</p></td>
-<td align="left"><p>Any other type of driver</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Component name | Driver type |
+| --- | --- |
+| IHVVIDEO | Video driver |
+| IHVAUDIO | Audio driver |
+| IHVNETWORK | Network driver |
+| IHVSTREAMING | Kernel streaming driver |
+| IHVBUS | Bus driver |
+| IHVDRIVER | Any other type of driver |
 
 For example, if you are writing a video driver, you would use DPFLTR\_IHVVIDEO\_ID as the *ComponentId* parameter of **DbgPrintEx**, use the value name IHVVIDEO in the registry, and refer to **Kd\_IHVVIDEO\_Mask** in the debugger.
 
 In Windows Vista and later versions of Windows, all messages that **DbgPrint** and **KdPrint** send are associated with the DEFAULT component (DPFLTR\_DEFAULT\_ID).
 
-### Choosing the Correct Level
+## Choosing the correct level
 
 The *Level* parameter of the **DbgPrintEx** routine is of type DWORD. It is used to determine the *importance bitfield*. The connection between the *Level* parameter and this bitfield depends on the size of *Level*:
 
--   If *Level* is equal to a number between 0 and 31, inclusive, the importance bitfield is interpreted as a bit shift. The importance bitfield is set to the value 1 &lt;&lt; *Level*. Thus, if you choose a value between 0 and 31 for *Level*, the bitfield has exactly one bit set. If *Level* is 0, the bitfield is equivalent to 0x00000001. If *Level* is 31, the bitfield is equivalent to 0x80000000.
+- If *Level* is equal to a number between 0 and 31, inclusive, the importance bitfield is interpreted as a bit shift. The importance bitfield is set to the value 1 &lt;&lt; *Level*. Thus, if you choose a value between 0 and 31 for *Level*, the bitfield has exactly one bit set. If *Level* is 0, the bitfield is equivalent to 0x00000001. If *Level* is 31, the bitfield is equivalent to 0x80000000.
 
--   If *Level* is a number between 32 and 0xFFFFFFFF inclusive, the importance bitfield is set to the value of *Level* itself.
+- If *Level* is a number between 32 and 0xFFFFFFFF inclusive, the importance bitfield is set to the value of *Level* itself.
 
 Thus, if you want to set the bitfield to 0x00004000, you can specify *Level* as 0x00004000 or simply as 14. As a consequence of this system, some bitfield values cannot be produced--including a bitfield that is entirely zero.
 
 The following constants can be useful for setting the value of *Level*. They are defined in the Dpfilter.h WDK header file:
 
-```ManagedCPlusPlus
+```cpp
 #define DPFLTR_ERROR_LEVEL 0
 #define DPFLTR_WARNING_LEVEL 1
 #define DPFLTR_TRACE_LEVEL 2
@@ -138,41 +95,40 @@ Use the warning, trace, and information levels in the appropriate situations. Yo
 
 In Windows Vista and later versions of Windows, all messages sent by **DbgPrint** and **KdPrint** behave like **DbgPrintEx** and **KdPrintEx** messages with *Level* equal to DPFLTR\_INFO\_LEVEL. In other words, these messages have the third bit of their importance bitfield set.
 
-### Setting the Component Filter Mask
+## Setting the component filter mask
 
 There are two ways to set a component filter mask:
 
 - On the target computer, you can access the component filter mask in the registry key **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Debug Print Filter**. Using a registry editor, create or open this key. Under this key, create a value with the name of the desired component, in uppercase letters (for example, **DEFAULT** or **IHVDRIVER**). Set this value equal to the DWORD value that you want to use as the component filter mask (for example, 0x8 to display DPFLTR\_INFO\_LEVEL messages, in addition to DPFLTR\_ERROR\_LEVEL, or set the mask to 0xF to display all messages).
 
-- If a kernel debugger is active, it can access the component filter mask value by dereferencing the address that is stored in the symbol **Kd\_**<em>XXXX</em>**\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you might want to specify this symbol as **nt!Kd\_**<em>XXXX</em>**\_Mask**.
+- If a kernel debugger is active, it can access the component filter mask value by dereferencing the address that is stored in the symbol **Kd\_***XXXX***\_Mask**, where *XXXX* is the desired component name. You can display the value of this mask in WinDbg or KD with the **dd (Display DWORD)** command, or enter a new component filter mask with the **ed (Enter DWORD)** command. If there is a danger of symbol ambiguity, you might want to specify this symbol as **nt!Kd\_***XXXX***\_Mask**.
 
 Filter masks that are stored in the registry take effect during boot. Filter masks that are created by the debugger take effect immediately and persist until the target computer is restarted. The debugger can override a value that is set in the registry, but the component filter mask returns to the value that is specified in the registry if the target computer is restarted.
 
 There is also a system-wide mask called WIN2000. By default, this mask is equal to 0x1, but you can change it through the registry or the debugger like all other components. When filtering is performed, each component filter mask is first combined with the WIN2000 mask by using a bitwise OR. In particular, this combination means that components whose masks have never been specified default to 0x1.
 
-### Criteria for Displaying the Message
+## Criteria for displaying the message
 
 When **DbgPrintEx** is called in kernel-mode code, Windows compares the message importance bitfield that is specified by *Level* with the filter mask of the component that is specified by *ComponentId*.
 
-**Note**   Recall that when the *Level* parameter is between 0 and 31, the importance bitfield is equal to 1 &lt;&lt; *Level*. But when the *Level* parameter is 32 or higher, the importance bitfield is simply equal to *Level*.
-
- 
+> [!NOTE]
+> Recall that when the *Level* parameter is between 0 and 31, the importance bitfield is equal to 1 << *Level*. But when the *Level* parameter is 32 or higher, the importance bitfield is simply equal to *Level*.
 
 Windows performs an AND operation on the importance bitfield and the component filter mask. If the result is nonzero, the message is sent to the debugger.
 
-### Example
+## Example
 
 Suppose that before the last boot, you created the following values in the **Debug Print Filter** key:
 
--   IHVVIDEO, with a value equal to DWORD 0x2.
+- IHVVIDEO, with a value equal to DWORD 0x2.
 
--   IHVBUS, equal to DWORD 0x7FF.
+- IHVBUS, equal to DWORD 0x7FF.
 
 Now you issue the following commands in the kernel debugger:
 
-```
-kd> ed Kd_IHVVIDEO_Mask 0x8 
-kd> ed Kd_IHVAUDIO_Mask 0x7 
+```console
+kd> ed Kd_IHVVIDEO_Mask 0x8
+kd> ed Kd_IHVAUDIO_Mask 0x7
 ```
 
 At this point, the IHVVIDEO component has a filter mask of 0x8, the IHVAUDIO component has a filter mask of 0x7, and the IHVBUS component has a filter mask of 0x7FF.
@@ -181,7 +137,7 @@ However, because these masks are automatically combined with the WIN2000 system-
 
 Now suppose that the following function calls occur in various drivers:
 
-```
+```cpp
 DbgPrintEx( DPFLTR_IHVVIDEO_ID,  DPFLTR_INFO_LEVEL,   "First message.\n");
 DbgPrintEx( DPFLTR_IHVAUDIO_ID,  7,                   "Second message.\n");
 DbgPrintEx( DPFLTR_IHVBUS_ID,    DPFLTR_MASK | 0x10,  "Third message.\n");
@@ -196,7 +152,7 @@ The third message has its *Level* parameter equal to DPFLTR\_MASK | 0x10. This v
 
 The fourth message was passed to the **DbgPrint** routine instead of the **DbgPrintEx** routine. In Windows Server 2003 and earlier versions of Windows, messages that are passed to **DbgPrint** are always transmitted. In Windows Vista and later versions of Windows, messages that are passed to **DbgPrint** are always given a default filter. The importance bitfield is equal to 1 &lt;&lt; DPFLTR\_INFO\_LEVEL, which is 0x00000008. The component for this routine is DEFAULT. Because you have not set the DEFAULT component filter mask, it has a value of 0x1. When this mask is combined with the importance bitfield by using an AND operation, the result is zero. So the fourth message is not transmitted.
 
-### DbgPrint Buffer and the Debugger
+## DbgPrint buffer and the debugger
 
 When the **DbgPrint**, **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, **KdPrint**, or **KdPrintEx** routine transmits a message to the debugger, the formatted string is sent to the **DbgPrint** buffer. The contents of this buffer are displayed immediately in the Debugger Command window, unless you disabled this display by using the **Buffer DbgPrint Output** option of GFlags.
 
@@ -204,13 +160,8 @@ If you disabled this display, you can view the contents of the DbgPrint buffer o
 
 Any single call to **DbgPrint**, **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, **KdPrint**, or **KdPrintEx** transmits only 512 bytes of information. Any output longer than the 512 bytes is lost. The DbgPrint buffer itself can hold up to 4 KB of data on a free build of Windows, and up to 32 KB of data on a checked build of Windows. On Windows Server 2003 and later versions of Windows, you can use the KDbgCtrl tool to alter the size of the DbgPrint buffer. This tool is part of Debugging Tools for Windows.
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
+
 If a message is filtered out because of its *ComponentId* and *Level* values, it is not transmitted across the debugging connection. Therefore, there is no way to display this message in the debugger.
-
- 
-
- 
-
-
-
-
-
