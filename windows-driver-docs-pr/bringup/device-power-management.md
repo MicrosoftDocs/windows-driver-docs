@@ -1,6 +1,6 @@
 ---
 title: Device power management
-description: The ACPI 5.0 specification defines a set of namespace objects to specify device power information for a device.
+description: The ACPI 6.3 specification defines a set of namespace objects to specify device power information for a device.
 ms.assetid: F57AD5A0-F459-4A20-BDBE-87C30CF957B3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Device power management
 
-The [ACPI 5.0 specification](https://uefi.org/specifications) defines a set of namespace objects to specify device power information for a device. For example, one set of objects can specify the power resources that a device requires in each supported device power state. Another object type can describe the ability of the device to wake from a low-power state in response to hardware events.
+The [ACPI 6.3 specification](https://uefi.org/specifications) defines a set of namespace objects to specify device power information for a device. For example, one set of objects can specify the power resources that a device requires in each supported device power state. Another object type can describe the ability of the device to wake from a low-power state in response to hardware events.
 
 ## Device power management in Windows
 
@@ -72,11 +72,6 @@ There is a Power Resource Requirements (\_PRx) object, where x = 0, 1, 2, or 3, 
 </tr>
 <tr class="even">
 <td>D3hot (required)</td>
-<td>_PR2</td>
-<td><p>The same resources as the next higher state that is supported (D2, D1, or D0).</p></td>
-</tr>
-<tr class="odd">
-<td>D3cold</td>
 <td>_PR3</td>
 <td><p>Only the power or clocks required for the device to appear on its bus and respond to a bus-specific command.</p></td>
 </tr>
