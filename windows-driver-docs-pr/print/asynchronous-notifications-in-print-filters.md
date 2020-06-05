@@ -128,6 +128,6 @@ if (SUCCEEDED(hr))
  // RouterCreatePrintAsyncNotificationChannel
         );
 
-    // Etc.
+    // etc...
 }
 ```

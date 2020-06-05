@@ -23,7 +23,7 @@ If a printing device supports Bluetooth, it should meet the following requiremen
 
   The Windows operating system does not use the 1284 ID to track a device that is attached through multiple buses. Printers should use the same 1284 ID so that the operating system can load appropriate drivers through a single INF entry. The printer bus drivers create PnP IDs with and without a bus specified. For example, Bluetooth printers get an ID of the form "BTHPRINT\\hpdeskje1234" and of the form "hpdeskje1234". The first form is bus-specific, the second form is bus-neutral. You can create an INF with either of these IDs, depending on whether your driver package is completely bus-neutral or not.
 
-- The device must support the Bluetooth Hard Copy Replacement Profile (HCRP). For more information about HCRP for Bluetooth, see the [Bluetooth Web site](https://go.microsoft.com/fwlink/p/?linkid=26268).
+- The device must support the Bluetooth Hard Copy Replacement Profile (HCRP). For more information about HCRP for Bluetooth, see the [Bluetooth Web site](https://www.bluetooth.com/specifications/profiles-overview).
 
   > [!NOTE]
-  > Microsoft supports the serial port profile (SPP), but authentication is required. However, we recommend the HCRP instead of the SPP because HCRP provides a better user experience.
+  > Microsoft supports the serial port profile (SPP), but authentication is required. We recommend HCRP instead of SPP because HCRP provides a better user experience.
