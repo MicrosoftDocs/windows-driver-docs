@@ -2,7 +2,7 @@
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10
 description: You can do kernel debugging over an Ethernet network cable when the target computer is running Windows. The target computer must have a supported network interface card (NIC) or network adapter.
 ms.assetid: F98A7ACE-DD04-423C-A438-89E21363C693
-ms.date: 02/20/2020
+ms.date: 06/01/2020
 ms.localizationpriority: medium
 ---
 
@@ -18,7 +18,7 @@ To do kernel debugging over a network cable, the target computer must have a sup
 
 The list of supported adapters is for the following versions of Windows
 
-- Windows 10, version 1809
+- Windows 10, version 2004
 - Windows Server 2019
 
 **Adapter Support for Previous Releases of Windows**  
@@ -29,19 +29,18 @@ To determine which set of NICs is supported for any particular release of Window
 
 Checking the VerifiedNicList.xml that ships in the WDK for a particular release, is required because additional hardware support is added to new releases of Windows that is not present in previous releases.  So you must check the VerifiedNicLIst.xml file for that particular release.
 
-## <span id="Finding_the_vendor_ID_and_device_ID"></span><span id="finding_the_vendor_id_and_device_id"></span><span id="FINDING_THE_VENDOR_ID_AND_DEVICE_ID"></span>Finding the vendor ID and device ID
+## Finding the vendor ID and device ID
 
-First find the vendor ID and device ID of the network adapter on your target computer.
+To find the vendor ID and device ID of the network adapter on your target computer.
 
--  On the target computer, open Device Manager (enter **devmgmt** in a Command Prompt window).
--  In Device Manager, locate the network adapter that you want to use for debugging.
--  Right click the network adapter node, and choose **Properties**.
--  In the **Details** tab, under **Property**, select **Hardware Ids**.
+- On the target computer, open Device Manager (enter **devmgmt** in a Command Prompt window).
+- In Device Manager, locate the network adapter that you want to use for debugging.
+- Right click the network adapter node, and choose **Properties**.
+- In the **Details** tab, under **Property**, select **Hardware Ids**.
 
 The vendor and device IDs are shown as VEN\_*VendorID* and DEV\_*DeviceID*. For example, if you see PCI\\VEN\_8086&DEV\_104B, the vendor ID is 8086, and the device ID is 104B.
 
-## <span id="Vendor_ID_8086__Intel_Corporation"></span><span id="vendor_id_8086__intel_corporation"></span><span id="VENDOR_ID_8086__INTEL_CORPORATION"></span>Vendor ID 8086, Intel Corporation
-
+## Vendor ID 8086, Intel Corporation
 
 For vendor ID 8086, these device IDs are supported:
 
@@ -219,6 +218,19 @@ For vendor ID 8086, these device IDs are supported:
 15AE
 15B7
 15B8
+15B9
+15BB
+15BC
+15BD
+15BE
+15D6
+15D7
+15D8
+15DF
+15E0
+15E1
+15E2
+15E3
 17D0
 1F40
 1F41
@@ -230,20 +242,24 @@ For vendor ID 8086, these device IDs are supported:
 294C
 8976
 
-## <span id="vendor_id_10ec__realtek_semiconductor_corp."></span><span id="VENDOR_ID_10EC__REALTEK_SEMICONDUCTOR_CORP."></span>Vendor ID 10EC, Realtek Semiconductor Corp.
-
+## Vendor ID 10EC, Realtek Semiconductor Corp.
 
 For vendor ID 10EC, these device IDs are supported:
 
+2502
+2600
+3000
+8125
 8136
 8137
+8161
 8166
 8167
 8168
 8169
+8225
 
-## <span id="Vendor_ID_14E4__Broadcom"></span><span id="vendor_id_14e4__broadcom"></span><span id="VENDOR_ID_14E4__BROADCOM"></span>Vendor ID 14E4, Broadcom
-
+## Vendor ID 14E4, Broadcom
 
 For vendor ID 14E4, these device IDs are supported:
 
@@ -354,8 +370,7 @@ For vendor ID 14E4, these device IDs are supported:
 170E
 170F
 
-## <span id="Vendor_ID_1969__Atheros_Communications"></span><span id="vendor_id_1969__atheros_communications"></span><span id="VENDOR_ID_1969__ATHEROS_COMMUNICATIONS"></span>Vendor ID 1969, Atheros Communications
-
+## Vendor ID 1969, Atheros Communications
 
 For vendor ID 1969, these device IDs are supported:
 
@@ -387,8 +402,7 @@ E0D1
 E0E1
 E0F1
 
-## <span id="Vendor_ID_19A2__ServerEngines__Emulex_"></span><span id="vendor_id_19a2__serverengines__emulex_"></span><span id="VENDOR_ID_19A2__SERVERENGINES__EMULEX_"></span>Vendor ID 19A2, ServerEngines (Emulex)
-
+## Vendor ID 19A2, ServerEngines (Emulex)
 
 For vendor ID 19A2, these device IDs are supported:
 
@@ -398,16 +412,14 @@ For vendor ID 19A2, these device IDs are supported:
 0700
 0710
 
-## <span id="Vendor_ID_10DF__Emulex_Corporation"></span><span id="vendor_id_10df__emulex_corporation"></span><span id="VENDOR_ID_10DF__EMULEX_CORPORATION"></span>Vendor ID 10DF, Emulex Corporation
-
+## Vendor ID 10DF, Emulex Corporation
 
 For vendor ID 10DF, these device IDs are supported:
 
 0720
 E220
 
-## <span id="Vendor_ID_15B3__Mellanox_Technology"></span><span id="vendor_id_15b3__mellanox_technology"></span><span id="VENDOR_ID_15B3__MELLANOX_TECHNOLOGY"></span>Vendor ID 15B3, Mellanox Technology
-
+## Vendor ID 15B3, Mellanox Technology
 
 For vendor ID 15B3, these device IDs are supported:
 
@@ -463,15 +475,13 @@ For vendor ID 15B3, these device IDs are supported:
 676E
 6778
 
-## <span id="Vendor_ID_1137__Cisco_Systems_Inc"></span><span id="vendor_id_1137__cisco_systems_inc"></span><span id="VENDOR_ID_1137__CISCO_SYSTEMS_INC"></span>Vendor ID 1137, Cisco Systems Inc
-
+## Vendor ID 1137, Cisco Systems Inc
 
 For vendor ID 1137, these device IDs are supported:
 
 0043
 
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio](setting-up-a-network-debugging-connection-in-visual-studio.md)
 

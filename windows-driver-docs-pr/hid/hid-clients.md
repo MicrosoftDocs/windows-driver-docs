@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # HID Clients Overview
 
-Human Interface Devices (HID) cients are drivers, services or applications that communicate using the HID API and often represent a specific type of device such as a sensor, keyboard, or mouse. Devices are identified by a hardware ID or a specific HID Collection and communicate via the HID API.
+Human Interface Devices (HID) clients are drivers, services or applications that communicate using the HID API and often represent a specific type of device such as a sensor, keyboard, or mouse. Devices are identified by a hardware ID or a specific HID Collection and communicate via the HID API.
 
 | Topic | Description |
 | --- | --- |

@@ -8,7 +8,7 @@ keywords:
 - user-mode debugging WDK printer
 - macros WDK printer
 - global variables WDK debugging
-ms.date: 01/30/2019
+ms.date: 06/04/2020
 ms.localizationpriority: medium
 ---
 
@@ -17,6 +17,10 @@ ms.localizationpriority: medium
 If you are developing a printer driver rendering plug-in or user interface plug-in, you can enable debug messages in these components. As explained in the Global Debug Variable section, you can use a global debug variable to control the level of detail in messages appearing in the debugger window.
 
 You can use the macros discussed in the Debug Message Macros section to send messages to the debugger window under a variety of conditions. In addition, you can use the information in this section to enable debug messages in the Microsoft Universal Printer Driver (Unidrv) or PostScript Printer Driver (Pscript) renderers, provided that you have checked builds of these DLLs.
+
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 Steps for debugging a user-mode driver and some general debugging tips are included in the next two sections.
 
@@ -34,7 +38,9 @@ To start debugging printer drivers and their components:
 It is advisable to install the checked build of only the components that you are interested in debugging. Typically you would replace the following retail binaries with their corresponding checked builds:
 
 - Unidrv.dll
+
 - Unidrvui.dll
+
 - Unires.dll
 
 You should also install the checked build of the Oemuni sample or the printer driver that you are debugging. The advantage of using this approach, as opposed to installing an entire checked build system, is that you won't slow down the entire system.
@@ -49,8 +55,11 @@ To begin user-mode debugging, on the **File** menu in Windbg debugger select **A
 The following procedure will get you ready to debug the Oemuni sample.
 
 1. Install the Oemuni sample on the "FILE:" port.
+
 1. Launch the WordPad application by clicking the **Start** menu, selecting **All Programs**, selecting **Accessories**, and then selecting **WordPad**.
+
 1. On the WinDbg **File** menu, select **Attach to a Process**. In the list of available processes, select **WordPad.exe**.
+
 1. Start a print job from WordPad. You are now ready to debug the Oemuni sample.
 
 You can enable verbose debugging by turning on the giDebugLevel variable. Its default value is 3, which denotes WARNING. If set to 1, it denotes VERBOSE. To set the latter value with Unidrv.dll, type the following command in the debugger:
