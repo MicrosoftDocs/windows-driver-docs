@@ -16,7 +16,7 @@ The instructions in this topic will focus on the steps required for building a d
 
 ### Select features for the basic driver
 
-1. In Visual Studio, in the main menu, click **File** &gt; **New** &gt; **Project**.
+1. In Visual Studio, in the main menu, click **File** > **New** > **Project**.
 
 2. In the **New Project** window, in the top-right search box, type *printer driver v4* and press enter. This will retrieve all driver templates whose names contain the search text.
 
@@ -36,7 +36,7 @@ Microsoft Visual Studio uses the preceding selections to generate the project fi
 
 ### Verify the generated driver files
 
-1. Navigate to the folder for the generated driver files. For example, if you named your project *MyV4PrintDriver*, then by default, the files would be saved to the following location: *My Documents &gt; Visual Studio 2017 &gt; Projects &gt; MyV4PrintDriver &gt; MyV4PrintDriver*.
+1. Navigate to the folder for the generated driver files. For example, if you named your project *MyV4PrintDriver*, then by default, the files would be saved to the following location: *My Documents > Visual Studio 2017 > Projects > MyV4PrintDriver > MyV4PrintDriver*.
 
 2. Verify that the folder contains the following files:
 
@@ -70,9 +70,9 @@ In the MyV4PrintDriver project there should be an entry for **Driver Files**. Op
 
 The first 2 lines of the INF file are the copyright notice for the driver package.
 
-Line 1 contains the year and name of your company. Replace the characters YYYY with the current year and replace the characters &lt;*Your manufacturer name*&gt; with the name of your company.
+Line 1 contains the year and name of your company. Replace the characters YYYY with the current year and replace the characters <*Your manufacturer name*> with the name of your company.
 
-Line 2 describes the contents of the driver INF including Manufacturer name and device Model information. Replace the characters &lt;*Your manufacturer name*&gt; with the name of your company and replace the characters of &lt;*Printer Model*&gt; with the model name of the printer supported by the driver.
+Line 2 describes the contents of the driver INF including Manufacturer name and device Model information. Replace the characters <*Your manufacturer name*> with the name of your company and replace the characters of <*Printer Model*> with the model name of the printer supported by the driver.
 
 For example, if the year is 2017 and your company’s name is Fabrikam, and the print device model is 1234 you would type the following:
 
@@ -158,7 +158,7 @@ And then after the comma, paste the GUID that you copied in the preceding step. 
 
 Find the line containing **\[Strings\]**.
 
-Below this you will find the definition of the *ManufacturerName* string. Replace the characters &lt;Your manufacturer name&gt; with the name of your company to provide a manufacturer’s name for the target printer and delete the rest of the line containing the ;TODO:
+Below this you will find the definition of the *ManufacturerName* string. Replace the characters <*Your manufacturer name*> with the name of your company to provide a manufacturer’s name for the target printer and delete the rest of the line containing the ;TODO:
 
 For example, if your company’s name is Fabrikam, you would type the following:
 
@@ -268,7 +268,7 @@ DiskName="MyV4PrintDriver Installation Disk"
 
 4. In the right pane, confirm that **Sign Mode** is set to Test Sign.
 
-5. Click **Test Certificate**, then select &lt;Create Test Certificate…&gt; from the drop-down box.
+5. Click **Test Certificate**, then select **Create Test Certificate...** from the drop-down box.
 
 6. Click **TimeStampServer**, then select Verisign from the drop-down box.
 
@@ -287,4 +287,4 @@ Create a print queue using either plug-and-play or the Add Printer Wizard.
 For more information about INF files for the v4 printer driver, see [V4 Driver INF](v4-driver-inf.md).
 
 > [!NOTE]
-> In addition to the files in the preceding table, notice that a *MyV4PrintDriver Render Filter* folder was created. This is the render filter project template and it provides a good foundation for building an XPS rendering filter and an XPS filter pipeline configuration file. For more information about XPS rendering filters, see [XPSDrv Render Module](xpsdrv-render-module.md), and to see an example of an XPS rendering filter, see the [XPS Rasterization Filter Service](https://go.microsoft.com/fwlink/p/?LinkId=617951) sample.
+> In addition to the files in the preceding table, notice that a *MyV4PrintDriver Render Filter* folder was created. This is the render filter project template and it provides a good foundation for building an XPS rendering filter and an XPS filter pipeline configuration file. For more information about XPS rendering filters, see [XPSDrv Render Module](xpsdrv-render-module.md), and to see an example of an XPS rendering filter, see the [XPS Rasterization Filter Service](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/xps-rasterization-filter-service-sample/) sample.
