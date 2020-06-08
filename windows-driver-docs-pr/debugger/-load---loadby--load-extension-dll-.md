@@ -74,7 +74,7 @@ To load an extension DLL, you can do one of the following:
 
 - Execute an extension by issuing the full **!**<em>DLLName</em>**.**<em>ExtensionCommand</em> syntax. If the debugger has not yet loaded *DLLName*.dll, it loads the DLL at this point if it is located in the current DLL search path.
 
-Use the [.chain]() command to display information about what has been loaded and the current DLL search path.
+Use the [.chain](-chain--list-debugger-extensions-.md) command to display information about what has been loaded and the current DLL search path.
 
 ```dbgcmd
 0:000> .chain
