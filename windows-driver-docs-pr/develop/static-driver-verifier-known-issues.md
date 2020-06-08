@@ -124,4 +124,4 @@ c:\Program Files\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\VC\VCTarget
 Done executing task "LIB" -- FAILED.
 ```
 
-Please use errata 41600 for this issue.
+This is a known issue. If this issue is blocking your WHCP certification, please use errata 41600.

@@ -3,7 +3,7 @@ title: PLMDebug
 description: PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). 
 ms.assetid: 68BE8F5D-6425-43E2-B5BC-C1D35614AB32
 keywords: ["PLMDebug Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/03/2020
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,9 @@ ms.localizationpriority: medium
 
 # PLMDebug
 
-
 PLMDebug.exe is a tool that enables you to use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). With PLMDebug, you can take manual control of suspending, resuming, and terminating a Windows app.
 
 **Tip**  With Windows 10, version 1607 or later, you can use the UWP commands, such as .createpackageapp to debug UWP apps. For more information see [Debugging a UWP app using WinDbg](debugging-a-uwp-app-using-windbg.md).
-
- 
 
 **Where to get PLMDebug**
 
@@ -40,7 +37,6 @@ plmdebug /activateBgTaskTaskId "{TaskID}"
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______Package"></span><span id="_______package"></span><span id="_______PACKAGE"></span> *Package*  
 The full name of a package or the ID of a running process.
@@ -164,7 +160,7 @@ Finally, decrement the debug reference count for the package.
 
 **Manually activate a background task**
 
-Suppose you want to manually activate a background task for debugging. You can query for the list of background task registered and then activate it through plmdebug.
+To manually activate a background task for debugging you can query for the list of background task registered and then activate it through plmdebug.
 
 First query the set of background tasks registered:
 
@@ -179,23 +175,12 @@ If you want to guarantee that the task activates, enable debug mode first. For e
 
 **plmdebug /enabledebug MyApp\_1.0.0.0\_x64\_\_tnq5r49etfg3c**
 
-Activate the desired task using its registration GUID.
+Then activate the desired task using its registration GUID, that you enumerated.
 
 **plmdebug /activatebgtask "{50DB0363-D722-4E23-A18F-1EF49B226CC3}"**
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [How to trigger suspend, resume, and background events in Windows Apps](https://go.microsoft.com/fwlink/p/?LinkID=267916)
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)
-
- 
-
- 
-
-
-
-
-
-

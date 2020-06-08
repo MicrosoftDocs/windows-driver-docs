@@ -2,7 +2,7 @@
 title: Getting Started with WinDbg (Kernel-Mode)
 description: This topic provides hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
 ms.assetid: 1B61591F-0D48-4FBD-B242-68BB90D27FAF
-ms.date: 02/20/2020
+ms.date: 06/02/2020
 ms.localizationpriority: medium
 ---
 
@@ -168,7 +168,7 @@ After you have set up your host and target computer and connected them with a de
 
 13. Clear your breakpoint by entering this command:
 
-    [**bc\***](bc--breakpoint-clear-.md)
+    [**bc \***](bc--breakpoint-clear-.md)
 
     Enter [**g**](g--go-.md) to let the target computer run. Break in again by choosing **Break** from the **Debug** menu or pressing **CTRL-Break**.
 
