@@ -76,7 +76,7 @@ Key items of note:
 
 - Kernel DMA Protection must be enabled in system BIOS/UEFI, in order for the OS to parse the \_DSD and apply necessary protections to the PCI port.
 
-- Drivers of devices connected to this port MUST support DMA remapping, otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard).
+- Drivers of devices connected to this port MUST support [DMA remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers), otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard).
 
 ```asl
 Name (_DSD, Package () {  
@@ -109,5 +109,7 @@ Name (_DSD, Package () {
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
 
 [Kernel DMA Protection for Thunderbolt 3](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
+
+[Enabling DMA Remapping for device drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)
 
 [D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface)
