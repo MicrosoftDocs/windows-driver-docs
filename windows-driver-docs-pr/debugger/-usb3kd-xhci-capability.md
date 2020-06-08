@@ -113,7 +113,7 @@ Now you can pass the address of the device extension to the **!xhci\_capability*
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
 
  
 

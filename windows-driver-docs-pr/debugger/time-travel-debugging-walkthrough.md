@@ -39,7 +39,7 @@ You will need the following hardware to be able to complete the lab.
 
 You will need the following software to be able to complete the lab.
 
-- The WinDbg Preview. For information on installing WinDbg Preview, see [WinDbg Preview - Installation](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-install-preview)
+- The WinDbg Preview. For information on installing WinDbg Preview, see [WinDbg Preview - Installation](windbg-install-preview.md)
 - Visual Studio to build the sample C++ code.
 
 The lab has the following three sections.

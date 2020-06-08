@@ -46,7 +46,7 @@ Usb3kd.dll
 Remarks
 -------
 
-The output the [**!xhci\_trb**](-usb3kd-device-info.md) command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkID=251983).
+The output the [**!xhci\_trb**](-usb3kd-device-info.md) command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB host-side drivers in Windows](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-3-0-driver-stack-architecture).
 
 Examples
 --------
@@ -77,7 +77,7 @@ In the following example, **0x0dced7c00** is the physical address of a TRB. The 
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
 
  
 
