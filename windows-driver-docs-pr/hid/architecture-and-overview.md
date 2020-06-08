@@ -38,7 +38,7 @@ The I²C controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface
 ## The GPIO Controller Driver
 
 
-The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple slave component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the I²C channel.
+The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple subordinate component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the I²C channel.
 
 ## The Resource Hub
 
