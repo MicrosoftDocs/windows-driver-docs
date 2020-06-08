@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 The [**DbgPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprintex), [**vDbgPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-vdbgprintex), [**vDbgPrintExWithPrefix**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-vdbgprintexwithprefix), and [**KdPrintEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprintex) routines send a message to the kernel debugger under conditions that you specify. This procedure enables you to filter out low-priority messages.
 
 > [!NOTE]
-In Microsoft Windows Server 2003 and earlier versions of Windows, the [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) and [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint) routines send messages to the kernel debugger unconditionally.
+> In Microsoft Windows Server 2003 and earlier versions of Windows, the [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) and [**KdPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdprint) routines send messages to the kernel debugger unconditionally.
 > In Windows Vista and later versions of Windows, these routines send messages conditionally, like **DbgPrintEx** and **KdPrintEx**.
 > Whichever version of Windows you are using, you should use **DbgPrintEx**, **vDbgPrintEx**, **vDbgPrintExWithPrefix**, and **KdPrintEx**, because these routines enable you to control the conditions under which the message is sent.
 
