@@ -38,9 +38,9 @@ To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.
 
     ![screen shot of the solution explorer window, showing the solution and the empty driver project (kmdfhelloworld)](images/vs2015-kmdf-hello-world-solution-explorer.png)
 
-7.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**  Click **Cancel**.
+7.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**  Click **Apply**, and then click **OK**..
 
-8.  In the **Solution Explorer** window, again right-click the **KmdfHelloWorld** project and choose **Add &gt; New Item**.
+8.  In the **Solution Explorer** window, again right-click the **KmdfHelloWorld** project, choose **Add**, and then click **New Item**.
 9.  In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".
 
     > [!NOTE]
