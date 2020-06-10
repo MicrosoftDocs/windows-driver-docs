@@ -161,8 +161,8 @@ EvtDeviceArmWakeFromSx(
 ```
 ## Power management scenarios for Modern Standby system
 
- > [!IMPORTANT]
-For Modern Standby platform, the networking device driver must: 
+> [!IMPORTANT]
+> For Modern Standby platform, the networking device driver must: 
 > *  Call [**WdfDeviceSetPowerCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetpowercapabilities) to report a device's power management capabilities to the OS.
 > * Call [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to support device idling when the system is in its working (S0) state.
 > * Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to enable wake-up callbacks
@@ -171,9 +171,9 @@ For Modern Standby platform, the networking device driver must:
 
 For networking device, the OS is responsible for the power policy decision for the device, i.e. the OS controls when the device must go to Dx and what kind of network events the device should wake-up on. The device driver's responsiblity is to reliably execute the power transition flow when requested by the OS, and correctly program their hardware according to the condition set by the OS.
 
-The OS makes the power policy decision based an arry of factors, including system-wide power policies and user decisions. The following are some possible power policies that a networking device could experience on a Modern Standby system:
+The OS makes the power policy decision based an array of factors, including system-wide power policies and user decisions. The following are some possible power policies that a networking device could encounter on a Modern Standby system:
 
-> [!WARNING] The power policies might change between releases as the OS evolves, and they are listed here just for illustration purpose.  
+> [!IMPORTANT] The power policies might change between releases as the OS evolves, and they are listed here just for illustration purpose.  
 
 * When the PC screen is on and the networking device has been idling, the OS asks the device go to Dx and arms it for PacketFilter and MediaChange wake.
 
