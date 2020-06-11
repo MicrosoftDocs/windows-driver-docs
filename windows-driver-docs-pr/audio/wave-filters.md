@@ -102,6 +102,9 @@ For more information, see [Implementation Issues for WavePci Devices](implementa
 
 ### <span id="wavecyclic_filter"></span><span id="WAVECYCLIC_FILTER"></span>WaveCyclic Filters
 
+> [!NOTE]
+> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's Style Guide for Bias-Free Communications recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
+
 **Note: WaveCyclic Information for previous versions of Windows**
 
 A WaveCyclic filter is implemented as a port/miniport driver pair. A WaveCyclic filter factory creates a WaveCyclic filter as follows:
