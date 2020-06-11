@@ -45,7 +45,7 @@ Client drivers set their low power protocol offload capabilities by calling the 
 
 ### Wake-Up Capabilities
 
-Next, client drivers call any of the following methods to set the wake capabilities that their hardware supports when the device is in low power state (Dx):
+Client drivers call any of the following methods to set the wake capabilities that their hardware supports when the device is in low power state (Dx):
 
 - [**NetAdapterWakeSetBitmapCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetbitmapcapabilities)
 - [**NetAdapterWakeSetMagicPacketCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetmagicpacketcapabilities)
@@ -68,7 +68,7 @@ The table below describes the general guidelines regarding the trade-off between
 | MagicPacket | Magic packet | Similar to Bitmap | <= 300 ms
 | MediaChange | Media connected or disconnected | Similar to Bitmap | <= 300 ms
 
-The following example shows how a client driver might initialize its power capabilities, which it does while starting the net adapter but before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart). In this example, the client driver sets its bitmap, media change, and packet filter wake capabilities.
+The following example shows how a client driver might initialize its power capabilities. It does this while starting the net adapter but before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart). In this example, the client driver sets its bitmap, media change, and packet filter wake capabilities.
 
 ```C++
 //
@@ -185,7 +185,7 @@ On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filte
 
 The OS is responsible for networking devices' power policy decisions. For example, the OS controls when a device must go to Dx and what kinds of network events the device should wake on. The device driver's responsibility is to reliably execute the power transition sequence when requested by the OS, and then correctly program their hardware for the wake condition set by the OS.
 
-The OS makes the power policy decision based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
+The OS makes power policy decisions based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
 
 > [!WARNING] 
 > These power policies might change between releases as the OS evolves, and they are listed here just for illustration.
