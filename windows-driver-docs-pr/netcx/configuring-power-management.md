@@ -49,14 +49,14 @@ Next, client drivers call any of the following methods to set the wake capabilit
 - [**NetAdapterWakeSetMediaChangeCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetmediachangecapabilities)
 - [**NetAdapterWakeSetPacketFilterCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetpacketfiltercapabilities)
 
-When the networking device is in Dx, it still needs to consume some power to be armed for wake. And after the device starts to wake-up from Dx, there is a delay before the device can transfer or receive packets again. Deeper the internal power state the device goes into, less power it consumes while in Dx, but longer the resume latency. The table below describes the general guidelines regarding the trade-off between power consumption and resume latency for each wake capability. 
+When the networking device is in Dx, it still needs to consume some power to perform offload and arm for wake. And after the device starts to wake-up from Dx, there is also a delay before the device can transfer packets again. Deeper the internal power state the device goes into, less power it consumes while in Dx, but longer the resume latency is. The table below describes the general guidelines regarding the trade-off between power consumption and resume latency for each wake capability. 
 
 > [!Warning] The guidelines are still under review and might change in the future. Please refer to media specific documentation and WHCP for more information about your device type
   
 | Wake Capability | Wake Events | Power Consumption | Resume Latency
 |-|-|-|-|
-| PacketFilter | any packet matches configured ReceivePacketFilter | should be lower than when in D0, but the device needs to be in an internal power state that the resume latency is very small  | <= 10 ms
-| Bitmap | any packet matches configured bitmap pattern | should be lower than when armed for PacketFilter, because it has more latitude in resume latency requirement | <= 300 ms
+| PacketFilter | any packet matches configured ReceivePacketFilter | should be lower than when in D0, and the device needs to be kept in an appropriate state that the resume latency is very small  | <= 10 ms
+| Bitmap | any packet matches configured bitmap pattern | should be lower than when armed for PacketFilter, because it has more latitude in resume latency | <= 300 ms
 | MagicPacket | Magic packet | similar to Bitmap | <= 300 ms
 | MediaChange | Media connected or disconnected | similar to Bitmap | <= 300 ms
 
@@ -175,9 +175,9 @@ And on the way [back to high power](../wdf/wdf/power-up-sequence-for-a-function-
 
 > Please refer to media specific documentation and WHCP for the completed Modern Standby requirements for your device type.
 
-For networking device, the OS is responsible for the power policy decision for the device, i.e. the OS controls when the device must go to Dx and what kind of network events the device should wake on. The device driver's responsiblity is to reliably execute the power transition flow when requested by the OS, and then correctly program their hardware according to the wake condition set by the OS.
+For networking device, the OS is responsible for its power policy decision, i.e. the OS controls when the device must go to Dx and what kinds of network events the device should wake on. The device driver's responsiblity is to reliably execute the power transition sequence when requested by the OS, and then correctly program their hardware for the wake condition set by the OS.
 
-The OS makes the power policy decision for the networking deivce based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
+The OS makes the power policy decision based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
 
 > [!Warning] The power policies might change between releases as the OS evolves, and they are listed here just for illustration purpose.
 
