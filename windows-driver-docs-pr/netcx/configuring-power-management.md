@@ -187,7 +187,8 @@ The OS is responsible for networking devices' power policy decisions. For exampl
 
 The OS makes the power policy decision based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
 
-> [!WARNING] These power policies might change between releases as the OS evolves, and they are listed here just for illustration.
+> [!WARNING] 
+> These power policies might change between releases as the OS evolves, and they are listed here just for illustration.
 
 * When the PC screen is on and the networking device has been idling, the OS asks the device to go to Dx and arms it for PacketFilter and MediaChange wake.
 
