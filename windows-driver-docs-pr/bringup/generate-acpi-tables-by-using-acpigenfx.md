@@ -368,6 +368,9 @@ void * ReferenceDBG2Table(void) {
 
 1. Create a device and assign resources. For example, for the sensor device shown here, the sample calls **Platform.AddGenericDevice** and specifies the device name, hardware ID, and unique instance. The sensor device that connects to the I²C serial bus, I2C1, which is described in the DSDT.
 
+> [!NOTE]
+> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's style guide for [Bias-free communications](https://docs.microsoft.com/style-guide/bias-free-communication) recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
+
 ```asl
 namespace SSDTSample
 {
