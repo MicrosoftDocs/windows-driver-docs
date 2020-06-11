@@ -112,7 +112,7 @@ An external mobile broadband device, such as a hardware dongle, can be inserted 
 
 4. The HWIDs that are calculated from the SIM or mobile broadband device are sent to WMIS. WMIS identifies the operator and returns the appropriate service metadata package.
 
-5. Windows uses the service metadata to identify and retrieve the associated mobile broadband app from the Microsoft Store. The app is installed automatically and registered for background events. In Windows 8.1 and Windows 10, the app is not automatically pinned to the Start screen. Registering for background events allows the app to do things such as reacting to local data usage counters, receiving operator SMS messages, connecting to Wi-Fi hotspots, and handling entitlement checks. More details about background tasks can be found in [Introduction to Background Tasks](https://www.microsoft.com/download/details.aspx?id=27411).
+5. Windows uses the service metadata to identify and retrieve the associated mobile broadband app from the Microsoft Store. The app is installed automatically and registered for background events. In Windows 8.1 and Windows 10, the app is not automatically pinned to the Start screen. Registering for background events allows the app to do things such as reacting to local data usage counters, receiving operator SMS messages, connecting to Wi-Fi hotspots, and handling entitlement checks.
 
 6. When a background event occurs, the app generates a more complete provisioning file, if needed, and passes it to the provisioning agent. This configures Windows with information about the plan that the user has purchased.
 
@@ -168,7 +168,7 @@ Building a mobile broadband app with SMS support is necessary to show notificati
 
 Windows provides Data Usage and Subscription Manager APIs that the mobile broadband app can use to describe the user’s data plan. The mobile broadband app can update this API with information about the data plan size, metered vs. non-metered plan, and an updated data usage value from the operator’s network.
 
-Windows will check the data usage information that has been set for the user by using these APIs and change the behavior of core features. For example, Windows Update will only auto-download critical updates when the user is using a metered network. Usage information is also accessible to third-party apps via the Data Usage and Subscription Manager APIs; detailed usage guidelines are available at [Managing connections on metered networks](https://docs.microsoft.com/previous-versions/windows/apps/hh750310(v=win.10)).
+Windows will check the data usage information that has been set for the user by using these APIs and change the behavior of core features. For example, Windows Update will only auto-download critical updates when the user is using a metered network. Usage information is also accessible to third-party apps via the Data Usage and Subscription Manager APIs.
 
 The following is a walkthrough of the various features that the mobile broadband app can choose to utilize in order to keep the user informed of their data usage.
 
@@ -322,7 +322,7 @@ You can provide the XML file in one of the following ways:
 
 - A signed XML file provided by a website to the [**window.external.msProvisionNetworks**](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) function on a Windows 8, Windows 8.1, or Windows 10 computer running at least Internet Explorer 10 (or another supporting browser).
 
-- An XML file (either signed or unsigned) provided by an app to the [**Windows.Networking.NetworkOperators.ProvisioningAgent.ProvisionFromXmlDocumentAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.ProvisioningAgent#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_) function.
+- An XML file (either signed or unsigned) provided by an app to the [**Windows.Networking.NetworkOperators.ProvisioningAgent.ProvisionFromXmlDocumentAsync**](https://docs.microsoft.com/uwp/api/windows.networking.networkoperators.provisioningagent.provisionfromxmldocumentasync?view=winrt-19041#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_) function.
 
 For more details about the format and content of the provisioning file, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
@@ -348,9 +348,9 @@ Local data counters track the amount of data that is sent and received on a netw
 
 Local data counters are also available programmatically by using the following APIs:
 
-- The [**Windows.Networking.Connectivity.ConnectionProfile.GetNetworkUsageAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectionProfile#Windows_Networking_Connectivity_ConnectionProfile_GetNetworkUsageAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_DataUsageGranularity_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the data usage over a specified time period.
+- The [**Windows.Networking.Connectivity.ConnectionProfile.GetNetworkUsageAsync**](https://docs.microsoft.com/uwp/api/windows.networking.connectivity.connectionprofile.getattributednetworkusageasync?view=winrt-19041#Windows_Networking_Connectivity_ConnectionProfile_GetAttributedNetworkUsageAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the data usage over a specified time period.
 
-- The [**Windows.Networking.Connectivity.ConnectionProfile.GetConnectivityIntervalsAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectionProfile#Windows_Networking_Connectivity_ConnectionProfile_GetConnectivityIntervalsAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the connect timestamps and durations when a network interface is used.
+- The [**Windows.Networking.Connectivity.ConnectionProfile.GetConnectivityIntervalsAsync**](https://docs.microsoft.com/uwp/api/windows.networking.connectivity.connectionprofile.getconnectivityintervalsasync?view=winrt-19041#Windows_Networking_Connectivity_ConnectionProfile_GetConnectivityIntervalsAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the connect timestamps and durations when a network interface is used.
 
 Local data usage information serves as an estimate and a guide for the user. Windows cannot account for unbilled traffic or for usage on other devices that share the same data limits. For example, family plans using the same SIM on different devices. Mobile broadband apps should use local data counters only to approximate usage since the last sync with your billing system. For data usage that has already been processed, the billing system should be considered authoritative.
 
@@ -382,7 +382,7 @@ The System Event Broker manages background events. Apps, including the mobile br
 
 - **Incoming USSD** – USSD message received that does not match operator-defined parsing rules.
 
-Developers should be aware that a strict limit is placed on the amount of CPU time that an app may consume while it is not active. Although these limits are relaxed for some events, apps must always minimize the resources that they consume while the system is in a low-power state or while another app is running. For more information about background events in Windows 8 and Windows 10, see [Introduction to Background Tasks](https://go.microsoft.com/fwlink/?linkid=227329).
+Developers should be aware that a strict limit is placed on the amount of CPU time that an app may consume while it is not active. Although these limits are relaxed for some events, apps must always minimize the resources that they consume while the system is in a low-power state or while another app is running.
 
 ### Windows Metadata and Internet Services
 
