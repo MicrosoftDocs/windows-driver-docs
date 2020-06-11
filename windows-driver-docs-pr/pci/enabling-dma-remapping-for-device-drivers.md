@@ -42,5 +42,7 @@ To check if a specific driver has opted into DMA Remapping, look in Device Manag
 * 1 = Device driver explicitly opted out of DMA Remapping.
 * 0 or DMA Remapping Policy property is not visible = DMA Remapping INF directive is not specified in the INF file. DMA Remapping is not enforced for this device.
 
+![Device Manager Details Tab](images/device-details-tab-1903.png)
+
 >[!NOTE]
 > For Windows 10, versions 1803 and 1809, the property field in Device Manager uses a GUID {83da6326-97a6-4088-9453-a1923f573b29}[18]
