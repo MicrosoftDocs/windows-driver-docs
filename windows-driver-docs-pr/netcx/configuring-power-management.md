@@ -30,11 +30,11 @@ A typical networking device supports 3 common power management features:
 
 3. When the networking device is in the Dx state, it can still respond to some commonly used network requests to maintain the host system's presence on the network, without waking up the host system. See the [Setting power capabilities of the network adapter](##setting-power-capabilities-of-the-network-adapter) section below.
 
-## Setting Power Capabilities of the Network Adapter
+## Setting power capabilities of the network adapter
 
 After configuring the standard WDF power management functionality, the next step is to set the power capabilities of the network adapter. Power capabilities are divided into two categories: low power protocol offload capabilities and wake-up capabilities.
 
-### Low Power Protocol Offload Capabilities
+### Low power protocol offload capabilities
 
 For background information on how the Windows network stack makes use of this capability, see [Protocol Offloads for NDIS Power Management](../network/protocol-offloads-for-ndis-power-management.md).
 
@@ -43,7 +43,7 @@ Client drivers set their low power protocol offload capabilities by calling the 
 - [**NetAdapterPowerOffloadSetArpCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterpoweroffloadsetarpcapabilities)
 - [**NetAdapterPowerOffloadSetNSCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterpoweroffloadsetnscapabilities)
 
-### Wake-Up Capabilities
+### Wake-up capabilities
 
 Client drivers call any of the following methods to set the wake capabilities that their hardware supports when the device is in low power state (Dx):
 
@@ -52,7 +52,7 @@ Client drivers call any of the following methods to set the wake capabilities th
 - [**NetAdapterWakeSetMediaChangeCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetmediachangecapabilities)
 - [**NetAdapterWakeSetPacketFilterCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetpacketfiltercapabilities)
 
-### Power Consumption and Resume Latency
+### Power consumption and resume latency
 
 When the networking device is in Dx, it still needs to consume some power to perform offload and arm for wake. After the device starts to wake-up from Dx, there is a delay before the device can transfer packets again. The deeper the internal power state the device goes into, the less power it consumes while in Dx, but the longer the resume latency is. 
 
@@ -110,7 +110,7 @@ if(deviceContext->SelectiveSuspendSupported)
 
 The client can optionally register [*EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_preview_power_offload) and [*EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_preview_wake_source) callback functions to accept or reject incoming protocol offloads and wake patterns.
 
-## Programming Protocol Power Offload and Wake Patterns
+## Programming protocol power offload and wake patterns
 
 During the device's [powering down sequence](../wdf/power-down-and-removal-sequence-for-a-function-or-filter-driver.md), the driver iterates through the enabled wake patterns and protocol power offloads and programs them into the hardware. The driver does this in its [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceArmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) callback functions.
 
@@ -171,15 +171,15 @@ EvtDeviceArmWakeFromSx(
 ```
 On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver), the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
 
-## Power Management Scenarios for Modern Standby System
+## Power management scenarios for Modern Standby system
 
 > [!IMPORTANT]
 > For Modern Standby platform, the networking device driver must: 
 > *  Call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) to register power callbacks.
 > * Call [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to support device idling when the system is in its working (S0) state.
 > * Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register wake-up callbacks.
-> * Support [Low Power Protocol Offload Capabilities](#Low-Power-Protocol-Offload-Capabilities) that are appropriate for the device type.
-> * Support [Wake-Up Capabilities](#Wake-Up-Capabilities) that are appropriate for the device type.
+> * Support [Low power protocol offload capabilities](#Low-power-protocol-offload-capabilities) that are appropriate for the device type.
+> * Support [Wake-up capabilities](#Wake-up-capabilities) that are appropriate for the device type.
 >
 > Please refer to media specific documentation and WHCP for the complete Modern Standby requirements for your device type.
 
@@ -188,7 +188,7 @@ The OS is responsible for networking devices' power policy decisions. For exampl
 The OS makes power policy decisions based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
 
 > [!WARNING] 
-> These power policies might change between releases as the OS evolves, and they are listed here just for illustration.
+> These power policies might change between releases as the OS evolves. They are listed here just for illustration.
 
 * When the PC screen is on and the networking device has been idling, the OS asks the device to go to Dx and arms it for PacketFilter and MediaChange wake.
 
