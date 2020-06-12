@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Configuring NetAdapterCx power management
 
-All NetAdapterCx client drivers are Windows Driver Framework (WDF) drivers with power management functionality similar all WDF drivers. NetAdapterCx drivers require additional networking-specific power configurations as detailed in this article.
+All NetAdapterCx client drivers are Windows Driver Framework (WDF) drivers with power management functionality similar to all WDF drivers. NetAdapterCx drivers require additional networking-specific power configurations as detailed in this article.
 
 A typical networking device supports 3 common power management features:
 
