@@ -28,7 +28,7 @@ A typical networking device supports 3 common power management features:
 
 ## Setting power capabilities of the network adapter
 
-After configuring WDF power management functionality, the next step is to set the power capabilities of the network adapter. Power capabilities are divided into two categories: [Low power protocol offload capabilities](#low-power-protocol-offload-capabilities) and [Wake up capabilities](#wake-up-capabilites).
+After configuring WDF power management functionality, the next step is to set the power capabilities of the network adapter. Power capabilities are divided into two categories: [Low power protocol offload capabilities](#low-power-protocol-offload-capabilities) and [Wake up capabilities](#wake-up-capabilities).
 
 ### Low power protocol offload capabilities
 
