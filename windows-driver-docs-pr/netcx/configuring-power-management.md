@@ -4,7 +4,7 @@ description: Configuring power management
 ms.assetid: 0EAE26D0-C191-422F-8A73-28A71C272D4D
 keywords:
 - NetAdapterCx configuring power management, NetCx configuring power management
-ms.date: 11/06/2019
+ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
 
