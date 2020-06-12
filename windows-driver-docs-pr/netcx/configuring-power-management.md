@@ -54,7 +54,7 @@ When the networking device is in Dx it still consumes power to perform offload a
 
 The table below describes the general guidelines regarding the trade-off between power consumption and resume latency for each wake capability.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided. Please refer to media-specific documentation and the [Windows Hardware Compatibility Program (WHCP)](https://docs.microsoft.com/windows-hardware/design/compatibility/) for more information about a specific device type.
   
 | Wake Capability | Wake Events | Power Consumption | Resume Latency
@@ -172,7 +172,7 @@ On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filte
 
 > [!IMPORTANT]
 > For Modern Standby platform, the networking device driver must:
-
+>
 > - Call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) to register power callbacks.
 > - Call [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to support device idling when the system is in its working (S0) state.
 > - Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register wake-up callbacks.
@@ -185,7 +185,7 @@ The OS is responsible for networking device's power policy decisions. For exampl
 
 The OS makes power policy decisions based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
 
-> [!WARNING]
+> [!IMPORTANT]
 > These power policies relate to prereleased product which may be substantially modified before commercially released or between releases as the OS evolves. Microsoft makes no warranties, express or implied, with respect to the information provided. Please refer to media-specific documentation and the Windows Hardware Compatibility Program (WHCP) for more information about a specific device type.
 
 - When the PC screen is on and the networking device has been idling, the OS asks the device to go to Dx and arms it for PacketFilter and MediaChange wake.
