@@ -26,9 +26,9 @@ A typical networking device supports 3 common power management features:
 
     * For details on how a WDF device can wake the system from a system-wide low-power state, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
 
-    * NetAdapterCx provides APIs for the client driver to declare which network events its hardware has wake support for. See the [Setting power capabilities of the network adapter](##setting-power-capabilities-of-the-network-adapter) section below.
+    * NetAdapterCx provides APIs for the client driver to declare which network events its hardware has wake support for. See the [Setting power capabilities of the network adapter](#setting-power-capabilities-of-the-network-adapter) section below.
 
-3. When the networking device is in the Dx state, it can still respond to some commonly used network requests to maintain the host system's presence on the network, without waking up the host system. See the [Setting power capabilities of the network adapter](##setting-power-capabilities-of-the-network-adapter) section below.
+3. When the networking device is in the Dx state, it can still respond to some commonly used network requests to maintain the host system's presence on the network, without waking up the host system. See the [Setting power capabilities of the network adapter](#setting-power-capabilities-of-the-network-adapter) section below.
 
 ## Setting power capabilities of the network adapter
 
@@ -169,7 +169,7 @@ EvtDeviceArmWakeFromSx(
     return STATUS_SUCCESS;
 }
 ```
-On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver), the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
+On the way [back to high power](https://docs.microsoft.com/windows-hardware/drivers/wdf/power-up-sequence-for-a-function-or-filter-driver), the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
 
 ## Power management scenarios for Modern Standby system
 
@@ -178,8 +178,8 @@ On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filte
 > *  Call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) to register power callbacks.
 > * Call [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to support device idling when the system is in its working (S0) state.
 > * Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register wake-up callbacks.
-> * Support [Low power protocol offload capabilities](#Low-power-protocol-offload-capabilities) that are appropriate for the device type.
-> * Support [Wake-up capabilities](#Wake-up-capabilities) that are appropriate for the device type.
+> * Support [Low power protocol offload capabilities](#low-power-protocol-offload-capabilities) that are appropriate for the device type.
+> * Support [Wake-up capabilities](#wake-up-capabilities) that are appropriate for the device type.
 >
 > Please refer to media specific documentation and WHCP for the complete Modern Standby requirements for your device type.
 
