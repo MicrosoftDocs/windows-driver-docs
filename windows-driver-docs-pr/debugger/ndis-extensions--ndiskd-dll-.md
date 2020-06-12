@@ -180,7 +180,7 @@ For more information about designing NDIS drivers for Windows Vista and later, s
 
 For more information about reference for NDIS drivers for Windows Vista and later, see [Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
 
-For a demonstration of using the !ndiskd debugger commands to debug the network stack, see [Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311).
+For a demonstration of using the !ndiskd debugger commands to debug the network stack, see [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack).
 
  
 

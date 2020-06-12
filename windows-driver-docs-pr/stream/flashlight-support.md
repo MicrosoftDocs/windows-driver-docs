@@ -37,7 +37,7 @@ However, Microsoft will standardize the interface, GUID\_DEVINTERFACE\_LAMP, as 
 
 ### Sharing Flash between Camera and Flashlight Applications
 
-A camera flash is typically considered as a *slave* peripheral to a capture device. It is not meant to be shared with non-camera scenarios while capture is running. To complicate further, the number of flash devices on a chassis is extremely limited such that, in practice, there will not be spare flash dedicated to flashlight purpose only.
+A camera flash is typically considered as a *subordinate* peripheral to a capture device. It is not meant to be shared with non-camera scenarios while capture is running. To complicate further, the number of flash devices on a chassis is extremely limited such that, in practice, there will not be spare flash dedicated to flashlight purpose only.
 
 From software perspective, the above imposes a challenge where a camera application and a flashlight application can coexist and access flash at the same time. For example, in theory, a user can toggle LED state via a flashlight application by while a camera viewfinder is running.
 

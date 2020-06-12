@@ -2,7 +2,7 @@
 title: Using System DMA
 description: Using System DMA
 ms.assetid: 8d478365-a6c8-4488-9f75-53a822d1daa2
-keywords: ["AdapterControl routines, system DMA", "system DMA WDK kernel", "adapter objects WDK kernel , system DMA", "DMA transfers WDK kernel , system DMA", "slave devices WDK DMA", "system DMA WDK kernel , about system DMA"]
+keywords: ["AdapterControl routines, system DMA", "system DMA WDK kernel", "adapter objects WDK kernel , system DMA", "DMA transfers WDK kernel , system DMA", "subordinate devices WDK DMA", "system DMA WDK kernel , about system DMA"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
 ---

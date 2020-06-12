@@ -2,7 +2,7 @@
 title: UEFI requirements for Windows on SoC platforms
 description: This topic describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
 ms.assetid: 7A0B901E-1252-4F8F-B1CB-BA1AB7B01112
-ms.date: 05/26/2020
+ms.date: 06/09/2020
 ms.localizationpriority: medium
 ---
 
@@ -289,7 +289,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <li><p>Requirement 10: OPTIONAL. An OEM may implement the ability for a physically present user to turn off Secure Boot either with access to the PK<em><sub>priv</sub></em> or with Physical Presence through the firmware setup. Access to the firmware setup may be protected by platform specific means (administrator password, smart card, static configuration, etc.)</p></li>
 <li><p>Requirement 11: MANDATORY if requirement 10 is implemented. If Secure Boot is turned off then all existing UEFI variables shall not be accessible.</p></li>
 <li><p>Requirement 12: OPTIONAL. An OEM may implement the ability for a physically present user to select between two Secure Boot modes in firmware setup: “Custom” and “Standard”. Custom Mode allows for more flexibility as specified in the following.</p></li>
-<li><p>Requirement 13: MANDATORY if requirement 12 is implemented. It shall be possible to re-enable a disabled Secure Boot in Custom Mode by setting an owner specific <em>PK</em>. The administration shall proceed as defined in section 27.5 of the UEFI specification v2.3.1: Firmware/OS Key Exchange. In Custom Mode, the device owner may set her choice of signatures in the signature databases.</p></li>
+<li><p>Requirement 13: MANDATORY if requirement 12 is implemented. It shall be possible to re-enable a disabled Secure Boot in Custom Mode by setting an owner specific <em>PK</em>. The administration shall proceed as defined in section 27.5 of the UEFI specification v2.3.1: Firmware/OS Key Exchange. In Custom Mode, the device owner may set their choice of signatures in the signature databases.</p></li>
 <li><p>Requirement 14: MANDATORY if requirement 12 is implemented. The firmware setup shall indicate if Secure Boot is turned on, and if it is operated in Standard or Custom Mode. The firmware setup shall provide an option to return from Custom to Standard Mode.</p></li>
 <li><p>Requirement 15: MANDATORY. If the firmware settings are reset to factory defaults, all custom-set protected variables shall be erased and the original PK<em><sub>pub</sub></em> shall be re-established along with the original, manufacturer-provisioned signature databases.</p></li>
 <li><p>Requirement 16: MANDATORY. Driver signing shall use the Authenticode option (WIN_CERT_TYPE_PKCS_SIGNED_DATA).</p></li>

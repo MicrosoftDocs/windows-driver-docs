@@ -42,7 +42,7 @@ Then use the following procedure:
 ## <span id="related_topics"></span>Related topics
 
 
-[DebugBreak function](https://go.microsoft.com/fwlink/p/?linkid=124229)
+[DebugBreak function](https://docs.microsoft.com/windows/win32/api/debugapi/nf-debugapi-debugbreak)
 
  
 

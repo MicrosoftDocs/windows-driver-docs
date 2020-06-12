@@ -51,7 +51,7 @@ For more information about WPP, see [WPP Software Tracing](https://docs.microsof
 
 For more information about Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
 
-For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/wmi-tracing-extensions--wmitrace-dll-).
+For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](wmi-tracing-extensions--wmitrace-dll-.md).
 
 ```console
 !ndiskd.dbglevel [-level <str>] 
@@ -86,7 +86,7 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
 [Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
@@ -98,7 +98,7 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
 [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)
 
-[WMI Tracing Extensions (Wmitrace.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/wmi-tracing-extensions--wmitrace-dll-)
+[WMI Tracing Extensions (Wmitrace.dll)](wmi-tracing-extensions--wmitrace-dll-.md)
 
  
 

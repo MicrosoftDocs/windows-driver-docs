@@ -20,7 +20,7 @@ A string describing a client object is returned by the method [**GetIdentity**](
 
 The debugger engine API contains several COM like interfaces; they implement the **IUnknown** interface.
 
-The interfaces described in the section [Debug Engine Interfaces](https://docs.microsoft.com/windows-hardware/drivers/debugger/client-com-interfaces) is implemented by the client (though not necessarily at the latest version). You may use the COM method **IUnknown::QueryInterface** to obtain each of these interfaces from any of the others.
+The interfaces described in the section [Debug Engine Interfaces](client-com-interfaces.md) is implemented by the client (though not necessarily at the latest version). You may use the COM method **IUnknown::QueryInterface** to obtain each of these interfaces from any of the others.
 
 The clients implement the **IUnknown** COM interface and use it for maintaining reference counts and interface selection. However, the clients are not registered COM objects. The method **IUnknown::AddRef** is used to increment the reference count on the object, and the method **IUnknown::Release** is used to decrement the reference count. When **IUnknown::QueryInterface** is called, the reference count is incremented, so when a client interface pointer is no longer needed **IUnknown::Release** should be called to decrement the reference count.
 

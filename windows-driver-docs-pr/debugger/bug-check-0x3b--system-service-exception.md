@@ -99,7 +99,7 @@ For more information about WinDbg and **!analyze**, see the following topics:
 
 ### Identify the driver
 
-If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-), a debugger command, to display this: `dx KiBugCheckDriver`.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
 
 Use the [**!error**](-error.md) extension to display information about the exception code in parameter 1. Following is an example of output from **!error**.
 

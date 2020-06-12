@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!verifier** extension displays the status of Driver Verifier and its actions.
 
-Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see the [Driver Verifier](https://go.microsoft.com/fwlink/p/?linkid=120480) topic in the Windows Driver Kit (WDK) documentation.
+Driver Verifier is included in Windows. It works on both checked and free builds. For information about Driver Verifier, see the [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) topic in the Windows Driver Kit (WDK) documentation.
 
 Syntax
 
@@ -109,7 +109,7 @@ Kdexts.dll
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about [Driver Verifier](https://go.microsoft.com/fwlink/p/?linkid=120480), see the Windows Driver Kit (WDK) documentation.
+For information about [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier), see the Windows Driver Kit (WDK) documentation.
 
 
 Remarks

@@ -20,7 +20,7 @@ In general, data is moved downstream only by triggering events, the minidriver's
 
 - Look for problems in the code related to the processing dispatch, in particular where it queues to hardware and where clone pointers are created.
 
-- Look for problems in the code related to the driver's deferred procedure call (DPC), especially where buffers are completed or any calls are made to [KsStreamPointerDelete](https://go.microsoft.com/fwlink/p/?linkid=56550).
+- Look for problems in the code related to the driver's deferred procedure call (DPC), especially where buffers are completed or any calls are made to [KsStreamPointerDelete](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete).
 
 - Look for problems in the startup code for the stream.
 

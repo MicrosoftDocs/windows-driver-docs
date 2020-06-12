@@ -13,7 +13,7 @@ This topic describes the programming reference topics.
 
 This reference section includes:
 
-[Debugger Engine Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-engine-reference)
+[Debugger Engine Reference](debugger-engine-reference.md)
 
 [EngExtCpp Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/index)
 

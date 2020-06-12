@@ -52,21 +52,21 @@ If the host and target computers are joined to a workgroup and are on different 
 
 Now you're ready to provision the target computer from the host computer in Visual Studio.
 
-1. On the host computer, in Visual Studio, on the **Driver** menu, choose **Test &gt; Configure Devices**.
+1. On the host computer, in Visual Studio, click the **Extensions** menu, point to **Driver**, point to **Test**, and click **Configure Devices**.
 
-    Click **Add new device**.
+2. In the **Configure Devices** dialog, click **Add new device**.
 
-2. For **Network host name**, enter the name or local IP address of your target computer. Select **Provision device and choose debugger settings**.
+3. For **Network host name**, enter the name or local IP address of your target computer. Select **Provision device and choose debugger settings**.
 
     ![screen shot of device configuration dialog box](images/vs2015-device-configuration.png)
 
-    Click **Next**.
+4. Click **Next**.
 
-3. Select a type of debugging connection, and enter the required parameters.
+5. Select a type of debugging connection, and enter the required parameters.
 
     For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=223405).
 
-4. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, click **Finish**.
+6. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, click **Finish**.
 
 > [!TIP]
 > Provisioning virtual machines through the WDK's automatic provisioning process is not supported. However, you can test drivers on a VM by setting up the target VM manually as described in the [step by step echo lab](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
