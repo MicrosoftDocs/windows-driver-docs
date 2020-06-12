@@ -10,14 +10,14 @@ ms.localizationpriority: medium
 
 # Configuring NetAdapterCx power management
 
-All NetAdapterCx client drivers are Kernal-Mode Driver Framework (KMDF) Windows Driver Framework (WDF) drivers with power management functionality similar all WDF drivers. NetAdapterCx drivers require additional networking-specific power configurations as detailed in this article.
+All NetAdapterCx client drivers are Windows Driver Framework (WDF) drivers with power management functionality similar all WDF drivers. NetAdapterCx drivers require additional networking-specific power configurations as detailed in this article.
 
 A typical networking device supports 3 common power management features:
 
 - The networking device can enter a lower-power (Dx) state when instructed by the OS.
   - The client driver registers optional WDF event callbacks to receive notification of power transitions, as described in [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
 
-    - If the network device can enter its Dx state while the system remains in its working (S0) state then the client driver should support idle power-down. See [Supporting Idle Power-Down](../wdf/supporting-idle-power-down.md).
+  - If the network device can enter its Dx state while the system remains in its working (S0) state then the client driver should support idle power-down. See [Supporting Idle Power-Down](../wdf/supporting-idle-power-down.md).
 
 - When the networking device is in the Dx state, it can trigger a wake-up signal if a pre-configured wake condition has occurred.
   - For details on how a WDF device can wake the system from a system-wide low-power state see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
@@ -186,7 +186,7 @@ The OS is responsible for networking device's power policy decisions. For exampl
 The OS makes power policy decisions based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
 
 > [!IMPORTANT]
-> These power policies relate to prereleased product which may be substantially modified before commercially released or between releases as the OS evolves. Microsoft makes no warranties, express or implied, with respect to the information provided. Please refer to media-specific documentation and the Windows Hardware Compatibility Program (WHCP) for more information about a specific device type.
+> These power policies may change with OS updates and the information below is provided as an example. Dependencies on specific end-to-end behavior of the OS should be avoided.
 
 - When the PC screen is on and the networking device has been idling, the OS asks the device to go to Dx and arms it for PacketFilter and MediaChange wake.
 
