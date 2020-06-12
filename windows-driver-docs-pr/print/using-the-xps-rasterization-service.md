@@ -2,7 +2,7 @@
 title: Using the XPS Rasterization Service
 description: Using the XPS Rasterization Service
 ms.assetid: a6a3746a-3638-464b-bca0-60003f37af76
-ms.date: 04/20/2017
+ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
 
@@ -30,7 +30,7 @@ To initialize an XPSDrv filter, the print filter pipeline manager calls the filt
 
 To obtain a pointer to the XPS rasterization factory object, the XPSDrv filter calls the [**IPrintPipelinePropertyBag::GetProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iprintpipelinepropertybag-getproperty) method. The property name "MS\_IXpsRasterizationFactory" identifies the rasterization factory object. For this property, the value obtained from **GetProperty** is a reference to the rasterization factory object's **IUnknown** interface. After obtaining this interface, the filter must call the [IUnknown::QueryInterface](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) method to obtain a reference to the object's [IXpsRasterizationFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/xpsrassvc/nn-xpsrassvc-ixpsrasterizationfactory) interface. Subsequently, the filter can call the [**IXpsRasterizationFactory::CreateRasterizer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/xpsrassvc/nf-xpsrassvc-ixpsrasterizationfactory-createrasterizer) method to create XPS rasterizer objects.
 
-When the factory object is no longer needed, the filter should release the object by calling the [Release](https://docs.microsoft.com/en-us/windows/win32/api/unknwn/nf-unknwn-iunknown-release) method on the object's **IXpsRasterizationFactory** interface.
+When the factory object is no longer needed, the filter should release the object by calling the [Release](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iunknown-release) method on the object's **IXpsRasterizationFactory** interface.
 
 The following code example shows how to obtain an **IXpsRasterizationFactory** interface instance from an **IPrintPipelinePropertyBag** interface instance:
 
