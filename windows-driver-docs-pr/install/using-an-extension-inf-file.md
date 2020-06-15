@@ -34,6 +34,8 @@ In the following diagram, two different companies have created separate driver p
 
 Settings in an extension INF are applied after settings in a base INF. As a result, if an extension INF and a base INF specify the same setting, the version in the extension INF is applied. Similarly, if the base INF changes, the extension INF remains and is applied over the new base INF.
 
+It is helpful to include comments in the base INF describing which entries can be overridden, as well as applicable parameter value ranges and constraints.
+
 ## Specifying ExtensionId
 
 When you write an extension INF, you generate a special GUID called the **ExtensionId**, which is an entry in the INF's **\[Version\]** section.
@@ -92,6 +94,8 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
     Alternatively, the extension INF might list the same hardware ID as the base INF, for instance if the device is already very narrowly targeted, or if the base INF already lists the most specific hardware ID.
     
     In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
+
+    [CHID targeting](https://docs.microsoft.com/windows-hardware/drivers/bringup/target-a-system-using-chid) can be used if a four-part hardware ID is not possible or is not restrictive enough.
 
 5.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
@@ -228,6 +232,14 @@ REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
 For info on how to use an Extension INF to install a filter driver, see [Device filter driver ordering](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering).
+
+To improve extensibility and backward compatibility, we recommend that an IHV put optional functionality in an [extension INF template](using-an-extension-inf-file-template.md).
+
+If this is not possible and the IHV puts all functionality, required and optional, in the base INF, here is one way to ensure that existing extension INFs continue to work:
+
+1. The IHV provides a companion app that sets a registry flag to disable optional functionality by default.
+2. The base driver checks if the flag is enabled before using optional functionality.
+3. An OEM-supplied extension INF can opt in by setting the flag to enable.
 
 ##  Submitting an extension INF for certification
 
