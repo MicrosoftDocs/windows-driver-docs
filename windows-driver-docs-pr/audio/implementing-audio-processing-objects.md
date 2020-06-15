@@ -2,7 +2,7 @@
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
 ms.assetid: 822FAF10-DAB3-48D1-B782-0C80B072D3FB
-ms.date: 03/26/2020
+ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
 
@@ -326,7 +326,7 @@ Capabilities = 0x00000008 ; SWDeviceCapabilitiesDriverRequired
 This APO device triggers the second part, the installation of the APO INF, in the SYSVAD sample this is done in ComponentizedApoSample.inf. This INF file is dedicated to the APO device. It specifies the device class as AudioProcessingObject and adds all of the APO properties for CLSID registration and registering with the audio engine.
 
 >[!NOTE]
-> The INF file samples shown support state separation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.
+> The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.
  For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
  
 ```inf
