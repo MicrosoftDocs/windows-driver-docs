@@ -18,4 +18,5 @@ For Windows 8, the sample source code for Pjlmon.dll is available in the [pjlmon
 
 For Windows 8.1, the sample source code for Pjlmon.dll is available in the [pjlmon](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples/%5BC%2B%2B%5D-windows-driver-kit-81-cpp/WDK%208.1%20C%2B%2B%20Samples/Print%20Monitors%20Samples/C%2B%2B/pjlmon) directory in the Windows Driver Kit (WDK) 8.1 samples archive repo on GitHub.
 
-For Windows 10, Pjlmon.dll is available inbox in multiple architecture-specific locations in your Windows directory.
+> [!NOTE]
+> Sample source code in not available for Pjlmon.dll in the Windows Driver Kit (WDK) 10 samples repo on GitHub.
