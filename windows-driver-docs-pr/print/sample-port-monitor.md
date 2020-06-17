@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 The functions that LOCALMON  exports are incorporated into Localspl.dll, the Local Print Provider. Port monitors are divided into two DLLs: a port monitor server DLL, and a port monitor user interface DLL.
 
 > [!NOTE]
-> LOCALMON (Localmon.dll) print monitor samples for previous versions of Windows have been archived and are not available in the Windows Driver Kit (WDK) 10 samples on GitHub.
+> LOCALMON (Localmon.dll) print monitor samples for previous versions of Windows have been archived as outlined below. LOCALMON (Localmon.dll) print monitor sample code is not available in the Windows Driver Kit (WDK) 10 samples on GitHub.
 
-For previous versions of Windows, sample source code for Localmon.dll is available in the following locations:
+For previous versions of Windows, sample source code for LOCALMON (Localmon.dll) is available in the following locations:
 
 - For Windows 7, sample source code for Localmon.dll is included with the [Windows Driver Kit Version 7.1.0](https://www.microsoft.com/en-us/download/details.aspx?id=11800) installation download. The sample is located in the **\\src\\print\\monitors\\localmon** subdirectory (for example, C:\WinDDK\7600.16385.1\src\print\monitors\localmon).
 
