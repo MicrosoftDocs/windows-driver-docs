@@ -47,7 +47,7 @@ Required flags must be recognized and satisfied by the pool allocator. If the al
 |POOL_FLAG_USE_QUOTA|This flag is passed by highest-level drivers that allocate memory to satisfy a request in the context of the process that originally made the I/O request. Lower-level drivers need not specify this flag.|
 |POOL_FLAG_UNINITIALIZED|Leave the allocation uninitialized. The contents of the allocation are indeterminant. The driver must be extremely careful never to copy uninitialized memory to untrusted destinations (user-mode, over the network, etc.).|
 |POOL_FLAG_SESSION|Reserved for the operating system.|
-|POOL_FLAG_CACHE_ALIGNED|Cache align the pool allocation.|
+|POOL_FLAG_CACHE_ALIGNED|Cache align the pool allocation. Warning: this flag is treated as a best effort and it should not be used if cache aligned allocations are required for program correctness.|
 |POOL_FLAG_RESERVED1|Reserved for internal use.|
 |POOL_FLAG_RAISE_ON_FAILURE|Raise an exception if the allocation cannot be satisfied.|
 |POOL_FLAG_NON_PAGED|Make allocation in the non-paged pool.|
