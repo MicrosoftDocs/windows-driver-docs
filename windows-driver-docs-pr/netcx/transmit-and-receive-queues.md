@@ -11,8 +11,6 @@ ms.custom: 19H1
 
 # Transmit and receive queues
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 ## Overview
 
 *Packet queues*, or *datapath queues* are objects introduced in NetAdapterCx to enable client drivers to model their hardware features, such as hardware transmit and receive queues, more explicitly in software drivers. This topic explains how to work with transmit and receive queues in NetAdapterCx. 
@@ -85,8 +83,8 @@ EvtAdapterCreateTxQueue(
     queueContext->QueueId = queueId;
 
     // Query checksum packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY extension;
-    NET_PACKET_EXTENSION_QUERY_INIT(
+    NET_EXTENSION_QUERY extension;
+    NET_EXTENSION_QUERY_INIT(
         &extension,
         NET_PACKET_EXTENSION_CHECKSUM_NAME,
         NET_PACKET_EXTENSION_CHECKSUM_VERSION_1);
@@ -94,7 +92,7 @@ EvtAdapterCreateTxQueue(
     NetTxQueueGetExtension(txQueue, &extension, &queueContext->ChecksumExtension);
 
     // Query Large Send Offload packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY_INIT(
+    NET_EXTENSION_QUERY_INIT(
         &extension,
         NET_PACKET_EXTENSION_LSO_NAME,
         NET_PACKET_EXTENSION_LSO_VERSION_1);
@@ -150,8 +148,8 @@ EvtAdapterCreateRxQueue(
     queueContext->QueueId = queueId;
 
     // Query the checksum packet extension offset and store it in the context
-    NET_PACKET_EXTENSION_QUERY extension;
-    NET_PACKET_EXTENSION_QUERY_INIT(
+    NET_EXTENSION_QUERY extension;
+    NET_EXTENSION_QUERY_INIT(
         &extension,
         NET_PACKET_EXTENSION_CHECKSUM_NAME,
         NET_PACKET_EXTENSION_CHECKSUM_VERSION_1); 
@@ -176,9 +174,9 @@ The sequence of a polling operation on a packet queue is as follows:
 2. The client driver programs the packets to hardware.
 3. The client driver returns the completed packets to the OS.
 
-Polling operations occur within the client driver's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function. Each packet queue in a client driver is backed by underlying data structures called *net rings*, which contain or link to the actual network data buffers in system memory. During *EvtPacketQueueAdvance*, client drivers carry out send and receive operations on the net rings by using *net ring iterators*, transferring buffer ownership between hardware and the OS as data is transmitted or received.
+Polling operations occur within the client driver's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback function. Each packet queue in a client driver is backed by underlying data structures called *net rings*, which contain or link to the actual network data buffers in system memory. During *EvtPacketQueueAdvance*, client drivers carry out send and receive operations on the net rings by controlling indices within the rings, transferring buffer ownership between hardware and the OS as data is transmitted or received.
 
-For more information about net rings and net ring iterators, see [Net rings and net ring iterators](net-rings-and-net-ring-iterators.md).
+For more information about net rings, see [Introduction to net rings](introduction-to-net-rings.md).
 
 For an example of implementing *EvtPacketQueueAdvance* for a transmit queue, see [Sending network data with net rings](sending-network-data-with-net-rings.md). For an example of implementing *EvtPacketQueueAdvance* for a receive queue, see [Receiving network data with net rings](receiving-network-data-with-net-rings.md).
 
@@ -293,6 +291,6 @@ UsbEvtReaderCompletionRoutine(
 
 When the OS stops the data path, it begins by invoking the client driver's [*EvtPacketQueueCancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_cancel) callback function. This callback is where client drivers perform any processing needed before the framework deletes the packet queues. Canceling for a transmit queue is optional and depends on whether the hardware supports in-flight transmit cancellation, but canceling for a receive queue is required. 
 
-During *EvtPacketQueueCancel*, drivers use net ring iterators to return packets to the OS as needed. For code examples of transmit queue and receive queue cancellation, see [Canceling network data with net rings](canceling-network-data-with-net-rings.md).
+During *EvtPacketQueueCancel*, drivers return packets to the OS as needed. For code examples of transmit queue and receive queue cancellation, see [Canceling network data with net rings](canceling-network-data-with-net-rings.md).
 
 After calling the driver's *EvtPacketQueueCancel* callback, the framework continues to poll the driver's [*EvtPacketQueueAdvance*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacketqueue/nc-netpacketqueue-evt_packet_queue_advance) callback until all packets and buffers have been returned to the OS.

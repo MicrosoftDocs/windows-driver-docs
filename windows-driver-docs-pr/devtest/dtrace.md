@@ -34,7 +34,7 @@ The primary GitHub site is located at [https://github.com/opendtrace/](https://g
 
 A set of useful scripts is available at [https://github.com/opendtrace/toolkit](https://github.com/opendtrace/toolkit).
 
-[DTrace.Org](https://dtrace.org) is a web site where many of the original developers provide tips and tricks.
+[DTrace.Org](http://dtrace.org) is a web site where many of the original developers provide tips and tricks.
 
 The illumos [Dynamic Tracing Guide](http://dtrace.org/guide/bookinfo.html) describes how to use DTrace to observe, debug, and tune system behavior.
 
@@ -174,7 +174,7 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
 1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Insider Preview Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.*
 
-   The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/en-us/download/58091). Note that this version of DTrace is no longer supported.
+   The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/download/58091). Note that this version of DTrace is no longer supported.
 
 
 1. Download the MSI installation file from the Microsoft Download Center - [Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441).

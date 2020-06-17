@@ -72,7 +72,7 @@ Typically, when this error occurs, a driver has tried to access an address that 
 
  - Executing pageable code at or above DISPATCH_LEVEL.
 
-If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-), a debugger command, to display this: **dx KiBugCheckDriver**.
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: **dx KiBugCheckDriver**.
 
 This bug check is usually caused by drivers that have used improper memory addresses.
 

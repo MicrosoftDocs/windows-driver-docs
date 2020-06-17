@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DRIVER_FAILED_LOAD
+# Code 39 - CM_PROB_DRIVER_FAILED_LOAD
 
-This function is reserved for system use.
-
-The driver could not be loaded.
+This Device Manager error message indicates that the driver could not be loaded.
 
 ## Error Code
 
@@ -31,3 +29,4 @@ Reasons for this error include the following:
 - A driver file that is not present, a binary file that is corrupted, a file I/O problem, or a driver that references an entry point in another binary that could not be loaded.
 
 - The driver does not comply with [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
+

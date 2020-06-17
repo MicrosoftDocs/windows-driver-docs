@@ -21,7 +21,7 @@ SymStore can be used with compressed files in two different ways:
 
 Your symbol server will be responsible for uncompressing the files at the proper time.
 
-If you are using SymSrv as your symbol server, any compression should be done using the compress.exe tool which is available [here](https://go.microsoft.com/fwlink/p/?linkid=239917). Compressed files should have an underscore as the last character in their file extensions (for example, module1.pd\_ or module2.db\_). For details, see [SymSrv](symsrv.md).
+If you are using SymSrv as your symbol server, any compression should be done using the compress.exe tool which is available [here](https://www.microsoft.com/download/details.aspx?displaylang=en&id=17657 ). Compressed files should have an underscore as the last character in their file extensions (for example, module1.pd\_ or module2.db\_). For details, see [SymSrv](symsrv.md).
 
  
 

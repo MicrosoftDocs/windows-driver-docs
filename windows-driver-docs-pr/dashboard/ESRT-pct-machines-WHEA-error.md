@@ -6,7 +6,7 @@ ms.date: 10/31/2019
 ms.localizationpriority: medium
 ---
  
-# Percent of machines with WHEA error after firmware installation
+# Percent of machines with Windows Hardware Error Architecture (WHEA) error after firmware installation
 
 ## Description
 

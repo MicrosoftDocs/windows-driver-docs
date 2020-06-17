@@ -22,7 +22,7 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=808351" data-raw-source="[Windows Driver Kit downloads](https://go.microsoft.com/fwlink/p/?LinkId=808351)">Windows Driver Kit downloads</a>.</p></td>
+<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit downloads](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)">Windows Driver Kit downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +84,7 @@ Elevated privileges are required to enable debugging of JS functions. To run in 
 ## <span id="JavaScript_debugger_statements"></span><span id="javascript_debugger_statements"></span><span id="JAVASCRIPT_DEBUGGER_STATEMENTS"></span>JavaScript debugger statements
 
 
-Breakpoints can be created in JavaScript source by using the debugger statement. This will pause operation in Visual Studio all allow for step-by-step debugging. These statements can be inserted in any of the [JavaScript Constraint APIs](https://go.microsoft.com/fwlink/p/?LinkId=808350).
+Breakpoints can be created in JavaScript source by using the debugger statement. This will pause operation in Visual Studio all allow for step-by-step debugging. These statements can be inserted in any of the [JavaScript Constraint APIs](https://docs.microsoft.com/windows-hardware/drivers/print/javascript-constraints).
 
 For example:
 

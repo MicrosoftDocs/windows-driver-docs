@@ -37,7 +37,7 @@ The following topics give an overview of various categories of WdbgExts function
 
 [WdbgExts Target Information](wdbgexts-target-information.md)
 
-For a full list of these functions, see [WdbgExts Functions](https://docs.microsoft.com/windows-hardware/drivers/debugger/wdbgexts-functions).
+For a full list of these functions, see [WdbgExts Functions](wdbgexts-functions.md).
 
  
 

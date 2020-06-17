@@ -65,7 +65,7 @@ A driver that is compiled to work only on uniprocessor machines has been loaded,
 
  
 ## Resolution
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 
 

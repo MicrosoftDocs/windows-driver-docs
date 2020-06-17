@@ -39,8 +39,8 @@ Generally, filter drivers should not return **STATUS\_PENDING** in response to *
 
 File system filter driver writers should note that [**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobject) causes an [**IRP\_MJ\_CLEANUP**](irp-mj-cleanup.md) request to be sent to the file system driver stack for the volume. Because file systems often create stream file objects as a side effect of operations other than **IRP\_MJ\_CREATE**, it is difficult for filter drivers to reliably detect stream file object creation. Thus a filter driver should expect to receive **IRP\_MJ\_CLEANUP** and [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close) requests for previously unseen file objects. In the case of [**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobjectlite), an **IRP\_MJ\_CLEANUP** request is not sent.
 
-&gt; \[!Note\]
-&gt;  When legacy filter drivers re-issue a create in a post-create callback, they must release and set the buffer that is associated with their reparse point (the auxiliary buffer) to **NULL**. If a legacy filter driver does not free this buffer and set it to **NULL**, the driver will leak memory. Minifilter drivers do not have to do this because the Filter Manager does this for them.
+> [!NOTE]
+> When legacy filter drivers re-issue a create in a post-create callback, they must release and set the buffer that is associated with their reparse point (the auxiliary buffer) to **NULL**. If a legacy filter driver does not free this buffer and set it to **NULL**, the driver will leak memory. Minifilter drivers do not have to do this because the Filter Manager does this for them.
 
  
 
@@ -90,7 +90,7 @@ Pointer to a file object that the I/O Manager creates to represent the file to b
 
 [**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen) and [**IoCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocancelfileopen) set the FO\_FILE\_OPEN\_CANCELLED flag in the file object's **Flags** field. Setting this flag indicates that the IRP\_MJ\_CREATE request has been canceled, and an [**IRP\_MJ\_CLOSE**](irp-mj-close.md) request will be issued for this file object. Once the create request has been canceled, it cannot be reissued.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of a FILE\_OBJECT structure is used to indicate that a given file has been opened relative to an already open file object. This usually indicates that the relative file is a directory but stream-based files may be opened relative to an already existing stream of a file. The **RelatedFileObject** field of the FILE\_OBJECT structure is only valid during the processing of IRP\_MJ\_CREATE.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of a FILE\_OBJECT structure is used to indicate that a given file has been opened relative to an already open file object. This usually indicates that the relative file is a directory but stream-based files may be opened relative to an already existing stream of a file. The **RelatedFileObject** field of the FILE\_OBJECT structure is only valid during the processing of IRP\_MJ\_CREATE.
 
 <a href="" id="irpsp--flags"></a>*IrpSp-&gt;Flags*
 One or more of the following:

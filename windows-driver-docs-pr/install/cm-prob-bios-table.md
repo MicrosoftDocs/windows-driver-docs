@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_BIOS_TABLE
+# Code 35 - CM_PROB_BIOS_TABLE
 
-This function is reserved for system use.
-
-The MPS table is bad and has to be updated.
+This Device Manager error message indicates that the MPS table is bad and has to be updated.
 
 ## Error Code
 

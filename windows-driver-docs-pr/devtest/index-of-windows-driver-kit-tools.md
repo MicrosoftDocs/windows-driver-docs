@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 
 This topic supplies basic information about the tools that are included in the Windows Driver Kit (WDK). This topic also includes references to other tools that are useful for driver development. These other tools are either available as part of the operating system or are available as separate download. For more information about each tool, see the documentation in this topic that describes the tool.
 
-For information about how to obtain the latest WDK, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?linkid=261797).
+For information about how to obtain the latest WDK, see [Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/).
 
 This topic includes the following:
 
@@ -82,7 +82,7 @@ The information in the following tables describes the tools that are useful for 
 <p>%WindowsSdkDir%\tools\x64\graphedt.exe</p></td>
 <td align="left"><p>Builds filter graphs to test streaming audio/video capture drivers.</p>
 <p>Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=9230" data-raw-source="[Overview of GraphEdit](https://go.microsoft.com/fwlink/p/?linkid=9230)">Overview of GraphEdit</a></p></td>
+<p><a href="https://docs.microsoft.com/windows/win32/directshow/simulating-graph-building-with-graphedit" data-raw-source="[Overview of GraphEdit](https://docs.microsoft.com/windows/win32/directshow/simulating-graph-building-with-graphedit)">Overview of GraphEdit</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>KSStudio (KsStudio.exe)</p>
@@ -106,7 +106,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>%WindowsSdkDir%\tools\x86\Usbview.exe</p>
 <p>%WindowsSdkDir%\tools\x64\Usbview.exe</p></td>
 <td align="left"><p>Enumerates the USB host controllers, USB hubs, and attached USB devices and can query information about the devices from the registry and through USB requests to the devices.</p>
-<p>The source code for the USB Device Viewer is available from the code gallery, see <a href="https://go.microsoft.com/fwlink/p/?linkid=256205" data-raw-source="[USBVIEW Sample Application](https://go.microsoft.com/fwlink/p/?linkid=256205)">USBVIEW Sample Application</a>.</p></td>
+<p>The source code for the USB Device Viewer is available from the code gallery, see <a href="https://docs.microsoft.com/samples/microsoft/windows-driver-samples/usbview-sample-application/" data-raw-source="[USBVIEW Sample Application](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/usbview-sample-application/)">USBVIEW Sample Application</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -238,8 +238,8 @@ The information in the following tables describes the tools that are useful for 
 <p>%WindowsSdkDir%\tools\x86\WpdDeviceInspector.exe</p></td>
 <td align="left"><p>Queries a WPD driver and generates a comprehensive HTML report that describes your device and its capabilities. For example, you can use it to retrieve a list of supported device commands and objects. And, this tool will generate a list of all properties supported by each object.</p>
 <p>WDK Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=106527" data-raw-source="[Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527)">Windows Portable Devices</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a></p></td>
+<p><a href="https://docs.microsoft.com/windows/win32/windows-portable-devices" data-raw-source="[Windows Portable Devices](https://docs.microsoft.com/windows/win32/windows-portable-devices)">Windows Portable Devices</a></p>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/portable/familiarizing-yourself-with-the-sample-driver" data-raw-source="[WPD Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/portable/familiarizing-yourself-with-the-sample-driver)">WPD Driver Development Tools</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>WpdInfo (WpdInfo.exe)</p>
@@ -248,17 +248,17 @@ The information in the following tables describes the tools that are useful for 
 <p>%WindowsSdkDir%\tools\x86\WpdInfo.exe</p></td>
 <td align="left"><p>Performs common WPD operations such as: opening and closing a device, creating or deleting objects on a device, and issuing device commands.</p>
 <p>WDK Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=106527" data-raw-source="[Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527)">Windows Portable Devices</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a></p></td>
+<p><a href="https://docs.microsoft.com/windows/win32/windows-portable-devices" data-raw-source="[Windows Portable Devices](https://docs.microsoft.com/windows/win32/windows-portable-devices)">Windows Portable Devices</a></p>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/portable/familiarizing-yourself-with-the-sample-driver" data-raw-source="[WPD Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/portable/familiarizing-yourself-with-the-sample-driver)">WPD Driver Development Tools</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Microsoft Network Monitor (NetMon.exe)</p>
 <p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>Download the Microsoft Network Monitor (NetMon.exe <a href="https://go.microsoft.com/fwlink/p/?linkid=248501" data-raw-source="[here](https://go.microsoft.com/fwlink/p/?linkid=248501)">here</a>.</p></td>
+<td align="left"><p>Download the Microsoft Network Monitor (NetMon.exe <a href=" https://www.microsoft.com/download/details.aspx?displaylang=en&id=4865" data-raw-source="[here]( https://www.microsoft.com/download/details.aspx?displaylang=en&id=4865)">here</a>.</p></td>
 <td align="left"><p>Displays trace information from WPD components. This tool replaces WpdMon.exe which had shipped in previous versions of the WDK.</p>
 <p>WDK Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=106527" data-raw-source="[Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527)">Windows Portable Devices</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262664" data-raw-source="[WPD Driver Development Tools](https://go.microsoft.com/fwlink/p/?linkid=262664)">WPD Driver Development Tools</a>, see <a href="https://docs.microsoft.com/previous-versions/hh451296(v=vs.85)" data-raw-source="[Using the Network Monitor Tool](https://docs.microsoft.com/previous-versions/hh451296(v=vs.85))">Using the Network Monitor Tool</a>.</p></td>
+<p><a href="https://docs.microsoft.com/windows/win32/windows-portable-devices" data-raw-source="[Windows Portable Devices](https://docs.microsoft.com/windows/win32/windows-portable-devices)">Windows Portable Devices</a></p>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/portable/familiarizing-yourself-with-the-sample-driver" data-raw-source="[WPD Driver Development Tools](https://docs.microsoft.com/windows-hardware/drivers/portable/familiarizing-yourself-with-the-sample-driver)">WPD Driver Development Tools</a>, see <a href="https://docs.microsoft.com/windows-hardware/drivers/portable/using-the-netmon-tool" data-raw-source="[Using the Network Monitor Tool](https://docs.microsoft.com/windows-hardware/drivers/portable/using-the-netmon-tool)">Using the Network Monitor Tool</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -307,7 +307,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>Validates the conformance of an XPS file to the XPS and OPC specifications.</p>
 <p>For information about command options, type</p>
 <p><strong>isxps /?</strong> in a Command prompt window.</p>
-<p>For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=150004" data-raw-source="[isXPS Conformance Tool](https://go.microsoft.com/fwlink/p/?linkid=150004)">isXPS Conformance Tool</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/previous-versions/aa348104(v=vs.110)" data-raw-source="[isXPS Conformance Tool](https://docs.microsoft.com/previous-versions/aa348104(v=vs.110))">isXPS Conformance Tool</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Looksgood (Looksgood.exe)</p>
@@ -469,7 +469,7 @@ The information in the following tables describes the tools that are useful for 
 <p>%WindowsSdkDir%\tools\x86\DC2WMIParser.exe</p></td>
 <td align="left"><p>DC2WMIParser is a tool that collects the WMI IRP records created by Driver Verifier and converts this log to a text file.</p>
 <p>Documentation:</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=698758" data-raw-source="[IRP Logging](https://go.microsoft.com/fwlink/p/?LinkId=698758)">IRP Logging</a></p></td>
+<p><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/irp-logging" data-raw-source="[IRP Logging](https://docs.microsoft.com/windows-hardware/drivers/devtest/irp-logging)">IRP Logging</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Dependency Walker (Depends.exe)</p>
@@ -509,7 +509,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>Driver Verification Log (DVL)</p>
 <p><strong>WDK tool:</strong> Yes</p></td>
 <td align="left"><p>Requires Microsoft Visual Studio and the WDK. From the <strong>Driver</strong> menu, click <strong>Create Driver Verification Log....</strong></p></td>
-<td align="left"><p>The <a href="https://go.microsoft.com/fwlink/p/?linkid=227016" data-raw-source="[Windows Server 2012 Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)">Windows Server 2012 Hardware Certification Program</a> requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. See <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Creating a Driver Verification Log](https://docs.microsoft.com/windows-hardware/drivers)">Creating a Driver Verification Log</a>.</p></td>
+<td align="left"><p>The <a href="https://docs.microsoft.com/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae" data-raw-source="[Static Tools Logo Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae)">Static Tools Logo Test</a> requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. See <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-verification-log" data-raw-source="[Creating a Driver Verification Log](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-driver-verification-log)">Creating a Driver Verification Log</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Enhanced Storage Certificate Management Tool (EhStorCertMgrCmd.exe)</p>
@@ -526,13 +526,6 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>%WindowsSdkDir%\bin\x64\ECManGen.exe</p>
 <p>%WindowsSdkDir%\bin\x86\ECManGen.exe</p></td>
 <td align="left"><p>A tool for creating an event or performance counter manifest (*.man) from scratch without ever having to use XML tags. For information about creating manifest files, see <a href="https://docs.microsoft.com/windows/desktop/WES/writing-an-instrumentation-manifest" data-raw-source="[Writing an Instrumentation Manifest (Windows)](https://docs.microsoft.com/windows/desktop/WES/writing-an-instrumentation-manifest)">Writing an Instrumentation Manifest (Windows)</a> section and <a href="adding-event-tracing-to-kernel-mode-drivers.md" data-raw-source="[Adding Event Tracing to Kernel-Mode Drivers](adding-event-tracing-to-kernel-mode-drivers.md)">Adding Event Tracing to Kernel-Mode Drivers</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>GUIDgen (Guidgen.exe)</p>
-<p><strong>WDK tool:</strong> No</p></td>
-<td align="left"><p>Download available from <a href="https://go.microsoft.com/fwlink/p/?linkid=121586" data-raw-source="[Microsoft Exchange Server GUID Generator](https://go.microsoft.com/fwlink/p/?linkid=121586)">Microsoft Exchange Server GUID Generator</a></p></td>
-<td align="left"><p>Generates globally unique identifiers (GUID) that you can use to identify your classes, objects, and interfaces. The generated GUID is copied to the Clipboard in one of four formats so that you can insert it into your source code.</p>
-<p>GUIDGEN.doc (included in the download package)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Inf2Cat (Inf2cat.exe)</p>
@@ -579,7 +572,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WDK tool:</strong> No</p></td>
 <td align="left"><p>Installed with Visual Studio</p></td>
 <td align="left"><p>Builds the samples, drivers, and associated software components that are supplied in the Microsoft WDK.</p>
-<p><a href="https://go.microsoft.com/fwlink/p/?linkid=262804" data-raw-source="[MSBuild]( https://go.microsoft.com/fwlink/p/?linkid=262804)">MSBuild</a></p></td>
+<p><a href="https://docs.microsoft.com/visualstudio/msbuild/msbuild?view=vs-2015" data-raw-source="[MSBuild]( https://docs.microsoft.com/visualstudio/msbuild/msbuild?view=vs-2015)">MSBuild</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PnpCpu (PnPCpu.exe)</p>
@@ -615,7 +608,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>A command-line tool that is used to evaluate system energy efficiency.</p>
 <p>This tool is available in Windows 7 and later versions of Windows.</p>
 <p>Dev Center Documentation:</p>
-<a href="http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx" data-raw-source="[Using PowerCfg to Evaluate System Energy Efficiency](http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx)">Using PowerCfg to Evaluate System Energy Efficiency</a>
+<a href="https://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx" data-raw-source="[Using PowerCfg to Evaluate System Energy Efficiency](https://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/PowerCfg.docx)">Using PowerCfg to Evaluate System Energy Efficiency</a>
 <p>For information about command options, type</p>
 <p></p>
 <p><strong>PowerCfg /?</strong></p></td>
@@ -749,7 +742,7 @@ The information in the following tables describes the tools that are useful for 
 <p><strong>WSDBIT Server:</strong></p>
 <p>%WindowsSdkDir%\tools\x64\wsdbit_server.exe</p>
 <p>%WindowsSdkDir%\tools\x86\wsdbit_server.exe</p></td>
-<td align="left"><p>Verifies an implementation of <a href="https://go.microsoft.com/fwlink/p/?linkid=81255" data-raw-source="[Device Profile for Web Services (DPWS)](https://go.microsoft.com/fwlink/p/?linkid=81255)">Device Profile for Web Services (DPWS)</a> works with WSDAPI.</p>
+<td align="left"><p>Verifies an implementation of Device Profile for Web Services (DPWS) works with WSDAPI.</p>
 <p>WDK Documentation:</p>
 <p><a href="wsdapi-basic-interoperability-tool.md" data-raw-source="[WSD Interoperability Tool](wsdapi-basic-interoperability-tool.md)">WSD Interoperability Tool</a></p></td>
 </tr>
@@ -779,7 +772,7 @@ The information in the following tables describes the tools that are useful for 
 <td align="left"><p>Automatically generates proxies and stubs based on a Web Services contract. Primarily, you can use this tool to create client applications. However, you can use it for testing or for creating user-mode drivers.</p>
 <p>Verifies that the classes, properties, methods and events specified in a binary MOF file (.bmf) are valid for WMI use. Generates MOF support files.</p>
 <p>Windows SDK:</p>
-<p>See the <a href="https://go.microsoft.com/fwlink/p/?linkid=81407" data-raw-source="[Web Services on Devices](https://go.microsoft.com/fwlink/p/?linkid=81407)">Web Services on Devices</a> section</p></td>
+<p>See the <a href="https://docs.microsoft.com/windows/win32/wsdapi/wsd-portal" data-raw-source="[Web Services on Devices](https://docs.microsoft.com/windows/win32/wsdapi/wsd-portal)">Web Services on Devices</a> section</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>WSDDebug_client and WSDDebug_host</p>
@@ -792,7 +785,7 @@ The information in the following tables describes the tools that are useful for 
 <p>%WindowsSdkDir%\bin\x86\WSDDebug_host.exe</p></td>
 <td align="left"><p>These tools are a soft device and client that you can use to troubleshoot devices or applications.</p>
 <p>Windows SDK:</p>
-<p>See the <a href="https://go.microsoft.com/fwlink/p/?linkid=81407" data-raw-source="[Web Services on Devices](https://go.microsoft.com/fwlink/p/?linkid=81407)">Web Services on Devices</a> section</p></td>
+<p>See the <a href="https://docs.microsoft.com/windows/win32/wsdapi/wsd-portal" data-raw-source="[Web Services on Devices](https://docs.microsoft.com/windows/win32/wsdapi/wsd-portal)">Web Services on Devices</a> section</p></td>
 </tr>
 </tbody>
 </table>
@@ -828,7 +821,7 @@ The following tools were in the Microsoft WDK for Windows 7, but are not include
 
 -   IoSpy and IoAttack (IoSpyCmd.exe, IoAttack.exe). Now part of the Device Fundamental tests.
 
--   Kernrate (Kernrate.exe) Kernrate is no longer supported. Instead, use the [Windows Performance Analysis Toolkit](https://go.microsoft.com/fwlink/p/?linkid=294280).
+-   Kernrate (Kernrate.exe) Kernrate is no longer supported. Instead, use the [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/).
 
 -   Microsoft Auto Code Review (OACR) (The driver components now part of the Code Analysis tool in Visual Studio.)
 

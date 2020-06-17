@@ -54,12 +54,12 @@ There are two different experiences that assigned access provides:
 <td><p>An application that runs normally, in an unlocked Windows context.</p></td>
 </tr>
 <tr class="odd">
-<td><p><span id="LockApplicationHost"></span><span id="lockapplicationhost"></span><span id="LOCKAPPLICATIONHOST"></span><a href="https://go.microsoft.com/fwlink/?LinkId=691219" data-raw-source="[LockApplicationHost](https://go.microsoft.com/fwlink/?LinkId=691219)">LockApplicationHost</a></p></td>
+<td><p><span id="LockApplicationHost"></span><span id="lockapplicationhost"></span><span id="LOCKAPPLICATIONHOST"></span><a href="https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.LockScreen.LockApplicationHost" data-raw-source="[LockApplicationHost](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.LockScreen.LockApplicationHost)">LockApplicationHost</a></p></td>
 <td><p>A WinRT class that allows above lock screen apps to request that the device unlocks, and allows the app to register to be notified when the device begins to unlock.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="View_or_Application_View"></span><span id="view_or_application_view"></span><span id="VIEW_OR_APPLICATION_VIEW"></span>View or Application View</p></td>
-<td><p>Each view is a separate window into the app. An app can have a main view, and create multiple and secondary views on demand. See <a href="https://go.microsoft.com/fwlink/?LinkId=691220" data-raw-source="[ApplicationView]( https://go.microsoft.com/fwlink/?LinkId=691220)">ApplicationView</a> for more information.</p></td>
+<td><p>Each view is a separate window into the app. An app can have a main view, and create multiple and secondary views on demand. See <a href="https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView" data-raw-source="[ApplicationView]( https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView)">ApplicationView</a> for more information.</p></td>
 </tr>
 </tbody>
 </table>
@@ -102,7 +102,7 @@ Regardless of whether your app uses the extension, be sure to secure its data. S
 
 If the kiosk app is meant to run both above lock in assigned access and also in the unlocked Windows context, you may want to create a different page to render above lock, and another page for under the lock. This will allow you to avoid showing sensitive information in kiosk mode, since kiosk mode usually means anonymous access. Here are the steps you'd follow to use two different pages, one for under the lock and one for above the lock:
 
-1.  Inside the override of the **OnLaunched** function in App.xaml.cs, try to obtain an instance of the [LockApplicationHost](https://go.microsoft.com/fwlink/?LinkId=691219) class before rootFrame navigation.
+1.  Inside the override of the **OnLaunched** function in App.xaml.cs, try to obtain an instance of the [LockApplicationHost](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.LockScreen.LockApplicationHost) class before rootFrame navigation.
 2.  If the call fails, the kiosk app should launch normally, under the lock.
 3.  If the call succeeds, the kiosk app should launch above the lock running in assigned access mode. You may want this version of the kiosk app to have a different main page to hide sensitive information.
 
@@ -241,7 +241,7 @@ After the user presses Ctrl+Alt+Del and a login screen is shown, two things coul
 
 ### <span id="Don_t_create_new_windows_or_views_in_assigned_access_mode"></span><span id="don_t_create_new_windows_or_views_in_assigned_access_mode"></span><span id="DON_T_CREATE_NEW_WINDOWS_OR_VIEWS_IN_ASSIGNED_ACCESS_MODE"></span>Don't create new windows or views in assigned access mode
 
-The following function call will end up with a runtime exception if it’s invoked in assigned access mode. If the same app, when used under lock, calls the function, it does not cause a runtime exception. It’s helpful to use [LockApplicationHost](https://go.microsoft.com/fwlink/?LinkId=691219) to determine the app's assigned access mode, and code your app accordingly, such as not creating new views if the app is in assigned access mode.
+The following function call will end up with a runtime exception if it’s invoked in assigned access mode. If the same app, when used under lock, calls the function, it does not cause a runtime exception. It’s helpful to use [LockApplicationHost](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.LockScreen.LockApplicationHost) to determine the app's assigned access mode, and code your app accordingly, such as not creating new views if the app is in assigned access mode.
 
 ```cpp
 Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exception
@@ -306,7 +306,7 @@ Note that because kiosk apps with assigned access do not run in full-screen mode
 
 [Assigned access](https://docs.microsoft.com/windows-hardware/customize/enterprise/assigned-access)
 
-[Show multiple views for an app]( https://go.microsoft.com/fwlink/?LinkId=708251)
+[Show multiple views for an app](https://docs.microsoft.com/windows/uwp/design/layout/show-multiple-views)
 
 
 

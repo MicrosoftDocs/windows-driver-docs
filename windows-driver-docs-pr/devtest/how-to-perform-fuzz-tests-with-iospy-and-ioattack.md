@@ -6,6 +6,7 @@ ms.date: 07/10/2018
 ms.localizationpriority: medium
 ---
 
+# How to Perform Fuzz Tests with IoSpy and IoAttack
 
 > [!NOTE]
 > IoSpy and IoAttack are no longer available in the WDK after Windows 10 Version 1703.
@@ -24,8 +25,6 @@ ms.localizationpriority: medium
 >
 > You can also use the [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing) that is included with Driver Verifier.
 >
-
-# How to Perform Fuzz Tests with IoSpy and IoAttack
 
 
 To perform fuzz tests by using [IoSpy](iospy.md) and [IoAttack](ioattack.md), do the following:

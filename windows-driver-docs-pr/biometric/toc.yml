@@ -1,37 +1,34 @@
 - name: "Biometric Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "Biometric Design Guide"
-    href: index.md
-  - name: "Getting Started with Biometric Drivers"
-    href: getting-started-with-biometric-drivers.md
-  - name: "Roadmap for Developing Biometric Drivers"
-    href: roadmap-for-developing-biometric-drivers.md
-  - name: "Sample Biometric Driver"
-    href: sample-biometric-driver.md
-  - name: "Supporting Biometric IOCTL Calling Sequence"
-    href: supporting-biometric-ioctl-calling-sequence.md
-  - name: "Using WinUSB in a WBDI Driver"
-    href: using-winusb-in-a-wbdi-driver.md
-  - name: "Installing a Biometric Driver"
-    href: installing-a-biometric-driver.md
-  - name: "Managing Queues in a WBDI Driver"
-    href: managing-queues-in-a-wbdi-driver.md
-  - name: "Creating a Device Interface for a WBDI Driver"
-    href: creating-a-device-interface-for-a-wbdi-driver.md
-  - name: "Supporting Secure Channels in WBDI Drivers"
-    href: supporting-secure-channels-in-wbdi-drivers.md
-  - name: "Using WBDI with Non-PnP Devices or Proprietary Stacks"
-    href: using-wbdi-with-non-pnp-devices-or-proprietary-stacks.md
-  - name: "Hardware Considerations for Biometric Drivers"
-    href: hardware-considerations-for-biometric-drivers.md
-  - name: "Ranking a Biometric Driver on Windows Update"
-    href: ranking-a-biometric-driver-on-windows-update.md
-  - name: "Testing Biometric Drivers"
-    href: testing-biometric-drivers.md
-  - name: "Signing WBDI Drivers"
-    href: signing-wbdi-drivers.md
-  - name: "Windows Hello: Steps to Submit a Fingerprint Driver"
-    href: windows-hello-driver-signing.md
-  - name: "Custom Control Codes"
-    href: custom-control-codes.md
+  href: index.md
+- name: "Getting Started with Biometric Drivers"
+  href: getting-started-with-biometric-drivers.md
+- name: "Roadmap for Developing Biometric Drivers"
+  href: roadmap-for-developing-biometric-drivers.md
+- name: "Sample Biometric Driver"
+  href: sample-biometric-driver.md
+- name: "Supporting Biometric IOCTL Calling Sequence"
+  href: supporting-biometric-ioctl-calling-sequence.md
+- name: "Using WinUSB in a WBDI Driver"
+  href: using-winusb-in-a-wbdi-driver.md
+- name: "Installing a Biometric Driver"
+  href: installing-a-biometric-driver.md
+- name: "Managing Queues in a WBDI Driver"
+  href: managing-queues-in-a-wbdi-driver.md
+- name: "Creating a Device Interface for a WBDI Driver"
+  href: creating-a-device-interface-for-a-wbdi-driver.md
+- name: "Supporting Secure Channels in WBDI Drivers"
+  href: supporting-secure-channels-in-wbdi-drivers.md
+- name: "Using WBDI with Non-PnP Devices or Proprietary Stacks"
+  href: using-wbdi-with-non-pnp-devices-or-proprietary-stacks.md
+- name: "Hardware Considerations for Biometric Drivers"
+  href: hardware-considerations-for-biometric-drivers.md
+- name: "Ranking a Biometric Driver on Windows Update"
+  href: ranking-a-biometric-driver-on-windows-update.md
+- name: "Testing Biometric Drivers"
+  href: testing-biometric-drivers.md
+- name: "Signing WBDI Drivers"
+  href: signing-wbdi-drivers.md
+- name: "Windows Hello: Steps to Submit a Fingerprint Driver"
+  href: windows-hello-driver-signing.md
+- name: "Custom Control Codes"
+  href: custom-control-codes.md

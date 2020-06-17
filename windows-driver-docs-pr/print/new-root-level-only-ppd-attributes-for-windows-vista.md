@@ -104,7 +104,7 @@ A single printer model's PPD file (or files) should have only one definition of 
 The following code example shows an example of the **MsPrintSchemaPrivateNamespaceURI** attribute in a partial PPD file.
 
 ```cpp
-*MSPrivateNamespaceURI:  "http://www.ihv.com/schema/2004"
+*MSPrivateNamespaceURI:  "https://www.ihv.com/schema/2004"
 ```
 
 ### MSIsXPSDriver

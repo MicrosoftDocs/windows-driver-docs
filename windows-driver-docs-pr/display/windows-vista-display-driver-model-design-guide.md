@@ -18,19 +18,15 @@ ms.localizationpriority: medium
 
 # Windows Display Driver Model (WDDM) Design Guide
 
-
 The Windows Display Driver Model (WDDM) is available starting with Windows Vista and is required starting with Windows 8. This section discusses requirements, specifications, and behavior for WDDM drivers.
 
 ## <span id="wddm_id"></span><span id="WDDM_ID"></span>
 
-
 **Note**  [Windows 2000 Display Driver Model (XDDM)](windows-2000-display-driver-model-design-guide.md) and VGA drivers will not compile on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver.
-
- 
 
 The following sections describe the Windows Display Driver Model (WDDM):
 
-[What's new for Windows 10 display drivers (WDDM 2.0)](what-s-new-for-windows-threshold-display-drivers--wddm-2-0-.md)
+[What's new for Windows 10 display and graphics drivers](what-s-new-for-windows-10-display-and-graphics-drivers.md)
 
 [What's new for Windows 8.1 display drivers (WDDM 1.3)](what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md)
 
@@ -71,14 +67,3 @@ The following sections describe the Windows Display Driver Model (WDDM):
 [Container Support for non-DX APIs](container-non-dx.md)
 
 **Note**  WDDM drivers do not directly use services of the Windows Graphics Device Interface (GDI) engine; therefore, the [GDI](gdi.md) section is not relevant to writing display drivers for the WDDM driver model.
-
- 
-
- 
-
- 
-
-
-
-
-

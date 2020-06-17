@@ -38,7 +38,7 @@ The block of data that the function driver copies to or from the DMA buffer is n
 
 For codec function drivers that use the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) version of the DDI, the [**AllocateContiguousDmaBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer) routine performs both the allocation and mapping of the DMA buffer memory. The routine always sets the buffer's cache type to **MmWriteCombined**.
 
-For more information about write-combining, see the IA-32 Intel Architecture Software Developer's Manual at the [Intel](https://go.microsoft.com/fwlink/p/?linkid=38518) website.
+For more information about write-combining, see the IA-32 Intel Architecture Software Developer's Manual at the [Intel](https://www.intel.com/content/www/us/en/homepage.html) website.
 
  
 

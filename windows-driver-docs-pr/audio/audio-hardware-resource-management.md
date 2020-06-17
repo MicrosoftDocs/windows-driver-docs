@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Audio Hardware Resource Management
 
-Windows 10 includes the ability to express concurrency constraints using and XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
+Windows 10 includes the ability to express concurrency constraints using an XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
 
 **Note**   This mechanism is only available in phones and tablets.
  
@@ -24,7 +24,7 @@ To specify constraints complete these two steps.
 ## <span id="Specify_Concurrency_Constraints"></span><span id="specify_concurrency_constraints"></span><span id="SPECIFY_CONCURRENCY_CONSTRAINTS"></span>Specify Concurrency Resource Constraints
 
 
-The XML constraints file is made up of three sections. The first required section is defined by &lt;Limits&gt; &lt;/Limits&gt;. This section can be used to define up to fifteen resource restraints. For example you could define constraints for the maximum number of rendering stream and the maximum number of streams that can be off loaded.
+The XML constraints file is made up of three sections. The first required section is defined by &lt;Limits&gt; &lt;/Limits&gt;. This section can be used to define up to fifteen resource restraints. For example you could define constraints for the maximum number of rendering stream and the maximum number of streams that can be offloaded.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

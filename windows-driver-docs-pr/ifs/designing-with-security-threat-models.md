@@ -1,6 +1,6 @@
 ---
-title: Designing with Security Threat Models
-description: Designing with Security Threat Models
+title: Security Threat Models
+description: Security Threat Models
 ms.assetid: a505df1a-82c0-4e0b-88bb-d96654a098fb
 keywords:
 - security WDK file systems , threat models
@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Designing with Security Threat Models
+# Security Threat Models
 
 
 ## <span id="ddk_designing_with_security_threat_models_if"></span><span id="DDK_DESIGNING_WITH_SECURITY_THREAT_MODELS_IF"></span>

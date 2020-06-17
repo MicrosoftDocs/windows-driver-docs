@@ -7,7 +7,9 @@ ms.localizationpriority: medium
 ---
 
 # Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
-[This topic applies only to desktop drivers and not universal drivers.]
+
+> [!NOTE]
+> This topic applies only to Windows Desktop drivers and not Windows Drivers.  See [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md) for information about this distinction.
 
 This topic provides information about distributing the C Runtime Libraries with applications and drivers for Windows 8 and Windows 8.1. It provides guidelines for user-mode driver and desktop application writers to compile their code, and package it for redistribution with the necessary C Runtime libraries.
 

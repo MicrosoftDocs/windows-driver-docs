@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_NORMAL_CONFLICT
+# Code 12 - CM_PROB_NORMAL_CONFLICT
 
-This function is reserved for system use.
-
-Two devices have been assigned the same I/O ports, the same interrupt, or the same DMA channel (either by the BIOS, the operating system, or a combination of the two).
+This Device Manager error message indicates that two devices have been assigned the same I/O ports, the same interrupt, or the same DMA channel (either by the BIOS, the operating system, or a combination of the two).
 
 ## Error Code
 

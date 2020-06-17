@@ -7,9 +7,9 @@ ms.date: 10/11/2017
 ms.localizationpriority: medium
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
-
 # OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES
+
+[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
 
 The OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES OID is sent to [RSSv2](receive-side-scaling-version-2-rssv2-.md)-capable miniport drivers to perform moves of individual indirection table entries. This OID is a [Synchronous OID](synchronous-oid-request-interface-in-ndis-6-80.md), meaning it cannot return NDIS_STATUS_PENDING. It is issued as a Method request only, at IRQL == DISPATCH_LEVEL. 
 

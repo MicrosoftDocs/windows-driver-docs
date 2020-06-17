@@ -8,7 +8,9 @@ ms.localizationpriority: medium
 
 # Using an Extension INF File
 
-Prior to Windows 10, Windows selected a single driver package to install for a given device.  This resulted in large, complex driver packages that included code for all scenarios and configurations, and each minor update required an update to the entire driver package.  Starting in Windows 10, you can split INF functionality into multiple components, each of which can be serviced independently.  To extend a driver package INF file's functionality, provide an extension INF in a separate driver package.  An extension INF:
+Prior to Windows 10, Windows selected a single driver package to install for a given device.  This resulted in large, complex driver packages that included code for all scenarios and configurations, and each minor update required an update to the entire driver package.  Starting in Windows 10, you can split INF functionality into multiple components, each of which can be serviced independently.
+
+To extend a driver package INF file's functionality, provide an extension INF in a separate driver package.  An extension INF:
 
 * Can be provided by a different company and updated independently from the base INF.
 * Looks the same as a base INF, but can extend the base INF for customization or specialization.
@@ -22,7 +24,7 @@ Typical scenarios where you might use an extension INF include:
 * Modifying settings provided in a base INF, such as customizing the device friendly name or modifying a hardware configuration setting.
 * Creating one or more software components by specifying the [INF AddComponent directive](inf-addcomponent-directive.md) and providing a [component INF file](using-a-component-inf-file.md).
 
-You can find sample code for these scenarios in the examples below on this page.  Also see [Universal Driver Scenarios](../develop/universal-driver-scenarios.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) uses extension INFs.
+You can find sample code for these scenarios in the examples below.  Also see [DCH-Compliant Driver Package Example](../develop/dch-example.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) uses extension INFs.
 
 In the following diagram, two different companies have created separate driver packages for the same device, which are shown in the dotted lines.  The first contains just an extension INF, and the second contains a component INF and a legacy software module.  The diagram also shows how an extension INF can reference a component INF, which can in turn reference software modules to install.
 
@@ -44,7 +46,7 @@ To illustrate, consider the following scenario that includes a hypothetical devi
 
 ![Diagram showing how base INF and extension INFs are selected](images/extension-base-inf-example.png)
 
-The **ExtensionId** values are shown in curly brackets, and each driver's [rank](how-setup-ranks-drivers--windows-vista-and-later-.md) is shown in the banner ribbons.
+The **ExtensionId** values `{A}`, `{B}`, and `{C}` are shown in curly brackets, and each driver's [rank](how-setup-ranks-drivers--windows-vista-and-later-.md) is shown in the banner ribbons.
 
 First, the system selects the driver with the most recent version and highest rank.
 
@@ -93,7 +95,7 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
 
 5.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
-In most cases, you'll submit an extension INF package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [Universal Driver Scenarios](../develop/universal-driver-scenarios.md).
+In most cases, you'll submit an extension INF package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [DCH-Compliant Driver Package Example](../develop/dch-example.md).
 
 The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
@@ -225,7 +227,7 @@ OsrFx2.ExtensionDesc = "OsrFx2 DCHU Device Extension"
 REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
-To use an Extension INF to install a filter driver, please see [this page](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering) that details how to properly register a filter driver using Extension INF's.
+For info on how to use an Extension INF to install a filter driver, see [Device filter driver ordering](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering).
 
 ##  Submitting an extension INF for certification
 
@@ -233,7 +235,8 @@ For detailed information on how to work with Extension INFs on the Hardware Dev 
 
 ## Related topics
 
-* [Universal Driver Scenarios](../develop/universal-driver-scenarios.md)
+* [Working with Extension INFs in the Partner Center](../dashboard/submit-dashboard-extension-inf-files.md)
+* [DCH-Compliant Driver Package Example](../develop/dch-example.md)
 * [Using a Universal INF File](using-a-universal-inf-file.md)
-* [Getting Started with Universal Drivers](../develop/getting-started-with-universal-drivers.md)
+* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
 * [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)

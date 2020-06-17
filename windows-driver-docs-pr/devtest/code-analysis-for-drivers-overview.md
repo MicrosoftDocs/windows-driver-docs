@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Code Analysis for drivers overview
 
 
-The Windows Driver Kit provides a driver-specific extension to the [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836) in Microsoft Visual Studio. The Code Analysis for Drivers includes rules that apply only to drivers, particularly kernel-mode drivers. Code Analysis for Drivers can detect potential errors in your code as soon as the code can be compiled.
+The Windows Driver Kit provides a driver-specific extension to the [Code Analysis tool](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)) in Microsoft Visual Studio. The Code Analysis for Drivers includes rules that apply only to drivers, particularly kernel-mode drivers. Code Analysis for Drivers can detect potential errors in your code as soon as the code can be compiled.
 
 ## <span id="How_the_Code_Analysis_tool_works"></span><span id="how_the_code_analysis_tool_works"></span><span id="HOW_THE_CODE_ANALYSIS_TOOL_WORKS"></span>How the Code Analysis tool works
 
@@ -40,19 +40,19 @@ Code Analysis can detect several types of errors, including errors in the follow
 ## <span id="Code_Analysis_warnings"></span><span id="code_analysis_warnings"></span><span id="CODE_ANALYSIS_WARNINGS"></span>Code Analysis warnings
 
 
-The Code Analysis tool uses a rule-based model to identify errors in the program or driver code. Each rule is associated with a warning that is reported if the Code Analysis tool detects a violation of the rule. For detailed information about the driver-specific warnings, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio reports, see [Code Analysis Warnings](https://go.microsoft.com/fwlink/p/?linkid=226853).
+The Code Analysis tool uses a rule-based model to identify errors in the program or driver code. Each rule is associated with a warning that is reported if the Code Analysis tool detects a violation of the rule. For detailed information about the driver-specific warnings, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio reports, see [Code Analysis Warnings](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/a5b9aa09(v=vs.110)).
 
 ## <span id="Annotations"></span><span id="annotations"></span><span id="ANNOTATIONS"></span>Annotations
 
 
-One of the important capabilities that the Code Analysis tool provides is the ability to annotate function descriptions and some other entities in the source code of the driver. The Code Analysis tool has an intra-functional scope; that is, it analyzes the interactions between functions. The objective of the annotations is to provide a more complete expression of the contract between the called and calling functions, so that the Code Analysis tool can check that the contract is met. Another goal of the annotations is that they inform whoever reads the code how the function should be used and what results can be expected. The annotations declare the contract of the interface and do not attempt to describe how that contract is achieved. In many cases, the results from running the Code Analysis tool reflect the absence of an appropriate annotation, and by adding the annotation, both the warning about the missing annotation is suppressed, and additional checks are enabled. For more information, see [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md). More information about SAL 2.0, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=247283). SAL 2.0 replaces SAL 1.0. SAL 2.0 should be used with the WDK for Windows 8. If you need information about SAL 1.0 for drivers, refer to the PREfast for Drivers Annotations documentation that shipped with the WDK for Windows 7.
+One of the important capabilities that the Code Analysis tool provides is the ability to annotate function descriptions and some other entities in the source code of the driver. The Code Analysis tool has an intra-functional scope; that is, it analyzes the interactions between functions. The objective of the annotations is to provide a more complete expression of the contract between the called and calling functions, so that the Code Analysis tool can check that the contract is met. Another goal of the annotations is that they inform whoever reads the code how the function should be used and what results can be expected. The annotations declare the contract of the interface and do not attempt to describe how that contract is achieved. In many cases, the results from running the Code Analysis tool reflect the absence of an appropriate annotation, and by adding the annotation, both the warning about the missing annotation is suppressed, and additional checks are enabled. For more information, see [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md). More information about SAL 2.0, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://docs.microsoft.com/cpp/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects). SAL 2.0 replaces SAL 1.0. SAL 2.0 should be used with the WDK for Windows 8. If you need information about SAL 1.0 for drivers, refer to the PREfast for Drivers Annotations documentation that shipped with the WDK for Windows 7.
 
 ## <span id="Interpreting_the_result"></span><span id="interpreting_the_result"></span><span id="INTERPRETING_THE_RESULT"></span>Interpreting the result
 
 
 Code Analysis for Drivers is easy to run and it runs quickly, even on very large drivers and programs. The work for the developer is in examining the output, analyzing the errors that the Code Analysis tool detected, and distinguishing real coding errors from valid code that the Code Analysis tool misinterpreted.
 
-For a comprehensive reference that describes each warning that the Code Analysis tool might detect, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio reports, see [Code Analysis Warnings](https://go.microsoft.com/fwlink/p/?linkid=226853).
+For a comprehensive reference that describes each warning that the Code Analysis tool might detect, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio reports, see [Code Analysis Warnings](https://docs.microsoft.com/cpp/code-quality/code-analysis-for-c-cpp-warnings).
 
 Resolving a code analysis warning typically involves either updating the source code when appropriate, or adding an annotation to clarify the function contract. Adding an annotation allows the analyzer to enforce the contract for all future callers, and it also improves readability.
 
@@ -63,11 +63,11 @@ If the **Code Analysis Results** shows errors that you determine, after careful 
 
 [How to run Code Analysis for drivers](how-to-run-code-analysis-for-drivers.md)
 
-[Code Analysis tool in Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=226836)
+[Code Analysis tool in Visual Studio](https://docs.microsoft.com/visualstudio/code-quality/?view=vs-2019)
 
 [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md)
 
-[Code Analysis Warnings](https://go.microsoft.com/fwlink/p/?linkid=226853)
+[Code Analysis Warnings](https://docs.microsoft.com/cpp/code-quality/code-analysis-for-c-cpp-warnings)
 
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
 

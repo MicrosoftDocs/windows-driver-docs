@@ -48,7 +48,7 @@ The initial value of the **Type** key, 0X20, prevents the debugger window from b
 
 Most debuggers require the PID of the running process in order to attach to it after the process has already started. Because WIA runs under a generic hosting process called *svchost.exe*, finding the correct instance of *svchost.exe* is essential.
 
-If you downloaded the debugger package from the Microsoft site (www.microsoft.com), it includes a utility program named *tlist.exe*. *Tlist.exe* displays all running processes. If you execute *tlist.exe* using the s switch, this utility also shows which processes are hosting which services. For example, running *tlist.exe -s* produces output similar to the following:
+If you downloaded the debugger package from the Microsoft site, it includes a utility program named *tlist.exe*. *Tlist.exe* displays all running processes. If you execute *tlist.exe* using the s switch, this utility also shows which processes are hosting which services. For example, running *tlist.exe -s* produces output similar to the following:
 
 ```cmd
    0 System Process

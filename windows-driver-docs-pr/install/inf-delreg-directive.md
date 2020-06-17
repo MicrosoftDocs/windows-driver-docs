@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -39,7 +39,7 @@ DelReg=del-registry-section[,del-registry-section]...
 
 Each *del-registry-section* referenced by a **DelReg** directive has the following form:
 
-```ini
+```inf
 [del-registry-section]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
 reg-root-string,subkey[,value-entry-name][,flags][,value]
@@ -124,13 +124,13 @@ Each *del-registry-section* name must be unique to the INF file, but it can be r
 
 With operating system versions prior to Windows XP, the only way to delete a key is by specifying the following:
 
-```ini
+```inf
 reg-root-string, subkey
 ```
 
 For Windows XP and later versions of Windows, the following is also permitted (to specify the 32-bit registry):
 
-```ini
+```inf
 reg-root-string, subkey,,0x4000
 ```
 
@@ -139,7 +139,7 @@ Examples
 
 This example shows how the system-supplied COM/LPT ports class installer's INF removes stale NT-specific registry information about COM ports from the registry.
 
-```ini
+```inf
 [ComPort.NT]
 CopyFiles=ComPort.NT.Copy
 AddReg=ComPort.AddReg, ComPort.NT.AddReg

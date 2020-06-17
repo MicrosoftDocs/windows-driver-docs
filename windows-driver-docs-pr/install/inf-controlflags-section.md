@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **ControlFlags** section identifies devices for which Windows should take certain unique actions during installation.
 
-```ini
+```inf
 [ControlFlags]
 
 ExcludeFromSelect=* | 
@@ -129,7 +129,7 @@ Examples
 
 This example of the **ControlFlags** section in the system mouse class installer INF suppresses the display of devices/models that cannot be installed on x86 platforms.
 
-```ini
+```inf
 [ControlFlags]
 ; Exclude all bus mice and InPort mice for x86 platforms
 ExcludeFromSelect.ntx86=*PNP0F0D,*PNP0F11,*PNP0F00,*PNP0F02,*PNP0F15
@@ -139,7 +139,7 @@ ExcludeFromSelect=UNKNOWN_MOUSE
 
 The following INF file fragment shows two devices: one that is fully PnP-capable and requires no user intervention during installation and another that requires its own driver and cannot use any other driver. Specifying **InteractiveInstall** for the second device forces Windows to install this device in a user's context (a user who has administrative rights). This includes prompting the user for the location of the driver files (INF file, driver file, and so on) as required.
 
-```ini
+```inf
 ; ...
 [Manufacturer]
 %Mfg% = ModelsSection

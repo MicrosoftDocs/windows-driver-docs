@@ -10,7 +10,7 @@ api_name:
 - BCDEdit /set
 api_type:
 - NA
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # BCDEdit /set
@@ -33,7 +33,7 @@ bcdedit  /set [{ID}] datatype value
 The **{ID}** is the GUID that is associated with the boot entry. If you do not specify an **{ID}**, the command modifies the current operating system boot entry. If a boot entry is specified, the GUID associated with the boot entry must be enclosed in braces **{ }**. To view the GUID identifiers for all of the active boot entries, use the **bcdedit /enum** command. The identifier for the current boot entry is **{current}**. For more information about this option, use the following command: **bcdedit /? ID**
 
 > [!NOTE]
-> If you are using [Windows PowerShell](https://go.microsoft.com/fwlink/p/?linkid=108518), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
+> If you are using [Windows PowerShell](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/?view=powershell-6), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
 
 *datatype* *value*  
 
@@ -43,7 +43,7 @@ The following list shows some useful *datatypes* and their associated *values*.
 Enables the system initialization log. This log is stored in the Ntbtlog.txt file in the %WINDIR% directory. It includes a list of loaded and unloaded drivers in text format.
 
 **bootmenupolicy** \[ **Legacy** | **Standard** \]  
-Defines the type of boot menu the system will use. ForWindows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu appears but only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](https://go.microsoft.com/fwlink/p/?linkid=313921).
+Defines the type of boot menu the system will use. ForWindows 10, Windows 8.1, Windows 8 and Windows RT the default is **Standard**. For Windows Server 2012 R2, Windows Server 2012, the default is **Legacy**. When **Legacy** is selected, the Advanced options menu (**F8**) is available. When **Standard** is selected, the boot menu appears but only under certain conditions: for example, if there is a startup failure, if you are booting up from a repair disk or installation media, if you have configured multiple boot entries, or if you manually configured the computer to use Advanced startup. When **Standard** is selected, the **F8** key is ignored during boot. Windows 8 PCs start up quickly so there isn't enough time to press **F8**. For more information, see [Windows Startup Settings (including safe mode)](https://support.microsoft.com/help/17076/windows-8-startup-settings-safe-mode).
 
 > [!NOTE]
 > The option is available starting with Windows 8 and Windows Server 2012. You can also use the **onetimeadvancedoptions** to use the Advanced options (**F8**) menu (**Legacy**) one time on the next boot.
@@ -93,12 +93,12 @@ Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard
 > This option should only be used for debugging. 
 
 **groupsize** *maxsize*
-Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](https://go.microsoft.com/fwlink/p/?linkid=155063) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
+Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](https://docs.microsoft.com/windows/win32/procthread/processor-groups) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
 
 Use the **groupsize** option if you want to force multiple groups and the computer has 64 or fewer active logical processors. For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-parameters-to-test-drivers-for-multiple-processor-group-support).
 
 **groupaware** \[ **on** | **off** \]  
-Forces drivers to be aware of multiple groups in a multiple processor group environment. Use this option to help expose cross-group incompatibilities in drivers and components. [Processor groups](https://go.microsoft.com/fwlink/p/?linkid=155063) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7. You can use the **groupaware** option and the **groupsize** option to test driver compatibility to function with multiple groups when computer has 64 or fewer active logical processors.
+Forces drivers to be aware of multiple groups in a multiple processor group environment. Use this option to help expose cross-group incompatibilities in drivers and components. [Processor groups](https://docs.microsoft.com/windows/win32/procthread/processor-groups) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7. You can use the **groupaware** option and the **groupsize** option to test driver compatibility to function with multiple groups when computer has 64 or fewer active logical processors.
 
 The **groupaware on** setting ensures that processes are started in a group other than group 0. This increases the chances of cross-group interaction between drivers and components. The option also modifies the behavior of the legacy functions, **KeSetTargetProcessorDpc**, **KeSetSystemAffinityThreadEx**, and **KeRevertToUserAffinityThreadEx**, so that they always operate on the highest numbered group that contains active logical processors. Drivers that call any of these legacy functions should be changed to call their group-aware counterparts (**KeSetTargetProcessorDpcEx**, **KeSetSystemGroupAffinityThread**, and **KeRevertToUserGroupAffinityThread**).
 
@@ -343,7 +343,7 @@ For example, if you change the processor group option, **groupsize**, to a new v
 bcdedit /deletevalue groupsize
 ```
 
-Any change to a boot option requires a restart to take effect. For information about commonly used BCDEdit commands, see [Boot Configuration Data Editor Frequently Asked Questions](https://go.microsoft.com/fwlink/p/?linkid=155086).
+Any change to a boot option requires a restart to take effect. For information about commonly used BCDEdit commands, see [Boot Configuration Data Editor Frequently Asked Questions](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc721886(v=ws.10)).
 
 ## Requirements
 

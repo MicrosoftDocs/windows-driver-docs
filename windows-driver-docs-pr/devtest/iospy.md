@@ -6,6 +6,8 @@ ms.date: 07/09/2018
 ms.localizationpriority: medium
 ---
 
+# IoSpy
+
 > [!NOTE]
 > IoSpy and IoAttack are no longer available in the WDK after Windows 10 Version 1703.
 >
@@ -23,11 +25,6 @@ ms.localizationpriority: medium
 >
 > You can also use the [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing) that is included with Driver Verifier.
 >
-
-
-
-# IoSpy
-
 
 IoSpy is a filter driver that records data about IOCTL and WMI requests made to the kernel-mode driver of a device.
 

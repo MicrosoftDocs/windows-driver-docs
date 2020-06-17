@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # INF files for NetAdapterCx client drivers
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 INF files for NetAdapterCx client drivers build on top of standard network INF files, with some additional keywords specific to NetAdapterCx. 
 
 For more information about standard network INF files, see [Creating Network INF Files](../network/creating-network-inf-files.md). For more information about base INF files, see [INF File Sections and Directives](../install/inf-file-sections-and-directives.md).

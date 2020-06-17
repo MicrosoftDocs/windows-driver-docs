@@ -19,6 +19,7 @@ Major Code
 ----------
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
+
 When Sent
 ---------
 

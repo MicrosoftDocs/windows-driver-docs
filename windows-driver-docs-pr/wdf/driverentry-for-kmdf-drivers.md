@@ -107,6 +107,7 @@ DriverEntry(
     WDFDRIVER  hDriver;
     NTSTATUS  status;
     WDF_OBJECT_ATTRIBUTES  attributes;
+    SERIAL_FIRMWARE_DATA driverDefaults;
 
     //
     // Initialize WPP tracing.

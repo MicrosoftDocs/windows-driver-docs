@@ -67,7 +67,7 @@ Use the following steps to prepare your code for analysis.
 
 2.  **Run Code Analysis for C/C++**
 
-    To help you determine whether the source code is prepared, run the [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836) in Visual Studio. The Code Analysis tool checks for function role type declarations, which SDV requires. The Code Analysis tool can help identify any function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
+    To help you determine whether the source code is prepared, run the [Code Analysis tool](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)) in Visual Studio. The Code Analysis tool checks for function role type declarations, which SDV requires. The Code Analysis tool can help identify any function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
 
     -   Open your driver project in Visual Studio.
     -   From the **Build** menu, click **Run Code Analysis on Solution**.
@@ -152,7 +152,7 @@ If SDV reports timeouts or fails to return useful results, you might need to cha
 
 [Static Driver Verifier Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
-[Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836)
+[Code Analysis tool](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120))
 
 
 

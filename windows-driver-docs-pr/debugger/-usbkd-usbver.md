@@ -48,7 +48,7 @@ USBD VER 600 USB stack is VISTA
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
 
 **USBD\_IsInterfaceVersionSupported**
  

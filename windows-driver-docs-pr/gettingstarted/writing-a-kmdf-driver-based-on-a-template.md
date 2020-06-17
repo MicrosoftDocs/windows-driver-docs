@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 This topic describes how to write a [Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-To get started, be sure you have [Microsoft Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=698539) and the [Windows Driver Kit (WDK) 10](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
+To get started, be sure you have the latest versions of [Microsoft Visual Studio]https://visualstudio.microsoft.com/vs/) and the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) installed.
 
-[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
+[Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/) is included when you install the WDK.
 
 ## Create and build a driver package
 
@@ -48,7 +48,7 @@ To get started, be sure you have [Microsoft Visual Studio 2015](https://go.micr
 
 ## Deploy the driver
 
-Typically when you test and debug a driver, the debugger and driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*. For more information about debugging drivers, see [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405).
+Typically when you test and debug a driver, the debugger and driver run on separate computers. The computer that runs the debugger is called the *host computer*, and the computer that runs the driver is called the *target computer*. The target computer is also called the *test computer*. For more information about debugging drivers, see [Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/).
 
 So far you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer.
 
@@ -126,10 +126,10 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 
 4. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    * [lm](https://go.microsoft.com/fwlink/p?linkid=399236)
-    * [.sympath](https://go.microsoft.com/fwlink/p?linkid=399238)
-    * [.reload](https://go.microsoft.com/fwlink/p?linkid=399239)
-    * [x KmdfHelloWorld!\*](https://go.microsoft.com/fwlink/p?linkid=399240)
+    * [lm](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)
+    * [.sympath](https://docs.microsoft.com/windows-hardware/drivers/debugger/-sympath--set-symbol-path-)
+    * [.reload](https://docs.microsoft.com/windows-hardware/drivers/debugger/-reload--reload-module-)
+    * [x KmdfHelloWorld!\*](https://docs.microsoft.com/windows-hardware/drivers/debugger/x--examine-symbols-)
 
 5. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 6. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
@@ -139,7 +139,7 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 
 For a detailed step-by-step walkthrough of the driver debugging process, see [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
-For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remode-debugging-using-windbg.md).
+For more information about remote debugging, see [Remote Debugging Using WinDbg](../debugger/remote-debugging-using-windbg.md).
 
 ## Using the Driver Module Framework (DMF)
 
@@ -153,9 +153,9 @@ For more info, see [Driver Module Framework (DMF)](https://github.com/Microsoft/
 
 ## Related topics
 
-[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p?linkid=399234)
+[Developing, Testing, and Deploying Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/)
 
-[Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405)
+[Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/)
 
 [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
 

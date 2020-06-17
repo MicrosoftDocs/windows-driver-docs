@@ -25,7 +25,7 @@ Details are given in the following topics:
 
 -   [Setting Symbol and Executable Image Paths in WinDbg](setting-symbol-and-source-paths-in-windbg.md)
 
--   [Remote Debugging Using WinDbg](remode-debugging-using-windbg.md)
+-   [Remote Debugging Using WinDbg](remote-debugging-using-windbg.md)
 
 -   [Entering Debugger Commands in WinDbg](debugger-command-window.md)
 

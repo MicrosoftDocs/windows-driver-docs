@@ -1,31 +1,28 @@
 - name: "Multifunction device driver design guide"
+  href: index.md
+- name: "Supporting Multifunction PC Card Devices"
 # Auto-expanded node
   items: 
-  - name: "Multifunction device driver design guide"
-    href: index.md
   - name: "Supporting Multifunction PC Card Devices"
+    href: supporting-multifunction-pc-card-devices.md
+  - name: "Supporting PC Cards That Conform to the Multifunction Standard"
+    href: supporting-pc-cards-that-conform-to-the-multifunction-standard.md
+  - name: "Supporting PC Cards That Have Incomplete Configuration Register Addresses"
+    href: supporting-pc-cards-that-have-incomplete-configuration-register-addres.md
+  - name: "Supporting PC Cards That Have Incomplete Configuration Registers"
+    href: supporting-pc-cards-that-have-incomplete-configuration-registers.md
+- name: "Supporting Multifunction PCI Devices"
+  href: supporting-multifunction-pci-devices.md
+- name: "Supporting Multifunction Devices On Other Buses"
+  href: supporting-multifunction-devices-on-other-buses.md
+- name: "Using the System-Supplied Multifunction Bus Driver"
+  href: using-the-system-supplied-multifunction-bus-driver.md
+- name: "Creating Resource Maps for a Multifunction Device"
 # Auto-expanded node
-    items: 
-    - name: "Supporting Multifunction PC Card Devices"
-      href: supporting-multifunction-pc-card-devices.md
-    - name: "Supporting PC Cards That Conform to the Multifunction Standard"
-      href: supporting-pc-cards-that-conform-to-the-multifunction-standard.md
-    - name: "Supporting PC Cards That Have Incomplete Configuration Register Addresses"
-      href: supporting-pc-cards-that-have-incomplete-configuration-register-addres.md
-    - name: "Supporting PC Cards That Have Incomplete Configuration Registers"
-      href: supporting-pc-cards-that-have-incomplete-configuration-registers.md
-  - name: "Supporting Multifunction PCI Devices"
-    href: supporting-multifunction-pci-devices.md
-  - name: "Supporting Multifunction Devices On Other Buses"
-    href: supporting-multifunction-devices-on-other-buses.md
-  - name: "Using the System-Supplied Multifunction Bus Driver"
-    href: using-the-system-supplied-multifunction-bus-driver.md
+  items: 
   - name: "Creating Resource Maps for a Multifunction Device"
-# Auto-expanded node
-    items: 
-    - name: "Creating Resource Maps for a Multifunction Device"
-      href: creating-resource-maps-for-a-multifunction-device.md
-    - name: "Creating Standard Resource Maps"
-      href: creating-standard-resource-maps.md
-    - name: "Creating Varying Resource Maps"
-      href: creating-varying-resource-maps.md
+    href: creating-resource-maps-for-a-multifunction-device.md
+  - name: "Creating Standard Resource Maps"
+    href: creating-standard-resource-maps.md
+  - name: "Creating Varying Resource Maps"
+    href: creating-varying-resource-maps.md

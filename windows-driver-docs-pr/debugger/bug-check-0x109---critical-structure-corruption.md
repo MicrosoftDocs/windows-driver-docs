@@ -258,7 +258,7 @@ Cause
 
 There are generally three different causes for this bug check:
 
-1.  A driver has inadvertently, or deliberately, modified critical kernel code or data. Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows for x64-based computers do not allow the kernel to be patched except through authorized Microsoft-originated hot patches. For more information, see [Patching Policy for x64-based Systems](https://go.microsoft.com/fwlink/p/?linkid=50719).
+1.  A driver has inadvertently, or deliberately, modified critical kernel code or data. Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows for x64-based computers do not allow the kernel to be patched except through authorized Microsoft-originated hot patches.
 
 2.  A developer attempted to set a normal kernel breakpoint using a kernel debugger that was not attached when the system was started. Normal breakpoints ([**bp**](bp--bu--bm--set-breakpoint-.md)) can only be set if the debugger is attached at start time. Processor breakpoints ([**ba**](ba--break-on-access-.md)) can be set at any time.
 

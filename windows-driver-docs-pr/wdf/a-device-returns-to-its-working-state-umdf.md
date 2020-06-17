@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # A Device Returns to Its Working State
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 A device that is in a low-power state returns to its working state if one of the following occurs:
 

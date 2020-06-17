@@ -1,7 +1,7 @@
 ---
 title: Debugger Data Model C++ Objects
 description: This topic describes how to use Debugger Data Model C++ Objects and how they can extend the capabilities of the debugger.
-ms.date: 09/12/2019
+ms.date: 01/13/2020
 ---
 
 # Debugger Data Model C++ Objects
@@ -17,21 +17,21 @@ module.
 
 There are several different things that can be held in (or boxed into) an *IModelObject*:
 
--   **Intrinsic Values** - An *IModelObject* can be a container for a number of basic types: 8, 16, 32, or 64 bit signed or unsigned
+- **Intrinsic Values** - An *IModelObject* can be a container for a number of basic types: 8, 16, 32, or 64 bit signed or unsigned
     integers, booleans, strings, errors, or the notion of empty.
 
--   **Native Objects** - An *IModelObject* can represent a complex type (as defined by the debugger's type system) within the address space
+- **Native Objects** - An *IModelObject* can represent a complex type (as defined by the debugger's type system) within the address space
     of whatever the debugger is targeting 
-    
--   **Synthetic Objects** - An *IModelObject* can be a dynamic object --
+
+- **Synthetic Objects** - An *IModelObject* can be a dynamic object --
     a dictionary if you will: a collection of key / value / metadata
     tuples and a set of **concepts** which define behaviors that aren't
     simply represented by key / value pairs.
 
--   **Properties** - An *IModelObject* can represent a property:
+- **Properties** - An *IModelObject* can represent a property:
     something whose value can be retrieved or altered with a method call. A property within an *IModelObject* is effectively an *IModelPropertyAccessor* interface boxed into an *IModelObject*
 
--   **Methods** - An *IModelObject* can represent a method: something you can call with a set of arguments and get a return value. A
+- **Methods** - An *IModelObject* can represent a method: something you can call with a set of arguments and get a return value. A
     method within an *IModelObject* is effectively an *IModelMethod* interface boxed into an *IModelObject*
 
 ### Extensibility Within The Object Model
@@ -97,9 +97,6 @@ associated.
 
 This type of context is accessed through the *GetContextForDataModel*
 and *SetContextForDataModel* methods on *IModelObject*.
-
-
-
 
 ## <span id="imodelobject"></span> The Core Debugger Object Interface: **IModelObject**
 
@@ -242,8 +239,7 @@ The GetKeyReference method will search for a key of the given name on the object
 
 [EnumerateKeyReferences](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelobject-enumeratekeyreferences)
 
-The EnumerateKeyReferences method behaves similar to the EnumerateKeyValues method excepting that it returns references to the keys it enumerates (given by an IModelKeyReference interface boxed into an IModelObject) instead of the value of the key. Such references can be used to get or set the underlying value of the keys. 
-
+The EnumerateKeyReferences method behaves similar to the EnumerateKeyValues method excepting that it returns references to the keys it enumerates (given by an IModelKeyReference interface boxed into an IModelObject) instead of the value of the key. Such references can be used to get or set the underlying value of the keys.
 
 **Concept Manipulation Methods**
 
@@ -279,7 +275,6 @@ The SetConcept method will place a specified concept on the object instance spec
 
 The ClearConcepts method will remove all concepts from the instance of the object specified by this. 
 
-
 **Native Object Methods**
 
 While many model objects refer to intrinsics (e.g.: integers, strings) or synthetic constructs (a dictionary of key/value/metadata tuples and concepts), a model object may also refer to a native construct (e.g.: a user defined type in the address space of the debug target). The IModelObject interface has a series of methods on it which access information about such native objects. Those methods are: 
@@ -297,7 +292,7 @@ STDMETHOD(EnumerateRawReferences)(_In_ SymbolKind kind, _In_ ULONG searchFlags, 
 
 [GetRawValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelobject-getrawvalue)
 
-The GetRawValue method finds a native construct within the given object. Such a construct may be a field, a base class, a field in a base class, a member function, etc... 
+The GetRawValue method finds a native construct within the given object. Such a construct may be a field, a base class, a field in a base class, a member function, etc...
 
 [EnumerateRawValues](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelobject-enumeraterawvalues)
 
@@ -331,7 +326,7 @@ The EnumerateRawReferences method enumerates references to all native children (
 
 **Extensibility Methods**
 
-As described earlier, a model object behaves very similar to a JavaScript object and its prototype chain. In addition to the instance represented by a given IModelObject interface, there may be an arbitrary number of parent models attached to the object (each of which may, in turn, have an arbitrary number of parent models attached to them). This is the primary means for extensibility within the data model. If a given property or concept cannot be located within a given instance, a depth-first search of the object tree (defined by parent models) rooted at the instance is performed. 
+As described earlier, a model object behaves very similar to a JavaScript object and its prototype chain. In addition to the instance represented by a given IModelObject interface, there may be an arbitrary number of parent models attached to the object (each of which may, in turn, have an arbitrary number of parent models attached to them). This is the primary means for extensibility within the data model. If a given property or concept cannot be located within a given instance, a depth-first search of the object tree (defined by parent models) rooted at the instance is performed.
 
 The following methods manipulate the chain of parent models associated with a given IModelObject instance: 
 
@@ -369,11 +364,7 @@ The SetContextForDataModel method is used by the implementation of a data model 
 The GetContextForDataModel method is used to retrieve context information which was set up with a prior call to SetContextForDataModel. This retrieves state information which was set on an instance object by a data model further up in the instance object's parent model hierarchy. 
 For more details about this context/state and its meaning, see the documentation for SetContextForDataModel. 
 
-
-
-
 ## <span id="objecttypes"></span> Debugger Data Model Core Object Types
-
 
 An object in the data model is similar to the notion of Object in .NET. It is the generic container into which construct that the data model understands can be boxed. In addition to native objects and synthetic (dynamic) objects, there are a series of core object types which can be placed (or boxed) into the container of an IModelObject. The container in which most of these values are placed is a standard COM/OLE VARIANT with a number of additional restrictions placed upon what that VARIANT can contain. The most basic types of these are:
 
@@ -416,7 +407,6 @@ The GetValue method is the getter for the property accessor. It is called whenev
 
 The SetValue method is the setter for the property accessor. It is called whenever a client wishes to assign a value to the underlying property. Many properties are read-only. In such cases, calling the SetValue method will return E_NOTIMPL. Note that any caller which directly gets a property accessor is responsible for passing the key name and accurate instance object (this pointer) to the property accessor's SetValue method. 
 
-
 **Methods: *IModelMethod***
 
 A method in the data model is an implementation of the IModelMethod interface which is boxed into an IModelObject. The model object will return a kind of ObjectMethod when queried and the intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelMethod. In process, it is guaranteed to be statically castable to IModelMethod. 
@@ -434,7 +424,6 @@ DECLARE_INTERFACE_(IModelMethod, IUnknown)
 [Call](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelmethod-call)
 
 The Call method is the way in which any method defined in the data model is invoked. The caller is responsible for passing an accurate instance object (this pointer) and an arbitrary set of arguments. The result of the method and any optional metadata associated with that result is returned. Methods which do not logically return a value still must return a valid IModelObject. In such a case, the IModelObject is a boxed no value. In the event a method fails, it may return optional extended error information in the input argument (even if the returned HRESULT is a failure). It is imperative that callers check for this. 
-
 
 **Key References: *IModelKeyReference or IModelKeyReference2***
 
@@ -476,7 +465,6 @@ The GetKey method on a key reference behaves as the GetKey method on IModelObjec
 
 The GetKeyValue method on a key reference behaves as the GetKeyValue method on IModelObject would. It returns the value of the underlying key and any metadata associated with the key. If the value of the key happens to be a property accessor, this will call the underlying GetValue method on the property accessor automatically. 
 
-
 [SetKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelkeyreference-setkey)
 
 The SetKey method on a key reference behaves as the SetKey method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will replace the property accessor. It will not call the SetValue method on the property accessor. 
@@ -484,7 +472,7 @@ The SetKey method on a key reference behaves as the SetKey method on IModelObjec
 
 [SetKeyValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelkeyreference-setkeyvalue)
 
-The SetKeyValue method on a key reference behaves as the SetKeyValue method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will call the underlying SetValue method on the property accessor rather than replacing the property accessor itself. 
+The SetKeyValue method on a key reference behaves as the SetKeyValue method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will call the underlying SetValue method on the property accessor rather than replacing the property accessor itself.
 
 [OverrideContextObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodelkeyreference2-overridecontextobject)
 
@@ -496,7 +484,6 @@ The OverrideContextObject method (only present on IModelKeyReference2) is an adv
 Context objects are opaque blobs of information that the debug host (in cooperation with the data model) associates with every object. It may include things such as the process context or address space the information comes from, etc... A context object is an implementation of IDebugHostContext boxed within an IModelObject. Note that IDebugHostContext is a host defined interface. A client will never implement this interface. 
 
 For more information about context objects, see [Debugger Data Model C++ Host Interfaces](data-model-cpp-interfaces.md#hostinterface) in Debugger Data Model C++ Interfaces. 
-
 
 ## <span id="modelmanager"> The Data Model Manager  
 
@@ -661,21 +648,20 @@ The UnregisterExtensionForTypeSignature method undoes a prior call to RegisterEx
 
 [GetRootNamespace](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelmanager-getrootnamespace)
 
-The GetRootNamespace method returns the data model's root namespace. This is an object which the data model manages and into which the debug host places certain objects. 
+The GetRootNamespace method returns the data model's root namespace. This is an object which the data model manages and into which the debug host places certain objects.
 
-[RegisterNamedModel](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelmanager-getrootnamespace)
+[RegisterNamedModel](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelmanager2-registernamedmodel)
 
 The RegisterNamedModel method registers a given data model under a well known name so that it can be found by clients wishing to extend it. This is the primary purpose of the API -- to publish a data model as something which can be extended by retrieving the model registered under this well known name and adding a parent model to it. 
 
-[UnregisterNamedModel](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelmanager-unregisternamedmodel)
+[UnregisterNamedModel](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelmanager2-unregisternamedmodel)
 
-The UnregisterNamedModel method undoes a prior call to RegisterNamedModel. It removes the association between a data model and a name under which it can be looked up. 
+The UnregisterNamedModel method undoes a prior call to RegisterNamedModel. It removes the association between a data model and a name under which it can be looked up.
 
 [AcquireNamedModel](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelmanager-acquirenamedmodel)
 
 A caller who wishes to extend a data model which is registered under a given name calls the AcquireNamedModel method in order to retrieve the object for the data model they wish to extend. This method will return whatever data model was registered via a prior call to the RegisterNamedModel method. 
 As the primary purpose of the AcquireNamedModel method is to extend the model, this method has a special behavior if no model has been registered under the given name yet. If no model has been registered under the given name yet, a stub object is created, temporarily registered under the given name, and returned to the caller. When the real data model is registered via a call to the RegisterNamedModel method, any changes which were made to the stub object are, in effect, made to the real model. This removes many load order dependency issues from components which extend each other. 
-
 
 **Helper Methods**
 

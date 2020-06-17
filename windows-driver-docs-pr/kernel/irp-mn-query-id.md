@@ -19,12 +19,16 @@ For more information about these identifiers (IDs), see [Device Identification S
 
 **Note**  Function drivers and filter drivers do not handle this IRP.
 
- 
+ ## Value
+
+0x13
+
 
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

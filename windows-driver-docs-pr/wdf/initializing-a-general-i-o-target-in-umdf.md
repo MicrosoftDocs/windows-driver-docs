@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Initializing a General I/O Target in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The steps that your driver uses to initialize a general I/O target depend on whether the I/O target is [local](general-i-o-targets-in-umdf.md) or remote.
 

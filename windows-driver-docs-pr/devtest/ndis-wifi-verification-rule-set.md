@@ -74,6 +74,10 @@ ms.localizationpriority: medium
 <td align="left"><p>The <a href="ndis-ndistimedoidcomplete.md" data-raw-source="[&lt;strong&gt;NdisTimedOidComplete&lt;/strong&gt;](ndis-ndistimedoidcomplete.md)"><strong>NdisTimedOidComplete</strong></a> rule specifies that the NDIS miniport driver completes an OID request within 12 seconds.</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p><a href="ndis-wlanassert.md" data-raw-source="[&lt;strong&gt;WlanAssert&lt;/strong&gt;](ndis-wlanassert.md)"><strong>WlanAssert</strong></a></p></td>
+<td align="left"><p>The <a href="ndis-wlanassert.md" data-raw-source="[&lt;strong&gt;WlanAssociation&lt;/strong&gt;](ndis-wlanassert.md)"><strong>WlanAssert</strong></a> rule includes a set of checks validated inside the WDIWIFI driver.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p><a href="ndis-wlanassociation.md" data-raw-source="[&lt;strong&gt;WlanAssociation&lt;/strong&gt;](ndis-wlanassociation.md)"><strong>WlanAssociation</strong></a></p></td>
 <td align="left"><p>The <a href="ndis-wlanassociation.md" data-raw-source="[&lt;strong&gt;WlanAssociation&lt;/strong&gt;](ndis-wlanassociation.md)"><strong>WlanAssociation</strong></a> rule verifies the miniport driver correctly follows the Native 802.11 wireless LAN (WLAN) association sequence.</p></td>
 </tr>

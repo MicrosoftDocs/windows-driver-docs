@@ -1,18 +1,18 @@
 ---
 title: Time Travel Debugging Extension !index Command
 description: The !index extension indexes time travel traces or displays index status information.
-ms.date: 10/12/2018
+ms.date: 01/22/2020
 ms.localizationpriority: medium
 ---
 
-#  !index
+# !index
 
 ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
 The **!index** extension indexes time travel traces or displays index status information.
 
 ```dbgsyntax
-!index [-status] [-force] 
+!index [-status] [-force]
 ```
 
 
@@ -41,7 +41,7 @@ Successfully created the index in 0ms.
 Use `!index -status` to report the status of the trace index.
 
 ```dbgcmd
-0:000> !tt.index -status
+0:000> !index -status
 Index file loaded.
 ```
 **-force**
@@ -49,7 +49,7 @@ Index file loaded.
 Use `!index -force` to reindex the trace even if an unloadable index file exists on disk.
 
 ```dbgcmd
-0:000> !tt.index -force
+0:000> !index -force
 Successfully created the index in 152ms.
 ```
 

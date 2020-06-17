@@ -105,7 +105,7 @@ i. If both are specified, Windows will concatenate them into "MANUFACTURER MODEL
 
 ii. If only one of these fails, Windows will use the value from the other key as the queue name.
 
-**The Add Printer Wizard**. The driver name will continue to be the only identifier available to users choosing a driver in the **Add Printer Wizard**. TCP/IP-based devices should implement the [Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.html) to support TCP/IP auto-detection. Existing devices that are added to a print class driver using a hardware ID (HWID) mapping may additionally use a device-specific model name.
+**The Add Printer Wizard**. The driver name will continue to be the only identifier available to users choosing a driver in the **Add Printer Wizard**. TCP/IP-based devices should implement the [Port Monitor MIB (PWG 5107.1-2005)](https://www.pwg.org/standards.html) to support TCP/IP auto-detection. Existing devices that are added to a print class driver using a hardware ID (HWID) mapping may additionally use a device-specific model name.
 
 ## Changing Ports and Dealing with Printer Devnodes
 
@@ -178,7 +178,7 @@ c. CompatibleID lines: "Print Class Driver name" = INSTALL\_SECTION,,1284\_CID\_
 ## Related topics
 [How to Implement Compatible IDs in Printing Devices](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613942(v=vs.85))  
 [How Windows Ranks Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-)  
-[Port Monitor MIB (PWG 5107.1-2005)](http://www.pwg.org/standards.html)  
+[Port Monitor MIB (PWG 5107.1-2005)](https://www.pwg.org/standards.html)  
 
 
 

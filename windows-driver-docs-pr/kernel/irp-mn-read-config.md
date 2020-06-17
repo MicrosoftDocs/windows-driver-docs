@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Filter and function drivers do not handle this request.
 
+## Value
+
+0x0F
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

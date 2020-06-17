@@ -34,7 +34,7 @@ The following code example shows a native C++ file that contains a single test c
 20  }
 ```
 
-**Line 1** includes the single header file that is required for the framework, **WexTestClass.h**. That included header file also includes the **Log.h** file for the Logger and the **Verify.h** file for defining the verification cases. These header files will be discussed later.
+**Line 1** includes the single header file that is required for the framework, **WexTestClass.h**, found at **%\Program Files (x86)\Windows Kits\10\Testing\Development\inc**. That included header file also includes the **Log.h** file for the Logger and the **Verify.h** file for defining the verification cases. These header files will be discussed later.
 
 **Line 3** defines a test Class, **SimpleTests**. Test classes do not need to inherit from any special class. Also, their contents do not need to be public.
 

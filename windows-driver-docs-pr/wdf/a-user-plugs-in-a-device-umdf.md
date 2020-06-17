@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # A User Plugs in a Device
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 When a user plugs in a device, the framework calls a UMDF driver's PnP and Power Management callback methods in the following sequence, starting from the Device Arrived state at the bottom of the figure:
 
@@ -23,10 +23,6 @@ The framework begins by calling the driver’s [**IDriverEntry::OnDeviceAdd**](h
 The framework proceeds through this sequence for each UMDF function or filter driver that supports the device, one driver at a time, starting with the driver that is lowest in the driver stack.
 
  
-
- 
-
-
 
 
 

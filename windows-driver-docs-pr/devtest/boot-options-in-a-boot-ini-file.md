@@ -26,12 +26,12 @@ This section includes:
 - [Editing the Boot.ini File](editing-the-boot-ini-file.md)
 - [Backing Up the Boot.ini File](backing-up-the-boot-ini-file.md)
 
-This document describes aspects of Boot.ini that are of special interest to driver developers and testers. For a complete list of Boot.ini parameters, see [Available Switch Options for the Windows XP and the Windows Server 2003 Boot.ini Files](https://go.microsoft.com/fwlink/p/?linkid=137742) topic on the Microsoft Support website.
+This document describes aspects of Boot.ini that are of special interest to driver developers and testers. For a complete list of Boot.ini parameters, see [Available Switch Options for the Windows XP and the Windows Server 2003 Boot.ini Files](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) topic on the Microsoft Support website.
 
 
 ## Mapping Boot.ini Options to BCDEdit Options and Elements
 
-The following table provides a mapping from the boot options used in operating systems prior to Windows Vista (in Boot.ini), to the BCDEdit options and the BCD elements used in Windows. For information about the BCD boot elements see [BCD Reference](https://go.microsoft.com/fwlink/p/?linkid=56420).
+The following table provides a mapping from the boot options used in operating systems prior to Windows Vista (in Boot.ini), to the BCDEdit options and the BCD elements used in Windows. For information about the BCD boot elements with the context of WMI, see [BCD WMI Provider Reference](https://docs.microsoft.com/previous-versions/windows/desktop/bcd/bcd-reference).
 
 <table>
 <colgroup>

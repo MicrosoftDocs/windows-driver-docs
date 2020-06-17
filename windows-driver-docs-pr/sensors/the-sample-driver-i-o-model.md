@@ -75,9 +75,9 @@ Here are the key elements of the I2C resource:
 
 | Element    | Description                                             |
 |------------|---------------------------------------------------------|
-| 0x1D       | Specifies the I2C address for the slave device.         |
-| 400000     | Specifies the operating frequency for the slave device. |
-| \\\\SB.I2C | Specifies the ACPI node for the slave device.           |
+| 0x1D       | Specifies the I2C address for the subordinate device.         |
+| 400000     | Specifies the operating frequency for the subordinate device. |
+| \\\\SB.I2C | Specifies the ACPI node for the subordinate device.           |
 
  
 

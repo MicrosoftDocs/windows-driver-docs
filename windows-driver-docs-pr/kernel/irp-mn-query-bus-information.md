@@ -15,10 +15,15 @@ The PnP manager uses this IRP to request the type and instance number of a devic
 
 Bus drivers should handle this request for their child devices (PDOs). Function and filter drivers do not handle this IRP.
 
+## Value
+
+0x15
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

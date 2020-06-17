@@ -35,6 +35,10 @@ As part of device start-up operations, drivers that handle DMA operations call t
 
 See [Using System DMA](using-system-dma.md) and [Using Bus-Master DMA](using-bus-master-dma.md) for more information about when and how drivers use adapter objects and *AdapterControl* routines.
 
+## Related topics
+
+[Enabling DMA Remapping for device drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)
+
  
 
  

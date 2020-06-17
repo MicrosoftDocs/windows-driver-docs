@@ -21,7 +21,7 @@ Keyword instances appearing within a PrintCapabilities or PrintTicket document S
 The namespace URI for the Print Schema keywords for 3D manufacturing is:
 
 ```xml
-http://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d
+https://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d
 ```
 
 In this specification, the namespace prefix **psk3d:** is used to denote elements, attributes, and attribute values drawn from the Print Schema keywords for 3D manufacturing namespace. Producers MUST generate each prefixed element, attribute, or attribute value with a namespace prefix associated with the namespace declaration for the related Print Schema namespace. Consumers MUST resolve namespace prefixes against the namespace declarations to ensure that the qualified name is drawn from the correct namespace. Consumers MUST NOT rely on the namespace prefix **psk3d:** to be correctly declared and associated with the Print Schema keywords for 3D manufacturing namespace. Individual producers MAY use different Print Schema keywords for 3D manufacturing namespace prefixes or declare this namespace as the default namespace and omit the namespace prefixes for elements, attributes, and attribute values drawn from this namespace. It is NOT RECOMMENDED, however, to assign this keyword namespace to the default namespace.

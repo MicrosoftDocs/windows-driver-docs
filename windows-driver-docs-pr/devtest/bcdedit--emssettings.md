@@ -46,7 +46,7 @@ On computers that have BIOS firmware, but do not have an SPCR table, use BCDEdit
 
 On all systems, use the [**BCDEdit /ems**](bcdedit--ems.md) command and specify the boot entry to enable EMS console redirection on the operating system that the boot entry loads.
 
-The boot parameters described in this section enable EMS console redirection after Windows is installed. For information about enabling EMS during a new installation or upgrade of Windows, search for "Enabling Emergency Management Services" on the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=10111) website.
+The boot parameters described in this section enable EMS console redirection after Windows is installed. 
 
 For a detailed example, see [Boot Parameters to Enable EMS Redirection](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-parameters-to-enable-ems-redirection).
 

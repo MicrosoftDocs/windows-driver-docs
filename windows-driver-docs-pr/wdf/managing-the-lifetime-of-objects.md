@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Managing the Lifetime of Objects
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 UMDF uses a reference-counting scheme to manage the lifetime of [callback objects](creating-callback-objects.md) and [framework objects](framework-objects.md).
 

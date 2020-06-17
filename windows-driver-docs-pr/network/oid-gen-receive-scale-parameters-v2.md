@@ -7,9 +7,9 @@ ms.date: 10/11/2017
 ms.localizationpriority: medium
 ---
 
-[!include[RSSv2 Beta Prerelease](../rssv2-beta-prerelease.md)]
-
 # OID_GEN_RECEIVE_SCALE_PARAMETERS_V2
+
+[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
 
 The OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 OID is sent to [RSSv2](receive-side-scaling-version-2-rssv2-.md)-capable miniport drivers to set run-time parameters, other than the indirection table, for a scaling entity. OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 replaces the [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) OID from RSSv1 and is not visible to NDIS Light Weight Filters (LWFs) before NDIS 6.80. This OID is a Regular OID and can be issued as a Query or Set request. It is issued at IRQL == PASSIVE_LEVEL. It can target a given VPort, when the *NDIS_OID_REQUEST_FLAGS_VPORT_ID_VALID* flag is set at NIC switch creation. Otherwise, it targets the physical NIC in the Native RSS case.
 

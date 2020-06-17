@@ -158,7 +158,7 @@ This is an example of loading the SDKSamples.BackgroundTask code under the debug
 windbg.exe -plmPackage Microsoft.SDKSamples.BackgroundTask.CPP_1.0.0.0_x64__8wekyb3d8bbwe -plmBgTaskId {ee4438ee-22db-4cdd-85e4-8ad8a1063523}
 ```
 
-You can experiment with the Background task sample code to become familiar with UWP debugging. It can be downloaded at [Background task sample](https://code.msdn.microsoft.com/windowsapps/Background-Task-Sample-9209ade9).
+You can experiment with the Background task sample code to become familiar with UWP debugging. It can be downloaded at [Background task sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Universal%20Windows%20app%20samples/%5BC%23%5D-Universal%20Windows%20app%20samples/Background%20task%20sample).
 
 Use the .querypackages command to locate the BackgroundTaskId. Use CTRL-F to locate the app and then locate the *Background Task Id* field. The background task must be running to display the associated background task name and task Id.
 

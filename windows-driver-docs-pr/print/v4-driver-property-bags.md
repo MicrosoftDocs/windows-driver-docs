@@ -102,7 +102,7 @@ The follwoing code snippet shows a DEVMODE Property Bag Mapping XML Sample.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Properties xmlns="http://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
+<Properties xmlns="https://schemas.microsoft.com/windows/2011/08/printing/devmodemap">
   <Property Name="FabrikamAccountCode">
     <String Length="32"></String>
   </Property>  
@@ -180,7 +180,7 @@ Rendering filters should read the incoming PrintTicket’s PageMediaSize setting
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<Properties xmlns= "http://schemas.microsoft.com/windows/2011/08/printing/queueproperties">
+<Properties xmlns= "https://schemas.microsoft.com/windows/2011/08/printing/queueproperties">
   <Property Name="Name1">
     <String>String1</String>
   </Property>

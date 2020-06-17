@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # <span id="debugger.setting_up_kernel-mode_debugging_using_serial_over_usb_manually_"></span>Setting Up Kernel-Mode Debugging using Serial over USB Manually
 
 
-The [Sharks Cove development board](https://go.microsoft.com/fwlink/p?linkid=403168) supports serial debugging over a USB cable.
+The [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board) supports serial debugging over a USB cable.
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. In this topic, the Sharks Cove board is the target computer.
 

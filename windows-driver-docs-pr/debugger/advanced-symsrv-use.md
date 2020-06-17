@@ -93,7 +93,7 @@ In addition, the symbol path can contain several directories or symbol servers, 
 
 ### <span id="compressed_files"></span><span id="COMPRESSED_FILES"></span>Compressed Files
 
-SymSrv is compatible with symbol stores that contain compressed files, as long as this compression has been done with the compress.exe tool, which is available [here](https://go.microsoft.com/fwlink/p/?linkid=239917). Compressed files should have an underscore as the last character in their file extensions (for example, module1.pd\_ or module2.db\_). For details, see [SymStore](symstore.md).
+SymSrv is compatible with symbol stores that contain compressed files, as long as this compression has been done with the compress.exe tool, which is available [here](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=17657). Compressed files should have an underscore as the last character in their file extensions (for example, module1.pd\_ or module2.db\_). For details, see [SymStore](symstore.md).
 
 If the files on the store are compressed, you must use a downstream store. SymSrv will uncompress all files before caching them on the downstream store.
 

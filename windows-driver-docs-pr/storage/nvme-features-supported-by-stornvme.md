@@ -2,12 +2,18 @@
 title: NVMe Features Supported by StorNVMe
 description: NVMe Features Supported by StorNVMe
 ms.assetid: 1c6f78d7-ea00-44d4-95d2-62f5a1c7d568
-ms.date: 11/15/2019
+ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---
 
 # NVMe Features Supported by StorNVMe
 
-**StorNVMe.sys** is the system-supplied driver that provides access to high-speed NVMe devices. It is available in Windows Windows 8.1 (and Windows Server 2012 R2) and later versions. This page will provide information about the NVMe feature support provided by **StorNVMe**.
+**StorNVMe** (*stornvme.sys*) is the system-supplied storage miniport driver that provides access to high-speed NVMe devices. It is available in Windows 8.1 (and Windows Server 2012 R2) and later versions. The following pages outline the NVMe support provided by **StorNVMe** for Windows 10 version 1903 and later versions.
 
-- Feature support information be filled in
+- [StorNVMe Command Set Support](stornvme-command-set-support.md)
+
+- [StorNVMe Feature Support](stornvme-feature-support.md)
+
+- [StorNVMe SCSI Translation Support](stornvme-scsi-translation-support.md)
+
+See [Working with NVMe drives](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.

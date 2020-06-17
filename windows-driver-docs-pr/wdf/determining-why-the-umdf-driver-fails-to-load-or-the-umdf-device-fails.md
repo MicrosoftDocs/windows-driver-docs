@@ -23,7 +23,7 @@ You can use the following technique with both UMDF version 1 and 2 drivers.
 1.  Check setup by ensuring that the following files are correct:
     -   Driver's INF file.
 
-        Use the [ChkINF](https://docs.microsoft.com/windows-hardware/drivers/devtest/chkinf) tool to validate the driver's INF file.
+        Use the [InfVerif](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) tool to validate the driver's INF file.
 
     -   %windir%\\inf\\setupapi.dev.log (setupapi.log on Windows XP), %windir%\\setupact.log, and %windir%\\temp\\wudf\_update.log files.
 

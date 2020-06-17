@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 A **DriverVer** directive specifies version information for drivers installed by this INF.
 
-```ini
+```inf
 [Version] |
 [DDInstall]
  
@@ -56,7 +56,7 @@ When the operating system searches for drivers, it selects a driver that has a m
 Examples
 --------
 
-```ini
+```inf
 [Version]
 ...
 DriverVer=09/28/1999,5.00.2136.1

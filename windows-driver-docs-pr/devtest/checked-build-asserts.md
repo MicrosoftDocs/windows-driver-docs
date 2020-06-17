@@ -6,7 +6,7 @@ keywords:
 - checked builds WDK , ASSERTs
 - ASSERTs WDK checked builds
 - errors WDK checked builds
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
@@ -21,6 +21,10 @@ This topic contains a list of common [**ASSERT**](https://docs.microsoft.com/pre
 For some tips on how to handle these asserts (and others not listed), see [How the Checked Build Indicates a Problem](how-the-checked-build-indicates-a-problem.md).
 
 The routine listed in the "Routine Called" column is the most common routine that driver writers or system components would call to provoke this error. Some of the routines listed below are documented routines that drivers call. Others are internal routines that only system components can call. Keep in mind that calling some other function from your driver might result in the called function internally calling one of the listed functions, which could in turn issue the **ASSERT**.
+
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 <table>
 <colgroup>

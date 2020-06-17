@@ -333,7 +333,7 @@ A USB audio device has some number of terminals through which digital streams an
 
  
 
-For more information about USB terminal type identifiers, see the *Universal Serial Bus Device Class Definition for Terminal Types* (release 1.0), which is available at the [USB Implementers Forum](https://go.microsoft.com/fwlink/p/?linkid=8780) website.
+For more information about USB terminal type identifiers, see the *Universal Serial Bus Device Class Definition for Terminal Types* (release 1.0), which is available at the [USB Implementers Forum](https://www.usb.org/) website.
 
 All pin category GUIDs in the preceding tables have parameter names of the form KSNODETYPE\_*XXX*. Note that KS node type GUIDs also have KSNODETYPE\_*XXX* parameter names. This naming convention creates some potential for confusion between pin category GUIDs and node type GUIDs. Fortunately, nearly every KSNODETYPE\_*XXX* parameter identifies either a pin category or a node type, but not both. The one exception to the rule is [**KSNODETYPE\_SYNTHESIZER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-synthesizer), which can identify either a pin category or a node type, depending on the context. For a list of node type GUIDs, see [Audio Topology Nodes](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-topology-nodes).
 

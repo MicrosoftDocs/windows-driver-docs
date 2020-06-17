@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Using Work Items
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 A work item is a task that a driver performs in an [*OnWorkItem*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfworkitem/nc-wudfworkitem-wudf_workitem_function) event callback function. These functions run asynchronously.
 

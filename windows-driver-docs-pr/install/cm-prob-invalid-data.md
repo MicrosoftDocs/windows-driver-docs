@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_INVALID_DATA
+# Code 9 - CM_PROB_INVALID_DATA
 
-This function is reserved for system use.
-
-Invalid [device IDs](device-ids.md) have been detected.
+This Device Manager error message indicates that invalid [device IDs](device-ids.md) have been detected.
 
 ## Error Code
 

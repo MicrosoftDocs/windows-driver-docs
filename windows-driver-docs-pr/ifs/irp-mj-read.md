@@ -80,7 +80,7 @@ Pointer to a caller-supplied output buffer that receives the data that is read f
 
 Pointer to the file object that is associated with *DeviceObject*. If the FO\_SYNCHRONOUS\_IO flag is set in *IrpSp-&gt;FileObject-&gt;Flags*, the file object was opened for synchronous I/O.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_READ and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_READ and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 
