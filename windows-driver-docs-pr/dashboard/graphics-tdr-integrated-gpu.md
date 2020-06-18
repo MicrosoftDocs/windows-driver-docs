@@ -2,7 +2,7 @@
 title: Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary 
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver 
 ms.topic: article
-ms.date: 01/28/2020
+ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
  
@@ -20,8 +20,8 @@ During a user’s session, crash in the graphics driver binary may cause the mac
 |**Audience**|Standard|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum instances**|10000 machines|
-|**Passing criteria**|<= 130/10000 of machines encountering TDR|
+|**Minimum instances**|20,000 machines|
+|**Passing criteria**|<= 60/10,000 of machines encountering TDR|
 |**Measure ID**|24633264|
 
 ## Calculation
