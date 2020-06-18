@@ -78,7 +78,7 @@ Key items of note:
 
 - Drivers of devices connected to this port MUST support [DMA remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers), otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard).
 
-```asl
+```ASL
 Name (_DSD, Package () {  
 
 ToUUID("70D24161-6DD5-4C9E-8070-705531292865"),
