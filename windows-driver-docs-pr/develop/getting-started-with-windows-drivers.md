@@ -39,7 +39,7 @@ The following table summarizes the distinctions above:
 | Run on Windows 10X                                                  | Yes           | No                     |
 | Must be certified with WHCP                                         | Yes           | No                     |
 | WDK & HLK are primary vehicles for developing and certifying drivers| Yes           | Yes                    |
-| Reliability and serviceability requirements     | Yes           | No                     |
+| Adhere to stricter reliability and serviceability requirements (e.g. driver package isolation)     | Yes           | No                     |
 
 
 While it won't be required for a driver running only on Windows 10 Desktop to meet the additional requirements for a Windows Driver, doing so will enhance driver serviceability and reliability, as well as preparing the driver for possible future certification on Windows 10X.
