@@ -1,7 +1,7 @@
 ---
 title: USB Video Class (UVC) driver implementation checklist
 description: Provides step-by-step information on implementing a USB Video Class (UVC) driver for your device.
-ms.date: 01/30/2018
+ms.date: 06/19/2020
 ms.localizationpriority: medium
 ---
 
@@ -13,7 +13,7 @@ Use these links to get acquainted with UVC:
 
 - Access the [USB class](https://www.usb.org/documents?search=&type%5B0%5D=55&items_per_page=50) documentation (non-UVC specific) at USB.org
 
-- Download the [USB Video Class 1.5](https://go.microsoft.com/fwlink/p/?linkid=2085170) documentation from USB.org
+- Download the [USB Video Class 1.5](https://www.usb.org/document-library/video-class-v15-document-set) documentation from USB.org
 
 - Review the [USB Video Class driver overview](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver-overview) topic
 
