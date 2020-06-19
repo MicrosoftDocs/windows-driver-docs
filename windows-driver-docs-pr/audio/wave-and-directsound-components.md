@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 ## <span id="wave_and_directsound_components"></span><span id="WAVE_AND_DIRECTSOUND_COMPONENTS"></span>
 
 
-Application programs rely on a combination of user-mode and kernel-mode components to capture (input) and render (output) wave streams. A wave stream is a digital-audio stream whose data format is described by a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) or [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure.
+Application programs rely on a combination of user-mode and kernel-mode components to capture (input) and render (output) wave streams. A wave stream is a digital-audio stream whose data format is described by a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) or [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure.
 
 An application can use either of the following software interfaces for wave rendering and capture:
 
