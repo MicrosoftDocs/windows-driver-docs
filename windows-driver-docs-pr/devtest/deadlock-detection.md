@@ -89,7 +89,7 @@ When Deadlock Detection finds a violation, it will issue bug check 0xC4. The fir
 
 -   Two or more threads involved in a lock hierarchy violation
 
--   A thread that tries to exclusively acquire an resource which is already onws shared (note that exlcusively owned resources can be acquired shared, just not vice-versa).
+-   A thread that tries to exclusively acquire a resource which is already owns shared (note that exclusively owned resources can be acquired shared, just not vice-versa).
 
 -   A resource that is released without having been acquired first
 
@@ -114,7 +114,8 @@ There is a detailed example of the [**!deadlock**](https://docs.microsoft.com/wi
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 
-Note.  This option is incomapotible with [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing)
+> [!NOTE]
+> This option is incompatible with [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing)
 
 You can activate the Deadlock Detection feature for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
