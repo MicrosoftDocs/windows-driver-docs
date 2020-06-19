@@ -187,7 +187,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 
 |Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause of Error|
 |--- |--- |--- |--- |--- |
-|0x1000 |Address of the resource|Reserved|Reserved|Self-deadlock: The current thread has tried to recursively and exlcusively acquire a resource which it onwly owns shared. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
+|0x1000 |Address of the resource|Reserved|Reserved|Self-deadlock: The current thread has tried to recursively and exclusively acquire a resource which it only owns shared. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
 |0x1001 |Address of the resource that was the final cause of the deadlock|Reserved|Reserved|Deadlock: A lock hierarchy violation has been found. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active. (Use the [!deadlock](-deadlock.md) extension for further information.)|
 |0x1002 |Address of the resource|Reserved|Reserved|Uninitialized resource: A resource has been acquired without having been initialized first. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
 |0x1004 |Address of the resource|Address of the thread that acquired the resource|Address of the current thread|Unexpected thread: The wrong thread releases a resource. A bug check with this parameter occurs only when the Deadlock Detection option of Driver Verifier is active.|
