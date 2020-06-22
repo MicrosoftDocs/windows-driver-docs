@@ -89,7 +89,7 @@ When Deadlock Detection finds a violation, it will issue bug check 0xC4. The fir
 
 -   Two or more threads involved in a lock hierarchy violation
 
--   A thread that tries to exclusively acquire a resource which is already owns shared (note that exclusively owned resources can be acquired shared, just not vice-versa).
+-   A thread that tries to exclusively acquire a resource for which it is already a shared owner (exclusively owned resources can be acquired shared; shared resources cannot be acquired exclusively).
 
 -   A resource that is released without having been acquired first
 
