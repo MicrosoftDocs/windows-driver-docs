@@ -61,9 +61,9 @@ Driver Verifier will issue a bug check when one of these violations is discovere
 
 When Deadlock Detection finds a violation, it will issue bug check 0xC4. The first parameter of this bug check will indicate the exact violation. Possible violations include:
 
-- Two or more threads involved in a lock hierarchy violation
+-   Two or more threads involved in a lock hierarchy violation
 
-- A resource that is released out of sequence
+-   A thread that tries to exclusively acquire a resource for which it is already a shared owner (exclusively owned resources can be acquired shared; shared resources cannot be acquired exclusively).
 
 - A thread that tries to acquire the same resource twice (a self-deadlock)
 
@@ -86,6 +86,9 @@ Once Deadlock Detection finds a violation, the **!deadlock** kernel debugger ext
 There is a detailed example of the [**!deadlock**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-deadlock) extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.
 
 ### Activating This Option
+
+> [!NOTE]
+> This option is incompatible with [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing)
 
 You can activate the Deadlock Detection feature for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
