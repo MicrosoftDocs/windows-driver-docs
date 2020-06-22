@@ -11,9 +11,11 @@ ms.localizationpriority: medium
 
 This information describes how to obtain and use cross-certificates for code-signing kernel-mode binary files for Microsoft Windows.
 
-**Note**  Please also review Microsoft Security Advisory ([2880823](https://docs.microsoft.com/security-updates/SecurityAdvisories/2016/2880823)) "Deprecation of SHA-1 Hashing Algorithm for Microsoft Root Certificate Program" which describes a policy change wherein Microsoft will no longer allow root certificate authorities to issue X.509 certificates using the SHA-1 hashing algorithm for the purposes of SSL and code signing after January 1, 2016.
+> [!NOTE]
+> Please review Microsoft Security Advisory ([2880823](https://docs.microsoft.com/security-updates/SecurityAdvisories/2016/2880823)) "Deprecation of SHA-1 Hashing Algorithm for Microsoft Root Certificate Program" which describes a policy change wherein Microsoft will no longer allow root certificate authorities to issue X.509 certificates using the SHA-1 hashing algorithm for the purposes of SSL and code signing after January 1, 2016.
 
- 
+> [!NOTE]
+> The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities. For more info, see [Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates](deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md).
 
 ## Cross-Certificates Overview
 
