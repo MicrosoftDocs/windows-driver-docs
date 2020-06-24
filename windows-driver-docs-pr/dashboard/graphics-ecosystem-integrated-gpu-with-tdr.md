@@ -19,7 +19,7 @@ This is the ecosystem counterpart of [Myriad of machines with integrated GPU tha
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Expanded|
+|**Audience**|Ecosystem|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|20000 machines|
