@@ -122,5 +122,7 @@
     href: whea/index.md
   - name: "Windows portable device drivers"
     href: portable/index.md
+- name: "Windows driver API reference"
+  href: /windows-hardware/drivers/ddi
 - name: "Windows driver samples"
   href: samples/index.md
