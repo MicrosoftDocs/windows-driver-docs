@@ -7,11 +7,11 @@ ms.localizationpriority: medium
 
 # Building ARM64 Drivers with the WDK
 
-Starting with version 1709, Windows 10 Desktop (Pro and S editions) can run on machines that are powered by ARM64 processors.  However, because Windows 10 on ARM does not support x86 emulation of kernel-mode drivers, you must recompile kernel-mode drivers to ARM64 using the instructions below.
+Windows 10 can run on machines that are powered by ARM64 processors.  However, because Windows 10 on ARM does not support emulation of x86 kernel-mode drivers, you must recompile kernel-mode drivers to ARM64 using the instructions below.
 
 ## Setup
 
-1. Download [Visual Studio 2017 Preview](https://visualstudio.microsoft.com/vs/preview/).  You'll need at minimum version 15.4.0 Preview 2.0.
+1. Download [Visual Studio 2017 or 2019](https://visualstudio.microsoft.com/downloads/).  You'll need at minimum version 15.9.
 2. On the Windows start menu, type **Visual Studio Installer**.  Then on the **Workloads** tab, select **Desktop development with C++**.  
 ![Selecting Desktop development with C++ from Windows options on Workloads tile](images/VS-workloads.png)
 

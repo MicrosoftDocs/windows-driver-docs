@@ -76,7 +76,7 @@
           href: camera-photo-failure-rate.md
         - name: "Percent of Camera video and stream failures"
           href: camera-video-and-stream-failure-rate.md
-      - name: "Fingerprint-Biometric"
+      - name: "Fingerprint"
         items:
         - name: "Fingerprint measures"
           href: fingerprint-measures.md
@@ -118,6 +118,8 @@
             href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
           - name: "Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary"
             href: graphics-tdr-integrated-gpu.md
+          - name: "Myriad of of drivers that were rolled back or re-installed within 2 days of installation"
+            href: myriad-drivers-rolled-back-standard.md
           - name: "Number of machines that had a blue screen caused by a crash in the graphics kernel"
             href: number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md
           - name: "Number of user mode crashes in Microsoft Photos app"
@@ -128,10 +130,16 @@
             href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
           - name: "Number of user mode crashes in Microsoft Edge"
             href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
+          - name: "Number of user mode crashes in Microsoft Edge Chromium"
+            href: graphics-user-mode-crashes-edge-chromium-standard.md
           - name: "Number of user mode crashes in Windows Components"
             href: user-mode-reliability-for-crashes-in-windows-components.md
+          - name: "Number of user mode crashes in Collaboration and Communications Applications"
+            href: graphics-user-mode-crashes-collaboration-standard.md
           - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
             href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
+          - name: "Percent of devices with WinML Runtime Errors"
+            href: pct-devices-winml-runtime-error.md
         - name: "Ecosystem audience measures"
           items:
           - name: "Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary" 
@@ -142,8 +150,12 @@
             href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
           - name: "Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary"
             href: graphics-ecosystem-integrated-gpu-with-tdr.md
+          - name: "Myriad of drivers that were rolled back or re-installed within 2 days of installation"
+            href: myriad-drivers-rolled-back-ecosystem.md
           - name: "Number of user mode crashes in Microsoft Edge"
             href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
+          - name: "Number of user mode crashes in Microsoft Edge Chromium"
+            href: graphics-user-mode-crashes-edge-chromium-ecosystem.md
           - name: "Number of user mode crashes in top Microsoft apps"
             href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
           - name: "Number of user mode crashes in creative applications"
@@ -152,6 +164,8 @@
             href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
           - name: "Number of user mode crashes in Windows Components"
             href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
+          - name: "Number of user mode crashes in Collaboration and Communications Applications"
+            href: graphics-user-mode-crashes-collaboration-ecosystem.md
           - name: "Percent of SWDRM playback failures on Netflix"
             href: pct-swdrm-playback-failures-on-netflix.md
           - name: "Percent of machines with display issues when resume from low power state"

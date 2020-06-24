@@ -2,7 +2,7 @@
 title: Driver Implementation Details
 description: This topic presents the implementation details for an audio driver that is developed for an audio adapter that is capable of processing hardware-offloaded audio streams.
 ms.assetid: FB17FADD-D683-4ECC-95F9-86DF7A289C63
-ms.date: 04/20/2017
+ms.date: 04/17/2020
 ms.localizationpriority: medium
 ---
 
@@ -100,7 +100,7 @@ In addition to supporting the properties in the new **KSPROPSETID\_AudioEngine**
 
 [**KSPROPERTY\_AUDIO\_MUTE**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-mute)
 
-[**KSPROPERTY\_AUDIO\_PEAKMETER**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-peakmeter)
+[**KSPROPERTY\_AUDIO\_PEAKMETER2**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-peakmeter2)
 
 [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-volumelevel)
 

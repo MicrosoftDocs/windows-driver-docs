@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 An **AddReg** directive references one or more INF-writer-defined *add-registry-sections* that are used to modify or create registry information.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -46,7 +46,7 @@ Each *add-registry section* can have entries to do the following:
 
 Each named *add-registry section* referenced by an **AddReg** directive has the following format:
 
-```ini
+```inf
 [add-registry-section]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
@@ -197,7 +197,7 @@ Each *add-registry-section* name must be unique to the INF file, but it can be r
 
 To represent a number of a registry type other than one of the predefined REG_*XXX* types, specify a new type number in the high word of the *flag* ORed with FLG_ADDREG_BINVALUETYPE in its low word. The data for such a *value* must be specified in binary format as a sequence of bytes separated by commas. For example, to store 16 bytes of data of a new registry data type, such as 0x38, as a value entry, the add-registry section entry would be something like the following:
 
-```ini
+```inf
 HKR,,MYValue,0x00380001,1,0,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 ```
 
@@ -207,7 +207,7 @@ This technique can be used to define new registry types for numeric values, but 
 
 Special keywords are defined for use in the HKR **AddReg** entries. The format for the entries that use these keywords is as follows:
 
-```ini
+```inf
 [HKR,,DeviceCharacteristics,0x10001,characteristics] 
 [HKR,,DeviceType,0x10001,device-type] 
 [HKR,,Security,,security-descriptor-string] 
@@ -227,7 +227,7 @@ A **DeviceCharacteristics** HKR **AddReg** entry specifies characteristics for t
 
 Only the following values can be specified in an INF:
 
-```ini
+```inf
 #define FILE_REMOVABLE_MEDIA            0x00000001
 #define FILE_READ_ONLY_DEVICE           0x00000002
 #define FILE_FLOPPY_DISKETTE            0x00000004
@@ -287,7 +287,7 @@ Examples
 
 An **AddReg** directive referenced the (SCSI) Miniport_EventLog_AddReg section in this example, under an INF-writer-defined section referenced by the **AddService** directive in a <em>DDInstall</em>**.Services** section of this INF.
 
-```ini
+```inf
 [Miniport_EventLog_AddReg]
 HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll" 
 ; double quotation marks delimiters in preceding entry prevent truncation 

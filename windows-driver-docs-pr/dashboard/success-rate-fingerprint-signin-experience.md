@@ -8,9 +8,9 @@ ms.localizationpriority: medium
  
 # Success rate of Fingerprint Sign-in Experience
 
-## Description
+## Description 
 
-When a user has enrolled in Windows Hello fingerprint a credential provider will enumerate on the lock screen to capture the user’s fingerprint gesture. If the user touches their sensor, a sample will be collected, and it will be compared with the fingerprint templates enrolled on the device. If the there are three attempts in an unlock session where the collected sample does not match an enrolled template, then fingerprint is temporarily locked out until the user unlocks with a different credential. If the biometric sensor fails the user will also be blocked from using to unlock. 
+When a user has enrolled in Windows Hello fingerprint a credential provider will enumerate on the lock screen to capture the user’s fingerprint gesture. If the user touches their sensor, a sample will be collected, and it will be compared with the fingerprint templates enrolled on the device. If the there are three attempts in an unlock session where the collected sample does not match an enrolled template, then fingerprint is temporarily locked out until the user unlocks with a different credential. If the biometric sensor fails the user will also be blocked from using it to unlock. 
 
 ## Measure attributes
 

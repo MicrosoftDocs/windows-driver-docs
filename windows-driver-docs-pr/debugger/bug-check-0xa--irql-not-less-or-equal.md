@@ -104,7 +104,7 @@ Following are some general guidelines that you can use to categorize the type of
 Resolution
 ----------
 
-If a kernel debugger is available, obtain a stack trace. Start by running the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debugger extension to display information about the bug check. (The **!analyze** extension can be helpful in determining the root cause.) Next, enter one of the [**k\*** (display stack backtrace)](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
+If a kernel debugger is available, obtain a stack trace. Start by running the [**!analyze**](-analyze.md) debugger extension to display information about the bug check. (The **!analyze** extension can be helpful in determining the root cause.) Next, enter one of the [**k\*** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  commands to view the call stack.
 
 ### Gather Information
 

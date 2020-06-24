@@ -1,23 +1,22 @@
 ---
 title: Interface Handler Plug-in
-description: Interface Handler Plug-in
+description: Interface handler plug-in
 ms.assetid: cd81f622-d11c-4b40-ac78-9324716e0a2c
 keywords:
 - Kernel Streaming Proxy WDK AVStream , interface handler
 - interface handler WDK AVStream
-ms.date: 04/20/2017
+ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
 
-# Interface Handler Plug-in
-
+# Interface handler plug-in
 
 You can write an interface handler plug-in to provide programmatic user-mode access to a driver-specific property set that is exposed by a KS minidriver. First, register your object as described in [Registering KS Proxy Plug-ins](registering-ks-proxy-plug-ins.md).
 
-Your interface plug-in class could derive from [CUnknown](https://go.microsoft.com/fwlink/p/?linkid=106451):
+Your interface plug-in class could derive from [CUnknown](https://docs.microsoft.com/previous-versions//ms783086(v=vs.85)):
 
 ```cpp
-class CMyPluginInterface : public CUnknown 
+class CMyPluginInterface : public CUnknown
 {
 public:
     // creation method
@@ -47,11 +46,3 @@ Provide the pointer to **IKsPropertySet** as a parameter in the invocation of th
 Now you can implement Get and Set methods in your class that call [**IKsPropertySet::Get**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-ikspropertyset-get) and [**IKsPropertySet::Set**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dsound/nf-dsound-ikspropertyset-set) respectively to manipulate properties that are exposed by the driver.
 
 Alternatively, you can query the outer unknown for a pointer to its **IKsObject** interface. Then call [**IKsObject::KsGetObjectHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-iksobject-ksgetobjecthandle) to obtain a file handle. Now you manipulate device properties by calling [**KsSynchronousIoControlDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kssynchronousiocontroldevice) with this file handle.
-
- 
-
- 
-
-
-
-

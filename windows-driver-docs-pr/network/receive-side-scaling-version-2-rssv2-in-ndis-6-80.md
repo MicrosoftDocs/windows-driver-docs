@@ -7,9 +7,9 @@ ms.date: 10/11/2017
 ms.localizationpriority: medium
 ---
 
-[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
-
 # Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80
+
+[!include[RSSv2 Beta Prerelease](../includes/rssv2-beta-prerelease.md)]
 
 [Receive Side Scaling](ndis-receive-side-scaling2.md) improves the system performance related to handling of network data on multiprocessor systems. NDIS 6.80 and later support RSS Version 2 (RSSv2), which extends RSS by offering per-VPort spreading of queues.
 

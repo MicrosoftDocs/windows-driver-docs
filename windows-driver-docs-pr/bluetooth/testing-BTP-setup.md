@@ -34,7 +34,7 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 1. Download the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk#download-icon-step-2-install-wdk-for-windows-10-version-1903).
 
-2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\8.0\Testing\Runtimes` directory.
+2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\10\Testing\Runtimes` directory.
 
 3. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
 

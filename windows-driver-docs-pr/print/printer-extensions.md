@@ -2,7 +2,7 @@
 title: Printer Extensions
 description: Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
 ms.assetid: D617A897-D93E-4006-B42D-923CA7F29D7E
-ms.date: 04/20/2017
+ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +20,7 @@ And if an enterprise chooses to block printer extensions altogether, this can be
 
 ## Building a printer extension
 
-The [Printer Extension Sample](https://go.microsoft.com/fwlink/p/?LinkId=617945) on GitHub shows how to build a printer extension using C#. In order to allow code sharing between UWP device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
+The [Printer Extension Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/printer-extension-sample/) on GitHub shows how to build a printer extension using C#. In order to allow code sharing between UWP device apps and printer extensions, this sample uses two projects: PrinterExtensionLibrary (a C) and ExtensionSample (a printer extension that is dependent on the PrinterExtensionLibrary).
 
 The code snippets shown in this topic are all taken from the PrinterExtensionSample solution. If you are building a printer extension in C, C++ or some other COM-based language, the concepts are similar but the APIs must instead match those specified in *PrinterExtension.IDL*, which is included in the Windows Driver Kit. The code comments in the PrinterExtensionLibrary from the sample document also include code comments that indicate the underlying COM interface that a particular object corresponds to.
 
@@ -202,7 +202,7 @@ Print preferences is driven by the PrintSchemaEventArgs.Ticket object. This obje
 
 Inside each [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) or [**IPrintSchemaCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemacapabilities) object there are features ([**IPrintSchemaFeature**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemafeature)) and options ([**IPrintSchemaOption**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaoption)). While the interfaces used for features and options are the same regardless of the origin, the behavior varies slightly as a result of the underlying XML. For example, PrintCapabilities documents specify many options per feature, while PrintTicket documents specify only the selected (or default) option. Similarly, PrintCapabilities documents specify localized display strings, whereas PrintTicket documents do not.
 
-The [PrinterExtensionSample](https://go.microsoft.com/fwlink/p/?LinkId=617945) uses data binding to create ComboBox controls for printer preferences. Microsoft recommends using data binding as it makes the code much easier to maintain by reducing scattering. For more information on data binding in WPF, see [Data Binding Overview](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview).
+The [Printer Extension Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/printer-extension-sample/) uses data binding to create ComboBox controls for printer preferences. Microsoft recommends using data binding as it makes the code much easier to maintain by reducing scattering. For more information on data binding in WPF, see [Data Binding Overview](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview).
 
 In order to maximize performance, Microsoft recommends that calls to GetPrintCapabilities should only be done when it is necessary to update the PrintCapabilities document.
 
@@ -256,7 +256,7 @@ private void OnBidiResponseReceived(object sender, PrinterQueueEventArgs e)
 
 Printer notifications are invoked in precisely the same way as print preferences. In the OnDriverEvent handler, if IPrinterExtensionEventArgs indicates that a ReasonID matches the DriverEvents GUID, then we can build an experience to handle this event.
 
-The [PrinterExtensionSample](https://go.microsoft.com/fwlink/p/?LinkId=617945) project does not demonstrate a functional printer notifications experience, but the following variables are most helpful in handling this.
+The [Printer Extension Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/printer-extension-sample/) project does not demonstrate a functional printer notifications experience, but the following variables are most helpful in handling this.
 
 - PrinterExtensionEventArgs.BidiNotification – This carries the Bidi XML that caused the event to be triggered.
 
@@ -331,6 +331,6 @@ The Printer Extension Sample demonstrates how to create a UI that is generally l
 
 [Print Schema Interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index)
 
-[Printer Extension Sample](https://go.microsoft.com/fwlink/p/?LinkId=617945)
+[Printer Extension Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/printer-extension-sample/)
 
 [Windows Performance Analysis Tools](https://docs.microsoft.com/windows-hardware/test/wpt/)

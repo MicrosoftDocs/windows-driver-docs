@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Kernel Mode Performance Monitoring
 
-The Microsoft Windows operating system allows system components and third parties to expose performance metrics in a standard way by using [performance counters](https://go.microsoft.com/fwlink/p/?linkid=144442).
+The Microsoft Windows operating system allows system components and third parties to expose performance metrics in a standard way by using [performance counters](https://docs.microsoft.com/windows/win32/perfctrs/performance-counters-portal).
 
 The section includes the following topics:
 

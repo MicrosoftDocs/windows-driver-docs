@@ -40,7 +40,7 @@ PROCESS ffffe0007e6a7780
 ```
 The debugger command is using a binary mask and it provides text only output in non-standard ways. The text output is difficult to consume, format, or extend and the layout is specific to this command.
 
-Contrast this to  the debugger data model [dx (Display Debugger Object Model Expression)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) command.
+Contrast this to  the debugger data model [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command.
 
 ```console
 dx @$cursession.Processes.Where(p => p.Threads.Count() > 5)

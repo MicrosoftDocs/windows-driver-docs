@@ -49,7 +49,7 @@ In the following section of the **!analyze -v** output, the reason why the rule 
 
 DV_VIOLATED_CONDITION:  Timeout on completing an NDIS OID request.
 
-DV_MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=278804
+DV_MSDN_LINK: https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete
 
 DRIVER_OBJECT: 98a87980
 
@@ -110,7 +110,7 @@ RULE_DESCRIPTION:
 This rule verifies if an NDIS miniport driver completes an OID in time.
 The OID is tracked (a.k.a., TRACKED_OBJECT). Use !ndiskd.oid .
 
-MSDN_LINK: https://go.microsoft.com/fwlink/p/?linkid=278804
+MSDN_LINK: https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete
 
 CONTEXT: Miniport 0x86BD10E8
 
@@ -141,18 +141,18 @@ kd> dps 0x9C1F3480 + 0x10
 
 ### Fixing the cause of the NDIS WIFI timeout violation
 
-When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/ndis-extensions--ndiskd-dll-) and [Getting started with NDISKD](https://go.microsoft.com/fwlink/p/?linkid=327569). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure) at the worst.
+When the crash dump has been generated for a timed rule, there is a possibility that the root cause can be found at the time of the crash dump. To debug further, consider starting with the NdisKd debugger extension commands, see [NDIS Extensions (Ndiskd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/ndis-extensions--ndiskd-dll-) and [Getting started with NDISKD](https://docs.microsoft.com/archive/blogs/ndis/getting-started-with-ndiskd). You may also need to look at [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) logs, if your driver has implemented ETW. If this rule were not enabled, this error will manifest itself as user application hang at best, or a [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure) at the worst.
 
 ## <span id="related_topics"></span>Related topics
 
 
 [NDIS Extensions (Ndiskd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/ndis-extensions--ndiskd-dll-)
 
-[Getting started with NDISKD (part 1)](https://go.microsoft.com/fwlink/p/?linkid=327569)
+[Getting started with NDISKD (part 1)](https://docs.microsoft.com/archive/blogs/ndis/getting-started-with-ndiskd)
 
-[NDISKD and !miniport (part 2)]( https://go.microsoft.com/fwlink/p/?linkid=327570)
+[NDISKD and !miniport (part 2)](https://docs.microsoft.com/archive/blogs/ndis/ndiskd-and-miniport)
 
-[Debugging with NDISKD (part 3)](https://go.microsoft.com/fwlink/p/?linkid=327571)
+[Debugging with NDISKD (part 3)](https://docs.microsoft.com/archive/blogs/ndis/debugging-with-ndiskd)
 
 
 

@@ -30,7 +30,7 @@ If you experience any trouble extracting the source files from the debugger, sta
 
 If you use the [**.open (Open Source File)**](-open--open-source-file-.md) command to open a new source file through [SrcSrv](srcsrv.md), you must include the -m Address parameter.
 
-To facilitate the use of [SrcSrv](srcsrv.md) from tools other than the debuggers listed previously, the DbgHelp API provides access to SrcSrv functionality through the **SymGetSourceFile** function. To retrieve the name of the source file to be retrieved, call the **SymEnumSourceFiles** or **SymGetLineFromAddr64** function. For more details on the DbgHelp API, see the dbghelp.chm documentation, which can be found in the sdk/help subdirectory of the Debugging Tools for Windows installation directory, or see [Debug Help Library](https://go.microsoft.com/fwlink/p/?linkid=125231).
+To facilitate the use of [SrcSrv](srcsrv.md) from tools other than the debuggers listed previously, the DbgHelp API provides access to SrcSrv functionality through the **SymGetSourceFile** function. To retrieve the name of the source file to be retrieved, call the **SymEnumSourceFiles** or **SymGetLineFromAddr64** function. For more details on the DbgHelp API, see the dbghelp.chm documentation, which can be found in the sdk/help subdirectory of the Debugging Tools for Windows installation directory, or see [Debug Help Library](https://docs.microsoft.com/windows/win32/debug/debug-help-library).
 
 ### <span id="using_agestore_to_reduce_the_cache_size"></span><span id="USING_AGESTORE_TO_REDUCE_THE_CACHE_SIZE"></span>Using AgeStore to Reduce the Cache Size
 

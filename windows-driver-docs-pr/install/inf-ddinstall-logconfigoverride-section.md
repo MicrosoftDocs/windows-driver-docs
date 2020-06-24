@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 <em>DDInstall</em>**.LogConfigOverride** sections are used to create an [override configuration](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
-```ini
+```inf
 [install-section-name.LogConfigOverride] |
 [install-section-name.nt.LogConfigOverride] |
 [install-section-name.ntx86.LogConfigOverride] |
@@ -50,7 +50,7 @@ Examples
 
 The following example shows a <em>DDInstall</em>**.LogConfigOverride** section and a corresponding *log-config-section* for a PCMCIA device.
 
-```ini
+```inf
 [XYZDevice.LogConfigOverride]
 LogConfig = XYZDevice.Override0
 

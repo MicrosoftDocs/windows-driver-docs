@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check Bug Check 0x356: XBOX\_ERACTRL\_CS\_TIMEOUT
+# Bug Check 0x356: XBOX\_ERACTRL\_CS\_TIMEOUT
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

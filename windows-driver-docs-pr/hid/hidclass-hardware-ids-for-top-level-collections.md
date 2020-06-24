@@ -27,9 +27,6 @@ This section specifies the hardware IDs that the HID class driver generates for 
 
 Vendors must use the formats that are designated as *vendor hardware ID formats* to identify top-level collections. All other *device ID* formats are reserved for internal use only.
 
-
-
-
 The hardware IDs that the HID class driver generates for a devnode depends on the following:
 
 1.  Number of functions supported by the underlying transport
@@ -65,7 +62,7 @@ Hardware ID Format:
 Condition under which this Hardware ID format is used:
 
 1.  Number of functions supported by the underlying transport = 1 &&
-2.  Number of TLC &gt; 1
+2.  Number of TLC > 1
 
 Hardware ID Format:
 
@@ -79,7 +76,7 @@ Hardware ID Format:
 
 Condition under which this Hardware ID format is used:
 
-1.  Number of functions supported by the underlying transport &gt; 1 &&
+1.  Number of functions supported by the underlying transport > 1 &&
 2.  Number of TLC = 1
 
 Hardware ID Format:
@@ -94,8 +91,8 @@ Hardware ID Format:
 
 Condition under which this Hardware ID format is used:
 
-1.  Number of functions supported by the underlying transport &gt; 1 &&
-2.  Number of TLC &gt; 1
+1.  Number of functions supported by the underlying transport > 1 &&
+2.  Number of TLC > 1
 
 Hardware ID Format:
 
@@ -109,74 +106,16 @@ Hardware ID Format:
 
 The following are hardware IDs (for internal use only) that Windows uses to provide default system functionality.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Device Type</th>
-<th>Usage Page</th>
-<th>Usage</th>
-<th>Hardware ID</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Pointer</p></td>
-<td><p>0x01</p></td>
-<td><p>0x01</p></td>
-<td><p>HID_DEVICE_SYSTEM_MOUSE</p></td>
-</tr>
-<tr class="even">
-<td><p>Mouse</p></td>
-<td><p>0x01</p></td>
-<td><p>0x02</p></td>
-<td><p>HID_DEVICE_SYSTEM_MOUSE</p></td>
-</tr>
-<tr class="odd">
-<td><p>Joystick</p></td>
-<td><p>0x01</p></td>
-<td><p>0x04</p></td>
-<td><p>HID_DEVICE_SYSTEM_GAME</p></td>
-</tr>
-<tr class="even">
-<td><p>Game pad</p></td>
-<td><p>0x01</p></td>
-<td><p>0x05</p></td>
-<td><p>HID_DEVICE_SYSTEM_GAME</p></td>
-</tr>
-<tr class="odd">
-<td><p>Keyboard</p></td>
-<td><p>0x01</p></td>
-<td><p>0x06</p></td>
-<td><p>HID_DEVICE_SYSTEM_KEYBOARD</p></td>
-</tr>
-<tr class="even">
-<td><p>Keypad</p></td>
-<td><p>0x01</p></td>
-<td><p>0x07</p></td>
-<td><p>HID_DEVICE_SYSTEM_KEYBOARD</p></td>
-</tr>
-<tr class="odd">
-<td><p>System control</p></td>
-<td><p>0x01</p></td>
-<td><p>0x80</p></td>
-<td><p>HID_DEVICE_SYSTEM_CONTROL</p></td>
-</tr>
-<tr class="even">
-<td><p>Consumer audio control</p></td>
-<td><p>0x0C</p></td>
-<td><p>0x01</p></td>
-<td><p>HID_DEVICE_SYSTEM_CONSUMER</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Device Type            | Usage Page | Usage | Hardware ID                   |
+|------------------------|:----------:|:-----:|-------------------------------|
+| Pointer                | 0x01       | 0x01  | HID\_DEVICE\_SYSTEM\_MOUSE    |
+| Mouse                  | 0x01       | 0x02  | HID\_DEVICE\_SYSTEM\_MOUSE    |
+| Joystick               | 0x01       | 0x04  | HID\_DEVICE\_SYSTEM\_GAME     |
+| Game pad               | 0x01       | 0x05  | HID\_DEVICE\_SYSTEM\_GAME     |
+| Keyboard               | 0x01       | 0x06  | HID\_DEVICE\_SYSTEM\_KEYBOARD |
+| Keypad                 | 0x01       | 0x07  | HID\_DEVICE\_SYSTEM\_KEYBOARD |
+| System control         | 0x01       | 0x80  | HID\_DEVICE\_SYSTEM\_CONTROL  |
+| Consumer audio control | 0x0C       | 0x01  | HID\_DEVICE\_SYSTEM\_CONSUMER |
 
 Important notes:
 
@@ -187,9 +126,8 @@ Important notes:
 
 Legend:
 
-|       |                 |                   |                                                          |
-|-------|-----------------|-------------------|----------------------------------------------------------|
 | Field | Contains        | Hexadecimal Value | Meaning                                                  |
+|:-----:|-----------------|-------------------|----------------------------------------------------------|
 | v(4)  | four hex digits | 0x0000-0xFFFF     | Vendor ID                                                |
 | d(4)  | four hex digits | 0x0000-0xFFFF     | Product ID                                               |
 | r(4)  | four hex digits | 0x0000-0xFFFF     | Revision Number                                          |
@@ -197,13 +135,3 @@ Legend:
 | b(2)  | two hex digits  | 0x00-0xFF         | Collection number (only used with multiple-TLC devices.) |
 | p(4)  | four hex digits | 0x0000-0xFFFF     | Usage Page Number for TLC                                |
 | u(4)  | four hex digits | 0x0000-0xFFFF     | Usage Number of TLC                                      |
-
- 
-
- 
-
- 
-
-
-
-

@@ -13,7 +13,7 @@ The PwrTest Requests Scenario logs power requests from processes and services ru
 
 You can use the PwrTest Requests Scenario to diagnose why a computer doesn't go to sleep or why the monitor stays on.
 
-You could also use the administrator tool [PowerCfg](https://go.microsoft.com/fwlink/p/?linkid=294568) (powercfg.exe) for this purpose (**powercfg.exe /requests**). PowerCfg is included with Windows (Windows\\System32 directory). However, Powercfg.exe only captures the power requests that are active at the time you run the tool. In contrast, the PwrTest Requests Scenario runs for a specified time and logs power requests as they are created and closed, so the requests don’t need to be active when the tool is run.
+You could also use the administrator tool [PowerCfg](https://docs.microsoft.com/windows-hardware/design/device-experiences/powercfg-command-line-options) (powercfg.exe) for this purpose (**powercfg.exe /requests**). PowerCfg is included with Windows (Windows\\System32 directory). However, Powercfg.exe only captures the power requests that are active at the time you run the tool. In contrast, the PwrTest Requests Scenario runs for a specified time and logs power requests as they are created and closed, so the requests don’t need to be active when the tool is run.
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -196,7 +196,7 @@ The following table describes the XML elements that appear in the log file.
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
-[PowerCfg](https://go.microsoft.com/fwlink/p/?linkid=294568)
+[PowerCfg](https://docs.microsoft.com/windows-hardware/design/device-experiences/powercfg-command-line-options)
 
  
 

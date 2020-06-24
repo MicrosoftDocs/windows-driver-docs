@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 All PnP drivers must handle this IRP.
 
+## Value
+
+0x03
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

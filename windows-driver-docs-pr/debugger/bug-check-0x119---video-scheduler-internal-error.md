@@ -38,7 +38,7 @@ Parameter 1 is the only parameter of interest and identifies the exact violation
 
 ## Resolution
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 If the faulting module listed in the !analyze output is a video driver, investigate if updates are available to that video driver from the vendor.
 

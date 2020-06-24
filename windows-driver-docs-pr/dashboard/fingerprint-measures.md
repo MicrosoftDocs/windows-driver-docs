@@ -2,7 +2,7 @@
 title: Fingerprint measures
 description: Fingerprint measures look at the success of the user experience using fingerprint devices
 ms.topic: article
-ms.date: 03/30/2020
+ms.date: 03/30/2020 
 ms.localizationpriority: medium
 ---
 

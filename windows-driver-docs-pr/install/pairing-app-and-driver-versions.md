@@ -10,7 +10,10 @@ ms.localizationpriority: medium
 
 Starting in Windows 10 version 1709, you can specify that a Universal Windows Platform (UWP) app should only load if a specific driver is present. When you use this option, the Microsoft Store offers each user the most recent version of the app that works with the installed version of the driver on that user's computer.
 
-The app can further constrain loading to a particular driver version or date.  This topic describes the steps required in both the app and driver to create such a requirement.
+The app can further constrain loading to a particular driver version or date.  This topic describes the steps required in **both the app and driver** to create such a requirement.
+
+> [!NOTE]
+> Both the application *and* the driver *must* declare the dependency on the application (HSA).  
 
 ## Steps in the app
 

@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 An **AddService** directive is used within an [**INF *DDInstall*.Services section**](inf-ddinstall-services-section.md) or [**INF DefaultInstall.Services section**](inf-defaultinstall-services-section.md). It specifies characteristics of the services associated with drivers, such as how and when the services are loaded, and any dependencies on other underlying legacy drivers or services. Optionally, this directive also sets up event-logging services for the device.
 
-```ini
+```inf
 [DDInstall.Services] 
  
 AddService=ServiceName,[flags],service-install-section
@@ -104,7 +104,7 @@ Each INF-writer-created section name must be unique within the INF file and must
 
 An **AddService** directive must reference a named *service-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```ini
+```inf
 [service-install-section]
  
 [DisplayName=name]
@@ -346,7 +346,7 @@ Depending on the boot scenario, you can use the **BootFlags** registry value to 
 
 The *service-install-section* has the following general form:
 
-```ini
+```inf
 [service-install-section]
 AddReg=add-registry-section
 ...
@@ -359,7 +359,7 @@ HKR,,BootFlags,0x00010003,0x14 ; CM_SERVICE_USB3_DISK_BOOT_LOAD|CM_SERVICE_USB_D
 
 An **AddService** directive can also reference an *event-log-install-section* elsewhere in the INF file. Each such section has the following form:
 
-```ini
+```inf
 [event-log-install-section]
  
 AddReg=add-registry-section[, add-registry-section]... 
@@ -370,7 +370,7 @@ AddReg=add-registry-section[, add-registry-section]...
 
 For a typical device/driver INF file, the *event-log-install-section* uses only the **AddReg** directive to set up an event-logging message file for the driver. An **HKR** specification in an *add-registry-section* designates the **HKLM\\System\\CurrentControlSet\\Services\\EventLog\\**<em>EventLogType</em>**\\**<em>EventName</em> registry key. This event-logging *add-registry-section* has the following general form:
 
-```ini
+```inf
 [drivername_EventLog_AddReg]
 HKR,,EventMessageFile,0x00020000,"path\IoLogMsg.dll;path\driver.sys"
 HKR,,TypesSupported,0x00010001,7 
@@ -397,7 +397,7 @@ Examples
 
 This example shows the service-install and event-log-install sections referenced by the **AddService** directive as already shown earlier in the example for [***DDInstall*.Services**](inf-ddinstall-services-section.md).
 
-```ini
+```inf
 [sermouse_Service_Inst]
 DisplayName    = %sermouse.SvcDesc%
 ServiceType    = 1                   ; = SERVICE_KERNEL_DRIVER

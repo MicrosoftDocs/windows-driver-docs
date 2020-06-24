@@ -6,6 +6,8 @@ ms.date: 07/10/2018
 ms.localizationpriority: medium
 ---
 
+# IoSpy and IoAttack
+
 > [!NOTE]
 > IoSpy and IoAttack are no longer available in the WDK after Windows 10 Version 1703.
 >
@@ -23,10 +25,6 @@ ms.localizationpriority: medium
 >
 > You can also use the [Kernel synchronization delay fuzzing](https://docs.microsoft.com/windows-hardware/drivers/devtest/kernel-synchronization-delay-fuzzing) that is included with Driver Verifier.
 >
-
-
-# IoSpy and IoAttack
-
 
 IoSpy and IoAttack are tools that perform IOCTL and WMI fuzz tests on kernel-mode drivers. By using these tools, you can ensure that drivers' IOCTL and WMI code validate data buffers and buffer lengths correctly. By doing this, you avoid buffer overruns that can lead to system instability.
 

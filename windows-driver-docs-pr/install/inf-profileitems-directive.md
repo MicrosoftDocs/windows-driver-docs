@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **ProfileItems** directive is used in an [**INF *DDInstall* section**](inf-ddinstall-section.md) to list one or more *profile-items-sections* that contain items or groups to be added to, or removed from, the Start menu.
 
-```ini
+```inf
 [DDInstall] 
  
 ProfileItems=profile-items-section[,profile-items-section]...
@@ -32,7 +32,7 @@ ProfileItems=profile-items-section[,profile-items-section]...
 
 Each named section referenced by a **ProfileItems** directive has the following form:
 
-```ini
+```inf
 [profile-items-section]
  
 Name=link-name[,name-attributes]
@@ -120,7 +120,7 @@ The *info-tip* value can also be specified as **"@**<em>ResDllPath</em>**\\**<em
 
 Use this format to support Windows Multilingual User Interface (MUI). An example is as follows:
 
-```ini
+```inf
 InfoTip = "@%11%\shell32.dll,-22531"
 ```
 
@@ -129,7 +129,7 @@ This optional entry specifies a string resource that identifies a localizable st
 
 *ResDllPath* and *ResDll* specify the path and file name of a resource DLL, and *resID* is a positive value that represents a resource ID. An example is as follows:
 
-```ini
+```inf
 DisplayResource="%11%\shell32.dll",22019
 ```
 
@@ -149,7 +149,7 @@ Examples
 
 The following INF file excerpt shows how to use the *profile-items-section* to add Calculator to the Start Menu.
 
-```ini
+```inf
 [CalcInstallItems]
 Name = %Calc_DESC%
 CmdLine = 11,, calc.exe
@@ -166,7 +166,7 @@ Calc_TIP = "Performs basic arithmetic tasks with an on-screen calculator"
 
 The following INF file excerpt shows how to install the same software by using the **DisplayResource** entry to create localized menu items.
 
-```ini
+```inf
 [CalcInstallItems]
 Name = %Calc_DESC%
 CmdLine = 11,, calc.exe

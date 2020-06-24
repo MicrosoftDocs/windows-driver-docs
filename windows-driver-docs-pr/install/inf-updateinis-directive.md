@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 An **UpdateInis** directive references one or more named sections, specifying an INI file from which a particular section or line is to be read and applied to an existing INI file of the same name on the target computer. Optionally, line-by-line modifications from and to such INI files can be specified in the *update-ini-section*.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -42,7 +42,7 @@ This directive is almost never specified in INF files for installation on Window
 
 Each named section referenced by an **UpdateInis** directive has the following form:
 
-```ini
+```inf
 [update-ini-section]
  
 ini-file,ini-section[,old-ini-entry][,new-ini-entry][,flags]
@@ -63,7 +63,7 @@ Specifies the name of the section within the given INI file. If the next two val
 <a href="" id="old-ini-entry"></a>*old-ini-entry*  
 This optional value specifies the name of an entry in the given *ini-section*, usually expressed in the following form:
 
-```ini
+```inf
 "key=value"
 ```
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Yes, you can write your own version of the [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro. DoTraceMessage generates a trace message.
 
-The [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726) sample driver provides an example of the methods that are described in this topic. [TraceDrv](https://go.microsoft.com/fwlink/p/?LinkId=617726) is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver) sample driver provides an example of the methods that are described in this topic. [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver) is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ### <span id="dotracemessage__default_version"></span><span id="DOTRACEMESSAGE__DEFAULT_VERSION"></span>DoTraceMessage: Default Version
 

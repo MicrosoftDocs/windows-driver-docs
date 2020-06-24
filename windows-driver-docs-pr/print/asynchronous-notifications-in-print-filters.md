@@ -7,7 +7,7 @@ keywords:
 - XPS filters WDK XPSDrv
 - filters WDK XPS
 - asynchronous notifications WDK XPS
-ms.date: 04/20/2017
+ms.date: 06/01/2020
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +33,7 @@ VARIANT var;
 VariantInit(&var);
 
 HRESULT hr = pIPropertyBag->GetProperty(
-    XPS_FP_PRINT_CLASS_FACTORY, 
+    XPS_FP_PRINT_CLASS_FACTORY,
     &var);
 
 if (SUCCEEDED(hr))
@@ -98,9 +98,9 @@ if (SUCCEEDED(hr))
 }
 ```
 
-In the preceding code example, variable `pIAsyncCallback` is a pointer to the caller's implementation of the [IPrintAsyncNotifyCallback](https://go.microsoft.com/fwlink/p/?linkid=124755) interface.
+In the preceding code example, variable `pIAsyncCallback` is a pointer to the caller's implementation of the [IPrintAsyncNotifyCallback](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifycallback) interface.
 
-In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](https://go.microsoft.com/fwlink/p/?linkid=98433) method on [IPrintAsyncNotifyChannel](https://go.microsoft.com/fwlink/p/?linkid=124758). For information about when to release a channel, see [Notification Channel](notification-channel.md).
+In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychanne) method on [IPrintAsyncNotifyChannel](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel). For information about when to release a channel, see [Notification Channel](notification-channel.md).
 
 ## Impersonation and Notification
 
@@ -124,10 +124,10 @@ HRESULT hr = m_pPrintClassFactory->GetPrintClassObject(
 if (SUCCEEDED(hr))
 {
     hr = pIAsyncNotify->CreatePrintAsyncNotifyChannel(
- // the same arguments as for 
+ // the same arguments as for
  // RouterCreatePrintAsyncNotificationChannel
         );
 
-    // Etc.
+    // etc...
 }
 ```

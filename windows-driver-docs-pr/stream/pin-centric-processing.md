@@ -1,21 +1,17 @@
 ---
 title: Pin-Centric Processing
-description: Pin-Centric Processing
+description: Pin-centric processing
 ms.assetid: 0b6a02c2-e672-4568-a890-491c721ec3a7
 keywords:
 - pin-centric filters WDK AVStream
 - AVStream pin-centric filters WDK
 - filter types WDK AVStream
 - AVStrMiniPinProcess
-ms.date: 04/20/2017
+ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
 
-# Pin-Centric Processing
-
-
-
-
+# Pin-centric processing
 
 When writing an AVStream minidriver, you provide filters that use one of two processing paradigms: pin-centric processing or [filter-centric processing](filter-centric-processing.md).
 
@@ -29,11 +25,11 @@ To supply a pin-centric filter, the minidriver provides a pointer to an *AVStrMi
 
 If the minidriver does not modify flag settings in the KSPIN\_DESCRIPTOR\_EX structure, AVStream calls the vendor-supplied [*AVStrMiniPinProcess*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspin) callback routine in three situations:
 
--   The pin transitions into the minimum processing state. Frames must already exist in the queue, and the pin must transition from less than the minimum processing state into at least the minimum processing state.
+- The pin transitions into the minimum processing state. Frames must already exist in the queue, and the pin must transition from less than the minimum processing state into at least the minimum processing state.
 
--   New frames arrive. The pin must be in at least the minimum processing state and there must be no frames at or ahead of the leading edge.
+- New frames arrive. The pin must be in at least the minimum processing state and there must be no frames at or ahead of the leading edge.
 
--   Minidriver explicitly calls [**KsPinAttemptProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspinattemptprocessing).
+- Minidriver explicitly calls [**KsPinAttemptProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspinattemptprocessing).
 
 By default, pause is the minimum processing state.
 
@@ -45,12 +41,4 @@ Minidrivers that use pin-centric processing can modify when AVStream calls the *
 
 Processing attempts may fail if the minidriver is holding the [processing mutex](processing-mutex-in-avstream.md) through [**KsPinAcquireProcessingMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspinacquireprocessingmutex). Problems may also arise if the minidriver directly manipulates a gate by using the **KSGATE**_\*_ calls.
 
-The [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit samples is a pin-centric capture driver for a simulated piece of hardware. The Avshws sample shows how to implement [DMA through AVStream](avstream-dma-services.md).
-
- 
-
- 
-
-
-
-
+The [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/avstream-simulated-hardware-sample-driver-avshws/) in the Windows Driver Kit samples is a pin-centric capture driver for a simulated piece of hardware. The Avshws sample shows how to implement [DMA through AVStream](avstream-dma-services.md).

@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check Bug Check 0x1D0: ACPI\_FIRMWARE\_WATCHDOG\_TIMEOUT 
+# Bug Check 0x1D0: ACPI\_FIRMWARE\_WATCHDOG\_TIMEOUT 
 
 
 > [!IMPORTANT]

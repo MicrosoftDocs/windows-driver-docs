@@ -6,46 +6,44 @@ keywords:
 - helper objects WDK audio , DMA channel objects
 - DMA channel objects WDK audio
 - master devices WDK audio
-- slave devices WDK audio
 - IDmaChannel interface
 - channel objects WDK audio
-ms.date: 04/20/2017
+ms.date: 06/20/2020
 ms.localizationpriority: medium
 ---
 
 # DMA Channel Objects
 
-
-## <span id="dma_channel_objects"></span><span id="DMA_CHANNEL_OBJECTS"></span>
-
+> [!NOTE]
+> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's Style Guide for Bias-Free Communications recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
 
 The PortCls system driver implements the [IDmaChannel](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) and [IDmaChannelSlave](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannelslave) interfaces for the benefit of WaveCyclic and WavePci miniport drivers. **IDmaChannel** represents a DMA channel plus its associated DMA buffer and buffer-usage parameters. In addition, WaveCyclic miniport drivers use **IDmaChannelSlave** to manage a DMA channel for a subordinate device. **IDmaChannelSlave** inherits from **IDmaChannel**. For information about controlling DMA operations, see [Adapter Objects and DMA](https://docs.microsoft.com/windows-hardware/drivers/kernel/adapter-objects-and-dma).
 
 An **IDmaChannel** object encapsulates the following:
 
--   A DMA channel for a master or subordinate device
+- A DMA channel for a master or subordinate device
 
--   The data buffer that is associated with the channel
+- The data buffer that is associated with the channel
 
--   Information that describes how the channel is to be used
+- Information that describes how the channel is to be used
 
 Port and miniport drivers use DMA channel objects to communicate information regarding DMA channel usage. Typically, a miniport driver allocates a set of DMA channels during initialization or during the creation of a stream. During the creation of a new stream, the miniport driver tells the port driver which DMA channel object will be used for the stream.
 
 A DMA channel object can be created for a master or subordinate device:
 
--   A subordinate device has no built-in DMA-hardware capabilities and must rely on the system DMA controller to perform any data transfers that the device requires.
+- A subordinate device has no built-in DMA-hardware capabilities and must rely on the system DMA controller to perform any data transfers that the device requires.
 
--   A master device uses its own bus-mastering DMA hardware to perform data transfers on the system bus.
+- A master device uses its own bus-mastering DMA hardware to perform data transfers on the system bus.
 
 For an example of a WaveCyclic device that uses a subordinate DMA channel object, see the Sb16 sample audio driver in the Microsoft Windows Driver Kit (WDK). A master DMA channel object is little more than a backboard for sharing information about the DMA channel between the port and miniport drivers. For more information about master and subordinate devices, see [Introduction to Adapter Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-adapter-objects).
 
 The DMA channel object for a master or subordinate device exposes the following:
 
--   An adapter object
+- An adapter object
 
--   A single common buffer that the driver and DMA hardware can share
+- A single common buffer that the driver and DMA hardware can share
 
--   A buffer-size value that can be queried and changed
+- A buffer-size value that can be queried and changed
 
 The *adapter object* is a DMA-adapter structure for a *physical device object (PDO)*. The adapter object is automatically created when the miniport driver creates the DMA channel object by calling one of the following methods:
 

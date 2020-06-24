@@ -22,7 +22,7 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
 -   On the target computer, an EHCI (USB 2.0) host controller that supports debugging
 
-## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Target Computer
+## Setting Up the Target Computer
 
 
 1.  On the target computer, launch the UsbView tool. The UsbView tool is included in Debugging Tools for Windows.
@@ -50,8 +50,6 @@ Debugging over a USB 2.0 cable requires the following hardware:
 > Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as BitLocker and Secure Boot on the test PC. 
 > You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging.  
 
-   
-
 6. On the target computer, open a Command Prompt window as Administrator, and enter these commands:
 
    - **bcdedit /debug on**
@@ -77,14 +75,14 @@ Debugging over a USB 2.0 cable requires the following hardware:
 
 8. Reboot the target computer.
 
-## <span id="Setting-Up-the-Host-Computer"></span><span id="setting_up_the_host_computer"></span><span id="SETTING_UP_THE_HOST_COMPUTER"></span>Setting Up the Host Computer
+## Setting Up the Host Computer
 
 
 1.  Verify that the host computer is not configured to be the target of USB debugging. (If necessary, open a Command Prompt window as Administrator, enter **bcdedit /debug off**, and reboot.)
 2.  On the host computer, use UsbView to find the EHCI host controllers and ports that support debugging. If possible, plug one end of the USB 2.0 debug cable into an EHCI port (on the host computer) that does not support debugging. Otherwise, plug the cable into any EHCI port on the host computer.
 3.  Plug the other end of the USB 2.0 debug cable into the connector that you identified previously on the target computer.
 
-## <span id="Starting-a-Debugging-Session-for-the-First-Time"></span><span id="starting_a_debugging_session_for_the_first_time"></span><span id="STARTING_A_DEBUGGING_SESSION_FOR_THE_FIRST_TIME"></span>Starting a Debugging Session for the First Time
+## Starting a Debugging Session for the First Time
 
 
 1.  Determine the bitness (32-bit or 64-bit) of Windows running on the host computer.
@@ -95,12 +93,10 @@ At this point, the USB debug driver gets installed on the host computer. This is
 
 **Note**  The USB 2.0 debug cable is actually two cables with a dongle in the middle. The direction of the dongle is important; one side powers the device, and the other side does not. If USB debugging doesn’t work, try swapping the direction of the dongle. That is, unplug both cables from the dongle, and swap the sides that the cables are connected to.
 
- 
 
-## <span id="Starting-a-Debugging-Session"></span><span id="starting_a_debugging_session"></span><span id="STARTING_A_DEBUGGING_SESSION"></span>Starting a Debugging Session
+## Starting a Debugging Session
 
-
-### <span id="Using-WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
+### Using WinDbg
 
 On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **USB** tab. Enter the target name that you created when you set up the target computer. Click **OK**.
 
@@ -115,7 +111,6 @@ On the host computer, open a Command Prompt window and enter the following comma
 **kd /k usb:targetname=**<em>TargetName</em>
 
 ## <span id="what-if-usbview-shows-a-debug-capable-port"></span><span id="WHAT_IF_USBVIEW_SHOWS_A_DEBUG_CAPABLE_PORT"></span>What if USBView shows a debug-capable port, but does not show the port mapped to any physical connector?
-
 
 On some computers, USBView shows a debug-capable port, but does not show the port mapped to any physical USB connector. For example, USBView might show port 2 as the debug port number for an eHCI controller.
 
@@ -145,23 +140,12 @@ But when you plug in a USB 2.0 device (like a flash drive) to all the USB connec
 
 In a case like this, you might still be able to establish kernel-mode debugging over a USB 2.0 cable. In the example given here, you would plug your USB 2.0 debug cable into the connector that shows as being mapped to Port 2 of the xHCI controller. Then you would set your bus parameters to the bus, device, and function numbers of the eHCI controller (in this example, 0.29.0).
 
-**bcdedit /set "{dbgsettings}" busparams 0.29.0**
+`bcdedit /set "{dbgsettings}" busparams 0.29.0`
 
-### <span id="software-setup"></span><span id="SOFTWARE_SETUP"></span>Additional Support
+### Additional Support
 
-For troubleshooting tips and detailed instructions on setting up kernel debugging over USB, see [Setting Up Kernel Debugging with USB 2.0](https://go.microsoft.com/fwlink/p?linkid=389435).
+For troubleshooting tips and other information see the [Microsoft USB Blog](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/bg-p/MicrosoftUSBBlog).
 
-## <span id="related-topics"></span>Related topics
-
+## Related topics
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
-
- 
-
- 
-
-
-
-
-
-

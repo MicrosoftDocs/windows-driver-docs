@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The PwrTest Disk Scenario monitors disk idle statistics and spin-down events.
 
-This scenario is primarily used for Windows 7 hard disk power activity, subsequent versions of Windows use a different mechanism for tracking disk idle that is not currently supported by Pwrtest. For versions of Windows newer than Windows 7, use the [Windows Performance Toolkit (WPT)](https://go.microsoft.com/fwlink/p/?linkid=294280). The WPT includes the Windows Performance Recorder (WPR) that you can use to trace the kernel-mode power provider and the Windows Performance Analyzer (WPA) that can show the power framework (PoFx) device statistics and can graph the transitions afterward.
+This scenario is primarily used for Windows 7 hard disk power activity, subsequent versions of Windows use a different mechanism for tracking disk idle that is not currently supported by Pwrtest. For versions of Windows newer than Windows 7, use the [Windows Performance Toolkit (WPT)](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-toolkit-technical-reference). The WPT includes the Windows Performance Recorder (WPR) that you can use to trace the kernel-mode power provider and the Windows Performance Analyzer (WPA) that can show the power framework (PoFx) device statistics and can graph the transitions afterward.
 
 **Note**  
 This scenario does not work for all types of disks or controllers because not all storage drivers register for idle detection. See [Handling PnP Start in a Storage Class Driver](https://docs.microsoft.com/windows-hardware/drivers/storage/handling-pnp-start-in-a-storage-class-driver) for more information.

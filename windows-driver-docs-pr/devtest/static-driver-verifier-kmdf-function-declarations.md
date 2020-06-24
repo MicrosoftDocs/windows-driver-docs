@@ -471,9 +471,9 @@ There are some function role types that can have multiple event callback functio
 
 ### <span id="function_role_types_and_i_o_queues"></span><span id="FUNCTION_ROLE_TYPES_AND_I_O_QUEUES"></span>Function role types and I/O queues
 
-Use the following function role types when you declare the [Request Handlers](https://go.microsoft.com/fwlink/p/?linkid=153345) and callback functions that rely on the KMDF framework to deliver the I/O requests to the driver (for sequential or parallel dispatching). Do not use these function role types for the functions that manually forward requests from the default queue to other queues (manual dispatching). SDV does not support a memory model that allows it to track requests from one queue to another.
+Use the following function role types when you declare the [Request Handlers](https://docs.microsoft.com/windows-hardware/drivers/wdf/request-handlers) and callback functions that rely on the KMDF framework to deliver the I/O requests to the driver (for sequential or parallel dispatching). Do not use these function role types for the functions that manually forward requests from the default queue to other queues (manual dispatching). SDV does not support a memory model that allows it to track requests from one queue to another.
 
-For more information about I/O queues, see [Creating I/O Queues](https://go.microsoft.com/fwlink/p/?linkid=153346).
+For more information about I/O queues, see [Creating I/O Queues](https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-i-o-queues).
 
 <table>
 <colgroup>

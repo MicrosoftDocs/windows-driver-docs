@@ -18,4 +18,4 @@ The driver samples in this directory provide a starting point for writing a cust
 | [Fusion Sensor Driver Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/fusion-sensor-driver-sample) | Demonstrates how to write a UMDF v2 driver to control a virtual FusionSensor sensor. |
 | [Pedometer](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/pedometer-sensor-sample) | Demonstrates how to write a UMDF v2 driver to control a virtual pedometer sensor. |
 | [Sensors Combo Driver Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/sensors-combo-driver-sample) | Demonstrates how to write UMDF v2 drivers to control various types of virtual sensors. |
-| [SimpleDeviceOrientationSensor](https://go.microsoft.com/fwlink/p/?LinkId=617960) | Demonstrates how to write a UMDF v2 sensor driver to output Simple Device Orientation values. |
+| [SimpleDeviceOrientationSensor](https://github.com/Microsoft/Windows-driver-samples/tree/master/sensors/SimpleDeviceOrientationSensor) | Demonstrates how to write a UMDF v2 sensor driver to output Simple Device Orientation values. |

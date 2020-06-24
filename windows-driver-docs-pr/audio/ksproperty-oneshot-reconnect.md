@@ -58,8 +58,8 @@ No property value is sent with this property request.
 
 The **KSPROPERTY\_ONESHOT\_RECONNECT** property returns STATUS\_SUCCESS if the request is successful.
 
-&gt; \[!Note\]
-&gt;   A successful request means that the driver made an attempt to connect to the Bluetooth audio device, but does not necessarily mean that the attempt was successful.
+> [!NOTE]
+> A successful request means that the driver made an attempt to connect to the Bluetooth audio device, but does not necessarily mean that the attempt was successful.
 
  
 

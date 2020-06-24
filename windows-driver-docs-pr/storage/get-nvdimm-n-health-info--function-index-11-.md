@@ -11,8 +11,8 @@ ms.date: 10/17/2018
 
 This function returns information about the health of the NVDIMM-N module.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

@@ -222,7 +222,7 @@ AddService = ,2
 </tr>
 <tr>
 <td><strong>1297: Device driver does not install on any devices, use primitive driver if this is intended.</strong></td>
-<td>This indicates that the INF file is a device driver, but it is not being used as a device driver. This may cause issues in how the driver is treated by the driver store. If this is unintentional, check your INF to make sure that hardware IDs are correctly specified. If the driver is not intended to install on devices, convert it to a primitive driver.  Please see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-primitive-driver">this document</a> for details.
+<td>This indicates that the INF file is a device driver, but it is not being used as a device driver. This may cause issues in how the driver is treated by the driver store. If this is unintentional, check your INF to make sure that hardware IDs are correctly specified. If the driver is not intended to install on devices, convert it to a primitive driver.  For more info, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-primitive-driver#converting-from-a-device-driver-inf">Converting from a device driver INF</a>.
 </td>
 </tr>
 </tbody>
