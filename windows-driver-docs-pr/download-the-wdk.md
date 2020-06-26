@@ -77,7 +77,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 ### Release notes and runtime requirements
 
-You can use the WDK to develop drivers for these operating systems:
+You can run the Windows 10, version 2004 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
 
 |Client OS|Server OS|
 |-|-|
