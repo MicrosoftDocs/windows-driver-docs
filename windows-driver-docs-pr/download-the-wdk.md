@@ -87,7 +87,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 ## Driver samples for Windows 10
 
-To download universal Windows driver samples, do one of the following:
+To download the driver samples, do one of the following:
 
 * Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples), click **Clone or download**, and then click **Download ZIP**.
 * Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/), and then connect to the GitHub repositories.
