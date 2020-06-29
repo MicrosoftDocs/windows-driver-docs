@@ -50,10 +50,25 @@
         href: setting-up-a-1394-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
+    - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
+# Auto-expanded node
+      items: 
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1909.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1903"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1903.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1809"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1809.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1803"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1803.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1709"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1709.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1703"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1703.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
     - name: "Configuring tools.ini"
       href: configuring-tools-ini.md
     - name: "Using KDbgCtrl"
