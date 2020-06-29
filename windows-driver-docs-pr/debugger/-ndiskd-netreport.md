@@ -3,7 +3,7 @@ title: ndiskd.netreport
 description: The ndiskd.netreport extension generates a visual report of the entire network stack.
 ms.assetid: 0FC134A8-8D91-4299-8D15-4E8EDD9ED855
 keywords: ["ndiskd.netreport Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/23/2020
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,13 @@ ms.localizationpriority: medium
 
 # !ndiskd.netreport
 
-
 The **!ndiskd.netreport** extension generates a visual report of the entire network stack. The report **!ndiskd.netreport** generates is an HTML file, and it will give you a link to its location. The HTML file contains detailed information about the network stack, so if you need to share it for analysis you can email it instead of having to send a large crash dump file.
 
 ```console
 !ndiskd.netreport [-outputpath <str>] [-jsononly] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-outputpath______"></span><span id="_______-OUTPUTPATH______"></span> *-outputpath*   
 Specifies where to write the report file.
@@ -31,12 +29,11 @@ Specifies where to write the report file.
 <span id="_______-jsononly______"></span><span id="_______-JSONONLY______"></span> *-jsononly*   
 Only writes the raw data, no HTML.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Run the **!ndiskd.netreport** extension to draw a box diagram of your network stack.
 
@@ -76,8 +73,7 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 
 ![network debug report data flows](images/!ndiskd-netreport-activesystem-dataflows.png)
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
@@ -92,13 +88,3 @@ The Data flows tab, which appears if NBL tracking was enabled on the target syst
 [**!ndiskd.nbllog**](-ndiskd-nbllog.md)
 
 [Using NIC Teaming for Network Subsystem Performance](https://docs.microsoft.com/previous-versions/dn567652(v=vs.85))
-
- 
-
- 
-
-
-
-
-
-

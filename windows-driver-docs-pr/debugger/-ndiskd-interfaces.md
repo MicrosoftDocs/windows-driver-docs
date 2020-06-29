@@ -3,7 +3,7 @@ title: ndiskd.interfaces
 description: The ndiskd.interfaces extension displays information about a network interface.
 ms.assetid: AC458FDF-CCB6-4A65-8C9C-38C436062017
 keywords: ["ndiskd.interfaces Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,30 +15,27 @@ ms.localizationpriority: medium
 
 # !ndiskd.interfaces
 
-
 The **!ndiskd.interfaces** extension displays information about a network interface. If you run this extension with no parameters, !ndiskd will display a list of all network interfaces.
 
 For more information about network interfaces, see [NDIS Network Interfaces](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2).
 
 ```console
-!ndiskd.interfaces [-handle <x>] [-luid <x>] 
+!ndiskd.interfaces -handle <x> [-luid <x>]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of a network interface.
+Optional handle of a network interface.
 
 <span id="_______-luid______"></span><span id="_______-LUID______"></span> *-luid*   
 [NetLuid](https://docs.microsoft.com/windows-hardware/drivers/network/net-luid-value) (Net Locally Unique Identifier) of a network interface.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Run the **!ndiskd.interfaces** extension with no parameters to see a list of all network interfaces on the system. In this example, look for the Intel(R) 82579LM Gigabit Network Connection interface. Its handle is ffffdf80139f8a20.
 
@@ -114,8 +111,7 @@ STATE
     Refer to RFC 2863 for definitions of many of these terms
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
@@ -130,13 +126,3 @@ STATE
 [NDIS Network Interfaces](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2)
 
 [NET\_LUID Value](https://docs.microsoft.com/windows-hardware/drivers/network/net-luid-value)
-
- 
-
- 
-
-
-
-
-
-
