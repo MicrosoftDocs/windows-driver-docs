@@ -10,20 +10,6 @@ ms.localizationpriority: medium
 
 This topic discusses audio latency changes in Windows 10. It covers API options for application developers as well as changes in drivers that can be made to support low latency audio.
 
-This topic contains the following sections.
-
-- [Overview](#overview)
-- [Definitions](#definitions)
-- [Windows Audio Stack](#windows_audio_stack)
-- [Audio Stack Improvements in Windows 10](#audio_stack_improvements_in_windows_10)
-- [API Improvements](#api_improvements)
-- [AudioGraph](#audiograph)
-- [Windows Audio Session API (WASAPI)](#windows_audio_session_api_wasapi)
-- [Driver Improvements](#driver_improvements)
-- [Measurement Tools](#measurement_tools)
-- [Samples](#samples)
-- [FAQ](#faq)
-
 ## Overview
 
 Audio latency is the delay between that time that sound is created and when it is heard. Having low audio latency is very important for several key scenarios, such as the following.
