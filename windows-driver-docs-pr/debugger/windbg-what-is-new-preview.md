@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 12/12/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,6 +13,33 @@ ms.localizationpriority: medium
 ![Small logo on windbg preview](images/windbgx-preview-logo.png)
 
 This topic provides information on what's new in the WinDbg Preview debugger.
+
+## 1.0.2001.02001
+
+**USB power management disabled for target in KDNET**
+
+When you connect to your target machine using KDNET using USB, we disable power management on the debugger host in order to improve the reliability of KDNET over XHCI debugging and overall connection. Be sure to re-enable power management through the settings page when done debugging.
+
+**Thread names/descriptions available in live debugging**
+
+Thread names that are set from SetThreadDescription are now available when doing live user-mode debugging. Thread names are available using the “~” command or the debugger data model:
+
+```dbgconsole
+0:000> ~
+   0  Id: 53a0.5ffc Suspend: 1 Teb: 000000b1`db1ed000 Unfrozen "Hello world!"
+   7  Id: 53a0.9114 Suspend: 1 Teb: 000000b1`db1ef000 Unfrozen
+   8  Id: 53a0.2cc4 Suspend: 1 Teb: 000000b1`db1f1000 Unfrozen
+   9  Id: 53a0.5c40 Suspend: 1 Teb: 000000b1`db1f3000 Unfrozen
+ 
+0:000> dx @$curthread
+@$curthread                 : ConsoleTestApp!ILT+25(mainCRTStartup) (00007ff7`fac7101e)  [Switch To]
+    Id               : 0x5ffc
+    Name             : Hello world!
+    Stack           
+    Registers       
+    Environment
+```
+
 
 ## 1.0.1912.11001
 
