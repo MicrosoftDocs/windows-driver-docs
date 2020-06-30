@@ -24,7 +24,7 @@ This topic contains the following sections.
 - [Samples](#samples)
 - [FAQ](#faq)
 
-## <span id="Overview"></span><span id="overview"></span><span id="OVERVIEW"></span>Overview
+## Overview
 
 Audio latency is the delay between that time that sound is created and when it is heard. Having low audio latency is very important for several key scenarios, such as the following.
 
@@ -43,18 +43,17 @@ Windows 10 includes changes to reduce the audio latency. The goals of this docu
 5. Changes in WASAPI to support low latency.
 6. Enhancements in the driver DDIs.
 
-## <span id="Definitions"></span><span id="definitions"></span><span id="DEFINITIONS"></span>Definitions
+## Definitions
 
-|||
-|--- |--- |
 |Term|Description|
+|--- |--- |
 |Render latency|Delay between the time that an application submits a buffer of audio data to the render APIs, until the time that it is heard from the speakers.|
 |Capture latency|Delay between the time that a sound is captured from the microphone, until the time that it is sent to the capture APIs that are being used by the application.|
 |Roundtrip latency|Delay between the time that a sound is captured from the microphone, processed by the application and submitted by the application for rendering to the speakers. It is roughly equal to render latency + capture latency.|
 |Touch-to-app latency|Delay between the time that a user taps the screen until the time that the signal is sent to the application.|
 |Touch-to-sound latency|Delay between the time that a user taps the screen, the event goes to the application and a sound is heard via the speakers. It is equal to render latency + touch-to-app latency.|
 
-## <span id="Windows_Audio_Stack"></span><span id="windows_audio_stack"></span><span id="WINDOWS_AUDIO_STACK"></span>Windows Audio Stack
+## Windows Audio Stack
 
 The following diagram shows a simplified version of the Windows audio stack.
 
@@ -96,7 +95,7 @@ Another popular alternative for applications that need low latency is to use the
 
 Both alternatives (exclusive mode and ASIO) have their own limitations. They provide low latency, but they have their own limitations (some of which were described above). As a result, Audio Engine has been modified, in order to lower the latency, while retaining the flexibility.
 
-## <span id="Audio_Stack_Improvements_in_Windows_10"></span><span id="audio_stack_improvements_in_windows_10"></span><span id="AUDIO_STACK_IMPROVEMENTS_IN_WINDOWS_10"></span>Audio Stack Improvements in Windows 10
+## Audio Stack Improvements in Windows 10
 
 Windows 10 has been enhanced in three areas to reduce latency:
 
@@ -113,7 +112,7 @@ Windows 10 has been enhanced in three areas to reduce latency:
 4. AudioGraph callbacks on the streaming path.
 5. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](https://docs.microsoft.com/windows/desktop/ProcThread/platform-work-queue-api) or [**MFCreateMFByteStreamOnStreamEx**](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) and were tagged as "Audio" or "ProAudio".
 
-## <span id="API_Improvements"></span><span id="api_improvements"></span><span id="API_IMPROVEMENTS"></span>API Improvements
+## API Improvements
 
 The following two Windows 10 APIs provide low latency capabilities:
 
@@ -124,22 +123,21 @@ This is how an application developer can determine which of the two APIs to use:
 
 - Favor AudioGraph, wherever possible for new application development.
 - Only use WASAPI, if:
-    - You need additional control than that provided by AudioGraph.
-    - You need lower latency than that provided by AudioGraph.
+  - You need additional control than that provided by AudioGraph.
+  - You need lower latency than that provided by AudioGraph.
 
 The [measurement tools](#measurement_tools) section of this topic, shows specific measurements from a Haswell system using the inbox HDAudio driver.
 
 The following sections will explain the low latency capabilities in each API. As it was noted in the previous section, in order for the system to achieve the minimum latency, it needs to have updated drivers that support small buffer sizes.
 
-### <span id="AudioGraph"></span><span id="audiograph"></span><span id="AUDIOGRAPH"></span>AudioGraph
+### AudioGraph
 
 AudioGraph is a new Universal Windows Platform API in Windows 10 that is aimed at realizing interactive and music creation scenarios with ease. AudioGraph is available in several programming languages (C++, C#, JavaScript) and has a simple and feature-rich programming model.
 
 In order to target low latency scenarios, AudioGraph provides the [AudioGraphSettings::QuantumSizeSelectionMode property](https://docs.microsoft.com/uwp/api/Windows.Media.Audio.AudioGraphSettings#Windows_Media_Audio_AudioGraphSettings_QuantumSizeSelectionMode). This property can any of the following values shown in the table below:
 
-|||
-|--- |--- |
 |Value|Description|
+|--- |--- |
 |SystemDefault|Sets the buffer to the default buffer size (~10ms)|
 |LowestLatency|Sets the buffer to the minimum value that is supported by the driver|
 |ClosestToDesired|Sets the buffer size to be either equal either to the value defined by the DesiredSamplesPerQuantum property or to a value that is as close to DesiredSamplesPerQuantum as is supported by the driver.|
@@ -152,7 +150,7 @@ settings.QuantumSizeSelectionMode = QuantumSizeSelectionMode.LowestLatency;
 CreateAudioGraphResult result = await AudioGraph.CreateAsync(settings);
 ```
 
-### <span id="Windows_Audio_Session_API_WASAPI"></span><span id="windows_audio_session_api_wasapi"></span><span id="WINDOWS_AUDIO_SESSION_API_WASAPI"></span>Windows Audio Session API (WASAPI)
+### Windows Audio Session API (WASAPI)
 
 Starting in Windows 10 , WASAPI has been enhanced to:
 
@@ -166,9 +164,8 @@ The above functionality is provided by a new interface, called [**IAudioClient3*
 
 [**IAudioClient3**](https://docs.microsoft.com/windows/desktop/api/audioclient/nn-audioclient-iaudioclient3) defines the following 3 methods:
 
-|||
-|--- |--- |
 |Method|Description|
+|--- |--- |
 |GetCurrentSharedModeEnginePeriod|Returns the current format and periodicity of the audio engine|
 |GetSharedModeEnginePeriod|Returns the range of periodicities supported by the engine for the specified stream format|
 |InitializeSharedAudioStream|Initializes a shared stream with the specified periodicity|
@@ -181,12 +178,12 @@ The following code snippet shows how a music creation app can operate in the low
 // 1. Activation
 
 // Get a string representing the Default Audio (Render|Capture) Device
-m_DeviceIdString = MediaDevice::GetDefaultAudio(Render|Capture)Id( 
+m_DeviceIdString = MediaDevice::GetDefaultAudio(Render|Capture)Id(
 Windows::Media::Devices::AudioDeviceRole::Default );
 
-// This call must be made on the main UI thread.  Async operation will call back to 
+// This call must be made on the main UI thread.  Async operation will call back to
 // IActivateAudioInterfaceCompletionHandler::ActivateCompleted, which must be an agile // interface implementation
-hr = ActivateAudioInterfaceAsync( m_DeviceIdString->Data(), __uuidof(IAudioClient3), 
+hr = ActivateAudioInterfaceAsync( m_DeviceIdString->Data(), __uuidof(IAudioClient3),
 nullptr, this, &asyncOp );
 
 // 2. Setting the audio client properties – note that low latency offload is not supported
@@ -210,7 +207,7 @@ hr = m_AudioClient->GetMixFormat( &mixFormat ); if (FAILED(hr)) { ... }
 
 hr = m_AudioClient->GetSharedModeEnginePeriod(wfx, &defaultPeriodInFrames, &fundamentalPeriodInFrames, &minPeriodInFrames, &maxPeriodInFrames); if (FAILED(hr)) { ... }
 
-// legal periods are any multiple of fundamentalPeriodInFrames between 
+// legal periods are any multiple of fundamentalPeriodInFrames between
 // minPeriodInFrames and maxPeriodInFrames, inclusive
 // the Windows shared-mode engine uses defaultPeriodInFrames unless an audio client // has specifically requested otherwise
 
@@ -234,7 +231,7 @@ audioProps.cbSize = sizeof( AudioClientProperties );
 audioProps.eCategory = AudioCategory_Media;
 audioProps.Options |= AUDCLNT_STREAMOPTIONS_MATCH_FORMAT;
 
-hr = m_AudioClient->SetClientProperties( &audioProps ); 
+hr = m_AudioClient->SetClientProperties( &audioProps );
 if (FAILED(hr)) { ... }
 
 hr = m_AudioClient->IsFormatSupported(AUDCLNT_SHAREMODE_SHARED, appFormat, &closest);
@@ -261,29 +258,29 @@ if (AUDCLNT_E_ENGINE_FORMAT_LOCKED == hr) {
 Also, it is recommended for applications that use WASAPI to also use the [Real-Time Work Queue API](https://docs.microsoft.com/windows/desktop/ProcThread/platform-work-queue-api) or the [**MFCreateMFByteStreamOnStreamEx**](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) to create work items and tag them as Audio or Pro Audio, instead of their own threads. This will allow the OS to manage them in a way that will avoid interference non-audio subsystems. In contrast, all AudioGraph threads are automatically managed correctly by the OS. The following code snippet from the WASAPIAudio sample shows how to use the MF Work Queue APIs.
 
 ```cpp
-// Specify Source Reader Attributes 
-Attributes->SetUnknown( MF_SOURCE_READER_ASYNC_CALLBACK, static_cast<IMFSourceReaderCallback *>(this) ); 
-    if (FAILED( hr )) 
-    { 
-        goto exit; 
-    } 
-    Attributes->SetString( MF_READWRITE_MMCSS_CLASS_AUDIO, L"Audio" ); 
-    if (FAILED( hr )) 
-    { 
-        goto exit; 
-    } 
-    Attributes->SetUINT32( MF_READWRITE_MMCSS_PRIORITY_AUDIO, 0 ); 
-    if (FAILED( hr )) 
-    { 
-        goto exit; 
-    } 
-    // Create a stream from IRandomAccessStream 
-    hr = MFCreateMFByteStreamOnStreamEx (reinterpret_cast<IUnknown*>(m_ContentStream), &ByteStream ); 
-    if ( FAILED( hr ) ) 
-    { 
-        goto exit; 
-    } 
-    // Create source reader 
+// Specify Source Reader Attributes
+Attributes->SetUnknown( MF_SOURCE_READER_ASYNC_CALLBACK, static_cast<IMFSourceReaderCallback *>(this) );
+    if (FAILED( hr ))
+    {
+        goto exit;
+    }
+    Attributes->SetString( MF_READWRITE_MMCSS_CLASS_AUDIO, L"Audio" );
+    if (FAILED( hr ))
+    {
+        goto exit;
+    }
+    Attributes->SetUINT32( MF_READWRITE_MMCSS_PRIORITY_AUDIO, 0 );
+    if (FAILED( hr ))
+    {
+        goto exit;
+    }
+    // Create a stream from IRandomAccessStream
+    hr = MFCreateMFByteStreamOnStreamEx (reinterpret_cast<IUnknown*>(m_ContentStream), &ByteStream );
+    if ( FAILED( hr ) )
+    {
+        goto exit;
+    }
+    // Create source reader
     hr = MFCreateSourceReaderFromByteStream( ByteStream, Attributes, &m_MFSourceReader );
 ```
 
@@ -413,7 +410,7 @@ Finally, application developers that use WASAPI need to tag their streams with t
 - The capture signal might come in a format that the application cannot understand.
 - The latency might be improved.
 
-## <span id="Driver_Improvements"></span><span id="driver_improvements"></span><span id="DRIVER_IMPROVEMENTS"></span>Driver Improvements
+## Driver Improvements
 
 In order for audio drivers to support low latency, Windows 10 provides the following 3 new features:
 
@@ -424,7 +421,7 @@ HDAudio miniport function drivers that are enumerated by the inbox HDAudio bus d
 
 The following three sections will explain each new feature in more depth.
 
-**1. Declare the minimum buffer size.**
+### Declare the minimum buffer size
 
 A driver operates under various constraints when moving audio data between the OS, the driver, and the hardware. These constraints may be due to the physical hardware transport that moves data between memory and hardware, and/or due to the signal processing modules within the hardware or associated DSP.
 
@@ -446,7 +443,7 @@ static struct
         {
             STATIC_AUDIO_SIGNALPROCESSINGMODE_DEFAULT,          // constraint for default processing mode
             128,                                  // 128 samples per processing frame
-            0,                                    // N/A hns per processing frame    
+            0,                                    // N/A hns per processing frame
        },
     },
 };
@@ -454,24 +451,24 @@ static struct
 
 See the following topics for more in-depth information regarding these structures:
 
--   [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints)
--   [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
+- [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints)
+- [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
 
 Also, the sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>) shows how to use these properties, in order for a driver to declare the minimum buffer for each mode.
 
-**2. Improve the coordination between driver and OS.**
+### Improve the coordination between driver and OS
 
 The DDIs that are described in this section allow the driver to:
 
--   Clearly indicate which half (packet) of the buffer is available to the OS, rather than the OS guessing based on a codec link position. This helps the OS to recover from audio glitches faster.
--   Optionally optimize or simplify its data transfers in and out of the WaveRT buffer. The amount of benefit here depends on DMA engine design or other data transfer mechanism between the WaveRT buffer and (possibly DSP) hardware.
--   "Burst" captured data faster than real-time if the driver has internally accumulated captured data. This is primarily intended for voice activation scenarios but can apply during normal streaming as well.
--   Provide timestamp information about its current stream position rather than the OS guessing, potentially allowing for extremely accurate position information.
+- Clearly indicate which half (packet) of the buffer is available to the OS, rather than the OS guessing based on a codec link position. This helps the OS to recover from audio glitches faster.
+- Optionally optimize or simplify its data transfers in and out of the WaveRT buffer. The amount of benefit here depends on DMA engine design or other data transfer mechanism between the WaveRT buffer and (possibly DSP) hardware.
+- "Burst" captured data faster than real-time if the driver has internally accumulated captured data. This is primarily intended for voice activation scenarios but can apply during normal streaming as well.
+- Provide timestamp information about its current stream position rather than the OS guessing, potentially allowing for extremely accurate position information.
 
 This DDI is very useful in the case, where an DSP is used. However, a standard HD Audio driver or other simple circular DMA buffer designs might not find much benefit in these new DDIs listed here.
 
--   [IMiniportWaveRTInputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertinputstream)
--   [IMiniportWaveRTOutputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertoutputstream)
+- [IMiniportWaveRTInputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertinputstream)
+- [IMiniportWaveRTOutputStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertoutputstream)
 
 Several of the driver routines return Windows performance counter timestamps reflecting the time at which samples are captured or presented by the device.
 
@@ -479,13 +476,13 @@ In devices that have complex DSP pipelines and signal processing, calculating an
 
 To calculate the performance counter values, the driver and DSP might employ some of the following methods.
 
--   Within the DSP, track sample timestamps using some internal DSP wall clock.
--   Between the driver and DSP, calculate a correlation between the Windows performance counter and the DSP wall clock. Procedures for this can range from very simple (but less precise) to fairly complex or novel (but more precise).
--   Factor in any constant delays due to signal processing algorithms or pipeline or hardware transports, unless these delays are otherwise accounted for.
+- Within the DSP, track sample timestamps using some internal DSP wall clock.
+- Between the driver and DSP, calculate a correlation between the Windows performance counter and the DSP wall clock. Procedures for this can range from very simple (but less precise) to fairly complex or novel (but more precise).
+- Factor in any constant delays due to signal processing algorithms or pipeline or hardware transports, unless these delays are otherwise accounted for.
 
 The sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>) shows how to use the above DDIs.
 
-**3. Register the driver resources**
+### Register the driver resources
 
 To help ensure glitch-free operation, audio drivers must register their streaming resources with portcls. This allows the OS to manage resources to avoid interference between audio streaming and other subystems.
 
@@ -497,26 +494,26 @@ In some use cases, such as those requiring very low latency audio, the OS attemp
 
 This requirement to register stream resources implies that all drivers that are in the streaming pipeline path must register their resources directly or indirectly with Portcls. The audio miniport driver has these options:
 
--   The audio miniport driver is the bottom driver of its stack (interfacing the h/w directly), in this case, the driver knows its stream resources and it can register them with Portcls.
--   The audio miniport driver is streaming audio with the help of other drivers (example audio bus drivers). These other drivers also use resources that must be registered with Portcls. These parallel/bus driver stacks can expose a public (or private interface, if a single vendor owns all the drivers) that audio miniport drivers use to collect this info.
--   The audio miniport driver is streaming audio with the help of other drivers (example hdaudbus). These other drivers also use resources that must be registered with Portcls. These parallel/bus drivers can link with Portcls and directly register their resources. Note that the audio miniport drivers must let Portcls know that they depend on the resources of these other parallel/bus devices (PDOs). The hd-audio infrastructure uses this option, i.e., the hd-audio-bus driver links with Portcls and automatically performs the following steps:
-    -   registers its bus driver's resources, and
-    -   notifies Portcls that the children's resources depend on the parent's resources. In the HD audio architecture, the audio miniport driver just needs to register its own driver-owned thread resources.
+- The audio miniport driver is the bottom driver of its stack (interfacing the h/w directly), in this case, the driver knows its stream resources and it can register them with Portcls.
+- The audio miniport driver is streaming audio with the help of other drivers (example audio bus drivers). These other drivers also use resources that must be registered with Portcls. These parallel/bus driver stacks can expose a public (or private interface, if a single vendor owns all the drivers) that audio miniport drivers use to collect this info.
+- The audio miniport driver is streaming audio with the help of other drivers (example hdaudbus). These other drivers also use resources that must be registered with Portcls. These parallel/bus drivers can link with Portcls and directly register their resources. Note that the audio miniport drivers must let Portcls know that they depend on the resources of these other parallel/bus devices (PDOs). The hd-audio infrastructure uses this option, i.e., the hd-audio-bus driver links with Portcls and automatically performs the following steps:
+  - registers its bus driver's resources, and
+  - notifies Portcls that the children's resources depend on the parent's resources. In the HD audio architecture, the audio miniport driver just needs to register its own driver-owned thread resources.
 
 Notes:
 
--   HDAudio miniport function drivers that are enumerated by the inbox HDAudio bus driver hdaudbus.sys do not need to register the HDAudio interrupts, as this is already done by hdaudbus.sys. However, if the miniport driver creates its own threads, then it needs to register them.
--   Drivers that link with Portcls only for the purpose of registering streaming resources must update their INFs to include/needs wdmaudio.inf and copy portcls.sys (and dependent files). A new INF copy section is defined in wdmaudio.inf to only copy those files.
--   Audio drivers that only run in Windows 10 can hard-link to:
-    -   [**PcAddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddstreamresource)
-    -   [**PcRemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcremovestreamresource)
--   Audio drivers that must run on a down-level OS can use the following interface (the miniport can call QueryInterface for the IID\_IPortClsStreamResourceManager interface and register its resources only when PortCls supports the interface).
-    -   [IPortClsStreamResourceManager](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsstreamresourcemanager)
+- HDAudio miniport function drivers that are enumerated by the inbox HDAudio bus driver hdaudbus.sys do not need to register the HDAudio interrupts, as this is already done by hdaudbus.sys. However, if the miniport driver creates its own threads, then it needs to register them.
+- Drivers that link with Portcls only for the purpose of registering streaming resources must update their INFs to include/needs wdmaudio.inf and copy portcls.sys (and dependent files). A new INF copy section is defined in wdmaudio.inf to only copy those files.
+- Audio drivers that only run in Windows 10 can hard-link to:
+  - [**PcAddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddstreamresource)
+  - [**PcRemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcremovestreamresource)
+- Audio drivers that must run on a down-level OS can use the following interface (the miniport can call QueryInterface for the IID\_IPortClsStreamResourceManager interface and register its resources only when PortCls supports the interface).
+  - [IPortClsStreamResourceManager](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsstreamresourcemanager)
         -   [**AddStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsstreamresourcemanager-addstreamresource)
         -   [**RemoveStreamResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsstreamresourcemanager-removestreamresource)
--   These DDIs, use this enumeration and structure:
-    -   [**PcStreamResourceType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ne-portcls-_pcstreamresourcetype)
-    -   [**PCSTREAMRESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcstreamresource_descriptor)
+- These DDIs, use this enumeration and structure:
+  - [**PcStreamResourceType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ne-portcls-_pcstreamresourcetype)
+  - [**PCSTREAMRESOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcstreamresource_descriptor)
 
 Finally, drivers that link-in PortCls for the sole purpose of registering resources must add the following two lines in their inf's DDInstall section. Audio miniport drivers do not need this because they already have include/needs in wdmaudio.inf.
 
@@ -528,7 +525,7 @@ Needs=WDMPORTCLS.CopyFilesOnly
 
 The above lines make sure that PortCls and its dependent files are installed.
 
-## <span id="Measurement_Tools"></span><span id="measurement_tools"></span><span id="MEASUREMENT_TOOLS"></span>Measurement Tools
+## Measurement Tools
 
 In order to measure roundtrip latency, user can user utilize tools that play pulses via the speakers and capture them via the microphone. They measure the delay of the following path:
 
@@ -555,13 +552,13 @@ The differences in the latency between WASAPI and AudioGraph are due to the foll
 - There is an additional buffer of latency in AudioGraph's render side when the system is using &gt; 6ms buffers.
 - AudioGraph does not have the option to disable capture audio effects
 
-## <span id="Samples"></span><span id="samples"></span><span id="SAMPLES"></span>Samples
+## Samples
 
 - WASAPI Audio sample: <https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WindowsAudioSession>
 - AudioCreation sample (AudioGraph): <https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AudioCreation>
 - Sysvad driver sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>
 
-## <span id="FAQ"></span><span id="faq"></span>FAQ
+## FAQ
 
 **1. Wouldn't it be better, if all applications use the new APIs for low latency? Doesn't low latency always guarantee a better user experience for the user?**
 
