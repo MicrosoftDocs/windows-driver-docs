@@ -118,8 +118,8 @@ For details on this specification, refer to FMT-2 2.3.1.6.
 
 The following restrictions apply:
 
-|                            |                        |                               |
-|----------------------------|------------------------|-------------------------------|
+|Format                      |Subslot size            |Bit resolution                 |
+|----|----|----|
 | Type I PCM format: 		 | 1 <= bSubslotSize <= 4 |		8 <= bBitResolution <= 32 |
 | Type I PCM8 format:		 | bSubslotSize == 1	  | 	bBitResolution == 8       |
 | Type I IEEE_FLOAT format:	 | bSubslotSize == 4	  | 	bBitResolution == 32      |
