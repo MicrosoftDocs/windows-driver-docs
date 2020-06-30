@@ -14,6 +14,10 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.0.2001.02001
+
+No release information.
+
 ## 1.0.1912.11001
 
 **TTD Timelines** - We've added a new window that displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. Timelines will automatically open and display exceptions (if present) and breakpoints. For more information, see [WinDbg Preview - Timeline](windbg-timeline-preview.md).
