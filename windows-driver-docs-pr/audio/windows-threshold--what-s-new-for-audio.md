@@ -16,19 +16,19 @@ Here are the new audio features in Windows 10.
 
 - [Implementing Audio Module Communication](implementing-audio-module-communication.md)
 
-- [Low Latency Audio Improvements](#lowlatency)
+- [Low Latency Audio Improvements](#low-latency-audio-improvements)
 
-- [Signal Processing Modes and Audio Categories](#signalprocessing)
+- [Signal Processing Modes and Audio Categories](#signal-processing-modes-and-audio-categories)
 
-- [Hardware Offloaded APO Effects](#hardwareoffloaded)
+- [Hardware Offloaded APO Effects](#hardware-offloaded-apo-effects)
 
-- [Cortana Voice Activation](#cortanavoice)
+- [Cortana Voice Activation](#cortana-voice-activation---wake-on-voice)
 
-- [Windows Universal Drivers for Audio](#windowsuniversal)
+- [Windows Universal Drivers for Audio](#windows-universal-drivers-for-audio)
 
-- [Resource Management for Audio Drivers](#resourcemanagement)
+- [Resource Management for Audio Drivers](#resource-management-for-audio-drivers)
 
-- [PNP Rebalance for Audio Drivers](#pnprebalance)
+- [PNP Rebalance for Audio Drivers](#pnp-rebalance-for-audio-drivers)
 
 ## Low Latency Audio Improvements
 

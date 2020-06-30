@@ -112,7 +112,7 @@ This is how an application developer can determine which of the two APIs to use:
   - You need additional control than that provided by AudioGraph.
   - You need lower latency than that provided by AudioGraph.
 
-The [measurement tools](#measurement_tools) section of this topic, shows specific measurements from a Haswell system using the inbox HDAudio driver.
+The [measurement tools](#measurement-tools) section of this topic, shows specific measurements from a Haswell system using the inbox HDAudio driver.
 
 The following sections will explain the low latency capabilities in each API. As it was noted in the previous section, in order for the system to achieve the minimum latency, it needs to have updated drivers that support small buffer sizes.
 
