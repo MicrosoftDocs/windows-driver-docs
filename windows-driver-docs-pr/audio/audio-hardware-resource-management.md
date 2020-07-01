@@ -19,8 +19,8 @@ Windows 10 includes a mechanism to express concurrency constraints to insure th
 
 To specify constraints complete these two steps.
 
-- Create a concurrency constraints XML file as described in [Specify Concurrency Constraints](#specify_concurrency_constraints).
-- Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry\_Key\_Configuration](#registry_key_configuration).
+- Create a concurrency constraints XML file as described in [Specify Concurrency Constraints](#specify-concurrency-resource-constraints).
+- Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry\_Key\_Configuration](#registry-key-configuration).
 
 ## Specify Concurrency Resource Constraints
 
