@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic describes how to implement an audio processing object (APO). For general information about APOs, see [Audio Processing Object Architecture](audio-processing-object-architecture.md).
 
-## <span id="Implementing_Custom_APOs"></span><span id="implementing_custom_apos"></span><span id="IMPLEMENTING_CUSTOM_APOS"></span>Implementing Custom APOs
+## Implementing Custom APOs
 
 Custom APOs are implemented as in-process COM objects, so they run in user mode and are packaged in a dynamic-link library (DLL). There are three types of APO, based on where they are inserted in the signal processing graph.
 
@@ -28,7 +28,7 @@ Perform the following steps to implement your custom APOs.
 2. Optionally create a user interface for configuring the custom APOs using a.
 3. Create an INF file to install and register the APOs and the custom user interface.
 
-## <span id="Design_Considerations_for_Custom_APO_Development"></span><span id="design_considerations_for_custom_apo_development"></span><span id="DESIGN_CONSIDERATIONS_FOR_CUSTOM_APO_DEVELOPMENT"></span>Design Considerations for Custom APO Development
+## Design Considerations for Custom APO Development
 
 All custom APOs must have the following general characteristics:
 
@@ -36,13 +36,13 @@ All custom APOs must have the following general characteristics:
 - An APO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) routine. The APO cannot change the settings of the underlying logical device, including its KS topology.
 - In addition to IUnknown, APOs must expose the following interfaces:
 
-    - [IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
+  - [IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
 
-    - [IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
+  - [IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
 
-    - [IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
+  - [IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
 
-    - [IAudioSystemEffects](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
+  - [IAudioSystemEffects](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
 
 - All APOs must have real-time system compatibility. This means that:
 
@@ -54,9 +54,10 @@ All custom APOs must have the following general characteristics:
 
 - Custom APOs must not expose the IAudioProcessingObjectVBR interface.
 
-**Note**  For detailed information about the required interfaces, see the Audioenginebaseapo.h and Audioenginebaseapo.idl files in the Windows Kits\\&lt;build number&gt;\\Include\\um folder.
+>[!NOTE]
+>For detailed information about the required interfaces, see the Audioenginebaseapo.h and Audioenginebaseapo.idl files in the Windows Kits\\&lt;build number&gt;\\Include\\um folder.
 
-## <span id="Using_Sample_Code_to_Accelerate_the_Development_Process"></span><span id="using_sample_code_to_accelerate_the_development_process"></span><span id="USING_SAMPLE_CODE_TO_ACCELERATE_THE_DEVELOPMENT_PROCESS"></span>Using Sample Code to Accelerate the Development Process
+## Using Sample Code to Accelerate the Development Process
 
 Using the SYSVAD Swap APO code sample as a template can accelerate the custom APO development process. The Swap sample is the sample that was developed to illustrate some features of audio processing objects. The Swap APO sample swaps the left channel with the right channel and implements both SFX and MFX effects. You can enable and disable the channel swap audio effects using the properties dialog.
 
@@ -66,7 +67,7 @@ You can browse the Sysvad audio sample here:
 
 <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>
 
-**Download and extract the Sysvad audio sample from GitHub**
+### Download and extract the Sysvad audio sample from GitHub
 
 Follow these steps to download and open the SYSVAD sample.
 
@@ -78,30 +79,26 @@ b. Download the master.zip file to your local hard drive.
 
 c. Right click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
 
-d. After the files are extracted, navigate to the following subfolder.
+d. After the files are extracted, navigate to the following subfolder: *C:\\DriverSamples\\Audio\\Sysvad*
 
-*C:\\DriverSamples\\Audio\\Sysvad*
-
-**Open the driver solution in Visual Studio**
+### Open the driver solution in Visual Studio
 
 In Microsoft Visual Studio, Click **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\Audio\\Sysvad*). Double-click the *Sysvad* solution file to open it.
 
 In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has six projects.
 
-**SwapAPO Example Code**
+### SwapAPO Example Code
 
 There are five projects in the SYSVAD sample, one of which is of primary interest to the APO developer.
 
-|                    |                                       |
-|--------------------|---------------------------------------|
-| **Project**        | **Description**                       |
-| SwapAPO            | Sample code for an example APO.       |
+|**Project**|**Description**|
+|----|----|
+|SwapAPO|Sample code for an example APO|
 
 The other projects in the Sysvad sample are summarized below.
 
-|                        |                                            |
-|------------------------|--------------------------------------------|
-| **Project**            | **Description**                            |
+|**Project**|**Description**|
+|----|----|
 | PhoneAudioSample       | Sample code for a mobile audio driver.     |
 | TabletAudioSample      | Sample code for an alternate audio driver. |
 | KeywordDetectorAdapter | Sample code for a keyword detector adapter |
@@ -109,9 +106,8 @@ The other projects in the Sysvad sample are summarized below.
 
 The primary header files for the SwapAPO sample is swapapo.h. The other primary code elements are summarized below.
 
-|                      |                                                                   |
-|----------------------|-------------------------------------------------------------------|
-| **File**             | **Description**                                                   |
+|**File**|**Description**|
+|----|----|
 | Swap.cpp             | C++ code that contains the implementation of the Swap APO.        |
 | SwapAPOMFX.cpp       | Implementation of CSwapAPOMFX                                     |
 | SwapAPOSFX.cpp       | Implementation of CSwapAPOSFX                                     |
@@ -120,7 +116,7 @@ The primary header files for the SwapAPO sample is swapapo.h. The other primary 
 | SwapAPOInterface.idl | The interface and type definitions for Swap APO functionality.    |
 | swapapodll.def       | COM exports definitions                                           |
 
-## <span id="Implementing_the_COM_Object_Audio_Processing_Code"></span><span id="implementing_the_com_object_audio_processing_code"></span><span id="IMPLEMENTING_THE_COM_OBJECT_AUDIO_PROCESSING_CODE"></span>Implementing the COM Object Audio Processing Code
+## Implementing the COM Object Audio Processing Code
 
 You can wrap a system-supplied APO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized APO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
 
@@ -180,7 +176,7 @@ HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 
 For desktop PCs, you can provide a user interface to configure the features that you added to the custom APO. For more information about this, see [Implementing a UI for Configuring APOs](implementing-a-ui-for-configuring-sapos.md).
 
-## <span id="Replacing_System-supplied_APOs"></span><span id="replacing_system-supplied_apos"></span><span id="REPLACING_SYSTEM-SUPPLIED_APOS"></span>Replacing System-supplied APOs
+## Replacing System-supplied APOs
 
 When implementing the APO interfaces, there are two approaches: you can write your own implementation, or you can call into the inbox APOs.
 
@@ -215,7 +211,7 @@ Implement the following interfaces and methods for the COM component:
 - [IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). The required method for this interface is [**APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) and it is the method that implements the DSP algorithm.
 - [IAudioSystemEffects](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). This interface makes the audio engine recognize a DLL as an APO.
 
-## <span id="Working_with_Visual_Studio_and_APOs"></span><span id="working_with_visual_studio_and_apos"></span><span id="WORKING_WITH_VISUAL_STUDIO_AND_APOS"></span>Working with Visual Studio and APOs
+## Working with Visual Studio and APOs
 
 When working with APOs in Visual Studio, perform these tasks for each APO project.
 
@@ -229,7 +225,7 @@ If you need to support Windows 8,1, enable static linking by setting the project
 
 Disable Use of an Embedded Manifest by setting project properties for your APO project. Select **Manifest Tool**, **Input and Output**. Then change "Embed Manifest" from the default of *Yes* to *No*. If you have an embedded manifest, this triggers the use of certain APIs which are forbidden within a protected environment. This means that your APO will run with DisableProtectedAudioDG=1, but when this test key is removed, your APO will fail to load, even if it is WHQL-signed.
 
-## <span id="Packaging_your_APO_with_a_Driver"></span><span id="packaging_your_apo_with_a_driver"></span><span id="PACKAGING_YOUR_APO_WITH_A_DRIVER"></span>Packaging your APO with a Driver
+## Packaging your APO with a Driver
 
 When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. For Windows 10, please see [Universal Windows Drivers for Audio](audio-universal-drivers.md). Your audio related driver packages should follow the policies and packaging model detailed there.  
 
@@ -239,7 +235,7 @@ The following paragraphs and INF file fragments show the modifications that are 
 
 The inf files included with the Sysvad sample illustrate how the SwapApo.dll APOs are registered.
 
-## <span id="_Registering_APOs_for_Processing_Modes_and_Effects_in_the_INF_File"></span><span id="_registering_apos_for_processing_modes_and_effects_in_the_inf_file"></span><span id="_REGISTERING_APOS_FOR_PROCESSING_MODES_AND_EFFECTS_IN_THE_INF_FILE"></span> Registering APOs for Processing Modes and Effects in the INF File
+## Registering APOs for Processing Modes and Effects in the INF File
 
 You can register APOs for specific modes using certain allowable combinations of registry keys. For more information on which effects are available and general information about APOs, see [Audio Processing Object Architecture](audio-processing-object-architecture.md).
 
@@ -308,15 +304,15 @@ Note that in the sample INF file, the EFX\_Streaming property is commented out b
 Starting with Windows 10, release 1809, APO registration with the audio engine uses the componentized audio driver model. Using audio componentization creates a smoother and more reliable install experience and better supports component servicing. For more information, see [Creating a componentized audio driver installation](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-universal-drivers#creating-a-componentized-audio-driver-installation).
 
 The following example code is extracted from the public ComponentizedAudioSampleExtension.inf and ComponentizedApoSample.inf. Refer to the SYSVAD audio sample which is available on GitHub here: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>.
- 
+
 The registration of the APO with the audio engine is done using a newly created APO device. For the audio engine to make use of the new APO device it must be a PNP child of the audio device, sibling of the audio endpoints. The new componentized APO design does not allow for an APO to be registered globally and used by multiple different drivers. Each driver must register its own APO's.
 
 The installation of the APO is done in two parts. First, the driver extension INF will add an APO device to the system:
- 
+
 ```inf
 [DeviceExtension_Install.Devices]
 AddDevice = SwapApo,,Apo_AddDevice
- 
+
 [Apo_AddDevice]
 HardwareIds = APO\VEN_SMPL&CID_APO
 Description = "Audio Proxy APO Sample"
@@ -328,16 +324,16 @@ This APO device triggers the second part, the installation of the APO INF, in th
 >[!NOTE]
 > The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.
  For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
- 
+
 ```inf
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = AudioProcessingObject
 ClassGuid   = {5989fce8-9cd0-467d-8a6a-5419e31529d4}
- 
+
 [ApoComponents.NT$ARCH$]
 %Apo.ComponentDesc% = ApoComponent_Install,APO\VEN_SMPL&CID_APO
- 
+
 [Apo_AddReg]
 ; CLSID registration
 HKCR,CLSID\%SWAP_FX_STREAM_CLSID%,,,%SFX_FriendlyName%
@@ -400,19 +396,19 @@ This sample INF file illustrates the following combination of system effects:
 ```inf
 [MyDevice.Interfaces]
 AddInterface=%KSCATEGORY_AUDIO%,%MyFilterName%,MyAudioInterface
- 
+
 [MyAudioInterface]
 AddReg=MyAudioInterface.AddReg
- 
+
 [MyAudioInterface.AddReg]
 ;To register an APO for discovery, use the following property keys in the .inf (or at runtime when registering the KSCATEGORY_AUDIO device interface):
 HKR,"FX\\0",%PKEY_FX_StreamEffectClsid%,,%FX_STREAM_CLSID%
 HKR,"FX\\0",%PKEY_FX_ModeEffectClsid%,,%FX_MODE_CLSID%
 HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_MODE_CLSID%
- 
+
 ;To register an APO for streaming and discovery, add the following property keys as well (to the same section):
 HKR,"FX\\0",%PKEY_SFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS%
- 
+
 ;To register an APO for streaming in multiple modes, use a REG_MULTI_SZ property and include all the modes:
 HKR,"FX\\0",%PKEY_MFX_ProcessingModes_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS%
 ```
@@ -435,7 +431,7 @@ Needs=KS.Registration, WDMAUDIO.Registration, BtaMPM.CopyFilesOnly, MsApoFxProxy
 CopyFiles=BthHfAud.CopyList
 AddReg=BthHfAud.AddReg
 
-; Called by needs entry in oem inf 
+; Called by needs entry in oem inf
 [BthHfAudOEM.CopyFiles]
 CopyFiles=BthHfAud.CopyList
 
@@ -493,7 +489,7 @@ SWAP_FX_STREAM_CLSID   = "{B48DEA3F-D962-425a-8D9A-9A5BB37A9904}"
 ...
 ```
 
-## <span id="APO_Registration"></span><span id="apo_registration"></span><span id="APO_REGISTRATION"></span>APO Registration
+## APO Registration
 
 APO registration is used to support a process that dynamically matches the effects to endpoints using a weighted calculation. The weighted calculation uses the following property stores. Every audio interface has zero or more *endpoint property stores* and *effects property stores* registered either via the .inf or at runtime. The most specific endpoint property store and the most specific effects property store have the highest weights and are used. All other property stores are ignored.
 
@@ -556,7 +552,7 @@ HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_SPEAKER%
 
 For more information about the GUID values for the different KS node types, see the Ksmedia.h header file.
 
-## <span id="Troubleshooting_APO_Load_Failures"></span><span id="troubleshooting_apo_load_failures"></span><span id="TROUBLESHOOTING_APO_LOAD_FAILURES"></span>Troubleshooting APO Load Failures
+## Troubleshooting APO Load Failures
 
 The following information is provided to help you understand how failure is monitored for APOs. You can use this information to troubleshoot APOs that fail to get incorporated into the audio graph.
 
@@ -584,7 +580,7 @@ For [**CoCreateInstance**](https://docs.microsoft.com/windows/desktop/api/combas
 
 Also, if the failure count value for an SFX, MFX or EFX APO reaches a system-specified limit, the SFX, MFX and EFX APOs are disabled by setting the PKEY\_Endpoint\_Disable\_SysFx registry key to '1'. The system-specified limit is currently a value of 10.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)
 
