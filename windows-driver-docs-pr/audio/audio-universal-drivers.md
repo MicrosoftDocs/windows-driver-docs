@@ -191,8 +191,8 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 
 6. Copy the following files to the system that you want to install the sysvad driver:
 
-|                            |                                                                                   |
-|----------------------------|-----------------------------------------------------------------------------------|
+|File|Description|
+|----|----|
 | TabletAudioSample.sys      | The driver file.                                                                  |
 | tabletaudiosample.inf      | An information (INF) file that contains information needed to install the driver. |
 | sysvad.cat                 | The catalog file.                                                                 |
