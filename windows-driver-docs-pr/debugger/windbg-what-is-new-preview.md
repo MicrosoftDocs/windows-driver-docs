@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 06/30/2020
+ms.date: 07/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,11 +14,7 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
-## 1.0.2001.02001
-
-**USB power management disabled for target in KDNET**
-
-When you connect to your target machine using KDNET using USB, we disable power management on the debugger host in order to improve the reliability of KDNET over XHCI debugging and overall connection. Be sure to re-enable power management through the settings page when done debugging.
+## 1.0.2001.02007
 
 **Thread names/descriptions available in live debugging**
 
@@ -40,6 +36,9 @@ Thread names that are set from SetThreadDescription are now available when doing
     Environment
 ```
 
+**Other changes and bug fixes**
+
+* Time travel recording enhancements and other fixes.
 
 ## 1.0.1912.11001
 
@@ -67,7 +66,7 @@ Thread names that are set from SetThreadDescription are now available when doing
  
 You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode) and report any issues to our  [WinDbg Feedback GitHub](https://aka.ms/dexex). Note that while the extension may work for other scenarios, we’re only intending on fixing issues related to OE scenarios at this point.
 
-**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps. 
+**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps.
 
 **TTD File format change** - We’ve made a major update to the file format for TTD traces that breaks forward compatibility. Previous versions of WinDbg Preview will not be able to open traces recorded with this (and future) versions of WinDbg Preview, but this (and future) versions will be able to open both new and old traces.
 
