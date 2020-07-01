@@ -14,11 +14,19 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
-## 1.0.2001.02007
+## 1.0.2007.02007
+
+**Timeline Bookmarks**
+
+Bookmark important Time Travel positions in WinDbg instead of manually copy pasting the position to notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events, and to annotate them. Access Bookmarks via the Timeline window available in *View > Timeline*.
+
+**Modules Window**
+
+A new windows shows modules and their related information, it is available via the View ribbon.
 
 **Thread names/descriptions available in live debugging**
 
-Thread names that are set from SetThreadDescription are now available when doing live user-mode debugging. Thread names are available using the “~” command or the debugger data model:
+Thread names that are set from SetThreadDescription are now available when doing live user-mode debugging. Thread names are available using the “~” command or the debugger data model.
 
 ```dbgconsole
 0:000> ~
@@ -36,8 +44,16 @@ Thread names that are set from SetThreadDescription are now available when doing
     Environment
 ```
 
-**Other changes and bug fixes**
+**Azure DevOps symbols**
 
+WinDbgNext now supports downloading symbols directly from Azure DevOps without explicitly using a PAT. If a recent version of Git is installed, the debugger will use the Git credential manager to authenticate to Azure DevOps when downloading symbols and source files. Automatic authentication is also supported to Github when downloading source files.
+
+**SourceLink**
+
+WinDbgNext now supports reading Source Link information from symbols while debugging. The debugger will automatically download and display the appropriate source for Source Link-enabled binaries.
+
+**Other changes and bug fixes**
+* WinDbg now supports AMD64 and Linux kernel dump debugging
 * Time travel recording enhancements and other fixes.
 
 ## 1.0.1912.11001
