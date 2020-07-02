@@ -53,7 +53,7 @@ The "Learn my voice" feature allows the user to train Cortana to recognize their
 
 When voice activation is paired with "Learn my voice", the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices. This feature is  available only for Windows 10 version 1903 and earlier.
 
-Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake_on_voice).
+Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake-on-voice).
 
 ## Glossary of Terms
 
@@ -78,8 +78,8 @@ This glossary summarizes terms related to voice activation.
 
 To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the following tasks.
 
-- Create a custom keyword detector based on the SYSVAD sample described later in this topic. You will implement these methods in a COM DLL, described in [Keyword Detector OEM Adapter Interface](#keyword_detector).
-- Implement WAVE RT enhancements described in [WAVERT Enhancements](#wavert_enhancements).
+- Create a custom keyword detector based on the SYSVAD sample described later in this topic. You will implement these methods in a COM DLL, described in [Keyword Detector OEM Adapter Interface](#keyword-detector-oem-adapter-interface).
+- Implement WAVE RT enhancements described in [WAVERT Enhancements](#wavert-enhancements).
 - Provide INF file entries to describe any custom APOs used for keyword detection.
   - [PKEY\_FX\_KeywordDetector\_StreamEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-keyworddetector-streameffectclsid)
   - [PKEY\_FX\_KeywordDetector\_ModeEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-keyworddetector-modeeffectclsid)

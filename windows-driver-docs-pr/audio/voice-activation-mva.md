@@ -29,7 +29,7 @@ Key phrases may be uttered by themselves ("Hey Contoso") as a staged command, or
 
 Microsoft provides an OS default keyword spotter (software keyword spotter) to provide voice assistant experience in cases where hardware keyword detection is unavailable. While this is currently available for Cortana, additional Microsoft configuration may be needed to onboard other voice assistants to do two-stage keyword detection. For more information contact `AskMVA@Microsoft.com`.  
 
-If KWS is to wake the device from a low powered state, the solution is known as Wake-on-Voice (WoV). For more information, see [Wake on Voice](#wake_on_voice).
+If KWS is to wake the device from a low powered state, the solution is known as Wake-on-Voice (WoV). For more information, see [Wake on Voice](#wake-on-voice).
 
 ## Glossary of Terms
 
@@ -57,7 +57,7 @@ This glossary summarizes terms related to voice activation.
 To implement a hardware keyword spotter (HW KWS) SoC vendors must complete the following tasks.
 
 - Create a custom keyword detector based on the SYSVAD sample described later in this topic. You will implement these methods in a COM DLL, described in [IEvent Detector OEM Adapter Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/eventdetectoroemadapter/nn-eventdetectoroemadapter-ieventdetectoroemadapter).
-- Implement WAVE RT enhancements described in [WAVERT Enhancements](#wavert_enhancements).
+- Implement WAVE RT enhancements described in [WAVERT Enhancements](#wavert-enhancements).
 - Provide INF file entries to describe any custom APOs used for keyword detection.
   - [PKEY\_FX\_KeywordDetector\_StreamEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-keyworddetector-streameffectclsid)
   - [PKEY\_FX\_KeywordDetector\_ModeEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-keyworddetector-modeeffectclsid)
