@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 07/01/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
-## 1.0.2007.02007
+## 1.0.2007.01003
 
 **Timeline Bookmarks**
 
@@ -23,6 +23,14 @@ Bookmark important Time Travel positions in WinDbg instead of manually copy past
 **Modules Window**
 
 A new windows shows modules and their related information, it is available via the View ribbon.
+It displays:
+- The name of the module including the path location
+- The size in bytes of the loaded module
+- The base address that the module is loaded at
+- The file version
+
+![Modules view window showing five modules listed](images/windbgx-view-modules.png)
+
 
 **Thread names/descriptions available in live debugging**
 
