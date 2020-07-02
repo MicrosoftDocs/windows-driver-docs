@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **NoCancelFromEvtSurpriseRemove** rule specifies that WDF Drivers shouldn’t cancel requests from the [*EvtDeviceSurpriseRemoval*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal) callback function, instead self-managed I/O callback functions should be used. *EvtDeviceSurpriseRemoval* callback function isn’t synchronized with the power-down path.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

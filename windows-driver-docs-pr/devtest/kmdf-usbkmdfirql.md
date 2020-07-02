@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **UsbKmdfIrql** rule specifies that a KMDF driver does not call USB-specific device driver interfaces (DDI) at the incorrect IRQL level.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

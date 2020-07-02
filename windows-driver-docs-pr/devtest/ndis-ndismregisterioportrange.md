@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 A miniport driver calls [**NdisMRegisterIoPortRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange) from its [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) or MINIPORT\_ADD\_DEVICE functions. *MiniportInitializeEx* or MINIPORT\_ADD\_DEVICE must call [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) before calling **NdisMRegisterIoPortRange**.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

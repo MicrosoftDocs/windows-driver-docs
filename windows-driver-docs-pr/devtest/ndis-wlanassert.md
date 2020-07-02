@@ -31,9 +31,7 @@ The following violations are possible:
 
 The *violation text* will be provided as parameter two in the 0xC4 bug check.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 |                                   |                                                                                                                                        |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

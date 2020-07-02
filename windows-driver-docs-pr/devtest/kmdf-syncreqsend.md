@@ -20,9 +20,7 @@ The **SyncReqSend** rule specifies that all synchronous send requests are done b
 
 If the driver calls a *WDFxxxSendXXXSynchronously* method without setting a valid timeout, the thread can become stalled if hardware does not respond promptly.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

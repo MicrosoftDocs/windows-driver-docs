@@ -32,9 +32,7 @@ The **IrqlExApcLte3** rule specifies that the driver calls the following executi
 
 Drivers that have errors related to IRQL can cause serious problems and could cause a computer to crash.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                                                                                                                     |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

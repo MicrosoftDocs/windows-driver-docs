@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **StorPortIrql** rule checks that StorPort routines are called at the correct IRQL levels.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

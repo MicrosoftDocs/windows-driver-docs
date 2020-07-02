@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **WlanTimedScan** rule verifies that a WLAN scan operation is completed within 15 seconds.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

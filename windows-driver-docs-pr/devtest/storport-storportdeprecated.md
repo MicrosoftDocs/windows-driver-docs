@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the driver does not call either of these deprecated routines: **StorPortValidateRange** or **StorPortLogError**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **WdfIoQueueFindRequestFailed** rule specifies that [**WdfIoQueueRetrieveFoundRequest**](kmdf-wdfioqueueretrievefoundrequest.md) or [**WdfObjectDereference**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectdereference) should only be called after **WdfIoQueueFindRequestFailed** returns STATUS\_SUCCESS.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

@@ -22,9 +22,7 @@ Within the driver's **EvtIoDeviceControl** callback function, the request buffer
 
 This rule considers the following buffer access methods:
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

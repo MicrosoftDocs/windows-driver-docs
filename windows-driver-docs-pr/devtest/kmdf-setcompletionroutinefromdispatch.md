@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **SetCompletionRoutineFromDispatch** rule verifies that the driver does not specify a completion routine on an IRP from their [*EvtDeviceWdmIrpDispatch*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch) callback function.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

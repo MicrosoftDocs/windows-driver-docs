@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The PcAddAdapterDevice rule specifies that a PortCls miniport driver correctly uses the **PcAddAdapterDevice** function, specifically that the *DeviceExtensionSize* should be either zero (0) or no less than PORT\_CLASS\_DEVICE\_EXTENSION\_SIZE.
 
-|              |       |
-|--------------|-------|
-| Driver model | Audio |
+**Driver model: Audio**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

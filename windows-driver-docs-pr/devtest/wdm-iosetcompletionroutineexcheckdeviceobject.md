@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IoSetCompletionRoutineExCheckDeviceObject** rule specifies that if the current device object is not passed to [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex) and the lower device object is, this can lead to a race condition where the current device object could be unloaded even though the completion routine has not run.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

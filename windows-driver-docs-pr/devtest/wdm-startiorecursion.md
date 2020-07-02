@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **StartIoRecursion** rule specifies that if a driver's [**StartIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine includes a call to [**IoStartNextPacket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket), the driver must first call [**IoSetStartIoAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iosetstartioattributes) with the *DeferredStartIo* attribute set to **TRUE**. Otherwise, infinite recursion can result.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

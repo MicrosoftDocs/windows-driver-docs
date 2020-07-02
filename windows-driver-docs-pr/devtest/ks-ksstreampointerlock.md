@@ -20,9 +20,7 @@ The KsStreamPointerLock rule specifies that a kernel-streaming (KS) miniport dri
 
 That is, the miniport driver must not try to lock a stream pointer that is already locked, or try to unlock a stream pointer that is not already locked.
 
-|              |     |
-|--------------|-----|
-| Driver model | KS  |
+**Driver model: KS**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

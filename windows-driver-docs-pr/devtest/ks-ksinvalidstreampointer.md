@@ -22,9 +22,7 @@ https://docs.microsoft.com/windows-hardware/drivers/stream/leading-and-trailing-
 
 This rule also verifies that [KsStreamPointerDelete](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete) has not been used to attempt to delete a non-cloned stream pointer.
 
-|              |     |
-|--------------|-----|
-| Driver model | KS  |
+**Driver model: KS**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

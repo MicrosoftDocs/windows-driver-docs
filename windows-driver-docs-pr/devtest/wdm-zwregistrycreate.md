@@ -40,9 +40,7 @@ Finally, this rule specifies that the driver must not return from the dispatch r
 
 This rule does not verify that the driver has called [**ZwCreateKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey) or [**ZwOpenKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenkey) to acquire handle to the registry key before closing or deleting it.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

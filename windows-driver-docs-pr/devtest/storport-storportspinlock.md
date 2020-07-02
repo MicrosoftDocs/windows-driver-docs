@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that locks that are acquired via **StorPortAcquireSpinLock** are promptly released via **StorPortReleaseSpinLock**. The miniport driver fails the rule if it attempts to acquire a lock that it had already acquired, or if it attempts to release a lock that it had not acquired. In addition, at the end of the dispatch or cancel routine, the driver should not hold any spin locks.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

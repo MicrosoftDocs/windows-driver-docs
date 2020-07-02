@@ -20,9 +20,7 @@ The **IoSetCompletionRoutineNonPnpDriver** rule specifies that drivers that are 
 
 The [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex) routine avoids the actual driver image unloading after the driver has been marked for unload. This applies to non-PnP drivers since they are not notified by the PnP manager when a remove or unload is happening.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

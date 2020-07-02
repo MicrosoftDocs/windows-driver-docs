@@ -30,9 +30,7 @@ Drivers should call [**IoMarkIrpPending**](https://docs.microsoft.com/windows-ha
 
 For more information, see [**Synchronizing IRP Cancellation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/synchronizing-irp-cancellation).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

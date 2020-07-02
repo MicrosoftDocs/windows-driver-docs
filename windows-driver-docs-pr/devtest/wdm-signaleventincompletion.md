@@ -20,9 +20,7 @@ The **SignalEventInCompletion** rule specifies that when processing an asynchron
 
 In this case, the completion routine will not be called.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

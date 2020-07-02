@@ -22,9 +22,7 @@ To comply with this rule, use the string functions that are considered to be saf
 
 If a kernel-mode driver uses the user-mode safe string functions, the driver violates this rule.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

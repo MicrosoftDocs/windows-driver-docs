@@ -20,9 +20,7 @@ The **MarkCancOnCancReqLocal** rule specifies that [**WdfRequestMarkCancelable**
 
 The **MarkCancOnCancReqLocal** rule performs this check only within the default I/O queue callback functions.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

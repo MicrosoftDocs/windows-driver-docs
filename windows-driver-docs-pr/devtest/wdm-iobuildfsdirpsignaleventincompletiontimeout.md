@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IoBuildFsdIrpSignalEventInCompletionTimeout** rule reports a defect when the driver waits indefinitely until the lower driver returns, as the IRP’s event is required to be signaled in the completion routine.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

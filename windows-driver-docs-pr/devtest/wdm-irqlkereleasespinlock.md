@@ -20,9 +20,7 @@ The **IrqlKeReleaseSpinLock** rule specifies that the driver calls [**KeReleaseS
 
 This rule also specifies that the value of the *NewIrql* parameter in the call to **KeReleaseSpinLock** is equal to the IRQL at which the driver was executing before the call to [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock). (This value is also the value of the *OldIrql* parameter that is supplied by **KeAcquireSpinLock**.)
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

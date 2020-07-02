@@ -20,9 +20,7 @@ This rule verifies that the driver does not attempt to free the same block of po
 
 The rule keeps track of the memory pointer that is first passed to **ExFreePool**. If the same pointer is passed again, the driver fails the rule. If the driver calls **RemoveHeadList** or **RemoveEntryList**, the rule passes.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

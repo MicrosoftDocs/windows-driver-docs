@@ -22,9 +22,7 @@ The KsProcessingMutex rule specifies that a KS miniport driver uses the processi
 -   A thread that has acquired the processing mutex should not subsequently attempt to acquire the filter control mutex.
 -   A thread should not release the processing mutex without acquiring it first.
 
-|              |     |
-|--------------|-----|
-| Driver model | KS  |
+**Driver model: KS**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

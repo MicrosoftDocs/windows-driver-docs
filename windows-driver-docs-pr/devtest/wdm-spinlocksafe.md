@@ -22,9 +22,7 @@ This rule also specifies that the driver calls [**KeAcquireSpinLock**](https://d
 
 Static Driver Verifier can report false violations of this rule if the driver includes nested SpinLocks, even if those spin locks are acquired and released correctly.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

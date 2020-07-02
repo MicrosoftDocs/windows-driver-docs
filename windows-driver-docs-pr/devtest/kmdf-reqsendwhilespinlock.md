@@ -20,9 +20,7 @@ The **ReqSendWhileSpinlock** rule specifies that no requests are sent while the 
 
 If the driver sends any requests while it holds a spinlock, it could cause a deadlock or clash with the lower driver that receives the requests, if the lower driver also attempts to acquire a lock or access shared resources.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

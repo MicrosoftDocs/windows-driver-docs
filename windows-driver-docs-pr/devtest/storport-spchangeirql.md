@@ -20,9 +20,7 @@ This rule verifies that the StorPort callback routines return at the same IRQL l
 
 Applies to any DDI that changes the IRQL level within Storport miniport entry points or callback routines.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

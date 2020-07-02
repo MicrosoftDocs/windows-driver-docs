@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule contains a list of StorPort port-only DDIs (excluding interlocked functions) that should not be called in StorPort miniports.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

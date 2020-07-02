@@ -20,9 +20,7 @@ The **IoBuildSynchronousFsdRequestNoFree** rule specifies that a driver that cal
 
 The **IoBuildSynchronousFsdRequestNoFree** rule reports that [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp) should not be called for this IRP.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

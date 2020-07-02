@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **DoubleCompletion (WDM)** rule specifies that the driver must not call the [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) routine twice for the same IRP.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **DriverCreate** rule specifies that a driver that uses Kernel Mode Driver Framework (KMDF) must call the [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) method to create a framework driver object from within its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

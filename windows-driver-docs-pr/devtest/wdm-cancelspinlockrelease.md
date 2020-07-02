@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **CancelSpinlockRelease** rule specifies that calls to [**IoAcquireCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548196(v=vs.85)) and [**IoReleaseCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) are used in strict alternation. That is, every call to **IoAcquireCancelSpinLock** must have a corresponding call to **IoReleaseCancelSpinLock**.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

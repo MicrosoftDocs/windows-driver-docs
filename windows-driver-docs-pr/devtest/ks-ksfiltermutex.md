@@ -21,9 +21,7 @@ The KsFilterMutex rule specifies that a KS miniport driver acquires and releases
 -   A KS miniport driver cannot obtain the filter mutex recursively.
 -   A thread should not release the filter mutex without acquiring it first.
 
-|              |     |
-|--------------|-----|
-| Driver model | KS  |
+**Driver model: KS**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
