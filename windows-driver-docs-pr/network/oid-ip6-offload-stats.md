@@ -18,8 +18,6 @@ In response to a set of OID_IP6_OFFLOAD_STATS, an offload target should reset al
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

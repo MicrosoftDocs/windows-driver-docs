@@ -20,8 +20,6 @@ This OID is mandatory for NDIS 6.0 and later miniport drivers.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

@@ -18,8 +18,6 @@ Note that a transport protocol could request a miniport to delete an SA and/or p
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

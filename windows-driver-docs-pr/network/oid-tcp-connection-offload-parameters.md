@@ -28,8 +28,6 @@ The **InformationBuffer** member of the [NDIS_OID_REQUEST](https://docs.microsof
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

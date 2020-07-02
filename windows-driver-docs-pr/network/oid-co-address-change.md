@@ -16,8 +16,6 @@ The call manager also sends OID_CO_ADDRESS_CHANGE to a client immediately after 
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

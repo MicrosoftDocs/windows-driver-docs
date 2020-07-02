@@ -14,8 +14,6 @@ The OID_GEN_CO_BYTES_XMIT_OUTSTANDING OID specifies the number of bytes in PDUs 
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

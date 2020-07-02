@@ -19,10 +19,8 @@ This notification uses the [**NDIS_WWAN_MODEM_LOGGING_CONFIG**](https://docs.mic
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1903 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1903
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

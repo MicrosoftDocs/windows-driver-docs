@@ -19,10 +19,8 @@ This notification uses the [**NDIS_WWAN_UICC_FILE_STATUS**](https://docs.microso
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1903 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1903
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

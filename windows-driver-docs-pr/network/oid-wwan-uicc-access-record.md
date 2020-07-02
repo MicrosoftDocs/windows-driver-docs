@@ -21,10 +21,8 @@ For more information about usage of this OID, see [MB UICC application and file 
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1903 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1903
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
