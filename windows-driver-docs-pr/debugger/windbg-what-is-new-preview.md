@@ -73,13 +73,14 @@ To use ADO as a symbol server, set your symbol path to:
 
 `srv*https://<account>.artifacts.visualstudio.com/_apis/symbol/symsrv`
 
-**SourceLink**
+**Portable PDB support**
 
-WinDbgNext now supports reading Source Link information from symbols while debugging. The debugger will automatically download and display the appropriate source for Source Link-enabled binaries.
+Portable PDB support has been added. The Portable PDB (Program Database) format describes an encoding of debugging information produced by compilers of Common Language Infrastructure (CLI) languages and consumed by debuggers and other tools. For more information, see [Portable PDB v1.0: Format Specification](https://github.com/dotnet/corefx/blob/master/src/System.Reflection.Metadata/specs/PortablePdb-Metadata.md).
+
 
 **Other changes and bug fixes**
 
-- WinDbg now supports AMD64 and Linux kernel dump debugging
+- WinDbg now supports AMD64 and Linux kernel dump debugging.
 - Time travel recording enhancements and other fixes.
 
 ## 1.0.1912.11001
