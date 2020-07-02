@@ -32,7 +32,8 @@ On Kernel DMA Protection enabled systems, DMAGuard Policy may block devices, wit
     * Under driver verifier (for testing purposes), the value of the INF directive for opting in external devices is promoted to 1.
 4. Use the latest Windows 10 build with VT-d/AMD-Vi enabled to test driver functionality on Intel x64 and AMD64 systems.
 
-_Note: DMA Remapping is not supported for graphics device drivers._
+> [!NOTE]
+> DMA Remapping is not supported for graphics device drivers.
 
 ## Validating that DMA Remapping is enabled for a specific device driver instance
 
@@ -46,3 +47,5 @@ To check if a specific driver has opted into DMA Remapping, look in Device Manag
 
 >[!NOTE]
 > For Windows 10, versions 1803 and 1809, the property field in Device Manager uses a GUID {83da6326-97a6-4088-9453-a1923f573b29}[18]
+>
+> The default policy value is 0 for Windows 10 versions 1803 and 1809, and 2 for Windows 10 version 1903 and later.
