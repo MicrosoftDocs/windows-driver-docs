@@ -34,8 +34,6 @@ The [OFFLOAD_ALGO_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

@@ -54,8 +54,6 @@ If the client sets the CO_TAPI_USE_DEFAULT_CALLPARAMS bit in **ulFlags**, the cl
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

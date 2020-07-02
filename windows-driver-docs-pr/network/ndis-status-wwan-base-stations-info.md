@@ -16,10 +16,8 @@ This notification uses the [NDIS_WWAN_BASE_STATIONS_INFO](https://docs.microsoft
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ndis.h |
+**Version**: Windows 10, version 1709
+**Header**: Ndis.h
 
 ## See also
 

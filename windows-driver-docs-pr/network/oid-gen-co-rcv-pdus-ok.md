@@ -14,8 +14,6 @@ The OID_GEN_CO_RCV_PDUS_OK OID specifies the number of PDUs the NIC received wit
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 
