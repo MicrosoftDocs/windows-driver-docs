@@ -36,6 +36,7 @@ You can right click the bookmark to travel to that position, rename or delete th
 
 A new windows shows modules and their related information, it is available via the View ribbon.
 It displays:
+
 - The name of the module including the path location
 - The size in bytes of the loaded module
 - The base address that the module is loaded at
@@ -54,13 +55,13 @@ Thread names that are set from SetThreadDescription are now available when doing
    7  Id: 53a0.9114 Suspend: 1 Teb: 000000b1`db1ef000 Unfrozen
    8  Id: 53a0.2cc4 Suspend: 1 Teb: 000000b1`db1f1000 Unfrozen
    9  Id: 53a0.5c40 Suspend: 1 Teb: 000000b1`db1f3000 Unfrozen
- 
+
 0:000> dx @$curthread
 @$curthread                 : ConsoleTestApp!ILT+25(mainCRTStartup) (00007ff7`fac7101e)  [Switch To]
     Id               : 0x5ffc
     Name             : Hello world!
-    Stack           
-    Registers       
+    Stack
+    Registers
     Environment
 ```
 
@@ -68,13 +69,18 @@ Thread names that are set from SetThreadDescription are now available when doing
 
 WinDbgNext now supports downloading symbols directly from Azure DevOps without explicitly using a PAT. If a recent version of Git is installed, the debugger will use the Git credential manager to authenticate to Azure DevOps when downloading symbols and source files. Automatic authentication is also supported to Github when downloading source files.
 
+To use ADO as a symbol server, set your symbol path to:
+
+`srv*https://<account>.artifacts.visualstudio.com/_apis/symbol/symsrv`
+
 **SourceLink**
 
 WinDbgNext now supports reading Source Link information from symbols while debugging. The debugger will automatically download and display the appropriate source for Source Link-enabled binaries.
 
 **Other changes and bug fixes**
-* WinDbg now supports AMD64 and Linux kernel dump debugging
-* Time travel recording enhancements and other fixes.
+
+- WinDbg now supports AMD64 and Linux kernel dump debugging
+- Time travel recording enhancements and other fixes.
 
 ## 1.0.1912.11001
 
