@@ -20,9 +20,7 @@ The **InternalIoctlReqs** rule specifies that internal IOCTL requests are not pa
 
 All requests presented to the driver in the EVT\_WDF\_IO\_QUEUE\_IO\_INTERNAL\_DEVICE\_CONTROL callback function are guaranteed to be internal IOCTL requests. Therefore, these IOCTLs cannot be sent by using DDIs that are specific to sending read, write, or IOCTL, requests, such as **WdfIoTargetSendReadSynchronously**, **WdfIoTargetSendWriteSynchronously**, **WdfIoTargetSendIoctlSynchronously**, **WdfUsbTargetPipeWriteSynchronously**.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

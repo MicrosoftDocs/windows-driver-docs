@@ -39,9 +39,7 @@ This rule examines the following NDIS functions:
 **NdisCmRegisterAddressFamilyEx**
 **NdisCmRegisterSapComplete**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

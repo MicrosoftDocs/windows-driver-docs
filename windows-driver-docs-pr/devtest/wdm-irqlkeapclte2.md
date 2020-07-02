@@ -34,9 +34,7 @@ The **IrqlKeApcLte2** rule specifies that the driver calls the following kernel 
 
 -   [**KeRegisterNmiCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisternmicallback)
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

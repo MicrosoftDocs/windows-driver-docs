@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IrqlZwPassive** rule specifies that the driver calls [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) only when it is executing at IRQL = PASSIVE\_LEVEL.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                    |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|

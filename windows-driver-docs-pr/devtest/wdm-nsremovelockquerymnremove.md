@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **NsRemoveLockQueryMnRemove** rule verifies a driver does not return STATUS\_NOT\_SUPPORTED when processing IRP\_MJ\_PNP with MinorFunction IRP\_MN\_QUERY\_REMOVE. This rule only applies to FDO and FIDO drivers.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

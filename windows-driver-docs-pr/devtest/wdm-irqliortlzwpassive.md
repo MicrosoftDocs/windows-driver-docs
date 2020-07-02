@@ -19,9 +19,7 @@ The **IrqlIoRtlZwPassive** rule specifies that the driver calls the DDIs listed 
 
 This rule augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. For more information, see [Irql rule set (WDM)](https://docs.microsoft.com/windows-hardware/drivers/devtest/irql-rule-set--wdm-).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                    |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|

@@ -20,9 +20,7 @@ The **MarkPowerDown** rule specifies that an IRP\_MJ\_POWER with IRP\_MN\_SET\_P
 
 This rule only applies to FDO and FIDO drivers.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

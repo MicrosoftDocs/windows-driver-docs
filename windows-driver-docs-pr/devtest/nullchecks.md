@@ -95,9 +95,7 @@ void Good2(int *x)
 }
 ```
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

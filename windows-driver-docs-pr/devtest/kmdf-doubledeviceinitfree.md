@@ -20,9 +20,7 @@ The **DoubleDeviceInitFree** rule specifies that drivers should not free device 
 
 The [**WdfDeviceInitFree**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitfree) method should not be called twice for the same device initialization structure.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

@@ -22,9 +22,7 @@ Nested calls are permitted if they are acquiring and releasing locks for differe
 
 This rule also specifies that the driver has used [**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock) to release all spin locks before the dispatch routine or cancel routine ends.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

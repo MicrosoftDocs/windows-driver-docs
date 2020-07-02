@@ -34,9 +34,7 @@ The affected synchronization functions are the following:
 
 This rule does not recognize other methods of disabling normal APC delivery. For more information, see [**Disabling APCs**](https://docs.microsoft.com/windows-hardware/drivers/kernel/disabling-apcs).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

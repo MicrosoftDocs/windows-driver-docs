@@ -20,9 +20,7 @@ The **SyncReqSend2** rule specifies that synchronous request sends have a nonzer
 
 If the driver calls [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) without setting a valid time-out in the request options, the thread can be stalled if hardware does not respond promptly.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

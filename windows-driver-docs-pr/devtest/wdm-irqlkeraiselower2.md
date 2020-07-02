@@ -20,9 +20,7 @@ The **IrqlKeRaiseLower2** rule specifies that drivers use [**KeLowerIrql**](http
 
 This rule permits nested calls to **KeRaiseIrql**, **KeRaiseIrqlToDpcLevel** and **KeLowerIrql**.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

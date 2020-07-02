@@ -20,9 +20,7 @@ The **QueuedSpinLockRelease** rule specifies that calls to [**KeAcquireInStackQu
 
 Moreover, at the end of a dispatch or cancel routine, the driver should not hold the queued spinlock.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

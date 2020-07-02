@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the driver's calls to certain synchronization functions are made only while normal kernel APC delivery is disabled.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

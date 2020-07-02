@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the miniport must not attempt to call [**StorPortAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatepool) on an allocated buffer without deallocating it first.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

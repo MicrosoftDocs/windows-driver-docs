@@ -20,9 +20,7 @@ The **NdisOidDoubleComplete** rule specifies that an NDIS miniport driver must n
 
 The OID is tracked ( TRACKED\_OBJECT). To help debug this error with the kernel debugger, use **!ndiskd.oid** debugger extension.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 |                                   |                                                                                                                                        |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

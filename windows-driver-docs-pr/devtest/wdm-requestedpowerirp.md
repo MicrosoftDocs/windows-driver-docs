@@ -20,9 +20,7 @@ The **RequestedPowerIrp** rule specifies that driver calls [**PoRequestPowerIrp*
 
 Because the pointer returned by [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) is not reliable, drivers should not retrieve or use this value.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

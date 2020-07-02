@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **UsbDeviceCreateFail** rule specifies that the driver returns from the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) event callback function with an error status if creation of a WDFUSBDEVICE object fails.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

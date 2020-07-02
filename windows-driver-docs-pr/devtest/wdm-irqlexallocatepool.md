@@ -20,9 +20,7 @@ The **IrqlExAllocatePool** rule specifies that the driver calls [**ExAllocatePoo
 
 A caller executing at DISPATCH\_LEVEL must specify a NonPaged*Xxx* value for *PoolType*. A caller executing at IRQL &lt;= APC\_LEVEL can specify any [**POOL\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) value.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 |                                   |                                                                                                                                                                                                                                        |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

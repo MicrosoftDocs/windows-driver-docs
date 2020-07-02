@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that waits or data allocation are not performed inside **StartIo**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

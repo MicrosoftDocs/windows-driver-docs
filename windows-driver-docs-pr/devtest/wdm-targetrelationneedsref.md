@@ -30,9 +30,7 @@ This rule does not specify what qualifies as a valid value for `Irp->IoStatus.In
 
 This rule only applies to bus drivers.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

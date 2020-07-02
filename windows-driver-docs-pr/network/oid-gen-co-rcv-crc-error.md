@@ -14,8 +14,6 @@ The OID_GEN_CO_RCV_CRC_ERROR OID specifies the number of PDUs received with cycl
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

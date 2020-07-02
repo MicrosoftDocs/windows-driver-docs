@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **KsDeviceMutex** rule specifies that a kernel streaming miniport driver uses [**KsAcquireDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksacquiredevice) and [**KsReleaseDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksreleasedevice) in the correct sequence. That is, every call to **KsAcquireDevice** must have a corresponding call to **KsReleaseDevice**.
 
-|              |     |
-|--------------|-----|
-| Driver model | KS  |
+**Driver model: KS**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

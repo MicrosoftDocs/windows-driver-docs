@@ -14,8 +14,6 @@ The OID_CO_SIGNALING_ENABLED OID is sent by a call manager to indicate that it i
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

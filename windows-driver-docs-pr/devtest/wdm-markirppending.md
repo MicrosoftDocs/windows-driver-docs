@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **MarkIrpPending** rule specifies that whenever a driver dispatch routine calls [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending), the driver returns STATUS\_PENDING when the dispatch routine ends. See [**MarkIrpPending2**](wdm-markirppending2.md) for a complimentary specification.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

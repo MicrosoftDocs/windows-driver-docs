@@ -36,9 +36,7 @@ Drivers should call **IoMarkIrpPending** for a queued IRP only while holding a s
 
 For more information, see [**Synchronizing IRP Cancellation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/synchronizing-irp-cancellation).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

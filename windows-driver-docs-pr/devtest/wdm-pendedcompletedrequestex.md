@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **PendedCompletedRequestEx** rule specifies that the driver should not call [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) for a pending IRP.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

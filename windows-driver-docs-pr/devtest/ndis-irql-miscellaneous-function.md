@@ -71,9 +71,7 @@ This rule verifies the following functions:
 **NdisWriteErrorLogEntry**
 **NdisWriteEventLogEntry**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

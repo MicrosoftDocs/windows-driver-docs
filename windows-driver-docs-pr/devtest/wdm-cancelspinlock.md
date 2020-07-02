@@ -20,9 +20,7 @@ The CancelSpinLock rule specifies that the driver calls [**IoAcquireCancelSpinLo
 
 This rule also specifies that the driver must not hold any spin locks when the dispatch routine or cancel routine ends. Nested calls are permitted.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

@@ -35,9 +35,7 @@ The NDIS functions for filter drivers include the following:
 **NdisFDevicePnPEventNotify**
 **NdisEnumerateFilterModules**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

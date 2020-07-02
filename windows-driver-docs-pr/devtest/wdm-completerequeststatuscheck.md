@@ -22,9 +22,7 @@ The driver's dispatch routine should not complete the IRP if the IRP status is S
 
 The driver's dispatch routine should not complete the IRP with STATUS\_SUCCESS if the lower driver fails the IRP.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

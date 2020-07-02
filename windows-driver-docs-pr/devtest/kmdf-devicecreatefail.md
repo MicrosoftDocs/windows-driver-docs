@@ -20,9 +20,7 @@ The **DeviceCreateFail** rule specifies that EVT\_WDF\_DRIVER\_DEVICE\_ADD retur
 
 For the driver to service a device, the device object must be created successfully.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

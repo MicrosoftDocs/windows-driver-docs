@@ -22,10 +22,8 @@ For more info about passthrough actions and passthrough status, see [MB low leve
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1709
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

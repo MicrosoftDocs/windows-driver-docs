@@ -22,10 +22,8 @@ For more information about using this OID, see [MBIM_CID_MS_LTE_ATTACH_STATUS](m
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1703 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1703
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

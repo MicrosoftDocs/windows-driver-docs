@@ -20,9 +20,7 @@ The PowerUpFail rule specifies a FDO or FIDO driver should not fail a IRP\_MN\_S
 
 This rule only applies to FDO and FIDO drivers.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

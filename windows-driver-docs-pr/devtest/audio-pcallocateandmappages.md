@@ -22,9 +22,7 @@ The PcAllocateAndMapPages rule specifies that a PortCls miniport driver calls th
 -   IPortWaveRTStream::AllocateContiguousPagesForMdl
 -   IPortWaveRTStream::MapAllocatedPages
 
-|              |       |
-|--------------|-------|
-| Driver model | Audio |
+**Driver model: Audio**
 
 |                                   |                                                                                                                                       |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|

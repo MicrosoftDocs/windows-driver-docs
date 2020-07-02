@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the handle to the registry key opened via **ZwOpenKey** is subsequently used correctly by other ZwXxx routines. The routines **ZwEnumerateKey**, **ZwEnumerateValueKey**, **ZwFlushKey**, **ZwQueryKey**, **ZwQueryValueKey**, **ZwSetValueKey**, **ZwClose**, and **ZwDeleteKey** must not be called on a handle that isn't open. The handle must also be closed before returning.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IoReuseIrp2** rule specifies that a driver should use [**IoReuseIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreuseirp) only on IRPs that it previously allocated within the driver.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

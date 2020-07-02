@@ -2,7 +2,7 @@
 title: KSPROPSETID\_Pin
 description: KSPROPSETID\_Pin
 ms.assetid: a74a9cb2-2809-4e03-95da-71eeb5f079e9
-ms.date: 11/28/2017
+ms.date: 06/26/2020
 ms.localizationpriority: medium
 ---
 
@@ -39,6 +39,8 @@ The KSPROPSETID\_Pin property set includes:
 [**KSPROPERTY\_PIN\_INTERFACES**](ksproperty-pin-interfaces.md)
 
 [**KSPROPERTY\_PIN\_MEDIUMS**](ksproperty-pin-mediums.md)
+
+[**KSPROPERTY\_PIN\_MODEDATAFORMATS**](ksproperty-pin-modedataformats.md)
 
 [**KSPROPERTY\_PIN\_NAME**](ksproperty-pin-name.md)
 

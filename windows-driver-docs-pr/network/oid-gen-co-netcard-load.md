@@ -24,7 +24,5 @@ In this case, 1 \< *C* \< 128. Larger values of *C* produce smoother filtering.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

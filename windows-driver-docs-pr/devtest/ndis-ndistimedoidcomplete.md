@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **NdisTimedOidComplete** rule specifies that the NDIS miniport driver completes an OID request within 12 seconds.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 |                                   |                                                                                                                                        |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

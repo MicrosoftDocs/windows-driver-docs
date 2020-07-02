@@ -20,9 +20,7 @@ The **NdisAllocateMemoryWithTagPriority** rule specifies that a driver must not 
 
 Every memory allocation should use a unique pool tag to ensure that kernel debuggers and Driver Verifier can identify a distinct allocated block of memory.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

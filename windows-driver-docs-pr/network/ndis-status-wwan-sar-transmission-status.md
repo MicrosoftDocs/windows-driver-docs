@@ -18,10 +18,8 @@ This notification uses the [**NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO**](https://
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1703 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1703
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

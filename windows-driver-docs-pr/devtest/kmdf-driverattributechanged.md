@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **DriverAttributeChanged** rule specifies that a driver must not change the execution level or synchronization scope of a KMDF driver.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

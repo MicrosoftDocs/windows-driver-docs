@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that **StorPortEnablePassiveInitialization** is not called from any StorPort miniport driver routine other than **HwInitialize**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

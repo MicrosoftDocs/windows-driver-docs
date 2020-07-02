@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **WlanAssociation** rule verifies the miniport driver correctly follows the Native 802.11 wireless LAN (WLAN) association sequence.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 |                                   |                                                                                                                                        |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|

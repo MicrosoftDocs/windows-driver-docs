@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **CtlDeviceFinishInitDeviceAdd** rule specifies that if a driver creates control device object in an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function, it must call [**WdfControlFinishInitializing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontrolfinishinitializing) after the device has been created and before it exits from the **EvtDriverDeviceAdd** callback function. This rule does not apply for non-PnP drivers.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

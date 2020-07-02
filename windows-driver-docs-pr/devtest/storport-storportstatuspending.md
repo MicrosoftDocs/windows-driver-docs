@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule checks that an SRB is not completed with status **SRB\_STATUS\_PENDING**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

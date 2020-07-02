@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 Waits or data allocation must never be performed in the miniport's **StartIo** routine. The driver fails the rule if it calls **StorPortStallExecution** or another function that involves time-consuming operations. Since **StartIo** is synchronized, these calls should mostly be done in **BuildIo**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

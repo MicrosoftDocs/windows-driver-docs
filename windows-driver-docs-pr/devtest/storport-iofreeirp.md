@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that an IRP that was allocated by **IoAllocateIrp** either will be freed by **IoFreeIrp** or its completion routine will get set by **IoSetCompletionRoutine**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

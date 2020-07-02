@@ -20,9 +20,7 @@ The Init\_RegisterInterrupt rule specifies that the registration of interrupts, 
 
 If **NdisMRegisterInterruptEx** is called at least one time during **MiniportInitializeEx**, the **NdisMDeregisterInterruptEx** function must be called at least one time in **MiniportHaltEx**.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------
