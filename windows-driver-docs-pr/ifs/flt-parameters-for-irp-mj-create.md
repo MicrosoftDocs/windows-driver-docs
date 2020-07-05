@@ -75,8 +75,6 @@ IRP_MJ_CREATE is an IRP-based operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
 | Header | *fltkernel.h* (include Fltkernel.h)
 
 ## See also

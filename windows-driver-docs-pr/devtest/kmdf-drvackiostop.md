@@ -22,9 +22,8 @@ In some circumstances it might be appropriate to suppress this warning. If the d
 
 **Driver model: KMDF**
 
-|                                   |                                                                                                          |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure) |
+**Bug check(s) found with this rule**: [**Bug Check 0x9F: DRIVER\_POWER\_STATE\_FAILURE**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x9f--driver-power-state-failure)
+
 
 How to test
 -----------

@@ -52,10 +52,10 @@ For more information about oplocks and oplock keys, see [Oplock Semantics Overvi
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Version | This structure is available starting with Windows 7, and is obsolete in Windows 8 and later versions. |
-| Header | *Ntifs.h* (include Ntifs.h or Ntddk.h) |
+**Version**: This structure is available starting with Windows 7, and is obsolete in Windows 8 and later versions.
+
+**Header**: *Ntifs.h* (include Ntifs.h or Ntddk.h)
+
 
 ## See also
 

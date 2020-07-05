@@ -347,11 +347,12 @@ Any change to a boot option requires a restart to take effect. For information a
 
 ## Requirements
 
-|||
-|----|----|
-|Minimum supported client|Windows Vista|
-|Minimum supported server|Windows Server 2008|
-|||
+**Minimum supported client**: Windows Vista
+
+**Minimum supported server**: Windows Server 2008
+
+****: 
+
 
 ## See also
 

@@ -28,8 +28,9 @@ The miniport driver should send a separate notification for every device service
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1809 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1809
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

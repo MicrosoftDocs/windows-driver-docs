@@ -10,12 +10,14 @@ ms.localizationpriority: medium
 
 The WDK includes three tools that you can use to test and debug a WPD driver. These tools are described in the following table.
 
-|                          |                                                                                                                                                                                                                  |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tool                     | Description                                                                                                                                                                                                      |
-| *WpdInfo.exe*            | With this tool you can open or close a device, create or delete objects on a device, view supported commands, issue commands, view events, retrieve readable property values, and set writeable property values. |
-| *WpdDeviceInspector.exe* | Generates an HTML report that describes the device capabilities and content.                                                                                                                                     |
-| *WpdMon.exe*             | Traces messages and commands that are passed between a WPD driver and the operating system or a WPD application.                                                                                                 |
+**Tool**: Description
+
+***WpdInfo.exe***: With this tool you can open or close a device, create or delete objects on a device, view supported commands, issue commands, view events, retrieve readable property values, and set writeable property values.
+
+***WpdDeviceInspector.exe***: Generates an HTML report that describes the device capabilities and content.
+
+***WpdMon.exe***: Traces messages and commands that are passed between a WPD driver and the operating system or a WPD application.
+
 
  
 

@@ -29,8 +29,9 @@ For more information about SAE authentication, see [WPA3 SAE authentication](wpa
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1903
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

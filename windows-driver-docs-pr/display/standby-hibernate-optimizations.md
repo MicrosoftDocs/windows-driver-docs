@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 Windows 8 offers optimizations to the graphics stack that your driver can optionally take advantage of to improve system performance on sleep and resume.
 
-|                                                                                   |                                             |
-|-----------------------------------------------------------------------------------|---------------------------------------------|
-| Minimum Windows Display Driver Model (WDDM) version                               | 1.2                                         |
-| Minimum Windows version                                                           | 8                                           |
-| Driver implementation—Full graphics and Render only                               | Optional                                    |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦StandbyHibernateFlags** |
+**Minimum Windows Display Driver Model (WDDM) version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Render only**: Optional
+
+**[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics¦StandbyHibernateFlags**
+
 
  
 

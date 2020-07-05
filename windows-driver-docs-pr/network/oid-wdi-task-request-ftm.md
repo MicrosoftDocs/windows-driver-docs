@@ -35,8 +35,9 @@ For each target, it is indicated if a Location Configuration Information (LCI) r
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1903
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

@@ -39,10 +39,10 @@ Overwrites an existing dump file with the same name. If this option is not used 
 
 You can add the following *FullOptions* to change the contents of the dump file; the option is case-sensitive.
 
-|||
-|--- |--- |
-|FullOption|Effect|
-|y|Adds AVX register information to the dump file.|
+**FullOption**: Effect
+
+**y**: Adds AVX register information to the dump file.
+
  
 
 <span id="_m_MiniOptions_"></span><span id="_m_minioptions_"></span><span id="_M_MINIOPTIONS_"></span>**/m\[**<em>MiniOptions</em>**\]**  

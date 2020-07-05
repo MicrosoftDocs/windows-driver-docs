@@ -130,12 +130,14 @@ You can sync or update your device from a UWP device app by using device backgro
 
 ### <span id="Learn_more"></span><span id="learn_more"></span><span id="LEARN_MORE"></span>Learn more
 
-|                                                                                                         |                                                                                                                                                                |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UWP device apps for printers](uwp-device-apps-for-printers.md)                    | Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance. |
-| [UWP device apps for cameras](uwp-device-apps-for-webcams.md)                      | Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.                                                              |
-| [Integrating devices](https://go.microsoft.com/fwlink/p/?LinkId=533279)                                  | Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.                                                                                  |
-| [UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md) | Lean how OEMs can write device apps for devices internal to the PC.                                                                                            |
+**[UWP device apps for printers](uwp-device-apps-for-printers.md)**: Display printer status and extend the print settings experience. Starting in Windows 8.1, your app can also manage print jobs and perform printer maintenance.
+
+**[UWP device apps for cameras](uwp-device-apps-for-webcams.md)**: Extend the camera options experience. Your app can also provide custom effects with a Driver MFT.
+
+**[Integrating devices](https://go.microsoft.com/fwlink/p/?LinkId=533279)**: Learn about Windows Runtime APIs for USB, HID, Bluetooth, Scanning, and more.
+
+**[UWP device apps for internal devices](uwp-device-apps-for-specialized-devices.md)**: Lean how OEMs can write device apps for devices internal to the PC.
+
 
  
 

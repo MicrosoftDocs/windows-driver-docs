@@ -26,12 +26,14 @@ If GO on 5 GHz band support is set, the adapter should start the AP on the Adver
 
 If **MustUseSpecifiedChannel** in [**WDI\_TLV\_START\_AP\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-start-ap-parameters) is specified, the AP may return one of the following errors if it is unable to start the AP on the specified band/channel(s).
 
-|                                                                 |                                                                                                         |
-|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **NDIS\_STATUS\_DOT11\_AP\_CHANNEL\_CURRENTLY\_NOT\_AVAILABLE** | Unable to start the AP on the specified channel(s) right now . Retry on the specified channel(s) later. |
-| **NDIS\_STATUS\_DOT11\_AP\_BAND\_CURRENTLY\_NOT\_AVAILABLE**    | Unable to start the AP on the specified band(s) right now. Retry on the specified band(s) later.        |
-| **NDIS\_STATUS\_DOT11\_AP\_CHANNEL\_NOT\_ALLOWED**              | Unable to start the AP on the specified channel(s) due to regulatory reasons.                           |
-| **NDIS\_STATUS\_DOT11\_AP\_BAND\_NOT\_ALLOWED**                 | Unable to start the AP on the specified band(s) due to regulatory reasons.                              |
+****NDIS\_STATUS\_DOT11\_AP\_CHANNEL\_CURRENTLY\_NOT\_AVAILABLE****: Unable to start the AP on the specified channel(s) right now . Retry on the specified channel(s) later.
+
+****NDIS\_STATUS\_DOT11\_AP\_BAND\_CURRENTLY\_NOT\_AVAILABLE****: Unable to start the AP on the specified band(s) right now. Retry on the specified band(s) later.
+
+****NDIS\_STATUS\_DOT11\_AP\_CHANNEL\_NOT\_ALLOWED****: Unable to start the AP on the specified channel(s) due to regulatory reasons.
+
+****NDIS\_STATUS\_DOT11\_AP\_BAND\_NOT\_ALLOWED****: Unable to start the AP on the specified band(s) due to regulatory reasons.
+
 
  
 

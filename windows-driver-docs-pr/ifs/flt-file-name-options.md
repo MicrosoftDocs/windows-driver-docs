@@ -56,9 +56,8 @@ Bits 24 through 31 are used by name provider minifilters to specify the file nam
 
 ## Requirements
 
-|   |   |
-| - | - |
-| **Header** | fltkernel.h (include fltkernel.h) |
+****Header****: fltkernel.h (include fltkernel.h)
+
 
 ## Related topics
 

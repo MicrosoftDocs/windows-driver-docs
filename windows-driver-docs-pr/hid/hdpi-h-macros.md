@@ -52,9 +52,8 @@ The **HidP\_UnsetButtons** macro is a mnemonic alias for the [**HidP\_UnsetUsage
 
 ### Requirements
 
-| | |
-| --- | --- |
-| Header | [hidpi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/) (include Hidpi.h) |
+**Header**: [hidpi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/) (include Hidpi.h)
+
 
 ## See also
 

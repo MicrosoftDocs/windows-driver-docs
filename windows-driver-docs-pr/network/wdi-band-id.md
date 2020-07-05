@@ -32,9 +32,10 @@ Possible band ID values are as follows:
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Wditypes.hpp
+
 

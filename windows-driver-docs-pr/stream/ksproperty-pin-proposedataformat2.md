@@ -72,13 +72,16 @@ KSPROPERTY_TYPE_SET is not supported for this property.
 
 The following table provides a description of the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2 input structure *PinProperty* elements.
 
-|                            |                                                                                                                                                                                    |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| PinProperty.Property.Set   | The PinProperty.Property.Set should be set to the [KSPROPSETID\_Pin](kspropsetid-pin.md) for the requested mode.                                                                  |
-| PinProperty.Property.Id    | The PinProperty.Property.Id always be set to **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2**.                                                                                              |
-| PinProperty.Property.Flags | The PinProperty.Property.Flags can be set to [**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) or to KSPROPERTY\_TYPE\_BASICSUPPORT to find out basic information about the property. |
-| PinProperty.PinId          | The PinProperty.PinId identifies the target pin for the **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** request.                                                                           |
-| PinProperty.Reserved       | The PinProperty.Reserved is reserved for future use and should always be set to zero (0).                                                                                          |
+**PinProperty.Property.Set**: The PinProperty.Property.Set should be set to the [KSPROPSETID\_Pin](kspropsetid-pin.md) for the requested mode.
+
+**PinProperty.Property.Id**: The PinProperty.Property.Id always be set to **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2**.
+
+**PinProperty.Property.Flags**: The PinProperty.Property.Flags can be set to [**KSPROPERTY\_TYPE\_GET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) or to KSPROPERTY\_TYPE\_BASICSUPPORT to find out basic information about the property.
+
+**PinProperty.PinId**: The PinProperty.PinId identifies the target pin for the **KSPROPERTY\_PIN\_PROPOSEDATAFORMAT2** request.
+
+**PinProperty.Reserved**: The PinProperty.Reserved is reserved for future use and should always be set to zero (0).
+
 
  
 

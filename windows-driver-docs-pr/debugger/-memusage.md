@@ -44,9 +44,8 @@ Displays only general summary information about memory use.
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-|       |                  |
-|-------|------------------|
-| Modes | kernel mode only |
+**Modes**: kernel mode only
+
 
  
 

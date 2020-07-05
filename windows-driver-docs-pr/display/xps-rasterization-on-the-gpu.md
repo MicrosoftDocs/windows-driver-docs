@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 XML Paper Specification (XPS) rasterization on the GPU does not require any independent hardware vendor (IHV) code or behavioral changes in drivers. However, XPS rasterization is a usage pattern that can potentially expose bugs or improper assumptions in driver code. Windows Display Driver Model (WDDM) 1.2 and later drivers must be able to pass XPS rasterization display conformance tests in order to ensure high-quality Windows printing.
 
-|                                                                                   |                                                   |
-|-----------------------------------------------------------------------------------|---------------------------------------------------|
-| Minimum WDDM version                                                              | 1.2                                               |
-| Minimum Windows version                                                           | 8                                                 |
-| Driver implementation—Full graphics and Display only                              | Mandatory                                         |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦XPSRasterizationConformance** |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Display only**: Mandatory
+
+**[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics¦XPSRasterizationConformance**
+
 
  
 
