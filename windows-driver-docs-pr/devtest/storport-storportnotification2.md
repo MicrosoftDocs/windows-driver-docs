@@ -31,9 +31,7 @@ The allowed notification types are:
 **WMIEvent**
 **WMIReregister**
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

@@ -20,9 +20,7 @@ The **DoubleCompletion** rule specifies that drivers must not complete an I/O re
 
 The difference between this rule and the [DoubleCompletionLocal](kmdf-doublecompletionlocal.md) rule is that the DoubleCompletionLocal rule is only performed within the default I/O queue callback functions.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

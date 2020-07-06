@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IoBuildDeviceIoControlSetEvent** rule specifies that a driver that calls [**IoBuildDeviceIoControlRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) must not call [**KeSetEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetevent) if the driver supplies a pointer to a caller-allocated and initialized event object. The **KeSetEvent** does not need to be called by the driver for this IRP.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

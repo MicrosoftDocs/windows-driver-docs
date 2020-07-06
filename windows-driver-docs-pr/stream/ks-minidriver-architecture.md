@@ -1,20 +1,16 @@
 ---
 title: KS Minidriver Architecture
-description: KS Minidriver Architecture
+description: KS minidriver architecture
 ms.assetid: a9c17040-72a8-4290-831b-7fb46b00f532
 keywords:
 - kernel streaming WDK , architecture
 - KS WDK , architecture
 - filter graphs WDK kernel streaming
-ms.date: 04/20/2017
+ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
 
-# KS Minidriver Architecture
-
-
-
-
+# KS minidriver architecture
 
 Kernel streaming services support kernel-mode processing of streamed data. In this model, streaming data flows through a series of nodes that are grouped into blocks called filters. Each filter encapsulates some processing task to be performed upon the data. A [KS filter](ks-filters.md) is implemented as a kernel-mode [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object).
 
@@ -22,7 +18,7 @@ A KS filter appears through the proxy as a DirectShow filter in user mode. As su
 
 Data flows into and out of filters at connection points called [pins](ks-pins.md). A pin instance renders or captures a data stream, such as digital audio.
 
-A filter graph is a group of connected filters. A filter graph links multiple processing tasks to be performed on a stream. You can test various [filter graph configurations](filter-graph-examples.md) by using the GraphEdit tool in the Microsoft Windows Driver Kit (WDK). (For more information about GraphEdit, see the [Filter Graph Editor tool](https://go.microsoft.com/fwlink/p/?linkid=9230) website.)
+A filter graph is a group of connected filters. A filter graph links multiple processing tasks to be performed on a stream. You can test various [filter graph configurations](filter-graph-examples.md) by using the GraphEdit tool in the Microsoft Windows Driver Kit (WDK). For more information about, see the [Filter Graph Editor tool](https://docs.microsoft.com/windows/win32/directshow/simulating-graph-building-with-graphedit) website.
 
 Drivers that support [on-board clocks](ks-clocks.md) expose the clock as a file object. A minidriver can [query the clock time](https://docs.microsoft.com/windows-hardware/drivers/stream/kspropsetid-clock), or alternatively [**request to be notified**](https://docs.microsoft.com/windows-hardware/drivers/stream/kseventsetid-clock) when the clock reaches a certain time.
 
@@ -41,11 +37,3 @@ This section contains additional information about the following topics:
 [KS Interfaces](ks-interfaces.md)
 
 [Quality Management](quality-management.md)
-
- 
-
- 
-
-
-
-

@@ -21,6 +21,17 @@ The WDK is used to develop, test, and deploy Windows drivers.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
+## Runtime requirements
+
+You can run the Windows 10, version 2004 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
+
+|Client OS|Server OS|
+|-|-|
+|Windows 10|Windows Server 2019, Windows Server 2016|
+|Windows 8.1|Windows Server 2012 R2|
+Windows 8|Windows Server 2012|
+Windows 7|Windows Server 2008 R2 SP1|
+
 ## WDK for Windows 10, version 2004
 
 ### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019
@@ -73,22 +84,10 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 * [Download the EWDK for Windows 10, version 2004](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2019)
 
-## Additional information
 
-### Release notes and runtime requirements
+## Driver samples for Windows 10
 
-You can use the WDK to develop drivers for these operating systems:
-
-|Client OS|Server OS|
-|-|-|
-|Windows 10|Windows Server 2019, Windows Server 2016|
-|Windows 8.1|Windows Server 2012 R2|
-Windows 8|Windows Server 2012|
-Windows 7|Windows Server 2008 R2 SP1|
-
-### Universal Windows driver samples
-
-To download universal Windows driver samples, do one of the following:
+To download the driver samples, do one of the following:
 
 * Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples), click **Clone or download**, and then click **Download ZIP**.
 * Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/), and then connect to the GitHub repositories.

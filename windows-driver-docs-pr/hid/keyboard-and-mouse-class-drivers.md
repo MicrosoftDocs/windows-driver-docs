@@ -180,15 +180,20 @@ The following presents an example. To swap the left CTRL key with the CAPS LOCK 
 
 The following table contains these entries broken into DWORD fields and the bytes swapped.
 
-|            |                                                    |
-|------------|----------------------------------------------------|
-| Value      | Interpretation                                     |
-| 0x00000000 | Header: Version. Set to all zeroes.                |
-| 0x00000000 | Header: Flags. Set to all zeroes.                  |
-| 0x00000003 | Three entries in the map (including null entry).   |
-| 0x001D003A | Left CTRL key --&gt; CAPS LOCK (0x1D --&gt; 0x3A). |
-| 0x003A001D | CAPS LOCK --&gt; Left CTRL key (0x3A --&gt; 0x1D). |
-| 0x00000000 | Null terminator.                                   |
+**Value**: Interpretation
+
+**0x00000000**: Header: Version. Set to all zeroes.
+
+**0x00000000**: Header: Flags. Set to all zeroes.
+
+**0x00000003**: Three entries in the map (including null entry).
+
+**0x001D003A**: Left CTRL key --&gt; CAPS LOCK (0x1D --&gt; 0x3A).
+
+**0x003A001D**: CAPS LOCK --&gt; Left CTRL key (0x3A --&gt; 0x1D).
+
+**0x00000000**: Null terminator.
+
 
 ### Example 2
 
@@ -200,15 +205,20 @@ It is also possible to add a key not generally available on a keyboard or to rem
 
 The following table contains these entries broken into DWORD fields and the bytes swapped.
 
-|            |                                                       |
-|------------|-------------------------------------------------------|
-| Value      | Interpretation                                        |
-| 0x00000000 | Header: Version. Set to all zeroes.                   |
-| 0x00000000 | Header: Flags. Set to all zeroes.                     |
-| 0x00000003 | Three entries in the map (including null entry).      |
-| 0xE01D0000 | Remove the right CTRL key (0xE01D --&gt; 0x00).       |
-| 0xE038E020 | Right ALT key --&gt; Mute key (0xE038 --&gt; 0xE020). |
-| 0x00000000 | Null terminator.                                      |
+**Value**: Interpretation
+
+**0x00000000**: Header: Version. Set to all zeroes.
+
+**0x00000000**: Header: Flags. Set to all zeroes.
+
+**0x00000003**: Three entries in the map (including null entry).
+
+**0xE01D0000**: Remove the right CTRL key (0xE01D --&gt; 0x00).
+
+**0xE038E020**: Right ALT key --&gt; Mute key (0xE038 --&gt; 0xE020).
+
+**0x00000000**: Null terminator.
+
 
 After the necessary data is generated, it can be inserted into the registry in several ways.
 

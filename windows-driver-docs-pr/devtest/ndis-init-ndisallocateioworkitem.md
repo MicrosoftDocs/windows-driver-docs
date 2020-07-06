@@ -21,9 +21,7 @@ The **Init\_NdisAllocateIoWorkItem** rule specifies that if [**NdisAllocateIoWor
 -   - be called at least once in MPHaltEx, if [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) succeeds.
 -   - be called in [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize), if *MiniportInitializeEx* fails.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

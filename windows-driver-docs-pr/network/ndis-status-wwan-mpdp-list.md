@@ -25,7 +25,7 @@ This notification uses the [**NDIS_WWAN_MPDP_LIST**](https://docs.microsoft.com/
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1809 |
-| Header | Ndis.h |
+**Version**: Windows 10, version 1809
+
+**Header**: Ndis.h
+

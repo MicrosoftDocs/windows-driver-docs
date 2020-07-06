@@ -118,10 +118,10 @@ The dump type is stored in the **DumpType** registry entry, which is a bitwise O
 
 For example, suppose you chose a dump type of **Micro**, and you see that the **DumpType** registry entry has a value of 0x88. The value 0x88 is a bitwise OR of the following two **MINIDUMP\_TYPE** enumeration values.
 
-|                           |            |
-|---------------------------|------------|
-| MiniDumpFilterModulePaths | 0x00000080 |
-| MiniDumpFilterMemory      | 0x00000008 |
+**MiniDumpFilterModulePaths**: 0x00000080
+
+**MiniDumpFilterMemory**: 0x00000008
+
 
  
 

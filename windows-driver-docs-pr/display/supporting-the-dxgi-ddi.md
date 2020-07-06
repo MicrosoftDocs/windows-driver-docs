@@ -20,12 +20,14 @@ A further DXGI user-mode display driver requirement exists for software rasteriz
 
 This section describes the Microsoft DirectX Graphics Infrastructure (DXGI) functions that the user-mode display driver DLL supplies to the Microsoft Direct3D version 10 runtime. The driver supplies pointers to DXGI functions through members of the [DXGI_DDI_BASE_FUNCTIONS](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions) structure in a call to the user-mode display driver's [CreateDevice(D3D10)](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice) function.
 
-|||
-|:--|:--|
-|BltDXGI|GetGammaCapsDXGI|
-|PresentDXGI|QueryResourceResidencyDXGI|
-|ResolveSharedResourceDXGI|RotateResourceIdentitiesDXGI|
-|SetDisplayModeDXGI|SetResourcePriorityDXGI|
+**BltDXGI**: GetGammaCapsDXGI
+
+**PresentDXGI**: QueryResourceResidencyDXGI
+
+**ResolveSharedResourceDXGI**: RotateResourceIdentitiesDXGI
+
+**SetDisplayModeDXGI**: SetResourcePriorityDXGI
+
 
 
 ## Direct3D Version 11.1 DXGI Functions
@@ -36,10 +38,10 @@ The user-mode display driver DLL exports the [OpenAdapter10_2](https://docs.micr
 
 The driver supplies pointers to Direct3D version 11.1 DXGI functions through members of the [DXGI1_2_DDI_BASE_FUNCTIONS](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi1_2_ddi_base_functions) structure in a call to the user-mode display driver's adapter-specific [CreateDevice(D3D10)](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice) function.
 
-|||
-|:--|:--|
-|Blt1DXGI|OfferResourcesDXGI|
-|ReclaimResourcesDXGI||
+**Blt1DXGI**: OfferResourcesDXGI
+
+**ReclaimResourcesDXGI**: 
+
 
 ## Direct3D Version 11.2 DXGI Functions
 
@@ -49,10 +51,10 @@ The user-mode display driver DLL exports the OpenAdapter10_2 function and suppli
 
 The driver supplies pointers to Direct3D version 11.2 DXGI functions through members of the [DXGI1_3_DDI_BASE_FUNCTIONS](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi1_3_ddi_base_functions) structure in a call to the user-mode display driver's adapter-specific [CreateDevice(D3D10)](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice) function.
 
-|||
-|:--|:--|
-|[PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_present_multiplane_overlaycb)|[PFNDDXGIDDI_PRESENTCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_presentcb)|
-|[PFNDDXGIDDI_SUBMITPRESENTBLTTOHWQUEUECB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_submitpresentblttohwqueuecb)|[PFNDDXGIDDI_SUBMITPRESENTTOHWQUEUECB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_submitpresenttohwqueuecb)|
+**[PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_present_multiplane_overlaycb)**: [PFNDDXGIDDI_PRESENTCB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_presentcb)
+
+**[PFNDDXGIDDI_SUBMITPRESENTBLTTOHWQUEUECB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_submitpresentblttohwqueuecb)**: [PFNDDXGIDDI_SUBMITPRESENTTOHWQUEUECB](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxgiddi/nc-dxgiddi-pfnddxgiddi_submitpresenttohwqueuecb)
+
 
 > [!NOTE]
 > Additional DXGI functions that are supported by the Direct3D 11.2 runtime are included in the section, [Multiplane overlay functions implemented by the user-mode driver](multiplane-overlay-support.md).

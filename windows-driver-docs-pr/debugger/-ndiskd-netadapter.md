@@ -3,7 +3,7 @@ title: ndiskd.netadapter
 description: The ndiskd.netadapter extension displays information about NDIS miniports, or network adapters, that are active on the system. 
 ms.assetid: 7D55F7CE-5DDB-4C80-8C27-F619F2FB7F15
 keywords: ["ndiskd.netadapter Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/23/2020
 topic_type:
 - apiref
 api_name:
@@ -14,7 +14,6 @@ ms.localizationpriority: medium
 ---
 
 # !ndiskd.netadapter
-
 
 The **!ndiskd.netadapter** extension displays information about NDIS miniports, or network adapters, that are active on the system. If you run this command with no parameters, !ndiskd will display a list of all network adapters.
 
@@ -28,8 +27,7 @@ The **!ndiskd.netadapter** extension displays information about NDIS miniports, 
         [-vfs] [-vports] [-iftrace] [-ip]
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Handle of an NDIS miniport.
@@ -133,12 +131,11 @@ Shows the in-flight recorder's trace.
 <span id="_______-ip______"></span><span id="_______-IP______"></span> *-ip*   
 Shows IP addresses on the network's interface.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 By running **!ndiskd.netadapter** with no parameters, you can get a list of all network adapters on the system along with their associated miniport drivers. In this example output, look for the Microsoft Kernel Debug Network Adapter, whose handle is ffffdf80140c71a0. For more information about what the Kernel Debug Network Adapter is, see [Kernel debugging over the network](https://docs.microsoft.com/archive/blogs/ndis/kernel-debugging-over-the-network) on the NDIS blog.
 
@@ -262,8 +259,7 @@ HANDLERS
 
 You can now click the "bp" link to the right of each handler to set a breakpoint on that handler to debug a particular problem. For example, if there is a hang in the datapath, you can investigate the driver's SendNetBufferListsHandler or ReturnNetBufferListsHandler.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
@@ -278,13 +274,3 @@ You can now click the "bp" link to the right of each handler to set a breakpoint
 [Kernel debugging over the network](https://docs.microsoft.com/archive/blogs/ndis/kernel-debugging-over-the-network)
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)
-
-
-
-
-
-
-
-
-
-

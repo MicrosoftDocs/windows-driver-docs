@@ -95,9 +95,7 @@ void Good2(int *x)
 }
 ```
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

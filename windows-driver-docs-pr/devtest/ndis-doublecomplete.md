@@ -20,9 +20,7 @@ The DoubleComplete rule specifies that NDIS drivers must not complete an object 
 
 This rule verifies that when the **MiniportOidRequest** callback function returns NDIS\_STATUS\_SUCCESS, the **NdisMOidRequestComplete** function must not be called for that request. The rule also specifies that when **MiniportOidRequest** returns status pending, the driver must not call the **NdisMOidRequestComplete** function multiple times for that request.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

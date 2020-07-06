@@ -58,8 +58,6 @@ Protocol drivers must be prepared to handle any NDIS_STATUS_Xxx failure code. If
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

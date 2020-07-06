@@ -92,10 +92,8 @@ This OID returns the following status codes when an error occurs:
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1709
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

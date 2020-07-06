@@ -3,7 +3,7 @@ title: ndiskd.ndiskdversion
 description: The ndiskd.ndiskdversion extension displays information about ndiskd itself.
 ms.assetid: 12EB9E0F-7D2F-447B-B678-1E23EFF522FE
 keywords: ["ndiskd.ndiskdversion Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/11/2020
 topic_type:
 - apiref
 api_name:
@@ -15,40 +15,35 @@ ms.localizationpriority: medium
 
 # !ndiskd.ndiskdversion
 
-
 The **!ndiskd.ndiskdversion** extension displays information about !ndiskd itself.
 
 ```console
-!ndiskd.ndiskdversion 
+!ndiskd.ndiskdversion
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 This extension has no parameters.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+## DLL
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 The following example shows output for **!ndiskd.ndiskdversion**.
 
 ```console
-1: kd> !ndiskd.ndiskdversion
-    NDISKD Version     17.01.00 (NDISKD codename "All your WDF are belong to us")
+0: kd> !ndiskd.ndiskdversion
+    NDISKD Version     17.08.00 (NDISKD codename "We'll deploy IPv6 real soon now")
     Build              Release
     Debugger CPU       AMD64
-    NDIS symbols       Private             More info
     Hyperlinks (DML)   Enabled
     Unicode            Enabled
-    Debug NDISKD       Enabled
+    Debug NDISKD       Disabled
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
@@ -59,13 +54,3 @@ The following example shows output for **!ndiskd.ndiskdversion**.
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
-
- 
-
- 
-
-
-
-
-
-

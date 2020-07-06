@@ -9,25 +9,23 @@ api_name:
 - SRB_NOTIFY_IDLE_STATE
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 06/19/2020
 ms.localizationpriority: medium
 ---
 
 # SRB\_NOTIFY\_IDLE\_STATE
 
-
 The class driver sends this request to the minidriver immediately before sending the first open request or last close request. The minidriver can use SRB\_NOTIFY\_IDLE\_STATE as a notification to wake from [USB selective suspend](../usbcon/usb-selective-suspend.md).
 
-### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
+## Return Value
 
 This request is a notification packet only; any minidriver-supplied return value is ignored.
 
-Remarks
--------
+## Remarks
 
 SRB\_NOTIFY\_IDLE\_STATE is sent in Microsoft Windows XP with Service Pack 2 (SP2) and later, but not in Microsoft Windows Server 2003.
 
-SRB\_NOTIFY\_IDLE\_STATE fixes the USB selective suspend problem that exists in the stream class driver (*Stream.sys*) in Windows XP with SP1, described in [Knowledge Base article 813348](https://go.microsoft.com/fwlink/p/?linkid=210855). You can use SRB\_NOTIFY\_IDLE\_STATE to support selective suspend within single instance minidrivers based on [stream class](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) and [USBCAMD2](https://docs.microsoft.com/windows-hardware/drivers/stream/usbcamd2-minidriver-operation).
+SRB\_NOTIFY\_IDLE\_STATE fixes the USB selective suspend problem that exists in the stream class driver (*Stream.sys*) in Windows XP with SP1. You can use SRB\_NOTIFY\_IDLE\_STATE to support selective suspend within single instance minidrivers based on [stream class](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) and [USBCAMD2](https://docs.microsoft.com/windows-hardware/drivers/stream/usbcamd2-minidriver-operation).
 
 In Windows XP and earlier, SRB\_NOTIFY\_IDLE\_STATE does not exist. For Windows XP and earlier, the minidriver receives [**SRB\_GET\_DEVICE\_PROPERTY**](srb-get-device-property.md) to wake from an idle state. The minidriver then calls [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to change the device state to D0.
 
@@ -41,19 +39,8 @@ When the stream class driver sends an SRB\_NOTIFY\_IDLE\_STATE request, the mini
 
 ## See also
 
-
 [**SRB\_GET\_DEVICE\_PROPERTY**](srb-get-device-property.md)
 
 [**SRB\_OPEN\_DEVICE\_INSTANCE**](srb-open-device-instance.md)
 
 [*StrMiniReceiveDevicePacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_receive_device_srb)
-
- 
-
- 
-
-
-
-
-
-

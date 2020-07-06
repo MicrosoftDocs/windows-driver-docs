@@ -15,7 +15,6 @@ ms.localizationpriority: medium
 
 # !ndiskd.wdiminidriver
 
-
 The **!ndiskd.wdiminidriver** extension displays information about one or more CMiniportDriver structures. If you run this extension with no parameters, !ndiskd will display a list of all CMiniportDriver structures.
 
 For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide).
@@ -26,11 +25,10 @@ For more information about WDI miniport driver reference, see [WDI Miniport Driv
 !ndiskd.wdiminidriver [-handle <x>] [-pm] [-rcvfilter] 
 ```
 
-## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
+## Parameters
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of a CMiniportDriver object.
+Optional handle of a CMiniportDriver object.
 
 <span id="_______-basic______"></span><span id="_______-BASIC______"></span> *-basic*   
 Displays basic information about the miniport driver.
@@ -38,12 +36,11 @@ Displays basic information about the miniport driver.
 <span id="_______-handlers______"></span><span id="_______-HANDLERS______"></span> *-handlers*   
 Displays this driver's miniport handlers.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 Run the **!ndiskd.wdiminidriver** extension with no parameters to see a list of all CMiniportDriver objects. In the following example, there is only one CMiniportDriver object. The handle of its WdiMiniDriver is ffffc804b8ce7c40.
 
@@ -119,8 +116,7 @@ HANDLERS
     CloseAdapterCompleteHandler            fffff80965fface0   wdiwifi!WDICloseAdapterCompleteHandler
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
@@ -135,13 +131,3 @@ HANDLERS
 [WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide)
 
 [WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
- 
-
- 
-
-
-
-
-
-

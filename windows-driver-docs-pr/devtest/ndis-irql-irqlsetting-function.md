@@ -23,9 +23,7 @@ This rule verifies the following NDIS macros:
 **NDIS\_LOWER\_IRQL**
 **NDIS\_RAISE\_IRQL\_TO\_DISPATCH**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

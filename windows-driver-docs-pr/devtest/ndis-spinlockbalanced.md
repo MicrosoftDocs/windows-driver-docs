@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **SpinLockBalanced** rule verifies that the number of calls to functions that acquire a SpinLock are equal to the number of calls to functions that release the same SpinLock.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

@@ -22,9 +22,7 @@ Static Driver Verifier applies this rule at the end of the driver's [**StartIo**
 
 For information about how a driver should handle IRP cancellation, see [**Synchronizing IRP Cancellation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/synchronizing-irp-cancellation).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

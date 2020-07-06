@@ -20,9 +20,7 @@ The **RequestCompletedLocal** rule specifies that if an I/O request is not compl
 
 This rule is only intended for the drivers for which the [RequestCompleted](kmdf-requestcompleted.md) rule is not applicable.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

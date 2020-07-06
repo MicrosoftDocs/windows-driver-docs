@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule is the *release* counterpart of **StorPortSpinLock**. It is similar to the **SpinLockRelease** rule.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

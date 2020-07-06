@@ -22,9 +22,7 @@ The framework-supplied methods initialize the [WDFDEVICE\_INIT](https://docs.mic
 
 If the driver encounters an error when it calls a device object initialization method or [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), the driver must call WdfDeviceInitFree. After a successful call to WdfDeviceInitFree, you should set the pointer to the [WDFDEVICE\_INIT](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) structure to **NULL** (PWDFDEVICE\_INIT=**NULL**).
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

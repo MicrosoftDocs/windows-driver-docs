@@ -20,9 +20,7 @@ The **RemoveLockForward** rule verifies that calls to [**IoAcquireRemoveLock**](
 
 Note this rule does not check IRP\_MN\_REMOVE\_DEVICE, IRP\_MN\_QUERY\_DEVICE or IRP\_MN\_SUPRISE\_REMOVAL IRPs.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

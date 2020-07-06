@@ -20,9 +20,7 @@ The **KmdfIrql** rule specifies that a driver calls a framework method at an IRQ
 
 This rule is similar to the [**KmdfIrql2**](kmdf-kmdfirql2.md) rule; however, the **KmdfIrql2** rule is performed on callback functions which have IRQL requirements dependent on their related object’s execution level specification.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

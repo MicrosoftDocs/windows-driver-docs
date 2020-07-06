@@ -20,9 +20,7 @@ The **RequestSendAndForgetNoFormatting2** rule verifies that the driver doesn't 
 
 The **RequestSendAndForgetNoFormatting2** rule specifically checks for the driver created-requests.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

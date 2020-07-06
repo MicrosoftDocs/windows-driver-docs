@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **EvtIoResumeGetParam** rule specifies that [**WdfRequestGetParameters**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetparameters) is not called within the **EvtIoResumeGetParam** callback function.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

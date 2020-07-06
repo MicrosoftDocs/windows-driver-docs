@@ -18,10 +18,8 @@ This status notification uses the [**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](https://do
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1703 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1703
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

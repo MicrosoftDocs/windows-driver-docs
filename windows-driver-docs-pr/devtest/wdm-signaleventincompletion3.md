@@ -20,9 +20,7 @@ The **SignalEventInCompletion3** rule specifies that when processing a asynchron
 
 In this case, the completion routine will not be called.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

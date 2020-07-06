@@ -2,7 +2,7 @@
 title: Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver 
 ms.topic: article
-ms.date: 01/28/2020
+ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
  
@@ -19,11 +19,11 @@ This is the ecosystem counterpart of [Myriad of machines with integrated GPU tha
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Expanded|
+|**Audience**|Ecosystem|
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|20000 machines|
-|**Passing criteria**|<= 130/10000 of machines encountering TDR|
+|**Passing criteria**|<= 60/10000 of machines encountering TDR|
 |**Measure ID**|24633147|
 
 ## Calculation

@@ -3,7 +3,7 @@ title: ndiskd.nb
 description: The ndiskd.nb extension displays information about a NET_BUFFER (NB) structure.
 ms.assetid: 7351264c-4adc-43ac-9eca-41deb3d35983
 keywords: ["ndiskd.nb Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,13 @@ ms.localizationpriority: medium
 
 # !ndiskd.nb
 
-
 The **!ndiskd.nb** extension displays information about a [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure) (NB) structure.
 
 ```console
-!ndiskd.nb [-handle <x>] [-verbosity <x>] [-basic] [-chain] [-data] 
+!ndiskd.nb [-handle <x>] [-verbosity <x>] [-basic] [-chain] [-data]
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
 Required. Address of a **NET\_BUFFER** structure.
@@ -40,12 +38,11 @@ Displays all the MDLs associated with an NB.
 <span id="_______-data______"></span><span id="_______-DATA______"></span> *-data*   
 Dumps the actual data payload of an NB.
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
 Ndiskd.dll
 
-Examples
---------
+### Examples
 
 The **NET\_BUFFER** in the following examples was obtained from the [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure) in the Examples section of the [**!ndiskd.nbl**](-ndiskd-nbl.md) topic. The NB's handle is ffffdf8014952610.
 
@@ -79,8 +76,7 @@ Use the **!ndiskd.nb -chain** command to see this **NET\_BUFFER**'s MDL chain in
         Process            [System process]    ByteOffset         0n36  
 ```
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
@@ -97,13 +93,3 @@ Use the **!ndiskd.nb -chain** command to see this **NET\_BUFFER**'s MDL chain in
 [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)
 
 [**!ndiskd.nbl**](-ndiskd-nbl.md)
-
- 
-
- 
-
-
-
-
-
-

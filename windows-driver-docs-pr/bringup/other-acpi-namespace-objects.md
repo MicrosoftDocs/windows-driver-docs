@@ -159,18 +159,17 @@ When adding embedded USB devices to the ACPI namespace, the hierarchy of the dev
 
 The [ACPI 5.0 specification](https://uefi.org/specifications) defines the addresses for USB devices as follows:
 
-|              |                                                                                                                  |
-|--------------|------------------------------------------------------------------------------------------------------------------|
-| USB Root HUB | Only child of the host controller. It must have an \_ADR of 0. No other children or values of \_ADR are allowed. |
-| USB Ports    | Port number (1-n)                                                                                                |
+**USB Root HUB**: Only child of the host controller. It must have an \_ADR of 0. No other children or values of \_ADR are allowed.
+
+**USB Ports**: Port number (1-n)
+
 
 USB devices connected to a particular port share the address of that port.
 
 If the device connected to a port is a composite USB device, functions within the composite device must use the following address:
 
-|     |     |
-| --- | --- |
-| USB function within a Composite USB device | Port number of the port to which the composite device is connected, PLUS the first Interface number of the function. (Arithmetic addition). |
+**USB function within a Composite USB device**: Port number of the port to which the composite device is connected, PLUS the first Interface number of the function. (Arithmetic addition).
+
 
 For more information, see [Identifying the Location of Internal Cameras](https://docs.microsoft.com/windows-hardware/drivers/devapps/identifying-the-location-of-internal-cameras).
 

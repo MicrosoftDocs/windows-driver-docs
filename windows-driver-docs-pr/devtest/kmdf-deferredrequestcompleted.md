@@ -44,9 +44,7 @@ The deferred processing callback functions for an I/O request are **EvtTimerFunc
 
 The **DeferredRequestCompleted** rule uses calls to the **WdfRequestMarkCancelable**, **WdfDmaTransactionInitializeUsingRequest**, **WdfDmaTransactionInitialize**, or **WdfWorkItemEnqueue** methods to indicate that the I/O request is being deferred.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

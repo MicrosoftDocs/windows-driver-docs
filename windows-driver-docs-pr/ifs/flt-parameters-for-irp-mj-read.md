@@ -67,9 +67,8 @@ IRP_MJ_READ can be an IRP-based operation or a fast I/O operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | Fltkernel.h (include Fltkernel.h) |
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 

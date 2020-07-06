@@ -23,9 +23,7 @@ This rule verifies that if the StorPort miniport's **StorPortBuildIo** routine r
 
  
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

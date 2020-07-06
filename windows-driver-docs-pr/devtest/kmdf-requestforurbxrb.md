@@ -22,9 +22,7 @@ If the client driver calls [**WdfUsbTargetDeviceCreateWithParameters**](https://
 -   Request is represented via the I/O queue.
 -   Request has another I/O queue represented request in its parent object tree.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

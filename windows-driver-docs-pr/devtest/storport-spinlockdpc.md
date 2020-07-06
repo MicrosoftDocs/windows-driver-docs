@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that a call to **KeAcquireSpinLockRaiseToDpc** is promptly followed by a call to **KeReleaseSpinlock**. If a driver calls **KeAcquireSpinLock** or **KeAcquireSpinLockRaiseToDpc** again prior to releasing the lock, it fails the rule. In addition, before exiting the dispatch or cancel routine, the driver must release the spin lock.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

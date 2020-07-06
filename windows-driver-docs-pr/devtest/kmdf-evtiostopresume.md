@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **EvtIoStopResume** rule specifies that if a driver registers a [*EvtIoStop*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop) callback function and then calls [**WdfRequestStopAcknowledge**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequeststopacknowledge) with the *Requeue* parameter equal to **FALSE**, the driver must register a [*EvtIoResume*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_resume) callback function. The framework delivers requests to the **EvtIoResume** callback function when the device enters the D0 state again.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

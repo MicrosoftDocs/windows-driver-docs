@@ -50,10 +50,25 @@
         href: setting-up-a-1394-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
+    - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
+# Auto-expanded node
+      items: 
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1909.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1903"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1903.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1809"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1809.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1803"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1803.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1709"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1709.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1703"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1703.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
     - name: "Configuring tools.ini"
       href: configuring-tools-ini.md
     - name: "Using KDbgCtrl"
@@ -1669,19 +1684,10 @@
     - name: "NDIS Debugging"
 # Auto-expanded node
       items: 
-      - name: "NDIS Debugging"
-        href: ndis-debugging.md
       - name: "Overview of NDIS Debugging"
         href: overview-of-ndis-debugging.md
-      - name: "Preparing for NDIS Debugging"
-        href: preparing-for-ndis-debugging.md
       - name: "Enabling NDIS Debug Tracing"
-# Auto-expanded node
-        items: 
-        - name: "Enabling NDIS Debug Tracing"
-          href: enabling-ndis-debug-tracing.md
-        - name: "Enabling NDIS Debug Tracing By Setting Registry Values"
-          href: enabling-ndis-debug-tracing-by-setting-registry-values.md
+        href: enabling-ndis-debug-tracing.md
     - name: "Kernel Streaming Debugging"
 # Auto-expanded node
       items: 
@@ -4396,16 +4402,6 @@
           href: -ndiskd-pendingnbls.md
         - name: "!ndiskd.nbllog"
           href: -ndiskd-nbllog.md
-        - name: "!ndiskd.cxadapter"
-          href: -ndiskd-cxadapter.md
-        - name: "!ndiskd.netqueue"
-          href: -ndiskd-netqueue.md
-        - name: "!ndiskd.netrb"
-          href: -ndiskd-netrb.md
-        - name: "!ndiskd.netpacket"
-          href: -ndiskd-netpacket.md
-        - name: "!ndiskd.netpacketfragment"
-          href: -ndiskd-netpacketfragment.md
         - name: "!ndiskd.oid"
           href: -ndiskd-oid.md
         - name: "!ndiskd.interfaces"
@@ -4452,6 +4448,23 @@
           href: -ndiskd-ndiskdversion.md
         - name: "!ndiskd.netreport"
           href: -ndiskd-netreport.md
+        - name: "NDIS CX Extensions (Ndiskd.dll)"
+# Auto-expanded node
+          items: 
+          - name: "!ndiskd.cxadapter"
+            href: -ndiskd-cxadapter.md
+          - name: "!ndiskd.netqueue"
+            href: -ndiskd-netqueue.md
+          - name: "!ndiskd.netrb"
+            href: -ndiskd-netrb.md
+          - name: "!ndiskd.netpacket"
+            href: -ndiskd-netpacket.md
+          - name: "!ndiskd.netfragment"
+            href: -ndiskd-netfragment.md
+          - name: "!ndiskd.nrc"
+            href: -ndiskd-nrc.md
+          - name: "!ndiskd.netring"
+            href: -ndiskd-netring.md
       - name: "RPC Extensions (Rpcexts.dll)"
 # Auto-expanded node
         items: 

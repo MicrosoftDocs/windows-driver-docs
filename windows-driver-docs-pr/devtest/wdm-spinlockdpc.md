@@ -20,9 +20,7 @@ The **SpinLockDpc** rule specifies that calls to [**KeAcquireSpinLock**](https:/
 
 Moreover, at the end of the dispatch or cancel routine, the driver should not hold the spinlock.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

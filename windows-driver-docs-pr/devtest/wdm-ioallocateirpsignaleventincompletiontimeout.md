@@ -20,9 +20,7 @@ The **IoAllocateIrpSignalEventInCompletionTimeout** rule reports a defect if it 
 
 This rule is for locally created asynchronous IRPs.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

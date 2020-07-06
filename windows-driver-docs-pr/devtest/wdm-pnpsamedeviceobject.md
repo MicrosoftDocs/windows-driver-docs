@@ -22,9 +22,7 @@ If the pointed-to device object is not standard, the driver violates this rule. 
 
 This rule does not verify the validity of the pointer to the source object.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

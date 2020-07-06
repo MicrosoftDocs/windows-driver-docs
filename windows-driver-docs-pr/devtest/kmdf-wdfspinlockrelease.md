@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **WdfSpinLockRelease** rule specifies that calls to [**WdfSpinLockAcquire**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550040(v=vs.85)) and **WdfSpinLockRelease** are used in a balanced way within a KMDF event callback function. When the KMDF event callback function returns, the driver should not hold the framework spin lock object that was obtained by a previous call to **WdfSpinLockAcquire**.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

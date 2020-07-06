@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **WdfInterruptLock** rule specifies that calls to the [**WdfInterruptAcquireLock**](https://msdn.microsoft.com/library/windows/hardware/ff547340) method is used in strict alternation with calls to [**WdfInterruptReleaseLock**](https://msdn.microsoft.com/library/windows/hardware/ff547376). Moreover, at the end of any KMDF callback routine, the driver should not hold the framework spin lock object, obtained by a previous call to **WdfInterruptAcquireLock**.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

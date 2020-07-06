@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **ChildDeviceInitApi** rule specifies that for a child device, the framework device object initialization methods must be called before the driver calls the [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) method for the child device object.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

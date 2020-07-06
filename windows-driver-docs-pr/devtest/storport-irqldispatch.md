@@ -46,9 +46,7 @@ This rule verifies that the following routines are only called at **IRQL = DISPA
 
 -   PutScatterGatherList
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

@@ -188,15 +188,20 @@ Once the DF FCP has been created, the card shall transition to the “initializa
 
 To create a PIN, a CHANGE REFERENCE DATA APDU for the application password must be sent to the card:
 
-|            |                              |
-|------------|------------------------------|
-| CLA        | 00                           |
-| INS        | 24                           |
-| P1         | 01                           |
-| P2         | 80                           |
-| Lc         | Length of command data field |
-| Data Field | &lt;password&gt;             |
-| Le         | Absent                       |
+**CLA**: 00
+
+**INS**: 24
+
+**P1**: 01
+
+**P2**: 80
+
+**Lc**: Length of command data field
+
+**Data Field**: &lt;password&gt;
+
+**Le**: Absent
+
 
  
 
@@ -212,15 +217,20 @@ A PUK is used to unblock and/or reset the PIN in the cases where the card become
 
 To create a PUK, a CHANGE REFERENCE DATA APDU for the application resetting password must be sent to the card:
 
-|            |                              |
-|------------|------------------------------|
-| CLA        | 00                           |
-| INS        | 24                           |
-| P1         | 01                           |
-| P2         | 81                           |
-| Lc         | Length of command data field |
-| Data Field | &lt;password&gt;             |
-| Le         | Absent                       |
+**CLA**: 00
+
+**INS**: 24
+
+**P1**: 01
+
+**P2**: 81
+
+**Lc**: Length of command data field
+
+**Data Field**: &lt;password&gt;
+
+**Le**: Absent
+
 
  
 
@@ -234,14 +244,18 @@ For example, to set the PUK to 12345678, the following APDU must be sent to the 
 
 ACLs must be created using the CREATE FILE APDU:
 
-|            |                      |
-|------------|----------------------|
-| CLA        | 00                   |
-| INS        | E0                   |
-| P1-P2      | 00 00                |
-| Lc         | Length of data field |
-| Data Field | FCP template for EF  |
-| Le         | Absent               |
+**CLA**: 00
+
+**INS**: E0
+
+**P1-P2**: 00 00
+
+**Lc**: Length of data field
+
+**Data Field**: FCP template for EF
+
+**Le**: Absent
+
 
  
 
@@ -262,14 +276,18 @@ The ACLs mentioned in the table below must be created. Each ACL creation APDU mu
 
 EF for Admin key must be created using the CREATE FILE APDU:
 
-|            |                                                |
-|------------|------------------------------------------------|
-| CLA        | 00                                             |
-| INS        | E0                                             |
-| P1-P2      | 00 00                                          |
-| Lc         | Length of data field                           |
-| Data Field | FCP template for EF (EFID = B080 and KeyID=80) |
-| Le         | Absent                                         |
+**CLA**: 00
+
+**INS**: E0
+
+**P1-P2**: 00 00
+
+**Lc**: Length of data field
+
+**Data Field**: FCP template for EF (EFID = B080 and KeyID=80)
+
+**Le**: Absent
+
 
  
 
@@ -289,14 +307,18 @@ The command mentioned above must be followed by an ActivateFile APDU:
 
 The Admin Key must be injected onto the card using the PUT KEY APDU:
 
-|            |                      |
-|------------|----------------------|
-| CLA        | 00                   |
-| INS        | DB                   |
-| P1-P2      | 3F FF                |
-| Lc         | Length of data field |
-| Data Field | Key Usage Template   |
-| Le         | Absent               |
+**CLA**: 00
+
+**INS**: DB
+
+**P1-P2**: 3F FF
+
+**Lc**: Length of data field
+
+**Data Field**: Key Usage Template
+
+**Le**: Absent
+
 
  
 
@@ -319,27 +341,35 @@ To transition the card from the “initialization” state to the “operational
 
 First, send a SELECT APDU for the DF:
 
-|            |        |
-|------------|--------|
-| CLA        | 00     |
-| INS        | A4     |
-| P1-P2      | 00 0C  |
-| Lc         | 02     |
-| Data Field | 3F FF  |
-| Le         | Absent |
+**CLA**: 00
+
+**INS**: A4
+
+**P1-P2**: 00 0C
+
+**Lc**: 02
+
+**Data Field**: 3F FF
+
+**Le**: Absent
+
 
  
 
 Secondly, use the ACTIVATE FILE APDU to change the state of the DF to “operational”:
 
-|            |        |
-|------------|--------|
-| CLA        | 00     |
-| INS        | 44     |
-| P1-P2      | 00 00  |
-| Lc         | 00     |
-| Data Field | Absent |
-| Le         | Absent |
+**CLA**: 00
+
+**INS**: 44
+
+**P1-P2**: 00 00
+
+**Lc**: 00
+
+**Data Field**: Absent
+
+**Le**: Absent
+
 
  
 

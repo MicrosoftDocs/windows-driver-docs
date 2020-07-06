@@ -95,9 +95,7 @@ void Good2(int *x)
 }
 ```
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

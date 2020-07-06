@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IrqlMmDispatch** rule specifies that the driver calls [**MmFreeContiguousMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreecontiguousmemory) only when it is executing at **IRQL &lt;= DISPATCH\_LEVEL**.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

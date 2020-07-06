@@ -23,9 +23,7 @@ This rule verifies the following NDIS functions:
 **NdisFIndicateStatus**
 **NdisMIndicateStatusEx**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

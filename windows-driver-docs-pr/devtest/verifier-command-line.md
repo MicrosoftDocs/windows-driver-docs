@@ -697,11 +697,12 @@ For more information about the use of these commands, see [Controlling Driver Ve
 
 The following values are returned after driver verifier has run.
 
-|     |                            |
-|-----|----------------------------|
-| 0   | EXIT\_CODE\_SUCCESS        |
-| 1   | EXIT\_CODE\_ERROR          |
-| 2   | EXIT\_CODE\_REBOOT\_NEEDED |
+**0**: EXIT\_CODE\_SUCCESS
+
+**1**: EXIT\_CODE\_ERROR
+
+**2**: EXIT\_CODE\_REBOOT\_NEEDED
+
 
 
 

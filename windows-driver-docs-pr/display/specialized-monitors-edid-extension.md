@@ -81,7 +81,7 @@ In version `0x1` and `0x2` of this VSDB, this value should always be set to `0x0
 On version `0x3` and above of this VSDB, this bit indicates whether the display should be usable by third-party compositors, or only the Microsoft-provided Windows compositor.
 
 * If the display should be usable by non-Windows software compositors, this should be set to `0x1`.
-* If the display should only be used by the Windows compositor, this should be set to 0x0.
+* If the display should only be used by the Windows compositor, this should be set to `0x0`.
 
 In version `0x1` and `0x2` of this VSDB, this value should always be set to `0x0`.
 
