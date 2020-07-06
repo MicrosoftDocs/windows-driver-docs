@@ -1,7 +1,7 @@
 ---
 title: Hypervisor-Protected Code Integrity (HVCI) 
 description: Hypervisor-Protected Code Integrity (HVCI) 
-ms.date: 05/26/2020
+ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---
 
@@ -16,4 +16,4 @@ Hypervisor-Protected Code Integrity can use hardware technology and virtualizati
 
 [Hypervisor Code Integrity Readiness Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
 
-[Driver compatibility with HVCI in Windows 10](hhttps://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)
+[Driver compatibility with HVCI in Windows 10](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)
