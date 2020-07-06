@@ -48,12 +48,14 @@ The sensor platform defines the following **PROPERTYKEY**s to identify the param
 Requirements
 ------------
 
-| | |
-|--|--|
-| Minimum supported client | Windows 7 |
-| Minimum supported server | None supported |
-| Version | Available in Windows 7|
-| Header | Sensors.h |
+**Minimum supported client**: Windows 7
+
+**Minimum supported server**: None supported
+
+**Version**: Available in Windows 7
+
+**Header**: Sensors.h
+
 
 
 

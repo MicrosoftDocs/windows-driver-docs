@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 Starting with Windows 8, an optional GPU power management infrastructure is available that lets Windows Display Driver Model (WDDM) 1.2 and later drivers manage power for individual devices or a set of devices. This infrastructure provides a standardized mechanism to support F-state and P-state power management in collaboration with Windows.
 
-|                                                                                   |                                        |
-|-----------------------------------------------------------------------------------|----------------------------------------|
-| Minimum WDDM version                                                              | 1.2                                    |
-| Minimum Windows version                                                           | 8                                      |
-| Driver implementation                                                             | Optional                               |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics…RuntimePowerMgmt** |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation**: Optional
+
+**[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics…RuntimePowerMgmt**
+
 
  
 

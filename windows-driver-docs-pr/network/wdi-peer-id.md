@@ -22,9 +22,10 @@ If you want to specify any peer (wildcard), you can use the WDI_PEER_ANY (0xFFFF
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+
 

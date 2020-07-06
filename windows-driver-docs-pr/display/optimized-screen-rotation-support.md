@@ -15,11 +15,12 @@ Windows 8 ensures a flicker-free screen rotation experience by ensuring that th
 
  
 
-|                                                      |           |
-|------------------------------------------------------|-----------|
-| Minimum WDDM version                                 | 1.2       |
-| Minimum Windows version                              | 8         |
-| Driver implementation—Full graphics and Display only | Mandatory |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Display only**: Mandatory
+
 
  
 

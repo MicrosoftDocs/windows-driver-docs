@@ -95,19 +95,28 @@ The presence of a host.namedModelParent object within the returned array indicat
 
 The following debugger extension points are integral to the debugger and available to be used by script providers such as JavaScript.
 
-|                                |                                                                                              |
-|--------------------------------|----------------------------------------------------------------------------------------------|
-| Debugger.Models.Sessions       | The list of sessions (targets) that the debugger is attached to                              |
-| Debugger.Models.Session        | An individual session (target) that the debugger is attached to (live user mode, KD, etc...) |
-| Debugger.Models.Processes      | The list of processes within a session                                                       |
-| Debugger.Models.Threads        | The list of threads within a process                                                         |
-| Debugger.Models.Thread         | An individual thread within a process (regardless of whether user or kernel mode)            |
-| Debugger.Models.Stack          | The stack of a thread                                                                        |
-| Debugger.Models.StackFrames    | The collection of frames which make up a stack                                               |
-| Debugger.Models.StackFrame     | An individual stack frame within a stack                                                     |
-| Debugger.Models.LocalVariables | The local variables within a stack frame                                                     |
-| Debugger.Models.Parameters     | The parameters for a call within a stack frame                                               |
-| Debugger.Models.Module         | An individual module within the address space of a process                                   |
+**Debugger.Models.Sessions**: The list of sessions (targets) that the debugger is attached to
+
+**Debugger.Models.Session**: An individual session (target) that the debugger is attached to (live user mode, KD, etc...)
+
+**Debugger.Models.Processes**: The list of processes within a session
+
+**Debugger.Models.Threads**: The list of threads within a process
+
+**Debugger.Models.Thread**: An individual thread within a process (regardless of whether user or kernel mode)
+
+**Debugger.Models.Stack**: The stack of a thread
+
+**Debugger.Models.StackFrames**: The collection of frames which make up a stack
+
+**Debugger.Models.StackFrame**: An individual stack frame within a stack
+
+**Debugger.Models.LocalVariables**: The local variables within a stack frame
+
+**Debugger.Models.Parameters**: The parameters for a call within a stack frame
+
+**Debugger.Models.Module**: An individual module within the address space of a process
+
 
  
 
@@ -115,15 +124,20 @@ The following debugger extension points are integral to the debugger and availab
 
 In addition, there are some additional data model objects that are defined by the core data model.
 
-|                                             |                                                               |
-|---------------------------------------------|---------------------------------------------------------------|
-| DataModel.Models.Intrinsic                  | An intrinsic value (ordinals, floats, etc...)                 |
-| DataModel.Models.String                     | A string                                                      |
-| DataModel.Models.Array                      | A native array                                                |
-| DataModel.Models.Guid                       | A GUID                                                        |
-| DataModel.Models.Error                      | An error object                                               |
-| DataModel.Models.Concepts.Iterable          | Applied to every object which is iterable                     |
-| DataModel.Models.Concepts.StringDisplayable | Applied to every object which has a display string conversion |
+**DataModel.Models.Intrinsic**: An intrinsic value (ordinals, floats, etc...)
+
+**DataModel.Models.String**: A string
+
+**DataModel.Models.Array**: A native array
+
+**DataModel.Models.Guid**: A GUID
+
+**DataModel.Models.Error**: An error object
+
+**DataModel.Models.Concepts.Iterable**: Applied to every object which is iterable
+
+**DataModel.Models.Concepts.StringDisplayable**: Applied to every object which has a display string conversion
+
 
  
 

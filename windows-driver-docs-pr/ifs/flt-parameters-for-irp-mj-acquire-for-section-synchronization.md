@@ -59,10 +59,10 @@ For more information about FSFilter callback operations, see the reference entry
 
 ## Requirements
 
-| | |
-| ------- | ------- |
-| Version | Available in Windows XP and later versions of the Windows operating system. |
-| Header    | Fltkernel.h (include Fltkernel.h) |
+**Version**: Available in Windows XP and later versions of the Windows operating system.
+
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 

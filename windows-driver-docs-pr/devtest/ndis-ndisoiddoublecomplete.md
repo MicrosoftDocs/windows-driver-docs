@@ -22,9 +22,8 @@ The OID is tracked ( TRACKED\_OBJECT). To help debug this error with the kernel 
 
 **Driver model: NDIS**
 
-|                                   |                                                                                                                                        |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) ( 0x00091002) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) ( 0x00091002)
+
 
 How to test
 -----------

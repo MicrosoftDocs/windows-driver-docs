@@ -37,8 +37,9 @@ The size (in bytes) of the following values.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1803 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1803
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Wditypes.hpp
+

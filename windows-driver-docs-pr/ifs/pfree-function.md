@@ -66,12 +66,14 @@ VOID
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Target platform | Desktop |
-| Version | Available starting withWindows Vista. |
-| Header | Wdm.h (include Wdm.h or Ntddk.h) |
-| IRQL | <= APC_LEVEL |
+**Target platform**: Desktop
+
+**Version**: Available starting withWindows Vista.
+
+**Header**: Wdm.h (include Wdm.h or Ntddk.h)
+
+**IRQL**: <= APC_LEVEL
+
 
 ## See also
 

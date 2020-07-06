@@ -35,23 +35,36 @@ If you create a device-driver for a radio device, like a GPS, your driver will n
 
 The following table lists the methods in the Radio Management API and the corresponding methods found in the sample DLL.
 
-|                                                     |                                                       |
-|-----------------------------------------------------|-------------------------------------------------------|
-| Radio Manager API                                   | Radio Manager DLL                                     |
-| IMediaRadioManager::GetRadioInstances               | CSampleRadioManager::GetRadioInstances                |
-| IMediaRadioManager::OnSystemRadioStateChange        | CSampleRadioManager::OnSystemRadioStateChange         |
-| IRadioInstance::GetFriendlyName                     | CSampleRadioInstance::GetFriendlyName                 |
-| IRadioInstance::GetInstanceSignature                | CSampleRadioInstance::GetInstanceSignature            |
-| IRadioInstance::GetRadioManagerSignature            | CSampleRadioInstance::GetRadioManagerSignature        |
-| IRadioInstance::GetRadioState                       | CSampleRadioInstance::GetRadioState                   |
-| IRadioState::IsAssociatingDevice                    | CSampleRadioInstance::IsAssociatingDevice             |
-| IRadioState::IsMultiComm                            | CSampleRadioInstance::IsMultiComm                     |
-| IRadioState::SetRadioState                          | CSampleRadioInstance::SetRadioState                   |
-| IRadioInstanceCollection::GetAt                     | CRadioInstanceCollection::GetAt                       |
-| IRadioInstanceCollection::GetCount                  | CRadioInstanceCollection::GetCount                    |
-| IMediaRadioManagerNotifySink::OnInstanceAdd         | CSampleRadioManager::\_FireEventOnInstanceAdd         |
-| IMediaRadioManagerNotifySink::OnInstanceRadioChange | CSampleRadioManager::\_FireEventOnInstanceRadioChange |
-| IMediaRadioManagerNotifySink::OnInstanceRemove      | CSampleRadioManager::\_FireEventOnInstanceRemove      |
+**Radio Manager API**: Radio Manager DLL
+
+**IMediaRadioManager::GetRadioInstances**: CSampleRadioManager::GetRadioInstances
+
+**IMediaRadioManager::OnSystemRadioStateChange**: CSampleRadioManager::OnSystemRadioStateChange
+
+**IRadioInstance::GetFriendlyName**: CSampleRadioInstance::GetFriendlyName
+
+**IRadioInstance::GetInstanceSignature**: CSampleRadioInstance::GetInstanceSignature
+
+**IRadioInstance::GetRadioManagerSignature**: CSampleRadioInstance::GetRadioManagerSignature
+
+**IRadioInstance::GetRadioState**: CSampleRadioInstance::GetRadioState
+
+**IRadioState::IsAssociatingDevice**: CSampleRadioInstance::IsAssociatingDevice
+
+**IRadioState::IsMultiComm**: CSampleRadioInstance::IsMultiComm
+
+**IRadioState::SetRadioState**: CSampleRadioInstance::SetRadioState
+
+**IRadioInstanceCollection::GetAt**: CRadioInstanceCollection::GetAt
+
+**IRadioInstanceCollection::GetCount**: CRadioInstanceCollection::GetCount
+
+**IMediaRadioManagerNotifySink::OnInstanceAdd**: CSampleRadioManager::\_FireEventOnInstanceAdd
+
+**IMediaRadioManagerNotifySink::OnInstanceRadioChange**: CSampleRadioManager::\_FireEventOnInstanceRadioChange
+
+**IMediaRadioManagerNotifySink::OnInstanceRemove**: CSampleRadioManager::\_FireEventOnInstanceRemove
+
 
 ## Communicating with the device driver
 

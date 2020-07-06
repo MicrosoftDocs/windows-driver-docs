@@ -494,15 +494,20 @@ All output routines have been enhanced to allow a new format specifier %\[h|w\]Y
 
 The following table summarizes the use of the %Y format specifier.
 
-|        |                                                                                                                                                                                                                                    |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| %Y{t}  | Quoted string. Will convert text to DML if the output format (first arg) is DML.                                                                                                                                                   |
-| %Y{T}  | Quoted string. Will always convert text to DML regardless of the output format.                                                                                                                                                    |
-| %Y{s}  | Unquoted string. Will convert text to DML if the output format (first arg) is DML.                                                                                                                                                 |
-| %Y{S}  | Unquoted string. Will always convert text to DML regardless of the output format.                                                                                                                                                  |
-| %Y{as} | ULONG64. Adds either an empty string or 9 characters of spacing for padding the high 32-bit portion of debugger formatted pointer fields. The extra space outputs 9 spaces which includes the upper 8 zeros plus the \` character. |
-| %Y{ps} | ULONG64. Extra space for padding debugger formatted pointer fields (includes the upper 8 zeros plus the \` character).                                                                                                             |
-| %Y{l}  | ULONG64. Address as source line information.                                                                                                                                                                                       |
+**%Y{t}**: Quoted string. Will convert text to DML if the output format (first arg) is DML.
+
+**%Y{T}**: Quoted string. Will always convert text to DML regardless of the output format.
+
+**%Y{s}**: Unquoted string. Will convert text to DML if the output format (first arg) is DML.
+
+**%Y{S}**: Unquoted string. Will always convert text to DML regardless of the output format.
+
+**%Y{as}**: ULONG64. Adds either an empty string or 9 characters of spacing for padding the high 32-bit portion of debugger formatted pointer fields. The extra space outputs 9 spaces which includes the upper 8 zeros plus the \` character.
+
+**%Y{ps}**: ULONG64. Extra space for padding debugger formatted pointer fields (includes the upper 8 zeros plus the \` character).
+
+**%Y{l}**: ULONG64. Address as source line information.
+
 
 
 

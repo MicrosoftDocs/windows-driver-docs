@@ -189,25 +189,31 @@ someObj          : {...}
 Use the following breakpoint commands to work with additional breakpoints.
 
 
-|           |                                |
-|-----------|--------------------------------|
-| bp <bpid> |        Set a breakpoint        |
-| bd <bpid> |     Disable the breakpoint     |
-| be <bpid> |     Enable the breakpoint      |
-| bc <bpid> |      Clear the breakpoint      |
-|    bpc    | Set breakpoint on current line |
-|    bl     |     List the breakpoint(s)     |
+**bp <bpid>**: Set a breakpoint
+
+**bd <bpid>**: Disable the breakpoint
+
+**be <bpid>**: Enable the breakpoint
+
+**bc <bpid>**: Clear the breakpoint
+
+**bpc**: Set breakpoint on current line
+
+**bl**: List the breakpoint(s)
+
 
 ### Flow control - navigation
 
 Use the following commands to move forward in the script.
 
-|   |                           |
-|---|---------------------------|
-|p  | Step over                 |
-|t  | Step in                   |
-|g  | Continue script           |
-|gu | Step out                  |
+**p**: Step over
+
+**t**: Step in
+
+**g**: Continue script
+
+**gu**: Step out
+
 
 
 
@@ -216,11 +222,12 @@ Use the following commands to move forward in the script.
 Use the following commands to work with frames.
 
 
-|                |                                |
-|----------------|--------------------------------|
-| .frame <index> | Switch to frame number <index> |
-|      .f+       |   Switch to next stack frame   |
-|      .f+       | Switch to previous stack frame |
+**.frame <index>**: Switch to frame number <index>
+
+**.f+**: Switch to next stack frame
+
+**.f+**: Switch to previous stack frame
+
 
 ### Quiting
 

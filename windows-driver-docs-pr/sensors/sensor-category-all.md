@@ -36,12 +36,14 @@ This category includes the following platform-defined data fields.
 
 ## Requirements
 
-| | |
-|--|--|
-|Minimum supported client|Windows 7|
-|Minimum supported server|None supported|
-|Version|Available in Windows 7.|
-|Header|Sensors.h|
+**Minimum supported client**: Windows 7
+
+**Minimum supported server**: None supported
+
+**Version**: Available in Windows 7.
+
+**Header**: Sensors.h
+
  
 
  
