@@ -6,7 +6,7 @@ ms.date: 10/28/2019
 ms.localizationpriority: medium
 ---
 
-# Myriad of machines that had an LKE caused by a crash in the graphics driver binary
+# Myriad of machines that had an LKE caused by a crash in the graphics driver binary (Ecosystem)
 
 ## Description
 
