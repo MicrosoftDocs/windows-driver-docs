@@ -1,7 +1,7 @@
 ---
 title: Hypervisor-Protected Code Integrity (HVCI) 
 description: Hypervisor-Protected Code Integrity (HVCI) 
-ms.date: 07/06/2020
+ms.date: 05/26/2020
 ms.localizationpriority: medium
 ---
 
