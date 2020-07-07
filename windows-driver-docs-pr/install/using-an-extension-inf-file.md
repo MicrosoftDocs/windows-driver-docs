@@ -233,9 +233,18 @@ FLG_ADDREG_KEYONLY = 0x00000010
 ```
 For info on how to use an Extension INF to install a filter driver, see [Device filter driver ordering](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering).
 
-To improve extensibility and backward compatibility, we recommend that an IHV put optional functionality in an [extension INF template](using-an-extension-inf-file-template.md).
+To improve extensibility, we recommend that an IHV put optional functionality in an [extension INF template](using-an-extension-inf-file-template.md).
 
-If this is not possible and the IHV puts all functionality, required and optional, in the base INF, here is one way to ensure that existing extension INFs continue to work:
+## Backward compatibility
+
+Any change to the base INF must be thoroughly tested to ensure that it does not break backward compatibility for existing extension INFs.
+
+When managing a base INF, follow these best practices:
+
+* Document parameter value ranges and constraints both in code comments and in a design document. Future changes must conform to the specified ranges.
+* To support new ranges, add an optional parameter (no default value).
+
+If the IHV puts all functionality in the base INF, here is one way to ensure that existing extension INFs continue to work:
 
 1. The IHV provides a companion app that sets a registry flag to disable optional functionality by default.
 2. The base driver checks if the flag is enabled before using optional functionality.

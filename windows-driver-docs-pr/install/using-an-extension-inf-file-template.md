@@ -8,7 +8,7 @@ ms.date: 06/12/2020
 
 # Using an Extension INF File Template
 
-This page describes how to use extension INF templates to improve extensibility and backward compatibility.
+This page describes how to use extension INF templates to improve extensibility.
 
 An extension INF template is an extension INF with entries commented out that a device manufacturer (IHV) publishes in a separate driver package. Typically, the IHV separates out optional features from the base INF and puts them in an extension INF template. In the template, the IHV provides comments indicating entries that the system builder (OEM) can uncomment and change, as well as entries which can be uncommented but should not be changed.  The OEM then uses the template as a starting point to create an extension INF.
 
@@ -26,6 +26,8 @@ An IHV might also use an extension INF template to add optional functionality to
     * If the updated base driver finds the new value, it uses the new functionality.
     * Otherwise, it uses the previous functionality.
 3. The OEM uses the extension INF template to create a new extension INF that sets the new value.
+
+If instead, the IHV decides to update the base INF, follow the guidelines described in [Using an Extension INF File](using-an-extension-inf-file.md#backward-compatibility)
 
 ## Related topics
 
