@@ -6,7 +6,7 @@ ms.date: 05/11/2020
 ms.localizationpriority: medium
 ---
 
-# Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal
+# Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal (Ecosystem)
 
 ## Description
 

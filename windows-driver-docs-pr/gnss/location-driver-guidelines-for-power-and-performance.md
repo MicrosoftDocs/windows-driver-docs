@@ -2,7 +2,7 @@
 title: Location driver guidelines for power and performance
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
 ms.assetid: 81B9A3A1-D273-48C8-A808-CDB1533A1B6A
-ms.date: 04/20/2017
+ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---
 
@@ -24,16 +24,14 @@ When tracking connected clients and radio state, the location sensor should ente
 
 The following table provides another view of the various input combinations and the resulting outputs (including power state).
 
-|               |             |                  |                   |            |               |             |
-|---------------|-------------|------------------|-------------------|------------|---------------|-------------|
-| Inputs        |             |                  |                   | Outputs    |               |             |
-| Client exists | Radio state | CRI              | Position reported | ASIC state | Sensor state  | Power state |
-| No            | Any         | Any              | Any               | Off        | N/A           | D3          |
-| Yes           | On          | &lt;=120 seconds | No                | On         | Initializing  | D0          |
-| Yes           | On          | &lt;=120 seconds | Yes               | On         | Ready         | D0          |
-| Yes           | Off         | Any              | Any               | Off        | Not available | D3          |
-| Yes           | On          | &gt;120 seconds  | Any               | Off        | Ready         | D3          |
-| Yes           | On          | &gt;120 seconds  | Any               | On         | Ready         | D0          |
+| Client exists (input) | Radio state (input) | CRI (input) | Position reported (input) | ASIC state (output) | Sensor state (output) | Power state (output) |
+|--|--|--|--|--|--|--|
+| No | Any | Any | Any | Off | N/A | D3 |
+| Yes | On | <=120 seconds | No | On | Initializing | D0 |
+| Yes | On | <=120 seconds | Yes | On | Ready | D0 |
+| Yes | Off | Any | Any | Off | Not available | D3 |
+| Yes | On | >120 seconds | Any | Off | Ready | D3 |
+| Yes | On | >120 seconds | Any | On | Ready | D0 |
 
 The [Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md) in the WDK provides an example of a driver that tracks the number of connected clients and the radio state.
 

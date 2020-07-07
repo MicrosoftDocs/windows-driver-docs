@@ -6,7 +6,7 @@ ms.date: 08/08/2019
 ms.localizationpriority: medium
 ---
 
-# Number of user mode reliability for crashes in Windows Components Photos app, normalized by population, is less than or equal to the baseline goal
+# Number of user mode reliability for crashes in Windows Components Photos app, normalized by population, is less than or equal to the baseline goal (Ecosystem)
 
 ## Description
 

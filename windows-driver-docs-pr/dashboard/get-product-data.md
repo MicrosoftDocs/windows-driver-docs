@@ -59,7 +59,7 @@ This resource represents a hardware product (driver) that is registered to your 
   "isFlightSign": false,
   "marketingNames": [
     "marketing name 1",
-    " marketing name 2"
+    "marketing name 2"
 ],
   "productName": "product name",
   "selectedProductTypes": {
@@ -72,7 +72,7 @@ This resource represents a hardware product (driver) that is registered to your 
   ],
   "additionalAttributes": {},
   "testHarness": "hlk",
-  " announcementDate ": "2016-10-22T00:00:00Z",
+  "announcementDate": "2016-10-22T00:00:00Z",
 }
 ```
 
@@ -106,9 +106,9 @@ This resource represents a submission of a product.
   "id": 1152921504621442000,
   "productId": 13635057453741328,
    "workflowStatus": {
-      "currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     },
   "links": [
     {
@@ -147,9 +147,9 @@ This object represents the status of workflow for a given entity
 
 ```json
 {
-      "currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     }
 ```
 

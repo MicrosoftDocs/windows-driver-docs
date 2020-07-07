@@ -6,7 +6,7 @@ ms.date: 05/20/2019
 ms.localizationpriority: medium
 ---
 
-# Number of user mode crashes in top Microsoft apps, normalized by usage, is less than or equal to the baseline goal
+# Number of user mode crashes in top Microsoft apps, normalized by usage, is less than or equal to the baseline goal (Ecosystem)
 
 ## Description
 
