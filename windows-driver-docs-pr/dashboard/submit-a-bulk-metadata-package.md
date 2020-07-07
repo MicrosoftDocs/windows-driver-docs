@@ -9,8 +9,6 @@ ms.localizationpriority: medium
 
 # Submit a Bulk Metadata Package
 
-## How to submitting a bulk metadata package
-
 To submit a bulk metadata package:
 
 1. Sign the bulk metadata package with the [SignTool](https://go.microsoft.com/fwlink/p/?LinkId=238330) tool.
