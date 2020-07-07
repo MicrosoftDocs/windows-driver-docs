@@ -27,7 +27,7 @@ An IHV might also use an extension INF template to add optional functionality to
     * Otherwise, it uses the previous functionality.
 3. The OEM uses the extension INF template to create a new extension INF that sets the new value.
 
-If instead, the IHV decides to update the base INF, follow the guidelines described in [Using an Extension INF File](using-an-extension-inf-file.md#backward-compatibility)
+If instead, the IHV decides to update the base INF, follow the guidelines described in [Using an Extension INF File](using-an-extension-inf-file.md#backward-compatibility).
 
 ## Related topics
 
