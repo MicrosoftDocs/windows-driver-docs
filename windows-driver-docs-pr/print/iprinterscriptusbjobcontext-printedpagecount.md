@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbJobContext PrintedPageCount method
+title: IPrinterScriptUsbJobContext PrintedPageCount method (out)
 description: Returns the number of pages that have been printed by the print device in the current job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,16 +12,15 @@ api_name:
 - IPrinterScriptUsbJobContext.PrintedPageCount
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/07/2020
 ms.localizationpriority: medium
 ---
 
-# IPrinterScriptUsbJobContext::PrintedPageCount method
+# IPrinterScriptUsbJobContext::PrintedPageCount method (out)
 
 Returns the number of pages that have been printed by the print device in the current job.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT PrintedPageCount(
@@ -29,19 +28,16 @@ HRESULT PrintedPageCount(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *value* \[out, retval\]  
 The number of pages that have been printed by the print device in the current job.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 **PrintedPageCount** is a read/write method. The IHV JavaScript **writeData** function should keep the printed page count up to date to allow USBMon to set the correct progress on the job.
 
@@ -49,29 +45,13 @@ If the IHV JavaScript code never calls **PrintedPageCount** to set the printed p
 
 For information about USBMon and USB-based bidirectional communication with a print device, see [USB Bidi Extender](https://docs.microsoft.com/windows-hardware/drivers/print/usb-bidi-extender).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 8.1</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2012 R2</p></td>
-</tr>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Minimum supported client:** Windows 8.1
+
+**Minimum supported server:** Windows Server 2012 R2
+
+**Target platform:** Desktop
 
 ## See also
 
