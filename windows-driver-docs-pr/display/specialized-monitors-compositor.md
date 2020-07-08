@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 # Building a Custom Compositor App for HMDs and Specialized Monitors
 
-The [Windows.Devices.Display.Core API](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core) is a low-level WinRT API for third-party compositors and internal OS components that sits below all other public APIs for enumerating, configuring and driving display adapters and display targets in Windows. The idea is to treat the display controller as a separate “engine”, analogous to the 3D engine and the media engine on the GPU. This API is responsible for:
+The [Windows.Devices.Display.Core API](https://docs.microsoft.com/uwp/api/windows.devices.display.core) is a low-level WinRT API for third-party compositors and internal OS components that sits below all other public APIs for enumerating, configuring and driving display adapters and display targets in Windows. The idea is to treat the display controller as a separate “engine”, analogous to the 3D engine and the media engine on the GPU. This API is responsible for:
 
 * Answering queries about the display hardware (such as capabilities and possible display modes)
 * Answering queries about the current configuration
@@ -107,7 +107,7 @@ To take advantage of the API's atomicity features:
 
 * **Do** write any mode configuration logic in a retryable loop.
 * **Do** create a new DisplayState at the beginning of the mode configuration, inside each loop.
-* **Do** use the [`FailIfStateChanged`](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystateapplyoptions) flag when calling DisplayState.TryApply to detect that the system state is no longer the same as it was when the DisplayState was created. This allows you the opportunity to retry the operation. If the operation fails with `SystemStateChanged`, retry the entire loop.
+* **Do** use the [`FailIfStateChanged`](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaystateapplyoptions) flag when calling DisplayState.TryApply to detect that the system state is no longer the same as it was when the DisplayState was created. This allows you the opportunity to retry the operation. If the operation fails with `SystemStateChanged`, retry the entire loop.
 * **Don't** mix other APIs (DXGI, GDI, etc.) that read or change state with the use of Windows.Devices.Display.Core APIs, as they may not have the same atomicity guarantees.
 
 ```C++
@@ -158,23 +158,23 @@ do
 The following APIs read state atomically from the system:
 
 * **DisplayManager**
-	* [GetCurrentTargets](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.getcurrenttargets)
-	* [GetCurrentAdapters](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.getcurrentadapters)
-	* [TryReadCurrentStateForAllTargets](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryreadcurrentstateforalltargets)/[TryAcquireTargetsAndReadCurrentState](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryacquiretargetsandreadcurrentstate)
+	* [GetCurrentTargets](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaymanager.getcurrenttargets)
+	* [GetCurrentAdapters](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaymanager.getcurrentadapters)
+	* [TryReadCurrentStateForAllTargets](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaymanager.tryreadcurrentstateforalltargets)/[TryAcquireTargetsAndReadCurrentState](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaymanager.tryacquiretargetsandreadcurrentstate)
 * **DisplayState**
-	* [IsStale](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.isstale)
-	* [TryFunctionalize](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.tryfunctionalize)
+	* [IsStale](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaystate.isstale)
+	* [TryFunctionalize](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaystate.tryfunctionalize)
 * **DisplayPath**
-	* [FindAllModes](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaypath.findmodes)
+	* [FindAllModes](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaypath.findmodes)
 * **DisplayTarget**
-	* [DisplayTarget.IsStale](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaytarget.isstale)
+	* [DisplayTarget.IsStale](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaytarget.isstale)
 
 The following APIs commit state back to the system:
 
 * **DisplayManager**
-	* [TryAcquireTarget](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.tryacquiretarget)/[ReleaseTarget](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaymanager.releasetarget) (and acquiring targets with `TryAcquireTargetsAnd*` methods) – Acquires ownership of DisplayTargets from the system.
+	* [TryAcquireTarget](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaymanager.tryacquiretarget)/[ReleaseTarget](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaymanager.releasetarget) (and acquiring targets with `TryAcquireTargetsAnd*` methods) – Acquires ownership of DisplayTargets from the system.
 * **DisplayState**
-	* [TryApply](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core.displaystate.tryapply) – Updates the current system display state by setting or clearing modes on all owned targets in the system, through the display drivers.
+	* [TryApply](https://docs.microsoft.com/uwp/api/windows.devices.display.core.displaystate.tryapply) – Updates the current system display state by setting or clearing modes on all owned targets in the system, through the display drivers.
 
 ## Known limitations
 
