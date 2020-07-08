@@ -65,14 +65,6 @@ Thread names that are set from SetThreadDescription are now available when doing
     Environment
 ```
 
-**Azure DevOps symbols**
-
-WinDbgNext now supports downloading symbols directly from Azure DevOps without explicitly using a PAT. If a recent version of Git is installed, the debugger will use the Git credential manager to authenticate to Azure DevOps when downloading symbols and source files. Automatic authentication is also supported to Github when downloading source files.
-
-To use ADO as a symbol server, set your symbol path to:
-
-`srv*https://<account>.artifacts.visualstudio.com/_apis/symbol/symsrv`
-
 **Portable PDB support**
 
 Portable PDB support has been added. The Portable PDB (Program Database) format describes an encoding of debugging information produced by compilers of Common Language Infrastructure (CLI) languages and consumed by debuggers and other tools. For more information, see [Portable PDB v1.0: Format Specification](https://github.com/dotnet/corefx/blob/master/src/System.Reflection.Metadata/specs/PortablePdb-Metadata.md).
