@@ -128,8 +128,6 @@
     href: read-the-driver-test-results-log.md
   - name: "How to test a driver at runtime from a Command Prompt"
     href: how-to-test-a-driver-at-runtime-from-a-command-prompt.md
-  - name: "Troubleshooting the Device Fundamentals tests using the WDK"
-    href: troubleshooting-the-device-fundamental-tests.md
   - name: "How to write a driver test using a Driver Test template"
     href: how-to-write-a-driver-test-.md
   - name: "How to add test metadata"

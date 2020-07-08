@@ -1,5 +1,5 @@
 ---
-title: A User Unplugs a Device
+title: A User Unplugs a Device (UMDF 1)
 description: A User Unplugs a Device
 ms.assetid: d0c8fd6d-b356-4048-aa97-ebe331d23361
 keywords:
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# A User Unplugs a Device
+# A User Unplugs a Device (UMDF 1)
 
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]

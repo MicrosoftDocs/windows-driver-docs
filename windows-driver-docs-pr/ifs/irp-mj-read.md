@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_READ
+title: IRP_MJ_READ (IFS)
 description: IRP_MJ_READ
 ms.assetid: f2f909ff-4af6-433e-9f3c-9692b5ab7171
 keywords: ["IRP_MJ_READ Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_READ
+# IRP\_MJ\_READ (IFS)
 
 
 ## When Sent

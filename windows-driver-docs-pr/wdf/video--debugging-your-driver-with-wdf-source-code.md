@@ -75,34 +75,34 @@ Make sure [debugging in Source Mode](https://docs.microsoft.com/windows-hardware
 
 If you previously debugged WDF drivers for the same Windows target, then you may be using the locally cached WDF symbols that were not source indexed. You can check this with the !lmi command:
 
-    ```
-    kd> !lmi Wdf01000.sys
-    Loaded Module Info: [wdf01000.sys]
-    ...
-    Load Report: private symbols & lines, not source indexed
-    C:\...\Wdf01000.pdb\...\Wdf01000.pdb
-    ```
+```cmd
+kd> !lmi Wdf01000.sys
+Loaded Module Info: [wdf01000.sys]
+...
+Load Report: private symbols & lines, not source indexed
+C:\...\Wdf01000.pdb\...\Wdf01000.pdb
+```
 
 According to the Load Report above, Wdf01000.pdb is not source indexed. This means your local WinDbg symbols cache is stale. To fix this, unload the PDB from WinDbg, clear the local cache (your path may differ based on the !lmi output above), and reload the PDB:
 
-    ```
-    kd> .reload /u Wdf01000.sys
+```cmd
+kd> .reload /u Wdf01000.sys
 
-    CMD> del
-    C:\...\Wdf01000.pdb\...\Wdf01000.pdb
+CMD> del
+C:\...\Wdf01000.pdb\...\Wdf01000.pdb
 
-    kd> .reload Wdf01000.sys
-    ```
+kd> .reload Wdf01000.sys
+```
 
 Now run !lmi to check again: the PDB should appear as source indexed and a source code window should pop up.
 
-    ```
-    kd> !lmi Wdf01000.sys
-    Loaded Module Info: [wdf01000.sys]
-    ...
-    Load Report: private symbols & lines, source indexed
-    C:\...\Wdf01000.pdb\...\Wdf01000.pdb 
-    ```
+```cmd
+kd> !lmi Wdf01000.sys
+Loaded Module Info: [wdf01000.sys]
+...
+Load Report: private symbols & lines, source indexed
+C:\...\Wdf01000.pdb\...\Wdf01000.pdb 
+```
 
 You can use WDF source-level debugging not just for live debugging and analyzing crash dumps, but also for learning more about the framework internals by setting breakpoints on core functions like the IRP dispatcher and exploring the subsequent code paths.
 

@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_WRITE
+title: IRP_MJ_WRITE (IFS)
 description: IRP_MJ_WRITE
 ms.assetid: 8f16a579-1598-4f70-8d88-dfe877daec31
 keywords: ["IRP_MJ_WRITE Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_WRITE
+# IRP\_MJ\_WRITE (IFS)
 
 
 ## When Sent
