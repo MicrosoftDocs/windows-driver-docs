@@ -662,6 +662,8 @@
       href: specialized-monitors.md
     - name: "EDID Extension for HMDs and Specialized Monitors"
       href: "specialized-monitors-edid-extension.md"
+    - name: "Building a Custom Compositor App for HMDs and Specialized Monitors"
+      href: "specialized-monitors-compositor.md"
   - name: "Multiple Monitors and Video Present Networks"
 # Auto-expanded node
     items: 
