@@ -17,8 +17,8 @@ The network camera design guide describes the following controls and property se
 
 ## See also
 
-[**KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty-networkcameracontrol-ntpinfo-header)
+[**KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_networkcameracontrol_ntpinfo-header)
 
-[**KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty-networkcameracontrol-ntpinfo-type)
+[**KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_networkcameracontrol_ntpinfo_type)
 
-[**KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty-networkcameracontrol-property)
+[**KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_networkcameracontrol_property)
