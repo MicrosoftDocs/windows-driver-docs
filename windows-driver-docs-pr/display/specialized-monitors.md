@@ -29,21 +29,21 @@ Windows Mixed Reality headsets are one example of HMDs controlled by a custom co
 
 ## Topics
 
-[EDID Extension for HMDs and Specialized Displays](specialized-monitors-edid-extension.md)
+[EDID extension for HMDs and specialized displays](specialized-monitors-edid-extension.md)
 
-[Building Custom Compositors for HMDs and Specialized Displays](specialized-monitors-compositor.md)
+[Building custom compositors for HMDs and specialized displays](specialized-monitors-compositor.md)
 
 ## Version History
 
-### Windows 10 version 1709 (Fall Creator's Update)
+### Windows 10, version 1709 (Fall Creators' Update)
 
 * Windows Mixed Reality ships with support for virtual reality devices. Windows Mixed Reality devices must conform to the Microsoft EDID extension for HMDs version 1.
 
-### Windows 10 version 1809
+### Windows 10, version 1809
 
 * Added support for building third-party HMD compositors using the `Windows.Devices.Display.Core` family of APIs. Supported devices must conform to the Microsoft EDID extension for HMDs version 2.
 
-### Windows 10 version 2004
+### Windows 10, version 2004
 
 * ** Added support for "specialized" displays with version 3 of the Microsoft EDID extension for HMDs and specialized displays.
 * ** Added support for users to designate any monitor as a "specialized" display through Settings.

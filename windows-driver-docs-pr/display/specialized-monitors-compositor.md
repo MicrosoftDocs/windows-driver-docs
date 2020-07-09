@@ -1,6 +1,6 @@
 ﻿---
-title: Building a Custom Compositor App for HMDs and Specialized Monitors
-description: Building a Custom Compositor App for HMDs and Specialized Monitors
+title: Building a custom compositor app for HMDs and specialized monitors
+description: Building a custom compositor app for HMDs and specialized monitors
 keywords:
 - display devices WDK
 - monitor drivers WDK
@@ -16,9 +16,9 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Building a Custom Compositor App for HMDs and Specialized Monitors
+# Building a custom Compositor App for HMDs and specialized monitors
 
-The [Windows.Devices.Display.Core API](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core) is a low-level WinRT API for third-party compositors and internal OS components that sits below all other public APIs for enumerating, configuring and driving display adapters and display targets in Windows. The idea is to treat the display controller as a separate “engine”, analogous to the 3D engine and the media engine on the GPU. This API is responsible for:
+The [Windows.Devices.Display.Core API](/uwp/api/windows.devices.display.core) is a low-level WinRT API for third-party compositors and internal OS components that sits below all other public APIs for enumerating, configuring and driving display adapters and display targets in Windows. The idea is to treat the display controller as a separate “engine”, analogous to the 3D engine and the media engine on the GPU. This API is responsible for:
 
 * Answering queries about the display hardware (such as capabilities and possible display modes)
 * Answering queries about the current configuration
@@ -73,8 +73,8 @@ Implementing a custom compositor can be broken into several stages:
 
 | API | Purpose and Target Audience |
 |-----|-----------------------------|
-| `Windows.Graphics.Display.DisplayInformation` | Used to retrieve rendering and layout properties for a CoreWindow. |
-| `Windows.Graphics.Display.Core.HdmiDisplayInformation` | Xbox-only API for enumerating and setting a constrained set of modes. Highly specialized for Xbox media app scenarios. |
+| [Windows.Graphics.Display.DisplayInformation](/uwp/api/windows.graphics.display.displayinformation) | Used to retrieve rendering and layout properties for a CoreWindow. |
+| [Windows.Graphics.Display.Core.HdmiDisplayInformation](/uwp/api/windows.graphics.display.core.hdmidisplayinformation) | Xbox-only API for enumerating and setting a constrained set of modes. Highly specialized for Xbox media app scenarios. |
 | `Windows.Devices.Display.DisplayMonitor` | Used for querying properties of a physical monitor device. Does not expose any runtime information about how a monitor is configured or currently used by the OS. |
 | `EnumDisplayDevices`, `EnumDisplayMonitors`, `EnumDisplaySettings` | Legacy Win32 APIs for querying HMONITORs, GDI devices, and physical monitor mappings. The information returned here is highly virtualized and maintained for application compatibility. |
 | Direct3D | Used for rendering pixel content into GPU surfaces and performing computation on a GPU. |
