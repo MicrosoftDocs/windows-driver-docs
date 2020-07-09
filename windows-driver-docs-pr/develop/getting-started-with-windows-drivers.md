@@ -33,7 +33,7 @@ When Windows Drivers become a certification option, the following requirements w
 
 The following table summarizes the distinctions above:
 
-|                                                                     |Windows Drivers|Windows Desktop Drivers |
+|     Feature                                                         |Windows Drivers|Windows Desktop Drivers |
 | --------------------------------------------------------------------|:-------------:|:----------------------:|
 | Run on Windows 10 Desktop                                           | Yes           | Yes                    |
 | Run on Windows 10X                                                  | Yes           | No                     |

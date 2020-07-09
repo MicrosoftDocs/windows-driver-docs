@@ -13,7 +13,7 @@ The KSPROPERTY_NETWORKCAMERACONTROL_NTP property enables aquiring the NTP server
 
 | Get | Set | Property descriptor type | Property value type |
 |--|--|--|--|
-| Yes | Yes | [KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/stream/ne-ksmedia-ksproperty_networkcameracontrol_property) | LONG |
+| Yes | Yes | [KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/stream/ne-ksmedia-ksproperty-networkcameracontrol-property) | LONG |
 
 ## Requirements
 

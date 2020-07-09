@@ -1,5 +1,5 @@
 ---
-title: A Device Returns to Its Working State
+title: A Device Returns to Its Working State (UMDF 1)
 description: A Device Returns to Its Working State
 ms.assetid: 2b192eea-f731-4d61-be19-95724bf7b04a
 keywords:
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# A Device Returns to Its Working State
+# A Device Returns to Its Working State (UMDF 1)
 
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]

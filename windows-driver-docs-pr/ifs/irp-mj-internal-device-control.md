@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_INTERNAL_DEVICE_CONTROL
+title: IRP_MJ_INTERNAL_DEVICE_CONTROL (IFS)
 description: IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL
 ms.assetid: a60325d5-993f-4505-bded-2c2be9782492
 keywords: ["IRP_MJ_INTERNAL_DEVICE_CONTROL Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL
+# IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL (IFS)
 
 
 ## When Sent

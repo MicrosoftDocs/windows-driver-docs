@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_QUERY_INFORMATION
+title: IRP_MJ_QUERY_INFORMATION (IFS)
 description: IRP\_MJ\_QUERY\_INFORMATION
 ms.assetid: d25bb277-e14c-4cd8-862a-46b4687bf539
 keywords: ["IRP_MJ_QUERY_INFORMATION Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_QUERY\_INFORMATION
+# IRP\_MJ\_QUERY\_INFORMATION (IFS)
 
 
 ## When Sent

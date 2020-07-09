@@ -1,5 +1,5 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE
+title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE (normal and sequence)
 description: The flash property control sets flash mode operation for both normal and sequence photo mode of the camera.
 ms.assetid: A190CB91-0AC4-4ECC-8C55-F0C48CF7B190
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE Streaming Media Devices"]
@@ -11,46 +11,19 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 09/10/2018
+ms.date: 07/08/2020
 ms.localizationpriority: medium
 ---
 
-# KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE
-
+# KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FLASHMODE (normal and sequence)
 
 The flash property control sets flash mode operation for both normal and sequence photo mode of the camera.
 
-## Usage Summary Table
+## Usage summary table
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_HEADER&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)"><strong>KSCAMERA_EXTENDEDPROP_HEADER</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter | [**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) | [**KSCAMERA_EXTENDEDPROP_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) |
 
 The property value (operation data) contains a [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure and a [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure.
 
@@ -58,25 +31,21 @@ The total property data size is **sizeof**(KSCAMERA\_EXTENDEDPROP\_HEADER) + **s
 
 The **Capability** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) contains a bitwise OR combination of one or more of the following flash modes that are supported by the driver.
 
-| Flash mode                                           | Description                                                                |
-|------------------------------------------------------|----------------------------------------------------------------------------|
-| KSCAMERA\_EXTENDEDPROP\_FLASH\_OFF                   | Flash is off.                                                              |
-| KSCAMERA\_EXTENDEDPROP\_FLASH\_ON                    | Flash is on at the default intensity level.                                |
-| KSCAMERA\_EXTENDEDPROP\_FLASH\_ON\_ADJUSTABLEPOWER   | Flash is on at a specific power level.                                     |
-| KSCAMERA\_EXTENDEDPROP\_FLASH\_AUTO                  | Flash is automatic based on lighting conditions.                           |
+| Flash mode | Description |
+|--|--|
+| KSCAMERA\_EXTENDEDPROP\_FLASH\_OFF | Flash is off. |
+| KSCAMERA\_EXTENDEDPROP\_FLASH\_ON | Flash is on at the default intensity level. |
+| KSCAMERA\_EXTENDEDPROP\_FLASH\_ON\_ADJUSTABLEPOWER | Flash is on at a specific power level. |
+| KSCAMERA\_EXTENDEDPROP\_FLASH\_AUTO | Flash is automatic based on lighting conditions. |
 | KSCAMERA\_EXTENDEDPROP\_FLASH\_AUTO\_ADJUSTABLEPOWER | Flash is automatic based on lighting conditions at a specific power level. |
-
- 
 
 The following feature flags can be combined with the previous flash settings except for KSCAMERA\_EXTENDEDPROP\_FLASH\_OFF.
 
 | Flash feature | Description |
-|---|---|
+|--|--|
 | KSCAMERA\_EXTENDEDPROP\_FLASH\_REDEYEREDUCTION | Enable redeye reduction feature. This flag can be combined with any other setting. |
 | KSCAMERA\_EXTENDEDPROP\_FLASH\_SINGLEFLASH | Set flash for only one trigger. This feature is ignored when the camera is not in photo sequence mode. |
 | KSCAMERA\_EXTENDEDPROP\_FLASH\_MULTIFLASHSUPPORTED | Set flash to trigger on every sequence frame. This feature is ignored when the camera is not in photo sequence mode. |
-
- 
 
 The **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) contains the flash mode currently set for the camera.
 
@@ -92,46 +61,14 @@ This property control is synchronous and not cancelable.
 
 When responding to a KSPROPERTY\_TYPE\_GET request, the driver sets the members of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) to the following.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Member</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Version</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>PinId</td>
-<td>KSCAMERA_EXTENDEDPROP_FILTERSCOPE (0xFFFFFFFF).</td>
-</tr>
-<tr class="odd">
-<td>Size</td>
-<td><p>sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE)</p></td>
-</tr>
-<tr class="even">
-<td>Result</td>
-<td>0</td>
-</tr>
-<tr class="odd">
-<td>Capability</td>
-<td>Flash mode values supported.</td>
-</tr>
-<tr class="even">
-<td>Flags</td>
-<td>(The current flash mode value setting) | (flash feature flags)</td>
-</tr>
-</tbody>
-</table>
-
- 
+| Member | Value |
+|--|--|
+| Version | 1 |
+| PinId | KSCAMERA_EXTENDEDPROP_FILTERSCOPE (0xFFFFFFFF) |
+| Size | sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE) |
+| Result | 0 |
+| Capability | Flash mode values supported |
+| Flags | (The current flash mode value setting) &#x7c; (flash feature flags) |
 
 When the torch mode is KSCAMERA\_EXTENDEDPROP\_FLASH\_ON\_ADJUSTABLEPOWER or KSCAMERA\_EXTENDEDPROP\_FLASH\_ON\_ADJUSTABLEPOWER, the **Value.ull** member of [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) contains an intensity level value between 0 - 100. An intensity of 0 indicates a minimum level and an intensity of 100 indicates a maximum intensity level. When the adjustable power flags are not set, the value for the normalized intensity setting is returned in **Value.ull**.
 
@@ -143,22 +80,9 @@ When the property is set, a KSPROPERTY\_TYPE\_SET request, the **Flags** member 
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available starting with Windows 8.1.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Available starting with Windows 8.1
+
+**Header:** Ksmedia.h (include Ksmedia.h)
 
 ## See also
 

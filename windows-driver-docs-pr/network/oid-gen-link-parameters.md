@@ -19,7 +19,7 @@ As a set, NDIS and overlying drivers use the OID\_GEN\_LINK\_PARAMETERS OID to s
 Supported.
 
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
-Mandatory.
+Optional.
 
 The NDIS\_LINK\_PARAMETERS structure is defined as follows:
 

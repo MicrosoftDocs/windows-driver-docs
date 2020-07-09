@@ -39,11 +39,11 @@ This method returns an **HRESULT** value.
 
 ## Requirements
 
-| &nbsp; | &nbsp; |
-| --- | --- |
-| Minimum supported client | Windows 8.1 |
-| Minimum supported server | Windows Server 2012 R2 |
-| Target platform | Desktop |
+**Minimum supported client:** Windows 8.1
+
+**Minimum supported server:** Windows Server 2012 R2
+
+**Target platform:** Desktop
 
 ## See also
 

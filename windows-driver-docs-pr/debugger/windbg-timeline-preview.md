@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - Timelines 
 description: This section describes how work with the time travel timelines feature in WinDbg Preview.
-ms.date: 01/10/2020
+ms.date: 07/02/2020
 ms.localizationpriority: medium
 ---
 
@@ -233,6 +233,22 @@ Although our code sample is small, the technique of using multiple timelines all
 ![Timeline in debugger showing memory access timeline and locals windows](images/windbgx-timeline-demo-lab-locals.png)
 
 The ability to see additional correlations and find things you may not have expected, differentiates the timeline tool from interacting with the time travel trace using command line commands.
+
+## Timeline Bookmarks
+
+Bookmark important Time Travel positions in WinDbg instead of manually copy pasting the position to notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events, and to annotate them.
+
+You can provide a descriptive name for bookmarks.
+
+![New bookmark dialog with example name for first api call in display greeting app](images/windbgx-timeline-bookmark-new.png)
+
+Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
+
+![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
+
+You can right click the bookmark to travel to that position, rename or delete the bookmark.
+
+![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
 
 ### See Also
 

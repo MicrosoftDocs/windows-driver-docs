@@ -1,5 +1,5 @@
 ---
-title: Using Device Interfaces
+title: Using Device Interfaces (WDF)
 description: Using Device Interfaces
 ms.assetid: 98199220-947e-462e-a50c-85d81ca50108
 keywords:
@@ -11,7 +11,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Using Device Interfaces
+# Using Device Interfaces (WDF)
 
 
 

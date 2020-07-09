@@ -47,11 +47,11 @@ For information about USBMon and USB-based bidirectional communication with a pr
 
 ## Requirements
 
-| &nbsp; | &nbsp; |
-| --- | --- |
-| Minimum supported client | Windows 8.1 |
-| Minimum supported server | Windows Server 2012 R2 |
-| Target platform | Desktop |
+**Minimum supported client:** Windows 8.1
+
+**Minimum supported server:** Windows Server 2012 R2
+
+**Target platform:** Desktop
 
 ## See also
 
