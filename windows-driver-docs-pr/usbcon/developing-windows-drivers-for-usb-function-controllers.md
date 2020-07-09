@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 <p><strong>Development tools and Microsoft-provided binaries</strong></p>
 <p>The Windows Driver Kit (WDK) contains resources that are required for driver development, such as headers, libraries, tools, and samples.</p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p>
-<p>To write a function controller driver, you need:</p>
+<p>The Windows operating system provides inbox USB function controller drivers UfxSynopsys.sys and UfxChipidea.sys for the controller hardware of Synopsys IP and Chipidea IP. They generally require platform level changes and validation that are typically performed by a silicon vendor and/or OEMs when bringing up a platform. This bring-up process may include integration with ACPI to notify system drivers of USB attach/detach events, and performing additional validation using Microsoft-provided HLK tests. To write your own controller driver, you need:</p>
 <ul>
 <li>UFX (Ufx01000.sys) loaded as the FDO. This driver is included in Windows.</li>
 <li>Link to the stub library (Ufx01000.lib). The stub library is in the WDK. The library translates calls made by the function controller driver and pass them up to UFX.</li>
