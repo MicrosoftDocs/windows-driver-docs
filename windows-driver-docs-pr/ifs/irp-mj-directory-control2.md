@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_DIRECTORY_CONTROL
+title: IRP_MJ_DIRECTORY_CONTROL (IFS)
 description: IRP_MJ_DIRECTORY_CONTROL
 ms.assetid: 27c2de1c-5550-4211-97cc-4c66f18d3b99
 keywords:
@@ -11,7 +11,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_DIRECTORY\_CONTROL
+# IRP\_MJ\_DIRECTORY\_CONTROL (IFS)
 
 
 Security is a consideration when processing certain directory control operations, notably those dealing with change notifications. The security concern is that a directory change notification might return information about specific files that have changed. If the user does not have the privilege to traverse the path to the directory, information about the change cannot be returned to the user. Otherwise, the user now has a mechanism for learning additional information about the directory that the user should not have.

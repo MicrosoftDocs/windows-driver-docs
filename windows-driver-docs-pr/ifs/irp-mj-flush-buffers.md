@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_FLUSH_BUFFERS
+title: IRP_MJ_FLUSH_BUFFERS (IFS)
 description: IRP\_MJ\_FLUSH\_BUFFERS
 ms.assetid: 13df0d84-0320-4d7e-9acc-8f913ba6afaa
 keywords: ["IRP_MJ_FLUSH_BUFFERS Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_FLUSH\_BUFFERS
+# IRP\_MJ\_FLUSH\_BUFFERS (IFS)
 
 
 ## When Sent

@@ -1,5 +1,5 @@
 ---
-title: A Device Enters a Low-Power State
+title: A Device Enters a Low-Power State (UMDF 1)
 description: A Device Enters a Low-Power State
 ms.assetid: c3697272-75ec-4de5-b123-3d1c68d2044e
 keywords:
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# A Device Enters a Low-Power State
+# A Device Enters a Low-Power State (UMDF 1)
 
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]

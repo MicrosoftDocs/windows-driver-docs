@@ -6,6 +6,11 @@
                             "redirect_document_id":  true
                         },
                         {
+                            "source_path":  "windows-driver-docs-pr/develop/troubleshooting-the-device-fundamental-tests.md",
+                            "redirect_URL":  "/windows-hardware/drivers/develop/troubleshooting-configuration-of-driver-deployment--testing-and-debugging",
+                            "redirect_document_id":  true
+                        },
+                        {
                             "source_path":  "windows-driver-docs-pr/develop/getting-started-with-universal-drivers.md",
                             "redirect_URL":  "/windows-hardware/drivers/develop/getting-started-with-windows-drivers",
                             "redirect_document_id":  true

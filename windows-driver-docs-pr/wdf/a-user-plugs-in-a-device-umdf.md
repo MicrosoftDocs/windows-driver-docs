@@ -1,5 +1,5 @@
 ---
-title: A User Plugs in a Device
+title: A User Plugs in a Device (UMDF 1)
 description: A User Plugs in a Device
 ms.assetid: 1968270b-ce57-4a8c-8b7a-bbd4a972435d
 keywords:
@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# A User Plugs in a Device
+# A User Plugs in a Device (UMDF 1)
 
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]

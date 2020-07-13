@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_SHUTDOWN
+title: IRP_MJ_SHUTDOWN (IFS)
 description: IRP\_MJ\_SHUTDOWN
 ms.assetid: 4f7ba339-87f5-4011-8981-de6c31a9239a
 keywords: ["IRP_MJ_SHUTDOWN Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_SHUTDOWN
+# IRP\_MJ\_SHUTDOWN (IFS)
 
 
 ## When Sent

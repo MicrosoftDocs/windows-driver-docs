@@ -1,12 +1,12 @@
 ---
-title: Synchronizing Interrupt Code
+title: Synchronizing Interrupt Code (UMDF 1)
 description: Synchronizing Interrupt Code
 ms.assetid: 5E2D0063-2251-40B3-8982-46001E67EB55
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Synchronizing Interrupt Code
+# Synchronizing Interrupt Code (UMDF 1)
 
 
 [!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]

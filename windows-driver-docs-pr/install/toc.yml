@@ -82,6 +82,8 @@
       href: using-a-universal-inf-file.md
     - name: "Using an Extension INF File"
       href: using-an-extension-inf-file.md
+    - name: "Using an Extension INF File Template"
+      href: using-an-extension-inf-file-template.md
     - name: "Updating Device Firmware using Windows Update"
       href: updating-device-firmware-using-windows-update.md
     - name: "Summary of INF Sections"
