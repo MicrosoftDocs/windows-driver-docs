@@ -1,7 +1,7 @@
 ---
 title: Customizing the Component Firmware Update (CFU) driver
-description: Customizing the Component Firmware Update (CFU) driver TBD
-ms.date: 09/10/2019
+description: Customizing the Component Firmware Update (CFU) driver
+ms.date: 07/09/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,9 @@ Familiarize yourself with the CFU protocol.
 To update the firmware image for your device by using the CFU model, you are expected,
 
 - To provide a CFU driver. This driver sends the firmware update to the device. We recommend that you customize the sample CFU driver to support your firmware update scenarios.
+
 - Your device must ship with a firmware image that is compliant with the CFU protocol so that it can accept an update from the CFU driver.
+
 - The device must expose itself as HID device to the operating system (running the CFU driver) and expose a HID Top-Level Collection (TLC). The CFU driver loads on the TLC and sends the firmware update to the device.
 
 This allows you to service your in-market devices through Windows Update. To update the firmware for a component, you deploy the CFU driver through the Windows update, and the driver gets installed on a Windows host. When the driver detects the presence of a component, it performs the necessary actions on the host and transmits the firmware image to the primary component on the device.
@@ -165,7 +167,7 @@ Reference sample: [MonolithicPackageExample](https://github.com/Microsoft/CFU/tr
 
 ### 2. Configure the CFU driver INF
 
-The sample CFU driver is extensible. To tune the driver’s behavior, change the driver INF instead of the source code.
+The sample CFU driver is extensible. To tune the driver's behavior, change the driver INF instead of the source code.
 
 1. Update the INF with the hardware ID of the HID TLC intended for firmware update.
 Windows ensures that the driver is loaded when the component is enumerated on the host.
@@ -198,40 +200,40 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
 1. Start with LaptopFirmwareUpdate.inx here. Replace the hardware ID with hardwareID of your primary component in the device.
 
-    ```inf
-    [Standard.NT$ARCH$]
-    %LaptopFirmwareUpdate.DeviceDesc%=LaptopFirmwareUpdate, HID\.... ; Your HardwareID for Laptop MCU
-    ```
+  ```inf
+  [Standard.NT$ARCH$]
+  %LaptopFirmwareUpdate.DeviceDesc%=LaptopFirmwareUpdate, HID\.... ; Your HardwareID for Laptop MCU
+  ```
 
-2. For each component, create the package and replace the hardware ID of the component. Rename the CFU driver to prevent a name conflict amongst packages.
+1. For each component, create the package and replace the hardware ID of the component. Rename the CFU driver to prevent a name conflict amongst packages.
 
-3. Update the INF to specify the location of firmware file for each component on the device.
+1. Update the INF to specify the location of firmware file for each component on the device.
 
-    The firmware files are not part of the driver binary. The driver needs to know the firmware file location at runtime so that it can transmit to the component. For a multi-component device, there may be more than one firmware file.
+  The firmware files are not part of the driver binary. The driver needs to know the firmware file location at runtime so that it can transmit to the component. For a multi-component device, there may be more than one firmware file.
 
-    The firmware has two files: an offer file and payload file. For each firmware file needed by the device, describe the offer and payload file as follows. You must only update _these_ entries.
+  The firmware has two files: an offer file and payload file. For each firmware file needed by the device, describe the offer and payload file as follows. You must only update _these_ entries.
 
-    ```inf
-    [FirmwareUpdate_Component1_HWAddReg]
+  ```inf
+  [FirmwareUpdate_Component1_HWAddReg]
 
-    HKR,CFU\\_Dock_MCU_,Offer, 0x00000000,%13%\\_Dock_MCU.offer.bin_
+  HKR,CFU\\_Dock_MCU_,Offer, 0x00000000,%13%\\_Dock_MCU.offer.bin_
 
-    HKR,CFU\\_Dock_MCU_,Payload, 0x00000000, %13%\\_Dock_MCU.payload.bin_
+  HKR,CFU\\_Dock_MCU_,Payload, 0x00000000, %13%\\_Dock_MCU.payload.bin_
 
-    HKR,CFU\\_Dock_Audio_,Offer, 0x00000000, %13%\\_Dock_Audio.offer.bin_
+  HKR,CFU\\_Dock_Audio_,Offer, 0x00000000, %13%\\_Dock_Audio.offer.bin_
 
-    HKR,CFU\\_Dock_Audio_Sub_,Payload, 0x00000000, %13%\\_Dock_Audio.payload.bin_
-    ```
+  HKR,CFU\\_Dock_Audio_Sub_,Payload, 0x00000000, %13%\\_Dock_Audio.payload.bin_
+  ```
 
-    - For the multiple package approach, update the extension INF for each component with information about your firmware files.
+- For the multiple package approach, update the extension INF for each component with information about your firmware files.
 
-    - For a monolithic package approach, update the INF file for the device.
+- For a monolithic package approach, update the INF file for the device.
 
-4. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see [DockFirmwareUpdate.inx](https://github.com/Microsoft/CFU/blob/master/Host/ComponentizedPackageExample/DockFWUpdate/DockFirmwareUpdate.inx)
+1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see [DockFirmwareUpdate.inx](https://github.com/Microsoft/CFU/blob/master/Host/ComponentizedPackageExample/DockFWUpdate/DockFirmwareUpdate.inx)
 
     **Note** When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
 
-5. Specify device capabilities in the INF.
+1. Specify device capabilities in the INF.
 
      The sample driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
 
@@ -241,25 +243,25 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
 ### 3. Configure the diagnostic capabilities
 
-    1. The CFU driver sample uses [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) for diagnostics. Update the trace with you own GUID to ensure that you can capture the WPP traces for your customized driver.
+1. The CFU driver sample uses [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) for diagnostics. Update the trace with you own GUID to ensure that you can capture the WPP traces for your customized driver.
 
-        Reference sample: [Trace.h](https://github.com/Microsoft/CFU/blob/master/Host/ComponentFirmwareUpdateDriver/Trace.h)
+  Reference sample: [Trace.h](https://github.com/Microsoft/CFU/blob/master/Host/ComponentFirmwareUpdateDriver/Trace.h)
 
-    1. Update the EVENTLOG Provider in Device.h
+1. Update the EVENTLOG Provider in Device.h
 
-        `EVENTLOG_PROVIDER_NAME L"SampleProvider"`
+  `EVENTLOG_PROVIDER_NAME L"SampleProvider"`
 
-    Reference sample: [Device.h](https://github.com/Microsoft/CFU/blob/master/Host/ComponentFirmwareUpdateDriver/Device.h)
+  Reference sample: [Device.h](https://github.com/Microsoft/CFU/blob/master/Host/ComponentFirmwareUpdateDriver/Device.h)
 
-    ```cpp
-    #define REPORT_ID_FW_VERSION_FEATURE      0x20
-    #define REPORT_ID_PAYLOAD_CONTENT_OUTPUT  0x20
-    #define REPORT_ID_PAYLOAD_RESPONSE_INPUT  0x22
-    #define REPORT_ID_OFFER_CONTENT_OUTPUT    0x25
-    #define REPORT_ID_OFFER_RESPONSE_INPUT    0x25
-    ```
+  ```cpp
+  #define REPORT_ID_FW_VERSION_FEATURE      0x20
+  #define REPORT_ID_PAYLOAD_CONTENT_OUTPUT  0x20
+  #define REPORT_ID_PAYLOAD_RESPONSE_INPUT  0x22
+  #define REPORT_ID_OFFER_CONTENT_OUTPUT    0x25
+  #define REPORT_ID_OFFER_RESPONSE_INPUT    0x25
+  ```
 
-    If you need a different set of report IDs, modify [Dmf_ComponentFirmwareUpdateHidTransport.c](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_ComponentFirmwareUpdateHidTransport.c).
+  If you need a different set of report IDs, modify [Dmf_ComponentFirmwareUpdateHidTransport.c](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_ComponentFirmwareUpdateHidTransport.c).
 
 ### 4. Deploy the package through Windows Update
 
@@ -305,24 +307,24 @@ During the protocol transaction, the CFU driver writes registry entries to indic
 
 - For information about the DWORD, refer to the specification.
 
-| **Stage**  | **Location**  | **Reg Value Name**  | **Value (DWORD)**  |
-|:--|:--|:--|:--|
-| Start; Pre Offer. | {Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*CurrentFwVersion"  | Version from device  |
-|  | {Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*FirmwareUpdateStatus"  | FIRMWARE_UPDATE_STATUS_NOT_STARTED  |
-| Offer; About to send offer.  | {Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*OfferFwVersion"  | Version that is sent (or about to be send) to the device. |
-| Offer Response (Rejected)|{Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*FirmwareUpdateStatusRejectReason"  | Reason for rejection returned by device. |
-| Offer Response (Device Busy)|{Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*FirmwareUpdateStatus"  | FIRMWARE_UPDATE_STATUS_BUSY_PROCESSING_UPDATE  |
-| Offer Response (Accepted); About to send Payload.|{Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*FirmwareUpdateStatus"  | FIRMWARE_UPDATE_STATUS_DOWNLOADING_UPDATE  |  
-| Payload Accepted.  | {Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*FirmwareUpdateStatus"  | FIRMWARE_UPDATE_STATUS_PENDING_RESET  |
-| Error at any stage.  | {Device Hardware key}\ComponentFirmwareUpdate  | "Component*ID*FirmwareUpdateStatus"  | FIRMWARE_UPDATE_STATUS_ERROR  |
+| Stage | Location | Reg Value Name | Value (DWORD) |
+|--|--|--|--|
+| Start; Pre Offer. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*CurrentFwVersion" | Version from device |
+|  | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_NOT_STARTED |
+| Offer; About to send offer. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*OfferFwVersion" | Version that is sent (or about to be send) to the device. |
+| Offer Response (Rejected) | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatusRejectReason" | Reason for rejection returned by device. |
+| Offer Response (Device Busy) | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_BUSY_PROCESSING_UPDATE |
+| Offer Response (Accepted); About to send Payload. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_DOWNLOADING_UPDATE |  |
+| Payload Accepted. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_PENDING_RESET |
+| Error at any stage. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_ERROR |
 
 ## Troubleshooting Tips
 
 1. Check WPP logs to see the driver side interaction per component.
 
-2. Check the event logs for any critical errors.
+1. Check the event logs for any critical errors.
 
-3. Check the book keeping registry entries described in Firmware update status provided by the driver.
+1. Check the book keeping registry entries described in Firmware update status provided by the driver.
 
 ## FAQ
 
@@ -336,7 +338,7 @@ We recommend that you use the multiple packaging approach described  in [compone
 
 **I have two components: component A, and a sub-component B. How should I make the CFU driver aware of component B?**
 
-You don’t need to. The driver doesn’t need to know about the component hierarchy. It interacts with the primary component.
+You don't need to. The driver doesn't need to know about the component hierarchy. It interacts with the primary component.
 
 **How can I make the driver aware about my firmware files (offer, payload) file that I need to send to my component A?**
 
