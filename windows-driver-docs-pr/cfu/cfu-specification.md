@@ -219,83 +219,35 @@ However, the host does not need to withhold an offer based on the response recei
 
 Gets the current firmware version(s) of the primary component (and its sub-components). The command does not have any arguments.  
 
-#### Command
+#### GET\_FIRMWARE\_VERSION Command
 
 This command is sent by the host to query the version(s) of current firmware(s) on the primary component (and its sub-components). The host may use it to confirm whether the firmware was successfully updated. On receiving this command, the primary component responds with the firmware version for itself and all the sub-components.
 
-#### Response
+#### GET\_FIRMWARE\_VERSION Response
 
 The component responds with the firmware version of the primary component and the sub-components. The response size is 60 bytes allowing version information for up to seven components (one primary and up to six sub-components).  
 
-| B3     | B2                       | B1                                       | B0                         | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
-| ------ | ------------------------ | ---------------------------------------- | -------------------------- | -- | -- | -- | -- | --- | --- | -- | -- | --- | --- | --- | --- |
-| Header | Component ID *i* Version | Component ID *i* Properties (Bytes 11-8) | Misc. and Protocol version |    |    |    |    |     |     |    |    |     |     |     |     |
+![GET_FIRMWARE_VERSION Response Layout](images/get-firmware-version-response-layout.png)
 
-<span id="_Toc527459997" class="anchor"></span>Table ‑ GET\_FIRMWARE\_VERSION Response Layout
+##### GET\_FIRMWARE\_VERSION Response - Header
 
-##### Header
-
-|                    |
-| ------------------ |
-| Header (Bytes 3-0) |
-
-| 31 | 30       | 29               | 28       | 27              | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-| -- | -------- | ---------------- | -------- | --------------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
-| E  | Reserved | Protocol Version | Reserved | Component Count |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
-
-<span id="_Toc527459998" class="anchor"></span>Table ‑ GET\_FIRMWARE\_VERSION Response - Header Layout
+![GET_FIRMWARE_VERSION Response - Header Layout](images/get-firmware-version-response-header-layout.png)
 
 The header for the response provides the following information.
 
-| Bit Offset | Field            | Size | Description                                                                                                                                                                                                                                                 |
-| ---------- | ---------------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0          | Component Count  | 8    | The number of downloadable components managed through this mechanism for this Component. The Component Count determines the maximum table size. Currently up to 7 components are supported to ensure that the response can fit within the allowed 60 bytes. |
-| 8          | Rsvd             | 16   | Reserved fields. Sender must set these to 0. Receiver must ignore this value.                                                                                                                                                                               |
-| 24         | Protocol Version | 4    | The firmware update revision bits represent the FW Update Protocol revision is currently being used in the transport. For the interface defined herein, the FW Update Revision must be 0010b.                                                               |
-| 28         | Rsvd             | 3    | Reserved fields. Sender must set these to 0. Receiver must ignore this value.                                                                                                                                                                               |
-| 31         | E                | 1    | The extension flag is a future protocol hook for enabling additional components to be reported.                                                                                                                                                             |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Component Count | 8 | The number of downloadable components managed through this mechanism for this Component. The Component Count determines the maximum table size. Currently up to 7 components are supported to ensure that the response can fit within the allowed 60 bytes. |
+| 8 | Rsvd | 16 | Reserved fields. Sender must set these to 0. Receiver must ignore this value. |
+| 24 | Protocol Version | 4 | The firmware update revision bits represent the FW Update Protocol revision is currently being used in the transport. For the interface defined herein, the FW Update Revision must be 0010b. |
+| 28 | Rsvd | 3 | Reserved fields. Sender must set these to 0. Receiver must ignore this value. |
+| 31 | E | 1 | The extension flag is a future protocol hook for enabling additional components to be reported. |
 
-<span id="_Toc527459999" class="anchor"></span>Table ‑ GET\_FIRMWARE\_VERSION Response – Header Bits
-
-##### Component Version and Properties
+##### GET\_FIRMWARE\_VERSION Response - Component Version and Properties
 
 For each component, two DWORDs are used to describe the properties of the component up to 7 components. If the component count in the header is less than 7, the unused DWORDS at the end of the response must be set to 0.
 
-|                                    |
-| ---------------------------------- |
-| Component ID 0 Version (Bytes 7-4) |
-
-| 31               | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-| ---------------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
-| Firmware Version |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
-
-|                                        |
-| -------------------------------------- |
-| Component ID 0 Properties (Bytes 11-8) |
-
-| 31              | 30           | 29              | 28   | 27   | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-| --------------- | ------------ | --------------- | ---- | ---- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
-| Vendor Specific | Component ID | Vendor Specific | Rsvd | Bank |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
-
-…
-
-|                                   |
-| --------------------------------- |
-| Component ID 6Version (Bytes 7-4) |
-
-| 31               | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-| ---------------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
-| Firmware Version |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
-
-|                                        |
-| -------------------------------------- |
-| Component ID 6 Properties (Bytes 11-8) |
-
-| 31              | 30           | 29              | 28   | 27   | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
-| --------------- | ------------ | --------------- | ---- | ---- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
-| Vendor Specific | Component ID | Vendor Specific | Rsvd | Bank |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
-
-Table GET\_FIRMWARE\_VERSION Response - Component Version and Properties Layout
+![GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](images/get-firmware-version-response-component-version-and-properties-layout.png)
 
 Each component specific information is described in two DWORDs as follows:
 
@@ -353,7 +305,7 @@ Each component specific information is described in two DWORDs as follows:
 </tbody>
 </table>
 
-<span id="_Toc527460000" class="anchor"></span>Table ‑ GET\_FIRMWARE\_VERSION Response - Component Version and Properties Bites
+TBD
 
 #### Mapping to HID
 
@@ -1051,6 +1003,13 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
 
 The possible values for the Flags byte are described in this table.
 
+|Flag  |Name  | Description |
+|---------|---------|---------|
+|0x80     |         |         |
+|0x40     |         |         |
+|Row3     |         |         |
+
+
 <table>
 <thead>
 <tr class="header">
@@ -1076,16 +1035,15 @@ The possible values for the Flags byte are described in this table.
 
 <span id="_Toc527460048" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Offer Command Packet - Flag Values
 
-##### Data
+##### FIRMWARE\_UPDATE\_CONTENT Command Data
 
- -----------------
- Data (Bytes 8-59)
+###### Data (Bytes 8-59)
 
 | 31 | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Data |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-<span id="_Toc527460049" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_CONTENT Command Data Layout
+###### FIRMWARE\_UPDATE\_CONTENT Command Data Bits
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 
@@ -1093,26 +1051,21 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 |--|--|--|--|
 | 64 | Data | Max 52. | The byte array to write. The host typically sends blocks of 4 bytes based on product architecture. Any unused bytes in the end must be 0 padded. |
 
-<span id="_Toc527460050" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_CONTENT Command Data Bits
-
-#### Response
+#### FIRMWARE\_UPDATE\_CONTENT Command Response
 
 | B3 | B2 | B1 | B0 | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Reserved | Sequence Number | Reserved | Status | Reserved | Reserved |  |  |  |  |  |  |  |  |  |  |
 
-<span id="_Toc527460051" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_CONTENT Command Response Layout
+##### FIRMWARE\_UPDATE\_CONTENT Response - Sequence Number
 
-##### Sequence Number
-
- --------------------
- Response (Bytes 3-0)
+###### Response (Bytes 3-0)
 
 | 31 | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Reserved | Sequence Number |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-FIRMWARE\_UPDATE\_CONTENT Response - Sequence Number
+###### FIRMWARE\_UPDATE\_CONTENT - Command - Response Bits
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this table.
 
@@ -1121,104 +1074,41 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this t
 | 0 | Sequence Number | 16 | This field is the sequence number that was sent by the host in the request. |
 | 16 | Reserved | 16 | Reserved. Do not use. |
 
-<span id="_Toc527460052" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_CONTENT - Command - Response Bits
+##### FIRMWARE\_UPDATE\_CONTENT Response Status
 
-##### Status
-
- --------------------
- Response (Bytes 7-4)
+###### Response (Bytes 7-4)
 
 | 31 | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Reserved | Status |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-<span id="_Toc527460053" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_CONTENT Response Status Layout
+###### FIRMWARE\_UPDATE\_OFFER- Response - Status Bits
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (7-4) are described in this table.
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
-| 0 | Status | 8 | <span id="_Toc527460054" class="anchor"></span>This value indicates the status code returned by the device component. This is not a bitwise and can be one of the values described in Table ‑. |
+| 0 | Status | 8 | This value indicates the status code returned by the device component. This is not a bitwise and can be one of the values described in the FIRMWARE\_UPDATE\_OFFER- Response - Status Code Values table below. |
 | 8 | Reserved | 24 | Reserved. Do not use. |  |
 
-<span id="_Toc527460055" class="anchor"></span>Table ‑FIRMWARE\_UPDATE\_OFFER- Response -Status Bits
+###### FIRMWARE\_UPDATE\_OFFER- Response - Status Code Values
 
 The possible values for the Status byte are described in this table.
 
-<table>
-<thead>
-<tr class="header">
-<th>Flag</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0x00</td>
-<td>FIRMWARE_UPDATE_SUCCESS</td>
-<td>The request completed successfully.</td>
-</tr>
-<tr class="even">
-<td>0x01</td>
-<td>FIRMWARE_UPDATE_ERROR_PREPARE</td>
-<td><p>The component was not prepared to receive the firmware contents.</p>
-<p>If used, this code is typically used in a response to the first block. For example, erase error on flash.</p></td>
-</tr>
-<tr class="odd">
-<td>0x2</td>
-<td>FIRMWARE_UPDATE_ERROR_WRITE</td>
-<td>The request could not write the bytes.</td>
-</tr>
-<tr class="even">
-<td>0x3</td>
-<td>FIRMWARE_UPDATE_ERROR_COMPLETE</td>
-<td>The request could not set up the swap in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK.</td>
-</tr>
-<tr class="odd">
-<td>0x04</td>
-<td>FIRMWARE_UPDATE_ERROR_VERIFY</td>
-<td>The verification of the DWORD failed, in response to FIRMWARE_UPDATE_FLAG_VERIFY</td>
-</tr>
-<tr class="even">
-<td>0x05</td>
-<td>FIRMWARE_UPDATE_ERROR_CRC</td>
-<td>CRC of the firmware image failed in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK.</td>
-</tr>
-<tr class="odd">
-<td>0x06</td>
-<td>FIRMWARE_UPDATE_ERROR_SIGNATURE</td>
-<td>Firmware signature verification failed in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK.</td>
-</tr>
-<tr class="even">
-<td>0x07</td>
-<td>FIRMWARE_UPDATE_ERROR_VERSION</td>
-<td>Firmware version verification failed in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK.</td>
-</tr>
-<tr class="odd">
-<td>0x08</td>
-<td>FIRMWARE_UPDATE_SWAP_PENDING</td>
-<td>The firmware has already been updated and a swap is pending. No further Firmware Update commands can be accepted until the accessory has been reset.</td>
-</tr>
-<tr class="even">
-<td>0x09</td>
-<td>FIRMWARE_UPDATE_ERROR_INVALID_ADDR</td>
-<td>Firmware has detected an invalid destination address within the message data content.</td>
-</tr>
-<tr class="odd">
-<td>0x0A</td>
-<td>FIRMWARE_UPDATE_ERROR_NO_OFFER</td>
-<td>The FIRMWARE_UPDATE_OFFER Command was received without first receiving a valid and accepted firmware update offer.</td>
-</tr>
-<tr class="even">
-<td>0x0B</td>
-<td>FIRMWARE_UPDATE_ERROR_INVALID</td>
-<td>General error for the FIRMWARE_UPDATE_OFFER Command, such as an invalid applicable Data Length.</td>
-</tr>
-</tbody>
-</table>
-
-<span id="_Toc527460056" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Response - Status Code Values
+| Flag | Name | Description |
+|--|--|--|
+| 0x00 | FIRMWARE_UPDATE_SUCCESS | The request completed successfully. |
+| 0x01 | FIRMWARE_UPDATE_ERROR_PREPARE | The component was not prepared to receive the firmware contents.<br><br>If used, this code is typically used in a response to the first block. For example, erase error on flash. |
+| 0x02 | FIRMWARE_UPDATE_ERROR_WRITE | The request could not write the bytes. |
+| 0x03 | FIRMWARE_UPDATE_ERROR_COMPLETE | The request could not set up the swap in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK. |
+| 0x04 | FIRMWARE_UPDATE_ERROR_VERIFY | The verification of the DWORD failed, in response to FIRMWARE_UPDATE_FLAG_VERIFY. |
+| 0x05 | FIRMWARE_UPDATE_ERROR_CRC | CRC of the firmware image failed in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK. |
+| 0x06 | FIRMWARE_UPDATE_ERROR_SIGNATURE | Firmware signature verification failed in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK. |
+| 0x07 | FIRMWARE_UPDATE_ERROR_VERSION | Firmware version verification failed in response to FIRMWARE_UPDATE_FLAG_LAST_BLOCK. |
+| 0x08 | FIRMWARE_UPDATE_SWAP_PENDING | The firmware has already been updated and a swap is pending. No further Firmware Update commands can be accepted until the accessory has been reset. |
+| 0x09 | FIRMWARE_UPDATE_ERROR_INVALID_ADDR | Firmware has detected an invalid destination address within the message data content. |
+| 0x0A | FIRMWARE_UPDATE_ERROR_NO_OFFER | The FIRMWARE_UPDATE_OFFER Command was received without first receiving a valid and accepted firmware update offer. |
+| 0x0B | FIRMWARE_UPDATE_ERROR_INVALID | General error for the FIRMWARE_UPDATE_OFFER Command, such as an invalid applicable Data Length. |
 
 ##### Reserved B8 – B11
 
@@ -1234,21 +1124,21 @@ Reserved. Do not use.
 
 Consider the following device firmware:
 
-Primary Component – Component ID 1 – Current firmware version 7.0.1
+- Primary Component – Component ID 1 – Current firmware version 7.0.1
 
-Sub-component – Component ID 2 – Current firmware version 12.4.54
+- Sub-component – Component ID 2 – Current firmware version 12.4.54
 
-Sub-component – Component ID 3 – Current firmware version 4.4.2
+- Sub-component – Component ID 3 – Current firmware version 4.4.2
 
-Sub-component – Component ID 4 – Current firmware version 23.32.9
+- Sub-component – Component ID 4 – Current firmware version 23.32.9
 
 The host has these three firmware images:  
 
-Component ID 1 – Firmware version 7.1.3
+- Component ID 1 – Firmware version 7.1.3
 
-Component ID 2 – Firmware version 12.4.54
+- Component ID 2 – Firmware version 12.4.54
 
-Component ID 3 – Firmware version 4.5.0
+- Component ID 3 – Firmware version 4.5.0
 
 The sequence will be:
 
@@ -1290,21 +1180,21 @@ Because all offers were not rejected, the host replays all the offers:
 
 Consider the following device firmware:
 
-Primary Component – Component ID 1 – Current firmware version 7.0.1
+- Primary Component – Component ID 1 – Current firmware version 7.0.1
 
-Sub-component – Component ID 2 – Current firmware version 12.4.54
+- Sub-component – Component ID 2 – Current firmware version 12.4.54
 
-Sub-component – Component ID 3 – Current firmware version 7.4.2
+- Sub-component – Component ID 3 – Current firmware version 7.4.2
 
-Sub-component – Component ID 4 – Current firmware version 23.32.9
+- Sub-component – Component ID 4 – Current firmware version 23.32.9
 
 The host has these three firmware images:  
 
-Component ID 1 – Firmware version 8.0.0
+- Component ID 1 – Firmware version 8.0.0
 
-Component ID 2 – Firmware version 12.4.54
+- Component ID 2 – Firmware version 12.4.54
 
-Component ID 3 – Firmware version 9.0.0
+- Component ID 3 – Firmware version 9.0.0
 
 In addition, the implementation requires that the firmware version of the sub-components must not be less than the firmware version running on the primary component. The host is not aware of that requirement and it is up-to the primary component to ensure this rule.  
 
