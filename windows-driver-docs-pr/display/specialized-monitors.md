@@ -1,6 +1,6 @@
 ---
-title: HMDs and Specialized Monitors
-description: HMDs and Specialized Monitors
+title: Head-mounted and specialized monitors
+description: Head-mounted and specialized monitors
 keywords:
 - display devices WDK
 - monitor drivers WDK
@@ -16,7 +16,7 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# HMDs and Specialized Displays
+# Head-mounted and specialized monitors
 
 Windows has built-in support for head-mounted displays (HMDs) and other kinds of "specialized" display scenarios. These displays can only be addressed by custom compositors, as they are ignored by the standard Windows system compositor (DWM). In addition, HMDs and specialized displays are given the following properties by Windows:
 
@@ -29,21 +29,21 @@ Windows Mixed Reality headsets are one example of HMDs controlled by a custom co
 
 ## Topics
 
-[EDID Extension for HMDs and Specialized Displays](specialized-monitors-edid-extension.md)
+[EDID extension for head-mounted and specialized monitors](specialized-monitors-edid-extension.md)
 
-[Building Custom Compositors for HMDs and Specialized Displays](specialized-monitors-compositor.md)
+[Building custom compositors for HMDs and specialized displays](specialized-monitors-compositor.md)
 
 ## Version History
 
-### Windows 10 version 1709 (Fall Creator's Update)
+### Windows 10, version 1709 (Fall Creators' Update)
 
 * Windows Mixed Reality ships with support for virtual reality devices. Windows Mixed Reality devices must conform to the Microsoft EDID extension for HMDs version 1.
 
-### Windows 10 version 1809
+### Windows 10, version 1809
 
 * Added support for building third-party HMD compositors using the `Windows.Devices.Display.Core` family of APIs. Supported devices must conform to the Microsoft EDID extension for HMDs version 2.
 
-### Windows 10 version 2004
+### Windows 10, version 2004
 
 * ** Added support for "specialized" displays with version 3 of the Microsoft EDID extension for HMDs and specialized displays.
 * ** Added support for users to designate any monitor as a "specialized" display through Settings.
