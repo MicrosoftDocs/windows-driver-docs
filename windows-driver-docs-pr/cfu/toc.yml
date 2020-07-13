@@ -19,5 +19,3 @@
     href: cfu-standalone-tool-sample.md
   - name: "Component Firmware Update (CFU) specification"
     href: cfu-specification.md
-  - name: "Storage Firmware Update (SFU)"
-    href: storage-firmware-update-driver.md

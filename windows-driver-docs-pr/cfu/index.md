@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CPU) 
 description: Provides information about Component Firmware Update (CPU)
-ms.date: 09/11/2019
+ms.date: 07/13/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,7 +23,3 @@ The [Host](https://github.com/Microsoft/CFU/tree/master/Host) folder contains a 
 The [Firmware](https://github.com/Microsoft/CFU/tree/master/Firmware) folder contains sample firmware source code for implementing the CFU protocol.
 
 The [Tools](https://github.com/Microsoft/CFU/tree/master/Tools) folder contains tools used with CFU.
-
-## See also
-
-[Storage Firmware Update (SFU)](storage-firmware-update-driver.md)
