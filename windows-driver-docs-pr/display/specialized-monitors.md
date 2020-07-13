@@ -1,6 +1,6 @@
 ---
-title: HMDs and Specialized Monitors
-description: HMDs and Specialized Monitors
+title: Head-mounted and specialized monitors
+description: Head-mounted and specialized monitors
 keywords:
 - display devices WDK
 - monitor drivers WDK
@@ -16,7 +16,7 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# HMDs and Specialized Displays
+# Head-mounted and specialized monitors
 
 Windows has built-in support for head-mounted displays (HMDs) and other kinds of "specialized" display scenarios. These displays can only be addressed by custom compositors, as they are ignored by the standard Windows system compositor (DWM). In addition, HMDs and specialized displays are given the following properties by Windows:
 
@@ -29,7 +29,7 @@ Windows Mixed Reality headsets are one example of HMDs controlled by a custom co
 
 ## Topics
 
-[EDID extension for HMDs and specialized displays](specialized-monitors-edid-extension.md)
+[EDID extension for head-mounted and specialized monitors](specialized-monitors-edid-extension.md)
 
 [Building custom compositors for HMDs and specialized displays](specialized-monitors-compositor.md)
 
