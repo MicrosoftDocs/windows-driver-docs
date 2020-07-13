@@ -31,6 +31,10 @@ The settings that you select will apply to any kernel-mode dump file created by 
 
 However, these settings do not affect dump files created by the [**.dump**](-dump--create-dump-file-.md) command. See [Creating a Dump File Without a System Crash](creating-a-dump-file-without-a-system-crash.md) for details on using this command.
 
+> [!NOTE]
+> Using the DedicatedDumpFile registry entry on Azure VM may cause significant delay in creating a kernel-mode dump file.
+> For more information, see [How to use the DedicatedDumpFile registry value to overcome space limitations on the system drive](https://blogs.msdn.com/b/ntdebugging/archive/2010/04/02/how-to-use-the-dedicateddumpfile-registry-value-to-overcome-space-limitations-on-the-system-drive-when-capturing-a-system-memory-dump.aspx).
+
 ## <span id="related_topics"></span>Related topics
 
 
