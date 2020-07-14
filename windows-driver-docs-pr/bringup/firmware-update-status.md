@@ -35,7 +35,7 @@ At this point it is expected that all firmware updates will be applied, and the 
 
  
 
-If the firmware cannot applied successfully, then the Firmware Version, Last Attempt Version and Last Attempt Status entries in the **ESRT** will reflect the failed update attempt. For example, if the system is attempting to update version 1 of the firmware to version 2, and fails to apply successfully, then the Firmware Version = 1, Last Attempt Version = 2, and Last Attempt Status != 0. (I.e. the Last Attempt Status is set to the appropriate non-zero error code indicating the reason failure occurred. For the list of valid error codes for this entry, see [ESRT table definition](esrt-table-definition.md).
+If the firmware cannot be applied successfully, then the Firmware Version, Last Attempt Version, and Last Attempt Status entries in the **ESRT** will reflect the failed update attempt. For example, if the system is attempting to update version 1 of the firmware to version 2, and fails to apply successfully, then the Firmware Version = 1, Last Attempt Version = 2, and Last Attempt Status != 0. (I.e. the Last Attempt Status is set to the appropriate non-zero error code indicating the reason failure occurred. For the list of valid error codes for this entry, see [ESRT table definition](esrt-table-definition.md).
 
 Although the standard update policy enforces that firmware versions can only increase, this policy can be disabled for test purposes via the Policy setting as described in the "**Rolling back firmware updates**" section below.
 
