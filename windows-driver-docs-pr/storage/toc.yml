@@ -419,6 +419,8 @@
         href: interlocked-operations-in-storport-miniport-drivers.md
       - name: "Registry Entries"
         href: registry-entries-for-storport-miniport-drivers.md
+      - name: "DMA remapping support in Storport miniport drivers"
+        href: storport-miniport-dma-remapping-support.md
       - name: "Upgrading Firmware for an NVMe Device"
         href: upgrading-firmware-for-an-nvme-device.md
       - name: "StorNVMe Miniport Driver"
