@@ -251,61 +251,14 @@ For each component, two DWORDs are used to describe the properties of the compon
 
 Each component specific information is described in two DWORDs as follows:
 
-<table>
-<thead>
-<tr class="header">
-<th>Bit Offset</th>
-<th>Field</th>
-<th>Size</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0</td>
-<td>Firmware Version</td>
-<td>32</td>
-<td>Returns the version of the current firmware for that component. This specification does not mandate any specific format for the firmware version. See section Firmware Version for guidelines.</td>
-</tr>
-<tr class="even">
-<td>32</td>
-<td>Bank</td>
-<td>2</td>
-<td>Optional. Depending on the architecture, the component hardware may have multiple banks in which the firmware may be stored. Depending on implementation, the sender may specify the bank in which the firmware currently exists. This field is Conditional Mandatory – support is optional, however must not be used for any other purpose.</td>
-</tr>
-<tr class="odd">
-<td>34</td>
-<td>Rsvd</td>
-<td>2</td>
-<td>Reserved fields. Sender must set these to 0. Receiver must ignore this value.</td>
-</tr>
-<tr class="even">
-<td>36</td>
-<td>Vendor Specific</td>
-<td>4</td>
-<td><p>The vendor specific fields that may be used in an implementation specific manner. A vendor could use these bits to encode information such as:</p>
-<ul>
-<li><p>Type of the firmware: Pre-release/self-host/production; debug/retail</p></li>
-<li><p>Development phase</p></li>
-<li><p>Product ID, to prevent components from receiving firmware for other products using the same update protocol.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>40</td>
-<td>Component ID</td>
-<td>8</td>
-<td>A unique identifier for the component.</td>
-</tr>
-<tr class="even">
-<td>48</td>
-<td>Vendor Specific</td>
-<td>16</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-TBD
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Firmware Version | 32 | Returns the version of the current firmware for that component. This specification does not mandate any specific format for the firmware version. See section Firmware Version for guidelines. |
+| 32 | Bank | 2 | Optional. Depending on the architecture, the component hardware may have multiple banks in which the firmware may be stored. Depending on implementation, the sender may specify the bank in which the firmware currently exists. This field is Conditional Mandatory – support is optional, however must not be used for any other purpose. |
+| 34 | Reserved | 2 | Reserved fields. Sender must set these to 0. Receiver must ignore this value. |
+| 36 | Vendor Specific | 4 | Vendor specific field that may be used in an implementation specific manner.<br><br>A vendor could use these bits to encode information such as:<br><br>- Type of the firmware: Pre-release/self-host/production; debug/retail<br><br>- Development phase<br><br>- Product ID, to prevent components from receiving firmware for other products using the same update protocol. |
+| 40 | Component ID | 8 | A unique identifier for the component. |
+| 48 | Vendor Specific | 16 | Vendor specific field that may be used in an implementation specific manner. |
 
 #### Mapping to HID
 
@@ -340,6 +293,17 @@ The FIRMWARE\_UPDATE\_OFFER Command packet is defined as follows.
 <span id="_Toc527460002" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER **Command -** Component Information Layout
 
 <span id="_Component_Information" class="anchor"></span>The bits of the Component Information byte is described in this table.
+
+
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+|Row1     |         |         |         |
+|Row2     |         |         |         |
+|Row3     |         |         |         |
+|Row4     |         |         |         |
+|Row5     |         |         |         |
+|Row6     |         |         |         |
+
 
 <table>
 <thead>
@@ -419,6 +383,12 @@ These four bytes represent the 32-bit version of the firmware. The format for th
 
 The format for the firmware version is not mandated by this specification, however following is a recommended guideline.
 
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+|Row1     |         |         |         |
+|Row2     |         |         |         |
+|Row3     |         |         |         |
+
 <table>
 <thead>
 <tr class="header">
@@ -473,12 +443,12 @@ These four bytes may be used to encode any custom information in the offer that 
 
 The bits of the Vendor Specific byte are described in this table.
 
-| Bit Offset | Field            | Size | Description                                                                                                      |
-| ---------- | ---------------- | ---- | ---------------------------------------------------------------------------------------------------------------- |
-| 0          | Protocol Version | 4    | This field must be set to 0010b indicating that the host/offer corresponds to the version 2 of the CFU protocol. |
-| 4          | Reserved         | 4    | Reserved. Do not use.                                                                                            |
-| 8          | Reserved         | 8    | Reserved. Do not use.                                                                                            |
-| 16         | Vendor Specific  | 16   | This field may be used to encode any custom information in the offer that is specific to vendor implementation.  |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Protocol Version | 4 | This field must be set to 0010b indicating that the host/offer corresponds to the version 2 of the CFU protocol. |
+| 4 | Reserved | 4 | Reserved. Do not use. |
+| 8 | Reserved | 8 | Reserved. Do not use. |
+| 16 | Vendor Specific | 16 | This field may be used to encode any custom information in the offer that is specific to vendor implementation. |
 
 <span id="_Toc527460007" class="anchor"></span>Table 5.2‑7 FIRMWARE\_UPDATE\_OFFER Command - Misc. and Protocol version
 
@@ -506,12 +476,12 @@ The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
 
 The bits of the Token byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                 |
-| ---------- | --------- | ---- | --------------------------- |
-| 0          | Reserved. | 8    | Reserved. Do not use.       |
-| 8          | Reserved. | 8    | Reserved. Do not use.       |
-| 16         | Reserved. | 8    | Reserved. Do not use.       |
-| 24         | Token     | 8    | Token to identify the host. |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Reserved | 8 | Reserved. Do not use. |
+| 8 | Reserved | 8 | Reserved. Do not use. |
+| 16 | Reserved | 8 | Reserved. Do not use. |
+| 24 | Token | 8 | Token to identify the host. |
 
 <span id="_Toc527460010" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER Response – Token Bits
 
@@ -533,23 +503,23 @@ Reserved. Do not use.
 
 The bits of the Reject Reason byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                                                                                                                                                                                                                                                                         |
-| ---------- | --------- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0          | RR Code   | 8    | <span id="_Toc527460012" class="anchor"></span>The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. The possible values are described in Table. This value depends on the Status field. For a Status to RR Code mapping see Table ‑. |
-| 8          | Reserved. | 24   | Reserved. Do not use.                                                                                                                                                                                                                                                               |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | RR Code | 8 | The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. The possible values are described in Table. This value depends on the Status field. For a Status to RR Code mapping see Table ‑. |
+| 8 | Reserved. | 24 | Reserved. Do not use. |                                                             |
 
 <span id="_Toc527460013" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER Response - Reject Reason Bits
 
 The possible values for the RR Code byte are described in this table.
 
-| RR Code     | Name                                    | Description                                                                                                                                                                                                   |
-| ----------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0x00        | FIRMWARE\_OFFER\_REJECT\_OLD\_FW        | The offer was rejected because the version of the offered firmware is older or same as the current firmware.                                                                                                  |
-| 0x01        | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
-| 0x02        | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING   | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset.               |
-| 0x03 – 0x08 | (Reserved)                              | Reserved. Do not use.                                                                                                                                                                                         |
-| 0x09 – 0xDF | (Reserved)                              | Reserved. Do not use.                                                                                                                                                                                         |
-| 0xE0—0xFF   | (Vendor Specific)                       | These values are used by the designers of the protocol and the meaning is vendor specific.                                                                                                                    |
+| RR Code | Name | Description |
+|--|--|--|
+| 0x00 | FIRMWARE\_OFFER\_REJECT\_OLD\_FW | The offer was rejected because the version of the offered firmware is older or same as the current firmware. |
+| 0x01 | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
+| 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
+| 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
+| 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
+| 0xE0—0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
 <span id="_Toc527460014" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER Response RR Code Values
 
@@ -567,14 +537,25 @@ FIRMWARE\_UPDATE\_OFFER Response Status Layout
 
 The bits of the Status byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                                                                                                                                                                                                                                             |
-| ---------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0          | Status    | 8    | <span id="_Toc527460015" class="anchor"></span>This value indicates the component's decision to accept, pend, skip, or reject the offer. The component provides the reason the in the RR Code field value. For a Status to RR Code mapping see Table ‑. |
-| 8          | Reserved. | 24   | Reserved. Do not use.                                                                                                                                                                                                                                   |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Status | 8 | <span id="_Toc527460015" class="anchor"></span>This value indicates the component's decision to accept, pend, skip, or reject the offer. The component provides the reason the in the RR Code field value. For a Status to RR Code mapping see Table ‑. |
+| 8 | Reserved. | 24 | Reserved. Do not use. |                                                                                                                                                                                                                             |
 
 <span id="_Toc527460016" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER Response – Status Bits
 
 The possible values for the Status byte are described in this table.
+
+
+| Status | Name | Description |
+|--|--|--|
+| Row1 |  |  |
+| Row2 |  |  |
+| Row3 |  |  |
+| Row4 |  |  |
+| Row5 |  |  |
+| Row6 |  |  |
+
 
 <table>
 <thead>
@@ -654,20 +635,20 @@ The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
 
 The bits of the Component byte are described in this table.
 
-| Bit Offset | Field            | Size | Description                                                                                                                                    |
-| ---------- | ---------------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0          | Information Code | 8    | This value indicates the type of information. This value is not a bitmask and can only be one of the possible values described in Table 5.3 4. |
-| 8          | Reserved.        | 8    | Reserved. Do not use.                                                                                                                          |
-| 16         | Component ID     | 8    | Set to 0xFF.                                                                                                                                   |
-| 24         | Token            |      | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response.          |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Information Code | 8 | This value indicates the type of information. This value is not a bitmask and can only be one of the possible values described in Table 5.3 4. |
+| 8 | Reserved. | 8 | Reserved. Do not use. |
+| 16 | Component ID | 8 | Set to 0xFF. |
+| 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
 <span id="_Toc527460020" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER - Information Command – Component Bits
 
-| Status | Name                                    | Description                                                                                                                                                                                        |
-| ------ | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0x00   | OFFER\_INFO\_START\_ENTIRE\_TRANSACTION | Indicates that the host is new, or has been reloaded, and the entire offer processing is (re)starting.                                                                                             |
-| 0x01   | OFFER\_INFO\_START\_OFFER\_LIST         | Indicates the beginning of the Offer list from the host in case the Accessory has download rules associated with ensuring one subcomponent is updated prior to another subcomponent in the system. |
-| 0x02   | OFFER\_INFO\_END\_OFFER\_LIST           | Indicates the end of the Offer list from the host.                                                                                                                                                 |
+| Status | Name | Description |
+|--|--|--|
+| 0x00 | OFFER\_INFO\_START\_ENTIRE\_TRANSACTION | Indicates that the host is new, or has been reloaded, and the entire offer processing is (re)starting. |
+| 0x01 | OFFER\_INFO\_START\_OFFER\_LIST | Indicates the beginning of the Offer list from the host in case the Accessory has download rules associated with ensuring one subcomponent is updated prior to another subcomponent in the system. |
+| 0x02 | OFFER\_INFO\_END\_OFFER\_LIST | Indicates the end of the Offer list from the host. |
 
 <span id="_Toc527460021" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER - Information Command – Information Code Values.
 
@@ -707,12 +688,12 @@ The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defin
 
 The bits of the Token byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                 |
-| ---------- | --------- | ---- | --------------------------- |
-| 0          | Reserved. | 8    | Reserved. Do not use.       |
-| 8          | Reserved. | 8    | Reserved. Do not use.       |
-| 16         | Reserved. | 8    | Reserved. Do not use.       |
-| 24         | Token     | 8    | Token to identify the host. |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Reserved. | 8 | Reserved. Do not use. |
+| 8 | Reserved. | 8 | Reserved. Do not use. |
+| 16 | Reserved. | 8 | Reserved. Do not use. |
+| 24 | Token | 8 | Token to identify the host. |
 
 <span id="_Toc527460024" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER - Information Response – Token Bits
 
@@ -734,23 +715,23 @@ Reserved. Do not use.
 
 The bits of the Reject Reason byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                                                                                                                                                                                                                              |
-| ---------- | --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0          | RR Code   | 8    | <span id="_Toc527460026" class="anchor"></span>The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. The possible values are described in Table ‑. This value depends on the Status field. |
-| 8          | Reserved. | 24   | Reserved. Do not use.                                                                                                                                                                                                                    |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | RR Code | 8 | The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. The possible values are described in Table ‑. This value depends on the Status field. |
+| 8 | Reserved. | 24 | Reserved. Do not use. |
 
 <span id="_Toc527460027" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Offer Information Response - RR Code Bits
 
 The possible values for the RR Code byte are described in this table.
 
-| RR Code     | Name                                    | Description                                                                                                                                                                                                   |
-| ----------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0x00        | FIRMWARE\_OFFER\_REJECT\_OLD\_FW        | The offer was rejected because the version of the offered firmware is older or same as the current firmware.                                                                                                  |
-| 0x01        | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
-| 0x02        | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING   | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset.               |
-| 0x03 – 0x08 | (Reserved)                              | Reserved. Do not use.                                                                                                                                                                                         |
-| 0x09 – 0xDF | (Reserved)                              | Reserved. Do not use.                                                                                                                                                                                         |
-| 0xE0—0xFF   | (Vendor Specific)                       | These values are used by the designers of the protocol and the meaning is vendor specific.                                                                                                                    |
+| RR Code | Name | Description |
+|--|--|--|
+| 0x00 | FIRMWARE\_OFFER\_REJECT\_OLD\_FW | The offer was rejected because the version of the offered firmware is older or same as the current firmware. |
+| 0x01 | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
+| 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
+| 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
+| 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
+| 0xE0—0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
 <span id="_Toc527460028" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Information Response - RR Code Values
 
@@ -768,10 +749,10 @@ The possible values for the RR Code byte are described in this table.
 
 The bits of the Status byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                                                                                                                   |
-| ---------- | --------- | ---- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 0          | Status    | 8    | This field must be set to FIRMWARE\_UPDATE\_OFFER\_ACCEPT. This indicates that the component has decided to accept the offer. |
-| 8          | Reserved. | 24   | Reserved. Do not use.                                                                                                         |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Status | 8 | This field must be set to FIRMWARE\_UPDATE\_OFFER\_ACCEPT. This indicates that the component has decided to accept the offer. |
+| 8 | Reserved. | 24 | Reserved. Do not use. |
 
 <span id="_Toc527460030" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER - Offer Information - Response Status Bits
 
@@ -803,19 +784,19 @@ If the Component ID in the Component Information bytes ([Component Information](
 
 The bits of the Component byte are described in this table.
 
-| Bit Offset | Field        | Size | Description                                                                                                                                                                           |
-| ---------- | ------------ | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0          | Command Code | 8    | <span id="_Toc527460033" class="anchor"></span>This value indicates the type of command. This value is not a bitmask and can only be one of the possible values described in Table ‑. |
-| 8          | Reserved.    | 8    | Reserved. Do not use.                                                                                                                                                                 |
-| 16         | Component ID | 8    | Set to 0xFE.                                                                                                                                                                          |
-| 24         | Token        |      | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response.                                                 |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Command Code | 8 | <span id="_Toc527460033" class="anchor"></span>This value indicates the type of command. This value is not a bitmask and can only be one of the possible values described in Table ‑. |
+| 8 | Reserved. | 8 | Reserved. Do not use. |
+| 16 | Component ID | 8 | Set to 0xFE. |
+| 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
 <span id="_Toc527460034" class="anchor"></span>Table ‑FIRMWARE\_UPDATE\_OFFER - Extended Command – Component Bits
 
-| Status    | Name                     | Description                                                                  |
-| --------- | ------------------------ | ---------------------------------------------------------------------------- |
-| 0x01      | OFFER\_NOTIFY\_ON\_READY | Sent by the host if the offer was previously been rejected by the component. |
-| 0x02-0xFF | Reserved.                | Reserved.                                                                    |
+| Status | Name | Description |
+|--|--|--|
+| 0x01 | OFFER\_NOTIFY\_ON\_READY | Sent by the host if the offer was previously been rejected by the component. |
+| 0x02-0xFF | Reserved. | Reserved. |
 
 <span id="_Toc527460035" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER - Extended Command – Command Code Values.
 
@@ -855,12 +836,12 @@ The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be 
 
 The bits of the Token byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                 |
-| ---------- | --------- | ---- | --------------------------- |
-| 0          | Reserved. | 8    | Reserved. Do not use.       |
-| 8          | Reserved. | 8    | Reserved. Do not use.       |
-| 16         | Reserved. | 8    | Reserved. Do not use.       |
-| 24         | Token     | 8    | Token to identify the host. |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Reserved. | 8 | Reserved. Do not use. |
+| 8 | Reserved. | 8 | Reserved. Do not use. |
+| 16 | Reserved. | 8 | Reserved. Do not use. |
+| 24 | Token | 8 | Token to identify the host. |
 
 FIRMWARE\_UPDATE\_OFFER - Offer Command Response - Token Bits
 
@@ -882,23 +863,23 @@ Reserved. Do not use.
 
 The bits of the Reject Reason byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                                                                                                                              |
-| ---------- | --------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| 0          | RR Code   | 8    | <span id="_Toc527460039" class="anchor"></span>Figure. This value depends on the Status field. For possible RR Code values, see Table ‑. |
-| 8          | Reserved. | 24   | Reserved. Do not use.                                                                                                                    |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | RR Code | 8 | This value depends on the Status field. For possible RR Code values, see the following table. |
+| 8 | Reserved. | 24 | Reserved. Do not use. |
 
 <span id="_Toc527460040" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Offer Command Response - RR Code
 
 The possible values for the RR Code byte are described in this table.
 
-| RR Code     | Name                                    | Description                                                                                                                                                                                                   |
-| ----------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0x00        | FIRMWARE\_OFFER\_REJECT\_OLD\_FW        | The offer was rejected because the version of the offered firmware is older or same as the current firmware.                                                                                                  |
-| 0x01        | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
-| 0x02        | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING   | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset.               |
-| 0x03 – 0x08 | (Reserved)                              | Reserved. Do not use.                                                                                                                                                                                         |
-| 0x09 – 0xDF | (Reserved)                              | Reserved. Do not use.                                                                                                                                                                                         |
-| 0xE0—0xFF   | (Vendor Specific)                       | These values are used by the designers of the protocol and the meaning is vendor specific.                                                                                                                    |
+| RR Code | Name | Description |
+|--|--|--|
+| 0x00 | FIRMWARE\_OFFER\_REJECT\_OLD\_FW | The offer was rejected because the version of the offered firmware is older or same as the current firmware. |
+| 0x01 | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
+| 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
+| 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
+| 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
+| 0xE0—0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
 <span id="_Toc527460041" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Offer Command Packet - RR Code Values
 
@@ -916,10 +897,10 @@ The possible values for the RR Code byte are described in this table.
 
 The bits of the Status byte are described in this table.
 
-| Bit Offset | Field     | Size | Description                                                                                                                   |
-| ---------- | --------- | ---- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 0          | Status    | 8    | This field must be set to FIRMWARE\_UPDATE\_OFFER\_ACCEPT. This indicates that the component has decided to accept the offer. |
-| 8          | Reserved. | 24   | Reserved. Do not use.                                                                                                         |
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+| 0 | Status | 8 | This field must be set to FIRMWARE\_UPDATE\_OFFER\_ACCEPT. This indicates that the component has decided to accept the offer. |
+| 8 | Reserved. | 24 | Reserved. Do not use. |
 
 <span id="_Toc527460043" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Offer Command Packet Response RR Code
 
@@ -960,6 +941,14 @@ When the primary component receives the last block, the component validates the 
 <span id="_Toc527460045" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_CONTENT Command Header Layout
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
+
+| Bit Offset | Field | Size | Description |
+|--|--|--|--|
+|Row1     |         |         |         |
+|Row2     |         |         |         |
+|Row3     |         |         |         |
+|Row4     |         |         |         |
+
 
 <table>
 <thead>
@@ -1003,35 +992,10 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
 
 The possible values for the Flags byte are described in this table.
 
-|Flag  |Name  | Description |
-|---------|---------|---------|
-|0x80     |         |         |
-|0x40     |         |         |
-|Row3     |         |         |
-
-
-<table>
-<thead>
-<tr class="header">
-<th>Flag</th>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0x80</td>
-<td>FIRMWARE_UPDATE_FLAG_FIRST_BLOCK</td>
-<td>This flag indicates that this is the first block of the firmware image.</td>
-</tr>
-<tr class="even">
-<td>0x40</td>
-<td>FIRMWARE_UPDATE_FLAG_LAST_BLOCK</td>
-<td><p>This flag indicates that this is the last block of the firmware image and that the image is ready to be validated.</p>
-<p>It is important that the current firmware on the component performs validation on the entire downloaded firmware image after writing this block to non-volatile memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Flag | Name | Description |
+|--|--|--|
+| 0x80 | FIRMWARE_UPDATE_FLAG_FIRST_BLOCK | This flag indicates that this is the first block of the firmware image. |
+| 0x40 | FIRMWARE_UPDATE_FLAG_LAST_BLOCK | This flag indicates that this is the last block of the firmware image and that the image is ready to be validated.<br><br>It is important that the current firmware on the component performs validation on the entire downloaded firmware image after writing this block to non-volatile memory. |
 
 <span id="_Toc527460048" class="anchor"></span>Table ‑ FIRMWARE\_UPDATE\_OFFER- Offer Command Packet - Flag Values
 
