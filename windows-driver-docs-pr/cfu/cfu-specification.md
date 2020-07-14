@@ -494,15 +494,15 @@ The bits of the Component byte are described in this table.
 | 0x01 | OFFER\_INFO\_START\_OFFER\_LIST | Indicates the beginning of the Offer list from the host in case the Accessory has download rules associated with ensuring one subcomponent is updated prior to another subcomponent in the system. |
 | 0x02 | OFFER\_INFO\_END\_OFFER\_LIST | Indicates the end of the Offer list from the host. |
 
-##### Reserved B7 – B4
+##### Reserved B7 – B4 (Information Command)
 
 Reserved. Do not use.
 
-##### Reserved B11 – B8
+##### Reserved B11 – B8 (Information Command)
 
 Reserved. Do not use.
 
-##### Reserved B15 – B12
+##### Reserved B15 – B12 (Information Command)
 
 Reserved. Do not use.
 
@@ -535,7 +535,7 @@ The bits of the Token byte are described in this table.
 | 16 | Reserved. | 8 | Reserved. Do not use. |
 | 24 | Token | 8 | Token to identify the host. |
 
-##### Reserved B7 – B4
+##### Reserved B7 – B4 (Information Response)
 
 Reserved. Do not use.
 
@@ -630,15 +630,15 @@ The bits of the Component byte are described in this table.
 | 0x01 | OFFER\_NOTIFY\_ON\_READY | Sent by the host if the offer was previously been rejected by the component. |
 | 0x02-0xFF | Reserved. | Reserved. |
 
-##### Reserved B7 – B4
+##### Reserved B7 – B4 (Extended Command)
 
 Reserved. Do not use.
 
-##### Reserved B11 – B8
+##### Reserved B11 – B8 (Extended Command)
 
 Reserved. Do not use.
 
-##### Reserved B15 – B12
+##### Reserved B15 – B12 (Extended Command)
 
 Reserved. Do not use.
 
