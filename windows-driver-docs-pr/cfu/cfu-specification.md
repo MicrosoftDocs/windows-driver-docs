@@ -1,5 +1,5 @@
 ---
-title: Component Firmware Update (CPU) protocol specification
+title: Component Firmware Update (CPU) Protocol Specification
 description: This specification describes a generic HID protocol to update firmware for components without interrupting the device operation during a download.
 ms.date: 07/13/2020
 ms.topic: article
@@ -8,7 +8,7 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CPU) protocol specification
+# Component Firmware Update (CPU) Protocol Specification
 
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 
@@ -35,7 +35,7 @@ Some of the features of the protocol are:
 
 - The specification supports the concept of an *offer* and relies on the component in-charge to decide whether to accept the firmware. The decision to accept new firmware is not trivial. There might be dependencies between the firmware type and/or version and the underlying type/version of hardware to which the new firmware applies. An offer also acts as an optimization mechanism because the firmware image is sent to the component only if it is able /ready to accept it.
 
-## Terminology
+## 1.1 Glossary
 
 | Term | Description |
 |--|--|
@@ -55,7 +55,7 @@ Some of the features of the protocol are:
 
 ## Scope
 
-### Goals
+### 1.1.1 Goals
 
 - A bus-agnostic solution is required to avoid a new protocol for every type of bus. HID is ubiquitous and addresses that requirement.
 
@@ -71,7 +71,7 @@ Some of the features of the protocol are:
 
 - The ability to segment a large firmware image into smaller segments to make it easier for the component to accept the firmware image.
 
-### Non-goals
+### 1.1.2 Non-goals
 
 - Define the internal format of the firmware image: For the host, the firmware image is a set of address and payload entries.
 
@@ -79,7 +79,7 @@ Some of the features of the protocol are:
 
 - Define a mechanism about how the component interacts with the sub-components: The host interacts with the device as single unit, typically the primary component. The component must act as a bridge for communication related to the sub-component firmware.
 
-## Supported Hardware Architecture
+## 2 Supported Hardware Architecture
 
 To support a flexible hardware design, the protocol supports a multi-component device where each component requires its own firmware image. In the design, one component is the primary component and the dependent sub-components are connected to that primary component. Each component is uniquely described by a component ID.  
 
@@ -89,7 +89,7 @@ On a PC, there might be many different devices (where a device may have one or m
 
 ![Device Firmware, Primary Component and its Sub-components](images/primary-component.png)
 
-## Protocol Prerequisites
+## 3 Protocol Prerequisites
 
 This section lists the perquisites and best practices that must be implemented to leverage this protocol:
 
@@ -115,7 +115,7 @@ This section lists the perquisites and best practices that must be implemented t
 
   Rollback policies are enforced by the primary component and are implementation specific.  The current firmware on the component validates incoming firmware images against internal policies such as the version number must be newer, or release type cannot be switched from release to debug, and so on. The protocol permits messaging to indicate that an update is accepted even if it is violating rollback policies.
 
-## CFU Protocol Overview
+## 4 CFU Protocol Overview
 
 The CFU protocol is a set of commands and responses that are required to send the new firmware image(s) from the host to the device for which the firmware is intended.
 
@@ -123,23 +123,23 @@ At a high level the protocol iterates through all the firmware images to send to
 
 To support cases where a device update order has dependencies, the device may not accept certain offers in the first pass, therefore the protocol allows the host to resend all the firmware offers to the device until all dependencies are resolved.
 
-### Firmware Update Programming Command Sequence
+### 4.1 Firmware Update Programming Command Sequence
 
 Here is the CFU command sequence for updating firmware image.
 
 ![Firmware Update Programming Command Sequence](images/firmware-update-command-sequence.png)
 
-#### State: Host Initialized Notification
+#### 4.1.1 State: Host Initialized Notification
 
 After the host initializes itself and has identified a set of offers it needs to send to the device, the host issues an OFFER\_INFO\_START\_ENTIRE\_TRANSACTION command to indicate to the component that the host is now initialized. The purpose of this command is to notify the current device firmware that a new instance of the host is available. This notification is useful when a prior instance of the host gets terminated unexpectedly. The device must complete this command with success.
 
-#### State: OFFER\_INFO\_START\_OFFER\_LIST Notification
+#### 4.1.2 State: OFFER\_INFO\_START\_OFFER\_LIST Notification
 
 In this state, host issues the OFFER\_INFO\_START\_OFFER\_LIST command to indicate that it is ready to send the offer(s) to the current device firmware. The primary component of the device must complete this command with success.
 
 This command is useful because the host may send all offers to the device more than once.
 
-#### State: Send FIRMWARE\_UPDATE\_OFFER command
+#### 4.1.3 State: Send FIRMWARE\_UPDATE\_OFFER command
 
 The host sends an offer to the primary component (or its sub-component) to check if the component would like to accept/reject the firmware. The offer contains all the necessary metadata about the firmware image, so that the current firmware on the component can decide whether to accept, pend, skip or reject the offer.
 
@@ -157,7 +157,7 @@ If the current firmware is interested in the offer, however cannot accept the of
 
 If the current firmware is not interested in the offer (e.g. it is an older version), then it responds with a FIRMWARE\_UPDATE\_OFFER\_REJECT status providing the appropriate reject reason. This status does not indicate that host cannot resend this offer in the future. The host typically sends each offer every time it initializes or resends the list of offers to the device (see State: OFFER\_INFO\_START\_OFFER\_LIST Notification).
 
-#### State: Send Firmware
+#### 4.1.4 State: Send Firmware
 
 In this state the host starts sending the firmware image to the primary component, for which the component has previously accepted the offer.
 
@@ -183,29 +183,29 @@ If the preceding checks pass, the current firmware can set up the device to swap
 
 If the verification steps fail, the firmware must not set up a swap on the next reset and must indicate a failure response to the host.
 
-#### Decision State: Are there more offers
+#### 4.1.5 Decision State: Are there more offers
 
 In this state, the host determines if there are more offers to send to the device.
 
-#### State: OFFER\_INFO\_END\_OFFER\_LIST Notification
+#### 4.1.6 State: OFFER\_INFO\_END\_OFFER\_LIST Notification
 
 This state is reached when the host has sent all the offers to the primary component in the current device firmware. The host sends the OFFER\_INFO\_END\_OFFER\_LIST command to indicate that it has sent all the offers to the component.
 
 The device must complete this command with success.
 
-#### Decision State: Replay Offer list
+#### 4.1.7 Decision State: Replay Offer list
 
 The host determines if it needs to resend all the offers. That case might occur if previously the primary component had skipped some offers and accepted some offers. The host must replay the offer list again.
 
 There may be other implementation specific logic that may result in a decision to replay the offer list.
 
-#### State: Device is Busy
+#### 4.1.8 State: Device is Busy
 
 This state implies that a device returned a busy response to an offer.
 
 The host sends an OFFER\_NOTIFY\_ON\_READY command, to which the device does not response with acceptance until the device is free.
 
-## CFU Protocol Packet Format
+## 5 CFU Protocol Packet Format
 
 The CFU protocol is implemented as set of commands and responses. The protocol is sequential in nature. For each command that the host sends to a component, the component is expected to respond (unless explicitly stated otherwise in this specification). The host does not send the next command, until a valid response is received for the previous command it sent.  
 
@@ -215,25 +215,31 @@ There are commands to get the version information of current firmware on the com
 
 However, the host does not need to withhold an offer based on the response received from the primary component about the queried version information. The information is made discoverable for logging or other purposes.
 
-### GET\_FIRMWARE\_VERSION
+### 5.1 GET\_FIRMWARE\_VERSION
 
 Gets the current firmware version(s) of the primary component (and its sub-components). The command does not have any arguments.  
 
-#### GET\_FIRMWARE\_VERSION Command
+#### 5.1.1 Command
 
 This command is sent by the host to query the version(s) of current firmware(s) on the primary component (and its sub-components). The host may use it to confirm whether the firmware was successfully updated. On receiving this command, the primary component responds with the firmware version for itself and all the sub-components.
 
-#### GET\_FIRMWARE\_VERSION Response
+#### 5.1.2 Response
 
 The component responds with the firmware version of the primary component and the sub-components. The response size is 60 bytes allowing version information for up to seven components (one primary and up to six sub-components).  
 
+**Table 5.1-1 GET_FIRMWARE_VERSION Response Layout**
+
 ![GET_FIRMWARE_VERSION Response Layout](images/get-firmware-version-response-layout.png)
 
-##### GET\_FIRMWARE\_VERSION Response - Header
+##### 5.1.2.1 Header
+
+**Table 5.1-2 GET_FIRMWARE_VERSION Response -  Header Layout**
 
 ![GET_FIRMWARE_VERSION Response - Header Layout](images/get-firmware-version-response-header-layout.png)
 
 The header for the response provides the following information.
+
+**Table 5.1-3 GET_FIRMWARE_VERSION Response – Header Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -243,13 +249,17 @@ The header for the response provides the following information.
 | 28 | Rsvd | 3 | Reserved fields. Sender must set these to 0. Receiver must ignore this value. |
 | 31 | E | 1 | The extension flag is a future protocol hook for enabling additional components to be reported. |
 
-##### GET\_FIRMWARE\_VERSION Response - Component Version and Properties
+##### 5.1.2.2 Component Version and Properties
 
 For each component, two DWORDs are used to describe the properties of the component up to 7 components. If the component count in the header is less than 7, the unused DWORDS at the end of the response must be set to 0.
+
+**Table - GET_FIRMWARE_VERSION Response - Component Version and Properties Layout**
 
 ![GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](images/get-firmware-version-response-component-version-and-properties-layout.png)
 
 Each component specific information is described in two DWORDs as follows:
+
+**Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -260,29 +270,29 @@ Each component specific information is described in two DWORDs as follows:
 | 40 | Component ID | 8 | A unique identifier for the component. |
 | 48 | Vendor Specific | 16 | Vendor specific field that may be used in an implementation specific manner. |
 
-#### Mapping to HID
+#### 5.1.3 Mapping to HID
 
 This is implemented as a **HID Get Feature** request with a response size of 60 bytes, in addition to the Report ID. The feature report length accommodates the entire GET\_FIRMWARE\_VERSION response. There is no data associated with the Get Feature request from the host.
 
-### FIRMWARE\_UPDATE\_OFFER
+### 5.2 FIRMWARE\_UPDATE\_OFFER
 
 Determines whether the primary component accepts or rejects a firmware.
 
-#### Command
+#### 5.2.1 Command
 
 The host sends this command to the component to determine whether it accepts or rejects a firmware. The host must send an offer and the component must accept the offer before the host can send the firmware.
 
-##### FIRMWARE\_UPDATE\_OFFER Command Layout
-
 The FIRMWARE\_UPDATE\_OFFER Command packet is defined as follows.
+
+**Table 5.2-1 FIRMWARE_UPDATE_OFFER Command Layout**
 
 | B3                    | B2               | B1              | B0                         | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | --------------------- | ---------------- | --------------- | -------------------------- | -- | -- | -- | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Component Information | Firmware Version | Vendor Specific | Misc. and Protocol version |    |    |    |    |     |     |    |    |     |     |     |     |
 
-##### Component Information
+##### 5.2.1.1 Component Information
 
-###### FIRMWARE\_UPDATE\_OFFER **Command -** Component Information Layout
+**Table 5.2-2 FIRMWARE_UPDATE_OFFER Command - Component Information Layout**
 
 |                                   |
 | --------------------------------- |
@@ -292,9 +302,9 @@ The FIRMWARE\_UPDATE\_OFFER Command packet is defined as follows.
 | ----- | ------------ | -- | -- | -------- | -------------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Component ID | V  | I  | Reserved | Segment Number |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER **Command -** Component Information Bits
-
 The bits of the Component Information byte are described in this table.
+
+**Table 5.2-3 FIRMWARE_UPDATE_OFFER Command - Component Information Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -305,11 +315,11 @@ The bits of the Component Information byte are described in this table.
 | 16 | Component ID | 8 | This byte is used for multi- component scenarios. This field may be used to identify the sub-component for which the offer is intended. If not used the value should be 0. The possible values of component IDs are as follows:<br><br>1 – 0xDF: Valid<br><br>0xE0 – 0xFD: Reserved. Do not use.<br><br>0xFF: The offer is a special offer information packet. See FIRMWARE_UPDATE_OFFER Information for details.<br><br>0xFE : The offer is a special offer command packet. See FIRMWARE_UPDATE_OFFER Extended section for details. |
 | 24 | Token | 8 | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response.<<br><br>This is useful if there is a need for the component to distinguish between the different hosts/types of hosts.<br><br>Exact values to be used are implementation specific. For example, one value may be used for a driver and another for the application. This allows the current device firmware to account for potential multiple senders of CFU commands. One possible implementation may be to accept the first CFU command and reject all other commands with different tokens until the first CFU transactions are complete. |
 
-##### Firmware Version
+##### 5.2.1.2 Firmware Version
 
 These four bytes represent the 32-bit version of the firmware. The format for the firmware version is not mandated by this specification. The following is recommended.
 
-###### FIRMWARE\_UPDATE\_OFFER Command - Firmware Version Layout
+**Table 5.2-4 FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout**
 
 |                              |
 | ---------------------------- |
@@ -319,9 +329,9 @@ These four bytes represent the 32-bit version of the firmware. The format for th
 | ------------- | ------------- | ------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Major Version | Minor Version | Variant |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER **Command -** Firmware Version Bits
-
 The format for the firmware version is not mandated by this specification, however following is a recommended guideline.
+
+**Table 5.2-5 FIRMWARE_UPDATE_OFFER Command - Firmware Version Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -329,9 +339,15 @@ The format for the firmware version is not mandated by this specification, howev
 | 8 | Minor Version | 16 | This field value should be updated for every build of the firmware.<br><br>This field value should be updated for every build of the firmware. |
 | 24 | Major Version | 8 | This field is the major version of the firmware image. This field should be updated when shipping a new product line, major new updates to the firmware, and so on. |
 
-##### FIRMWARE\_UPDATE\_OFFER Command - Vendor Specific
+##### 5.2.1.3 Vendor Specific
 
 These four bytes may be used to encode any custom information in the offer that is specific to vendor implementation.
+
+##### 5.2.1.4 Misc. and Protocol version
+
+These four bytes may be used to encode any custom information in the offer that is specific to vendor implementation.
+
+**Table 5.2-6 FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout**
 
 |                              |
 | ---------------------------- |
@@ -341,9 +357,9 @@ These four bytes may be used to encode any custom information in the offer that 
 | --------------- | -------- | -------- | ---------------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Vendor Specific | Reserved | Reserved | Protocol Version |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER Command - Vendor Specific Bits
-
 The bits of the Vendor Specific byte are described in this table.
+
+**Table 5.2-7 FIRMWARE_UPDATE_OFFER Command - Misc. and Protocol version **
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -352,15 +368,19 @@ The bits of the Vendor Specific byte are described in this table.
 | 8 | Reserved | 8 | Reserved. Do not use. |
 | 16 | Vendor Specific | 16 | This field may be used to encode any custom information in the offer that is specific to vendor implementation. |
 
-#### FIRMWARE\_UPDATE\_OFFER Response
+#### 5.2.2 Response
 
 The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
+
+**Table 5.2-8 FIRMWARE_UPDATE_OFFER Response Token Layout**
 
 | B3    | B2       | B1       | B0       | B7      | B6       | B5     | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | ----- | -------- | -------- | -------- | ------- | -------- | ------ | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Token | Reserved | Reserved | Reserved | RR Code | Reserved | Status |    |     |     |    |    |     |     |     |     |
 
-##### FIRMWARE\_UPDATE\_OFFER Response Token
+##### 5.2.2.1 Token
+
+**Table 5.2-9 FIRMWARE_UPDATE_OFFER Response - Token Layout**
 
 |                   |
 | ----------------- |
@@ -370,9 +390,9 @@ The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
 | ----- | -------- | -------- | -------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Reserved | Reserved | Reserved |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER Response – Token Bits
-
 The bits of the Token byte are described in this table.
+
+**Table 5.2-10 FIRMWARE_UPDATE_OFFER Response – Token Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -381,11 +401,13 @@ The bits of the Token byte are described in this table.
 | 16 | Reserved | 8 | Reserved. Do not use. |
 | 24 | Token | 8 | Token to identify the host. |
 
-##### Reserved (B7 – B4)
+##### 5.2.2.2 Reserved (B7 – B4)
 
 Reserved. Do not use.
 
-##### FIRMWARE\_UPDATE\_OFFER Response - Reject Reason (RR)
+##### 5.2.2.3 Reject Reason (RR)
+
+**Table 5.2-11 FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout**
 
 |                            |
 | -------------------------- |
@@ -395,7 +417,7 @@ Reserved. Do not use.
 | ----- | -------- | -------- | ------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Reserved | Reserved | RR Code |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER Response - Reject Reason Bits
+**Table 5.2-13 FIRMWARE\_UPDATE\_OFFER Response - Reject Reason Bits**
 
 The bits of the Reject Reason byte are described in this table.
 
@@ -404,7 +426,7 @@ The bits of the Reject Reason byte are described in this table.
 | 0 | RR Code | 8 | The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. The possible values are described in Table. This value depends on the Status field. For a Status to RR Code mapping see Table ‑. |
 | 8 | Reserved. | 24 | Reserved. Do not use. |                                                             |
 
-###### FIRMWARE\_UPDATE\_OFFER Response RR Code Values
+**Table 5.2-14 FIRMWARE\_UPDATE\_OFFER Response RR Code Values**
 
 The possible values for the RR Code byte are described in this table.
 
@@ -415,9 +437,11 @@ The possible values for the RR Code byte are described in this table.
 | 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
 | 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
 | 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
-| 0xE0—0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
+| 0xE0 - 0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
-##### FIRMWARE\_UPDATE\_OFFER Response Status Layout
+##### 5.2.2.4 Status
+
+**Table - FIRMWARE_UPDATE_OFFER Response Status Layout**
 
 |                      |
 | -------------------- |
@@ -427,18 +451,18 @@ The possible values for the RR Code byte are described in this table.
 | -------- | -------- | -------- | ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Reserved | Reserved | Reserved | Status |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER Response – Status Bits
-
 The bits of the Status byte are described in this table.
+
+**Table 5.2-16 FIRMWARE_UPDATE_OFFER Response – Status Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | Status | 8 | This value indicates the component's decision to accept, pend, skip, or reject the offer. The component provides the reason the in the RR Code field value. |
 | 8 | Reserved | 24 | Reserved. Do not use. |
 
-###### FIRMWARE\_UPDATE\_OFFER Response Status Values
-
 The possible values for the Status byte are described in this table.
+
+**Table 5.2-17 FIRMWARE_UPDATE_OFFER Response Status Values**
 
 | Status | Name | Description |
 |--|--|--|
@@ -446,26 +470,30 @@ The possible values for the Status byte are described in this table.
 | 0x01 | FIRMWARE_UPDATE_OFFER_ACCEPT | The component has decided to accept the offer. |
 | 0x02 | FIRMWARE_UPDATE_OFFER_REJECT | The component has decided to reject the offer. |
 | 0x03 | FIRMWARE_UPDATE_OFFER_BUSY | The device is busy, and the host must wait till the device is ready. |
-| 0x04 | FIRMWARE_UPDATE_OFFER_COMMAND | Used when Component ID in the Component Information bytes (see Component Information) is set to 0xFE.<br><br>For Command Code set to OFFER_NOTIFY_ON_READY request, indicates the accessory is ready to accept additional offers. |
+| 0x04 | FIRMWARE_UPDATE_OFFER_COMMAND | Used when Component ID in the Component Information bytes (see 5.1.2.1.1 Component Information) is set to 0xFE.<br><br>For Command Code set to OFFER_NOTIFY_ON_READY request, indicates the accessory is ready to accept additional offers. |
 | 0xFF | FIRMWARE_UPDATE_CMD_NOT_SUPPORTED | The offer request is not recognized. |
 
-#### Mapping to HID Protocol
+#### 5.2.3 Mapping to HID Protocol
 
-The message is issued to the component through the **HID** **Output Report** mechanism, by using the dedicated HID Utility Report ID for Firmware Update. The HID Utility TLC to use described in Appendix.
+The message is issued to the component through the **HID Output Report** mechanism, by using the dedicated HID Utility Report ID for Firmware Update. The HID Utility TLC to use described in the Appendix.
 
-### FIRMWARE\_UPDATE\_OFFER - Information
+### 5.3 FIRMWARE\_UPDATE\_OFFER - Information
 
 If the Component ID in the Component Information bytes (see Component Information) is set to 0xFF, then bits (15 bytes) are redefined to indicate Offer Information Only, from the Host to the component. This mechanism allows for extensibility and a way for the Host to provide specific information to the device such as Start Offer List, End Offer List, Start Entire Transaction. Offer Information packets are always immediately Accepted by the component.
 
-#### FIRMWARE\_UPDATE\_OFFER - Information Command
+#### 5.3.1 Command
 
 The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
+
+**Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout**
 
 | B3        | B2       | B1       | B0       | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | --------- | -------- | -------- | -------- | -- | -- | -- | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Component | Reserved | Reserved | Reserved |    |    |    |    |     |     |    |    |     |     |     |     |
 
-##### FIRMWARE\_UPDATE\_OFFER - Information Command – Component
+##### 5.3.1.1 Component
+
+**Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command – Component Layout**
 
 |                       |
 | --------------------- |
@@ -475,9 +503,9 @@ The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
 | ----- | ------------ | -------- | ---------------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Component ID | Reserved | Information Code |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER - Information Command – Component Bits
-
 The bits of the Component byte are described in this table.
+
+**Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command – Component Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -486,7 +514,7 @@ The bits of the Component byte are described in this table.
 | 16 | Component ID | 8 | Set to 0xFF. |
 | 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
-###### FIRMWARE\_UPDATE\_OFFER - Information Command – Information Code Values
+**Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command – Information Code Values**
 
 | Status | Name | Description |
 |--|--|--|
@@ -494,27 +522,31 @@ The bits of the Component byte are described in this table.
 | 0x01 | OFFER\_INFO\_START\_OFFER\_LIST | Indicates the beginning of the Offer list from the host in case the Accessory has download rules associated with ensuring one subcomponent is updated prior to another subcomponent in the system. |
 | 0x02 | OFFER\_INFO\_END\_OFFER\_LIST | Indicates the end of the Offer list from the host. |
 
-##### Reserved B7 – B4 (Information Command)
+##### 5.3.1.2 Reserved B7 – B4
 
 Reserved. Do not use.
 
-##### Reserved B11 – B8 (Information Command)
+##### 5.3.1.3 Reserved B11 – B8
 
 Reserved. Do not use.
 
-##### Reserved B15 – B12 (Information Command)
+##### 5.3.1.4 Reserved B15 – B12
 
 Reserved. Do not use.
 
-#### FIRMWARE\_UPDATE\_OFFER - Information Response
+#### 5.3.2 Response
 
 The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defined as follows.
+
+**Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout**
 
 | B3    | B2       | B1       | B0       | B7      | B6       | B5     | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | ----- | -------- | -------- | -------- | ------- | -------- | ------ | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Token | Reserved | Reserved | Reserved | RR Code | Reserved | Status |    |     |     |    |    |     |     |     |     |
 
-##### FIRMWARE\_UPDATE\_OFFER- Information Packet Response Token
+##### 5.3.2.1 Token
+
+**Table 5.3-6 FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout**
 
 |                   |
 | ----------------- |
@@ -524,9 +556,9 @@ The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defin
 | ----- | -------- | -------- | -------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Reserved | Reserved | Reserved |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER - Information Response – Token Bits
-
 The bits of the Token byte are described in this table.
+
+**Table 5.3 7-FIRMWARE_UPDATE_OFFER - Information Response – Token Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -535,11 +567,13 @@ The bits of the Token byte are described in this table.
 | 16 | Reserved. | 8 | Reserved. Do not use. |
 | 24 | Token | 8 | Token to identify the host. |
 
-##### Reserved B7 – B4 (Information Response)
+##### 5.3.2.2 Reserved B7 – B4
 
 Reserved. Do not use.
 
-##### FIRMWARE\_UPDATE\_OFFER - Information Response - Reject Reason (RR) Code
+##### 5.3.2.3 Reject Reason (RR)
+
+**Table 5.3-8 FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout**
 
 |                            |
 | -------------------------- |
@@ -549,18 +583,18 @@ Reserved. Do not use.
 | ----- | -------- | -------- | ------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Reserved | Reserved | RR Code |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER- Offer Information Response - RR Code Bits
-
 The bits of the Reject Reason byte are described in this table.
+
+**Table 5.3-10 FIRMWARE_UPDATE_OFFER- Offer Information Response - RR Code Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | RR Code | 8 | The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. The possible values are described in Table ‑. This value depends on the Status field. |
-| 8 | Reserved. | 24 | Reserved. Do not use. |
-
-###### FIRMWARE\_UPDATE\_OFFER- Information Response - RR Code Values
+| 8 | Reserved | 24 | Reserved. Do not use. |
 
 The possible values for the RR Code byte are described in this table.
+
+**Table 5.3-11 FIRMWARE_UPDATE_OFFER- Information Response - RR Code Values**
 
 | RR Code | Name | Description |
 |--|--|--|
@@ -569,9 +603,11 @@ The possible values for the RR Code byte are described in this table.
 | 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
 | 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
 | 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
-| 0xE0—0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
+| 0xE0 — 0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
-##### FIRMWARE\_UPDATE\_OFFER - Offer Information Response Status
+##### 5.3.2.4 Status
+
+**Table 5.3-12 FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout**
 
 |                      |
 | -------------------- |
@@ -581,20 +617,22 @@ The possible values for the RR Code byte are described in this table.
 | -------- | -------- | -------- | ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Reserved | Reserved | Reserved | Status |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER - Offer Information - Response Status Bits
-
 The bits of the Status byte are described in this table.
+
+**Table 5.3-13 FIRMWARE_UPDATE_OFFER - Offer Information - Response Status Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | Status | 8 | This field must be set to FIRMWARE\_UPDATE\_OFFER\_ACCEPT. This indicates that the component has decided to accept the offer. |
 | 8 | Reserved. | 24 | Reserved. Do not use. |
 
-### FIRMWARE\_UPDATE\_OFFER - Extended
+### 5.4 FIRMWARE\_UPDATE\_OFFER - Extended
 
 If the Component ID in the Component Information bytes is set to 0xFE, then bits (15 bytes) are redefined to indicate Offer Command from the host to the device firmware. This mechanism allows for extensibility and a way for the host to provide specific information to the device. Offer Command packets are returned when the component is ready to respond Accepted.
 
-#### FIRMWARE\_UPDATE\_OFFER - Extended Command
+#### 5.4.1 Command
+
+**Table 5.4-1 FIRMWARE_UPDATE_OFFER - Extended Command Layout**
 
 If the Component ID in the Component Information bytes is set to 0xFE, the four DWORDs are redefined as follows:
 
@@ -602,7 +640,9 @@ If the Component ID in the Component Information bytes is set to 0xFE, the four 
 | --------- | -------- | -------- | -------- | -- | -- | -- | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Component | Reserved | Reserved | Reserved |    |    |    |    |     |     |    |    |     |     |     |     |
 
-##### FIRMWARE\_UPDATE\_OFFER - Extended Command Packet – Command - Component
+##### 5.4.1.1 Component
+
+**Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout**
 
 |                       |
 | --------------------- |
@@ -612,45 +652,49 @@ If the Component ID in the Component Information bytes is set to 0xFE, the four 
 | ----- | ------------ | -------- | ------------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Component ID | Reserved | Command Code |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER - Extended Command – Component Bits
-
 The bits of the Component byte are described in this table.
+
+**Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command – Component Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
-| 0 | Command Code | 8 | This value indicates the type of command. This value is not a bitmask and can only be one of the possible values described in Table ‑. |
+| 0 | Command Code | 8 | This value indicates the type of command. This value is not a bitmask and can only be one of the possible values described in Table 5.4-3. |
 | 8 | Reserved. | 8 | Reserved. Do not use. |
 | 16 | Component ID | 8 | Set to 0xFE. |
 | 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
-###### FIRMWARE\_UPDATE\_OFFER - Extended Command – Command Code Values
+**Table 5.4-5 FIRMWARE_UPDATE_OFFER - Extended Command – Command Code Values**
 
 | Status | Name | Description |
 |--|--|--|
 | 0x01 | OFFER\_NOTIFY\_ON\_READY | Sent by the host if the offer was previously been rejected by the component. |
-| 0x02-0xFF | Reserved. | Reserved. |
+| 0x02 - 0xFF | Reserved | Reserved |
 
-##### Reserved B7 – B4 (Extended Command)
-
-Reserved. Do not use.
-
-##### Reserved B11 – B8 (Extended Command)
+##### 5.4.1.2 Reserved B7 – B4
 
 Reserved. Do not use.
 
-##### Reserved B15 – B12 (Extended Command)
+##### 5.4.1.3 Reserved B11 – B8
 
 Reserved. Do not use.
 
-#### FIRMWARE\_UPDATE\_OFFER - Extended Command Packet Response
+##### 5.4.1.4 Reserved B15 – B12
+
+Reserved. Do not use.
+
+#### 5.4.2 Response
 
 The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be received immediately. Response is defined as follows.
+
+**Table 5.4-6 FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout**
 
 | B3    | B2       | B1       | B0       | B7      | B6       | B5     | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | ----- | -------- | -------- | -------- | ------- | -------- | ------ | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Token | Reserved | Reserved | Reserved | RR Code | Reserved | Status |    |     |     |    |    |     |     |     |     |
 
-##### FIRMWARE\_UPDATE\_OFFER- Offer Command Packet Response - Token
+##### 5.4.2.1 Token
+
+**Table 5.4-7 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response  - Token Layout**
 
 |                   |
 | ----------------- |
@@ -660,9 +704,9 @@ The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be 
 | ----- | -------- | -------- | -------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Reserved | Reserved | Reserved |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER - Offer Command Response - Token Bits
-
 The bits of the Token byte are described in this table.
+
+**Table - FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -671,13 +715,13 @@ The bits of the Token byte are described in this table.
 | 16 | Reserved. | 8 | Reserved. Do not use. |
 | 24 | Token | 8 | Token to identify the host. |
 
-##### Reserved B7 – B4
+##### 5.4.2.2 Reserved B7 – B4
 
 Reserved. Do not use.
 
-##### Reject Reason
+##### 5.4.2.3 Reject Reason
 
-###### FIRMWARE\_UPDATE\_OFFER - Offer Information Packet Response RR
+**Table 5.4-8 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout**
 
 |                            |
 | -------------------------- |
@@ -687,18 +731,18 @@ Reserved. Do not use.
 | ----- | -------- | -------- | ------- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Token | Reserved | Reserved | RR Code |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER- Offer Command Response - RR Code
-
 The bits of the Reject Reason byte are described in this table.
+
+**Table 5.4 10 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | RR Code | 8 | This value depends on the Status field. For possible RR Code values, see the following table. |
 | 8 | Reserved. | 24 | Reserved. Do not use. |
 
-###### FIRMWARE\_UPDATE\_OFFER- Offer Command Packet - RR Code Values
-
 The possible values for the RR Code byte are described in this table.
+
+**Table 5.4 11 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values**
 
 | RR Code | Name | Description |
 |--|--|--|
@@ -707,9 +751,11 @@ The possible values for the RR Code byte are described in this table.
 | 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
 | 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
 | 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
-| 0xE0—0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
+| 0xE0 — 0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
-##### FIRMWARE\_UPDATE\_OFFER - Offer Command Packet Response Status
+##### 5.4.2.4 Status
+
+**Table 5.4 12 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout**
 
 |                      |
 | -------------------- |
@@ -719,30 +765,34 @@ The possible values for the RR Code byte are described in this table.
 | -------- | -------- | -------- | ------ | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | - | - | - | - | - | - | - | - | - | - |
 | Reserved | Reserved | Reserved | Status |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |   |   |   |   |   |   |   |   |   |   |
 
-###### FIRMWARE\_UPDATE\_OFFER- Offer Command Packet Response RR Code
-
 The bits of the Status byte are described in this table.
+
+**Table 5.4 13 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | Status | 8 | This field must be set to FIRMWARE\_UPDATE\_OFFER\_ACCEPT. This indicates that the component has decided to accept the offer. |
 | 8 | Reserved. | 24 | Reserved. Do not use. |
 
-### FIRMWARE\_UPDATE\_CONTENT
+### 5.5 FIRMWARE\_UPDATE\_CONTENT
 
-The host sends this command to the device firmware to provide the firmware content (i.e. the firmware image). The entire image file is not expected to fit in a single command. The host must to break the image into smaller blocks and each command sends one block of the image at a time.
+The host sends this command to the device firmware to provide the firmware content (i.e. the firmware image). The entire image file is not expected to fit in a single command. The host must break the image into smaller blocks and each command sends one block of the image at a time.
 
 With each command the host indicates additional information—whether it is the first block, last block, and so on, of the firmware. The primary component of the device firmware accepts each block of the incoming firmware image, stores it into its memory, and must respond to each command individually.
 
 When the primary component receives the last block, the component validates the entire firmware image (CRC check, signature validation). Based on the results of those checks returns an appropriate response (failure or success) for the last block.
 
-#### FIRMWARE\_UPDATE\_CONTENT Command
+#### 5.5.1 Command
+
+**Table 5.5-1 FIRMWARE_UPDATE_CONTENT Command Layout**
 
 | B3     | B2   | B1 | B0 | B7 | B6 | B5 | B4 | B59 | … | B12 |
 | ------ | ---- | -- | -- | -- | -- | -- | -- | --- | - | --- |
 | Header | Data |    |    |    |    |    |    |     |   |     |
 
-##### FIRMWARE\_UPDATE\_CONTENT Command Header (B7 – B0)
+##### 5.5.1.1 Header (B7 – B0)
+
+**Table 5.5-2 FIRMWARE_UPDATE_CONTENT Command Header Layout**
 
 |                    |
 | ------------------ |
@@ -760,9 +810,9 @@ When the primary component receives the last block, the component validates the 
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Firmware Address |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-###### FIRMWARE\_UPDATE\_CONTENT Header Bits
-
 The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
+
+**Table 5.5-4 FIRMWARE_UPDATE_CONTENT Header Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -771,74 +821,82 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
 | 16 | Sequence Number | 16 | This value is created by the host and is unique for each content packet issued. The component must return the sequence number in its response to this request. |
 | 32 | Firmware Address | 32 | Little Endian (LSB First) Address to write the data. The address is 0-based. The firmware uses this as an offset to determine the address as needed when placing the image in memory. |
 
-###### FIRMWARE\_UPDATE\_OFFER- Offer Command Packet - Flag Values
-
 The possible values for the Flags byte are described in this table.
+
+**Table 5.5-5 FIRMWARE_UPDATE_OFFER- Offer Command Packet - Flag Values**
 
 | Flag | Name | Description |
 |--|--|--|
 | 0x80 | FIRMWARE_UPDATE_FLAG_FIRST_BLOCK | This flag indicates that this is the first block of the firmware image. |
 | 0x40 | FIRMWARE_UPDATE_FLAG_LAST_BLOCK | This flag indicates that this is the last block of the firmware image and that the image is ready to be validated.<br><br>It is important that the current firmware on the component performs validation on the entire downloaded firmware image after writing this block to non-volatile memory. |
 
-##### FIRMWARE\_UPDATE\_CONTENT Command Data
+##### 5.5.1.2 Data
 
-###### Data (Bytes 8-59)
+**Table 5.5-6 FIRMWARE_UPDATE_CONTENT Command Data Layout**
+
+| Data (Bytes 8-59) |
 
 | 31 | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Data |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-###### FIRMWARE\_UPDATE\_CONTENT Command Data Bits
-
 The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
+
+**Table 5.5-7 FIRMWARE_UPDATE_CONTENT Command Data Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 64 | Data | Max 52. | The byte array to write. The host typically sends blocks of 4 bytes based on product architecture. Any unused bytes in the end must be 0 padded. |
 
-#### FIRMWARE\_UPDATE\_CONTENT Command Response
+#### 5.5.2 Response
+
+**Table 5.5-8 FIRMWARE_UPDATE_CONTENT Command Response Layout**
 
 | B3 | B2 | B1 | B0 | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Reserved | Sequence Number | Reserved | Status | Reserved | Reserved |  |  |  |  |  |  |  |  |  |  |
 
-##### FIRMWARE\_UPDATE\_CONTENT Response - Sequence Number
+##### 5.5.2.1 Sequence Number
 
-###### Response (Bytes 3-0)
+**Table - FIRMWARE_UPDATE_CONTENT Response - Sequence Number**
+
+| Response (Bytes 3-0) |
 
 | 31 | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Reserved | Sequence Number |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-###### FIRMWARE\_UPDATE\_CONTENT - Command - Response Bits
-
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this table.
+
+**Table 5.5-9 FIRMWARE_UPDATE_CONTENT - Command - Response Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | Sequence Number | 16 | This field is the sequence number that was sent by the host in the request. |
 | 16 | Reserved | 16 | Reserved. Do not use. |
 
-##### FIRMWARE\_UPDATE\_CONTENT Response Status
+##### 5.5.2.2 Status
 
-###### Response (Bytes 7-4)
+**Table 5.5-10 FIRMWARE_UPDATE_CONTENT Response Status Layout**
+
+| Response (Bytes 7-4) |
 
 | 31 | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Reserved | Status |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-###### FIRMWARE\_UPDATE\_OFFER- Response - Status Bits
-
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (7-4) are described in this table.
+
+**Table 5.5-12 FIRMWARE_UPDATE_OFFER- Response -Status Bits**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | Status | 8 | This value indicates the status code returned by the device component. This is not a bitwise and can be one of the values described in the FIRMWARE\_UPDATE\_OFFER- Response - Status Code Values table below. |
 | 8 | Reserved | 24 | Reserved. Do not use. |
 
-###### FIRMWARE\_UPDATE\_OFFER- Response - Status Code Values
-
 The possible values for the Status byte are described in this table.
+
+**Table 5.5-13 FIRMWARE_UPDATE_OFFER- Response - Status Code Values**
 
 | Flag | Name | Description |
 |--|--|--|
@@ -855,17 +913,17 @@ The possible values for the Status byte are described in this table.
 | 0x0A | FIRMWARE_UPDATE_ERROR_NO_OFFER | The FIRMWARE_UPDATE_OFFER Command was received without first receiving a valid and accepted firmware update offer. |
 | 0x0B | FIRMWARE_UPDATE_ERROR_INVALID | General error for the FIRMWARE_UPDATE_OFFER Command, such as an invalid applicable Data Length. |
 
-##### Reserved B8 – B11
+##### 5.5.2.3 Reserved B8 – B11
 
 Reserved. Do not use.
 
-##### Reserved B12 – B15
+##### 5.5.2.4 Reserved B12 – B15
 
 Reserved. Do not use.
 
-## Example Firmware Update Programming Command Sequence
+## 6 Appendix 1: Example Firmware Update Programming Command Sequence
 
-### Example 1
+### 6.1 Example 1
 
 Consider the following device firmware:
 
@@ -921,7 +979,7 @@ Because all offers were not rejected, the host replays all the offers:
 
 1. Component rejects
 
-### Example 2
+### 6.2 Example 2
 
 Consider the following device firmware:
 
