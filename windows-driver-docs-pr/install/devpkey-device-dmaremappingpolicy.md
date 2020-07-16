@@ -17,7 +17,7 @@ ms.date: 07/15/2020
 
 # DEVPKEY_Device_DmaRemappingPolicy
 
-The value of the DEVPKEY_Device_DmaRemappingPolicy device property indicates which DMA remapping policy is active.
+The value of the DEVPKEY_Device_DmaRemappingPolicy device property indicates the DMA remapping capability of the device.
 
 **Property key**: DEVPKEY_Device_DmaRemappingPolicy  
 **Property-data-type identifier**: [**DEVPROP_TYPE_INT32**](devprop-type-int32.md)  
@@ -30,7 +30,7 @@ Remarks
 
 | Value | Meaning |
 | ----- | ------- |
-| 2     | DMA remapping is currently enforced for the specific device instance. |
+| 2     | Drivers on this device are capable of using DMA remapping. |
 | 1     | The device driver explicitly opted out of DMA remapping. |
 | 0 or the DMA Remapping Policy property is not visible | A DMA remapping INF directive is not specified in the INF file. DMA remapping is not enforced for this device. |
 
