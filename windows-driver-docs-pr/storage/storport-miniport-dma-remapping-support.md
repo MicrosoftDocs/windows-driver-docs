@@ -14,4 +14,4 @@ The [StorAhci Storport miniport driver](https://github.com/microsoft/Windows-dri
 >
 > For Storport miniport drivers, the default value of "DMA remapping policy" device property described in [Validating that DMA Remapping is enabled for a specific device driver instance](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers#validating-that-dma-remapping-is-enabled-for-a-specific-device-driver-instance) is 0 for Windows 10 versions 1803 and 1809, and 2 for Windows 10 version 1903 and later.
 
-This property corresponds to **DEVPKEY_Device_DmaRemappingPolicy**.
+This property corresponds to [**DEVPKEY_Device_DmaRemappingPolicy**](../install/devpkey-device-dmaremappingpolicy.md).

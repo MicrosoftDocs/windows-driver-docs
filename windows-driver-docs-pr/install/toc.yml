@@ -1298,6 +1298,8 @@
     href: devpkey-device-devtype.md
   - name: "DEVPKEY_Device_DHP_Rebalance_Policy"
     href: devpkey-device-dhp-rebalance-policy.md
+  - name: "DEVPKEY_Device_DmaRemappingPolicy"
+    href: devpkey-device-dmaremappingpolicy.md
   - name: "DEVPKEY_Device_Driver"
     href: devpkey-device-driver.md
   - name: "DEVPKEY_Device_DriverCoInstallers"
