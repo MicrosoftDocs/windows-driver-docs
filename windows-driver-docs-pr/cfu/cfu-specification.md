@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CPU) Protocol Specification
 description: This specification describes a generic HID protocol to update firmware for components without interrupting the device operation during a download.
-ms.date: 07/13/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -9,6 +9,32 @@ ms.localizationpriority: medium
 ---
 
 # Component Firmware Update (CPU) Protocol Specification
+
+## Contents
+
+- [1 Introduction](#1-introduction)
+  - [1.1 Glossary](#11-glossary)
+  - [1.2 Scope](#12-scope)
+    - [1.2.1 Goals](#121-goals)
+    - [1.2.2 Non-Goals](#122-non-goals)
+- [2 Supported Hardware Architecture](#2-supported-hardware-architecture)
+- [3 Protocol Prerequisites](#3-protocol-prerequisites)
+- [4 CFU Protocol Overview](#4-cfu-protocol-overview)
+  - [4.1 Firmware Update Programming Command Sequence](#41-firmware-update-programming-command-sequence)
+    - [4.1.1 State: Host Initialized Notification](#411-state-host-initialized-notification)
+    - [4.1.2 State: OFFER_INFO_START_OFFER_LIST Notification](#412-state-offer_info_start_offer_list-notification)
+    - [4.1.3 State: Send FIRMWARE_UPDATE_OFFER Command](#413-state-send-firmware_update_offer-command)
+    - [4.1.4 State: Send Firmware](#414-state-send-firmware)
+    - [4.1.5 Decision State: Are there more offers](#415-decision-state-are-there-more-offers)
+    - [4.1.6 State: OFFER_INFO_END_OFFER_LIST Notification](416-state-offer_info_end_offer_list-notification)
+    - [4.1.7 Decision State: Replay Offer list](#417-decision-state-replay-offer-list)
+    - [4.1.8 State: Device is Busy](#418-state-device-is-busy)
+- [5 CFU Protocol Packet Format](#5-cfu-protocol-packet-format)
+- [6 Appendix 1: Example Firmware Update Programming Command Sequence](#6-appendix-1-example-firmware-update-programming-command-sequence)
+  - [6.1 Example 1](#61-example-1)
+  - [6.2 Example 2](#62-example-2)
+
+## 1 Introduction
 
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 
@@ -53,9 +79,9 @@ Some of the features of the protocol are:
 | TLC | HID Top Level Collection. |
 | Token | An identifier for a host session. A host creates a token and sends it in commands, and the device returns it in the response. Tokens may be used to serialize certain transactions or to identify that a session has been lost and another started. |
 
-## Scope
+## 1.2 Scope
 
-### 1.1.1 Goals
+### 1.2.1 Goals
 
 - A bus-agnostic solution is required to avoid a new protocol for every type of bus. HID is ubiquitous and addresses that requirement.
 
@@ -71,7 +97,7 @@ Some of the features of the protocol are:
 
 - The ability to segment a large firmware image into smaller segments to make it easier for the component to accept the firmware image.
 
-### 1.1.2 Non-goals
+### 1.2.2 Non-Goals
 
 - Define the internal format of the firmware image: For the host, the firmware image is a set of address and payload entries.
 
