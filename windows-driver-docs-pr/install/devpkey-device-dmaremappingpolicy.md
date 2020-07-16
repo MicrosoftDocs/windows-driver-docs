@@ -31,7 +31,7 @@ Remarks
 | Value | Meaning |
 | ----- | ------- |
 | 2     | Drivers on this device are capable of using DMA remapping. |
-| 1     | The device driver explicitly opted out of DMA remapping. |
+| 1     | At least one driver on this device opted out of DMA remapping. |
 | 0 or the DMA Remapping Policy property is not visible | A DMA remapping INF directive is not specified in the INF file. DMA remapping is not enforced for this device. |
 
 
