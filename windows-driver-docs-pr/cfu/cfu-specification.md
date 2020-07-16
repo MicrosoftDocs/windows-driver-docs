@@ -37,6 +37,48 @@ ms.localizationpriority: medium
       - [5.1.2.2 Component Version and Properties](#5122-component-version-and-properties)
     - [5.1.3 Mapping to HID](#513-mapping-to-hid)
   - [5.2 FIRMWARE_UPDATE_OFFER](#52-firmware_update_offer)
+    - [5.2.1 Command](#521-command)
+      - [5.2.1.1 Component Information](#5211-component-information)
+      - [5.2.1.2 Firmware Version](#5212-firmware-version)
+      - [5.2.1.3 Vendor Specific](#5213-vendor-specific)
+      - [5.2.1.4 Misc. and Protocol version](#5214-misc-and-protocol-version)
+    - [5.2.2 Response](#522-response)
+      - [5.2.2.1 Token](#5221-token)
+      - [5.2.2.2 Reserved (B7 – B4)](#5222-reserved-b7--b4)
+      - [5.2.2.3 Reject Reason (RR)](#5223-reject-reason-rr)
+      - [5.2.2.4 Status](#5224-status)
+    - [5.2.3 Mapping to HID Protocol](#523-mapping-to-hid-protocol)
+  - [5.3 FIRMWARE_UPDATE_OFFER - Information](#53-firmware_update_offer---information)
+    - [5.3.1 Command](#531-command)
+      - [5.3.1.1 Component](#5311-component)
+      - [5.3.1.2 Reserved B7 – B4](#5312-reserved-b7--b4)
+      - [5.3.1.3 Reserved B11 – B8](#5313-reserved-b11--b8)
+      - [5.3.1.4 Reserved B15 – B12](#5314-reserved-b15--b12)
+    - [5.3.2 Response](#532-response)
+      - [5.3.2.1 Token](#5321-token)
+      - [5.3.2.2 Reserved B7 – B4](#5322-reserved-b7--b4)
+      - [5.3.2.3 Reject Reason (RR)](#5323-reject-reason-rr)
+      - [5.3.2.4 Status](#5324-status)
+  - [5.4 FIRMWARE_UPDATE_OFFER - Extended](#54-firmware_update_offer---extended)
+    - [5.4.1 Command](#541-command)
+      - [5.4.1.1 Component](#5411-component)
+      - [5.4.1.2 Reserved B7 – B4](#5412-reserved-b7--b4)
+      - [5.4.1.3 Reserved B11 – B8](#5413-reserved-b11--b8)
+      - [5.4.1.4 Reserved B15 – B12](#5414-reserved-b15--b12)
+    - [5.4.2 Response](#542-response)
+      - [5.4.2.1 Token](#5421-token)
+      - [5.4.2.2 Reserved B7 – B4](#5422-reserved-b7--b4)
+      - [5.4.2.3 Reject Reason](#5423-reject-reason)
+      - [5.4.2.4 Status](#5424-status)
+  - [5.5 FIRMWARE_UPDATE_CONTENT](#55-firmware_update_content)
+    - [5.5.1 Command](#551-command)
+      - [5.5.1.1 Header (B7 – B0)](#5511-header-b7--b0)
+      - [5.5.1.2 Data](#5512-data)
+    - [5.5.2 Response](#552-response)
+      - [5.5.2.1 Sequence Number](#5521-sequence-number)
+      - [5.5.2.2 Status](#5522-status)
+      - [5.5.2.3 Reserved B8 – B11](#5523-reserved-b8--b11)
+      - [5.5.2.4 Reserved B12 – B15](#5524-reserved-b12--b15)
 - [6 Appendix 1: Example Firmware Update Programming Command Sequence](#6-appendix-1-example-firmware-update-programming-command-sequence)
   - [6.1 Example 1](#61-example-1)
   - [6.2 Example 2](#62-example-2)
@@ -46,7 +88,7 @@ ms.localizationpriority: medium
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 
 > [!NOTE]
-> The current version of this specification is available [CFU-Protocol](https://github.com/microsoft/CFU/tree/master/Documentation/CFU-Protocol) in the Microsoft CFU repository on GitHub.
+> The current version of the [Component Firmware Update (CPU) Protocol Specification](https://github.com/microsoft/CFU/tree/master/Documentation/CFU-Protocol) is available in the [Microsoft CFU repository](https://github.com/microsoft/CFU) on GitHub.
 
 Today's PCs and accessories have internal components that perform complex operations. To ensure a quality product, there is a need to frequently update the behavior of these devices in later stages of development or after they have shipped to the customers. The update might fix identified functional or security issues, or a need to add new features. A large portion of the complex logic is in the firmware running on the device, which is updatable.
 
@@ -64,7 +106,7 @@ Some of the features of the protocol are:
 - The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images.
 
   > [!NOTE]
-  > Information the user should notice even if skimmingThe process of a component handing over the firmware to the sub-component is outside the scope of this specification.
+  > The process of a component handing over the firmware to the sub-component is outside the scope of this specification.
 
 - The specification supports the concept of an *offer* and relies on the component in-charge to decide whether to accept the firmware. The decision to accept new firmware is not trivial. There might be dependencies between the firmware type and/or version and the underlying type/version of hardware to which the new firmware applies. An offer also acts as an optimization mechanism because the firmware image is sent to the component only if it is able /ready to accept it.
 
@@ -392,7 +434,7 @@ These four bytes may be used to encode any custom information in the offer that 
 
 The bits of the Vendor Specific byte are described in this table.
 
-**Table 5.2-7 FIRMWARE_UPDATE_OFFER Command - Misc. and Protocol version **
+**Table 5.2-7 FIRMWARE_UPDATE_OFFER Command - Misc. and Protocol version**
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
