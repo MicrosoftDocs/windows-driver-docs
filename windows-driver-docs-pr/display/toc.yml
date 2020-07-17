@@ -711,9 +711,11 @@
       href: manipulating-3-d-virtual-textures-directly-from-hardware.md
     - name: "Registering Hardware Information"
       href: registering-hardware-information.md
-  - name: "Debugging Tips for the Windows Display Driver Model (WDDM)"
+  - name: "Debugging the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
     items:
+    - name: "Debugging tips for WDDM drivers"
+      href: debugging-tips-for-wddm-drivers.md
     - name: "Installing Checked Binaries"
       href: installing-checked-binaries.md
     - name: "Changing the Behavior of the GPU Scheduler for Debugging"
