@@ -6,6 +6,7 @@ keywords:
 - monitor drivers WDK
 - display drivers WDK , monitor drivers
 - monitors
+- head-mounted display
 - HMD
 - virtual reality
 ms.author: windowsdriverdev
@@ -59,7 +60,7 @@ Third-party custom compositors may only acquire displays that have been pre-desi
 * **EDID Extension** - Custom display devices designed for permanent use as HMDs, X-ray monitors, video walls, or other specialized scenarios should implement the [Microsoft EDID extension for head-mounted and specialized displays](specialized-monitors-edid-extension.md).
 * **User Override** - For custom hardware installations using off-the-shelf monitors, Windows provides a UI toggle for designating monitors as "specialized".
 
-Displays may **not** be designated as HMDs or specialized displays by overriding the EDID in software.
+Displays may *not* be designated as HMDs or specialized displays by overriding the EDID in software.
 
 > [!NOTE]
 > Specialized displays are only available starting in Windows 10, version 2004, and require Windows 10 Enterprise, Windows 10 Pro for Workstations, or Windows 10 IoT Enterprise.
@@ -69,6 +70,7 @@ Displays may **not** be designated as HMDs or specialized displays by overriding
 Implementing a custom compositor can be broken into several stages:
 
 > [!div class="checklist"]
+>
 > * Enumerate and discover associated HMDs or specialized displays
 > * Acquire ownership of selected displays
 > * Configure modes for all selected displays
