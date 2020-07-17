@@ -10,6 +10,11 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CPU) Protocol Specification
 
+This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
+
+> [!NOTE]
+> The current version of the [Component Firmware Update (CPU) Protocol Specification](https://github.com/microsoft/CFU/tree/master/Documentation/CFU-Protocol) is available in the [Microsoft CFU repository](https://github.com/microsoft/CFU) on GitHub.
+
 ## Contents
 
 - [1 Introduction](#1-introduction)
@@ -84,11 +89,6 @@ ms.localizationpriority: medium
   - [6.2 Example 2](#62-example-2)
 
 ## 1 Introduction
-
-This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
-
-> [!NOTE]
-> The current version of the [Component Firmware Update (CPU) Protocol Specification](https://github.com/microsoft/CFU/tree/master/Documentation/CFU-Protocol) is available in the [Microsoft CFU repository](https://github.com/microsoft/CFU) on GitHub.
 
 Today's PCs and accessories have internal components that perform complex operations. To ensure a quality product, there is a need to frequently update the behavior of these devices in later stages of development or after they have shipped to the customers. The update might fix identified functional or security issues, or a need to add new features. A large portion of the complex logic is in the firmware running on the device, which is updatable.
 
@@ -361,6 +361,8 @@ The FIRMWARE\_UPDATE\_OFFER Command packet is defined as follows.
 
 **Table 5.2-1 FIRMWARE_UPDATE_OFFER Command Layout**
 
+![FIRMWARE_UPDATE_OFFER Command Layout](images/firmware-update-offer-command-layout.png)
+
 | B3                    | B2               | B1              | B0                         | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | --------------------- | ---------------- | --------------- | -------------------------- | -- | -- | -- | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Component Information | Firmware Version | Vendor Specific | Misc. and Protocol version |    |    |    |    |     |     |    |    |     |     |     |     |
@@ -368,6 +370,8 @@ The FIRMWARE\_UPDATE\_OFFER Command packet is defined as follows.
 ##### 5.2.1.1 Component Information
 
 **Table 5.2-2 FIRMWARE_UPDATE_OFFER Command - Component Information Layout**
+
+![FIRMWARE_UPDATE_OFFER Command - Component Information Layout](images/firmware-update-offer-command-component-information-layout.png)
 
 |                                   |
 | --------------------------------- |
@@ -395,6 +399,8 @@ The bits of the Component Information byte are described in this table.
 These four bytes represent the 32-bit version of the firmware. The format for the firmware version is not mandated by this specification. The following is recommended.
 
 **Table 5.2-4 FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout**
+
+![FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout](images/firmware-update-offer-command-firmware-version-layout.png)
 
 |                              |
 | ---------------------------- |
@@ -424,6 +430,8 @@ These four bytes may be used to encode any custom information in the offer that 
 
 **Table 5.2-6 FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout**
 
+![FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout](images/firmware-update-offer-command-vendor-specific-layout.png)
+
 |                              |
 | ---------------------------- |
 | Vendor Specific (Bytes 11-8) |
@@ -449,6 +457,8 @@ The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
 
 **Table 5.2-8 FIRMWARE_UPDATE_OFFER Response Token Layout**
 
+![FIRMWARE_UPDATE_OFFER Response Token Layout](images/firmware-update-offer-response-token-layout.png)
+
 | B3    | B2       | B1       | B0       | B7      | B6       | B5     | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | ----- | -------- | -------- | -------- | ------- | -------- | ------ | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Token | Reserved | Reserved | Reserved | RR Code | Reserved | Status |    |     |     |    |    |     |     |     |     |
@@ -456,6 +466,8 @@ The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
 ##### 5.2.2.1 Token
 
 **Table 5.2-9 FIRMWARE_UPDATE_OFFER Response - Token Layout**
+
+![FIRMWARE_UPDATE_OFFER Response - Token Layout](images/firmware-update-offer-response-token-layout2.png)
 
 |                   |
 | ----------------- |
@@ -483,6 +495,8 @@ Reserved. Do not use.
 ##### 5.2.2.3 Reject Reason (RR)
 
 **Table 5.2-11 FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout**
+
+![FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout](images/firmware-update-offer-response-reject-reason-layout.png)
 
 |                            |
 | -------------------------- |
@@ -517,6 +531,8 @@ The possible values for the RR Code byte are described in this table.
 ##### 5.2.2.4 Status
 
 **Table - FIRMWARE_UPDATE_OFFER Response Status Layout**
+
+![FIRMWARE_UPDATE_OFFER Response Status Layout](images/firmware-update-offer-response-status-layout.png)
 
 |                      |
 | -------------------- |
@@ -562,6 +578,8 @@ The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
 
 **Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout**
 
+![FIRMWARE_UPDATE_OFFER - Information Command Layout](images/firmware-update-offer-information-command-layout.png)
+
 | B3        | B2       | B1       | B0       | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | --------- | -------- | -------- | -------- | -- | -- | -- | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Component | Reserved | Reserved | Reserved |    |    |    |    |     |     |    |    |     |     |     |     |
@@ -569,6 +587,8 @@ The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
 ##### 5.3.1.1 Component
 
 **Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command – Component Layout**
+
+![FIRMWARE_UPDATE_OFFER - Information Command – Component Layout](images/firmware-update-offer-information-command-component-layout.png)
 
 |                       |
 | --------------------- |
@@ -615,6 +635,8 @@ The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defin
 
 **Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout**
 
+![FIRMWARE_UPDATE_OFFER - Information Response Layout](images/firmware-update-offer-information-response-layout.png)
+
 | B3    | B2       | B1       | B0       | B7      | B6       | B5     | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | ----- | -------- | -------- | -------- | ------- | -------- | ------ | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Token | Reserved | Reserved | Reserved | RR Code | Reserved | Status |    |     |     |    |    |     |     |     |     |
@@ -622,6 +644,8 @@ The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defin
 ##### 5.3.2.1 Token
 
 **Table 5.3-6 FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout**
+
+![FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout](images/firmware-update-offer-information-packet-response-token-layout.png)
 
 |                   |
 | ----------------- |
@@ -649,6 +673,8 @@ Reserved. Do not use.
 ##### 5.3.2.3 Reject Reason (RR)
 
 **Table 5.3-8 FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout**
+
+![FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout](images/firmware-update-offer-information-response-rr-code-layout.png)
 
 |                            |
 | -------------------------- |
@@ -684,6 +710,8 @@ The possible values for the RR Code byte are described in this table.
 
 **Table 5.3-12 FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout**
 
+![FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout](images/firmware-update-offer-offer-information-response-status-layout.png)
+
 |                      |
 | -------------------- |
 | Status (Bytes 15-12) |
@@ -709,6 +737,8 @@ If the Component ID in the Component Information bytes is set to 0xFE, then bits
 
 **Table 5.4-1 FIRMWARE_UPDATE_OFFER - Extended Command Layout**
 
+![FIRMWARE_UPDATE_OFFER - Extended Command Layout](images/firmware-update-offer-extended-command-layout.png)
+
 If the Component ID in the Component Information bytes is set to 0xFE, the four DWORDs are redefined as follows:
 
 | B3        | B2       | B1       | B0       | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
@@ -718,6 +748,8 @@ If the Component ID in the Component Information bytes is set to 0xFE, the four 
 ##### 5.4.1.1 Component
 
 **Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout**
+
+![FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout](images/firmware-update-offer-extended-command-packet-command-component-layout.png)
 
 |                       |
 | --------------------- |
@@ -763,6 +795,8 @@ The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be 
 
 **Table 5.4-6 FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout**
 
+![FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout](images/firmware-update-offer-extended-command-packet-response-layout.png)
+
 | B3    | B2       | B1       | B0       | B7      | B6       | B5     | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 | ----- | -------- | -------- | -------- | ------- | -------- | ------ | -- | --- | --- | -- | -- | --- | --- | --- | --- |
 | Token | Reserved | Reserved | Reserved | RR Code | Reserved | Status |    |     |     |    |    |     |     |     |     |
@@ -770,6 +804,8 @@ The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be 
 ##### 5.4.2.1 Token
 
 **Table 5.4-7 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response  - Token Layout**
+
+![FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout](images/firmware-update-offer-offer-command-packet-response-token-layout.png)
 
 |                   |
 | ----------------- |
@@ -797,6 +833,8 @@ Reserved. Do not use.
 ##### 5.4.2.3 Reject Reason
 
 **Table 5.4-8 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout**
+
+![FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout](images/firmware-update-offer-offer-information-packet-response-rr-layout.png)
 
 |                            |
 | -------------------------- |
@@ -832,6 +870,8 @@ The possible values for the RR Code byte are described in this table.
 
 **Table 5.4 12 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout**
 
+![FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout](images/firmware-update-offer-offer-command-packet-response-status-layout.png)
+
 |                      |
 | -------------------- |
 | Status (Bytes 15-12) |
@@ -861,6 +901,8 @@ When the primary component receives the last block, the component validates the 
 
 **Table 5.5-1 FIRMWARE_UPDATE_CONTENT Command Layout**
 
+![FIRMWARE_UPDATE_CONTENT Command Layout](images/firmware-update-content-command-layout.png)
+
 | B3     | B2   | B1 | B0 | B7 | B6 | B5 | B4 | B59 | … | B12 |
 | ------ | ---- | -- | -- | -- | -- | -- | -- | --- | - | --- |
 | Header | Data |    |    |    |    |    |    |     |   |     |
@@ -868,6 +910,8 @@ When the primary component receives the last block, the component validates the 
 ##### 5.5.1.1 Header (B7 – B0)
 
 **Table 5.5-2 FIRMWARE_UPDATE_CONTENT Command Header Layout**
+
+![FIRMWARE_UPDATE_CONTENT Command Header Layout](images/firmware-update-content-command-header-layout.png)
 
 |                    |
 | ------------------ |
@@ -909,6 +953,8 @@ The possible values for the Flags byte are described in this table.
 
 **Table 5.5-6 FIRMWARE_UPDATE_CONTENT Command Data Layout**
 
+![FIRMWARE_UPDATE_CONTENT Command Data Layout](images/firmware-update-content-command-data-layout.png)
+
 | Data (Bytes 8-59) |
 
 | 31 | 30 | 29 | 28 | 27 | 26 | 25 | 24 | 23 | 22 | 21 | 20 | 19 | 18 | 17 | 16 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
@@ -927,6 +973,8 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 
 **Table 5.5-8 FIRMWARE_UPDATE_CONTENT Command Response Layout**
 
+![FIRMWARE_UPDATE_CONTENT Command Response Layout](images/firmware-update-content-command-response-layout.png)
+
 | B3 | B2 | B1 | B0 | B7 | B6 | B5 | B4 | B11 | B10 | B9 | B8 | B15 | B14 | B13 | B12 |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
 | Reserved | Sequence Number | Reserved | Status | Reserved | Reserved |  |  |  |  |  |  |  |  |  |  |
@@ -934,6 +982,8 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 ##### 5.5.2.1 Sequence Number
 
 **Table - FIRMWARE_UPDATE_CONTENT Response - Sequence Number**
+
+![FIRMWARE_UPDATE_CONTENT Response - Sequence Number](images/firmware-update-content-response-sequence-number.png)
 
 | Response (Bytes 3-0) |
 
@@ -953,6 +1003,8 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this t
 ##### 5.5.2.2 Status
 
 **Table 5.5-10 FIRMWARE_UPDATE_CONTENT Response Status Layout**
+
+![FIRMWARE_UPDATE_CONTENT Response Status Layout](images/firmware-update-content-response-status-layout.png)
 
 | Response (Bytes 7-4) |
 
