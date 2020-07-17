@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CPU) Protocol Specification
 description: This specification describes a generic HID protocol to update firmware for components without interrupting the device operation during a download.
-ms.date: 07/16/2020
+ms.date: 07/17/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
