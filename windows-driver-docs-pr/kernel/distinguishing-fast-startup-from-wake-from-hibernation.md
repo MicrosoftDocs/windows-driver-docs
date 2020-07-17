@@ -25,7 +25,9 @@ To distinguish a fast startup from a wake-from-hibernation, a driver can inspect
 
 Most of the bit fields in the **SYSTEM\_POWER\_STATE\_CONTEXT** structure are reserved for system use and are opaque to drivers. However, this structure contains two bit fields, **TargetSystemState** and **EffectiveSystemState**, that can be read by drivers to determine whether a fast startup or a wake-from-hibernation occurred.
 
-The **TargetSystemState** and **EffectiveSystemState** bit fields are set to [**SYSTEM\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) enumeration values. If **TargetSystemState** = **PowerSystemHibernate** and **EffectiveSystemState** = **PowerSystemHibernate**, a wake-from-hibernation occurred. However, if **TargetSystemState** = **PowerSystemHibernate** and **EffectiveSystemState** = **PowerSystemShutdown**, a fast startup occurred.
+The **TargetSystemState** and **EffectiveSystemState** bit fields are set to [**SYSTEM\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) enumeration values. If **TargetSystemState** = **PowerSystemHibernate** and **EffectiveSystemState** = **PowerSystemHibernate**, a wake-from-hibernation occurred.
+
+However, if **TargetSystemState** = **PowerSystemShutdown** and **EffectiveSystemState** = **PowerSystemHibernate**, a fast startup occurred.
 
 The **TargetSystemState** bit field specifies the last system power state transition for which the driver received a system power IRP before the computer shut down or entered hibernation. The **EffectiveSystemState** bit field indicates the effective previous system power state of the device, as perceived by the user. The **TargetSystemState** and **EffectiveSystemState** values might not match if, for example, the driver received notification of a pending system transition to the hibernation state, but a hybrid shutdown subsequently occurred.
 
