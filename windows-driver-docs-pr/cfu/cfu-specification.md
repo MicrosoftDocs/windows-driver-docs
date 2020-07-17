@@ -12,9 +12,6 @@ ms.localizationpriority: medium
 
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 
-> [!NOTE]
-> The current version of the [Component Firmware Update (CPU) Protocol Specification](https://github.com/microsoft/CFU/tree/master/Documentation/CFU-Protocol) is available in the [Microsoft CFU repository](https://github.com/microsoft/CFU) on GitHub.
-
 ## Contents
 
 - [1 Introduction](#1-introduction)
