@@ -27,9 +27,9 @@ For input data, the buffer size is specified by **Parameters.DeviceIoControl.Inp
 The size of the space that the system allocates for the single input/output buffer is the larger of the two length values.
 
 <a href="" id="method-in-direct-or-method-out-direct"></a>METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT  
-For these transfer types, IRPs supply a pointer to a buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. This represents the input buffer that is specified in calls to **DeviceIoControl** and **IoBuildDeviceIoControlRequest**. The buffer size is specified by **Parameters.DeviceIoControl.InputBufferLength** in the driver's **IO\_STACK\_LOCATION** structure.
+For these transfer types, IRPs supply a pointer to a buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**. This represents the buffer that is specified in calls to **DeviceIoControl** and **IoBuildDeviceIoControlRequest**. The buffer size is specified by **Parameters.DeviceIoControl.InputBufferLength** in the driver's **IO\_STACK\_LOCATION** structure.
 
-For these transfer types, IRPs also supply a pointer to an MDL at **Irp-&gt;MdlAddress**. This represents the output buffer that is specified in calls to [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. However, this buffer can actually be used as either an input buffer or an output buffer, as follows:
+For these transfer types, IRPs also supply a pointer to an MDL at **Irp-&gt;MdlAddress**. This represents the buffer that is specified in calls to [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) and **IoBuildDeviceIoControlRequest**. This buffer can be used as either an input buffer or an output buffer, as follows:
 
 -   METHOD\_IN\_DIRECT is specified if the driver that handles the IRP receives data in the buffer when it is called. The MDL describes an input buffer, and specifying METHOD\_IN\_DIRECT ensures that the executing thread has read-access to the buffer.
 
