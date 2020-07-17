@@ -18,7 +18,7 @@ The simplest way to add a test certificate to the Trusted Root Certification Aut
 The following command-line uses Certmgr.exe to install, or add, the Contoso.com(test) certificate to the test computer's Trusted Root Certification Authorities certificate store:
 
 ```cpp
-certmgr.exe /add ContosoTest.cer /s /r localMachine root
+certmgr /add ContosoTest.cer /s /r localMachine root
 ```
 
 Where:
