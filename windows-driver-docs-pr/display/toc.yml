@@ -692,7 +692,7 @@
       href: indirect-display-driver-model-overview.md
     - name: "IddCx Objects"
       href: iddcx-objects.md
-    - name: "Debugging"
+    - name: "Debugging indirect display drivers"
       href: indirect-display-debugging.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
@@ -711,11 +711,11 @@
       href: manipulating-3-d-virtual-textures-directly-from-hardware.md
     - name: "Registering Hardware Information"
       href: registering-hardware-information.md
-  - name: "Debugging Tips for the Windows Display Driver Model (WDDM)"
+  - name: "Debugging the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
-    items: 
-    - name: "Debugging Tips for the Windows Display Driver Model (WDDM)"
-      href: debugging-tips-for-the-windows-vista-display-driver-model.md
+    items:
+    - name: "Debugging tips for WDDM drivers"
+      href: debugging-tips-for-wddm-drivers.md
     - name: "Installing Checked Binaries"
       href: installing-checked-binaries.md
     - name: "Changing the Behavior of the GPU Scheduler for Debugging"
@@ -1258,9 +1258,7 @@
       href: synchronization-issues-for-display-drivers.md
     - name: "Debugging Display Drivers"
 # Auto-expanded node
-      items: 
-      - name: "Debugging Display Drivers"
-        href: debugging-display-drivers.md
+      items:
       - name: "Disabling EA Recovery"
         href: disabling-ea-recovery.md
       - name: "Disabling the Watchdog Timer While Testing Display Drivers"

@@ -1,26 +1,27 @@
 ---
-title: Debugging Indirect Display Drivers
-description: Describes debugging techniques for Indirect Displays
+title: Debugging indirect display drivers
+description: Describes debugging techniques for indirect display drivers
 ms.assetid: a343812d-03d0-4a95-9c36-7e6b5a404088
-ms.date: 04/22/2020
+ms.date: 07/17/2020
 ms.localizationpriority: medium
 ---
 
-# Debugging Indirect Displays
+# Debugging indirect display drivers
 
-Indirect Displays drivers are UMDF drivers so the UMDF debugging documentation is a good starting point, [here](https://docs.microsoft.com/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails) is an example of a page in that section.  This page will provide Indirect Display specific debugging information.
+Indirect Displays drivers (IDDs) are UMDF drivers so the UMDF debugging documentation is a good starting point ([here](https://docs.microsoft.com/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails) is an example of a page in that section).  This page provides indirect display-specific debugging information.
 
-## <span id="Registry_Control"></span><span id="registry_control"></span><span id="Registry_Control"></span>Registry Control
+## Registry control
 
-IddCx has some registry settings that can be used to aid debugging Indirect Display drivers.  All registry values are located under the **HKLM\System\CurrentControlSet\Control\GraphicsDrivers** registry key.
-
+The Indirect Display Driver Class eXtension (IccDx) has some registry settings that can be used to aid debugging IDDs. All registry values are located under the **HKLM\System\CurrentControlSet\Control\GraphicsDrivers** registry key.
 
 | Value Name               | Details |
 |--------------------------|---------|
-| TerminateIndirectOnStall | A zero value will disable the watchdog that terminates the driver if it does not process a frame within 10 seconds of the frame being available.  Any other value will leave the watchdog enabled. |
-| IddCxDebugCtrl           | Bit-field that enabled different debug aspects of IddCx, see table below |
+| TerminateIndirectOnStall | A zero value will disable the watchdog that terminates the driver if it does not process a frame within 10 seconds of the frame being available. Any other value will leave the watchdog enabled. |
+| IddCxDebugCtrl           | Bit-field that enabled different debug aspects of IddCx. See the table below. |
 
-**NOTE** If the TerminateIndirectOnStall registry value is used to disable the watchdog HLK tests will fail.
+> [!NOTE]
+>
+> If the TerminateIndirectOnStall registry value is used to disable the watchdog, HLK tests will fail.
 
 ### IddCxDebugCtrl values
 
@@ -36,20 +37,22 @@ IddCx has some registry settings that can be used to aid debugging Indirect Disp
 | 0x0080 | Disables the DDI watchdog which terminates driver is takes too long in DDI call |
 | 0x0100 | Unused |
 | 0x0200 | Enable debug overlay, see below |
-| 0x0400 | Overlay colored alpha box over dirty rects in frame, requires 0x0200 to be set |
-| 0x0800 | Overlay pref stats into frame, requires 0x0200 to be set |
+| 0x0400 | Overlay colored alpha box over dirty rects in frame; requires 0x0200 to be set |
+| 0x0800 | Overlay pref stats into frame; requires 0x0200 to be set |
 
-**NOTE** For any of the overlay function to work the Direct3D device created by the driver and passed to IddCxSwapChainSetDevice() has to be created with the D3D11_CREATE_DEVICE_BGRA_SUPPORT flag.
+> [!NOTE]
+>
+> For any of the overlay functions to work, the Direct3D device created by the driver and passed to [**IddCxSwapChainSetDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainsetdevice) must be created with the **D3D11_CREATE_DEVICE_BGRA_SUPPORT** flag.
 
-## <span id="IddCx_WPP_traces"></span><span id="iddcx_wpp_traces"></span><span id="IddCx_WPP_traces"></span>IddCx WPP traces
+## IddCx WPP traces
 
-Iddcx uses the WPP infrastructure to log debug information.  WPP information can be captured to a file and while this capture  is in progress it can be displayed in the kernel debugger.
+Iddcx uses the [WPP infrastructure](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) to log debug information. WPP information can be captured to a file, and while this capture is in progress it can be displayed in the kernel debugger.
 
 ### Capturing IddCx WPP tracing
 
-There are several ways to enable WPP tracing, one convenient way it you use the build in logman.exe program.  If you copy the following line to a batch file and run from elevated command prompt it will collect IddCx WPP traces into the IddCx.etl file.
+There are several ways to enable WPP tracing. One convenient way is to use the build in [*logman.exe*](https://docs.microsoft.com/windows-server/administration/windows-commands/logman) program. If you copy the following line to a batch file and run from an elevated command prompt it will collect IddCx WPP traces into the *IddCx.etl* file.
 
-```
+```console
 @echo off  
 echo Starting WPP tracing....
 logman create trace IddCx -o IddCx.etl -ets -ow -mode sequential -p  {D92BCB52-FA78-406F-A9A5-2037509FADEA} 0x4f4 0xFF
@@ -60,21 +63,12 @@ logman -stop IddCx -ets
 ```
 
 #### Controlling what is captured
-The Flags parameter of logman.exe (0x4f4 in this case) control what WPP messages IddCx logs.  The meaning value of this has change in Windows build 19041 and above.
 
-##### Flags meaning prior to Windows build 19041
-Flags was treated as a level, each increasing level added a new type of message along with all the messages from the previous levels.
-
-| Flags level value  | Message type captured |
-|:------------------:|-----------------------|
-| 1                  | Not used              |
-| 2                  | Errors                |
-| 3                  | Warnings              |
-| 4                  | Information           |
-| 5                  | Verbose               |
+The Flags parameter of *logman.exe* (0x4f4 in this case) control what WPP messages IddCx logs.  The meaning value of this has change in Windows build 19041 and above.
 
 ##### Flags meaning for Windows build 19041 and above
-The Flags is a bit-field, each bit controls if that type of message is captured.
+
+The Flags is a bit-field, where each bit controls whether that type of message is captured.
 
 | Flags bit | Message type captured  |
 |:---------:|------------------------|
@@ -91,33 +85,51 @@ The Flags is a bit-field, each bit controls if that type of message is captured.
 | 0x400     | Calls from kernel to IddCx |
 | 0x800     | Calls from IddCx to kernel |
 
-For normal logging scenario 0x0f4 is a good starting point, if you want to view per frame info then 0x1f4 is a good starting point.
+A normal logging scenario of 0x0f4 is a good starting point. If you want to view per frame info then 0x1f4 is a good starting point.
+
+##### Flags meaning prior to Windows build 19041
+
+Flags was treated as a level, each increasing level added a new type of message along with all the messages from the previous levels.
+
+| Flags level value  | Message type captured |
+|:------------------:|-----------------------|
+| 1                  | Not used              |
+| 2                  | Errors                |
+| 3                  | Warnings              |
+| 4                  | Information           |
+| 5                  | Verbose               |
 
 ### Decoding IddCx WPP tracing
-Like with all WPP traces, the WPP information is stored in pdb files and hence access to pdb's with that information are necessary to decode.  Before Windows build 19560 the IddCx.pdb on the public symbol server does **not** contain the necessary WPP information to enable WPP decode. For Windows build 19560 and above the IddCx.pdb on the public symbol server does contain the WPP information necessary to decode WPP messages.
+
+Like all WPP traces, the WPP information is stored in *pdb* files and hence access to *pdb*s with that information are necessary to decode. Starting with Windows build 19560, the *IddCx.pdb* on the public symbol server contains the WPP information necessary to decode WPP messages. Before Windows build 19560, the *IddCx.pdb* on the public symbol server does *not* contain the necessary WPP information to enable WPP decode.
 
 Any of the standard WPP decode tools can be used to decode and display the messages.
 
-## <span id="Debugging_IddCx_errors"></span><span id="debugging_iddcx_errors"></span><span id="Debugging_IddCx_errors"></span>Debugging IddCx errors
-While developing an Indirect Display driver it is often useful to get additional information when IddCx detects an error.  Using the above section you can configure IddCx to break into debugger when IddCx detects an error but it is also useful to display the IddCx error message in the last few trace messages to understand the context of the error.
-Using the above section you can enable WPP tracing using logman.exe and with the following information below display the in memory WPP buffer in the kernel debugger at the point of the failure.
-**NOTE** For this to work you need to be using a kernel debugger (not user mode debugger) and Windows build 19560 or above in order for the debugger to get the IddCx.pdb that contain the WPP decode info.
+## Debugging IddCx errors
 
-In the example below a Indirect Display driver has call IddCxMonitorArrival() and as part of the processing IddCx calls the driver's EvtIddCxMonitorQueryTargetModes() DDI, in this example the driver returned a mode with DISPLAYCONFIG_VIDEO_SIGNAL_INFO.AdditionalSignalInfo.vSyncFreqDivider set to zero which is invalid and causes an error.
+While developing an Indirect Display driver it is often useful to get additional information when IddCx detects an error. As described above, you can configure IddCx to break into the debugger when IddCx detects an error, but it is also useful to display the IddCx error message in the last few trace messages to understand the context of the error.
 
-Here is a list of the debugger command used:
+Using the above section, you can enable WPP tracing using *logman.exe* and with the following information display the in-memory WPP buffer in the kernel debugger at the point of the failure.
+
+> [!NOTE]
+>
+> For this to work you need to be using a kernel debugger (not user mode debugger) and Windows build 19560 or above in order for the debugger to get the *IddCx.pdb* that contain the WPP decode info.
+
+In the example below, a Indirect Display driver calls [**IddCxMonitorArrival**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorarrival). As a part of the processing, IddCx calls the driver's [**EvtIddCxMonitorQueryTargetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_query_target_modes) DDI. In this example, the driver returned a mode with DISPLAYCONFIG_VIDEO_SIGNAL_INFO.AdditionalSignalInfo.vSyncFreqDivider set to zero which is invalid and causes an error.
+
+Here is a list of the debugger commands used:
 
 | Command                             | Meaning  |
 |-------------------------------------|----------|
 | !wmitrace.bufdump                   | List all the logging buffer along with the name, IddCx is the name of ours, comes from the logman.exe command line |
-| !wmitrace.logdump <Log buffer name> | Decodes and displays the content of the specified logging buffer, in our example IddCx |
+| !wmitrace.logdump *LogBufferName*   | Decodes and displays the content of the specified logging buffer, which is IddCx in the example below |
 
 Here is the debugger output for this example:
 
-```
+```dbgcmd
 0: kd> !wmitrace.bufdump
 (WmiTrace) BufDump
-	LoggerContext Array @ 0xFFFFE6055EB0AC40 [64 Elements]
+    LoggerContext Array @ 0xFFFFE6055EB0AC40 [64 Elements]
 
  Logger Context  Number Available   Size    NPP Usage   PP Usage
 ================ ====== ========= ======== =========== ==========
