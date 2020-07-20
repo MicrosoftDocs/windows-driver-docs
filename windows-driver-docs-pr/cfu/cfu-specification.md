@@ -299,13 +299,13 @@ This command is sent by the host to query the version(s) of current firmware(s) 
 
 The component responds with the firmware version of the primary component and the sub-components. The response size is 60 bytes allowing version information for up to seven components (one primary and up to six sub-components).  
 
-Table 5.1-1 GET_FIRMWARE_VERSION Response Layout
+###### Table 5.1-1 GET_FIRMWARE_VERSION Response Layout
 
 ![GET_FIRMWARE_VERSION Response Layout](images/get-firmware-version-response-layout.png)
 
 ##### 5.1.2.1 Header
 
-Table 5.1-2 GET_FIRMWARE_VERSION Response -  Header Layout
+###### Table 5.1-2 GET_FIRMWARE_VERSION Response -  Header Layout
 
 ![GET_FIRMWARE_VERSION Response - Header Layout](images/get-firmware-version-response-header-layout.png)
 
