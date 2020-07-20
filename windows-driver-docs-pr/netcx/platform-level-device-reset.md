@@ -1,15 +1,15 @@
 ---
-title: Recovering unresponsive NIC with platform-level device reset
-description: Recovering unresponsive NIC with platform-level device reset
-ms.assetid: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+title: Recovering an unresponsive NIC with platform-level device reset
+description: Recovering an unresponsive NIC with platform-level device reset
+ms.assetid: 
 keywords:
-- Recovering mechanism, device reset, colleting diagnostics
+- Recovering mechanism, device reset, collecting diagnostics
 ms.date: 07/02/2020
 ms.localizationpriority: medium
 ms.custom: Fe
 ---
 
-# Recovering unresponsive NIC with platform-level device reset
+# Recovering an unresponsive NIC with platform-level device reset
 
 NetAdapterCx provides an effective way to reset and recover malfunctioning network devices through platform-level device reset (PLDR).
 Without rebooting the entire Windows system, the PLDR operation tears down the stack of the affected network device to ensure both its hardware and driver restart from a blank state.
@@ -51,7 +51,7 @@ NTSTATUS EvtWdfDriverDeviceAdd(
 }
 ```
 
-See [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_diagnostics_capabilities_init.md) for how to initialize **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** strucutre, and [**NetDeviceInitSetResetDiagnosticsCapabilitites**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetdiagnosticscapabilitites.md) for how to advertise **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure to NetAdapterCx.
+See [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_diagnostics_capabilities_init.md) for how to initialize **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure, and [**NetDeviceInitSetResetDiagnosticsCapabilitites**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetdiagnosticscapabilitites.md) for how to advertise **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure to NetAdapterCx.
 
 Reset and recovery sequence can happen at any given time.
 Therefore, the client driver's implementation of **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** callback should takes this case into consideration.
@@ -80,7 +80,7 @@ When PLDR is triggered by either the OS or the client driver, the following sequ
 
 ## How a client driver can request PLDR
 NetAdapterCx provides [**NetDeviceRequestReset**](/windows-hardware/drivers/ddi/nf-netdevice-netdevicerequestreset.md) API for a client driver to trigger PLDR when it detects device failure.
-**NetDeviceRequestReset** returns immidiately to the client driver.
-The reset and recovery sequence decribed in [NetAdapterCx reset and recover sequence](#netadaptercx-reset-and-recover-sequence) will be triggered and it is asynchronous to the **NetDeviceRequestReset** call.
+**NetDeviceRequestReset** returns immediately to the client driver.
+The reset and recovery sequence described in [NetAdapterCx reset and recover sequence](#netadaptercx-reset-and-recover-sequence) will be triggered and it is asynchronous to the **NetDeviceRequestReset** call.
 Only one PLDR operation can happen at any given time.
-Therefore, subseqent calls of **NetDeviceRequestReset** have no effort if a reset and recovery operation has already been in-flight.
+Therefore, subsequent calls of **NetDeviceRequestReset** have no effort if a reset and recovery operation has already been in-flight.
