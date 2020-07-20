@@ -1,22 +1,26 @@
 ---
 title: Customizing the Component Firmware Update (CFU) driver
 description: Customizing the Component Firmware Update (CFU) driver
-ms.date: 07/09/2020
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Customizing the Component Firmware Update Driver
+# Customizing the Component Firmware Update (CFU) driver
 
 The Microsoft Devices team has announced the release of an open-source model to update the firmware of peripheral devices– Component Firmware Update (CFU). The solution allows seamless and secure firmware update for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, sample CFU driver, and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
 
-- The sample CFU driver is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s). Source: [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host/README.MD).
+## Resources
 
-- CFU protocol specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. Specification: [Component Firmware Update Protocol Specification](https://github.com/Microsoft/CFU/tree/master/Documentation/CFU-Protocol)
+- The sample [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s).
 
-- The sample firmware code: [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware/CFUEngineeringGuide.md).
+- The [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md) describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download.
+
+- The sample [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware) code
+
+## Contents
 
 - [Customizing the Component Firmware Update Driver](#customizing-the-component-firmware-update-driver)
 
@@ -56,23 +60,23 @@ The Microsoft Devices team has announced the release of an open-source model to 
 
 ## Before you begin
 
-Familiarize yourself with the CFU protocol.
+Familiarize yourself with the CFU protocol:
 
-- [Blog: Introducing Component Firmware Update](https://blogs.windows.com/buildingapps/?p=54456)
+- [Introducing Component Firmware Update](https://blogs.windows.com/buildingapps/?p=54456)
 
-- [Component Firmware Update Protocol Specification](https://github.com/Microsoft/CFU/tree/master/Documentation/CFU-Protocol)
+- [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md)
 
-- [Github Resources](https://github.com/Microsoft/CFU)
+- [CFU resources on GitHub](https://github.com/Microsoft/CFU)
 
 ## Overview
 
-To update the firmware image for your device by using the CFU model, you are expected,
+To update the firmware image for your device by using the CFU model, you should expect to meet the following requirements:
 
-- To provide a CFU driver. This driver sends the firmware update to the device. We recommend that you customize the sample CFU driver to support your firmware update scenarios.
+- Provide a CFU driver. This driver sends the firmware update to the device. We recommend that you customize the sample CFU driver to support your firmware update scenarios.
 
 - Your device must ship with a firmware image that is compliant with the CFU protocol so that it can accept an update from the CFU driver.
 
-- The device must expose itself as HID device to the operating system (running the CFU driver) and expose a HID Top-Level Collection (TLC). The CFU driver loads on the TLC and sends the firmware update to the device.
+- Your device must expose itself as a HID device to the operating system (running the CFU driver) and expose a HID Top-Level Collection (TLC). The CFU driver loads on the TLC and sends the firmware update to the device.
 
 This allows you to service your in-market devices through Windows Update. To update the firmware for a component, you deploy the CFU driver through the Windows update, and the driver gets installed on a Windows host. When the driver detects the presence of a component, it performs the necessary actions on the host and transmits the firmware image to the primary component on the device.
 
@@ -82,7 +86,7 @@ This allows you to service your in-market devices through Windows Update. To upd
 
 Customize the CFU driver sample to meet your needs. To do so, choose a deployment package approach, modify the INF file, change the name of the driver binary, and update some logging GUIDs.
 
-### 1. Choose a deployment approach
+### 1 Choose a deployment approach
 
 There are two deployment approaches to packaging the driver and the firmware for: componentized packages or monolithic package.
 
@@ -92,20 +96,20 @@ Starting in Windows 10, version 1709, INF functionality can be split into differ
 
 Base package and extensions packages are serviced independently.
 
-**When to use this approach**
+##### When to use this approach**
 
-**Challenges**
+###### Challenges
 
 - This option is only available in Windows 10, version 1709 and later.
 
-**To create componentized packages:**
+###### To create componentized packages
 
 1. Define a base package that contains the common driver binary and an INF that describes the hardware IDs for each device that is going to use the CFU driver.
-2. Define a separate extension package for each device, which contains:
+1. Define a separate extension package for each device, which contains:
     - The firmware image file(s) for the device.
     - An extension INF that describes the hardware ID for the specific device. The INF also specifies the path of the firmware files.
 
-**Example**
+###### Example
 
 - Base Package
   - ComponentFirmwareUpdate.inf
@@ -133,17 +137,17 @@ Reference sample: [ComponentizedPackageExample](https://github.com/Microsoft/CFU
 
 In this approach, there is one driver package per CFU capable device. The package includes: INF, the CFU driver binary, and firmware files for the device.
 
-**When to use this approach**
+##### When to use this approach
 
 - If your company ships only a handful of devices. Typically, a 1:1 mapping exists between the driver package and the device to which the driver is offering the updated firmware.
 - To support updates for your devices on version of Windows earlier than Windows 10, version 1709.
 
-**Challenges**
+###### Challenges
 
 - If you update multiple devices by using a single package, you will lose the ability to service each device independently. This approach can unnecessarily bloat the package.
 - If you update each device by using its own single package, you must ensure that the package refers to different driver binary to avoid name conflicts, as shown in the example.
 
-**Example**
+###### Example
 
 - Monolithic Package for a dock device
   - DockFirmwareUpdate.inf
@@ -165,7 +169,7 @@ In this approach, there is one driver package per CFU capable device. The packag
 
 Reference sample: [MonolithicPackageExample](https://github.com/Microsoft/CFU/tree/master/Host/MonolithicPackageExample)
 
-### 2. Configure the CFU driver INF
+### 2 Configure the CFU driver INF
 
 The sample CFU driver is extensible. To tune the driver's behavior, change the driver INF instead of the source code.
 
@@ -241,7 +245,7 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
      For the multiple package approach, device capabilities is specified in the device specific firmware file, and for a monolith package approach it is specified in the main INF file for the package.
 
-### 3. Configure the diagnostic capabilities
+### 3 Configure the diagnostic capabilities
 
 1. The CFU driver sample uses [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) for diagnostics. Update the trace with you own GUID to ensure that you can capture the WPP traces for your customized driver.
 
@@ -263,7 +267,7 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
   If you need a different set of report IDs, modify [Dmf_ComponentFirmwareUpdateHidTransport.c](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_ComponentFirmwareUpdateHidTransport.c).
 
-### 4. Deploy the package through Windows Update
+### 4 Deploy the package through Windows Update
 
 Next, deploy the package through Windows Update. For information about deployment, see:
 
@@ -284,7 +288,7 @@ The offer file is a 16-byte binary data whose structure must match the format sp
 The payload file is a binary file which a collection of records that are stored contiguously. Each record is of the following format.
 
 | Offset | Size | Value | Description |
-| --- | --- | --- | --- |
+|--|--|--|--|
 | Byte 0 | DWORD | Firmware Address | Little Endian (LSB First) Address to write the data. The address is 0-based. Firmware could use this as an offset to determine the address as needed when placing the image in memory. |
 | Byte 4 | Byte | Length | Length of payload data. |
 | Byte 5-N | Bytes | Data | Byte array of payload data. |
@@ -294,7 +298,7 @@ The payload file is a binary file which a collection of records that are stored 
 You may configure each of these registries per component as needed.
 
 | Registry Value | Description |
-| --- | --- |
+|--|--|
 | **SupportResumeOnConnect** | Does this component support resume from a previously interrupted update?<p>You can enable this feature if the component can continue to receive payload data starting at a point where it was interrupted earlier. </p><p>When this value is set, during the payload transfer stage, the driver checks to see whether a previous transfer of this payload was interrupted. If it was interrupted, it the driver only sends the payload data from the interrupted point instead of the entire payload. </p><p>Set to 1 to enable and 0 (default) to disable.</p> |
 | **SupportProtocolSkipOptimization** | <p>Does this component support skipping the entire protocol transaction for an already known all up to date firmware? </p><p>This is a driver side optimization option. If enabled, the driver checks these conditions during each initialization:<p><ul><li>Were all offers rejected in a previous cycle. </li><li>Does the current offers match the set of offers that the driver offered earlier.</li><ul></p><p>When the preceding conditions are satisfied, the driver skips the whole protocol transaction. <p>Set to 1 to enable and 0 (default) to disable.</p> |
 | **Protocol** | Specify these values based on the underlying HID transport for your component.<p>If your component is connected by HID-Over-USB, specify 1. (Default)</p><p>If your component is connected by HID-Over-Bluetooth, specify value 2.</p> |

@@ -3,8 +3,6 @@
   items: 
   - name: "Component Firmware Update (CFU)"
     href: index.md
-  - name: "Component Firmware Update (CFU) overview"
-    href: cfu-overview.md
   - name: "Component Firmware Update (CFU) driver"
     href: cfu-driver.md
   - name: "Component Firmware Update (CFU) engineering guide"
