@@ -311,7 +311,7 @@ The component responds with the firmware version of the primary component and th
 
 The header for the response provides the following information.
 
-Table 5.1-3 GET_FIRMWARE_VERSION Response – Header Bits
+###### Table 5.1-3 GET_FIRMWARE_VERSION Response – Header Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -325,13 +325,13 @@ Table 5.1-3 GET_FIRMWARE_VERSION Response – Header Bits
 
 For each component, two DWORDs are used to describe the properties of the component up to 7 components. If the component count in the header is less than 7, the unused DWORDS at the end of the response must be set to 0.
 
-Table - GET_FIRMWARE_VERSION Response - Component Version and Properties Layout
+###### Table - GET_FIRMWARE_VERSION Response - Component Version and Properties Layout
 
 ![GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](images/get-firmware-version-response-component-version-and-properties-layout.png)
 
 Each component specific information is described in two DWORDs as follows:
 
-Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites
+###### Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -356,19 +356,19 @@ The host sends this command to the component to determine whether it accepts or 
 
 The FIRMWARE\_UPDATE\_OFFER Command packet is defined as follows.
 
-Table 5.2-1 FIRMWARE_UPDATE_OFFER Command Layout
+###### Table 5.2-1 FIRMWARE_UPDATE_OFFER Command Layout
 
 ![FIRMWARE_UPDATE_OFFER Command Layout](images/firmware-update-offer-command-layout.png)
 
 ##### 5.2.1.1 Component Information
 
-Table 5.2-2 FIRMWARE_UPDATE_OFFER Command - Component Information Layout
+###### Table 5.2-2 FIRMWARE_UPDATE_OFFER Command - Component Information Layout
 
 ![FIRMWARE_UPDATE_OFFER Command - Component Information Layout](images/firmware-update-offer-command-component-information-layout.png)
 
 The bits of the Component Information byte are described in this table.
 
-Table 5.2-3 FIRMWARE_UPDATE_OFFER Command - Component Information Bits
+###### Table 5.2-3 FIRMWARE_UPDATE_OFFER Command - Component Information Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -383,13 +383,13 @@ Table 5.2-3 FIRMWARE_UPDATE_OFFER Command - Component Information Bits
 
 These four bytes represent the 32-bit version of the firmware. The format for the firmware version is not mandated by this specification. The following is recommended.
 
-Table 5.2-4 FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout
+###### Table 5.2-4 FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout
 
 ![FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout](images/firmware-update-offer-command-firmware-version-layout.png)
 
 The format for the firmware version is not mandated by this specification, however following is a recommended guideline.
 
-Table 5.2-5 FIRMWARE_UPDATE_OFFER Command - Firmware Version Bits
+###### Table 5.2-5 FIRMWARE_UPDATE_OFFER Command - Firmware Version Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -405,13 +405,13 @@ These four bytes may be used to encode any custom information in the offer that 
 
 These four bytes may be used to encode any custom information in the offer that is specific to vendor implementation.
 
-Table 5.2-6 FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout
+###### Table 5.2-6 FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout
 
 ![FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout](images/firmware-update-offer-command-vendor-specific-layout.png)
 
 The bits of the Vendor Specific byte are described in this table.
 
-Table 5.2-7 FIRMWARE_UPDATE_OFFER Command - Misc. and Protocol version
+###### Table 5.2-7 FIRMWARE_UPDATE_OFFER Command - Misc. and Protocol version
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -424,19 +424,19 @@ Table 5.2-7 FIRMWARE_UPDATE_OFFER Command - Misc. and Protocol version
 
 The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
 
-Table 5.2-8 FIRMWARE_UPDATE_OFFER Response Token Layout
+###### Table 5.2-8 FIRMWARE_UPDATE_OFFER Response Token Layout
 
 ![FIRMWARE_UPDATE_OFFER Response Token Layout](images/firmware-update-offer-response-token-layout.png)
 
 ##### 5.2.2.1 Token
 
-Table 5.2-9 FIRMWARE_UPDATE_OFFER Response - Token Layout
+###### Table 5.2-9 FIRMWARE_UPDATE_OFFER Response - Token Layout
 
 ![FIRMWARE_UPDATE_OFFER Response - Token Layout](images/firmware-update-offer-response-token-layout2.png)
 
 The bits of the Token byte are described in this table.
 
-Table 5.2-10 FIRMWARE_UPDATE_OFFER Response – Token Bits
+###### Table 5.2-10 FIRMWARE_UPDATE_OFFER Response – Token Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -451,11 +451,11 @@ Reserved. Do not use.
 
 ##### 5.2.2.3 Reject Reason (RR)
 
-Table 5.2-11 FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout
+###### Table 5.2-11 FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout
 
 ![FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout](images/firmware-update-offer-response-reject-reason-layout.png)
 
-Table 5.2-12 FIRMWARE\_UPDATE\_OFFER Response - Reject Reason Bits
+###### Table 5.2-12 FIRMWARE\_UPDATE\_OFFER Response - Reject Reason Bits
 
 The bits of the Reject Reason byte are described in this table.
 
@@ -464,7 +464,7 @@ The bits of the Reject Reason byte are described in this table.
 | 0 | RR Code | 8 | The Reject Reason Code that indicates the reason provided by the component for rejecting the offer. This value depends on the Status field. For a Status to RR Code mapping see Table 5.2-13. |
 | 8 | Reserved | 24 | Reserved. Do not use. |                                                             |
 
-Table 5.2-13 FIRMWARE\_UPDATE\_OFFER Response RR Code Values
+###### Table 5.2-13 FIRMWARE\_UPDATE\_OFFER Response RR Code Values
 
 The possible values for the RR Code byte are described in this table.
 
@@ -479,13 +479,13 @@ The possible values for the RR Code byte are described in this table.
 
 ##### 5.2.2.4 Status
 
-Table - FIRMWARE_UPDATE_OFFER Response Status Layout
+###### Table - FIRMWARE_UPDATE_OFFER Response Status Layout
 
 ![FIRMWARE_UPDATE_OFFER Response Status Layout](images/firmware-update-offer-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
-Table 5.2-14 FIRMWARE_UPDATE_OFFER Response – Status Bits
+###### Table 5.2-14 FIRMWARE_UPDATE_OFFER Response – Status Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -494,7 +494,7 @@ Table 5.2-14 FIRMWARE_UPDATE_OFFER Response – Status Bits
 
 The possible values for the Status byte are described in this table.
 
-Table 5.2-15 FIRMWARE_UPDATE_OFFER Response Status Values
+###### Table 5.2-15 FIRMWARE_UPDATE_OFFER Response Status Values
 
 | Status | Name | Description |
 |--|--|--|
@@ -517,19 +517,19 @@ If the Component ID in the Component Information bytes (see Component Informatio
 
 The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
 
-Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout
+###### Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout
 
 ![FIRMWARE_UPDATE_OFFER - Information Command Layout](images/firmware-update-offer-information-command-layout.png)
 
 ##### 5.3.1.1 Component
 
-Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command – Component Layout
+###### Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command – Component Layout
 
 ![FIRMWARE_UPDATE_OFFER - Information Command – Component Layout](images/firmware-update-offer-information-command-component-layout.png)
 
 The bits of the Component byte are described in this table.
 
-Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command – Component Bits
+###### Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command – Component Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -538,7 +538,7 @@ Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command – Component Bits
 | 16 | Component ID | 8 | Set to 0xFF. |
 | 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
-Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command – Information Code Values
+###### Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command – Information Code Values
 
 | Status | Name | Description |
 |--|--|--|
@@ -562,19 +562,19 @@ Reserved. Do not use.
 
 The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defined as follows.
 
-Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout
+###### Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout
 
 ![FIRMWARE_UPDATE_OFFER - Information Response Layout](images/firmware-update-offer-information-response-layout.png)
 
 ##### 5.3.2.1 Token
 
-Table 5.3-6 FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout
+###### Table 5.3-6 FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout
 
 ![FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout](images/firmware-update-offer-information-packet-response-token-layout.png)
 
 The bits of the Token byte are described in this table.
 
-Table 5.3-7 FIRMWARE_UPDATE_OFFER - Information Response – Token Bits
+###### Table 5.3-7 FIRMWARE_UPDATE_OFFER - Information Response – Token Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -589,13 +589,13 @@ Reserved. Do not use.
 
 ##### 5.3.2.3 Reject Reason (RR)
 
-Table 5.3-8 FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout
+###### Table 5.3-8 FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout
 
 ![FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout](images/firmware-update-offer-information-response-rr-code-layout.png)
 
 The bits of the Reject Reason byte are described in this table.
 
-Table 5.3-9 FIRMWARE_UPDATE_OFFER- Offer Information Response - RR Code Bits
+###### Table 5.3-9 FIRMWARE_UPDATE_OFFER- Offer Information Response - RR Code Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -604,7 +604,7 @@ Table 5.3-9 FIRMWARE_UPDATE_OFFER- Offer Information Response - RR Code Bits
 
 The possible values for the RR Code byte are described in this table.
 
-Table 5.3-10 FIRMWARE_UPDATE_OFFER- Information Response - RR Code Values
+###### Table 5.3-10 FIRMWARE_UPDATE_OFFER- Information Response - RR Code Values
 
 | RR Code | Name | Description |
 |--|--|--|
@@ -617,13 +617,13 @@ Table 5.3-10 FIRMWARE_UPDATE_OFFER- Information Response - RR Code Values
 
 ##### 5.3.2.4 Status
 
-Table 5.3-11 FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout
+###### Table 5.3-11 FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout
 
 ![FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout](images/firmware-update-offer-offer-information-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
-Table 5.3-12 FIRMWARE_UPDATE_OFFER - Offer Information - Response Status Bits
+###### Table 5.3-12 FIRMWARE_UPDATE_OFFER - Offer Information - Response Status Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -638,19 +638,19 @@ If the Component ID in the Component Information bytes is set to 0xFE, then bits
 
 If the Component ID in the Component Information bytes is set to 0xFE, the four DWORDs are redefined as follows:
 
-Table 5.4-1 FIRMWARE_UPDATE_OFFER - Extended Command Layout
+###### Table 5.4-1 FIRMWARE_UPDATE_OFFER - Extended Command Layout
 
 ![FIRMWARE_UPDATE_OFFER - Extended Command Layout](images/firmware-update-offer-extended-command-layout.png)
 
 ##### 5.4.1.1 Component
 
-Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout
+###### Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout
 
 ![FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout](images/firmware-update-offer-extended-command-packet-command-component-layout.png)
 
 The bits of the Component byte are described in this table.
 
-Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command – Component Bits
+###### Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command – Component Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -659,7 +659,7 @@ Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command – Component Bits
 | 16 | Component ID | 8 | Set to 0xFE. |
 | 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
-Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command – Command Code Values
+###### Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command – Command Code Values
 
 | Status | Name | Description |
 |--|--|--|
@@ -682,19 +682,19 @@ Reserved. Do not use.
 
 The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be received immediately. Response is defined as follows.
 
-Table 5.4-5 FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout
+###### Table 5.4-5 FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout
 
 ![FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout](images/firmware-update-offer-extended-command-packet-response-layout.png)
 
 ##### 5.4.2.1 Token
 
-Table 5.4-6 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout
+###### Table 5.4-6 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout
 
 ![FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout](images/firmware-update-offer-offer-command-packet-response-token-layout.png)
 
 The bits of the Token byte are described in this table.
 
-Table - FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits
+###### Table - FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -709,13 +709,13 @@ Reserved. Do not use.
 
 ##### 5.4.2.3 Reject Reason
 
-Table 5.4-7 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout
+###### Table 5.4-7 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout
 
 ![FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout](images/firmware-update-offer-offer-information-packet-response-rr-layout.png)
 
 The bits of the Reject Reason byte are described in this table.
 
-Table 5.4-8 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code
+###### Table 5.4-8 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -724,7 +724,7 @@ Table 5.4-8 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code
 
 The possible values for the RR Code byte are described in this table.
 
-Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values
+###### Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values
 
 | RR Code | Name | Description |
 |--|--|--|
@@ -737,13 +737,13 @@ Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values
 
 ##### 5.4.2.4 Status
 
-Table 5.4-10 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout
+###### Table 5.4-10 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout
 
 ![FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout](images/firmware-update-offer-offer-command-packet-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
-Table 5.4-11 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code
+###### Table 5.4-11 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -760,19 +760,19 @@ When the primary component receives the last block, the component validates the 
 
 #### 5.5.1 Command
 
-Table 5.5-1 FIRMWARE_UPDATE_CONTENT Command Layout
+###### Table 5.5-1 FIRMWARE_UPDATE_CONTENT Command Layout
 
 ![FIRMWARE_UPDATE_CONTENT Command Layout](images/firmware-update-content-command-layout.png)
 
 ##### 5.5.1.1 Header (B7 – B0)
 
-Table 5.5-2 FIRMWARE_UPDATE_CONTENT Command Header Layout
+###### Table 5.5-2 FIRMWARE_UPDATE_CONTENT Command Header Layout
 
 ![FIRMWARE_UPDATE_CONTENT Command Header Layout](images/firmware-update-content-command-header-layout.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Header are described in this table.
 
-Table 5.5-3 FIRMWARE_UPDATE_CONTENT Header Bits
+###### Table 5.5-3 FIRMWARE_UPDATE_CONTENT Header Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -783,7 +783,7 @@ Table 5.5-3 FIRMWARE_UPDATE_CONTENT Header Bits
 
 The possible values for the Flags byte are described in this table.
 
-Table 5.5-4 FIRMWARE_UPDATE_OFFER- Offer Command Packet - Flag Values
+###### Table 5.5-4 FIRMWARE_UPDATE_OFFER- Offer Command Packet - Flag Values
 
 | Flag | Name | Description |
 |--|--|--|
@@ -792,13 +792,13 @@ Table 5.5-4 FIRMWARE_UPDATE_OFFER- Offer Command Packet - Flag Values
 
 ##### 5.5.1.2 Data
 
-Table 5.5-5 FIRMWARE_UPDATE_CONTENT Command Data Layout
+###### Table 5.5-5 FIRMWARE_UPDATE_CONTENT Command Data Layout
 
 ![FIRMWARE_UPDATE_CONTENT Command Data Layout](images/firmware-update-content-command-data-layout.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 
-Table 5.5-6 FIRMWARE_UPDATE_CONTENT Command Data Bits
+###### Table 5.5-6 FIRMWARE_UPDATE_CONTENT Command Data Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -806,19 +806,19 @@ Table 5.5-6 FIRMWARE_UPDATE_CONTENT Command Data Bits
 
 #### 5.5.2 Response
 
-Table 5.5-7 FIRMWARE_UPDATE_CONTENT Command Response Layout
+###### Table 5.5-7 FIRMWARE_UPDATE_CONTENT Command Response Layout
 
 ![FIRMWARE_UPDATE_CONTENT Command Response Layout](images/firmware-update-content-command-response-layout.png)
 
 ##### 5.5.2.1 Sequence Number
 
-Table - FIRMWARE_UPDATE_CONTENT Response - Sequence Number
+###### Table - FIRMWARE_UPDATE_CONTENT Response - Sequence Number
 
 ![FIRMWARE_UPDATE_CONTENT Response - Sequence Number](images/firmware-update-content-response-sequence-number.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this table.
 
-Table 5.5-8 FIRMWARE_UPDATE_CONTENT - Command - Response Bits
+###### Table 5.5-8 FIRMWARE_UPDATE_CONTENT - Command - Response Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -827,13 +827,13 @@ Table 5.5-8 FIRMWARE_UPDATE_CONTENT - Command - Response Bits
 
 ##### 5.5.2.2 Status
 
-Table 5.5-9 FIRMWARE_UPDATE_CONTENT Response Status Layout
+###### Table 5.5-9 FIRMWARE_UPDATE_CONTENT Response Status Layout
 
 ![FIRMWARE_UPDATE_CONTENT Response Status Layout](images/firmware-update-content-response-status-layout.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (7-4) are described in this table.
 
-Table 5.5-10 FIRMWARE_UPDATE_OFFER - Response - Status Bits
+###### Table 5.5-10 FIRMWARE_UPDATE_OFFER - Response - Status Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -842,7 +842,7 @@ Table 5.5-10 FIRMWARE_UPDATE_OFFER - Response - Status Bits
 
 The possible values for the Status byte are described in this table.
 
-Table 5.5-11 FIRMWARE_UPDATE_OFFER- Response - Status Code Values
+###### Table 5.5-11 FIRMWARE_UPDATE_OFFER- Response - Status Code Values
 
 | Flag | Name | Description |
 |--|--|--|
