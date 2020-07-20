@@ -39,7 +39,7 @@ The following table specifies the UUID and command code for each CID, as well as
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_NITZ_INFO | MBIM_NITZ_INFO |

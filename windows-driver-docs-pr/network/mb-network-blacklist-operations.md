@@ -52,7 +52,7 @@ An Unsolicited Event is expected if any of the blacklist states have changed fro
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_NETWORK_BLACKLIST_INFO | Not applicable | Not applicable |
 | Response | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO |
