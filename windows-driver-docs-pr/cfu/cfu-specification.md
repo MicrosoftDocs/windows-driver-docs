@@ -85,6 +85,122 @@ This specification describes a generic HID protocol to update firmware for compo
   - [6.1 Example 1](#61-example-1)
   - [6.2 Example 2](#62-example-2)
 
+## Tables
+
+[Table 5.1-1 GET_FIRMWARE_VERSION Response Layout](#table-51-1-get_firmware_version-response-layout)
+
+[Table 5.1-2 GET_FIRMWARE_VERSION Response - Header Layout](#table-51-2-get_firmware_version-response----header-layout)
+
+[Table 5.1-3 GET_FIRMWARE_VERSION Response - Header Bits](#table-51-3-get_firmware_version-response--header-bits)
+
+[Table - GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](#table---get_firmware_version-response---component-version-and-properties-layout)
+
+[Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites](#table-51-4-get_firmware_version-response---component-version-and-properties-bites)
+
+[Table 5.2-1 FIRMWARE_UPDATE_OFFER Command Layout](#table-52-1-firmware_update_offer-command-layout)
+
+[Table 5.2-2 FIRMWARE_UPDATE_OFFER Command - Component Information Layout](#table-52-2-firmware_update_offer-command---component-information-layout)
+
+[Table 5.2-3 FIRMWARE_UPDATE_OFFER Command - Component Information Bits](#table-52-3-firmware_update_offer-command---component-information-bits)
+
+[Table 5.2-4 FIRMWARE_UPDATE_OFFER Command - Firmware Version Layout](#table-52-4-firmware_update_offer-command---firmware-version-layout)
+
+[Table 5.2-5 FIRMWARE_UPDATE_OFFER Command - Firmware Version Bits](#table-52-5-firmware_update_offer-command---firmware-version-bits)
+
+[Table 5.2-6 FIRMWARE_UPDATE_OFFER Command - Vendor Specific Layout](#table-52-6-firmware_update_offer-command---vendor-specific-layout)
+
+[Table 5.2-7 FIRMWARE_UPDATE_OFFER Command - Misc. and Protocol version](#table-52-7-firmware_update_offer-command---misc-and-protocol-version)
+
+[Table 5.2-8 FIRMWARE_UPDATE_OFFER Response Token Layout](#table-52-8-firmware_update_offer-response-token-layout)
+
+[Table 5.2-9 FIRMWARE_UPDATE_OFFER Response - Token Layout](#table-52-9-firmware_update_offer-response---token-layout)
+
+[Table 5.2-10 FIRMWARE_UPDATE_OFFER Response - Token Bits](#table-52-10-firmware_update_offer-response--token-bits)
+
+[Table 5.2-11 FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout](#table-52-11-firmware_update_offer-response---reject-reason-layout)
+
+[Table 5.2-12 FIRMWARE\_UPDATE\_OFFER Response - Reject Reason Bits](#table-52-12-firmware_update_offer-response---reject-reason-bits)
+
+[Table 5.2-13 FIRMWARE\_UPDATE\_OFFER Response RR Code Values](#table-52-13-firmware_update_offer-response-rr-code-values)
+
+[Table - FIRMWARE_UPDATE_OFFER Response Status Layout](#table---firmware_update_offer-response-status-layout)
+
+[Table 5.2-14 FIRMWARE_UPDATE_OFFER Response - Status Bits](#table-52-14-firmware_update_offer-response--status-bits)
+
+[Table 5.2-15 FIRMWARE_UPDATE_OFFER Response Status Values](#table-52-15-firmware_update_offer-response-status-values)
+
+[Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout](#table-53-1-firmware_update_offer---information-command-layout)
+
+[Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command - Component Layout](#table-53-2-firmware_update_offer---information-command--component-layout)
+
+[Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command - Component Bits](#table-53-3-firmware_update_offer---information-command--component-bits)
+
+[Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command - Information Code Values](#table-53-4-firmware_update_offer---information-command--information-code-values)
+
+[Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout](#table-53-5-firmware_update_offer---information-response-layout)
+
+[Table 5.3-6 FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout](#table-53-6-firmware_update_offer--information-packet-response-token-layout)
+
+[Table 5.3-7 FIRMWARE_UPDATE_OFFER - Information Response - Token Bits](#table-53-7-firmware_update_offer---information-response--token-bits)
+
+[Table 5.3-8 FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout](#table-53-8-firmware_update_offer---information-response---rr-code-layout)
+
+[Table 5.3-9 FIRMWARE_UPDATE_OFFER- Offer Information Response - RR Code Bits](#table-53-9-firmware_update_offer--offer-information-response---rr-code-bits)
+
+[Table 5.3-10 FIRMWARE_UPDATE_OFFER- Information Response - RR Code Values](#table-53-10-firmware_update_offer--information-response---rr-code-values)
+
+[Table 5.3-11 FIRMWARE_UPDATE_OFFER - Offer Information Response Status Layout](#table-53-11-firmware_update_offer---offer-information-response-status-layout)
+
+[Table 5.3-12 FIRMWARE_UPDATE_OFFER - Offer Information - Response Status Bits](#table-53-12-firmware_update_offer---offer-information---response-status-bits)
+
+[Table 5.4-1 FIRMWARE_UPDATE_OFFER - Extended Command Layout](#table-54-1-firmware_update_offer---extended-command-layout)
+
+[Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout](#table-54-2-firmware_update_offer---extended-command-packet--command---component-layout)
+
+[Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command - Component Bits](#table-54-3-firmware_update_offer---extended-command--component-bits)
+
+[Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command - Command Code Values](#table-54-4-firmware_update_offer---extended-command--command-code-values)
+
+[Table 5.4-5 FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout](#table-54-5-firmware_update_offer---extended-command-packet-response-layout)
+
+[Table 5.4-6 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout](#table-54-6-firmware_update_offer--offer-command-packet-response---token-layout)
+
+[Table - FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits](#table---firmware_update_offer---offer-command-response---token-bits)
+
+[Table 5.4-7 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout](#table-54-7-firmware_update_offer---offer-information-packet-response-rr-layout)
+
+[Table 5.4-8 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code](#table-54-8-firmware_update_offer--offer-command-response---rr-code)
+
+[Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values](#table-54-9-firmware_update_offer--offer-command-packet---rr-code-values)
+
+[Table 5.4-10 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout](#table-54-10-firmware_update_offer---offer-command-packet-response-status-layout)
+
+[Table 5.4-11 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code](#table-54-11-firmware_update_offer--offer-command-packet-response-rr-code)
+
+[Table 5.5-1 FIRMWARE_UPDATE_CONTENT Command Layout](#table-55-1-firmware_update_content-command-layout)
+
+[Table 5.5-2 FIRMWARE_UPDATE_CONTENT Command Header Layout](#table-55-2-firmware_update_content-command-header-layout)
+
+[Table 5.5-3 FIRMWARE_UPDATE_CONTENT Header Bits](#table-55-3-firmware_update_content-header-bits)
+
+[Table 5.5-4 FIRMWARE_UPDATE_OFFER- Offer Command Packet - Flag Values](#table-55-4-firmware_update_offer--offer-command-packet---flag-values)
+
+[Table 5.5-5 FIRMWARE_UPDATE_CONTENT Command Data Layout](#table-55-5-firmware_update_content-command-data-layout)
+
+[Table 5.5-6 FIRMWARE_UPDATE_CONTENT Command Data Bits](#table-55-6-firmware_update_content-command-data-bits)
+
+[Table 5.5-7 FIRMWARE_UPDATE_CONTENT Command Response Layout](#table-55-7-firmware_update_content-command-response-layout)
+
+[Table - FIRMWARE_UPDATE_CONTENT Response - Sequence Number](#table---firmware_update_content-response---sequence-number)
+
+[Table 5.5-8 FIRMWARE_UPDATE_CONTENT - Command - Response Bits](#table-55-8-firmware_update_content---command---response-bits)
+
+[Table 5.5-9 FIRMWARE_UPDATE_CONTENT Response Status Layout](#table-55-9-firmware_update_content-response-status-layout)
+
+[Table 5.5-10 FIRMWARE_UPDATE_OFFER - Response - Status Bits](#table-55-10-firmware_update_offer---response---status-bits)
+
+[Table 5.5-11 FIRMWARE_UPDATE_OFFER- Response - Status Code Values](#table-55-11-firmware_update_offer--response---status-code-values)
+
 ## 1 Introduction
 
 Today's PCs and accessories have internal components that perform complex operations. To ensure a quality product, there is a need to frequently update the behavior of these devices in later stages of development or after they have shipped to the customers. The update might fix identified functional or security issues, or a need to add new features. A large portion of the complex logic is in the firmware running on the device, which is updatable.
