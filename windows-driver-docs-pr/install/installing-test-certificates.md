@@ -2,7 +2,7 @@
 title: Installing Test Certificates
 description: Installing Test Certificates
 ms.assetid: 4c306390-32cc-4c7a-9f61-48e8af385a6d
-ms.date: 04/20/2017
+ms.date: 07/20/2020
 ms.localizationpriority: medium
 ---
 
@@ -31,7 +31,14 @@ Where:
 
 -   *Root* specifies the name of the destination store for the local computer, which is either ***root*** to specify the Trusted Root Certification Authorities certificate store or ***trustedpublisher*** to specify the Trusted Publishers certificate store.
 
-After the certificate is copied to the Trusted Root Certification Authorities certificate store, you can view it through the Microsoft Management Console (MMC) Certificates snap-in, as described in [Viewing Test Certificates](viewing-test-certificates.md).
+A successful run produces the following output:
+
+```cmd
+e:\>certmgr /add ContosoTest.cer /s /r localMachine root
+CertMgr Succeeded
+```
+
+After the certificate is copied to the Trusted Root Certification Authorities certificate store (the machine store, *not* the user store), you can view it through the Microsoft Management Console (MMC) Certificates snap-in, as described in [Viewing Test Certificates](viewing-test-certificates.md).
 
 The following screen shot shows the Contoso.com(Test) certificate in the Trusted Root Certification Authorities certificate store.
 
