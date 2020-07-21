@@ -50,7 +50,7 @@ The Microsoft Devices team has announced the release of an open-source model to 
 
 ## Before you begin
 
-Familiarize yourself with the Component Firmware Update (CFU) protocol:
+The following resources will help you learn about the Component Firmware Update (CFU) protocol:
 
 - [Introducing Component Firmware Update](https://blogs.windows.com/buildingapps/?p=54456)
 
@@ -58,9 +58,9 @@ Familiarize yourself with the Component Firmware Update (CFU) protocol:
 
 - [CFU resources on GitHub](https://github.com/Microsoft/CFU)
 
-  - The sample [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s).
+  - The [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) sample is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s).
 
-  - The sample [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware) code
+  - [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware) sample code
 
 ## Overview
 
@@ -368,8 +368,8 @@ The firmware update status is updated by the driver in the registry as part of b
 
 ## Additional resources
 
-Familiarize yourself with developing Windows drivers by using Windows Driver Foundation (WDF).
+Learn about developing Windows drivers by using Windows Driver Foundation (WDF).
 
-- [Developing Drivers with Windows Driver Foundation](https://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith.
+- [Developing Drivers with Windows Driver Foundation](https://go.microsoft.com/fwlink/p/?LinkId=691676), written by Penny Orwick and Guy Smith
 
 - [Using WDF to Develop a Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver)
