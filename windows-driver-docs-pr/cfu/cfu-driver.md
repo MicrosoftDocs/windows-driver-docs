@@ -12,61 +12,55 @@ ms.localizationpriority: medium
 
 The Microsoft Devices team has announced the release of an open-source model to update the firmware of peripheral devices– Component Firmware Update (CFU). The solution allows seamless and secure firmware update for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, sample CFU driver, and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
 
-## Resources
-
-- The sample [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s).
-
-- The [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md) describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download.
-
-- The sample [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware) code
-
 ## Contents
 
-- [Customizing the Component Firmware Update Driver](#customizing-the-component-firmware-update-driver)
+- [Before you begin](#before-you-begin)
 
-  - [Before you begin](#before-you-begin)
+- [Overview](#overview)
 
-  - [Overview](#overview)
+- [Customize the CFU driver sample](#customize-the-cfu-driver-sample)
 
-  - [Customize the CFU driver sample](#customize-the-cfu-driver-sample)
+  1. [Choose a deployment approach](#1-choose-a-deployment-approach)
 
-    1. [Choose a deployment approach](#1-choose-a-deployment-approach)
+  - [The componentized packages approach (Recommended)](#the-componentized-packages-approach-recommended)
 
-    - [The componentized packages approach (Recommended)](#the-componentized-packages-approach-recommended)
+  - [The monolithic package approach](#the-monolithic-package-approach)
 
-    - [The monolithic package approach](#the-monolithic-package-approach)
+  1. [Configure the CFU driver INF](#2-configure-the-cfu-driver-inf)
 
-    1. [Configure the CFU driver INF](#2-configure-the-cfu-driver-inf)
+  1. [Configure the diagnostic capabilities](#3-configure-the-diagnostic-capabilities)
 
-    1. [Configure the diagnostic capabilities](#3-configure-the-diagnostic-capabilities)
+  1. [Deploy the package through Windows Update](#4-deploy-the-package-through-windows-update)
 
-    1. [Deploy the package through Windows Update](#4-deploy-the-package-through-windows-update)
+- [Firmware File Format](#firmware-file-format)
 
-  - [Firmware File Format](#firmware-file-format)
+  - [Offer format](#offer-format)
 
-    - [Offer format](#offer-format)
+  - [Payload format](#payload-format)
 
-    - [Payload format](#payload-format)
+  - [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry)
 
-    - [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry)
+  - [Firmware update status provided by the driver](#firmware-update-status-provided-by-the-driver)
 
-    - [Firmware update status provided by the driver](#firmware-update-status-provided-by-the-driver)
+- [Troubleshooting Tips](#troubleshooting-tips)
 
-  - [Troubleshooting Tips](#troubleshooting-tips)
+- [FAQ](#faq)
 
-  - [FAQ](#faq)
-
-  - [Appendix](#appendix)
+- [Appendix](#appendix)
 
 ## Before you begin
 
-Familiarize yourself with the CFU protocol:
+Familiarize yourself with the Component Firmware Update (CFU) protocol:
 
 - [Introducing Component Firmware Update](https://blogs.windows.com/buildingapps/?p=54456)
 
-- [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md)
+- The [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md) describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download.
 
 - [CFU resources on GitHub](https://github.com/Microsoft/CFU)
+
+  - The sample [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s).
+
+  - The sample [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware) code
 
 ## Overview
 
@@ -98,18 +92,21 @@ Base package and extensions packages are serviced independently.
 
 ##### When to use this approach**
 
-###### Challenges
+###### Challenges (componentized packages approach)
 
 - This option is only available in Windows 10, version 1709 and later.
 
 ###### To create componentized packages
 
 1. Define a base package that contains the common driver binary and an INF that describes the hardware IDs for each device that is going to use the CFU driver.
+
 1. Define a separate extension package for each device, which contains:
+
     - The firmware image file(s) for the device.
+
     - An extension INF that describes the hardware ID for the specific device. The INF also specifies the path of the firmware files.
 
-###### Example
+###### Example (componentized packages approach)
 
 - Base Package
   - ComponentFirmwareUpdate.inf
@@ -142,12 +139,12 @@ In this approach, there is one driver package per CFU capable device. The packag
 - If your company ships only a handful of devices. Typically, a 1:1 mapping exists between the driver package and the device to which the driver is offering the updated firmware.
 - To support updates for your devices on version of Windows earlier than Windows 10, version 1709.
 
-###### Challenges
+###### Challenges (monolithic package approach)
 
 - If you update multiple devices by using a single package, you will lose the ability to service each device independently. This approach can unnecessarily bloat the package.
 - If you update each device by using its own single package, you must ensure that the package refers to different driver binary to avoid name conflicts, as shown in the example.
 
-###### Example
+###### Example (monolithic package approach)
 
 - Monolithic Package for a dock device
   - DockFirmwareUpdate.inf
@@ -178,29 +175,29 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
 1. Update the INF with hardware IDs of your devices.
 
-#### The componentized packages approach
+#### Componentized packages approach
 
 1. Start with the ComponentFirmwareUpdate.inx as the base package INF. Replace the hardware ID in in this section with hardwareID(s) of all your supported devices.
 
-    ```inf
-    ; Target the Hardware ID for your devices.
-    ;
-    [Standard.NT$ARCH$]
-    %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_abc&UP:def_U:ghi ; Your HardwareID- Laptop MCU
+  ```inf
+  ; Target the Hardware ID for your devices.
+  ;
+  [Standard.NT$ARCH$]
+  %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_abc&UP:def_U:ghi ; Your HardwareID- Laptop MCU
 
-    %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
-    ```
+  %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
+  ```
 
 1. Start with the DockFirmwareUpdate.inx as the extension package INF. Provide the hardware ID for your primary component in the device in this section.
 
-    ```inf
-    [Standard.NT$ARCH$]
-    %DockFirmwareUpdate.ExtensionDesc%=DockFirmwareUpdate, HID\....; Your HardwareID for Dock MCU
-    ```
+  ```inf
+  [Standard.NT$ARCH$]
+  %DockFirmwareUpdate.ExtensionDesc%=DockFirmwareUpdate, HID\....; Your HardwareID for Dock MCU
+  ```
 
 1. Add a new extension package for each component.
 
-#### The monolithic package approach
+#### Monolithic package approach
 
 1. Start with LaptopFirmwareUpdate.inx here. Replace the hardware ID with hardwareID of your primary component in the device.
 
@@ -235,15 +232,16 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
 1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see [DockFirmwareUpdate.inx](https://github.com/Microsoft/CFU/blob/master/Host/ComponentizedPackageExample/DockFWUpdate/DockFirmwareUpdate.inx)
 
-    **Note** When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
+  > [!NOTE]
+  > When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
 
 1. Specify device capabilities in the INF.
 
-     The sample driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
+  The sample driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
 
-     For example, the sample driver requires information about the underlying bus protocol to which the device is connected. The protocol can be specified through registry settings.
+  For example, the sample driver requires information about the underlying bus protocol to which the device is connected. The protocol can be specified through registry settings.
 
-     For the multiple package approach, device capabilities is specified in the device specific firmware file, and for a monolith package approach it is specified in the main INF file for the package.
+  For the multiple package approach, device capabilities is specified in the device specific firmware file, and for a monolith package approach it is specified in the main INF file for the package.
 
 ### 3 Configure the diagnostic capabilities
 
