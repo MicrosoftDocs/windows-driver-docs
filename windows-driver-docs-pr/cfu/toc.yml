@@ -11,8 +11,6 @@
     href: cfu-host.md
   - name: "Component Firmware Update (CFU) host driver"
     href: cfu-host-driver.md
-  - name: "Component Firmware Update (CFU) tools"
-    href: cfu-tools.md
   - name: "Component Firmware Update (CFU) standalone tool sample"
     href: cfu-standalone-tool-sample.md
   - name: "Component Firmware Update (CFU) specification"
