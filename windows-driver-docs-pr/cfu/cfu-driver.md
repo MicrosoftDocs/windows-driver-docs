@@ -197,16 +197,16 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
     3. Add a new extension package for each component.
 
-        **Monolithic package approach**
+    **Monolithic package approach**
 
-        1. Start with LaptopFirmwareUpdate.inx here. Replace the hardware ID with hardwareID of your primary component in the device.
+    1. Start with LaptopFirmwareUpdate.inx here. Replace the hardware ID with hardwareID of your primary component in the device.
 
-            ```inf
-            [Standard.NT$ARCH$]
-            %LaptopFirmwareUpdate.DeviceDesc%=LaptopFirmwareUpdate, HID\.... ; Your HardwareID for Laptop MCU
-            ```
+        ```inf
+        [Standard.NT$ARCH$]
+        %LaptopFirmwareUpdate.DeviceDesc%=LaptopFirmwareUpdate, HID\.... ; Your HardwareID for Laptop MCU
+        ```
 
-        2. For each component, create the package and replace the hardware ID of the component. Rename the CFU driver to prevent a name conflict amongst packages.
+    2. For each component, create the package and replace the hardware ID of the component. Rename the CFU driver to prevent a name conflict amongst packages.
 
 3. Update the INF to specify the location of firmware file for each component on the device.
 
