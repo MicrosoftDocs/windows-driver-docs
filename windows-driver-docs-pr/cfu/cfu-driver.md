@@ -1,7 +1,7 @@
 ---
 title: Customizing the Component Firmware Update (CFU) driver
 description: Customizing the Component Firmware Update (CFU) driver
-ms.date: 07/20/2020
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,13 +54,17 @@ The following resources will help you learn about the Component Firmware Update 
 
 - [Introducing Component Firmware Update](https://blogs.windows.com/buildingapps/?p=54456)
 
+- [WinHEC 2018 video on Component Firmware Update](https://developer.microsoft.com/windows/hardware/events)
+
 - The [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md) describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download.
 
 - [CFU resources on GitHub](https://github.com/Microsoft/CFU)
 
-  - The [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) sample is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your components.
+  - [Firmware](https://github.com/Microsoft/CFU/tree/master/Firmware) contains sample firmware source code for implementing the CFU protocol.
 
-  - [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware) sample code
+  - [Component Firmware Update Driver](https://github.com/microsoft/CFU/tree/master/Host/ComponentFirmwareUpdateDriver) is a sample UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your components.
+  
+  - [Component Firmware Update Standalone Tool Sample](https://github.com/microsoft/CFU/tree/master/Tools/ComponentFirmwareUpdateStandAloneToolSample) contains the standalone tool sample used with CFU.
 
 ## Overview
 

@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CPU) standalone tool sample
 description: Component Firmware Update (CPU) standalone tool sample TBD
-ms.date: 09/10/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,14 +10,19 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CPU) standalone tool sample
 
-This tool reads an offer file, firmware image file in srec bin format and passes the firmware to a device.  The tool is also capable of searching for the device based on the protocol settings and requesting/printing FW Version information.
+The CFU tool sample sends firmware image files to a device in need of an update. Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](https://github.com/Microsoft/CFU/tree/master/Documentation/CFU-Protocol), an open source specification (included with CFU) based on the HID protocol.
+
+This tool reads an offer file, firmware image file in SREC bin format, and passes the firmware to a device.  It is also capable of searching for the device based on the protocol settings and requesting/printing firmware version information.
+
 It requires a protocol settings text csv file to be passed as an argument.
 
 ## Usage
+
 &nbsp;&nbsp;&nbsp;&nbsp;FwUpdateCfu.exe version \<protocolSettingsPath\> (to retrieve version of device)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;FwUpdateCfu.exe update \<protocolSettingsPath\> \<offerfile\> \<binfile\> [forceIgnoreVersion] [forceReset]<br><br>
   
-## Example protocol settings doc
+## Example protocol settings
+
 &nbsp;&nbsp;&nbsp;&nbsp;#instructions:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;#Fill in csv tag and the value in hex for each item<br>
 &nbsp;&nbsp;&nbsp;&nbsp;#order not important<br>
@@ -31,4 +36,3 @@ It requires a protocol settings text csv file to be passed as an argument.
 &nbsp;&nbsp;&nbsp;&nbsp;CONTENT_RESPONSE_INPUT_USAGE,0x66,#mandatory for fwUpdate procedure<br>
 &nbsp;&nbsp;&nbsp;&nbsp;OFFER_OUTPUT_USAGE,0x8e,#mandatory for fwUpdate procedure<br>
 &nbsp;&nbsp;&nbsp;&nbsp;OFFER_RESPONSE_INPUT_USAGE,0x8a,#mandatory for fwUpdate procedure<br>
-

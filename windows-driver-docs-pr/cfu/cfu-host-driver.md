@@ -18,11 +18,11 @@ As a firmware developer, you can customize the driver for the purposes of adopti
 ## File manifest
 
 | File | Description |
-| --- | --- |
+|--|--|
 | ComponentFirmwareUpdateDriver | The folder that contains the source files for the CFU driver sample. |
 | ComponentizedPackageExample | An example deployment package that includes the INF and payload files for the componentized packages approach. |
 | MonolithicPackageExample | An example deployment package that includes INF and the payload files for the monolithic package approach. |
-| DMF| Contains the DMF source code. Use `git submodule update` to pull the DMF contents. |
+| DMF | Contains the DMF source code. Use `git submodule update` to pull the DMF contents. |
 | ComponentFirmwareUpdateDriver/Common.h | All includes for this driver |
 | ComponentFirmwareUpdateDriver/Device.h | Definition of device context for this driver |
 | ComponentFirmwareUpdateDriver/DmfInterface.c | Instantiate Dmf Library Modules used by this driver |
