@@ -1,4 +1,4 @@
-- name: "Partner Center for Windows Hardware"
+  - name: "Partner Center for Windows Hardware"
   href: index.yml
 - name: "Hardware Program dashboard FAQ"
   href: hardware-dashboard-faq.md
@@ -215,7 +215,7 @@
   - name: "Publishing for test distribution"
     href: publishing-for-test-distribution.md
   - name: Gradual rollout
-    href: "gradual-rollout.md"
+    href: gradual-rollout.md
 - name: "Hardware dashboard API"
   items: 
   - name: "Getting started with the Hardware dashboard API"
