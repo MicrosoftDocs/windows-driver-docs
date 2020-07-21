@@ -22,9 +22,9 @@ The Microsoft Devices team has announced the release of an open-source model to 
 
   - [1 Choose a deployment approach](#1-choose-a-deployment-approach)
 
-    - [Componentized packages approach (Recommended)](#the-componentized-packages-approach-recommended)
+    - [Componentized packages approach (Recommended)](#componentized-packages-approach-recommended)
 
-    - [Monolithic package approach](#the-monolithic-package-approach)
+    - [Monolithic package approach](#monolithic-package-approach)
 
   - [2 Configure the CFU driver INF](#2-configure-the-cfu-driver-inf)
 
@@ -336,7 +336,7 @@ You need to [configure the CFU driver INF](#2-configure-the-cfu-driver-inf) by u
 
 **My company ships several independent components that I want to update by using the CFU model. Do I need separate drivers and package them individually?**
 
-We recommend that you use the multiple packaging approach described  in [componentized packages](#the-componentized-packages-approach-recommended) .
+We recommend that you use the multiple packaging approach described  in [componentized packages](#componentized-packages-approach-recommended) .
 
 **I have two components: component A, and a sub-component B. How should I make the CFU driver aware of component B?**
 
