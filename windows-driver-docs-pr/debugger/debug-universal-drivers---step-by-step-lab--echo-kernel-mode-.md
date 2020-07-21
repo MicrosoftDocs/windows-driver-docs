@@ -481,8 +481,6 @@ A dialog box will appear indicating that the test driver is an unsigned driver. 
 > If you have any issues with the installation, check the following file for more information.
 `%windir%\inf\setupapi.dev.log`
 
-For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
-
 After successfully installing the sample driver, you're now ready to test it.
 
 **Examine the driver in Device Manager**

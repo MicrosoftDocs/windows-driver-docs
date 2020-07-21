@@ -261,17 +261,17 @@ This section lists steps for installing the driver MFT:
 2. Your camera installer registers the driver MFT by calling **regsvr32** on your driver MFT DLL, or by providing a driver manifest (.man) file for the DLL that the installer uses for registration.
 3. Set the `CameraPostProcessingPluginCLSID` value in the registry key for your camera. Your INF file should specify the CLSID of the Driver MFT in the device class registry key for the device, by setting the `CameraPostProcessingPluginCLSID` value to the CLSID GUID of the driver MFT class. The following is an example from an INF file entry that populates the registry keys for a camera:
 
-    ```cpp
-    KSCATEGORY_VIDEO_CAMERA:
+```inf
+KSCATEGORY_VIDEO_CAMERA:
 
-    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
-    "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
-    "FriendlyName"="USB Video Device"
-    "RTCFlags"=dword:00000010
-    "CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}" 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
+"CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+"FriendlyName"="USB Video Device"
+"RTCFlags"=dword:00000010
+"CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}" 
+```
 
-
-
+```inf
 KSCATEGORY_CAPTURE:
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{ 65E8773D-8F56-11D0-A3B9-00A0C9223196}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{65E8773D-8F56-11D0-A3B9-00A0C9223196}\#GLOBAL\Device Parameters]
