@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Customizing the Component Firmware Update (CFU) driver
 
-The Microsoft Devices team has announced the release of an open-source model to update the firmware of peripheral devices– Component Firmware Update (CFU). The solution allows seamless and secure firmware update for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, sample CFU driver, and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
+Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely update firmware for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, sample CFU driver, and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
 
 ## Contents
 
@@ -50,7 +50,7 @@ The Microsoft Devices team has announced the release of an open-source model to 
 
 ## Before you begin
 
-The following resources will help you learn about the Component Firmware Update (CFU) protocol:
+The following resources will help you learn about the Component Firmware Update (CFU) protocol.
 
 - [Introducing Component Firmware Update](https://blogs.windows.com/buildingapps/?p=54456)
 
@@ -58,7 +58,7 @@ The following resources will help you learn about the Component Firmware Update 
 
 - [CFU resources on GitHub](https://github.com/Microsoft/CFU)
 
-  - The [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) sample is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s).
+  - The [CFU Driver](https://github.com/Microsoft/CFU/blob/master/Host) sample is a UMDF driver that talks to the device using the HID protocol. As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your components.
 
   - [CFU Firmware](https://github.com/Microsoft/CFU/blob/master/Firmware) sample code
 
