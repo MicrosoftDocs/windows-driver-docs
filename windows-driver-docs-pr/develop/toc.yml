@@ -82,8 +82,6 @@
   items: 
   - name: "Signing a Driver"
     href: signing-a-driver.md
-  - name: "Attestation Signing a Kernel Driver for Public Release"
-    href: attestation-signing-a-kernel-driver-for-public-release.md
   - name: "Signing a Driver During Development and Testing"
     href: signing-a-driver-during-development-and-testing.md
   - name: "Signing a Driver for Public Release"

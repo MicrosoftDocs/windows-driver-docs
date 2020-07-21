@@ -215,7 +215,7 @@ If you have a WDM driver or library and want to run SDV, the driver or library m
 
 Static Driver Verifier supports a driver or library that has links to multiple utility libraries if the driver or library conforms to the [Driver or Library requirements](#driver-or-library-requirements).
 
-|                     |
+| File Name           |
 |---------------------|
 | BufferOverflowK.lib |
 | hal.lib             |

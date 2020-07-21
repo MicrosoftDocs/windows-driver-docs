@@ -86,7 +86,7 @@ As soon as Windows has found one or more matching [driver packages](driver-packa
 
 2.  If Windows has found multiple matching driver packages, Windows first assigns a ranking value to the driver from each driver package. If only one driver has the lowest rank value, it installs the driver from that package for the device.
 
-    For more information about the ranking process, see [How Windows Ranks Drivers](how-setup-ranks-drivers.md).
+    For more information about the ranking process, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
 3.  If multiple drivers have the same lowest rank value, Windows uses the following criteria to select the best driver for the device:
 

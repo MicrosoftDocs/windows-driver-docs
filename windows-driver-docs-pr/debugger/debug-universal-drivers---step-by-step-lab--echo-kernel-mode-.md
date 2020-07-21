@@ -3,7 +3,7 @@ title: Debug Windows Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 ms.assetid: 3FBC3693-4288-42BA-B1E8-84DC2A9AFFD9
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 02/27/2020
+ms.date: 07/20/2020
 ms.localizationpriority: medium
 ---
 
@@ -417,15 +417,15 @@ In the next section, you will copy the code to the target system, and install an
 
 *In Section 4, you will use devcon to install the echo sample driver.*
 
-**-&gt; On the target system**
-
 The computer where you install the driver is called the *target computer* or the *test computer*. Typically, this is a separate computer from the computer on which you develop and build the driver package. The computer where you develop and build the driver is called the *host computer*.
 
-The process of moving the driver package to the target computer and installing the driver is called *deploying* the driver. You can deploy the sample echo driver, automatically or manually.
+The process of moving the driver package to the target computer and installing the driver is called *deploying* the driver.
 
-Before you manually deploy a driver, you must prepare the target computer by turning on test signing. You also need to locate the DevCon tool in your WDK installation. After that you’re ready to run the built driver sample.
+Before you deploy a test signed driver, you must prepare the target computer by enabling test signing. You also need to locate the DevCon tool in your WDK installation and copy that to the target system.
 
 To install the driver on the target system, perform the following steps.
+
+**-&gt; On the target system**
 
 **Enable test signed drivers**
 
@@ -437,21 +437,23 @@ b. In Update and Security, select **Recovery**.
 
 c. Under Advanced startup, click **Restart Now**.
 
-d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then click Restart button. 
+d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then click Restart button.
 
 e. Select Disable driver signature enforcement by pressing the **F7** key.
 
 f. Reboot the target computer.
-
 
 **&lt;- On the host system**
 
 Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
 
 *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
-Create a folder on the target for the built driver package (for example, *C:\\EchoDriver*). Copy all the files from the built driver described earlier on the host computer and save them to the folder that you created on the target computer.
 
-Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
+Create a folder on the target for the built driver package (for example, *C:\\EchoDriver*). Copy devcon.exe to the target system. Locate the .cer certificate on the host system, it is in the same folder on the host computer in the folder that contains the built driver files. Copy all the files from the built driver described earlier on the host computer and save them to the same folder that you created on the target computer.
+
+**-&gt; On the target system**
+
+On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
 
 If you need more detailed instructions for setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md).
 
@@ -475,7 +477,9 @@ A dialog box will appear indicating that the test driver is an unsigned driver. 
 
 ![windows security warning - windows can't verify the publisher of this driver software](images/debuglab-image-install-security-warning.png)
 
-For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+>[!TIP]
+> If you have any issues with the installation, check the following file for more information.
+`%windir%\inf\setupapi.dev.log`
 
 After successfully installing the sample driver, you're now ready to test it.
 

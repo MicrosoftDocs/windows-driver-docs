@@ -58,7 +58,7 @@ In addition to the device and the driver, a driver package also contains one or 
 
     A driver catalog file contains a cryptographic hash of each file in the driver package. Windows uses these hashes to verify that the package was not altered after it was published. To ensure that the catalog file is not altered, it should be [digitally signed](digital-signatures.md).
 
-    For information about how to sign drivers, see [Signing Drivers for Public Release](signing-drivers-for-public-release.md) and [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
+    For information about how to sign drivers, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md) and [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
 
 ### Other Files
 

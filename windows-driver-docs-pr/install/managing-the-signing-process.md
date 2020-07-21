@@ -29,7 +29,7 @@ This is typically handled by the publisher's development team and includes the f
 
 -   Creating a signed driver package for internal testing. For information about test signing, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
 
--   Creating a signed driver package for release. For information about how to sign drivers for release, see [Signing Drivers for Public Release](signing-drivers-for-public-release.md).
+-   Creating a signed driver package for release. For information about how to sign drivers for release, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
  
 

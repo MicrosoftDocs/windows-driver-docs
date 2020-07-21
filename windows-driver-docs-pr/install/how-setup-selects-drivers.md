@@ -30,7 +30,7 @@ This section contains the following topics:
 
 [Where Windows Searches for Drivers](where-setup-searches-for-drivers.md)
 
-[How Windows Ranks Drivers](how-setup-ranks-drivers.md)
+[How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md)
 
 [AllSignersEqual Group Policy (Windows Vista and Later)](allsignersequal-group-policy--windows-vista-and-later-.md)
 
