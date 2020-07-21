@@ -1,6 +1,6 @@
 ---
 title: Component Firmware Update (CPU) standalone tool sample
-description: Component Firmware Update (CPU) standalone tool sample TBD
+description: Component Firmware Update (CPU) standalone tool sample
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: windows-hardware

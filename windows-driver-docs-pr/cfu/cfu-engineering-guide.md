@@ -1,42 +1,34 @@
 ---
 title: Component Firmware Update (CFU) engineering guide
-description: Component Firmware Update (CFU) engineering guide TBD
-ms.date: 09/10/2019
+description: Component Firmware Update (CFU) engineering guide
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-
 # Component Firmware Update (CFU) engineering guide
 
 The CFU is a protocol and a process for submitting new firmware images to be installed on the target device.
 
-CFU submissions to the resident firmware are file pairs.  Each submission is a pair of files.
-One file is the Offer part.  The other file is the Content part.
+CFU submissions to the resident firmware are file pairs.  Each submission is a pair of files. One file is the Offer part.  The other file is the Content part.
 
-Each CFU submission (each CFU Offer and Content pair) is required to be created off-line before the submission is sent to the 
-firmware that implements the CFU process.
+Each CFU submission (each CFU Offer and Content pair) is required to be created off-line before the submission is sent to the firmware that implements the CFU process.
 
-The general the implementation agnostic common code for CFU is contained in 
-ComponentFwUpdate.c. All other files are helper files 
-that can be updated / modified to the developers unique implementation.
+The general the implementation agnostic common code for CFU is contained in ComponentFwUpdate.c. All other files are helper files that can be updated / modified to the developers unique implementation.
 
-## The Offer and Content parts 
+## The Offer and Content parts
 
 The Offer and Content make up a pair of files in the scheme of CFU.
 
-One of the files, the Offer part is simply a 16 byte long file as explained
-below.  The Content part, the actual firmware to be updated is in the 
-format dictated by the end-user developer.  The demonstration and
-example code that goes with this document uses S-Rec files for firmware content.
+One of the files, the Offer part is simply a 16 byte long file as explained below.  The Content part, the actual firmware to be updated is in the format dictated by the end-user developer.  The demonstration and example code that goes with this document uses SREC files for firmware content.
 
-The Offer is a 16 byte sequence.  This Offer structure is put into the Offer file.  It's essentially binary data, not text because
-the Offer contains bit fields of specific meaning.
+The Offer is a 16 byte sequence.  This Offer structure is put into the Offer file.  It is essentially binary data, not text, because the Offer contains bit fields of specific meaning.
 
 The Offer that is represented in the file maps to this C structure:
-```
+
+```cpp
 typedef struct
 {
    struct
@@ -66,7 +58,7 @@ typedef struct
 
 From low address to high address, the first byte of the Offer is a segment number.
 
-```
+```txt
   <------- 4 bytes -----------> <-- 8 bytes -->  <-------- 4 bytes --------->
 +================================-=============================================+
 |  15:0 7:3  2:0  7:6  5:4  3:0   31:0   31:0     7:0  7:0  7:7  6:6  5:0  7:0 |
@@ -74,11 +66,9 @@ From low address to high address, the first byte of the Offer is a segment numbe
 +================================-=============================================+
 ```
 
-
 From high address to low address:
 
-```
-
+```txt
 Byte(s)    Value
 ---------------------------------------------------------
 15:14   |  (PI)  Product ID is 2 bytes
@@ -96,50 +86,47 @@ Byte(s)    Value
         |  (R0)  Reserved0 6-bit register
 0       |  (SN)  Segment Number 8-bit register
 ---------------------------------------------------------
-
 ```
 
 ### Offer register detail
 
 The ID of Product. A unique value for the Product this CFU image can be applied to
-```
+
+```cpp
 UINT16 productID;  
 ```
 
-The milestone of the firmware the offer's content represents. Milestones could be different versions of
-the HW build -ex. EV1 build, EV2 build. Milestone definition and value assignment are left to the developer. 
+The milestone of the firmware the offer's content represents. Milestones could be different versions of the HW build -ex. EV1 build, EV2 build. Milestone definition and value assignment are left to the developer.
 
-```
+```cpp
 UINT8 milestone : 3;
 ```
 
 If the firmware is intended for a specific bank -  The 2-bit field supports four banks.   The use of a bank register is included in the format of the Offer because there are instances where the target devices uses banked firmware regions.
-If that were the case, and the Offer was meant to update a bank in use, the
-firmware that implements CFU on the target can reject the offer.  Else, the
-firmware on the target implementing CFU can take other action as warranted.
 
-If banking of firmware images is NOT in the design of the end-user
-firmware, then it's reasonable to ignore this field (set to whatever
-values that are convenient, but the value in the bank field is optional
-and depends on the way in which the on target  firmware implements CFU).
+If that were the case, and the Offer was meant to update a bank in use, the firmware that implements CFU on the target can reject the offer.  Else, the firmware on the target implementing CFU can take other action as warranted.
 
-```
+If banking of firmware images is NOT in the design of the end-user firmware, then it's reasonable to ignore this field (set to whatever values that are convenient, but the value in the bank field is optional and depends on the way in which the on target firmware implements CFU).
+
+```cpp
 UINT8 bank : 2;
 ```
 
 The protocol version of the CFU protocol used is in 4 bits.
-```
+
+```cpp
 UINT8 protocolRevision : 4;
 ```
 
-The bitmask corresponding to all unique HW this FW image can operate on. For example, the offer may signify it
-can run on verX of HW but not on verY of HW. Bit definition and value assignment are left to the developer. 
-```
+The bitmask corresponding to all unique HW this FW image can operate on. For example, the offer may signify it can run on verX of HW but not on verY of HW. Bit definition and value assignment are left to the developer.
+
+```cpp
 UINT32 hwVariantMask;
 ```
 
-The version of the FW being offered. 
-```
+The version of the FW being offered.
+
+```cpp
 UINT32 version;
 ```
 
@@ -147,18 +134,20 @@ A byte token to identify the user specific software making the offer. This is in
 drivers and tools that may both be trying to update the same running FW. For example, a CFU update driver may
 be assigned token 0xA and a development updater tool may be assigned 0xB. Now the running firmware can selectively
 choose to accept or ignore commands based on which process is trying to update it.
-```
+
+```cpp
 UINT8 token;
 ```
 
 The component in the device to apply the firmware update.
-```
+
+```cpp
 UINT8 componentId;
 ```
 
-Offer interpretation flags:    If we want the in situ firmware to ignore version mismatch (older on top of newer)
-then set the bit to force Ignore Version.
-```
+Offer interpretation flags:  If we want the in situ firmware to ignore version mismatch (older on top of newer) then set the bit to force Ignore Version.
+
+```cpp
 UINT8 forceIgnoreVersion: 1;
 ```
 
@@ -169,13 +158,13 @@ the implementation of the firmware.  The expectation usually is that if the forc
 will do whatever is necessary to cause the firmware to make the new bank updated become the
 active firmware running on the target device.
 
-```
+```cpp
 UINT8 forceImmediateReset : 1;
 ```
 
 In the event that the Content portion of the Offer and Content pair involves multiple parts of Content.
 
-```
+```cpp
 UINT8 segmentNumber;
 ```
 
@@ -183,27 +172,26 @@ UINT8 segmentNumber;
 
 The API of `ProcessCFWUOffer` accepts two arguments.
 
-```
+```cpp
 void ProcessCFWUOffer(FWUPDATE_OFFER_COMMAND* pCommand,
                      FWUPDATE_OFFER_RESPONSE* pResponse)
 ```
 
 Suppose the user-software sends data bytes to the running firmware, then the first message is the Offer message.
+
 The Offer message is a 16 byte message described above (the FWUPDATE_OFFER_COMMAND structure).
 
 That Offer message is the data used by the running firmware to disposition the Offer.
 
 During the disposition of the Offer, the running firmware notifies the sender by populating fields in the `FWUPDATE_OFFER_RESPONSE` structure.
 
-
 #### Interpreting the Offer part
 
-The running firmware should keep track of it's state in CFU process. It may be ready/waiting to 
-accept an offer, in the middle of a CFU transaction, or waiting to swap banks between active/inactive FW. 
+The running firmware should keep track of it's state in CFU process. It may be ready/waiting to accept an offer, in the middle of a CFU transaction, or waiting to swap banks between active/inactive firmware.
 
 If the running FW is in the middle of a CFU transaction - don't accept/process this offer and notify host accordingly.
 
-```
+```cpp
    if (s_currentOffer.updateInProgress)
    {
        memset(pResponse, 0, sizeof (FWUPDATE_OFFER_RESPONSE));
@@ -219,7 +207,7 @@ The component ID field of the Offer may be used to signal the running firmware t
 the running firmware. In the example CFU code, a special offer command is used by the host to retrieve the 
 status of the CFU engine - whether the running software is capable and ready to accept CFU Offers.
 
-```
+```cpp
    else if (componentId == CFU_SPECIAL_OFFER_CMD)
    {
        FWUPDATE_SPECIAL_OFFER_COMMAND* pSpecialCommand =
@@ -245,7 +233,7 @@ task for the embedded firmware.  The CFU protocol and process allows
 for information to be exchanged between the remote user application
 conducting the CFU and the in situ firmware that is running.
 
-```
+```cpp
    else if (s_bankSwapPending)
    {
        memset(pResponse, 0, sizeof (FWUPDATE_OFFER_RESPONSE));
@@ -257,15 +245,13 @@ conducting the CFU and the in situ firmware that is running.
    }
 ```
 
-Finally, if the state of the running FW is not busy, and the componentId is not
-a special command and there is no bank swap pending - THEN we can process this offer.
+Finally, if the state of the running FW is not busy, and the componentId is not a special command and there is no bank swap pending - THEN we can process this offer.
 
-Processing an offer involes, but not limited to, the steps below:
+Processing an offer involves, but is not limited to, the steps below:
 
-Step 1: 
+Step 1:
 
-Check the bank of the running Application to the 
-bank in the Offer.  Are they the same or different?
+Check the bank of the running Application to the bank in the Offer.  Are they the same or different?
 
 If the same, then reject the offer (we don't want to overwrite the running/active image).
 
@@ -285,8 +271,7 @@ Else continue.
 
 Step 3:
 
-Check if the version of the firmware Content offered has a version
-older or newer than the current application firmware.
+Check if the version of the firmware Content offered has a version older or newer than the current application firmware.
 
 It is left up to the users implementation to decide how to check which FW 
 is greater than another and if to allow the 'forceIgnoreVersion' field in the 
@@ -299,7 +284,6 @@ If this check failed, then reject the offer.
 
 Else continue.
 
-
 Step 4:
 
 The Offer is good.  Accept the Offer with a response that is tailored
@@ -309,9 +293,7 @@ data structure as shown in the demonstration header files) and
 this data is written out to the user-application by the appropriate means
 for the device.
 
-
 ### Process the Content
-
 
 The processing of the Content is usually a multi step process. The
 multiple steps refers to the capability of the firmware to accept
@@ -320,22 +302,21 @@ always feasible to send the entire image at once to the embedded
 firmware, so it's realistic to expect the implementation of the
 CFU protocol and process to accept Content in small pieces.
 
-Let's work towards that assumption when describing the process
-of the CFU Content.
+Let's work towards that assumption when describing the process of the CFU Content.
 
 The state machine of the Content processing involves three states.
 
-1.  The state of processing the first block.
-2.  The state of processing the last block.
-3.  The state of processing any block in between first and last.
+1. The state of processing the first block.
 
+1. The state of processing the last block.
+
+1. The state of processing any block in between first and last.
 
 #### The Structure of the Content Command
 
-Like the Offer, the Content has a structure with fields that 
-are used by the CFU algorithms in the demonstration.
+Like the Offer, the Content has a structure with fields that are used by the CFU algorithms in the demonstration.
 
-```
+```cpp
 typedef struct
 {
    UINT8 flags;
@@ -351,15 +332,18 @@ structure. The Content is defined as a sequence of bytes
 to be written into memory.  The preamble of the Content is
 this structure fields:
 
-1.  `UINT8 flags`   Denotes if the Content "block" is the First, Last or
+1. `UINT8 flags`   Denotes if the Content "block" is the First, Last or
    other.
-1.  `UINT8 length`  Marks the length of the `pData` field.  In the 
+
+1. `UINT8 length`  Marks the length of the `pData` field.  In the 
    demonstration code for CFU, the limit on the size of the `pData`
    is 255 bytes.  Other implementations may vary the maximum size
-   of the "block"
-1.  `UINT16 sequenceNumber`  Marks the index counter of which block
+   of the "block".
+
+1. `UINT16 sequenceNumber`  Marks the index counter of which block
    is being submitted as Content.
-1.  `UINT32 address`  The address offset of the block.  In the 
+
+1. `UINT32 address`  The address offset of the block.  In the 
    demonstration of CFU of this release, the implementation has
    predefined information about the physical address of each App
    region.  For example, a two bank FW implementation may have
@@ -375,15 +359,14 @@ this structure fields:
    ranges for each content blog. For
    example, the CFU code demonstrates a check made if perhaps App1
    (meant for `0x9000`) has addresses that overlap into App2, etc.
-1.  `UINT8 pData[MAX_UINT8]`   This is the raw bytes of the
+
+1. `UINT8 pData[MAX_UINT8]`   This is the raw bytes of the
    firmware image block.  Care is taken in the user-application to
    only put `length` bytes into the complete byte stream of the
    Content block.  
 
 There are no bit fields used in the Content structure as per the
 CFU demonstration from the code provided.
-
-   
 
 #### The First Block
 
@@ -444,7 +427,7 @@ adopt at least this check. It is STRONGLY suggested that at this point
 in the CFU process, other actions are taken to ensure the integrity 
 of the downloaded image. Some of these actions could include verify
 a 'signed' portion of the image and/or check certificate chains of trust or
-other best practice approaches to ensuring a sercure FW image. these
+other best practice approaches to ensuring a secure firmware image. these
 are left up to the FW developer.
 
 #### Cleanup After Last Block

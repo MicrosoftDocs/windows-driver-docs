@@ -16,17 +16,17 @@ For additional information, see [Introducing Component Firmware Update](https://
 
 ## Component Firmware Update (CFU) documentation
 
-[CFU driver](cfu-driver.md)
+[Customize the Component Firmware Update (CFU) driver](cfu-driver.md)
 
-[CFU engineering guide](cfu-engineering-guide.md)
+[Component Firmware Update (CFU) engineering guide](cfu-engineering-guide.md)
 
-[CFU host](cfu-host.md)
+[Component Firmware Update (CPU) host](cfu-host.md)
 
-[CFU host driver](cfu-host-driver.md)
+[Component Firmware Update (CPU) host driver](cfu-host-driver.md)
 
-[CFU standalone tool sample](cfu-standalone-tool-sample.md)
+[Component Firmware Update (CPU) standalone tool sample](cfu-standalone-tool-sample.md)
 
-[CFU protocol specification](cfu-specification.md)
+[Component Firmware Update (CPU) protocol specification](cfu-specification.md)
 
 ## Component Firmware Update (CFU) repository on GitHub
 

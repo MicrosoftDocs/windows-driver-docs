@@ -1,6 +1,6 @@
 ---
-title: Customizing the Component Firmware Update (CFU) driver
-description: Customizing the Component Firmware Update (CFU) driver
+title: Customize the Component Firmware Update (CFU) driver
+description: Provides information on customizing the Component Firmware Update (CFU) driver
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: windows-hardware
@@ -8,7 +8,7 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Customizing the Component Firmware Update (CFU) driver
+# Customize the Component Firmware Update (CFU) driver
 
 Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely update firmware for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, sample CFU driver, and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
 

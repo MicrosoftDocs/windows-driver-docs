@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CPU) host
-description: Component Firmware Update (CPU) host TBD
-ms.date: 10/07/2019
+description: Component Firmware Update (CPU) host
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -18,10 +18,11 @@ This folder contains the following:
 
 ## CFU driver sample
 
-The CFU driver sample sends firmware image file(s) to a device in need of an update. Before sending the firmware image, the driver sends several commands to the device with firmware offers. Only if the device accepts, the driver sends the firmware payload. The communication between the driver and the device is in accordance with the [CFU protocol](https://github.com/Microsoft/CFU/tree/master/Documentation/CFU-Protocol), an open source specification (included with CFU) based on the HID protocol.
+The CFU driver sample sends firmware image file(s) to a device in need of an update. Before sending the firmware image, the driver sends several commands to the device with firmware offers. Only if the device accepts, the driver sends the firmware payload. The communication between the driver and the device is in accordance with the [Component Firmware Update (CPU) protocol specification](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
 
 The CFU driver sample is implemented using the [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/overview-of-the-umdf) 2.0 model and based on the the [Microsoft Devices Driver Module Framework (DMF)](https://blogs.windows.com/buildingapps/2018/08/15/introducing-driver-module-framework/).
-As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s). For more information, see [Customizing the Component Firmware Update Driver](https://github.com/Microsoft/CFU/blob/master/Documentation/CFU-Driver/cfu-driver.md).
+
+As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s). For more information, see [Customize the Component Firmware Update Driver](cfu-driver.md).
 
 ## Packaging examples
 
@@ -39,7 +40,7 @@ The sample can be deployed using one of two approaches:
 
 - The monolithic package approach
 
-    There is a single package for the driver and CFU capable device(s). The package includes: INF, the CFU driver binary, and firmware files for the device(s).
+    There is a single package for the driver and CFU capable devices. The package includes: INF, the CFU driver binary, and firmware files for the devices.
 
     [LaptopExample](https://github.com/Microsoft/CFU/tree/master/Host/MonolithicPackageExample/LaptopMCUFWUpdate)
 
@@ -47,7 +48,7 @@ The sample can be deployed using one of two approaches:
 
 ## Build the sample
 
-First, install Visual Studio and Windows Driver Kit (WDK) as outlined at [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+First, install Visual Studio and the Windows Driver Kit (WDK) as outlined at [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
 Then, run the following git commands to get the Driver Module Framework (DMF) submodule required to build the samples.
 
@@ -79,4 +80,4 @@ You can change the default configuration to build for your version of the operat
 
 ## See also
 
-[Customizing the Component Firmware Update Driver](https://github.com/Microsoft/CFU/blob/master/Documentation/CFU-Driver/cfu-driver.md)
+[Customize the Component Firmware Update Driver](cfu-driver.md)
