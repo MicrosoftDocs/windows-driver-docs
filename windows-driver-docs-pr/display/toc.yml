@@ -1102,7 +1102,7 @@
       - name: "D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT"
         href: d3dkmt-multiplane-overlay-stereo-format.md
       - name: "D3DKMT_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT"
-        href: d3dkmt-multiplane-overlay-video-frame-format.md
+        href: /windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_video_frame_format
       - name: "D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS"
         href: d3dkmt-multiplane-overlay-ycbcr-flags.md
       - name: "D3DKMT_OUTDUPL_POINTER_SHAPE_INFO"
@@ -1145,7 +1145,7 @@
       - name: "D3dumddi.h - Reserved"
         href: d3dumddi-h---reserved.md
       - name: "D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO"
-        href: d3dddi-check-multiplane-overlay-support-plane-info.md
+        href: /windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddi_check_multiplane_overlay_support_plane_info
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER"
         href: d3dddi-multiplane-overlay-filter.md
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE"
