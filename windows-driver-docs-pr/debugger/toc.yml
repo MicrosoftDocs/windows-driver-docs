@@ -165,6 +165,10 @@
         href: time-travel-debugging-range-objects.md
       - name: "Time Travel Debugging - Thread objects"
         href: time-travel-debugging-thread-objects.md
+      - name: "Time Travel Debugging - Module objects"
+        href: time-travel-debugging-module-objects.md
+      - name: "Time Travel Debugging - Collection objects"
+        href: time-travel-debugging-collection-objects.md
     - name: "Time Travel Debugging - JavaScript Automation"
       href: time-travel-debugging-javascript-automation.md
 - name: "Debugging Resources"
