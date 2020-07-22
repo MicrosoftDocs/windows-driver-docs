@@ -3,15 +3,13 @@
   items: 
   - name: "Component Firmware Update (CFU)"
     href: index.md
-  - name: "Customize the Component Firmware Update (CFU) driver"
-    href: customize-the-cfu-driver.md
-  - name: "Component Firmware Update (CFU) engineering guide"
+  - name: "CFU engineering guide"
     href: cfu-engineering-guide.md
-  - name: "Component Firmware Update (CFU) host"
-    href: cfu-host.md
-  - name: "Component Firmware Update (CFU) host driver"
+  - name: "CFU host driver sample"
     href: cfu-host-driver.md
-  - name: "Component Firmware Update (CFU) standalone tool sample"
+  - name: "Customize the CFU driver"
+    href: customize-the-cfu-driver.md
+  - name: "CFU standalone tool sample"
     href: cfu-standalone-tool-sample.md
-  - name: "Component Firmware Update (CFU) specification"
+  - name: "CFU protocol specification"
     href: cfu-specification.md
