@@ -33,7 +33,13 @@
   - name: "Packet descriptors and extensions"
     href: packet-descriptors-and-extensions.md
   - name: "NetAdapterCx hardware offloads"
-    href: netadaptercx-hardware-offloads.md
+    items: 
+    - name: "Introduction to hardware offloads"
+      href: introduction-to-hardware-offloads.md
+    - name: "Checksum offload"
+      href: checksum-offload.md
+    - name: "Generic Segmentation offload"
+      href: gso-offload.md
   - name: "Transmit and receive queues"
     href: transmit-and-receive-queues.md
   - name: "Network data buffer management"
