@@ -112,6 +112,8 @@
     href: spb/index.md
   - name: "Storage device drivers"
     href: storage/index.md
+  - name: "Storage Firmware Update (CFU)"
+    href: sfu/index.md
   - name: "Streaming media device drivers"
     href: stream/index.md
   - name: "Test Authoring and Execution Framework (TAEF)"
