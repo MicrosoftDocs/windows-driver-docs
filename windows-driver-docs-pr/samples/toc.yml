@@ -16,12 +16,16 @@
   href: general-driver-samples.md
 - name: "General-purpose input/output (GPIO) driver samples"
   href: general-purpose-input-output--gpio--driver-samples.md
+- name: "Global Navigation Satellite System (GNSS) driver samples"
+  href: gnss-location-driver-samples.md
 - name: "Human interface devices (HID) driver samples"
   href: human-interface-devices--hid--driver-samples.md
 - name: "Input driver samples"
   href: input-driver-samples.md
 - name: "Networking driver samples"
   href: networking-driver-samples.md
+- name: "Near field communication (NFC) driver samples"
+  href: near-field-communication--nfc--driver-samples.md
 - name: "Near field proximity (NFP) driver samples"
   href: near-field-proximity--nfp--driver-samples.md
 - name: "Power framework (PoFx) driver samples"
