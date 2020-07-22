@@ -64,5 +64,5 @@
     href: mobile-broadband-mbb-wdf-class-extension-mbbcx.md
   - name: "Writing an MBBCx client driver"
     href: writing-an-MBBcx-client-driver.md
-- name: "Recovering unresponsive NIC with platform-level device reset"
+- name: "Recovering an unresponsive NIC with platform-level device reset"
   href: platform-level-device-reset.md
