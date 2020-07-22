@@ -16,7 +16,7 @@ For additional information, see [Introducing Component Firmware Update](https://
 
 ## Component Firmware Update (CFU) documentation
 
-[Customize the Component Firmware Update (CFU) driver](cfu-driver.md)
+[Customize the Component Firmware Update (CFU) driver](customize-the-cfu-driver.md)
 
 [Component Firmware Update (CFU) engineering guide](cfu-engineering-guide.md)
 

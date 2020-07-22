@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # CFU host
 
-This folder contains the following:
+The [Host](https://github.com/Microsoft/CFU/tree/master/Host) folder in the CFU repository on GitHub contains the following:
 
 - A sample CFU driver
 
