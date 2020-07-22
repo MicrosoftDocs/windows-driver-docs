@@ -3536,8 +3536,6 @@
         href: -dml-proc.md
       - name: "!dumpfa"
         href: -dumpfa.md
-      - name: "!elog_str"
-        href: -elog-str.md
       - name: "!envvar"
         href: -envvar.md
       - name: "!error"
