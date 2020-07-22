@@ -1,12 +1,12 @@
 ---
-title: NVMe Features Supported by StorNVMe
-description: NVMe Features Supported by StorNVMe
+title: StorNVMe feature support
+description: Describes NVMe features supported by StorNVMe
 ms.assetid: 96b62fbb-bcf3-402d-ba29-0a61dc95c92c
 ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---
 
-# NVMe Features Supported by StorNVMe
+# StorNVMe feature support
 
 The following matrix lists NVME features and indicates the support provided by **StorNVMe** on Windows 10 version 1903 and later versions.
 
