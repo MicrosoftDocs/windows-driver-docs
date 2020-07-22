@@ -38,7 +38,7 @@ certmgr /add ContosoTest.cer /s /r localMachine root
 CertMgr Succeeded
 ```
 
-After the certificate is copied to the Trusted Root Certification Authorities certificate store (the machine store, *not* the user store), you can view it through the Microsoft Management Console (MMC) Certificates snap-in, as described in [Viewing Test Certificates](viewing-test-certificates.md).
+After the certificate is copied to the Trusted Root Certification Authorities certificate store (the local machine's root store, *not* the user store), you can view it through the Microsoft Management Console (MMC) Certificates snap-in, as described in [Viewing Test Certificates](viewing-test-certificates.md).
 
 The following screenshot shows the Contoso.com(Test) certificate in the Trusted Root Certification Authorities certificate store.
 
@@ -50,6 +50,14 @@ You can also view the certificate at the command prompt:
 certutil -store root | findstr Contoso
 certutil -store root <SHA-1 id of certificate>
 ```
+
+Or, from PowerShell:
+
+```cmd
+Get-ChildItem -path cert: \LocalMachine\My | findstr Contoso
+```
+
+The Certmgr.exe tool is part of the Windows SDK and is typically installed to `C:\Program Files (x86)\Windows Kits\10\bin\<build>\x86\certmgr.exe`.
 
 For more information about CertMgr and its command-line arguments, see [**CertMgr**](https://docs.microsoft.com/windows-hardware/drivers/devtest/certmgr).
 

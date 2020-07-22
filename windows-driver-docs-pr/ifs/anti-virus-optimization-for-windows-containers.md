@@ -82,7 +82,7 @@ In the past, we recommended using the `LayerRootLocations` registry key to get t
 
 The registry location that had been used to register package layers:
 
-`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Virtualization\LayerRootLocations`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\LayerRootLocations`
 
 ## Benefits and risks
 

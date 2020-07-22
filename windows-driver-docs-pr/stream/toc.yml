@@ -39,6 +39,8 @@
     href: infrared-stream-support-in-uvc.md
   - name: "Camera class INF file setting for Universal camera drivers"
     href: camera-driver-inf-file-class-setting.md
+  - name: "Driver support for Camera UVC Control Cache"
+    href: camera-device-uvc-control-cache.md
   - name: "Microsoft extensions to USB Video Class 1.5 specification"
     href: uvc-extensions-1-5.md
 - name: "Windows Hello Camera driver bring up guide"
