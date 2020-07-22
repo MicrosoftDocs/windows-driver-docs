@@ -3896,7 +3896,7 @@
       - name: "!ppmperfpolicy"
         href: -ppmperfpolicy.md
       - name: "!ppmsettings"
-        href: -ppmstate.md
+        href: -ppmsettings.md
       - name: "!ppmstate"
         href: -ppmstate.md
       - name: "!prcb"
