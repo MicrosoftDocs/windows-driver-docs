@@ -33,6 +33,8 @@ You can use any INF section in a universal INF file except for the following:
 
 The [**INF Manufacturer Section**](inf-manufacturer-section.md) is valid as long as the **TargetOSVersion** decoration does not contain a **ProductType** flag or **SuiteMask** flag.
 
+The [**INF DefaultInstall Section**](inf-defaultinstall-section.md) is valid only if it has an architecture decoration, for example `[DefaultInstall.NTAMD64]`.
+
 ## Which INF directives are invalid in a universal INF file?
 
 
