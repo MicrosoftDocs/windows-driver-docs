@@ -19,13 +19,6 @@ PLDR is triggered by either:
 
 * Independent hardware vendor (IHV) client drivers. Client drivers can request NetAdapterCx to trigger PLDR. For example, when a driver detects that their device is unresponsive to its control command.
 
-<!--
-PLDR can be triggered by either the operating system (OS) or the independent hardware vendor (IHV)'s client drivers.
-OS side can trigger PLDR if it detects abnormal device behaviors, such like a in-transmit packet is stuck in the driver for too long.
-
-Client driver can also request NetAdapterCx to perform a reset if, for example, IHV's client driver detects its device becomes unresponsive to its control command.
--->
-
 In order to provide user-friendly device failure and recovery, we recommend that IHVs and original equipment manufacturers (OEMs) support PLDR for their network devices. For more information on PLDR, see [Resetting and recovering a device](../kernel/resetting-and-recovering-a-device.md).
 NetAdapterCx does not recover network devices through function-level device reset.
 
@@ -34,11 +27,6 @@ NetAdapterCx does not recover network devices through function-level device rese
 NetAdapterCx offers IHV client drivers the option to collect unique, device-specific diagnostics from failed devices.
 
 As part of the NetAdapterCx reset and recovery process the client driver can collect diagnostics from the failed device before the device is platform-level reset. IHVs and Microsoft can use this data in post-failure analysis to improve the quality of their products.
-
-<!--
-As part of the reset and recovery process initiated by NetAdapterCx, NetAdapterCx gives the client driver an opportunity to collect their own specific diagnostic from the failed device, before the device is being PLDR.
-These data will be helpful in post-failure analysis for both Microsoft and IHVs in order to further improve the quality of the product.
--->
 
 ### Register NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES
 
@@ -87,17 +75,6 @@ The reset and recovery sequence can happen at any given time. Therefore, the cli
 * The client driver must use extra caution when handling diagnostics collection to avoid dead lock. It must take into account that the hardware may already be in a failed state.
 
 * It's critical for **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** to complete as soon as possible so the rest of the PLDR process can proceed. **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** must be reliable and must return within 3 seconds.
-
-<!--
-Therefore, the client driver's [**EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS**](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_collect_reset_diagnostics) callback implementation should take this into consideration.
-
-NetAdapterCx synchronizes the **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** callback with other callbacks that might occur during [power-down sequence](power-down-sequence-for-a-netadaptercx-client-driver.md).
-Therefore in handling **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS**, the client driver can assume callbacks like packet queue cancel/stop, releasing hardware, and deleting the device object will not happen until **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** returns.
-The client driver must use extra caution when handling the diagnostics collecting to avoid dead lock, and keep in mind the hardware may already be in failed state.
-
-It's critical for **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** to complete as soon as possible, so the rest of PLDR process can proceed.
-This callback must be reliable and must return within 3 seconds.
--->
 
 In the **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** callback, the client driver should submit diagnostics as a flat data buffer to NetAdapterCx by calling the [**NetDeviceStoreResetDiagnostics**](/windows-hardware/drivers/ddi/nf-netdevice-netdevicestoreresetdiagnostics) API.
 Once **NetDeviceStoreResetDiagnostics** returns it is safe for the client driver to free its reset diagnostics data buffer.
