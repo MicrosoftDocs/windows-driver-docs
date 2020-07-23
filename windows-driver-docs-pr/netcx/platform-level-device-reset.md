@@ -1,7 +1,7 @@
 ---
 title: Recovering an unresponsive NIC with platform-level device reset
 description: Recovering an unresponsive NIC with platform-level device reset
-ms.assetid: 
+ms.assetid:
 keywords:
 - Recovering mechanism, device reset, collecting diagnostics
 ms.date: 07/02/2020
@@ -19,7 +19,7 @@ PLDR is triggered by either:
 
 * Independent hardware vendor (IHV) client drivers. Client drivers can request NetAdapterCx to trigger PLDR. For example, when a driver detects that their device is unresponsive to its control command.
 
-<!-- 
+<!--
 PLDR can be triggered by either the operating system (OS) or the independent hardware vendor (IHV)'s client drivers.
 OS side can trigger PLDR if it detects abnormal device behaviors, such like a in-transmit packet is stuck in the driver for too long.
 
@@ -27,6 +27,7 @@ Client driver can also request NetAdapterCx to perform a reset if, for example, 
 -->
 
 In order to provide user-friendly device failure and recovery, we recommend that IHVs and original equipment manufacturers (OEMs) support PLDR for their network devices. For more information on PLDR, see [Resetting and recovering a device](../kernel/resetting-and-recovering-a-device.md).
+NetAdapterCx does not recover network devices through function-level device reset.
 
 ## Register the optional diagnostics collection callback
 
@@ -34,7 +35,7 @@ NetAdapterCx offers IHV client drivers the option to collect unique, device-spec
 
 As part of the NetAdapterCx reset and recovery process the client driver can collect diagnostics from the failed device before the device is platform-level reset. IHVs and Microsoft can use this data in post-failure analysis to improve the quality of their products.
 
-<!-- 
+<!--
 As part of the reset and recovery process initiated by NetAdapterCx, NetAdapterCx gives the client driver an opportunity to collect their own specific diagnostic from the failed device, before the device is being PLDR.
 These data will be helpful in post-failure analysis for both Microsoft and IHVs in order to further improve the quality of the product.
 -->
@@ -53,6 +54,7 @@ The following example shows how to register **NET_DEVICE_RESET_DIAGNOSTICS_CAPAB
 
 ```cpp
 EVT_WDF_DRIVER_DEVICE_ADD EvtWdfDriverDeviceAdd;
+EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS EvtDeviceCollectResetDiagnostics;
 
 NTSTATUS EvtWdfDriverDeviceAdd(
     WDFDRIVER Driver,
@@ -61,12 +63,12 @@ NTSTATUS EvtWdfDriverDeviceAdd(
 {
     ...
 
-    NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES resetResetDiagnosticsCapabilities;
+    NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES resetDiagnosticsCapabilities;
     NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT(
-        &resetResetDiagnosticsCapabilities,
+        &resetDiagnosticsCapabilities,
         DUMMY_GUID,
         EvtDeviceCollectResetDiagnostics);
-    NetDeviceInitSetResetDiagnosticsCapabilities(DeviceInit, &resetResetDiagnosticsCapabilities);
+    NetDeviceInitSetResetDiagnosticsCapabilities(DeviceInit, &resetDiagnosticsCapabilities);
 
     ...
 }
