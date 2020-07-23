@@ -8,7 +8,7 @@ ms.date: 01/18/2019
 ms.custom: 19H1
 ---
 
-# NetAdapterCx hardware offloads
+# Introduction to hardware offloads
 
 To increase its performance, the Windows TCP/IP stack can offload some tasks to a network interface card (NIC) that has the appropriate task offload capabilities.
 
@@ -24,9 +24,9 @@ This guidance provides an overview of key concepts for hardware offloads in NetA
 - The TCP/IP stack or an overlying protocol driver can request a change in active capabilities of the network adapter. Client drivers register callbacks with NetAdapterCx to be notified of changes in the active offload capabilities.
 - If a packet extension is needed for an offload, it is automatically registered when the network adapter advertises support for the hardware offload.
 
-Client drivers advertise a granular set of capabilities to NetAdapterCx. For example, this can be whether IPv4 Options, IPv6 Extensions or TCP Options are supported, etc. The client driver can also specify if it has a hardware packet header offset limit. For example, if a client driver has only 8 bits in the descriptor for the layer 4 header offset, it would set the Layer4HeaderOffset to 255. Any packets that have a header offset greater than the specified limit will be offloaded in software by NetAdapterCx. 
+Client drivers advertise a granular set of capabilities to NetAdapterCx for the network packet types their hardware can offload. For example, this can be whether IPv4 Options, IPv6 Extensions, TCP Options or any combinations of such are supported, etc. Certain hardware can only perform offload if the packet header offset is known, and the client driver of such hardware can also specify its limit on packet header offset. For example, if the hardware descriptor has only 8 bits to store layer 4 header offset, the client driver would set the Layer4HeaderOffset to 255. Any packets which are not covered by the client driver’s capabilities will be offloaded in software by NetAdapterCx.
 
-If the hardware is not capable of handling a specific combination, it should not declare support for that capability.
+If the hardware is not capable of handling a specific combination, the client driver should neither declare support for that capability nor perform a software fallback itself when it encounters such a packet. Instead, it should let NetAdapterCx to perform any necessary software fallback automatically.
 
 The following offloads are supported by NetAdapterCx and the Windows TCP/IP stack:
 

@@ -10,25 +10,23 @@ ms.custom: 19H1
 
 # Generic Segmentation Offload
 
-Generic Segmentation Offload (GSO) is a term that collectively represents Large Send Offload (LSO) and UDP Send Offload (USO).  Miniport drivers that can offload the segmentation of large TCP/UDP packets that are larger than the maximum transmission unit (MTU) of the network medium must indicate their capability to NetAdapterCx using the GSO APIs.
+Generic Segmentation Offload (GSO) is a term that collectively represents Large Send Offload (LSO) and UDP Send Offload (USO).  Client drivers that can offload the segmentation of large TCP/UDP packets that are larger than the maximum transmission unit (MTU) of the network medium must indicate their capability to NetAdapterCx using the GSO APIs.
 
-Refer [Offloading the Segmentation of Large TCP Packets](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/offloading-the-segmentation-of-large-tcp-packets) for more details on the LSO.
+Refer [Offloading the Segmentation of Large TCP Packets](https://docs.microsoft.com/windows-hardware/drivers/network/offloading-the-segmentation-of-large-tcp-packets) for more details on LSO.
+
+Refer [UDP Segmentation Offload (USO)](https://docs.microsoft.com/windows-hardware/drivers/network/udp-segmentation-offload-uso-) for more details on USO.
 
 ## INF keywords for controlling checksum offload
 
+The driver doesn't need to worry about checking standard registry keywords. NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities.
+
 The LSO keywords specified in [Using Registry Values to Enable and Disable Task Offloading](https://docs.microsoft.com/windows-hardware/drivers/network/using-registry-values-to-enable-and-disable-task-offloading) can be used to enable/disable the LSO offload with a registry key setting.
 
-The USO keywords are:
-| Keyword | Description | Value | EnumDesc|
-| --- | --- | ---| ---|
-| *UsoIPv4 | Describes whether the device enabled or disabled the segmentation of large UDP packets over IPv4 | 0 | Disabled |
-| | | 1 (Default) | Enabled |
-| *UsoIPv6 | Describes whether the device enabled or disabled the segmentation of large UDP packets over IPv4 | 0 | Disabled |
-| | | 1 (Default) | Enabled |
+The USO keywords specified in [UDP Segmentation Offload (USO)](https://docs.microsoft.com/windows-hardware/drivers/network/udp-segmentation-offload-uso-) can be used to enable/disable the USO offload with a registry key setting.
 
 ## Configuring hardware offloads
 
-Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within the context of [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) when starting a net adapter. To get started, the client driver allocates a capabilities structure for each supported offload, initializes them, and calls the appropriate **NetAdapterOffloadSetXxxCapabilities** methods to register them with NetAdapterCx. During the call to **NET_ADAPTER_OFFLOAD_XxX_CAPABILITIES_INIT**, the driver provides a pointer to a callback function that the system invokes later if active hardware offload capabilities change.
+Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within the context of [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) when starting a net adapter. To get started, the client driver allocates a capabilities structure for the GSO offload, initialize it, and calls the [**NetAdapterOffloadSetGsoCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetgsocapabilities) method to register it with NetAdapterCx. During the call to [**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-net_adapter_offload_gso_capabilities_init), the driver provides a pointer to a callback function that the system invokes later if active GSO capabilities change.
 
 ### Rules for indicating hardware GSO capabilities
 1. If Large Send Offload (LSO) is supported by the NIC, the driver must populate the TcpFlags field of the NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES with the types of packets it can perform LSO on.
