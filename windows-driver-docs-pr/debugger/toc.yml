@@ -114,15 +114,17 @@
     href: windbg-scripting-preview.md
   - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
-  - name: "Time Travel Debugging"
+  - name: "WinDbg Preview Basics"
 # Auto-expanded node
     items: 
     - name: "WinDbg Preview Basics"
       href: windbg-preview-basics.md
+  - name: "WinDbg Preview - Software License Terms"
 # Auto-expanded node
     items: 
     - name: "WinDbg Preview - Software License Terms"
       href: windbg-preview---software-license-terms.md
+  - name: "Time Travel Debugging"
 # Auto-expanded node
     items: 
     - name: "Time Travel Debugging - Overview"
