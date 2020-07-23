@@ -1,15 +1,15 @@
 ---
-title: Recovering an unresponsive NIC with platform-level device reset
-description: Recovering an unresponsive NIC with platform-level device reset
+title: Recovering an unresponsive NIC with NetAdapterCx PLDR
+description: Recovering an unresponsive NIC with NetAdapterCx platform-level device reset (PLDR)
 ms.assetid:
 keywords:
-- Recovering mechanism, device reset, collecting diagnostics
+- NetAdapterCx, Recovering mechanism, device reset, collecting diagnostics, PLDR
 ms.date: 07/02/2020
 ms.localizationpriority: medium
 ms.custom: Fe
 ---
 
-# Recovering an unresponsive NIC with platform-level device reset
+# Recovering an unresponsive NIC with NetAdapterCx PLDR
 
 NetAdapterCx provides an effective way to reset and recover malfunctioning network devices through platform-level device reset (PLDR). Without rebooting the entire Windows system, the PLDR operation tears down the stack of affected network devices ensuring their hardware and drivers restart from a blank state. NetAdapterCx also enables client drivers to [collect diagnostics](#register-the-optional-diagnostics-collection-callback) from failed devices before they are platform-level reset.
 
@@ -101,7 +101,7 @@ The following sequence occurs from the client driver's perspective when PLDR is 
 
 Steps 1 and 2 in the diagram below correspond to the description of the NetAdapterCx reset and recover sequence:
 
-<img src=images/pldr_flowchart.png alt="Illustration of the NetAdapterCx reset and recover sequence outlined above" width="600"/>
+![Illustration of the NetAdapterCx reset and recover sequence outlined above](images/pldr_flowchart.png)
 
 ## How a client driver requests PLDR
 
