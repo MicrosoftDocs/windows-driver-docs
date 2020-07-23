@@ -16,12 +16,16 @@ This tool reads an offer file, firmware image file in SREC bin format, and passe
 
 It requires a protocol settings text csv file to be passed as an argument.
 
-## Usage
+## Usage examples
 
-`FwUpdateCfu.exe version \<protocolSettingsPath\>` (to retrieve version of device)
+```
+FwUpdateCfu.exe version \<protocolSettingsPath\> (to retrieve version of device)
+```
 
-`FwUpdateCfu.exe update \<protocolSettingsPath\> \<offerfile\> \<binfile\> [forceIgnoreVersion] [forceReset]`
-  
+```
+FwUpdateCfu.exe update \<protocolSettingsPath\> \<offerfile\> \<binfile\> [forceIgnoreVersion] [forceReset]
+```
+
 ## Example protocol settings
 
 ```
