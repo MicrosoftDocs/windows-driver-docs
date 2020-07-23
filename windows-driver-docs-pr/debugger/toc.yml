@@ -117,6 +117,10 @@
   - name: "Time Travel Debugging"
 # Auto-expanded node
     items: 
+    - name: "WinDbg Preview Basics"
+      href: windbg-preview-basics.md
+# Auto-expanded node
+    items: 
     - name: "WinDbg Preview - Software License Terms"
       href: windbg-preview---software-license-terms.md
 # Auto-expanded node
