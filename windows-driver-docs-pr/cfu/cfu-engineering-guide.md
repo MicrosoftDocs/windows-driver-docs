@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CFU) engineering guide
 
-The CFU is a protocol and a process for submitting new firmware images to be installed on the target device.
+Component Firmware Update (CFU) is a protocol and a process for submitting new firmware images to be installed on the target device.
 
 CFU submissions to the resident firmware are file pairs.  Each submission is a pair of files, one file is the Offer part, the other file is the Content part.
 

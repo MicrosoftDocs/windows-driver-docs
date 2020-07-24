@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 
 Sample INF file for the HIDCFU inbox driver.
 
-## Sample HIDCFU inbox driver INF
-
 ```inf
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; File:               CfuVirtualHidDeviceFwUpdate.inx
