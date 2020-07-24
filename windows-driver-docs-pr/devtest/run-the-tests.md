@@ -79,7 +79,7 @@ The [SDEL language](https://docs.microsoft.com/windows-hardware/drivers/ddi/inde
     <Parameter Name="SdelExcludeVMDevnode">(DisplayName!='Microsoft Hyper-V Virtual Machine Bus')</Parameter>
 ```
 
-**SdelExcludeDrivers**: this is the recommended place to use SDEL to exclude drivers and/or devices.  For example, you could use this to exclude drivers that have known bugs or to narrow the scope of the test.  Running with the default of ```(DriverBinaryNames!='')``` targets all drivers of all devices on the system (except the “Microsoft Hyper-V Virtual Machine Bus” device node as noted above).
+**SdelExcludeDrivers**: this is the recommended place to use SDEL to exclude drivers and/or devices.  For example, you could use this to exclude drivers that have known bugs or to narrow the scope of the test.  Running with the default of ```(DriverBinaryNames!='')``` targets all drivers of all devices on the system (except the “Microsoft Hyper-V Virtual Machine Bus” device node as noted above). To exclude all devnodes with a.sys, then use "DriversBinaryNames!='cdrom.sys'". To exclude a specific device based on hardware I,D then use "hardwareids!=PCI\VEN_%%%" where %%% is the hardware ID. To exclude a specific device based on DisplayName then use "DisplayName!='MyHardware'".
 ```
     <Parameter Name="SdelExcludeDrivers">(DriverBinaryNames!='')</Parameter>
 ```
