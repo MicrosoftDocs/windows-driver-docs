@@ -12,29 +12,27 @@ ms.localizationpriority: medium
 
 Component Firmware Update (CFU) is a protocol and a process for submitting new firmware images to be installed on the target device.
 
-CFU submissions to the resident firmware are file pairs.  Each submission is a pair of files, one file is the offer part, the other file is the content part.
+CFU submissions to the resident firmware are file pairs.  Each submission is a pair of files, one file is the offer part, the other file is the content part. Each CFU submission (each offer and content pair) is required to be created off-line before the submission is sent to the firmware that implements the CFU process.
 
-Each CFU submission (each offer and content pair) is required to be created off-line before the submission is sent to the firmware that implements the CFU process.
-
-The general implementation agnostic common code for CFU is contained in ComponentFwUpdate.c. All other files are helper files that can be updated or modified to the developer's unique implementation.
+In the sample [Firmware](https://github.com/Microsoft/CFU/tree/master/Firmware) source code in the CFU repository on GitHub, the general implementation agnostic common code for CFU is contained in `ComponentFwUpdate.c`. All other files are helper files that can be updated or modified to the developer's unique implementation.
 
 ## Contents
 
-- [The offer and content parts]()
-  - [offer register detail]()
-  - [Processing offers]()
-    - [Interpreting the offer part]()
-      - [Step 1]()
-      - [Step 2]()
-      - [Step 3]()
-      - [Step 4]()
-  - [Process the content]()
-    - [The structure of the content command]()
-    - [The first block]()
-    - [Any other block except first or last]()
-    - [The last block]()
-    - [Clean up after last block]()
-  - [Forced reset checked]()
+- [The offer and content parts](#the-offer-and-content-parts)
+  - [Offer register detail](#offer-register-detail)
+  - [Processing offers](#processing-offers)
+    - [Interpreting the offer](#interpreting-the-offer)
+      - [Step 1 - Check bank]()
+      - [Step 2 - Check hwVariantMask]()
+      - [Step 3 - Check firmware version]()
+      - [Step 4 - Accept offer]()
+  - [Process the content](#process-the-content)
+    - [The structure of the content command](#the-structure-of-the-content-command)
+    - [The first block](#the-first-block)
+    - [Any other block except first or last](#any-other-block-except-first-or-last)
+    - [The last block](#the-last-block)
+    - [Clean up after last block](#clean-up-after-last-block)
+  - [Forced reset checked](#forced-reset-checked)
 
 ## The offer and content parts
 
@@ -108,7 +106,7 @@ Byte(s)    Value
 ---------------------------------------------------------
 ```
 
-### Offer register detail
+### Offer register details
 
 The Product ID. A unique product ID value for this CFU image can be applied to this field.
 
@@ -180,7 +178,7 @@ In the event that the content portion of the offer and content pair involves mul
 UINT8 segmentNumber;
 ```
 
-### Processing Offers
+### Processing offers
 
 The API of `ProcessCFWUOffer` accepts two arguments.
 
@@ -197,7 +195,7 @@ That offer message is the data used by the running firmware to disposition the o
 
 During the disposition of the offer, the running firmware notifies the sender by populating fields in the `FWUPDATE_OFFER_RESPONSE` structure.
 
-#### Interpreting the offer part
+#### Interpreting the offer
 
 The running firmware should keep track of it's state in CFU process. It may be ready/waiting to accept an offer, in the middle of a CFU transaction, or waiting to swap banks between active/inactive firmware.
 
@@ -253,15 +251,15 @@ Finally, if the state of the running firmware is not busy, and the componentId i
 
 Processing an offer involves, but is not limited to, the four steps outlined below:
 
-##### Step 1
+##### Step 1 - Check bank
 
-Check the bank of the running Application to the bank in the offer.  Are they the same or different?
+Check the bank of the running application to the bank in the offer.  Are they the same or different?
 
 If the same, then reject the offer (we don't want to overwrite the running/active image).
 
 Else continue.
 
-##### Step 2
+##### Step 2 - Check hwVariantMask
 
 The running firmware checks the `hwVariantMask` in the offer against the HW it is running on.  This allows the embedded firmware to reject an offer if the offer is invalid for the target. (ex. if the running firmware is on an old HW build and the new offered firmware is meant for a newer, HW build - then the running firmware should reject this offer)
 
@@ -269,7 +267,7 @@ If invalid, then reject the offer.
 
 Else continue.
 
-##### Step 3
+##### Step 3 - Check firmware version
 
 Check if the version of the firmware content offered has a version older or newer than the current application firmware.
 
@@ -279,7 +277,7 @@ If this check failed, then reject the offer.
 
 Else continue.
 
-##### Step 4
+##### Step 4 - Accept offer
 
 The offer is good.  Accept the offer with a response that is tailored for the way messages and status are returned by the firmware to the remote user-application. The so-called "response" is data  (a packed data structure as shown in the demonstration header files) and this data is written out to the user-application by the appropriate means for the device.
 
