@@ -114,6 +114,11 @@
     href: windbg-scripting-preview.md
   - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
+  - name: "WinDbg Preview Basics"
+# Auto-expanded node
+    items: 
+    - name: "WinDbg Preview Basics"
+      href: windbg-preview-basics.md
   - name: "Time Travel Debugging"
 # Auto-expanded node
     items: 
@@ -165,6 +170,10 @@
         href: time-travel-debugging-range-objects.md
       - name: "Time Travel Debugging - Thread objects"
         href: time-travel-debugging-thread-objects.md
+      - name: "Time Travel Debugging - Module objects"
+        href: time-travel-debugging-module-objects.md
+      - name: "Time Travel Debugging - Collection objects"
+        href: time-travel-debugging-collection-objects.md
     - name: "Time Travel Debugging - JavaScript Automation"
       href: time-travel-debugging-javascript-automation.md
 - name: "Debugging Resources"
@@ -3896,7 +3905,7 @@
       - name: "!ppmperfpolicy"
         href: -ppmperfpolicy.md
       - name: "!ppmsettings"
-        href: -ppmstate.md
+        href: -ppmsettings.md
       - name: "!ppmstate"
         href: -ppmstate.md
       - name: "!prcb"
