@@ -62,7 +62,7 @@ NTSTATUS EvtWdfDriverDeviceAdd(
 }
 ```
 
-See [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_diagnostics_capabilities_init) on how to initialize the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure. 
+See [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_diagnostics_capabilities_init) on how to initialize the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure.
 
 See [**NetDeviceInitSetResetDiagnosticsCapabilitites**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetdiagnosticscapabilitites) on how to advertise the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure to NetAdapterCx.
 
@@ -101,7 +101,7 @@ The following sequence occurs from the client driver's perspective when PLDR is 
 
 Steps 1 and 2 in the diagram below correspond to the description of the NetAdapterCx reset and recover sequence:
 
-![Illustration of the NetAdapterCx reset and recover sequence outlined above](images/pldr_flowchart.png)
+![Illustration of the NetAdapterCx reset and recover sequence outlined above](images/pldr_flowchart.png =600x)
 
 ## How a client driver requests PLDR
 
