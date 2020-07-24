@@ -101,7 +101,7 @@ The following sequence occurs from the client driver's perspective when PLDR is 
 
 Steps 1 and 2 in the diagram below correspond to the description of the NetAdapterCx reset and recover sequence:
 
-![Illustration of the NetAdapterCx reset and recover sequence outlined above](images/pldr_flowchart.png =600x)
+<img src=images/pldr_flowchart.png alt="Illustration of the NetAdapterCx reset and recover sequence outlined above" width="600"/>
 
 ## How a client driver requests PLDR
 
