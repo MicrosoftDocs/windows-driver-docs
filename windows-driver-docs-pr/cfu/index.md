@@ -1,14 +1,14 @@
 ---
-title: Component Firmware Update (CPU) 
-description: Provides information about Component Firmware Update (CPU)
-ms.date: 07/21/2020
+title: Component Firmware Update (CFU) 
+description: Provides information about Component Firmware Update (CFU)
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CPU)
+# Component Firmware Update (CFU)
 
 Component Firmware Update (CFU) provides Original Equipment Manufacturers (OEMs) and Independent Hardware Vendors (IHVs) a reliable, robust against power interruption, and authenticated method for updating firmware on devices that have shipped to customers. This release contains a reference device driver for delivering the firmware payload to a target device and reference firmware for receiving the firmware payload.
 
@@ -17,6 +17,8 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 ## In this section
 
 [CFU engineering guide](cfu-engineering-guide.md)
+
+[CFU inbox HIDCFU driver INF sample](cfu-inbox-hidcfu-driver-inf-sample.md)
 
 [CFU host driver sample](cfu-host-driver.md)
 

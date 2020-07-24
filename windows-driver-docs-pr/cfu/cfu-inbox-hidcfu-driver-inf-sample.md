@@ -1,20 +1,20 @@
 ---
-title: Component Firmware Update (CPU) Sample HIDCFU.INF file
-description: Component Firmware Update (CPU) Sample HIDCFU.INF file
-ms.date: 07/23/2020
+title: Component Firmware Update (CFU) inbox HIDCFU driver INF sample
+description: Component Firmware Update (CFU) inbox HIDCFU driver INF sample
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CPU) Sample HIDCFU.INF file
+# Component Firmware Update (CFU) inbox HIDCFU driver INF sample
 
-Sample driver installation file for CFU virtual HID device firmware update.
+Sample INF file for the HIDCFU inbox driver.
 
-## Sample HIDCFU.INF file
+## Sample HIDCFU inbox driver INF
 
-```INF
+```inf
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; File:               CfuVirtualHidDeviceFwUpdate.inx
 ;

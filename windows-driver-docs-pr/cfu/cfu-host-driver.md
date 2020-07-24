@@ -1,6 +1,6 @@
 ---
-title: Component Firmware Update (CPU) host driver 
-description: Component Firmware Update (CPU) host
+title: Component Firmware Update (CFU) host driver 
+description: Component Firmware Update (CFU) host
 ms.date: 07/21/2020
 ms.topic: article
 ms.prod: windows-hardware
@@ -22,7 +22,7 @@ The [Host](https://github.com/Microsoft/CFU/tree/master/Host) folder in the CFU 
 
 ## CFU driver sample
 
-The CFU driver sample sends firmware image file(s) to a device in need of an update. Before sending the firmware image, the driver sends several commands to the device with firmware offers. Only if the device accepts, the driver sends the firmware payload. The communication between the driver and the device is in accordance with the [Component Firmware Update (CPU) protocol specification](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
+The CFU driver sample sends firmware image file(s) to a device in need of an update. Before sending the firmware image, the driver sends several commands to the device with firmware offers. Only if the device accepts, the driver sends the firmware payload. The communication between the driver and the device is in accordance with the [Component Firmware Update (CFU) protocol specification](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
 
 The CFU driver sample is implemented using the [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/overview-of-the-umdf) 2.0 model and based on the the [Microsoft Devices Driver Module Framework (DMF)](https://blogs.windows.com/buildingapps/2018/08/15/introducing-driver-module-framework/).
 

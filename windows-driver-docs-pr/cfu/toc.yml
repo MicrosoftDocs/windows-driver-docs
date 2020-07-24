@@ -5,6 +5,8 @@
     href: index.md
   - name: "CFU engineering guide"
     href: cfu-engineering-guide.md
+  - name: "CFU inbox HIDCFU driver INF sample"
+    href: cfu-inbox-hidcfu-driver-inf-sample.md
   - name: "CFU host driver sample"
     href: cfu-host-driver.md
   - name: "Customize the CFU driver"

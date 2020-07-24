@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) engineering guide
 description: Component Firmware Update (CFU) engineering guide
-ms.date: 07/21/2020
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

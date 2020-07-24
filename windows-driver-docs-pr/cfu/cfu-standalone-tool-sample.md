@@ -1,14 +1,14 @@
 ---
-title: Component Firmware Update (CPU) standalone tool sample
-description: Component Firmware Update (CPU) standalone tool sample
-ms.date: 07/21/2020
+title: Component Firmware Update (CFU) standalone tool sample
+description: Component Firmware Update (CFU) standalone tool sample
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CPU) standalone tool sample
+# Component Firmware Update (CFU) standalone tool sample
 
 The CFU tool sample sends firmware image files to a device in need of an update. Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](https://github.com/Microsoft/CFU/tree/master/Documentation/CFU-Protocol), an open source specification (included with CFU) based on the HID protocol.
 

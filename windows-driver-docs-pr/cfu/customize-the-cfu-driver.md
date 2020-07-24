@@ -1,7 +1,7 @@
 ---
 title: Customize the Component Firmware Update (CFU) driver
 description: Provides information on customizing the Component Firmware Update (CFU) driver
-ms.date: 07/21/2020
+ms.date: 07/24/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
