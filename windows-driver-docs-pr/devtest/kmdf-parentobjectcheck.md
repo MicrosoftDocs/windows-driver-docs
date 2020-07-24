@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **ParentObjectCheck** rule specifies that driver should call [**WdfMemoryCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate) specifying a parent object using a [**WDF\_OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure. If driver doesn’t set a parent object for the framework memory object then the framework sets the driver as the default parent, so that unless the driver deletes the framework memory object explicitly it’ll remain in the memory until the driver object unloads.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

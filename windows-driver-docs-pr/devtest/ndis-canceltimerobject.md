@@ -20,9 +20,7 @@ The **CancelTimerObject** rule specifies that [**NdisSetTimerObject**](https://d
 
 The rule uses three different states. The state changes when a timer is set or cancelled. If the timer is still set when [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) exits, the rule reports the defect.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

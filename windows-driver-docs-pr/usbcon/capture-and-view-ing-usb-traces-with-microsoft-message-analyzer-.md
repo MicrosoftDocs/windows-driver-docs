@@ -8,10 +8,8 @@ ms.localizationpriority: medium
 
 # Capture and view USB traces with Microsoft Message Analyzer
 
-**Summary**
-
--   Microsoft Message Analyzer installation and setup
--   Capture and view live USB traces
+>[!IMPORTANT]
+>The Microsoft Message Analyzer tool has been retired. We are leaving this page available for those who have downloaded the tool previously.
 
 You can use Microsoft Message Analyzer (MMA) to capture and view live USB traces, or view an existing trace.
 
@@ -32,10 +30,7 @@ This video demonstrates how to set up Microsoft Message Analyzer for USB traces 
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/e5300401-351e-4dcc-bcc2-edd07079d7fa]
 
-
-
 ## Analyze a USB trace
-
 
 Microsoft Message Analyzer parses the information dynamically as it is captured and displays them in a human-readable form. Most of that information is shown in the **Summary** column. That column displays detailed information about the event, such as, requests the USB driver stack sends to the device. By adding the required filters you can view the results of those requests.
 

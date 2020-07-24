@@ -1,7 +1,7 @@
 ---
 title: IRP Major Function Codes
 description: IRP Major Function Codes
-ms.date: 08/12/2017
+ms.date: 03/09/2020
 ms.assetid: 11c5b1a9-74c0-47fb-8cce-a008ece9efae
 ms.localizationpriority: medium
 ---
@@ -9,10 +9,7 @@ ms.localizationpriority: medium
 # IRP Major Function Codes
 
 
-
-
-
-Each driver-specific I/O stack location (**IO\_STACK\_LOCATION** for the major function codes that it must support.
+Each driver-specific I/O stack location ([**IO_STACK_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)) for every [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) contains a major function code (IRP_MJ_XXX), which tells the driver what operation it or the underlying device driver should carry out to satisfy the I/O request. Each kernel-mode driver must provide dispatch routines for the major function codes that it must support.
 
 The specific operations a driver carries out for a given **IRP\_MJ\_<em>XXX</em>** code depend somewhat on the underlying device, particularly for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) and [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md) requests. For example, the requests sent to a keyboard driver are necessarily somewhat different from those sent to a disk driver. However, the I/O manager defines the parameters and I/O stack location contents for each system-defined major function code.
 

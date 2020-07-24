@@ -19,10 +19,8 @@ This notification uses the [NDIS_WWAN_UICC_RESET_INFO](https://docs.microsoft.co
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ndis.h |
+**Version**: Windows 10, version 1709
+**Header**: Ndis.h
 
 ## See also
 

@@ -7,18 +7,17 @@ keywords:
 - capturing to system memory WDK AVStream
 - pin VRAM processing WDK AVStream
 - VRAM capture WDK AVStream , request sequence
-ms.date: 04/20/2017
+ms.date: 06/19/2020
 ms.localizationpriority: medium
 ---
 
-# VRAM Capture Properties
-
+# VRAM capture properties
 
 A pin-centric AVStream minidriver must support several properties in order for it to capture to VRAM. This section describes the sequence of requests that the minidriver receives before and during VRAM processing.
 
 Before capture is initiated, the KS proxy sends a [**KSPROPERTY\_PREFERRED\_CAPTURE\_SURFACE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-preferred-capture-surface) get-property request. The minidriver should return different values depending on whether the driver is capturing to system memory or VRAM.
 
-### Capturing to System Memory
+## Capturing to system memory
 
 To capture to system memory, return KS\_CAPTURE\_ALLOC\_SYSTEM\_AGP.
 
@@ -30,7 +29,7 @@ For information about how to implement DMA in your pin process callback, see [Pa
 
 To capture with multiple output pins (for instance, separate video, audio, and VBI pins), each pin should support the VRAM properties and processing as described earlier. The proxy generates a separate thread for each pin.
 
-### Capturing to VRAM
+## Capturing to VRAM
 
 If your driver supports VRAM capture, return **KS\_CAPTURE\_ALLOC\_VRAM** in response to KSPROPERTY\_PREFERRED\_CAPTURE\_SURFACE.
 
@@ -60,22 +59,14 @@ This structure contains the physical address returned in response to KSPROPERTY\
 
 The capture driver should:
 
--   Program the capture hardware with the VRAM physical address.
+- Program the capture hardware with the VRAM physical address.
 
--   Handle the video frame completion.
+- Handle the video frame completion.
 
--   Fill in the **cbCaptured** member of VRAM\_SURFACE\_INFO with the number of bytes copied into the VRAM surface. Do not set the **DataUsed** member of KSSTREAM\_HEADER with the number of bytes captured. Instead, set **DataUsed** to sizeof(VRAM\_SURFACE\_INFO).
+- Fill in the **cbCaptured** member of VRAM\_SURFACE\_INFO with the number of bytes copied into the VRAM surface. Do not set the **DataUsed** member of KSSTREAM\_HEADER with the number of bytes captured. Instead, set **DataUsed** to sizeof(VRAM\_SURFACE\_INFO).
 
--   If your capture driver performs timestamping, set **PresentationTime**, **Duration**, and, if relevant, **OptionsFlags** in KSSTREAM\_HEADER.
+- If your capture driver performs timestamping, set **PresentationTime**, **Duration**, and, if relevant, **OptionsFlags** in KSSTREAM\_HEADER.
 
--   Call [**KsStreamPointerAdvanceOffsets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointeradvanceoffsets) to continue processing or delete all clones and complete the request by calling [**KsStreamPointerDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete).
+- Call [**KsStreamPointerAdvanceOffsets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointeradvanceoffsets) to continue processing or delete all clones and complete the request by calling [**KsStreamPointerDelete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete).
 
-The **CCapturePin::ProcessD3DSurface** method in *Capture.cpp* of the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://go.microsoft.com/fwlink/p/?linkid=256083) in the Windows Driver Kit (WDK) samples show one way to implement this callback for VRAM support.
-
- 
-
- 
-
-
-
-
+The **CCapturePin::ProcessD3DSurface** method in the *Capture.cpp* file in the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/avstream-simulated-hardware-sample-driver-avshws) in the Windows Driver Kit (WDK) samples shows one way to implement this callback for VRAM support.

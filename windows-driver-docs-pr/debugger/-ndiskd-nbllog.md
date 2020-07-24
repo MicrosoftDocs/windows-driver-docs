@@ -96,16 +96,15 @@ After you have enabled NBL tracking on the target debugee machine, enter the **!
     Rerun with the '-force' option to bypass this limit.
 ```
 
-For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176) on the NDIS blog.
+For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](https://docs.microsoft.com/archive/blogs/ndis/ndiskd-nbl-log) on the NDIS blog.
 
 ## <span id="see_also"></span>See also
-
 
 [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
 
 [Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
@@ -113,7 +112,7 @@ For a more detailed description of how to interpret the results of **!ndiskd.nbl
 
 [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)
 
-[!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176)
+[!ndiskd.nbl -log](https://docs.microsoft.com/archive/blogs/ndis/ndiskd-nbl-log)
 
  
 

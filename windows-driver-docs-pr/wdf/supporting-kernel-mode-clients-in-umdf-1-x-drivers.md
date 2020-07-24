@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 >[!WARNING]
 >Also see [Supporting Kernel-Mode Clients in UMDF 2.x](supporting-kernel-mode-clients-in-umdf-drivers.md).

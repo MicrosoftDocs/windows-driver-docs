@@ -1,15 +1,15 @@
 ---
-title: Creating an Interrupt Object
+title: Creating an Interrupt Object (UMDF 1)
 description: Creating an Interrupt Object
 ms.assetid: D281F2E8-3ADA-4F4E-B345-CE72FA3C69EC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Creating an Interrupt Object
+# Creating an Interrupt Object (UMDF 1)
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 A UMDF driver that handles a device's hardware interrupts must create a framework interrupt object for each interrupt that each device can support.
 

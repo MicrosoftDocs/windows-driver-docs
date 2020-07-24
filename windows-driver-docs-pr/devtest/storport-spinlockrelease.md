@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the driver does not attempt to release a lock via **KeReleaseSpinLock** without first acquiring it via **KeAquireSpinlock** or **KeAcquireSpinLockRaiseToDpc**. The rule passes when the acquired spin lock is released.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

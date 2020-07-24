@@ -15,7 +15,6 @@ ms.localizationpriority: medium
 
 # Bug Check 0x93: INVALID\_KERNEL\_HANDLE
 
-
 The INVALID\_KERNEL\_HANDLE bug check has a value of 0x00000093. This bug check indicates that an invalid or protected handle was passed to **NtClose**.
 
 > [!IMPORTANT]

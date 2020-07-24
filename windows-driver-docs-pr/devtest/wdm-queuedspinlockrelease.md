@@ -20,13 +20,10 @@ The **QueuedSpinLockRelease** rule specifies that calls to [**KeAcquireInStackQu
 
 Moreover, at the end of a dispatch or cancel routine, the driver should not hold the queued spinlock.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00040007) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00040007)
+
 
 How to test
 -----------

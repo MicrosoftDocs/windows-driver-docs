@@ -22,13 +22,10 @@ This rule also specifies that the driver calls **KeLeaveCriticalRegion** to re-e
 
 The WDK documentation of **KeEnterCriticalRegion** and **KeLeaveCriticalRegion** explains that the caller of these functions can be running at IRQL&lt;=APC\_LEVEL. In this situation, this rule enforces a best practice recommendation.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00040003) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00040003)
+
 
 How to test
 -----------

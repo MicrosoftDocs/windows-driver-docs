@@ -22,9 +22,7 @@ Drivers should call [**IoDeleteDevice**](https://docs.microsoft.com/windows-hard
 
 When handling an [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request, the driver should only call [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice) after [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver) have returned.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

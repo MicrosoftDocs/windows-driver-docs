@@ -28,9 +28,7 @@ The **ForwardedAtBadIrql** rule specifies that the driver should call [**IoCallD
 
 -   [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

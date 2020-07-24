@@ -20,9 +20,7 @@ The **IoAllocateIrpSignalEventInCompletion2** rule specifies that [**KeSetEvent*
 
 In this case the completion routine will not be called.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

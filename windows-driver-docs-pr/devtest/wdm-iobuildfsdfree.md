@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IoBuildFsdFree** rule specifies that a driver should use [**IoFreeIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp) only on IRPs it previously allocated with [**IoBuildAsynchronousFsdRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

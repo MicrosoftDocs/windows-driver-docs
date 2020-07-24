@@ -6,13 +6,11 @@ keywords:
 - storage class drivers WDK , about storage class drivers
 - class drivers WDK storage , about storage class drivers
 - HBA WDK storage
-ms.date: 10/21/2019
+ms.date: 12/15/2019
 ms.localizationpriority: medium
 ---
 
 # Introduction to Storage Class Drivers
-
-## <span id="ddk_introduction_to_storage_class_drivers_kg"></span><span id="DDK_INTRODUCTION_TO_STORAGE_CLASS_DRIVERS_KG"></span>
 
 A *storage class driver* uses the well-established SCSI class/port interface to control a mass storage device of its type on any bus for which the system supplies a storage port driver (currently SCSI, IDE, USB and IEEE 1394). The particular bus to which a storage device is connected is transparent to the storage class driver.
 
@@ -26,4 +24,5 @@ A storage class driver must also have a [**DispatchSystemControl**](https://docs
 
 To the PnP manager, a storage class driver is a [Function Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers), that is, one that drives an individual device. A storage class driver can also act as a [Bus Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/bus-drivers), enumerating child devices of its devices. For example, the class driver for a partitioned media device such as a disk returns a list of PDOs representing its partitions. Each such PDO can be addressed as a target device and be serviced by its own class driver.
 
-**Note**   A driver for a SCSI device such as a printer or a scanner should be implemented as described in this section. A driver for such a SCSI device utilizes the same SCSI class/port interface to control its device and has the same responsibilities to handle IRPs, build SRBs, and send them to the underlying port driver as does a driver for a storage device.
+> [!NOTE]
+> A driver for a SCSI device such as a printer or a scanner should be implemented as described in this section. A driver for such a SCSI device utilizes the same SCSI class/port interface to control its device and has the same responsibilities to handle IRPs, build SRBs, and send them to the underlying port driver as does a driver for a storage device.

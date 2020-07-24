@@ -24,9 +24,7 @@ The event callback function can be one of the following:
 -or-
 [*EvtDeviceSelfManagedIoCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_cleanup) in the [**WDF\_PNPPOWER\_EVENT\_CALLBACKS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_pnppower_event_callbacks) structure
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

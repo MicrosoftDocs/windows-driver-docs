@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the routines **TdiRegisterPnPHandlers** and **TdiDeregisterPnPHandlers** are only called at IRQL lower than **DISPATCH\_LEVEL**. However, if **ExFreeToNPagedLookasideList** is called, the rule passes.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **EvtSurpriseRemoveNoSuspendQueue** rule specifies that WDF Drivers shouldn’t drain, stop, or purge the queue from [*EvtDeviceSurpriseRemoval*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal) callback function, instead self-managed I/O callback functions should be used. The *EvtDeviceSurpriseRemoval* callback function isn’t synchronized with the power-down path.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

@@ -20,9 +20,7 @@ The **StorPortSpinLock3** rule verifies the lock acquisition hierarchy that is d
 
 Storport miniport drivers must ensure that they do not attempt to acquire a lock that is already held or acquire locks in an incorrect order. Either of these mistakes will result in system deadlock.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

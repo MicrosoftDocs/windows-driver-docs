@@ -59,8 +59,6 @@ When you build, deploy, and test your driver using Visual Studio 2012 and the WD
 
 ## Driver Verifier in Windows 7 (*Updated: October 22, 2012*)
 
-For information about new features that were added in Windows 7, see the white paper [Driver Verifier in Windows 7]( https://go.microsoft.com/fwlink/p/?linkid=309793).
-
 For Windows 7, Driver Verifier has been enhanced with new tests and features that allow Driver Verifier to expose more classes of typical driver bugs.
 
 * Incorrect References to User Handles from Kernel Drivers
@@ -109,8 +107,6 @@ In this way, Driver Verifier can capture more of these IRQL transition stack tra
 **!analyze** can triage issues that are exposed by the Enhanced I/O Verifier checks (that are part of I/O Verifier in Windows 7). In earlier Windows versions, the Enhanced I/O Verifier error reporting consisted of displaying a description of the driver defect that was detected by Driver Verifier followed by a break into debugger. Running **!analyze** after such a break does not result in meaningful triage for many of these breaks because **!analyze** cannot use the information from the error description text that appears in the debugger. In Windows 7, the meaningful information about these driver defects is saved by Driver Verifier in memory. **!analyze** can find this information and perform a much more meaningful automatic triage for many of these breaks.
 
 ## Driver Verifier in Windows Vista (*Updated: February 9, 2009*)
-
-For information about new features that were added in Windows Vista, see the white paper [Driver Verifier in Windows Vista]( https://go.microsoft.com/fwlink/p/?linkid=309794).
 
 For Windows Vista, Driver Verifier has been enhanced with new tests and features.
 

@@ -2,22 +2,19 @@
 title: 'Hdpi.h Macros'
 description: 'Macros contained in the Hdpi.h header.'
 ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 02/25/2020
 ---
 
 # Hdpi.h Macros
 
-The Hdpi.h header file contains several macros. 
-This topic documents the following macros:
+The [Hdpi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/) header file contains the following macros:
 
-* [**HidP\_GetButtons**](#hidp_getbuttons)
-* [**HidP\_GetButtonsEx**](#hidp_getbuttonsex)
-* [**HidP\_SetButtons**](#hidp_setbuttons)
-* [**HidP\_UnsetButtons**](#hidp_unsetbuttons)
+- [HidP\_GetButtons](#hidp_getbuttons)
+- [HidP\_GetButtonsEx](#hidp_getbuttonsex)
+- [HidP\_SetButtons](#hidp_setbuttons)
+- [HidP\_UnsetButtons](#hidp_unsetbuttons)
 
-
-##  <a name="hidp_getbuttons"></a>HidP\_GetButtons
-
+## HidP\_GetButtons
 
 The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages) routine.
 
@@ -26,8 +23,7 @@ The **HidP\_GetButtons** macro is a mnemonic alias for the [**HidP\_GetUsages**]
         HidP_GetUsages(Rty, UPa, LCo, ULi, ULe, Ppd, Rep, RLe)
 ```
 
-##  <a name="hidp_getbuttonsex"></a>HidP\_GetButtonsEx
-
+## HidP\_GetButtonsEx
 
 The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsagesEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex) routine.
 
@@ -36,9 +32,7 @@ The **HidP\_GetButtonsEx** macro is an mnemonic alias for the [**HidP\_GetUsages
          HidP_GetUsagesEx(Rty, LCo, BLi, ULe, Ppd, Rep, RLe)
 ```
 
-
-##  <a name="hidp_setbuttons"></a>HidP\_SetButtons
-
+## HidP\_SetButtons
 
 The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages) routine.
 
@@ -47,8 +41,7 @@ The **HidP\_SetButtons** macro is a mnemonic alias for the [**HidP\_SetUsages**]
         HidP_SetUsages(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle)
 ```
 
-##  <a name="hidp_unsetbuttons"></a>HidP\_UnsetButtons
-
+## HidP\_UnsetButtons
 
 The **HidP\_UnsetButtons** macro is a mnemonic alias for the [**HidP\_UnsetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages) routine.
 
@@ -57,34 +50,19 @@ The **HidP\_UnsetButtons** macro is a mnemonic alias for the [**HidP\_UnsetUsage
         HidP_UnsetUsages(Rty, Up, Lco, ULi, ULe, Ppd, Rep, Rle)
 ```
 
-Requirements
-------------
+### Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Hidpi.h (include Hidpi.h)</td>
-</tr>
-</tbody>
-</table>
+**Header**: [hidpi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/) (include Hidpi.h)
+
 
 ## See also
 
-[**HidP\_GetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages)
+[hidpi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/)
 
-[**HidP\_GetUsagesEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex)
+[HidP\_GetUsages](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages)
 
-[**HidP\_SetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages)
+[HidP\_GetUsagesEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex)
 
-[**HidP\_UnsetUsages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages)
+[HidP\_SetUsages](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages)
 
-
-
-
-
-
+[HidP\_UnsetUsages](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages)

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The NdisStallExecution\_Delay rule specifies that **NdisStallExecution** must never be called by using a value for *MicrosecondsToStall* that is greater than 50 microseconds.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

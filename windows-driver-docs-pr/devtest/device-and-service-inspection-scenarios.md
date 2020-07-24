@@ -183,7 +183,7 @@ The value for the **wsa:EndpointReference/wsa:Address** is the same as in step 1
 
 Send a Probe that specifies the following:
 
--   Use a matching rule that is defined in the [Web Services Dynamic Discovery (WS-Discovery)](https://go.microsoft.com/fwlink/p/?linkid=81240) specification.
+-   Use a matching rule that is defined in the [Web Services Dynamic Discovery (WS-Discovery)](http://schemas.xmlsoap.org/ws/2005/04/discovery/) specification.
 
 -   No wsd:Types element.
 
@@ -197,7 +197,7 @@ The value for the **wsa:EndpointReference/wsa:Address** is the same as in step 1
 
 Send a Probe that specifies the following:
 
--   Use the [Devices Profile for Web Services](https://go.microsoft.com/fwlink/p/?linkid=163864) matching rule.
+-   Use the [Devices Profile for Web Services](http://schemas.xmlsoap.org/ws/2006/02/devprof/) matching rule.
 
 -   No **wsd:Types** element.
 

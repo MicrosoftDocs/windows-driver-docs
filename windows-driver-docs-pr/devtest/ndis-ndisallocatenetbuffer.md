@@ -20,9 +20,7 @@ The **NdisAllocateNetBuffer** rule specifies that [**NdisAllocateNetBuffer**](ht
 
 The rule uses three different states. The state changes when a [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) is allocated or freed. If a **NET\_BUFFER** is still allocated when the [*MiniportHaltEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) exits, the rule reports the defect.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

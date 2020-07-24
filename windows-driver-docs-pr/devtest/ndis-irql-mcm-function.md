@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **Irql\_MCM\_Function** rule specifies that the NDIS MCM functions for drivers must be called at correct IRQL levels.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

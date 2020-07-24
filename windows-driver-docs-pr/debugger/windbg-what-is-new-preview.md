@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
 description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 04/04/2019
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,29 +10,111 @@ ms.localizationpriority: medium
 
 # WinDbg Preview - What's New
 
+![Small logo on windbg preview](images/windbgx-preview-logo.png)
+
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.0.2007.01003
+
+**Timeline Bookmarks**
+
+Bookmark important Time Travel positions in WinDbg instead of manually copy pasting the position to notepad. Bookmarks make it easier to view at a glance different positions in the trace relative to other events, and to annotate them. 
+
+You can provide a descriptive name for bookmarks.
+
+![New bookmark dialog with example name for first api call in display greeting app](images/windbgx-timeline-bookmark-new.png)
+
+Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
+
+![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
+
+You can right click the bookmark to travel to that position, rename or delete the bookmark.
+
+![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
+
+**Modules Window**
+
+A new windows shows modules and their related information, it is available via the View ribbon.
+It displays:
+
+- The name of the module including the path location
+- The size in bytes of the loaded module
+- The base address that the module is loaded at
+- The file version
+
+![Modules view window showing five modules listed](images/windbgx-view-modules.png)
+
+
+**Thread names/descriptions available in live debugging**
+
+Thread names that are set from SetThreadDescription are now available when doing live user-mode debugging. Thread names are available using the “~” command or the debugger data model.
+
+```dbgconsole
+0:000> ~
+   0  Id: 53a0.5ffc Suspend: 1 Teb: 000000b1`db1ed000 Unfrozen "Hello world!"
+   7  Id: 53a0.9114 Suspend: 1 Teb: 000000b1`db1ef000 Unfrozen
+   8  Id: 53a0.2cc4 Suspend: 1 Teb: 000000b1`db1f1000 Unfrozen
+   9  Id: 53a0.5c40 Suspend: 1 Teb: 000000b1`db1f3000 Unfrozen
+
+0:000> dx @$curthread
+@$curthread                 : ConsoleTestApp!ILT+25(mainCRTStartup) (00007ff7`fac7101e)  [Switch To]
+    Id               : 0x5ffc
+    Name             : Hello world!
+    Stack
+    Registers
+    Environment
+```
+
+**Portable PDB support**
+
+Portable PDB support has been added. The Portable PDB (Program Database) format describes an encoding of debugging information produced by compilers of Common Language Infrastructure (CLI) languages and consumed by debuggers and other tools. For more information, see [Portable PDB v1.0: Format Specification](https://github.com/dotnet/corefx/blob/master/src/System.Reflection.Metadata/specs/PortablePdb-Metadata.md).
+
+
+**Other changes and bug fixes**
+
+- WinDbg now supports AMD64 and Linux kernel dump debugging.
+- Time travel recording enhancements and other fixes.
+
+## 1.0.1912.11001
+
+**TTD Timelines** - We've added a new window that displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. Timelines will automatically open and display exceptions (if present) and breakpoints. For more information, see [WinDbg Preview - Timeline](windbg-timeline-preview.md).
+
+**Switched to default window chrome** - The custom window chrome we were using, while prettier, was causing some scaling and resizing issues for a notable number of people, so we’ve opted to remove it for the time being.
+
+**File menu improved keyboard navigation** - The file menu is now much easier to navigate with just a keyboard.
+
+**Other changes and bug fixes**
+
+* The stack and locals window will now be disabled when your target is running and won’t show “Unspecified error” when there is no target.
+* Added a “Services” column to the attach dialog to easily find which services are running.
+* Fixed a bug that caused architecture detection to not work when launching applications with arguments.
+* The disassembly window has improved disassembly when private symbols are loaded.
+* jsprovider.dll is now loaded automatically, so we removed the “Load JSProvider” button from the scripting ribbon.
+
 ## 1.0.1908.30002
-**Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
 
-**Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications, you can find directions for how to do this in the [Open Enclave documentation](https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/GettingStarted.Windows.md).
+**Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
 
-**VS Code Extension** - To make it easier to develop for Open Enclave, we’ve released a basic VS Code extension to enable a quicker inner loop. Variables, Watch, and Call Stack windows all work as well as breakpoints and source windows, any deeper debugging will need to use the console window. 
+**Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications, you can find directions for how to do this in the [Open Enclave documentation](https://github.com/openenclave/openenclave/blob/master/docs/GettingStartedDocs/Windows_windbg.md).
+
+**VS Code Extension** - To make it easier to develop for Open Enclave, we’ve released a basic VS Code extension to enable a quicker inner loop. Variables, Watch, and Call Stack windows all work as well as breakpoints and source windows, any deeper debugging will need to use the console window.
  
 You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode) and report any issues to our  [WinDbg Feedback GitHub](https://aka.ms/dexex). Note that while the extension may work for other scenarios, we’re only intending on fixing issues related to OE scenarios at this point.
 
-**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps. 
+**ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps.
 
 **TTD File format change** - We’ve made a major update to the file format for TTD traces that breaks forward compatibility. Previous versions of WinDbg Preview will not be able to open traces recorded with this (and future) versions of WinDbg Preview, but this (and future) versions will be able to open both new and old traces.
 
 **Other changes**
+
 * TTD will now use the 64-bit engine for indexing and the appropriate debugger engine bitness for replays to minimize potential memory issues when indexing and SOS issues when replaying.
 * Running 'dx' without any parameters will now show the root namespace for easier browsability.
 * You can now modify the default symbol and source cache location via the settings menu.
-* Improved support for recording AVX-512 (recording of AVX-512 will cause a larger than normal slow-down)
-* We've enabled [offline licensing](https://docs.microsoft.com/en-us/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing)
+* Improved support for recording AVX-512 (recording of AVX-512 will cause a larger than normal slow-down).
+* We've enabled [offline licensing](https://docs.microsoft.com/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing).
 
 ## 1.0.1905.12001
+
 **Improvements to SymSetDiaSession error mitigation** - Our fix last month to mitigate the error caused by applications injecting DbgHelp into our process was still not working in some scenarios. We've made improvements to it and will continue to monitor feedback on this error.
 
 **Accent color customization** - A lot of scenarios need several instances of WinDbg open, and moving back and forth between them can be confusing and take some time to figure out which one is the “right” one. We’ve added the ability to change the blue accent color to help visually distinguish sessions and make swapping between them easier.
@@ -58,6 +140,7 @@ Just click the **View** ribbon and select an option for **Accent color** in the 
 **Source loading improvements** - We've changed how loading source files works. Previously when opening a source file, engine operations like running additional commands weren't possible or were unpredictable. We've changed where the loading occurs to enable better parallelism and more reliable cancellation of source opening operations.
 
 Other changes and bug fixes:
+
 * Added "Go to disassembly" to the context menu of the source window.
 * Added a checkbox to "Follow current instruction" in disassembly window.
 * Fixed a bug that caused the command window to perform slowly when outputting lots of text.
@@ -79,7 +162,7 @@ Other changes and bug fixes:
 - Re-arranged WinDbgNext's window title to have more important information at the start when kernel debugging.
 - The alternating background contrast in the command window should be slightly more noticeable.
 
-## 1.0.1810.2001 
+## 1.0.1810.2001
 
 This version includes these updates.
 
@@ -99,7 +182,7 @@ Other changes and bug fixes:
 -  Added a ribbon button to save the command window logs to a file.
 -  Added . SelectMany(<projection>) to the default set of LINQ methods.
 
-## 1.0.1807.11002 
+## 1.0.1807.11002
 
 This version includes these updates.
 
@@ -127,7 +210,7 @@ This version includes these updates.
 
 **Faster source window** - The source window has been updated to be faster and more resource efficient.
 
-Minor changes and bug fixes
+Minor changes and bug fixes:
 
 - Fixed issues around symbol caching
 - Fixed some cases where toggle initial break wasn’t usable when the target isn't broken in
@@ -257,8 +340,8 @@ This version adds Time Travel Tracing. Time Travel Debugging, allows you to reco
 
 This version was the first release of WinDbg Preview. For general information on the features available in WinDbg Preview, [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
 
----
- 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Preview – Installation](windbg-install-preview.md)
+
+[WinDbg Preview – Command line startup options](windbg-command-line-preview.md)

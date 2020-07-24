@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IoBuildSynchronousFsdRequestWaitTimeout** rule reports a defect if it detects that this driver will wait indefinitely until the lower driver returns, as the IRP’s event is required to be signaled in the completion routine.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

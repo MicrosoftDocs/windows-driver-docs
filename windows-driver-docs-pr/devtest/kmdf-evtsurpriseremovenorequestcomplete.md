@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **EvtSurpriseRemoveNoRequestComplete** rule specifies that WDF drivers shouldn’t complete requests from [*EvtDeviceSurpriseRemoval*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal) callback, instead self-managed I/O callback functions should be used. *EvtDeviceSurpriseRemoval* callback isn’t synchronized with the power-down path.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

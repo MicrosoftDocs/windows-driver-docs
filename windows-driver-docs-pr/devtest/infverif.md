@@ -57,7 +57,7 @@ The InfVerif tool reports the following types of errors/warnings:
 ## <span id="related_topics"></span>Related topics
 
 
-[Installing a Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers)
+[Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 
 [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-configurable-inf-file)
 

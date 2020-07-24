@@ -7,8 +7,10 @@
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
-  - name: "What's new for Windows 10 display drivers (WDDM 2.0 and later)"
-    href: what-s-new-for-windows-threshold-display-drivers--wddm-2-0-.md
+  - name: "What's new for Windows 10 display and graphics drivers"
+    href: what-s-new-for-windows-10-display-and-graphics-drivers.md
+  - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
+    href: what-s-new-for-prior-wddm-2-x-versions.md
   - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
     href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
   - name: "What's new for Windows 8 display drivers (WDDM 1.2)"
@@ -659,7 +661,9 @@
     - name: "HMDs and Specialized Monitors"
       href: specialized-monitors.md
     - name: "EDID Extension for HMDs and Specialized Monitors"
-      href: "specialized-monitors-edid-extension.md"
+      href: specialized-monitors-edid-extension.md
+    - name: "Building a Custom Compositor App for HMDs and Specialized Monitors"
+      href: specialized-monitors-compositor.md
   - name: "Multiple Monitors and Video Present Networks"
 # Auto-expanded node
     items: 
@@ -688,6 +692,8 @@
       href: indirect-display-driver-model-overview.md
     - name: "IddCx Objects"
       href: iddcx-objects.md
+    - name: "Debugging indirect display drivers"
+      href: indirect-display-debugging.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
     items: 
@@ -705,11 +711,11 @@
       href: manipulating-3-d-virtual-textures-directly-from-hardware.md
     - name: "Registering Hardware Information"
       href: registering-hardware-information.md
-  - name: "Debugging Tips for the Windows Display Driver Model (WDDM)"
+  - name: "Debugging the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
-    items: 
-    - name: "Debugging Tips for the Windows Display Driver Model (WDDM)"
-      href: debugging-tips-for-the-windows-vista-display-driver-model.md
+    items:
+    - name: "Debugging tips for WDDM drivers"
+      href: debugging-tips-for-wddm-drivers.md
     - name: "Installing Checked Binaries"
       href: installing-checked-binaries.md
     - name: "Changing the Behavior of the GPU Scheduler for Debugging"
@@ -1096,7 +1102,7 @@
       - name: "D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT"
         href: d3dkmt-multiplane-overlay-stereo-format.md
       - name: "D3DKMT_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT"
-        href: d3dkmt-multiplane-overlay-video-frame-format.md
+        href: /windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_video_frame_format
       - name: "D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS"
         href: d3dkmt-multiplane-overlay-ycbcr-flags.md
       - name: "D3DKMT_OUTDUPL_POINTER_SHAPE_INFO"
@@ -1139,7 +1145,7 @@
       - name: "D3dumddi.h - Reserved"
         href: d3dumddi-h---reserved.md
       - name: "D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO"
-        href: d3dddi-check-multiplane-overlay-support-plane-info.md
+        href: /windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddi_check_multiplane_overlay_support_plane_info
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER"
         href: d3dddi-multiplane-overlay-filter.md
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE"
@@ -1252,9 +1258,7 @@
       href: synchronization-issues-for-display-drivers.md
     - name: "Debugging Display Drivers"
 # Auto-expanded node
-      items: 
-      - name: "Debugging Display Drivers"
-        href: debugging-display-drivers.md
+      items:
       - name: "Disabling EA Recovery"
         href: disabling-ea-recovery.md
       - name: "Disabling the Watchdog Timer While Testing Display Drivers"

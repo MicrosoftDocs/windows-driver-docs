@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 Function, filter, and bus drivers can handle this request.
 
+## Value
+
+0x14
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

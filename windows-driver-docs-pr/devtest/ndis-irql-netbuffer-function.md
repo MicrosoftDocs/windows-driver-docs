@@ -55,9 +55,7 @@ This rule verifies the following NDIS functions:
 **NdisRetreatNetBufferDataStart**
 **NdisRetreatNetBufferListDataStart**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

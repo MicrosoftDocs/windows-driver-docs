@@ -32,9 +32,7 @@ This rule verifies the following NDIS network interface functions:
 **NdisIfRegisterInterface**
 **NdisIfRegisterProvider**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

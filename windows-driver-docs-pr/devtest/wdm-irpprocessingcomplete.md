@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IrpProcessingComplete** rule specifies that if a dispatch routine returns STATUS\_SUCCESS, the IRP must have been completed by either the driver itself or by a lower-level driver.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

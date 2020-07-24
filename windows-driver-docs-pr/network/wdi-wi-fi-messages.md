@@ -35,11 +35,12 @@ Statically-sized TLV lists contain several statically sized members. They are an
 
 In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-unicast-algorithm-list) is defined as a list of WDI\_ALGO\_PAIRS.
 
-|        |                                    |
-|--------|------------------------------------|
-| Type   | WDI\_TLV\_UNICAST\_ALGORITHM\_LIST |
-| Length | N \* sizeof(WDI\_ALGO\_PAIRS)      |
-| Value  | WDI\_ALGO\_PAIRS\[N\]              |
+**Type**: WDI\_TLV\_UNICAST\_ALGORITHM\_LIST
+
+**Length**: N \* sizeof(WDI\_ALGO\_PAIRS)
+
+**Value**: WDI\_ALGO\_PAIRS\[N\]
+
 
  
 

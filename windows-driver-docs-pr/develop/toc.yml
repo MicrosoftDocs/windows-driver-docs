@@ -1,25 +1,23 @@
 - name: "Developing Drivers"
   href: index.md
-- name: "Universal Drivers"
+- name: "Windows Drivers"
   items:
-  - name: "Getting Started with Universal Drivers"
-    href: getting-started-with-universal-drivers.md
+  - name: "Getting Started with Windows Drivers"
+    href: getting-started-with-windows-drivers.md
+  - name: "DCH Design Principles and Best Practices"
+    href: dch-principles-best-practices.md
   - name: "Driver Package Isolation"
     href: driver-isolation.md
-  - name: "Building a Universal Windows driver"
-    href: building-a-universal-driver.md
-  - name: "Validating Universal Drivers"
-    href: validating-universal-drivers.md
-  - name: "Building for OneCore"
-    href: building-for-onecore.md
-  - name: "Universal Driver Scenarios"
-    href: universal-driver-scenarios.md
-  - name: "Debugging a Universal driver"
-    href: debugging-a-universal-driver.md
-  - name: "Target platform on driver reference pages"
-    href: windows-10-editions-for-universal-drivers.md
-  - name: "Driver convergence model for Windows 10"
-    href: driver-model-convergence.md
+  - name: "API Layering"
+    href: api-layering.md
+  - name: "Building a Windows driver"
+    href: building-a-windows-driver.md
+  - name: "Validating Windows Drivers"
+    href: validating-windows-drivers.md
+  - name: "DCH-Compliant Driver Package Example"
+    href: dch-example.md
+  - name: "Debugging a Windows Driver"
+    href: debugging-a-windows-driver.md
 - name: "Building Drivers"
   items: 
   - name: "Creating a New Device Function Driver"
@@ -36,6 +34,8 @@
     href: creating-a-driver-from-existing-source-files.md
   - name: "Building a Driver with the WDK"
     href: building-a-driver.md
+  - name: "Building for OneCore"
+    href: building-for-onecore.md
   - name: "Building Drivers for Different Versions of Windows"
     href: building-drivers-for-different-versions-of-windows.md
   - name: "Building ARM64 Drivers with the WDK"
@@ -60,6 +60,10 @@
     href: stampinf-properties-for-driver-projects.md
   - name: "Converting WDK 8.1 Projects to WDK 10"
     href: converting-wdk-8-1-projects-to-wdk-10.md
+  - name: "Driver convergence model for Windows 10"
+    href: driver-model-convergence.md
+  - name: "Target platform on driver reference pages"
+    href: target-platforms.md
   - name: "Analyzing a Driver Using Code Analysis and Verification Tools"
     href: analyzing-driver-quality-by-using-code-analysis-tools.md
   - name: "Preparing a Computer for Manual Driver Deployment"
@@ -78,8 +82,6 @@
   items: 
   - name: "Signing a Driver"
     href: signing-a-driver.md
-  - name: "Attestation Signing a Kernel Driver for Public Release"
-    href: attestation-signing-a-kernel-driver-for-public-release.md
   - name: "Signing a Driver During Development and Testing"
     href: signing-a-driver-during-development-and-testing.md
   - name: "Signing a Driver for Public Release"
@@ -124,8 +126,6 @@
     href: read-the-driver-test-results-log.md
   - name: "How to test a driver at runtime from a Command Prompt"
     href: how-to-test-a-driver-at-runtime-from-a-command-prompt.md
-  - name: "Troubleshooting the Device Fundamentals tests using the WDK"
-    href: troubleshooting-the-device-fundamental-tests.md
   - name: "How to write a driver test using a Driver Test template"
     href: how-to-write-a-driver-test-.md
   - name: "How to add test metadata"

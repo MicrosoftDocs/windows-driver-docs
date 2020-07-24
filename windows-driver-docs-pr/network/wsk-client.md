@@ -27,10 +27,10 @@ For more information, see [Registering a Winsock Kernel Application](registering
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Available in Windows Vista and later versions of the Windows operating systems. |
-| Header | Wsk.h (include Wsk.h) |
+**Version**: Available in Windows Vista and later versions of the Windows operating systems.
+
+**Header**: Wsk.h (include Wsk.h)
+
 
 ## See also
 

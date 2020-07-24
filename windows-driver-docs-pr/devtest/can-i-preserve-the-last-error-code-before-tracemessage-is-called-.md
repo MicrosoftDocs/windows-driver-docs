@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 # Can I preserve the last-error code before TraceMessage is called?
 
 
-By default, [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) is called by using the WPP\_TRACE macro. In versions of Windows earlier than Windows Vista, the [last-error code](https://go.microsoft.com/fwlink/p/?linkid=179346) was overwritten by **TraceMessage**.
+By default, [TraceMessage](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-tracemessage) is called by using the WPP\_TRACE macro. In versions of Windows earlier than Windows Vista, the [last-error code](https://docs.microsoft.com/windows/win32/debug/last-error-code) was overwritten by **TraceMessage**.
 
 Starting with Windows Vista, you can preserve the last-error code by defining a custom WPP\_TRACE macro. You must define your version of this macro before you include the [trace message header (.tmh) file](trace-message-header-file.md) in the source file of your [trace provider](trace-provider.md), such as a kernel-mode driver or user-mode application..
 
 The following examples show how you can preserve the last-error code before you call **TraceMessage**:
 
--   Make a wrapper to **TraceMessage** that is called from the WPP\_TRACE macro. You can then call [TraceMessageVa](https://go.microsoft.com/fwlink/p/?linkid=179352), from the wrapper function.
+-   Make a wrapper to **TraceMessage** that is called from the WPP\_TRACE macro. You can then call [TraceMessageVa](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-tracemessageva), from the wrapper function.
 
     The following example shows how to write a wrapper to **TraceMessage**:
 

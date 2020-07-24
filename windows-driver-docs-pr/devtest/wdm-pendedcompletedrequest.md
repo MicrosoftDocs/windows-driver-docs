@@ -20,9 +20,7 @@ The **PendedCompletedRequest** rule specifies that a driver's dispatch routine d
 
 This rule is not applied if the driver begins executing any dispatch routines.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

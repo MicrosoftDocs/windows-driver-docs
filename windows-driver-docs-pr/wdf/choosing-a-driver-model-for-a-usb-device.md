@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # Choosing a Driver Model for a USB Device
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 

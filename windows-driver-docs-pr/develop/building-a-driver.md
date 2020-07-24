@@ -6,15 +6,10 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Building a Driver with Visual Studio and the WDK
+# Using Visual Studio or MSBuild to build a driver
 
-This topic describes how you can build a driver with the Windows Driver Kit (WDK). WDK 10 is fully integrated with Microsoft Visual Studio. You can build a driver using the Visual Studio development environment, or you can build a driver directly from the command line by using the Microsoft Build Engine ([MSBuild](https://go.microsoft.com/fwlink/p/?linkid=262804)).
 
-You can use any edition of Microsoft Visual Studio 2015, including Microsoft Visual Studio Community 2015, to build drivers for:
-
--   Windows 10
--   Windows 8.1
--   Windows 7
+This topic describes how you can build a driver using the Visual Studio development environment, or from the command line by using the Microsoft Build Engine ([MSBuild](https://go.microsoft.com/fwlink/p/?linkid=262804)).
 
 **Important**  Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Utility (Build.exe). The WDK now uses the same compiler and build tools that you use to build Visual Studio projects. Driver projects that were built with previous versions of the WDK must be converted to work in the Visual Studio environment. You can run a conversion utility from the command line, or you can convert an existing driver by creating new Visual Studio project from existing sources. For more info, see [Creating a Driver From Existing Source Files](creating-a-driver-from-existing-source-files.md) and [WDK and the Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment).
 
@@ -25,13 +20,13 @@ You can use any edition of Microsoft Visual Studio 2015, including Microsoft Vi
 
 You build a driver the same way you build any project or solution in Visual Studio. When you create a new driver project using a Windows driver template, the template defines a default (active) project configuration and a default (active) solution build configuration.
 
-**Note**  You can convert projects and solutions that you created with WDK 8 or Windows Driver Kit (WDK) 8.1 to work with Windows Driver Kit (WDK) 10 and Visual Studio 2015. Before you open the projects or solutions, run the [ProjectUpgradeTool](https://docs.microsoft.com/windows-hardware/drivers/devtest/projectupgradetool). The ProjectUpgradeTool converts the projects and solutions so that they can be built using WDK 10.
+**Note**  You can convert projects and solutions that you created with WDK 8 or Windows Driver Kit (WDK) 8.1 to work with Windows Driver Kit (WDK) 10 and Visual Studio 2019. Before you open the projects or solutions, run the [ProjectUpgradeTool](https://docs.microsoft.com/windows-hardware/drivers/devtest/projectupgradetool). The ProjectUpgradeTool converts the projects and solutions so that they can be built using WDK 10.
 
  
 
 For information about managing and editing build configurations, see [Building in Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=227872).
 
-The default Solution build configuration is **Debug** and **Win32**. In versions of the WDK prior to Windows 8, this build configuration would correspond to building a driver using an **x86 Checked Build Environment**.
+The default Solution build configuration is **Debug** and **Win32**. 
 
 **To select a configuration and build a driver**
 
@@ -50,7 +45,7 @@ You can build a driver from the command line using the **Visual Studio Command P
 
 **To build a driver using the Visual Studio Command Prompt window**
 
-1.  Open a **Developer Command Prompt for VS2015** window.
+1.  Open a **Developer Command Prompt for VS2019** window.
 
     From this window you can use MSBuild.exe to build any Visual Studio project by specifying the project (.VcxProj) or solutions (.Sln) file.
 
@@ -68,7 +63,7 @@ You can build a driver from the command line using the **Visual Studio Command P
     msbuild /t:clean /t:build ProjectFile /p:Configuration=<Debug|Release> /p:Platform=architecture /p:TargetPlatformVersion=a.b.c.d /p:TargetVersion=OS    
     ```
 
-    For example, the following command builds a Universal Windows driver for the "Debug" configuration, "Win32" platform, and for Windows 10.
+    For example, the following command builds a driver for the "Debug" configuration, "Win32" platform, and for Windows 10.
 
     ```cpp
     msbuild /t:clean /t:build .\MyDriver.vcxproj /p:Configuration="Debug" /p:Platform=Win32 /p:TargetVersion=”Windows10” /p:TargetPlatformVersion=”10.0.10010.0”

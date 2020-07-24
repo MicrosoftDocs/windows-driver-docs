@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Specifying a Callback Synchronization Mode
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The driver can specify how its callback functions are called by the framework. The driver specifies a synchronization (or locking) mode for a device before it calls the [**IWDFDriver::CreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice) method to create a [device object](framework-device-object.md) for the device. To specify synchronization mode, the driver should call the [**IWDFDeviceInitialize::SetLockingConstraint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setlockingconstraint) method. The driver receives a pointer to the [IWDFDeviceInitialize](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize) interface when its [**IDriverEntry::OnDeviceAdd**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method is called to add the device to the system.
 

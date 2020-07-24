@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_SET_INFORMATION
+title: IRP_MJ_SET_INFORMATION (IFS)
 description: IRP\_MJ\_SET\_INFORMATION
 ms.assetid: cc1b539c-8d39-4f4d-93b1-ce9fcdb8c555
 keywords: ["IRP_MJ_SET_INFORMATION Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_SET\_INFORMATION
+# IRP\_MJ\_SET\_INFORMATION (IFS)
 
 
 ## When Sent
@@ -86,7 +86,7 @@ Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardwar
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_SET\_INFORMATION and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_SET\_INFORMATION and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*
 Specifies IRP\_MJ\_SET\_INFORMATION.

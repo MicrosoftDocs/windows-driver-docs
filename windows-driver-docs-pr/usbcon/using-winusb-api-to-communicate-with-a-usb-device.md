@@ -34,7 +34,7 @@ The following items apply to this walkthrough:
 
 -   This information applies to Windows 8.1, Windows 8, Windows 7, Windows Server 2008, Windows Vista versions of Windows.
 -   You have installed Winusb.sys as the device's function driver. For more information about this process, see [WinUSB (Winusb.sys) Installation](winusb-installation.md).
--   The examples in this topic are based on the [OSR USB FX2 Learning Kit device](http://www.osronline.com/). You can use these examples to extend the procedures to other USB devices.
+-   The examples in this topic are based on the [OSR USB FX2 Learning Kit device](https://www.osronline.com/). You can use these examples to extend the procedures to other USB devices.
 
 ## <a href="" id="setup"></a>Step 1: Create a skeleton app based on the WinUSB template
 

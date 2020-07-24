@@ -26,9 +26,7 @@ This rule verifies the following NDIS functions:
 **NdisIMGetBindingContext**
 **NdisIMInitializeDeviceInstanceEx**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

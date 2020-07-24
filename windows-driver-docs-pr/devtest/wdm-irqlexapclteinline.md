@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IrqlExApcLteInline** rule specifies that DDIs are only called at proper IRQL levels
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

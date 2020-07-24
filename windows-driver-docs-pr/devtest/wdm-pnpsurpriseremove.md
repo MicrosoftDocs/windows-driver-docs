@@ -26,9 +26,7 @@ The PnP manager sends the [**IRP\_MN\_SURPRISE\_REMOVAL**](https://docs.microsof
 
 For more information about how a driver should respond to [**IRP\_MN\_SURPRISE\_REMOVAL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal) request, see [**Handling an IRP\_MN\_SURPRISE\_REMOVAL Request**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-surprise-removal-request)
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

@@ -225,7 +225,7 @@ A pointer to an [**MDL**](https://docs.microsoft.com/windows-hardware/drivers/dd
 
 **ULONG**
 
-## **MmGetMdlByteCount** returns the length, in bytes, of the buffer described by _Mdl_.
+**MmGetMdlByteCount** returns the length, in bytes, of the buffer described by _Mdl_.
 
 Callers of **MmGetMdlByteCount** can be running at any IRQL. Usually, callers are running at IRQL <= DISPATCH_LEVEL.
 
@@ -250,7 +250,7 @@ Pointer to an MDL.
 
 **ULONG**
 
-## **MmGetMdlByteOffset** returns the offset in bytes.
+**MmGetMdlByteOffset** returns the offset in bytes.
 
 Callers of **MmGetMdlByteOffset** can be running at any IRQL. Usually, callers are running at IRQL <= DISPATCH_LEVEL.
 
@@ -306,7 +306,7 @@ Pointer to an MDL that describes the buffer for which to return the initial virt
 
 **PVOID**
 
-## **MmGetMdlVirtualAddress** returns the starting virtual address of the MDL.
+**MmGetMdlVirtualAddress** returns the starting virtual address of the MDL.
 
 **MmGetMdlVirtualAddress** returns a virtual address that is not necessarily valid in the current thread context. Lower-level drivers should not attempt to use the returned virtual address to access memory, particularly user memory space.
 
@@ -333,7 +333,7 @@ Pointer to a buffer whose corresponding base virtual address is to be mapped.
 
 _Priority [in]_
 
-## **Mm_PAGE_PRIORITY**
+**MM_PAGE_PRIORITY**
 
 Specifies an **MM_PAGE_PRIORITY** value that indicates the importance of success under low available PTE conditions. Specify a priority value of **LowPagePriority**, **NormalPagePriority**, or **HighPagePriority**. Starting with Windows 8, the specified priority value can be bitwise-ORed with the **MdlMappingNoWrite** or **MdlMappingNoExecute** flags.
 
@@ -443,7 +443,7 @@ A pointer to a partial MDL that is to be prepared for reuse.
 
 This macro is used by drivers that repeatedly use the same allocated MDL for the _TargetMdl_ parameter in calls to the [**IoBuildPartialMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) routine. If, in a call to **MmPrepareMdlForReuse**, the specified partial MDL has an associated mapping to system address space, **MmPrepareMdlForReuse** releases the mapping so that the MDL can be reused.
 
-**MmPrepareMdlForReuse** accepts only partial MDLs that are built by **IoBuildPartialMdl**. If **MmPrepareMdlForReuse** receives an MDL that is mapped to the system address space but was not built by **IoBuildPartialMdl**, **MmPrepareMdlForReuse** does not release the mapping, and, in checked builds, causes an assertion to fail.
+**MmPrepareMdlForReuse** accepts only partial MDLs that are built by **IoBuildPartialMdl**. If **MmPrepareMdlForReuse** receives an MDL that is mapped to the system address space but was not built by **IoBuildPartialMdl**, **MmPrepareMdlForReuse** does not release the mapping.
 
 For more information about partial MDLs, see [Using MDLs](using-mdls.md).
 
@@ -468,7 +468,7 @@ Pointer to the virtual address.
 
 **PVOID**
 
-## **PAGE_ALIGN** returns a pointer to the page-aligned virtual address.
+**PAGE_ALIGN** returns a pointer to the page-aligned virtual address.
 
 Available starting with Windows 2000.
 
@@ -547,6 +547,8 @@ Defined in: Ntddk.h
 Returns a pointer to the process of the current thread.
 
 **Return value**
+
+**PEPROCESS**
 
 A pointer to an opaque process object.
 

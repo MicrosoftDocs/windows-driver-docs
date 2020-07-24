@@ -12,7 +12,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.date: 10/30/2017
 ms.localizationpriority: medium
 ---
 

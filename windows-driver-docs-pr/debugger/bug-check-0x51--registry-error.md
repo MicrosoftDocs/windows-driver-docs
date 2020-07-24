@@ -61,7 +61,7 @@ The REGISTRY\_ERROR bug check has a value of 0x00000051. This indicates that a s
 Cause
 -----
 
-Something has gone wrong with the registry. If a kernel debugger is available, get a stack trace: the [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be very helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-) commands to view the call stack.
+Something has gone wrong with the registry. If a kernel debugger is available, get a stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause, then enter one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands to view the call stack.
 
 This error may indicate that the registry encountered an I/O error while trying to read one of its files. This can be caused by hardware problems or file system corruption.
 

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **PagedCodeAtPowerTrans** rule specifies that a driver should not call [**PAGED\_CODE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) while responding to a system IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER) and to a device IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

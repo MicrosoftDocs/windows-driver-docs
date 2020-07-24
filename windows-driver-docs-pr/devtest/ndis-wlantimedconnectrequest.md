@@ -20,13 +20,10 @@ The **WlanTimedConnectRequest** rule verifies that an OID\_DOT11\_CONNECT\_REQUE
 
 Furthermore, an NDIS\_STATUS\_DOT11\_CONNECTION\_START is indicated only if the OID\_DOT11\_CONNECT\_REQUEST is completed with NDIS\_STATUS\_SUCCESS. This rule applies only to the Extensible Station port (Port 0).
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00094009) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00094009)
+
 
 How to test
 -----------

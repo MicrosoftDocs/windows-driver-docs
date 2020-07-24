@@ -23,7 +23,7 @@ The easiest way to debug CSRSS is to use NTSD and [control it from the kernel de
 
 ### <span id="enabling_csrss_debugging"></span><span id="ENABLING_CSRSS_DEBUGGING"></span>Enabling CSRSS Debugging
 
-CSRSS debugging must be enabled before you can proceed. If the target computer is running a *checked build* of Windows, CSRSS debugging is always enabled. If the target computer is running a *free build* of Windows, you will have to enable CSRSS debugging through the Global Flags Utility (GFlags).
+CSRSS debugging must be enabled before you can proceed. If the target computer is running a *free build* of Windows, you will have to enable CSRSS debugging through the Global Flags Utility (GFlags).
 
 To do this, start the GFlags utility, select the **System Registry** radio button, and select **Enable debugging of Win32 subsystem**.
 

@@ -21,21 +21,10 @@ The MANUALLY\_INITIATED\_CRASH bug check has a value of 0x000000E2. This indicat
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 ## MANUALLY\_INITIATED\_CRASH Parameters
-
 
 None
 
-Remarks
--------
+## Remarks
 
-For more information about manually-initiated crash dumps, see [Forcing a System Crash.](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash) .
-
- 
-
- 
-
-
-
-
+For more information about manually-initiated crash dumps, see [Forcing a System Crash.](forcing-a-system-crash.md).

@@ -16,10 +16,8 @@ This notification uses the [NDIS_WWAN_DEVICE_RESET_STATUS](https://docs.microsof
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ndis.h |
+**Version**: Windows 10, version 1709
+**Header**: Ndis.h
 
 ## See also
 

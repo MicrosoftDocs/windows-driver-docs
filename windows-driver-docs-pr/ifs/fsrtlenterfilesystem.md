@@ -57,11 +57,12 @@ As an alternative to **FsRtlEnterFileSystem**, minifilter drivers can use the [*
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Target platform | Desktop |
-| Header | Ntifs.h (include Ntifs.h) |
-| IRQL | <= APC_LEVEL |
+**Target platform**: Desktop
+
+**Header**: Ntifs.h (include Ntifs.h)
+
+**IRQL**: <= APC_LEVEL
+
 
 ## See also
 

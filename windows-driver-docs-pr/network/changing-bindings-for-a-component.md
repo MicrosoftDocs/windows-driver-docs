@@ -47,7 +47,7 @@ HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
    hr = penumncbp->Skip(celt); // skip one element
             hr = penumncbp->Next(celt, &pncbp2, NULL);
         } while (SUCCEEDED(hr));
-        if (SUCCEEDED(hr) {
+        if (SUCCEEDED(hr)) {
             // Retrieve enumerator for interfaces of the binding path.
             hr = pncbp2->EnumBindingInterfaces(&penumncbi);
             // Retrieve a binding interface for the binding path.

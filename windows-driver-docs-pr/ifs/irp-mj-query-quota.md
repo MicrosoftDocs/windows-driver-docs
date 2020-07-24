@@ -64,7 +64,7 @@ Pointer to a caller-supplied FILE\_QUOTA\_INFORMATION-structured output buffer t
 
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp->FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_QUERY\_QUOTA and should not be used.
+The *IrpSp->FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_QUERY\_QUOTA and should not be used.
 
 ### *IrpSp->Flags*
 

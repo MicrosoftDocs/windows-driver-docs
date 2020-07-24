@@ -18,13 +18,10 @@ ms.localizationpriority: medium
 
 The PcAddAdapterDevice rule specifies that a PortCls miniport driver correctly uses the **PcAddAdapterDevice** function, specifically that the *DeviceExtensionSize* should be either zero (0) or no less than PORT\_CLASS\_DEVICE\_EXTENSION\_SIZE.
 
-|              |       |
-|--------------|-------|
-| Driver model | Audio |
+**Driver model: Audio**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00071007) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00071007)
+
 
 How to test
 -----------

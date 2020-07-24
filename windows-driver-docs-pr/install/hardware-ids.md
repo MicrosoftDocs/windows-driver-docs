@@ -16,7 +16,7 @@ A hardware ID is a vendor-defined identification string that Windows uses to mat
 
 A hardware ID has one of the following generic formats:
 
-`<enumerator>\\<enumerator-specific-device-ID>`
+`<enumerator>\<enumerator-specific-device-ID>`
 
 This is the most common format for individual PnP devices reported to the Plug and Play (PnP) manager by a single enumerator. New enumerators should use this format or the following format. For more information about enumerator-specific device IDs, see [Device Identifier Formats](device-identifier-formats.md).
 
@@ -44,9 +44,9 @@ To obtain the list of hardware IDs for a device, call [**IoGetDeviceProperty**](
 
 In the following, the first example is a [generic identifier](generic-identifiers.md) for a PnP device, and the second example is an [identifier for a PCI device](identifiers-for-pci-devices.md):
 
-root\\\*PNP0F08
+`root\*PNP0F08`
 
-PCI\\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02
+`PCI\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02`
 
 
 

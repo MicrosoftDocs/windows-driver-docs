@@ -22,8 +22,6 @@ The OID_CO_AF_CLOSE OID is sent by a call manager that must unbind itself from a
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

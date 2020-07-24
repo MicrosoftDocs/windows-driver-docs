@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **PendedCompletedRequest3** rule specifies that a pending IRP should not be completed with a call to [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

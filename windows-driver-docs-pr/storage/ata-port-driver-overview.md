@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # ATA Port Driver Overview
 
->[!NOTE]
+> [!NOTE]
 > The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](storport-driver-overview.md) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 In addition to the [SCSI Port Driver](scsi-port-driver-overview.md) and the [Storport Driver](storport-driver-overview.md), Windows Vista and later versions of the Windows operating system provide the ATA port driver (*Ataport.sys*), a storage port driver that is especially suitable for use with IDE controllers.

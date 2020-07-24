@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_QUERY_INFORMATION
+title: IRP_MJ_QUERY_INFORMATION (IFS)
 description: IRP\_MJ\_QUERY\_INFORMATION
 ms.assetid: d25bb277-e14c-4cd8-862a-46b4687bf539
 keywords: ["IRP_MJ_QUERY_INFORMATION Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_QUERY\_INFORMATION
+# IRP\_MJ\_QUERY\_INFORMATION (IFS)
 
 
 ## When Sent
@@ -103,7 +103,7 @@ Optional pointer to a caller-supplied output buffer into which the contents of *
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_QUERY\_INFORMATION and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_QUERY\_INFORMATION and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*
 Specifies IRP\_MJ\_QUERY\_INFORMATION.

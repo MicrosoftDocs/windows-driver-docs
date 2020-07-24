@@ -21,10 +21,15 @@ For example, the PCMCIA bus driver exports an interface of type GUID\_PCMCIA\_IN
 
 This section describes the query-interface IRP as a general mechanism. Drivers that expose an interface should provide additional information about their specific interface.
 
+## Value
+
+0x08
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

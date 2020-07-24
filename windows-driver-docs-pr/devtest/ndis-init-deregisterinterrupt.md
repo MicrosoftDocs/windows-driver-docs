@@ -20,9 +20,7 @@ The **Init\_DeRegisterInterrupt** rule specifies that if [**NdisMRegisterInterru
 
 Register of interrupts, which usually happen during initialization, should be undone (deregister) if something goes wrong in the initialization process or during the halting of the miniport.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

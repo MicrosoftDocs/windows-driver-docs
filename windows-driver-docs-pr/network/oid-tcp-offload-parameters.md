@@ -38,8 +38,6 @@ Before setting OID_TCP_OFFLOAD_PARAMETERS, the overlying applications or drivers
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

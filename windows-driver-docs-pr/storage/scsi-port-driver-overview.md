@@ -23,7 +23,7 @@ The following sections examine the key features of the SCSI Port driver.
 
 - [SCSI Port Driver Support Routines](scsi-port-driver-support-routines.md)
 
-- [SCSI Port's Interface with the Storage Class Driver](scsi-port-s-interface-with-the-storage-class-driver.md)
+- [SCSI Port's Interface with the Storage Class Driver](scsi-port-s-srb-interface-with-the-storage-class-driver.md)
 
 - [SCSI Port's Interface with SCSI Port Miniport Drivers](scsi-port-s-interface-with-scsi-port-miniport-drivers.md)
 

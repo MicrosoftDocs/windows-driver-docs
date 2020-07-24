@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **Irql\_SendRcv\_Function** rule specifies that the send and receive functions for NDIS drivers must be called at correct IRQL levels.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

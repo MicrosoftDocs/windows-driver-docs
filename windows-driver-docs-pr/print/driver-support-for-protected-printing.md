@@ -8,47 +8,43 @@ ms.localizationpriority: medium
 
 # Driver Support for Protected Printing
 
-
 Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
 
 Windows 8.1 also allows administrators to specify a default PIN in order to reduce wasteful paper consumption related to content that is printed out but never retrieved by the user. This topic explains the changes that made it possible to provide support for protected printing and also outlines the steps required for adding this support to a v4 print driver.
 
 ## Print Schema Changes
 
-Windows 8.1 has introduced new Print Schema keywords that you can use in PrintTicket and PrintCapabilities documents to specify protected printing. These keywords are defined in the new *printschemakeywordsv11* namespace. Here's the URI for this namespace:
-
-*http://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11*
+Windows 8.1 has introduced new Print Schema keywords that you can use in PrintTicket and PrintCapabilities documents to specify protected printing. These keywords are defined in the new *printschemakeywordsv11* namespace. Here is the URI for this namespace: [https://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11](https://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11).
 
 To see how to specify protected printing in a PrintTicket file, see [Sample PrintTicket File for PIN Printing](sample-printticket-file-for-pin-printing.md). And to see how to specify protected printing in a PrintCapabilities file, see [Sample PrintCapabilities File for PIN Printing](sample-printcapabilities-file-for-pin-printing.md).
 
 The specifications can be downloaded here:
 
-[Print Schema Specification 1.1](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/print-schema-spec-1-1.zip)
+[Print Schema Specification 1.1](https://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/print-schema-spec-1-1.zip)
 
-[Print Schema Specification 2.0](http://download.microsoft.com/download/d/e/c/deca6e6b-3e81-48e7-b7ef-6d92a547d03c/print-schema-spec-2-0.zip)
-
+[Print Schema Specification 2.0](https://download.microsoft.com/download/d/e/c/deca6e6b-3e81-48e7-b7ef-6d92a547d03c/print-schema-spec-2-0.zip)
 
 ## Driver Changes
 
-
 If you're working with a v4 driver, you have to make changes to the generic printer description (GPD) or PostScript printer description (PPD) file, and other driver-related code files. The driver-related code files affected by the changes can be categorized as follows:
 
--   Driver configuration file (GPD or PPD)
--   XPS rendering filters
--   Printer extensions
--   UWP device apps
+- Driver configuration file (GPD or PPD)
+- XPS rendering filters
+- Printer extensions
+- UWP device apps
 
-**Note**  You can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
-
- 
+> [!NOTE]
+> You can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
 
 The following sections give you more information about how to implement changes that will allow your v4 driver to support protected printing.
 
-**Driver Configuration File**
+### Driver Configuration File
 
 You indicate support for protected printing in the DataFile for your v4 print driver. The DataFile is either the GPD or the PPD file - whichever one your driver uses. You must specify both the MinLength and MaxLength directives to enable protected printing. The following tables describe the relevant keywords that you must add to your driver's GPD or PPD file.
 
-**What to add to a GPD file**. If your driver uses a GPD file, add the following new keywords using this syntax:
+### What to add to a GPD file
+
+If your driver uses a GPD file, add the following new keywords using this syntax:
 
 <table>
 <colgroup>
@@ -87,9 +83,9 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 </tbody>
 </table>
 
- 
+## What to add to a PPD file
 
-**What to add to a PPD file**. If your driver uses a PPD file, add the following new keywords using this syntax:
+If your driver uses a PPD file, add the following new keywords using this syntax:
 
 <table>
 <colgroup>
@@ -121,7 +117,7 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 <tr class="even">
 <td><strong><em>MSJobPasscodeMaxLength</strong></td>
 <td><p>Maximum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <strong></em>MSJobPasscodeMinLength</strong> value.</p></td>
+<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <b>MSJobPasscodeMinLength</b> value.</p></td>
 <td>Root</td>
 <td><p>”int” (QuotedValue)</p>
 <p>In other words, the integer value must be expressed in quotation marks.</p></td>
@@ -130,11 +126,15 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 </tbody>
 </table>
 
- 
+### Specifying hardware constraints
 
-**Specifying hardware constraints**. If you have a device that doesn't support PIN printing without installable hardware such as a hard drive, specify these constraints using either the GPD or PPD file. To do this, you must edit your GPD or PPD file to show the JobPasscode feature and both JobPasscode options (On and Off). The ON/OFF options must set either PrintSchemaKeywordMap or MSPrintSchemaKeywordMap to the appropriate values.
+If you have a device that doesn't support PIN printing without installable hardware such as a hard drive, specify these constraints using either the GPD or PPD file. To do this, you must edit your GPD or PPD file to show the JobPasscode feature and both JobPasscode options (On and Off). The ON/OFF options must set either PrintSchemaKeywordMap or MSPrintSchemaKeywordMap to the appropriate values.
 
-**Software constraints**. These are not supported.
+### Software constraints
+
+These are not supported.
+
+### Hardware constraints
 
 The following table shows the valid values for the keywords that you must use if you want to specify support for protected printing and hardware constraints.
 
@@ -145,31 +145,29 @@ GPD
 \*Feature
 JobPasscode
 \*Option
--   OFF
--   ON
+- OFF
+- ON
 
 \*PrintSchemaKeywordMap
--   "Off"
--   "On"
--   "JobPasscode"
+- "Off"
+- "On"
+- "JobPasscode"
 
 PPD
 \*Feature
 JobPasscode
 \*Option
--   OFF
--   ON
+- OFF
+- ON
 
 \*MSPrintSchemaKeywordMap
--   "Off"
--   "On"
--   "JobPasscode"
+- "Off"
+- "On"
+- "JobPasscode"
 
- 
+### GPD and PPD file examples
 
-**GPD and PPD file examples**
-
-Here's an example of a GPD file specifying JobPasscode with an Installable Hardware Constraint.
+Here is an example of a GPD file specifying JobPasscode with an Installable Hardware Constraint.
 
 ```GDP
 *%
@@ -229,9 +227,8 @@ Here's an example of a GPD file specifying JobPasscode with an Installable Hardw
 }
 ```
 
-**Note**  You must use the \*ConcealFromUI keyword and set it to TRUE to prevent the protected printing option from being shown unintentionally. See the preceding GPD file example.
-
- 
+> [!NOTE]
+> You must use the \*ConcealFromUI keyword and set it to TRUE to prevent the protected printing option from being shown unintentionally. See the preceding GPD file example.
 
 Here's an example of a PPD file specifying JobPasscode with an Installable Hardware Constraint.
 
@@ -264,28 +261,19 @@ Here's an example of a PPD file specifying JobPasscode with an Installable Hardw
 
 As you can see in the preceding PPD file example, the \*UIConstraints keyword indicates the hardware constraint.
 
-**Note**  The Windows operating system automatically displays locale-specific strings for the protected printing feature and its associated options. You can't specify a new localized name for this feature or its options.
+> [!NOTE]
+> The Windows operating system automatically displays locale-specific strings for the protected printing feature and its associated options. You can't specify a new localized name for this feature or its options.
 
- 
-
-**XPS rendering filters**
+### XPS rendering filters
 
 Drivers for existing devices will need changes to their rendering code so that these drivers can convert the PrintTicket representation of the PIN value into a value that the device understands. In general, this will either require the addition of code to an existing XPS rendering filter, or the addition of a new XPS rendering filter to support protected printing. Drivers that use the standard XPS rendering filters for PCL6 and PostScript should develop a new stream filter for their filter pipeline. This new stream filter will inject an appropriate command into the pre-rendered PDL stream in their filter pipeline, after the stream passes through the standard filter.
 
-The Microsoft recommendation is that, to minimize the rendering requirements on the client or server PC, any new devices that support XPS or OpenXPS should support the new keywords without using additional transforms.
+Microsoft recommends that to minimize the rendering requirements on the client or server PC, any new devices that support XPS or OpenXPS should support the new keywords without using additional transforms.
 
-**Printer extensions**
+### Printer extensions
 
 Printer extensions should be able to display a control for protected printing in their print preferences UI. This ensures that users of desktop apps can configure the protected printing feature when using the printer extension. Microsoft is making changes that will allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to support protected printing from printer extensions.
 
-**UWP device apps**
+### UWP device apps
 
 Microsoft is also making changes to allow the [**IPrintSchemaTicket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschematicket) family of APIs to work with UWP device apps to display a control for protected printing in their print preferences UI.
-
- 
-
- 
-
-
-
-

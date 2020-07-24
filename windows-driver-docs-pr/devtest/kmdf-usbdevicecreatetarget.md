@@ -20,9 +20,7 @@ The **UsbDeviceCreateTarget** rule specifies that multiple WDFUSBDEVICE objects 
 
 For example, the [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) event callback function can be called multiple times when the system is trying to manage resources and needs to allocate a different chunk of memory for the driver. In this situation, the [*EvtDeviceReleaseHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) event callback function is called to unmap memory resources after the framework has initially called *EvtDevicePrepareHardware*. The *EvtDevicePrepareHardware* is then called again to map resources so that the driver can access memory that is assigned to the device. This rule checks that the driver first verifies that the target WDFUSBDEVICE is **NULL** and does not simply create a new device and replace the previous handle.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

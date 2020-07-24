@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # UMDF Based on COM Subset
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The framework objects and interfaces are based on the Component Object Model (COM) for the following reasons:
 

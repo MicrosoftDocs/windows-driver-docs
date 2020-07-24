@@ -22,10 +22,10 @@ If the **Operation** member of the **NDIS_WWAN_MPDP_INFO** structure is set to *
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1809 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1809
+
+**Header**: Ntddndis.h (include Ndis.h)
+
 
 ## See also
 

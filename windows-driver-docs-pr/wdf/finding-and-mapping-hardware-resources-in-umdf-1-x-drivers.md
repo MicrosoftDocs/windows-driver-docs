@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Finding and Mapping Hardware Resources in UMDF 1.x Drivers
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 If you are using UMDF version 2.0 or later, see [Finding and Mapping Hardware Resources](finding-and-mapping-hardware-resources.md).
 

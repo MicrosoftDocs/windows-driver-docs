@@ -22,7 +22,7 @@ For more information, see [Target Information](target-information.md).
 <span id="arbitrary_exception_filter"></span><span id="ARBITRARY_EXCEPTION_FILTER"></span>**arbitrary exception filter**  
 An exception filter that has been manually added to the engine's list of event filters.
 
-See also [specific exception filter](https://docs.microsoft.com/windows-hardware/drivers/debugger/specific-exceptions).
+See also [specific exception filter](specific-exceptions.md).
 
 For more information, see [Event Filters](event-filters.md).
 

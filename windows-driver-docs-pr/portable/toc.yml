@@ -1,266 +1,261 @@
 - name: "Windows Portable Devices"
+  href: index.md
+- name: "What's New in WPD"
+  href: what-s-new-in-wpd.md
+- name: "WPD Design Guide"
 # Auto-expanded node
   items: 
-  - name: "Windows Portable Devices"
-    href: index.md
-  - name: "What's New in WPD"
-    href: what-s-new-in-wpd.md
   - name: "WPD Design Guide"
+    href: wpd-design-guide.md
+  - name: "WPD Drivers"
 # Auto-expanded node
     items: 
-    - name: "WPD Design Guide"
-      href: wpd-design-guide.md
     - name: "WPD Drivers"
-# Auto-expanded node
-      items: 
-      - name: "WPD Drivers"
-        href: wpd-drivers.md
-      - name: "Requirements"
-        href: requirements.md
-    - name: "WPD Drivers Overview"
-# Auto-expanded node
-      items: 
-      - name: "WPD Drivers Overview"
-        href: wpd-drivers-overview.md
-      - name: "Supported Scenarios"
-        href: supported-scenarios.md
-      - name: "WPD and Earlier Technologies"
-        href: wpd-and-earlier-technologies.md
-      - name: "Guidance for the Hardware Vendor"
-        href: guidance-for-the-hardware-vendor.md
-      - name: "Architecture Overview"
-        href: architecture-overview.md
-      - name: "Access Control"
-        href: access-control.md
-      - name: "The Conceptual Model"
-        href: the-conceptual-model.md
-      - name: "Device Representation"
-        href: device-representation.md
-      - name: "Representing Functionality"
-        href: representing-functionality.md
-      - name: "Representing Contents"
-        href: representing-contents.md
-      - name: "Device Installation"
-        href: device-installation.md
-      - name: "PROPERTYKEYs and GUIDs in Windows Portable Devices"
-        href: propertykeys-and-guids-in-windows-portable-devices.md
-      - name: "Requirements for Objects"
-        href: requirements-for-objects.md
-  - name: "WPD Programming Guide"
+      href: wpd-drivers.md
+    - name: "Requirements"
+      href: requirements.md
+  - name: "WPD Drivers Overview"
 # Auto-expanded node
     items: 
-    - name: "WPD Programming Guide"
-      href: wpd-programming-guide.md
+    - name: "WPD Drivers Overview"
+      href: wpd-drivers-overview.md
+    - name: "Supported Scenarios"
+      href: supported-scenarios.md
+    - name: "WPD and Earlier Technologies"
+      href: wpd-and-earlier-technologies.md
+    - name: "Guidance for the Hardware Vendor"
+      href: guidance-for-the-hardware-vendor.md
+    - name: "Architecture Overview"
+      href: architecture-overview.md
+    - name: "Access Control"
+      href: access-control.md
+    - name: "The Conceptual Model"
+      href: the-conceptual-model.md
+    - name: "Device Representation"
+      href: device-representation.md
+    - name: "Representing Functionality"
+      href: representing-functionality.md
+    - name: "Representing Contents"
+      href: representing-contents.md
+    - name: "Device Installation"
+      href: device-installation.md
+    - name: "PROPERTYKEYs and GUIDs in Windows Portable Devices"
+      href: propertykeys-and-guids-in-windows-portable-devices.md
+    - name: "Requirements for Objects"
+      href: requirements-for-objects.md
+- name: "WPD Programming Guide"
+# Auto-expanded node
+  items: 
+  - name: "WPD Programming Guide"
+    href: wpd-programming-guide.md
+  - name: "WPD Driver Development Tools"
+# Auto-expanded node
+    items: 
     - name: "WPD Driver Development Tools"
+      href: familiarizing-yourself-with-the-sample-driver.md
+    - name: "Using the WpdInfo Tool"
+      href: using-the-wpdinfo-tool.md
+    - name: "Using the WpdDeviceInspector Tool"
+      href: using-the-wpddeviceinspector-tool.md
+    - name: "Using the Network Monitor Tool"
+      href: using-the-netmon-tool.md
+  - name: "The WPD Driver Samples"
 # Auto-expanded node
-      items: 
-      - name: "WPD Driver Development Tools"
-        href: familiarizing-yourself-with-the-sample-driver.md
-      - name: "Using the WpdInfo Tool"
-        href: using-the-wpdinfo-tool.md
-      - name: "Using the WpdDeviceInspector Tool"
-        href: using-the-wpddeviceinspector-tool.md
-      - name: "Using the Network Monitor Tool"
-        href: using-the-netmon-tool.md
+    items: 
     - name: "The WPD Driver Samples"
+      href: the-wpd-driver-samples.md
+    - name: "The WpdHelloWorldDriver Sample"
 # Auto-expanded node
       items: 
-      - name: "The WPD Driver Samples"
-        href: the-wpd-driver-samples.md
       - name: "The WpdHelloWorldDriver Sample"
+        href: the-sample-driver-architecture.md
+      - name: "Installing the WpdHelloWorldDriver Sample"
+        href: the-wpdhelloworlddriver-installation.md
+      - name: "The Sample Driver Setup Information (.inf) File"
 # Auto-expanded node
         items: 
-        - name: "The WpdHelloWorldDriver Sample"
-          href: the-sample-driver-architecture.md
-        - name: "Installing the WpdHelloWorldDriver Sample"
-          href: the-wpdhelloworlddriver-installation.md
         - name: "The Sample Driver Setup Information (.inf) File"
+          href: the-sample-driver-setup-information---inf--file.md
+        - name: "Supporting AutoPlay"
+          href: supporting-autoplay.md
+      - name: "The MTP Setup Information (.inf) File"
+        href: the-mtp-setup-information---inf--file.md
+      - name: "The COM Component Files"
+        href: the-com-component-files.md
+      - name: "The Windows Driver Frameworks Files"
 # Auto-expanded node
-          items: 
-          - name: "The Sample Driver Setup Information (.inf) File"
-            href: the-sample-driver-setup-information---inf--file.md
-          - name: "Supporting AutoPlay"
-            href: supporting-autoplay.md
-        - name: "The MTP Setup Information (.inf) File"
-          href: the-mtp-setup-information---inf--file.md
-        - name: "Verifying Structure and Syntax for Setup Information Files"
-          href: verifying-structure-and-syntax-for-setup-information-files.md
-        - name: "The COM Component Files"
-          href: the-com-component-files.md
+        items: 
         - name: "The Windows Driver Frameworks Files"
+          href: the-windows-driver-foundation-files.md
+        - name: "Handling Plug and Play and Power Management Events"
+          href: handling-plug-and-play-and-power-management-events.md
+        - name: "Handling the Entry and Exit Points"
+          href: handling-the-entry-and-exit-points.md
+        - name: "Handling Device Control and File Creation"
 # Auto-expanded node
           items: 
-          - name: "The Windows Driver Frameworks Files"
-            href: the-windows-driver-foundation-files.md
-          - name: "Handling Plug and Play and Power Management Events"
-            href: handling-plug-and-play-and-power-management-events.md
-          - name: "Handling the Entry and Exit Points"
-            href: handling-the-entry-and-exit-points.md
           - name: "Handling Device Control and File Creation"
+            href: handling-device-control-and-file-creation.md
+          - name: "Handling Access Control"
+            href: handling-access-control.md
+      - name: "The Windows Portable Device Files"
 # Auto-expanded node
-            items: 
-            - name: "Handling Device Control and File Creation"
-              href: handling-device-control-and-file-creation.md
-            - name: "Handling Access Control"
-              href: handling-access-control.md
+        items: 
         - name: "The Windows Portable Device Files"
+          href: the-windows-portable-device-files.md
+        - name: "The Base Driver"
 # Auto-expanded node
           items: 
-          - name: "The Windows Portable Device Files"
-            href: the-windows-portable-device-files.md
           - name: "The Base Driver"
+            href: the-base-driver.md
+          - name: "Initializing the Driver"
+            href: initializing-the-driver.md
+          - name: "Messaging Functionality"
+            href: messaging-functionality.md
+          - name: "Mapping Object Identifiers"
+            href: mapping-object-identifiers.md
+        - name: "Driver Capabilities"
 # Auto-expanded node
-            items: 
-            - name: "The Base Driver"
-              href: the-base-driver.md
-            - name: "Initializing the Driver"
-              href: initializing-the-driver.md
-            - name: "Messaging Functionality"
-              href: messaging-functionality.md
-            - name: "Mapping Object Identifiers"
-              href: mapping-object-identifiers.md
+          items: 
           - name: "Driver Capabilities"
+            href: driver-capabilities.md
+          - name: "Command-Option Retrieval"
+            href: command-option-retrieval.md
+          - name: "Fixed Property-Attribute Retrieval"
+            href: fixed-property-attribute-retrieval.md
+          - name: "Functional-Category Retrieval"
+            href: functional-category-retrieval.md
+          - name: "Functional-Object Retrieval"
+            href: functional-object-retrieval.md
+          - name: "Supported Command Retrieval"
+            href: supported-command-retrieval.md
+          - name: "Supported Content-Type Retrieval"
+            href: supported-content-type-retrieval.md
+          - name: "Supported Format-Property Retrieval"
+            href: supported-format-property-retrieval.md
+          - name: "Supported Format Retrieval"
+            href: supported-format-retrieval.md
+        - name: "Object Enumeration"
+          href: object-enumeration.md
+        - name: "Property Support"
 # Auto-expanded node
-            items: 
-            - name: "Driver Capabilities"
-              href: driver-capabilities.md
-            - name: "Command-Option Retrieval"
-              href: command-option-retrieval.md
-            - name: "Fixed Property-Attribute Retrieval"
-              href: fixed-property-attribute-retrieval.md
-            - name: "Functional-Category Retrieval"
-              href: functional-category-retrieval.md
-            - name: "Functional-Object Retrieval"
-              href: functional-object-retrieval.md
-            - name: "Supported Command Retrieval"
-              href: supported-command-retrieval.md
-            - name: "Supported Content-Type Retrieval"
-              href: supported-content-type-retrieval.md
-            - name: "Supported Format-Property Retrieval"
-              href: supported-format-property-retrieval.md
-            - name: "Supported Format Retrieval"
-              href: supported-format-retrieval.md
-          - name: "Object Enumeration"
-            href: object-enumeration.md
+          items: 
           - name: "Property Support"
+            href: property-support.md
+          - name: "Property Deletion"
+            href: property-deletion.md
+          - name: "Property-Attribute Retrieval"
+            href: property-attribute-retrieval.md
+          - name: "Supported Property Retrieval"
+            href: supported-property-retrieval.md
+          - name: "Property-Value Retrieval"
+            href: property-value-retrieval.md
+          - name: "Setting Property Values"
+            href: setting-property-values.md
+        - name: "Resources"
 # Auto-expanded node
-            items: 
-            - name: "Property Support"
-              href: property-support.md
-            - name: "Property Deletion"
-              href: property-deletion.md
-            - name: "Property-Attribute Retrieval"
-              href: property-attribute-retrieval.md
-            - name: "Supported Property Retrieval"
-              href: supported-property-retrieval.md
-            - name: "Property-Value Retrieval"
-              href: property-value-retrieval.md
-            - name: "Setting Property Values"
-              href: setting-property-values.md
+          items: 
           - name: "Resources"
-# Auto-expanded node
-            items: 
-            - name: "Resources"
-              href: resources.md
-            - name: "Retrieving a list of Supported Resources"
-              href: retrieving-a-list-of-supported-resources.md
-            - name: "Retrieving Resource Attributes"
-              href: retrieving-resource-attributes.md
-            - name: "Opening a Resource and Retrieving an IStream object"
-              href: opening-a-resource-and-retrieving-an-istream-object.md
-            - name: "Reading Resource Data"
-              href: reading-resource-data.md
-            - name: "Closing a Resource"
-              href: closing-a-resource.md
-      - name: "The WpdBasicHardwareDriver Sample"
-# Auto-expanded node
-        items: 
-        - name: "The WpdBasicHardwareDriver Sample"
-          href: the-wpdbasichardwaredriver-sample.md
-        - name: "Installing the Sample Driver"
-          href: the-wpdbasichardwaredriver-installation.md
-        - name: "The WpdBasicHardwareDriver Protocol"
-          href: the-wpdbasichardwaredriver-protocol.md
-        - name: "Creating the Sensor Devices"
-          href: the-wpdbasichardwaredriver-device-creation.md
-        - name: "Defining the Sensor Objects"
-          href: the-wpdbasichardwaredriver-defining-the-sensor-objects.md
-        - name: "Defining the Sensor Properties"
-          href: the-wpdbasichardwaredriver-property-definitions.md
-        - name: "Supporting I/O"
-          href: the-wpdbasichardwaredriver-supporting-io.md
-        - name: "Supporting the WPD Infrastructure"
-# Auto-expanded node
-          items: 
-          - name: "Supporting the WPD Infrastructure"
-            href: the-wpdbasichardwaredriver-supporting-wpd-infrastructure.md
-          - name: "Supporting the Property Commands"
-            href: the-wpdbasichardwaredriver-supporting-wpd-property-commands.md
-          - name: "Supporting the Property Range Attributes"
-            href: the-wpdbasichardwaredriver-supporting-property-range-attributes.md
-          - name: "Supporting the Enumeration Commands"
-            href: the-wpdbasichardwaredriver-supporting-wpd-enumeration-commands.md
-          - name: "Supporting the Capability Commands"
-            href: the-wpdbasichardwaredriver-supporting-wpd-capability-commands.md
-          - name: "Supporting the Base-Driver Commands"
-            href: the-wpdbasichardwaredriver-supporting-base-driver-commands.md
-          - name: "Supporting Device Events"
-            href: the-wpdbasichardwaredriver-supporting-device-events.md
-        - name: "Testing and Debugging the Sample Driver"
-          href: the-wpdbasichardwaredriver-testing-and-debugging.md
-      - name: "The WpdServiceSampleDriver Sample"
-# Auto-expanded node
-        items: 
-        - name: "The WpdServiceSampleDriver Sample"
-          href: the-wpdservicesampledriver-sample.md
-        - name: "Installing the WpdServiceSampleDriver Sample"
-          href: the-wpdservicesampledriver-installation.md
-        - name: "Defining the Service Objects"
-          href: the-wpdservicesampledriver-object-definitions.md
-        - name: "Defining the Service Properties"
-          href: the-wpdservicesampledriver-property-definitions.md
-        - name: "Supporting the WPD Infrastructure"
-# Auto-expanded node
-          items: 
-          - name: "Supporting the WPD Infrastructure"
-            href: the-wpdservicesampledriver-supporting-wpd-infrastructure.md
-          - name: "Supporting the Service Commands"
-            href: the-wpdservicesampledriver-supporting-service-commands.md
-          - name: "Supporting the Property Commands"
-            href: the-wpdservicesampledriver-supporting-wpd-property-commands.md
-          - name: "Supporting the Enumeration Commands"
-            href: the-wpdservicesampledriver-supporting-wpd-enumeration-commands.md
-          - name: "Supporting the Capability Commands"
-            href: the-wpdservicesampledriver-supporting-wpd-capability-commands.md
-          - name: "Supporting the Base-Driver Commands"
-            href: the-wpdservicesampledriver-supporting-base-driver-commands.md
-        - name: "Scoping Service Events"
-          href: the-wpdservicesampledriver-scoping-service-events.md
-      - name: "The WpdMultiTransportDriver Sample"
-# Auto-expanded node
-        items: 
-        - name: "The WpdMultiTransportDriver Sample"
-          href: the-wpdmultitransportdriver-sample.md
-        - name: "Installing the WpdMultiTransportDriver Sample"
-          href: the-wpdmultitransportdriver-installation.md
-        - name: "MultiTransport Device Support"
-          href: the-wpdmultitransportdriver-sample-device-arrival.md
-    - name: "Advanced Tasks"
+            href: resources.md
+          - name: "Retrieving a list of Supported Resources"
+            href: retrieving-a-list-of-supported-resources.md
+          - name: "Retrieving Resource Attributes"
+            href: retrieving-resource-attributes.md
+          - name: "Opening a Resource and Retrieving an IStream object"
+            href: opening-a-resource-and-retrieving-an-istream-object.md
+          - name: "Reading Resource Data"
+            href: reading-resource-data.md
+          - name: "Closing a Resource"
+            href: closing-a-resource.md
+    - name: "The WpdBasicHardwareDriver Sample"
 # Auto-expanded node
       items: 
-      - name: "Advanced Tasks"
-        href: advanced-tasks.md
-      - name: "The WpdWudfSampleDriver Sample"
-        href: the-wpdwudfsampledriver-sample.md
-      - name: "Installing the WpdWudfSampleDriver Sample"
-        href: the-wpdwudfsampledriver-installation.md
-      - name: "Supporting Plug and Play (PnP) and Power Management"
-        href: supporting-plug-and-play--pnp-.md
-      - name: "Supporting Rendering Profiles"
-        href: supporting-rendering-profiles.md
-      - name: "Supporting Client Contexts"
-        href: supporting-client-contexts.md
-      - name: "Supporting Event Cookies"
-        href: supporting-event-cookie.md
-      - name: "Supporting WPP Tracing"
-        href: supporting-wpp-tracing-info.md
+      - name: "The WpdBasicHardwareDriver Sample"
+        href: the-wpdbasichardwaredriver-sample.md
+      - name: "Installing the Sample Driver"
+        href: the-wpdbasichardwaredriver-installation.md
+      - name: "The WpdBasicHardwareDriver Protocol"
+        href: the-wpdbasichardwaredriver-protocol.md
+      - name: "Creating the Sensor Devices"
+        href: the-wpdbasichardwaredriver-device-creation.md
+      - name: "Defining the Sensor Objects"
+        href: the-wpdbasichardwaredriver-defining-the-sensor-objects.md
+      - name: "Defining the Sensor Properties"
+        href: the-wpdbasichardwaredriver-property-definitions.md
+      - name: "Supporting I/O"
+        href: the-wpdbasichardwaredriver-supporting-io.md
+      - name: "Supporting the WPD Infrastructure"
+# Auto-expanded node
+        items: 
+        - name: "Supporting the WPD Infrastructure"
+          href: the-wpdbasichardwaredriver-supporting-wpd-infrastructure.md
+        - name: "Supporting the Property Commands"
+          href: the-wpdbasichardwaredriver-supporting-wpd-property-commands.md
+        - name: "Supporting the Property Range Attributes"
+          href: the-wpdbasichardwaredriver-supporting-property-range-attributes.md
+        - name: "Supporting the Enumeration Commands"
+          href: the-wpdbasichardwaredriver-supporting-wpd-enumeration-commands.md
+        - name: "Supporting the Capability Commands"
+          href: the-wpdbasichardwaredriver-supporting-wpd-capability-commands.md
+        - name: "Supporting the Base-Driver Commands"
+          href: the-wpdbasichardwaredriver-supporting-base-driver-commands.md
+        - name: "Supporting Device Events"
+          href: the-wpdbasichardwaredriver-supporting-device-events.md
+      - name: "Testing and Debugging the Sample Driver"
+        href: the-wpdbasichardwaredriver-testing-and-debugging.md
+    - name: "The WpdServiceSampleDriver Sample"
+# Auto-expanded node
+      items: 
+      - name: "The WpdServiceSampleDriver Sample"
+        href: the-wpdservicesampledriver-sample.md
+      - name: "Installing the WpdServiceSampleDriver Sample"
+        href: the-wpdservicesampledriver-installation.md
+      - name: "Defining the Service Objects"
+        href: the-wpdservicesampledriver-object-definitions.md
+      - name: "Defining the Service Properties"
+        href: the-wpdservicesampledriver-property-definitions.md
+      - name: "Supporting the WPD Infrastructure"
+# Auto-expanded node
+        items: 
+        - name: "Supporting the WPD Infrastructure"
+          href: the-wpdservicesampledriver-supporting-wpd-infrastructure.md
+        - name: "Supporting the Service Commands"
+          href: the-wpdservicesampledriver-supporting-service-commands.md
+        - name: "Supporting the Property Commands"
+          href: the-wpdservicesampledriver-supporting-wpd-property-commands.md
+        - name: "Supporting the Enumeration Commands"
+          href: the-wpdservicesampledriver-supporting-wpd-enumeration-commands.md
+        - name: "Supporting the Capability Commands"
+          href: the-wpdservicesampledriver-supporting-wpd-capability-commands.md
+        - name: "Supporting the Base-Driver Commands"
+          href: the-wpdservicesampledriver-supporting-base-driver-commands.md
+      - name: "Scoping Service Events"
+        href: the-wpdservicesampledriver-scoping-service-events.md
+    - name: "The WpdMultiTransportDriver Sample"
+# Auto-expanded node
+      items: 
+      - name: "The WpdMultiTransportDriver Sample"
+        href: the-wpdmultitransportdriver-sample.md
+      - name: "Installing the WpdMultiTransportDriver Sample"
+        href: the-wpdmultitransportdriver-installation.md
+      - name: "MultiTransport Device Support"
+        href: the-wpdmultitransportdriver-sample-device-arrival.md
+  - name: "Advanced Tasks"
+# Auto-expanded node
+    items: 
+    - name: "Advanced Tasks"
+      href: advanced-tasks.md
+    - name: "The WpdWudfSampleDriver Sample"
+      href: the-wpdwudfsampledriver-sample.md
+    - name: "Installing the WpdWudfSampleDriver Sample"
+      href: the-wpdwudfsampledriver-installation.md
+    - name: "Supporting Plug and Play (PnP) and Power Management"
+      href: supporting-plug-and-play--pnp-.md
+    - name: "Supporting Rendering Profiles"
+      href: supporting-rendering-profiles.md
+    - name: "Supporting Client Contexts"
+      href: supporting-client-contexts.md
+    - name: "Supporting Event Cookies"
+      href: supporting-event-cookie.md
+    - name: "Supporting WPP Tracing"
+      href: supporting-wpp-tracing-info.md

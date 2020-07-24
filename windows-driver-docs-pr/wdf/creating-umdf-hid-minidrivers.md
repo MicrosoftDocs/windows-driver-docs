@@ -50,10 +50,10 @@ The HID class driver (*HidClass.sys*) and the framework provide conflicting WDM 
 
 Both *MsHidUmdf.sys* and *MsHidKmdf.sys* call the HID class driver's [**HidRegisterMinidriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidport/nf-hidport-hidregisterminidriver) routine to register as the actual HID minidriver. Although these drivers act as the device's function driver, they just pass I/O requests from the class driver to your driver (and are thus sometimes called *pass-through drivers*). For both KMDF and UMDF, the only component that you supply is the HID minidriver, which is a lower filter driver that sits under the pass-through driver.
 
-|                                                                                     |                                                                                        |
-|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| UMDF architecture                                                                   | KMDF architecture                                                                      |
-| ![location of hidumdf.sys in the driver stack](images/UMDF-basedHIDMinidrivers.png) | ![location of mshidkmdf.sys in driver stack](images/Framework-basedHIDMinidrivers.png) |
+**UMDF architecture**: KMDF architecture
+
+**![location of hidumdf.sys in the driver stack](images/UMDF-basedHIDMinidrivers.png)**: ![location of mshidkmdf.sys in driver stack](images/Framework-basedHIDMinidrivers.png)
+
 
  
 

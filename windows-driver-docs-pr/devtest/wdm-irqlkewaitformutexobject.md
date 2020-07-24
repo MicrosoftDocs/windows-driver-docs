@@ -22,9 +22,7 @@ The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWait
 
 -   If *Timeout* is **NULL**, or points to any value other than zero, the driver is executing at IRQL &lt;= APC\_LEVEL.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

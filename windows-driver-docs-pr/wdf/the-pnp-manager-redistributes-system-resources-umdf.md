@@ -1,5 +1,5 @@
 ---
-title: The PnP Manager Redistributes System Resources
+title: The PnP Manager Redistributes System Resources (UMDF 1)
 description: The PnP Manager Redistributes System Resources
 ms.assetid: c8e6277b-b1e5-449f-b5a0-f5a46b46e56e
 keywords:
@@ -9,10 +9,10 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# The PnP Manager Redistributes System Resources
+# The PnP Manager Redistributes System Resources (UMDF 1)
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 If a user adds a device to a system, and if the device requires system resources that the PnP manager has already assigned to another device, the PnP manager attempts to reassign resources.
 

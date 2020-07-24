@@ -1,18 +1,18 @@
 ---
-title: Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
-description: Follow these steps to use Device Guard Readiness Tool to evaluate HVCI driver compatibility of your driver code.
+title: Evaluate HVCI driver compatibility
+description: Follow these steps to use to evaluate HVCI driver compatibility of your driver code.
 ms.assetid: 
-ms.date: 02/22/2017
+ms.date: 05/26/2020
 ms.localizationpriority: medium
 ---
 
-# Use the Device Guard Readiness Tool to evaluate HVCI driver compatibility
+# Evaluate HVCI driver compatibility
 
 ## Overview
 
-The Device Guard Readiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment. 
+The DGReadiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment.
 
-OS and Hardware requirements for testing HVCI driver Device Guard compatibility:
+OS and Hardware requirements for testing HVCI driver compatibility:
 
 1. Windows: Available on all versions of Windows, such as Windows Pro, Windows 10 Enterprise, Windows Server, and Windows 10 IoT Enterprise (Not supported in S Mode).
 
@@ -22,9 +22,9 @@ To use the readiness tool to evaluate the additional requirements, such as secur
 
 For more information about the related device fundamentals test, see [Device.DevFund tests](https://docs.microsoft.com/windows-hardware/test/hlk/testref/device-devfund-tests).
 
-## Implement Device Guard compatible code
+## Implement HVCI compatible code
 
-To implement Device Guard compatible code, make sure your driver code does the following:
+To implement HVCI compatible code, make sure your driver code does the following:
 
 - Opts in to NX by default
 - Uses NX APIs/flags for memory allocation (NonPagedPoolNx)
@@ -94,13 +94,13 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | [**WdfRegistryQueryMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryquerymemory)                                             |
 
 
-## Using the DGR tool
+## Using the DGReadiness tool
 
-To use Device Guard Readiness Tool, complete the following steps:
+To use DGReadiness Tool, complete the following steps:
 
 -   **Prepare the test PC**
 
-    *Enable Virtualization Based Protection of Code Integrity* - Run the System Information app (msinfo32). Look for the following item: “Device Guard Virtualization based security”. It should show: “Running”.
+    *Enable Virtualization Based Protection of Code Integrity* - Run the System Information app (msinfo32). Look for the following item: “Virtualization based security”. It should show: “Running”.
 
     Alternatively, there is also a WMI interface for checking using management tools that can be used to display information in PowerShell.
 
@@ -108,14 +108,12 @@ To use Device Guard Readiness Tool, complete the following steps:
     Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
     ```
 
-    For information on how to interrupt the output displayed, see [Enable virtualization-based protection of code integrity](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity).
+    *Disable "Device Guard"* - Note that while running the Readiness Tool, "Device Guard" must be disabled on the PC under test, as it might prevent the driver from loading, and the driver won’t be available for the Readiness Tool to test.
 
-    *Disable Device Guard* - Note that while running the Readiness Tool, Device Guard must be disabled on the PC under test, as Device Guard might prevent the driver from loading, and the driver won’t be available for the Readiness Tool to test.
-
-    *Optionaly Enable Test Signing* - To allow for the installation of unsigned development drivers, you may want to enable test signing using BCDEdit.
+    *Optionally Enable Test Signing* - To allow for the installation of unsigned development drivers, you may want to enable test signing using BCDEdit.
 
     ```console
-    bcdedit /set TESTSIGNING ON 
+    bcdedit /set TESTSIGNING ON
     ```
 
 -   **Install test drivers**
@@ -126,10 +124,10 @@ To use Device Guard Readiness Tool, complete the following steps:
 
 
 
--   **Install the Device Guard Readiness Tool**
+-   **Install the DGReadiness Tool**
 
     **Warning**  
-    As the Device Guard Readiness Tool changes registry values and may impact features such as secure boot, use a test PC that doesn't contain any data or applications. After the tests have been run, you may want to re-install Windows to re-establish your desired security configuration.
+    As the DGReadiness Tool changes registry values and may impact features such as secure boot, use a test PC that doesn't contain any data or applications. After the tests have been run, you may want to re-install Windows to re-establish your desired security configuration.
 
     1. Download the tool from here: [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
@@ -177,7 +175,7 @@ To use Device Guard Readiness Tool, complete the following steps:
 
     In addition to the output to the screen, by default, the log file with detailed output is located at C:\\DGLogs
 
-    There are five steps (or sections) in the output of the Device Guard Readiness Tool. Step 1 contains the is the driver compatibility information.
+    There are five steps (or sections) in the output of the tool. Step 1 contains the is the driver compatibility information.
 
     ```text
      ====================== Step 1 Driver Compat ====================== 
@@ -210,11 +208,7 @@ To use Device Guard Readiness Tool, complete the following steps:
             IAT in Executable Section Count:        0
     ```
 
-
-
 Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
-
-
 
 <table>
 <colgroup>
@@ -274,7 +268,6 @@ Use the following table to interpret the output and determine what driver code c
 </tbody>
 </table>
 
-
 ---------
 
 Unsupported Relocs
@@ -282,8 +275,6 @@ Unsupported Relocs
 <p>In Windows 10, version 1507 through Windows 10, version 1607, because of the use of Address Space Layout Randomization (ASLR) an issue can arise with address alignment and memory relocation.  The operating system needs to relocate the address from where the linker set its default base address to the actual location that ASLR assigned. This relocation cannot straddle a page boundary.  For example, consider a 64-bit address value that starts at offset 0x3FFC in a page. It’s address value overlaps over to the next page at offset 0x0003. This type of overlapping relocs is not supported prior to Windows 10, version 1703.</p>
 
 <p>This situation can occur when a global struct type variable initializer has a misaligned pointer to another global, laid out in such a way that the linker cannot move the variable to avoid the straddling relocation. The linker will attempt to move the variable, but there are situations where it may not be able to do so (for example with large misaligned structs or large arrays of misaligned structs). Where appropriate, modules should be assembled using the <a href="https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking" data-raw-source="[/Gy (COMDAT)](https://docs.microsoft.com/cpp/build/reference/gy-enable-function-level-linking)">/Gy (COMDAT)</a> option to allow the linker to align module code as much as possible.</p>
-
-
 
 ```cpp
 #include <pshpack1.h>
@@ -345,10 +336,9 @@ There are other situations involving the use of assembler code, where this issue
 
 ---------
 
-
 ## Script customization
 
-Below is the list of Regkeys and their values for customization of the script to Device Guard and Credential Guard without UEFI Lock.
+Below is the list of Regkeys and their values for customization of the script to HVCI and Credential Guard without UEFI Lock.
 
 To enable HVCI and CG without UEFI Lock:
 
@@ -364,17 +354,11 @@ Use the Driver Verifier code integrity option flag (0x02000000) to enable extra 
 ```console
 verifier.exe /flags 0x02000000 /driver <driver.sys>
 ```
+
 To choose this option if using the verifier GUI, select *Create custom settings* (for code developers), select *Next*, and then select _Code integrity checks_.
 
 You can use the verifier command line /query option to display the current driver verifier information.
 
 ```console
-verifier /query 
+verifier /query
 ```
-
-
-
-
-
-
-

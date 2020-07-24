@@ -6,8 +6,6 @@ ms.date: 10/17/2018
 
 # Using Device Interfaces
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 To receive IOCTLs from user mode, the client driver calls [**WdfDeviceCreateDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) with a reference string, as shown here:
 
 ```cpp

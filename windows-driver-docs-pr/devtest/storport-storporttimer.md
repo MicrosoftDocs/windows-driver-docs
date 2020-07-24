@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **HW\_TIMER** routine must be defined if a call to **StorPortNotification(RequestTimerCall)** is made.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

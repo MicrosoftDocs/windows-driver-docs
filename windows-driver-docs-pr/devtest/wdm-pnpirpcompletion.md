@@ -26,9 +26,7 @@ The following PnP IRPs are excluded from this rule:
 -   IRP\_MN\_QUERY\_STOP\_DEVICE
 -   IRP\_MN\_QUERY\_REMOVE\_DEVICE
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

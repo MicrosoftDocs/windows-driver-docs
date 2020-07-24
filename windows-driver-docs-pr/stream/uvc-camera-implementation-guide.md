@@ -469,7 +469,7 @@ UCHAR Example2_MSOS20DescriptorSet_UVCFaceAuthForFutureWindows[0x3C] =
 }
 ```
 
-When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in this document: https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices.
+When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in this document: https://docs.microsoft.com/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices.
 
 However, if the device vendor must support older versions of Windows and/or need to enable MJPEG decompression within Frame Server, the EnableDshowRedirection registry entry must be added.
 
@@ -490,7 +490,7 @@ The payload for each tag must be a Unicode String. The UVC-FSSensorGroupId paylo
 
 > {XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}
 
-The value of the GUID must be the same between the Type 1 and Type 2 Cameras and both cameras must be added to the same physical chassis. For built in cameras, the physical chassis is the computer itself. For external cameras, both Type 1 and Type 2 Camera modules must be built into the same physical device connected to the computer. 
+The value of the GUID must be the same between the Type 1 and Type 2 Cameras and both cameras must be added to the same physical chassis. For built in cameras, the physical chassis is the computer itself. For external cameras, both Type 1 and Type 2 Camera modules must be built into the same physical device connected to the computer.
 
 ## Custom Device Interface Categories for Sensor Groups
 
@@ -517,7 +517,7 @@ See [UVC Control Cache](camera-device-uvc-control-cache.md)
 
 ## BOS and MS OS 2.0 descriptor
 
-UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](https://msdn.microsoft.com/en-us/library/windows/hardware/dn385747.aspx). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
+UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](https://docs.microsoft.com/previous-versions/dn385747(v=msdn.10)). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
 
 ### Microsoft OS 2.0 Descriptor Set Header
 
@@ -526,7 +526,7 @@ UVC compliant camera can specify Windows specific device configuration values in
 | 0      | wLength          | 2            | Length in bytes of this header, must be 10.                                  |
 | 2      | wDescriptorType  | 2            | MSOS20\_SET\_HEADER\_DESCRIPTOR                                              |
 | 4      | dwWindowsVersion | 4            | Windows version.                                                             |
-| 8      | wTotalLength     | 2            | The size of the entire MS OS 2.0 descrioptor set including this header size. |
+| 8      | wTotalLength     | 2            | The size of the entire MS OS 2.0 descriptor set including this header size. |
 
 ### Microsoft OS 2.0 Registry Property Descriptor
 

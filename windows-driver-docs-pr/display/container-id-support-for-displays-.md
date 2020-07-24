@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 This topic describes Container ID support for displays—visual representation of devices that are embedded within a display or monitor device.
 
-|                                                                                   |                                          |
-|-----------------------------------------------------------------------------------|------------------------------------------|
-| Minimum Windows Display Driver Model (WDDM) version                               | 1.2                                      |
-| Minimum Windows version                                                           | 8                                        |
-| Driver implementation—Full graphics and Display only                              | Mandatory                                |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests |  [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4) |
+**Minimum Windows Display Driver Model (WDDM) version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Display only**: Mandatory
+
+**[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4)
+
 
  
 

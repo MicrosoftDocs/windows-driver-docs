@@ -11,8 +11,8 @@ ms.date: 10/17/2018
 
 This function returns the lifetime percentage warning and error thresholds, which if hit or surpassed, indicate a problem with the NVDIMM-N.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

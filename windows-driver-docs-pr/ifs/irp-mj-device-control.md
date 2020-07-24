@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_DEVICE_CONTROL
+title: IRP_MJ_DEVICE_CONTROL (IFS)
 description: IRP\_MJ\_DEVICE\_CONTROL
 ms.assetid: 7a7f7372-ed69-42c1-95e2-b5a593d77d22
 keywords: ["IRP_MJ_DEVICE_CONTROL Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_DEVICE\_CONTROL
+# IRP\_MJ\_DEVICE\_CONTROL (IFS)
 
 
 ## When Sent
@@ -57,7 +57,7 @@ Pointer to a caller-supplied output buffer to be passed to the device driver for
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_DEVICE\_CONTROL and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_DEVICE\_CONTROL and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_DEVICE\_CONTROL.

@@ -70,7 +70,7 @@ The driver either failed to unlock pages that it locked (parameter 1 value is 0x
 Resolution
 ----------
 
-The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 **If the parameter 1 value is 0x0**
 

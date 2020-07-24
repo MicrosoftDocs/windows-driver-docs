@@ -15,7 +15,7 @@ The AF\_INET6 address family is the address family for IPv6.
 
 ### Socket Address Structure
 
-An IPv6 transport address is specified with the [**SOCKADDR\_IN6**](https://docs.microsoft.com/windows/desktop/api/ws2ipdef/ns-ws2ipdef-sockaddr_in6) structure.
+An IPv6 transport address is specified with the [**SOCKADDR\_IN6**](https://docs.microsoft.com/windows/win32/api/ws2ipdef/ns-ws2ipdef-sockaddr_in6_lh) structure.
 
 ### Socket Types
 

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the driver does not call **KeReleaseInStackQueuedSpinLock** without first acquiring the lock via **KeAcquireInStackQueuedSpinLock**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

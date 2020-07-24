@@ -21,9 +21,7 @@ The **RequestGetStatusValid** rule that specifies that [**WdfRequestGetStatus**]
 -   When [**WdfRequestSend**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) returns failure.
 -   When the request has been sent with WDF\_REQUEST\_SEND\_OPTION\_SYNCHRONOUS.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

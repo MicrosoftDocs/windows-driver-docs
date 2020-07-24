@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the driver's implementations of [**HwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) and [**VirtualHwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-virtual_hw_find_adapter) return a valid status. A valid status is one of the following: **SP\_RETURN\_FOUND**, **SP\_RETURN\_ERROR**, **SP\_RETURN\_BAD\_CONFIG**, or **SP\_RETURN\_NOT\_FOUND**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

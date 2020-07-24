@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Framework Device Object
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The framework device object is exposed to drivers by the [IWDFDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice) interface. The framework device object is the framework representation of the device on the system. Each device object has a parent driver object.
 

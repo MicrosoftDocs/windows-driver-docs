@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that **KeSetEvent** is not called twice on the same event object. If the same event object is passed to the routine, the driver fails the rule.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

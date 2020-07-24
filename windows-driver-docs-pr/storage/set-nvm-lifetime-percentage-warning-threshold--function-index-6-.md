@@ -11,8 +11,8 @@ ms.date: 10/17/2018
 
 This function sets the warning threshold for remaining non-volatile memory lifetime percentage.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

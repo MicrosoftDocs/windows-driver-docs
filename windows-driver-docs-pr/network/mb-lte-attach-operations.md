@@ -99,7 +99,7 @@ The Event InformationBuffer contains an MBIM_MS_LTE_ATTACH_CONFIG_INFO structure
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_MS_LTE_ATTACH_CONFIG | Not applicable | Not applicable |
 | Response | MBIM_MS_LTE_ATTACH_CONFIG_INFO | MBIM_MS_LTE_ATTACH_CONFIG_INFO | MBIM_MS_LTE_ATTACH_CONFIG_INFO |
@@ -236,7 +236,7 @@ The Event InformationBuffer contains an MBIM_MS_LTE_ATTACH_STATUS structure.
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_LTE_ATTACH_STATUS | MBIM_MS_LTE_ATTACH_STATUS |

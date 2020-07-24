@@ -40,9 +40,7 @@ Finally, this rule specifies that the driver must not return from the dispatch r
 
 This rule does not verify that the driver is holding an open handle to the correct registry key when it calls [**ZwClose**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) or [**ZwDeleteKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

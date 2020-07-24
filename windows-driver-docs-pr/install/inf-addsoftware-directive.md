@@ -9,14 +9,14 @@ ms.date: 10/17/2018
 
 Each **AddSoftware** directive describes the installation of standalone software.  Use this directive in an INF file of the **SoftwareComponent** setup class. For more details on software components, see [Using a Component INF File](using-a-component-inf-file.md).  This directive is supported for Windows 10 version 1703 and later.
 
-Valid installation types depend on the [target platform](../develop/windows-10-editions-for-universal-drivers.md). For example, Desktop supports MSI installers and setup EXEs.  **Note**:  Type 2 is supported in Universal Drivers, Type 1 is desktop-only.
+Valid installation types depend on the [target platform](../develop/target-platforms.md). For example, Desktop supports MSI installers and setup EXEs.  **Note**:  Type 2 is supported in Universal Drivers, Type 1 is desktop-only.
 
 When a software component INF file specifies **AddSoftware**, the system queues software to be installed after device installation.  There is no guarantee when or if the software will be installed.
 If referenced software fails to install, the system tries again when the referencing software component is updated.
 
 An **AddSoftware** directive is used within an [**INF *DDInstall*.Software**](inf-ddinstall-software-section.md) section.
 
-```ini
+```inf
 [DDInstall.Software]
 AddSoftware=SoftwareName,[flags],software-install-section
 ```
@@ -47,7 +47,7 @@ Each INF-writer-created section name must be unique within the INF file and must
 
 An **AddSoftware** directive must reference a named *software-install-section* elsewhere in the INF file.  Each such section has the following form:
 
-```ini
+```inf
 [software-install-section]
 
 SoftwareType=type-code
@@ -119,7 +119,7 @@ The system replaces the string above with the device instance ID of the software
 
 For example:
 
-```ini
+```inf
 	[DDInstall.Software]
 	AddSoftware=ContosoControlPanel,,Contoso_ControlPanel_Software
 
@@ -136,7 +136,7 @@ The above example results in a command line like this:
 
 If SoftwareArguments contains multiple arguments:
 
-```ini
+```inf
 	SoftwareArguments=arg1,<<DeviceInstanceID>>,arg2
 ```
 

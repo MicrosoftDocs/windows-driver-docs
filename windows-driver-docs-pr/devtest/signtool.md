@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # SignTool
 
 
-SignTool (Signtool.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that digitally-signs files, verifies signatures in files, and time stamps files.
+SignTool (Signtool.exe) is a command-line [CryptoAPI](https://docs.microsoft.com/windows/win32/seccrypto/cryptography-portal) tool that digitally-signs files, verifies signatures in files, and time stamps files.
 
 ```
     SignTool [Operation] [Options] [FileName ...]
@@ -250,9 +250,9 @@ For the **catdb** command, a file must be a catalog file for a [driver package](
 
 SignTool supports a large number of options. The options described in this topic are limited to the ones that you can use to sign or verify a driver package or driver file.
 
-For a complete list of SignTool parameters, see the Microsoft [SignTool](https://go.microsoft.com/fwlink/p/?linkid=62661) website.
+For a complete list of SignTool parameters, see the Microsoft [SignTool](https://docs.microsoft.com/windows/win32/seccrypto/signtool) website.
 
-For more information about signing files, see the Microsoft [Cryptography Tools](https://go.microsoft.com/fwlink/p/?linkid=10637) website.
+For more information about signing files, see the Microsoft [Cryptography Tools](https://docs.microsoft.com/windows/win32/seccrypto/cryptography-tools) website.
 
 A 32-bit version of SignTool is located in the bin\\i386 folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
 

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **PowerDownFail** rule specifies that a FDO or FIDO driver should not fail an IRP\_MN\_SET\_POWER request when the device is powering down. This rule only applies to FDO and FIDO drivers.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

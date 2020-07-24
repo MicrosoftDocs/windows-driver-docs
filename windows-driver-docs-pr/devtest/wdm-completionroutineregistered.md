@@ -20,9 +20,7 @@ The **CompletionRoutineRegistered** rule specifies that if the dispatch routine 
 
 The **IoSetCompletionRoutineEx** routine allocates memory that remains allocated until the **IoCompletion** routine executes. Drivers must ensure that their **IoCompletion** routine executes by calling **IoCallDriver** or **PoCallDriver**; otherwise, the kernel will leak memory.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

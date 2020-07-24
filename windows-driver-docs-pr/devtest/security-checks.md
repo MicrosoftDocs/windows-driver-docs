@@ -1,13 +1,12 @@
 ---
-title: Security Checks
-description: Security Checks
+title: Driver Verifier Security Checks
+description: The Security Checks option of Driver Verifier monitors the driver for common errors that can result in security vulnerabilities.
 ms.assetid: fca92bad-7bb8-4a30-b303-48fd54c20c42
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Security Checks
-
+# Driver Verifier Security Checks
 
 The Security Checks option of Driver Verifier monitors the driver for common errors that can result in security vulnerabilities. This option is available starting in Windows Vista.
 

@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The SpinLockRelease rule specifies that a driver must not release a spin lock ([**NdisReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreleasespinlock)) without first acquiring it.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

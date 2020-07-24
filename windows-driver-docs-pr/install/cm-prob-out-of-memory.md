@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_OUT_OF_MEMORY
+# Code 3 - CM_PROB_OUT_OF_MEMORY
 
-This function is reserved for system use.
-
-Running out of memory − the system is probably running low on system memory.
+This Device Manager error message indicates that the system is probably running low on system memory.
 
 ## Error Code
 

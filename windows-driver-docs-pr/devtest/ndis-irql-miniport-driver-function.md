@@ -46,9 +46,7 @@ This rule verifies functions for NDIS miniport driver logging, NDIS ports, and N
 **NdisMUpdateSharedMemory**
 **NdisMWriteLogData**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

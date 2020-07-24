@@ -19,10 +19,15 @@ The parent bus driver (and bus filter drivers) should not handle this request fo
 
 Upper and lower-filter drivers do not handle this IRP.
 
+## Value
+
+0x0D
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

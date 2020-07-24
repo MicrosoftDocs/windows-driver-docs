@@ -4,14 +4,12 @@ description: Debugging a NetAdapterCx client driver
 ms.assetid: EE8EA3DA-33E7-4EED-B991-38A21CAA699E
 keywords:
 - debugging NetAdapterCx client drivers, debugging NetAdapterCx client drivers
-ms.date: 06/05/2017
+ms.date: 06/17/2020
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # Debugging a NetAdapterCx client driver
-
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 You can use [Windows Driver Framework Extensions (Wdfkd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-) commands to debug your client driver.  In addition, [!ndiskd.netadapter](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ndiskd-netadapter) will show networking-specific properties of your adapter.
 
@@ -27,5 +25,5 @@ You can use the following !ndiskd commands with a NetAdapterCx client driver:
     *  Shows [**NET_RING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringbuffer/ns-netringbuffer-_NET_RING) information.
 *  [**!ndiskd.netpacket**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ndiskd-netpacket)
     *  Shows information about a [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacket/ns-netpacket-_net_packet).
-*  [**!ndiskd.netpacketfragment**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ndiskd-netpacketfragment)
+*  [**!ndiskd.netfragment**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-ndiskd-netfragment)
     *  Shows information about a [**NET_PACKET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netpacket/ns-netpacket-_net_packet_fragment).

@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_FLUSH_BUFFERS
+title: IRP_MJ_FLUSH_BUFFERS (IFS)
 description: IRP\_MJ\_FLUSH\_BUFFERS
 ms.assetid: 13df0d84-0320-4d7e-9acc-8f913ba6afaa
 keywords: ["IRP_MJ_FLUSH_BUFFERS Installable File System Drivers"]
@@ -13,7 +13,7 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_FLUSH\_BUFFERS
+# IRP\_MJ\_FLUSH\_BUFFERS (IFS)
 
 
 ## When Sent
@@ -47,7 +47,7 @@ Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardwar
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
 Pointer to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_FLUSH\_BUFFERS and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_FLUSH\_BUFFERS and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 Specifies IRP\_MJ\_FLUSH\_BUFFERS.

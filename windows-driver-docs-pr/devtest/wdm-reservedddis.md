@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **ReservedDDIs** rule verifies that drivers do not call any reserved functions.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

@@ -25,9 +25,7 @@ This rule verifies the following NDIS functions:
 **NdisFreeTimerObject**
 **NdisSetTimerObject**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------

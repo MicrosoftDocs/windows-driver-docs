@@ -15,10 +15,15 @@ The PnP manager sends this IRP to get the capabilities of a device, such as whet
 
 Function and filter drivers can handle this request if they alter the capabilities supported by the bus driver. Bus drivers must handle this request for their child devices.
 
+## Value
+
+0x09
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 

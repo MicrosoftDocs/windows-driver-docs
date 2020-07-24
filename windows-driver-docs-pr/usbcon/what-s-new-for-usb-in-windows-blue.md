@@ -115,7 +115,7 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
     -   [USB 3.0 Suspend Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj125210(v=vs.85))
 -   MUTT and SuperMUTT devices are now USB-IF compliance devices. The devices and the accompanying software package are integrated in to the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.
 
-    MUTT hardware can be purchased from [JJG Technologies](http://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](https://msdn.microsoft.com/windows/hardware/jj590752) and run MUTTUtil.exe. For more information, see the documentation included with the package.
+    MUTT hardware can be purchased from [JJG Technologies](https://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](https://msdn.microsoft.com/windows/hardware/jj590752) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
 ## Improved USB diagnostic tools and debugger extensions
 

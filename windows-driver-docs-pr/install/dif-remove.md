@@ -55,15 +55,15 @@ When a user removes a device in Device Manager.
 Supplies a handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains the device to be removed.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure for the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure for the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_REMOVEDEVICE_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_removedevice_params) structure might be associated with the *DeviceInfoData*.
+An [**SP_REMOVEDEVICE_PARAMS**](https://docs.microsoft.com/windows/win32/api/setupapi/ns-setupapi-sp_removedevice_params) structure might be associated with the *DeviceInfoData*.
 
-There are no class installation parameters for the request if the DI_CLASSINSTALLPARAMS flag is clear in the [**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a). In this case, no hardware profile is specified and the device is to be removed from the system as a whole.
+There are no class installation parameters for the request if the DI_CLASSINSTALLPARAMS flag is clear in the [**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a). In this case, no hardware profile is specified and the device is to be removed from the system as a whole.
 
 ### Installer Output
 
@@ -130,11 +130,11 @@ Requirements
 
 [**SetupDiRemoveDevice**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiremovedevice)
 
-[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
+[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_REMOVEDEVICE_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_removedevice_params)
+[**SP_REMOVEDEVICE_PARAMS**](https://docs.microsoft.com/windows/win32/api/setupapi/ns-setupapi-sp_removedevice_params)
 
  
 

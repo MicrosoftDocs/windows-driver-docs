@@ -190,7 +190,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_SYS_CAPS_INFO | Not applicable |
@@ -238,7 +238,7 @@ This CID continues to be query-only and will return a MBIM_MS_DEVICE_CAPS_INFO_V
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_DEVICE_CAPS_INFO_V2 | Not applicable |
@@ -302,7 +302,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable | Not applicable |
 | Response | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable |
@@ -356,7 +356,7 @@ The Event InformationBuffer contains an MBIM_MS_SLOT_INFO structure. The functio
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_MS_SLOT_INFO_REQ | Not applicable |
 | Response | Not applicable | MBIM_MS_SLOT_INFO | MBIM_MS_SLOT_INFO |

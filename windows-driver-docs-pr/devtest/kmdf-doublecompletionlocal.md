@@ -28,9 +28,7 @@ The following methods should not be called twice in a row for the same request:
 
 The difference between this rule and the [DoubleCompletion](wdm-doublecompletion.md) rule is that this rule is only performed within the default I/O queue callback functions.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

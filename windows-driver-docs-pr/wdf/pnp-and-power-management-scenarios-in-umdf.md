@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # PnP and Power Management Scenarios in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The following PnP and power management scenarios show the sequences in which the framework calls a UMDF driver's event callback functions:
 

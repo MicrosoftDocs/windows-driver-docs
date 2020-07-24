@@ -20,9 +20,7 @@ The **MarkQueryRelations** rule specifies that the driver should pend the IRP\_M
 
 This rule only applies to FDO and FIDO device object of the bus driver when processing a **RemovalRelations** request.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

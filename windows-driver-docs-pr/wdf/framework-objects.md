@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Framework Objects
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The following table provides basic information about each framework object, links to the object's interface, and links to more information about the core framework objects.
 

@@ -26,9 +26,7 @@ Explicitly assume/assert for the sake of analysis that the WdfExecutionLevelPass
 
 If your driver processes some IOCTLs at PASSIVE\_LEVEL and others at DISPATCH\_LEVEL, then you may need to exclude the IOCTLs that are processed at DISPATCH\_LEVEL from the verification. You can use **\_\_analysis\_assume** to do this. Here is an example: \_\_analysis\_assume(IoControlCode != IOCTL\_RH\_QUERY\_DUMMY\_TRANSLATOR\_INTERFACE), where IOCTL\_RH\_QUERY\_DUMMY\_TRANSLATOR\_INTERFACE is processed at DISPATCH\_LEVEL in the driver EvtIoDeviceControlCallback.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

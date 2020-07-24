@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **PagedCode** rule specifies that the driver calls the [**PAGED\_CODE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) macro only when it is executing at **IRQL &lt;= APC\_LEVEL**.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

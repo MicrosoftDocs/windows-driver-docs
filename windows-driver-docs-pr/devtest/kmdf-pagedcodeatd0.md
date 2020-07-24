@@ -20,9 +20,7 @@ The **PagedCodeAtD0** rule specifies that a driver must not mark code as pageabl
 
 When a function is marked pageable and the code section is subsequently paged out, the function generates a page fault, which could impact the fast resume behavior of the computer. This happens because the client driver will have to wait until the system drivers can service this page fault.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------

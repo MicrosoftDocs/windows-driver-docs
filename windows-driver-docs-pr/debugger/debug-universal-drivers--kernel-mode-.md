@@ -3,7 +3,7 @@ title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
 description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
-ms.date: 02/21/2019
+ms.date: 07/20/2020
 ms.localizationpriority: medium
 ---
 
@@ -353,7 +353,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     To install the driver, you will need the following files.
 
-    |                                   |                                                                                   |
+    | File name                         | Description                                                                       |
     |-----------------------------------|-----------------------------------------------------------------------------------|
     | TabletAudioSample.sys             | The driver file.                                                                  |
     | TabletAudioSample.pdb             | The driver symbol file.                                                           |
@@ -372,16 +372,15 @@ In the next section, you will copy the code to the target system, and install an
 
 ## <span id="install"></span>Section 4: Install the Sysvad audio driver sample on the target system
 
-
 *In Section 4, you will use devcon to install the Sysvad audio driver.*
 
 **-&gt; On the target system**
 
 The computer where you install the driver is called the *target computer* or the *test computer*. Typically, this is a separate computer from the computer on which you develop and build the driver package. The computer where you develop and build the driver is called the *host computer*.
 
-The process of moving the driver package to the target computer and installing the driver is called *deploying* the driver. You can deploy the sample Sysvad driver, automatically or manually.
+The process of moving the driver package to the target computer and installing the driver is called *deploying* the driver.
 
-Before you manually deploy a driver, you must prepare the target computer by turning on test signing. You also need to locate the DevCon tool in your WDK installation. After that you’re ready to run the built driver sample on the target system.
+Before you deploy a driver, you must prepare the target computer by turning on test signing.  After that you’re ready to run the built driver sample on the target system.
 
 To install the driver on the target system, perform the following steps.
 
@@ -403,11 +402,6 @@ To install the driver on the target system, perform the following steps.
 
     7. The PC will start with the new values in place.
 
-2.  **&lt;- On the host system**
-
-    Navigate to the Tools folder in your WDK installation and locate the DevCon tool. For example, look in the following folder:
-
-    *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\devcon.exe*
 
 3.  **-&gt; On the target system**
 
@@ -430,11 +424,6 @@ To install the driver on the target system, perform the following steps.
 
     The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the Syvad sample, the hardware ID is:
     `root\sysvad_TabletAudioSample`
-
-    On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, and enter the following command: `devcon status root\sysvad_TabletAudioSample`
-       
-    Status information is displayed durring the devcon install.
-
 
 4.  **Examine the driver in Device Manager**
 

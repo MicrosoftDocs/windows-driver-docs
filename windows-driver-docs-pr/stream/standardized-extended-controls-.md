@@ -2,7 +2,7 @@
 title: Extended camera controls
 description: Extended controls use the KSPROPERTY mechanism to expose camera controls to the application.
 ms.assetid: B480C007-7DCA-4CFB-9169-BE2D0B2D2137
-ms.date: 04/20/2017
+ms.date: 06/19/2020
 ms.localizationpriority: medium
 ---
 
@@ -13,16 +13,27 @@ Extended controls use the **KSPROPERTY** mechanism to expose camera controls to 
 The following list of standardized extended controls (defined by Media Foundation) enable additional Windows camera features:
 
 - [Metadata](#metadata)
+
 - [Focus priority](#focus-priority)
+
 - [Focus state](#focus-state)
+
 - [Extended region of interest (ROI)](#extended-region-of-interest-roi)
+
 - [Photo confirmation](#photo-confirmation)
+
 - [Photo sequence submode](#photo-sequence-submode)
+
 - [EXIF and HW JPEG encoder](#exif-and-hw-jpeg-encoder)
+
 - [Integer ISO](#integer-iso)
+
 - [Advanced focus](#advanced-focus)
+
 - [Flash](#flash)
+
 - [Zoom](#zoom)
+
 - [Scene mode](#scene-mode)
 
 Some of the controls are exposed to applications as asynchronous controls and others are exposed as synchronous controls.
@@ -69,12 +80,15 @@ If the driver supports metadata and the client does not want any metadata, DevPr
 The following structures describe the layout of the metadata items to be filled by the camera driver in the metadata buffer.
 
 - [**KSCAMERA\_MetadataId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-kscamera_metadataid)
+
 - [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
+
 - [**KSCAMERA\_METADATA\_PHOTOCONFIRMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_photoconfirmation)
 
 The list below contains the layout of a metadata item. This must be 8-byte aligned.
 
 - [**KSCAMERA\_METADATA\_ITEMHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_metadata_itemheader)
+
 - Metadata
 
 The photo confirmation metadata is identified by **MetadataId\_PhotoConfirmation**. When present, it indicates that the preview frame associated is a photo confirmation frame. Photo confirmation metadata is parsed by the DevProxy.
@@ -83,34 +97,37 @@ The custom metadata is identified by a **MetadataId** that starts from **Metadat
 
 The following IMFAttributes are defined in **mfapi.h**. These are required by the MF capture pipeline and/or WinRT. Note that MFT0 does not set any IMFAttributes for photo confirmation since the photo confirmation frame will not flow beyond DevProxy.
 
-| Attribute (GUID)                            | Data type |
-|---------------------------------------------|-----------|
-| **MF\_CAPTURE\_METADATA\_FOCUSSTATE**       | UINT32    |
-| **MF\_CAPTURE\_METADATA\_FACEROIS**         | Blob      |
-| **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** | IUnknown  |
+| Attribute (GUID) | Data type |
+|--|--|
+| **MF\_CAPTURE\_METADATA\_FOCUSSTATE** | UINT32 |
+| **MF\_CAPTURE\_METADATA\_FACEROIS** | Blob |
+| **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** | IUnknown |
 
 The **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** IMFAttributes are created and attached to **MFSampleExtension\_CaptureMetadata** by the DevProxy, which contains a pointer to the IMFMediaBuffer interface associated with the raw metadata buffer (**KSSTREAM\_METADATA\_INFO.Data**).
 
 When the MFT0 receives an IMFSample, it gets the raw metadata buffer from the **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** and parses any additional custom metadata items such as focus state and converts them into corresponding IMFAttributes defined above and attaches them to the **MFSampleExtension\_CaptureMetadata** attribute bag.
 The following IMFAttributes must be carried over by the MF pipeline and any third-party supplied MFTs:
 
-| Name                                           | Type                          |
-|------------------------------------------------|-------------------------------|
-| **MFSampleExtension\_CaptureMetadata**         | **IUnknown** (IMFAttributes)  |
-| **MFSampleExtension\_EOS**                     | **UINT32** (Boolean)          |
-| **MFSampleExtension\_PhotoThumbnail**          | **IUnknown** (IMFMediaBuffer) |
-| **MFSampleExtension\_PhotoThumbnailMediaType** | **IUnknown** (IMFMediaType)   |
+| Name | Type |
+|--|--|
+| **MFSampleExtension\_CaptureMetadata** | **IUnknown** (IMFAttributes) |
+| **MFSampleExtension\_EOS** | **UINT32** (Boolean) |
+| **MFSampleExtension\_PhotoThumbnail** | **IUnknown** (IMFMediaBuffer) |
+| **MFSampleExtension\_PhotoThumbnailMediaType** | **IUnknown** (IMFMediaType) |
 
 To access the raw metadata buffer, the MFT0 does the following:
 
 1. Calls **GetUnknown** on **MFSampleExtension\_CaptureMetadata** from the IMFSample interface to get the IMFAttributes interface for the attribute bag.
-2. Calls **GetUnknown** on **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** from the IMFAttributes interface obtained from the previous step to get the IMFMediaBuffer interface.
-3. Calls Lock to get the raw metadata buffer associated with IMFMediaBuffer.
+
+1. Calls **GetUnknown** on **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** from the IMFAttributes interface obtained from the previous step to get the IMFMediaBuffer interface.
+
+1. Calls Lock to get the raw metadata buffer associated with IMFMediaBuffer.
 
 To add the required IMFAttributes to the **MFSampleExtension\_CaptureMetadata** attribute bag, the MFT0 does the following:
 
 1. Calls **GetUnknown** on **MFSampleExtension\_CaptureMetadata** from the IMFSample interface to get the IMFAttributes interface for the attribute bag.
-2. Calls **SetUINT32**, **SetBlob**, or **SetUnknown** on **MF\_CAPTURE\_METADATA\_XXX** from the IMFAttributes interface obtained from the previous step based on the GUID and data type specified in the table above.
+
+1. Calls **SetUINT32**, **SetBlob**, or **SetUnknown** on **MF\_CAPTURE\_METADATA\_XXX** from the IMFAttributes interface obtained from the previous step based on the GUID and data type specified in the table above.
 
 ### Mandatory metadata attributes
 
@@ -142,31 +159,31 @@ The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE**](https://docs.microsoft.
 
 ## EXIF and HW JPEG encoder
 
-The pipeline is not required to process or warp any EXIF data for the HW JPEG encoder; therefore, the EXIF data format is provided by the driver, MFT0, and OEM HW JPEG encoder. OEMs partners can define any custom attribute GUID and variant type for the EXIF attribute and attach it to the **MFSampleExtension\_CaptureMetaData** attribute bag for it to be consumed by the OEM components. If a HW JPEG encoder is available, the pipeline photo sink component will load the HW JPEG encoder and set the EXIF data held in the **MFSampleExtension\_CaptureMetaData** attribute bag onto the HW JPEG encoder as an EXIF encoder option using the [IPropertyBag2::Write](https://go.microsoft.com/fwlink/?LinkId=331589) method.
+The pipeline is not required to process or warp any EXIF data for the HW JPEG encoder; therefore, the EXIF data format is provided by the driver, MFT0, and OEM HW JPEG encoder. OEMs partners can define any custom attribute GUID and variant type for the EXIF attribute and attach it to the **MFSampleExtension\_CaptureMetaData** attribute bag for it to be consumed by the OEM components. If a HW JPEG encoder is available, the pipeline photo sink component will load the HW JPEG encoder and set the EXIF data held in the **MFSampleExtension\_CaptureMetaData** attribute bag onto the HW JPEG encoder as an EXIF encoder option using the [IPropertyBag2::Write](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768195(v=vs.85)) method.
 
 The encoder option property bag contains an array of PROPBAG2 structures that specify the available encoding option properties. The EXIF encoder option set onto HW JPEG encoder is identified by the following property in the encoder option property bag:
 
-| Property name      | VARTYPE         | Value                                                                                                                                                       | Applicable codecs |
-|--------------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **SampleMetaData** | **VT\_UNKNOWN** | Pointer to an IMFAttributes interface for **MFSampleExtension\_CaptureMetaData** attribute bag that contains an OEM sub attribute containing the EXIF data. | JPEG              |
+| Property name | VARTYPE | Value | Applicable codecs |
+|--|--|--|--|
+| **SampleMetaData** | **VT\_UNKNOWN** | Pointer to an IMFAttributes interface for **MFSampleExtension\_CaptureMetaData** attribute bag that contains an OEM sub attribute containing the EXIF data. | JPEG |
 
 The **MFSampleExtension\_CaptureMetaData** attribute bag can only contain any OEM defined EXIF sub attribute that the MFT0 and HW JPEG encoder can read to hold the EXIF data. To pass EXIF data from the driver to the HW JPEG encoder, the driver and MFT0 must do the following:
 
 1. The driver provides custom EXIF metadata in the metadata buffer supplied by the pipeline. This is attached to **MFSampleExtension\_CaptureMetadata** as an **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** IMFAttribute by DevProxy when the sample is returned back to DevProxy.
 
-2. When the MFT0 receives an IMFSample, it gets the raw metadata buffer from **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** and parses the custom EXIF metadata item and converts it to an OEM defined IMFAttribute and attaches it to the **MFSampleExtension\_CaptureMetadata** attribute bag.
+1. When the MFT0 receives an IMFSample, it gets the raw metadata buffer from **MF\_CAPTURE\_METADATA\_FRAME\_RAWSTREAM** and parses the custom EXIF metadata item and converts it to an OEM defined IMFAttribute and attaches it to the **MFSampleExtension\_CaptureMetadata** attribute bag.
 
 To pass EXIF data from the MFT0 to the HW JPEG encoder, the pipeline photo sink does the following:
 
 1. Calls **GetUnknown** on **MFSampleExtension\_CaptureMetadata** from IMFSample to get the IMFAttributes interface for the attribute bag when IMFSample is received.
 
-2. Calls [IPropertyBag2::Write](https://go.microsoft.com/fwlink/?LinkId=331589) to set the encoder option property, identified by SampleMetadata, to the HW JPEG encoder. The encoder option property contains the IMFAttributes interface obtained from the previous step. This interface contains all custom sub attributes including the OEM EXIF sub attribute, and the standardized sub attributes in the **Metadata** section discussed earlier in this topic.
+1. Calls [IPropertyBag2::Write](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768195(v=vs.85)) to set the encoder option property, identified by SampleMetadata, to the HW JPEG encoder. The encoder option property contains the IMFAttributes interface obtained from the previous step. This interface contains all custom sub attributes including the OEM EXIF sub attribute, and the standardized sub attributes in the **Metadata** section discussed earlier in this topic.
 
 To retrieve the EXIF data for further processing, the HW JPEG encoder does the following:
 
 1. Calls **IPropertyBag2::Read** to retrieve the property value for the property identified by the SampleMetadata property name and **VT\_UNKNOWN** type. When returned, the **VARIANT.punkVal** receives the IMFAttributes interface for **MFSampleExtension\_CaptureMetadata**.
 
-2. Calls **GetBlob** or **GetUnknown** on the OEM EXIF sub attribute from the interface obtained from the previous step to get the EXIF data blob based on the GUID and data type of the OEM EXIF sub attribute.
+1. Calls **GetBlob** or **GetUnknown** on the OEM EXIF sub attribute from the interface obtained from the previous step to get the EXIF data blob based on the GUID and data type of the OEM EXIF sub attribute.
 
 ## Thumbnail
 

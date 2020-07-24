@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **DebugBreakUsage** rule specifies that the driver must not call [**DbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpoint) or [**DbgBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpointwithstatus). This rule only applies when you are building a non-debug version of the driver.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

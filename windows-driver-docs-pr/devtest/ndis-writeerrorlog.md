@@ -20,9 +20,7 @@ The WriteErrorLog rule specifies that if the **NdisMAllocateSharedMemory** funct
 
 Generally, it is a good practice to log an error entry in the log whenever an allocation memory operation fails. Most of the allocation operations occur in the *MiniportInitializeEx* callback function. See the following code example for more information about how to log an error.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 Example
 -------

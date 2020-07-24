@@ -20,9 +20,7 @@ The **PowerDownAllocate** rule specifies that an FDO and FIDO driver should not 
 
 This rule only applies to FDO and FIDO drivers.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

@@ -33,9 +33,9 @@ Receiving a segment that meets any of the following criteria must trigger an exc
 
 2.  The segment has an invalid TCP or IP checksum.
 
-3.  The segment contains any of the SYN, URG, RST, FIN in its TCP header, as defined in section 3.1 of [RFC 793](http://www.ietf.org/rfc/rfc793.txt). More broadly, if the segment contains any flag other than PSH or ACK, it should trigger an exception. For ECN flags, see exception 8 below.
+3.  The segment contains any of the SYN, URG, RST, FIN in its TCP header, as defined in section 3.1 of [RFC 793](https://www.ietf.org/rfc/rfc793.txt). More broadly, if the segment contains any flag other than PSH or ACK, it should trigger an exception. For ECN flags, see exception 8 below.
 
-4.  The segment contains one or more TCP options other than the TCP timestamp option. See [RFC 1323](http://www.ietf.org/rfc/rfc1323.txt) for a discussion of the TCP timestamp option.
+4.  The segment contains one or more TCP options other than the TCP timestamp option. See [RFC 1323](https://www.ietf.org/rfc/rfc1323.txt) for a discussion of the TCP timestamp option.
 
 5.  The segment contains IPv4 options or IPv6 extension headers.
 
@@ -47,7 +47,7 @@ Receiving a segment that meets any of the following criteria must trigger an exc
 
     -   "Responding to Queries for RSC Statistics" in [Programming Considerations for RSC Drivers](programming-considerations-for-rsc-drivers.md).
 
-8.  The segment contains ECN flags, as defined in [RFC 3168](http://www.ietf.org/rfc/rfc3168.txt), that meet one or both of the following criteria:
+8.  The segment contains ECN flags, as defined in [RFC 3168](https://www.ietf.org/rfc/rfc3168.txt), that meet one or both of the following criteria:
 
     1.  The segment contains a different value for the ECN field (ECT, CE) in the IP header than the previous segment.
 
