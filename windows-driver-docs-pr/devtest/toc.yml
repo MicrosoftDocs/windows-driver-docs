@@ -1920,6 +1920,8 @@
             href: color-coding-in-the-trace-tree-pane.md
           - name: "Trace Tree Pane Actions"
             href: trace-tree-pane-actions.md
+          - name: "Saving Defect Traces"
+            href: saving-defect-traces.md
         - name: "Source Code Pane"
 # Auto-expanded node
           items: 
