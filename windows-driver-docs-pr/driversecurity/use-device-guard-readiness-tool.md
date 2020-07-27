@@ -36,9 +36,8 @@ To implement HVCI compatible code, make sure your driver code does the following
 
 The following list of DDIs that are not reserved for system use may be impacted:
 
-|                                                                                                      |
+|       DDI name                                                                                                  |
 |------------------------------------------------------------------------------------------------------|
-| DDI name                                                                                             |
 | [**ExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)                                                          |
 | [**ExAllocatePoolWithQuota**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)                                        |
 | [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag)                                  |
@@ -167,7 +166,7 @@ To use DGReadiness Tool, complete the following steps:
 
     The output to the screen is color coded.
 
-    |                   |                                                                                                   |
+    |       Category    |  Description                                                                                      |
     |-------------------|---------------------------------------------------------------------------------------------------|
     | Red - Errors      | Elements are missing or not configured that will prevent enabling and using DG/CG.                |
     | Yellow - Warnings | This device can be used to enable and use DG/CG, but additional security benefits will be absent. |

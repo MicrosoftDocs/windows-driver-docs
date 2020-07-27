@@ -1,12 +1,12 @@
 ---
-title: Defining custom values for sensor constants
-description: Defining custom values for sensor constants
+title: Defining custom values for sensor constants (previous version)
+description: Defining custom values for sensor constants (previous version)
 ms.assetid: 0ed635c2-117d-4a49-a565-31e5a0a9861d
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
-# Defining custom values for sensor constants
+# Defining custom values for sensor constants (previous version)
 
 
 You can define custom values for categories, sensor types, data fields, properties, and events.
