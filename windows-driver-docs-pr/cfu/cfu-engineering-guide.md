@@ -180,14 +180,14 @@ UINT8 segmentNumber;
 
 ### Processing offers
 
-The API of `ProcessCFWUOffer` accepts two arguments.
+The ProcessCFWUOffer API accepts two arguments:
 
 ```cpp
 void ProcessCFWUOffer(FWUPDATE_OFFER_COMMAND* pCommand,
                      FWUPDATE_OFFER_RESPONSE* pResponse)
 ```
 
-Suppose the user-software sends data bytes to the running firmware, then the first message is the offer message.
+In this use case, assume the user software sends data bytes to the running firmware, then the first message is the offer message.
 
 The offer message is a 16 byte message described above (the FWUPDATE_OFFER_COMMAND structure).
 
