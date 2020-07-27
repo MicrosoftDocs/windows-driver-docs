@@ -29,7 +29,7 @@ Utilizing the Windows 10 (version 20H1 or higher) it is possible to update NVMe 
 
 To use Windows 10 to update drive firmware, you must have supported drives. To ensure common device behavior, Windows 10 specifies optional Hardware Lab Kit (HLK) requirements for NVMe devices. These requirements outline which commands a NVMe storage drive must support to be firmware-updatable using the new Windows Update based solution.
 
-Contact your solution vendor for info about whether your hardware supports Windows updating the drive firmware. For additional details, see the COMPAT requirements for [NVMe: Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8](https://partner.cmicrosoft.com/dashboard/collaborate/packages/7840).
+Contact your solution vendor for info about whether your hardware supports Windows updating the drive firmware. For additional details, see the COMPAT requirements for [NVMe: Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8](https://partner.microsoft.com/dashboard/collaborate/packages/7840).
 
 > [!NOTE]
 > The above link requires a valid account for the [Microsoft Collaborate](https://developer.microsoft.com/dashboard/collaborate/) portal.
