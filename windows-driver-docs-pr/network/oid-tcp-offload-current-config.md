@@ -4,7 +4,7 @@ description: This topic describes the OID_TCP_OFFLOAD_CURRENT_CONFIG object iden
 ms.assetid: 8DC81A41-1E4D-4F78-80D1-54C79F974CE3
 keywords:
 - OID_TCP_OFFLOAD_CURRENT_CONFIG, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
-ms.date: 11/01/2017
+ms.date: 02/27/2020
 ms.localizationpriority: medium
 ---
 
@@ -38,11 +38,10 @@ Miniport drivers should automatically enable all of the task offload capabilitie
 [NDIS_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload)  
 [NDIS_OID_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)  
 [NDIS_TCP_IP_CHECKSUM_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)  
-[NDIS_TCP_LARGE_SEND_OFFLOAD_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_large_send_offload_v2)    
+[NDIS_TCP_LARGE_SEND_OFFLOAD_V2](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_large_send_offload_v2)
 [NDIS_IPSEC_OFFLOAD_V1](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ipsec_offload_v1)  
 
 ## Requirements
 
 **Version**: Windows Vista and later
 **Header**: Ntddndis.h (include Ndis.h)
-
