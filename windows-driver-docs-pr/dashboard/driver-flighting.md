@@ -1,6 +1,6 @@
 ---
 title: Driver flighting
-description: Driver flighting in the Partner Center enables you to distribute your driver within defined Windows Insider rings, and provides automatic monitoring and evaluation.
+description: Distribute your driver within defined Windows Insider rings. Driver flighting provides automatic monitoring and evaluation.
 ms.date: 07/27/2018
 ms.topic: article
 ms.localizationpriority: medium
