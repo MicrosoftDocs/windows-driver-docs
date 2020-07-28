@@ -1,6 +1,21 @@
 {
     "redirections":  [
                         {
+                            "source_path":  "windows-driver-docs-pr/install/troubleshooting-install-and-load-problems-with-signed-driver-packages.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/detecting-driver-load-errors",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/signing-drivers-during-development-and-test.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/introduction-to-test-signing",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/overview-of-digital-signatures-for-driver-installation.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/driver-signing",
+                            "redirect_document_id":  false
+                        },
+                        {
                             "source_path":  "windows-driver-docs-pr/develop/windows-10-editions-for-universal-drivers.md",
                             "redirect_URL":  "/windows-hardware/drivers/develop/target-platforms",
                             "redirect_document_id":  true
