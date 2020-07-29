@@ -30,9 +30,9 @@ For information about how to obtain the latest WDK, see [Download the Windows Dr
 
 ## Index of WDK Tools
 
-The information in the following tables describes the tools that are useful for Windows driver developers. The list of tools includes tools that ship with the WDK (as indicated by the **WDK tool** field) and also includes some tools that are available separately or that are installed with Windows. Tools that can generally be used with all drivers are listed under [All Drivers](#tech-all). Tools that are specific to a technology are grouped together, for example, tools that are specific for [Windows Portable Devices (WPD) Drivers](#tech-wpd) or [Sensors](#tech-sensors).
+The information in the following tables describes the tools that are useful for Windows driver developers. The list of tools includes tools that ship with the WDK (as indicated by the **WDK tool** field) and also includes some tools that are available separately or that are installed with Windows. Tools that can generally be used with all drivers are listed under [All Drivers](#all-drivers). Tools that are specific to a technology are grouped together, for example, tools that are specific for [Windows Portable Devices (WPD) Drivers](#windows-portable-devices-wpd-drivers) or [Sensors](#sensors).
 
-- [Audio/Video Drivers](audio--video-drivers)
+- [Audio/Video Drivers](#audio--video-drivers)
 - [Bluetooth Drivers](#bluetooth-drivers)
 - [Windows Image Acquisition (WIA) Drivers](#windows-image-acquisition-wia-drivers)
 - [Windows Portable Devices (WPD) Drivers](#windows-portable-devices-wpd-drivers)

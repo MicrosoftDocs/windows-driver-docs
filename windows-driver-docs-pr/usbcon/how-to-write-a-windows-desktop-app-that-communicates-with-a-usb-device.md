@@ -359,7 +359,9 @@ In the preceding function, the application gets the device path by calling these
    2. Allocates memory for a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure based on the correct buffer size that is retrieved in the *requiredlength* parameter.
    3. Calls [**SetupDiGetDeviceInterfaceDetail**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) again and passes it a reference to the initialized structure in the *DeviceInterfaceDetailData* parameter. When the function returns, the structure is filled with detailed information about the interface. The device path is in the [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure's **DevicePath** member.
 
-### Creating a file handle for the device - see OpenDevice in device.cpp
+### Creating a file handle for the device
+
+See OpenDevice in device.cpp.
 
 To interact with the device, the needs a WinUSB interface handle to the first (default) interface on the device. The template code obtains the file handle and the WinUSB interface handle and stores them in the DEVICE\_DATA structure.
 
@@ -448,7 +450,7 @@ Return value:
 
 The template code implements code to release the file handle and the WinUSB interface handle for the device.
 
-- **CloseHandle** to release the handle that was created by **CreateFile**, as described in the [Create a File Handle for the Device](#filehandle) section of this walkthrough.
+- **CloseHandle** to release the handle that was created by **CreateFile**, as described in the [Create a File Handle for the Device](#creating-a-file-handle-for-the-device) section of this walkthrough.
 - [**WinUsb\_Free**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_free) to release the WinUSB interface handle for the device, which is returned by [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize).
 
 ```cpp
