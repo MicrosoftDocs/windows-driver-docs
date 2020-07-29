@@ -225,4 +225,4 @@ The following COSA settings are required:
 
 For more info about all supported fields, see the Desktop COSA-only settings on [Desktop COSA/APN database settings](desktop-cosa-apn-database-settings.md).
 
-To download the COSA/APN update spreadsheet, click [here](https://go.microsoft.com/fwlink/p/?linkid=851213).
+Download the [COSA/APN update spreadsheet](https://go.microsoft.com/fwlink/p/?linkid=851213).
