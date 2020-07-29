@@ -7,16 +7,19 @@
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
-  - name: "What's new for Windows 10 display and graphics drivers"
-    href: what-s-new-for-windows-10-display-and-graphics-drivers.md
-  - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
-    href: what-s-new-for-prior-wddm-2-x-versions.md
-  - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
-    href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
-  - name: "What's new for Windows 8 display drivers (WDDM 1.2)"
-    href: what-s-new-for-windows-8-display-drivers.md
-  - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
-    href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "What's new for Windows display and graphics drivers"
+# Auto-expanded node
+    items:
+    - name: "What's new for Windows 10 display and graphics drivers"
+      href: what-s-new-for-windows-10-display-and-graphics-drivers.md
+    - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
+      href: what-s-new-for-prior-wddm-2-x-versions.md
+    - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
+      href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
+    - name: "What's new for Windows 8 display drivers (WDDM 1.2)"
+      href: what-s-new-for-windows-8-display-drivers.md
+    - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
+      href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
   - name: "WDDM 2.1 Features"
     href: wddm-2-1-features.md
   - name: "WDDM 2.0 and Windows 10"
@@ -803,8 +806,6 @@
       href: supporting-brightness-controls-on-integrated-display-panels.md
     - name: "Supporting Display Output and ACPI Events"
       href: supporting-display-output.md
-    - name: "Marking Sources as Removable"
-      href: marking-sources-as-removable.md
     - name: "Stereoscopic 3D"
       href: stereoscopic-3d.md
     - name: "Supporting Output Protection Manager"
