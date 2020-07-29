@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Debugging indirect display drivers
 
-Indirect Displays drivers (IDDs) are UMDF drivers so the UMDF debugging documentation is a good starting point ([here](https://docs.microsoft.com/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails) is an example of a page in that section).  This page provides indirect display-specific debugging information.
+Indirect Displays drivers (IDDs) are UMDF drivers so the UMDF debugging documentation, such as [Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start](https://docs.microsoft.com/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails), is a good starting point.  This page provides indirect display-specific debugging information.
 
 ## Registry control
 

@@ -14,20 +14,20 @@ For information about how to get Debugging Tools for Windows, see [Debugging Too
 
 After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
--   C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
--   C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86
+- C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64
+- C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x86
 
-## <span id="Launch_Notepad_and_attach_WinDbg"></span><span id="launch_notepad_and_attach_windbg"></span><span id="LAUNCH_NOTEPAD_AND_ATTACH_WINDBG"></span>Launch Notepad and attach WinDbg
+## Launch Notepad and attach WinDbg
 
-1.  Navigate to your installation directory, and open WinDbg.exe.
+1. Navigate to your installation directory, and open WinDbg.exe.
 
-2.  The debugger documentation is also available on line [here](https://docs.microsoft.com/windows-hardware/drivers/debugger/).
+2. The debugger documentation is also available on line at [docs.microsoft.com](https://docs.microsoft.com/windows-hardware/drivers/debugger/).
 
-3.  On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to the folder that contains notepad.exe (for example, C:\\Windows\\System32). For **File name**, enter notepad.exe. Click **Open**.
+3. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to the folder that contains notepad.exe (for example, C:\\Windows\\System32). For **File name**, enter notepad.exe. Click **Open**.
 
     ![screen shot of windbg after starting notepad](images/windbggetstart01.png)
 
-4.  Near the bottom of the WinDbg window, in the command line, enter this command:
+4. Near the bottom of the WinDbg window, in the command line, enter this command:
 
     [.sympath srv\*](-sympath--set-symbol-path-.md)
 
@@ -44,7 +44,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     [.reload](-reload--reload-module-.md)
 
-5.  To see the symbols for the Notepad.exe module, enter this command:
+5. To see the symbols for the Notepad.exe module, enter this command:
 
     [x notepad!*](x--examine-symbols-.md)
 
@@ -53,7 +53,7 @@ After you have installed the debugging tools, locate the installation directorie
     To see symbols in the Notepad.exe module that contain main, enter this command:
 
     [x notepad!\*main\*](x--examine-symbols-.md)
- 
+
     The output is similar to this:
 
     ```dbgcmd
@@ -61,7 +61,7 @@ After you have installed the debugging tools, locate the installation directorie
     ...
     ```
 
-6.  To put a breakpoint at notepad!WinMain, enter this command:
+6. To put a breakpoint at notepad!WinMain, enter this command:
 
     [bu notepad!WinMain](bp--bu--bm--set-breakpoint-.md)
 
@@ -75,11 +75,12 @@ After you have installed the debugging tools, locate the installation directorie
     0 e 00007ff6`32825f64     0001 (0001)  0:**** notepad!WinMain
     ```
 
-7.  To start Notepad running, enter this command:
+7. To start Notepad running, enter this command:
 
     [g](g--go-.md)
 
     Notepad runs until it comes to the **WinMain** function, and then breaks in to the debugger.
+
     ```dbgcmd
     Breakpoint 0 hit
     notepad!WinMain:
@@ -96,25 +97,25 @@ After you have installed the debugging tools, locate the installation directorie
     0:000> lm
     start             end                 module name
     00007ff6`32820000 00007ff6`3285a000   notepad    (pdb symbols)          C:\...\notepad.pdb
-    00007ffc`ab7e0000 00007ffc`ab85b000   WINSPOOL   (deferred)             
-    00007ffc`aba10000 00007ffc`abc6a000   COMCTL32   (deferred)             
-    00007ffc`adea0000 00007ffc`adf3f000   SHCORE     (deferred)             
-    00007ffc`af490000 00007ffc`af59f000   KERNELBASE   (deferred)             
-    00007ffc`af7d0000 00007ffc`af877000   msvcrt     (deferred)             
-    00007ffc`af880000 00007ffc`b0c96000   SHELL32    (deferred)             
-    00007ffc`b0e40000 00007ffc`b0ef7000   OLEAUT32   (deferred)             
-    00007ffc`b0f00000 00007ffc`b0f57000   sechost    (deferred)             
-    00007ffc`b0f60000 00007ffc`b1005000   ADVAPI32   (deferred)             
-    00007ffc`b1010000 00007ffc`b1155000   GDI32      (deferred)             
-    00007ffc`b1160000 00007ffc`b1296000   RPCRT4     (deferred)             
-    00007ffc`b12a0000 00007ffc`b1411000   USER32     (deferred)             
-    00007ffc`b1420000 00007ffc`b15f6000   combase    (deferred)             
-    00007ffc`b16c0000 00007ffc`b17f9000   MSCTF      (deferred)             
-    00007ffc`b1800000 00007ffc`b189a000   COMDLG32   (deferred)             
-    00007ffc`b18a0000 00007ffc`b18f1000   SHLWAPI    (deferred)             
-    00007ffc`b1b60000 00007ffc`b1cd8000   ole32      (deferred)             
+    00007ffc`ab7e0000 00007ffc`ab85b000   WINSPOOL   (deferred)
+    00007ffc`aba10000 00007ffc`abc6a000   COMCTL32   (deferred)
+    00007ffc`adea0000 00007ffc`adf3f000   SHCORE     (deferred)
+    00007ffc`af490000 00007ffc`af59f000   KERNELBASE   (deferred)
+    00007ffc`af7d0000 00007ffc`af877000   msvcrt     (deferred)
+    00007ffc`af880000 00007ffc`b0c96000   SHELL32    (deferred)
+    00007ffc`b0e40000 00007ffc`b0ef7000   OLEAUT32   (deferred)
+    00007ffc`b0f00000 00007ffc`b0f57000   sechost    (deferred)
+    00007ffc`b0f60000 00007ffc`b1005000   ADVAPI32   (deferred)
+    00007ffc`b1010000 00007ffc`b1155000   GDI32      (deferred)
+    00007ffc`b1160000 00007ffc`b1296000   RPCRT4     (deferred)
+    00007ffc`b12a0000 00007ffc`b1411000   USER32     (deferred)
+    00007ffc`b1420000 00007ffc`b15f6000   combase    (deferred)
+    00007ffc`b16c0000 00007ffc`b17f9000   MSCTF      (deferred)
+    00007ffc`b1800000 00007ffc`b189a000   COMDLG32   (deferred)
+    00007ffc`b18a0000 00007ffc`b18f1000   SHLWAPI    (deferred)
+    00007ffc`b1b60000 00007ffc`b1cd8000   ole32      (deferred)
     00007ffc`b1cf0000 00007ffc`b1e2a000   KERNEL32   (pdb symbols)          C:\...\kernel32.pdb
-    00007ffc`b1eb0000 00007ffc`b1ee4000   IMM32      (deferred)             
+    00007ffc`b1eb0000 00007ffc`b1ee4000   IMM32      (deferred)
     00007ffc`b1f50000 00007ffc`b20fa000   ntdll      (private pdb symbols)  C:\...\ntdll.pdb
     ```
 
@@ -133,11 +134,11 @@ After you have installed the debugging tools, locate the installation directorie
     00000048`4e0cf7a0 00000000`00000000 ntdll!RtlUserThreadStart+0x1d ...
     ```
 
-8.  To start Notepad running again, enter this command:
+8. To start Notepad running again, enter this command:
 
     [g](g--go-.md)
 
-9.  To break in to Notepad, choose **Break** from the **Debug** menu.
+9. To break in to Notepad, choose **Break** from the **Debug** menu.
 
 10. To set and verify a breakpoint at **ZwWriteFile**, enter these commands:
 
@@ -202,8 +203,7 @@ After you have installed the debugging tools, locate the installation directorie
 
     [qd](qd--quit-and-detach-.md)
 
-## <span id="Launch_your_own_application_and_attach_WinDbg"></span><span id="launch_your_own_application_and_attach_windbg"></span><span id="LAUNCH_YOUR_OWN_APPLICATION_AND_ATTACH_WINDBG"></span>Launch your own application and attach WinDbg
-
+## Launch your own application and attach WinDbg
 
 Suppose you have written and built this small console application.
 
@@ -226,10 +226,10 @@ void main ()
 
 For this exercise, we will assume that the built application (MyApp.exe) and the symbol file (MyApp.pdb) are in C:\\MyApp\\x64\\Debug. We will also assume that the application source code is in C:\\MyApp\\MyApp and that the target machine compiled MyApp.exe.
 
-1.  Open WinDbg.
+1. Open WinDbg.
 
-2.  On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Click **Open**.
-3.  Enter these commands:
+2. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Click **Open**.
+3. Enter these commands:
 
     [.symfix](-symfix--set-symbol-store-path-.md)
 
@@ -237,7 +237,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
     Now WinDbg knows where to find symbols and source code for your application. In this case, the source code location doesn't need to be set with [.srcpath](-srcpath---lsrcpath--set-source-path-.md) because the symbols have fully qualified paths to the source files.
 
-4.  Enter these commands:
+4. Enter these commands:
 
     [.reload](-reload--reload-module-.md)
 
@@ -251,7 +251,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
     ![screen shot of source code in windbg](images/windbggetstart03.png)
 
-5.  On the **Debug** menu, choose **Step Into** (or press **F11**). Continue stepping until you have stepped into **MyFunction**. When you step into the line `y = x / p2`, your application will crash and break in to the debugger. The output is similar to this:
+5. On the **Debug** menu, choose **Step Into** (or press **F11**). Continue stepping until you have stepped into **MyFunction**. When you step into the line `y = x / p2`, your application will crash and break in to the debugger. The output is similar to this:
 
     ```dbgcmd
     (1450.1424): Integer divide-by-zero - code c0000094 (first chance)
@@ -261,14 +261,14 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
     00007ff6`3be11064 f77c2428    idiv  eax,dword ptr [rsp+28h] ss:00000063`2036f808=00000000
     ```
 
-6.  Enter this command:
+6. Enter this command:
 
     [!analyze -v](-analyze.md)
 
     WinDbg displays an analysis of the problem (division by 0 in this case).
 
     ```dbgcmd
-    FAULTING_IP: 
+    FAULTING_IP:
     MyApp!MyFunction+44 [c:\myapp\myapp\myapp.cpp @ 7]
     00007ff6`3be11064 f77c2428        idiv    eax,dword ptr [rsp+28h]
 
@@ -288,7 +288,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
     STACK_COMMAND: dt ntdll!LdrpLastDllInitializer BaseDllName ;dt ntdll!LdrpFailureData ;.cxr 0x0 ;kb
 
-    FOLLOWUP_IP: 
+    FOLLOWUP_IP:
     MyApp!MyFunction+44 [c:\myapp\myapp\myapp.cpp @ 7]
     00007ff6`3be11064 f77c2428        idiv    eax,dword ptr [rsp+28h]
 
@@ -305,35 +305,34 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
          6:     long y = 0;
     >    7:  y = x / p2;
          8: }
-         9: 
+         9:
         10: void main ()
         11: {
         12:     long a = 2;
     ...
     ```
 
-## <span id="Summary_of_commands"></span><span id="summary_of_commands"></span><span id="SUMMARY_OF_COMMANDS"></span>Summary of commands
+## Summary of commands
 
+- **Contents** command on the **Help** menu
+- [.sympath (Set Symbol Path)](-sympath--set-symbol-path-.md)
+- [.reload (Reload Module)](-reload--reload-module-.md)
+- [x (Examine Symbols)](x--examine-symbols-.md)
+- [g (Go)](g--go-.md)
+- **Break** command on the **Debug** menu
+- [lm (List Loaded Modules)](lm--list-loaded-modules-.md)
+- [k (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
+- [bu (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
+- [bl (Breakpoint List)](bl--breakpoint-list-.md)
+- [~ (Thread Status)](---thread-status-.md)
+- [~s (Set Current Thread)](-s--set-current-thread-.md)
+- [.sympath+ (Set Symbol Path) append to existing symbol path](-sympath--set-symbol-path-.md)
+- [.srcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)
+- **Step Into** command on the **Debug** menu (**F11**)
+- [!analyze -v](-analyze.md)
+- [qd (Quit and Detach)](qd--quit-and-detach-.md)
 
--   **Contents** command on the **Help** menu
--   [.sympath (Set Symbol Path)](-sympath--set-symbol-path-.md)
--   [.reload (Reload Module)](-reload--reload-module-.md)
--   [x (Examine Symbols)](x--examine-symbols-.md)
--   [g (Go)](g--go-.md)
--   **Break** command on the **Debug** menu
--   [lm (List Loaded Modules)](lm--list-loaded-modules-.md)
--   [k (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
--   [bu (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
--   [bl (Breakpoint List)](bl--breakpoint-list-.md)
--   [~ (Thread Status)](---thread-status-.md)
--   [~s (Set Current Thread)](-s--set-current-thread-.md)
--   [.sympath+ (Set Symbol Path) append to existing symbol path](-sympath--set-symbol-path-.md)
--   [.srcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md)
--   **Step Into** command on the **Debug** menu (**F11**)
--   [!analyze -v](-analyze.md)
--   [qd (Quit and Detach)](qd--quit-and-detach-.md)
-
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md)
 
