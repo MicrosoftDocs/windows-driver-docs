@@ -26,14 +26,16 @@ ms.localizationpriority: medium
 -   [Mirror Driver INF File](mirror-driver-inf-file.md)
 -   [Mirror Driver Installation](mirror-driver-installation.md)
 
-## <span id="Mirror_drivers_in_Windows_8"></span><span id="mirror_drivers_in_windows_8"></span><span id="MIRROR_DRIVERS_IN_WINDOWS_8"></span>Mirror drivers in Windows 8
+## <span id="Mirror_drivers_in_Windows_8"></span><span id="mirror_drivers_in_windows_8"></span><span id="MIRROR_DRIVERS_IN_WINDOWS_8"></span>Mirror drivers in Windows 8 and above
 
 
 Starting with Windows 8, mirror drivers will not install on the system. Mirror drivers described in this section will install and run only on earlier versions of Windows.
 
 However, a special GDI accessibility driver model is available starting with Windows 8 to developers who want to provide mirror driver capabilities in [*assistive technologies*](https://go.microsoft.com/fwlink/p/?linkid=248209) for customers with disabilities or impairments. To learn more about this special driver model, please contact <acc_driver@microsoft.com>.
 
-A *remote display driver* model that is based on the mirror driver architecture can also run starting with Windows 8. For more information, see [Remote Display Drivers](remote-display-drivers.md).
+A *remote display driver* model that is based on the mirror driver architecture can also run starting with Windows 8, but has been removed in Windows 10, version 2004. For more information, see [Remote Display Drivers](remote-display-drivers.md).
+
+> [!NOTE] As of Windows 10, GDI accessibility drivers are no longer recommended for new products and Microsoft will remove support in a future OS version. Support for GDI remote display drivers has already been removed in Windows 10, version 2004. However, creating a remote display solution is still possible by building a custom [Remote Protocol Provider](/windows/win32/termserv/creating-a-custom-remote-protocol) and an [Indirect Display Driver](indirect-display-driver-model-overview.md).
 
 ## <span id="ddk_mirror_drivers_gg"></span><span id="DDK_MIRROR_DRIVERS_GG"></span>Mirror driver description
 
@@ -118,14 +120,3 @@ As mentioned previously, the driver is installed and operates in a drawing layer
 GDI allows the same driver to run on both a single and multiple-monitor system. A driver in a multiple-monitor system need only track its position within the global desktop. GDI provides this position to the driver whenever a Win32 **ChangeDisplaySettings** call occurs, such as when a user dynamically changes the monitor's position in the desktop by using the Display program in Control Panel. GDI updates the **dmPosition** member of the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure accordingly when such a change occurs. A driver can receive notification of such a change by implementing [**DrvNotify**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvnotify). See [Mirror Driver Installation](mirror-driver-installation.md) for more information.
 
 **Note**   Mirror drivers are not required to render with pixel-perfect accuracy when rendering on the client side with such accuracy may be difficult. For example, the adapter/monitor receiving the mirrored image is not required to render [Grid Intersect Quantization](cosmetic-lines.md) (GIQ) line drawing and polygon fills with the same precision as the adapter/monitor being mirrored.
-
- 
-
- 
-
- 
-
-
-
-
-

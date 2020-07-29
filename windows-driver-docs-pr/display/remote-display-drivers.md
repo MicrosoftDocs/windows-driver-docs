@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 
 # Remote Display Drivers
 
+> [!NOTE] Support for GDI remote display drivers has been removed in Windows 10, version 2004. However, creating a remote display solution is still possible by building a custom [Remote Protocol Provider](/windows/win32/termserv/creating-a-custom-remote-protocol) and an [Indirect Display Driver](indirect-display-driver-model-overview.md).
 
 A *remote display driver* is based on the Windows 2000 [Mirror Driver](mirror-drivers.md) model and is used to render the desktop in a remote session.
 
@@ -27,12 +28,3 @@ To successfully install and run starting with Windows 8, a remote display drive
 -   [**DrvMovePointer**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvmovepointer)
 -   [**DrvResetPDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvresetpdev)
 -   [**DrvSetPointerShape**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsetpointershape)
-
- 
-
- 
-
-
-
-
-
