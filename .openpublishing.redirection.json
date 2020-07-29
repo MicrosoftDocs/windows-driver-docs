@@ -1,6 +1,16 @@
 {
     "redirections":  [
                         {
+                            "source_path":  "windows-driver-docs-pr/install/device-setup-classes.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/overview-of-device-setup-classes.md",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/device-interface-classes.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/overview-of-device-interface-classes.md",
+                            "redirect_document_id":  false
+                        },
+                        {
                             "source_path":  "windows-driver-docs-pr/install/troubleshooting-install-and-load-problems-with-signed-driver-packages.md",
                             "redirect_URL":  "/windows-hardware/drivers/install/detecting-driver-load-errors",
                             "redirect_document_id":  false
