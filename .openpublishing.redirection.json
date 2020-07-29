@@ -99,7 +99,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/administration.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/dashboard-administration",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/host-a-remote-debugging-session.md",
@@ -1209,7 +1209,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/apn-database-submission.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/cosa-apn-database-submission",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/planning-your-apn-database-submission.md",
@@ -1234,7 +1234,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-control-messages2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-control-messages",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-initialize-msg2.md",
@@ -1399,7 +1399,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/network/network-driver-topics-in-sdk-header-files.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/kernel-mode-sdk-topics-for-network-drivers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/file-a-new-bug.md",
