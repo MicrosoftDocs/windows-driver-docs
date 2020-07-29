@@ -28,25 +28,17 @@ This topic supplies basic information about the tools that are included in the W
 
 For information about how to obtain the latest WDK, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
-This topic includes the following:
-
-- [Index of WDK Tools](#index-of-wdk-tools)
-- [What's New in the WDK for Windows 8.1](#what-s-new-in-the-wdk-for-windows8-1)
-- [What's New in the WDK for Windows 8](#what-s-new-in-the-wdk-for-windows8)
-- [What's Changed in the WDK for Windows 8](#what-s-changed-in-the-wdk-for-windows8)
-- [Supported platforms](#supported-platforms)
-
 ## Index of WDK Tools
 
 The information in the following tables describes the tools that are useful for Windows driver developers. The list of tools includes tools that ship with the WDK (as indicated by the **WDK tool** field) and also includes some tools that are available separately or that are installed with Windows. Tools that can generally be used with all drivers are listed under [All Drivers](#tech-all). Tools that are specific to a technology are grouped together, for example, tools that are specific for [Windows Portable Devices (WPD) Drivers](#tech-wpd) or [Sensors](#tech-sensors).
 
-- [Audio/Video Drivers](#tech-audio-video)
-- [Bluetooth Drivers](#tech-bluetooth)
-- [Windows Image Acquisition (WIA) Drivers](#tech_wia)
-- [Windows Portable Devices (WPD) Drivers](#tech-wpd)
-- [Printer Drivers](#tech-printer)
-- [Sensors](#tech-sensors)
-- [All Drivers](#tech-all)
+- [Audio/Video Drivers](audio--video-drivers)
+- [Bluetooth Drivers](#bluetooth-drivers)
+- [Windows Image Acquisition (WIA) Drivers](#windows-image-acquisition-wia-drivers)
+- [Windows Portable Devices (WPD) Drivers](#windows-portable-devices-wpd-drivers)
+- [Printer Drivers](#printer-drivers)
+- [Sensors](#sensors)
+- [All Drivers](#all-drivers)
 
 >[!NOTE]
 >The Visual Studio environment variable, %WindowsSdkDir%, represents the path to the Windows kits directory where this version of the WDK is installed, for example, C:\\Program Files (x86)\\Windows Kits\\8.1.
