@@ -33,13 +33,15 @@ When a someone tries to use an application that accesses the machine’s camera 
 
    a. *Successful inialization event = 0% failure*
 
-       i. MF_CAPTURE_ENGINE_INITIALIZED with an HRESULT == 0
+     i. `MF_CAPTURE_ENGINE_INITIALIZED with an HRESULT == 0`
 
    b. *Failed initialization event = 100% failure*
 
-         i. MF_E_NO_CAPTURE_DEVICES_AVAILABLE
-        ii. E_ACCESSDENIED
-       iii. ERROR_BAD_UNIT
+     i. `MF_E_NO_CAPTURE_DEVICES_AVAILABLE`
+
+     ii. `E_ACCESSDENIED`
+
+     iii. `ERROR_BAD_UNIT`
 
 ### Final calculation
 

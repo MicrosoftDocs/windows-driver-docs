@@ -28,19 +28,22 @@ To capture the camera’s preview into memory, the user can take a photo and sto
 1. The measure aggregates telemetry from a 7-day sliding window in a **percentage of instances where a camera device failed to use the photo feature**.
 
      a. A single device can have multiple Photo Instances counted by the measure
-     
-2. Types of Instances:
 
-    a. *Successful photo event = 0% failure* 
+2. Types of Instance
 
-        i. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_TAKEN)
-       ii. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_SEQUENCE_STARTED)
+   a. *Successful photo event = 0% failure*
+
+     i. `MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_TAKEN)`
+
+     ii. `MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_SEQUENCE_STARTED)`
 
     b. Failed photo event = 100% failure
 
-         i. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_TAKEN) HRESULT !=0
-        ii. MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_SEQUENCE_STARTED) HRESULT !=0
-       iii. Timed Out
+     i. `MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_TAKEN) HRESULT !=0`
+
+     ii. `MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PHOTO_SEQUENCE_STARTED) HRESULT !=0`
+
+     iii. Timed Out
 
 ### Final calculation
 
