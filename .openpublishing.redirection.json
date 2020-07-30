@@ -1,13 +1,83 @@
 {
     "redirections":  [
-                        {
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/implementing-power-management.md",
+            "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-power-management",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/install/test-certificates.md",
+            "redirect_URL":  "/windows-hardware/drivers/install/makecert-test-certificate",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/kernel-dispatcher-objects.md",
+            "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/ipsec-offload-version-2.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/introduction-to-ipsec-offload-version-2",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/adapter-objects-and-dma.md",
+            "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-adapter-objects",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/mobile-broadband-app-scenarios.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/account-management",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/ndis-filter-drivers2.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/roadmap-for-developing-ndis-filter-drivers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/writing-ndis-miniport-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/initializing-a-miniport-driver",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/ndis-protocol-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/roadmap-for-developing-ndis-protocol-drivers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/ndis-receive-side-scaling2.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/using-controller-objects.md",
+            "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-controller-objects",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/kernel/spin-locks.md",
+            "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-spin-locks",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/common-tasks-for-mobile-broadband-windows-runtime-apis.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/create-a-mobilebroadbandaccount-object",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/network-direct-kernel-programming-interface--ndkpi-.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/overview-of-network-direct-kernel-provider-interface--ndkpi-",
+            "redirect_document_id":  false
+        },
+        {
                             "source_path":  "windows-driver-docs-pr/install/device-setup-classes.md",
-                            "redirect_URL":  "/windows-hardware/drivers/install/overview-of-device-setup-classes.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/overview-of-device-setup-classes",
                             "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/install/device-interface-classes.md",
-                            "redirect_URL":  "/windows-hardware/drivers/install/overview-of-device-interface-classes.md",
+                            "redirect_URL":  "/windows-hardware/drivers/install/overview-of-device-interface-classes",
                             "redirect_document_id":  false
                         },
                         {
