@@ -74,11 +74,13 @@ The reset and recovery sequence can happen at any time. Therefore, the client dr
 
 * It's critical for **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** to complete as soon as possible so the rest of the PLDR process can proceed. **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** must be reliable and must return within 3 seconds.
 
-To submit diagnostics to NetAdapterCx, the client driver preforms the following steps within its  **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** callback:
+* NetAdapterCx always invokes **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** at PASSIVE_LEVEL.
 
-1. Allocate a flat buffer from either paged or non-paged pool to collect the reset diagnostics.
+To submit diagnostics to NetAdapterCx, the client driver performs the following steps:
 
-2. Submit the diagnostics as a flat data buffer by calling the [**NetDeviceStoreResetDiagnostics**](/windows-hardware/drivers/ddi/nf-netdevice-netdevicestoreresetdiagnostics) API. The client driver must call the **NetDeviceStoreResetDiagnostics** API at PASSIVE_LEVEL because NetAdapterCx always invokes the **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** callback at PASSIVE_LEVEL.
+1. Preallocate a flat buffer from either paged or non-paged pool to collect the reset diagnostics. The driver should preallocate this buffer to avoid an out-of-memory error during device reset.
+
+2. Within the **EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS** callback, submit the diagnostics as a flat data buffer by calling the [**NetDeviceStoreResetDiagnostics**](/windows-hardware/drivers/ddi/nf-netdevice-netdevicestoreresetdiagnostics) API. The client driver must call the **NetDeviceStoreResetDiagnostics** API at PASSIVE_LEVEL.
 
 3. Free the data buffer once **NetDeviceStoreResetDiagnostics** returns.
 
