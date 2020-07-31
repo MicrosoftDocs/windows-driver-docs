@@ -58,7 +58,7 @@ In the preceding image,
 
 -   **USB connector manager**
 
-    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined by the UCSI specification available [here](https://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
+    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined in the [USB Type-C Connector System Software Interface Specification](https://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
 
     This driver is intended for systems with embedded controllers. This driver is a client to the Microsoft-provided USB connector manager class extension driver (Ucmcx.sys). The driver handles tasks such as initiating a request to the firmware to change the data or power roles and getting information needed to provide troubleshooting messages to the user.
 

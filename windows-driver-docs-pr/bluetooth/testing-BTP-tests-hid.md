@@ -1,5 +1,5 @@
 ---
-title: Microsoft Bluetooth Test Platform
+title: Microsoft Bluetooth Test Platform - HID
 description: Bluetooth Test Platform (BTP) HID tests.
 ms.assetid: b5b039bb-af0f-446f-9657-aa0e137a3437
 ms.date: 2/14/2020
@@ -24,7 +24,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunHidTests.bat <radio name>` from an elevated command prompt or
 - `RunHidTests.ps1 <radio name>` from an elevated PowerShell console
 
-Information on available radio name parameters can be found [here](testing-BTP-hw.md#supported-radios)
+Information on available radio name parameters can be found [Bluetooth Testing Platform supported hardware](testing-BTP-hw.md#supported-radios)
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

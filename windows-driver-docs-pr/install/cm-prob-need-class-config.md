@@ -26,3 +26,10 @@ This Device Manager error message indicates that Windows is still setting up the
 
 This problem code is frequently transient.
 
+In the case of some device setup classes, after the device is installed with a driver package, additional class configuration operations are required to make the device operational.  When configuration is complete, the device will be restarted and should no longer have this problem code.
+
+For example, NET-class devices receive additional configuration based on `*IfType`, `UpperRange`, and other networking-specific INF directives.
+
+If a NET-class device continues to have this problem code, the driver INF might have invalid networking-specific INF directives, or the system's network state may be corrupt and need to be reset.
+
+To do this, use the Network Reset button in the Settings app.

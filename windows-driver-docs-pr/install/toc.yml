@@ -180,6 +180,8 @@
       href: how-to-test-sign-a-driver-package.md
     - name: "Creating Test Certificates"
       href: creating-test-certificates.md
+    - name: "Installing Test Certificates"
+      href: installing-test-certificates.md
     - name: "Viewing Test Certificates"
       href: viewing-test-certificates.md
     - name: "Creating a Catalog File for Test-Signing a Driver Package"
@@ -198,8 +200,6 @@
       href: the-testsigning-boot-configuration-option.md
     - name: "Enabling Code Integrity Event Logging and System Auditing"
       href: enabling-code-integrity-event-logging-and-system-auditing.md
-    - name: "Installing Test Certificates"
-      href: installing-test-certificates.md
     - name: "Verifying the Test Signature"
       href: verifying-the-test-signature.md
     - name: "Installing a Test-Signed Driver Package on the Test Computer"

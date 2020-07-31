@@ -81,7 +81,7 @@ In Visual Studio locate the Solution Explorer. (If this is not already open, cho
 ## <span id="sample_audio_drivers"></span><span id="SAMPLE_AUDIO_DRIVERS"></span>Archived Audio Samples
 
 
-These audio samples support previous versions of the Microsoft Windows Driver Kit (WDK). They are available as part of the zip file download available [here](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples).
+These audio samples support previous versions of the Microsoft Windows Driver Kit (WDK). They are available as part of the [zip file download](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples).
 
 -   **Microsoft Virtual Audio Device Driver Sample (Msvad)**
 

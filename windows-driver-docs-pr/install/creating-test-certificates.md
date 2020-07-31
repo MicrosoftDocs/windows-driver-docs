@@ -47,7 +47,10 @@ A developer has to create only one MakeCert test certificate to sign all [driver
 
 For more information about the MakeCert tool and its command-line arguments, see [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert).
 
-Also refer to the readme file *Selfsign_readme.htm* in the *bin\\selfsign* directory of the Windows Driver Kit (WDK).
+> [!NOTE]
+> After creating a test certificate, use the CertMgr tool to add it to the Trusted Root Certification Authorities certificate store. For more info, see [Installing Test Certificates](installing-test-certificates.md).
+
+Also refer to the readme file `Selfsign_readme.htm` in the `bin\selfsign` directory of the Windows Driver Kit (WDK).
 
  
 
