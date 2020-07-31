@@ -100,7 +100,7 @@ Here are two ways to do this in your WDF networking client driver.
 
 The most straightforward port is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate) from the client's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback. For more info, see [Using Control Device Objects](../wdf/using-control-device-objects.md).
 
-However, the recommended solution is to create a device interface, as described in [Using Device Interfaces](using-device-interfaces.md).
+However, the recommended solution is to create a device interface, as described in [Using Device Interfaces](../wdf/using-device-interfaces.md).
 
 ## Finishing device initialization
 
