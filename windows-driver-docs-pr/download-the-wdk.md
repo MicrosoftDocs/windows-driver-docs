@@ -51,7 +51,7 @@ Windows 10 SDK (10.0.19041.0), select this version and continue with install.
 
 If you already have Visual Studio 2019 installed, you can install the **Windows 10 SDK (10.0.19041.1)** by using the **Modify** button in Visual Studio install.
 
-WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Stuido for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64 require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
+WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64 require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
 
 To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version available. 
 
