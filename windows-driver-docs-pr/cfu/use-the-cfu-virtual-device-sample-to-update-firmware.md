@@ -16,29 +16,27 @@ This topic provides a walkthrough of using the Component Firmware Update (CFU) v
 
 TBD
 
-## Step 1
+## Install a virtual CFU device
 
 TBD
 
-![TBD](images/TBD.png)
-
-![TBD](images/TBD.png)
-
-![TBD](images/TBD.png)
-
-![TBD](images/TBD.png)
-
-## Step 2
+## Install a CFU virtual device firmware update
 
 TBD
 
-![TBD](images/TBD.png)
+![step 1](images/install-cfu-virtual-device-firmware-update-1.png)
 
-![TBD](images/TBD.png)
+TBD
 
-![TBD](images/TBD.png)
+![step 2](images/install-cfu-virtual-device-firmware-update-2.png)
 
-![TBD](images/TBD.png)
+TBD
+
+![step 3](images/install-cfu-virtual-device-firmware-update-3.png)
+
+TBD
+
+![step 4](images/install-cfu-virtual-device-firmware-update-4.png)
 
 ## See also
 
