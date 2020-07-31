@@ -69,8 +69,6 @@ If the above example did not work as expected, you may need to perform one or mo
 
 Make sure [debugging in Source Mode](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-in-source-mode) is enabled. Open the Debug menu and confirm that Source Mode is checked.
 
-
- 
 ### Clear Stale Symbols Cache
 
 If you previously debugged WDF drivers for the same Windows target, then you may be using the locally cached WDF symbols that were not source indexed. You can check this with the !lmi command:
@@ -105,6 +103,3 @@ C:\...\Wdf01000.pdb\...\Wdf01000.pdb
 ```
 
 You can use WDF source-level debugging not just for live debugging and analyzing crash dumps, but also for learning more about the framework internals by setting breakpoints on core functions like the IRP dispatcher and exploring the subsequent code paths.
-
-
-
