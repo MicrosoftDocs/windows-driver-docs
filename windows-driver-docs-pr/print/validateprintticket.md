@@ -15,9 +15,9 @@ Unidrv and PScript5 print drivers validate the Print Ticket by using the sequenc
 
 ![diagram illustrating how the unidrv and pscript5 print drivers validate the print ticket](images/ptpcvalpt-uml.gif)
 
-1.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ExpandIntentOptions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-expandintentoptions) method.
+1.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ExpandIntentOptions**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemprintticketprovider-expandintentoptions) method.
 
-2.  Call the [**IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintoemprintticketprovider-convertprinttickettodevmode) method.
+2.  Call the [**IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemprintticketprovider-convertprinttickettodevmode) method.
 
 3.  For each plug-in, call **IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode** to convert the private portions of the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure.
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # OID_CO_TAPI_TRANSLATE_TAPI_CALLPARAMS
 
-The OID_CO_TAPI_TRANSLATE_TAPI_CALLPARAMS OID requests a call manager or integrated call manager miniport (MCM) driver to translate TAPI call parameters to NDIS call parameters. The client that queries this OID uses the returned NDIS call parameters as an input (formatted as a [CO_CALL_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure) to [NdisClMakeCall](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclmakecall), with which the client places an outgoing call.
+The OID_CO_TAPI_TRANSLATE_TAPI_CALLPARAMS OID requests a call manager or integrated call manager miniport (MCM) driver to translate TAPI call parameters to NDIS call parameters. The client that queries this OID uses the returned NDIS call parameters as an input (formatted as a [CO_CALL_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545384(v=vs.85)) structure) to [NdisClMakeCall](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmakecall), with which the client places an outgoing call.
 
 This OID uses a CO_TAPI_TRANSLATE_TAPI_CALLPARAMS structure, which is defined as follows:
 
@@ -54,8 +54,6 @@ If the client sets the CO_TAPI_USE_DEFAULT_CALLPARAMS bit in **ulFlags**, the cl
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

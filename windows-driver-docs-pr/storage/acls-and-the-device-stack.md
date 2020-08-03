@@ -55,11 +55,12 @@ When the driver stack creates the device object, the I/O manager sets a default 
 
 When the device driver stack is started, the PnP manager changes the ACL on the device only if the device’s key in the registry specifies a security descriptor for that device. The device vendor can set this descriptor by using **SetupDiSetDeviceRegistryProperty** with the property set as in the following.
 
-|          |                                  |
-|----------|----------------------------------|
-| Property | SPDRP\_SECURITY                  |
-| Value    | **SECURITY\_DESCRIPTOR**         |
-| Size     | **sizeof**(SECURITY\_DESCRIPTOR) |
+**Property**: SPDRP\_SECURITY
+
+**Value**: **SECURITY\_DESCRIPTOR**
+
+**Size**: **sizeof**(SECURITY\_DESCRIPTOR)
+
 
  
 

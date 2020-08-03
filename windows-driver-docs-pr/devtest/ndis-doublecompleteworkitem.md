@@ -20,9 +20,7 @@ The DoubleCompleteWorkItem rule specifies that NDIS drivers must not complete an
 
 This rule tracks the OID and verifies that when the driver queues a work item, the driver does not call **NdisMOidRequestComplete** multiple times on the same OID.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------
@@ -53,7 +51,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismoidrequestcomplete)
+[**NdisMOidRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)
  
 
  

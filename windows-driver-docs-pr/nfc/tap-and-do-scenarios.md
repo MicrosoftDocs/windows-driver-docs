@@ -8,12 +8,11 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 04/20/2017
+ms.date: 06/08/2020
 ms.localizationpriority: medium
 ---
 
 # Tap and Do scenarios
-
 
 There are two user scenarios areas supported for *Tap and Do* in Windows.
 
@@ -27,18 +26,16 @@ With Tap and Do, the user just taps the peripheral wireless device to the comput
 
 ### Ad-Hoc Interaction in the Real World
 
-Windows does not provide a common way for users to interact with other users or the physical environment through their devices. For one user to discover another user immediately nearby, and to interact with her and what she is doing, both users must typically connect through apps that have a proprietary rendezvous mechanism through the Internet. This approach typically requires a preexisting relationship for each user with the app or service in question, and also typically requires the users to exchange some kind of identifier with each other in order to support the rendezvous.
+Windows does not provide a common way for users to interact with other users or the physical environment through their devices. For one user to discover another user immediately nearby, and to interact with what they are doing, both users must typically connect through apps that have a proprietary rendezvous mechanism through the Internet. This approach typically requires a preexisting relationship for each user with the app or service in question, and also typically requires the users to exchange some kind of identifier with each other in order to support the rendezvous.
 
 With *Tap and Do*, the users just tap their computers together to create the relationship and trigger further actions appropriate to the context of what the users are doing. This simple action can initiate complex interactions between the computers. It can be used to exchange simple information, such as a URL. It can be used to trigger the sharing of more complex information on an alternative wireless transport. One example is the exchange pictures or a document over Wi-Fi. Also, it can be used by apps to exchange app-specific information, such as the identity and address information necessary to trigger activities between an app running on both computers as well as services on the Internet.
 
-A user can also use this gesture to communicate with other devices within his own environment. For example, reading a tag on a poster or passing information from his computer to his phone or vice-versa.
+A user can also use this gesture to communicate with other devices within their own environment. For example, reading a tag on a poster or passing information from their computer to their phone or vice-versa.
 
 See [Tap and Do Use Cases](tap-and-do-use-cases.md) for and explanation of various device interactions with the *Tap and Do* gesture.
 
- 
-
- 
 ## Related topics
- [NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)  
 
+[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+
+[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  

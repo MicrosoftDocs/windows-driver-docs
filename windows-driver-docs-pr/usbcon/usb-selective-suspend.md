@@ -2,6 +2,7 @@
 Description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 title: USB Selective Suspend
 ms.date: 04/20/2017
+ms.assetid: 828ee95a-7cfa-4905-acb8-5ae12acb0034
 ms.localizationpriority: medium
 ---
 
@@ -13,11 +14,11 @@ In Microsoft Windows XP and later operating systems, the USB core stack supports
 
 The USB selective suspend feature allows the hub driver to suspend an individual port without affecting the operation of the other ports on the hub. Selective suspension of USB devices is especially useful in portable computers, since it helps conserve battery power. Many devices, such as fingerprint readers and other kinds of biometric scanners, only require power intermittently. Suspending such devices, when the device is not in use, reduces overall power consumption. More importantly, any device that is not selectively suspended may prevent the USB host controller from disabling its transfer schedule, which resides in system memory. DMA transfers by the host controller to the scheduler can prevent the system's processors from entering deeper sleep states, such as C3. The Windows selective suspend behavior is different for devices operating in Windows XP and Windows Vista and later versions of Windows.
 
-There are two different mechanisms for selectively suspending a USB device: idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) and set power IRPs ([**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power)). The mechanism to use depends on the operating system and the type of device: composite or non-composite.
+There are two different mechanisms for selectively suspending a USB device: idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) and set power IRPs ([**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power)). The mechanism to use depends on the operating system and the type of device: composite or non-composite.
 
 ## Selecting a Selective Suspend Mechanism
 
-Client drivers, for an interface on a composite device, that enable the interface for remote wakeup with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) mechanism to selectively suspend a device.
+Client drivers, for an interface on a composite device, that enable the interface for remote wakeup with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) mechanism to selectively suspend a device.
 
 For information about remote wakeup, see:
 
@@ -27,7 +28,7 @@ For information about remote wakeup, see:
 
 The version of the Windows operating system determines the way drivers for non-composite devices enable selective suspend.
 
-- Windows XP: On Windows XP all client drivers must use idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) to power down their devices. Client drivers must not use WDM power IRPs to selectively suspend their devices. Doing so will prevent other devices from selectively suspending. See "USB Global Suspend"  for more information.
+- Windows XP: On Windows XP all client drivers must use idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) to power down their devices. Client drivers must not use WDM power IRPs to selectively suspend their devices. Doing so will prevent other devices from selectively suspending. See "USB Global Suspend"  for more information.
 - Windows Vista and later versions of Windows: Driver writers have more choices for powering down devices in Windows Vista and in the later versions of Windows. Although Windows Vista supports the Windows idle request IRP mechanism, drivers are not required to use it.
 
 The following table shows the scenarios that require the use of the idle request IRP and the ones that can use a WDM power IRP to suspend a USB device:
@@ -44,7 +45,7 @@ This section explains the Windows selective suspend mechanism and includes the f
 
 ## Sending a USB Idle Request IRP
 
-When a device goes idle, the client driver informs the bus driver by sending an idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)). After the bus driver determines that it is safe to put the device in a low power state, it calls the callback routine that the client device driver passed down the stack with the idle request IRP.
+When a device goes idle, the client driver informs the bus driver by sending an idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)). After the bus driver determines that it is safe to put the device in a low power state, it calls the callback routine that the client device driver passed down the stack with the idle request IRP.
 
 In the callback routine, the client driver must cancel all pending I/O operations and wait for all USB I/O IRPs to complete. It then can issue an [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) request to change the WDM device power state to **D2**. The callback routine must wait for the **D2** request to complete before returning. For more information about the idle notification callback routine, see "USB Idle Notification Callback Routine".
 
@@ -60,7 +61,7 @@ The following restrictions apply to the use of idle request IRPs:
 
 The following WDM example code illustrates the steps that a device driver takes to send a USB idle request IRP. Error checking has been omitted in the following code example.
 
-1. Allocate and initialize the [**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification) IRP
+1. Allocate and initialize the [**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification) IRP
 
     ```cpp
     irp = IoAllocateIrp (DeviceContext->TopOfStackDeviceObject->StackSize, FALSE);
@@ -113,7 +114,7 @@ The following WDM example code illustrates the steps that a device driver takes 
 
 Under certain circumstances, a device driver might need to cancel an idle request IRP that has been submitted to the bus driver. This might occur if the device is removed, becomes active after being idle and sending the idle request, or if the entire system is transitioning to a lower system power state.
 
-The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocancelirp). The following table describes three scenarios for canceling an idle IRP and specifies the action the driver must take:
+The client driver cancels the idle IRP by calling [**IoCancelIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocancelirp). The following table describes three scenarios for canceling an idle IRP and specifies the action the driver must take:
 
 <table>
 <colgroup>
@@ -324,7 +325,7 @@ A device driver must take the following actions in its idle notification callbac
 
 - Request an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) IRP for the device if the device needs to be armed for remote wakeup.
 - Cancel all I/O and prepare the device to go to a lower power state.
-- Put the device in a WDM sleep state by calling [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-porequestpowerirp) with the *PowerState* parameter set to the enumerator value PowerDeviceD2 (defined in wdm.h; ntddk.h). In Windows XP, a driver must not put its device in PowerDeviceD3, even if the device is not armed for remote wake.
+- Put the device in a WDM sleep state by calling [**PoRequestPowerIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) with the *PowerState* parameter set to the enumerator value PowerDeviceD2 (defined in wdm.h; ntddk.h). In Windows XP, a driver must not put its device in PowerDeviceD3, even if the device is not armed for remote wake.
 
 In Windows XP, a driver must rely on an idle notification callback routine to selectively suspend a device. If a driver running in Windows XP puts a device in a lower power state directly without using an idle notification callback routine, this might prevent other devices in the USB device tree from suspending. For more details, see "USB Global Suspend".
 

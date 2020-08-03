@@ -29,8 +29,6 @@ The minimum receive speed of the NIC. The unit of measurement is 100bps, so a va
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

@@ -15,17 +15,15 @@ You can specify various applications for your device, including the Microsoft St
 
 The UWP device app is downloaded and installed when a user first connects a device. Privileged applications have special access to the device. You can specify only one of each.
 
-For more information about UWP device apps and privileged applications, see [Windows 8 Device Experience](https://go.microsoft.com/fwlink/p/?LinkId=227312).
-
 ## <span id="To_specify_the_Windows_Store_device_app"></span><span id="to_specify_the_windows_store_device_app"></span><span id="TO_SPECIFY_THE_WINDOWS_STORE_DEVICE_APP"></span>To specify the Microsoft Store device app
 
 
 1.  Click the **Applications** tab.
 2.  Fill out the following fields:
-    -   **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest. The package name should be obtained after an app submission to the Microsoft Store is created, because the Package Name is changed by the Microsoft Store submission process. See [UWP device app lifecycle](https://go.microsoft.com/fwlink/p/?linkid=246571) for more info on how to associate the app with the Microsoft Store and copy updated values into the app manifest.
+    -   **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest. The package name should be obtained after an app submission to the Microsoft Store is created, because the Package Name is changed by the Microsoft Store submission process. See [Building UWP device apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/the-workflow) for more info on how to associate the app with the Microsoft Store and copy updated values into the app manifest.
     -   **Publisher**. Enter the value of the Publisher attribute in the Identity element in the Package element of the Application Manifest. The Publisher Name should be the same as the one on the developer certificate used to sign the package and the metadata.
     -   **App ID**. Enter the value of the ID attribute in the Application element of the Application Manifest.
-    -   **Notification Handlers**. For information about Notification Handlers, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
+    -   **Notification Handlers**. For information about Notification Handlers, see [Device metadata schema reference](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff541452(v=vs.85)).
 
 The **Package Name**, **Publisher**, and **App ID** must match the information in the app package .appxmanifest.
 
@@ -71,7 +69,7 @@ For the Microsoft Store device app to have access to privileged device interface
 To specify the privileged applications, fill out the following fields under **Privileged Application**:
 
 **Note**  
-For more information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](https://go.microsoft.com/fwlink/p/?linkid=256362).
+For more information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-deviceinterface-restricted).
 
 
 

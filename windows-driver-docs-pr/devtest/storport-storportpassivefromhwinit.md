@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 **StorPortEnablePassiveInitialization** should not be called within the HW Initialization entry point for Storport drivers if the HW Initialization entry point can be called directly from the HW Adapter Control entry point.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------
@@ -51,7 +49,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortEnablePassiveInitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportenablepassiveinitialization)
+[**StorPortEnablePassiveInitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportenablepassiveinitialization)
  
 
  

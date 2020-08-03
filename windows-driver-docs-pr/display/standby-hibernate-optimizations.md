@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 Windows 8 offers optimizations to the graphics stack that your driver can optionally take advantage of to improve system performance on sleep and resume.
 
-|                                                                                   |                                             |
-|-----------------------------------------------------------------------------------|---------------------------------------------|
-| Minimum Windows Display Driver Model (WDDM) version                               | 1.2                                         |
-| Minimum Windows version                                                           | 8                                           |
-| Driver implementation—Full graphics and Render only                               | Optional                                    |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦StandbyHibernateFlags** |
+**Minimum Windows Display Driver Model (WDDM) version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Render only**: Optional
+
+**[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics¦StandbyHibernateFlags**
+
 
  
 
@@ -25,11 +27,11 @@ Windows 8 offers optimizations to the graphics stack that your driver can optio
 
 These structures are new or updated starting with Windows 8 to support standby hibernation.
 
--   [**DXGK\_QUERYADAPTERINFOTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype)
--   [**DXGK\_SEGMENTDESCRIPTOR3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor3)
--   [**DXGK\_SEGMENTFLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags)
+-   [**DXGK\_QUERYADAPTERINFOTYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype)
+-   [**DXGK\_SEGMENTDESCRIPTOR3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor3)
+-   [**DXGK\_SEGMENTFLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags)
 
-Every device that can support this feature should take advantage of these hibernate optimizations. When a WDDM 1.2 or later driver enumerates segment capabilities, it must also set one or more of the standby hibernate flags **PreservedDuringStandby**, **PreservedDuringHibernate**, and **PartiallyPreservedDuringHibernate**. See Remarks of the [**DXGK\_SEGMENTFLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags) topic for more details.
+Every device that can support this feature should take advantage of these hibernate optimizations. When a WDDM 1.2 or later driver enumerates segment capabilities, it must also set one or more of the standby hibernate flags **PreservedDuringStandby**, **PreservedDuringHibernate**, and **PartiallyPreservedDuringHibernate**. See Remarks of the [**DXGK\_SEGMENTFLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags) topic for more details.
 
 ## <span id="standbyopt"></span><span id="STANDBYOPT"></span>Using standby hibernate optimizations
 

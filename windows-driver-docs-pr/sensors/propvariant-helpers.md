@@ -29,20 +29,21 @@ The helper functions are used along with the sensor device driver software inter
 | PropKeyFindKeyGetNthUlong | Retrieves the Nth ULONG value from a [PROPVARIANT](https://docs.microsoft.com/windows/win32/api/propidlbase/ns-propidlbase-propvariant) within a collection list that is based on the supplied property key. | |
 | PropKeyFindKeyGetNthUshort | Retrieves the Nth UShort value from a [PROPVARIANT](https://docs.microsoft.com/windows/win32/api/propidlbase/ns-propidlbase-propvariant) within a collection list that is based on the supplied property key. | |
 | PropKeyFindKeyGetNthInt64 | Retrieves the Nth Int64 value from a [PROPVARIANT](https://docs.microsoft.com/windows/win32/api/propidlbase/ns-propidlbase-propvariant) within a collection list that is based on the supplied property key. | |
-| IsKeyPresentInPropertyList | Returns a BOOL value. | The BOOL value indicates whether or not the property key was found in the [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_property_list) structure associated with the sensor.|
-| IsKeyPresentInCollectionList | Returns a BOOL value. | The BOOL value indicates whether or not the property key was found in the [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structure. associated with the sensor. |
-| IsCollectionListSame | Returns a BOOL value. | Compares two [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structures to determine if they're the same. |
+| IsKeyPresentInPropertyList | Returns a BOOL value. | The BOOL value indicates whether or not the property key was found in the [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_property_list) structure associated with the sensor.|
+| IsKeyPresentInCollectionList | Returns a BOOL value. | The BOOL value indicates whether or not the property key was found in the [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structure. associated with the sensor. |
+| IsCollectionListSame | Returns a BOOL value. | Compares two [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures to determine if they're the same. |
 | PropVariantGetInformation | Retrieves size, offset and other information about the [PROPVARIANT](https://docs.microsoft.com/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structure associated with the sensor. | |
-| PropertiesListCopy | Copies information from a source property list to a target one. | See [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_property_list) for more information. |
+| PropertiesListCopy | Copies information from a source property list to a target one. | See [**SENSOR\_PROPERTY\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_property_list) for more information. |
 |PropertiesListGetFillableCount | Returns the number of elements that a buffer of a certain size can possibly hold. | |
 
 ## Requirements
 
-|                          |                        |
-|--------------------------|------------------------|
-| Minimum supported client | Windows 8.1            |
-| Minimum supported server | Windows Server 2012 R2 |
-| Header                   | Sensorsutils.h         |
+**Minimum supported client**: Windows 8.1
+
+**Minimum supported server**: Windows Server 2012 R2
+
+**Header**: Sensorsutils.h
+
 
 ## Related topics
 

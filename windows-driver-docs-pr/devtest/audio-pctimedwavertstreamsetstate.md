@@ -18,13 +18,10 @@ ms.localizationpriority: medium
 
 The PcTimedWaveRtStreamSetState rule specifies that a ProtCls miniport driver makes state transitions through [**IMiniportWaveRTStream::SetState**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536756(v=vs.85)) within the required time.
 
-|              |       |
-|--------------|-------|
-| Driver model | Audio |
+**Driver model: Audio**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00072001) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00072001)
+
 
 How to test
 -----------

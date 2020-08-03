@@ -59,7 +59,7 @@ A client uses device control requests to:
 * Get and set registers
 * Get and set operating modes
 
-For a description of the device control requests supported by Serial, see the [ntddser.h](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/ntddser/) header.
+For a description of the device control requests supported by Serial, see the [ntddser.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/) header.
 
 ### Input parameters
 
@@ -120,7 +120,7 @@ A client uses internal device control requests to:
 * Get and reset basic settings
 * Control wait/wake operation
 
-For a description of the internal device control requests, see the [ntddser.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/) header.
+For a description of the internal device control requests, see the [ntddser.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/) header.
 
 ### Input parameters
 
@@ -295,7 +295,7 @@ The **Status** member is set to one of the following values:
 
 ### Operation
 
-A client can use time-out events to terminate a read request. Note, however, that when a serial device is opened, the time-out settings for the device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_internal_basic_settings) to set time-out parameters to zero (no time-out events are used). User-mode and kernel-mode clients can use an [IOCTL_SERIAL_SET_TIMEOUTS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_set_timeouts) request to set time-out parameters. 
+A client can use time-out events to terminate a read request. Note, however, that when a serial device is opened, the time-out settings for the device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_internal_basic_settings) to set time-out parameters to zero (no time-out events are used). User-mode and kernel-mode clients can use an [IOCTL_SERIAL_SET_TIMEOUTS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_set_timeouts) request to set time-out parameters. 
 
 For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://docs.microsoft.com/previous-versions/ff547486(v=vs.85)).
 
@@ -362,12 +362,12 @@ For WMI requests, Serial sets the Status field to one of the following values:
 
 ### Operation
 
-Serial uses [WmiSystemControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) to handle WMI system control requests. Serial registers the following types of WMI library callback routines, which **WmiSystemControl** calls to handle WMI requests sent to a device:
+Serial uses [WmiSystemControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle WMI system control requests. Serial registers the following types of WMI library callback routines, which **WmiSystemControl** calls to handle WMI requests sent to a device:
 
-* [DpWmiQueryReginfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_query_reginfo_callback)
-* [DpWmiQueryDataBlock](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_query_datablock_callback)
-* [DpWmiSetDataBlock](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_set_datablock_callback)
-* [DpWmiSetDataItem](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nc-wmilib-wmi_set_dataitem_callback)
+* [DpWmiQueryReginfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_reginfo_callback)
+* [DpWmiQueryDataBlock](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback)
+* [DpWmiSetDataBlock](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_set_datablock_callback)
+* [DpWmiSetDataItem](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_set_dataitem_callback)
 
 Serial does not support any other system control requests. For non-WMI requests, Serial skips the current stack location, and sends the request down the device stack.
 
@@ -418,7 +418,7 @@ The *Status* member is set to one of the following values:
 
 ### Operation
 
-A client can use time-out events to terminate a write request. Note, however, that when a serial device is opened, the time-out events set on a device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_internal_basic_settings) to set time-out parameters to zero (no time-out events are used) and an [IOCTL_SERIAL_SET_TIMEOUTS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddser/ni-ntddser-ioctl_serial_set_timeouts) request to set time-out parameters. For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://docs.microsoft.com/previous-versions/ff547486(v=vs.85)).
+A client can use time-out events to terminate a write request. Note, however, that when a serial device is opened, the time-out events set on a device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_internal_basic_settings) to set time-out parameters to zero (no time-out events are used) and an [IOCTL_SERIAL_SET_TIMEOUTS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_set_timeouts) request to set time-out parameters. For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://docs.microsoft.com/previous-versions/ff547486(v=vs.85)).
 
 ## Related topics
 
@@ -426,4 +426,4 @@ A client can use time-out events to terminate a write request. Note, however, th
 
 [Rules for Handling Power IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/rules-for-handling-power-irps)
 
-[Serial Controller Driver Design Guide](https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/)
+[Serial Controller Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/serports/)

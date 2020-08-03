@@ -25,7 +25,7 @@ The *Unload* routine should first check to ensure that all its devices have been
 
 2.  Disable any device notifications from lower drivers, such as the ACPI driver, using that driver's interface.
 
-3.  Delete the device object for the device by calling [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iodeletedevice), as follows:
+3.  Delete the device object for the device by calling [**IoDeleteDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iodeletedevice), as follows:
 
     ```cpp
         IoDeleteDevice (NewBatt->DeviceObject);

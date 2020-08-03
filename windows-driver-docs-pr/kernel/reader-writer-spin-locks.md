@@ -29,7 +29,7 @@ The following is a list of the routines that are available to manage reader/writ
 | [**ExReleaseSpinLockExclusiveFromDpcLevel**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451058(v=vs.85)) | Releases a spin lock that the caller acquired for exclusive access, and does not lower the IRQL.                      |
 | [**ExReleaseSpinLockShared**](https://msdn.microsoft.com/library/windows/hardware/hh451067)                              | Releases a spin lock that the caller acquired for shared access, and restores the original IRQL.                      |
 | [**ExReleaseSpinLockSharedFromDpcLevel**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh451064(v=vs.85))      | Releases a spin lock that the caller acquired for shared access, and does not lower the IRQL.                         |
-| [**ExTryConvertSharedSpinLockExclusive**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-extryconvertsharedspinlockexclusive)      | Tries to convert the access state of a spin lock that the caller already holds for shared access to exclusive access. |
+| [**ExTryConvertSharedSpinLockExclusive**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-extryconvertsharedspinlockexclusive)      | Tries to convert the access state of a spin lock that the caller already holds for shared access to exclusive access. |
 
  
 

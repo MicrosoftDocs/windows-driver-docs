@@ -184,9 +184,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**IDebugAdvanced2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugadvanced2)
+[**IDebugAdvanced2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced2)
 
-[**IDebugAdvanced3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nn-dbgeng-idebugadvanced3)
+[**IDebugAdvanced3**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced3)
 
 [**DEBUG\_REQUEST\_SOURCE\_PATH\_HAS\_SOURCE\_SERVER**](debug-request-source-path-has-source-server.md)
 

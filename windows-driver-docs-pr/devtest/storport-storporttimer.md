@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **HW\_TIMER** routine must be defined if a call to **StorPortNotification(RequestTimerCall)** is made.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------
@@ -51,7 +49,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportnotification)
+[**StorPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportnotification)
  
 
  

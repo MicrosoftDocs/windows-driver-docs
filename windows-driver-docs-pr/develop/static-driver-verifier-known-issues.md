@@ -9,9 +9,11 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Static Driver Verifier Known Issues
+# Static Driver Verifier Known Issues - Windows 10 Version 1809
 
-This page describes common issues you may encounter when using the Static Driver Verifier tool in the WDK. The information below pertains specifically to the version of the tool that ships with Windows 10 October 2018 Update (Version 1809).
+This page describes common issues you may encounter when using the Static Driver Verifier (SDV) tool in the Windows Driver Kit (WDK). The information below pertains specifically to the version of the tool that ships with Windows 10 October 2018 Update (Version 1809).
+
+Please see [WDK Known Issues](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk) for known SDV issues with the latest official WDK.
 
 ## InterceptedBuild failures
 
@@ -124,4 +126,4 @@ c:\Program Files\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\VC\VCTarget
 Done executing task "LIB" -- FAILED.
 ```
 
-Please use errata 41600 for this issue.
+This is a known issue. If this issue is blocking your WHCP certification, please use errata 41600.

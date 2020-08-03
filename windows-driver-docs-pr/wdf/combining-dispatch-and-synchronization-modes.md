@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 # Combining Dispatch and Synchronization Modes
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 Combining a particular [queue dispatch mode](configuring-dispatch-mode-for-an-i-o-queue.md) with a [synchronization mode](specifying-a-callback-synchronization-mode.md) provides the mode of operation, as shown in the following diagram.
 

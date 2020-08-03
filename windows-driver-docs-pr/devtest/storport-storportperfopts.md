@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that the **PerfConfigData** parameter that is passed to **StorPortInitializePerfOpts** is not NULL.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------
@@ -51,7 +49,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortInitializePerfOpts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitializeperfopts)
+[**StorPortInitializePerfOpts**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializeperfopts)
  
 
  

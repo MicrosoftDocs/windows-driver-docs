@@ -25,6 +25,12 @@ The DEVPKEY_Device_DevType device property represents the device type of a devic
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -54,7 +60,7 @@ The DEVPKEY_Device_DevType device property represents the device type of a devic
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_DevType to the value of the DeviceType member of the [**DEVICE_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure for a device instance. The value of DEVPKEY_Device_DevType is one of the system-defined device type values that are listed in [Specifying Device Types](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-types).
+Windows sets the value of DEVPKEY_Device_DevType to the value of the DeviceType member of the [**DEVICE_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure for a device instance. The value of DEVPKEY_Device_DevType is one of the system-defined device type values that are listed in [Specifying Device Types](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-types).
 
 You can set the value of DEVPKEY_Device_DevType by using an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) that is included in the [**INF *DDInstall*.HW section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section) in the INF file that installs a device.
 
@@ -65,27 +71,14 @@ Windows Server 2003, Windows XP, and Windows 2000 support this property, but do 
 Requirements
 ------------
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**DEVICE_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object)
+[**DEVICE_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object)
 
 [**INF *DDInstall*.HW section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section)
 

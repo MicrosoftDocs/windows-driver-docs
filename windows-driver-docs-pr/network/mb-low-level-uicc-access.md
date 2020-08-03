@@ -132,7 +132,7 @@ The function implements this MBIM command using a sequence of UICC commands:
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_OPEN_CHANNEL | Not applicable | Not applicable |
 | Response | MBIM_MS_UICC_OPEN_CHANNEL_INFO | Not applicable | Not applicable |
@@ -201,7 +201,7 @@ If the host specifies a channel group, the function determines which (if any) lo
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_CLOSE_CHANNEL | Not applicable | Not applicable |
 | Response | MBIM_MS_UICC_CLOSE_CHANNEL_INFO | Not applicable | Not applicable |
@@ -269,7 +269,7 @@ The function shall return the status, SW1 SW2, and response from the UICC to the
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_APDU | Not applicable | Not applicable |
 | Response | MBIM_MS_UICC_APDU_INFO | Not applicable | Not applicable |
@@ -349,7 +349,7 @@ The host sends MBIM_CID_MS_UICC_TERMINAL_CAPABILITY to inform the modem about th
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_TERMINAL_CAPABILITY | Empty | Not applicable |
 | Response | Not applicable | MBIM_MS_TERMINAL_CAPABILITY_INFO | Not applicable |

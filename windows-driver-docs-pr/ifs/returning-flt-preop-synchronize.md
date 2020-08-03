@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_returning_flt_preop_synchronize_if"></span><span id="DDK_RETURNING_FLT_PREOP_SYNCHRONIZE_IF"></span>
 
 
-If a minifilter driver's [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_pre_operation_callback) synchronizes an I/O operation by returning FLT\_PREOP\_SYNCHRONIZE, the filter manager calls the minifilter driver's [**postoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nc-fltkernel-pflt_post_operation_callback) during I/O completion.
+If a minifilter driver's [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) synchronizes an I/O operation by returning FLT\_PREOP\_SYNCHRONIZE, the filter manager calls the minifilter driver's [**postoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_post_operation_callback) during I/O completion.
 
 The filter manager calls the minifilter driver's postoperation callback routine in the same thread context as the preoperation callback, at IRQL &lt;= APC\_LEVEL. (Note that this thread context is not necessarily the context of the originating thread.)
 
@@ -29,7 +29,7 @@ A minifilter driver's preoperation callback routine should return FLT\_PREOP\_SY
 
 Minifilter drivers should not return FLT\_PREOP\_SYNCHRONIZE for create operations, because these operations are already synchronized by the filter manager. If a minifilter driver has registered preoperation and postoperation callback routines for IRP\_MJ\_CREATE operations, the post-create callback routine is called at IRQL = PASSIVE\_LEVEL, in the same thread context as the pre-create callback routine.
 
-Minifilter drivers must never return FLT\_PREOP\_SYNCHRONIZE for asynchronous read or write operations. Doing so can severely degrade both minifilter driver and system performance and can even cause deadlocks if, for example, the modified page writer thread is blocked. Before returning FLT\_PREOP\_SYNCHRONIZE for an IRP-based read or write operation, a minifilter driver should verify that the operation is synchronous by calling [**FltIsOperationSynchronous**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltisoperationsynchronous).
+Minifilter drivers must never return FLT\_PREOP\_SYNCHRONIZE for asynchronous read or write operations. Doing so can severely degrade both minifilter driver and system performance and can even cause deadlocks if, for example, the modified page writer thread is blocked. Before returning FLT\_PREOP\_SYNCHRONIZE for an IRP-based read or write operation, a minifilter driver should verify that the operation is synchronous by calling [**FltIsOperationSynchronous**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltisoperationsynchronous).
 
 The following types of I/O operations cannot be synchronized:
 

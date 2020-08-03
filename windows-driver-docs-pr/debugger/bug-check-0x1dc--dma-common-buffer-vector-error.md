@@ -54,7 +54,7 @@ x02 : Vector not empty.
 ## Cause
 -----
 
-A driver has misused the DMA vectored common buffer APIs.
+A driver has misused the DMA vectored common buffer APIs. The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ## See Also
 ----------

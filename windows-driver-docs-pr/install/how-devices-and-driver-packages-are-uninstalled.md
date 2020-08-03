@@ -21,8 +21,6 @@ These actions include the following:
 
 -   [Deleting a Driver Package from the Driver Store](#deleting-a-driver-package-from-the-driver-store)
 
--   [Deleting the Binary Files of the Installed Driver](#deleting-the-binary-files-of-the-installed-driver)
-
 **Note**  These actions do not need to be performed in sequential order.
 
  
@@ -53,16 +51,9 @@ After the driver package has been removed from the driver store, it is no longer
 
 Before deleting a driver package from the driver store, be sure to uninstall all devices that are using it.
 
-**Important**  You must not manually delete the [driver package](driver-packages.md) from the [driver store](driver-store.md). Doing so can cause an inconsistency between the INF fie, the driver store catalog, and the driver in the driver store. You might also be unable to stage the same driver package to the driver store.
+**Important**  Manually deleting the [driver package](driver-packages.md) from the [driver store](driver-store.md) may result in unpredictable behavior.
 
  
-
-### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
-
-[Device Manager](using-device-manager.md) and the PnP manager do not support deleting driver binaries from the target destinations where they were installed. 
-
-When you uninstall a driver package, the associated driver binaries might still be used by devices or applications. Removing the binaries can lead to system failures. Before you remove any driver binaries, make sure that the binaries are not still being used by any other component on the system and can be safely removed.
-
 
 
  

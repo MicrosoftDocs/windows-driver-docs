@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="midi_stream_data_range"></span><span id="MIDI_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a MIDI stream.
+This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a MIDI stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_MUSIC);

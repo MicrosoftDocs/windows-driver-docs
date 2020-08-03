@@ -12,20 +12,18 @@ ms.localizationpriority: medium
 
 The NDIS_STATUS_WWAN_DEVICE_RESET_STATUS notification is sent by a modem miniport driver to inform the MB host of the reset status of the modem device. This notification is sent as an asynchronous response to an [OID_WWAN_DEVICE_RESET](oid-wwan-device-reset.md) set request.
 
-This notification uses the [NDIS_WWAN_DEVICE_RESET_STATUS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_reset_status) structure.
+This notification uses the [NDIS_WWAN_DEVICE_RESET_STATUS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_reset_status) structure.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 10, version 1709 |
-| Header | Ndis.h |
+**Version**: Windows 10, version 1709
+**Header**: Ndis.h
 
 ## See also
 
 [OID_WWAN_DEVICE_RESET](oid-wwan-device-reset.md)
 
-[NDIS_WWAN_DEVICE_RESET_STATUS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_device_reset_status)
+[NDIS_WWAN_DEVICE_RESET_STATUS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_reset_status)
 
 [MB modem reset operations](mb-modem-reset-operations.md)
 

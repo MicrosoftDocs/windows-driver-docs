@@ -207,9 +207,22 @@ Needs=inf-section-name.Services
 
 For devices that do not require a function driver, the NULL driver can be specified as follows:
 <pre>
-AddService = ,2.
+AddService = ,2
 </pre>
+
 <b>Only use this in the case where the INF is installing a non-functional device to specify it does not need a driver.</b>
+
+For example: A device that requires only a filter driver, and not a function driver would have two AddService directives:
+<pre>
+AddService = MyFilterDriver,, My-Service-Install-Section 
+AddService = ,2
+</pre>
+
+</td>
+</tr>
+<tr>
+<td><strong>1297: Device driver does not install on any devices, use primitive driver if this is intended.</strong></td>
+<td>This indicates that the INF file is a device driver, but it is not being used as a device driver. This may cause issues in how the driver is treated by the driver store. If this is unintentional, check your INF to make sure that hardware IDs are correctly specified. If the driver is not intended to install on devices, convert it to a primitive driver.  For more info, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-primitive-driver#converting-from-a-device-driver-inf">Converting from a device driver INF</a>.
 </td>
 </tr>
 </tbody>

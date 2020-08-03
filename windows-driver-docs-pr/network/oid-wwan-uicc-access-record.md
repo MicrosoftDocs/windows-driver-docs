@@ -13,9 +13,7 @@ ms.custom: 19H1
 
 OID_WWAN_UICC_ACCESS_RECORD accesses a UICC linear fixed or cyclic file, the structure type of which is **WwanUiccFileStructureCyclic** or **WwanUiccFileStructureLinear**.
 
-Query requests read the contents of a record. Query payloads contain an [**NDIS_WWAN_UICC_ACCESS_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_access_record) structure specifying information about the file to read. Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE](ndis-status-wwan-uicc-record-response.md) status notification containing an [**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response) structure that describes the UICC's response. 
-
-Set requests update a linear fixed or cyclic file. Set payloads contain an [**NDIS_WWAN_UICC_ACCESS_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_access_record) structure specifying information about the file to which to write. Miniport drivers must process Set requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE](ndis-status-wwan-uicc-record-response.md) status notification containing an [**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response) structure that describes the UICC's response. 
+Query requests read the contents of a record. Query payloads contain an [**NDIS_WWAN_UICC_ACCESS_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_access_record) structure specifying information about the file to read. Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE](ndis-status-wwan-uicc-record-response.md) status notification containing an [**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response) structure that describes the UICC's response. 
 
 ## Remarks
 
@@ -23,10 +21,8 @@ For more information about usage of this OID, see [MB UICC application and file 
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1903 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1903
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
@@ -34,6 +30,6 @@ For more information about usage of this OID, see [MB UICC application and file 
 
 [NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE](ndis-status-wwan-uicc-record-response.md)
 
-[**NDIS_WWAN_UICC_ACCESS_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_access_record)
+[**NDIS_WWAN_UICC_ACCESS_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_access_record)
 
-[**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response)
+[**NDIS_WWAN_UICC_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response)

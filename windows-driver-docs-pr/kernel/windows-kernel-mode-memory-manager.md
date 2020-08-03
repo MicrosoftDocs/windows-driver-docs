@@ -19,9 +19,9 @@ The memory manager manages memory by performing the following major tasks:
 
 For more detailed information about memory management for drivers, see [Memory Management for Windows Drivers](managing-memory-for-drivers.md).
 
-Routines that provide a direct interface to the memory manager are usually prefixed with the letters "**Mm**"; for example, **MmGetPhysicalAddress**. For a list of memory manager routines, see [Memory Manager Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff554435(v=vs.85)).
+Routines that provide a direct interface to the memory manager are usually prefixed with the letters "**Mm**"; for example, **MmGetPhysicalAddress**. To find documentation on memory manager routines, navigate to [**MmAdvanceMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmadvancemdl) and use the Table of Contents on the left to scroll through the Mm* routines.
 
-For lists of memory manager routines sorted by functionality, see [Memory Allocation and Buffer Management](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_kernel/#memory-allocation-and-buffer-management).
+For lists of memory manager routines sorted by functionality, see [Memory Allocation and Buffer Management](https://docs.microsoft.com/windows-hardware/drivers/ddi/_kernel/#memory-allocation-and-buffer-management).
 
  
 

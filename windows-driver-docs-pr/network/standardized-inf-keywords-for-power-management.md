@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Standardized INF Keywords for Power Management
 
-The power management standardized keywords are defined in the device driver INF file. The operating system reads these standardized keywords and adjusts the current power management capabilities of the device. The device driver should always indicate the device's hardware power management capabilities to NDIS in the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
+The power management standardized keywords are defined in the device driver INF file. The operating system reads these standardized keywords and adjusts the current power management capabilities of the device. The device driver should always indicate the device's hardware power management capabilities to NDIS in the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
 
 The following standardized INF keywords are defined to enable or disable support for power management features of network adapters.
 

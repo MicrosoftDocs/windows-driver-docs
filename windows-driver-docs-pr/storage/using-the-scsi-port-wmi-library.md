@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 ## <span id="ddk_using_the_scsi_port_wmi_library_kg"></span><span id="DDK_USING_THE_SCSI_PORT_WMI_LIBRARY_KG"></span>
 
 
-Storage miniport drivers that function as WMI providers can use the SCSI Port WMI library to simplify the task of processing SCSI request blocks (SRBs) that contain WMI commands. The miniport driver's start I/O routine, [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)), passes relevant information in the WMI SRB to the SCSI Port WMI library for processing by a call to the [**ScsiPortWmiDispatchFunction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction) library's dispatch routine. The miniport driver will pass the following data to the dispatch routine:
+Storage miniport drivers that function as WMI providers can use the SCSI Port WMI library to simplify the task of processing SCSI request blocks (SRBs) that contain WMI commands. The miniport driver's start I/O routine, [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)), passes relevant information in the WMI SRB to the SCSI Port WMI library for processing by a call to the [**ScsiPortWmiDispatchFunction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction) library's dispatch routine. The miniport driver will pass the following data to the dispatch routine:
 
--   In the *WmiLibInfo* parameter: a [**SCSI\_WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the miniport driver's callback routines.
+-   In the *WmiLibInfo* parameter: a [**SCSI\_WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the miniport driver's callback routines.
 
 -   In the *WMISubFunction* parameter: the value in the **WMISubFunction** member of the SRB.
 
 -   In the *DeviceContext* parameter: a pointer to the device extension.
 
--   In the *RequestContext* parameter: a request context structure of type [**SCSIWMI\_REQUEST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/ns-scsiwmi-scsiwmi_request_context) that the SCSI Port WMI library uses to record information, such as status and the size of the data returned.
+-   In the *RequestContext* parameter: a request context structure of type [**SCSIWMI\_REQUEST\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmi_request_context) that the SCSI Port WMI library uses to record information, such as status and the size of the data returned.
 
 -   In the *DataPath* parameter: the value in the **DataPath** member of the SRB.
 
@@ -31,9 +31,9 @@ Storage miniport drivers that function as WMI providers can use the SCSI Port WM
 
 -   In the *Buffer* parameter: the value in the **DataBuffer** member of the SRB.
 
-When the miniport driver is initialized, it must fill a [**SCSI\_WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the required miniport driver callback routines, and then store the structure in a miniport driver-specific storage area, such as the driver extension. Each miniport driver callback routine corresponds to a minor IRP number, as explained in [How the Port Driver Processes WMI Requests](how-the-port-driver-processes-wmi-requests.md). For information about how to design miniport driver callback routines, see [Designing WMI Miniport Driver Callback Routines](designing-wmi-miniport-driver-callback-routines.md)
+When the miniport driver is initialized, it must fill a [**SCSI\_WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-_scsiwmilib_context) structure with pointers to the required miniport driver callback routines, and then store the structure in a miniport driver-specific storage area, such as the driver extension. Each miniport driver callback routine corresponds to a minor IRP number, as explained in [How the Port Driver Processes WMI Requests](how-the-port-driver-processes-wmi-requests.md). For information about how to design miniport driver callback routines, see [Designing WMI Miniport Driver Callback Routines](designing-wmi-miniport-driver-callback-routines.md)
 
-The **GuidList** member of the SCSI\_WMILIB\_CONTEXT structure must point to an array of elements of type [**SCSIWMIGUIDREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsiwmi/ns-scsiwmi-scsiwmiguidreginfo) that contain information about the GUIDs that uniquely identify the supported WMI classes defined in the MOF file. The following code snippet illustrates the definition of an array of such elements:
+The **GuidList** member of the SCSI\_WMILIB\_CONTEXT structure must point to an array of elements of type [**SCSIWMIGUIDREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmiguidreginfo) that contain information about the GUIDs that uniquely identify the supported WMI classes defined in the MOF file. The following code snippet illustrates the definition of an array of such elements:
 
 ```cpp
 SCSIWMIGUIDREGINFO GuidList[] = 

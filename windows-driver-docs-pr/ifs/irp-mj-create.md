@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_CREATE
+title: IRP_MJ_CREATE (IFS)
 description: IRP\_MJ\_CREATE
 ms.assetid: fdcc81f0-e571-4194-88cd-d0956ca1577e
 keywords: ["IRP_MJ_CREATE Installable File System Drivers"]
@@ -13,13 +13,13 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_CREATE
+# IRP\_MJ\_CREATE (IFS)
 
 
 ## When Sent
 
 
-The I/O Manager sends the IRP\_MJ\_CREATE request when a new file or directory is being created, or when an existing file, device, directory, or volume is being opened. Normally this IRP is sent on behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) or on behalf of a kernel-mode component that has called [**IoCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatefile), [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint), [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntopenfile). If the create request is completed successfully, the application or kernel-mode component receives a handle to the file object.
+The I/O Manager sends the IRP\_MJ\_CREATE request when a new file or directory is being created, or when an existing file, device, directory, or volume is being opened. Normally this IRP is sent on behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) or on behalf of a kernel-mode component that has called [**IoCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile), [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint), [**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile). If the create request is completed successfully, the application or kernel-mode component receives a handle to the file object.
 
 ## Operation: File System Drivers
 
@@ -37,23 +37,23 @@ Otherwise, the filter driver should perform any needed processing and, depending
 
 Generally, filter drivers should not return **STATUS\_PENDING** in response to **IRP\_MJ\_CREATE**. However, if a lower-level driver returns **STATUS\_PENDING**, the filter driver should pass this status value up the driver chain.
 
-File system filter driver writers should note that [**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobject) causes an [**IRP\_MJ\_CLEANUP**](irp-mj-cleanup.md) request to be sent to the file system driver stack for the volume. Because file systems often create stream file objects as a side effect of operations other than **IRP\_MJ\_CREATE**, it is difficult for filter drivers to reliably detect stream file object creation. Thus a filter driver should expect to receive **IRP\_MJ\_CLEANUP** and [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close) requests for previously unseen file objects. In the case of [**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobjectlite), an **IRP\_MJ\_CLEANUP** request is not sent.
+File system filter driver writers should note that [**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobject) causes an [**IRP\_MJ\_CLEANUP**](irp-mj-cleanup.md) request to be sent to the file system driver stack for the volume. Because file systems often create stream file objects as a side effect of operations other than **IRP\_MJ\_CREATE**, it is difficult for filter drivers to reliably detect stream file object creation. Thus a filter driver should expect to receive **IRP\_MJ\_CLEANUP** and [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close) requests for previously unseen file objects. In the case of [**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobjectlite), an **IRP\_MJ\_CLEANUP** request is not sent.
 
-&gt; \[!Note\]
-&gt;  When legacy filter drivers re-issue a create in a post-create callback, they must release and set the buffer that is associated with their reparse point (the auxiliary buffer) to **NULL**. If a legacy filter driver does not free this buffer and set it to **NULL**, the driver will leak memory. Minifilter drivers do not have to do this because the Filter Manager does this for them.
+> [!NOTE]
+> When legacy filter drivers re-issue a create in a post-create callback, they must release and set the buffer that is associated with their reparse point (the auxiliary buffer) to **NULL**. If a legacy filter driver does not free this buffer and set it to **NULL**, the driver will leak memory. Minifilter drivers do not have to do this because the Filter Manager does this for them.
 
  
 
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a create request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a create request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 Pointer to the target device object.
 
 <a href="" id="irp--associatedirp-systembuffer"></a>*Irp-&gt;AssociatedIrp.SystemBuffer*  
-Pointer to a [**FILE\_FULL\_EA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_full_ea_information)-structured buffer, if the file object represents a file with extended attributes. Otherwise, this member is set to **NULL**.
+Pointer to a [**FILE\_FULL\_EA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)-structured buffer, if the file object represents a file with extended attributes. Otherwise, this member is set to **NULL**.
 
 <a href="" id="irp--flags"></a>*Irp-&gt;Flags*  
 The following flags are set for this request:
@@ -68,7 +68,7 @@ IRP\_SYNCHRONOUS\_API
 Indicates the execution mode of the process that requested the operation, either **KernelMode** or **UserMode**. Note that if the SL\_FORCE\_ACCESS\_CHECK flag is set, access checks must be performed, even if *Irp-&gt;RequestorMode* is KernelMode.
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*
-Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. The file system sets the **Information** member of this structure to one of the following values:
+Pointer to an [**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. The file system sets the **Information** member of this structure to one of the following values:
 
 FILE\_CREATED
 
@@ -88,9 +88,9 @@ Initial allocation size, in bytes, for the file. A nonzero value has no effect u
 <a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*
 Pointer to a file object that the I/O Manager creates to represent the file to be created or opened. When the file system processes the IRP\_MJ\_CREATE request, it sets the **FsContext** and possibly **FsContext2** fields in this file object to values that are file-system-specific. Thus the values of the **FsContext** and **FsContext2** fields cannot be considered valid until after the file system has processed the create request. For more information, see [File Streams, Stream Contexts, and Per-Stream Contexts](https://docs.microsoft.com/windows-hardware/drivers/ifs/file-streams--stream-contexts--and-per-stream-contexts).
 
-[**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcancelfileopen) and [**IoCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocancelfileopen) set the FO\_FILE\_OPEN\_CANCELLED flag in the file object's **Flags** field. Setting this flag indicates that the IRP\_MJ\_CREATE request has been canceled, and an [**IRP\_MJ\_CLOSE**](irp-mj-close.md) request will be issued for this file object. Once the create request has been canceled, it cannot be reissued.
+[**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen) and [**IoCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocancelfileopen) set the FO\_FILE\_OPEN\_CANCELLED flag in the file object's **Flags** field. Setting this flag indicates that the IRP\_MJ\_CREATE request has been canceled, and an [**IRP\_MJ\_CLOSE**](irp-mj-close.md) request will be issued for this file object. Once the create request has been canceled, it cannot be reissued.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of a FILE\_OBJECT structure is used to indicate that a given file has been opened relative to an already open file object. This usually indicates that the relative file is a directory but stream-based files may be opened relative to an already existing stream of a file. The **RelatedFileObject** field of the FILE\_OBJECT structure is only valid during the processing of IRP\_MJ\_CREATE.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of a FILE\_OBJECT structure is used to indicate that a given file has been opened relative to an already open file object. This usually indicates that the relative file is a directory but stream-based files may be opened relative to an already existing stream of a file. The **RelatedFileObject** field of the FILE\_OBJECT structure is only valid during the processing of IRP\_MJ\_CREATE.
 
 <a href="" id="irpsp--flags"></a>*IrpSp-&gt;Flags*
 One or more of the following:
@@ -135,14 +135,14 @@ Specifies IRP\_MJ\_CREATE.
 Size in bytes of the buffer at *Irp-&gt;AssociatedIrp.SystemBuffer*. If the value of *Irp-&gt;AssociatedIrp.SystemBuffer* is **NULL**, this member must be zero.
 
 <a href="" id="irpsp--parameters-create-fileattributes"></a>*IrpSp-&gt;Parameters.Create.FileAttributes*
-Bitmask of attribute flags to be applied when creating or opening the file. Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE\_ATTRIBUTE\_NORMAL, which can be overridden by any other flag or by an ORed combination of compatible flags. This member corresponds to the *FileAttributes* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
+Bitmask of attribute flags to be applied when creating or opening the file. Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE\_ATTRIBUTE\_NORMAL, which can be overridden by any other flag or by an ORed combination of compatible flags. This member corresponds to the *FileAttributes* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
 
 <a href="" id="irpsp--parameters-create-options"></a>*IrpSp-&gt;Parameters.Create.Options*
 Bitmask of flags that specify the options to be applied when creating or opening the file, as well as the action to be taken if the file already exists.
 
-The high 8 bits of this parameter correspond to the *Disposition* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
+The high 8 bits of this parameter correspond to the *Disposition* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
 
-The low 24 bits of this member correspond to the *CreateOptions* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint). File system filter and minifilter drivers that perform file scanning (such as antivirus programs) should pay particular attention to the FILE\_COMPLETE\_IF\_OPLOCKED flag. If this flag is set, the filter must not block or otherwise delay the IRP\_MJ\_CREATE operation.
+The low 24 bits of this member correspond to the *CreateOptions* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint). File system filter and minifilter drivers that perform file scanning (such as antivirus programs) should pay particular attention to the FILE\_COMPLETE\_IF\_OPLOCKED flag. If this flag is set, the filter must not block or otherwise delay the IRP\_MJ\_CREATE operation.
 
 If the FILE\_COMPLETE\_IF\_OPLOCKED flag is set in the pre-create (create dispatch) path, the filter must not initiate any of the following types of operations, because they can cause oplock breaks:
 
@@ -162,46 +162,46 @@ If the FILE\_COMPLETE\_IF\_OPLOCKED flag is set in the completion (post-create) 
 -   A system component other than the filter or minifilter sends the file system an I/O request that must wait until the oplock break is complete (such as IRP\_MJ\_READ or IRP\_MJ\_WRITE). The filter or minifilter can initiate one of the above operations from its dispatch (or preoperation callback) routine for this new operation, because the dispatch or preoperation callback routine is put into a wait state until the oplock break is complete.
 
 <a href="" id="irpsp--parameters-create-securitycontext--accessstate"></a>*IrpSp-&gt;Parameters.Create.SecurityContext-&gt;AccessState*
-Pointer to an [**ACCESS\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_access_state) structure containing the object's subject context, granted access types, and remaining desired access types.
+Pointer to an [**ACCESS\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_access_state) structure containing the object's subject context, granted access types, and remaining desired access types.
 
 <a href="" id="irpsp--parameters-create-securitycontext--desiredaccess"></a>*IrpSp-&gt;Parameters.Create.SecurityContext-&gt;DesiredAccess*
-ACCESS\_MASK structure specifying access rights requested for the file. For more information, see the description of the *DesiredAccess* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
+ACCESS\_MASK structure specifying access rights requested for the file. For more information, see the description of the *DesiredAccess* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
 
 <a href="" id="irpsp--parameters-create-shareaccess"></a>*IrpSp-&gt;Parameters.Create.ShareAccess*
-Bitmask of share access rights requested for the file. If this member is zero, exclusive access is being requested. For more information, see the description of the *ShareAccess* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
+Bitmask of share access rights requested for the file. If this member is zero, exclusive access is being requested. For more information, see the description of the *ShareAccess* parameter to [**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint).
 
 ## See also
 
 
 [**ACCESS\_MASK**](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask)
 
-[**ACCESS\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_access_state)
+[**ACCESS\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_access_state)
 
-[**FILE\_FULL\_EA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_full_ea_information)
+[**FILE\_FULL\_EA\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)
 
-[**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcancelfileopen)
+[**FltCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcancelfileopen)
 
-[**FltReissueSynchronousIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreissuesynchronousio)
+[**FltReissueSynchronousIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreissuesynchronousio)
 
-[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location)
+[**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_status_block)
+[**IO\_STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
-[**IoCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocancelfileopen)
+[**IoCancelFileOpen**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocancelfileopen)
 
-[**IoCheckEaBufferValidity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocheckeabuffervalidity)
+[**IoCheckEaBufferValidity**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocheckeabuffervalidity)
 
-[**IoCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatefile)
+[**IoCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile)
 
-[**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint)
+[**IoCreateFileSpecifyDeviceObjectHint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint)
 
-[**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobject)
+[**IoCreateStreamFileObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobject)
 
-[**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iocreatestreamfileobjectlite)
+[**IoCreateStreamFileObjectLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocreatestreamfileobjectlite)
 
-[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetcurrentirpstacklocation)
+[**IoGetCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp)
+[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**IRP\_MJ\_CLEANUP**](irp-mj-cleanup.md)
 
@@ -209,9 +209,9 @@ Bitmask of share access rights requested for the file. If this member is zero, e
 
 [**IRP\_MJ\_CREATE (WDK Kernel Reference)**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create)
 
-[**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntcreatefile)
+[**ZwCreateFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)
 
-[**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-ntopenfile)
+[**ZwOpenFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile)
 
  
 

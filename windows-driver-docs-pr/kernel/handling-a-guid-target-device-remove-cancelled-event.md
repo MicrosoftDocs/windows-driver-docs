@@ -21,7 +21,7 @@ When handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED event, a notification ca
 
     Because the driver closed the previous registration handle in response to the query-remove notification, the driver must open a new handle. The driver must:
 
-    1.  Remove the old registration with [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iounregisterplugplaynotification).
+    1.  Remove the old registration with [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification).
 
     2.  Open a new handle to the device.
 

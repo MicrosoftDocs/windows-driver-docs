@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that **KeReleaseSpinLock** is called at **IRQL = DISPATCH\_LEVEL** only. It must also set the IRQL to the previous IRQL level. Typically this call would be preceded by a call to **KeAcquireSpinLock**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------
@@ -51,7 +49,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleasespinlock)
+[**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock)
  
 
  

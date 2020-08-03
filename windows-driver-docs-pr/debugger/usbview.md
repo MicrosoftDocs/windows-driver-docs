@@ -4,7 +4,7 @@ description: USBView
 ms.assetid: 88d2a93f-2e7c-493c-bb9e-487f1d1f2016
 keywords: ["USBView"]
 ms.date: 02/22/2017
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # USBView
@@ -28,7 +28,7 @@ To download  and use USBView, complete the following steps:
 
 ## USBView source code
 
-[USBView](https://go.microsoft.com/fwlink/p/?LinkId=618004) is also available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+[USBView](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/usbview) is also available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ## <span id="using_usbview"></span><span id="USING_USBVIEW"></span>Use USBView
 

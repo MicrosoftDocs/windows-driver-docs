@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # MakeCert
 
 
-MakeCert (Makecert.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that creates an X.509 certificate that is signed by a system test root key or by another specified key. The certificate binds a certificate name to the public part of the key pair. The certificate is saved to a file, a system certificate store, or both.
+MakeCert (Makecert.exe) is a command-line [CryptoAPI](https://docs.microsoft.com/windows/win32/seccrypto/cryptography-portal) tool that creates an X.509 certificate that is signed by a system test root key or by another specified key. The certificate binds a certificate name to the public part of the key pair. The certificate is saved to a file, a system certificate store, or both.
 
 MakeCert supports a large number of switches but this section only describes the basic switches that are relevant to creating a [test certificate](https://docs.microsoft.com/windows-hardware/drivers/install/makecert-test-certificate) that can be used to test-sign a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) or embed a signature in a driver file.
 
@@ -86,7 +86,7 @@ The name of the file in which the generated certificate is saved.
 
 MakeCert supports a large number of switches. The switches described in this topic are limited to the ones that you can use to create a [test certificate](https://docs.microsoft.com/windows-hardware/drivers/install/makecert-test-certificate).
 
-For a complete list of MakeCert parameters, see the [MakeCert](https://go.microsoft.com/fwlink/p/?linkid=62653) website and the [Using MakeCert](https://go.microsoft.com/fwlink/p/?linkid=62655) website.
+For a complete list of MakeCert parameters, see the [MakeCert](https://docs.microsoft.com/windows/win32/seccrypto/makecert) website and the [Using MakeCert](https://docs.microsoft.com/windows/win32/seccrypto/using-makecert) website.
 
 A 32-bit version of the MakeCert tool is located in the bin\\i386 folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
 

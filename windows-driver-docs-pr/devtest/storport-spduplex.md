@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that this miniport is in **Full Duplex** mode. Any driver built according to the StorPort-miniport model must be in **Full Duplex** mode. **Half Duplex** should only be used when porting an existing SCSI driver to StorPort.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

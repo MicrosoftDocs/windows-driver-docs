@@ -288,7 +288,7 @@ ms.localizationpriority: medium
 
 -   Be cautious when using structure packing directives.
 
-    On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlcopymemory) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
+    On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcopymemory) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
 
     ```cpp
     #pragma pack (1)  /* also set by /Zp switch */

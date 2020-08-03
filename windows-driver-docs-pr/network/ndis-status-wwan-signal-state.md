@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_SIGNAL\_STATE notification to send 
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) structure.
+This notification uses the [**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state) structure.
 
 Remarks
 -------
@@ -49,7 +49,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state)
+[**NDIS\_WWAN\_SIGNAL\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state)
 
 [OID\_WWAN\_SIGNAL\_STATE](oid-wwan-signal-state.md)
 

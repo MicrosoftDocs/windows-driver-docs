@@ -36,5 +36,5 @@ The OEM\*.inf file name of the INF file. Windows assigns a file name with this f
 
 ```command
 devcon dp_delete oem2.inf
-devcon dp_delete oem0.inf -f
+devcon -f dp_delete oem0.inf
 ```

@@ -16,19 +16,16 @@ ms.localizationpriority: medium
 # CriticalRegions rule (wdm)
 
 
-The **CriticalRegions** rule specifies that the driver must call [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion) before calling [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleavecriticalregion) and that the driver calls **KeLeaveCriticalRegion** before any subsequent calls to **KeEnterCriticalRegion**. (Nested calls are permitted.)
+The **CriticalRegions** rule specifies that the driver must call [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) before calling [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion) and that the driver calls **KeLeaveCriticalRegion** before any subsequent calls to **KeEnterCriticalRegion**. (Nested calls are permitted.)
 
 This rule also specifies that the driver calls **KeLeaveCriticalRegion** to re-enable delivery of normal kernel asynchronous procedure calls (APCs) before it returns.
 
 The WDK documentation of **KeEnterCriticalRegion** and **KeLeaveCriticalRegion** explains that the caller of these functions can be running at IRQL&lt;=APC\_LEVEL. In this situation, this rule enforces a best practice recommendation.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00040003) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00040003)
+
 
 How to test
 -----------
@@ -79,8 +76,8 @@ Applies to
 
 [**ExEnterCriticalRegionAndAcquireResourceExclusive**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn308550(v=vs.85))
 [**ExReleaseResourceAndLeaveCriticalRegion**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn308551(v=vs.85))
-[**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion)
-[**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleavecriticalregion)
+[**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion)
+[**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion)
  
 
  

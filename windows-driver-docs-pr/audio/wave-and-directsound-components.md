@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 ## <span id="wave_and_directsound_components"></span><span id="WAVE_AND_DIRECTSOUND_COMPONENTS"></span>
 
 
-Application programs rely on a combination of user-mode and kernel-mode components to capture (input) and render (output) wave streams. A wave stream is a digital-audio stream whose data format is described by a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) or [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-waveformatextensible) structure.
+Application programs rely on a combination of user-mode and kernel-mode components to capture (input) and render (output) wave streams. A wave stream is a digital-audio stream whose data format is described by a [**WAVEFORMATEX**](https://docs.microsoft.com/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) or [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure.
 
 An application can use either of the following software interfaces for wave rendering and capture:
 
@@ -56,7 +56,7 @@ KMixer outputs a wave stream to a WaveCyclic or WavePci device, whose port and m
 
 Alternatively, KMixer can pass its output stream to a USB audio device, which is controlled by the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) (not shown in figure), instead of a WaveCyclic or WavePci device.
 
-An adapter driver creates an instance of a WaveCyclic or WavePci port driver by calling [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewport) with a GUID value of **CLSID\_PortWaveCyclic** or **CLSID\_PortWavePci**, respectively.
+An adapter driver creates an instance of a WaveCyclic or WavePci port driver by calling [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) with a GUID value of **CLSID\_PortWaveCyclic** or **CLSID\_PortWavePci**, respectively.
 
 The right side of the preceding figure shows the components that are needed to support an application that captures wave data to a file. The wave-capture (or "wave-in") application communicates with the WDM audio drivers through the waveIn*Xxx* functions, which are implemented in the WinMM system component.
 

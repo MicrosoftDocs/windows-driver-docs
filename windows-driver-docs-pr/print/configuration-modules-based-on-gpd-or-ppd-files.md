@@ -86,7 +86,7 @@ The following code example shows a GPD file that illustrates the entries and key
 *%
 *% IHV Private Namespace
 *%
-*PrintSchemaPrivateNamespaceURI:"http://www.ihv.com/schema/2006"
+*PrintSchemaPrivateNamespaceURI:"https://www.ihv.com/schema/2006"
 *%
 *% IHV Private Feature
 *%

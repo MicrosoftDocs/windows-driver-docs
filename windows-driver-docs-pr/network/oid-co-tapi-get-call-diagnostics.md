@@ -87,8 +87,6 @@ Specifies an [NDIS_VAR_DATA_DESC](https://docs.microsoft.com/previous-versions/w
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

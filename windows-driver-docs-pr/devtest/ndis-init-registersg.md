@@ -20,9 +20,7 @@ The Init\_RegisterSG rule specifies that the registration of the scatter-gather 
 
 If **NdisMRegisterScatterGatherDma** is called at least one time during **MiniportInitializeEx**, the **NdisMDeregisterScatterGatherDma** function should be called at least one time in **MiniportHaltEx**.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------
@@ -53,8 +51,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisMDeregisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterscattergatherdma)
-[**NdisMRegisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterscattergatherdma)
+[**NdisMDeregisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterscattergatherdma)
+[**NdisMRegisterScatterGatherDma**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma)
  
 
  

@@ -16,15 +16,13 @@ ms.localizationpriority: medium
 # PnpSameDeviceObject rule (wdm)
 
 
-The **PnpSameDeviceObject** rule specifies that the driver calls [**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioattachdevicetodevicestack) with a pointer to a valid target device object.
+The **PnpSameDeviceObject** rule specifies that the driver calls [**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack) with a pointer to a valid target device object.
 
 If the pointed-to device object is not standard, the driver violates this rule. This rule ensures that the driver correctly attaches to the device stack.
 
 This rule does not verify the validity of the pointer to the source object.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------
@@ -55,7 +53,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioattachdevicetodevicestack)
+[**IoAttachDeviceToDeviceStack**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack)
  
 
  

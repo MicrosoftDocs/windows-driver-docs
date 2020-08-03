@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-Many decoders have several streams using the same piece of decoder hardware. For these devices, it is not necessary to perform key negotiation separately on each stream. To indicate this to the DVD decoder model, use the [**KS\_DVDCOPY\_SET\_COPY\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state) property. When a get operation is issued on this property, a decoder may respond with either of the following:
+Many decoders have several streams using the same piece of decoder hardware. For these devices, it is not necessary to perform key negotiation separately on each stream. To indicate this to the DVD decoder model, use the [**KS\_DVDCOPY\_SET\_COPY\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state) property. When a get operation is issued on this property, a decoder may respond with either of the following:
 
 KS\_DVDCOPYSTATE\_AUTHENTICATION\_NOT\_REQUIRED
 

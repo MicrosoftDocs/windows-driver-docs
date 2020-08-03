@@ -113,7 +113,7 @@ HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01000.dll,WdfCoInstaller"
 [MyDevice_CoInstaller_CopyFiles]
 WdfCoInstaller01000.dll
 
-[MyDevice_Device.NT.Wdf]
+[MyDevice.NT.Wdf]
 KmdfService = MyDevice, MyDevice_wdfsect
 [MyDevice_wdfsect]
 KmdfLibraryVersion = 1.0

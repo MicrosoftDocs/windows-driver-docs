@@ -16,9 +16,13 @@ Starting in User-Mode Driver Framework (UMDF) version 2, you can use a subset of
 
 If the driver host process is terminated, your driver might have a problem in a callback that results in the [host timeout](how-umdf-enforces-time-outs.md) threshold being exceeded. In this case, the reflector terminates the driver host process.
 
-To investigate, first set up a kernel-mode debugging session as described in [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md).
+To investigate, first set up a kernel-mode debugging session as described in [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md). We strongly recommend doing all development and testing of your UMDF driver with a kernel debugger attached to the test system and enabling [Application Verifier (AppVerif.exe)](../debugger/debugger-download-tools.md) on WUDFHost.exe. Use the following command, attach a kernel debugger and then reboot.
 
-- If **HostFailKdDebugBreak** is set, the reflector breaks into the kernel-mode debugger when the timeout threshold is exceeded. In the debugger output, you will see several suggestions on how to begin, including links you can click on. For example:
+```cpp
+AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
+```
+
+- If **HostFailKdDebugBreak** is set (this should be enabled by default starting Windows 8), the reflector breaks into the kernel-mode debugger when the timeout threshold is exceeded. In the debugger output, you will see several suggestions on how to begin, including links you can click on. For example:
 
   ```cpp
   **** Problem detected in UMDF driver "WUDFOsrUsbFx2". !process 0xFFFFE0000495B080 0x1f, !devstack 0xFFFFE000032BFA10, Problem code 3 ****
@@ -32,7 +36,7 @@ To investigate, first set up a kernel-mode debugging session as described in [Ho
 - Use [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) to display information about the failure, and additional UMDF extension commands you can try.
 - Use [**!process 0 0x1f wudfhost.exe**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process) to list all Wudfhost.exe driver host processes, including thread stack information.
 
-  You can also use [**!wdfkd.wdfldr**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfldr) to display all drivers that are currently bound to WDF. When you click on the image name of a UMDF driver, the debugger displays the address of the hosting process. You can then click on the process address to display information specific to that process.
+  You can also use !wdfkd.wdfumtriage and [**!wdfkd.wdfldr**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfldr) to display all drivers that are currently bound to WDF. When you click on the image name of a UMDF driver, the debugger displays the address of the hosting process. You can then click on the process address to display information specific to that process.
 
 - If necessary, use [**.process /r /p *Process***](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process--set-process-context-) to switch process context to that of the Wudfhost process that is hosting your driver. Use [**.cache forcedecodeuser**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-cache--set-cache-size-) and **lmu** to verify that your driver is hosted in the current process.
 - Examine thread call stacks ([**!thread *Address***](https://docs.microsoft.com/windows-hardware/drivers/debugger/-thread)) to determine if a driver callback timed out. Look at the tick count for the threads. In Windows 8.1, the reflector times out after one minute.
@@ -50,8 +54,6 @@ In a kernel-mode debugging session, you can use the [**!wdfkd.wdflogdump**](http
 
 
 See [Determining Why the Reflector Terminated the Host Process](determining-why-the-reflector-terminated-the-host-process.md) for information on finding user-mode dump files. See [Using WPP Software Tracing in UMDF Drivers](using-wpp-software-tracing-in-umdf-drivers.md) for information on how to set the **LogMinidumpType** registry value to specify the type of information stored in the minidump file.
-
-
 
 
 

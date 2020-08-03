@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 The **IrqlReturn** rule specifies that the driver's dispatch routines return at the same IRQL at which they were called. For more information about the IRQLs at which dispatch routines are properly called, see [**Dispatch Routines and IRQLs.**](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatch-routines-and-irqls)
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------

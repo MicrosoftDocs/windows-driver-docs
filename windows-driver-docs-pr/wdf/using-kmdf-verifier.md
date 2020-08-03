@@ -32,11 +32,11 @@ You can manually enable KMDF Verifier using this procedure:
     You may need to add **VerifierOn** manually to the subkey if it is not already present.
 
 3.  Use Device Manager to reenable the device, thereby loading the driver.
-4.  When the driver calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate), the framework examines the registry and enables the framework's verifier if **VerifierOn** to a nonzero value.
+4.  When the driver calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate), the framework examines the registry and enables the framework's verifier if **VerifierOn** to a nonzero value.
 
 To disable the framework's verifier, follow the same steps, but set the value of **VerifierOn** to zero.
 
-To determine whether the framework's verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdriverinfo) debugger extension command:
+To determine whether the framework's verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdriverinfo) debugger extension command:
 
 **!wdfkd.wdfdriverinfo** *&lt;your drivername&gt;* **** **0x1**
 
@@ -53,7 +53,7 @@ The relevant values are located under the **Parameters\\Wdf** subkey of the **HK
 Set this value to a nonzero value to enable the [**WDFVERIFY**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfverify) macro.
 
 <a href="" id="dbgbreakonerror-----------------------------reg-dword-"></a>**DbgBreakOnError** (**REG\_DWORD**)  
-If this value is set to a nonzero value, the framework will break into the debugger (if available) each time that a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint).
+If this value is set to a nonzero value, the framework will break into the debugger (if available) each time that a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint).
 
 <a href="" id="dbgwaitforsignaltimeoutinsec---------------reg-dword-"></a>**DbgWaitForSignalTimeoutInSec** (**REG\_DWORD**)  
 Starting in Windows 8, when **VerifierOn** and **DbgBreakOnError** are set to nonzero values, the driver can change the default time-out period by setting **DbgWaitForSignalTimeoutInSec**.

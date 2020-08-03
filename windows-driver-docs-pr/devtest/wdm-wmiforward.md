@@ -18,17 +18,15 @@ ms.localizationpriority: medium
 
 The **WmiForward** rule specifies that the driver must forward [**WMI minor IRPs**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-minor-irps) when forwarding is required.
 
-Specifically, when the driver calls [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol) and the value of the *IrpDisposition* parameter is **IrpForward**, the driver must call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver) to forward the IRP before returning from the dispatch routine.
+Specifically, when the driver calls [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) and the value of the *IrpDisposition* parameter is **IrpForward**, the driver must call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver) to forward the IRP before returning from the dispatch routine.
 
 This rule does not apply to bus drivers.
 
 A *WMI minor IRP* is an [**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control) request with a WMI minor function code.
 
-For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers), [**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests), [**Windows Management Instrumentation Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), and [**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers), [**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests), [**Windows Management Instrumentation Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), and [**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------
@@ -59,15 +57,15 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoAcquireRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioacquireremovelock)
-[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver)
-[**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver)
+[**IoAcquireRemoveLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
+[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
+[**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver)
 See also
 --------
 
 [**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers)
 [**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests)
-[**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
  
 
  

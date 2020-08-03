@@ -18,9 +18,10 @@ typedef NDIS_HANDLE TAL_TXRX_HANDLE, *PTAL_TXRX_HANDLE;
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h (include Ndis.h) |
+**Minimum supported client**: Windows 10
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h (include Ndis.h)
+
 

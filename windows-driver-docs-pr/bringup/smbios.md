@@ -12,7 +12,7 @@ The SMBIOS specification defines data structures and information that will go in
 
 To add uniformity to SMBIOS to better identify device information, we recommend the following as guidance when populating SMBIOS fields. The SMBIOS data below is also collected and used in various capacities. The data going into these fields should be planned in detail before populating using tools provided by BIOS/Firmware vendors. The hash generated for CHID targeting is based on the data populating these fields.
 
-Although this information is similar to that listed in the [Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx), the following tables prescribe additional levels of detail for some fields, increasing the level of specificity.
+Although this information is similar to that listed in the [Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx), the following tables prescribe additional levels of detail for some fields, increasing the level of specificity.
 
 ## Recommended settings when moving to SMBIOS 3.0
 
@@ -131,7 +131,8 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
     </tbody>
 </table>
 
-**Note**  SMBIOS fields starting with **BIOS** may be considered optional or recommended. These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in the resulting CHID.
+> [!NOTE]
+> SMBIOS fields starting with **BIOS** may be considered optional or recommended. These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in the resulting CHID.
 
 <table>
 	<tbody>
@@ -152,7 +153,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 		<tr>
 			<td>Family</td>
             <td>Number of null-terminated string.</td>&gt;
-			<td>The value in the familyf field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The <b>family</b> value excludes variance by components, device generation, manufactured year, SKU, or other factors. The <b>family</b> value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
+			<td>The value in the family field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The <b>family</b> value excludes variance by components, device generation, manufactured year, SKU, or other factors. The <b>family</b> value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
 			<td>The format of the <b>family</b> field string is to match what End Users identify as Company’s sub-brand name, specific to a product line. The <b>family</b> field string should not contain the <b>manufacturer</b> name.</td>
 			<td>The <b>family</b> field is the second-level indicator to End Users, representing a grouping of similar devices know as a product line. This field should remain consistent for the life of the product line.</td>
 		</tr>
@@ -229,7 +230,6 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 	</tbody>
 </table>
 
-
 The following table describes settings for the **Enclosure Type** field.
 
 <table>
@@ -279,12 +279,8 @@ The following table describes settings for the **Enclosure Type** field.
 	</tbody>
 </table>
 
-
 ## Related resources
 
-[Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
+[Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
 
-[SMBIOS DMTF Specifications](https://www.dmtf.org/standards/smbios)                                                 
-
-
-
+[SMBIOS DMTF Specifications](https://www.dmtf.org/standards/smbios)

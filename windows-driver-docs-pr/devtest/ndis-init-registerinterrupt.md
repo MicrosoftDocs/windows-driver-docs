@@ -20,9 +20,7 @@ The Init\_RegisterInterrupt rule specifies that the registration of interrupts, 
 
 If **NdisMRegisterInterruptEx** is called at least one time during **MiniportInitializeEx**, the **NdisMDeregisterInterruptEx** function must be called at least one time in **MiniportHaltEx**.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------
@@ -53,8 +51,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisMDeregisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismderegisterinterruptex)
-[**NdisMRegisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismregisterinterruptex)
+[**NdisMDeregisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex)
+[**NdisMRegisterInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex)
  
 
  

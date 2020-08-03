@@ -38,7 +38,7 @@ class MSFC_FibrePortNPIVAttributes
 
 When compiled by the WMI tool suite, this class definition produces the following data structure:
 
-[**MSFC\_FibrePortNPIVAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/npivwmi/ns-npivwmi-_msfc_fibreportnpivattributes)
+[**MSFC\_FibrePortNPIVAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/npivwmi/ns-npivwmi-_msfc_fibreportnpivattributes)
 
 There are no methods associated with this WMI class.
 

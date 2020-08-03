@@ -2,18 +2,15 @@
 title: DDI compliance checking
 description: The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
 ms.assetid: 1E536DE0-071B-4529-B228-DB5DAE71099C
-ms.date: 04/20/2017
+ms.date: 04/03/2020
 ms.localizationpriority: medium
 ---
 
 # DDI compliance checking
 
-
 The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
 
 **Note**  This option is available starting with Windows 8. Starting in Windows 8.1, you can test additional rules, by selecting [Activating the DDI compliance checking (additional) option](#activating-the-ddi-compliance-checking-additional-option).
-
-
 
 | DDI compliance checking |
 |-------------------------|
@@ -37,7 +34,7 @@ When you select the DDI compliance checking option, the following rules are incl
 
 [**IrqlExApcLte1**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte1)
 
-[**IrqlExApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[**IrqlExApcLte2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 [**IrqlExApcLte3**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte3)
 
@@ -93,8 +90,13 @@ When you select the DDI compliance checking option, the following rules are incl
 
 [**SpinLock**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-spinlock) (Starting in Windows 8.1)
 
-## <span id="Activating_the_DDI_compliance_checking_option"></span><span id="activating_the_ddi_compliance_checking_option"></span><span id="ACTIVATING_THE_DDI_COMPLIANCE_CHECKING_OPTION"></span>Activating the DDI compliance checking option
+These two rules are currently optional, but recommended.
 
+[(Optional) **IrqlNtifsApcPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlntifsapcpassive)
+
+[(Optional) **IrqlIoRtlZwPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliortlzwpassive)
+
+## <span id="Activating_the_DDI_compliance_checking_option"></span><span id="activating_the_ddi_compliance_checking_option"></span><span id="ACTIVATING_THE_DDI_COMPLIANCE_CHECKING_OPTION"></span>Activating the DDI compliance checking option
 
 You can activate the DDI compliance checking feature for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the DDI compliance checking option. The DDI compliance checking feature is activated when you use the standard settings (**/standard**).
 
@@ -125,14 +127,13 @@ You can activate the DDI compliance checking feature for one or more drivers by 
 
 Starting in Windows 8.1, the **DDI compliance checking (additional) option** option provides additional rules to determine whether the driver correctly interacts with the Windows operating system kernel. When you select the **DDI compliance checking (additional) option**, the following rules are tested:
 
--   [**CriticalRegions**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-criticalregions)
+- [**CriticalRegions**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-criticalregions)
 
--   [**QueuedSpinLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-queuedspinlockrelease)
+- [**QueuedSpinLockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-queuedspinlockrelease)
 
--   [**SpinlockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-spinlockrelease)
+- [**SpinlockRelease**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-spinlockrelease)
 
 ## Activating the DDI compliance checking (additional) option
-
 
 You can activate the **DDI compliance checking (additional)** rules for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the **DDI compliance checking (additional)** option.
 
@@ -148,17 +149,28 @@ You can activate the **DDI compliance checking (additional)** rules for one or m
 
 -   **Using Driver Verifier Manager**
 
-    1.  Start Driver Verifier Manager. Type **Verifier** in a Command Prompt window.
+    1.  To start Driver Verifier Manager, type **Verifier** in a Command Prompt window.
     2.  Select **Create custom settings (for code developers)** and then click **Next**.
     3.  Select **Select individual settings from a full list**.
     4.  Select (check) **DDI compliance checking (additional)**.
     5.  Restart the computer.
 
+## Activating the DDI compliance checking (additional IRQL) option
 
+You can activate the DDI Compliance additional IRQL rules for one or more drivers by using the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the DDI Compliance additional IRQL rules.
 
+At the command line, DDI Compliance additional IRQL checking is represented by a rule class value of 35. For example:
 
+`verifier /ruleclasses 35 /driver MyDriver.sys`
 
+OR
 
+`verifier /rc 35 /driver MyDriver.sys`
 
+The additional IRQL rule set consists of the following two rules.
+
+[(Optional) **IrqlNtifsApcPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlntifsapcpassive)
+
+[(Optional) **IrqlIoRtlZwPassive**](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqliortlzwpassive)
 
 

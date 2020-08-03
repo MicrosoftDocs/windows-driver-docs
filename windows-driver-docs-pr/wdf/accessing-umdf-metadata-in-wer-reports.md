@@ -208,7 +208,7 @@ The following table describes the possible values for the fields in a report of 
 <tr class="odd">
 <td align="left">2</td>
 <td align="left">ExceptionCode</td>
-<td align="left"><p>The reason the exception occurred. For a list of values, see <a href="https://docs.microsoft.com/windows/desktop/api/winnt/ns-winnt-_exception_record" data-raw-source="[&lt;strong&gt;EXCEPTION_RECORD&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winnt/ns-winnt-_exception_record)"><strong>EXCEPTION_RECORD</strong></a>.</p></td>
+<td align="left"><p>The reason the exception occurred. For a list of values, see <a href="https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-exception_record" data-raw-source="[&lt;strong&gt;EXCEPTION_RECORD&lt;/strong&gt;](https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-exception_record)"><strong>EXCEPTION_RECORD</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">3</td>

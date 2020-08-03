@@ -69,7 +69,7 @@ This bug check is usually caused by drivers that have incorrectly marked their o
 Resolution
 ----------
 
-To begin debugging, use a kernel debugger to get a stack trace.
+To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace.
 
  
 

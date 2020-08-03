@@ -149,7 +149,7 @@ pheap-buggy!TestCorruptAfterEnd+1f:
 
 With full page heap verification enabled, the debugger breaks at an access violation. To find the precise location of the access violation, turn on line number dumping and display the call stack trace.
 
-The numbered call stack trace appears as follows: The line displaying the problem appears in bold text.
+The numbered call stack trace appears as follows: 
 
 ```console
 ChildEBP RetAddr  Args to Child

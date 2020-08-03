@@ -16,7 +16,7 @@ A hardware ID is a vendor-defined identification string that Windows uses to mat
 
 A hardware ID has one of the following generic formats:
 
-`<enumerator>\\<enumerator-specific-device-ID>`
+`<enumerator>\<enumerator-specific-device-ID>`
 
 This is the most common format for individual PnP devices reported to the Plug and Play (PnP) manager by a single enumerator. New enumerators should use this format or the following format. For more information about enumerator-specific device IDs, see [Device Identifier Formats](device-identifier-formats.md).
 
@@ -38,15 +38,15 @@ The number of characters of a hardware ID, excluding a NULL terminator, must be 
 
 ## Obtaining the list of hardware IDs for a device
 
-To obtain the list of hardware IDs for a device, call [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceproperty) with the *DeviceProperty* parameter set to **DevicePropertyHardwareID**. The list of hardware IDs that this routine retrieves is a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value. The maximum number of characters in a hardware list, including a NULL terminator after each hardware ID and a final NULL terminator, is REGSTR_VAL_MAX_HCID_LEN. The maximum possible number of IDs in a list of hardware IDs is 64.
+To obtain the list of hardware IDs for a device, call [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) with the *DeviceProperty* parameter set to **DevicePropertyHardwareID**. The list of hardware IDs that this routine retrieves is a [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value. The maximum number of characters in a hardware list, including a NULL terminator after each hardware ID and a final NULL terminator, is REGSTR_VAL_MAX_HCID_LEN. The maximum possible number of IDs in a list of hardware IDs is 64.
 
 ## Examples of Hardware IDs
 
 In the following, the first example is a [generic identifier](generic-identifiers.md) for a PnP device, and the second example is an [identifier for a PCI device](identifiers-for-pci-devices.md):
 
-root\\\*PNP0F08
+`root\*PNP0F08`
 
-PCI\\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02
+`PCI\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02`
 
 
 

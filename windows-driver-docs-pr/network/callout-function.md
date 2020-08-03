@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 
 A *callout function* is a function that is implemented by a [callout driver](callout-driver.md) that is one of the functions that defines a [callout](callout.md). A callout consists of the following list of callout functions:
 
--   A [*notifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_notify_fn0) function to process notifications.
+-   A [*notifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn0) function to process notifications.
 
--   A [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) function to process classifications.
+-   A [*classifyFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) function to process classifications.
 
--   A [*flowDeleteFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nc-fwpsk-fwps_callout_flow_delete_notify_fn0) function to process flow deletions (optional).
+-   A [*flowDeleteFn*](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_flow_delete_notify_fn0) function to process flow deletions (optional).
 
 The [filter engine](filter-engine.md) calls a callout's callout functions so that the callout can process the network data.
 

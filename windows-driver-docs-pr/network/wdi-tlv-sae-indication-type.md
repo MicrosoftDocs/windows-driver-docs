@@ -27,12 +27,10 @@ The size (in bytes) of a UINT32.
 
 | Type | Description |
 | --- | --- |
-| [**WDI_SAE_INDICATION_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_sae_indication_type) | The type of information needed to continue SAE authentication with a target BSSID, or notification that authentication cannot continue. |
+| [**WDI_SAE_INDICATION_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_sae_indication_type) | The type of information needed to continue SAE authentication with a target BSSID, or notification that authentication cannot continue. |
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1903
+**Minimum supported server**: Windows Server 2016
+**Header**: Wditypes.hpp

@@ -13,7 +13,7 @@ The CHIDs are Computer Hardware IDs and Windows makes use of these IDs in varyin
 
 The OEM/ODM needs to ensure all appropriate SMBIOS fields are populated with data, based on the information provided in the [SMBIOS](smbios.md) guidance and following the [DMTF SMBIOS specification](https://www.dmtf.org/standards/smbios) to ensure CHIDs are individual and unique.
 
-Microsoft is now requiring that a Firmware Update Package include Computer Hardware ID (CHID) Targeting in addition to the unique ID listed for **system** in the EFI System Resource Table (ESRT). The [Download Driver Publishing Workflow for Windows 10](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) document contains a detailed description of CHIDs used in distribution targeting and installation targeting.
+Microsoft is now requiring that a Firmware Update Package include Computer Hardware ID (CHID) Targeting in addition to the unique ID listed for **system** in the EFI System Resource Table (ESRT). The [Download Driver Publishing Workflow for Windows 10](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) document contains a detailed description of CHIDs used in distribution targeting and installation targeting.
 
 ## Related resources
 
@@ -21,4 +21,4 @@ Microsoft is now requiring that a Firmware Update Package include Computer Hardw
 
 [Specifying Hardware IDs for a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-hardware-ids-for-a-computer)
 
-[Download Driver Publishing Workflow for Windows 10](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
+[Download Driver Publishing Workflow for Windows 10](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_irp_based_io_operations_that_always_use_buffered_io_if"></span><span id="DDK_IRP_BASED_IO_OPERATIONS_THAT_ALWAYS_USE_BUFFERED_IO_IF"></span>
 
 
-The following IRP-based I/O operations always use buffered I/O, regardless of the value of the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure for the file system volume:
+The following IRP-based I/O operations always use buffered I/O, regardless of the value of the **Flags** member of the [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure for the file system volume:
 
 -   IRP\_MJ\_CREATE ([**EaBuffer parameter**](https://docs.microsoft.com/windows-hardware/drivers/ifs/flt-parameters-for-irp-mj-create))
 

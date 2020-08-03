@@ -16,11 +16,9 @@ ms.localizationpriority: medium
 # PeriodicTimer rule (ndis)
 
 
-The **PeriodicTimer** rule specifies that the caller of [**NdisCancelTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscanceltimerobject) must be running at **IRQL = PASSIVE\_LEVEL** if a nonzero value was specified in the *MillisecondsPeriod* parameter of the [**NdisSetTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissettimerobject) function. If the *MillisecondsPeriod* parameter of the **NdisSetTimerObject** function was zero, callers of **NdisCancelTimerObject** can be running at **IRQL &lt;= DISPATCH\_LEVEL**.
+The **PeriodicTimer** rule specifies that the caller of [**NdisCancelTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscanceltimerobject) must be running at **IRQL = PASSIVE\_LEVEL** if a nonzero value was specified in the *MillisecondsPeriod* parameter of the [**NdisSetTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissettimerobject) function. If the *MillisecondsPeriod* parameter of the **NdisSetTimerObject** function was zero, callers of **NdisCancelTimerObject** can be running at **IRQL &lt;= DISPATCH\_LEVEL**.
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------
@@ -51,8 +49,8 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisCancelTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscanceltimerobject)
-[**NdisSetTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndissettimerobject)
+[**NdisCancelTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscanceltimerobject)
+[**NdisSetTimerObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissettimerobject)
  
 
  

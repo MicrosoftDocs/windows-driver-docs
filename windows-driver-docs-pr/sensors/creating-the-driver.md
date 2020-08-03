@@ -17,7 +17,7 @@ These samples provide basic working implementations for the classes and COM inte
 
 2.  Add a class to handle communication with your device hardware, or with the software data provider if your sensor is a logical sensor.
 
-3.  Add support for events, as needed. You have to write code to create a thread to raise events at a particular time interval. You also have to update the implementation for [**ISensorDriver::OnGetSupportedEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedevents) in SensorDdi.cpp to report the list of events that the driver can raise.
+3.  Add support for events, as needed. You have to write code to create a thread to raise events at a particular time interval. You also have to update the implementation for [**ISensorDriver::OnGetSupportedEvents**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedevents) in SensorDdi.cpp to report the list of events that the driver can raise.
 
 4.  Remove any code that is not needed.
 

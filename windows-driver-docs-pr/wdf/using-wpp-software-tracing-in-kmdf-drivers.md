@@ -38,11 +38,11 @@ To add tracing messages to your framework-based driver, you must:
 
 - Include a [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro in your driver's [**DriverEntry routine**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers). This macro activates software tracing in your driver.
 
-- Include a [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro in your driver's [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) callback function. This macro deactivates software tracing in your driver.
+- Include a [WPP\_CLEANUP](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)) macro in your driver's [*EvtDriverUnload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_unload) callback function. This macro deactivates software tracing in your driver.
 
 - Use the [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro, or a [customized version](https://docs.microsoft.com/windows-hardware/drivers/devtest/can-i-customize-dotracemessage-) of the macro, in your driver to create trace messages.
 
-- Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
+- Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp Tracing**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
 
   ```cpp
   {km-WdfDefault.tpl}*.tmh

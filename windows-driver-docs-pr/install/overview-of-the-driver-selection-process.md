@@ -29,7 +29,7 @@ For more information about where Windows searches for matching drivers, see [Whe
 
 Windows creates a list of all the matching drivers and assigns each driver a rank. Windows represents each driver's rank with an integer value that is greater than or equal to zero.
 
-For more information about the ranking process, see [How Windows Ranks Drivers](how-setup-ranks-drivers.md).
+For more information about the ranking process, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
 Starting with Windows Vista, Windows also ranks drivers based on whether the driver is digitally signed. Windows ranks drivers based on a digital signature as follows:
 

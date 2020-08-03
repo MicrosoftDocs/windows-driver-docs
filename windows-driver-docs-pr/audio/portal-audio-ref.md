@@ -31,7 +31,7 @@ This section contains the reference pages for audio drivers that conform to the 
 ## <span id="additional_resources"></span>Additional resources
 
 
-For general information about developing drivers for audio devices, see [Audio Devices Design Guide](https://go.microsoft.com/fwlink/p/?LinkID=822637).
+For general information about developing drivers for audio devices, see [Audio Devices Design Guide](https://docs.microsoft.com/windows-hardware/drivers/audio/).
 
  
 

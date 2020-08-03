@@ -8,7 +8,7 @@ keywords:
 - Port Class audio adapters WDK , control-panel branding
 - control-panel branding WDK audio
 - branding device controls WDK audio
-- thrid-party branding WDK audio
+- third-party branding WDK audio
 - vendor branding WDK audio
 - logo branding WDK audio
 - icons WDK audio
@@ -71,7 +71,7 @@ These values are added to the registry by directives within the add-registry-sec
 
 The "bitmap" logo appears to the left of the proprietary device name at the top of the **Volume** page. The "icon" logo appears in the top-left corner of the SndVol32 control menu.
 
-The proprietary device name that appears in the previously mentioned pages is the friendly name of the device. This friendly name is specified by a directive in the add-registry-section of the INF file that installs the device. This directive contains the keyword "FriendlyName", as shown in the example in [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). In Windows XP, the **Volume** page and SndVol32 display only the first 31 characters of the name string. Longer strings are truncated. In Windows Vista and later versions of Windows, this 31-character restriction is removed when the device name is displayed in Control Panel. When you use APIs that were supported in versions of Windows earlier than Windows Vista, for example [MCI\_GetDevCaps](https://go.microsoft.com/fwlink/p/?linkid=149692), the 31-character limit still applies to the device name that you provide to the API.
+The proprietary device name that appears in the previously mentioned pages is the friendly name of the device. This friendly name is specified by a directive in the add-registry-section of the INF file that installs the device. This directive contains the keyword "FriendlyName", as shown in the example in [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). In Windows XP, the **Volume** page and SndVol32 display only the first 31 characters of the name string. Longer strings are truncated. In Windows Vista and later versions of Windows, this 31-character restriction is removed when the device name is displayed in Control Panel. When you use APIs that were supported in versions of Windows earlier than Windows Vista, for example [MCI\_GetDevCaps](https://docs.microsoft.com/windows/win32/multimedia/mci-getdevcaps), the 31-character limit still applies to the device name that you provide to the API.
 
 **Important**   In Windows Vista and later versions of Windows, the use of bitmap images for third-party branding is no longer supported. Third-party audio driver developers who want to brand their audio device controls must use icons. The supported pixel dimensions for these icons are 32x32 or 48x48.
 

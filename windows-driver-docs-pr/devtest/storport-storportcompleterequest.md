@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that no calls to **StorPortCompleteRequest** are made by the miniport. Usage of the **StorPortCompleteRequest** is not recommended; miniports should instead call **StorPortNotification** with **notificationType = RequestComplete**.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------
@@ -51,7 +49,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportcompleterequest)
+[**StorPortCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportcompleterequest)
  
 
  

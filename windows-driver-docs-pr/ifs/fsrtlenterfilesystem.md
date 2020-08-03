@@ -42,7 +42,7 @@ Every file system driver entry point routine must call **FsRtlEnterFileSystem** 
 
 Every successful call to **FsRtlEnterFileSystem** must be matched by a subsequent call to [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md).
 
-File system filter drivers can disable delivery of normal kernel APCs by calling **FsRtlEnterFileSystem** or [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion) prior to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver) only if [**FsRtlExitFileSystem**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsrtlexitfilesystem) or [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleavecriticalregion) is in the same dispatch routine. They should not call **FsRtlEnterFileSystem** or **KeEnterCriticalRegion** prior to **IoCallDriver** and then call **FsRtlExitFileSystem** or **KeLeaveCriticalRegion** in the *completion routine* of the IRP. Driver Verifier has a rule to help catch this condition.
+File system filter drivers can disable delivery of normal kernel APCs by calling **FsRtlEnterFileSystem** or [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) prior to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) only if [**FsRtlExitFileSystem**](https://docs.microsoft.com/windows-hardware/drivers/ifs/fsrtlexitfilesystem) or [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion) is in the same dispatch routine. They should not call **FsRtlEnterFileSystem** or **KeEnterCriticalRegion** prior to **IoCallDriver** and then call **FsRtlExitFileSystem** or **KeLeaveCriticalRegion** in the *completion routine* of the IRP. Driver Verifier has a rule to help catch this condition.
 
 File system filter drivers should disable normal kernel APCs before acquiring any resource. File system filter drivers acquire resources with the following routines:
 
@@ -57,11 +57,12 @@ As an alternative to **FsRtlEnterFileSystem**, minifilter drivers can use the [*
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Target platform | Desktop |
-| Header | Ntifs.h (include Ntifs.h) |
-| IRQL | <= APC_LEVEL |
+**Target platform**: Desktop
+
+**Header**: Ntifs.h (include Ntifs.h)
+
+**IRQL**: <= APC_LEVEL
+
 
 ## See also
 
@@ -79,7 +80,7 @@ As an alternative to **FsRtlEnterFileSystem**, minifilter drivers can use the [*
 
 [**ExReleaseResource**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl)
 
-[**ExReleaseResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exreleaseresourcelite)
+[**ExReleaseResourceLite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite)
 
 [**ExTryToAcquireFastMutex**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545647(v=vs.85))
 
@@ -91,8 +92,8 @@ As an alternative to **FsRtlEnterFileSystem**, minifilter drivers can use the [*
 
 [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md)
 
-[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver)
+[**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 
-[**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion)
+[**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion)
 
-[**KeRaiseIrqlToDpcLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keraiseirqltodpclevel)
+[**KeRaiseIrqlToDpcLevel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel)

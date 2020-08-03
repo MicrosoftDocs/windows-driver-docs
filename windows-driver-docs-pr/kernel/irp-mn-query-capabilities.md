@@ -15,10 +15,15 @@ The PnP manager sends this IRP to get the capabilities of a device, such as whet
 
 Function and filter drivers can handle this request if they alter the capabilities supported by the bus driver. Bus drivers must handle this request for their child devices.
 
+## Value
+
+0x09
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -29,7 +34,7 @@ The PnP manager and drivers send this IRP at IRQL PASSIVE\_LEVEL in an arbitrary
 ## Input Parameters
 
 
-The **Parameters.DeviceCapabilities.Capabilities** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_stack_location) structure points to a [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure containing information about the capabilities of the device.
+The **Parameters.DeviceCapabilities.Capabilities** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure points to a [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure containing information about the capabilities of the device.
 
 ## Output Parameters
 
@@ -48,9 +53,9 @@ A bus driver sets **Irp-&gt;IoStatus.Status** and completes the IRP.
 Operation
 ---------
 
-When a device is enumerated, but before the function and filter drivers are loaded for the device, the PnP manager sends an **IRP\_MN\_QUERY\_CAPABILITIES** request to the parent bus driver for the device. The bus driver must set any relevant values in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure and return it to the PnP manager.
+When a device is enumerated, but before the function and filter drivers are loaded for the device, the PnP manager sends an **IRP\_MN\_QUERY\_CAPABILITIES** request to the parent bus driver for the device. The bus driver must set any relevant values in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure and return it to the PnP manager.
 
-After the device stack is built and drivers have started the device, the PnP manager sends this IRP again to be handled first by the driver at the top of the device stack and then by each lower driver in the stack. Function and filter drivers can set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-io_completion_routine) routine and handle this IRP on its way back up the device stack.
+After the device stack is built and drivers have started the device, the PnP manager sends this IRP again to be handled first by the driver at the top of the device stack and then by each lower driver in the stack. Function and filter drivers can set an [*IoCompletion*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine and handle this IRP on its way back up the device stack.
 
 Drivers should add capabilities before they pass the IRP to the next lower driver.
 
@@ -72,7 +77,7 @@ A bus driver sends this IRP to the parent device stack when it handles an **IRP\
 
 See [Handling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-irps) for information about sending IRPs. The following steps apply specifically to this IRP:
 
--   Allocate a [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities) structure from paged pool, and initialize it to zeros by calling [**RtlZeroMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlzeromemory). Initialize the **Size** to **sizeof**(**DEVICE\_CAPABILITIES**), the **Version** to 1, and **Address** and **UINumber** to -1.
+-   Allocate a [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure from paged pool, and initialize it to zeros by calling [**RtlZeroMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzeromemory). Initialize the **Size** to **sizeof**(**DEVICE\_CAPABILITIES**), the **Version** to 1, and **Address** and **UINumber** to -1.
 
 -   Set the values in the next I/O stack location of the IRP: set **MajorFunction** to [**IRP\_MJ\_PNP**](irp-mj-pnp.md), set **MinorFunction** to **IRP\_MN\_QUERY\_CAPABILITIES**, and set **Parameters.DeviceCapabilities** to a pointer to the allocated **DEVICE\_CAPABILITIES** structure.
 
@@ -99,7 +104,7 @@ Requirements
 ## See also
 
 
-[**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_capabilities)
+[**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)
 
  
 

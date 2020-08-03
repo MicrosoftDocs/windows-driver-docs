@@ -27,10 +27,10 @@ ms.localizationpriority: medium
 
 Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
 
-* New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
-* New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
-* Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
-* Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+* New [Rules for Audio Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+* New [Rules for AVStream Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+* Four new [Rules for KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+* Three new [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
 ## Driver Verifier in Windows 8-1 (*Updated: June 17, 2013*)
 
@@ -59,8 +59,6 @@ When you build, deploy, and test your driver using Visual Studio 2012 and the WD
 
 ## Driver Verifier in Windows 7 (*Updated: October 22, 2012*)
 
-For information about new features that were added in Windows 7, see the white paper [Driver Verifier in Windows 7]( https://go.microsoft.com/fwlink/p/?linkid=309793).
-
 For Windows 7, Driver Verifier has been enhanced with new tests and features that allow Driver Verifier to expose more classes of typical driver bugs.
 
 * Incorrect References to User Handles from Kernel Drivers
@@ -76,7 +74,7 @@ In Windows 7, Driver Verifier provides checks for queued spin locks, these check
 
 * Verifying that an operation that should raise the interrupt request level (IRQL) value, such as [**KeAcquireInStackQueuedSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)), is not actually lowering the IRQL value.
 
-* Verifying that an operation that should lower the IRQL value, such as [**KeReleaseInStackQueuedSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleaseinstackqueuedspinlock), is not actually raising the IRQL value.
+* Verifying that an operation that should lower the IRQL value, such as [**KeReleaseInStackQueuedSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock), is not actually raising the IRQL value.
 
 * Trimming the System process’s working set if the [Force IRQL Checking](force-irql-checking.md) option is enabled, when the IRQL is being raised to DISPATCH\_LEVEL or above, in an attempt to expose possible references to pageable memory while the driver is running at elevated IRQL.
 
@@ -92,25 +90,23 @@ In Windows 7, Driver Verifier provides checks for queued spin locks, these check
 
 In Windows 7, Driver Verifier provides the following additional information that is useful for debugging:
 
-There is a log with stack traces in chronological order for recent calls to [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keentercriticalregion) and [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleavecriticalregion) from verified drivers. The log contents are displayed by using the **!verifier 0x200** debugger extension of the Windows Debuggers. This information can be useful for understanding scenarios in which a thread is unexpectedly running in a critical region or is trying to leave a critical region that it has left already.
+There is a log with stack traces in chronological order for recent calls to [**KeEnterCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) and [**KeLeaveCriticalRegion**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion) from verified drivers. The log contents are displayed by using the **!verifier 0x200** debugger extension of the Windows Debuggers. This information can be useful for understanding scenarios in which a thread is unexpectedly running in a critical region or is trying to leave a critical region that it has left already.
 
-You can display additional information from the [Force Pending I/O Requests](force-pending-i-o-requests.md) Log by using the **!verifier 0x40** debugger extension. In earlier Windows versions, the log contained just one stack trace for each IRP that Driver Verifier forced to be pending. This was the stack trace from the time when [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) was called for the first time for the forced pending IRP. Windows 7 has at least two log entries, possibly more than two, for each forced pending IRP:
+You can display additional information from the [Force Pending I/O Requests](force-pending-i-o-requests.md) Log by using the **!verifier 0x40** debugger extension. In earlier Windows versions, the log contained just one stack trace for each IRP that Driver Verifier forced to be pending. This was the stack trace from the time when [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) was called for the first time for the forced pending IRP. Windows 7 has at least two log entries, possibly more than two, for each forced pending IRP:
 
-* Stack trace at the time when Driver Verifier picked the IRP to be forced pending. Driver Verifier chooses some of the IRPs to be forced pending when one of the verified drivers calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
-* Stack traces for each [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) call for the forced pending IRP before the completion reaches the verified driver. More than one **IoCompleteRequest** call can exist for the same IRP because one of the drivers can temporarily stop the completion from its completion routine and then resume it by calling **IoCompleteRequest** again.
+* Stack trace at the time when Driver Verifier picked the IRP to be forced pending. Driver Verifier chooses some of the IRPs to be forced pending when one of the verified drivers calls [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+* Stack traces for each [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) call for the forced pending IRP before the completion reaches the verified driver. More than one **IoCompleteRequest** call can exist for the same IRP because one of the drivers can temporarily stop the completion from its completion routine and then resume it by calling **IoCompleteRequest** again.
 
 There are more valid stack traces in the IRQL Transition log. This log is displayed by using **!verifier 8**. In Windows versions earlier than Windows 7, Driver Verifier could have tried to log some of these stack traces at elevated IRQL and failed to capture the stack trace because of the high IRQL value. In Windows 7, Driver Verifier tries to capture these stack traces:
 
-* Before raising the IRQL, for example, when a verified driver calls [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keacquirespinlock).
-* After the IRQL is lowered, when a verified driver calls [**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kereleasespinlock).
+* Before raising the IRQL, for example, when a verified driver calls [**KeAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock).
+* After the IRQL is lowered, when a verified driver calls [**KeReleaseSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock).
 
 In this way, Driver Verifier can capture more of these IRQL transition stack traces.
 
 **!analyze** can triage issues that are exposed by the Enhanced I/O Verifier checks (that are part of I/O Verifier in Windows 7). In earlier Windows versions, the Enhanced I/O Verifier error reporting consisted of displaying a description of the driver defect that was detected by Driver Verifier followed by a break into debugger. Running **!analyze** after such a break does not result in meaningful triage for many of these breaks because **!analyze** cannot use the information from the error description text that appears in the debugger. In Windows 7, the meaningful information about these driver defects is saved by Driver Verifier in memory. **!analyze** can find this information and perform a much more meaningful automatic triage for many of these breaks.
 
 ## Driver Verifier in Windows Vista (*Updated: February 9, 2009*)
-
-For information about new features that were added in Windows Vista, see the white paper [Driver Verifier in Windows Vista]( https://go.microsoft.com/fwlink/p/?linkid=309794).
 
 For Windows Vista, Driver Verifier has been enhanced with new tests and features.
 

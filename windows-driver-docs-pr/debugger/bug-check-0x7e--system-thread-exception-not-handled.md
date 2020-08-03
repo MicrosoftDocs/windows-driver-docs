@@ -80,7 +80,7 @@ If a driver is listed by name within the bug check message, disable or remove th
 
 The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. 
 
-Additional analysis can be done by using the [**!thread**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-thread) extension, as well as the [**dds**, **dps**, and **dqs** (display words and symbols)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dds--dps--dqs--display-words-and-symbols-) commands. This can be a reasonable technique when WinDbg reports "Probably caused by : ntkrnlmp.exe." 
+Additional analysis can be done by using the [**!thread**](-thread.md) extension, as well as the [**dds**, **dps**, and **dqs** (display words and symbols)](dds--dps--dqs--display-words-and-symbols-.md) commands. This can be a reasonable technique when WinDbg reports "Probably caused by : ntkrnlmp.exe." 
 
 If exception code 0x80000003 occurs, a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem should not occur frequently. If it occurs repeatedly, make sure that a kernel debugger is connected and the system is started with the **/DEBUG** switch.
 

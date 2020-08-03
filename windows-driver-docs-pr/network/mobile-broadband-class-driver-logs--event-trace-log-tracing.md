@@ -95,7 +95,7 @@ If you are troubleshooting issues related to device enumeration at the USB layer
     -   `c:\windows\inf\setupapi.dev.log`
     -   Output of **devcon hwids "USB\\VID\_DeviceVendorID\*"**
         -   The latest version of Devcon.exe is part of the WDK.
-        -   An older version exists at http://support.microsoft.com/kb/311272
+        -   An older version exists at https://support.microsoft.com/kb/311272
 
  
 

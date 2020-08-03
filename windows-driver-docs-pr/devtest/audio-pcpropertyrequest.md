@@ -16,15 +16,12 @@ ms.localizationpriority: medium
 # PcPropertyRequest rule (audio)
 
 
-The PcPropertyRequest rule specifies that a PortCls miniport driver should never call the [**PcCompletePendingPropertyRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pccompletependingpropertyrequest) with an *NtStatus* value of STATUS\_PENDING.
+The PcPropertyRequest rule specifies that a PortCls miniport driver should never call the [**PcCompletePendingPropertyRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pccompletependingpropertyrequest) with an *NtStatus* value of STATUS\_PENDING.
 
-|              |       |
-|--------------|-------|
-| Driver model | Audio |
+**Driver model: Audio**
 
-|                                   |                                                                                                                                       |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00071008) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x00071008)
+
 
 How to test
 -----------

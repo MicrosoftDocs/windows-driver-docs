@@ -35,16 +35,3 @@ For example, the Microsoft Network remote file system is implemented as follows:
 
 The network redirector software installed on the client consists of several software components, some that operate in user-mode and some that operate in kernel-mode.
 
-The following sections discuss concepts that are important to developers of remote file systems on Windows Server 2003, Windows XP, and Windows 2000. The following topics are discussed:
-
-[Introduction to Network Redirectors](introduction-to-network-redirectors.md)
-
-[Kernel Network Redirector Driver Components](kernel-network-redirector-driver-components.md)
-
- 
-
- 
-
-
-
-

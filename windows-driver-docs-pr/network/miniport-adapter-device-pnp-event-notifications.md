@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS calls a miniport driver's [*MiniportDevicePnPEventNotify*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_device_pnp_event_notify) function to notify the driver of Plug and Play (PnP) events.
+NDIS calls a miniport driver's [*MiniportDevicePnPEventNotify*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_device_pnp_event_notify) function to notify the driver of Plug and Play (PnP) events.
 
 NDIS provides an event code that describes the PnP event. The code can indicate that the adapter has been unexpectedly removed from the system or that the power profile of the host system has changed.
 

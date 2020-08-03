@@ -1,13 +1,12 @@
 ---
-title: Security Checks
-description: Security Checks
+title: Driver Verifier Security Checks
+description: The Security Checks option of Driver Verifier monitors the driver for common errors that can result in security vulnerabilities.
 ms.assetid: fca92bad-7bb8-4a30-b303-48fd54c20c42
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Security Checks
-
+# Driver Verifier Security Checks
 
 The Security Checks option of Driver Verifier monitors the driver for common errors that can result in security vulnerabilities. This option is available starting in Windows Vista.
 
@@ -25,9 +24,9 @@ Specifically, the Security Checks option looks for the following improper driver
 Beginning with Windows 7, when you enable any Driver Verifier option, Driver Verifier checks for the following driver behavior:
 
 **Object reference counter changes from 0 to 1.**
-When the Windows kernel object manager creates an object, such as a File object or a Thread object, the new object's reference counter is set to 1. Calls to system functions such as [**ObReferenceObjectByPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbypointer) or [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbyhandle) increment the reference counter. Every call to [**ObDereferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obdereferenceobject) for the same object decrements the reference counter.
+When the Windows kernel object manager creates an object, such as a File object or a Thread object, the new object's reference counter is set to 1. Calls to system functions such as [**ObReferenceObjectByPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbypointer) or [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) increment the reference counter. Every call to [**ObDereferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) for the same object decrements the reference counter.
 
-After the reference counter reaches the 0 value, the object becomes eligible to be freed. The object manager might free it immediately, or it might free it later. Driver Verifier checks for subsequent calls to [**ObReferenceObjectByPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obreferenceobjectbypointer) and [**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obfreferenceobject) for the same object. These calls change the reference counter from 0 to 1, which means the driver has incremented the reference counter of an already freed object. This is always incorrect because it can corrupt other memory allocations.
+After the reference counter reaches the 0 value, the object becomes eligible to be freed. The object manager might free it immediately, or it might free it later. Driver Verifier checks for subsequent calls to [**ObReferenceObjectByPointer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbypointer) and [**ObReferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) for the same object. These calls change the reference counter from 0 to 1, which means the driver has incremented the reference counter of an already freed object. This is always incorrect because it can corrupt other memory allocations.
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 

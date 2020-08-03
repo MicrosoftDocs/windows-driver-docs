@@ -60,7 +60,7 @@ Turns on the display of time stamp information.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx**, see [The DbgPrint Buffer](reading-and-filtering-debugging-messages.md#the-dbgprint-buffer) or see the Microsoft Windows Driver Kit (WDK) documentation.
+For more information about **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx**, see "The DbgPrint Buffer" in [Reading and Filtering Debugging Messages](reading-and-filtering-debugging-messages.md).
 
 Remarks
 -------

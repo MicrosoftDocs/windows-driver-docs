@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="_ntovr_smart_card_callback_parameters"></span><span id="_NTOVR_SMART_CARD_CALLBACK_PARAMETERS"></span>
 
 
-For all IOCTL requests except [**IOCTL\_SMARTCARD\_IS\_ABSENT**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548905(v=vs.85)) and [**IOCTL\_SMARTCARD\_IS\_PRESENT**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548906(v=vs.85)), [**SmartcardDeviceControl (WDM)**](https://docs.microsoft.com/previous-versions/ff548939(v=vs.85)) initializes the **IoRequest** member of the [**SMARTCARD\_EXTENSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/smclib/ns-smclib-_smartcard_extension) structure before it calls a callback routine. The following table indicates the sorts of initialization that **SmartcardDeviceControl** performs.
+For all IOCTL requests except [**IOCTL\_SMARTCARD\_IS\_ABSENT**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548905(v=vs.85)) and [**IOCTL\_SMARTCARD\_IS\_PRESENT**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548906(v=vs.85)), [**SmartcardDeviceControl (WDM)**](https://docs.microsoft.com/previous-versions/ff548939(v=vs.85)) initializes the **IoRequest** member of the [**SMARTCARD\_EXTENSION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/smclib/ns-smclib-_smartcard_extension) structure before it calls a callback routine. The following table indicates the sorts of initialization that **SmartcardDeviceControl** performs.
 
 <table>
 <colgroup>

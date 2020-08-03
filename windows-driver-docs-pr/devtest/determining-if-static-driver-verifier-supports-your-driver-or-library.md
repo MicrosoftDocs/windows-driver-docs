@@ -12,12 +12,16 @@ Static Driver Verifier (SDV) fully supports WDM, KMDF, NDIS, and Storport driver
 
 ## Driver or library requirements
 
-You can run the full set of rules in the SDV analysis tool if your driver or library meets one of following conditions:
+You can run the full set of rules in the SDV analysis tool if your driver or library meets one of following conditions **and** does not link to any of the [class framework libraries listed below](#class-framework-libraries).
 
-- You have a WDM driver or library, and the driver or library does not link to a class framework (that is, a Microsoft-provided library). For more information, see [Class framework libraries](#class-framework-libraries).
+- You have a WDM driver or library.
 - You have a driver or library that links to WdfLdr.lib or WdfDriverEntry.lib.
 - You have a driver or library that links to NDIS.lib.
 - You have a driver or library that links to Storport.lib.
+
+If you have a driver that falls outside of the above conditions, SDV will consider the driver "generic" and run a limited set of checks.
+
+In addition, please note that libraries verified by SDV must be kernel-mode driver libraries, not general C or C++ libraries.  
 
 Static Driver Verifier supports a driver or library that passes those conditions even if the driver or library links to multiple [utility libraries](#utility-libraries).
 
@@ -211,7 +215,7 @@ If you have a WDM driver or library and want to run SDV, the driver or library m
 
 Static Driver Verifier supports a driver or library that has links to multiple utility libraries if the driver or library conforms to the [Driver or Library requirements](#driver-or-library-requirements).
 
-|                     |
+| File Name           |
 |---------------------|
 | BufferOverflowK.lib |
 | hal.lib             |

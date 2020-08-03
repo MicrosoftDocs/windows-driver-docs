@@ -14,13 +14,13 @@ The keywords in this example are for illustration only, although they reflect th
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <psf:PrintTicket
-    xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1"
-    xmlns:ns0000="http://schemas.microsoft.com/windows/printing/oemdriverpt/3dprinter"
-    xmlns:psk="http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords"
-    xmlns:psk3d="http://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d"
-    xmlns:vnd="http://foo">
+    xmlns:psf="https://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="https://www.w3.org/2001/XMLSchema" version="1"
+    xmlns:ns0000="https://schemas.microsoft.com/windows/printing/oemdriverpt/3dprinter"
+    xmlns:psk="https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords"
+    xmlns:psk3d="https://schemas.microsoft.com/3dmanufacturing/2013/01/pskeywords3d"
+    xmlns:vnd="https://foo">
 
     <psf:ParameterInit name="vnd:Job3DAMap">
         <psf:Value xsi:type="xsd:string">1:0</psf:Value>

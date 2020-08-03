@@ -20,13 +20,13 @@ ms.localizationpriority: medium
 
 The [ATA Port I/O Model](ata-port-i-o-model.md), such as the [Storport I/O Model](storport-i-o-model.md), provides its miniport drivers that have direct access to the system's scatter/gather list structure. This direct access reduces the number of calls that the miniport driver must make to port driver support routines to build its private scatter/gather list.
 
-On the other hand, the SCSI port I/O model forces a miniport driver to manually discover and build its own scatter/gather list through repeated calls to the [**ScsiPortGetPhysicalAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/srb/nf-srb-scsiportgetphysicaladdress) routine.
+On the other hand, the SCSI port I/O model forces a miniport driver to manually discover and build its own scatter/gather list through repeated calls to the [**ScsiPortGetPhysicalAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetphysicaladdress) routine.
 
-ATA port miniport drivers can directly access the system's scatter/gather list by using the [**AtaPortGetScatterGatherList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportgetscattergatherlist) routine. The scatter/gather list that **AtaPortGetScatterGatherList** returns is valid only until the IRB is completed.
+ATA port miniport drivers can directly access the system's scatter/gather list by using the [**AtaPortGetScatterGatherList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetscattergatherlist) routine. The scatter/gather list that **AtaPortGetScatterGatherList** returns is valid only until the IRB is completed.
 
 The miniport driver does not have to free the memory for the scatter/gather list that **AtaPortGetScatterGatherList** returns.
 
-The miniport driver's [**IdeHwBuildIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nc-irb-ide_hw_buildio) routine should translate the scatter/gather list, if it is necessary.
+The miniport driver's [**IdeHwBuildIo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_buildio) routine should translate the scatter/gather list, if it is necessary.
 
  
 

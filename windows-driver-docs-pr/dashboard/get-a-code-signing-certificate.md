@@ -27,7 +27,7 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 - [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)
 
-- [Buy an Entrust EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843068)
+- [Buy an Entrust EV code signing cert](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
 
 - [Buy a GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
 
@@ -52,14 +52,15 @@ Once the certificate authority has verified your contact information and your ce
 
 - If you’re setting up a new Partner Center account, follow the steps in [Register for the Hardware Program](register-for-the-hardware-program.md).
 
-- If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/update-a-code-signing-certificate).
+- If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](update-a-code-signing-certificate.md).
 
 ## Code Signing FAQ
 
 This section provides answers to frequently asked questions about code signing for Windows 10. Additional code signing information is available on the Windows Hardware Certification blog.
 
-- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
-- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/bg-p/WindowsHardwareCertification)
+- [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10/ba-p/364859)
+- [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894)
+- [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Update-on-Sysdev-EV-Certificate-requirement/ba-p/364879)
 
 ### HLK Tested and Dashboard Signed Drivers
 
@@ -73,7 +74,7 @@ This section provides answers to frequently asked questions about code signing f
 
 ### Windows 10 Earlier Certificate Transition Signing
 
-- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1809, these will no longer work. 
+- The below only applies to Windows 10 1803 and lower.  As of Windows 10 1809, these will no longer work.
 - A driver signed with any certificate issued after July 29th, 2015, with time stamping, is not recommended for Windows 10.
 - A driver signed with any certificate that expires after July 29th, 2015, without time stamping, will work on Windows 10 until the certificate expires.
 
@@ -90,9 +91,9 @@ Cross-signing describes a process where a driver is signed with a certificate is
 - A cross-signed driver using a SHA-1 or SHA-256 certificate issued after July 29th, 2015 is not recommended for Windows 10.
 - For more information about the effort to move to SHA-256 Certificates, see [Windows Enforcement of Authenticode Code Signing and Timestamping](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)
 
-### Device Guard
+### Windows Defender Application Control
 
-- Enterprises may implement a device guard policy to modify the driver signing requirements using Windows 10 Enterprise edition. Device Guard provides an enterprise-defined code integrity policy, which may be configured to require at least an attestation-signed driver. For more information about Device Guard, see [Device Guard certification and compliance](https://docs.microsoft.com/windows/keep-secure/device-guard-certification-and-compliance).
+- Enterprises may implement a policy to modify the driver signing requirements using Windows 10 Enterprise edition. Windows Defender Application Control (WDAC) provides an enterprise-defined code integrity policy, which may be configured to require at least an attestation-signed driver. For more information about WDAC, see [Planning and getting started on the Windows Defender Application Control deployment process](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 ### Windows Server
 
@@ -125,6 +126,6 @@ This table summarizes the driver signing requirements for Windows.
 | Windows IoT Enterprise- DG Enabled | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
 | Windows IoT Core(1)                | Yes (Not Required)             | Yes (Not Required)                 | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
 
-\*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Device Guard to define custom driver signing requirements. For more information about Device Guard, see [Device Guard certification and compliance](https://docs.microsoft.com/windows/keep-secure/device-guard-certification-and-compliance).
+\*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Windows Defender Application Control (WDAC) to define custom signing requirements. For more information about WDAC, see [Planning and getting started on the Windows Defender Application Control deployment process](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 (1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing). Note that if UEFI Secure Boot is enabled, then drivers must be signed.

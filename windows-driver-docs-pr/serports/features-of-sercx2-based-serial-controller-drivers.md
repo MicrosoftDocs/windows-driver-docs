@@ -19,7 +19,7 @@ A serial controller driver communicates with SerCx2 through a device driver inte
 - A set of driver-support methods that are implemented by SerCx2 and that are called by the serial controller driver.
 - A set of event callback functions that are implemented by the serial controller driver and are called by SerCx2.
 
-For detailed descriptions of the methods and callbacks in the SerCx2 DDI, see Version 2 Serial Framework Extension (SerCx2) Reference in the [sercx.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sercx/) topics.
+For detailed descriptions of the methods and callbacks in the SerCx2 DDI, see Version 2 Serial Framework Extension (SerCx2) Reference in the [sercx.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/sercx/) topics.
 
 Although a hardware vendor has the option of writing a stand-alone serial controller driver, a significant effort is required to do so. By comparison, developing a serial controller driver that uses SerCx2 is easier and typically results in a driver that is much smaller and more reliable.
 

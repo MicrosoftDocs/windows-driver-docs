@@ -70,7 +70,7 @@ This CID is used to configure the logs that are collected by the modem and how o
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MODEM_LOGGING_CONFIG | Not Applicable | Not applicable |
 | Response | MBIM_MODEM_LOGGING_CONFIG | MBIM_MODEM_LOGGING_CONFIG | MBIM_MODEM_LOGGING_CONFIG |

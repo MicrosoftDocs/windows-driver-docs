@@ -5,7 +5,7 @@ ms.assetid: f251fe07-e68e-4d93-9aa5-9a0bc818756d
 keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier
-ms.date: 04/20/2017
+ms.date: 04/02/2020
 ms.localizationpriority: medium
 ---
 
@@ -62,11 +62,12 @@ Rule classes are marked with (\*) require I/O Verification (5) that will be auto
 | Kernel synchronization delay fuzzing | 24 |
 | VM switch verification | 25 |
 | Code integrity checks | 26 |
+| Additional IRQL checking | 35 |
 
-## Optional feature and rule class descriptions 
+## Optional feature and rule class descriptions
 
 [Special Pool](special-pool.md)
-    
+
 When this option is enabled, Driver Verifier allocates most of the driver's memory requests from a special pool. This special pool is monitored for memory overruns, memory underruns, and memory that is accessed after it is freed.
 
 [Force IRQL Checking](force-irql-checking.md)
@@ -107,7 +108,7 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [Force Pending I/O Requests](force-pending-i-o-requests.md)
 
-(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocalldriver).
+(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 [IRP Logging](irp-logging.md)
 
@@ -171,8 +172,13 @@ When using virtualization-based security to isolate Code Integrity, the only way
 
 [WDF verification](wdf-verification.md)
 
-WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Driver Framework (KMDF) requirements properly. 
+WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Driver Framework (KMDF) requirements properly.
 
+[Additional IRQL checking]()
+
+Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. It consists of two rules:
+- The [IrqlIoRtlZwPassive](wdm-irqliortlzwpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
+- The The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
 
 ## Standard settings
 
@@ -219,10 +225,7 @@ WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Dri
 </tbody>
 </table>
 
- 
-
 ## Driver Verifier options that require I/O Verification
-
 
 There are four options that require you to first enable [I/O Verification](i-o-verification.md). If I/O Verification is not enabled, these options are not enabled.
 
@@ -230,12 +233,3 @@ There are four options that require you to first enable [I/O Verification](i-o-v
 -   [IRP Logging](irp-logging.md)
 -   [Invariant MDL Checking for Stack](invariant-mdl-checking-for-stack.md)
 -   [Invariant MDL Checking for Driver](invariant-mdl-checking-for-driver.md)
-
- 
-
- 
-
-
-
-
-

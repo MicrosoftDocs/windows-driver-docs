@@ -12,13 +12,13 @@ ms.localizationpriority: medium
 
 
 
-To add a low power protocol offload, NDIS protocol drivers issue an OID set request of [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-add-protocol-offload). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
+To add a low power protocol offload, NDIS protocol drivers issue an OID set request of [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-add-protocol-offload). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
 
 **Note**  If an incoming packet matches both an offloaded protocol and a pattern (for example, because of a configuration error), the network adapter should respond to the packet and wake up the computer.
 
  
 
-The [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_pm_protocol_offload_type) structure includes the following information:
+The [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_pm_protocol_offload_type) structure includes the following information:
 
 <table>
 <colgroup>
@@ -38,11 +38,11 @@ The [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardwar
 </tr>
 <tr class="even">
 <td align="left"><p><strong>ProtocolOffloadType</strong></p></td>
-<td align="left"><p>Contains an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_pm_protocol_offload_type" data-raw-source="[&lt;strong&gt;NDIS_PM_PROTOCOL_OFFLOAD_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ne-ntddndis-_ndis_pm_protocol_offload_type)"><strong>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</strong></a> value that specifies the type of protocol offload.</p></td>
+<td align="left"><p>Contains an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_pm_protocol_offload_type" data-raw-source="[&lt;strong&gt;NDIS_PM_PROTOCOL_OFFLOAD_TYPE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_pm_protocol_offload_type)"><strong>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</strong></a> value that specifies the type of protocol offload.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>FriendlyName</strong></p></td>
-<td align="left"><p>Contains an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_counted_string" data-raw-source="[&lt;strong&gt;NDIS_PM_COUNTED_STRING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_counted_string)"><strong>NDIS_PM_COUNTED_STRING</strong></a> structure that contains the user-readable description of the low power protocol offload.</p></td>
+<td align="left"><p>Contains an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_counted_string" data-raw-source="[&lt;strong&gt;NDIS_PM_COUNTED_STRING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_counted_string)"><strong>NDIS_PM_COUNTED_STRING</strong></a> structure that contains the user-readable description of the low power protocol offload.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>ProtocolOffloadId</strong></p></td>
@@ -50,7 +50,7 @@ The [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardwar
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>NextProtocolOffloadOffset</strong></p></td>
-<td align="left"><p>Contains the offset, the beginning of the OID request <em>InformationBuffer</em>, to the next <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload" data-raw-source="[&lt;strong&gt;NDIS_PM_PROTOCOL_OFFLOAD&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload)"><strong>NDIS_PM_PROTOCOL_OFFLOAD</strong></a> structure in a list for the <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-protocol-offload-list" data-raw-source="[OID_PM_PROTOCOL_OFFLOAD_LIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-protocol-offload-list)">OID_PM_PROTOCOL_OFFLOAD_LIST</a> OID. For more information about OID_PM_PROTOCOL_OFFLOAD_LIST, see <a href="obtaining-the-current-parameter-settings-of-low-power-protocol-offload.md" data-raw-source="[Obtaining the Current Parameter Settings of Low Power Protocol Offloads](obtaining-the-current-parameter-settings-of-low-power-protocol-offload.md)">Obtaining the Current Parameter Settings of Low Power Protocol Offloads</a>.</p></td>
+<td align="left"><p>Contains the offset, the beginning of the OID request <em>InformationBuffer</em>, to the next <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload" data-raw-source="[&lt;strong&gt;NDIS_PM_PROTOCOL_OFFLOAD&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload)"><strong>NDIS_PM_PROTOCOL_OFFLOAD</strong></a> structure in a list for the <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-protocol-offload-list" data-raw-source="[OID_PM_PROTOCOL_OFFLOAD_LIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-protocol-offload-list)">OID_PM_PROTOCOL_OFFLOAD_LIST</a> OID. For more information about OID_PM_PROTOCOL_OFFLOAD_LIST, see <a href="obtaining-the-current-parameter-settings-of-low-power-protocol-offload.md" data-raw-source="[Obtaining the Current Parameter Settings of Low Power Protocol Offloads](obtaining-the-current-parameter-settings-of-low-power-protocol-offload.md)">Obtaining the Current Parameter Settings of Low Power Protocol Offloads</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>ProtocolOffloadParameters</strong></p></td>
@@ -91,7 +91,7 @@ The [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardwar
 
 NDIS assigns an identifier that is unique for a network adapter to every offloaded protocol. The protocol offload identifier is a unique value for each of the protocols that are offloaded on a network adapter. However, the protocol offload identifier is not globally unique across all network adapters. NDIS passes this identifier to the underlying miniport driver when NDIS sends the [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-add-protocol-offload) OID request to the miniport driver. If offloading the protocol is successful, NDIS returns the identifier to the overlying driver that offloaded the protocol. The overlying driver uses the identifier to remove a previously offloaded protocol. The protocol offload identifier is also used in status indications to the upper layer drivers when an offloaded protocol is removed from a network adapter.
 
-Protocol drivers must remove all of the offloaded protocols from a network adapter before closing the binding to that network adapter. To remove a low power protocol offload, a protocol driver sends an OID set request of [OID\_PM\_REMOVE\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-remove-protocol-offload). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a protocol offload identifier.
+Protocol drivers must remove all of the offloaded protocols from a network adapter before closing the binding to that network adapter. To remove a low power protocol offload, a protocol driver sends an OID set request of [OID\_PM\_REMOVE\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-pm-remove-protocol-offload). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a protocol offload identifier.
 
 NDIS allows multiple NDIS protocol drivers to add protocol offloads to the same network adapter. To ensure that the right set of protocols have been offloaded to a network adapter when the number of requested offloaded protocols is higher than what a network adapter can support, protocol drivers assign a priority to each offloaded protocol. When NDIS cannot offload a new high priority protocol because the network adapter is out of resources, NDIS deletes one of the lower priority offloaded protocols (if any) and attempts to offload the high priority protocol again.
 
@@ -99,7 +99,7 @@ NDIS allows multiple NDIS protocol drivers to add protocol offloads to the same 
 
  
 
-If as a result of offloading a high priority protocol, one of the lower priority offloaded protocols is deleted, NDIS sends an [**NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pm-offload-rejected) status indication to notify the overlying driver that set the deleted protocol offload. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_status_indication) structure contains a protocol offload identifier of the rejected protocol offload. NDIS provided the protocol offload identifier in the **ProtocolOffloadId** member of the [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
+If as a result of offloading a high priority protocol, one of the lower priority offloaded protocols is deleted, NDIS sends an [**NDIS\_STATUS\_PM\_OFFLOAD\_REJECTED**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-pm-offload-rejected) status indication to notify the overlying driver that set the deleted protocol offload. The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a protocol offload identifier of the rejected protocol offload. NDIS provided the protocol offload identifier in the **ProtocolOffloadId** member of the [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
 
  
 

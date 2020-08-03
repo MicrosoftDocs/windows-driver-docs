@@ -6,66 +6,64 @@ keywords:
 - helper objects WDK audio , DMA channel objects
 - DMA channel objects WDK audio
 - master devices WDK audio
-- slave devices WDK audio
 - IDmaChannel interface
 - channel objects WDK audio
-ms.date: 04/20/2017
+ms.date: 06/20/2020
 ms.localizationpriority: medium
 ---
 
 # DMA Channel Objects
 
+> [!NOTE]
+> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's Style Guide for Bias-Free Communications recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
 
-## <span id="dma_channel_objects"></span><span id="DMA_CHANNEL_OBJECTS"></span>
-
-
-The PortCls system driver implements the [IDmaChannel](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idmachannel) and [IDmaChannelSlave](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-idmachannelslave) interfaces for the benefit of WaveCyclic and WavePci miniport drivers. **IDmaChannel** represents a DMA channel plus its associated DMA buffer and buffer-usage parameters. In addition, WaveCyclic miniport drivers use **IDmaChannelSlave** to manage a DMA channel for a subordinate device. **IDmaChannelSlave** inherits from **IDmaChannel**. For information about controlling DMA operations, see [Adapter Objects and DMA](https://docs.microsoft.com/windows-hardware/drivers/kernel/adapter-objects-and-dma).
+The PortCls system driver implements the [IDmaChannel](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel) and [IDmaChannelSlave](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannelslave) interfaces for the benefit of WaveCyclic and WavePci miniport drivers. **IDmaChannel** represents a DMA channel plus its associated DMA buffer and buffer-usage parameters. In addition, WaveCyclic miniport drivers use **IDmaChannelSlave** to manage a DMA channel for a subordinate device. **IDmaChannelSlave** inherits from **IDmaChannel**. For information about controlling DMA operations, see [Adapter Objects and DMA](https://docs.microsoft.com/windows-hardware/drivers/kernel/adapter-objects-and-dma).
 
 An **IDmaChannel** object encapsulates the following:
 
--   A DMA channel for a master or subordinate device
+- A DMA channel for a master or subordinate device
 
--   The data buffer that is associated with the channel
+- The data buffer that is associated with the channel
 
--   Information that describes how the channel is to be used
+- Information that describes how the channel is to be used
 
 Port and miniport drivers use DMA channel objects to communicate information regarding DMA channel usage. Typically, a miniport driver allocates a set of DMA channels during initialization or during the creation of a stream. During the creation of a new stream, the miniport driver tells the port driver which DMA channel object will be used for the stream.
 
 A DMA channel object can be created for a master or subordinate device:
 
--   A subordinate device has no built-in DMA-hardware capabilities and must rely on the system DMA controller to perform any data transfers that the device requires.
+- A subordinate device has no built-in DMA-hardware capabilities and must rely on the system DMA controller to perform any data transfers that the device requires.
 
--   A master device uses its own bus-mastering DMA hardware to perform data transfers on the system bus.
+- A master device uses its own bus-mastering DMA hardware to perform data transfers on the system bus.
 
 For an example of a WaveCyclic device that uses a subordinate DMA channel object, see the Sb16 sample audio driver in the Microsoft Windows Driver Kit (WDK). A master DMA channel object is little more than a backboard for sharing information about the DMA channel between the port and miniport drivers. For more information about master and subordinate devices, see [Introduction to Adapter Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-adapter-objects).
 
 The DMA channel object for a master or subordinate device exposes the following:
 
--   An adapter object
+- An adapter object
 
--   A single common buffer that the driver and DMA hardware can share
+- A single common buffer that the driver and DMA hardware can share
 
--   A buffer-size value that can be queried and changed
+- A buffer-size value that can be queried and changed
 
 The *adapter object* is a DMA-adapter structure for a *physical device object (PDO)*. The adapter object is automatically created when the miniport driver creates the DMA channel object by calling one of the following methods:
 
-[**IPortWavePci::NewMasterDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavepci-newmasterdmachannel)
+[**IPortWavePci::NewMasterDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepci-newmasterdmachannel)
 
-[**IPortWaveCyclic::NewMasterDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavecyclic-newmasterdmachannel)
+[**IPortWaveCyclic::NewMasterDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavecyclic-newmasterdmachannel)
 
-[**IPortWaveCyclic::NewSlaveDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-iportwavecyclic-newslavedmachannel)
+[**IPortWaveCyclic::NewSlaveDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavecyclic-newslavedmachannel)
 
-The method [**IDmaChannel::GetAdapterObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-getadapterobject) can be used to obtain a pointer to the adapter object.
+The method [**IDmaChannel::GetAdapterObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-getadapterobject) can be used to obtain a pointer to the adapter object.
 
-An adapter driver can also call the [**PcNewDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-pcnewdmachannel) function to create a DMA channel object, but this function is more difficult to use than the **IPortWave*Xxx*::New*Xxx*DmaChannel** calls because the caller must explicitly specify a device object and other contextual information.
+An adapter driver can also call the [**PcNewDmaChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewdmachannel) function to create a DMA channel object, but this function is more difficult to use than the **IPortWave*Xxx*::New*Xxx*DmaChannel** calls because the caller must explicitly specify a device object and other contextual information.
 
-In the case of a DMA channel for a subordinate device, the [**IDmaChannel::TransferCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-transfercount) method returns the maximum transfer size (the *MapSize* parameter) that was specified in the call to [**IDmaChannelSlave::Start**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannelslave-start). Also, the adapter object provides some methods for manipulating and querying the DMA device. None of these methods are meaningful for master DMA channels.
+In the case of a DMA channel for a subordinate device, the [**IDmaChannel::TransferCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-transfercount) method returns the maximum transfer size (the *MapSize* parameter) that was specified in the call to [**IDmaChannelSlave::Start**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannelslave-start). Also, the adapter object provides some methods for manipulating and querying the DMA device. None of these methods are meaningful for master DMA channels.
 
-[**IDmaChannel::AllocateBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-allocatebuffer) and [**IDmaChannel::FreeBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-freebuffer) are used to manage the single common buffer that is associated with the DMA channel object. The buffer that is allocated by the object is guaranteed to be accessible to both the driver (with kernel virtual-memory addresses) and DMA device (with physical-memory addresses). In addition, the buffer will be physically contiguous. Typically, the best strategy is to allocate the DMA buffer during miniport-driver initialization when physically contiguous memory is most plentiful. [**IDmaChannel::AllocatedBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-allocatedbuffersize) returns the size of the buffer as it was specified in the call to **IDmaChannel::AllocateBuffer**.
+[**IDmaChannel::AllocateBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-allocatebuffer) and [**IDmaChannel::FreeBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-freebuffer) are used to manage the single common buffer that is associated with the DMA channel object. The buffer that is allocated by the object is guaranteed to be accessible to both the driver (with kernel virtual-memory addresses) and DMA device (with physical-memory addresses). In addition, the buffer will be physically contiguous. Typically, the best strategy is to allocate the DMA buffer during miniport-driver initialization when physically contiguous memory is most plentiful. [**IDmaChannel::AllocatedBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-allocatedbuffersize) returns the size of the buffer as it was specified in the call to **IDmaChannel::AllocateBuffer**.
 
-[**IDmaChannel::MaximumBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-maximumbuffersize) indicates the actual maximum buffer size that can be used. This might exceed the allocated size if the allocated size is not an even multiple of the page size. It might be less than the allocated size if the DMA device cannot support transfers of the allocated size. [**IDmaChannel::BufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-buffersize) and [**IDmaChannel::SetBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-setbuffersize) are used to query and set the size of the buffer to be used for DMA transfers. When the buffer is allocated, the buffer size is set to the maximum buffer size. After initialization, both the port driver and miniport driver have the opportunity to change the buffer size or discover its current value. The miniport driver uses the result of **IDmaChannel::BufferSize** to determine the transfer size for DMA operations when the DMA channel is started. [**IDmaChannel::SystemAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-systemaddress) and [**IDmaChannel::PhysicalAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-physicaladdress) are used to obtain the virtual and physical addresses of the buffer, respectively.
+[**IDmaChannel::MaximumBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-maximumbuffersize) indicates the actual maximum buffer size that can be used. This might exceed the allocated size if the allocated size is not an even multiple of the page size. It might be less than the allocated size if the DMA device cannot support transfers of the allocated size. [**IDmaChannel::BufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-buffersize) and [**IDmaChannel::SetBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-setbuffersize) are used to query and set the size of the buffer to be used for DMA transfers. When the buffer is allocated, the buffer size is set to the maximum buffer size. After initialization, both the port driver and miniport driver have the opportunity to change the buffer size or discover its current value. The miniport driver uses the result of **IDmaChannel::BufferSize** to determine the transfer size for DMA operations when the DMA channel is started. [**IDmaChannel::SystemAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-systemaddress) and [**IDmaChannel::PhysicalAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-physicaladdress) are used to obtain the virtual and physical addresses of the buffer, respectively.
 
-[**IDmaChannel::CopyTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-copyto) and [**IDmaChannel::CopyFrom**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-copyfrom) copy sample data to and from the DMA buffer. The WaveCyclic port driver calls these methods to copy audio data between the application buffer and the miniport driver's cyclic buffer.
+[**IDmaChannel::CopyTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyto) and [**IDmaChannel::CopyFrom**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyfrom) copy sample data to and from the DMA buffer. The WaveCyclic port driver calls these methods to copy audio data between the application buffer and the miniport driver's cyclic buffer.
 
 The DMA buffer is not necessarily used to transfer the streamed data. In the case of the WavePci port driver, the streamed data is delivered to (or retrieved from) the miniport driver as a list of scatter/gather mappings. However, the miniport driver might still make use of the DMA buffer as a shared memory space for communicating with the adapter driver.
 
@@ -75,39 +73,39 @@ Typically, the easiest approach is to use the DMA channel allocation functions t
 
 The **IDmaChannel** interface supports the following methods:
 
-[**IDmaChannel::AllocateBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-allocatebuffer)
+[**IDmaChannel::AllocateBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-allocatebuffer)
 
-[**IDmaChannel::AllocatedBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-allocatedbuffersize)
+[**IDmaChannel::AllocatedBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-allocatedbuffersize)
 
-[**IDmaChannel::BufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-buffersize)
+[**IDmaChannel::BufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-buffersize)
 
-[**IDmaChannel::CopyFrom**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-copyfrom)
+[**IDmaChannel::CopyFrom**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyfrom)
 
-[**IDmaChannel::CopyTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-copyto)
+[**IDmaChannel::CopyTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-copyto)
 
-[**IDmaChannel::FreeBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-freebuffer)
+[**IDmaChannel::FreeBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-freebuffer)
 
-[**IDmaChannel::GetAdapterObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-getadapterobject)
+[**IDmaChannel::GetAdapterObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-getadapterobject)
 
-[**IDmaChannel::MaximumBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-maximumbuffersize)
+[**IDmaChannel::MaximumBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-maximumbuffersize)
 
-[**IDmaChannel::PhysicalAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-physicaladdress)
+[**IDmaChannel::PhysicalAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-physicaladdress)
 
-[**IDmaChannel::SetBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-setbuffersize)
+[**IDmaChannel::SetBufferSize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-setbuffersize)
 
-[**IDmaChannel::SystemAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-systemaddress)
+[**IDmaChannel::SystemAddress**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-systemaddress)
 
-[**IDmaChannel::TransferCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannel-transfercount)
+[**IDmaChannel::TransferCount**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannel-transfercount)
 
 The **IDmaChannelSlave** interface extends **IDmaChannel** by adding the following methods:
 
-[**IDmaChannelSlave::ReadCounter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannelslave-readcounter)
+[**IDmaChannelSlave::ReadCounter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannelslave-readcounter)
 
-[**IDmaChannelSlave::Start**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannelslave-start)
+[**IDmaChannelSlave::Start**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannelslave-start)
 
-[**IDmaChannelSlave::Stop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannelslave-stop)
+[**IDmaChannelSlave::Stop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannelslave-stop)
 
-[**IDmaChannelSlave::WaitForTC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nf-portcls-idmachannelslave-waitfortc)
+[**IDmaChannelSlave::WaitForTC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-idmachannelslave-waitfortc)
 
  
 

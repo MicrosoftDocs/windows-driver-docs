@@ -18,7 +18,7 @@ Miniport drivers that manage HBA initiators are required to implement the MSiSCS
 
 The MSiSCSI\_PersistentLogins class is unpublished and is defined in *Operations.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_PersistentLogins**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iscsiop/ns-iscsiop-_msiscsi_persistentlogins) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_PersistentLogins**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_msiscsi_persistentlogins) data structure.
 
  
 

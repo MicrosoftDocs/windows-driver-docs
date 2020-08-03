@@ -40,7 +40,7 @@ Applies to:
 
 **Important APIs**
 
-[USB Type-C Port Controller Interface driver class extensions reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_usbref/#type-c-driver-reference)
+[USB Type-C Port Controller Interface driver class extensions reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference)
 
 **UcmTcpciCx client driver template**
 
@@ -170,7 +170,7 @@ Sample reference: See `EvtDeviceD0Entry` in `Device.cpp` and `HardwareRequestQue
 hardware request queue. 
 
  
-## 5. Handlle alerts from the port controller hardware
+## 5. Handle alerts from the port controller hardware
 
 Sample reference: See `ProcessAndSendAlerts` in `Alert.cpp`.
 

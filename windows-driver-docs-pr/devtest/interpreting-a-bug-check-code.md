@@ -59,7 +59,7 @@ Under some conditions, Windows will display only the first line of the blue scre
 
 Each bug check code also has an associated symbolic name. These names usually do not appear on the blue screen. In these examples, the first screen shows [**bug check 0x79**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x79--mismatched-hal) (MISMATCHED\_HAL), while the second shows [**bug check 0xC000021A**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc000021a--status-system-process-terminated) (STATUS\_SYSTEM\_PROCESS\_TERMINATED).
 
-You can deliberately cause a bug check from a kernel-mode driver by passing the bug check's symbolic name to [**KeBugCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kebugcheck) or [**KeBugCheckEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kebugcheckex). This should only be done in circumstances where no other option is available.
+You can deliberately cause a bug check from a kernel-mode driver by passing the bug check's symbolic name to [**KeBugCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kebugcheck) or [**KeBugCheckEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kebugcheckex). This should only be done in circumstances where no other option is available.
 
 ### <span id="reading_bug_check_information_from_the_debugger"></span><span id="READING_BUG_CHECK_INFORMATION_FROM_THE_DEBUGGER"></span>Reading Bug Check Information from the Debugger
 

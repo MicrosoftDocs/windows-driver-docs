@@ -23,6 +23,6 @@ tracelog -start MyTrace -guid MyProvider.guid -f d:\traces\testtrace.etl -flag 2
 
 The command starts a trace session named "MyTrace".
 
-It uses the **-guid** parameter to indicate the MyProvider.guid file, a simple text file that contains nothing but the provider's control GUID. You can also use a [control GUID file](control-guid-file.md), such as Tracedrv.ctl, with the **-guid** parameter. Tracedrv.ctl is included in the [TraceDrv](https://go.microsoft.com/fwlink/p/?linkid=256197) sample.
+It uses the **-guid** parameter to indicate the MyProvider.guid file, a simple text file that contains nothing but the provider's control GUID. You can also use a [control GUID file](control-guid-file.md), such as Tracedrv.ctl, with the **-guid** parameter. Tracedrv.ctl is included in the [TraceDrv](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/tracedrv/) sample.
 
 The command includes the **-f** parameter to specify the name and location of the event trace log file. It includes the **-flag** parameter to specify the flags set and the **-level** parameter to specify the level setting. You can omit these parameters, but some trace providers do not generate any trace messages unless you set the flag or the level.

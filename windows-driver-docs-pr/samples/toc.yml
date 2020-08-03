@@ -1,65 +1,68 @@
 - name: "Windows driver samples"
-# Auto-expanded node
-  items: 
-  - name: "Windows driver samples"
-    href: index.md
-  - name: "Audio driver samples"
-    href: audio-driver-samples.md
-  - name: "AVStream driver samples"
-    href: avstream-driver-samples.md
-  - name: "Battery driver samples"
-    href: battery-driver-samples.md
-  - name: "Biometrics driver samples"
-    href: biometrics-driver-samples.md
-  - name: "Bluetooth driver samples"
-    href: bluetooth-driver-samples.md
-  - name: "Camera driver samples"
-    href: camera-driver-samples.md
-  - name: "File system driver samples"
-    href: file-system-driver-samples.md
-  - name: "General driver samples"
-    href: general-driver-samples.md
-  - name: "General-purpose input/output (GPIO) driver samples"
-    href: general-purpose-input-output--gpio--driver-samples.md
-  - name: "Human interface devices (HID) driver samples"
-    href: human-interface-devices--hid--driver-samples.md
-  - name: "Input driver samples"
-    href: input-driver-samples.md
-  - name: "Networking driver samples"
-    href: networking-driver-samples.md
-  - name: "Near field proximity (NFP) driver samples"
-    href: near-field-proximity--nfp--driver-samples.md
-  - name: "Power framework (PoFx) driver samples"
-    href: power-framework--pofx--driver-samples.md
-  - name: "Point of service (POS) driver samples"
-    href: point-of-service--pos--driver-samples.md
-  - name: "Print driver samples"
-    href: print-driver-samples.md
-  - name: "Secure Digital (SD) driver samples"
-    href: secure-digital--sd--driver-samples.md
-  - name: "Security driver samples"
-    href: security-driver-samples.md
-  - name: "Sensor driver samples"
-    href: sensor-driver-samples.md
-  - name: "Serial driver samples"
-    href: serial-driver-samples.md
-  - name: "Setup samples"
-    href: driver-setup-samples.md
-  - name: "Smart card driver samples"
-    href: smart-card-driver-samples.md
-  - name: "Simple peripheral bus (SPB) driver samples"
-    href: simple-peripheral-bus--spb--driver-samples.md
-  - name: "Storage driver samples"
-    href: storage-driver-samples.md
-  - name: "Thermal driver samples"
-    href: thermal-driver-samples.md
-  - name: "Tools samples"
-    href: driver-tools-samples.md
-  - name: "Universal Serial Bus (USB) driver samples"
-    href: universal-serial-bus--usb--driver-samples.md
-  - name: "Video driver samples"
-    href: video-driver-samples.md
-  - name: "Windows Management Instrumentation (WMI) driver samples"
-    href: windows-management-instrumentation--wmi--driver-samples.md
-  - name: "Windows Portable Device (WPD) driver samples"
-    href: windows-portable-device--wpd--driver-samples.md
+  href: index.md
+- name: "Audio driver samples"
+  href: audio-driver-samples.md
+- name: "AVStream driver samples"
+  href: avstream-driver-samples.md
+- name: "Battery driver samples"
+  href: battery-driver-samples.md
+- name: "Biometrics driver samples"
+  href: biometrics-driver-samples.md
+- name: "Bluetooth driver samples"
+  href: bluetooth-driver-samples.md
+- name: "File system driver samples"
+  href: file-system-driver-samples.md
+- name: "General driver samples"
+  href: general-driver-samples.md
+- name: "General-purpose input/output (GPIO) driver samples"
+  href: general-purpose-input-output--gpio--driver-samples.md
+- name: "Global Navigation Satellite System (GNSS) driver samples"
+  href: gnss-location-driver-samples.md
+- name: "Human interface devices (HID) driver samples"
+  href: human-interface-devices--hid--driver-samples.md
+- name: "Input driver samples"
+  href: input-driver-samples.md
+- name: "Networking driver samples"
+  href: networking-driver-samples.md
+- name: "Near field communication (NFC) driver samples"
+  href: near-field-communication--nfc--driver-samples.md
+- name: "Near field proximity (NFP) driver samples"
+  href: near-field-proximity--nfp--driver-samples.md
+- name: "Power framework (PoFx) driver samples"
+  href: power-framework--pofx--driver-samples.md
+- name: "Point of service (POS) driver samples"
+  href: point-of-service--pos--driver-samples.md
+- name: "Print driver samples"
+  href: print-driver-samples.md
+- name: "Secure Digital (SD) driver samples"
+  href: secure-digital--sd--driver-samples.md
+- name: "Security driver samples"
+  href: security-driver-samples.md
+- name: "Sensor driver samples"
+  href: sensor-driver-samples.md
+- name: "Serial driver samples"
+  href: serial-driver-samples.md
+- name: "Setup samples"
+  href: driver-setup-samples.md
+- name: "Smart card driver samples"
+  href: smart-card-driver-samples.md
+- name: "Simple peripheral bus (SPB) driver samples"
+  href: simple-peripheral-bus--spb--driver-samples.md
+- name: "Storage driver samples"
+  href: storage-driver-samples.md
+- name: "Thermal driver samples"
+  href: thermal-driver-samples.md
+- name: "Tools samples"
+  href: driver-tools-samples.md
+- name: "Trusted Execution Environment (TrEE) driver samples"
+  href: tree-driver-samples.md
+- name: "Universal Serial Bus (USB) driver samples"
+  href: universal-serial-bus--usb--driver-samples.md
+- name: "Video driver samples"
+  href: video-driver-samples.md
+- name: "Windows Image Acquisition (WIA) driver samples"
+  href: wia-driver-samples.md
+- name: "Windows Management Instrumentation (WMI) driver samples"
+  href: windows-management-instrumentation--wmi--driver-samples.md
+- name: "Windows Portable Device (WPD) driver samples"
+  href: windows-portable-device--wpd--driver-samples.md

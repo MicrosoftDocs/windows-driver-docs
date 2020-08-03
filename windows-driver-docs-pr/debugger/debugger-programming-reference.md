@@ -13,11 +13,11 @@ This topic describes the programming reference topics.
 
 This reference section includes:
 
-[Debugger Engine Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-engine-reference)
+[Debugger Engine Reference](debugger-engine-reference.md)
 
-[EngExtCpp Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/index)
+[EngExtCpp Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/index)
 
-[WdbgExts Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/)
+[WdbgExts Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/)
 
 [Custom Analysis Debugger Extension Reference](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/mt809565(v=vs.85))
 

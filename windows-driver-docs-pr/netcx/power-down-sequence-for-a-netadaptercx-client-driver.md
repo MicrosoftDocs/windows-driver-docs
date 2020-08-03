@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 
 # Power-down sequence for a NetAdapterCx client driver
 
-[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
-
 The following figure shows the order in which NetAdapterCx calls a client driver's event callback functions when powering down and removing the device. The sequence starts at the top of the figure with an operational device that is in the working power state (D0):
 
 <img src="images/netadaptercx-powerdown.png" alt="Device enumeration and power-down sequence for NetAdapterCx client driver" title="Device enumeration and power-down sequence for NetAdapterCx client driver" style="width: 600px;"/>

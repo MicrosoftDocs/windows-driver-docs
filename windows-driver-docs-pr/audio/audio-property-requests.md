@@ -39,7 +39,7 @@ When sending a filter-property request to a filter object, the client specifies 
 
 Related properties are gathered together to form a property set. A particular property is identified by its property set and by an index that specifies its position within that set.
 
-A node-property request contains a [**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-ksnodeproperty) structure, which combines a KSPROPERTY structure and a node ID. Depending on the node property, the target for the property request is either a filter instance or a pin instance.
+A node-property request contains a [**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty) structure, which combines a KSPROPERTY structure and a node ID. Depending on the node property, the target for the property request is either a filter instance or a pin instance.
 
 If a filter can create more than one instance of a particular node type, the target for the request is specified by a pin handle. The handle identifies the pin instance at the beginning or end of the data path on which the node instance resides. In the case of a filter containing a SUM or MUX node (see [**KSNODETYPE\_SUM**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-sum) and [**KSNODETYPE\_MUX**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-mux)), the following rules apply:
 

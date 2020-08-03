@@ -19,7 +19,7 @@ Whereas Windows and its drivers are composed of binary machine code compiled for
 
 The Microsoft AMLI Debugger is a set of special debugging tool that can debug AML code. 
 
-In versions of Windows before Windows 10, version 1803 checked builds of the Windows ACPI driver (Acpi.sys) were used. This no longer the case.
+In versions of Windows before Windows 10, version 1803 checked builds of the Windows ACPI driver (Acpi.sys) were used. This no longer the case as checked builds are no longer provided.
 
 The AMLI Debugger is completely 64-bit aware. No matter what processor is being used by the target computer or the host computer, the AMLI Debugger will function correctly.
 

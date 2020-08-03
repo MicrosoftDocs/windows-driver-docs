@@ -18,9 +18,7 @@ ms.localizationpriority: medium
 
 This rule verifies that when the [**PAGED\_CODE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) macro is called, the driver is at **IRQL &lt; DISPATCH\_LEVEL**. Any code executing at **IRQL &gt;= DISPATCH\_LEVEL** must be in non-paged memory to avoid causing page faults.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

@@ -266,9 +266,13 @@ te.exe \*.dll /runon:TestMachine1
 The selection criteria to be used when selecting tests from each test binary. Selection criteria is composed of one or more of the following:
 
 @\[property name\] = \[value as string\]
+
 @\[property name\] &gt;= \[value as float or integer\]
+
 @\[property name\] &gt; \[value as float or integer\]
+
 @\[property name\] &lt;= \[value as float or integer\]
+
 @\[property name\] &lt; \[value as float or integer\]
 
 * *Property values as strings must be within single quotes.*

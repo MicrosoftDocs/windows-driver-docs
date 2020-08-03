@@ -16,13 +16,11 @@ ms.localizationpriority: medium
 # DanglingDeviceObjectReference rule (wdm)
 
 
-The **DanglingDeviceObjectReference** rule specifies that the driver calls [**ObDereferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-obdereferenceobject) with the same device object pointer that [**IoGetAttachedDeviceReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iogetattacheddevicereference) returned.
+The **DanglingDeviceObjectReference** rule specifies that the driver calls [**ObDereferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) with the same device object pointer that [**IoGetAttachedDeviceReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetattacheddevicereference) returned.
 
 This rule also specifies that all device object pointers that the driver referenced by calling **IoGetAttachedDeviceReference** are dereferenced by calling **ObDereferenceObject** before the driver exits. ObfDereferenceObject
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------
@@ -53,7 +51,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoGetAttachedDeviceReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iogetattacheddevicereference)
+[**IoGetAttachedDeviceReference**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetattacheddevicereference)
  
 
  

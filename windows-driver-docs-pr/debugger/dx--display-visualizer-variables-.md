@@ -59,24 +59,38 @@ Recursively display subtypes (fields) up to *\#* levels. If *\#* is not specifie
 <span id="__________FormatSpecifier_________"></span><span id="__________formatspecifier_________"></span><span id="__________FORMATSPECIFIER_________"></span> **\[&lt;,FormatSpecifier&gt;\]**   
 Use any of the following format specifiers to modify the default rendering.
 
-|                         |                                                                                          |
-|-------------------------|------------------------------------------------------------------------------------------|
-| ,x                      | Display ordinals in hexidecimal                                                          |
-| ,d                      | Display ordinals in decimal                                                              |
-| ,o                      | Display ordinals in octal                                                                |
-| ,b                      | Display ordinals in binary                                                               |
-| ,en                     | Display enums by name only (no value)                                                    |
-| ,c                      | Display as single character (not a string)                                               |
-| ,s                      | Display 8-bit strings as ASCII quoted                                                    |
-| ,sb                     | Display 8-bit strings as ASCII unquoted                                                  |
-| ,s8                     | Display 8-bit strings as UTF-8 quoted                                                    |
-| ,s8b                    | Display 8-bit strings as UTF-8 unquoted                                                  |
-| ,su                     | Display 16-bit strings as UTF-16 quoted                                                  |
-| ,sub                    | Display 16-bit strings as UTF-16 unqouted                                                |
-| ,!                      | Display objects in raw mode only (e.g.: no NatVis)                                       |
-| ,\#                     | Specify length of pointer/array/container as the literal value \# (replace with numeric) |
-| ,\[&lt;expression&gt;\] | Specify length of pointer/array/container as the expression &lt;expression&gt;           |
-| ,nd                     | Do not find the derived (runtype) type of the object. Display static value only          |
+**,x**: Display ordinals in hexidecimal
+
+**,d**: Display ordinals in decimal
+
+**,o**: Display ordinals in octal
+
+**,b**: Display ordinals in binary
+
+**,en**: Display enums by name only (no value)
+
+**,c**: Display as single character (not a string)
+
+**,s**: Display 8-bit strings as ASCII quoted
+
+**,sb**: Display 8-bit strings as ASCII unquoted
+
+**,s8**: Display 8-bit strings as UTF-8 quoted
+
+**,s8b**: Display 8-bit strings as UTF-8 unquoted
+
+**,su**: Display 16-bit strings as UTF-16 quoted
+
+**,sub**: Display 16-bit strings as UTF-16 unqouted
+
+**,!**: Display objects in raw mode only (e.g.: no NatVis)
+
+**,\#**: Specify length of pointer/array/container as the literal value \# (replace with numeric)
+
+**,\[&lt;expression&gt;\]**: Specify length of pointer/array/container as the expression &lt;expression&gt;
+
+**,nd**: Do not find the derived (runtype) type of the object. Display static value only
+
 
 <span id="_______dx_-_______"></span><span id="_______DX_-_______"></span> **dx** {**-?**}   
 Display command line help.

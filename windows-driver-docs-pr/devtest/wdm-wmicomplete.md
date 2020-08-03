@@ -16,17 +16,15 @@ ms.localizationpriority: medium
 # WmiComplete rule (wdm)
 
 
-The **WmiComplete** rule specifies that when processing a [**WMI minor IRP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-minor-irps), the driver calls [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest) before returning from the [**DispatchSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+The **WmiComplete** rule specifies that when processing a [**WMI minor IRP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-minor-irps), the driver calls [**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) before returning from the [**DispatchSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 A *WMI minor IRP* is an [**IRP\_MJ\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-system-control) request with a WMI minor function code.
 
-For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers), [**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests), [**Windows Management Instrumentation Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), and [**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+For more information about processing WMI minor IRPs, see [**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers), [**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests), [**Windows Management Instrumentation Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), and [**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 Drivers that are not registered as WMI data providers must forward the WMI request to the next lower driver. To verify this action, use the [**WmiForward**](wdm-wmiforward.md) rule.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------
@@ -57,15 +55,15 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocompleterequest)
-[**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wmilib/nf-wmilib-wmisystemcontrol)
+[**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
+[**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
 See also
 --------
 
 [**WmiForward**](wdm-wmiforward.md)
 [**WMI Requirements for WDM Drivers**](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-requirements-for-wdm-drivers)
 [**Handling WMI Requests**](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests)
-[**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index)
+[**WMI Library Support Routines**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
  
 
  

@@ -29,14 +29,14 @@ WDDM 2.1 supports the following D3D versions: D3D9, D3D10, D3D10.1, D3D11, D3D11
 
 ## Offer and reclaim improvements
 
-A new DDI, [PFND3DDDI_RECLAIMALLOCATIONS3CB](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocations3cb) was created to reduce memory footprint of applications running in background mode. This interface will enable applications to offer resources that are acceptable to fully de-commit, when going into the background. As a result, the Process Lifetime Manager will be able to reclaim more memory from background apps that use DirectX, which leads to less background application terminations when under memory pressure.
+A new DDI, [PFND3DDDI_RECLAIMALLOCATIONS3CB](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocations3cb) was created to reduce memory footprint of applications running in background mode. This interface will enable applications to offer resources that are acceptable to fully de-commit, when going into the background. As a result, the Process Lifetime Manager will be able to reclaim more memory from background apps that use DirectX, which leads to less background application terminations when under memory pressure.
 
 Other DDI changes:
 
-* [PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_updateallocationpropertycb)
-* [PFND3DDDI_OFFERALLOCATIONS2CB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_offerallocations2cb)
-* [D3DDDICB_OFFERALLOCATIONS2 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-d3dddicb_offerallocations2)
-* [D3DDDICB_RECLAIMALLOCATIONS3 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddicb_reclaimallocations3)
+* [PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updateallocationpropertycb)
+* [PFND3DDDI_OFFERALLOCATIONS2CB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_offerallocations2cb)
+* [D3DDDICB_OFFERALLOCATIONS2 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddicb_offerallocations2)
+* [D3DDDICB_RECLAIMALLOCATIONS3 structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddicb_reclaimallocations3)
 
 For more information about offer and reclaim resources, see [Offer and reclaim changes](offer-and-reclaim-changes.md).
 
@@ -48,9 +48,9 @@ WDDM 2.1 drivers are required to support a performance feature called *present b
 
 The following lists the new DDIs created to enable this feature:
 
-* [PFND3DDDI_SYNCTOKENCB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_synctokencb)
-* [D3DDDIARG_SYNCTOKEN structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_synctoken)
-* [PFND3DDDI_SYNCTOKEN callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/nc-d3dumddi-pfnd3dddi_synctoken)
+* [PFND3DDDI_SYNCTOKENCB callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_synctokencb)
+* [D3DDDIARG_SYNCTOKEN structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_synctoken)
+* [PFND3DDDI_SYNCTOKEN callback](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_synctoken)
 
 
 ## Indirect Display
@@ -125,7 +125,7 @@ This feature enables the UMD to comment on each programmable stage of the graphi
 
 ### WDDM 2.1 Caps
 
-Drivers will report WDDM 2.1 support through [DXGK_DRIVERCAPS::WDDMVersion](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/content/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) with a new version constant:
+Drivers will report WDDM 2.1 support through [DXGK_DRIVERCAPS::WDDMVersion](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) with a new version constant:
 
 `DXGK_WDDMVERSION::DXGKDDI_WDDMv2_1 = 0x2100`
 

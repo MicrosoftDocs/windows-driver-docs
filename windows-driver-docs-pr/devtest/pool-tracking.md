@@ -32,13 +32,13 @@ Starting with Windows Vista, enabling the Pool Tracking option also enables the 
 
 In Windows 7 and later versions of the Windows operating system, the Pool Tracking option supports memory that was allocated by using the following kernel APIs:
 
--   [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatemdl)
+-   [**IoAllocateMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl)
 
--   [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
+-   [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
 
--   [**RtlAnsiStringToUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
+-   [**RtlAnsiStringToUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
 
--   [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutineex)
+-   [**IoSetCompletionRoutineEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)
 
 In Windows 7 and later versions of the Windows operating system, when Pool Tracking is activated, Driver Verifier can detect attempts to allocate kernel pool memory with *quota* in the context of the Idle process. Such attempts usually mean that the driver is allocating memory from a DPC routine. The thread or process context for DPC routines is unreliable, so trying to charge quota to that process is incorrect.
 
@@ -50,11 +50,11 @@ The kernel debugger extension **!verifier 0x3** can be used to locate outstandin
 
 ### <span id="Pool_Quota_Charges_from_DPC_Routine"></span><span id="pool_quota_charges_from_dpc_routine"></span><span id="POOL_QUOTA_CHARGES_FROM_DPC_ROUTINE"></span>Pool Quota Charges from DPC Routine
 
-Kernel drivers can call [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithquotatag) to allocate kernel pool memory and charge the number of bytes that are allocated to the pool quota of the current process. Drivers typically use quota for memory allocations that are directly related to a request that comes from an application.
+Kernel drivers can call [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag) to allocate kernel pool memory and charge the number of bytes that are allocated to the pool quota of the current process. Drivers typically use quota for memory allocations that are directly related to a request that comes from an application.
 
 Deferred procedure call (DPC) routines can run in the context of any process. Therefore, charging quota from a DPC routine charges a random process. Even worse, when the DPC routine runs in the context of the Idle process, this condition can result in memory corruption or system crashes.
 
-Starting in Windows 7, Driver Verifier detects [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exallocatepoolwithquotatag) calls from DPC routines.
+Starting in Windows 7, Driver Verifier detects [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag) calls from DPC routines.
 
 ### <span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating This Option
 

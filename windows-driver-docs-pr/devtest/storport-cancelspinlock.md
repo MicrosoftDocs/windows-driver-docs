@@ -20,9 +20,7 @@ The **CancelSpinLock Rule (Storport)** rule verifies that each call to [**IoAcqu
 
 [**IoReleaseCancelSpinLock**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) must not be called without acquiring the cancel spin lock first. In addition, when a miniport callback routine exits, it must not be holding any cancel spin locks
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

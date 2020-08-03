@@ -7,15 +7,15 @@ keywords:
 - debugging drivers WDK smart card
 - DebugLevel
 - vendor-supplied drivers WDK smart card , debugging
-ms.date: 04/20/2017
+ms.date: 06/04/2020
 ms.localizationpriority: medium
 ---
 
 # Smart Card Driver Debugging
 
-
-## <span id="_ntovr_smart_card_driver_debugging"></span><span id="_NTOVR_SMART_CARD_DRIVER_DEBUGGING"></span>
-
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 The smart card driver libraries support several debugging features. Each debugging feature is represented by one of the following constants, which are defined in the *Smclib.h* header file:
 
@@ -40,10 +40,6 @@ In both cases, you must pass the value for the debugging level you want to the p
 SmartcardSetDebugLevel(DebugLevel);
 ```
 
-**Important**   You must install the checked version of the operating system and the checked version of the driver to get debugging messages.
-
- 
-
 To write debugging messages from a reader driver, the driver must call the following routine:
 
 ```cpp
@@ -53,23 +49,17 @@ SmartcardDebug(
 );
 ```
 
+> [!IMPORTANT]
+> You must install the checked version of the operating system and the checked version of the driver to get debugging messages.
+
 This routine can also be used to write messages to a remote debugger in the following ways.
 
--   To write error messages, use the DEBUG\_ERROR constant for the *DebugLevel*.
+- To write error messages, use the DEBUG\_ERROR constant for the *DebugLevel*.
 
--   To write standard driver messages, use the DEBUG\_DRIVER constant.
+- To write standard driver messages, use the DEBUG\_DRIVER constant.
 
--   To write trace messages that indicate when the reader driver enters or exits a routine, use DEBUG\_TRACE as the *DebugLevel*.
+- To write trace messages that indicate when the reader driver enters or exits a routine, use DEBUG\_TRACE as the *DebugLevel*.
 
 While developing a driver, use the checked version of the smart card driver library and set the debugging level to the maximum by using **SmartcardSetDebugLevel**(DEBUG\_ALL) in your *DriverEntry* routine.
 
 For information about setting up a remote debugging session, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
-
- 
-
- 
-
-
-
-
-

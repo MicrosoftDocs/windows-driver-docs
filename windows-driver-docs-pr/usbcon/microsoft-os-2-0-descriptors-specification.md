@@ -54,7 +54,7 @@ Microsoft OS Descriptors Specification</strong><br />
 <p>Neither party may assign this Agreement without prior written approval of the other party.</p>
 </div>
 <p><br />
-<a href="http://download.microsoft.com/download/3/5/6/3563ED4A-F318-4B66-A181-AB1D8F6FD42D/MS_OS_2_0_desc.docx">I accept, Download</a></p></td>
+<a href="https://download.microsoft.com/download/3/5/6/3563ED4A-F318-4B66-A181-AB1D8F6FD42D/MS_OS_2_0_desc.docx">I accept, Download</a></p></td>
 </tr>
 </tbody>
 </table>

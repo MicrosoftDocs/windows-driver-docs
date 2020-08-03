@@ -23,7 +23,7 @@ The L2CAP client profile driver must have information about the remote device, s
 
 To initiate a L2CAP connection to a remote device, after the client profile driver has the required information about the device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_L2CA\_OPEN\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536615(v=vs.85)) request.
 
-When the client profile driver builds the request, it supplies a pointer to a [**\_BRB\_L2CA\_OPEN\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bthddi/ns-bthddi-_brb_l2ca_open_channel) structure in the **Parameters.Others.Argument1** member of the IRP associated with the request. This structure contains the Bluetooth address for the remote device, the PSM registered for the device, and additional configuration parameters.
+When the client profile driver builds the request, it supplies a pointer to a [**\_BRB\_L2CA\_OPEN\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel) structure in the **Parameters.Others.Argument1** member of the IRP associated with the request. This structure contains the Bluetooth address for the remote device, the PSM registered for the device, and additional configuration parameters.
 
 If the remote device accepts the open channel request, the **OutResults** and **InResults** members of the \_BRB\_L2CA\_OPEN\_CHANNEL structure contain information about the newly created connection. The **OutResults** member specifies the parameters for the outbound half of the channel and the **InResults** member specifies the parameters for the inbound half of the channel.
 

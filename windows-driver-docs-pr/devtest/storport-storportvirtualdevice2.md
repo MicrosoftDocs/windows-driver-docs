@@ -16,11 +16,9 @@ ms.localizationpriority: medium
 # StorPortVirtualDevice2 rule (storport)
 
 
-This rule verifies that upon exit from the [**HwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_find_adapter) routine, the **VirtualDevice** field in the [**PORT\_CONFIGURATION\_INFORMATION (Storport)**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)) structure has been set to **TRUE**. The rule applies only to virtual StorPort miniports.
+This rule verifies that upon exit from the [**HwStorFindAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) routine, the **VirtualDevice** field in the [**PORT\_CONFIGURATION\_INFORMATION (Storport)**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)) structure has been set to **TRUE**. The rule applies only to virtual StorPort miniports.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------

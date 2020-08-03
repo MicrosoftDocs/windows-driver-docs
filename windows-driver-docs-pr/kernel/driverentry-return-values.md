@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 
 
-A [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine returns an [NTSTATUS value](ntstatus-values.md), either STATUS\_SUCCESS or an appropriate error status.
+A [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine returns an [NTSTATUS value](ntstatus-values.md), either STATUS\_SUCCESS or an appropriate error status.
 
-The **DriverEntry** routine should postpone any call to [**IoRegisterDriverReinitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-ioregisterdriverreinitialization) until just before it returns STATUS\_SUCCESS. It must not make this call unless it will return STATUS\_SUCCESS.
+The **DriverEntry** routine should postpone any call to [**IoRegisterDriverReinitialization**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioregisterdriverreinitialization) until just before it returns STATUS\_SUCCESS. It must not make this call unless it will return STATUS\_SUCCESS.
 
 If a **DriverEntry** routine returns an NTSTATUS value that is not a success or informational value, such as STATUS\_SUCCESS, the driver for that **DriverEntry** routine is not loaded.
 
@@ -23,7 +23,7 @@ A **DriverEntry** routine that will fail initialization must free any system obj
 
 If a driver will fail initialization, the **DriverEntry** routine also should log an error before returning control. See [Logging Errors](logging-errors.md).
 
-Note that a driver's [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload) routine is not called if a driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine returns a failure status.
+Note that a driver's [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine is not called if a driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine returns a failure status.
 
  
 

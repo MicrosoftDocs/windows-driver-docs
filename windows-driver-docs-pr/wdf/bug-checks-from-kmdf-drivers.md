@@ -19,7 +19,7 @@ The framework checks for several types of errors from framework-based drivers. I
 
 For information about the types of driver errors that the framework checks for, see [**WDF\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x10d---wdf-violation).
 
-Your driver can create a bug check by calling [**WdfVerifierKeBugCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfverifier/nf-wdfverifier-wdfverifierkebugcheck).
+Your driver can create a bug check by calling [**WdfVerifierKeBugCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierkebugcheck).
 
  
 

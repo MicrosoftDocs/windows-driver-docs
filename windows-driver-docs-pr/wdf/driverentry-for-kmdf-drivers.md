@@ -32,10 +32,10 @@ Parameters
 ----------
 
 *DriverObject* \[in\]  
-A pointer to a [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_driver_object) structure that represents the driver's WDM driver object.
+A pointer to a [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure that represents the driver's WDM driver object.
 
 *RegistryPath* \[in\]  
-A pointer to a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfwdm/ns-wudfwdm-_unicode_string) structure that specifies the path to the driver's [Parameters key](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers) in the registry.
+A pointer to a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that specifies the path to the driver's [Parameters key](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers) in the registry.
 
 Return value
 ------------
@@ -51,19 +51,19 @@ Like all WDM drivers, framework-based drivers must have a **DriverEntry** routin
 
     **DriverEntry** should include a [WPP\_INIT\_TRACING](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) macro to activate software tracing.
 
--   Call [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate).
+-   Call [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate).
 
-    The call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate) enables the driver to use Windows Driver Framework interfaces. (The driver cannot call other framework routines before calling **WdfDriverCreate**.)
+    The call to [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) enables the driver to use Windows Driver Framework interfaces. (The driver cannot call other framework routines before calling **WdfDriverCreate**.)
 
 -   Allocate any non-device-specific system resources and global variables that it might need.
 
-    Typically, drivers associate system resources with individual devices. Therefore, framework-based drivers allocate most resources in an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback, which is called when individual devices are detected.
+    Typically, drivers associate system resources with individual devices. Therefore, framework-based drivers allocate most resources in an [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback, which is called when individual devices are detected.
 
     Because multiple instances of a UMDF driver might be hosted by separate instances of Wudfhost, a global variable might not be available across all instances of a UMDF driver.
 
 -   Obtain driver-specific parameters from the registry.
 
-    Some drivers obtain parameters from the registry. These drivers can call [**WdfDriverOpenParametersRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) to open the registry key that contains these parameters.
+    Some drivers obtain parameters from the registry. These drivers can call [**WdfDriverOpenParametersRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) to open the registry key that contains these parameters.
 
 -   Provide a [DriverEntry return value](https://docs.microsoft.com/windows-hardware/drivers/kernel/driverentry-return-values).
 
@@ -107,6 +107,7 @@ DriverEntry(
     WDFDRIVER  hDriver;
     NTSTATUS  status;
     WDF_OBJECT_ATTRIBUTES  attributes;
+    SERIAL_FIRMWARE_DATA driverDefaults;
 
     //
     // Initialize WPP tracing.
@@ -181,9 +182,9 @@ DriverEntry(
 ## See also
 
 
-[**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdrivercreate)
+[**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate)
 
-[*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)
+[*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add)
 
  
 

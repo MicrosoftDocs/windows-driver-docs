@@ -16,13 +16,11 @@ ms.localizationpriority: medium
 # StorPortSpinLock3 rule (storport)
 
 
-The **StorPortSpinLock3** rule verifies the lock acquisition hierarchy that is described in the documentation for the [**StorPortAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportacquirespinlock) routine.
+The **StorPortSpinLock3** rule verifies the lock acquisition hierarchy that is described in the documentation for the [**StorPortAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock) routine.
 
 Storport miniport drivers must ensure that they do not attempt to acquire a lock that is already held or acquire locks in an incorrect order. Either of these mistakes will result in system deadlock.
 
-|              |          |
-|--------------|----------|
-| Driver model | Storport |
+**Driver model: Storport**
 
 How to test
 -----------
@@ -53,7 +51,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**StorPortAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportacquirespinlock)
+[**StorPortAcquireSpinLock**](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock)
  
 
  

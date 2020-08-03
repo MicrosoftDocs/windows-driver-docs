@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !usbkd.usbhcdlog
 
 
-The [**!usbkd.usbhcdlog**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdlog) command displays a portion of the debug log for a USB host controller.
+The [**!usbkd.usbhcdlog**](-usbkd-usbhcdlog.md) command displays a portion of the debug log for a USB host controller.
 
 ```dbgcmd
 !usbkd.usbhcdlog DeviceExtension[, NumberOfEntries]
@@ -72,7 +72,7 @@ LOG@: ffffe00001ca11b8
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
 
  
 

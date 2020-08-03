@@ -16,18 +16,16 @@ ms.localizationpriority: medium
 # IrqlKeWaitForMultipleObjects rule (wdm)
 
 
-The **IrqlKeWaitForMultipleObjects** rule specifies that callers of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitformultipleobjects) routine must be running at proper IRQL based upon the *Timeout* parameter.
+The **IrqlKeWaitForMultipleObjects** rule specifies that callers of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects) routine must be running at proper IRQL based upon the *Timeout* parameter.
 
 Callers of **IrqlKeWaitForMultipleObjects** routine can be running at IRQL &lt;= DISPATCH\_LEVEL, except in the following situations:
 
--   If *Timeout* &lt;&gt; 0, the caller of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitformultipleobjects) routine must be running at IRQL &lt;= APC\_LEVEL.
--   If *Timeout* != NULL and \**Timeout* = 0, the caller of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitformultipleobjects) routine must be running at IRQL = DISPATCH\_LEVEL.
+-   If *Timeout* &lt;&gt; 0, the caller of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects) routine must be running at IRQL &lt;= APC\_LEVEL.
+-   If *Timeout* != NULL and \**Timeout* = 0, the caller of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects) routine must be running at IRQL = DISPATCH\_LEVEL.
 
--   If *Timeout* = **NULL**, or \**Timeout* != 0, the caller of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitformultipleobjects) routine must running at IRQL &lt;= APC\_LEVEL.
+-   If *Timeout* = **NULL**, or \**Timeout* != 0, the caller of the [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects) routine must running at IRQL &lt;= APC\_LEVEL.
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------
@@ -58,7 +56,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kewaitformultipleobjects)
+[**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects)
  
 
  

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # Opening and Closing a Stream
 
 
-The Stream class interface sends an [**SRB\_OPEN\_STREAM**](https://docs.microsoft.com/windows-hardware/drivers/stream/srb-open-stream) request to a Stream class minidriver to open a stream with the selected video format. Information passed in SRB\_OPEN\_STREAM includes the index of the stream to be open and a pointer to a pointer to a [**KS\_VIDEOINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_videoinfoheader) structure. The stream index corresponds to the index of the stream in the array of [**KS\_DATARANGE\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_datarange_video) structures returned by the minidriver in response to an earlier [**SRB\_GET\_STREAM\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/stream/srb-get-stream-info) request. For more information about handling SRB\_GET\_STREAM\_INFO, see [Stream Categories](stream-categories.md).
+The Stream class interface sends an [**SRB\_OPEN\_STREAM**](https://docs.microsoft.com/windows-hardware/drivers/stream/srb-open-stream) request to a Stream class minidriver to open a stream with the selected video format. Information passed in SRB\_OPEN\_STREAM includes the index of the stream to be open and a pointer to a pointer to a [**KS\_VIDEOINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_videoinfoheader) structure. The stream index corresponds to the index of the stream in the array of [**KS\_DATARANGE\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_video) structures returned by the minidriver in response to an earlier [**SRB\_GET\_STREAM\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/stream/srb-get-stream-info) request. For more information about handling SRB\_GET\_STREAM\_INFO, see [Stream Categories](stream-categories.md).
 
 The following example code obtains the stream index, kernel streaming data format, and kernel streaming video info header.
 
@@ -28,7 +28,7 @@ PKS_VIDEOINFOHEADER pVideoInfoHdrRequested =
     &pKSDataFormat->VideoInfoHeader;
 ```
 
-Minidrivers should verify that they can support the requested stream format. In particular, the contents of the [**KS\_BITMAPINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagks_bitmapinfoheader) structure should be verified, along with cropping and scaling information specified by the **rcSource** and **rcTarget** members.
+Minidrivers should verify that they can support the requested stream format. In particular, the contents of the [**KS\_BITMAPINFOHEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_bitmapinfoheader) structure should be verified, along with cropping and scaling information specified by the **rcSource** and **rcTarget** members.
 
 If the device hardware cannot support the capture frame rate requested in the **AvgTimePerFrame** member of KS\_VIDEOINFOHEADER, it should always select the next *lower* frame rate available. For example, if a camera can support a capture frame rate of 7 frames per second (fps) and 15 fps, and a client application attempts to open the stream at a capture frame rate of 10 fps, the camera should create a 7-fps physical stream.
 

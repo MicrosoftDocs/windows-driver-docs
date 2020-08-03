@@ -1988,6 +1988,8 @@
           href: receiving-network-data-with-ipsec-offload-version-2.md
       - name: "Offloading the Segmentation of Large TCP Packets"
         href: offloading-the-segmentation-of-large-tcp-packets.md
+      - name: "UDP Segmentation Offload (USO)"
+        href: udp-segmentation-offload-uso-.md
     - name: "Connection Offload"
       items: 
       - name: "Connection Offload Overview"
@@ -2019,7 +2021,7 @@
     - name: "PacketDirect Provider Interface (PDPI) Status Indications"
       items: 
       - name: "NDIS_STATUS_PD_CURRENT_CONFIG"
-        href: ndis-status-pd-current-config.md
+        href: ndis-status-pd-current-config.md    
 - name: "Virtualized Networking"
   items: 
   - name: "Virtualized Networking Topics"

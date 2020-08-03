@@ -11,12 +11,11 @@ keywords:
 - operation region handlers WDK ACPI
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
-ms.date: 04/20/2017
+ms.date: 05/19/2020
 ms.localizationpriority: medium
 ---
 
 # Supporting ACPI Devices
-
 
 This section describes how a vendor can use a WDM function driver in Windows to enhance the functionality of an Advanced Configuration and Power Interface (ACPI) device.
 
@@ -28,17 +27,17 @@ To enhance the functionality of an ACPI device, the vendor can supply a WDM func
 
 By communicating through ACPI operation regions, a function driver can indirectly access devices that are normally only controlled by the BIOS, and the BIOS can invoke device-specific operations that depend on the configuration of the driver and the host system. The basic operating mechanism is as follows:
 
-1.  The ACPI BIOS reads or writes data in a device's operation region.
+1. The ACPI BIOS reads or writes data in a device's operation region.
 
-2.  To access the operation region, the ACPI driver calls the function driver's operation region handler.
+1. To access the operation region, the ACPI driver calls the function driver's operation region handler.
 
-3.  The operation region handler does whatever action is programmed for the access and returns information associated with the access.
+1. The operation region handler does whatever action is programmed for the access and returns information associated with the access.
 
 The following two examples show how a vendor can use a function driver to enhance the capability of an ACPI device:
 
-1.  An ACPI device can access an index in a function driver's operation region that causes the driver to enable a sound card volume control in a vendor's preinstalled software.
+1. An ACPI device can access an index in a function driver's operation region that causes the driver to enable a sound card volume control in a vendor's preinstalled software.
 
-2.  The driver monitors the remaining capacity of batteries, the temperatures of thermal zones, and other things that are normally only accessed by the BIOS.
+1. The driver monitors the remaining capacity of batteries, the temperatures of thermal zones, and other things that are normally only accessed by the BIOS.
 
 The following topics describe how to supply a function driver for an ACPI device:
 
@@ -46,6 +45,6 @@ The following topics describe how to supply a function driver for an ACPI device
 
 [Operation of an ACPI Device Function Driver](operation-of-an-acpi-device-function-driver.md)
 
-For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_acpi/index).
+For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_acpi/index).
 
-For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](https://go.microsoft.com/fwlink/p/?linkid=866846).
+For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](https://uefi.org/specifications).

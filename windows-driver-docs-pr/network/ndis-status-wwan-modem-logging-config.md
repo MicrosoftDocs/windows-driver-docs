@@ -15,14 +15,12 @@ Miniport drivers use the **NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG** notification 
 
 Miniport drivers send this notification as an unsolicited event in scenarios where the modem needs to inform the OS about internal changes. Currently, in Windows 10, version 1903, these scenarios do not occur.
 
-This notification uses the [**NDIS_WWAN_MODEM_LOGGING_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_modem_logging_config) structure.
+This notification uses the [**NDIS_WWAN_MODEM_LOGGING_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_modem_logging_config) structure.
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1903 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1903
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
@@ -30,4 +28,4 @@ This notification uses the [**NDIS_WWAN_MODEM_LOGGING_CONFIG**](https://docs.mic
 
 [OID_WWAN_MODEM_LOGGING_CONFIG](oid-wwan-modem-logging-config.md)
 
-[**NDIS_WWAN_MODEM_LOGGING_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_modem_logging_config)
+[**NDIS_WWAN_MODEM_LOGGING_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_modem_logging_config)

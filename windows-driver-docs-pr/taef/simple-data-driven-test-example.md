@@ -76,7 +76,7 @@ If you compare the Managed and Native examples, you will notice that the only di
     24 </Data>
 ```
 
-The parameter types supported in **Native** and **Managed** code, are listed [here](parameter-types-in-table-data-sources.md).
+The parameter types supported in **Native** and **Managed** code, are listed in [Parameter Types in Table Data Sources](parameter-types-in-table-data-sources.md).
 
 If any other data type is specified, the test will throw a warning and consider it to be a String.
 

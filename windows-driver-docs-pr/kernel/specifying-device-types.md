@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 
 
-Each device object has a *device type*, which is stored in the **DeviceType** member of its [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object) structure. The device type represents the type of underlying hardware for the driver.
+Each device object has a *device type*, which is stored in the **DeviceType** member of its [**DEVICE\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure. The device type represents the type of underlying hardware for the driver.
 
-Every kernel-mode driver that creates a device object must specify an appropriate device type value when calling [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iocreatedevice). The **IoCreateDevice** routine uses the supplied device type to initialize the **DeviceType** member of the **DEVICE\_OBJECT** structure.
+Every kernel-mode driver that creates a device object must specify an appropriate device type value when calling [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice). The **IoCreateDevice** routine uses the supplied device type to initialize the **DeviceType** member of the **DEVICE\_OBJECT** structure.
 
 The system defines the following device type values, listed in alphabetical order:
 

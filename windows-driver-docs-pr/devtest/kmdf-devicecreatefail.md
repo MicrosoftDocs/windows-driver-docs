@@ -16,13 +16,11 @@ ms.localizationpriority: medium
 # DeviceCreateFail rule (kmdf)
 
 
-The **DeviceCreateFail** rule specifies that EVT\_WDF\_DRIVER\_DEVICE\_ADD returns an error status when the call to [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate) fails.
+The **DeviceCreateFail** rule specifies that EVT\_WDF\_DRIVER\_DEVICE\_ADD returns an error status when the call to [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) fails.
 
 For the driver to service a device, the device object must be created successfully.
 
-|              |      |
-|--------------|------|
-| Driver model | KMDF |
+**Driver model: KMDF**
 
 How to test
 -----------
@@ -53,7 +51,7 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate)
+[**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate)
  
 
  

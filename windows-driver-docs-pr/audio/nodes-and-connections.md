@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="nodes_and_connections"></span><span id="NODES_AND_CONNECTIONS"></span>
 
 
-The filter provides a description of its topology nodes in the form of an array of node descriptors ([**PCNODE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcnode_descriptor) structures). Each descriptor in the array describes a single node and contains a GUID that specifies the node type (for example, [**KSNODETYPE\_REVERB**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-reverb)). For a list of the standard node types that are defined for audio devices, see [Audio Topology Nodes](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-topology-nodes).
+The filter provides a description of its topology nodes in the form of an array of node descriptors ([**PCNODE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/ns-portcls-pcnode_descriptor) structures). Each descriptor in the array describes a single node and contains a GUID that specifies the node type (for example, [**KSNODETYPE\_REVERB**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-reverb)). For a list of the standard node types that are defined for audio devices, see [Audio Topology Nodes](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-topology-nodes).
 
 The filter identifies each of its nodes by the node's index in the descriptor array. For example, when sending a node-specific property request to a filter or to a particular pin on a filter, a client includes the node ID (the array index) in the request in order to identify the target node.
 

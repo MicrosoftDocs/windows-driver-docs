@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_responding_to_battery_class_driver_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_CLASS_DRIVER_QUERIES_DG"></span>
 
 
-The miniclass driver must provide the following three [BatteryMini*Xxx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_battery/) routines, which report battery status:
+The miniclass driver must provide the following three [BatteryMini*Xxx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/_battery/) routines, which report battery status:
 
 [*BatteryMiniQueryTag*](https://docs.microsoft.com/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback)
 

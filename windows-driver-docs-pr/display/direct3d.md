@@ -30,7 +30,7 @@ All Direct3D drivers for Windows 2000 and later must conform to the Microsoft Di
 Driver writers who are creating Microsoft Direct3D drivers for Microsoft Windows 2000 and later should use the following header files:
 
 <span id="D3DNTHAL.H"></span>*d3dnthal.h*  
-Contains prototypes for callbacks that are implemented by the driver and definitions for driver-level structures. The [**D3DHAL\_DP2OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dhal/ne-d3dhal-_d3dhal_dp2operation) enumerated type is defined in this file. This header is included in *winddi.h*, which must be included in all Windows 2000 and later display drivers.
+Contains prototypes for callbacks that are implemented by the driver and definitions for driver-level structures. The [**D3DHAL\_DP2OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ne-d3dhal-_d3dhal_dp2operation) enumerated type is defined in this file. This header is included in *winddi.h*, which must be included in all Windows 2000 and later display drivers.
 
 <span id="D3DTYPES.H"></span>*d3dtypes.h*  
 Contains Direct3D type definitions used by both applications and drivers. Except for D3DHAL\_DP2OPERATION, all other Direct3D enumerated types are defined in this header.
@@ -50,7 +50,7 @@ All of these header files are shipped with the Windows Driver Kit (WDK). Previou
 
  
 
-Reference pages for Direct3D DDI functions, structures, and enumerations can be found in [Direct3D Driver Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), [Direct3D Driver Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index), and [Direct3D Driver Enumerations](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index).
+Reference pages for Direct3D DDI functions, structures, and enumerations can be found in [Direct3D Driver Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), [Direct3D Driver Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), and [Direct3D Driver Enumerations](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
 
 The primary reference for SDK-related aspects of the Direct3D interface is the Microsoft Windows SDK documentation. *Computer Graphics: Principles and Practice* by Foley, van Dam, Feiner, and Hughes, which was published by Addison-Wesley, is a useful general graphics reference.
 

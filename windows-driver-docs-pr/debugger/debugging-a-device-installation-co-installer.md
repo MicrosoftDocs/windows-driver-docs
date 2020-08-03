@@ -17,7 +17,7 @@ Some hardware device installation packages include DLL files known as *co-instal
 
 You cannot debug a co-installer in the same fashion as other modules. This is because of the unique way in which a co-installer is loaded, and because many installation scenarios occur automatically without providing the developer an opportunity to break into the running process.
 
-You can resolve this issue by programmatically installing the device. Attaching a debugger to the application which installs the device allows access to the co-installer itself. The simplest way to accomplish this is to install or reinstall the device using the [DevCon](https://go.microsoft.com/fwlink/p/?linkid=152915) tool that is included in the Windows Driver Kit (WDK). You can then debug the co-installer with WinDbg.
+You can resolve this issue by programmatically installing the device. Attaching a debugger to the application which installs the device allows access to the co-installer itself. The simplest way to accomplish this is to install or reinstall the device using the [DevCon](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) tool that is included in the Windows Driver Kit (WDK). You can then debug the co-installer with WinDbg.
 
 Use the following procedure to accomplish this task. This procedure assumes you have developed a working driver installation package for your device which uses a co-installer. It also assumes that you have the latest copy of the WDK. For information on developing drivers, driver installation packages, and driver installation co-installers, see the WDK documentation.
 

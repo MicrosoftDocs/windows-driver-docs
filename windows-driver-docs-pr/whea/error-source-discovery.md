@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # Error Source Discovery
 
 
-During initialization of the operating system, the Windows kernel queries the PSHED for a list of all of the [error sources](hardware-errors-and-error-sources.md) that are implemented by the hardware platform. The PSHED returns a list of [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_whea_error_source_descriptor) structures that describe each of the error sources that the hardware platform supports. The operating system uses this information to enable the necessary low-level hardware error handlers (LLHEHs) that are responsible for processing error notifications from the hardware platform.
+During initialization of the operating system, the Windows kernel queries the PSHED for a list of all of the [error sources](hardware-errors-and-error-sources.md) that are implemented by the hardware platform. The PSHED returns a list of [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structures that describe each of the error sources that the hardware platform supports. The operating system uses this information to enable the necessary low-level hardware error handlers (LLHEHs) that are responsible for processing error notifications from the hardware platform.
 
 The following is the minimum set of error sources that is discovered by the PSHED.
 

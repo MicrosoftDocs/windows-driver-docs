@@ -48,9 +48,8 @@ Causes the display to include working set owner thread stacks.
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-|       |                  |
-|-------|------------------|
-| Modes | kernel mode only |
+**Modes**: kernel mode only
+
 
  
 
