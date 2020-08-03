@@ -62,7 +62,7 @@ NTSTATUS EvtWdfDriverDeviceAdd(
 
 For information about how to initialize the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure, see [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_diagnostics_capabilities_init).
 
-To learn how to advertise the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure to NetAdapterCx, see [**NetDeviceInitSetResetDiagnosticsCapabilitites**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetdiagnosticscapabilitites).
+To learn how to advertise the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure to NetAdapterCx, see [**NetDeviceInitSetResetDiagnosticsCapabilities**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetdiagnosticscapabilities).
 
 ### Implement EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS
 
