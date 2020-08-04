@@ -86,15 +86,19 @@ You can deploy, install, load, and debug your application and the driver by foll
   2. On the host computer, open your solution in Visual Studio.
   3. In main.cpp add this line before the OpenDevice call.
 
-        `system ("pause")`
+  ```syntax
+  system ("pause")
+  ```
 
-        The line causes the application to pause when launched. This is useful in remote debugging.
-
+  The line causes the application to pause when launched. This is useful in remote debugging.
+  
   4. In pch.h, include this line:
 
-        `#include <cstdlib>`
+  ```syntax
+  #include <cstdlib>
+  ```
 
-        This include statement is required for the `system()` call in the preceding step.
+  This include statement is required for the `system()` call in the preceding step.
 
   5. In the **Solution Explorer** window, right-click USB Application1 Package, and choose **Properties**.
   6. In the **USB Application1 Package Property Pages** window, in the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown in the following screen shot.

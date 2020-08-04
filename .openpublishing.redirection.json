@@ -224,7 +224,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/driver-signing.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/dashboard-services.md",
@@ -7798,7 +7798,7 @@
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/develop/attestation-signing-a-kernel-driver-for-public-release.md",
-                             "redirect_url":  "https://msdn.microsoft.com/library/windows/hardware/mt786448",
+                             "redirect_url":  "https://docs.microsoft.com/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release",
                              "redirect_document_id":  false
                          },
                          {
