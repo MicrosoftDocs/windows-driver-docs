@@ -70,7 +70,7 @@ The extensibility feature outlined previously provides benefits to help client d
 2. There is no pointer dereferencing, only offset arithmetic because extensions are in-line, which not only saves space but also helps with CPU cache hits. 
 3. Extensions are allocated at queue creation time, so drivers don't have to allocate and deallocate memory in the active data path or deal with lookaside lists of context blocks.
 
-## Using packet extensions 
+## Using packet extensions
 
 > [!IMPORTANT]
 > Currently, client drivers are limited to [pre-existing packet extensions defined by the operating system](#predefined-packet-extension-constants-and-helper-methods).
@@ -83,7 +83,7 @@ For a code example of advertising hardware offloads for checksum and LSO, see [N
 
 ### Querying packet extension offsets for datapath queues
 
-After registering packet extensions by declaring your hardware offload support, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback function and store the offset information in your queue context. 
+After registering packet extensions by declaring your hardware offload support, you'll need the extension offsets to access each one as you process your packets. To reduce calls out of your driver and improve performance, you can query the offsets for your extensions during the *EvtNetAdapterCreateTx(Rx)Queue* callback function and store the offset information in your queue context.
 
 For an example of querying extension offsets and storing them in the queue context, see [Transmit and receive queues](transmit-and-receive-queues.md).
 
@@ -114,7 +114,7 @@ Once you have stored extension offsets in your queue context, you can use them a
 
 ## Predefined packet extension constants and helper methods
 
-NetAdapterCx provides definitions for known packet extensions constants.
+NetAdapterCx provides definitions for known packet extension constants.
 
 | Constant | Definition |
 | --- | --- |
@@ -130,3 +130,28 @@ Additionally, NetAdapterCx provides three helper methods that act as wrappers ar
 | [**NetExtensionGetPacketChecksum**](https://docs.microsoft.com/windows-hardware/drivers/ddi/checksum/nf-checksum-netextensiongetpacketchecksum) | [**NET_PACKET_CHECKSUM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/checksumtypes/ns-checksumtypes-_net_packet_checksum) |
 | [**NetExtensionGetLso**](https://docs.microsoft.com/windows-hardware/drivers/ddi/lso/nf-lso-netextensiongetpacketlso) | [**NET_PACKET_LSO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/lsotypes/ns-lsotypes-_net_packet_lso)
 | [**NetExtensionGetPacketRsc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rsc/nf-rsc-netextensiongetpacketrsc) | [**NET_PACKET_RSC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rsctypes/ns-rsctypes-_net_packet_rsc) |
+
+## Using fragment extensions
+
+> [!IMPORTANT]
+> Currently, client drivers are limited to pre-existing fragment extensions defined by the operating system.
+
+### Registering fragment extensions
+
+NetAdapterCx automatically registers most fragment extensions by interpreting a driver's expressed capabilities. For example, if the driver expresses it supports DMA the framework will automatically add the NET_FRAGMENT_LOGICAL_ADDRESS extension that is necessary for DMA programming.
+
+### Querying fragment extension offsets for datapath queues
+
+To access fragment extensions, you can follow the same process for accessing packet extensions outlined in [Querying packet extension offsets for datapath queues](#querying-packet-extension-offsets-for-datapath-queues).
+
+## Predefined fragment extension constants
+
+NetAdapterCx provides definitions for known fragment extension constants.
+
+| Constant | Definition |
+| --- | --- |
+| <ul><li>NET_FRAGMENT_EXTENSION_DATA_BUFFER_NAME</li><li>NET_FRAGMENT_EXTENSION_DATA_BUFFER_VERSION_1</li><li>NET_FRAGMENT_EXTENSION_DATA_BUFFER_VERSION_1_SIZE</li></ul> | The name, version, and size of the data buffer fragment extension. |
+| <ul><li>NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_NAME</li><li>NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_VERSION_1</li><li>NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_VERSION_1_SIZE</li></ul> | The name, version, and size of the logical address fragment extension. |
+| <ul><li>NET_FRAGMENT_EXTENSION_MDL_NAME</li><li>NET_FRAGMENT_EXTENSION_MDL_VERSION_1</li><li>NET_FRAGMENT_EXTENSION_MDL_VERSION_1_SIZE</li></ul> | The name, version, and size of the MDL fragment extension. |
+| <ul><li>NET_FRAGMENT_EXTENSION_RETURN_CONTEXT_NAME</li><li>NET_FRAGMENT_EXTENSION_RETURN_CONTEXT_VERSION_1</li><li>NET_FRAGMENT_EXTENSION_RETURN_CONTEXT_VERSION_1_SIZE</li></ul> | The name, version, and size of the return context fragment extension. |
+| <ul><li>NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_NAME</li><li>NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_VERSION_1</li><li>NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_VERSION_1_SIZE</li></ul> | The name, version, and size of the virtual address fragment extension. |
