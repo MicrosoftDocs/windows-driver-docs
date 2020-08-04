@@ -18,6 +18,8 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 
 [CFU engineering guide](cfu-engineering-guide.md)
 
+[CFU virtual HID device firmware update](cfu-virtual-hid-device-firmware-update.md)
+
 [CFU inbox HIDCFU driver INF sample](cfu-inbox-hidcfu-driver-inf-sample.md)
 
 [CFU host driver sample](cfu-host-driver.md)

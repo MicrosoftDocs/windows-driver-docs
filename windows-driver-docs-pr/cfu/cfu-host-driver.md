@@ -26,7 +26,7 @@ The CFU driver sample sends firmware image file(s) to a device in need of an upd
 
 The CFU driver sample is implemented using the [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/overview-of-the-umdf) 2.0 model and based on the the [Microsoft Devices Driver Module Framework (DMF)](https://blogs.windows.com/buildingapps/2018/08/15/introducing-driver-module-framework/).
 
-As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s). For more information, see [Customize the Component Firmware Update (CFU) driver](customize-the-cfu-driver.md).
+As a firmware developer, you can customize the driver for the purposes of adopting the CFU model to enable firmware updates for your component(s). For more information, see [Customize the Component Firmware Update (CFU) driver](customize-cfu-driver.md).
 
 ## File manifest
 
