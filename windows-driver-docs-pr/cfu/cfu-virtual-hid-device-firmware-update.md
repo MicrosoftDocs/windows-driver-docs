@@ -28,13 +28,28 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 1. Build the CfuVirtualHid device solution in Visual Studio
 
-`C:\<*local_repo*>\CFU\Host\CFUFirmwareSimulation\CfuVirtualHid.sln'
+    1. Navigate to the location of the CfuVirtualHid.sln file omn your development system. For example:
+
+        `C:\<your_repo_folder>\CFU\Host\CFUFirmwareSimulation\CfuVirtualHid.sln`
+
+    1. Open the CfuVirtualHid.sln file in Visual Studio.
+
+    1. TBD
 
 1. Install the CfuVirtualHid device and driver
 
+    1. Navigate to the location of the cfuvirtualhid.inf file omn your development system. For example:
+
+        `C:\<your_repo_folder>\CFU\Host\CFUFirmwareSimulation\x64\Debug\CfuVirtualHid`
+
     1. At an administrative command prompt, run the following command:
 
-        `devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
+        `C:\Tools\devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
+
+        `C:\Program Files (x86)\Windows Kits\10\Tools\x64\devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
+
+            > [!NOTE]
+            > You may need to add the devcon.exe folder to your path.
 
 1. TBD
 
