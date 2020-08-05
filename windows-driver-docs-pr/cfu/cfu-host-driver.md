@@ -101,4 +101,4 @@ You can change the default configuration to build for your version of the operat
 
 ## See also
 
-[Customize the Component Firmware Update (CFU) driver](customize-the-cfu-driver.md)
+[Customize the Component Firmware Update (CFU) driver](customize-cfu-driver.md)

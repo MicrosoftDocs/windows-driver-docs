@@ -24,7 +24,7 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 
 [CFU host driver sample](cfu-host-driver.md)
 
-[Customize the CFU driver](customize-the-cfu-driver.md)
+[Customize the CFU driver](customize-cfu-driver.md)
 
 [CFU standalone tool sample](cfu-standalone-tool-sample.md)
 
