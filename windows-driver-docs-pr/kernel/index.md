@@ -22,7 +22,7 @@ This section contains conceptual information that describes and helps you build 
   - [An overview of Windows Components](overview-of-windows-components.md)
   - [Design Goals for Kernel-Mode Drivers](design-goals-for-kernel-mode-drivers.md)
   - A catalogue of [Sample Kernel-Mode Drivers](sample-kernel-mode-drivers.md)
-  - [Kernel Driver Development Best Practices](surface-team-driver-development-best-practices), as compiled by the Microsoft Surface team
+  - [Kernel Driver Development Best Practices](surface-team-driver-development-best-practices.md), as compiled by the Microsoft Surface team
 
 - **Kernel-Mode Components** describes the primary kernel-mode managers and components of the Windows operating system.
 
@@ -30,13 +30,13 @@ This section contains conceptual information that describes and helps you build 
   |----|----|
   |**Managers**||
   |[Windows Kernel-Mode Object Manager](windows-kernel-mode-object-manager.md)|Manages *objects*: files, devices, synchronization mechanisms, registry keys, and so on.|
-  |[Windows Kernel-Mode Memory Manager](windows-kernel-mode-memory-manager)|Manages physical memory for the operating system.|
+  |[Windows Kernel-Mode Memory Manager](windows-kernel-mode-memory-manager.md)|Manages physical memory for the operating system.|
   |[Windows Kernel-Mode Process and Thread Manager](windows-kernel-mode-process-and-thread-manager.md)|Handles the execution of all threads in a process.|
   |[Windows Kernel-Mode I/O Manager](windows-kernel-mode-i-o-manager.md)|Manages the communication between applications and the interfaces provided by device drivers.|
   |[Windows Kernel-Mode Plug and Play Manager](windows-kernel-mode-plug-and-play-manager.md)|A subsystem of the I/O manager, the Plug and Play (PnP) Manager enables a PC to recognize when a device is added to the system.|
   |[Windows Kernel-Mode Power Manager](windows-kernel-mode-power-manager.md)|Manages the orderly change in power status for all devices that support power state changes.|
   |[Windows Kernel-Mode Configuration Manager](windows-kernel-mode-configuration-manager.md)|Manages the registry, such as monitoring changes in the registry or registering callbacks on specific registry data.|
-  |[Windows Kernel-Mode Kernel Transaction Manager](windows-kernel-mode-kernel-transaction-manager)|Implements transaction processing in kernel mode.|
+  |[Windows Kernel-Mode Kernel Transaction Manager](windows-kernel-mode-kernel-transaction-manager.md)|Implements transaction processing in kernel mode.|
   |[Windows Kernel-Mode Security Reference Monitor](windows-kernel-mode-security-reference-monitor.md)|Provides routines for your driver to work with access control.|
   |**Libraries**||
   |[Windows Kernel-Mode Kernel Library](windows-kernel-mode-kernel-library.md)|Implements the core functionality that everything else in the operating system depends upon. The Microsoft Windows kernel provides basic low-level operations such as scheduling threads or routing hardware interrupts.|
@@ -50,7 +50,7 @@ This section contains conceptual information that describes and helps you build 
 
 - [**Writing WDM Drivers**](writing-wdm-drivers.md) and [Introduction to WDM](introduction-to-wdm.md) provide information needed to write drivers using the Windows Driver Model (WDM).
 
-- [**Device Objects**](introduction-to-device-objects) and the other topics in **Device Objects and Device Stacks** describe how the operating system represents devices by device objects.
+- [**Device Objects**](introduction-to-device-objects.md) and the other topics in **Device Objects and Device Stacks** describe how the operating system represents devices by device objects.
 
 - [**Memory Management for Windows Drivers**](managing-memory-for-drivers.md) illustrates how kernel-mode drivers allocate memory for purposes such as storing internal data, buffering data during I/O operations, and sharing memory with other kernel-mode and user-mode components.
 
