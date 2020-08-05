@@ -18,11 +18,11 @@ This section includes general concepts to help you understand kernel-mode progra
 
 This section contains conceptual information that describes and helps you build kernel-mode drivers.
 
-- An  **Overview** containing an:
-  - [Overview of Windows Components](overview-of-windows-components.md)
+- An  **Overview** containing:
+  - [An overview of Windows Components](overview-of-windows-components.md)
   - [Design Goals for Kernel-Mode Drivers](design-goals-for-kernel-mode-drivers.md)
   - A catalogue of [Sample Kernel-Mode Drivers](sample-kernel-mode-drivers.md)
-  - [Kernel Driver Development Best Practices](surface-team-driver-development-best-practices), as practiced by the Microsoft Surface team
+  - [Kernel Driver Development Best Practices](surface-team-driver-development-best-practices), as compiled by the Microsoft Surface team
 
 - **Kernel-Mode Components** describes the primary kernel-mode managers and components of the Windows operating system.
 
