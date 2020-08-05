@@ -48,8 +48,8 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
         `C:\Program Files (x86)\Windows Kits\10\Tools\x64\devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
 
-            > [!NOTE]
-            > You may need to add the devcon.exe folder to your path.
+        > [!NOTE]
+        > You may need to add the devcon.exe folder location to your path.
 
 1. TBD
 
