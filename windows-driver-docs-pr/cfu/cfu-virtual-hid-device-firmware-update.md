@@ -18,13 +18,13 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 1. Clone the Microsoft CFU repository into a local repository directory
 
-`git clone https://github.com/microsoft/CFU.git`
+    `git clone https://github.com/microsoft/CFU.git`
 
 1. In your local CFU repository directory, at a command prompt, run the following git commands to get the Driver Module Framework (DMF) submodule required to build the sample:
 
-`git submodule init`
+    `git submodule init`
 
-`git submodule update`
+    `git submodule update`
 
 1. Build the CfuVirtualHid device solution in Visual Studio
 
@@ -34,7 +34,7 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
     1. At an administrative command prompt, run the following command:
 
-    `devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
+        `devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
 
 1. TBD
 
