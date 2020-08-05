@@ -30,7 +30,7 @@ Use the following steps to develop new counter data providers:
 
 For an example of a kernel-mode PCW provider, see the [Kernel Counter Sample (Kcs)](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/perfcounters/kcs) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
-# Related topics
+## Related topics
 
 [About Kernel Mode Performance Counters](about-kernel-mode-performance-counters.md)
 

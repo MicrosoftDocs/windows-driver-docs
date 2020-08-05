@@ -20,7 +20,7 @@ Performance counter values can be published in three ways.
 
 Performance Counters for Windows (PCW) keeps track of countersets provided by kernel-mode components. It routes consumer data collection requests to the appropriate kernel-mode component and returns the requested data to the user-mode consumer.
 
-# Related topics
+## Related topics
 
 [Using Kernel Mode Performance Counters](using-kernel-mode-performance-counters.md)
 
