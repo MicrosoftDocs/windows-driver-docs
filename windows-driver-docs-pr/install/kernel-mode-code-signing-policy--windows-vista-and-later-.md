@@ -74,7 +74,7 @@ For info about signing an ELAM driver, see [Early launch antimalware](https://do
 In some cases, you may want to distribute a driver internally within a company rather than via Windows Update.  To do this without requiring that computers running it are in test mode, use the following procedure:
 
 1. [Register for the Hardware Dev Center](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).
-2. Review the [Hardware Dev Center FAQ]((https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-dashboard-faq)) and sign appropriate agreements.
+2. Review the [Hardware Dev Center FAQ](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-dashboard-faq) and sign appropriate agreements.
 3. Upload codesign certificates.
 4. Sign drivers locally using a non-EV codesign certificate.
 5. Package drivers in a CAB and sign the CAB using the above codesign certificate.
