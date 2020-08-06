@@ -15,6 +15,8 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_mirror_driver_inf_file_gg"></span><span id="DDK_MIRROR_DRIVER_INF_FILE_GG"></span>
 
+>
+>
 > [!NOTE] Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
 Use the *Mirror.inf* sample mirror driver INF file as a template for constructing your own mirror driver INF file.
