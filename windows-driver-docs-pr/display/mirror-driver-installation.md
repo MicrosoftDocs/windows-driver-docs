@@ -11,10 +11,9 @@ ms.localizationpriority: medium
 
 # Mirror Driver Installation
 
-
-## <span id="ddk_mirror_driver_installation_gg"></span><span id="DDK_MIRROR_DRIVER_INSTALLATION_GG"></span>
-
-> [!NOTE] Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
+> [!NOTE]
+>
+> Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
 The system installs a mirror driver in response to a Win32 **ChangeDisplaySettings** or **ChangeDisplaySettingsEx** call. You should implement a user-mode service to make one of these calls to install your mirror driver and maintain its settings. Use this application to:
 
