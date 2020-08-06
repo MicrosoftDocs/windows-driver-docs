@@ -12,7 +12,9 @@ ms.custom: seodec18
 
 # Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
 
-> [!NOTE] Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
+> [!NOTE]
+>
+> Starting with Windows 8, mirror drivers will not install on the system. For more information, see [Mirror Drivers](mirror-drivers.md).
 
 
 *Mirror driver* support for video miniport drivers is provided by Windows 2000 and later, so a miniport driver must not have any special code to attempt such support. See [Mirror Drivers](mirror-drivers.md) for more information about display drivers in mirroring systems.
