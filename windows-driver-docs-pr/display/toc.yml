@@ -268,22 +268,7 @@
       - name: "Threading and Synchronization Second Level"
         href: threading-and-synchronization-second-level.md
       - name: "Threading and Synchronization First Level"
-# Auto-expanded node
-        items: 
-        - name: "Threading and Synchronization First Level"
-          href: threading-and-synchronization-first-level.md
-        - name: "Pointer Class"
-          href: pointer-class.md
-        - name: "GPU Scheduler Class"
-          href: gpu-scheduler-class.md
-        - name: "Swizzling Range Class"
-          href: swizzling-range-class.md
-        - name: "Overlay Class"
-          href: overlay-class.md
-        - name: "Child I/O Class"
-          href: child-i-o-class.md
-        - name: "Display Class"
-          href: display-class.md
+        href: threading-and-synchronization-first-level.md
       - name: "Threading and Synchronization Zero Level"
         href: threading-and-synchronization-zero-level.md
       - name: "Thread Synchronization and TDR"
@@ -532,12 +517,12 @@
             href: casting-ability-of-xr-formats.md
         - name: "XR_BIAS conversion rules"
           items:
-        - name: "XR_BIAS color channel conversion rules"
-          href: xr-bias-color-channel-conversion-rules.md
-        - name: "XR_BIAS to Float Conversion Rules"
-          href: xr-bias-to-float-conversion-rules.md
-        - name: "Float to XR_BIAS Conversion Rules"
-          href: float-to-xr-bias-conversion-rules.md
+          - name: "XR_BIAS color channel conversion rules"
+            href: xr-bias-color-channel-conversion-rules.md
+          - name: "XR_BIAS to Float Conversion Rules"
+            href: xr-bias-to-float-conversion-rules.md
+          - name: "Float to XR_BIAS Conversion Rules"
+            href: float-to-xr-bias-conversion-rules.md
         - name: "Conversion from BGR8888 to XR_BIAS"
           href: conversion-from-bgr8888-to-xr-bias.md
         - name: "Interpretation of X Channel"
