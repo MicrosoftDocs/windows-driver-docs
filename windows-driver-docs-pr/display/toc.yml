@@ -530,14 +530,18 @@
             href: dxgi-format-r10g10b10-xr-bias-a2-unorm.md
           - name: "Casting Ability of XR Formats"
             href: casting-ability-of-xr-formats.md
-          - name: "XR_BIAS to Float Conversion Rules"
-            href: xr-bias-to-float-conversion-rules.md
-          - name: "Float to XR_BIAS Conversion Rules"
-            href: float-to-xr-bias-conversion-rules.md
-          - name: "Conversion from BGR8888 to XR_BIAS"
-            href: conversion-from-bgr8888-to-xr-bias.md
-          - name: "Interpretation of X Channel"
-            href: interpretation-of-x-channel.md
+        - name: "XR_BIAS conversion rules"
+          items:
+        - name: "XR_BIAS color channel conversion rules"
+          href: xr-bias-color-channel-conversion-rules.md
+        - name: "XR_BIAS to Float Conversion Rules"
+          href: xr-bias-to-float-conversion-rules.md
+        - name: "Float to XR_BIAS Conversion Rules"
+          href: float-to-xr-bias-conversion-rules.md
+        - name: "Conversion from BGR8888 to XR_BIAS"
+          href: conversion-from-bgr8888-to-xr-bias.md
+        - name: "Interpretation of X Channel"
+          href: interpretation-of-x-channel.md
         - name: "Fully-Typed Back Buffers Casting"
           href: fully-typed-back-buffers-casting.md
         - name: "BGRA Scan-Out Support"
@@ -773,6 +777,10 @@
       href: supplying-fence-identifiers.md
     - name: "Handling Resource Creation and Destruction"
       href: handling-resource-creation-and-destruction.md
+    - name: "Supporting brightness controls for external display connectors"
+      href: supporting-brightness-controls-for-external-display-connectors.md
+    - name: "Container support for non-DX APIs"
+      href: container-non-dx.md
     - name: "Supporting Video Capture and Other Child Devices"
       href: supporting-video-capture-and-other-child-devices.md
     - name: "Supporting Rotation"
