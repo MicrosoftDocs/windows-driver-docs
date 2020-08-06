@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 This topic provides a walkthrough of updating firmware for the Component Firmware Update (CFU) virtual HID device sample.
 
-## Build and install Install a virtual CFU virtual HID device
+## Build and install the CFU virtual HID device sample
 
 1. Install Visual Studio 2019 and the Windows Driver Kit (WDK) as outlined at [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
 
@@ -28,25 +28,23 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 1. Build the CfuVirtualHid device solution in Visual Studio
 
-    1. Navigate to the location of the CfuVirtualHid.sln file omn your development system. For example:
+    1. Navigate to the location of the CfuVirtualHid.sln file on your development system. For example:
 
         `C:\<your_repo_folder>\CFU\Host\CFUFirmwareSimulation\CfuVirtualHid.sln`
 
     1. Open the CfuVirtualHid.sln file in Visual Studio.
 
-    1. TBD
+    1. From the Build menu, TBD
 
 1. Install the CfuVirtualHid device and driver
 
-    1. Navigate to the location of the cfuvirtualhid.inf file omn your development system. For example:
+    1. Navigate to the location of the cfuvirtualhid.inf file on your development system. For example:
 
         `C:\<your_repo_folder>\CFU\Host\CFUFirmwareSimulation\x64\Debug\CfuVirtualHid`
 
     1. At an administrative command prompt, run the following command:
 
-        `C:\Tools\devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
-
-        `C:\Program Files (x86)\Windows Kits\10\Tools\x64\devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
+        `devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
 
         > [!NOTE]
         > You may need to add the devcon.exe folder location to your path.
@@ -59,7 +57,7 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 1. TBD
 
-## Install a firmware update for thr CFU virtual HID device
+## Install a firmware update for the CFU virtual HID device
 
 TBD
 
