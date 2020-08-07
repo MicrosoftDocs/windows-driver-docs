@@ -15,6 +15,8 @@ ms.localizationpriority: medium
 
 # Wireless displays (Miracast)
 
+> [!NOTE]
+> This document describes how drivers can implement a custom Miracast stack in Windows 8.1. As of Windows 10, the OS ships with a built-in Miracast stack that can work on any GPU and it is no longer recommended that drivers implement a custom Miracast stack. This documentation is therefore deprecated and Microsoft may remove support for custom Miracast stacks in a future version of Windows.
 
 Wireless (Miracast) displays can optionally be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability is new starting with Windows 8.1.
 

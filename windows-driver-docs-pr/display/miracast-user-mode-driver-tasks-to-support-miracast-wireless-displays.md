@@ -9,6 +9,8 @@ ms.custom: seodec18
 
 # <span id="display.miracast_user-mode_driver_tasks_to_support_miracast_wireless_displays"></span>Miracast user-mode driver tasks to support Miracast wireless displays
 
+> [!NOTE]
+> As of Windows 10, the OS contains a native implementation of Miracast wireless displays. Drivers should no longer implement a custom Miracast display component. Support for custom Miracast implementations may be removed in a future version of Windows.
 
 To enable Miracast wireless displays, you need to create a standalone, unique DLL that implements a Miracast user-mode driver. This driver will be loaded in a dedicated session 0 process. Add the name of the driver in device software settings in the INF file as **MiracastDriverName**:
 
