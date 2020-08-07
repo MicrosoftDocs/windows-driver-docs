@@ -34,7 +34,9 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
     1. Open the CfuVirtualHid.sln file in Visual Studio.
 
-    1. From the Build menu, TBD
+    1. From the **Build** menu, select **Build Solution**. You should see the following output:
+
+        ![CfuVirtualHid build success](images/cfuvirtualhid-build-succeeded.png)
 
 1. Install the CfuVirtualHid device and driver
 
