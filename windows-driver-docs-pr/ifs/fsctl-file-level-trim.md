@@ -28,19 +28,19 @@ To perform this operation, call [**FltFsControlFile**](https://docs.microsoft.co
 [**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object specifying the volume to be dismounted. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file object pointer to the file which has the data to be trimmed. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle--in-"></a>*FileHandle \[in\]*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. The file handle of the volume to be dismounted. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. The file handle of the file which has the data to be trimmed. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode--in-"></a>*FsControlCode \[in\]*  
-Control code for the operation. Use **FSCTL\_REMOVE\_OVERLAY** for this operation.
+Control code for the operation. Use **FSCTL\_FILE\_LEVEL\_TRIM** for this operation.
 
 <a href="" id="inputbuffer"></a>*InputBuffer*  
-A pointer to the input buffer, which must contain a **FSCTL\_FILE\_LEVEL\_TRIM** structure.
+A pointer to a [**FILE\_LEVEL\_TRIM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure which contains an array of trim ranges for the file.
 
 <a href="" id="inputbufferlength--in-"></a>*InputBufferLength \[in\]*  
-A pointer to a [**FILE\_LEVEL\_TRIM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure which contains an array of trim ranges for the file.
+Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. This value must be at least sizeof([**FILE\_LEVEL\_TRIM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim)).
 
 <a href="" id="outputbuffer--out-"></a>*OutputBuffer \[out\]*  
 A pointer to an optional [**FILE\_LEVEL\_TRIM\_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_level_trim) structure which receives the result of the trim operation.
