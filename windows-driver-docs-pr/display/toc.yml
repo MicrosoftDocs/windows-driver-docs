@@ -7,16 +7,19 @@
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
-  - name: "What's new for Windows 10 display and graphics drivers"
-    href: what-s-new-for-windows-10-display-and-graphics-drivers.md
-  - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
-    href: what-s-new-for-prior-wddm-2-x-versions.md
-  - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
-    href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
-  - name: "What's new for Windows 8 display drivers (WDDM 1.2)"
-    href: what-s-new-for-windows-8-display-drivers.md
-  - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
-    href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "What's new for Windows display and graphics drivers"
+# Auto-expanded node
+    items:
+    - name: "What's new for Windows 10 display and graphics drivers"
+      href: what-s-new-for-windows-10-display-and-graphics-drivers.md
+    - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
+      href: what-s-new-for-prior-wddm-2-x-versions.md
+    - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
+      href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
+    - name: "What's new for Windows 8 display drivers (WDDM 1.2)"
+      href: what-s-new-for-windows-8-display-drivers.md
+    - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
+      href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
   - name: "WDDM 2.1 Features"
     href: wddm-2-1-features.md
   - name: "WDDM 2.0 and Windows 10"
@@ -268,22 +271,7 @@
       - name: "Threading and Synchronization Second Level"
         href: threading-and-synchronization-second-level.md
       - name: "Threading and Synchronization First Level"
-# Auto-expanded node
-        items: 
-        - name: "Threading and Synchronization First Level"
-          href: threading-and-synchronization-first-level.md
-        - name: "Pointer Class"
-          href: pointer-class.md
-        - name: "GPU Scheduler Class"
-          href: gpu-scheduler-class.md
-        - name: "Swizzling Range Class"
-          href: swizzling-range-class.md
-        - name: "Overlay Class"
-          href: overlay-class.md
-        - name: "Child I/O Class"
-          href: child-i-o-class.md
-        - name: "Display Class"
-          href: display-class.md
+        href: threading-and-synchronization-first-level.md
       - name: "Threading and Synchronization Zero Level"
         href: threading-and-synchronization-zero-level.md
       - name: "Thread Synchronization and TDR"
@@ -530,14 +518,18 @@
             href: dxgi-format-r10g10b10-xr-bias-a2-unorm.md
           - name: "Casting Ability of XR Formats"
             href: casting-ability-of-xr-formats.md
+        - name: "XR_BIAS conversion rules"
+          items:
+          - name: "XR_BIAS color channel conversion rules"
+            href: xr-bias-color-channel-conversion-rules.md
           - name: "XR_BIAS to Float Conversion Rules"
             href: xr-bias-to-float-conversion-rules.md
           - name: "Float to XR_BIAS Conversion Rules"
             href: float-to-xr-bias-conversion-rules.md
-          - name: "Conversion from BGR8888 to XR_BIAS"
-            href: conversion-from-bgr8888-to-xr-bias.md
-          - name: "Interpretation of X Channel"
-            href: interpretation-of-x-channel.md
+        - name: "Conversion from BGR8888 to XR_BIAS"
+          href: conversion-from-bgr8888-to-xr-bias.md
+        - name: "Interpretation of X Channel"
+          href: interpretation-of-x-channel.md
         - name: "Fully-Typed Back Buffers Casting"
           href: fully-typed-back-buffers-casting.md
         - name: "BGRA Scan-Out Support"
@@ -773,6 +765,10 @@
       href: supplying-fence-identifiers.md
     - name: "Handling Resource Creation and Destruction"
       href: handling-resource-creation-and-destruction.md
+    - name: "Supporting brightness controls for external display connectors"
+      href: supporting-brightness-controls-for-external-display-connectors.md
+    - name: "Container support for non-DX APIs"
+      href: container-non-dx.md
     - name: "Supporting Video Capture and Other Child Devices"
       href: supporting-video-capture-and-other-child-devices.md
     - name: "Supporting Rotation"
@@ -803,8 +799,6 @@
       href: supporting-brightness-controls-on-integrated-display-panels.md
     - name: "Supporting Display Output and ACPI Events"
       href: supporting-display-output.md
-    - name: "Marking Sources as Removable"
-      href: marking-sources-as-removable.md
     - name: "Stereoscopic 3D"
       href: stereoscopic-3d.md
     - name: "Supporting Output Protection Manager"

@@ -17,9 +17,10 @@ ms.localizationpriority: medium
 ## <span id="ddk_windows_2000_display_driver_model_gg"></span><span id="DDK_WINDOWS_2000_DISPLAY_DRIVER_MODEL_GG"></span>
 
 
-Display adapter drivers that run on Windows Vista can adhere to one of two models: the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) or the Windows 2000 display driver model (XDDM). Drivers that adhere to Windows Display Driver Model (WDDM) run only on Windows Vista and later. Drivers that adhere to XDDM run on Windows 2000 and later operating systems (including Windows Vista and Windows 7).
+Display adapter drivers that run on Windows Vista can adhere to one of two models: the [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md) or the Windows 2000 display driver model (XDDM). Drivers that adhere to Windows Display Driver Model (WDDM) run only on Windows Vista and later. Drivers that adhere to XDDM run on Windows 2000 through Windows 7).
 
-**Note**  XDDM and VGA drivers will not compile on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver.
+> [!NOTE]
+> XDDM and VGA drivers will not compile or run on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver. This documentation is preserved for historical purposes.
 
  
 
