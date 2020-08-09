@@ -28,7 +28,7 @@ Access Bookmarks via the Timeline window available in *View > Timeline*. When yo
 
 ![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
 
-You can right click the bookmark to travel to that position, rename or delete the bookmark.
+You can select and hold (or right-click) the bookmark to travel to that position, rename or delete the bookmark.
 
 ![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
 
@@ -119,7 +119,7 @@ You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode
 
 **Accent color customization** - A lot of scenarios need several instances of WinDbg open, and moving back and forth between them can be confusing and take some time to figure out which one is the “right” one. We’ve added the ability to change the blue accent color to help visually distinguish sessions and make swapping between them easier.
 
-Just click the **View** ribbon and select an option for **Accent color** in the last section. When future sessions are launched from recent targets, the accent color will be persisted as part of the target’s workspace.
+Just select the **View** ribbon and select an option for **Accent color** in the last section. When future sessions are launched from recent targets, the accent color will be persisted as part of the target’s workspace.
 
 **Source tokenization improvements** - The source window now has basic support for tokenizing Rust source files and C++ SEH __try/__except/__finally/__leave.
 
@@ -204,7 +204,7 @@ This version includes these updates.
 **New disassembly window** - The disassembly window now includes:
 - Scrolling up or down will continuously load more disassembly whenever possible.
 - Syntax highlighting for numbers, code addresses, and opcodes.
-- Clicking a code symbol will jump the disassembly window to that location.
+- Selecting a code symbol will jump the disassembly window to that location.
 - Hovering over numbers will show a tooltip that converts that number to other bases.
 - Headers signifying the start of a function.
 
@@ -248,7 +248,7 @@ Minor changes and bug fixes:
 
 This version includes these updates.
 
-**Text Highlighting** - You can now highlight all instances of selected text directly in the debugger. To use this feature, just select some text in the command window and then click “Highlight” in the command ribbon or hit CTRL+ALT+H. Using one of those on already highlighted text will remove the highlighting.
+**Text Highlighting** - You can now highlight all instances of selected text directly in the debugger. To use this feature, just select some text in the command window and then select “Highlight” in the command ribbon or hit CTRL+ALT+H. Using one of those on already highlighted text will remove the highlighting.
 
 If you prefer using commands, you can use the “$hl” command:
 
@@ -287,7 +287,7 @@ Minor changes and bug fixes:
 - The headers in the locals, watch, and model windows now don’t disappear when scrolling down
 - When ALT+Tabbing back to WinDbg Preview, the command window will properly preserve cursor location
 - Added CTRL+ALT+V shortcut for toggling verbose mode
-- You can now disable auto-scrolling of the command window by right-clicking the command window tab and choosing “turn off auto scrolling”
+- You can now disable auto-scrolling of the command window by selecting and holding (or right-clicking) the command window tab and choosing “turn off auto scrolling”
 - You can now debug child processes through the launch executable advanced page.
 
 
