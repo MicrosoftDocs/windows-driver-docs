@@ -224,7 +224,7 @@ In the command entry pane, use the up arrow and down arrow keys to scroll throug
 
 **Enable Debugger Markup Language (DML) with .prefer\_dml**
 
-Some debug commands display text using Debugger Markup Language that you can click on to quickly gather more information.
+Some debug commands display text using Debugger Markup Language that you can select to quickly gather more information.
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
 2. Type the following command to enable DML in the Debugger Command window.
@@ -311,7 +311,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     <https://github.com/Microsoft/Windows-driver-samples/archive/master.zip>
 
-    b. Right-click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\WDK\_Samples\\* as the new folder into which the files are extracted.
+    b. Select and hold (or right-click)  *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\WDK\_Samples\\* as the new folder into which the files are extracted.
 
     c. After the files are extracted, navigate to the following subfolder.
 
@@ -319,7 +319,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
 2.  **Open the driver solution in Visual Studio**
 
-    In Visual Studio, click **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\WDK\_Samples\\Sysvad*). Double-click the *Syvad* solution file.
+    In Visual Studio, select **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\WDK\_Samples\\Sysvad*). Double-click the *Syvad* solution file.
 
     In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has a number of projects and what is included in the sample changes from time to time. 
         
@@ -327,7 +327,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
 3.  **Set the sample's configuration and platform**
 
-    In Solution Explorer, right-click **Solution 'sysvad' (7 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the four projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
+    In Solution Explorer, select and hold (or right-click) **Solution 'sysvad' (7 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the four projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
 
     **Note**  This lab assumes that 64 bit Windows is being used. If you are using 32 bit Windows, build the driver for 32 bit.
 
@@ -339,7 +339,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
 5.  **Build the sample using Visual Studio**
 
-    In Visual Studio, click **Build** &gt; **Build Solution**.
+    In Visual Studio, select **Build** &gt; **Build Solution**.
 
     The build windows should display a message indicating that the build for all six projects succeeded.
 
@@ -392,11 +392,11 @@ To install the driver on the target system, perform the following steps.
 
     2. In **Update and Security**, select **Recovery**.
 
-    3. Under **Advanced startup**, click **Restart Now**.
+    3. Under **Advanced startup**, select **Restart Now**.
 
     4. When the PC restarts, select **Troubleshoot**.
 
-    5. Then select **Advanced options**, **Startup Settings** and then click **Restart**.
+    5. Then select **Advanced options**, **Startup Settings** and then select **Restart**.
 
     6. Select Disable driver signature enforcement by pressing the **F7** key.
 
@@ -411,7 +411,7 @@ To install the driver on the target system, perform the following steps.
 
     The INF file required for installing this driver is *TabletAudioSample.inf*. On the target computer, open a Command Prompt window as Administrator. Navigate to your driver package folder, right-click the TabletAudioSample.inf file, and then select **Install**.
 
-    A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
+    A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
     ![windows security warning - windows can't verify the publisher](images/debuglab-image-install-security-warning.png)
 
@@ -431,7 +431,7 @@ To install the driver on the target system, perform the following steps.
 
     In the device tree, locate *Virtual Audio Device (WDM) - Tablet Sample* in the Audio Device node. This is typically under the **Sound, video and game controllers** node. Confirm that it is installed and active.
 
-    Highlight the driver for the actual hardware on the PC in Device Manager. Then right-click the driver and click disable to disable the driver.
+    Highlight the driver for the actual hardware on the PC in Device Manager. Then select and hold (or right-click) the driver and select disable to disable the driver.
 
     Confirm in Device Manager that audio hardware driver, displays the a down arrow, indicating that it is disabled.
 
@@ -443,7 +443,7 @@ To install the driver on the target system, perform the following steps.
 
 1. On the target computer, in a Command Prompt window, enter **devmgmt** to open Device Manager. In Device Manager, on the **View** menu, select **Devices by type**. In the device tree, locate *Virtual Audio Device (WDM) - Tablet Sample*.
 
-2. Open Control Panel and navigate to **Hardware and Sound** &gt; **Manage audio devices**. In the Sound dialog box, select the speaker icon labeled as *Virtual Audio Device (WDM) - Tablet Sample*, and then click **Set Default**, but do not click **OK**. This will keep the Sound dialog box open.
+2. Open Control Panel and navigate to **Hardware and Sound** &gt; **Manage audio devices**. In the Sound dialog box, select the speaker icon labeled as *Virtual Audio Device (WDM) - Tablet Sample*, and then select **Set Default**, but do not select **OK**. This will keep the Sound dialog box open.
 3. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the *Virtual Audio Device (WDM) - Tablet Sample* driver.
 
 ## <span id="usewindbgtodisplayinformation"></span>Section 5: Use WinDbg to display information about the driver
@@ -533,8 +533,8 @@ set ENABLE_OPTIMIZER=0
 
     For more information, see [**lm**](lm--list-loaded-modules-.md).
 
-2.  Click the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
-3.  Because DML is enabled, some elements of the output are hot links that you can click on. Click on the *data* link in the debug output to display information about items symbols that start with the letter a.
+2.  Select the **Browse all global symbols** link in the debug output to display information about items symbols that start with the letter a.
+3.  Because DML is enabled, some elements of the output are hot links that you can select. Select the *data* link in the debug output to display information about items symbols that start with the letter a.
 
     ```dbgcmd
     0: kd> x /D /f tabletaudiosample!a*
@@ -835,9 +835,9 @@ To set a breakpoint using a debug command, use one of the following **b** comman
 
 8.  **-&gt;On the target system**
 
-    In Windows, open Device Manager by using the icon or by entering **mmc devmgmt.msc**. In **Device Manager** expand the **Sound, video and game controllers** node. Right click the virtual audio driver entry and select **Disable** from the menu.
+    In Windows, open Device Manager by using the icon or by entering **mmc devmgmt.msc**. In **Device Manager** expand the **Sound, video and game controllers** node. Select and hold (or right-click) the virtual audio driver entry and select **Disable** from the menu.
 
-9.  Right click the virtual audio driver entry again and select **Enable** from the menu.
+9.  Select and hold (or right-click) the virtual audio driver entry again and select **Enable** from the menu.
 10. **&lt;- On the host system**
 
     This should cause Windows to reload the driver, which calls AddDevice. This will cause the AddDevice debug breakpoint to fire and the execution of the driver code on the target system should halt.
@@ -963,7 +963,7 @@ You can modify existing breakpoints by using the following commands.
 
  
 
-Alternatively, you can also modify breakpoints by clicking **edit** &gt; **breakpoints**. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
+Alternatively, you can also modify breakpoints by selecting **edit** &gt; **breakpoints**. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
 
 **Set a breakpoint on MixerVolume**
 
@@ -1001,7 +1001,7 @@ To set a breakpoint on MixerVolume, perform the following steps.
 
 5.  Restart code execution on the target system by typing the go command **g**.
 
-6.  In Control Panel select **Hardware and Sound** &gt;**Sound**. Right click **Sink Description Sample** and select **Properties**. Select the **Levels** tab. Adjust the slider volume.
+6.  In Control Panel select **Hardware and Sound** &gt;**Sound**. Select and hold (or right-click) **Sink Description Sample** and select **Properties**. Select the **Levels** tab. Adjust the slider volume.
 
 7.  This should cause the SetMixerVolume debug breakpoint to fire and execution of the driver code on the target system should halt.
 
@@ -1148,7 +1148,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 5.  **-&gt; On the target system**
 
-    Locate a small media file (such as Windows notification sound file with a .wav file extension) and click the file to play it. For example you can use Ring05.wav located in the Windows\\Media directory.
+    Locate a small media file (such as Windows notification sound file with a .wav file extension) and select the file to play it. For example you can use Ring05.wav located in the Windows\\Media directory.
 
 6.  **&lt;- On the host system**
 
@@ -1212,7 +1212,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
 8.  **Use DML to Display Variables**
 
-    To use DML to explore variables, click the underlined elements. The click action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
+    To use DML to explore variables, select the underlined elements. The select action builds a [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md) command that allows you to drill down on nested data structures.
 
     ```dbgcmd
     0: kd> dx -r1 (*((tabletaudiosample!CMiniportWaveRT *)0xffffe001d10b8380))
@@ -1380,7 +1380,7 @@ To display the call stack, use the k\* commands:
 
  
 
-If you want to keep the call stack available, you can click **View**&gt; **Call stack** to view it. Click the columns at the top of the window to toggle the display of additional information.
+If you want to keep the call stack available, you can select **View**&gt; **Call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
 ![windbg call stack window](images/sysvad-lab-call-stack.png)
 
@@ -1409,7 +1409,7 @@ This output shows the call stack while debugging the sample adapter code in a br
 11 00000000`00000000 : 00000000`00000000 00000000`00000000 00000000`00000080 00000000`00000000 : 0x12e
 ```
 
-You can use DML to further explore the code. When you click on the first 00 entry, the [**.frame (Set Local Context)**](-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command displays the local variables.
+You can use DML to further explore the code. When you select the first 00 entry, the [**.frame (Set Local Context)**](-frame--set-local-context-.md) command is used to set the context and then, the [**dv (Display Local Variables)**](dv--display-local-variables-.md) command displays the local variables.
 
 ```dbgcmd
 0: kd> .frame 0n0;dv /t /v
@@ -1782,7 +1782,7 @@ nt!DbgBreakPointWithStatus:
 fffff803`bb757020 cc              int     3
 ```
 
-Alternatively, you can display the contents of the registers by clicking **View** &gt; **Registers**.
+Alternatively, you can display the contents of the registers by selecting **View** &gt; **Registers**.
 
 ![windbg registers window showing about 12 registers](images/sysvad-lab-audio-display-registers.png)
 
@@ -1792,7 +1792,7 @@ For information about contents of the register, see [x86 Architecture](x86-archi
 
 **Disassembly**
 
-You can disassemble the code that is under execution to view the assembly language code that is being run by clicking **View** &gt; **Disassembly**.
+You can disassemble the code that is under execution to view the assembly language code that is being run by selecting **View** &gt; **Disassembly**.
 
 ![windbg disassembly window](images/sysvad-lab-audio-disassembly-window.png)
 
@@ -1839,7 +1839,7 @@ If you attempt to display an invalid address, its contents are shown as question
 
  
 
-Alternatively, you can view the memory by clicking **View** &gt; **Memory**. Use the **Display format** pull down to change how the memory is displayed.
+Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Use the **Display format** pull down to change how the memory is displayed.
 
 ![windbg view memory window](images/sysvad-lab-audio-memory-display.png)
 

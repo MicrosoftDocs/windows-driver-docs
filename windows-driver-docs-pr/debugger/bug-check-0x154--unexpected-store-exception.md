@@ -41,7 +41,7 @@ If you are not able to work with the underlying code that is causing this issue,
 
 - Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. To open Event Viewer select the keyboard shortcut Win+R, type `eventvwr.msc` and press the ENTER key. Look for critical errors in the system log that occurred in the same time window as the blue screen.
 
-- Click Start, and type **"Windows Memory Diagnostics"** in the Search box, and then press Enter. Choose whether to restart the computer and run the tool immediately or schedule the tool to run at the next restart. Windows Memory Diagnostics runs automatically after the computer restarts and performs a standard memory test automatically. To run the extended test, press F1, and use the Up and Down arrow keys to set the Test Mix to Extended, and then press F10 to apply the desired settings and resume testing.
+- Select Start, and type **"Windows Memory Diagnostics"** in the Search box, and then press Enter. Choose whether to restart the computer and run the tool immediately or schedule the tool to run at the next restart. Windows Memory Diagnostics runs automatically after the computer restarts and performs a standard memory test automatically. To run the extended test, press F1, and use the Up and Down arrow keys to set the Test Mix to Extended, and then press F10 to apply the desired settings and resume testing.
 
 - Look in Device Manager to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 

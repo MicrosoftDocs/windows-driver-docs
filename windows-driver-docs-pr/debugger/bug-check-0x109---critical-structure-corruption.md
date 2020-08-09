@@ -283,7 +283,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
--   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+-   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 
