@@ -16,19 +16,19 @@ This appendix describes the procedure for forcing the Bluetooth driver that is i
 
 To start Device Manager:
 
-1.  Click **Start**, navigate to **All Programs &gt; Accessories &gt; Command Prompt**, right-click **Command Prompt**, and then click **Run as administrator** to open a command window with elevated privileges.
+1.  Select **Start**, navigate to **All Programs &gt; Accessories &gt; Command Prompt**, select and hold (or right-click) **Command Prompt**, and then select and hold (or right-click) **Run as administrator** to open a command window with elevated privileges.
 2.  Type the following: **Devmgmt.msc**
 
 Under **Other Devices**, find the entry for the Bluetooth radio on the Device Manager list of devices. In the following figure, the radio’s name is ”UGT”. On some portable computers, you might be required to first turn on the Bluetooth radio by using a key combination such as Fn+F5.
 
 ![bluetooth update driver software vista](images/bthnewhwstep1.jpg)
 
-To verify that the selected device is a Bluetooth radio, right-click the device name and then click **Properties** to display the **Properties** dialog box. On the **Details** tab, verify that the device has the compatible ID for a Bluetooth radio:
+To verify that the selected device is a Bluetooth radio, select and hold (or right-click) the device name and then select **Properties** to display the **Properties** dialog box. On the **Details** tab, verify that the device has the compatible ID for a Bluetooth radio:
 
 USB\\Class\_e0&SubClass\_01&Prot\_01
 ### <span id="Step_2__Start_the_Update_Driver_Software_Wizard"></span><span id="step_2__start_the_update_driver_software_wizard"></span><span id="STEP_2__START_THE_UPDATE_DRIVER_SOFTWARE_WIZARD"></span>Step 2: Start the Update Driver Software Wizard
 
-Right-click the Bluetooth radio node and then click **Update Driver Software**. To go to the page in the following figure, click **Browse my computer for driver software**. To manually select a driver, click **Let me pick from a list of device drivers on my computer**.
+Select and hold (or right-click) the Bluetooth radio node and then select **Update Driver Software**. To go to the page in the following figure, select **Browse my computer for driver software**. To manually select a driver, select **Let me pick from a list of device drivers on my computer**.
 
 ![bluetooth update driver software vista](images/bthnewhwstep2.jpg)
 

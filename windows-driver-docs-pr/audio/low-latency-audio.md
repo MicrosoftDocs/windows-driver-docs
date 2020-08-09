@@ -522,10 +522,10 @@ In order to measure roundtrip latency, user can user utilize tools that play pul
 In order to measure the roundtrip latency for different buffer sizes, users need to install a driver that supports small buffers. The inbox HDAudio driver has been updated to support buffer sizes between 128 samples (2.66ms@48kHz) and 480 samples (10ms@48kHz). The following steps show how to install the inbox HDAudio driver (which is part of all Windows 10 SKUs):
 
 - Start Device Manager.
-- Under **Sound video and game controllers**, double click on the device that corresponds to your internal speakers.
+- Under **Sound video and game controllers**, double-click on the device that corresponds to your internal speakers.
 - In the next window, go to the **Driver** tab.
-- Select **Update driver** -&gt; **Browse my computer for driver software** -&gt; **Let me pick from a list of device drivers in this computer** -&gt; **Select High Definition Audio Device** and click **Next**.
-- If a window titled "Update driver warning" appears, click **Yes**.
+- Select **Update driver** -&gt; **Browse my computer for driver software** -&gt; **Let me pick from a list of device drivers in this computer** -&gt; **Select High Definition Audio Device** and select **Next**.
+- If a window titled "Update driver warning" appears, select **Yes**.
 - Select **close**.
 - If you are asked to reboot the system, select **Yes** to reboot.
 - After reboot, the system will be using the inbox Microsoft HDAudio driver and not the 3rd-party codec driver. Remember which driver you were using before, so that you can fallback to that driver, if you want to use the optimal settings for your audio codec.

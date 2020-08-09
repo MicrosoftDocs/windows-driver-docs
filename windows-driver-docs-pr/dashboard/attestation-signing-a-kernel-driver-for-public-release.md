@@ -155,7 +155,7 @@ Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
 Throughput:              86.77 Kb/second
 ```
 
-5. Locate the cab file in the Disk1 subdirectory. You can click the cab file in File Explorer to verify that it contains the expected files.
+5. Locate the cab file in the Disk1 subdirectory. You can select the cab file in File Explorer to verify that it contains the expected files.
 
 ## Sign the submission CAB file with your EV certificate
 
@@ -198,7 +198,7 @@ C:\Echo> SignTool verify /pa /ph /v /d Echo.Sys
 ```
 
 4. To confirm the EKUs of the driver complete the following steps.
-a. Open Windows Explorer and locate the binary file. Right-click the file and select **Properties**.
+a. Open Windows Explorer and locate the binary file. Select and hold (or right-click) the file and select **Properties**.
 b. On the **Digital Signatures** tab, select the listed item in the Signature list.
 c. Select the **Details** button, and then select **View Certificate**.
 d. On the **Details** tab, select the **Enhanced Key Usage** field.
@@ -212,7 +212,7 @@ When the driver is resigned by the dashboard the following process is used.
 
 Use the following instructions to install the sample driver.
 
-1. Open Device Manager, right click on the computer icon and select "Add legacy Hardware". Follow the prompts to complete the install of the driver.
+1. Open Device Manager, select and hold (or right-click) on the computer icon and select "Add legacy Hardware". Follow the prompts to complete the install of the driver.
 
 2. Alternatively, open a Command Prompt window as Administrator and use devcon to install the driver. Navigate to your driver package folder, and enter the following command.
 
