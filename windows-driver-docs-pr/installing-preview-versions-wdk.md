@@ -55,7 +55,7 @@ The EWDK is a standalone self-contained command-line environment for building dr
 
 [Get the Enterprise Windows Driver Kit (EWDK) Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 
-To get started mount the ISO and click LaunchBuildEnv. 
+To get started mount the ISO and select LaunchBuildEnv. 
 
 ## Run-time requirements for the WDK and the EWDK
 
