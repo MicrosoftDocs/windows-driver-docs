@@ -359,7 +359,7 @@ The binding specifies for example how the MMU should be configured, and how phys
 
 ## UEFI ARM multiprocessor startup requirements
 
-Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](http://infocenter.arm.com/help/topic/com.arm.doc.den0022d/Power_State_Coordination_Interface_PDD_v1_1_DEN0022D.pdf). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://acpica.org/sites/acpica/files/MP Startup for ARM platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
+Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](https://infocenter.arm.com/help/topic/com.arm.doc.den0022d/Power_State_Coordination_Interface_PDD_v1_1_DEN0022D.pdf). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://acpica.org/sites/acpica/files/MP Startup for ARM platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
 
 ## Platform setup requirements
 

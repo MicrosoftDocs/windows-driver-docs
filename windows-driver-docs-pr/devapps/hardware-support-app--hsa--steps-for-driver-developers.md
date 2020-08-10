@@ -193,7 +193,7 @@ The following is the formal XML XSD schema for an SCCD file.  Use this schema to
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xs="https://www.w3.org/2001/XMLSchema"
   targetNamespace="http://schemas.microsoft.com/appx/2016/sccd"
   xmlns:s="http://schemas.microsoft.com/appx/2016/sccd"
   xmlns="http://schemas.microsoft.com/appx/2016/sccd">
@@ -294,7 +294,7 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xs="https://www.w3.org/2001/XMLSchema"
   targetNamespace="http://schemas.microsoft.com/appx/2018/sccd"
   xmlns:s="http://schemas.microsoft.com/appx/2018/sccd"
   xmlns="http://schemas.microsoft.com/appx/2018/sccd">
