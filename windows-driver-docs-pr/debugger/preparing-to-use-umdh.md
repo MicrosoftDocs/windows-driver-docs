@@ -17,13 +17,13 @@ Before using UMDH to capture the heap allocations for a process, you must config
 
 To enable stack trace capturing for a process, use [GFlags](gflags.md) to set the **Create user mode stack trace database** flag for the process. This can be done by either of the following methods:
 
--   In the GFlags graphical interface, choose the **Image File** tab. Type the process name, including the file name extension (for example, Notepad.exe). Press the **TAB** key, select **Create user mode stack trace database**, and then click **Apply**.
+-   In the GFlags graphical interface, choose the **Image File** tab. Type the process name, including the file name extension (for example, Notepad.exe). Press the **TAB** key, select **Create user mode stack trace database**, and then select **Apply**.
 
 -   Or, equivalently, use the following GFlags command line, where *ImageName* is the process name (including the file name extension):
 
     **gflags /i** *ImageName* **+ust**
 
-By default, the amount of stack trace data that Windows gathers is limited to 32 MB on an x86 processor, and 64 MB on an x64 processor. If you must increase the size of this database, choose the **Image File** tab in the GFlags graphical interface, type the process name, press the **TAB** key, check the **Stack Backtrace (Megs)** check box, type a value (in MB) in the associated text box, and then click **Apply**.
+By default, the amount of stack trace data that Windows gathers is limited to 32 MB on an x86 processor, and 64 MB on an x64 processor. If you must increase the size of this database, choose the **Image File** tab in the GFlags graphical interface, type the process name, press the **TAB** key, check the **Stack Backtrace (Megs)** check box, type a value (in MB) in the associated text box, and then select **Apply**.
 
 **Note**   Increase this database only when necessary, because it may deplete limited Windows resources. When you no longer need the larger size, return this setting to its original value.
 

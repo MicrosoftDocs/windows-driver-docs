@@ -63,7 +63,7 @@ You can also directly open or close a source file by doing one of the following:
 
 -   (WinDbg only) Use the [File | Recent Files](file---recent-files.md) command to open one of the four source files that you most recently opened in WinDbg.
 
--   (WinDbg only) Use the [File | Close Current Window](file---close-current-window.md) command or click the **Close** button in the corner of the [Source window](source-window.md) to close a source file.
+-   (WinDbg only) Use the [File | Close Current Window](file---close-current-window.md) command or select the **Close** button in the corner of the [Source window](source-window.md) to close a source file.
 
 For more information about how to use source files, see [Debugging in Source Mode](debugging-in-source-mode.md).
 

@@ -18,4 +18,4 @@ To open a dump file using Visual Studio:
 
 1. In Visual Studio, from the **File** menu, choose **Open | Crash Dump** .
 2. Navigate to the dump file you want to open.
-3. Click **Open.**
+3. Select **Open.**
