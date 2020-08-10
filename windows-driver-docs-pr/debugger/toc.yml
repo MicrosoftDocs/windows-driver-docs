@@ -1786,6 +1786,8 @@
       href: symbols-and-symbol-files.md
     - name: "Public and Private Symbols"
       href: public-and-private-symbols.md
+    - name: "Portable PDB Symbols"
+      href: symbols-portable-pdb.md
   - name: "Accessing Symbols for Debugging"
 # Auto-expanded node
     items: 
