@@ -1146,6 +1146,8 @@
     href: controlling-the-target.md
   - name: "Enabling Postmortem Debugging"
     href: enabling-postmortem-debugging.md
+  - name: "Open Enclave debugging"
+    href: open-enclave-debugging.md
   - name: "Using the Debugger Command Window"
 # Auto-expanded node
     items: 
