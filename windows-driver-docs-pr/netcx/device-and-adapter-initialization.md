@@ -102,15 +102,17 @@ For details on what to provide in your implementations of these callbacks, see t
 
 Many NetAdapterCx client drivers start their adapters from within their [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function, with the notable exception of [Mobile Broadband class extension client drivers](mobile-broadband-mbb-wdf-class-extension-mbbcx.md). To register an *EVT_WDF_DEVICE_PREPARE_HARDWARE* callback function, a NetAdapterCx client driver must call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks).
 
- Within [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), in addition to other hardware preparation tasks the client driver must set the adapter's capabilities. After this, the driver must call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart).
+ Within [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware), in addition to other hardware preparation tasks the client driver sets the adapter's required and optional capabilities.
 
-The client driver must set the following capabilities:
+NetAdapterCx requires the client driver to set the following capabilities:
 
-* Data path capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) to set these. For more information, see [Network data buffer management](/windows-hardware/drivers/netcx/network-data-buffer-management).
+* Data path capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) to set these capabilities. For more information, see [Network data buffer management](/windows-hardware/drivers/netcx/network-data-buffer-management).
 
-* Link layer capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities) to set these.
+* Link layer capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities) to set these capabilities.
 
 * Link layer maximum transfer unit (MTU) size. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities) to set the MTU size.
+
+The driver must then call [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart) to start their adapter.
 
 The following example shows how a client driver might start a NETADAPTER object. Note that code required for setting up each adapter capabilities method is left out for brevity and clarity, and error handling is simplified.
 
