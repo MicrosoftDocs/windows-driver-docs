@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The [debugger engine](introduction.md#debugger-engine) can be used to examine and alter the target's registers.
 
-The registers available on the target depend on its processor architecture. For a description of the registers for the x86 and Itanium processors, see [Processor Architecture](processor-architecture.md). For a complete description of the registers available for a processor, see that processor's documentation.
+The registers available on the target depend on its processor architecture. For a description of the registers for the x86 processor, see [Processor Architecture](processor-architecture.md). For a complete description of the registers available for a processor, see that processor's documentation.
 
 ### <span id="the_register_set"></span><span id="THE_REGISTER_SET"></span>The Register Set
 

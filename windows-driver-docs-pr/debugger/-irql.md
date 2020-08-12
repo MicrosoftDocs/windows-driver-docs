@@ -82,12 +82,7 @@ kd> !irql 1
 Debugger saved IRQL for processor 0x1 -- 0 (LOW_LEVEL)
 ```
 
-If the debugger is in verbose mode, a description of the IRQL itself is included. Here is an example from an Itanium processor:
-
-```dbgcmd
-kd> !irql
-Debugger saved IRQL for processor 0x0 -- 12 (PC_LEVEL) [Performance counter level]
-```
+If the debugger is in verbose mode, a description of the IRQL itself is included.
 
 The meaning of the IRQL number often depends on the processor. Here is an example from an x64 processor. Note that the IRQL number is the same as in the previous example, but the IRQL meaning is different:
 

@@ -49,7 +49,7 @@ Specifies the hexadecimal selector value of the last selector to be displayed. I
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86, Itanium</p></td>
+<td align="left"><p>x86</p></td>
 </tr>
 </tbody>
 </table>

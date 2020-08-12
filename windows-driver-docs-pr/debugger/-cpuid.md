@@ -73,13 +73,4 @@ The **CP** column gives the processor number. (These numbers are always sequenti
 
 For an x86-based processor or an x64-based processor, the **F** column displays the processor family number, the **M** column displays the processor model number, and the **S** column displays the stepping size.
 
-For an Itanium-based processor, the **M** column displays the processor model number, the R column displays the processor revision number, the **F** column displays the processor family number, and the **A** column displays the architecture revision number.
-
- 
-
- 
-
-
-
-
 

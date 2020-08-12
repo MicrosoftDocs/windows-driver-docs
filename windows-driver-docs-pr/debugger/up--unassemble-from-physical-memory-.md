@@ -31,7 +31,7 @@ up
 Specifies the memory range in physical memory that contains the instructions to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the beginning of the memory range in physical memory to disassemble. Eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor) are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
+Specifies the beginning of the memory range in physical memory to disassemble. Eight instructions on an x86-based processor are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
@@ -65,7 +65,7 @@ For more information about assembly debugging and related commands, see [Debuggi
 Remarks
 -------
 
-If you do not specify a parameter for the **up** command, the disassembly begins at the current address and extends eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor).
+If you do not specify a parameter for the **up** command, the disassembly begins at the current address and extends eight instructions on an x86-based processor.
 
 Do not confuse this command with the [**u (Unassemble)**](u--unassemble-.md). The **up** command disassembles only physical memory, while the **u** command disassembles only virtual memory.
 
