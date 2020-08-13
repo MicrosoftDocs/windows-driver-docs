@@ -7819,6 +7819,11 @@
                             "source_path":  "windows-driver-docs-pr/install/allsignersequal-group-policy--windows-vista-and-later-.md",
                             "redirect_url":  "https://docs.microsoft.com/windows-hardware/drivers/install/allsigningequal-group-policy",
                             "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/netcx/handling-control-requests.md",
+                            "redirect_url":  "https://docs.microsoft.com/windows-hardware/drivers/netcx/",
+                            "redirect_document_id":  true
                         }
                      ]
 }
