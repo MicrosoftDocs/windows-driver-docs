@@ -2,7 +2,7 @@
     "redirections":  [
         {
             "source_path":  "windows-driver-docs-pr/ifs/file-system-minifilter-drivers.md",
-            "redirect_URL":  "/windows-hardware/drivers/kernel/drivers/ifs/filter-manager-concepts",
+            "redirect_URL":  "/windows-hardware/drivers/ifs/filter-manager-concepts",
             "redirect_document_id":  false
         },{
             "source_path":  "windows-driver-docs-pr/kernel/implementing-power-management.md",
