@@ -119,9 +119,9 @@ NetAdapterCx provides definitions for known packet extension constants.
 | Constant | Definition |
 | --- | --- |
 | NET_PACKET_EXTENSION_INVALID_OFFSET | Guards against invalid offset sizes. |
-| <ul><li>NET_PACKET_EXTENSION_CHECKSUM_NAME</li><li>NET_PACKET_EXTENSION_CHECKSUM_VERSION_1</li></ul> | The name and version of the checksum packet extension. |
-| <ul><li>NET_PACKET_EXTENSION_LSO_NAME</li><li>NET_PACKET_EXTENSION_LSO_VERSION_1</li></ul> | The name and version of the large send offload (LSO) packet extension. |
-| <ul><li>NET_PACKET_EXTENSION_RSC_NAME</li><li>NET_PACKET_EXTENSION_RSC_VERSION_1</li></ul> | The name and version of the receive segment coalescence (RSC) packet extension. |
+| NET_PACKET_EXTENSION_CHECKSUM_NAME NET_PACKET_EXTENSION_CHECKSUM_VERSION_1| The name and version of the checksum packet extension. |
+| NET_PACKET_EXTENSION_LSO_NAME NET_PACKET_EXTENSION_LSO_VERSION_1 | The name and version of the large send offload (LSO) packet extension. |
+| NET_PACKET_EXTENSION_RSC_NAME NET_PACKET_EXTENSION_RSC_VERSION_1 | The name and version of the receive segment coalescence (RSC) packet extension. |
 
 Additionally, NetAdapterCx provides three helper methods that act as wrappers around the [**NetExtensionGetData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/extension/nf-extension-netextensiongetdata) method. Each of these methods returns a pointer to the appropriate type of structure.
 
@@ -150,8 +150,8 @@ NetAdapterCx provides definitions for known fragment extension constants.
 
 | Constant | Definition |
 | --- | --- |
-| <ul><li>NET_FRAGMENT_EXTENSION_DATA_BUFFER_NAME</li><li>NET_FRAGMENT_EXTENSION_DATA_BUFFER_VERSION_1</li></ul> | The name and version of the data buffer fragment extension. |
-| <ul><li>NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_NAME</li><li>NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_VERSION_1</li></ul> | The name and version of the logical address fragment extension. |
-| <ul><li>NET_FRAGMENT_EXTENSION_MDL_NAME</li><li>NET_FRAGMENT_EXTENSION_MDL_VERSION_1</li></ul> | The name and version of the MDL fragment extension. |
-| <ul><li>NET_FRAGMENT_EXTENSION_RETURN_CONTEXT_NAME</li><li>NET_FRAGMENT_EXTENSION_RETURN_CONTEXT_VERSION_1</li></ul> | The name and version of the return context fragment extension. |
-| <ul><li>NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_NAME</li><li>NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_VERSION_1</li></ul> | The name and version of the virtual address fragment extension. |
+| NET_FRAGMENT_EXTENSION_DATA_BUFFER_NAME NET_FRAGMENT_EXTENSION_DATA_BUFFER_VERSION_1 | The name and version of the data buffer fragment extension. |
+| NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_NAME NET_FRAGMENT_EXTENSION_LOGICAL_ADDRESS_VERSION_1 | The name and version of the logical address fragment extension. |
+| NET_FRAGMENT_EXTENSION_MDL_NAME NET_FRAGMENT_EXTENSION_MDL_VERSION_1 | The name and version of the MDL fragment extension. |
+| NET_FRAGMENT_EXTENSION_RETURN_CONTEXT_NAME NET_FRAGMENT_EXTENSION_RETURN_CONTEXT_VERSION_1 | The name and version of the return context fragment extension. |
+| NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_NAME NET_FRAGMENT_EXTENSION_VIRTUAL_ADDRESS_VERSION_1 | The name and version of the virtual address fragment extension. |
