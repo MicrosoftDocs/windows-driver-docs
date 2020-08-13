@@ -1,7 +1,7 @@
 ---
 title: CFU virtual HID device firmware update
 description: Provides a walkthrough of updating firmware for the Component Firmware Update (CFU) virtual HID device sample.
-ms.date: 07/28/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,9 +49,6 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
         ```console
         devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE
         ```
-
-        > [!NOTE]
-        > You may need to add the devcon.exe folder location to your path.
 
 1. TBD
 
