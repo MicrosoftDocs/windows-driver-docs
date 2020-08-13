@@ -3,7 +3,7 @@ title: Viewing the Call Stack in WinDbg
 description: In WinDbg, you can view the call stack by entering commands or by using the Calls window.
 ms.assetid: 0e5b5611-d43c-40ba-8340-ea49fe18cc3f
 keywords: ["debugging information windows, Calls window", "Calls window", "call stack, Calls window"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 ms.localizationpriority: medium
 ---
 
@@ -46,8 +46,6 @@ The Calls window has a toolbar that contains several buttons and has a shortcut 
 -   **Source** displays source module names and line numbers after the function names (if the debugger has this information).
 
 -   **Addrs** displays various frame-related addresses. On an x86-based processor, this display includes the base pointer for the stack frame ("ChildEBP") and the return address ("RetAddr").
-
--   **Nonvolatile regs** displays the nonvolatile portion of the register context. This command is available only on an Itanium-based processor.
 
 -   **Frame nums** displays frame numbers. Frames are always numbered consecutively, beginning with zero.
 

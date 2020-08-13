@@ -144,7 +144,7 @@ When an application error occurs, Windows can respond in several different ways,
 
 ### <span id="creating_dump_files_while_debugging"></span><span id="CREATING_DUMP_FILES_WHILE_DEBUGGING"></span>Creating Dump Files While Debugging
 
-When CDB or WinDbg is debugging a user-mode application, you can also the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to create a dump file.
+When CDB or WinDbg is debugging a user-mode application, you can also use the [**.dump (Create Dump File)**](-dump--create-dump-file-.md) command to create a dump file.
 
 This command does not cause the target application to terminate. By selecting the proper command options, you can create a minidump file that contains exactly the amount of information you wish.
 

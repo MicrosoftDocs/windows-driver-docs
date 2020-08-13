@@ -53,7 +53,7 @@ This command is only supported in Windows XP and later versions of Windows.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86, x64, and Itanium only</p></td>
+<td align="left"><p>x86 and x64</p></td>
 </tr>
 </tbody>
 </table>
