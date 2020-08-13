@@ -715,3 +715,150 @@ Monitor_state (1 octet):
 |---|---|
 |0x00|The controller stopped monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
 |0x01|The controller started monitoring the device specified by _BD_ADDR_ and _Monitor_handle_.|
+
+## Appendix
+This section contains Microsoft-defined Bluetooth HCI extension examples and diagrams.
+
+### Example: Matching patterns for HCI_VS_MSFT_LE_Monitor_Advertisement
+This example shows a received [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] command and the evaluations of 3 different advertisement packets against the command parameters.
+
+Received [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] command
+An [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] command is received by the controller and contains the following parameters.
+
+|Parameter|Value||
+|---|---|---|
+|*Subcommand_opcode*|0x03|Subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]|
+|*RSSI_threshold_high*|0x01|1dB|
+|*RSSI_threshold_low*|0xCE|-50dB|
+|*RSSI_threshold_low_time_interval*|0x05|5 seconds|
+|*RSSI_sampling_period*|0xFF|No sampling|
+|*Condition_type*|0x01|Condition|
+|*Condition*|0x02|2 patterns should be matched|
+||0x03|Length of first pattern, including AD Type and starting position|
+||0x01|AD Type|
+||0x00|Starting position following the AD Type|
+||0x01|First pattern to be matched|
+||0x06|Length of second pattern, including AD Type and starting position|
+||0xFF|AD Type (Manufacturer specific data)|
+||0x00|Starting position following the AD Type|
+||0x00|Second pattern to be matched|
+||0x06|
+||0xFF|
+||0xFF|
+
+The controller then receives the following advertisement packets.
+
+
+- Advertisement packet [A] 
+```
+0x02 0x01 0x01 0x07 0x09 0x54 0x61 0x62 0x6C 0x65 0x74 0x05 0xFF 0x00 0x06 0xFF 0xFF
+```
+
+- Advertisement packet [B] 
+```
+0x02 0x01 0x01 0x07 0x09 0x54 0x61 0x62 0x6C 0x65 0x74 0x05 0xFF 0x00 0x06 0xFF 0x01
+```
+
+- Advertisement packet [C] 
+```
+0x07 0x09 0x54 0x61 0x62 0x6C 0x65 0x74 0x05 0xFF 0x00 0x06 0xFF 0xFF
+```
+
+#### Evaluating match for Advertisement packet [A]
+
+|||
+|---|---|
+|AD Type of first pattern to be matched|0x01|
+|Length of first pattern to be matched|0x03 - 0x02 = 0x01 byte|
+|Pattern to be matched at position 0x00 for AD Type 0x01|0x01|
+|Bytes at position 0x00 for the AD Type 0x01|0x01|
+|AD Type of second pattern to be matched|0xFF (Manufacturer specific data)|
+|Length of second patter to be matched|0x06 - 0x02 = 0x04 bytes|
+|Pattern to be matched at position 0x00 for AD Type 0xFF|0x00 0x06 0xFF 0xFF|
+|Bytes at position 0x00 for the AD Type 0xFF|0x00 0x06 0xFF 0xFF|
+
+**Verdict: PASS**
+
+#### Evaluating match for Advertisement packet [B]
+|||
+|---|---|
+|AD Type of first pattern to be matched|0x01|
+|Length of first pattern to be matched|0x03 - 0x02 = 0x01 byte|
+|Pattern to be matched at position 0x00 for AD Type 0x01|0x01|
+|Bytes at position 0x00 for the AD Type 0x01|0x01|
+|AD Type of second pattern to be matched|0xFF (Manufacturer specific data)|
+|Length of second patter to be matched|0x06 - 0x02 = 0x04 bytes|
+|Pattern to be matched at position 0x00 for AD Type 0xFF|0x00 0x06 0xFF |
+|Bytes at position 0x00 for the AD Type 0xFF|0x00 0x06 0xFF |
+
+**Verdict: PASS**
+ 
+### Evaluating match for Advertisement packet [C]
+|||
+|---|---|
+|AD Type of first pattern to be matched|0x01|
+|Length of first pattern to be matched|0x03 - 0x02 = 0x01 byte|
+|Pattern to be matched at position 0x00 for AD Type 0x01|0x01|
+|Bytes at position 0x00 for the AD Type 0x01|Undefined. The advertisement does not have data with AD Type 0x01.|
+
+**Verdict: FAIL**
+
+
+### Example: Advertisement monitoring
+
+This example illustrates RSSI advertisement monitoring. The RSSI values for received advertisements that matched a specified condition are shown below.
+
+|Time (s)|RSSI (dB)|
+|---|---|
+|1|-100|
+|2|-90|
+|3|-5|
+|4|-15|
+|5|-30|
+|6|-15|
+|7|-45|
+|8|-20|
+|9|-35|
+|10|-45|
+|11|-70|
+|12|-85|
+|13|-85|
+|14|-85|
+|15|-90|
+|16|-90|
+|17|-70|
+
+|Parameter|Value|
+|---|---|
+|*RSSI_threshold_high*|-10dB|
+|*RSSI_threshold_low*|-80dB|
+|*RSSI_threshold_low_time_interval*|3 seconds|
+|*RSSI_sampling_period*|2 seconds|
+
+![Advertisement monitoring graph](images/HCI_Example_Advertisement_Monitoring.png)
+
+The advertisement RSSI is greater than *RSSI_threshold_high* at time 3. The periodic timer for sampling starts at time 3. Every 2 seconds, the periodic timer expires and the average RSSI value of the received advertisement is propagated to the stack.
+
+When the periodic timer expires at time 5, the average of the advertisement RSSIs received during this time (-23dB) is propagated to the stack.
+
+When the periodic timer expires at time 13, the average of the advertisement RSSIs received during this timeframe is below *RSSI_threshold_low* (-80dB). The average of the advertisement RSSI (-85 dB) should be propagated to the host.
+
+When *RSSI_threshold_low_time_interval* expires at instant 15, an advertisement is propagated to the host with RSSI of -85dB. No further advertisements are sent to the host in this example.
+
+### Flowchart: Advertisement and white list filtering
+
+This flowchart provides an example controller implementation of advertisement filtering and white list filtering when an advertisement is received.
+
+A controller can implement this logic differently, as long as the host is notified of the advertisement or [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] as specified by the flowchart.
+
+![Microsoft HCI extension filtering flowchart](images/HCI_Filtering_Flowchart.png)
+
+### Sequence diagram: Propagate scan response associated with advertisement
+
+Sequence diagram: Propagate scan response associated with advertisement
+
+This sequence diagram shows a propagate scan response that is associated with an advertisement that satisfies an advertisement filter when active scanning is enabled.
+This diagram only shows the expected sequence of events between controller and host, and does not show events between the controller and a particular device.
+Assume that there is an advertisement *A* that satisfies an advertisement filter, and an advertisement *B* that does not satisfy the advertisement filter.
+
+![HCI propagate scan sequence diagram](images/HCI_Propagate_Scan_Sequence.png)
