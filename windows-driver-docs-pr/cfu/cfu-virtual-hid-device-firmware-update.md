@@ -46,7 +46,9 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
     1. At an administrative command prompt, run the following command:
 
-        `devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE`
+        ```console
+        devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE
+        ```
 
         > [!NOTE]
         > You may need to add the devcon.exe folder location to your path.
