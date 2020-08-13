@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 - [UEFI Specifications](https://uefi.org/specifications)
 
-- [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 (PDF download)](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf)
+- [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf)
 
 ## Recommended reading
 
@@ -44,9 +44,9 @@ To prevent advanced memory attacks, the existing system BIOS security mitigation
 
 This mitigation, called *MorLock*, must be implemented on all new systems and not only limited to systems with Trusted Platform Modules. Revision 2 adds a new capability, *unlock*, to mitigate boot performance concerns, especially on large memory systems.
 
-Regarding the ACPI \_DSM control method for setting the MOR bit state (as described in Section 6 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 (PDF download)](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf), we recommend removing this \_DSM method from modern BIOS implementations.  However, if a BIOS implements this \_DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to “General Failure”.  No ACPI mechanism is defined to unlock MorLock revision 2.  
+Regarding the ACPI \_DSM control method for setting the MOR bit state (as described in Section 6 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf), we recommend removing this \_DSM method from modern BIOS implementations.  However, if a BIOS implements this \_DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to “General Failure”.  No ACPI mechanism is defined to unlock MorLock revision 2.  
 
-Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS *indirectly* invokes this \_DSM method when Windows invokes ACPI \_PTS as an implementation of MOR Auto Detection of Clean Shutdown (as described in Section 2.3 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 (PDF download)](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf)).  
+Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS *indirectly* invokes this \_DSM method when Windows invokes ACPI \_PTS as an implementation of MOR Auto Detection of Clean Shutdown (as described in Section 2.3 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf)).  
 
 This ACPI \_PTS implementation of MOR Auto Detection is security deficient and should NOT be used.
 
@@ -156,7 +156,7 @@ These flowcharts show the expected behavior of your implementation:
 
 [UEFI requirements that apply to all Windows editions on SoC platforms](uefi-requirements-that-apply-to-all-windows-platforms.md#security-requirements)
 
-[PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.0 (PDF download)](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf)  
+[PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf  
 
 [Protecting BitLocker from Cold Attacks (and other threats)](https://docs.microsoft.com/archive/blogs/si_team/protecting-bitlocker-from-cold-attacks-and-other-threats)  
 
