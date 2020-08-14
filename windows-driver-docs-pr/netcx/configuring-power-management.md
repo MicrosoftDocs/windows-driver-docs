@@ -168,6 +168,23 @@ EvtDeviceArmWakeFromSx(
 
 On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
 
+## Reporting wake reason
+
+> [!IMPORTANT]
+> It is mandatory that client drivers report wake reason to NetAdapterCx.
+
+When the NIC hardware wakes up the system, the client driver must report which wake source triggered the wake to NetAdapterCx.
+
+If the [**NET_WAKE_SOURCE_TYPE**](/windows-hardware/drivers/ddi/netwakesource/ne-netwakesource-_net_wake_source_type) is:
+
+- NetWakeSourceTypeBitmapPattern, call [**NetAdapterReportWakeReasonPacket**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonpacket) with the [**NET_ADAPTER_WAKE_REASON_PACKET**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_wake_reason_packet) structure to describe the exact packet.
+
+- NetWakeSourceTypeMagicPacket, call **NetAdapterReportWakeReasonPacket** and the NET_ADAPTER_WAKE_REASON_MAGIC_PACKET_INIT macro to report the wake reason.
+
+- NetWakeSourceTypePacketFilterMatch, call **NetAdapterReportWakeReasonPacket** and the NET_ADAPTER_WAKE_REASON_PACKET_FILTER_INIT macro to report the wake reason.
+
+- NetWakeSourceTypeMediaChange, call [**NetAdapterReportWakeReasonMediaChange**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonmediachange).
+
 ## Power management scenarios for Modern Standby system
 
 > [!IMPORTANT]
