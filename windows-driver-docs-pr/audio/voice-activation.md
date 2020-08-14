@@ -47,7 +47,7 @@ Microsoft provides an OS default keyword spotter (software keyword spotter) that
 
 ### The "Learn my voice" feature
 
-The "Learn my voice" feature allows the user to train Cortana to recognize their unique voice. This is accomplished by the user clicking on *Learn how I say "Hey Cortana"* in the Cortana settings screen. The user then repeats six carefully chosen phrases that provide a sufficient variety of phonetic patterns to identify the unique attributes of the users voice.
+The "Learn my voice" feature allows the user to train Cortana to recognize their unique voice. This is accomplished by the user selecting *Learn how I say "Hey Cortana"* in the Cortana settings screen. The user then repeats six carefully chosen phrases that provide a sufficient variety of phonetic patterns to identify the unique attributes of the users voice.
 
 ![cortana desktop settings for hw keyword spotter wake on voice](images/audio-voice-activation-settings-2017.png)
 
