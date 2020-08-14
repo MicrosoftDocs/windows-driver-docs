@@ -106,7 +106,7 @@ Displays the distance between adjacent frames. This distance is the number of by
 Hides source lines in the display. L is case sensitive.
 
 <span id="_______M"></span><span id="_______m"></span> M  
-Displays output using [Debugger Markup Language](debugger-markup-language-commands.md). Each frame number in the display is a link that you can click to set the local context and display local variables. For information about the local context, see [**.frame**](-frame--set-local-context-.md).
+Displays output using [Debugger Markup Language](debugger-markup-language-commands.md). Each frame number in the display is a link that you can select to set the local context and display local variables. For information about the local context, see [**.frame**](-frame--set-local-context-.md).
 
 <span id="_______FrameCount______"></span><span id="_______framecount______"></span><span id="_______FRAMECOUNT______"></span> *FrameCount*   
 Specifies the number of stack frames to display. You should specify this number in hexadecimal format, unless you have changed the radix by using the [**n (Set Number Base)**](n--set-number-base-.md) command. The default value is 20 (0x14), unless you have changed the default value by using the [**.kframes (Set Stack Length)**](-kframes--set-stack-length-.md) command.
