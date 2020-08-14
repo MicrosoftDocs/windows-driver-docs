@@ -38,11 +38,11 @@ To allow the kdnet utility to update BCDEdit boot settings, temporarily disable 
 
 1. Load the Hyper-V manager and select the properties for your VM.
 
-2. Click on the **Security** settings.
+2. Select the **Security** settings.
 
 3. Un-check the **Enable Secure Boot** checkbox.
 
-4. Click **OK** to save the settings.
+4. Select **OK** to save the settings.
 
 You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging on the target VM.  
 
@@ -179,7 +179,7 @@ C:\>Ping <HostComputerIPAddress>
 
 *My VMs don't have network connectivity*  
 
-- Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the Microsoft Kernel Debug Network Adapter by selecting it from the drop down box and then clicking OK in the Virtual Switch Manager dialog box.  After updating your Virtual Switch NIC, make sure to then shutdown and restart your VMs. 
+- Open Virtual Switch Manager from Hyper-V Manager, select your existing Virtual Switch, and change the external network NIC to the Microsoft Kernel Debug Network Adapter by selecting it from the drop down box and then selecting OK in the Virtual Switch Manager dialog box.  After updating your Virtual Switch NIC, make sure to then shutdown and restart your VMs. 
 
 
 
