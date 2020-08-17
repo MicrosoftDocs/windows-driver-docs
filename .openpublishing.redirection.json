@@ -1,6 +1,10 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/ifs/file-system-minifilter-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/kernel/drivers/ifs/filter-manager-concepts",
+            "redirect_document_id":  false
+        },{
             "source_path":  "windows-driver-docs-pr/kernel/implementing-power-management.md",
             "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-power-management",
             "redirect_document_id":  false
@@ -7814,6 +7818,11 @@
                          {
                             "source_path":  "windows-driver-docs-pr/install/allsignersequal-group-policy--windows-vista-and-later-.md",
                             "redirect_url":  "https://docs.microsoft.com/windows-hardware/drivers/install/allsigningequal-group-policy",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/netcx/handling-control-requests.md",
+                            "redirect_url":  "https://docs.microsoft.com/windows-hardware/drivers/netcx/",
                             "redirect_document_id":  true
                         }
                      ]

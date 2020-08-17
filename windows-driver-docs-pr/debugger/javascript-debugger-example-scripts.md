@@ -199,7 +199,7 @@ Debugger.State.Scripts.PlugAndPlayDeviceTree.Contents.filterAllDevices()        
 ...
 ```
 
-Each of these objects presented above, automatically supports DML, and can be clicked through just as with any other dx query.
+Each of these objects presented above, automatically supports DML, and can be selected just as with any other dx query.
 
 Alternatively to using this script, it is possible to use a LINQ query to accomplish a similar result.
 

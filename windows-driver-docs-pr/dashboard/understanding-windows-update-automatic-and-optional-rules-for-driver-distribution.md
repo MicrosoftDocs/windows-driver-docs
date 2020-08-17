@@ -23,7 +23,7 @@ If you select the second checkbox, the driver is classified as **Automatic** (fo
 
 ## Automatic updates
 
-During a scheduled update or when a user clicks **Check for updates** in the **Updates & Security** settings menu, Windows Update distributes only the highest-ranking **Automatic drivers** that apply to the system's devices. An **Automatic driver** is a system or inbox-provided driver that provides basic device functionality. Windows Update will only distribute **Optional** drivers in these scenarios if:
+During a scheduled update or when a user selects **Check for updates** in the **Updates & Security** settings menu, Windows Update distributes only the highest-ranking **Automatic drivers** that apply to the system's devices. An **Automatic driver** is a system or inbox-provided driver that provides basic device functionality. Windows Update will only distribute **Optional** drivers in these scenarios if:
 
 * A device has no applicable drivers available in the Driver Store ("Driver Not Found")
 * Or *if the only locally available driver is generic*, that is, the only locally available driver is a system-provided driver that provides only basic device functionality.
