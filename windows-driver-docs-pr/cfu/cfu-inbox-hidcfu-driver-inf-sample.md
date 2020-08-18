@@ -348,7 +348,7 @@ You need to [configure the CFU driver INF](#2-configure-the-cfu-driver-inf) by u
 
 **My company ships several independent components that I want to update by using the CFU model. Do I need separate drivers and package them individually?**
 
-We recommend that you use the multiple packaging approach described  in [componentized packages](#componentized-packages-approach-recommended) .
+Use the componentized packages approach described in [Create componentized packages](#1-create-componentized-packages) .
 
 **I have two components: component A, and a sub-component B. How should I make the CFU driver aware of component B?**
 
