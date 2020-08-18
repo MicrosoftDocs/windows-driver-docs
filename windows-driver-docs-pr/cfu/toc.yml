@@ -9,10 +9,6 @@
     href: cfu-virtual-hid-device-firmware-update.md
   - name: "CFU inbox HIDCFU driver INF sample"
     href: cfu-inbox-hidcfu-driver-inf-sample.md
-  - name: "CFU host driver sample"
-    href: cfu-host-driver.md
-  - name: "Customize the CFU driver"
-    href: customize-cfu-driver.md
   - name: "CFU standalone tool sample"
     href: cfu-standalone-tool-sample.md
   - name: "CFU protocol specification"

@@ -18,17 +18,17 @@ It requires a protocol settings text csv file to be passed as an argument.
 
 ## Usage examples
 
-```
+```console
 FwUpdateCfu.exe version \<protocolSettingsPath\> (to retrieve version of device)
 ```
 
-```
+```console
 FwUpdateCfu.exe update \<protocolSettingsPath\> \<offerfile\> \<binfile\> [forceIgnoreVersion] [forceReset]
 ```
 
 ## Example protocol settings
 
-```
+```console
 #instructions:
 #Fill in csv tag and the value in hex for each item
 #order not important
