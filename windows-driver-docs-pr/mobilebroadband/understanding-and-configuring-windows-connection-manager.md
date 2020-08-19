@@ -191,7 +191,7 @@ Most users will not need to manually modify the network list. However, certain u
 
 ### <span id="User_interface"></span><span id="user_interface"></span><span id="USER_INTERFACE"></span>User interface
 
-To remove a profile from the preferred network list while it is in range, right-click the network and choose **Forget this network**. A network that is not in range cannot be removed from the list through the user interface.
+To remove a profile from the preferred network list while it is in range, select and hold (or right-click) the network and choose **Forget this network**. A network that is not in range cannot be removed from the list through the user interface.
 
 ### <span id="Win32_APIs"></span><span id="win32_apis"></span><span id="WIN32_APIS"></span>Win32 APIs
 
