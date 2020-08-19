@@ -21,7 +21,7 @@ A second process terminates the monitored process by calling **TerminateProcess*
 
 The monitoring feature does not detect normal process termination that happens when the last thread of the process exits. The monitoring feature does not detect process termination that is initiated by kernel-mode code.
 
-To register a process for silent exit monitoring, open the **Silent Process Exit** tab in GFlags. Enter the process name as the **Image** and press the **Tab** key. Check the **Enable Silent Process Exit Monitoring** box, and click **Apply**. This sets the FLG\_MONITOR\_SILENT\_PROCESS\_EXIT flag in the following registry entry.
+To register a process for silent exit monitoring, open the **Silent Process Exit** tab in GFlags. Enter the process name as the **Image** and press the **Tab** key. Check the **Enable Silent Process Exit Monitoring** box, and select **Apply**. This sets the FLG\_MONITOR\_SILENT\_PROCESS\_EXIT flag in the following registry entry.
 
 **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\*ProcessName*\\GlobalFlag**
 

@@ -39,7 +39,7 @@ After you have completed the above prerequisites we must now assign the appropri
 
 2. On the **Users** page, select **Azure AD applications** and the Azure AD application that represents the app or service that you will use to access submissions for your Partner Center account.  
 
-3. On this page, under **Roles**, click **Hardware**.
+3. On this page, under **Roles**, select **Hardware**.
 
     ![an image showing the Hardware tab in the Roles section](images/hardware-tab-in-roles-section.png)
 

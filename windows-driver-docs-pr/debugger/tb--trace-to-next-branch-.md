@@ -48,7 +48,6 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 <td align="left"><p><strong>Modes</strong></p></td>
 <td align="left"><p></p>
 <strong>x86-based:</strong> Kernel mode only
-<strong>Itanium-based:</strong> User mode, kernel mode
 <strong>x64-based:</strong> User mode, kernel mode</td>
 </tr>
 <tr class="even">
@@ -57,7 +56,7 @@ Specifies the number of branches to allow. Every time that a branch is encounter
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>x86-based (GenuineIntel processor family 6 and later), Itanium-based, x64-based</p></td>
+<td align="left"><p>x86-based (GenuineIntel processor family 6 and later), x64-based</p></td>
 </tr>
 </tbody>
 </table>

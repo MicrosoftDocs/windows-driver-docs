@@ -85,7 +85,7 @@ The setupapi.dev.log file has also reported the following error:
 
 Note that 0x34 is Code 52.
 
-At this point, review the log file and search for any driver binary with exclamation marks. This entry may provide some clues. Also run the “signtool verify” command (described before) on the cat file and other embedded signed binaries to ensure that there are no issues with signing the driver.
+To troubleshoot, review the log file and look for exclamation marks next to a driver binary. Run the `signtool verify` command on the cat file and other embedded signed binaries.
 
 Usually the log file information is sufficient to resolve the issue. If the above checks fail to find the root cause, then check the Windows security audit log and code Integrity event logs, described in the next section.
 

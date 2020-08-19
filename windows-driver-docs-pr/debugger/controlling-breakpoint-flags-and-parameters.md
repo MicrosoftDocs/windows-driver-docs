@@ -3,7 +3,7 @@ title: Controlling Breakpoint Flags and Parameters
 description: Controlling Breakpoint Flags and Parameters
 ms.assetid: ed702f01-2a30-4ffb-a804-167cf3b19936
 keywords: ["breakpoints, flags and parameters", "DEBUG_BREAK_READ", "DEBUG_BREAK_WRITE", "DEBUG_BREAK_EXECUTE", "DEBUG_BREAK_IO"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 ms.localizationpriority: medium
 ---
 
@@ -112,7 +112,6 @@ DEBUG_BREAK_READ
 </tbody>
 </table>
 
- 
 
 Not all access types and sizes are supported on all processors. The following access types and sizes are supported:
 
@@ -121,18 +120,3 @@ All access types are supported. DEBUG\_BREAK\_READ behaves like DEBUG\_BREAK\_RE
 
 <span id="x64"></span><span id="X64"></span>x64  
 All access types are supported. DEBUG\_BREAK\_READ behaves like DEBUG\_BREAK\_READ | DEBUG\_BREAK\_WRITE. The size must be 1, 2, 4, or 8. The breakpoint's address must be a multiple of the size.
-
-<span id="Itanium"></span><span id="itanium"></span><span id="ITANIUM"></span>Itanium  
-All access types except DEBUG\_BREAK\_IO are supported. The size must be a power of two; for DEBUG\_BREAK\_EXECUTE, the size must be 16. The breakpoint's address must be a multiple of the size.
-
-<span id="Itanium_running_in_x86_mode"></span><span id="itanium_running_in_x86_mode"></span><span id="ITANIUM_RUNNING_IN_X86_MODE"></span>Itanium running in x86 mode  
-The is the same as for x86, except that DEBUG\_BREAK\_IO is not supported.
-
- 
-
- 
-
-
-
-
-

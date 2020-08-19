@@ -57,7 +57,7 @@ Specifies the 64-bit hexadecimal value to write to the MSR.
 Remarks
 -------
 
-The **wrmsr** command can display MSR's on x86-based, Itanium-based, and x64-based platforms. The MSR definitions are platform-specific.
+The **wrmsr** command can display MSR's on x86-based and x64-based platforms. The MSR definitions are platform-specific.
 
 ## <span id="see_also"></span>See also
 

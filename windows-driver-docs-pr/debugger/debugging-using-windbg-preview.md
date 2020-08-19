@@ -86,7 +86,7 @@ For more information, see [Time Travel Debugging - Overview](time-travel-debuggi
 
 ### Debugging App packages
 
-Debugging your universal app or background task is now a single click.
+Debugging your universal app or background task is now a single click or select.
 
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 

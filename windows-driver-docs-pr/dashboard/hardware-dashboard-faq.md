@@ -98,7 +98,7 @@ This error is caused when the uploaded archive's filetype is .zip64 instead of .
 1. Rename the current .hckx/hlkx file to .zip.
 2. Extract to a folder.
 3. Open the folder.
-4. Select all items, then right-click and select **Send to Compressed zip folder**.
+4. Select all items, then select and hold (or right-click) and select **Send to Compressed zip folder**.
 5. Rename the new .zip folder as .hckx/.hlkx.
 6. Upload the new .hckx/.hlkx file.
 

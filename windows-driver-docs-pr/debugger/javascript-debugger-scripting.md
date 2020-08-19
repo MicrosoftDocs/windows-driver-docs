@@ -233,7 +233,7 @@ Debugger.State.Scripts
     FirstSampleFunction    
 ```
 
-We can click on the *FirstSampleFunction*, to see what functions it provides.
+We can select the *FirstSampleFunction*, to see what functions it provides.
 
 ```dbgcmd
 0:000> dx -r1 -v Debugger.State.Scripts.FirstSampleFunction.Contents
