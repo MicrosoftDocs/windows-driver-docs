@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # Using Device Manager
 
-To start Device Manager, in File explorer, right-click **This PC**, click **Manage**, and then select **Device Manager** from the System Tools that are listed in the resulting dialog.
+To start Device Manager, in File explorer, select and hold (or right-click) **This PC**, select **Manage**, and then select **Device Manager** from the System Tools that are listed in the resulting dialog.
 
 Device Manager displays information about each device. This includes the device type, device status, manufacturer, device-specific properties, and information about the driver for the device.
 
