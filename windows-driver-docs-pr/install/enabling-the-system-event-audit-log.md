@@ -23,7 +23,7 @@ This topic includes the following information:
 
 To enable security audit policy to capture load failures in the audit logs, follow these steps:
 
-1.  Open an elevated Command Prompt window. To open an elevated Command Prompt window, create a desktop shortcut to *Cmd.exe*, right-click the *Cmd.exe* shortcut, and select **Run as administrator**.
+1.  Open an elevated Command Prompt window. To open an elevated Command Prompt window, create a desktop shortcut to *Cmd.exe*, select and hold (or right-click) the *Cmd.exe* shortcut, and select **Run as administrator**.
 
 2.  In the elevated Command Prompt window, run the following command:
 
@@ -59,7 +59,7 @@ To enable verbose logging, follow these steps:
 
 6.  Select **Show Analytic and Debug Logs**. Event Viewer will then display a subtree that contains an **Operational** folder and a **Verbose** folder.
 
-7.  Right-click **Verbose** and then select **Properties** from the pop-up context menu.
+7.  Select and hold (or right-click) **Verbose** and then select **Properties** from the pop-up context menu.
 
 8.  Select the **General** tab on the **Properties** dialog box, and then select the **Enable Logging** option near the middle of the property page. This will enable verbose logging.
 
