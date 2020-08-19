@@ -110,17 +110,15 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
 
     After the certificate is created and a copy is put in the certificate store, the Microsoft Management Console (MMC) Certificates snap-in can be used to view it. Do the following to view a certificate through the MMC **Certificates** snap-in:
 
-    1.  Select Search.
+    1.  To start the Certificates snap-in, run Certmgr.msc.
 
-    2.  To start the Certificates snap-in, enter Certmgr.msc and select the result.
-
-    3.  In the left pane of the Certificates snap-in, expand the PrivateCertStore certificate store folder and select Certificates.
+    2.  In the left pane of the Certificates snap-in, expand the PrivateCertStore certificate store folder and double-click Certificates.
 
     The following screen shot shows the Certificates snap-in view of the **PrivateCertStore** certificate store folder.
 
     ![screen shot of the certificate store showing the test certificate ](images/tutorialprivatecertstore.png)
 
-    To view the details about the Contoso.com(Test) certificate, select and hold (or right-click) the certificate in the right pane and select Open. The following screen shot shows the details about the certificate.
+    To view the details about the Contoso.com(Test) certificate, double-click the certificate in the right pane. The following screen shot shows the details about the certificate.
 
     ![screen shot of the certificate window displaying general information about the contoso.com (test) certificate](images/tutorialcertificategeneraltab.png)
 
@@ -178,7 +176,7 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
 
     The inf2cat tool is very strict on checking each folder and sub-folder about the presence of every file which has an entry in the INF file. There will be meaningful error messages on such missing entries.
 
-    The cat file can be opened from explorer by selecting and holding (or right-clicking) on the file and selecting Open. The Security tab will show some entries with GUID values. Selecting a GUID value will display details including the driver files of the driver package and the OSes added as shown below:
+    The cat file can be opened from explorer by double-clicking or right-clicking the file and selecting Open. The Security tab will show some entries with GUID values. Selecting a GUID value will display details including the driver files of the driver package and the OSes added as shown below:
 
     ```cpp
     OSAttr  2:5.1,6.1
@@ -462,10 +460,10 @@ To verify that Toastpkg is operating correctly:
 
     ![screen shot showing the toaster device in the device manager](images/tutorialtoasterpackageindevicemgr.png)
 
-3.  To open the driver's Properties dialog box, select and hold (or right-click) Toaster Package Sample Toaster and select Properties
+3.  To open the driver's Properties dialog box, double-click Toaster Package Sample Toaster and select Properties
 4.  To confirm that Toaster is working properly, on the General tab, check the Device status box
 
-Device Manger can be used to uninstall the device and the driver from the Properties dialog box.
+Device Manager can be used to uninstall the device and the driver from the Properties dialog box.
 
 **How to Troubleshoot Test-Signed Drivers**
 
