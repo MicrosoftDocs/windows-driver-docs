@@ -41,7 +41,7 @@ You can disable UAC on Windows 7 by following these steps:
 
 You can disable UAC on Windows Vista and Windows Server 2008 by following these steps:
 
-1.  Start Control Panel and select and hold (or right-click) **User Accounts** and select Open.
+1.  Start Control Panel and double-click **User Accounts**.
 2.  In the User Accounts tasks window, select **Turn User Account Control on or off**.
 3.  Clear the **Use User Account Control (UAC) to help protect your computer** check box, and then select **OK**.
 
@@ -51,7 +51,7 @@ As soon as UAC is disabled, you must restart the test computer to apply the chan
 
 The WHQL test root certificate is installed on the test computer by following these steps:
 
-1.  In Windows Explorer, select and hold (or right-click) the test root certificate file (*Testroot.cer*), select Open, and then select **Install Certificate**.
+1.  Double-click the test root certificate (*Testroot.cer*) and then select **Install Certificate**.
 
 2.  Select **Place all certificates in the following store**, and then select **Browse**.
 
