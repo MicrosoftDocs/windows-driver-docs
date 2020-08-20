@@ -54,25 +54,21 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 1. From Control Panel, open Device Manager, expand the Firmware node, and select the TBD
 
-1. TBD
-
-1. TBD
-
 ## Install a firmware update for the CFU virtual HID device
 
-TBD
+Step 1
 
 ![step 1](images/install-cfu-virtual-device-firmware-update-1.png)
 
-TBD
+Step 2
 
 ![step 2](images/install-cfu-virtual-device-firmware-update-2.png)
 
-TBD
+Step 3
 
 ![step 3](images/install-cfu-virtual-device-firmware-update-3.png)
 
-TBD
+Step 4
 
 ![step 4](images/install-cfu-virtual-device-firmware-update-4.png)
 
