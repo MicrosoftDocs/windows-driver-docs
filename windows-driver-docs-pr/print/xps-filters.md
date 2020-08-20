@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 
 For the XPS print path, filters are the primary way that a driver prepares print data for the printer. In versions of the Microsoft Windows operating system before Windows Vista, print processors and rendering modules did the work of filters.
 
-An XPS filter is a DLL that exports [DllGetClassObject](https://go.microsoft.com/fwlink/p/?linkid=123418) and [DllCanUnloadNow](https://go.microsoft.com/fwlink/p/?linkid=123419) functions. The filter pipeline manager calls these functions when it loads and unloads the XPS filter DLL. After loading the filter DLL, the filter pipeline manager does the following:
+An XPS filter is a DLL that exports [DllGetClassObject](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) and [DllCanUnloadNow](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow) functions. The filter pipeline manager calls these functions when it loads and unloads the XPS filter DLL. After loading the filter DLL, the filter pipeline manager does the following:
 
-- Calls **DllGetClassObject** to obtain a reference to the filter object's [IClassFactory](https://go.microsoft.com/fwlink/p/?linkid=123420) interface.
+- Calls **DllGetClassObject** to obtain a reference to the filter object's [IClassFactory](https://docs.microsoft.com/windows/win32/api/unknwn/nn-unknwn-iclassfactory) interface.
 
-- Calls the [IClassFactory::CreateInstance](https://go.microsoft.com/fwlink/p/?linkid=123421) method to obtain a reference to the filter object's [IPrintPipelineFilter](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelinefilter) interface.
+- Calls the [IClassFactory::CreateInstance](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iclassfactory-createinstance) method to obtain a reference to the filter object's [IPrintPipelineFilter](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelinefilter) interface.
 
 - Calls the [**IPrintPipelineFilter::InitializeFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iprintpipelinefilter-initializefilter) method to initialize the filter object.
 

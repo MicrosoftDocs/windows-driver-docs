@@ -113,7 +113,7 @@ You can use the following unary operators.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>poi</strong></p></td>
-<td align="left"><p>Pointer-sized data from the specified address. The pointer size is 32 bits or 64 bits. In kernel debugging, this size is based on the processor of the <em>target</em> computer. In user-mode debugging on an Itanium-based computer, this size is 32 bits or 64 bits, depending on the target application. Therefore, <strong>poi</strong> is the best operator to use if you want pointer-sized data.</p></td>
+<td align="left"><p>Pointer-sized data from the specified address. The pointer size is 32 bits or 64 bits. In kernel debugging, this size is based on the processor of the <em>target</em> computer. Therefore, <strong>poi</strong> is the best operator to use if you want pointer-sized data.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$ppoi</strong></p></td>

@@ -32,7 +32,7 @@ In the SDK installation wizard, select **Debugging Tools for Windows**, and dese
 
 ### Adding the Debugging Tools for Windows if the SDK is already installed
 
-If the Windows SDK is already installed, open **Settings**, navigate to **Apps & features**, select **Windows Software Development Kit**, and then click **Modify** to change the installation to add **Debugging Tools for Windows**.
+If the Windows SDK is already installed, open **Settings**, navigate to **Apps & features**, select **Windows Software Development Kit**, and then select **Modify** to change the installation to add **Debugging Tools for Windows**.
 
 -------------------
 

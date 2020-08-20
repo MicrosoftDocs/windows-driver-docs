@@ -107,4 +107,4 @@ Windows Server 2016
 
 Windows 10, version 1607
 
-For more information, see the [Windows SMM Security Mitigations Table (WSMT) specification](https://go.microsoft.com/fwlink/p/?LinkId=786943).
+For more information, see the [Windows SMM Security Mitigations Table (WSMT) specification (DOCX download)](https://go.microsoft.com/fwlink/p/?LinkId=786943).

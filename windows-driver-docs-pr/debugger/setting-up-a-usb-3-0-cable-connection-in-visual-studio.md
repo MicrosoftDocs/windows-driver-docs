@@ -74,7 +74,7 @@ Debugging over a USB 3.0 connection requires the following hardware:
 
     If you have more than one USB host controller on the target computer, enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 48.0.0).
 
-4.  The configuration process takes several minutes and might automatically reboot the target computer once or twice. When the process is complete, click **Finish**.
+4.  The configuration process takes several minutes and might automatically reboot the target computer once or twice. When the process is complete, select **Finish**.
 
 ## <span id="Verifying_dbgsettings_on_the_Target_Computer"></span><span id="verifying_dbgsettings_on_the_target_computer"></span><span id="VERIFYING_DBGSETTINGS_ON_THE_TARGET_COMPUTER"></span>Verifying dbgsettings on the Target Computer
 
@@ -119,7 +119,7 @@ Reboot the target computer.
 3.  On the **Tools** menu, choose **Attach to Process**.
 4.  For **Transport**, choose **Windows Kernel Mode Debugger**.
 5.  For **Qualifier**, select the name of the target computer that you previously configured.
-6.  Click **Attach**.
+6. Select **Attach**.
 
 At this point, the USB debug driver gets installed on the host computer. This is why it is important to run Visual Studio as Administrator. After the USB debug driver is installed, you do not need to run as Administrator for subsequent debugging sessions.
 
@@ -129,15 +129,15 @@ At this point, the USB debug driver gets installed on the host computer. This is
 1.  On the host computer, in Visual Studio, on the **Tools** menu, choose **Attach to Process**.
 2.  For **Transport**, choose **Windows Kernel Mode Debugger**.
 3.  For **Qualifier**, select the name of the target computer that you previously configured.
-4.  Click **Attach**.
+4.  Select **Attach**.
 
 ## <span id="troubleshooting_tips_for_debugging_over_usb_3.0"></span><span id="TROUBLESHOOTING_TIPS_FOR_DEBUGGING_OVER_USB_3.0"></span>Troubleshooting tips for debugging over USB 3.0
 
 
 In some cases, power transitions can interfere with debugging over USB 3.0. If you have this problem, disable selective suspend for the xHCI host controller (and its root hub) that you are using for debugging.
 
-1.  In Device Manager, navigate to the node for the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
-2.  In Device Manager, navigate to the node for the root hub of the xHCI host controller. Right click the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+1.  In Device Manager, navigate to the node for the xHCI host controller. Select and hold (or right-click) the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
+2.  In Device Manager, navigate to the node for the root hub of the xHCI host controller. Select and hold (or right-click) the node, and choose **Properties**. If there is a **Power Management** tab, open the tab, and clear the **Allow the computer to turn off this device to save power** check box.
 
 When you have finished using the xHCI host controller for debugging, enable selective suspend for the xHCI host controller.
 

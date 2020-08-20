@@ -35,7 +35,7 @@ To fix this problem, use one of the following methods.
 Uninstall the device. To do this, follow these steps:
 
 1. Open Device Manager.
-1. Right-click (or tap and hold) the name of the device, and then select **Uninstall**.
+1. Select and hold (or double-click) the name of the device, and then select **Uninstall**.
 
 > Note:
 > In step 2, don't select the **Delete the driver software for this device** check box.

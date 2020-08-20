@@ -197,7 +197,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
     Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
 
--   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+-   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 

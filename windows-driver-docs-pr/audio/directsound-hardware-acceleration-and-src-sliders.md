@@ -27,9 +27,9 @@ To locate the DirectSound hardware-acceleration and SRC sliders in Windows, for 
 
 2.  On the **Audio** tab, select a device from the **Sound Playback** list.
 
-3.  Click the **Advanced** button.
+3.  Select the **Advanced** button.
 
-4.  Click the **Performance** tab.
+4.  Select the **Performance** tab.
 
 At this point, you should see two sliders that are labeled **Hardware acceleration** and **Sample rate conversion quality**.
 

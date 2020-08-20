@@ -43,7 +43,7 @@ There are several transport protocols you can use for a remote debugging connect
 
    where *YourHostComputer* is the name of your host computer, which is running the debugging server.
 
-   Click **OK**.
+   Select **OK**.
 
 ## <span id="Using_the_Command_Line"></span><span id="using_the_command_line"></span><span id="USING_THE_COMMAND_LINE"></span>Using the Command Line
 
