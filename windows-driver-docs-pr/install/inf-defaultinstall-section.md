@@ -1,6 +1,6 @@
 ---
 title: INF DefaultInstall Section
-description: An INF file's DefaultInstall section is accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
+description: An INF file's DefaultInstall section is accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
 ms.assetid: 41412124-38d9-43c0-9954-d34b242a3922
 keywords:
 - INF DefaultInstall Section Device and Driver Installation
@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
  
 
-An INF file's **DefaultInstall** section is accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
+An INF file's **DefaultInstall** section is accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
 
 ```inf
 [DefaultInstall] | 
@@ -155,7 +155,7 @@ Remarks
 
  
 
-Providing a **DefaultInstall** section is optional. If an INF file does not include a **DefaultInstall** section, selecting "Install" after right-clicking on the file name causes an error message to be displayed.
+Providing a **DefaultInstall** section is optional. If an INF file does not include a **DefaultInstall** section, selecting "Install" after selecting and holding (or right-clicking) on the file name causes an error message to be displayed.
 
 **Note**  Unlike a [***DDInstall***](inf-ddinstall-section.md) section, a **DefaultInstall** section cannot contain [**DriverVer**](inf-driverver-directive.md) or [**LogConfig**](inf-logconfig-directive.md) directives.
 
@@ -182,7 +182,7 @@ CopyFiles=MyAppWinFiles, MyAppSysFiles, @SRSutil.exe
 AddReg=MyAppRegEntries
 ```
 
-In this example, the **DefaultInstall** section is executed if a user selects "Install" after right-clicking on the INF file name.
+In this example, the **DefaultInstall** section is executed if a user selects "Install" after selecting and holding (or right-clicking) on the INF file name.
 
 ## See also
 
