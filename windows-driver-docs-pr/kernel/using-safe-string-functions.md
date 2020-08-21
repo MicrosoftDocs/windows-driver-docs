@@ -25,9 +25,7 @@ The set of kernel-mode safe string functions consists of the following two subse
 
 -   [Safe string functions for Unicode and ANSI characters](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
-    Each of these functions is available in a W-suffixed version that supports double-byte Unicode characters and an A-suffixed version that supports single-byte ANSI characters. For example, [**RtlStringCbCatN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatna), which concatenates two strings and limits the length of the appended string, is available as [**RtlStringCbCatNW**]
-(https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatnw) and [**RtlStringCbCatNA**]
-(https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe//nf-ntstrsafe-rtlstringcbcatna).
+    Each of these functions is available in a W-suffixed version that supports double-byte Unicode characters and an A-suffixed version that supports single-byte ANSI characters. For example, [**RtlStringCbCatN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatna), which concatenates two strings and limits the length of the appended string, is available as [**RtlStringCbCatNW**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatnw) and [**RtlStringCbCatNA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe//nf-ntstrsafe-rtlstringcbcatna).
 
 -   [Safe string functions for UNICODE\_STRING structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
