@@ -11,14 +11,12 @@ ms.localizationpriority: medium
 
 # Sample Metadata Response Output
 
-
 If wsdbit\_client was used with wsdbit\_server, the following code example shows what the metadata response output on the client side would look like.
 
-**Note**   The host address endpoints will be different every time that the server is run.
+>[!NOTE]
+>The host address endpoints will be different every time that the server is run.
 
- 
-
-```
+```command
 -Dialect:       http://schemas.xmlsoap.org/ws/2006/02/devprof/ThisDevice
 Device Metadata
         -FriendlyName [-----]: WSDAPI Basic Interop Server
@@ -64,12 +62,3 @@ Relationship Metadata
          -Any:         (absent)
 End Relationship Metadata
 ```
-
- 
-
- 
-
-
-
-
-
