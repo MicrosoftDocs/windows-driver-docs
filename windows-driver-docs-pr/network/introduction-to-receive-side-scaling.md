@@ -8,6 +8,7 @@ keywords:
 - CPU determination WDK RSS
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+ms.custom: contperfq1
 ---
 
 # Introduction to Receive Side Scaling
