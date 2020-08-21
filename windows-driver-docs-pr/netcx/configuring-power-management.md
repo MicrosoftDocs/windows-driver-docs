@@ -173,15 +173,15 @@ On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filte
 > [!IMPORTANT]
 > It is mandatory that client drivers report wake reason to NetAdapterCx.
 
-When the NIC hardware wakes up the system, the client driver must report which wake source triggered the wake to NetAdapterCx.
+When the NIC hardware wakes up the system, the client driver must report to NetAdapterCx which wake source triggered the wake.
 
 If the [**NET_WAKE_SOURCE_TYPE**](/windows-hardware/drivers/ddi/netwakesource/ne-netwakesource-_net_wake_source_type) is:
 
 - NetWakeSourceTypeBitmapPattern, call [**NetAdapterReportWakeReasonPacket**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonpacket) with the [**NET_ADAPTER_WAKE_REASON_PACKET**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_wake_reason_packet) structure to describe the exact packet.
 
-- NetWakeSourceTypeMagicPacket, call **NetAdapterReportWakeReasonPacket** and the NET_ADAPTER_WAKE_REASON_MAGIC_PACKET_INIT macro to report the wake reason.
+- NetWakeSourceTypeMagicPacket, call **NetAdapterReportWakeReasonPacket** and the [**NET_ADAPTER_WAKE_REASON_MAGIC_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_magic_packet_init) macro to report the wake reason.
 
-- NetWakeSourceTypePacketFilterMatch, call **NetAdapterReportWakeReasonPacket** and the NET_ADAPTER_WAKE_REASON_PACKET_FILTER_INIT macro to report the wake reason.
+- NetWakeSourceTypePacketFilterMatch, call **NetAdapterReportWakeReasonPacket** and the [**NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT**]((/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_filter_packet_init)) macro to report the wake reason.
 
 - NetWakeSourceTypeMediaChange, call [**NetAdapterReportWakeReasonMediaChange**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonmediachange).
 
