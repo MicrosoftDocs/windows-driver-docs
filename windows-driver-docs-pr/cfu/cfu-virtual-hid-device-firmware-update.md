@@ -34,7 +34,7 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
     1. Open the CfuVirtualHid.sln file in Visual Studio.
 
-    1. From the **Build** menu, select **Build Solution**. You should see the following output:
+    1. From the **Build** menu, select **Build Solution**. You should see output text indicating that the solution built successfully:
 
         ![CfuVirtualHid build success](images/cfuvirtualhid-build-succeeded.png)
 
@@ -50,9 +50,39 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
         devcon.exe install cfuvirtualhid.inf HID\CFU_VIRTUAL_DEVICE
         ```
 
-1. TBD
+        You should see output text indicating that the virtual device installed successfully:
 
-1. From Control Panel, open Device Manager, expand the Firmware node, and select the TBD
+        ![CfuVirtualHid device install success](images/cfuvirtualhid-device-install-succeeded.png)
+
+1. From **Control Panel**, open **Device Manager**, select the **View** menu, and select the **Devices by type** menu item.
+
+1. In the devices list, expand the **Firmware** node, and select the **CfuVirtualHid Device** as shown here:
+
+     ![CfuVirtualHid device selected](images/cfuvirtualhid-device-selected.png)
+
+1. Right-click the **CfuVirtualHid Device** to open the context menu, then click on the **Properties** menu item to open the **CfuVirtualHid Device Properties** dialog window.
+
+1. Select the **Details** tab in the **CfuVirtualHid Device Properties** dialog window, then select **Hardware Ids** in the **Property** drop down list.
+
+    You should see the **HID\CFU_VIRTUAL_DEVICE** in the **Value** list box as shown here:
+
+    ![HID\CFU_VIRTUAL_DEVICE in value list box](images/cfuvirtualhid-device-selected.png)
+
+1. In the **Device Manager** menu, select the **View** menu, and select the **Devices by connection** menu item.
+
+    ![CfuVirtualHid view devices by connection](cfuvirtualhid-view-devices-by-connection.png)
+
+1. Navigate to the **CfuVirtualHid Device** and expand the **CfuVirtualHid Device** node, expand the **Virtual HID Framework (VHF) HID device** node, and select the **HID-compliant device** list item as shown here:
+
+    ![HID compliant device list item](hid-compliant-device-list-item.png)
+
+1. Right-click the **HID-compliant device** to open the context menu, then click on the **Properties** menu item to open the **HID-compliant device Properties** dialog window.
+
+1. Select the **Details** tab in the **HID-compliant device Properties** dialog window, then select **Hardware Ids** in the **Property** drop down list.
+
+    You should see **HID\VID_045E&UP:FA00_U:00F5** in the **Value** list box as shown here:
+
+    ![HID VID device in the value list](hid-vid-045e-up-fa00-u-00f5-device-list-item.png)
 
 ## Install a firmware update for the CFU virtual HID device
 
