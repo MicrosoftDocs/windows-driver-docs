@@ -12,7 +12,7 @@ Kernel-mode components provide performance counters using the Performance Counte
 
 Use the following steps to develop new counter data providers:
 
-1. [Write a counter manifest](https://docs.microsoft.com/windows/win32/perfctrs/performance-counters-schema) that describes the provider and its counter sets. The counter manifest is an XML-format file that defines the performance counter provider and its counter sets.
+1. [Write a counter manifest](https://docs.microsoft.com/windows/win32/perfctrs/performance-counters-schema) that describes the provider and its countersets. The counter manifest is an XML-format file that defines the performance counter provider and its countersets.
    - Set the `applicationIdentity` attribute to the name of a binary that will be installed as part of your kernel-mode component and that will contain the string resources needed by performance data consumers.
    - Set the `providerType` attribute to `kernelMode`.
    - Define at least one `struct` element (under `counterSet/structs`) with the name of a C/C++ structure that will be used when passing counter values from your component to the PCW APIs.
