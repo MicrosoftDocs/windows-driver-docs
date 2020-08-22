@@ -25,7 +25,7 @@ The set of kernel-mode safe string functions consists of the following two subse
 
 -   [Safe string functions for Unicode and ANSI characters](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
-    Each of these functions is available in a W-suffixed version that supports double-byte Unicode characters and an A-suffixed version that supports single-byte ANSI characters. For example, [**RtlStringCbCatN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatna), which concatenates two strings and limits the length of the appended string, is available as **RtlStringCbCatNW** and **RtlStringCbCatNA**.
+    Each of these functions is available in a W-suffixed version that supports double-byte Unicode characters and an A-suffixed version that supports single-byte ANSI characters. For example, [**RtlStringCbCatN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatna), which concatenates two strings and limits the length of the appended string, is available as [**RtlStringCbCatNW**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatnw) and [**RtlStringCbCatNA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe//nf-ntstrsafe-rtlstringcbcatna).
 
 -   [Safe string functions for UNICODE\_STRING structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
 
@@ -39,9 +39,9 @@ The kernel-mode safe string functions provide the following features:
 
 -   All safe string functions return an NTSTATUS value, with only one possible success code (STATUS\_SUCCESS).
 
--   Most safe string functions are available in both a byte-counted and a character-counted version. For example, [**RtlStringCbCat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata) concatenates two byte-counted strings and [**RtlStringCchCat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcata) concatenates two character-counted strings.
+-   Most safe string functions are available in both a byte-counted and a character-counted version. For example, [**RtlStringCbCata**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata) concatenates two byte-counted strings and [**RtlStringCchCata**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcata) concatenates two character-counted strings.
 
--   Most safe string functions are available in an extended, Ex-suffixed version that provides additional functionality. For example, [**RtlStringCbCatEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatexa) extends the functionality of [**RtlStringCbCat**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata).
+-   Most safe string functions are available in an extended, Ex-suffixed version that provides additional functionality. For example, [**RtlStringCbCatExa**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcatexa) extends the functionality of [**RtlStringCbCata**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcata).
 
 This section includes the following topics:
 
