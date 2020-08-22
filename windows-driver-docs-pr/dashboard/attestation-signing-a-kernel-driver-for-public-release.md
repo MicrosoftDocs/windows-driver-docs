@@ -13,6 +13,7 @@ This topic describes how to sign a driver using attestation signing.
 
 > [!Note]
 > Attestation signing has the following properties.
+>
 > - Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
 > - Attestation signing will not return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 > - Attestation signing requires the use of an EV Certificate to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
@@ -81,7 +82,8 @@ Typical CAB file submissions contain the following:
 
   > [!NOTE]
   > Each driver folder in your CAB file must support the same set of architectures. For example, they must support x86, x64, or they all must support both x86 and x64.
-  > - Do not use UNC file share paths when referencing your driver locations (\\\server\share).  You must use a mapped drive letter for the CAB to be valid. 
+  >
+  > Do not use UNC file share paths when referencing your driver locations (\\\server\share).  You must use a mapped drive letter for the CAB to be valid.
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
@@ -132,7 +134,6 @@ MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 C:\Echo\Echo.Inf
 C:\Echo\Echo.Sys
 ```
- 
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
@@ -172,9 +173,9 @@ C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 
 
 1. Submit the EV signed CAB file using the Partner Center. See [Driver Signing Properties](https://docs.microsoft.com/windows-hardware/drivers/develop/driver-signing-properties) for more information.
 
-   * As part of the Attestation submission process, do not check any of the Test Signing boxes highlighted below.  Leave those unchecked.
+   - As part of the Attestation submission process, do not check any of the Test Signing boxes highlighted below.  Leave those unchecked.
 
-   * The following screen shot shows the options for submitting the echo driver for signing.
+   - The following screen shot shows the options for submitting the echo driver for signing.
     ![a screenshot showing the options for submitting the echo driver for signing](images/Attestation-Flow.PNG)
 
 2. When the signing process is complete, download your signed driver from the hardware dashboard.
