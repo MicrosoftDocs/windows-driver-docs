@@ -118,10 +118,10 @@ You can activate the Deadlock Detection feature for one or more drivers by using
 
 - **Using Driver Verifier Manager**
 
-    1. Select **Create custom settings (for code developers)** and then click **Next**.
+    1. Select **Create custom settings (for code developers)** and then select **Next**.
 
     1. Select **Select individual settings from a full list**.
 
     1. Select (check) **Deadlock detection**.
 
-The Deadlock Detection feature is also included in the standard settings. To use this feature, in **Driver Verifier Manager**, click **Create Standard Settings**.
+The Deadlock Detection feature is also included in the standard settings. To use this feature, in **Driver Verifier Manager**, select **Create Standard Settings**.
