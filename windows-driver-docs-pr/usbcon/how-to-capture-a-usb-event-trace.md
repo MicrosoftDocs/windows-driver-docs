@@ -26,7 +26,7 @@ Instructions
 
 **To collect USB trace events**
 
-1.  Open a command-prompt window that has administrative privileges. To do so, click Start, type **cmd** in the search box, right-click cmd.exe, and then select **Run as administrator**.
+1.  Open a command-prompt window that has administrative privileges. To do so, select Start, type **cmd** in the search box, Select and hold (or right-click) cmd.exe, and then select **Run as administrator**.
 2.  In the command-prompt window, enter these commands to start a capture session:
 
     ```cpp

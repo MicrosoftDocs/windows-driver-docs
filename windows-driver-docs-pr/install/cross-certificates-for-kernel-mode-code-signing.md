@@ -39,7 +39,7 @@ Microsoft provides a specific cross-certificate for each CA that issues SPCs for
 Follow the steps below to identify your CA, and then download the related cross-certificate.
 
 1.  Open the Microsoft Management Console (MMC) and add the Certificates snap-in:
-    1.  Select the Start button, type “mmc” in the search box, and select mmc from the search results. If a User Account Control dialog box appears, click Yes.
+    1.  Select the Start button, type “mmc” in the search box, and select mmc from the search results. If a User Account Control dialog box appears, select Yes.
     2.  From the MMC File menu, select Add/Remove Snap-in, …
     3.  Select the Certificates snap-in and select Add.
     4.  Select My user account and select Finish.

@@ -16,21 +16,21 @@ The instructions in this topic will focus on the steps required for building a d
 
 ### Select features for the basic driver
 
-1. In Visual Studio, in the main menu, click **File** > **New** > **Project**.
+1. In Visual Studio, in the main menu, select **File** > **New** > **Project**.
 
 2. In the **New Project** window, in the top-right search box, type *printer driver v4* and press enter. This will retrieve all driver templates whose names contain the search text.
 
 3. In the middle pane, select **Printer Driver V4**.
 
-4. Type a name for your driver in the **Name** field, and then click **OK**. For example, you could type *MyV4PrintDriver*.
+4. Type a name for your driver in the **Name** field, and then select **OK**. For example, you could type *MyV4PrintDriver*.
 
-5. In the **Create a v4 Print Driver Wizard**, under **Choose the driver rendering type:**, click **V4 print driver with custom rendering filters (accepts XPS only)**.
+5. In the **Create a v4 Print Driver Wizard**, under **Choose the driver rendering type:**, select **V4 print driver with custom rendering filters (accepts XPS only)**.
 
-6. Leave all other options at their default settings and click **Next**.
+6. Leave all other options at their default settings and select **Next**.
 
-7. In the **Setup information** section of the wizard, leave all options at their default settings, then click **Next**.
+7. In the **Setup information** section of the wizard, leave all options at their default settings, then select **Next**.
 
-8. In the **Setup information (page 2)** section of the wizard, leave all options at their default settings, then click **Next**.
+8. In the **Setup information (page 2)** section of the wizard, leave all options at their default settings, then select **Next**.
 
 Microsoft Visual Studio uses the preceding selections to generate the project files for *MyV4PrintDriver*.
 
@@ -56,11 +56,11 @@ Notice from the preceding table that one of the files that is created is an INF 
 
 1. In the Visual Studio Tools menu select **Create GUID**.
 
-2. Select option **4. Registry Format** and click the **Copy** button.
+2. Select option **4. Registry Format** and select the **Copy** button.
 
 3. In Visual Studio, in the Solution Explorer, expand the *MyV4PrintDriver* node.
 
-4. Click **Driver Files**, then in the **Properties** window, look at the value for the *Unique Identifier* field. Replace this value with the GUID you generated using **Paste**.
+4. Select **Driver Files**, then in the **Properties** window, look at the value for the *Unique Identifier* field. Replace this value with the GUID you generated using **Paste**.
 
 ### Complete the INF file
 
@@ -138,7 +138,7 @@ This section references the Install section of the INF for each model. For examp
 
 In Visual Studio, in the Solution Explorer, expand the *MyV4PrintDriver* node.
 
-Click **Driver Files**, then in the **Properties** window look at the value for the *Unique Identifier* field. This is the driver ID (the GUID). Highlight it and copy it
+Select **Driver Files**, then in the **Properties** window look at the value for the *Unique Identifier* field. This is the driver ID (the GUID). Highlight it and copy it
 
 In the INF file, in the **\[Standard.NT$ARCH$\]** section, type the following line:
 
@@ -227,56 +227,56 @@ DiskName="MyV4PrintDriver Installation Disk"
 
 ### Add the Pipeline Config file to the driver package
 
-1. In the Solution Explorer, right-click *MyV4PrintDriver* project, then click **Properties**.
+1. In the Solution Explorer, select and hold (or right-click) *MyV4PrintDriver* project, then select **Properties**.
 
 2. In the **MyV4PrintDriver Property Pages** window, expand **Configuration Properties** in the left pane.
 
-3. Expand **Driver Install**, then click **Package Files**. Do the following in the right pane:
+3. Expand **Driver Install**, then select **Package Files**. Do the following in the right pane:
     - Navigate to the project directory.
     - Navigate down in to the *MyV4PrintDriver Render Filter* directory.
     - Select the file MyV4PrintDriverRenderFilter-PipelineConfig.xml and press **Open**.
-    - Click **OK**.
+    - Select **OK**.
 
 ### Add a reference to the render filter to the driver package
 
 1. In Visual Studio, in the Solution Explorer, expand the *MyV4PrinterDriver* node.
 
-2. Right click the **References** node -> select **Add Reference**.
+2. Select and hold (or right-click) the **References** node -> select **Add Reference**.
 
-3. Click the check box for *MyV4PrintDriver Render Filter*, then click **OK**.
+3. Select the check box for *MyV4PrintDriver Render Filter*, then select **OK**.
 
 ### Configure the driver solution for debugging and deployment
 
-1. In the Solution Explorer, right-click *MyV4PrintDriver* project, then click **Properties**.
+1. In the Solution Explorer, select and hold (or right-click) *MyV4PrintDriver* project, then select **Properties**.
 
 2. In the **MyV4PrintDriver Property Pages** window, expand **Configuration Properties** in the left pane.
 
-3. Expand **Driver Install**, then click **Deployment**. Do the following in the right pane:
-    - Ensure that the **Target Computer Name** is configured. If it isn’t, click "…" and follow the prompts in the **Configure Devices** wizard to set up a remote target computer.
+3. Expand **Driver Install**, then select **Deployment**. Do the following in the right pane:
+    - Ensure that the **Target Computer Name** is configured. If it isn’t, select "…" and follow the prompts in the **Configure Devices** wizard to set up a remote target computer.
     - Check **Remove previous driver versions before deployment**.
     - Select **Install/Reinstall and Verify**, then select **Default Printer Driver Package Installation Task** from the drop-down box.
     - Type the name of the driver in the **Optional Arguments** field (without any quotes around the name).
-    - Click **OK**.
+    - Select **OK**.
 
 ### Configure Driver Signing
 
-1. In the Solution Explorer, right-click *MyV4PrintDriver* project, then click **Properties**.
+1. In the Solution Explorer, select and hold (or right-click) *MyV4PrintDriver* project, then select **Properties**.
 
 2. In the **MyV4PrintDriver Property Pages** window, expand **Configuration Properties** in the left pane.
 
-3. Expand **Driver Signing**, then click **General**.
+3. Expand **Driver Signing**, then select **General**.
 
 4. In the right pane, confirm that **Sign Mode** is set to Test Sign.
 
-5. Click **Test Certificate**, then select **Create Test Certificate...** from the drop-down box.
+5. Select **Test Certificate**, then select **Create Test Certificate...** from the drop-down box.
 
-6. Click **TimeStampServer**, then select Verisign from the drop-down box.
+6. Select **TimeStampServer**, then select Verisign from the drop-down box.
 
-7. Click **OK**.
+7. Select **OK**.
 
 ### Build and deploy the driver
 
-1. In Solution Explorer, right-click *Solution MyV4PrintDriver (2 projects)*, and click **Build Solution**.
+1. In Solution Explorer, select and hold (or right-click) *Solution MyV4PrintDriver (2 projects)*, and select **Build Solution**.
 
 2. When the Build process is complete the driver will automatically be installed. Make sure that there are no errors in the Output window.
 

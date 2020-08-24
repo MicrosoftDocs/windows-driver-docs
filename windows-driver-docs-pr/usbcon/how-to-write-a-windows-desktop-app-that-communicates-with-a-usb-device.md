@@ -20,8 +20,8 @@ To create an application from the template:
 
 1. In the **New Project** dialog box, in the search box at the top, type **USB.**
 2. In the middle pane, select **WinUSB Application (Universal)**.
-3. Click **Next**.
-4. Enter a project name, choose a save location, and click **Create**.
+3. Select **Next**.
+4. Enter a project name, choose a save location, and select **Create**.
 
     The following screenshots show the **New Project** dialog box for the **WinUSB Application (Universal)** template.
 
@@ -37,14 +37,14 @@ To create an application from the template:
 
     The USB Application1 project has source files for the application. If you want to look at the application source code, you can open any of the files that appear under **Source Files**.  
 
-5. Add a driver package project to the solution. Right-click the solution (Solution 'USB Application1'), then click **Add** \> **New Project** as shown in the following screenshot.
+5. Add a driver package project to the solution. Select and hold (or right-click) the solution (Solution 'USB Application1'), then select **Add** \> **New Project** as shown in the following screenshot.
 
     ![winusb template creation second project addition](images/winusb-template-creation-3.png)
 
 6. In the **New Project** dialog box, in the search box at the top, once again type **USB.**
 7. In the middle pane, select **WinUSB INF Driver Package**.
-8. Click **Next**.
-9. Enter a project name, then click **Create**.
+8. Select **Next**.
+9. Enter a project name, then select **Create**.
 
     The following screenshots show the **New Project** dialog box for the **WinUSB INF Driver Package** template.
 
@@ -63,7 +63,7 @@ To create an application from the template:
 10. In the INF file, USBApplication1.inf, locate this code:   `%DeviceName% =USB_Install, USB\VID_vvvv&PID_pppp`
 
 11. Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
-12. In the **Solution Explorer** window, right-click **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
+12. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
 
 ![winusb application template](images/winusb-template-configuration-manager.png)
 
@@ -100,11 +100,11 @@ You can deploy, install, load, and debug your application and the driver by foll
 
   This include statement is required for the `system()` call in the preceding step.
 
-  5. In the **Solution Explorer** window, right-click USB Application1 Package, and choose **Properties**.
+  5. In the **Solution Explorer** window, select and hold (or right-click) USB Application1 Package, and choose **Properties**.
   6. In the **USB Application1 Package Property Pages** window, in the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown in the following screen shot.
   7. Check **Remove previous driver versions before deployment**.
   8. For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named dbg-target.
-  9. Select **Install/Reinstall and Verify**. Click **Apply**.
+  9. Select **Install/Reinstall and Verify**. Select **Apply**.
 
         ![winusb template deployment](images/winusb-template-deployment.png)
 
@@ -136,7 +136,7 @@ Deployment may take a few minutes...
 
     ![winusb template debug setting](images/winusb-template6.png)
 
-6. Select the application from the list of **Available Processes** and click **Attach**. You can now debug using **Immediate Window** or by using the options in **Debug** menu.
+6. Select the application from the list of **Available Processes** and select **Attach**. You can now debug using **Immediate Window** or by using the options in **Debug** menu.
 
 The preceding instructions debug the application by using **Debugging Tools for Windows – Remote Debugger**. If you want to use the **Remote Windows Debugger** (the debugger that is included with Visual Studio), then follow these instructions:
 
@@ -145,7 +145,7 @@ The preceding instructions debug the application by using **Debugging Tools for 
 3. Create a working folder, such as, C:\\remotetemp.
 4. Copy the application executable, UsbApplication1.exe to the working folder on the target computer.
 5. On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
-6. Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
+6. Select and hold (or right-click) the **USB Application1** project, in project properties expand the **Configuration Properties** node and select **Debugging**.
 7. Change **Debugger to launch** to **Remote Windows Debugger**.
 8. Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](https://docs.microsoft.com/visualstudio/debugger/remote-debugging?view=vs-2015). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
 9. To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
@@ -159,9 +159,9 @@ The preceding instructions debug the application by using **Debugging Tools for 
 
         **Note**  There is no driver file included in the package. That is because the INF file references the in-box driver, Winusb.sys, found in Windows\\System32 folder.
   3. Manually install the driver. In Device Manager, update the driver by specifying the INF in the package. Point to the driver package located in the solution folder, shown in the preceding section.
-  4. Right-click the **USB Application1** project, in project properties expand the **Configuration Properties** node and click **Debugging**.
+  4. Select and hold (or right-click) the **USB Application1** project, in project properties expand the **Configuration Properties** node and select **Debugging**.
   5. Change **Debugger to launch** to **Local Windows Debugger**.
-  6. Right-click the USB Application1 Package project, and select **Unload Project**.
+  6. Select and hold (or right-click) the USB Application1 Package project, and select **Unload Project**.
   7. To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5**.
 
 ## Template code discussion

@@ -116,7 +116,7 @@ There are a number of ways to test your UCSI implementation. To test individual 
 You can test individual commands in your UCSI BIOS/EC implementation by using UCSIControl.exe. This tool enables you to send UCSI commands to the firmware through the UCSI driver. It requires the driver to be loaded and running, and also have the test interface to the driver enabled. By default, this interface is not enabled so as to prevent it from being accessible to unauthorized users on a retail system.
 
 1.  Locate the device node in Device Manager (devmgmt.msc) named **UCSI USB Connector Manager**. The node is under the **Universal Serial Bus controllers** category.
-2.  Right-click on the device, and select **Properties** and open the **Details** tab.
+2.  Select and hold (or right-click) on the device, and select **Properties** and open the **Details** tab.
 3.  Select **Device Instance Path** from the drop-down and note the property value.
 4.  Open Registry Editor (regedit.exe).
 5.  Navigate to the device instance path under this key.

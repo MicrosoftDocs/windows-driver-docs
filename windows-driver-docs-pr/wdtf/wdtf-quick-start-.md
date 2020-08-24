@@ -16,7 +16,7 @@ The Windows Driver Kit provides an integrated solution for writing, deploying, a
 
 1. Install Visual Studio and then install the WDK.
 
-2. Configure a remote computer for testing and deployment. In Visual Studio, on the **Driver** menu, point to **Test** and then click **Configure computers...**.
+2. Configure a remote computer for testing and deployment. In Visual Studio, on the **Driver** menu, point to **Test** and then select **Configure computers...**.
 
 3. When you configure the test computer, the Windows Driver Test Framework runtime is installed.
 
