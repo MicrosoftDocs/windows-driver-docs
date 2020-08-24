@@ -166,60 +166,18 @@ Each rule contains the following information:
 
   - **UsageTimestamp**: The date and time at which the usage field is calculated. This information must be included if any **Usage\\*** field is included. The format string contains the following identifiers to express how the substring should be interpreted:
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Identifier</th>
-    <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>%d</p></td>
-    <td><p>Day of month as decimal number (01 – 31)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>%H</p></td>
-    <td><p>Hour in 24-hour format (00 – 23)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>%I</p></td>
-    <td><p>Hour in 12-hour format (01 – 12)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>%m</p></td>
-    <td><p>Month as decimal number (01 – 12)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>%M</p></td>
-    <td><p>Minute as decimal number (00 – 59)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>%S</p></td>
-    <td><p>Second as decimal number (00 – 59)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>%y</p></td>
-    <td><p>Year without century, as decimal number (00 – 99)</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>%Y</p></td>
-    <td><p>Year with century, as decimal number (0000-9999)</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>%p</p></td>
-    <td><p>AM/PM indicator</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>%#d, %#H, %#I, %#m, %#M, %#S, %#y, %#Y</p></td>
-    <td><p>Same as above but with no leading zeros</p></td>
-    </tr>
-    </tbody>
-    </table>
+    |Identifier|Description|
+    |----|----|
+    |%d|Day of month as decimal number (01 – 31)|
+    |%H|Hour in 24-hour format (00 – 23)|
+    |%I|Hour in 12-hour format (01 – 12)|
+    |%m|Month as decimal number (01 – 12)|
+    |%M|Minute as decimal number (00 – 59)|
+    |%S|Second as decimal number (00 – 59)|
+    |%y|Year without century, as decimal number (00 – 99)|
+    |%Y|Year with century, as decimal number (0000-9999)|
+    |%p|AM/PM indicator|
+    |%#d, %#H, %#I, %#m, %#M, %#S, %#y, %#Y|Same as above but with no leading zeros|
 
   - **DataLimit**: The absolute number of bytes that the user is allowed to use; this includes a group that specifies the unit in which the value is expressed.
 
@@ -467,50 +425,11 @@ Because provisioning modifies system settings that persist after the user has ex
 
 Provisioning requirements:
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>SIM present?</th>
-<th>Source of provisioning</th>
-<th>Signature requirement</th>
-<th>User confirmation requirement</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes, MB provider</p></td>
-<td><p>Mobile broadband app</p></td>
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="even">
-<td><p>Yes, MB provider</p></td>
-<td><p>Operator web site</p></td>
-<td><p>Certificate must:</p>
-<ul>
-<li><p>Chain back to trusted root CA..</p></li>
-<li><p>Be associated with mobile broadband hardware in APN database or experience metadata.</p></li>
-</ul></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>No, Wi-Fi provider</p></td>
-<td><p>Mobile broadband appor web site</p></td>
-<td><p>Certificate must:</p>
-<ul>
-<li><p>Chain back to trusted root CA.</p></li>
-<li><p>Be marked for Extended Validation.</p></li>
-</ul></td>
-<td><p>User is prompted to confirm the first time the certificate is used; no confirmation is required thereafter.</p></td>
-</tr>
-</tbody>
-</table>
+|SIM present?|Source of provisioning|Signature requirement|User confirmation requirement|
+|----|----|----|----|
+|Yes, MB provider|Mobile broadband app|None|None|
+|Yes, MB provider|Operator web site|Certificate must:</br>- Chain back to trusted root CA.</br>- Be associated with mobile broadband hardware in APN database or experience metadata.|None|
+|No, Wi-Fi provider|Mobile broadband appor web site|Certificate must:</br>- Chain back to trusted root CA.</br>- Be marked for Extended Validation.|User is prompted to confirm the first time the certificate is used; no confirmation is required thereafter.|
 
 ### Permitted combinations
 
