@@ -78,19 +78,19 @@ A user-mode printer graphics DLL is not limited to calling the [GDI Support Serv
 
 -   The following list of Eng-prefixed graphics DDI functions cannot be called by user-mode DLLs:
 
-    [**EngCreatePath**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engcreatepath)
+    [**EngCreatePath**](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-engcreatepath)
 
-    [**EngGetType1FontList**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-enggettype1fontlist)
+    [**EngGetType1FontList**](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-enggettype1fontlist)
 
-    [**EngMapModule**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engmapmodule)
+    [**EngMapModule**](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-engmapmodule)
 
-    [**EngDebugBreak**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engdebugbreak)
+    [**EngDebugBreak**](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-engdebugbreak)
 
 -   User-mode printer graphics DLLs can continue to use graphics DDI functions for [GDI floating-point services](https://docs.microsoft.com/windows-hardware/drivers/display/gdi-floating-point-services).
 
 ### Converting an Existing Printer Graphics DLL to User Mode
 
-If you have previously developed a printer graphics DLL that executes in kernel mode, you can convert the DLL to user-mode execution. To convert, simply add a [**DrvQueryDriverInfo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydriverinfo) function to the DLL, and then follow the rules for [building a printer graphics DLL](building-a-printer-graphics-dll.md).
+If you have previously developed a printer graphics DLL that executes in kernel mode, you can convert the DLL to user-mode execution. To convert, simply add a [**DrvQueryDriverInfo**](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo) function to the DLL, and then follow the rules for [building a printer graphics DLL](building-a-printer-graphics-dll.md).
 
 ### Creating a New Printer Graphics DLL in User Mode
 

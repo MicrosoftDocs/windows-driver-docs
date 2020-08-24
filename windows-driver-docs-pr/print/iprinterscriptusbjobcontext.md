@@ -23,7 +23,7 @@ The IPrinterScriptUsbJobContext interface is passed as a parameter to the **star
 Members
 -------
 
-The **IPrinterScriptUsbJobContext** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContext** also has these types of members:
+The **IPrinterScriptUsbJobContext** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContext** also has these types of members:
 
 -   [Methods](#methods)
 
