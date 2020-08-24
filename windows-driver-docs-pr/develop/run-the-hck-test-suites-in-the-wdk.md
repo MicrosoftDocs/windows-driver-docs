@@ -24,21 +24,21 @@ Prepare the test computer as needed, by installing the device and driver and any
 
 **To select an HCK Test Suite to run on a test computer**
 
-1.  From the **Driver** menu, click **Test** and then select **Test Group Explorer**.
-2.  In the **Driver Test Group Explorer** window, click one of the [HCK Test Suites](#HCK_test_suites).
+1.  From the **Driver** menu, select **Test** and then select **Test Group Explorer**.
+2.  In the **Driver Test Group Explorer** window, select one of the [HCK Test Suites](#HCK_test_suites).
 
     When you select a Test Suite, the Test Suite appears in the **Driver Test Group** window.
 
 3.  Be sure you have selected the test computer that you have configured for device you are testing with the HCK Test Suite.
 4.  To use the HCK test suites, you must also follow the configuration requirements for the device you are testing.
 5.  You can use the check boxes to select the tests that match the architecture of the intended test computer (x86, x64, ARM).
-6.  From the **Driver** menu, click **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
+6.  From the **Driver** menu, select **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
 
 You can also copy one of the provided HCK Test Suites and export it, along with the necessary test support files so that you can run the test suite from a Command Prompt window.
 
 **To export a Test Suite**
 
-1.  In the **Test Group Explorer**, right-click the HCK Test Suite you want to copy and click **Export Test Suite...** from the short-cut menu. (The command runs the **CopyMe.cmd** script).
+1.  In the **Test Group Explorer**, select and hold (or right-click) the HCK Test Suite you want to copy and select **Export Test Suite...** from the short-cut menu. (The command runs the **CopyMe.cmd** script).
 2.  Select a destination folder for the test suite. You can export the test suite to a network share or to a USB flash drive.
 3.  To run the HCK Test Suite, open a Command Prompt window on the test computer with elevated permissions. Navigate to the destination directory and run the **RunMe.cmd** script. For more information, see [To run the HCK Test Suite from a Command Prompt window](#RunMe).
 

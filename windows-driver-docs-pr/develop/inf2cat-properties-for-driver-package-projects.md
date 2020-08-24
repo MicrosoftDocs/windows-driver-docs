@@ -13,8 +13,8 @@ Sets the properties for the [**Inf2Cat**](https://docs.microsoft.com/windows-har
 ## <span id="Setting_Inf2Cat_properties_for_driver_package_projects"></span><span id="setting_inf2cat_properties_for_driver_package_projects"></span><span id="SETTING_INF2CAT_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting Inf2Cat properties for driver package projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver package, click **Configuration Properties** and then click **Inf2Cat**.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver package, select **Configuration Properties** and then select **Inf2Cat**.
 3.  Select the **Run Inf2Cat** option. This option runs the [**Inf2Cat**](https://docs.microsoft.com/windows-hardware/drivers/devtest/inf2cat) tool on any INF files in the project (for example, .inf, .inx, or .inv files).
 
 If the driver package is installed by using an INF file, use the Inf2Cat tool to create the catalog file. Inf2Cat validates that files referenced in the INF file are present in the package. To add files to the package, use the property pages for the package project and driver project. See [Creating a Driver Package](creating-a-driver-package.md) for more information.

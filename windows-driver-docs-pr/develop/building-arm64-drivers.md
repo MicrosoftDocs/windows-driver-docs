@@ -27,13 +27,13 @@ Windows 10 can run on machines that are powered by ARM64 processors.  However, b
 ## Building an ARM64 Driver with the WDK
 
 1.	In Visual Studio, open a driver solution.  You can use your own, or one from the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo.
-2.	Click on Solutions platform and select **Configuration Manager**.  
+2.	Select Solutions platform and select **Configuration Manager**.  
 ![Selecting configuration manager from second dropdown on top toolbar](images/VS-config-mgr.png)
   
 3.	Under **Active Solution Platform**, select **New**.  
 ![Selecting New under Active Solution Platform dropdown](images/VS-active-solution-platform.png)
 
-4.	From **Type or Select new Platform**, select **ARM64**.  Copy settings from **Win32**.  Click **OK** and **Close**.  
+4.	From **Type or Select new Platform**, select **ARM64**.  Copy settings from **Win32**.  Select **OK** and **Close**.  
 ![Selecting ARM64 build target from toolbar-level dropdown](images/VS-build-ARM64.png)
 
 5.	Select **ARM64** as the target platform and rebuild.

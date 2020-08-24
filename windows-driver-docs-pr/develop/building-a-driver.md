@@ -32,11 +32,11 @@ The default Solution build configuration is **Debug** and **Win32**.
 
 1.  Ensure that you have the same version of SDK and WDK installed on your computer.
 2.  Open the driver project or solution in Visual Studio.
-3.  Right-click the solution in the **Solutions Explorer** and select **Configuration Manager**.
+3.  Select and hold (or right-click) the solution in the **Solutions Explorer** and select **Configuration Manager**.
 4.  From the **Configuration Manager**, select the **Active solution configuration** (for example, **Debug** or **Release**) and the **Active solution platform** (for example, **Win32**) that correspond to the type of build you are interested in.
-5.  Right click the Avshws project and select **Properties**.  Navigate to **Driver Settings > General**, and set **Target OS Version** and **Target Platform**.
+5.  Select and hold (or right-click) the Avshws project and select **Properties**.  Navigate to **Driver Settings > General**, and set **Target OS Version** and **Target Platform**.
 6.  Configure the project properties for your driver or driver package. You can set properties for deployment, driver signing, or other tasks. For more information, see [Configuring project properties for your driver and driver package](#configure_project_props).
-7.  From the **Build** menu, click **Build Solution** (**Ctrl+Shift+B**).
+7.  From the **Build** menu, select **Build Solution** (**Ctrl+Shift+B**).
 
 ## <span id="building_a_driver_using_the_command_line__msbuild_"></span><span id="BUILDING_A_DRIVER_USING_THE_COMMAND_LINE__MSBUILD_"></span>Building a Driver Using the Command Line (MSBuild)
 
@@ -128,8 +128,8 @@ The following tip can help you troubleshoot problems when you use the WDK and Vi
 
 **To increase the verbosity of the build output using the options in Visual Studio**
 
-1.  Click **Tools**&gt; **Options**.
-2.  Click the **Project and Solutions** folder and click **Build and Run**.
+1.  Select **Tools**&gt; **Options**.
+2.  Select the **Project and Solutions** folder and select **Build and Run**.
 3.  Change the options for the **MSBuild project build output verbosity** and **MSBuild project build log file verbosity**. By default, these are set to Minimal.
 
 ## <span id="related_topics"></span>Related topics

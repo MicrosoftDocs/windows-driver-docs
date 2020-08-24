@@ -13,8 +13,8 @@ The Managed Object Format (MOF) compiler (mofcomp.exe) parses MOF files and adds
 ## <span id="Setting_Managed_Object_Format__MOF__Compiler_properties_for_driver_projects"></span><span id="setting_managed_object_format__mof__compiler_properties_for_driver_projects"></span><span id="SETTING_MANAGED_OBJECT_FORMAT__MOF__COMPILER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting Managed Object Format (MOF) Compiler properties for driver projects
 
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **Mof Compiler**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **Mof Compiler**.
 3.  Set the properties for the project.
 
 This property page is available if you add a Managed Object Format (MOF) file (.mof) to your solution.

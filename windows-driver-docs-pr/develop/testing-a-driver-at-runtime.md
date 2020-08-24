@@ -44,18 +44,18 @@ Starting with WDK 8.1, you can select HCK Test Suites to run on the test compute
 
 To make driver testing on different test targets easier, tests are scheduled to run against test systems in units called *test groups*. A driver test group is a collection of tests that you select to run on the test computer. The driver test groups help you organize your tests and test results from each test pass. You can save your test results to separate folders. You can create and manage test groups, change parameters passed to the tests in the test groups, and schedule them to run against your test systems.
 
-1.  From the **Driver** menu, click **Test** and then select **Test Group Explorer**.
-2.  In the **Driver Test Group Explorer** window, click the **Create a new test group** button. Or, click **New Test Group** from the **Driver** menu.
+1.  From the **Driver** menu, select **Test** and then select **Test Group Explorer**.
+2.  In the **Driver Test Group Explorer** window, select the **Create a new test group** button. Or, select **New Test Group** from the **Driver** menu.
 3.  In the **Driver Test Group** window for the group that you created, type a name in **Test Group Name** text box to identify the group. The default name is Driver Test Group\_*nnnnn*, where *nnnnn* represents the number of the test group
-4.  Click **Add/Remove Tests**.
-5.  In the **Add or Remove Driver Tests** dialog box, you can specify the driver test category and architecture (All, x86, x64, ARM). By default all tests are shown. To view the test categories, click the folders in the Driver Test Categories drop-down list.
+4.  Select **Add/Remove Tests**.
+5.  In the **Add or Remove Driver Tests** dialog box, you can specify the driver test category and architecture (All, x86, x64, ARM). By default all tests are shown. To view the test categories, select the folders in the Driver Test Categories drop-down list.
 
-    For example, in WDK 8, to select all of the Device Fundamentals tests that are used in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893), click **All Tests**, **Certification**, and **Device Fundamentals**. For information about the tests, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
+    For example, in WDK 8, to select all of the Device Fundamentals tests that are used in the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893), select **All Tests**, **Certification**, and **Device Fundamentals**. For information about the tests, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
 
     In WDK 8.1, the Device Fundamentals tests are under **All Tests**, **HCK Tests**, **Certification**, and **Device Fundamentals** folder. In WDK 8.1 the Driver Test Categories include the HCK (Basic) Tests. See [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md) for more information.
 
 6.  Be sure that you select the tests that match the architecture of the intended test computer (x86, x64, ARM). Use the **Architecture Filter** to show only those tests that will run on your test computer.
-7.  Click **&gt;&gt;** to add the selected tests.
+7.  Select **&gt;&gt;** to add the selected tests.
 
 ### <span id="Configure_test_parameters"></span><span id="configure_test_parameters"></span><span id="CONFIGURE_TEST_PARAMETERS"></span>Step 4: Configure test parameters
 
@@ -63,20 +63,20 @@ After you select the tests for your test group, you can configure any of the run
 
 For example, to run the tests for USB devices only, use the device query: class='usb'. You can change the value of each test parameter in the test group.
 
-1.  You can view and edit the all of the runtime test parameters for a test by clicking on the name of the test in the **Driver Test Group** window. The **Driver Test Group** window provides a description of the selected test and also provides a description of the test parameters that you select. For information about setting the test parameters, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
-2.  After you select the tests, set the parameters, and name the group, click **Save**.
+1.  You can view and edit the all of the runtime test parameters for a test by selecting on the name of the test in the **Driver Test Group** window. The **Driver Test Group** window provides a description of the selected test and also provides a description of the test parameters that you select. For information about setting the test parameters, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
+2.  After you select the tests, set the parameters, and name the group, select **Save**.
 
     When you save the test group, the test group will become the currently selected test group, and the name of the test group will appear in the Driver Test toolbar. You can now run tests against the currently selected remote test computer (also shown in the Driver Test toolbar).
 
 ### <span id="Build_and_deploy_the_driver"></span><span id="build_and_deploy_the_driver"></span><span id="BUILD_AND_DEPLOY_THE_DRIVER"></span>Step 5: Build and deploy the driver
 
--   From the **Build** menu, click **Deploy Solution**.
+-   From the **Build** menu, select **Deploy Solution**.
 
 For information about deploying a driver automatically at build time, see [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md). For information about automatically setting the Driver Verifier options on the test computer, see [Driver Verifier Properties for Driver Projects](driver-verifier-properties-for--driver-projects.md). You should always enable Driver Verifier on your test computer.
 
 ### <span id="Run_the_tests_on_the_test_computer"></span><span id="run_the_tests_on_the_test_computer"></span><span id="RUN_THE_TESTS_ON_THE_TEST_COMPUTER"></span>Step 6: Run the tests on the test computer
 
--   From the **Driver** menu, click **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
+-   From the **Driver** menu, select **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
 
 Remarks
 -------
