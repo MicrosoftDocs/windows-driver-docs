@@ -19,7 +19,7 @@ Pscript5 does not have an equivalent to the GDL parser, so for Pscript5 drivers,
 
 -   [**IPrintCoreHelperPS::GetOptionAttribute**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintcorehelperps-getoptionattribute)
 
-Because the PPD information does not depend on the configuration, you do not need to supply an input [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) parameter to these methods.
+Because the PPD information does not depend on the configuration, you do not need to supply an input [**DEVMODEW**](https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew) parameter to these methods.
 
  
 

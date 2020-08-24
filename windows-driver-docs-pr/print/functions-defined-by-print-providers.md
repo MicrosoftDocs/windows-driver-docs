@@ -135,7 +135,7 @@ Other Functions
 </tr>
 <tr class="even">
 <td><p><strong>ResetPrinter</strong></p></td>
-<td><p>Modifies a print queue's data type or <a href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew)"><strong>DEVMODEW</strong></a> structure.</p></td>
+<td><p>Modifies a print queue's data type or <a href="https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SetPrinter</strong> (Required)</p></td>

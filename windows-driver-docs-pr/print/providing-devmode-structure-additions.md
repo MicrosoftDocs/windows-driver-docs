@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-Your UI plug-in can add its own private members to the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure, as illustrated in the following figure.
+Your UI plug-in can add its own private members to the [**DEVMODEW**](https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew) structure, as illustrated in the following figure.
 
 ![diagram illustrating public and private devmode sections](images/dvmdstru.png)
 
