@@ -36,7 +36,7 @@ For more information about the AV/C protocol upon which the AV/C Streaming filte
 
 For more information and resources see the following links:
 
-[Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
+[Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-wdm)
 
 [1394 Trade Association specifications](https://1394ta.org/library-2)
 
