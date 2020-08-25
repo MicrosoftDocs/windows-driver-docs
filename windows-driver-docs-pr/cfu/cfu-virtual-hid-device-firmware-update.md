@@ -70,11 +70,11 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 1. In the **Device Manager** menu, select the **View** menu, and select the **Devices by connection** menu item.
 
-    ![CfuVirtualHid view devices by connection](cfuvirtualhid-view-devices-by-connection.png)
+    ![CfuVirtualHid view devices by connection](images/cfuvirtualhid-view-devices-by-connection.png)
 
 1. Navigate to the **CfuVirtualHid Device** and expand the **CfuVirtualHid Device** node, expand the **Virtual HID Framework (VHF) HID device** node, and select the **HID-compliant device** list item as shown here:
 
-    ![HID compliant device list item](hid-compliant-device-list-item.png)
+    ![HID compliant device list item](images/hid-compliant-device-list-item.png)
 
 1. Right-click the **HID-compliant device** to open the context menu, then click on the **Properties** menu item to open the **HID-compliant device Properties** dialog window.
 
@@ -82,7 +82,7 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
     You should see **HID\VID_045E&UP:FA00_U:00F5** in the **Value** list box as shown here:
 
-    ![HID VID device in the value list](hid-vid-045e-up-fa00-u-00f5-device-list-item.png)
+    ![HID VID device in the value list](images/hid-vid-045e-up-fa00-u-00f5-device-list-item.png)
 
 ## Install a firmware update for the CFU virtual HID device
 
