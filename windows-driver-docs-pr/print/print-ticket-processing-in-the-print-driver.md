@@ -17,7 +17,7 @@ The validated settings in a PrintTicket object are used to configure the print p
 
 XPSDrv print drivers perform this processing in the print processing filters of the print driver.
 
-GDI-based print drivers continue to use the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure for the settings because of the compatibility support that is built into the Windows Vista print subsystem. For more information about this support, see [Print Ticket Compatibility with Win 32 Applications](print-ticket-compatibility-with-win-32-applications.md).
+GDI-based print drivers continue to use the [**DEVMODEW**](https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew) structure for the settings because of the compatibility support that is built into the Windows Vista print subsystem. For more information about this support, see [Print Ticket Compatibility with Win 32 Applications](print-ticket-compatibility-with-win-32-applications.md).
 
 For more information about implementing Print Ticket processing in the print driver, see [Print Ticket Support in the XPSDrv Render Module](print-ticket-support-in-the-xpsdrv-render-module.md).
 

@@ -55,7 +55,7 @@ Debugger
     Utility
 ```
 
-After clicking on the top level topics, we determine that Sessions looks most interesting, so we click on the DML link to reveal that it contains *Processes*. 
+After selecting the top level topics, we determine that Sessions looks most interesting, so we select the DML link to reveal that it contains *Processes*. 
 
 ```dbgcmd
 0: kd> dx -r1 Debugger.Sessions[0]
@@ -65,7 +65,7 @@ Debugger.Sessions[0]                 : Remote KD: KdSrv:Server=@{<Local>},Trans=
     Attributes
 ```
 
-Then we click further down to look at specific process and we see that the *Threads* associated with that process are available. When we click on *Threads* for one of the processes, we see the all of the threads associated with that process are available.
+Then we select further down to look at specific process and we see that the *Threads* associated with that process are available. When we select *Threads* for one of the processes, we see the all of the threads associated with that process are available.
 
 
 ```dbgcmd
@@ -613,7 +613,7 @@ Use *Flatten* on the device tree to view all devices.
 
 **Grid Display**
 
-As with other dx commands, you can right click on a command after it was executed and click "Display as grid" or add "-g" to the command to get a grid view of the results.
+As with other dx commands, you can select and hold (or right-click) a command after it was executed and select "Display as grid" or add "-g" to the command to get a grid view of the results.
 
 ```dbgcmd
 # 0: kd> dx -g @$cursession.Devices.DeviceTree.Flatten(n => n.Children)

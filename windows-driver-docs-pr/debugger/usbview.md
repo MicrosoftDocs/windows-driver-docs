@@ -54,11 +54,11 @@ To use Device Manager to display USB info:
 
 5. Expand the **Universal Serial Bus controllers** node in Device Manager and select the device in question.
 
-7. Right-click to select **Properties** and view summary device status info.
+6. Select and hold (or right-click) to select **Properties** and view summary device status info.
 
-8. Select the **Details** tab to view additional info. 
+7. Select the **Details** tab to view additional info. 
 
-9. Select **Property** to view details such as **Status** or **Problem code**.
+8. Select **Property** to view details such as **Status** or **Problem code**.
 
 
 ## Windows USB troubleshooter

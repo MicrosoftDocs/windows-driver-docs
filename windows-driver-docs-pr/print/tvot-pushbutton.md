@@ -92,7 +92,7 @@ Depends on the **Style** member, as follows.
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_HTSETUP</p></td>
-<td><p>Pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_devhtadjdata" data-raw-source="[&lt;strong&gt;DEVHTADJDATA&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_devhtadjdata)"><strong>DEVHTADJDATA</strong></a> structure.</p></td>
+<td><p>Pointer to a <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-_devhtadjdata" data-raw-source="[&lt;strong&gt;DEVHTADJDATA&lt;/strong&gt;](https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-_devhtadjdata)"><strong>DEVHTADJDATA</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
