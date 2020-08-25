@@ -19,12 +19,3 @@ The following XML document uses the [WindowsInfo XML schema](windowsinfo-xml-sch
   <ShowDeviceInDisconnectedState>false</ShowDeviceInDisconnectedState>
 </WindowsInfo>
 ```
-
- 
-
- 
-
-
-
-
-

@@ -80,7 +80,7 @@ The following is a definition of the PackageInfo schema.
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="207" />
-      <xs:pattern value="^([a-zA-Z0-9!#$%&()*+\-./:;&lt;=&gt;?@[\\\]^_`{|}~])*$" /> 
+      <xs:pattern value="^([a-zA-Z0-9!#$%&()*+\-./:;&lt;=&gt;?@[\\\]^_`{|}~])*$" />
     </xs:restriction>
   </xs:simpleType>
 
@@ -154,12 +154,3 @@ The following is the PackageInfo v2 XML schema metadata (packageinfov2.xsd):
 
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-
