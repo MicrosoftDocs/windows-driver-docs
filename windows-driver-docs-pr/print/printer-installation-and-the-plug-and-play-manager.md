@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Printer Installation and the Plug and Play Manager
 
-The Plug and Play manager handles all Plug and Play events for the machine, and is generic to all devices. The Plug and Play manager is documented in [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play). [Introduction to Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-plug-and-play) gives an overview of Plug and Play installation, and of how the various kernel-mode and user-mode components interact.
+The Plug and Play manager handles all Plug and Play events for the machine, and is generic to all devices. The Plug and Play manager is documented in [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-plug-and-play). [Introduction to Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-plug-and-play) gives an overview of Plug and Play installation, and of how the various kernel-mode and user-mode components interact.
 
 ## Printer Installation Differences between Windows 98/Me and Windows 2000 and Later
 
