@@ -16,7 +16,7 @@ PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is 
 
 ### <span id="enable_pool_tagging__windows_2000_and_windows_xp_"></span><span id="ENABLE_POOL_TAGGING__WINDOWS_2000_AND_WINDOWS_XP_"></span>Enable Pool Tagging (Windows 2000 and Windows XP)
 
-On Windows 2000 and Windows XP you must first use GFlags to enable pool tagging. GFlags is included in Debugging Tools for Windows. Start GFlags, choose the **System Registry** tab, check the **Enable Pool Tagging** box, and then click **Apply**. You must restart Windows for this setting to take effect. For more details, see [GFlags](gflags.md).
+On Windows 2000 and Windows XP you must first use GFlags to enable pool tagging. GFlags is included in Debugging Tools for Windows. Start GFlags, choose the **System Registry** tab, check the **Enable Pool Tagging** box, and then select **Apply**. You must restart Windows for this setting to take effect. For more details, see [GFlags](gflags.md).
 
 On Windows Server 2003 and later versions of Windows, pool tagging is always enabled.
 
