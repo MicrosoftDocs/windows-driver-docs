@@ -42,7 +42,7 @@ TTD is available on Windows 10 after installing the WinDbg Preview app from the 
 
 ## Administrator rights required to use TTD
 
-To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, right-click on the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
+To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
 
 ## Video Training
 
