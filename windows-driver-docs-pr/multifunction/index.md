@@ -12,7 +12,7 @@ keywords:
 - multifunction devices WDK , installing
 - parent buses WDK multifunction devices
 - INF files WDK multifunction devices
-ms.date: 04/20/2017
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,6 +60,6 @@ The following sections describe driver and installation requirements for various
 
 [Creating Resource Maps for a Multifunction Device](creating-resource-maps-for-a-multifunction-device.md)
 
-See [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives) for information about INF file syntax.
+See [INF File Sections](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) and [INF File Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addcomponent-directive) for information about INF file syntax.
 
 The Windows Driver Kit (WDK) includes a separate section that describes how to support [multifunction audio devices](https://docs.microsoft.com/windows-hardware/drivers/audio/multifunction-audio-devices).
