@@ -8,6 +8,6 @@ ms.localizationpriority: medium
 
 # SRB\_SURPRISE\_REMOVAL
 
-The class driver sends this request when a device has been unexpectedly removed (surprise removal) from the computer. 
+The class driver sends this request when a device has been unexpectedly removed (surprise removal) from the computer.
 
-For more information, see [Removing a Device](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/removing-a-device-in-a-function-driver).
+For more information, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device-in-a-function-driver).
