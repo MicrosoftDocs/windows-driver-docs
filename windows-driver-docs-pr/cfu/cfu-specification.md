@@ -257,7 +257,7 @@ Some of the features of the protocol are:
 
 - The flexibility to support in-development firmware/in-market firmware.
 
-- The ability to segment a large firmware image into smaller segments to make it easier for the component to accept the firmware image.
+- The ability to segment a large firmware image into smaller segments to make it easier for the component to accept the firmware image. 
 
 ### 1.2.2 Non-Goals
 
