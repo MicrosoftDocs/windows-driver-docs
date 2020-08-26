@@ -53,4 +53,4 @@ GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific
 
 ## Related topics
 
-[Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
+[Read received SMS by using the text-mode interface](read-received-sms-by-using-the-text-mode-interface.md)

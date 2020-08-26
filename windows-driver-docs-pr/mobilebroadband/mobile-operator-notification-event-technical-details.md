@@ -10,11 +10,11 @@ ms.localizationpriority: medium
 
 This topic explains the technical details of a mobile operator notification event.
 
-- [Event payload](#eventpl)
+- [Event payload](#event-payload)
 
-- [Register for the MobileOperatorNotification event by using metadata](#regmd)
+- [Register for the MobileOperatorNotification event by using metadata](#register-for-the-mobileoperatornotification-event-by-using-metadata)
 
-- [Define filtering rules in provisioning XML](#deffilter)
+- [Define filtering rules in provisioning XML](#define-filtering-rules-in-provisioning-xml)
 
 ## Event payload
 
@@ -123,7 +123,7 @@ The app should only notify the user one time when they register on a roaming net
 
 ### TetheringEntitlementCheck
 
-The MobileOperatorNotification event is generated with this **MessageType**s when the user turns on Internet Sharing. The event is triggered every time the user tries to use Internet Sharing as long as the mobile operator has set the [AllowTethering](allowtethering.md) element in the service metadata schema to **EntitlementCheckRequired**. For more info about the service metadata schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+The MobileOperatorNotification event is generated with this **MessageType**s when the user turns on Internet Sharing. The event is triggered every time the user tries to use Internet Sharing as long as the mobile operator has set the [AllowTethering](allowtethering.md) element in the service metadata schema to **EntitlementCheckRequired**. For more info about the service metadata schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 The app should run the appropriate entitlement check mechanism supported by the mobile operator network and send the outcome to the system by using the [**AuthorizeTethering**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails#Windows_Networking_NetworkOperators_NetworkOperatorNotificationEventDetails_AuthorizeTethering_System_Boolean_System_String_) method of the [**NetworkOperatorNotificationEventDetails**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails) class in the [**Windows.Networking.NetworkOperators**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators) namespace. If the app does not have the capability to run the entitlement check, the mobile operator should change the Service Metadata [AllowTethering](allowtethering.md) element to **Always** or **Never**, so that the event is never generated.
 

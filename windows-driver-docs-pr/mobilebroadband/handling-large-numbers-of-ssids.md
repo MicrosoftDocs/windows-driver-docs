@@ -14,13 +14,13 @@ Windows 8.1 and Windows 10 significantly improve support for a large number of
 
 The following sections are included in this topic:
 
-- [Multiple SSIDs per profile](#multssidpro)
+- [Multiple SSIDs per profile](#multiple-ssids-per-profile)
 
-- [Secondary SSIDs](#secssd)
+- [Secondary SSIDs](#secondary-ssids)
 
 - [Prefixes](#prefixes)
 
-- [Example profile](#example)
+- [Example profile](#example-profile)
 
 ## Multiple SSIDs per profile
 

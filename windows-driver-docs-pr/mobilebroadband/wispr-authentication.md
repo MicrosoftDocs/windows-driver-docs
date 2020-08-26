@@ -48,7 +48,3 @@ The following topics are included in this section:
 - [Handling large numbers of SSIDs](handling-large-numbers-of-ssids.md)
 
 - [Handling the hotspot authentication event](handling-the-hotspot-authentication-event.md)
-
-## Related topics
-
-[Hotspot authentication methods](hotspot-authentication-methods.md)

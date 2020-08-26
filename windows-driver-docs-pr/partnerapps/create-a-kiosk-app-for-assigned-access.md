@@ -40,13 +40,13 @@ Using **windows.aboveLockScreen** enables your kiosk app to access the [LockAppl
 
 When the lock framework launches the kiosk app above the lock and the app has the **windows.aboveLockScreen** extension, the lock framework automatically creates a new secondary view above the lock. The main view is located under the lock. This secondary view will contain your app's content and be what the user sees. This additional view can be used with the extension to tailor your kiosk experience. For example, you can:
 
-* [secure your kiosk experience](#secureinfo) by creating a separate page to display kiosk-only content.
+* [Secure your kiosk experience](#secure-your-information) by creating a separate page to display kiosk-only content.
 
-* Call the **LockApplicationHost.RequestUnlock()** method from your app to [exit Assigned Access mode](#addaway) and go back to the login screen.
+* Call the **LockApplicationHost.RequestUnlock()** method from your app to [Add a way out of Assigned Access mode](#add-a-way-out-of-assigned-access) and go back to the login screen.
 
-* [Add an event handler](#eventhandler) to the **LockApplicationHost.Unlocking* event that fires when a user presses Ctrl+Alt+Del to exit the kiosk experience. The handler could also be used to save any data before exiting.
+* [Add an event handler](#add-a-way-out-of-assigned-access) to the **LockApplicationHost.Unlocking* event that fires when a user presses Ctrl+Alt+Del to exit the kiosk experience. The handler could also be used to save any data before exiting.
 
-If the app does not have the **windows.aboveLockScreen** extension, no secondary view is created and the app launches as if it’s running normally. Additionally, because the app will not have access to an instance of LockApplicationHost it won't be able to determine if it's running in a regular context, or for a kiosk experience. Not including the extension has benefits, such as being able to support [multiple monitors](#multiplemonitors)
+If the app does not have the **windows.aboveLockScreen** extension, no secondary view is created and the app launches as if it’s running normally. Additionally, because the app will not have access to an instance of LockApplicationHost it won't be able to determine if it's running in a regular context, or for a kiosk experience. Not including the extension has benefits, such as being able to support [multiple monitors](#dispatcher)
 
 Regardless of whether your app uses the extension, be sure to secure its data. See the [guidelines for assigned access apps](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app#secure-your-information) for more information.
 

@@ -18,11 +18,7 @@ ms.localizationpriority: medium
 
 # Test-Signing a Driver File
 
-Use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) to embed a signature in a driver file as described in the following sections:
-
-[Using a MakeCert Test Certificate or a Commercial Test Certificate to Embed a Test Signature in a Driver File](#-using-a-makecert-test-certificate-or-a-commercial-test-certificate-to-embed-a-test-signature-in-a-driver-file)
-
-[Using an Enterprise CA Test Certificate to Embed a Test Signature in a Driver File](#using-an-enterprise-ca-test-certificate-to-embed-a-test-signature-in-a-driver-file)
+Use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) to embed a signature in a driver file.
 
 ## Using a MakeCert Test Certificate or a Commercial Test Certificate to Embed a Test Signature in a Driver File
 
