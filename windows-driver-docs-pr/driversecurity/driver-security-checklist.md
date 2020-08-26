@@ -22,43 +22,43 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
-![empty checkbox](images/checkbox.png)[Confirm that a kernel driver is required](#confirmkernel)
+![empty checkbox](images/checkbox.png)[Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
 
-![empty checkbox](images/checkbox.png)[Use the driver frameworks](#confirmkernel)
+![empty checkbox](images/checkbox.png)[Use the driver frameworks](#use-the-driver-frameworks)
 
-![empty checkbox](images/checkbox.png)[Control access to software only drivers](#controlsoftwareonly)
+![empty checkbox](images/checkbox.png)[Control access to software only drivers](#control-access-to-software-only-drivers)
 
-![empty checkbox](images/checkbox.png)[Do not production sign test driver code](#donotproductionsign)
+![empty checkbox](images/checkbox.png)[Do not production sign test driver code](#-do-not-production-sign-test-code)
 
-![empty checkbox](images/checkbox.png)[Perform threat analysis](#threatanalysis)
+![empty checkbox](images/checkbox.png)[Perform threat analysis](#perform-threat-analysis)
 
-![empty checkbox](images/checkbox.png)[Follow driver secure coding guidelines](#driversecuritycodepractices)
+![empty checkbox](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
 
-![empty checkbox](images/checkbox.png)[Validate HVCI compatibility](#dgc)
+![empty checkbox](images/checkbox.png)[Validate HVCI compatibility](#validate-hvci-compatibility)
 
-![empty checkbox](images/checkbox.png)[Follow technology specific code best practices](#technologyspecificcodepractices)
+![empty checkbox](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
 
-![empty checkbox](images/checkbox.png)[Perform peer code review](#peercodereview)
+![empty checkbox](images/checkbox.png)[Perform peer code review](#perform-peer-code-review)
 
-![empty checkbox](images/checkbox.png)[Manage driver access control](#managingdriveraccesscontrol)
+![empty checkbox](images/checkbox.png)[Manage driver access control](#manage-driver-access-control)
 
-![empty checkbox](images/checkbox.png)[Enhance device installation security](#enhancedeviceinstallationsecurity)
+![empty checkbox](images/checkbox.png)[Enhance device installation security](#enhance-device-installation-security)
 
-![empty checkbox](images/checkbox.png)[Execute proper release driver signing](#releasedriversigning)
+![empty checkbox](images/checkbox.png)[Execute proper release driver signing](#execute-proper-release-driver-signing)
 
-![empty checkbox](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis)
+![empty checkbox](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
 
-![empty checkbox](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#sdv)
+![empty checkbox](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
 
-![empty checkbox](images/checkbox.png)[Check code with BinSkim Binary Analyzer](#binskim)
+![empty checkbox](images/checkbox.png)[Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
 
-![empty checkbox](images/checkbox.png)[Use code validation tools](#codevalidationtools)
+![empty checkbox](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
 
-![empty checkbox](images/checkbox.png)[Review debugger techniques and extensions](#debugger)
+![empty checkbox](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
 
-![empty checkbox](images/checkbox.png)[Review secure coding resources](#securecodingresources)
+![empty checkbox](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
 
-[Summary of key takeaways](#keytakeaways)
+[Summary of key takeaways](#summary-of-key-takeaways)
 
 ## Confirm that a kernel driver is required
 
