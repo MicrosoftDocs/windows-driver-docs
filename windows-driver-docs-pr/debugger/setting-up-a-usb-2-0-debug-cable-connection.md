@@ -61,17 +61,11 @@ Debugging over a USB 2.0 cable requires the following hardware:
    -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
    -   The maximum length of the string is 24 characters.
 
-7. If there is more than one USB host controller on the target computer, enter this command:
+7.  In Device Manager locate the USB Controller that you intend to use for debugging. Under *Location* on the *General* tab, the bus, device, and function numbers are displayed. Enter this command:  
 
-   <span id="Windows_7_or_later"></span><span id="windows_7_or_later"></span><span id="WINDOWS_7_OR_LATER"></span>Windows 7 or later  
-   **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
+  **bcdedit /set "{dbgsettings}" busparams** *b.d.f*
 
    where *b*, *d*, and *f* are the bus, device, and function numbers for the host controller. The bus, device, and function numbers must be in decimal format (for example, **busparams 0.29.7**).
-
-   <span id="Windows_Vista"></span><span id="windows_vista"></span><span id="WINDOWS_VISTA"></span>Windows Vista  
-   **bcdedit /set "{current}" loadoptions busparams=**<em>f.d.f</em>
-
-   where *b*, *d*, and *f* are the bus, device, and function numbers for the host controller. The bus, device, and function numbers must be in hexadecimal format (for example, **busparams=0.1D.7**).
 
 8. Reboot the target computer.
 

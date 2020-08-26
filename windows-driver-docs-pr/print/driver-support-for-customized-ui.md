@@ -29,7 +29,7 @@ While print preferences are contextual to the app that is printing, printer noti
 
 ![printer notification behavior flowchart](images/notificationbhvr.png)
 
-**Note**  It is important to be aware of the fact that, if you try to use a custom UI to show a notification in the Windows 8 environment by calling [GetForegroundWindow](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getforegroundwindow), the notification window will not be displayed. This is because the operating system tries to assign a higher priority to the thread that creates a foreground window using GetForegroundWindow, and this is not allowed for dialogs in the Windows 8 environment. If you want to use a custom UI to display a notification in the Windows 8 environment, you must do so by calling [GetDesktopWindow.](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getdesktopwindow)
+**Note**  It is important to be aware of the fact that, if you try to use a custom UI to show a notification in the Windows 8 environment by calling [GetForegroundWindow](https://docs.microsoft.com/windows/win32/api/winuser/nf-winuser-getforegroundwindow), the notification window will not be displayed. This is because the operating system tries to assign a higher priority to the thread that creates a foreground window using GetForegroundWindow, and this is not allowed for dialogs in the Windows 8 environment. If you want to use a custom UI to display a notification in the Windows 8 environment, you must do so by calling [GetDesktopWindow.](https://docs.microsoft.com/windows/win32/api/winuser/nf-winuser-getdesktopwindow)
 
  
 

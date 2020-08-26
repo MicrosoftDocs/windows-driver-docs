@@ -17,7 +17,7 @@ The procedures shown in this topic require that you have the Windows Driver Kit 
 ## <span id="Using_the_Call_Stack_Window"></span><span id="using_the_call_stack_window"></span><span id="USING_THE_CALL_STACK_WINDOW"></span>Using the Call Stack Window
 
 
-To open the **Call Stack** window in Visual Studio, from the **Debug** menu, choose **Windows&gt;Call Stack**. To set the local context to a particular row in the stack trace display, double click the first column of the row.
+To open the **Call Stack** window in Visual Studio, from the **Debug** menu, choose **Windows&gt;Call Stack**. To set the local context to a particular row in the stack trace display, select and hold (or double click) the first column of the row.
 
 ## <span id="Viewing_the_Call_Stack_by_Entering_Commands"></span><span id="viewing_the_call_stack_by_entering_commands"></span><span id="VIEWING_THE_CALL_STACK_BY_ENTERING_COMMANDS"></span>Viewing the Call Stack by Entering Commands
 

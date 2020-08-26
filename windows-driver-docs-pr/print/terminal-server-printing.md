@@ -37,7 +37,7 @@ If you are developing a printer minidriver or driver for Windows 2000 or later, 
     3.  If you create kernel-mode code, you must test the code using [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
     4.  You must provide an installation procedure based on setup INF files, as described in [Installing and Configuring Printer Drivers](installing-and-configuring-printer-drivers.md).
 
-All custom driver code must be reentrant. User-mode code should employ critical section objects (described in the Windows SDK documentation). Kernel-mode code should use semaphores (see [**EngCreateSemaphore**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engcreatesemaphore) and related functions).
+All custom driver code must be reentrant. User-mode code should employ critical section objects (described in the Windows SDK documentation). Kernel-mode code should use semaphores (see [**EngCreateSemaphore**](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-engcreatesemaphore) and related functions).
 
 Printer drivers and custom spooler components must access the registry only through interfaces provided specifically for these drivers and spooler components, as described in appropriate sections of the WDK.
 

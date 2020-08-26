@@ -24,7 +24,7 @@ A [**UNIFM\_HDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prntf
 
 A [**UNIDRVINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unidrvinfo) structure
 
-An [**IFIMETRICS**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_ifimetrics) structure
+An [**IFIMETRICS**](https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-_ifimetrics) structure
 
 An [**EXTTEXTMETRIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_exttextmetric) structure
 

@@ -8,8 +8,6 @@ ms.localizationpriority: medium
 
 # Writing a location sensor driver for Windows 8.1
 
-This section provides specific guidance for writing drivers for devices that provide location data. In addition to the information that is contained in this section, location driver authors must also understand and apply the information that is provided in [Writing a Sensor Device Driver](https://docs.microsoft.com/windows-hardware/drivers/sensors/writing-a-sensor-device-driver).
-
 The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their programs easily. If you are writing a driver for a location sensor, you must understand how to make the driver compatible with the Location API and follow the guidelines in [Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md).
 
 ## Windows Hardware Certification Program requirements
@@ -126,7 +124,7 @@ The following requirements apply to providing data from a location sensor:
 
 - If your driver supports both latitude/longitude and civic address reports, the location data in these reports should correspond to the same physical location.
 
-The following table describes the [sensor data fields](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-categories--types--and-data-fields) that correspond to Location API data report fields. Use these data field constants when you provide data reports for a location.
+The following table describes the sensor data fields that correspond to Location API data report fields. Use these data field constants when you provide data reports for a location.
 
 | Sensor constant | Location API method and property |
 | --- | --- |

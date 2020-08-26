@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-This section describes the methods that can be used to install print monitors. (You can install a print monitor with the same INF file that you use to install your printer. For more information about INF files, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) and [Power Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-power-management).)
+This section describes the methods that can be used to install print monitors. (You can install a print monitor with the same INF file that you use to install your printer. For more information about INF files, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-plug-and-play) and [Power Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-power-management).)
 
 ### <a href="" id="ddk-installing-a-language-monitor-gg"></a>Installing a Language Monitor
 
