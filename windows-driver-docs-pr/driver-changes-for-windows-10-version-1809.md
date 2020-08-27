@@ -169,7 +169,7 @@ To enable flexible linking, use the following new SDK API:
 
 * [IsApiSetImplemented](https://docs.microsoft.com/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
 
-This existing topic has been enhanced to describe how to use flexible linking to comply with the U requirement of the [DCHU driver design principles](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers#design-principles):
+This existing topic has been enhanced to describe how to use flexible linking to comply with the U requirement of the [DCHU driver design principles](https://docs.microsoft.com/windows-hardware/drivers/develop/dch-principles-best-practices):
 
 * [Building for OneCore](https://docs.microsoft.com/windows-hardware/drivers/develop/building-for-onecore)
 
