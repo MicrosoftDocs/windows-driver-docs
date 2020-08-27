@@ -1,5 +1,5 @@
 ---
-Description: The topic contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.
+description: The topic contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.
 title: USB driver samples
 ms.date: 04/20/2017
 ms.localizationpriority: medium

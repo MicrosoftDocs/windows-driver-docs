@@ -38,12 +38,3 @@ The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-sch
 
 </SoftwareInfo>
 ```
-
- 
-
- 
-
-
-
-
-

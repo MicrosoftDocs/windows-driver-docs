@@ -1,5 +1,5 @@
 ---
-Description: You can use Microsoft Message Analyzer (MMA) to capture and view live USB traces, or view an existing trace.
+description: You can use Microsoft Message Analyzer (MMA) to capture and view live USB traces, or view an existing trace.
 Search.SourceType: Video
 title: Capture and view USB traces with Microsoft Message Analyzer
 ms.date: 08/08/2019

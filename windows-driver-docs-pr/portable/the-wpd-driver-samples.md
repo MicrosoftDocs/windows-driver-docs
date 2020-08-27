@@ -1,5 +1,5 @@
 ---
-Description: The WPD Driver Samples
+description: The WPD Driver Samples
 title: The WPD Driver Samples
 ms.date: 04/20/2017
 ms.localizationpriority: medium

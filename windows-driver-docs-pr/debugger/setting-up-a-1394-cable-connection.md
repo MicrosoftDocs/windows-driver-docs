@@ -33,7 +33,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
    **bcdedit /dbgsettings 1394 channel:**<em>n</em>
 
-3. If there is more than one 1394 controller on the target computer, you must specify the bus, device, and function numbers of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for 1394 Debugging](#troubleshooting-tips-for-debugging-over-a-1394-cable).
+3. You must specify the bus, device, and function numbers of the 1394 controller that you intend to use for debugging. For more information, see [Troubleshooting Tips for 1394 Debugging](#troubleshooting-tips-for-debugging-over-a-1394-cable).
 
 4. Do not reboot the target computer yet.
 

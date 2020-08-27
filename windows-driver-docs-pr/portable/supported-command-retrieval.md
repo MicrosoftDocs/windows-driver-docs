@@ -1,5 +1,5 @@
 ---
-Description: Supported Command Retrieval
+description: Supported Command Retrieval
 title: Supported Command Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-Description: Describes the architecture of the USB function stack.
+description: Describes the architecture of the USB function stack.
 title: USB device-side drivers in Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium

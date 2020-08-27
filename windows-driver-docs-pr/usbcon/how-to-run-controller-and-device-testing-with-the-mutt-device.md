@@ -1,5 +1,5 @@
 ---
-Description: The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.
+description: The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.
 title: USB host controller testing with MUTT devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium

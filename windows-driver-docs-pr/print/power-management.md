@@ -30,7 +30,7 @@ For more information, see [System Power States](https://docs.microsoft.com/windo
 
 ## Testing Port-Connected Devices Across Various Power States
 
-To begin testing a device before and after various power states, first verify the device's baseline [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) (PnP) functionality. Next, verify that your test environment can enter and wake from all power states.
+To begin testing a device before and after various power states, first verify the device's baseline [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-plug-and-play) (PnP) functionality. Next, verify that your test environment can enter and wake from all power states.
 
 With one device connected and installed correctly, test its behavior before and after each power state S0 through S5 as follows:
 

@@ -1,5 +1,5 @@
 ---
-Description: Supporting the Service Commands
+description: Supporting the Service Commands
 title: Supporting the Service Commands
 ms.date: 04/20/2017
 ms.localizationpriority: medium

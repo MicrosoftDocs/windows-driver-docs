@@ -1,5 +1,5 @@
 ---
-Description: Using scope access with property commands (WpdServiceSampleDriver)
+description: Using scope access with property commands (WpdServiceSampleDriver)
 title: Using scope access with property commands (WpdServiceSampleDriver)
 ms.date: 07/27/2020
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-Description: Descriptors on USB Composite Devices
+description: Descriptors on USB Composite Devices
 title: Descriptors on USB Composite Devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium

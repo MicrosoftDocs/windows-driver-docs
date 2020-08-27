@@ -1,5 +1,5 @@
 ---
-Description: This section provides information about choosing the correct mechanism for the selective suspend feature.
+description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 title: USB Selective Suspend
 ms.date: 04/20/2017
 ms.assetid: 828ee95a-7cfa-4905-acb8-5ae12acb0034
