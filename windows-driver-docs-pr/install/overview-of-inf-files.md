@@ -30,4 +30,4 @@ An INF file is a text file that contains all the information that [device instal
 You can use an *INX* file to automatically create an INF file. An INX file is an INF file that contains string variables that represent version information. The Build utility and the [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) tool replace the string variables in INX files with text strings that represent a specific hardware architecture or framework version. For more information about INX files, see [Using INX Files to Create INF Files](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-inx-files-to-create-inf-files).
 
 
-See [INF File Sections and Directives](inf-file-sections-and-directives.md) for a complete description of INF file format.
+See [INF File Sections](inf-classinstall32-section.md) and [INF File Directives](inf-addcomponent-directive.md) for a complete description of INF file format.

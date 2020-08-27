@@ -112,7 +112,7 @@ Check the availability of updates for the system BIOS and storage controller fir
 
 **Use the Media Creation Tool to create a bootable USB thumb drive or DVD**
 
-Use Media Creation Tool, using another computer to create a bootable USB thumb drive or DVD. Use it to perform a clean install, by clicking on the setup file or booting from the USB.
+Use Media Creation Tool, using another computer to create a bootable USB thumb drive or DVD. Use it to perform a clean install, by selecting the setup file or booting from the USB.
 
 For more information, see [Get Windows 10](https://www.microsoft.com/software-download/windows10).
 
@@ -150,7 +150,7 @@ F2
 
     Safe Mode may also be available by pressing a function key on boot, for example F8. Refer to information from the system manufacturer for specific startup options.
 
--   Use the scan disk utility to confirm that there are no file system errors. Right click on the drive you want to scan and select **Properties**. Click on **Tools**. Click the **Check now** button.
+-   Use the scan disk utility to confirm that there are no file system errors. Select and hold (or right-click) on the drive you want to scan and select **Properties**. Select **Tools**. Select the **Check now** button.
 -   Run a virus detection program. Viruses can infect all types of hard disks formatted for Windows, and resulting disk corruption can generate system bug check codes. Make sure the virus detection program checks the Master Boot Record for infections.
 
 -   For IDE devices, define the onboard IDE port as Primary only. Also check each IDE device for the proper **master/subordinate/stand alone** setting. Try removing all IDE devices except for hard disks. Finally, check the System Log in Event Viewer for additional error messages that might help identify the device or driver that is causing the error.

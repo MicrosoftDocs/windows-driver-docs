@@ -38,9 +38,9 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 2. Once an **Administrator** has signed in, you may use this direct link [Sign and upload your file](https://partner.microsoft.com/dashboard/account/CertificateUpload), or manually navigate to the page following these steps.
 
-3. Click the gear icon in the upper right, then click **Developer settings**, then **Manage Certificates** on the left pane.
+3. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
 
-4. Click the **Add a new certificate** button, then click the **Next** button.  
+4. Select the **Add a new certificate** button, then select the **Next** button.  
 
 5. Download the Signablefile.bin and sign it with the new digital certificate for your company using SignTool with the following switch **/fd sha256** and appropriate SHA-2 timestamp.
 

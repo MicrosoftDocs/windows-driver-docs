@@ -17,7 +17,7 @@ This topic describes how to associate a device-specific app with a driver or [RP
 
 Start with either a [Universal Windows Platform (UWP) app](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide) or a desktop (Win32) app.  If you would like to use a desktop app, use the [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) to create a Windows App Package that you can upload to the Store.
 
-This page describes the procedure for a UWP app, but the steps are similar for the Win32 option. 
+This page describes the procedure for a UWP app, but the steps are similar for the Win32 option.
 
 The steps for the driver developer are described in [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md).
 
@@ -43,9 +43,9 @@ If your app will communicate with an NT service, then you need to use the RPC AP
 
 Now you're ready to request access to a custom capability from a capability owner.  You'll need to gather the following info:
 
--   App PFN (Package Family Name) from the Microsoft Store
--   Name of the custom capability
--   Signature Hash of the app signing cert which can be generated from your .cer file using certutil.exe. The certificate must be SHA-256.
+- App PFN (Package Family Name) from the Microsoft Store
+- Name of the custom capability
+- Signature Hash of the app signing cert which can be generated from your .cer file using certutil.exe. The certificate must be SHA-256.
 
 To generate the signature hash, run `C:\Windows\System32\certutil.exe -dump CertificateName.cer`.
 
@@ -60,12 +60,13 @@ The capability owner uses this info to generate a [Signed custom capability Desc
 
 The app developer can continue developing an app with custom capabilities in developer mode while waiting for the capability owner to approve the request. For example, use the following in the SCCD on a desktop PC in [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development):
 
--   Catalog entry in the SCCD.
+- Catalog entry in the SCCD.
 
     ```xml
     <Catalog>FFFF</Catalog>
     ```
--   Certificate Signature Hash in the authorized entity entry in the SCCD. While it is
+
+- Certificate Signature Hash in the authorized entity entry in the SCCD. While it is
     neither enforced nor validated, please put a 64-char sequence.
 
     ```xml
@@ -92,7 +93,7 @@ Then copy the SCCD file to the package root of the appx package. In Visual Studi
 
 ![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
 
-Mark the SCCD as build content by right clicking on the SCCD file and changing **Content** to **True**.  For a C# project, use the property `Build Action = Content`, and for a JavaScript project, use `Package Action = Content`. 
+Mark the SCCD as build content by right clicking on the SCCD file and changing **Content** to **True**.  For a C# project, use the property `Build Action = Content`, and for a JavaScript project, use `Package Action = Content`.
 
 ![Marking SCCD as content](images/markSCCDAsContent.png)
 
@@ -108,20 +109,26 @@ To pre-install a UWP app with custom capabilities, use [DISM - Deployment Image 
 
 When the target machine is in Developer Mode, you can try the following steps to debug app registration failure:
 
-1.	Remove the custom capability entry from your AppX manifest.
-2.	Build your app and deploy it.
-3.	In a PowerShell window, type `Get-AppxPackage`.
-4.	Look for your app in the list and verify the exact package family name for your app.
-5.	Update your SCCD with the package family name.
-6.	Add the custom capability entry back into your AppX manifest.
-7.	Rebuild and deploy. 
+1. Remove the custom capability entry from your AppX manifest.
+2. Build your app and deploy it.
+3. In a PowerShell window, type `Get-AppxPackage`.
+4. Look for your app in the list and verify the exact package family name for your app.
+5. Update your SCCD with the package family name.
+6. Add the custom capability entry back into your AppX manifest.
+7. Rebuild and deploy.
 
 ## See Also
 
-* [Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md)
-* [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
-* [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
-* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
-* [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
-* [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
-* [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)
+[Hardware Support App (HSA): Steps for Driver Developers](hardware-support-app--hsa--steps-for-driver-developers.md)
+
+[Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+
+[Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability)
+
+[Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+
+[Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
+
+[Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
+
+[Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)

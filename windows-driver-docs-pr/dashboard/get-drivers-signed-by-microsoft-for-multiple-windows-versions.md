@@ -45,11 +45,11 @@ Here's how to submit HLK test results to the dashboard. There are separate tabs 
 
 ![hlk package](images/hlkpackage.png)
 
-Click the file path for the project to open it. In this case, the submission is one driver.
+Select the file path for the project to open it. In this case, the submission is one driver.
 
 ![driver](images/capture.png)
 
-Let’s say you want to create a submission package from scratch. In the HLK, click **Add Driver Folder**.
+Let’s say you want to create a submission package from scratch. In the HLK, select **Add Driver Folder**.
 
 ![add driver folder](images/adddriverfolder.png)
 
@@ -61,23 +61,23 @@ You also need to make declarations for locales. For example, depending on the de
 
 ![locales](images/locales.png)
 
-To add symbols, right-click the driver folder.
+To add symbols, select and hold (or right-click) the driver folder.
 
 ![add symbols](images/addsymbols.png)
 
-Click **Add Supplemental Folder** to submit other files that are important to the submission but are not actually part of the submission itself. You can add any content you want to the package. This is a way for you to get other items to the Dashboard that are important for the submission, such as a readme file for a driver submission.
+Select **Add Supplemental Folder** to submit other files that are important to the submission but are not actually part of the submission itself. You can add any content you want to the package. This is a way for you to get other items to the Dashboard that are important for the submission, such as a readme file for a driver submission.
 
 ![add supplemental folder](images/addsupplementalfolder.png)
 
-When you are ready, click **Create Package**.
+When you are ready, select **Create Package**.
 
 ![create package](images/createpackage.png)
 
-The next step is to specify a certificate that you will you use to sign the package – this is the first of the two code signing operations that were covered at the start of this topic. You can click **Use a certificate file** to specify a certificate that is stored on something like a USB drive, or click **Use the certificate store** to specify a certificate that has been imported into the certificate store of the local computer.
+The next step is to specify a certificate that you will you use to sign the package – this is the first of the two code signing operations that were covered at the start of this topic. You can select **Use a certificate file** to specify a certificate that is stored on something like a USB drive, or select **Use the certificate store** to specify a certificate that has been imported into the certificate store of the local computer.
 
 ![use the certificate store](images/usecertstore.png)
 
-After you click **OK**, you name the package and it gets created and signed (assuming you have a certificate installed on the computer you are using for the submission), and you’ll get back a friendly success message.
+After you select **OK**, you name the package and it gets created and signed (assuming you have a certificate installed on the computer you are using for the submission), and you’ll get back a friendly success message.
 
 And the package has a green check under **Signability**:
 
@@ -89,11 +89,11 @@ The next steps occur in the Partner Center dashboard. Sign in and follow the ins
 
 For an HLK or HCK submission that you submitted to the Partner Center:
 
-- [Find the hardware submission](manage-your-hardware-submissions.md) that contains the drivers that you want to download signed files for. Select the ID to open the driver details. On that page, expand the package tab for the package containing the driver you want to download and click “Download signed files”.
+- [Find the hardware submission](manage-your-hardware-submissions.md) that contains the drivers that you want to download signed files for. Select the ID to open the driver details. On that page, expand the package tab for the package containing the driver you want to download and select “Download signed files”.
 
 For a WLK submission, system submission, or attestation signed driver that you submitted to Hardware Dev Center (Sysdev):
 
-- Select **Hardware Compatibility** &gt; **Manage submissions** &gt; and on the **Summary and Tasks** tab, if the status is **Approved**, the submission is ready to be retrieved. Under **Download** in the lower right corner of the screen, click **Signed driver package**. Microsoft will stream an in-memory zip file that includes the signed submission.
+- Select **Hardware Compatibility** &gt; **Manage submissions** &gt; and on the **Summary and Tasks** tab, if the status is **Approved**, the submission is ready to be retrieved. Under **Download** in the lower right corner of the screen, select **Signed driver package**. Microsoft will stream an in-memory zip file that includes the signed submission.
 
 Inside the submission folder will be the package files. These files are signed by Microsoft. The partner does not have to sign the returned payload. Microsoft always returns a .cat file with an approved submission. If a partner includes its own .cat file. Microsoft discards it and returns its own signed .cat file.
 
@@ -108,11 +108,11 @@ There are a couple cases where you may want to validate the Microsoft signature 
 1. You aren’t sure if a driver has been signed by Microsoft or not, and you want to check.
 2. You have two drivers, and you need to determine which one was signed by attestation and which one was signed after submission of HLK/HCK results to the dashboard.
 
-You can validate the Microsoft signature by checking the Enhanced Key Usages (EKUs) of the certificate that Microsoft signs the submission with. To check the EKU, right-click the .cat file and click **Properties**. Click the **Digital Signatures** tab, click the name of the certificate, and then click **Details**.
+You can validate the Microsoft signature by checking the Enhanced Key Usages (EKUs) of the certificate that Microsoft signs the submission with. To check the EKU, select and hold (or right-click) the .cat file and select **Properties**. Select the **Digital Signatures** tab, select the name of the certificate, and then select **Details**.
 
 ![eku details](images/ekudetails.png)
 
-On the certificate **Details** tab, click **Enhanced Key Usage**. There you will see the EKUs and corresponding OID values for the certificate. In this case, the **Windows Hardware Driver Verification OID** ends with a 5, which means the driver has not been signed by attestation:
+On the certificate **Details** tab, select **Enhanced Key Usage**. There you will see the EKUs and corresponding OID values for the certificate. In this case, the **Windows Hardware Driver Verification OID** ends with a 5, which means the driver has not been signed by attestation:
 
 ![certified](images/certified.png)
 

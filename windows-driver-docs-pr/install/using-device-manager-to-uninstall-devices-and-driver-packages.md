@@ -21,11 +21,11 @@ For more information about uninstalling driver and driver packages, see [How Dev
 
 To uninstall a device by using Device Manager, follow these steps:
 
-1.  Start Control Panel, click **Hardware and Sound**, and then click **Device Manager**.
+1.  Start Control Panel, select **Hardware and Sound**, and then select **Device Manager**.
 
-2.  Expand the node that represents the type of device that you want to uninstall, right-click the device entry, and click **Uninstall**.
+2.  Expand the node that represents the type of device that you want to uninstall, select and hold (or right-click) the device entry, and select **Uninstall**.
 
-3.  On the **Confirm Device Removal** dialog box, click **OK** to start the uninstall process.
+3.  On the **Confirm Device Removal** dialog box, select **OK** to start the uninstall process.
 
 4.  When the uninstall process is complete, remove the device.
 
@@ -35,7 +35,7 @@ To uninstall a device by using Device Manager, follow these steps:
 
 ### <a href="" id="deleting-a-driver-package-from-the-driver-store"></a> Deleting a Driver Package from the Driver Store
 
-On the **Confirm Device Removal** dialog box, click the **Delete the driver software for this device** option to delete the driver package that was used for the device.
+On the **Confirm Device Removal** dialog box, select the **Delete the driver software for this device** option to delete the driver package that was used for the device.
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 

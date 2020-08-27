@@ -34,7 +34,7 @@ Attaching an active kernel debugger to a development or test computer disables l
 bcdedit -debug on
 ```
 
-To use BCDEdit, the user must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, create a desktop shortcut to *Cmd.exe*, right-click the shortcut, and select **Run as administrator**.
+To use BCDEdit, the user must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, create a desktop shortcut to *Cmd.exe*, select and hold (or right-click) the shortcut, and select **Run as administrator**.
 
 However, be aware that there are also situations in which a developer might have to attach a kernel debugger, yet also need to maintain load-time signature enforcement. See [Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode](appendix-1--enforcing-kernel-mode-signature-verification-in-kernel-debugging-mode.md) for how to accomplish this.
 
@@ -110,11 +110,9 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
 
     After the certificate is created and a copy is put in the certificate store, the Microsoft Management Console (MMC) Certificates snap-in can be used to view it. Do the following to view a certificate through the MMC **Certificates** snap-in:
 
-    1.  Click **Start** and then click Start Search.
+    1.  To start the Certificates snap-in, run Certmgr.msc.
 
-    2.  To start the Certificates snap-in, type Certmgr.msc and press the **Enter** key.
-
-    3.  In the left pane of the Certificates snap-in, expand the PrivateCertStore certificate store folder and double-click Certificates.
+    2.  In the left pane of the Certificates snap-in, expand the PrivateCertStore certificate store folder and double-click Certificates.
 
     The following screen shot shows the Certificates snap-in view of the **PrivateCertStore** certificate store folder.
 
@@ -178,7 +176,7 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
 
     The inf2cat tool is very strict on checking each folder and sub-folder about the presence of every file which has an entry in the INF file. There will be meaningful error messages on such missing entries.
 
-    The cat file can be opened from explorer by double click or right clicking on the file and selecting Open. The Security tab will show some entries with GUID values. Selecting a GUID value will display details including the driver files of the driver package and the OSes added as shown below:
+    The cat file can be opened from explorer by double-clicking or right-clicking the file and selecting Open. The Security tab will show some entries with GUID values. Selecting a GUID value will display details including the driver files of the driver package and the OSes added as shown below:
 
     ```cpp
     OSAttr  2:5.1,6.1
@@ -243,7 +241,7 @@ tstamd64.cat specifies the name of the catalog file, which will be digitally-sig
 
     ![screen shot showing general information of the security catalog file](images/tutorialsecuritycatalogfilegeneraltab.png)
 
-    If you click on “View Signature”, you will see the screen shot below providing the next viewing option from “View Certificate”, which then will give the option of “Install Certificate” from the dialog itself. Although we are providing below the preferred command line option of installing the certificate using the certmgr.exe tool.
+    If you select “View Signature”, you will see the screen shot below providing the next viewing option from “View Certificate”, which then will give the option of “Install Certificate” from the dialog itself. Below, we are providing the preferred command line option of installing the certificate using the certmgr.exe tool.
 
     ![screen shot showing general information about the digital signature's details](images/tutorialdriversignaturedetails.png)
 
@@ -329,7 +327,7 @@ The following procedure describes the steps to use on either machine to test the
 
     In %SystemRoot%\\inf file, rename the setupapi.dev.log file before installing the driver. After install, a new log setupapi.dev.log file will be created which will contain valuable information encountered during installation.
 
-    Once driver is successfully installed, the testing of the driver can be carried on in the development computer, or in the test computer.
+    Once the driver is successfully installed, it can be tested on the development computer or on the test computer.
 
 ## Installing, Uninstalling and Loading the Test-Signed Driver Package
 
@@ -337,11 +335,11 @@ The following procedure describes the steps to use on either machine to test the
 After the system has rebooted in Step 2, the test-signed driver package can be installed and loaded. There are four ways to install a driver package:
 
 1.  By using the Dpinst (dpinst.exe) tool, which is a WDK command line tool for installing drivers and is redistributable.
-2.  By using the Devcon (devcon.exe) tool, which is a WDK command line tool for installing drivers, but not redistributable. The sample code of Devcon tool is provided in the WDK. To redistribute you can implement your own Devcon tool from the sample code and can redistribute your version of the tool.
+2.  By using the Devcon (devcon.exe) tool, which is a WDK command line tool for installing drivers, but not redistributable. The sample code of Devcon tool is provided in the WDK. To redistribute, you can implement your own Devcon tool from the sample code and can redistribute your version of the tool.
 3.  By using the OS provided Pnputil (pnputil.exe) tool.
 4.  By using the Windows Add Hardware Wizard.
 
-Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Windows Add Hardware Wizard, the driver as well as the device can be installed. Pre installing a driver helps the OS find the driver when a device is connected to the computer.
+Dpinst and Pnputil pre-installs the driver package, whereas with Devcon and Windows Add Hardware Wizard, the driver as well as the device can be installed. Pre-installing a driver helps the OS find the driver when a device is connected to the computer.
 
 **To install (and uninstall) the driver package by using DPInst**
 
@@ -352,7 +350,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
     dpinst.exe  /PATH  c:\toaster
     ```
 
-    The above command will install all the drivers corresponding to all the inf files. You can also use “.” Without the quotes from the current directory. “dpinst.exe /?” shows all the switches for this tool.
+    The above command will install all the drivers corresponding to all the inf files. You can also use “.” without the quotes from the current directory. “dpinst.exe /?” shows all the switches for this tool.
 
     The /U switch on the driver inf file will remove the driver package from the DriverStore’s FileRepository (%SystemRoot%\\System32\\ DriverStore\\FileRepository) directory provided the device associated with the driver has been removed. With Dpinst tool a driver can be removed just by referring to the inf file of the driver.
 
@@ -383,7 +381,7 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 
     The above commands provides the following information.
 
-    Removes devices with the specified hardware or instance ID. Valid only on the local computer. (To reboot when necessary, Include -r .)
+    Removes devices with the specified hardware or instance ID. Valid only on the local computer. (To reboot when necessary, include -r .)
 
     ```cpp
     devcon [-r] remove <id> [<id>...]
@@ -444,14 +442,14 @@ Dpinst and Pnputil pre installs the driver package, whereas with Devcon and Wind
 **To install the driver package by using the Add Hardware Wizard**
 
 1.  Open an elevated command window
-2.  Run hdwwiz.cpl to start the Add Hardware Wizard, and click Next to go to the second page
-3.  Select Advanced Option and click Next
-4.  Select Show all devices from the list box and click Next
+2.  Run hdwwiz.cpl to start the Add Hardware Wizard, and select Next to go to the second page
+3.  Select Advanced Option and select Next
+4.  Select Show all devices from the list box and select Next
 5.  Select the Have Disk option
 6.  Enter the path to the folder that contains the C:\\toaster driver package
-7.  Select the inf file and click Open
-8.  Click OK
-9.  Click Next in the next two pages, and then click Finish to complete the installation
+7.  Select the inf file and select Open
+8.  Select OK
+9.  Select Next in the next two pages, and then select Finish to complete the installation
 
 **Verify that the Test-Signed Driver Is Operating Correctly**
 
@@ -462,10 +460,10 @@ To verify that Toastpkg is operating correctly:
 
     ![screen shot showing the toaster device in the device manager](images/tutorialtoasterpackageindevicemgr.png)
 
-3.  To open the driver's Properties dialog box, double-click Toaster Package Sample Toaster
-4.  To confirm that Toaster is working properly, on the General tab, check the Status box
+3.  To open the driver's Properties dialog box, double-click Toaster Package Sample Toaster and select Properties
+4.  To confirm that Toaster is working properly, on the General tab, check the Device status box
 
-Device Manger can be used to uninstall the device and the driver from the Properties dialog box.
+Device Manager can be used to uninstall the device and the driver from the Properties dialog box.
 
 **How to Troubleshoot Test-Signed Drivers**
 

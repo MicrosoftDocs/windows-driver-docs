@@ -28,9 +28,9 @@ A user can change the configuration through the speaker-configuration dialog in 
 
 2.  On the **Audio** tab, select a device from the **Sound Playback** list.
 
-3.  Click the **Advanced** button.
+3.  Select the **Advanced** button.
 
-4.  Click the **Speakers** tab.
+4.  Select the **Speakers** tab.
 
 At this point, you should see the label **Speaker Setup** next to a list of the speaker configurations that you can select from.
 

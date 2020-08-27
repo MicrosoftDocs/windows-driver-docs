@@ -49,7 +49,7 @@ The object manager manages the objects in Windows by performing the following ma
 
 -   Managing the lifetime of an object and determining when an object will be automatically destroyed to recycle resource space.
 
-For more information about objects in Windows, see [Device Objects and Device Stacks](device-objects-and-device-stacks.md).
+For more information about objects in Windows, see [Managing Kernel Objects](managing-kernel-objects.md).
 
 Routines that provide a direct interface to the object manager are usually prefixed with the letters "**Ob**"; for example, **ObGetObjectSecurity**. For a list of object manager routines, see [Object Manager Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557759(v=vs.85)).
 

@@ -232,7 +232,7 @@ In the command entry pane, use the up arrow and down arrow keys to scroll throug
 
 **Enable Debugger Markup Language (DML) with .prefer\_dml**
 
-Some debug commands display text using Debugger Markup Language that you can click on to quickly gather more information.
+Some debug commands display text using Debugger Markup Language that you can select to quickly gather more information.
 
 1. Use Ctrl+Break (Scroll Lock) in WinDBg to break into the code running on the target system. It may take a bit of time for the target system to respond.
 
@@ -352,7 +352,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     b. Download the master.zip file to your local hard drive.
 
-    c. Right-click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files are extracted.
+    c. Select and hold (or right-click) *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files are extracted.
 
     d. After the files are extracted, navigate to the following subfolder.
 
@@ -360,7 +360,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 2.  **Open the driver solution in Visual Studio**
 
-    In Microsoft Visual Studio, click **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\general\\echo\\kmdf*). Double-click the *kmdfecho* solution file to open it.
+    In Microsoft Visual Studio, select **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\general\\echo\\kmdf*). Double-click the *kmdfecho* solution file to open it.
 
     In Visual Studio, locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has three projects.
 
@@ -368,7 +368,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 3.  **Set the sample's configuration and platform**
 
-    In Solution Explorer, right-click **Solution 'kmdfecho' (3 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
+    In Solution Explorer, select and hold (or right-click) **Solution 'kmdfecho' (3 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
 
 4.  **Set the runtime library**
 
@@ -384,7 +384,7 @@ To download and build the Echo sample audio driver, perform the following steps.
 
 6.  **Build the sample using Visual Studio**
 
-    In Visual Studio, click **Build** &gt; **Build Solution**.
+    In Visual Studio, select **Build** &gt; **Build Solution**.
 
     If all goes well, the build windows should display a message indicating that the build for all three projects succeeded.
 
@@ -435,9 +435,9 @@ a. Open Windows Settings.
 
 b. In Update and Security, select **Recovery**.
 
-c. Under Advanced startup, click **Restart Now**.
+c. Under Advanced startup, select **Restart Now**.
 
-d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then click Restart button.
+d. When the PC reboots, select **Startup options**. In Windows 10, select **Troubleshoot** > **Advanced options** > **Startup Settings** , then select Restart button.
 
 e. Select Disable driver signature enforcement by pressing the **F7** key.
 
@@ -453,7 +453,7 @@ Create a folder on the target for the built driver package (for example, *C:\\Ec
 
 **-&gt; On the target system**
 
-On the target computer, right-click the certificate file, and click **Install**, then follow the prompts to install the test certificate.
+On the target computer, select and hold (or right-click) the certificate file, and select **Install**, then follow the prompts to install the test certificate.
 
 If you need more detailed instructions for setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md).
 
@@ -473,7 +473,7 @@ On the target computer, open a Command Prompt window as Administrator. Navigate 
 If you get an error message about *devcon* not being recognized, try adding the path to the *devcon* tool. For example, if you copied it to a folder called *C:\\Tools*, then try using the following command:
 
 **c:\\tools\\devcon install echo.inf root\\ECHO**
-A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
+A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
 ![windows security warning - windows can't verify the publisher of this driver software](images/debuglab-image-install-security-warning.png)
 
@@ -587,7 +587,7 @@ set ENABLE_OPTIMIZER=0
 
    For information, see [**lm**](lm--list-loaded-modules-.md).
 
-2. Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can click on. Click on the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
+2. Because we set prefer\_dml =1 earlier, some elements of the output are hot links that you can select. Select the *Browse all global symbols link* in the debug output to display information about items symbols that start with the letter “a”.
 
    ```dbgcmd
    0: kd> x /D Echo!a*
@@ -838,9 +838,9 @@ For more information, see [Source Code Debugging in WinDbg](source-window.md) in
 
     In Windows, open **Device Manager** using the icon or by entering **mmc devmgmt.msc**. In Device Manager, expand the **Samples** node.
 
-9.  Right-click the KMDF Echo driver entry and select **Disable** from the menu.
+9.  Select and hold (or right-click) the KMDF Echo driver entry and select **Disable** from the menu.
 
-10. Right-click the KMDF Echo driver entry again and select **Enable** from the menu.
+10. Select and hold (or right-click) the KMDF Echo driver entry again and select **Enable** from the menu.
 
 11. **&lt;- On the host system**
 
@@ -886,7 +886,7 @@ You can modify existing breakpoints by using the following commands:
 
 
 
-Alternatively, you can also modify breakpoints by clicking **edit** &gt; **breakpoints** in WinDbg. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
+Alternatively, you can also modify breakpoints by selecting **edit** &gt; **breakpoints** in WinDbg. Note that the breakpoint dialog box only works with existing breakpoints. New breakpoints must be set from the command line.
 
 
 
@@ -1022,7 +1022,7 @@ To display the call stack, use the k\* commands.
 
 **&lt;-On the host system**
 
-1. If you want to keep the call stack available, you can click **view** &gt; **call stack** to view it. Click on the columns at the top of the window to toggle the display of additional information.
+1. If you want to keep the call stack available, you can select **view** &gt; **call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
 ![windbg display call stacks window](images/debuglab-image-display-callstacks.png)
 
@@ -1457,7 +1457,7 @@ nt!DbgBreakPointWithStatus:
 fffff803`bb757020 cc              int     3
 ```
 
-Alternatively, you can display the contents of the registers by clicking **view** &gt; **registers**. For more information see [**r (Registers)**](r--registers-.md).
+Alternatively, you can display the contents of the registers by selecting **view** &gt; **registers**. For more information see [**r (Registers)**](r--registers-.md).
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 

@@ -16,7 +16,7 @@ By default, Windows does not load test-signed kernel-mode drivers. To change thi
 
 ## Administrator rights required
 
-To use BCDEdit, you must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, type **cmd** into the search box in the Windows taskbar, right-click **Command Prompt** in the search results, and then select **Run as administrator**.
+To use BCDEdit, you must be a member of the Administrators group on the system and run the command from an elevated command prompt. To open an elevated Command Prompt window, type **cmd** into the search box in the Windows taskbar, select and hold (or right-click) **Command Prompt** in the search results, and then select **Run as administrator**.
 
 > [!Warning]
 > Administrative rights are required to use BCDEdit to modify boot configuration data. Changing some boot entry options by using **BCDEdit /set** could render your computer inoperable. As an alternative, use System Configuration utility (MSConfig.exe) to change boot settings.

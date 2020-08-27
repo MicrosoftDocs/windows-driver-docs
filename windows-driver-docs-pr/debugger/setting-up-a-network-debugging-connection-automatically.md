@@ -88,7 +88,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 ## <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span> Using WinDbg
 
-On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Net** tab. Paste in your port number and key that you saved to in the notepad .txt file earlier. Click **OK**.
+On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Net** tab. Paste in your port number and key that you saved to in the notepad .txt file earlier. Select **OK**.
 
 You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where <YourPort> is the port you selected above, and <YourKey> is the key that was returned by kdnet.exe above. Paste in the key in that you saved to in the notepad .txt file earlier.
 
@@ -127,13 +127,13 @@ After the target PC restarts, the debugger should connect automatically.
 
 The  debugger  must have access through the firewall. Use Control Panel to allow access through the firewall. 
 
-1. Open **Control Panel &gt; System and Security** and click **Allow an app through Windows Firewall**. 
+1. Open **Control Panel &gt; System and Security** and select **Allow an app through Windows Firewall**. 
 
 2. In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*. 
 
 3. Use the check boxes to allow those two applications **all three** of the different network types through the firewall. 
 
-4. Scroll down and click **OK**, to save the firewall changes. Restart the debugger.
+4. Scroll down and select **OK**, to save the firewall changes. Restart the debugger.
 
     ![windows control panel firewall config showing Windows GUI Symbolic Debugger and Windows Kernel Debugger with all three network types enabled](images/firewall-control-pannel-windbg-gui-config.png)
 

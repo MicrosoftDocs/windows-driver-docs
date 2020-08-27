@@ -35,7 +35,7 @@ Driver developers for IEEE 1394 devices may optionally support this property in 
 
 It is not necessary to implement support for this property on USB devices because the [USB Video Class Driver](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver) provides this functionality. Normally applications can use the **IKsControl** COM interface to control an IEEE 1394 device. However, the **IKsControl** COM interface does not provide a standard method to support tape seek that is portable across USB and IEEE 1394 buses. Therefore, to perform a tape seek a caller must use the **DeviceIoControl** function instead of the **IKsControl** COM interface. Callers perform a tape seek on 1394 AV/C devices by using a raw AV/C command with an absolute track number (ATN) or time code to seek to. This is a primary reason why this property does not apply to USB devices.
 
-See the [Digital Video Application Compatibility](https://go.microsoft.com/fwlink/?linkid=2085071) white paper for more information about the differences between tape location searches on USB and 1394 devices.
+See the [Digital Video Application Compatibility (DOC download)](https://go.microsoft.com/fwlink/?linkid=2085071) white paper for more information about the differences between tape location searches on USB and 1394 devices.
 
 ## Requirements
 

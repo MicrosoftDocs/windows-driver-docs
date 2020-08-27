@@ -39,20 +39,20 @@ Microsoft provides a specific cross-certificate for each CA that issues SPCs for
 Follow the steps below to identify your CA, and then download the related cross-certificate.
 
 1.  Open the Microsoft Management Console (MMC) and add the Certificates snap-in:
-    1.  Click the Start button, type “mmc” in the search box, and press return. If a User Account Control dialog box appears, click Yes.
+    1.  Select the Start button, type “mmc” in the search box, and select mmc from the search results. If a User Account Control dialog box appears, click Yes.
     2.  From the MMC File menu, select Add/Remove Snap-in, …
-    3.  Select the Certificates snap-in and click Add.
-    4.  Select My user account and click Finish.
-    5.  Select the Certificates snap-in again and click Add.
-    6.  Select Computer account and click Next.
-    7.  Select Local computer and click Finish.
+    3.  Select the Certificates snap-in and select Add.
+    4.  Select My user account and select Finish.
+    5.  Select the Certificates snap-in again and select Add.
+    6.  Select Computer account and select Next.
+    7.  Select Local computer and select Finish.
 
 2.  Locate your SPC in the certificate store, and then double-click it. Your certificate is listed in one of the following two locations, depending on how the certificate was installed.
     -   The Current User, Personal, Certificates store, or
     -   The Local Computer, Personal, Certificates store
 
-3.  In the **Certificate** dialog box, click on the **Certification Path** tab, and then select the top-most certificate in the certification path. This is the CA that is the issuing root authority for your SPC.
-4.  View the root authority certificate by clicking the **View Certificate** button, and then click the **Details** tab of the new **Certificate** dialog box.
+3.  In the **Certificate** dialog box, select the **Certification Path** tab, and then select the top-most certificate in the certification path. This is the CA that is the issuing root authority for your SPC.
+4.  View the root authority certificate by selecting the **View Certificate** button, and then select the **Details** tab of the new **Certificate** dialog box.
 5.  Find the **Issuer** and **Thumbprint** for this certificate. Then locate the corresponding entry for this CA in the list below.
 6.  Download the related cross-certificate for the CA and use this cross-certificate together with your SPC when digitally signing kernel-mode code
 
