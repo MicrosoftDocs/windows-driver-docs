@@ -1,5 +1,5 @@
 ---
-Description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include firmware upgrade application, driver installation package, and applications that send transfers to the device.
+description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include firmware upgrade application, driver installation package, and applications that send transfers to the device.
 title: Tools in the MUTT software package
 ms.date: 04/20/2017
 ms.localizationpriority: medium

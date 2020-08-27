@@ -1,4 +1,5 @@
 ---
+description: "Windows 10 in S mode Driver Requirements"
 title: Windows 10 in S mode Driver Requirements
 ms.date: 05/05/2017
 ms.localizationpriority: medium
