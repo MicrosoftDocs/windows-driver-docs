@@ -1,16 +1,25 @@
 ---  
-title: System-Defined Device Setup Classes Available to Vendors  
-description: System-Defined Device Setup Classes Available to Vendors  
+title: Class and ClassGuid entries for INF Version Section  
+description: Class and ClassGuid entries for INF Version Section 
 ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
-ms.date: 05/08/2018
+ms.date: 08/27/2020
 ms.localizationpriority: medium
+ms.custom: contperfq1
 ---  
 
-# System-Defined Device Setup Classes Available to Vendors  
-  
-  
-The following classes and GUIDs are defined by the operating system. Unless otherwise noted, these classes and GUIDs can be used to install devices (or drivers) on Windows 2000 and later versions of Windows:  
-  
+# Class and ClassGuid entries for INF Version Section  
+
+If you're writing a Windows device driver for a specific category of device, you can use the following list to select the right pre-defined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
+
+To see how these entries appear in an INF file, check out [cdrom.inf](https://github.com/microsoft/Windows-driver-samples/blob/aaeca58c5e7b67740a603a3150db225670b42bb6/storage/class/cdrom/src/cdrom.inf#L7-L8) in the [Windows driver samples](https://github.com/microsoft/Windows-driver-samples) repo.
+
+Values in the list can be used to install device drivers on Windows 2000 and later, unless specially noted.
+
+> [!NOTE]
+> If you're looking for info on troubleshooting a problem with a CD or DVD drive, see [The CD drive or the DVD drive does not work as expected](https://support.microsoft.com/help/929461/the-cd-drive-or-the-dvd-drive-does-not-work-as-expected-on-a-computer).
+
+## Device categories and class values 
+
 **Battery Devices**  
 Class = Battery  
 ClassGuid = {72631e54-78a4-11d0-bcf7-00aa00b7b32a}  
