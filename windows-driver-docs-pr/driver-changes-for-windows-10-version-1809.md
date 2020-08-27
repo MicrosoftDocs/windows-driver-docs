@@ -16,7 +16,7 @@ Documentation on the new [sidebandaudio](/windows-hardware/drivers/ddi/sidebanda
 
 ## <a name="bluetooth-1809"></a>Bluetooth
 
-* HCI_VS_MSFT_Read_Supported_Features has been updated to include a new flag for secure simple pairing process. See, [Microsoft-defined Bluetooth HCI commands and events](./bluetooth/microsoft-defined-bluetooth-hci-commands-and-events.md#hcivsmsftreadsupportedfeatures).
+* HCI_VS_MSFT_Read_Supported_Features has been updated to include a new flag for secure simple pairing process. See, [Microsoft-defined Bluetooth HCI commands and events](./bluetooth/microsoft-defined-bluetooth-hci-commands-and-events.md#hci_vs_msft_read_supported_features).
 
 * New QDID for Windows 10, version 1809 is available here: [108589](https://launchstudio.bluetooth.com/ListingDetails/55701). For a complete list of QD ID for all releases, see [Bluetooth](/windows-hardware/design/component-guidelines/bluetooth).
 
