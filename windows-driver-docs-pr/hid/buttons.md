@@ -8,23 +8,6 @@ ms.localizationpriority: medium
 
 # HID button drivers
 
-
-**Summary**
-
--   [Describe a GPIO button in ACPI and load Microsoft-provided driver](acpi-button-device.md)
--   [Write a HID source driver in kernel mode for non-GPIO button](virtual-hid-framework--vhf-.md)
--   [Write a UMDF HID Minidriver for a non-GPIO button](https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers)
-
-**Applies to**
-
--   Windows 10
--   Driver developers of HID button devices
-
-**Important APIs**
-
--   [Virtual HID Framework Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
--   [UMDF HID Minidriver IOCTLs](https://docs.microsoft.com/previous-versions/hh463977(v=vs.85))
-
 Use the Microsoft-provided button driver for GPIO buttons; otherwise, implement your driver that injects HID data to the operating system.
 
 Buttons (Power, Windows, volume and rotation lock) are typically used for tasks that occur while the physical keyboard is not available to the user, on form factors such as convertibles or slates. Buttons declare themselves to the operating system as HID devices by supplying [HID button report descriptors](https://docs.microsoft.com/windows-hardware/drivers/gpiobtn/hid-button-report-descriptors). This allows the system to interpret the purpose and events of those buttons in a standardized way. When a button state changes, that event is mapped to a [HID Usages](hid-usages.md). A HID transport minidriver reports those events to upper-level drivers that then send details to HID clients in user mode or kernel mode.
@@ -34,7 +17,6 @@ For physical general-purpose I/O (GPIO) buttons, the HID transport minidriver is
 The in-box driver cannot service a button that is not wired to an interrupt line. For such buttons, you need to write a driver that exposes the button as a HID button and reports state changes to the HID class driver (Microsoft-provided). Your driver could be a HID source driver or a HID transport driver.
 
 ## Guidance for supporting HID buttons
-
 
 Here are some general pointers to help you decide which implementation you should follow if you are creating HID buttons.
 
@@ -53,8 +35,8 @@ Here are some general pointers to help you decide which implementation you shoul
 <ul>
 <li><a href="acpi-button-device.md" data-raw-source="[ACPI button device](acpi-button-device.md)">ACPI button device</a></li>
 <li><a href="https://docs.microsoft.com/windows-hardware/drivers/gpiobtn/button-behavior" data-raw-source="[Button Behavior](https://docs.microsoft.com/windows-hardware/drivers/gpiobtn/button-behavior)">Button Behavior</a></li>
-<li><a href="acpi-button-device.md#acpi-button-phone" data-raw-source="[Sample buttons ACPI for phone/tablet](acpi-button-device.md#acpi-button-phone)">Sample buttons ACPI for phone/tablet</a></li>
-<li><a href="acpi-button-device.md#acpi-button-desktop" data-raw-source="[Sample buttons ACPI for desktop](acpi-button-device.md#acpi-button-desktop)">Sample buttons ACPI for desktop</a></li>
+<li><a href="acpi-button-device.md#sample-buttons-acpi-for-phonetablet" data-raw-source="[Sample buttons ACPI for phone/tablet](acpi-button-device.md#acpi-button-phone)">Sample buttons ACPI for phone/tablet</a></li>
+<li><a href="acpi-button-device.md#sample-buttons-acpi-for-desktop" data-raw-source="[Sample buttons ACPI for desktop](acpi-button-device.md#acpi-button-desktop)">Sample buttons ACPI for desktop</a></li>
 </ul>
 <p>Microsoft encourages you to use the in-box transport-minidrivers whenever possible.</p></td>
 </tr>

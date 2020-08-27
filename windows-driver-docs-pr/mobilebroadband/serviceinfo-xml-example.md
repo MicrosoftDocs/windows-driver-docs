@@ -26,12 +26,3 @@ The following XML document uses the [ServiceInfo XML schema](serviceinfo-xml-sch
     <ServiceSpecificExtension namespace="http://schemas.microsoft.com/windows/2010/12/DeviceMetadata/MobileBroadbandInfo">MobileBroadbandInfo.xml</ServiceSpecificExtension>
 </ServiceInfo>
 ```
-
- 
-
- 
-
-
-
-
-
