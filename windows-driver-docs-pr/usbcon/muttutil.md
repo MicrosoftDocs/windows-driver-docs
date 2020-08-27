@@ -1,5 +1,5 @@
 ---
-Description: MuttUtil performs various tasks on MUTT devices.
+description: MuttUtil performs various tasks on MUTT devices.
 title: MuttUtil
 ms.date: 04/20/2017
 ms.localizationpriority: medium

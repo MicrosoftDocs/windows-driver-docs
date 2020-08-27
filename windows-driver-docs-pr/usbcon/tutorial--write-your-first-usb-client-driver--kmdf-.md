@@ -1,5 +1,5 @@
 ---
-Description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2019 to write a simple kernel-mode driver framework (KMDF)-based client driver.
+description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2019 to write a simple kernel-mode driver framework (KMDF)-based client driver.
 title: How to write your first USB client driver (KMDF)
 ms.date: 06/07/2019
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-Description: Using the WpdInfo Tool
+description: Using the WpdInfo Tool
 title: Using the WpdInfo Tool
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-Description: A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
+description: A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
 title: Getting started with USB development
 ms.date: 04/20/2017
 ms.localizationpriority: medium

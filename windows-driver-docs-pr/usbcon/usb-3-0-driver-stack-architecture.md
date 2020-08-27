@@ -1,5 +1,5 @@
 ---
-Description: This topic provides an overview of the Universal Serial Bus (USB) driver stack architecture.
+description: This topic provides an overview of the Universal Serial Bus (USB) driver stack architecture.
 title: USB host-side drivers in Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium

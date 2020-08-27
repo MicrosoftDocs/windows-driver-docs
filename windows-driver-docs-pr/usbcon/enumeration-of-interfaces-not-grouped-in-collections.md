@@ -1,5 +1,5 @@
 ---
-Description: Interfaces on a composite USB device can be grouped in collections or represent one USB function individually.
+description: Interfaces on a composite USB device can be grouped in collections or represent one USB function individually.
 title: Enumeration of Interfaces on USB Composite Devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium

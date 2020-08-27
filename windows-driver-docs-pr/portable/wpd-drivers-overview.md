@@ -1,5 +1,5 @@
 ---
-Description: WPD Drivers Overview
+description: WPD Drivers Overview
 title: WPD Drivers Overview
 ms.date: 04/20/2017
 ms.localizationpriority: medium

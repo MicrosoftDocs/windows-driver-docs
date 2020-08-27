@@ -1,5 +1,5 @@
 ---
-Description: Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
+description: Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
 title: Write a USB Type-C connector driver
 ms.date: 01/07/2019
 ms.localizationpriority: medium

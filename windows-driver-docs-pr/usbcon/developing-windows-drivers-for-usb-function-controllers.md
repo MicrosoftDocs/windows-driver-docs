@@ -1,5 +1,5 @@
 ---
-Description: Overview of developing Windows drivers for USB function controllers
+description: Overview of developing Windows drivers for USB function controllers
 title: Overview of developing Windows drivers for USB function controllers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
