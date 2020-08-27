@@ -1952,7 +1952,7 @@
     href: suppressaddremoveprograms-xml-element.md
   - name: "suppressWizard XML Element"
     href: suppresswizard-xml-element.md
-  - name: "System-Defined Device Setup Classes Available to Vendors"
+  - name: "Class and ClassGuid entries for INF Version Section"
     href: system-defined-device-setup-classes-available-to-vendors.md
   - name: "System-Defined Device Setup Classes Reserved for System Use"
     href: system-defined-device-setup-classes-reserved-for-system-use.md
