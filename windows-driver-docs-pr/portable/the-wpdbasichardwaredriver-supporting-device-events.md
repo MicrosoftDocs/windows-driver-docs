@@ -1,5 +1,5 @@
 ---
-Description: Supporting Device Events
+description: Supporting Device Events
 title: Supporting Device Events
 ms.date: 04/20/2017
 ms.localizationpriority: medium

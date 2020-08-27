@@ -1,5 +1,5 @@
 ---
-Description: Support for base-driver commands (WpdBasicHardwareDriverSample)
+description: Support for base-driver commands (WpdBasicHardwareDriverSample)
 title: Support for base-driver commands (WpdBasicHardwareDriverSample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

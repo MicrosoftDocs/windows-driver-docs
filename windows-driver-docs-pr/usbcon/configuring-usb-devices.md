@@ -1,5 +1,5 @@
 ---
-Description: The topics in this section describe how a client driver must configure their device.
+description: The topics in this section describe how a client driver must configure their device.
 title: Overview of selecting a USB configuration in USB drivers overview
 ms.date: 04/20/2017
 ms.localizationpriority: medium

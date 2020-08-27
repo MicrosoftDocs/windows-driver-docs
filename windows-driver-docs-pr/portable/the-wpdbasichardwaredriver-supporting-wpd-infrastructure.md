@@ -1,5 +1,5 @@
 ---
-Description: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
+description: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
 title: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

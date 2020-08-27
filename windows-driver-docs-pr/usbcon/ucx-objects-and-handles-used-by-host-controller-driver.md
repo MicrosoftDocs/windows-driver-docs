@@ -1,5 +1,5 @@
 ---
-Description: UCX extends the WDF object functionality to define its own USB-specific UCX objects. UCX uses these objects for queuing requests to any underlying host controller driver.
+description: UCX extends the WDF object functionality to define its own USB-specific UCX objects. UCX uses these objects for queuing requests to any underlying host controller driver.
 title: UCX objects and handles used by a host controller driver
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-Description: The topics in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.
+description: The topics in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.
 title: Overview of implementing power management in USB client drivers
 ms.date: 04/20/2017
 ms.localizationpriority: medium

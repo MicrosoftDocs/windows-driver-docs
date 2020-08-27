@@ -1,5 +1,5 @@
 ---
-Description: Supporting Rendering Profiles
+description: Supporting Rendering Profiles
 title: Supporting Rendering Profiles
 ms.date: 04/20/2017
 ms.localizationpriority: medium
