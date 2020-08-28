@@ -20,9 +20,9 @@ After you have created an INF file, you can use it to install, upgrade, and unin
 
 To execute the [**DefaultInstall**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-section) and [**DefaultInstall.Services**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-defaultinstall-services-section) sections of your INF file, you should do the following:
 
-1.  In Windows Explorer, right-click the INF file name. A shortcut menu will appear.
+1.  In Windows Explorer, select and hold (or right-click) the INF file name. A shortcut menu will appear.
 
-2.  Click **Install**.
+2.  Select **Install**.
 
 **Note**   The shortcut menu appears only if the INF file contains a **DefaultInstall** section.
 

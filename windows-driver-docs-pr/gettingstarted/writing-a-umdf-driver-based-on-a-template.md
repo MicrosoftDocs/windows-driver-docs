@@ -25,7 +25,7 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 2. In the New Project dialog box, in the left pane, go to **Visual C++ &gt; Windows Drivers &gt; WDF**. Select **User Mode Driver (UMDF V2)**.
 3. In the **Name** field, enter "UmdfDriver" as the project name.
 4. In the **Location** field, enter the directory where you want to create the new project.
-5. Check **Create directory for solution**. Click **OK**.
+5. Check **Create directory for solution**. Select **OK**.
 
     ![screen shot of the new project dialog box, showing wdf and user mode driver selected ](images/vs2015-umdf2-template.png)
 
@@ -33,8 +33,8 @@ To get started, be sure you have the most recent version of Microsoft Visual Stu
 
     ![screen shot of solution explorer showing the files in the driver project](images/vs2015-umdf2-solution-explorer.png)
 
-6. In the **Solution Explorer** window, right-click **Solution 'UmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
-7. In the **Solution Explorer** window, right-click **UmdfDriver**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
+6. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'UmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
+7. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
 8. To build your driver, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
 
     Verify that the build output includes:
@@ -57,11 +57,11 @@ Typically when you test and debug a driver, the debugger and driver run on separ
 So far, you've used Visual Studio to build a driver on the host computer. Now you need to configure a target computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md). Then you'll be ready to deploy, install, load, and debug your driver:
 
 1. On the host computer, open your solution in Visual Studio. You can double-click the solution file, UmdfDriver.sln, in your UmdfDriver folder.
-2. In the **Solution Explorer** window, right-click **UmdfDriver**, and choose **Properties**.
+2. In the **Solution Explorer** window, select and hold (or right-click) **UmdfDriver**, and choose **Properties**.
 3. In the **UmdfDriver Property Pages** window, go to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown here.
 4. Check **Remove previous driver versions before deployment**.
 5. For **Target Device Name**, select the name of the computer that you configured for testing and debugging.
-6. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\UmdfDriver. Click **OK**.
+6. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\UmdfDriver. Select **OK**.
 
     ![screen shot of the umdfdriver property pages, showing deployment driver install selected](images/vs2015-deploy.png)
 

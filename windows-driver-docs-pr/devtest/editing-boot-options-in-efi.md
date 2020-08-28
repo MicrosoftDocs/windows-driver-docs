@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 To edit boot options on computers with EFI NVRAM that are running Windows Server 2003 or earlier versions of NT-based Windows, use Bootcfg (bootcfg.exe), a tool that runs on Windows, or Nvrboot (nvrboot.efi), a tool that runs in the EFI environment. Both tools are included in the Windows XP 64-Bit Edition and the 64-bit version of Windows Server 2003.
 
-You can also view and change some boot options in Control Panel under System. In the System Properties dialog box, on the Advanced tab, click Settings under **Startup and Recovery**. Because this functionality is limited, it is not discussed in this section. For information about the **Startup and Recovery** dialog box, see Help and Support Center.
+You can also view and change some boot options in Control Panel under System. In the System Properties dialog box, on the Advanced tab, select Settings under **Startup and Recovery**. Because this functionality is limited, it is not discussed in this section. For information about the **Startup and Recovery** dialog box, see Help and Support Center.
 
 ## Bootcfg
 
