@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 # Write a Universal Windows driver (UMDF 2) based on a template
 
-This topic describes how to write a [Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers) using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
+This topic describes how to write a [Universal Windows driver](/windows-hardware/drivers) using User-Mode Driver Framework (UMDF) 2. You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 
-To get started, be sure you have the most recent version of Microsoft Visual Studio and the Windows Driver Kit (WDK). For download links, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+To get started, be sure you have the most recent version of Microsoft Visual Studio and the Windows Driver Kit (WDK). For download links, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405) is included when you install the WDK.
 
@@ -88,8 +88,8 @@ For more info, see [Driver Module Framework (DMF)](https://github.com/Microsoft/
 
 ## Related topics
 
-[Developing, Testing, and Deploying Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/)
+[Developing, Testing, and Deploying Drivers](../develop/index.md)
 
-[Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/)
+[Debugging Tools for Windows](../debugger/index.md)
 
 [Write your first driver](writing-your-first-driver.md)

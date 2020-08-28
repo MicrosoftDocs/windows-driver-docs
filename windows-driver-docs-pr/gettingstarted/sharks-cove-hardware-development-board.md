@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Sharks Cove hardware development board
 
 > [!WARNING]
-> The Sharks Cove hardware development board is no longer supported for Windows IoT Core.  For a list of currently supported boards, see [SoCs and custom boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
+> The Sharks Cove hardware development board is no longer supported for Windows IoT Core.  For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 Sharks Cove is a [hardware development board](https://go.microsoft.com/fwlink/p?linkid=506967) that you can use to develop hardware and drivers for Windows.
 
@@ -196,7 +196,7 @@ If you are writing a driver for a driver for a device that connects to a simple 
 Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](https://go.microsoft.com/fwlink/p?linkid=401463) accelerometer.
 
 >[!NOTE]
->See the [SpbAccelerometer driver cookbook](https://docs.microsoft.com/windows-hardware/drivers/sensors/spbaccelerometer-driver-cookbook) for a step-by-step guide to the [SpbAccelerometer sample driver](https://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
+>See the [SpbAccelerometer driver cookbook](../sensors/spbaccelerometer-driver-cookbook.md) for a step-by-step guide to the [SpbAccelerometer sample driver](https://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
 
 1. Copy the x86 version of ASL.exe to the Sharks Cove board. ASL.exe is included in the WDK.
 
@@ -415,8 +415,8 @@ As an alternative to using Visual Studio for debugging, you can use WinDbg.
 
 Regardless of whether you use Visual Studio or WinDbg, these hands-on guides are helpful for learning debugger commands:
 
-- [Getting Started with WinDbg (User-Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg)
-- [Getting Started with WinDbg (Kernel-Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-)
+- [Getting Started with WinDbg (User-Mode)](../debugger/getting-started-with-windbg.md)
+- [Getting Started with WinDbg (Kernel-Mode)](../debugger/getting-started-with-windbg--kernel-mode-.md)
 
 ## Sample driver code
 

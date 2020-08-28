@@ -73,4 +73,4 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 ## See Also
 
-[Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers/develop/deploying-a-driver-to-a-test-computer)
+[Deploying a Driver to a Test Computer](../develop/deploying-a-driver-to-a-test-computer.md)
