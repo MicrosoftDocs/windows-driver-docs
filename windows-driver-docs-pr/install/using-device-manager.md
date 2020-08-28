@@ -21,4 +21,4 @@ If your device is not required to start the computer, Device Manager places a ye
 
 Device manager can show hidden devices. This is helpful when you are testing the installation of a new PnP device. For more information, see [Viewing Hidden Devices](viewing-hidden-devices.md).
 
-Device Manager provides detailed information in the Properties dialog for each device. Right-click the name of the device, and then click **Properties**. The **General**, **Driver**, **Details**, and **Events** tabs contain information that can be useful when you debug errors. For more information, see [Device Manager Details Tab](device-manager-details-tab.md).
+Device Manager provides detailed information in the Properties dialog for each device. Select and hold (or right-click) the name of the device, and then select **Properties**. The **General**, **Driver**, **Details**, and **Events** tabs contain information that can be useful when you debug errors. For more information, see [Device Manager Details Tab](device-manager-details-tab.md).

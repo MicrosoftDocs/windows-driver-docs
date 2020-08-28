@@ -59,7 +59,7 @@ Follow this procedure if you want to run tests on a computer without using the W
 
 **To uninstall TAEF manually**
 
-1.  Stop the Te.Service. Open the Microsoft Management Console (compmgmt.msc). Go to Services and Applications\\Services, and locate the Te.Service. Right-click the Te.Service and click **Stop**.
+1.  Stop the Te.Service. Open the Microsoft Management Console (compmgmt.msc). Go to Services and Applications\\Services, and locate the Te.Service. Select and hold (or right-click) the Te.Service and select **Stop**.
 2.  Go to Control Panel\\Programs\\Programs and Features and uninstall the **Test Authoring and Execution Framework program**.
 
  
