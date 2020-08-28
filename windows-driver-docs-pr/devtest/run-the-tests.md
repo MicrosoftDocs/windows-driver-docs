@@ -32,19 +32,19 @@ You can find the data-driven SysFund tests at \<unzipped EWDK root>\Program File
 
 **System - PNP (disable and enable) with IO before and after (Reliability)**
 -	Binary: Sysfund_PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven.dll
--	[Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b2849bf1-3478-4fd7-a577-31001084e908)
+-	[Documentation](/windows-hardware/test/hlk/testref/b2849bf1-3478-4fd7-a577-31001084e908)
 
 **System - PNP Remove Device Test (Reliability)**
 -	Binary: Sysfund_PNP_RemoveAndRestartDevice_DataDriven.dll
--	[Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/ead2222e-4485-4bfc-84cd-43ac0d2e8181)
+-	[Documentation](/windows-hardware/test/hlk/testref/ead2222e-4485-4bfc-84cd-43ac0d2e8181)
 
 **System - Reboot Restart with IO During (Reliability)**
 -	Binary: Sysfund_RebootRestart_With_IO_During_DataDriven.dll
--	[Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/6d6ed5ec-1765-4569-a7ac-20ed7869d89a)
+-	[Documentation](/windows-hardware/test/hlk/testref/6d6ed5ec-1765-4569-a7ac-20ed7869d89a)
 
 **System - Sleep with IO before and after (Reliability SysFund)** 
 -	Binary: Sysfund_Sleep_With_IO_BeforeAndAfter_DataDriven.dll
--	[Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/16ac817e-b042-4679-8027-c6c44d1ce29f)
+-	[Documentation](/windows-hardware/test/hlk/testref/16ac817e-b042-4679-8027-c6c44d1ce29f)
 
 **Device status check**
 -	Binary: Utility_DeviceStatusCheck_DataDriven.dll
@@ -67,7 +67,7 @@ As shown below, the configuration file can be customized so the tests and utilit
 The tests and utilities will use only the elements required and will ignore all other elements.
 ### WDTFTest.xml parameter descriptions and use
 #### Configuring the SDEL query
-The [SDEL language](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) is used to create the query that returns the devices targeted by the tests and utilities. Bring the following SDEL-related parameters together using AND statements to create the complete query:
+The [SDEL language](/windows-hardware/drivers/ddi/index) is used to create the query that returns the devices targeted by the tests and utilities. Bring the following SDEL-related parameters together using AND statements to create the complete query:
 
 **SDEL**: The value *IsDevice* specifies the complete set of devices on the system.  Typically, this parameter is not edited unless you only want to test a specific driver or device.  The next SDEL-related parameters will create a subset of devices from this superset by specifying drivers or devices which should be excluded from testing, so this parameter can be left unchanged.
 ```
@@ -112,7 +112,7 @@ The [SDEL language](https://docs.microsoft.com/windows-hardware/drivers/ddi/inde
 
 #### Parameters that apply to ```utility_enabledisabledriververifier_datadriven.dll``` only:
 
-**DriverVerifierLevel**: The default value of 0x209BB is equal to "standard flags" for [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+**DriverVerifierLevel**: The default value of 0x209BB is equal to "standard flags" for [Driver Verifier](./driver-verifier.md).
 ```
     <Parameter Name="DriverVerifierLevel">0x209BB</Parameter>
 ```
@@ -141,7 +141,7 @@ The data-driven SysFund tests expect any devices targeted by the tests to have a
 ```
     te.exe Utility_DeviceStatusCheck_DataDriven.dll
 ```
-This utility uses the SDEL queries defined in WDTFTest.xml to find the set of devices under test and verify they all have **Problem Code 0**.  A “Passed” result means that the set of devices queried are all working properly. Review **TestTextLog.log** to investigate failures.  For an explanation of Device Manager problem codes, see [Device Manager Error Messages](https://docs.microsoft.com/windows-hardware/drivers/install/device-manager-error-messages).
+This utility uses the SDEL queries defined in WDTFTest.xml to find the set of devices under test and verify they all have **Problem Code 0**.  A “Passed” result means that the set of devices queried are all working properly. Review **TestTextLog.log** to investigate failures.  For an explanation of Device Manager problem codes, see [Device Manager Error Messages](../install/device-manager-error-messages.md).
 
 ### Launch a test
 To launch either of the data-driven SysFund tests, use the following commands:
@@ -182,7 +182,7 @@ The following error message is indicative of a poorly formed SDEL query containe
     Error: Verify: SUCCEEDED(m_pDeviceDepot->Query(CComBSTR(DQ), &m_pTestTargets)) - Value (0x80070057) [File: onecore\base\tools\wdtf\tests\devfund\datadriven\sysfund_pnp_disableenable_with_io_beforeandafter_datadriven\test.cpp, Function: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test, Line: 231]
     EndGroup: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test#0 [Failed]
 ```
-The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) and look for a malformed query that could be causing this error.
+The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](/windows-hardware/drivers/ddi/index) and look for a malformed query that could be causing this error.
 
 ### Test is Blocked Because it Might Reboot the Machine
 Certain SysFund tests can reboot the machine during testing. In order to run a test which can reboot the machine, the "/rebootstatefile" parameter must be used:
@@ -211,4 +211,4 @@ This is the well-formed value for deviceid which fixes the error:
 ```
 
 ### Other Issues
-For help with troubleshooting other issues not listed here, see [Device.DevFund Additional Documentation](https://docs.microsoft.com/windows-hardware/test/hlk/testref/device-devfund-additional-documentation).
+For help with troubleshooting other issues not listed here, see [Device.DevFund Additional Documentation](/windows-hardware/test/hlk/testref/device-devfund-additional-documentation).

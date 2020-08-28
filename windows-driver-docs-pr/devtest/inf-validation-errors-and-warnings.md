@@ -120,7 +120,7 @@ Provider="Microsoft"
 </tr>
 <tr>
 <td><strong>1220: Cannot directly reference a section defined in an included INF</strong></td>
-<td>If your INF file references a <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.
+<td>If your INF file references a <a href="/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section in an included INF, you must use the <strong>Needs</strong> directive. Any other directive that references a section from an included INF causes error 1220.
 <p>In this example, the install section of A.INF references an equivalent install section in B.INF.</p>
 <p>A.INF contains:</p>
 <div class="code">
@@ -173,7 +173,7 @@ CatalogFile=wudf.cat
 </tr>
 <tr>
 <td><strong>1235: String token not defined in [Strings]</strong></td>
-<td>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive"><strong>AddReg</strong></a> directive, but there is no corresponding REG_DWORD = 0x00010001 in the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section">[Strings]</a> section.
+<td>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive"><strong>AddReg</strong></a> directive, but there is no corresponding REG_DWORD = 0x00010001 in the <a href="/windows-hardware/drivers/install/inf-strings-section">[Strings]</a> section.
 <p>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
 <pre>
 [MyAddReg]

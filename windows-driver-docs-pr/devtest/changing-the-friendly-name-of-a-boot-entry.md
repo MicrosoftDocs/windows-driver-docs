@@ -35,7 +35,7 @@ However, more precise strings, such as the ones that follow, make the boot choic
 "Windows 10 NullModem"
 ```
 
-**Note**   When a boot entry is configured for debugging ([/debug /debugport](https://docs.microsoft.com/windows-hardware/drivers/devtest/-debug)) or for Emergency Management Services (EMS) ([/redirect](https://docs.microsoft.com/windows-hardware/drivers/devtest/-redirect)) on an x86- or an x64-based system, the boot loader appends a bracketed phrase (\[debugger enabled\] or \[ems enabled\]) to the friendly name that appears in the boot menu.
+**Note**   When a boot entry is configured for debugging ([/debug /debugport](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200)) or for Emergency Management Services (EMS) ([/redirect](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200)) on an x86- or an x64-based system, the boot loader appends a bracketed phrase (\[debugger enabled\] or \[ems enabled\]) to the friendly name that appears in the boot menu.
 However, the boot loader omits the bracketed phrase from the boot menu when the friendly name and the bracketed phrase together exceed 70 characters. To restore the bracketed phrase, shorten the friendly name.
 
 To change the friendly name of a boot entry in a Boot.ini file, you can use Bootcfg or edit the Boot.ini file in Notepad. On systems that store boot options in EFI NVRAM, use Bootcfg.
@@ -51,7 +51,7 @@ To change the friendly name of a boot entry for Windows, use BCDEdit.
 To change the description of a boot entry as it appears on the boot menu, you can use the **/set** *IDdescription* option. The command uses the following syntax. The ID is the GUID that is associated with the boot entry (or one of the well-known identifiers, for example, {current}).
 
 > [!NOTE]
-> If you are using [Windows PowerShell](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/?view=powershell-6), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
+> If you are using [Windows PowerShell](/powershell/module/Microsoft.PowerShell.Core/?view=powershell-6), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
 
 
 ```console

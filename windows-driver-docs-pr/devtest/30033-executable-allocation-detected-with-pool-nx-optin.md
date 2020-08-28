@@ -11,13 +11,13 @@ f1_keywords:
 # C30033
 
 
-warning C30033: Executable allocation was detected in a driver compiled with [POOL\_NX\_OPTIN](https://docs.microsoft.com/windows-hardware/drivers/kernel/single-binary-opt-in-pool-nx-optin). This driver has been determined to be loaded at run time by another driver. Please verify that the loading driver calls **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)** in its DriverEntry.
+warning C30033: Executable allocation was detected in a driver compiled with [POOL\_NX\_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md). This driver has been determined to be loaded at run time by another driver. Please verify that the loading driver calls **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)** in its DriverEntry.
 
 BANNED\_MEM\_ALLOCATION\_MAYBE\_UNSAFE\_DRIVER\_LOADED
 
 It has been determined that this is a DLL that is loaded by another driver, and as such does not have a complete initialization function. Verify the loading driver is:
 
--   Compiled using [POOL\_NX\_OPTIN](https://docs.microsoft.com/windows-hardware/drivers/kernel/single-binary-opt-in-pool-nx-optin)=1
+-   Compiled using [POOL\_NX\_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md)=1
 -   Calls **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)** in its initialization function
 
 If the loading driver specifies these correctly, then the warning can be ignored.
@@ -90,10 +90,4 @@ ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 ```
 
  
-
- 
-
-
-
-
 
