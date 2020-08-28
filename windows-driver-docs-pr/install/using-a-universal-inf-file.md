@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 If you are building a [Windows Driver](../develop/getting-started-with-windows-drivers.md) package, you must use a universal INF file. If you are building a Windows Desktop Driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
 
-A universal INF file uses a subset of the [INF syntax](inf-file-sections-and-directives.md) that is available to a Windows driver. A universal INF file installs a driver and configures device hardware, but does not perform any other action, such as running a co-installer.
+A universal INF file uses a subset of the [INF syntax](https://docs.microsoft.com/windows-hardware/drivers/install/general-syntax-rules-for-inf-files) that is available to a Windows driver. A universal INF file installs a driver and configures device hardware, but does not perform any other action, such as running a co-installer.
 
 ## Why is a universal INF file required on non-desktop editions of Windows?
 
