@@ -16,7 +16,7 @@ Starting in WDK 8.1, you can copy and run the HCK Test Suites on test computers 
 
 -   Install Visual Studio and the WDK on the computer you use for development.
 -   From Visual Studio, you can configure and provision computers for testing. When you configure the test computer, the WDK driver test framework automatically enables the test computer for remote debugging and transfers the necessary test binaries and support files. If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md)
--   Although it is not recommended, you can also install the necessary test components manually. Follow the instructions to install the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) and WDTF on the test computer. See [Manually installing and uninstalling TAEF on a test computer](../taef/getting-started.md#manual_install_taef) and [WDTF Quick Start](/windows-hardware/drivers/wdtf/wdtf-quick-start-).
+-   Although it is not recommended, you can also install the necessary test components manually. Follow the instructions to install the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) and WDTF on the test computer. See [Manually installing and uninstalling TAEF on a test computer](../taef/getting-started.md#manually-installing-and-uninstalling-taef-on-a-test-computer) and [WDTF Quick Start](/windows-hardware/drivers/wdtf/wdtf-quick-start-).
 
 Instructions
 ------------
