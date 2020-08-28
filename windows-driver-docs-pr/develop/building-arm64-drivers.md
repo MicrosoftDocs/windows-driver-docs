@@ -41,5 +41,5 @@ Windows 10 can run on machines that are powered by ARM64 processors.  However, b
 ## See Also
 
 * [Debugging ARM64](../debugger/debugging-arm64.md)
-* [Windows 10 on ARM](https://docs.microsoft.com/windows/uwp/porting/apps-on-arm)
-* [HLK ARM64 Getting Started Guide](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/hlk-arm64-getting-started-guide)
+* [Windows 10 on ARM](/windows/uwp/porting/apps-on-arm)
+* [HLK ARM64 Getting Started Guide](/windows-hardware/test/hlk/getstarted/hlk-arm64-getting-started-guide)

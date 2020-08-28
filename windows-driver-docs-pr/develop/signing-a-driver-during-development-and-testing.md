@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Before you install a driver on a computer running a 64-bit version of Windows, you must sign the driver package. For testing purposes, you can test sign the driver package, which is a more relaxed form of signing than signing for public release.
 
-In Microsoft Visual Studio, test signing is enabled by default. Suppose you have created a KMDF driver solution as described in [Writing a KMDF driver based on a template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-kmdf-driver-based-on-a-template). When you build the solution, you can see in the **Output** window that the driver package has been test signed.
+In Microsoft Visual Studio, test signing is enabled by default. Suppose you have created a KMDF driver solution as described in [Writing a KMDF driver based on a template](../gettingstarted/writing-a-kmdf-driver-based-on-a-template.md). When you build the solution, you can see in the **Output** window that the driver package has been test signed.
 
 ![screen shot of the output window](images/SigningADriver01.png)
 
@@ -28,7 +28,7 @@ To manually enable test signing, follow these steps.
 ## <span id="Viewing_the_signed_driver_package"></span><span id="viewing_the_signed_driver_package"></span><span id="VIEWING_THE_SIGNED_DRIVER_PACKAGE"></span>Viewing the signed driver package
 
 
-After you build your solution, navigate in File Explorer to the folder that contains your driver package. One of the files in the package is a catalog file. The catalog file contains the digital signature for the package. For an example of viewing the files in a signed package, see [Writing a KMDF driver based on a template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-kmdf-driver-based-on-a-template).
+After you build your solution, navigate in File Explorer to the folder that contains your driver package. One of the files in the package is a catalog file. The catalog file contains the digital signature for the package. For an example of viewing the files in a signed package, see [Writing a KMDF driver based on a template](../gettingstarted/writing-a-kmdf-driver-based-on-a-template.md).
 
 ## <span id="Sharing_a_signing_certificate"></span><span id="sharing_a_signing_certificate"></span><span id="SHARING_A_SIGNING_CERTIFICATE"></span>Sharing a signing certificate
 
@@ -47,15 +47,8 @@ To share the signing certificate, follow these steps.
 ## <span id="related_topics"></span>Related topics
 
 
-* [Writing Your First Driver](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-your-first-driver)
+* [Writing Your First Driver](../gettingstarted/writing-your-first-driver.md)
 * [Building a Driver](building-a-driver.md)
 * [Developing, Testing, and Deploying Drivers](index.md)
  
-
- 
-
-
-
-
-
 

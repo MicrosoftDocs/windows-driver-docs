@@ -27,7 +27,7 @@ If you use a driver template to create a driver solution, then the template shou
 ## <span id="Manually_creating_a_driver_package"></span><span id="manually_creating_a_driver_package"></span><span id="MANUALLY_CREATING_A_DRIVER_PACKAGE"></span>Manually creating a driver package
 
 
-If your solution does not have a driver package, you can manually create one in Visual Studio by choosing **New &gt; Project** from the **File** menu. For examples of how to create a driver package, see [Writing Your First Driver](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-your-first-driver).
+If your solution does not have a driver package, you can manually create one in Visual Studio by choosing **New &gt; Project** from the **File** menu. For examples of how to create a driver package, see [Writing Your First Driver](../gettingstarted/writing-your-first-driver.md).
 
 To manually create a new driver package for an existing solution that does not already have one, use the "Driver Install Package" template. Select **File->New->Project**. Then select **Windows Drivers &gt; Package &gt; "Driver Install Package"** from the dialog. Then in the **Solution** drop-down, select **Add to solution** and click **Ok**.
 
@@ -58,11 +58,4 @@ See the "Toaster Sample Driver" sample for an example of a single solution that 
 
 * [Signing a Driver](signing-a-driver.md)
  
-
- 
-
-
-
-
-
 

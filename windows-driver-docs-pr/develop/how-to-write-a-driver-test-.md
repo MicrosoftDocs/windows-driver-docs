@@ -124,15 +124,8 @@ The WDK provides starter code for a Windows Driver test project in C++, C\#, and
 ## <span id="related_topics"></span>Related topics
 
 
-* [Test Authoring and Execution Framework](https://docs.microsoft.com/windows-hardware/drivers/taef/index)
-* [Windows Driver Testing Framework](https://docs.microsoft.com/windows-hardware/drivers/wdtf/index)
+* [Test Authoring and Execution Framework](../taef/index.md)
+* [Windows Driver Testing Framework](../wdtf/index.md)
 * [How to add test metadata](to-add-test-metadata.md)
  
-
- 
-
-
-
-
-
 
