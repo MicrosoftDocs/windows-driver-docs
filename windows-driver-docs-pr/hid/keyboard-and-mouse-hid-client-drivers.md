@@ -92,7 +92,7 @@ See the following for information about keyboard layouts:
 
 - Sample keyboard [layouts](https://go.microsoft.com/fwlink/p/?linkid=256128).
 
-To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](https://docs.microsoft.com/globalization/windows-keyboard-layouts).
+To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](/globalization/windows-keyboard-layouts).
 
 For additional details around the keyboard layout, visit Control Panel\\Clock, Language, and Region\\Language.
 

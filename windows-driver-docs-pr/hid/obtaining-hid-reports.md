@@ -22,14 +22,9 @@ This section describes how user-mode applications and kernel-mode drivers obtain
 
 This section includes the following topics:
 
-[Obtaining HID Reports by User-Mode Applications](obtaining-hid-reports-by-user-mode-applications.md)
+[Obtaining HID Reports by User-Mode Applications]()
 
-[Obtaining HID Reports by Kernel-Mode Drivers](obtaining-hid-reports-by-kernel-mode-drivers.md)
-
- 
+[Obtaining HID Reports by Kernel-Mode Drivers]()
 
  
-
-
-
 
