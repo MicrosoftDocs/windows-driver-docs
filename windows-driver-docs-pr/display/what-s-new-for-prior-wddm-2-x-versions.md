@@ -29,7 +29,7 @@ The runtime will evolve to understand these aspects of displayable surfaces:
 
 Scanout may begin shortly after a VBlank, scans vertically from top to bottom of the image, and completes shortly before the next VBlank. This is not always the case, depending on the timing of the pixel clock, and the layout of the data in the texture; especially if there is actually compression available.
 
-New DDIs were added to separate and understand transformations which occur prior to scanout, in order to (when possible) enable front-buffer rendering. See [D3DWDDM2_6DDI_SCANOUT_FLAGS](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3dwddm2_6ddi_scanout_flags) and [PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_6ddi_prepare_scanout_transformation).
+New DDIs were added to separate and understand transformations which occur prior to scanout, in order to (when possible) enable front-buffer rendering. See [D3DWDDM2_6DDI_SCANOUT_FLAGS](/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3dwddm2_6ddi_scanout_flags) and [PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_6ddi_prepare_scanout_transformation).
 
 ### Variable Rate Shading
 
@@ -66,7 +66,7 @@ Tier 2:
 
 * The per-provoking vertex rate, also referred to as a per-primitive rate, can be used with more than one viewport if the SupportsPerVertexShadingRateWithMultipleViewports cap is marked true. Additionally, in that case, it can be used when SV_ViewportIndex is written to.
 
-See [PFND3D12DDI_RS_SET_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_rs_set_shading_rate_0062) and [D3D12DDI_SHADING_RATE_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_shading_rate_0062).
+See [PFND3D12DDI_RS_SET_SHADING_RATE_0062](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_rs_set_shading_rate_0062) and [D3D12DDI_SHADING_RATE_0062](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_shading_rate_0062).
 
 ### Collect Diagnostic Info
 
@@ -74,7 +74,7 @@ See [PFND3D12DDI_RS_SET_SHADING_RATE_0062](https://docs.microsoft.com/windows-ha
 
 The new DDI should allow the OS to collect information at any time a driver is loaded. Currently the OS uses DxgkDdiCollectDebugInfo function implemented by the miniport to query driver private data for TDR (timeout detection and recovery) related cases. The new DDI will be used to collect data for variety of reasons. The OS will call this DDI when diagnostic is needed providing a type of information being requested. The driver should collect all private information important to investigate the issue and submit it to the OS. DxgkDdiCollectDebugInfo will be eventually deprecated and replaced with DxgkDdiCollectDiagnosticInfo.
 
-See [DXGKDDI_COLLECTDIAGNOSTICINFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_collectdiagnosticinfo).
+See [DXGKDDI_COLLECTDIAGNOSTICINFO](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_collectdiagnosticinfo).
 
 ### Background Processing
 
@@ -82,7 +82,7 @@ Background processing allows user mode drivers to express desired threading beha
 
 APIs allow apps to adjust what amount of background processing is appropriate for their workloads and when to perform that work.
 
-See [PFND3D12DDI_QUEUEPROCESSINGWORK_CB_0062](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_queueprocessingwork_cb_0062).
+See [PFND3D12DDI_QUEUEPROCESSINGWORK_CB_0062](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_queueprocessingwork_cb_0062).
 
 ### Driver Hot Update
 
@@ -90,7 +90,7 @@ Driver hot update reduces server downtime as much as possible when an OS compone
 
 Driver hot patch is used to apply a security patch to the kernel mode driver. In this case the driver is asked to save adapter memory, the adapter is stopped, the driver is unloaded, new driver is loaded and the adapter is started again.
 
-See[DXGKDDI_SAVEMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_savememoryforhotupdate) and [DXGKDDI_RESTOREMEMORYFORHOTUPDATE](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_restorememoryforhotupdate).
+See[DXGKDDI_SAVEMEMORYFORHOTUPDATE](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_savememoryforhotupdate) and [DXGKDDI_RESTOREMEMORYFORHOTUPDATE](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_restorememoryforhotupdate).
 
 ## WDDM 2.5
 
@@ -110,10 +110,10 @@ Tracked Workloads is an experimental feature that provides more control over the
 
 New Direct3D DDI's were created in parallel of Direct3D API's, in order to support hardware-accelerated raytracing. Example DDIs include:
 
-* [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054)
-* [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054)
-* [PFND3D12DDI_EMIT_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_emit_raytracing_acceleration_structure_postbuild_info_0054)
-* [PFND3D12DDI_GET_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_get_raytracing_acceleration_structure_prebuild_info_0054)
+* [PFND3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_0054](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_build_raytracing_acceleration_structure_0054)
+* [PFND3D12DDI_COPY_RAYTRACING_ACCELERATION_STRUCTURE_0054](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_copy_raytracing_acceleration_structure_0054)
+* [PFND3D12DDI_EMIT_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_0054](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_emit_raytracing_acceleration_structure_postbuild_info_0054)
+* [PFND3D12DDI_GET_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_get_raytracing_acceleration_structure_prebuild_info_0054)
 
 For more info about raytracing, see:
 
@@ -123,9 +123,9 @@ For more info about raytracing, see:
 
 ### Display Synchronization
 
-The OS will check for capabilities for display synchronization when the display is exposed by the driver to the OS, so prior to enabling the display. For TypeIntegratedDisplay child devices, this is reported via a call to [DxgkDdiQueryAdapterInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) with *Type* [DXGKQAITYPE_INTEGRATED_DISPLAY_DESCRIPTOR2](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) during adapter initialization. For TypeVideoOutput child devices, which are supported starting with WDDM 2.5, the capabilities are reported as part of the hot plug processing via [DxgkDdiUpdateMonitorLinkInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo) so that the capabilities may change based on the target or connected monitor.
+The OS will check for capabilities for display synchronization when the display is exposed by the driver to the OS, so prior to enabling the display. For TypeIntegratedDisplay child devices, this is reported via a call to [DxgkDdiQueryAdapterInfo](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) with *Type* [DXGKQAITYPE_INTEGRATED_DISPLAY_DESCRIPTOR2](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) during adapter initialization. For TypeVideoOutput child devices, which are supported starting with WDDM 2.5, the capabilities are reported as part of the hot plug processing via [DxgkDdiUpdateMonitorLinkInfo](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updatemonitorlinkinfo) so that the capabilities may change based on the target or connected monitor.
 
-The OS specifies the display synchronization in the [DxgkDdiSetTimingsFromVidPn](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn) call in the Input field in the per path [DXGK_SET_TIMING_PATH_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_set_timing_path_info#input) structure.
+The OS specifies the display synchronization in the [DxgkDdiSetTimingsFromVidPn](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_settimingsfromvidpn) call in the Input field in the per path [DXGK_SET_TIMING_PATH_INFO](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_set_timing_path_info#input) structure.
 
 ## WDDM 2.1
 
@@ -140,7 +140,7 @@ The following is a list of feature additions and updates for WDDM 2.1.
   * Support for 2MB Page Table Entry encoding - In WDDM 2.1, large Page Table Entry (PTE) encoding in VRAM is enabled. This change boosts performance on systems that support it.
   * Support for 64KB memory pages - Virtual memory allocations using a 64KB granularity is also supported in WDDM 2.1. This change especially benefits APUs and SoCs by reducing overhead for accessing virtual memory pages.
 
-* Hardware-based protected content improvements with *present batching* ([PlayReady 3.0](https://docs.microsoft.com/playready/))
+* Hardware-based protected content improvements with *present batching* ([PlayReady 3.0](/playready/))
 
 * Driver Store installation for graphics drivers to improve driver upgrade resiliency.
 
@@ -166,7 +166,7 @@ For more details, see [GPU virtual memory in WDDM 2.0](gpu-virtual-memory-in-wdd
 
 ### Driver residency
 
-* The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb), [*TrimResidency*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_trimresidencyset), [*Evict*](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)).
+* The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb), [*TrimResidency*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_trimresidencyset), [*Evict*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)).
 * The allocation and patch location list is being phased out because it is not necessary in the new model.
 * User mode drivers are now responsible for handling allocation tracking and several new DDIs have been added to enable this.
 * Drivers are given memory budgets and expected to adapt under memory pressure. This allows Universal Windows drivers to function across application platforms.

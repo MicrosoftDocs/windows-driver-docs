@@ -25,13 +25,7 @@ Class=Display
 DriverVer=11/22/2004, 6.14.10.7000
 ```
 
-For more information about the **Version** section and directives that are associated with **Version**, see [**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section).
+For more information about the **Version** section and directives that are associated with **Version**, see [**INF Version Section**](../install/inf-version-section.md).
 
  
-
- 
-
-
-
-
 
