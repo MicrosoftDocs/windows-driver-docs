@@ -34,8 +34,6 @@ This section contains the following topics, which provide general information ab
 
 [Using Device Installation Functions](using-device-installation-functions.md)
 
-[Typical SetupAPI Usage](typical-setupapi-usage.md)
-
 [Guidelines for Using SetupAPI](guidelines-for-using-setupapi.md)
 
 **Note**  This section describes only a subset of the Setup functions in SetupAPI. For more information about this API, see [Setup API](/windows/desktop/SetupApi/setup-api-portal) .

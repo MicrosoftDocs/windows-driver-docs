@@ -1,7 +1,7 @@
 ---
 title: Windows Driver Signing Tutorial
 ms.assetid: B6F907DC-74DC-4BF3-A2F9-481AE706733C
-description: 
+description: Provides an overview and details the steps to sign driver binaries for Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +14,7 @@ This tutorial provides an overview and details the steps to sign driver binaries
 [Test Signing](test-signing.md)
 [Release Signing](release-signing.md)
 [Troubleshooting Driver Signing Installation](troubleshooting-driver-signing-installation.md)
-[Related Topics and Appendices](related-topics-and-appendices.md)
+
 ## Overview
 
 
