@@ -12,13 +12,13 @@ Microsoft has developed a method of declaratively adding filters by expressing t
 
 ## The need for device filter driver ordering
 
-Prior to Windows 10 version 1903, the only supported way to register a device filter driver was by addition of a registry entry (using the [AddReg directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)). However, this method of registry manipulation does not provide the flexibility to specify at **exactly which position** to register a particular filter.
+Prior to Windows 10 version 1903, the only supported way to register a device filter driver was by addition of a registry entry (using the [AddReg directive](../install/inf-addreg-directive.md)). However, this method of registry manipulation does not provide the flexibility to specify at **exactly which position** to register a particular filter.
 
 Filter registration using the AddReg directive simply appends the filter to the end of the filter list. This approach uses a list of values where order matters and determines where in the stack the filter is loaded.
 
-Using a single list of ordered values is less than ideal, especially when [AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) *only* *appends* *to the end,* because there are negative consequences when more than one driver is adding filters to the same device.
+Using a single list of ordered values is less than ideal, especially when [AddReg](../install/inf-addreg-directive.md) *only* *appends* *to the end,* because there are negative consequences when more than one driver is adding filters to the same device.
 
-In the scenario where there is at least one [Extension INF](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file) involved, if the INFs improperly use **AddReg** (in other words don't use the append flag), they could wipe out a filter added by a different INF.
+In the scenario where there is at least one [Extension INF](../install/using-an-extension-inf-file.md) involved, if the INFs improperly use **AddReg** (in other words don't use the append flag), they could wipe out a filter added by a different INF.
 
 Additionally, multiple Extension INF's could be adding filters, and the relative ordering of those filters may be important; however, the Plug and Play (PnP) platform does not guarantee an installation order for the extensions. The result is that the order of the "appends" is not guaranteed.
 
