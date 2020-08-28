@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
  
 
-A **ClassInstall32** section installs a new [device setup class](device-setup-classes.md) (and possibly a class installer) for devices in the new class.
+A **ClassInstall32** section installs a new [device setup class](./overview-of-device-setup-classes.md) (and possibly a class installer) for devices in the new class.
 
 ```inf
 [ClassInstall32.Services] | 
@@ -87,11 +87,4 @@ The case-insensitive **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**,
 [***Models***](inf-models-section.md)
 
  
-
- 
-
-
-
-
-
 

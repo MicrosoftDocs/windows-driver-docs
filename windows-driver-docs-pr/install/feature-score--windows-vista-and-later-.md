@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 A driver rank is formatted as 0x*SSGGTHHH*, where the value of 0x*SS*000000 is the [signature score](signature-score--windows-vista-and-later-.md), the value of 0x00*GG*0000 is the feature score, and the value of 0x0000*THHH* is the [identifier score](identifier-score--windows-vista-and-later-.md).
 
-The feature score provides a way to rank drivers based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](device-setup-classes.md) that distinguishes between drivers based on class-specific criteria. The feature score supplements the identifier score, making it possible for driver writers to more easily and precisely distinguish between different drivers for a device that is based on well-defined criteria.
+The feature score provides a way to rank drivers based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](./overview-of-device-setup-classes.md) that distinguishes between drivers based on class-specific criteria. The feature score supplements the identifier score, making it possible for driver writers to more easily and precisely distinguish between different drivers for a device that is based on well-defined criteria.
 
 Microsoft defines feature score usage for particular device classes. Feature score is not required, so many device classes will not have feature score usage specified. In this case, the default feature score (0xFF) is expected, and will be assigned in the absence of a feature score defined in the INF of a driver.
 
@@ -52,10 +52,4 @@ FeatureScore=xFD
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
  
-
- 
-
-
-
-
 

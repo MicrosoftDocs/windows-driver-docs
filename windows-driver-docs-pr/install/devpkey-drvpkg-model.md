@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DrvPkg_Model
 
 
-The DEVPKEY_DrvPkg_Model device [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) property represents the model name for a device instance.
+The DEVPKEY_DrvPkg_Model device [driver package](./driver-packages.md) property represents the model name for a device instance.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ The DEVPKEY_DrvPkg_Model device [driver package](https://docs.microsoft.com/wind
 Remarks
 -------
 
-You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive) that is included in the [**INF *DDInstall* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_Model by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of the DEVPKEY_DrvPkg_Model property by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the value of DEVPKEY_DrvPkg_Model for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -88,18 +88,11 @@ Requirements
 ## See also
 
 
-[**INF AddProperty directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addproperty-directive)
+[**INF AddProperty directive**](./inf-addproperty-directive.md)
 
-[**INF *DDInstall* Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
+[**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # CdChangerClassGuid
 
 
-CdChangerClassGuid is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for CD-ROM changer devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md) class identifier for new instances of this class.
+CdChangerClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for CD-ROM changer devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -46,11 +46,4 @@ Requirements
 [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md)
 
  
-
- 
-
-
-
-
-
 

@@ -23,17 +23,11 @@ This section contains the following topics which describe the use of registry ke
 
 [DeviceOverrides Registry Key](deviceoverrides-registry-key.md)
 
-Drivers must access Plug and Play (PnP) keys in the registry using system routines such as [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) or [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey). User-mode setup components should use device installation functions such as [**SetupDiGetDeviceRegistryProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) or [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey). The registry can be accessed from INF files by using [**INF AddReg directives**](inf-addreg-directive.md).
+Drivers must access Plug and Play (PnP) keys in the registry using system routines such as [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) or [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey). User-mode setup components should use device installation functions such as [**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) or [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey). The registry can be accessed from INF files by using [**INF AddReg directives**](inf-addreg-directive.md).
 
 **Important**  *Drivers must not access these registry trees and keys directly.* This discussion of registry information in this section is solely for debugging a device installation or configuration problem.
 
  
 
  
-
- 
-
-
-
-
 

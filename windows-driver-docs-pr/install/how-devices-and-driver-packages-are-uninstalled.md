@@ -13,7 +13,7 @@ This section provides an overview of what you need to do to uninstall a device a
 
 -   [Device Manager](using-device-manager.md).
 
--   A device installation application that calls the [SetupAPI](setupapi.md) and [device installation](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) functions.
+-   A device installation application that calls the [SetupAPI](setupapi.md) and [device installation](/previous-versions/ff541299(v=vs.85)) functions.
 
 These actions include the following:
 
@@ -31,9 +31,9 @@ This uninstall action removes the device node (*devnode*) that represents the ph
 
 -   Device Manager. For more information, see [Using Device Manager](using-device-manager.md).
 
--   A device installation application that calls the [SetupAPI](setupapi.md) [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) function with a request of [**DIF_REMOVE**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-remove). For more information, see [Using General Setup Functions](using-general-setup-functions.md).
+-   A device installation application that calls the [SetupAPI](setupapi.md) [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) function with a request of [**DIF_REMOVE**](./dif-remove.md). For more information, see [Using General Setup Functions](using-general-setup-functions.md).
 
--   A device installation application that calls the SetupAPI [**DiUninstallDevice**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-diuninstalldevice) function (Windows 7 and later versions of Windows). For more information, see [Using Device Installation Functions](using-device-installation-functions.md).
+-   A device installation application that calls the SetupAPI [**DiUninstallDevice**](/windows/desktop/api/newdev/nf-newdev-diuninstalldevice) function (Windows 7 and later versions of Windows). For more information, see [Using Device Installation Functions](using-device-installation-functions.md).
 
 When a device is uninstalled by using one of these methods, the Plug and Play (PnP) manager removes a subset of the system states that were created during device installation. For example, it removes the association between the driver binary files and the device. This association is used by the Service Control Manager (SCM) to load the appropriate driver for the device.
 
@@ -57,10 +57,4 @@ Before deleting a driver package from the driver store, be sure to uninstall all
 
 
  
-
- 
-
-
-
-
 

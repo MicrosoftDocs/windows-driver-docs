@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_MEDIUMTRANSFORM
 
 
-The KSCATEGORY_MEDIUMTRANSFORM [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that transforms the type of medium that is being used.
+The KSCATEGORY_MEDIUMTRANSFORM [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that transforms the type of medium that is being used.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS devices register an instance of KSCATEGORY_MEDIUMTRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_MEDIUMTRANSFORM functional category.
 
-The KSCATEGORY_MEDIUMTRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories) functional categories.
+The KSCATEGORY_MEDIUMTRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md) functional categories.
 
 Requirements
 ------------
@@ -71,14 +71,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md)
 
  
-
- 
-
-
-
-
-
 

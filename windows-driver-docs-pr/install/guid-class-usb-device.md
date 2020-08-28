@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_CLASS_USB_DEVICE
 
 
-GUID_CLASS_USB_DEVICE is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for [USB](https://docs.microsoft.com/windows-hardware/drivers/) devices that are attached to a USB hub. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md) class identifier for new instances of this class.
+GUID_CLASS_USB_DEVICE is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for [USB](../index.yml) devices that are attached to a USB hub. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md) class identifier for new instances of this class.
 
 Remarks
 -------
@@ -55,11 +55,4 @@ Previously, this identifier was dependent on `Usbioctl.h`.  Note that you now ne
 [**GUID_DEVINTERFACE_USB_DEVICE**](guid-devinterface-usb-device.md)
 
  
-
- 
-
-
-
-
-
 
