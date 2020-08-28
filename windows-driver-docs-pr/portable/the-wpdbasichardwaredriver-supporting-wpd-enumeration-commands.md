@@ -1,5 +1,5 @@
 ---
-Description: Support for enumeration commands (WpdBasicHardwareDriverSample)
+description: Support for enumeration commands (WpdBasicHardwareDriverSample)
 title: Support for enumeration commands (WpdBasicHardwareDriverSample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

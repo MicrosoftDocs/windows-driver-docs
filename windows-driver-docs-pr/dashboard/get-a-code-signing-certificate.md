@@ -37,7 +37,7 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
   1. On the **DigiCert Code Signing Certificates for Sysdevs** page, click **Start**.
 
-  2. On the **DigiCert Order Form** page (Step 1), in the **Code Signing** section, click **EV Code Signing Certificate**, fill out the rest of the form, and then click **Continue**.
+  2. On the **DigiCert Order Form** page (Step 1), in the **Code Signing** section, select **EV Code Signing Certificate**, fill out the rest of the form, and then select **Continue**.
 
   3. Follow the instructions provided by DigiCert to buy a certificate.
 

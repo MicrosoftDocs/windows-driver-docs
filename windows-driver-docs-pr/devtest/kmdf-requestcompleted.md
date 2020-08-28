@@ -1,6 +1,6 @@
 ---
 title: RequestCompleted rule (kmdf)
-description: The DeferredRequestCompleted rule specifies that for a non-filter driver each request presented to the driver's default I/O queue must be completed, unless the request is deferred or forwarded, or if WdfRequestStopAcknowledge is called.
+description: The RequestCompleted rule specifies that for a non-filter driver each request presented to the driver's default I/O queue must be completed, unless the request is deferred or forwarded, or if WdfRequestStopAcknowledge is called.
 ms.assetid: fb034d81-d49d-43a5-92b9-9b4e3f3056ee
 ms.date: 05/21/2018
 keywords: ["RequestCompleted rule (kmdf)"]
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # RequestCompleted rule (kmdf)
 
 
-The [**DeferredRequestCompleted**](kmdf-deferredrequestcompleted.md) rule specifies that for a non-filter driver each request presented to the driver's default I/O queue must be completed, unless the request is deferred or forwarded, or if [**WdfRequestStopAcknowledge**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequeststopacknowledge) is called.
+The **RequestCompleted** rule specifies that for a non-filter driver each request presented to the driver's default I/O queue must be completed, unless the request is deferred or forwarded, or if [**WdfRequestStopAcknowledge**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequeststopacknowledge) is called.
 
 An I/O request presented to the driver's default queue through one of the queue callback functions must be completed before it exits from the I/O request callback functions, except in the following cases:
 

@@ -23,4 +23,4 @@ Support for the WSMT is included in the following versions of Windows:
 
 ## Related resources
 
-[Windows SMM Security Mitigations Table (WSMT)](https://go.microsoft.com/fwlink/p/?LinkId=786943)
+[Windows SMM Security Mitigations Table (WSMT) (DOCX download)](https://go.microsoft.com/fwlink/p/?LinkId=786943)

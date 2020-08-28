@@ -34,6 +34,8 @@ In the following diagram, two different companies have created separate driver p
 
 Settings in an extension INF are applied after settings in a base INF. As a result, if an extension INF and a base INF specify the same setting, the version in the extension INF is applied. Similarly, if the base INF changes, the extension INF remains and is applied over the new base INF.
 
+It is helpful to include comments in the base INF describing which entries can be overridden, as well as applicable parameter value ranges and constraints.
+
 ## Specifying ExtensionId
 
 When you write an extension INF, you generate a special GUID called the **ExtensionId**, which is an entry in the INF's **\[Version\]** section.
@@ -93,6 +95,8 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
     
     In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
 
+    [CHID targeting](https://docs.microsoft.com/windows-hardware/drivers/bringup/target-a-system-using-chid) can be used if a four-part hardware ID is not possible or is not restrictive enough.
+
 5.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
 In most cases, you'll submit an extension INF package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [DCH-Compliant Driver Package Example](../develop/dch-example.md).
@@ -101,10 +105,12 @@ The driver validation and submission process is the same for extension INFs as f
 
 ## Uninstalling an extension driver
 
-Before uninstalling an extension driver, you must first uninstall the base device.  Next, run PnPUtil on the extension INF.
+To uninstall an extension driver, use PnPUtil's `delete` command with the `uninstall` flag. 
 
-To delete the driver package, use `pnputil /delete-driver oem0.inf`.
-To force delete the driver package, use `pnputil /delete-driver oem1.inf /force`.
+To delete the driver package, use `pnputil /delete-driver /uninstall oem0.inf`.
+To force delete the driver package, use `pnputil /delete-driver /uninstall oem1.inf /force`.
+
+This allows the extension driver to be uninstalled without removing the base driver.
 
 ## Example 1: Using an extension INF to set the device friendly name
 
@@ -228,6 +234,23 @@ REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
 For info on how to use an Extension INF to install a filter driver, see [Device filter driver ordering](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering).
+
+To improve extensibility, we recommend that an IHV put optional functionality in an [extension INF template](using-an-extension-inf-file-template.md).
+
+## Backward compatibility
+
+Any change to the base INF must be thoroughly tested to ensure that it does not break backward compatibility for existing extension INFs.
+
+When managing a base INF, follow these best practices:
+
+* Document parameter value ranges and constraints both in code comments and in a design document. Future changes must conform to the specified ranges.
+* To support new ranges, add an optional parameter (no default value).
+
+If the IHV puts all functionality in the base INF, here is one way to ensure that existing extension INFs continue to work:
+
+1. The IHV provides a companion app that sets a registry flag to disable optional functionality by default.
+2. The base driver checks if the flag is enabled before using optional functionality.
+3. An OEM-supplied extension INF can opt in by setting the flag to enable.
 
 ##  Submitting an extension INF for certification
 

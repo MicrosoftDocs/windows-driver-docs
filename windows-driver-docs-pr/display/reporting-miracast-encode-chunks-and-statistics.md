@@ -8,6 +8,8 @@ ms.localizationpriority: medium
 
 # Reporting Miracast encode chunks and statistics
 
+> [!NOTE]
+> As of Windows 10, the OS contains a native implementation of Miracast wireless displays. Drivers should no longer implement a custom Miracast display component. Support for custom Miracast implementations may be removed in a future version of Windows.
 
 Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or *encode chunks*. Each chunk has a unique chunk ID that's generated from the frame number and the frame part (or slice) number. Each chunk that's related to the same desktop frame update must be assigned the same frame number.
 

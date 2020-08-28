@@ -46,7 +46,6 @@ This section contains the following topics:
 * [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md)
 * [Managing the lifetime of objects in NetAdapterCx](summary-of-netadaptercx-objects.md)
 * [Accessing configuration information](accessing-configuration-information.md)
-* [Handling control requests](handling-control-requests.md)
 * [Debugging a NetAdapterCx client driver](debugging-a-netadaptercx-client-driver.md)
 * [Transferring network data](transferring-network-data.md)
 * [NetAdapterCx receive side scaling (RSS)](netadaptercx-receive-side-scaling-rss-.md)

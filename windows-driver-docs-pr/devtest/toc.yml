@@ -1920,6 +1920,8 @@
             href: color-coding-in-the-trace-tree-pane.md
           - name: "Trace Tree Pane Actions"
             href: trace-tree-pane-actions.md
+          - name: "Saving Defect Traces"
+            href: saving-defect-traces.md
         - name: "Source Code Pane"
 # Auto-expanded node
           items: 
@@ -2831,14 +2833,6 @@
           href: debugging-code-overview.md
         - name: "Conditional Compilation and the Build Environment"
           href: conditional-compilation-and-the-build-environment.md
-        - name: "Breaking Into the Debugger"
-          href: breaking-into-the-debugger.md
-        - name: "Sending Output to the Debugger"
-          href: sending-output-to-the-debugger.md
-        - name: "Reading and Filtering Debugging Messages"
-          href: reading-and-filtering-debugging-messages.md
-        - name: "Determining if a Debugger is Attached"
-          href: determining-if-a-debugger-is-attached.md
       - name: "Interpreting a Bug Check Code"
         href: interpreting-a-bug-check-code.md
     - name: "Using a Debugger"

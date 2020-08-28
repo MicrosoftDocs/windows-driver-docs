@@ -530,9 +530,9 @@
     items:
     - name: "Overview"
       href: security-features-for-file-systems.md
-    - name: "Security Descriptors"
+    - name: "Security descriptors"
       items:
-      - name: "Overview"
+      - name: "Security descriptors in file systems"
         href: security-descriptors.md
       - name: "Security identifier"
         href: security-identifier.md
@@ -542,7 +542,7 @@
         href: access-control-entry.md
       - name: "Access control list"
         href: access-control-list.md
-    - name: "Privileges"
+    - name: "Managing privileges in a file system"
       href: privileges.md
     - name: "Auditing"
       href: auditing.md
@@ -574,13 +574,13 @@
         href: media-validation.md
     - name: "Security checks"
       items:
-      - name: "Overview"
+      - name: "Security checks in file systems"
         href: security-checks.md
       - name: "Applying security descriptors on the device object"
         href: applying-security-descriptors-on-the-device-object.md
       - name: "IRP_MJ_CREATE dispatch routine"
         items:
-        - name: "Overview"
+        - name: "Security checks on IRP_MJ_CREATE"
           href: irp-mj-create-dispatch-routine.md
         - name: "Checking for traverse privilege on IRP_MJ_CREATE"
           href: checking-for-traverse-privilege-on-irp-mj-create.md
@@ -594,13 +594,13 @@
           href: assigning-security-to-a-new-file-on-irp-mj-create.md
         - name: "Handling quotas on IRP_MJ_CREATE"
           href: handling-quotas-on-irp-mj-create.md
-      - name: "IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY"
+      - name: "Security checks on IRP_MJ_QUERY_SECURITY and IRP_MJ_SET_SECURITY"
         href: irp-mj-query-security-and-irp-mj-set-security.md
-      - name: "IRP_MJ_DIRECTORY_CONTROL"
+      - name: "Security checks on IRP_MJ_DIRECTORY_CONTROL"
         href: irp-mj-directory-control2.md
-      - name: "IRP_MJ_FILE_SYSTEM_CONTROL"
+      - name: "Security checks on IRP_MJ_FILE_SYSTEM_CONTROL"
         href: irp-mj-file-system-control3.md
-      - name: "IRP_MJ_SET_INFORMATION"
+      - name: "Security checks on IRP_MJ_SET_INFORMATION"
         href: irp-mj-set-information3.md
       - name: "Impersonation"
         href: impersonation.md

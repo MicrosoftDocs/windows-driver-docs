@@ -25,8 +25,9 @@ For example, the driver would send this notification if it or the firmware recei
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1803 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1803
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

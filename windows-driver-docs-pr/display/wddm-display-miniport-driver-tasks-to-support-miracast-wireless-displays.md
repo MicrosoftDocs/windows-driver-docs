@@ -9,6 +9,8 @@ ms.custom: seodec18
 
 # WDDM display miniport driver tasks to support Miracast wireless displays
 
+> [!NOTE]
+> As of Windows 10, the OS contains a native implementation of Miracast wireless displays. Drivers should no longer implement a custom Miracast display component. Support for custom Miracast implementations may be removed in a future version of Windows.
 
 To support Miracast wireless displays, Windows Display Driver Model (WDDM) display miniport drivers that run in kernel mode need to do the following tasks.
 

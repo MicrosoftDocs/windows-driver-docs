@@ -94,7 +94,7 @@ If a driver exports the functionality of a device interface class, therefore cre
 If a to-be-installed component, such as a new class driver, provides one or more new [device interface classes](device-interface-classes.md) to higher-level components, its INF file has this section. In effect, this section bootstraps a set of device interfaces for a new class by setting up whatever is needed to use the functionality that the interface class provides.
 
 <a href="" id="defaultinstall-section"></a>[**DefaultInstall Section**](inf-defaultinstall-section.md)  
-An INF file's **DefaultInstall** section will be accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
+An INF file's **DefaultInstall** section will be accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
 
 <a href="" id="defaultinstall-services-section"></a>[**DefaultInstall.Services Section**](inf-defaultinstall-services-section.md)  
 This section is the same as the [**INF DDInstall.Services section**](inf-ddinstall-services-section.md), and is used in association with an [**INF DefaultInstall section**](inf-defaultinstall-section.md).

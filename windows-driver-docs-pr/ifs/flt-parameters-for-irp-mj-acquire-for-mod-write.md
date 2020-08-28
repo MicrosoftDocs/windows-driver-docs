@@ -56,9 +56,8 @@ For more information about FSFilter callback operations, see the reference entry
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | *Fltkernel.h* (include *Fltkernel.h*) |
+**Header**: *Fltkernel.h* (include *Fltkernel.h*)
+
 
 ## See also
 

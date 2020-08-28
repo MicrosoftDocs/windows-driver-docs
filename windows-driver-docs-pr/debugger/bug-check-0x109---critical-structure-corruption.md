@@ -3,7 +3,7 @@ title: Bug Check 0x109 CRITICAL_STRUCTURE_CORRUPTION
 description: The CRITICAL_STRUCTURE_CORRUPTION bug check has a value of 0x00000109. This indicates that the kernel has detected critical kernel code or data corruption.
 ms.assetid: 38d4d722-a915-4f17-899b-2a0b4aa69d95
 keywords: ["Bug Check 0x109 CRITICAL_STRUCTURE_CORRUPTION", "CRITICAL_STRUCTURE_CORRUPTION"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 topic_type:
 - apiref
 api_name:
@@ -78,7 +78,7 @@ The value of Parameter 4 indicates the type of corrupted region.
 </tr>
 <tr class="even">
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>A function modification or the Itanium-based function location</p></td>
+<td align="left"><p>A function modification</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2</p></td>
@@ -283,7 +283,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
--   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+-   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 

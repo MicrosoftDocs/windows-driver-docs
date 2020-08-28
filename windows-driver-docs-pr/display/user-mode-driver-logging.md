@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 To get a more actionable breakdown of video memory, the Windows Display Driver Model (WDDM) driver must expose the relationship between Microsoft Direct3D resources and video memory allocations. This is made possible starting with Windows 8 with the introduction of additional user-mode driver (UMD) logging interfaces. With this information added to Event Tracing for Windows (ETW) traces, it's possible to see the video memory allocations from the API perspective.
 
-|                                                                                   |                                  |
-|-----------------------------------------------------------------------------------|----------------------------------|
-| Minimum WDDM version                                                              | 1.2                              |
-| Minimum Windows version                                                           | 8                                |
-| Driver implementation—Full graphics and Render only                               | Mandatory                        |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics¦UMDLogging** |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Render only**: Mandatory
+
+**[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics¦UMDLogging**
+
 
  
 

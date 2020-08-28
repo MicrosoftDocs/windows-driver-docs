@@ -7,7 +7,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 03/16/2020
+ms.date: 08/17/2020
 ms.localizationpriority: medium
 ms.custom: 19H1
 ---
@@ -19,7 +19,7 @@ The WDK is used to develop, test, and deploy Windows drivers.
 * [Learn what's new in driver development](what-s-new-in-driver-development.md)
 * [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
 
-[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
+[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
 ## Runtime requirements
 
@@ -36,7 +36,7 @@ Windows 7|Windows Server 2008 R2 SP1|
 
 ### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019
 
-The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/visualstudio/releases/2019/system-requirements). 
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/visualstudio/releases/2019/system-requirements).
 
 The following editions of Visual Studio 2019 support driver development for this release:
 
@@ -46,20 +46,19 @@ The following editions of Visual Studio 2019 support driver development for this
 
 When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included, and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the WDK for Windows 10, version 2004 may not be the default SDK. To select the correct SDK:
 
-In **Visual Studio Installer**, on the **Individual components** tab, search for 
-Windows 10 SDK (10.0.19041.0), select this version and continue with install. 
+In **Visual Studio Installer**, on the **Individual components** tab, search for Windows 10 SDK (10.0.19041.0), select this version and continue with install. Note that Visual Studio will automatically install Windows 10 SDK (10.0.19041.1) on your machine.
 
 If you already have Visual Studio 2019 installed, you can install the **Windows 10 SDK (10.0.19041.1)** by using the **Modify** button in Visual Studio install.
 
-WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Stuido for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64 require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
+WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64 require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
 
-To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version available. 
+To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version available.
 
-With this information (v14.xx), go to **Individual components** and search for **v14.xx**. This will return the tool sets for all architectures, including Spectre mitigated libs. Select the driver architecture you are developing for. 
+With this information (v14.xx), go to **Individual components** and search for **v14.xx**. This will return the tool sets for all architectures, including Spectre mitigated libs. Select the driver architecture you are developing for.
 
 For example, searching for v14.25 returns the following:
 
-```
+```console
 MSVC v142 - VS 2019 C++ ARM build tools (v14.25)
 MSVC v142 - VS 2019 C++ ARM Spectre-mitigated libs (v14.25)
 MSVC v142 - VS 2019 C++ ARM64 build tools (v14.25)
@@ -72,7 +71,7 @@ MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.25)
 
 * [Download WDK for Windows 10, version 2004](https://go.microsoft.com/fwlink/?linkid=2128854)
 
-The WDK Visual Studio extension is included in the default WDK installation. 
+The WDK Visual Studio extension is included in the default WDK installation.
 
 ## Enterprise WDK (EWDK) for Windows 10, version 2004
 
@@ -84,7 +83,6 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 * [Download the EWDK for Windows 10, version 2004](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2019)
 
-
 ## Driver samples for Windows 10
 
 To download the driver samples, do one of the following:
@@ -95,7 +93,7 @@ To download the driver samples, do one of the following:
 
 ## Related downloads
 
-* [Download the WDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
+* [Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 * [Download previous versions of the WDK](other-wdk-downloads.md)
 * [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 * [Download the Windows HLK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)

@@ -105,7 +105,7 @@ Examine the name of the driver if that was listed on the blue screen or is prese
 **Resolving a corrupted NTFS volume problem:** Run **Chkdsk /f /r** to detect and repair disk errors. You must restart the system before the disk scan begins on a system partition. Contact the manufacture of the hard driver system to locate any diagnostic tools that they provide for the hard drive sub system.
 
 **Windows Memory Diagnostics:**
-Run the Windows Memory Diagnostics tool, to test the physical memory. Click the Start button, and then clicking Control Panel. In the search box, type Memory, and then click *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+Run the Windows Memory Diagnostics tool, to test the physical memory. Select the Start button, and then select the Control Panel. In the search box, type Memory, and then select *Diagnose your computer's memory problems*.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
 **Resolving a faulty hardware problem:** If hardware has been added to the system recently, remove it to see if the error recurs. If existing hardware has failed, remove or replace the faulty component. You should run hardware diagnostics supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
 

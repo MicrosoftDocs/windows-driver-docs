@@ -1,5 +1,5 @@
 ---
-Description: Digital Rights Management (DRM) systems often make use of device serial numbers to ensure that legitimate customers have access to digitized intellectual property.
+description: Digital Rights Management (DRM) systems often make use of device serial numbers to ensure that legitimate customers have access to digitized intellectual property.
 title: Content Security Features in Usbccgp.sys
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 If a printing device supports Bluetooth, it should meet the following requirements:
 
-- If the printing device returns a 1284 ID on its USB or parallel buses, the Bluetooth bus must return a 1284 ID. If, for the purposes of [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) (PnP) and identification, a device returns a 1284 ID on either the parallel or USB buses, the Bluetooth bus must also employ a 1284 ID for PnP identification.
+- If the printing device returns a 1284 ID on its USB or parallel buses, the Bluetooth bus must return a 1284 ID. If, for the purposes of [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-plug-and-play) (PnP) and identification, a device returns a 1284 ID on either the parallel or USB buses, the Bluetooth bus must also employ a 1284 ID for PnP identification.
 
   > [!NOTE]
   > Information the user should notice even if skimmingDevices that have never had parallel or USB ports should still contain a 1284 ID. Without a 1284 ID, PnP will not create a print queue.

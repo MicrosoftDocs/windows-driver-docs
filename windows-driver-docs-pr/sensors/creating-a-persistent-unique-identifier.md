@@ -1,12 +1,12 @@
 ---
-title: Creating a persistent unique identifier for a sensor
-description: Creating a persistent unique identifier for a sensor
+title: Creating a persistent unique identifier for a sensor (previous version)
+description: Creating a persistent unique identifier for a sensor (previous version)
 ms.assetid: 09ff583e-6bb5-4812-ae3b-970dac671e39
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---
 
-# Creating a persistent unique identifier for a sensor
+# Creating a persistent unique identifier for a sensor (previous version)
 
 
 Your driver must create persistent unique identifier (PUID) for each sensor. A PUID is a GUID value that is stored across sessions and uniquely identifies the object on the device. Your driver must return the PUID value when queried for the property named SENSOR\_PROPERTY\_PERSISTENT\_UNIQUE\_ID. If a device contains multiple sensors, each sensor must be assigned its own PUID. Applications can retrieve this ID by calling the [ISensor::GetID](https://go.microsoft.com/fwlink/p/?linkid=157812) method in the Sensor API.

@@ -84,8 +84,6 @@ The other option is to break apart your OID handler's switch statement and provi
 
 If you used the [**Direct OID Request Interface in NDIS 6.1**](../network/direct-oid-request-interface-in-ndis-6-1.md), replace it with a parallel WDF queue. Similarly, the regular (serial) request interface in NDIS should become a sequential WDF queue.
 
-For info on registering handlers for OIDs, see [Handling control requests](handling-control-requests.md).
-
 ## Reading configuration from the registry
 
 Next, replace calls to [**NdisOpenConfigurationEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenconfigurationex) and related functions with the `NetConfiguration*` methods. The `NetConfiguration*` methods are similar to the `Ndis*Configuration*` functions, and you won't need to restructure your code.
@@ -100,7 +98,7 @@ Here are two ways to do this in your WDF networking client driver.
 
 The most straightforward port is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate) from the client's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback. For more info, see [Using Control Device Objects](../wdf/using-control-device-objects.md).
 
-However, the recommended solution is to create a device interface, as described in [Using Device Interfaces](using-device-interfaces.md).
+However, the recommended solution is to create a device interface, as described in [Using Device Interfaces](../wdf/using-device-interfaces.md).
 
 ## Finishing device initialization
 

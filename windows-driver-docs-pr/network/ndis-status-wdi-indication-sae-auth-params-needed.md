@@ -29,8 +29,9 @@ This indication is sent during the SAE authentication process. For more informat
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1903
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

@@ -59,9 +59,8 @@ IRP_MJ_SET_QUOTA is an IRP-based operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | Fltkernel.h (include Fltkernel.h) |
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 

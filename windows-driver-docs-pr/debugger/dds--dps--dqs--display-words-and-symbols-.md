@@ -50,11 +50,12 @@ Specifies the memory area to display. For more syntax details, see [Address and 
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
-|||
-|--- |--- |
-|Modes|user mode, kernel mode|
-|Targets|live, crash dump|
-|Platforms|all|
+**Modes**: user mode, kernel mode
+
+**Targets**: live, crash dump
+
+**Platforms**: all
+
  
 
  

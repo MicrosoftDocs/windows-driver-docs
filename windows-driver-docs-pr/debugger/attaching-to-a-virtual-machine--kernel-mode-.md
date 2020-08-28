@@ -47,7 +47,7 @@ If the debugger is running on a different computer from the virtual machine, ent
 
 **\\\\**<em>VMHost</em>**\\pipe\\**<em>PipeName</em>
 
-Click **OK**.
+Select **OK**.
 
 You can also start WinDbg at the command line. If the debugger is running on the same physical computer as the virtual machine, enter the following command in a Command Prompt window.
 

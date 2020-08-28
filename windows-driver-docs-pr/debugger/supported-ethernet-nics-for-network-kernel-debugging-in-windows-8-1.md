@@ -28,7 +28,7 @@ First find the vendor ID and device ID of the network adapter on your target com
 
 -  On the target computer, open Device Manager (enter **devmgmt** in a Command Prompt window).
 -  In Device Manager, locate the network adapter that you want to use for debugging.
--  Right click the network adapter node, and choose **Properties**.
+-  Select and hold (or right-click) the network adapter node, and choose **Properties**.
 -  In the **Details** tab, under **Property**, select **Hardware Ids**.
 
 The vendor and device IDs are shown as VEN\_*VendorID* and DEV\_*DeviceID*. For example, if you see PCI\\VEN\_8086&DEV\_104B, the vendor ID is 8086, and the device ID is 104B.

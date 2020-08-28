@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers must use the memory offer and reclaim feature, available starting with Windows 8, to reduce memory overhead needed for temporary surfaces in local and system memory.
 
-|                                                                                   |                                  |
-|-----------------------------------------------------------------------------------|----------------------------------|
-| Minimum WDDM version                                                              | 1.2                              |
-| Minimum Windows version                                                           | 8                                |
-| Driver implementation—Full graphics and Render only                               | Mandatory                        |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics…OfferReclaim** |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Render only**: Mandatory
+
+**[WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics…OfferReclaim**
+
 
  
 

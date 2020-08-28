@@ -1,5 +1,5 @@
 ---
-title: Creating a Device Object
+title: Creating a Device Object (Windows Filtering Platform)
 description: Creating a Device Object
 ms.assetid: 9474e080-b2c3-4c1b-af19-bf269d1c94d4
 keywords:
@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Creating a Device Object
+# Creating a Device Object (Windows Filtering Platform)
 
 
 A callout driver must create a device object before it can register its callouts with the filter engine. How a callout driver creates a device object depends on whether the callout driver is based on the Windows Driver Model (WDM) or the Windows Driver Frameworks (WDF).

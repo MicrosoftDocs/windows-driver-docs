@@ -1,5 +1,5 @@
 ---
-Description: Scoping Service Events
+description: Scoping Service Events
 title: Scoping Service Events
 ms.date: 04/20/2017
 ms.localizationpriority: medium

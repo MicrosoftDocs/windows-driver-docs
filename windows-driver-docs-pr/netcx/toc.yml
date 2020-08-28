@@ -22,8 +22,6 @@
     href: power-down-sequence-for-a-netadaptercx-client-driver.md  
 - name: "Accessing configuration information"
   href: accessing-configuration-information.md
-- name: "Handling control requests"
-  href: handling-control-requests.md
 - name: "Debugging a NetAdapterCx client driver"
   href: debugging-a-netadaptercx-client-driver.md
 - name: "Transferring network data"
@@ -49,7 +47,7 @@
     - name: "Canceling network data with net rings"
       href: canceling-network-data-with-net-rings.md
     - name: "Net ring element management"
-      href: "net-ring-element-management.md"
+      href: net-ring-element-management.md
 - name: "NetAdapterCx receive side scaling (RSS)"
   href: netadaptercx-receive-side-scaling-rss-.md
 - name: "Configuring NetAdapterCx power management"

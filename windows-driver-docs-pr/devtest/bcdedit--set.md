@@ -108,7 +108,7 @@ For more information about using this option, see [Boot Parameters to Test Drive
 Directs the operating system loader to load an alternate HAL file. The specified file must be located in the %SystemRoot%\\system32 directory.
 
 **hypervisorbusparams** *Bus.Device.Function*  
-Defines the PCI bus, device, and function numbers of the debugging device. For example, 1.5.0 describes the debugging device on bus 1, device 5, function 0. Use this option when you are using either a 1394 cable, or a USB 2.0 or USB 3.0 debug cable for debugging.
+Defines the PCI bus, device, and function numbers of the debugging device. For example, 1.5.0 describes the debugging device on bus 1, device 5, function 0. These values are displayed in Device Manager under *Location* on the *General* tab.  
 
 **hypervisordebug** \[ **On** | **Off** \]  
 Controls whether the hypervisor debugger is enabled.
@@ -128,7 +128,7 @@ bcdedit /set hypervisorlaunchtype auto
 Specifies an IEEE 1394 (FireWire) connection for debugging. When this option is used, the **hypervisorchannel** option should also be set.
 
 > [!IMPORTANT]
-> The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
+> The 1394 transport is available for use in Windows 10, version 1607 and earlier.
 > It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
 > For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically).
 
@@ -182,7 +182,7 @@ See [4-Gigabyte Tuning (Windows)](https://docs.microsoft.com/windows/desktop/Mem
 Directs the operating system loader to load an alternate kernel. The specified file must be located in the %SystemRoot%\\system32 directory.
 
 **loadoptions busparams**=*Bus.Device.Function*
-Specifies the target controller when multiple controllers exist. This syntax is appropriate when using either a 1394 cable or a USB 2.0 debug cable for debugging. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.
+Specifies the target controller. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number. These values are displayed in Device Manager under *Location* on the *General* tab.  
 
 > [!NOTE]
 > For 1394 debugging, the bus parameters must be specified in decimal, regardless of which version of Windows is being configured. The format of the bus parameters used for USB 2.0 debugging depends on the Windows version. In Windows Server 2008, the USB 2.0 bus parameters must be specified in hexadecimal. In Windows 7 and Windows Server 2008 R2 and later versions of Windows, the USB 2.0 bus parameters must be specified in decimal.
@@ -347,11 +347,12 @@ Any change to a boot option requires a restart to take effect. For information a
 
 ## Requirements
 
-|||
-|----|----|
-|Minimum supported client|Windows Vista|
-|Minimum supported server|Windows Server 2008|
-|||
+**Minimum supported client**: Windows Vista
+
+**Minimum supported server**: Windows Server 2008
+
+****: 
+
 
 ## See also
 

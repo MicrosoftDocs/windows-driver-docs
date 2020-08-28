@@ -133,9 +133,8 @@ IRP_MJ_FILE_SYSTEM_CONTROL is an IRP-based operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | Fltkernel.h (include Fltkernel.h) |
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 

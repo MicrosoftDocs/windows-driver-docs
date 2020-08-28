@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This article provides answers to frequently asked questions about the Partner Center.
 
-## How do I contact Partner Center Support?
+## Contacting Partner Center Support
 
 If you are having problems accessing the Dashboard or need Dashboard Support please open a support ticket here: https://developer.microsoft.com/windows/support.  
 
@@ -25,12 +25,12 @@ One organization can associate multiple certificates with its dashboard account.
 
 There is no restriction on the number of certificates (both EV and Standard) associated with your organization.
 
-## What agreements need to be signed?
+## Required agreements that need to be signed
 
 The following agreements can be signed as part of the registration process.
 
 > [!NOTE]
-> Signing the Windows Compatibility Program and Driver Quality Attestment Testing Agreement is a requirement for all registrations. All other agreements are optional unless you are using features or assets in the other associated agreements. 
+> Signing the Windows Compatibility Program and Driver Quality Attestment Testing Agreement is a requirement for all registrations. All other agreements are optional unless you are using features or assets in the other associated agreements.
 
 * Windows Compatibility Program and Driver Quality Attestment Testing Agreement (ver 2.0)
 
@@ -44,29 +44,29 @@ The following agreements can be signed as part of the registration process.
 
 * Windows Desktop Applications Program Agreement (ver 1.0)
 
-## How do I add additional users or grant additional roles to users in my company?
+## Adding additional users or grant additional roles to users in my company
 
 See [Managing User Roles](managing-user-roles.md) for more information.
 
 ## Managing submissions
 
-### What is the hardware certification submission processing time?
+### Submission processing time for hardware certification
 
 All hardware submissions to the dashboard will be processed within five business days or less, depending on whether the submission requires manual review. Manual review may be required if your submission's tests fail, if it does not have a valid filter applied, or due to internal business policy.
 
-### Why do I see a difference in download signed files?
+### Potential differences noticed in download signed files
 
 In order to make Windows 10 more secure without affecting performance, all binaries are now receiving embedded signatures. This applies to all submissions for certification, not only Windows 10 submissions.
 
-### How to get a single cat file if drivers are uniform for all operating systems
+### Getting a single cat file if drivers are uniform for all operating systems
 
 Make sure your final package has a single driver folder on the **Package** tab and the driver’s properties include all the operating systems you have tested. For more information, see [Walkthrough: How to get a driver signed by Microsoft for multiple versions of Windows](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md).
 
-### I'm unable to add new marketing names to the approved submission
+### Adding new marketing names to the approved submission
 
 Check the announcement date that has been set. If the announcement date has passed, you won't be able to add a new name.
 
-### How can I share a link to a Windows Certification Verification Report?
+### Sharing a link to a Windows Certification Verification Report
 
 * A sharable URL contains three identification numbers separated by slashes as shown below: `https://developer.microsoft.com/dashboard/hardware/driver/DownloadCertificationReport/SellerID/PrivateProductID/SubmissionID`
 
@@ -98,7 +98,7 @@ This error is caused when the uploaded archive's filetype is .zip64 instead of .
 1. Rename the current .hckx/hlkx file to .zip.
 2. Extract to a folder.
 3. Open the folder.
-4. Select all items, then right-click and select **Send to Compressed zip folder**.
+4. Select all items, then select and hold (or right-click) and select **Send to Compressed zip folder**.
 5. Rename the new .zip folder as .hckx/.hlkx.
 6. Upload the new .hckx/.hlkx file.
 

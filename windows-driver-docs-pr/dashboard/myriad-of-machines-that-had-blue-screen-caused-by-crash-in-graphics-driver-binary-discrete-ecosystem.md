@@ -6,7 +6,7 @@ ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
 
-# Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary
+# Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary (Ecosystem)
 
 ## Description
 

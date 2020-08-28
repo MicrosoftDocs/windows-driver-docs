@@ -33,7 +33,7 @@ plmdebug /suspend Package
 plmdebug /resume Package
 plmdebug /disableDebug Package
 plmdebug /enumerateBgTasks Package
-plmdebug /activateBgTaskTaskId "{TaskID}"
+plmdebug /activateBgTask "{TaskID}"
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -130,7 +130,7 @@ Increment the debug reference count for the package that contains MyApp.
 
 **plmdebug /enableDebug 4816**
 
-In WinDbg, in the **Attach to Process** dialog box, select process 4816, and click **OK**. WinDbg will attach to MyApp.
+In WinDbg, in the **Attach to Process** dialog box, select process 4816, and select **OK**. WinDbg will attach to MyApp.
 
 When you have finished debugging MyApp, detach the debugger. Then decrement the debug reference count for the package.
 

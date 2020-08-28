@@ -95,7 +95,7 @@ The second string (“Please enter your authentication PIN”) is driven by **SE
 
     By default, the Base CSP displays the following predefined strings, which are localized appropriately.
 
-    |                     |                                                  |
+    | String  name        |  String                                          |
     |---------------------|--------------------------------------------------|
     | AuthenticationPin   | “Please enter your authentication PIN.”          |
     | DigitalSignaturePin | “Please enter your digital signature PIN.”       |

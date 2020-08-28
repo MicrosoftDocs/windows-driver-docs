@@ -72,7 +72,7 @@ The Event InformationBuffer contains an MBIM_MS_PROVISIONED_CONTEXTS_INFO_V2 str
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_MS_PROVISIONED_CONTEXT_V2 | Not applicable | Not applicable |
 | Response | MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 | MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 | MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 |

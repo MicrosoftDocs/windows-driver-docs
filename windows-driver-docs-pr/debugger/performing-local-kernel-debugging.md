@@ -22,7 +22,7 @@ For information on setting up local kernel-mode debugging, see [Setting Up Local
 
 ### <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span>Using WinDbg
 
-Open WinDbg as Administrator. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Local** tab. Click **OK**.
+Open WinDbg as Administrator. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Local** tab. Select **OK**.
 
 You can also start a session with WinDbg by opening a Command Prompt window as Administrator and entering the following command:
 

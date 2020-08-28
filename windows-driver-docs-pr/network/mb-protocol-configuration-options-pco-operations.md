@@ -85,7 +85,7 @@ Unsolicited events contain an MBIM_PCO_VALUE and are sent when a new PCO value h
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_PCO_VALUE | Not applicable |
 | Response | Not applicable | MBIM_PCO_VALUE | MBIM_PCO_VALUE |

@@ -21,9 +21,8 @@ This rule augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. For
 
 **Driver model: WDM**
 
-|                                   |                                                                                                                                    |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Bug check(s) found with this rule | [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x20023) |
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (0x20023)
+
 
 Example
 -------

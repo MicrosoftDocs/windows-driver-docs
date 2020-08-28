@@ -77,7 +77,7 @@ The following describes the parameters that are used in the [**Pvk2Pfx**](https:
 
 After obtaining a *.pfx* file from a CA, or creating a *.pfx* file from a *.pvk* and either an .*spc* or a *.cer* file, add the information in the *.pfx* file to the Personal certificate store of the local computer that signs the driver. You can use the Certificate Import Wizard to import the information in the *.pfx* file to the Personal certificate store, as follows:
 
-1.  Locate the *.pfx* file in Windows Explorer and double-click the file to open the Certificate Import Wizard.
+1.  Locate the *.pfx* file in Windows Explorer and select and hold (or right-click) the file and then select Open to open the Certificate Import Wizard.
 
 2.  Follow the procedure in the Certificate Import Wizard to import the code-signing certificate into the Personal certificate store.
 

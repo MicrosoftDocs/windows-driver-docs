@@ -46,11 +46,12 @@ The following table describes the general files that are common to a UMDF sensor
 
 The following table lists the files that support the simulated geolocation sensor that is supported by the sample driver.
 
-|                 |                                                                                                                                                                             |
-|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| File name       | Contents                                                                                                                                                                    |
-| Geolocation.cpp | Contains an implementation of the CGeolocation class. The methods in this class initialize the simulated sensor, retrieve readable properties, and set writable properties. |
-| Geolocation.h   | Contains the definition of the CGeolocation class                                                                                                                           |
+**File name**: Contents
+
+**Geolocation.cpp**: Contains an implementation of the CGeolocation class. The methods in this class initialize the simulated sensor, retrieve readable properties, and set writable properties.
+
+**Geolocation.h**: Contains the definition of the CGeolocation class
+
 
  
 

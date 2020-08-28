@@ -29,13 +29,13 @@ The caller also must specify a *Limit* for the semaphore, which can be either of
 
 -   **Limit = 1**
 
-    When this semaphore is set to the Signaled state, a single thread waiting for the semaphore to be reset to the Not-Signaled state becomes eligible for execution and can access whatever resource is protected by the semaphore.
+    When this semaphore is set to the Signaled state, a single thread waiting for the semaphore to be set to the Signaled state becomes eligible for execution and can access whatever resource is protected by the semaphore.
 
     This type of semaphore is also called a *binary semaphore* because a thread either has or does not have exclusive access to the semaphore-protected resource.
 
 -   **Limit &gt; 1**
 
-    When this semaphore is set to the Signaled state, some number of threads waiting for the semaphore object to be set to the Not-Signaled state become eligible for execution and can access whatever resource is protected by the semaphore.
+    When this semaphore is set to the Signaled state, some number of threads waiting for the semaphore object to be set to the Signaled state become eligible for execution and can access whatever resource is protected by the semaphore.
 
     This type of semaphore is called a *counting semaphore* because the routine that sets the semaphore to the Signaled state also specifies how many waiting threads can have their states changed from waiting to ready. The number of such waiting threads can be the *Limit* set when the semaphore was initialized or some number less than this preset *Limit*.
 

@@ -61,7 +61,7 @@ Not applicable.
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_SAR_CONFIG | Not applicable | Not applicable |
 | Response | MBIM_MS_SAR_CONFIG | MBIM_MS_SAR_CONFIG | Not applicable |
@@ -168,7 +168,7 @@ Unsolicited events contain MBIM_MS_TRANSMISSION_STATUS_INFO and are sent when th
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_TRANSMISSION_STATUS | Not applicable | Not applicable |
 | Response | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO |

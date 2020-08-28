@@ -1,5 +1,5 @@
 ---
-title: IPrinterScriptUsbWritePrintDataProgress ProcessedByteCount method
+title: IPrinterScriptUsbWritePrintDataProgress ProcessedByteCount method (out)
 description: Returns the number of bytes that the IHV JavaScript function has processed by the time this method was called.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -12,16 +12,15 @@ api_name:
 - IPrinterScriptUsbWritePrintDataProgress.ProcessedByteCount
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/07/2020
 ms.localizationpriority: medium
 ---
 
-# IPrinterScriptUsbWritePrintDataProgress::ProcessedByteCount method
+# IPrinterScriptUsbWritePrintDataProgress::ProcessedByteCount method (out)
 
 Returns the number of bytes that the IHV JavaScript function has processed by the time this method was called.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT ProcessedByteCount(
@@ -29,40 +28,22 @@ HRESULT ProcessedByteCount(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *value* \[out, retval\]  
 The number of bytes processed by the time this method was called.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 8.1</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2012 R2</p></td>
-</tr>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Minimum supported client:** Windows 8.1
+
+**Minimum supported server:** Windows Server 2012 R2
+
+**Target platform:** Desktop
 
 ## See also
 

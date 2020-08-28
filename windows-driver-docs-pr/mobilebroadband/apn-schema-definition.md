@@ -8,8 +8,8 @@ ms.localizationpriority: medium
 
 # APN schema definition
 
-**Note**  
-The XML document must be saved by using UTF-8 encoding.
+>[!NOTE]
+>The XML document must be saved by using UTF-8 encoding.
 
 The following is a definition of the APN schema.
 
@@ -136,12 +136,3 @@ The following is a definition of the APN schema.
   </xs:simpleType>
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-

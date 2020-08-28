@@ -10,7 +10,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 04/21/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -22,11 +22,11 @@ ms.technology: windows-devices
 
 Examples of setting KSProperty controls can be found in the [AVStream Camera Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera) on GitHub.
 
-## Usage Summary Table
+## Usage summary table
 
 | Get | Set | Target | Property descriptor type | Property value type |
-| --- | --- | --- | --- | --- |
-| Yes | Yes | Filter | [KSPROPERTY](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) | [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)|
+|--|--|--|--|--|
+| Yes | Yes | Filter | [KSPROPERTY](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) | [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) |
 
 ## Remarks
 
@@ -39,9 +39,9 @@ The **Size** member of [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com
 The following are flags that can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** and **KSCAMERA_EXTENDEDPROP_HEADER.Capability** fields.
 
 | Relative Panel Optimization mode | Description |
-| --- | --- |
-| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_OFF | Camera will use normal mode of operation  |
-| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_ON  | Camera will use optimization relative to a position described in the value field |
+|--|--|
+| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_OFF | Camera will use normal mode of operation |
+| KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_ON | Camera will use optimization relative to a position described in the value field |
 | KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC | Camera location hint can be dynamically adjusted while streaming without glitching the stream |
 
 **KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION** is always a synchronous control.
@@ -59,7 +59,7 @@ If the driver receives a SET operation while the camera device is streaming and 
 The following table contains the requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
 
 | Member | Description |
-| --- | --- |
+|--|--|
 | Version | This must be 1. |
 | PinId | KSCAMERA_EXTENDEDPROP_FILTERSCOPE (0xFFFFFFFF) |
 | Size | This must be sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE) |
@@ -75,12 +75,10 @@ If **KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_OFF** is specified, for 
 
 For GET operations, the driver must return the direction that the camera is currently programmed for.
 
-If **KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_OFF** is specified, or if no value has been set, the device’s default PLD must be returned.
+If **KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_OFF** is specified, or if no value has been set, the device's default PLD must be returned.
 
 If **KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_ON** is specified, the most recently set value must be returned.
 
 ## Requirements
 
-| &nbsp; | &nbsp; |
-| --- | --- |
-| Header | ksmedia.h (include Ksmedia.h) |
+**Header:** ksmedia.h (include Ksmedia.h)

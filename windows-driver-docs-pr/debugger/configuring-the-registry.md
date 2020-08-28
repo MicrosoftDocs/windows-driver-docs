@@ -157,9 +157,8 @@ To correctly view the message of the Event Log entries, the Event Log area of th
 
 SymProxy logs the following events:
 
-|              |                                   |             |
-|--------------|-----------------------------------|-------------|
 | **Event ID** | **Description**                   | **Channel** |
+|--------------|-----------------------------------|-------------|
 | 1            | Start of the ISAPI filter         | Admin       |
 | 2            | Stop of the ISAPI filter          | Admin       |
 | 3            | Configuration of the ISAPI filter | Admin       |

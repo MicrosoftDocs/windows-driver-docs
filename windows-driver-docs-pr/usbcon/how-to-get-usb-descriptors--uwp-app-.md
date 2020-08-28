@@ -1,5 +1,5 @@
 ---
-Description: One of the main tasks of interacting with a USB device is to get information about it.
+description: One of the main tasks of interacting with a USB device is to get information about it.
 title: How to get USB descriptors (UWP app)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

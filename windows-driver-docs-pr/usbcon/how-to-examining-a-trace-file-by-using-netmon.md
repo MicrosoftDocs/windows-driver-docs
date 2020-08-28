@@ -1,5 +1,5 @@
 ---
-Description: This topic describes how to example a event trace file by using Netmon.
+description: This topic describes how to example a event trace file by using Netmon.
 title: How to view a USB ETW trace in Netmon
 ms.date: 04/20/2017
 ms.localizationpriority: medium
