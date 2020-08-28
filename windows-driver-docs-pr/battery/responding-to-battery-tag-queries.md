@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_responding_to_battery_tag_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_TAG_QUERIES_DG"></span>
 
 
-The battery tag is a ULONG counter initialized and incremented by the miniclass driver. The battery class driver calls [*BatteryMiniQueryTag*](https://docs.microsoft.com/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback) to request the current value of the tag.
+The battery tag is a ULONG counter initialized and incremented by the miniclass driver. The battery class driver calls [*BatteryMiniQueryTag*](/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback) to request the current value of the tag.
 
 This miniclass driver routine is declared as follows:
 
@@ -27,7 +27,7 @@ NTSTATUS
     );
 ```
 
-The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the BATTERY\_MINIPORT\_INFO structure at device initialization ([**BatteryClassInitializeDevice**](https://docs.microsoft.com/windows/desktop/api/batclass/nf-batclass-batteryclassinitializedevice)). The *BatteryTag* value is created and maintained by the miniclass driver.
+The *Context* parameter is a pointer to the context area that is allocated by the miniclass driver and passed to the class driver in the BATTERY\_MINIPORT\_INFO structure at device initialization ([**BatteryClassInitializeDevice**](/windows/desktop/api/batclass/nf-batclass-batteryclassinitializedevice)). The *BatteryTag* value is created and maintained by the miniclass driver.
 
 Each time a battery is inserted, the miniclass driver must increment the value of the tag, regardless of whether this is a new battery or the same battery that was previously present.
 
@@ -36,9 +36,4 @@ If no battery is present, or if the miniclass driver cannot determine whether a 
 The class driver uses the battery tag internally and in calls to the miniclass driver to identify a specific instance of a battery. The miniclass driver should check the value of the battery tag that is passed to each of its standard routines to ensure that it corresponds to the current battery. If the tag is incorrect, the miniclass driver should return STATUS\_NO\_SUCH\_DEVICE.
 
  
-
- 
-
-
-
 
