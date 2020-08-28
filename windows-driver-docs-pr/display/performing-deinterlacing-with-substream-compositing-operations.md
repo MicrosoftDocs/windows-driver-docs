@@ -15,7 +15,7 @@ ms.custom: seodec18
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-Use the following example code to perform operations that combine deinterlacing the video stream and compositing video substreams on top of the video stream. The example code implements the [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function. The example code only shows how *DdMoCompRender* is used for deinterlacing with substream compositing operations. For an implementation of *DdMoCompRender* that performs ProcAmp control and deinterlacing operations, see [Performing ProcAmp Control and Deinterlacing Operations](performing-procamp-control-and-deinterlacing-operations.md).
+Use the following example code to perform operations that combine deinterlacing the video stream and compositing video substreams on top of the video stream. The example code implements the [*DdMoCompRender*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function. The example code only shows how *DdMoCompRender* is used for deinterlacing with substream compositing operations. For an implementation of *DdMoCompRender* that performs ProcAmp control and deinterlacing operations, see [Performing ProcAmp Control and Deinterlacing Operations](performing-procamp-control-and-deinterlacing-operations.md).
 
 ```cpp
 DWORD APIENTRY
@@ -68,10 +68,4 @@ return DDHAL_DRIVER_HANDLED;
 ```
 
  
-
- 
-
-
-
-
 

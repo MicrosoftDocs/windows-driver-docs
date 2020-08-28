@@ -24,7 +24,7 @@ A linear memory-space segment is the classical type of segment that display hard
 
 -   Is managed linearly in a one-dimensional address space.
 
-The driver sets the **Flags** member of the [**DXGK\_SEGMENTDESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor) structure to 0 to specify a linear memory-space segment. However, the driver can set the following bit-field flags to indicate additional segment support:
+The driver sets the **Flags** member of the [**DXGK\_SEGMENTDESCRIPTOR**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor) structure to 0 to specify a linear memory-space segment. However, the driver can set the following bit-field flags to indicate additional segment support:
 
 -   **CpuVisible** to indicate that the segment is CPU-accessible.
 
@@ -35,10 +35,4 @@ The following figure shows a visual representation of a linear memory-space segm
 ![diagram illustrating a linear memory-space segment](images/memspac.png)
 
  
-
- 
-
-
-
-
 

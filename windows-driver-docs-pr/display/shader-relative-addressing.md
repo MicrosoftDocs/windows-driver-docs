@@ -18,7 +18,7 @@ Note that this relative-addressing token is present only for vertex shader versi
 
 This relative-addressing token is formatted the same as the destination or source parameter token and the following rules apply:
 
--   Only D3DSPR\_ADDR or D3DSPR\_LOOP can be used as [register types](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+-   Only D3DSPR\_ADDR or D3DSPR\_LOOP can be used as [register types](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 -   Swizzle bits in source parameter tokens are used to determine a register component.
 
@@ -41,10 +41,4 @@ Available in Windows Vista and later versions of the Windows operating systems.
 Available in Windows Vista and later versions of the Windows operating systems.
 
  
-
- 
-
-
-
-
 

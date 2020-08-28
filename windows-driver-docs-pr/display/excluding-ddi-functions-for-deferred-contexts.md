@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
-When the Microsoft Direct3D runtime calls the user-mode display driver's [**CreateDeferredContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createdeferredcontext) function to create a deferred context, the driver provides the functions that the runtime can call for that deferred context. The driver fills members of the [**D3D11DDI\_DEVICEFUNCS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_devicefuncs) structure that the **p11ContextFuncs** member of the [**D3D11DDIARG\_CREATEDEFERREDCONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_createdeferredcontext) structure points to. The driver provides only a subset of functions for a deferred context as the driver does for an immediate context.
+When the Microsoft Direct3D runtime calls the user-mode display driver's [**CreateDeferredContext**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_createdeferredcontext) function to create a deferred context, the driver provides the functions that the runtime can call for that deferred context. The driver fills members of the [**D3D11DDI\_DEVICEFUNCS**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_devicefuncs) structure that the **p11ContextFuncs** member of the [**D3D11DDIARG\_CREATEDEFERREDCONTEXT**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_createdeferredcontext) structure points to. The driver provides only a subset of functions for a deferred context as the driver does for an immediate context.
 
-The driver excludes many functions for deferred contexts by setting the following members of [**D3D11DDI\_DEVICEFUNCS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_devicefuncs) or [**D3D11\_1DDI\_DEVICEFUNCS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_devicefuncs) to **NULL**:
+The driver excludes many functions for deferred contexts by setting the following members of [**D3D11DDI\_DEVICEFUNCS**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_devicefuncs) or [**D3D11\_1DDI\_DEVICEFUNCS**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_devicefuncs) to **NULL**:
 
 ```cpp
 typedef struct D3D11DDI_DEVICEFUNCS {
@@ -99,10 +99,4 @@ typedef struct D3D11_1DDI_DEVICEFUNCS {
 ```
 
  
-
- 
-
-
-
-
 
