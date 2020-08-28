@@ -7824,6 +7824,36 @@
                             "source_path":  "windows-driver-docs-pr/netcx/handling-control-requests.md",
                             "redirect_url":  "/windows-hardware/drivers/netcx/",
                             "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/providing-device-property-pages.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/overview-of-device-property-pages",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/container-ids-for-usb-devices.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/how-usb-devices-are-assigned-container-ids",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/how-setup-selects-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/device-identifier-formats.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/generic-identifiers",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/inf-file-sections-and-directives.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/index",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/selecting-the-appropriate-signature-type.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/digital-signatures-and-pnp-device-installation--windows-vista-and-late  ",
+                            "redirect_document_id":  false
                         }
                      ]
 }

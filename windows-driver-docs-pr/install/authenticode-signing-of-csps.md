@@ -15,7 +15,7 @@ Consequently, Microsoft will no longer sign CSPs, and the manual CSP signing ser
 Instead, all third-party CSPs can now be self-signed by following this procedure:
 
 1. Purchase a code-signing certificate from a Certificate Authority (CA) for which Microsoft also issues a cross-certificate. The [Cross-Certificates for Kernel Mode Code Signing](cross-certificates-for-kernel-mode-code-signing.md) topic provides a list of CAs for which Microsoft also provides cross-certificates and the corresponding cross-certificates. Note that these are the only cross-certificates that chain up to the “Microsoft Code Verification Root” issued by Microsoft, which will enable Windows to run third-party CSPs.
-2. After you have a certificate from the CA and the matching cross-certificate, you can use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) to sign all your CSP binaries.
+2. After you have a certificate from the CA and the matching cross-certificate, you can use [**SignTool**](../devtest/signtool.md) to sign all your CSP binaries.
 3. SignTool is included in the latest versions of Visual Studio. It is also included in the WDK version 7.0 and newer versions. Note that the SignTool that ships with earlier versions of the WDK is not compatible with cross-certificates and cannot be used to sign your binaries.
 
 >[!NOTE]
@@ -23,7 +23,7 @@ Instead, all third-party CSPs can now be self-signed by following this procedure
 
 You can sign binaries from a command-line, or sign as an integrated build step in Visual Studio 2012 and newer.
 
-The command to [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) is:
+The command to [**SignTool**](../devtest/signtool.md) is:
 
 ```cpp
 signtool.exe sign /ac <cross-certificate_from_ms> /sha1 <sha1_hash> /t <timestamp_server> /d <”optional_description_in_double_quotes”> <binary_file.ext>

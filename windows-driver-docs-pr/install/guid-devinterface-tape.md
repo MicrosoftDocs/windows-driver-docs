@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_TAPE
 
 
-The GUID_DEVINTERFACE_TAPE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for tape [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index).
+The GUID_DEVINTERFACE_TAPE [device interface class](./overview-of-device-interface-classes.md) is defined for tape [storage devices](../storage/index.md).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 The system-supplied [tape class driver](https://docs.microsoft.com/windows-hardware/drivers/storage/tape-drivers) registers an instance of GUID_DEVINTERFACE_TAPE to notify the operating system and applications of the presence of tape storage devices.
 
-For more information about storage drivers, see [Storage Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers).
+For more information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
 Requirements
 ------------
@@ -74,11 +74,4 @@ Requirements
 [**TapeClassGuid**](tapeclassguid.md)
 
  
-
- 
-
-
-
-
-
 

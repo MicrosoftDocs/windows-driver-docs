@@ -15,7 +15,7 @@ To start Device Manager, in File explorer, select and hold (or right-click) **Th
 
 Device Manager displays information about each device. This includes the device type, device status, manufacturer, device-specific properties, and information about the driver for the device.
 
-If your device is required to start the computer, a problem with your device installation can prevent the computer from starting. In these cases, you have to use the kernel debugger to troubleshoot your device installation. For more info, see [Getting Started with WinDbg (Kernel-Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
+If your device is required to start the computer, a problem with your device installation can prevent the computer from starting. In these cases, you have to use the kernel debugger to troubleshoot your device installation. For more info, see [Getting Started with WinDbg (Kernel-Mode)](../debugger/getting-started-with-windbg--kernel-mode-.md).
 
 If your device is not required to start the computer, Device Manager places a yellow exclamation point next that device's name in the Device Manager dialog. Device Manager also provides an error message describing the problem. For more information about the error messages, see [Device Manager Error Messages](device-manager-error-messages.md).
 

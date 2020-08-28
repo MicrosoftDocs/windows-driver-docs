@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_ESCALANTE_PLATFORM_DRIVER
 
 
-The KSCATEGORY_ESCALANTE_PLATFORM_DRIVER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is obsolete. Do not use for new devices.
+The KSCATEGORY_ESCALANTE_PLATFORM_DRIVER [device interface class](./overview-of-device-interface-classes.md) is obsolete. Do not use for new devices.
 
 <table>
 <colgroup>
@@ -62,10 +62,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

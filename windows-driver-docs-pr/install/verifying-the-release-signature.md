@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Verifying the Release-Signature
 
 
-After a [driver package](driver-packages.md) is release-signed, the [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) tool can be used to verify the signatures of:
+After a [driver package](driver-packages.md) is release-signed, the [**SignTool**](../devtest/signtool.md) tool can be used to verify the signatures of:
 
 -   Individual files within the driver package.
 
@@ -76,10 +76,4 @@ You can also verify the digital signature of the catalog file itself through Win
 For more information about how to release-sign driver packages, see [Release-Signing Driver Packages](release-signing-driver-packages.md) and [Verifying the SPC Signature of a Catalog File](verifying-the-spc-signature-of-a-catalog-file.md).
 
  
-
- 
-
-
-
-
 
