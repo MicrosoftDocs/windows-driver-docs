@@ -32,7 +32,7 @@ Examples of Communication and Collaboration applications considered for this mea
 * VIBER.EXE
 * MICROSOFT.SKYPEROOMSYSTEM
 
-This is the ecosystem counterpart of [Number of user mode crashes in Communication and Collaboration applications normalized by usage <= Baseline goal](https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-user-mode-crashes-collaboration-standard) measure.
+This is the ecosystem counterpart of [Number of user mode crashes in Communication and Collaboration applications normalized by usage <= Baseline goal](./graphics-user-mode-crashes-collaboration-standard.md) measure.
 
 ## Measure attributes
 

@@ -42,7 +42,7 @@ The Partner Center lists each of these IDs on the driver details page of your pr
 </tr>
 <tr class="odd">
 <td><p>Submission ID</p></td>
-<td><p>This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions" data-raw-source="[Manage your hardware submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions)">Manage your hardware submissions</a> for more details. </p></td>
+<td><p>This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions" data-raw-source="[Manage your hardware submissions](./manage-your-hardware-submissions.md)">Manage your hardware submissions</a> for more details. </p></td>
 </tr>
 </tbody>
 </table>
@@ -56,6 +56,6 @@ Shipping labels also contain two additional IDs:
 
 ## Related topics
 
-* [Manage your hardware submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions)
+* [Manage your hardware submissions](./manage-your-hardware-submissions.md)
 
-* [Manage driver distribution with shipping labels](https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-driver-distribution-by-submission)
+* [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md)

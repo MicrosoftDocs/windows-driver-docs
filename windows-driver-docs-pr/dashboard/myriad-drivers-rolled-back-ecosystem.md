@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 This measure is tracking whether a driver is rolled back or succeeded by another driver install (not initiated by WU) within 2 days of the installation. Such actions signal that user is having problems with a driver severe enough that they need to use a different driver.
 
-This is the ecosystem counterpart of [Myriad of drivers that were rolled back or re-installed within 2 days of installation](https://docs.microsoft.com/windows-hardware/drivers/dashboard/myriad-drivers-rolled-back-standard) measure.
+This is the ecosystem counterpart of [Myriad of drivers that were rolled back or re-installed within 2 days of installation](./myriad-drivers-rolled-back-standard.md) measure.
 
 ## Measure attributes
 

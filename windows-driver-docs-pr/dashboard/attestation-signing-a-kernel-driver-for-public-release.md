@@ -65,7 +65,7 @@ Follow the process described in [Register for the hardware program](register-for
 
 You will need to download and install the Windows Driver Kit (WDK) to gain access to tools used to sign your driver binary files.
 
-Follow the process described in [Download kits and tools for Windows 10](https://msdn.microsoft.com/windows/hardware/dn913721.aspx) to download and install the WDK.
+Follow the process described in [Download kits and tools for Windows 10](/windows-hardware/get-started/adk-install) to download and install the WDK.
 
 ## Create a CAB Files Submission
 
@@ -171,7 +171,7 @@ C:\Echo> SignTool sign /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /fd sha256 
 
 ## Submit the EV signed Cab file using the Partner Center
 
-1. Submit the EV signed CAB file using the Partner Center. See [Driver Signing Properties](https://docs.microsoft.com/windows-hardware/drivers/develop/driver-signing-properties) for more information.
+1. Submit the EV signed CAB file using the Partner Center. See [Driver Signing Properties](../develop/driver-signing-properties.md) for more information.
 
    - As part of the Attestation submission process, do not check any of the Test Signing boxes highlighted below.  Leave those unchecked.
 

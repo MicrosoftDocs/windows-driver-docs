@@ -13,20 +13,20 @@ A mobile broadband experience helps you create a service metadata package used t
 
 The topics in this section include the following:
 
-- [Developer and preview mode](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Developer and preview mode](./index.yml)
 
-- [Service icon requirements](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Service icon requirements](./index.yml)
 
-- [Service number](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Service number](./index.yml)
 
-- [Trusted certificates](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Trusted certificates](./index.yml)
 
 You can also get for more information about service metadata packages and how to submit them to the Partner Center by using the following links:
 
-- [Developer guide for creating service metadata](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/developer-guide-for-creating-service-metadata) – A step-by-step guide that walks you through the process of submitting a service metadata package to the Partner Center.
+- [Developer guide for creating service metadata](../mobilebroadband/developer-guide-for-creating-service-metadata.md) – A step-by-step guide that walks you through the process of submitting a service metadata package to the Partner Center.
 
 - [Service metadata package schema reference](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference) – A reference for the XML schemas that are included in a service metadata package.
 
 ## Related topics
 
-[Device Metadata](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+[Device Metadata](./index.yml)
