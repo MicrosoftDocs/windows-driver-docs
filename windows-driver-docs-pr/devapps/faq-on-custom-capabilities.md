@@ -22,5 +22,4 @@ ms.localizationpriority: medium
 |Automatic App Acquisition  |Available for peripherals                                  |Available for all hardware          |
 |Deployment Dependencies    |WU: Driver package<br>Store: App|WU: Driver package<br>Store: App                  |
                                                                                                                                                                                                     
-For more information on DCAs, see [Getting started with Microsoft Store device apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/getting-started).
-
+For more information on DCAs, see [Getting started with Microsoft Store device apps](./getting-started.md).
