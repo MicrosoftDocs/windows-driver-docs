@@ -48,7 +48,7 @@ You should only run Driver Verifier on test computers, or on computers that you 
 
 1. Start a **Command Prompt** window by selecting **Run as administrator**, and type **verifier** to open **Driver Verifier Manager**.
 
-2. Select **Create standard settings** (the default task), and click **Next**.
+2. Select **Create standard settings** (the default task), and select **Next**.
 
    You can also choose **Create custom settings** to select from predefined settings, or to select individual options. For more information, see [Driver Verifier options and rule classes](driver-verifier-options.md) and [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
@@ -89,9 +89,9 @@ You should only run Driver Verifier on test computers, or on computers that you 
    </table>
 
 
-4. If you chose **Select driver names from a list**, click **Next**, and then select one or more specific drivers.
+4. If you chose **Select driver names from a list**, select **Next**, and then select one or more specific drivers.
 
-5. Click **Finish**, and then restart the computer.
+5. Select **Finish**, and then restart the computer.
 
 
 
@@ -114,7 +114,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
 **To stop or reset Driver Verifier**
 
-1. In **Driver Verifier Manager**, select **Delete existing settings**, and then click **Finish**.
+1. In **Driver Verifier Manager**, select **Delete existing settings**, and then select **Finish**.
 
     or
 
@@ -129,7 +129,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
 **To view Driver Verifier statistics**
 
-- In **Driver Verifier Manager**, select **Display information about the currently verified drivers**, and then click **Next**. Continuing to click **Next** displays additional information.
+- In **Driver Verifier Manager**, select **Display information about the currently verified drivers**, and then select **Next**. Continuing to select **Next** displays additional information.
 
   or
 
@@ -142,7 +142,7 @@ For each of the following actions, you can use Driver Verifier Manager or enter 
 
 **To view Driver Verifier settings**
 
-- In **Driver Verifier Manager**, select **Display existing settings**, and then click **Next**.
+- In **Driver Verifier Manager**, select **Display existing settings**, and then select **Next**.
 
   or
 

@@ -58,9 +58,9 @@ For network debugging specifies that a new encryption key should be generated fo
 Setting *nodhcp* prevents use of DHCP to obtain the target IP address. This option is rarely required as even small routers provide support for DHCP. The *nodhcp* option should only be used if you know that there are no DHCP servers on the network.  In most situations, the KDNET transport works best when this option is not set, and DHCP is enabled.
 
 **busparams**=*Bus.Device.Function*
-Specifies the target controller when multiple controllers exist. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.  
+Specifies the target controller. *Bus* specifies the bus number, *Device* specifies the device number, and *Function* specifies the function number.  
 
-To specify the bus parameters, Open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where b, d, and f are the bus, device and function numbers in decimal format:
+To specify the bus parameters, Open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. These values are displayed in Device Manager under *Location* on the *General* tab. In an elevated Command Prompt Window, enter the following command, where b, d, and f are the bus, device and function numbers in decimal format:
 
 ```console
 bcdedit /set "{dbgsettings}" busparams b.d.f

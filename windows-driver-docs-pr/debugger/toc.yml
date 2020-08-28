@@ -1859,8 +1859,6 @@
       href: symstore-transactions.md
     - name: "File System References and Symbol Files"
       href: file-system-references-and-symbol-files.md
-    - name: "SymStore Compressed Files"
-      href: symstore-compressed-files.md
     - name: "Symbol Storage Format"
       href: symbol-storage-format.md
   - name: "How the Debugger Recognizes Symbols"

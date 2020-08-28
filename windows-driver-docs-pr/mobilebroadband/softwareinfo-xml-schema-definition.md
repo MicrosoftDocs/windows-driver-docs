@@ -170,12 +170,12 @@ The following is a definition of the SoftwareInfo schema.
   </xs:simpleType>
 
   <xs:simpleType name="UnicodeIdentifierType">
-    <xs:restriction base="tns:UnicodeIdentifierCharSetType" /> 
+    <xs:restriction base="tns:UnicodeIdentifierCharSetType" />
   </xs:simpleType>
 
   <xs:simpleType name="UnicodeIdentifierCharSetType">
   <xs:restriction base="tns:AllowedUnicodeCharSetType">
-    <xs:pattern value="[^!#$%'()\*\+,/:;=\?@\[\\\]^_`\|]+" /> 
+    <xs:pattern value="[^!#$%'()\*\+,/:;=\?@\[\\\]^_`\|]+" />
   </xs:restriction>
   </xs:simpleType>
 
@@ -282,12 +282,3 @@ The following is a definition of the SoftwareInfo schema.
 
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-

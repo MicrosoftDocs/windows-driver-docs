@@ -1,5 +1,5 @@
 ---
-Description: Windows Portable Devices
+description: Windows Portable Devices
 title: Windows Portable Devices
 ms.date: 04/20/2017
 ms.topic: article

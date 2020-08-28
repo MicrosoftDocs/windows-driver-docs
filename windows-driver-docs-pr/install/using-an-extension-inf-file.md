@@ -105,10 +105,12 @@ The driver validation and submission process is the same for extension INFs as f
 
 ## Uninstalling an extension driver
 
-Before uninstalling an extension driver, you must first uninstall the base device.  Next, run PnPUtil on the extension INF.
+To uninstall an extension driver, use PnPUtil's `delete` command with the `uninstall` flag. 
 
-To delete the driver package, use `pnputil /delete-driver oem0.inf`.
-To force delete the driver package, use `pnputil /delete-driver oem1.inf /force`.
+To delete the driver package, use `pnputil /delete-driver /uninstall oem0.inf`.
+To force delete the driver package, use `pnputil /delete-driver /uninstall oem1.inf /force`.
+
+This allows the extension driver to be uninstalled without removing the base driver.
 
 ## Example 1: Using an extension INF to set the device friendly name
 

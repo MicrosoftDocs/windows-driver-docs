@@ -1,5 +1,5 @@
 ---
-Description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
+description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
 title: USB Type-C manual interoperability test procedures
 ms.date: 04/20/2017
 ms.localizationpriority: medium

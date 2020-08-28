@@ -1,5 +1,5 @@
 ---
-Description: This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface.
+description: This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface.
 title: How to select an alternate setting in a USB interface
 ms.date: 04/20/2017
 ms.localizationpriority: medium

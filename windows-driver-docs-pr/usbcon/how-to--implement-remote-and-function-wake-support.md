@@ -1,5 +1,5 @@
 ---
-Description: This topic provides an overview of function suspend and function remote wake-up features for Universal Serial Bus (USB) 3.0 multi-function devices (composite devices).
+description: This topic provides an overview of function suspend and function remote wake-up features for Universal Serial Bus (USB) 3.0 multi-function devices (composite devices).
 title: How to Implement Function Suspend in a Composite Driver
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-Description: PROPERTYKEYs and GUIDs in Windows Portable Devices
+description: PROPERTYKEYs and GUIDs in Windows Portable Devices
 title: PROPERTYKEYs and GUIDs in Windows Portable Devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium

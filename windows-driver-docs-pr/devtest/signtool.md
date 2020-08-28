@@ -256,7 +256,7 @@ A 32-bit version of SignTool is located in the bin\\i386 folder of the WDK. A 64
 
 The following is an example of how to sign a [driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) catalog file using a Software Publisher Certificate (SPC) and a corresponding cross-certificate. This example is valid for signing a driver package for 64-bit versions of Windows Vista and later versions of Windows, which enforce the kernel-mode code signing policy. The example signs the driver package's catalog file AbcCatFileName.cat. To sign the catalog file, the example uses the cross-certificate AbcCrossCertificate and the AbcSPCCertificate certificate. The AbcSPCCertificate certificate is located in the AbcCertificateStore certificate store.
 
-The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is http://timestamp.digicert.com.
+The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is `http://timestamp.digicert.com`.
 
 ```command
 SignTool sign /ac AbcCrossCertificate.cer /s AbcCertificateStore /n AbcSPCCertificate /t http://timestamp.digicert.com AbcCatFileName.cat
@@ -270,7 +270,7 @@ SignTool sign /ac AbcCrossCertificate.cer /s AbcCertificateStore /n AbcSPCCertif
 
 The following is an example of how to sign a [driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) catalog file using a [commercial release certificate](https://docs.microsoft.com/windows-hardware/drivers/install/commercial-release-certificate) or a [commercial test certificate](https://docs.microsoft.com/windows-hardware/drivers/install/commercial-test-certificate). This example is valid for signing a driver package for 32-bit versions of Windows Vista and later versions of Windows, which do not enforce the kernel-mode code signing policy. The example signs the driver package's catalog file CatalogFileName.cat. The example uses the AbcTestCertificate test certificate, located in the TestCertificateStore certificate store, to sign the catalog file.
 
-The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is http://timestamp.digicert.com.
+The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is `http://timestamp.digicert.com`.
 
 ```command
 SignTool sign /s TestCertificateStore /n AbcTestCertificate /t http://timestamp.digicert.com CatalogFileName.cat

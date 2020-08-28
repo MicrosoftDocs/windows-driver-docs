@@ -55,7 +55,7 @@ An **Error** event is logged to the System event log when a legacy file system f
 
 If you're unsure which filters are legacy file system filter drivers or want to make sure that they're not running, you can perform the following:
 
-1. Open an elevated Command Prompt by right-clicking a **cmd.exe** icon and clicking **Run as administrator**.
+1. Open an elevated Command Prompt by selecting and holding (or right-clicking) a **cmd.exe** icon and selecting **Run as administrator**.
 2. Type: `fltmc filters`
 3. Look for legacy drivers, they're the ones with a **Frame** value of **&lt;Legacy&gt;**.
 

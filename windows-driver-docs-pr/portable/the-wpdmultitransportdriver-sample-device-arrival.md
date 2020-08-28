@@ -1,5 +1,5 @@
 ---
-Description: MultiTransport Device Support
+description: MultiTransport Device Support
 title: MultiTransport Device Support
 ms.date: 04/20/2017
 ms.localizationpriority: medium

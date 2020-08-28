@@ -16,64 +16,19 @@ An altitude for this filter will then be e-mailed back to the specified contact 
 
 You can also send email to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Minifilter%20altitude%20request) to update information associated with existing altitudes.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Field</th>
-<th align="left">Comment</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Company name:</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">Contact e-mail:</td>
-<td align="left">Provide a long-term company email alias, versus individual email.</td>
-</tr>
-<tr class="odd">
-<td align="left">Product name:</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">Product URL:</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">Product/Filter description:</td>
-<td align="left">A one paragraph summary to help Microsoft determine an appropriate altitude for the filter.</td>
-</tr>
-<tr class="even">
-<td align="left">Filter filename:</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">Filter type:</td>
-<td align="left">One of these values: Registry, FileSystem, Both</td>
-</tr>
-<tr class="even">
-<td align="left">Filter start-type:</td>
-<td align="left">One of these values: Boot, System, Auto, Demand</td>
-</tr>
-<tr class="odd">
-<td align="left">Requested filter load order group:</td>
-<td align="left">See the <a href="allocated-altitudes.md" data-raw-source="[File System Minifilter Allocated Altitudes](allocated-altitudes.md)">File System Minifilter Allocated Altitudes</a> for available load order groups.</td>
-</tr>
-<tr class="even">
-<td align="left">Requested altitude:</td>
-<td align="left">Microsoft reserves the right to assign an altitude that is different from the requested altitude, depending on altitude availability and the filter driver functionality.</td>
-</tr>
-<tr class="odd">
-<td align="left">Additional information:</td>
-<td align="left">Use this field to let us know if there is any information you would like Microsoft to consider when assigning an altitude to this filter.</td>
-</tr>
-</tbody>
-</table>
+|Field|Comment|
+|----|----|
+|Company name:| |
+|Contact e-mail:|Provide a long-term company email alias, versus individual email.|
+|Product name:| |
+|Product URL:| |
+|Product/Filter description:|A one paragraph summary to help Microsoft determine an appropriate altitude for the filter.|
+|Filter filename:| |
+|Filter type:|One of these values: Registry, FileSystem, Both|
+|Filter start-type:|One of these values: Boot, System, Auto, Demand|
+|Requested filter load order group:|See the [File System Minifilter Allocated Altitudes](allocated-altitudes.md) for available load order groups.|
+|Requested altitude:|Microsoft reserves the right to assign an altitude that is different from the requested altitude, depending on altitude availability and the filter driver functionality.|
+|Additional information:|Use this field to let us know if there is any information you would like Microsoft to consider when assigning an altitude to this filter.|
 
 The following is an example for the body of an allocation request email.
 
@@ -99,8 +54,7 @@ Thanks,
 FilterDev
 ```
 
-## Note
-
-* All fields must be filled out.
-* It may take Microsoft up to two weeks to process and assign altitudes. Any missing information may delay the assignment.
-* The assigned altitude will eventually be reflected in the altitudes listed in [File System Minifilter Allocated Altitudes](allocated-altitudes.md). Please be aware that Microsoft only updates this list annually.
+>[!NOTE]
+>- All fields must be filled out.
+>- It may take Microsoft up to two weeks to process and assign altitudes. Any missing information may delay the assignment.
+>- The assigned altitude will eventually be reflected in the altitudes listed in [File System Minifilter Allocated Altitudes](allocated-altitudes.md). Please be aware that Microsoft only updates this list annually.

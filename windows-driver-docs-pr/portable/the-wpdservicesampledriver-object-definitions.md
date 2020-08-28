@@ -1,5 +1,5 @@
 ---
-Description: Defining the Service Objects
+description: Defining the Service Objects
 title: Defining the Service Objects
 ms.date: 04/20/2017
 ms.localizationpriority: medium

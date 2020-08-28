@@ -1,5 +1,5 @@
 ---
-Description: This topic describes the device-specific registry entries.
+description: This topic describes the device-specific registry entries.
 title: USB Device Registry Entries
 ms.date: 04/20/2017
 ms.localizationpriority: medium

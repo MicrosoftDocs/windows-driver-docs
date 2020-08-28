@@ -20,7 +20,7 @@ Color management can be enabled by either an application or a printer driver. Ap
 
     This method enables system-controlled color management.
 
--   Specifying a [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure when calling **CreateDC** to create a print job, and setting either DMICMMETHOD\_SYSTEM, DMICMMETHOD\_DRIVER, or DMICMMETHOD\_DEVICE in the DEVMODE structure's **dmICMMethod** member.
+-   Specifying a [**DEVMODEW**](https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew) structure when calling **CreateDC** to create a print job, and setting either DMICMMETHOD\_SYSTEM, DMICMMETHOD\_DRIVER, or DMICMMETHOD\_DEVICE in the DEVMODE structure's **dmICMMethod** member.
 
     This method allows the application to select system-controlled, driver-controlled, or device-controlled color management (assuming the specified control type is supported).
 

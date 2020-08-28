@@ -196,7 +196,7 @@ The **UseImageForHatchBrush?** attribute uses the following GPD syntax.
 *Endif: WINNT_60 
 ```
 
-In Microsoft Windows Server 2003 or Windows XP, when Unidrv prints in HP-GL/2 mode, if a hatch brush is received in the [**DrvRealizeBrush**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvrealizebrush) function, Unidrv sends a command so that the printer selects the appropriate hatch brush. Unidrv does not control how the hatch brush is rendered. For example, spacing between the lines is usually controlled by the resolution. On higher resolution, the spacing gets small, while on lower resolution, spacing would be greater. Therefore, a document might print differently if different resolution is used.
+In Microsoft Windows Server 2003 or Windows XP, when Unidrv prints in HP-GL/2 mode, if a hatch brush is received in the [**DrvRealizeBrush**](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvrealizebrush) function, Unidrv sends a command so that the printer selects the appropriate hatch brush. Unidrv does not control how the hatch brush is rendered. For example, spacing between the lines is usually controlled by the resolution. On higher resolution, the spacing gets small, while on lower resolution, spacing would be greater. Therefore, a document might print differently if different resolution is used.
 
 In Windows Vista, if the GPD specifies the **UseImageForHatchBrush?** attribute, Unidrv renders the hatch brush onto a bitmap surface and then sends that bitmap to the device. Unidrv, therefore, has some control on how the hatch brush is rendered.
 

@@ -1,5 +1,5 @@
 ---
-Description: This topic describes how KMDF function drivers support USB selective suspend.
+description: This topic describes how KMDF function drivers support USB selective suspend.
 title: Selective suspend in USB KMDF function drivers
 ms.date: 05/09/2018
 ms.localizationpriority: medium

@@ -135,7 +135,7 @@ Other Functions
 </tr>
 <tr class="even">
 <td><p><strong>ResetPrinter</strong></p></td>
-<td><p>Modifies a print queue's data type or <a href="https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew)"><strong>DEVMODEW</strong></a> structure.</p></td>
+<td><p>Modifies a print queue's data type or <a href="https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SetPrinter</strong> (Required)</p></td>
@@ -225,7 +225,7 @@ Other Functions
 <td><p></p>
 <strong>AddJob</strong>
 (Required)</td>
-<td><p>Returns a job identifier and spool file path. The caller uses <a href="https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea" data-raw-source="[&lt;strong&gt;CreateFile&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea)"><strong>CreateFile</strong></a> and <strong>WriteFile</strong> to send data to the spool file.</p></td>
+<td><p>Returns a job identifier and spool file path. The caller uses <a href="https://docs.microsoft.com/windows/win32/api/fileapi/nf-fileapi-createfilea" data-raw-source="[&lt;strong&gt;CreateFile&lt;/strong&gt;](https://docs.microsoft.com/windows/win32/api/fileapi/nf-fileapi-createfilea)"><strong>CreateFile</strong></a> and <strong>WriteFile</strong> to send data to the spool file.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p>

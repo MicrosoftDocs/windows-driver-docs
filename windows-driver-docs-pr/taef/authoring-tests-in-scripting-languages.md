@@ -8,18 +8,15 @@ ms.localizationpriority: medium
 
 # Authoring Tests in Scripting Languages
 
-
 In addition to C++ and C#, TAEF supports authoring tests in scripting languages.
 
 You create script components using any scripting language that supports the Microsoft COM Scripting interfaces. Script languages that support these interfaces include JScript, Microsoft Visual Basic Scripting Edition (VBScript), PERLScript, PScript, Ruby, and Python.
 
-## <span id="Current_Limitations_of_the_Script_Test_Authoring"></span><span id="current_limitations_of_the_script_test_authoring"></span><span id="CURRENT_LIMITATIONS_OF_THE_SCRIPT_TEST_AUTHORING"></span>Current Limitations of the Script Test Authoring
-
+## Current Limitations of the Script Test Authoring
 
 Out of the box, Windows supports JScript and VBScript only.
 
-## <span id="Script_Test_File_Format"></span><span id="script_test_file_format"></span><span id="SCRIPT_TEST_FILE_FORMAT"></span>Script Test File Format
-
+## Script Test File Format
 
 For script language tests, TAEF uses a slightly modified [Windows Script Components](https://docs.microsoft.com/previous-versions/07zhfkh8(v=vs.85)) file format. The following examples shows a test file that contains VBScript and JScript test classes.
 
@@ -145,8 +142,8 @@ You configure debug settings for your file by setting the attributes **error** a
 <?component error="true" debug="true"?>
 ```
 
--   Set **error** to *true* to display detailed error messages for syntax or run-time errors in the script component.
--   Set **debug** to *true* to enable debugging. If debugging is not enabled, you cannot launch the script debugger for a script (such as with the **debug** keyword within JScript code).
+- Set **error** to *true* to display detailed error messages for syntax or run-time errors in the script component.
+- Set **debug** to *true* to enable debugging. If debugging is not enabled, you cannot launch the script debugger for a script (such as with the **debug** keyword within JScript code).
 
 The **&lt;package&gt;** element encloses test class definitions in a **.wsc** file. After this element, you can insert module level metadata by adding **ModuleProperty** elements:
 
@@ -167,12 +164,3 @@ The **&lt;public&gt;** element encloses the test script module's test method dec
 The **&lt;script&gt;** element identifies the test script language and encloses the implementation of the test methods.
 
 The **&lt;!\[CDATA\[\]\]&gt;** section contains the actual implementation of the tests - the code written in the scripting language. In this section, you implement the test methods that you declared in the **&lt;public&gt; &lt;/public&gt;** section.
-
- 
-
- 
-
-
-
-
-

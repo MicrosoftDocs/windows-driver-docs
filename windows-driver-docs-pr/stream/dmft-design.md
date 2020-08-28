@@ -81,9 +81,9 @@ On initialization of the capture pipeline, if there is a Device MFT for the devi
 
 DeviceSource querys DTM to obtain the supported output mediatypes. DTM gets these from Device MFT’s output pins. DeviceSource exposes the Presentation Descriptor and Stream Descriptor based on this information to the capture pipeline.
 
-SourceReader uses the exposed mediatypes of the DeviceSource and sets the default mediatypes on each stream. In turn, DeviceSource sets the default mediatypes on the output streams of the DTM. DTM sets the mediatype on the output stream of the Device MFT using the [SetOutputStreamState](https://docs.microsoft.com/windows/desktop/api/mftransform/nf-mftransform-imfdevicetransform-setoutputstreamstate) method.
+SourceReader uses the exposed mediatypes of the DeviceSource and sets the default mediatypes on each stream. In turn, DeviceSource sets the default mediatypes on the output streams of the DTM. DTM sets the mediatype on the output stream of the Device MFT using the [SetOutputStreamState](https://docs.microsoft.com/windows/win32/api/mftransform/nf-mftransform-imfdevicetransform-setoutputstreamstate) method.
 
-When **SetOutputStreamState** is called, Device MFT posts a message to DTM to change its input stream’s mediatype based on the selected output mediatype and waits. In response to this message, DTM querys the preferred input mediatype for the input stream of the Device MFT using [GetPreferredInputStreamState](https://docs.microsoft.com/windows/desktop/api/mftransform/nf-mftransform-imfdevicetransform-getinputstreampreferredstate). This sets the mediatype on the corresponding output stream of Devproxy. If that succeeds, then DTM sets that same mediatype on to the Device MFT’s input stream using SetInputStreamState. After receiving this call, Device MFT completes **SetOutputStreamState**.
+When **SetOutputStreamState** is called, Device MFT posts a message to DTM to change its input stream’s mediatype based on the selected output mediatype and waits. In response to this message, DTM querys the preferred input mediatype for the input stream of the Device MFT using [GetPreferredInputStreamState](https://docs.microsoft.com/windows/win32/api/mftransform/nf-mftransform-imfdevicetransform-getinputstreampreferredstate). This sets the mediatype on the corresponding output stream of Devproxy. If that succeeds, then DTM sets that same mediatype on to the Device MFT’s input stream using SetInputStreamState. After receiving this call, Device MFT completes **SetOutputStreamState**.
 
 CaptureEngine selects individual streams by enabling specific streams on DeviceSource. This will be propagated to Device MFT by DTM through a **SetOutputStreamState** call. Device MFT places the specific output streams in the requested state. As mentioned above, Device MFT also notifies DTM about the necessary input streams that need to be enabled. This results in DTM propagating the stream selection to Devproxy. At the end of this process, all necessary streams, in Devproxy and Device MFT, are ready to stream.
 
@@ -169,7 +169,7 @@ In this model, instead of sending the photo trigger and photo sequence start and
 
 ### Warm start
 
-DeviceSource tries to warm start a specific output stream by transitioning the stream to pause state. In turn, DTM calls the [IMFDeviceTransform::SetOutputStreamState](https://docs.microsoft.com/windows/desktop/api/mftransform/nf-mftransform-imfdevicetransform-setoutputstreamstate) method on Device MFT to transition a specific output stream to pause state. This results in the corresponding input stream to be put into pause. This is achieved by Device MFT by requesting **METransformInputStreamStateChanged** to DTM and handling the [IMFDeviceTransform::SetInputStreamState](https://docs.microsoft.com/windows/desktop/api/mftransform/nf-mftransform-imfdevicetransform-setinputstreamstate) method.
+DeviceSource tries to warm start a specific output stream by transitioning the stream to pause state. In turn, DTM calls the [IMFDeviceTransform::SetOutputStreamState](https://docs.microsoft.com/windows/win32/api/mftransform/nf-mftransform-imfdevicetransform-setoutputstreamstate) method on Device MFT to transition a specific output stream to pause state. This results in the corresponding input stream to be put into pause. This is achieved by Device MFT by requesting **METransformInputStreamStateChanged** to DTM and handling the [IMFDeviceTransform::SetInputStreamState](https://docs.microsoft.com/windows/win32/api/mftransform/nf-mftransform-imfdevicetransform-setinputstreamstate) method.
 
 ### Variable photo sequence
 
@@ -177,7 +177,7 @@ With this architecture, photo sequence is implemented with the camera device dri
 
 ### Photo confirmation
 
-Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService](https://docs.microsoft.com/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) method.
+Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService](https://docs.microsoft.com/windows/win32/api/mfidl/nf-mfidl-imfgetservice-getservice) method.
 
 ### Metadata
 
@@ -201,7 +201,7 @@ Note: There is no requirement for the number of input pins to match the number o
 
 ## IMFDeviceTransform interface
 
-The [IMFDeviceTransform](https://docs.microsoft.com/windows/desktop/api/mftransform/nn-mftransform-imfdevicetransform) interface is defined to interact with Device MFT. This interface facilitates the management of *m* inputs and *n* output Device MFT. Along with other interfaces, Device MFT must implement this interface.
+The [IMFDeviceTransform](https://docs.microsoft.com/windows/win32/api/mftransform/nn-mftransform-imfdevicetransform) interface is defined to interact with Device MFT. This interface facilitates the management of *m* inputs and *n* output Device MFT. Along with other interfaces, Device MFT must implement this interface.
 
 ### General event propagation
 
@@ -213,7 +213,7 @@ When an event occurs in Devproxy (or inside device) we need to propagate that to
 
 Device MFTs must support the following interfaces:
 
-- [IMFDeviceTransform](https://docs.microsoft.com/windows/desktop/api/mftransform/nn-mftransform-imfdevicetransform)
+- [IMFDeviceTransform](https://docs.microsoft.com/windows/win32/api/mftransform/nn-mftransform-imfdevicetransform)
 
 - [IKsControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nn-ks-ikscontrol)
 
@@ -227,11 +227,11 @@ Device MFTs must support the following interfaces:
 
         - If Device MFT handles non-KSEVENT_TYPE_ONESHOT events, then it should duplicate the handle when it receives **KSEVENT_TYPE_ENABLE** and should call **CloseHandle** on the duplicated handles when the ks events are disabled by calling KsEvent function with all parameters set to zero.
 
-- [IMFRealtimeClientEx](https://docs.microsoft.com/windows/desktop/api/mfidl/nn-mfidl-imfrealtimeclientex)
+- [IMFRealtimeClientEx](https://docs.microsoft.com/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex)
 
-- [IMFMediaEventGenerator](https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
+- [IMFMediaEventGenerator](https://docs.microsoft.com/windows/win32/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
 
-- [IMFShutdown](https://docs.microsoft.com/windows/desktop/api/mfidl/nn-mfidl-imfshutdown)
+- [IMFShutdown](https://docs.microsoft.com/windows/win32/api/mfidl/nn-mfidl-imfshutdown)
 
 ### Notification Requirements
 
@@ -245,7 +245,7 @@ Device MFTs must use the following messages to inform DTM about the availability
 
 ### Thread Requirements
 
-Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx](https://docs.microsoft.com/windows/desktop/api/mfidl/nn-mfidl-imfrealtimeclientex) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
+Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx](https://docs.microsoft.com/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
 
 ### InputStream Requirements
 
