@@ -17,8 +17,8 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 ## <span id="Setting_UMDF_Verifier_properties_for_driver_projects"></span><span id="setting_umdf_verifier_properties_for_driver_projects"></span><span id="SETTING_UMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting UMDF Verifier properties for driver projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **UMDF Verifier**.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **UMDF Verifier**.
 3.  Select the **Deploy UMDF Verifier** option. When this option is enabled (**Yes**), you can select the UMDF Verifier options to use on the test computer to verify a UMDF driver.
 
 <table>

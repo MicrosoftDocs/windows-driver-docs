@@ -23,11 +23,11 @@ Instructions
 
 After you have configured and provisioned a test computer, you can configure the driver package project so that it is automatically deployed and installed on the test computer.
 
-1.  Open the property pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
+1.  Open the property pages for your driver project. select and hold (or right-click) the driver project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver, select **Configuration Properties**, select **Driver Install**, and then select **Deployment**.
 3.  Select the **Enable deployment** option. For more information, see [Deployment Properties for Driver Projects](deployment-properties-for-driver-projects.md).
 4.  Select the test computer you have configured as the **Remote Computer**.
-5.  Under **Driver Installation Options**, click **Install and Verify**, and then select the **Default Driver Installation Task**.
+5.  Under **Driver Installation Options**, select **Install and Verify**, and then select the **Default Driver Installation Task**.
 
 ## <span id="related_topics"></span>Related topics
 

@@ -13,8 +13,8 @@ Sets the properties for the [Stampinf](https://docs.microsoft.com/windows-hardwa
 ## <span id="Setting_Stampinf_properties_for_driver_projects"></span><span id="setting_stampinf_properties_for_driver_projects"></span><span id="SETTING_STAMPINF_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting Stampinf properties for driver projects
 
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **Stampinf**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **Stampinf**.
 3.  Set the properties for the project.
 
 If you want to add this property page to your project, so that you can run the Stampinf during the build process, see the [WDK and Visual Studio build environment](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdk-and-visual-studio-build-environment) and the [Stampinf task](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf).

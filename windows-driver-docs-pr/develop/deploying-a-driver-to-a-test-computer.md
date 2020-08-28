@@ -24,13 +24,13 @@ Taking advantage of the Visual Studio development environment, the WDK provides 
 
 From the property pages for your driver project, you have additional control over how you want your driver deployed for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration.
 
-1.  Open the property pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties**, select **Driver Install**, and then select **Deployment**.
 3.  Select a test computer that you have configured, or select the name of a computer that you want to configure for testing. See [Provision a computer for driver deployment and testing (WDK 10)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
     When you enable deployment for your driver package project, the driver is automatically deployed to the test computer you have selected when you build your solution. You can use the **Deployment** property page to configure options for driver installation and deployment. See [Deployment Properties for Driver Package Projects](deployment-properties-for-driver-projects.md).
 
-4.  When you enable deployment on a test computer, you can also automatically enable and configure [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier), KMDF Verifier, or UMDF Verifier on the test computer to enhance the effectiveness of testing. To set these options for the driver package project, click **Configuration Properties**, click **Driver Install**, and then click the following property pages.
+4.  When you enable deployment on a test computer, you can also automatically enable and configure [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier), KMDF Verifier, or UMDF Verifier on the test computer to enhance the effectiveness of testing. To set these options for the driver package project, select **Configuration Properties**, select **Driver Install**, and then select the following property pages.
     -   [Driver Verifier Properties for Driver Package Projects](driver-verifier-properties-for--driver-projects.md)
     -   [KMDF Verifier Properties for Driver Package Projects](kmdf-verifier-properties-for-driver-package-projects.md)
     -   [UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)
@@ -41,7 +41,7 @@ From the property pages for your driver project, you have additional control ove
 1.  Before you deploy your driver, make sure that you can build your driver solution. A driver solution must include the driver and driver package so that the driver can be installed on the test computer. For more information, see [Creating a Driver Package](creating-a-driver-package.md) and [Building a Driver](building-a-driver.md).
 2.  Before you deploy the driver to the test computer, you also need to sign the driver package. See [Signing a Driver During Development and Testing](signing-a-driver-during-development-and-testing.md).
 3.  Select the test computer that you have configured.
-4.  To deploy the driver, click **Build Solution** or **Deploy Solution** from the **Build** menu, or press **F5** to build, deploy, and start debugging.
+4.  To deploy the driver, select **Build Solution** or **Deploy Solution** from the **Build** menu, or press **F5** to build, deploy, and start debugging.
 5.  On the test computer, you might see a dialog box asking you to confirm that changes should be made.  In this case, deployment is paused until you confirm.
 
 When you deploy a driver, the driver files are copied to the %Systemdrive%\\drivertest\\drivers folder on the test computer. If something goes wrong during deployment, you can check to see if the files are copied to the test computer. Verify that the .inf, .cat, test cert, and .sys files, and any other necessary files, are present %systemdrive%\\drivertest\\drivers folder.
@@ -65,7 +65,7 @@ You only need to set this value once, and it persists for future deployments.
 <span id="Can_t_find_the_deployment_properties_for_the_driver_project"></span><span id="can_t_find_the_deployment_properties_for_the_driver_project"></span><span id="CAN_T_FIND_THE_DEPLOYMENT_PROPERTIES_FOR_THE_DRIVER_PROJECT"></span>**Can't find the deployment properties for the driver project**  
 The deployment properties are only available if you have a driver package. If your driver solution does not have a driver package project, you need to add one. The driver package contains components, such as the INF file that are needed for installation. For more information, see [Driver Packages](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) and [Creating a Driver Package](creating-a-driver-package.md).
 
-Afer you have added the driver package, you can right-click the driver package project in Solution Explorer and select **Properties**. In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
+Afer you have added the driver package, you can select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**. In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **Deployment**.
 
 <span id="Problems_selecting__configuring_or_locating_the_target_computer"></span><span id="problems_selecting__configuring_or_locating_the_target_computer"></span><span id="PROBLEMS_SELECTING__CONFIGURING_OR_LOCATING_THE_TARGET_COMPUTER"></span>**Problems selecting, configuring or locating the target computer**  
 For instruction on how to set up the target computer, using Windows Driver Kit (WDK) 8.1 and Windows Driver Kit (WDK) 8, see [Provision a computer for driver deployment and testing (WDK 10)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1). If you have problems with provisioning the target computer, see [Troubleshooting Configuration of Driver Deployment, Testing and Debugging](troubleshooting-configuration-of-driver-deployment--testing-and-debugging.md).

@@ -18,7 +18,7 @@ To begin, first determine which driver model is appropriate for your software dr
 1. In Visual Studio, on the **File** menu, choose **New | Project**.
 2. In the New Project dialog box, in the left pane, locate and select **WDF**.
 3. In the middle pane, select **Kernel Mode Driver (KMDF)**.
-4. Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-kmdf-driver-based-on-a-template).
+4. Fill in the **Name** and **Location** boxes, and select **OK**. For more details, see [Writing a KMDF Driver Based on a Template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-kmdf-driver-based-on-a-template).
     > [!NOTE]
     > When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 5. At this point, you have a driver project that implements the general code required by most KMDF drivers. Now you can supply the code that is specific to your software driver.
@@ -30,9 +30,9 @@ To begin, first determine which driver model is appropriate for your software dr
 
     > [!NOTE]
     > You are not going to write a WDM driver, but you need the **Empty WDM Driver** template.
-3. Fill in the **Name** and **Location** boxes, and click **OK**.
-4. At this point, you have an empty WDM driver project. In the Solution Explorer window, right-click your driver project, and choose **Add | New Item**.
-5. In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
+3. Fill in the **Name** and **Location** boxes, and select **OK**.
+4. At this point, you have an empty WDM driver project. In the Solution Explorer window, select and hold (or right-click) your driver project, and choose **Add | New Item**.
+5. In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and select **OK**.
 
     > [!NOTE]
     > If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
@@ -45,9 +45,9 @@ It is extremely unlikely that you'll want to use WDM for a software driver. But 
 
 1. In Visual Studio, on the **File** menu, choose **New | Project**.
 2. In Visual Studio, in the New Project dialog box, under **Windows Driver**, select **WDM.**
-3. Fill in the **Name** and **Location** boxes, and click **OK**.
-4. At this point, you have an empty WDM driver project. In the Solution Explorer window, right-click your driver project, and choose **Add | New Item**.
-5. In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
+3. Fill in the **Name** and **Location** boxes, and select **OK**.
+4. At this point, you have an empty WDM driver project. In the Solution Explorer window, select and hold (or right-click) your driver project, and choose **Add | New Item**.
+5. In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and select **OK**.
 
     > [!NOTE]
     > If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
