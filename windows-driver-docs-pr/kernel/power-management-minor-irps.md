@@ -22,12 +22,7 @@ All power IRPs have the major code [**IRP\_MJ\_POWER**](irp-mj-power.md) and one
 
 [**IRP\_MN\_WAIT\_WAKE**](irp-mn-wait-wake.md)
 
-This section provides reference information for the individual IRPs in alphabetical order. For more information about when the IRPs are sent and how drivers should handle them, see [Power Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-power-management). The Power Management section also includes a general introduction to power management and terminology.
+This section provides reference information for the individual IRPs in alphabetical order. For more information about when the IRPs are sent and how drivers should handle them, see [Power Management](./introduction-to-power-management.md). The Power Management section also includes a general introduction to power management and terminology.
 
  
-
- 
-
-
-
 

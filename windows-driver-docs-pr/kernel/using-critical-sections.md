@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Any driver that contains an [*InterruptService*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine will most likely require one or more critical sections to synchronize access to hardware resources or driver data among the ISR and other routines.
+Any driver that contains an [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine will most likely require one or more critical sections to synchronize access to hardware resources or driver data among the ISR and other routines.
 
 This section includes the following topics:
 
@@ -22,9 +22,4 @@ This section includes the following topics:
 [Writing SynchCritSection Routines](writing-synchcritsection-routines.md)
 
  
-
- 
-
-
-
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 This section describes kernel-mode Windows Management Instrumentation (WMI) extensions to WDM. When you add these extensions to your kernel-mode driver, your driver becomes a WMI provider. A WMI provider makes measurement and instrumentation data available to WMI consumers, such as user-mode applications.
 
-For more information about the user-mode WMI API, refer to [Windows Management Instrumentation](https://docs.microsoft.com/windows/desktop/WmiSdk/wmi-start-page) in the Windows SDK.
+For more information about the user-mode WMI API, refer to [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page) in the Windows SDK.
 
 If you are implementing a KMDF-based driver, refer to [Supporting WMI in Framework-Based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-wmi-in-kmdf-drivers).
 
@@ -48,9 +48,4 @@ This section includes the following information about kernel-mode WMI:
 [Testing and Troubleshooting WMI Driver Support](testing-and-troubleshooting-wmi-driver-support.md)
 
  
-
- 
-
-
-
 

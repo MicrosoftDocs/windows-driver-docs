@@ -25,14 +25,9 @@ This section is divided into three parts:
 
     A *device driver* is a set of software code that must integrate into the operating system. To complete this integration, you must write a set of handler routines in your driver that process calls from the operating system. These routines can be simple function calls, but many of them implement the processing of *I/O request packets* (IRPs), which facilitate communication between drivers and the operating system.
 
-**Note**  WDM drivers can also use the Windows Driver Frameworks (WDF) library to make some parts of a device driver easier to write. Specifically, kernel-mode drivers can use the Kernel-Mode Driver Framework (KMDF), which is part of WDF. For more information about KMDF for kernel-mode drivers, see [Kernel-Mode Driver Framework Overview](https://docs.microsoft.com/windows-hardware/drivers/wdf/what-s-new-for-wdf-drivers). Note that KMDF does not replace WDM. You must still understand many parts of WDM to write a KMDF driver.
+**Note**  WDM drivers can also use the Windows Driver Frameworks (WDF) library to make some parts of a device driver easier to write. Specifically, kernel-mode drivers can use the Kernel-Mode Driver Framework (KMDF), which is part of WDF. For more information about KMDF for kernel-mode drivers, see [Kernel-Mode Driver Framework Overview](../wdf/index.md). Note that KMDF does not replace WDM. You must still understand many parts of WDM to write a KMDF driver.
 
  
 
  
-
- 
-
-
-
 

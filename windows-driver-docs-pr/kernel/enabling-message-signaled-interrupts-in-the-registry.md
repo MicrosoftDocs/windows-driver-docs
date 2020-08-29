@@ -16,7 +16,7 @@ The **MSISupported** entry of **Interrupt Management\\MessageSignaledInterruptPr
 
 You can also use the registry to specify the maximum number of MSIs to allocate for their device. The **MessageNumberLimit** entry of **Interrupt Management\\MessageSignaledInterruptProperties** is a REG\_DWORD value that specifies the maximum number of MSIs to allocate. For PCI 2.2, **MessageNumberLimit** must be 1, 2, 4, 8, or 16. For PCI 3.0, **MessageNumberLimit** can be any number up to 2,048.
 
-Use an [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) in your driver's INF file to set registry keys under the device's hardware key. For more information, see [**INF DDInstall.HW Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section).
+Use an [**INF AddReg Directive**](../install/inf-addreg-directive.md) in your driver's INF file to set registry keys under the device's hardware key. For more information, see [**INF DDInstall.HW Section**](../install/inf-ddinstall-hw-section.md).
 
 The following code example shows how to set the **MSISupported** entry under **Interrupt Management\\MessageSignaledInterruptProperties** for the device. Note that you must first create the **Interrupt Management** and **Interrupt Management\\MessageSignaledInterruptProperties** keys before you can set the **MSISupported** entry.
 
@@ -31,9 +31,4 @@ HKR,Interrupt Management\MessageSignaledInterruptProperties,MSISupported,0x00010
 ```
 
  
-
- 
-
-
-
 

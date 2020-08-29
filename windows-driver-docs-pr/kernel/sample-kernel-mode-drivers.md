@@ -71,7 +71,7 @@ Provides sample code for a set of drivers that conform to the [Windows Driver Mo
 
 [**tracedrv**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver)  
 
-Shows how to use [WPP software tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
+Shows how to use [WPP software tracing](../devtest/wpp-software-tracing.md).
 
 [**UMDF Driver Skeleton Sample**](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/umdfSkeleton)
 
