@@ -24,13 +24,8 @@ This section describes how the Native 802.11 IHV UI Extensions DLL can extend th
 
 [Extending the UI for Standard 802.1X Security Methods](extending-the-ui-for-standard-802-1x-security-methods.md)
 
-For more information about the Network Configuration UI and other Native 802.11 components, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
+For more information about the Network Configuration UI and other Native 802.11 components, see [Native 802.11 Software Architecture](/previous-versions/windows/hardware/wireless/native-802-11-software-architecture).
 
  
 
  
-
-
-
-
-

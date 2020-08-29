@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # MB Adapter General Attribute Requirements
 
 
-The following table describes the values that miniport drivers should set the member variables of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to. MB miniport drivers must use these values when they call [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from their [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, during miniport driver initialization.
+The following table describes the values that miniport drivers should set the member variables of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to. MB miniport drivers must use these values when they call [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from their [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, during miniport driver initialization.
 
 <table>
 <colgroup>
@@ -47,10 +47,4 @@ The following table describes the values that miniport drivers should set the me
  
 
  
-
- 
-
-
-
-
 

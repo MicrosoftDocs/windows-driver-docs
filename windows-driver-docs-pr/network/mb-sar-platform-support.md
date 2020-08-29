@@ -20,7 +20,7 @@ Starting in Windows 10, version 1703, Windows supports passing through SAR confi
 This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported.
 
 > [!NOTE]
-> This topic defines the interface for IHV partners to implement SAR platform support in their modem device drivers. If you are looking for info about customizing the SAR mapping table for a device, see [Customize a Specific Absorption Rate (SAR) mapping table](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-sar-mapping-table).
+> This topic defines the interface for IHV partners to implement SAR platform support in their modem device drivers. If you are looking for info about customizing the SAR mapping table for a device, see [Customize a Specific Absorption Rate (SAR) mapping table](/windows-hardware/customize/desktop/customize-sar-mapping-table).
 
 ## MB Interface Update for SAR Platform Support
 
@@ -226,5 +226,3 @@ For more information, see the MBIM_MS_TRANSMISSION_STATUS_INFO table.
 | MBIM_STATUS_NO_DEVICE_SUPPORT | Device does not support this command. |
 | MBIM_STATUS_INVALID_PARAMETERS | The operation failed because of invalid parameters. |
 | MBIM_STATUS_OPERATION_NOT_ALLOWED | The operation failed because the operation is not allowed. |
-
-

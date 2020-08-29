@@ -14,7 +14,7 @@ Miniport drivers use the NDIS_STATUS_WWAN_LTE_ATTACH_STATUS notification to info
 
 Unsolicited events are sent if a context for LTE attach is activated, which could be when a SIM is inserted for example. In this case, the miniport driver should send this notification to the host OS.
 
-This status notification uses the [**NDIS_WWAN_LTE_ATTACH_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status) structure.
+This status notification uses the [**NDIS_WWAN_LTE_ATTACH_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status) structure.
 
 ## Requirements
 
@@ -27,4 +27,4 @@ This status notification uses the [**NDIS_WWAN_LTE_ATTACH_STATUS**](https://docs
 
 [OID_WWAN_LTE_ATTACH_STATUS](oid-wwan-lte-attach-status.md)
 
-[**NDIS_WWAN_LTE_ATTACH_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status)
+[**NDIS_WWAN_LTE_ATTACH_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status)

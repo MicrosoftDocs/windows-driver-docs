@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS notification to 
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers) structure.
+This notification uses the [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers) structure.
 
 Remarks
 -------
@@ -45,12 +45,7 @@ Requirements
 
 [OID\_WWAN\_VISIBLE\_PROVIDERS](oid-wwan-visible-providers.md)
 
-[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)
+[**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers)
 
  
-
- 
-
-
-
 

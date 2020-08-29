@@ -22,14 +22,14 @@ OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS is sent down to the device from the OS t
 
 This command is sent in some cases such as when there is a need to turn off the offloads due to a performance issue.
 
-The lower edge driver (LE) must use the contents of [**WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-tcp-set-offload-parameters) to update the currently reported TCP offload capabilities. After the update, the LE must report the current task offload capabilities with [NDIS\_STATUS\_WDI\_INDICATION\_TASK\_OFFLOAD\_CURRENT\_CONFIG](ndis-status-wdi-indication-task-offload-current-config.md). This status indication ensures that all of the overlying protocol drivers are updated with the new capabilities information.
+The lower edge driver (LE) must use the contents of [**WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS**](./wdi-tlv-tcp-set-offload-parameters.md) to update the currently reported TCP offload capabilities. After the update, the LE must report the current task offload capabilities with [NDIS\_STATUS\_WDI\_INDICATION\_TASK\_OFFLOAD\_CURRENT\_CONFIG](ndis-status-wdi-indication-task-offload-current-config.md). This status indication ensures that all of the overlying protocol drivers are updated with the new capabilities information.
 
 ## Set property parameters
 
 
 | TLV                                                                                        | Multiple TLV instances allowed | Optional | Description                           |
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------|
-| [**WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-tcp-set-offload-parameters) |                                |          | The TCP offload parameters to be set. |
+| [**WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS**](./wdi-tlv-tcp-set-offload-parameters.md) |                                |          | The TCP offload parameters to be set. |
 
  
 
@@ -63,9 +63,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

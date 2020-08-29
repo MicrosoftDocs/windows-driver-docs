@@ -20,7 +20,7 @@ The interfaces are provided by two Microsoft Interface Definition Language (MIDL
 - cellularapi_oem.idl
 - rilapitypes.idl
 
-Use the MIDL compiler to generate header files. For more information, see [Microsoft Interface Definition Language](https://docs.microsoft.com/windows/desktop/Midl/midl-start-page) on the Windows Dev Center.
+Use the MIDL compiler to generate header files. For more information, see [Microsoft Interface Definition Language](/windows/desktop/Midl/midl-start-page) on the Windows Dev Center.
 
 You must declare appropriate capabilities in the package that contains the cellular application. For more information, see [Cellular COM API capabilities](cellular-com-api-capabilities.md).
 
@@ -32,5 +32,4 @@ You must declare appropriate capabilities in the package that contains the cellu
 
 ## Related topics
 
-[Cellular COM API reference](https://docs.microsoft.com/previous-versions/windows/hardware/cellular/dn946508(v=vs.85))
-
+[Cellular COM API reference](/previous-versions/windows/hardware/cellular/dn946508(v=vs.85))

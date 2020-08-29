@@ -25,10 +25,10 @@ OID\_WDI\_SET\_FAST\_BSS\_TRANSITION\_PARAMETERS is sent in response to [NDIS\_S
 
 | TLV                                                  | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                                                                                                    |
 |------------------------------------------------------|--------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-status)      |                                |          | If this status is success, the rest of the fields (RSNIE, MDE, FTE) are present. This indicates that there are no problems or errors with the Authentication response (for example, MIC check failure) and the IHV can proceed with the reassociation request. |
-| [**WDI\_TLV\_FT\_RSNIE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ft-rsnie) |                                | X        | The RSN IE byte blob.                                                                                                                                                                                                                                          |
-| [**WDI\_TLV\_FT\_MDE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ft-mde)     |                                | X        | The MDE byte blob.                                                                                                                                                                                                                                             |
-| [**WDI\_TLV\_FT\_FTE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ft-fte)     |                                | X        | The FTE byte blob.                                                                                                                                                                                                                                             |
+| [**WDI\_TLV\_STATUS**](./wdi-tlv-status.md)      |                                |          | If this status is success, the rest of the fields (RSNIE, MDE, FTE) are present. This indicates that there are no problems or errors with the Authentication response (for example, MIC check failure) and the IHV can proceed with the reassociation request. |
+| [**WDI\_TLV\_FT\_RSNIE**](./wdi-tlv-ft-rsnie.md) |                                | X        | The RSN IE byte blob.                                                                                                                                                                                                                                          |
+| [**WDI\_TLV\_FT\_MDE**](./wdi-tlv-ft-mde.md)     |                                | X        | The MDE byte blob.                                                                                                                                                                                                                                             |
+| [**WDI\_TLV\_FT\_FTE**](./wdi-tlv-ft-fte.md)     |                                | X        | The FTE byte blob.                                                                                                                                                                                                                                             |
 
  
 
@@ -62,9 +62,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

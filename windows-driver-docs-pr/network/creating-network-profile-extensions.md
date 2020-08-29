@@ -16,11 +16,11 @@ ms.localizationpriority: medium
 
  
 
-After the underlying wireless LAN (WLAN) adapter completes a scan operation, it returns a list of the detected basic service set (BSS) network to the operating system. The operating system calls the [*Dot11ExtIhvCreateDiscoveryProfiles*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_create_discovery_profiles) function for every BSS network for which the user has not created a network profile. When this function is called, the IHV Extensions DLL can return temporary connectivity and security profile fragments that could be used to connect to the BSS network.
+After the underlying wireless LAN (WLAN) adapter completes a scan operation, it returns a list of the detected basic service set (BSS) network to the operating system. The operating system calls the [*Dot11ExtIhvCreateDiscoveryProfiles*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_create_discovery_profiles) function for every BSS network for which the user has not created a network profile. When this function is called, the IHV Extensions DLL can return temporary connectivity and security profile fragments that could be used to connect to the BSS network.
 
-For more information about the scan operation, see [Native 802.11 Scan Operations](native-802-11-scan-operations.md).
+For more information about the scan operation, see [Native 802.11 Scan Operations](/previous-versions/windows/hardware/wireless/native-802-11-scan-operations).
 
-When [*Dot11ExtIhvCreateDiscoveryProfiles*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_create_discovery_profiles) is called, the IHV Extensions DLL must follow these guidelines.
+When [*Dot11ExtIhvCreateDiscoveryProfiles*](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_create_discovery_profiles) is called, the IHV Extensions DLL must follow these guidelines.
 
 -   The operating system passes to the *pConnectableBssid* parameter a list of IEEE 802.11 Beacon and Probe Response frames received during the last scan operation. This list is formatted as a DOT11\_BSS\_ENTRY structure. Each Beacon or Probe response within the list was sent by an access point (AP) with the same service set identifier (SSID).
 
@@ -37,8 +37,3 @@ When [*Dot11ExtIhvCreateDiscoveryProfiles*](https://docs.microsoft.com/windows-h
  
 
  
-
-
-
-
-

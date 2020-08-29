@@ -40,7 +40,7 @@ For more information about IPsecOV1, see [IPsec Offload Version 1](ipsec-offload
 
 The TCP/IP transport can offload the calculation and validation of encrypted checksums for authentication headers (AH), encapsulating security payloads (ESP), or both. The TCP/IP transport can also offload the encryption and decryption of ESP payloads and the encryption and decryption of user datagram protocol (UDP)-encapsulated ESP data packets. IPsecOV2 is supported in NDIS 6.1 and later versions.
 
-For more information about IPsecOV2, see [IPsec Offload Version 2](ipsec-offload-version-2.md).
+For more information about IPsecOV2, see [IPsec Offload Version 2](./introduction-to-ipsec-offload-version-2.md).
 
 ### Large send offload version 1 (LSOV1)
 
@@ -82,10 +82,4 @@ This section includes:
 -   [UDP Segmentation Offload (USO)](udp-segmentation-offload-uso-.md)
 
  
-
- 
-
-
-
-
 

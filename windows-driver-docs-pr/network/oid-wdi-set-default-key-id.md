@@ -25,7 +25,7 @@ OID\_WDI\_SET\_DEFAULT\_KEY\_ID sets the default key ID for packet transmission 
 
 | TLV                                                                                             | Multiple TLV instances allowed | Optional | Description                                             |
 |-------------------------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------------------|
-| [**WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-default-tx-key-id-parameters) |                                |          | The default key ID for packet transmission on the port. |
+| [**WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS**](./wdi-tlv-default-tx-key-id-parameters.md) |                                |          | The default key ID for packet transmission on the port. |
 
  
 
@@ -59,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 
