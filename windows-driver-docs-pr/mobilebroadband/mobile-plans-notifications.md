@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This topic describes toast notifications in Mobile Plans that can be customized by the mobile operator with text and images to communicate with end users. Mobile Plans notifications are based on the [toast notifications framework in Windows 10](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts).
+This topic describes toast notifications in Mobile Plans that can be customized by the mobile operator with text and images to communicate with end users. Mobile Plans notifications are based on the [toast notifications framework in Windows 10](/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts).
 
 > [!Note]
 > Please reach out your Microsoft contact before planning to use this feature.

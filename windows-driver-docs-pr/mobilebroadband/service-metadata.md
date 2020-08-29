@@ -47,7 +47,7 @@ The following summary describes some of the most interesting fields that are con
   The unique ID for the mobile broadband service provider. This GUID is also used to identify the operator when using Account Provisioning Metadata. If you update the device metadata package, this GUID must remain the same. The service number corresponds to the [ServiceNumber](servicenumber.md) element in the service metadata package schema.
 
 - **Operator logo**
-  A custom logo that appears in Windows Connection Manager next to your network entry. (The logo is hidden when the user is on a roaming network.) The operator logo corresponds to the [ServiceIconFile](serviceiconfile.md) element in the service metadata package schema. For more information about the logo requirements, see [Service Icon Requirements](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).  
+  A custom logo that appears in Windows Connection Manager next to your network entry. (The logo is hidden when the user is on a roaming network.) The operator logo corresponds to the [ServiceIconFile](serviceiconfile.md) element in the service metadata package schema. For more information about the logo requirements, see [Service Icon Requirements](../dashboard/index.yml).  
   > [!IMPORTANT]
   > In Windows 10, version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md).
 
