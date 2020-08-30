@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Getting Error Source Information for All Error Sources
 
 
-A user-mode application can get information about all of the [error sources](hardware-errors-and-error-sources.md) in the system by calling the [**WHEAErrorSourceMethods::GetAllErrorSourcesRtn**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method. This method returns an array of [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structures that describes all of the error sources that are supported by the hardware platform.
+A user-mode application can get information about all of the [error sources](hardware-errors-and-error-sources.md) in the system by calling the [**WHEAErrorSourceMethods::GetAllErrorSourcesRtn**](/windows-hardware/drivers/ddi/_whea/) method. This method returns an array of [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structures that describes all of the error sources that are supported by the hardware platform.
 
 The following code example shows how to get the error source information for all of the error sources in the system.
 
@@ -130,9 +130,4 @@ pOutParameters->Release();
 ```
 
  
-
- 
-
-
-
 
