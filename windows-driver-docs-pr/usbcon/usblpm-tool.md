@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The USBLPM tool monitors the U0/U1/U2/U3 power states of USB 3.0 ports. It can also be used to verify that transitions between U0/U1/U2 occur correctly. In addition, the tool can enable or disable U1 and/or U2 states on all devices in the system.
 
-The tool is included in the [MUTT Software Package](https://msdn.microsoft.com/windows/hardware/jj590752).
+The tool is included in the [MUTT Software Package](./index.md).
 
 ## USBLPM
 
@@ -78,7 +78,4 @@ After you have finished testing with USBLPM, enable selective suspend for the hu
 
 ## Related topics
 [USB test tools](usb-test-tools.md)  
-[Tools in the MUTT software package](mutt-software-package.md)  
-
-
-
+[Tools in the MUTT software package](mutt-software-package.md)

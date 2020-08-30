@@ -40,8 +40,5 @@ Consider the following configurations for USB devices under test:
     ![device is downstream from mutt pack](images/fig14-topology-downstream-muttpack.png)
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[USB](../index.yml)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)
