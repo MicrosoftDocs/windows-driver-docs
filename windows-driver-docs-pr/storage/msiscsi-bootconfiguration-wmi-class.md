@@ -64,13 +64,7 @@ class MSiSCSI_BootConfiguration {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_BootConfiguration**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_bootconfiguration) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_BootConfiguration**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_bootconfiguration) data structure.
 
  
-
- 
-
-
-
-
 

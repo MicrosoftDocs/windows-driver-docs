@@ -53,13 +53,7 @@ class ISCSI_IP_Address {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_IP\_Address**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_ip_address) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_IP\_Address**](/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_ip_address) data structure.
 
  
-
- 
-
-
-
-
 

@@ -59,15 +59,9 @@ class MSFC_HBAPortAttributesResults {
 
 When compiled this class definition produces the following data structure:
 
-[**MSFC\_HBAPortAttributesResults**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults)
+[**MSFC\_HBAPortAttributesResults**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 
