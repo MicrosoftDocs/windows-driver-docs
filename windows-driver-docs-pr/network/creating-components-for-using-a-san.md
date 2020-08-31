@@ -26,13 +26,7 @@ For information about implementing a SAN service provider DLL and its proxy driv
 
 You need an NDIS miniport driver to transfer data that must flow over networks other than your specific SAN such as Ethernet, ATM, or another SAN. TCP/IP uses the NDIS miniport driver to send data both to the SAN NIC and over such networks.
 
-For information about implementing miniport and transport drivers, see *Miniport Drivers* and [TDI Transports and Their Clients](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565587(v=vs.85)).
+For information about implementing miniport and transport drivers, see *Miniport Drivers* and [TDI Transports and Their Clients](/previous-versions/windows/hardware/network/ff565587(v=vs.85)).
 
  
-
- 
-
-
-
-
 

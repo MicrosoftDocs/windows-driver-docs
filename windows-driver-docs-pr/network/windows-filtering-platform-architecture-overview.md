@@ -24,13 +24,7 @@ The [filter engine](filter-engine.md) is the core of the Windows Filtering Platf
 
 [Callout drivers](callout-driver.md) provide additional filtering functionality by registering one or more [callouts](callout.md) with the filter engine. [Filters](filter.md) in the filter engine can specify a callout for the filter's action. In this case, the filter engine passes the network data to the specified callout for additional processing.
 
-The Windows Filtering Platform includes several built-in callouts. See [Built-in Callout Identifiers](https://docs.microsoft.com/windows-hardware/drivers/network/built-in-callout-identifiers) for a description of each of these callouts.
+The Windows Filtering Platform includes several built-in callouts. See [Built-in Callout Identifiers](./built-in-callout-identifiers.md) for a description of each of these callouts.
 
  
-
- 
-
-
-
-
 

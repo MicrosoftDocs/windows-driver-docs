@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 The host stack queries the OID_TCP6_OFFLOAD_STATS OID to obtain statistics on TCP segments that an offload target has processed on offloaded TCP connections that convey IPv6 datagrams. The host stack sets this OID to cause an offload target to reset the counters for such statistics to zero.
 
-In response to a query of OID_TCP6_OFFLOAD_STATS, an offload target supplies a filled-in [TCP_OFFLOAD_STATS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_tcp_offload_stats) structure.
+In response to a query of OID_TCP6_OFFLOAD_STATS, an offload target supplies a filled-in [TCP_OFFLOAD_STATS](/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_tcp_offload_stats) structure.
 
 In response to a set of OID_TCP6_OFFLOAD_STATS, an offload target should reset to zero all of its TCP statistics counters for offloaded TCP connections that convey IPv6 datagrams.
 
@@ -20,4 +20,3 @@ In response to a set of OID_TCP6_OFFLOAD_STATS, an offload target should reset t
 
 **Version**: Windows Vista and later
 **Header**: Ntddndis.h (include Ndis.h)
-

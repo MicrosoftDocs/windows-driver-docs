@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE notification is a one-way notification from the MBB driver to the host. The MBB driver sends up this notification when the modem has finished all operations required before shutdown.
 
-This notification uses the [**NDIS\_WWAN\_PRESHUTDOWN\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preshutdown_state) structure.
+This notification uses the [**NDIS\_WWAN\_PRESHUTDOWN\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preshutdown_state) structure.
 
 Requirements
 ------------
@@ -36,9 +36,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

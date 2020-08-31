@@ -64,12 +64,7 @@ Requirements
 
 [**HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS**](hs-plugin-query-cellular-exception-hosts.md)
 
-[Microsoft Interface Definition Language](https://docs.microsoft.com/windows/desktop/Midl/midl-start-page)
+[Microsoft Interface Definition Language](/windows/desktop/Midl/midl-start-page)
 
  
-
- 
-
-
-
 

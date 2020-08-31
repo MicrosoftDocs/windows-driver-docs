@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 
 Before a Winsock Kernel (WSK) application can register with the [Network Module Registrar (NMR)](network-module-registrar2.md), the application must first initialize the following structures.
 
--   [**NPI\_MODULEID**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff568813(v=vs.85))
+-   [**NPI\_MODULEID**](/previous-versions/windows/hardware/drivers/ff568813(v=vs.85))
 
--   [**NPI\_CLIENT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_client_characteristics)
+-   [**NPI\_CLIENT\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_client_characteristics)
 
--   [**NPI\_REGISTRATION\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) contained within the [**NPI\_CLIENT\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_client_characteristics) structure
+-   [**NPI\_REGISTRATION\_INSTANCE**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance) contained within the [**NPI\_CLIENT\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_client_characteristics) structure
 
 All of these data structures must remain valid and resident in memory as long as the WSK application is registered with the NMR.
 
@@ -74,7 +74,7 @@ const NPI_CLIENT_CHARACTERISTICS Characteristics =
 };
 ```
 
-A WSK application calls the [**NmrRegisterClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient) function to register the application with the NMR.
+A WSK application calls the [**NmrRegisterClient**](/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient) function to register the application with the NMR.
 
 For example:
 
@@ -118,10 +118,4 @@ NTSTATUS
 A WSK application is not required to call **NmrRegisterClient** from within its **DriverEntry** function. For example, if a WSK application is a subcomponent of a complex driver, the registration of the application might occur only when the WSK application subcomponent is activated.
 
  
-
- 
-
-
-
-
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Native 802.11 Wireless LAN Drivers
 
-To access the design guide and reference topics for Native 802.11 Wireless LAN drivers, see [Native 802.11 Wireless LAN](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/native-802-11-wireless-lan). 
+To access the design guide and reference topics for Native 802.11 Wireless LAN drivers, see [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/native-802-11-wireless-lan). 
 
 The Native 802.11 Wireless LAN interface was superceded in Windows 10 and later by the [WLAN Universal Driver Model](wifi-universal-driver-model.md) (WDI).
 

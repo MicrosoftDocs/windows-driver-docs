@@ -26,13 +26,7 @@ The miniport driver or NIC assigns the received data to a receive queue that is 
 
 NDIS schedules a DPC on each of the specified target processors. Each DPC processes a particular receive queue on the specified target processor.
 
-For more information about NDIS 6.0 receive side scaling, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
+For more information about NDIS 6.0 receive side scaling, see [Receive Side Scaling](./receive-side-scaling-version-2-rssv2-.md).
 
  
-
- 
-
-
-
-
 

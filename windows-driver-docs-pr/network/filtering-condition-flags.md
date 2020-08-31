@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 The filtering condition flags are each represented by a bit field. These flags are defined as follows:
 
 > [!NOTE]
-> This topic contains filtering condition flags for kernel mode WFP callout drivers. For information about filtering condition flags that are shared between user mode and kernel mode, or if you are looking for information about a flag that isn't listed here, see the [Filtering Condition Flags](https://docs.microsoft.com/windows/desktop/FWP/filtering-condition-flags-) topic in the Windows SDK documentation.
+> This topic contains filtering condition flags for kernel mode WFP callout drivers. For information about filtering condition flags that are shared between user mode and kernel mode, or if you are looking for information about a flag that isn't listed here, see the [Filtering Condition Flags](/windows/desktop/FWP/filtering-condition-flags-) topic in the Windows SDK documentation.
 
 <table>
 <tr>
@@ -333,7 +333,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00020000</p>
 </td>
 <td>
-<p>This flag is set when the <a href="https://docs.microsoft.com/windows/desktop/WinSock/ipv6-protection-level">IPV6_PROTECTION_LEVEL</a> socket option is set on a previously authorized socket.</p>
+<p>This flag is set when the <a href="/windows/desktop/WinSock/ipv6-protection-level">IPV6_PROTECTION_LEVEL</a> socket option is set on a previously authorized socket.</p>
 <p>This flag is applicable at the following filtering layers:<dl>
 <dd>FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6</dd>
 <dd>FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6_DISCARD</dd>
@@ -479,4 +479,3 @@ The filtering condition flags are each represented by a bit field. These flags a
 </td>
 </tr>
 </table>
-
