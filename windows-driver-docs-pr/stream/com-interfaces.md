@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The following COM interfaces are defined in headers included in the WDK.
 
-**Important**  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see [COM Fundamentals](https://docs.microsoft.com/windows/desktop/com/com-fundamentals).
+**Important**  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see [COM Fundamentals](/windows/desktop/com/com-fundamentals).
 
  
 
@@ -45,10 +45,4 @@ INonDelegatingUnknown::NonDelegatingRelease
 PNONDELEGATINGUNKNOWN
 
  
-
- 
-
-
-
-
 

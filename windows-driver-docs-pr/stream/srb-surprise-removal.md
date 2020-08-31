@@ -10,4 +10,4 @@ ms.localizationpriority: medium
 
 The class driver sends this request when a device has been unexpectedly removed (surprise removal) from the computer.
 
-For more information, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device-in-a-function-driver).
+For more information, see [Removing a Device](../kernel/removing-a-device-in-a-function-driver.md).

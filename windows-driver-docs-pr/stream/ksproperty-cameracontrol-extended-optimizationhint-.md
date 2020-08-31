@@ -55,7 +55,7 @@ The following table describes the flag capabilities.
 | KSCAMERA_EXTENDEDPROP_OPTIMIZATION_LATENCY | This capability is optional. When specified, the driver shall optimize the speed and latency for the photo capture and the video recording. This flag can be specified before the photo capture (including regular photo, VPS, and PS without history frames) and\or video recording starts, or when the pin is in the stopped state. This flag can be used with the PHOTO flag, or with QUALITY or POWER flags along with the VIDEO flag. |
 | KSCAMERA_EXTENDEDPROP_OPTIMIZATION_POWER | This capability is optional. When specified, the driver shall optimize the power consumption for the photo capture and the video recording. This flag can be specified before the photo capture (including regular photo, VPS, and PS without history) and/or video recording starts, or when the pin is in the stopped state. This flag can be used with the QUALITY or LATENCY flag, along with the VIDEO flag. |
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 | Member | Value |
 |--|--|

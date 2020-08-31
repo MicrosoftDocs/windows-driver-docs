@@ -104,7 +104,7 @@ In order to support effect based video stabilization (i.e., video stabilization 
 
 -   If a regular media type is set as the MFT0 output media type, the app should return an error in the attempt of turning on the effect based video stabilization if the effect based video stabilization can only take the overscanned media type.
 
-The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the video stabilization control.
+The table below contains the descriptions and requirements for the [KSCAMERA\_EXTENDEDPROP\_HEADER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the video stabilization control.
 
 <table>
 <colgroup>
