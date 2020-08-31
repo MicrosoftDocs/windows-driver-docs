@@ -1,6 +1,6 @@
 ---
 title:  Percent of Devices with WinML Runtime Error (Ecosystem)
-description: The measure monitors the overall health and reliability of Windows Machine Learning 
+description: The measure monitors the overall health and reliability of Windows Machine Learning (Ecosystem)
 ms.topic: article
 ms.date: 4/29/2020
 ms.localizationpriority: medium
