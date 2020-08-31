@@ -86,9 +86,21 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 ## Install a firmware update for the CFU virtual HID device
 
-Step 1
+This section provides an example of installing a firmware update on the sample [**CfuVirtualHid Device**](https://github.com/microsoft/CFU/tree/master/Host/CFUFirmwareSimulation) device built in Visual Studio 2019 and installed using the [**devcon.exe**](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) command-line tool in the previous section.
 
-![step 1](images/install-cfu-virtual-device-firmware-update-1.png)
+1. Navigate to the location of the .inf file and the firmware offer and payload .bin files for your target device. For example:
+
+    `C:\<your_repo_folder>\CFU\Host\CFUFirmwareSimulation\x64\Debug\CfuVirtualHid`
+
+    ![step 1](images/install-cfu-virtual-device-firmware-update-1.png)
+
+1. At an administrative command prompt, run the following command:
+
+1. 
+
+---
+
+
 
 Step 2
 
@@ -102,6 +114,5 @@ Step 4
 
 ![step 4](images/install-cfu-virtual-device-firmware-update-4.png)
 
-## See also
 
-TBD
+
