@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 # Notification Channel
 
-This section contains information about the [CreatePrintAsyncNotifyChannel](https://docs.microsoft.com/windows/win32/api/prnasnot/nf-prnasnot-createprintasyncnotifychannel) function and the [IPrintAsyncNotifyChannel](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel) interface.
+This section contains information about the [CreatePrintAsyncNotifyChannel](/windows/win32/api/prnasnot/nf-prnasnot-createprintasyncnotifychannel) function and the [IPrintAsyncNotifyChannel](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel) interface.
 
 ```cpp
 HRESULT
@@ -86,13 +86,13 @@ DECLARE_INTERFACE_(IPrintAsyncNotifyChannel, IUnknown)
 };
 ```
 
-To send a notification, the sender calls the [IPrintAsyncNotifyChannel::SendNotification](https://docs.microsoft.com/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-sendnotification) method. The sender can be either the printing component that opens the channel and sends notifications or a listening client when it has to respond to a notification. This method behaves asynchronously. When the method returns a success code, the spooler tries to send the notification to listeners. But there is no guarantee that any listeners receive the notification.
+To send a notification, the sender calls the [IPrintAsyncNotifyChannel::SendNotification](/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-sendnotification) method. The sender can be either the printing component that opens the channel and sends notifications or a listening client when it has to respond to a notification. This method behaves asynchronously. When the method returns a success code, the spooler tries to send the notification to listeners. But there is no guarantee that any listeners receive the notification.
 
-To close the channel, the sender or a listener can call the [IPrintAsyncNotifyChannel::CloseChannel](https://docs.microsoft.com/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-closechannel) method. The caller can pass in a notification that gives the reason for closing the channel or can pass a **NULL** pointer. When the channel is closed, all queued notifications are discarded.
+To close the channel, the sender or a listener can call the [IPrintAsyncNotifyChannel::CloseChannel](/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-closechannel) method. The caller can pass in a notification that gives the reason for closing the channel or can pass a **NULL** pointer. When the channel is closed, all queued notifications are discarded.
 
-You must be careful in calling [Release](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iunknown-release) on a channel object, because it does not follow all the general COM programming invariants. You should call **Release** on **IPrintAsyncNotifyChannel** only if the following conditions occur:
+You must be careful in calling [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) on a channel object, because it does not follow all the general COM programming invariants. You should call **Release** on **IPrintAsyncNotifyChannel** only if the following conditions occur:
 
-- If you called [AddRef](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) explicitly, and you must match it with a call to **Release**.
+- If you called [AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) explicitly, and you must match it with a call to **Release**.
 
 - If you created the channel as unidirectional, and you must call **Release** one time on the pointer that you received as an output parameter. You should call **Release** after you have sent the desired notifications and closed the channel.
 
@@ -104,9 +104,9 @@ You must be careful in calling [Release](https://docs.microsoft.com/windows/win3
 
   - You must not call **CloseChannel**, **Release**, or any other member function on the channel if your **ChannelClosed** callback function has finished running. In this case, the channel has already been released, so any further calls might cause undefined behavior. This restriction might require coordination between your foreground thread and callback object.
 
-  - You must make sure that your foreground thread and callback object coordinate the call to **CloseChannel** and **Release**. Your foreground thread and your callback object cannot begin a call to **CloseChannel** if the other is about to call or has completed calling **Release**. You can implement this restriction by using the [**InterlockedCompareExchange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-interlockedcompareexchange) routine. If you do not use **InterlockedCompareExchange**, you might cause undefined behavior.
+  - You must make sure that your foreground thread and callback object coordinate the call to **CloseChannel** and **Release**. Your foreground thread and your callback object cannot begin a call to **CloseChannel** if the other is about to call or has completed calling **Release**. You can implement this restriction by using the [**InterlockedCompareExchange**](/windows-hardware/drivers/ddi/wdm/nf-wdm-interlockedcompareexchange) routine. If you do not use **InterlockedCompareExchange**, you might cause undefined behavior.
 
-- If you registered as a listener on the channel, you can call **CloseChannel** and then call **Release** in your [IPrintAsyncNotifyCallback::OnEventNotify](https://docs.microsoft.com/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-oneventnotify) callback function to end the bidirectional communication. However, you must not call **CloseChannel** or **Release** in your **ChannelClosed** callback.
+- If you registered as a listener on the channel, you can call **CloseChannel** and then call **Release** in your [IPrintAsyncNotifyCallback::OnEventNotify](/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-oneventnotify) callback function to end the bidirectional communication. However, you must not call **CloseChannel** or **Release** in your **ChannelClosed** callback.
 
 If you meet one of these conditions, you must call **Release**. If you do not meet one of these conditions, you must not call **Release**.
 

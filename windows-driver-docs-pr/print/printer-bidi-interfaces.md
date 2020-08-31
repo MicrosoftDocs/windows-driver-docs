@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 These interfaces make it possible for the V4 print driver model to establish and maintain Bidi communication with a USB printer. These interfaces are only accessible via JavaScript code that runs in the print spooler. 
 
-For more information about the spooler, see [Print Spooler Architecture](https://docs.microsoft.com/windows-hardware/drivers/print/print-spooler-architecture) and [Print Spooler Components](https://docs.microsoft.com/windows-hardware/drivers/print/print-spooler-components).
+For more information about the spooler, see [Print Spooler Architecture](./print-spooler-architecture.md) and [Print Spooler Components](./print-spooler-components.md).
 
 Here is a list of the Bidi interfaces.
 

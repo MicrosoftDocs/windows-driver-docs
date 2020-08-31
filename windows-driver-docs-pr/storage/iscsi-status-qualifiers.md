@@ -198,7 +198,7 @@ The following table describes the ISCSI\_STATUS\_QUALIFIERS values.
 </tr>
 <tr class="odd">
 <td align="left"><p>ISDSC_LOGIN_USER_INFO_BAD (0xEFFF002A)</p></td>
-<td align="left"><p>One or more parameters that are specified in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_logintotarget_in" data-raw-source="[&lt;strong&gt;LoginToTarget_IN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_logintotarget_in)"><strong>LoginToTarget_IN</strong></a> structure are invalid.</p></td>
+<td align="left"><p>One or more parameters that are specified in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_logintotarget_in" data-raw-source="[&lt;strong&gt;LoginToTarget_IN&lt;/strong&gt;](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_logintotarget_in)"><strong>LoginToTarget_IN</strong></a> structure are invalid.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ISDSC_TARGET_MAPPING_EXISTS (0xEFFF002B)</p></td>
@@ -446,10 +446,4 @@ The following table describes the ISCSI\_STATUS\_QUALIFIERS values.
  
 
  
-
- 
-
-
-
-
 

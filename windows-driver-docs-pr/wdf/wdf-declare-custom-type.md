@@ -40,7 +40,7 @@ Remarks
 
 When calling **WDF_DECLARE_CUSTOM_TYPE**, a driver defines its own custom type name. When selecting a custom type name, choose a name that is specific to the domain of the driver. As a convention, do not start your custom type name with the prefix *Wdf*.
 
-For more information about object custom types, see [Framework Object Custom Types](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-custom-types).
+For more information about object custom types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
 Examples
 --------
@@ -119,11 +119,4 @@ Requirements
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
  
-
- 
-
-
-
-
-
 

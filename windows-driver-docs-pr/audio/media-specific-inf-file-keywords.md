@@ -20,14 +20,9 @@ ms.localizationpriority: medium
 
 The list of INF file keywords at [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives) contains keywords that are common to all device classes, but the following media-specific INF file keywords do not appear in the list:
 
-[**SetupPreferredAudioDevices**](https://docs.microsoft.com/windows-hardware/drivers/audio/setuppreferredaudiodevices)
+[**SetupPreferredAudioDevices**](./setuppreferredaudiodevices.md)
 
-The **SetupPreferredAudioDevices** keyword is supported in Windows 2000 and later. For more information, see [Media-Class INF Extensions](https://docs.microsoft.com/windows-hardware/drivers/audio/media-class-inf-extensions).
-
- 
+The **SetupPreferredAudioDevices** keyword is supported in Windows 2000 and later. For more information, see [Media-Class INF Extensions](./media-class-inf-extensions.md).
 
  
-
-
-
 

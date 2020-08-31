@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 # What Determines When a Driver Is Loaded
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
 Before exploring when and how file system drivers are loaded during the system boot sequence, it is necessary to understand driver start types and load order groups.
 
@@ -51,7 +51,7 @@ A kernel-mode driver's *start type* specifies whether the driver is to be loaded
 
 A driver writer can specify the start type for a driver at installation time in either of the following ways:
 
-- By specifying the desired start type for the **StartType** entry in the *service-install-section* referred to by an [**AddService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) directive in the driver's INF file. This method is described in ServiceInstall Section.
+- By specifying the desired start type for the **StartType** entry in the *service-install-section* referred to by an [**AddService**](../install/inf-addservice-directive.md) directive in the driver's INF file. This method is described in ServiceInstall Section.
 
 - By passing the desired start type for the *dwStartType* parameter when calling **CreateService** or **ChangeServiceConfig** from a user-mode installation program. This method is described in the reference entries for **CreateService** and **ChangeServiceConfig** in the Microsoft Windows SDK documentation.
 
@@ -78,4 +78,4 @@ A driver writer can specify the load order group for a driver at installation ti
 
 - By passing the desired start type for the *lpLoadOrderGroup* parameter when calling **CreateService** or **ChangeServiceConfig** from a user-mode installation program. This method is described in the reference entries for **CreateService** and **ChangeServiceConfig** in the Microsoft Windows SDK documentation.
 
-For more general information about driver load order and load order groups, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
+For more general information about driver load order and load order groups, see [Specifying Driver Load Order](../install/specifying-driver-load-order.md).

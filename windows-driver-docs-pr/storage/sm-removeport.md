@@ -78,16 +78,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_RemovePort\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removeport_in)
+[**SM\_RemovePort\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removeport_in)
 
-[**SM\_RemovePort\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removeport_out)
-
- 
+[**SM\_RemovePort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removeport_out)
 
  
-
-
-
-
-
 

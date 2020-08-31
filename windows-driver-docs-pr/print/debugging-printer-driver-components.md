@@ -28,9 +28,9 @@ Steps for debugging a user-mode driver and some general debugging tips are inclu
 
 To start debugging printer drivers and their components:
 
-1. Install the latest debugging tools. See [Download Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
+1. Install the latest debugging tools. See [Download Debugging Tools for Windows](../debugger/debugger-download-tools.md)
 
-1. Install the correct symbols from [Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)
+1. Install the correct symbols from [Windows Symbol Packages](../debugger/debugger-download-symbols.md)
 
 > [!NOTE]
 > It is very important that you use the latest version of the debugger.

@@ -23,18 +23,12 @@ Clients enable the KSEVENT\_CLOCK\_INTERVAL\_MARK event to be notified when an i
 
 ### <span id="event_data"></span><span id="EVENT_DATA"></span>Event Data
 
-Use a structure of type [**KSEVENT\_TIME\_INTERVAL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksevent_time_interval) as the *OutBuffer* parameter when calling [**KsSynchronousDeviceControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-kssynchronousdevicecontrol) to register for this event.
+Use a structure of type [**KSEVENT\_TIME\_INTERVAL**](/windows-hardware/drivers/ddi/ks/ns-ks-ksevent_time_interval) as the *OutBuffer* parameter when calling [**KsSynchronousDeviceControl**](/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-kssynchronousdevicecontrol) to register for this event.
 
 Remarks
 -------
 
-For information about how to register for events, see [KS Events](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-events).
+For information about how to register for events, see [KS Events](./ks-events.md).
 
  
-
- 
-
-
-
-
 

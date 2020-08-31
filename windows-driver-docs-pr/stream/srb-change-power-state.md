@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The class driver sends this request to signal to the minidriver that it should reset its power state. *pSrb*->**DeviceState** specifies the new power state.
 
-See [**HW_STREAM_REQUEST_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block).
+See [**HW_STREAM_REQUEST_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block).
 
 ## Return value
 
@@ -33,4 +33,4 @@ The minidriver should set one of the following as the status in the SRB:
 
 If the minidriver needs to save or restore device-specific data it should do so when processing an SRB_CHANGE_POWER_STATE request.
 
-For more information about power states, see [Power IRPs for Individual Devices](https://docs.microsoft.com/windows-hardware/drivers/kernel/power-irps-for-individual-devices).
+For more information about power states, see [Power IRPs for Individual Devices](../kernel/power-irps-for-individual-devices.md).

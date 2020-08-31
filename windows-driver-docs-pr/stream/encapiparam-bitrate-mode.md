@@ -44,11 +44,11 @@ The ENCAPIPARAM\_BITRATE property is used to describe the encoding mode of the d
 
  
 
-The property value (operation data) is a VT\_I4 value specified in the **PropertyItem.Values** member of the [**KSPROPERTY\_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_set) structure with a discrete list of supported values out of the [**VIDEOENCODER\_BITRATE\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode) enumeration.
+The property value (operation data) is a VT\_I4 value specified in the **PropertyItem.Values** member of the [**KSPROPERTY\_SET**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_set) structure with a discrete list of supported values out of the [**VIDEOENCODER\_BITRATE\_MODE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode) enumeration.
 
 ### Comments
 
-For a sample of how to use this property, see [Encoder Code Examples](https://docs.microsoft.com/windows-hardware/drivers/stream/encoder-code-examples).
+For a sample of how to use this property, see [Encoder Code Examples](./encoder-code-examples.md).
 
 The minidriver is required to either provide a static **PropertyItem.Values** description in the property item or handle a basic support query and fill the values in. The minidriver must also specify the defaults for this property.
 
@@ -58,13 +58,7 @@ The minidriver is required to either provide a static **PropertyItem.Values** de
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier), [**VIDEOENCODER\_BITRATE\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier), [**VIDEOENCODER\_BITRATE\_MODE**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-videoencoder_bitrate_mode)
 
  
-
- 
-
-
-
-
 

@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # welcomeIntro XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **welcomeIntro** XML element customizes the main text on the DPInst welcome page.
 
@@ -83,11 +83,4 @@ If a **welcomeIntro** element is not specified, DPInst displays the default main
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

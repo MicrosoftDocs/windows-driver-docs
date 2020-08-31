@@ -24,15 +24,15 @@ If you choose to use the UVC class driver Usbvideo.sys and not a proprietary dri
 
 ## Firmware Guidelines
 
-The UVC class driver Usbvideo.sys queries the video camera directly to obtain its capabilities and then drives the device, with no proprietary driver required. For information on the current implementation of the guidelines, you must refer to the Microsoft Specification of Video Class Driver for H.264/MPEG-4. Also refer to the [Microsoft Proposed Extensions to the USB Video Class for H.264](https://docs.microsoft.com/previous-versions/windows/hardware/download/dn550976(v=vs.85)).
+The UVC class driver Usbvideo.sys queries the video camera directly to obtain its capabilities and then drives the device, with no proprietary driver required. For information on the current implementation of the guidelines, you must refer to the Microsoft Specification of Video Class Driver for H.264/MPEG-4. Also refer to the [Microsoft Proposed Extensions to the USB Video Class for H.264](/previous-versions/windows/hardware/download/dn550976(v=vs.85)).
 
 > [!NOTE]
 > The official guidelines will be published in a future standard document to be found at this location: [Universal Serial Bus Device Class Definition for Video Devices Specification](https://www.usb.org/documents).
 
 ## Related topics
 
-[**KS\_DATAFORMAT\_H264VIDEOINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_dataformat_h264videoinfo)  
+[**KS\_DATAFORMAT\_H264VIDEOINFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_dataformat_h264videoinfo)  
 
-[**KS\_DATARANGE\_H264\_VIDEO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_h264_video)  
+[**KS\_DATARANGE\_H264\_VIDEO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_h264_video)  
 
-[**KS\_H264VIDEOINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_h264videoinfo)  
+[**KS\_H264VIDEOINFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_h264videoinfo)

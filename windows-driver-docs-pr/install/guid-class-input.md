@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_CLASS_INPUT
 
 
-GUID_CLASS_INPUT is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for [HID collections](https://docs.microsoft.com/windows-hardware/drivers/hid/hid-collections). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_HID**](guid-devinterface-hid.md) class identifier for new instances of this class.
+GUID_CLASS_INPUT is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for [HID collections](../hid/hid-collections.md). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_HID**](guid-devinterface-hid.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -46,11 +46,4 @@ Requirements
 [**GUID_DEVINTERFACE_HID**](guid-devinterface-hid.md)
 
  
-
- 
-
-
-
-
-
 

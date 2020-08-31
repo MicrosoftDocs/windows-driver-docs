@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-An extensive discussion of INF files is provided in [General Guidelines for INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/general-guidelines-for-inf-files).
+An extensive discussion of INF files is provided in [General Guidelines for INF Files](../install/general-guidelines-for-inf-files.md).
 
 The following topics provide specific information about INF files for printers:
 
@@ -51,9 +51,4 @@ Also see the installation topics in the following section:
 [Customizing Print Spooler Components](print-spooler-components.md)
 
  
-
- 
-
-
-
 

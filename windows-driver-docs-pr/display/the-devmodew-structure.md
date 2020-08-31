@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_the_devmodew_structure_gg"></span><span id="DDK_THE_DEVMODEW_STRUCTURE_GG"></span>
 
 
-The [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure is the Unicode version of the DEVMODE structure, which is described in the Microsoft Windows SDK documentation. (The 'W' suffix on DEVMODEW stands for "wide", or Unicode characters.) While applications can use either structure, drivers are required to use the DEVMODEW structure rather than the DEVMODE structure.
+The [**DEVMODEW**](/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure is the Unicode version of the DEVMODE structure, which is described in the Microsoft Windows SDK documentation. (The 'W' suffix on DEVMODEW stands for "wide", or Unicode characters.) While applications can use either structure, drivers are required to use the DEVMODEW structure rather than the DEVMODE structure.
 
 ### <span id="public_and_private_members"></span><span id="PUBLIC_AND_PRIVATE_MEMBERS"></span>Public and Private Members
 
@@ -36,15 +36,15 @@ Depending on whether it is to be used by a display driver or by a printer driver
 
 -   Display driver DEVMODEW initialization
 
-    A display driver's [**DrvGetModes**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetmodes) entry point initializes all members of the DEVMODEW structure to zero. *DrvGetModes* then copies the name of the display driver DLL to the **dmDeviceName** member, fills in the **dmSpecVersion** and **dmDriverVersion** members with the version of the DEVMODEW structure, and copies display attribute information to the appropriate members.
+    A display driver's [**DrvGetModes**](/windows/desktop/api/winddi/nf-winddi-drvgetmodes) entry point initializes all members of the DEVMODEW structure to zero. *DrvGetModes* then copies the name of the display driver DLL to the **dmDeviceName** member, fills in the **dmSpecVersion** and **dmDriverVersion** members with the version of the DEVMODEW structure, and copies display attribute information to the appropriate members.
 
 -   Printer driver DEVMODEW initialization
 
-    When an application makes a call to either **DocumentProperties** (a printer interface DLL function that is described in the Microsoft Windows SDK documentation) or [**DrvDocumentPropertySheets**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) (an NT-based operating system graphics DDI), a DEVMODEW structure is created with default values. An application is then free to modify any of the public DEVMODEW members. After any changes, the application should then make a second call to the same function it called before, in order to merge the changed members with those of the driver's internal DEVMODEW structure. The second call is necessary since some changes may not work correctly; the printer driver must be called to correct the DEVMODEW structure. When the document is about to be printed, the application passes the merged DEVMODEW structure to **CreateDC** (described in the Microsoft Windows SDK documentation), which passes it on to the [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev) DDI. At that time, the driver's rendering DLL validates the DEVMODEW structure and makes repairs, if necessary, before carrying out the print job.
+    When an application makes a call to either **DocumentProperties** (a printer interface DLL function that is described in the Microsoft Windows SDK documentation) or [**DrvDocumentPropertySheets**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets) (an NT-based operating system graphics DDI), a DEVMODEW structure is created with default values. An application is then free to modify any of the public DEVMODEW members. After any changes, the application should then make a second call to the same function it called before, in order to merge the changed members with those of the driver's internal DEVMODEW structure. The second call is necessary since some changes may not work correctly; the printer driver must be called to correct the DEVMODEW structure. When the document is about to be printed, the application passes the merged DEVMODEW structure to **CreateDC** (described in the Microsoft Windows SDK documentation), which passes it on to the [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev) DDI. At that time, the driver's rendering DLL validates the DEVMODEW structure and makes repairs, if necessary, before carrying out the print job.
 
 ### <span id="using_a_devmodew_structure"></span><span id="USING_A_DEVMODEW_STRUCTURE"></span>Using a DEVMODEW Structure
 
-Several APIs and graphics DDIs use the information in the DEVMODEW structure for such purposes as printing, querying device capabilities, showing user interface, and others. For example, [**DrvConvertDevMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvconvertdevmode) is a print spooler graphics DDI that translates the DEVMODEW structure from one operating system version to another. This might be necessary if a printer driver gets a DEVMODEW structure from another machine that is running on a different operating system version.
+Several APIs and graphics DDIs use the information in the DEVMODEW structure for such purposes as printing, querying device capabilities, showing user interface, and others. For example, [**DrvConvertDevMode**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvconvertdevmode) is a print spooler graphics DDI that translates the DEVMODEW structure from one operating system version to another. This might be necessary if a printer driver gets a DEVMODEW structure from another machine that is running on a different operating system version.
 
 ### <span id="modifying_a_devmodew_structure"></span><span id="MODIFYING_A_DEVMODEW_STRUCTURE"></span>Modifying a DEVMODEW Structure
 
@@ -180,10 +180,4 @@ For printers, specifies the "friendly name" of the printer.</td>
  
 
  
-
- 
-
-
-
-
 

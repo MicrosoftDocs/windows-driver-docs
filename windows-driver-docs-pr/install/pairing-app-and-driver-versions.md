@@ -19,8 +19,8 @@ The app can further constrain loading to a particular driver version or date.  T
 
 To cause a UWP app to load only when a specific driver is present, add two XML elements to the manifest XML (.appx) file for the app:
 
-* [uap5:DriverDependency](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
-* [uap5:DriverConstraint](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint)
+* [uap5:DriverDependency](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
+* [uap5:DriverConstraint](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint)
 
 In particular, use these elements to specify at least one driver dependency containing at least one driver constraint.  See further details on use of these elements on the reference pages linked to above.  The latter page contains an example.
 
@@ -36,8 +36,8 @@ In addition to matching the most recent app and driver versions, the system also
 
 ## See Also
 
-* [uap5:DriverDependency](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
-* [uap5:DriverConstraint](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint)
+* [uap5:DriverDependency](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverdependency)
+* [uap5:DriverConstraint](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-driverconstraint)
 * [INF AddSoftware Directive](inf-addsoftware-directive.md)
 * [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)
 * [Hardware Support App (HSA): Steps for App Developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md)

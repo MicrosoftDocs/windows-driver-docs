@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Stream Class Registry Values
 
-To install a minidriver under *Stream.sys*, the vendor must supply a device-specific INF file that complies with INF file syntax as described in [INF File Sections](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) and [INF File Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addcomponent-directive). In this file, minidrivers running under stream class can set special registry values in the device-specific [**AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) section. These registry entries serve as binary indicators: set them to hexadecimal value 01 to enable the capability.
+To install a minidriver under *Stream.sys*, the vendor must supply a device-specific INF file that complies with INF file syntax as described in [INF File Sections](../install/inf-classinstall32-section.md) and [INF File Directives](../install/inf-addcomponent-directive.md). In this file, minidrivers running under stream class can set special registry values in the device-specific [**AddReg**](../install/inf-addreg-directive.md) section. These registry entries serve as binary indicators: set them to hexadecimal value 01 to enable the capability.
 
 Stream class minidrivers can use the following registry values:
 
@@ -33,7 +33,7 @@ The following flags were supported on Windows 9x but are obsolete in NT-based op
 
 **DontSuspendIfStreamsAreRunning**
   
-This registry variable is obsolete in Windows 2000 and later NT-based operating systems. (As of this release, DirectShow listens to power queries and puts all streams into pause when it receives a low-power query.) An application can still inform the system that it is in use by calling **SetThreadExecutionState**. This routine is described in the Microsoft Windows SDK documentation. Alternatively, a driver can use [**PoSetSystemState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate).
+This registry variable is obsolete in Windows 2000 and later NT-based operating systems. (As of this release, DirectShow listens to power queries and puts all streams into pause when it receives a low-power query.) An application can still inform the system that it is in use by calling **SetThreadExecutionState**. This routine is described in the Microsoft Windows SDK documentation. Alternatively, a driver can use [**PoSetSystemState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate).
 
 **OkToHibernate**
   

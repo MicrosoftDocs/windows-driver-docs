@@ -60,11 +60,11 @@ The DEVPKEY_Device_PowerData device property represents power information about 
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_PowerData. The value of DEVPKEY_Device_PowerData contains a [**CM_POWER_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-cm_power_data_s) structure.
+Windows sets the value of DEVPKEY_Device_PowerData. The value of DEVPKEY_Device_PowerData contains a [**CM_POWER_DATA**](/windows-hardware/drivers/ddi/wdm/ns-wdm-cm_power_data_s) structure.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PowerData.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PowerData.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PowerData property key. Instead, you can use the corresponding SPDRP_DEVICE_POWER_DATA identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_PowerData property key. Instead, you can use the corresponding SPDRP_DEVICE_POWER_DATA identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
@@ -76,16 +76,9 @@ Requirements
 ## See also
 
 
-[**CM_POWER_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-cm_power_data_s)
+[**CM_POWER_DATA**](/windows-hardware/drivers/ddi/wdm/ns-wdm-cm_power_data_s)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

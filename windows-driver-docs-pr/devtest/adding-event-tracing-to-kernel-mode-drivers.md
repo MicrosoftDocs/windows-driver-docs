@@ -190,7 +190,7 @@ You can include this step as part of your build process in a couple of ways:
     </MessageCompile>
 ```
 
-When you build the Eventdrv.sys sample, Visual Studio creates the necessary files for event tracing. It also adds the evntdrv.xml manifest to the list of Resources Files for the driver project. You can right click the manifest to view the Message Compiler property pages.
+When you build the Eventdrv.sys sample, Visual Studio creates the necessary files for event tracing. It also adds the evntdrv.xml manifest to the list of Resources Files for the driver project. You can select and hold (or right-click) the manifest to view the Message Compiler property pages.
 
 ### Using Visual Studio to add the instrumentation manifest
 
@@ -198,18 +198,18 @@ You can add the instrumentation manifest to the driver project and then configur
 
 ### To add the instrumentation manifest to the project using Visual Studio
 
-1. In the Solution Explorer, add the manifest file to the driver project. Right click **Resource Files &gt; Add &gt; Existing Item** (for example, evntdrv.xml or mydriver.man).
+1. In the Solution Explorer, add the manifest file to the driver project. Select and hold (or right-click) **Resource Files &gt; Add &gt; Existing Item** (for example, evntdrv.xml or mydriver.man).
 
-2. Right click the file you just added and use the property pages to change the item type to **MessageCompile** and click **Apply**.
+2. Select and hold (or right-click) the file you just added and use the property pages to change the item type to **MessageCompile** and select **Apply**.
 
-3. The Message Compiler properties appear. Under the **General** settings, set the following options and then click **Apply**.
+3. The Message Compiler properties appear. Under the **General** settings, set the following options and then select **Apply**.
 
     | General                                 | Setting       |
     |-----------------------------------------|---------------|
     | **Generate Kernel Mode Logging Macros** | **Yes (-km)** |
     | **Use Base Name of Input**              | **Yes (-b)**  |
 
-4. Under **File Options**, set the following options and then click **Apply**.
+4. Under **File Options**, set the following options and then select **Apply**.
 
     | File Options                                    | Setting         |
     |-------------------------------------------------|-----------------|

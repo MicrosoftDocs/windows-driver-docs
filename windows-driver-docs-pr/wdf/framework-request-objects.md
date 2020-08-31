@@ -18,9 +18,9 @@ ms.localizationpriority: medium
 
 
 
-Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/).
+Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](/windows-hardware/drivers/ddi/wdfrequest/).
 
-Each I/O request contains a WDM *I/O request packet* ([**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure), but framework-based drivers typically do not need to access the IRP structure.
+Each I/O request contains a WDM *I/O request packet* ([**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure), but framework-based drivers typically do not need to access the IRP structure.
 
 ## In this section
 
@@ -35,10 +35,4 @@ Each I/O request contains a WDM *I/O request packet* ([**IRP**](https://docs.mic
 -   [Reusing Framework Request Objects](reusing-framework-request-objects.md)
 
  
-
- 
-
-
-
-
 

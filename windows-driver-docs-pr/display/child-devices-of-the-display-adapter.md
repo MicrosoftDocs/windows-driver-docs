@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 
 A child device of the display adapter is a device on the display adapter that is enumerated as a child by the display miniport driver. All child devices of the display adapter are on-board; monitors and other external devices that connect to the display adapter are not considered child devices.
 
-The display miniport driver's [**DxgkDdiQueryChildRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations) function is responsible for enumerating child devices of the display adapter. During the enumeration, the display miniport driver assigns each child device a type and a hot-plug detection (HPD) awareness value. The type is one of the [**DXGK\_CHILD\_DEVICE\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/ne-dispmprt-_dxgk_child_device_type) enumerators:
+The display miniport driver's [**DxgkDdiQueryChildRelations**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations) function is responsible for enumerating child devices of the display adapter. During the enumeration, the display miniport driver assigns each child device a type and a hot-plug detection (HPD) awareness value. The type is one of the [**DXGK\_CHILD\_DEVICE\_TYPE**](/windows-hardware/drivers/ddi/dispmprt/ne-dispmprt-_dxgk_child_device_type) enumerators:
 
 -   **TypeVideoOutput**
 
 -   **TypeOther**
 
-The HPD awareness value is one of the [**DXGK\_CHILD\_DEVICE\_HPD\_AWARENESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_dxgk_child_device_hpd_awareness) enumerators:
+The HPD awareness value is one of the [**DXGK\_CHILD\_DEVICE\_HPD\_AWARENESS**](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_dxgk_child_device_hpd_awareness) enumerators:
 
 -   **HpdAwarenessAlwaysConnected**
 
@@ -103,10 +103,4 @@ The operating system uses one of several strategies, depending on the HPD awaren
  
 
  
-
- 
-
-
-
-
 

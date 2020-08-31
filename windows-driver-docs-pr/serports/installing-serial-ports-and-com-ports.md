@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Installing Serial Ports and COM Ports
 
-For most devices, the Ports [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) and the Serial function driver provide the functionality required to operate serial ports and COM ports. To install serial ports and COM ports using these system-supplied components, do the following:
+For most devices, the Ports [device setup class](../install/overview-of-device-setup-classes.md) and the Serial function driver provide the functionality required to operate serial ports and COM ports. To install serial ports and COM ports using these system-supplied components, do the following:
 
 - Provide an INF file that specifies the Ports device setup class and the Serial function driver as the service for the port.
 

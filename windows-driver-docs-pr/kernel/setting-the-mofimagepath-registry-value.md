@@ -41,12 +41,7 @@ AddReg=Driver_AddReg
 HKR,,MofImagePath,,DriverMof.dll 
 ```
 
-See [**INF DDInstall.Services Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-services-section) and [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) for details.
+See [**INF DDInstall.Services Section**](../install/inf-ddinstall-services-section.md) and [**INF AddReg Directive**](../install/inf-addreg-directive.md) for details.
 
  
-
- 
-
-
-
 

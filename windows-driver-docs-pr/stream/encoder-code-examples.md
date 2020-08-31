@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 # Encoder code examples
 
-The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/avstream-simulated-hardware-sample-driver-avshws/). They demonstrate the following:
+The following code examples are based on the [AVStream Simulated Hardware Sample Driver (AVSHwS)](/samples/microsoft/windows-driver-samples/avstream-simulated-hardware-sample-driver-avshws/). They demonstrate the following:
 
 - How to specify the encoder's supported bit rates
 
@@ -30,7 +30,7 @@ The following code examples are based on the [AVStream Simulated Hardware Sample
 
 ## Implementing Supported Bit Rates
 
-The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate) property. Use a [**KSPROPERTY\_STEPPING\_LONG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) structure to specify a stepping granularity of 400 bits per second (bps) with a 400-bps lower-bound and 4,000,000-bps upper-bound.
+The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE](./encapiparam-bitrate.md) property. Use a [**KSPROPERTY\_STEPPING\_LONG**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) structure to specify a stepping granularity of 400 bits per second (bps) with a 400-bps lower-bound and 4,000,000-bps upper-bound.
 
 ```cpp
 const KSPROPERTY_STEPPING_LONG BitRateRanges [] = {
@@ -114,7 +114,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRate) {
 
 ## Implementing Supported Encoding Bit Rate Modes
 
-The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE\_MODE](https://docs.microsoft.com/windows-hardware/drivers/stream/encapiparam-bitrate-mode) property.
+The following code snippets demonstrate how to implement support for the [ENCAPIPARAM\_BITRATE\_MODE](./encapiparam-bitrate-mode.md) property.
 
 Define the encoding modes supported by the encoder:
 
@@ -190,7 +190,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRateMode) {
 > [!NOTE]
 > The *get*-property handler should return the encoding bit rate mode, and the *Set*-property handler must test that the incoming passed-in value is valid before using it.
 
-The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor) structure's automation table.
+The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor) structure's automation table.
 
 ```cpp
 DEFINE_KSPROPERTY_SET_TABLE(PropertyTable) {

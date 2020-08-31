@@ -60,13 +60,7 @@ class ISCSI_PortalInfo
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_PortalInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_portalinfo) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_PortalInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_portalinfo) data structure.
 
  
-
- 
-
-
-
-
 

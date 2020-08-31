@@ -26,15 +26,15 @@ Examples of setting KSProperty controls can be found in the [AVStream Camera Sam
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Filter | [KSPROPERTY](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)) | [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) |
+| Yes | Yes | Filter | [KSPROPERTY](/previous-versions/ff564262(v=vs.85)) | [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) |
 
 ## Remarks
 
-The property request contains a [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure and a [KSCAMERA_EXTENDEDPROP_VALUE](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure.
+The property request contains a [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure and a [KSCAMERA_EXTENDEDPROP_VALUE](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure.
 
 The total property data size is `sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE)`.
 
-The **Size** member of [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) is set to this total property data size.
+The **Size** member of [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) is set to this total property data size.
 
 The following are flags that can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** and **KSCAMERA_EXTENDEDPROP_HEADER.Capability** fields.
 
@@ -50,13 +50,13 @@ Any app can read the property but only apps that have opened the camera for excl
 
 A suitable error code will be returned if attempts are made to write the property without having exclusive mode access.
 
-In regards to mapping this DDI to the PanelBasedOptimizationControl, the application using PanelBasedOptimizationControl will set the Panel value, which Windows will internally use to program the [**KSCAMERA_EXTENDEDPROP_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) field of the payload.
+In regards to mapping this DDI to the PanelBasedOptimizationControl, the application using PanelBasedOptimizationControl will set the Panel value, which Windows will internally use to program the [**KSCAMERA_EXTENDEDPROP_VALUE**](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) field of the payload.
 
 The **Capability** and **Flags** field will be controlled by Windows.
 
 If the driver receives a SET operation while the camera device is streaming and the flag *KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_DYNAMIC** is not set, the driver will return a state-based error.
 
-The following table contains the requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
+The following table contains the requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the metadata control.
 
 | Member | Description |
 |--|--|
@@ -67,7 +67,7 @@ The following table contains the requirements for the [KSCAMERA_EXTENDEDPROP_HEA
 | Capability | Must be a bit wise **OR** of the supported ***KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION_XXX*** flags defined above. |
 | Flags | This is a read/write field. This can be either **KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION_ON** or **KSCAMERA_EXTENDEDPROP_RELATIVEPANELOPTIMIZATION_OFF** flags defined above. |
 
-If **KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_ON** is specified in the **Flags** field of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header), the **Value.ul** field must specify the PLD for the relative direction the camera is currently facing.
+If **KSCAMERA\_EXTENDEDPROP\_RELATIVEPANELOPTIMIZATION\_ON** is specified in the **Flags** field of the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header), the **Value.ul** field must specify the PLD for the relative direction the camera is currently facing.
 
 This can be any of the enumeration values for ACPI PLD, but most frequently will be **Front**, **Back** or **Unknown**.
 

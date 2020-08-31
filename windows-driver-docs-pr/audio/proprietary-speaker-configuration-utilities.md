@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 Hardware vendors occasionally provide proprietary speaker-configuration utilities to be used with their audio drivers in place of the speaker dialog in Control Panel. Such utilities have a potential problem: they sometimes change the speaker configuration in a proprietary way that fails to notify Windows of the change. This can result in a bad user experience if the settings in the proprietary utility do not match those in Control Panel. If you believe that your device requires a proprietary utility, you should take the following steps to integrate your utility with Windows:
 
-1.  Implement a DAC node in your driver that supports the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) property. Through this node, Windows informs the driver immediately of changes made by the user in Control Panel.
+1.  Implement a DAC node in your driver that supports the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) property. Through this node, Windows informs the driver immediately of changes made by the user in Control Panel.
 
 2.  Design your configuration utility to manage the speaker configuration by calling the DirectSound methods **GetSpeakerConfig** and **SetSpeakerConfig**.
 
@@ -35,9 +35,4 @@ If your device supports multichannel formats that have no precise Windows equiva
 If you make Windows more aware of your device's capabilities, DirectSound can enable some features that it could not otherwise enable (for example, multichannel 3D panning).
 
  
-
- 
-
-
-
 

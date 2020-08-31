@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This section describes the PnP IRPs that are sent to drivers. All PnP IRPs have the major function code [**IRP\_MJ\_PNP**](irp-mj-pnp.md) and a minor function code indicating the particular PnP request.
 
-This section provides reference information for the individual IRPs. See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for a description of the order in which the IRPs are sent, a discussion of how to handle IRPs in [DispatchPnP routines](https://docs.microsoft.com/windows-hardware/drivers/kernel/dispatchpnp-routines), and a general discussion of PnP concepts and terminology.
+This section provides reference information for the individual IRPs. See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for a description of the order in which the IRPs are sent, a discussion of how to handle IRPs in [DispatchPnP routines](./dispatchpnp-routines.md), and a general discussion of PnP concepts and terminology.
 
 For each IRP and each kind of driver, a driver is either required to handle the IRP, can optionally handle the IRP, or must not handle the IRP. Consult the table below to identify which IRPs your driver will handle and then consult the reference pages for information about the individual IRPs. The IRPs are listed in functional order in the table and in alphabetical order in the IRP reference pages.
 
@@ -66,13 +66,3 @@ The following are the minor function codes for PnP IRPs, and the driver types th
 (2) Bus filter drivers might handle a query for **BusRelations**.
 
 (3) Supported in Windows 7 and later versions of Windows.
-
-
-
-
-
-
-
-
-
-

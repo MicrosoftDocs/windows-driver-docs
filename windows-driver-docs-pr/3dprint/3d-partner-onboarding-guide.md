@@ -91,4 +91,4 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 1. Publish and distribute the driver
 
-    - Follow the guidance in the [Windows Partner Center](https://docs.microsoft.com/windows-hardware/drivers/dashboard) topics to publish your driver.
+    - Follow the guidance in the [Windows Partner Center](../dashboard/index.yml) topics to publish your driver.

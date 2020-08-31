@@ -48,7 +48,7 @@ For more information about operating Serenum and Serial, see the following resou
 
 - [ntddser header](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/0)
 
-- [Serial Port Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_serports/)
+- [Serial Port Driver Reference](/windows-hardware/drivers/ddi/_serports/)
 
 - Sample code in the \\src\\kernel\\serial and \\src\\kernel\\serenum directories in the Windows Driver Kit (WDK) https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/serenum
 

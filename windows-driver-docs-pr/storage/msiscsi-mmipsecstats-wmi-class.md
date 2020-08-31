@@ -254,13 +254,7 @@ class MSiSCSI_MMIPSECStats : Win32_PerfRawData {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_MMIPSECStats**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_mmipsecstats) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_MMIPSECStats**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_mmipsecstats) data structure.
 
  
-
- 
-
-
-
-
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_PROXY
 
 
-The KSCATEGORY_PROXY [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) represents a [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that is reserved for exclusive use by the [kernel streaming proxy module](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index).
+The KSCATEGORY_PROXY [device interface class](./overview-of-device-interface-classes.md) represents a [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that is reserved for exclusive use by the [kernel streaming proxy module](/windows-hardware/drivers/ddi/_stream/index).
 
 <table>
 <colgroup>
@@ -62,10 +62,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

@@ -34,7 +34,7 @@ AddProperty = DeviceIconProperty
 DeviceIcon,,,,"%13%\UmdfDriver.dll,-100"
 ```
 
-The above example uses DIRID 13 to copy the file to the Driver Store, which avoids needing to copy it anywhere else. The entry follows the format `<Resource.dll>,-<IconResourceID>`, so the 100 signifies the resource ID of the icon in the resource table of the DLL. For more on DIRID 13, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
+The above example uses DIRID 13 to copy the file to the Driver Store, which avoids needing to copy it anywhere else. The entry follows the format `<Resource.dll>,-<IconResourceID>`, so the 100 signifies the resource ID of the icon in the resource table of the DLL. For more on DIRID 13, see [Using a Universal INF File](./using-a-universal-inf-file.md).
 
 To reference a standalone .ico file, use an entry like this:
 
@@ -70,10 +70,10 @@ The **Icons** and **NoMediaIcons** value entries are stored under the **Device P
 
 * `NoMediaIcons [REG_MULTI_SZ] = %SystemRoot%\system32\noicon.ico`
 
-To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
+To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
 
-From kernel mode, use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
+From kernel mode, use [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
 
 ## Resources
 
-When you create icons, follow the guidelines that are provided in [Icons](https://docs.microsoft.com/windows/win32/uxguide/vis-icons). These guidelines describe how to create icons that have the appearance and behavior of Windows graphical elements.
+When you create icons, follow the guidelines that are provided in [Icons](/windows/win32/uxguide/vis-icons). These guidelines describe how to create icons that have the appearance and behavior of Windows graphical elements.

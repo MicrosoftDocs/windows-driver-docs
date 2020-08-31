@@ -42,12 +42,12 @@ While there are numerous other privileges, they are normally opaque to file syst
 
 The key Windows routines for managing privileges within a file system are:
 
-- [**SePrivilegeCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seprivilegecheck)--this routine performs a check for a specific set of necessary privileges.
+- [**SePrivilegeCheck**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seprivilegecheck)--this routine performs a check for a specific set of necessary privileges.
 
-- [**SeSinglePrivilegeCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-sesingleprivilegecheck)--this routine performs a check for a single specific privilege; it is an optimized version of [**SePrivilegeCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seprivilegecheck).
+- [**SeSinglePrivilegeCheck**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-sesingleprivilegecheck)--this routine performs a check for a single specific privilege; it is an optimized version of [**SePrivilegeCheck**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seprivilegecheck).
 
-- [**SeAccessCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck)--this routine performs normal access checking on an object (normally a file object for a file system).
+- [**SeAccessCheck**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck)--this routine performs normal access checking on an object (normally a file object for a file system).
 
-- [**SeFreePrivileges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sefreeprivileges)--this routine frees the privilege block returned by a previous call to [**SeAccessCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck).
+- [**SeFreePrivileges**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sefreeprivileges)--this routine frees the privilege block returned by a previous call to [**SeAccessCheck**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck).
 
-- [**SeAppendPrivileges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seappendprivileges)--this routine adds enabled privileges to an ACCESS_STATE structure. Typically, a file system would use the ACCESS_STATE passed to it during IRP_MJ_CREATE processing.
+- [**SeAppendPrivileges**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seappendprivileges)--this routine adds enabled privileges to an ACCESS_STATE structure. Typically, a file system would use the ACCESS_STATE passed to it during IRP_MJ_CREATE processing.

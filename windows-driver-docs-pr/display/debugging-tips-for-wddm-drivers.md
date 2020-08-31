@@ -10,16 +10,16 @@ ms.localizationpriority: medium
 
 These topics discuss driver debugging tips for the Windows Display Driver Model (WDDM):
 
-- [Installing Checked Binaries](https://docs.microsoft.com/windows-hardware/drivers/display/installing-checked-binaries)
-- [Changing the Behavior of the GPU Scheduler for Debugging](https://docs.microsoft.com/windows-hardware/drivers/display/changing-the-behavior-of-the-gpu-scheduler-for-debugging)
-- [Emulating State Blocks](https://docs.microsoft.com/windows-hardware/drivers/display/emulating-state-blocks)
-- [Logging Driver Errors](https://docs.microsoft.com/windows-hardware/drivers/display/logging-driver-errors)
-- [User-mode driver logging](https://docs.microsoft.com/windows-hardware/drivers/display/user-mode-driver-logging)
-- [Disabling Frame Pointer Omission (FPO) optimization](https://docs.microsoft.com/windows-hardware/drivers/display/disabling-frame-pointer-omission--fpo--optimization)
-- [Using GPUView](https://docs.microsoft.com/windows-hardware/drivers/display/using-gpuview)
-- [XPS rasterization on the GPU](https://docs.microsoft.com/windows-hardware/drivers/display/xps-rasterization-on-the-gpu)
-- [Timeout Detection and Recovery (TDR)](https://docs.microsoft.com/windows-hardware/drivers/display/timeout-detection-and-recovery)
+- [Installing Checked Binaries](./installing-checked-binaries.md)
+- [Changing the Behavior of the GPU Scheduler for Debugging](./changing-the-behavior-of-the-gpu-scheduler-for-debugging.md)
+- [Emulating State Blocks](./emulating-state-blocks.md)
+- [Logging Driver Errors](./logging-driver-errors.md)
+- [User-mode driver logging](./user-mode-driver-logging.md)
+- [Disabling Frame Pointer Omission (FPO) optimization](./disabling-frame-pointer-omission--fpo--optimization.md)
+- [Using GPUView](./using-gpuview.md)
+- [XPS rasterization on the GPU](./xps-rasterization-on-the-gpu.md)
+- [Timeout Detection and Recovery (TDR)](./timeout-detection-and-recovery.md)
 
-For tips on debugging indirect display drivers, see [Debugging Indirect Displays](https://docs.microsoft.com/windows-hardware/drivers/display/indirect-display-debugging).
+For tips on debugging indirect display drivers, see [Debugging Indirect Displays](./indirect-display-debugging.md).
 
-For general information about debugging drivers, see [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging).
+For general information about debugging drivers, see [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md).

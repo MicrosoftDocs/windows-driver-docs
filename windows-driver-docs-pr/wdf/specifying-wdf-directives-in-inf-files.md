@@ -29,7 +29,7 @@ This topic applies to both User-Mode Driver Framework (UMDF) versions 1 and 2.
 
 An INF file that installs a UMDF driver must contain a Microsoft Windows Driver Frameworks (WDF)-specific *DDInstall* section. The INF file can contain more than one WDF-specific *DDInstall* section if the INF file installs more than one WDF driver. Each WDF-specific *DDInstall* section:
 
--   Corresponds to the [**DDInstall**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) and [**DDInstall.Services**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-services-section) sections that are associated with a particular WDF driver.
+-   Corresponds to the [**DDInstall**](../install/inf-ddinstall-section.md) and [**DDInstall.Services**](../install/inf-ddinstall-services-section.md) sections that are associated with a particular WDF driver.
 
 -   Is processed by all the loaded WDF co-installers, which run in arbitrary order.
 
@@ -245,7 +245,7 @@ UMDF drivers should be copied to, and run from, the `Windows\System32\Drivers\UM
 
 **DriverCLSID** = <{*CLSID*}>  
 
-Informs UMDF about the class identifier (CLSID) of the UMDF driver. When UMDF loads the UMDF driver, the UMDF host uses the UMDF driver's CLSID to create an instance of the UMDF driver's [IDriverEntry](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface.
+Informs UMDF about the class identifier (CLSID) of the UMDF driver. When UMDF loads the UMDF driver, the UMDF host uses the UMDF driver's CLSID to create an instance of the UMDF driver's [IDriverEntry](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface.
 
 ## UmdfExtensions
 

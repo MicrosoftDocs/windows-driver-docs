@@ -131,7 +131,7 @@ The DRMK system driver (Drmk.sys) is the KS filter that decrypts audio streams c
 
 The Splitter system driver (Splitter.sys) is the KS filter that creates two or more output streams from a single input capture stream. The Splitter driver transparently copies the input stream to two more output streams independently of the format of the input stream.
 
-The Splitter driver is supported by Windows Me, and Microsoft Windows XP and later. For more information, see [AVStream Splitters](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-splitters).
+The Splitter driver is supported by Windows Me, and Microsoft Windows XP and later. For more information, see [AVStream Splitters](../stream/avstream-splitters.md).
 
 ### <span id="port_class_adapter_driver_and_portcls_system_driver"></span><span id="PORT_CLASS_ADAPTER_DRIVER_AND_PORTCLS_SYSTEM_DRIVER"></span>Port Class Adapter Driver and PortCls System Driver
 
@@ -171,16 +171,11 @@ The following figure shows the driver hierarchy for an IEEE 1394 audio device in
 
 For more information about the driver components in the figure, see the following sections:
 
-[AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview)
+[AVStream Overview](../stream/avstream-overview.md)
 
-[AV/C Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index)
+[AV/C Client Drivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [IEEE 1394 Bus](https://developer.microsoft.com/windows/hardware)
 
  
-
- 
-
-
-
 

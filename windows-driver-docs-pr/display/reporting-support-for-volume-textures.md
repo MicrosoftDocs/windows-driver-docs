@@ -26,13 +26,7 @@ A driver that supports volume textures is also required to specify the minimum a
 
 A driver notifies the runtime of the volume texture filtering and texture addressing modes supported by the hardware by setting the **VolumeTextureFilterCaps** and **VolumeTextureAddressCaps** to the appropriate combinations of flags.
 
-Finally, the driver notifies the runtime about what surface formats can be used with volume textures by setting the D3DFORMAT\_OP\_VOLUMETEXTURE in the **dwOperations** field of the surface format's [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat).
+Finally, the driver notifies the runtime about what surface formats can be used with volume textures by setting the D3DFORMAT\_OP\_VOLUMETEXTURE in the **dwOperations** field of the surface format's [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat).
 
  
-
- 
-
-
-
-
 

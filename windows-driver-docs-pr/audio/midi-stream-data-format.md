@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="midi_stream_data_format"></span><span id="MIDI_STREAM_DATA_FORMAT"></span>
 
 
-This example uses a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure to describe the data format of a MIDI stream.
+This example uses a [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure to describe the data format of a MIDI stream.
 
 ```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT);
@@ -27,9 +27,4 @@ This example uses a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardwa
 ```
 
  
-
- 
-
-
-
 

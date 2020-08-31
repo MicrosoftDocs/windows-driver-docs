@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # Writing 64-Bit Printer Drivers
 
-If you are writing a 64-bit driver or writing a driver that can be compiled to run on both 32-bit and 64-bit systems, follow the 64-bit porting guidelines in [Porting Your Driver to 64-Bit Windows](https://docs.microsoft.com/windows-hardware/drivers/kernel/porting-your-driver-to-64-bit-windows). This topic describes some of the limitations and problems that you might encounter in writing a 64-bit printer driver.
+If you are writing a 64-bit driver or writing a driver that can be compiled to run on both 32-bit and 64-bit systems, follow the 64-bit porting guidelines in [Porting Your Driver to 64-Bit Windows](../kernel/porting-your-driver-to-64-bit-windows.md). This topic describes some of the limitations and problems that you might encounter in writing a 64-bit printer driver.
 
 For more information about using decorations to identify 64-bit architecture, see the following topics:
 
@@ -29,7 +29,7 @@ In existing 32-bit driver code, be careful about conversions between pointer typ
 
 Instead, cast the pointer to type DWORD\_PTR or ULONG\_PTR. An unsigned integer of type DWORD\_PTR or ULONG\_PTR is always large enough to store the entire pointer, regardless of whether the code is compiled for a 32-bit or 64-bit computer.
 
-For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemcuipparam) structure is of type ULONG\_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
+For example, the pDrvOptItems.UserData pointer field in the [**OEMCUIPPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemcuipparam) structure is of type ULONG\_PTR. The following code example shows what not to do if you copy a 64-bit pointer value to this field.
 
 ```cpp
 PUSERDATA pData;
@@ -65,4 +65,4 @@ The second code example is preferred even though
 ulSlotPhysAddr
 ```
 
-might represent the value of a hardware register that is only 32 bits long rather than 64 bits long. For a list of all the new Win64 helper functions for converting between pointer and integer types, see [New Data Types](https://docs.microsoft.com/windows-hardware/drivers/kernel/the-new-data-types).
+might represent the value of a hardware register that is only 32 bits long rather than 64 bits long. For a list of all the new Win64 helper functions for converting between pointer and integer types, see [New Data Types](../kernel/the-new-data-types.md).

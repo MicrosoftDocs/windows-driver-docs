@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Installing a Catalog File by using SignTool
 
 
-[**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) is not a redistributable tool and therefore cannot be included with a redistributed installation application. However, SignTool can be used on a computer that has SignTool already installed in a manner that complies with the Microsoft Software License Terms for the tool. A [catalog file](catalog-files.md) can be manually installed from a command line or installed by command script by using the following SignTool command:
+[**SignTool**](../devtest/signtool.md) is not a redistributable tool and therefore cannot be included with a redistributed installation application. However, SignTool can be used on a computer that has SignTool already installed in a manner that complies with the Microsoft Software License Terms for the tool. A [catalog file](catalog-files.md) can be manually installed from a command line or installed by command script by using the following SignTool command:
 
 ```cpp
 SignTool catdb /v /u CatalogFileName.cat
@@ -26,10 +26,4 @@ Where:
 -   *CatalogFileName.cat* is the name of the catalog file.
 
  
-
- 
-
-
-
-
 

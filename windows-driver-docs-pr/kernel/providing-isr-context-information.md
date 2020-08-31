@@ -13,18 +13,13 @@ ms.localizationpriority: medium
 
 
 
-On entry, an ISR receives a pointer to whatever context area the driver set up when it called [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register the routine.
+On entry, an ISR receives a pointer to whatever context area the driver set up when it called [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register the routine.
 
-Most drivers set the context pointer to the device object that represents the physical device that generates interrupts, or to that device object's device extension. In the device extension, the driver can store state information for the driver's ISR and [*DpcForIsr*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine, the latter of which usually does almost all of the I/O processing to satisfy each request that caused the device to interrupt.
+Most drivers set the context pointer to the device object that represents the physical device that generates interrupts, or to that device object's device extension. In the device extension, the driver can store state information for the driver's ISR and [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine, the latter of which usually does almost all of the I/O processing to satisfy each request that caused the device to interrupt.
 
 Typically, drivers use the device extension to store pointers to each of the device's interrupt objects (returned from calls to **IoConnectInterruptEx**). Drivers also typically store information in the device extension that allows an ISR to determine if an interrupt was issued by a device the ISR supports.
 
 (Alternatively, interrupt object pointers can be stored in nonpaged pool that the driver allocates.)
 
  
-
- 
-
-
-
 

@@ -23,16 +23,11 @@ The GUID\_POWER\_DEVICE\_*XXX* class GUIDs enable controls on the property page 
 
 -   GUID\_POWER\_DEVICE\_WAKE\_ENABLE
 
-    Enables a check box to activate or deactivate sending wait/wake IRPs. When selected, the driver should send an [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) request to its physical device object. This enables the device to wake the system in response to an external event. For example, when enabled for the keyboard class driver, the keyboard device will wake the system when a key is pressed. When the check box is not selected, the driver should cancel the **IRP\_MN\_WAIT\_WAKE** request. The data block for the WMI class consists of a single BOOLEAN value that indicates the current state of the check box.
+    Enables a check box to activate or deactivate sending wait/wake IRPs. When selected, the driver should send an [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) request to its physical device object. This enables the device to wake the system in response to an external event. For example, when enabled for the keyboard class driver, the keyboard device will wake the system when a key is pressed. When the check box is not selected, the driver should cancel the **IRP\_MN\_WAIT\_WAKE** request. The data block for the WMI class consists of a single BOOLEAN value that indicates the current state of the check box.
 
 WMI query requests are sent for the GUID\_POWER\_DEVICE\_*XXX* WMI class GUIDs whenever the property sheet for the driver is opened in Device Manager. The WMI change requests are sent whenever one of the check box values on the **Power Management** tab changes. Users will expect the value they set to persist between driver loads and unloads, so drivers should store the current value of either property in the registry.
 
 The mouse or keyboard class sample drivers both handle the GUID\_POWER\_DEVICE\_WAKE\_ENABLE WMI class GUID. See \\src\\input\\kbdclass and \\src\\input\\mouclass in the Windows Driver Kit (WDK).
 
  
-
- 
-
-
-
 

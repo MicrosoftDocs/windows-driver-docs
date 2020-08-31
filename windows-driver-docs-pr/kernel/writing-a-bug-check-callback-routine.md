@@ -9,10 +9,10 @@ ms.localizationpriority: medium
 
 # Writing a Bug Check Reason Callback Routine
 
-A driver can optionally provide a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function, which the system calls after a crash dump file is written.
+A driver can optionally provide a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function, which the system calls after a crash dump file is written.
 
 > [!NOTE]
-> This article describes the bug check *reason* callback routine, and not the [*KBUGCHECK_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_callback_routine) callback function.
+> This article describes the bug check *reason* callback routine, and not the [*KBUGCHECK_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_callback_routine) callback function.
 
 In this callback, the driver can:
 
@@ -21,12 +21,12 @@ In this callback, the driver can:
 
 Use the following routines to register and remove the callback:
 
-* [**KeRegisterBugCheckReasonCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)
-* [**KeDeregisterBugCheckReasonCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)
+* [**KeRegisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)
+* [**KeDeregisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)
 
-This callback type is overloaded, with behavior changing based on the [**KBUGCHECK_CALLBACK_REASON**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_kbugcheck_callback_reason) constant value provided at registration.  This article describes the different usage scenarios.
+This callback type is overloaded, with behavior changing based on the [**KBUGCHECK_CALLBACK_REASON**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_kbugcheck_callback_reason) constant value provided at registration.  This article describes the different usage scenarios.
 
-For general information about bug check data, see [Reading Bug Check Callback Data](https://docs.microsoft.com/windows-hardware/drivers/debugger/reading-bug-check-callback-data).
+For general information about bug check data, see [Reading Bug Check Callback Data](../debugger/reading-bug-check-callback-data.md).
 
 ## Bug Check Callback Routine Restrictions
 
@@ -41,11 +41,11 @@ A bug check callback routine cannot:
 
 Bug check callback routines are guaranteed to run without interruption, so no synchronization is required. (If the bug check routine does use any synchronization mechanisms, the system will deadlock.)
 
-A driver's bug check callback routine can safely use the **READ\_PORT\_<em>XXX</em>**, **READ\_REGISTER\_<em>XXX</em>**, **WRITE\_PORT\_<em>XXX</em>**, and **WRITE\_REGISTER\_<em>XXX</em>** routines to communicate with the driver's device. (For information about these routines, see [Hardware Abstraction Layer Routines](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)).)
+A driver's bug check callback routine can safely use the **READ\_PORT\_<em>XXX</em>**, **READ\_REGISTER\_<em>XXX</em>**, **WRITE\_PORT\_<em>XXX</em>**, and **WRITE\_REGISTER\_<em>XXX</em>** routines to communicate with the driver's device. (For information about these routines, see [Hardware Abstraction Layer Routines](/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)).)
 
 ## Implementing a KbCallbackAddPages Callback Routine
 
-A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type 
+A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type 
 <i>KbCallbackAddPages</i> to add one or more pages of data to a crash dump file when a bug check occurs. To register this routine with the operating system, the driver calls the <b><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback">KeRegisterBugCheckReasonCallback</a></b> routine. Before the driver unloads, it must call the <b><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback">KeDeregisterBugCheckReasonCallback</a></b> routine to remove the registration.
 
 Starting with Windows 8, a registered <i>KbCallbackAddPages</i> routine is called during a <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-memory-dump">kernel memory dump</a> or a <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/complete-memory-dump">complete memory dump</a>. In earlier versions of Windows, a registered <i>KbCallbackAddPages</i> routine is called during a kernel memory dump, but not during a complete memory dump. By default, a kernel memory dump includes only the physical pages that are being used by the Windows kernel at the time that the bug check occurs, whereas a complete memory dump includes all of the physical memory that is used by Windows. A complete memory dump does not, by default, include physical memory that is used by the platform firmware.
@@ -64,7 +64,7 @@ A <i>KbCallbackAddPages</i> routine is very restricted in the actions it can tak
 
 ## Implementing a KbCallbackDumpIo Callback Routine
 
-A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type <i>KbCallbackDumpIo</i> to perform work each time data is written to the crash dump file. The system passes, in the <i>ReasonSpecificData</i> parameter, a pointer to a [**KBUGCHECK_DUMP_IO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_dump_io) structure. The <b>Buffer</b> member points to the current data, and the <b>BufferLength</b> member specifies its length. The <b>Type</b> member indicates the type of data currently being written, such as dump file header information, memory state, or data provided by a driver. For a description of the possible types of information, see the <b><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_kbugcheck_dump_io_type">KBUGCHECK_DUMP_IO_TYPE</a></b> enumeration.
+A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type <i>KbCallbackDumpIo</i> to perform work each time data is written to the crash dump file. The system passes, in the <i>ReasonSpecificData</i> parameter, a pointer to a [**KBUGCHECK_DUMP_IO**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_dump_io) structure. The <b>Buffer</b> member points to the current data, and the <b>BufferLength</b> member specifies its length. The <b>Type</b> member indicates the type of data currently being written, such as dump file header information, memory state, or data provided by a driver. For a description of the possible types of information, see the <b><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_kbugcheck_dump_io_type">KBUGCHECK_DUMP_IO_TYPE</a></b> enumeration.
 
 The system can write the crash dump file either sequentially, or out of order. If the system is writing the crash dump file sequentially, then the <b>Offset</b> member of <i>ReasonSpecificData</i> is -1; otherwise, <b>Offset</b> is set to the current offset, in bytes, in the crash dump file.
 
@@ -78,7 +78,7 @@ A <i>KbCallbackDumpIo</i> routine is strongly restricted in the actions it can t
 
 ## Implementing a KbCallbackSecondaryDumpData Callback Routine
 
-A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type <i>KbCallbackSecondaryDumpData</i> to provide data to append to the crash dump file.
+A kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type <i>KbCallbackSecondaryDumpData</i> to provide data to append to the crash dump file.
 
 The system sets the <b>InBuffer</b>, <b>InBufferLength</b>, <b>OutBuffer</b>, and <b>MaximumAllowed</b> members of the <b><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_secondary_dump_data">KBUGCHECK_SECONDARY_DUMP_DATA</a></b> structure that <i>ReasonSpecificData</i> points to. The <b>MaximumAllowed</b> member specifies the maximum amount of dump data the routine can provide.
 
@@ -101,7 +101,7 @@ A <i>KbCallbackSecondaryDumpData</i> routine is very restricted in the actions i
 
 ## Implementing a KbCallbackTriageDumpData Callback Routine
 
-Starting in Windows 10, version 1809 and Windows Server 2019, a kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type *KbCallbackTriageDumpData* to add virtual memory ranges to a carved minidump file. The system passes, in the <i>ReasonSpecificData</i> parameter, a pointer to a [**KBUGCHECK_TRIAGE_DUMP_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_triage_dump_data) structure that describes the dump data.
+Starting in Windows 10, version 1809 and Windows Server 2019, a kernel-mode driver can implement a [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kbugcheck_reason_callback_routine) callback function of type *KbCallbackTriageDumpData* to add virtual memory ranges to a carved minidump file. The system passes, in the <i>ReasonSpecificData</i> parameter, a pointer to a [**KBUGCHECK_TRIAGE_DUMP_DATA**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_triage_dump_data) structure that describes the dump data.
 
 In the following example, the driver configures a triage dump array and then registers a minimal implementation of the callback:
 
@@ -166,4 +166,3 @@ ExampleBugCheckCallbackRoutine(
 }
 ```
 A <i>KbCallbackTriageDumpData</i> routine is very restricted in the actions it can take. For more information, see [Bug Check Callback Routine Restrictions](#bug-check-callback-routine-restrictions).
-
