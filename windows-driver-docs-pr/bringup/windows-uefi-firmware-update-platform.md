@@ -25,7 +25,7 @@ Devices that run Windows 10 Mobile can follow the UpdateCapsule-based process u
 
 Microsoft strongly recommends that devices running Windows 10 Mobile should update UEFI firmware by using the binary update process. Devices that run Windows 10 Mobile can use the UpdateCapsule-based process only in scenarios where the binary update process cannot be used. For example, if the partition layout of the device prevents the UEFI firmware from being updated by using a binary update package.
 
-For more information about .spkg packages for Windows 10 Mobile, see [Creating packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)).
+For more information about .spkg packages for Windows 10 Mobile, see [Creating packages](/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)).
 
 ## Overview of the UEFI firmware update platform
 
