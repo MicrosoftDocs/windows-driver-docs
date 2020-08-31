@@ -168,6 +168,23 @@ EvtDeviceArmWakeFromSx(
 
 On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
 
+## Reporting wake reason
+
+> [!IMPORTANT]
+> It is mandatory that client drivers report wake reason to NetAdapterCx.
+
+When the NIC hardware wakes up the system, the client driver must report to NetAdapterCx which wake source triggered the wake. For most wake sources, drivers use the [**NET_ADAPTER_WAKE_REASON_PACKET**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_wake_reason_packet) structure to describe the network packet that triggered the wake.
+
+If the [**NET_WAKE_SOURCE_TYPE**](/windows-hardware/drivers/ddi/netwakesource/ne-netwakesource-_net_wake_source_type) is:
+
+- **NetWakeSourceTypeBitmapPattern**, call [**NET_ADAPTER_WAKE_REASON_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_packet_init) to initialize the **NET_ADAPTER_WAKE_REASON_PACKET** structure. Call [**NetAdapterReportWakeReasonPacket**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonpacket) to report this wake reason.
+
+- **NetWakeSourceTypeMagicPacket**, call [**NET_ADAPTER_WAKE_REASON_MAGIC_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_magic_packet_init)  to initialize the **NET_ADAPTER_WAKE_REASON_PACKET** structure. Call **NetAdapterReportWakeReasonPacket** to report this wake reason.
+
+- **NetWakeSourceTypePacketFilterMatch**, call [**NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_filter_packet_init)  to initialize the **NET_ADAPTER_WAKE_REASON_PACKET** structure. Call **NetAdapterReportWakeReasonPacket** to report this wake reason.
+
+- **NetWakeSourceTypeMediaChange**, call [**NetAdapterReportWakeReasonMediaChange**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonmediachange) to report this wake reason.
+
 ## Power management scenarios for Modern Standby system
 
 > [!IMPORTANT]
