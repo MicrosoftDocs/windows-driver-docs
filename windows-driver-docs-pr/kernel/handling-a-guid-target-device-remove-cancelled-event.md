@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-If an [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-remove-device) request fails, the PnP manager sends an [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-remove-device) IRP to the drivers for the device. After the cancel-remove IRP completes successfully, the PnP manager calls any notification callback routines that registered for **EventCategoryTargetDeviceChange** on the device. The PnP manager specifies a *NotificationStructure*.**Event** of GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED.
+If an [**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](./irp-mn-query-remove-device.md) request fails, the PnP manager sends an [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](./irp-mn-cancel-remove-device.md) IRP to the drivers for the device. After the cancel-remove IRP completes successfully, the PnP manager calls any notification callback routines that registered for **EventCategoryTargetDeviceChange** on the device. The PnP manager specifies a *NotificationStructure*.**Event** of GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED.
 
 When handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED event, a notification callback routine should:
 
@@ -21,16 +21,11 @@ When handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED event, a notification ca
 
     Because the driver closed the previous registration handle in response to the query-remove notification, the driver must open a new handle. The driver must:
 
-    1.  Remove the old registration with [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification).
+    1.  Remove the old registration with [**IoUnregisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification).
 
     2.  Open a new handle to the device.
 
     3.  Reregister for notification on the new handle with **IoRegisterPlugPlayNotification**.
 
  
-
- 
-
-
-
 

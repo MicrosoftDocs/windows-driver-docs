@@ -61,7 +61,7 @@ See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/i
 
 Reserved for system use. Drivers must not send this IRP.
 
-Instead, see the reference page for the [**IoRequestDeviceEject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject) routine.
+Instead, see the reference page for the [**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject) routine.
 
 Requirements
 ------------
@@ -82,12 +82,7 @@ Requirements
 ## See also
 
 
-[**IoRequestDeviceEject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject)
+[**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject)
 
  
-
- 
-
-
-
 

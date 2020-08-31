@@ -104,7 +104,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="even">
 <td><p><em>AdapterControl</em></p></td>
 <td><p>Initiates DMA operations.</p></td>
-<td><p><a href="adapter-objects-and-dma.md" data-raw-source="[Adapter Objects and DMA](adapter-objects-and-dma.md)">Adapter Objects and DMA</a></p></td>
+<td><p><a href="adapter-objects-and-dma.md" data-raw-source="[Adapter Objects and DMA](./introduction-to-adapter-objects.md)">Adapter Objects and DMA</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><em>IoCompletion</em></p></td>
@@ -131,9 +131,4 @@ The current IRP and target device object are input parameters to many standard r
 By convention, the system-supplied drivers prepend an identifying, driver-specific or device-specific prefix to the name of every standard routine except **DriverEntry**. As an example, this documentation uses "DD", as shown in the [driver object illustration](introduction-to-driver-objects.md#driver-object-illustration). Following this convention makes it easier to debug and maintain drivers.
 
  
-
- 
-
-
-
 

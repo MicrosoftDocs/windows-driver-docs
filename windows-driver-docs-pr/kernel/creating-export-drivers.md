@@ -17,7 +17,7 @@ Specifically, an export driver does not have a dispatch table, it does not have 
 
 While an export driver does not have a dispatch table, it can supply dispatch routines to a standard driver. The standard driver inserts the dispatch routines into its own dispatch table.
 
-An export driver has a stub [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine that is never called.
+An export driver has a stub [**DriverEntry**](/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_initialize) routine that is never called.
 
 Kernel-mode export drivers are especially well suited for implementing the part of a driver pair that is independent of underlying stack and hardware characteristics.
 
@@ -75,12 +75,4 @@ The system calls a kernel-mode DLL's DllUnload routine when it unloads the DLL.
 ```cpp
 NTSTATUS DllUnload(void);
 ```
-Export drivers must provide DllUnload routines. You can use the DllUnload routine to release any resources used by the routines in the DLL. 
-
-
-
-
-
-
-
-
+Export drivers must provide DllUnload routines. You can use the DllUnload routine to release any resources used by the routines in the DLL.

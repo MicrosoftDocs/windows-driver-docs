@@ -61,7 +61,7 @@ On Windows 98/Me, a stop IRP is also used after a failed start and when a device
 
 A driver must not fail this IRP. If a driver cannot release the device's hardware resources, it must fail the preceding query-stop IRP.
 
-See [Stopping a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/stopping-a-device) for detailed information about handling stop IRPs.
+See [Stopping a Device](./stopping-a-device.md) for detailed information about handling stop IRPs.
 
 **Sending This IRP**
 
@@ -90,14 +90,9 @@ Requirements
 
 [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md)
 
-[**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate)
+[**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate)
 
-[**IoRegisterDeviceInterface**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface)
-
- 
+[**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface)
 
  
-
-
-
 

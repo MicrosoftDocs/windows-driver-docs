@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using the CONNECT\_LINE\_BASED Version of IoConnectInterruptEx
 
 
-For Windows Vista and later operating systems, a driver can use the CONNECT\_LINE\_BASED version of [**IoConnectInterruptEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register an [*InterruptService*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine for the driver's line-based interrupts. (Driver for earlier operating systems can use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.)
+For Windows Vista and later operating systems, a driver can use the CONNECT\_LINE\_BASED version of [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register an [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine for the driver's line-based interrupts. (Driver for earlier operating systems can use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.)
 
 **Note**   You can use this method only for drivers that register a single interrupt service routine (ISR) for all of its line-based interrupts. If the driver can receive multiple interrupts, it must use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.
 
@@ -56,9 +56,4 @@ if (!NT_SUCCESS(status)) {
 ```
 
  
-
- 
-
-
-
 
