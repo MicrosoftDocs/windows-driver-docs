@@ -28,13 +28,13 @@ An additional tool for debugging a network driver is the collection of regular d
 
 ## Driver Verifier
 
-Another useful tool for testing an NDIS driver is NDIS Verifier. For more information, see [Rules for NDIS Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers) and [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier).
+Another useful tool for testing an NDIS driver is NDIS Verifier. For more information, see [Rules for NDIS Drivers](../devtest/sdv-rules-for-ndis-drivers.md) and [Static Driver Verifier](../devtest/static-driver-verifier.md).
 
 ## NDIS Debugging Resources
 
 Episode 175 of the Defrag Tools show covers NDIS debugging - [Defrag Tools #175 - Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack).
 
-The NDIS team blog archives are available at [The NDIS blog](https://docs.microsoft.com/archive/blogs/ndis/).
+The NDIS team blog archives are available at [The NDIS blog](/archive/blogs/ndis/).
 
 ## NDIS Bug checks
 
@@ -45,4 +45,3 @@ A common NDIS misbehavior related bug check is [Bug Check 0xD1: DRIVER_IRQL_NOT_
 Another common issue is [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](bug-check-0x9f--driver-power-state-failure.md).
 
 First step with all bug checks is to locate a good dump file, load it in the Windows debugger and use the [!analyze](-analyze.md) command. For more information, see [Using the !analyze Extension](using-the--analyze-extension.md).
-

@@ -96,14 +96,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**DEBUG\_SYMBOL\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_symbol_parameters)
+[**DEBUG\_SYMBOL\_PARAMETERS**](/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_symbol_parameters)
 
  
-
- 
-
-
-
-
-
 

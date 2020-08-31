@@ -85,7 +85,7 @@ Remarks
 
 You must call **plmdebug /enableDebug** before you call any of the suspend, resume, or terminate functions.
 
-The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](https://docs.microsoft.com/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](https://docs.microsoft.com/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
+The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
 
 Examples
 --------
@@ -181,6 +181,6 @@ Then activate the desired task using its registration GUID, that you enumerated.
 
 ## See also
 
-[How to trigger suspend, resume, and background events while debugging UWP apps in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)
+[How to trigger suspend, resume, and background events while debugging UWP apps in Visual Studio](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)

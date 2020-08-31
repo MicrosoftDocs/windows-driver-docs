@@ -29,7 +29,7 @@ These tokens include:
 
 [**.block**](-block.md)
 
-[**.break**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-break)
+[**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200)
 
 [**.catch**](-catch.md)
 
@@ -54,10 +54,4 @@ These tokens include:
 [**.while**](-while.md)
 
  
-
- 
-
-
-
-
 

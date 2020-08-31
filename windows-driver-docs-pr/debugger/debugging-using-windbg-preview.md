@@ -90,7 +90,7 @@ Debugging your universal app or background task is now a single click or select.
 
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
-For more information, see [Launch App Package](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
+For more information, see [Launch App Package](./windbg-user-mode-preview.md#launch-app-package).
 
 ### Attach to a process
 
@@ -137,7 +137,7 @@ Your feedback will help guide WinDbg's development going forward.
 ### Team Blog
 
 The debugger team blog, although now inactive, includes tips and tricks.
-[https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
+[/archive/blogs/windbg/](/archive/blogs/windbg/)
 
 ## Videos
 

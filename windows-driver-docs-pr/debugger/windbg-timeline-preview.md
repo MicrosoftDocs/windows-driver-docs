@@ -92,9 +92,9 @@ Pan from side to side using Shift + Scroll wheel.
 
 To demonstrate debugging timeline techniques, the [Time Travel Debugging Walkthrough](time-travel-debugging-walkthrough.md) is reused here. This demonstration assumes that you have completed the first two steps to build the sample code and created the TTD recording using the first two steps described there.
 
-[Section 1: Build the sample code](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough#build)
+[Section 1: Build the sample code](./time-travel-debugging-walkthrough.md#build)
 
-[Section 2: Record a trace of the "DisplayGreeting" sample](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-walkthrough#record)
+[Section 2: Record a trace of the "DisplayGreeting" sample](./time-travel-debugging-walkthrough.md#record)
 
 In this scenario, the first step is to find the exception in the time travel trace. This can be done by double clicking on the only exception that is on the timeline.
 

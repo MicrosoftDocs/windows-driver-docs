@@ -113,7 +113,7 @@ This bugcheck can only occur by memory corruption due to physical memory access.
 
 NOTE:  Compressed Store Manager can detect if the corruption was caused by a single-bit error, and automatically corrects this condition without raising a bug check. This bugcheck is reported by the Compressed Store Manager if the corruption was not caused by a single bit error.
 
-For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](https://docs.microsoft.com/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+For more information on Windows memory manager and memory compression, see [Windows Internals 7th Edition Part 1](/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## Resolution
 -----
@@ -127,6 +127,6 @@ To investigate if this bug check is caused by defective RAM hardware, run the Wi
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[Windows Kernel-Mode Memory Manager](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-memory-manager)
+[Windows Kernel-Mode Memory Manager](../kernel/windows-kernel-mode-memory-manager.md)
 
 [Channel 9 video on memory compression](https://channel9.msdn.com/Blogs/Seth-Juarez/Memory-Compression-in-Windows-10-RTM)

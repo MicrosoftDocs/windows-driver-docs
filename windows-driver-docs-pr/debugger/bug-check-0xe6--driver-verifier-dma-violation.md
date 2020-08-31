@@ -22,7 +22,7 @@ The DRIVER\_VERIFIER\_DMA\_VIOLATION bug check has a value of 0x000000E6. This i
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 > [!NOTE]
-> The E6 major bugcheck code can be observed when Driver Verifier is not enabled. Please see the [DMA Verification](https://docs.microsoft.com/windows-hardware/drivers/devtest/dma-verification) page for more information if you are experiencing this code without Driver Verifier enabled. 
+> The E6 major bugcheck code can be observed when Driver Verifier is not enabled. Please see the [DMA Verification](../devtest/dma-verification.md) page for more information if you are experiencing this code without Driver Verifier enabled. 
 
 ## DRIVER\_VERIFIER\_DMA\_VIOLATION Parameters
 
@@ -314,12 +314,7 @@ This bug check can only occur when Driver Verifier has been instructed to monito
 
 If you are the driver writer, use the information obtained through this bug check to fix the bugs in your code.
 
-For more information on Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+For more information on Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
 
  
-
- 
-
-
-
 

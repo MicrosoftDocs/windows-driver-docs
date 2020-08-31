@@ -35,7 +35,7 @@ The host computer can use any wired or wireless network adapter, but the target 
 
 
 1.  Connect the network adapter of the target computer to a network hub or switch using and appropriate network cable. Connect the network adapter of the host computer to a network hub or switch using a standard cable or a wireless connection.
-2.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+2.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 3.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 4.  For **Connection Type**, choose **Network**.
 
@@ -158,11 +158,4 @@ Reboot the target computer.
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 8](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md)
 
  
-
- 
-
-
-
-
-
 

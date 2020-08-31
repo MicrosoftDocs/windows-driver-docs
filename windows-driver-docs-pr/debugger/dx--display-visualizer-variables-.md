@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # dx (Display Debugger Object Model Expression)
 
 
-The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
 
 ```dbgcmd
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]
@@ -365,10 +365,3 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
-
-
-
-
-
-
-

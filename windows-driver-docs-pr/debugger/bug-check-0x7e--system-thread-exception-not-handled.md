@@ -68,7 +68,7 @@ Common exception codes include the following:
 
 - 0xC0000005: STATUS\_ACCESS\_VIOLATION indicates a memory access violation occurred.
 
-For a complete list of exception codes, see [NTSTATUS values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
+For a complete list of exception codes, see [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
 
 Resolution

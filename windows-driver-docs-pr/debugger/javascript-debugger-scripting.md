@@ -1201,9 +1201,9 @@ With that reference in your JavaScript file, VS Code will automatically give you
 
 The following are JavaScript resources that may be useful as you develop JavaScript debugging extensions.
 
--   [Writing JavaScript Code](https://docs.microsoft.com/scripting/javascript/writing-javascript-code)
+-   [Writing JavaScript Code](/scripting/javascript/writing-javascript-code)
 
--   [JScript Language Tour](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/t895bwkh(v=vs.100))
+-   [JScript Language Tour](/previous-versions/visualstudio/visual-studio-2010/t895bwkh(v=vs.100))
 
 -   [Mozilla JavaScript Reference](https://developer.mozilla.org/docs/Web/JavaScript)
 
@@ -1217,13 +1217,3 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
 
 [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
-
-
-
-
-
-
-
-
-
-
