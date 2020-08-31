@@ -22,7 +22,7 @@ Initial installation of your port-connected device can occur in many ways, and t
 | System Working State (S0) | Base Plug and Play |
 | System in Sleep State (S1-S4) | See [Power management](power-management.md) |
 
-For more information, see [System Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-power-states).
+For more information, see [System Power States](../kernel/system-power-states.md).
 
 The most common system power state at which initial installation of your device will occur is System Working State S0. Most of your device installation testing should initially be focused here, but it is important to verify installation during other system power states as well.
 

@@ -45,7 +45,7 @@ If your driver requires updated versions of the core driver package to work prop
 
 2.  Include the entire Windows Vista core driver package in a subdirectory of your driver package.
 
-3.  Use the [**INF CopyINF directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyinf-directive) to preload the updated core driver into the driver store.
+3.  Use the [**INF CopyINF directive**](../install/inf-copyinf-directive.md) to preload the updated core driver into the driver store.
 
 4.  Use the INF **InboxVersionRequired**=*&lt;version of the updated core driver&gt;* directive to ensure only the newer version of the core driver package is used.
 
@@ -54,9 +54,4 @@ If your driver requires updated versions of the core driver package to work prop
 6.  In your install section for Windows operating systems earlier than Windows Vista, copy the required files directly out of the included core driver package as if they were part of your driver.
 
  
-
- 
-
-
-
 

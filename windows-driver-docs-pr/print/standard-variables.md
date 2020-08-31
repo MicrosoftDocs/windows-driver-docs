@@ -170,8 +170,8 @@ The following table contains all of the standard variables, in alphabetic order.
 </tr>
 <tr class="even">
 <td><p><strong>PageNumber</strong></p></td>
-<td><p>The number of the page currently being printed. Note that this does not necessarily correspond to the application's page number, but rather the number of times <a href="https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvsendpage" data-raw-source="[&lt;em&gt;DrvSendPage&lt;/em&gt;](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvsendpage)"><em>DrvSendPage</em></a> has been called.</p>
-<p>This value is initialized by <a href="https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvstartdoc" data-raw-source="[&lt;strong&gt;DrvStartDoc&lt;/strong&gt;](https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvstartdoc)"><strong>DrvStartDoc</strong></a> and is incremented by <strong>DrvSendPage</strong>.</p>
+<td><p>The number of the page currently being printed. Note that this does not necessarily correspond to the application's page number, but rather the number of times <a href="https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvsendpage" data-raw-source="[&lt;em&gt;DrvSendPage&lt;/em&gt;](/windows/win32/api/winddi/nf-winddi-drvsendpage)"><em>DrvSendPage</em></a> has been called.</p>
+<p>This value is initialized by <a href="https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvstartdoc" data-raw-source="[&lt;strong&gt;DrvStartDoc&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvstartdoc)"><strong>DrvStartDoc</strong></a> and is incremented by <strong>DrvSendPage</strong>.</p>
 <p>For example, if N-up = 4 is selected, <strong>PageNumber</strong> is incremented to 2 only when the fifth page of the document is being printed.</p>
 <p>As another example, if a document is printed in reverse order (back to front) the <strong>PageNumber</strong> standard variable still reports the first page to be printed as page 1, even though this is the last page of the document.</p>
 <p>This behavior is needed to properly support the auto-duplexing feature.</p>
@@ -258,9 +258,4 @@ Type of the current pattern brush. Value can be:
  
 
  
-
- 
-
-
-
 
