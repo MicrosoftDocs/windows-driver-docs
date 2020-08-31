@@ -21,7 +21,7 @@ In Windows 7 and later versions of the Windows operating systems, the HD audio c
 
 For more information about FILE\_DEVICE\_UNKNOWN, METHOD\_BUFFERED, and FILE\_ANY\_ACCESS, see the Devioctl.h header file in the Windows SDK.
 
-To initiate communication with the audio codec, the class driver calls the [DeviceIoControl](https://docs.microsoft.com/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function with the following parameters.
+To initiate communication with the audio codec, the class driver calls the [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function with the following parameters.
 
 ```cpp
 BOOL DeviceIoControl(
@@ -36,7 +36,7 @@ BOOL DeviceIoControl(
 );
 ```
 
-If the call to [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) for a more detailed error message.
+If the call to [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. The class driver can call [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) for a more detailed error message.
 
 When the audio driver must change pin configuration defaults, it can use IOCTL\_AZALIABUS\_SENDVERBS to send and receive Set and Get verbs from the audio codec. If communication with the audio codec is not about pin configuration, the audio codec only responds to the Get verb.
 
@@ -156,9 +156,4 @@ typedef struct _UserModeCodecResponsePacket
 ```
 
  
-
- 
-
-
-
 

@@ -47,7 +47,7 @@ The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to inform a GFX
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>WCHAR array</p></td>
 </tr>
 </tbody>
@@ -66,9 +66,9 @@ Remarks
 
 The target for this set-only property request is a GFX filter that is configured for use as either a capture- or render/capture-GFX filter.
 
-To determine the size of the buffer needed to hold the property value, see [Basic Support Queries for Audio Properties](https://docs.microsoft.com/windows-hardware/drivers/audio/basic-support-queries-for-audio-properties).
+To determine the size of the buffer needed to hold the property value, see [Basic Support Queries for Audio Properties](./basic-support-queries-for-audio-properties.md).
 
-For additional information about device IDs, see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
+For additional information about device IDs, see [Device Identification Strings](../install/device-identification-strings.md).
 
 Requirements
 ------------
@@ -89,14 +89,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

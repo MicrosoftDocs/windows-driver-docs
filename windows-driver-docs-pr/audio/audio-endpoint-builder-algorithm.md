@@ -15,9 +15,9 @@ The AudioEndpointBuilder service uses an algorithm to discover and enumerate end
 
 In Windows XP, the audio model used the term audio device to refer to a conceptual device in the Plug and Play (PnP) tree. In Windows Vista and later versions of Windows, the concept of an audio device has been redesigned to better represent the device that the user physically interacts with.
 
-With two new APIs in Windows Vista, [MMDevice API](https://docs.microsoft.com/windows/win32/coreaudio/mmdevice-api) and [WASAPI](https://docs.microsoft.com/windows/win32/coreaudio/wasapi), you can access and manipulate these new audio devices. The MMDevice API refers to the new audio devices as endpoints.
+With two new APIs in Windows Vista, [MMDevice API](/windows/win32/coreaudio/mmdevice-api) and [WASAPI](/windows/win32/coreaudio/wasapi), you can access and manipulate these new audio devices. The MMDevice API refers to the new audio devices as endpoints.
 
-The AudioEndpointBuilder service monitors the [**KSCATEGORY\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/install/kscategory-audio) class for device interface arrivals and removals. When an audio device driver registers a new instance of the KSCATEGORY\_AUDIO device interface class, the AudioEndpointBuilder service detects the device interface notification and uses an algorithm to examine the topology of the audio devices in the system and take appropriate action.
+The AudioEndpointBuilder service monitors the [**KSCATEGORY\_AUDIO**](../install/kscategory-audio.md) class for device interface arrivals and removals. When an audio device driver registers a new instance of the KSCATEGORY\_AUDIO device interface class, the AudioEndpointBuilder service detects the device interface notification and uses an algorithm to examine the topology of the audio devices in the system and take appropriate action.
 
 The following list summarizes how the algorithm that is used by AudioEndpointBuilder works:
 
@@ -27,7 +27,7 @@ The following list summarizes how the algorithm that is used by AudioEndpointBui
 
 3.  Sets the default properties for the endpoint. For example, AudioEndpointBuilder sets the name, icon, and the form factor.
 
-4.  Determines whether there is a path from the endpoint to a host pin that supports pulse code modulation (PCM), audio codec-3 (AC3), or Windows media video (WMV). A host pin is a KSPIN structure with its Communication member set to KSPIN\_COMMUNICATION\_SINK or KSPIN\_COMMUNICATION\_BOTH. For more information about the KSPIN structure, see [**KSPIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_kspin).
+4.  Determines whether there is a path from the endpoint to a host pin that supports pulse code modulation (PCM), audio codec-3 (AC3), or Windows media video (WMV). A host pin is a KSPIN structure with its Communication member set to KSPIN\_COMMUNICATION\_SINK or KSPIN\_COMMUNICATION\_BOTH. For more information about the KSPIN structure, see [**KSPIN**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin).
 
 5.  Populates the endpoint PropertyStore with property information from the registry keys of the audio device interface.
 
@@ -41,7 +41,7 @@ The following list summarizes how the algorithm that is used by AudioEndpointBui
 
 7.  Sets this endpoint as the default endpoint, if that is what is specified in the associated INF file.
 
-After the endpoints have been enumerated, clients of the audio system can manipulate them directly by using the new Windows Vista APIs (as indicated previously) or indirectly by using the more familiar APIs such as Wave, [DirectShow](https://docs.microsoft.com/windows/win32/directshow/directshow) or [DirectSound.](https://docs.microsoft.com/previous-versions/windows/desktop/bb318665(v=vs.85)) New API methods have been provided so that audio clients can start with the MMDevice ID of an endpoint and access the Wave or DirectSound ID for the same endpoint.
+After the endpoints have been enumerated, clients of the audio system can manipulate them directly by using the new Windows Vista APIs (as indicated previously) or indirectly by using the more familiar APIs such as Wave, [DirectShow](/windows/win32/directshow/directshow) or [DirectSound.](/previous-versions/windows/desktop/bb318665(v=vs.85)) New API methods have been provided so that audio clients can start with the MMDevice ID of an endpoint and access the Wave or DirectSound ID for the same endpoint.
 
 When you use endpoints, you can take advantage of the following:
 
@@ -120,9 +120,4 @@ If you develop your own audio device driver and INF file to work with your audio
 If you use the MMDevice API to select a default endpoint and the available endpoints are ranked the same, the MMDevice API will alphabetize the Endpoint IDs to determine which endpoint to select as default. For example, if an audio adapter has both line-out and line-in connectors, and the associated INF file does not select either one to be the default at the time of installation, the MMDevice API identifies which Endpoint IDs is first alphabetically and sets that connector as the default. This selection persists after you restart the system because the Endpoint IDs are persistent. However, the selection does not persist if a higher-ranking endpoint (for example, a second adapter with a microphone connector) appears in the system.
 
  
-
- 
-
-
-
 

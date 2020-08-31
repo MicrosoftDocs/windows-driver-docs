@@ -37,7 +37,7 @@ A hardware offloaded APO must follow the same basic requirements and design prin
 
 For hardware offloaded APOs, some additional consideration must be given to supported audio formats.
 
-Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
+Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
 
 ```cpp
 HRESULT IsInputFormatSupported(
@@ -63,12 +63,12 @@ Implement the following INF file entries to define the effects that will be load
 
 |Property Key|GUID|
 |----|----|
-| [PKEY\_FX\_Offload\_StreamEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-offload-streameffectclsid)                                                  | {D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},11 |
-| [PKEY\_FX\_Offload\_ModeEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-offload-modeeffectclsid)                                                      | {D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},12 |
-| [PKEY\_SFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-sfx-offload-processingmodes-supported-for-streaming) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},11 |
-| [PKEY\_MFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-mfx-offload-processingmodes-supported-for-streaming) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},12 |
+| [PKEY\_FX\_Offload\_StreamEffectClsid](./pkey-fx-offload-streameffectclsid.md)                                                  | {D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},11 |
+| [PKEY\_FX\_Offload\_ModeEffectClsid](./pkey-fx-offload-modeeffectclsid.md)                                                      | {D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},12 |
+| [PKEY\_SFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](./pkey-sfx-offload-processingmodes-supported-for-streaming.md) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},11 |
+| [PKEY\_MFX\_Offload\_ProcessingModes\_Supported\_For\_Streaming](./pkey-mfx-offload-processingmodes-supported-for-streaming.md) | {D3993A3F-99C2-4402-B5EC-A92A0367664B},12 |
 
 ## Related topics
 
 [Implementing Audio Processing Objects](implementing-audio-processing-objects.md)  
-[Windows Audio Processing Objects](windows-audio-processing-objects.md)  
+[Windows Audio Processing Objects](windows-audio-processing-objects.md)
