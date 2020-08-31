@@ -17,9 +17,6 @@ The `KSPROPSETID_Synth` property set contains properties that are global to the 
 
 Property items in this set are specified by KSPROPERTY\_SYNTH enumeration values, as defined in header file Dmusprop.h.
 
-## <span id="ddk_ksproperty_synth_caps_ks"></span><span id="DDK_KSPROPERTY_SYNTH_CAPS_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_CAPS property is used by the system to determine the capabilities of a synthesizer.
@@ -73,9 +70,6 @@ For more information, see [**SYNTHCAPS**](/windows-hardware/drivers/ddi/dmusprop
 A KSPROPERTY\_SYNTH\_CAPS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
 For more information about synthesizer capabilities, see the **IDirectMusicPort::GetCaps** method and the DMUS\_PORTCAPS structure in the Microsoft Windows SDK documentation.
-
-## <span id="ddk_ksproperty_synth_channelgroups_ks"></span><span id="DDK_KSPROPERTY_SYNTH_CHANNELGROUPS_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -143,9 +137,6 @@ A KSPROPERTY\_SYNTH\_CAPS property request returns STATUS\_SUCCESS to indicate t
  
 
 For more information about channel groups, see the descriptions of the **IDirectMusicPort::GetNumChannelGroups** and **IDirectMusicPort::SetNumChannelGroups** methods in the Microsoft Windows SDK documentation.
-
-## <span id="ddk_ksproperty_synth_latencyclock_ks"></span><span id="DDK_KSPROPERTY_SYNTH_LATENCYCLOCK_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -226,9 +217,6 @@ For more information about latency clocks, see the following:
 
 -   The descriptions of the **IDirectMusicPort::GetLatencyClock** and **IReferenceClock::GetTime** methods in the Microsoft Windows SDK documentation.
 
-## <span id="ddk_ksproperty_synth_portparameters_ks"></span><span id="DDK_KSPROPERTY_SYNTH_PORTPARAMETERS_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_PORTPARAMETERS property is used to get the configuration parameters for a DirectMusic *port*, which is a DirectMusic term for a device that sends or receives music data. (In KS terminology, DirectMusic port does not correspond to a DMus port driver. It corresponds to a render or capture pin on a DirectMusic filter.)
@@ -305,9 +293,6 @@ If the miniport driver makes no changes to the caller's SYNTH\_PORTPARAMS, the c
 By convention, the driver also fills in values for parameters that do not have corresponding bits set in the **dwValidParams** member of SYNTH\_PORTPARAMS. This allows the caller to see what default values the miniport driver used for these parameters. The miniport driver outputs the actual parameter values that it used to build the wave-interface device.
 
 The miniport driver's KSPROPERTY\_SYNTH\_PORTPARAMETERS handler should be prepared to correctly handle requests for sample-rate changes.
-
-## <span id="ddk_ksproperty_synth_runningstats_ks"></span><span id="DDK_KSPROPERTY_SYNTH_RUNNINGSTATS_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -391,9 +376,6 @@ A KSPROPERTY\_SYNTH\_RUNNINGSTATS property request returns STATUS\_SUCCESS to in
 The synthesizer's performance statistics are continuously updated while the device remains in the KSSTATE\_RUN state. Each time the device enters this state, it resets the statistics, which zeros cumulative values such as the peak volume and number of notes lost.
 
 For additional information, see the description of the **IDirectMusicPort::GetRunningStats** method and the DMUS\_SYNTHSTATS structure in the Microsoft Windows SDK documentation.
-
-## <span id="ddk_ksproperty_synth_voicepriority_ks"></span><span id="DDK_KSPROPERTY_SYNTH_VOICEPRIORITY_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -516,9 +498,6 @@ A KSPROPERTY\_SYNTH\_VOICEPRIORITY property request returns STATUS\_SUCCESS to i
 
 For more information about voice priorities, see the descriptions of the **IDirectMusicPort::GetChannelPriority** and **IDirectMusicPort::SetChannelPriority** methods in the Microsoft Windows SDK documentation.
 
-## <span id="ddk_ksproperty_synth_volume_ks"></span><span id="DDK_KSPROPERTY_SYNTH_VOLUME_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_VOLUME property gets or sets the volume level of a synthesizer device.
@@ -581,10 +560,6 @@ A KSPROPERTY\_SYNTH\_VOLUME property request returns STATUS\_SUCCESS to indicate
 </tr>
 </tbody>
 </table>
-
- 
-
-## <span id="ddk_ksproperty_synth_volumeboost_ks"></span><span id="DDK_KSPROPERTY_SYNTH_VOLUMEBOOST_KS"></span>
 
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
@@ -650,7 +625,6 @@ A KSPROPERTY\_SYNTH\_VOLUMEBOOST property request returns STATUS\_SUCCESS to ind
 </tbody>
 </table>
 
- 
 
 No other boost should be added to the output. The synthesizer should follow strict DLS Level-1 conventions for articulation.
 

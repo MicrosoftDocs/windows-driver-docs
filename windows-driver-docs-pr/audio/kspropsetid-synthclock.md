@@ -19,9 +19,6 @@ For more information, see [Master Clocks](../stream/master-clocks.md) and [Synth
 
 Property items in this set are specified by KSPROPERTY\_SYNTHCLOCK enumeration values, as defined in header file Dmusprop.h.
 
-## <span id="ddk_ksproperty_synth_masterclock_ks"></span><span id="DDK_KSPROPERTY_SYNTH_MASTERCLOCK_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_MASTERCLOCK property is used to get the master clock time.
