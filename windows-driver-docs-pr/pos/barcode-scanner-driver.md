@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Barcode scanner driver sample
 
-The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and ARM platforms. For more information on universal drivers, go to [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
+The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and ARM platforms. For more information on universal drivers, go to [Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md).
 
 ## Requirements
 
@@ -16,7 +16,7 @@ The barcode scanner driver sample demonstrates how to create a universal driver 
 
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com) (any version)
 
-- [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+- [Windows Driver Kit (WDK) 10](../download-the-wdk.md)
 
 The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio.
 

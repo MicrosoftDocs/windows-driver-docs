@@ -25,4 +25,4 @@ This section provides driver design guidance for point-of-service (POS) devices.
 
 ## Related sections
 
-[POS DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_pos)
+[POS DDI reference](/windows-hardware/drivers/ddi/_pos)
