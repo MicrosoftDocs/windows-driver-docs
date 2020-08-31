@@ -13,13 +13,7 @@ The **DeleteInitiatorNodeName** method informs the miniport driver that manages 
 
 Miniport drivers that implement the [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md) are not required to support this method.
 
-The MSiSCSI\_Operations WMI Class is unpublished. For a description of the parameters of the **DeleteInitiatorNodeName** method, see the member descriptions for the [**DeleteInitiatorNodeName\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_deleteinitiatornodename_in) and [**DeleteInitiatorNodeName\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_deleteinitiatornodename_out) structures.
+The MSiSCSI\_Operations WMI Class is unpublished. For a description of the parameters of the **DeleteInitiatorNodeName** method, see the member descriptions for the [**DeleteInitiatorNodeName\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_deleteinitiatornodename_in) and [**DeleteInitiatorNodeName\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_deleteinitiatornodename_out) structures.
 
  
-
- 
-
-
-
-
 

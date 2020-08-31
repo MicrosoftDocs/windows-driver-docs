@@ -16,4 +16,4 @@ ms.localizationpriority: medium
 
 - [StorNVMe SCSI translation support](stornvme-scsi-translation-support.md)
 
-See [Working with NVMe drives](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.
+See [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.

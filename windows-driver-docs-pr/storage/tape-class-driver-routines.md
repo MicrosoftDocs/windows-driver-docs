@@ -14,6 +14,6 @@ ms.localizationpriority: medium
 
 The system-supplied tape class driver handles generic tape operations and provides operating system-specific support to individual tape miniclass drivers.
 
-These routines are defined in *minitape.h*. See [minitape.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/minitape/) for a list of tape class driver routines.
+These routines are defined in *minitape.h*. See [minitape.h header](/windows-hardware/drivers/ddi/minitape/) for a list of tape class driver routines.
 
 For a list of tape miniport driver routines, see [Tape Miniclass Driver Routines](tape-miniclass-driver-routines.md).

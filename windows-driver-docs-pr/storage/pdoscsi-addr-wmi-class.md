@@ -24,13 +24,7 @@ class PDOSCSI_ADDR
 };
 ```
 
-When this class definition iscompiled by the WMI tool suite, it produces the [**PDOSCSI\_ADDR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_pdoscsi_addr) data structure. There are no methods associated with this WMI class.
+When this class definition iscompiled by the WMI tool suite, it produces the [**PDOSCSI\_ADDR**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_pdoscsi_addr) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 
