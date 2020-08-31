@@ -18,7 +18,7 @@ To display your Vendor UI from the Control Panel, you will have to:
 
 - Write a custom wizard.
 
-There is no relationship between the custom wizard and the dialog you replaced using the [**IWiaUIExtension::DeviceDialog**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)) interface.
+There is no relationship between the custom wizard and the dialog you replaced using the [**IWiaUIExtension::DeviceDialog**](/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)) interface.
 
 Note that the icon in control panel will always default to the wizard in Windows Me and Windows XP.
 

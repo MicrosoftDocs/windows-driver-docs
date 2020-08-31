@@ -24,7 +24,7 @@ The following diagram illustrates the logical breakdown of a WIA minidriver and 
 
 ### WIA Minidriver Interfaces
 
-A WIA minidriver is a COM object that implements the **IUnknown** COM interface and two WIA-specific COM interfaces: [IStiUSD](istiusd-com-interface.md) and [IWiaMiniDrv](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv). The WIA minidriver interface layer implements these interfaces and is the entry point into the WIA minidriver. Applications do not call the WIA minidriver interfaces directly; only the WIA service calls into these interfaces.
+A WIA minidriver is a COM object that implements the **IUnknown** COM interface and two WIA-specific COM interfaces: [IStiUSD](istiusd-com-interface.md) and [IWiaMiniDrv](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv). The WIA minidriver interface layer implements these interfaces and is the entry point into the WIA minidriver. Applications do not call the WIA minidriver interfaces directly; only the WIA service calls into these interfaces.
 
 ### Device Communication
 
@@ -39,9 +39,4 @@ This sections provides additional information about the WIA minidriver and its c
 [WIA Components](wia-components.md)
 
  
-
- 
-
-
-
 
