@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Open the networks list
 
 
-You can open the networks list by calling the [**ShowConnectionUI**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork#Windows_Networking_NetworkOperators_MobileBroadbandNetwork_ShowConnectionUI) method of the current network object for the account.
+You can open the networks list by calling the [**ShowConnectionUI**](/uwp/api/Windows.Networking.NetworkOperators.MobileBroadbandNetwork#Windows_Networking_NetworkOperators_MobileBroadbandNetwork_ShowConnectionUI) method of the current network object for the account.
 
 For example:
 
@@ -20,14 +20,7 @@ account.currentNetwork.showConnectionUI()
 ## <span id="related_topics"></span>Related topics
 
 
-[Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
+[Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)
 
  
-
- 
-
-
-
-
-
 
