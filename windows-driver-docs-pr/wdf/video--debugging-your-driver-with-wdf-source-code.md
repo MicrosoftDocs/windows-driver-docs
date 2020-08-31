@@ -67,7 +67,7 @@ If the above example did not work as expected, you may need to perform one or mo
 
 ### Enable Source Mode Debugging
 
-Make sure [debugging in Source Mode](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-in-source-mode) is enabled. Open the Debug menu and confirm that Source Mode is checked.
+Make sure [debugging in Source Mode](../debugger/debugging-in-source-mode.md) is enabled. Open the Debug menu and confirm that Source Mode is checked.
 
 ### Clear Stale Symbols Cache
 

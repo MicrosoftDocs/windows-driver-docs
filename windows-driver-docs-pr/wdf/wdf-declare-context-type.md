@@ -38,7 +38,7 @@ This macro does not return a value.
 Remarks
 -------
 
-For more information about using this macro, see [Framework Object Context Space](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-context-space).
+For more information about using this macro, see [Framework Object Context Space](./framework-object-context-space.md).
 
 Examples
 --------
@@ -113,11 +113,4 @@ Requirements
 [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md)
 
  
-
- 
-
-
-
-
-
 
