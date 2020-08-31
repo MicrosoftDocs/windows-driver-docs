@@ -23,7 +23,7 @@ After Windows is installed, a [driver package](driver-packages.md) can be preloa
 
 2.  To preload a driver package for a computer network, a network administrator can copy the driver package to a shared directory on a network server and concatenate the path of the shared directory to the **DevicePath** value entry in the registry of the network computers that have access to the shared directory.
 
-The **DevicePath** value entry is a [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-typed entry that contains the *%SystemRoot%\\inf* directory path and zero or more directory path entries. The format of the **DevicePath** value entry is the following, where each directory path is either a local directory path or a path of a shared directory on a network server where the preloaded [driver packages](driver-packages.md) are located:
+The **DevicePath** value entry is a [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types)-typed entry that contains the *%SystemRoot%\\inf* directory path and zero or more directory path entries. The format of the **DevicePath** value entry is the following, where each directory path is either a local directory path or a path of a shared directory on a network server where the preloaded [driver packages](driver-packages.md) are located:
 
 ```cpp
 %SystemRoot%\inf;DirectoryPath1;DirectoryPath2;...
@@ -44,10 +44,4 @@ For example, to preload a driver package for a network adapter in the shared dir
 > [!NOTE]
 > Specifying network share in DevicePath in a machine with point and print client connection can result in excessive network share access and printing delays. This is because each time printerdata is changed in the server, the client will iterate through DevicePath directories checking for availability of newer print drivers.
  
-
- 
-
-
-
-
 

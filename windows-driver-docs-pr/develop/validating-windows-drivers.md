@@ -50,7 +50,7 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 ### Fixing validation errors
 
-1.  If you switched a legacy desktop UMDF driver project to Windows Driver, verify that you are including the correct libraries when building your binaries. Right click the project and choose properties. Navigate to **Linker->Input**. The **Additional Dependencies** should contain:
+1.  If you switched a legacy desktop UMDF driver project to Windows Driver, verify that you are including the correct libraries when building your binaries. Select and hold (or right-click) the project and choose properties. Navigate to **Linker->Input**. The **Additional Dependencies** should contain:
 
     ```cpp
     %AdditionalDependencies);$(SDK_LIB_PATH)\OneCoreUAP.lib

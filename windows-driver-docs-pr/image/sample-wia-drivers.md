@@ -8,6 +8,6 @@ ms.localizationpriority: medium
 
 # Sample WIA Drivers
 
-For information about the WIA samples, see the [Windows Image Acquisition (WIA) driver samples](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/windows-image-acquisition-wia-driver-samples).
+For information about the WIA samples, see the [Windows Image Acquisition (WIA) driver samples](/samples/microsoft/windows-driver-samples/windows-image-acquisition-wia-driver-samples).
 
 You can also find an additional sample in [Creating a 'Hello World' WIA Minidriver](creating-a---hello-world---wia-minidriver.md).

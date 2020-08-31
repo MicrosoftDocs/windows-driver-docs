@@ -66,7 +66,7 @@ AMCap2 binaries are provided for x86-based and x64-based architectures. AMCap2 r
 
 When AMCap2 initializes, it enumerates available audio and video capture devices on its device menu. You can select none or one audio and/or video device. On the Settings menu, you can select specific device attributes.
 
-For more information, see the [DirectShow documentation](https://docs.microsoft.com/previous-versions//ms783323(v=vs.85)).
+For more information, see the [DirectShow documentation](/previous-versions//ms783323(v=vs.85)).
 
 The *AMCap2.exe* tool appears in the Windows Server 2008 WDK and earlier versions of the WDK. The tool has been removed from the Windows 7 WDK for both x86-based and x64-based platforms.
 

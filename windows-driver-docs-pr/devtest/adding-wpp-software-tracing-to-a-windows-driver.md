@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 To use WPP software tracing in a trace provider, such as a kernel-mode driver or a user-mode application, you need to add code (or *instrument*) the driver source files and modify the driver project. This section will describe those steps.
 
-**Tip**  The easiest way to add WPP tracing to your driver is to use one of the KMDF or UMDF driver templates in Visual Studio. If you use the templates, much of the code you need to add is already done for you. In Visual Studio, click **File &gt; New &gt; Project**, and then select the Windows Driver (user-mode or kernel mode) WDF project. The WPP macros are defined in the Trace.h header file that is included as part of the project. If you use one of the templates, you can skip ahead to [Step 5](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points). 
+**Tip**  The easiest way to add WPP tracing to your driver is to use one of the KMDF or UMDF driver templates in Visual Studio. If you use the templates, much of the code you need to add is already done for you. In Visual Studio, select **File &gt; New &gt; Project**, and then select the Windows Driver (user-mode or kernel mode) WDF project. The WPP macros are defined in the Trace.h header file that is included as part of the project. If you use one of the templates, you can skip ahead to [Step 5](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points). 
 
 -   [Step 1: Define the control GUID and trace flags](#step-1-define-the-control-guid-and-trace-flags)
 -   [Step 2: Choose which trace message functions you intend to use and define the WPP macros for those functions](#step-2-choose-which-trace-message-functions-you-intend-to-use-and-define-the-wpp-macros-for-those-functions)
@@ -28,7 +28,7 @@ For convenience, the [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-v
 
 **To add WPP\_CONTROL\_GUIDS macro to your driver:**
 
-1.  Add a new C++ header file to your Visual Studio project that you can use for defining the WPP trace macros. For example, right-click the driver in Solution Explorer, and click **Add &gt; New Item**. Save the file (as Trace.h, for example).
+1.  Add a new C++ header file to your Visual Studio project that you can use for defining the WPP trace macros. For example, select and hold (or right-click) the driver in Solution Explorer, and select **Add &gt; New Item**. Save the file (as Trace.h, for example).
 
 2.  Add a [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro to specify friendly name for the trace provider, define a control GUID, and to define the trace flags that you can use to qualify specific trace messages.
 
@@ -486,8 +486,8 @@ The WDK provides support for the [WPP Preprocessor](wpp-preprocessor.md), so tha
 
 **To run the WPP preprocessor**
 
-1.  Right-click the driver project in Solutions Explorer and click **Properties.**
-2.  In the project property page, click **Configuration Properties** and click **WPP Tracing**.
+1.  Select and hold (or right-click) the driver project in Solutions Explorer and select **Properties.**
+2.  In the project property page, select **Configuration Properties** and select **WPP Tracing**.
 3.  Under **General**, set the **Run WPP** option to **Yes**.
 4.  Under **Command Line**, add any additional options to customize tracing behavior. For info on what you can add, see [WPP Preprocessor](wpp-preprocessor.md).
 5.  Build the project or solution for your target configuration and platform. See [Building a Driver with the WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).

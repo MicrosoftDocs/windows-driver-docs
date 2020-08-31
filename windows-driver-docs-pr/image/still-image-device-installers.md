@@ -20,14 +20,9 @@ Microsoft provides a class installer for still image devices, with the following
 
 -   Support for special INF file entries (see [INF Files for Still Image Devices](inf-files-for-still-image-devices.md)).
 
--   Support for vendor-supplied co-installer extensions. For more information, see [Writing a Co-installer](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-co-installer).
+-   Support for vendor-supplied co-installer extensions. For more information, see [Writing a Co-installer](../install/writing-a-co-installer.md).
 
 If necessary, vendors can provide customized installation programs that can be used instead of the Microsoft-supplied class installer.
 
  
-
- 
-
-
-
 

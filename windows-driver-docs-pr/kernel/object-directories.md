@@ -37,12 +37,7 @@ The following is a list of the top-level object directories that contain objects
 
 The system creates other top-level directories, but they are reserved for system use.
 
-Drivers can create new object directories by calling the [**ZwCreateDirectoryObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject) routine.
+Drivers can create new object directories by calling the [**ZwCreateDirectoryObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject) routine.
 
  
-
- 
-
-
-
 

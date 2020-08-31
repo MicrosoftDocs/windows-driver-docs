@@ -56,7 +56,7 @@ The DEVPKEY_DeviceInterface_Restricted device interface property indicates that 
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve the value of DEVPKEY_DeviceInterface_Restricted.
+You can call [**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve the value of DEVPKEY_DeviceInterface_Restricted.
 
 Requirements
 ------------
@@ -81,14 +81,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceInterfaceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
+[**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
 
  
-
- 
-
-
-
-
-
 

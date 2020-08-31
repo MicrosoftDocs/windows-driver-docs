@@ -46,13 +46,7 @@ class MPIO_GET_DESCRIPTOR
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_GET\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_mpio_get_descriptor) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_GET\_DESCRIPTOR**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_mpio_get_descriptor) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Guidance for location simulators
 
 
-Microsoft Visual Studio 2012 provides a [location simulator](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator?view=vs-2015#bkmk-set-the-simulated-geo-location-of-the-device) that works together with a location simulator driver that you create. This section contains guidance for implementing a location simulator driver. Note that starting with Visual Studio 2017, location simulator functionality is no longer present, so simulating a sensor driver is not supported.
+Microsoft Visual Studio 2012 provides a [location simulator](/visualstudio/debugger/run-windows-store-apps-in-the-simulator?view=vs-2015#bkmk-set-the-simulated-geo-location-of-the-device) that works together with a location simulator driver that you create. This section contains guidance for implementing a location simulator driver. Note that starting with Visual Studio 2017, location simulator functionality is no longer present, so simulating a sensor driver is not supported.
 
 ## Configure the simulator
 
@@ -28,8 +28,5 @@ When the simulator application exits, the simulator driver should change state t
 -   If the simulator driver does not have data when it is running in a simulator, then data from other sources will be used in the location simulator.
 
 ## Related topics
-[Running UWP apps in the simulator](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator?view=vs-2015)  
-[Set the simulated geolocation of the device](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator?view=vs-2015#bkmk-set-the-simulated-geo-location-of-the-device)  
-
-
-
+[Running UWP apps in the simulator](/visualstudio/debugger/run-windows-store-apps-in-the-simulator?view=vs-2015)  
+[Set the simulated geolocation of the device](/visualstudio/debugger/run-windows-store-apps-in-the-simulator?view=vs-2015#bkmk-set-the-simulated-geo-location-of-the-device)

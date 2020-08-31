@@ -11,4 +11,4 @@ The samples in this directory provide a starting point for writing a custom TrEE
 
 | Sample | Description |
 | --- | --- |
-| [Trusted Execution Environment (TrEE) driver sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/tree-sample) | Demonstrates how to write a custom TrEE driver for your device. |
+| [Trusted Execution Environment (TrEE) driver sample](/samples/microsoft/windows-driver-samples/tree-sample) | Demonstrates how to write a custom TrEE driver for your device. |

@@ -45,7 +45,7 @@ The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retrieves a struc
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Pin instance</p></td>
 <td align="left"><p>KSP_NODE</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position" data-raw-source="[&lt;strong&gt;KSAUDIO_PRESENTATION_POSITION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position)"><strong>KSAUDIO_PRESENTATION_POSITION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position" data-raw-source="[&lt;strong&gt;KSAUDIO_PRESENTATION_POSITION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position)"><strong>KSAUDIO_PRESENTATION_POSITION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -82,14 +82,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSAUDIO\_PRESENTATION\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position)
+[**KSAUDIO\_PRESENTATION\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position)
 
  
-
- 
-
-
-
-
-
 

@@ -14,7 +14,7 @@ Release-signing identifies the publisher of a kernel-mode or user-mode binaries 
 
 Kernel-mode binaries are release-signed through either:
 
-1. Windows Hardware Quality Lab (WHQL also known as Winqual) to release sign a driver package. A WHQL Release Signature is obtained through the Windows Certification Program. The link below describes the five steps from start to finish on Windows Certification Program. See [Windows hardware certification: start here](https://docs.microsoft.com/previous-versions/hh833792(v=msdn.10)) for more details about this option. Any questions on the steps in the link above should be directed to <sysdev@microsft.com> alias.
+1. Windows Hardware Quality Lab (WHQL also known as Winqual) to release sign a driver package. A WHQL Release Signature is obtained through the Windows Certification Program. The link below describes the five steps from start to finish on Windows Certification Program. See [Windows hardware certification: start here](/previous-versions/hh833792(v=msdn.10)) for more details about this option. Any questions on the steps in the link above should be directed to <sysdev@microsft.com> alias.
 2. Instead of using the WHQL program, a driver package can be release signed by driver developers and vendors. This program has started from the Vista OS release. A release signature is created through a Software Publisher Certificate (SPC). The SPC is obtained from a third-party certificate authority (CA) that is authorized by Microsoft to issue such certificates. Signatures generated with this type of SPC also comply with the PnP driver signing requirements for 64-bit and 32-bit versions of Windows Vista and later versions of Windows
 
 The steps needed to release sign a driver package for method 2 are described next.
@@ -68,7 +68,7 @@ In this case, the pair of files (a *.pvk* and an *.spc,* or a *.pvk* and a *.cer
 
 To create a .*pfx* file from the pair of files issued by the CA, follow these instructions:
 
-- To convert a *.pvk* file and an *.spc* file to a *.pfx* file, use the following [**Pvk2Pfx**](https://docs.microsoft.com/windows-hardware/drivers/devtest/pvk2pfx) command at a command prompt:
+- To convert a *.pvk* file and an *.spc* file to a *.pfx* file, use the following [**Pvk2Pfx**](../devtest/pvk2pfx.md) command at a command prompt:
 
     ```cpp
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc myspcfile.spc -pfx mypfxfile.pfx -po pfxpassword -f
@@ -80,7 +80,7 @@ To create a .*pfx* file from the pair of files issued by the CA, follow these in
     Pvk2Pfx -pvk mypvkfile.pvk -pi mypvkpassword -spc mycerfile.cer -pfx mypfxfile.pfx -po pfxpassword -f
     ```
 
-The following describes the parameters that are used in the [**Pvk2Pfx**](https://docs.microsoft.com/windows-hardware/drivers/devtest/pvk2pfx) command:
+The following describes the parameters that are used in the [**Pvk2Pfx**](../devtest/pvk2pfx.md) command:
 
 - The **-pvk**  *mypvkfile.pvk* parameter specifies a *.pvk* file.
 

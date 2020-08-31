@@ -30,14 +30,8 @@ For more information about which versions of UMDF are available in specific vers
 ## Additional resources for UMDF version 1
 
 
--   [Architecture of the User-Mode Driver Framework](https://msdn.microsoft.com/windows/hardware/gg463289)
--   [A COM QuickStart for UMDF Developers](https://msdn.microsoft.com/windows/hardware/gg463299)
+-   [Architecture of the User-Mode Driver Framework](/previous-versions/windows/hardware/download/dn550976(v=vs.85))
+-   [A COM QuickStart for UMDF Developers](/previous-versions/windows/hardware/download/dn550976(v=vs.85))
 
  
-
- 
-
-
-
-
 

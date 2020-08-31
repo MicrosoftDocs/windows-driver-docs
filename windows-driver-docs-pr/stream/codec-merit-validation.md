@@ -18,15 +18,15 @@ To support KSPROPSETID\_OPMVideoOutput, implement the following methods:
 
 - KSMETHOD\_OPMVIDEOOUTPUT\_STARTINITIALIZATION
 
-    [IOPMVideoOutput::StartInitialization](https://docs.microsoft.com/windows/win32/api/opmapi/nf-opmapi-iopmvideooutput-startinitialization) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_STARTINITIALIZATION.
+    [IOPMVideoOutput::StartInitialization](/windows/win32/api/opmapi/nf-opmapi-iopmvideooutput-startinitialization) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_STARTINITIALIZATION.
 
 - KSMETHOD\_OPMVIDEOOUTPUT\_ENDINITIALIZATION
 
-    [IOPMVideoOutput::FinishInitialization](https://docs.microsoft.com/windows/win32/api/opmapi/nf-opmapi-iopmvideooutput-finishinitialization) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_ENDINITIALIZATION.
+    [IOPMVideoOutput::FinishInitialization](/windows/win32/api/opmapi/nf-opmapi-iopmvideooutput-finishinitialization) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_ENDINITIALIZATION.
 
 - KSMETHOD\_OPMVIDEOOUTPUT\_GETINFORMATION
 
-    [IOPMVideoOutput::GetInformation](https://docs.microsoft.com/windows/win32/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_GETINFORMATION.
+    [IOPMVideoOutput::GetInformation](/windows/win32/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) proxies to the driver via KSMETHOD\_OPMVIDEOOUTPUT\_GETINFORMATION.
 
 The remainder of this topic includes a sample implementation of these three methods.
 

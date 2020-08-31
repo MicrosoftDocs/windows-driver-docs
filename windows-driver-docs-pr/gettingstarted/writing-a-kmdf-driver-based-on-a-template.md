@@ -27,7 +27,7 @@ To get started, be sure you have the latest versions of [Microsoft Visual Studio
     > When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.  
 
 5. In the **Location** field, enter the directory where you want to create the new project.
-6. Check **Create directory for solution**. Click **OK**.
+6. Check **Create directory for solution**. Select **OK**.
 
     ![screen shot of the new project dialog box, showing wdf and kernel mode driver selected](images/vs2015-kmdf-new-project.png)
 
@@ -35,7 +35,7 @@ To get started, be sure you have the latest versions of [Microsoft Visual Studio
 
     ![screen shot of solution explorer showing the files in the driver project and the package project](images/vs2015-kmdf-solution-explorer.png)
 
-7. In the **Solution Explorer** window, right-click **Solution 'KmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for both the driver project and the package project. In this exercise, we choose Debug and x64.
+7. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'KmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for both the driver project and the package project. In this exercise, we choose Debug and x64.
 
 8. To build your driver and create a driver package, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
 
@@ -60,11 +60,11 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
 
 2. On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfDriver.sln, in your KmdfDriver folder.
-3. In the **Solution Explorer** window, right-click the **KmdfDriver** project, and choose **Properties**.
+3. In the **Solution Explorer** window, select and hold (or right-click) the **KmdfDriver** project, and choose **Properties**.
 4. In the **KmdfDriver Package Property Pages** window, in the left pane, go to **Configuration Properties &gt; Driver Install &gt; Deployment**.
 5. Check **Remove previous driver versions before deployment**.
 6. For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
-7. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\KmdfDriver. Click **OK**.
+7. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\KmdfDriver. Select **OK**.
 
     ![screen shot of the kmdfdriver package property pages window, showing deployment driver install selected](images/vs2015-kmdfdriver-property-pages.png)
 
@@ -106,7 +106,7 @@ With your KMDF driver deployed to the target computer, now you'll install the dr
 
         **c:\\tools\\devcon install kmdfdriver.inf root\kmdfdriver**
 
-        A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
+        A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
         ![screenshot of driver installation warning](../debugger/images/debuglab-image-install-security-warning.png)
 

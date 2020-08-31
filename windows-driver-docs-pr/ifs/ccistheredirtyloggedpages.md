@@ -49,7 +49,7 @@ Remarks
 
 This routine will return **TRUE** if any dirty log pages exist. It will also return **TRUE** if there are any log pages currently queued to the volume.
 
-Unlike [**CcIsThereDirtyDataEx**](https://msdn.microsoft.com/library/windows/hardware/ff539152), the **CcIsThereDirtyLoggedPages** routine uses a file system device object to locate the volume cache information to check for dirty log pages.
+Unlike [**CcIsThereDirtyDataEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccistheredirtydataex), the **CcIsThereDirtyLoggedPages** routine uses a file system device object to locate the volume cache information to check for dirty log pages.
 
 Requirements
 ------------
@@ -90,18 +90,11 @@ Requirements
 ## See also
 
 
-[**CcFlushCache**](https://msdn.microsoft.com/library/windows/hardware/ff539082)
+[**CcFlushCache**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccflushcache)
 
-[**CcPurgeCacheSection**](https://msdn.microsoft.com/library/windows/hardware/ff539188)
+[**CcPurgeCacheSection**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpurgecachesection)
 
-[**CcIsThereDirtyDataEx**](https://msdn.microsoft.com/library/windows/hardware/ff539152)
-
- 
+[**CcIsThereDirtyDataEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccistheredirtydataex)
 
  
-
-
-
-
-
 

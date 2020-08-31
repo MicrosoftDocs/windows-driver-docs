@@ -11,15 +11,9 @@ ms.localizationpriority: medium
 
 The release-signed [driver package](driver-packages.md) can be installed on the computer through:
 
--   The [DevCon](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) tool, which is a WDK command line tool for installing drivers. For more information, see [Using the DevCon Tool to Install a Driver Package](using-the-devcon-tool-to-install-a-driver-package.md).
+-   The [DevCon](../devtest/devcon.md) tool, which is a WDK command line tool for installing drivers. For more information, see [Using the DevCon Tool to Install a Driver Package](using-the-devcon-tool-to-install-a-driver-package.md).
 
-You can troubleshoot problems with released-signed driver installation and loading through the methods described in [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md).
-
- 
+You can troubleshoot problems with released-signed driver installation and loading through the methods described in [Troubleshooting Install and Load Problems with Signed Driver Packages](./detecting-driver-load-errors.md).
 
  
-
-
-
-
 

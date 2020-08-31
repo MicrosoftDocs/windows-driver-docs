@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Driver developers should know the permissions for the registry keys they need to access. Much of the registry is available for the driver to read. However, WIA drivers should write only to the registry key handed to them in the [**IStiUSD::Initialize**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method.
+Driver developers should know the permissions for the registry keys they need to access. Much of the registry is available for the driver to read. However, WIA drivers should write only to the registry key handed to them in the [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method.
 
 Although writing to other registry keys is possible in Windows XP, because the WIA service runs under the high-privilege **LocalSystem** account, this is no longer possible under the low-privilege **LocalService** account in Microsoft Windows Server 2003 and later.
 
@@ -132,9 +132,4 @@ The **DeviceData** registry subkey is open for read/write access to the driver o
  
 
  
-
- 
-
-
-
 

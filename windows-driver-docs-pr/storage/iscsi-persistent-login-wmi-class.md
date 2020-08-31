@@ -16,13 +16,7 @@ The ISCSI\_Persistent\_Login WMI class defines a persistent logon. Miniport driv
 
 The ISCSI\_Persistent\_Login class is unpublished and is defined in *Operations.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_Persistent\_Login**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_iscsi_persistent_login) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_Persistent\_Login**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_iscsi_persistent_login) data structure.
 
  
-
- 
-
-
-
-
 

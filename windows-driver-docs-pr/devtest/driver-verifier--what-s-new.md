@@ -147,5 +147,5 @@ Driver Verifier features also include:
     A new **!gdikdx.verifier** extension, **!gdikdx.verifier -s**, lists statistics about the GDI callback functions called during low resources simulation for graphics drivers.
 
 * Online Help for Driver Verifier Manager Online Help for Driver Verifier Manager can be displayed in either of the following ways:
-  * Right-click an item in the Driver Verifier Manager window and choose **What's This?** from the pop-up menu.
-  * Click the question mark (**?**) in the upper-right corner of the window and then click an item in the Driver Verifier Manager window.
+  * Select and hold (or right-click) an item in the Driver Verifier Manager window and choose **What's This?** from the pop-up menu.
+  * Select the question mark (**?**) in the upper-right corner of the window and then select an item in the Driver Verifier Manager window.

@@ -146,11 +146,11 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ## See also
 
-[**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
+[**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
 
-[**AvcCommandType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavccommandtype)
+[**AvcCommandType**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavccommandtype)
 
-[**AvcResponseCode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavcresponsecode)
+[**AvcResponseCode**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavcresponsecode)
 
 [**AVC\_FUNCTION\_FIND\_PEER\_DO**](avc-function-find-peer-do.md)
 

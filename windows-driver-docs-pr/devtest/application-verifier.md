@@ -21,7 +21,7 @@ Application Verifier can detect errors in any user-mode applications that are no
 
 You can use Application Verifier alone or in conjunction with a user-mode debugger. This tool runs on Microsoft Windows XP and later versions of Windows. The current user must be a member of the Administrators group on the computer.
 
-Application Verifier is included in the [Windows Software Development Kit](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (SDK). To read the documentation, start Application Verifier and from the **Help** menu, click **Help**, or press F1.
+Application Verifier is included in the [Windows Software Development Kit](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (SDK). To read the documentation, start Application Verifier and from the **Help** menu, select **Help**, or press F1.
 
  
 

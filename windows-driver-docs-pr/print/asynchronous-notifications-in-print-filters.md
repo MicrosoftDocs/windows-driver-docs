@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Asynchronous Notifications in Print Filters
 
-The print filter pipeline has an asynchronous notification feature that is very similar to the asynchronous notification that is supported in the print spooler for applications. The [**RouterCreatePrintAsyncNotificationChannel**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routercreateprintasyncnotificationchannel) function that is available in the print spooler is not available to print filters. Print filters must use the [IPrintClassObjectFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintclassobjectfactory) interface to create IPrintAsyncNotify objects.
+The print filter pipeline has an asynchronous notification feature that is very similar to the asynchronous notification that is supported in the print spooler for applications. The [**RouterCreatePrintAsyncNotificationChannel**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routercreateprintasyncnotificationchannel) function that is available in the print spooler is not available to print filters. Print filters must use the [IPrintClassObjectFactory](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintclassobjectfactory) interface to create IPrintAsyncNotify objects.
 
 This topic describes how to use the asynchronous notification feature in a print filter.
 
@@ -22,7 +22,7 @@ This topic describes how to use the asynchronous notification feature in a print
 
 ## IPrintClassObjectFactory
 
-The [IPrintClassObjectFactory](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintclassobjectfactory) interface provides access to the notification interfaces. The following code example illustrates how a filter can obtain this interface from the property bag.
+The [IPrintClassObjectFactory](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintclassobjectfactory) interface provides access to the notification interfaces. The following code example illustrates how a filter can obtain this interface from the property bag.
 
 ```cpp
 // This interface is defined as a private member variable in the filter class
@@ -98,9 +98,9 @@ if (SUCCEEDED(hr))
 }
 ```
 
-In the preceding code example, variable `pIAsyncCallback` is a pointer to the caller's implementation of the [IPrintAsyncNotifyCallback](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifycallback) interface.
+In the preceding code example, variable `pIAsyncCallback` is a pointer to the caller's implementation of the [IPrintAsyncNotifyCallback](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifycallback) interface.
 
-In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychanne) method on [IPrintAsyncNotifyChannel](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel). For information about when to release a channel, see [Notification Channel](notification-channel.md).
+In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychanne) method on [IPrintAsyncNotifyChannel](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel). For information about when to release a channel, see [Notification Channel](notification-channel.md).
 
 ## Impersonation and Notification
 

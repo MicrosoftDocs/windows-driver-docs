@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
  
 
-<em>DDInstall</em>**.LogConfigOverride** sections are used to create an [override configuration](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
+<em>DDInstall</em>**.LogConfigOverride** sections are used to create an [override configuration](../kernel/hardware-resources.md#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
 ```inf
 [install-section-name.LogConfigOverride] |
@@ -70,11 +70,4 @@ For more information about the hardware resource configuration data values that 
 [***DDInstall***](inf-ddinstall-section.md)
 
  
-
- 
-
-
-
-
-
 

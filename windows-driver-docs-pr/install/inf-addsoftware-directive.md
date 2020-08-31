@@ -64,8 +64,8 @@ Any software installed using **AddSoftware** must be installed silently (or quie
 
 Any software installed using **AddSoftware** will **not** be uninstalled if the virtual software component device or its parent devices are uninstalled. If your software is not a UWP app (i.e. you're using **AddSoftware** with a value of 1), please make sure users can easily uninstall it without leaving a trace in the registry. To do so:
 
-* If you're using an MSI installer, set up an [Add/Remove Programs](https://docs.microsoft.com/windows/desktop/Msi/configuring-add-remove-programs-with-windows-installer) entry in the application's Windows Installer package.
-* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](https://docs.microsoft.com/windows/desktop/Msi/uninstall-registry-key). 
+* If you're using an MSI installer, set up an [Add/Remove Programs](/windows/desktop/Msi/configuring-add-remove-programs-with-windows-installer) entry in the application's Windows Installer package.
+* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](/windows/desktop/Msi/uninstall-registry-key). 
 
 ## [software-install-section]: SoftwareType
 

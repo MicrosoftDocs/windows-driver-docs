@@ -20,7 +20,7 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 > Starting in Windows 10 version 1709, the Enterprise WDK is ISO-based.  To get started, download and mount the ISO, then run `LaunchBuildEnv`.
 
 1.	Download the EWDK from:
-[WDK & EWDK download](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+[WDK & EWDK download](../download-the-wdk.md)
 2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
 3.	From an Administrator command prompt, navigate to the expanded folder in the previous step, and then run **LaunchBuildEnvcmd** to create the build environment. For example:
   **D:\EWDK\LaunchBuildEnv**
@@ -43,4 +43,4 @@ Where `<drive\dir>` is the location that the files were extracted to, for exampl
 
 ## See Also
 
-[ MSBuild Reference](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reference?view=vs-2015)
+[ MSBuild Reference](/visualstudio/msbuild/msbuild-reference?view=vs-2015)

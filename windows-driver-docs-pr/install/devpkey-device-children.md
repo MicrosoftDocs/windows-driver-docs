@@ -56,9 +56,9 @@ The DEVPKEY_Device_Children device property represents a list of the device inst
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Children.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Children.
 
-Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://docs.microsoft.com/windows-hardware/drivers/install/retrieving-device-relations).
+Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](./retrieving-device-relations.md).
 
 Requirements
 ------------
@@ -70,14 +70,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
- 
-
-
-
-
-
 

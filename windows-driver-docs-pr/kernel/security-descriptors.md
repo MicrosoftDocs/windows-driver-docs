@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Security Descriptors
 
 
-Every object has a *security descriptor*, which contains the security settings for an object. In kernel-mode, the opaque [**SECURITY\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor) data type represents a security descriptor.
+Every object has a *security descriptor*, which contains the security settings for an object. In kernel-mode, the opaque [**SECURITY\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor) data type represents a security descriptor.
 
 Information in a security descriptor is stored in *access control lists* (ACLs). An access control list is made up of a series of *access control entries* (ACEs).
 
@@ -35,9 +35,4 @@ For a driver, the most important security descriptors are those for the driver's
 For more information about security descriptors in general, see the Windows SDK.
 
  
-
- 
-
-
-
 

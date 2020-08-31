@@ -157,7 +157,7 @@ Because of this, you cannot have multiple views or run on multiple monitors. If 
 
 ### Add a way out of assigned access
 
-In some situations, the power button, escape button, or other buttons used to stop an application may not be enabled or available on the keyboard. In these situations, provide a way to stop assigned access, for instance a software key. The following event handler shows how to stop assigned access mode by responding to button click event that could be triggered by a software key.
+In some situations, the power button, escape button, or other buttons used to stop an application may not be enabled or available on the keyboard. In these situations, provide a way to stop assigned access, for instance a software key. The following event handler shows how to stop assigned access mode by responding to button select event that could be triggered by a software key.
 
 ```cpp
 LockApplicationHost^ lockHost = LockApplicationHost::GetForCurrentView();
@@ -253,8 +253,8 @@ The following sample application manifest uses the **windows.aboveLockScreen**UW
 Normally, if a Kiosk app fails to activate above the lock screen app, you can find the activation error code in the lockdown screen. Use the error code to discover the issue by looking up Windows [System Error Codes](https://docs.microsoft.com/windows/desktop/Debug/system-error-codes). In addition Event Viewer contains more information about activation failures. To do so:
 
 1. Open **Event Viewer**. There are two likely places to find activation errors.
-2. In the **Event Viewer (Local)** pane, expand **Windows Logs**, and then click **Application**.
-3. Also, in **Event Viewer (local)**, expand **Applications and Services Logs**, expand **Windows**, expand **Apps**, and then click **Microsoft-Windows-TWinUI/Operational**.
+2. In the **Event Viewer (Local)** pane, expand **Windows Logs**, and then select **Application**.
+3. Also, in **Event Viewer (local)**, expand **Applications and Services Logs**, expand **Windows**, expand **Apps**, and then select **Microsoft-Windows-TWinUI/Operational**.
 
 Note that because kiosk apps with assigned access do not run in full-screen mode, **ApplicationView.GetForCurrentView().IsFullScreenMode** will return false.
 

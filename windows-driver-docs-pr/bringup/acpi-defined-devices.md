@@ -20,7 +20,7 @@ This device describes and reports the status of a clamshell device's lid. For mo
 
 This device describes, configures, and reports the status of the platform battery. For more information, see section 10.2, "Control Method Batteries", in the [ACPI 5.0 specification](https://uefi.org/specifications). Control Method Battery implementations on SoC platforms use the GPIO-signaled ACPI event mechanism, which is described in section 5.6.5, "GPIO-Signaled ACPI Events", in the ACPI 5.0 specification. Access to the battery and charging hardware is done by methods that operate through GPIO or SPB OpRegions, which are described in sections 5.5.2.4.4 and 5.5.2.4.5 of the ACPI 5.0 specification.
 
-For more information about battery management in Windows, see [Windows Power and Battery Subsystem Requirements](https://docs.microsoft.com/windows-hardware/design/component-guidelines/windows-power-and-battery-subsystem-requirements).
+For more information about battery management in Windows, see [Windows Power and Battery Subsystem Requirements](/windows-hardware/design/component-guidelines/windows-power-and-battery-subsystem-requirements).
 
 ### Battery Device-Specific Method (\_DSM)
 
@@ -43,7 +43,7 @@ To support ACPI thermal management, the system designer logically partitions a h
 
 ### Thermal management in Windows
 
-The Windows thermal management model is based on ACPI's concept of thermal zones. This is a cooperative firmware/OS/driver model that abstracts the sensors and cooling devices from the central thermal management component through well-defined interfaces. For more information, see [Thermal Management in Windows](https://docs.microsoft.com/windows-hardware/design/device-experiences/thermal-management-in-windows).
+The Windows thermal management model is based on ACPI's concept of thermal zones. This is a cooperative firmware/OS/driver model that abstracts the sensors and cooling devices from the central thermal management component through well-defined interfaces. For more information, see [Thermal Management in Windows](/windows-hardware/design/device-experiences/thermal-management-in-windows).
 
 ### ACPI thermal zones
 

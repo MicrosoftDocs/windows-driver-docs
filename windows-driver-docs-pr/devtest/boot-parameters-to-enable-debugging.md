@@ -39,7 +39,7 @@ There are four basic debugging methods that you can configure by using boot para
 
 To enable kernel debugging on a single computer, use the BCDEdit **/debug** boot option.
 
-To use BCDEdit, open a Command Prompt window with elevated privileges (right-click **Command Prompt** and click **Run as administrator** from the shortcut menu).
+To use BCDEdit, open a Command Prompt window with elevated privileges (select and hold, or right-click, **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
 The **/debug** option has the following syntax:
 
@@ -75,7 +75,7 @@ debugport               1
 baudrate                115200
 ```
 
-To use BCDEdit, open a Command Prompt window with elevated privileges (right-click **Command Prompt** and click **Run as administrator** from the shortcut menu).
+To use BCDEdit, open a Command Prompt window with elevated privileges (select and hold, or right-click, **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
 To set the global debug settings to serial communications, use the following syntax:
 
@@ -123,7 +123,7 @@ For more details, see [**BCDEdit /debug**](https://docs.microsoft.com/windows-ha
 
 To enable debugging with an IEEE 1394 cable in Windows, use BCDEdit and set the debugging connection type to "1394". You can set this globally by using the [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings) command followed by **1394**, or set it for a specific boot entry by using the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command followed by **debugtype 1394**. You must also use the [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) command to enable kernel debugging globally or for the desired operating system.
 
-To use BCDEdit, open a Command Prompt window with elevated privileges (right-click **Command Prompt** and click **Run as administrator** from the shortcut menu).
+To use BCDEdit, open a Command Prompt window with elevated privileges (select and hold, or right-click, **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
 To set the debug settings for 1394 globally, use the following syntax:
 
@@ -165,7 +165,7 @@ For more details, see [**BCDEdit /debug**](https://docs.microsoft.com/windows-ha
 
 To enable debugging with a USB cable in these versions of Windows, use BCDEdit and set the debugging connection type to "USB". You can set this globally by using the [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings) command followed by **usb**, or set it for a specific boot entry by using the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command followed by **debugtype usb**. You must also use the [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) command to enable kernel debugging globally or for the desired operating system.
 
-To use BCDEdit, open a Command Prompt window with elevated privileges (right-click **Command Prompt** and click **Run as administrator** from the shortcut menu).
+To use BCDEdit, open a Command Prompt window with elevated privileges (select and hold, or right-click, **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
 To set the debug settings for USB globally, use the following syntax:
 

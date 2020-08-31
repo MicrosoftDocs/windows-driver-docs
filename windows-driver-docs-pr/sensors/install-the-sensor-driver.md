@@ -146,9 +146,9 @@ Perform the following tasks to update the SSDT, and load it to replace the facto
     }
     ```
 
-2. In Notepad, click **File** &gt; **Save As**. Then click the **Save as type** dropdown box, and select **All Files**.
+2. In Notepad, select **File** &gt; **Save As**. Then select the **Save as type** dropdown box, and select **All Files**.
 
-3. In the **File name** box, type *ssdt.asl*, then click **Save**, and close Notepad.
+3. In the **File name** box, type *ssdt.asl*, then select **Save**, and close Notepad.
 
 4. In the Command prompt window, use the **dir** command to make sure that you can see the default file now listed as *ssdt-old.asl*, and the new file listed as *ssdt.asl*.
 
@@ -201,9 +201,9 @@ You must connect your sensor to the Sharks Cove before you install the sensor dr
 
 3. Open **Device Manager**, and look for an "Unknown device" in the **Other devices** node with a yellow bang symbol against it (see the following screen shot).<br/>![device manager screenshot, showing an unknown device with a yellow bang.](images/dev-manager.png)
 
-4. Right-click the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and click **Browse my computer for driver software**.
+4. Select and hold (or right-click) the device with the yellow bang (listed as Unknown device), and select **Update Driver Software**, and select **Browse my computer for driver software**.
 
-5. Browse to the ADXL345 driver on the flash drive, then click **Next**. Follow the screen prompts to install the sensor driver.
+5. Browse to the ADXL345 driver on the flash drive, then select **Next**. Follow the screen prompts to install the sensor driver.
 
 6. After the sample sensor driver is successfully installed, **Device Manager** displays the sensor as shown in the following screen shot.<br/>![device manager screen shot, showing device nodes for successfully installed adxl345 accelerometer](images/dev-mgr-sensors.png)
 

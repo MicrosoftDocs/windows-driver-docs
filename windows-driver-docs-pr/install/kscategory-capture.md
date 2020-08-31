@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_CAPTURE
 
 
-The KSCATEGORY_CAPTURE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that captures wave or MIDI data streams.
+The KSCATEGORY_CAPTURE [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that captures wave or MIDI data streams.
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Drivers for KS devices register instances of KSCATEGORY_CAPTURE to indicate that
 
 For information about how to register this functional category in an INF file, see the *Ac97smpl.inf* INF file that is included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) that is provided in the WDK.
 
-For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter).
+For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
 Requirements
 ------------
@@ -71,10 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

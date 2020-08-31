@@ -259,13 +259,13 @@ For example:
 
 T1_NrJacks, T1_J2_ChannelMapping, T1_J2_ConnectorType
 
-For additional audio jack information, see [KSJACK_DESCRIPTION structure](https://docs.microsoft.com/windows-hardware/drivers/audio/ksjack-description).
+For additional audio jack information, see [KSJACK_DESCRIPTION structure](./ksjack-description.md).
 
 These registry values can be set in various ways:
 
 - By using custom INFs which wrap the in-box INF for the purpose to set these values.
 
-- Directly by the h/w device via a Microsoft OS Descriptors for USB devices (see example below). For more information about creating these descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
+- Directly by the h/w device via a Microsoft OS Descriptors for USB devices (see example below). For more information about creating these descriptors, see [Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md).
 
 ### Microsoft OS Descriptors for USB Example
 
@@ -327,13 +327,13 @@ UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
 
 If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://matthewvaneerde.wordpress.com/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
 
-For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub//). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](https://docs.microsoft.com/windows-hardware/drivers/devtest/displaying-a-trace-log-with-a-tmf-file).
+For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub//). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
 
 For information on "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md)
 
 ## Feedback Hub
 
-If you run into a problem with this driver, collect audio logs and then  follow steps outlined in [this blog entry](https://blogs.msdn.microsoft.com/matthew_van_eerde/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) to bring it to our attention via the Feedback Hub.
+If you run into a problem with this driver, collect audio logs and then  follow steps outlined in [this blog entry](/archive/blogs/matthew_van_eerde/report-problems-with-logs-and-suggest-features-with-the-feedback-hub) to bring it to our attention via the Feedback Hub.
 
 ## Driver development
 
@@ -343,8 +343,8 @@ This USB Audio 2.0 class driver was developed by Thesycon and is supported by Mi
 
 [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
 
-[Audio Drivers Overview](https://docs.microsoft.com/windows-hardware/drivers/audio/getting-started-with-wdm-audio-drivers)
+[Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)
 
-[WaveRT Port Driver](https://docs.microsoft.com/windows-hardware/drivers/audio/introducing-the-wavert-port-driver)
+[WaveRT Port Driver](./introducing-the-wavert-port-driver.md)
 
-[Low Latency Audio](https://docs.microsoft.com/windows-hardware/drivers/audio/low-latency-audio)
+[Low Latency Audio](./low-latency-audio.md)

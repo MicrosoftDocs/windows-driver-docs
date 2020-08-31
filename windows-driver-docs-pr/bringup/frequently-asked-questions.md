@@ -107,7 +107,7 @@ Please send additional questions or comments to <SAUEFI@Microsoft.com>.
 
 ## Related resources
 
-[UEFI Firmware](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10))
+[UEFI Firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10))
 
 [Windows 10 Specifications - Microsoft](https://www.microsoft.com/windows/windows-10-specifications)
 

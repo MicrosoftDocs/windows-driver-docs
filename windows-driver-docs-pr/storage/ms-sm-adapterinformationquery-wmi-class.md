@@ -99,15 +99,9 @@ class MS_SM_AdapterInformationQuery
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SM\_AdapterInformationQuery**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_sm_adapterinformationquery)
+[**MS\_SM\_AdapterInformationQuery**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_sm_adapterinformationquery)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

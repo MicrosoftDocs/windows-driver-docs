@@ -106,18 +106,18 @@ Visual Studio Build Tools, the SDK, and the WDK. This environment
 doesn't include all the features available in Visual Studio, such as
 the integrated development environment (IDE).
 
-Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](https://docs.microsoft.com/dotnet/framework/install/guide-for-developers).
+Using the EWDK requires .NET Framework 4.6.1. For more information about which systems run this version of the framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements). For links to download the .NET Framework, see [Install the .NET Framework for developers](/dotnet/framework/install/guide-for-developers).
 
 For more information about the EWDK, see
-[Using the Enterprise WDK 10](https://docs.microsoft.com/windows-hardware/drivers/develop/using-the-enterprise-wdk).
+[Using the Enterprise WDK 10](./develop/using-the-enterprise-wdk.md).
 
 | Versions of Windows               | EWDK                              |
 |-----------------------------------|-----------------------------------|
-| Windows 10, version 1903          | [EWDK for Windows 10, version 1903](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2019) |
-| Windows 10, version 1809          | [EWDK for Windows 10, version 1809](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) |
-| Windows 10, version 1803          | [EWDK for Windows 10, version 1803](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) |
-| Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) <br/>[EWDK for Visual Studio with Build Tools 15.2](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2017) |
-| Windows 10, version 1703          | [EWDK for Windows 10, version 1703](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2015) |
+| Windows 10, version 1903          | [EWDK for Windows 10, version 1903](/legal/windows/hardware/enterprise-wdk-license-2019) |
+| Windows 10, version 1809          | [EWDK for Windows 10, version 1809](/legal/windows/hardware/enterprise-wdk-license-2017) |
+| Windows 10, version 1803          | [EWDK for Windows 10, version 1803](/legal/windows/hardware/enterprise-wdk-license-2017) |
+| Windows 10, version 1709          | [EWDK for Visual Studio with Build Tools 15.6](/legal/windows/hardware/enterprise-wdk-license-2017) (Recommended) <br/>[EWDK for Visual Studio with Build Tools 15.4](/legal/windows/hardware/enterprise-wdk-license-2017) <br/>[EWDK for Visual Studio with Build Tools 15.2](/legal/windows/hardware/enterprise-wdk-license-2017) |
+| Windows 10, version 1703          | [EWDK for Windows 10, version 1703](/legal/windows/hardware/enterprise-wdk-license-2015) |
 
 > [!Note]
 > Starting in Windows 10 version 1709, the EWDK is ISO-based. To get started, download and mount the ISO, and then run **LaunchBuildEnv**.
@@ -132,7 +132,7 @@ For more information about using this updated certificate, see [Update for "Wind
 
 WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview supports debugging every version of Windows 10.
 
-For download links and more information about WinDbg Preview, see [Download WinDbg Preview](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools#small-windbg-preview-logo-download-windbg-preview).
+For download links and more information about WinDbg Preview, see [Download WinDbg Preview](./debugger/debugger-download-tools.md#small-windbg-preview-logo-download-windbg-preview).
 
 ## Standalone tools for debugging Windows XP and Windows Vista
 
@@ -156,8 +156,8 @@ start the SDK installer, and in the installation wizard, select
 **Debugging Tools for Windows**, and clear all other components.
 
 ### Related downloads
-* [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
-* [Download the Windows HLK, HCK, or Logo Kit](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)
-* [Download the debugging Tools for Windows (WinDbg)](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
-* [Download Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)
+* [Download the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
+* [Download the Windows HLK, HCK, or Logo Kit](/windows-hardware/test/hlk/windows-hardware-lab-kit)
+* [Download the debugging Tools for Windows (WinDbg)](./debugger/debugger-download-tools.md)
+* [Download Windows Symbol Packages](./debugger/debugger-download-symbols.md)
 * [Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)

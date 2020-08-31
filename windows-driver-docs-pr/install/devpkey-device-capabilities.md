@@ -60,11 +60,11 @@ The DEVPKEY_Device_Capabilities device property represents the capabilities of a
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_Capabilities to the capability value that the device driver returns in response to an [**IRP_MN_QUERY_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities) request for device capability information. The value of DEVPKEY_Device_Capabilities is a bitwise OR of the CM_DEVCAP_*Xxx* capability flags that are defined in Cfgmgr32.h. The device capabilities that these flags represent correspond to a subset of the members of the [**DEVICE_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure.
+Windows sets the value of DEVPKEY_Device_Capabilities to the capability value that the device driver returns in response to an [**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md) request for device capability information. The value of DEVPKEY_Device_Capabilities is a bitwise OR of the CM_DEVCAP_*Xxx* capability flags that are defined in Cfgmgr32.h. The device capabilities that these flags represent correspond to a subset of the members of the [**DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Capabilities.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Capabilities.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Capabilities property key. Instead, you can use the corresponding SPDRP_CAPABILITIES identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Capabilities property key. Instead, you can use the corresponding SPDRP_CAPABILITIES identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
@@ -76,18 +76,11 @@ Requirements
 ## See also
 
 
-[**DEVICE_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)
+[**DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)
 
-[**IRP_MN_QUERY_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-capabilities)
+[**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

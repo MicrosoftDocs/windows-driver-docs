@@ -441,9 +441,9 @@ To become familiar with code analysis, you can use one of the sample drivers for
 
 4. View warnings in the **Error List** tab of the build output window in Visual Studio.
 
-Click on the description for each warning to see the problematic area in your code.
+Select the description for each warning to see the problematic area in your code.
 
-Click on the linked warning code to see additional information.
+Select the linked warning code to see additional information.
 
 Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects?view=vs-2015) and [SAL 2.0 Annotations for Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers).
 
@@ -473,11 +473,11 @@ To become familiar with SDV, you can use one of the sample drivers (for example,
 
    Although the default rules find many common issues, consider running the more extensive *All driver rules* rule set as well.
 
-6. On the *Main* tab of SDV, click *Start*.
+6. On the *Main* tab of SDV, select *Start*.
 
 7. When SDV is complete, review any warnings in the output. The *Main* tab displays the total number of defects found.
 
-8. Click on each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-report).
+8. Select each warning to load the SDV Report Page and examine the information associated with the possible code vulnerability. Use the report to investigate the verification result and to identify paths in your driver that fail a SDV verification. For more information, see [Static Driver Verifier Report](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-report).
 
 ## Check code with the BinSkim Binary Analyzer
 
@@ -501,9 +501,9 @@ Follow these steps to validate that the security compile options are properly co
 
 2. There are a number of options to download BinSkim, such as a NuGet package. In this example we will download a zip file with BinSkim from here: <https://github.com/microsoft/binskim> and install it on a 64 bit Windows PC.
 
-3. Click on the **Clone or download** button on <https://github.com/microsoft/binskim> and select **Download Zip**.
+3. Select the **Clone or download** button on <https://github.com/microsoft/binskim> and select **Download Zip**.
 
-4. Click on the downloaded zip file and unzip it, for example to `C:\binskim-master`.
+4. Select the downloaded zip file and unzip it, for example to `C:\binskim-master`.
 
 5. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019).
 

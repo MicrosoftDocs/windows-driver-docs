@@ -22,9 +22,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_managing_and_optimizing_fonts_gg"></span><span id="DDK_MANAGING_AND_OPTIMIZING_FONTS_GG"></span>
 
 
-A *producer* is a driver that can generate fonts. It produces glyph information as output, including glyph metrics, bitmaps, and outlines. A *consumer* is a driver that uses fonts. It accepts glyph information as input for generating text output, and must draw its own fonts or those of the hardware on a device-managed surface. A driver can be both a producer and a consumer. For example, a printer driver can act as a producer while servicing a [**DrvQueryFontData**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvqueryfontdata) call to provide glyph metrics and later act as a consumer while processing a [**DrvTextOut**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtextout) call.
+A *producer* is a driver that can generate fonts. It produces glyph information as output, including glyph metrics, bitmaps, and outlines. A *consumer* is a driver that uses fonts. It accepts glyph information as input for generating text output, and must draw its own fonts or those of the hardware on a device-managed surface. A driver can be both a producer and a consumer. For example, a printer driver can act as a producer while servicing a [**DrvQueryFontData**](/windows/desktop/api/winddi/nf-winddi-drvqueryfontdata) call to provide glyph metrics and later act as a consumer while processing a [**DrvTextOut**](/windows/desktop/api/winddi/nf-winddi-drvtextout) call.
 
-A driver is required to handle fonts only when it is a font producer or a font consumer. If the hardware has a resident font, the driver must supply information to GDI about this font, including the font metrics in the [**IFIMETRICS**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_ifimetrics) structure, mappings from Unicode to individual glyph identities, individual glyph attributes, and kerning tables. There are also functions the driver must support. Some functions are required both by font drivers and drivers that use driver-specific or device-specific fonts. Others are required only by font drivers.
+A driver is required to handle fonts only when it is a font producer or a font consumer. If the hardware has a resident font, the driver must supply information to GDI about this font, including the font metrics in the [**IFIMETRICS**](/windows/desktop/api/winddi/ns-winddi-_ifimetrics) structure, mappings from Unicode to individual glyph identities, individual glyph attributes, and kerning tables. There are also functions the driver must support. Some functions are required both by font drivers and drivers that use driver-specific or device-specific fonts. Others are required only by font drivers.
 
 The support of font functions depends on the driver's abilities. The general types are:
 
@@ -35,10 +35,4 @@ The support of font functions depends on the driver's abilities. The general typ
 [TrueType functions](truetype-font-driver-functions.md)
 
  
-
- 
-
-
-
-
 

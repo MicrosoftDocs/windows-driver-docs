@@ -44,7 +44,7 @@ Clients use the  **KSPROPERTY\_PIN\_MODEDATAFORMATS** property to retrieve a lis
 <td><p>No</p></td>
 <td><p>Filter</p></td>
 <td><p>KSP_PIN, followed by a Mode GUID</p></td>
-<td><p>KSMULTIPLE_ITEM structure, followed by a sequence of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a> structures</p></td>
+<td><p>KSMULTIPLE_ITEM structure, followed by a sequence of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a> structures</p></td>
 </tr>
 </tbody>
 </table>
@@ -53,13 +53,13 @@ Clients use the  **KSPROPERTY\_PIN\_MODEDATAFORMATS** property to retrieve a lis
 
 Clients use this property to retrieve a list of formats supported for a specific audio signal processing mode by pins instantiated by the pin factory.
 
-Specify this property using [**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) followed by the Mode GUID, where the KSP_PIN member and the Mode GUID specify the pin factory and Mode for which to return the list of formats.
+Specify this property using [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) followed by the Mode GUID, where the KSP_PIN member and the Mode GUID specify the pin factory and Mode for which to return the list of formats.
 
-**KSPROPERTY\_PIN\_MODEDATAFORMATS** returns the supported formats as a [**KSMULTIPLE\_ITEM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure where each item in the structure is a ULONGLONG with the offset to a specific [KSDATAFORMAT structure](ttps://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) in the value from the beginning of the KSMULTIPLE_ITEM.
+**KSPROPERTY\_PIN\_MODEDATAFORMATS** returns the supported formats as a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure where each item in the structure is a ULONGLONG with the offset to a specific [KSDATAFORMAT structure](ttps://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) in the value from the beginning of the KSMULTIPLE_ITEM.
 - The KSMULTIPLE_ITEM::Size value includes the size of the KSMULTIPLE_ITEM and the sizes of each KSDATAFORMAT. 
 - The KSMULTIPLE_ITEM::Count value includes the count of indexes to each KSDATAFORMAT.
 
-In almost all cases, the KSDATAFORMAT structures being returned will actually be KSDATAFORMAT_WAVEFORMATEXTENSIBLE or [KSDATAFORMAT_WAVEFORMATEX](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structures with a Size that matches.
+In almost all cases, the KSDATAFORMAT structures being returned will actually be KSDATAFORMAT_WAVEFORMATEXTENSIBLE or [KSDATAFORMAT_WAVEFORMATEX](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structures with a Size that matches.
 
 As an example, a value for a pin factory that supports two formats would look like the following.
 
@@ -81,11 +81,11 @@ As an example, a value for a pin factory that supports two formats would look li
 }
 ```
 
-For more information, see [Extensible Wave-Format Descriptors](https://docs.microsoft.com/windows-hardware/drivers/audio/extensible-wave-format-descriptors).
+For more information, see [Extensible Wave-Format Descriptors](../audio/extensible-wave-format-descriptors.md).
 
 ## Supported Mode Format and Buffer Recommendations
 
-Starting with Windows 10 version 2004 (20H1) the use of **KSPROPERTY\_PIN\_MODEDATAFORMATS** and [KSAUDIO_PACKETSIZE_CONSTRAINTS2](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2) is the preferred approach for drivers to report the supported audio signal processing mode formats and buffer size constraints. Using this approach allows the Windows audio system to efficiently retrieve the endpoint streaming capabilities without having to create numerous streams to discover the formats and buffer sizes supported by the endpoint.
+Starting with Windows 10 version 2004 (20H1) the use of **KSPROPERTY\_PIN\_MODEDATAFORMATS** and [KSAUDIO_PACKETSIZE_CONSTRAINTS2](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2) is the preferred approach for drivers to report the supported audio signal processing mode formats and buffer size constraints. Using this approach allows the Windows audio system to efficiently retrieve the endpoint streaming capabilities without having to create numerous streams to discover the formats and buffer sizes supported by the endpoint.
 
 ### Requirements
 
@@ -108,10 +108,10 @@ Starting with Windows 10 version 2004 (20H1) the use of **KSPROPERTY\_PIN\_MODED
 
 ## See also
 
-[**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
+[**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 
-[**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)
+[**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)
 
-[**KSAUDIO_PACKETSIZE_CONSTRAINTS2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2)
+[**KSAUDIO_PACKETSIZE_CONSTRAINTS2**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2)
 
-[KSDATAFORMAT_WAVEFORMATEX](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)  
+[KSDATAFORMAT_WAVEFORMATEX](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex)

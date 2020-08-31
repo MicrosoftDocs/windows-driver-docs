@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of Windows operating system.
 
-The following sections describe the new features of Direct3D version 11 and how to support and use the [Direct3D Version 11 DDI](https://docs.microsoft.com/windows-hardware/drivers/ddi/index):
+The following sections describe the new features of Direct3D version 11 and how to support and use the [Direct3D Version 11 DDI](/windows-hardware/drivers/ddi/index):
 
 [Enabling Support for the Direct3D Version 11 DDI](enabling-support-for-the-direct3d-version-11-ddi.md)
 
@@ -33,10 +33,4 @@ The following sections describe the new features of Direct3D version 11 and how 
 [Conforming to the DXGI DDI](conforming-to-the-dxgi-ddi.md)
 
  
-
- 
-
-
-
-
 

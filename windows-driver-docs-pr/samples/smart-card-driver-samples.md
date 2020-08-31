@@ -12,4 +12,4 @@ The driver sample in this directory provides a starting point for writing a cust
 
 | Sample | Description |
 | --- | --- |
-| [PCMCIA Smart Card Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/pcmcia-smart-card-driver) | Demonstrates how to write a KMDF driver for the SCM Microsystems PCMCIA smart card reader. |
+| [PCMCIA Smart Card Driver](/samples/microsoft/windows-driver-samples/pcmcia-smart-card-driver) | Demonstrates how to write a KMDF driver for the SCM Microsystems PCMCIA smart card reader. |

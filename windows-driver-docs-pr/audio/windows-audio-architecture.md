@@ -25,35 +25,35 @@ This diagram provides a summary of the major elements of the Windows 10 audio st
 
 The top level APIs are used for application development. These APIs are in currently in use and supported.
 
--   XAML [MediaElement class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaElement)(C#, VB, C++)
+-   XAML [MediaElement class](/uwp/api/Windows.UI.Xaml.Controls.MediaElement)(C#, VB, C++)
 -   HTML [Audio object](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) and [Video object](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement)&lt;tags&gt; (used by websites and Windows Web Apps)
--   [Windows.Media.Capture namespace](https://docs.microsoft.com/uwp/api/Windows.Media.Capture) (C#, VB, C++)
--   [Microsoft Media Foundation](https://docs.microsoft.com/windows/desktop/medfound/microsoft-media-foundation-sdk) (C++)
+-   [Windows.Media.Capture namespace](/uwp/api/Windows.Media.Capture) (C#, VB, C++)
+-   [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk) (C++)
 
 These older APIs are deprecated.
 
--   [DirectShow](https://docs.microsoft.com/windows/desktop/DirectShow/directshow)
--   [DirectSound](https://docs.microsoft.com/previous-versions/windows/desktop/ee416960(v=vs.85))
--   [PlaySound](https://docs.microsoft.com/previous-versions/dd743680(v=vs.85))
--   [Windows.Media.MediaControlContract](https://docs.microsoft.com/uwp/extension-sdks/windows-desktop-extension-sdk)
+-   [DirectShow](/windows/desktop/DirectShow/directshow)
+-   [DirectSound](/previous-versions/windows/desktop/ee416960(v=vs.85))
+-   [PlaySound](/previous-versions/dd743680(v=vs.85))
+-   [Windows.Media.MediaControlContract](/uwp/extension-sdks/windows-desktop-extension-sdk)
 
 **Low level APIs**
 
 These lower level APIs are recommended for audio streaming.
 
--   [WASAPI](https://docs.microsoft.com/windows/desktop/CoreAudio/wasapi) (High performance, but more complicated)
--   [IXAudio2](https://docs.microsoft.com/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2) (Typically used for games)
--   [MIDI](https://docs.microsoft.com/windows/desktop/Multimedia/about-midi)
+-   [WASAPI](/windows/desktop/CoreAudio/wasapi) (High performance, but more complicated)
+-   [IXAudio2](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2) (Typically used for games)
+-   [MIDI](/windows/desktop/Multimedia/about-midi)
 
 This lower level API is recommended for enumeration.
 
--   [Windows.Devices.Enumeration](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration)
+-   [Windows.Devices.Enumeration](/uwp/api/Windows.Devices.Enumeration)
 
 These APIs are not recommended for Windows applications.
 
--   [About MMDevice API](https://docs.microsoft.com/windows/desktop/CoreAudio/mmdevice-api) (replaced by Windows.Devices.Enumeration)
--   [DeviceTopology API](https://docs.microsoft.com/windows/desktop/CoreAudio/devicetopology-api)
--   [EndpointVolume API](https://docs.microsoft.com/windows/desktop/CoreAudio/endpointvolume-api)
+-   [About MMDevice API](/windows/desktop/CoreAudio/mmdevice-api) (replaced by Windows.Devices.Enumeration)
+-   [DeviceTopology API](/windows/desktop/CoreAudio/devicetopology-api)
+-   [EndpointVolume API](/windows/desktop/CoreAudio/endpointvolume-api)
 
 ## <span id="Audio_Engine"></span><span id="audio_engine"></span><span id="AUDIO_ENGINE"></span>Audio Engine
 
@@ -100,11 +100,3 @@ The audio hardware that is present on any give device varies but can include:
 -   Integrated speakers, microphone, etc
 -   External devices: USB audio devices, Bluetooth audio devices, HDMI audio, etc.
 -   Signal processing can also be implemented in the H/W (e.g. the codec or the DSP), instead of or in addition to the APOs.
-
-
-
-
-
-
-
-

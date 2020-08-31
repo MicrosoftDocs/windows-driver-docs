@@ -37,7 +37,7 @@ This process may look something like this (more details below):
 
       - Insert the installation media, reboot, and go through setup. If you encounter an error message with similar text to "cannot install to selected device" or "disk format not supported" then boot device is detecting CSM and attempting to boot to Legacy boot MBR method.
 
-      - Alternatively, follow steps to manually configure GPT disk for UEFI Boot method. Looking at [Recommended UEFI-Based Disk-Partition Configurations](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744301(v=ws.10)) then run through setup.exe targeting 3rd partition.
+      - Alternatively, follow steps to manually configure GPT disk for UEFI Boot method. Looking at [Recommended UEFI-Based Disk-Partition Configurations](/previous-versions/windows/it-pro/windows-7/dd744301(v=ws.10)) then run through setup.exe targeting 3rd partition.
 
 8. Once Windows 7 is installed on the system and running (you may need to patch to the latest version) then upgrade to Windows 10.
 
@@ -48,4 +48,4 @@ This process may look something like this (more details below):
 
 ## Related resources
 
-[Recommended UEFI-Based Disk-Partition Configurations](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744301(v=ws.10))
+[Recommended UEFI-Based Disk-Partition Configurations](/previous-versions/windows/it-pro/windows-7/dd744301(v=ws.10))

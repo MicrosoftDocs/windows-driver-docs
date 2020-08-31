@@ -27,16 +27,11 @@ ms.localizationpriority: medium
 
     Asynchronous notification calls fail in operating system releases prior to Windows Vista.
 
--   Display simple dialog boxes by using the [**SplPromptUIInUsersSession**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-splpromptuiinuserssession) function.
+-   Display simple dialog boxes by using the [**SplPromptUIInUsersSession**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-splpromptuiinuserssession) function.
 
 -   Display complex user interface elements by writing a status monitor.
 
     A status monitor is an application that the IHV develops and that the user installs. Because the status monitor runs in the user's context under the user's credentials, it is safe for the status monitor to display UI elements at any time. The status monitor can communicate with the spooler by using bidirectional communication or by using the TCPMON Xcv interface. For information, see [Adding Bidirectional Communication](adding-bidirectional-communication.md) and [TCPMON Xcv Interface](tcpmon-xcv-interface.md).
 
  
-
- 
-
-
-
 

@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 
 
-The [**IStiUSD::Escape**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method is called to pass information directly to the hardware. This method is supported only on Windows XP and later operating systems.
+The [**IStiUSD::Escape**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method is called to pass information directly to the hardware. This method is supported only on Windows XP and later operating systems.
 
-All communication between a TWAIN-compatible application and the WIA driver goes first to the data source manager (*twain\_32.dll*), which in turn calls into the TWAIN compatibility layer (*wiadss.dll*). The TWAIN compatibility layer then calls the WIA driver's [**IStiUSD::Escape**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method, and passes one of the following two escape codes to the method:
+All communication between a TWAIN-compatible application and the WIA driver goes first to the data source manager (*twain\_32.dll*), which in turn calls into the TWAIN compatibility layer (*wiadss.dll*). The TWAIN compatibility layer then calls the WIA driver's [**IStiUSD::Escape**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-escape) method, and passes one of the following two escape codes to the method:
 
 [ESC\_TWAIN\_CAPABILITY Escape Code](esc-twain-capability-escape-code.md)
 
@@ -45,9 +45,4 @@ The code samples in the following sections illustrate the use of pass-though fun
 [ESC\_TWAIN\_CAPABILITY Escape Code](esc-twain-capability-escape-code.md)
 
  
-
- 
-
-
-
 

@@ -16,7 +16,7 @@ The magnetic stripe reader driver sample demonstrates how to create a universal 
 
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com) (any version)
 
-- [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+- [Windows Driver Kit (WDK) 10](../download-the-wdk.md)
 
 The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio.
 
