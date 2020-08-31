@@ -404,7 +404,7 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-||[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
+|Command |[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
 |--- |--- |--- |--- |
 |root|yes|yes| | |
 |initializeScript|yes|yes| | |
@@ -825,9 +825,8 @@ Error: 64 bit value loses precision on conversion to number
 
 In order to allow a debugger extension to maintain precision, a set of math functions are projected on top of the 64-bit library type. If the extension needs (or may possibly) need precision above 53-bits for incoming 64-bit values, the following methods should be utilized instead of relying on standard operators:
 
-|                   |                           |                                                                                                               |
-|-------------------|---------------------------|---------------------------------------------------------------------------------------------------------------|
 | **Method Name**   | **Signature**             | **Description**                                                                                               |
+|-------------------|---------------------------|---------------------------------------------------------------------------------------------------------------|
 | asNumber          | .asNumber()               | Converts the 64-bit value to a JavaScript number. If loss of precision occurs, \*\*AN EXCEPTION IS THROWN\*\* |
 | convertToNumber   | .convertToNumber()        | Converts the 64-bit value to a JavaScript number. If loss of precision occurs, \*\*NO EXCEPTION IS THROWN\*\* |
 | getLowPart        | .getLowPart()             | Converts the lower 32-bits of the 64-bit value to a JavaScript number                                         |
