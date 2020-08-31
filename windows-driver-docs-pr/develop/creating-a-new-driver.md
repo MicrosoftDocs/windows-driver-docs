@@ -19,7 +19,7 @@ Next, determine which of the following cases describes your driver model recomme
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **Visual C++ | Windows Driver | WDF**.
 3.  In the middle pane, select **User Mode Driver (UMDF)**.
-4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a UMDF Driver Based on a Template](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md).
+4.  Fill in the **Name** and **Location** boxes, and select **OK**. For more details, see [Writing a UMDF Driver Based on a Template](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md).
     **Note**  When you create a new UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 5.  At this point, you have a driver project that implements the general code required by most UMDF drivers. Now you can supply the code that is specific to your device. Refer to the documentation for your technology to learn about the interfaces that you need to implement.
 
@@ -28,7 +28,7 @@ Next, determine which of the following cases describes your driver model recomme
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **WDF**.
 3.  In the middle pane, select **Kernel Mode Driver (KMDF)**.
-4.  Fill in the **Name** and **Location** boxes, and click **OK**. For more details, see [Writing a KMDF Driver Based on a Template](../gettingstarted/writing-a-kmdf-driver-based-on-a-template.md).
+4.  Fill in the **Name** and **Location** boxes, and select **OK**. For more details, see [Writing a KMDF Driver Based on a Template](../gettingstarted/writing-a-kmdf-driver-based-on-a-template.md).
     **Note**  When you create a new KMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.
 5.  At this point, you have a driver project that implements the general code required by most KMDF drivers. Now you can supply the code that is specific to your device. Refer to the documentation for your technology to learn about the methods that you need to implement.
 
@@ -39,17 +39,17 @@ If your device technology has a miniport, miniclass, or some other kind of minid
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In the New Project dialog box, in the left pane, locate and select **Templates | Visual C++ | Windows Driver**.
 3.  Browse the list of installed templates to find a template for the type of minidriver you need to write.
-4.  If there is no template for your type of minidriver under **Windows Driver**, click **Online** and browse the templates that are available online.
-5.  If you find a template for your type of minidriver, select the template, fill in the **Name** and **Location** boxes, and click **OK**.
+4.  If there is no template for your type of minidriver under **Windows Driver**, select **Online** and browse the templates that are available online.
+5.  If you find a template for your type of minidriver, select the template, fill in the **Name** and **Location** boxes, and select **OK**.
 6.  At this point, you have a driver project that implements the general code required by your minidriver. Now you can supply the code that is specific to your device. Refer to the documentation for your technology to learn about the functions that you need to implement.
 
 If your device technology has a minidriver model, and you are not able to find a specific template for your type of minidriver, the Windows Driver Model (WDM) template is most likely going to be your starting point. Refer to your technology-specific documentation for guidance. In rare cases, you can use KMDF to write a minidriver, but usually the starting point is WDM.
 
 1.  In Visual Studio, on the **File** menu, choose **New | Project**.
 2.  In Visual Studio, in the New Project dialog box, under **Windows Driver**, select **WDM.**
-3.  Fill in the **Name** and **Location** boxes, and click **OK**.
-4.  At this point, you have an empty WDM driver project. In the Solution Explorer window, right-click your driver project, and choose **Add | New Item**.
-5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and click **OK**.
+3.  Fill in the **Name** and **Location** boxes, and select **OK**.
+4.  At this point, you have an empty WDM driver project. In the Solution Explorer window, select and hold (or right-click) your driver project, and choose **Add | New Item**.
+5.  In the Add New Item dialog box, select **C++ File (.cpp)**, enter a name for your file, and select **OK**.
 
     **Note**  If you want to create a .c file instead of a .cpp file, enter a name that has the **.c** extension.
 6.  Refer to the documentation for your technology to learn about the functions that you need to implement. As you implement and organize your functions, you might decide to add additional .cpp or .c files.

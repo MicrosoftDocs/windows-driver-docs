@@ -16,7 +16,7 @@ Suppose you have obtained a pair of files from Verisign: a private key file (PVK
 
     **Note**  Once you have created your PFX file, you can reuse it for other driver projects and on other driver development computers.
 2.  To determine which cross certificate you need, see [Cross-Certificates for Kernel Mode Code Signing](https://go.microsoft.com/fwlink/p/?LinkID=248296). Verify that the required cross certificate is in $(BASEDIR)\\CrossCertificates, where $(BASEDIR) is the base directory of the Windows kits (for example c:\\Program Files (x86)\\Windows Kits\\8.0\\CrossCertificates). If the required cross certificate is not there, download the cross certificate from Microsoft, and copy it to $(BASEDIR)\\CrossCertificates.
-3.  In Visual Studio, open the solution that contains the MyDriver and MyDriver Package projects. If the Solution Explorer window is not already open, choose **Solution Explorer** from the **View** menu. In the Solution Explorer window, right-click the package project, **MyDriver Package**, and choose **Properties**.
+3.  In Visual Studio, open the solution that contains the MyDriver and MyDriver Package projects. If the Solution Explorer window is not already open, choose **Solution Explorer** from the **View** menu. In the Solution Explorer window, select and hold (or right-click) the package project, **MyDriver Package**, and choose **Properties**.
 
 4.  In the property pages for the package, navigate to **Configuration Properties &gt; Driver Signing &gt; General**. In the **Sign Mode** drop-down list, select **Production Sign**. For **Production Certificate**, do one of the following:
 
@@ -24,16 +24,16 @@ Suppose you have obtained a pair of files from Verisign: a private key file (PVK
     -   Choose **Select From File**, and browse to your signing certificate.
     -   Choose **Select From Store** and choose a certificate that you previously imported into a certificate store.
 
-        **Note**  To import a certificate into a store, right-click the certificate file (PFX file), and choose **Install PFX**. Follow the instructions in the Certificate Import Wizard.
+        **Note**  To import a certificate into a store, select and hold (or right-click) the certificate file (PFX file), and choose **Install PFX**. Follow the instructions in the Certificate Import Wizard.
 
-        **Note**  If you decide to use a different certificate at a later time, be sure that your new certificate gets imported into the certificate store. If you choose **Select From File** and browse to your new certificate, the new certificate will be automatically imported into the certificate store. However, if you manually enter the path to your new certificate, it will not be automatically imported into the certificate store. In that case, you must right-click your new certificate file and choose **Install PFX**.
+        **Note**  If you decide to use a different certificate at a later time, be sure that your new certificate gets imported into the certificate store. If you choose **Select From File** and browse to your new certificate, the new certificate will be automatically imported into the certificate store. However, if you manually enter the path to your new certificate, it will not be automatically imported into the certificate store. In that case, you must select and hold (or right-click) your new certificate file and choose **Install PFX**.
 5.  On the **Driver Signing &gt; General** property page, for **TimeStampServer**, select one of the time stamp servers in the drop-down list.
 
     **Note**  Using one of the time stamp servers in the drop-down list requires that you be connected to the Internet when you build your driver package. If you need to be disconnected from the Internet when you build your driver package, clear the **TimeStampServer** field.
 6.  In the property pages for the package, navigate to **Configuration Properties &gt; Inf2Cat &gt; General**. In the **Run Inf2Cat** drop-down list, select **Yes**.
 
 7.  Close the property pages for the package.
-8.  Right-click the driver project, **MyDriver**, and choose **Properties**
+8.  Select and hold (or right-click) the driver project, **MyDriver**, and choose **Properties**
 9.  In the property pages for the driver, navigate to **Configuration Properties &gt; Driver Signing &gt; General**. Set **TimeStampServer** to the same value that you used in the driver package properties. Set **Sign Mode** to **Production Sign**, and set **Production Certificate** to the same value that you used in the driver package properties.
 
 10. When you are ready to build your driver package, press **F5**. Visual Studio will automatically sign your package and your driver file. If you have configured deployment, Visual Studio will also deploy your signed driver package to a test computer. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).

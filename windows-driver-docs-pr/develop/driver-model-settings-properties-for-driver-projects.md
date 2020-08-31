@@ -13,8 +13,8 @@ Sets the basic properties for a kernel-mode or user-mode driver, including the W
 ## Setting driver model properties for driver projects
 
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **Driver Model Settings**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **Driver Model Settings**.
 3.  Set the properties for the project.
 
 **Type of driver**  

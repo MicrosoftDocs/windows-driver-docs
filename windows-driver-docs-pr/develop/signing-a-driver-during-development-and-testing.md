@@ -19,7 +19,7 @@ In Microsoft Visual Studio, test signing is enabled by default. Suppose you have
 
 To manually enable test signing, follow these steps.
 
-1.  In Visual Studio, open a solution that has a driver package project. Right-click the driver package project, and choose **Properties**.
+1.  In Visual Studio, open a solution that has a driver package project. Select and hold (or right-click) the driver package project, and choose **Properties**.
 
 2.  In the property pages for the package, navigate to **Configuation Properties &gt; Driver Signing &gt; General**. In the **Sign Mode** drop-down list, select **Test Sign**.
 
@@ -37,10 +37,10 @@ When you test sign a driver package, Visual Studio creates a signing certificate
 
 To share the signing certificate, follow these steps.
 
--   In Visual Studio, in the Solution Explorer window, right-click your driver package project, and choose **Properties**.
+-   In Visual Studio, in the Solution Explorer window, select and hold (or right-click) your driver package project, and choose **Properties**.
 -   In the property pages for the package, navigate to **Configuation Properties &gt; Driver Signing &gt; General**. In the **Test Certificate** field, choose **Select From Store**.
 
--   In the Select Certificate dialog box, locate your test-signing certificate. The name of the certificate will be similar to WDKTestCert *yourName*. Select your test-signing certificate, and click **Properties**. In the **Details** tab, click **Copy to File**.
+-   In the Select Certificate dialog box, locate your test-signing certificate. The name of the certificate will be similar to WDKTestCert *yourName*. Select your test-signing certificate, and select **Properties**. In the **Details** tab, select **Copy to File**.
 -   Follow the instructions in the Certificate Export Wizard to export a PFX file. When you are asked whether you want to export the private key, select **Yes, export the private key**.
 -   Share the exported PFX file with the other developers.
 

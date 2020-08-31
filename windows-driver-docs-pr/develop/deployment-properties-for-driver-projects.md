@@ -13,10 +13,10 @@ You can configure the automatic deployment of a driver package on a remote test 
 ## <span id="Setting_deployment_properties_for_driver_package_projects"></span><span id="setting_deployment_properties_for_driver_package_projects"></span><span id="SETTING_DEPLOYMENT_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting deployment properties for driver package projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
 
     **Note**  If your driver solution does not have a driver package project, you need to add one. See [Creating a Driver Package](creating-a-driver-package.md). The deployment properties are only available if you have a driver package.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **Deployment**.
 3.  Select the **Enable deployment** option. When this option is selected, you can select the test computer to use, and you can configure options for driver installation and deployment.
 
 ## <span id="Project_Configuration_and_Platform"></span><span id="project_configuration_and_platform"></span><span id="PROJECT_CONFIGURATION_AND_PLATFORM"></span>Project Configuration and Platform

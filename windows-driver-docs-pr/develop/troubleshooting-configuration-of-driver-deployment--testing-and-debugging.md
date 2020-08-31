@@ -33,7 +33,7 @@ Provisioning a target computer is described in [Provision a computer for driver 
 ## <span id="configure_computers_menu_command_is_inactive"></span><span id="CONFIGURE_COMPUTERS_MENU_COMMAND_IS_INACTIVE"></span>Configure Computers menu command is inactive
 
 
-When you first start Microsoft Visual Studio, the **Test &gt; Configure Computers** command on the **Driver** menu might be inactive (greyed out). If you wait about 20 seconds, and then click the **Driver** menu again, the **Test &gt; Configure Computers** command will be available.
+When you first start Microsoft Visual Studio, the **Test &gt; Configure Computers** command on the **Driver** menu might be inactive (greyed out). If you wait about 20 seconds, and then select the **Driver** menu again, the **Test &gt; Configure Computers** command will be available.
 
 ## <span id="provisioning_fails_general_tips"></span><span id="PROVISIONING_FAILS_GENERAL_TIPS"></span>Provisioning fails: General tips
 
@@ -73,7 +73,7 @@ The network path was not found.
 ## <span id="domain_the_network_name_cannot_be_found"></span><span id="DOMAIN_THE_NETWORK_NAME_CANNOT_BE_FOUND"></span>Provisioning fails: The network name cannot be found
 
 
-When you start to provision a target computer, you might see a message that says **The network name cannot be found**. Double check the name of the target computer. If the computer name you entered originally was incorrect, start the provisioning wizard again (**Driver &gt; Test &gt; Configure Computers)**. Select the incorrect computer name, and click **Next**. For **Computer name**, enter the correct name of the target computer, and complete the wizard.
+When you start to provision a target computer, you might see a message that says **The network name cannot be found**. Double check the name of the target computer. If the computer name you entered originally was incorrect, start the provisioning wizard again (**Driver &gt; Test &gt; Configure Computers)**. Select the incorrect computer name, and select **Next**. For **Computer name**, enter the correct name of the target computer, and complete the wizard.
 
 **Note**  
 You might see several messages before you see the message **The network name cannot be found**. Some of those messages might make you think that the computer name was found and the first steps of provisioning were succeeding. In fact, the computer name was not found, and no portion of provisioning succeeded. For example, you might see this:

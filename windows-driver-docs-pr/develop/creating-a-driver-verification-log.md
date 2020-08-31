@@ -16,8 +16,8 @@ The Windows Server [Hardware Certification Program](/windows-hardware/design/co
 2.  For the Driver Solution, make sure that you have selected a Release configuration as the Solution Configuration and x64 as the Solution Platform.
 3.  Run [Static Driver Verifier](../devtest/static-driver-verifier.md). For information about creating the log file, see [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md) and [Using Static Driver Verifier to find defects in drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md).
 4.  Run the Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for Drivers](../devtest/how-to-run-code-analysis-for-drivers.md). For more information about code analysis, see [Analyzing C/C++ Code Quality by Using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836).
-5.  Create the Driver Verification Log. From the **Driver** menu, click **Create Driver Verification Log...**.
-6.  Verify that both the Code Analysis Log and the Static Driver Verifier Log files are detected. Click **Create**.
+5.  Create the Driver Verification Log. From the **Driver** menu, select **Create Driver Verification Log...**.
+6.  Verify that both the Code Analysis Log and the Static Driver Verifier Log files are detected. Select **Create**.
 
 The driver verification log has the file name extension .DVL.XML. The log is created in the project folder, for example, \\*myDriverProject*\\*myDriverName*.DVL.XML.
 

@@ -15,9 +15,9 @@ For more information about the framework verifier, see [Using the Framework's Ve
 ## <span id="Setting_KMDF_Verifier_properties_for_driver_package_projects"></span><span id="setting_kmdf_verifier_properties_for_driver_package_projects"></span><span id="SETTING_KMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting KMDF Verifier properties for driver package projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **KMDF Verifier**.
-3.  Click the **Enable KMDF Verifier** option and select **KMDF verifier is always on**. When this option is selected, you can configure the framework verification options for KMDF drivers.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **KMDF Verifier**.
+3.  Select the **Enable KMDF Verifier** option and select **KMDF verifier is always on**. When this option is selected, you can configure the framework verification options for KMDF drivers.
 
 <table>
 <colgroup>

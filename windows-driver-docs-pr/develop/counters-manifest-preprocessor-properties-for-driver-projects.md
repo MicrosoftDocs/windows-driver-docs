@@ -13,8 +13,8 @@ Sets the properties for the [CTRPP](/windows/desktop/PerfCtrs/ctrpp) tool that p
 ## <span id="Setting_the_Counters_Manifest_Preprocessor_properties_for_driver_projects"></span><span id="setting_the_counters_manifest_preprocessor_properties_for_driver_projects"></span><span id="SETTING_THE_COUNTERS_MANIFEST_PREPROCESSOR_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting the Counters Manifest Preprocessor properties for driver projects
 
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **Counters Manifest Preprocessor Properties**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **Counters Manifest Preprocessor Properties**.
 3.  Set the properties for the project.
 
 If you want to add this property page to your project so that you can run the CTRPP tool during the build process, see the [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md) and the [Ctrpp task](../devtest/ctrpp-task.md).

@@ -44,9 +44,9 @@ Provisioning a computer performs the following tasks:
 Once you have provisioned a target computer, you cannot completely remove the provisioning. However, you can remove most of the provisioning from the target computer by using Visual Studio on the host computer. Here are the steps.
 
 1.  On the host computer, in Visual Studio, on the **Driver** menu, choose **Test &gt; Configure Computers**.
-2.  Select the name of the target computer, and click **Delete computer**.
-3.  Select **Remove provisioning and delete computer**. Click **Next**.
-4.  When the removal process is complete, click **Finish**.
+2.  Select the name of the target computer, and select **Delete computer**.
+3.  Select **Remove provisioning and delete computer**. Select **Next**.
+4.  When the removal process is complete, select **Finish**.
 
 ## <span id="when_you_remove_provisioning__wdk_8.0_"></span><span id="WHEN_YOU_REMOVE_PROVISIONING__WDK_8.0_"></span>When you remove provisioning (WDK 8.0)
 

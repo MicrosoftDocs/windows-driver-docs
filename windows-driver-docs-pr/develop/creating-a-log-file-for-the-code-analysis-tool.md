@@ -12,8 +12,8 @@ The Windows Server 2012 [Hardware Certification Program](https://go.microsoft.c
 
 **To run code analysis on the driver**
 
-1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then right-click to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
-2.  From the **Analyze** or **Build** menu, click **Run Code Analysis on Solution**.
+1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then select and hold (or right-click) to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
+2.  From the **Analyze** or **Build** menu, select **Run Code Analysis on Solution**.
 3.  If errors or warnings are found, use the **Code Analysis Report** window to investigate the cause of the errors. Use the warning messages to fix those problems. For more information about the Code Analysis tool, see [How to run Code Analysis for drivers](../devtest/how-to-run-code-analysis-for-drivers.md) and [Analyzing C/C++ Code Quality by Using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836).
 
 The Code Analysis tool for drivers writes the results to the file vc.nativecodeanalysis.all.xml in the build configuration and platform sub-directory of your project, for example, \\Windows 8Release\\x64.

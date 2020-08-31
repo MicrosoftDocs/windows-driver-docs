@@ -20,7 +20,7 @@ The WDK provides templates that create starter code for a Windows Driver test pr
 ## <span id="To_customize_a_driver_test_using_the_Driver_Test_template_for_C__"></span><span id="to_customize_a_driver_test_using_the_driver_test_template_for_c__"></span><span id="TO_CUSTOMIZE_A_DRIVER_TEST_USING_THE_DRIVER_TEST_TEMPLATE_FOR_C__"></span>To customize a driver test using the Driver Test template for C++
 
 
-1.  From the **File** menu, click **New &gt; Project**.
+1.  From the **File** menu, select **New &gt; Project**.
 2.  From the list of installed templates in the **New Project** dialog box, select **Visual C++ &gt; Windows Driver &gt; Tests**.
 3.  Select **Windows Driver Test in C++**.
 4.  Provide a name for your driver test project and a location (or use the default).
@@ -31,7 +31,7 @@ The WDK provides templates that create starter code for a Windows Driver test pr
 ## <span id="To_customize_a_driver_test_using_the_Driver_Test_template_for_C_"></span><span id="to_customize_a_driver_test_using_the_driver_test_template_for_c_"></span><span id="TO_CUSTOMIZE_A_DRIVER_TEST_USING_THE_DRIVER_TEST_TEMPLATE_FOR_C_"></span>To customize a driver test using the Driver Test template for C\#
 
 
-1.  From the **File** menu, click **New &gt; Project**.
+1.  From the **File** menu, select **New &gt; Project**.
 2.  From the list of installed templates in the **New Project** dialog box, select **Visual C\# &gt; Windows Driver** .
 3.  Select **Windows Driver Test in C\#**.
 4.  Provide a name for your driver test project and a location (or use the default).
@@ -42,7 +42,7 @@ The WDK provides templates that create starter code for a Windows Driver test pr
 ## <span id="To_customize_a_driver_test_using_the_Driver_Test_template_for_Script"></span><span id="to_customize_a_driver_test_using_the_driver_test_template_for_script"></span><span id="TO_CUSTOMIZE_A_DRIVER_TEST_USING_THE_DRIVER_TEST_TEMPLATE_FOR_SCRIPT"></span>To customize a driver test using the Driver Test template for Script
 
 
-1.  From the **File** menu, click **New &gt; Project**.
+1.  From the **File** menu, select **New &gt; Project**.
 2.  From the list of installed templates in the **New Project** dialog box, select **Script &gt; Windows Driver** .
 3.  Select **Windows Driver Test Script**.
 4.  Provide a name for your driver test project and a location (or use the default).

@@ -15,8 +15,8 @@ For example, if you are using the [Event Tracing for Windows (ETW)](../devtest/e
 ## <span id="Setting_Message_Compiler_properties_for_driver_projects"></span><span id="setting_message_compiler_properties_for_driver_projects"></span><span id="SETTING_MESSAGE_COMPILER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting Message Compiler properties for driver projects
 
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **Message Compiler**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **Message Compiler**.
 3.  Set the properties for the project.
 
 This property page is available if you add a message text file (.mc) or a manifest (.man) to your solution.

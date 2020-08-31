@@ -36,7 +36,7 @@ The [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md) include
 
 ### <span id="Setting_the_run-time_test_parameters"></span><span id="setting_the_run-time_test_parameters"></span><span id="SETTING_THE_RUN-TIME_TEST_PARAMETERS"></span>Setting the run-time test parameters
 
-You can edit the run-time parameters for many of the Device Fundamentals tests. In the Driver Test Group window, an arrow (») next to a test name indicates that the test has parameters that you can change. Click the arrow (») to display the run-time parameters.
+You can edit the run-time parameters for many of the Device Fundamentals tests. In the Driver Test Group window, an arrow (») next to a test name indicates that the test has parameters that you can change. Select the arrow (») to display the run-time parameters.
 
 One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](../wdtf/index.md) [SDEL](/windows-hardware/drivers/ddi/index) query that identifies the target devices. You can specify a particular device for testing, for example:
 

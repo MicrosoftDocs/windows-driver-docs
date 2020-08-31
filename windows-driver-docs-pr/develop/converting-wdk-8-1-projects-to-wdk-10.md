@@ -18,11 +18,11 @@ Use these steps to convert the projects in a driver solution.
 
     Visual Studio automatically runs ProjectUpgradeTool to convert the projects in this solution. You can also run this tool from the command line. By default, when you install the WDK, ProjectUpgradeTool.exe installs in Windows Kits\\10\\bin\\x86.
 
-    Visual Studio opens a **Review Solution Actions** dialog with the title **Upgrade VC++ Compiler and Libraries**. Click **OK** and Visual Studio attempts to upgrade all projects in the solution.
+    Visual Studio opens a **Review Solution Actions** dialog with the title **Upgrade VC++ Compiler and Libraries**. Select **OK** and Visual Studio attempts to upgrade all projects in the solution.
 
     If you see a **File Modification Detected** dialog, choose **Reload All**.
 
-2.  In the Solution Explorer pane, right-click the driver project name and choose **Properties**. Click the **Configuration Manager** button. In the **Active solution configuration** list, choose **&lt;New...&gt;**. Type a name and copy the settings from a Windows 8.1 project context. Click **OK**.
+2.  In the Solution Explorer pane, select and hold (or right-click) the driver project name and choose **Properties**. Select the **Configuration Manager** button. In the **Active solution configuration** list, choose **&lt;New...&gt;**. Type a name and copy the settings from a Windows 8.1 project context. Select **OK**.
 
     Typically, the converted solution contains two configuration profiles, one for debug (testing) and one for release. To create a similar environment with WDK 10, simply choose **&lt;New...&gt;** twice. To create a debug profile, copy from the **Win 8.1 Debug** profile. To create a release profile, copy from the **Win 8.1 Release** profile.
 
