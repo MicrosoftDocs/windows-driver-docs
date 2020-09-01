@@ -102,21 +102,20 @@ Cross-signing describes a process where a driver is signed with a certificate is
 
 This table summarizes the driver signing requirements for Windows.
 
-|                                    |                                |                                    |                                                                                |
-|------------------------------------|--------------------------------|------------------------------------|--------------------------------------------------------------------------------|
-|                                    | *Attestation Dashboard Signed* | *HLK Test Passed Dashboard Signed* | *Cross-signed using a SHA-1 certificate issued prior to July 29, 2015*         |
-| Windows Vista                      | No                             | Yes                                | Yes                                                                            |
-| Windows 7                          | No                             | Yes                                | Yes                                                                            |
-| Windows 8 / 8.1                    | No                             | Yes                                | Yes                                                                            |
-| Windows 10                         | Yes                            | Yes                                | No (as of Windows 10 1809)                                                                            |
-| Windows 10 - DG Enabled            | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
-| Windows Server 2008 R2             | No                             | Yes                                | Yes                                                                            |
-| Windows Server 2012 R2             | No                             | Yes                                | Yes                                                                            |
-| Windows Server >= 2016             | No                             | Yes                                | Yes                                                                            |
-| Windows Server >= 2016 – DG Enabled| \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
-| Windows IoT Enterprise             | Yes                            | Yes                                | Yes                                                                            |
-| Windows IoT Enterprise- DG Enabled | \*Configuration Dependent      | \*Configuration Dependent          | \*Configuration Dependent                                                      |
-| Windows IoT Core(1)                | Yes (Not Required)             | Yes (Not Required)                 | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
+| Version | *Attestation Dashboard Signed* | *HLK Test Passed Dashboard Signed* | *Cross-signed using a SHA-1 certificate issued prior to July 29, 2015* |
+|--|--|--|--|
+| Windows Vista | No | Yes | Yes |
+| Windows 7 | No | Yes | Yes |
+| Windows 8 / 8.1 | No | Yes | Yes |
+| Windows 10 | Yes | Yes | No (as of Windows 10 1809) |
+| Windows 10 - DG Enabled | \*Configuration Dependent | \*Configuration Dependent | \*Configuration Dependent |
+| Windows Server 2008 R2 | No | Yes | Yes |
+| Windows Server 2012 R2 | No | Yes | Yes |
+| Windows Server >= 2016 | No | Yes | Yes |
+| Windows Server >= 2016 – DG Enabled | \*Configuration Dependent | \*Configuration Dependent | \*Configuration Dependent |
+| Windows IoT Enterprise | Yes | Yes | Yes |
+| Windows IoT Enterprise- DG Enabled | \*Configuration Dependent | \*Configuration Dependent | \*Configuration Dependent |
+| Windows IoT Core(1) | Yes (Not Required) | Yes (Not Required) | Yes (Cross signing will also work for certificates issued after July 29, 2015) |
 
 \*Configuration Dependent –With Windows 10 Enterprise edition, organizations can use Windows Defender Application Control (WDAC) to define custom signing requirements. For more information about WDAC, see [Planning and getting started on the Windows Defender Application Control deployment process](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
