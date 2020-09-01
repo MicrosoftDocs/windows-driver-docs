@@ -23,8 +23,6 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 - [Buy an SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
 
-- [Buy a Symantec EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393248)
-
 - [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)
 
 - [Buy an Entrust EV code signing cert](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
@@ -33,13 +31,7 @@ If you don’t have an approved EV code signing certificate, you can buy one fro
 
 - [Buy a Sectigo (formerly Comodo) EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
 
-- [Buy a DigiCert EV code signing certificate](https://go.microsoft.com/fwlink/?LinkId=393249)
-
-  1. On the **DigiCert Code Signing Certificates for Sysdevs** page, click **Start**.
-
-  2. On the **DigiCert Order Form** page (Step 1), in the **Code Signing** section, select **EV Code Signing Certificate**, fill out the rest of the form, and then select **Continue**.
-
-  3. Follow the instructions provided by DigiCert to buy a certificate.
+- [Buy a DigiCert EV code signing certificate](https://www.digicert.com/order/order-1.php)
 
 ## Step 3: Retrieve code signing certificates
 
