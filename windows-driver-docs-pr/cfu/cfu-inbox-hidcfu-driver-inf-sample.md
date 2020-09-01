@@ -1,7 +1,7 @@
 ---
 title: Customize the Component Firmware Update (CFU) inbox HIDCFU driver INF
 description: Customize the Component Firmware Update (CFU) inbox HIDCFU driver INF
-ms.date: 07/24/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices

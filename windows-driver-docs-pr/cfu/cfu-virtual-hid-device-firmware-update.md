@@ -1,7 +1,7 @@
 ---
 title: CFU virtual HID device firmware update
 description: Provides a walkthrough of updating firmware for the Component Firmware Update (CFU) virtual HID device sample.
-ms.date: 08/13/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,7 +86,7 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 ## Install a firmware update for the CFU virtual HID device
 
-This section provides an example of installing a firmware update on the sample [**CfuVirtualHid Device**](https://github.com/microsoft/CFU/tree/master/Host/CFUFirmwareSimulation) device built in Visual Studio 2019 and installed using the [**devcon.exe**](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) command-line tool in the previous section.
+This section provides an example of installing a firmware update on the sample [**CfuVirtualHid Device**](https://github.com/microsoft/CFU/tree/master/Host/CFUFirmwareSimulation) device built in Visual Studio 2019 and installed using the [**devcon.exe**](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) command-line tool in the previous section above.
 
 1. Navigate to the location of the .inf file and the firmware offer and payload .bin files for your target device. For example:
 
@@ -94,11 +94,29 @@ This section provides an example of installing a firmware update on the sample [
 
     ![step 1](images/install-cfu-virtual-device-firmware-update-1.png)
 
+1. In a text editor, open your firmware update INF file. In this example, we'll use the *CfuVirtualHidDeviceFwUpdate.inf* file outlined in the [CFU inbox HIDCFU driver INF sample](cfu-inbox-hidcfu-driver-inf-sample.md).
+
+1. In your firmware update INF file, move to the `[Standard.NTamd64]` section and verify that the following text for the **HID\VID_045E&UP:FA00_U:00F5** device appears:
+
+  ```inf
+  [Standard.NTamd64]
+  %CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5 ; HardwareID for VirtualHidDevice MCU
+
+  [CfuVirtualHidDeviceFwUpdate.NT]
+  Include            = HidCfu.inf
+  Needs              = HidCfu.NT
+  CopyFiles          = CfuVirtualHidDeviceFwUpdate.CopyFiles
+
+  [CfuVirtualHidDeviceFwUpdate.NT.Wdf]
+  Include            = HidCfu.inf
+  Needs              = HidCfu.NT.Wdf
+  ```
+
+
+
+
 1. At an administrative command prompt, run the following command:
 
-1. 
-
----
 
 
 
@@ -113,6 +131,3 @@ Step 3
 Step 4
 
 ![step 4](images/install-cfu-virtual-device-firmware-update-4.png)
-
-
-
