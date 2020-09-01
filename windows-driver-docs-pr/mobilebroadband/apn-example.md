@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # APN example
 
 
-The following XML document uses the [APN XML schema](apn-xml-schema.md) to specify the APN information for a service:
+The following XML document uses the [APN XML schema](apn-schema-definition.md) to specify the APN information for a service:
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>

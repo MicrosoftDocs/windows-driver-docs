@@ -409,7 +409,7 @@ The Windows APN database is present on all Windows 8, Windows 8.1, and Windows
 
 This information is intended to get customers online within seconds of connecting a mobile broadband device. It should enable them to purchase service immediately by using a Web browser or get online immediately if they have already purchased service.
 
-For information on submitting updates to the Windows APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
+For information on submitting updates to the Windows APN database, see [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 ### Service metadata
 
@@ -417,7 +417,7 @@ Service metadata is delivered to any user after they connects a mobile broadband
 
 This information enables customers to have a richer experience by allowing you to add branding elements for Windows Connection Manager, referencing a mobile broadband app that is automatically acquired from the Microsoft Store, and having the most current mobile broadband settings for getting online for purchase or Internet connectivity. Windows will periodically check that it has the latest service metadata package from WMIS.
 
-The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the APN database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the APN database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 For instructions on how to create a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md).
 

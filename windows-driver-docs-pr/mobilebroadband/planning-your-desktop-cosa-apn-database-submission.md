@@ -121,5 +121,5 @@ Note the following for both COSA and APN database.
 
     -   For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet. 
 
-Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA/APN database submission](testing-your-desktop-cosa-apn-database-submission.md).
+Once your spreadsheet is complete, you can test the APNs you’ve entered. For the next steps in testing your APN update, see [Testing your desktop COSA/APN database submission](testing-your-desktop-planning-your-desktop-cosa-apn-database-submission.md).
 

@@ -26,7 +26,7 @@ To see a list of available settings MOs can configure in desktop COSA, see [Desk
 
 ### <a href="" id="settings"></a> What are the settings that MOs can specify in COSA?
 
-The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+The settings are largely the same as what MOs configured in apndatabase.xml, with a few exceptions and new additions. For details, see the tables in [Planning your desktop COSA/APN database submission](planning-your-desktop-planning-your-desktop-cosa-apn-database-submission.md).
 
 ### <a href="" id="events"></a> What events trigger the application of new MO settings?
 

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic describes the settings available in desktop COSA and the APN database (apndatabase.xml).
 
-For more info about the Desktop COSA/APN database submission process, see [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
+For more info about the Desktop COSA/APN database submission process, see [Planning your desktop COSA/APN database submission](planning-your-desktop-planning-your-desktop-cosa-apn-database-submission.md).
 
 For more info about COSA, see [COSA overview](cosa-overview.md).
 

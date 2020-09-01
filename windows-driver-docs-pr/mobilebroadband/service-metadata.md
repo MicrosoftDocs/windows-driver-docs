@@ -34,7 +34,7 @@ The information in the metadata is used to customize aspects of the Windows 8, 
 
 A service metadata package consists of multiple XML documents stored within a .devicemetadata-ms file. Each document specifies various components of the service’s attributes. These XML documents provide Windows Connection Manager with customizations that appear to the user, as well as network configuration information.
 
-For reference information about the XML documents in a service metadata package, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+For reference information about the XML documents in a service metadata package, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 ## Service metadata contents
 
@@ -49,7 +49,7 @@ The following summary describes some of the most interesting fields that are con
 - **Operator logo**
   A custom logo that appears in Windows Connection Manager next to your network entry. (The logo is hidden when the user is on a roaming network.) The operator logo corresponds to the [ServiceIconFile](serviceiconfile.md) element in the service metadata package schema. For more information about the logo requirements, see [Service Icon Requirements](../dashboard/index.yml).  
   > [!IMPORTANT]
-  > In Windows 10, version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md).
+  > In Windows 10, version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md).
 
 - **Mobile broadband app**  
   A UWP device app that is automatically downloaded and applied to the computer. This app can provide key experiences such as plan purchase, data usage, and help and support, and can highlight value-added services.
@@ -70,7 +70,7 @@ The following summary describes some of the most interesting fields that are con
 - **Custom operator name**  
   The mobile broadband device typically provides the operator name, which Windows shows in Windows Connection Manager. You can override this name by specifying a custom name in metadata. This name displays only if the user is on a home network and is not on a roaming network. A displayed roaming network name is based on information that is received from the device. This corresponds to the [ServiceProvider](serviceprovider.md) element in the service package metadata schema.  
   > [!IMPORTANT]
-  > In Windows 10, Version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, Version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
+  > In Windows 10, Version 1709 and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your desktop COSA/APN database submission](planning-your-desktop-planning-your-desktop-cosa-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, Version 1709, you will still create a metadata package as described in this section. For more information about COSA, see [COSA overview](cosa-overview.md). 
 
 - **Device notification handler**  
   In general, an app must be run by the user at least one time before it can register work items with the System Event broker. However, mobile broadband apps might need to receive important events before the user can run the app. You can specify the [DeviceNotificationHandler](devicenotificationhandler.md) element in service metadata, which Windows will use to register some critical events. For more information about SMS notifications, see [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md).

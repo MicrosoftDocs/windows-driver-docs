@@ -30,7 +30,7 @@ Next, check that you can successfully authenticate to the network. In particular
 ## <span id="related_topics"></span>Related topics
 
 
-[Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
+[Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)
 
  
 
