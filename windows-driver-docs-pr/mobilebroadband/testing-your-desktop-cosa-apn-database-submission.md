@@ -105,11 +105,11 @@ Before you submit an APN update, you should editing the local APN database or cr
 
 1. **Copy any existing values from the local APN database file** -- View the existing entries in the local APN database on your PC and copy these entries into a new XML file. If you don’t have any APN entries in the local copy of the APN database, skip this step and start with a blank XML file.
 
-2. **Modify values in the XML file according to the published APN schema** – Ensure that your APN entries follow the [APN database schema reference](apn-schema-definition.md.md).
+2. **Modify values in the XML file according to the published APN schema** – Ensure that your APN entries follow the [APN database schema reference](apn-schema-definition.md).
 
 3. **Generate your hardware IDs** – Hardware IDs specify one or more hardware identification strings that match the SIM characteristics to an APN entry in the database. Each string is specified by a [HardwareId](hardwareid-apnxml.md) element. We recommend that you use mbidgenerator.exe to generate your hardware IDs. For more information, see [Using mbidgenerator.exe to generate hardware IDs](using-mbidgeneratorexe-to-generate-hardware-ids.md).
 
-4. **Validate that the file you generated conforms to the published APN database schema** -- Always perform a schema check to ensure that the file you have generated conforms to the [APN database schema reference](apn-schema-definition.md.md).
+4. **Validate that the file you generated conforms to the published APN database schema** -- Always perform a schema check to ensure that the file you have generated conforms to the [APN database schema reference](apn-schema-definition.md).
 
 5. **Overwrite the APN connectivity database on the PC with your new database**
 

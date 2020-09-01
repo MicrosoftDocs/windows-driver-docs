@@ -110,7 +110,7 @@
     - name: "COSA/APN database submission"
       items: 
       - name: "Planning your desktop COSA/APN database submission"
-        href: planning-your-desktop-planning-your-desktop-cosa-apn-database-submission.md
+        href: planning-your-desktop-cosa-apn-database-submission.md
       - name: "Desktop COSA/APN database settings"
         href: desktop-cosa-apn-database-settings.md
       - name: "Testing your desktop COSA/APN database submission"
