@@ -109,7 +109,7 @@ Table 1 defines the fields in DBG2.
 |          |          | 0x0011      | SDM845 with clock rate of 1.8432 MHz |
 |          |          | 0x0012      | 16550-compatible with parameters defined in Generic Address Structure |
 |          |          | 0x0013      | SDM845 with clock rate of 7.372 MHz |
-|          |          | 0x0014 - 0xFFFF | Reserved (For Future Use) |
+|          |          | 0x0014 – 0xFFFF | Reserved (For Future Use) |
 | 1394     | 0x8001   | 0x0000      | IEEE1394 Standard Host Controller Interface |
 |          |          | 0x0001 – 0xFFFF | Reserved (For Future Use) |
 | USB      | 0x8002   | 0x0000      | XHCI-compliant controller with debug interface |
