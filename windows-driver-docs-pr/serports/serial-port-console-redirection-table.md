@@ -49,7 +49,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Device ID | 2 | 64 | Must be 0xFFFF if it is not a PCI device. |
 | PCI Vendor ID | 2 | 66 | Must be 0xFFFF if it is not a PCI device. |
 | PCI Bus Number | 1 | 68 | PCI Bus Number if table describes a PCI device.<p>Must be 0x00 if it is not a PCI device.</p> |
-| PCI Device Number | 1 | 69 | PCI Slot Number if table describes a PCI device.<p>Must be 0x00 if it is not a PCI devic.</p>|
+| PCI Device Number | 1 | 69 | PCI Slot Number if table describes a PCI device.<p>Must be 0x00 if it is not a PCI device.</p>|
 | PCI Function Number | 1 | 70 | PCI Function Number if table describes a PCI device.<p>Must be 0x00 if it is not a PCI device.</p> |
 | PCI Flags | 4 | 71 | PCI Compatibility flags bitmask.  Should be zero by default.<ul><li>Bit[0]: Operating System should NOT suppress PNP device enumeration or disable power management for this device. Must be 0 if it is not a PCI device</li><li>Bit[1-31]: Reserved, must be zero.</li></ul>|
 | PCI Segment | 1 | 75 | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0. </p>|
