@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 The **!ndiskd.wdiminidriver** extension displays information about one or more CMiniportDriver structures. If you run this extension with no parameters, !ndiskd will display a list of all CMiniportDriver structures.
 
-For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide).
+For more information about WDI miniport drivers, see the [WDI Miniport Driver Design Guide](../network/wdi-miniport-driver-design-guide.md).
 
-For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+For more information about WDI miniport driver reference, see [WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/).
 
 ```console
 !ndiskd.wdiminidriver [-handle <x>] [-pm] [-rcvfilter] 
@@ -118,9 +118,9 @@ HANDLERS
 
 ## See also
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -128,6 +128,6 @@ HANDLERS
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[WDI Miniport Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide)
+[WDI Miniport Driver Design Guide](../network/wdi-miniport-driver-design-guide.md)
 
-[WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

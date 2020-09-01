@@ -44,9 +44,9 @@ If you click on the link at the bottom of the warning, !ndiskd will give you mor
     !wmitrace.enable ndis {DD7A21E6-A651-46D4-B7C2-66543067B869} -level 4 -flag 0x31f3
 ```
 
-For more information about WPP, see [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
+For more information about WPP, see [WPP Software Tracing](../devtest/wpp-software-tracing.md).
 
-For more information about Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+For more information about Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md).
 
 For more information about WMI tracing, see [WMI Tracing Extensions (Wmitrace.dll)](wmi-tracing-extensions--wmitrace-dll-.md).
 
@@ -164,9 +164,9 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
 ## See also
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -176,8 +176,8 @@ This extension applies to checked NDIS.sys only. To check the build info of NDIS
 
 [**!ndiskd.ndis**](-ndiskd-ndis.md)
 
-[WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing)
+[WPP Software Tracing](../devtest/wpp-software-tracing.md)
 
-[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier)
+[Driver Verifier](../devtest/driver-verifier.md)
 
 [WMI Tracing Extensions (Wmitrace.dll)](wmi-tracing-extensions--wmitrace-dll-.md)

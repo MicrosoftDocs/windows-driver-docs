@@ -63,12 +63,7 @@ Requirements
 ## See also
 
 
-[PLDR](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-pldr-and-fldr)
+[PLDR](./wdi-pldr-and-fldr.md)
 
  
-
- 
-
-
-
 

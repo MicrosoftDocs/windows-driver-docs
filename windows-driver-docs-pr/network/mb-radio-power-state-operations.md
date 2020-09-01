@@ -23,13 +23,7 @@ Be aware that the radio power state may change on portable computers (laptops) b
 
 -   The MB Service may send a command to the miniport driver to put the radio into a low power state to conserve power or to avoid radio interference with the environment (such as on an airplane).
 
-For more information about radio power state operations, see [OID\_WWAN\_RADIO\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-radio-state).
+For more information about radio power state operations, see [OID\_WWAN\_RADIO\_STATE](./oid-wwan-radio-state.md).
 
  
-
- 
-
-
-
-
 

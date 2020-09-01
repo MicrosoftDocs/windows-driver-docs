@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_REGISTER\_STATE notification to com
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_REGISTRATION\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state) structure.
+This notification uses the [**NDIS\_WWAN\_REGISTRATION\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state) structure.
 
 Remarks
 -------
@@ -93,14 +93,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_REGISTRATION\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state)
+[**NDIS\_WWAN\_REGISTRATION\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_registration_state)
 
 [OID\_WWAN\_REGISTER\_STATE](oid-wwan-register-state.md)
 
  
-
- 
-
-
-
 

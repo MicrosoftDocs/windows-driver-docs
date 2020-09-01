@@ -33,7 +33,7 @@ Mandatory.
 Remarks
 -------
 
-The [OID\_GEN\_LINK\_STATE](oid-gen-link-state.md) is the NDIS 6.0 and later and later equivalent of this OID. However NDIS 6.0 and later miniport drivers must use the [**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state) status indication instead to indicate link speed changes.
+The [OID\_GEN\_LINK\_STATE](oid-gen-link-state.md) is the NDIS 6.0 and later and later equivalent of this OID. However NDIS 6.0 and later miniport drivers must use the [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) status indication instead to indicate link speed changes.
 
 The unit of measurement is 100 bps, so a value of 100,000 represents a hardware bit rate of 10 Mbps.
 
@@ -56,14 +56,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_LINK\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-link-state)
+[**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md)
 
 [OID\_GEN\_LINK\_STATE](oid-gen-link-state.md)
 
  
-
- 
-
-
-
 

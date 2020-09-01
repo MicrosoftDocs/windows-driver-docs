@@ -28,7 +28,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                                                       | Description                                                                                                                                                                  |
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry)\[\] | An array of [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry) elements that specifies the Ethertype encapsulations for the association. |
+| [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry)\[\] | An array of [**WDI\_ETHERTYPE\_ENCAPSULATION\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_ethertype_encapsulation_entry) elements that specifies the Ethertype encapsulations for the association. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

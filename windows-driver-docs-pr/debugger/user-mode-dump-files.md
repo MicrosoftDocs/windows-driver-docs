@@ -132,7 +132,7 @@ There are several different tools that can be used to create a user-mode dump fi
 
 ProcDump is a command-line utility whose primary purpose is monitoring an application for CPU spikes and generating crash dumps during a spike that an administrator or developer can use to determine the cause of the spike. ProcDump also includes hung window monitoring (using the same definition of a window hang that Windows and Task Manager use), unhandled exception monitoring and can generate dumps based on the values of system performance counters. It also can serve as a general process dump utility that you can embed in other scripts.
 
-For information about creating a user-mode dump file using the Sysinternals ProcDump utility, see [ProcDump](https://docs.microsoft.com/sysinternals/downloads/procdump).
+For information about creating a user-mode dump file using the Sysinternals ProcDump utility, see [ProcDump](/sysinternals/downloads/procdump).
 
 ## <span id="cdb-windbg"></span><span id="CDB-WINDBG"></span>CDB and WinDbg
 

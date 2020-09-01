@@ -75,5 +75,4 @@ The driver name returned in parameter 2 should point to the offending driver.
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
-[Storport's Interface with Storport Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-s-interface-with-storport-miniport-drivers)
-
+[Storport's Interface with Storport Miniport Drivers](../storage/storport-s-interface-with-storport-miniport-drivers.md)

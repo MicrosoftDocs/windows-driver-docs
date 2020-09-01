@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !avrf
 
 
-The **!avrf** extension controls the settings of [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier) and displays a variety of output produced by Application Verifier.
+The **!avrf** extension controls the settings of [Application Verifier](../devtest/application-verifier.md) and displays a variety of output produced by Application Verifier.
 
 ```dbgcmd
     !avrf
@@ -120,7 +120,7 @@ exts.dll
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about how to download and install Application Verifier and its documentation, see [Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier).
+For information about how to download and install Application Verifier and its documentation, see [Application Verifier](../devtest/application-verifier.md).
 
 Remarks
 -------

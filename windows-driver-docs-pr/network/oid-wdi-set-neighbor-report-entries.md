@@ -25,7 +25,7 @@ OID\_WDI\_SET\_NEIGHBOR\_REPORT\_ENTRIES sends the list of neighbor reports rece
 
 | TLV                                                                             | Multiple TLV instances allowed | Optional | Description                   |
 |---------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------|
-| [**WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-neighbor-report-entry) | X                              |          | The list of neighbor reports. |
+| [**WDI\_TLV\_NEIGHBOR\_REPORT\_ENTRY**](./wdi-tlv-neighbor-report-entry.md) | X                              |          | The list of neighbor reports. |
 
  
 
@@ -59,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

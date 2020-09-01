@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # USB 2.0 Extensions
 
-This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack. For more information about these three drivers, see [USB host-side drivers in Windows](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-3-0-driver-stack-architecture).
+This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack. For more information about these three drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 The USB 2.0 debugger extension commands are implemented in Usbkd.dll. To load the Usbkd commands, enter **.load usbkd.dll** in the debugger.
 

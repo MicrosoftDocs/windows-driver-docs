@@ -27,9 +27,6 @@ In this section, the term DLS resource, or just resource, refers to either a DLS
 
 Property items in this set are specified by KSPROPERTY\_SYNTH\_DLS enumeration values, as defined in header file Dmusprop.h.
 
-## <span id="ddk_ksproperty_synth_dls_append_ks"></span><span id="DDK_KSPROPERTY_SYNTH_DLS_APPEND_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_DLS\_APPEND property specifies the amount of reserved storage space that the client appends to the DLS data in each buffer that it downloads to the synthesizer.
@@ -92,8 +89,6 @@ A KSPROPERTY\_SYNTH\_DLS\_APPEND property request returns STATUS\_SUCCESS to ind
  
 
 These additional bytes are intended for drivers that need extra padding for alignment requirements or to replicate the start of a sample in order to simplify sample interpolation.
-
-## <span id="ddk_ksproperty_synth_dls_compact_ks"></span><span id="DDK_KSPROPERTY_SYNTH_DLS_COMPACT_KS"></span>
 
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
@@ -160,9 +155,6 @@ A KSPROPERTY\_SYNTH\_DLS\_COMPACT property request returns STATUS\_SUCCESS to in
 The implementation of the handler for this property should not interrupt playback.
 
 For more information, see the description of the **IDirectMusicPort::Compact** method in the Microsoft Windows SDK documentation.
-
-## <span id="ddk_ksproperty_synth_dls_download_ks"></span><span id="DDK_KSPROPERTY_SYNTH_DLS_DOWNLOAD_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -273,9 +265,6 @@ The KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD property request specifies the location of 
   }
 ```
 
-## <span id="ddk_ksproperty_synth_dls_unload_ks"></span><span id="DDK_KSPROPERTY_SYNTH_DLS_UNLOAD_KS"></span>
-
-
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
 The KSPROPERTY\_SYNTH\_DLS\_UNLOAD property unloads a DLS data resource that was previously downloaded.
@@ -351,8 +340,6 @@ If, after unloading the DLS data resource, the synthesizer receives a note-on ev
 
 For more information, see the discussion of the **IDirectMusicPort::UnloadInstrument** method in the Microsoft Windows SDK documentation.
 
-## <span id="ddk_ksproperty_synth_dls_waveformat_ks"></span><span id="DDK_KSPROPERTY_SYNTH_DLS_WAVEFORMAT_KS"></span>
-
 
 ### <span id="Usage_Summary_Table"></span><span id="usage_summary_table"></span><span id="USAGE_SUMMARY_TABLE"></span>Usage Summary Table
 
@@ -413,11 +400,8 @@ A KSPROPERTY\_SYNTH\_DLS\_WAVEFORMAT property request returns STATUS\_SUCCESS to
 </tbody>
 </table>
 
- 
 
 A property-value buffer of **sizeof**(WAVEFORMATEX) bytes might not be large enough for all wave formats. For example, a multichannel format requires a buffer of **sizeof**([**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible)) bytes. If the property request returns a status code of STATUS\_BUFFER\_TOO\_SMALL, the client can check the property-value size that the miniport driver outputs, allocate a larger buffer, and then submit a second request.
 
 For more information, see the description of the **IDirectMusicPort::GetFormat** method in the Microsoft Windows SDK documentation.
-
- 
 

@@ -15,7 +15,7 @@ The state of the SO\_REUSEADDR socket option determines whether the local transp
 
 If a WSK application sets this socket option, it must do so before the socket is bound to a local transport address.
 
-To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set the state of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -125,7 +125,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 The default state of this socket option is that always sharing the local transport address is disabled.
 
-For more information about using the SO\_REUSEADDR socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](https://docs.microsoft.com/windows-hardware/drivers/network/sharing-transport-addresses).
+For more information about using the SO\_REUSEADDR socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](./sharing-transport-addresses.md).
 
 Requirements
 ------------
@@ -148,9 +148,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

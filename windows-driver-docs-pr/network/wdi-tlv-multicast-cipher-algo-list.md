@@ -21,14 +21,14 @@ WDI\_TLV\_MULTICAST\_CIPHER\_ALGO\_LIST is a TLV that contains a list of multica
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_CIPHER\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) structures. The array must contain 1 or more elements.
+The size (in bytes) of the array of [**WDI\_CIPHER\_ALGORITHM**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) structures. The array must contain 1 or more elements.
 
 ## Values
 
 
 | Type                                                            | Description                              |
 |-----------------------------------------------------------------|------------------------------------------|
-| [**WDI\_CIPHER\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm)\[\] | An array of multicast cipher algorithms. |
+| [**WDI\_CIPHER\_ALGORITHM**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm)\[\] | An array of multicast cipher algorithms. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

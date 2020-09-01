@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 
 
-A *network INF file* is based on the standard INF file format but also includes network-specific items, such as network-specific sections, directives, section entries, and values. The following description of network INF files assumes an understanding of base INF files. Read the description of base INF files before attempting to create a network INF file. For more information about base INF files, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+A *network INF file* is based on the standard INF file format but also includes network-specific items, such as network-specific sections, directives, section entries, and values. The following description of network INF files assumes an understanding of base INF files. Read the description of base INF files before attempting to create a network INF file. For more information about base INF files, see [INF File Sections and Directives](../install/index.md).
 
-A single INF file can be used to install a network component on various Windows platforms. For more information, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+A single INF file can be used to install a network component on various Windows platforms. For more information, see [INF File Sections and Directives](../install/index.md).
 
 The INF file requirements vary by type of network component. For more information about the INF file requirements for each type of network component, see Summary of Installation Requirements for Network Components.
 
@@ -34,10 +34,4 @@ This section includes:
 -   [Installation Requirements for Network Components](installation-requirements-for-network-components.md)
 
  
-
- 
-
-
-
-
 

@@ -17,9 +17,9 @@ In NetAdapterCx, *packet descriptors* are small, compact, runtime-extensible str
 - One or more fragment descriptors
 - Zero or more packet extensions 
 
-The *core descriptor* of the packet is the [**NET_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the packet's first fragment descriptor.   
+The *core descriptor* of the packet is the [**NET_PACKET**](/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet) structure. It contains only the most basic metadata applicable to all packets, such as the framing layout of a given packet and the index to the packet's first fragment descriptor.   
 
-Each packet must also have one or more *fragment descriptors*, or [**NET_FRAGMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fragment/ns-fragment-_net_fragment) structures, that describe the location within system memory where the packet data resides.
+Each packet must also have one or more *fragment descriptors*, or [**NET_FRAGMENT**](/windows-hardware/drivers/ddi/fragment/ns-fragment-_net_fragment) structures, that describe the location within system memory where the packet data resides.
 
 *Extensions* are optional and hold per-packet or per-fragment metadata for scenario-specific features. For instance, packet extensions can hold offload information for checksum, large send offload (LSO), and receive segment coalescence (RSC), or they can hold application-specific details. Fragment extensions can hold virtual address information, logical DMA address information, or other information for the fragment.
 
@@ -89,7 +89,7 @@ For an example of querying extension offsets and storing them in the queue conte
 
 ### Getting packet extensions at runtime
 
-Once you have stored extension offsets in your queue context, you can use them any time you need information in an extension. For example, you could call the [**NetExtensionGetPacketChecksum**](https://docs.microsoft.com/windows-hardware/drivers/ddi/checksum/nf-checksum-netextensiongetpacketchecksum) method while you program descriptors to hardware for a transmit queue:
+Once you have stored extension offsets in your queue context, you can use them any time you need information in an extension. For example, you could call the [**NetExtensionGetPacketChecksum**](/windows-hardware/drivers/ddi/checksum/nf-checksum-netextensiongetpacketchecksum) method while you program descriptors to hardware for a transmit queue:
 
 ```C++
     // Get the extension offset from the device context
@@ -123,13 +123,13 @@ NetAdapterCx provides definitions for known packet extension constants.
 | NET_PACKET_EXTENSION_LSO_NAME NET_PACKET_EXTENSION_LSO_VERSION_1 | The name and version of the large send offload (LSO) packet extension. |
 | NET_PACKET_EXTENSION_RSC_NAME NET_PACKET_EXTENSION_RSC_VERSION_1 | The name and version of the receive segment coalescence (RSC) packet extension. |
 
-Additionally, NetAdapterCx provides three helper methods that act as wrappers around the [**NetExtensionGetData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/extension/nf-extension-netextensiongetdata) method. Each of these methods returns a pointer to the appropriate type of structure.
+Additionally, NetAdapterCx provides three helper methods that act as wrappers around the [**NetExtensionGetData**](/windows-hardware/drivers/ddi/extension/nf-extension-netextensiongetdata) method. Each of these methods returns a pointer to the appropriate type of structure.
 
 | Method | Structure |
 | --- | --- |
-| [**NetExtensionGetPacketChecksum**](https://docs.microsoft.com/windows-hardware/drivers/ddi/checksum/nf-checksum-netextensiongetpacketchecksum) | [**NET_PACKET_CHECKSUM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/checksumtypes/ns-checksumtypes-_net_packet_checksum) |
-| [**NetExtensionGetLso**](https://docs.microsoft.com/windows-hardware/drivers/ddi/lso/nf-lso-netextensiongetpacketlso) | [**NET_PACKET_LSO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/lsotypes/ns-lsotypes-_net_packet_lso)
-| [**NetExtensionGetPacketRsc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rsc/nf-rsc-netextensiongetpacketrsc) | [**NET_PACKET_RSC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rsctypes/ns-rsctypes-_net_packet_rsc) |
+| [**NetExtensionGetPacketChecksum**](/windows-hardware/drivers/ddi/checksum/nf-checksum-netextensiongetpacketchecksum) | [**NET_PACKET_CHECKSUM**](/windows-hardware/drivers/ddi/checksumtypes/ns-checksumtypes-_net_packet_checksum) |
+| [**NetExtensionGetLso**](/windows-hardware/drivers/ddi/lso/nf-lso-netextensiongetpacketlso) | [**NET_PACKET_LSO**](/windows-hardware/drivers/ddi/lsotypes/ns-lsotypes-_net_packet_lso)
+| [**NetExtensionGetPacketRsc**](/windows-hardware/drivers/ddi/rsc/nf-rsc-netextensiongetpacketrsc) | [**NET_PACKET_RSC**](/windows-hardware/drivers/ddi/rsctypes/ns-rsctypes-_net_packet_rsc) |
 
 ## Using fragment extensions
 

@@ -51,7 +51,7 @@ Appropriate design for displaying account info:
 -   Use illustrations, such as charts and graphs, to visualize data
 
     **Tip**  
-    You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](https://docs.microsoft.com/previous-versions/windows/apps/hh465428(v=win.10)).
+    You can implement a bar chart by using a determinate progress bar control, as discussed in [Adding progress controls](/previous-versions/windows/apps/hh465428(v=win.10)).
 
      
 
@@ -67,11 +67,4 @@ Inappropriate design for displaying account information:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 
