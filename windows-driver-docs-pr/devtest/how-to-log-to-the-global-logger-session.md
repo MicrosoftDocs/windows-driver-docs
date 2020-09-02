@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Use the following procedure to configure a driver to log to the Global Logger trace session:
 
-1. Add the following definition to the driver code. Insert the definition between the [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro definition and the include statement for the [trace message header file](trace-message-header-file.md).
+1. Add the following definition to the driver code. Insert the definition between the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro definition and the include statement for the [trace message header file](trace-message-header-file.md).
    ```
    #define WPP_GLOBALLOGGER
    ```
@@ -88,12 +88,3 @@ When WPP\_GLOBALLOGGER is present, WPP adds code that reads the registry and det
 Also, because the Global Logger session does not provide callback notification, Windows assumes that a callback has occurred, and proceeds accordingly.
 
 The WPP definitions generate only a small amount of code, so there is no need to remove them from the code after testing.
-
-
-
-
-
-
-
-
-

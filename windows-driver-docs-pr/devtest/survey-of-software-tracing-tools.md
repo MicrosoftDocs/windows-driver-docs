@@ -51,7 +51,7 @@ The following software tracing tools are included in either the Windows Driver K
 
 -   Logman (Logman.exe) is a fully functional, GUI-based [trace controller](trace-controller.md) that is designed especially to control the logging of performance counters and event traces.
 
-    Logman is included in Windows XP and later versions of Windows. For more information about how to use this tool, see [Logman](https://docs.microsoft.com/windows-server/administration/windows-commands/logman).
+    Logman is included in Windows XP and later versions of Windows. For more information about how to use this tool, see [Logman](/windows-server/administration/windows-commands/logman).
 
 ## <span id="creating_tmf_files"></span><span id="CREATING_TMF_FILES"></span>Creating TMF files
 
@@ -69,7 +69,7 @@ The following software tracing tools are included in either the Windows Driver K
 
 -   Tracerpt (Tracerpt.exe) is a command-line [trace consumer](trace-consumer.md) that formats *trace events* (**TraceEvent**) and performance counters and writes them to CSV or XML files. It also analyzes the events and generates summary reports.
 
-    Tracerpt is included in Windows XP and later versions of Windows. For more information about how to use this tool, see [Tracerpt](https://docs.microsoft.com/windows-server/administration/windows-commands/tracerpt_1).
+    Tracerpt is included in Windows XP and later versions of Windows. For more information about how to use this tool, see [Tracerpt](/windows-server/administration/windows-commands/tracerpt_1).
 
 -   [TraceView](traceview.md), a GUI tool, that is a trace controller and a trace consumer, also formats and displays trace messages (**TraceMessage**) from real-time trace sessions or trace logs. It displays the trace messages in a tabular form, making them easier to filter and browse.
 
@@ -84,10 +84,4 @@ The following software tracing tools are included in either the Windows Driver K
 -   On Windows XP with Service Pack 2 (SP2) and later, you can use [Tracelog](tracelog.md) to log deferred procedure call (DPC) and interrupt service routine (ISR) events in the NT Kernel Logger trace session and then use Tracerpt to create summary reports from the logs. For more information about how to use this tool, including an example, see Tracelog.
 
  
-
- 
-
-
-
-
 

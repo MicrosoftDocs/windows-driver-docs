@@ -130,7 +130,7 @@ The Windows 7 Mobile Broadband SMS API provided only a low-level modem interfac
 
 -   [Send SMS by using custom character sets](send-sms-by-using-custom-character-sets.md)
 
--   [Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
+-   [Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
 
 -   [Set SMS declarations](set-sms-declarations.md)
 

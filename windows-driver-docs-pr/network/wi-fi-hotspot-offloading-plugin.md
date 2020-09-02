@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Wi-Fi Hotspot Offloading Plugin
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 To enable Wi-Fi offloading, create and install a hotspot plugin. This topic discusses a few of the issues to consider when developing a hotspot plugin. It also provides a general description of the plugin APIs to be implemented as part of the plugin package.
 

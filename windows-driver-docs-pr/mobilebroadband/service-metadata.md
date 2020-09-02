@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Service metadata overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 You can create and submit a service metadata package to create an experience that is deeply integrated with Windows. When Windows detects mobile broadband hardware that matches the operator’s service metadata package, it automatically downloads the service metadata and the specified mobile broadband app.
 
@@ -34,7 +34,7 @@ The information in the metadata is used to customize aspects of the Windows 8, 
 
 A service metadata package consists of multiple XML documents stored within a .devicemetadata-ms file. Each document specifies various components of the service’s attributes. These XML documents provide Windows Connection Manager with customizations that appear to the user, as well as network configuration information.
 
-For reference information about the XML documents in a service metadata package, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+For reference information about the XML documents in a service metadata package, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 ## Service metadata contents
 

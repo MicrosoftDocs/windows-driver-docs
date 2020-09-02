@@ -24,7 +24,7 @@ Like the boot options on a system with BIOS firmware, there are two types of boo
 
 -   *Boot option variables* that apply only to a particular load configuration of a bootable device or program, such as an operating system. The system-specific variables comprise a boot entry for each configuration of a bootable device or bootable program on the computer.
 
-The [Bootcfg](https://docs.microsoft.com/windows-server/administration/windows-commands/bootcfg) tool discussed in [Editing Boot Options in EFI](editing-boot-options-in-efi.md) allows you to view and edit the boot options in EFI NVRAM.
+The [Bootcfg](/windows-server/administration/windows-commands/bootcfg) tool discussed in [Editing Boot Options in EFI](editing-boot-options-in-efi.md) allows you to view and edit the boot options in EFI NVRAM.
 
 The following sample shows a Bootcfg display of a computer with an Itanium processor.
 
@@ -105,7 +105,7 @@ Enterprise</code></pre></td>
 <tr class="even">
 <td align="left"><p><strong>OsLoadOptions</strong></p></td>
 <td align="left"><p>Specifies the <em>boot parameters</em> for the entry. <em>Boot parameters</em> are commands to enable, disable, and configure features of the operating system. The EFI Boot Manager passes these parameters to the bootable device or system to be interpreted and implemented.</p>
-<p>For a list of the boot parameters that are related to driver debugging and testing, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-in-a-boot-ini-file" data-raw-source="[Boot Options in a Boot.ini File](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-in-a-boot-ini-file)">Boot Options in a Boot.ini File</a>.</p></td>
+<p>For a list of the boot parameters that are related to driver debugging and testing, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-options-in-a-boot-ini-file" data-raw-source="[Boot Options in a Boot.ini File](./boot-options-in-a-boot-ini-file.md)">Boot Options in a Boot.ini File</a>.</p></td>
 <td align="left"><pre space="preserve"><code>OsLoadOptions: /debug
 /debugport=COM1 /baudrate=57600</code></pre></td>
 </tr>

@@ -108,7 +108,7 @@ Apps that are not UWP apps (for example, Win32 services or desktop apps) have ac
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
+[Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
 
  
 

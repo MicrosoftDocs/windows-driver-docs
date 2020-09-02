@@ -15,14 +15,14 @@ Various methods have been developed to handle authentication to these networks. 
 
 The topics in this section address the interaction between a Wi-Fi hotspot operator, their app, and Windows 8, Windows 8.1, orWindows 10. The described actions can be taken by a standard app that is downloaded from the Microsoft Store, or by a mobile broadband app that is installed by Windows to complement a mobile broadband device that is attached to the computer.
 
--   [Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
+-   [Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)
 
--   [Hotspot authentication methods](hotspot-authentication-methods.md)
+-   [Hotspot authentication methods](integrating-windows-with-wireless-hotspots.md)
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile operator scenarios](mobile-operator-scenarios-b-mb.md)
+[Mobile operator scenarios](mobile-plans-scenarios.md)
 
  
 

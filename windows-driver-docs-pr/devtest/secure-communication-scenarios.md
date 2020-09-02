@@ -18,7 +18,7 @@ The Secure Communication scenario tests discovery, metadata exchange, and eventi
 
 Before attempting these scenarios, you should have successfully completed the [Device and Service Inspection](device-and-service-inspection-scenarios.md) and [Eventing](eventing-scenarios.md) scenarios.
 
-To learn more about general WSDAPI specification compliance, see [WSDAPI Specification Compliance](https://docs.microsoft.com/windows/win32/wsdapi/wsdapi-specification-compliance).
+To learn more about general WSDAPI specification compliance, see [WSDAPI Specification Compliance](/windows/win32/wsdapi/wsdapi-specification-compliance).
 
 |Case|Client action|Server action|Pass-Fail criteria|
 |----|----|----|----|

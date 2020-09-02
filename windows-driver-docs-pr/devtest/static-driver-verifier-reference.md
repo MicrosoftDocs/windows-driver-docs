@@ -28,14 +28,7 @@ This section includes:
 ## <span id="related_topics"></span>Related topics
 
 
-[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+[DDI Compliance Rules](/windows-hardware/drivers/ddi/index)
 
  
-
- 
-
-
-
-
-
 

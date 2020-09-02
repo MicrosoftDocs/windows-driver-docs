@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Can I customize DoTraceMessage?
 
 
-Yes, you can write your own version of the [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro. DoTraceMessage generates a trace message.
+Yes, you can write your own version of the [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro. DoTraceMessage generates a trace message.
 
 The [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver) sample driver provides an example of the methods that are described in this topic. [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver) is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
@@ -139,12 +139,3 @@ RUN_WPP=$(SOURCES) -km -func:DoTraceLevelMessage(LEVEL,FLAGS,MSG,...)
 
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
-
-
-
-
-
-
-
-
-

@@ -79,7 +79,7 @@ The example above invokes **tracewpp.exe** on the file **b.c** as if you issued 
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="message-compiler-task.md" data-raw-source="[Message compiler task](message-compiler-task.md)">Message compiler task</a></p></td>
-<td align="left"><p>The WDK provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see <a href="https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-" data-raw-source="[&lt;strong&gt;Message Compiler (MC.exe)&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-)"><strong>Message Compiler (MC.exe)</strong></a>.</p></td>
+<td align="left"><p>The WDK provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see <a href="https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-" data-raw-source="[&lt;strong&gt;Message Compiler (MC.exe)&lt;/strong&gt;](/windows/desktop/WES/message-compiler--mc-exe-)"><strong>Message Compiler (MC.exe)</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="ctrpp-task.md" data-raw-source="[Ctrpp task](ctrpp-task.md)">Ctrpp task</a></p></td>
@@ -93,24 +93,17 @@ The example above invokes **tracewpp.exe** on the file **b.c** as if you issued 
 ## <span id="related_topics"></span>Related topics
 
 
-[**CTRPP**](https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp)
+[**CTRPP**](/windows/desktop/PerfCtrs/ctrpp)
 
-[Using Wmimofck.exe](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-wmimofck-exe)
+[Using Wmimofck.exe](../kernel/using-wmimofck-exe.md)
 
-[**Message Compiler (MC.exe)**](https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-)
+[**Message Compiler (MC.exe)**](/windows/desktop/WES/message-compiler--mc-exe-)
 
-[**mofcomp**](https://docs.microsoft.com/windows/desktop/WmiSdk/mofcomp)
+[**mofcomp**](/windows/desktop/WmiSdk/mofcomp)
 
 [Stampinf](stampinf.md)
 
 [WPP Preprocessor](wpp-preprocessor.md)
 
  
-
- 
-
-
-
-
-
 

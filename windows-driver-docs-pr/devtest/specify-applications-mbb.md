@@ -63,7 +63,7 @@ For the Microsoft Store device app to access privileged mobile broadband interfa
 To specify the Privileged Applications, fill out the following fields under **Privileged Application**:
 
 >[!NOTE]
->For information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-deviceinterface-restricted).
+>For information about the Privileged Device Interface Property Key, see [DEVPKEY\_DeviceInterface\_Restricted](../install/devpkey-deviceinterface-restricted.md).
 
 - **Package Name**. Enter the value of the Name attribute in the Identity element in the Package element of the Application Manifest.
 - **Publisher**. Enter the value of the Publisher attribute in the Identity element in the Package element of the Application Manifest.
@@ -90,4 +90,4 @@ The following is an example of the Application Manifest:
 
 The mobile broadband platform provides enhanced functionality for receiving and displaying MNO administrative SMS or USSD notifications, such as approaching data usage cap, international roaming, and low balance. It also provides functionality for responding to data usage and connect, disconnect, or roaming background events in a UWP app for mobile network providers.
 
-Windows provides broker facilities for UWP app to run some code in response to events even if the Microsoft Store app isn't running. For more information about implementing notification handlers, see [Introduction to enabling mobile operator notifications and system events](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/enabling-mobile-operator-notifications-and-system-events).
+Windows provides broker facilities for UWP app to run some code in response to events even if the Microsoft Store app isn't running. For more information about implementing notification handlers, see [Introduction to enabling mobile operator notifications and system events](../mobilebroadband/enabling-mobile-operator-notifications-and-system-events.md).

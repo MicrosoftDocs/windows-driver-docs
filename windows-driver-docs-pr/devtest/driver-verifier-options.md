@@ -108,7 +108,7 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [Force Pending I/O Requests](force-pending-i-o-requests.md)
 
-(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+(Windows Vista and later) When this option is active, Driver Verifier tests the driver's response to STATUS\_PENDING return values by returning STATUS\_PENDING for random calls to [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
 [IRP Logging](irp-logging.md)
 
@@ -128,7 +128,7 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [Power Framework Delay Fuzzing](concurrency-stress-test.md)
 
-(Starting with Windows 8) When this option is active, Driver Verifier randomizes thread schedules to help flush out concurrency errors in the drivers that use the [power management framework (PoFx)](https://docs.microsoft.com/windows-hardware/drivers/kernel/overview-of-the-power-management-framework). This option is not recommended for drivers that do not directly utilize the power management framework (PoFx)..
+(Starting with Windows 8) When this option is active, Driver Verifier randomizes thread schedules to help flush out concurrency errors in the drivers that use the [power management framework (PoFx)](../kernel/overview-of-the-power-management-framework.md). This option is not recommended for drivers that do not directly utilize the power management framework (PoFx)..
 
 [DDI compliance checking](ddi-compliance-checking.md)
 
@@ -160,7 +160,7 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 [VM switch verification](vm-switch-verification.md)
 
-(Starting with Windows 8.1) This option monitors filter drivers (*extensible switch extensions*) that run inside the [Hyper-V Extensible Switch](https://docs.microsoft.com/windows-hardware/drivers/network/hyper-v-extensible-switch).
+(Starting with Windows 8.1) This option monitors filter drivers (*extensible switch extensions*) that run inside the [Hyper-V Extensible Switch](../network/hyper-v-extensible-switch.md).
 
 [Port/Miniport interface checking](port-miniport-interface-checking.md)
 

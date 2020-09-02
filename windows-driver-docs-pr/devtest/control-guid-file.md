@@ -22,7 +22,7 @@ ControlGUID GUIDFriendlyName
 
 Developers of trace providers typically supply this file. However, if you have the source code for the trace provider, you can find the GUID and the GUID friendly name, and create a control GUID file.
 
-In the source code, find the definition of the [WPP\_CONTROL\_GUIDS](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro. The GUID value and GUID friendly name are shown in bold in the example below.
+In the source code, find the definition of the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro. The GUID value and GUID friendly name are shown in bold in the example below.
 
 ```C
 #define WPP_CONTROL_GUIDS \

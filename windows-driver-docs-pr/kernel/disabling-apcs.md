@@ -32,7 +32,7 @@ The following mutex operations have the same effect as entering or leaving a cri
 
 -   Holding a fast mutex implicitly raises the current IRQL to APC\_LEVEL.
 
-For more information about mutex objects, see [Mutex Objects](mutex-objects.md). For more information about fast and guarded mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
+For more information about mutex objects, see [Mutex Objects](introduction-to-mutex-objects.md). For more information about fast and guarded mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
 
  
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # TrustedCertificates
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The TrustedCertificates element specifies a list of trusted certificates.
 
