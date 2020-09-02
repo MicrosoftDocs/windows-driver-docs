@@ -8,19 +8,19 @@ ms.custom: 19H1
 
 # Enabling DMA remapping for device drivers
 
-To ensure compatibility with [Kernel DMA Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy), PCIe device drivers can opt into Direct Memory Access (DMA) remapping.
+To ensure compatibility with [Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and [DMAGuard Policy](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy), PCIe device drivers can opt into Direct Memory Access (DMA) remapping.
 
 DMA remapping for device drivers protects against memory corruption and malicious DMA attacks, and provides a higher level of compatibility for devices. Also, devices with DMA remapping-compatible drivers can start and perform DMA regardless of lock screen status.
 
-On Kernel DMA Protection enabled systems, DMAGuard Policy may block devices, with DMA remapping-incompatible drivers, connected to [external](https://docs.microsoft.com/windows-hardware/drivers/pci/dsd-for-pcie-root-ports#identifying-externally-exposed-pcie-root-ports)/[exposed](https://docs.microsoft.com/windows-hardware/drivers/pci/dsd-for-pcie-root-ports#identifying-internal-pcie-ports-accessible-to-users-and-requiring-dma-protection) PCIe ports (e.g. M.2, Thunderbolt™), depending on the policy value set by the system administrator.
+On Kernel DMA Protection enabled systems, DMAGuard Policy may block devices, with DMA remapping-incompatible drivers, connected to [external](./dsd-for-pcie-root-ports.md#identifying-externally-exposed-pcie-root-ports)/[exposed](./dsd-for-pcie-root-ports.md#identifying-internal-pcie-ports-accessible-to-users-and-requiring-dma-protection) PCIe ports (e.g. M.2, Thunderbolt™), depending on the policy value set by the system administrator.
 
 ## Driver requirements for enabling and opting into DMA remapping
 
 Drivers perform DMA using the following interfaces:
 
-* [WDF DMA interfaces](https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-dma-in-windows-driver-framework)
-* [WDM interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/)
-* [NDIS interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+* [WDF DMA interfaces](../wdf/introduction-to-dma-in-windows-driver-framework.md)
+* [WDM interfaces](/windows-hardware/drivers/ddi/wdm/)
+* [NDIS interfaces](/windows-hardware/drivers/ddi/_netvista/)
 
 To adjust the DMA remapping policy for your driver, add an INF directive such as the following to the service installation section:
 
