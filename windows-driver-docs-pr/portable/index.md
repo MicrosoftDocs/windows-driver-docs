@@ -14,4 +14,4 @@ author: EliotSeattle
 
 - [WPD Design Guide](wpd-design-guide.md)
 - [WPD Programming Guide](wpd-programming-guide.md)
-- [WPD Reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff597901(v=vs.85))
+- [WPD Reference](/previous-versions/windows/hardware/drivers/ff597901(v=vs.85))
