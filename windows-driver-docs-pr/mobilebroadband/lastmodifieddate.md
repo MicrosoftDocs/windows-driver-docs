@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # LastModifiedDate
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The LastModifiedDate element specifies the timestamp on which the service metadata package was last changed. Based on this information, the operating system selects and loads the most recent service metadata package version.
 

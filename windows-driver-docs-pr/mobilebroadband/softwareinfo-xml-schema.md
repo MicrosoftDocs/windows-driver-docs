@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # SoftwareInfo XML schema overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 A metadata package contains one SoftwareInfo.xml document, which contains information that the operating system downloads a UWP app. This information results in privileged access for apps.
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # EnableAutoPlayForRegisteredApps
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The EnableAutoPlayForRegisteredApps element specifies whether AutoPlay is enabled for registered apps.
 
