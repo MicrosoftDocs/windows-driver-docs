@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # MobileBroadbandProfiles
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The MobileBroadbandProfiles element specifies the purchase and Internet mobile broadband profile files to use.
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Locale
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Locale element specifies the locale of the service metadata package. A service metadata package can specify single or multiple locales. To use multiple locales, you must set the [MultipleLocale](multiplelocale.md) element to **true**.
 

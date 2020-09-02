@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # WindowsInfo XML Schema Definition
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following are the namespaces of the WindowsInfo XML schema:
 

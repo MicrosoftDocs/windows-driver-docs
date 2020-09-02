@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # PackageInfo XML schema overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 A metadata package contains one PackageInfo.xml document, which has information that the operating system uses to install the metadata package and reference its contents.
 

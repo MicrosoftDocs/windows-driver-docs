@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # ModelID
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ModelID element specifies the GUID of a physical device.
 
