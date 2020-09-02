@@ -210,7 +210,7 @@ Indicates whether the VGA driver should avoid VESA BIOS calls. The option is ign
 **novga** \[ **on** | **off** \]
 Disables the use of VGA modes in the OS. The option is available starting in Windows 8 and Windows Server 2012.
 
-**nx** \[**Optin |OptOut | AlwaysOn |AlwaysOff**\]  
+**nx** \[**Optin \|OptOut \| AlwaysOn \|AlwaysOff**\]  
 Enables, disables, and configures Data Execution Prevention (DEP), a set of hardware and software technologies designed to prevent harmful code from running in protected memory locations. For information about DEP settings, see [Data Execution Prevention](https://docs.microsoft.com/windows/desktop/Memory/data-execution-prevention).
 
 **Optin**  

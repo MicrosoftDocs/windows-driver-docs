@@ -1,10 +1,76 @@
 {
     "redirections":  [
         {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/serviceinfo-xml-data-types.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-serviceinfo",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/packageinfo-xml-data-types.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-packageinfo",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/get-started-with-a-hotspot-authentication-app.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/review-the-hotspot-authentication-sample",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/mobile-operator-scenarios-b-mb.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/mobile-plans-scenarios",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/overview-b-mb.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/overview-of-mobile-broadband",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/mobile-broadband-winrt-api-overview.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/list-of-mobile-broadband-windows-runtime-apis",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/hotspot-authentication-methods.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/integrating-windows-with-wireless-hotspots",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/mobilebroadbandinfo-xml-schema",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/send-sms-by-using-the-text-mode-interface.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/calculate-characters-and-segments-of-a-draft-sms",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/best-practices-for-using-mobile-broadband-windows-runtime-api.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/best-practices-for-handling-account-arrival-and-removal-events",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/cosa-apn-database-submission.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/apn-xml-schema.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/apn-schema-definition",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/apn-database-schema-reference.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/apn-schema-definition",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/ifs/file-system-minifilter-drivers.md",
             "redirect_URL":  "/windows-hardware/drivers/ifs/filter-manager-concepts",
             "redirect_document_id":  false
-        },{
+        },
+        {
             "source_path":  "windows-driver-docs-pr/kernel/implementing-power-management.md",
             "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-power-management",
             "redirect_document_id":  false

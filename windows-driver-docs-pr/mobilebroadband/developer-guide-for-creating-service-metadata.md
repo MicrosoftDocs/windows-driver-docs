@@ -63,7 +63,7 @@ You should receive an acknowledgement emails with 24 hours that your request was
 
 Before you create your service metadata package, ensure that your mobile broadband app has been developed and associated with the Microsoft Store. This app should provide key experiences, such as plan purchase, data usage, help and support, as well as highlighting value-added services from the operator. For more info about creating the mobile broadband app, see the following links:
 
--   [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
+-   [Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
 
 -   [Mobile operator hardware overview](mobile-operator-hardware-overview.md)
 
@@ -185,7 +185,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     ![the service info step of the wizard](images/mbae-sxs81-serviceinfostep.png)
 
-4.  On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
+4.  On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
     -   If you are a GSM Provider that uses the International Mobile Subscriber Identity (IMSI), select the **IMSI** check box under the **GSM** heading. In the **Provider ID** box, enter the GSM service provider ID. Under the **IMSI/ICCID Ranges** heading, enter the range, and then click **Add**.
 

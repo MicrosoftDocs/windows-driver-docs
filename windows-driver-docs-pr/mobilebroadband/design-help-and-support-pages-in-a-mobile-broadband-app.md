@@ -43,7 +43,7 @@ Inappropriate design for help and support page:
 
 -   For more information about how to use built-in controls, see [Adding controls and content](/previous-versions/windows/apps/hh465393(v=win.10)).
 
--   [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
+-   [Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
 
 ## <span id="related_topics"></span>Related topics
 

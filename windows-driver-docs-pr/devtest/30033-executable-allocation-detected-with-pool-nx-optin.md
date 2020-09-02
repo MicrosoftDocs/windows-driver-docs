@@ -72,7 +72,7 @@ DriverEntry (
 …
 ```
 
-## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
+## <span id="Example2"></span><span id="example2"></span><span id="EXAMPLE2"></span>Example #2
 
 
 A second way to fix this is to make every call explicitly reference non-executable memory.

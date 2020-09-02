@@ -72,7 +72,7 @@ The richest experience of Windows 8, Windows 8.1, and Windows 10 is through t
 ## <span id="related_topics"></span>Related topics
 
 
-[Hotspot authentication methods](hotspot-authentication-methods.md)
+[Hotspot authentication methods](integrating-windows-with-wireless-hotspots.md)
 
  
 

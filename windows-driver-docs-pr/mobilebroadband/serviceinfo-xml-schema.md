@@ -23,7 +23,7 @@ For the complete definition of the ServiceInfo XML schema, see [ServiceInfo XML 
 
 For information about the elements that are defined by the ServiceInfo XML schema, see [ServiceInfo XML Elements](serviceinfo-xml-elements.md).
 
-For information about the data types that are defined by the ServiceInfo XML schema, see [ServiceInfo XML Data Types](serviceinfo-xml-data-types.md).
+For information about the data types that are defined by the ServiceInfo XML schema, see [ServiceInfo XML Data Types](guidtype-serviceinfo.md).
 
 For an example of XML data in the format that is defined by the ServiceInfo XML schema, see [ServiceInfo XML Example](serviceinfo-xml-example.md).
 
