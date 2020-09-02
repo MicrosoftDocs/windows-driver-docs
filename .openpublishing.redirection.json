@@ -1,6 +1,16 @@
 {
     "redirections":  [
         {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/serviceinfo-xml-data-types.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-serviceinfo",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/mobilebroadband/packageinfo-xml-data-types.md",
+            "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-packageinfo",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "/windows-hardware/drivers/mobilebroadband/get-started-with-a-hotspot-authentication-app.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/review-the-hotspot-authentication-sample",
             "redirect_document_id":  false
