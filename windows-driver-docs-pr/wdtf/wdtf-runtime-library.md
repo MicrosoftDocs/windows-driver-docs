@@ -98,7 +98,7 @@ You can verify that WDTF was installed correctly by running a command script on 
 
 When you set up a test computer for deployment, following the instructions [Provision a computer for driver deployment and testing (WDK 10)](../gettingstarted/provision-a-target-computer-wdk-8-1.md), the WDTF runtime library is installed on the target computer.
 
-You can remove the WDTF runtime library by removing provisioning from the target computer. For more information, see [Removing provisioning from the target computer](../develop/what-happens-when-you-provision-a-computer--wdk-8-1-.md#span-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanremoving-provisioning-from-the-target-computer).
+You can remove the WDTF runtime library by removing provisioning from the target computer. For more information, see [Removing provisioning from the target computer](../develop/what-happens-when-you-provision-a-computer--wdk-8-1-.md#removing-provisioning-from-the-target-computer).
 
 You can also uninstall the WDTF runtime library manually.
 
