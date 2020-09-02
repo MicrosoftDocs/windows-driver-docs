@@ -9,4 +9,4 @@ ms.topic: include
 ## MBAE deprecation warning
 
 > [!IMPORTANT]
-> Starting in Windows 10, version 1803, the MBAE app experience is replaced by an MO UWP app. For more information about MO UWP apps, see [UWP mobile broadband apps](uwp-mobile-broadband-apps.md).
+> Starting in Windows 10, version 1803, the MBAE app experience is replaced by an MO UWP app. For more information about MO UWP apps, see [UWP mobile broadband apps](../mobilebroadband/uwp-mobile-broadband-apps.md).
