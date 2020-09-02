@@ -60,7 +60,7 @@ You can find more examples in the documentation mentioned above as well as in th
 SELECT <comma separated properties> FROM <WMI Class name> [WHERE <add condition on some properties>]
 ```
 
-In the examples that you just saw, Win32\_Service, Win32\_Printer and Win32\_StartupCommand are all WMI Classes. You can look up what WMI class you are interested in for your test here: [/windows/win32/wmisdk/wmi-classes.](/windows/win32/wmisdk/wmi-classes)
+In the examples that you just saw, Win32\_Service, Win32\_Printer and Win32\_StartupCommand are all WMI Classes. You can look up the WMI classes in [WMI classes](/windows/win32/wmisdk/wmi-classes).
 
 TAEF does not support retrieving System Properties.
 
