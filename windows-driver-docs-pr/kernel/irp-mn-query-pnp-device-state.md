@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 Function, filter, and bus drivers can handle this request.
 
-## Value
+## Value47
 
 0x14
 
@@ -44,7 +44,7 @@ Returned in I/O status block.
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as STATUS\_UNSUCCESSFUL.
 
-On success, a driver sets **Irp-&gt;IoStatus.Information** to a [**PNP\_DEVICE\_STATE**](./handling-an-irp-mn-surprise-removal-request.md#about-pnpdevicestate) bitmask.
+On success, a driver sets **Irp-&gt;IoStatus.Information** to a [**PNP\_DEVICE\_STATE**](./handling-an-irp-mn-surprise-removal-request.md#about-pnp_device_state) bitmask.
 
 
 If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md), does not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus** and must not complete the IRP.
@@ -85,4 +85,4 @@ Requirements
 
 [**IoInvalidateDeviceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate)
 
-[**PNP\_DEVICE\_STATE**](./handling-an-irp-mn-surprise-removal-request.md#about-pnpdevicestate)
+[**PNP\_DEVICE\_STATE**](./handling-an-irp-mn-surprise-removal-request.md#about-pnp_device_state)

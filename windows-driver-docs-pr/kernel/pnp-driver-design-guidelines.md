@@ -27,7 +27,7 @@ Plug and Play provides:
 
 To support PnP, a driver must follow these guidelines:
 
--   It must contain a [*DispatchPnP*](./dispatchpnp-routines.md#feedback) routine.
+-   It must contain a [*DispatchPnP*](./dispatchpnp-routines.md) routine.
 
     This dispatch routine must handle [**IRP\_MJ\_PNP**](./irp-mj-pnp.md) requests and associated minor function codes. For more information, see [DispatchPnP Routines](dispatchpnp-routines.md).
 
