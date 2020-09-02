@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !ndiskd.nbpool
 
 
-The **!ndiskd.nbpool** extension displays information about a [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure) (NB) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NB pools in the system.
+The **!ndiskd.nbpool** extension displays information about a [**NET\_BUFFER**](../network/net-buffer-structure.md) (NB) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NB pools in the system.
 
 ```console
 !ndiskd.nbpool [-handle <x>] [-allocations] [-find <str>] [-findva <x>] [-findpa <x>] 
@@ -132,9 +132,9 @@ ALL ALLOCATED NBs
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -142,14 +142,7 @@ ALL ALLOCATED NBs
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure)
+[**NET\_BUFFER**](../network/net-buffer-structure.md)
 
  
-
- 
-
-
-
-
-
 

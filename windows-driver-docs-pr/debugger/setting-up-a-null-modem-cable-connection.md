@@ -137,7 +137,7 @@ The following tables show how null-modem cables are wired.
 
 ## <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For complete documentation of the **bcdedit** command, see [BCDEdit Options Reference](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcd-boot-options-reference).
+For complete documentation of the **bcdedit** command, see [BCDEdit Options Reference](../devtest/bcd-boot-options-reference.md).
 
 ## <span id="related_topics"></span>Related topics
 

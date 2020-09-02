@@ -20,7 +20,7 @@ You can verify the correctness of each solution by using the GDL Correctness Tes
 
 > [!NOTE]
 > The HCK is not for use with Windows 10.
-> If you are developing hardware or drivers for Windows 10, you need the new [Windows Hardware Lab Kit (HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10.
+> If you are developing hardware or drivers for Windows 10, you need the new [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10.
 
 This section includes:
 

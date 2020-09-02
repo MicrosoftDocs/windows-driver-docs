@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 A WSK application uses the WSK\_TRANSPORT\_LIST\_CHANGE client control operation to receive notification if the list of available network transports changes.
 
-To receive notification of when the list of available network transports changes, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
+To receive notification of when the list of available network transports changes, a WSK application calls the [**WskControlClient**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>
@@ -60,7 +60,7 @@ To receive notification of when the list of available network transports changes
 
 An IRP is required for this client control operation.
 
-The WSK subsystem will cancel any pending IRPs if the WSK application calls [**WskDeregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) to detach itself from the WSK subsystem.
+The WSK subsystem will cancel any pending IRPs if the WSK application calls [**WskDeregister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) to detach itself from the WSK subsystem.
 
 Requirements
 ------------
@@ -83,9 +83,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

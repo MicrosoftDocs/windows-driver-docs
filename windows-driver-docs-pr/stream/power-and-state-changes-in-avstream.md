@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 # Power and State Changes in AVStream
 
 
-When AVStream receives an [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) request, it calls a minidriver's [*AVStrMiniDeviceSetPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnksdevicesetpower) callback routine, if the minidriver has provided one.
+When AVStream receives an [**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md) request, it calls a minidriver's [*AVStrMiniDeviceSetPower*](/windows-hardware/drivers/ddi/ks/nc-ks-pfnksdevicesetpower) callback routine, if the minidriver has provided one.
 
-When AVStream receives a set request of the [**KSPROPERTY\_CONNECTION\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-connection-state) property, it calls a minidriver's [*AVStrMiniPinSetDeviceState*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate) callback routine, if the minidriver has provided one.
+When AVStream receives a set request of the [**KSPROPERTY\_CONNECTION\_STATE**](./ksproperty-connection-state.md) property, it calls a minidriver's [*AVStrMiniPinSetDeviceState*](/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdevicestate) callback routine, if the minidriver has provided one.
 
 When the system wakes from a sleep state, AVStream may call a minidriver's *AVStrMiniPinSetDeviceState* and *AVStrMiniDeviceSetPower* callback routines in the reverse of the expected order. For example, *AVStrMiniPinSetDeviceState* may be called *beforeAVStrMiniDeviceSetPower*.
 
@@ -44,9 +44,4 @@ In this scenario, steps 5 and 6 are the steps that are reversed from the expecte
 Additionally, when an application is streaming and the system initiates a power down sequence, a capture graph that is running is always placed in a pause state. If the graph was already stopped, it remains stopped.
 
  
-
- 
-
-
-
 

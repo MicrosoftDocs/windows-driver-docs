@@ -23,7 +23,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 
 1.  Connect a 1394 cable to the 1394 controllers that you have chosen for debugging on the host and target computers.
-2.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+2.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 3.  On the host computer, in Visual Studio, when you get to the Computer Configuration dialog, select **Provision computer and choose debugger settings**.
 4.  For **Connection Type**, choose **Firewire**.
 
@@ -112,11 +112,4 @@ Reboot the target computer.
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
  
-
- 
-
-
-
-
-
 

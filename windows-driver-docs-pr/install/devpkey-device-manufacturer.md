@@ -60,11 +60,11 @@ The DEVPKEY_DEVICE_Manufacturer device property represents the name of the manuf
 Remarks
 -------
 
-The value of DEVPKEY_DEVICE_Manufacturer is set by the *manufacturer-identifier* entry value for a device that is supplied by the [**INF Manufacturer section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) of the INF file that installs a device.
+The value of DEVPKEY_DEVICE_Manufacturer is set by the *manufacturer-identifier* entry value for a device that is supplied by the [**INF Manufacturer section**](./inf-manufacturer-section.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_Manufacturer.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_Manufacturer.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Manufacturer property key. Instead, you can use the corresponding SPDRP_MFG identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Manufacturer property key. Instead, you can use the corresponding SPDRP_MFG identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
@@ -76,16 +76,9 @@ Requirements
 ## See also
 
 
-[**INF Manufacturer Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section)
+[**INF Manufacturer Section**](./inf-manufacturer-section.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

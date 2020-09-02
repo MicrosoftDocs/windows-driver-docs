@@ -48,7 +48,7 @@ You can manually enable UMDF Verifier by setting **VerifierOn** to a nonzero val
 
  
 
-To determine whether UMDF Verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdriverinfo) debugger extension command:
+To determine whether UMDF Verifier is enabled, set a breakpoint at a location after your driver calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) and use the [**!wdfdriverinfo**](../debugger/-wdfkd-wdfdriverinfo.md) debugger extension command:
 
 **!wdfkd.wdfdriverinfo** *&lt;your drivername&gt;* **** **0x1**
 
@@ -57,7 +57,7 @@ For more information about the debugger extension commands, see [Debugger Extens
 ## Controlling the Verifier's Behavior
 
 
-You can control the behavior of UMDF Verifier by modifying values in the registry. Alternatively, you can use the [WDF Verifier control application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) to set these values.
+You can control the behavior of UMDF Verifier by modifying values in the registry. Alternatively, you can use the [WDF Verifier control application](../devtest/wdf-verifier-control-application.md) to set these values.
 
 The following registry values can be used with UMDF 1.*x* drivers, as well as UMDF 2.0 and later drivers.
 
@@ -85,10 +85,4 @@ This value is located in the *DefaultHostProcessGuid* subkey of the **HKEY\_LOCA
 In addition to the registry values listed above, UMDF 2.0 and later drivers can also use many of the registry values listed in [Using KMDF Verifier](using-kmdf-verifier.md).
 
  
-
- 
-
-
-
-
 

@@ -33,7 +33,7 @@ NDIS provides a bus-independent function call for reading and writing bus-specif
 
 For more information about driver initialization, see the initialization topics in the following sections:
 
-[Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
+[Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
 [Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md)
 
@@ -42,10 +42,4 @@ For more information about driver initialization, see the initialization topics 
 [Writing NDIS Intermediate Drivers](writing-ndis-intermediate-drivers.md)
 
  
-
- 
-
-
-
-
 

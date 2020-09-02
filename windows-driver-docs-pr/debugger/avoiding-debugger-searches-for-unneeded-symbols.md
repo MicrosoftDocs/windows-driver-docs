@@ -47,7 +47,7 @@ A number of options are available to control how the debugger loads and uses sym
 
 ## Related topics
 
-[Download the WDK](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+[Download the WDK](../download-the-wdk.md)
 
 [Download Debugging Tools for Windows](debugger-download-tools.md)
 

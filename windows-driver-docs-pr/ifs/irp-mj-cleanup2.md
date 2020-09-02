@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Checking the Oplock State of an IRP_MJ_CLEANUP operation
 
-The following [oplock break](https://docs.microsoft.com/windows-hardware/drivers/ifs/breaking-oplocks) conditions apply only when a *stream* is being closed.
+The following [oplock break](./breaking-oplocks.md) conditions apply only when a *stream* is being closed.
 
 ### Conditions for Level 2 and Read request types
 

@@ -36,7 +36,7 @@ ext.dll
 
 ## <span id="Remarks"></span>Remarks
 
-Driver developers can add secondary boot information to dump files. Driver developers (and the OS) can decide when to add this information to the dump file. This means that not all kernel mode dump files will contain secondary boot information. For more information, see [Writing a Bug Check Reason Callback Routine](https://docs.microsoft.com/windows-hardware/drivers/kernel/writing-a-bug-check-callback-routine).
+Driver developers can add secondary boot information to dump files. Driver developers (and the OS) can decide when to add this information to the dump file. This means that not all kernel mode dump files will contain secondary boot information. For more information, see [Writing a Bug Check Reason Callback Routine](../kernel/writing-a-bug-check-callback-routine.md).
 
 ### Example Command Output
 
@@ -95,8 +95,3 @@ Power button transition latest checkpoint sequence number: 77
 ```
 
  
-
-
-
-
-

@@ -30,7 +30,7 @@ The following standard INF keywords are mandatory for connectionless NDIS 6.0 an
 
 -   **\*PhysicalMediaType**
 
-If the mandatory keywords are missing from the driver's INF file, NDIS does not call the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
+If the mandatory keywords are missing from the driver's INF file, NDIS does not call the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
 
 Standardized keywords are required for NDIS 6.0 and later miniport drivers if both of the following are true:
 
@@ -96,10 +96,4 @@ In addition, standardized keywords that are specific to networking technologies 
 [Standardized INF Keywords for Virtual Machine Queue (VMQ)](standardized-inf-keywords-for-vmq.md)
 
  
-
- 
-
-
-
-
 

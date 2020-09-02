@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # Creating Test Certificates
 
 
-Test-signing requires a test certificate. After a test certificate is generated, it can be used to test-sign multiple drivers or [driver packages](driver-packages.md). For more information, see [Test Certificates](test-certificates.md).
+Test-signing requires a test certificate. After a test certificate is generated, it can be used to test-sign multiple drivers or [driver packages](driver-packages.md). For more information, see [Test Certificates](./makecert-test-certificate.md).
 
-This topic describes how to use the [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert) tool to create test certificates. In most development environments, test certificates generated through MakeCert should be sufficient to test the installation and loading of test-signed drivers or driver packages. For more information about this type of test certificate, see [MakeCert Test Certificate](makecert-test-certificate.md).
+This topic describes how to use the [**MakeCert**](../devtest/makecert.md) tool to create test certificates. In most development environments, test certificates generated through MakeCert should be sufficient to test the installation and loading of test-signed drivers or driver packages. For more information about this type of test certificate, see [MakeCert Test Certificate](makecert-test-certificate.md).
 
 The following command-line example uses MakeCert to complete the following tasks:
 
@@ -37,7 +37,7 @@ Where:
 
 -   The **-n CN=** option specifies the name of the certificate, Contoso.com(Test). This name is used with the [**SignTool**](../devtest/signtool.md) tool to identify the certificate.
 
--   The EKU option inserts a list of one or more comma-separated, [*enhanced key usage*](https://docs.microsoft.com/windows/desktop/SecGloss/e-gly) object identifiers (OIDs) into the certificate. For example, `-eku 1.3.6.1.5.5.7.3.2` inserts the client authentication OID. For definitions of allowable OIDs, see the Wincrypt.h file in CryptoAPI 2.0.
+-   The EKU option inserts a list of one or more comma-separated, [*enhanced key usage*](/windows/desktop/SecGloss/e-gly) object identifiers (OIDs) into the certificate. For example, `-eku 1.3.6.1.5.5.7.3.2` inserts the client authentication OID. For definitions of allowable OIDs, see the Wincrypt.h file in CryptoAPI 2.0.
 
 -   *ContosoTest.cer* is the file name that contains a copy of the test certificate, Contoso.com(Test). The certificate file is used to add the certificate to the Trusted Root Certification Authorities certificate store and the Trusted Publishers certificate store.
 
@@ -45,7 +45,7 @@ The certificate store that contains the test certificate is added to the list of
 
 A developer has to create only one MakeCert test certificate to sign all [driver packages](driver-packages.md) on a development computer.
 
-For more information about the MakeCert tool and its command-line arguments, see [**MakeCert**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert).
+For more information about the MakeCert tool and its command-line arguments, see [**MakeCert**](../devtest/makecert.md).
 
 > [!NOTE]
 > After creating a test certificate, use the CertMgr tool to add it to the Trusted Root Certification Authorities certificate store. For more info, see [Installing Test Certificates](installing-test-certificates.md).
@@ -53,10 +53,4 @@ For more information about the MakeCert tool and its command-line arguments, see
 Also refer to the readme file `Selfsign_readme.htm` in the `bin\selfsign` directory of the Windows Driver Kit (WDK).
 
  
-
- 
-
-
-
-
 

@@ -30,7 +30,7 @@ The miniport driver converts the MIDI data to wave format, which is rendered int
 
 The [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver), which builds the audio filter graph, connects the DMus port driver to a piece of hardware. The wave sink portion of the port driver hands the data out through its wave-out pin, which SysAudio can connect to the hardware device. It pulls wave data from the DMus miniport driver (without regard to whether it is a hardware or software synth), and handles all timing issues. Compared to user mode, the miniport driver is analogous to the synth, whereas the wave sink is just part of the port driver.
 
-If a DMus miniport driver can provide its output back to the host, it exposes a wave pin with a data direction of KSPIN\_DATAFLOW\_OUT (see [**KSPIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_kspin)), which SysAudio recognizes and connects to KMixer.
+If a DMus miniport driver can provide its output back to the host, it exposes a wave pin with a data direction of KSPIN\_DATAFLOW\_OUT (see [**KSPIN**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin)), which SysAudio recognizes and connects to KMixer.
 
 For more information about the wave sink, see [A Wave Sink for Kernel-Mode Software Synthesizers](a-wave-sink-for-kernel-mode-software-synthesizers.md).
 
@@ -41,9 +41,4 @@ This section also includes:
 [Allocator](allocator.md)
 
  
-
- 
-
-
-
 

@@ -18,7 +18,7 @@ If you have additions or extensions that you want to add to your PTP camera, you
 
 Note that the INF file includes sections from *sti.inf*. This allows Microsoft to make future updates to *sti.inf* when needed, without affecting your INF file.
 
-The USB Device Working Group has assigned class ID 0x06 for still image cameras. In future Windows releases, Microsoft will ship an INF file that loads the PTP driver for this class ID as a *compatible ID* match. This means that vendors can still load a custom driver by shipping an INF file that contains the *hardware ID*. The Windows installer places a higher priority on matching the hardware ID than on matching the class ID. If the INF file with the hardware ID is not shipped in Windows, the vendor driver is not loaded automatically. However, the Autorun program for the CD can call [**UpdateDriverForPlugAndPlayDevices**](https://docs.microsoft.com/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) to easily update the vendor driver.
+The USB Device Working Group has assigned class ID 0x06 for still image cameras. In future Windows releases, Microsoft will ship an INF file that loads the PTP driver for this class ID as a *compatible ID* match. This means that vendors can still load a custom driver by shipping an INF file that contains the *hardware ID*. The Windows installer places a higher priority on matching the hardware ID than on matching the class ID. If the INF file with the hardware ID is not shipped in Windows, the vendor driver is not loaded automatically. However, the Autorun program for the CD can call [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) to easily update the vendor driver.
 
 Example INF file for a PTP camera:
 
@@ -78,9 +78,4 @@ PTP.Disconnected="PTP Camera Disconnected"
 ```
 
  
-
- 
-
-
-
 

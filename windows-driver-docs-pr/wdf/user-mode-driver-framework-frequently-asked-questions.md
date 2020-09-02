@@ -78,7 +78,7 @@ Performance is a high priority in developing UMDF. Although latency and CPU usag
 ## What is the difference between a user-mode driver and an application?
 
 
-A user-mode driver is started by the Driver Manager and runs in a driver host process. A single instance of the driver can service simultaneous requests from multiple applications. To communicate with the driver, applications issue I/O requests to the driver's device through the Win32 API. The primary entry point in a user-mode driver is the [**IDriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface (UMDF 1.11 and earlier) or the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine (starting in UMDF 2.0), rather than a **main()** function.
+A user-mode driver is started by the Driver Manager and runs in a driver host process. A single instance of the driver can service simultaneous requests from multiple applications. To communicate with the driver, applications issue I/O requests to the driver's device through the Win32 API. The primary entry point in a user-mode driver is the [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface (UMDF 1.11 and earlier) or the [**DriverEntry**](./driverentry-for-kmdf-drivers.md) routine (starting in UMDF 2.0), rather than a **main()** function.
 
 A driver also includes additional interfaces or callbacks that are invoked in response to I/O requests and Plug and Play and power notifications. A device that is managed by a UMDF driver is integrated into the system and participates in Plug and Play and power management.
 
@@ -99,10 +99,4 @@ You can find discussion of all aspects of Windows drivers on the following forum
 -   Open Systems Resources (OSR) moderates the [OSR Online NTDEV List](https://community.osr.com/) forum.
 
  
-
- 
-
-
-
-
 

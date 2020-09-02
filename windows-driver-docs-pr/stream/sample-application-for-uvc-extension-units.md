@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 This topic contains sample application code that you can use to support Extension Units.
 
-An application accesses the interface by using [**IKsTopologyInfo::CreateNodeInstance**](https://docs.microsoft.com/previous-versions/windows/win32/api/Vidcap/nf-vidcap-ikstopologyinfo-createnodeinstance) followed by a call to **QueryInterface** on the node object to obtain the required COM API. For more information, see [**IKsTopologyInfo**](https://docs.microsoft.com/previous-versions/windows/win32/api/Vidcap/nn-vidcap-ikstopologyinfo).
+An application accesses the interface by using [**IKsTopologyInfo::CreateNodeInstance**](/previous-versions/windows/win32/api/Vidcap/nf-vidcap-ikstopologyinfo-createnodeinstance) followed by a call to **QueryInterface** on the node object to obtain the required COM API. For more information, see [**IKsTopologyInfo**](/previous-versions/windows/win32/api/Vidcap/nn-vidcap-ikstopologyinfo).
 
 Include the following code in the application source, arbitrarily named TestApp.cpp.
 

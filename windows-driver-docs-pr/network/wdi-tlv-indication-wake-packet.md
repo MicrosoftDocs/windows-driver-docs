@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_INDICATION\_WAKE\_PACKET
 
 
-WDI\_TLV\_INDICATION\_WAKE\_PACKET is a TLV that contains a wake packet for [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-wake-reason). When the wake reason is WDI\_WAKE\_REASON\_CODE PACKET, the status must include the wake packet encapsulated in a WDI\_TLV\_INDICATION\_WAKE\_PACKET.
+WDI\_TLV\_INDICATION\_WAKE\_PACKET is a TLV that contains a wake packet for [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](./ndis-status-wdi-indication-wake-reason.md). When the wake reason is WDI\_WAKE\_REASON\_CODE PACKET, the status must include the wake packet encapsulated in a WDI\_TLV\_INDICATION\_WAKE\_PACKET.
 
 ## TLV Type
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

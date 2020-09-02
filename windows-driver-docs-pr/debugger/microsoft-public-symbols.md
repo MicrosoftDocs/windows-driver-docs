@@ -43,7 +43,7 @@ Symbol search path is: srv*
 Expanded Symbol search path is: cache*c:\MyCache;SRV*https://msdl.microsoft.com/download/symbols
 ```
 
-For more information about working with symbols, see the [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path).
+For more information about working with symbols, see the [Symbol path for Windows debuggers](./symbol-path.md).
 
 **Symbol File Compression**
 
@@ -52,10 +52,4 @@ The Microsoft Symbol Server provides compressed versions of the symbol files. Th
 
 
  
-
- 
-
-
-
-
 

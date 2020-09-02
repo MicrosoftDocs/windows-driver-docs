@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Debugging Managed Code Using the Windows Debugger
 
-You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](https://docs.microsoft.com/dotnet/framework/tools/sos-dll-sos-debugging-extension) and a data access component (mscordacwks.dll).
+You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code. To debug managed code, you must load the [SOS debugging extension (sos.dll)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) and a data access component (mscordacwks.dll).
 
 The Windows debuggers are separate from the Visual Studio debugger. For information about the distinction between the Windows debuggers and the Visual Studio debugger, see [Windows Debugging](index.md).
 
@@ -37,7 +37,7 @@ The CLR is not updated every time the .NET Framework is updated. For example, ve
 To debug managed code, the debugger must load these two components.
 
 - Data access component (DAC) (mscordacwks.dll)
-- [SOS debugging extension (sos.dll)](https://docs.microsoft.com/dotnet/framework/tools/sos-dll-sos-debugging-extension)
+- [SOS debugging extension (sos.dll)](/dotnet/framework/tools/sos-dll-sos-debugging-extension)
 
 **Note**  For all versions of the .NET Framework, the filename of the DAC is mscordacwks.dll, and the filename of the SOS debugging extension is sos.dll.
 

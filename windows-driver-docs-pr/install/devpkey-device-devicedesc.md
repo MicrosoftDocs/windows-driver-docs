@@ -60,13 +60,13 @@ The DEVPKEY_Device_DeviceDesc device property represents a description of a devi
 Remarks
 -------
 
-The value of DEVPKEY_Device_DeviceDesc is set by the *device-description* entry value that is supplied by the [**INF Models section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section) of the INF file that installs a device.
+The value of DEVPKEY_Device_DeviceDesc is set by the *device-description* entry value that is supplied by the [**INF Models section**](./inf-models-section.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_DeviceDesc.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_DeviceDesc.
 
 You can retrieve the value of the [**DEVPKEY_NAME**](devpkey-name--device-instance-.md) device instance property to retrieve the name of the device as it should appear in a user interface item.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DeviceDesc property key. Instead, these earlier versions of Windows use the corresponding SPDRP_DEVICEDESC identifier to access the value of the property. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DeviceDesc property key. Instead, these earlier versions of Windows use the corresponding SPDRP_DEVICEDESC identifier to access the value of the property. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
@@ -80,16 +80,9 @@ Requirements
 
 [**DEVPKEY_NAME (Device Instance)**](devpkey-name--device-instance-.md)
 
-[**INF Models Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section)
+[**INF Models Section**](./inf-models-section.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

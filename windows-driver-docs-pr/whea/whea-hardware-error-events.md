@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # WHEA Hardware Error Events
 
 
-The Windows Hardware Error Architecture (WHEA) raises an Event Tracing for Windows (ETW) event whenever a hardware error occurs. These hardware error events are recorded in the system event log. For descriptions of the various hardware error events that can be raised by WHEA, see [Hardware Error Events](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/).
+The Windows Hardware Error Architecture (WHEA) raises an Event Tracing for Windows (ETW) event whenever a hardware error occurs. These hardware error events are recorded in the system event log. For descriptions of the various hardware error events that can be raised by WHEA, see [Hardware Error Events](/windows-hardware/drivers/ddi/_whea/).
 
 An application can retrieve hardware error events from the system event log by querying for any events that were logged by WHEA. For examples of how to retrieve WHEA hardware error events from the system event log, see [Querying the System Event Log for Hardware Error Events](querying-the-system-event-log-for-hardware-error-events.md).
 
@@ -28,9 +28,4 @@ Regardless of whether a particular hardware error event was obtained by querying
 Each hardware error event contains an [error record](error-records.md) that describes the error condition that occurred. The error record can be retrieved from each event for further analysis.
 
  
-
- 
-
-
-
 

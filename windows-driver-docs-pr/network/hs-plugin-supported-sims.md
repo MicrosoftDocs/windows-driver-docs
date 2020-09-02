@@ -69,12 +69,7 @@ Requirements
 
 [**HS\_SIM\_IDENTITY**](hs-sim-identity.md)
 
-[Microsoft Interface Definition Language](https://docs.microsoft.com/windows/desktop/Midl/midl-start-page)
+[Microsoft Interface Definition Language](/windows/desktop/Midl/midl-start-page)
 
  
-
- 
-
-
-
 

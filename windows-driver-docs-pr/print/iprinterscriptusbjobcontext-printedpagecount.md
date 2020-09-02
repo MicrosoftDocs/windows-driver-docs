@@ -43,7 +43,7 @@ This method returns an **HRESULT** value.
 
 If the IHV JavaScript code never calls **PrintedPageCount** to set the printed page count, it is assumed that an accurate count of the pages is not possible and USBMon will allow the spooler to continue estimating progress.
 
-For information about USBMon and USB-based bidirectional communication with a print device, see [USB Bidi Extender](https://docs.microsoft.com/windows-hardware/drivers/print/usb-bidi-extender).
+For information about USBMon and USB-based bidirectional communication with a print device, see [USB Bidi Extender](./usb-bidi-extender.md).
 
 ## Requirements
 
@@ -57,4 +57,4 @@ For information about USBMon and USB-based bidirectional communication with a pr
 
 [**IPrinterScriptUsbJobContext**](iprinterscriptusbjobcontext.md)
 
-[USB Bidi Extender](https://docs.microsoft.com/windows-hardware/drivers/print/usb-bidi-extender)
+[USB Bidi Extender](./usb-bidi-extender.md)

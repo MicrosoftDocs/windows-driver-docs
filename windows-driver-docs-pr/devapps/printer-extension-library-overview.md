@@ -56,9 +56,9 @@ In order to convert the C# interfaces, classes and methods to something supporte
 
 [Printer Extension Interfaces (v4 Print Driver)](https://go.microsoft.com/fwlink/p/?LinkID=299887)
 
-[Job Management (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/job-management)
+[Job Management (v4 Printer Driver)](../print/job-management.md)
 
-[Device Maintenance (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/device-maintenance)
+[Device Maintenance (v4 Printer Driver)](../print/device-maintenance.md)
 
 [Bidirectional Communications](https://go.microsoft.com/fwlink/p/?LinkId=317192)
 
@@ -69,11 +69,4 @@ In order to convert the C# interfaces, classes and methods to something supporte
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
  
-
- 
-
-
-
-
-
 

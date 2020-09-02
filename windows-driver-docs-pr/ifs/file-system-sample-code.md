@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # File system sample code
 
-In almost all situations, developing a full file system driver for Windows is not necessary. If you do decide to develop a new file system driver, the [*fastfat* sample](https://docs.microsoft.com/windows-hardware/drivers/samples/file-system-driver-samples) is available for you to use as a model. To learn how to install a file system driver, see [Creating an INF File for a File System Driver](creating-an-inf-file-for-a-file-system-driver.md).
+In almost all situations, developing a full file system driver for Windows is not necessary. If you do decide to develop a new file system driver, the [*fastfat* sample](../samples/file-system-driver-samples.md) is available for you to use as a model. To learn how to install a file system driver, see [Creating an INF File for a File System Driver](creating-an-inf-file-for-a-file-system-driver.md).
 
 The WDK does not provide conceptual documentation for file system development.
 

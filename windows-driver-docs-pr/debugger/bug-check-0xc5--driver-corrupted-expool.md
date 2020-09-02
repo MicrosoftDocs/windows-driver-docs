@@ -73,12 +73,7 @@ The [**!analyze**](-analyze.md) debug extension displays information about the b
 
 To debug this error, use the special pool option of Driver Verifier. If this fails to reveal the driver that caused the error, use the Global Flags utility to enable the special pool by pool tag.
 
-For information about the special pool, consult the [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) section of the Windows Driver Kit.
+For information about the special pool, consult the [Driver Verifier](../devtest/driver-verifier.md) section of the Windows Driver Kit.
 
  
-
- 
-
-
-
 

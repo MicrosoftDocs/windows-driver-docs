@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Getting started with hardware codec support in AVStream
 
-Starting in Windows 7, [Windows Media Foundation](https://docs.microsoft.com/windows/win32/medfound/media-foundation-programming-guide) represents AVStream-based media components as user-mode Media Foundation Transforms (MFTs).
+Starting in Windows 7, [Windows Media Foundation](/windows/win32/medfound/media-foundation-programming-guide) represents AVStream-based media components as user-mode Media Foundation Transforms (MFTs).
 
 By using this feature, vendors can present hardware-based decoders, encoders, and video processors as MFTs that can in turn be manipulated at the application level.
 
@@ -42,26 +42,26 @@ The resulting wrapped hardware media processing function is called a Device Prox
 
 - Register its media processing KS filters under one of the following KS categories, available in Windows 7 and later versions of Windows:
 
-  - [**KSMFT\_CATEGORY\_VIDEO\_DECODER**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-video-decoder)
+  - [**KSMFT\_CATEGORY\_VIDEO\_DECODER**](../install/ksmft-category-video-decoder.md)
 
-  - [**KSMFT\_CATEGORY\_VIDEO\_ENCODER**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-video-encoder)
+  - [**KSMFT\_CATEGORY\_VIDEO\_ENCODER**](../install/ksmft-category-video-encoder.md)
 
-  - [**KSMFT\_CATEGORY\_VIDEO\_PROCESSOR**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-video-processor)
+  - [**KSMFT\_CATEGORY\_VIDEO\_PROCESSOR**](../install/ksmft-category-video-processor.md)
 
-  - [**KSMFT\_CATEGORY\_AUDIO\_DECODER**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-audio-decoder)
+  - [**KSMFT\_CATEGORY\_AUDIO\_DECODER**](../install/ksmft-category-audio-decoder.md)
 
-  - [**KSMFT\_CATEGORY\_AUDIO\_ENCODER**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-audio-encoder)
+  - [**KSMFT\_CATEGORY\_AUDIO\_ENCODER**](../install/ksmft-category-audio-encoder.md)
 
   In addition, the following categories are also defined for use in other transcoding scenarios:
 
-  - [**KSMFT\_CATEGORY\_VIDEO\_EFFECT**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-video-effect)
+  - [**KSMFT\_CATEGORY\_VIDEO\_EFFECT**](../install/ksmft-category-video-effect.md)
 
-  - [**KSMFT\_CATEGORY\_MULTIPLEXER**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-multiplexer)
+  - [**KSMFT\_CATEGORY\_MULTIPLEXER**](../install/ksmft-category-multiplexer.md)
 
-  - [**KSMFT\_CATEGORY\_DEMULTIPLEXER**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-demultiplexer)
+  - [**KSMFT\_CATEGORY\_DEMULTIPLEXER**](../install/ksmft-category-demultiplexer.md)
 
-  - [**KSMFT\_CATEGORY\_AUDIO\_EFFECT**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-audio-effect)
+  - [**KSMFT\_CATEGORY\_AUDIO\_EFFECT**](../install/ksmft-category-audio-effect.md)
 
-  - [**KSMFT\_CATEGORY\_OTHER**](https://docs.microsoft.com/windows-hardware/drivers/install/ksmft-category-other)
+  - [**KSMFT\_CATEGORY\_OTHER**](../install/ksmft-category-other.md)
 
-- Media foundation applications can then use the [MFTEnumEx](https://docs.microsoft.com/windows/win32/api/mfapi/nf-mfapi-mftenumex) function to enumerate the devices that are registered as MFTs by using the categories mentioned previously.
+- Media foundation applications can then use the [MFTEnumEx](/windows/win32/api/mfapi/nf-mfapi-mftenumex) function to enumerate the devices that are registered as MFTs by using the categories mentioned previously.

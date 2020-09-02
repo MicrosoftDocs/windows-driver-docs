@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # Verifying the Signature of a Test-Signed Driver File
 
 
-To verify a test signature that is embedded in a driver file, use the following [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) command:
+To verify a test signature that is embedded in a driver file, use the following [**SignTool**](../devtest/signtool.md) command:
 
 ```cpp
 SignTool verify /v /pa DriverFileName.sys
@@ -42,10 +42,4 @@ SignTool verify /v /pa amd64\toaster.sys
 ```
 
  
-
- 
-
-
-
-
 

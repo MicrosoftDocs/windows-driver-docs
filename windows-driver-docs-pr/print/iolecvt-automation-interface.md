@@ -30,7 +30,7 @@ The **IOleCvt** interface is supported in Windows 2000 and later.
 
 The programmatic identifier for the **IOleCvt** object is OlePrn.OleCvt.
 
-For more information about how to access printers from ASP Web pages, see [Internet Printing](https://docs.microsoft.com/windows-hardware/drivers/print/internet-printing).
+For more information about how to access printers from ASP Web pages, see [Internet Printing](./internet-printing.md).
 
 The "property get" operations in the **IOleCvt** interface are described in the following section:
 

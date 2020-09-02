@@ -49,7 +49,7 @@ You can also install the WDTF runtime library manually.
 
 1. Install Visual Studio and then install the WDK.
 
-2. Configure a remote computer for testing. In Visual Studio, click the **Driver** menu, point to **Test**, and then click **Configure Computers**.
+2. Configure a remote computer for testing. In Visual Studio, select the **Driver** menu, point to **Test**, and then select **Configure Computers**.
 
 ### Manually installing WDTF on a test computer (alternative method)
 
@@ -104,6 +104,6 @@ You can also uninstall the WDTF runtime library manually.
 
 ## Manually uninstalling WDTF on a test computer
 
-1. On the test computer, go to **Settings** and then click **Apps**.
+1. On the test computer, go to **Settings** and then select **Apps**.
 
-2. In **Programs and Features**, locate the Windows Driver Testing Framework (WDTF) Runtime Libraries, right click, and select **Uninstall**.
+2. In **Programs and Features**, locate the Windows Driver Testing Framework (WDTF) Runtime Libraries, select and hold (or right-click), and select **Uninstall**.

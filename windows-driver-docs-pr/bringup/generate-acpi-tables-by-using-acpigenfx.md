@@ -55,7 +55,7 @@ Download Windows 10 kits, tools, and code samples.
 
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/)
 
-- [Windows Driver Kit (WDK) for Windows 10](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+- [Windows Driver Kit (WDK) for Windows 10](../download-the-wdk.md)
 
 - [Windows Driver Kit (WDK) samples](https://github.com/Microsoft/Windows-driver-samples)
 
@@ -369,7 +369,7 @@ void * ReferenceDBG2Table(void) {
 1. Create a device and assign resources. For example, for the sensor device shown here, the sample calls **Platform.AddGenericDevice** and specifies the device name, hardware ID, and unique instance. The sensor device that connects to the I²C serial bus, I2C1, which is described in the DSDT.
 
 > [!NOTE]
-> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's style guide for [Bias-free communications](https://docs.microsoft.com/style-guide/bias-free-communication) recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
+> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's style guide for [Bias-free communications](/style-guide/bias-free-communication) recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
 
 ```asl
 namespace SSDTSample
@@ -447,4 +447,4 @@ bcdedit /set testsigning on
 
 ## Related topics
 
-[ACPI system description tables](acpi-system-description-tables.md)  
+[ACPI system description tables](acpi-system-description-tables.md)

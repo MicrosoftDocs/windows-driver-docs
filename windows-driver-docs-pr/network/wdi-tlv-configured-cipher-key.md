@@ -24,8 +24,8 @@ The size (in bytes) of the following values.
 
 | Type | Description |
 | --- | --- |
-| [WDI_CIPHER_KEY_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_key_type) | The type of key being returned. |
-| [WDI_CIPHER_ALGORITHM](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | Specifies the cipher algorithm that uses this key. |
+| [WDI_CIPHER_KEY_TYPE](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_key_type) | The type of key being returned. |
+| [WDI_CIPHER_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | Specifies the cipher algorithm that uses this key. |
 | UINT8\[6\] | The initial 48-bit value of the Packet Number (PN), which is used for replay protection. Optional if **CipherAlgorithm** is **WDI_CIPHER_ALGO_WEP40**, **WDI_CIPHER_ALGO_WEP104**, or **WDI_CIPHER_ALGO_WEP**. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_CCMP**. Contains CCMP cipher algorithm key data. |
 | TLV<LIST\<UINT8>> | Present if and only if **CipherAlgorithm** is **WDI_CIPHER_ALGO_GCMP**. Contains GCMP cipher algorithm key data. |
@@ -42,4 +42,3 @@ The size (in bytes) of the following values.
 **Minimum supported server**: Windows Server 2016
 
 **Header**: Wditypes.hpp
-

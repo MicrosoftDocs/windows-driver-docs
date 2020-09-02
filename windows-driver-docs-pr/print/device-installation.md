@@ -22,7 +22,7 @@ Initial installation of your port-connected device can occur in many ways, and t
 | System Working State (S0) | Base Plug and Play |
 | System in Sleep State (S1-S4) | See [Power management](power-management.md) |
 
-For more information, see [System Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-power-states).
+For more information, see [System Power States](../kernel/system-power-states.md).
 
 The most common system power state at which initial installation of your device will occur is System Working State S0. Most of your device installation testing should initially be focused here, but it is important to verify installation during other system power states as well.
 
@@ -30,7 +30,7 @@ Your device's Plug and Play (PnP) compatibility can best be assessed in the devi
 
 ## Verifying basic installation
 
-When first connecting your printer, you should receive a Plug and Play (PnP) notification. Verify that the device is correctly identified. The device name should be properly recognized. If the correct driver is provided, the device should install successfully. If driver installation fails, open Device Manager to look for possible causes for errors. Open Device Manager by double-clicking **Computer Management** in the **Administrative Tools** Control Panel. Alternately, right-click the **My Computer** icon on the desktop, and select **Properties**. On the **Hardware** tab, click **Device Manager**.
+When first connecting your printer, you should receive a Plug and Play (PnP) notification. Verify that the device is correctly identified. The device name should be properly recognized. If the correct driver is provided, the device should install successfully. If driver installation fails, open Device Manager to look for possible causes for errors. Open Device Manager by double-clicking **Computer Management** in the **Administrative Tools** Control Panel. Alternately, select and hold (or right-click) the **My Computer** icon on the desktop, and select **Properties**. On the **Hardware** tab, select **Device Manager**.
 
 Make sure that the following two scenarios work smoothly:
 
@@ -42,7 +42,7 @@ Make sure that the following two scenarios work smoothly:
 
 After the driver is successfully installed, use the following Control Panel applications to verify that your printer is installed to the proper locations.
 
-- **Device Manager:** Check that the device is installed correctly. It should be listed in the tree according to the bus on which it is connected. From Device Manager, verify that your printer responds correctly to requests to disable/re-enable and uninstall/install the device. To reinstall the device, on the Device Manager **Action** menu, click **Scan for hardware changes**.
+- **Device Manager:** Check that the device is installed correctly. It should be listed in the tree according to the bus on which it is connected. From Device Manager, verify that your printer responds correctly to requests to disable/re-enable and uninstall/install the device. To reinstall the device, on the Device Manager **Action** menu, select **Scan for hardware changes**.
 
 - **Printers and Faxes:** From this Control Panel application, verify that the printer icon appears. Also verify that the printer icon can be deleted successfully. Confirm that you can reinstall the printer using the Add Printer wizard.
 

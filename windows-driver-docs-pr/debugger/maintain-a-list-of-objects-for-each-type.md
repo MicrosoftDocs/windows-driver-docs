@@ -44,17 +44,11 @@ The **Maintain a list of objects for each type** flag collects and maintains a l
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-To display the object list, use the sysinternals tool [Handle](https://docs.microsoft.com/sysinternals/downloads/handle).
+To display the object list, use the sysinternals tool [Handle](/sysinternals/downloads/handle).
 
 **Note**   The linked lists created when you set this flag use eight bytes of overhead for each object. Remember to clear this flag when your analysis is complete.
 
  
 
  
-
- 
-
-
-
-
 

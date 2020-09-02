@@ -46,7 +46,7 @@ The .nvunloadall command unloads all of the NatVis files from the debugger envir
 
 ## Additional Information
 
-For more information, see [Create Custom Views of Native Objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
 
 ## See also
 

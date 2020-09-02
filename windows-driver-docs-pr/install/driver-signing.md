@@ -26,17 +26,11 @@ Kernel-mode driver binaries embed signed with dual (SHA1 and SHA2) certificates 
 
 -   [Windows 10 in S mode Driver Requirements](Windows10SDriverRequirements.md)
 -   [Managing the Signing Process](managing-the-signing-process.md)
--   [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md)
+-   [Signing Drivers during Development and Test](./introduction-to-test-signing.md)
 -   [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md)
--   [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
--   [Microsoft Security Advisory 2880823](https://docs.microsoft.com/security-updates/SecurityAdvisories/2016/2880823)
+-   [Troubleshooting Install and Load Problems with Signed Driver Packages](./detecting-driver-load-errors.md)
+-   [Microsoft Security Advisory 2880823](/security-updates/SecurityAdvisories/2016/2880823)
 
-For general information about driver signing on Windows Vista and later versions of Windows, see the white paper [Digital Signatures for Kernel Modules on Systems Running Windows Vista](https://docs.microsoft.com/previous-versions/dotnet/articles/bb530195(v=msdn.10)).
-
-
- 
-
-
-
+For general information about driver signing on Windows Vista and later versions of Windows, see the white paper [Digital Signatures for Kernel Modules on Systems Running Windows Vista](/previous-versions/dotnet/articles/bb530195(v=msdn.10)).
 
 

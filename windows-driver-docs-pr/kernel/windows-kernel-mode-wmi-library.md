@@ -13,16 +13,11 @@ Windows provides a general mechanism for managing components. This system is cal
 
 For more information on WMI, see [Windows Management Instrumentation](implementing-wmi.md).
 
-Routines that provide a direct interface to the WMI library are prefixed with the letters "**Wmi**"; for a list of WMI routines, see [Windows Management Instrumentation (WMI) Library Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+Routines that provide a direct interface to the WMI library are prefixed with the letters "**Wmi**"; for a list of WMI routines, see [Windows Management Instrumentation (WMI) Library Routines](/windows-hardware/drivers/ddi/index).
 
-For a list of WMI callbacks, see [WMI Library Callback Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+For a list of WMI callbacks, see [WMI Library Callback Routines](/windows-hardware/drivers/ddi/index).
 
-Communication with WMI is done with IRPs. For a list of routines that your driver can use to receive IRPs, see [WMI IRP Processing Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index). For a list of routines that your driver can use to send WMI IRPs, see [WMI IRP Sending Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index). For a list of IRPs that are used with WMI, see [WMI Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-minor-irps).
-
- 
+Communication with WMI is done with IRPs. For a list of routines that your driver can use to receive IRPs, see [WMI IRP Processing Routines](/windows-hardware/drivers/ddi/index). For a list of routines that your driver can use to send WMI IRPs, see [WMI IRP Sending Routines](/windows-hardware/drivers/ddi/index). For a list of IRPs that are used with WMI, see [WMI Minor IRPs](./wmi-minor-irps.md).
 
  
-
-
-
 

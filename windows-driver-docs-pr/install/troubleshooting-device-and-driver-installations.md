@@ -27,17 +27,11 @@ You can use the following guidelines to either verify that your device is instal
 
 -   On Windows Vista and later versions of Windows, follow the steps that are described in [Debugging Device Installations (Windows Vista and Later)](debugging-device-installations--windows-vista-and-later-.md) to debug [co-installers](writing-a-co-installer.md) during the core stages of device installation.
 
--   On Windows Vista and later versions of Windows, follow the steps that are described in [Troubleshooting Install and Load Problems with Test-signed Drivers](troubleshooting-install-and-load-problems-with-signed-driver-packages.md) to diagnose problems related to the installation and loading of test-signed drivers.
+-   On Windows Vista and later versions of Windows, follow the steps that are described in [Troubleshooting Install and Load Problems with Test-signed Drivers](./detecting-driver-load-errors.md) to diagnose problems related to the installation and loading of test-signed drivers.
 
 -   Run test programs to exercise the device. This includes the testing and debugging tools that are supplied with the Windows Driver Kit (WDK).
 
-Additionally, in Windows Server 2003, Windows XP, and Windows 2000, a [co-installer](writing-a-co-installer.md) can provide a troubleshooter that helps users diagnose problems with your device. See [**DIF_TROUBLESHOOTER**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-troubleshooter) for more information.
+Additionally, in Windows Server 2003, Windows XP, and Windows 2000, a [co-installer](writing-a-co-installer.md) can provide a troubleshooter that helps users diagnose problems with your device. See [**DIF_TROUBLESHOOTER**](./dif-troubleshooter.md) for more information.
 
  
-
- 
-
-
-
-
 

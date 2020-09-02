@@ -15,7 +15,7 @@ User-mode and kernel-mode code use different routines to break into the debugger
 
 A break routine causes an exception to occur in the current process, so that the calling thread can signal the debugger associated with the calling process.
 
-To break into a debugger from a user-mode program, use the [DebugBreak function](https://docs.microsoft.com/windows/desktop/api/debugapi/nf-debugapi-debugbreak). Its prototype is as follows:
+To break into a debugger from a user-mode program, use the [DebugBreak function](/windows/desktop/api/debugapi/nf-debugapi-debugbreak). Its prototype is as follows:
 
 ```cpp
 VOID DebugBreak(VOID);
@@ -33,18 +33,18 @@ When a user-mode program calls **DebugBreak**, the following possible actions wi
 
 When a kernel-mode program breaks into the debugger, the entire operating system freezes until the kernel debugger allows execution to resume. If no kernel debugger is present, this is treated as a bug check.
 
-The [**DbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpoint) routine works in kernel-mode code, but is otherwise similar to the **DebugBreak** user-mode routine.
+The [**DbgBreakPoint**](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpoint) routine works in kernel-mode code, but is otherwise similar to the **DebugBreak** user-mode routine.
 
-The [**DbgBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpointwithstatus) routine also causes a break, but it additionally sends a 32-bit status code to the debugger.
+The [**DbgBreakPointWithStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpointwithstatus) routine also causes a break, but it additionally sends a 32-bit status code to the debugger.
 
-The [**KdBreakPoint**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff548063(v=vs.85)) and [**KdBreakPointWithStatus**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdbreakpointwithstatus) routines are identical to **DbgBreakPoint** and **DbgBreakPointWithStatus**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
+The [**KdBreakPoint**](/previous-versions/windows/hardware/previsioning-framework/ff548063(v=vs.85)) and [**KdBreakPointWithStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kdbreakpointwithstatus) routines are identical to **DbgBreakPoint** and **DbgBreakPointWithStatus**, respectively, when compiled in the checked build environment. When compiled in the free build environment, they have no effect.
 
 ## Kernel-Mode Conditional Break Routines
 
 Two conditional break routines are available for kernel-mode code. These routines test a logical expression. If the expression is false, execution halts and the debugger becomes active.
 
-- The [**ASSERT**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)) macro tests a logical expression. If the expression is false, execution halts and the debugger becomes active. The failed expression and its location in the program are displayed in the debugger.
+- The [**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85)) macro tests a logical expression. If the expression is false, execution halts and the debugger becomes active. The failed expression and its location in the program are displayed in the debugger.
 
-- The [**ASSERTMSG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-assertmsg) macro is identical to **ASSERT** except that it allows an additional message to be sent to the debugger.
+- The [**ASSERTMSG**](/windows-hardware/drivers/ddi/wdm/nf-wdm-assertmsg) macro is identical to **ASSERT** except that it allows an additional message to be sent to the debugger.
 
 **ASSERT** and **ASSERTMSG** are only active when compiled in the checked build environment. When compiled in the free build environment, they have no effect.

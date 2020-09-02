@@ -24,7 +24,7 @@ For info about the hardware that is required to properly match service metadata 
 
 For info on service metadata, see [Service metadata](service-metadata.md).
 
-For info on the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+For info on the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 ## Matching on GSM networks
 
@@ -237,7 +237,7 @@ You can rebrand the following items in the app:
 
 -   The app content itself (that is, everything inside the app can be changed for a particular operator). This is code over which the app has complete control. You might want to change help content, navigation options, page layouts, colors, and branding inside the app, based on the MNO/MVNO.
 
--   The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](https://docs.microsoft.com/previous-versions/windows/apps/hh465439(v=win.10)).
+-   The app tile can be dynamically updated to show specific images and layouts that are specific to the operator. For information about how to dynamically update tile content, see [Quickstart: Sending a tile update](/previous-versions/windows/apps/hh465439(v=win.10)).
 
 You cannot rebrand the following items in the app:
 
@@ -360,10 +360,4 @@ It is important to keep the following metadata package content up-to-date:
 For more information about mobile broadband metadata see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
  
-
- 
-
-
-
-
 

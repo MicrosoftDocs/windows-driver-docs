@@ -24,4 +24,4 @@ The **KSPROPSETID\_InterleavedAudio** property set contains the following KS pro
 
 [**KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION**](ksproperty-interleavedaudio-formatinformation.md)
 
-This property name is defined in the [**KSPROPERTY\_INTERLEAVEDAUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_interleavedaudio) enum.
+This property name is defined in the [**KSPROPERTY\_INTERLEAVEDAUDIO**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_interleavedaudio) enum.

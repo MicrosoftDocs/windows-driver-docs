@@ -34,7 +34,7 @@ The PnP manager sends this IRP at IRQL PASSIVE\_LEVEL in an arbitrary thread con
 ## Input Parameters
 
 
-The **Parameters.QueryDeviceText.DeviceTextType** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a **DEVICE\_TEXT\_TYPE** value specifying which string is requested. Possible values for **DEVICE\_TEXT\_TYPE** include **DeviceTextDescription** and **DeviceTextLocationInformation**.
+The **Parameters.QueryDeviceText.DeviceTextType** member of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure is a **DEVICE\_TEXT\_TYPE** value specifying which string is requested. Possible values for **DEVICE\_TEXT\_TYPE** include **DeviceTextDescription** and **DeviceTextLocationInformation**.
 
 **Parameters.QueryDeviceText.LocaleId** is an LCID specifying the locale for the requested text.
 
@@ -59,7 +59,7 @@ Bus drivers are also encouraged to return **LocationInformation** for their chil
 
 If a bus driver returns information in response to this IRP, it allocates a NULL-terminated Unicode string from paged memory. The PnP manager frees the string when it is no longer needed.
 
-If a device does not provide description or location information, the device's parent bus driver completes the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) without modifying **Irp-&gt;IoStatus.Status** or **Irp-&gt;IoStatus.Information**.
+If a device does not provide description or location information, the device's parent bus driver completes the IRP ([**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) without modifying **Irp-&gt;IoStatus.Status** or **Irp-&gt;IoStatus.Information**.
 
 Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus**.
 
@@ -88,9 +88,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

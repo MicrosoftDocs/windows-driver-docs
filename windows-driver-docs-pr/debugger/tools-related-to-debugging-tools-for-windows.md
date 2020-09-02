@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This section describes tools that are related to debugging but are not included in the Debugging Tools for Windows package.
 
-[Application Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/application-verifier)  
+[Application Verifier](../devtest/application-verifier.md)  
 Monitor application actions while the application runs, subject the application to a variety of stresses and tests, and generate a report about potential errors in application execution or design. Application Verifier is included in the Windows Software Development Kit (SDK) for Windows. For information about downloading and installing the Windows SDK, see [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/).
 
 [Windows Error Reporting](windows-error-reporting.md)  

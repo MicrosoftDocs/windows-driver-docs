@@ -12,5 +12,5 @@ The driver samples in this directory provide a starting point for writing a cust
 
 | Sample | Description |
 | --- | --- |
-| [SimSensor](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/simsensor---simulated-temperature-sensor-sample-driver) | A simulated temperature sensor device. |
-| [Simulated Thermal Client Sample Driver ](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/simthermalclient---simulated-thermal-client-sample-driver) | Simulates a device that is a client of Windows thermal management. This driver publishes a THERMAL_COOLING_INTERFACE driver interface. |
+| [SimSensor](/samples/microsoft/windows-driver-samples/simsensor---simulated-temperature-sensor-sample-driver) | A simulated temperature sensor device. |
+| [Simulated Thermal Client Sample Driver ](/samples/microsoft/windows-driver-samples/simthermalclient---simulated-thermal-client-sample-driver) | Simulates a device that is a client of Windows thermal management. This driver publishes a THERMAL_COOLING_INTERFACE driver interface. |

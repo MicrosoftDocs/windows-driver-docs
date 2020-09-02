@@ -22,13 +22,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_drawing_text_gg"></span><span id="DDK_DRAWING_TEXT_GG"></span>
 
 
-The text output functions are called only for a *device-managed surface* (a device bitmap or surface), or for a GDI-managed surface if the driver has hooked the call in the [**EngAssociateSurface**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engassociatesurface) function. The graphic output primitives for text are the functions:
+The text output functions are called only for a *device-managed surface* (a device bitmap or surface), or for a GDI-managed surface if the driver has hooked the call in the [**EngAssociateSurface**](/windows/desktop/api/winddi/nf-winddi-engassociatesurface) function. The graphic output primitives for text are the functions:
 
-[**DrvTextOut**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvtextout)
+[**DrvTextOut**](/windows/desktop/api/winddi/nf-winddi-drvtextout)
 
-[**DrvGetGlyphMode**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetglyphmode)
+[**DrvGetGlyphMode**](/windows/desktop/api/winddi/nf-winddi-drvgetglyphmode)
 
-GDI calls **DrvTextOut** to render the pixels for a set of glyphs at specified positions for text output. Many of the **DrvTextOut** capabilities are defined with the GCAPS bits of the [**DEVINFO**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-tagdevinfo) structure returned by the [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev) function.
+GDI calls **DrvTextOut** to render the pixels for a set of glyphs at specified positions for text output. Many of the **DrvTextOut** capabilities are defined with the GCAPS bits of the [**DEVINFO**](/windows/desktop/api/winddi/ns-winddi-tagdevinfo) structure returned by the [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev) function.
 
 The input parameters for **DrvTextOut** define two sets of pixels, *foreground* and *opaque*. The driver renders the surface to provide the following results:
 
@@ -42,17 +42,11 @@ The driver must render the surface so opaque pixels are calculated and drawn on 
 
 Foreground and opaque pixels make up a mask through which color is brushed onto the surface. The glyphs of a font do not, in themselves, have color. The foreground set of pixels is defined as the union of the glyphs' pixels and the pixels of certain extra rectangles used to simulate strikethrough or underline. Opaque pixels are defined by opaque rectangles.
 
-**DrvTextOut** selects the specified font using a pointer, pfo, to query the current [**FONTOBJ**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_fontobj) structure. This process can include downloading a soft font or a font substitution, or any other font optimizations necessary for the device.
+**DrvTextOut** selects the specified font using a pointer, pfo, to query the current [**FONTOBJ**](/windows/desktop/api/winddi/ns-winddi-_fontobj) structure. This process can include downloading a soft font or a font substitution, or any other font optimizations necessary for the device.
 
-If a driver has scalable fonts, it should call the [**FONTOBJ\_pxoGetXform**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-fontobj_pxogetxform) function for the current FONTOBJ structure, to return the notional-to-device transform for the associated font. This is required for a driver-supplied font. Notional space is the design space of the device font. For example, PostScript fonts are defined in 1000-by-1000 unit character cells. Most of the metrics returned in the [**IFIMETRICS**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_ifimetrics) structure are converted to notional space, which is why the notional-to-device transform is necessary.
+If a driver has scalable fonts, it should call the [**FONTOBJ\_pxoGetXform**](/windows/desktop/api/winddi/nf-winddi-fontobj_pxogetxform) function for the current FONTOBJ structure, to return the notional-to-device transform for the associated font. This is required for a driver-supplied font. Notional space is the design space of the device font. For example, PostScript fonts are defined in 1000-by-1000 unit character cells. Most of the metrics returned in the [**IFIMETRICS**](/windows/desktop/api/winddi/ns-winddi-_ifimetrics) structure are converted to notional space, which is why the notional-to-device transform is necessary.
 
-The graphics engine queries the driver by calling the function [**DrvGetGlyphMode**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetglyphmode) to find out how it should internally cache its font information. It can cache individual glyphs as bitmaps, outlines, or neither (the proper choice for device fonts).
-
- 
+The graphics engine queries the driver by calling the function [**DrvGetGlyphMode**](/windows/desktop/api/winddi/nf-winddi-drvgetglyphmode) to find out how it should internally cache its font information. It can cache individual glyphs as bitmaps, outlines, or neither (the proper choice for device fonts).
 
  
-
-
-
-
 

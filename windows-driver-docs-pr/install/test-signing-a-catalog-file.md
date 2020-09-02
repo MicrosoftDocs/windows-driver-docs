@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Test-Signing a Catalog File
 
-After you create and verify a [driver package's](driver-packages.md) [catalog file](catalog-files.md), use [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) to test-sign the catalog file
+After you create and verify a [driver package's](driver-packages.md) [catalog file](catalog-files.md), use [**SignTool**](../devtest/signtool.md) to test-sign the catalog file
 
 ## Using a MakeCert Test Certificate or Commercial Test Certificate to Test-Sign a Driver Package's Catalog File
 

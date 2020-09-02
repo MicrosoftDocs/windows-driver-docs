@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # DShow Bridge implementation guidance for UVC devices
 
-This topic provides implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses [Microsoft OS Descriptors](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
+This topic provides implementation guidance for configuring DShow Bridge for cameras and devices that comply with the USB Video Class (UVC) specification. The platform uses [Microsoft OS Descriptors](../usbcon/microsoft-defined-usb-descriptors.md) from the USB bus standard to configure DShow Bridge. The Extended Properties OS Descriptors are an extension of USB standard descriptors and are used by USB devices to return Windows specific device properties that are not enabled through standard specifications.
 
 ## Overview
 
@@ -140,8 +140,8 @@ UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
 
 ### Resources
 
-[Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors)
+[Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md)
 
-[USB Generic Parent Driver (Usbccgp.sys)](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-common-class-generic-parent-driver)
+[USB Generic Parent Driver (Usbccgp.sys)](../usbcon/usb-common-class-generic-parent-driver.md)
 
 [USB Specification](https://www.usb.org/documents)

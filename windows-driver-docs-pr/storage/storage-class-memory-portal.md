@@ -14,6 +14,6 @@ The _DSM Interface for Byte Addressable Energy Backed Function Class (Function I
 
 ## Related topics
 
-[Storage driver design guide](https://docs.microsoft.com/windows-hardware/drivers/storage)
+[Storage driver design guide](./index.md)
 
 [_DSM Interface for JEDEC Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)

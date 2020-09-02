@@ -17,12 +17,12 @@ For more information regarding Windows requirements for Secure boot, see **Syste
 
 ## Related resources
 
-[Hardware Security Testability Specification](https://docs.microsoft.com/windows-hardware/test/hlk/testref/hardware-security-testability-specification)
+[Hardware Security Testability Specification](/windows-hardware/test/hlk/testref/hardware-security-testability-specification)
 
-[Windows Hardware Compatibility Program Specifications and Policies](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-specifications-policies)
+[Windows Hardware Compatibility Program Specifications and Policies](/windows-hardware/design/compatibility/whcp-specifications-policies)
 
 [WHCP-Systems-Specification-1607 (ZIP download)](https://go.microsoft.com/fwlink/?linkid=866948)
 
-[Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn653311(v=vs.85))
+[Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](/previous-versions/windows/hardware/design/dn653311(v=vs.85))
 
-[Windows 8.1 Secure Boot Key Creation and Management Guidance](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/dn747883(v=win.10))
+[Windows 8.1 Secure Boot Key Creation and Management Guidance](/previous-versions/windows/it-pro/windows-8.1-and-8/dn747883(v=win.10))

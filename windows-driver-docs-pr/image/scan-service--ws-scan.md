@@ -9,10 +9,4 @@ ms.localizationpriority: medium
 # Scan Service (WS-SCAN)
 
 
-[Scan Service (WS-Scan) Schema](https://docs.microsoft.com/windows-hardware/drivers/image/scan-service--ws-scan--schema)
-
-
-
-
-
-
+[Scan Service (WS-Scan) Schema](./scan-service--ws-scan--schema.md)

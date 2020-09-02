@@ -50,15 +50,9 @@ class MSFC_FCAdapterHBAAttributes {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_FCAdapterHBAAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fcadapterhbaattributes)
+[**MSFC\_FCAdapterHBAAttributes**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fcadapterhbaattributes)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

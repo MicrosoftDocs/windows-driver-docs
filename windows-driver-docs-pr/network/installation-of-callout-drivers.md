@@ -23,7 +23,7 @@ After a callout driver has been successfully installed, it can be loaded (starte
 net start drivername
 ```
 
-Depending on the value specified for the **StartType** entry in the \[*drivername*.Services\] section of the INF file, the callout driver might be automatically loaded the next time that the system is restarted. A callout driver should usually specify zero (SERVICE\_BOOT\_START) for this value so that the driver is loaded and its callouts are registered before the filter engine is started. See the [**INF AddService Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) for more information.
+Depending on the value specified for the **StartType** entry in the \[*drivername*.Services\] section of the INF file, the callout driver might be automatically loaded the next time that the system is restarted. A callout driver should usually specify zero (SERVICE\_BOOT\_START) for this value so that the driver is loaded and its callouts are registered before the filter engine is started. See the [**INF AddService Directive**](../install/inf-addservice-directive.md) for more information.
 
 A callout driver that is currently loaded can be unloaded (stopped) by typing the following at the command prompt:
 

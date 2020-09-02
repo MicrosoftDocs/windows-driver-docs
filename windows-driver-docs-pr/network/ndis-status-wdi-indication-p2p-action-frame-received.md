@@ -32,7 +32,7 @@ The port must indicate these packets in any of the following situations:
 
 | Type                                                                                               | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-incoming-frame-information) |                                |          | The incoming Wi-Fi Direct Action Frame information. This information is forwarded back to the port when the host issues [OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME](oid-wdi-task-p2p-send-response-action-frame.md). |
+| [**WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION**](./wdi-tlv-p2p-incoming-frame-information.md) |                                |          | The incoming Wi-Fi Direct Action Frame information. This information is forwarded back to the port when the host issues [OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME](oid-wdi-task-p2p-send-response-action-frame.md). |
 
  
 
@@ -68,9 +68,4 @@ Requirements
 [OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME](oid-wdi-task-p2p-send-response-action-frame.md)
 
  
-
- 
-
-
-
 

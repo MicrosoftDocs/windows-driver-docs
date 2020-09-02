@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Building a NetAdapterCx client driver
 
-To obtain the latest version of Visual Studio and the Windows Driver Kit (WDK), please visit the [Hardware Dev Center](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+To obtain the latest version of Visual Studio and the Windows Driver Kit (WDK), please visit the [Hardware Dev Center](../download-the-wdk.md).
 
 Use the following steps to create a new NetAdapter client driver in Visual Studio:
 

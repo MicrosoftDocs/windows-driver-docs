@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 # AV/C Connection Scenarios
 
-Before Windows Vista, the Connection and Compatibility Management (CCM) protocol in *Avc.sys* supported a single connection scenario, in which the computer acted as a controller for an external AV/C device to initiate data streaming from the device. For example, to begin streaming, the connection management in *Avc.sys* established a connection between a subunit on the device and the isochronous output plug of the device unit by using the connect and disconnect unit commands ([**AVC\_FUNCTION\_ACQUIRE**](https://docs.microsoft.com/windows-hardware/drivers/stream/avc-function-acquire) and [**AVC\_FUNCTION\_RELEASE**](https://docs.microsoft.com/windows-hardware/drivers/stream/avc-function-release), respectively). For more information about the AV/C specification and the CCM protocol, see the [1394 Trade Association](https://1394ta.org/library-2) website.
+Before Windows Vista, the Connection and Compatibility Management (CCM) protocol in *Avc.sys* supported a single connection scenario, in which the computer acted as a controller for an external AV/C device to initiate data streaming from the device. For example, to begin streaming, the connection management in *Avc.sys* established a connection between a subunit on the device and the isochronous output plug of the device unit by using the connect and disconnect unit commands ([**AVC\_FUNCTION\_ACQUIRE**](./avc-function-acquire.md) and [**AVC\_FUNCTION\_RELEASE**](./avc-function-release.md), respectively). For more information about the AV/C specification and the CCM protocol, see the [1394 Trade Association](https://1394ta.org/library-2) website.
 
 In Windows Vista, the connection management has been improved to support seven more connection scenarios, so that *Avc.sys* supports eight unit/subunit connection scenarios. The connection management improvements add support for connections from subunit plugs to other subunit plugs; the subunits can be within the same AV/C unit or in different AV/C units. *Avc.sys* establishes connections by using the signal-source and then input-select CCM protocol unit commands. (*Avc.sys* supports other CCM protocol unit commands, such as output-preset, only to the level that the AV/C specification requires.)
 
@@ -35,13 +35,13 @@ There are two general types of connections that relate to AV/C units and subunit
 The improved connection management that is implemented for Windows Vista in *Avc.sys* applies to the first type of connection, in which the device can respond to the AV/C command to make internal connections. The improved connection management in *Avc.sys* can establish an end-to-end connection between two tape subunits in different AV/C devices (on the same IEEE 1394 bus), if the devices support the AV/C CCM protocol.
 
 > [!NOTE]
-> *Avc.sys* does not support the second type of connection (memory-buffer). However, the memory-buffer type of connection follows the [IEC 61883](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-client-drivers) protocol and is supported by the underlying *61883.sys* driver in the same stack (where the computer is involved in memory-buffer connections).
+> *Avc.sys* does not support the second type of connection (memory-buffer). However, the memory-buffer type of connection follows the [IEC 61883](../ieee/iec-61883-client-drivers.md) protocol and is supported by the underlying *61883.sys* driver in the same stack (where the computer is involved in memory-buffer connections).
 
 ## Supported Connection Scenarios in Windows Vista
 
 Four scenarios (1 through 4) represent *intra*-unit connections. These connections are contained completely within in one AV/C unit. Four other scenarios (5 through 8) represent *inter*-unit connections. These connections are between two different AV/C units.
 
-The following topics discuss the eight different AV/C connection management scenarios and the respective values for the members of the [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure:
+The following topics discuss the eight different AV/C connection management scenarios and the respective values for the members of the [**AVCCONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure:
 
 [Connections Between Subunit Plugs and Unit Plugs Within One AV/C Unit](connections-between-subunit-plugs-and-unit-plugs-within-one-av-c-unit.md)
 

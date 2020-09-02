@@ -85,7 +85,7 @@ Windows needs to know the visibility and connect-ability of USB Ports on the sys
 
 - Sections 6.1.6, "Device Identification Objects", and 9.13.1, "USB 2.0 Host Controllers and \_UPC and \_PLD", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-- [Using ACPI to Configure USB Ports on a Computer](https://docs.microsoft.com/windows-hardware/drivers/install/using-acpi-to-configure-usb-ports-on-a-computer).
+- [Using ACPI to Configure USB Ports on a Computer](../install/using-acpi-to-configure-usb-ports-on-a-computer.md).
 
 ## SD host controllers and devices
 
@@ -171,7 +171,7 @@ If the device connected to a port is a composite USB device, functions within th
 **USB function within a Composite USB device**: Port number of the port to which the composite device is connected, PLUS the first Interface number of the function. (Arithmetic addition).
 
 
-For more information, see [Identifying the Location of Internal Cameras](https://docs.microsoft.com/windows-hardware/drivers/devapps/identifying-the-location-of-internal-cameras).
+For more information, see [Identifying the Location of Internal Cameras](../devapps/identifying-the-location-of-internal-cameras.md).
 
 ### ASL code examples
 
@@ -280,7 +280,7 @@ Clamshell designs, and other systems with built-in or connected keyboards, imple
 
 - Provides the associated event method (Lxx/Exx/EVT) under the GPIO controller device. This event method notifies the Control Method Button driver in the operating system that the button event has occurred.
 
-For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
+For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
 
 ### Windows-compatible button array
 
@@ -314,7 +314,7 @@ For touch-first (keyboard-less) platforms, such as slates, Windows provides a ge
 
         The "Rotation Lock" button must not be wake-capable (must use Exclusive).
 
-For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
+For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
 
 To support evolution of the Windows Button UI, Windows defines a Device-Specific Method (\_DSM) for the Windows Button Array device. For more information, see [Windows Button Array Device-Specific Method (\_DSM)](windows-button-array-device-specific-method---dsm-.md).
 
@@ -326,11 +326,11 @@ Windows supports docks and convertibles (clamshell/tablet combos) by the use of 
 
 - The GPIO controller must support level-mode interrupts and dynamic polarity reprogramming.
 
-- The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpioclx-i-o-and-interrupt-interfaces) (**GpioClx**).
+- The GPIO controller driver must use ActiveBoth emulation provided by the [GPIO framework extension](../gpio/gpioclx-i-o-and-interrupt-interfaces.md) (**GpioClx**).
 
 - If the asserted state ("Docked" or "Converted") is not asserted logic level low, the GPIO controller \_DSM method is required to override the GPIO driver stack's default behavior. For more information, see the **GPIO controller devices** section in the [General-purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) topic.
 
-For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
+For more information, see [Hardware buttons for Windows 8 tablet and convertible devices](/previous-versions/windows/hardware/design/dn613928(v=vs.85)).
 
 ### Dock-sensing device
 

@@ -23,21 +23,15 @@ To start a protected video session, the VMR should initiate operations on the Di
 
 To start the protected video session, calls should be made to the COPP device's functions in the following order:
 
-1.  The [*COPPOpenVideoSession*](https://docs.microsoft.com/windows-hardware/drivers/display/coppopenvideosession) function to initialize the COPP device. Before returning, the driver should set the device-state constant to COPP\_OPENED.
+1.  The [*COPPOpenVideoSession*](./coppopenvideosession.md) function to initialize the COPP device. Before returning, the driver should set the device-state constant to COPP\_OPENED.
 
-2.  The [*COPPGetCertificateLength*](https://docs.microsoft.com/windows-hardware/drivers/display/coppgetcertificatelength) function to retrieve the size, in bytes, of the certificate used by the graphics hardware. The driver should first verify that the device-state constant is currently set to COPP\_OPENED. If it is not, the driver should return E\_UNEXPECTED. Before returning, the driver should set the device-state constant to COPP\_CERT\_LENGTH\_RETURNED.
+2.  The [*COPPGetCertificateLength*](./coppgetcertificatelength.md) function to retrieve the size, in bytes, of the certificate used by the graphics hardware. The driver should first verify that the device-state constant is currently set to COPP\_OPENED. If it is not, the driver should return E\_UNEXPECTED. Before returning, the driver should set the device-state constant to COPP\_CERT\_LENGTH\_RETURNED.
 
-3.  The [*COPPKeyExchange*](https://docs.microsoft.com/windows-hardware/drivers/display/coppkeyexchange) function to retrieve the digital certificate used by the graphics hardware. The driver should first verify that the device-state constant is currently set to COPP\_CERT\_LENGTH\_RETURNED. If it is not, the driver should return E\_UNEXPECTED. Before returning, the driver should set the device-state constant to COPP\_KEY\_EXCHANGED.
+3.  The [*COPPKeyExchange*](./coppkeyexchange.md) function to retrieve the digital certificate used by the graphics hardware. The driver should first verify that the device-state constant is currently set to COPP\_CERT\_LENGTH\_RETURNED. If it is not, the driver should return E\_UNEXPECTED. Before returning, the driver should set the device-state constant to COPP\_KEY\_EXCHANGED.
 
-4.  The [*COPPSequenceStart*](https://docs.microsoft.com/windows-hardware/drivers/display/coppsequencestart) function to set the video session to protected mode. The driver should first verify that the device-state constant is currently set to COPP\_KEY\_EXCHANGED. If it is not, the driver should return E\_UNEXPECTED. Before returning, the driver should set the device-state constant to COPP\_SESSION\_ACTIVE to show that the video session is in the protected mode.
+4.  The [*COPPSequenceStart*](./coppsequencestart.md) function to set the video session to protected mode. The driver should first verify that the device-state constant is currently set to COPP\_KEY\_EXCHANGED. If it is not, the driver should return E\_UNEXPECTED. Before returning, the driver should set the device-state constant to COPP\_SESSION\_ACTIVE to show that the video session is in the protected mode.
 
 After the video session is set to protected mode, the video miniport driver can process [COPP commands](copp-commands.md) and requests for [COPP status](copp-status.md), and pass [COPP status events](copp-status-events.md).
 
  
-
- 
-
-
-
-
 
