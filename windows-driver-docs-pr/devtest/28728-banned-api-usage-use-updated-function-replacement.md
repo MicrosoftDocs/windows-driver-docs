@@ -15,13 +15,7 @@ warning C28728: Banned API Usage
 
 This warning indicates that a function is being used that has been banned or deprecated, and has a more robust and secure replacement.
 
-To find the replacement, search for the name of the deprecated function in the [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/) documentation. The documentation lists the name of the deprecated function and suggests replacements.
+To find the replacement, search for the name of the deprecated function in the [Windows Driver Development](../index.yml) documentation. The documentation lists the name of the deprecated function and suggests replacements.
 
  
-
- 
-
-
-
-
 

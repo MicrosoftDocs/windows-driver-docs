@@ -57,11 +57,11 @@ bcdedit /debug on
 
 You can use the **bcdedit /enum** command to view the current boot entries and their settings.
 
-For more details, see [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug).
+For more details, see [**BCDEdit /debug**](./bcdedit--debug.md).
 
 ### <span id="boot_options_to_debug_with_a_null_modem_cable_in_windows_vista_and_lat"></span><span id="BOOT_OPTIONS_TO_DEBUG_WITH_A_NULL_MODEM_CABLE_IN_WINDOWS_VISTA_AND_LAT"></span>Boot Options to Debug with a Null-Modem Cable in Windows
 
-To enable debugging with a null-modem cable in Windows, use BCDEdit and set the debugging connection type to "SERIAL". You can set this globally by using the [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings) command followed by **serial**, or set it for a specific boot entry by using the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command followed by **debugtype serial**. You must also use the [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) command to enable kernel debugging globally or for the desired operating system.
+To enable debugging with a null-modem cable in Windows, use BCDEdit and set the debugging connection type to "SERIAL". You can set this globally by using the [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md) command followed by **serial**, or set it for a specific boot entry by using the [**BCDEdit /set**](./bcdedit--set.md) command followed by **debugtype serial**. You must also use the [**BCDEdit /debug**](./bcdedit--debug.md) command to enable kernel debugging globally or for the desired operating system.
 
 If BCDEdit has not been used, the default global debug settings are for serial communications, using COM1 and a baud rate of 115,200.
 
@@ -117,11 +117,11 @@ bcdedit /debug on
 
 You can use the **bcdedit /enum** command to view the current boot entries and their settings.
 
-For more details, see [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) and [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings).
+For more details, see [**BCDEdit /debug**](./bcdedit--debug.md) and [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md).
 
 ### <span id="boot_parameters_to_debug_with_a_1394_cable_in_windows_vista_and_later"></span><span id="BOOT_PARAMETERS_TO_DEBUG_WITH_A_1394_CABLE_IN_WINDOWS_VISTA_AND_LATER"></span>Boot Parameters to Debug with a 1394 Cable in Windows
 
-To enable debugging with an IEEE 1394 cable in Windows, use BCDEdit and set the debugging connection type to "1394". You can set this globally by using the [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings) command followed by **1394**, or set it for a specific boot entry by using the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command followed by **debugtype 1394**. You must also use the [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) command to enable kernel debugging globally or for the desired operating system.
+To enable debugging with an IEEE 1394 cable in Windows, use BCDEdit and set the debugging connection type to "1394". You can set this globally by using the [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md) command followed by **1394**, or set it for a specific boot entry by using the [**BCDEdit /set**](./bcdedit--set.md) command followed by **debugtype 1394**. You must also use the [**BCDEdit /debug**](./bcdedit--debug.md) command to enable kernel debugging globally or for the desired operating system.
 
 To use BCDEdit, open a Command Prompt window with elevated privileges (select and hold, or right-click, **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
@@ -159,11 +159,11 @@ bcdedit /debug on
 
 You can use the **bcdedit /enum** command to view the current boot entries and their settings.
 
-For more details, see [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) and [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings).
+For more details, see [**BCDEdit /debug**](./bcdedit--debug.md) and [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md).
 
 ### <span id="boot_parameters_to_debug_with_a_usb_2_0_debugging_cable_in_windows_vis"></span><span id="BOOT_PARAMETERS_TO_DEBUG_WITH_A_USB_2_0_DEBUGGING_CABLE_IN_WINDOWS_VIS"></span>Boot Parameters to Debug with a USB 2.0 Debugging Cable in Windows
 
-To enable debugging with a USB cable in these versions of Windows, use BCDEdit and set the debugging connection type to "USB". You can set this globally by using the [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings) command followed by **usb**, or set it for a specific boot entry by using the [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command followed by **debugtype usb**. You must also use the [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) command to enable kernel debugging globally or for the desired operating system.
+To enable debugging with a USB cable in these versions of Windows, use BCDEdit and set the debugging connection type to "USB". You can set this globally by using the [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md) command followed by **usb**, or set it for a specific boot entry by using the [**BCDEdit /set**](./bcdedit--set.md) command followed by **debugtype usb**. You must also use the [**BCDEdit /debug**](./bcdedit--debug.md) command to enable kernel debugging globally or for the desired operating system.
 
 To use BCDEdit, open a Command Prompt window with elevated privileges (select and hold, or right-click, **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
@@ -201,12 +201,12 @@ bcdedit /debug on
 
 You can use the **bcdedit /enum** command to view the current boot entries and their settings.
 
-For more details, see [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) and [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings).
+For more details, see [**BCDEdit /debug**](./bcdedit--debug.md) and [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md).
 
 ### <span id="boot_parameters_to_debug_the_boot_process_in_windows_vista_and_later"></span><span id="BOOT_PARAMETERS_TO_DEBUG_THE_BOOT_PROCESS_IN_WINDOWS_VISTA_AND_LATER"></span>Boot Parameters to Debug the Boot Process in Windows
 
-To enable boot debugging, use the [**BCDEdit /bootdebug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--bootdebug) command and specify the appropriate boot component. If you wish to perform kernel debugging after Windows starts, use the [**BCDEdit /debug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--debug) command as well.
+To enable boot debugging, use the [**BCDEdit /bootdebug**](./bcdedit--bootdebug.md) command and specify the appropriate boot component. If you wish to perform kernel debugging after Windows starts, use the [**BCDEdit /debug**](./bcdedit--debug.md) command as well.
 
-You must also select a debugging connection (serial, 1394, or USB). This can be done with either the [**BCDEdit /dbgsettings**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--dbgsettings) or [**BCDEdit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command, just as in normal kernel debugging.
+You must also select a debugging connection (serial, 1394, or USB). This can be done with either the [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md) or [**BCDEdit /set**](./bcdedit--set.md) command, just as in normal kernel debugging.
 
-For more details, see [**BCDEdit /bootdebug**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--bootdebug).
+For more details, see [**BCDEdit /bootdebug**](./bcdedit--bootdebug.md).

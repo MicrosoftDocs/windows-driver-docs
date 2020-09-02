@@ -10,14 +10,14 @@ ms.localizationpriority: medium
 
 # WDF Verification
 
-WDF Verification checks if a kernel-mode driver is following the [Kernel-Mode Driver Framework (KMDF) requirements](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver) properly.  
+WDF Verification checks if a kernel-mode driver is following the [Kernel-Mode Driver Framework (KMDF) requirements](../wdf/using-the-framework-to-develop-a-driver.md) properly.  
 
-Failing this verification check will cause [bug check 0x10D: WDF_VIOLATION](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x10d---wdf-violation). 
+Failing this verification check will cause [bug check 0x10D: WDF_VIOLATION](../debugger/bug-check-0x10d---wdf-violation.md). 
 
 
 ### Activating this option:
 
-You can activate port/miniport interface checking for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting driver verifier options](https://docs.microsoft.com/windows-hardware/drivers/devtest/selecting-driver-verifier-options). You must restart the computer to activate or deactivate the port/miniport interface checking option.
+You can activate port/miniport interface checking for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting driver verifier options](./selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the port/miniport interface checking option.
 
 * **At the command line**
 

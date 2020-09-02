@@ -37,7 +37,7 @@ The [interoperability scenarios](client-scenarios-for-wsdbit.md) are intended to
 
 -   *Attachments* tests and verifies message attachments, as defined in the [SOAP Message Transmission Optimization Mechanism (MTOM)](https://www.w3.org/TR/2005/REC-soap12-mtom-20050125/) specification.
 
--   *Eventing* tests and verifies [Web Services Eventing](https://docs.microsoft.com/previous-versions/ms951233(v=msdn.10)).
+-   *Eventing* tests and verifies [Web Services Eventing](/previous-versions/ms951233(v=msdn.10)).
 
 -   *Secure communication* includes elements of all the preceding scenarios.
 
@@ -50,10 +50,4 @@ You can also selectively implement sections of the test cases. For example, you 
  
 
  
-
- 
-
-
-
-
 
