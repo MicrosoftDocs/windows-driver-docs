@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # eHS\_AUTHENTICATION\_RESULT enumeration
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **eHS\_AUTHENTICATION\_RESULT** enumeration indicates the result of authentication by the plugin after the PostConnectAuth request.

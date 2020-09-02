@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # HS\_HOST\_UPDATE\_CONFIGURATION\_COMPLETION function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_HOST\_UPDATE\_CONFIGURATION\_COMPLETION** function indicates the success or failure of a request to check for updates.

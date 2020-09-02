@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # HSPluginGetVersion function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HSPluginGetVersion** function is exported by the plugin DLL and is called to verify that the plugin version matches the host version.
