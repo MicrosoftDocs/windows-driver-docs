@@ -20,7 +20,7 @@ All WDM drivers must do the following:
 
 -   Be designed as a bus driver, a function driver, or a filter driver, as described in [Types of WDM Drivers](types-of-wdm-drivers.md).
 
--   Create device objects as described in [WDM Device Objects and Device Stacks](wdm-device-objects-and-device-stacks.md).
+-   [Create device objects](creating-a-device-object.md)
 
 -   Support [Plug and Play (PnP)](implementing-plug-and-play.md).
 

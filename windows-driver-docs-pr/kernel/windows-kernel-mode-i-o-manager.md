@@ -19,7 +19,7 @@ It cannot be stressed enough that your driver must send and receive IRPs on a ti
 
 For more information about IRPs, see [Handling IRPs](handling-irps.md).
 
-For more information about driver stacks, see [Device Objects and Device Stacks](device-objects-and-device-stacks.md).
+For more information about driver stacks, see [Device Objects and Device Stacks](example-wdm-device-stack.md).
 
 For programming techiques related to I/O management, see [I/O Manager Programming Techniques](i-o-programming-techniques.md).
 

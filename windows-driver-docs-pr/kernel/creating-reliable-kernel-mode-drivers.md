@@ -39,7 +39,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
     Never assume that your driver will run only on single-processor systems. For information about programming techniques that you can use to ensure that your driver will function properly on multiprocessor systems, see the following topics:
 
-    [Synchronization Techniques](synchronization-techniques.md)
+    [Synchronization Techniques](introduction-to-kernel-dispatcher-objects.md)
 
     [Errors in a Multiprocessor Environment](errors-in-a-multiprocessor-environment.md)
 

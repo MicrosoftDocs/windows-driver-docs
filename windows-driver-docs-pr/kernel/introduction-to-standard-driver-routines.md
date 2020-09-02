@@ -119,7 +119,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="odd">
 <td><p><em>CustomTimerDpc</em>, <em>IoTimer</em></p></td>
 <td><p>Timing and synchronizing events.</p></td>
-<td><p><a href="synchronization-techniques.md" data-raw-source="[Synchronization Techniques](synchronization-techniques.md)">Synchronization Techniques</a></p></td>
+<td><p><a href="synchronization-techniques.md" data-raw-source="[Synchronization Techniques](introduction-to-kernel-dispatcher-objects.md)">Synchronization Techniques</a></p></td>
 </tr>
 </tbody>
 </table>
