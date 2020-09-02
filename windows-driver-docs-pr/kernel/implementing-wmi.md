@@ -45,7 +45,7 @@ This section includes the following information about kernel-mode WMI:
 
 [WMI Event Tracing](wmi-event-tracing.md)
 
-[Testing and Troubleshooting WMI Driver Support](testing-and-troubleshooting-wmi-driver-support.md)
+[Testing and Troubleshooting WMI Driver Support](general-techniques-for-testing-wmi-driver-support.md)
 
  
 

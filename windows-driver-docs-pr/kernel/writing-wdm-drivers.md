@@ -17,7 +17,7 @@ This section discusses the Microsoft Windows Driver Model (WDM) architecture. Th
 
 This section is divided into three parts:
 
--   [Windows Driver Model](windows-driver-model.md) describes the Windows Driver Model (WDM), including types of WDM drivers, device configuration, and WDM versioning.
+-   [Windows Driver Model](introduction-to-wdm.md) describes the Windows Driver Model (WDM), including types of WDM drivers, device configuration, and WDM versioning.
 
 -   [Device Objects and Device Stacks](introduction-to-device-objects.md) describes device objects and device stacks. The section includes information about physical device objects (PDOs), functional device objects (FDOs), and filter device objects (filter DOs). Drivers are often built from a set of device objects that work together. This set of device objects is called a *stack*. Stacks can help you understand the flow of information to and from a driver and how different parts of the driver communicate internally.
 

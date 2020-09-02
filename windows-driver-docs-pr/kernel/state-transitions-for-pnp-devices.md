@@ -31,7 +31,7 @@ If the PnP manager must reconfigure the hardware resources of an active device, 
 
 On Windows 98/Me, the PnP manager also sends **IRP\_MN\_QUERY\_STOP\_DEVICE** and **IRP\_MN\_STOP\_DEVICE** requests when a device is being disabled. Drivers on these systems also receive an **IRP\_MN\_STOP\_DEVICE** request after a failed start.
 
-When a PnP device is being physically removed from the system or has already been removed, the PnP manager sends various remove IRPs to the device's drivers, directing them to remove the device's software representation (device objects, and so forth). For information about handling remove IRPs, see [Removing a Device](removing-a-device.md).
+When a PnP device is being physically removed from the system or has already been removed, the PnP manager sends various remove IRPs to the device's drivers, directing them to remove the device's software representation (device objects, and so forth). For information about handling remove IRPs, see [Removing a Device](understanding-when-remove-irps-are-issued.md).
 
 At some point after all of a driver's devices have been removed, the PnP manager calls the driver's [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine and unloads the driver.
 

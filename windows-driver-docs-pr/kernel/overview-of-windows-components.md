@@ -23,7 +23,7 @@ Drivers call routines that are exported by various kernel components. For exampl
 
 In addition, drivers must respond to specific calls from the operating system and can respond to other system calls. For a list of kernel mode routines that drivers may need to support, see [Standard Driver Routines](./introduction-to-standard-driver-routines.md).
 
-Not all kernel-mode components are pictured in the figure above. For a list of kernel mode components, see [Kernel-Mode Managers and Libraries](kernel-mode-managers-and-libraries.md).
+Not all kernel-mode components are pictured in the figure above. For a list of kernel mode components, see [Kernel-Mode Managers and Libraries](windows-kernel-mode-object-manager.md).
 
  
 

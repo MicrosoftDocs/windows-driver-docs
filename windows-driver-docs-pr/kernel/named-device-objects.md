@@ -20,7 +20,7 @@ A device object, like all object manager objects, can be named or unnamed. When 
 
 A driver can specify a name for a device object when it calls [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) or [**IoCreateDeviceSecure**](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) to create the device object. For more information about when and how to name a device object, see [NT Device Names](nt-device-names.md).
   
-A named device object can also have an MS-DOS device name, which is a symbolic link created by [**IoCreateSymbolicLink**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatesymboliclink) or [**IoCreateUnprotectedSymbolicLink**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreateunprotectedsymboliclink). WDM drivers do not in general require an MS-DOS device name. For more information, see [MS-DOS Device Names](ms-dos-device-names.md).
+A named device object can also have an MS-DOS device name, which is a symbolic link created by [**IoCreateSymbolicLink**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatesymboliclink) or [**IoCreateUnprotectedSymbolicLink**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreateunprotectedsymboliclink). WDM drivers do not in general require an MS-DOS device name. For more information, see [MS-DOS Device Names](introduction-to-ms-dos-device-names.md).
 
 > [!IMPORTANT]
 > If you use a named device object you can use [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) and specify a SDDL to help secure it. When you implement [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) always specify a custom class GUID for DeviceClassGuid. You should not specify an existing class GUID here. Doing so has the potential to break security settings or compatibility for other devices belonging to that class. For more information, see [WdmlibIoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure).
@@ -32,7 +32,7 @@ This section contains the following subsections:
 
 [NT Device Names](nt-device-names.md)
 
-[MS-DOS Device Names](ms-dos-device-names.md)
+[MS-DOS Device Names](introduction-to-ms-dos-device-names.md)
 
  
 

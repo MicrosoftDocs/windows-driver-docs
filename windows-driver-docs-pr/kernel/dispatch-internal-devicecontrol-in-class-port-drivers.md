@@ -21,7 +21,7 @@ For example, the *DispatchCreateClose* routines in the system keyboard and mouse
 
 The system parallel class/port driver model has similar features. New parallel class drivers can get support from the system parallel port driver by setting up IRPs for **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests with public IOCTL\_PARALLEL\_PORT\_*XXX* control codes. You can replace the system parallel port driver, but any new driver also must support this set of public internal device control requests.
 
-For more information about these public internal device control requests, see device-specific documentation in the Windows Driver Kit (WDK). For information about how to define private I/O control codes, see [Using I/O Control Codes](using-i-o-control-codes.md).
+For more information about these public internal device control requests, see device-specific documentation in the Windows Driver Kit (WDK). For information about how to define private I/O control codes, see [Using I/O Control Codes](introduction-to-i-o-control-codes.md).
 
 For a closely coupled pair of port/class drivers, the class driver might handle the processing of certain device control requests without passing them on to the port driver. In a new class/port driver pair, the class driver's *DispatchDeviceControl* routine can do either of the following:
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine returns an [NTSTATUS value](ntstatus-values.md), either STATUS\_SUCCESS or an appropriate error status.
+A [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine returns an [NTSTATUS value](using-ntstatus-values.md), either STATUS\_SUCCESS or an appropriate error status.
 
 The **DriverEntry** routine should postpone any call to [**IoRegisterDriverReinitialization**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioregisterdriverreinitialization) until just before it returns STATUS\_SUCCESS. It must not make this call unless it will return STATUS\_SUCCESS.
 

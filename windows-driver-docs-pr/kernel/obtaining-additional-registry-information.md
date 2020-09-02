@@ -18,7 +18,7 @@ Registry filtering drivers that run on Windows Vista and later operating system 
 
 -   Transaction objects
 
-    The [**CmGetBoundTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetboundtransaction) routine returns a pointer to the transaction object that represents the [transaction](using-kernel-transaction-manager.md), if any, that is associated with a registry key object.
+    The [**CmGetBoundTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetboundtransaction) routine returns a pointer to the transaction object that represents the [transaction](introduction-to-ktm.md), if any, that is associated with a registry key object.
 
 -   Version information
 

@@ -18,7 +18,7 @@ Typically, a kernel-mode resource manager must perform the following tasks in th
 
 1.  Create a log stream.
 
-    Resource managers can use the [Common Log File System](using-common-log-file-system.md) (CLFS), or some other logging capability, to maintain their log streams. A call to [**ClfsCreateLogFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile) creates a CLFS log stream. The resource manager must use the log stream to record any information that it requires to commit, roll back, or recover transactions. In addition, KTM uses the log stream to record any internal state changes that might be necessary to recover transactions.
+    Resource managers can use the [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS), or some other logging capability, to maintain their log streams. A call to [**ClfsCreateLogFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile) creates a CLFS log stream. The resource manager must use the log stream to record any information that it requires to commit, roll back, or recover transactions. In addition, KTM uses the log stream to record any internal state changes that might be necessary to recover transactions.
 
 2.  Create a transaction manager object.
 

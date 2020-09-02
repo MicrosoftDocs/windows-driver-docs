@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-On Windows 98/Me, the PnP manager issues stop IRPs when Device Manager disables the device. (Windows 2000 and later versions of Windows issue [remove IRPs](removing-a-device.md) in this situation).
+On Windows 98/Me, the PnP manager issues stop IRPs when Device Manager disables the device. (Windows 2000 and later versions of Windows issue [remove IRPs](understanding-when-remove-irps-are-issued.md) in this situation).
 
 The PnP manager sends the stop IRPs in the following sequence:
 

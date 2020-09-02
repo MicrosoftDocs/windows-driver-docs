@@ -22,7 +22,7 @@ All WDM drivers must do the following:
 
 -   [Create device objects](creating-a-device-object.md)
 
--   Support [Plug and Play (PnP)](implementing-plug-and-play.md).
+-   Support [Plug and Play (PnP)](introduction-to-plug-and-play.md).
 
 -   Support [power management](./introduction-to-power-management.md).
 

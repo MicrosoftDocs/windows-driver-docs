@@ -23,7 +23,7 @@ This section contains the following topics:
 
 [When to Complete an IRP](when-to-complete-an-irp.md)
 
-[Completing IRPs in Dispatch Routines](completing-irps-in-dispatch-routines.md)
+[Completing IRPs in Dispatch Routines](how-to-complete-an-irp-in-a-dispatch-routine.md)
 
 [Using IoCompletion Routines](using-iocompletion-routines.md)
 

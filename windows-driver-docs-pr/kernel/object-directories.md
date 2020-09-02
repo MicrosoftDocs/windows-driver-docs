@@ -33,7 +33,7 @@ The following is a list of the top-level object directories that contain objects
 
 -   **\\DosDevices**
 
-    This directory stores the MS-DOS device name of a device as a symbolic link to the corresponding device object. For more information, see [MS-DOS Device Names](ms-dos-device-names.md).
+    This directory stores the MS-DOS device name of a device as a symbolic link to the corresponding device object. For more information, see [MS-DOS Device Names](introduction-to-ms-dos-device-names.md).
 
 The system creates other top-level directories, but they are reserved for system use.
 

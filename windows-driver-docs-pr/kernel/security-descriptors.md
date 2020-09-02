@@ -30,7 +30,7 @@ For a discretionary ACL, each ACE contains three pieces of information:
 
 -   Whether the set of access rights is granted, or denied.
 
-For a driver, the most important security descriptors are those for the driver's device objects. For more information, see [Securing Device Objects](securing-device-objects.md).
+For a driver, the most important security descriptors are those for the driver's device objects. For more information, see [Securing Device Objects](controlling-device-access.md).
 
 For more information about security descriptors in general, see the Windows SDK.
 
