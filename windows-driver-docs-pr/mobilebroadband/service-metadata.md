@@ -34,7 +34,7 @@ The information in the metadata is used to customize aspects of the Windows 8, 
 
 A service metadata package consists of multiple XML documents stored within a .devicemetadata-ms file. Each document specifies various components of the service’s attributes. These XML documents provide Windows Connection Manager with customizations that appear to the user, as well as network configuration information.
 
-For reference information about the XML documents in a service metadata package, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+For reference information about the XML documents in a service metadata package, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 ## Service metadata contents
 

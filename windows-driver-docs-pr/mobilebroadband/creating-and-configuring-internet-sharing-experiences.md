@@ -78,7 +78,7 @@ Users can also connect to a tethering access point if they have paired their dev
 
 Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs) do not support Internet Sharing on their network, or they require an entitlement check prior to setting up Internet Sharing. Windows provides the necessary controls to ensure that Windows devices comply with network policies. 
 
-To do this in Windows 8, Windows 8.1, or Windows 10 prior to version 1803, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](service-metadata-package-schema-reference.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
+To do this in Windows 8, Windows 8.1, or Windows 10 prior to version 1803, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
 
 -   Allow Internet Sharing for all customers. (default value if not specified in the service metadata package)
 

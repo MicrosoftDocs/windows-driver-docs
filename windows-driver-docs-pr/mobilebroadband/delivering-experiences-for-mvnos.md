@@ -24,7 +24,7 @@ For info about the hardware that is required to properly match service metadata 
 
 For info on service metadata, see [Service metadata](service-metadata.md).
 
-For info on the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+For info on the service metadata package schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 ## Matching on GSM networks
 
