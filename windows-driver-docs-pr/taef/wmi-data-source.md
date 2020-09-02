@@ -43,7 +43,7 @@ TEST_METHOD_PROPERTY(L"DataSource", L"WMI:<WQL query>")]
 
 You must have noticed that the DataSource value starts with "WMI:" which lets TAEF know that this is indeed the data source for a test that depends on WMI query result and also distinguishes it from data-driven test. This is good opportunity to mention that currently TAEF does not support a test to be both - a data-driven test as well as a test that depends on the WMI query result.
 
-The next question naturally is how to write WQL queries for what you are looking for? WQL query syntax is very similar to simplified SQL queries. There are some very good examples of queries provided on [/windows/win32/wmisdk/wmi-tasks-for-scripts-and-applications.](/windows/win32/wmisdk/wmi-tasks-for-scripts-and-applications) Here are a few examples:
+The next question naturally is how to write WQL queries for what you are looking for? WQL query syntax is very similar to simplified SQL queries. There are some very good examples of queries provided in [WMI Tasks for Scripts and Applications](/windows/win32/wmisdk/wmi-tasks-for-scripts-and-applications). Here are a few examples:
 
 <span id="SELECT_Description__DesktopInteract__ProcessId_FROM_Win32_Service_WHERE_Name__Themes_"></span><span id="select_description__desktopinteract__processid_from_win32_service_where_name__themes_"></span><span id="SELECT_DESCRIPTION__DESKTOPINTERACT__PROCESSID_FROM_WIN32_SERVICE_WHERE_NAME__THEMES_"></span>SELECT Description, DesktopInteract, ProcessId FROM Win32\_Service WHERE Name='Themes'  
 Run the test on the "Themes" service after finding out it's Description, DesktopInteract and ProcessId properties which you intend to use in your testing.
