@@ -114,7 +114,7 @@
       - name: "Desktop COSA/APN database settings"
         href: desktop-cosa-apn-database-settings.md
       - name: "Testing your desktop COSA/APN database submission"
-        href: testing-your-desktop-planning-your-desktop-cosa-apn-database-submission.md
+        href: testing-your-desktop-cosa-apn-database-submission.md
       - name: "Submitting the desktop COSA/APN database update"
         href: submitting-the-desktop-cosa-apn-database-update.md
   - name: "Service metadata"
