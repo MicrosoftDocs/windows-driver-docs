@@ -101,7 +101,7 @@ exit:
 
 In the preceding code example, the **switch** statement verifies that the request contains an IOCTL that the SPB controller driver recognizes. (For brevity, the body of the **switch** statement is not shown.) Next, the call to the **SpbRequestCaptureIoOtherTransferList** method captures the buffers in the request. If this call succeeds, the request is added to the SPB controller's I/O queue. Otherwise, the request is completed with an error status code.
 
-For a [code example](./handling-ioctl-spb-full-duplex-requests.md#code-example) that shows parameter checking by an *EvtSpbControllerIoOther* function, see [Handling **IOCTL\_SPB\_FULL\_DUPLEX** Requests](./handling-ioctl-spb-full-duplex-requests.md).
+For a code example that shows parameter checking by an *EvtSpbControllerIoOther* function, see [Handling **IOCTL\_SPB\_FULL\_DUPLEX** Requests](./handling-ioctl-spb-full-duplex-requests.md).
 
  
 
