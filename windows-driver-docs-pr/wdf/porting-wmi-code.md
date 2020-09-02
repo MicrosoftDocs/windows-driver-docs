@@ -15,7 +15,7 @@ An [**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md) request re
 
 For KMDF drivers, the framework provides default handling for [**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md). Drivers that do not provide WMI data are not required to include any WMI-related code. Instead, the framework passes the request to the next lower driver on behalf of the driver.
 
-For implementation details, see [Supporting WMI in KMDF Drivers](supporting-wmi-in-kmdf-drivers.md).
+For implementation details, see [Supporting WMI in KMDF Drivers](introduction-to-wmi-for-kmdf-drivers.md).
 
  
 

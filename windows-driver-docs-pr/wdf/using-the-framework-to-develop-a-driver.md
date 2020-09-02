@@ -40,13 +40,13 @@ When you create a WDF driver, you will typically do the following:
 
     Drivers that handle device interrupts must call [**WdfInterruptCreate**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate) to create a framework interrupt object for each interrupt and to register callback functions. These callback functions enable and disable the interrupt and serve as the interrupt service routine (ISR) and deferred procedure call (DPC) for the interrupt.
 
-    For more information about framework interrupt objects, see [Handling Hardware Interrupts](handling-hardware-interrupts.md).
+    For more information about framework interrupt objects, see [Handling Hardware Interrupts](creating-an-interrupt-object.md).
 
 -   KMDF drivers can use the framework's *DMA enabler objects* and *DMA transaction objects* to handle a device's direct memory access (DMA) operations.
 
     If your KMDF driver's device supports DMA operations, the driver should call [**WdfDmaEnablerCreate**](/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate) to create a DMA enabler object and [**WdfDmaTransactionCreate**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate) to create one or more DMA transaction objects. The DMA transaction object defines an [*EvtProgramDma*](/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma) callback function that programs device hardware to perform a DMA operation.
 
-    For more information about supporting DMA operations, see [Handling DMA Operations in Framework-based Drivers](handling-dma-operations-in-kmdf-drivers.md).
+    For more information about supporting DMA operations, see [Handling DMA Operations in Framework-based Drivers](introduction-to-dma-in-windows-driver-framework.md).
 
 -   Use the framework's *I/O target objects* to send I/O requests to other drivers.
 
@@ -58,7 +58,7 @@ When you create a WDF driver, you will typically do the following:
 
     Most KMDF drivers should support WMI and should call [**WdfWmiInstanceCreate**](/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancecreate) to register callback functions that send or receive WMI data.
 
-    For more information about WMI, see [Supporting WMI in Framework-based Drivers](supporting-wmi-in-kmdf-drivers.md).
+    For more information about WMI, see [Supporting WMI in Framework-based Drivers](introduction-to-wmi-for-kmdf-drivers.md).
 
 -   Use the framework's synchronization capabilities.
 

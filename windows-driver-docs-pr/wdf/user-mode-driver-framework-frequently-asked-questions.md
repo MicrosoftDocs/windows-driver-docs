@@ -85,7 +85,7 @@ A driver also includes additional interfaces or callbacks that are invoked in re
 ## How do I debug a UMDF driver?
 
 
-You can debug a UMDF driver by using user-mode debuggers or kernel-mode debuggers. For more info, see [Debugging WDF Drivers](debugging-a-wdf-driver.md).
+You can debug a UMDF driver by using user-mode debuggers or kernel-mode debuggers. For more info, see [Debugging WDF Drivers](accessing-umdf-metadata-in-wer-reports.md).
 
 Starting in UMDF version 2.0, you can use many of the commands in the *Wdfkd.dll* debugger extension library to debug your UMDF driver. For a list of commands, see [Debugger Extensions](debugger-extensions-for-kmdf-drivers.md). In addition, UMDF stores the UMDF trace log (or UMDF *IFR*) in kernel non-paged memory. For info about the IFR, see [Using the Framework's Event Logger](using-the-framework-s-event-logger.md).
 
