@@ -23,12 +23,7 @@ When you create a new action interface, you should design your object model with
 
 4.  **Robust**. Action interfaces are meant for reusability, so try to prepare for more than just the simple use cases.
 
-5.  **Diagnosable**. Make sure you include diagnosability in your design. Try to think about how people can debug problems when they use your interface. It helps to instrument your code with [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing).
+5.  **Diagnosable**. Make sure you include diagnosability in your design. Try to think about how people can debug problems when they use your interface. It helps to instrument your code with [WPP Software Tracing](../devtest/wpp-software-tracing.md).
 
  
-
- 
-
-
-
 
