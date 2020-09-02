@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # WindowsInfo XML schema overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 
 A metadata package contains one WindowsInfo.xml document. This contains information that the operating system uses to define display actions for the service specified within the metadata package.

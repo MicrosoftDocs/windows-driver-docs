@@ -72,7 +72,7 @@ VOID CsqCompleteCanceledIrp(PIO_CSQ Csq, PIRP Irp) {
 }
 ```
 
-Drivers can use any of the operating system's synchronization primitives to implement their [*CsqAcquireLock*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_acquire_lock) and [*CsqReleaseLock*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_release_lock) routines. Available synchronization primitives include [spin locks](./introduction-to-spin-locks.md) and [mutex objects](mutex-objects.md).
+Drivers can use any of the operating system's synchronization primitives to implement their [*CsqAcquireLock*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_acquire_lock) and [*CsqReleaseLock*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_release_lock) routines. Available synchronization primitives include [spin locks](./introduction-to-spin-locks.md) and [mutex objects](introduction-to-mutex-objects.md).
 
 Here is an example of how a driver can implement locking using spin locks.
 
@@ -95,7 +95,7 @@ VOID CsqReleaseLock(PIO_CSQ IoCsq, KIRQL Irql)
 
 The system passes a pointer to an IRQL variable to *CsqAcquireLock* and *CsqReleaseLock*. If the driver uses a spin lock to implement locking for the queue, the driver can use this variable to store the current IRQL when the queue is locked.
 
-Drivers are not required to use spin locks. For example, the driver could use a mutex to lock the queue. For a description of the synchronization techniques that are available to drivers, see [Synchronization Techniques](synchronization-techniques.md).
+Drivers are not required to use spin locks. For example, the driver could use a mutex to lock the queue. For a description of the synchronization techniques that are available to drivers, see [Synchronization Techniques](introduction-to-kernel-dispatcher-objects.md).
 
 ### <a href="" id="ddk-using-the-cancel-safe-irp-queue-kg"></a>Using the Cancel-Safe IRP Queue
 

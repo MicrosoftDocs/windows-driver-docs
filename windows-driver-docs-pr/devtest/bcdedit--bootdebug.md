@@ -74,4 +74,4 @@ bcdedit /bootdebug on
 bcdedit /debug on 
 ```
 
-For general information about Windows debugging tools, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+For general information about Windows debugging tools, see [Windows Debugging](../debugger/index.md).

@@ -73,7 +73,7 @@ The driver should manage its acquisitions and releases of the system cancel spin
 
 If a device driver maintains state information about cancelable IRPs that various driver routines share with its ISR, these other routines must synchronize access to the shared state with the ISR. Only a driver-supplied *SynchCritSection* routine can access state information that is shared with the ISR in a multiprocessor-safe way.
 
-For more information, see [Synchronization Techniques](synchronization-techniques.md).
+For more information, see [Synchronization Techniques](introduction-to-kernel-dispatcher-objects.md).
 
  
 

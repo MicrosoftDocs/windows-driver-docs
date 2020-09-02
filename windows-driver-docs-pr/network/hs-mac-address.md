@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # HS\_MAC\_ADDRESS structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_MAC\_ADDRESS** structure contains the host Media Access Control (MAC) address.

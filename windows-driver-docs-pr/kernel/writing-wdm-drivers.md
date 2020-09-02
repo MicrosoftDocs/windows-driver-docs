@@ -19,7 +19,7 @@ This section is divided into three parts:
 
 -   [Windows Driver Model](windows-driver-model.md) describes the Windows Driver Model (WDM), including types of WDM drivers, device configuration, and WDM versioning.
 
--   [Device Objects and Device Stacks](device-objects-and-device-stacks.md) describes device objects and device stacks. The section includes information about physical device objects (PDOs), functional device objects (FDOs), and filter device objects (filter DOs). Drivers are often built from a set of device objects that work together. This set of device objects is called a *stack*. Stacks can help you understand the flow of information to and from a driver and how different parts of the driver communicate internally.
+-   [Device Objects and Device Stacks](introduction-to-device-objects.md) describes device objects and device stacks. The section includes information about physical device objects (PDOs), functional device objects (FDOs), and filter device objects (filter DOs). Drivers are often built from a set of device objects that work together. This set of device objects is called a *stack*. Stacks can help you understand the flow of information to and from a driver and how different parts of the driver communicate internally.
 
 -   [Kernel-Mode Driver Components](kernel-mode-driver-components.md) describes which routines you must implement to have a functional driver and which routines are optional.
 

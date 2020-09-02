@@ -17,7 +17,7 @@ The Windows Object Manager controls *objects* that are part of the kernel-mode o
 
 Typical kernel-mode objects include the following objects:
 
--   Device objects (See [Device Objects and Device Stacks](device-objects-and-device-stacks.md).)
+-   Device objects (See [Device Objects and Device Stacks](introduction-to-device-objects.md).)
 
 -   File objects.
 

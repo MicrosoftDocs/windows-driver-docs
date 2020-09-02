@@ -24,7 +24,7 @@ For instance, if you debug UMDF drivers with a user-mode debugger, enable the lo
 
 The **Host Processes** box shows all host processes and their Process IDs, as well as whether Application Verifier is active for each process. You can expand or collapse the list of drivers hosted in each process. If you have specified a user mode debugger on the [My Preferences](my-preferences-tab.md) page, you can also highlight a driver or process and then click the **Attach user-mode debugger to this process** button.
 
-Finally, the **Global User Mode Verifier Settings** box contains debug options that affect all UMDF drivers on the system. For more info on these settings, see [Using UMDF Verifier](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-umdf-verifier).
+Finally, the **Global User Mode Verifier Settings** box contains debug options that affect all UMDF drivers on the system. For more info on these settings, see [Using UMDF Verifier](../wdf/using-umdf-verifier.md).
 
 When you make changes to the UMDF Verifier settings, these changes affect subsequently loaded devices. If your device is already running, you must disable and re-enable it. WDF Verifier disables and re-enables the device for you if you change the UMDF trace level or select the **Send Log Output to Kernel Debugger** option. This option does not work if you select **Take no action...** in the **When the machine must be rebooted...** dropdown list on the [My Preferences](my-preferences-tab.md) page.
 
@@ -37,10 +37,4 @@ When you make changes to the UMDF Verifier settings, these changes affect subseq
 5.  If your driver is already running, change the tracing level or select **Send Log Output to Kernel Debugger** and click **Apply**. Doing so stops and restarts all UMDF processes unless you have turned off the auto-restart feature (you can restore it on the [My Preferences](my-preferences-tab.md) page).
 
  
-
- 
-
-
-
-
 

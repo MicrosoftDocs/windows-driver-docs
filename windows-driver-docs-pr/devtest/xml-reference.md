@@ -15,12 +15,6 @@ ms.localizationpriority: medium
 
 You can create your own command-line tool to create device metadata packages. For more information about the XML schema and elements, see:
 
--   [Device Metadata Package Schema Reference for Windows 8](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/dn465877(v=vs.85))
+-   [Device Metadata Package Schema Reference for Windows 8](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85))
 
--  [Overview of Device Metadata Packages](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-metadata-packages)
- 
-
-
-
-
-
+-  [Overview of Device Metadata Packages](../install/overview-of-device-metadata-packages.md)

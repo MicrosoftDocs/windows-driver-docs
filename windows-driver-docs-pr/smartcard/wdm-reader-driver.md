@@ -15,45 +15,45 @@ ms.localizationpriority: medium
 
 The following routines are required by a WDM reader driver.
 
-### [DriverEntry](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize)
+### [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize)
 
 Initializes the driver object and the dispatch table.
 
-### [AddDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)
+### [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)
 
-Creates a device object for the smart card reader. In addition, [AddDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) can call any of the following driver library routines:
+Creates a device object for the smart card reader. In addition, [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) can call any of the following driver library routines:
 
-- [SmartcardInitialize (WDM)](https://docs.microsoft.com/previous-versions/ff548944(v=vs.85)) to complete driver initialization. Calling this routine in [AddDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) is obligatory.
-- [SmartcardLogError (WDM)](https://docs.microsoft.com/previous-versions/ff548947(v=vs.85)) to log an error. Drivers must call this routine in [AddDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) if [SmartcardInitialize (WDM)](https://docs.microsoft.com/previous-versions/ff548944(v=vs.85)) fails.
-- [SmartcardCreateLink (WDM)](https://docs.microsoft.com/previous-versions/ff548935(v=vs.85)) to create a symbolic link for the reader device in the registry.
+- [SmartcardInitialize (WDM)](/previous-versions/ff548944(v=vs.85)) to complete driver initialization. Calling this routine in [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) is obligatory.
+- [SmartcardLogError (WDM)](/previous-versions/ff548947(v=vs.85)) to log an error. Drivers must call this routine in [AddDevice](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) if [SmartcardInitialize (WDM)](/previous-versions/ff548944(v=vs.85)) fails.
+- [SmartcardCreateLink (WDM)](/previous-versions/ff548935(v=vs.85)) to create a symbolic link for the reader device in the registry.
 
-### [Unload](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload)
+### [Unload](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload)
 
 Removes the driver from the system.
 
-### [DispatchCreate](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+### [DispatchCreate](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
 -and-
 
-### [DispatchClose](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+### [DispatchClose](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-Supports [IRP_MJ_CREATE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-create) and [IRP_MJ_CLOSE&lt](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close), respectively. To establish a connection to the reader, the resource manager sends **IRP_MJ_CREATE** to the reader driver. To sever the connection, the resource manager sends **IRP_MJ_CLOSE**.
+Supports [IRP_MJ_CREATE](../kernel/irp-mj-create.md) and [IRP_MJ_CLOSE&lt](../kernel/irp-mj-close.md), respectively. To establish a connection to the reader, the resource manager sends **IRP_MJ_CREATE** to the reader driver. To sever the connection, the resource manager sends **IRP_MJ_CLOSE**.
 
-### [DispatchCleanup](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+### [DispatchCleanup](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-Supports [IRP_MJ_CLEANUP](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-cleanup), which the resource manager sends to the reader driver to cancel pending I/O requests.
+Supports [IRP_MJ_CLEANUP](../kernel/irp-mj-cleanup.md), which the resource manager sends to the reader driver to cancel pending I/O requests.
 
-### [DispatchPnP](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+### [DispatchPnP](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-Supports [IRP_MJ_PNP](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp)
+Supports [IRP_MJ_PNP](../kernel/irp-mj-pnp.md)
 
-### [DispatchPower](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+### [DispatchPower](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-Supports [IRP_MJ_POWER](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power).
+Supports [IRP_MJ_POWER](../kernel/irp-mj-power.md).
 
-### [DispatchDeviceControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+### [DispatchDeviceControl](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-Supports [IRP_MJ_DEVICE_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control) and is the main entry point for smart card requests. Upon receiving IRP_MJ_DEVICE_CONTROL, [DispatchDeviceControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) must immediately call [SmartcardDeviceControl (WDM)](https://docs.microsoft.com/previous-versions/ff548939(v=vs.85)), which is the smart card driver library routine that handles device-control requests. The following code example shows how to call this library routine from a WDM driver:
+Supports [IRP_MJ_DEVICE_CONTROL](../kernel/irp-mj-device-control.md) and is the main entry point for smart card requests. Upon receiving IRP_MJ_DEVICE_CONTROL, [DispatchDeviceControl](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) must immediately call [SmartcardDeviceControl (WDM)](/previous-versions/ff548939(v=vs.85)), which is the smart card driver library routine that handles device-control requests. The following code example shows how to call this library routine from a WDM driver:
 
 ```cpp
 NTSTATUS
