@@ -25,7 +25,7 @@ The WHEA event is only retrieved from 20H1 builds, and will soo be backported to
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|200|
 |**Passing criteria**|<= 5%|
-|**Measure ID**|20319726|
+|**Measure ID**|20319726 or 23260714|
 
 ## Calculation
 
