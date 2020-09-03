@@ -73,7 +73,7 @@ To create the BulkMetadataSubmission.xml, see [Creating BulkMetadataSubmission.x
 
 To develop the device metadata package, \*.devicemetadata-ms, see [Device Metadata Package Schema Reference for Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=226753).
 
-To develop the device manifest package, \*.devicemanifest-ms, see [Submit a PC device manifest package](./index.yml).
+To develop the device manifest package, \*.devicemanifest-ms, see [Submit a PC device manifest package](submit-a-pc-device-manifest-package.md).
 
 You can use the Cabarc tool to create these CAB packages. To learn more about this tool, see [Cabarc Overview](https://go.microsoft.com/fwlink/p/?LinkId=248843).
 

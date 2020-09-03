@@ -534,4 +534,4 @@ The following XML document uses the PcMetadataSubmission XML schema to specify t
 
 ## Creating LocaleInfo.xml
 
-For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](./index.yml).
+For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](create-the-localeinfoxml-submission-file.md).
