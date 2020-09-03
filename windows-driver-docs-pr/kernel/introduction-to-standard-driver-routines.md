@@ -94,7 +94,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="even">
 <td><p>Deferred Procedure Calls</p></td>
 <td><p>Completes the processing of a device interrupt after an ISR saves the device state.</p></td>
-<td><p><a href="dpc-objects-and-dpcs.md" data-raw-source="[DPC Objects and DPCs](introduction-to-dpc-objects.md)">DPC Objects and DPCs</a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-dpc-objects">DPC Objects and DPCs</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><em>SynchCritSection</em></p></td>
@@ -119,7 +119,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="odd">
 <td><p><em>CustomTimerDpc</em>, <em>IoTimer</em></p></td>
 <td><p>Timing and synchronizing events.</p></td>
-<td><p><a href="synchronization-techniques.md" data-raw-source="[Synchronization Techniques](introduction-to-kernel-dispatcher-objects.md)">Synchronization Techniques</a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects">Synchronization Techniques</a></p></td>
 </tr>
 </tbody>
 </table>
