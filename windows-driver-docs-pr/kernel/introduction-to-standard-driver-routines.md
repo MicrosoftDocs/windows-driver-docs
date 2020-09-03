@@ -128,7 +128,7 @@ Following are two tables. The first table lists required standard routines. The 
 
 The current IRP and target device object are input parameters to many standard routines. Every driver processes each IRP in stages through its set of standard routines.
 
-By convention, the system-supplied drivers prepend an identifying, driver-specific or device-specific prefix to the name of every standard routine except **DriverEntry**. As an example, this documentation uses "DD", as shown in the [driver object illustration](introduction-to-driver-objects.md#driver-object-illustration). Following this convention makes it easier to debug and maintain drivers.
+By convention, the system-supplied drivers prepend an identifying, driver-specific or device-specific prefix to the name of every standard routine except **DriverEntry**. As an example, this documentation uses "DD", as shown in the illustration in [Introduction to Driver Objects](introduction-to-driver-objects.md). Following this convention makes it easier to debug and maintain drivers.
 
  
 
