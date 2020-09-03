@@ -96,38 +96,46 @@ This section provides an example of installing a firmware update on the sample [
 
 1. In a text editor, open your firmware update INF file. In this example, we'll use the *CfuVirtualHidDeviceFwUpdate.inf* file outlined in the [CFU inbox HIDCFU driver INF sample](cfu-inbox-hidcfu-driver-inf-sample.md).
 
-1. In your firmware update INF file, move to the `[Standard.NTamd64]` section and verify that the following text for the **HID\VID_045E&UP:FA00_U:00F5** device appears:
+1. In your firmware update INF file, move to the `[Standard.NTamd64]` section and verify the following information exists for the **HID\VID_045E&UP:FA00_U:00F5** device:
 
-  ```inf
-  [Standard.NTamd64]
-  %CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5 ; HardwareID for VirtualHidDevice MCU
+    ```inf
+    [Standard.NTamd64]
+    %CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5 ; HardwareID for VirtualHidDevice MCU
 
-  [CfuVirtualHidDeviceFwUpdate.NT]
-  Include            = HidCfu.inf
-  Needs              = HidCfu.NT
-  CopyFiles          = CfuVirtualHidDeviceFwUpdate.CopyFiles
+    [CfuVirtualHidDeviceFwUpdate.NT]
+    Include            = HidCfu.inf
+    Needs              = HidCfu.NT
+    CopyFiles          = CfuVirtualHidDeviceFwUpdate.CopyFiles
 
-  [CfuVirtualHidDeviceFwUpdate.NT.Wdf]
-  Include            = HidCfu.inf
-  Needs              = HidCfu.NT.Wdf
-  ```
-
-
-
+    [CfuVirtualHidDeviceFwUpdate.NT.Wdf]
+    Include            = HidCfu.inf
+    Needs              = HidCfu.NT.Wdf
+    ```
 
 1. At an administrative command prompt, run the following command:
 
+    `pnputil /add-driver CfuVirtualHidDeviceFwUpdate.inf /install`
 
+    This command will return the PnP Utility output. For example:
 
+    ![pnp utility output](images/install-cfu-virtual-device-firmware-update-2.png)
 
-Step 2
+1. In **Device Manager**, navigate to the **CfuVirtualHid Device** node, then expand the node to verify that the **CfuVirtualHidDevice Firmware Update** has been installed, as shown here:
 
-![step 2](images/install-cfu-virtual-device-firmware-update-2.png)
+    ![cfu virtual hid device firmware update installed](images/install-cfu-virtual-device-firmware-update-3.png)
 
-Step 3
+1. Select the the **CfuVirtualHidDevice Firmware Update** node, then open the **CfuVirtualHidDevice Firmware Update Properties** window, as shown here:
 
-![step 3](images/install-cfu-virtual-device-firmware-update-3.png)
+    ![cfu virtual hid device firmware update properties window](images/install-cfu-virtual-device-firmware-update-4.png)
 
-Step 4
+1. In the the **CfuVirtualHidDevice Firmware Update Properties** window, select the **Details** tab, then select **Hardware Ids** in the **Property** drop-down list, as shown here:
 
-![step 4](images/install-cfu-virtual-device-firmware-update-4.png)
+    ![hardware ids in property drop down list](images/install-cfu-virtual-device-firmware-update-5.png)
+
+1. Verify that the **HID\VID_045E&UP:FA00_U:00F5** device appears in the **Hardware Ids** **Value** of the **CfuVirtualHidDevice Firmware Update**.
+
+    ![hardware ids in value list](images/install-cfu-virtual-device-firmware-update-6.png)
+
+1. Use the **TraceView** application to view log message information for the CFU virtual HID device installation. For example:
+
+    ![traceview log message information](images/install-cfu-virtual-device-firmware-update-7.png)
