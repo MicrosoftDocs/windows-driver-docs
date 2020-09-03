@@ -1,6 +1,6 @@
 ---
-title: Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary
-description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with integrated GPU that experienced a bluescreen caused by a crash in the graphics driver binary 
+title: Myriad of machines with integrated GPU that had a blue screen caused by a crash in the graphics driver binary (Ecosystem)
+description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with integrated GPU that experienced a bluescreen caused by a crash in the graphics driver binary (Ecosystem)
 ms.topic: article
 ms.date: 10/28/2019
 ms.localizationpriority: medium
