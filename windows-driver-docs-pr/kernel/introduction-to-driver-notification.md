@@ -52,7 +52,7 @@ The following table identifies the different notification methods and whether th
 
 ## Synchronous Driver Notification
 
-With [Synchronous Driver Notification](synchronous-driver-notification.md), the operating system synchronously notifies device drivers that a new processor has been added to the hardware partition. This is the first notification that a device driver receives about a change to the number of processors.
+With [Synchronous Driver Notification](registering-for-synchronous-driver-notification.md), the operating system synchronously notifies device drivers that a new processor has been added to the hardware partition. This is the first notification that a device driver receives about a change to the number of processors.
 
 When a new processor is added to the hardware partition, the operating system sends this notification to device drivers after the operating system has started the new processor, but before the operating system begins scheduling threads on the processor. When a device driver receives this notification, it can allocate any per processor data structures and assign any other per processor resources to the new processor. This prepares the device driver to run its dispatch routines, interrupt service routines (ISRs), deferred procedure calls (DPCs), and any other driver threads on the new processor.
 
@@ -62,7 +62,7 @@ This notification method is only applicable to processors. There is no synchrono
 
 ## Asynchronous Driver Notification
 
-With [Asynchronous Driver Notification](asynchronous-driver-notification.md), the operating system asynchronously notifies device drivers that a new processor or memory module has been added to the hardware partition. Starting with Windows Server 2008, processors and memory modules are considered Plug and Play (PnP) devices. Therefore, the operating system uses the PnP notification mechanism for asynchronous driver notification.
+With [Asynchronous Driver Notification](registering-for-asynchronous-driver-notification.md), the operating system asynchronously notifies device drivers that a new processor or memory module has been added to the hardware partition. Starting with Windows Server 2008, processors and memory modules are considered Plug and Play (PnP) devices. Therefore, the operating system uses the PnP notification mechanism for asynchronous driver notification.
 
 When a new processor or memory module is added to the hardware partition, the operating system sends this notification to device drivers after the operating system has started the new processor or memory device. In the case of a new processor, the operating system does not send this notification to device drivers until after it has started scheduling threads on the new processor.
 

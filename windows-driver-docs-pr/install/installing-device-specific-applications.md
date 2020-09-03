@@ -27,7 +27,7 @@ If your distribution medium includes device-specific applications, you can use t
     1.  Start a *device installation application* on the distribution medium to install the device-specific applications.
     2.  Prompt the user to download a newer version of the device installation application from the Internet.
 
-    Independent hardware vendors (IHVs) can use various methods to provide [hardware-first installation](hardware-first-installation.md) solutions for installing device-specific applications. For more information about these methods, see [Hardware-First Installation of Device-Specific Applications](hardware-first-installation-of-device-specific-applications.md).
+    Independent hardware vendors (IHVs) can use various methods to provide [hardware-first installation](hardware-first-installation.md) solutions for installing device-specific applications. For more information about these methods, see [Hardware-First Installation of Device-Specific Applications](device-installation-application-not-included-in-the-driver-package.md).
 
     For more information about co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 

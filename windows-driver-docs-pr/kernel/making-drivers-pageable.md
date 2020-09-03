@@ -27,7 +27,7 @@ This section includes the following topics:
 
 [When Should Code and Data Be Pageable?](when-should-code-and-data-be-pageable-.md)
 
-[Making Driver Code or Data Pageable](making-driver-code-or-data-pageable.md)
+[Making Driver Code or Data Pageable](detecting-code-that-can-be-pageable.md)
 
  
 

@@ -20,7 +20,7 @@ While the videos demonstrate debugging a UMDF version 1 driver on older versions
 
  
 
-For more information about debugging UMDF, see the topics listed in [Debugging WDF Drivers](debugging-a-wdf-driver.md).
+For more information about debugging UMDF, see the topics listed in [Debugging WDF Drivers](accessing-umdf-metadata-in-wer-reports.md).
 
 ## Prerequisites
 

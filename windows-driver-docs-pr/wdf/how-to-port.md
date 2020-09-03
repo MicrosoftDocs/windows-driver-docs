@@ -22,7 +22,7 @@ At this point, you can perform the remaining steps incrementally and in any orde
 -   Add support for [DMA](porting-dma.md), if the device performs DMA.<sup>†</sup>
 -   [Port WMI code](porting-wmi-code.md).<sup>†</sup>
 -   Port code to [handle requests that the framework does not handle on behalf of KMDF drivers](requests-that-kmdf-does-not-support.md).<sup>†</sup>
--   [Revise the INF](installation-procedure.md) that installs the driver.
+-   [Revise the INF](building--installing--and-testing-a-wdf-driver.md) that installs the driver.
 
 † This functionality is only available to Kernel-Mode Driver Framework (KMDF) drivers.
 

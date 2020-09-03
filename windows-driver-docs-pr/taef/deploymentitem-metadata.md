@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 **DeploymentItem** metadata identifies file and folder dependencies for the files and folders that are used by the tests during the tests' execution so that Taef could be able to identify these and copy them appropriately (for example, in a [cross machine execution scenario](cross-machine-execution.md), Taef will deploy the files identified by **DeploymentItem** property to the specified test machine).
 
-Taef DeploymentItem implementation is very similar to the [similar functionality of VSTS](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.deploymentitemattribute?redirectedfrom=MSDN&view=mstest-net-1.2.0).
+Taef DeploymentItem implementation is very similar to the [similar functionality of VSTS](/dotnet/api/microsoft.visualstudio.testtools.unittesting.deploymentitemattribute?view=mstest-net-1.2.0).
 
 DeploymentItem metadata can be applied on either assembly, class, or test level. The items specified by DeploymentItem metadata will be deployed by the time correspondent (assembly, test class or test) setup runs. If DeploymentItem metadata specifies a dependency (for example, a file) and that dependency already exists at the destination, TAEF does a CRC comparison and only copies the file if it has changed. If DeploymentItem metadata specifies a dependency and the dependency cannot be found, an error is logged that will fail the test (or all test class or assembly tests, accordingly). TAEF will only deploy files once per assembly, class, or test - that is, the deployment does not happen at every assembly, class, or test expansion if these are data driven.
 
@@ -100,12 +100,3 @@ For script tests, the property format is the same as for native tests:
     <TestMethodProperty name="DeploymentItem" value="C:\\Dependencies\\>Dependencies"/>
 </method>
 ```
-
-
-
-
-
-
-
-
-

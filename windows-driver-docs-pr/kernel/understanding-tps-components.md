@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Understanding TPS Components
 
 
-Any [*transaction processing system*](transaction-processing-terms.md#ktm-term-transaction-processing-system) (TPS) that uses the Kernel Transaction Manager (KTM) and the [Common Log File System](using-common-log-file-system.md) (CLFS) should contain the following important components:
+Any [*transaction processing system*](transaction-processing-terms.md#ktm-term-transaction-processing-system) (TPS) that uses the Kernel Transaction Manager (KTM) and the [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS) should contain the following important components:
 
 -   A [*transaction manager*](transaction-processing-terms.md#ktm-term-transaction-manager) (KTM)
 

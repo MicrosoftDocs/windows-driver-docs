@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver's [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine supports [Plug and Play](implementing-plug-and-play.md) by handling IRPs for the [**IRP\_MJ\_PNP**](./irp-mj-pnp.md) I/O function code. Associated with the **IRP\_MJ\_PNP** function code are several minor I/O function codes (see [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md)), some of which all drivers must handle and some of which can be optionally handled. The PnP manager uses these minor function codes to direct drivers to start, stop, and remove devices and to query drivers about their devices.
+A driver's [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine supports [Plug and Play](introduction-to-plug-and-play.md) by handling IRPs for the [**IRP\_MJ\_PNP**](./irp-mj-pnp.md) I/O function code. Associated with the **IRP\_MJ\_PNP** function code are several minor I/O function codes (see [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md)), some of which all drivers must handle and some of which can be optionally handled. The PnP manager uses these minor function codes to direct drivers to start, stop, and remove devices and to query drivers about their devices.
 
 All drivers for a device must have the opportunity to handle PnP IRPs for the device, except in a few cases where a function or filter driver is allowed to fail the IRP.
 

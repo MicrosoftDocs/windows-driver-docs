@@ -61,7 +61,7 @@ As the previous figure shows, a device power IRP is sent, forwarded, and complet
 
 5.  The I/O manager calls *IoCompletion* routines that were set by drivers as they passed the IRP down the stack. After all the *IoCompletion* routines have been called, the callback routine is run.
 
-For more information about device power IRPs, see [Managing Power for Individual Devices](managing-power-for-individual-devices.md) and [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md). For details on the power sequence IRP, see [**IRP\_MN\_POWER\_SEQUENCE**](./irp-mn-power-sequence.md).
+For more information about device power IRPs, see [Managing Power for Individual Devices](device-power-states.md) and [Supporting Devices that Have Wake-Up Capabilities](supporting-devices-that-have-wake-up-capabilities.md). For details on the power sequence IRP, see [**IRP\_MN\_POWER\_SEQUENCE**](./irp-mn-power-sequence.md).
 
  
 

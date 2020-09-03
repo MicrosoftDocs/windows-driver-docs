@@ -27,7 +27,7 @@ Typically, an ISR performs the following general steps:
 
 -   If the device that caused the interrupt is not one supported by the ISR, the ISR immediately returns **FALSE**.
 
--   Otherwise, the ISR clears the interrupt if necessary, saving whatever device context is necessary, and queues a DPC to complete the I/O operation at a lower IRQL. See [DPC Objects and DPCs](dpc-objects-and-dpcs.md) for more information. The ISR must then return **TRUE**.
+-   Otherwise, the ISR clears the interrupt if necessary, saving whatever device context is necessary, and queues a DPC to complete the I/O operation at a lower IRQL. See [DPC Objects and DPCs](introduction-to-dpc-objects.md) for more information. The ISR must then return **TRUE**.
 
 Specifically, in drivers that do not overlap device I/O operations, the ISR should do the following:
 

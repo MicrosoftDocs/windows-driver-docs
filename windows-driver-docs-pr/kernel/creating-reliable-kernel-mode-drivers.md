@@ -17,7 +17,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
 -   Secure device objects properly.
 
-    User access to a system's drivers and devices is controlled by security descriptors that the system assigns to device objects. Most often, the system sets device security parameters when a device is installed. For more information, see [Creating Secure Device Installations](../install/creating-secure-device-installations.md). Sometimes it is appropriate for a driver to play a part in controlling access to its device. For more information, see [Securing Device Objects](securing-device-objects.md).
+    User access to a system's drivers and devices is controlled by security descriptors that the system assigns to device objects. Most often, the system sets device security parameters when a device is installed. For more information, see [Creating Secure Device Installations](../install/creating-secure-device-installations.md). Sometimes it is appropriate for a driver to play a part in controlling access to its device. For more information, see [Securing Device Objects](controlling-device-access.md).
 
 -   Validate device objects properly.
 
@@ -53,7 +53,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
     [DispatchReadWrite Using Buffered I/O](dispatchreadwrite-using-buffered-i-o.md)
 
-    [Errors in Buffered I/O](errors-in-buffered-i-o.md)
+    [Errors in Buffered I/O](failure-to-check-the-size-of-buffers.md)
 
     [DispatchReadWrite Using Direct I/O](dispatchreadwrite-using-direct-i-o.md)
 

@@ -49,7 +49,7 @@ After the framework-based driver creates the device object, it should:
 -   [Create device interfaces](using-device-interfaces.md).
 -   Set [device idle policy](supporting-idle-power-down.md) and [wake settings](supporting-system-wake-up.md), if the device object owns power policy.
 -   [Create an interrupt object](creating-an-interrupt-object.md), if the hardware supports interrupts.
--   [Initialize WMI](supporting-wmi-in-kmdf-drivers.md).<sup>†</sup>
+-   [Initialize WMI](introduction-to-wmi-for-kmdf-drivers.md).<sup>†</sup>
 
 † This functionality is only available to KMDF drivers.
 

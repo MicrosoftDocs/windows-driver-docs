@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using Log Streams with KTM
 
 
-KTM-based transaction processing systems (TPSs) should log transaction activity by using the [Common Log File System](using-common-log-file-system.md) (CLFS). KTM creates a log stream for each transaction manager object. Each resource manager should create its own log stream.
+KTM-based transaction processing systems (TPSs) should log transaction activity by using the [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS). KTM creates a log stream for each transaction manager object. Each resource manager should create its own log stream.
 
 ### Creating Log Streams for Transaction Manager Objects
 

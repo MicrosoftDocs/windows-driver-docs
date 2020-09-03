@@ -30,7 +30,7 @@ If any of the following statements are true for a device driver, you must update
 
 -   The device driver uses a load balancing algorithm to distribute the processing of I/O requests across multiple processors. In this situation, the device driver might stop functioning correctly if you add a processor to the hardware partition, and the device driver will be unable to fully use any new processors.
 
-If a device driver is affected by changes to the number of active processors, it must register itself with the operating system to be notified when you add processors to the hardware partition. When the device driver is notified, it can respond as required for safe and optimal operation. For more information about how a device driver can register itself with the operating system, see [Driver Notification](driver-notification.md).
+If a device driver is affected by changes to the number of active processors, it must register itself with the operating system to be notified when you add processors to the hardware partition. When the device driver is notified, it can respond as required for safe and optimal operation. For more information about how a device driver can register itself with the operating system, see [Driver Notification](introduction-to-driver-notification.md).
 
 To retrieve the current number of active processors in the hardware partition, device drivers should call the [**KeQueryActiveProcessorCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryactiveprocessorcount) function. To retrieve the current processor affinity value, device drivers can call either the [**KeQueryActiveProcessors**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryactiveprocessors) function or the **KeQueryActiveProcessorCount** function.
 

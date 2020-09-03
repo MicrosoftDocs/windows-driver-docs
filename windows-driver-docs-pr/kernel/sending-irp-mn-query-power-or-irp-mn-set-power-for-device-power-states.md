@@ -29,7 +29,7 @@ The driver should send an [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) reque
 
 -   The driver receives a system set-power IRP.
 
-A driver must not allocate its own power IRP; the power manager provides the [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) routine for this purpose. As [Rules for Handling Power IRPs](rules-for-handling-power-irps.md) explains, **PoRequestPowerIrp** allocates and sends the IRP, and in combination with **IoCallDriver** (in Windows 7 and Windows Vista), or **PoCallDriver** (in Windows Server 2003, Windows XP, and Windows 2000), ensures that all power requests are properly synchronized. Callers of **PoRequestPowerIrp** must be running at IRQL &lt;= DISPATCH\_LEVEL.
+A driver must not allocate its own power IRP; the power manager provides the [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) routine for this purpose. As [Rules for Handling Power IRPs](calling-iocalldriver-versus-calling-pocalldriver.md) explains, **PoRequestPowerIrp** allocates and sends the IRP, and in combination with **IoCallDriver** (in Windows 7 and Windows Vista), or **PoCallDriver** (in Windows Server 2003, Windows XP, and Windows 2000), ensures that all power requests are properly synchronized. Callers of **PoRequestPowerIrp** must be running at IRQL &lt;= DISPATCH\_LEVEL.
 
 The following is the prototype for this routine:
 

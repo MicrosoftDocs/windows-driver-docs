@@ -7,7 +7,7 @@ keywords:
 - configuration space WDK buses
 - IRP_MN_READ_CONFIG
 - IRP_MN_WRITE_CONFIG
-ms.date: 04/20/2017
+ms.date: 08/31/2020
 ms.localizationpriority: medium
 ---
 
@@ -19,6 +19,9 @@ Some operations on a peripheral component interconnect (PCI) device are reserved
 -   The [**BUS\_INTERFACE\_STANDARD**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) bus interface
 
 -   The configuration I/O request packets (IRPs), [**IRP\_MN\_READ\_CONFIG**](../kernel/irp-mn-read-config.md) and [**IRP\_MN\_WRITE\_CONFIG**](../kernel/irp-mn-write-config.md)
+
+>[!NOTE]
+>Starting with Windows 10, 2004, if a device has a Secure Devices (SDEV) ACPI table and Virtualization-based security enabled, restrictions are placed on unsupported methods for accessing PCI device configuration space. If a driver or process attempts to read or manipulate PCI device configuration space using a method that is not listed above, the access will be blocked and will result in a system bug check.
 
 The Windows XP and Windows Server 2003 and later operating systems have exclusive control over the configuration space header, as defined by the *PCI Local Bus* specification, as well as all of the capabilities in the capabilities linked list. Drivers must not attempt to modify these registers.
 

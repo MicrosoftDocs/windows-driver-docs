@@ -94,7 +94,7 @@ Following are two tables. The first table lists required standard routines. The 
 <tr class="even">
 <td><p>Deferred Procedure Calls</p></td>
 <td><p>Completes the processing of a device interrupt after an ISR saves the device state.</p></td>
-<td><p><a href="dpc-objects-and-dpcs.md" data-raw-source="[DPC Objects and DPCs](dpc-objects-and-dpcs.md)">DPC Objects and DPCs</a></p></td>
+<td><p><a href="dpc-objects-and-dpcs.md" data-raw-source="[DPC Objects and DPCs](introduction-to-dpc-objects.md)">DPC Objects and DPCs</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><em>SynchCritSection</em></p></td>

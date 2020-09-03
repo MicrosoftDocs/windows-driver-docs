@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Transaction Manager Objects
 
 
-The main purpose of the *transaction manager object* is to create and maintain a [Common Log File System](using-common-log-file-system.md) (CLFS) log stream that KTM uses to record status information about transactions.
+The main purpose of the *transaction manager object* is to create and maintain a [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS) log stream that KTM uses to record status information about transactions.
 
 The transaction manager object also contains a [virtual clock value](using-virtual-clock-values.md) that KTM maintains and uses to sequence information in the object's log stream.
 
