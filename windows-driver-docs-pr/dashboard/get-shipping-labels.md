@@ -23,7 +23,7 @@ Before you can use these methods, the product and submission must already exist 
 
 ## Prerequisites
 
-If you have not done so already, complete all the [Prerequisites](./dashboard-api.md#complete-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [Prerequisites](./dashboard-api.md#complete-the-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Data resources
 
