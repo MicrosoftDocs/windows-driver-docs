@@ -59,7 +59,7 @@ During validation, the dashboard performs the following actions for each package
 
 ### Submitting a service metadata package
 
-For info about submitting service metadata for a mobile broadband app, see [Service metadata package submission](./mobilebroadband/service-metadata.md).
+For info about submitting service metadata for a mobile broadband app, see [Service metadata package submission](../mobilebroadband/service-metadata.md).
 
 ## Related topics
 
