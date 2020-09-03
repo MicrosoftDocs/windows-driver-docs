@@ -1,6 +1,6 @@
 ---
 title: Wi-Fi measures
-description: Camera measures filter out benign initialization errors during Bluetooth driver flighting
+description: Wi-Fi measures filter out benign initialization errors during Bluetooth driver flighting
 ms.topic: article
 ms.date: 05/20/2019
 ms.localizationpriority: medium
