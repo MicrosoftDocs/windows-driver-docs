@@ -1,6 +1,6 @@
 ---
-title: Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal
-description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Microsoft Edge Chromium, caused by the graphics drivers, over total runtime in years
+title: Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal (Ecosystem)
+description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Microsoft Edge Chromium, caused by the graphics drivers, over total runtime in years (Ecosystem)
 ms.topic: article
 ms.date: 05/11/2020
 ms.localizationpriority: medium
