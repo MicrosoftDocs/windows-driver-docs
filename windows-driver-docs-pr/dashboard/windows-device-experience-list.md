@@ -54,13 +54,7 @@ You can sort any set of results by **Model Name**, **Company**, **Locale**, **Ca
 ## <span id="To_list_on_the_Windows_Device_Experience_List"></span><span id="to_list_on_the_windows_device_experience_list"></span><span id="TO_LIST_ON_THE_WINDOWS_DEVICE_EXPERIENCE_LIST"></span>To list on the Windows Device Experience List
 
 
-To obtain a listing on the Windows Device Experience List, is to read and follow instructions in [Device Metadata](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+To obtain a listing on the Windows Device Experience List, is to read and follow instructions in [Device Metadata](./index.yml).
 
  
-
- 
-
-
-
-
 

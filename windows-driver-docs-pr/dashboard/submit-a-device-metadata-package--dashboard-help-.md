@@ -27,7 +27,7 @@ You can use the same method to submit packages for preview or release.
 
 4.  Browse for and select your new experience, and then click **Submit**.
 
-For more information, see [Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/) or [Manage Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+For more information, see [Create a Device Metadata Experience](./index.yml) or [Manage Device Metadata Experiences](./index.yml).
 
 During the submission process, the dashboard validates the packages in your experience.
 
@@ -61,24 +61,17 @@ During validation, the dashboard performs the following actions for each package
 
 ### <span id="Submitting_a_service_metadata_package"></span><span id="submitting_a_service_metadata_package"></span><span id="SUBMITTING_A_SERVICE_METADATA_PACKAGE"></span>Submitting a service metadata package
 
-For info about submitting service metadata for a mobile broadband app, see [Service metadata package submission](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/index).
+For info about submitting service metadata for a mobile broadband app, see [Service metadata package submission](../mobilebroadband/index.md).
 
 ## <span id="related_topics"></span>Related topics
 
-- [Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Create a Device Metadata Experience](./index.yml)
 
-- [Manage Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Manage Device Metadata Experiences](./index.yml)
 
-- [Submit a Bulk Metadata Package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Submit a Bulk Metadata Package](./index.yml)
 
-- [Errors and Solutions When Submitting Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
-
- 
+- [Errors and Solutions When Submitting Device Metadata Experiences](./index.yml)
 
  
-
-
-
-
-
 

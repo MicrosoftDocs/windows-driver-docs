@@ -15,14 +15,14 @@ This topic explains how to make a submission to the dashboard, such as a driver,
 
 There are two ways to make a dashboard submission apply to Windows 10 and earlier versions of Windows:
 
-1. Use the Hardware Lab Kit (HLK) to test your submission against Windows 10 and use the Hardware Certification Kit (HCK) to test against earlier versions of Windows. Then create a dashboard submission that includes all the [merged HLK/HCK test results](https://docs.microsoft.com/windows-hardware/test/hlk/user/merge-packages). During the submission process, you can opt-in to get a free signature for Windows Vista and Windows XP, as shown later in this topic. To opt-in for Windows Server 2008, provide a submission ID from a [Windows Logo Kit (WLK)](https://www.microsoft.com/download/details.aspx?id=39359) submission. This is the only way to make a submission apply to all Windows versions.
-2. As an alternative to HLK and HCK testing, you can [cross-sign](https://docs.microsoft.com/windows-hardware/drivers/install/cross-certificates-for-kernel-mode-code-signing) your driver yourself and submit it to the dashboard for [attestation signing](attestation-signing-a-kernel-driver-for-public-release.md) so that it also works on Windows 10. This is more complicated, but still a valid option. For more information about how to attestation sign a driver, see [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md).
+1. Use the Hardware Lab Kit (HLK) to test your submission against Windows 10 and use the Hardware Certification Kit (HCK) to test against earlier versions of Windows. Then create a dashboard submission that includes all the [merged HLK/HCK test results](/windows-hardware/test/hlk/user/merge-packages). During the submission process, you can opt-in to get a free signature for Windows Vista and Windows XP, as shown later in this topic. To opt-in for Windows Server 2008, provide a submission ID from a [Windows Logo Kit (WLK)](https://www.microsoft.com/download/details.aspx?id=39359) submission. This is the only way to make a submission apply to all Windows versions.
+2. As an alternative to HLK and HCK testing, you can [cross-sign](../install/cross-certificates-for-kernel-mode-code-signing.md) your driver yourself and submit it to the dashboard for [attestation signing](attestation-signing-a-kernel-driver-for-public-release.md) so that it also works on Windows 10. This is more complicated, but still a valid option. For more information about how to attestation sign a driver, see [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md).
     > [!IMPORTANT]
-    > You must still use [Hardware Dev Center (Sysdev)](dashboard-services.md) to attestation sign a driver until driver signing is available through the Partner Center.
+    > You must still use [Hardware Dev Center (Sysdev)](./index.yml) to attestation sign a driver until driver signing is available through the Partner Center.
 
 This topic will provide some background info about the dashboard for context, then walk through the process for using the HLK/HCK.
 
-In the dashboard, there are two options related to signing submissions – either way, you can get a Microsoft-signed driver. The Hardware compatibility option means you’ve gone the extra distance and met [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/index) requirements. This gives you reputation with Microsoft SmartScreen, visibility on the Certified Products List, and other business benefits.
+In the dashboard, there are two options related to signing submissions – either way, you can get a Microsoft-signed driver. The Hardware compatibility option means you’ve gone the extra distance and met [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/index) requirements. This gives you reputation with Microsoft SmartScreen, visibility on the Certified Products List, and other business benefits.
 
 For background, there are two code signing operations to consider:
 
@@ -31,9 +31,9 @@ For background, there are two code signing operations to consider:
 
 You must have an EV certificate bound to your company to access submission features in the dashboard.
 
-To confirm the certificate that is used to identify your organization within [Hardware Dev Center (Sysdev)](dashboard-services.md), you need to be logged in as an Administrator for your organization’s account. Then select **Administration** &gt; **Upload a new digital certificate**.
+To confirm the certificate that is used to identify your organization within [Hardware Dev Center (Sysdev)](./index.yml), you need to be logged in as an Administrator for your organization’s account. Then select **Administration** &gt; **Upload a new digital certificate**.
 
-To confirm the certificate that is used to identify your organization within the Partner Center, see [Update a code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/update-a-code-signing-certificate).
+To confirm the certificate that is used to identify your organization within the Partner Center, see [Update a code signing certificate](./update-a-code-signing-certificate.md).
 
 After you sign in to Partner Center and you are ready to sign your submission, you can use either a standard code signing cert or an EV code signing cert. This is true for all operating system versions, not just Windows 10.
 
