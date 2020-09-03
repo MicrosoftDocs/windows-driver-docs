@@ -100,12 +100,12 @@ The following is an example of how to use the Cabarc tool to create a .deviceman
 The GUID.devicemanifest-ms file was created in a local directory that is named ManifestFiles:
 
 ``` syntax
-Cabarc.exe -r -p -P  .\DeviceManifestPackages\ 
-N .\ManifestFiles\ GUID.devicemanifest-ms 
+Cabarc.exe -r -p -P  .\DeviceManifestPackages\
+N .\ManifestFiles\ GUID.devicemanifest-ms
 .\DeviceManifestPackages\LocaleInfo.xml
 .\DeviceManifestPackages\GUID.devicemetadata-ms
 ```
 
 ## Creating LocaleInfo.xml
 
-For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+For information about creating the Localeinfo.xml file for submission, see [Create the LocaleInfo.xml Submission File](create-the-localeinfoxml-submission-file.md).
