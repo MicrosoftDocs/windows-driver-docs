@@ -27,7 +27,7 @@ While UMDF version 2 offers a significant subset of functionality that was previ
 <tbody>
 <tr class="odd">
 <td align="left">Direct memory access (DMA)</td>
-<td align="left"><a href="handling-dma-operations-in-kmdf-drivers.md" data-raw-source="[Handling DMA Operations in KMDF Drivers](introduction-to-dma-in-windows-driver-framework.md)">Handling DMA Operations in KMDF Drivers</a></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/introduction-to-dma-in-windows-driver-framework">Handling DMA Operations in KMDF Drivers</a></td>
 </tr>
 <tr class="even">
 <td align="left">Bus enumeration</td>
