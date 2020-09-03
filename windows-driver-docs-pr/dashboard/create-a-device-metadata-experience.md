@@ -25,12 +25,13 @@ Before you can submit the files for logo certification, you must package the fil
 
 3. On the **Create experience** page, enter the following information:
 
+
 |Field|Description|
 |----|----|
 |Experience name|Create a name for the experience that is different from all other experience names that your company has produced.|
 |Package friendly name|If necessary, create a name that is easier to use and remember.|
 |Files|Browse to find and upload up to 50 files that you want to include in your experience.|
-|Preview package|Select this if you want to submit all your selected packages as preview packages. For more information, see [Creating a Preview Package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).|
+|Preview package|Select this if you want to submit all your selected packages as preview packages. For more information, see [Creating a Preview Package](creating-a-preview-package.md).|
 |Bind to logo submissions|Choose the first option if you are submitting a device that only uses in-box drivers and does not have a logo certification. Choose the second option if your device has associated logo submissions; your device is a PC, printer, fax or scanner; or if your metadata is for a collection of mobile broadband account identifiers.|
 |Bind to logo submissions: select submissions|If you choose the second option and you are submitting metadata for a computer, Mobile Broadband Account experience, or a printer or fax on the IDDA list, you do not have to bind any logo submissions.</br>If you chose the second option and you are submitting metadata for any other type of device, you must select and bind the logo submissions that apply to your device.|
 

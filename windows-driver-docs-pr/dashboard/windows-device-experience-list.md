@@ -48,4 +48,4 @@ You can sort any set of results by **Model Name**, **Company**, **Locale**, **Ca
 
 ## To list on the Windows Device Experience List
 
-To obtain a listing on the Windows Device Experience List, is to read and follow instructions in [Device Metadata](create-a-device-metadata-experience.md).
+To obtain a listing on the Windows Device Experience List, read and follow the instructions in [Device Metadata](create-a-device-metadata-experience.md).

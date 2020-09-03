@@ -143,7 +143,7 @@ Different types of device metadata packages must follow different rules. Additio
 
 ### Unique Device Stage Metadata Submissions
 
-To submit a PC metadata package, see, [Submit a PC device manifest package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+To submit a PC metadata package, see, [Submit a PC device manifest package](./index.yml).
 
 To submit a mobile broadband metadata package, see [Submit a mobile broadband device manifest package](submit-a-mobile-broadband-device-manifest-package.md).
 
