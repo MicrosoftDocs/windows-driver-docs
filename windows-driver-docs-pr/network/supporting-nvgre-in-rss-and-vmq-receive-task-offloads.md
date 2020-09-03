@@ -15,7 +15,7 @@ NDIS 6.30 (Windows Server 2012) introduces [Network Virtualization using Generi
 
  
 
-If the miniport driver supports RSS and VMQ for encapsulated packets, it must advertise those capabilities in the **RssSupported** and **VmqSupported** members of the [**NDIS\_ENCAPSULATED\_PACKET\_TASK\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_encapsulated_packet_task_offload) structure. If the miniport advertised these capabilities, received an [OID\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-tcp-offload-parameters) OID request, and succeeded the OID, the NIC must perform RSS and VMQ on the advertised encapsulated packet types.
+If the miniport driver supports RSS and VMQ for encapsulated packets, it must advertise those capabilities in the **RssSupported** and **VmqSupported** members of the [**NDIS\_ENCAPSULATED\_PACKET\_TASK\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_encapsulated_packet_task_offload) structure. If the miniport advertised these capabilities, received an [OID\_TCP\_OFFLOAD\_PARAMETERS](./oid-tcp-offload-parameters.md) OID request, and succeeded the OID, the NIC must perform RSS and VMQ on the advertised encapsulated packet types.
 
 For supported encapsulated packets that it is able to parse, the NIC must perform RSS on the TCP or UDP header in the payload of the transport (inner) IP header and VMQ on the inner MAC header.
 
@@ -27,10 +27,4 @@ For performing RSS and VMQ, the NIC must get to the transport (inner) IP header 
 -   Perform VMQ by using the Ethernet header in the encapsulated packet. For encapsulated packets that do not contain an Ethernet header (within the encapsulated packet), VMQ should be performed using the outermost Ethernet header.
 
  
-
- 
-
-
-
-
 

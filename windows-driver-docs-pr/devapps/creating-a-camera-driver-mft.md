@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Creating a camera driver MFT for a UWP device app
 
 > [!IMPORTANT]
-> This topic has been deprecated. See the [Device MFT design guide](https://docs.microsoft.com/windows-hardware/drivers/stream/dmft-design) for updated guidance.
+> This topic has been deprecated. See the [Device MFT design guide](../stream/dmft-design.md) for updated guidance.
 
 UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform). This topic introduces driver MFTs and uses the [Driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample to show how to create one. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -261,17 +261,17 @@ This section lists steps for installing the driver MFT:
 2. Your camera installer registers the driver MFT by calling **regsvr32** on your driver MFT DLL, or by providing a driver manifest (.man) file for the DLL that the installer uses for registration.
 3. Set the `CameraPostProcessingPluginCLSID` value in the registry key for your camera. Your INF file should specify the CLSID of the Driver MFT in the device class registry key for the device, by setting the `CameraPostProcessingPluginCLSID` value to the CLSID GUID of the driver MFT class. The following is an example from an INF file entry that populates the registry keys for a camera:
 
-    ```cpp
-    KSCATEGORY_VIDEO_CAMERA:
+```inf
+KSCATEGORY_VIDEO_CAMERA:
 
-    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
-    "CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
-    "FriendlyName"="USB Video Device"
-    "RTCFlags"=dword:00000010
-    "CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}" 
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
+"CLSID"="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+"FriendlyName"="USB Video Device"
+"RTCFlags"=dword:00000010
+"CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}" 
+```
 
-
-
+```cpp
 KSCATEGORY_CAPTURE:
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{ 65E8773D-8F56-11D0-A3B9-00A0C9223196}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{65E8773D-8F56-11D0-A3B9-00A0C9223196}\#GLOBAL\Device Parameters]
@@ -281,7 +281,8 @@ KSCATEGORY_CAPTURE:
 "CameraPostProcessingPluginCLSID"="{3456A71B-ECD7-11D0-B908-00A0C9223196}"
 ```
 
-**Note**  `KSCATEGORY_VIDEO_CAMERA` is recommended for cameras. You will normally only need one of the registry keys, depending on how the device is registered.
+>[!NOTE]
+>`KSCATEGORY_VIDEO_CAMERA` is recommended for cameras. You will normally only need one of the registry keys, depending on how the device is registered.
 
 
 ## Associate your app with the camera
@@ -326,8 +327,3 @@ For more info about how to use device metadata to associate your app with your d
 [UWP device app for camera sample](https://go.microsoft.com/fwlink/p/?LinkID=227865)
 
 [Driver MFT sample](https://go.microsoft.com/fwlink/p/?LinkID=251566)
-
-
-
-
-

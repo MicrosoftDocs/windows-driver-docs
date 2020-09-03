@@ -31,11 +31,11 @@ warning C28110: Drivers must protect floating-point hardware state. See use of f
 
  
 
-This warning is only applicable in kernel mode. The driver is attempting to use a variable or constant of a float type when the code is not protected by [**KeSaveFloatingPointState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate) and [**KeRestoreFloatingPointState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate), or [**EngSaveFloatingPointState**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engsavefloatingpointstate) and [**EngRestoreFloatingPointState**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engrestorefloatingpointstate).
+This warning is only applicable in kernel mode. The driver is attempting to use a variable or constant of a float type when the code is not protected by [**KeSaveFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate) and [**KeRestoreFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate), or [**EngSaveFloatingPointState**](/windows/desktop/api/winddi/nf-winddi-engsavefloatingpointstate) and [**EngRestoreFloatingPointState**](/windows/desktop/api/winddi/nf-winddi-engrestorefloatingpointstate).
 
-Typically, drivers run with the floating-point context of the most recent application, and any use of a floating point that is not protected by [**KeSaveFloatingPointState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate) and [**KeRestoreFloatingPointState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate) can change the results for other processes and can often cause incorrect or unexpected results in the driver.
+Typically, drivers run with the floating-point context of the most recent application, and any use of a floating point that is not protected by [**KeSaveFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate) and [**KeRestoreFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate) can change the results for other processes and can often cause incorrect or unexpected results in the driver.
 
-Display drivers should use [**EngSaveFloatingPointState**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engsavefloatingpointstate) and [**EngRestoreFloatingPointState**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engrestorefloatingpointstate).
+Display drivers should use [**EngSaveFloatingPointState**](/windows/desktop/api/winddi/nf-winddi-engsavefloatingpointstate) and [**EngRestoreFloatingPointState**](/windows/desktop/api/winddi/nf-winddi-engrestorefloatingpointstate).
 
 After an instance of this error is detected along any particular flow path, the Code Analysis tool suppresses subsequent similar errors. The Code Analysis tool does not report this error for function definitions that take floating-type arguments or that return a floating type, because the caller will report the use.
 
@@ -46,10 +46,4 @@ If a function uses floating-point operations intentionally, and is expecting to 
 By using **\_Kernel\_float\_used\_** on (or adding the appropriate save and restore calls to) all functions that use floating point until no warnings remain, a driver can be assured to be free of misuse of the floating-point hardware. For more information, see [Floating point annotations for drivers](floating-point-annotations-for-drivers.md).
 
  
-
- 
-
-
-
-
 

@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE
 
 
-Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE indication to implement the transaction completion response for [OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-service-command).
+Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE indication to implement the transaction completion response for [OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](./oid-wwan-device-service-command.md).
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_response) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_response) structure.
 
 Requirements
 ------------
@@ -40,14 +40,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-device-service-command)
+[OID\_WWAN\_DEVICE\_SERVICE\_COMMAND](./oid-wwan-device-service-command.md)
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_response)
-
- 
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_response)
 
  
-
-
-
 

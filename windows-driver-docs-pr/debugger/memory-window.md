@@ -20,7 +20,7 @@ You can view memory by entering one of the [**Display Memory**](d--da--db--dc--d
 ## <span id="ddk_memory_window_dbg"></span><span id="DDK_MEMORY_WINDOW_DBG"></span>Opening a Memory Window
 
 
-To open a Memory window, choose **Memory** from the **View** menu. (You can also press ALT+5 or click the **Memory** button (![screen shot of the memory button](images/tbmem.png)) on the toolbar. ALT+SHIFT+5 closes the active Memory window.)
+To open a Memory window, choose **Memory** from the **View** menu. (You can also press ALT+5 or select the **Memory** button (![screen shot of the memory button](images/tbmem.png)) on the toolbar. ALT+SHIFT+5 closes the active Memory window.)
 
 The following screen shot shows an example of a Memory window.
 
@@ -37,7 +37,7 @@ The Memory window displays data in several columns. The column on the left side 
 
 In the Memory window, you can do the following:
 
--   To write to memory, click inside the Memory window and type new data. You can edit only hexadecimal data—you cannot directly edit ASCII and Unicode characters. Changes take effect as soon as you type new information.
+-   To write to memory, select inside the Memory window and type new data. You can edit only hexadecimal data—you cannot directly edit ASCII and Unicode characters. Changes take effect as soon as you type new information.
 
 -   To see other sections of memory, use the **Previous** and **Next** buttons on the Memory window toolbar, or press the PAGE UP or PAGE DOWN keys. These buttons and keys display the immediately preceding or following sections of memory. If you request an invalid page, an error message appears.
 
@@ -50,7 +50,7 @@ In the Memory window, you can do the following:
 
 -   To change the data type that the window uses to display memory, use the **Display format** menu in the Memory window toolbar. Supported data types include short words, double words, and quad-words; short, long, and quad integers and unsigned integers; 10-byte, 16-byte, 32-byte, and 64-byte real numbers; ASCII characters; Unicode characters; and hexadecimal bytes. The display of hexadecimal bytes includes ASCII characters as well.
 
-The Memory window has a toolbar that contains two buttons, a menu, and a box and has a shortcut menu with additional commands. To access the menu, right-click the title bar or click the icon near the upper-right corner of the window (![screen shot of the button that displays the memory window toolbar shortcut menu](images/tbmem.png)). The toolbar and shortcut menu contain the following choices:
+The Memory window has a toolbar that contains two buttons, a menu, and a box and has a shortcut menu with additional commands. To access the menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the memory window toolbar shortcut menu](images/tbmem.png)). The toolbar and shortcut menu contain the following choices:
 
 -   (Toolbar only) The address box enables you to specify a new address or offset. The exact meaning of this box depends on the memory type you are viewing. For example, if you are viewing virtual memory, the box enables you to specify a new virtual address or offset.
 
@@ -82,9 +82,9 @@ The Memory window has a toolbar that contains two buttons, a menu, and a box and
 
 ### <span id="memory_options_dialog_box"></span><span id="MEMORY_OPTIONS_DIALOG_BOX"></span>Memory Options Dialog Box
 
-When you click **Properties** on the shortcut menu, the **Memory Options** dialog box appears.
+When you select **Properties** on the shortcut menu, the **Memory Options** dialog box appears.
 
-In kernel mode, there are six memory types available as tabs in this dialog box: **Virtual Memory**, **Physical Memory**, **Bus Data**, **Control Data**, **I/O** (I/O port information), and **MSR** (model-specific register information). Click the tab that corresponds to the information that you want to access.
+In kernel mode, there are six memory types available as tabs in this dialog box: **Virtual Memory**, **Physical Memory**, **Bus Data**, **Control Data**, **I/O** (I/O port information), and **MSR** (model-specific register information). Select the tab that corresponds to the information that you want to access.
 
 In user mode, only the **Virtual Memory** tab is available.
 
@@ -104,7 +104,7 @@ Each tab enables you to specify the memory that you want to display:
 
 Each tab also includes a **Display format** menu. This menu has the same effect as the **Display format** menu in the Memory window.
 
-Click **OK** in the **Memory Options** dialog box to cause your changes to take effect.
+Select **OK** in the **Memory Options** dialog box to cause your changes to take effect.
 
 ## <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

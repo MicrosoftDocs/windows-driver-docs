@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Porting I/O Queues
 
 
-WDF drivers create queues and register I/O event callbacks in the [*EvtDriverDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback. By default, each I/O queue object is the child of a device object. The WDF driver can configure the following tasks for each queue:
+WDF drivers create queues and register I/O event callbacks in the [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback. By default, each I/O queue object is the child of a device object. The WDF driver can configure the following tasks for each queue:
 
 -   Which I/O request types are directed to the queue.
 -   Whether requests are dispatched in parallel (as soon as they arrive), sequentially (one at a time), or manually (upon driver request).
@@ -19,10 +19,4 @@ WDF drivers create queues and register I/O event callbacks in the [*EvtDriverDev
 For more information about creating queues, see [Creating I/O Queues](creating-i-o-queues.md)
 
  
-
- 
-
-
-
-
 

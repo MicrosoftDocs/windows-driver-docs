@@ -16,7 +16,7 @@ Mobile network operators charge users per message segment. SMS platform automati
 ## <span id="related_topics"></span>Related topics
 
 
-[Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
+[Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
 
  
 

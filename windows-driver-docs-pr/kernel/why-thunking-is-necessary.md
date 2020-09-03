@@ -19,19 +19,17 @@ typedef struct _DRIVER_DATA
 } DRIVER_DATA;
 ```
 
-On 32-bit Windows, the size of the DRIVER\_DATA structure is 12 bytes.
+On 32-bit Windows, the size of the DRIVER\_DATA structure is 12 bytes. This table shows the sizes of the **Event** member and **ObjectName** members of the DRIVER_DATA structure:
 
-|HANDLE Event|UNICODE\_STRING ObjectName|||
+|Event|ObjectName (USHORT Length)|ObjectName (USHORT Maximum Length)|ObjectName (PWSTR Buffer)|
 |----|----|----|---|
-||**USHORT Length**|**USHORT Maximum Length**|**PWSTR Buffer**|
 |32 bits|16 bits|16 bits|32 bits|
 |(4 bytes)|(2 bytes)|(2 bytes)|(4 bytes)|
 
 On 64-bit Windows, the size of the DRIVER\_DATA structure is 24 bytes. (The 4 bytes of structure padding are required so that the **Buffer** member can be aligned on an 8-byte boundary.)
 
-|HANDLE Event|UNICODE\_STRING ObjectName||||
+|Event|ObjectName (USHORT Length)|ObjectName (USHORT Maximum Length)|Empty (Structure Padding)|ObjectName (PWSTR Buffer)|
 |----|----|----|----|----|
-||**USHORT Length**|**USHORT Maximum Length**|**Empty (Structure Padding)**|**PWSTR Buffer**|
 |64 bits|16 bits|16 bits|32 bits|64 bits|
 |(8 bytes)|(2 bytes)|(2 bytes)|(4 bytes)|(8 bytes)|
 
@@ -49,8 +47,7 @@ typedef struct _DRIVER_DATA32
 
 Because it contains only fixed-precision data types, this new structure is the same size on 32-bit Windows and 64-bit Windows.
 
-|POINTER\_32 Event|UNICODE\_STRING32 ObjectName|||
+|Event|ObjectName (USHORT Length)|ObjectName (USHORT Maximum Length)|ULONG Buffer|
 |----|----|----|----|
-||**USHORT Length**|**USHORT Maximum Length**|**ULONG Buffer**|
 |32 bits|16 bits|16 bits|32 bits|
 |(4 bytes)|(2 bytes)|(2 bytes)|(4 bytes)|

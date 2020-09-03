@@ -87,7 +87,7 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
 3. Restart the VM so that the new settings are in effect.
 
-For more information, see [Generation 2 Virtual Machine Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)).
+For more information, see [Generation 2 Virtual Machine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)).
 
 
 ## <span id="Firewalls"></span>Troubleshooting Firewalls and Network Access Issues
@@ -113,11 +113,4 @@ You can use Control Panel to allow access through the Windows firewall.
 
 [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
  
-
- 
-
-
-
-
-
 

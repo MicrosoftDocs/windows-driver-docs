@@ -14,8 +14,8 @@ The OID_TUNNEL_INTERFACE_RELEASE_OID object identifier (OID) is reserved for sys
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows 7 and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 7 and later
+
+**Header**: Ntddndis.h (include Ndis.h)
+
 

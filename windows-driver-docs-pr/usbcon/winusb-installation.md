@@ -1,5 +1,5 @@
 ---
-Description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
+description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 title: WinUSB (Winusb.sys) Installation
 ms.date: 05/09/2018
 ms.localizationpriority: High
@@ -33,7 +33,7 @@ When you connect your device, you might notice that Windows loads Winusb.sys aut
 
 1.  Plug in your device to the host system.
 2.  Open Device Manager and locate the device.
-3.  Right-click the device and select **Update driver software...** from the context menu.
+3.  Select and hold (or right-click) the device and select **Update driver software...** from the context menu.
 4.  In the wizard, select **Browse my computer for driver software**.
 5.  Select **Let me pick from a list of device drivers on my computer**.
 6.  From the list of device classes, select **Universal Serial Bus devices**.

@@ -42,7 +42,7 @@ However, USBAudio in Windows 98 does not support:
 
 -   USB MIDI
 
--   [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) wave format (USBAudio uses packed WAVE\_FORMAT\_PCM for 24-bit data instead.)
+-   [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) wave format (USBAudio uses packed WAVE\_FORMAT\_PCM for 24-bit data instead.)
 
 In Windows 98 Second Edition (SE), Windows Me, and Windows 2000 and later, USBAudio supports all the same features as Windows 98, with one exception: USBAudio supports WAVEFORMATEXTENSIBLE but does not support packed WAVE\_FORMAT\_PCM for 24-bit data.
 
@@ -54,14 +54,9 @@ The following figure shows the driver hierarchy for a USB audio device. All of t
 
 For more information about the driver components in the figure, see the following sections:
 
-[AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview)
+[AVStream Overview](../stream/avstream-overview.md)
 
-[System-Supplied USB Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
-
- 
+[System-Supplied USB Drivers](/windows-hardware/drivers/ddi/index)
 
  
-
-
-
 

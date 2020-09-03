@@ -48,8 +48,8 @@ When building a printer graphics DLL, you must be aware of the following differe
 <td><p>Object modules must be linked with the win32k.lib import library.</p></td>
 </tr>
 <tr class="even">
-<td><p>The <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydriverinfo" data-raw-source="[&lt;strong&gt;DrvQueryDriverInfo&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydriverinfo)"><strong>DrvQueryDriverInfo</strong></a> function must return <strong>TRUE</strong> for DRVQUERY_USERMODE.</p></td>
-<td><p>The <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydriverinfo" data-raw-source="[&lt;strong&gt;DrvQueryDriverInfo&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydriverinfo)"><strong>DrvQueryDriverInfo</strong></a> function must return <strong>FALSE</strong> for DRVQUERY_USERMODE. (Alternatively, the function can be omitted.)</p></td>
+<td><p>The <a href="https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo" data-raw-source="[&lt;strong&gt;DrvQueryDriverInfo&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo)"><strong>DrvQueryDriverInfo</strong></a> function must return <strong>TRUE</strong> for DRVQUERY_USERMODE.</p></td>
+<td><p>The <a href="https://docs.microsoft.com/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo" data-raw-source="[&lt;strong&gt;DrvQueryDriverInfo&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo)"><strong>DrvQueryDriverInfo</strong></a> function must return <strong>FALSE</strong> for DRVQUERY_USERMODE. (Alternatively, the function can be omitted.)</p></td>
 </tr>
 </tbody>
 </table>
@@ -57,9 +57,4 @@ When building a printer graphics DLL, you must be aware of the following differe
  
 
  
-
- 
-
-
-
 

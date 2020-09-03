@@ -34,10 +34,6 @@ The primary GitHub site is located at [https://github.com/opendtrace/](https://g
 
 A set of useful scripts is available at [https://github.com/opendtrace/toolkit](https://github.com/opendtrace/toolkit).
 
-[DTrace.Org](http://dtrace.org) is a web site where many of the original developers provide tips and tricks.
-
-The illumos [Dynamic Tracing Guide](http://dtrace.org/guide/bookinfo.html) describes how to use DTrace to observe, debug, and tune system behavior.
-
 A number of DTrace books are available, such as:
 
 *DTrace: Dynamic Tracing in Oracle Solaris, Mac OS X and FreeBSD* by Brendan Gregg and Jim Mauro
@@ -49,7 +45,7 @@ by Richard McDougall, Jim Mauro and Brendan Gregg
 
 Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. Launch the feedback hub from a Windows PC, by clicking this link [https://windows-feedback:?contextid=1053](https://windows-feedback:?contextid=1053).
+1. Launch the feedback hub from a Windows PC, by selecting this link [https://windows-feedback:?contextid=1053](https://windows-feedback:?contextid=1053).
 2. Select *Add new feedback*.
 3. Provide a detailed, specific description of the issue or suggestion.
 

@@ -21,7 +21,7 @@ This section describes how a vendor can use a WDM function driver in Windows to 
 
 ACPI devices include low-level system devices such as batteries, thermal zones, and other devices defined in a system's ACPI namespace. An ACPI namespace is a hierarchical namespace that an ACPI BIOS uses to reference objects.
 
-The combined operation of the system-supplied [ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver) and the ACPI BIOS supports the basic functionality of ACPI devices and is transparent to the rest of the operating system. An ACPI device is specified by a definition block in the ACPI System Description Tables. A device's definition block specifies, among other things, an operation region, which specifies a contiguous block of device memory that is used to access device data.
+The combined operation of the system-supplied [ACPI driver](../kernel/acpi-driver.md) and the ACPI BIOS supports the basic functionality of ACPI devices and is transparent to the rest of the operating system. An ACPI device is specified by a definition block in the ACPI System Description Tables. A device's definition block specifies, among other things, an operation region, which specifies a contiguous block of device memory that is used to access device data.
 
 To enhance the functionality of an ACPI device, the vendor can supply a WDM function driver, which communicates with the ACPI BIOS through an operation region supplied by the driver. The ACPI driver accesses the operation region by calling an operation region handler supplied by the function driver.
 
@@ -45,6 +45,6 @@ The following topics describe how to supply a function driver for an ACPI device
 
 [Operation of an ACPI Device Function Driver](operation-of-an-acpi-device-function-driver.md)
 
-For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_acpi/index).
+For information about the system-supplied support routines that support ACPI device function drivers, see [ACPI Operation Region Handler Reference](/windows-hardware/drivers/ddi/_acpi/index).
 
 For more information about ACPI devices and namespaces, see the [Advanced Configuration and Power Interface (ACPI) Specification](https://uefi.org/specifications).

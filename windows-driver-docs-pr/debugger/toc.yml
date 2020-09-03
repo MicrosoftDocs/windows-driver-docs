@@ -114,6 +114,11 @@
     href: windbg-scripting-preview.md
   - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
+  - name: "WinDbg Preview Basics"
+# Auto-expanded node
+    items: 
+    - name: "WinDbg Preview Basics"
+      href: windbg-preview-basics.md
   - name: "Time Travel Debugging"
 # Auto-expanded node
     items: 
@@ -165,6 +170,10 @@
         href: time-travel-debugging-range-objects.md
       - name: "Time Travel Debugging - Thread objects"
         href: time-travel-debugging-thread-objects.md
+      - name: "Time Travel Debugging - Module objects"
+        href: time-travel-debugging-module-objects.md
+      - name: "Time Travel Debugging - Collection objects"
+        href: time-travel-debugging-collection-objects.md
     - name: "Time Travel Debugging - JavaScript Automation"
       href: time-travel-debugging-javascript-automation.md
 - name: "Debugging Resources"
@@ -1137,6 +1146,8 @@
     href: controlling-the-target.md
   - name: "Enabling Postmortem Debugging"
     href: enabling-postmortem-debugging.md
+  - name: "Open Enclave debugging"
+    href: open-enclave-debugging.md
   - name: "Using the Debugger Command Window"
 # Auto-expanded node
     items: 
@@ -1775,6 +1786,8 @@
       href: symbols-and-symbol-files.md
     - name: "Public and Private Symbols"
       href: public-and-private-symbols.md
+    - name: "Portable PDB Symbols"
+      href: symbols-portable-pdb.md
   - name: "Accessing Symbols for Debugging"
 # Auto-expanded node
     items: 
@@ -1846,8 +1859,6 @@
       href: symstore-transactions.md
     - name: "File System References and Symbol Files"
       href: file-system-references-and-symbol-files.md
-    - name: "SymStore Compressed Files"
-      href: symstore-compressed-files.md
     - name: "Symbol Storage Format"
       href: symbol-storage-format.md
   - name: "How the Debugger Recognizes Symbols"
@@ -3536,8 +3547,6 @@
         href: -dml-proc.md
       - name: "!dumpfa"
         href: -dumpfa.md
-      - name: "!elog_str"
-        href: -elog-str.md
       - name: "!envvar"
         href: -envvar.md
       - name: "!error"
@@ -3898,7 +3907,7 @@
       - name: "!ppmperfpolicy"
         href: -ppmperfpolicy.md
       - name: "!ppmsettings"
-        href: -ppmstate.md
+        href: -ppmsettings.md
       - name: "!ppmstate"
         href: -ppmstate.md
       - name: "!prcb"

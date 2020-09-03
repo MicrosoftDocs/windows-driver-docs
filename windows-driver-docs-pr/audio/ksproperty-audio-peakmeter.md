@@ -21,7 +21,7 @@ The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal lev
 
 >>
 > [!IMPORTANT]
-> KSPROPERTY\_AUDIO\_PEAKMETER property is depreciated, and should not be used. Use [**KSPROPERTY\_AUDIO\_PEAKMETER2**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-peakmeter2) instead.  
+> KSPROPERTY\_AUDIO\_PEAKMETER property is depreciated, and should not be used. Use [**KSPROPERTY\_AUDIO\_PEAKMETER2**](./ksproperty-audio-peakmeter2.md) instead.  
 
 
 ## <span id="ddk_ksproperty_audio_peakmeter_ks"></span><span id="DDK_KSPROPERTY_AUDIO_PEAKMETER_KS"></span>
@@ -51,7 +51,7 @@ The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum audio signal lev
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
+<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -108,8 +108,8 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md)
 
-[**KSPROPERTY\_AUDIO\_PEAKMETER2**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-peakmeter2)
+[**KSPROPERTY\_AUDIO\_PEAKMETER2**](./ksproperty-audio-peakmeter2.md)

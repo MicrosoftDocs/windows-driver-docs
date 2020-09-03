@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Handling the Loss of a Display Device
 
 
-The following scenarios initiate a call to the display miniport driver's [**DxgkDdiOPMDestroyProtectedOutput**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_destroy_protected_output) function while content protection on a graphics adapter's output connector might be enabled:
+The following scenarios initiate a call to the display miniport driver's [**DxgkDdiOPMDestroyProtectedOutput**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_destroy_protected_output) function while content protection on a graphics adapter's output connector might be enabled:
 
 -   Changing the display mode
 
@@ -32,10 +32,4 @@ The following scenarios initiate a call to the display miniport driver's [**Dxgk
 -   Terminating the application unexpectedly--for example, through a page fault
 
  
-
- 
-
-
-
-
 

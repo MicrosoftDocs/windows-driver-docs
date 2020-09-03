@@ -39,7 +39,7 @@ ms.localizationpriority: medium
 
 
 <a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg=**<em>add-registry-section</em>\[**,**<em>add-registry-section</em>\]...  
-References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this <em>DDInstall</em>**.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/registry-trees-and-keys). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
+References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this <em>DDInstall</em>**.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](./registry-trees-and-keys.md). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
 
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
@@ -75,7 +75,7 @@ Each directive in a <em>DDInstall</em>**.HW** section can reference more than on
 
 Each such section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-For more information about how to install multifunction devices, see [Supporting Multifunction Devices](https://docs.microsoft.com/windows-hardware/drivers/multifunction/index).
+For more information about how to install multifunction devices, see [Supporting Multifunction Devices](../multifunction/index.md).
 
 Examples
 --------
@@ -157,11 +157,4 @@ ServiceBinary  = %12%\cdaudio.sys
 [**DelReg**](inf-delreg-directive.md)
 
  
-
- 
-
-
-
-
-
 

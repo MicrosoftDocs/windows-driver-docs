@@ -1,5 +1,5 @@
 ---
-Description: Installing the WpdServiceSampleDriver Sample
+description: Installing the WpdServiceSampleDriver Sample
 title: Installing the WpdServiceSampleDriver Sample
 ms.date: 04/20/2017
 ms.localizationpriority: medium

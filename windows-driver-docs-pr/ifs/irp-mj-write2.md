@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Checking the Oplock State of an IRP_MJ_WRITE operation
 
-The following [oplock break](https://docs.microsoft.com/windows-hardware/drivers/ifs/breaking-oplocks) conditions apply when a *stream* is being written and the write is not a paging I/O.
+The following [oplock break](./breaking-oplocks.md) conditions apply when a *stream* is being written and the write is not a paging I/O.
 
 ### Conditions for a Level 2 request type:
 

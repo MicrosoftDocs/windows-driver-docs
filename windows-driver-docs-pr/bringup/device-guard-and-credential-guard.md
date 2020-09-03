@@ -12,8 +12,8 @@ Hypervisor-Protected Code Integrity can use hardware technology and virtualizati
 
 ## Related resources
 
-[Code integrity checking](https://docs.microsoft.com/windows-hardware/drivers/devtest/code-integrity-checking)
+[Code integrity checking](../devtest/code-integrity-checking.md)
 
-[Hypervisor Code Integrity Readiness Test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
+[Hypervisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
 
-[Driver compatibility with HVCI in Windows 10](hhttps://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)
+[Driver compatibility with HVCI in Windows 10](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)

@@ -1,5 +1,5 @@
 ---
-Description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device.
+description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device.
 title: Talking to USB devices, start to finish (UWP app)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -115,7 +115,7 @@ Alternatively, you can view information the registry. For more information, see 
 <td><p><strong>QuickStart:</strong> <a href="updating-the-app-manifest-with-usb-device-capabilities.md" data-raw-source="[How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)">How to add USB device capabilities to the app manifest</a></p>
 <p>Open your Package.appxmanifest file in a text editor and add the <a href="https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability" data-raw-source="[&lt;strong&gt;DeviceCapability&lt;/strong&gt;](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability)"><strong>DeviceCapability</strong></a> element with <strong>Name</strong> attribute set to "usb" as shown in this example.</p>
 <div class="alert">
-<strong>Note</strong>  You cannot modify the USB device capability in Visual Studio 2013. You must right-click the Package.appxmanifest file in <strong>Solution Explorer</strong> and select <strong>Open With...</strong>, and then <strong>XML (Text) Editor</strong>. The file opens in plain XML.
+<strong>Note</strong>  You cannot modify the USB device capability in Visual Studio 2013. You must select and hold (or right-click) the Package.appxmanifest file in <strong>Solution Explorer</strong> and select <strong>Open With...</strong>, and then <strong>XML (Text) Editor</strong>. The file opens in plain XML.
 </div>
 <div>
  

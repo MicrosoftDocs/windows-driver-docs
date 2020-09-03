@@ -66,7 +66,7 @@ There are no attributes.
 <tbody>
 <tr class="odd">
 <td><p><a href="operatorlist.md" data-raw-source="[OperatorList](operatorlist.md)">OperatorList</a></p></td>
-<td><p>The parent element of the <a href="apn-xml-schema.md" data-raw-source="[APN XML schema](apn-xml-schema.md)">APN XML schema</a>.</p></td>
+<td><p>The parent element of the <a href="apn-schema-definition.md" data-raw-source="[APN XML schema](apn-schema-definition.md)">APN XML schema</a>.</p></td>
 </tr>
 </tbody>
 </table>

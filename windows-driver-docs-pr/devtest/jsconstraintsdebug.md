@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # JSConstraintsDebug
 
 
-JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides debugging support for [JavaScript Constraints](https://docs.microsoft.com/windows-hardware/drivers/print/javascript-constraints) while developing a [V4 printer driver](https://docs.microsoft.com/windows-hardware/drivers/print/v4-printer-driver).
+JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides debugging support for [JavaScript Constraints](../print/javascript-constraints.md) while developing a [V4 printer driver](../print/v4-printer-driver.md).
 
 <table>
 <colgroup>
@@ -22,7 +22,7 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit downloads](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)">Windows Driver Kit downloads</a>.</p></td>
+<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit downloads](../download-the-wdk.md)">Windows Driver Kit downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -31,13 +31,13 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 
 The tool executes each of the following relevant entry point APIs on the JavaScript constraints of the targeted driver against the user provided print ticket:
 
-[**PTGetPrintCapabilities**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
+[**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
 
-[**PTConvertDevModeToPrintTicket**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)
+[**PTConvertDevModeToPrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)
 
-[**TConvertPrintTicketToDevMode**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)
+[**TConvertPrintTicketToDevMode**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)
 
-[**PTMergeAndValidatePrintTicket**](https://docs.microsoft.com/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)
+[**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)
 
 During execution the tool will prompt for an appropriate IDE debugger such as Visual Studio. Upon selection, the constraints source code will be opened and stopped at a JavaScript debugger statement.
 
@@ -84,7 +84,7 @@ Elevated privileges are required to enable debugging of JS functions. To run in 
 ## <span id="JavaScript_debugger_statements"></span><span id="javascript_debugger_statements"></span><span id="JAVASCRIPT_DEBUGGER_STATEMENTS"></span>JavaScript debugger statements
 
 
-Breakpoints can be created in JavaScript source by using the debugger statement. This will pause operation in Visual Studio all allow for step-by-step debugging. These statements can be inserted in any of the [JavaScript Constraint APIs](https://docs.microsoft.com/windows-hardware/drivers/print/javascript-constraints).
+Breakpoints can be created in JavaScript source by using the debugger statement. This will pause operation in Visual Studio all allow for step-by-step debugging. These statements can be inserted in any of the [JavaScript Constraint APIs](../print/javascript-constraints.md).
 
 For example:
 
@@ -166,10 +166,4 @@ JSConstraintsDebug “Contoso Printer” PrintTicket.xml PrintTicket2.xml
 ```
 
  
-
- 
-
-
-
-
 

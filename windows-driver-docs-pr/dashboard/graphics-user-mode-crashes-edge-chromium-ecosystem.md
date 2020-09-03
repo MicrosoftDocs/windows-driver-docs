@@ -1,18 +1,18 @@
 ---
-title: Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal
-description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Microsoft Edge Chromium, caused by the graphics drivers, over total runtime in years
+title: Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal (Ecosystem)
+description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Microsoft Edge Chromium, caused by the graphics drivers, over total runtime in years (Ecosystem)
 ms.topic: article
 ms.date: 05/11/2020
 ms.localizationpriority: medium
 ---
 
-# Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal
+# Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal (Ecosystem)
 
 ## Description
 
 When users are browsing the internet with Edge Chromium, their graphics components will process visual data from the Web and display the rendered view on the user’s screen. This measure is monitoring how often Edge Chromium crashes due to graphics driver, in relation to the Edge Chromium runtime on all devices with the driver. If Edge Chromium crashes, the user must wait for the application to recover before being able to use it again.  
 
-This is the ecosystem counterpart of [Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal](https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-user-mode-crashes-edge-chromium-standard) measure.
+This is the ecosystem counterpart of [Number of user mode crashes in Microsoft Edge Chromium normalized by usage <= Baseline goal](./graphics-user-mode-crashes-edge-chromium-standard.md) measure.
 
 ## Measure attributes
 

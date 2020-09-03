@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_AUDIO_DEVICE
 
 
-The KSCATEGORY_AUDIO_DEVICE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) represents a [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components).
+The KSCATEGORY_AUDIO_DEVICE [device interface class](./overview-of-device-interface-classes.md) represents a [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that is reserved for exclusive use by the system-supplied [WDM audio components](../audio/kernel-mode-wdm-audio-components.md).
 
 <table>
 <colgroup>
@@ -66,10 +66,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

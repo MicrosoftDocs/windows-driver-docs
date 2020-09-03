@@ -109,7 +109,7 @@ Starts a kernel debugging session using an EXDI driver. EXDI drivers are not des
 <span id="_______-lines______"></span><span id="_______-LINES______"></span> **-lines**   
 Enables source line debugging. If this option is omitted, the [**.lines (Toggle Source Line Support)**](-lines--toggle-source-line-support-.md) command will have to be used before source debugging will be allowed. For other methods of controlling this, see [SYMOPT\_LOAD\_LINES](symbol-options.md#symopt-load-lines).
 
-<span id="_______-log_a_au_o_ou__LogFile"></span><span id="_______-log_a_au_o_ou__logfile"></span><span id="_______-LOG_A_AU_O_OU__LOGFILE"></span> **-log**{**a|au|o|ou**} *LogFile*  
+<span id="_______-log_a_au_o_ou__LogFile"></span><span id="_______-log_a_au_o_ou__logfile"></span><span id="_______-LOG_A_AU_O_OU__LOGFILE"></span> **-log**{**a\|au\|o\|ou**} *LogFile*  
 Begins logging information to a log file. If *LogFile* already exists, it will be overwritten if **-logo** is used, or output will be appended to the file if **-loga** is used. The **-logau** and **-logou** options operate similar to **-loga** and **-logo** respectively, except that the log file is a Unicode file. For more details, see [Keeping a Log File in KD](keeping-a-log-file-in-kd.md).
 
 <span id="_______-m______"></span><span id="_______-M______"></span> **-m**   

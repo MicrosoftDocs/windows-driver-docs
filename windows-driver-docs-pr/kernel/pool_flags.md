@@ -67,9 +67,7 @@ Optional flags are satisfied by the pool allocator opportunistically. If the all
 
 ## Requirements
 
-| &nbsp; | &nbsp; |
-| ---- |:---- |
-|Header|wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Wudfwdm.h)|
+**Header**: wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Wudfwdm.h)
 
 ## See Also
 

@@ -16,7 +16,7 @@ Drivers can also use **EventCategoryTargetDeviceChange** notification for custom
 > [!IMPORTANT]
 > Registering for PnP target device change notifications is not intended to notify listeners about target device power state changes. If a driver needs to know about a target device power change, the driver should instead define a power relation between devices. 
 >
-> To define a power relation, the driver calls [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) with the *Type* parameter set to **PowerRelations**, then responds to the PnP manager's [IRP_MN_QUERY_DEVICE_RELATIONS](irp-mn-query-device-relations.md) query for **PowerRelations** with the correct information.
+> To define a power relation, the driver calls [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) with the *Type* parameter set to **PowerRelations**, then responds to the PnP manager's [IRP_MN_QUERY_DEVICE_RELATIONS](irp-mn-query-device-relations.md) query for **PowerRelations** with the correct information.
 
 The following subsections discuss how to register for target device change notification and how to handle target device change events in a PnP notification callback routine:
 
@@ -29,9 +29,4 @@ The following subsections discuss how to register for target device change notif
 [Handling a GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED Event](handling-a-guid-target-device-remove-cancelled-event.md)
 
  
-
- 
-
-
-
 

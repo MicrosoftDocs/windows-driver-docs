@@ -133,7 +133,7 @@ With the addition of the executor concept to non-Windows Mobile devices in Windo
 |  | OID_WWAN_SLOT_INFO_STATUS |
 
 > [!NOTE]
-> [OID_WWAN_RADIO_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-radio-state) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
+> [OID_WWAN_RADIO_STATE](./oid-wwan-radio-state.md) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
 
 ## MBIM Interface Update for Multi-SIM Operations
 
@@ -190,7 +190,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_SYS_CAPS_INFO | Not applicable |
@@ -238,7 +238,7 @@ This CID continues to be query-only and will return a MBIM_MS_DEVICE_CAPS_INFO_V
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_DEVICE_CAPS_INFO_V2 | Not applicable |
@@ -302,7 +302,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable | Not applicable |
 | Response | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable |
@@ -356,7 +356,7 @@ The Event InformationBuffer contains an MBIM_MS_SLOT_INFO structure. The functio
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_MS_SLOT_INFO_REQ | Not applicable |
 | Response | Not applicable | MBIM_MS_SLOT_INFO | MBIM_MS_SLOT_INFO |
@@ -431,4 +431,3 @@ Most of the MBIM CIDs map or relate to NDIS OIDs, but there are a few commands t
 | Per-executor | CID_MBIM_MSIPADDRESSINFO |
 |  | CID_MBIM_MSNETWORKIDLEHINT |
 |  | CID_MBIM_MULTICARRIER_CURRENT_CID_LIST |
-

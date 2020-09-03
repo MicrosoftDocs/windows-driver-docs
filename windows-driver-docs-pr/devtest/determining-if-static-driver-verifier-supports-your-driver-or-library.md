@@ -215,7 +215,7 @@ If you have a WDM driver or library and want to run SDV, the driver or library m
 
 Static Driver Verifier supports a driver or library that has links to multiple utility libraries if the driver or library conforms to the [Driver or Library requirements](#driver-or-library-requirements).
 
-|                     |
+| File Name           |
 |---------------------|
 | BufferOverflowK.lib |
 | hal.lib             |
@@ -229,4 +229,4 @@ Static Driver Verifier supports a driver or library that has links to multiple u
 
 ## Static Driver Verifier and Microsoft Class Framework libraries
 
-If you are working with WDM drivers that must link to a class framework library in the [Class framework libraries](#class-framework-libraries) list the driver will fail the Static Driver Verifier condition. However, there are some generic rules that can still be used such as the [NullCheck rule](https://docs.microsoft.com/windows-hardware/drivers/devtest/nullcheck) to perform some level of static verification.
+If you are working with WDM drivers that must link to a class framework library in the [Class framework libraries](#class-framework-libraries) list the driver will fail the Static Driver Verifier condition. However, there are some generic rules that can still be used such as the [NullCheck rule](./nullcheck.md) to perform some level of static verification.

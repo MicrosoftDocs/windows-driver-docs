@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="pcm_stream_data_range"></span><span id="PCM_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure to describe the data range for a PCM stream.
+This example uses a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure to describe the data range for a PCM stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
@@ -32,9 +32,4 @@ This example uses a [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-
 ```
 
  
-
- 
-
-
-
 

@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 # Specifying Priority Boosts When Completing I/O Requests
 
 
-When a driver completes an I/O request, it can call [**WdfRequestCompleteWithPriorityBoost**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost) to specify a value that the system uses to boost the run-time priority of the thread that requested the I/O operation.
+When a driver completes an I/O request, it can call [**WdfRequestCompleteWithPriorityBoost**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost) to specify a value that the system uses to boost the run-time priority of the thread that requested the I/O operation.
 
-If the driver calls [**WdfRequestComplete**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) or [**WdfRequestCompleteWithInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation) instead of [**WdfRequestCompleteWithPriorityBoost**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost), the framework uses a default priority boost value that is based on the device type. The following table lists the default priority boost values that the framework uses. The device type and priority boost constants are defined in *Wdm.h*.
+If the driver calls [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) or [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation) instead of [**WdfRequestCompleteWithPriorityBoost**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost), the framework uses a default priority boost value that is based on the device type. The following table lists the default priority boost values that the framework uses. The device type and priority boost constants are defined in *Wdm.h*.
 
 |Device Type|Default Priority Boost|
 |--- |--- |
@@ -82,10 +82,4 @@ If the driver calls [**WdfRequestComplete**](https://docs.microsoft.com/windows-
  
 
  
-
- 
-
-
-
-
 

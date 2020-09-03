@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_writing_preoperation_and_postoperation_callback_routines_if"></span><span id="DDK_WRITING_PREOPERATION_AND_POSTOPERATION_CALLBACK_ROUTINES_IF"></span>
 
 
-In its **DriverEntry** routine, a minifilter driver can register up to one [**preoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) and up to one [**postoperation callback routine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_post_operation_callback) for each type of I/O operation that it needs to filter.
+In its **DriverEntry** routine, a minifilter driver can register up to one [**preoperation callback routine**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) and up to one [**postoperation callback routine**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_post_operation_callback) for each type of I/O operation that it needs to filter.
 
 Unlike a legacy file system filter driver, a minifilter driver can choose which types of I/O operations to filter. A minifilter driver can register a preoperation callback routine for a given type of I/O operation without registering a postoperation callback, and vice versa. The minifilter driver receives only those I/O operations for which it has registered a preoperation or postoperation callback routine.
 
@@ -49,9 +49,4 @@ This section includes:
 [Accessing the User Buffers for an I/O Operation](accessing-the-user-buffers-for-an-i-o-operation.md)
 
  
-
- 
-
-
-
 

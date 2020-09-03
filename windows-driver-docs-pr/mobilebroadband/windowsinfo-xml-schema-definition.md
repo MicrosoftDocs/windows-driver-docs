@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # WindowsInfo XML Schema Definition
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following are the namespaces of the WindowsInfo XML schema:
 
@@ -37,7 +37,7 @@ The following is a definition of the WindowsInfo XML schema:
     </xs:sequence>
   </xs:complexType>
 
-</xs:schema> 
+</xs:schema>
 ```
 
 The following is a definition of the WindowsInfov2 XML schema:
@@ -161,12 +161,3 @@ The following is a definition of the WindowsInfov2 XML schema:
   
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-

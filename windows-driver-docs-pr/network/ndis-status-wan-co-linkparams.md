@@ -16,9 +16,9 @@ The NDIS\_STATUS\_WAN\_CO\_FRAGMENT status indicates that parameters for a parti
 Remarks
 -------
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a pointer to a [**WAN\_CO\_LINKPARAMS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565819(v=vs.85)) structure. The WAN\_CO\_LINKPARAMS structure describes new parameters for the VC.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains a pointer to a [**WAN\_CO\_LINKPARAMS**](/previous-versions/windows/hardware/network/ff565819(v=vs.85)) structure. The WAN\_CO\_LINKPARAMS structure describes new parameters for the VC.
 
-For more information about NDIS\_STATUS\_WAN\_CO\_LINKPARAMS, see [Indicating CoNDIS WAN Miniport Driver Status](https://docs.microsoft.com/windows-hardware/drivers/network/indicating-condis-wan-miniport-driver-status). For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/implementing-condis-wan-miniport-drivers).
+For more information about NDIS\_STATUS\_WAN\_CO\_LINKPARAMS, see [Indicating CoNDIS WAN Miniport Driver Status](./indicating-condis-wan-miniport-driver-status.md). For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers](./implementing-condis-wan-miniport-drivers.md).
 
 Requirements
 ------------
@@ -43,14 +43,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
-[**WAN\_CO\_LINKPARAMS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565819(v=vs.85))
-
- 
+[**WAN\_CO\_LINKPARAMS**](/previous-versions/windows/hardware/network/ff565819(v=vs.85))
 
  
-
-
-
 

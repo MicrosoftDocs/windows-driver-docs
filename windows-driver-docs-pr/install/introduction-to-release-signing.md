@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 
 The [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has [test categories](https://go.microsoft.com/fwlink/p/?linkid=189178) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package.
 
-**Note**  On Windows Server 2003, Windows XP, and Windows 2000, the INF file from the WHQL-signed [driver package](driver-packages.md) must use a [device setup class](device-setup-classes.md) that is defined in *%SystemRoot%/inf/Certclas.inf*. Otherwise, Windows treats the driver package as unsigned.
+**Note**  On Windows Server 2003, Windows XP, and Windows 2000, the INF file from the WHQL-signed [driver package](driver-packages.md) must use a [device setup class](./overview-of-device-setup-classes.md) that is defined in *%SystemRoot%/inf/Certclas.inf*. Otherwise, Windows treats the driver package as unsigned.
 
  
 
@@ -48,10 +48,4 @@ For more information about the release-signing requirements and procedures, see 
  
 
  
-
- 
-
-
-
-
 

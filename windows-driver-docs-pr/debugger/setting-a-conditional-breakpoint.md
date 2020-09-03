@@ -115,7 +115,7 @@ For more information about which numbers are sign-extended by the debugger, see 
 
 ### <span id="conditional_breakpoints_in_windbg"></span><span id="CONDITIONAL_BREAKPOINTS_IN_WINDBG"></span>Conditional Breakpoints in WinDbg
 
-In WinDbg, you can create a conditional breakpoint by clicking [Breakpoints](edit---breakpoints.md) from the **Edit** menu, entering a new breakpoint address into the **Command** box, and entering a condition into the **Condition** box.
+In WinDbg, you can create a conditional breakpoint by selecting [Breakpoints](edit---breakpoints.md) from the **Edit** menu, entering a new breakpoint address into the **Command** box, and entering a condition into the **Condition** box.
 
 For example, typing **mymod!myFunc+0x3A** into the **Command** box and **myVar &lt; 7** into the **Condition** box is equivalent to issuing the following command:
 

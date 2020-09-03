@@ -1,5 +1,5 @@
 ---
-Description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
+description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
 title: USB Type-C Connector System Software Interface (UCSI) driver
 ms.date: 04/20/2017
 ms.localizationpriority: High
@@ -58,7 +58,7 @@ In the preceding image,
 
 -   **USB connector manager**
 
-    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined by the UCSI specification available [here](https://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
+    Microsoft provides a UCSI in-box driver with Windows (UcmUcsiCx.sys) that implements the features defined in the [USB Type-C Connector System Software Interface Specification](https://go.microsoft.com/fwlink/p/?LinkId=703713). The specification describes the capabilities of UCSI and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
 
     This driver is intended for systems with embedded controllers. This driver is a client to the Microsoft-provided USB connector manager class extension driver (Ucmcx.sys). The driver handles tasks such as initiating a request to the firmware to change the data or power roles and getting information needed to provide troubleshooting messages to the user.
 
@@ -116,7 +116,7 @@ There are a number of ways to test your UCSI implementation. To test individual 
 You can test individual commands in your UCSI BIOS/EC implementation by using UCSIControl.exe. This tool enables you to send UCSI commands to the firmware through the UCSI driver. It requires the driver to be loaded and running, and also have the test interface to the driver enabled. By default, this interface is not enabled so as to prevent it from being accessible to unauthorized users on a retail system.
 
 1.  Locate the device node in Device Manager (devmgmt.msc) named **UCSI USB Connector Manager**. The node is under the **Universal Serial Bus controllers** category.
-2.  Right-click on the device, and select **Properties** and open the **Details** tab.
+2.  Select and hold (or right-click) on the device, and select **Properties** and open the **Details** tab.
 3.  Select **Device Instance Path** from the drop-down and note the property value.
 4.  Open Registry Editor (regedit.exe).
 5.  Navigate to the device instance path under this key.

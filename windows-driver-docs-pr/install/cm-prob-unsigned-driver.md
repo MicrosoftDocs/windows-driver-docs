@@ -28,4 +28,4 @@ For driver developers, you can use various methods to load an unsigned driver on
 
 ## See Also
 
-[Code Integrity Diagnostic System Log Events](https://docs.microsoft.com/windows-hardware/drivers/install/code-integrity-diagnostic-system-log-events)
+[Code Integrity Diagnostic System Log Events](./code-integrity-diagnostic-system-log-events.md)

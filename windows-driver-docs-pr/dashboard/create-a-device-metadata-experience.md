@@ -53,7 +53,7 @@ Before you can submit the files for logo certification, you must package the fil
    </tr>
    <tr class="even">
    <td><p>Preview package</p></td>
-   <td><p>Select this if you want to submit all your selected packages as preview packages. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/" data-raw-source="[Creating a Preview Package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)">Creating a Preview Package</a>.</p></td>
+   <td><p>Select this if you want to submit all your selected packages as preview packages. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/" data-raw-source="[Creating a Preview Package](./index.yml)">Creating a Preview Package</a>.</p></td>
    </tr>
    <tr class="odd">
    <td><p>Bind to logo submissions</p></td>
@@ -74,20 +74,13 @@ Before you can submit the files for logo certification, you must package the fil
 ## <span id="related_topics"></span>Related topics
 
 
-[Manage Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+[Manage Device Metadata Experiences](./index.yml)
 
-[Submit a Bulk Metadata Package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+[Submit a Bulk Metadata Package](./index.yml)
 
-[Errors and Solutions When Submitting Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+[Errors and Solutions When Submitting Device Metadata Experiences](./index.yml)
 
-[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
-
- 
+[Device Metadata Business Rules](./index.yml)
 
  
-
-
-
-
-
 

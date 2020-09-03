@@ -27,7 +27,7 @@ The following table shows support for UVC in different versions of Windows:
 | USB Video Class 1.1 | Not supported | Supported | Supported |
 | USB Video Class 1.0 | Supported | Supported | Supported |
 
-Beginning with Windows 8, the H.264 video codec (encoder/decoder) is supported. H.264 is an open standard that allows efficient video compression techniques for reducing the use of network bandwidth and storage space. This leads to a higher video quality for a given bit rate. For more information, see [USB H.264 Video Cameras Support](usb-h-264-video-cameras-support.md). Also refer to [Microsoft Proposed Extensions to the USB Video Class for H.264](https://docs.microsoft.com/previous-versions/windows/hardware/download/dn550976(v=vs.85)).
+Beginning with Windows 8, the H.264 video codec (encoder/decoder) is supported. H.264 is an open standard that allows efficient video compression techniques for reducing the use of network bandwidth and storage space. This leads to a higher video quality for a given bit rate. For more information, see [USB H.264 Video Cameras Support](usb-h-264-video-cameras-support.md). Also refer to [Microsoft Proposed Extensions to the USB Video Class for H.264](/previous-versions/windows/hardware/download/dn550976(v=vs.85)).
 
 The following list shows some advantages to using the Usbvideo.sys driver:
 

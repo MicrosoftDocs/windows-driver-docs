@@ -26,7 +26,7 @@ The subkey for the driver always uses the driver's service name, even if the dri
 
 *REG\_DWORD*
 
-If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example in the [**VerifierOn**](#verifieron) section.
+If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.) See the code example in the [**VerifierOn**](#verifieron) section.
 
 ## DbgPrintOn
 
@@ -77,9 +77,9 @@ This value contains a bitmap. Each bit represents an additional verifier option 
 
 **0x1**: If set, the verifier checks whether each of the driver's event callback functions does the following:
 
--   Returns at the same IRQL at which it was called. If the values are different, a [**WDF\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x10d---wdf-violation) bug check occurs with an error code of 0xE.
+-   Returns at the same IRQL at which it was called. If the values are different, a [**WDF\_VIOLATION**](../debugger/bug-check-0x10d---wdf-violation.md) bug check occurs with an error code of 0xE.
 
--   Before returning, exits all [critical regions](https://docs.microsoft.com/windows-hardware/drivers/kernel/critical-regions-and-guarded-regions) that it enters. If the callback function returns within a critical region that it entered, a [**WDF\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x10d---wdf-violation) bug check occurs with an error code of 0xF.
+-   Before returning, exits all [critical regions](../kernel/critical-regions-and-guarded-regions.md) that it enters. If the callback function returns within a critical region that it entered, a [**WDF\_VIOLATION**](../debugger/bug-check-0x10d---wdf-violation.md) bug check occurs with an error code of 0xF.
 
 **0x10000**: If set, and if the driver has enabled [guaranteed forward progress](guaranteeing-forward-progress-of-i-o-operations.md) for an I/O queue, the framework simulates a low-memory situation for each of the queue's I/O requests.
 
@@ -121,7 +121,7 @@ For changes to UMDF registry values to take effect, you must reboot the computer
 
 *REG\_DWORD, UMDF-only*
 
-This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\{193a1820-d9ac-4997-8c55-be817523f6aa}`. You can set it by using the [WDF Verifier tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab) (WdfVerifier.exe) in the WDK. This value affects all UMDF drivers on the system.
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\{193a1820-d9ac-4997-8c55-be817523f6aa}`. You can set it by using the [WDF Verifier tool](../devtest/global-wdf-settings-tab.md) (WdfVerifier.exe) in the WDK. This value affects all UMDF drivers on the system.
 
 Contains a delay value in seconds. Causes WUDFHost to delay the specified number of seconds after the driver has been loaded. The behavior for **HostProcessDbgBreakOnDriverLoad** is otherwise the same as that described for **HostProcessDbgBreakOnStart**.
 
@@ -132,7 +132,7 @@ Specifying **HostProcessDbgBreakOnStart** or **HostProcessDbgBreakOnDriverLoad**
 
 *REG\_DWORD, UMDF-only*
 
-This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\{193a1820-d9ac-4997-8c55-be817523f6aa}`. You can set it by using the [WDF Verifier tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab) (WdfVerifier.exe) in the WDK. This value affects all UMDF drivers on the system.
+This registry value is located in `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\{193a1820-d9ac-4997-8c55-be817523f6aa}`. You can set it by using the [WDF Verifier tool](../devtest/global-wdf-settings-tab.md) (WdfVerifier.exe) in the WDK. This value affects all UMDF drivers on the system.
 
 Contains a delay value in seconds. During the specified delay period, the host process looks for the user-mode debugger once a second and breaks in if one is connected. If a user-mode debugger is not attached within this period and the high bit in **HostProcessDbgBreakOnStart** is set (0x80000000), the framework makes a single attempt to break into the kernel-mode debugger. For example:
 
@@ -142,7 +142,7 @@ Contains a delay value in seconds. During the specified delay period, the host p
 |0x80000000|The framework makes a single attempt to connect to the user-mode debugger. If the user-mode debugger is not attached, the framework tries to connect to the kernel-mode debugger.|
 |0x80000004|The framework attempts to connect to the user-mode debugger once a second for 4 seconds. If the user-mode debugger is not attached within 4 seconds, the framework tries to connect to the kernel-mode debugger.|
 
-You can also set this registry value by using the [WDF Verifier tool](https://docs.microsoft.com/windows-hardware/drivers/devtest/global-wdf-settings-tab) (WdfVerifier.exe) that is included in the WDK.
+You can also set this registry value by using the [WDF Verifier tool](../devtest/global-wdf-settings-tab.md) (WdfVerifier.exe) that is included in the WDK.
 
 
 ## LogPages
@@ -224,7 +224,4 @@ For example, if your driver was built with version 1.7 of the framework, and if 
 
 *REG\_DWORD*
 
-Set to a nonzero value to enable the [**WDFVERIFY**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfverify) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifierOn value is set, VerifyOn is implicitly set to nonzero.
-
-
-
+Set to a nonzero value to enable the [**WDFVERIFY**](./wdfverify.md) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifierOn value is set, VerifyOn is implicitly set to nonzero.

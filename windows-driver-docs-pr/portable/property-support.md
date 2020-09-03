@@ -1,5 +1,5 @@
 ---
-Description: Property Support
+description: Property Support
 title: Property Support
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -12,14 +12,18 @@ The *WpdObjectProperties.cpp* and *WpdObjectProperties.h* files contain the memb
 
 When a Windows application calls one of the five methods in the **IPortableDeviceProperties** interface, this call, in turn, triggers one of five command handlers in the **WpdObjectProperty** class. The following table identifies the mapping of application methods to **WpdObjectProperties** driver methods.
 
-|                                                       |                                                   |
-|-------------------------------------------------------|---------------------------------------------------|
-| **IPortableDeviceProperties Method**                  | **WpdObjectProperties Command Handler**           |
-| **IPortableDeviceProperties::Delete**                 | **OnDelete**                                      |
-| **IPortableDeviceProperties::GetPropertyAttributes**  | **OnGetPropertyAttributes**                       |
-| **IPortableDeviceProperties::GetSupportedProperties** | **OnGetSupportedProperties**                      |
-| **IPortableDeviceProperties::GetValues**              | **OnGetPropertyValues or OnGetAllPropertyValues** |
-| **IPortableDeviceProperties::SetValues**              | **OnSetPropertyValues**                           |
+****IPortableDeviceProperties Method****: **WpdObjectProperties Command Handler**
+
+****IPortableDeviceProperties::Delete****: **OnDelete**
+
+****IPortableDeviceProperties::GetPropertyAttributes****: **OnGetPropertyAttributes**
+
+****IPortableDeviceProperties::GetSupportedProperties****: **OnGetSupportedProperties**
+
+****IPortableDeviceProperties::GetValues****: **OnGetPropertyValues or OnGetAllPropertyValues**
+
+****IPortableDeviceProperties::SetValues****: **OnSetPropertyValues**
+
 
  
 

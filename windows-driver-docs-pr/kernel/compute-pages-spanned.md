@@ -25,7 +25,7 @@ This topic summarizes the following obsolete macros:
 <tbody>
 <tr class="odd">
 <td><strong>COMPUTE_PAGES_SPANNED</strong></td>
-<td><p>Use <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ADDRESS_AND_SIZE_TO_SPAN_PAGES&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer)"><strong>ADDRESS_AND_SIZE_TO_SPAN_PAGES</strong></a> instead.</p></td>
+<td><p>Use <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ADDRESS_AND_SIZE_TO_SPAN_PAGES&lt;/strong&gt;](./mm-bad-pointer.md)"><strong>ADDRESS_AND_SIZE_TO_SPAN_PAGES</strong></a> instead.</p></td>
 </tr>
 </tbody>
 </table>
@@ -33,9 +33,4 @@ This topic summarizes the following obsolete macros:
  
 
  
-
- 
-
-
-
 

@@ -17,13 +17,7 @@ ms.localizationpriority: medium
 
 This section describes the restrictions imposed by Windows 2000 and later operating systems on memory windows of PCMCIA memory cards.
 
-The resource requirements of a PCMCIA memory card are normally specified by the bus driver when it enumerates the device at the request of the Plug and Play manager. Specific memory windows can also be specified in an [**INF DDInstall.LogConfigOverride section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-logconfigoverride-section) of a device driver's INF file. A maximum of two memory windows can be requested for a PCMCIA memory card.
+The resource requirements of a PCMCIA memory card are normally specified by the bus driver when it enumerates the device at the request of the Plug and Play manager. Specific memory windows can also be specified in an [**INF DDInstall.LogConfigOverride section**](../install/inf-ddinstall-logconfigoverride-section.md) of a device driver's INF file. A maximum of two memory windows can be requested for a PCMCIA memory card.
 
  
-
- 
-
-
-
-
 

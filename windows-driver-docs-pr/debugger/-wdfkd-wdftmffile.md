@@ -55,13 +55,7 @@ kd> !wdftmffile tools\tracing\<platform>\wdf1005.tmf
 
 Note that the path might be different for the version of the Windows Driver Kit (WDK) that you are using. Also note that the .tmf file's name represents the version of KMDF that you are using. For example, Wdf1005.tmf is the .tmf file for KMDF version 1.5.
 
-For information about how to view the KMDF log during a debugging session, see [Using the Framework's Event Logger](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-s-event-logger).
+For information about how to view the KMDF log during a debugging session, see [Using the Framework's Event Logger](../wdf/using-the-framework-s-event-logger.md).
 
  
-
- 
-
-
-
-
 

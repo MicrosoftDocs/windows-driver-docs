@@ -28,15 +28,9 @@ class MSFC_AdapterEvent : WMIEvent  {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_AdapterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_adapterevent)
+[**MSFC\_AdapterEvent**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_adapterevent)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

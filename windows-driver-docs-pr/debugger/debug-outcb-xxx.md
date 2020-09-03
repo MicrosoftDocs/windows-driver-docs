@@ -34,9 +34,8 @@ The possible values include the following.
 Requirements
 ------------
 
-|||
-|-----|-------|
-|Header|DbgEng.h (include DbgEng.h)|
+**Header**: DbgEng.h (include DbgEng.h)
+
 
  
 

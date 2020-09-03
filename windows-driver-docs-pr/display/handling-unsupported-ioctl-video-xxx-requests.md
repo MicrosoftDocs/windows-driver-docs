@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_unsupported_ioctl_video_xxx_requests_gg"></span><span id="DDK_HANDLING_UNSUPPORTED_IOCTL_VIDEO_XXX_REQUESTS_GG"></span>
 
 
-Every [*HwVidStartIO*](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_start_io) function also must handle the receipt of an unsupported IOCTL\_VIDEO\_*XXX*, as follows:
+Every [*HwVidStartIO*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_start_io) function also must handle the receipt of an unsupported IOCTL\_VIDEO\_*XXX*, as follows:
 
 1.  Set the input VRP's **Status** field to ERROR\_INVALID\_FUNCTION.
 
@@ -26,13 +26,7 @@ Every [*HwVidStartIO*](https://docs.microsoft.com/windows-hardware/drivers/ddi/v
 
 3.  Return **TRUE** to indicate the request was processed.
 
-See the [**VIDEO\_REQUEST\_PACKET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) and [**STATUS\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_status_block) structures for more details.
+See the [**VIDEO\_REQUEST\_PACKET**](/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) and [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structures for more details.
 
  
-
- 
-
-
-
-
 

@@ -33,11 +33,11 @@ The *productID*, *submissionID* and *shippingLabelId* in the method represent th
 
 ### Request parameters
 
-Do not provide request parameters for this method. 
+Do not provide request parameters for this method.
 
 ### Request body
 
-Do not provide request body for this method. 
+Do not provide request body for this method.
 
 ### Request examples
 

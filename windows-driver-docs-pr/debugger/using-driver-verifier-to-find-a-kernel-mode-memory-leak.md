@@ -17,13 +17,7 @@ While this feature is active, use the Driver Verifier Manager graphical interfac
 
 If the driver uses Direct Memory Access (DMA), the DMA Verification feature of Driver Verifier is also helpful in finding memory leaks. DMA Verification tests for a number of common misuses of DMA routines, including failure to free common buffers and other errors that can lead to memory leaks. If a kernel debugger is attached while this option is active, use the [**!dma**](-dma.md) extension to show allocation statistics.
 
-For information about Driver Verifier, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) in the Windows Driver Kit (WDK) documentation.
+For information about Driver Verifier, see [Driver Verifier](../devtest/driver-verifier.md) in the Windows Driver Kit (WDK) documentation.
 
  
-
- 
-
-
-
-
 

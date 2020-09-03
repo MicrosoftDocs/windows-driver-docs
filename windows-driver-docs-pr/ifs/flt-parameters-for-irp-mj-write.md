@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 # FLT_PARAMETERS for IRP_MJ_WRITE union
 
-The following union component is used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP_MJ_WRITE**](irp-mj-write.md).
+The following union component is used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP_MJ_WRITE**](irp-mj-write.md).
 
 ## Syntax
 
@@ -57,7 +57,7 @@ Address of a memory descriptor list (MDL) that describes the buffer that the **W
 
 ## Remarks
 
-The [**FLT_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_WRITE operations contains the parameters for a write operation represented by a callback data ([**FLT_CALLBACK_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
+The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_WRITE operations contains the parameters for a write operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
 If both a **WriteBuffer** and **MdlAddress** buffer are provided, it is recommended that minifilters use the MDL. The memory that **WriteBuffer** points to is valid when it is a user mode address being accessed within the context of the calling process, or if it is a kernel mode address.
 
@@ -67,26 +67,25 @@ IRP_MJ_WRITE can be an IRP-based operation or a fast I/O operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | Fltkernel.h (include Fltkernel.h) |
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 
-[**FLT_CALLBACK_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT_IO_PARAMETER_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
+[**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT_IS_FASTIO_OPERATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/index)
 
-[**FLT_IS_FS_FILTER_OPERATION**](https://docs.microsoft.com/previous-versions/ff544648(v=vs.85))
+[**FLT_IS_FS_FILTER_OPERATION**](/previous-versions/ff544648(v=vs.85))
 
-[**FLT_IS_IRP_OPERATION**](https://docs.microsoft.com/previous-versions/ff544654(v=vs.85))
+[**FLT_IS_IRP_OPERATION**](/previous-versions/ff544654(v=vs.85))
 
-[**FLT_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
+[**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**FltWriteFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltwritefile)
+[**FltWriteFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltwritefile)
 
 [**IRP_MJ_WRITE**](irp-mj-write.md)
 
-[**ZwWriteFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile)
+[**ZwWriteFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntwritefile)

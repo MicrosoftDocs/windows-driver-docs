@@ -40,4 +40,4 @@ You can use intermediate drivers to:
 
 [NDIS Intermediate Drivers](ndis-intermediate-drivers2.md)
 
-[NDIS Intermediate Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[NDIS Intermediate Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

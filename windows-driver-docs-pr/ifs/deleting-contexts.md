@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 Every context that is set by a successful call to **FltSet***Xxx***Context** must eventually be deleted. However, the filter manager deletes contexts automatically when the objects that they are attached to are deleted, when a minifilter driver instance is detached from a volume, or when the minifilter driver is unloaded. Thus, it is rarely necessary for a minifilter driver to explicitly delete a context.
 
-A minifilter driver can delete a context by calling **FltDelete***Xxx***Context**, where *Xxx* is the context type, or by calling [**FltDeleteContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletecontext).
+A minifilter driver can delete a context by calling **FltDelete***Xxx***Context**, where *Xxx* is the context type, or by calling [**FltDeleteContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletecontext).
 
 A context can be deleted only if it is currently set for an object. A context cannot be deleted if it has not yet been set, or if it has already been replaced by a successful call to **FltSet***Xxx***Context**.
 
@@ -36,12 +36,7 @@ if (oldContext != NULL) {
 }
 ```
 
-In this example, [**FltDeleteStreamContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletestreamcontext) removes the stream context from the stream, but it does not decrement the context's reference count, because the *OldContext* parameter is non-**NULL**. **FltDeleteStreamContext** returns the address of the deleted context in the *OldContext* parameter. After performing any needed processing, the caller must release the deleted context by calling **FltReleaseContext**.
+In this example, [**FltDeleteStreamContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletestreamcontext) removes the stream context from the stream, but it does not decrement the context's reference count, because the *OldContext* parameter is non-**NULL**. **FltDeleteStreamContext** returns the address of the deleted context in the *OldContext* parameter. After performing any needed processing, the caller must release the deleted context by calling **FltReleaseContext**.
 
  
-
- 
-
-
-
 

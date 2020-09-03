@@ -379,4 +379,4 @@ The following table describes the details used in the purchase metadata.
 
 ## Legacy callback notifications
 
-Please refer to the specific page where all legacy callbacks are documented [here](mobile-plans-legacy-callback-notifications.md)
+Please refer to the specific page where all [legacy callbacks are documented](mobile-plans-legacy-callback-notifications.md).

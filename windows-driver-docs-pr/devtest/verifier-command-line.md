@@ -553,11 +553,11 @@ Options for rules that can be disabled (advanced).
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>default</strong> <em>ID</em></p></td>
-<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>disable</strong> <em>ID</em></p></td>
-<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -568,7 +568,7 @@ Options for rules that can be disabled (advanced).
 (Windows XP and later) Activates the "standard" or default Driver Verifier options after the next boot. The standard options in Windows XP are [Special Pool](special-pool.md), [Force IRQL Checking](force-irql-checking.md), [Pool Tracking](pool-tracking.md), [I/O Verification](i-o-verification.md), [Deadlock Detection](deadlock-detection.md), and [DMA Verification](dma-verification.md). This is equivalent to **/flags 0xBB**. Starting with Windows Vista, the standard options also include [Security Checks](security-checks.md) and [Miscellaneous Checks](miscellaneous-checks.md). This is equivalent to **/flags 0x9BB**. Starting with Windows 8, the standard options also include [DDI compliance checking](ddi-compliance-checking.md). This is equivalent to **/flags 0x209BB**.
 
 > [!NOTE]
-> Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included. See [Driver Verifier Command Syntax](https://docs.microsoft.com/windows-hardware/drivers/devtest/verifier-command-line) for more information.
+> Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included. See [Driver Verifier Command Syntax]() for more information.
 
 <span id="________volatile______"></span><span id="________VOLATILE______"></span> **/volatile**   
 Changes the settings without rebooting the computer. Volatile settings take effect immediately.
@@ -697,19 +697,8 @@ For more information about the use of these commands, see [Controlling Driver Ve
 
 The following values are returned after driver verifier has run.
 
-|     |                            |
-|-----|----------------------------|
-| 0   | EXIT\_CODE\_SUCCESS        |
-| 1   | EXIT\_CODE\_ERROR          |
-| 2   | EXIT\_CODE\_REBOOT\_NEEDED |
+**0**: EXIT\_CODE\_SUCCESS
 
+**1**: EXIT\_CODE\_ERROR
 
-
-
-
-
-
-
-
-
-
+**2**: EXIT\_CODE\_REBOOT\_NEEDED

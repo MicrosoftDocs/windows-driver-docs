@@ -186,10 +186,10 @@ Directly within the host object, the following properties, methods, and construc
 
 <table>
 <colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="30%" />
 </colgroup>
 <thead>
 <tr class="header">

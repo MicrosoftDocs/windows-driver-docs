@@ -45,8 +45,7 @@ For more information, see [WinDbg Preview - View menu](windbg-view-preview.md).
 
 - **Command window** - Use the command window provides easy access to toggle DML and clear the debugger command window. All current debugger commands are compatible with and continue to work in WinDbg Preview.
 
-
-### Dark theme 
+### Dark theme
 
 Use **File** > **Settings** to enable the dark theme.
 
@@ -58,11 +57,11 @@ Just pin the buttons you use the most and you can collapse the ribbon to save sc
 
 ![Screen shot showing a ribbon with pinned items](images/windbgx-quick-access.png)
 
-### Source Window
+### Source code
 
-The source window has been updated to be much more in line with modern editors.
+The source code window has been updated to be much more in line with modern editors.
 
-![Screen shot of scripting menu in debugger](images/windbgx-source-window.png)
+![Screen shot of source code windows in debugger](images/windbgx-source-window.png)
 
 ### Highlighting
 
@@ -80,17 +79,17 @@ Just hit Ctrl+Tab and you can easily navigate between windows with just your key
 
 If you need a TTD trace of your application, just check the "Record with Time Travel Debugging" box when launching or attaching. WinDbgNext will set it up for TTD and open the trace when you're done recording.
 
-![Screen shot showing ctrl tab menu](images/windbgx-ttd.png)
+![Screen shot showing process record menu with a notepad process being seleced for recording](images/windbgx-ttd.png)
 
 For more information, see [Time Travel Debugging - Overview](time-travel-debugging-overview.md).
 
 ### Debugging App packages
 
-Debugging your universal app or background task is now a single click.
+Debugging your universal app or background task is now a single click or select.
 
 ![Launch App Package Applications tab showing cal in the search box with three apps listed](images/windbgx-launch-app-package.png)
 
-For more information, see [Launch App Package](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-user-mode-preview#launch-app-package).
+For more information, see [Launch App Package](./windbg-user-mode-preview.md#launch-app-package).
 
 ### Attach to a process
 
@@ -118,11 +117,11 @@ For more information, see [WinDbg Preview - Data model](windbg-data-model-previe
 
 - **Script development UI** - There is now a purpose built scripting window to make developing JavaScript and NatVis scripts easier, with error highlighting and IntelliSense.
 
-![Screen shot of scripting menu in debugger](images/windbgx-scripting-intellisense.png)
+![Screen shot of scripting menu in debugger showing intellisense](images/windbgx-scripting-intellisense.png)
 
 For more information, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
-### Backwards compatibility 
+### Backwards compatibility
 
 Because the underling debugger engine is the same, all of the previous debugger commands and debugger extensions continue to work.
 
@@ -137,7 +136,7 @@ Your feedback will help guide WinDbg's development going forward.
 ### Team Blog
 
 The debugger team blog, although now inactive, includes tips and tricks.
-[https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
+[/archive/blogs/windbg/](/archive/blogs/windbg/)
 
 ## Videos
 

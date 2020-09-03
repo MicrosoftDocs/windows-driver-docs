@@ -166,11 +166,11 @@ Different types of device metadata packages must follow different rules. Additio
 
 ### <span id="bkmk-unique"></span>Unique Device Stage Metadata Submissions
 
-To submit a PC metadata package, see, [Submit a PC device manifest package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+To submit a PC metadata package, see, [Submit a PC device manifest package](./index.yml).
 
-To submit a mobile broadband metadata package, see [Submit a mobile broadband device manifest package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+To submit a mobile broadband metadata package, see [Submit a mobile broadband device manifest package](./index.yml).
 
-To submit a multiple-locale metadata package, see [Submit a Multiple-locale device manifest package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+To submit a multiple-locale metadata package, see [Submit a Multiple-locale device manifest package](./index.yml).
 
 ### <span id="Windows_Store_device_app_limits"></span><span id="windows_store_device_app_limits"></span><span id="WINDOWS_STORE_DEVICE_APP_LIMITS"></span>UWP device app limits
 
@@ -222,18 +222,11 @@ In each device metadata package, the following limits apply:
 ## <span id="related_topics"></span>Related topics
 
 
-- [Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Create a Device Metadata Experience](./index.yml)
 
-- [Manage Device Metadata Experiences](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+- [Manage Device Metadata Experiences](./index.yml)
 
-- [Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
-
- 
+- [Submit a Device Metadata Package (Dashboard help)](./index.yml)
 
  
-
-
-
-
-
 

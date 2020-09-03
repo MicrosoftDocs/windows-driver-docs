@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 \[Applies to KMDF and UMDF\]
 
-The **WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE** macro initializes a driver's [**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure and inserts an object's driver-defined context information into the structure.
+The **WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE** macro initializes a driver's [**WDF_OBJECT_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure and inserts an object's driver-defined context information into the structure.
 
 Syntax
 ------
@@ -29,7 +29,7 @@ Parameters
 ----------
 
 *_attributes*   
-A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
+A pointer to a [**WDF_OBJECT_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure.
 
 *_contexttype*   
 The structure type name of a driver-defined structure that describes the contents of an object's context space.
@@ -44,12 +44,12 @@ Remarks
 
 Before calling **WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE**, you must call [**WDF_DECLARE_CONTEXT_TYPE**](wdf-declare-context-type.md) or [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md) globally (not within a function).
 
-The **WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE** macro combines the [**WDF_OBJECT_ATTRIBUTES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init) function and the [**WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE**](wdf-object-attributes-set-context-type.md) macro.
+The **WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE** macro combines the [**WDF_OBJECT_ATTRIBUTES_INIT**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init) function and the [**WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE**](wdf-object-attributes-set-context-type.md) macro.
 
 Examples
 --------
 
-The following code example defines a WDM_NDIS_REQUEST context structure. Then, the example invokes the [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md) macro to register the structure and specify that the context accessor method will be named **RequestGetMyContext**. Then, in a function, the example allocates a [**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure, and then initializes the **WDF_OBJECT_ATTRIBUTES** structure.
+The following code example defines a WDM_NDIS_REQUEST context structure. Then, the example invokes the [**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](wdf-declare-context-type-with-name.md) macro to register the structure and specify that the context accessor method will be named **RequestGetMyContext**. Then, in a function, the example allocates a [**WDF_OBJECT_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes) structure, and then initializes the **WDF_OBJECT_ATTRIBUTES** structure.
 
 ```cpp
 typedef struct _WDM_NDIS_REQUEST
@@ -105,18 +105,11 @@ Requirements
 ## See also
 
 
-[**WDF_OBJECT_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes)
+[**WDF_OBJECT_ATTRIBUTES**](/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes)
 
-[**WDF_OBJECT_ATTRIBUTES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init)
+[**WDF_OBJECT_ATTRIBUTES_INIT**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdf_object_attributes_init)
 
 [**WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE**](wdf-object-attributes-set-context-type.md)
 
  
-
- 
-
-
-
-
-
 

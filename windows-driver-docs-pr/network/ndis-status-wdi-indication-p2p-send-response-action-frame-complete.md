@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_RESPONSE\_ACTION\
 
 | Type                                                                                                       | Multiple TLV instances allowed | Optional                                            | Description                                                            |
 |------------------------------------------------------------------------------------------------------------|--------------------------------|-----------------------------------------------------|------------------------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_SEND\_ACTION\_FRAME\_RESULT**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-send-action-frame-result-parameters) |                                | This TLV is only required if the status is success. | Information about the Response Action frame that was sent to the peer. |
+| [**WDI\_TLV\_P2P\_SEND\_ACTION\_FRAME\_RESULT**](./wdi-tlv-p2p-send-action-frame-result-parameters.md) |                                | This TLV is only required if the status is success. | Information about the Response Action frame that was sent to the peer. |
 
  
 
@@ -53,9 +53,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

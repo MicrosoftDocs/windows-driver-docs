@@ -69,7 +69,7 @@ Using a %*strkey*%=*models-section-name* entry simplifies the localization of th
 
 If an INF file specifies one or more entries in the *manufacturer-name* format, each such entry implicitly specifies the name of the corresponding ***Models*** section elsewhere in the INF.
 
-You can think of each system-supplied INF file's **Manufacturer** section as a table of contents, because this section sets up the installation of every manufacturer's device models for a [device setup class](device-setup-classes.md). Each entry in an INF file's **Manufacturer** section specifies both an easily localizable %*strkey*% token for the name of a manufacturer and a unique-to-the-INF per-manufacturer ***Models*** section name.
+You can think of each system-supplied INF file's **Manufacturer** section as a table of contents, because this section sets up the installation of every manufacturer's device models for a [device setup class](./overview-of-device-setup-classes.md). Each entry in an INF file's **Manufacturer** section specifies both an easily localizable %*strkey*% token for the name of a manufacturer and a unique-to-the-INF per-manufacturer ***Models*** section name.
 
 The *models-section-name* entries in the **Manufacturer** section can be decorated to specify target operating system versions. Different [**INF *Models* sections**](inf-models-section.md) can be specified for different versions of the operating system. The specified versions indicate operating system versions with which the INF ***Models*** sections is used. If no versions are specified, Windows uses a specified ***Models*** section for all versions of all operating systems.
 
@@ -345,11 +345,4 @@ Example 3:
 [**Strings**](inf-strings-section.md)
 
  
-
- 
-
-
-
-
-
 

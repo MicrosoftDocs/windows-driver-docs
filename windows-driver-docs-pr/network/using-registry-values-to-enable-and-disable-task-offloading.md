@@ -392,7 +392,7 @@ The following table describes the grouped keywords that you can use to configure
 
 There are restrictions on the combinations of offloads that can be enabled. For example, if a miniport adapter supports LSOV1 or LSOV2, the miniport adapter also calculates the IP and TCP checksums. For more information about valid combinations of offloads, see [Combining Types of Task Offloads](combining-types-of-task-offloads.md).
 
-If task offload services are disabled with a registry key setting, protocol drivers must not issue the [OID\_OFFLOAD\_ENCAPSULATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-offload-encapsulation) object identifier (OID).
+If task offload services are disabled with a registry key setting, protocol drivers must not issue the [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md) object identifier (OID).
 
 You can use the following registry values to enable or disable task offloading for the TCP/IP protocol:
 
@@ -403,10 +403,4 @@ Setting this value to one disables all of the task offloads from the TCP/IP tran
 Setting this value to zero disables Internet protocol security (IPsec) offloads from the TCP/IP transport. The offloading of TCP/IP checksum tasks, large send offload version 1 (LSOV1), and large send offload version 2 (LSOV2) are not affected. Setting this value to one enables IPsec offloads.
 
  
-
- 
-
-
-
-
 

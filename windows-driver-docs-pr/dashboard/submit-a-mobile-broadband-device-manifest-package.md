@@ -25,13 +25,7 @@ You can use the same method to submit packages for preview or release.
 
 4.  Browse for and select your new devicemanifest-ms package, and then click **Submit**.
 
-For more information about creating a mobile broadband device submission package, see [Mobile Broadband Device Submission Packages](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/index).
+For more information about creating a mobile broadband device submission package, see [Mobile Broadband Device Submission Packages](../mobilebroadband/index.md).
 
  
-
- 
-
-
-
-
 

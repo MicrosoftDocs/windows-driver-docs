@@ -1,6 +1,6 @@
 ---
 title: INF DefaultInstall Section
-description: An INF file's DefaultInstall section is accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
+description: An INF file's DefaultInstall section is accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
 ms.assetid: 41412124-38d9-43c0-9954-d34b242a3922
 keywords:
 - INF DefaultInstall Section Device and Driver Installation
@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 # INF DefaultInstall Section
 
 
-**Note**  If you are building a universal or mobile driver package, this section is not valid and should not be used.  Instead, use only the [**INF Manufacturer Section**](inf-manufacturer-section.md).  Using both **DefaultInstall** and **Manufacturer** sections in your INF will cause Universal INF validation failures and can lead to inconsistent installation behaviors.  See [Using a Universal INF File](using-a-universal-inf-file.md).
+**Note**  If you are building a universal or mobile driver package, this section is valid only if it has an architecture decoration, for example `[DefaultInstall.NTAMD64]`.  Alternatively, use the [**INF Manufacturer Section**](inf-manufacturer-section.md).  Using both **DefaultInstall** and **Manufacturer** sections in your INF will cause Universal INF validation failures and can lead to inconsistent installation behaviors.  See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
 
-An INF file's **DefaultInstall** section is accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
+An INF file's **DefaultInstall** section is accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
 
 ```inf
 [DefaultInstall] | 
@@ -110,7 +110,7 @@ Typically, this directive is used to handle upgrades when an INF must clean up o
 For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
 <a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg=**<em>bit-registry-section</em>\[**,**<em>bit-registry-section</em>\]...  
-This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) are modified. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
+This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](/windows/desktop/SysInfo/registry-value-types) are modified. For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
 An **HKR** specification in such a bit-registry section designates the **..Class\\**<em>SetupClassGUID</em>**\\**<em>device-instance-id</em> registry path of the user-accessible driver. This type of **HKR** specification is also referred to as a. "software key".
 
@@ -155,7 +155,7 @@ Remarks
 
  
 
-Providing a **DefaultInstall** section is optional. If an INF file does not include a **DefaultInstall** section, selecting "Install" after right-clicking on the file name causes an error message to be displayed.
+Providing a **DefaultInstall** section is optional. If an INF file does not include a **DefaultInstall** section, selecting "Install" after selecting and holding (or right-clicking) on the file name causes an error message to be displayed.
 
 **Note**  Unlike a [***DDInstall***](inf-ddinstall-section.md) section, a **DefaultInstall** section cannot contain [**DriverVer**](inf-driverver-directive.md) or [**LogConfig**](inf-logconfig-directive.md) directives.
 
@@ -182,7 +182,7 @@ CopyFiles=MyAppWinFiles, MyAppSysFiles, @SRSutil.exe
 AddReg=MyAppRegEntries
 ```
 
-In this example, the **DefaultInstall** section is executed if a user selects "Install" after right-clicking on the INF file name.
+In this example, the **DefaultInstall** section is executed if a user selects "Install" after selecting and holding (or right-clicking) on the INF file name.
 
 ## See also
 
@@ -194,11 +194,4 @@ In this example, the **DefaultInstall** section is executed if a user selects "I
 [**LogConfig**](inf-logconfig-directive.md)
 
  
-
- 
-
-
-
-
-
 

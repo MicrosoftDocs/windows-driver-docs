@@ -20,4 +20,4 @@ The Device Stage Document Device Developer Kit contains the following informatio
 
 ## Related topics
 
-[Microsoft Device Experience Development Kit](https://docs.microsoft.com/previous-versions/windows/hardware/device-stage/dn629504(v=vs.85))  
+[Microsoft Device Experience Development Kit](/previous-versions/windows/hardware/device-stage/dn629504(v=vs.85))

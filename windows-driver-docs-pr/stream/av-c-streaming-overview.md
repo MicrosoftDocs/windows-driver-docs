@@ -32,11 +32,11 @@ Controlling an AV/C subunit driver on the 61883 and AV/C subunit driver stacks r
 
 The AV/C Stream filter driver relies on the *61883.sys* protocol driver. *Avcstrm.sys* uses DDIs provided by *61883.sys* to perform isochronous connection and isochronous data streaming, and it uses *Avc.sys* to issue AV/C commands for external device control.
 
-For more information about the AV/C protocol upon which the AV/C Streaming filter driver is built, see [AV/C Overview](av-c-overview.md). For more information about the 61883 protocol, see [IEC-61883 Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-client-drivers).
+For more information about the AV/C protocol upon which the AV/C Streaming filter driver is built, see [AV/C Overview](av-c-overview.md). For more information about the 61883 protocol, see [IEC-61883 Client Drivers](../ieee/iec-61883-client-drivers.md).
 
 For more information and resources see the following links:
 
-[Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
+[Windows Driver Model](../kernel/introduction-to-wdm.md)
 
 [1394 Trade Association specifications](https://1394ta.org/library-2)
 

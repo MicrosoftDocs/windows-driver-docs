@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Write a Hello World Windows Driver (KMDF)
 
 
-This topic describes how to write a very small [Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer. 
+This topic describes how to write a very small [Universal Windows driver](/windows-hardware/drivers) using Kernel-Mode Driver Framework (KMDF) and then deploy and install your driver on a separate computer. 
 
 To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=698539), the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk), and the [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?LinkId=733614) installed.
 
@@ -30,7 +30,7 @@ To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.
      
 
 5.  In the **Location** field, enter the directory where you want to create the new project.
-6.  Check **Create directory for solution**. Click **OK**.
+6.  Check **Create directory for solution**. Select **OK**.
 
     ![screen shot of the new project dialog box](images/vs2015-new-project-kmdf-empty.png)
 
@@ -38,15 +38,15 @@ To get started, be sure you have [Microsoft Visual Studio](https://go.microsoft.
 
     ![screen shot of the solution explorer window, showing the solution and the empty driver project (kmdfhelloworld)](images/vs2015-kmdf-hello-world-solution-explorer.png)
 
-7.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**  Click **Apply**, and then click **OK**..
+7.  In the **Solution Explorer** window, select and hold (or right-click) the **KmdfHelloWorld** project and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**  Select **Apply**, and then select **OK**..
 
-8.  In the **Solution Explorer** window, again right-click the **KmdfHelloWorld** project, choose **Add**, and then click **New Item**.
+8.  In the **Solution Explorer** window, again select and hold (or right-click) the **KmdfHelloWorld** project, choose **Add**, and then select **New Item**.
 9.  In the **Add New Item** dialog box, select **C++ File**. For **Name**, enter "Driver.c".
 
     > [!NOTE]
     > The file name extension is **.c**, not **.cpp**.
 
-     Click **Add**. The Driver.c file is added under Source Files, as shown here.
+     Select **Add**. The Driver.c file is added under Source Files, as shown here.
 
     ![screen shot of the solution explorer window, showing the driver.c file added to the driver project](images/firstdriverkmdfsmall03.png)
 
@@ -61,7 +61,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
     #include <wdf.h>
     ```
 
-    [Ntddk.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
+    [Ntddk.h](/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
 
 2. Next, provide declarations for the two callbacks you'll use:
 
@@ -105,7 +105,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
     }
     ```
 
-    [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) is the entry point for all drivers, like `Main()` is for many user mode applications. The job of *DriverEntry* is to initialize driver-wide structures and resources. In this example, you printed "Hello World" for *DriverEntry*, configured the driver object to register your *EvtDeviceAdd* callback's entry point, then created the driver object and returned. 
+    [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) is the entry point for all drivers, like `Main()` is for many user mode applications. The job of *DriverEntry* is to initialize driver-wide structures and resources. In this example, you printed "Hello World" for *DriverEntry*, configured the driver object to register your *EvtDeviceAdd* callback's entry point, then created the driver object and returned. 
 
     The driver object acts as the parent object for all other framework objects you might create in your driver, which include device objects, I/O queues, timers, spinlocks, and more. For more information about framework objects, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md).
 
@@ -142,7 +142,7 @@ Now that you've created your empty Hello World project and added the Driver.c so
     }
     ```
 
-    [*EvtDeviceAdd*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) is invoked by the system when it detects that your device has arrived. Its job is to initialize structures and resources for that device. In this example, you simply printed out a "Hello World" message for *EvtDeviceAdd*, created the device object, and returned. In other drivers you write, you might create I/O queues for your hardware, set up a *device context* storage space for device-specific information, or perform other tasks needed to prepare your device.
+    [*EvtDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) is invoked by the system when it detects that your device has arrived. Its job is to initialize structures and resources for that device. In this example, you simply printed out a "Hello World" message for *EvtDeviceAdd*, created the device object, and returned. In other drivers you write, you might create I/O queues for your hardware, set up a *device context* storage space for device-specific information, or perform other tasks needed to prepare your device.
 
     > [!TIP]
     > For the device add callback, notice how you named it with your driver's name as a prefix (*KmdfHelloWorld*EvtDeviceAdd). Generally, we recommend naming your driver's functions in this way to differentiate them from other drivers' functions. *DriverEntry* is the only one you should name exactly that.
@@ -221,9 +221,9 @@ Next, you'll build your driver.
 
 ## Build the driver
 
-1. In the **Solution Explorer** window, right-click **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For this exercise, we choose **Debug** and **x64**.
+1. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'KmdfHelloWorld' (1 project)** and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For this exercise, we choose **Debug** and **x64**.
 
-2. In the **Solution Explorer** window, right-click **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing &gt; All Options**, set **Run Wpp tracing** to **No**. Click **Apply** and then **OK**.
+2. In the **Solution Explorer** window, select and hold (or right-click) **KmdfHelloWorld** and choose **Properties**. In **Wpp Tracing &gt; All Options**, set **Run Wpp tracing** to **No**. Select **Apply** and then **OK**.
 3. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.) When you have verified that the solution built successfully, you can close Visual Studio.
 4. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **C:\\KmdfHelloWorld\\x64\\Debug\KmdfHelloWorld**. The folder includes:
 
@@ -249,11 +249,11 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
 
 2.  On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfHelloWorld.sln, in your KmdfHelloWorld folder.
-3.  In the **Solution Explorer** window, right-click the **KmdfHelloWorld** project, and choose **Properties**.
+3.  In the **Solution Explorer** window, select and hold (or right-click) the **KmdfHelloWorld** project, and choose **Properties**.
 4.  In the **KmdfHelloWorld Property Pages** window, go to **Configuration Properties &gt; Driver Install &gt; Deployment**, as shown here.
 5.  Check **Remove previous driver versions before deployment**.
 6.  For **Target Device Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
-7.  Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Click **OK**.
+7.  Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. For this exercise, the hardware ID is Root\\KmdfHelloWorld. Select **OK**.
 
     ![screen shot showing the kmdfhelloworld property pages window with the deployment driver install selected ](images/vs2015-kmdf-hello-world-property-pages.png)
 
@@ -295,7 +295,7 @@ With your Hello World driver deployed to the target computer, now you'll install
 
         **c:\\tools\\devcon install kmdfhelloworld.inf root\kmdfhelloworld**
 
-        A dialog box will appear indicating that the test driver is an unsigned driver. Click **Install this driver anyway** to proceed.
+        A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
         ![screenshot of driver installation warning](../debugger/images/debuglab-image-install-security-warning.png)
 

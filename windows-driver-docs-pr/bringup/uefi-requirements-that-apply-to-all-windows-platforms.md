@@ -2,7 +2,7 @@
 title: UEFI requirements for Windows on SoC platforms
 description: This topic describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
 ms.assetid: 7A0B901E-1252-4F8F-B1CB-BA1AB7B01112
-ms.date: 06/09/2020
+ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---
 
@@ -81,7 +81,7 @@ The EFI System Table must conform to the standard definition at the revision lev
 <tr class="even">
 <td>SMBIOS_Table GUID</td>
 <td><p>This GUID must point to the SMBIOS Entry Point Structure.</p>
-<p>Windows requires SMBIOS Specification, at the 2.4 or higher revision level. Sections 3.2, “Required Structures and Data”, and 4, “Conformance Guidelines”, are required. A Windows SMBIOS compatibility test is available.</p></td>
+<p>Windows requires SMBIOS Specification, at the 2.4 or higher revision level. Sections 3.2, "Required Structures and Data", and 4, "Conformance Guidelines", are required. A Windows SMBIOS compatibility test is available.</p></td>
 </tr>
 </tbody>
 </table>
@@ -274,7 +274,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <td>UEFI secure boot</td>
 <td><ul>
 <li><p>Requirement 3: MANDATORY. Secure Boot as defined in UEFI v2.3.1 section 27 must ship enabled and with a signature database (EFI_IMAGE_SECURITY_DATABASE) necessary to boot the machine securely pre-provisioned. The initial contents of the signature database is determined by the OEM, based on required 3rd party UEFI drivers, recovery needs and the OS Boot Loader installed on the machine, but a Microsoft-provided EFI_CERT_X509 signature shall be included. No additional signatures shall be present.</p></li>
-<li><p>Requirement 4: MANDATORY. Presence of the UEFI “forbidden” signature database (EFI_IMAGE_SECURITY_DATABASE1) is required.</p></li>
+<li><p>Requirement 4: MANDATORY. Presence of the UEFI "forbidden" signature database (EFI_IMAGE_SECURITY_DATABASE1) is required.</p></li>
 <li><p>Requirement 5: MANDATORY. A Microsoft-provided UEFI KEK shall be included in the UEFI KEK database. No additional KEKs shall be present. Microsoft will provide the KEK in the form of an EFI_CERT_X509 signature.</p></li>
 <li><p>Requirement 6: MANDATORY. A PK<em><sub>pub</sub></em> key shall be present and stored in firmware flash.</p>
 <div class="alert">
@@ -288,7 +288,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <li><p>Requirement 9: MANDATORY. Physically present user override must not be permitted for UEFI images that fail signature verification.</p></li>
 <li><p>Requirement 10: OPTIONAL. An OEM may implement the ability for a physically present user to turn off Secure Boot either with access to the PK<em><sub>priv</sub></em> or with Physical Presence through the firmware setup. Access to the firmware setup may be protected by platform specific means (administrator password, smart card, static configuration, etc.)</p></li>
 <li><p>Requirement 11: MANDATORY if requirement 10 is implemented. If Secure Boot is turned off then all existing UEFI variables shall not be accessible.</p></li>
-<li><p>Requirement 12: OPTIONAL. An OEM may implement the ability for a physically present user to select between two Secure Boot modes in firmware setup: “Custom” and “Standard”. Custom Mode allows for more flexibility as specified in the following.</p></li>
+<li><p>Requirement 12: OPTIONAL. An OEM may implement the ability for a physically present user to select between two Secure Boot modes in firmware setup: "Custom" and "Standard". Custom Mode allows for more flexibility as specified in the following.</p></li>
 <li><p>Requirement 13: MANDATORY if requirement 12 is implemented. It shall be possible to re-enable a disabled Secure Boot in Custom Mode by setting an owner specific <em>PK</em>. The administration shall proceed as defined in section 27.5 of the UEFI specification v2.3.1: Firmware/OS Key Exchange. In Custom Mode, the device owner may set their choice of signatures in the signature databases.</p></li>
 <li><p>Requirement 14: MANDATORY if requirement 12 is implemented. The firmware setup shall indicate if Secure Boot is turned on, and if it is operated in Standard or Custom Mode. The firmware setup shall provide an option to return from Custom to Standard Mode.</p></li>
 <li><p>Requirement 15: MANDATORY. If the firmware settings are reset to factory defaults, all custom-set protected variables shall be erased and the original PK<em><sub>pub</sub></em> shall be re-established along with the original, manufacturer-provisioned signature databases.</p></li>
@@ -305,7 +305,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <td><p>The following requirements do not imply a need for a TCG TPM implementation; they do however imply a need for equivalent functionality for the affected areas.</p>
 <p>The platform support may be provided by a firmware implementation of a TPM executing in the secure execution environment, layering on top of the cryptographic acceleration engine and leveraging the isolated storage. Microsoft may be able to provide reference software for such a TPM implementation for use by the vendor. This is subject to further discussions.</p>
 <ul>
-<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
+<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 <li><p>Requirement 23: MANDATORY. The platform shall adhere to the TCG EFI Platform Specification with the following additions:</p>
 <ul>
 <li><p>On platforms supporting the interface defined in TrEE EFI Protocol, the digest of PK<em><sub>pub</sub></em> shall be extended to TPM PCR[03] as an EV_EFI_VARIABLE_CONFIG event.</p></li>
@@ -340,8 +340,8 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <ul>
 <li><p>Microsoft has defined protocol for gathering entropy from a UEFI platform. While not a UEFI requirement, this protocol is required by Windows on SoC platforms. For more information about this protocol, see <a href="uefi-entropy-gathering-protocol.md" data-raw-source="[UEFI entropy gathering protocol](uefi-entropy-gathering-protocol.md)">UEFI entropy gathering protocol</a>.</p></li>
 <li><p>UEFI Signature Database Updates. A new mechanism for updating Authenticated Variables has been adopted in section 27 of UEFI 2.3.1. This mechanism is required by Windows.</p></li>
-<li><p>Trusted Execution Environment. Microsoft has developed an EFI protocol for interacting with a Trusted Execution Environment (TrEE), similar in functionality to a subset of a Trusted Computing Group (TCG) Trusted Platform Module (TPM). The EFI protocol leverages to a large degree, “TCG EFI Protocol,” Version 1.2 Revision 1.00, June 9, 2006, by the Trusted Computing Group.</p>
-<p>For details, refer to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
+<li><p>Trusted Execution Environment. Microsoft has developed an EFI protocol for interacting with a Trusted Execution Environment (TrEE), similar in functionality to a subset of a Trusted Computing Group (TCG) Trusted Platform Module (TPM). The EFI protocol leverages to a large degree, "TCG EFI Protocol," Version 1.2 Revision 1.00, June 9, 2006, by the Trusted Computing Group.</p>
+<p>For details, refer to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -359,7 +359,7 @@ The binding specifies for example how the MMU should be configured, and how phys
 
 ## UEFI ARM multiprocessor startup requirements
 
-Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](http://infocenter.arm.com/help/topic/com.arm.doc.den0022d/Power_State_Coordination_Interface_PDD_v1_1_DEN0022D.pdf). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://acpica.org/sites/acpica/files/MP Startup for ARM platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
+Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](https://static.docs.arm.com/den0022/d/Power_State_Coordination_Interface_PDD_v1_1_DEN0022D.pdf). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://acpica.org/sites/acpica/files/MP%20Startup%20for%20ARM%20platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
 
 ## Platform setup requirements
 
@@ -403,7 +403,7 @@ Windows requires the OS partition to reside on a GPT partitioned storage solutio
 
 ## Hardware Security Test Interface (HSTI) requirement
 
-The platform must implement the Hardware Security Test Interface, and the platform is required to share documentation and tools as specified in the [Hardware Security Testability Specification](https://docs.microsoft.com/windows-hardware/test/hlk/testref/hardware-security-testability-specification).
+The platform must implement the Hardware Security Test Interface, and the platform is required to share documentation and tools as specified in the [Hardware Security Testability Specification](/windows-hardware/test/hlk/testref/hardware-security-testability-specification).
 
 ## Related topics
 
@@ -411,4 +411,4 @@ The platform must implement the Hardware Security Test Interface, and the platfo
 
 [UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md)  
 
-[UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md)  
+[UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md)

@@ -83,11 +83,12 @@ Comments
 
 ## Requirements
 
-|                          |                        |
-|--------------------------|------------------------|
-| Minimum supported client | Windows 8.1            |
-| Minimum supported server | Windows Server 2012 R2 |
-| Header                   | Sensorsutils.h         |
+**Minimum supported client**: Windows 8.1
+
+**Minimum supported server**: Windows Server 2012 R2
+
+**Header**: Sensorsutils.h
+
 
  
 

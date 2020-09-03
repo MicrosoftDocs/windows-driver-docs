@@ -7,6 +7,12 @@ ms.localizationpriority: medium
 
 # MB Network Blacklist Operations
 
+> [!IMPORTANT]
+>
+> ### Bias-free communication
+>
+> Microsoft supports a diverse and inclusionary environment. This article contains references to the word blacklist. The Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes this as an exclusionary word. The word is used in this article for consistency because it’s currently the word that appears in the software. When the software is updated to remove the word, this article will be updated to be in alignment.
+
 A device could be required to not register to a network under various scenarios, such as when a specific SIM card is inserted or if a device does not want to register to a specific network. To address these situations, Windows 10, version 1703 is adding modem interfaces to enable the OS to configure blacklists for SIM cards and network providers.
 
 At any time, the OS can configure the MCC/MNC pair in the modem to specify the SIM or network to which the device is not allowed to register.  The interface is flexible enough to allow two different lists, one for SIM providers, and another for network providers.  If the device did not attempt registration because a particular SIM or network provider was blacklisted, the modem must report the registration status as denied.
@@ -52,7 +58,7 @@ An Unsolicited Event is expected if any of the blacklist states have changed fro
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_NETWORK_BLACKLIST_INFO | Not applicable | Not applicable |
 | Response | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO | MBIM_MS_NETWORK_BLACKLIST_INFO |

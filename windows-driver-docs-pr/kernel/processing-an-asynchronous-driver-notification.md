@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Processing an Asynchronous Driver Notification
 
 
-When the operating system calls a registered callback function, it passes a pointer to a [**DEVICE\_INTERFACE\_CHANGE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_interface_change_notification) structure in the *NotificationStructure* parameter.
+When the operating system calls a registered callback function, it passes a pointer to a [**DEVICE\_INTERFACE\_CHANGE\_NOTIFICATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_interface_change_notification) structure in the *NotificationStructure* parameter.
 
 The following code example shows an implementation of a callback function that processes asynchronous driver notifications for processors:
 
@@ -101,9 +101,4 @@ NTSTATUS
 ```
 
  
-
- 
-
-
-
 

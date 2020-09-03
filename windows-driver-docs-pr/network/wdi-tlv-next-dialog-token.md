@@ -59,12 +59,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-get-next-action-frame-dialog-token)
+[OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN](./oid-wdi-get-next-action-frame-dialog-token.md)
 
  
-
- 
-
-
-
 

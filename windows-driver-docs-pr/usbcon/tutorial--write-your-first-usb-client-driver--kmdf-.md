@@ -1,5 +1,5 @@
 ---
-Description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2019 to write a simple kernel-mode driver framework (KMDF)-based client driver.
+description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2019 to write a simple kernel-mode driver framework (KMDF)-based client driver.
 title: How to write your first USB client driver (KMDF)
 ms.date: 06/07/2019
 ms.localizationpriority: medium
@@ -56,8 +56,8 @@ For instructions about generating KMDF driver code, see the steps in [Writing a 
 
 1.  In the **New Project** dialog box, in the search box at the top, type **USB.**
 2.  In the middle pane, select **Kernel Mode Driver, USB (KMDF)**.
-3.  Click **Next**.
-4.  Enter a project name, choose a save location, and click **Create**.
+3.  Select **Next**.
+4.  Enter a project name, choose a save location, and select **Create**.
 
 The following screen shots show the **New Project** dialog box for the **USB Kernel-Mode Driver** template.
 
@@ -92,7 +92,7 @@ To provide the hardware ID string:
 2.  Open **Device Manager** and open properties for your device.
 3.  On the **Details** tab, select **Hardward Ids** under **Property.**
 
-    The hardware ID for the device is displayed in the list box. Right-click and copy the hardware ID string.
+    The hardware ID for the device is displayed in the list box. Select and hold (or right-click) and copy the hardware ID string.
 
 4.  Replace USB\\VID\_vvvv&PID\_pppp in the following line with your hardware ID string.
 
@@ -103,9 +103,9 @@ To provide the hardware ID string:
 **To build your driver**
 
 1.  Open the driver project or solution in Visual Studio Professional 2019
-2.  Right-click the solution in the **Solution Explorer** and select **Configuration Manager**.
+2.  Select and hold (or right-click) the solution in the **Solution Explorer** and select **Configuration Manager**.
 3.  From the **Configuration Manager**, select the **Active Solution Configuration** (for example, **Windows 8 Debug** or **Windows 8 Release**) and the **Active Solution Platform** (for example, Win32) that correspond to the type of build you're interested in.
-4.  From the **Build** menu, click **Build Solution**.
+4.  From the **Build** menu, select **Build Solution**.
 
 For more information, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
 
@@ -166,12 +166,12 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 ### <a href="" id="deploy-the-driver-on-the-target-computer"></a>Step 6: Deploy the driver on the target computer
 
-1. In the **Solution Explorer** window, right click the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
+1. In the **Solution Explorer** window, select and hold (or right-click)  the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
 2. In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
 3. Check Enable deployment, and check Import into driver store.
 4. For **Remote Computer Name**, specify the name of the target computer.
 5. Select **Install and Verify**.
-6. Click **Ok**.
+6. Select **Ok**.
 7. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 
 **Note**  Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
