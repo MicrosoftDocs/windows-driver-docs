@@ -81,14 +81,7 @@ Requirements
 
 [**KSEVENT\_BDA\_CA\_SMART\_CARD\_STATUS\_CHANGED**](ksevent-bda-ca-smart-card-status-changed.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

@@ -28,7 +28,7 @@ The [Hotspot Authentication Sample](https://go.microsoft.com/fwlink/p/?linkid=31
 ## <span id="related_topics"></span>Related topics
 
 
-[Get started with a hotspot authentication app](get-started-with-a-hotspot-authentication-app.md)
+[Get started with a hotspot authentication app](review-the-hotspot-authentication-sample.md)
 
  
 

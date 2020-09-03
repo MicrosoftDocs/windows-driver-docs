@@ -46,11 +46,11 @@ Remarks
 
 If the object's reference count becomes zero, the object might be deleted before **WdfObjectDereferenceWithTag** returns.
 
-Calling [**WdfObjectDereferenceActual**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual) or **WdfObjectDereferenceWithTag** instead of [**WdfObjectDereference**](wdfobjectdereference.md) provides additional information (tag string, line number, and file name) to Microsoft debuggers. **WdfObjectDereferenceActual** allows your driver to specify the line number and file name, while **WdfObjectDereferenceWithTag** uses the driver's current line number and file name.
+Calling [**WdfObjectDereferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual) or **WdfObjectDereferenceWithTag** instead of [**WdfObjectDereference**](wdfobjectdereference.md) provides additional information (tag string, line number, and file name) to Microsoft debuggers. **WdfObjectDereferenceActual** allows your driver to specify the line number and file name, while **WdfObjectDereferenceWithTag** uses the driver's current line number and file name.
 
 You can view the tag, line number, and file name values by using the **!wdftagtracker** debugger extension. The debugger extension displays the tag value as both a pointer and a series of characters. For more about debugger extensions, see [Debugging a KMDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver).
 
-For more information about object reference counts, see [Framework Object Life Cycle](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-life-cycle).
+For more information about object reference counts, see [Framework Object Life Cycle](./framework-object-life-cycle.md).
 
 Examples
 --------
@@ -109,11 +109,4 @@ WUDFx02000.dll (UMDF)</td>
 [**WdfObjectReferenceWithTag**](wdfobjectreferencewithtag.md)
 
  
-
- 
-
-
-
-
-
 

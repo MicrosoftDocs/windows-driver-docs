@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
 
-The [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board) supports serial debugging over a USB cable.
+The [Sharks Cove hardware development board](../gettingstarted/sharks-cove-hardware-development-board.md) supports serial debugging over a USB cable.
 
 To use Microsoft Visual Studio for kernel-mode debugging, you must have the Windows Driver Kit (WDK) integrated with Visual Studio. For information about how to install the integrated environment, see [Debugging Using Visual Studio](debugging-using-visual-studio.md).
 
@@ -40,7 +40,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 
 In these steps, the Sharks Cove board is the target computer.
 
-1.  Begin configuring your host and target computer as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+1.  Begin configuring your host and target computer as described in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 2.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 3.  For **Connection Type**, choose **Serial**.
 
@@ -86,6 +86,3 @@ On the host computer, verify that you are using a baud rate of 115200.
 4.  Verify that the **Baud Rate** is 115200.
 
 ## <span id="related_topics"></span>Related topics
-
-
-

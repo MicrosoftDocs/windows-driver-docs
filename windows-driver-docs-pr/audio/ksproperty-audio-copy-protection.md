@@ -47,8 +47,8 @@ The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property specifies the copy-protection s
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_copy_protection" data-raw-source="[&lt;strong&gt;KSAUDIO_COPY_PROTECTION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_copy_protection)"><strong>KSAUDIO_COPY_PROTECTION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_copy_protection" data-raw-source="[&lt;strong&gt;KSAUDIO_COPY_PROTECTION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_copy_protection)"><strong>KSAUDIO_COPY_PROTECTION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +74,7 @@ SCMS can provide three levels of protection of audio content:
 
 **Level 2:** No copying at all of the stream.
 
-The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property is separate from and unrelated to the implementation of [Digital Rights Management (DRM)](https://docs.microsoft.com/windows-hardware/drivers/audio/digital-rights-management) and the Secure Audio Path (SAP) for Windows Media. For information about SAP, see the Microsoft Windows SDK documentation.
+The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property is separate from and unrelated to the implementation of [Digital Rights Management (DRM)](./digital-rights-management.md) and the Secure Audio Path (SAP) for Windows Media. For information about SAP, see the Microsoft Windows SDK documentation.
 
 Requirements
 ------------
@@ -95,16 +95,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 
-[**KSAUDIO\_COPY\_PROTECTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_copy_protection)
-
- 
+[**KSAUDIO\_COPY\_PROTECTION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_copy_protection)
 
  
-
-
-
-
-
 

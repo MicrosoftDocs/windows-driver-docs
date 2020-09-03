@@ -47,8 +47,8 @@ The KSPROPERTY\_WAVE\_PAN property specifies a wave device's pan setting.
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/previous-versions/ff567249(v=vs.85)" data-raw-source="[&lt;strong&gt;KSWAVE_PAN&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff567249(v=vs.85))"><strong>KSWAVE_PAN</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/ff567249(v=vs.85)" data-raw-source="[&lt;strong&gt;KSWAVE_PAN&lt;/strong&gt;](/previous-versions/ff567249(v=vs.85))"><strong>KSWAVE_PAN</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -76,16 +76,9 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
-[**KSWAVE\_PAN**](https://docs.microsoft.com/previous-versions/ff567249(v=vs.85))
-
- 
+[**KSWAVE\_PAN**](/previous-versions/ff567249(v=vs.85))
 
  
-
-
-
-
-
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 # Security descriptors in file systems
 
-Windows file systems may support the storage and management of [security descriptors](https://docs.microsoft.com/windows-hardware/drivers/kernel/security-descriptors) associated with individual storage units within the file system. The granularity of security control is entirely up to the file system. For example, one file system might maintain a single security descriptor that covers everything on a given storage volume, while another might provide security descriptors that cover different parts of a single given file. The models that most developers are comfortable with are those provided by the existing Windows file systems:
+Windows file systems may support the storage and management of [security descriptors](../kernel/security-descriptors.md) associated with individual storage units within the file system. The granularity of security control is entirely up to the file system. For example, one file system might maintain a single security descriptor that covers everything on a given storage volume, while another might provide security descriptors that cover different parts of a single given file. The models that most developers are comfortable with are those provided by the existing Windows file systems:
 
 - NTFS supports a per-file (or directory) security descriptor model. NTFS is efficient in its storage of security descriptors, storing only a single copy of each security descriptor, even if it is used by many different files.
 

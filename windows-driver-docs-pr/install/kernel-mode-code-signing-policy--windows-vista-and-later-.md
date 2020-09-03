@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # Driver Signing Policy
 
 > [!NOTE]
-> Starting with Windows 10, version 1607, Windows will not load any new kernel-mode drivers which are not signed by the Dev Portal.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program). Note that an [EV code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) is required to establish a dashboard account.
+> Starting with Windows 10, version 1607, Windows will not load any new kernel-mode drivers which are not signed by the Dev Portal.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md). Note that an [EV code signing certificate](../dashboard/get-a-code-signing-certificate.md) is required to establish a dashboard account.
 
 There are many different ways to submit drivers to the portal.  For production drivers, you should submit HLK/HCK test logs, as described below.  For testing on Windows 10 client only systems, you can submit your drivers for [attestation signing](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md), which does not require HLK testing.  Or, you can submit your driver for Test signing as described on the [Create a new hardware submission](../dashboard/create-a-new-hardware-submission.md) page.
 
@@ -40,9 +40,9 @@ To sign a driver for Windows 10, follow these steps:
 2. If you have multiple logs, merge them into a single log using the most recent HLK.
 3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](../dashboard/index.yml).
 
-For version-specific details, please review the [WHCP (Windows Hardware Compatibility Program) policy](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-specifications-policies) for the Windows versions you want to target.
+For version-specific details, please review the [WHCP (Windows Hardware Compatibility Program) policy](/windows-hardware/design/compatibility/whcp-specifications-policies) for the Windows versions you want to target.
 
-To sign a driver for Windows 7, Windows 8, or Windows 8.1, use the appropriate HCK (Hardware Certification Kit).  For more information, see the [Windows Hardware Certification Kit User's Guide](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
+To sign a driver for Windows 7, Windows 8, or Windows 8.1, use the appropriate HCK (Hardware Certification Kit).  For more information, see the [Windows Hardware Certification Kit User's Guide](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 ## Signing a driver for earlier versions of Windows
 
@@ -67,7 +67,7 @@ Note that Secure Boot does not apply to Windows Vista and Windows 7.
 
 In addition to driver code signing, you also need to meet the PnP device installation signing requirements for installing a driver.  For more info, see [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
-For info about signing an ELAM driver, see [Early launch antimalware](https://docs.microsoft.com/windows/desktop/w8cookbook/secured-boot).
+For info about signing an ELAM driver, see [Early launch antimalware](/windows/desktop/w8cookbook/secured-boot).
 
 ## Signing a driver for internal distribution only
 
@@ -86,6 +86,6 @@ In some cases, you may want to distribute a driver internally within a company r
 
 * [Installing an Unsigned Driver Package during Development and Test](installing-an-unsigned-driver-during-development-and-test.md)
 * [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md)
-* [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md)
+* [Signing Drivers during Development and Test](./introduction-to-test-signing.md)
 * [Digital Signatures](driver-signing.md)
-* [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
+* [Troubleshooting Install and Load Problems with Signed Driver Packages](./detecting-driver-load-errors.md)

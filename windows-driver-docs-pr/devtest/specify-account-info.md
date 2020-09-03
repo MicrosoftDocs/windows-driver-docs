@@ -25,7 +25,7 @@ To specify your mobile broadband account information, fill out the following opt
 
 -   Next to **PIN unlock function**, select **Allow standard users to perform PIN unlock on mobile broadband SIMs** to enable standard users to perform PIN unlock functions on their mobile broadband SIMs for your service.
 
-    For more information about PIN unlock, see [Unlock a device](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/unlock-a-device).
+    For more information about PIN unlock, see [Unlock a device](../mobilebroadband/unlock-a-device.md).
 
 -   Under **Trusted Certificates**, fill out the **Subject** and **Issuer** fields. This information comes from the certificate that you're using to sign your metadata package.
 
@@ -36,10 +36,4 @@ To specify your mobile broadband account information, fill out the following opt
     For more information about provisioning, see [Service Metadata Package Schema Reference](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference).
 
  
-
- 
-
-
-
-
 

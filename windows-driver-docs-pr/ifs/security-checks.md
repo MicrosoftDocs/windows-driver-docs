@@ -26,9 +26,9 @@ This section includes the following topics:
 
 [Security checks on IRP_MJ_DIRECTORY_CONTROL](irp-mj-directory-control2.md)
 
-[Security checks on IRP_MJ_FILE_SYSTEM_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-file-system-control)
+[Security checks on IRP_MJ_FILE_SYSTEM_CONTROL](./irp-mj-file-system-control.md)
 
-[Security checks on IRP_MJ_SET_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-set-information)
+[Security checks on IRP_MJ_SET_INFORMATION](./irp-mj-set-information.md)
 
 [Impersonation](impersonation.md)
 

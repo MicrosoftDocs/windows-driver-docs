@@ -16,14 +16,8 @@ ms.localizationpriority: medium
 
 Debugging Tools for Windows provides debuggers and other tools that you can use to debug your driver code. For an overview of the debugging tools and information about setting up a debugging environment, see these topics.
 
--   [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index)
--   [Setting Up Debugging (Kernel-Mode and User-Mode)](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-set-up-for-debugging)
+-   [Windows Debugging](../debugger/index.md)
+-   [Setting Up Debugging (Kernel-Mode and User-Mode)](../debugger/getting-set-up-for-debugging.md)
 
  
-
- 
-
-
-
-
 

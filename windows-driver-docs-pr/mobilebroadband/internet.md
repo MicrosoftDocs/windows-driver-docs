@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Internet
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Internet element specifies the purchase mobile broadband profile file to use.
 

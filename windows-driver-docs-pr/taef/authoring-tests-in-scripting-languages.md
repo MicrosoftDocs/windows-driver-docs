@@ -18,7 +18,7 @@ Out of the box, Windows supports JScript and VBScript only.
 
 ## Script Test File Format
 
-For script language tests, TAEF uses a slightly modified [Windows Script Components](https://docs.microsoft.com/previous-versions/07zhfkh8(v=vs.85)) file format. The following examples shows a test file that contains VBScript and JScript test classes.
+For script language tests, TAEF uses a slightly modified [Windows Script Components](/previous-versions/07zhfkh8(v=vs.85)) file format. The following examples shows a test file that contains VBScript and JScript test classes.
 
 ```cpp
 1   <?xml version="1.0" ?>
@@ -157,7 +157,7 @@ The **Component** element starts the declaration for the script test class. This
 
 After the **Component** element, you can insert class level metadata by using the **TestClassProperty** element. As with the **ModuleProperty** element, it must have the **name** and **value** attributes.
 
-At this point, you can also create objects and define references to the objects. See [Other Components section](https://docs.microsoft.com/previous-versions/ye6w00x4(v=vs.85)) for more information. Lines 15, 18, 49, and 52 in the XML example show how to reference and initialize the **WEX.Logger.Log** object.
+At this point, you can also create objects and define references to the objects. See [Other Components section](/previous-versions/ye6w00x4(v=vs.85)) for more information. Lines 15, 18, 49, and 52 in the XML example show how to reference and initialize the **WEX.Logger.Log** object.
 
 The **&lt;public&gt;** element encloses the test script module's test method declarations. You declare a test method by specifying the test method name in the **name** attribute of a **&lt;method&gt;** element. You can also add the test method property inside the **&lt;method&gt;** element. As with properties at other levels, it is not mandatory. However, if you add it, you must include the **name** and **value** attributes.
 

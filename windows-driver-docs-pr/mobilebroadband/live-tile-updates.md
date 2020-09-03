@@ -14,14 +14,7 @@ On the Windows 10 **Start** menu, tiles are the primary representation of an ap
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
+[Mobile broadband app scenarios](./account-management.md)
 
  
-
- 
-
-
-
-
-
 

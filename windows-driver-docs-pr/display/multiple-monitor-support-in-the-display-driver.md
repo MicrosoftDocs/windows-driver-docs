@@ -18,17 +18,11 @@ ms.localizationpriority: medium
 
 Multiple-monitor support is provided by Windows 2000 and later; therefore, display driver writers must not implement any special code to provide this support.
 
-Display drivers must be implemented without using global variables. All state must exist in the *PDEV* for a particular display driver. GDI will call [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev) for every hardware device extension that is created by the video miniport driver.
+Display drivers must be implemented without using global variables. All state must exist in the *PDEV* for a particular display driver. GDI will call [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev) for every hardware device extension that is created by the video miniport driver.
 
-To track window changes in a multiple-monitor system, a driver can request GDI to create WNDOBJ objects with desktop coordinates. The driver does this by calling [**EngCreateWnd**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-engcreatewnd) using the flag WO\_RGN\_DESKTOP\_COORD. See [Tracking Window Changes](tracking-window-changes.md) for more information.
+To track window changes in a multiple-monitor system, a driver can request GDI to create WNDOBJ objects with desktop coordinates. The driver does this by calling [**EngCreateWnd**](/windows/desktop/api/winddi/nf-winddi-engcreatewnd) using the flag WO\_RGN\_DESKTOP\_COORD. See [Tracking Window Changes](tracking-window-changes.md) for more information.
 
-In a multiple-monitor system, GDI stores the device's desktop position in the **dmPosition** member of the [**DEVMODEW**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure.
-
- 
+In a multiple-monitor system, GDI stores the device's desktop position in the **dmPosition** member of the [**DEVMODEW**](/windows/desktop/api/wingdi/ns-wingdi-_devicemodew) structure.
 
  
-
-
-
-
 

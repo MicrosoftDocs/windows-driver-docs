@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-The following are guidelines for using the [general Setup functions](https://docs.microsoft.com/previous-versions/ff544985(v=vs.85)) (**Setup***Xxx*) and [device installation functions](https://docs.microsoft.com/previous-versions/ff541299(v=vs.85)) (**SetupDi***Xxx*) that are provided by SetupAPI:
+The following are guidelines for using the [general Setup functions](/previous-versions/ff544985(v=vs.85)) (**Setup***Xxx*) and [device installation functions](/previous-versions/ff541299(v=vs.85)) (**SetupDi***Xxx*) that are provided by SetupAPI:
 
 -   Never assume that installation file contents are error-free, or that an installation file that you provided hasn't been maliciously modified. Therefore, always validate all information received from SetupAPI functions. Verify that strings are of valid length, that buffers are of valid size, and that index values are within a valid range.
 
@@ -33,10 +33,4 @@ The following are guidelines for using the [general Setup functions](https://doc
     -   If the caller of a **Setup***Xxx* function makes such a query, [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) returns NO_ERROR if no buffer length was specified or ERROR_INSUFFICIENT_BUFFER if a buffer was specified that was too small.
 
  
-
- 
-
-
-
-
 

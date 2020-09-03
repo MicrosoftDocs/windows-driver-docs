@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # BUS1394_CLASS_GUID
 
 
-The BUS1394_CLASS_GUID [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [1394 bus devices](https://docs.microsoft.com/windows-hardware/drivers/ieee).
+The BUS1394_CLASS_GUID [device interface class](./overview-of-device-interface-classes.md) is defined for [1394 bus devices](../ieee/index.md).
 
 <table>
 <colgroup>
@@ -50,11 +50,11 @@ Remarks
 
 Bus drivers for 1394 buses register instances of this device interface class to notify the operating system and applications of the presence of 1394 bus devices.
 
-For information about 1394 buses, see [1394 bus devices](https://docs.microsoft.com/windows-hardware/drivers/ieee).
+For information about 1394 buses, see [1394 bus devices](../ieee/index.md).
 
-The WDK samples include the [1394api sample](https://docs.microsoft.com/windows-hardware/drivers/ieee/1394-samples-and-diagnostic-tools) application. This application uses BUS1394_CLASS_GUID to register to be notified of the presence of instances of this device interface class.
+The WDK samples include the [1394api sample](../ieee/1394-samples-and-diagnostic-tools.md) application. This application uses BUS1394_CLASS_GUID to register to be notified of the presence of instances of this device interface class.
 
-For information about the device interface class for IEEE 1394 devices in the 61883 [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) that support the IEC-61883 protocol, see [**GUID_61883_CLASS**](guid-61883-class.md).
+For information about the device interface class for IEEE 1394 devices in the 61883 [device setup class](./overview-of-device-setup-classes.md) that support the IEC-61883 protocol, see [**GUID_61883_CLASS**](guid-61883-class.md).
 
 Requirements
 ------------
@@ -82,11 +82,4 @@ Requirements
 [**GUID_61883_CLASS**](guid-61883-class.md)
 
  
-
- 
-
-
-
-
-
 

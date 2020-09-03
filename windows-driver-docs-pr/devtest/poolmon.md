@@ -31,7 +31,7 @@ PoolMon (poolmon.exe), the Memory Pool Monitor, displays data that the operating
 
 Driver developers and testers often use PoolMon to detect memory leaks when they create a new driver, change the driver code, or stress the driver. You can also use PoolMon in each stage of testing to view the driver's patterns of allocation and free operations, and to reveal how much pool memory the driver is using at any given time.
 
-The version of PoolMon described in this document is included in the \\Tools\\Other subdirectory of the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+The version of PoolMon described in this document is included in the \\Tools\\Other subdirectory of the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 This topic includes:
 
@@ -48,10 +48,4 @@ This topic includes:
 To use PoolMon on Microsoft Windows XP and earlier systems, you must enable *pool tagging*. On Windows Server 2003 and later versions of Windows, pool tagging is permanently enabled. For more information, see "Pool Tagging Requirement" in [PoolMon Requirements](poolmon-requirements.md).
 
 PoolMon can display the names of the Windows components and commonly used drivers that assign each pool tag. This feature uses data from pooltag.txt, a file installed with PoolMon and with the Debugging Tools for Windows packages.
-
- 
-
-
-
-
 

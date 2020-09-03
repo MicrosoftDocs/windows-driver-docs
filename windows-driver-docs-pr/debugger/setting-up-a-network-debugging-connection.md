@@ -213,7 +213,7 @@ Manually deleting is not normally required but is provided here as a troubleshoo
 
 Manually deleting entries is not necessary when using the kdnet utility. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-When you use bcdedit –deletevalue, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue).
+When you use bcdedit –deletevalue, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](../devtest/bcdedit--deletevalue.md).
 
 To manually delete BCDEdit entries, complete these steps.
 

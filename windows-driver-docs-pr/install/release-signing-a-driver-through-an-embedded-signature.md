@@ -16,7 +16,7 @@ Embedded-signing of kernel-mode binaries (for example, drivers and associated .d
 
 - The driver is installed through a driver package that does not include a catalog file.
 
-As with [catalog files](catalog-files.md), the [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) tool is used to embed a digital signature within kernel-mode binary files by using a test certificate. The following command line shows how to run SignTool to do the following:
+As with [catalog files](catalog-files.md), the [**SignTool**](../devtest/signtool.md) tool is used to embed a digital signature within kernel-mode binary files by using a test certificate. The following command line shows how to run SignTool to do the following:
 
 - Test-sign the 64-bit version of the Toastpkg sample's binary file, toaster.sys. Within the WDK installation directory, this file is located in the *src\\general\\toaster\\toastpkg\\toastcd\\amd64* directory.
 
@@ -53,6 +53,6 @@ Where:
 
 - *amd64\\toaster.sys* specifies the name of the kernel-mode binary file which will be embedded-signed.
 
-For more information about SignTool and its command-line arguments, see [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool).
+For more information about SignTool and its command-line arguments, see [**SignTool**](../devtest/signtool.md).
 
 For more information about release-signing a driver through an embedded signature, see [Release-Signing Driver Packages](release-signing-driver-packages.md) and [Release-Signing a Driver File](release-signing-a-driver-file.md).

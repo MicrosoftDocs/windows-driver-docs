@@ -27,7 +27,7 @@ To be UAA-compatible, a USB audio device must conform to both the USB audio spec
 
 To be UAA-compatible, an IEEE 1394 AV/C audio device must conform to both the relevant IEEE 1394 specifications and the UAA design guidelines for IEEE 1394 AV/C audio devices. IEEE 1394 audio devices can make use of the [AVCAudio class system driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver) (Avcaudio.sys), which is supplied as part of Windows.
 
-For more information about the Microsoft UAA initiative, see the [Universal Audio Architecture](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn640534(v=vs.85)) white paper.
+For more information about the Microsoft UAA initiative, see the [Universal Audio Architecture](/previous-versions/windows/hardware/design/dn640534(v=vs.85)) white paper.
 
 For more information about Intel HD Audio, see the [Intel HD Audio](https://www.intel.com/content/www/us/en/standards/intel-standards-and-initiatives.html) website.
 

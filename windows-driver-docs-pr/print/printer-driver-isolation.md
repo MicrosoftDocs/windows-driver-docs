@@ -30,7 +30,7 @@ The failure of a single print driver component could cause the print subsystem t
 
 With Windows 7 and Windows Server 2008 R2, an administrator can, as an option, configure a printer driver to run in an isolated process--a process that is separate from the spooler process. By isolating the driver, the administrator can prevent a fault in a driver component from halting the print service.
 
-For more information about the spooler functions, see [Spooler Component Functions and Structures](https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index).
+For more information about the spooler functions, see [Spooler Component Functions and Structures](/windows-hardware/drivers/ddi/_print/index).
 
 ## Driver isolation support in INF files
 
@@ -44,10 +44,10 @@ The following table shows the spooler functions that an administrator can use to
 
 | Function name | Operation |
 |--|--|
-| [GetPrinterDataEx](https://docs.microsoft.com/windows/win32/printdocs/getprinterdataex) | Get the driver-isolation settings for a printer. |
-| [SetPrinterDataEx](https://docs.microsoft.com/windows/win32/printdocs/setprinterdataex) | Set the driver-isolation settings for a printer. |
-| [EnumPrinterDataEx](https://docs.microsoft.com/windows/win32/printdocs/enumprinterdataex) | Enumerate driver-isolation settings for a printer. |
-| [FindFirstPrinterChangeNotification](https://docs.microsoft.com/windows/win32/printdocs/findfirstprinterchangenotification)<br><br>[FindNextPrinterChangeNotification](https://docs.microsoft.com/windows/win32/printdocs/findnextprinterchangenotification) | Request notifications of changes to the driver-isolation settings for a printer. |
+| [GetPrinterDataEx](/windows/win32/printdocs/getprinterdataex) | Get the driver-isolation settings for a printer. |
+| [SetPrinterDataEx](/windows/win32/printdocs/setprinterdataex) | Set the driver-isolation settings for a printer. |
+| [EnumPrinterDataEx](/windows/win32/printdocs/enumprinterdataex) | Enumerate driver-isolation settings for a printer. |
+| [FindFirstPrinterChangeNotification](/windows/win32/printdocs/findfirstprinterchangenotification)<br><br>[FindNextPrinterChangeNotification](/windows/win32/printdocs/findnextprinterchangenotification) | Request notifications of changes to the driver-isolation settings for a printer. |
 
 The format for the data is as follows:
 

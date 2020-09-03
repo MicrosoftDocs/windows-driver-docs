@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 >
-> Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** INF sections are prohibited [(with exception)](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-primitive-driver#legacy-compatibility).
+> Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** INF sections are prohibited [(with exception)](../develop/creating-a-primitive-driver.md#legacy-compatibility).
 
 In Windows 10 prior to version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections were optional but recommended if the driver could be uninstalled. For these OS versions, you can uninstall your filter driver by using the command line, PowerShell, or a batch file to execute these INF file sections, or a user-mode uninstall application.
 
@@ -27,7 +27,7 @@ To execute the **DefaultUninstall** and **DefaultUninstall.Services** sections o
 RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultUninstall 132 path-to-uninstall-dir\infname.inf
 ```
 
-See [**Rundll32**](https://docs.microsoft.com/windows-server/administration/windows-commands/rundll32) and [**InstallHinfSection**](https://docs.microsoft.com/windows/win32/api/setupapi/nf-setupapi-installhinfsectiona) for more information.
+See [**Rundll32**](/windows-server/administration/windows-commands/rundll32) and [**InstallHinfSection**](/windows/win32/api/setupapi/nf-setupapi-installhinfsectiona) for more information.
 
 ## Powershell Uninstall
 
@@ -37,7 +37,7 @@ Type the following command at the Powershell command prompt:
 Get-CimInstance Win32_SystemDriver -Filter "name='your_driver_name'" | Invoke-CimMethod -MethodName Delete
 ```
 
-See [CimCmdlets](https://docs.microsoft.com/powershell/module/cimcmdlets/?view=powershell-7) for more information.
+See [CimCmdlets](/powershell/module/cimcmdlets/?view=powershell-7) for more information.
 
 ## Uninstall Application
 
@@ -55,4 +55,4 @@ If you use an application to uninstall your driver, observe the following guidel
 * An uninstall application should not delete the INF file (or its associated PNF file) from the Windows INF file directory (*%windir%\\INF*).
 * Some filter driver files cannot safely be removed when the application is uninstalled. These files should not be listed in the **DefaultUninstall.Services** section of the INF file.
 
-For more information about uninstall applications, see [Writing a Device Installation Application](https://docs.microsoft.com/windows-hardware/drivers/install/writing-a-device-installation-application).
+For more information about uninstall applications, see [Writing a Device Installation Application](../install/writing-a-device-installation-application.md).

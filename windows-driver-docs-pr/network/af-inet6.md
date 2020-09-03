@@ -15,7 +15,7 @@ The AF\_INET6 address family is the address family for IPv6.
 
 ### Socket Address Structure
 
-An IPv6 transport address is specified with the [**SOCKADDR\_IN6**](https://docs.microsoft.com/windows/win32/api/ws2ipdef/ns-ws2ipdef-sockaddr_in6_lh) structure.
+An IPv6 transport address is specified with the [**SOCKADDR\_IN6**](/windows/win32/api/ws2ipdef/ns-ws2ipdef-sockaddr_in6_lh) structure.
 
 ### Socket Types
 
@@ -30,7 +30,7 @@ Supports unreliable connectionless datagram communication.
 <a href="" id="sock-raw"></a>SOCK\_RAW  
 Supports raw access to the transport protocol.
 
-A WSK application specifies a socket type when it calls the [**WskSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
+A WSK application specifies a socket type when it calls the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
 
 ### Protocols
 
@@ -125,13 +125,13 @@ Raw IP packets
 
 Additional protocols are supported through the use of raw sockets.
 
-A WSK application specifies a protocol when it calls the [**WskSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
+A WSK application specifies a protocol when it calls the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
 
-A WSK application also specifies a protocol (as the *Level* parameter) when it calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function to set or retrieve transport protocol level or network protocol level socket options.
+A WSK application also specifies a protocol (as the *Level* parameter) when it calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function to set or retrieve transport protocol level or network protocol level socket options.
 
 ### Combinations
 
-IPv6 supports the following combinations of socket types and protocols for each WSK [socket category](https://docs.microsoft.com/windows-hardware/drivers/network/winsock-kernel-socket-categories):
+IPv6 supports the following combinations of socket types and protocols for each WSK [socket category](./winsock-kernel-socket-categories.md):
 
 Basic Sockets
 SOCK\_STREAM + IPPROTO\_TCP
@@ -167,9 +167,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

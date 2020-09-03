@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !ndiskd.nbl
 
 
-The **!ndiskd.nbl** extension displays information about a [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure) (NBL) structure.
+The **!ndiskd.nbl** extension displays information about a [**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md) (NBL) structure.
 
 ```console
     !ndiskd.nbl [-handle <x>] [-basic] [-chain] [-info] [-data] 
@@ -34,7 +34,7 @@ Required. Address of a **NET\_BUFFER\_LIST** structure.
 Displays basic information about an NBL.
 
 <span id="_______-chain______"></span><span id="_______-CHAIN______"></span> *-chain*   
-Displays all the NBLs and [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure)s in an NBL chain.
+Displays all the NBLs and [**NET\_BUFFER**](../network/net-buffer-structure.md)s in an NBL chain.
 
 <span id="_______-info______"></span><span id="_______-INFO______"></span> *-info*   
 Displays all the out-of-band information that is associated with an NBL.
@@ -96,9 +96,9 @@ NET_BUFFER ffffdf8014952610
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -106,20 +106,13 @@ NET_BUFFER ffffdf8014952610
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)
+[**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)
 
-[**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure)
+[**NET\_BUFFER**](../network/net-buffer-structure.md)
 
 [**!ndiskd.nbllog**](-ndiskd-nbllog.md)
 
 [**!ndiskd.nb**](-ndiskd-nb.md)
 
  
-
- 
-
-
-
-
-
 

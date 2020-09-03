@@ -45,7 +45,7 @@ A worldwide name that specifies the discovered target whose events the WMI clien
 The scope of the target events to report. If this member is zero, the WMI client will receive events associated with the port that is indicated by *DiscoveredPortWWN*. If this member is nonzero, the WMI client will receive all events associated with all currently discovered targets as well as targets that are discovered in the future.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addtarget_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addtarget_out) structure.
 
 Return value
 ------------
@@ -80,16 +80,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**AddTarget\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addtarget_in)
+[**AddTarget\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addtarget_in)
 
-[**AddTarget\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addtarget_out)
-
- 
+[**AddTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addtarget_out)
 
  
-
-
-
-
-
 

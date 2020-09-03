@@ -29,14 +29,7 @@ For more information about RDMA, Infiniband, iWARP, and RoCE, see the following 
 ## Related topics
 
 
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
+[Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 
  
-
- 
-
-
-
-
-
 

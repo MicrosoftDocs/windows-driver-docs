@@ -23,7 +23,7 @@ The IPrinterBidiSchemaResponses interface represents a set of bidi responses pop
 Members
 -------
 
-The **IPrinterBidiSchemaResponses** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterBidiSchemaResponses** also has these types of members:
+The **IPrinterBidiSchemaResponses** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterBidiSchemaResponses** also has these types of members:
 
 -   [Methods](#methods)
 

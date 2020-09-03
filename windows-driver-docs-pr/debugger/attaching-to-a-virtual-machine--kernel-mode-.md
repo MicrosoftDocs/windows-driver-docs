@@ -111,7 +111,7 @@ To enable kernel debugging using a COM port on a generation 2 virtual machine, f
 
 4. Re-enable secure boot, once you are done updating the configuration changes.
 
-For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)).
+For more information about Generation 2 VMs, see [Generation 2 Virtual Machine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282285(v=ws.11)).
 
 
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
@@ -149,10 +149,3 @@ If you restart the virtual machine by using the VMWare facilities (for example, 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)
 
 [Setting Up Network Debugging of a Virtual Machine Host](setting-up-network-debugging-of-a-virtual-machine-host.md)
- 
-
-
-
-
-
-

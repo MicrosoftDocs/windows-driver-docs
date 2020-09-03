@@ -25,7 +25,7 @@ OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN removes a wake-on-LAN (WOL) pattern from the
 
 | TLV                                                                                        | Multiple TLV instances allowed | Optional | Description     |
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------|
-| [**WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-wake-packet-pattern-remove) |                                |          | WOL pattern ID. |
+| [**WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE**](./wdi-tlv-wake-packet-pattern-remove.md) |                                |          | WOL pattern ID. |
 
  
 
@@ -64,9 +64,4 @@ Requirements
 [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](oid-wdi-set-add-wol-pattern.md)
 
  
-
- 
-
-
-
 

@@ -18,7 +18,7 @@ The sample defines a class called **CExtension**, which derives from **CNodeCont
 
 *Vidcap.ax* uses **IKsNodeControl** to inform the plug-in of the extension node ID and provide it with an instance of **IKsControl**. Specifically, the plug-in receives this information through calls to **CExtension::put\_NodeId** and **CExtension::put\_KsControl**. You can find possible implementations of these methods later in this topic for the parent class **CNodeControl**.
 
-*Vidcap.h* appears in the Summer 2004 DirectX SDK through the February 2005 [DirectX SDK](https://docs.microsoft.com/previous-versions/dn629515(v=msdn.10)). When installing these packages, you must install the Extras to obtain *Vidcap.h*.
+*Vidcap.h* appears in the Summer 2004 DirectX SDK through the February 2005 [DirectX SDK](/previous-versions/dn629515(v=msdn.10)). When installing these packages, you must install the Extras to obtain *Vidcap.h*.
 
 In Windows Vista and later releases, *Vidcap.h* is included as part of the Microsoft Windows SDK.
 

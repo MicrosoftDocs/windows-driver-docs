@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_NET
 
 
-The GUID_DEVINTERFACE_NET [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [network devices](https://docs.microsoft.com/windows-hardware/drivers/network).
+The GUID_DEVINTERFACE_NET [device interface class](./overview-of-device-interface-classes.md) is defined for [network devices](../network/index.md).
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Drivers of network devices register instances of this device interface class to 
 
 NDIS registers instances of this interface class for NDIS miniport drivers.
 
-For information about network devices and drivers, see [Network Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network).
+For information about network devices and drivers, see [Network Design Guide](../network/index.md).
 
 Requirements
 ------------
@@ -75,10 +75,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

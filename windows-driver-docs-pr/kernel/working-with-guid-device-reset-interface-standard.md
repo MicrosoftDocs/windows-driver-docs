@@ -166,5 +166,4 @@ ACPI!_DESCRIPTION_HEADER
 
 ## See Also
 
-[_DEVICE_RESET_INTERFACE_STANDARD](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_reset_interface_standard) 
-
+[_DEVICE_RESET_INTERFACE_STANDARD](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_reset_interface_standard)

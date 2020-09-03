@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 # !ndiskd.pkt
 
-**Warning**  This extension is for legacy NDIS 5.x drivers. The [NDIS\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure and its associated architecture have been deprecated.
+**Warning**  This extension is for legacy NDIS 5.x drivers. The [NDIS\_PACKET](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure and its associated architecture have been deprecated.
 
-The **!ndiskd.pkt** extension displays information about an [NDIS\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure.
+The **!ndiskd.pkt** extension displays information about an [NDIS\_PACKET](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure.
 
 ```console
 !ndiskd.pkt [-packet] [-verbosity] 
@@ -37,4 +37,4 @@ Ndiskd.dll
 
 ## See also
 
-[NDIS\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85))
+[NDIS\_PACKET](/previous-versions/windows/hardware/network/ff557086(v=vs.85))

@@ -52,11 +52,11 @@ The following table describes the valid values for the **WIA\_IPS\_MULTI\_FEED**
 </tr>
 <tr class="even">
 <td><p>WIA_MULTI_FEED_DETECT_STOP_ERROR</p></td>
-<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and returns WIA_ERROR_MULTI_FEED to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a>.</p></td>
+<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and returns WIA_ERROR_MULTI_FEED to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_MULTI_FEED_DETECT_STOP_SUCCESS</p></td>
-<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> returns and does not fail because of the multi-feed.</p></td>
+<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> returns and does not fail because of the multi-feed.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_MULTI_FEED_DETECT_CONTINUE</p></td>
@@ -88,10 +88,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

@@ -16,14 +16,9 @@ ms.localizationpriority: medium
 
 
 
-To set a timer on a stream pointer, call [**KsStreamPointerScheduleTimeout**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerscheduletimeout). If the specified stream pointer has not been deleted by the time *Interval* expires, AVStream calls the vendor-supplied timer callback routine. Specify *Interval* in 100-nanosecond units.
+To set a timer on a stream pointer, call [**KsStreamPointerScheduleTimeout**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerscheduletimeout). If the specified stream pointer has not been deleted by the time *Interval* expires, AVStream calls the vendor-supplied timer callback routine. Specify *Interval* in 100-nanosecond units.
 
-To cancel a timeout, call [**KsStreamPointerCancelTimeout**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointercanceltimeout).
-
- 
+To cancel a timeout, call [**KsStreamPointerCancelTimeout**](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointercanceltimeout).
 
  
-
-
-
 

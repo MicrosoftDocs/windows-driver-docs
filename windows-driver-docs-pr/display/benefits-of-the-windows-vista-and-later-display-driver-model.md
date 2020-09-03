@@ -27,11 +27,11 @@ Creating display drivers is easier using the Windows Display Driver Model (WDDM)
 
     Surface creation on operating systems earlier than Windows Vista requires the following successive kernel-mode calls:
 
-    1.  [*DdCanCreateSurface*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549213(v=vs.85))
-    2.  [*DdCreateSurface*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549263(v=vs.85))
-    3.  [**D3dCreateSurfaceEx**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)
+    1.  [*DdCanCreateSurface*](/previous-versions/windows/hardware/drivers/ff549213(v=vs.85))
+    2.  [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85))
+    3.  [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)
 
-    Surface creation in WDDM requires only the [**CreateResource**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createresource) user-mode display driver call, which in turn calls the [**pfnAllocateCb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb) function. A call to the kernel-mode [**DxgkDdiCreateAllocation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function then occurs.
+    Surface creation in WDDM requires only the [**CreateResource**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createresource) user-mode display driver call, which in turn calls the [**pfnAllocateCb**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb) function. A call to the kernel-mode [**DxgkDdiCreateAllocation**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) function then occurs.
 
 -   Calls that create and destroy surfaces and that lock and unlock resources are more evenly paired.
 
@@ -51,10 +51,4 @@ Creating display drivers is easier using the Windows Display Driver Model (WDDM)
     Background translation (that is, translation code that runs in a separate thread from other display-processing threads) is easier to write for user mode.
 
  
-
- 
-
-
-
-
 

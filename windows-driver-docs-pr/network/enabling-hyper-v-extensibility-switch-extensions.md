@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 When Hyper-V extensible switch extensions are installed, they are bound to each instance of an extensible switch. However, the extensions are disabled by default and must be explicitly enabled on each extensible switch instance.
 
-The [Enable-VMSwitchExtension](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmswitchextension) PowerShell cmdlet enables an extension on a specific instance of an extensible switch. This cmdlet uses the following syntax:
+The [Enable-VMSwitchExtension](/powershell/module/hyper-v/enable-vmswitchextension) PowerShell cmdlet enables an extension on a specific instance of an extensible switch. This cmdlet uses the following syntax:
 
 ``` syntax
 Enable-VMSwitchExtension [-Name] <string[]> [-ComputerName <string[]>] [<CommonParameters>]
@@ -45,18 +45,11 @@ Enabled       : True
 ## Related topics
 
 
-[Enable-VMSwitchExtension](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmswitchextension)
+[Enable-VMSwitchExtension](/powershell/module/hyper-v/enable-vmswitchextension)
 
-[Get-VMSwitchExtension](https://docs.microsoft.com/powershell/module/hyper-v/get-vmsystemswitchextension)
+[Get-VMSwitchExtension](/powershell/module/hyper-v/get-vmsystemswitchextension)
 
-[**Msvm\_EthernetSwitchExtension**](https://docs.microsoft.com/windows/desktop/HyperV_v2/msvm-ethernetswitchextension)
-
- 
+[**Msvm\_EthernetSwitchExtension**](/windows/desktop/HyperV_v2/msvm-ethernetswitchextension)
 
  
-
-
-
-
-
 

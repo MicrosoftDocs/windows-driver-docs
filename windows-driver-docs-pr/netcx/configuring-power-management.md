@@ -36,17 +36,17 @@ For background information on how the Windows network stack makes use of this ca
 
 Client drivers set their low power protocol offload capabilities by calling the following methods appropriate for their hardware:
 
-- [**NetAdapterPowerOffloadSetArpCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterpoweroffloadsetarpcapabilities)
-- [**NetAdapterPowerOffloadSetNSCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterpoweroffloadsetnscapabilities)
+- [**NetAdapterPowerOffloadSetArpCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterpoweroffloadsetarpcapabilities)
+- [**NetAdapterPowerOffloadSetNSCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterpoweroffloadsetnscapabilities)
 
 ### Wake up capabilities
 
 Client drivers call any of the following methods to set the wake capabilities that their hardware supports when the device is in low power state (Dx):
 
-- [**NetAdapterWakeSetBitmapCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetbitmapcapabilities)
-- [**NetAdapterWakeSetMagicPacketCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetmagicpacketcapabilities)
-- [**NetAdapterWakeSetMediaChangeCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetmediachangecapabilities)
-- [**NetAdapterWakeSetPacketFilterCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetpacketfiltercapabilities)
+- [**NetAdapterWakeSetBitmapCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetbitmapcapabilities)
+- [**NetAdapterWakeSetMagicPacketCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetmagicpacketcapabilities)
+- [**NetAdapterWakeSetMediaChangeCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetmediachangecapabilities)
+- [**NetAdapterWakeSetPacketFilterCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterwakesetpacketfiltercapabilities)
 
 ### Power consumption and resume latency
 
@@ -55,7 +55,7 @@ When the networking device is in Dx it still consumes power to perform offload a
 The table below describes the general guidelines regarding the trade-off between power consumption and resume latency for each wake capability.
 
 > [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided. Please refer to media-specific documentation and the [Windows Hardware Compatibility Program (WHCP)](https://docs.microsoft.com/windows-hardware/design/compatibility/) for more information about a specific device type.
+> Some information relates to prereleased product which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided. Please refer to media-specific documentation and the [Windows Hardware Compatibility Program (WHCP)](/windows-hardware/design/compatibility/) for more information about a specific device type.
   
 | Wake Capability | Wake Events | Power Consumption | Resume Latency
 |-|-|-|-|
@@ -64,7 +64,7 @@ The table below describes the general guidelines regarding the trade-off between
 | MagicPacket | Magic packet | Similar to Bitmap | <= 300 ms
 | MediaChange | Media connected or disconnected | Similar to Bitmap | <= 300 ms
 
-The following example illustrates how a client driver might initialize its power capabilities. It does this while starting the net adapter but before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart). In this example, the client driver sets its bitmap, media change, and packet filter wake capabilities.
+The following example illustrates how a client driver might initialize its power capabilities. It does this while starting the net adapter but before calling [**NetAdapterStart**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart). In this example, the client driver sets its bitmap, media change, and packet filter wake capabilities.
 
 ```cpp
 //
@@ -104,11 +104,11 @@ if(deviceContext->SelectiveSuspendSupported)
 }
 ```
 
-The client can optionally register [*EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_preview_power_offload) and [*EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_preview_wake_source) callback functions to accept or reject incoming protocol offloads and wake patterns.
+The client can optionally register [*EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_preview_power_offload) and [*EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_preview_wake_source) callback functions to accept or reject incoming protocol offloads and wake patterns.
 
 ## Programming protocol power offload and wake patterns
 
-During the device's [powering down sequence](../wdf/power-down-and-removal-sequence-for-a-function-or-filter-driver.md) the driver iterates through the enabled wake patterns and protocol power offloads and programs them into the hardware. The driver does this in its [*EvtDeviceArmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceArmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) callback functions.
+During the device's [powering down sequence](../wdf/power-down-and-removal-sequence-for-a-function-or-filter-driver.md) the driver iterates through the enabled wake patterns and protocol power offloads and programs them into the hardware. The driver does this in its [*EvtDeviceArmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceArmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) callback functions.
 
 The following example shows how a client driver might iterate over the wake pattern list to check for a wake on magic packet entry, then iterate over the power offload list to process IPv4 ARP protocol offload:
 
@@ -166,16 +166,33 @@ EvtDeviceArmWakeFromSx(
 }
 ```
 
-On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
+On the way [back to high power](../wdf/power-up-sequence-for-a-function-or-filter-driver.md) the driver normally disables the previously programmed protocol power offloads and wake patterns in the corresponding [*EvtDeviceDisarmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_sx) and [*EvtDeviceDisarmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_disarm_wake_from_s0) callbacks.
+
+## Reporting wake reason
+
+> [!IMPORTANT]
+> It is mandatory that client drivers report wake reason to NetAdapterCx.
+
+When the NIC hardware wakes up the system, the client driver must report to NetAdapterCx which wake source triggered the wake. For most wake sources, drivers use the [**NET_ADAPTER_WAKE_REASON_PACKET**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_wake_reason_packet) structure to describe the network packet that triggered the wake.
+
+If the [**NET_WAKE_SOURCE_TYPE**](/windows-hardware/drivers/ddi/netwakesource/ne-netwakesource-_net_wake_source_type) is:
+
+- **NetWakeSourceTypeBitmapPattern**, call [**NET_ADAPTER_WAKE_REASON_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_packet_init) to initialize the **NET_ADAPTER_WAKE_REASON_PACKET** structure. Call [**NetAdapterReportWakeReasonPacket**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonpacket) to report this wake reason.
+
+- **NetWakeSourceTypeMagicPacket**, call [**NET_ADAPTER_WAKE_REASON_MAGIC_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_magic_packet_init)  to initialize the **NET_ADAPTER_WAKE_REASON_PACKET** structure. Call **NetAdapterReportWakeReasonPacket** to report this wake reason.
+
+- **NetWakeSourceTypePacketFilterMatch**, call [**NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_filter_packet_init)  to initialize the **NET_ADAPTER_WAKE_REASON_PACKET** structure. Call **NetAdapterReportWakeReasonPacket** to report this wake reason.
+
+- **NetWakeSourceTypeMediaChange**, call [**NetAdapterReportWakeReasonMediaChange**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonmediachange) to report this wake reason.
 
 ## Power management scenarios for Modern Standby system
 
 > [!IMPORTANT]
 > For Modern Standby platform, the networking device driver must:
 >
-> - Call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) to register power callbacks.
-> - Call [**WdfDeviceAssignS0IdleSettings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to support device idling when the system is in its working (S0) state.
-> - Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register wake-up callbacks.
+> - Call [**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) to register power callbacks.
+> - Call [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) to support device idling when the system is in its working (S0) state.
+> - Call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks) to register wake-up callbacks.
 > - Support [Low power protocol offload capabilities](#low-power-protocol-offload-capabilities) that are appropriate for the device type.
 > - Support [Wake-up capabilities](#wake-up-capabilities) that are appropriate for the device type.
 >

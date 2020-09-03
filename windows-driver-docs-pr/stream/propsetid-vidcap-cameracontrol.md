@@ -31,7 +31,7 @@ Prior to USB video class, this enumeration contained the following properties:
 
 [**KSPROPERTY\_CAMERACONTROL\_TILT**](ksproperty-cameracontrol-tilt.md)
 
-With the introduction of the [USB Video Class Driver](https://docs.microsoft.com/windows-hardware/drivers/stream/usb-video-class-driver), the following properties were added to the KSPROPERTY\_VIDCAP\_CAMERACONTROL enumeration.
+With the introduction of the [USB Video Class Driver](./usb-video-class-driver.md), the following properties were added to the KSPROPERTY\_VIDCAP\_CAMERACONTROL enumeration.
 
 [**KSPROPERTY\_CAMERACONTROL\_SCANMODE**](ksproperty-cameracontrol-scanmode.md)
 
@@ -67,7 +67,7 @@ Starting with Windows 8, these additional properties are supported for user-mod
 
 [**KSPROPERTY\_CAMERACONTROL\_FLASH\_PROPERTY**](ksproperty-cameracontrol-flash-property.md)
 
-[**KSPROPERTY\_CAMERACONTROL\_IMAGE\_PIN\_CAPABILITY\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_image_pin_capability_s)
+[**KSPROPERTY\_CAMERACONTROL\_IMAGE\_PIN\_CAPABILITY\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_image_pin_capability_s)
 
 [**KSPROPERTY\_CAMERACONTROL\_REGION\_OF\_INTEREST\_PROPERTY**](ksproperty-cameracontrol-region-of-interest-property.md)
 

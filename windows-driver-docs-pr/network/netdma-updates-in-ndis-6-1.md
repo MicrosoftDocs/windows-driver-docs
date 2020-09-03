@@ -17,4 +17,4 @@ The NetDMA interface provides offloading of direct memory access (DMA) to networ
 
 The NetDMA interface is an optional service that is provided for NICs and other drivers.
 
-For more information about NetDMA, see [NetDMA Drivers](netdma-drivers.md).
+For more information about NetDMA, see [NetDMA Drivers](/previous-versions/windows/hardware/network/netdma-drivers).

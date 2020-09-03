@@ -14,7 +14,7 @@ Miniport drivers use the **NDIS_STATUS_WWAN_NETWORK_BLACKLIST** notification to 
 
 Unsolicited events are sent if any of the blacklist states have changed from actuated to not actuated, or vice versa. For example, if a SIM is inserted whose provider matches the SIM provider blacklist.
 
-This notification uses the [**NDIS_WWAN_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist) structure.
+This notification uses the [**NDIS_WWAN_NETWORK_BLACKLIST**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist) structure.
 
 ## Requirements
 
@@ -23,8 +23,8 @@ This notification uses the [**NDIS_WWAN_NETWORK_BLACKLIST**](https://docs.micros
 
 ## See also
 
-[MB Network Blacklist Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-network-blacklist-operations)
+[MB Network Blacklist Operations](./mb-network-blacklist-operations.md)
 
 [OID_WWAN_NETWORK_BLACKLIST](oid-wwan-network-blacklist.md)
 
-[**NDIS_WWAN_NETWORK_BLACKLIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist)
+[**NDIS_WWAN_NETWORK_BLACKLIST**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist)

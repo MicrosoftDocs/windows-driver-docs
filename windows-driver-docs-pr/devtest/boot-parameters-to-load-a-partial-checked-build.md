@@ -24,7 +24,7 @@ A *partial checked build* contains checked build versions of the kernel and HAL 
 
 ### <span id="configuring_a_partial_checked_build_in_windows_vista_and_later"></span><span id="CONFIGURING_A_PARTIAL_CHECKED_BUILD_IN_WINDOWS_VISTA_AND_LATER"></span>Configuring a Partial Checked Build in Windows
 
-To configure a partial checked build use the [**BCDedit /set**](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--set) command and the **kernel** and **hal** options.
+To configure a partial checked build use the [**BCDedit /set**](./bcdedit--set.md) command and the **kernel** and **hal** options.
 
 The following commands configure a boot entry to use the checked versions of the kernel and hardware abstraction layer (HAL).
 

@@ -19,7 +19,7 @@ Use the following best practices to design your DPC routines:
 
 -   A single DPC routine should not execute for more than 100 microseconds.
 
--   DPC routines that call the [**KeStallExecutionProcessor**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kestallexecutionprocessor) routine to delay execution must not specify delays of more than 100 microseconds.
+-   DPC routines that call the [**KeStallExecutionProcessor**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kestallexecutionprocessor) routine to delay execution must not specify delays of more than 100 microseconds.
 
 -   If a task requires longer than 100 microseconds and executes at DISPATCH\_LEVEL, the DPC routine should end after 100 microseconds and schedule one or more DPC timer routines to complete the task at a later time.
 
@@ -28,9 +28,4 @@ Use the following best practices to design your DPC routines:
 For more information about performance analysis tools, see [Measuring System Resume Performance on Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=69964).
 
  
-
- 
-
-
-
 

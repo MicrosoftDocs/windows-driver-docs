@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Release-Signing a Driver Package's Catalog File
 
-Once the [catalog file](catalog-files.md) for a [driver package](driver-packages.md) is created or updated, the catalog file can be signed through [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool). Once signed, the digital signature stored within the catalog file is invalidated if any components of the driver package are modified.
+Once the [catalog file](catalog-files.md) for a [driver package](driver-packages.md) is created or updated, the catalog file can be signed through [**SignTool**](../devtest/signtool.md). Once signed, the digital signature stored within the catalog file is invalidated if any components of the driver package are modified.
 
 When digitally signing a catalog file, SignTool saves the digital signature within the catalog file. The components of the driver package are not changed by SignTool. However, since the catalog file contains hashed values of the components of the driver package, the digital signature within the catalog file is maintained as long as the components hash to the same value.
 
@@ -51,6 +51,6 @@ Where:
 
 - *tstamd64.cat* specifies the name of the catalog file, which will be digitally-signed.
 
-For more information about SignTool and its command-line arguments, see [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool).
+For more information about SignTool and its command-line arguments, see [**SignTool**](../devtest/signtool.md).
 
 For more information about release-signing driver packages, see [Release-Signing Driver Packages](release-signing-driver-packages.md).

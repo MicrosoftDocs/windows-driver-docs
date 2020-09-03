@@ -41,15 +41,9 @@ class MSFC_VirtualFibrePortAttributes
 
 When compiled by the WMI tool suite, this class definition produces the following data structure:
 
-[**MSFC\_VirtualFibrePortAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/npivwmi/ns-npivwmi-_msfc_virtualfibreportattributes)
+[**MSFC\_VirtualFibrePortAttributes**](/windows-hardware/drivers/ddi/npivwmi/ns-npivwmi-_msfc_virtualfibreportattributes)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

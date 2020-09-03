@@ -66,8 +66,6 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 
 [Audio measures](audio-measures.md)
 
-[Bluetooth measures](bluetooth-measures.md)
-
 [Camera measures](camera-measures.md)
 
 [Fingerprint measures](fingerprint-measures.md)

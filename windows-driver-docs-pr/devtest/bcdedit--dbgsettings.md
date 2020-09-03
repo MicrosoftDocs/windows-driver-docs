@@ -66,7 +66,7 @@ To specify the bus parameters, Open Device Manager, and locate the network adapt
 bcdedit /set "{dbgsettings}" busparams b.d.f
 ```
 
-If you are manually configuring a debugger connection, you must specify the bus parameters. For more information, see [Setting Up KDNET Network Kernel Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection) and [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-usb-3-0-debug-cable-connection).
+If you are manually configuring a debugger connection, you must specify the bus parameters. For more information, see [Setting Up KDNET Network Kernel Debugging Manually](../debugger/setting-up-a-network-debugging-connection.md) and [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](../debugger/setting-up-a-usb-3-0-debug-cable-connection.md).
 
 ### Examples
 
@@ -86,9 +86,9 @@ bcdedit /dbgsettings NET HOSTIPV6:2001:48:d8:2f:5e:c0:42:28:4f5b PORT:50000
 
  > [!IMPORTANT]
 > Setting up a network debugging manually is a complex and error prone process.
-> To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically). Using the KDNET utility is **strongly** recommended for all debugger users.
+> To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](../debugger/setting-up-a-network-debugging-connection-automatically.md). Using the KDNET utility is **strongly** recommended for all debugger users.
 
-For more information on manual setup, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection).
+For more information on manual setup, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](../debugger/setting-up-a-network-debugging-connection.md).
 
 
 ## LOCAL
@@ -105,7 +105,7 @@ bcdedit /dbgsettings LOCAL
 
 The LOCAL option is available in Windows 8.0 and Windows Server 2012 and later.
 
-For information on setting up local kernel mode debugging manually, see [Setting Up Local Kernel Debugging of a Single Computer Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-local-kernel-debugging-of-a-single-computer-manually).
+For information on setting up local kernel mode debugging manually, see [Setting Up Local Kernel Debugging of a Single Computer Manually](../debugger/setting-up-local-kernel-debugging-of-a-single-computer-manually.md).
 
 ## SERIAL
 
@@ -124,7 +124,7 @@ The following command configures the target computer to use a serial connection 
 ``` console
 bcdedit /dbgsettings serial debugport:1 baudrate:115200
 ```
-For more information, see [Setting Up Kernel-Mode Debugging over a Serial Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-null-modem-cable-connection).
+For more information, see [Setting Up Kernel-Mode Debugging over a Serial Cable Manually](../debugger/setting-up-a-null-modem-cable-connection.md).
 
 ## USB   
 Specifies that the target machine and the host machine will use a USB 2.0 or USB 3.0 connection for debugging. When this option is used, the **TARGETNAME** parameter must be included as well. 
@@ -147,8 +147,8 @@ bcdedit /dbgsettings usb targetname:myTarget
 
 For more information, see:
 
-- [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-usb-3-0-debug-cable-connection)
-- [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-usb-2-0-debug-cable-connection)
+- [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](../debugger/setting-up-a-usb-3-0-debug-cable-connection.md)
+- [Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually](../debugger/setting-up-a-usb-2-0-debug-cable-connection.md)
 
 
 
@@ -157,7 +157,7 @@ For more information, see:
 > [!IMPORTANT]
 > The 1394 transport is available for use in Windows 10, version 1607 and earlier. 
 > It is not available in later versions of Windows. You should transition your projects to other transports, such as KDNET using Ethernet. 
-> For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically).
+> For more information about that transport, see [Setting Up KDNET Network Kernel Debugging Automatically](../debugger/setting-up-a-network-debugging-connection-automatically.md).
 >
 
 Specifies that the target machine and the host machine will use an IEEE 1394 (FireWire) connection for debugging. When this option is used, the **CHANNEL** parameter can be included as well. 
@@ -165,7 +165,7 @@ Specifies that the target machine and the host machine will use an IEEE 1394 (Fi
 **CHANNEL:**<em>channel</em>   
 (Only used when the connection type is **1394**.) Specifies the 1394 channel to use. The value for *channel* must be a decimal integer between 0 and 62, inclusive, and must match the channel number used by the host computer. The channel specified in this parameter does not depend on the physical 1394 port chosen on the adapter. The default value for *channel* is 0.
 
-For more information, see [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-1394-cable-connection).
+For more information, see [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](../debugger/setting-up-a-1394-cable-connection.md).
 
 ## General Debugger Settings
 
@@ -200,15 +200,9 @@ The default values for the dbgsettings are shown in the following table.
 See also
 --------
 
-For information about Windows debugging tools, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index). 
+For information about Windows debugging tools, see [Windows Debugging](../debugger/index.md). 
 
-For information about setting up and configuring a kernel-mode debugging session, see [Setting Up Kernel-Mode Debugging Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd) and [Setting Up KDNET Network Kernel Debugging Automatically](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-a-network-debugging-connection-automatically).
-
-
-
- 
-
-
+For information about setting up and configuring a kernel-mode debugging session, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) and [Setting Up KDNET Network Kernel Debugging Automatically](../debugger/setting-up-a-network-debugging-connection-automatically.md).
 
 
 

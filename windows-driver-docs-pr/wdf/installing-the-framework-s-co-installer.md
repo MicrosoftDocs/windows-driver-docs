@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 # Specifying the KMDF Co-installer in an INF File
 
 
-If you include a co-installer in your [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/components-of-a-driver-package), read this topic for information about sections you must provide in your driver's INF file. This information does not apply if you provide your own setup application that calls Microsoft-supplied .msu redistributables.
+If you include a co-installer in your [driver package](../install/components-of-a-driver-package.md), read this topic for information about sections you must provide in your driver's INF file. This information does not apply if you provide your own setup application that calls Microsoft-supplied .msu redistributables.
 
 ##  INF File Sections for the Co-installer
 
 
-Your driver's INF file must contain an INF <em>DDInstall</em>**.CoInstallers** section that installs the co-installer. For example this section might be named **MyDevice.ntx86.CoInstallers**. For more information about specifying a co-installer in an INF file, see [**INF DDInstall.CoInstallers Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-coinstallers-section).
+Your driver's INF file must contain an INF <em>DDInstall</em>**.CoInstallers** section that installs the co-installer. For example this section might be named **MyDevice.ntx86.CoInstallers**. For more information about specifying a co-installer in an INF file, see [**INF DDInstall.CoInstallers Section**](../install/inf-ddinstall-coinstallers-section.md).
 
 In addition, your driver's INF file must contain an INF <em>DDInstall</em>**.Wdf** section that the co-installer reads after it has been installed. For example, this section might be named **MyDevice.ntx86.Wdf**. After the framework's co-installer has been installed, it reads this section while it is installing your driver.
 
@@ -47,7 +47,7 @@ KmdfService = Echo, Echo_wdfsect
 KmdfLibraryVersion = 1.0
 ```
 
-You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](https://docs.microsoft.com/windows-hardware/drivers/devtest/stampinf) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
+You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](../devtest/stampinf.md) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
 
 ### <a href="" id="sample-inf-ddinstall-coinstallers-and-ddinstall-wdf-sections"></a>**Sample INF** ***DDInstall*.CoInstallers and** ***DDInstall*.Wdf Sections**
 
@@ -123,10 +123,4 @@ KmdfLibraryVersion = 1.0
 ```
 
  
-
- 
-
-
-
-
 

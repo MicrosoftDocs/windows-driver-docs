@@ -24,7 +24,7 @@ This section describes the interface between the spooler process and printing co
 
 ## Notification Filtering
 
-The PrintAsyncNotifyUserFilter enumerated type is used for two situations. In the first of these a print component running inside the spooler calls the [CreatePrintAsyncNotifyChannel](https://docs.microsoft.com/windows/win32/api/prnasnot/nf-prnasnot-createprintasyncnotifychannel) function to create a notification channel. The caller passes one enumerator of the PrintAsyncNotifyUserFilter enumerated type to specify which listening clients are permitted to receive notifications. In the second situation, a listening client calls the [RegisterForPrintAsyncNotifications](https://docs.microsoft.com/windows/win32/api/prnasnot/nf-prnasnot-registerforprintasyncnotifications) function to register for notification. The caller passes one of the PrintAsyncNotifyUserFilter enumerators to indicate which notifications it should receive.
+The PrintAsyncNotifyUserFilter enumerated type is used for two situations. In the first of these a print component running inside the spooler calls the [CreatePrintAsyncNotifyChannel](/windows/win32/api/prnasnot/nf-prnasnot-createprintasyncnotifychannel) function to create a notification channel. The caller passes one enumerator of the PrintAsyncNotifyUserFilter enumerated type to specify which listening clients are permitted to receive notifications. In the second situation, a listening client calls the [RegisterForPrintAsyncNotifications](/windows/win32/api/prnasnot/nf-prnasnot-registerforprintasyncnotifications) function to register for notification. The caller passes one of the PrintAsyncNotifyUserFilter enumerators to indicate which notifications it should receive.
 
 ```cpp
 typedef enum
@@ -68,7 +68,7 @@ typedef enum
 } PrintAsyncNotifyConversationStyle
 ```
 
-There are two types of communication -- unidirectional and bidirectional. In unidirectional communication, a listening client does not respond to a spooler notification. In this case, the listening client cannot send notifications back because it receives a **NULL**[IPrintAsyncNotifyChannel](https://docs.microsoft.com/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel) interface pointer. In bidirectional communication, the client sends a response when it receives a notification, and carries on a dialog with the printing component. This is the UI notification case.
+There are two types of communication -- unidirectional and bidirectional. In unidirectional communication, a listening client does not respond to a spooler notification. In this case, the listening client cannot send notifications back because it receives a **NULL**[IPrintAsyncNotifyChannel](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel) interface pointer. In bidirectional communication, the client sends a response when it receives a notification, and carries on a dialog with the printing component. This is the UI notification case.
 
 The situation in which multiple sessions receive a UI notification deserves comment. In this situation, the spooler opens a channel and notifies all listeners that match the filters, sending them the first notification. When the first listener responds, the spooler closes the other channels and the dialog continues with the first client.
 
@@ -96,7 +96,7 @@ The spooler defines a special notification type used to announce to listening cl
 const GUID NOTIFICATION_RELEASE;
 ```
 
-The listening client can receive this type of message only when its [IPrintAsyncNotifyCallback::ChannelClosed](https://docs.microsoft.com/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-channelclosed) method is called.
+The listening client can receive this type of message only when its [IPrintAsyncNotifyCallback::ChannelClosed](/windows/win32/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-channelclosed) method is called.
 
 ## Notification Registration Handle
 

@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 
 
 
-At device start-up, a driver that uses system or bus-master DMA calls [**IoGetDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter) to get a pointer to an adapter object and to determine the maximum number of map registers available for each transfer operation. When a driver calls **IoGetDmaAdapter**, the I/O manager, in turn, calls the HAL to get the necessary platform-specific information.
+At device start-up, a driver that uses system or bus-master DMA calls [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter) to get a pointer to an adapter object and to determine the maximum number of map registers available for each transfer operation. When a driver calls **IoGetDmaAdapter**, the I/O manager, in turn, calls the HAL to get the necessary platform-specific information.
 
-A driver must supply certain information in a system-defined [**DEVICE\_DESCRIPTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_description) structure in its call to **IoGetDmaAdapter**. Drivers must use [**RtlZeroMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzeromemory) to initialize the **DEVICE\_DESCRIPTION** structure with zeros before setting values in it.
+A driver must supply certain information in a system-defined [**DEVICE\_DESCRIPTION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_description) structure in its call to **IoGetDmaAdapter**. Drivers must use [**RtlZeroMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzeromemory) to initialize the **DEVICE\_DESCRIPTION** structure with zeros before setting values in it.
 
 The required data includes information about the features of the driver's device, such as whether the device is a bus master, if it has scatter/gather capabilities, and how many bytes of data the device can transfer at a time (**MaximumLength**).
 
-The required device description data also includes platform-specific information, such as the platform-specific and system-assigned number of the bus that a driver of a bus-master device controls. A driver can obtain this information by calling [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty).
+The required device description data also includes platform-specific information, such as the platform-specific and system-assigned number of the bus that a driver of a bus-master device controls. A driver can obtain this information by calling [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty).
 
 The **DEVICE\_DESCRIPTION** structure includes some fields that might be irrelevant to some DMA devices or drivers. For example, the **BusNumber** field is not used in WDM drivers. Each driver should supply values for the relevant structure members and should set the values for all other members to zero.
 
@@ -33,7 +33,7 @@ The returned adapter object contains three fields that are accessible to drivers
 
 -   Size (**Size**)
 
--   Pointer to a [**DMA\_OPERATIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations) structure (**DmaOperations**)
+-   Pointer to a [**DMA\_OPERATIONS**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_operations) structure (**DmaOperations**)
 
 The **DMA\_OPERATIONS** structure comprises a table of pointers to functions the driver must use to perform DMA operations on its device. The functions are accessible only through the pointers in this data structure; a driver cannot call them directly by name. (Note that these routines replace **Hal*Xxx*** routines supported in previous versions of Windows NT. To ensure compatibility for legacy drivers, the Wdm.h and Ntddk.h header files supply macros with the obsolete names, but new drivers should always call the functions through the data structure.)
 
@@ -45,13 +45,13 @@ The number of map registers can vary from device to device and from platform to 
 
 In other words, the HAL usually gives each driver enough map registers to maximize DMA throughput for its device, but the HAL can return a lesser value on some Windows platforms. There is no guarantee that a driver will get the number of map registers it requests, so drivers should always check the returned value.
 
-Any DMA device driver must provide storage for the adapter object pointer and *NumberOfMapRegisters* value returned by **IoGetDmaAdapter**. This pointer is a required parameter to the system-supplied support routines used for DMA. Because many of these support routines must be called at IRQL = DISPATCH\_LEVEL, the driver-allocated storage must be resident. Most DMA drivers provide the necessary storage in a [device extension](device-extensions.md). However, the storage can be in a controller extension if the driver also uses a [controller object](using-controller-objects.md) or in nonpaged pool that is allocated by the driver. See [Allocating System-Space Memory](allocating-system-space-memory.md) and [Managing Hardware Priorities](managing-hardware-priorities.md) for more information.
+Any DMA device driver must provide storage for the adapter object pointer and *NumberOfMapRegisters* value returned by **IoGetDmaAdapter**. This pointer is a required parameter to the system-supplied support routines used for DMA. Because many of these support routines must be called at IRQL = DISPATCH\_LEVEL, the driver-allocated storage must be resident. Most DMA drivers provide the necessary storage in a [device extension](device-extensions.md). However, the storage can be in a controller extension if the driver also uses a [controller object](./introduction-to-controller-objects.md) or in nonpaged pool that is allocated by the driver. See [Allocating System-Space Memory](allocating-system-space-memory.md) and [Managing Hardware Priorities](managing-hardware-priorities.md) for more information.
 
-When the driver has completed all DMA operations, it calls [**PutDmaAdapter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pput_dma_adapter) to free the adapter object.
+When the driver has completed all DMA operations, it calls [**PutDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pput_dma_adapter) to free the adapter object.
 
-The following sections ([Using System DMA](using-system-dma.md) and [Using Bus-Master DMA](using-bus-master-dma.md)) describe how monolithic drivers of DMA devices use support routines to satisfy transfer requests. These sections assume that the driver has the following:
+The following sections [Using System DMA](introduction-to-adapter-objects.md) and [Using Bus-Master DMA](using-bus-master-dma.md)) describe how monolithic drivers of DMA devices use support routines to satisfy transfer requests. These sections assume that the driver has the following:
 
--   A standard [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine, rather than setting up and managing an internal queue of IRPs
+-   A standard [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine, rather than setting up and managing an internal queue of IRPs
 
 -   An internal routine to split transfer requests for which an insufficient number of map registers is available
 
@@ -60,9 +60,4 @@ The following sections ([Using System DMA](using-system-dma.md) and [Using Bus-M
 In other words, these sections describe the simplest possible technique for drivers' DMA operations, but individual drivers do not necessarily use exactly the same techniques. For any driver of a DMA device, which driver routines should split up large DMA transfer requests depends on the driver model (class/port or monolithic), on the device's features, and on any device-specific DMA constraints that driver must handle.
 
  
-
- 
-
-
-
 

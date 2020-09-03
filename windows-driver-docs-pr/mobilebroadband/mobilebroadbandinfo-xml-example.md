@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # MobileBroadbandInfo XML example
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following XML document uses the [MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md) to specify the mobile broadband specific information for the service:
 

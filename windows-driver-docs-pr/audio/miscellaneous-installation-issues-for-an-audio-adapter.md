@@ -32,12 +32,7 @@ Listed are the most common installation issues for an audio adapter:
 
 -   For information about how an adapter driver or miniport driver can obtain setup information from the registry, see [Retrieving Device Setup Information](retrieving-device-setup-information.md).
 
--   For information about Windows Vista support for an audio adapter which does not have a physical volume control knob, see the [Windows Vista Software Volume Control Support](https://docs.microsoft.com/windows-hardware/drivers/audio/software-volume-control-support) topic.
+-   For information about Windows Vista support for an audio adapter which does not have a physical volume control knob, see the [Windows Vista Software Volume Control Support](./software-volume-control-support.md) topic.
 
  
-
- 
-
-
-
 

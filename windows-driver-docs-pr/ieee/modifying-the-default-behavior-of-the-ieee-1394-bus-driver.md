@@ -104,8 +104,5 @@ The following table describes the registry values that the new 1394 bus driver s
  
 
 ## Related topics
-[The IEEE 1394 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/the-ieee-1394-driver-stack)  
-[IEEE 1394 Bus Driver in Windows 7](https://docs.microsoft.com/windows-hardware/drivers/ieee/IEEE-1394-Bus-Driver-in-Windows-7)  
-
-
-
+[The IEEE 1394 Driver Stack](./the-ieee-1394-driver-stack.md)  
+[IEEE 1394 Bus Driver in Windows 7](./ieee-1394-bus-driver-in-windows-7.md)

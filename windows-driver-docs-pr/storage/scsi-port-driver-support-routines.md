@@ -18,7 +18,7 @@ Lists and reference pages for *ScsiPortXxx* routines can be found in the followi
 
 | Routines | Header |
 | ------- | ------- |
-| *ScsiPortXxx* | [srb.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/) |
-| *ScsiPortWmiXxx* | [scsiwmi.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/scsiwmi/) |
+| *ScsiPortXxx* | [srb.h header](/windows-hardware/drivers/ddi/srb/) |
+| *ScsiPortWmiXxx* | [scsiwmi.h](/windows-hardware/drivers/ddi/scsiwmi/) |
 
 For a list of SCSI miniport driver routines, see [SCSI Miniport Driver Routines](scsi-miniport-driver-routines.md).

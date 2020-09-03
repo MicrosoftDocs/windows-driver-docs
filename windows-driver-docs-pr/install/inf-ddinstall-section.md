@@ -135,7 +135,7 @@ For device instance properties that were introduced earlier on Windows Server 20
 
  
 
-(Windows Vista and later) This directive provides an additional ranking criterion for drivers that are based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](device-setup-classes.md) that distinguishes between drivers based on class-specific criteria.
+(Windows Vista and later) This directive provides an additional ranking criterion for drivers that are based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](./overview-of-device-setup-classes.md) that distinguishes between drivers based on class-specific criteria.
 
 For more information about how drivers are ranked, see [How Windows Ranks Drivers (Windows Vista and Later)](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
@@ -146,7 +146,7 @@ For more information about this directive, see [**INF FeatureScore Directive**](
  
 
 <a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg=**<em>bit-registry-section</em>\[**,**<em>bit-registry-section</em>\]...  
-This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) are modified.
+This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](/windows/desktop/SysInfo/registry-value-types) are modified.
 
 An **HKR** specification in such a bit-registry section designates the **..Class\\**<em>SetupClassGUID</em>**\\**<em>device-instance-id</em> registry path of the user-accessible driver. This type of **HKR** specification is also referred to as a. "software key".
 
@@ -231,14 +231,14 @@ Each section name must be unique within the INF file and must follow the general
 
 Any **AddReg** directive specified in a *DDInstall* section is assumed to reference an add-registry section that cannot be used to store information about upper or lower-filter drivers, about multifunction devices, or about driver-independent but device-specific parameters. If a device/driver INF must store this type of information in the registry, it must use an **AddReg** directive in its undecorated and decorated <em>DDInstall</em>**.HW** sections, if any, to reference another INF-writer-defined *add-registry-section*.
 
-Depending on the [device setup class](device-setup-classes.md) that was specified in the [**INF Version section**](inf-version-section.md), additional class-specific directives can be specified in a *DDInstall* section. For more information about class-specific directives, see the following topics:
+Depending on the [device setup class](./overview-of-device-setup-classes.md) that was specified in the [**INF Version section**](inf-version-section.md), additional class-specific directives can be specified in a *DDInstall* section. For more information about class-specific directives, see the following topics:
 
--   [Building an INF File for a Windows SideShow-Compatible Device](https://docs.microsoft.com/windows-hardware/drivers/)
--   [DDInstall Section in a Network INF File](https://docs.microsoft.com/windows-hardware/drivers/network/ddinstall-services-section-in-a-network-inf-file)
--   [INF Files for Still Image Devices](https://docs.microsoft.com/windows-hardware/drivers/image/inf-files-for-still-image-devices)
--   [INF Files for WIA Devices](https://docs.microsoft.com/windows-hardware/drivers/image/inf-files-for-wia-devices)
+-   [Building an INF File for a Windows SideShow-Compatible Device](../index.yml)
+-   [DDInstall Section in a Network INF File](../network/ddinstall-services-section-in-a-network-inf-file.md)
+-   [INF Files for Still Image Devices](../image/inf-files-for-still-image-devices.md)
+-   [INF Files for WIA Devices](../image/inf-files-for-wia-devices.md)
 -   [Installation Requirements for Network Components](https://docs.microsoft.com/windows-hardware/drivers/network/installation-requirements-for-network-components)
--   [Specifying WDF Directives in INF Files](https://docs.microsoft.com/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files)
+-   [Specifying WDF Directives in INF Files](../wdf/specifying-wdf-directives-in-inf-files.md)
 
 Examples
 --------
@@ -350,11 +350,4 @@ CopyFiles=WDM.CopyFiles.Sys, WDM.CopyFiles.Drv
 [**FeatureScore**](inf-featurescore-directive.md)
 
  
-
- 
-
-
-
-
-
 

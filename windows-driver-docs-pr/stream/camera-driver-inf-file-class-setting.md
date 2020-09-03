@@ -22,4 +22,4 @@ ClassGuid={ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
 ...
 ```
 
-For more information on the HLK requirements for the Camera class INF file setting, see **Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM** in the Components and Peripherals document of the [Windows Hardware Compatibility Specifications for Windows 10](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-specifications-policies).
+For more information on the HLK requirements for the Camera class INF file setting, see **Device.Streaming.Camera.Base.AVStreamClassInterfaceAndWDM** in the Components and Peripherals document of the [Windows Hardware Compatibility Specifications for Windows 10](/windows-hardware/design/compatibility/whcp-specifications-policies).

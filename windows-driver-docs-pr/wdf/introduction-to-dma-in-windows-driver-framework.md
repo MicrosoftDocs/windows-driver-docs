@@ -35,11 +35,5 @@ The framework does not support system-mode DMA transfers on PC-based platforms.
 
  ## Related topics
  
- [Enabling DMA Remapping for device drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)
-
- 
-
-
-
-
+ [Enabling DMA Remapping for device drivers](../pci/enabling-dma-remapping-for-device-drivers.md)
 

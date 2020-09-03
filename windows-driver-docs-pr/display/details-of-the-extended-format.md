@@ -17,7 +17,7 @@ In the following table, the XR part of a format name can be considered a new sha
 
 ## Table of extended formats
 
-The following table shows resources with particular attributes that use the extended formats (DXGI_FORMAT_*) if the hardware supports these extended formats for the resource with those attributes or if extended formats for those resources are optional. See [DXGI_FORMAT](https://docs.microsoft.com/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) for a description of each format.
+The following table shows resources with particular attributes that use the extended formats (DXGI_FORMAT_*) if the hardware supports these extended formats for the resource with those attributes or if extended formats for those resources are optional. See [DXGI_FORMAT](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) for a description of each format.
 
 Column key for the below table:
 

@@ -26,7 +26,7 @@ Miniport drivers report a physical media type to differentiate their physical me
 The physical medium is none of the preceding mediums. For example, a one-way satellite feed is an unspecified physical medium.
 
 **NdisPhysicalMediumWirelessLan**
-Packets are transferred over a wireless LAN network through a miniport driver that conforms to the 802.11 interface. For more information about this interface, see. [802.11 Wireless LAN Miniport Drivers](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff543933(v=vs.85))
+Packets are transferred over a wireless LAN network through a miniport driver that conforms to the 802.11 interface. For more information about this interface, see. [802.11 Wireless LAN Miniport Drivers](/previous-versions/windows/hardware/network/ff543933(v=vs.85))
 
 **NdisPhysicalMediumCableModem**
 Packets are transferred over a DOCSIS-based cable network.
@@ -50,7 +50,7 @@ Packets are transferred over an IEEE 1394 bus.
 Packets are transferred over a Wireless WAN link. Includes, for example, CDPD, CDMA, and GPRS.
 
 <a href="" id="ndisphysicalmediumnative802-11"></a>**NdisPhysicalMediumNative802\_11**
-Packets are transferred over a wireless LAN network through a miniport driver that conforms to the Native 802.11 interface. For more information about this interface, see [Native 802.11 Wireless LAN Miniport Drivers](https://docs.microsoft.com/previous-versions/windows/hardware/wireless/ff560648(v=vs.85)).
+Packets are transferred over a wireless LAN network through a miniport driver that conforms to the Native 802.11 interface. For more information about this interface, see [Native 802.11 Wireless LAN Miniport Drivers](/previous-versions/windows/hardware/wireless/ff560648(v=vs.85)).
 
 **Note**  The Native 802.11 interface is supported in NDIS 6.0 and later versions.
 

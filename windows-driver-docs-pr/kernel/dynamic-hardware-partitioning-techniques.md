@@ -18,11 +18,11 @@ This section includes the following topics:
 
 [Dynamic Hardware Partitioning Architecture](dynamic-hardware-partitioning-architecture.md)
 
-[Critical Issues for Device Drivers](critical-issues-for-device-drivers.md)
+[Critical Issues for Device Drivers](changes-to-the-number-of-processors.md)
 
-[Driver Notification](driver-notification.md)
+[Driver Notification](introduction-to-driver-notification.md)
 
-[Application Notification](application-notification.md)
+[Application Notification](introduction-to-application-notification.md)
 
  
 

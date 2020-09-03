@@ -50,18 +50,11 @@ Requirements
 ## See also
 
 
-[**BDA\_CHANGE\_STATE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556518(v=vs.85))
+[**BDA\_CHANGE\_STATE**](/previous-versions/windows/hardware/drivers/ff556518(v=vs.85))
 
-[**BdaGetChangeState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate)
+[**BdaGetChangeState**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdagetchangestate)
 
-[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
-
- 
+[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
 
  
-
-
-
-
-
 

@@ -28,7 +28,7 @@ We recommend doing all UMDF driver testing and development with a kernel debugge
 
 We recommend doing all UMDF driver testing with a kernel debugger attached.
 
-The following are recommended settings. You can set these manually, or use the [WDF Verifier Control Application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) (WDFVerifier.exe) tool in the WDK to view or change these settings.
+The following are recommended settings. You can set these manually, or use the [WDF Verifier Control Application](../devtest/wdf-verifier-control-application.md) (WDFVerifier.exe) tool in the WDK to view or change these settings.
 
 -   Enable Application Verifier on WUDFHost.exe:
 
@@ -84,10 +84,4 @@ Use these steps:
 5. Depending on the selections you made above, your remote kernel debugger should break in when the driver loads or unloads on the target.
 
  
-
- 
-
-
-
-
 

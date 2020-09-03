@@ -22,7 +22,7 @@ In Windows XP and later, ntprint.inf has the following \[PCLXL.OEM\] section:
 CopyFiles=PCLXL,@PCL5ERES.DLL
 ```
 
-The [**INF CopyFiles directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) copies all of the files listed in the \[PCLXL\] section, as well as pcl5eres.dll, to the default destination directory. The \[PCLXL\] section also appears in ntprint.inf and lists the files to be copied.
+The [**INF CopyFiles directive**](../install/inf-copyfiles-directive.md) copies all of the files listed in the \[PCLXL\] section, as well as pcl5eres.dll, to the default destination directory. The \[PCLXL\] section also appears in ntprint.inf and lists the files to be copied.
 
 ```cpp
 [PCLXL]
@@ -51,9 +51,4 @@ In the preceding section, the **CopyFiles** directive in the first line copies t
 For additional information about using the **CopyFiles** directive for printer installations, see [Printer INF File CopyFiles Sections](printer-inf-file-copyfiles-sections.md).
 
  
-
- 
-
-
-
 
