@@ -110,7 +110,7 @@ The following table describes the attributes in the root namespace that are vali
 The following table describes the attributes in the Disk namespace that are valid only for disk devices.
 
 >[!NOTE]
->Most of the attributes in the Disk namespace are retrieved from the operating system through an IOCTL to the disk itself. For more information, see [STORAGE_DEVICE_DESCRIPTOR](windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_device_descriptor).
+>Most of the attributes in the Disk namespace are retrieved from the operating system through an IOCTL to the disk itself. For more information, see [STORAGE_DEVICE_DESCRIPTOR](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_device_descriptor).
 
 |Keyword|VARIANT type|Description|
 |----|----|----|

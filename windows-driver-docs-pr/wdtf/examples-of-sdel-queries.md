@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # Examples of SDEL Queries
 
-For more information about device relation tokens used in SDEL queries, see [Device Relation Tokens in SDEL](device_relation_tokens_in_sdel.md).
+For more information about device relation tokens used in SDEL queries, see [Device Relation Tokens in SDEL](device-relation-tokens-in-sdel.md).
 
 ## Examples of Simple Device Relation Tokens in SDEL Queries
 
