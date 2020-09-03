@@ -1,6 +1,6 @@
 ---
-title: Myriad of machines with discrete GPU that had a TDR caused by a crash in the graphics driver binary 
-description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a TDR caused by a crash in the graphics driver binary
+title: Myriad of machines with discrete GPU that had a TDR caused by a crash in the graphics driver binary (Ecosystem)
+description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a TDR caused by a crash in the graphics driver binary (Ecosystem)
 ms.topic: article
 ms.date: 06/18/2020
 ms.localizationpriority: medium
