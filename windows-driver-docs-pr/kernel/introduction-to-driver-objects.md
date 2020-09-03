@@ -10,15 +10,9 @@ ms.localizationpriority: medium
 # Introduction to Driver Objects
 
 
-## <a href="" id="ddk-introduction-to-driver-objects-kg"></a>
-
-
 The I/O manager creates a *driver object* for each driver that has been installed and loaded. Driver objects are defined using [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structures.
 
 When the I/O manager calls a driver's [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, it supplies the address of the driver's driver object. The driver object contains storage for entry points to many of a driver's standard routines. The driver is responsible for filling in these entry points.
-
-## <a href="" id="driver-object-illustration"></a>
-
 
 The following figure illustrates a driver object, with the set of system-defined standard routines that lowest-level and higher-level drivers can or must have.
 
