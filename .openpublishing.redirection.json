@@ -7920,7 +7920,7 @@
                             "source_path":  "windows-driver-docs-pr/install/selecting-the-appropriate-signature-type.md",
                             "redirect_url":  "/windows-hardware/drivers/install/digital-signatures-and-pnp-device-installation--windows-vista-and-late",
                             "redirect_document_id":  false
-                        }
+                        },
                         {
                             "source_path":  "windows-driver-docs-pr/install/inf-directives.md",
                             "redirect_url":  "/windows-hardware/drivers/install/inf-addcomponent-directive",
