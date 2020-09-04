@@ -1,6 +1,6 @@
 ---
-title: Bug Check 0xC000021A WINLOGON_FATAL_ERROR
-description: The WINLOGON_FATAL_ERROR bug check has a value of 0xC000021A. This means that the Winlogon process terminated unexpectedly.
+title: Bug Check 0xC000021A STATUS_SYSTEM_PROCESS_TERMINATED
+description: The STATUS_SYSTEM_PROCESS_TERMINATED bug check has a value of 0xC000021A. This means that one of the operating system's critical process terminated unexpectedly.
 ms.assetid: d46e2948-ff18-49e0-a738-7b90ab54d333
 keywords: ["Bug Check 0xC000021A WINLOGON_FATAL_ERROR", "WINLOGON_FATAL_ERROR"]
 ms.date: 09/12/2019
@@ -13,14 +13,14 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check 0xC000021A: WINLOGON\_FATAL\_ERROR
+# Bug Check 0xC000021A: STATUS_SYSTEM_PROCESS_TERMINATED
 
-The WINLOGON\_FATAL\_ERROR bug check has a value of 0xC000021A. This means that that the Winlogon process terminated unexpectedly.
+The STATUS_SYSTEM_PROCESS_TERMINATED bug check has a value of 0xC000021A. This means that one of the operating system's critical process has terminated unexpectedly. In older Windows operating systems this bugcheck code was known also known as WINLOGON_FATAL_ERROR.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-## WINLOGON\_FATAL\_ERROR Parameters
+## STATUS_SYSTEM_PROCESS_TERMINATED Parameters
 
 <table>
 <colgroup>
@@ -56,7 +56,7 @@ The WINLOGON\_FATAL\_ERROR bug check has a value of 0xC000021A. This means that 
 Cause
 -----
 
-This error occurs when a user-mode subsystem, such as WinLogon or the Client Server Run-Time Subsystem (CSRSS), has been fatally compromised and security can no longer be guaranteed. In response, the operating system switches to kernel mode. Microsoft Windows cannot run without WinLogon or CSRSS. Therefore, this is one of the few cases where the failure of a user-mode service can shut down the system.
+This error occurs when a user-mode subsystem, such as Windows Logon process (WinLogon), Client Server Run-Time Subsystem (CSRSS), or the Session Manager Subsystem (SMSS) experiences an error that cannot be handled. This is one of the few cases where the failure of a user-mode program or service can cause a system crash.
 
 Mismatched system files can also cause this error. This mismatch can occur if you have restored your hard disk from a backup. Some backup programs might skip restoring system files that they determine are in use.
 
