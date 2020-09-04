@@ -49,7 +49,7 @@ Any DMA device driver must provide storage for the adapter object pointer and *N
 
 When the driver has completed all DMA operations, it calls [**PutDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pput_dma_adapter) to free the adapter object.
 
-The following sections ([Using System DMA](introduction-to-adapter-objects) and [Using Bus-Master DMA](using-bus-master-dma.md)) describe how monolithic drivers of DMA devices use support routines to satisfy transfer requests. These sections assume that the driver has the following:
+The following sections [Using System DMA](introduction-to-adapter-objects.md) and [Using Bus-Master DMA](using-bus-master-dma.md)) describe how monolithic drivers of DMA devices use support routines to satisfy transfer requests. These sections assume that the driver has the following:
 
 -   A standard [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine, rather than setting up and managing an internal queue of IRPs
 

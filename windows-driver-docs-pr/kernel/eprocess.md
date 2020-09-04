@@ -110,7 +110,7 @@ The following table contains Windows kernel opaque structures:
 </tr>
 <tr class="odd">
 <td><strong>KDPC</strong></td>
-<td><p>The <strong>KDPC</strong> structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly. See <a href="dpc-objects-and-dpcs.md" data-raw-source="[DPC Objects and DPCs](introduction-to-dpc-objects.md)">DPC Objects and DPCs</a>.</p>
+<td><p>The <strong>KDPC</strong> structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly. See <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-dpc-objects">DPC Objects and DPCs</a>.</p>
 <p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
 </tr>
 <tr class="even">

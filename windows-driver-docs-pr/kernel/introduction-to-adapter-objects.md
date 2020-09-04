@@ -33,7 +33,7 @@ As part of device start-up operations, drivers that handle DMA operations call t
 
 (For SCSI devices capable of bus-master DMA, the SCSI port driver sets up adapter objects for HBA-specific SCSI miniport drivers. The miniport driver's [*HwScsiFindAdapter*](/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) routine supplies the port driver with adapter-specific data.)
 
-See [Using System DMA](introduction-to-adapter-objects) and [Using Bus-Master DMA](using-bus-master-dma.md) for more information about when and how drivers use adapter objects and *AdapterControl* routines.
+See this section as well as [Using Bus-Master DMA](using-bus-master-dma.md) for more information about when and how drivers use adapter objects and *AdapterControl* routines.
 
 ## Related topics
 
