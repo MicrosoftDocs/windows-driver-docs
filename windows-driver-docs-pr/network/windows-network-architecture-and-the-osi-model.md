@@ -9,7 +9,7 @@ keywords:
 - MAC layer WDK networking
 - physical layer WDK networking
 - Windows network architecture WDK
-ms.date: 04/20/2017
+ms.date: 09/04/2020
 ms.localizationpriority: medium
 ms.custom: contperfq1
 ---
