@@ -9,7 +9,7 @@ keywords:
 - MAC layer WDK networking
 - physical layer WDK networking
 - Windows network architecture WDK
-ms.date: 04/20/2017
+ms.date: 09/04/2020
 ms.localizationpriority: medium
 ms.custom: contperfq1
 ---
@@ -45,7 +45,7 @@ The data link layer is further divided by the Institute of Electrical and Electr
 
 The MAC sublayer manages access to the physical layer, checks frame errors, and manages address recognition of received frames.
 
-In the Windows network architecture, the MAC sublayer is implemented in the NIC. The NIC is controlled by a software device driver called the [miniport driver](ndis-miniport-drivers2.md). Windows supports several variations of miniport drivers including WDM miniport drivers, miniport call managers (MCMs), and miniport [intermediate drivers](ndis-miniport-drivers.md).
+In the Windows network architecture, the MAC sublayer is implemented in the NIC. The NIC is controlled by a software device driver called the [miniport driver](ndis-miniport-drivers2.md). Windows supports several variations of miniport drivers including WDM miniport drivers, miniport call managers (MCMs), and miniport [intermediate drivers](ndis-intermediate-drivers.md).
 
 ### LLC
 
