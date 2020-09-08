@@ -32,9 +32,9 @@ The current virtual joystick driver (VJoyD) allows the configuration of up to 16
 
 This section includes:
 
-[Joystick Driver Model](joystick-driver-model.md)
+[Joystick Driver Model]()
 
-[Minidriver-Supplied Callbacks](minidriver-supplied-callbacks.md)
+[Minidriver-Supplied Callbacks]()
 
 [Original Interface](original-interface.md)
 
@@ -49,9 +49,4 @@ This section includes:
 [Axis Selection](axis-selection.md)
 
  
-
- 
-
-
-
 
