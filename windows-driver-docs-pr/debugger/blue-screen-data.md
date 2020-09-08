@@ -144,7 +144,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 -   Confirm that there is sufficient free space on the hard drive. The operating system and some applications require sufficient free space to create swap files and for other functions. Based on the system configuration, the exact requirement varies, but it is normally a good idea to have 10% to 15% free space available.
 
--   Verify that the system has the latest Service Pack installed. To detect which Service Pack, if any, is installed on your system, selec **Start**, selec **Run**, type **winver**, and then press ENTER. The **About Windows** dialog box displays the Windows version number and the version number of the Service Pack, if one has been installed.
+-   Verify that the system has the latest Service Pack installed. To detect which Service Pack, if any, is installed on your system, select **Start**, select **Run**, type **winver**, and then press ENTER. The **About Windows** dialog box displays the Windows version number and the version number of the Service Pack, if one has been installed.
 
 -   Check with the manufacturer to see if an updated system BIOS or firmware is available.
 
