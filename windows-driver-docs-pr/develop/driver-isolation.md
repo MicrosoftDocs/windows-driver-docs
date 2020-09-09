@@ -199,6 +199,8 @@ To access the location of this state, use one of these functions, based on your 
 
 * [**IoOpenDriverRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) (WDM)
 * [**WdfDriverOpenParametersRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey) (WDF)
+* [**WdfDriverOpenPersistentStateRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenpersistentstateregistrykey) (WDF for state written at runtime)
+* [**GetServiceRegistryStateKey**](/windows/win32/api/winsvc/nf-winsvc-getserviceregistrystatekey) (Win32 Services)
 
 ### Device File State
 
@@ -225,6 +227,10 @@ Files that are to be used as part of intermediate operations that can be shared 
 
 These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
 
+Avoid writing files in the root of the `DriverData` or `ProgramData` directories. Instead, create a subdirectory with your company name and then write files and further subdirectories within that directory.
+
+For example, for a company name of Contoso, a kernel-mode driver could write a custom log to `\DriverData\Contoso\Logs` and a user-mode application could collect or analyze the log files from `%DriverData%\Contoso\Logs`.
+
 ### DriverData
 
 The `DriverData` directory is available in Windows 10, version 1803 and later. This directory is accessible by both user-mode and kernel-mode components through different mechanisms.
@@ -236,6 +242,3 @@ user-mode programs should access the `DriverData` directory by using the environ
 
 The `%ProgramData%` user-mode environment variable is available for user-mode components to use when storing data. 
 
-Avoid writing files in the root of the `DriverData` or `ProgramData` directories. Instead, create a subdirectory with your company name and then write files and further subdirectories within that directory.
-
-For example, for a company name of Contoso, a kernel-mode driver could write a custom log to `\DriverData\Contoso\Logs` and a user-mode application could collect or analyze the log files from `%DriverData%\Contoso\Logs`.
