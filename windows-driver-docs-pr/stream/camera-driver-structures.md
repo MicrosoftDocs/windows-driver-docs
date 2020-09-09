@@ -11,27 +11,27 @@ ms.localizationpriority: medium
 
 The following camera driver structures are new for Windows 10.
 
-[**CapturedMetadataExposureCompensation**](/windows/win32/api/mfapi/ns-mfapi-tagcapturedmetadataexposurecompensation)
+[**CapturedMetadataExposureCompensation**](/windows/win32/api/mfapi/ns-mfapi-capturedmetadataexposurecompensation)
 
-[**CapturedMetadataISOGains**](/windows/win32/api/mfapi/ns-mfapi-tagcapturedmetadataisogains)
+[**CapturedMetadataISOGains**](/windows/win32/api/mfapi/ns-mfapi-capturedmetadataisogains)
 
-[**CapturedMetadataWhiteBalanceGains**](/windows/win32/api/mfapi/ns-mfapi-tagcapturedmetadatawhitebalancegains)
+[**CapturedMetadataWhiteBalanceGains**](/windows/win32/api/mfapi/ns-mfapi-capturedmetadatawhitebalancegains)
 
-[**FaceCharacterization**](/windows/win32/api/mfapi/ns-mfapi-tagfacecharacterization)
+[**FaceCharacterization**](/windows/win32/api/mfapi/ns-mfapi-facecharacterization)
 
-[**FaceCharacterizationBlobHeader**](/windows/win32/api/mfapi/ns-mfapi-tagfacecharacterizationblobheader)
+[**FaceCharacterizationBlobHeader**](/windows/win32/api/mfapi/ns-mfapi-facecharacterizationblobheader)
 
-[**FaceRectInfo**](/windows/win32/api/mfapi/ns-mfapi-tagfacerectinfo)
+[**FaceRectInfo**](/windows/win32/api/mfapi/ns-mfapi-facerectinfo)
 
-[**FaceRectInfoBlobHeader**](/windows/win32/api/mfapi/ns-mfapi-tagfacerectinfoblobheader)
+[**FaceRectInfoBlobHeader**](/windows/win32/api/mfapi/ns-mfapi-facerectinfoblobheader)
 
-[**HistogramBlobHeader**](/windows/win32/api/mfapi/ns-mfapi-taghistogramblobheader)
+[**HistogramBlobHeader**](/windows/win32/api/mfapi/ns-mfapi-histogramblobheader)
 
-[**HistogramDataHeader**](/windows/win32/api/mfapi/ns-mfapi-taghistogramdataheader)
+[**HistogramDataHeader**](/windows/win32/api/mfapi/ns-mfapi-histogramdataheader)
 
-[**HistogramGrid**](/windows/win32/api/mfapi/ns-mfapi-taghistogramgrid)
+[**HistogramGrid**](/windows/win32/api/mfapi/ns-mfapi-histogramgrid)
 
-[**HistogramHeader**](/windows/win32/api/mfapi/ns-mfapi-taghistogramheader)
+[**HistogramHeader**](/windows/win32/api/mfapi/ns-mfapi-histogramheader)
 
 [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)
 
@@ -99,7 +99,7 @@ The following camera driver structures are new for Windows 10.
 
 [**KSSTREAM\_UVC\_METADATATYPE\_TIMESTAMP**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_uvc_metadatatype_timestamp)
 
-[**MetadataTimeStamps**](/windows/win32/api/mfapi/ns-mfapi-tagmetadatatimestamps)
+[**MetadataTimeStamps**](/windows/win32/api/mfapi/ns-mfapi-metadatatimestamps)
 
 [**MF\_MDL\_SHARED\_PAYLOAD\_KEY**](/windows-hardware/drivers/ddi/ks/ns-ks-_mf_mdl_shared_payload_key)
 

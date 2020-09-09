@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-Color management for a printer can be controlled by an application, the system (GDI), the driver, or device hardware. The driver determines which component is managing color correction by examining flags within the [**BRUSHOBJ**](/windows/win32/api/winddi/ns-winddi-_brushobj) and [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-_xlateobj) structures that are passed to its implementations of graphics DDI drawing functions. The following flags are defined:
+Color management for a printer can be controlled by an application, the system (GDI), the driver, or device hardware. The driver determines which component is managing color correction by examining flags within the [**BRUSHOBJ**](/windows/win32/api/winddi/ns-winddi-brushobj) and [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-xlateobj) structures that are passed to its implementations of graphics DDI drawing functions. The following flags are defined:
 
 <table>
 <colgroup>
