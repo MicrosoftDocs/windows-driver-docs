@@ -154,9 +154,8 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
 
 In the **Keyboard Layout** key, the **Scancode Map** value must be added. This value is of type REG\_BINARY (little Endian format) and has the data format specified in the following table.
 
-|                         |                 |                              |
-|-------------------------|-----------------|------------------------------|
-| Start offset (in bytes) | Size (in bytes) | Data                         |
+| Start offset (in bytes) | Size (in bytes) | Data |
+|---|---|---|
 | 0                       | 4               | Header: Version Information  |
 | 4                       | 4               | Header: Flags                |
 | 8                       | 4               | Header: Number of Mappings   |
@@ -194,7 +193,6 @@ The following table contains these entries broken into DWORD fields and the byte
 
 **0x00000000**: Null terminator.
 
-
 ### Example 2
 
 It is also possible to add a key not generally available on a keyboard or to remove a key that is never used. The following example shows the value stored in **Scancode Map** to remove the right CTRL key and change the functionality of the right ALT key to work as a mute key:
@@ -218,7 +216,6 @@ The following table contains these entries broken into DWORD fields and the byte
 **0xE038E020**: Right ALT key --&gt; Mute key (0xE038 --&gt; 0xE020).
 
 **0x00000000**: Null terminator.
-
 
 After the necessary data is generated, it can be inserted into the registry in several ways.
 
