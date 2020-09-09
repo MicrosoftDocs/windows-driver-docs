@@ -59,7 +59,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="odd">
 <td><p><strong>COLORINFO</strong></p></td>
-<td><p>Thirty DWORD-sized values representing the contents of a <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-_colorinfo" data-raw-source="[&lt;strong&gt;COLORINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_colorinfo)"><strong>COLORINFO</strong></a> structure.</p></td>
+<td><p>Thirty DWORD-sized values representing the contents of a <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-colorinfo" data-raw-source="[&lt;strong&gt;COLORINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-colorinfo)"><strong>COLORINFO</strong></a> structure.</p></td>
 <td><p></p>
 {
 {6810,3050,0}, // xr, yr, Yr
@@ -91,7 +91,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>DevicePelsDPI</strong></p></td>
-<td><p>One DWORD-sized value representing the device's effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-_gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_gdiinfo)"><strong>GDIINFO</strong></a>.</p></td>
+<td><p>One DWORD-sized value representing the device's effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-gdiinfo)"><strong>GDIINFO</strong></a>.</p></td>
 <td><p>The default is zero, causing GDI to calculate a value.</p></td>
 </tr>
 <tr class="odd">
