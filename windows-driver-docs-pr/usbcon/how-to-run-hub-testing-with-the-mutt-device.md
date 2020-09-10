@@ -37,8 +37,5 @@ Before you run the MUTT test commands at an elevated command prompt, make sure y
     ![test connect/disconnect](images/fig14-topology-connect-disconnect.png)
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[USB](../index.yml)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

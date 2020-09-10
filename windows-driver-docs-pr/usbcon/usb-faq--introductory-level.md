@@ -619,4 +619,4 @@ A composite USB device cannot expose a function that serves as a hub. Windows do
 ## Related topics
 
 [USB concepts for all developers](usb-concepts-for-all-developers.md)  
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
+[Universal Serial Bus (USB)](../index.yml)
