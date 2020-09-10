@@ -24,19 +24,14 @@ ms.technology: windows-devices
 
 | Title | Description |
 | -- | -- |
-| [HID Sensors Usages](https://docs.microsoft.com/windows-hardware/design/whitepapers/hid-sensors-usages) | This paper provides information about the HID Sensor Class Driver for Windows 8 and later operating systems. |
-| [Integrating Ambient Light Sensors with Computers Running Windows 10 Creators Update](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) | This paper provides information about ambient light sensor (ALS) features in the Windows 10 operating system.  |
-| [Integrating Motion and Orientation Sensors](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-motion-and-orientation-sensors) | This paper is intended to help OEMs, ODMs, and IHVs understand motion and orientation sensor capabilities and requirements for Windows 10 and earlier operating systems. |
+| [HID Sensors Usages](/windows-hardware/design/whitepapers/hid-sensors-usages) | This paper provides information about the HID Sensor Class Driver for Windows 8 and later operating systems. |
+| [Integrating Ambient Light Sensors with Computers Running Windows 10 Creators Update](/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) | This paper provides information about ambient light sensor (ALS) features in the Windows 10 operating system.  |
+| [Integrating Motion and Orientation Sensors](/windows-hardware/design/whitepapers/integrating-motion-and-orientation-sensors) | This paper is intended to help OEMs, ODMs, and IHVs understand motion and orientation sensor capabilities and requirements for Windows 10 and earlier operating systems. |
 
 ## Related sections
 
--   [Sensors DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_sensors/)
+-   [Sensors DDI reference](/windows-hardware/drivers/ddi/_sensors/)
 -   [Sensors Blogs](https://techcommunity.microsoft.com/t5/Microsoft-Sensors-Blog/bg-p/MicrosoftSensorsBlog)
 
  
-
- 
-
-
-
 
